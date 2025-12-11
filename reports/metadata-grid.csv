@@ -68,6 +68,7 @@ chebi,active,PASS
 chembl,active,PASS
 chemicalchecker,active,PASS
 cheminf,active,PASS
+chemont,active,PASS
 chiro,active,PASS
 chmo,active,PASS
 chr,active,PASS
@@ -75,6 +76,7 @@ cido,active,PASS
 ciel,active,PASS
 cio,active,PASS
 circbase,active,PASS
+cito,active,PASS
 civic,active,PASS
 cl,active,PASS
 cl-kg,active,PASS
@@ -173,6 +175,7 @@ evlncrnas,active,PASS
 exmo,active,PASS
 exo,active,PASS
 expressionatlas,active,PASS
+fabio,active,PASS
 faers,active,PASS
 faldo,active,PASS
 fao,active,PASS
@@ -188,6 +191,7 @@ fobi,active,PASS
 foodb,active,PASS
 fooddb,active,PASS
 foodon,active,PASS
+forum,active,PASS
 fovt,active,PASS
 fypo,active,PASS
 gallont,active,PASS

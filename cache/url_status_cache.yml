@@ -1,3 +1,7 @@
+ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz:
+  checked_at: '2025-12-11T22:41:01Z'
+  error: 'FTP error: timed out'
+  protocol: ftp
 ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/:
   checked_at: '2025-12-04T17:54:35Z'
   error: 'Error connecting to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
@@ -58,7 +62,7 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/:
   protocol: ftp
   skip_reason: directory
 ftp://ftp.wormbase.org/pub/wormbase/:
-  checked_at: '2025-12-11T19:22:25Z'
+  checked_at: '2025-12-11T22:40:41Z'
   error: 'FTP error: [Errno 101] Network is unreachable'
   protocol: ftp
 http://119.3.41.228/eram/download.php:
@@ -67,10 +71,10 @@ http://119.3.41.228/eram/download.php:
   skip_reason: html_page
   status_code: 200
 http://atgo.ucsd.edu/:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   error: 'Error connecting to URL: HTTPConnectionPool(host=''atgo.ucsd.edu'', port=80):
     Max retries exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPConnection
-    object at 0x7f1820ddb470>: Failed to establish a new connection: [Errno 111] Connection
+    object at 0x7f8e7e642bd0>: Failed to establish a new connection: [Errno 111] Connection
     refused''))'
 http://bigdata.ibp.ac.cn/piRBase/about.php:
   checked_at: '2025-10-27T21:15:49Z'
@@ -112,19 +116,25 @@ http://biohackathon.org/resource/faldo.ttl:
   last_success_bytes: 13615
   status_code: 200
 http://bioinformatics.sandia.gov/tmrna/:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://bioinformatics.sandia.gov/tmrna/software.html:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://birdgenenames.org/cgnc/downloads.jsp?file=standard:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:48Z'
   error: HTTP 404 error when accessing file
   status_code: 404
+http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zip:
+  checked_at: '2025-12-11T22:39:46Z'
+  content_length: 307900
+  content_type: application/zip
+  last_success_bytes: 307900
+  status_code: 200
 http://cpdb.molgen.mpg.de/CPDB/download:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://data.wikipathways.org/current/rdf/:
@@ -153,10 +163,10 @@ http://ftp.microbio.me/greengenes_release/current/:
   skip_reason: html_page
   status_code: 200
 http://juniper.health.unm.edu/tcrd/:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:09Z'
   error: Timeout connecting to URL
 http://juniper.health.unm.edu/tcrd/download/:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:20Z'
   error: Timeout connecting to URL
 http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_KinomeScan_Datasets_2018-01-18.xlsx:
   checked_at: '2025-10-31T14:55:12Z'
@@ -165,10 +175,10 @@ http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_Kino
   last_success_bytes: 17872
   status_code: 200
 http://mirgate.bioinfo.cnio.es:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   error: 'Error connecting to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'',
     port=80): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
-    object at 0x7f1820cf4080>: Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno
+    object at 0x7f8e7e6a3ef0>: Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno
     -2] Name or service not known)"))'
 http://nlp.case.edu/public/data/GPKG-Predict/:
   checked_at: '2025-11-25T20:27:25Z'
@@ -191,205 +201,205 @@ http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.htm
   skip_reason: html_page
   status_code: 200
 http://plncdb.tobaccodb.org/:
-  checked_at: '2025-12-11T19:21:58Z'
+  checked_at: '2025-12-11T22:40:11Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/BMONT.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 167585
   content_type: text/plain; charset=utf-8
   last_success_bytes: 167585
   status_code: 200
 http://purl.obolibrary.org/obo/EPIO_merged.owl:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ado.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 1166665
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1166665
   status_code: 200
 http://purl.obolibrary.org/obo/aeo.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 407189
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 407189
   status_code: 403
 http://purl.obolibrary.org/obo/aero.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 19393
   content_type: text/plain; charset=utf-8
   last_success_bytes: 19393
   status_code: 200
 http://purl.obolibrary.org/obo/afpo.json:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/afpo.obo:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/afpo.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 96804
   content_type: text/plain; charset=utf-8
   last_success_bytes: 96804
   status_code: 200
 http://purl.obolibrary.org/obo/agro.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 463598
   content_type: text/plain; charset=utf-8
   last_success_bytes: 463598
   status_code: 200
 http://purl.obolibrary.org/obo/aism.json:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 1272055
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1272055
   status_code: 200
 http://purl.obolibrary.org/obo/aism.obo:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 1205046
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1205046
   status_code: 200
 http://purl.obolibrary.org/obo/aism.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 1892677
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1892677
   status_code: 200
 http://purl.obolibrary.org/obo/amphx.obo:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 8608
   content_type: text/plain; charset=utf-8
   last_success_bytes: 8608
   status_code: 200
 http://purl.obolibrary.org/obo/amphx.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 13761
   content_type: text/plain; charset=utf-8
   last_success_bytes: 13761
   status_code: 200
 http://purl.obolibrary.org/obo/apo.obo:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 16798
   content_type: text/plain; charset=utf-8
   last_success_bytes: 16798
   status_code: 200
 http://purl.obolibrary.org/obo/apo.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 32489
   content_type: text/plain; charset=utf-8
   last_success_bytes: 32489
   status_code: 200
 http://purl.obolibrary.org/obo/apollo_sv.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   content_length: 266319
   content_type: text/plain; charset=utf-8
   last_success_bytes: 266319
   status_code: 200
 http://purl.obolibrary.org/obo/aro.owl:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   content_length: 687021
   content_type: text/plain; charset=utf-8
   last_success_bytes: 687021
   status_code: 200
 http://purl.obolibrary.org/obo/bcgo.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 335620
   content_type: text/plain; charset=utf-8
   last_success_bytes: 335620
   status_code: 200
 http://purl.obolibrary.org/obo/bco.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 108849
   content_type: text/plain; charset=utf-8
   last_success_bytes: 108849
   status_code: 200
 http://purl.obolibrary.org/obo/bfo.obo:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 17898
   content_type: text/plain; charset=utf-8
   last_success_bytes: 17898
   status_code: 200
 http://purl.obolibrary.org/obo/bfo.owl:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 20902
   content_type: text/plain; charset=utf-8
   last_success_bytes: 20902
   status_code: 200
 http://purl.obolibrary.org/obo/bila.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 151834
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 151834
   status_code: 403
 http://purl.obolibrary.org/obo/bspo.obo:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:51Z'
   content_length: 27154
   content_type: text/plain; charset=utf-8
   last_success_bytes: 27154
   status_code: 200
 http://purl.obolibrary.org/obo/bspo.owl:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:51Z'
   content_length: 45961
   content_type: text/plain; charset=utf-8
   last_success_bytes: 45961
   status_code: 200
 http://purl.obolibrary.org/obo/bto.json:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 595708
   content_type: text/plain; charset=utf-8
   last_success_bytes: 595708
   status_code: 200
 http://purl.obolibrary.org/obo/bto.obo:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 479657
   content_type: text/plain; charset=utf-8
   last_success_bytes: 479657
   status_code: 200
 http://purl.obolibrary.org/obo/bto.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 722362
   content_type: text/plain; charset=utf-8
   last_success_bytes: 722362
   status_code: 200
 http://purl.obolibrary.org/obo/caro.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   content_length: 586722
   content_type: text/plain; charset=utf-8
   last_success_bytes: 586722
   status_code: 200
 http://purl.obolibrary.org/obo/cdao.owl:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:56Z'
   content_length: 10952
   content_type: text/plain; charset=utf-8
   last_success_bytes: 10952
   status_code: 200
 http://purl.obolibrary.org/obo/cdno.obo:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 324568
   content_type: text/plain; charset=utf-8
   last_success_bytes: 324568
   status_code: 200
 http://purl.obolibrary.org/obo/cdno.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 547230
   content_type: text/plain; charset=utf-8
   last_success_bytes: 547230
   status_code: 200
 http://purl.obolibrary.org/obo/ceph.obo:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 82316
   content_type: text/plain; charset=utf-8
   last_success_bytes: 82316
   status_code: 200
 http://purl.obolibrary.org/obo/ceph.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 48794
   content_type: text/plain; charset=utf-8
   last_success_bytes: 48794
@@ -409,7 +419,7 @@ http://purl.obolibrary.org/obo/chebi.owl:
   skip_reason: no_content_type
   status_code: 200
 http://purl.obolibrary.org/obo/chebi.owl.gz:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   content_length: 62846229
   content_type: application/x-gzip
   last_success_bytes: 62846229
@@ -429,25 +439,25 @@ http://purl.obolibrary.org/obo/chebi/chebi_lite.obo:
   skip_reason: no_content_type
   status_code: 200
 http://purl.obolibrary.org/obo/cheminf.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 22830
   content_type: text/plain; charset=utf-8
   last_success_bytes: 22830
   status_code: 200
 http://purl.obolibrary.org/obo/chiro.obo:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 3337
   content_type: text/plain; charset=utf-8
   last_success_bytes: 3337
   status_code: 200
 http://purl.obolibrary.org/obo/chiro.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 7043
   content_type: text/plain; charset=utf-8
   last_success_bytes: 7043
   status_code: 200
 http://purl.obolibrary.org/obo/chmo.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   content_length: 460248
   content_type: text/plain; charset=utf-8
   last_success_bytes: 460248
@@ -457,209 +467,209 @@ http://purl.obolibrary.org/obo/chr.owl:
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/cido.owl:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   content_length: 2511321
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2511321
   status_code: 200
 http://purl.obolibrary.org/obo/cio.obo:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 3960
   content_type: text/plain; charset=utf-8
   last_success_bytes: 3960
   status_code: 200
 http://purl.obolibrary.org/obo/cio.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 6187
   content_type: text/plain; charset=utf-8
   last_success_bytes: 6187
   status_code: 200
 http://purl.obolibrary.org/obo/cl.json:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:48Z'
   content_length: 38682961
   content_type: application/octet-stream
   last_success_bytes: 38682961
   status_code: 200
 http://purl.obolibrary.org/obo/cl.obo:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:48Z'
   content_length: 17288413
   content_type: application/octet-stream
   last_success_bytes: 17288413
   status_code: 200
 http://purl.obolibrary.org/obo/cl.owl:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:48Z'
   content_length: 66545001
   content_type: application/octet-stream
   last_success_bytes: 66545001
   status_code: 200
 http://purl.obolibrary.org/obo/cl/cl-base.json:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 6796463
   content_type: application/octet-stream
   last_success_bytes: 6796463
   status_code: 200
 http://purl.obolibrary.org/obo/cl/cl-base.obo:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 3483606
   content_type: application/octet-stream
   last_success_bytes: 3483606
   status_code: 200
 http://purl.obolibrary.org/obo/cl/cl-base.owl:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 11910543
   content_type: application/octet-stream
   last_success_bytes: 11910543
   status_code: 200
 http://purl.obolibrary.org/obo/cl/cl-basic.json:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:48Z'
   content_length: 5146738
   content_type: application/octet-stream
   last_success_bytes: 5146738
   status_code: 200
 http://purl.obolibrary.org/obo/cl/cl-basic.obo:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:48Z'
   content_length: 3083579
   content_type: application/octet-stream
   last_success_bytes: 3083579
   status_code: 200
 http://purl.obolibrary.org/obo/cl/cl-basic.owl:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:48Z'
   content_length: 8893726
   content_type: application/octet-stream
   last_success_bytes: 8893726
   status_code: 200
 http://purl.obolibrary.org/obo/clao.obo:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 74344
   content_type: text/plain; charset=utf-8
   last_success_bytes: 74344
   status_code: 200
 http://purl.obolibrary.org/obo/clao.owl:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 112550
   content_type: text/plain; charset=utf-8
   last_success_bytes: 112550
   status_code: 200
 http://purl.obolibrary.org/obo/clo.owl:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:10Z'
   content_length: 2121232
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2121232
   status_code: 200
 http://purl.obolibrary.org/obo/clyh.obo:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 9651
   content_type: text/plain; charset=utf-8
   last_success_bytes: 9651
   status_code: 200
 http://purl.obolibrary.org/obo/clyh.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 13404
   content_type: text/plain; charset=utf-8
   last_success_bytes: 13404
   status_code: 200
 http://purl.obolibrary.org/obo/cmo.obo:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   content_length: 2569538
   content_type: text/plain; charset=UTF-8
   last_success_bytes: 2569538
   status_code: 200
 http://purl.obolibrary.org/obo/cmo.owl:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   content_length: 9357926
   content_type: text/xml
   last_success_bytes: 9357926
   status_code: 200
 http://purl.obolibrary.org/obo/cob.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 7391
   content_type: text/plain; charset=utf-8
   last_success_bytes: 7391
   status_code: 200
 http://purl.obolibrary.org/obo/cob/cob-base.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 2798
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2798
   status_code: 200
 http://purl.obolibrary.org/obo/cob/cob-native.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 6472
   content_type: text/plain; charset=utf-8
   last_success_bytes: 6472
   status_code: 200
 http://purl.obolibrary.org/obo/cob/cob-to-external.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/cob/products/demo-cob.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 447985
   content_type: text/plain; charset=utf-8
   last_success_bytes: 447985
   status_code: 200
 http://purl.obolibrary.org/obo/colao.obo:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 83585
   content_type: text/plain; charset=utf-8
   last_success_bytes: 83585
   status_code: 200
 http://purl.obolibrary.org/obo/colao.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 164547
   content_type: text/plain; charset=utf-8
   last_success_bytes: 164547
   status_code: 200
 http://purl.obolibrary.org/obo/cro.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   content_length: 12414
   content_type: text/plain; charset=utf-8
   last_success_bytes: 12414
   status_code: 200
 http://purl.obolibrary.org/obo/cteno.owl:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 15458
   content_type: text/plain; charset=utf-8
   last_success_bytes: 15458
   status_code: 200
 http://purl.obolibrary.org/obo/cto.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 96492
   content_type: text/plain; charset=utf-8
   last_success_bytes: 96492
   status_code: 200
 http://purl.obolibrary.org/obo/cvdo.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 105498
   content_type: text/plain; charset=utf-8
   last_success_bytes: 105498
   status_code: 200
 http://purl.obolibrary.org/obo/ddanat.obo:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:26Z'
   content_length: 8493
   content_type: text/plain; charset=utf-8
   last_success_bytes: 8493
   status_code: 200
 http://purl.obolibrary.org/obo/ddanat.owl:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:26Z'
   content_length: 15269
   content_type: text/plain; charset=utf-8
   last_success_bytes: 15269
   status_code: 200
 http://purl.obolibrary.org/obo/ddpheno.obo:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 41003
   content_type: text/plain; charset=utf-8
   last_success_bytes: 41003
   status_code: 200
 http://purl.obolibrary.org/obo/ddpheno.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 72832
   content_type: text/plain; charset=utf-8
   last_success_bytes: 72832
   status_code: 200
 http://purl.obolibrary.org/obo/dideo.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 88427
   content_type: text/plain; charset=utf-8
   last_success_bytes: 88427
@@ -670,220 +680,220 @@ http://purl.obolibrary.org/obo/dinto.owl:
   skip_reason: html_page
   status_code: 200
 http://purl.obolibrary.org/obo/disdriv.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 13794
   content_type: text/plain; charset=utf-8
   last_success_bytes: 13794
   status_code: 200
 http://purl.obolibrary.org/obo/doid.obo:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 1365551
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1365551
   status_code: 200
 http://purl.obolibrary.org/obo/doid.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 2101220
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2101220
   status_code: 200
 http://purl.obolibrary.org/obo/dpo.json:
-  checked_at: '2025-12-11T19:21:33Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 2333069
   content_type: application/octet-stream
   last_success_bytes: 2333069
   status_code: 200
 http://purl.obolibrary.org/obo/dpo.obo:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 133576
   content_type: application/octet-stream
   last_success_bytes: 133576
   status_code: 200
 http://purl.obolibrary.org/obo/dpo.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 4518244
   content_type: application/octet-stream
   last_success_bytes: 4518244
   status_code: 200
 http://purl.obolibrary.org/obo/dron.owl:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   content_length: 694254306
   content_type: application/octet-stream
   last_success_bytes: 694254306
   status_code: 200
 http://purl.obolibrary.org/obo/duo.owl:
-  checked_at: '2025-12-11T19:22:09Z'
+  checked_at: '2025-12-11T22:40:29Z'
   content_length: 8062
   content_type: text/plain; charset=utf-8
   last_success_bytes: 8062
   status_code: 200
 http://purl.obolibrary.org/obo/ecao.obo:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 1002010
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1002010
   status_code: 200
 http://purl.obolibrary.org/obo/ecao.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 1546949
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1546949
   status_code: 200
 http://purl.obolibrary.org/obo/eco.obo:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 157046
   content_type: text/plain; charset=utf-8
   last_success_bytes: 157046
   status_code: 200
 http://purl.obolibrary.org/obo/eco.owl:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 355446
   content_type: text/plain; charset=utf-8
   last_success_bytes: 355446
   status_code: 200
 http://purl.obolibrary.org/obo/ecocore.obo:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 834439
   content_type: text/plain; charset=utf-8
   last_success_bytes: 834439
   status_code: 200
 http://purl.obolibrary.org/obo/ecocore.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 1287569
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1287569
   status_code: 200
 http://purl.obolibrary.org/obo/ecto.json:
-  checked_at: '2025-12-11T19:21:31Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 1642823
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1642823
   status_code: 200
 http://purl.obolibrary.org/obo/ecto.obo:
-  checked_at: '2025-12-11T19:21:31Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 1512450
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1512450
   status_code: 200
 http://purl.obolibrary.org/obo/ecto.owl:
-  checked_at: '2025-12-11T19:21:31Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 2307757
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2307757
   status_code: 200
 http://purl.obolibrary.org/obo/ecto/ecto-base.json:
-  checked_at: '2025-12-11T19:21:32Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 86977
   content_type: text/plain; charset=utf-8
   last_success_bytes: 86977
   status_code: 200
 http://purl.obolibrary.org/obo/ecto/ecto-base.obo:
-  checked_at: '2025-12-11T19:21:32Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 71596
   content_type: text/plain; charset=utf-8
   last_success_bytes: 71596
   status_code: 200
 http://purl.obolibrary.org/obo/ecto/ecto-base.owl:
-  checked_at: '2025-12-11T19:21:31Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 130323
   content_type: text/plain; charset=utf-8
   last_success_bytes: 130323
   status_code: 200
 http://purl.obolibrary.org/obo/ehdaa2.obo:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 945836
   content_type: text/plain
   error: HTTP 403 error when accessing file
   last_success_bytes: 945836
   status_code: 403
 http://purl.obolibrary.org/obo/ehdaa2.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 5015770
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 5015770
   status_code: 403
 http://purl.obolibrary.org/obo/emap.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 16121038
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 16121038
   status_code: 403
 http://purl.obolibrary.org/obo/emapa.obo:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 191033
   content_type: text/plain; charset=utf-8
   last_success_bytes: 191033
   status_code: 200
 http://purl.obolibrary.org/obo/emapa.owl:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 338580
   content_type: text/plain; charset=utf-8
   last_success_bytes: 338580
   status_code: 200
 http://purl.obolibrary.org/obo/envo.json:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 653600
   content_type: text/plain; charset=utf-8
   last_success_bytes: 653600
   status_code: 200
 http://purl.obolibrary.org/obo/envo.obo:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 595276
   content_type: text/plain; charset=utf-8
   last_success_bytes: 595276
   status_code: 200
 http://purl.obolibrary.org/obo/envo.owl:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 819909
   content_type: text/plain; charset=utf-8
   last_success_bytes: 819909
   status_code: 200
 http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 12912
   content_type: text/plain; charset=utf-8
   last_success_bytes: 12912
   status_code: 200
 http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 422465
   content_type: text/plain; charset=utf-8
   last_success_bytes: 422465
   status_code: 200
 http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 19016
   content_type: text/plain; charset=utf-8
   last_success_bytes: 19016
   status_code: 200
 http://purl.obolibrary.org/obo/eo.obo:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/eo.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/epio.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 415175
   content_type: text/plain; charset=utf-8
   last_success_bytes: 415175
   status_code: 200
 http://purl.obolibrary.org/obo/epo.owl:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:14Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ero.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443):
     Max retries exceeded with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
     expired (_ssl.c:1000)'')))'
 http://purl.obolibrary.org/obo/eupath.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 438457
   content_type: text/plain; charset=utf-8
   last_success_bytes: 438457
@@ -894,700 +904,700 @@ http://purl.obolibrary.org/obo/exmo.owl:
   skip_reason: html_page
   status_code: 200
 http://purl.obolibrary.org/obo/exo.obo:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   content_length: 12690
   content_type: text/plain; charset=utf-8
   last_success_bytes: 12690
   status_code: 200
 http://purl.obolibrary.org/obo/exo.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   content_length: 17786
   content_type: text/plain; charset=utf-8
   last_success_bytes: 17786
   status_code: 200
 http://purl.obolibrary.org/obo/fao.obo:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 9190
   content_type: text/plain; charset=utf-8
   last_success_bytes: 9190
   status_code: 200
 http://purl.obolibrary.org/obo/fao.owl:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 14367
   content_type: text/plain; charset=utf-8
   last_success_bytes: 14367
   status_code: 200
 http://purl.obolibrary.org/obo/fbbi.owl:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_length: 44554
   content_type: text/plain; charset=utf-8
   last_success_bytes: 44554
   status_code: 200
 http://purl.obolibrary.org/obo/fbbt.json:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 77676937
   content_type: application/octet-stream
   last_success_bytes: 77676937
   status_code: 200
 http://purl.obolibrary.org/obo/fbbt.obo:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 38423905
   content_type: application/octet-stream
   last_success_bytes: 38423905
   status_code: 200
 http://purl.obolibrary.org/obo/fbbt.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 119285055
   content_type: application/octet-stream
   last_success_bytes: 119285055
   status_code: 200
 http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 38423929
   content_type: application/octet-stream
   last_success_bytes: 38423929
   status_code: 200
 http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 111152500
   content_type: application/octet-stream
   last_success_bytes: 111152500
   status_code: 200
 http://purl.obolibrary.org/obo/fbcv.json:
-  checked_at: '2025-12-11T19:22:10Z'
+  checked_at: '2025-12-11T22:40:29Z'
   content_length: 2731574
   content_type: application/octet-stream
   last_success_bytes: 2731574
   status_code: 200
 http://purl.obolibrary.org/obo/fbcv.obo:
-  checked_at: '2025-12-11T19:22:09Z'
+  checked_at: '2025-12-11T22:40:29Z'
   content_length: 568316
   content_type: application/octet-stream
   last_success_bytes: 568316
   status_code: 200
 http://purl.obolibrary.org/obo/fbcv.owl:
-  checked_at: '2025-12-11T19:22:09Z'
+  checked_at: '2025-12-11T22:40:29Z'
   content_length: 4275897
   content_type: application/octet-stream
   last_success_bytes: 4275897
   status_code: 200
 http://purl.obolibrary.org/obo/fbdv.json:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 358729
   content_type: application/octet-stream
   last_success_bytes: 358729
   status_code: 200
 http://purl.obolibrary.org/obo/fbdv.obo:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 118696
   content_type: application/octet-stream
   last_success_bytes: 118696
   status_code: 200
 http://purl.obolibrary.org/obo/fbdv.owl:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 523797
   content_type: application/octet-stream
   last_success_bytes: 523797
   status_code: 200
 http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 118720
   content_type: application/octet-stream
   last_success_bytes: 118720
   status_code: 200
 http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 442797
   content_type: application/octet-stream
   last_success_bytes: 442797
   status_code: 200
 http://purl.obolibrary.org/obo/fbsp.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 5012153
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 5012153
   status_code: 403
 http://purl.obolibrary.org/obo/fideo.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 http://purl.obolibrary.org/obo/fix.obo:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:31Z'
   error: 'Error connecting to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 http://purl.obolibrary.org/obo/fix.owl:
-  checked_at: '2025-12-11T19:22:14Z'
+  checked_at: '2025-12-11T22:40:31Z'
   content_length: 880338
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 880338
   status_code: 403
 http://purl.obolibrary.org/obo/flopo.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 767285
   content_type: text/plain; charset=utf-8
   last_success_bytes: 767285
   status_code: 200
 http://purl.obolibrary.org/obo/flu.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 127517
   content_type: text/plain; charset=UTF-8
   last_success_bytes: 127517
   status_code: 200
 http://purl.obolibrary.org/obo/fma.owl:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 66368046
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 66368046
   status_code: 403
 http://purl.obolibrary.org/obo/fobi.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 118923
   content_type: text/plain; charset=utf-8
   last_success_bytes: 118923
   status_code: 200
 http://purl.obolibrary.org/obo/foodon.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:22Z'
   content_length: 2917294
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2917294
   status_code: 200
 http://purl.obolibrary.org/obo/foodon_core.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/fovt.obo:
-  checked_at: '2025-12-11T19:21:32Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 1539512
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1539512
   status_code: 200
 http://purl.obolibrary.org/obo/fovt.owl:
-  checked_at: '2025-12-11T19:21:33Z'
+  checked_at: '2025-12-11T22:39:42Z'
   content_length: 2417022
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2417022
   status_code: 200
 http://purl.obolibrary.org/obo/fovt/fovt-base.obo:
-  checked_at: '2025-12-11T19:21:32Z'
+  checked_at: '2025-12-11T22:39:42Z'
   content_length: 33174
   content_type: text/plain; charset=utf-8
   last_success_bytes: 33174
   status_code: 200
 http://purl.obolibrary.org/obo/fovt/fovt-base.owl:
-  checked_at: '2025-12-11T19:21:33Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_length: 76581
   content_type: text/plain; charset=utf-8
   last_success_bytes: 76581
   status_code: 200
 http://purl.obolibrary.org/obo/fypo.obo:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:46Z'
   content_length: 7115657
   content_type: application/octet-stream
   last_success_bytes: 7115657
   status_code: 200
 http://purl.obolibrary.org/obo/fypo.owl:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:46Z'
   content_length: 45049724
   content_type: application/octet-stream
   last_success_bytes: 45049724
   status_code: 200
 http://purl.obolibrary.org/obo/gallont.json:
-  checked_at: '2025-12-11T19:21:59Z'
+  checked_at: '2025-12-11T22:40:13Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/gallont.obo:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 60631
   content_type: text/plain; charset=utf-8
   last_success_bytes: 60631
   status_code: 200
 http://purl.obolibrary.org/obo/gallont.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 91521
   content_type: text/plain; charset=utf-8
   last_success_bytes: 91521
   status_code: 200
 http://purl.obolibrary.org/obo/gaz.obo:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 188517055
   content_type: text/plain
   error: HTTP 403 error when accessing file
   last_success_bytes: 188517055
   status_code: 403
 http://purl.obolibrary.org/obo/gaz.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 619537995
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 619537995
   status_code: 403
 http://purl.obolibrary.org/obo/gaz/gaz-countries.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 42847
   content_type: text/plain; charset=utf-8
   last_success_bytes: 42847
   status_code: 200
 http://purl.obolibrary.org/obo/gecko.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 18443
   content_type: text/plain; charset=utf-8
   last_success_bytes: 18443
   status_code: 200
 http://purl.obolibrary.org/obo/genepio.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 732830
   content_type: text/plain; charset=utf-8
   last_success_bytes: 732830
   status_code: 200
 http://purl.obolibrary.org/obo/geno.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 172319
   content_type: text/plain; charset=utf-8
   last_success_bytes: 172319
   status_code: 200
 http://purl.obolibrary.org/obo/geo.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 17397
   content_type: text/plain; charset=utf-8
   last_success_bytes: 17397
   status_code: 200
 http://purl.obolibrary.org/obo/gno.json:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 358051529
   content_type: application/octet-stream
   last_success_bytes: 358051529
   status_code: 200
 http://purl.obolibrary.org/obo/gno.obo:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 135112461
   content_type: application/octet-stream
   last_success_bytes: 135112461
   status_code: 200
 http://purl.obolibrary.org/obo/gno.owl:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 214324748
   content_type: application/octet-stream
   last_success_bytes: 214324748
   status_code: 200
 http://purl.obolibrary.org/obo/go.json:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 77592125
   content_type: application/json
   error: No Content-Length header found
   last_success_bytes: 77592125
   status_code: 200
 http://purl.obolibrary.org/obo/go.obo:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 35266549
   content_type: text/obo
   last_success_bytes: 35266549
   status_code: 200
 http://purl.obolibrary.org/obo/go.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 127608493
   content_type: application/rdf+xml
   last_success_bytes: 127608493
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-plus.json:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 131618305
   content_type: application/json
   error: No Content-Length header found
   last_success_bytes: 131618305
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-plus.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 235965574
   content_type: application/rdf+xml
   last_success_bytes: 235965574
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/go/go-base.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 160571191
   content_type: application/rdf+xml
   last_success_bytes: 160571191
   status_code: 200
 http://purl.obolibrary.org/obo/go/go-basic.json:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 67130778
   content_type: application/json
   error: No Content-Length header found
   last_success_bytes: 67130778
   status_code: 200
 http://purl.obolibrary.org/obo/go/go-basic.obo:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 31417323
   content_type: text/obo
   last_success_bytes: 31417323
   status_code: 200
 http://purl.obolibrary.org/obo/go/snapshot/go.obo:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 36285366
   content_type: text/obo
   last_success_bytes: 36285366
   status_code: 200
 http://purl.obolibrary.org/obo/go/snapshot/go.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 129218345
   content_type: application/rdf+xml
   last_success_bytes: 129218345
   status_code: 200
 http://purl.obolibrary.org/obo/gsso.json:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 1894658
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1894658
   status_code: 200
 http://purl.obolibrary.org/obo/gsso.obo:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 969731
   content_type: text/plain; charset=utf-8
   last_success_bytes: 969731
   status_code: 200
 http://purl.obolibrary.org/obo/gsso.owl:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 2201424
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2201424
   status_code: 200
 http://purl.obolibrary.org/obo/hancestro-base.owl:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/hancestro.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 145675
   content_type: text/plain; charset=utf-8
   last_success_bytes: 145675
   status_code: 200
 http://purl.obolibrary.org/obo/hao.obo:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   content_length: 129805
   content_type: text/plain; charset=utf-8
   last_success_bytes: 129805
   status_code: 200
 http://purl.obolibrary.org/obo/hao.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   content_length: 287954
   content_type: text/plain; charset=utf-8
   last_success_bytes: 287954
   status_code: 200
 http://purl.obolibrary.org/obo/hao/depictions.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   content_length: 33370
   content_type: text/plain; charset=utf-8
   last_success_bytes: 33370
   status_code: 200
 http://purl.obolibrary.org/obo/hom.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:22Z'
   content_length: 128032
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 128032
   status_code: 403
 http://purl.obolibrary.org/obo/hp.json:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 21844974
   content_type: application/octet-stream
   last_success_bytes: 21844974
   status_code: 200
 http://purl.obolibrary.org/obo/hp.obo:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 10323898
   content_type: application/octet-stream
   last_success_bytes: 10323898
   status_code: 200
 http://purl.obolibrary.org/obo/hp.owl:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 75563838
   content_type: application/octet-stream
   last_success_bytes: 75563838
   status_code: 200
 http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 19986023
   content_type: application/octet-stream
   last_success_bytes: 19986023
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-base.json:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 22046388
   content_type: application/octet-stream
   last_success_bytes: 22046388
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-base.obo:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 10856100
   content_type: application/octet-stream
   last_success_bytes: 10856100
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-base.owl:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 47800705
   content_type: application/octet-stream
   last_success_bytes: 47800705
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-full.json:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 42768508
   content_type: application/octet-stream
   last_success_bytes: 42768508
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-full.obo:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 18799751
   content_type: application/octet-stream
   last_success_bytes: 18799751
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-full.owl:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 84677064
   content_type: application/octet-stream
   last_success_bytes: 84677064
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-international.json:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 49018603
   content_type: application/octet-stream
   last_success_bytes: 49018603
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-international.obo:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 21743253
   content_type: application/octet-stream
   last_success_bytes: 21743253
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-international.owl:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 207067457
   content_type: application/octet-stream
   last_success_bytes: 207067457
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 21845021
   content_type: application/octet-stream
   last_success_bytes: 21845021
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 10323948
   content_type: application/octet-stream
   last_success_bytes: 10323948
   status_code: 200
 http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 29314717
   content_type: application/octet-stream
   last_success_bytes: 29314717
   status_code: 200
 http://purl.obolibrary.org/obo/hp/phenotype.hpoa:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 34309912
   content_type: application/octet-stream
   last_success_bytes: 34309912
   status_code: 200
 http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 64122722
   content_type: application/octet-stream
   last_success_bytes: 64122722
   status_code: 200
 http://purl.obolibrary.org/obo/hsapdv.obo:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 143585
   content_type: application/octet-stream
   last_success_bytes: 143585
   status_code: 200
 http://purl.obolibrary.org/obo/hsapdv.owl:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 528600
   content_type: application/octet-stream
   last_success_bytes: 528600
   status_code: 200
 http://purl.obolibrary.org/obo/hso.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   content_length: 138245
   content_type: text/plain; charset=utf-8
   last_success_bytes: 138245
   status_code: 200
 http://purl.obolibrary.org/obo/htn.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   content_length: 140471
   content_type: text/plain; charset=utf-8
   last_success_bytes: 140471
   status_code: 200
 http://purl.obolibrary.org/obo/iao.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 78925
   content_type: text/plain; charset=utf-8
   last_success_bytes: 78925
   status_code: 200
 http://purl.obolibrary.org/obo/iao/d-acts.owl:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:54Z'
   content_length: 10158
   content_type: text/plain; charset=utf-8
   last_success_bytes: 10158
   status_code: 200
 http://purl.obolibrary.org/obo/iao/dev/iao.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:54Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/iao/ontology-metadata.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:54Z'
   content_length: 11084
   content_type: text/plain; charset=utf-8
   last_success_bytes: 11084
   status_code: 200
 http://purl.obolibrary.org/obo/iceo.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:56Z'
   content_length: 1257537
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1257537
   status_code: 200
 http://purl.obolibrary.org/obo/ico.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 204583
   content_type: text/plain; charset=utf-8
   last_success_bytes: 204583
   status_code: 200
 http://purl.obolibrary.org/obo/ido.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 69658
   content_type: text/plain; charset=utf-8
   last_success_bytes: 69658
   status_code: 200
 http://purl.obolibrary.org/obo/idomal.obo:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 161166
   content_type: text/plain; charset=utf-8
   last_success_bytes: 161166
   status_code: 200
 http://purl.obolibrary.org/obo/idomal.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 309674
   content_type: text/plain; charset=utf-8
   last_success_bytes: 309674
   status_code: 200
 http://purl.obolibrary.org/obo/ino.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 56433
   content_type: text/plain; charset=utf-8
   last_success_bytes: 56433
   status_code: 200
 http://purl.obolibrary.org/obo/kisao.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 96237
   content_type: text/plain; charset=utf-8
   last_success_bytes: 96237
   status_code: 200
 http://purl.obolibrary.org/obo/labo.owl:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 47001
   content_type: text/plain; charset=utf-8
   last_success_bytes: 47001
   status_code: 200
 http://purl.obolibrary.org/obo/lepao.obo:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 74809
   content_type: text/plain; charset=utf-8
   last_success_bytes: 74809
   status_code: 200
 http://purl.obolibrary.org/obo/lepao.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   content_length: 141799
   content_type: text/plain; charset=utf-8
   last_success_bytes: 141799
   status_code: 200
 http://purl.obolibrary.org/obo/ma.obo:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 391635
   content_type: text/plain
   error: HTTP 403 error when accessing file
   last_success_bytes: 391635
   status_code: 403
 http://purl.obolibrary.org/obo/ma.owl:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 2699120
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 2699120
   status_code: 403
 http://purl.obolibrary.org/obo/mamo.owl:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 204902
   content_type: application/xml
   last_success_bytes: 204902
   status_code: 200
 http://purl.obolibrary.org/obo/maxo.json:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 9544243
   content_type: application/octet-stream
   last_success_bytes: 9544243
   status_code: 200
 http://purl.obolibrary.org/obo/maxo.obo:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 4091313
   content_type: application/octet-stream
   last_success_bytes: 4091313
   status_code: 200
 http://purl.obolibrary.org/obo/maxo.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 16025464
   content_type: application/octet-stream
   last_success_bytes: 16025464
   status_code: 200
 http://purl.obolibrary.org/obo/maxo/maxo-base.json:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 2497251
   content_type: application/octet-stream
   last_success_bytes: 2497251
   status_code: 200
 http://purl.obolibrary.org/obo/maxo/maxo-base.obo:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 1074502
   content_type: application/octet-stream
   last_success_bytes: 1074502
   status_code: 200
 http://purl.obolibrary.org/obo/maxo/maxo-base.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   content_length: 3500154
   content_type: application/octet-stream
   last_success_bytes: 3500154
   status_code: 200
 http://purl.obolibrary.org/obo/mco.obo:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 409757
   content_type: text/plain; charset=utf-8
   last_success_bytes: 409757
   status_code: 200
 http://purl.obolibrary.org/obo/mco.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 772100
   content_type: text/plain; charset=utf-8
   last_success_bytes: 772100
   status_code: 200
 http://purl.obolibrary.org/obo/mcro.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 7969
   content_type: text/plain; charset=utf-8
   last_success_bytes: 7969
   status_code: 200
 http://purl.obolibrary.org/obo/mf.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 55891
   content_type: text/plain; charset=utf-8
   last_success_bytes: 55891
   status_code: 200
 http://purl.obolibrary.org/obo/mfmo.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 15791
   content_type: text/plain; charset=utf-8
   last_success_bytes: 15791
@@ -1598,664 +1608,664 @@ http://purl.obolibrary.org/obo/mfo.owl:
   skip_reason: html_page
   status_code: 200
 http://purl.obolibrary.org/obo/mfoem.owl:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   content_length: 72354
   content_type: text/plain; charset=utf-8
   last_success_bytes: 72354
   status_code: 200
 http://purl.obolibrary.org/obo/mfomd.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_length: 1294
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1294
   status_code: 200
 http://purl.obolibrary.org/obo/mi.obo:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 169686
   content_type: text/plain; charset=utf-8
   last_success_bytes: 169686
   status_code: 200
 http://purl.obolibrary.org/obo/mi.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 248645
   content_type: text/plain; charset=utf-8
   last_success_bytes: 248645
   status_code: 200
 http://purl.obolibrary.org/obo/miapa.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 5849
   content_type: text/plain; charset=utf-8
   last_success_bytes: 5849
   status_code: 200
 http://purl.obolibrary.org/obo/micro.owl:
-  checked_at: '2025-12-11T19:22:37Z'
+  checked_at: '2025-12-11T22:40:59Z'
   content_length: 665050
   content_type: text/plain; charset=utf-8
   last_success_bytes: 665050
   status_code: 200
 http://purl.obolibrary.org/obo/mirnao.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/miro.obo:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 82792
   content_type: text/plain; charset=utf-8
   last_success_bytes: 82792
   status_code: 200
 http://purl.obolibrary.org/obo/miro.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:50Z'
   content_length: 212397
   content_type: text/plain; charset=utf-8
   last_success_bytes: 212397
   status_code: 200
 http://purl.obolibrary.org/obo/mmo.obo:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 503578
   content_type: text/plain; charset=UTF-8
   last_success_bytes: 503578
   status_code: 200
 http://purl.obolibrary.org/obo/mmo.owl:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 1915558
   content_type: text/xml
   last_success_bytes: 1915558
   status_code: 200
 http://purl.obolibrary.org/obo/mmusdv.obo:
-  checked_at: '2025-12-11T19:22:38Z'
+  checked_at: '2025-12-11T22:41:00Z'
   content_length: 104741
   content_type: application/octet-stream
   last_success_bytes: 104741
   status_code: 200
 http://purl.obolibrary.org/obo/mmusdv.owl:
-  checked_at: '2025-12-11T19:22:39Z'
+  checked_at: '2025-12-11T22:40:59Z'
   content_length: 367557
   content_type: application/octet-stream
   last_success_bytes: 367557
   status_code: 200
 http://purl.obolibrary.org/obo/mo.owl:
-  checked_at: '2025-12-11T19:22:41Z'
+  checked_at: '2025-12-11T22:40:57Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/mod.obo:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 251654
   content_type: text/plain; charset=utf-8
   last_success_bytes: 251654
   status_code: 200
 http://purl.obolibrary.org/obo/mod.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 433944
   content_type: text/plain; charset=utf-8
   last_success_bytes: 433944
   status_code: 200
 http://purl.obolibrary.org/obo/mondo.json:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 102535826
   content_type: application/octet-stream
   last_success_bytes: 102535826
   status_code: 200
 http://purl.obolibrary.org/obo/mondo.obo:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 50592949
   content_type: application/octet-stream
   last_success_bytes: 50592949
   status_code: 200
 http://purl.obolibrary.org/obo/mondo.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 239033678
   content_type: application/octet-stream
   last_success_bytes: 239033678
   status_code: 200
 http://purl.obolibrary.org/obo/mondo/mondo-base.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 224314311
   content_type: application/octet-stream
   last_success_bytes: 224314311
   status_code: 200
 http://purl.obolibrary.org/obo/mondo/mondo-simple.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 212732382
   content_type: application/octet-stream
   last_success_bytes: 212732382
   status_code: 200
 http://purl.obolibrary.org/obo/mop.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 154788
   content_type: text/plain; charset=utf-8
   last_success_bytes: 154788
   status_code: 200
 http://purl.obolibrary.org/obo/mp.json:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 60002654
   content_type: application/json
   last_success_bytes: 60002654
   status_code: 200
 http://purl.obolibrary.org/obo/mp.obo:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_type: text/plain
   error: No Content-Length header found
   status_code: 200
 http://purl.obolibrary.org/obo/mp.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 114452356
   content_type: text/xml
   last_success_bytes: 114452356
   status_code: 200
 http://purl.obolibrary.org/obo/mp/mp-base.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_length: 50038906
   content_type: application/octet-stream
   last_success_bytes: 50038906
   status_code: 200
 http://purl.obolibrary.org/obo/mpath.owl:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 88952
   content_type: text/plain; charset=utf-8
   last_success_bytes: 88952
   status_code: 200
 http://purl.obolibrary.org/obo/mpio.owl:
-  checked_at: '2025-12-11T19:22:02Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 19172
   content_type: text/plain; charset=utf-8
   last_success_bytes: 19172
   status_code: 200
 http://purl.obolibrary.org/obo/mro.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 82440602
   content_type: application/octet-stream
   last_success_bytes: 82440602
   status_code: 200
 http://purl.obolibrary.org/obo/ms.obo:
-  checked_at: '2025-12-11T19:21:33Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 1102442
   content_type: application/octet-stream
   last_success_bytes: 1102442
   status_code: 200
 http://purl.obolibrary.org/obo/ms.owl:
-  checked_at: '2025-12-11T19:21:32Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 4799760
   content_type: application/octet-stream
   last_success_bytes: 4799760
   status_code: 200
 http://purl.obolibrary.org/obo/nbo.owl:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 372935
   content_type: text/plain; charset=utf-8
   last_success_bytes: 372935
   status_code: 200
 http://purl.obolibrary.org/obo/ncbitaxon.json:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 1981974965
   content_type: application/octet-stream
   last_success_bytes: 1981974965
   status_code: 200
 http://purl.obolibrary.org/obo/ncbitaxon.obo:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 533396581
   content_type: application/octet-stream
   last_success_bytes: 533396581
   status_code: 200
 http://purl.obolibrary.org/obo/ncbitaxon.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 1677601760
   content_type: application/octet-stream
   last_success_bytes: 1677601760
   status_code: 200
 http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 75476239
   content_type: application/octet-stream
   last_success_bytes: 75476239
   status_code: 200
 http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:06Z'
   content_length: 37153972
   content_type: application/octet-stream
   last_success_bytes: 37153972
   status_code: 200
 http://purl.obolibrary.org/obo/ncit.obo:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 238812762
   content_type: application/octet-stream
   last_success_bytes: 238812762
   status_code: 200
 http://purl.obolibrary.org/obo/ncit.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 782238438
   content_type: application/octet-stream
   last_success_bytes: 782238438
   status_code: 200
 http://purl.obolibrary.org/obo/ncro/dev/ncro.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 4548
   content_type: text/plain; charset=utf-8
   last_success_bytes: 4548
   status_code: 200
 http://purl.obolibrary.org/obo/ngbo.owl:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 187540
   content_type: text/plain; charset=utf-8
   last_success_bytes: 187540
   status_code: 200
 http://purl.obolibrary.org/obo/nmr.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/nomen.owl:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 11371
   content_type: text/plain; charset=utf-8
   last_success_bytes: 11371
   status_code: 200
 http://purl.obolibrary.org/obo/oae.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 1274570
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1274570
   status_code: 200
 http://purl.obolibrary.org/obo/oarcs.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 27840
   content_type: text/plain; charset=utf-8
   last_success_bytes: 27840
   status_code: 200
 http://purl.obolibrary.org/obo/oba.obo:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 33532280
   content_type: application/octet-stream
   last_success_bytes: 33532280
   status_code: 200
 http://purl.obolibrary.org/obo/oba.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 166637718
   content_type: application/octet-stream
   last_success_bytes: 166637718
   status_code: 200
 http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:17Z'
   content_length: 11853852
   content_type: application/octet-stream
   last_success_bytes: 11853852
   status_code: 200
 http://purl.obolibrary.org/obo/obcs.owl:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 213907
   content_type: text/plain; charset=utf-8
   last_success_bytes: 213907
   status_code: 200
 http://purl.obolibrary.org/obo/obi.obo:
-  checked_at: '2025-12-11T19:21:42Z'
+  checked_at: '2025-12-11T22:39:52Z'
   content_length: 299928
   content_type: text/plain; charset=utf-8
   last_success_bytes: 299928
   status_code: 200
 http://purl.obolibrary.org/obo/obi.owl:
-  checked_at: '2025-12-11T19:21:42Z'
+  checked_at: '2025-12-11T22:39:52Z'
   content_length: 724629
   content_type: text/plain; charset=utf-8
   last_success_bytes: 724629
   status_code: 200
 http://purl.obolibrary.org/obo/obi/obi-base.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 604323
   content_type: text/plain; charset=utf-8
   last_success_bytes: 604323
   status_code: 200
 http://purl.obolibrary.org/obo/obi/obi_core.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:52Z'
   content_length: 46930
   content_type: text/plain; charset=utf-8
   last_success_bytes: 46930
   status_code: 200
 http://purl.obolibrary.org/obo/obib.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 230390
   content_type: text/plain; charset=utf-8
   last_success_bytes: 230390
   status_code: 200
 http://purl.obolibrary.org/obo/occo.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   content_length: 280761
   content_type: text/plain; charset=utf-8
   last_success_bytes: 280761
   status_code: 200
 http://purl.obolibrary.org/obo/ogg.owl:
-  checked_at: '2025-12-11T19:21:42Z'
+  checked_at: '2025-12-11T22:39:51Z'
   content_length: 0
   content_type: text/plain
   last_success_bytes: 0
   status_code: 200
 http://purl.obolibrary.org/obo/ogi.owl:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ogms.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:10Z'
   content_length: 39126
   content_type: text/plain; charset=utf-8
   last_success_bytes: 39126
   status_code: 200
 http://purl.obolibrary.org/obo/ogsf.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 69686
   content_type: text/plain; charset=utf-8
   last_success_bytes: 69686
   status_code: 200
 http://purl.obolibrary.org/obo/ohd.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   content_length: 326300
   content_type: text/plain; charset=utf-8
   last_success_bytes: 326300
   status_code: 200
 http://purl.obolibrary.org/obo/ohd/dev/ohd.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ohmi.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 137769
   content_type: text/plain; charset=utf-8
   last_success_bytes: 137769
   status_code: 200
 http://purl.obolibrary.org/obo/ohpi.owl:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 1482262
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1482262
   status_code: 200
 http://purl.obolibrary.org/obo/olatdv.obo:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   content_length: 9412
   content_type: text/plain; charset=utf-8
   last_success_bytes: 9412
   status_code: 200
 http://purl.obolibrary.org/obo/olatdv.owl:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   content_length: 11939
   content_type: text/plain; charset=utf-8
   last_success_bytes: 11939
   status_code: 200
 http://purl.obolibrary.org/obo/omiabis.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 109985
   content_type: text/plain; charset=utf-8
   last_success_bytes: 109985
   status_code: 200
 http://purl.obolibrary.org/obo/omit.owl:
-  checked_at: '2025-12-11T19:21:50Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 2146508
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2146508
   status_code: 200
 http://purl.obolibrary.org/obo/omo.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 14891
   content_type: text/plain; charset=utf-8
   last_success_bytes: 14891
   status_code: 200
 http://purl.obolibrary.org/obo/omp.obo:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 124064
   content_type: text/plain; charset=utf-8
   last_success_bytes: 124064
   status_code: 200
 http://purl.obolibrary.org/obo/omp.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 222487
   content_type: text/plain; charset=utf-8
   last_success_bytes: 222487
   status_code: 200
 http://purl.obolibrary.org/obo/omrse.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 169863
   content_type: text/plain; charset=utf-8
   last_success_bytes: 169863
   status_code: 200
 http://purl.obolibrary.org/obo/one.owl:
-  checked_at: '2025-12-11T19:22:40Z'
+  checked_at: '2025-12-11T22:41:00Z'
   content_length: 9258
   content_type: text/plain; charset=utf-8
   last_success_bytes: 9258
   status_code: 200
 http://purl.obolibrary.org/obo/ons.owl:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:10Z'
   content_length: 206106
   content_type: text/plain; charset=utf-8
   last_success_bytes: 206106
   status_code: 200
 http://purl.obolibrary.org/obo/ontoavida.obo:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   content_length: 240082
   content_type: text/plain; charset=utf-8
   last_success_bytes: 240082
   status_code: 200
 http://purl.obolibrary.org/obo/ontoavida.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 472853
   content_type: text/plain; charset=utf-8
   last_success_bytes: 472853
   status_code: 200
 http://purl.obolibrary.org/obo/ontoneo.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 238873
   content_type: text/plain; charset=utf-8
   last_success_bytes: 238873
   status_code: 200
 http://purl.obolibrary.org/obo/oostt.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 78721
   content_type: text/plain; charset=utf-8
   last_success_bytes: 78721
   status_code: 200
 http://purl.obolibrary.org/obo/opl.owl:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:10Z'
   content_length: 75624
   content_type: text/plain; charset=utf-8
   last_success_bytes: 75624
   status_code: 200
 http://purl.obolibrary.org/obo/opmi.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 394555
   content_type: text/plain; charset=utf-8
   last_success_bytes: 394555
   status_code: 200
 http://purl.obolibrary.org/obo/ornaseq.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 27418
   content_type: text/plain; charset=utf-8
   last_success_bytes: 27418
   status_code: 200
 http://purl.obolibrary.org/obo/ovae.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 286812
   content_type: text/plain; charset=utf-8
   last_success_bytes: 286812
   status_code: 200
 http://purl.obolibrary.org/obo/pato.json:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 883967
   content_type: text/plain; charset=utf-8
   last_success_bytes: 883967
   status_code: 200
 http://purl.obolibrary.org/obo/pato.obo:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:58Z'
   content_length: 110437
   content_type: text/plain; charset=utf-8
   last_success_bytes: 110437
   status_code: 200
 http://purl.obolibrary.org/obo/pato.owl:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 1205348
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1205348
   status_code: 200
 http://purl.obolibrary.org/obo/pato/pato-base.owl:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 180954
   content_type: text/plain; charset=utf-8
   last_success_bytes: 180954
   status_code: 200
 http://purl.obolibrary.org/obo/pcl-base.json:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-base.obo:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-base.owl:
-  checked_at: '2025-12-11T19:22:27Z'
+  checked_at: '2025-12-11T22:40:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-full.json:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:48Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-full.obo:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-full.owl:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-simple.json:
-  checked_at: '2025-12-11T19:22:39Z'
+  checked_at: '2025-12-11T22:40:56Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-simple.obo:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-simple.owl:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl.json:
-  checked_at: '2025-12-11T19:22:26Z'
+  checked_at: '2025-12-11T22:40:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl.obo:
-  checked_at: '2025-12-11T19:22:14Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 39796128
   content_type: application/octet-stream
   last_success_bytes: 39796128
   status_code: 200
 http://purl.obolibrary.org/obo/pcl.owl:
-  checked_at: '2025-12-11T19:22:14Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 167561057
   content_type: application/octet-stream
   last_success_bytes: 167561057
   status_code: 200
 http://purl.obolibrary.org/obo/pco.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 62282
   content_type: text/plain; charset=utf-8
   last_success_bytes: 62282
   status_code: 200
 http://purl.obolibrary.org/obo/pdro.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 69036
   content_type: text/plain; charset=utf-8
   last_success_bytes: 69036
   status_code: 200
 http://purl.obolibrary.org/obo/pdumdv.obo:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 4411
   content_type: text/plain; charset=utf-8
   last_success_bytes: 4411
   status_code: 200
 http://purl.obolibrary.org/obo/pdumdv.owl:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_length: 6379
   content_type: text/plain; charset=utf-8
   last_success_bytes: 6379
   status_code: 200
 http://purl.obolibrary.org/obo/peco.obo:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 67259
   content_type: text/plain; charset=utf-8
   last_success_bytes: 67259
   status_code: 200
 http://purl.obolibrary.org/obo/peco.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 82622
   content_type: text/plain; charset=utf-8
   last_success_bytes: 82622
   status_code: 200
 http://purl.obolibrary.org/obo/phipo.obo:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 1107927
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1107927
   status_code: 200
 http://purl.obolibrary.org/obo/phipo.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 1667568
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1667568
   status_code: 200
 http://purl.obolibrary.org/obo/plana.obo:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 120490
   content_type: text/plain; charset=utf-8
   last_success_bytes: 120490
   status_code: 200
 http://purl.obolibrary.org/obo/plana.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 178099
   content_type: text/plain; charset=utf-8
   last_success_bytes: 178099
   status_code: 200
 http://purl.obolibrary.org/obo/planp.obo:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 339560
   content_type: text/plain; charset=utf-8
   last_success_bytes: 339560
   status_code: 200
 http://purl.obolibrary.org/obo/planp.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 535526
   content_type: text/plain; charset=utf-8
   last_success_bytes: 535526
   status_code: 200
 http://purl.obolibrary.org/obo/po.obo:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_length: 222548
   content_type: text/plain; charset=utf-8
   last_success_bytes: 222548
   status_code: 200
 http://purl.obolibrary.org/obo/po.owl:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:56Z'
   content_length: 360324
   content_type: text/plain; charset=utf-8
   last_success_bytes: 360324
   status_code: 200
 http://purl.obolibrary.org/obo/poro.obo:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 54580
   content_type: text/plain; charset=utf-8
   last_success_bytes: 54580
   status_code: 200
 http://purl.obolibrary.org/obo/poro.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 62597
   content_type: text/plain; charset=utf-8
   last_success_bytes: 62597
   status_code: 200
 http://purl.obolibrary.org/obo/ppo.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_length: 67183
   content_type: text/plain; charset=utf-8
   last_success_bytes: 67183
   status_code: 200
 http://purl.obolibrary.org/obo/pr-asserted.obo:
-  checked_at: '2025-12-11T19:22:42Z'
+  checked_at: '2025-12-11T22:40:58Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pr-asserted.owl:
-  checked_at: '2025-12-11T19:22:41Z'
+  checked_at: '2025-12-11T22:40:59Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pr.obo:
@@ -2273,136 +2283,136 @@ http://purl.obolibrary.org/obo/pr.owl:
   skip_reason: no_content_type
   status_code: 200
 http://purl.obolibrary.org/obo/proco.owl:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 143615
   content_type: text/plain; charset=utf-8
   last_success_bytes: 143615
   status_code: 200
 http://purl.obolibrary.org/obo/psdo.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 7494
   content_type: text/plain; charset=utf-8
   last_success_bytes: 7494
   status_code: 200
 http://purl.obolibrary.org/obo/pso.obo:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 185834
   content_type: text/plain; charset=utf-8
   last_success_bytes: 185834
   status_code: 200
 http://purl.obolibrary.org/obo/pso.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:53Z'
   content_length: 277286
   content_type: text/plain; charset=utf-8
   last_success_bytes: 277286
   status_code: 200
 http://purl.obolibrary.org/obo/pw.obo:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 1347390
   content_type: text/plain; charset=UTF-8
   last_success_bytes: 1347390
   status_code: 200
 http://purl.obolibrary.org/obo/pw.owl:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:18Z'
   content_length: 5404073
   content_type: text/xml
   last_success_bytes: 5404073
   status_code: 200
 http://purl.obolibrary.org/obo/rbo.json:
-  checked_at: '2025-12-11T19:22:16Z'
+  checked_at: '2025-12-11T22:40:33Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/rbo.obo:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:27Z'
   content_length: 486142
   content_type: text/plain; charset=utf-8
   last_success_bytes: 486142
   status_code: 200
 http://purl.obolibrary.org/obo/rbo.owl:
-  checked_at: '2025-12-11T19:22:09Z'
-  content_length: 1880030
+  checked_at: '2025-12-11T22:40:27Z'
+  content_length: 1900081
   content_type: text/plain; charset=utf-8
-  last_success_bytes: 1880030
+  last_success_bytes: 1900081
   status_code: 200
 http://purl.obolibrary.org/obo/rbo/rbo-base.json:
-  checked_at: '2025-12-11T19:22:09Z'
-  content_length: 44199
+  checked_at: '2025-12-11T22:40:28Z'
+  content_length: 44198
   content_type: text/plain; charset=utf-8
-  last_success_bytes: 44199
+  last_success_bytes: 44198
   status_code: 200
 http://purl.obolibrary.org/obo/rbo/rbo-base.obo:
-  checked_at: '2025-12-11T19:22:09Z'
+  checked_at: '2025-12-11T22:40:27Z'
   content_length: 10927
   content_type: text/plain; charset=utf-8
   last_success_bytes: 10927
   status_code: 200
 http://purl.obolibrary.org/obo/rbo/rbo-base.owl:
-  checked_at: '2025-12-11T19:22:08Z'
-  content_length: 45985
+  checked_at: '2025-12-11T22:40:27Z'
+  content_length: 46026
   content_type: text/plain; charset=utf-8
-  last_success_bytes: 45985
+  last_success_bytes: 46026
   status_code: 200
 http://purl.obolibrary.org/obo/rex.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 677757
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 677757
   status_code: 403
 http://purl.obolibrary.org/obo/rnao.obo:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   content_length: 11126
   content_type: text/plain; charset=utf-8
   last_success_bytes: 11126
   status_code: 200
 http://purl.obolibrary.org/obo/rnao.owl:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:24Z'
   content_length: 30137
   content_type: text/plain; charset=utf-8
   last_success_bytes: 30137
   status_code: 200
 http://purl.obolibrary.org/obo/ro.json:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 113698
   content_type: text/plain; charset=utf-8
   last_success_bytes: 113698
   status_code: 200
 http://purl.obolibrary.org/obo/ro.obo:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 83438
   content_type: text/plain; charset=utf-8
   last_success_bytes: 83438
   status_code: 200
 http://purl.obolibrary.org/obo/ro.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 131164
   content_type: text/plain; charset=utf-8
   last_success_bytes: 131164
   status_code: 200
 http://purl.obolibrary.org/obo/ro/core.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 7819
   content_type: text/plain; charset=utf-8
   last_success_bytes: 7819
   status_code: 200
 http://purl.obolibrary.org/obo/ro/ro-base.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 94729
   content_type: text/plain; charset=utf-8
   last_success_bytes: 94729
   status_code: 200
 http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 62037
   content_type: text/plain; charset=utf-8
   last_success_bytes: 62037
   status_code: 200
 http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:03Z'
   content_length: 5164
   content_type: text/plain; charset=utf-8
   last_success_bytes: 5164
@@ -2415,284 +2425,284 @@ http://purl.obolibrary.org/obo/rs.obo:
   skip_reason: no_content_type
   status_code: 200
 http://purl.obolibrary.org/obo/rs.owl:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 5497666
   content_type: text/xml
   last_success_bytes: 5497666
   status_code: 200
 http://purl.obolibrary.org/obo/rxno.owl:
-  checked_at: '2025-12-11T19:21:58Z'
+  checked_at: '2025-12-11T22:40:12Z'
   content_length: 95394
   content_type: text/plain; charset=utf-8
   last_success_bytes: 95394
   status_code: 200
 http://purl.obolibrary.org/obo/sbo.owl:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:46Z'
   content_length: 50738
   content_type: text/plain; charset=utf-8
   last_success_bytes: 50738
   status_code: 200
 http://purl.obolibrary.org/obo/scdo.obo:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 324416
   content_type: text/plain; charset=utf-8
   last_success_bytes: 324416
   status_code: 200
 http://purl.obolibrary.org/obo/scdo.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   content_length: 367519
   content_type: text/plain; charset=utf-8
   last_success_bytes: 367519
   status_code: 200
 http://purl.obolibrary.org/obo/sep.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/sepio.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:22Z'
   content_length: 75985
   content_type: text/plain; charset=utf-8
   last_success_bytes: 75985
   status_code: 200
 http://purl.obolibrary.org/obo/sibo.obo:
-  checked_at: '2025-12-11T19:22:40Z'
+  checked_at: '2025-12-11T22:41:00Z'
   content_length: 16744
   content_type: text/plain; charset=utf-8
   last_success_bytes: 16744
   status_code: 200
 http://purl.obolibrary.org/obo/sibo.owl:
-  checked_at: '2025-12-11T19:22:40Z'
+  checked_at: '2025-12-11T22:41:00Z'
   content_length: 26920
   content_type: text/plain; charset=utf-8
   last_success_bytes: 26920
   status_code: 200
 http://purl.obolibrary.org/obo/slso-base.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/slso.json:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:17Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/slso.obo:
-  checked_at: '2025-12-11T19:21:58Z'
+  checked_at: '2025-12-11T22:40:14Z'
   content_length: 413238
   content_type: text/plain; charset=utf-8
   last_success_bytes: 413238
   status_code: 200
 http://purl.obolibrary.org/obo/slso.owl:
-  checked_at: '2025-12-11T19:21:58Z'
+  checked_at: '2025-12-11T22:40:14Z'
   content_length: 584157
   content_type: text/plain; charset=utf-8
   last_success_bytes: 584157
   status_code: 200
 http://purl.obolibrary.org/obo/so.obo:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 193405
   content_type: text/plain; charset=utf-8
   last_success_bytes: 193405
   status_code: 200
 http://purl.obolibrary.org/obo/so.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 291621
   content_type: text/plain; charset=utf-8
   last_success_bytes: 291621
   status_code: 200
 http://purl.obolibrary.org/obo/so/subsets/SOFA.obo:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 28447
   content_type: text/plain; charset=utf-8
   last_success_bytes: 28447
   status_code: 200
 http://purl.obolibrary.org/obo/so/subsets/SOFA.owl:
-  checked_at: '2025-12-11T19:21:29Z'
+  checked_at: '2025-12-11T22:39:39Z'
   content_length: 43606
   content_type: text/plain; charset=utf-8
   last_success_bytes: 43606
   status_code: 200
 http://purl.obolibrary.org/obo/spd.owl:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 69679
   content_type: text/plain; charset=utf-8
   last_success_bytes: 69679
   status_code: 200
 http://purl.obolibrary.org/obo/stato.owl:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_length: 260099
   content_type: text/plain; charset=utf-8
   last_success_bytes: 260099
   status_code: 200
 http://purl.obolibrary.org/obo/swo.json:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   content_length: 204434
   content_type: text/plain; charset=utf-8
   last_success_bytes: 204434
   status_code: 200
 http://purl.obolibrary.org/obo/swo.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   content_length: 236485
   content_type: text/plain; charset=utf-8
   last_success_bytes: 236485
   status_code: 200
 http://purl.obolibrary.org/obo/symp.obo:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 49360
   content_type: text/plain; charset=utf-8
   last_success_bytes: 49360
   status_code: 200
 http://purl.obolibrary.org/obo/symp.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 73868
   content_type: text/plain; charset=utf-8
   last_success_bytes: 73868
   status_code: 200
 http://purl.obolibrary.org/obo/t4fs-community.json:
-  checked_at: '2025-12-11T19:22:15Z'
+  checked_at: '2025-12-11T22:40:29Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/t4fs-community.obo:
-  checked_at: '2025-12-11T19:22:14Z'
+  checked_at: '2025-12-11T22:40:32Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/t4fs-community.owl:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:30Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/t4fs.json:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:25Z'
   content_length: 74586
   content_type: text/plain; charset=utf-8
   last_success_bytes: 74586
   status_code: 200
 http://purl.obolibrary.org/obo/t4fs.obo:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:25Z'
   content_length: 67799
   content_type: text/plain; charset=utf-8
   last_success_bytes: 67799
   status_code: 200
 http://purl.obolibrary.org/obo/t4fs.owl:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:25Z'
   content_length: 91877
   content_type: text/plain; charset=utf-8
   last_success_bytes: 91877
   status_code: 200
 http://purl.obolibrary.org/obo/tads.obo:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:11Z'
   content_length: 48576
   content_type: text/plain; charset=utf-8
   last_success_bytes: 48576
   status_code: 200
 http://purl.obolibrary.org/obo/tads.owl:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:10Z'
   content_length: 80482
   content_type: text/plain; charset=utf-8
   last_success_bytes: 80482
   status_code: 200
 http://purl.obolibrary.org/obo/tao.owl:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_length: 5063653
   content_type: text/plain; charset=UTF-8
   error: Timeout connecting to URL
   last_success_bytes: 5063653
   status_code: 200
 http://purl.obolibrary.org/obo/taxrank.obo:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 2271
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2271
   status_code: 200
 http://purl.obolibrary.org/obo/taxrank.owl:
-  checked_at: '2025-12-11T19:21:30Z'
+  checked_at: '2025-12-11T22:39:40Z'
   content_length: 3843
   content_type: text/plain; charset=utf-8
   last_success_bytes: 3843
   status_code: 200
 http://purl.obolibrary.org/obo/tgma.obo:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 143032
   content_type: text/plain; charset=utf-8
   last_success_bytes: 143032
   status_code: 200
 http://purl.obolibrary.org/obo/tgma.owl:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   content_length: 298621
   content_type: text/plain; charset=utf-8
   last_success_bytes: 298621
   status_code: 200
 http://purl.obolibrary.org/obo/to.obo:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 157248
   content_type: text/plain; charset=utf-8
   last_success_bytes: 157248
   status_code: 200
 http://purl.obolibrary.org/obo/to.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   content_length: 213434
   content_type: text/plain; charset=utf-8
   last_success_bytes: 213434
   status_code: 200
 http://purl.obolibrary.org/obo/trans.obo:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:12Z'
   content_length: 2508
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2508
   status_code: 200
 http://purl.obolibrary.org/obo/trans.owl:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:12Z'
   content_length: 4176
   content_type: text/plain; charset=utf-8
   last_success_bytes: 4176
   status_code: 200
 http://purl.obolibrary.org/obo/tto.obo:
-  checked_at: '2025-12-11T19:21:42Z'
+  checked_at: '2025-12-11T22:39:51Z'
   content_length: 2260220
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2260220
   status_code: 200
 http://purl.obolibrary.org/obo/tto.owl:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:39:52Z'
   content_length: 3526608
   content_type: text/plain; charset=utf-8
   last_success_bytes: 3526608
   status_code: 200
 http://purl.obolibrary.org/obo/txpo.owl:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 1799724
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1799724
   status_code: 200
 http://purl.obolibrary.org/obo/uberon.owl:
-  checked_at: '2025-12-11T19:22:10Z'
+  checked_at: '2025-12-11T22:40:30Z'
   content_length: 97323970
   content_type: application/octet-stream
   last_success_bytes: 97323970
   status_code: 200
 http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl:
-  checked_at: '2025-12-11T19:22:10Z'
+  checked_at: '2025-12-11T22:40:30Z'
   content_length: 283766409
   content_type: application/octet-stream
   last_success_bytes: 283766409
   status_code: 200
 http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl:
-  checked_at: '2025-12-11T19:22:11Z'
+  checked_at: '2025-12-11T22:40:30Z'
   content_length: 258612004
   content_type: application/octet-stream
   last_success_bytes: 258612004
   status_code: 200
 http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl:
-  checked_at: '2025-12-11T19:22:11Z'
+  checked_at: '2025-12-11T22:40:31Z'
   content_length: 125673982
   content_type: application/octet-stream
   last_success_bytes: 125673982
   status_code: 200
 http://purl.obolibrary.org/obo/uberon/uberon-base.owl:
-  checked_at: '2025-12-11T19:22:10Z'
+  checked_at: '2025-12-11T22:40:30Z'
   content_length: 56683591
   content_type: application/octet-stream
   last_success_bytes: 56683591
   status_code: 200
 http://purl.obolibrary.org/obo/uberon/uberon-basic.obo:
-  checked_at: '2025-12-11T19:22:10Z'
+  checked_at: '2025-12-11T22:40:30Z'
   content_length: 11928512
   content_type: application/octet-stream
   last_success_bytes: 11928512
@@ -2702,91 +2712,91 @@ http://purl.obolibrary.org/obo/uo.json:
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/uo.obo:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 19376
   content_type: text/plain; charset=utf-8
   last_success_bytes: 19376
   status_code: 200
 http://purl.obolibrary.org/obo/uo.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:49Z'
   content_length: 32548
   content_type: text/plain; charset=utf-8
   last_success_bytes: 32548
   status_code: 200
 http://purl.obolibrary.org/obo/upa.obo:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 454223
   content_type: text/plain; charset=utf-8
   last_success_bytes: 454223
   status_code: 200
 http://purl.obolibrary.org/obo/upa.owl:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   content_length: 798911
   content_type: text/plain; charset=utf-8
   last_success_bytes: 798911
   status_code: 200
 http://purl.obolibrary.org/obo/upheno.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 416269865
   content_type: application/octet-stream
   last_success_bytes: 416269865
   status_code: 200
 http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 51640383
   content_type: application/rdf+xml
   last_success_bytes: 51640383
   status_code: 200
 http://purl.obolibrary.org/obo/upheno/v2/upheno.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 416269865
   content_type: application/octet-stream
   last_success_bytes: 416269865
   status_code: 200
 http://purl.obolibrary.org/obo/vario.obo:
-  checked_at: '2025-12-11T19:22:15Z'
+  checked_at: '2025-12-11T22:40:31Z'
   error: Timeout connecting to URL
 http://purl.obolibrary.org/obo/vario.owl:
-  checked_at: '2025-12-11T19:22:15Z'
+  checked_at: '2025-12-11T22:40:31Z'
   error: Timeout connecting to URL
 http://purl.obolibrary.org/obo/vbo.json:
-  checked_at: '2025-12-11T19:22:12Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 1205306
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1205306
   status_code: 200
 http://purl.obolibrary.org/obo/vbo.obo:
-  checked_at: '2025-12-11T19:22:11Z'
+  checked_at: '2025-12-11T22:40:31Z'
   content_length: 990658
   content_type: text/plain; charset=utf-8
   last_success_bytes: 990658
   status_code: 200
 http://purl.obolibrary.org/obo/vbo.owl:
-  checked_at: '2025-12-11T19:22:12Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 2077292
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2077292
   status_code: 200
 http://purl.obolibrary.org/obo/vbo/vbo-base.json:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 1154978
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1154978
   status_code: 200
 http://purl.obolibrary.org/obo/vbo/vbo-base.obo:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 958659
   content_type: text/plain; charset=utf-8
   last_success_bytes: 958659
   status_code: 200
 http://purl.obolibrary.org/obo/vbo/vbo-base.owl:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:32Z'
   content_length: 2016216
   content_type: text/plain; charset=utf-8
   last_success_bytes: 2016216
   status_code: 200
 http://purl.obolibrary.org/obo/vhog.owl:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/vo.obo:
@@ -2794,177 +2804,177 @@ http://purl.obolibrary.org/obo/vo.obo:
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/vo.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:02Z'
   content_length: 1491967
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1491967
   status_code: 200
 http://purl.obolibrary.org/obo/vsao.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:21Z'
   content_length: 600603
   content_type: text/plain; charset=UTF-8
   last_success_bytes: 600603
   status_code: 200
 http://purl.obolibrary.org/obo/vt.owl:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   content_length: 406780
   content_type: text/plain; charset=utf-8
   last_success_bytes: 406780
   status_code: 200
 http://purl.obolibrary.org/obo/vto.obo:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 27544534
   content_type: application/octet-stream
   last_success_bytes: 27544534
   status_code: 200
 http://purl.obolibrary.org/obo/vto.owl:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:47Z'
   content_length: 152582746
   content_type: application/octet-stream
   last_success_bytes: 152582746
   status_code: 200
 http://purl.obolibrary.org/obo/wbbt.obo:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 163163
   content_type: text/plain; charset=utf-8
   last_success_bytes: 163163
   status_code: 200
 http://purl.obolibrary.org/obo/wbbt.owl:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:15Z'
   content_length: 325464
   content_type: text/plain; charset=utf-8
   last_success_bytes: 325464
   status_code: 200
 http://purl.obolibrary.org/obo/wbls.obo:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 30116
   content_type: text/plain; charset=utf-8
   last_success_bytes: 30116
   status_code: 200
 http://purl.obolibrary.org/obo/wbls.owl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   content_length: 76039
   content_type: text/plain; charset=utf-8
   last_success_bytes: 76039
   status_code: 200
 http://purl.obolibrary.org/obo/wbphenotype.obo:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:22Z'
   content_length: 180404
   content_type: text/plain; charset=utf-8
   last_success_bytes: 180404
   status_code: 200
 http://purl.obolibrary.org/obo/wbphenotype.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:22Z'
   content_length: 1042232
   content_type: text/plain; charset=utf-8
   last_success_bytes: 1042232
   status_code: 200
 http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl:
-  checked_at: '2025-12-11T19:22:06Z'
+  checked_at: '2025-12-11T22:40:22Z'
   content_length: 329630
   content_type: text/plain; charset=utf-8
   last_success_bytes: 329630
   status_code: 200
 http://purl.obolibrary.org/obo/xao.obo:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:40:00Z'
   content_length: 149154
   content_type: text/plain; charset=utf-8
   last_success_bytes: 149154
   status_code: 200
 http://purl.obolibrary.org/obo/xao.owl:
-  checked_at: '2025-12-11T19:21:47Z'
+  checked_at: '2025-12-11T22:39:59Z'
   content_length: 226615
   content_type: text/plain; charset=utf-8
   last_success_bytes: 226615
   status_code: 200
 http://purl.obolibrary.org/obo/xco.obo:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 1076707
   content_type: text/plain; charset=UTF-8
   last_success_bytes: 1076707
   status_code: 200
 http://purl.obolibrary.org/obo/xco.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 4253524
   content_type: text/xml
   last_success_bytes: 4253524
   status_code: 200
 http://purl.obolibrary.org/obo/xlmod.obo:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_length: 56098
   content_type: text/plain; charset=utf-8
   last_success_bytes: 56098
   status_code: 200
 http://purl.obolibrary.org/obo/xlmod.owl:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_length: 95968
   content_type: text/plain; charset=utf-8
   last_success_bytes: 95968
   status_code: 200
 http://purl.obolibrary.org/obo/xpo.obo:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 11508476
   content_type: application/octet-stream
   last_success_bytes: 11508476
   status_code: 200
 http://purl.obolibrary.org/obo/xpo.owl:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   content_length: 97539811
   content_type: application/octet-stream
   last_success_bytes: 97539811
   status_code: 200
 http://purl.obolibrary.org/obo/zeco.json:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_length: 8591
   content_type: text/plain; charset=utf-8
   last_success_bytes: 8591
   status_code: 200
 http://purl.obolibrary.org/obo/zeco.obo:
-  checked_at: '2025-12-11T19:22:28Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_length: 6814
   content_type: text/plain; charset=utf-8
   last_success_bytes: 6814
   status_code: 200
 http://purl.obolibrary.org/obo/zeco.owl:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_length: 9311
   content_type: text/plain; charset=utf-8
   last_success_bytes: 9311
   status_code: 200
 http://purl.obolibrary.org/obo/zfa.obo:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 254974
   content_type: text/plain; charset=utf-8
   last_success_bytes: 254974
   status_code: 200
 http://purl.obolibrary.org/obo/zfa.owl:
-  checked_at: '2025-12-11T19:21:39Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 401719
   content_type: text/plain; charset=utf-8
   last_success_bytes: 401719
   status_code: 200
 http://purl.obolibrary.org/obo/zfs.obo:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_length: 12259
   content_type: text/plain
   error: HTTP 403 error when accessing file
   last_success_bytes: 12259
   status_code: 403
 http://purl.obolibrary.org/obo/zfs.owl:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_length: 74652
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 74652
   status_code: 403
 http://purl.obolibrary.org/obo/zp.obo:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 15870641
   content_type: application/octet-stream
   last_success_bytes: 15870641
   status_code: 200
 http://purl.obolibrary.org/obo/zp.owl:
-  checked_at: '2025-12-11T19:21:40Z'
+  checked_at: '2025-12-11T22:39:48Z'
   content_length: 170306263
   content_type: application/octet-stream
   last_success_bytes: 170306263
@@ -2983,6 +2993,18 @@ http://purl.org/dc/terms/:
   checked_at: '2025-10-21T19:26:15Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
+  status_code: 200
+http://purl.org/spar/cito.ttl:
+  checked_at: '2025-12-11T22:40:25Z'
+  content_length: 53618
+  content_type: text/turtle; charset=utf-8
+  last_success_bytes: 53618
+  status_code: 200
+http://purl.org/spar/fabio.ttl:
+  checked_at: '2025-12-11T22:40:07Z'
+  content_length: 140152
+  content_type: text/turtle; charset=utf-8
+  last_success_bytes: 140152
   status_code: 200
 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi:
   checked_at: '2025-10-27T21:16:00Z'
@@ -3100,22 +3122,22 @@ http://www.combio.pl/rrna/static/download/Plastids.ss.fasta:
   skip_reason: no_content_type
   status_code: 200
 http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:25Z'
   content_type: text/plain
   error: HTTP 500 error when accessing file
   status_code: 500
 http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:25Z'
   content_type: text/plain
   error: HTTP 500 error when accessing file
   status_code: 500
 http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse:
-  checked_at: '2025-12-11T19:22:08Z'
+  checked_at: '2025-12-11T22:40:26Z'
   content_type: text/plain
   error: HTTP 500 error when accessing file
   status_code: 500
 http://www.hprd.org/:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 http://www.interactome-atlas.org/download:
@@ -3139,7 +3161,7 @@ http://www.microrna.gr/LncBase:
   skip_reason: html_page
   status_code: 200
 http://www.noncode.org/download.php:
-  checked_at: '2025-12-11T19:21:48Z'
+  checked_at: '2025-12-11T22:39:59Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://www.psygenet.org/:
@@ -3148,22 +3170,22 @@ http://www.psygenet.org/:
   skip_reason: html_page
   status_code: 200
 http://xteam.xbio.top/download/Human_cell_markers.txt:
-  checked_at: '2025-12-11T19:22:45Z'
+  checked_at: '2025-12-11T22:41:02Z'
   content_type: text/plain;charset=ISO-8859-1
   error: Timeout connecting to URL
   status_code: 200
 http://xteam.xbio.top/download/Mouse_cell_markers.txt:
-  checked_at: '2025-12-11T19:22:45Z'
+  checked_at: '2025-12-11T22:41:02Z'
   content_type: text/plain;charset=ISO-8859-1
   error: Timeout connecting to URL
   status_code: 200
 http://xteam.xbio.top/download/Single_cell_markers.txt:
-  checked_at: '2025-12-11T19:22:45Z'
+  checked_at: '2025-12-11T22:41:02Z'
   content_type: text/plain;charset=ISO-8859-1
   error: Timeout connecting to URL
   status_code: 200
 http://xteam.xbio.top/download/all_cell_markers.txt:
-  checked_at: '2025-12-11T19:22:45Z'
+  checked_at: '2025-12-11T22:41:02Z'
   content_type: text/plain;charset=ISO-8859-1
   error: Timeout connecting to URL
   status_code: 200
@@ -3193,43 +3215,43 @@ https://aact.ctti-clinicaltrials.org/schema:
   skip_reason: html_page
   status_code: 200
 https://aopwiki.org/aops:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /aops (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://aopwiki.org/downloads:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /downloads (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://aopwiki.org/downloads/aop-wiki-xml.gz:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://aopwiki.org/downloads/aop_ke_ec.tsv:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://aopwiki.org/downloads/aop_ke_ker.tsv:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://aopwiki.org/downloads/aop_ke_mie_ao.tsv:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://aopwiki.org/handbooks/4:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443):
     Max retries exceeded with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -3241,7 +3263,7 @@ https://api.globalbioticinteractions.org/interactionFields?type=csv:
   last_success_bytes: 15860
   status_code: 200
 https://api.globalbioticinteractions.org/interactionFields?type=json:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_type: application/json;charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -3313,35 +3335,35 @@ https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the
   skip_reason: html_page
   status_code: 200
 https://avr.hubmapconsortium.org/:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 401 error when accessing file
   status_code: 401
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/about/:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/experiment_details/:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/experiment_details/ (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/:
-  checked_at: '2025-12-11T19:21:41Z'
+  checked_at: '2025-12-11T22:39:50Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -3382,7 +3404,7 @@ https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version
   skip_reason: html_page
   status_code: 200
 https://cfde.cloud/gse/downloads/:
-  checked_at: '2025-12-11T19:21:32Z'
+  checked_at: '2025-12-11T22:39:41Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://chembl.gitbook.io/unichem:
@@ -3401,7 +3423,7 @@ https://clinicaltrials.gov/data-about-studies/download-clinical-trial-data:
   skip_reason: html_page
   status_code: 200
 ? https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
-: checked_at: '2025-12-11T19:22:31Z'
+: checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://clue.io/connectopedia:
@@ -3415,7 +3437,7 @@ https://clue.io/releases/data-dashboard:
   skip_reason: html_page
   status_code: 200
 https://cohd.io/api:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:04Z'
   error: HTTP 502 error when accessing file
   status_code: 502
 https://compartments.jensenlab.org/Downloads:
@@ -3593,11 +3615,11 @@ https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk:
   skip_reason: html_page
   status_code: 200
 https://dataverse.harvard.edu/api/access/datafile/6180620:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://depmap.org/portal/data_page/:
@@ -3627,12 +3649,12 @@ https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz:
   last_success_bytes: 884524
   status_code: 200
 https://dianalab.e-ce.uth.gr/tarbasev9/downloads:
-  checked_at: '2025-12-11T19:21:52Z'
+  checked_at: '2025-12-11T22:40:01Z'
   error: Timeout connecting to URL
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/help:
-  checked_at: '2025-12-11T19:21:43Z'
-  error: HTTP 404 error when accessing file
+  checked_at: '2025-12-11T22:40:01Z'
+  error: Timeout connecting to URL
   status_code: 404
 https://dictybase.dev/downloads:
   checked_at: '2025-10-08T14:42:53Z'
@@ -3640,7 +3662,7 @@ https://dictybase.dev/downloads:
   skip_reason: html_page
   status_code: 200
 https://dip.doe-mbi.ucla.edu/dip/Download.cgi:
-  checked_at: '2025-12-11T19:21:46Z'
+  checked_at: '2025-12-11T22:39:57Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''dip.doe-mbi.ucla.edu'',
     port=443): Max retries exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -3666,7 +3688,7 @@ https://docs.rfam.org/en/latest/database.html:
   skip_reason: html_page
   status_code: 200
 https://doi.org/10.1109/BIBM47256.2019.8983062:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   error: HTTP 418 error when accessing file
   status_code: 418
 https://doi.org/10.23645/epacomptox.5588566:
@@ -3685,7 +3707,7 @@ https://doi.org/10.5281/zenodo.8139357:
   skip_reason: html_page
   status_code: 200
 https://download.alliancegenome.org/:
-  checked_at: '2025-12-11T19:21:33Z'
+  checked_at: '2025-12-11T22:39:41Z'
   content_type: application/xml
   error: No Content-Length header found
   status_code: 200
@@ -3888,59 +3910,66 @@ https://foodb.ca/downloads:
   skip_reason: html_page
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/octet-stream
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/octet-stream
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/octet-stream
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_fid_files.zip:
-  checked_at: '2025-12-11T19:22:36Z'
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  checked_at: '2025-12-11T22:40:58Z'
+  error: HTTP 404 error when accessing file
+  status_code: 404
 https://foodb.ca/public/system/downloads/foodb_image_files.zip:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip:
-  checked_at: '2025-12-11T19:22:35Z'
+  checked_at: '2025-12-11T22:40:57Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
 https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   content_type: application/zip
-  error: HTTP 502 error when accessing file
-  status_code: 502
+  error: No Content-Length header found
+  status_code: 200
+https://forum.semantic-metabolomics.fr/.well-known/void:
+  checked_at: '2025-12-11T22:39:48Z'
+  content_length: 96461
+  content_type: ''
+  last_success_bytes: 96461
+  skip_reason: no_content_type
+  status_code: 200
 https://ftp-trace.ncbi.nih.gov/1000genomes/ftp/:
   checked_at: '2025-09-09T16:44:40Z'
   content_type: text/html;charset=UTF-8
@@ -3995,11 +4024,11 @@ https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv:
@@ -4009,11 +4038,11 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associatio
   last_success_bytes: 482336061
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.tsv:
@@ -4023,11 +4052,11 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.ts
   last_success_bytes: 48604130
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv:
-  checked_at: '2025-12-11T19:22:07Z'
+  checked_at: '2025-12-11T22:40:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/:
@@ -4036,15 +4065,15 @@ https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/homo_sapiens.tsv:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/mus_musculus.tsv:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/saccharomyces_cerevisiae.tsv:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/:
@@ -4053,15 +4082,15 @@ https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/homo_sapiens.xml:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:18Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/mus_musculus.xml:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/saccharomyces_cerevisiae.xml:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/:
@@ -4070,7 +4099,7 @@ https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/homo_sapiens.xml:
-  checked_at: '2025-12-11T19:22:03Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/:
@@ -4114,11 +4143,11 @@ https://ftp.ebi.ac.uk/pub/databases/spot/ols/:
   skip_reason: html_page
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:08Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ncbi.nih.gov/pub/HomoloGene/:
@@ -4157,7 +4186,7 @@ https://ftp.ncbi.nlm.nih.gov/pub/lu/PubTator3:
   skip_reason: html_page
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt:
-  checked_at: '2025-12-11T19:22:38Z'
+  checked_at: '2025-12-11T22:41:01Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -4198,7 +4227,7 @@ https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz:
   last_success_bytes: 1626886
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt:
-  checked_at: '2025-12-11T19:22:39Z'
+  checked_at: '2025-12-11T22:41:00Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -4239,7 +4268,7 @@ https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz:
   last_success_bytes: 3069349
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt:
-  checked_at: '2025-12-11T19:22:40Z'
+  checked_at: '2025-12-11T22:41:01Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -4301,7 +4330,7 @@ https://ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/:
   skip_reason: html_page
   status_code: 200
 https://ftp.sanger.ac.uk/project/cancerrxgene/releases/:
-  checked_at: '2025-12-11T19:22:37Z'
+  checked_at: '2025-12-11T22:40:59Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz:
@@ -4498,7 +4527,7 @@ https://github.com/SuLab/MechRepoNet/releases/tag/publication:
   skip_reason: html_page
   status_code: 200
 https://github.com/VIDallab/huri:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/avsastry/modulome-workflow:
@@ -4543,7 +4572,7 @@ https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontolog
   skip_reason: html_page
   status_code: 200
 https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip:
-  checked_at: '2025-12-11T19:21:49Z'
+  checked_at: '2025-12-11T22:40:01Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/everycure-org/matrix-indication-list:
@@ -4562,7 +4591,7 @@ https://github.com/explodecomputer/mr-base-methods-paper:
   skip_reason: html_page
   status_code: 200
 https://github.com/geneontology/go-cam:
-  checked_at: '2025-12-11T19:22:13Z'
+  checked_at: '2025-12-11T22:40:31Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/geneontology/minerva:
@@ -4631,7 +4660,7 @@ https://github.com/jakelever/pgxmine:
   skip_reason: html_page
   status_code: 200
 https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/multiomicsKP/drug_approvals_kp:
@@ -4764,7 +4793,7 @@ https://gtrnadb.org/faq.html:
   skip_reason: html_page
   status_code: 200
 https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:09Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''honiglab.c2b2.columbia.edu'',
     port=443): Max retries exceeded with url: /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -4905,7 +4934,7 @@ https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_
   skip_reason: html_page
   status_code: 200
 https://idrblab.org/ttd/help:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://imodulondb.org/:
@@ -4929,11 +4958,11 @@ https://kg-hub.berkeleybop.io/eco-kg/:
   skip_reason: html_page
   status_code: 200
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz:
-  checked_at: '2025-12-11T19:22:10Z'
+  checked_at: '2025-12-11T22:40:30Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kghub.io/kg-covid-19/:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz:
@@ -4951,23 +4980,23 @@ https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html:
   skip_reason: html_page
   status_code: 200
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv:
-  checked_at: '2025-12-11T19:22:00Z'
+  checked_at: '2025-12-11T22:40:15Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html:
@@ -4991,15 +5020,15 @@ https://lncipedia.org/download#anchor-metadata:
   skip_reason: html_page
   status_code: 200
 https://loinc.org/download/loinc-complete/:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://loinc.org/downloads/archive/:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://loinc.org/principles/:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://maayanlab.cloud/chea-kg/downloads/:
@@ -5027,7 +5056,7 @@ https://meshb.nlm.nih.gov/MeSHonDemand:
   skip_reason: html_page
   status_code: 200
 https://mips.helmholtz-muenchen.de/corum/download/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:49Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'',
     port=443): Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -5072,7 +5101,7 @@ https://mirgenedb.org/information:
   skip_reason: html_page
   status_code: 200
 https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php:
-  checked_at: '2025-12-11T19:21:43Z'
+  checked_at: '2025-12-11T22:40:00Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 ? https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2018-07-18_SNP_AF_for_AlleleB_combined_allele_counts_and_MAF_pos_added.txt.gz
@@ -5137,7 +5166,7 @@ https://mrcieu.github.io/software/vectology/:
   skip_reason: html_page
   status_code: 200
 https://ngdc.cncb.ac.cn/lncbook/download:
-  checked_at: '2025-12-11T19:21:55Z'
+  checked_at: '2025-12-11T22:40:06Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ngdc.cncb.ac.cn/lncbook/statistics:
@@ -5181,47 +5210,47 @@ https://ocg.cancer.gov/programs/ctd2/data-portal/:
   skip_reason: html_page
   status_code: 200
 https://omabrowser.org/oma/current/OMA.ttl.gz:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaGroups.orthoxml:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaGroups.txt.gz:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaHOGs.orthoxml:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaServer.h5:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OrthologousPairs.txt.gz:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-proteins.fa.gz:
-  checked_at: '2025-12-11T19:22:30Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-uniprot.txt.gz:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://openpredict.semanticscience.org/:
-  checked_at: '2025-12-11T19:21:53Z'
+  checked_at: '2025-12-11T22:40:05Z'
   error: HTTP 405 error when accessing file
   status_code: 405
 https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383:
@@ -5246,11 +5275,11 @@ https://pharmacodb.ca/documentation:
   skip_reason: html_page
   status_code: 200
 https://pharos.nih.gov/about:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:12Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://pharos.nih.gov/api-docs:
-  checked_at: '2025-12-11T19:21:57Z'
+  checked_at: '2025-12-11T22:40:12Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://phewascatalog.org/phewas/#home:
@@ -5264,7 +5293,7 @@ https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/:
   skip_reason: html_page
   status_code: 200
 https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:20Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://portal.gdc.cancer.gov/:
@@ -5302,19 +5331,19 @@ https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20
   last_success_bytes: 4796343398
   status_code: 200
 https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:48Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:48Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip:
-  checked_at: '2025-12-11T19:22:31Z'
+  checked_at: '2025-12-11T22:40:48Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://previous.malacards.org/:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://pubmed.ncbi.nlm.nih.gov/help/:
@@ -5339,31 +5368,31 @@ https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master
   last_success_bytes: 102365
   status_code: 200
 https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /public/data/Compound_Intake_Policy.pdf
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 https://repo-hub.broadinstitute.org/repurposing#about:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://repo-hub.broadinstitute.org/repurposing#case-studies:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://repo-hub.broadinstitute.org/repurposing#download:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://repo-hub.broadinstitute.org/repurposing#screen:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -5399,10 +5428,10 @@ https://reporter.nih.gov/exporter/publications:
   skip_reason: html_page
   status_code: 200
 https://reprotox-kg.net/downloads/:
-  checked_at: '2025-12-11T19:22:36Z'
+  checked_at: '2025-12-11T22:40:58Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443):
     Max retries exceeded with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-    object at 0x7f1820e5c740>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
+    object at 0x7f8e7e70b470>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
     or service not known)"))'
 https://ribovision2.chemistry.gatech.edu/:
   checked_at: '2025-10-27T21:16:44Z'
@@ -5511,6 +5540,16 @@ https://sourceforge.net/projects/rdp-classifier/:
   status_code: 200
 https://sourceforge.net/projects/snpeff/files/:
   checked_at: '2025-10-31T14:55:08Z'
+  content_type: text/html; charset=utf-8
+  skip_reason: html_page
+  status_code: 200
+https://sparontologies.github.io/cito/current/cito.html:
+  checked_at: '2025-12-11T22:40:21Z'
+  content_type: text/html; charset=utf-8
+  skip_reason: html_page
+  status_code: 200
+https://sparontologies.github.io/fabio/current/fabio.html:
+  checked_at: '2025-12-11T22:40:05Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5635,7 +5674,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/:
   skip_reason: html_page
   status_code: 200
 https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz:
-  checked_at: '2025-12-11T19:22:05Z'
+  checked_at: '2025-12-11T22:40:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://tatonettilab-resources.s3.amazonaws.com/KidSIDES/ade_nichd.csv.gz:
@@ -5656,7 +5695,7 @@ https://ubkg-downloads.xconsortia.org/:
   skip_reason: html_page
   status_code: 200
 https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=:
-  checked_at: '2025-12-11T19:21:56Z'
+  checked_at: '2025-12-11T22:40:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://veupathdb.org/veupathdb/app/downloads:
@@ -5670,19 +5709,19 @@ https://veupathdb.org/veupathdb/app/static-content/landing.html:
   skip_reason: html_page
   status_code: 200
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo:
-  checked_at: '2025-12-11T19:21:33Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/hgnc/hgnc.json:
@@ -5726,119 +5765,119 @@ https://w3id.org/biopragmatics/resources/itis/itis.owl.gz:
   last_success_bytes: 14607611
   status_code: 200
 https://w3id.org/biopragmatics/resources/mesh/mesh.json:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mesh/mesh.owl:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mgi/mgi.json:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mgi/mgi.obo:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mgi/mgi.owl:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:42Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.json:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl:
-  checked_at: '2025-12-11T19:21:34Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.json:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl:
-  checked_at: '2025-12-11T19:21:35Z'
+  checked_at: '2025-12-11T22:39:43Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/reactome/reactome.json:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/reactome/reactome.owl:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/rhea/rhea.json:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/rhea/rhea.owl:
-  checked_at: '2025-12-11T19:21:45Z'
+  checked_at: '2025-12-11T22:39:57Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/ror/ror.json:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/ror/ror.owl:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/slm/slm.json:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/slm/slm.obo:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/slm/slm.owl:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.json:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:44Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl:
-  checked_at: '2025-12-11T19:21:36Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/zfin/zfin.json:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/zfin/zfin.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/goldterms/goldterms.owl:
-  checked_at: '2025-12-11T19:22:34Z'
+  checked_at: '2025-12-11T22:40:52Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview:
@@ -5877,35 +5916,35 @@ https://www.arb-silva.de/testprobe:
   skip_reason: html_page
   status_code: 200
 https://www.bgee.org/download/data-dumps/current/affymetrix/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/est/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/expr_calls/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:51Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/homology/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/in_situ/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/rdf/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/rna_seq/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/sc_rnaseq/:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:50Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDBTargetSequences.fasta
@@ -6164,7 +6203,7 @@ https://www.ebi.ac.uk/gxa/help/index.html:
   skip_reason: html_page
   status_code: 200
 https://www.ebi.ac.uk/gxa/help/r-data-objects.html:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:17Z'
   error: HTTP 500 error when accessing file
   status_code: 500
 https://www.ebi.ac.uk/intact/documentation/user-guide:
@@ -6233,7 +6272,7 @@ https://www.epa.gov/chemical-research/toxicity-forecasting#data:
   skip_reason: html_page
   status_code: 200
 https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory:
-  checked_at: '2025-12-11T19:21:51Z'
+  checked_at: '2025-12-11T22:40:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.finngen.fi/en/access_results:
@@ -6267,7 +6306,7 @@ https://www.gencodegenes.org/pages/gencode_primary/:
   skip_reason: html_page
   status_code: 200
 https://www.genecards.org/:
-  checked_at: '2025-12-11T19:22:39Z'
+  checked_at: '2025-12-11T22:41:00Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://www.genome.jp/kegg/xml/:
@@ -6301,37 +6340,37 @@ https://www.gtexportal.org/home/downloads/adult-gtex/qtl:
   skip_reason: html_page
   status_code: 200
 https://www.guidetopharmacology.org/DATA/all_ligands.sdf:
-  checked_at: '2025-12-11T19:22:28Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_type: application/vnd.Kinar
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv:
-  checked_at: '2025-12-11T19:22:28Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/interactions.csv:
-  checked_at: '2025-12-11T19:22:28Z'
+  checked_at: '2025-12-11T22:40:44Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/ligands.csv:
-  checked_at: '2025-12-11T19:22:27Z'
+  checked_at: '2025-12-11T22:40:44Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip:
-  checked_at: '2025-12-11T19:22:29Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3:
-  checked_at: '2025-12-11T19:22:28Z'
+  checked_at: '2025-12-11T22:40:45Z'
   content_type: text/n3
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/targets_and_families.csv:
-  checked_at: '2025-12-11T19:22:27Z'
+  checked_at: '2025-12-11T22:40:43Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
@@ -6471,7 +6510,7 @@ https://www.kegg.jp/kegg/syntax/:
   skip_reason: html_page
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv:
-  checked_at: '2025-12-11T19:21:54Z'
+  checked_at: '2025-12-11T22:40:11Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
@@ -6567,29 +6606,29 @@ https://www.pistoiaalliance.org/resource-library/pharma-general-ontology-use-cas
   skip_reason: html_page
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv:
-  checked_at: '2025-12-11T19:22:04Z'
+  checked_at: '2025-12-11T22:40:20Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
 https://www.proteinatlas.org/download/blood_protein.tsv.zip:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/brain_rna.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/normal_tissue.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/pathology.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/proteinatlas.json.gz:
@@ -6611,23 +6650,23 @@ https://www.proteinatlas.org/download/proteinatlas.xml.gz:
   last_success_bytes: 712079128
   status_code: 200
 https://www.proteinatlas.org/download/rna_celline.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip:
-  checked_at: '2025-12-11T19:21:38Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/rna_single_cell.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:46Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/rna_tissue.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.proteinatlas.org/download/subcellular_location.tsv.zip:
-  checked_at: '2025-12-11T19:21:37Z'
+  checked_at: '2025-12-11T22:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.ribocentre.org/publications/:
@@ -6666,7 +6705,7 @@ https://www.who.int/standards/classifications/classification-of-diseases:
   skip_reason: html_page
   status_code: 200
 https://www.wikidata.org/wiki/Wikidata:Introduction:
-  checked_at: '2025-12-11T19:22:01Z'
+  checked_at: '2025-12-11T22:40:16Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://xenbase.org/xenbase/geneExpression/geneExpressionSearch.do?method=display:
@@ -6695,7 +6734,7 @@ https://zenodo.org/badge/latestdoi/2478263:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/record/14640564/files/citations.csv.gz:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -6706,7 +6745,7 @@ https://zenodo.org/record/14640564/files/citations.tsv.gz:
   last_success_bytes: 40815688
   status_code: 200
 https://zenodo.org/record/14640564/files/datasets.csv.gz:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:55Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -6717,7 +6756,7 @@ https://zenodo.org/record/14640564/files/datasets.tsv.gz:
   last_success_bytes: 4373
   status_code: 200
 https://zenodo.org/record/14640564/files/interactions.csv.gz:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:54Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -6740,7 +6779,7 @@ https://zenodo.org/record/14640564/files/neo4j-graphdb.zip:
   last_success_bytes: 9059233137
   status_code: 200
 https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:54Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -6751,7 +6790,7 @@ https://zenodo.org/record/14640564/files/refuted-interactions.tsv.gz:
   last_success_bytes: 17546643
   status_code: 200
 https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:54Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -6774,7 +6813,7 @@ https://zenodo.org/record/14640564/files/taxonMap.tsv.gz:
   last_success_bytes: 111241785
   status_code: 200
 https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz:
-  checked_at: '2025-12-11T19:21:44Z'
+  checked_at: '2025-12-11T22:39:54Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -6830,17 +6869,17 @@ https://zenodo.org/records/3459420:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/records/8117748/files/test.txt:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/train.txt:
-  checked_at: '2025-12-11T19:22:32Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/valid.txt:
-  checked_at: '2025-12-11T19:22:33Z'
+  checked_at: '2025-12-11T22:40:49Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200

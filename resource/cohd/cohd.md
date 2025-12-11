@@ -67,8 +67,6 @@ products:
   - cohd
   product_url: https://cohd.io/api
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
