@@ -24,7 +24,7 @@ products:
   id: chemont.obo
   name: ChemOnt OBO Ontology
   product_url: http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zip
-  format: OBO
+  format: obo
 ---
 
 ChemOnt

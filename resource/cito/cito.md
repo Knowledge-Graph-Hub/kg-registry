@@ -20,7 +20,7 @@ products:
   id: cito.ttl
   name: CiTO Turtle File
   product_url: http://purl.org/spar/cito.ttl
-  format: TTL
+  format: ttl
 - category: DocumentationProduct
   description: CiTO documentation and specification
   id: cito.documentation

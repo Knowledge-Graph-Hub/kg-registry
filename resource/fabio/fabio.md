@@ -21,7 +21,7 @@ products:
   id: fabio.ttl
   name: FABIO Turtle File
   product_url: http://purl.org/spar/fabio.ttl
-  format: TTL
+  format: ttl
 - category: DocumentationProduct
   description: FABIO ontology documentation, specification, and usage guidelines
   id: fabio.documentation
