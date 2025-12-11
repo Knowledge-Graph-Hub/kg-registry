@@ -27,19 +27,41 @@ products:
   - fooddb
   product_url: https://foodb.ca/
 - category: Product
-  description: Downloadable datasets of food composition and chemical constituent
-    data
+  description: FooDB complete dataset in CSV format (TAR/GZ compressed, 952.52 MB)
   format: csv
-  id: fooddb.downloads
-  name: FooDB Data Downloads
+  id: fooddb.csv
+  name: FooDB CSV File
   original_source:
   - fooddb
-  product_url: https://foodb.ca/downloads
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 502 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+  product_file_size: 998314299
+- category: Product
+  description: FooDB complete dataset in XML format (TAR/GZ compressed, 6438.08 MB)
+  format: xml
+  id: fooddb.xml
+  name: FooDB XML File
+  original_source:
+  - fooddb
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+  product_file_size: 6731854848
+- category: Product
+  description: FooDB complete dataset in JSON format (ZIP compressed, 86.66 MB)
+  format: json
+  id: fooddb.json
+  name: FooDB JSON File
+  original_source:
+  - fooddb
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+  product_file_size: 90852659
+- category: Product
+  description: FooDB complete dataset as MySQL database dump (TAR/GZ compressed, 172.73 MB)
+  format: mysql
+  id: fooddb.mysql
+  name: FooDB MySQL Dump File
+  original_source:
+  - fooddb
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+  product_file_size: 180900659
 synonyms:
 - FooDB
 - The Food Database
