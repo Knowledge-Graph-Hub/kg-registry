@@ -8,7 +8,6 @@ description: ChemOnt (Chemical Ontology) is a comprehensive chemical ontology th
   structures with ontological classifications.
 domains:
 - chemistry and biochemistry
-- information technology
 homepage_url: http://classyfire.wishartlab.com/
 id: chemont
 layout: resource_detail
