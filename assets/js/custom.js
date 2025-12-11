@@ -56,6 +56,30 @@ jQuery(document).ready(function () {
         }
     };
 
+    // Collection metadata: display names and descriptions
+    const collectionMetadata = {
+        "aop": {
+            displayName: "AOP",
+            description: "This entity incorporates the Adverse Outcome Pathways (AOP) framework in some manner."
+        },
+        "ber": {
+            displayName: "BER",
+            description: "A resource or product relevant to the US Department of Energy Biological and Environmental Research (BER) program."
+        },
+        "translator": {
+            displayName: "Translator",
+            description: "This entity is part of those developed and used by the NCATS Biomedical Translator program."
+        },
+        "obo-foundry": {
+            displayName: "OBO Foundry",
+            description: "This entity is an ontology from the OBO Foundry, a collaborative effort to create reference ontologies in the biomedical domain."
+        },
+        "okn": {
+            displayName: "OKN",
+            description: "This entity is part of the Prototype Open Knowledge Network (OKN), a knowledge graph network supported by the National Science Foundation (NSF)."
+        }
+    };
+
     // Cache frequently accessed DOM elements
     const $tableDiv = $("#tableDiv");
     const $tableMain = $('#table-main');
@@ -67,6 +91,8 @@ jQuery(document).ready(function () {
     const $ddEvaluation = $("#dd-evaluation");
     const $resourceCount = $("#resource-count");
     const $kgCount = $("#kg-count");
+    const $collectionDescContainer = $("#collection-description-container");
+    const $collectionDescText = $("#collection-description-text");
 
     // Update resource count display
     function updateResourceCount(count, totalCount, kgCount, totalKgCount) {
@@ -682,6 +708,18 @@ jQuery(document).ready(function () {
         return collectionMetadata[collectionCode]?.displayName || capitalize(collectionCode);
     }
 
+    // Helper function to update collection description display
+    function updateCollectionDescription(collectionCode) {
+        if (collectionCode && collectionMetadata[collectionCode]) {
+            const metadata = collectionMetadata[collectionCode];
+            const displayText = `Collection ${metadata.displayName} selected. ${metadata.description}`;
+            $collectionDescText.text(displayText);
+            $collectionDescContainer.show();
+        } else {
+            $collectionDescContainer.hide();
+        }
+    }
+
     // Helper function to populate dropdowns
     function populateDropdown(selector, items, emptyOption = true, formatFunction = null, metadata = null) {
         const dropdown = $(selector);
@@ -802,7 +840,10 @@ jQuery(document).ready(function () {
 
             $ddDomains.on("change", filterHandler);
             $ddResourceTypes.on("change", filterHandler);
-            $ddCollections.on("change", filterHandler);
+            $ddCollections.on("change", function() {
+                updateCollectionDescription($(this).val());
+                filterHandler();
+            });
             $ddActivity.on("change", filterHandler);
             $ddEvaluation.on("change", filterHandler);
             $searchVal.on("keyup", filterHandler);
