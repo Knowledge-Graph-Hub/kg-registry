@@ -87,7 +87,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
     header found'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch

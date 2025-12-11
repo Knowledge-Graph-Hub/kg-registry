@@ -107,12 +107,10 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
     to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
-    to URL: Exceeded 30 redirects.'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS

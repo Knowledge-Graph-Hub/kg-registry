@@ -69,7 +69,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-08_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 502 error
+  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
     when accessing file'
 repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 ---

@@ -49,8 +49,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: targz
   description: Complete FooDB database in XML format
@@ -67,8 +69,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Complete FooDB database in JSON format
@@ -85,8 +89,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
@@ -102,8 +108,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Experimental C-MS Spectra data from FooDB
@@ -119,8 +127,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -136,8 +146,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB
@@ -153,8 +165,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
@@ -170,8 +184,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
@@ -187,8 +203,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Free Induction Decay (FID) files from FooDB
@@ -204,7 +222,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
     when accessing file'
 - category: Product
   compression: zip
@@ -221,8 +241,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 502 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
