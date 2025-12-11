@@ -6,12 +6,14 @@ contact_details:
 - contact_type: url
   value: https://reprotox-kg.net/about
 creation_date: '2025-12-07T00:00:00Z'
-description: ReproTox-KG Consortium is an organization associated with knowledge graph
-  resources in the KG-Registry.
+description: ReproTox-KG Consortium develops knowledge graphs for reproductive and
+  developmental toxicology. The consortium integrates reproductive health and toxicology
+  data.
 id: reprotox-kg-consortium
 label: ReproTox-KG Consortium
 last_modified_date: '2025-12-07T00:00:00Z'
 layout: organization_detail
 ---
+
 
 ReproTox-KG Consortium is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.

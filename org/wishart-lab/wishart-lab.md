@@ -6,12 +6,13 @@ contact_details:
 - contact_type: url
   value: http://www.wishartlab.com/
 creation_date: '2025-12-07T00:00:00Z'
-description: Wishart Lab is an organization associated with knowledge graph resources
-  in the KG-Registry.
+description: Wishart Lab develops metabolomics databases and resources. The lab provides
+  metabolite, protein, and biological molecule data.
 id: wishart-lab
 label: Wishart Lab
 last_modified_date: '2025-12-07T00:00:00Z'
 layout: organization_detail
 ---
+
 
 Wishart Lab is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.

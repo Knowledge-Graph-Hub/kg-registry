@@ -4,17 +4,19 @@ category: Organization
 layout: organization_detail
 label: Wikimedia Foundation
 short_id: Wikimedia
-description: The Wikimedia Foundation is a nonprofit organization that hosts and operates Wikipedia and other free knowledge projects. Wikimedia's mission is to empower and engage people around the world to collect and develop educational content under a free license or in the public domain, and to disseminate it effectively and globally.
+description: Wikimedia Foundation provides collaborative knowledge platforms. The
+  foundation supplies curated reference information for knowledge graphs.
 homepage_url: https://wikimediafoundation.org/
 github_url: https://github.com/wikimedia
 contact_details:
-  - contact_type: email
-    value: info@wikimedia.org
-  - contact_type: url
-    value: https://wikimediafoundation.org/about/contact/
+- contact_type: email
+  value: info@wikimedia.org
+- contact_type: url
+  value: https://wikimediafoundation.org/about/contact/
 creation_date: '2025-12-07T00:00:00Z'
 last_modified_date: '2025-12-07T00:00:00Z'
 ---
+
 
 The Wikimedia Foundation is a nonprofit charitable organization headquartered in San Francisco, California. It operates some of the largest collaboratively edited reference projects in the world, including:
 
