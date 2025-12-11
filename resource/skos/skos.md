@@ -144,8 +144,10 @@ products:
   format: owl
   id: clo.owl
   name: clo.owl
-  product_file_size: 2121232
   product_url: http://purl.obolibrary.org/obo/clo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-11: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: EDAM OWL release
   format: owl
@@ -222,6 +224,8 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-11_ FTP error_ timed
+    out
   - 'File was not able to be retrieved when checked on 2025-12-11: FTP error: timed
     out'
 publications:

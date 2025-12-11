@@ -4,6 +4,7 @@ description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
   knowledge graph structure
 id: forum.void
 name: FORUM VoID Metadata
+product_file_size: 96461
 product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 layout: product_detail
 ---

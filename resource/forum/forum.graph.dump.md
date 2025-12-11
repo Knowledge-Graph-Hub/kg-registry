@@ -18,5 +18,7 @@ original_source:
 product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
 secondary_source:
 - forum
+warnings:
+- File was not able to be retrieved when checked on 2025-12-11_ FTP error_ timed out
 layout: product_detail
 ---
