@@ -40,6 +40,8 @@ products:
   product_file_size: 1076707
   product_url: http://purl.obolibrary.org/obo/xco.obo
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

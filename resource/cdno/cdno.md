@@ -40,6 +40,8 @@ products:
   product_file_size: 324568
   product_url: http://purl.obolibrary.org/obo/cdno.obo
 repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

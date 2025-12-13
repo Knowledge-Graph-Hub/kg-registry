@@ -33,6 +33,8 @@ products:
   product_file_size: 1257537
   product_url: http://purl.obolibrary.org/obo/iceo.owl
 repository: https://github.com/ontoice/ICEO
+taxon:
+- NCBITaxon:2
 ---
 ## Description
 

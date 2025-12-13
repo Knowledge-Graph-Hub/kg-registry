@@ -30,6 +30,8 @@ publications:
   title: 'RD-Clust: A tool for rare disease clustering and drug discovery'
   year: '2023'
 repository: https://github.com/ncats/RD-Clust
+taxon:
+- NCBITaxon:9606
 ---
 # NCATS GARD KG
 

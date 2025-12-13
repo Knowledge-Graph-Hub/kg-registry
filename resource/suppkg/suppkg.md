@@ -2,30 +2,34 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2025-10-30T00:00:00Z'
-description: SuppKG is a knowledge graph that integrates information about dietary supplements and their relationships with diseases, genes, proteins, and other biomedical entities, developed to support translational research and clinical decision-making.
+description: SuppKG is a knowledge graph that integrates information about dietary
+  supplements and their relationships with diseases, genes, proteins, and other biomedical
+  entities, developed to support translational research and clinical decision-making.
 domains:
-  - nutrition
-  - biomedical
-  - health
-id: "suppkg"
-infores_id: "suppkg"
+- nutrition
+- biomedical
+- health
+id: suppkg
+infores_id: suppkg
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: SuppKG
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
 synonyms:
-  - SuppKG
-  - Dietary Supplement Knowledge Graph
+- SuppKG
+- Dietary Supplement Knowledge Graph
 publications:
-  - id: "https://doi.org/10.1016/j.jbi.2022.104120"
-    title: "SuppKG: A knowledge graph for dietary supplements"
-    year: "2022"
+- id: https://doi.org/10.1016/j.jbi.2022.104120
+  title: 'SuppKG: A knowledge graph for dietary supplements'
+  year: '2022'
 contacts:
-  - category: Organization
-    label: NCATS Biomedical Data Translator
-    contact_details:
-      - contact_type: url
-        value: "https://ncats.nih.gov/translator"
+- category: Organization
+  label: NCATS Biomedical Data Translator
+  contact_details:
+  - contact_type: url
+    value: https://ncats.nih.gov/translator
+taxon:
+- NCBITaxon:9606
 ---
 
 # SuppKG

@@ -2,23 +2,27 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://ccsb.dana-farber.org/
-    label: Center for Cancer Systems Biology
-  - category: Individual
-    label: Marc Vidal
-    orcid: 0000-0002-9500-6065
-  - category: Individual
-    label: Frederick P. Roth
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://ccsb.dana-farber.org/
+  label: Center for Cancer Systems Biology
+- category: Individual
+  label: Marc Vidal
+  orcid: 0000-0002-9500-6065
+- category: Individual
+  label: Frederick P. Roth
 creation_date: '2025-08-05T00:00:00Z'
-description: The Human Reference Interactome (HuRI) is a comprehensive map of binary protein-protein interactions in human cells, generated through systematic high-throughput yeast two-hybrid screening. HuRI provides the largest experimentally verified collection of human protein interactions and serves as a foundational resource for understanding cellular networks and disease mechanisms.
+description: The Human Reference Interactome (HuRI) is a comprehensive map of binary
+  protein-protein interactions in human cells, generated through systematic high-throughput
+  yeast two-hybrid screening. HuRI provides the largest experimentally verified collection
+  of human protein interactions and serves as a foundational resource for understanding
+  cellular networks and disease mechanisms.
 domains:
-  - biomedical
-  - biological systems
-  - proteomics
-  - systems biology
+- biomedical
+- biological systems
+- proteomics
+- systems biology
 homepage_url: http://www.interactome-atlas.org/
 id: huri
 last_modified_date: '2025-08-05T00:00:00Z'
@@ -28,89 +32,94 @@ license:
   label: CC BY 4.0
 name: HuRI
 products:
-  - category: Product
-    description: Human Reference Interactome (HuRI) protein-protein interaction data
-    format: tsv
-    id: huri.interactions
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC BY 4.0
-    name: HuRI Protein-Protein Interactions
-    product_url: http://www.interactome-atlas.org/download
-  - category: Product
-    description: Literature-curated high-quality protein-protein interactions from comparable experimental approaches
-    format: tsv
-    id: huri.literature_benchmark
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC BY 4.0
-    name: HuRI Literature Benchmark
-    product_url: http://www.interactome-atlas.org/download
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing human protein interactions
-    id: huri.portal
-    name: HuRI Web Portal
-    product_url: http://www.interactome-atlas.org/
-  - category: Product
-    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
-    id: bioteque.embeddings
-    name: Bioteque Embeddings
-    original_source:
-      - chebi
-      - cosmic
-      - achilles
-      - depmap
-      - ccle
-      - gdsc
-      - cellosaurus
-      - clue
-      - ctd
-      - pharmacodb
-      - prism
-      - drugbank
-      - lincs
-      - compartments
-      - offsides
-      - sider
-      - drugcentral
-      - repohub
-      - chemicalchecker
-      - repodb
-      - disgenet
-      - opentargets
-      - creeds
-      - interpro
-      - reactome
-      - tissues
-      - dorothea
-      - progeny
-      - gtex
-      - hpa
-      - go
-      - corum
-      - huri
-      - intact
-      - omnipath
-      - string
-      - bto
-    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-    secondary_source:
-      - bioteque
+- category: Product
+  description: Human Reference Interactome (HuRI) protein-protein interaction data
+  format: tsv
+  id: huri.interactions
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: HuRI Protein-Protein Interactions
+  product_url: http://www.interactome-atlas.org/download
+- category: Product
+  description: Literature-curated high-quality protein-protein interactions from comparable
+    experimental approaches
+  format: tsv
+  id: huri.literature_benchmark
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: HuRI Literature Benchmark
+  product_url: http://www.interactome-atlas.org/download
+- category: GraphicalInterface
+  description: Web portal for searching and browsing human protein interactions
+  id: huri.portal
+  name: HuRI Web Portal
+  product_url: http://www.interactome-atlas.org/
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
-  - authors:
-      - Katja Luck
-      - Dae-Kyum Kim
-      - Luke Lambourne
-      - Kerstin Spirohn
-      - et al.
-    doi: 10.1038/s41586-020-2188-x
-    id: doi:10.1038/s41586-020-2188-x
-    journal: Nature
-    preferred: true
-    title: A reference map of the human binary protein interactome
-    year: '2020'
+- authors:
+  - Katja Luck
+  - Dae-Kyum Kim
+  - Luke Lambourne
+  - Kerstin Spirohn
+  - et al.
+  doi: 10.1038/s41586-020-2188-x
+  id: doi:10.1038/s41586-020-2188-x
+  journal: Nature
+  preferred: true
+  title: A reference map of the human binary protein interactome
+  year: '2020'
 repository: https://github.com/VIDallab/huri
 infores_id: huri
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:4932
 ---
 
 # HuRI - Human Reference Interactome

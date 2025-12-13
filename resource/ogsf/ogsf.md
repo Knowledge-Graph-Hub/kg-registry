@@ -33,6 +33,8 @@ products:
   product_file_size: 69686
   product_url: http://purl.obolibrary.org/obo/ogsf.owl
 repository: https://github.com/linikujp/OGSF
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

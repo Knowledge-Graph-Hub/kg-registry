@@ -150,6 +150,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/EBISPOT/hancestro
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

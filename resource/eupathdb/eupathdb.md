@@ -103,6 +103,9 @@ publications:
 warnings:
 - EuPathDB is an active data source providing integrated genomics resources for eukaryotic
   pathogens. The project is now known as VEuPathDB.
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:2759
 ---
 # Eukaryotic Pathogen Database (EuPathDB)
 

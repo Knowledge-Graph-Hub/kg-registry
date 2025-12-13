@@ -33,6 +33,8 @@ products:
   product_file_size: 438457
   product_url: http://purl.obolibrary.org/obo/eupath.owl
 repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
+taxon:
+- NCBITaxon:2759
 ---
 ## Description
 

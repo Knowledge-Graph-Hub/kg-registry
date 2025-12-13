@@ -304,6 +304,8 @@ synonyms:
 warnings:
 - Website appears to be inactive (http://bioinformatics.sandia.gov/tmrna/ not accessible
   as of 2025-11-13). Data has been contributed to RNAcentral.
+taxon:
+- NCBITaxon:2
 ---
 # The tmRNA Website
 

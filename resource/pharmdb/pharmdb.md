@@ -72,6 +72,8 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+taxon:
+- NCBITaxon:9606
 ---
 # PharmDB
 

@@ -242,6 +242,9 @@ products:
 warnings:
 - The RDP website is no longer available. Only stand-alone tools and classifiers remain
   accessible.
+taxon:
+- NCBITaxon:2157
+- NCBITaxon:2
 ---
 # Ribosomal Database Project
 

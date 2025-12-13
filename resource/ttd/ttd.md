@@ -336,6 +336,8 @@ publications:
   title: 'Therapeutic target database update 2022: facilitating drug discovery with
     enriched comparative data of targeted agents'
   year: '2022'
+taxon:
+- NCBITaxon:9606
 ---
 # Therapeutic Target Database
 

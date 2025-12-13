@@ -3,7 +3,8 @@ layout: resource_detail
 activity_status: active
 id: alzkb
 name: Alzheimer's Knowledge Base
-description: A knowledge base for AI research in Alzheimer Disease, based on graph databases.
+description: A knowledge base for AI research in Alzheimer Disease, based on graph
+  databases.
 domains:
 - neuroscience
 - biomedical
@@ -29,7 +30,8 @@ repository: https://github.com/EpistasisLab/AlzKB
 category: KnowledgeGraph
 publications:
 - id: https://doi.org/10.2196/46777
-  title: "The Alzheimer's Knowledge Base: A Knowledge Graph for Alzheimer Disease Research"
+  title: 'The Alzheimer''s Knowledge Base: A Knowledge Graph for Alzheimer Disease
+    Research'
   preferred: true
   authors:
   - Joseph D Romano
@@ -45,7 +47,7 @@ publications:
   - Li Shen
   - Jason H Moore
   journal: Journal of Medical Internet Research
-  year: "2024"
+  year: '2024'
   doi: doi:10.2196/46777
 products:
 - id: alzkb.browser
@@ -108,6 +110,8 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+taxon:
+- NCBITaxon:9606
 ---
 
 The Alzheimer's Knowledge Base (AlzKB) is a comprehensive knowledge graph for Alzheimer's Disease research. It integrates data from 22 diverse public biomedical databases into a unified knowledge representation, providing a platform for AI-driven research and drug discovery/repurposing.

@@ -444,9 +444,9 @@ products:
   - current_build
 publications:
 - authors:
-  - Uhlén M
+  - "Uhl\xE9n M"
   - Fagerberg L
-  - Hallström BM
+  - "Hallstr\xF6m BM"
   - Lindskog C
   - Oksvold P
   - Mardinoglu A
@@ -458,7 +458,7 @@ publications:
 - authors:
   - Karlsson M
   - Zhang C
-  - Méar L
+  - "M\xE9ar L"
   - Zhong W
   - Digre A
   - Katona B
@@ -468,6 +468,8 @@ publications:
   title: A single-cell type transcriptomics map of human tissues
   year: '2021'
 repository: https://github.com/human-protein-atlas
+taxon:
+- NCBITaxon:9606
 ---
 # Human Protein Atlas
 

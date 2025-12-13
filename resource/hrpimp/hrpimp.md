@@ -121,7 +121,7 @@ publications:
   - Campos-Laborie FJ
   - Charloteaux B
   - Choi D
-  - Coté AG
+  - "Cot\xE9 AG"
   - Daley M
   - Deimling S
   - Desbuleux A
@@ -130,7 +130,7 @@ publications:
   - Hardy MF
   - Kishore N
   - Knapp JJ
-  - Kovács IA
+  - "Kov\xE1cs IA"
   - Lemmens I
   - Mee MW
   - Mellor JC
@@ -176,7 +176,7 @@ publications:
   - Sheykhkarimli D
   - Sheynkman GM
   - Simonovsky E
-  - Taşan M
+  - "Ta\u015Fan M"
   - Tejeda A
   - Tropepe V
   - Twizere JC
@@ -208,6 +208,9 @@ synonyms:
 - HRPIMP
 - HuRI
 - Human Reference Interactome
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:4932
 ---
 # Human Reference Protein Interactome Mapping Project
 

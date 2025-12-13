@@ -179,6 +179,8 @@ publications:
   title: 'The Connectivity Map: Using Gene-Expression Signatures to Connect Small
     Molecules, Genes, and Disease'
 repository: https://clue.io/about
+taxon:
+- NCBITaxon:9606
 ---
 
 # Connectivity Map

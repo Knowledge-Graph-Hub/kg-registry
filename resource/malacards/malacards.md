@@ -309,6 +309,8 @@ publications:
   preferred: false
   title: 'MalaCards: A Comprehensive Automatically-Mined Database of Human Diseases'
   year: '2014'
+taxon:
+- NCBITaxon:9606
 ---
 # MalaCards
 

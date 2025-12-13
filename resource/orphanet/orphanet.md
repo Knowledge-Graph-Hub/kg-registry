@@ -170,6 +170,8 @@ products:
     when accessing file'
 repository: https://github.com/Orphanet
 version: July 2025
+taxon:
+- NCBITaxon:9606
 ---
 # Orphanet
 

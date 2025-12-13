@@ -39,6 +39,8 @@ products:
   product_file_size: 409757
   product_url: http://purl.obolibrary.org/obo/mco.obo
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+taxon:
+- NCBITaxon:2
 ---
 ## Description
 

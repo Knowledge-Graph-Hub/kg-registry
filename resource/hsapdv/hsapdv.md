@@ -166,6 +166,8 @@ products:
   secondary_source:
   - ubkg
 repository: https://github.com/obophenotype/developmental-stage-ontologies
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

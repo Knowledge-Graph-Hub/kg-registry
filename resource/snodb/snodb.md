@@ -588,7 +588,7 @@ publications:
   - Paraqindes
   - Fafard-Couture
   - Deschamps-Francoeur
-  - Faucher-Giguère
+  - "Faucher-Gigu\xE8re"
   - Bouchard-Bourelle
   - Abou Elela
   - Catez
@@ -599,6 +599,8 @@ publications:
   preferred: true
   title: 'snoDB 2.0: an enhanced interactive database, specializing in human snoRNAs'
   year: '2023'
+taxon:
+- NCBITaxon:9606
 ---
 # snoDB
 

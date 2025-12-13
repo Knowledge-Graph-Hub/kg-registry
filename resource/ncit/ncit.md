@@ -177,6 +177,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/ncit-obo-org/ncit-obo-edition
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

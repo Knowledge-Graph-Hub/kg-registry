@@ -288,6 +288,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/obi-ontology/obi
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

@@ -207,6 +207,8 @@ publications:
     with Cancer
   year: '2023'
 repository: https://github.com/oncokb
+taxon:
+- NCBITaxon:9606
 ---
 # OncoKB
 

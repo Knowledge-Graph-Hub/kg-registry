@@ -863,6 +863,9 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
+taxon:
+- NCBITaxon:6239
+- NCBITaxon:7227
 ---
 ## Overview
 

@@ -286,6 +286,8 @@ publications:
 repository: https://github.com/opalasca/TISSUES_Update
 synonyms:
 - TISSUES 2.0
+taxon:
+- NCBITaxon:40674
 ---
 # TISSUES
 

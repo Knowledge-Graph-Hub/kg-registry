@@ -2,52 +2,60 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2025-09-23T00:00:00Z'
-description: lncRNAlyzr is a specialized knowledge graph focused on long non-coding RNA (lncRNA) biology, integrating lncRNA annotations, expression profiles, functional interactions, disease associations, and regulatory mechanisms to provide comprehensive insights into lncRNA roles in cellular processes and human disease.
+description: lncRNAlyzr is a specialized knowledge graph focused on long non-coding
+  RNA (lncRNA) biology, integrating lncRNA annotations, expression profiles, functional
+  interactions, disease associations, and regulatory mechanisms to provide comprehensive
+  insights into lncRNA roles in cellular processes and human disease.
 domains:
-  - biomedical
-  - genomics
-  - systems biology
+- biomedical
+- genomics
+- systems biology
 homepage_url: https://lncrnalyzr.maayanlab.cloud/
-id: "lncrnalyzr"
+id: lncrnalyzr
 last_modified_date: '2025-09-23T00:00:00Z'
 layout: resource_detail
 name: lncRNAlyzr
 license:
-  id: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  id: https://creativecommons.org/licenses/by-nc-sa/4.0/
   label: CC BY-NC-SA 4.0
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "avi.maayan@mssm.edu"
-      - contact_type: url
-        value: "https://labs.icahn.mssm.edu/maayanlab/"
-    label: Ma'ayan Laboratory
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: avi.maayan@mssm.edu
+  - contact_type: url
+    value: https://labs.icahn.mssm.edu/maayanlab/
+  label: Ma'ayan Laboratory
 products:
-  - category: GraphicalInterface
-    description: Interactive web platform for exploring lncRNA networks with expression visualization and functional analysis tools
-    format: http
-    id: "lncrnalyzr.portal"
-    name: lncRNAlyzr Explorer
-    product_url: https://lncrnalyzr.maayanlab.cloud/
-  - category: ProgrammingInterface
-    description: RESTful API for programmatic access to lncRNA annotations, interactions, and functional predictions
-    format: http
-    id: "lncrnalyzr.api"
-    name: lncRNAlyzr API
-    product_url: https://lncrnalyzr.maayanlab.cloud/api-docs
-  - category: GraphProduct
-    description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory interactions, and disease associations
-    format: neo4j
-    id: "lncrnalyzr.graph"
-    name: lncRNAlyzr Knowledge Graph
-    dump_format: neo4j
+- category: GraphicalInterface
+  description: Interactive web platform for exploring lncRNA networks with expression
+    visualization and functional analysis tools
+  format: http
+  id: lncrnalyzr.portal
+  name: lncRNAlyzr Explorer
+  product_url: https://lncrnalyzr.maayanlab.cloud/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to lncRNA annotations, interactions,
+    and functional predictions
+  format: http
+  id: lncrnalyzr.api
+  name: lncRNAlyzr API
+  product_url: https://lncrnalyzr.maayanlab.cloud/api-docs
+- category: GraphProduct
+  description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory
+    interactions, and disease associations
+  format: neo4j
+  id: lncrnalyzr.graph
+  name: lncRNAlyzr Knowledge Graph
+  dump_format: neo4j
 publications:
-  - id: "doi:10.1016/j.jmb.2025.168938"
-    title: "lncRNAlyzr: Enrichment Analysis for lncRNA Sets"
-    year: "2025"
-    journal: Nature Genetics
+- id: doi:10.1016/j.jmb.2025.168938
+  title: 'lncRNAlyzr: Enrichment Analysis for lncRNA Sets'
+  year: '2025'
+  journal: Nature Genetics
 repository: https://github.com/MaayanLab/lncRNAlyzr
+taxon:
+- NCBITaxon:9606
 ---
 
 # lncRNAlyzr

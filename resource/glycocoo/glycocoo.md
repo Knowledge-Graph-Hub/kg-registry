@@ -221,6 +221,8 @@ publications:
   title: The glycoconjugate ontology (GlycoCoO) for standardizing the annotation of
     glycoconjugate data and its application
   year: '2021'
+taxon:
+- NCBITaxon:9606
 ---
 # GlycoConjugate Ontology (GlycoCoO)
 

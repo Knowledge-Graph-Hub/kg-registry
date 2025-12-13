@@ -74,6 +74,8 @@ publications:
 synonyms:
 - CTRP
 - Cancer Therapeutics Response Portal
+taxon:
+- NCBITaxon:9606
 ---
 
 # Cancer Therapeutics Response Portal

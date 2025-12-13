@@ -40,6 +40,8 @@ products:
   product_file_size: 2569538
   product_url: http://purl.obolibrary.org/obo/cmo.obo
 repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

@@ -225,6 +225,8 @@ products:
   product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
   secondary_source:
   - aop-db
+taxon:
+- NCBITaxon:9606
 ---
 # AOP-Wiki
 

@@ -866,6 +866,8 @@ publications:
   preferred: true
   title: 'Xenbase: key features and resources of the Xenopus model organism knowledgebase'
 repository: https://github.com/xenopus-anatomy
+taxon:
+- NCBITaxon:8355
 ---
 # Xenbase
 

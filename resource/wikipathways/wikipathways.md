@@ -471,6 +471,9 @@ publications:
   title: WikiPathways - connecting communities
   year: '2021'
 repository: https://github.com/wikipathways/wikipathways-database
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 # WikiPathways
 

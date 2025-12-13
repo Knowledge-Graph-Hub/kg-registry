@@ -592,9 +592,9 @@ products:
     when accessing file'
 publications:
 - authors:
-  - Janet Piñero
-  - Juan Manuel Ramírez-Anguita
-  - Josep Saüch-Pitarch
+  - "Janet Pi\xF1ero"
+  - "Juan Manuel Ram\xEDrez-Anguita"
+  - "Josep Sa\xFCch-Pitarch"
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz
@@ -605,6 +605,8 @@ publications:
   preferred: true
   title: The DisGeNET knowledge platform for disease genomics - 2019 update
   year: '2020'
+taxon:
+- NCBITaxon:9606
 ---
 # DisGeNET
 

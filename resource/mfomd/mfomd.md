@@ -33,6 +33,8 @@ products:
   product_file_size: 1294
   product_url: http://purl.obolibrary.org/obo/mfomd.owl
 repository: https://github.com/jannahastings/mental-functioning-ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

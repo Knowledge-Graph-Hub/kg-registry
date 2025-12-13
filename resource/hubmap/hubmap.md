@@ -216,7 +216,7 @@ products:
   - ubkg
 publications:
 - authors:
-  - Katy Börner
+  - "Katy B\xF6rner"
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1
@@ -235,6 +235,8 @@ publications:
     single-cell data'
   year: '2024'
 repository: https://github.com/hubmapconsortium
+taxon:
+- NCBITaxon:9606
 ---
 # HuBMAP - Human BioMolecular Atlas Program
 

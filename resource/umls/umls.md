@@ -150,6 +150,8 @@ publications:
   title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
 synonyms:
 - UMLS
+taxon:
+- NCBITaxon:9606
 ---
 
 # Unified Medical Language System (UMLS)

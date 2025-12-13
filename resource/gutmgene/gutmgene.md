@@ -75,5 +75,7 @@ publications:
   title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of gut
     microbes and microbial metabolites'''
   year: '2025'
+taxon:
+- NCBITaxon:2
 ---
 GutMGene

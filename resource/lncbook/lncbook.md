@@ -343,6 +343,8 @@ publications:
   journal: Nucleic Acids Research
   title: 'LncBook: a curated knowledgebase of human long non-coding RNAs'
   year: '2019'
+taxon:
+- NCBITaxon:9606
 ---
 # LncBook
 

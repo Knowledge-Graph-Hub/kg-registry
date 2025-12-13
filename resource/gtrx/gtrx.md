@@ -8,13 +8,18 @@ contacts:
     value: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
   label: NCATS Translator
 creation_date: '2025-11-05T00:00:00Z'
-description: Genome-to-Treatment (gTRx) is a NCATS Translator knowledge provider that integrates genomic, pharmacological, and clinical data to support precision medicine applications. It connects genetic variants with drug treatments and clinical outcomes, enabling researchers to explore relationships between genomic profiles and therapeutic options. The resource aggregates data from multiple sources to provide evidence-based connections between genes, variants, drugs, and diseases.
+description: Genome-to-Treatment (gTRx) is a NCATS Translator knowledge provider that
+  integrates genomic, pharmacological, and clinical data to support precision medicine
+  applications. It connects genetic variants with drug treatments and clinical outcomes,
+  enabling researchers to explore relationships between genomic profiles and therapeutic
+  options. The resource aggregates data from multiple sources to provide evidence-based
+  connections between genes, variants, drugs, and diseases.
 domains:
-  - genomics
-  - pharmacology
-  - precision medicine
-  - translational
-  - biomedical
+- genomics
+- pharmacology
+- precision medicine
+- translational
+- biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
 id: gtrx
 infores_id: gtrx
@@ -39,10 +44,12 @@ products:
   - gtrx
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
 synonyms:
-  - gTRx
-  - Genome-to-Treatment
+- gTRx
+- Genome-to-Treatment
 tags:
 - translator
+taxon:
+- NCBITaxon:9606
 ---
 
 # Genome-to-Treatment

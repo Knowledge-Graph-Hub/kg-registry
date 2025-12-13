@@ -1184,6 +1184,15 @@ publications:
     in animals
   year: '2021'
 repository: https://github.com/BgeeDB/bgee_apps
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:10116
+- NCBITaxon:7227
+- NCBITaxon:6239
+- NCBITaxon:7955
+- NCBITaxon:4932
+- NCBITaxon:3702
 ---
 Bgee (Background Expression) is a database for retrieval and comparison of gene expression patterns across multiple animal species. It integrates multiple data types (RNA-Seq, Affymetrix microarrays, in situ hybridization, EST data, and single-cell RNA-Seq) to provide a unified view of gene expression patterns across diverse anatomical structures, developmental stages, and species.
 

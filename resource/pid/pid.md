@@ -162,6 +162,8 @@ synonyms:
 - PID
 - Pathway Interaction Database
 - NCI-Nature PID
+taxon:
+- NCBITaxon:9606
 ---
 # Pathway Interaction Database
 

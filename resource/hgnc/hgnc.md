@@ -749,5 +749,7 @@ products:
   - chembl
   - chebi
 repository: https://github.com/HGNC
+taxon:
+- NCBITaxon:9606
 ---
 HUGO Gene Nomenclature Committee

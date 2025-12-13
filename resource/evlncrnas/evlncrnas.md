@@ -324,6 +324,8 @@ publications:
   title: 'EVLncRNAs 3.0: an updated comprehensive database for manually curated functional
     long non-coding RNAs validated by low-throughput experiments'
   year: '2024'
+taxon:
+- NCBITaxon:9606
 ---
 # EVLncRNAs
 

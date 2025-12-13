@@ -2,7 +2,13 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: DIANA-LncBase is a comprehensive repository of experimentally supported miRNA-lncRNA interactions. Version 3.0 contains ~500,000 entries corresponding to ~240,000 unique tissue and cell type specific miRNA-lncRNA pairs in human and mouse. Data derived from manual curation and analysis of >300 high-throughput datasets including AGO-CLIP-Seq, microarrays, and low-yield experiments across 192 cell types and 51 tissues. Includes lncRNA expression profiles and subcellular localization data.
+description: DIANA-LncBase is a comprehensive repository of experimentally supported
+  miRNA-lncRNA interactions. Version 3.0 contains ~500,000 entries corresponding to
+  ~240,000 unique tissue and cell type specific miRNA-lncRNA pairs in human and mouse.
+  Data derived from manual curation and analysis of >300 high-throughput datasets
+  including AGO-CLIP-Seq, microarrays, and low-yield experiments across 192 cell types
+  and 51 tissues. Includes lncRNA expression profiles and subcellular localization
+  data.
 domains:
 - genomics
 - biological systems
@@ -16,7 +22,8 @@ synonyms:
 - DIANA LncBase
 products:
 - category: GraphicalInterface
-  description: Main web portal for searching experimentally supported miRNA-lncRNA interactions with interactive visualizations
+  description: Main web portal for searching experimentally supported miRNA-lncRNA
+    interactions with interactive visualizations
   format: http
   id: lncbase.portal
   name: DIANA-LncBase Portal
@@ -24,7 +31,8 @@ products:
   - lncbase
   product_url: http://www.microrna.gr/LncBase
 - category: Product
-  description: Interactive correlation plots showing clustering of miRNA-lncRNA interactions across cell types and tissues
+  description: Interactive correlation plots showing clustering of miRNA-lncRNA interactions
+    across cell types and tissues
   format: http
   id: lncbase.correlation-viz
   name: LncBase Correlation Visualizations
@@ -32,7 +40,8 @@ products:
   - lncbase
   product_url: http://www.microrna.gr/LncBase
 - category: Product
-  description: Interactive bar plots showing lncRNA expression profiles and subcellular localization (nucleus/cytoplasm)
+  description: Interactive bar plots showing lncRNA expression profiles and subcellular
+    localization (nucleus/cytoplasm)
   format: http
   id: lncbase.expression-viz
   name: LncBase Expression Visualizations
@@ -40,7 +49,8 @@ products:
   - lncbase
   product_url: http://www.microrna.gr/LncBase
 - category: Product
-  description: UCSC Genome Browser integration for visualizing miRNA binding events and variant locations on lncRNAs
+  description: UCSC Genome Browser integration for visualizing miRNA binding events
+    and variant locations on lncRNAs
   format: http
   id: lncbase.ucsc-browser
   name: LncBase UCSC Browser Integration
@@ -270,8 +280,12 @@ publications:
   id: https://doi.org/10.1093/nar/gkz1036
   journal: Nucleic Acids Research
   preferred: true
-  title: 'DIANA-LncBase v3: indexing experimentally supported miRNA targets on non-coding transcripts'
+  title: 'DIANA-LncBase v3: indexing experimentally supported miRNA targets on non-coding
+    transcripts'
   year: '2020'
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 
 # DIANA-LncBase

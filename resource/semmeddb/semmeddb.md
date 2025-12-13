@@ -251,6 +251,8 @@ publications:
   title: 'The interaction of domain knowledge and linguistic structure in natural
     language processing: interpreting hypernymic propositions in biomedical text'
   year: '2003'
+taxon:
+- NCBITaxon:9606
 ---
 ## Overview
 

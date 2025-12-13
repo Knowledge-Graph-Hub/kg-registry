@@ -524,5 +524,7 @@ products:
   - chembl
   - chebi
 repository: https://www.pharmgkb.org/downloads
+taxon:
+- NCBITaxon:9606
 ---
 PharmGKB

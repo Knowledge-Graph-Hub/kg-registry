@@ -32,6 +32,8 @@ products:
   product_file_size: 213907
   product_url: http://purl.obolibrary.org/obo/obcs.owl
 repository: https://github.com/obcs/obcs
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

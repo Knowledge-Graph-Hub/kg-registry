@@ -103,6 +103,8 @@ synonyms:
 - TCRD
 - Target Central Resource Database
 - IDG TCRD
+taxon:
+- NCBITaxon:9606
 ---
 # Target Central Resource Database
 

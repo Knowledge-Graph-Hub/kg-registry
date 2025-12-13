@@ -2,60 +2,72 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2025-11-22T00:00:00Z'
-description: KG-Predict is a knowledge graph computational framework for drug repurposing that integrates multiple types of genotypic and phenotypic data. The framework constructs GP-KG (Genotype-Phenotype Knowledge Graph), containing 1,246,726 associations between 61,146 biomedical entities from various databases. KG-Predict uses graph embedding methods to learn low-dimensional representations of entities and relations, enabling inference of new drug-disease interactions. The system has been validated for identifying repositioned candidate drugs, particularly for Alzheimer's disease, achieving high performance metrics (AUROC = 0.981, AUPR = 0.409) and successfully prioritizing FDA-approved and clinical trial anti-AD drugs.
+description: KG-Predict is a knowledge graph computational framework for drug repurposing
+  that integrates multiple types of genotypic and phenotypic data. The framework constructs
+  GP-KG (Genotype-Phenotype Knowledge Graph), containing 1,246,726 associations between
+  61,146 biomedical entities from various databases. KG-Predict uses graph embedding
+  methods to learn low-dimensional representations of entities and relations, enabling
+  inference of new drug-disease interactions. The system has been validated for identifying
+  repositioned candidate drugs, particularly for Alzheimer's disease, achieving high
+  performance metrics (AUROC = 0.981, AUPR = 0.409) and successfully prioritizing
+  FDA-approved and clinical trial anti-AD drugs.
 domains:
-  - drug discovery
-  - systems biology
-  - biomedical
-  - pharmacology
-  - translational
-  - genomics
-  - phenotype
-id: "kg-predict"
+- drug discovery
+- systems biology
+- biomedical
+- pharmacology
+- translational
+- genomics
+- phenotype
+id: kg-predict
 last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://www.elsevier.com/open-access/userlicense/1.0/"
+  id: https://www.elsevier.com/open-access/userlicense/1.0/
   label: Elsevier User License
 name: KG-Predict
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 products:
-  - category: GraphProduct
-    description: GP-KG knowledge graph containing 1,246,726 associations between 61,146 entities from multiple genotypic and phenotypic databases
-    format: csv
-    id: "kg-predict.gpkg"
-    name: GP-KG Knowledge Graph Data
-    original_source:
-      - kg-predict
-    product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/
-  - category: ProcessProduct
-    description: Python implementation of KG-Predict framework for graph embedding and drug repurposing prediction
-    id: "kg-predict.code"
-    name: KG-Predict Code
-    original_source:
-      - kg-predict
-    product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
-  - category: Product
-    description: Alzheimer's disease case study predictions and clinical trial evidence
-    format: csv
-    id: "kg-predict.ad_predictions"
-    name: AD Drug Predictions
-    original_source:
-      - kg-predict
-    product_url: http://nlp.case.edu/public/data/GPKG-Predict/
+- category: GraphProduct
+  description: GP-KG knowledge graph containing 1,246,726 associations between 61,146
+    entities from multiple genotypic and phenotypic databases
+  format: csv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - kg-predict
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/
+- category: ProcessProduct
+  description: Python implementation of KG-Predict framework for graph embedding and
+    drug repurposing prediction
+  id: kg-predict.code
+  name: KG-Predict Code
+  original_source:
+  - kg-predict
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
+- category: Product
+  description: Alzheimer's disease case study predictions and clinical trial evidence
+  format: csv
+  id: kg-predict.ad_predictions
+  name: AD Drug Predictions
+  original_source:
+  - kg-predict
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/
 publications:
-  - authors:
-      - Gao Z
-      - Ding P
-      - Xu R
-    doi: "10.1016/j.jbi.2022.104133"
-    id: "PMID:35690340"
-    journal: Journal of Biomedical Informatics
-    title: "KG-Predict: A knowledge graph computational framework for drug repurposing"
-    year: "2022"
+- authors:
+  - Gao Z
+  - Ding P
+  - Xu R
+  doi: 10.1016/j.jbi.2022.104133
+  id: PMID:35690340
+  journal: Journal of Biomedical Informatics
+  title: 'KG-Predict: A knowledge graph computational framework for drug repurposing'
+  year: '2022'
 synonyms:
-  - GPKG-Predict
-  - GP-KG
+- GPKG-Predict
+- GP-KG
+taxon:
+- NCBITaxon:9606
 ---
 
 # KG-Predict

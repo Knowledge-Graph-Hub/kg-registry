@@ -35,6 +35,9 @@ products:
   product_file_size: 137769
   product_url: http://purl.obolibrary.org/obo/ohmi.owl
 repository: https://github.com/ohmi-ontology/ohmi
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 ## Description
 

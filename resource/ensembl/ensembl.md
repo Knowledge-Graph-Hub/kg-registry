@@ -592,6 +592,12 @@ publications:
   title: Ensembl 2025
   year: '2025'
 repository: https://github.com/Ensembl/
+taxon:
+- NCBITaxon:10116
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:7227
+- NCBITaxon:7955
 ---
 ## Ensembl
 

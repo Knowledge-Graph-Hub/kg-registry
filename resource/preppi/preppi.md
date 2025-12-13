@@ -86,4 +86,6 @@ publications:
 synonyms:
 - PrePPI
 - Predicting Protein-Protein Interactions
+taxon:
+- NCBITaxon:9606
 ---

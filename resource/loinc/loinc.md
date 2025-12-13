@@ -248,6 +248,8 @@ publications:
 warnings:
 - LOINC downloads and API require a free account; ensure you cite the specific version
   (e.g., 2.81) when using the terminology.
+taxon:
+- NCBITaxon:9606
 ---
 # LOINC
 

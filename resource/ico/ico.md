@@ -32,6 +32,8 @@ products:
   product_file_size: 204583
   product_url: http://purl.obolibrary.org/obo/ico.owl
 repository: https://github.com/ICO-ontology/ICO
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

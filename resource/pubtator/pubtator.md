@@ -63,8 +63,8 @@ products:
   secondary_source:
   - pubtator
 - category: GraphProduct
-  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
-    (semantic themes)
+  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
+    \ relationships (semantic themes)"
   id: gnbr.graph
   name: GNBR graph
   original_source:
@@ -92,6 +92,8 @@ publications:
     knowledge'
   year: '2024'
 repository: https://github.com/ncbi/AIONER
+taxon:
+- NCBITaxon:9606
 ---
 
 # PubTator 3.0

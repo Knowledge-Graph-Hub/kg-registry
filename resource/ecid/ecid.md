@@ -14,35 +14,40 @@ contacts:
   - contact_type: email
     value: dinesh.barupal@mssm.edu
   label: Dinesh Kumar Barupal
-description: >-
-    ECID is a biomedical knowledgebase of curated inter-chemical correlations from the core chemical datasets in exposomics. These datasets are prioritized from human biomonitoring studies using targeted and untargeted assays. ECID has applications in characterizing and understanding the effects of exposome chemicals on the human health.
+description: ECID is a biomedical knowledgebase of curated inter-chemical correlations
+  from the core chemical datasets in exposomics. These datasets are prioritized from
+  human biomonitoring studies using targeted and untargeted assays. ECID has applications
+  in characterizing and understanding the effects of exposome chemicals on the human
+  health.
 domains:
-  - environment
-  - health
-  - chemistry and biochemistry
-  - public health
-  - social determinants
-  - biomedical
+- environment
+- health
+- chemistry and biochemistry
+- public health
+- social determinants
+- biomedical
 homepage_url: https://www.ecidbase.org/
 id: ecid
 layout: resource_detail
 name: ECID
 repository: https://github.com/idslme/ecid
 publications:
-- id: "doi:10.1016/j.envint.2022.107240"
-  title: "CCDB: A database for exploring inter-chemical correlations in metabolomics and exposomics datasets"
+- id: doi:10.1016/j.envint.2022.107240
+  title: 'CCDB: A database for exploring inter-chemical correlations in metabolomics
+    and exposomics datasets'
   authors:
-    - Barupal DK
-    - Mahajan P
-    - Fakouri-Baygi S
-    - Wright RO
-    - Arora M
-    - Teitelbaum SL
-  year: "2022"
-  doi: "doi:10.1016/j.envint.2022.107240"
+  - Barupal DK
+  - Mahajan P
+  - Fakouri-Baygi S
+  - Wright RO
+  - Arora M
+  - Teitelbaum SL
+  year: '2022'
+  doi: doi:10.1016/j.envint.2022.107240
 products:
 - category: GraphicalInterface
-  description: Interface for the Chemical Correlation Database for exploring curated inter-chemical correlations
+  description: Interface for the Chemical Correlation Database for exploring curated
+    inter-chemical correlations
   id: ecid.ccdb.site
   name: CCDB
   is_public: true
@@ -52,7 +57,8 @@ products:
   secondary_source:
   - ecid
 - category: GraphicalInterface
-  description: Interface for Exposome Data Interpretation Resource for interpreting inter-chemical correlations
+  description: Interface for Exposome Data Interpretation Resource for interpreting
+    inter-chemical correlations
   id: ecid.edir.site
   is_public: true
   name: EDIR
@@ -82,7 +88,8 @@ products:
   secondary_source:
   - ecid
 - category: Product
-  description: Chemical analytes reported for the ECHO cohort measured by targeted assays.
+  description: Chemical analytes reported for the ECHO cohort measured by targeted
+    assays.
   id: ecid.echo.analyte.list
   name: ECHO Analyte List
   is_public: true
@@ -92,7 +99,8 @@ products:
   secondary_source:
   - ecid
 - category: Product
-  description: Selected datasets (n=289) for computing and curating inter-chemical correlations.
+  description: Selected datasets (n=289) for computing and curating inter-chemical
+    correlations.
   id: ecid.dataset.list
   name: ECID Dataset List
   is_public: true
@@ -142,6 +150,8 @@ products:
   secondary_source:
   - ecid
   format: csv
+taxon:
+- NCBITaxon:9606
 ---
 
 # Exposome Correlation and Interpretation Database (ECID)

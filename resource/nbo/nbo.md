@@ -32,6 +32,8 @@ products:
   product_file_size: 372935
   product_url: http://purl.obolibrary.org/obo/nbo.owl
 repository: https://github.com/obo-behavior/behavior-ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

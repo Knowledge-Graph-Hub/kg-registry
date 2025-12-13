@@ -204,6 +204,8 @@ publications:
   title: The evolution of dbSNP - 25 years of impact in genomic research
   year: '2023'
 repository: https://github.com/ncbi/dbsnp
+taxon:
+- NCBITaxon:9606
 ---
 dbSNP (Database of Single Nucleotide Polymorphisms) is a public archive for genetic variation established in 1999 by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI). It serves as a central repository for both single nucleotide variations and small-scale insertions and deletions (indels).
 

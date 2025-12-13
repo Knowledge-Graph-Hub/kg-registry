@@ -65,6 +65,8 @@ synonyms:
 - OpenPredict API
 tags:
 - translator
+taxon:
+- NCBITaxon:9606
 ---
 # OpenPredict
 

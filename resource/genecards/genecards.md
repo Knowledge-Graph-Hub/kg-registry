@@ -426,6 +426,8 @@ products:
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
 repository: null
+taxon:
+- NCBITaxon:9606
 ---
 # GeneCards
 

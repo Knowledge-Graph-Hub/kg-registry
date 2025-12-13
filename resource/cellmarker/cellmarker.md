@@ -131,6 +131,9 @@ publications:
   preferred: true
   title: CellMarker - a manually curated resource of cell markers in human and mouse
   year: '2018'
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 # CellMarker
 

@@ -497,8 +497,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -890,5 +890,14 @@ products:
   secondary_source:
   - kg-microbe
 repository: https://www.uniprot.org/help/downloads
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:10116
+- NCBITaxon:7227
+- NCBITaxon:6239
+- NCBITaxon:7955
+- NCBITaxon:4932
+- NCBITaxon:3702
 ---
 UniProt Protein Knowledge Base

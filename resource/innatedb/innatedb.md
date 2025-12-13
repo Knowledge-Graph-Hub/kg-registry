@@ -2,11 +2,14 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: InnateDB is a publicly available database of genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection, with over 18,780 manually curated interactions and integrated bioinformatics and visualization tools for systems-level analysis.
+description: InnateDB is a publicly available database of genes, proteins, experimentally-verified
+  interactions and signaling pathways involved in the innate immune response of humans,
+  mice and bovines to microbial infection, with over 18,780 manually curated interactions
+  and integrated bioinformatics and visualization tools for systems-level analysis.
 domains:
-  - immunology
-  - biological systems
-  - systems biology
+- immunology
+- biological systems
+- systems biology
 id: innatedb
 infores_id: innatedb
 homepage_url: https://www.innatedb.com/
@@ -14,34 +17,38 @@ last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: InnateDB
 synonyms:
-  - InnateDB
+- InnateDB
 contacts:
-  - category: Organization
-    label: Brinkman Laboratory, Simon Fraser University
-    contact_details:
-      - contact_type: email
-        value: innatedb-mail@sfu.ca
+- category: Organization
+  label: Brinkman Laboratory, Simon Fraser University
+  contact_details:
+  - contact_type: email
+    value: innatedb-mail@sfu.ca
 products:
-  - category: GraphicalInterface
-    description: Web interface for searching and analyzing innate immunity genes, proteins, interactions, and pathways
-    format: http
-    id: innatedb.portal
-    name: InnateDB Web Portal
-    product_url: https://www.innatedb.com/
-    original_source:
-      - innatedb
-  - category: Product
-    description: Downloadable data files for interactions, pathways, and annotations
-    id: innatedb.downloads
-    name: InnateDB Data Downloads
-    product_url: https://www.innatedb.com/
-    original_source:
-      - innatedb
+- category: GraphicalInterface
+  description: Web interface for searching and analyzing innate immunity genes, proteins,
+    interactions, and pathways
+  format: http
+  id: innatedb.portal
+  name: InnateDB Web Portal
+  product_url: https://www.innatedb.com/
+  original_source:
+  - innatedb
+- category: Product
+  description: Downloadable data files for interactions, pathways, and annotations
+  id: innatedb.downloads
+  name: InnateDB Data Downloads
+  product_url: https://www.innatedb.com/
+  original_source:
+  - innatedb
 publications:
-  - id: https://doi.org/10.1093/nar/gks1147
-    title: "InnateDB: systems biology of innate immunity and beyond - recent updates and continuing curation"
-    journal: Nucleic Acids Research
-    year: "2013"
+- id: https://doi.org/10.1093/nar/gks1147
+  title: 'InnateDB: systems biology of innate immunity and beyond - recent updates
+    and continuing curation'
+  journal: Nucleic Acids Research
+  year: '2013'
+taxon:
+- NCBITaxon:2
 ---
 
 # InnateDB

@@ -98,6 +98,8 @@ publications:
   journal: IEEE Journal of Biomedical and Health Informatics
   title: Knowledge Graph-Enabled Cancer Data Analytics
   year: '2020'
+taxon:
+- NCBITaxon:9606
 ---
 ## Overview
 

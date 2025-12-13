@@ -126,6 +126,8 @@ products:
   product_url: https://docs.epigraphdb.org/graph-database/
   secondary_source:
   - epigraphdb
+taxon:
+- NCBITaxon:9606
 ---
 ## Overview
 

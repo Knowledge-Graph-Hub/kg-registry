@@ -187,6 +187,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

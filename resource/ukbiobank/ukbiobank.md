@@ -130,6 +130,8 @@ publications:
   title: 'UK Biobank: An Open Access Resource for Identifying the Causes of a Wide
     Range of Complex Diseases of Middle and Old Age'
   year: '2015'
+taxon:
+- NCBITaxon:9606
 ---
 # UK Biobank
 

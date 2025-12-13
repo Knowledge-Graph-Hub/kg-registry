@@ -120,7 +120,7 @@ products:
 publications:
 - authors:
   - Michael H Kramer
-  - Jean-Claude Farré
+  - "Jean-Claude Farr\xE9"
   - Koyel Mitra
   - Michael Ku Yu
   - Keiichiro Ono
@@ -138,6 +138,8 @@ publications:
   year: '2017'
 synonyms:
 - ATGO
+taxon:
+- NCBITaxon:4932
 ---
 # Autophagy Ontology
 

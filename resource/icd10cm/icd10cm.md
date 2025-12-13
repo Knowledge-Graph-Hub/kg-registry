@@ -49,6 +49,8 @@ synonyms:
 - ICD-10-CM
 - ICD10 Clinical Modification
 - International Classification of Diseases, 10th Revision, Clinical Modification
+taxon:
+- NCBITaxon:9606
 ---
 # ICD-10-CM
 

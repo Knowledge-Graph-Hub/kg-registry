@@ -54,6 +54,9 @@ products:
 synonyms:
 - PDSP
 - NIMH PDSP
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10116
 ---
 # Psychoactive Drug Screening Program
 

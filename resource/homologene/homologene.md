@@ -61,6 +61,8 @@ warnings:
 - HomoloGene was officially retired in January 2024
 - The last build (build 68) is from 2014 and is not aligned with current NCBI RefSeq
   and Gene data
+taxon:
+- NCBITaxon:2759
 ---
 
 # HomoloGene

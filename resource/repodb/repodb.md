@@ -109,6 +109,8 @@ publications:
   title: A standard database for drug repositioning
 - id: pmid:28291243
   title: A standard database for drug repositioning
+taxon:
+- NCBITaxon:9606
 ---
 # RepoDB: A Standard Database for Drug Repositioning
 

@@ -60,6 +60,8 @@ products:
 repository: https://github.com/griffithlab/docm
 synonyms:
 - DoCM
+taxon:
+- NCBITaxon:9606
 ---
 # Database of Curated Mutations (DoCM)
 

@@ -302,6 +302,8 @@ publications:
   title: 'The Drug Repurposing Hub: a next-generation drug library and information
     resource'
   year: '2017'
+taxon:
+- NCBITaxon:9606
 ---
 # Drug Repurposing Hub
 

@@ -370,7 +370,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - Kizilören T
+  - "Kizil\xF6ren T"
   - Gaulton A
   - Bento AP
   - Adasme MF
@@ -384,6 +384,9 @@ publications:
     bioactivity data types and time periods'
   year: '2023'
 repository: https://github.com/chembl
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.

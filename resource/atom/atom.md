@@ -73,6 +73,8 @@ publications:
   title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine
     Literature'
   year: '2019'
+taxon:
+- NCBITaxon:9606
 ---
 # ATOM
 

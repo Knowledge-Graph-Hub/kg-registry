@@ -245,6 +245,8 @@ publications:
   title: The ClinicalTrials.gov results database--update and key issues
   year: '2011'
 repository: https://github.com/ctti-clinicaltrials/aact
+taxon:
+- NCBITaxon:9606
 ---
 # ClinicalTrials.gov
 

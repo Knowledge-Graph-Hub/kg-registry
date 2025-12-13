@@ -35,6 +35,8 @@ products:
   product_file_size: 2511321
   product_url: http://purl.obolibrary.org/obo/cido.owl
 repository: https://github.com/cido-ontology/cido
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

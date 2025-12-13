@@ -36,6 +36,8 @@ products:
   product_file_size: 1166665
   product_url: http://purl.obolibrary.org/obo/ado.owl
 repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

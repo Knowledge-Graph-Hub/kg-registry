@@ -32,6 +32,8 @@ products:
   product_file_size: 105498
   product_url: http://purl.obolibrary.org/obo/cvdo.owl
 repository: https://github.com/OpenLHS/CVDO
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

@@ -40,6 +40,8 @@ products:
   product_file_size: 503578
   product_url: http://purl.obolibrary.org/obo/mmo.obo
 repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

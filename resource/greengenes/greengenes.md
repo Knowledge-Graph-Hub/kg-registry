@@ -303,6 +303,8 @@ publications:
   title: Greengenes2 unifies microbial data in a single reference tree
   year: '2024'
 repository: https://github.com/biocore/greengenes2/
+taxon:
+- NCBITaxon:2
 ---
 # Greengenes2
 

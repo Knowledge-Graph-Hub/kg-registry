@@ -296,6 +296,10 @@ publications:
   journal: Nucleic Acids Research
   title: 'GtRNAdb: A database of transfer RNA genes detected in genomic sequence'
   year: '2009'
+taxon:
+- NCBITaxon:2
+- NCBITaxon:2157
+- NCBITaxon:2759
 ---
 # GtRNAdb
 

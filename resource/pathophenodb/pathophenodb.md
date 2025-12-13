@@ -104,5 +104,7 @@ publications:
     disease research
   year: '2019'
 repository: https://github.com/bio-ontology-research-group/pathophenodb
+taxon:
+- NCBITaxon:9606
 ---
 PathoPhenoDB Knowledge Graph

@@ -83,6 +83,8 @@ publications:
   id: doi:10.1038/s41588-025-02100-w
   title: Genome-wide association study of long COVID
   year: '2025'
+taxon:
+- NCBITaxon:9606
 ---
 # FinnGen
 

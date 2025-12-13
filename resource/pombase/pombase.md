@@ -1062,5 +1062,8 @@ products:
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
 repository: https://www.pombase.org/datasets
+taxon:
+- NCBITaxon:4896
+- NCBITaxon:4932
 ---
 PomBase

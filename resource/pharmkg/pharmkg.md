@@ -66,6 +66,8 @@ publications:
   title: 'PharmKG: a dedicated knowledge graph benchmark for biomedical data mining'
   year: '2021'
 repository: https://github.com/MindRank-Biotech/PharmKG
+taxon:
+- NCBITaxon:9606
 ---
 PharmKG
 

@@ -291,6 +291,8 @@ publications:
     the Open Targets Platform evidence
   year: '2025'
 repository: https://github.com/opentargets
+taxon:
+- NCBITaxon:9606
 ---
 ## Open Targets: Delivering Systematic Drug Target Selection
 

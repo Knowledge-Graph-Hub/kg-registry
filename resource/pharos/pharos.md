@@ -116,7 +116,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - Schürer S
+  - "Sch\xFCrer S"
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -142,16 +142,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - Vidović D
+  - "Vidovi\u0107 D"
   - Koleti A
-  - Schürer SC
+  - "Sch\xFCrer SC"
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - Mathé E
+  - "Math\xE9 E"
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993
@@ -165,4 +165,6 @@ synonyms:
 - TCRD
 - Target Central Resource Database
 - IDG Pharos
+taxon:
+- NCBITaxon:9606
 ---

@@ -118,6 +118,10 @@ synonyms:
 - Mouse Genome Database
 - MGI
 - Mouse Genome Informatics
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:40674
+- NCBITaxon:10090
 ---
 # Mouse Genome Database
 

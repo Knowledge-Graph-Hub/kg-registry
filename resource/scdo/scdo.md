@@ -39,6 +39,8 @@ products:
   product_file_size: 324416
   product_url: http://purl.obolibrary.org/obo/scdo.obo
 repository: https://github.com/scdodev/scdo-ontology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

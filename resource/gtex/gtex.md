@@ -311,6 +311,8 @@ publications:
     in humans'
   year: '2015'
 repository: https://github.com/broadinstitute/gtex-pipeline
+taxon:
+- NCBITaxon:9606
 ---
 # GTEx (Genotype-Tissue Expression)
 

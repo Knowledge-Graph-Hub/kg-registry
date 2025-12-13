@@ -273,4 +273,6 @@ synonyms:
 - MEDLINE
 - MEDLINE via PubMed
 - MEDLARS
+taxon:
+- NCBITaxon:9606
 ---

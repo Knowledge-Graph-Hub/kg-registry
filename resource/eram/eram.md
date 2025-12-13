@@ -2,12 +2,21 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-19T00:00:00Z'
-description: The encyclopedia of Rare disease Annotation for Precision Medicine (eRAM) is a standardized system providing computational annotations for rare diseases to support precision medicine. eRAM provides annotations for approximately 16,000 rare diseases, including detailed information on clinical phenotypes, symptoms, genes, and genotypes. The database contains over 6,100 human disease-related phenotype terms, 31,600 mammalian phenotype terms, 10,200 symptoms from UMLS, 18,800 genes and 92,500 genotypes. eRAM organizes diseases in a tree structure to systematically display relationships between diseases with similar pathogenesis, close anatomical sites, the same clinical symptoms or subtypes, facilitating both research into rare disease mechanisms and clinical diagnosis and treatment decisions.
+description: The encyclopedia of Rare disease Annotation for Precision Medicine (eRAM)
+  is a standardized system providing computational annotations for rare diseases to
+  support precision medicine. eRAM provides annotations for approximately 16,000 rare
+  diseases, including detailed information on clinical phenotypes, symptoms, genes,
+  and genotypes. The database contains over 6,100 human disease-related phenotype
+  terms, 31,600 mammalian phenotype terms, 10,200 symptoms from UMLS, 18,800 genes
+  and 92,500 genotypes. eRAM organizes diseases in a tree structure to systematically
+  display relationships between diseases with similar pathogenesis, close anatomical
+  sites, the same clinical symptoms or subtypes, facilitating both research into rare
+  disease mechanisms and clinical diagnosis and treatment decisions.
 domains:
-  - clinical
-  - health
-  - phenotype
-  - precision medicine
+- clinical
+- health
+- phenotype
+- precision medicine
 id: eram
 infores_id: eram
 last_modified_date: '2025-11-19T00:00:00Z'
@@ -15,45 +24,51 @@ layout: resource_detail
 name: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
 homepage_url: http://119.3.41.228/eram/
 publications:
-  - id: PMID:29106618
-    title: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
-    authors:
-      - Jia J
-      - An Z
-      - Ming Y
-      - Guo Y
-      - Li W
-      - Liang Y
-      - Guo D
-      - Li X
-      - Tai J
-      - Chen G
-      - Jin Y
-      - Liu Z
-      - Ni X
-      - Shi T
-    journal: Nucleic Acids Research
-    year: '2018'
-    doi: 10.1093/nar/gkx1062
+- id: PMID:29106618
+  title: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
+  authors:
+  - Jia J
+  - An Z
+  - Ming Y
+  - Guo Y
+  - Li W
+  - Liang Y
+  - Guo D
+  - Li X
+  - Tai J
+  - Chen G
+  - Jin Y
+  - Liu Z
+  - Ni X
+  - Shi T
+  journal: Nucleic Acids Research
+  year: '2018'
+  doi: 10.1093/nar/gkx1062
 products:
-  - category: GraphicalInterface
-    description: Web-based interface for browsing and querying rare disease annotations including phenotypes, symptoms, genes, and genotypes with tree-structured disease organization
-    format: http
-    id: eram.web
-    name: eRAM Web Interface
-    original_source:
-      - eram
-    product_url: http://119.3.41.228/eram/
-  - category: Product
-    description: Downloadable data files containing rare disease annotations, phenotypes, symptoms, genes, and genotypes
-    format: mixed
-    id: eram.downloads
-    name: eRAM Data Downloads
-    original_source:
-      - eram
-    product_url: http://119.3.41.228/eram/download.php
+- category: GraphicalInterface
+  description: Web-based interface for browsing and querying rare disease annotations
+    including phenotypes, symptoms, genes, and genotypes with tree-structured disease
+    organization
+  format: http
+  id: eram.web
+  name: eRAM Web Interface
+  original_source:
+  - eram
+  product_url: http://119.3.41.228/eram/
+- category: Product
+  description: Downloadable data files containing rare disease annotations, phenotypes,
+    symptoms, genes, and genotypes
+  format: mixed
+  id: eram.downloads
+  name: eRAM Data Downloads
+  original_source:
+  - eram
+  product_url: http://119.3.41.228/eram/download.php
 synonyms:
-  - eRAM
+- eRAM
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:40674
 ---
 
 # eRAM: encyclopedia of rare disease annotations for precision medicine

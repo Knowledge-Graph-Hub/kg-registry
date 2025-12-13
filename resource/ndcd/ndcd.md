@@ -72,6 +72,8 @@ products:
 synonyms:
 - NDCD
 - NDC Directory
+taxon:
+- NCBITaxon:9606
 ---
 # National Drug Code Directory
 

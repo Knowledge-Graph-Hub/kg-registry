@@ -8,47 +8,50 @@ collection:
 - translator
 - ber
 domains:
-  - biomedical
-  - systems biology
-  - microbiome
+- biomedical
+- systems biology
+- microbiome
 creation_date: '2025-08-30T00:00:00Z'
 last_modified_date: '2025-08-30T00:00:00Z'
-description: MicrobiomeKG is an integrative knowledge graph resource for multi-omics microbiome data linking microbial taxa, genes, metabolites, host phenotypes, pathways, and clinical variables to support systems biology analyses and translational research.
+description: MicrobiomeKG is an integrative knowledge graph resource for multi-omics
+  microbiome data linking microbial taxa, genes, metabolites, host phenotypes, pathways,
+  and clinical variables to support systems biology analyses and translational research.
 homepage_url: https://multiomics.transltr.io/mbkp
 publications:
-  - id: doi:10.3389/fsysb.2025.1544432
-    title: "MicrobiomeKG: an integrative knowledge graph for multi-omics microbiome translational research"
-    journal: Frontiers in Systems Biology
-    year: "2025"
-    doi: 10.3389/fsysb.2025.1544432
+- id: doi:10.3389/fsysb.2025.1544432
+  title: 'MicrobiomeKG: an integrative knowledge graph for multi-omics microbiome
+    translational research'
+  journal: Frontiers in Systems Biology
+  year: '2025'
+  doi: 10.3389/fsysb.2025.1544432
 products:
-  - id: microbiomekg.api
-    name: MicrobiomeKG Plover API
-    category: ProgrammingInterface
-    description: TRAPI web API for querying MicrobiomeKG
-    format: http
-    product_url: https://multiomics.transltr.io/mbkp
-    original_source:
-    - biolink
-    - chebi
-    - ncbitaxon
-    - ncbigene
-    - mesh
-    - pubchem
-    - go
-    - mondo
-    - ncit
-    - efo
-    - uniprot
-    - rhea
-    - pr
-    - uberon
-    - panther
-    - hgnc
-    - drugbank
-    - eupathdb
-    secondary_source:
-      - microbiomekg
+- id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  product_url: https://multiomics.transltr.io/mbkp
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  secondary_source:
+  - microbiomekg
 contacts:
 - category: Individual
   contact_details:
@@ -56,7 +59,10 @@ contacts:
     value: gglusman@isbscience.org
   - contact_type: github
     value: gglusman
-  label: Gwênlyn Glusman
+  label: "Gw\xEAnlyn Glusman"
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:2
 ---
 
 # MicrobiomeKG

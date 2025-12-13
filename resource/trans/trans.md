@@ -41,6 +41,8 @@ products:
   product_file_size: 2508
   product_url: http://purl.obolibrary.org/obo/trans.obo
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 
