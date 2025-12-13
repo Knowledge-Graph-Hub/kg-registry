@@ -175,6 +175,15 @@ synonyms:
 - EPSD
 - Eukaryotic phosphorylation site database
 - EPSD 2.0
+taxon:
+- NCBITaxon:3702
+- NCBITaxon:10090
+- NCBITaxon:10116
+- NCBITaxon:7227
+- NCBITaxon:6239
+- NCBITaxon:4932
+- NCBITaxon:2759
+- NCBITaxon:9606
 ---
 # Eukaryotic Phosphorylation Site Database 2.0
 

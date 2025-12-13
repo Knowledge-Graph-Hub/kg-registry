@@ -39,11 +39,13 @@ products:
   secondary_source:
   - primekg
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
+taxon:
+- NCBITaxon:9606
 ---
 ### PrimeKG: A Knowledge Graph for Precision Medicine
 

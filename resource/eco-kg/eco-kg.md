@@ -37,7 +37,8 @@ license:
 products:
 - id: eco-kg.graph
   name: eco-KG Graph
-  description: Knowledge graph containing plant traits data from Planteome and EOL TraitBank
+  description: Knowledge graph containing plant traits data from Planteome and EOL
+    TraitBank
   product_url: https://kg-hub.berkeleybop.io/eco-kg/
   category: GraphProduct
   format: kgx
@@ -53,6 +54,8 @@ products:
   connection_url: https://kghub.org/eco-kg/api
   original_source:
   - eco-kg
+taxon:
+- NCBITaxon:33090
 ---
 
 eco-KG: a knowledge graph of plant traits starting with Planteome and EOL TraitBank. The graph integrates data from various sources related to plant phenotypes, traits, and ecological relationships.

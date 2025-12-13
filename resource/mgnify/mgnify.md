@@ -291,7 +291,7 @@ publications:
   - Bileschi M
   - Burdett T
   - Burgin J
-  - Caballero-Pérez J
+  - "Caballero-P\xE9rez J"
   - Cochrane G
   - Colwell L
   - Curtis T
@@ -310,6 +310,8 @@ publications:
   preferred: true
   title: 'MGnify: the microbiome sequence data analysis resource in 2023'
   year: '2023'
+taxon:
+- NCBITaxon:9606
 ---
 # MGnify
 

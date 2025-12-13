@@ -65,10 +65,68 @@ jQuery(document).ready(function () {
     const $ddCollections = $("#dd-collections");
     const $ddActivity = $("#dd-activity");
     const $ddEvaluation = $("#dd-evaluation");
+    const $ddTaxa = $("#dd-taxa");
     const $resourceCount = $("#resource-count");
     const $kgCount = $("#kg-count");
     const $collectionDescContainer = $("#collection-description-container");
     const $collectionDescText = $("#collection-description-text");
+
+    // Taxon hierarchy mapping loaded from generated YAML file
+    let taxonHierarchyMap = {};
+
+    // Load taxon hierarchy mapping from YAML file
+    fetch('registry/taxon_mapping.yaml')
+        .then(response => {
+            if (!response.ok) {
+                console.warn('Failed to load taxon mapping YAML:', response.status, response.statusText);
+                return '';
+            }
+            return response.text();
+        })
+        .then(yamlText => {
+            if (!yamlText) {
+                console.warn('Taxon mapping YAML is empty');
+                return;
+            }
+
+            // Simple YAML parser for taxon_mapping.yaml
+            // Expected format: taxon_hierarchy: { NCBITaxon:XXXXX: [list of taxa] }
+            try {
+                const lines = yamlText.trim().split('\n');
+                let currentTaxon = null;
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i];
+                    const trimmedLine = line.trim();
+
+                    // Skip empty lines and the header
+                    if (!trimmedLine || trimmedLine.startsWith('#') || trimmedLine === 'taxon_hierarchy:') {
+                        continue;
+                    }
+
+                    // Check if this is a taxon key (starts with NCBITaxon: and ends with :)
+                    // Look for pattern: "  NCBITaxon:XXXXX:"
+                    if (trimmedLine.match(/^NCBITaxon:\d+:$/)) {
+                        // Extract taxon ID (remove trailing colon)
+                        currentTaxon = trimmedLine.slice(0, -1); // Remove the trailing ':'
+                        taxonHierarchyMap[currentTaxon] = [];
+                    } else if (currentTaxon && trimmedLine.startsWith('- NCBITaxon:')) {
+                        // This is an item in the taxon list
+                        const taxon = trimmedLine.substring(2).trim(); // Remove "- "
+                        taxonHierarchyMap[currentTaxon].push(taxon);
+                    } else if (currentTaxon && trimmedLine === '[]') {
+                        // Empty list
+                        taxonHierarchyMap[currentTaxon] = [];
+                    }
+                }
+
+                console.log('Taxon hierarchy mapping loaded successfully with', Object.keys(taxonHierarchyMap).length, 'taxa');
+                console.log('Sample taxa:', Object.keys(taxonHierarchyMap).slice(0, 5));
+            } catch (error) {
+                console.error('Error parsing taxon mapping YAML:', error);
+            }
+        })
+        .catch(error => console.error('Could not load taxon mapping file:', error));
 
     // Update resource count display
     function updateResourceCount(count, totalCount, kgCount, totalKgCount) {
@@ -552,11 +610,12 @@ jQuery(document).ready(function () {
      */
     function apply_all_filters(data) {
         // Get filter values once
-        const selectedDomain = $ddDomains.children("option:selected").val();
-        const selectedResourceType = $ddResourceTypes.children("option:selected").val();
-        const selectedCollection = $ddCollections.children("option:selected").val();
-        const selectedActivity = $ddActivity.children("option:selected").val();
-        const selectedEvaluation = $ddEvaluation.children("option:selected").val();
+        const selectedDomain = $ddDomains.find("option:selected").val();
+        const selectedResourceType = $ddResourceTypes.find("option:selected").val();
+        const selectedCollection = $ddCollections.find("option:selected").val();
+        const selectedActivity = $ddActivity.find("option:selected").val();
+        const selectedEvaluation = $ddEvaluation.find("option:selected").val();
+        const selectedTaxon = $ddTaxa.find("option:selected").val();
 
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
@@ -626,6 +685,28 @@ jQuery(document).ready(function () {
                     return !hasEvaluation;
                 }
                 return true;
+            });
+        }
+
+        // Apply taxon filter with hierarchical expansion
+        if (selectedTaxon) {
+            // Get the matching taxa from the hierarchy map (includes descendants)
+            const matchingTaxa = taxonHierarchyMap[selectedTaxon] || [selectedTaxon];
+            console.log('Applying taxon filter:', {
+                selectedTaxon: selectedTaxon,
+                hierarchyMapSize: Object.keys(taxonHierarchyMap).length,
+                matchingTaxa: matchingTaxa,
+                resourcesBeforeFilter: filteredData.length
+            });
+            filteredData = filteredData.filter(x => {
+                if (Array.isArray(x.taxon)) {
+                    return x.taxon.some(t => matchingTaxa.includes(t));
+                }
+                return x.taxon && matchingTaxa.includes(x.taxon);
+            });
+            console.log('Taxon filter result:', {
+                resourcesAfterFilter: filteredData.length,
+                matchingResources: filteredData.slice(0, 5).map(x => x.id)
             });
         }
 
@@ -740,6 +821,14 @@ jQuery(document).ready(function () {
             // Show table container immediately
             $tableMain.css('display', 'block');
 
+            // Debug: Check taxon data
+            const resourcesWithTaxon = data.resources.filter(r => r.taxon && r.taxon.length > 0).length;
+            console.log('Data loaded: total resources =', data.resources.length, ', resources with taxon =', resourcesWithTaxon);
+            if (resourcesWithTaxon > 0) {
+                const sample = data.resources.find(r => r.taxon && r.taxon.length > 0);
+                console.log('Sample resource with taxon:', sample.id, sample.taxon);
+            }
+
             // Calculate total count excluding stub pages
             const nonStubResources = data.resources.filter(r => {
                 const domains = Array.isArray(r.domains) ? r.domains : (Array.isArray(r.domain) ? r.domain : (r.domains || r.domain ? [r.domains || r.domain] : []));
@@ -822,6 +911,7 @@ jQuery(document).ready(function () {
             });
             $ddActivity.on("change", filterHandler);
             $ddEvaluation.on("change", filterHandler);
+            $ddTaxa.on("change", filterHandler);
             $searchVal.on("keyup", filterHandler);
 
             // Create observer for table sorting

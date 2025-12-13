@@ -101,6 +101,8 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.json.gz
   secondary_source:
   - obo-db-ingest
+taxon:
+- NCBITaxon:2759
 ---
 ## Overview
 

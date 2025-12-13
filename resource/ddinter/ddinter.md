@@ -2,13 +2,16 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: DDInter is an open-access database specific to drug-drug interactions (DDIs) with comprehensive annotations including mechanism descriptions, risk levels, management strategies, and alternative medications to improve clinical decision-making and patient safety.
+description: DDInter is an open-access database specific to drug-drug interactions
+  (DDIs) with comprehensive annotations including mechanism descriptions, risk levels,
+  management strategies, and alternative medications to improve clinical decision-making
+  and patient safety.
 domains:
-  - pharmacology
-  - clinical
-  - drug discovery
-  - biomedical
-  - health
+- pharmacology
+- clinical
+- drug discovery
+- biomedical
+- health
 id: ddinter
 infores_id: ddinter
 last_modified_date: '2025-11-26T00:00:00Z'
@@ -16,15 +19,19 @@ layout: resource_detail
 name: DDinter
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ddinter
 synonyms:
-  - DDInter
+- DDInter
 products:
 - id: ddinter.ddi_annotations
   name: DDInter Drug-Drug Interaction Annotations
-  description: Comprehensive drug-drug interaction annotations with mechanism descriptions, risk levels, management strategies, and alternative medication recommendations for clinical decision support.
+  description: Comprehensive drug-drug interaction annotations with mechanism descriptions,
+    risk levels, management strategies, and alternative medication recommendations
+    for clinical decision support.
   category: DataProduct
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/ddinter
   original_source:
   - ddinter
+taxon:
+- NCBITaxon:9606
 ---
 
 # DDInter

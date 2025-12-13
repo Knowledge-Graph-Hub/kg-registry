@@ -2,62 +2,70 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-05T00:00:00Z'
-description: A comprehensive resource for human protein kinases featuring KinMap, an interactive web-based tool for visualizing and annotating the human kinome tree, integrating biochemical, structural, and disease association data with a unified naming scheme
+description: A comprehensive resource for human protein kinases featuring KinMap,
+  an interactive web-based tool for visualizing and annotating the human kinome tree,
+  integrating biochemical, structural, and disease association data with a unified
+  naming scheme
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: http://www.kinhub.org/
-id: "kinhub"
+id: kinhub
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: KinHub
 synonyms:
-  - Human Kinase Hub
-  - Human Protein Kinases Hub
+- Human Kinase Hub
+- Human Protein Kinases Hub
 products:
-  - id: "kinhub.portal"
-    name: KinHub Portal
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.kinhub.org/
-    description: Main portal providing resources and tools for human protein kinases
-  - id: "kinhub.kinmap"
-    name: KinMap
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.kinhub.org/kinmap/index.html
-    description: Interactive web-based tool for navigating and annotating the human kinome tree with biochemical, structural, and disease data
-  - id: "kinhub.kinases-list"
-    name: Human Protein Kinases List
-    category: Product
-    format: http
-    product_url: http://www.kinhub.org/kinases.html
-    description: Comprehensive list of human protein kinases with unified naming scheme
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
-    format: http
-    id: "kinace.portal"
-    name: KinAce Web Portal
-    original_source:
-      - phosphositeplus
-      - iptmnet
-      - uniprot
-      - epsd
-      - kinhub
-      - coralkinome
-      - darkkinasekb
-      - hgnc
-      - kegg
-      - interpro
-    product_url: https://kinace.kinametrix.com/
-    secondary_source:
-      - kinace
+- id: kinhub.portal
+  name: KinHub Portal
+  category: GraphicalInterface
+  format: http
+  product_url: http://www.kinhub.org/
+  description: Main portal providing resources and tools for human protein kinases
+- id: kinhub.kinmap
+  name: KinMap
+  category: GraphicalInterface
+  format: http
+  product_url: http://www.kinhub.org/kinmap/index.html
+  description: Interactive web-based tool for navigating and annotating the human
+    kinome tree with biochemical, structural, and disease data
+- id: kinhub.kinases-list
+  name: Human Protein Kinases List
+  category: Product
+  format: http
+  product_url: http://www.kinhub.org/kinases.html
+  description: Comprehensive list of human protein kinases with unified naming scheme
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 publications:
-  - id: "eid2017kinmap"
-    preferred: true
-    title: 'KinMap: a web-based tool for interactive navigation through human kinome data'
-    doi: "10.1186/s12859-016-1433-7"
-    year: "2017"
+- id: eid2017kinmap
+  preferred: true
+  title: 'KinMap: a web-based tool for interactive navigation through human kinome
+    data'
+  doi: 10.1186/s12859-016-1433-7
+  year: '2017'
+taxon:
+- NCBITaxon:9606
 ---
 
 ## KinHub

@@ -13,7 +13,11 @@ contacts:
 - category: Individual
   label: Patrick B. Ryan
 creation_date: '2025-10-30T00:00:00Z'
-description: AEOLUS (Adverse Event Open Learning through Universal Standardization) is a curated and standardized version of the FDA Adverse Event Reporting System (FAERS) that removes duplicate case records and applies standardized vocabularies, with drug names mapped to RxNorm concepts and outcomes mapped to SNOMED-CT concepts, providing pre-computed summary statistics about drug-outcome relationships.
+description: AEOLUS (Adverse Event Open Learning through Universal Standardization)
+  is a curated and standardized version of the FDA Adverse Event Reporting System
+  (FAERS) that removes duplicate case records and applies standardized vocabularies,
+  with drug names mapped to RxNorm concepts and outcomes mapped to SNOMED-CT concepts,
+  providing pre-computed summary statistics about drug-outcome relationships.
 domains:
 - clinical
 - pharmacology
@@ -28,7 +32,9 @@ layout: resource_detail
 name: Adverse Event Open Learning through Universal Standardization (AEOLUS)
 products:
 - category: Product
-  description: Standardized and deduplicated version of FDA FAERS data with drug names mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed summary statistics for drug-outcome relationships.
+  description: Standardized and deduplicated version of FDA FAERS data with drug names
+    mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
+    summary statistics for drug-outcome relationships.
   id: aeolus.standardized_data
   name: AEOLUS Standardized FAERS Data
   original_source:
@@ -45,10 +51,13 @@ publications:
   id: doi:10.1038/sdata.2016.26
   doi: 10.1038/sdata.2016.26
   journal: Scientific Data
-  title: A curated and standardized adverse drug event resource to accelerate drug safety research
+  title: A curated and standardized adverse drug event resource to accelerate drug
+    safety research
   year: '2016'
 synonyms:
 - AEOLUS
+taxon:
+- NCBITaxon:9606
 ---
 
 # Adverse Event Open Learning through Universal Standardization (AEOLUS)

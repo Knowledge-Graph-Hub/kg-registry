@@ -315,6 +315,10 @@ publications:
   preferred: true
   title: '5SRNAdb: an information resource for 5S ribosomal RNAs'
   year: '2016'
+taxon:
+- NCBITaxon:2
+- NCBITaxon:2157
+- NCBITaxon:2759
 ---
 # 5SRNAdb
 

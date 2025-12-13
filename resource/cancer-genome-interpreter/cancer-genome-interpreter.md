@@ -124,6 +124,8 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+taxon:
+- NCBITaxon:9606
 ---
 # Cancer Genome Interpreter
 

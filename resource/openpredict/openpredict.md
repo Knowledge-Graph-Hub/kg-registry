@@ -53,7 +53,7 @@ products:
   - openpredict
   product_url: https://openpredict.semanticscience.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 405 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 405 error
     when accessing file'
@@ -65,6 +65,8 @@ synonyms:
 - OpenPredict API
 tags:
 - translator
+taxon:
+- NCBITaxon:9606
 ---
 # OpenPredict
 

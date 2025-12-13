@@ -38,6 +38,8 @@ products:
   secondary_source:
   - kg-alzheimers
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
+taxon:
+- NCBITaxon:9606
 ---
 KG-Alzheimers is a knowledge graph created in collaboration between Lawrence Berkeley National
 Lab and Washington University, designed to integrate data related to Alzheimer's 

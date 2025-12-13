@@ -2,7 +2,11 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-25T00:00:00Z'
-description: BacDive (Bacterial Diversity Metadatabase) is the world's largest database for standardized bacterial information, containing strain-level data on morphology, physiology, growth conditions, and isolation sources for over 99,000 bacterial strains. It integrates research data from diverse sources and provides freely accessible, standardized information with Digital Object Identifiers for each strain.
+description: BacDive (Bacterial Diversity Metadatabase) is the world's largest database
+  for standardized bacterial information, containing strain-level data on morphology,
+  physiology, growth conditions, and isolation sources for over 99,000 bacterial strains.
+  It integrates research data from diverse sources and provides freely accessible,
+  standardized information with Digital Object Identifiers for each strain.
 domains:
 - microbiology
 - biological systems
@@ -144,9 +148,8 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+taxon:
+- NCBITaxon:2
 ---
 # BacDive
 

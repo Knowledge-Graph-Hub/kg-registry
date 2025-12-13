@@ -83,6 +83,8 @@ publications:
   title: Clinical Knowledge Graph Integrates Proteomics Data into Clinical Decision-Making
   year: '2020'
 repository: https://github.com/MannLabs/CKG
+taxon:
+- NCBITaxon:9606
 ---
 Clinical Knowledge Graph
 

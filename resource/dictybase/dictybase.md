@@ -1032,6 +1032,8 @@ products:
   secondary_source:
   - kg-monarch
 repository: https://github.com/dictybase
+taxon:
+- NCBITaxon:44689
 ---
 # dictyBase
 

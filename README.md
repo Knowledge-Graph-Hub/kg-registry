@@ -15,14 +15,18 @@ A registry for knowledge graphs and their components.
 
 ## Documentation
 
-[KG-Registry Documentation](https://kghub.org/kg-registry/docs/intro/): Start here to learn about the purpose of KG-Registry and how it works.
+**[KG-Registry Documentation](https://kghub.org/kg-registry/docs/intro/)**: Start here to learn about the purpose of KG-Registry and how it works.
 
 Entries in KG-Registry are either *Resources* or *Products*. Resources represent top-level entries for knowledge graph and data sources. Products are specific representations or interfaces for a resource (e.g., graph dumps, APIs, or visualizations). This also includes associated software and documentation sets.
 
 For more detail:
 - [Resources](https://kghub.org/kg-registry/docs/intro/resources.html)
 - [Products](https://kghub.org/kg-registry/docs/intro/products.html)
+- [Parquet Backend & Advanced Search](docs/parquet_backend.md)
 
-### Development
+## Site Development
 
-See [README-sitedev.md](README-sitedev.md) for details on site development.
+For developers working on the KG-Registry website and backend:
+- [Site Development Guide](README-sitedev.md) - Setup, deployment, and troubleshooting
+- [Parquet Backend Documentation](docs/parquet_backend.md) - Database schema and querying
+- [Advanced Search Feature](advanced-search.html) - SQL-based resource discovery interface

@@ -61,5 +61,7 @@ publications:
 warnings:
 - The official PsyGeNET website (http://www.psygenet.org/) is currently inaccessible.
   Data may be unavailable or out of date.
+taxon:
+- NCBITaxon:9606
 ---
 # PsyGeNET

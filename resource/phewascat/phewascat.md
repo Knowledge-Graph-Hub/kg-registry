@@ -91,6 +91,8 @@ publications:
 repository: https://github.com/nhgritctran/PheTK
 tags:
 - translator
+taxon:
+- NCBITaxon:9606
 ---
 # PheWAS Catalog
 

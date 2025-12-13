@@ -84,6 +84,7 @@ class TestParquetBackend(unittest.TestCase):
         self.assertIn("resources", table_names)
         self.assertIn("resource_domains", table_names)
         self.assertIn("resource_products", table_names)
+        self.assertIn("resource_taxa", table_names)
 
         backend.close()
 
@@ -101,7 +102,7 @@ class TestParquetBackend(unittest.TestCase):
 
             # Check Parquet files were created
             parquet_files = [f for f in os.listdir(self.temp_dir) if f.endswith(".parquet")]
-            self.assertEqual(len(parquet_files), 3)  # resources, domains, products
+            self.assertEqual(len(parquet_files), 4)  # resources, domains, products, taxa
 
             # Check resources were inserted
             resources_query = backend.conn.execute("SELECT * FROM resources")
@@ -218,7 +219,7 @@ class TestParquetBackend(unittest.TestCase):
 
             # Verify Parquet files were created
             parquet_files = [f for f in os.listdir(self.temp_dir) if f.endswith(".parquet")]
-            self.assertEqual(len(parquet_files), 3)  # resources, domains, products
+            self.assertEqual(len(parquet_files), 4)  # resources, domains, products, taxa
 
             # Verify data was synced by loading and querying
             backend = ParquetBackend()
@@ -284,6 +285,171 @@ class TestParquetBackend(unittest.TestCase):
 
                 results = backend.query_active_resources()
                 self.assertEqual(len(results), 1)
+
+        finally:
+            os.unlink(yaml_file)
+
+    def test_taxon_insertion(self):
+        """Test that taxa are inserted into the database."""
+        test_data_with_taxa = {
+            "resources": [
+                {
+                    "id": "test-resource-1",
+                    "name": "Test Resource 1",
+                    "description": "A test resource with taxa",
+                    "category": "TestCategory",
+                    "activity_status": "active",
+                    "homepage_url": "https://example.com/test1",
+                    "domains": ["test"],
+                    "taxon": ["NCBITaxon:9606", "NCBITaxon:10116"],  # Human and Rat
+                    "layout": "resource_detail",
+                },
+                {
+                    "id": "test-resource-2",
+                    "name": "Test Resource 2",
+                    "description": "Another test resource with taxa",
+                    "category": "TestCategory",
+                    "activity_status": "active",
+                    "homepage_url": "https://example.com/test2",
+                    "domains": ["test"],
+                    "taxon": ["NCBITaxon:3702"],  # Arabidopsis thaliana
+                    "layout": "resource_detail",
+                },
+            ]
+        }
+
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
+            yaml.dump(test_data_with_taxa, f)
+            yaml_file = f.name
+
+        try:
+            backend = ParquetBackend()
+            count = backend.sync_from_yaml(yaml_file)
+
+            # Check taxa were inserted
+            taxa_query = backend.conn.execute("SELECT * FROM resource_taxa")
+            taxa = taxa_query.fetchall()
+            self.assertEqual(len(taxa), 3)  # 2 taxa for resource1, 1 for resource2
+
+            # Check specific taxa entries
+            taxa_for_resource1 = backend.conn.execute(
+                "SELECT taxon FROM resource_taxa WHERE resource_id = 'test-resource-1' ORDER BY taxon"
+            ).fetchall()
+            taxa_ids = [t[0] for t in taxa_for_resource1]
+            self.assertIn("NCBITaxon:9606", taxa_ids)
+            self.assertIn("NCBITaxon:10116", taxa_ids)
+
+            backend.close()
+
+        finally:
+            os.unlink(yaml_file)
+
+    def test_query_by_taxon(self):
+        """Test querying resources by taxon."""
+        test_data_with_taxa = {
+            "resources": [
+                {
+                    "id": "test-resource-1",
+                    "name": "Human Resource",
+                    "description": "Resource for human studies",
+                    "category": "TestCategory",
+                    "activity_status": "active",
+                    "homepage_url": "https://example.com/test1",
+                    "domains": ["test"],
+                    "taxon": ["NCBITaxon:9606"],  # Human
+                    "layout": "resource_detail",
+                },
+                {
+                    "id": "test-resource-2",
+                    "name": "Rat Resource",
+                    "description": "Resource for rat studies",
+                    "category": "TestCategory",
+                    "activity_status": "active",
+                    "homepage_url": "https://example.com/test2",
+                    "domains": ["test"],
+                    "taxon": ["NCBITaxon:10116"],  # Rat
+                    "layout": "resource_detail",
+                },
+                {
+                    "id": "test-resource-3",
+                    "name": "Multi-taxon Resource",
+                    "description": "Resource for multiple taxa",
+                    "category": "TestCategory",
+                    "activity_status": "active",
+                    "homepage_url": "https://example.com/test3",
+                    "domains": ["test"],
+                    "taxon": ["NCBITaxon:3702"],  # Arabidopsis thaliana
+                    "layout": "resource_detail",
+                },
+            ]
+        }
+
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
+            yaml.dump(test_data_with_taxa, f)
+            yaml_file = f.name
+
+        try:
+            backend = ParquetBackend()
+            backend.sync_from_yaml(yaml_file)
+
+            # Test query by human taxon
+            results = backend.query_by_taxon("NCBITaxon:9606", include_descendants=False)
+            self.assertEqual(len(results), 1)
+            self.assertEqual(results[0]["id"], "test-resource-1")
+
+            # Test query by rat taxon
+            results = backend.query_by_taxon("NCBITaxon:10116", include_descendants=False)
+            self.assertEqual(len(results), 1)
+            self.assertEqual(results[0]["id"], "test-resource-2")
+
+            # Test query by non-existent taxon
+            results = backend.query_by_taxon("NCBITaxon:999999", include_descendants=False)
+            self.assertEqual(len(results), 0)
+
+            backend.close()
+
+        finally:
+            os.unlink(yaml_file)
+
+    def test_taxon_table_in_sync(self):
+        """Test that resource_taxa table is included when syncing to Parquet."""
+        test_data_with_taxa = {
+            "resources": [
+                {
+                    "id": "test-resource-1",
+                    "name": "Test Resource",
+                    "category": "TestCategory",
+                    "activity_status": "active",
+                    "domains": ["test"],
+                    "taxon": ["NCBITaxon:9606"],
+                    "layout": "resource_detail",
+                },
+            ]
+        }
+
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
+            yaml.dump(test_data_with_taxa, f)
+            yaml_file = f.name
+
+        try:
+            backend = ParquetBackend(self.temp_dir)
+            count = backend.sync_from_yaml(yaml_file)
+
+            # Check Parquet files were created including resource_taxa
+            parquet_files = [f for f in os.listdir(self.temp_dir) if f.endswith(".parquet")]
+            self.assertIn("resource_taxa.parquet", parquet_files)
+            self.assertEqual(len(parquet_files), 4)  # resources, domains, products, taxa
+
+            # Verify data was synced by loading and querying
+            backend2 = ParquetBackend()
+            backend2.load_from_parquet(self.temp_dir)
+            taxa_query = backend2.conn.execute("SELECT COUNT(*) FROM resource_taxa")
+            taxa_count_row = taxa_query.fetchone()
+            taxa_count = taxa_count_row[0] if taxa_count_row else 0
+            self.assertEqual(taxa_count, 1)
+            backend2.close()
+
+            backend.close()
 
         finally:
             os.unlink(yaml_file)

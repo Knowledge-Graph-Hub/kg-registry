@@ -150,6 +150,9 @@ publications:
     a resource combining PATRIC, IRD and ViPR'
   year: '2022'
 repository: https://github.com/BV-BRC
+taxon:
+- NCBITaxon:2
+- NCBITaxon:9606
 ---
 ## Overview
 

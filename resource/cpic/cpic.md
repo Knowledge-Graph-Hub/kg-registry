@@ -10,13 +10,13 @@ contacts:
     value: contact@cpicpgx.org
   label: Clinical Pharmacogenetics Implementation Consortium (CPIC)
 creation_date: '2025-09-03T00:00:00Z'
-description: The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates,
-  curates, and disseminates freely available, peer-reviewed, evidence-based, and updatable
-  clinical practice guidelines that translate patient pharmacogenetic test results
-  into actionable prescribing decisions. CPIC also publishes structured gene–drug
-  annotations, allele function data, standardized terminology resources, and implementation
-  tools (database, API, SOPs, educational materials) to accelerate pharmacogenomics
-  in clinical care.
+description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates,\
+  \ curates, and disseminates freely available, peer-reviewed, evidence-based, and\
+  \ updatable clinical practice guidelines that translate patient pharmacogenetic\
+  \ test results into actionable prescribing decisions. CPIC also publishes structured\
+  \ gene\u2013drug annotations, allele function data, standardized terminology resources,\
+  \ and implementation tools (database, API, SOPs, educational materials) to accelerate\
+  \ pharmacogenomics in clinical care."
 domains:
 - biomedical
 - health
@@ -50,8 +50,8 @@ products:
   - cpic
   product_url: https://cpicpgx.org/guidelines/
 - category: DataProduct
-  description: Curated gene–drug pair tables linking pharmacogenes with affected medications
-    and guideline recommendations
+  description: "Curated gene\u2013drug pair tables linking pharmacogenes with affected\
+    \ medications and guideline recommendations"
   id: cpic.genes_drugs
   is_public: true
   name: CPIC Genes-Drugs Tables
@@ -68,8 +68,8 @@ products:
   - cpic
   product_url: https://cpicpgx.org/alleles/
 - category: ProgrammingInterface
-  description: Structured data (database and API) for CPIC guideline-derived gene–drug
-    relationships, allele function, and standardized terms
+  description: "Structured data (database and API) for CPIC guideline-derived gene\u2013\
+    drug relationships, allele function, and standardized terms"
   id: cpic.api
   is_public: true
   name: CPIC Database & API
@@ -148,6 +148,8 @@ products:
   product_url: https://docs.epigraphdb.org/graph-database/
   secondary_source:
   - epigraphdb
+taxon:
+- NCBITaxon:9606
 ---
 ## Overview
 

@@ -42,7 +42,7 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
@@ -109,6 +109,8 @@ publications:
   title: A standard database for drug repositioning
 - id: pmid:28291243
   title: A standard database for drug repositioning
+taxon:
+- NCBITaxon:9606
 ---
 # RepoDB: A Standard Database for Drug Repositioning
 

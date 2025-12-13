@@ -175,6 +175,8 @@ products:
   secondary_source:
   - ubkg
 repository: https://github.com/kids-first/
+taxon:
+- NCBITaxon:9606
 ---
 ## Kids First Data Resource Center
 

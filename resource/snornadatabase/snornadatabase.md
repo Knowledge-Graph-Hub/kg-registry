@@ -11,8 +11,8 @@ description: snoRNABase (also known as snoRNA-LBME-db) is a comprehensive databa
   (2'-O-ribose methylation and pseudouridylation). Each entry includes literature
   references, GenBank accession numbers, and links to the UCSC Genome Browser. The
   database features search, browse, and "Find guide RNA" functions to identify snoRNAs
-  that guide modifications of specific nucleotides in rRNAs (28S, 18S, 5.8S) and
-  spliceosomal RNAs (U1, U2, U4, U5, U6, U12).
+  that guide modifications of specific nucleotides in rRNAs (28S, 18S, 5.8S) and spliceosomal
+  RNAs (U1, U2, U4, U5, U6, U12).
 domains:
 - genomics
 homepage_url: https://www-snorna.biotoul.fr/
@@ -284,11 +284,13 @@ publications:
   id: doi:10.1093/nar/gkj002
   journal: Nucleic Acids Research
   preferred: true
-  title: 'snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box snoRNAs'
+  title: snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box snoRNAs
   year: '2006'
 synonyms:
 - snoRNA-LBME-db
 - snoRNA database
+taxon:
+- NCBITaxon:9606
 ---
 # snoRNABase
 

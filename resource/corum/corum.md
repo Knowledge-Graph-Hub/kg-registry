@@ -38,23 +38,28 @@ products:
   name: CORUM All Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
+    to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+    retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
-    to URL
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Core dataset of manually curated, non-redundant protein complexes in
     CORUM in tab-delimited format
@@ -66,23 +71,28 @@ products:
   name: CORUM Core Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
+    to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+    retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
-    to URL
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
     Standards Initiative)
@@ -94,23 +104,28 @@ products:
   name: CORUM PSI-MI
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
+    to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+    retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
-    to URL
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
   format: psi_mi_mitab
@@ -121,23 +136,28 @@ products:
   name: CORUM MITAB
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
+    to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+    retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
-    to URL
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -322,6 +342,11 @@ publications:
   title: 'CORUM: the comprehensive resource of mammalian protein complexes—2009'
   year: '2010'
 repository: https://mips.helmholtz-muenchen.de/corum/download
+taxon:
+- NCBITaxon:40674
+- NCBITaxon:10090
+- NCBITaxon:10116
+- NCBITaxon:9606
 ---
 # CORUM - Comprehensive Resource of Mammalian Protein Complexes
 

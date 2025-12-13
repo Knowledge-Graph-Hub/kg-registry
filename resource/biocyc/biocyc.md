@@ -41,5 +41,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
+taxon:
+- NCBITaxon:2759
 ---
 BioCyc

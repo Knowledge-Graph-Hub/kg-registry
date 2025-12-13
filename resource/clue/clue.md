@@ -74,6 +74,8 @@ products:
   secondary_source:
   - bioteque
 repository: https://github.com/cmap
+taxon:
+- NCBITaxon:9606
 ---
 
 # CLUE

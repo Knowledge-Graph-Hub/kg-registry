@@ -277,6 +277,8 @@ publications:
   year: '2011'
 warnings:
 - This database is no longer active and the website is no longer accessible.
+taxon:
+- NCBITaxon:2759
 ---
 # lncRNAdb
 

@@ -460,6 +460,15 @@ publications:
 - id: doi:10.1093/nar/gkae909
   preferred: true
   title: KEGG biological systems database as a model of the real world
+taxon:
+- NCBITaxon:10116
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:7227
+- NCBITaxon:6239
+- NCBITaxon:7955
+- NCBITaxon:4932
+- NCBITaxon:3702
 ---
 ## Kyoto Encyclopedia of Genes and Genomes (KEGG)
 

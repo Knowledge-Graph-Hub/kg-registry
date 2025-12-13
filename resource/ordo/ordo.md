@@ -2,25 +2,28 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: contact.orphanet@inserm.fr
-      - contact_type: url
-        value: https://www.orpha.net/
-    label: Orphanet
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.inserm.fr/
-    label: INSERM
-description: The Orphanet Rare Disease Ontology (ORDO) is an open-access ontology developed from the Orphanet information system, enabling complex queries of rare diseases and their epidemiological data (age of onset, prevalence, mode of inheritance) and gene-disorder functional relationships.
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: contact.orphanet@inserm.fr
+  - contact_type: url
+    value: https://www.orpha.net/
+  label: Orphanet
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.inserm.fr/
+  label: INSERM
+description: The Orphanet Rare Disease Ontology (ORDO) is an open-access ontology
+  developed from the Orphanet information system, enabling complex queries of rare
+  diseases and their epidemiological data (age of onset, prevalence, mode of inheritance)
+  and gene-disorder functional relationships.
 domains:
-  - biomedical
-  - health
-  - clinical
-  - genomics
-  - phenotype
+- biomedical
+- health
+- clinical
+- genomics
+- phenotype
 homepage_url: https://www.orphadata.com/ordo/
 id: ordo
 layout: resource_detail
@@ -29,260 +32,268 @@ license:
   label: CC BY 4.0 (Creative Commons Attribution 4.0 International)
 name: Orphanet Rare Disease Ontology (ORDO)
 products:
-  - category: DataModelProduct
-    description: ORDO in OWL format in English (v4.7)
-    format: owl
-    id: ordo.owl
-    name: ORDO OWL
-    product_file_size: 49203440
-    product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for querying the ORDO ontology
-    id: ordo.sparql
-    name: ORDO SPARQL Endpoint
-    product_url: https://www.orphadata.com/ordo-sparql-endpoint/
-  - category: DataModelProduct
-    description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers) for rare diseases, along with mappings to other terminologies, and is released annually in July.
-    id: orphacode.nomenclature
-    name: Orphanet Nomenclature Pack
-    product_url: https://www.orphacode.org/pack-nomenclature/
-    warnings: []
-  - category: ProgrammingInterface
-    description: API for accessing the Orphanet nomenclature pack data, allowing flexible implementation into various healthcare information systems.
-    id: orphacode.api
-    name: ORPHAcodes API
-    product_url: https://api.orphacode.org/
-  - category: OntologyProduct
-    description: The latest release of EFO in OWL format
-    format: owl
-    id: efo.owl
-    name: EFO OWL
-    original_source:
-      - bfo
-      - bto
-      - chebi
-      - cl
-      - clo
-      - cob
-      - dc
-      - doid
-      - ecto
-      - efo
-      - fbbt
-      - fbdv
-      - fma
-      - go
-      - hancestro
-      - hp
-      - iao
-      - ido
-      - ma
-      - mondo
-      - mp
-      - mpath
-      - ncbitaxon
-      - ncit
-      - oba
-      - obi
-      - ogms
-      - oio
-      - omit
-      - omo
-      - ordo
-      - pato
-      - po
-      - pr
-      - ro
-      - semapv
-      - skos
-      - so
-      - to
-      - uberon
-      - uo
-      - wbls
-      - zfa
-    product_file_size: 240665663
-    product_url: https://www.ebi.ac.uk/efo/efo.owl
-    secondary_source:
-      - efo
-  - category: OntologyProduct
-    description: The latest release of EFO in OBO format
-    format: obo
-    id: efo.obo
-    name: EFO OBO
-    original_source:
-      - bfo
-      - bto
-      - chebi
-      - cl
-      - clo
-      - cob
-      - dc
-      - doid
-      - ecto
-      - efo
-      - fbbt
-      - fbdv
-      - fma
-      - go
-      - hancestro
-      - hp
-      - iao
-      - ido
-      - ma
-      - mondo
-      - mp
-      - mpath
-      - ncbitaxon
-      - ncit
-      - oba
-      - obi
-      - ogms
-      - oio
-      - omit
-      - omo
-      - ordo
-      - pato
-      - po
-      - pr
-      - ro
-      - semapv
-      - skos
-      - so
-      - to
-      - uberon
-      - uo
-      - wbls
-      - zfa
-    product_file_size: 64058275
-    product_url: https://www.ebi.ac.uk/efo/efo.obo
-    secondary_source:
-      - efo
-  - category: GraphProduct
-    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
-    dump_format: neo4j
-    id: ubkg.neo4j
-    name: UBKG Neo4j Docker Distribution
-    original_source:
-      - hgnc
-      - loinc
-      - icd10
-      - snomedct
-      - uberon
-      - pato
-      - cl
-      - doid
-      - obi
-      - obib
-      - edam
-      - hsapdv
-      - sbo
-      - mi
-      - chebi
-      - mp
-      - ordo
-      - uniprot
-      - uo
-      - mondo
-      - efo
-      - pgo
-      - gencode
-      - reactome
-      - hra
-      - hubmap
-      - sennet
-      - stellar
-      - dct
-      - clinvar
-      - connectivitymap
-      - hp
-      - mp
-      - msigdb
-      - wikipathways
-      - clingen
-      - string
-      - 4dn
-      - erccrbp
-      - erccreg
-      - faldo
-      - glycordf
-      - glycocoo
-      - gtex
-      - kidsfirst
-      - lincs
-      - motrpac
-      - mw
-      - npo
-      - sckan
-      - disgenet
-      - biomarker
-      - opentargets
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - ubkg
-  - category: GraphProduct
-    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
-    format: csv
-    id: ubkg.csv
-    name: UBKG Ontology CSV Files
-    original_source:
-      - hgnc
-      - loinc
-      - icd10
-      - snomedct
-      - uberon
-      - pato
-      - cl
-      - doid
-      - obi
-      - obib
-      - edam
-      - hsapdv
-      - sbo
-      - mi
-      - chebi
-      - mp
-      - ordo
-      - uniprot
-      - uo
-      - mondo
-      - efo
-      - pgo
-      - gencode
-      - reactome
-      - hra
-      - hubmap
-      - sennet
-      - stellar
-      - dct
-      - clinvar
-      - connectivitymap
-      - hp
-      - mp
-      - msigdb
-      - wikipathways
-      - clingen
-      - string
-      - 4dn
-      - erccrbp
-      - erccreg
-      - faldo
-      - glycordf
-      - glycocoo
-      - gtex
-      - kidsfirst
-      - lincs
-      - motrpac
-      - mw
-      - npo
-      - sckan
-      - disgenet
-      - biomarker
-      - opentargets
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - ubkg
+- category: DataModelProduct
+  description: ORDO in OWL format in English (v4.7)
+  format: owl
+  id: ordo.owl
+  name: ORDO OWL
+  product_file_size: 49203440
+  product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
+- category: ProgrammingInterface
+  description: SPARQL endpoint for querying the ORDO ontology
+  id: ordo.sparql
+  name: ORDO SPARQL Endpoint
+  product_url: https://www.orphadata.com/ordo-sparql-endpoint/
+- category: DataModelProduct
+  description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers)
+    for rare diseases, along with mappings to other terminologies, and is released
+    annually in July.
+  id: orphacode.nomenclature
+  name: Orphanet Nomenclature Pack
+  product_url: https://www.orphacode.org/pack-nomenclature/
+  warnings: []
+- category: ProgrammingInterface
+  description: API for accessing the Orphanet nomenclature pack data, allowing flexible
+    implementation into various healthcare information systems.
+  id: orphacode.api
+  name: ORPHAcodes API
+  product_url: https://api.orphacode.org/
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 infores_id: ordo
+taxon:
+- NCBITaxon:9606
 ---
 
 # Orphanet Rare Disease Ontology (ORDO)

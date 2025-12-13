@@ -2,52 +2,63 @@
 activity_status: inactive
 category: KnowledgeGraph
 creation_date: '2025-11-22T00:00:00Z'
-description: ReDrugs is a probabilistic knowledge graph for drug repositioning that integrates drug-target, protein-protein, and disease-gene interactions from multiple databases. The system uses evidence-weighted nanopublications to assign confidence scores to interactions based on experimental methods and manual curation. ReDrugs was designed to identify novel drug candidates for diseases, particularly melanoma, by filtering and analyzing systems biology networks with probabilistic methods. The platform included both a web interface and API for exploring molecular interaction networks. The web interface appears to be no longer accessible.
+description: ReDrugs is a probabilistic knowledge graph for drug repositioning that
+  integrates drug-target, protein-protein, and disease-gene interactions from multiple
+  databases. The system uses evidence-weighted nanopublications to assign confidence
+  scores to interactions based on experimental methods and manual curation. ReDrugs
+  was designed to identify novel drug candidates for diseases, particularly melanoma,
+  by filtering and analyzing systems biology networks with probabilistic methods.
+  The platform included both a web interface and API for exploring molecular interaction
+  networks. The web interface appears to be no longer accessible.
 domains:
-  - drug discovery
-  - systems biology
-  - biomedical
-  - pharmacology
-  - translational
-id: "redrugs"
+- drug discovery
+- systems biology
+- biomedical
+- pharmacology
+- translational
+id: redrugs
 last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: ReDrugs
 homepage_url: http://redrugs.tw.rpi.edu/
 products:
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring drug-disease networks with probabilistic filtering and graph visualization
-    id: "redrugs.web"
-    name: ReDrugs Web Interface
-    original_source:
-      - redrugs
-    product_url: http://redrugs.tw.rpi.edu/
-  - category: ProgrammingInterface
-    description: SADI web services API for querying the knowledge graph including resource search, interaction lookup, and network expansion
-    id: "redrugs.api"
-    name: ReDrugs API
-    original_source:
-      - redrugs
-    product_url: http://redrugs.tw.rpi.edu/api/
+- category: GraphicalInterface
+  description: Interactive web interface for exploring drug-disease networks with
+    probabilistic filtering and graph visualization
+  id: redrugs.web
+  name: ReDrugs Web Interface
+  original_source:
+  - redrugs
+  product_url: http://redrugs.tw.rpi.edu/
+- category: ProgrammingInterface
+  description: SADI web services API for querying the knowledge graph including resource
+    search, interaction lookup, and network expansion
+  id: redrugs.api
+  name: ReDrugs API
+  original_source:
+  - redrugs
+  product_url: http://redrugs.tw.rpi.edu/api/
 publications:
-  - authors:
-      - McCusker JP
-      - Dumontier M
-      - Yan R
-      - He S
-      - Dordick JS
-      - McGuinness DL
-    doi: "10.7717/peerj-cs.106"
-    id: "doi:10.7717/peerj-cs.106"
-    journal: PeerJ Computer Science
-    title: Finding melanoma drugs through a probabilistic knowledge graph
-    year: "2017"
+- authors:
+  - McCusker JP
+  - Dumontier M
+  - Yan R
+  - He S
+  - Dordick JS
+  - McGuinness DL
+  doi: 10.7717/peerj-cs.106
+  id: doi:10.7717/peerj-cs.106
+  journal: PeerJ Computer Science
+  title: Finding melanoma drugs through a probabilistic knowledge graph
+  year: '2017'
 repository: https://data.rpi.edu/xmlui/handle/10833/1760
 synonyms:
-  - ReDrugS
+- ReDrugS
+taxon:
+- NCBITaxon:9606
 ---
 
 # ReDrugs

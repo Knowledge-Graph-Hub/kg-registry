@@ -84,7 +84,22 @@ def parquet_stats(parquet_dir: str):
 @click.option("--domain", help="Filter by domain")
 @click.option("--status", help="Filter by activity status")
 @click.option("--search", help="Search in name or description")
-def parquet_query(parquet_dir: str, category: str, domain: str, status: str, search: str):
+@click.option("--taxon", help="Filter by taxon (e.g., NCBITaxon:9606 for human)")
+@click.option(
+    "--taxon-include-descendants",
+    is_flag=True,
+    default=True,
+    help="Include descendant taxa in taxon search (default: True)",
+)
+def parquet_query(
+    parquet_dir: str,
+    category: str,
+    domain: str,
+    status: str,
+    search: str,
+    taxon: str,
+    taxon_include_descendants: bool,
+):
     """Query resources from Parquet files."""
     try:
         # Use DuckDBParquetQuerier for direct querying without loading into memory
@@ -98,6 +113,11 @@ def parquet_query(parquet_dir: str, category: str, domain: str, status: str, sea
                 """
                 search_params = [f"%{search}%", f"%{search}%"]
                 resources = querier.execute_query(search_query, search_params)
+            elif taxon:
+                # For taxon queries, we need to use ParquetBackend for hierarchy support
+                with ParquetBackend() as backend:
+                    backend.load_from_parquet(parquet_dir)
+                    resources = backend.query_by_taxon(taxon, include_descendants=taxon_include_descendants)
             else:
                 # Build filtered query
                 query = "SELECT * FROM resources WHERE 1=1"

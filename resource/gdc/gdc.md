@@ -2,29 +2,35 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: The NCI Genomic Data Commons (GDC) is a data sharing platform promoting precision medicine in oncology by providing unified access to harmonized cancer genomic and clinical data from major cancer research programs including TCGA and TARGET, processed with standardized bioinformatics pipelines to enable direct comparison and integrated analysis.
+description: The NCI Genomic Data Commons (GDC) is a data sharing platform promoting
+  precision medicine in oncology by providing unified access to harmonized cancer
+  genomic and clinical data from major cancer research programs including TCGA and
+  TARGET, processed with standardized bioinformatics pipelines to enable direct comparison
+  and integrated analysis.
 domains:
-  - genomics
-  - precision medicine
-  - clinical
-  - biomedical
-id: "gdc"
-infores_id: "gdc"
+- genomics
+- precision medicine
+- clinical
+- biomedical
+id: gdc
+infores_id: gdc
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: National Cancer Institute Genomic Data Commons Data Portal
 homepage_url: https://portal.gdc.cancer.gov
 synonyms:
-  - GDC
-  - Genomic Data Commons
+- GDC
+- Genomic Data Commons
 contacts:
-  - category: Organization
-    label: National Cancer Institute
-    contact_details:
-      - contact_type: url
-        value: "https://www.cancer.gov/"
-      - contact_type: url
-        value: "https://gdc.cancer.gov/"
+- category: Organization
+  label: National Cancer Institute
+  contact_details:
+  - contact_type: url
+    value: https://www.cancer.gov/
+  - contact_type: url
+    value: https://gdc.cancer.gov/
+taxon:
+- NCBITaxon:9606
 ---
 
 # NCI Genomic Data Commons (GDC)

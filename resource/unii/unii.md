@@ -41,7 +41,7 @@ products:
   name: UNII List Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -53,7 +53,7 @@ products:
   name: UNII Data Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -64,7 +64,7 @@ products:
   name: Legacy UNIIs
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -97,6 +97,8 @@ publications:
   title: 'FDA Grand Rounds: FDA''s Global Substance Registration System (GSRS) Unique
     Ingredient Identifiers (UNIIs)'
 repository: https://ginas.ncats.nih.gov/ginas/app
+taxon:
+- NCBITaxon:9606
 ---
 # FDA Global Substance Registration System (UNII)
 

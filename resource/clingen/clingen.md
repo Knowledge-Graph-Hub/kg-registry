@@ -1032,6 +1032,8 @@ publications:
   title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through
     global curation'
   year: '2024'
+taxon:
+- NCBITaxon:9606
 ---
 # ClinGen - Clinical Genome Resource
 

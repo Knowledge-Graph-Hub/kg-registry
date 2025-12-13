@@ -474,9 +474,9 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -519,6 +519,8 @@ repository: https://go.drugbank.com/releases/latest
 tags:
 - core
 - biopragmatics
+taxon:
+- NCBITaxon:9606
 ---
 DrugBank is a comprehensive knowledge base combining detailed drug information (chemical, pharmacological, and pharmaceutical) with extensive drug target information (sequence, structure, and pathway). 
 

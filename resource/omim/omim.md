@@ -147,9 +147,9 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -167,9 +167,9 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -183,6 +183,8 @@ publications:
   journal: Nucleic Acids Research
   title: OMIM.org—an online catalog of human genes and genetic disorders
   year: '2015'
+taxon:
+- NCBITaxon:9606
 warnings:
 - OMIM data are for research and educational use. Redistribution and commercial use
   require a license from Johns Hopkins University; API access requires registration

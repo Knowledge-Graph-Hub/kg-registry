@@ -87,6 +87,8 @@ products:
   secondary_source:
   - bioteque
 repository: https://github.com/sbnb-irb/chemical-checker
+taxon:
+- NCBITaxon:9606
 ---
 # Chemical Checker (CC)
 

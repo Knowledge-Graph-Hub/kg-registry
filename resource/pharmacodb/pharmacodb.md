@@ -132,6 +132,8 @@ repository: https://github.com/bhklab/PharmacoDB
 synonyms:
 - PharmacoDB
 - BHKLAB PharmacoDB
+taxon:
+- NCBITaxon:9606
 ---
 # PharmacoDB
 

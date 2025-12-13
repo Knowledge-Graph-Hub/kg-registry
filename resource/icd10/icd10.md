@@ -247,6 +247,8 @@ synonyms:
 - ICD-10
 - ICD10
 - International Classification of Diseases 10th Revision
+taxon:
+- NCBITaxon:9606
 ---
 # ICD-10
 

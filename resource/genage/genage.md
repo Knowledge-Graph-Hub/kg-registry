@@ -90,6 +90,9 @@ publications:
 synonyms:
 - GenAge
 - The Aging Gene Database
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:4932
 ---
 # GenAge Database of Ageing-Related Genes
 

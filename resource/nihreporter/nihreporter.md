@@ -97,6 +97,8 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+taxon:
+- NCBITaxon:9606
 ---
 # NIH Reporter
 

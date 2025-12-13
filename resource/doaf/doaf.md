@@ -2,23 +2,27 @@
 activity_status: inactive
 category: Ontology
 creation_date: '2025-10-30T00:00:00Z'
-description: The Disease Ontology Annotation Framework (DOAF) was a semantic framework for representing and sharing disease annotations, enabling standardized disease ontology annotations across biomedical resources.
+description: The Disease Ontology Annotation Framework (DOAF) was a semantic framework
+  for representing and sharing disease annotations, enabling standardized disease
+  ontology annotations across biomedical resources.
 domains:
-  - biomedical
-  - clinical
-id: "doaf"
-infores_id: "doaf"
+- biomedical
+- clinical
+id: doaf
+infores_id: doaf
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: Disease Ontology Annotation Framework
 homepage_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686
 synonyms:
-  - DOAF
-  - Disease Ontology Annotation Framework
+- DOAF
+- Disease Ontology Annotation Framework
 publications:
-  - id: "https://doi.org/10.1371/journal.pone.0049686"
-    title: "The Disease Ontology: Structuring the Landscape of Human Disease"
-    year: "2012"
+- id: https://doi.org/10.1371/journal.pone.0049686
+  title: 'The Disease Ontology: Structuring the Landscape of Human Disease'
+  year: '2012'
+taxon:
+- NCBITaxon:9606
 ---
 
 # Disease Ontology Annotation Framework

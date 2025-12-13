@@ -1,59 +1,73 @@
 ---
-id: "genophenoenvo-kg"
+id: genophenoenvo-kg
 layout: resource_detail
 name: GenoPhenoEnvo Knowledge Graph
-description: A knowledge graph integrating plant genomics, phenomics, and environmental data to predict gene expression patterns across multiple species under different environmental conditions, particularly drought stress
+description: A knowledge graph integrating plant genomics, phenomics, and environmental
+  data to predict gene expression patterns across multiple species under different
+  environmental conditions, particularly drought stress
 category: KnowledgeGraph
 activity_status: active
 creation_date: '2025-11-22T00:00:00Z'
 last_modified_date: '2025-11-22T00:00:00Z'
 homepage_url: https://github.com/genophenoenvo/knowledge-graph
 publications:
-  - id: "PMID:37384147"
-    title: Using knowledge graphs to infer gene expression in plants
-    authors:
-      - Anne E. Thessen
-      - Laurel Cooper
-      - Tyson L. Swetnam
-      - Harshad Hegde
-      - Justin Reese
-      - Justin Elser
-      - Pankaj Jaiswal
-    journal: Frontiers in Artificial Intelligence
-    year: "2023"
-    doi: "10.3389/frai.2023.1201002"
+- id: PMID:37384147
+  title: Using knowledge graphs to infer gene expression in plants
+  authors:
+  - Anne E. Thessen
+  - Laurel Cooper
+  - Tyson L. Swetnam
+  - Harshad Hegde
+  - Justin Reese
+  - Justin Elser
+  - Pankaj Jaiswal
+  journal: Frontiers in Artificial Intelligence
+  year: '2023'
+  doi: 10.3389/frai.2023.1201002
 license:
-  id: "https://opensource.org/licenses/BSD-3-Clause"
+  id: https://opensource.org/licenses/BSD-3-Clause
   label: BSD-3-Clause
 domains:
-  - genomics
-  - environment
-  - phenotype
-  - systems biology
-  - biological systems
-  - biomedical
+- genomics
+- environment
+- phenotype
+- systems biology
+- biological systems
+- biomedical
 products:
-  - id: "genophenoenvo-kg.data"
-    name: GenoPhenoEnvo KG Data
-    description: Merged knowledge graph data files containing over 400,000 nodes and 5,000,000 edges integrating gene expression, molecular interactions, functions, pathways, homology-based annotations, and environmental exposures from Planteome, EMBL-EBI Expression Atlas, and other sources. Available as tab-separated value files in KGX format with nodes and edges following the Biolink model.
-    category: GraphProduct
-    product_url: https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo
-    original_source:
-      - genophenoenvo-kg
-  - id: "genophenoenvo-kg.neo4j"
-    name: GenoPhenoEnvo KG Neo4j Visualization
-    description: Interactive graph database visualization and query interface using Neo4j for exploring plant gene expression patterns, homologous genes, and environmental responses across multiple plant species including Arabidopsis thaliana, Populus trichocarpa, Zea mays, Sorghum bicolor, and Oryza sativa.
-    category: GraphicalInterface
-    product_url: https://github.com/genophenoenvo/knowledge-graph
-    original_source:
-      - genophenoenvo-kg
-  - id: "genophenoenvo-kg.code"
-    name: GenoPhenoEnvo KG Construction Pipeline
-    description: Python-based pipeline for downloading, transforming, and merging plant genomics and phenomics data into a standardized knowledge graph using KG-Hub tools, custom transformation scripts, and Biolink model annotations. Includes Cypher query utilities for graph exploration.
-    category: ProcessProduct
-    product_url: https://github.com/genophenoenvo/knowledge-graph
-    original_source:
-      - genophenoenvo-kg
+- id: genophenoenvo-kg.data
+  name: GenoPhenoEnvo KG Data
+  description: Merged knowledge graph data files containing over 400,000 nodes and
+    5,000,000 edges integrating gene expression, molecular interactions, functions,
+    pathways, homology-based annotations, and environmental exposures from Planteome,
+    EMBL-EBI Expression Atlas, and other sources. Available as tab-separated value
+    files in KGX format with nodes and edges following the Biolink model.
+  category: GraphProduct
+  product_url: https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo
+  original_source:
+  - genophenoenvo-kg
+- id: genophenoenvo-kg.neo4j
+  name: GenoPhenoEnvo KG Neo4j Visualization
+  description: Interactive graph database visualization and query interface using
+    Neo4j for exploring plant gene expression patterns, homologous genes, and environmental
+    responses across multiple plant species including Arabidopsis thaliana, Populus
+    trichocarpa, Zea mays, Sorghum bicolor, and Oryza sativa.
+  category: GraphicalInterface
+  product_url: https://github.com/genophenoenvo/knowledge-graph
+  original_source:
+  - genophenoenvo-kg
+- id: genophenoenvo-kg.code
+  name: GenoPhenoEnvo KG Construction Pipeline
+  description: Python-based pipeline for downloading, transforming, and merging plant
+    genomics and phenomics data into a standardized knowledge graph using KG-Hub tools,
+    custom transformation scripts, and Biolink model annotations. Includes Cypher
+    query utilities for graph exploration.
+  category: ProcessProduct
+  product_url: https://github.com/genophenoenvo/knowledge-graph
+  original_source:
+  - genophenoenvo-kg
+taxon:
+- NCBITaxon:33090
 ---
 
 ## Overview

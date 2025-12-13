@@ -504,6 +504,37 @@ layout: default
       {% endif %}
     </div>
 
+    {% if page.taxon %}
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="taxa">
+      <div class="card-header">
+        <h4><i class="bi bi-flower1"></i> Relevant Taxa</h4>
+      </div>
+      <div class="list-group list-group-flush">
+        {% for taxon in page.taxon %}
+        <div class="list-group-item">
+          {% comment %}Extract the numeric ID from the NCBITaxon:XXXXX format{% endcomment %}
+          {% assign taxon_id = taxon | split: ':' | last %}
+          {% comment %}Create a human-readable taxon name{% endcomment %}
+          {% assign taxon_names = "9606:Human|10090:Mouse|10116:Rat|10088:Mus caroli|10114:Mus pahari|10197:Chlorocebus pygerythrus|6239:Caenorhabditis elegans|7227:Drosophila melanogaster|7955:Danio rerio|4932:Saccharomyces cerevisiae|3702:Arabidopsis thaliana|40674:Mammalia|2:Bacteria|2157:Archaea|2759:Eukaryota|131567:Cellular organisms|33090:Green Plants|33208:Metazoa|33213:Invertebrata|7742:Vertebrata|4751:Fungi|44689:Dictyostelium discoideum|8355:Xenopus|4896:Schizosaccharomyces pombe|559292:Saccharomyces cerevisiae (strain)|6237:Tritrichomonas foetus|6358:Tetrahymena thermophila|6605:Plasmodium falciparum|6893:Trypanosoma brucei|6939:Leishmania major|7399:Nematostella vectensis|7954:Porifera|8089:Ephydatia muelleri|8292:Branchiostoma lanceolatum|8353:Petromyzon marinus|83333:Escherichia coli K-12|32443:Rhabditida|44484:Microsporidia|50557:Insecta" | split: "|" %}
+          {% assign taxon_name = taxon %}
+          {% for name_pair in taxon_names %}
+            {% assign pair_parts = name_pair | split: ':' %}
+            {% if pair_parts[0] == taxon_id %}
+              {% assign taxon_name = pair_parts[1] %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          <p>
+            <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&mode=node&id={{taxon_id}}&lvl=" target="_blank" rel="noopener noreferrer">
+              {{taxon_name}} ({{taxon}}) <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
     {% if page.usages %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem">
       <div class="card-header">

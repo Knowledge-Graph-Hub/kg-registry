@@ -75,7 +75,7 @@ products:
   secondary_source:
   - cellosaurus
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'
@@ -90,7 +90,7 @@ products:
   secondary_source:
   - cellosaurus
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'
@@ -179,6 +179,8 @@ publications:
   title: The Cellosaurus, a cell-line knowledge resource
   year: '2018'
 repository: https://github.com/calipho-sib/cellosaurus
+taxon:
+- NCBITaxon:9606
 ---
 Cellosaurus is a comprehensive knowledge resource on cell lines from vertebrates, invertebrates, and plants. It serves as a reference for cell line information, providing researchers with standardized nomenclature, cross-references to other relevant databases, and detailed information about cell line characteristics, authentication, and potential problems.
 

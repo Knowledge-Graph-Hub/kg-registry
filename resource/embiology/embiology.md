@@ -37,6 +37,8 @@ products:
   id: embiology.web
   name: EmBiology Web Interface
   product_url: https://www.embiology.com/
+taxon:
+- NCBITaxon:9606
 ---
 EmBiology
 

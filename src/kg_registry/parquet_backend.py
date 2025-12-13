@@ -3,10 +3,17 @@
 import json
 import os
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 
 import duckdb
 import yaml
+
+try:
+    from oaklib import get_adapter
+    from oaklib.datamodels.obograph import Edge
+except ImportError:
+    get_adapter = None
+    Edge = None
 
 __all__ = [
     "ParquetBackend",
@@ -88,6 +95,17 @@ class ParquetBackend:
         """
         )
 
+        # Create taxa table for better querying
+        self.conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS resource_taxa (
+                resource_id VARCHAR,
+                taxon VARCHAR,
+                PRIMARY KEY (resource_id, taxon)
+            )
+        """
+        )
+
     def sync_from_yaml(self, yaml_file: str) -> int:
         """Sync data from YAML file to in-memory DuckDB database.
 
@@ -110,6 +128,7 @@ class ParquetBackend:
         self.conn.execute("DELETE FROM resources")
         self.conn.execute("DELETE FROM resource_domains")
         self.conn.execute("DELETE FROM resource_products")
+        self.conn.execute("DELETE FROM resource_taxa")
 
         for resource in resources:
             if not resource.get("id"):
@@ -123,6 +142,9 @@ class ParquetBackend:
 
             # Insert products
             self._insert_products(resource)
+
+            # Insert taxa
+            self._insert_taxa(resource)
 
             synced_count += 1
 
@@ -206,6 +228,20 @@ class ParquetBackend:
                 ],
             )
 
+    def _insert_taxa(self, resource: Dict[str, Any]):
+        """Insert resource taxa into the resource_taxa table."""
+        resource_id = resource.get("id")
+        taxa = resource.get("taxon", [])
+
+        for taxon in taxa:
+            self.conn.execute(
+                """
+                INSERT OR IGNORE INTO resource_taxa (resource_id, taxon)
+                VALUES (?, ?)
+            """,
+                [resource_id, taxon],
+            )
+
     def _parse_date(self, date_str: Optional[str]) -> Optional[datetime]:
         """Parse date string to datetime object."""
         if not date_str:
@@ -224,7 +260,7 @@ class ParquetBackend:
         os.makedirs(self.output_dir, exist_ok=True)
 
         # Export each table to a Parquet file
-        tables = ["resources", "resource_domains", "resource_products"]
+        tables = ["resources", "resource_domains", "resource_products", "resource_taxa"]
         for table in tables:
             output_path = os.path.join(self.output_dir, f"{table}.parquet")
             self.conn.execute(f"COPY {table} TO '{output_path}' (FORMAT PARQUET)")
@@ -273,6 +309,81 @@ class ParquetBackend:
             List of resources in the specified domain
         """
         return self.query_resources(domain=domain)
+
+    def query_by_taxon(self, taxon: str, include_descendants: bool = True) -> List[Dict[str, Any]]:
+        """Query resources by taxon, optionally including descendant taxa.
+
+        Uses the Ontology Access Kit (OAK) to expand the query to include descendant taxa
+        from the NCBI Taxonomy if oaklib is available.
+
+        Args:
+            taxon: Taxon identifier (e.g., 'NCBITaxon:9606' for human)
+            include_descendants: If True, include resources annotated with descendant taxa
+
+        Returns:
+            List of resources matching the taxon (and its descendants if requested)
+        """
+        taxa_to_query = {taxon}
+
+        # If oaklib is available and we want to include descendants, get the full set
+        if include_descendants and get_adapter is not None:
+            try:
+                expanded_taxa = self._get_taxon_descendants(taxon)
+                taxa_to_query.update(expanded_taxa)
+            except Exception as e:
+                # If expansion fails, just use the original taxon
+                print(f"Warning: Could not expand taxon {taxon}: {e}")
+
+        # Query for resources with any of the taxa
+        if not taxa_to_query:
+            return []
+
+        placeholders = ", ".join(["?"] * len(taxa_to_query))
+        query = f"""
+            SELECT * FROM resources
+            WHERE id IN (
+                SELECT DISTINCT resource_id FROM resource_taxa
+                WHERE taxon IN ({placeholders})
+            )
+            ORDER BY name
+        """
+        params = list(taxa_to_query)
+
+        result_cursor = self.conn.execute(query, params)
+        columns = [desc[0] for desc in result_cursor.description]
+        result = result_cursor.fetchall()
+
+        return [dict(zip(columns, row)) for row in result]
+
+    def _get_taxon_descendants(self, taxon: str) -> Set[str]:
+        """Get all descendant taxa for a given taxon using OAK.
+
+        Args:
+            taxon: Taxon identifier (e.g., 'NCBITaxon:9606')
+
+        Returns:
+            Set of all descendant taxon identifiers
+        """
+        if get_adapter is None:
+            return set()
+
+        try:
+            # Use NCBI Taxonomy via OAK
+            adapter = get_adapter("obo:NCBITaxon")
+
+            # Convert to proper format for OAK (without CURIE prefix for now)
+            taxon_id = taxon.replace("NCBITaxon:", "")
+
+            # Get all descendants (closure of is_a relationship)
+            descendants = set()
+            for desc in adapter.descendants(f"NCBITaxon:{taxon_id}", reflexive=True):
+                descendants.add(desc)
+
+            return descendants
+        except Exception:
+            # If OAK fails for any reason, return empty set
+            # The caller will fall back to just using the original taxon
+            return set()
 
     def query_active_resources(self) -> List[Dict[str, Any]]:
         """Query all active resources.
@@ -370,8 +481,8 @@ class ParquetBackend:
             True if data was loaded successfully, False otherwise
         """
         # Whitelist of valid table names
-        valid_tables = {"resources", "resource_domains", "resource_products"}
-        tables = ["resources", "resource_domains", "resource_products"]
+        valid_tables = {"resources", "resource_domains", "resource_products", "resource_taxa"}
+        tables = ["resources", "resource_domains", "resource_products", "resource_taxa"]
         success = True
 
         for table in tables:
@@ -452,8 +563,8 @@ class DuckDBParquetQuerier:
     def _register_tables(self):
         """Register Parquet files as virtual tables in DuckDB."""
         # Whitelist of valid table names
-        valid_tables = {"resources", "resource_domains", "resource_products"}
-        tables = ["resources", "resource_domains", "resource_products"]
+        valid_tables = {"resources", "resource_domains", "resource_products", "resource_taxa"}
+        tables = ["resources", "resource_domains", "resource_products", "resource_taxa"]
 
         for table in tables:
             # Validate table name against whitelist to prevent SQL injection

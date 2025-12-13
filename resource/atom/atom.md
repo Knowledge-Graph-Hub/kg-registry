@@ -40,7 +40,7 @@ products:
   - pubmed
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 418 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 418 error
     when accessing file'
@@ -55,7 +55,7 @@ products:
   - atom
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 418 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 418 error
     when accessing file'
@@ -73,6 +73,8 @@ publications:
   title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine
     Literature'
   year: '2019'
+taxon:
+- NCBITaxon:9606
 ---
 # ATOM
 

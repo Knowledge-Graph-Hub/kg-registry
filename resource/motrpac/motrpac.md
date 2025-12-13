@@ -253,6 +253,8 @@ publications:
   preferred: false
   title: Temporal dynamics of the multi-omic response to endurance exercise training
   year: '2024'
+taxon:
+- NCBITaxon:10116
 ---
 # Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub
 

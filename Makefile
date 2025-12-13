@@ -54,7 +54,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean sync-obo-foundry
 
-all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/taxon_mapping.yaml registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -100,7 +100,7 @@ $(SOURCE_SCHEMA_ALL):
 
 # Remove and/or revert all targets to their repository versions
 clean:
-	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/organizations.yml registry/parquet sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/organizations.yml registry/parquet registry/taxon_mapping.yaml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml
 
 clean-schema:
@@ -145,6 +145,14 @@ registry/parquet: registry/kgs.yml
 	mkdir -p registry/parquet
 	$(RUN) python -m kg_registry.cli parquet sync
 	@echo "✅ Parquet files generated in registry/parquet/"
+
+# Generate taxon hierarchy mapping for hierarchical filtering on main page
+registry/taxon_mapping.yaml: registry/parquet
+	$(RUN) python util/generate_taxon_mapping.py \
+		--parquet-dir registry/parquet \
+		--output registry/taxon_mapping.yaml \
+		--include-all-taxa
+	@echo "✅ Taxon mapping generated in registry/taxon_mapping.yaml"
 
 registry/parquet-downloads.html: registry/parquet
 	@echo "✅ Parquet downloads page is ready"

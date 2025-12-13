@@ -75,6 +75,8 @@ products:
   - pankbase
   format: http
   is_public: true
+taxon:
+- NCBITaxon:9606
 ---
 
 PanKBase

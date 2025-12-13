@@ -165,6 +165,8 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+taxon:
+- NCBITaxon:9606
 ---
 # AOP-DB
 

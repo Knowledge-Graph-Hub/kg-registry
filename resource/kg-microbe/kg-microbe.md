@@ -172,5 +172,8 @@ products:
   secondary_source:
   - kg-microbe
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
+taxon:
+- NCBITaxon:2
+- NCBITaxon:2759
 ---
 KG-Microbe.

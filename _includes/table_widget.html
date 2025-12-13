@@ -52,6 +52,46 @@
                 <option value="no">Without Evaluation</option>
             </select>
         </div>
+        <div>
+            <label for="dd-taxa" style="font-size:x-small">Organism/Taxon</label>
+            <select id="dd-taxa" class="form-select form-select-sm">
+                <option selected value="">All Taxa</option>
+                <!-- Model organisms -->
+                <optgroup label="Model Organisms">
+                    <option value="NCBITaxon:9606">Human</option>
+                    <option value="NCBITaxon:10090">Mouse</option>
+                    <option value="NCBITaxon:10116">Rat</option>
+                    <option value="NCBITaxon:6239">C. elegans</option>
+                    <option value="NCBITaxon:7227">Fruit fly</option>
+                    <option value="NCBITaxon:7955">Zebrafish</option>
+                    <option value="NCBITaxon:4932">Yeast</option>
+                    <option value="NCBITaxon:3702">A. thaliana</option>
+                </optgroup>
+                <!-- Mammalian and vertebrate categories -->
+                <optgroup label="Mammalian & Vertebrate">
+                    <option value="NCBITaxon:40674">Mammalia</option>
+                    <option value="NCBITaxon:7742">Vertebrata</option>
+                </optgroup>
+                <!-- Major organismal categories -->
+                <optgroup label="Major Categories">
+                    <option value="NCBITaxon:33208">Metazoa (Animals)</option>
+                    <option value="NCBITaxon:33213">Invertebrata</option>
+                    <option value="NCBITaxon:33090">Green Plants</option>
+                    <option value="NCBITaxon:4751">Fungi</option>
+                    <option value="NCBITaxon:50557">Insecta (Insects)</option>
+                </optgroup>
+                <!-- Microorganisms -->
+                <optgroup label="Microorganisms">
+                    <option value="NCBITaxon:2">Bacteria</option>
+                    <option value="NCBITaxon:2157">Archaea</option>
+                </optgroup>
+                <!-- Broadest categories -->
+                <optgroup label="Broadest Categories">
+                    <option value="NCBITaxon:2759">Eukaryota</option>
+                    <option value="NCBITaxon:131567">Cellular organisms</option>
+                </optgroup>
+            </select>
+        </div>
     </div>
     <!-- Collection description display -->
     <div id="collection-description-container" class="alert alert-info mt-2 mb-3" style="display: none;">

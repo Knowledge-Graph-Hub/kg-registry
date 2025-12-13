@@ -492,9 +492,9 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -524,5 +524,7 @@ products:
   - chembl
   - chebi
 repository: https://www.pharmgkb.org/downloads
+taxon:
+- NCBITaxon:9606
 ---
 PharmGKB

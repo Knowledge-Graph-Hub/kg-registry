@@ -105,7 +105,7 @@ products:
   name: DDBJ Mirror
   product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-09_ Timeout connecting
     to URL
@@ -134,6 +134,8 @@ products:
   product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
   secondary_source:
   - aop-db
+taxon:
+- NCBITaxon:9606
 ---
 # 1000 Genomes Project (IGSR)
 

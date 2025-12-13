@@ -199,6 +199,9 @@ publications:
   title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
 synonyms:
 - MSigDB
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 # Molecular Signatures Database (MSigDB)
 

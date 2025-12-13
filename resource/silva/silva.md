@@ -343,6 +343,9 @@ publications:
   title: The SILVA and 'All-species Living Tree Project (LTP)' taxonomic frameworks
   year: '2014'
 repository: https://github.com/epruesse/SINA
+taxon:
+- NCBITaxon:2
+- NCBITaxon:2157
 ---
 # SILVA
 

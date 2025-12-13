@@ -26,6 +26,8 @@ contacts:
 homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
 collection:
 - translator
+taxon:
+- NCBITaxon:9606
 ---
 
 A Translator Knowledge Provider integrating clinical data.

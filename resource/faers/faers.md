@@ -83,6 +83,8 @@ products:
   - faers
   - aeolus
   product_url: https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4
+taxon:
+- NCBITaxon:9606
 ---
 
 # FDA Adverse Event Reporting System

@@ -69,6 +69,8 @@ publications:
     biomolecular and biomedical data'
   year: '2024'
 repository: https://github.com/TaylorResearchLab/Petagraph
+taxon:
+- NCBITaxon:9606
 ---
 ## Petagraph: A Large-Scale Biomedical Knowledge Graph
 

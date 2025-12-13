@@ -37,6 +37,8 @@ products:
   name: MEDI Dataset Releases
   product_url: https://github.com/everycure-org/matrix-indication-list/releases
 repository: https://github.com/everycure-org/matrix-indication-list
+taxon:
+- NCBITaxon:9606
 ---
 
 # MeDI (MATRIX Indication List)

@@ -405,6 +405,8 @@ products:
   - wikipathways
   - rampdb
   product_url: https://rampdb.nih.gov/
+taxon:
+- NCBITaxon:9606
 ---
 ## Overview
 

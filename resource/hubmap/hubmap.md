@@ -78,7 +78,7 @@ products:
   name: Antibody Validation Reports
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 401 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 401 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 401 error
     when accessing file'
@@ -235,6 +235,8 @@ publications:
     single-cell data'
   year: '2024'
 repository: https://github.com/hubmapconsortium
+taxon:
+- NCBITaxon:9606
 ---
 # HuBMAP - Human BioMolecular Atlas Program
 

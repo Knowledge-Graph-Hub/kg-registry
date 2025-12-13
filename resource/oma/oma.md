@@ -71,13 +71,15 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 502 error
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'
 - category: Product
   description: OMA orthology groups in OrthoXML format
@@ -90,14 +92,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
   format: xml
@@ -109,14 +113,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Pairwise orthologs in tab-separated text format
@@ -129,14 +135,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Protein sequences from all genomes in FASTA format
@@ -149,14 +157,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -169,14 +179,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -189,14 +201,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   description: OMA Browser database in HDF5 format
   id: oma.hdf5
@@ -207,14 +221,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-05_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: OMA data in RDF format (Turtle syntax)
@@ -227,14 +243,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to UniProt accession numbers
@@ -248,14 +266,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
+    when accessing file'
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.
 
