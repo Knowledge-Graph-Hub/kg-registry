@@ -148,7 +148,7 @@ registry/parquet: registry/kgs.yml
 
 # Generate taxon hierarchy mapping for hierarchical filtering on main page
 registry/taxon_mapping.yaml: registry/parquet
-	$(RUN) python scripts/generate_taxon_mapping.py \
+	$(RUN) python util/generate_taxon_mapping.py \
 		--parquet-dir registry/parquet \
 		--output registry/taxon_mapping.yaml
 	@echo "✅ Taxon mapping generated in registry/taxon_mapping.yaml"
