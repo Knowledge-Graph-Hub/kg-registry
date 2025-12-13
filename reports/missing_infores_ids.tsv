@@ -298,6 +298,7 @@ ms	Mass spectrometry ontology	Ontology	http://www.psidev.info/groups/controlled-
 multiomics-kp	Multiomics KP	KnowledgeGraph		resource/multiomics-kp/multiomics-kp.md
 mutationds	Catalog of Validated Oncogenic Mutations	DataSource	https://www.cancergenomeinterpreter.org/mutations	resource/mutationds/mutationds.md
 mw	Metabolomics Workbench	DataSource	https://www.metabolomicsworkbench.org/	resource/mw/mw.md
+namsnetwork	NAMs Network	KnowledgeGraph	https://nams.network/	resource/namsnetwork/namsnetwork.md
 nasa-gesdisc-kg	NASA-GESDISC-KG	KnowledgeGraph	https://disc.gsfc.nasa.gov	resource/nasa-gesdisc-kg/nasa-gesdisc-kg.md
 nbo	Neuro Behavior Ontology	Ontology	https://github.com/obo-behavior/behavior-ontology/	resource/nbo/nbo.md
 ncatsgardkg	NCATS GARD KG	KnowledgeGraph	https://github.com/ncats/RD-Clust	resource/ncatsgardkg/ncatsgardkg.md

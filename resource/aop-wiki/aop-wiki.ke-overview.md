@@ -23,6 +23,6 @@ warnings:
   URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with
   url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
   '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-  issuer certificate (_ssl.c_1000)')))
+  issuer certificate (_ssl.c_1017)')))
 layout: product_detail
 ---

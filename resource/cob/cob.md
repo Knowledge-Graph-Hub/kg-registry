@@ -30,14 +30,14 @@ products:
   format: owl
   id: cob.owl
   name: COB
-  product_file_size: 7391
+  product_file_size: 7601
   product_url: http://purl.obolibrary.org/obo/cob.owl
 - category: OntologyProduct
   description: base module for COB
   format: owl
   id: cob.cob-base.owl
   name: COB base module
-  product_file_size: 2798
+  product_file_size: 2994
   product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
 - category: OntologyProduct
   description: COB with native IDs preserved rather than rewired to OBO IDs
@@ -53,7 +53,7 @@ products:
   name: COB to external
   product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: demo of COB including subsets of other ontologies (Experimental, for

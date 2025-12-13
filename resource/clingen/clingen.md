@@ -236,7 +236,7 @@ products:
   - disgenet
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 15107405
+  edge_count: 14976820
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -258,7 +258,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -313,6 +313,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 230877741
@@ -321,7 +322,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 15107405
+  edge_count: 14976820
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -343,7 +344,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -398,6 +399,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 315667976
@@ -406,7 +408,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 15107405
+  edge_count: 14976820
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -428,7 +430,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -483,6 +485,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 879238775
@@ -492,7 +495,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 15107405
+  edge_count: 14976820
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -513,7 +516,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -568,6 +571,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1438250397
@@ -577,7 +581,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 15107405
+  edge_count: 14976820
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -598,7 +602,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -653,6 +657,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 6827814912
@@ -661,7 +666,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 15107405
+  edge_count: 14976820
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -683,7 +688,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -738,6 +743,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 15279494795
@@ -746,7 +752,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 15107405
+  edge_count: 14976820
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -768,7 +774,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -823,6 +829,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1149505896
@@ -831,7 +838,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 15107405
+  edge_count: 14976820
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -853,7 +860,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -908,6 +915,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 4386388748
@@ -916,7 +924,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 15107405
+  edge_count: 14976820
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -938,7 +946,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1360948
+  node_count: 1369527
   original_source:
   - phenio
   - alliance
@@ -993,6 +1001,7 @@ products:
   - biolink:participates_in
   - biolink:preventative_for_condition
   - biolink:related_to
+  - biolink:same_as
   - biolink:subclass_of
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789

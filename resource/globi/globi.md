@@ -59,7 +59,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -83,7 +83,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -103,7 +103,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -116,7 +116,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -154,7 +154,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -190,7 +190,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -209,7 +209,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint
