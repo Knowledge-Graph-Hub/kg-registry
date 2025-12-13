@@ -19,6 +19,11 @@ warnings:
   with url_ / (Caused by NameResolutionError("HTTPConnection(host='mirgate.bioinfo.cnio.es',
   port=80)_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno -2] Name or service
   not known)"))
+- File was not able to be retrieved when checked on 2025-12-13_ Error connecting to
+  URL_ HTTPConnectionPool(host='mirgate.bioinfo.cnio.es', port=80)_ Max retries exceeded
+  with url_ / (Caused by NameResolutionError("HTTPConnection(host='mirgate.bioinfo.cnio.es',
+  port=80)_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno -2] Name or service
+  not known)"))
 - File was not able to be retrieved when checked on 2025-12-11_ Error connecting to
   URL_ HTTPConnectionPool(host='mirgate.bioinfo.cnio.es', port=80)_ Max retries exceeded
   with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object
