@@ -1,0 +1,24 @@
+taxon_hierarchy:
+  NCBITaxon:10090:
+  - NCBITaxon:10090
+  NCBITaxon:10116:
+  - NCBITaxon:10116
+  NCBITaxon:3702:
+  - NCBITaxon:3702
+  NCBITaxon:40674:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:40674
+  - NCBITaxon:9606
+  NCBITaxon:4932:
+  - NCBITaxon:4932
+  - NCBITaxon:559292
+  NCBITaxon:6239:
+  - NCBITaxon:6239
+  NCBITaxon:7227:
+  - NCBITaxon:7227
+  NCBITaxon:7955: []
+  NCBITaxon:9606:
+  - NCBITaxon:9606

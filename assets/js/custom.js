@@ -71,6 +71,57 @@ jQuery(document).ready(function () {
     const $collectionDescContainer = $("#collection-description-container");
     const $collectionDescText = $("#collection-description-text");
 
+    // Taxon hierarchy mapping loaded from generated YAML file
+    let taxonHierarchyMap = {};
+
+    // Load taxon hierarchy mapping from YAML file
+    fetch('/kg-registry/registry/taxon_mapping.yaml')
+        .then(response => response.text())
+        .then(yamlText => {
+            // Simple YAML parser for taxon_mapping.yaml
+            // Expected format: taxon_hierarchy: { NCBITaxon:XXXXX: [list of taxa] }
+            try {
+                const lines = yamlText.trim().split('\n');
+                let currentTaxon = null;
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+
+                    // Skip empty lines and the header
+                    if (!line || line.startsWith('#') || line === 'taxon_hierarchy:') {
+                        continue;
+                    }
+
+                    // Check if this is a taxon key (starts with NCBITaxon: followed by list)
+                    if (line.startsWith('NCBITaxon:')) {
+                        const parts = line.split(':');
+                        currentTaxon = parts[0] + ':' + parts[1]; // NCBITaxon:XXXXX
+                        taxonHierarchyMap[currentTaxon] = [];
+
+                        // Check if the list is on the same line
+                        if (line.includes('[')) {
+                            const listStr = line.substring(line.indexOf('[') + 1, line.indexOf(']'));
+                            if (listStr.trim()) {
+                                taxonHierarchyMap[currentTaxon] = listStr.split(',').map(t => t.trim());
+                            }
+                        }
+                    } else if (currentTaxon && line.startsWith('- NCBITaxon:')) {
+                        // This is an item in the taxon list
+                        const taxon = line.substring(2).trim(); // Remove "- "
+                        taxonHierarchyMap[currentTaxon].push(taxon);
+                    } else if (currentTaxon && line === '[]') {
+                        // Empty list
+                        taxonHierarchyMap[currentTaxon] = [];
+                    }
+                }
+
+                console.log('Taxon hierarchy mapping loaded:', taxonHierarchyMap);
+            } catch (error) {
+                console.warn('Error parsing taxon mapping YAML:', error);
+            }
+        })
+        .catch(error => console.warn('Could not load taxon mapping file:', error));
+
     // Update resource count display
     function updateResourceCount(count, totalCount, kgCount, totalKgCount) {
         if (count === totalCount) {
