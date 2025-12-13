@@ -47,8 +47,6 @@ products:
   product_file_size: 2731574
   product_url: http://purl.obolibrary.org/obo/fbcv.json
 repository: https://github.com/FlyBase/flybase-controlled-vocabulary
-taxon:
-- NCBITaxon:7227
 ---
 ## Description
 

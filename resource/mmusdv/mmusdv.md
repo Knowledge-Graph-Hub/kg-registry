@@ -39,8 +39,6 @@ products:
   product_file_size: 104741
   product_url: http://purl.obolibrary.org/obo/mmusdv.obo
 repository: https://github.com/obophenotype/developmental-stage-ontologies
-taxon:
-- NCBITaxon:10090
 ---
 ## Description
 

@@ -75,7 +75,7 @@ products:
   secondary_source:
   - cellosaurus
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'
@@ -90,7 +90,7 @@ products:
   secondary_source:
   - cellosaurus
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'

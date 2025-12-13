@@ -40,8 +40,6 @@ products:
   product_file_size: 185834
   product_url: http://purl.obolibrary.org/obo/pso.obo
 repository: https://github.com/Planteome/plant-stress-ontology
-taxon:
-- NCBITaxon:33090
 ---
 ## Description
 

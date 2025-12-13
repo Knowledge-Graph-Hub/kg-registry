@@ -7,9 +7,9 @@ contacts:
   - contact_type: url
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
-description: "OMIM (Online Mendelian Inheritance in Man) is a continuously updated,\
-  \ expert-curated catalog of human genes and genetic disorders, focusing on genotype\u2013\
-  phenotype relationships and the molecular basis of disease."
+description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
+  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
+  relationships and the molecular basis of disease.
 domains:
 - biomedical
 - clinical
@@ -147,9 +147,9 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -167,9 +167,9 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -177,18 +177,18 @@ publications:
 - id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
-  title: "OMIM.org\u2014leveraging knowledge across phenotype\u2013gene relationships"
+  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
   year: '2019'
 - id: https://doi.org/10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: "OMIM.org\u2014an online catalog of human genes and genetic disorders"
+  title: OMIM.org—an online catalog of human genes and genetic disorders
   year: '2015'
+taxon:
+- NCBITaxon:9606
 warnings:
 - OMIM data are for research and educational use. Redistribution and commercial use
   require a license from Johns Hopkins University; API access requires registration
   and an API key.
-taxon:
-- NCBITaxon:9606
 ---
 # OMIM
 

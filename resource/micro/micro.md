@@ -33,8 +33,6 @@ products:
   product_file_size: 665050
   product_url: http://purl.obolibrary.org/obo/micro.owl
 repository: https://github.com/carrineblank/MicrO
-taxon:
-- NCBITaxon:2
 ---
 ## Description
 

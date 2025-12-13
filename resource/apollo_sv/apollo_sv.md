@@ -33,8 +33,6 @@ products:
   product_file_size: 266319
   product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
 repository: https://github.com/ApolloDev/apollo-sv
-taxon:
-- NCBITaxon:9606
 ---
 ## Description
 

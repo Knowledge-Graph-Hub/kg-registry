@@ -32,8 +32,6 @@ products:
   product_file_size: 687021
   product_url: http://purl.obolibrary.org/obo/aro.owl
 repository: https://github.com/arpcard/aro
-taxon:
-- NCBITaxon:2
 ---
 ## Description
 

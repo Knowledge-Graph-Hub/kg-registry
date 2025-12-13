@@ -136,7 +136,7 @@ products:
   name: HPO CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-13_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
@@ -147,7 +147,7 @@ products:
   name: Mondo CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-13_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'
@@ -158,7 +158,7 @@ products:
   name: ORDO CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-13_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-13: No Content-Length
     header found'

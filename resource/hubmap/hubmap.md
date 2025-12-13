@@ -78,7 +78,7 @@ products:
   name: Antibody Validation Reports
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 401 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 401 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 401 error
     when accessing file'
@@ -216,7 +216,7 @@ products:
   - ubkg
 publications:
 - authors:
-  - "Katy B\xF6rner"
+  - Katy Börner
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1

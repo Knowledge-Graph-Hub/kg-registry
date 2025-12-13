@@ -40,8 +40,6 @@ products:
   product_file_size: 67259
   product_url: http://purl.obolibrary.org/obo/peco.obo
 repository: https://github.com/Planteome/plant-experimental-conditions-ontology
-taxon:
-- NCBITaxon:33090
 ---
 ## Description
 

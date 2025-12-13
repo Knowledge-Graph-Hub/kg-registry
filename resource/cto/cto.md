@@ -36,8 +36,6 @@ products:
   product_file_size: 96492
   product_url: http://purl.obolibrary.org/obo/cto.owl
 repository: https://github.com/ClinicalTrialOntology/CTO
-taxon:
-- NCBITaxon:9606
 ---
 ## Description
 

@@ -32,8 +32,6 @@ products:
   product_file_size: 7494
   product_url: http://purl.obolibrary.org/obo/psdo.owl
 repository: https://github.com/Display-Lab/psdo
-taxon:
-- NCBITaxon:9606
 ---
 ## Description
 

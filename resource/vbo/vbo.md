@@ -68,8 +68,6 @@ products:
   product_file_size: 1154978
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
-taxon:
-- NCBITaxon:2
 ---
 ## Description
 

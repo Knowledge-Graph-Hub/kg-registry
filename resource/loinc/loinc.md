@@ -56,7 +56,7 @@ products:
   - loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 503 error
     when accessing file'
@@ -69,7 +69,7 @@ products:
   - loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 503 error
     when accessing file'
@@ -82,7 +82,7 @@ products:
   - loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 503 error
     when accessing file'
@@ -245,11 +245,11 @@ publications:
   journal: Nucleic Acids Research
   title: 'LOINC 2023 update: refining identifiers and expanding clinical content'
   year: '2023'
+taxon:
+- NCBITaxon:9606
 warnings:
 - LOINC downloads and API require a free account; ensure you cite the specific version
   (e.g., 2.81) when using the terminology.
-taxon:
-- NCBITaxon:9606
 ---
 # LOINC
 

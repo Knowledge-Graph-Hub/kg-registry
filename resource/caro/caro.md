@@ -33,8 +33,6 @@ products:
   product_file_size: 586722
   product_url: http://purl.obolibrary.org/obo/caro.owl
 repository: https://github.com/obophenotype/caro
-taxon:
-- NCBITaxon:2
 ---
 ## Description
 

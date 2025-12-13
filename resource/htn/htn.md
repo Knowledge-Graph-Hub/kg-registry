@@ -33,8 +33,6 @@ products:
   product_file_size: 140471
   product_url: http://purl.obolibrary.org/obo/htn.owl
 repository: https://github.com/aellenhicks/htn_owl
-taxon:
-- NCBITaxon:9606
 ---
 ## Description
 

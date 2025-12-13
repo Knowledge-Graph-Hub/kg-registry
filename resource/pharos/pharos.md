@@ -51,7 +51,7 @@ products:
   name: TCRD Database Downloads
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ Timeout connecting
+  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-12-13: Timeout connecting
     to URL'
@@ -69,7 +69,7 @@ products:
   name: Pharos API Documentation
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -92,7 +92,7 @@ products:
   name: Pharos Documentation
   product_url: https://pharos.nih.gov/about
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
     when accessing file'
@@ -116,7 +116,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - "Sch\xFCrer S"
+  - Schürer S
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -142,16 +142,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - "Vidovi\u0107 D"
+  - Vidović D
   - Koleti A
-  - "Sch\xFCrer SC"
+  - Schürer SC
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - "Math\xE9 E"
+  - Mathé E
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993

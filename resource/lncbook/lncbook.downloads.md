@@ -7,9 +7,9 @@ id: lncbook.downloads
 name: Downloads
 product_url: https://ngdc.cncb.ac.cn/lncbook/download
 warnings:
-- File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

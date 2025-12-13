@@ -8,6 +8,7 @@ taxon_hierarchy:
   - NCBITaxon:10197
   - NCBITaxon:131567
   - NCBITaxon:2
+  - NCBITaxon:2157
   - NCBITaxon:2759
   - NCBITaxon:32443
   - NCBITaxon:33090
@@ -34,10 +35,12 @@ taxon_hierarchy:
   - NCBITaxon:7399
   - NCBITaxon:7742
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   - NCBITaxon:8292
   - NCBITaxon:83333
   - NCBITaxon:8353
+  - NCBITaxon:8355
   - NCBITaxon:9606
   NCBITaxon:10088:
   - NCBITaxon:10088
@@ -59,6 +62,7 @@ taxon_hierarchy:
   - NCBITaxon:10197
   - NCBITaxon:131567
   - NCBITaxon:2
+  - NCBITaxon:2157
   - NCBITaxon:2759
   - NCBITaxon:32443
   - NCBITaxon:33090
@@ -85,14 +89,18 @@ taxon_hierarchy:
   - NCBITaxon:7399
   - NCBITaxon:7742
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   - NCBITaxon:8292
   - NCBITaxon:83333
   - NCBITaxon:8353
+  - NCBITaxon:8355
   - NCBITaxon:9606
   NCBITaxon:2:
   - NCBITaxon:2
   - NCBITaxon:83333
+  NCBITaxon:2157:
+  - NCBITaxon:2157
   NCBITaxon:2759:
   - NCBITaxon:10088
   - NCBITaxon:10090
@@ -125,13 +133,16 @@ taxon_hierarchy:
   - NCBITaxon:7399
   - NCBITaxon:7742
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   - NCBITaxon:8292
   - NCBITaxon:8353
+  - NCBITaxon:8355
   - NCBITaxon:9606
   NCBITaxon:32443:
   - NCBITaxon:32443
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   NCBITaxon:33090:
   - NCBITaxon:33090
@@ -159,9 +170,11 @@ taxon_hierarchy:
   - NCBITaxon:7399
   - NCBITaxon:7742
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   - NCBITaxon:8292
   - NCBITaxon:8353
+  - NCBITaxon:8355
   - NCBITaxon:9606
   NCBITaxon:33213:
   - NCBITaxon:10088
@@ -182,9 +195,11 @@ taxon_hierarchy:
   - NCBITaxon:7399
   - NCBITaxon:7742
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   - NCBITaxon:8292
   - NCBITaxon:8353
+  - NCBITaxon:8355
   - NCBITaxon:9606
   NCBITaxon:3702:
   - NCBITaxon:3702
@@ -247,20 +262,29 @@ taxon_hierarchy:
   - NCBITaxon:40674
   - NCBITaxon:7742
   - NCBITaxon:7954
+  - NCBITaxon:7955
   - NCBITaxon:8089
   - NCBITaxon:8292
   - NCBITaxon:8353
+  - NCBITaxon:8355
   - NCBITaxon:9606
   NCBITaxon:7954:
   - NCBITaxon:7954
+  - NCBITaxon:7955
+  NCBITaxon:7955:
+  - NCBITaxon:7955
   NCBITaxon:8089:
   - NCBITaxon:8089
   NCBITaxon:8292:
   - NCBITaxon:8292
   - NCBITaxon:8353
+  - NCBITaxon:8355
   NCBITaxon:83333:
   - NCBITaxon:83333
   NCBITaxon:8353:
   - NCBITaxon:8353
+  - NCBITaxon:8355
+  NCBITaxon:8355:
+  - NCBITaxon:8355
   NCBITaxon:9606:
   - NCBITaxon:9606

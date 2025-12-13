@@ -37,8 +37,6 @@ products:
   product_file_size: 16744
   product_url: http://purl.obolibrary.org/obo/sibo.obo
 repository: https://github.com/obophenotype/sibo
-taxon:
-- NCBITaxon:50557
 ---
 ## Description
 

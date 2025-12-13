@@ -40,8 +40,6 @@ products:
   product_file_size: 15870641
   product_url: http://purl.obolibrary.org/obo/zp.obo
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
-taxon:
-- NCBITaxon:7955
 ---
 ## Description
 

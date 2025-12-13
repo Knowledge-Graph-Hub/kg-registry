@@ -39,8 +39,6 @@ products:
   product_file_size: 124064
   product_url: http://purl.obolibrary.org/obo/omp.obo
 repository: https://github.com/microbialphenotypes/OMP-ontology
-taxon:
-- NCBITaxon:2759
 ---
 ## Description
 

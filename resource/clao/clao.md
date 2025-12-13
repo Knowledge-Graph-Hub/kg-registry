@@ -40,8 +40,6 @@ products:
   product_file_size: 74344
   product_url: http://purl.obolibrary.org/obo/clao.obo
 repository: https://github.com/luis-gonzalez-m/Collembola
-taxon:
-- NCBITaxon:50557
 ---
 ## Description
 
