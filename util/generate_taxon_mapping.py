@@ -126,19 +126,28 @@ def find_matching_taxa(
 
 
 def generate_taxon_mapping(
-    parquet_dir: str, filter_taxa: List[str] = None
+    parquet_dir: str, filter_taxa: List[str] = None, include_all_taxa: bool = False
 ) -> Dict[str, List[str]]:
     """Generate taxon hierarchy mapping.
 
     Args:
         parquet_dir: Directory containing parquet files
         filter_taxa: List of taxa to filter by (if None, uses defaults)
+        include_all_taxa: If True, generate mappings for all taxa in database
 
     Returns:
         Dictionary mapping filter taxa to their descendant database taxa
     """
-    # Default filter taxa if not specified
-    if filter_taxa is None:
+    # Get all taxa from the database
+    database_taxa = get_all_database_taxa(parquet_dir)
+    print(f"Found {len(database_taxa)} unique taxa in database", file=sys.stderr)
+
+    # If include_all_taxa is True, use all database taxa as filter taxa
+    if include_all_taxa:
+        filter_taxa = sorted(list(database_taxa))
+        print(f"Using all {len(filter_taxa)} database taxa for filtering", file=sys.stderr)
+    elif filter_taxa is None:
+        # Default filter taxa if not specified
         filter_taxa = [
             "NCBITaxon:9606",    # Human
             "NCBITaxon:10116",   # Rat
@@ -149,11 +158,12 @@ def generate_taxon_mapping(
             "NCBITaxon:4932",    # Yeast
             "NCBITaxon:3702",    # A. thaliana
             "NCBITaxon:40674",   # Mammalia
+            # Broad categories
+            "NCBITaxon:2",       # Bacteria
+            "NCBITaxon:2157",    # Archaea
+            "NCBITaxon:2759",    # Eukaryota
+            "NCBITaxon:131567",  # Cellular organisms
         ]
-
-    # Get all taxa from the database
-    database_taxa = get_all_database_taxa(parquet_dir)
-    print(f"Found {len(database_taxa)} unique taxa in database", file=sys.stderr)
 
     # Generate mappings
     mapping = {}
@@ -188,6 +198,11 @@ def main():
         nargs="+",
         help="List of taxa to generate mappings for (uses defaults if not specified)",
     )
+    parser.add_argument(
+        "--include-all-taxa",
+        action="store_true",
+        help="Generate mappings for all taxa found in database (overrides --filter-taxa)",
+    )
 
     args = parser.parse_args()
 
@@ -198,7 +213,7 @@ def main():
     print(f"Generating taxon mapping from {args.parquet_dir}...", file=sys.stderr)
 
     # Generate mapping
-    mapping = generate_taxon_mapping(args.parquet_dir, args.filter_taxa)
+    mapping = generate_taxon_mapping(args.parquet_dir, args.filter_taxa, args.include_all_taxa)
 
     # Write to YAML file
     with open(args.output, "w") as f:

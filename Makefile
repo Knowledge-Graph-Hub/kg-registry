@@ -150,7 +150,8 @@ registry/parquet: registry/kgs.yml
 registry/taxon_mapping.yaml: registry/parquet
 	$(RUN) python util/generate_taxon_mapping.py \
 		--parquet-dir registry/parquet \
-		--output registry/taxon_mapping.yaml
+		--output registry/taxon_mapping.yaml \
+		--include-all-taxa
 	@echo "✅ Taxon mapping generated in registry/taxon_mapping.yaml"
 
 registry/parquet-downloads.html: registry/parquet

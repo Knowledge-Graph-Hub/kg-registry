@@ -1,8 +1,191 @@
 taxon_hierarchy:
+  NCBITaxon:1:
+  - NCBITaxon:1
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:10197
+  - NCBITaxon:131567
+  - NCBITaxon:2
+  - NCBITaxon:2759
+  - NCBITaxon:32443
+  - NCBITaxon:33090
+  - NCBITaxon:33208
+  - NCBITaxon:33213
+  - NCBITaxon:3702
+  - NCBITaxon:40674
+  - NCBITaxon:44484
+  - NCBITaxon:44689
+  - NCBITaxon:4575
+  - NCBITaxon:4751
+  - NCBITaxon:4890
+  - NCBITaxon:4896
+  - NCBITaxon:4932
+  - NCBITaxon:559292
+  - NCBITaxon:6040
+  - NCBITaxon:6237
+  - NCBITaxon:6239
+  - NCBITaxon:6358
+  - NCBITaxon:6605
+  - NCBITaxon:6893
+  - NCBITaxon:6939
+  - NCBITaxon:7227
+  - NCBITaxon:7399
+  - NCBITaxon:7742
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  - NCBITaxon:8292
+  - NCBITaxon:83333
+  - NCBITaxon:8353
+  - NCBITaxon:9606
+  NCBITaxon:10088:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
   NCBITaxon:10090:
   - NCBITaxon:10090
+  NCBITaxon:10114:
+  - NCBITaxon:10114
+  - NCBITaxon:10116
   NCBITaxon:10116:
   - NCBITaxon:10116
+  NCBITaxon:10197:
+  - NCBITaxon:10197
+  NCBITaxon:131567:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:10197
+  - NCBITaxon:131567
+  - NCBITaxon:2
+  - NCBITaxon:2759
+  - NCBITaxon:32443
+  - NCBITaxon:33090
+  - NCBITaxon:33208
+  - NCBITaxon:33213
+  - NCBITaxon:3702
+  - NCBITaxon:40674
+  - NCBITaxon:44484
+  - NCBITaxon:44689
+  - NCBITaxon:4575
+  - NCBITaxon:4751
+  - NCBITaxon:4890
+  - NCBITaxon:4896
+  - NCBITaxon:4932
+  - NCBITaxon:559292
+  - NCBITaxon:6040
+  - NCBITaxon:6237
+  - NCBITaxon:6239
+  - NCBITaxon:6358
+  - NCBITaxon:6605
+  - NCBITaxon:6893
+  - NCBITaxon:6939
+  - NCBITaxon:7227
+  - NCBITaxon:7399
+  - NCBITaxon:7742
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  - NCBITaxon:8292
+  - NCBITaxon:83333
+  - NCBITaxon:8353
+  - NCBITaxon:9606
+  NCBITaxon:2:
+  - NCBITaxon:2
+  - NCBITaxon:83333
+  NCBITaxon:2759:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:10197
+  - NCBITaxon:2759
+  - NCBITaxon:32443
+  - NCBITaxon:33090
+  - NCBITaxon:33208
+  - NCBITaxon:33213
+  - NCBITaxon:3702
+  - NCBITaxon:40674
+  - NCBITaxon:44484
+  - NCBITaxon:44689
+  - NCBITaxon:4575
+  - NCBITaxon:4751
+  - NCBITaxon:4890
+  - NCBITaxon:4896
+  - NCBITaxon:4932
+  - NCBITaxon:559292
+  - NCBITaxon:6040
+  - NCBITaxon:6237
+  - NCBITaxon:6239
+  - NCBITaxon:6358
+  - NCBITaxon:6605
+  - NCBITaxon:6893
+  - NCBITaxon:6939
+  - NCBITaxon:7227
+  - NCBITaxon:7399
+  - NCBITaxon:7742
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  - NCBITaxon:8292
+  - NCBITaxon:8353
+  - NCBITaxon:9606
+  NCBITaxon:32443:
+  - NCBITaxon:32443
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  NCBITaxon:33090:
+  - NCBITaxon:33090
+  - NCBITaxon:3702
+  - NCBITaxon:4575
+  NCBITaxon:33208:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:10197
+  - NCBITaxon:32443
+  - NCBITaxon:33208
+  - NCBITaxon:33213
+  - NCBITaxon:40674
+  - NCBITaxon:44484
+  - NCBITaxon:6040
+  - NCBITaxon:6237
+  - NCBITaxon:6239
+  - NCBITaxon:6358
+  - NCBITaxon:6605
+  - NCBITaxon:6893
+  - NCBITaxon:6939
+  - NCBITaxon:7227
+  - NCBITaxon:7399
+  - NCBITaxon:7742
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  - NCBITaxon:8292
+  - NCBITaxon:8353
+  - NCBITaxon:9606
+  NCBITaxon:33213:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:32443
+  - NCBITaxon:33213
+  - NCBITaxon:40674
+  - NCBITaxon:44484
+  - NCBITaxon:6237
+  - NCBITaxon:6239
+  - NCBITaxon:6358
+  - NCBITaxon:6605
+  - NCBITaxon:6893
+  - NCBITaxon:6939
+  - NCBITaxon:7227
+  - NCBITaxon:7399
+  - NCBITaxon:7742
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  - NCBITaxon:8292
+  - NCBITaxon:8353
+  - NCBITaxon:9606
   NCBITaxon:3702:
   - NCBITaxon:3702
   NCBITaxon:40674:
@@ -12,13 +195,72 @@ taxon_hierarchy:
   - NCBITaxon:10116
   - NCBITaxon:40674
   - NCBITaxon:9606
+  NCBITaxon:44484:
+  - NCBITaxon:44484
+  NCBITaxon:44689:
+  - NCBITaxon:44689
+  NCBITaxon:4575:
+  - NCBITaxon:4575
+  NCBITaxon:4751:
+  - NCBITaxon:4751
+  - NCBITaxon:4890
+  - NCBITaxon:4896
+  - NCBITaxon:4932
+  - NCBITaxon:559292
+  NCBITaxon:4890:
+  - NCBITaxon:4890
+  - NCBITaxon:4896
+  - NCBITaxon:4932
+  - NCBITaxon:559292
+  NCBITaxon:4896:
+  - NCBITaxon:4896
   NCBITaxon:4932:
   - NCBITaxon:4932
   - NCBITaxon:559292
+  NCBITaxon:559292:
+  - NCBITaxon:559292
+  NCBITaxon:6040:
+  - NCBITaxon:6040
+  NCBITaxon:6237:
+  - NCBITaxon:6237
+  - NCBITaxon:6239
   NCBITaxon:6239:
   - NCBITaxon:6239
+  NCBITaxon:6358:
+  - NCBITaxon:6358
+  NCBITaxon:6605:
+  - NCBITaxon:6605
+  NCBITaxon:6893:
+  - NCBITaxon:6893
+  NCBITaxon:6939:
+  - NCBITaxon:6939
   NCBITaxon:7227:
   - NCBITaxon:7227
-  NCBITaxon:7955: []
+  NCBITaxon:7399:
+  - NCBITaxon:7399
+  NCBITaxon:7742:
+  - NCBITaxon:10088
+  - NCBITaxon:10090
+  - NCBITaxon:10114
+  - NCBITaxon:10116
+  - NCBITaxon:32443
+  - NCBITaxon:40674
+  - NCBITaxon:7742
+  - NCBITaxon:7954
+  - NCBITaxon:8089
+  - NCBITaxon:8292
+  - NCBITaxon:8353
+  - NCBITaxon:9606
+  NCBITaxon:7954:
+  - NCBITaxon:7954
+  NCBITaxon:8089:
+  - NCBITaxon:8089
+  NCBITaxon:8292:
+  - NCBITaxon:8292
+  - NCBITaxon:8353
+  NCBITaxon:83333:
+  - NCBITaxon:83333
+  NCBITaxon:8353:
+  - NCBITaxon:8353
   NCBITaxon:9606:
   - NCBITaxon:9606
