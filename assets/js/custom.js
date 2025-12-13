@@ -682,13 +682,15 @@ jQuery(document).ready(function () {
             });
         }
 
-        // Apply taxon filter
+        // Apply taxon filter with hierarchical expansion
         if (selectedTaxon) {
+            // Get the matching taxa from the hierarchy map (includes descendants)
+            const matchingTaxa = taxonHierarchyMap[selectedTaxon] || [selectedTaxon];
             filteredData = filteredData.filter(x => {
                 if (Array.isArray(x.taxon)) {
-                    return x.taxon.some(t => t === selectedTaxon);
+                    return x.taxon.some(t => matchingTaxa.includes(t));
                 }
-                return x.taxon && x.taxon === selectedTaxon;
+                return x.taxon && matchingTaxa.includes(x.taxon);
             });
         }
 
