@@ -267,18 +267,15 @@ function addResourcesToGraph(resourceIds) {
           type: 'has_product'
         });
 
-        // CHANGED: Don't automatically add connected resources
-        // Instead, only add links to resources that are already in the graph
+        // Create links to all source resources (whether in graph or not)
         if (product.original_source && Array.isArray(product.original_source)) {
           product.original_source.forEach(sourceId => {
-            // Only create link if the source resource is already in the graph
-            if (displayedGraph.nodes.find(n => n.id === sourceId)) {
-              displayedGraph.links.push({
-                source: productId,
-                target: sourceId,
-                type: 'derived_from'
-              });
-            }
+            // Create link to source resource regardless of whether it's displayed
+            displayedGraph.links.push({
+              source: productId,
+              target: sourceId,
+              type: 'derived_from'
+            });
           });
         }
       });
@@ -404,11 +401,20 @@ function updateGraph() {
 
   // Update simulation with new data
   simulation.nodes(displayedGraph.nodes);
-  simulation.force('link').links(displayedGraph.links);
+
+  // Filter links to only include those where both source and target nodes exist in the graph
+  const nodeIds = new Set(displayedGraph.nodes.map(n => n.id));
+  const validLinks = displayedGraph.links.filter(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    return nodeIds.has(sourceId) && nodeIds.has(targetId);
+  });
+
+  simulation.force('link').links(validLinks);
 
   // Update links
   linkElements = g.selectAll('line')
-    .data(displayedGraph.links, d => `${d.source.id || d.source}-${d.target.id || d.target}`);
+    .data(validLinks, d => `${d.source.id || d.source}-${d.target.id || d.target}`);
 
   linkElements.exit().remove();
 
@@ -760,46 +766,85 @@ function showContextMenu(event, node) {
  * Expand a node by adding all its connected resources
  */
 function expandNode(node) {
-  // If this is a product node, we can't expand it further (products don't have products)
-  if (node.parentId) {
-    console.log('Products cannot be expanded');
-    return;
-  }
-
-  const resource = allResourceMap[node.id];
-  if (!resource) {
-    console.warn(`Resource ${node.id} not found for expansion`);
-    return;
-  }
-
   const resourcesToAdd = new Set();
 
-  // Add resources referenced in products' original_source
-  if (showProducts && resource.products && Array.isArray(resource.products)) {
-    resource.products.forEach((product) => {
-      if (product.original_source && Array.isArray(product.original_source)) {
-        product.original_source.forEach(sourceId => {
-          if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
-            resourcesToAdd.add(sourceId);
+  // If this is a product node, expand it to show all its source resources
+  if (node.parentId) {
+    // Find all products in the graph to identify which ones are the same as this product
+    const allProductsWithSameSources = [];
+    displayedGraph.nodes.forEach(n => {
+      if (n.parentId) {
+        // For each product, find its sources
+        displayedGraph.links.forEach(link => {
+          const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+          const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+
+          if (sourceId === node.id && link.type === 'derived_from') {
+            if (allResourceMap[targetId] && !displayedGraph.nodes.find(n => n.id === targetId)) {
+              resourcesToAdd.add(targetId);
+            }
           }
         });
       }
     });
-  }
 
-  // Add component resources
-  if (resource.components && Array.isArray(resource.components)) {
-    resource.components.forEach(componentId => {
-      if (allResourceMap[componentId] && !displayedGraph.nodes.find(n => n.id === componentId)) {
-        resourcesToAdd.add(componentId);
-      }
-    });
+    // Also check the raw data for this product
+    const parentId = node.parentId;
+    const parentResource = allResourceMap[parentId];
+    if (parentResource && parentResource.products) {
+      parentResource.products.forEach(product => {
+        if (product.id === node.id || product.product_url === node.url) {
+          if (product.original_source && Array.isArray(product.original_source)) {
+            product.original_source.forEach(sourceId => {
+              if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
+                resourcesToAdd.add(sourceId);
+              }
+            });
+          }
+        }
+      });
+    }
+
+    if (resourcesToAdd.size === 0) {
+      console.log('No additional resources to expand for this product node');
+    }
+  } else {
+    // This is a resource node - expand as before
+    const resource = allResourceMap[node.id];
+    if (!resource) {
+      console.warn(`Resource ${node.id} not found for expansion`);
+      return;
+    }
+
+    // Add resources referenced in products' original_source
+    if (showProducts && resource.products && Array.isArray(resource.products)) {
+      resource.products.forEach((product) => {
+        if (product.original_source && Array.isArray(product.original_source)) {
+          product.original_source.forEach(sourceId => {
+            if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
+              resourcesToAdd.add(sourceId);
+            }
+          });
+        }
+      });
+    }
+
+    // Add component resources
+    if (resource.components && Array.isArray(resource.components)) {
+      resource.components.forEach(componentId => {
+        if (allResourceMap[componentId] && !displayedGraph.nodes.find(n => n.id === componentId)) {
+          resourcesToAdd.add(componentId);
+        }
+      });
+    }
+
+    if (resourcesToAdd.size === 0) {
+      console.log('No additional resources to expand for this node');
+    }
   }
 
   if (resourcesToAdd.size > 0) {
     addResourcesToGraph(Array.from(resourcesToAdd));
-  } else {
-    console.log('No additional resources to expand for this node');
   }
 }
 
