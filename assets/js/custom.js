@@ -65,6 +65,7 @@ jQuery(document).ready(function () {
     const $ddCollections = $("#dd-collections");
     const $ddActivity = $("#dd-activity");
     const $ddEvaluation = $("#dd-evaluation");
+    const $ddTaxa = $("#dd-taxa");
     const $resourceCount = $("#resource-count");
     const $kgCount = $("#kg-count");
     const $collectionDescContainer = $("#collection-description-container");
@@ -557,6 +558,7 @@ jQuery(document).ready(function () {
         const selectedCollection = $ddCollections.children("option:selected").val();
         const selectedActivity = $ddActivity.children("option:selected").val();
         const selectedEvaluation = $ddEvaluation.children("option:selected").val();
+        const selectedTaxon = $ddTaxa.children("option:selected").val();
 
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
@@ -626,6 +628,16 @@ jQuery(document).ready(function () {
                     return !hasEvaluation;
                 }
                 return true;
+            });
+        }
+
+        // Apply taxon filter
+        if (selectedTaxon) {
+            filteredData = filteredData.filter(x => {
+                if (Array.isArray(x.taxon)) {
+                    return x.taxon.some(t => t === selectedTaxon);
+                }
+                return x.taxon && x.taxon === selectedTaxon;
             });
         }
 
@@ -822,6 +834,7 @@ jQuery(document).ready(function () {
             });
             $ddActivity.on("change", filterHandler);
             $ddEvaluation.on("change", filterHandler);
+            $ddTaxa.on("change", filterHandler);
             $searchVal.on("keyup", filterHandler);
 
             // Create observer for table sorting
