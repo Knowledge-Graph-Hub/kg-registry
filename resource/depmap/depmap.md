@@ -196,6 +196,8 @@ publications:
   title: Defining a Cancer Dependency Map
   year: '2017'
 repository: https://github.com/broadinstitute/depmap_omics
+taxon:
+- NCBITaxon:9606
 ---
 
 # DepMap

@@ -20,8 +20,8 @@ import yaml
 # Taxon mapping based on organism keywords
 TAXON_KEYWORDS = {
     'NCBITaxon:9606': {  # Human
-        'keywords': ['human', 'homo sapiens', 'h. sapiens', 'hsa', 'clinical', 'patient', 'disease', 'medical'],
-        'patterns': [r'human\s+', r'humans?$', r'homo\s+sapiens', r'\bhsa\b', r'clinical', r'medical genetics', r'personalized medicine']
+        'keywords': ['human', 'homo sapiens', 'h. sapiens', 'hsa', 'clinical', 'patient', 'disease', 'medical', 'cancer cell', 'cell line', 'genome project', 'genome sample'],
+        'patterns': [r'human\s+', r'humans?$', r'homo\s+sapiens', r'\bhsa\b', r'clinical', r'medical genetics', r'personalized medicine', r'cancer\s+cell', r'cell\s+line', r'genome\s+sample']
     },
     'NCBITaxon:10090': {  # Mouse
         'keywords': ['mouse', 'mus musculus', 'murine', 'transgenic mouse'],
@@ -56,16 +56,20 @@ TAXON_KEYWORDS = {
         'patterns': [r'mammal']
     },
     'NCBITaxon:2': {  # Bacteria
-        'keywords': ['bacteria', 'bacterial', 'prokaryote', 'microbial'],
-        'patterns': [r'\bbacteria\b', r'bacterial', r'prokaryot', r'microbial']
+        'keywords': ['bacteria', 'bacterial', 'prokaryote', 'microbial', 'microbiome', 'microbiota', '16s', 'metagenom'],
+        'patterns': [r'\bbacteria\b', r'bacterial', r'prokaryot', r'microbial', r'microbiome', r'microbiota', r'16s', r'metagenom']
     },
     'NCBITaxon:2157': {  # Archaea
-        'keywords': ['archaea', 'archaeal'],
-        'patterns': [r'archaea', r'archaeal']
+        'keywords': ['archaea', 'archaeal', 'archaebacteria'],
+        'patterns': [r'archaea', r'archaeal', r'archaebacteria']
     },
-    'NCBITaxon:2759': {  # Eukaryota (general eukaryotes)
-        'keywords': ['eukaryote', 'eukaryotic'],
-        'patterns': [r'eukaryot']
+    'NCBITaxon:2759': {  # Eukaryota (general eukaryotes including fungi, protists, algae)
+        'keywords': ['eukaryote', 'eukaryotic', 'fungi', 'fungal', 'protozoa', 'protist', 'algae', 'microbe'],
+        'patterns': [r'eukaryot', r'fungi', r'fungal', r'protozoa', r'protist', r'algae', r'microbe']
+    },
+    'NCBITaxon:131567': {  # Cellular organisms (all organisms with cells)
+        'keywords': ['organism', 'living', 'life', 'biological diversity', 'multi-organism', 'cross-kingdom'],
+        'patterns': [r'organisms?\s+across', r'multi.organism', r'diverse\s+organisms', r'cellular\s+organisms']
     },
 }
 
@@ -95,6 +99,17 @@ RESOURCE_TAXA = {
     'mgi': ['NCBITaxon:10090'],  # Mouse Genome Informatics
     'dictybase': ['NCBITaxon:44689'],  # Dictyostelium discoideum
     'xenbase': ['NCBITaxon:8355'],  # Xenopus (African clawed frog)
+    # Microbiome and microbial resources
+    'greengenes': ['NCBITaxon:2', 'NCBITaxon:2157', 'NCBITaxon:2759'],  # Bacteria, Archaea, Eukaryota
+    'silva': ['NCBITaxon:2', 'NCBITaxon:2157'],  # 16S rRNA (bacteria and archaea)
+    'rdp': ['NCBITaxon:2', 'NCBITaxon:2157'],  # Ribosomal database (bacteria and archaea)
+    'mgnify': ['NCBITaxon:131567'],  # Multi-domain metagenomics
+    'patric': ['NCBITaxon:2'],  # Bacterial genome resource
+    'bacdive': ['NCBITaxon:2'],  # Bacterial culture collection
+    'bv-brc': ['NCBITaxon:2', 'NCBITaxon:2157'],  # Bacterial/viral genome resource center
+    # Human-focused resources
+    'achilles': ['NCBITaxon:9606'],  # Human cancer cell lines
+    '4dn': ['NCBITaxon:9606'],  # Human nuclear organization
 }
 
 def score_taxa_for_resource(resource_name: str, description: str, domains: List[str], category: str) -> Dict[str, float]:

@@ -179,6 +179,8 @@ publications:
   title: The Cellosaurus, a cell-line knowledge resource
   year: '2018'
 repository: https://github.com/calipho-sib/cellosaurus
+taxon:
+- NCBITaxon:9606
 ---
 Cellosaurus is a comprehensive knowledge resource on cell lines from vertebrates, invertebrates, and plants. It serves as a reference for cell line information, providing researchers with standardized nomenclature, cross-references to other relevant databases, and detailed information about cell line characteristics, authentication, and potential problems.
 

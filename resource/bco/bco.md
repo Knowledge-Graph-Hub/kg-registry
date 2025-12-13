@@ -33,6 +33,8 @@ products:
   product_file_size: 108849
   product_url: http://purl.obolibrary.org/obo/bco.owl
 repository: https://github.com/BiodiversityOntologies/bco
+taxon:
+- NCBITaxon:2
 ---
 ## Description
 

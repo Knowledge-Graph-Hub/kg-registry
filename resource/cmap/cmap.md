@@ -106,6 +106,8 @@ synonyms:
 - CMap
 - Connectivity Map
 - LINCS L1000
+taxon:
+- NCBITaxon:9606
 ---
 
 # Connectivity Map

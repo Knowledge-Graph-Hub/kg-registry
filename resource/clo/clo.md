@@ -182,6 +182,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/CLO-Ontology/CLO
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

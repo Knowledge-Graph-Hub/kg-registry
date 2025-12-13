@@ -91,6 +91,8 @@ publications:
   journal: Cell
   title: Defining a Cancer Dependency Map
   year: '2017'
+taxon:
+- NCBITaxon:9606
 ---
 
 # Project Achilles

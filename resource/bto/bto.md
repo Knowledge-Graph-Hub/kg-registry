@@ -291,6 +291,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/BRENDA-Enzymes/BTO
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

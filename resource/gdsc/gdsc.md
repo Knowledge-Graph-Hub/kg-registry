@@ -209,7 +209,7 @@ publications:
   - Menden MP
   - Schubert M
   - Aben N
-  - Gonçalves E
+  - "Gon\xE7alves E"
   - Barthorpe S
   - Lightfoot H
   - Cokelaer T
@@ -306,6 +306,8 @@ publications:
     cells
   year: '2012'
 repository: https://github.com/CancerRxGene
+taxon:
+- NCBITaxon:9606
 ---
 ## Overview
 
