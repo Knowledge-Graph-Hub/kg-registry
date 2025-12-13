@@ -42,6 +42,8 @@ products:
   product_file_size: 83585
   product_url: http://purl.obolibrary.org/obo/colao.obo
 repository: https://github.com/insect-morphology/colao
+taxon:
+- NCBITaxon:50557
 ---
 ## Description
 

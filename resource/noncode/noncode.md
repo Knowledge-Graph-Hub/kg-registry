@@ -303,6 +303,8 @@ synonyms:
 - NONCODEV6
 - NONCODE v6.0
 - NONCODE 2021
+taxon:
+- NCBITaxon:33090
 ---
 ---
 

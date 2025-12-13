@@ -196,19 +196,19 @@ products:
 publications:
 - authors:
   - Carissa Bleker
-  - Živa Ramšak
+  - "\u017Diva Ram\u0161ak"
   - Andras Bittner
-  - Vid Podpečan
-  - Maja Zagorščak
+  - "Vid Podpe\u010Dan"
+  - "Maja Zagor\u0161\u010Dak"
   - Bernhard Wurzinger
-  - Špela Baebler
+  - "\u0160pela Baebler"
   - Marko Petek
-  - Maja Križnik
+  - "Maja Kri\u017Enik"
   - Annelotte van Dieren
   - Juliane Gruber
   - Leila Afjehi-Sadat
   - Wolfram Weckwert
-  - Anže Županič
+  - "An\u017Ee \u017Dupani\u010D"
   - Markus Teige
   - Ute C. Vothknecht
   - Kristina Gruden
@@ -220,6 +220,8 @@ publications:
   year: '2024'
 repository: https://github.com/NIB-SI/skm-tools
 version: '1.0'
+taxon:
+- NCBITaxon:33090
 ---
 # Stress Knowledge Map
 

@@ -318,6 +318,8 @@ publications:
   preferred: false
   title: 'PLncDB: plant long non-coding RNA database'
   year: '2013'
+taxon:
+- NCBITaxon:33090
 ---
 # PLncDB
 

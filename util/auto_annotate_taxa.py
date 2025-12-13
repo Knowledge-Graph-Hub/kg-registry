@@ -71,6 +71,14 @@ TAXON_KEYWORDS = {
         'keywords': ['organism', 'living', 'life', 'biological diversity', 'multi-organism', 'cross-kingdom'],
         'patterns': [r'organisms?\s+across', r'multi.organism', r'diverse\s+organisms', r'cellular\s+organisms']
     },
+    'NCBITaxon:50557': {  # Insecta (insects)
+        'keywords': ['insect', 'insects', 'entomology', 'entomological', 'lepidoptera', 'diptera', 'coleoptera', 'hymenoptera'],
+        'patterns': [r'insect', r'entomolog', r'lepidoptera', r'diptera', r'coleoptera', r'hymenoptera']
+    },
+    'NCBITaxon:33090': {  # Green plants (Viridiplantae)
+        'keywords': ['plant', 'plants', 'botanical', 'flora', 'vegetation', 'phytology'],
+        'patterns': [r'\bplant', r'botanical', r'flora', r'\bfloral\b']
+    },
 }
 
 # Resources known to be organism-specific or multi-organism
@@ -110,6 +118,14 @@ RESOURCE_TAXA = {
     # Human-focused resources
     'achilles': ['NCBITaxon:9606'],  # Human cancer cell lines
     '4dn': ['NCBITaxon:9606'],  # Human nuclear organization
+    'afpo': ['NCBITaxon:9606'],  # Human population genetics
+    'hancestro': ['NCBITaxon:9606'],  # Human ancestral populations
+    # Insect resources
+    'aism': ['NCBITaxon:50557'],  # Insect systematics and molecular evolution
+    'clao': ['NCBITaxon:50557'],  # Collembola (springtails)
+    # Pathogen resources
+    'aro': ['NCBITaxon:2'],  # Antibiotic resistance ontology (bacteria-focused)
+    'vbo': ['NCBITaxon:2'],  # Virus Biosource Ontology (bacteria and viruses)
 }
 
 def score_taxa_for_resource(resource_name: str, description: str, domains: List[str], category: str) -> Dict[str, float]:

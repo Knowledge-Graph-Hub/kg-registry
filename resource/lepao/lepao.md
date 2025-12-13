@@ -41,6 +41,8 @@ products:
   product_file_size: 74809
   product_url: http://purl.obolibrary.org/obo/lepao.obo
 repository: https://github.com/insect-morphology/lepao
+taxon:
+- NCBITaxon:50557
 ---
 ## Description
 

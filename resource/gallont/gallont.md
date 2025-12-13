@@ -53,6 +53,8 @@ products:
   product_file_size: 60631
   product_url: http://purl.obolibrary.org/obo/gallont.obo
 repository: https://github.com/adeans/gallont
+taxon:
+- NCBITaxon:33090
 ---
 ## Description
 

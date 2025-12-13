@@ -51,6 +51,8 @@ products:
   product_file_size: 1272055
   product_url: http://purl.obolibrary.org/obo/aism.json
 repository: https://github.com/insect-morphology/aism
+taxon:
+- NCBITaxon:50557
 ---
 ## Description
 

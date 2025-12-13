@@ -46,6 +46,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
     when accessing file'
 repository: https://github.com/FoodOntology/foodon
+taxon:
+- NCBITaxon:33090
 ---
 ## Description
 
