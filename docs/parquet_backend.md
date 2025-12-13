@@ -13,21 +13,24 @@ The KG-Registry now includes a Parquet backend that provides enhanced querying c
 - **Fast Querying**: DuckDB can directly query Parquet files without loading the entire dataset
 - **Human-Readable Data**: Original YAML files remain unchanged and editable
 - **Rich Query Interface**: Python API and CLI commands for querying resources
+- **Hierarchical Taxon Filtering**: Query resources by organism/species with automatic expansion to descendant taxa
 - **Statistics**: Built-in analytics and statistics generation
 - **Synchronization**: Easy sync from YAML files to Parquet files
 - **GitHub-Friendly**: Parquet files can be version controlled with reasonable storage size
 
 ## Installation
 
-DuckDB is included as a dependency in the project. To install:
+DuckDB and other dependencies are included in the project. To install:
 
 ```bash
 # Using poetry (recommended)
 poetry install
 
 # Or using pip
-pip install duckdb pyarrow
+pip install duckdb pyarrow oaklib
 ```
+
+The `oaklib` (Ontology Access Kit) dependency enables hierarchical taxon filtering using the NCBI Taxonomy.
 
 ## Quick Start
 
@@ -52,6 +55,13 @@ python -m kg_registry.cli parquet query --domain genomics --parquet-dir registry
 
 # Search resources by name or description
 python -m kg_registry.cli parquet query --search "drug" --parquet-dir registry/parquet
+
+# Query resources by taxon (organism/species)
+# This automatically includes descendant taxa (e.g., Mammalia includes humans, mice, etc.)
+python -m kg_registry.cli parquet query --taxon NCBITaxon:9606 --parquet-dir registry/parquet
+
+# Query by taxon without including descendants
+python -m kg_registry.cli parquet query --taxon NCBITaxon:9606 --taxon-include-descendants=false --parquet-dir registry/parquet
 ```
 
 ## Python API
@@ -74,7 +84,13 @@ with ParquetBackend() as backend:
     
     # Search resources
     drug_resources = backend.search_resources("drug")
-    
+
+    # Query resources by taxon (with hierarchical expansion)
+    human_resources = backend.query_by_taxon("NCBITaxon:9606")  # Human and descendants
+
+    # Query by taxon without expanding to descendants
+    exact_taxon_resources = backend.query_by_taxon("NCBITaxon:9606", include_descendants=False)
+
     # Get statistics
     stats = backend.get_resource_stats()
     print(f"Total resources: {stats['total_resources']}")
@@ -137,11 +153,13 @@ Query resources from Parquet files.
 python -m kg_registry.cli parquet query [OPTIONS]
 
 Options:
-  --category TEXT     Filter by category
-  --domain TEXT       Filter by domain
-  --status TEXT       Filter by activity status
-  --search TEXT       Search in name or description
-  --parquet-dir TEXT  Directory containing Parquet files (default: registry/parquet)
+  --category TEXT                    Filter by category
+  --domain TEXT                      Filter by domain
+  --status TEXT                      Filter by activity status
+  --search TEXT                      Search in name or description
+  --taxon TEXT                       Filter by taxon (NCBI Taxonomy ID, e.g., NCBITaxon:9606)
+  --taxon-include-descendants BOOL   Include descendant taxa (default: True)
+  --parquet-dir TEXT                 Directory containing Parquet files (default: registry/parquet)
 ```
 
 ## Web Frontend
@@ -177,14 +195,28 @@ The Parquet backend maintains a copy of the YAML data in Parquet format. To keep
 
 ## Example Use Cases
 
-### 1. Finding Resources with Complex Criteria
+### 1. Finding Resources by Organism
+
+```python
+# Find resources relevant to humans and their descendants
+with ParquetBackend() as backend:
+    backend.load_from_parquet("registry/parquet")
+
+    # Get resources for human and all descendant taxa (primates, etc.)
+    human_resources = backend.query_by_taxon("NCBITaxon:9606")
+
+    # Get only resources explicitly annotated with human
+    exact_human_resources = backend.query_by_taxon("NCBITaxon:9606", include_descendants=False)
+```
+
+### 2. Finding Resources with Complex Criteria
 
 ```python
 # Using DuckDBParquetQuerier for efficient querying without loading into memory
 with DuckDBParquetQuerier("registry/parquet") as querier:
     # Find active knowledge graphs in genomics with products
     results = querier.execute_query("""
-        SELECT r.* 
+        SELECT r.*
         FROM resources r
         JOIN resource_domains d ON r.id = d.resource_id
         JOIN resource_products p ON r.id = p.resource_id
@@ -193,15 +225,24 @@ with DuckDBParquetQuerier("registry/parquet") as querier:
           AND d.domain = 'genomics'
         GROUP BY r.id
     """)
+
+    # Find resources for specific organisms using the resource_taxa table
+    mammalian_resources = querier.execute_query("""
+        SELECT DISTINCT r.id, r.name, t.taxon
+        FROM resources r
+        JOIN resource_taxa t ON r.id = t.resource_id
+        WHERE t.taxon IN ('NCBITaxon:40674', 'NCBITaxon:9606', 'NCBITaxon:10116')
+        ORDER BY r.name
+    """)
 ```
 
-### 2. Generating Analytics Reports
+### 3. Generating Analytics Reports
 
 ```python
 # Get comprehensive domain statistics
 with DuckDBParquetQuerier("registry/parquet") as querier:
     domain_stats = querier.execute_query("""
-        SELECT d.domain, 
+        SELECT d.domain,
                COUNT(DISTINCT r.id) as resource_count,
                COUNT(DISTINCT p.product_id) as product_count,
                COUNT(DISTINCT CASE WHEN r.activity_status = 'active' THEN r.id END) as active_count
@@ -211,11 +252,23 @@ with DuckDBParquetQuerier("registry/parquet") as querier:
         GROUP BY d.domain
         ORDER BY resource_count DESC
     """)
-    
+
+    # Get taxon statistics
+    taxon_stats = querier.execute_query("""
+        SELECT t.taxon,
+               COUNT(DISTINCT r.id) as resource_count
+        FROM resource_taxa t
+        JOIN resources r ON t.resource_id = r.id
+        GROUP BY t.taxon
+        ORDER BY resource_count DESC
+    """)
+
     # Export to JSON for web interface
     import json
     with open('domain_report.json', 'w') as f:
         json.dump(domain_stats, f, indent=2)
+    with open('taxon_report.json', 'w') as f:
+        json.dump(taxon_stats, f, indent=2)
 ```
 
 ## Migration from Full DuckDB Database
