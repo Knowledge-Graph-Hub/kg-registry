@@ -48,71 +48,18 @@ products:
   name: IGSR FTP Site
   product_url: http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/
 - category: DocumentationProduct
-  description: Instructions for accessing IGSR data via Globus (recommended for bulk
+  description: Instructions for accessing IGSR data via Globus or Aspera (recommended for bulk
     transfers)
   format: http
   id: 1000genomes.globus-docs
   name: Globus Access Instructions
-  product_url: https://www.internationalgenome.org/faq/can-i-access-1000-genomes-data-globus-online
-  warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting
-    to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443): Max
-    retries exceeded with url: /faq/can-i-access-1000-genomes-data-globus-online (Caused
-    by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
-  - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-- category: DocumentationProduct
-  description: Instructions for downloading files using Aspera
-  format: http
-  id: 1000genomes.aspera-docs
-  name: Aspera Download Instructions
-  product_url: https://www.internationalgenome.org/faq/how-download-files-using-aspera
-  warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting
-    to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443): Max
-    retries exceeded with url: /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
-  - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+  product_url: https://www.internationalgenome.org/faq/what-tools-can-i-use-to-download-igsr-data
 - category: Product
   description: Mirror of original 1000 Genomes Project data at NCBI
   format: http
   id: 1000genomes.ncbi-mirror
   name: NCBI Mirror
   product_url: https://ftp-trace.ncbi.nih.gov/1000genomes/ftp/
-- category: Product
-  description: Mirror of original 1000 Genomes Project data at DDBJ
-  format: http
-  id: 1000genomes.ddbj-mirror
-  name: DDBJ Mirror
-  product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-09_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
-    when accessing file'
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
     to better characterize adverse outcomes of toxicological interest that are relevant
