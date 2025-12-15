@@ -14,7 +14,8 @@ domains:
 - public health
 homepage_url: https://www.globalbioticinteractions.org/
 id: globi
-last_modified_date: '2025-09-14T00:00:00Z'
+infores_id: globi
+last_modified_date: '2025-12-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -239,6 +240,9 @@ publications:
   title: 'Global Biotic Interactions: An open infrastructure to share and analyze
     species-interaction datasets'
   year: '2014'
+taxon:
+- NCBITaxon:2759
+- NCBITaxon:33208
 ---
 # Global Biotic Interactions (GloBI)
 
