@@ -4,6 +4,7 @@ description: Fission yeast complexes dataset from Complex Portal in ComplexTAB f
 format: tsv
 id: complexportal.fissionyeast.complextab
 name: Complex Portal Fission Yeast ComplexTAB
+product_file_size: 172403
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/284812.tsv
 layout: product_detail
 ---

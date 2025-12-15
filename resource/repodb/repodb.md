@@ -48,6 +48,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface

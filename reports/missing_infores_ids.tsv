@@ -257,6 +257,7 @@ m-csa	M-CSA	DataSource	https://www.ebi.ac.uk/thornton-srv/m-csa/	resource/m-csa/
 ma	Mouse adult gross anatomy	Ontology	https://github.com/obophenotype/mouse-anatomy-ontology	resource/ma/ma.md
 malacards	MalaCards	Aggregator		resource/malacards/malacards.md
 mamo	Mathematical modeling ontology	Ontology	http://sourceforge.net/p/mamo-ontology/wiki/Home/	resource/mamo/mamo.md
+mangal	mangal.io	KnowledgeGraph	https://mangal.io/	resource/mangal/mangal.md
 mao	Multiple alignment	Ontology	http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html	resource/mao/mao.md
 mat	Minimal anatomical terminology	Ontology		resource/mat/mat.md
 mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditions-ontology/microbial-conditions-ontology	resource/mco/mco.md

@@ -77,6 +77,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
 - category: Product
@@ -94,9 +96,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -115,9 +117,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -137,9 +139,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -159,9 +161,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -181,9 +183,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -203,9 +205,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-04_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -223,9 +225,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -245,9 +247,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'
@@ -268,9 +270,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 502 error
     when accessing file'

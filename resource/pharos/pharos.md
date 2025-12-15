@@ -53,6 +53,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-12-15: Timeout connecting
     to URL'
 - category: ProgrammingInterface
@@ -70,6 +72,8 @@ products:
   product_url: https://pharos.nih.gov/api-docs
   warnings:
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
     when accessing file'
@@ -93,6 +97,8 @@ products:
   product_url: https://pharos.nih.gov/about
   warnings:
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
     when accessing file'

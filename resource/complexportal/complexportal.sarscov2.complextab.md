@@ -4,6 +4,7 @@ description: SARS-CoV-2 complexes dataset from Complex Portal in ComplexTAB form
 format: tsv
 id: complexportal.sarscov2.complextab
 name: Complex Portal SARS-CoV-2 ComplexTAB
+product_file_size: 73071
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/2697049.tsv
 layout: product_detail
 ---

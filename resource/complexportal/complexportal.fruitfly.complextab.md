@@ -4,6 +4,7 @@ description: Fruit fly complexes dataset from Complex Portal in ComplexTAB forma
 format: tsv
 id: complexportal.fruitfly.complextab
 name: Complex Portal Fruit Fly ComplexTAB
+product_file_size: 331098
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7227.tsv
 layout: product_detail
 ---

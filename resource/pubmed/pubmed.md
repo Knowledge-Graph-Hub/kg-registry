@@ -188,7 +188,7 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
@@ -225,7 +225,7 @@ products:
   - pubmed
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 418 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 418 error when
     accessing file
@@ -261,7 +261,7 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2025-12-15_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2025-12-13_ FTP error_ timed
     out

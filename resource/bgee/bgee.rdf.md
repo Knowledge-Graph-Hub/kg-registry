@@ -7,6 +7,7 @@ id: bgee.rdf
 name: Bgee RDF Data
 original_source:
 - bgee
+product_file_size: 31556493880
 product_url: https://www.bgee.org/ftp/current/rdf_easybgee.zip
 secondary_source:
 - bgee
