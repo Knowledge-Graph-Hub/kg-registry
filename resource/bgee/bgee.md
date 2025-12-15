@@ -1066,9 +1066,26 @@ taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
 - NCBITaxon:10116
+- NCBITaxon:9615
+- NCBITaxon:9685
+- NCBITaxon:9796
+- NCBITaxon:9823
+- NCBITaxon:9913
+- NCBITaxon:9925
+- NCBITaxon:9940
+- NCBITaxon:9986
+- NCBITaxon:10141
+- NCBITaxon:9031
+- NCBITaxon:9103
+- NCBITaxon:9258
+- NCBITaxon:9483
+- NCBITaxon:9531
+- NCBITaxon:9541
 - NCBITaxon:7227
-- NCBITaxon:6239
 - NCBITaxon:7955
+- NCBITaxon:6239
+- NCBITaxon:8355
+- NCBITaxon:8364
 - NCBITaxon:4932
 - NCBITaxon:3702
 ---
