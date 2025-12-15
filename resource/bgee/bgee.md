@@ -53,124 +53,9 @@ products:
   name: Bgee Expression Calls
   original_source:
   - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/expr_calls/
+  product_url: https://www.bgee.org/download/gene-expression-calls
   secondary_source:
   - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: RNA-Seq data processed and formatted for the Bgee database
-  format: tsv
-  id: bgee.rnaseq
-  name: Bgee RNA-Seq Data
-  original_source:
-  - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/rna_seq/
-  secondary_source:
-  - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: Processed Affymetrix microarray data for the Bgee database
-  format: tsv
-  id: bgee.affymetrix
-  name: Bgee Affymetrix Data
-  original_source:
-  - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/affymetrix/
-  secondary_source:
-  - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: In Situ Hybridization data in the Bgee database
-  format: tsv
-  id: bgee.in_situ
-  name: Bgee In Situ Hybridization Data
-  original_source:
-  - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/in_situ/
-  secondary_source:
-  - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: EST (Expressed Sequence Tag) expression data in the Bgee database
-  format: tsv
-  id: bgee.est
-  name: Bgee EST Data
-  original_source:
-  - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/est/
-  secondary_source:
-  - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: Single-cell RNA-Seq processed data in the Bgee database
-  format: tsv
-  id: bgee.sc_rnaseq
-  name: Bgee Single-cell RNA-Seq Data
-  original_source:
-  - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/sc_rnaseq/
-  secondary_source:
-  - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: Anatomical homology information used in Bgee
-  format: tsv
-  id: bgee.homology
-  name: Bgee Anatomical Homology Data
-  original_source:
-  - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/homology/
-  secondary_source:
-  - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
 - category: Product
   compression: zip
   description: RDF version of the Bgee data for semantic web applications
@@ -179,16 +64,10 @@ products:
   name: Bgee RDF Data
   original_source:
   - bgee
-  product_url: https://www.bgee.org/download/data-dumps/current/rdf/
+  product_file_size: 31556493880
+  product_url: https://www.bgee.org/ftp/current/rdf_easybgee.zip
   secondary_source:
   - bgee
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -1107,7 +986,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -1188,9 +1067,26 @@ taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
 - NCBITaxon:10116
+- NCBITaxon:9615
+- NCBITaxon:9685
+- NCBITaxon:9796
+- NCBITaxon:9823
+- NCBITaxon:9913
+- NCBITaxon:9925
+- NCBITaxon:9940
+- NCBITaxon:9986
+- NCBITaxon:10141
+- NCBITaxon:9031
+- NCBITaxon:9103
+- NCBITaxon:9258
+- NCBITaxon:9483
+- NCBITaxon:9531
+- NCBITaxon:9541
 - NCBITaxon:7227
-- NCBITaxon:6239
 - NCBITaxon:7955
+- NCBITaxon:6239
+- NCBITaxon:8355
+- NCBITaxon:8364
 - NCBITaxon:4932
 - NCBITaxon:3702
 ---

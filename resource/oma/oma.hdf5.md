@@ -13,7 +13,7 @@ warnings:
   to URL
 - File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-12-13_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-12-13_ HTTP 502 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-11-05_ HTTP 502 error when
   accessing file

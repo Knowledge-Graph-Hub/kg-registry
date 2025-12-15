@@ -75,7 +75,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for accessing entity data in JSON format with content negotiation

@@ -30,79 +30,38 @@ products:
   format: owl
   id: ncbitaxon.owl
   name: Main release
-  product_file_size: 1677601760
+  product_file_size: 1915871262
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.owl
 - category: OntologyProduct
   description: OBO Format version of Main release
   format: obo
   id: ncbitaxon.obo
   name: OBO Format version of Main release
-  product_file_size: 533396581
+  product_file_size: 654510820
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.obo
 - category: OntologyProduct
   description: OBOGraphs JSON version of Main release
   format: json
   id: ncbitaxon.json
   name: OBOGraphs JSON version of Main release
-  product_file_size: 1981974965
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-15: No Content-Length
+    header found'
 - category: OntologyProduct
   description: taxslim
   format: owl
   id: ncbitaxon.subsets.taxslim.owl
   name: taxslim
-  product_file_size: 37153972
+  product_file_size: 39898238
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 - category: OntologyProduct
   description: taxslim disjointness axioms
   format: owl
   id: ncbitaxon.subsets.taxslim-disjoint-over-in-taxon.owl
   name: taxslim disjointness axioms
-  product_file_size: 75476239
+  product_file_size: 75398508
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
@@ -212,23 +171,49 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
   original_source:
-  - ro
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
   - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
   - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
-  - chr
+  - spoke
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -361,64 +346,6 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -525,6 +452,81 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 repository: https://github.com/obophenotype/ncbitaxon
 ---
 ## Description
