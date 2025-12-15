@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataSource
+category: KnowledgeGraph
 collection:
 - ber
 contacts:
