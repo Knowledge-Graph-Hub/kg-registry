@@ -64,6 +64,7 @@ products:
   name: Bgee RDF Data
   original_source:
   - bgee
+  product_file_size: 31556493880
   product_url: https://www.bgee.org/ftp/current/rdf_easybgee.zip
   secondary_source:
   - bgee
@@ -985,7 +986,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

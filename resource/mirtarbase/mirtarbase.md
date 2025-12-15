@@ -37,10 +37,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
-    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
-    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Dataset of microRNA target sites with detailed binding site information
     in CSV format.
@@ -57,10 +55,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
-    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
-    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Species-specific microRNA-target interaction datasets in CSV format
     for human, mouse, rat, and 25+ other species.
@@ -77,10 +73,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
-    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
-    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
+  - 'File was not able to be retrieved when checked on 2025-12-15: Timeout connecting
+    to URL'
 - category: Product
   description: Curated datasets filtered for strong experimental evidence including
     reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -97,10 +91,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
-    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
-    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Archive of previous miRTarBase releases for reproducibility and historical
     comparisons.
@@ -115,14 +107,10 @@ products:
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
-    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
-    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
+    when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph

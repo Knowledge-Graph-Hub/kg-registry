@@ -30,25 +30,6 @@ products:
   format: owl
   id: cob.owl
   name: COB
-  original_source:
-  - cob
-  - iao
-  - bfo
-  - obi
-  - ro
-  - chebi
-  - cl
-  - envo
-  - go
-  - mop
-  - ncbitaxon
-  - pato
-  - pco
-  - po
-  - pr
-  - uberon
-  secondary_source:
-  - cob
   product_file_size: 7601
   product_url: http://purl.obolibrary.org/obo/cob.owl
 - category: OntologyProduct
@@ -57,10 +38,6 @@ products:
   id: cob.cob-base.owl
   name: COB base module
   product_file_size: 2994
-  primary_source:
-  - cob
-  secondary_source:
-  - cob
   product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
 - category: OntologyProduct
   description: COB with native IDs preserved rather than rewired to OBO IDs
@@ -69,6 +46,15 @@ products:
   name: COB native module
   product_file_size: 6472
   product_url: http://purl.obolibrary.org/obo/cob/cob-native.owl
+- category: OntologyProduct
+  description: COB to external
+  format: owl
+  id: cob.cob-to-external.owl
+  name: COB to external
+  product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: demo of COB including subsets of other ontologies (Experimental, for
     demo purposes only)

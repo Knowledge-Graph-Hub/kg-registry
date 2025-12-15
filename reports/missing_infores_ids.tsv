@@ -86,7 +86,7 @@ cmo	Clinical measurement ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/se
 cob	Core Ontology for Biology and Biomedicine	Ontology	https://obofoundry.org/COB/	resource/cob/cob.md
 colao	Coleoptera Anatomy Ontology (COLAO)	Ontology	https://github.com/insect-morphology/colao	resource/colao/colao.md
 compartments	COMPARTMENTS	DataSource		resource/compartments/compartments.md
-complexportal	Complex Portal	Aggregator	https://www.ebi.ac.uk/complexportal/home	resource/complexportal/complexportal.md
+complexportal	Complex Portal	DataSource	https://www.ebi.ac.uk/complexportal/home	resource/complexportal/complexportal.md
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
 connectivitymap	Connectivity Map	DataSource	https://www.broadinstitute.org/connectivity-map-cmap	resource/connectivitymap/connectivitymap.md
 coralkinome	CoralKinome	DataSource	https://www.coralkinome.org/	resource/coralkinome/coralkinome.md
