@@ -208,7 +208,6 @@ products:
   id: globi.bee.interactions
   name: Bee Interaction Data from Global Biotic Interactions
   product_url: https://zenodo.org/records/7753956
-  doi: 10.5281/zenodo.7753956
 publications:
 - doi: 10.1016/j.ecoinf.2014.08.005
   id: doi:10.1016/j.ecoinf.2014.08.005
