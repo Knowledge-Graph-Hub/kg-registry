@@ -222,12 +222,28 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-15_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2025-12-15_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2025-12-17: FTP error: timed
     out'
+- category: OntologyProduct
+  description: OpenBioDiv-O, the OpenBiodiv Ontology
+  format: ttl
+  id: openbiodiv.ontology.ttl
+  is_public: true
+  name: OpenBioDiv-O
+  original_source:
+  - skos
+  - proton
+  - fabio
+  - doco
+  - openbiodiv
+  product_file_size: 8176
+  product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
+  secondary_source:
+  - openbiodiv
 publications:
 - authors:
   - Alistair Miles

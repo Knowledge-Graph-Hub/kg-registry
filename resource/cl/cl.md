@@ -31,7 +31,7 @@ products:
   format: owl
   id: cl.owl
   name: Main CL OWL edition
-  product_file_size: 66545001
+  product_file_size: 66753027
   product_url: http://purl.obolibrary.org/obo/cl.owl
 - category: OntologyProduct
   description: Complete ontology, plus inter-ontology axioms, and imports modules
@@ -39,7 +39,7 @@ products:
   format: obo
   id: cl.obo
   name: CL obo format edition
-  product_file_size: 17288413
+  product_file_size: 17349355
   product_url: http://purl.obolibrary.org/obo/cl.obo
 - category: OntologyProduct
   description: Complete ontology, plus inter-ontology axioms, and imports modules
@@ -47,49 +47,49 @@ products:
   format: json
   id: cl.json
   name: CL OBOGraph-JSON format edition
-  product_file_size: 38682961
+  product_file_size: 38790011
   product_url: http://purl.obolibrary.org/obo/cl.json
 - category: OntologyProduct
   description: Basic version, no inter-ontology axioms
   format: owl
   id: cl.cl-basic.owl
   name: Basic CL
-  product_file_size: 8893726
+  product_file_size: 8979957
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
 - category: OntologyProduct
   description: Basic version, no inter-ontology axioms
   format: obo
   id: cl.cl-basic.obo
   name: Basic CL (OBO version)
-  product_file_size: 3083579
+  product_file_size: 3112081
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
 - category: OntologyProduct
   description: Basic version, no inter-ontology axioms
   format: json
   id: cl.cl-basic.json
   name: Basic CL (OBOGraph-JSON version)
-  product_file_size: 5146738
+  product_file_size: 5189872
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
 - category: OntologyProduct
   description: complete CL but with no imports or external axioms
   format: owl
   id: cl.cl-base.owl
   name: CL base module
-  product_file_size: 11910543
+  product_file_size: 12017204
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.owl
 - category: OntologyProduct
   description: complete CL but with no imports or external axioms
   format: obo
   id: cl.cl-base.obo
   name: CL base module (OBO version)
-  product_file_size: 3483606
+  product_file_size: 3514034
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.obo
 - category: OntologyProduct
   description: complete CL but with no imports or external axioms
   format: json
   id: cl.cl-base.json
   name: CL base module (OBOGraph-JSON version)
-  product_file_size: 6796463
+  product_file_size: 6852450
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.json
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

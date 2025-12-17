@@ -2,99 +2,109 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://openbiodiv.net/"
-    id: "pensoft"
-    label: Pensoft Publishers
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://openbiodiv.net/
+  id: pensoft
+  label: Pensoft Publishers
 creation_date: '2025-12-17T00:00:00Z'
-description: OpenBiodiv is an open-access biodiversity knowledge graph that extracts, integrates, and provides semantic access to linked open biodiversity data from scientific literature and established taxonomic backbones. It converts narrative biodiversity information into computable semantic form and maintains a comprehensive knowledge management system for biodiversity science.
+description: OpenBiodiv is an open-access biodiversity knowledge graph that extracts,
+  integrates, and provides semantic access to linked open biodiversity data from scientific
+  literature and established taxonomic backbones. It converts narrative biodiversity
+  information into computable semantic form and maintains a comprehensive knowledge
+  management system for biodiversity science.
 domains:
-  - literature
+- literature
 homepage_url: https://openbiodiv.net/
-id: "openbiodiv"
-infores_id: "openbiodiv"
+id: openbiodiv
+infores_id: openbiodiv
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: OpenBiodiv
 products:
-  - category: GraphicalInterface
-    description: Interactive web portal for searching, exploring, and discovering biodiversity knowledge graph data including taxonomic treatments, species descriptions, and literature-extracted information
-    format: http
-    id: "openbiodiv.portal"
-    is_public: true
-    name: OpenBiodiv Web Portal
-    product_url: https://openbiodiv.net/
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for complex semantic queries across the biodiversity knowledge graph, enabling advanced queries combining taxonomic, literature, specimen, and ecological data
-    format: http
-    id: "openbiodiv.sparql"
-    is_public: true
-    name: OpenBiodiv SPARQL Endpoint
-    product_url: "http://graph.openbiodiv.net/"
-  - category: ProgrammingInterface
-    description: RESTful API for programmatic access to OpenBiodiv biodiversity data with Swagger API documentation for easy integration
-    format: http
-    id: "openbiodiv.api"
-    is_public: true
-    name: OpenBiodiv REST API
-    product_url: "https://graph.openbiodiv.net/webapi"
-  - category: OntologyProduct
-    description: OpenBioDiv-O, the OpenBiodiv Ontology
-    id: "openbiodiv.ontology.ttl"
-    is_public: true
-    format: ttl
-    name: OpenBioDiv-O
-    product_url: "https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl"
-    original_source:
-    - skos
-    - proton
-    - fabio
-    - doco
-    - openbiodiv
-    secondary_source:
-    - openbiodiv
-  - category: DocumentationProduct
-    description: Guide to OpenBioDiv-O, the OpenBiodiv Ontology
-    id: "openbiodiv.ontology.guide"
-    is_public: true
-    format: http
-    name: OpenBioDiv-O Guide
-    product_url: "https://openbiodiv.net/ontologies"
+- category: GraphicalInterface
+  description: Interactive web portal for searching, exploring, and discovering biodiversity
+    knowledge graph data including taxonomic treatments, species descriptions, and
+    literature-extracted information
+  format: http
+  id: openbiodiv.portal
+  is_public: true
+  name: OpenBiodiv Web Portal
+  product_url: https://openbiodiv.net/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for complex semantic queries across the biodiversity
+    knowledge graph, enabling advanced queries combining taxonomic, literature, specimen,
+    and ecological data
+  format: http
+  id: openbiodiv.sparql
+  is_public: true
+  name: OpenBiodiv SPARQL Endpoint
+  product_url: http://graph.openbiodiv.net/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to OpenBiodiv biodiversity data
+    with Swagger API documentation for easy integration
+  format: http
+  id: openbiodiv.api
+  is_public: true
+  name: OpenBiodiv REST API
+  product_url: https://graph.openbiodiv.net/webapi
+- category: OntologyProduct
+  description: OpenBioDiv-O, the OpenBiodiv Ontology
+  format: ttl
+  id: openbiodiv.ontology.ttl
+  is_public: true
+  name: OpenBioDiv-O
+  original_source:
+  - skos
+  - proton
+  - fabio
+  - doco
+  - openbiodiv
+  product_file_size: 8176
+  product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
+  secondary_source:
+  - openbiodiv
+- category: DocumentationProduct
+  description: Guide to OpenBioDiv-O, the OpenBiodiv Ontology
+  format: http
+  id: openbiodiv.ontology.guide
+  is_public: true
+  name: OpenBioDiv-O Guide
+  product_url: https://openbiodiv.net/ontologies
 publications:
-  - authors:
-      - Penev L
-      - Dimitrova M
-      - Senderov V
-      - Zhelezov G
-      - Georgiev T
-      - Stoev P
-      - Simov K
-    doi: "10.3390/publications7020038"
-    id: "doi:10.3390/publications7020038"
-    journal: Publications
-    preferred: true
-    title: "OpenBiodiv: A Knowledge Graph for Literature-Extracted Linked Open Data in Biodiversity Science"
-    year: "2019"
-  - authors:
-      - Senderov V
-      - Simov K
-      - Georgiev T
-      - Stoev P
-      - Penev L
-    doi: "10.1186/s13326-017-0174-5"
-    id: "doi:10.1186/s13326-017-0174-5"
-    journal: Journal of Biomedical Semantics
-    title: "OpenBiodiv-O: ontology of the OpenBiodiv knowledge management system"
-    year: "2018"
+- authors:
+  - Penev L
+  - Dimitrova M
+  - Senderov V
+  - Zhelezov G
+  - Georgiev T
+  - Stoev P
+  - Simov K
+  doi: 10.3390/publications7020038
+  id: doi:10.3390/publications7020038
+  journal: Publications
+  preferred: true
+  title: 'OpenBiodiv: A Knowledge Graph for Literature-Extracted Linked Open Data
+    in Biodiversity Science'
+  year: '2019'
+- authors:
+  - Senderov V
+  - Simov K
+  - Georgiev T
+  - Stoev P
+  - Penev L
+  doi: 10.1186/s13326-017-0174-5
+  id: doi:10.1186/s13326-017-0174-5
+  journal: Journal of Biomedical Semantics
+  title: 'OpenBiodiv-O: ontology of the OpenBiodiv knowledge management system'
+  year: '2018'
 repository: https://github.com/pensoft/OpenBiodiv
 taxon:
-  - NCBITaxon:1
+- NCBITaxon:1
 ---
-
 # OpenBiodiv
 
 ## Overview

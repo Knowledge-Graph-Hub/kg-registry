@@ -2,60 +2,90 @@
 activity_status: active
 category: Ontology
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.ontotext.com/"
-    id: "ontotext"
-    label: Ontotext Lab, Sirma Group
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ontotext.com/
+  id: ontotext
+  label: Ontotext Lab, Sirma Group
 creation_date: '2025-12-17T00:00:00Z'
-description: PROTON (PROTo ONtology) is a lightweight upper-level ontology serving as a foundational modeling basis for semantic web applications. It provides a modular framework with approximately 542 entity classes and 183 properties, covering named entities, temporal concepts, quantitative domains, and abstract concepts. Designed for information extraction, semantic annotation, knowledge management, and linked data integration.
+description: PROTON (PROTo ONtology) is a lightweight upper-level ontology serving
+  as a foundational modeling basis for semantic web applications. It provides a modular
+  framework with approximately 542 entity classes and 183 properties, covering named
+  entities, temporal concepts, quantitative domains, and abstract concepts. Designed
+  for information extraction, semantic annotation, knowledge management, and linked
+  data integration.
 domains: []
 homepage_url: https://www.ontotext.com/products/proton/
-id: "proton"
-infores_id: "proton"
+id: proton
+infores_id: proton
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/3.0/"
+  id: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 name: PROTON (PROTo ONtology)
 products:
-  - category: OntologyProduct
-    description: Complete PROTON 3.0 Beta ontology specification in OWL Lite/RDF-XML format, including all four modules (System, Top, Extent, KM) with comprehensive entity class definitions and properties
-    format: owl
-    id: "proton.ontology"
-    is_public: true
-    name: PROTON Ontology OWL Distribution
-    product_url: "https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf"
-  - category: OntologyProduct
-    description: PROTON Top Module - the primary upper-level ontology module containing core entity types (Person, Location, Organization), temporal concepts, quantitative domains, and abstract concepts
-    format: owl
-    id: "proton.top"
-    is_public: true
-    name: PROTON Top Module
-    product_url: "http://www.ontotext.com/proton/protontop"
-  - category: DocumentationProduct
-    description: Comprehensive technical documentation and class reference for PROTON ontology covering all modules, properties, and usage guidelines
-    format: http
-    id: "proton.documentation"
-    is_public: true
-    name: PROTON Documentation
-    product_url: "https://www.ontotext.com/documents/proton/proton-doc.htm"
-  - category: GraphicalInterface
-    description: Interactive browser for exploring and navigating PROTON ontology structure, classes, and relationships on TriplyDB platform
-    format: http
-    id: "proton.browser"
-    is_public: true
-    name: PROTON Browser on TriplyDB
-    product_url: "https://triplydb.com/ontotext/proton/browser"
-repository: "https://github.com/Ontotext-AD/proton"
+- category: OntologyProduct
+  description: Complete PROTON 3.0 Beta ontology specification in OWL Lite/RDF-XML
+    format, including all four modules (System, Top, Extent, KM) with comprehensive
+    entity class definitions and properties
+  format: owl
+  id: proton.ontology
+  is_public: true
+  name: PROTON Ontology OWL Distribution
+  product_file_size: 725192
+  product_url: https://ontotext.com/documents/proton/Proton-Ver3.0B.pdf
+- category: OntologyProduct
+  description: PROTON Top Module - the primary upper-level ontology module containing
+    core entity types (Person, Location, Organization), temporal concepts, quantitative
+    domains, and abstract concepts
+  format: owl
+  id: proton.top
+  is_public: true
+  name: PROTON Top Module
+  product_url: http://www.ontotext.com/proton/protontop
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
+    when accessing file'
+- category: DocumentationProduct
+  description: Comprehensive technical documentation and class reference for PROTON
+    ontology covering all modules, properties, and usage guidelines
+  format: http
+  id: proton.documentation
+  is_public: true
+  name: PROTON Documentation
+  product_url: https://www.ontotext.com/documents/proton/proton-doc.htm
+- category: GraphicalInterface
+  description: Interactive browser for exploring and navigating PROTON ontology structure,
+    classes, and relationships on TriplyDB platform
+  format: http
+  id: proton.browser
+  is_public: true
+  name: PROTON Browser on TriplyDB
+  product_url: https://triplydb.com/ontotext/proton/browser
+- category: OntologyProduct
+  description: OpenBioDiv-O, the OpenBiodiv Ontology
+  format: ttl
+  id: openbiodiv.ontology.ttl
+  is_public: true
+  name: OpenBioDiv-O
+  original_source:
+  - skos
+  - proton
+  - fabio
+  - doco
+  - openbiodiv
+  product_file_size: 8176
+  product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
+  secondary_source:
+  - openbiodiv
+repository: https://github.com/Ontotext-AD/proton
 synonyms:
-  - "PROTo ONtology"
-  - "PROTON 3.0"
-  - "PROTON Top"
-version: "3.0 Beta"
+- PROTo ONtology
+- PROTON 3.0
+- PROTON Top
+version: 3.0 Beta
 ---
-
 # PROTON (PROTo ONtology)
 
 ## Overview

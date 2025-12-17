@@ -108,6 +108,7 @@ dideo	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Ontology
 dinto	The Drug-Drug Interactions Ontology	Ontology	http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto	resource/dinto/dinto.md
 disbiome	Disbiome	DataSource	https://disbiome.ugent.be/	resource/disbiome/disbiome.md
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
+doco	Doco	DataSource		resource/doco/doco.md
 doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/doid.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
 dpo	Drosophila Phenotype Ontology	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/dpo/dpo.md

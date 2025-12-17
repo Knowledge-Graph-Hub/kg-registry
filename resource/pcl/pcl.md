@@ -83,8 +83,8 @@ products:
   name: pcl-full.owl
   product_url: http://purl.obolibrary.org/obo/pcl-full.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-17: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -128,8 +128,8 @@ products:
   name: pcl-simple.json
   product_url: http://purl.obolibrary.org/obo/pcl-simple.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-17: Timeout connecting
+    to URL'
 repository: https://github.com/obophenotype/provisional_cell_ontology
 ---
 ## Description

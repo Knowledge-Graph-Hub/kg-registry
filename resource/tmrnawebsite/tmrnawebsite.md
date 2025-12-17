@@ -35,6 +35,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 404 error
     when accessing file'
 - category: Product
@@ -48,6 +50,8 @@ products:
   product_url: http://bioinformatics.sandia.gov/tmrna/
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 404 error
     when accessing file'
@@ -63,6 +67,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 404 error
     when accessing file'
 - category: Product
@@ -76,6 +82,8 @@ products:
   product_url: http://bioinformatics.sandia.gov/tmrna/software.html
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 404 error
     when accessing file'
