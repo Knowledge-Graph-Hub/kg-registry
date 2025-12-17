@@ -45,15 +45,13 @@ products:
   name: MINT MITAB Full Dataset
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 500 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 500 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 500 error
     when accessing file'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
@@ -63,15 +61,13 @@ products:
   name: MINT Human Interactions
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 500 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 500 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 500 error
     when accessing file'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
@@ -81,15 +77,13 @@ products:
   name: MINT Mouse Interactions
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 500 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 500 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 500 error
     when accessing file'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT

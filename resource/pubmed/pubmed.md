@@ -190,9 +190,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -227,9 +227,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 418 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-13_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-15: HTTP 418 error
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 418 error
     when accessing file'
 - category: Product
   description: Manually curated disease-gene associations and annotations for amyloidoses
@@ -263,9 +263,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2025-12-13_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2025-12-15_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2025-12-15: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2025-12-17: FTP error: timed
     out'
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:

@@ -32,15 +32,15 @@ products:
   - atgo
   product_url: http://atgo.ucsd.edu/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-15_ Error connecting
+    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
+    with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
+    port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
     to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
     object at 0x7fb70a995de0>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
-    port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
     to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
@@ -121,11 +121,7 @@ products:
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
     object at 0x7fa9b784b9a0>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - File was not able to be retrieved when checked on 2025-12-15_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
-    port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-  - 'File was not able to be retrieved when checked on 2025-12-15: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-17: Error connecting
     to URL: HTTPConnectionPool(host=''atgo.ucsd.edu'', port=80): Max retries exceeded
     with url: / (Caused by NewConnectionError("HTTPConnection(host=''atgo.ucsd.edu'',
     port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'
