@@ -72,7 +72,7 @@ products:
   id: plant-reactome.png
   name: Plant Reactome PNG Diagrams
   product_url: https://plantreactome.gramene.org/download/
-- category: Product
+- category: MappingProduct
   description: Identifier mapping files linking stable pathway identifiers with associated
     genes, reactions, and pathways across plant species
   format: csv
