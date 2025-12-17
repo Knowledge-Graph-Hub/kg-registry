@@ -47,38 +47,38 @@ products:
 - category: Product
   compression: zip
   description: BioPAX3 format pathway data downloads organized by plant species
-  format: biobax3
-  id: plant-reactome.biopax3
+  format: biopax
+  id: plant-reactome.biopax
   name: Plant Reactome BioPAX3 Data
-  product_url: https://plantreactome.gramene.org/download/
+  product_url: https://plantreactome.gramene.org/download/current/biopax3.zip
 - category: Product
   compression: zip
   description: SBGN format pathway diagrams and pathway descriptions for plant pathway
     visualization
-  format: sbgn
+  format: sbgnml
   id: plant-reactome.sbgn
   name: Plant Reactome SBGN Diagrams
-  product_url: https://plantreactome.gramene.org/download/
+  product_url: https://plantreactome.gramene.org/download/current/
 - category: Product
   description: Scalable Vector Graphics (SVG) format pathway diagrams for interactive
     and high-quality pathway visualization
   format: svg
   id: plant-reactome.svg
   name: Plant Reactome SVG Diagrams
-  product_url: https://plantreactome.gramene.org/download/
+  product_url: https://plantreactome.gramene.org/download/current/
 - category: Product
   description: PNG raster image format pathway diagrams for static pathway visualization
   format: png
   id: plant-reactome.png
   name: Plant Reactome PNG Diagrams
-  product_url: https://plantreactome.gramene.org/download/
+  product_url: https://plantreactome.gramene.org/download/current/
 - category: MappingProduct
   description: Identifier mapping files linking stable pathway identifiers with associated
     genes, reactions, and pathways across plant species
   format: csv
   id: plant-reactome.mappings
   name: Plant Reactome Identifier Mappings
-  product_url: https://plantreactome.gramene.org/download/
+  product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=18&Itemid=242&lang=en
 publications:
 - authors:
   - Gupta P
