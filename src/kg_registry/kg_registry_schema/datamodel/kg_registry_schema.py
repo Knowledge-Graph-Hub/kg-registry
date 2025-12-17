@@ -130,6 +130,10 @@ class FormatEnum(str, Enum):
     """
     The serialization/format of a product.
     """
+    biopax = "biopax"
+    """
+    The BioPAX format, an RDF/OWL-based standard language for representing biological pathways at the molecular and cellular level.
+    """
     boolnet = "boolnet"
     """
     The Boolean Network (BoolNet) format, which is a format for representing Boolean networks. Used with the BoolNet package in R for modeling and analyzing biological networks.
@@ -237,6 +241,10 @@ class FormatEnum(str, Enum):
     pdf = "pdf"
     """
     The Portable Document Format (PDF), a file format developed by Adobe for presenting documents in a manner independent of application software, hardware, and operating systems. PDF files can contain text, images, and vector graphics.
+    """
+    png = "png"
+    """
+    The Portable Network Graphics (PNG) format, a raster graphics file format that supports lossless data compression. It is commonly used for web images and supports transparency.
     """
     postgres = "postgres"
     """

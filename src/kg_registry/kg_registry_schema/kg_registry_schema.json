@@ -1322,6 +1322,7 @@
         "FormatEnum": {
             "description": "The serialization/format of a product.",
             "enum": [
+                "biopax",
                 "boolnet",
                 "chebi_sdf",
                 "csv",
@@ -1349,6 +1350,7 @@
                 "obo",
                 "owl",
                 "pdf",
+                "png",
                 "postgres",
                 "protobuf",
                 "psi_mi_mitab",
