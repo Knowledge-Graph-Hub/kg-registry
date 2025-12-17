@@ -61,9 +61,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-13_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-15: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -82,10 +82,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-13_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-15: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 429 error
+    when accessing file'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -104,12 +104,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-13_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-15: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 429 error
+    when accessing file'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv

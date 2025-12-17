@@ -2,160 +2,169 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://plantreactome.gramene.org/"
-    id: "gramene"
-    label: Gramene Project
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://plantreactome.gramene.org/
+  id: gramene
+  label: Gramene Project
 creation_date: '2025-12-17T00:00:00Z'
-description: Plant Reactome is a freely-accessible, open-source pathway knowledgebase for comparative pathway analysis and systems biology in plants. It provides manually curated pathways in rice with gene-orthology based projections across 129 plant species.
+description: Plant Reactome is a freely-accessible, open-source pathway knowledgebase
+  for comparative pathway analysis and systems biology in plants. It provides manually
+  curated pathways in rice with gene-orthology based projections across 129 plant
+  species.
 domains:
-  - pathways
-  - systems biology
+- pathways
+- systems biology
 funding:
-  - Gramene
+- Gramene
 homepage_url: https://plantreactome.gramene.org/
-id: "plant-reactome"
-infores_id: "plant-reactome"
+id: plant-reactome
+infores_id: plant-reactome
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Plant Reactome
 products:
-  - category: GraphicalInterface
-    description: Web portal for browsing, searching, and visualizing plant pathway data with interactive pathway diagrams and comparative analysis tools
-    format: http
-    id: "plant-reactome.portal"
-    is_public: true
-    name: Plant Reactome Web Portal
-    product_url: https://plantreactome.gramene.org/
-  - category: ProgrammingInterface
-    description: RESTful Content Service API for programmatic access to pathway data, entities, and structures in JSON format
-    format: http
-    id: "plant-reactome.api"
-    is_public: true
-    name: Plant Reactome REST API
-    product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=217&Itemid=255
-  - category: Product
-    compression: zip
-    description: BioPAX3 format pathway data downloads organized by plant species
-    format: biopax
-    id: "plant-reactome.biopax"
-    name: Plant Reactome BioPAX3 Data
-    product_url: https://plantreactome.gramene.org/download/current/biopax3.zip
-    is_public: true
-  - category: Product
-    compression: zip
-    description: SBGN format pathway diagrams and pathway descriptions for plant pathway visualization
-    format: sbgnml
-    id: "plant-reactome.sbgn"
-    name: Plant Reactome SBGN Diagrams
-    product_url: https://plantreactome.gramene.org/download/current/
-  - category: Product
-    description: Scalable Vector Graphics (SVG) format pathway diagrams for interactive and high-quality pathway visualization
-    format: svg
-    id: "plant-reactome.svg"
-    name: Plant Reactome SVG Diagrams
-    product_url: https://plantreactome.gramene.org/download/current/
-  - category: Product
-    description: PNG raster image format pathway diagrams for static pathway visualization
-    format: png
-    id: "plant-reactome.png"
-    name: Plant Reactome PNG Diagrams
-    product_url: https://plantreactome.gramene.org/download/current/
-  - category: MappingProduct
-    description: Identifier mapping files linking stable pathway identifiers with associated genes, reactions, and pathways across plant species
-    format: csv
-    id: "plant-reactome.mappings"
-    name: Plant Reactome Identifier Mappings
-    product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=18&Itemid=242&lang=en
+- category: GraphicalInterface
+  description: Web portal for browsing, searching, and visualizing plant pathway data
+    with interactive pathway diagrams and comparative analysis tools
+  format: http
+  id: plant-reactome.portal
+  is_public: true
+  name: Plant Reactome Web Portal
+  product_url: https://plantreactome.gramene.org/
+- category: ProgrammingInterface
+  description: RESTful Content Service API for programmatic access to pathway data,
+    entities, and structures in JSON format
+  format: http
+  id: plant-reactome.api
+  is_public: true
+  name: Plant Reactome REST API
+  product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=217&Itemid=255
+- category: Product
+  compression: zip
+  description: BioPAX3 format pathway data downloads organized by plant species
+  format: biopax
+  id: plant-reactome.biopax
+  is_public: true
+  name: Plant Reactome BioPAX3 Data
+  product_file_size: 117969665
+  product_url: https://plantreactome.gramene.org/download/current/biopax3.zip
+- category: Product
+  compression: zip
+  description: SBGN format pathway diagrams and pathway descriptions for plant pathway
+    visualization
+  format: sbgnml
+  id: plant-reactome.sbgn
+  name: Plant Reactome SBGN Diagrams
+  product_url: https://plantreactome.gramene.org/download/current/
+- category: Product
+  description: Scalable Vector Graphics (SVG) format pathway diagrams for interactive
+    and high-quality pathway visualization
+  format: svg
+  id: plant-reactome.svg
+  name: Plant Reactome SVG Diagrams
+  product_url: https://plantreactome.gramene.org/download/current/
+- category: Product
+  description: PNG raster image format pathway diagrams for static pathway visualization
+  format: png
+  id: plant-reactome.png
+  name: Plant Reactome PNG Diagrams
+  product_url: https://plantreactome.gramene.org/download/current/
+- category: MappingProduct
+  description: Identifier mapping files linking stable pathway identifiers with associated
+    genes, reactions, and pathways across plant species
+  format: csv
+  id: plant-reactome.mappings
+  name: Plant Reactome Identifier Mappings
+  product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=18&Itemid=242&lang=en
 publications:
-  - authors:
-      - Gupta P
-      - Elser J
-      - Hooks E
-      - D'Eustachio P
-      - Jaiswal P
-      - Naithani S
-    doi: "10.1093/nar/gkad1052"
-    id: "doi:10.1093/nar/gkad1052"
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'Plant Reactome Knowledgebase: empowering plant pathway exploration and OMICS data analysis'
-    year: "2024"
-  - authors:
-      - Naithani S
-      - Preece J
-      - D'Eustachio P
-      - Gupta P
-      - Amarasinghe V
-      - Dharmawardhana PD
-      - Wu G
-      - Fabregat A
-      - Elser JL
-      - Weiser J
-      - Keays M
-      - Fuentes AM
-      - Petryszak R
-      - Stein LD
-      - Ware D
-      - Jaiswal P
-    doi: "10.1093/nar/gkw932"
-    id: "doi:10.1093/nar/gkw932"
-    journal: Nucleic Acids Research
-    title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
-    year: "2017"
-  - authors:
-      - Naithani S
-      - Gupta P
-      - Preece J
-      - D'Eustachio P
-      - Elser JL
-      - Garg P
-      - Dikeman DA
-      - Kiff J
-      - Cook J
-      - Olson A
-      - Wei S
-      - Tello-Ruiz MK
-      - Mundo AF
-      - Munoz-Pomer A
-      - Mohammed S
-      - Cheng T
-      - Bolton E
-      - Papatheodorou I
-      - Stein L
-      - Ware D
-      - Jaiswal P
-    doi: "10.1093/nar/gkz996"
-    id: "doi:10.1093/nar/gkz996"
-    journal: Nucleic Acids Research
-    title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
-    year: "2020"
+- authors:
+  - Gupta P
+  - Elser J
+  - Hooks E
+  - D'Eustachio P
+  - Jaiswal P
+  - Naithani S
+  doi: 10.1093/nar/gkad1052
+  id: doi:10.1093/nar/gkad1052
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Plant Reactome Knowledgebase: empowering plant pathway exploration and OMICS
+    data analysis'
+  year: '2024'
+- authors:
+  - Naithani S
+  - Preece J
+  - D'Eustachio P
+  - Gupta P
+  - Amarasinghe V
+  - Dharmawardhana PD
+  - Wu G
+  - Fabregat A
+  - Elser JL
+  - Weiser J
+  - Keays M
+  - Fuentes AM
+  - Petryszak R
+  - Stein LD
+  - Ware D
+  - Jaiswal P
+  doi: 10.1093/nar/gkw932
+  id: doi:10.1093/nar/gkw932
+  journal: Nucleic Acids Research
+  title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
+  year: '2017'
+- authors:
+  - Naithani S
+  - Gupta P
+  - Preece J
+  - D'Eustachio P
+  - Elser JL
+  - Garg P
+  - Dikeman DA
+  - Kiff J
+  - Cook J
+  - Olson A
+  - Wei S
+  - Tello-Ruiz MK
+  - Mundo AF
+  - Munoz-Pomer A
+  - Mohammed S
+  - Cheng T
+  - Bolton E
+  - Papatheodorou I
+  - Stein L
+  - Ware D
+  - Jaiswal P
+  doi: 10.1093/nar/gkz996
+  id: doi:10.1093/nar/gkz996
+  journal: Nucleic Acids Research
+  title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
+  year: '2020'
 repository: https://github.com/Gramene/gramene-docs
 taxon:
-  - NCBITaxon:3055
-  - NCBITaxon:2763
-  - NCBITaxon:3218
-  - NCBITaxon:3702
-  - NCBITaxon:3711
-  - NCBITaxon:3694
-  - NCBITaxon:4513
-  - NCBITaxon:4530
-  - NCBITaxon:4555
-  - NCBITaxon:4558
-  - NCBITaxon:4577
-  - NCBITaxon:4641
-  - NCBITaxon:3847
-  - NCBITaxon:3880
-  - NCBITaxon:4081
-  - NCBITaxon:4113
-  - NCBITaxon:15368
-  - NCBITaxon:88036
+- NCBITaxon:3055
+- NCBITaxon:2763
+- NCBITaxon:3218
+- NCBITaxon:3702
+- NCBITaxon:3711
+- NCBITaxon:3694
+- NCBITaxon:4513
+- NCBITaxon:4530
+- NCBITaxon:4555
+- NCBITaxon:4558
+- NCBITaxon:4577
+- NCBITaxon:4641
+- NCBITaxon:3847
+- NCBITaxon:3880
+- NCBITaxon:4081
+- NCBITaxon:4113
+- NCBITaxon:15368
+- NCBITaxon:88036
 ---
-
 # Plant Reactome
 
 ## Overview
