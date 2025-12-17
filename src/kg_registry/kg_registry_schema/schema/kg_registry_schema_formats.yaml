@@ -50,6 +50,12 @@ enums:
     description: >-
       The serialization/format of a product.
     permissible_values:
+      biopax:
+        description: >-
+          The BioPAX format, an RDF/OWL-based standard
+          language for representing biological pathways
+          at the molecular and cellular level.
+        meaning: edam:3156
       boolnet:
         description: >-
           The Boolean Network (BoolNet) format, which is a format
