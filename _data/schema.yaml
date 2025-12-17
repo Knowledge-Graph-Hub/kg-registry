@@ -597,6 +597,11 @@ enums:
     description: The serialization/format of a product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     permissible_values:
+      biopax:
+        text: biopax
+        description: The BioPAX format, an RDF/OWL-based standard language for representing
+          biological pathways at the molecular and cellular level.
+        meaning: edam:3156
       boolnet:
         text: boolnet
         description: The Boolean Network (BoolNet) format, which is a format for representing
@@ -752,6 +757,11 @@ enums:
           Adobe for presenting documents in a manner independent of application software,
           hardware, and operating systems. PDF files can contain text, images, and
           vector graphics.
+      png:
+        text: png
+        description: The Portable Network Graphics (PNG) format, a raster graphics
+          file format that supports lossless data compression. It is commonly used
+          for web images and supports transparency.
       postgres:
         text: postgres
         description: The PostgreSQL relational database management system. If a product

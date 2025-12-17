@@ -219,6 +219,11 @@ enums:
           for presenting documents in a manner independent of application software,
           hardware, and operating systems. PDF files can contain text, images,
           and vector graphics.
+      png:
+        description: >-
+          The Portable Network Graphics (PNG) format, a raster graphics file format
+          that supports lossless data compression. It is commonly used for
+          web images and supports transparency.
       postgres:
         description: >-
           The PostgreSQL relational database management system.
