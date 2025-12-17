@@ -11,6 +11,7 @@ original_source:
 - fabio
 - doco
 - openbiodiv
+product_file_size: 8176
 product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
 secondary_source:
 - openbiodiv

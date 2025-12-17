@@ -190,7 +190,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
     when accessing file'
@@ -227,7 +227,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 418 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 418 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 418 error
     when accessing file'
@@ -263,7 +263,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2025-12-15_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2025-12-17: FTP error: timed
     out'

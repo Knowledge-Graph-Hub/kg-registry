@@ -231,10 +231,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 429 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -252,10 +252,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 429 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -274,12 +276,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 429 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -323,7 +327,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file

@@ -130,6 +130,7 @@ disdriv,active,PASS
 diseases,active,PASS
 disgenet,active,PASS
 disprot,active,PASS
+doco,active,PASS
 doid,active,PASS
 dorothea,active,PASS
 dpo,active,PASS
@@ -290,6 +291,7 @@ kinace,active,PASS
 kinhub,active,PASS
 kinomescan,active,PASS
 kisao,active,PASS
+knowwheregraph,active,PASS
 labo,active,PASS
 lepao,active,PASS
 lincs,active,PASS
