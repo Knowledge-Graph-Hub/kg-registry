@@ -24,7 +24,6 @@ products:
     description: Interactive zoomable phylogenetic tree browser enabling exploration of taxonomic relationships and phylogenetic structure across 2.4 million tips
     format: http
     id: "otol.tree-browser"
-    is_public: true
     name: Open Tree of Life Browser
     product_url: "https://tree.opentreeoflife.org/tree"
   - category: ProgrammingInterface
