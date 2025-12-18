@@ -26,7 +26,6 @@ products:
     description: Web portal for searching, filtering, and discovering occurrence records, species information, datasets, and organizations with interactive mapping and download capabilities
     format: http
     id: "gbif.portal"
-    is_public: true
     name: GBIF.org Portal
     product_url: "https://www.gbif.org/"
   - category: ProgrammingInterface
@@ -69,12 +68,6 @@ products:
     product_url: "https://www.gbif.org/ipt"
 publications:
   - authors:
-      - GBIF
-    id: "gbif-science-review-2024"
-    journal: "GBIF Science Review"
-    title: "GBIF Science Review No. 11 - 2024"
-    year: "2024"
-  - authors:
       - Robertson T
       - Döring M
       - Guralnick R
@@ -89,11 +82,6 @@ publications:
     journal: "PLOS ONE"
     title: "The GBIF Integrated Publishing Toolkit: Facilitating the Efficient Publishing of Biodiversity Data on the Internet"
     year: "2014"
-  - authors:
-      - GBIF
-    id: "gbif-strategic-framework"
-    title: "GBIF Strategic Framework 2023-2027"
-    year: "2023"
 repository: "https://github.com/gbif"
 taxon:
   - "NCBITaxon:1"
