@@ -35,6 +35,8 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
     header found'
 - category: Product
@@ -47,6 +49,8 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
     header found'
 - category: Product
@@ -60,6 +64,8 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
     header found'
 - category: Product
@@ -73,6 +79,8 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
     header found'
 - category: GraphicalInterface

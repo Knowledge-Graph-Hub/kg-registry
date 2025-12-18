@@ -198,6 +198,7 @@ fovt,active,PASS
 fypo,active,PASS
 gallont,active,PASS
 gaz,active,PASS
+gbif,active,PASS
 gdc,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
@@ -384,6 +385,7 @@ oba,active,PASS
 obcs,active,PASS
 obi,active,PASS
 obib,active,PASS
+obis,active,PASS
 obo-db-ingest,active,PASS
 occo,active,PASS
 offsides,active,PASS
@@ -409,6 +411,7 @@ ontoavida,active,PASS
 ontology-kp,active,PASS
 ontoneo,active,PASS
 oostt,active,PASS
+open-tree-of-life,active,PASS
 openbiodiv,active,PASS
 openpredict,active,PASS
 opentargets,active,PASS

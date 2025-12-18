@@ -99,6 +99,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -112,6 +114,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface

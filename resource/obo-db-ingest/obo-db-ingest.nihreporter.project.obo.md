@@ -6,7 +6,7 @@ id: obo-db-ingest.nihreporter.project.obo
 name: nihreporter.project OBO
 product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
 warnings:
-- File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
   accessing file
