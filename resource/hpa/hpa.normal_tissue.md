@@ -9,7 +9,7 @@ product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
 warnings:
 - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
   to URL

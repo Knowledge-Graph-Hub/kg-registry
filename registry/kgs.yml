@@ -1135,7 +1135,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -2289,7 +2289,7 @@ resources:
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -2319,7 +2319,7 @@ resources:
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2349,7 +2349,7 @@ resources:
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2379,7 +2379,7 @@ resources:
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2409,7 +2409,7 @@ resources:
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2438,7 +2438,7 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
@@ -2466,7 +2466,7 @@ resources:
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -4546,7 +4546,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -5483,7 +5483,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -6378,7 +6378,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -8090,18 +8090,153 @@ resources:
     - contact_type: email
       value: balhoff@renci.org
     label: Jim Balhoff
-  description: The “cam-kp” Exposures Knowledge Graph (in development).
+    orcid: 0000-0001-7695-6090
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://renci.org/
+    id: renci
+    label: RENCI (Renaissance Computing Institute)
+  creation_date: '2025-12-18T00:00:00Z'
+  description: CAM-KP (Causal Activity Models Knowledge Provider) is a web service
+    knowledge graph that integrates causal biological and chemical models from Gene
+    Ontology, Reactome, and Comparative Toxicogenomics Database (CTD) into a unified,
+    semantically rich platform. It provides access to structured biomedical knowledge
+    through SPARQL and TRAPI-compliant REST APIs, supporting hypothesis generation,
+    drug discovery, and environmental health research.
   domains:
   - health
-  homepage_url: https://github.com/ExposuresProvider/cam-kp-api
+  - pathways
+  homepage_url: https://automat.renci.org/#/cam-kp
   id: cam-kp
   infores_id: cam-kp
   layout: resource_detail
   license:
     id: https://opensource.org/licenses/MIT
-    label: MIT License
-  name: Exposures KP (cam kp)
+    label: MIT License (Repository); Public Domain (Data)
+  name: CAM-KP (Causal Activity Models Knowledge Provider)
+  products:
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for complex semantic queries on the RDF triplestore
+      containing causal activity models, ontologies, and integrated biomedical knowledge
+    format: http
+    id: cam-kp.sparql
+    is_public: true
+    name: CAM-KP SPARQL Endpoint
+    product_url: https://stars-app.renci.org/cam/sparql
+  - category: ProgrammingInterface
+    description: TRAPI-compliant REST API for programmatic access to causal knowledge
+      graphs supporting Translator ecosystem integration and federated querying
+    format: http
+    id: cam-kp.api
+    is_public: true
+    name: CAM-KP REST API
+    product_url: https://cam-kp-api-dev.renci.org/1.2.0/query
+  - category: GraphicalInterface
+    description: Interactive knowledge provider interface within RENCI's Automat platform
+      for discovering and integrating CAM-KP with other biomedical data sources
+    format: http
+    id: cam-kp.automat
+    is_public: true
+    name: CAM-KP on Automat
+    product_url: https://automat.renci.org/#/cam-kp
+  - category: Product
+    description: Causal Activity Model graphs automatically generated from Reactome
+      pathways using the Pathways2GO tool, translating pathway reactions to causal
+      relationships
+    id: cam-kp.reactome-cams
+    name: Reactome Pathway CAMs
+    original_source:
+    - reactome
+  - category: Product
+    description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually
+      curated by Gene Ontology biocurators linking genes, proteins, and biological
+      processes
+    id: cam-kp.go-cams
+    name: Gene Ontology CAMs
+    original_source:
+    - gene-ontology
+  - category: Product
+    description: Chemical-gene interaction models and toxicological pathways derived
+      from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
+      and 55,400 genes
+    id: cam-kp.ctd-interactions
+    name: CTD Chemical-Gene Models
+    original_source:
+    - ctd
+  - category: DocumentationProduct
+    description: Comprehensive API documentation, SPARQL endpoint documentation, and
+      developer guides for querying and integrating CAM-KP
+    format: http
+    id: cam-kp.documentation
+    is_public: true
+    name: CAM-KP Documentation
+    product_url: https://github.com/ExposuresProvider/cam-kp-api/wiki
+  publications:
+  - authors:
+    - Balhoff JP
+    - Bizon C
+    - Carlson J
+    - Fecho K
+    - Fink EL
+    - Gorow JS
+    - Graham TGW
+    - Hanna DE
+    - Henricks CJ
+    - Hoyt CT
+    - Imamovic-Tomasovic M
+    - Jacobs JM
+    - Koslovsky MD
+    - Lyzenga Y
+    - Nagel R
+    - Rasmussen JE
+    - Robin A
+    - Sullivan R
+    - Wagner AH
+    - Whetzel PL
+    - Williams JA
+    doi: 10.48550/arXiv.2004.01269
+    id: arXiv:2004.01269
+    journal: arXiv
+    preferred: true
+    title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for
+      Real-World Environmental Health Observations
+    year: '2020'
+  - authors:
+    - Balhoff JP
+    - Bizon C
+    - Carlson J
+    - Fecho K
+    - Fink EL
+    - Gorow JS
+    doi: 10.48550/arXiv.2105.04728
+    id: arXiv:2105.04728
+    journal: JMIR Medical Informatics
+    title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for
+      Real-World Environmental Health Observations
+    year: '2021'
+  - authors:
+    - Davis AP
+    - Wiegers TC
+    - Johnson RJ
+    doi: 10.1093/nar/gky1209
+    id: doi:10.1093/nar/gky1209
+    journal: Nucleic Acids Research
+    title: 'The Comparative Toxicogenomics Database: update 2023'
+    year: '2023'
+  - authors:
+    - Davis AP
+    - Wiegers TC
+    - Johnson RJ
+    doi: 10.1093/nar/gkaq891
+    id: doi:10.1093/nar/gkaq891
+    journal: Nucleic Acids Research
+    title: 'The Comparative Toxicogenomics Database: a knowledgebase and discovery
+      tool for chemical-gene-disease networks'
+    year: '2020'
   repository: https://github.com/ExposuresProvider/cam-kp-api
+  taxon:
+  - NCBITaxon:1
 - activity_status: active
   category: DataSource
   creation_date: '2025-08-12T00:00:00Z'
@@ -8265,7 +8400,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -8282,7 +8417,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -8299,7 +8434,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -8852,7 +8987,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
       to URL
@@ -8866,7 +9001,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
       to URL
@@ -8881,7 +9016,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
       to URL
@@ -8896,7 +9031,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
       to URL
@@ -9040,7 +9175,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -9057,7 +9192,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -9237,7 +9372,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -9291,7 +9426,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -10160,7 +10295,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -10892,7 +11027,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -10946,7 +11081,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -11418,7 +11553,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -13676,7 +13811,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error
       when accessing file
@@ -13695,7 +13830,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -14789,7 +14924,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -14807,7 +14942,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -15591,7 +15726,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 502 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 502 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 502 error
       when accessing file'
@@ -16208,7 +16343,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -16241,7 +16376,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -16274,7 +16409,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -16306,7 +16441,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -18182,6 +18317,14 @@ resources:
     product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
     secondary_source:
     - kg-microbe
+  - category: Product
+    description: Chemical-gene interaction models and toxicological pathways derived
+      from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
+      and 55,400 genes
+    id: cam-kp.ctd-interactions
+    name: CTD Chemical-Gene Models
+    original_source:
+    - ctd
   taxon:
   - NCBITaxon:9606
 - activity_status: active
@@ -18725,7 +18868,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -18995,7 +19138,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -20894,7 +21037,7 @@ resources:
       exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
       exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -21973,7 +22116,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -23488,7 +23631,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -23766,8 +23909,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
@@ -23789,12 +23932,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
-    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
+      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -23813,14 +23956,14 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
+      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -23864,7 +24007,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error
       when accessing file
@@ -24020,7 +24163,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -26719,7 +26862,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -27078,11 +27221,13 @@ resources:
       with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
-      to URL: HTTPSConnectionPool(host=''editors.eol.org'', port=443): Max retries
-      exceeded with url: /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
-      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
+      to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
+      with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
+      to URL'
   - category: DocumentationProduct
     description: Comprehensive documentation covering TraitBank data structure, API
       usage, authentication methods, and data formats
@@ -27091,6 +27236,11 @@ resources:
     name: TraitBank Documentation
     product_url: https://eol.org/docs/what-is-eol/data-services
     warnings:
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
+      to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded
+      with url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded
       with url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
@@ -28607,7 +28757,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 500 error
       when accessing file'
@@ -28959,7 +29109,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -30161,7 +30311,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -30248,7 +30398,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30268,7 +30418,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30288,7 +30438,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30307,7 +30457,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30326,7 +30476,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30345,7 +30495,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30364,7 +30514,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30383,7 +30533,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30402,7 +30552,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30421,7 +30571,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30440,7 +30590,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error
       when accessing file
@@ -30834,7 +30984,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -31126,6 +31276,8 @@ resources:
     name: GBIF Darwin Core Archive Downloads
     product_url: https://www.gbif.org/occurrence/download
     warnings:
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
   - category: Product
@@ -31136,6 +31288,8 @@ resources:
     name: GBIF Simple CSV Downloads
     product_url: https://www.gbif.org/occurrence/download
     warnings:
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
   - category: DocumentationProduct
@@ -31154,6 +31308,8 @@ resources:
     name: GBIF Integrated Publishing Toolkit (IPT)
     product_url: https://www.gbif.org/ipt
     warnings:
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
   publications:
@@ -31293,7 +31449,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -32091,7 +32247,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32111,7 +32267,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32129,7 +32285,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32146,7 +32302,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32164,7 +32320,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32182,7 +32338,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32197,7 +32353,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32212,7 +32368,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32229,7 +32385,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32247,7 +32403,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32262,7 +32418,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -32277,7 +32433,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -33021,7 +33177,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
       header found
@@ -33047,7 +33203,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
       header found
@@ -33071,7 +33227,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
       header found
@@ -33088,7 +33244,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
       header found
@@ -33128,7 +33284,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
       header found
@@ -33168,7 +33324,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
       header found
@@ -33191,7 +33347,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -35721,7 +35877,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -35959,7 +36115,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -36042,7 +36198,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -36767,7 +36923,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -36841,7 +36997,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -36857,7 +37013,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -36872,7 +37028,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -36887,7 +37043,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -36903,7 +37059,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -36919,7 +37075,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -36934,7 +37090,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -37567,7 +37723,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -37593,7 +37749,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -37609,7 +37765,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -37625,7 +37781,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -37641,7 +37797,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -37656,7 +37812,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -37963,7 +38119,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -38574,7 +38730,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -39131,7 +39287,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -41511,7 +41667,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41527,7 +41683,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41545,7 +41701,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41562,7 +41718,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41577,7 +41733,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41595,7 +41751,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41610,7 +41766,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41626,7 +41782,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -41641,7 +41797,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
@@ -42243,7 +42399,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -42737,7 +42893,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 401 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 401 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 401 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 401 error
       when accessing file'
@@ -45019,7 +45175,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -46124,7 +46280,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error
       when accessing file
@@ -46224,7 +46380,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -46475,7 +46631,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2025-12-18T17:06:21Z'
+  last_modified_date: '2025-12-18T19:00:56Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -48197,6 +48353,10 @@ resources:
       to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries
       exceeded with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
       port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
+      to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries
+      exceeded with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
+      port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
     - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
       to URL
     - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
@@ -49406,7 +49566,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -50048,7 +50208,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
       when accessing file'
@@ -50063,7 +50223,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
       when accessing file'
@@ -50078,7 +50238,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
       when accessing file'
@@ -50490,7 +50650,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -50720,7 +50880,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -51789,12 +51949,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -51812,10 +51972,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
       when accessing file'
   - category: GraphProduct
@@ -51836,14 +51996,14 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
+      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -52020,7 +52180,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -52033,7 +52193,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -52046,7 +52206,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -52845,7 +53005,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -52998,7 +53158,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error
       when accessing file
@@ -54219,12 +54379,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -54242,12 +54402,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
-    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
+      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -54266,10 +54426,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-      header found
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
@@ -54367,7 +54527,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
       header found
@@ -54385,7 +54545,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
       header found
@@ -54403,7 +54563,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
       header found
@@ -55181,7 +55341,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
@@ -55208,7 +55368,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
@@ -55235,7 +55395,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
@@ -55262,7 +55422,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
@@ -55289,7 +55449,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
@@ -59226,7 +59386,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -60024,7 +60184,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -60040,7 +60200,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -60500,7 +60660,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -62369,7 +62529,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -62392,7 +62552,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -62415,7 +62575,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -62835,7 +62995,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63183,7 +63343,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63201,7 +63361,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -63229,7 +63389,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63252,7 +63412,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63270,7 +63430,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -63418,7 +63578,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -63441,7 +63601,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63459,7 +63619,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63529,7 +63689,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63550,7 +63710,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63565,7 +63725,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -63729,7 +63889,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63757,7 +63917,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -63775,7 +63935,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -64190,7 +64350,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64218,7 +64378,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64304,7 +64464,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64331,7 +64491,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64383,7 +64543,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -64401,7 +64561,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64494,7 +64654,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64517,7 +64677,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64540,7 +64700,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -64599,7 +64759,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -64622,7 +64782,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -64645,7 +64805,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -64771,7 +64931,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -64803,7 +64963,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -65372,7 +65532,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65393,7 +65553,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65414,7 +65574,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65436,7 +65596,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65458,7 +65618,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65480,7 +65640,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65502,7 +65662,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65522,7 +65682,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65544,7 +65704,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65567,7 +65727,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -65750,7 +65910,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -65770,7 +65930,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -67059,7 +67219,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 405 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 405 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 405 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 405 error
       when accessing file'
@@ -67950,7 +68110,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -69705,8 +69865,8 @@ resources:
     name: pcl-full.obo
     product_url: http://purl.obolibrary.org/obo/pcl-full.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
     format: json
@@ -69714,8 +69874,8 @@ resources:
     name: pcl-full.json
     product_url: http://purl.obolibrary.org/obo/pcl-full.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OWL format
     format: owl
@@ -69723,8 +69883,8 @@ resources:
     name: pcl-simple.owl
     product_url: http://purl.obolibrary.org/obo/pcl-simple.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OBO format
     format: obo
@@ -69732,8 +69892,8 @@ resources:
     name: pcl-simple.obo
     product_url: http://purl.obolibrary.org/obo/pcl-simple.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
     format: json
@@ -70087,7 +70247,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -71490,7 +71650,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -71647,7 +71807,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
     - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
       to URL'
@@ -71667,7 +71827,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -71692,7 +71852,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -71927,7 +72087,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -73906,7 +74066,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -74377,7 +74537,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -74400,7 +74560,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -75923,7 +76083,7 @@ resources:
       retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
       retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -75992,7 +76152,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -76436,7 +76596,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -76856,7 +77016,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -77072,7 +77232,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -77109,7 +77269,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 418 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 418 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 418 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 418 error
       when accessing file'
@@ -77145,7 +77305,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -79102,7 +79262,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -79144,6 +79304,14 @@ resources:
     - wikipathways
     - rampdb
     product_url: https://rampdb.nih.gov/
+  - category: Product
+    description: Causal Activity Model graphs automatically generated from Reactome
+      pathways using the Pathways2GO tool, translating pathway reactions to causal
+      relationships
+    id: cam-kp.reactome-cams
+    name: Reactome Pathway CAMs
+    original_source:
+    - reactome
   repository: ''
   taxon:
   - NCBITaxon:9606
@@ -79559,7 +79727,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -79620,7 +79788,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error
       when accessing file
@@ -79734,7 +79902,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79762,7 +79930,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79789,7 +79957,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79816,7 +79984,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79843,7 +80011,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79871,7 +80039,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79898,7 +80066,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79926,7 +80094,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -79953,7 +80121,7 @@ resources:
       retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
       SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
       verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
       retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
       SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
@@ -80100,7 +80268,7 @@ resources:
       with url_ /downloads/ (Caused by NameResolutionError("HTTPSConnection(host='reprotox-kg.net',
       port=443)_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not
       known)"))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
       with url_ /downloads/ (Caused by NameResolutionError("HTTPSConnection(host='reprotox-kg.net',
       port=443)_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not
@@ -81167,7 +81335,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -81194,7 +81362,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -83523,7 +83691,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -84367,7 +84535,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -85445,7 +85613,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ timed
       out
     - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
       out'
@@ -85765,7 +85933,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85793,7 +85961,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85821,7 +85989,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85848,7 +86016,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85876,7 +86044,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85903,7 +86071,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85931,7 +86099,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85959,7 +86127,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -85987,7 +86155,7 @@ resources:
       Max retries exceeded with url_ /snoDB/rRNA_modifications/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/rRNA_modifications/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -86014,7 +86182,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -86041,7 +86209,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -86076,7 +86244,7 @@ resources:
       Max retries exceeded with url_ /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -86103,7 +86271,7 @@ resources:
       Max retries exceeded with url_ /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -86131,7 +86299,7 @@ resources:
       Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
       Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -89871,7 +90039,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -90506,7 +90674,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
       to URL
@@ -90521,7 +90689,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-11_ Timeout connecting
       to URL
@@ -90928,7 +91096,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
     - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
       to URL'
@@ -90953,7 +91121,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
     - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
       to URL'
@@ -91158,7 +91326,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -92085,7 +92253,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -93643,7 +93811,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -93657,7 +93825,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -93670,7 +93838,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -93808,7 +93976,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
       header found'
@@ -93855,7 +94023,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
@@ -94364,7 +94532,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -95780,7 +95948,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -96225,7 +96393,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -96389,7 +96557,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ [Errno
       101] Network is unreachable
-    - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ [Errno
+    - File was not able to be retrieved when checked on 2025-12-18_ FTP error_ [Errno
       101] Network is unreachable
     - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
@@ -97715,7 +97883,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -97747,7 +97915,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -98797,7 +98965,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -99322,7 +99490,7 @@ resources:
       to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
       with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
       port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
       with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
       port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
@@ -100006,7 +100174,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -101351,7 +101519,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
@@ -101367,7 +101535,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
@@ -101383,7 +101551,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
@@ -102266,7 +102434,7 @@ resources:
       exceeded with url_ / (Caused by NameResolutionError("HTTPConnection(host='mirgate.bioinfo.cnio.es',
       port=80)_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno -2] Name or service
       not known)"))
-    - File was not able to be retrieved when checked on 2025-12-17_ Error connecting
+    - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
       to URL_ HTTPConnectionPool(host='mirgate.bioinfo.cnio.es', port=80)_ Max retries
       exceeded with url_ / (Caused by NameResolutionError("HTTPConnection(host='mirgate.bioinfo.cnio.es',
       port=80)_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno -2] Name or service
@@ -104195,7 +104363,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -104209,7 +104377,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -104223,7 +104391,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -104237,7 +104405,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -104250,7 +104418,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
       when accessing file'
@@ -105301,7 +105469,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -105317,7 +105485,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -105333,7 +105501,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'
@@ -105349,7 +105517,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-12-17_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
       when accessing file'

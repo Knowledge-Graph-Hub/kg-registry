@@ -9,7 +9,7 @@ product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/cu
 warnings:
 - File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-12-17_ HTTP 500 error when
+- File was not able to be retrieved when checked on 2025-12-18_ HTTP 500 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
   header found

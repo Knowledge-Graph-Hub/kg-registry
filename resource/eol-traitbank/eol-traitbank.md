@@ -70,11 +70,8 @@ products:
     with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
-    to URL: HTTPSConnectionPool(host=''editors.eol.org'', port=443): Max retries exceeded
-    with url: /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
+  - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
+    to URL'
 - category: DocumentationProduct
   description: Comprehensive documentation covering TraitBank data structure, API
     usage, authentication methods, and data formats

@@ -44,14 +44,14 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-18: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -67,14 +67,14 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -91,14 +91,14 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
     when accessing file'
 - category: Product

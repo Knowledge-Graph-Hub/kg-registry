@@ -7,7 +7,7 @@ product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
 warnings:
 - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+- File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-12-15_ Timeout connecting
   to URL

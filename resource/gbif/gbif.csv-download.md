@@ -6,5 +6,8 @@ description: Simple CSV format occurrence downloads with interpreted data and co
 id: gbif.csv-download
 name: GBIF Simple CSV Downloads
 product_url: https://www.gbif.org/occurrence/download
+warnings:
+- File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

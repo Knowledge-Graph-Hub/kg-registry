@@ -6,5 +6,8 @@ description: Darwin Core Archive format occurrence downloads from 81,000+ datase
 id: gbif.dwc-archive
 name: GBIF Darwin Core Archive Downloads
 product_url: https://www.gbif.org/occurrence/download
+warnings:
+- File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

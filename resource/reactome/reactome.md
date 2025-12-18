@@ -1543,7 +1543,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
     when accessing file'
@@ -1585,6 +1585,13 @@ products:
   - wikipathways
   - rampdb
   product_url: https://rampdb.nih.gov/
+- category: Product
+  description: Causal Activity Model graphs automatically generated from Reactome
+    pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
+  id: cam-kp.reactome-cams
+  name: Reactome Pathway CAMs
+  original_source:
+  - reactome
 repository: ''
 taxon:
 - NCBITaxon:9606

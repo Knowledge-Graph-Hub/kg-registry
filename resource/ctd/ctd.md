@@ -1093,6 +1093,14 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
+- category: Product
+  description: Chemical-gene interaction models and toxicological pathways derived
+    from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
+    and 55,400 genes
+  id: cam-kp.ctd-interactions
+  name: CTD Chemical-Gene Models
+  original_source:
+  - ctd
 taxon:
 - NCBITaxon:9606
 ---

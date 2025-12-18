@@ -56,8 +56,6 @@ products:
   - loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
@@ -71,8 +69,6 @@ products:
   - loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
@@ -86,8 +82,6 @@ products:
   - loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-17_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
