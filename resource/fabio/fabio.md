@@ -51,7 +51,7 @@ products:
     out
   - File was not able to be retrieved when checked on 2025-12-17_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2025-12-17: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2025-12-18: FTP error: timed
     out'
 - category: OntologyProduct
   description: OpenBioDiv-O, the OpenBiodiv Ontology

@@ -164,6 +164,7 @@ enrichr-kg,active,PASS
 ensembl,active,PASS
 entrez,active,PASS
 envo,active,PASS
+eol-traitbank,active,PASS
 epigraphdb,active,PASS
 epio,active,PASS
 epsd,active,PASS

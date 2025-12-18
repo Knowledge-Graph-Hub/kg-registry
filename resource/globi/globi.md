@@ -61,8 +61,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Tab-separated verbatim species interaction pairs (original unresolved
@@ -85,8 +87,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Tab-separated refuted species interaction pairs (interpreted names)
@@ -107,8 +111,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Comma-separated refuted verbatim species interaction pairs (original
@@ -122,8 +128,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: RDF N-Quads representation of interaction data
@@ -160,8 +168,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Tab-separated taxonomic name mapping file
@@ -198,8 +208,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Tab-separated refuted species interactions (original unresolved names)
@@ -217,7 +229,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint

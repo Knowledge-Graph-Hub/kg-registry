@@ -40,7 +40,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing citation information for all PubMed articles in
@@ -52,7 +52,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing entity information with UMLS concept identifiers,
@@ -64,7 +64,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing semantic predications with subject-predicate-object
@@ -76,7 +76,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing sentence information from PubMed citations
@@ -87,7 +87,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic
