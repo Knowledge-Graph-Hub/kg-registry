@@ -7,5 +7,8 @@ id: knowwheregraph.ontology
 is_public: true
 name: KnowWhereGraph Ontology Documentation
 product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
+warnings:
+- File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
+  to URL
 layout: product_detail
 ---

@@ -66,8 +66,12 @@ products:
   name: KnowWhereGraph Ontology Documentation
   product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-17: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+    to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
+    exceeded with url: /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host=''stko-kwg.geog.ucsb.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 publications:
 - authors:
   - Zhu R
