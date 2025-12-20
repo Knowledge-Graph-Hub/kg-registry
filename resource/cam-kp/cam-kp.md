@@ -1,5 +1,5 @@
 ---
-activity_status: active
+activity_status: inactive
 category: KnowledgeGraph
 contacts:
   - category: Individual
