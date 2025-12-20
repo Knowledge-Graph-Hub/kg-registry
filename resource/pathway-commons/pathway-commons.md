@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: KnowledgeGraph
+category: Aggregator
 contacts:
   - category: Organization
     contact_details:
