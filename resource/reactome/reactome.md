@@ -10,7 +10,7 @@ contacts:
     value: reactome-help@reactome.org
   label: Reactome Support
   orcid: null
-creation_date: '2003-01-01T00:00:00Z'
+creation_date: '2025-03-17T00:00:00Z'
 description: Reactome is a comprehensive, curated, and peer-reviewed pathway database representing human biological processes. It integrates information on biological molecules including proteins, small molecules, and RNA, organizing them into networks of functional interactions organized as pathways. With sophisticated graph database backend and multiple data access formats, Reactome is an essential resource for systems biology, functional genomics, drug discovery, and biomedical research, providing insights into gene function in the context of cellular and organismal processes.
 domains:
 - biological systems
@@ -1593,7 +1593,7 @@ products:
   name: Reactome Pathway CAMs
   original_source:
   - reactome
-repository: ''
+repository: https://github.com/reactome
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
