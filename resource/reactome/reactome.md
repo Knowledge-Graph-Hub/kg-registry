@@ -35,6 +35,63 @@ products:
   product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   secondary_source:
   - reactome
+- category: GraphProduct
+  description: Complete Reactome pathway data in BioPAX (Biological Pathway Exchange) format, the standard RDF/OWL-based language for representing biological pathways at molecular and cellular levels
+  format: owl
+  id: reactome.biopax
+  name: Reactome BioPAX Format
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Reactome pathway data in SBML (Systems Biology Markup Language) format for computational modeling and systems biology applications, including kinetic information
+  format: sbml
+  id: reactome.sbml
+  name: Reactome SBML Format
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Reactome data in RDF/XML format for semantic web integration and knowledge graph applications
+  format: rdfxml
+  id: reactome.rdf
+  name: Reactome RDF/XML Format
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Complete Reactome pathway database in native Neo4j graph database format, supporting interactive exploration and complex relationship queries
+  dump_format: neo4j
+  format: neo4j
+  id: reactome.neo4j
+  name: Reactome Neo4j Graph Database
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Reactome pathway and interaction data in flat file format (TSV), including curated protein complex compositions and pathway-gene associations
+  format: tsv
+  id: reactome.flat
+  name: Reactome Flat Files
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: ProgrammingInterface
+  description: RESTful web service API for programmatic access to Reactome pathway data and content, supporting JSON responses for web applications and tools
+  format: http
+  id: reactome.api
+  name: Reactome REST API
+  original_source:
+  - reactome
+  product_url: https://reactome.org/ContentService/
+- category: GraphicalInterface
+  description: Interactive pathway browser providing visual exploration of human biological pathways, reactions, and molecular interactions with integrated visualization tools
+  format: http
+  id: reactome.browser
+  name: Reactome Pathway Browser
+  original_source:
+  - reactome
+  product_url: https://reactome.org/PathwayBrowser/
 - category: MappingProduct
   description: Rhea SSSOM
   format: sssom
