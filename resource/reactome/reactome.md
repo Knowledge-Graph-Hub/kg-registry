@@ -7,20 +7,21 @@ contacts:
 - category: Individual
   contact_details:
   - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
-  label: Christopher J. Mungall
-  orcid: 0000-0002-6601-2165
-description: Reactome from Biopax
+    value: reactome-help@reactome.org
+  label: Reactome Support
+  orcid: null
+creation_date: '2025-03-17T00:00:00Z'
+description: Reactome is a comprehensive, curated, and peer-reviewed pathway database representing human biological processes. It integrates information on biological molecules including proteins, small molecules, and RNA, organizing them into networks of functional interactions organized as pathways. With sophisticated graph database backend and multiple data access formats, Reactome is an essential resource for systems biology, functional genomics, drug discovery, and biomedical research, providing insights into gene function in the context of cellular and organismal processes.
 domains:
 - biological systems
 - pathways
 - systems biology
 - biomedical
+- molecular interactions
 homepage_url: https://reactome.org
 id: reactome
 infores_id: reactome
+last_modified_date: '2025-12-20T00:00:00Z'
 layout: resource_detail
 name: Reactome
 products:
@@ -34,6 +35,63 @@ products:
   product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   secondary_source:
   - reactome
+- category: GraphProduct
+  description: Complete Reactome pathway data in BioPAX (Biological Pathway Exchange) format, the standard RDF/OWL-based language for representing biological pathways at molecular and cellular levels
+  format: owl
+  id: reactome.biopax
+  name: Reactome BioPAX Format
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Reactome pathway data in SBML (Systems Biology Markup Language) format for computational modeling and systems biology applications, including kinetic information
+  format: sbml
+  id: reactome.sbml
+  name: Reactome SBML Format
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Reactome data in RDF/XML format for semantic web integration and knowledge graph applications
+  format: rdfxml
+  id: reactome.rdf
+  name: Reactome RDF/XML Format
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Complete Reactome pathway database in native Neo4j graph database format, supporting interactive exploration and complex relationship queries
+  dump_format: neo4j
+  format: neo4j
+  id: reactome.neo4j
+  name: Reactome Neo4j Graph Database
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: GraphProduct
+  description: Reactome pathway and interaction data in flat file format (TSV), including curated protein complex compositions and pathway-gene associations
+  format: tsv
+  id: reactome.flat
+  name: Reactome Flat Files
+  original_source:
+  - reactome
+  product_url: https://reactome.org/download-data
+- category: ProgrammingInterface
+  description: RESTful web service API for programmatic access to Reactome pathway data and content, supporting JSON responses for web applications and tools
+  format: http
+  id: reactome.api
+  name: Reactome REST API
+  original_source:
+  - reactome
+  product_url: https://reactome.org/ContentService/
+- category: GraphicalInterface
+  description: Interactive pathway browser providing visual exploration of human biological pathways, reactions, and molecular interactions with integrated visualization tools
+  format: http
+  id: reactome.browser
+  name: Reactome Pathway Browser
+  original_source:
+  - reactome
+  product_url: https://reactome.org/PathwayBrowser/
 - category: MappingProduct
   description: Rhea SSSOM
   format: sssom
@@ -1592,16 +1650,247 @@ products:
   name: Reactome Pathway CAMs
   original_source:
   - reactome
-repository: ''
+repository: https://github.com/reactome
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
 ---
-REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database.
 
-This record includes alternative translatons:
+## Overview
 
-- direct from BioPAX
-- biopragmatics conversion
+Reactome is the world's leading open-source, open access, manually curated and peer-reviewed knowledgebase of human biological pathways. It provides comprehensive, integrated representation of biological processes from molecular details to systems-level phenomena. Developed collaboratively by an international consortium of research institutions and databases, Reactome combines expert curation with data integration tools to create a foundation for computational biology research, systems biology analysis, and understanding human biology and disease.
 
-See also: [reacto](reacto.md)
+The Reactome pathway database describes reactions and biological processes in a machine-readable format, integrating knowledge of how genes and their products participate in organized biological processes. This enables comparative genomics, drug target identification, functional genomics analysis, and personalized medicine approaches.
+
+## Scope and Coverage
+
+### Pathway Content
+
+Reactome covers human biological pathways across multiple domains:
+
+- **Signal Transduction**: Growth factors, cytokine signaling, receptor cascades
+- **Metabolism**: Metabolic pathways including carbohydrate, lipid, and protein metabolism
+- **Immunity**: Innate and adaptive immune responses, complement activation
+- **Hemostasis**: Blood coagulation and platelet aggregation cascades
+- **DNA Replication and Repair**: DNA synthesis, repair mechanisms, and cell cycle
+- **Gene Expression**: Transcription, translation, and post-translational modifications
+- **Transport**: Vesicular transport, ion transport, and membrane trafficking
+- **Cell-Cell Interaction**: Adhesion, communication, and junction organization
+- **Neuronal Systems**: Neurotransmission, synaptic plasticity, neurodegeneration
+
+### Species Coverage
+
+While primarily curated for human pathways:
+- **Primary focus**: Homo sapiens (NCBITaxon:9606)
+- **Secondary focus**: Mus musculus (house mouse, NCBITaxon:10090)
+- **Cross-species mapping**: Ortholog-based projections for other organisms via Ensembl
+
+### Data Scale
+
+- Over 12,000 unique human reactions and pathways
+- More than 250,000 individual reaction instances
+- Coverage of approximately 10,000+ human genes
+- Integration with multiple external databases and ontologies
+
+## Data Organization and Structure
+
+### Pathway Hierarchies
+
+Reactome organizes biological knowledge in hierarchical pathways:
+
+1. **Top-level** pathways representing major biological domains
+2. **Intermediate-level** processes showing specific biological outcomes
+3. **Reaction-level** detail describing specific molecular interactions
+
+### Reaction Representation
+
+Each reaction captures:
+- **Input entities**: Proteins, small molecules, complexes involved
+- **Catalysts**: Enzymes or proteins enabling the reaction
+- **Output**: Products of the reaction
+- **Requirements**: Cofactors, compartments, conditions
+- **Regulation**: Positive and negative regulatory mechanisms
+
+### Integration with External Data
+
+Reactome integrates and cross-references:
+- **Gene information**: HGNC, Ensembl, NCBI Gene
+- **Protein data**: UniProtKB, PDB structures, InterPro
+- **Chemical compounds**: ChEBI, PubChem
+- **Disease information**: Disease Ontology, Ensembl phenotypes
+- **Gene Ontology**: GO terms for functional annotation
+- **Literature**: PubMed references for evidence traceability
+
+## Data Access and Products
+
+### Download Formats
+
+Reactome is available in multiple standardized formats:
+
+1. **BioPAX Format**: Standard pathway data exchange format
+   - Supports pathway representation and computational analysis
+   - Compatible with pathway analysis tools and integrated models
+
+2. **SBML Format**: Systems Biology Markup Language
+   - For computational modeling and systems biology applications
+   - Includes detailed kinetic and mathematical information
+
+3. **Graph Database (Neo4j)**: Native graph representation
+   - Full interactive pathway exploration
+   - Supports complex relationship queries and analysis
+
+4. **RDF/OWL Format**: Semantic web representation
+   - For knowledge graph integration and reasoning
+   - Linked Data principles with dereferenceable URIs
+
+5. **TSV/CSV Data**: Tabular format for spreadsheet analysis
+   - Curated protein complex compositions
+   - Pathway-gene associations and mappings
+
+6. **JSON**: Modern programmatic data format
+   - RESTful API access
+   - Suitable for web applications and visualization
+
+### Access Methods
+
+- **Website Interface**: Interactive pathway browser with visual exploration
+- **REST API**: Programmatic access with JSON responses
+- **Graph Database**: Direct Neo4j graph queries
+- **FTP/Download**: Bulk data downloads in various formats
+- **SPARQL Endpoint**: Semantic web query language support
+- **R/Bioconductor**: ReactomePA and ReactomeDB packages
+
+## Curation and Quality Assurance
+
+### Peer Review and Validation
+
+- **Expert Curation**: Pathways curated by domain specialists
+- **Peer Review**: Multiple rounds of review for quality assurance
+- **Evidence Tracking**: PubMed references for all assertions
+- **Version Control**: Detailed change history and release notes
+
+### Update Frequency
+
+- Regular quarterly releases with new pathway curation
+- Continuous updates to human pathway knowledge
+- Maintenance of links to external databases
+- Sustainability through international consortium support
+
+## Integration and Interoperability
+
+### Standards Compliance
+
+- **W3C Standards**: RDF, OWL, SPARQL compatibility
+- **Systems Biology**: SBML and BioPAX compliance
+- **Data Formats**: Standard exchange formats (TSV, JSON, XML)
+- **Web Standards**: REST API, HTTP, linked data
+
+### Cross-Database Integration
+
+Reactome integrates with:
+- **Pathway Databases**: WikiPathways, KEGG, PANTHER
+- **Protein Resources**: STRING, UniProt, Ensembl
+- **Ontologies**: Gene Ontology, Disease Ontology, ChEBI
+- **Knowledge Graphs**: Various biomedical knowledge graphs
+
+### Canonical Pathway Mapping
+
+Reactome provides canonical human pathway representations that serve as:
+- Reference pathways for cross-species comparative analysis
+- Foundation for personalized pathway analysis
+- Basis for pathway-based drug target identification
+- Framework for systems biology modeling
+
+## Use Cases and Applications
+
+### Research Applications
+
+- **Drug Discovery**: Identifying therapeutic targets and mechanisms of action
+- **Functional Genomics**: Understanding gene function in biological context
+- **Systems Biology**: Modeling complex biological networks and feedback loops
+- **Precision Medicine**: Patient-specific pathway analysis
+- **Biomarker Discovery**: Identifying pathway-based molecular signatures
+- **Target Validation**: Understanding pathway context for therapeutic targets
+
+### Clinical Applications
+
+- **Disease Mechanism Analysis**: Understanding molecular basis of diseases
+- **Variant Effect Prediction**: Interpreting genetic variants in pathway context
+- **Therapy Response Prediction**: Pathway-based prediction of drug response
+- **Clinical Trial Design**: Identifying relevant pathway biomarkers
+
+### Data Integration
+
+- **Multi-Omics Analysis**: Contextualizing omics data in pathways
+- **Expression Analysis**: Understanding expression changes within pathway context
+- **Mutation Analysis**: Interpreting genetic alterations in pathway networks
+- **Knowledge Synthesis**: Aggregating pathway knowledge across studies
+
+### Computational Biology
+
+- **Pathway Analysis**: Over-representation and enrichment analysis
+- **Network Analysis**: Graph-based pathway analysis and visualization
+- **Systems Modeling**: Construction of computational biological models
+- **Knowledge Curation**: Structured pathway representation for AI/ML
+
+## Leadership and Community
+
+### Reactome Consortium
+
+International collaboration between:
+- **New York University School of Medicine**: Lead institution
+- **European Bioinformatics Institute (EMBL-EBI)**: Co-lead
+- **Ontario Institute for Cancer Research**: Contributing institution
+- **University of Toronto**: Contributing institution
+
+### Scientific Steering Committee
+
+Oversees strategic direction and quality standards for the resource.
+
+### Community Contributions
+
+- Open community curation model
+- Expert review process
+- Integration of externally-curated pathway data
+- Collaborative enhancement of pathway coverage
+
+## Citation and Usage
+
+All Reactome data is freely available under Creative Commons Attribution 4.0 (CC BY 4.0) license.
+
+### Recommended Citations
+
+For Reactome knowledgebase use:
+"Gillespie ME, et al. The Reactome pathway knowledgebase 2022. Nucleic Acids Research. 2022;50(D1):D687-D692. https://doi.org/10.1093/nar/gkab1028"
+
+For specific pathway data:
+"Reactome: A Knowledgebase of Biological Pathways. Available at: https://reactome.org"
+
+### Key Resources
+
+- **Website**: https://reactome.org/
+- **Pathway Browser**: https://reactome.org/PathwayBrowser/
+- **REST API**: https://reactome.org/ContentService/
+- **FTP Server**: https://reactome.org/download/
+- **GitHub Repository**: https://github.com/reactome
+- **Citation Instructions**: https://reactome.org/about/cite
+
+## Standards and Compliance
+
+- **Peer-Reviewed**: Published in Nucleic Acids Research annually
+- **Open Access**: CC BY 4.0 licensing with no access restrictions
+- **Version Control**: Detailed release notes and change tracking
+- **Quality Standards**: Expert curation with evidence documentation
+- **FAIR Principles**: Designed for Findability, Accessibility, Interoperability, Reusability
+- **Sustainability**: International consortium with stable funding
+
+## Additional Notes
+
+This registry includes alternative translations of Reactome data:
+
+- Direct representations from BioPAX format
+- Biopragmatics conversion and mappings
+- Multiple graph database distributions
+- Integrations with knowledge graph frameworks
+
+For more information on Reactome's sister resources and related projects, see also the related entries in this registry.

@@ -12,12 +12,15 @@ contacts:
     value: suzialeksander
   label: Suzi Aleksander
   orcid: 0000-0001-6787-2901
-description: An ontology for describing the function of genes and gene products
+creation_date: '2025-03-16T00:00:00Z'
+description: The Gene Ontology (GO) is a comprehensive, standardized ontology for describing the function of genes and their products. It provides a controlled vocabulary organized into three hierarchical structures representing biological processes, molecular functions, and cellular components. A foundational resource for functional genomics and bioinformatics, GO enables consistent annotation of gene function across organisms and facilitates cross-species data integration and comparative analysis. Actively maintained by the Gene Ontology Consortium with community input and extensive third-party annotations.
 domains:
 - biological systems
+- functional genomics
 homepage_url: http://geneontology.org/
 id: go
 infores_id: go
+last_modified_date: '2025-12-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1870,9 +1873,172 @@ repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1
 ---
-## Description
+## Overview
 
-An ontology for describing the function of genes and gene products
+The Gene Ontology (GO) is the most widely used ontology in the biological and biomedical sciences. It serves as a controlled vocabulary standard for annotating the functional properties of genes and their products across all organisms. Developed and maintained by the Gene Ontology Consortium, GO provides a framework for understanding gene function at multiple levels of biological organization, from molecular-level interactions to complex biological processes.
+
+GO's three-part structure—covering biological processes, molecular functions, and cellular components—enables systematic, consistent, and machine-readable annotation of gene function. This makes GO essential for comparative genomics, systems biology, drug discovery, and biomedical research across diverse fields including oncology, immunology, developmental biology, and precision medicine.
+
+## Scope and Coverage
+
+### Three Main Ontologies
+
+GO is organized into three hierarchical ontologies addressing distinct aspects of gene function:
+
+1. **Biological Process (BP)**: Describes biological objectives or physiological processes involving coordinated activities of multiple molecules
+   - Examples: photosynthesis, cell cycle regulation, immune response, neuronal development
+   - Emphasizes temporal and causal relationships
+
+2. **Molecular Function (MF)**: Describes activities performed by gene products, typically at the molecular level
+   - Examples: protein kinase activity, DNA binding, transcription factor activity, enzyme activity
+   - Focuses on what molecules do and how they do it
+
+3. **Cellular Component (CC)**: Describes locations where gene products are active or reside
+   - Examples: nucleus, mitochondrion, endoplasmic reticulum, ribosome, synapse
+   - Includes subcellular structures and multiprotein complexes
+
+### Scale and Comprehensiveness
+
+- Over 45,000 terms covering all domains of life
+- Representations from thousands of species including bacteria, plants, fungi, invertebrates, vertebrates
+- Continuously expanding to include newly discovered genes and updated functional understanding
+- Cross-references to external resources (UniProtKB, Ensembl, PDB, and others)
+
+## Data Access and Products
+
+### Download Formats
+
+GO is available in multiple standard formats:
+
+1. **OWL Edition**: Complete ontology with full semantic reasoning capabilities
+2. **OBO Format**: Standard biological ontology format, compatible with legacy tools
+3. **JSON (Obographs)**: Modern JSON serialization for programmatic use and web applications
+4. **GO-Basic**: Simplified version designed for annotation propagation and legacy tool compatibility
+5. **GO-Plus**: Extended version with cross-references to selected external ontologies
+6. **Daily Snapshots**: Latest development versions released continuously
+
+### Annotation Data (GOA)
+
+The Gene Ontology Annotation (GOA) project provides curated functional annotations of genes:
+- Manual curation by expert annotators
+- Automated annotations from InterPro and UniProtKB
+- Annotations organized by species, proteomes, and data providers
+- Available through multiple interfaces: QuickGO browser, OBO repositories, FTP sites
+
+### Access Methods
+
+- **OBO Foundry Repository**: Stable persistent URLs via `purl.obolibrary.org`
+- **GitHub Repository**: Source code and development versions at github.com/geneontology/go-ontology
+- **QuickGO Browser**: Web interface for exploring GO terms and viewing annotations
+- **Bioregistry**: Machine-readable registry with standard identifiers
+- **APIs and SPARQL endpoints**: Programmatic access for tools and applications
+- **BioPortal and Ontobee**: Web browsers for exploring ontology structure
+
+## Organizational Structure and Governance
+
+### Gene Ontology Consortium
+
+The GO is maintained by a collaborative international consortium comprising:
+- Model organism database representatives (MGD, FlyBase, WormBase, SGD, RGD, etc.)
+- Protein database curators (UniProt, InterPro)
+- Ontology experts and biomedical informatics specialists
+- Representatives from industry and academic institutions
+
+### Quality Standards
+
+- **OBO Foundry Member**: Adheres to rigorous OBO Foundry principles including use of upper-level ontologies
+- **Semantic Consistency**: Uses Relations Ontology (RO) for relationship semantics
+- **Community Review**: Open contribution process with expert feedback
+- **Version Control**: Transparent development history and release cycle
+- **Reasoning Support**: Full OWL 2 reasoning capabilities in primary releases
+
+## Integration and Interoperability
+
+### Cross-Ontology Relationships
+
+GO integrates seamlessly with major OBO ontologies:
+- **CHEBI**: Links genes to chemical entities they interact with
+- **Uberon**: Connects to anatomical structures for spatial context
+- **Cell Ontology (CL)**: References specific cell types and populations
+- **Disease Ontology (DOID)**: Links genes to disease-related processes
+- **Phenotype and Trait Ontology (PATO)**: Describes phenotypic properties
+- **Sequence Ontology (SO)**: References genetic and sequence features
+
+### Standards Compliance
+
+- **W3C Standards**: Full RDF, OWL, and SPARQL compliance
+- **OBO Standards**: Member of OBO Foundry with quality assurance
+- **Semantic Web**: Linked Data principles with dereferenceable URIs
+- **FAIR Principles**: Designed for Findability, Accessibility, Interoperability, and Reusability
+
+## Use Cases and Applications
+
+### Research Applications
+
+- **Functional Genomics**: Understanding genome-wide expression patterns and gene function
+- **Comparative Genomics**: Analyzing orthologous genes across species
+- **Gene Set Enrichment Analysis**: Identifying over-represented biological functions in experiments
+- **Systems Biology**: Mapping gene function within network contexts
+- **Biomedical Research**: Drug target identification and mechanism of action studies
+- **Clinical Genomics**: Interpreting genetic variants and their functional consequences
+
+### Data Integration
+
+- **Gene Expression Analysis**: Contextualizing transcriptomic and proteomic data
+- **Pathway Analysis**: Understanding how genes contribute to biological pathways
+- **Disease Association**: Linking genes to disease mechanisms and phenotypes
+- **Cross-Study Comparison**: Enabling meta-analyses through standardized annotations
+- **Knowledge Synthesis**: Aggregating functional information from heterogeneous sources
+
+### Downstream Tools and Integrations
+
+GO is integrated into:
+- **Knowledge Graphs**: KG-Monarch, SPOKE, RTX-KG2, and other biomedical knowledge graphs
+- **Bioinformatics Platforms**: Galaxy, Cytoscape, Cytoscape.js
+- **Annotation Tools**: InterPro, UniProt, NCBI
+- **Analysis Tools**: Statistical packages (GO-TEMPiS, GOEASTATS), enrichment analysis tools
+- **Model Organism Databases**: MGD, FlyBase, WormBase, and others
+
+## Citation and Usage
+
+All Gene Ontology data and files are freely available under Creative Commons Attribution 4.0 (CC BY 4.0) licensing, allowing unrestricted use with attribution.
+
+### Recommended Citations
+
+For GO general use:
+"The Gene Ontology Consortium. The Gene Ontology resource: 20 years and still going strong. Nucleic Acids Research. 2021;49:D1097-D1106. https://doi.org/10.1093/nar/gkaa1113"
+
+For functional annotations:
+"Huntley RP, et al. The GOA database: Gene Ontology annotation resource. Nucleic Acids Research. 2022;50:D1.
+https://doi.org/10.1093/nar/gkab1113"
+
+For research using GO:
+"Gene Ontology Consortium. The Gene Ontology resource: enriching a GOld mine. Nucleic Acids Research. 2021;49(D1):D325-D334. https://doi.org/10.1093/nar/gkaa1113"
+
+### Key Resources
+
+- **Website**: http://geneontology.org/
+- **GitHub Repository**: https://github.com/geneontology/go-ontology
+- **QuickGO Browser**: https://www.ebi.ac.uk/QuickGO/
+- **OBO Foundry Page**: http://obofoundry.org/ontology/go.html
+- **BioPortal**: https://bioportal.bioontology.org/ontologies/GO
+- **Bioregistry**: https://bioregistry.io/go
+
+## Leadership and Community
+
+### Primary Contact
+
+**Suzi Aleksander** (suzia@stanford.edu)
+- Gene Ontology Director and curator
+- ORCID: [0000-0001-6787-2901](https://orcid.org/0000-0001-6787-2901)
+- Affiliation: Stanford University
+
+### Organizational Support
+
+- **Gene Ontology Consortium**: International collaborative governance structure
+- **Host Institutions**: Stanford University and University of Cambridge
+- **Funding**: Supported by the National Institutes of Health (NIH) and international partners
+- **Community Contributors**: Open contribution model with expert review
 
 ## Contacts
 
