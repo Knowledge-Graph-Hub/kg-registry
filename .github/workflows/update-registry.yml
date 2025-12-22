@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          git add registry/kgs.jsonld registry/kgs.yml registry/parquet/*.parquet
+          git add registry/kgs.jsonld registry/kgs.yml registry/parquet/*.parquet registry/taxon_mapping.yaml
           git add registry/parquet-downloads.html assets/js/duckdb/*
           git add resource/*.md reports/ _config.yml _data/schema.yaml
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update registry files" && git push)
