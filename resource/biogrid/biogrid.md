@@ -25,7 +25,7 @@ domains:
 homepage_url: https://thebiogrid.org/
 id: biogrid
 infores_id: biogrid
-last_modified_date: '2025-08-23T00:00:00Z'
+last_modified_date: '2025-12-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -57,7 +57,7 @@ products:
     (non-redundant and raw interactions combined)
   format: psi_mi_mitab
   id: biogrid.interactions.mitab
-  latest_version: 4.4.248
+  latest_version: 5.0.252
   name: BIOGRID-ALL-LATEST.mitab.zip
   product_url: https://downloads.thebiogrid.org/BioGRID/Latest-Release/BIOGRID-ALL-LATEST.mitab.zip
   secondary_source:
@@ -68,7 +68,7 @@ products:
     format
   format: tsv
   id: biogrid.interactions.tab3
-  latest_version: 4.4.248
+  latest_version: 5.0.252
   name: BIOGRID-ALL-LATEST.tab3.zip
   product_url: https://downloads.thebiogrid.org/BioGRID/Latest-Release/BIOGRID-ALL-LATEST.tab3.zip
   secondary_source:
@@ -78,9 +78,19 @@ products:
   description: Post-translational modification (PTM) site dataset curated by BioGRID
   format: tsv
   id: biogrid.ptm
-  latest_version: 4.4.248
+  latest_version: 5.0.252
   name: BIOGRID-PTMS-LATEST.ptm.zip
   product_url: https://downloads.thebiogrid.org/BioGRID/Latest-Release/BIOGRID-PTMS-LATEST.ptm.zip
+  secondary_source:
+  - biogrid
+- category: GraphProduct
+  compression: zip
+  description: Protein-chemical interactions for the entire BioGRID dataset. The file is a modified version of the BioGRID Tab 2.0 format, designed to add in columns for chemical specific annotation.
+  format: tsv
+  id: biogrid.chemicals
+  latest_version: 5.0.252
+  name: BIOGRID-CHEMICALS-LATEST.chemtab.zip
+  product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-CHEMICALS-LATEST.chemtab.zip
   secondary_source:
   - biogrid
 - category: GraphProduct
@@ -906,6 +916,9 @@ publications:
   year: '2006'
 taxon:
 - NCBITaxon:9606
+- NCBITaxon:4932
+- NCBITaxon:4896
+- NCBITaxon:3702
 ---
 # BioGRID
 
