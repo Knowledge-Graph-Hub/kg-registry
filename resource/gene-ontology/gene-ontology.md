@@ -10,11 +10,18 @@ id: gene-ontology
 last_modified_date: '2025-12-18T00:00:00Z'
 layout: resource_detail
 name: Gene-ontology
+products:
+- category: Product
+  description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
+    by Gene Ontology biocurators linking genes, proteins, and biological processes
+  id: cam-kp.go-cams
+  name: Gene Ontology CAMs
+  original_source:
+  - gene-ontology
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
 ---
-
 # Gene-ontology
 
 This is an automatically generated stub page for gene-ontology. Please update with proper information.

@@ -1057,7 +1057,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -1075,7 +1075,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
     when accessing file'
 publications:
 - authors:

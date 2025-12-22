@@ -50,9 +50,9 @@ brenda,active,PASS
 bspo,active,PASS
 bto,active,PASS
 bv-brc,active,PASS
-cam-kp,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
+catalogue-of-life,active,PASS
 ccle,active,PASS
 cdao,active,PASS
 cdiscvocab,active,PASS
@@ -207,6 +207,7 @@ genage,active,PASS
 gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
+gene-ontology,active,PASS
 genebass,active,PASS
 genecards,active,PASS
 genemania,active,PASS
@@ -427,6 +428,7 @@ owlsim,active,PASS
 pankbase,active,PASS
 panther,active,PASS
 pathophenodb,active,PASS
+pathway-commons,active,PASS
 pathwhiz,active,PASS
 pato,active,PASS
 pcl,active,PASS
@@ -604,6 +606,7 @@ bind,inactive,PASS
 bio2rdf,inactive,PASS
 bootstrep,inactive,PASS
 cacao,inactive,PASS
+cam-kp,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
 cmf,inactive,PASS

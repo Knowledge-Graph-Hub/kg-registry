@@ -37,7 +37,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
@@ -57,7 +57,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
@@ -77,7 +77,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-13_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
@@ -97,7 +97,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'
@@ -117,7 +117,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
     exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1017)'')))'

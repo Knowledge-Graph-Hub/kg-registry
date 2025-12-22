@@ -1,11 +1,11 @@
 ---
 category: GraphicalInterface
-description: Web interface for browsing Bio2RDF resources
+description: Web-based interface for browsing and exploring Bio2RDF resources and
+  linked data across biological databases
 format: http
 id: bio2rdf.web
+is_public: true
 name: Bio2RDF Web Interface
-original_source:
-- bio2rdf
 product_url: https://bio2rdf.org
 layout: product_detail
 ---

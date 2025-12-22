@@ -72,7 +72,7 @@ products:
     port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
     to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
     exceeded with url: /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host=''stko-kwg.geog.ucsb.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'

@@ -76,7 +76,7 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
     when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
@@ -103,7 +103,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
@@ -1146,8 +1146,26 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
     when accessing file'
+- category: MappingProduct
+  compression: zip
+  description: A single delimited text file format containing a list of mappings between
+    different identifiers stored in BioGRID and the identifiers used in downloads.
+  format: tsv
+  id: biogrid.identifiers
+  latest_version: 5.0.252
+  name: BIOGRID-IDENTIFIERS-LATEST.tab.zip
+  original_source:
+  - biogrid
+  - uniprot
+  - ncbigene
+  - zfin
+  - xenbase
+  - hgnc
+  product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
+  secondary_source:
+  - biogrid
 repository: https://github.com/ZFIN/
 taxon:
 - NCBITaxon:7955

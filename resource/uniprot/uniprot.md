@@ -103,7 +103,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-22: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -154,7 +154,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -659,7 +659,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -889,6 +889,24 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
+- category: MappingProduct
+  compression: zip
+  description: A single delimited text file format containing a list of mappings between
+    different identifiers stored in BioGRID and the identifiers used in downloads.
+  format: tsv
+  id: biogrid.identifiers
+  latest_version: 5.0.252
+  name: BIOGRID-IDENTIFIERS-LATEST.tab.zip
+  original_source:
+  - biogrid
+  - uniprot
+  - ncbigene
+  - zfin
+  - xenbase
+  - hgnc
+  product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
+  secondary_source:
+  - biogrid
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

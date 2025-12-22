@@ -18,7 +18,7 @@ warnings:
   header found
 - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-12-17_ HTTP 429 error when
-  accessing file
+- File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
+  to URL
 layout: product_detail
 ---

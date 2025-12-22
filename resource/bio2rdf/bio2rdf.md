@@ -2,119 +2,134 @@
 activity_status: inactive
 category: Aggregator
 contacts:
-  - category: Individual
-    label: Michel Dumontier
-    contact_details:
-      - contact_type: url
-        value: "https://www.maastrichtuniversity.nl/"
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.maastrichtuniversity.nl/research/institutes/institute-data-science"
-    id: "maastricht-ids"
-    label: "Maastricht University Institute of Data Science"
+- category: Individual
+  contact_details:
+  - contact_type: url
+    value: https://www.maastrichtuniversity.nl/
+  label: Michel Dumontier
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.maastrichtuniversity.nl/research/institutes/institute-data-science
+  id: maastricht-ids
+  label: Maastricht University Institute of Data Science
 creation_date: '2025-12-18T00:00:00Z'
-last_modified_date: '2025-12-20T00:00:00Z'
-description: Bio2RDF (Linked Biomedical RDF Network) is a large-scale open-source semantic web integration project that converts over 35 diverse biological and biomedical databases into standardized RDF (Resource Description Framework) linked data, providing 11 billion RDF triples accessible through SPARQL endpoints and REST APIs. It enables federated queries across heterogeneous data sources using W3C standards and the Semanticscience Integrated Ontology (SIO).
+description: Bio2RDF (Linked Biomedical RDF Network) is a large-scale open-source
+  semantic web integration project that converts over 35 diverse biological and biomedical
+  databases into standardized RDF (Resource Description Framework) linked data, providing
+  11 billion RDF triples accessible through SPARQL endpoints and REST APIs. It enables
+  federated queries across heterogeneous data sources using W3C standards and the
+  Semanticscience Integrated Ontology (SIO).
 domains:
-  - biomedical
-  - genomics
+- biomedical
+- genomics
 homepage_url: https://bio2rdf.org
-id: "bio2rdf"
-infores_id: "bio2rdf"
+id: bio2rdf
+infores_id: bio2rdf
+last_modified_date: '2025-12-20T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/3.0/"
-  label: "CC BY 3.0"
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
 name: Bio2RDF (Linked Biomedical RDF Network)
 products:
-  - category: ProgrammingInterface
-    description: SPARQL 1.1 endpoint powered by OpenLink Virtuoso for querying Bio2RDF linked data across 35+ integrated biomedical databases with federated query support
-    format: http
-    id: "bio2rdf.sparql"
-    is_public: true
-    name: Bio2RDF SPARQL Endpoint
-    product_url: "https://bio2rdf.org/sparql"
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to Bio2RDF linked data with support for SPARQL queries and multiple result formats
-    format: http
-    id: "bio2rdf.api"
-    is_public: true
-    name: Bio2RDF REST API
-    product_url: "https://github.com/bio2rdf/bio2rdf-api"
-  - category: Product
-    description: Downloadable RDF triple stores and datasets in multiple serialization formats (Turtle, N-Triples, RDF/XML, N3) from 35+ integrated biological databases
-    id: "bio2rdf.dumps"
-    name: Bio2RDF RDF Dumps and Downloads
-    product_url: "https://download.bio2rdf.org/"
-  - category: GraphicalInterface
-    description: Web-based interface for browsing and exploring Bio2RDF resources and linked data across biological databases
-    format: http
-    id: "bio2rdf.web"
-    is_public: true
-    name: Bio2RDF Web Interface
-    product_url: "https://bio2rdf.org"
-  - category: Product
-    description: BioSearch semantic search engine for Bio2RDF providing full-text and semantic search across integrated biological databases
-    id: "bio2rdf.biosearch"
-    name: BioSearch Semantic Search Engine
-    product_url: "https://biosemantics.org/biosearch"
+- category: ProgrammingInterface
+  description: SPARQL 1.1 endpoint powered by OpenLink Virtuoso for querying Bio2RDF
+    linked data across 35+ integrated biomedical databases with federated query support
+  format: http
+  id: bio2rdf.sparql
+  is_public: true
+  name: Bio2RDF SPARQL Endpoint
+  product_url: https://bio2rdf.org/sparql
+- category: ProgrammingInterface
+  description: REST API for programmatic access to Bio2RDF linked data with support
+    for SPARQL queries and multiple result formats
+  format: http
+  id: bio2rdf.api
+  is_public: true
+  name: Bio2RDF REST API
+  product_url: https://github.com/bio2rdf/bio2rdf-api
+- category: Product
+  description: Downloadable RDF triple stores and datasets in multiple serialization
+    formats (Turtle, N-Triples, RDF/XML, N3) from 35+ integrated biological databases
+  id: bio2rdf.dumps
+  name: Bio2RDF RDF Dumps and Downloads
+  product_url: https://download.bio2rdf.org/
+- category: GraphicalInterface
+  description: Web-based interface for browsing and exploring Bio2RDF resources and
+    linked data across biological databases
+  format: http
+  id: bio2rdf.web
+  is_public: true
+  name: Bio2RDF Web Interface
+  product_url: https://bio2rdf.org
+- category: Product
+  description: BioSearch semantic search engine for Bio2RDF providing full-text and
+    semantic search across integrated biological databases
+  id: bio2rdf.biosearch
+  name: BioSearch Semantic Search Engine
+  product_url: https://biosemantics.org/biosearch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-22: Timeout connecting
+    to URL'
 publications:
-  - authors:
-      - Belleau F
-      - Dumontier M
-    doi: "10.1186/2041-1480-2-S1-S1"
-    id: "doi:10.1186/2041-1480-2-S1-S1"
-    journal: "Journal of Biomedical Semantics"
-    preferred: true
-    title: "Bio2RDF: towards a mashup to build bioinformatics knowledge systems"
-    year: "2011"
-  - authors:
-      - Callahan A
-      - Cruz-Toledo J
-      - Ansell P
-      - Dumontier M
-    doi: "10.1186/2041-1480-4-S1-S1"
-    id: "doi:10.1186/2041-1480-4-S1-S1"
-    journal: "Journal of Biomedical Semantics"
-    title: "Bio2RDF Release 2: Improved Coverage, Interoperability and Provenance of Life Science Linked Data"
-    year: "2013"
-  - authors:
-      - Dumontier M
-      - Callahan A
-      - Cruz-Toledo J
-      - et al.
-    doi: "10.1186/2041-1480-5-14"
-    id: "doi:10.1186/2041-1480-5-14"
-    journal: "Journal of Biomedical Semantics"
-    title: "The Semanticscience Integrated Ontology (SIO) for biomedical research and knowledge discovery"
-    year: "2014"
-  - authors:
-      - Hu W
-      - Qiu H
-      - Huang J
-      - et al.
-    doi: "10.1093/database/bax059"
-    id: "doi:10.1093/database/bax059"
-    journal: "Database"
-    title: "BioSearch: a semantic search engine for Bio2RDF"
-    year: "2017"
-  - authors:
-      - Balaur I
-      - Dumontier M
-    doi: "10.1186/1471-2105-12-358"
-    id: "doi:10.1186/1471-2105-12-358"
-    journal: "BMC Bioinformatics"
-    title: "Chem2Bio2RDF: a semantic framework for linking and data mining chemogenomic and systems chemical biology data"
-    year: "2011"
-repository: "https://github.com/MaastrichtU-IDS/bio2rdf"
+- authors:
+  - Belleau F
+  - Dumontier M
+  doi: 10.1186/2041-1480-2-S1-S1
+  id: doi:10.1186/2041-1480-2-S1-S1
+  journal: Journal of Biomedical Semantics
+  preferred: true
+  title: 'Bio2RDF: towards a mashup to build bioinformatics knowledge systems'
+  year: '2011'
+- authors:
+  - Callahan A
+  - Cruz-Toledo J
+  - Ansell P
+  - Dumontier M
+  doi: 10.1186/2041-1480-4-S1-S1
+  id: doi:10.1186/2041-1480-4-S1-S1
+  journal: Journal of Biomedical Semantics
+  title: 'Bio2RDF Release 2: Improved Coverage, Interoperability and Provenance of
+    Life Science Linked Data'
+  year: '2013'
+- authors:
+  - Dumontier M
+  - Callahan A
+  - Cruz-Toledo J
+  - et al.
+  doi: 10.1186/2041-1480-5-14
+  id: doi:10.1186/2041-1480-5-14
+  journal: Journal of Biomedical Semantics
+  title: The Semanticscience Integrated Ontology (SIO) for biomedical research and
+    knowledge discovery
+  year: '2014'
+- authors:
+  - Hu W
+  - Qiu H
+  - Huang J
+  - et al.
+  doi: 10.1093/database/bax059
+  id: doi:10.1093/database/bax059
+  journal: Database
+  title: 'BioSearch: a semantic search engine for Bio2RDF'
+  year: '2017'
+- authors:
+  - Balaur I
+  - Dumontier M
+  doi: 10.1186/1471-2105-12-358
+  id: doi:10.1186/1471-2105-12-358
+  journal: BMC Bioinformatics
+  title: 'Chem2Bio2RDF: a semantic framework for linking and data mining chemogenomic
+    and systems chemical biology data'
+  year: '2011'
+repository: https://github.com/MaastrichtU-IDS/bio2rdf
 synonyms:
-  - Bio2RDF
-  - Linked Biomedical RDF Network
+- Bio2RDF
+- Linked Biomedical RDF Network
 taxon:
-  - "NCBITaxon:1"
+- NCBITaxon:1
 ---
-
 # Bio2RDF (Linked Biomedical RDF Network)
 
 ## Overview

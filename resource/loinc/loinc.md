@@ -58,7 +58,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
@@ -71,7 +71,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -84,7 +84,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 503 error
     when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

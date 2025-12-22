@@ -144,7 +144,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -701,7 +701,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
@@ -748,6 +748,24 @@ products:
   - hgnc
   - chembl
   - chebi
+- category: MappingProduct
+  compression: zip
+  description: A single delimited text file format containing a list of mappings between
+    different identifiers stored in BioGRID and the identifiers used in downloads.
+  format: tsv
+  id: biogrid.identifiers
+  latest_version: 5.0.252
+  name: BIOGRID-IDENTIFIERS-LATEST.tab.zip
+  original_source:
+  - biogrid
+  - uniprot
+  - ncbigene
+  - zfin
+  - xenbase
+  - hgnc
+  product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
+  secondary_source:
+  - biogrid
 repository: https://github.com/HGNC
 taxon:
 - NCBITaxon:9606

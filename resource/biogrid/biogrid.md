@@ -85,7 +85,9 @@ products:
   - biogrid
 - category: GraphProduct
   compression: zip
-  description: Protein-chemical interactions for the entire BioGRID dataset. The file is a modified version of the BioGRID Tab 2.0 format, designed to add in columns for chemical specific annotation.
+  description: Protein-chemical interactions for the entire BioGRID dataset. The file
+    is a modified version of the BioGRID Tab 2.0 format, designed to add in columns
+    for chemical specific annotation.
   format: tsv
   id: biogrid.chemicals
   latest_version: 5.0.252
@@ -95,12 +97,12 @@ products:
   - biogrid
 - category: MappingProduct
   compression: zip
-  description: A single delimited text file format containing a list of mappings between different identifiers stored in BioGRID and the identifiers used in downloads.
+  description: A single delimited text file format containing a list of mappings between
+    different identifiers stored in BioGRID and the identifiers used in downloads.
   format: tsv
   id: biogrid.identifiers
   latest_version: 5.0.252
   name: BIOGRID-IDENTIFIERS-LATEST.tab.zip
-  product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
   original_source:
   - biogrid
   - uniprot
@@ -108,6 +110,7 @@ products:
   - zfin
   - xenbase
   - hgnc
+  product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
   secondary_source:
   - biogrid
 - category: GraphProduct
@@ -900,7 +903,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
     when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5

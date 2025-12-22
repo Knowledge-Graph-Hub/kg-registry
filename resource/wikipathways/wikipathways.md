@@ -2,35 +2,40 @@
 activity_status: active
 category: DataSource
 collection:
-  - ber
+- ber
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: github
-        value: https://github.com/wikipathways
-      - contact_type: url
-        value: https://www.wikipathways.org/
-    label: WikiPathways Team
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: apico@gladstone.ucsf.edu
-    label: Alex Pico
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: martina.kutmon@maastrichtuniversity.nl
-    label: Martina Kutmon
+- category: Organization
+  contact_details:
+  - contact_type: github
+    value: https://github.com/wikipathways
+  - contact_type: url
+    value: https://www.wikipathways.org/
+  label: WikiPathways Team
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: apico@gladstone.ucsf.edu
+  label: Alex Pico
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: martina.kutmon@maastrichtuniversity.nl
+  label: Martina Kutmon
 creation_date: '2025-06-05T00:00:00Z'
-last_modified_date: '2025-12-20T00:00:00Z'
-description: WikiPathways is an open, collaborative platform dedicated to the curation of biological pathways. The database contains 1,913 human-curated pathways across 27 species with 36,334 gene products and 7,052 metabolites, supporting multiple data formats (GPML, GMT, RDF) and programmatic access via SPARQL endpoints and web APIs. Community-driven curation with version control and CI/CD infrastructure enables rapid pathway annotation and knowledge sharing in an open science framework.
+description: WikiPathways is an open, collaborative platform dedicated to the curation
+  of biological pathways. The database contains 1,913 human-curated pathways across
+  27 species with 36,334 gene products and 7,052 metabolites, supporting multiple
+  data formats (GPML, GMT, RDF) and programmatic access via SPARQL endpoints and web
+  APIs. Community-driven curation with version control and CI/CD infrastructure enables
+  rapid pathway annotation and knowledge sharing in an open science framework.
 domains:
-  - pathways
-  - genomics
-  - biomedical
+- pathways
+- genomics
+- biomedical
 homepage_url: https://www.wikipathways.org/
 id: wikipathways
 infores_id: wikipathways
+last_modified_date: '2025-12-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/share-your-work/public-domain/cc0/
@@ -38,429 +43,444 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: WikiPathways
 products:
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-      - ncbigene
-      - pubmed
-      - mesh
-      - pid
-      - doid
-      - diseases
-      - drugcentral
-      - go
-      - gwascatalog
-      - reactome
-      - lincs-l1000
-      - uberon
-      - wikipathways
-      - bindingdb
-      - drugbank
-      - sider
-      - bgee
-      - uniprot
-      - string
-      - omim
-      - chembl
-      - foodb
-      - civic
-      - gdsc
-      - clinicaltrialsgov
-      - hpa
-      - cl
-      - kegg
-      - metacyc
-      - bv-brc
-      - ncbitaxon
-      - pathophenodb
-      - pfam
-      - interpro
-      - protcid
-    secondary_source:
-      - spoke
-  - category: Product
-    description: Pathways in Graphical Pathway Markup Language (GPML) format, which is a custom XML format for biological pathways
-    format: xml
-    id: wikipathways.gpml
-    name: WikiPathways GPML
-    product_url: https://data.wikipathways.org/current/gpml/
-  - category: Product
-    description: Pathways in Gene Matrix Transposed (GMT) format for Gene Set Enrichment Analysis
-    format: tsv
-    id: wikipathways.gmt
-    name: WikiPathways GMT
-    product_url: https://data.wikipathways.org/current/gmt/
-  - category: Product
-    description: Pathways in RDF (Resource Description Framework) format
-    format: ttl
-    id: wikipathways.rdf
-    name: WikiPathways RDF
-    product_url: http://data.wikipathways.org/current/rdf/
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for querying WikiPathways content
-    id: wikipathways.sparql
-    name: WikiPathways SPARQL Endpoint
-    product_url: https://sparql.wikipathways.org/
-  - category: ProgrammingInterface
-    description: Web service API for programmatic access to WikiPathways content
-    id: wikipathways.api
-    name: WikiPathways API
-    product_url: https://webservice.wikipathways.org/ui/
-  - category: GraphicalInterface
-    description: The main web interface for browsing, viewing, and downloading pathways
-    id: wikipathways.web
-    name: WikiPathways Web Interface
-    product_url: https://www.wikipathways.org/
-  - category: GraphProduct
-    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
-    dump_format: neo4j
-    id: ubkg.neo4j
-    name: UBKG Neo4j Docker Distribution
-    original_source:
-      - hgnc
-      - loinc
-      - icd10
-      - snomedct
-      - uberon
-      - pato
-      - cl
-      - doid
-      - obi
-      - obib
-      - edam
-      - hsapdv
-      - sbo
-      - mi
-      - chebi
-      - mp
-      - ordo
-      - uniprot
-      - uo
-      - mondo
-      - efo
-      - pgo
-      - gencode
-      - reactome
-      - hra
-      - hubmap
-      - sennet
-      - stellar
-      - dct
-      - clinvar
-      - connectivitymap
-      - hp
-      - mp
-      - msigdb
-      - wikipathways
-      - clingen
-      - string
-      - 4dn
-      - erccrbp
-      - erccreg
-      - faldo
-      - glycordf
-      - glycocoo
-      - gtex
-      - kidsfirst
-      - lincs
-      - motrpac
-      - mw
-      - npo
-      - sckan
-      - disgenet
-      - biomarker
-      - opentargets
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - ubkg
-  - category: GraphProduct
-    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
-    format: csv
-    id: ubkg.csv
-    name: UBKG Ontology CSV Files
-    original_source:
-      - hgnc
-      - loinc
-      - icd10
-      - snomedct
-      - uberon
-      - pato
-      - cl
-      - doid
-      - obi
-      - obib
-      - edam
-      - hsapdv
-      - sbo
-      - mi
-      - chebi
-      - mp
-      - ordo
-      - uniprot
-      - uo
-      - mondo
-      - efo
-      - pgo
-      - gencode
-      - reactome
-      - hra
-      - hubmap
-      - sennet
-      - stellar
-      - dct
-      - clinvar
-      - connectivitymap
-      - hp
-      - mp
-      - msigdb
-      - wikipathways
-      - clingen
-      - string
-      - 4dn
-      - erccrbp
-      - erccreg
-      - faldo
-      - glycordf
-      - glycocoo
-      - gtex
-      - kidsfirst
-      - lincs
-      - motrpac
-      - mw
-      - npo
-      - sckan
-      - disgenet
-      - biomarker
-      - opentargets
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - ubkg
-  - category: GraphicalInterface
-    description: A browser interface for a knowledge graph for Alzheimer's Disease.
-    format: http
-    id: alzkb.browser
-    name: AlzKB Graph Database Browser
-    original_source:
-      - aop-db
-      - bgee
-      - disgenet
-      - doid
-      - drugbank
-      - dsstox
-      - go
-      - gwascatalog
-      - hrpimp
-      - lincs-l1000
-      - mesh
-      - ncbigene
-      - pharmacotherapydb
-      - pid
-      - pubchem
-      - reactome
-      - sider
-      - tissues
-      - uberon
-      - wikipathways
-    product_url: https://alzkb.ai:7473/login
-    secondary_source:
-      - alzkb
-      - hetionet
-  - category: GraphProduct
-    description: Memgraph data release for AlzKB.
-    id: alzkb.data
-    name: AlzKB Data Release (Version 2.0.0)
-    original_source:
-      - aop-db
-      - bgee
-      - disgenet
-      - doid
-      - drugbank
-      - dsstox
-      - go
-      - gwascatalog
-      - hrpimp
-      - lincs-l1000
-      - mesh
-      - ncbigene
-      - pharmacotherapydb
-      - pid
-      - pubchem
-      - reactome
-      - reactome
-      - sider
-      - tissues
-      - uberon
-      - wikipathways
-    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-    secondary_source:
-      - alzkb
-      - hetionet
-  - category: ProcessProduct
-    description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
-    id: indra.cogex.code
-    name: INDRA CoGEx Build Code
-    original_source:
-      - chembl
-      - sider
-      - reactome
-      - wikipathways
-      - hp
-      - nihreporter
-      - disgenet
-      - pubmed
-      - gwascatalog
-      - cellmarker
-      - go
-      - bgee
-      - ccle
-      - clinicaltrialsgov
-      - indra
-    product_url: https://github.com/gyorilab/indra_cogex
-    secondary_source:
-      - indra
-  - category: GraphProduct
-    description: RNA-KG as a Neo4j Dump
-    format: neo4j
-    id: rna-kg.kg.neo4j
-    name: RNA-KG Neo4j Dump
-    original_source:
-      - dbsnp
-      - cosmic
-      - rnacentral
-      - ensembl
-      - circbase
-      - chebi
-      - pr
-      - ncbigene
-      - cl
-      - go
-      - mondo
-      - hp
-      - uberon
-      - vo
-      - pw
-      - reactome
-      - wikipathways
-    product_file_size: 3976840239
-    product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-    secondary_source:
-      - rna-kg
-  - category: GraphProduct
-    description: RNA-KG Nodes in CSV format
-    format: csv
-    id: rna-kg.kg.nodes
-    name: RNA-KG Nodes
-    original_source:
-      - dbsnp
-      - cosmic
-      - rnacentral
-      - ensembl
-      - circbase
-      - chebi
-      - pr
-      - ncbigene
-      - cl
-      - go
-      - mondo
-      - hp
-      - uberon
-      - vo
-      - pw
-      - reactome
-      - wikipathways
-    product_file_size: 4424633304
-    product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-    secondary_source:
-      - rna-kg
-  - category: GraphProduct
-    description: RNA-KG Edges in CSV format
-    format: csv
-    id: rna-kg.kg.edges
-    name: RNA-KG Edges
-    original_source:
-      - dbsnp
-      - cosmic
-      - rnacentral
-      - ensembl
-      - circbase
-      - chebi
-      - pr
-      - ncbigene
-      - cl
-      - go
-      - mondo
-      - hp
-      - uberon
-      - vo
-      - pw
-      - reactome
-      - wikipathways
-    product_file_size: 18370248815
-    product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-    secondary_source:
-      - rna-kg
-  - category: Product
-    description: Pathway information integrated from Reactome, WikiPathways and other pathway databases
-    format: http
-    id: genecards.pathway.data
-    name: GeneCards Pathway Data
-    original_source:
-      - reactome
-      - wikipathways
-    product_url: https://www.genecards.org/
-    warnings:
-      - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when accessing file
-      - 'File was not able to be retrieved when checked on 2025-12-18: HTTP 403 error when accessing file'
-  - category: Product
-    description: WikiPathways data for all targets
-    format: txt
-    id: ttd.wiki-pathways
-    name: Target WikiPathways
-    original_source:
-      - wikipathways
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
-    secondary_source:
-      - ttd
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-  - category: DatabaseProduct
-    description: Multi-sourced relational database integrating metabolomic pathway information, biochemical reactions, ontologies, and chemical descriptors for genes, proteins, and metabolites with query and enrichment analysis capabilities.
-    id: rampdb.database
-    name: RaMP-DB Integrated Database
-    original_source:
-      - kegg
-      - reactome
-      - hmdb
-      - wikipathways
-      - rampdb
-    product_url: https://rampdb.nih.gov/
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
+  - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
+- category: Product
+  description: Pathways in Graphical Pathway Markup Language (GPML) format, which
+    is a custom XML format for biological pathways
+  format: xml
+  id: wikipathways.gpml
+  name: WikiPathways GPML
+  product_url: https://data.wikipathways.org/current/gpml/
+- category: Product
+  description: Pathways in Gene Matrix Transposed (GMT) format for Gene Set Enrichment
+    Analysis
+  format: tsv
+  id: wikipathways.gmt
+  name: WikiPathways GMT
+  product_url: https://data.wikipathways.org/current/gmt/
+- category: Product
+  description: Pathways in RDF (Resource Description Framework) format
+  format: ttl
+  id: wikipathways.rdf
+  name: WikiPathways RDF
+  product_url: http://data.wikipathways.org/current/rdf/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for querying WikiPathways content
+  id: wikipathways.sparql
+  name: WikiPathways SPARQL Endpoint
+  product_url: https://sparql.wikipathways.org/
+- category: ProgrammingInterface
+  description: Web service API for programmatic access to WikiPathways content
+  id: wikipathways.api
+  name: WikiPathways API
+  product_url: https://webservice.wikipathways.org/ui/
+- category: GraphicalInterface
+  description: The main web interface for browsing, viewing, and downloading pathways
+  id: wikipathways.web
+  name: WikiPathways Web Interface
+  product_url: https://www.wikipathways.org/
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
+- category: Product
+  description: Pathway information integrated from Reactome, WikiPathways and other
+    pathway databases
+  format: http
+  id: genecards.pathway.data
+  name: GeneCards Pathway Data
+  original_source:
+  - reactome
+  - wikipathways
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: WikiPathways data for all targets
+  format: txt
+  id: ttd.wiki-pathways
+  name: Target WikiPathways
+  original_source:
+  - wikipathways
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
+  secondary_source:
+  - ttd
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: DatabaseProduct
+  description: Multi-sourced relational database integrating metabolomic pathway information,
+    biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
+    and metabolites with query and enrichment analysis capabilities.
+  id: rampdb.database
+  name: RaMP-DB Integrated Database
+  original_source:
+  - kegg
+  - reactome
+  - hmdb
+  - wikipathways
+  - rampdb
+  product_url: https://rampdb.nih.gov/
 publications:
-  - authors:
-      - Agrawal A
-      - et al.
-    doi: doi:10.1093/nar/gkad960
-    id: https://doi.org/10.1093/nar/gkad960
-    journal: Nucleic Acids Research
-    preferred: true
-    title: WikiPathways 2024 - next generation pathway database
-    year: '2024'
-  - authors:
-      - Martens M
-      - et al.
-    doi: doi:10.1093/NAR/gkaa1024
-    id: https://doi.org/10.1093/NAR/gkaa1024
-    journal: Nucleic Acids Research
-    title: WikiPathways - connecting communities
-    year: '2021'
+- authors:
+  - Agrawal A
+  - et al.
+  doi: doi:10.1093/nar/gkad960
+  id: https://doi.org/10.1093/nar/gkad960
+  journal: Nucleic Acids Research
+  preferred: true
+  title: WikiPathways 2024 - next generation pathway database
+  year: '2024'
+- authors:
+  - Martens M
+  - et al.
+  doi: doi:10.1093/NAR/gkaa1024
+  id: https://doi.org/10.1093/NAR/gkaa1024
+  journal: Nucleic Acids Research
+  title: WikiPathways - connecting communities
+  year: '2021'
 repository: https://github.com/wikipathways/wikipathways-database
 taxon:
-  - NCBITaxon:9606
-  - NCBITaxon:10090
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
-
 # WikiPathways
 
 WikiPathways is an open, collaborative platform dedicated to the curation and dissemination of biological pathways. Established to facilitate community contribution and maintenance of pathway knowledge, WikiPathways provides researchers with a user-friendly web interface and comprehensive toolkit for discovering, visualizing, analyzing, and sharing biological pathway information across 27 organisms.
