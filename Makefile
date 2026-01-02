@@ -170,6 +170,10 @@ assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js:
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
+# Generate Turtle RDF serialization from YAML
+registry/kgs.ttl: registry/kgs.yml
+	$(RUN) python ./util/yaml2ttl.py $< $@.tmp && mv $@.tmp $@
+
 ### Validate Configuration Files
 
 # Generate both a report of the violations and a grid of all results
