@@ -1,42 +1,42 @@
 ---
+id: mfmo
+name: Mammalian Feeding Muscle Ontology
+description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles
+  of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal
+  behaviors.
 activity_status: inactive
-category: Ontology
+homepage_url: https://github.com/rdruzinsky/feedontology
+repository: https://github.com/RDruzinsky/feedontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:40674
 contacts:
 - category: Individual
+  label: Robert Druzinsky
+  orcid: 0000-0002-1572-1316
   contact_details:
   - contact_type: email
     value: druzinsk@uic.edu
   - contact_type: github
     value: RDruzinsky
-  label: Robert Druzinsky
-  orcid: 0000-0002-1572-1316
-description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles
-  of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal
-  behaviors.
-domains:
-- anatomy and development
-homepage_url: https://github.com/rdruzinsky/feedontology
-id: mfmo
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Mammalian Feeding Muscle Ontology
 products:
-- category: OntologyProduct
+- id: mfmo.owl
+  name: mfmo.owl
   description: Mammalian Feeding Muscle Ontology in OWL format
   format: owl
-  id: mfmo.owl
-  name: mfmo.owl
-  product_file_size: 15791
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mfmo.owl
-repository: https://github.com/RDruzinsky/feedontology
-taxon:
-- NCBITaxon:40674
 ---
+
 ## Description
 
 The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors.

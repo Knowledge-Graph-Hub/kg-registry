@@ -1,39 +1,39 @@
 ---
+id: apollo_sv
+name: Apollo Structured Vocabulary
+description: An OWL2 ontology of phenomena in infectious disease epidemiology and
+  population biology for use in epidemic simulation.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/ApolloDev/apollo-sv
+repository: https://github.com/ApolloDev/apollo-sv
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: William Hogan
+  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
-  label: William Hogan
-  orcid: 0000-0002-9881-1017
-description: An OWL2 ontology of phenomena in infectious disease epidemiology and
-  population biology for use in epidemic simulation.
-domains:
-- biomedical
-homepage_url: https://github.com/ApolloDev/apollo-sv
-id: apollo_sv
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Apollo Structured Vocabulary
 products:
-- category: OntologyProduct
+- id: apollo_sv.owl
+  name: apollo_sv.owl
   description: Apollo Structured Vocabulary in OWL format
   format: owl
-  id: apollo_sv.owl
-  name: apollo_sv.owl
-  product_file_size: 266319
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
-repository: https://github.com/ApolloDev/apollo-sv
 ---
+
 ## Description
 
 An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.

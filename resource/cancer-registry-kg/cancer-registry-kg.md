@@ -31,9 +31,11 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: RDF-based knowledge graph containing 207,766 unique tumor records from
@@ -46,9 +48,11 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Linked neighborhood concentrated disadvantage index (CDI) dataset for
@@ -61,9 +65,11 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: Python-based API using RDFLib for parameterized SPARQL query execution

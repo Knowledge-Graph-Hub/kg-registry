@@ -62,21 +62,26 @@ products:
   name: DIP Data Downloads
   product_url: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ Error connecting
-    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
-    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-15_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-02_ Error connecting
     to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
     exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-12-22: Error connecting
+  - File was not able to be retrieved when checked on 2025-12-22_ Error connecting
+    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
+    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
+  - File was not able to be retrieved when checked on 2026-01-03_ Error connecting
+    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
+    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-03: Error connecting
     to URL: HTTPSConnectionPool(host=''dip.doe-mbi.ucla.edu'', port=443): Max retries
     exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI

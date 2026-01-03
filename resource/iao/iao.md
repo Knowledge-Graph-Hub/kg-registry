@@ -1,185 +1,57 @@
 ---
+id: iao
+name: Information Artifact Ontology
+description: An ontology of information entities.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/information-artifact-ontology/IAO/
+repository: https://github.com/information-artifact-ontology/IAO
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
   contact_details:
   - contact_type: email
     value: zhengj2007@gmail.com
   - contact_type: github
     value: zhengj2007
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
-description: An ontology of information entities.
-domains:
-- biomedical
-homepage_url: https://github.com/information-artifact-ontology/IAO/
-id: iao
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Information Artifact Ontology
 products:
-- category: OntologyProduct
+- id: iao.owl
+  name: iao.owl
   description: Information Artifact Ontology in OWL format
   format: owl
-  id: iao.owl
-  name: iao.owl
-  product_file_size: 78925
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/iao.owl
-- category: OntologyProduct
+- id: iao.ontology-metadata.owl
+  name: IAO ontology metadata
   description: IAO ontology metadata
   format: owl
-  id: iao.ontology-metadata.owl
-  name: IAO ontology metadata
-  product_file_size: 11084
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/iao/ontology-metadata.owl
-- category: OntologyProduct
+- id: iao.dev.iao.owl
+  name: IAO dev
   description: IAO dev
   format: owl
-  id: iao.dev.iao.owl
-  name: IAO dev
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
+- id: iao.d-acts.owl
+  name: ontology of document acts
   description: An ontology based on a theory of document acts describing what people
     can do with documents
   format: owl
-  id: iao.d-acts.owl
-  name: ontology of document acts
-  product_file_size: 10158
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/iao/d-acts.owl
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-repository: https://github.com/information-artifact-ontology/IAO
 ---
+
 ## Description
 
 An ontology of information entities.

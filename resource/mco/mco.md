@@ -1,45 +1,44 @@
 ---
+id: mco
+name: Microbial Conditions Ontology
+description: Microbial Conditions Ontology is an ontology...
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Citlalli Mej a-Almonte
+  orcid: 0000-0002-0142-5591
   contact_details:
   - contact_type: email
     value: citlalli.mejiaalmonte@gmail.com
   - contact_type: github
     value: citmejia
-  label: Citlalli Mej a-Almonte
-  orcid: 0000-0002-0142-5591
-description: Microbial Conditions Ontology is an ontology...
-domains:
-- biomedical
-homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
-id: mco
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Microbial Conditions Ontology
 products:
-- category: OntologyProduct
+- id: mco.owl
+  name: mco.owl
   description: Microbial Conditions Ontology in OWL format
   format: owl
-  id: mco.owl
-  name: mco.owl
-  product_file_size: 772100
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mco.owl
-- category: OntologyProduct
+- id: mco.obo
+  name: mco.obo
   description: Microbial Conditions Ontology in OBO format
   format: obo
-  id: mco.obo
-  name: mco.obo
-  product_file_size: 409757
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mco.obo
-repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 ---
+
 ## Description
 
 Microbial Conditions Ontology is an ontology...

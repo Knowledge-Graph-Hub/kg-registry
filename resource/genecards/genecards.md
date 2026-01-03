@@ -47,9 +47,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
@@ -65,9 +67,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other expression
@@ -81,9 +85,11 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Pathway information integrated from Reactome, WikiPathways and other
@@ -96,9 +102,11 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
@@ -112,9 +120,11 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -128,9 +138,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Literature references from PubMed automatically associated with genes
@@ -141,9 +153,11 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Gene ontology annotations from the Gene Ontology Consortium
@@ -154,9 +168,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
@@ -169,9 +185,11 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Model organism data from FlyBase, SGD, ZFIN and other model organism
@@ -185,9 +203,11 @@ products:
   - zfin
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Protein structure data from PDB Europe and other structural databases
@@ -198,9 +218,11 @@ products:
   - pdbe
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -211,9 +233,11 @@ products:
   - clinicaltrialsgov
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

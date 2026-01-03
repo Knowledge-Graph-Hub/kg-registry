@@ -1,38 +1,38 @@
 ---
+id: ncro
+name: Non-Coding RNA Ontology
+description: An ontology for non-coding RNA, both of biological origin, and engineered.
 activity_status: active
-category: Ontology
+homepage_url: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
+repository: https://github.com/OmniSearch/ncro
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
   contact_details:
   - contact_type: email
     value: huang@southalabama.edu
   - contact_type: github
     value: Huang-OMIT
-  label: Jingshan Huang
-  orcid: 0000-0003-2408-2883
-description: An ontology for non-coding RNA, both of biological origin, and engineered.
-domains:
-- biomedical
-homepage_url: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
-id: ncro
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Non-Coding RNA Ontology
 products:
-- category: OntologyProduct
+- id: ncro.dev.ncro.owl
+  name: NCRO development version
   description: NCRO development version
   format: owl
-  id: ncro.dev.ncro.owl
-  name: NCRO development version
-  product_file_size: 4548
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ncro/dev/ncro.owl
-repository: https://github.com/OmniSearch/ncro
 ---
+
 ## Description
 
 An ontology for non-coding RNA, both of biological origin, and engineered.

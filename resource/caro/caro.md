@@ -1,39 +1,39 @@
 ---
+id: caro
+name: Common Anatomy Reference Ontology
+description: An upper level ontology to facilitate interoperability between existing
+  anatomy ontologies for different species
 activity_status: inactive
-category: Ontology
+homepage_url: https://github.com/obophenotype/caro/
+repository: https://github.com/obophenotype/caro
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 contacts:
 - category: Individual
+  label: Melissa Haendel
+  orcid: 0000-0001-9114-8737
   contact_details:
   - contact_type: email
     value: haendel@ohsu.edu
   - contact_type: github
     value: mellybelly
-  label: Melissa Haendel
-  orcid: 0000-0001-9114-8737
-description: An upper level ontology to facilitate interoperability between existing
-  anatomy ontologies for different species
-domains:
-- anatomy and development
-homepage_url: https://github.com/obophenotype/caro/
-id: caro
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Common Anatomy Reference Ontology
 products:
-- category: OntologyProduct
+- id: caro.owl
+  name: caro.owl
   description: Common Anatomy Reference Ontology in OWL format
   format: owl
-  id: caro.owl
-  name: caro.owl
-  product_file_size: 586722
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/caro.owl
-repository: https://github.com/obophenotype/caro
 ---
+
 ## Description
 
 An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species

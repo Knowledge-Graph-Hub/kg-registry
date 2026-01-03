@@ -1,41 +1,39 @@
 ---
+id: hom
+name: Homology Ontology
+description: This ontology represents concepts related to homology, as well as other
+  concepts used to describe similarity and non-homology.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/BgeeDB/homology-ontology
+repository: https://github.com/BgeeDB/homology-ontology
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 contacts:
 - category: Individual
+  label: Frederic Bastian
+  orcid: 0000-0002-9415-5104
   contact_details:
   - contact_type: email
     value: bgee@sib.swiss
   - contact_type: github
     value: fbastian
-  label: Frederic Bastian
-  orcid: 0000-0002-9415-5104
-description: This ontology represents concepts related to homology, as well as other
-  concepts used to describe similarity and non-homology.
-domains:
-- anatomy and development
-homepage_url: https://github.com/BgeeDB/homology-ontology
-id: hom
-layout: resource_detail
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Homology Ontology
 products:
-- category: OntologyProduct
+- id: hom.owl
+  name: hom.owl
   description: Homology Ontology in OWL format
   format: owl
-  id: hom.owl
-  name: hom.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/hom.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
-    when accessing file'
-repository: https://github.com/BgeeDB/homology-ontology
 ---
+
 ## Description
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.

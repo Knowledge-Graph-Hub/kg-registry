@@ -49,11 +49,13 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 503 error when
     accessing file
   - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
     and other interaction databases.
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 503 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: HPRD data in XML format for programmatic access
@@ -63,11 +65,13 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 503 error when
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 503 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: HPRD data in tab-delimited format for programmatic access
@@ -77,11 +81,13 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 503 error when
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 503 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 503 error
     when accessing file'
 - category: GraphicalInterface
   description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate

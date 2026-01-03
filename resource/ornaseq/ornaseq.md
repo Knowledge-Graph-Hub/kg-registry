@@ -1,39 +1,39 @@
 ---
+id: ornaseq
+name: Ontology of RNA Sequencing
+description: An application ontology designed to annotate next-generation sequencing
+  experiments performed on RNA.
 activity_status: active
-category: Ontology
+homepage_url: http://kim.bio.upenn.edu/software/ornaseq.shtml
+repository: https://github.com/safisher/ornaseq
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Stephen Fisher
+  orcid: 0000-0001-8034-7685
   contact_details:
   - contact_type: email
     value: safisher@upenn.edu
   - contact_type: github
     value: safisher
-  label: Stephen Fisher
-  orcid: 0000-0001-8034-7685
-description: An application ontology designed to annotate next-generation sequencing
-  experiments performed on RNA.
-domains:
-- biomedical
-homepage_url: http://kim.bio.upenn.edu/software/ornaseq.shtml
-id: ornaseq
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Ontology of RNA Sequencing
 products:
-- category: OntologyProduct
+- id: ornaseq.owl
+  name: ornaseq.owl
   description: Ontology of RNA Sequencing in OWL format
   format: owl
-  id: ornaseq.owl
-  name: ornaseq.owl
-  product_file_size: 27418
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ornaseq.owl
-repository: https://github.com/safisher/ornaseq
 ---
+
 ## Description
 
 An application ontology designed to annotate next-generation sequencing experiments performed on RNA.

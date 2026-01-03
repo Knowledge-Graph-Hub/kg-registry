@@ -1,51 +1,46 @@
 ---
+id: zfs
+name: Zebrafish developmental stages ontology
+description: Developmental stages of the Zebrafish
 activity_status: active
-category: Ontology
+homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
+repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:7954
 contacts:
 - category: Individual
+  label: Ceri Van Slyke
+  orcid: 0000-0002-2244-7917
   contact_details:
   - contact_type: email
     value: van_slyke@zfin.org
   - contact_type: github
     value: cerivs
-  label: Ceri Van Slyke
-  orcid: 0000-0002-2244-7917
-description: Developmental stages of the Zebrafish
-domains:
-- anatomy and development
-homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
-id: zfs
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Zebrafish developmental stages ontology
 products:
-- category: OntologyProduct
+- id: zfs.owl
+  name: zfs.owl
   description: Zebrafish developmental stages ontology in OWL format
   format: owl
-  id: zfs.owl
-  name: zfs.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/zfs.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
-    when accessing file'
-- category: OntologyProduct
+- id: zfs.obo
+  name: zfs.obo
   description: Zebrafish developmental stages ontology in OBO format
   format: obo
-  id: zfs.obo
-  name: zfs.obo
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/zfs.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
-    when accessing file'
-repository: https://github.com/cerivs/zebrafish-anatomical-ontology
-taxon:
-- NCBITaxon:7954
 ---
+
 ## Description
 
 Developmental stages of the Zebrafish

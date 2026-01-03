@@ -1,44 +1,43 @@
 ---
-activity_status: inactive
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: dsonensh@odu.edu
-  label: Daniel Sonenshine
-description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
-domains:
-- anatomy and development
-homepage_url: https://www.vectorbase.org/ontology-browser
 id: tads
-layout: resource_detail
+name: Tick Anatomy Ontology
+description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
+activity_status: inactive
+homepage_url: https://www.vectorbase.org/ontology-browser
+repository: https://github.com/VEuPathDB-ontology/TADS
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Tick Anatomy Ontology
-products:
-- category: OntologyProduct
-  description: Tick Anatomy Ontology in OWL format
-  format: owl
-  id: tads.owl
-  name: tads.owl
-  product_file_size: 80482
-  product_url: http://purl.obolibrary.org/obo/tads.owl
-- category: OntologyProduct
-  description: Tick Anatomy Ontology in OBO format
-  format: obo
-  id: tads.obo
-  name: tads.obo
-  product_file_size: 48576
-  product_url: http://purl.obolibrary.org/obo/tads.obo
-repository: https://github.com/VEuPathDB-ontology/TADS
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 taxon:
 - NCBITaxon:6939
+contacts:
+- category: Individual
+  label: Daniel Sonenshine
+  contact_details:
+  - contact_type: email
+    value: dsonensh@odu.edu
+products:
+- id: tads.owl
+  name: tads.owl
+  description: Tick Anatomy Ontology in OWL format
+  format: owl
+  category: OntologyProduct
+  product_url: http://purl.obolibrary.org/obo/tads.owl
+- id: tads.obo
+  name: tads.obo
+  description: Tick Anatomy Ontology in OBO format
+  format: obo
+  category: OntologyProduct
+  product_url: http://purl.obolibrary.org/obo/tads.obo
 ---
+
 ## Description
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

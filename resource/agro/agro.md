@@ -1,39 +1,39 @@
 ---
+id: agro
+name: Agronomy Ontology
+description: Ontology of agronomic practices, agronomic techniques, and agronomic
+  variables used in agronomic experiments
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/AgriculturalSemantics/agro
+repository: https://github.com/AgriculturalSemantics/agro
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- agriculture
 contacts:
 - category: Individual
+  label: Marie-Ang lique Laporte
+  orcid: 0000-0002-8461-9745
   contact_details:
   - contact_type: email
     value: m.a.laporte@cgiar.org
   - contact_type: github
     value: marieALaporte
-  label: Marie-Ang lique Laporte
-  orcid: 0000-0002-8461-9745
-description: Ontology of agronomic practices, agronomic techniques, and agronomic
-  variables used in agronomic experiments
-domains:
-- agriculture
-homepage_url: https://github.com/AgriculturalSemantics/agro
-id: agro
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Agronomy Ontology
 products:
-- category: OntologyProduct
+- id: agro.owl
+  name: AgrO
   description: Contains all AgrO terms and links to other relevant ontologies.
   format: owl
-  id: agro.owl
-  name: AgrO
-  product_file_size: 463598
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/agro.owl
-repository: https://github.com/AgriculturalSemantics/agro
 ---
+
 ## Description
 
 Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments

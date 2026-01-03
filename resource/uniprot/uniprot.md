@@ -99,11 +99,11 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-18_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-02_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-03: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -146,16 +146,16 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-03: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -655,11 +655,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
