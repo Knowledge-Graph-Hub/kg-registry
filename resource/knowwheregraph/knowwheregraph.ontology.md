@@ -12,7 +12,7 @@ warnings:
   URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries exceeded
   with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
   port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-- File was not able to be retrieved when checked on 2026-01-02_ Error connecting to
+- File was not able to be retrieved when checked on 2026-01-03_ Error connecting to
   URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries exceeded
   with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
   port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))

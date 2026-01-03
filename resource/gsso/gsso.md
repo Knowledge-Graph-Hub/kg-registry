@@ -1,51 +1,53 @@
 ---
-id: gsso
-name: Gender, Sex, and Sexual Orientation (GSSO) ontology
-description: The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for
-  annotating interdisciplinary information concerning gender, sex, and sexual orientation
-  for primary usage in the biomedical and adjacent sciences.
 activity_status: active
-homepage_url: https://gsso.research.cchmc.org/
-repository: https://github.com/Superraptor/GSSO
-license:
-  id: http://www.apache.org/licenses/LICENSE-2.0
-  label: Apache 2.0 License
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Clair Kronk
-  orcid: 0000-0001-8397-8810
   contact_details:
   - contact_type: email
     value: kronkcj@mail.uc.edu
   - contact_type: github
     value: Superraptor
+  label: Clair Kronk
+  orcid: 0000-0001-8397-8810
+description: The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for
+  annotating interdisciplinary information concerning gender, sex, and sexual orientation
+  for primary usage in the biomedical and adjacent sciences.
+domains:
+- biological systems
+homepage_url: https://gsso.research.cchmc.org/
+id: gsso
+layout: resource_detail
+license:
+  id: http://www.apache.org/licenses/LICENSE-2.0
+  label: Apache 2.0 License
+name: Gender, Sex, and Sexual Orientation (GSSO) ontology
 products:
-- id: gsso.owl
-  name: gsso.owl
+- category: OntologyProduct
   description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: gsso.owl
+  name: gsso.owl
+  product_file_size: 2201424
   product_url: http://purl.obolibrary.org/obo/gsso.owl
-- id: gsso.obo
-  name: gsso.obo
+- category: OntologyProduct
   description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: gsso.obo
+  name: gsso.obo
+  product_file_size: 969731
   product_url: http://purl.obolibrary.org/obo/gsso.obo
-- id: gsso.json
-  name: gsso.json
+- category: OntologyProduct
   description: Gender, Sex, and Sexual Orientation (GSSO) ontology in JSON format
   format: json
-  category: OntologyProduct
+  id: gsso.json
+  name: gsso.json
+  product_file_size: 1894658
   product_url: http://purl.obolibrary.org/obo/gsso.json
+repository: https://github.com/Superraptor/GSSO
 ---
-
 ## Description
 
 The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for annotating interdisciplinary information concerning gender, sex, and sexual orientation for primary usage in the biomedical and adjacent sciences.

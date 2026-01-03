@@ -1,44 +1,45 @@
 ---
-id: omp
-name: Ontology of Microbial Phenotypes
-description: An ontology of phenotypes covering microbes
 activity_status: active
-homepage_url: http://microbialphenotypes.org
-repository: https://github.com/microbialphenotypes/OMP-ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: James C. Hu
-  orcid: 0000-0001-9016-2684
   contact_details:
   - contact_type: email
     value: jimhu@tamu.edu
   - contact_type: github
     value: jimhu-tamu
+  label: James C. Hu
+  orcid: 0000-0001-9016-2684
+description: An ontology of phenotypes covering microbes
+domains:
+- biological systems
+homepage_url: http://microbialphenotypes.org
+id: omp
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Ontology of Microbial Phenotypes
 products:
-- id: omp.owl
-  name: omp.owl
+- category: OntologyProduct
   description: Ontology of Microbial Phenotypes in OWL format
   format: owl
-  category: OntologyProduct
+  id: omp.owl
+  name: omp.owl
+  product_file_size: 222487
   product_url: http://purl.obolibrary.org/obo/omp.owl
-- id: omp.obo
-  name: omp.obo
+- category: OntologyProduct
   description: Ontology of Microbial Phenotypes in OBO format
   format: obo
-  category: OntologyProduct
+  id: omp.obo
+  name: omp.obo
+  product_file_size: 124064
   product_url: http://purl.obolibrary.org/obo/omp.obo
+repository: https://github.com/microbialphenotypes/OMP-ontology
 ---
-
 ## Description
 
 An ontology of phenotypes covering microbes

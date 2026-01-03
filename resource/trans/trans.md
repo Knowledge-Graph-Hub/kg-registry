@@ -1,46 +1,47 @@
 ---
-id: trans
-name: Pathogen Transmission Ontology
-description: An ontology representing the disease transmission process during which
-  the pathogen is transmitted directly or indirectly from its natural reservoir, a
-  susceptible host or source to a new host.
 activity_status: active
-homepage_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology
-repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
   contact_details:
   - contact_type: email
     value: lynn.schriml@gmail.com
   - contact_type: github
     value: lschriml
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
+description: An ontology representing the disease transmission process during which
+  the pathogen is transmitted directly or indirectly from its natural reservoir, a
+  susceptible host or source to a new host.
+domains:
+- biomedical
+homepage_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology
+id: trans
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Pathogen Transmission Ontology
 products:
-- id: trans.owl
-  name: trans.owl
+- category: OntologyProduct
   description: Pathogen Transmission Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: trans.owl
+  name: trans.owl
+  product_file_size: 4176
   product_url: http://purl.obolibrary.org/obo/trans.owl
-- id: trans.obo
-  name: trans.obo
+- category: OntologyProduct
   description: Pathogen Transmission Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: trans.obo
+  name: trans.obo
+  product_file_size: 2508
   product_url: http://purl.obolibrary.org/obo/trans.obo
+repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 ---
-
 ## Description
 
 An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.

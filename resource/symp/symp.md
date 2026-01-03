@@ -1,48 +1,49 @@
 ---
-id: symp
-name: Symptom Ontology
-description: An ontology of disease symptoms, with symptoms encompasing perceived
-  changes in function, sensations or appearance reported by a patient indicative of
-  a disease.
 activity_status: active
-homepage_url: https://github.com/DiseaseOntology/SymptomOntology
-repository: https://github.com/DiseaseOntology/SymptomOntology
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
-taxon:
-- NCBITaxon:9606
 contacts:
 - category: Individual
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
   contact_details:
   - contact_type: email
     value: lynn.schriml@gmail.com
   - contact_type: github
     value: lschriml
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
+description: An ontology of disease symptoms, with symptoms encompasing perceived
+  changes in function, sensations or appearance reported by a patient indicative of
+  a disease.
+domains:
+- biomedical
+homepage_url: https://github.com/DiseaseOntology/SymptomOntology
+id: symp
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Symptom Ontology
 products:
-- id: symp.owl
-  name: symp.owl
+- category: OntologyProduct
   description: Symptom Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: symp.owl
+  name: symp.owl
+  product_file_size: 73868
   product_url: http://purl.obolibrary.org/obo/symp.owl
-- id: symp.obo
-  name: symp.obo
+- category: OntologyProduct
   description: Symptom Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: symp.obo
+  name: symp.obo
+  product_file_size: 49360
   product_url: http://purl.obolibrary.org/obo/symp.obo
+repository: https://github.com/DiseaseOntology/SymptomOntology
+taxon:
+- NCBITaxon:9606
 ---
-
 ## Description
 
 An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.

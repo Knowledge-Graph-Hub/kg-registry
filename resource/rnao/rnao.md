@@ -1,43 +1,44 @@
 ---
-id: rnao
-name: RNA ontology
+activity_status: inactive
+category: Ontology
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: BatchelorC@rsc.org
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
 description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
   secondary and three-dimensional structures.
-activity_status: inactive
+domains:
+- chemistry and biochemistry
 homepage_url: https://github.com/bgsu-rna/rnao
-repository: https://github.com/BGSU-RNA/rnao
+id: rnao
+layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-collection:
-- obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
-contacts:
-- category: Individual
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
-  contact_details:
-  - contact_type: email
-    value: BatchelorC@rsc.org
+name: RNA ontology
 products:
-- id: rnao.owl
-  name: rnao.owl
+- category: OntologyProduct
   description: RNA ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: rnao.owl
+  name: rnao.owl
+  product_file_size: 30137
   product_url: http://purl.obolibrary.org/obo/rnao.owl
-- id: rnao.obo
-  name: rnao.obo
+- category: OntologyProduct
   description: RNA ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: rnao.obo
+  name: rnao.obo
+  product_file_size: 11126
   product_url: http://purl.obolibrary.org/obo/rnao.obo
+repository: https://github.com/BGSU-RNA/rnao
 ---
-
 ## Description
 
 Controlled vocabulary pertaining to RNA function and based on RNA sequences, secondary and three-dimensional structures.

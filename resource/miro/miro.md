@@ -1,43 +1,44 @@
 ---
-id: miro
-name: Mosquito insecticide resistance
-description: Application ontology for entities related to insecticide resistance in
-  mosquitos
 activity_status: inactive
-homepage_url: http://purl.obolibrary.org/obo/miro.owl
-repository: https://github.com/VEuPathDB-ontology/MIRO
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- environment
-taxon:
-- NCBITaxon:44484
 contacts:
 - category: Individual
-  label: Christos (Kitsos) Louis
   contact_details:
   - contact_type: email
     value: louis@imbb.forth.gr
+  label: Christos (Kitsos) Louis
+description: Application ontology for entities related to insecticide resistance in
+  mosquitos
+domains:
+- environment
+homepage_url: http://purl.obolibrary.org/obo/miro.owl
+id: miro
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Mosquito insecticide resistance
 products:
-- id: miro.owl
-  name: miro.owl
+- category: OntologyProduct
   description: Mosquito insecticide resistance in OWL format
   format: owl
-  category: OntologyProduct
+  id: miro.owl
+  name: miro.owl
+  product_file_size: 212397
   product_url: http://purl.obolibrary.org/obo/miro.owl
-- id: miro.obo
-  name: miro.obo
+- category: OntologyProduct
   description: Mosquito insecticide resistance in OBO format
   format: obo
-  category: OntologyProduct
+  id: miro.obo
+  name: miro.obo
+  product_file_size: 82792
   product_url: http://purl.obolibrary.org/obo/miro.obo
+repository: https://github.com/VEuPathDB-ontology/MIRO
+taxon:
+- NCBITaxon:44484
 ---
-
 ## Description
 
 Application ontology for entities related to insecticide resistance in mosquitos

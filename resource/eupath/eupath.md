@@ -1,39 +1,39 @@
 ---
-id: eupath
-name: VEuPathDB ontology
-description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
-  Genomics Resource (VEuPathDB; https://veupathdb.org).
 activity_status: inactive
-homepage_url: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
-repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
   contact_details:
   - contact_type: email
     value: jiezhen@med.umich.edu
   - contact_type: github
     value: zhengj2007
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
+description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
+  Genomics Resource (VEuPathDB; https://veupathdb.org).
+domains:
+- biological systems
+homepage_url: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
+id: eupath
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: VEuPathDB ontology
 products:
-- id: eupath.owl
-  name: eupath.owl
+- category: OntologyProduct
   description: VEuPathDB ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: eupath.owl
+  name: eupath.owl
+  product_file_size: 438457
   product_url: http://purl.obolibrary.org/obo/eupath.owl
+repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 ---
-
 ## Description
 
 An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).

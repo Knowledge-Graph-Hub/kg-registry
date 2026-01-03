@@ -1,64 +1,175 @@
 ---
-id: fbbt
-name: Drosophila gross anatomy
-description: An ontology representing the gross anatomy of Drosophila melanogaster.
 activity_status: active
-homepage_url: http://purl.obolibrary.org/obo/fbbt
-repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:7227
 contacts:
 - category: Individual
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
   contact_details:
   - contact_type: email
     value: cp390@cam.ac.uk
   - contact_type: github
     value: Clare72
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
+description: An ontology representing the gross anatomy of Drosophila melanogaster.
+domains:
+- anatomy and development
+homepage_url: http://purl.obolibrary.org/obo/fbbt
+id: fbbt
+infores_id: fbbt
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Drosophila gross anatomy
 products:
-- id: fbbt.owl
-  name: fbbt.owl
+- category: OntologyProduct
   description: Drosophila gross anatomy in OWL format
   format: owl
-  category: OntologyProduct
+  id: fbbt.owl
+  name: fbbt.owl
+  product_file_size: 119285055
   product_url: http://purl.obolibrary.org/obo/fbbt.owl
-- id: fbbt.obo
-  name: fbbt.obo
+- category: OntologyProduct
   description: Drosophila gross anatomy in OBO format
   format: obo
-  category: OntologyProduct
+  id: fbbt.obo
+  name: fbbt.obo
+  product_file_size: 38423905
   product_url: http://purl.obolibrary.org/obo/fbbt.obo
-- id: fbbt.json
-  name: fbbt.json
+- category: OntologyProduct
   description: Drosophila gross anatomy in JSON format
   format: json
-  category: OntologyProduct
+  id: fbbt.json
+  name: fbbt.json
+  product_file_size: 77676937
   product_url: http://purl.obolibrary.org/obo/fbbt.json
-- id: fbbt.fbbt-simple.owl
-  name: fbbt.fbbt-simple.owl
+- category: OntologyProduct
   description: Drosophila gross anatomy in OWL format
   format: owl
-  category: OntologyProduct
+  id: fbbt.fbbt-simple.owl
+  name: fbbt.fbbt-simple.owl
+  product_file_size: 111152500
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl
-- id: fbbt.fbbt-simple.obo
-  name: fbbt.fbbt-simple.obo
+- category: OntologyProduct
   description: Drosophila gross anatomy in OBO format
   format: obo
-  category: OntologyProduct
+  id: fbbt.fbbt-simple.obo
+  name: fbbt.fbbt-simple.obo
+  product_file_size: 38423929
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+taxon:
+- NCBITaxon:7227
 ---
-
 ## Description
 
 An ontology representing the gross anatomy of Drosophila melanogaster.

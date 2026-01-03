@@ -1,46 +1,47 @@
 ---
-id: ceph
-name: Cephalopod Ontology
-description: An anatomical and developmental ontology for cephalopods
 activity_status: inactive
-homepage_url: https://github.com/obophenotype/cephalopod-ontology
-repository: https://github.com/obophenotype/cephalopod-ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:6605
 contacts:
 - category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
+description: An anatomical and developmental ontology for cephalopods
+domains:
+- anatomy and development
+homepage_url: https://github.com/obophenotype/cephalopod-ontology
+id: ceph
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Cephalopod Ontology
 products:
-- id: ceph.owl
-  name: main version
+- category: OntologyProduct
   description: main version
   format: owl
-  category: OntologyProduct
+  id: ceph.owl
+  name: main version
+  product_file_size: 48794
   product_url: http://purl.obolibrary.org/obo/ceph.owl
-- id: ceph.obo
-  name: oboformat edition
+- category: OntologyProduct
   description: oboformat edition
   format: obo
-  category: OntologyProduct
+  id: ceph.obo
+  name: oboformat edition
+  product_file_size: 82316
   product_url: http://purl.obolibrary.org/obo/ceph.obo
+repository: https://github.com/obophenotype/cephalopod-ontology
+taxon:
+- NCBITaxon:6605
 ---
-
 ## Description
 
 An anatomical and developmental ontology for cephalopods

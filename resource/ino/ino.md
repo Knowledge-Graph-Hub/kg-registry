@@ -1,38 +1,38 @@
 ---
-id: ino
-name: Interaction Network Ontology
-description: An ontology of interactions and interaction networks
 activity_status: active
-homepage_url: https://github.com/INO-ontology/ino
-repository: https://github.com/INO-ontology/ino
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
+description: An ontology of interactions and interaction networks
+domains:
+- biological systems
+homepage_url: https://github.com/INO-ontology/ino
+id: ino
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Interaction Network Ontology
 products:
-- id: ino.owl
-  name: ino.owl
+- category: OntologyProduct
   description: Interaction Network Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: ino.owl
+  name: ino.owl
+  product_file_size: 56433
   product_url: http://purl.obolibrary.org/obo/ino.owl
+repository: https://github.com/INO-ontology/ino
 ---
-
 ## Description
 
 An ontology of interactions and interaction networks

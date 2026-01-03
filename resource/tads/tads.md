@@ -1,43 +1,44 @@
 ---
-id: tads
-name: Tick Anatomy Ontology
-description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
 activity_status: inactive
+category: Ontology
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: dsonensh@odu.edu
+  label: Daniel Sonenshine
+description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
+domains:
+- anatomy and development
 homepage_url: https://www.vectorbase.org/ontology-browser
-repository: https://github.com/VEuPathDB-ontology/TADS
+id: tads
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-collection:
-- obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:6939
-contacts:
-- category: Individual
-  label: Daniel Sonenshine
-  contact_details:
-  - contact_type: email
-    value: dsonensh@odu.edu
+name: Tick Anatomy Ontology
 products:
-- id: tads.owl
-  name: tads.owl
+- category: OntologyProduct
   description: Tick Anatomy Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: tads.owl
+  name: tads.owl
+  product_file_size: 80482
   product_url: http://purl.obolibrary.org/obo/tads.owl
-- id: tads.obo
-  name: tads.obo
+- category: OntologyProduct
   description: Tick Anatomy Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: tads.obo
+  name: tads.obo
+  product_file_size: 48576
   product_url: http://purl.obolibrary.org/obo/tads.obo
+repository: https://github.com/VEuPathDB-ontology/TADS
+taxon:
+- NCBITaxon:6939
 ---
-
 ## Description
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

@@ -1,51 +1,159 @@
 ---
-id: oba
-name: Ontology of Biological Attributes
-description: A collection of biological attributes (traits) covering all kingdoms
-  of life.
 activity_status: active
-homepage_url: https://github.com/obophenotype/bio-attribute-ontology
-repository: https://github.com/obophenotype/bio-attribute-ontology
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
+description: A collection of biological attributes (traits) covering all kingdoms
+  of life.
+domains:
+- biological systems
+homepage_url: https://github.com/obophenotype/bio-attribute-ontology
+id: oba
+layout: resource_detail
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Ontology of Biological Attributes
 products:
-- id: oba.owl
-  name: oba.owl
+- category: OntologyProduct
   description: Ontology of Biological Attributes in OWL format
   format: owl
-  category: OntologyProduct
+  id: oba.owl
+  name: oba.owl
+  product_file_size: 166637718
   product_url: http://purl.obolibrary.org/obo/oba.owl
-- id: oba.obo
+- category: OntologyProduct
+  description: Ontology of Biological Attributes in OBO format
+  format: obo
+  id: oba.obo
   name: oba.obo
-  description: Ontology of Biological Attributes in OBO format
-  format: obo
-  category: OntologyProduct
+  product_file_size: 33532280
   product_url: http://purl.obolibrary.org/obo/oba.obo
-- id: oba.subsets.oba-basic.obo
-  name: oba.subsets.oba-basic.obo
+- category: OntologyProduct
   description: Ontology of Biological Attributes in OBO format
   format: obo
-  category: OntologyProduct
+  id: oba.subsets.oba-basic.obo
+  name: oba.subsets.oba-basic.obo
+  product_file_size: 11853852
   product_url: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+repository: https://github.com/obophenotype/bio-attribute-ontology
 ---
-
 ## Description
 
 A collection of biological attributes (traits) covering all kingdoms of life.

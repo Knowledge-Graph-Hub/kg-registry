@@ -1,40 +1,40 @@
 ---
-id: flopo
-name: Flora Phenotype Ontology
-description: Traits and phenotypes of flowering plants occurring in digitized Floras
 activity_status: active
-homepage_url: https://github.com/flora-phenotype-ontology/flopoontology
-repository: https://github.com/flora-phenotype-ontology/flopoontology
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
-taxon:
-- NCBITaxon:33090
 contacts:
 - category: Individual
-  label: Robert Hoehndorf
-  orcid: 0000-0001-8149-5890
   contact_details:
   - contact_type: email
     value: robert.hoehndorf@kaust.edu.sa
   - contact_type: github
     value: leechuck
+  label: Robert Hoehndorf
+  orcid: 0000-0001-8149-5890
+description: Traits and phenotypes of flowering plants occurring in digitized Floras
+domains:
+- biological systems
+homepage_url: https://github.com/flora-phenotype-ontology/flopoontology
+id: flopo
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Flora Phenotype Ontology
 products:
-- id: flopo.owl
-  name: flopo.owl
+- category: OntologyProduct
   description: Flora Phenotype Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: flopo.owl
+  name: flopo.owl
+  product_file_size: 767285
   product_url: http://purl.obolibrary.org/obo/flopo.owl
+repository: https://github.com/flora-phenotype-ontology/flopoontology
+taxon:
+- NCBITaxon:33090
 ---
-
 ## Description
 
 Traits and phenotypes of flowering plants occurring in digitized Floras

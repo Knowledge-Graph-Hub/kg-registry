@@ -12,7 +12,7 @@ product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c4
 warnings:
 - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
   accessing file

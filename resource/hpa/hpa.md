@@ -69,12 +69,10 @@ products:
   name: HPA Normal Tissue Data
   product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
 - category: Product
@@ -85,13 +83,11 @@ products:
   name: HPA Pathology Data
   product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
@@ -103,13 +99,11 @@ products:
   name: HPA Subcellular Location Data
   product_url: https://www.proteinatlas.org/download/subcellular_location.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
@@ -120,12 +114,10 @@ products:
   name: HPA RNA Tissue Expression Data
   product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
 - category: Product
@@ -135,13 +127,11 @@ products:
   name: HPA RNA Cell Line Expression Data
   product_url: https://www.proteinatlas.org/download/rna_celline.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
@@ -152,12 +142,10 @@ products:
   name: HPA Single Cell RNA Expression Data
   product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
 - category: Product
@@ -167,12 +155,10 @@ products:
   name: HPA Brain RNA Expression Data
   product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
 - category: Product
@@ -183,12 +169,10 @@ products:
   name: HPA Blood Protein Data
   product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
 - category: Product
@@ -198,13 +182,11 @@ products:
   name: HPA Immune Cell RNA Data
   product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
