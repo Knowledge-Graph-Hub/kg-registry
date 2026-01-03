@@ -1,53 +1,51 @@
 ---
+id: fbcv
+name: FlyBase Controlled Vocabulary
+description: A structured controlled vocabulary used for various aspects of annotation
+  by FlyBase.
 activity_status: active
-category: Ontology
+homepage_url: http://purl.obolibrary.org/obo/fbcv
+repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
   contact_details:
   - contact_type: email
     value: cp390@cam.ac.uk
   - contact_type: github
     value: Clare72
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
-description: A structured controlled vocabulary used for various aspects of annotation
-  by FlyBase.
-domains:
-- biological systems
-homepage_url: http://purl.obolibrary.org/obo/fbcv
-id: fbcv
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: FlyBase Controlled Vocabulary
 products:
-- category: OntologyProduct
+- id: fbcv.owl
+  name: fbcv.owl
   description: FlyBase Controlled Vocabulary in OWL format
   format: owl
-  id: fbcv.owl
-  name: fbcv.owl
-  product_file_size: 4275897
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/fbcv.owl
-- category: OntologyProduct
+- id: fbcv.obo
+  name: fbcv.obo
   description: FlyBase Controlled Vocabulary in OBO format
   format: obo
-  id: fbcv.obo
-  name: fbcv.obo
-  product_file_size: 568316
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/fbcv.obo
-- category: OntologyProduct
+- id: fbcv.json
+  name: fbcv.json
   description: FlyBase Controlled Vocabulary in JSON format
   format: json
-  id: fbcv.json
-  name: fbcv.json
-  product_file_size: 2731574
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/fbcv.json
-repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 ---
+
 ## Description
 
 A structured controlled vocabulary used for various aspects of annotation by FlyBase.

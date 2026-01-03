@@ -1,41 +1,41 @@
 ---
+id: ppo
+name: Plant Phenology Ontology
+description: An ontology for describing the phenology of individual plants and populations
+  of plants, and for integrating plant phenological data across sources and scales.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/PlantPhenoOntology/PPO
+repository: https://github.com/PlantPhenoOntology/PPO
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
+taxon:
+- NCBITaxon:33090
 contacts:
 - category: Individual
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
   contact_details:
   - contact_type: email
     value: rlwalls2008@gmail.com
   - contact_type: github
     value: ramonawalls
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
-description: An ontology for describing the phenology of individual plants and populations
-  of plants, and for integrating plant phenological data across sources and scales.
-domains:
-- biological systems
-homepage_url: https://github.com/PlantPhenoOntology/PPO
-id: ppo
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Plant Phenology Ontology
 products:
-- category: OntologyProduct
+- id: ppo.owl
+  name: ppo.owl
   description: Plant Phenology Ontology in OWL format
   format: owl
-  id: ppo.owl
-  name: ppo.owl
-  product_file_size: 67183
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ppo.owl
-repository: https://github.com/PlantPhenoOntology/PPO
-taxon:
-- NCBITaxon:33090
 ---
+
 ## Description
 
 An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.

@@ -1,38 +1,38 @@
 ---
+id: nbo
+name: Neuro Behavior Ontology
+description: An ontology of human and animal behaviours and behavioural phenotypes
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/obo-behavior/behavior-ontology/
+repository: https://github.com/obo-behavior/behavior-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: George Gkoutos
+  orcid: 0000-0002-2061-091X
   contact_details:
   - contact_type: email
     value: g.gkoutos@bham.ac.uk
   - contact_type: github
     value: gkoutos
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
-description: An ontology of human and animal behaviours and behavioural phenotypes
-domains:
-- biological systems
-homepage_url: https://github.com/obo-behavior/behavior-ontology/
-id: nbo
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Neuro Behavior Ontology
 products:
-- category: OntologyProduct
+- id: nbo.owl
+  name: nbo.owl
   description: Neuro Behavior Ontology in OWL format
   format: owl
-  id: nbo.owl
-  name: nbo.owl
-  product_file_size: 372935
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/nbo.owl
-repository: https://github.com/obo-behavior/behavior-ontology
 ---
+
 ## Description
 
 An ontology of human and animal behaviours and behavioural phenotypes

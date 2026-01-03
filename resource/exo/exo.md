@@ -1,46 +1,45 @@
 ---
+id: exo
+name: Exposure ontology
+description: Vocabularies for describing exposure data to inform understanding of
+  environmental health.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/CTDbase/exposure-ontology
+repository: https://github.com/CTDbase/exposure-ontology
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Anne Thessen
+  orcid: 0000-0002-2908-3327
   contact_details:
   - contact_type: email
     value: annethessen@gmail.com
   - contact_type: github
     value: diatomsRcool
-  label: Anne Thessen
-  orcid: 0000-0002-2908-3327
-description: Vocabularies for describing exposure data to inform understanding of
-  environmental health.
-domains:
-- biomedical
-homepage_url: https://github.com/CTDbase/exposure-ontology
-id: exo
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Exposure ontology
 products:
-- category: OntologyProduct
+- id: exo.owl
+  name: exo.owl
   description: Exposure ontology in OWL format
   format: owl
-  id: exo.owl
-  name: exo.owl
-  product_file_size: 17786
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/exo.owl
-- category: OntologyProduct
+- id: exo.obo
+  name: exo.obo
   description: Exposure ontology in OBO format
   format: obo
-  id: exo.obo
-  name: exo.obo
-  product_file_size: 12690
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/exo.obo
-repository: https://github.com/CTDbase/exposure-ontology
 ---
+
 ## Description
 
 Vocabularies for describing exposure data to inform understanding of environmental health.

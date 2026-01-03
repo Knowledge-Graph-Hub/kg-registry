@@ -54,9 +54,11 @@ products:
   name: DSSToxDB Description
   product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-22: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.

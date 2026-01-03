@@ -54,7 +54,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean sync-obo-foundry
 
-all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/taxon_mapping.yaml registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/kgs.ttl registry/parquet registry/taxon_mapping.yaml registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -169,6 +169,10 @@ assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js:
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
+
+# Generate Turtle RDF serialization from YAML
+registry/kgs.ttl: registry/kgs.yml
+	$(RUN) python ./util/yaml2ttl.py $< $@.tmp && mv $@.tmp $@
 
 ### Validate Configuration Files
 
