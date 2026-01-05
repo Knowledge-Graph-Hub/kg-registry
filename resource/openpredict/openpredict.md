@@ -55,6 +55,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 405 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 405 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 405 error
     when accessing file'
 publications:

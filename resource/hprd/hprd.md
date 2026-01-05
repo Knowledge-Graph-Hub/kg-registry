@@ -53,6 +53,8 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
     and other interaction databases.
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
@@ -67,6 +69,8 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
@@ -81,6 +85,8 @@ products:
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 503 error
     when accessing file'
 - category: GraphicalInterface

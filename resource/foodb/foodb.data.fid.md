@@ -6,7 +6,7 @@ id: foodb.data.fid
 name: FooDB FID Files
 product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-01-05_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
   accessing file

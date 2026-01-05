@@ -58,6 +58,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
@@ -71,6 +73,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
@@ -83,6 +87,8 @@ products:
   product_url: https://loinc.org/principles/
   warnings:
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 503 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 503 error
     when accessing file'

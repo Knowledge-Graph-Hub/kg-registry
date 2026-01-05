@@ -72,6 +72,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-01-05_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-01-05: Timeout connecting
     to URL'
 publications:

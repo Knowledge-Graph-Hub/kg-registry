@@ -99,6 +99,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -112,8 +114,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-02_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-01-05: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-01-05_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

@@ -51,6 +51,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
     header found'
 - category: Product
@@ -67,6 +69,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
     header found'
 - category: Product
@@ -83,6 +87,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
     header found'
 - category: ProgrammingInterface
