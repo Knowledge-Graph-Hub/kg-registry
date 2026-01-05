@@ -551,11 +551,13 @@ kgr:bacdive a schema1:DataSource ;
 kgr:bactotraits a schema1:DataSource ;
     rdfs:label "BactoTraits" ;
     dcterms:created "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "A comprehensive database of bacterial phenotypic traits including morphology, physiology, ecology, and growth characteristics for thousands of bacterial species." ;
+    dcterms:description "A comprehensive database of bacterial phenotypic traits including morphology, physiology, ecology, and growth characteristics for thousands of bacterial species. BactoTraits provides standardized trait annotations for comparative microbiology and systems biology applications." ;
     dcterms:identifier "bactotraits" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-05T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2> ;
-    schema1:hasPart kgr:kg-microbe.graph.biomedical,
+    schema1:hasPart kgr:bactotraits.database,
+        kgr:kg-microbe.graph.biomedical,
         kgr:kg-microbe.graph.biomedical-function,
         kgr:kg-microbe.graph.core,
         kgr:kg-microbe.graph.function,
@@ -567,7 +569,8 @@ kgr:bactotraits a schema1:DataSource ;
         "microbiology",
         "systems biology" ;
     adms:status "Active" ;
-    foaf:homepage <https://www.bv-brc.org/> .
+    foaf:homepage <https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53> ;
+    foaf:maker kgr:univ-lorraine .
 
 kgr:bcgo a schema1:Ontology ;
     rdfs:label "Beta Cell Genomics Ontology" ;
@@ -3025,16 +3028,21 @@ kgr:docm a schema1:DataSource ;
     adms:status "Inactive" ;
     foaf:homepage <http://www.docm.info/> .
 
-kgr:doco a schema1:DataSource ;
-    rdfs:label "Doco" ;
+kgr:doco a schema1:Ontology ;
+    rdfs:label "Document Components Ontology (DOCO)" ;
     dcterms:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for doco. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "DOCO (Document Components Ontology) is an OWL ontology for describing the structural and rhetorical components of documents. It is part of the SPAR (Semantic Publishing and Referencing) Ontologies suite and provides a vocabulary for semantic annotation of document structure." ;
     dcterms:identifier "doco" ;
-    dcterms:modified "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:openbiodiv.ontology.ttl ;
-    schema1:name "Doco" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:doco.owl,
+        kgr:openbiodiv.ontology.ttl ;
+    schema1:name "Document Components Ontology (DOCO)" ;
+    doap:repository <https://github.com/SPAROntologies/doco> ;
+    skos:inScheme "literature" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/SPAROntologies/doco> ;
+    foaf:maker kgr:spar .
 
 kgr:doid a schema1:Ontology ;
     rdfs:label "Human Disease Ontology" ;
@@ -3300,8 +3308,10 @@ kgr:ec a schema1:Ontology ;
     dcterms:created "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Enzyme Commission classification system provides a hierarchical numbering scheme for enzymes based on the chemical reactions they catalyze, maintained by the IUBMB." ;
     dcterms:identifier "ec" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:kg-microbe.graph.biomedical,
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-01-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ec.database,
+        kgr:kg-microbe.graph.biomedical,
         kgr:kg-microbe.graph.biomedical-function,
         kgr:kg-microbe.graph.core,
         kgr:kg-microbe.graph.function,
@@ -3311,9 +3321,11 @@ kgr:ec a schema1:Ontology ;
         "EC Numbers",
         "Enzyme Commission Numbers",
         "IUBMB Enzyme Nomenclature" ;
-    skos:inScheme "systems biology" ;
+    skos:inScheme "biological systems",
+        "systems biology" ;
     adms:status "Active" ;
-    foaf:homepage <https://www.enzyme-database.org/> .
+    foaf:homepage <https://www.enzyme-database.org/> ;
+    foaf:maker kgr:iubmb .
 
 kgr:ecao a schema1:Ontology ;
     rdfs:label "The Echinoderm Anatomy and Development Ontology" ;
@@ -4609,16 +4621,27 @@ kgr:gendr a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <http://genomics.senescence.info/diet/> .
 
-kgr:gene-ontology a schema1:DataSource ;
-    rdfs:label "Gene-ontology" ;
+kgr:gene-ontology a schema1:Ontology ;
+    rdfs:label "Gene Ontology (GO)" ;
     dcterms:created "2025-12-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for gene-ontology. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Gene Ontology (GO) is a major bioinformatics initiative to standardize the representation of gene and gene product attributes across species, databases, and data types. It provides controlled vocabularies (ontologies) for describing molecular functions, cellular components, and biological processes associated with gene products." ;
     dcterms:identifier "gene-ontology" ;
-    dcterms:modified "2025-12-18T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:cam-kp.go-cams ;
-    schema1:name "Gene-ontology" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-01-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:all> ;
+    schema1:hasPart kgr:cam-kp.go-cams,
+        kgr:gene-ontology.amigo,
+        kgr:gene-ontology.api,
+        kgr:go.obo,
+        kgr:go.owl ;
+    schema1:name "Gene Ontology (GO)" ;
+    doap:repository <https://github.com/geneontology> ;
+    skos:altLabel "GO" ;
+    skos:inScheme "biological systems",
+        "biomedical" ;
+    adms:status "Active" ;
+    foaf:homepage <https://geneontology.org/> ;
+    foaf:maker kgr:gene-ontology-consortium .
 
 kgr:genebass a schema1:DataSource ;
     rdfs:label "Genebass: Gene-based association summary statistics" ;
@@ -4788,20 +4811,22 @@ kgr:geoconnex a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://docs.geoconnex.us/about/intro> .
 
-kgr:gff a schema1:Ontology ;
+kgr:gff a schema1:DataModel ;
     rdfs:label "GFF" ;
     dcterms:created "2025-09-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GFF (General Feature Format) is a standard file format for describing genomic features including genes, transcripts, exons, and other sequence annotations, widely used in genome annotation and bioinformatics." ;
     dcterms:identifier "gff" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:chr.model.owl ;
+    dcterms:modified "2026-01-05T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:chr.model.owl,
+        kgr:gff.specification ;
     schema1:name "GFF" ;
     skos:altLabel "GFF",
         "GFF3",
         "General Feature Format" ;
     skos:inScheme "genomics" ;
     adms:status "Active" ;
-    foaf:homepage <http://www.sequenceontology.org/gff3.shtml> .
+    foaf:homepage <http://www.sequenceontology.org/gff3.shtml> ;
+    foaf:maker kgr:sequence-ontology .
 
 kgr:ghr a schema1:DataSource ;
     rdfs:label "Genetics Home Reference" ;
@@ -6502,7 +6527,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2025-12-22T17:51:12+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-01-03T00:53:55+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:kg-monarch.associations.all,
@@ -7312,25 +7337,30 @@ kgr:metanetx a schema1:DataSource ;
     foaf:homepage <https://www.metanetx.org/> ;
     foaf:maker kgr:sib .
 
-kgr:metpo a schema1:DataSource ;
-    rdfs:label "MetPo" ;
+kgr:metpo a schema1:Ontology ;
+    rdfs:label "METPO (Microbial Ecophysiological Trait and Phenotype Ontology)" ;
     dcterms:created "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Database of metabolic potential predictions for microbial organisms, providing computational inferences about metabolic capabilities based on genomic and metagenomic data." ;
+    dcterms:description "METPO (Microbial Ecophysiological Trait and Phenotype Ontology) is an ontology for describing microbial ecophysiological traits and phenotypes relevant to microbial ecology and environmental systems biology." ;
     dcterms:identifier "metpo" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-05T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2> ;
     schema1:hasPart kgr:kg-microbe.graph.biomedical,
         kgr:kg-microbe.graph.biomedical-function,
         kgr:kg-microbe.graph.core,
         kgr:kg-microbe.graph.function,
-        kgr:kg-microbe.graph.raw ;
-    schema1:name "MetPo" ;
-    skos:altLabel "MetPo",
-        "Metabolic Potential" ;
-    skos:inScheme "genomics",
+        kgr:kg-microbe.graph.raw,
+        kgr:metpo.owl ;
+    schema1:name "METPO (Microbial Ecophysiological Trait and Phenotype Ontology)" ;
+    doap:repository <https://github.com/berkeleybop/metpo> ;
+    skos:altLabel "METPO",
+        "Microbial Ecophysiological Trait and Phenotype Ontology" ;
+    skos:inScheme "biological systems",
         "microbiology",
         "systems biology" ;
-    adms:status "Active" .
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/berkeleybop/metpo> ;
+    foaf:maker kgr:berkeleybop .
 
 kgr:mf a schema1:Ontology ;
     rdfs:label "Mental Functioning Ontology" ;
@@ -13981,6 +14011,11 @@ kgr:atom.kg a schema1:GraphProduct ;
     dcterms:description "Anti-tumor biomaterial knowledge graph constructed from biomedicine literature, containing structured relationships among anti-tumor entities extracted through entity recognition, sentence simplification, triple extraction, and predicate mapping." ;
     schema1:url <https://doi.org/10.1109/BIBM47256.2019.8983062> .
 
+kgr:bactotraits.database a schema1:Product ;
+    rdfs:label "BactoTraits Database and Downloads" ;
+    dcterms:description "BactoTraits database with downloadable trait datasets" ;
+    schema1:url <https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53> .
+
 kgr:bcgo.owl a schema1:OntologyProduct ;
     rdfs:label "bcgo.owl" ;
     dcterms:description "Beta Cell Genomics Ontology in OWL format" ;
@@ -13990,6 +14025,9 @@ kgr:bco.owl a schema1:OntologyProduct ;
     rdfs:label "bco.owl" ;
     dcterms:description "Biological Collections Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/bco.owl> .
+
+kgr:berkeleybop a "Organization" ;
+    rdfs:label "Berkeley Bioinformatics Open-source Projects" .
 
 kgr:bfo.obo a schema1:OntologyProduct ;
     rdfs:label "bfo.obo" ;
@@ -15937,6 +15975,11 @@ kgr:docm.variants.vcf a schema1:Product ;
     dcterms:description "Curated cancer mutations in Variant Call Format (VCF)" ;
     schema1:url <https://github.com/griffithlab/docm/raw/master/data/variants.vcf.gz> .
 
+kgr:doco.owl a schema1:OntologyProduct ;
+    rdfs:label "DOCO Ontology (OWL)" ;
+    dcterms:description "DOCO ontology in OWL/RDF format" ;
+    schema1:url <https://svn.code.sf.net/p/sempublishing/code/DoCO/2015-07-03_doco-1_3.owl> .
+
 kgr:doid.obo a schema1:OntologyProduct ;
     rdfs:label "Disease Ontology, OBO format. This file omits the equivalent axioms." ;
     dcterms:description "Disease Ontology, OBO format. This file omits the equivalent axioms." ;
@@ -16071,6 +16114,11 @@ kgr:ebrains.stats a schema1:GraphicalInterface ;
     rdfs:label "KG Statistics" ;
     dcterms:description "A visualization of the contents of the EBRAINS knowledge graph." ;
     schema1:url <https://stats.kg.ebrains.eu/> .
+
+kgr:ec.database a schema1:GraphicalInterface ;
+    rdfs:label "Enzyme Commission Official Database" ;
+    dcterms:description "Official Enzyme Commission nomenclature and EC number database" ;
+    schema1:url <https://www.enzyme-database.org/> .
 
 kgr:ecao.obo a schema1:OntologyProduct ;
     rdfs:label "ecao.obo" ;
@@ -17246,6 +17294,19 @@ kgr:gendr.web a schema1:GraphicalInterface ;
     dcterms:description "Web-based search and browsing interface for GenDR" ;
     schema1:url <http://genomics.senescence.info/diet/> .
 
+kgr:gene-ontology-consortium a "Organization" ;
+    rdfs:label "Gene Ontology Consortium" .
+
+kgr:gene-ontology.amigo a schema1:GraphicalInterface ;
+    rdfs:label "AmiGO 2" ;
+    dcterms:description "Gene Ontology web browser and search interface" ;
+    schema1:url <http://amigo.geneontology.org/amigo> .
+
+kgr:gene-ontology.api a schema1:ProgrammingInterface ;
+    rdfs:label "Gene Ontology API" ;
+    dcterms:description "Gene Ontology API for programmatic access" ;
+    schema1:url <https://www.ebi.ac.uk/QuickGO/api/> .
+
 kgr:genecards.web.interface a schema1:GraphicalInterface ;
     rdfs:label "GeneCards Web Interface" ;
     dcterms:description "Web-based interface for searching and browsing comprehensive gene-centric information integrating data from over 200 sources" ;
@@ -17300,6 +17361,11 @@ kgr:geoconnex.sparql a schema1:ProgrammingInterface ;
     rdfs:label "GEOCONNEX SPARQL" ;
     dcterms:description "SPARQL endpoint for GEOCONNEX" ;
     schema1:url <https://frink.apps.renci.org/geoconnex/sparql> .
+
+kgr:gff.specification a schema1:DocumentationProduct ;
+    rdfs:label "GFF3 Specification" ;
+    dcterms:description "GFF3 specification and documentation from Sequence Ontology" ;
+    schema1:url <http://www.sequenceontology.org/gff3.shtml> .
 
 kgr:glkb.site a schema1:GraphicalInterface ;
     rdfs:label "GLKB Site" ;
@@ -17594,16 +17660,6 @@ kgr:go.json a schema1:OntologyProduct ;
     rdfs:label "GO (JSON edition)" ;
     dcterms:description "Equivalent to go.owl, in obograph json format" ;
     schema1:url <http://purl.obolibrary.org/obo/go.json> .
-
-kgr:go.obo a schema1:OntologyProduct ;
-    rdfs:label "GO (OBO Format edition)" ;
-    dcterms:description "Equivalent to go.owl, in obo format" ;
-    schema1:url <http://purl.obolibrary.org/obo/go.obo> .
-
-kgr:go.owl a schema1:OntologyProduct ;
-    rdfs:label "GO (OWL edition)" ;
-    dcterms:description "The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies" ;
-    schema1:url <http://purl.obolibrary.org/obo/go.owl> .
 
 kgr:go.snapshot.go.obo a schema1:OntologyProduct ;
     rdfs:label "GO (OBO Format edition), daily snapshot release" ;
@@ -18694,6 +18750,9 @@ kgr:itis.portal a schema1:GraphicalInterface ;
     dcterms:description "Web portal for browsing taxonomic records, hierarchical classification, name sources, and reports" ;
     schema1:url <https://www.itis.gov/> .
 
+kgr:iubmb a "Organization" ;
+    rdfs:label "International Union of Biochemistry and Molecular Biology" .
+
 kgr:kegg.annotation a schema1:ProcessProduct ;
     rdfs:label "KEGG Annotation" ;
     dcterms:description "Tools for KO (KEGG Orthology) assignment and validation" ;
@@ -19621,6 +19680,11 @@ kgr:metanetx.sparql a schema1:ProgrammingInterface ;
     rdfs:label "MetaNetX SPARQL Endpoint" ;
     dcterms:description "SPARQL endpoint for querying MetaNetX RDF data" ;
     schema1:url <https://rdf.metanetx.org/> .
+
+kgr:metpo.owl a schema1:OntologyProduct ;
+    rdfs:label "METPO OWL" ;
+    dcterms:description "METPO ontology in OWL format" ;
+    schema1:url <https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl> .
 
 kgr:mf.owl a schema1:OntologyProduct ;
     rdfs:label "mf.owl" ;
@@ -23628,6 +23692,9 @@ kgr:sepio.owl a schema1:OntologyProduct ;
     dcterms:description "SEPIO" ;
     schema1:url <http://purl.obolibrary.org/obo/sepio.owl> .
 
+kgr:sequence-ontology a "Organization" ;
+    rdfs:label "Sequence Ontology Consortium" .
+
 kgr:sibils.api.rest.fetch a schema1:ProgrammingInterface ;
     rdfs:label "SIBiLS Fetch API" ;
     dcterms:description "RESTful API for fetching annotated contents from SIBiLS collections" ;
@@ -24165,6 +24232,9 @@ kgr:sockg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SOC-KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SOC-KG" ;
     schema1:url <https://frink.apps.renci.org/sockg/sparql> .
+
+kgr:spar a "Organization" ;
+    rdfs:label "SPAR (Semantic Publishing and Referencing) Ontologies" .
 
 kgr:spatialkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph Spatial KG SPARQL" ;
@@ -25033,6 +25103,9 @@ kgr:uniref.uniref90.xml a schema1:Product ;
     dcterms:description "UniRef90 database in XML format with complete cluster information and annotations" ;
     schema1:url <https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.xml.gz> .
 
+kgr:univ-lorraine a "Organization" ;
+    rdfs:label "Université de Lorraine" .
+
 kgr:uo.obo a schema1:OntologyProduct ;
     rdfs:label "uo.obo" ;
     dcterms:description "Units of measurement ontology in OBO format" ;
@@ -25626,6 +25699,16 @@ kgr:gnbr.graph a schema1:GraphProduct ;
     rdfs:label "GNBR graph" ;
     dcterms:description "Text-mined biomedical knowledge graph of gene–disease–drug relationships (semantic themes)" ;
     schema1:url <https://zenodo.org/records/3459420> .
+
+kgr:go.obo a schema1:OntologyProduct ;
+    rdfs:label "GO (OBO Format edition)" ;
+    dcterms:description "Equivalent to go.owl, in obo format" ;
+    schema1:url <http://purl.obolibrary.org/obo/go.obo> .
+
+kgr:go.owl a schema1:OntologyProduct ;
+    rdfs:label "GO (OWL edition)" ;
+    dcterms:description "The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies" ;
+    schema1:url <http://purl.obolibrary.org/obo/go.owl> .
 
 kgr:goa.ftp a schema1:Product ;
     rdfs:label "GOA FTP Site" ;

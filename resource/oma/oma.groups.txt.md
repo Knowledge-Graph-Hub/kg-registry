@@ -14,9 +14,9 @@ warnings:
   accessing file
 - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
   to URL
+- File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
-  to URL
 layout: product_detail
 ---

@@ -2,12 +2,12 @@
 activity_status: active
 category: Ontology
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.berkeleybop.org/"
-    id: berkeleybop
-    label: Berkeley Bioinformatics Open-source Projects
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.berkeleybop.org/
+  id: berkeleybop
+  label: Berkeley Bioinformatics Open-source Projects
 creation_date: '2025-11-25T00:00:00Z'
 description: METPO (Microbial Ecophysiological Trait and Phenotype Ontology) is an
   ontology for describing microbial ecophysiological traits and phenotypes relevant
@@ -21,13 +21,9 @@ id: metpo
 last_modified_date: '2026-01-05T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: METPO (Microbial Ecophysiological Trait and Phenotype Ontology)
-repository: https://github.com/berkeleybop/metpo
-synonyms:
-- METPO
-- Microbial Ecophysiological Trait and Phenotype Ontology
 products:
 - category: OntologyProduct
   description: METPO ontology in OWL format
@@ -35,6 +31,7 @@ products:
   id: metpo.owl
   is_public: true
   name: METPO OWL
+  product_file_size: 24016
   product_url: https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl
 - category: GraphProduct
   compression: targz
@@ -168,10 +165,13 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
+repository: https://github.com/berkeleybop/metpo
+synonyms:
+- METPO
+- Microbial Ecophysiological Trait and Phenotype Ontology
 taxon:
 - NCBITaxon:2
 ---
-
 # METPO
 
 For more information, see the [KG-Microbe project](https://github.com/Knowledge-Graph-Hub/kg-microbe).

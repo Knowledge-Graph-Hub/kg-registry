@@ -23,7 +23,7 @@ ato	Amphibian taxonomy	Ontology	http://www.amphibanat.org	resource/ato/ato.md
 atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource/atom/atom.md
 automat	Automat	Aggregator	https://robokop.renci.org/api-docs/docs/category/automat	resource/automat/automat.md
 bacdive	BacDive	DataSource	https://bacdive.dsmz.de/	resource/bacdive/bacdive.md
-bactotraits	BactoTraits	DataSource	https://www.bv-brc.org/	resource/bactotraits/bactotraits.md
+bactotraits	BactoTraits	DataSource	https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53	resource/bactotraits/bactotraits.md
 bcgo	Beta Cell Genomics Ontology	Ontology	https://github.com/obi-bcgo/bcgo	resource/bcgo/bcgo.md
 bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOntologies/bco	resource/bco/bco.md
 bigg	BiGG Models	DataSource	http://bigg.ucsd.edu/	resource/bigg/bigg.md
@@ -108,7 +108,7 @@ dideo	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Ontology
 dinto	The Drug-Drug Interactions Ontology	Ontology	http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto	resource/dinto/dinto.md
 disbiome	Disbiome	DataSource	https://disbiome.ugent.be/	resource/disbiome/disbiome.md
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
-doco	Doco	DataSource		resource/doco/doco.md
+doco	Document Components Ontology (DOCO)	Ontology	https://github.com/SPAROntologies/doco	resource/doco/doco.md
 doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/doid.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
 dpo	Drosophila Phenotype Ontology	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/dpo/dpo.md
@@ -176,7 +176,7 @@ gallont	Plant Gall Ontology	Ontology	https://adeans.github.io/gallont/	resource/
 gaz	Gazetteer	Ontology	http://environmentontology.github.io/gaz/	resource/gaz/gaz.md
 gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohorts/GECKO	resource/gecko/gecko.md
 gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencode.md
-gene-ontology	Gene-ontology	DataSource		resource/gene-ontology/gene-ontology.md
+gene-ontology	Gene Ontology (GO)	Ontology	https://geneontology.org/	resource/gene-ontology/gene-ontology.md
 genecards	GeneCards	Aggregator	https://www.genecards.org/	resource/genecards/genecards.md
 genemania	GeneMANIA	DataSource	https://genemania.org/	resource/genemania/genemania.md
 genepio	Genomic Epidemiology Ontology	Ontology	http://genepio.org/	resource/genepio/genepio.md
@@ -186,7 +186,7 @@ genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/geno
 genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com/genophenoenvo/knowledge-graph	resource/genophenoenvo-kg/genophenoenvo-kg.md
 geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-entity-ontology/wiki	resource/geo/geo.md
 geoconnex	GEOCONNEX	KnowledgeGraph	https://docs.geoconnex.us/about/intro	resource/geoconnex/geoconnex.md
-gff	GFF	Ontology	http://www.sequenceontology.org/gff3.shtml	resource/gff/gff.md
+gff	GFF	DataModel	http://www.sequenceontology.org/gff3.shtml	resource/gff/gff.md
 glkb	GLKB	DataSource	https://glkb.dcmb.med.umich.edu/	resource/glkb/glkb.md
 globi	Global Biotic Interactions (GloBI)	KnowledgeGraph	https://www.globalbioticinteractions.org/	resource/globi/globi.md
 glycocoo	GlycoConjugate Ontology (GlycoCoO)	Ontology	https://github.com/glycoinfo/GlycoCoO	resource/glycocoo/glycocoo.md
@@ -268,7 +268,7 @@ mechreponet	MechRepoNet	KnowledgeGraph	https://github.com/SuLab/MechRepoNet	reso
 mediadive	MediaDive	DataSource	https://mediadive.dsmz.de/	resource/mediadive/mediadive.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
-metpo	MetPo	DataSource		resource/metpo/metpo.md
+metpo	METPO (Microbial Ecophysiological Trait and Phenotype Ontology)	Ontology	https://github.com/berkeleybop/metpo	resource/metpo/metpo.md
 mf	Mental Functioning Ontology	Ontology	https://github.com/jannahastings/mental-functioning-ontology	resource/mf/mf.md
 mfmo	Mammalian Feeding Muscle Ontology	Ontology	https://github.com/rdruzinsky/feedontology	resource/mfmo/mfmo.md
 mfo	Medaka fish anatomy and development	Ontology		resource/mfo/mfo.md

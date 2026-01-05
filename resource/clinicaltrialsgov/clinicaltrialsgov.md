@@ -197,7 +197,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -212,7 +212,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
     when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial

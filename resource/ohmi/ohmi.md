@@ -32,7 +32,7 @@ products:
   format: owl
   id: ohmi.owl
   name: ohmi.owl
-  product_file_size: 137769
+  product_file_size: 146555
   product_url: http://purl.obolibrary.org/obo/ohmi.owl
 repository: https://github.com/ohmi-ontology/ohmi
 ---

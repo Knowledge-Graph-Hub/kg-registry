@@ -151,7 +151,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
     when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
@@ -171,7 +171,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-03: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
     when accessing file'
 publications:
 - id: https://doi.org/10.1093/nar/gky1151
