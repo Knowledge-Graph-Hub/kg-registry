@@ -1,14 +1,25 @@
 ---
 activity_status: active
 category: Ontology
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: "https://www.iubmb.org/"
+    id: iubmb
+    label: International Union of Biochemistry and Molecular Biology
 creation_date: '2025-11-25T00:00:00Z'
 description: The Enzyme Commission classification system provides a hierarchical numbering scheme for enzymes based on the chemical reactions they catalyze, maintained by the IUBMB.
 domains:
   - systems biology
-id: "ec"
+  - biological systems
 homepage_url: https://www.enzyme-database.org/
-last_modified_date: '2025-11-25T00:00:00Z'
+id: "ec"
+last_modified_date: '2026-01-05T00:00:00Z'
 layout: resource_detail
+license:
+  id: "https://creativecommons.org/publicdomain/zero/1.0/"
+  label: CC0 1.0
 name: Enzyme Commission
 synonyms:
   - EC
@@ -16,6 +27,13 @@ synonyms:
   - Enzyme Commission Numbers
   - IUBMB Enzyme Nomenclature
 products:
+  - category: GraphicalInterface
+    description: Official Enzyme Commission nomenclature and EC number database
+    format: http
+    id: ec.database
+    is_public: true
+    name: Enzyme Commission Official Database
+    product_url: https://www.enzyme-database.org/
   - category: GraphProduct
     compression: targz
     description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
