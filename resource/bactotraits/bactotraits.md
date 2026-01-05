@@ -1,22 +1,41 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: "https://www.univ-lorraine.fr/"
+    id: univ-lorraine
+    label: Université de Lorraine
 creation_date: '2025-11-25T00:00:00Z'
 description: A comprehensive database of bacterial phenotypic traits including morphology,
   physiology, ecology, and growth characteristics for thousands of bacterial species.
+  BactoTraits provides standardized trait annotations for comparative microbiology
+  and systems biology applications.
 domains:
 - microbiology
 - biological systems
 - systems biology
+homepage_url: https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53
 id: bactotraits
-homepage_url: https://www.bv-brc.org/
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-01-05T00:00:00Z'
 layout: resource_detail
+license:
+  id: "https://creativecommons.org/licenses/by/4.0/"
+  label: CC BY 4.0
 name: BactoTraits
 synonyms:
 - BactoTraits
 - Bacterial Traits Database
 products:
+- category: Product
+  description: BactoTraits database with downloadable trait datasets
+  format: http
+  id: bactotraits.database
+  is_public: true
+  name: BactoTraits Database and Downloads
+  product_url: https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -149,9 +168,6 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 taxon:
 - NCBITaxon:2
 ---
