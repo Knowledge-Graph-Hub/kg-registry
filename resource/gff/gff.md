@@ -1,20 +1,34 @@
 ---
 activity_status: active
-category: Ontology
+category: DataModel
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: "http://www.sequenceontology.org/"
+    id: "sequence-ontology"
+    label: Sequence Ontology Consortium
 creation_date: '2025-09-04T00:00:00Z'
 description: GFF (General Feature Format) is a standard file format for describing genomic features including genes, transcripts, exons, and other sequence annotations, widely used in genome annotation and bioinformatics.
 domains:
   - genomics
+homepage_url: http://www.sequenceontology.org/gff3.shtml
 id: "gff"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-01-05T00:00:00Z'
 layout: resource_detail
 name: GFF
 synonyms:
   - GFF
   - General Feature Format
   - GFF3
-homepage_url: http://www.sequenceontology.org/gff3.shtml
 products:
+  - category: DocumentationProduct
+    description: GFF3 specification and documentation from Sequence Ontology
+    format: http
+    id: "gff.specification"
+    is_public: true
+    name: GFF3 Specification
+    product_url: http://www.sequenceontology.org/gff3.shtml
   - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
@@ -32,8 +46,6 @@ products:
     product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
     secondary_source:
       - chr
-warnings:
-  - This is an automatically generated stub page. Please replace with accurate information about this resource.
 ---
 
 # GFF (General Feature Format)
