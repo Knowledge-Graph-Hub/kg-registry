@@ -1,22 +1,41 @@
 ---
 activity_status: active
-category: DataSource
+category: Ontology
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: "https://www.berkeleybop.org/"
+    id: berkeleybop
+    label: Berkeley Bioinformatics Open-source Projects
 creation_date: '2025-11-25T00:00:00Z'
-description: Database of metabolic potential predictions for microbial organisms,
-  providing computational inferences about metabolic capabilities based on genomic
-  and metagenomic data.
+description: METPO (Microbial Ecophysiological Trait and Phenotype Ontology) is an
+  ontology for describing microbial ecophysiological traits and phenotypes relevant
+  to microbial ecology and environmental systems biology.
 domains:
 - microbiology
 - systems biology
-- genomics
+- biological systems
+homepage_url: https://github.com/berkeleybop/metpo
 id: metpo
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-01-05T00:00:00Z'
 layout: resource_detail
-name: MetPo
+license:
+  id: "https://creativecommons.org/licenses/by/4.0/"
+  label: CC BY 4.0
+name: METPO (Microbial Ecophysiological Trait and Phenotype Ontology)
+repository: https://github.com/berkeleybop/metpo
 synonyms:
-- MetPo
-- Metabolic Potential
+- METPO
+- Microbial Ecophysiological Trait and Phenotype Ontology
 products:
+- category: OntologyProduct
+  description: METPO ontology in OWL format
+  format: owl
+  id: metpo.owl
+  is_public: true
+  name: METPO OWL
+  product_url: https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -149,51 +168,10 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 taxon:
 - NCBITaxon:2
 ---
 
-# MetPo
+# METPO
 
-## Overview
-
-MetPo (Metabolic Potential) is a computational resource that provides predictions of metabolic capabilities for microbial organisms. It integrates genomic and metagenomic data to infer the metabolic potential of microorganisms, including their ability to utilize various substrates, produce specific metabolites, and participate in biogeochemical cycles.
-
-## Key Features
-
-- **Metabolic Predictions**: Computational inference of metabolic pathways and capabilities from sequence data
-- **Substrate Utilization**: Predictions of carbon source utilization and nutrient requirements
-- **Pathway Completeness**: Assessment of complete vs. incomplete metabolic pathways
-- **Functional Annotations**: Links to enzyme classifications and biochemical reactions
-- **Taxonomic Coverage**: Predictions across diverse microbial taxa
-
-## Applications
-
-- **Microbial Ecology**: Understanding metabolic roles in microbial communities
-- **Metagenomics**: Predicting metabolic functions from environmental sequences
-- **Biotechnology**: Identifying organisms for specific metabolic applications
-- **Systems Biology**: Integrating metabolic predictions with growth conditions and traits
-- **Comparative Genomics**: Analyzing metabolic diversity across microbial lineages
-
-## Methodology
-
-Metabolic potential predictions typically combine:
-- Genome or metagenome sequence analysis
-- Enzyme and pathway annotation
-- Metabolic network reconstruction
-- Comparative genomics approaches
-- Machine learning models for function prediction
-
-## Integration
-
-MetPo data is integrated into the KG-Microbe knowledge graph framework, connecting metabolic predictions with:
-- Microbial taxonomy (NCBITaxon)
-- Enzyme classifications (EC numbers)
-- Biochemical reactions (Rhea)
-- Phenotypic traits (BactoTraits)
-- Growth conditions (MediaDive)
-
-For more information about metabolic potential integration in knowledge graphs, see the [KG-Microbe project](https://github.com/Knowledge-Graph-Hub/kg-microbe).
+For more information, see the [KG-Microbe project](https://github.com/Knowledge-Graph-Hub/kg-microbe).
