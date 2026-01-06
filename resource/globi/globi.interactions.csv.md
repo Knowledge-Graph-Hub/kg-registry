@@ -11,8 +11,8 @@ warnings:
   header found
 - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
-  header found
+- File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
   accessing file
 layout: product_detail

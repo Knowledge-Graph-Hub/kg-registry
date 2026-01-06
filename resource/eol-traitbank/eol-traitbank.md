@@ -81,7 +81,7 @@ products:
     to URL: HTTPSConnectionPool(host=''editors.eol.org'', port=443): Max retries exceeded
     with url: /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: DocumentationProduct
   description: Comprehensive documentation covering TraitBank data structure, API
     usage, authentication methods, and data formats
@@ -104,7 +104,7 @@ products:
     to URL: HTTPSConnectionPool(host=''eol.org'', port=443): Max retries exceeded
     with url: /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 publications:
 - authors:
   - Adams B

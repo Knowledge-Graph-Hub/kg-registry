@@ -83,8 +83,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+    header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
