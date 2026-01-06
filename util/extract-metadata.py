@@ -1225,6 +1225,22 @@ def concat_resource_yaml(args):
     # Generate evaluation pages from evals/evals.tsv and annotate resources
     create_evaluation_pages(objs)
 
+    # Annotate resources with automated evaluation pages if they exist
+    def annotate_automated_evaluations(objs):
+        """Check for automated evaluation pages and annotate resources"""
+        resources_by_id = {obj.get('id'): obj for obj in objs if obj.get('id')}
+        count = 0
+        for rid, obj in resources_by_id.items():
+            # Check for automated evaluation markdown file (will be compiled to HTML by Jekyll)
+            eval_auto_md_path = ROOT / 'resource' / rid / f'{rid}_eval_automated.md'
+            if eval_auto_md_path.exists():
+                obj['evaluation_page'] = f"resource/{rid}/{rid}_eval_automated.html"
+                count += 1
+        if count > 0:
+            print(f"✅ Annotated {count} resource(s) with automated evaluation page(s)")
+
+    annotate_automated_evaluations(objs)
+
     with open(args.output, "w") as f:
         f.write(yaml.dump(cfg))
     return cfg

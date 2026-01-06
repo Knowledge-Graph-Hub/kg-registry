@@ -21,11 +21,9 @@ products:
   name: Text Mining KP KGX
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
     when accessing file'
 repository: ''
 ---
@@ -34,3 +32,7 @@ A Translator Knowledge Provider applying text-mined assertions.
 contacts:
 - category: Individual
  Edgar Gatica and Bill Baumgartner
+
+## Automated Evaluation
+
+- View the automated evaluation: [text-mining-kp automated evaluation](text-mining-kp_eval_automated.html)

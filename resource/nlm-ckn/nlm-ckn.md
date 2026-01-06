@@ -63,3 +63,7 @@ products:
 repository: https://github.com/NIH-NLM/cell-kn-mvp
 ---
 A knowledge graph that contains knowledge about cellular phenotypes (cell types and cell states) that has been gathered through single cell technologies and related experiments. NLM-CKN is populated using validated computational analysis pipelines and natural language processing of scientific literature and integrated with other public sources of relevant knowledge about genes, anatomical structures, diseases, and drugs.
+
+## Automated Evaluation
+
+- View the automated evaluation: [nlm-ckn automated evaluation](nlm-ckn_eval_automated.html)

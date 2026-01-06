@@ -1,58 +1,64 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: url
+    value: https://github.com/zhang-informatics
+  label: Rui Zhang
 creation_date: '2025-10-30T00:00:00Z'
-description: The integrated DIetary Supplements Knowledge base (iDISK) is a standardized knowledge base integrating dietary supplement information from multiple authoritative sources including ingredients, products, drug interactions, effectiveness, adverse effects, and therapeutic uses, represented according to established terminology principles with UMLS and MedDRA mappings.
+description: The integrated DIetary Supplements Knowledge base (iDISK) is a standardized
+  knowledge base integrating dietary supplement information from multiple authoritative
+  sources including ingredients, products, drug interactions, effectiveness, adverse
+  effects, and therapeutic uses, represented according to established terminology
+  principles with UMLS and MedDRA mappings.
 domains:
-  - nutrition
-  - biomedical
-  - health
-  - pharmacology
+- nutrition
+- biomedical
+- health
+- pharmacology
 homepage_url: https://doi.org/10.13020/d6bm3v
-id: "idisk"
-infores_id: "idisk"
+id: idisk
+infores_id: idisk
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: integrated Dietary Supplement Knowledge Base
 products:
-  - category: GraphProduct
-    description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing and integrating information from diverse biomedical resources including DRKG, iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome, SIDER, and others).
-    id: "ibkh.graph"
-    name: iBKH Knowledge Graph
-    original_source:
-      - drkg
-      - idisk
-      - brenda
-      - ctd
-      - drugbank
-      - kegg
-      - pharmgkb
-      - reactome
-      - sider
-      - tissues
-      - bgee
-      - doid
-      - uberon
-      - cl
-      - hgnc
-      - chembl
-      - chebi
-synonyms:
-  - iDISK
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
+    and integrating information from diverse biomedical resources including DRKG,
+    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
+    SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - drkg
+  - idisk
+  - brenda
+  - ctd
+  - drugbank
+  - kegg
+  - pharmgkb
+  - reactome
+  - sider
+  - tissues
+  - bgee
+  - doid
+  - uberon
+  - cl
+  - hgnc
+  - chembl
+  - chebi
 publications:
-  - id: "doi:10.1093/jamia/ocz216"
-    title: "iDISK: the integrated DIetary Supplements Knowledge base"
-    year: "2020"
-    preferred: true
+- id: doi:10.1093/jamia/ocz216
+  preferred: true
+  title: 'iDISK: the integrated DIetary Supplements Knowledge base'
+  year: '2020'
 repository: https://github.com/zhang-informatics/iDISK
-contacts:
-  - category: Individual
-    label: Rui Zhang
-    contact_details:
-      - contact_type: url
-        value: "https://github.com/zhang-informatics"
+synonyms:
+- iDISK
 ---
-
 # integrated Dietary Supplement Knowledge Base (iDISK)
 
 ## Overview
@@ -204,3 +210,7 @@ iDISK serves as a component of the integrative Biomedical Knowledge Hub (iBKH), 
 This resource has the Information Resource identifier: `infores:idisk`
 
 For more information, see the publication at https://pmc.ncbi.nlm.nih.gov/articles/PMC7075538/ and access data at https://doi.org/10.13020/d6bm3v.
+
+## Automated Evaluation
+
+- View the automated evaluation: [idisk automated evaluation](idisk_eval_automated.html)

@@ -1,17 +1,20 @@
 ---
-layout: resource_detail
 activity_status: active
-id: genetics-kp
-name: Genetics KP
+category: KnowledgeGraph
+collection:
+- translator
+contacts:
+- category: Individual
+  label: Jason Flannick
 description: A Translator Knowledge Provider focusing on genetic data.
 domains:
 - health
-category: KnowledgeGraph
-contacts:
-- category: Individual
-  label: "Jason Flannick"
-collection:
-- translator
+id: genetics-kp
+layout: resource_detail
+name: Genetics KP
 ---
-
 A Translator Knowledge Provider focusing on genetic data.
+
+## Automated Evaluation
+
+- View the automated evaluation: [genetics-kp automated evaluation](genetics-kp_eval_automated.html)

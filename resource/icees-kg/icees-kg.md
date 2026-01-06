@@ -1,93 +1,102 @@
 ---
-layout: resource_detail
 activity_status: active
-id: "icees-kg"
-name: Exposures KP (icees-kg)
-description: The Integrated Clinical and Environmental Exposures Service Knowledge Graph (ICEES KG) is a Translator Knowledge Provider that integrates patient-level clinical data from electronic health records with environmental exposures data including airborne pollutants, landfills, concentrated animal feeding operations, and socio-economic indicators. ICEES KG provides regulatory-compliant open access to integrated clinical and environmental data to support translational research on exposure-driven disease mechanisms and health disparities.
-domains:
-  - health
-  - clinical
-  - biomedical
-  - public health
 category: KnowledgeGraph
 contacts:
-  - category: Individual
-    label: Kara Fecho
-    orcid: 0000-0002-6704-9306
-    contact_details:
-      - contact_type: email
-        value: "kfecho@renci.org"
-      - contact_type: github
-        value: "karafecho"
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kfecho@renci.org
+  - contact_type: github
+    value: karafecho
+  label: Kara Fecho
+  orcid: 0000-0002-6704-9306
 creation_date: '2025-11-05T00:00:00Z'
-last_modified_date: '2025-11-05T00:00:00Z'
-homepage_url: 'https://robokop.renci.org/api-docs/docs/automat/icees-kg'
-repository: 'https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES'
-publications:
-  - id: https://doi.org/10.1093/jamia/ocz042
-  - id: https://doi.org/10.2196/17964
-tags:
-  - translator
-taxon:
-  - NCBITaxon:9606
-products:
-  - id: "icees-kg.graph"
-    name: KGX distribution of the ICEES Exposures KP
-    description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-    category: GraphProduct
-    format: kgx-jsonl
-    secondary_source:
-      - icees-kg
-    original_source:
-      - mesh
-      - pubchem
-      - chembl
-      - mondo
-      - chebi
-      - hp
-      - umls
-      - hmdb
-      - icees-kg
-  - id: icees-kg.trapi
-    name: ICEES KG TRAPI API
-    description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using standardized Translator protocols
-    product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-    category: ProgrammingInterface
-    format: http
-    secondary_source:
-      - icees-kg
-    original_source:
-      - mesh
-      - pubchem
-      - chembl
-      - mondo
-      - chebi
-      - hp
-      - umls
-      - hmdb
-      - icees-kg
-  - id: "icees-kg.metadata"
-    name: ICEES KG Metadata
-    description: Meta knowledge graph and metadata describing the data sources, node types, edge types, and predicates available in ICEES KG
-    product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-    category: Product
-    format: json
-    secondary_source:
-      - icees-kg
-    original_source:
-      - mesh
-      - pubchem
-      - chembl
-      - mondo
-      - chebi
-      - hp
-      - umls
-      - hmdb
-      - icees-kg
+description: The Integrated Clinical and Environmental Exposures Service Knowledge
+  Graph (ICEES KG) is a Translator Knowledge Provider that integrates patient-level
+  clinical data from electronic health records with environmental exposures data including
+  airborne pollutants, landfills, concentrated animal feeding operations, and socio-economic
+  indicators. ICEES KG provides regulatory-compliant open access to integrated clinical
+  and environmental data to support translational research on exposure-driven disease
+  mechanisms and health disparities.
+domains:
+- health
+- clinical
+- biomedical
+- public health
+homepage_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg
+id: icees-kg
 infores_id: icees-kg
+last_modified_date: '2025-11-05T00:00:00Z'
+layout: resource_detail
+name: Exposures KP (icees-kg)
+products:
+- category: GraphProduct
+  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
+    (KGX) format, containing integrated clinical and environmental exposures data
+    as a knowledge graph with 226 nodes and 14,342 edges
+  format: kgx-jsonl
+  id: icees-kg.graph
+  name: KGX distribution of the ICEES Exposures KP
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+  secondary_source:
+  - icees-kg
+- category: ProgrammingInterface
+  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
+    standardized Translator protocols
+  format: http
+  id: icees-kg.trapi
+  name: ICEES KG TRAPI API
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+  secondary_source:
+  - icees-kg
+- category: Product
+  description: Meta knowledge graph and metadata describing the data sources, node
+    types, edge types, and predicates available in ICEES KG
+  format: json
+  id: icees-kg.metadata
+  name: ICEES KG Metadata
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+  secondary_source:
+  - icees-kg
+publications:
+- id: https://doi.org/10.1093/jamia/ocz042
+- id: https://doi.org/10.2196/17964
+repository: https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES
+tags:
+- translator
+taxon:
+- NCBITaxon:9606
 ---
-
 ## Overview
 
 The Integrated Clinical and Environmental Exposures Service Knowledge Graph (ICEES KG) is a Translator Knowledge Provider that provides regulatory-compliant open access to integrated clinical and environmental exposures data. ICEES KG integrates patient-level clinical data derived from electronic health records, survey data, and clinical research data with environmental exposures data including airborne pollutants, landfills, concentrated animal feeding operations, and various socio-economic indicators.
@@ -132,3 +141,7 @@ ICEES KG is accessible through multiple interfaces:
 ## Translator Ecosystem Role
 
 ICEES KG functions as an Exposures Knowledge Provider within the NCATS Biomedical Data Translator program, enabling researchers to pose translational questions that span clinical observations and environmental factors. The knowledge graph can be queried independently or in federation with other Translator resources like ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented Pathways) to generate mechanistic hypotheses about exposure-driven disease mechanisms.
+
+## Automated Evaluation
+
+- View the automated evaluation: [icees-kg automated evaluation](icees-kg_eval_automated.html)

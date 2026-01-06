@@ -55,7 +55,7 @@ products:
   name: ReproTox Dataset
   product_url: https://reprotox-kg.net/downloads/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-06_ Error connecting
     to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
     with url_ /downloads/ (Caused by NameResolutionError("HTTPSConnection(host='reprotox-kg.net',
     port=443)_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not
@@ -410,12 +410,7 @@ products:
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
     object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
-  - File was not able to be retrieved when checked on 2026-01-05_ Error connecting
-    to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
-    with url_ /downloads/ (Caused by NameResolutionError("HTTPSConnection(host='reprotox-kg.net',
-    port=443)_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not
-    known)"))
-  - 'File was not able to be retrieved when checked on 2026-01-05: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-01-06: Error connecting
     to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
     with url: /downloads/ (Caused by NameResolutionError("HTTPSConnection(host=''reprotox-kg.net'',
     port=443): Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service not
@@ -512,3 +507,7 @@ ReproTox-KG is a comprehensive knowledge graph specifically designed for reprodu
 
 ## Technical Implementation
 ReproTox-KG is built using Neo4j graph database technology with standardized ontologies for chemical entities, biological processes, and toxicological endpoints. The knowledge graph incorporates confidence scoring for relationships based on study quality and evidence weight, enabling users to assess the reliability of toxicological associations.
+
+## Automated Evaluation
+
+- View the automated evaluation: [reprotox-kg automated evaluation](reprotox-kg_eval_automated.html)

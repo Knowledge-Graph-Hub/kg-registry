@@ -31,11 +31,9 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: RDF-based knowledge graph containing 207,766 unique tumor records from
@@ -48,11 +46,9 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 403 error
     when accessing file'
 - category: Product
   description: Linked neighborhood concentrated disadvantage index (CDI) dataset for
@@ -65,11 +61,9 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: Python-based API using RDFLib for parameterized SPARQL query execution
@@ -320,3 +314,7 @@ Small discrepancies (1.6-6.8%) between our results and Hossain et al. attributed
 ## Citation
 
 Hasan SMS, Rivera D, Wu XC, Durbin EB, Christian JB, Tourassi G. Knowledge Graph-Enabled Cancer Data Analytics. IEEE J Biomed Health Inform. 2020 Jul;24(7):1952-1967. doi: 10.1109/JBHI.2020.2990797. PMID: 32386166; PMCID: PMC8324069.
+
+## Automated Evaluation
+
+- View the automated evaluation: [cancer-registry-kg automated evaluation](cancer-registry-kg_eval_automated.html)

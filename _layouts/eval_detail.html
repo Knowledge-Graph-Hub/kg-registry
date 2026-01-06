@@ -10,7 +10,12 @@ layout: default
   <h1>Evaluation for <a href="{{ rid }}.html">{{ rid }}</a></h1>
   <p class="text-muted"><strong>Evaluator:</strong> {{ page.evaluator | default: 'Not specified' }}</p>
   <p class="text-muted"><strong>Evaluated on:</strong> {{ page.evaluation_date | default: site.time | date: '%Y-%m-%d' }}</p>
+  {%- if page.made_by_ai %}
+  <p class="alert alert-info"><strong>⚠️ Automated Evaluation:</strong> This evaluation was generated automatically using an AI-based system. It is distinct from manual evaluations curated by human experts. Please review findings carefully and report any inaccuracies.</p>
+  {%- else %}
   <p class="text-muted">This is a manual evaluation intended to identify potential barriers to reuse.</p>
+  {%- endif %}
+  <p class="alert alert-light border"><strong>Evaluation Criteria:</strong> This evaluation uses the KG-Registry evaluation rubric as described in <a href="https://arxiv.org/abs/2508.21774" target="_blank">Cortes et al. (2025)</a> <i class="bi bi-box-arrow-up-right" style="font-size: 0.9em;"></i>. The rubric assesses knowledge graphs across multiple dimensions including access, provenance, documentation, maintenance, and fitness for purpose.</p>
   <br />
 
     {{ content }}

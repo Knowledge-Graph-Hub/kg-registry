@@ -375,10 +375,23 @@ jQuery(document).ready(function () {
 
     function createEvaluationButton(item, id) {
         const evalUrl = item.evaluation_page || '';
-        return evalUrl ?
-            `<a role="button" class="btn btn-outline-primary" href="${evalUrl}" aria-label="View evaluation for ${id}" title="Evaluation">
+
+        if (!evalUrl) {
+            return '';
+        }
+
+        // Check if this is an automated evaluation by looking at the URL
+        const isAutomated = evalUrl.includes('_eval_automated');
+
+        if (isAutomated) {
+            return `<a role="button" class="btn btn-outline-info" href="${evalUrl}" aria-label="View automated evaluation for ${id}" title="Automated Evaluation (AI-Generated)">
+                <i class="bi-robot" aria-hidden="true"></i>
+            </a>`;
+        } else {
+            return `<a role="button" class="btn btn-outline-primary" href="${evalUrl}" aria-label="View manual evaluation for ${id}" title="Manual Evaluation (Curated)">
                 <i class="bi-clipboard-check" aria-hidden="true"></i>
-            </a>` : '';
+            </a>`;
+        }
     }
 
     // Lazily initialize sortable tables
@@ -679,9 +692,19 @@ jQuery(document).ready(function () {
         if (selectedEvaluation) {
             filteredData = filteredData.filter(x => {
                 const hasEvaluation = x.evaluation_page !== undefined && x.evaluation_page !== null;
+                const isAutomated = hasEvaluation && x.evaluation_page.includes('_eval_automated');
+
                 if (selectedEvaluation === 'yes') {
+                    // With any evaluation (manual or automated)
                     return hasEvaluation;
+                } else if (selectedEvaluation === 'manual') {
+                    // With manual evaluation only
+                    return hasEvaluation && !isAutomated;
+                } else if (selectedEvaluation === 'automated') {
+                    // With automated evaluation only
+                    return isAutomated;
                 } else if (selectedEvaluation === 'no') {
+                    // Without any evaluation
                     return !hasEvaluation;
                 }
                 return true;

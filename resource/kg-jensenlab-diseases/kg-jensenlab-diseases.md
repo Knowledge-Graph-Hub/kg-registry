@@ -42,3 +42,8 @@ products:
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 ---
+
+
+## Automated Evaluation
+
+- View the automated evaluation: [kg-jensenlab-diseases automated evaluation](kg-jensenlab-diseases_eval_automated.html)

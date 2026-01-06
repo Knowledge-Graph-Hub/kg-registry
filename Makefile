@@ -194,7 +194,7 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 # and propagate product entries to related resources
 # But don't show the whole command because it is very long
 tmp/unsorted-resources.yml: $(RESOURCES) | tmp
-	@./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+	@$(RUN) python ./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Populate infores identifiers for resources and products
 # This step updates the resource markdown files with infores_id fields

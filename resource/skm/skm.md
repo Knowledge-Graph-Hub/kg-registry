@@ -219,9 +219,9 @@ publications:
     of plant stress responses'
   year: '2024'
 repository: https://github.com/NIB-SI/skm-tools
-version: '1.0'
 taxon:
 - NCBITaxon:33090
+version: '1.0'
 ---
 # Stress Knowledge Map
 
@@ -258,3 +258,7 @@ CKN is a large-scale, condition-agnostic assembly of experimentally observed phy
 - Community contribution system for new interactions
 
 The resource enables researchers to explore plant stress signaling mechanisms, generate hypotheses, and perform systems-level analysis of plant responses to environmental stresses.
+
+## Automated Evaluation
+
+- View the automated evaluation: [skm automated evaluation](skm_eval_automated.html)

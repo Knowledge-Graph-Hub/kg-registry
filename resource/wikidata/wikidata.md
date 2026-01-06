@@ -73,11 +73,9 @@ products:
   name: Wikidata Help Documentation
   product_url: https://www.wikidata.org/wiki/Wikidata:Introduction
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for accessing entity data in JSON format with content negotiation
@@ -99,3 +97,6 @@ synonyms:
 - Wikidata
 - Wikidata Knowledge Base
 ---
+## Automated Evaluation
+
+- View the automated evaluation: [wikidata automated evaluation](wikidata_eval_automated.html)

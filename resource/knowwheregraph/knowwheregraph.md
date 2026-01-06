@@ -66,20 +66,16 @@ products:
   name: KnowWhereGraph Ontology Documentation
   product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-01-05_ Error connecting
     to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries
     exceeded with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
     port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-05_ Error connecting
-    to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries
-    exceeded with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
-    port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-  - 'File was not able to be retrieved when checked on 2026-01-05: Error connecting
-    to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
-    exceeded with url: /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host=''stko-kwg.geog.ucsb.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Zhu R
@@ -330,3 +326,7 @@ Novel approaches to include:
 KnowWhereGraph data and services are freely available under the Creative Commons Attribution 4.0 (CC BY 4.0) license. Users are encouraged to cite appropriate KnowWhereGraph publications when using data or services in research and applications.
 
 The knowledge graph is maintained and operated by the Center for Spatial Studies at University of California, Santa Barbara in collaboration with partner institutions and supported by the National Science Foundation.
+
+## Automated Evaluation
+
+- View the automated evaluation: [knowwheregraph automated evaluation](knowwheregraph_eval_automated.html)

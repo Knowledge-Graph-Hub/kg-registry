@@ -1,17 +1,20 @@
 ---
-layout: resource_detail
 activity_status: active
-id: ontology-kp
-name: Ontology KP
-description: A Translator Knowledge Provider dedicated to ontology-based services.
-domains:
-- other
 category: KnowledgeGraph
+collection:
+- translator
 contacts:
 - category: Individual
   label: Jim Balhoff
-collection:
-- translator
+description: A Translator Knowledge Provider dedicated to ontology-based services.
+domains:
+- other
+id: ontology-kp
+layout: resource_detail
+name: Ontology KP
 ---
-
 A Translator Knowledge Provider dedicated to ontology-based services.
+
+## Automated Evaluation
+
+- View the automated evaluation: [ontology-kp automated evaluation](ontology-kp_eval_automated.html)

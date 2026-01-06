@@ -122,3 +122,7 @@ Often paired with PROGENy for complementary pathway and TF activity inference. U
 ## Citation
 
 Please cite the 2019 Nature Communications paper and, where appropriate, the latest preprint/update.
+
+## Automated Evaluation
+
+- View the automated evaluation: [dorothea automated evaluation](dorothea_eval_automated.html)

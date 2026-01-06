@@ -58,3 +58,7 @@ products:
 repository: https://github.com/gnn4dr/DRKG
 ---
 Drug Repurposing Knowledge Graph (DRKG)
+
+## Automated Evaluation
+
+- View the automated evaluation: [drkg automated evaluation](drkg_eval_automated.html)

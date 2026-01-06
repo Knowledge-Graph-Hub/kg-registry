@@ -47,3 +47,7 @@ disease. The purpose is to support use cases including retrieval augmented gener
 and the creation of an AI-assistant. It is built with a strong emphasis on provenance,
 transparency, and interoperability with existing biomedical knowledge graphs. Learn more
 about the project and its developments on our [documentation pages](https://kghub.org/kg-alzheimers/).
+
+## Automated Evaluation
+
+- View the automated evaluation: [kg-alzheimers automated evaluation](kg-alzheimers_eval_automated.html)

@@ -16,6 +16,7 @@ domains:
 - biomedical
 - pharmacology
 - translational
+homepage_url: http://redrugs.tw.rpi.edu/
 id: redrugs
 last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
@@ -23,7 +24,6 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: ReDrugs
-homepage_url: http://redrugs.tw.rpi.edu/
 products:
 - category: GraphicalInterface
   description: Interactive web interface for exploring drug-disease networks with
@@ -60,7 +60,6 @@ synonyms:
 taxon:
 - NCBITaxon:9606
 ---
-
 # ReDrugs
 
 ## Overview
@@ -95,3 +94,7 @@ ReDrugs was successfully applied to melanoma drug discovery, identifying 25 high
 - **Web Framework**: Python TurboGears with SADI web services
 - **Frontend**: AngularJS with Cytoscape.js visualization
 - **Data Format**: RDF nanopublications with PSI-MI and SIO ontologies
+
+## Automated Evaluation
+
+- View the automated evaluation: [redrugs automated evaluation](redrugs_eval_automated.html)

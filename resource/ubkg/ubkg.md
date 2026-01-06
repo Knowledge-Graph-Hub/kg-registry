@@ -193,3 +193,7 @@ usages:
   url: https://doi.org/10.1038/s41597-024-04070-w
 ---
 test test
+
+## Automated Evaluation
+
+- View the automated evaluation: [ubkg automated evaluation](ubkg_eval_automated.html)

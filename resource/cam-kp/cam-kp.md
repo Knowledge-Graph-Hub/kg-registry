@@ -2,142 +2,157 @@
 activity_status: inactive
 category: KnowledgeGraph
 contacts:
-  - category: Individual
-    label: Jim Balhoff
-    contact_details:
-      - contact_type: email
-        value: "balhoff@renci.org"
-    orcid: "0000-0001-7695-6090"
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://renci.org/"
-    id: "renci"
-    label: "RENCI (Renaissance Computing Institute)"
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: balhoff@renci.org
+  label: Jim Balhoff
+  orcid: 0000-0001-7695-6090
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://renci.org/
+  id: renci
+  label: RENCI (Renaissance Computing Institute)
 creation_date: '2025-12-18T00:00:00Z'
-description: CAM-KP (Causal Activity Models Knowledge Provider) is a web service knowledge graph that integrates causal biological and chemical models from Gene Ontology, Reactome, and Comparative Toxicogenomics Database (CTD) into a unified, semantically rich platform. It provides access to structured biomedical knowledge through SPARQL and TRAPI-compliant REST APIs, supporting hypothesis generation, drug discovery, and environmental health research.
+description: CAM-KP (Causal Activity Models Knowledge Provider) is a web service knowledge
+  graph that integrates causal biological and chemical models from Gene Ontology,
+  Reactome, and Comparative Toxicogenomics Database (CTD) into a unified, semantically
+  rich platform. It provides access to structured biomedical knowledge through SPARQL
+  and TRAPI-compliant REST APIs, supporting hypothesis generation, drug discovery,
+  and environmental health research.
 domains:
-  - health
-  - pathways
+- health
+- pathways
 homepage_url: https://automat.renci.org/#/cam-kp
-id: "cam-kp"
-infores_id: "cam-kp"
+id: cam-kp
+infores_id: cam-kp
 layout: resource_detail
 license:
-  id: "https://opensource.org/licenses/MIT"
-  label: "MIT License (Repository); Public Domain (Data)"
+  id: https://opensource.org/licenses/MIT
+  label: MIT License (Repository); Public Domain (Data)
 name: CAM-KP (Causal Activity Models Knowledge Provider)
 products:
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for complex semantic queries on the RDF triplestore containing causal activity models, ontologies, and integrated biomedical knowledge
-    format: http
-    id: "cam-kp.sparql"
-    is_public: true
-    name: CAM-KP SPARQL Endpoint
-    product_url: "https://stars-app.renci.org/cam/sparql"
-  - category: ProgrammingInterface
-    description: TRAPI-compliant REST API for programmatic access to causal knowledge graphs supporting Translator ecosystem integration and federated querying
-    format: http
-    id: "cam-kp.api"
-    is_public: true
-    name: CAM-KP REST API
-    product_url: "https://cam-kp-api-dev.renci.org/1.2.0/query"
-  - category: GraphicalInterface
-    description: Interactive knowledge provider interface within RENCI's Automat platform for discovering and integrating CAM-KP with other biomedical data sources
-    format: http
-    id: "cam-kp.automat"
-    is_public: true
-    name: CAM-KP on Automat
-    product_url: "https://automat.renci.org/#/cam-kp"
-  - category: Product
-    description: Causal Activity Model graphs automatically generated from Reactome pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
-    id: "cam-kp.reactome-cams"
-    name: Reactome Pathway CAMs
-    original_source:
-      - reactome
-  - category: Product
-    description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes
-    id: "cam-kp.go-cams"
-    name: Gene Ontology CAMs
-    original_source:
-      - gene-ontology
-  - category: Product
-    description: Chemical-gene interaction models and toxicological pathways derived from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400 genes
-    id: "cam-kp.ctd-interactions"
-    name: CTD Chemical-Gene Models
-    original_source:
-      - ctd
-  - category: DocumentationProduct
-    description: Comprehensive API documentation, SPARQL endpoint documentation, and developer guides for querying and integrating CAM-KP
-    format: http
-    id: "cam-kp.documentation"
-    is_public: true
-    name: CAM-KP Documentation
-    product_url: "https://github.com/ExposuresProvider/cam-kp-api/wiki"
+- category: ProgrammingInterface
+  description: SPARQL endpoint for complex semantic queries on the RDF triplestore
+    containing causal activity models, ontologies, and integrated biomedical knowledge
+  format: http
+  id: cam-kp.sparql
+  is_public: true
+  name: CAM-KP SPARQL Endpoint
+  product_url: https://stars-app.renci.org/cam/sparql
+- category: ProgrammingInterface
+  description: TRAPI-compliant REST API for programmatic access to causal knowledge
+    graphs supporting Translator ecosystem integration and federated querying
+  format: http
+  id: cam-kp.api
+  is_public: true
+  name: CAM-KP REST API
+  product_url: https://cam-kp-api-dev.renci.org/1.2.0/query
+- category: GraphicalInterface
+  description: Interactive knowledge provider interface within RENCI's Automat platform
+    for discovering and integrating CAM-KP with other biomedical data sources
+  format: http
+  id: cam-kp.automat
+  is_public: true
+  name: CAM-KP on Automat
+  product_url: https://automat.renci.org/#/cam-kp
+- category: Product
+  description: Causal Activity Model graphs automatically generated from Reactome
+    pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
+  id: cam-kp.reactome-cams
+  name: Reactome Pathway CAMs
+  original_source:
+  - reactome
+- category: Product
+  description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
+    by Gene Ontology biocurators linking genes, proteins, and biological processes
+  id: cam-kp.go-cams
+  name: Gene Ontology CAMs
+  original_source:
+  - gene-ontology
+- category: Product
+  description: Chemical-gene interaction models and toxicological pathways derived
+    from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
+    and 55,400 genes
+  id: cam-kp.ctd-interactions
+  name: CTD Chemical-Gene Models
+  original_source:
+  - ctd
+- category: DocumentationProduct
+  description: Comprehensive API documentation, SPARQL endpoint documentation, and
+    developer guides for querying and integrating CAM-KP
+  format: http
+  id: cam-kp.documentation
+  is_public: true
+  name: CAM-KP Documentation
+  product_url: https://github.com/ExposuresProvider/cam-kp-api/wiki
 publications:
-  - authors:
-      - Balhoff JP
-      - Bizon C
-      - Carlson J
-      - Fecho K
-      - Fink EL
-      - Gorow JS
-      - Graham TGW
-      - Hanna DE
-      - Henricks CJ
-      - Hoyt CT
-      - Imamovic-Tomasovic M
-      - Jacobs JM
-      - Koslovsky MD
-      - Lyzenga Y
-      - Nagel R
-      - Rasmussen JE
-      - Robin A
-      - Sullivan R
-      - Wagner AH
-      - Whetzel PL
-      - Williams JA
-    doi: "10.48550/arXiv.2004.01269"
-    id: "arXiv:2004.01269"
-    journal: "arXiv"
-    preferred: true
-    title: "A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations"
-    year: "2020"
-  - authors:
-      - Balhoff JP
-      - Bizon C
-      - Carlson J
-      - Fecho K
-      - Fink EL
-      - Gorow JS
-    doi: "10.48550/arXiv.2105.04728"
-    id: "arXiv:2105.04728"
-    journal: "JMIR Medical Informatics"
-    title: "A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations"
-    year: "2021"
-  - authors:
-      - Davis AP
-      - Wiegers TC
-      - Johnson RJ
-    doi: "10.1093/nar/gky1209"
-    id: "doi:10.1093/nar/gky1209"
-    journal: "Nucleic Acids Research"
-    title: "The Comparative Toxicogenomics Database: update 2023"
-    year: "2023"
-  - authors:
-      - Davis AP
-      - Wiegers TC
-      - Johnson RJ
-    doi: "10.1093/nar/gkaq891"
-    id: "doi:10.1093/nar/gkaq891"
-    journal: "Nucleic Acids Research"
-    title: "The Comparative Toxicogenomics Database: a knowledgebase and discovery tool for chemical-gene-disease networks"
-    year: "2020"
-repository: "https://github.com/ExposuresProvider/cam-kp-api"
+- authors:
+  - Balhoff JP
+  - Bizon C
+  - Carlson J
+  - Fecho K
+  - Fink EL
+  - Gorow JS
+  - Graham TGW
+  - Hanna DE
+  - Henricks CJ
+  - Hoyt CT
+  - Imamovic-Tomasovic M
+  - Jacobs JM
+  - Koslovsky MD
+  - Lyzenga Y
+  - Nagel R
+  - Rasmussen JE
+  - Robin A
+  - Sullivan R
+  - Wagner AH
+  - Whetzel PL
+  - Williams JA
+  doi: 10.48550/arXiv.2004.01269
+  id: arXiv:2004.01269
+  journal: arXiv
+  preferred: true
+  title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for
+    Real-World Environmental Health Observations
+  year: '2020'
+- authors:
+  - Balhoff JP
+  - Bizon C
+  - Carlson J
+  - Fecho K
+  - Fink EL
+  - Gorow JS
+  doi: 10.48550/arXiv.2105.04728
+  id: arXiv:2105.04728
+  journal: JMIR Medical Informatics
+  title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for
+    Real-World Environmental Health Observations
+  year: '2021'
+- authors:
+  - Davis AP
+  - Wiegers TC
+  - Johnson RJ
+  doi: 10.1093/nar/gky1209
+  id: doi:10.1093/nar/gky1209
+  journal: Nucleic Acids Research
+  title: 'The Comparative Toxicogenomics Database: update 2023'
+  year: '2023'
+- authors:
+  - Davis AP
+  - Wiegers TC
+  - Johnson RJ
+  doi: 10.1093/nar/gkaq891
+  id: doi:10.1093/nar/gkaq891
+  journal: Nucleic Acids Research
+  title: 'The Comparative Toxicogenomics Database: a knowledgebase and discovery tool
+    for chemical-gene-disease networks'
+  year: '2020'
+repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
-  - "NCBITaxon:1"
+- NCBITaxon:1
 ---
-
 # CAM-KP (Causal Activity Models Knowledge Provider)
 
 ## Overview
@@ -388,3 +403,7 @@ For the foundational work:
 - **Contact**: Jim Balhoff (balhoff@renci.org)
 
 CAM-KP continues to serve as a critical infrastructure component for the NCATS Biomedical Data Translator, enabling researchers to generate mechanistic hypotheses, support drug discovery efforts, and advance environmental health research through integrated access to curated biomedical knowledge.
+
+## Automated Evaluation
+
+- View the automated evaluation: [cam-kp automated evaluation](cam-kp_eval_automated.html)

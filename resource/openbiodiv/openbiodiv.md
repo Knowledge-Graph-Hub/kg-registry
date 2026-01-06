@@ -252,3 +252,7 @@ All data is maintained and distributed in **RDF (Resource Description Framework)
 OpenBiodiv data is freely available under the Creative Commons Attribution 4.0 (CC BY 4.0) license. Users are encouraged to cite the appropriate OpenBiodiv publication(s) when using data from this resource in research or educational materials.
 
 The system is operated by Pensoft Publishers in collaboration with major biodiversity institutions and the global biodiversity informatics community.
+
+## Automated Evaluation
+
+- View the automated evaluation: [openbiodiv automated evaluation](openbiodiv_eval_automated.html)
