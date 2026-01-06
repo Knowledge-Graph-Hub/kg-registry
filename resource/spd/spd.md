@@ -1,42 +1,42 @@
 ---
-id: spd
-name: Spider Ontology
-description: An ontology for spider comparative biology including anatomical parts
-  (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web,
-  borrow).
 activity_status: active
-homepage_url: http://research.amnh.org/atol/files/
-repository: https://github.com/obophenotype/spider-ontology
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:6893
 contacts:
 - category: Individual
-  label: Martin Ramirez
-  orcid: 0000-0002-0358-0130
   contact_details:
   - contact_type: email
     value: ramirez@macn.gov.ar
   - contact_type: github
     value: martinjramirez
+  label: Martin Ramirez
+  orcid: 0000-0002-0358-0130
+description: An ontology for spider comparative biology including anatomical parts
+  (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web,
+  borrow).
+domains:
+- anatomy and development
+homepage_url: http://research.amnh.org/atol/files/
+id: spd
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Spider Ontology
 products:
-- id: spd.owl
-  name: spd.owl
+- category: OntologyProduct
   description: Spider Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: spd.owl
+  name: spd.owl
+  product_file_size: 69679
   product_url: http://purl.obolibrary.org/obo/spd.owl
+repository: https://github.com/obophenotype/spider-ontology
+taxon:
+- NCBITaxon:6893
 ---
-
 ## Description
 
 An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).

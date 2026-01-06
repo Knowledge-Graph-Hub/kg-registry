@@ -1,45 +1,46 @@
 ---
-id: clyh
-name: Clytia hemisphaerica Development and Anatomy Ontology
-description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
-  the anatomical and developmental features of the Clytia hemisphaerica life cycle.
 activity_status: active
-homepage_url: https://github.com/EBISPOT/clyh_ontology
-repository: https://github.com/EBISPOT/clyh_ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Lucas Leclere
-  orcid: 0000-0002-7440-0467
   contact_details:
   - contact_type: email
     value: lucas.leclere@obs-banyuls.fr
   - contact_type: github
     value: Leclere-L
+  label: Lucas Leclere
+  orcid: 0000-0002-7440-0467
+description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
+  the anatomical and developmental features of the Clytia hemisphaerica life cycle.
+domains:
+- anatomy and development
+homepage_url: https://github.com/EBISPOT/clyh_ontology
+id: clyh
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Clytia hemisphaerica Development and Anatomy Ontology
 products:
-- id: clyh.owl
-  name: clyh.owl
+- category: OntologyProduct
   description: Clytia hemisphaerica Development and Anatomy Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: clyh.owl
+  name: clyh.owl
+  product_file_size: 13404
   product_url: http://purl.obolibrary.org/obo/clyh.owl
-- id: clyh.obo
-  name: clyh.obo
+- category: OntologyProduct
   description: Clytia hemisphaerica Development and Anatomy Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: clyh.obo
+  name: clyh.obo
+  product_file_size: 9651
   product_url: http://purl.obolibrary.org/obo/clyh.obo
+repository: https://github.com/EBISPOT/clyh_ontology
 ---
-
 ## Description
 
 The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle.

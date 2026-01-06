@@ -63,8 +63,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: Tab-separated verbatim species interaction pairs (original unresolved
@@ -89,8 +89,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: Tab-separated refuted species interaction pairs (interpreted names)
@@ -113,8 +113,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: Comma-separated refuted verbatim species interaction pairs (original

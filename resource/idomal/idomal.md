@@ -1,42 +1,43 @@
 ---
-id: idomal
-name: Malaria Ontology
+activity_status: inactive
+category: Ontology
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: topalis@imbb.forth.gr
+  label: Pantelis Topalis
 description: An application ontology to cover all aspects of malaria as well as the
   intervention attempts to control it.
-activity_status: inactive
+domains:
+- biomedical
 homepage_url: https://www.vectorbase.org/ontology-browser
-repository: https://github.com/VEuPathDB-ontology/IDOMAL
+id: idomal
+layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-collection:
-- obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
-contacts:
-- category: Individual
-  label: Pantelis Topalis
-  contact_details:
-  - contact_type: email
-    value: topalis@imbb.forth.gr
+name: Malaria Ontology
 products:
-- id: idomal.owl
-  name: idomal.owl
+- category: OntologyProduct
   description: Malaria Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: idomal.owl
+  name: idomal.owl
+  product_file_size: 309674
   product_url: http://purl.obolibrary.org/obo/idomal.owl
-- id: idomal.obo
-  name: idomal.obo
+- category: OntologyProduct
   description: Malaria Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: idomal.obo
+  name: idomal.obo
+  product_file_size: 161166
   product_url: http://purl.obolibrary.org/obo/idomal.obo
+repository: https://github.com/VEuPathDB-ontology/IDOMAL
 ---
-
 ## Description
 
 An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.

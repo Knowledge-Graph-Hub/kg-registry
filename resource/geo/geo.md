@@ -1,38 +1,38 @@
 ---
-id: geo
-name: Geographical Entity Ontology
-description: An ontology of geographical entities
 activity_status: active
-homepage_url: https://github.com/ufbmi/geographical-entity-ontology/wiki
-repository: https://github.com/ufbmi/geographical-entity-ontology
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- environment
 contacts:
 - category: Individual
-  label: Bill Hogan
-  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
+  label: Bill Hogan
+  orcid: 0000-0002-9881-1017
+description: An ontology of geographical entities
+domains:
+- environment
+homepage_url: https://github.com/ufbmi/geographical-entity-ontology/wiki
+id: geo
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Geographical Entity Ontology
 products:
-- id: geo.owl
-  name: geo.owl
+- category: OntologyProduct
   description: Geographical Entity Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: geo.owl
+  name: geo.owl
+  product_file_size: 17397
   product_url: http://purl.obolibrary.org/obo/geo.owl
+repository: https://github.com/ufbmi/geographical-entity-ontology
 ---
-
 ## Description
 
 An ontology of geographical entities

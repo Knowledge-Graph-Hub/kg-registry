@@ -1,36 +1,38 @@
 ---
-id: aeo
-name: Anatomical Entity Ontology
+activity_status: inactive
+category: Ontology
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: J.Bard@ed.ac.uk
+  label: Jonathan Bard
 description: AEO is an ontology of anatomical structures that expands CARO, the Common
   Anatomy Reference Ontology
-activity_status: inactive
+domains:
+- anatomy and development
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology/
-repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+id: aeo
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-collection:
-- obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-contacts:
-- category: Individual
-  label: Jonathan Bard
-  contact_details:
-  - contact_type: email
-    value: J.Bard@ed.ac.uk
+name: Anatomical Entity Ontology
 products:
-- id: aeo.owl
-  name: aeo.owl
+- category: OntologyProduct
   description: Anatomical Entity Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: aeo.owl
+  name: aeo.owl
   product_url: http://purl.obolibrary.org/obo/aeo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 403 error
+    when accessing file'
+repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 ---
-
 ## Description
 
 AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology

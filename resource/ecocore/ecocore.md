@@ -1,45 +1,46 @@
 ---
-id: ecocore
-name: An ontology of core ecological entities
-description: Ecocore is a community ontology for the concise and controlled description
-  of ecological traits of organisms.
 activity_status: active
-homepage_url: https://github.com/EcologicalSemantics/ecocore
-repository: https://github.com/EcologicalSemantics/ecocore
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- environment
 contacts:
 - category: Individual
-  label: Pier Luigi Buttigieg
-  orcid: 0000-0002-4366-3088
   contact_details:
   - contact_type: email
     value: p.buttigieg@gmail.com
   - contact_type: github
     value: pbuttigieg
+  label: Pier Luigi Buttigieg
+  orcid: 0000-0002-4366-3088
+description: Ecocore is a community ontology for the concise and controlled description
+  of ecological traits of organisms.
+domains:
+- environment
+homepage_url: https://github.com/EcologicalSemantics/ecocore
+id: ecocore
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: An ontology of core ecological entities
 products:
-- id: ecocore.owl
-  name: ecocore.owl
+- category: OntologyProduct
   description: An ontology of core ecological entities in OWL format
   format: owl
-  category: OntologyProduct
+  id: ecocore.owl
+  name: ecocore.owl
+  product_file_size: 1287569
   product_url: http://purl.obolibrary.org/obo/ecocore.owl
-- id: ecocore.obo
-  name: ecocore.obo
+- category: OntologyProduct
   description: An ontology of core ecological entities in OBO format
   format: obo
-  category: OntologyProduct
+  id: ecocore.obo
+  name: ecocore.obo
+  product_file_size: 834439
   product_url: http://purl.obolibrary.org/obo/ecocore.obo
+repository: https://github.com/EcologicalSemantics/ecocore
 ---
-
 ## Description
 
 Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.

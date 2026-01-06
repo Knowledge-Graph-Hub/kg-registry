@@ -1,80 +1,91 @@
 ---
-id: t4fs
-name: terms4FAIRskills
-description: A terminology for the skills necessary to make data FAIR and to keep
-  it FAIR.
 activity_status: active
-homepage_url: https://github.com/terms4fairskills/FAIRterminology
-repository: https://github.com/terms4fairskills/FAIRterminology
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Allyson Lister
-  orcid: 0000-0002-7702-4495
   contact_details:
   - contact_type: email
     value: allyson.lister@oerc.ox.ac.uk
   - contact_type: github
     value: allysonlister
+  label: Allyson Lister
+  orcid: 0000-0002-7702-4495
+description: A terminology for the skills necessary to make data FAIR and to keep
+  it FAIR.
+domains:
+- biomedical
+homepage_url: https://github.com/terms4fairskills/FAIRterminology
+id: t4fs
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: terms4FAIRskills
 products:
-- id: t4fs.owl
-  name: t4fs.owl
+- category: OntologyProduct
   description: terms4FAIRskills in OWL format
   format: owl
-  category: OntologyProduct
+  id: t4fs.owl
+  name: t4fs.owl
+  product_file_size: 91877
   product_url: http://purl.obolibrary.org/obo/t4fs.owl
-- id: t4fs.obo
-  name: t4fs.obo
+- category: OntologyProduct
   description: terms4FAIRskills in OBO format
   format: obo
-  category: OntologyProduct
+  id: t4fs.obo
+  name: t4fs.obo
+  product_file_size: 67799
   product_url: http://purl.obolibrary.org/obo/t4fs.obo
-- id: t4fs.json
-  name: t4fs.json
+- category: OntologyProduct
   description: terms4FAIRskills in JSON format
   format: json
-  category: OntologyProduct
+  id: t4fs.json
+  name: t4fs.json
+  product_file_size: 74586
   product_url: http://purl.obolibrary.org/obo/t4fs.json
-- id: t4fs-community.owl
-  name: This community view of T4FS makes the ontology available in OWL without upper-level
-    ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
+- category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OWL without
     upper-level ontology (ULO) terms to give the user community a simpler view of
     the term hierarchy.
   format: owl
-  category: OntologyProduct
+  id: t4fs-community.owl
+  name: This community view of T4FS makes the ontology available in OWL without upper-level
+    ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.owl
-- id: t4fs-community.obo
-  name: This community view of T4FS makes the ontology available in OBO format without
-    upper-level ontology (ULO) terms to give the user community a simpler view of
-    the term hierarchy.
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OBO format
     without upper-level ontology (ULO) terms to give the user community a simpler
     view of the term hierarchy.
   format: obo
-  category: OntologyProduct
-  product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
-- id: t4fs-community.json
-  name: This community view of T4FS makes the ontology available in JSON format without
+  id: t4fs-community.obo
+  name: This community view of T4FS makes the ontology available in OBO format without
     upper-level ontology (ULO) terms to give the user community a simpler view of
     the term hierarchy.
+  product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: This community view of T4FS makes the ontology available in JSON format
     without upper-level ontology (ULO) terms to give the user community a simpler
     view of the term hierarchy.
   format: json
-  category: OntologyProduct
+  id: t4fs-community.json
+  name: This community view of T4FS makes the ontology available in JSON format without
+    upper-level ontology (ULO) terms to give the user community a simpler view of
+    the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
+    when accessing file'
+repository: https://github.com/terms4fairskills/FAIRterminology
 ---
-
 ## Description
 
 A terminology for the skills necessary to make data FAIR and to keep it FAIR.

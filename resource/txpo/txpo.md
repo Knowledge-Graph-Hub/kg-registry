@@ -1,39 +1,39 @@
 ---
-id: txpo
-name: Toxic Process Ontology
-description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving
-  toxicity courses and processes. The first version of TXPO focuses on liver toxicity.
 activity_status: active
-homepage_url: https://toxpilot.nibiohn.go.jp/
-repository: https://github.com/txpo-ontology/TXPO
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Yuki Yamagata
-  orcid: 0000-0002-9673-1283
   contact_details:
   - contact_type: email
     value: yuki.yamagata@riken.jp
   - contact_type: github
     value: yuki-yamagata
+  label: Yuki Yamagata
+  orcid: 0000-0002-9673-1283
+description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving
+  toxicity courses and processes. The first version of TXPO focuses on liver toxicity.
+domains:
+- chemistry and biochemistry
+homepage_url: https://toxpilot.nibiohn.go.jp/
+id: txpo
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Toxic Process Ontology
 products:
-- id: txpo.owl
-  name: txpo.owl
+- category: OntologyProduct
   description: Toxic Process Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: txpo.owl
+  name: txpo.owl
+  product_file_size: 1799724
   product_url: http://purl.obolibrary.org/obo/txpo.owl
+repository: https://github.com/txpo-ontology/TXPO
 ---
-
 ## Description
 
 TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.

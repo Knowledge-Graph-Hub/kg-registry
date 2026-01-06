@@ -1,38 +1,40 @@
 ---
-id: fideo
-name: Food Interactions with Drugs Evidence Ontology
-description: Food-Drug interactions automatically extracted from scientific literature
 activity_status: active
-homepage_url: https://gitub.u-bordeaux.fr/erias/fideo
-repository: https://gitub.u-bordeaux.fr/erias/fideo
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Georgeta Bordea
-  orcid: 0000-0001-9921-8234
   contact_details:
   - contact_type: email
     value: georgeta.bordea@u-bordeaux.fr
   - contact_type: github
     value: getbordea
+  label: Georgeta Bordea
+  orcid: 0000-0001-9921-8234
+description: Food-Drug interactions automatically extracted from scientific literature
+domains:
+- chemistry and biochemistry
+homepage_url: https://gitub.u-bordeaux.fr/erias/fideo
+id: fideo
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Food Interactions with Drugs Evidence Ontology
 products:
-- id: fideo.owl
-  name: fideo.owl
+- category: OntologyProduct
   description: Food Interactions with Drugs Evidence Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: fideo.owl
+  name: fideo.owl
   product_url: http://purl.obolibrary.org/obo/fideo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+    header found'
+repository: https://gitub.u-bordeaux.fr/erias/fideo
 ---
-
 ## Description
 
 Food-Drug interactions automatically extracted from scientific literature

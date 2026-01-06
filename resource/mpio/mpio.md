@@ -1,39 +1,39 @@
 ---
-id: mpio
-name: Minimum PDDI Information Ontology
-description: An ontology of minimum information regarding potential drug-drug interaction
-  information.
 activity_status: active
-homepage_url: https://github.com/MPIO-Developers/MPIO
-repository: https://github.com/MPIO-Developers/MPIO
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Mathias Brochhausen
-  orcid: 0000-0003-1834-3856
   contact_details:
   - contact_type: email
     value: mbrochhausen@uams.edu
   - contact_type: github
     value: mbrochhausen
+  label: Mathias Brochhausen
+  orcid: 0000-0003-1834-3856
+description: An ontology of minimum information regarding potential drug-drug interaction
+  information.
+domains:
+- biomedical
+homepage_url: https://github.com/MPIO-Developers/MPIO
+id: mpio
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Minimum PDDI Information Ontology
 products:
-- id: mpio.owl
-  name: mpio.owl
+- category: OntologyProduct
   description: Minimum PDDI Information Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: mpio.owl
+  name: mpio.owl
+  product_file_size: 19172
   product_url: http://purl.obolibrary.org/obo/mpio.owl
+repository: https://github.com/MPIO-Developers/MPIO
 ---
-
 ## Description
 
 An ontology of minimum information regarding potential drug-drug interaction information.

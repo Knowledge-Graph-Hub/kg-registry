@@ -1,45 +1,46 @@
 ---
-id: zp
-name: Zebrafish Phenotype Ontology
-description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the
-  Zebrafish model organism.
 activity_status: active
-homepage_url: https://github.com/obophenotype/zebrafish-phenotype-ontology
-repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Yvonne Bradford
-  orcid: 0000-0002-9900-7880
   contact_details:
   - contact_type: email
     value: ybradford@zfin.org
   - contact_type: github
     value: ybradford
+  label: Yvonne Bradford
+  orcid: 0000-0002-9900-7880
+description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the
+  Zebrafish model organism.
+domains:
+- biological systems
+homepage_url: https://github.com/obophenotype/zebrafish-phenotype-ontology
+id: zp
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Zebrafish Phenotype Ontology
 products:
-- id: zp.owl
-  name: zp.owl
+- category: OntologyProduct
   description: Zebrafish Phenotype Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: zp.owl
+  name: zp.owl
+  product_file_size: 170306263
   product_url: http://purl.obolibrary.org/obo/zp.owl
-- id: zp.obo
-  name: zp.obo
+- category: OntologyProduct
   description: Zebrafish Phenotype Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: zp.obo
+  name: zp.obo
+  product_file_size: 15870641
   product_url: http://purl.obolibrary.org/obo/zp.obo
+repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
 ---
-
 ## Description
 
 The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.

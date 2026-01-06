@@ -1,44 +1,45 @@
 ---
-id: cio
-name: Confidence Information Ontology
-description: An ontology to capture confidence information about annotations.
 activity_status: active
-homepage_url: https://github.com/BgeeDB/confidence-information-ontology
-repository: https://github.com/BgeeDB/confidence-information-ontology
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Fr d ric Bastian
-  orcid: 0000-0002-9415-5104
   contact_details:
   - contact_type: email
     value: frederic.bastian@unil.ch
   - contact_type: github
     value: fbastian
+  label: Fr d ric Bastian
+  orcid: 0000-0002-9415-5104
+description: An ontology to capture confidence information about annotations.
+domains:
+- biomedical
+homepage_url: https://github.com/BgeeDB/confidence-information-ontology
+id: cio
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Confidence Information Ontology
 products:
-- id: cio.owl
-  name: cio.owl
+- category: OntologyProduct
   description: Confidence Information Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: cio.owl
+  name: cio.owl
+  product_file_size: 6187
   product_url: http://purl.obolibrary.org/obo/cio.owl
-- id: cio.obo
-  name: cio.obo
+- category: OntologyProduct
   description: Confidence Information Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: cio.obo
+  name: cio.obo
+  product_file_size: 3960
   product_url: http://purl.obolibrary.org/obo/cio.obo
+repository: https://github.com/BgeeDB/confidence-information-ontology
 ---
-
 ## Description
 
 An ontology to capture confidence information about annotations.

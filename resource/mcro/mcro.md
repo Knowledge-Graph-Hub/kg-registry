@@ -1,40 +1,40 @@
 ---
-id: mcro
-name: Model Card Report Ontology
-description: An ontology representing the structure of model card reports - reports
-  that describe basic characteristics of machine learning models for the public and
-  consumers.
 activity_status: active
-homepage_url: https://github.com/UTHealth-Ontology/MCRO
-repository: https://github.com/UTHealth-Ontology/MCRO
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Tuan Amith
-  orcid: 0000-0003-4333-1857
   contact_details:
   - contact_type: email
     value: muamith@utmb.edu
   - contact_type: github
     value: ProfTuan
+  label: Tuan Amith
+  orcid: 0000-0003-4333-1857
+description: An ontology representing the structure of model card reports - reports
+  that describe basic characteristics of machine learning models for the public and
+  consumers.
+domains:
+- biomedical
+homepage_url: https://github.com/UTHealth-Ontology/MCRO
+id: mcro
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Model Card Report Ontology
 products:
-- id: mcro.owl
-  name: mcro.owl
+- category: OntologyProduct
   description: Model Card Report Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: mcro.owl
+  name: mcro.owl
+  product_file_size: 7969
   product_url: http://purl.obolibrary.org/obo/mcro.owl
+repository: https://github.com/UTHealth-Ontology/MCRO
 ---
-
 ## Description
 
 An ontology representing the structure of model card reports - reports that describe basic characteristics of machine learning models for the public and consumers.

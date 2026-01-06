@@ -1,29 +1,31 @@
 ---
-id: epo
-name: Epidemiology Ontology
+activity_status: inactive
+category: Ontology
+collection:
+- obo-foundry
+contacts: []
 description: An ontology designed to support the semantic annotation of epidemiology
   resources
-activity_status: inactive
+domains:
+- biomedical
 homepage_url: https://code.google.com/p/epidemiology-ontology/
+id: epo
+layout: resource_detail
 license:
   id: ''
   label: Not specified
-collection:
-- obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
-contacts: []
+name: Epidemiology Ontology
 products:
-- id: epo.owl
-  name: epo.owl
+- category: OntologyProduct
   description: Epidemiology Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: epo.owl
+  name: epo.owl
   product_url: http://purl.obolibrary.org/obo/epo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
+    when accessing file'
 ---
-
 ## Description
 
 An ontology designed to support the semantic annotation of epidemiology resources
