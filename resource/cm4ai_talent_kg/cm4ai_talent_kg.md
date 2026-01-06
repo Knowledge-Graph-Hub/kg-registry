@@ -7,7 +7,9 @@ contacts:
   - contact_type: url
     value: https://cm4ai.org/
   label: Bridge2AI CM4AI
-description: A knowledge graph containing connections between researchers, projects, and publications centering on members of the Bridge2AI Consortium and the Cell Maps for AI (CM4AI) project.
+description: A knowledge graph containing connections between researchers, projects,
+  and publications centering on members of the Bridge2AI Consortium and the Cell Maps
+  for AI (CM4AI) project.
 domains:
 - literature
 homepage_url: https://cm4aikg.vercel.app/
@@ -16,7 +18,8 @@ layout: resource_detail
 name: CM4AI Talent KG
 products:
 - category: GraphicalInterface
-  description: Web-based interface for browsing and exploring the CM4AI Talent Knowledge Graph
+  description: Web-based interface for browsing and exploring the CM4AI Talent Knowledge
+    Graph
   format: http
   id: cm4ai_talent_kg.web_interface
   name: CM4AI Talent KG Web Interface
@@ -25,3 +28,7 @@ products:
   product_url: https://cm4aikg.vercel.app/
 ---
 A knowledge graph containing connections between researchers, projects, and publications centering on members of the Bridge2AI Consortium and the Cell Maps for AI (CM4AI) project.
+
+## Automated Evaluation
+
+- View the automated evaluation: [cm4ai_talent_kg automated evaluation](cm4ai_talent_kg_eval_automated.html)

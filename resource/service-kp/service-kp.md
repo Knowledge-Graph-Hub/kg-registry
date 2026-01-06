@@ -1,17 +1,20 @@
 ---
-layout: resource_detail
 activity_status: active
-id: service-kp
-name: Service KP
+category: KnowledgeGraph
+collection:
+- translator
+contacts:
+- category: Individual
+  label: Chunlei Wu
 description: A Translator Knowledge Provider
 domains:
 - health
-category: KnowledgeGraph
-contacts:
-- category: Individual
-  label: "Chunlei Wu"
-collection:
-- translator
+id: service-kp
+layout: resource_detail
+name: Service KP
 ---
-
 A Translator Knowledge Provider providing...
+
+## Automated Evaluation
+
+- View the automated evaluation: [service-kp automated evaluation](service-kp_eval_automated.html)

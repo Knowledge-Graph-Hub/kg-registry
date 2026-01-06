@@ -1,45 +1,44 @@
 ---
+id: vto
+name: Vertebrate Taxonomy Ontology
+description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/phenoscape/vertebrate-taxonomy-ontology
+repository: https://github.com/phenoscape/vertebrate-taxonomy-ontology
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
-description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
-domains:
-- biological systems
-homepage_url: https://github.com/phenoscape/vertebrate-taxonomy-ontology
-id: vto
-layout: resource_detail
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Vertebrate Taxonomy Ontology
 products:
-- category: OntologyProduct
+- id: vto.owl
+  name: vto.owl
   description: Vertebrate Taxonomy Ontology in OWL format
   format: owl
-  id: vto.owl
-  name: vto.owl
-  product_file_size: 152582746
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/vto.owl
-- category: OntologyProduct
+- id: vto.obo
+  name: vto.obo
   description: Vertebrate Taxonomy Ontology in OBO format
   format: obo
-  id: vto.obo
-  name: vto.obo
-  product_file_size: 27544534
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/vto.obo
-repository: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 ---
+
 ## Description
 
 Comprehensive hierarchy of extinct and extant vertebrate taxa.

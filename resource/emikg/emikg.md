@@ -15,7 +15,9 @@ contacts:
   - contact_type: url
     value: https://www.dbgi.org
   label: Digital Botanical Gardens Initiative
-description: A knowledge graph version of the Earth Metabolome Initiative (EMI) Ontology, containing over 413 million triples derived from metabolomic datasets. It provides a structured representation of metabolomic data within a semantic framework.
+description: A knowledge graph version of the Earth Metabolome Initiative (EMI) Ontology,
+  containing over 413 million triples derived from metabolomic datasets. It provides
+  a structured representation of metabolomic data within a semantic framework.
 domains:
 - biological systems
 - chemistry and biochemistry
@@ -46,3 +48,8 @@ products:
   name: EMI KG SPARQL Query Editor
   product_url: https://sib-swiss.github.io/sparql-editor/dbgi
 ---
+
+
+## Automated Evaluation
+
+- View the automated evaluation: [emikg automated evaluation](emikg_eval_automated.html)

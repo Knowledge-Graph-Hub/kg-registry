@@ -1,38 +1,38 @@
 ---
+id: kisao
+name: Kinetic Simulation Algorithm Ontology
+description: A classification of algorithms for simulating biology, their parameters,
+  and their outputs
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/SED-ML/KiSAO
+repository: https://github.com/SED-ML/KiSAO
+license:
+  id: http://opensource.org/licenses/Artistic-2.0
+  label: Artistic License 2.0
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Jonathan Karr
+  orcid: 0000-0002-2605-5080
   contact_details:
   - contact_type: email
     value: jonrkarr@gmail.com
   - contact_type: github
     value: jonrkarr
-  label: Jonathan Karr
-  orcid: 0000-0002-2605-5080
-description: A classification of algorithms for simulating biology, their parameters,
-  and their outputs
-domains:
-- biological systems
-homepage_url: https://github.com/SED-ML/KiSAO
-id: kisao
-layout: resource_detail
-license:
-  id: http://opensource.org/licenses/Artistic-2.0
-  label: Artistic License 2.0
-name: Kinetic Simulation Algorithm Ontology
 products:
-- category: OntologyProduct
+- id: kisao.owl
+  name: kisao.owl
   description: Kinetic Simulation Algorithm Ontology in OWL format
   format: owl
-  id: kisao.owl
-  name: kisao.owl
-  product_file_size: 96237
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/kisao.owl
-repository: https://github.com/SED-ML/KiSAO
 ---
+
 ## Description
 
 A classification of algorithms for simulating biology, their parameters, and their outputs

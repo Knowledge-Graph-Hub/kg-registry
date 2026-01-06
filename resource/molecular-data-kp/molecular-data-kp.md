@@ -59,3 +59,7 @@ A Translator Knowledge Provider for molecular data.
 contacts:
 - category: Individual
  Sandrine Muller, Vlado Dancik, and Larry Chung
+
+## Automated Evaluation
+
+- View the automated evaluation: [molecular-data-kp automated evaluation](molecular-data-kp_eval_automated.html)

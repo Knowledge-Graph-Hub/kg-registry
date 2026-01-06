@@ -275,11 +275,9 @@ products:
   name: TTD Help Documentation
   product_url: https://idrblab.org/ttd/help
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,

@@ -10,7 +10,7 @@ contacts:
     value: gglusman@isbscience.org
   - contact_type: github
     value: gglusman
-  label: Gwênlyn Glusman
+  label: "Gw\xEAnlyn Glusman"
 description: A Translator knowledge provider focused on drug approval status and other
   drug-related metadata.
 domains:
@@ -62,3 +62,7 @@ products:
 repository: https://github.com/multiomicsKP/drug_approvals_kp
 ---
 Drug Approvals KP
+
+## Automated Evaluation
+
+- View the automated evaluation: [drug-approvals-kp automated evaluation](drug-approvals-kp_eval_automated.html)

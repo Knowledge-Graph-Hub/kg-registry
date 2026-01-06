@@ -1,45 +1,44 @@
 ---
+id: scdo
+name: Sickle Cell Disease Ontology
+description: An ontology for the standardization of terminology and integration of
+  knowledge about Sickle Cell Disease.
 activity_status: active
-category: Ontology
+homepage_url: https://scdontology.h3abionet.org/
+repository: https://github.com/scdodev/scdo-ontology
+license:
+  id: https://www.gnu.org/licenses/gpl-3.0.en.html
+  label: GPL-3.0
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Jade Hotchkiss
+  orcid: 0000-0002-2193-0704
   contact_details:
   - contact_type: email
     value: giant.plankton@gmail.com
   - contact_type: github
     value: JadeHotchkiss
-  label: Jade Hotchkiss
-  orcid: 0000-0002-2193-0704
-description: An ontology for the standardization of terminology and integration of
-  knowledge about Sickle Cell Disease.
-domains:
-- biomedical
-homepage_url: https://scdontology.h3abionet.org/
-id: scdo
-layout: resource_detail
-license:
-  id: https://www.gnu.org/licenses/gpl-3.0.en.html
-  label: GPL-3.0
-name: Sickle Cell Disease Ontology
 products:
-- category: OntologyProduct
+- id: scdo.owl
+  name: scdo.owl
   description: Sickle Cell Disease Ontology in OWL format
   format: owl
-  id: scdo.owl
-  name: scdo.owl
-  product_file_size: 367519
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/scdo.owl
-- category: OntologyProduct
+- id: scdo.obo
+  name: scdo.obo
   description: Sickle Cell Disease Ontology in OBO format
   format: obo
-  id: scdo.obo
-  name: scdo.obo
-  product_file_size: 324416
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/scdo.obo
-repository: https://github.com/scdodev/scdo-ontology
 ---
+
 ## Description
 
 An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.

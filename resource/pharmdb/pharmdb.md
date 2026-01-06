@@ -89,3 +89,7 @@ PharmDB (PharmDB-K) is an integrated pharmacological knowledge graph unifying dr
 ## Status
 
 The resource appears inactive. Links may function, but data curation and releases have likely ceased. Use with caution and verify critical relationships against more current sources.
+
+## Automated Evaluation
+
+- View the automated evaluation: [pharmdb automated evaluation](pharmdb_eval_automated.html)

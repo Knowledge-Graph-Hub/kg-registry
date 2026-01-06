@@ -48,3 +48,7 @@ publications:
 repository: http://nlp.case.edu/public/data/GPKG-Predict/
 ---
 GP-KG
+
+## Automated Evaluation
+
+- View the automated evaluation: [gp-kg automated evaluation](gp-kg_eval_automated.html)

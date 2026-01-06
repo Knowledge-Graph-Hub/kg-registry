@@ -67,11 +67,9 @@ products:
   - cohd
   product_url: https://cohd.io/api
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 502 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 502 error
     when accessing file'
 repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 taxon:

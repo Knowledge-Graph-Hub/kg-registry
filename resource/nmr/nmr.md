@@ -1,37 +1,35 @@
 ---
-activity_status: inactive
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: schober@imbi.uni-freiburg.de
-  label: Schober Daniel
+id: nmr
+name: NMR-instrument specific component of metabolomics investigations
 description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic
   Resonance (NMR) component in a metabolomics investigation.
-domains:
-- biomedical
+activity_status: inactive
 homepage_url: http://msi-ontology.sourceforge.net/
-id: nmr
-layout: resource_detail
 license:
   id: ''
   label: Not specified
-name: NMR-instrument specific component of metabolomics investigations
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
+contacts:
+- category: Individual
+  label: Schober Daniel
+  contact_details:
+  - contact_type: email
+    value: schober@imbi.uni-freiburg.de
 products:
-- category: OntologyProduct
+- id: nmr.owl
+  name: nmr.owl
   description: NMR-instrument specific component of metabolomics investigations in
     OWL format
   format: owl
-  id: nmr.owl
-  name: nmr.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/nmr.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
-    when accessing file'
 ---
+
 ## Description
 
 Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.

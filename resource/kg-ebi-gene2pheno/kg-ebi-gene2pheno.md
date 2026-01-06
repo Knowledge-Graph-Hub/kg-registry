@@ -42,3 +42,8 @@ products:
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/ebi_gene2phenotype
 ---
+
+
+## Automated Evaluation
+
+- View the automated evaluation: [kg-ebi-gene2pheno automated evaluation](kg-ebi-gene2pheno_eval_automated.html)

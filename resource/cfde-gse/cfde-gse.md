@@ -63,11 +63,9 @@ products:
   name: CFDE Gene Set Collections
   product_url: https://cfde.cloud/gse/downloads/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
     when accessing file'
 publications:
 - authors:
@@ -184,3 +182,7 @@ CFDE-GSE is a comprehensive knowledge graph and analysis platform that integrate
 
 ## Technical Implementation
 CFDE-GSE is implemented as a Neo4j graph database with standardized nodes for genes, gene sets, studies, and biological annotations. The platform includes web-based tools for interactive enrichment analysis and programmatic APIs for computational workflows. All data processing follows CFDE metadata standards and includes comprehensive provenance tracking.
+
+## Automated Evaluation
+
+- View the automated evaluation: [cfde-gse automated evaluation](cfde-gse_eval_automated.html)

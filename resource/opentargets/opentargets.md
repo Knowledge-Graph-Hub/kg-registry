@@ -357,3 +357,7 @@ Open Targets is committed to open science principles. Its software, data, and me
 By providing systematic evidence for target-disease associations, Open Targets helps to address one of the key challenges in drug development: selecting the right targets. The platform reduces the risk of failure in later clinical development by enabling data-driven decisions early in the drug discovery process.
 
 Through its integrated data resources and research programs, Open Targets is transforming how targets are selected for drug discovery, leading to more effective treatments for patients with both common and rare diseases.
+
+## Automated Evaluation
+
+- View the automated evaluation: [opentargets automated evaluation](opentargets_eval_automated.html)

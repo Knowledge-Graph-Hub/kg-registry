@@ -19,6 +19,7 @@ domains:
 - translational
 - genomics
 - phenotype
+homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: kg-predict
 last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
@@ -26,7 +27,6 @@ license:
   id: https://www.elsevier.com/open-access/userlicense/1.0/
   label: Elsevier User License
 name: KG-Predict
-homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 products:
 - category: GraphProduct
   description: GP-KG knowledge graph containing 1,246,726 associations between 61,146
@@ -69,7 +69,6 @@ synonyms:
 taxon:
 - NCBITaxon:9606
 ---
-
 # KG-Predict
 
 ## Overview
@@ -124,3 +123,7 @@ The framework is implemented in Python and includes:
 - Graph embedding model implementations
 - Training and testing scripts
 - Case study analysis tools
+
+## Automated Evaluation
+
+- View the automated evaluation: [kg-predict automated evaluation](kg-predict_eval_automated.html)

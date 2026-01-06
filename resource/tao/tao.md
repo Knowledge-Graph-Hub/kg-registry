@@ -1,38 +1,38 @@
 ---
-activity_status: inactive
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: wasila.dahdul@usd.edu
-  label: Wasila Dahdul
-  orcid: 0000-0003-3162-7490
+id: tao
+name: Teleost Anatomy Ontology
 description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended
   to cover terms relevant to other taxa
-domains:
-- anatomy and development
+activity_status: inactive
 homepage_url: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
-id: tao
-layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Teleost Anatomy Ontology
-products:
-- category: OntologyProduct
-  description: Teleost Anatomy Ontology in OWL format
-  format: owl
-  id: tao.owl
-  name: tao.owl
-  product_file_size: 5063653
-  product_url: http://purl.obolibrary.org/obo/tao.owl
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 taxon:
 - NCBITaxon:32443
+contacts:
+- category: Individual
+  label: Wasila Dahdul
+  orcid: 0000-0003-3162-7490
+  contact_details:
+  - contact_type: email
+    value: wasila.dahdul@usd.edu
+products:
+- id: tao.owl
+  name: tao.owl
+  description: Teleost Anatomy Ontology in OWL format
+  format: owl
+  category: OntologyProduct
+  product_url: http://purl.obolibrary.org/obo/tao.owl
 ---
+
 ## Description
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa

@@ -27,6 +27,7 @@ products:
     with the Monarch Knowlege Graph. Note that this is only a reference to scripts
     and queries associated with this project and is not provided as a runnable project
     because these workflows depend on an internal data catalog.
+  format: python
   id: cpathkg.code
   name: C-Path Knowledge Graph Integration
   original_source:
@@ -35,7 +36,6 @@ products:
   product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
   secondary_source:
   - cpathkg
-  format: python
 publications:
 - authors:
   - Braun I
@@ -52,3 +52,7 @@ publications:
   year: '2025'
 ---
 C-Path KG
+
+## Automated Evaluation
+
+- View the automated evaluation: [cpathkg automated evaluation](cpathkg_eval_automated.html)

@@ -1,40 +1,35 @@
 ---
-activity_status: inactive
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: Marc_Ciriello@hms.harvard.edu
-  label: Marc Ciriello
+id: ero
+name: eagle-i resource ontology
 description: An ontology of research resources such as instruments. protocols, reagents,
   animal models and biospecimens.
-domains:
-- biomedical
+activity_status: inactive
 homepage_url: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
-id: ero
-layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/
   label: CC BY 2.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: eagle-i resource ontology
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
+contacts:
+- category: Individual
+  label: Marc Ciriello
+  contact_details:
+  - contact_type: email
+    value: Marc_Ciriello@hms.harvard.edu
 products:
-- category: OntologyProduct
+- id: ero.owl
+  name: ero.owl
   description: eagle-i resource ontology in OWL format
   format: owl
-  id: ero.owl
-  name: ero.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ero.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: Error connecting
-    to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries exceeded
-    with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
-    expired (_ssl.c:1017)'')))'
 ---
+
 ## Description
 
 An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.

@@ -1,46 +1,45 @@
 ---
+id: pso
+name: Plant Stress Ontology
+description: The Plant Stress Ontology describes biotic and abiotic stresses that
+  a plant may encounter.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/Planteome/plant-stress-ontology
+repository: https://github.com/Planteome/plant-stress-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- agriculture
 contacts:
 - category: Individual
+  label: Laurel Cooper
+  orcid: 0000-0002-6379-8932
   contact_details:
   - contact_type: email
     value: cooperl@oregonstate.edu
   - contact_type: github
     value: cooperl09
-  label: Laurel Cooper
-  orcid: 0000-0002-6379-8932
-description: The Plant Stress Ontology describes biotic and abiotic stresses that
-  a plant may encounter.
-domains:
-- agriculture
-homepage_url: https://github.com/Planteome/plant-stress-ontology
-id: pso
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Plant Stress Ontology
 products:
-- category: OntologyProduct
+- id: pso.owl
+  name: pso.owl
   description: Plant Stress Ontology in OWL format
   format: owl
-  id: pso.owl
-  name: pso.owl
-  product_file_size: 365768
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pso.owl
-- category: OntologyProduct
+- id: pso.obo
+  name: pso.obo
   description: Plant Stress Ontology in OBO format
   format: obo
-  id: pso.obo
-  name: pso.obo
-  product_file_size: 241678
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pso.obo
-repository: https://github.com/Planteome/plant-stress-ontology
 ---
+
 ## Description
 
 The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.

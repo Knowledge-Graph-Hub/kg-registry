@@ -1,49 +1,44 @@
 ---
+id: vario
+name: Variation Ontology
+description: Variation Ontology, VariO, is an ontology for standardized, systematic
+  description of effects, consequences and mechanisms of variations.
 activity_status: orphaned
-category: Ontology
+homepage_url: http://variationontology.org
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Mauno Vihinen
+  orcid: 0000-0002-9614-7976
   contact_details:
   - contact_type: email
     value: mauno.vihinen@med.lu.se
   - contact_type: github
     value: maunov
-  label: Mauno Vihinen
-  orcid: 0000-0002-9614-7976
-description: Variation Ontology, VariO, is an ontology for standardized, systematic
-  description of effects, consequences and mechanisms of variations.
-domains:
-- biological systems
-homepage_url: http://variationontology.org
-id: vario
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Variation Ontology
 products:
-- category: OntologyProduct
+- id: vario.owl
+  name: VariO main release in OWL
   description: VariO main release in OWL
   format: owl
-  id: vario.owl
-  name: VariO main release in OWL
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/vario.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: Timeout connecting
-    to URL'
-- category: OntologyProduct
+- id: vario.obo
+  name: VariO in OBO format
   description: VariO in OBO format
   format: obo
-  id: vario.obo
-  name: VariO in OBO format
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/vario.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: Timeout connecting
-    to URL'
 ---
+
 ## Description
 
 Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.

@@ -177,3 +177,7 @@ taxon:
 - NCBITaxon:2759
 ---
 KG-Microbe.
+
+## Automated Evaluation
+
+- View the automated evaluation: [kg-microbe automated evaluation](kg-microbe_eval_automated.html)

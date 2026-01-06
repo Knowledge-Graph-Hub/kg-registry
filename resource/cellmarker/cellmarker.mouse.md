@@ -5,11 +5,11 @@ id: cellmarker.mouse
 name: Mouse Cell Markers
 product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
 warnings:
-- File was not able to be retrieved when checked on 2026-01-05_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+- File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
   header found
 layout: product_detail
 ---

@@ -119,3 +119,7 @@ publications:
 repository: https://github.com/AnacletoLAB/RNA-KG
 ---
 RNA-KG: An ontology-based KG for representing interactions involving RNA molecules
+
+## Automated Evaluation
+
+- View the automated evaluation: [rna-kg automated evaluation](rna-kg_eval_automated.html)

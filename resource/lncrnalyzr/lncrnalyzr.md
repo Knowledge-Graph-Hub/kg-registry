@@ -1,6 +1,14 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: avi.maayan@mssm.edu
+  - contact_type: url
+    value: https://labs.icahn.mssm.edu/maayanlab/
+  label: Ma'ayan Laboratory
 creation_date: '2025-09-23T00:00:00Z'
 description: lncRNAlyzr is a specialized knowledge graph focused on long non-coding
   RNA (lncRNA) biology, integrating lncRNA annotations, expression profiles, functional
@@ -14,18 +22,10 @@ homepage_url: https://lncrnalyzr.maayanlab.cloud/
 id: lncrnalyzr
 last_modified_date: '2025-09-23T00:00:00Z'
 layout: resource_detail
-name: lncRNAlyzr
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
   label: CC BY-NC-SA 4.0
-contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: avi.maayan@mssm.edu
-  - contact_type: url
-    value: https://labs.icahn.mssm.edu/maayanlab/
-  label: Ma'ayan Laboratory
+name: lncRNAlyzr
 products:
 - category: GraphicalInterface
   description: Interactive web platform for exploring lncRNA networks with expression
@@ -44,20 +44,19 @@ products:
 - category: GraphProduct
   description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory
     interactions, and disease associations
+  dump_format: neo4j
   format: neo4j
   id: lncrnalyzr.graph
   name: lncRNAlyzr Knowledge Graph
-  dump_format: neo4j
 publications:
 - id: doi:10.1016/j.jmb.2025.168938
+  journal: Nature Genetics
   title: 'lncRNAlyzr: Enrichment Analysis for lncRNA Sets'
   year: '2025'
-  journal: Nature Genetics
 repository: https://github.com/MaayanLab/lncRNAlyzr
 taxon:
 - NCBITaxon:9606
 ---
-
 # lncRNAlyzr
 
 lncRNAlyzr is a comprehensive knowledge graph and analysis platform specifically designed for long non-coding RNA (lncRNA) research. It integrates diverse data sources to provide detailed insights into lncRNA biology, regulatory mechanisms, and disease associations through network-based analysis and machine learning approaches.
@@ -168,3 +167,7 @@ lncRNAlyzr is a comprehensive knowledge graph and analysis platform specifically
 
 ## Technical Implementation
 lncRNAlyzr is built on a Neo4j graph database with specialized node types for lncRNAs, genes, proteins, diseases, and biological processes. The platform incorporates machine learning pipelines for functional prediction and network analysis algorithms for relationship inference. All predictions include confidence scores and supporting evidence provenance.
+
+## Automated Evaluation
+
+- View the automated evaluation: [lncrnalyzr automated evaluation](lncrnalyzr_eval_automated.html)

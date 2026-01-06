@@ -31,3 +31,7 @@ taxon:
 - NCBITaxon:131567
 ---
 Wildlife-KN
+
+## Automated Evaluation
+
+- View the automated evaluation: [wildlifekn automated evaluation](wildlifekn_eval_automated.html)

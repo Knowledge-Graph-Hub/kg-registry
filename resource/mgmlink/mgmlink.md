@@ -40,3 +40,7 @@ taxon:
 - NCBITaxon:2759
 ---
 MGMLink
+
+## Automated Evaluation
+
+- View the automated evaluation: [mgmlink automated evaluation](mgmlink_eval_automated.html)

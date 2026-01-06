@@ -1,156 +1,47 @@
 ---
+id: hancestro
+name: Human Ancestry Ontology
+description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
+  of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
+  association studies.
 activity_status: active
-category: Ontology
+homepage_url: https://ebispot.github.io/hancestro/
+repository: https://github.com/EBISPOT/hancestro
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Danielle Welter
+  orcid: 0000-0003-1058-2668
   contact_details:
   - contact_type: email
     value: dwelter.ontologist@gmail.com
   - contact_type: github
     value: daniwelter
-  label: Danielle Welter
-  orcid: 0000-0003-1058-2668
-description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
-  of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
-  association studies.
-domains:
-- biological systems
-homepage_url: https://ebispot.github.io/hancestro/
-id: hancestro
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Human Ancestry Ontology
 products:
-- category: OntologyProduct
+- id: hancestro.owl
+  name: HANCESTRO
   description: The full version of HANCESTRO in OWL format, with BFO upper hierarchy
     for easier integration with other ontologies
   format: owl
-  id: hancestro.owl
-  name: HANCESTRO
-  product_file_size: 145675
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/hancestro.owl
-- category: OntologyProduct
+- id: hancestro-base.owl
+  name: HANCESTRO Base
   description: Base version of HANCESTRO
   format: owl
-  id: hancestro-base.owl
-  name: HANCESTRO Base
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-repository: https://github.com/EBISPOT/hancestro
 ---
+
 ## Description
 
 The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.

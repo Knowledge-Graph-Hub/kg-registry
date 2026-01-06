@@ -155,3 +155,7 @@ iKraph has been successfully applied to several biomedical research areas:
 If you use iKraph in your research, please cite:
 
 Zhang Y, Sui X, Pan F, et al. A comprehensive large-scale biomedical knowledge graph for AI-powered data-driven biomedical research. Nature Machine Intelligence. 2025. https://doi.org/10.1038/s42256-025-01014-w
+
+## Automated Evaluation
+
+- View the automated evaluation: [ikraph automated evaluation](ikraph_eval_automated.html)

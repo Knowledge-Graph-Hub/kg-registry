@@ -59,15 +59,15 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -84,13 +84,13 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -108,15 +108,15 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -181,3 +181,7 @@ The graph contains relationships between compounds, genes, diseases, pathways, G
 The MechRepoNet knowledge graph is fully described in:
 
 Mayers, M., Tu, R. (2022). MechRepoNet, a network-based tool for mechanism-based repositioning of small molecules. *Bioinformatics*, 38(15), 3746-3748. [https://doi.org/10.1093/bioinformatics/btac431](https://doi.org/10.1093/bioinformatics/btac431)
+
+## Automated Evaluation
+
+- View the automated evaluation: [mechreponet automated evaluation](mechreponet_eval_automated.html)

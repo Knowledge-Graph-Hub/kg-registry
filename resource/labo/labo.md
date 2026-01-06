@@ -1,41 +1,41 @@
 ---
+id: labo
+name: clinical LABoratory Ontology
+description: LABO is an ontology of informational entities formalizing clinical laboratory
+  tests prescriptions and reporting documents.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/OpenLHS/LABO
+repository: https://github.com/OpenLHS/LABO
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
+taxon:
+- NCBITaxon:9606
 contacts:
 - category: Individual
+  label: Paul Fabry
+  orcid: 0000-0002-3336-2476
   contact_details:
   - contact_type: email
     value: paul.fabry@usherbrooke.ca
   - contact_type: github
     value: pfabry
-  label: Paul Fabry
-  orcid: 0000-0002-3336-2476
-description: LABO is an ontology of informational entities formalizing clinical laboratory
-  tests prescriptions and reporting documents.
-domains:
-- biomedical
-homepage_url: https://github.com/OpenLHS/LABO
-id: labo
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: clinical LABoratory Ontology
 products:
-- category: OntologyProduct
+- id: labo.owl
+  name: labo.owl
   description: clinical LABoratory Ontology in OWL format
   format: owl
-  id: labo.owl
-  name: labo.owl
-  product_file_size: 47001
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/labo.owl
-repository: https://github.com/OpenLHS/LABO
-taxon:
-- NCBITaxon:9606
 ---
+
 ## Description
 
 LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.

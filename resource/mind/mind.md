@@ -44,15 +44,13 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -69,13 +67,11 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -93,15 +89,13 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-01-05: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -149,3 +143,7 @@ publications:
 repository: https://github.com/SuLab/KnowledgeGraphEmbedding
 ---
 MIND (Mechanistic Repositioning Network with Indications) is a knowledge graph that combines MechRepoNet, a graph comprising 18 biomedical resources, with DrugCentral indications data. MechRepoNet contains 9,652,116 edges and 250,035 nodes covering drug mechanisms, while DrugCentral contributes 5,379 indication edges representing relationships between 1,308 unique compounds and 1,030 unique diseases. The resulting MIND knowledge graph contains 9,651,040 edges in its training set and is designed to support drug repositioning research through knowledge graph embeddings.
+
+## Automated Evaluation
+
+- View the automated evaluation: [mind automated evaluation](mind_eval_automated.html)

@@ -1,49 +1,44 @@
 ---
-activity_status: inactive
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: J.Bard@ed.ac.uk
-  label: Jonathan Bard
+id: ehdaa2
+name: Human developmental anatomy, abstract
 description: A structured controlled vocabulary of stage-specific anatomical structures
   of the developing human.
-domains:
-- anatomy and development
+activity_status: inactive
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology
-id: ehdaa2
-layout: resource_detail
+repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Human developmental anatomy, abstract
-products:
-- category: OntologyProduct
-  description: Human developmental anatomy, abstract in OWL format
-  format: owl
-  id: ehdaa2.owl
-  name: ehdaa2.owl
-  product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
-    when accessing file'
-- category: OntologyProduct
-  description: Human developmental anatomy, abstract in OBO format
-  format: obo
-  id: ehdaa2.obo
-  name: ehdaa2.obo
-  product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
-    when accessing file'
-repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 taxon:
 - NCBITaxon:9606
+contacts:
+- category: Individual
+  label: Jonathan Bard
+  contact_details:
+  - contact_type: email
+    value: J.Bard@ed.ac.uk
+products:
+- id: ehdaa2.owl
+  name: ehdaa2.owl
+  description: Human developmental anatomy, abstract in OWL format
+  format: owl
+  category: OntologyProduct
+  product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
+- id: ehdaa2.obo
+  name: ehdaa2.obo
+  description: Human developmental anatomy, abstract in OBO format
+  format: obo
+  category: OntologyProduct
+  product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
 ---
+
 ## Description
 
 A structured controlled vocabulary of stage-specific anatomical structures of the developing human.

@@ -1,38 +1,38 @@
 ---
+id: aro
+name: Antibiotic Resistance Ontology
+description: Antibiotic resistance genes and mutations
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/arpcard/aro
+repository: https://github.com/arpcard/aro
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Andrew G. McArthur
+  orcid: 0000-0002-1142-3063
   contact_details:
   - contact_type: email
     value: mcarthua@mcmaster.ca
   - contact_type: github
     value: agmcarthur
-  label: Andrew G. McArthur
-  orcid: 0000-0002-1142-3063
-description: Antibiotic resistance genes and mutations
-domains:
-- biological systems
-homepage_url: https://github.com/arpcard/aro
-id: aro
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Antibiotic Resistance Ontology
 products:
-- category: OntologyProduct
+- id: aro.owl
+  name: aro.owl
   description: Antibiotic Resistance Ontology in OWL format
   format: owl
-  id: aro.owl
-  name: aro.owl
-  product_file_size: 687021
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/aro.owl
-repository: https://github.com/arpcard/aro
 ---
+
 ## Description
 
 Antibiotic resistance genes and mutations

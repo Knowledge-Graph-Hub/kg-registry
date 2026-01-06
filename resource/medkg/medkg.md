@@ -3,10 +3,10 @@ activity_status: active
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: Prabha Garg
   contact_details:
   - contact_type: email
     value: prabhagarg@niper.ac.in
+  label: Prabha Garg
 description: MedKG is a comprehensive and continuously updated knowledge graph designed
   to address challenges in precision medicine and drug discovery. MedKG integrates
   data from 35 authoritative sources, encompassing 34 node types and 79 relationships.
@@ -42,3 +42,7 @@ publications:
   year: '2025'
 ---
 MedKG
+
+## Automated Evaluation
+
+- View the automated evaluation: [medkg automated evaluation](medkg_eval_automated.html)

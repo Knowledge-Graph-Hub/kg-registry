@@ -2,102 +2,119 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.naturalis.nl/"
-    id: "naturalis"
-    label: "Naturalis Biodiversity Center"
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.inhs.illinois.edu/"
-    id: "inhs"
-    label: "Illinois Natural History Survey"
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.gbif.org/"
-    id: "gbif"
-    label: "Global Biodiversity Information Facility (GBIF)"
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.naturalis.nl/
+  id: naturalis
+  label: Naturalis Biodiversity Center
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.inhs.illinois.edu/
+  id: inhs
+  label: Illinois Natural History Survey
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.gbif.org/
+  id: gbif
+  label: Global Biodiversity Information Facility (GBIF)
 creation_date: '2025-12-20T00:00:00Z'
-description: Catalogue of Life is the most comprehensive global taxonomic resource providing an authoritative checklist of all known species on Earth. It aggregates 2.2+ million living species and 153,000 extinct species from 165 peer-reviewed taxonomic databases representing 500+ expert taxonomists. It serves as the foundational taxonomic backbone for biodiversity research, conservation policy, and species identification worldwide, with both static annual releases and dynamic monthly updates.
+description: Catalogue of Life is the most comprehensive global taxonomic resource
+  providing an authoritative checklist of all known species on Earth. It aggregates
+  2.2+ million living species and 153,000 extinct species from 165 peer-reviewed taxonomic
+  databases representing 500+ expert taxonomists. It serves as the foundational taxonomic
+  backbone for biodiversity research, conservation policy, and species identification
+  worldwide, with both static annual releases and dynamic monthly updates.
 domains: []
 homepage_url: https://www.catalogueoflife.org/
-id: "catalogue-of-life"
-infores_id: "catalogue-of-life"
+id: catalogue-of-life
+infores_id: catalogue-of-life
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
-  label: "CC-BY 4.0 (transitioning to CC-0)"
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0 (transitioning to CC-0)
 name: Catalogue of Life
 products:
-  - category: GraphicalInterface
-    description: Interactive web portal for browsing hierarchical taxonomy from kingdom level through infraspecific ranks with expandable taxonomy tree and full-text search for species names and synonyms
-    format: http
-    id: "catalogue-of-life.web"
-    is_public: true
-    name: Catalogue of Life Web Portal
-    product_url: "https://www.catalogueoflife.org/"
-  - category: ProgrammingInterface
-    description: RESTful JSON API providing programmatic access to species information, taxonomic names, classification hierarchies, and species identifiers with multiple endpoints
-    format: http
-    id: "catalogue-of-life.api"
-    is_public: true
-    name: Catalogue of Life API
-    product_url: "https://api.catalogueoflife.org/"
-  - category: Product
-    description: Annual comprehensive Catalogue of Life releases (Base Release with expert curation and Extended Release with broader source integration) with permanent archiving and DOI assignment
-    id: "catalogue-of-life.annual-releases"
-    name: Annual Releases
-    product_url: "https://www.catalogueoflife.org/"
-  - category: Product
-    description: Downloadable Catalogue of Life datasets in multiple standardized formats including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree, and MySQL dumps
-    id: "catalogue-of-life.downloads"
-    name: Data Downloads
-    product_url: "https://www.catalogueoflife.org/data/download"
-  - category: Product
-    description: ChecklistBank repository infrastructure for publishing, discovery, and management of taxonomic datasets with data standardization to ColDP format and quality control workflows
-    id: "catalogue-of-life.checklistbank"
-    name: ChecklistBank Repository
-    product_url: "https://checklistbank.org/"
-  - category: DocumentationProduct
-    description: Comprehensive documentation including API specifications, data format standards (ColDP, DwC-A), usage guides, citation guidelines, and taxonomic contribution workflows
-    format: http
-    id: "catalogue-of-life.documentation"
-    is_public: true
-    name: Catalogue of Life Documentation
-    product_url: "https://api.catalogueoflife.org/"
+- category: GraphicalInterface
+  description: Interactive web portal for browsing hierarchical taxonomy from kingdom
+    level through infraspecific ranks with expandable taxonomy tree and full-text
+    search for species names and synonyms
+  format: http
+  id: catalogue-of-life.web
+  is_public: true
+  name: Catalogue of Life Web Portal
+  product_url: https://www.catalogueoflife.org/
+- category: ProgrammingInterface
+  description: RESTful JSON API providing programmatic access to species information,
+    taxonomic names, classification hierarchies, and species identifiers with multiple
+    endpoints
+  format: http
+  id: catalogue-of-life.api
+  is_public: true
+  name: Catalogue of Life API
+  product_url: https://api.catalogueoflife.org/
+- category: Product
+  description: Annual comprehensive Catalogue of Life releases (Base Release with
+    expert curation and Extended Release with broader source integration) with permanent
+    archiving and DOI assignment
+  id: catalogue-of-life.annual-releases
+  name: Annual Releases
+  product_url: https://www.catalogueoflife.org/
+- category: Product
+  description: Downloadable Catalogue of Life datasets in multiple standardized formats
+    including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
+    and MySQL dumps
+  id: catalogue-of-life.downloads
+  name: Data Downloads
+  product_url: https://www.catalogueoflife.org/data/download
+- category: Product
+  description: ChecklistBank repository infrastructure for publishing, discovery,
+    and management of taxonomic datasets with data standardization to ColDP format
+    and quality control workflows
+  id: catalogue-of-life.checklistbank
+  name: ChecklistBank Repository
+  product_url: https://checklistbank.org/
+- category: DocumentationProduct
+  description: Comprehensive documentation including API specifications, data format
+    standards (ColDP, DwC-A), usage guides, citation guidelines, and taxonomic contribution
+    workflows
+  format: http
+  id: catalogue-of-life.documentation
+  is_public: true
+  name: Catalogue of Life Documentation
+  product_url: https://api.catalogueoflife.org/
 publications:
-  - authors:
-      - Bisby F
-      - Roskov Y
-      - Culham A
-    doi: "10.1186/1471-2105-12-447"
-    id: "doi:10.1186/1471-2105-12-447"
-    journal: "BMC Bioinformatics"
-    title: "Catalogue of Life — Relational Database Design and Implementation"
-    year: "2011"
-  - authors:
-      - Rueda M
-      - Hawkins BA
-      - Moreno-Salas L
-      - et al.
-    doi: "10.1371/journal.pbio.2005053"
-    id: "doi:10.1371/journal.pbio.2005053"
-    journal: "PLOS Biology"
-    title: "Species richness matches productivity in grassland and forest plots across the Americas"
-    year: "2017"
-repository: "https://github.com/CatalogueOfLife"
+- authors:
+  - Bisby F
+  - Roskov Y
+  - Culham A
+  doi: 10.1186/1471-2105-12-447
+  id: doi:10.1186/1471-2105-12-447
+  journal: BMC Bioinformatics
+  title: "Catalogue of Life \u2014 Relational Database Design and Implementation"
+  year: '2011'
+- authors:
+  - Rueda M
+  - Hawkins BA
+  - Moreno-Salas L
+  - et al.
+  doi: 10.1371/journal.pbio.2005053
+  id: doi:10.1371/journal.pbio.2005053
+  journal: PLOS Biology
+  title: Species richness matches productivity in grassland and forest plots across
+    the Americas
+  year: '2017'
+repository: https://github.com/CatalogueOfLife
 synonyms:
-  - Catalogue of Life
-  - CoL
-  - Species 2000/ITIS
-  - Catalogue of Life Checklist
+- Catalogue of Life
+- CoL
+- Species 2000/ITIS
+- Catalogue of Life Checklist
 taxon:
-  - "NCBITaxon:1"
+- NCBITaxon:1
 ---
-
 # Catalogue of Life
 
 ## Overview
@@ -595,3 +612,7 @@ Catalogue of Life data and services are freely accessible with open licensing en
 - **GBIF Secretariat:** https://www.gbif.org/
 
 Catalogue of Life continues to serve as the global standard for species taxonomy and nomenclature, providing essential infrastructure for biodiversity research, conservation decision-making, and the implementation of international agreements to protect Earth's biological diversity.
+
+## Automated Evaluation
+
+- View the automated evaluation: [catalogue-of-life automated evaluation](catalogue-of-life_eval_automated.html)

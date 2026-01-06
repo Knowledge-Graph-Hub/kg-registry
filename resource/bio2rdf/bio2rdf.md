@@ -70,11 +70,9 @@ products:
   name: BioSearch Semantic Search Engine
   product_url: https://biosemantics.org/biosearch
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
+  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-05_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-01-05: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
     to URL'
 publications:
 - authors:

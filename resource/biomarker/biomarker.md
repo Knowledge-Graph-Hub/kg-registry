@@ -186,3 +186,7 @@ BiomarkerKB integrates data from multiple authoritative sources including:
 - Disease and phenotype databases
 
 The project is developed by the GlyGen team as part of the NIH Common Fund Data Ecosystem initiative, with a focus on making biomarker data FAIR (Findable, Accessible, Interoperable, and Reusable).
+
+## Automated Evaluation
+
+- View the automated evaluation: [biomarker automated evaluation](biomarker_eval_automated.html)

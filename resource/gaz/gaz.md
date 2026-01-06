@@ -1,57 +1,51 @@
 ---
+id: gaz
+name: Gazetteer
+description: A gazetteer constructed on ontological principles. The countries are
+  actively maintained.
 activity_status: active
-category: Ontology
+homepage_url: http://environmentontology.github.io/gaz/
+repository: https://github.com/EnvironmentOntology/gaz
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- environment
 contacts:
 - category: Individual
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
   contact_details:
   - contact_type: email
     value: lschriml@som.umaryland.edu
   - contact_type: github
     value: lschriml
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
-description: A gazetteer constructed on ontological principles. The countries are
-  actively maintained.
-domains:
-- environment
-homepage_url: http://environmentontology.github.io/gaz/
-id: gaz
-layout: resource_detail
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Gazetteer
 products:
-- category: OntologyProduct
+- id: gaz.owl
+  name: gaz.owl
   description: Gazetteer in OWL format
   format: owl
-  id: gaz.owl
-  name: gaz.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/gaz.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
-    when accessing file'
-- category: OntologyProduct
+- id: gaz.obo
+  name: gaz.obo
   description: Gazetteer in OBO format
   format: obo
-  id: gaz.obo
-  name: gaz.obo
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/gaz.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
-    when accessing file'
-- category: OntologyProduct
+- id: gaz.gaz-countries.owl
+  name: GAZ countries
   description: A country specific subset of the GAZ.
   format: owl
-  id: gaz.gaz-countries.owl
-  name: GAZ countries
-  product_file_size: 42847
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
-repository: https://github.com/EnvironmentOntology/gaz
 ---
+
 ## Description
 
 A gazetteer constructed on ontological principles. The countries are actively maintained.

@@ -1,41 +1,39 @@
 ---
+id: emap
+name: Mouse gross anatomy and development, timed
+description: A structured controlled vocabulary of stage-specific anatomical structures
+  of the mouse (Mus).
 activity_status: inactive
-category: Ontology
+homepage_url: http://emouseatlas.org
+license:
+  id: ''
+  label: Not specified
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:10088
 contacts:
 - category: Individual
+  label: Terry Hayamizu
+  orcid: 0000-0002-0956-8634
   contact_details:
   - contact_type: email
     value: Terry.Hayamizu@jax.org
   - contact_type: github
     value: tfhayamizu
-  label: Terry Hayamizu
-  orcid: 0000-0002-0956-8634
-description: A structured controlled vocabulary of stage-specific anatomical structures
-  of the mouse (Mus).
-domains:
-- anatomy and development
-homepage_url: http://emouseatlas.org
-id: emap
-layout: resource_detail
-license:
-  id: ''
-  label: Not specified
-name: Mouse gross anatomy and development, timed
 products:
-- category: OntologyProduct
+- id: emap.owl
+  name: emap.owl
   description: Mouse gross anatomy and development, timed in OWL format
   format: owl
-  id: emap.owl
-  name: emap.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/emap.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-05: HTTP 403 error
-    when accessing file'
-taxon:
-- NCBITaxon:10088
 ---
+
 ## Description
 
 A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).

@@ -64,3 +64,7 @@ publications:
 repository: https://github.com/sanyabt/np-kg
 ---
 NP-KG is a graph framework that creates a biomedical knowledge graph (KG) to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug interactions (NPDIs). NP-KG uses the PheKnowLator ecosystem to create an ontology-grounded KG. It then uses two relation extraction systems to extract triples from full texts of natural product-related scientific literature to create a literature-based graph, and integrates the nodes and edges in the ontology-grounded KG.
+
+## Automated Evaluation
+
+- View the automated evaluation: [np-kg automated evaluation](np-kg_eval_automated.html)

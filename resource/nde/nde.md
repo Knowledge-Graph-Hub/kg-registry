@@ -43,3 +43,7 @@ taxon:
 - NCBITaxon:9606
 ---
 NIAID Data Ecosystem KG
+
+## Automated Evaluation
+
+- View the automated evaluation: [nde automated evaluation](nde_eval_automated.html)
