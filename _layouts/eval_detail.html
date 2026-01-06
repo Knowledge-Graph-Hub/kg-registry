@@ -10,7 +10,11 @@ layout: default
   <h1>Evaluation for <a href="{{ rid }}.html">{{ rid }}</a></h1>
   <p class="text-muted"><strong>Evaluator:</strong> {{ page.evaluator | default: 'Not specified' }}</p>
   <p class="text-muted"><strong>Evaluated on:</strong> {{ page.evaluation_date | default: site.time | date: '%Y-%m-%d' }}</p>
+  {%- if page.made_by_ai %}
+  <p class="alert alert-info"><strong>⚠️ Automated Evaluation:</strong> This evaluation was generated automatically using an AI-based system. It is distinct from manual evaluations curated by human experts. Please review findings carefully and report any inaccuracies.</p>
+  {%- else %}
   <p class="text-muted">This is a manual evaluation intended to identify potential barriers to reuse.</p>
+  {%- endif %}
   <br />
 
     {{ content }}
