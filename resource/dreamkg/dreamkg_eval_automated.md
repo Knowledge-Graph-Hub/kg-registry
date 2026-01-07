@@ -10,8 +10,8 @@ made_by_ai: true
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
 <tr><td>Access to data outside of the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td></td></tr>
-<tr><td>API or online access to the knowledge graph</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
-<tr><td>Multiple access options available</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
+<tr><td>API or online access to the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>SPARQL endpoint at https://frink.apps.renci.org/dreamkg/sparql</td></tr>
+<tr><td>Multiple access options available</td><td style="background-color:#d4edda;">Y</td><td>Website and SPARQL endpoint</td></tr>
 <tr><td>Source code availability</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Downloadable knowledge graph</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 </tbody></table></div>

@@ -9,8 +9,8 @@ made_by_ai: true
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
-<tr><td>Access to data outside of the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td></td></tr>
-<tr><td>API or online access to the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td></td></tr>
+<tr><td>Access to data outside of the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>Homepage URL: https://docs.kg.ebrains.eu/</td></tr>
+<tr><td>API or online access to the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>API endpoint: https://core.kg.ebrains.eu/swagger-ui/index.html</td></tr>
 <tr><td>Multiple access options available</td><td style="background-color:#d4edda;">Y</td><td></td></tr>
 <tr><td>Source code availability</td><td style="background-color:#d4edda;">Y</td><td></td></tr>
 <tr><td>Downloadable knowledge graph</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
