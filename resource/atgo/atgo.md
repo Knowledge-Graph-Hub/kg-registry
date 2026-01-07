@@ -36,6 +36,8 @@ products:
     to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
     port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
+  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
     to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
@@ -121,12 +123,10 @@ products:
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
     object at 0x7fa9b784b9a0>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - 'File was not able to be retrieved when checked on 2026-01-06: Timeout connecting
-    to URL'
 publications:
 - authors:
   - Michael H Kramer
-  - Jean-Claude Farré
+  - "Jean-Claude Farr\xE9"
   - Koyel Mitra
   - Michael Ku Yu
   - Keiichiro Ono

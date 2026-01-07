@@ -240,7 +240,7 @@ products:
     out
   - File was not able to be retrieved when checked on 2026-01-06_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-01-06: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-01-07: FTP error: timed
     out'
 publications:
 - id: https://www.iso.org/standard/71339.html

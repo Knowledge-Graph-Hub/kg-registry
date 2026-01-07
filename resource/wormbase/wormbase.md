@@ -81,7 +81,7 @@ products:
     101] Network is unreachable
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
-  - 'File was not able to be retrieved when checked on 2026-01-06: FTP error: [Errno
+  - 'File was not able to be retrieved when checked on 2026-01-07: FTP error: [Errno
     101] Network is unreachable'
 - category: GraphicalInterface
   description: Sub-portal hosting approximately 100 parasitic helminth genomes with

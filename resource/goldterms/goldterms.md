@@ -42,7 +42,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   format: owl

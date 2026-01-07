@@ -35,7 +35,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   description: Cell markers of different cell types from different tissues in mouse
@@ -47,7 +49,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   description: Cell markers derived from single-cell sequencing researches in human
@@ -60,7 +64,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   description: All cell markers of different cell types from different tissues in
@@ -73,7 +79,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-05_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: GraphicalInterface
   description: ACT is a tool that makes cell type annotation easier by integrating

@@ -63,7 +63,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -89,7 +89,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -113,7 +113,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -130,7 +130,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -170,7 +170,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -208,7 +208,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -227,7 +227,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint

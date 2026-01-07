@@ -33,7 +33,7 @@ products:
   format: owl
   id: omrse.owl
   name: omrse.owl
-  product_file_size: 169863
+  product_file_size: 171404
   product_url: http://purl.obolibrary.org/obo/omrse.owl
 repository: https://github.com/mcwdsi/OMRSE
 taxon:

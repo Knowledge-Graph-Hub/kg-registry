@@ -903,7 +903,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-06: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5

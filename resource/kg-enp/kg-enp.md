@@ -2,32 +2,31 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: oolonek
-  label: Pierre-Marie Allard
+  - category: Individual
+    contact_details:
+      - contact_type: github
+        value: "oolonek"
+    label: Pierre-Marie Allard
 creation_date: '2026-01-06T00:00:00Z'
 description: 'ENP-KG is a specialized knowledge graph for experimental natural products discovery and characterization. It integrates chemical spectroscopy data, natural product structures, and organism information to support drug discovery research and chemical ecology applications. The knowledge graph provides a unified platform for exploring relationships between organisms and their secondary metabolites.'
 domains:
-- organisms
-- chemistry
-- drug discovery
+  - organisms
+  - drug discovery
 homepage_url: https://enpkg.commons-lab.org/
-id: kg-enp
+id: "kg-enp"
 last_modified_date: '2026-01-06T00:00:00Z'
 layout: resource_detail
 name: kg-enp
 products:
-- category: GraphicalInterface
-  description: Web-based interactive portal for exploring experimental natural products,
-    chemical structures, and organism relationships with data visualization
-  format: http
-  id: kg-enp.portal
-  name: ENP-KG Portal
-  product_url: https://enpkg.commons-lab.org/
+  - category: GraphicalInterface
+    description: Web-based interactive portal for exploring experimental natural products, chemical structures, and organism relationships with data visualization
+    format: http
+    id: "kg-enp.portal"
+    name: ENP-KG Portal
+    product_url: https://enpkg.commons-lab.org/
 repository: https://github.com/enpkg/enpkg_full
 ---
+
 # ENP-KG: Experimental Natural Products Knowledge Graph
 
 ENP-KG is a specialized knowledge graph dedicated to experimental natural products discovery, characterization, and integration. It serves as a comprehensive resource for researchers in drug discovery, chemical ecology, ethnobotany, and natural products chemistry by providing structured access to chemical structures, spectroscopic data, and organism-metabolite associations.

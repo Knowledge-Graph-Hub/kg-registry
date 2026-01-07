@@ -77,7 +77,12 @@ products:
     issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-01-06: Error connecting
+  - File was not able to be retrieved when checked on 2026-01-06_ Error connecting
+    to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
+    with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2026-01-07: Error connecting
     to URL: HTTPSConnectionPool(host=''editors.eol.org'', port=443): Max retries exceeded
     with url: /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -100,7 +105,12 @@ products:
     url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-01-06: Error connecting
+  - File was not able to be retrieved when checked on 2026-01-06_ Error connecting
+    to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
+    url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2026-01-07: Error connecting
     to URL: HTTPSConnectionPool(host=''eol.org'', port=443): Max retries exceeded
     with url: /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
