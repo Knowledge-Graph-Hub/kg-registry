@@ -6,7 +6,7 @@ id: ttd.help
 name: TTD Help Documentation
 product_url: https://idrblab.org/ttd/help
 warnings:
-- File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
   accessing file

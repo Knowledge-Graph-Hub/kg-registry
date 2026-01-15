@@ -30,14 +30,14 @@ products:
   format: owl
   id: po.owl
   name: po.owl
-  product_file_size: 360324
+  product_file_size: 360811
   product_url: http://purl.obolibrary.org/obo/po.owl
 - category: OntologyProduct
   description: Plant Ontology in OBO format
   format: obo
   id: po.obo
   name: po.obo
-  product_file_size: 222548
+  product_file_size: 222891
   product_url: http://purl.obolibrary.org/obo/po.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

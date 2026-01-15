@@ -9,7 +9,7 @@ license:
 name: clinicaltrials OWL
 product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
   accessing file

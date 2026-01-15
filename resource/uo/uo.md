@@ -29,14 +29,14 @@ products:
   format: owl
   id: uo.owl
   name: uo.owl
-  product_file_size: 32548
+  product_file_size: 30874
   product_url: http://purl.obolibrary.org/obo/uo.owl
 - category: OntologyProduct
   description: Units of measurement ontology in OBO format
   format: obo
   id: uo.obo
   name: uo.obo
-  product_file_size: 19376
+  product_file_size: 19879
   product_url: http://purl.obolibrary.org/obo/uo.obo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

@@ -29,14 +29,14 @@ products:
   format: owl
   id: eco.owl
   name: eco.owl
-  product_file_size: 355446
+  product_file_size: 344657
   product_url: http://purl.obolibrary.org/obo/eco.owl
 - category: OntologyProduct
   description: Evidence and Conclusion Ontology in OBO format
   format: obo
   id: eco.obo
   name: eco.obo
-  product_file_size: 157046
+  product_file_size: 156464
   product_url: http://purl.obolibrary.org/obo/eco.obo
 repository: https://github.com/evidenceontology/evidenceontology
 ---

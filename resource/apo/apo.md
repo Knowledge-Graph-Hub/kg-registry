@@ -36,7 +36,7 @@ products:
   format: obo
   id: apo.obo
   name: apo.obo
-  product_file_size: 16797
+  product_file_size: 16796
   product_url: http://purl.obolibrary.org/obo/apo.obo
 repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
 taxon:

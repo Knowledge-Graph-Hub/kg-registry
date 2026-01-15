@@ -30,19 +30,15 @@ products:
   format: owl
   id: ma.owl
   name: ma.owl
+  product_file_size: 95227
   product_url: http://purl.obolibrary.org/obo/ma.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
-    when accessing file'
 - category: OntologyProduct
   description: Mouse adult gross anatomy in OBO format
   format: obo
   id: ma.obo
   name: ma.obo
+  product_file_size: 60408
   product_url: http://purl.obolibrary.org/obo/ma.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
-    when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl

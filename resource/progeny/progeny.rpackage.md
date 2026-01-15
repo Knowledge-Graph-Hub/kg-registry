@@ -4,6 +4,7 @@ description: R package containing pathway signatures for 14 signaling pathways i
   human and mouse, available through Bioconductor
 format: mixed
 id: progeny.rpackage
+is_public: true
 name: PROGENy R Package
 original_source:
 - progeny

@@ -3,6 +3,7 @@ category: Product
 description: FooDB complete dataset in XML format (TAR/GZ compressed, 6438.08 MB)
 format: xml
 id: fooddb.xml
+is_public: true
 name: FooDB XML File
 original_source:
 - fooddb

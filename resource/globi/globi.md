@@ -63,7 +63,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -89,7 +91,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -113,7 +117,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -130,8 +136,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: RDF N-Quads representation of interaction data
@@ -170,7 +178,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -208,7 +218,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -227,7 +239,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint
@@ -260,6 +274,42 @@ products:
   id: globi.bee.interactions
   name: Bee Interaction Data from Global Biotic Interactions
   product_url: https://zenodo.org/records/7753956
+- category: GraphProduct
+  description: Graph version of the Earth Metabolome Initiative Ontology
+  format: kgx
+  id: emikg.kg
+  name: EMI Knowledge Graph
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
+  product_url: https://doi.org/10.5281/zenodo.17079767
+  repository: https://github.com/earth-metabolome-initiative/metrin-kg
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-15: Timeout connecting
+    to URL'
+- category: ProgrammingInterface
+  description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
+  format: http
+  id: emikg.sparql
+  name: EMI KG SPARQL Endpoint
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
+  product_url: https://qlever.earthmetabolome.org/api/metrin-kg
+- category: GraphicalInterface
+  description: Web-based SPARQL query editor for the EMI Knowledge Graph
+  id: emikg.web
+  name: EMI KG SPARQL Query Editor
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
+  product_url: https://sib-swiss.github.io/sparql-editor/emi
 publications:
 - doi: 10.1016/j.ecoinf.2014.08.005
   id: doi:10.1016/j.ecoinf.2014.08.005

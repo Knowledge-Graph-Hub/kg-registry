@@ -38,36 +38,36 @@ products:
     across organisms
   format: http
   id: stitch.portal
+  is_public: true
   name: STITCH Web Portal
   original_source:
   - stitch
-  is_public: true
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
   format: tsv
   id: stitch.downloads
+  is_public: true
   name: STITCH Data Downloads
   original_source:
   - stitch
-  is_public: true
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
     data
   format: http
   id: stitch.api
+  is_public: true
   name: STITCH API
   original_source:
   - stitch
-  is_public: true
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
   dump_format: neo4j
   edge_count: 220000000
-  format: neo4j
+  format: mixed
   id: clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
@@ -113,7 +113,7 @@ products:
     relationships
   dump_format: neo4j
   edge_count: 220000000
-  format: neo4j
+  format: mixed
   id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000

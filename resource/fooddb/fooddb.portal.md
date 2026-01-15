@@ -4,6 +4,7 @@ description: Interactive web interface for browsing and searching food compositi
   data
 format: http
 id: fooddb.portal
+is_public: true
 name: FooDB Web Portal
 original_source:
 - fooddb

@@ -7,7 +7,7 @@ id: unii.list
 name: UNII List Download
 product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
   accessing file

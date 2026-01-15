@@ -29,7 +29,7 @@ products:
   format: owl
   id: dpo.owl
   name: dpo.owl
-  product_file_size: 4518244
+  product_file_size: 4002750
   product_url: http://purl.obolibrary.org/obo/dpo.owl
 - category: OntologyProduct
   description: Drosophila Phenotype Ontology in OBO format
@@ -43,7 +43,7 @@ products:
   format: json
   id: dpo.json
   name: dpo.json
-  product_file_size: 2333069
+  product_file_size: 2021460
   product_url: http://purl.obolibrary.org/obo/dpo.json
 repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 taxon:

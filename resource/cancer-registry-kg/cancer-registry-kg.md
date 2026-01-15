@@ -33,7 +33,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: RDF-based knowledge graph containing 207,766 unique tumor records from
@@ -48,7 +50,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
     when accessing file'
 - category: Product
   description: Linked neighborhood concentrated disadvantage index (CDI) dataset for
@@ -63,7 +67,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: Python-based API using RDFLib for parameterized SPARQL query execution

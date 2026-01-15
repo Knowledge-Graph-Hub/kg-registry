@@ -32,8 +32,8 @@ products:
   name: VariO main release in OWL
   product_url: http://purl.obolibrary.org/obo/vario.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-07: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: VariO in OBO format
   format: obo
@@ -41,8 +41,8 @@ products:
   name: VariO in OBO format
   product_url: http://purl.obolibrary.org/obo/vario.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-07: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
+    when accessing file'
 ---
 ## Description
 

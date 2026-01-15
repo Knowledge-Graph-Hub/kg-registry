@@ -4,6 +4,7 @@ description: Web interface for searching and visualizing chemical-protein intera
   across organisms
 format: http
 id: stitch.portal
+is_public: true
 name: STITCH Web Portal
 original_source:
 - stitch

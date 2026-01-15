@@ -32,42 +32,42 @@ products:
   format: owl
   id: maxo.owl
   name: maxo.owl
-  product_file_size: 16025464
+  product_file_size: 16448041
   product_url: http://purl.obolibrary.org/obo/maxo.owl
 - category: OntologyProduct
   description: Medical Action Ontology in OBO format
   format: obo
   id: maxo.obo
   name: maxo.obo
-  product_file_size: 4091313
+  product_file_size: 4180499
   product_url: http://purl.obolibrary.org/obo/maxo.obo
 - category: OntologyProduct
   description: Medical Action Ontology in JSON format
   format: json
   id: maxo.json
   name: maxo.json
-  product_file_size: 9544243
+  product_file_size: 9856275
   product_url: http://purl.obolibrary.org/obo/maxo.json
 - category: OntologyProduct
   description: Medical Action Ontology in OWL format
   format: owl
   id: maxo.maxo-base.owl
   name: maxo.maxo-base.owl
-  product_file_size: 3500154
+  product_file_size: 3536393
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
 - category: OntologyProduct
   description: Medical Action Ontology in OBO format
   format: obo
   id: maxo.maxo-base.obo
   name: maxo.maxo-base.obo
-  product_file_size: 1074502
+  product_file_size: 1093805
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.obo
 - category: OntologyProduct
   description: Medical Action Ontology in JSON format
   format: json
   id: maxo.maxo-base.json
   name: maxo.maxo-base.json
-  product_file_size: 2497251
+  product_file_size: 2538108
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.json
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch

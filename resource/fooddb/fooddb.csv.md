@@ -3,6 +3,7 @@ category: Product
 description: FooDB complete dataset in CSV format (TAR/GZ compressed, 952.52 MB)
 format: csv
 id: fooddb.csv
+is_public: true
 name: FooDB CSV File
 original_source:
 - fooddb

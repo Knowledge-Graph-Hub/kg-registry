@@ -27,19 +27,15 @@ products:
   format: owl
   id: ehdaa2.owl
   name: ehdaa2.owl
+  product_file_size: 125946
   product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
-    when accessing file'
 - category: OntologyProduct
   description: Human developmental anatomy, abstract in OBO format
   format: obo
   id: ehdaa2.obo
   name: ehdaa2.obo
+  product_file_size: 83809
   product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
-    when accessing file'
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 taxon:
 - NCBITaxon:9606

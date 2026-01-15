@@ -4,6 +4,7 @@ description: FooDB complete dataset as MySQL database dump (TAR/GZ compressed, 1
   MB)
 format: mysql
 id: fooddb.mysql
+is_public: true
 name: FooDB MySQL Dump File
 original_source:
 - fooddb

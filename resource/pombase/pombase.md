@@ -38,7 +38,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -59,7 +61,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-07: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-15: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each

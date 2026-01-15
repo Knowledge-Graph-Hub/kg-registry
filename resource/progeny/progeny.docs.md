@@ -4,6 +4,7 @@ description: Documentation website for PROGENy with installation instructions, v
   and function reference
 format: http
 id: progeny.docs
+is_public: true
 name: PROGENy Documentation
 original_source:
 - progeny

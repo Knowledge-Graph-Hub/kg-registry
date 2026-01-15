@@ -1614,11 +1614,11 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -1650,6 +1650,7 @@ products:
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
   id: rampdb.database
+  is_public: true
   name: RaMP-DB Integrated Database
   original_source:
   - kegg

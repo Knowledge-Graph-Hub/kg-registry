@@ -3,6 +3,7 @@ category: ProgrammingInterface
 description: Programmatic interface for accessing RaMP-DB integrated metabolomic pathway
   data and performing enrichment analyses.
 id: rampdb.api
+is_public: true
 name: RaMP-DB API
 original_source:
 - rampdb

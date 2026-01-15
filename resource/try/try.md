@@ -2,7 +2,9 @@
 activity_status: active
 category: Dataset
 creation_date: '2026-01-15T00:00:00Z'
-description: The TRY Plant Trait Database aggregates global plant trait measurements contributed by researchers and institutions, widely used for ecological and metabolomic analyses.
+description: The TRY Plant Trait Database aggregates global plant trait measurements
+  contributed by researchers and institutions, widely used for ecological and metabolomic
+  analyses.
 domains:
 - biological systems
 homepage_url: https://www.try-db.org/TryWeb/Home.php
@@ -20,8 +22,46 @@ products:
   original_source:
   - try
   product_url: https://www.try-db.org/TryWeb/Home.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-15: Error connecting
+    to URL: HTTPSConnectionPool(host=''www.try-db.org'', port=443): Max retries exceeded
+    with url: /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
+    CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
+    certificate (_ssl.c:1017)'')))'
+- category: GraphProduct
+  description: Graph version of the Earth Metabolome Initiative Ontology
+  format: kgx
+  id: emikg.kg
+  name: EMI Knowledge Graph
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
+  product_url: https://doi.org/10.5281/zenodo.17079767
+  repository: https://github.com/earth-metabolome-initiative/metrin-kg
+- category: ProgrammingInterface
+  description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
+  format: http
+  id: emikg.sparql
+  name: EMI KG SPARQL Endpoint
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
+  product_url: https://qlever.earthmetabolome.org/api/metrin-kg
+- category: GraphicalInterface
+  description: Web-based SPARQL query editor for the EMI Knowledge Graph
+  id: emikg.web
+  name: EMI KG SPARQL Query Editor
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
+  product_url: https://sib-swiss.github.io/sparql-editor/emi
 ---
-
 # TRY Plant Trait Database
 
 ## Overview

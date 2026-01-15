@@ -8,7 +8,7 @@ is_public: true
 name: KnowWhereGraph Ontology Documentation
 product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
 warnings:
-- File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
   accessing file

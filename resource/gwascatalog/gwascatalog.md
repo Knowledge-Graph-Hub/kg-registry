@@ -70,7 +70,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
     when accessing file'
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
@@ -94,7 +96,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
     when accessing file'
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
@@ -108,7 +112,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
     when accessing file'
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -122,7 +128,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
@@ -136,7 +144,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
@@ -149,7 +159,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
@@ -451,11 +463,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-07: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
     when accessing file'
 ---
 ## Overview

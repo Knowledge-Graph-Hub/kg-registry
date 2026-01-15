@@ -3,6 +3,7 @@ category: Product
 description: FooDB complete dataset in JSON format (ZIP compressed, 86.66 MB)
 format: json
 id: fooddb.json
+is_public: true
 name: FooDB JSON File
 original_source:
 - fooddb

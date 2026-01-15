@@ -31,7 +31,7 @@ products:
   format: json
   id: hp.json
   name: Official HPO release in obographs JSON format
-  product_file_size: 21844974
+  product_file_size: 21897026
   product_url: http://purl.obolibrary.org/obo/hp.json
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -39,7 +39,7 @@ products:
   format: obo
   id: hp.obo
   name: Official HPO release in OBO format
-  product_file_size: 10323898
+  product_file_size: 10356218
   product_url: http://purl.obolibrary.org/obo/hp.obo
 - category: OntologyProduct
   description: Manually classified version of the ontology without the use of a reasoner,
@@ -47,7 +47,7 @@ products:
   format: owl
   id: hp.owl
   name: Official HPO release in OWL
-  product_file_size: 75563838
+  product_file_size: 75604163
   product_url: http://purl.obolibrary.org/obo/hp.owl
 - category: OntologyProduct
   description: Manually curated version of the ontology without the use of a reasoner,
@@ -55,7 +55,7 @@ products:
   format: obo
   id: hp.hp-base.json
   name: HPO base release in obographs JSON format
-  product_file_size: 22046388
+  product_file_size: 22098362
   product_url: http://purl.obolibrary.org/obo/hp/hp-base.json
 - category: OntologyProduct
   description: Manually curated version of the ontology without the use of a reasoner,
@@ -63,7 +63,7 @@ products:
   format: obo
   id: hp.hp-base.obo
   name: HPO base release in OBO format
-  product_file_size: 10856100
+  product_file_size: 10888368
   product_url: http://purl.obolibrary.org/obo/hp/hp-base.obo
 - category: OntologyProduct
   description: Manually curated version of the ontology without the use of a reasoner,
@@ -71,7 +71,7 @@ products:
   format: owl
   id: hp.hp-base.owl
   name: HPO base release in OWL format
-  product_file_size: 47800705
+  product_file_size: 47834563
   product_url: http://purl.obolibrary.org/obo/hp/hp-base.owl
 - category: OntologyProduct
   description: Version of the ontology automatically classified with the use of a
@@ -79,7 +79,7 @@ products:
   format: json
   id: hp.hp-full.json
   name: HPO full release in obographs JSON format
-  product_file_size: 42768508
+  product_file_size: 42820631
   product_url: http://purl.obolibrary.org/obo/hp/hp-full.json
 - category: OntologyProduct
   description: Version of the ontology automatically classified with the use of a
@@ -87,7 +87,7 @@ products:
   format: obo
   id: hp.hp-full.obo
   name: HPO full release in OBO format
-  product_file_size: 18799751
+  product_file_size: 18832027
   product_url: http://purl.obolibrary.org/obo/hp/hp-full.obo
 - category: OntologyProduct
   description: Version of the ontology automatically classified with the use of a
@@ -95,7 +95,7 @@ products:
   format: owl
   id: hp.hp-full.owl
   name: HPO full release in OWL format
-  product_file_size: 84677064
+  product_file_size: 84712201
   product_url: http://purl.obolibrary.org/obo/hp/hp-full.owl
 - category: OntologyProduct
   description: Version of the ontology corresponding to the primary release (hp.owl),
@@ -103,7 +103,7 @@ products:
   format: json
   id: hp.hp-international.json
   name: HPO International Edition in obographs JSON format
-  product_file_size: 49018603
+  product_file_size: 49075137
   product_url: http://purl.obolibrary.org/obo/hp/hp-international.json
 - category: OntologyProduct
   description: Version of the ontology corresponding to the primary release (hp.owl),
@@ -111,7 +111,7 @@ products:
   format: obo
   id: hp.hp-international.obo
   name: HPO International Edition in OBO format
-  product_file_size: 21743253
+  product_file_size: 21779805
   product_url: http://purl.obolibrary.org/obo/hp/hp-international.obo
 - category: OntologyProduct
   description: Version of the ontology corresponding to the primary release (hp.owl),
@@ -119,7 +119,7 @@ products:
   format: owl
   id: hp.hp-international.owl
   name: HPO International Edition in OWL format
-  product_file_size: 207067457
+  product_file_size: 207105479
   product_url: http://purl.obolibrary.org/obo/hp/hp-international.owl
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -127,7 +127,7 @@ products:
   format: json
   id: hp.hp-simple-non-classified.json
   name: HPO simple, manually classified, without imports in obographs JSON format
-  product_file_size: 21845021
+  product_file_size: 21897073
   product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -135,7 +135,7 @@ products:
   format: obo
   id: hp.hp-simple-non-classified.obo
   name: HPO simple, manually classified, without imports in OBO format
-  product_file_size: 10323948
+  product_file_size: 10356268
   product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -143,28 +143,28 @@ products:
   format: owl
   id: hp.hp-simple-non-classified.owl
   name: HPO simple, manually classified, without imports in OWL format
-  product_file_size: 29314717
+  product_file_size: 29363889
   product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl
 - category: OntologyProduct
   description: https://hpo.jax.org/app/data/annotations
   format: tsv
   id: hp.phenotype.hpoa
   name: HPO Annotations (Phenotype to Disease)
-  product_file_size: 34309912
+  product_file_size: 34972789
   product_url: http://purl.obolibrary.org/obo/hp/phenotype.hpoa
 - category: OntologyProduct
   description: https://hpo.jax.org/app/data/annotations
   format: tsv
   id: hp.phenotype_to_genes.txt
   name: HPO phenotype to gene annotations
-  product_file_size: 64122722
+  product_file_size: 64575286
   product_url: http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt
 - category: OntologyProduct
   description: https://hpo.jax.org/app/data/annotations
   format: tsv
   id: hp.genes_to_phenotype.txt
   name: HPO gene to phenotype annotations
-  product_file_size: 19986023
+  product_file_size: 20125120
   product_url: http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

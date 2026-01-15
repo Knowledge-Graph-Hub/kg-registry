@@ -6,6 +6,8 @@ description: Internal JSON representation of all loaded ontologies (approximatel
 format: json
 id: ols.json
 name: OLS Ontologies JSON
+original_source:
+- ols
 product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
 layout: product_detail
 ---

@@ -30,14 +30,14 @@ products:
   format: owl
   id: pso.owl
   name: pso.owl
-  product_file_size: 365768
+  product_file_size: 365840
   product_url: http://purl.obolibrary.org/obo/pso.owl
 - category: OntologyProduct
   description: Plant Stress Ontology in OBO format
   format: obo
   id: pso.obo
   name: pso.obo
-  product_file_size: 241678
+  product_file_size: 241726
   product_url: http://purl.obolibrary.org/obo/pso.obo
 repository: https://github.com/Planteome/plant-stress-ontology
 ---

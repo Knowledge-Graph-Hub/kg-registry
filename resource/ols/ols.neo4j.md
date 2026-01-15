@@ -7,6 +7,8 @@ dump_format: neo4j
 format: neo4j
 id: ols.neo4j
 name: OLS Neo4j Database
+original_source:
+- ols
 product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
 layout: product_detail
 ---
