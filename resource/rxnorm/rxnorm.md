@@ -33,7 +33,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/
 id: rxnorm
 infores_id: rxnorm
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-01-15T00:00:00Z'
 layout: resource_detail
 name: RxNorm
 products:
@@ -44,6 +44,8 @@ products:
   id: rxnorm.data_files
   name: RxNorm Data Files
   product_url: https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html
+  original_source:
+  - rxnorm
 - category: ProgrammingInterface
   description: RESTful web services providing programmatic access to RxNorm drug terminology
     data including drug names, identifiers, relationships, and properties
@@ -51,6 +53,9 @@ products:
   id: rxnorm.api
   name: RxNorm API
   product_url: https://rxnav.nlm.nih.gov/RxNormAPIs.html
+  original_source:
+  - rxnorm
+  is_public: true
 - category: GraphicalInterface
   description: Interactive web browser for searching and exploring RxNorm drug concepts,
     relationships, and properties with multiple viewing options
@@ -58,6 +63,9 @@ products:
   id: rxnorm.rxnav
   name: RxNav Browser
   product_url: https://mor.nlm.nih.gov/RxNav/
+  original_source:
+  - rxnorm
+  is_public: true
 - category: GraphicalInterface
   description: Tool for exploring drug class hierarchies and finding RxNorm drug members
     associated with each class from multiple classification systems
@@ -65,6 +73,9 @@ products:
   id: rxnorm.rxclass
   name: RxClass
   product_url: https://mor.nlm.nih.gov/RxClass/
+  original_source:
+  - rxnorm
+  is_public: true
 - category: ProgrammingInterface
   description: Interactive tool allowing users to combine multiple API functions to
     build custom drug information applications
@@ -72,6 +83,9 @@ products:
   id: rxnorm.rxmix
   name: RxMix
   product_url: https://mor.nlm.nih.gov/RxMix/
+  original_source:
+  - rxnorm
+  is_public: true
 - category: Product
   description: Locally installable package containing RxNav, RxClass, RxMix tools
     and RESTful APIs for offline use
@@ -79,6 +93,8 @@ products:
   id: rxnorm.rxnav_in_a_box
   name: RxNav-in-a-Box
   product_url: https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html
+  original_source:
+  - rxnorm
 - category: Product
   description: VANDF data integrated into RxNorm
   id: ndfrt.rxnorm
@@ -88,6 +104,10 @@ products:
   product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
   secondary_source:
   - rxnorm
+publications:
+- category: Publication
+  id: PMID:21515544
+  preferred: true
 taxon:
 - NCBITaxon:9606
 ---
@@ -179,35 +199,3 @@ RxNorm is updated monthly following a regular release schedule, incorporating:
 ## Support and Documentation
 
 Comprehensive documentation, training materials, video tutorials, and technical support are available through the NLM. Users can access FAQs, technical documentation, learning resources, and direct support from the RxNorm team.
-
-# RxNorm
-
-## Overview
-
-normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software, including those of First Databank, Micromedex, and Gold Standard Drug Database
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:rxnorm`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
