@@ -17,12 +17,12 @@ description: The Ontology Lookup Service (OLS) is a repository for biomedical on
   Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
 domains:
 - biomedical
-- upper
 - biological systems
+- information technology
 homepage_url: https://www.ebi.ac.uk/ols4/
 id: ols
 infores_id: ols
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-01-15T00:00:00Z'
 layout: resource_detail
 name: Ontology Lookup Service
 products:
@@ -33,6 +33,9 @@ products:
   id: ols.portal
   name: OLS Web Portal
   product_url: https://www.ebi.ac.uk/ols4/
+  original_source:
+  - ols
+  is_public: true
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to ontology data including terms,
     properties, and relationships
@@ -40,6 +43,9 @@ products:
   id: ols.api
   name: OLS REST API
   product_url: https://www.ebi.ac.uk/ols4/api-docs
+  original_source:
+  - ols
+  is_public: true
 - category: Product
   compression: gzip
   description: Internal JSON representation of all loaded ontologies (approximately
@@ -48,6 +54,8 @@ products:
   id: ols.json
   name: OLS Ontologies JSON
   product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+  original_source:
+  - ols
 - category: GraphProduct
   compression: tar
   description: Neo4j database with linked ontology data including cross-references
@@ -57,12 +65,16 @@ products:
   id: ols.neo4j
   name: OLS Neo4j Database
   product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+  original_source:
+  - ols
 - category: Product
   compression: tar
   description: Solr search index database for ontology searching (requires Solr 9.0.0)
   id: ols.solr
   name: OLS Solr Database
   product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+  original_source:
+  - ols
 - category: MappingProduct
   compression: gzip
   description: Ontology mappings extracted from all ontologies in SSSOM TSV format
@@ -70,6 +82,8 @@ products:
   id: ols.mappings
   name: OLS SSSOM Mappings
   product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+  original_source:
+  - ols
 publications:
 - id: PMID:39913645
   preferred: true
@@ -177,35 +191,3 @@ OLS has been supported by:
 ## Citation
 
 Please cite: OLS4: a new Ontology Lookup Service for a growing interdisciplinary knowledge ecosystem. *Bioinformatics*, Volume 41, Issue 5, May 2025, btaf279. PMID: 39913645
-
-# Ontology Lookup Service API
-
-## Overview
-
-The OLS REST API provides access to key biological data from OLS. The services provide a unified interface to query information about ontology terms from GO (the Gene Ontology) and ECO (the Evidence & Conclusion Ontology), Gene Ontology annotations from the EBI's GOA database, and gene products (proteins from UniProt, RNA from RNAcentral and complexes from ComplexPortal).
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:ols`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes

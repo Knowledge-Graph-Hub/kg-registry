@@ -1,6 +1,15 @@
 ---
 activity_status: inactive
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://string-db.org/help/
+  - contact_type: email
+    value: string-db@embl.de
+  id: stringdb
+  label: STRING/EMBL Team
 creation_date: '2025-11-17T00:00:00Z'
 description: STITCH (Search Tool for Interactions of Chemicals) is a database of known
   and predicted interactions between chemicals and proteins across 2,031 organisms.
@@ -13,10 +22,11 @@ description: STITCH (Search Tool for Interactions of Chemicals) is a database of
 domains:
 - drug discovery
 - systems biology
+- biomedical
 homepage_url: http://stitch-db.org/
 id: stitch
 infores_id: stitch
-last_modified_date: '2025-11-17T00:00:00Z'
+last_modified_date: '2026-01-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://stitch-db.org/download/STITCHacademiclicense.pdf
@@ -31,6 +41,7 @@ products:
   name: STITCH Web Portal
   original_source:
   - stitch
+  is_public: true
   product_url: http://stitch-db.org/
 - category: Product
   description: Downloadable data files containing chemical-protein interaction networks
@@ -39,6 +50,7 @@ products:
   name: STITCH Data Downloads
   original_source:
   - stitch
+  is_public: true
   product_url: http://stitch-db.org/cgi/download.pl
 - category: ProgrammingInterface
   description: API for programmatic access to STITCH chemical-protein interaction
@@ -48,13 +60,14 @@ products:
   name: STITCH API
   original_source:
   - stitch
+  is_public: true
   product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
   dump_format: neo4j
   edge_count: 220000000
-  format: mixed
+  format: neo4j
   id: clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
@@ -100,7 +113,7 @@ products:
     relationships
   dump_format: neo4j
   edge_count: 220000000
-  format: mixed
+  format: neo4j
   id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
@@ -157,8 +170,7 @@ publications:
   year: '2016'
 taxon:
 - NCBITaxon:1
-warnings: []
+warnings:
+- STITCH v5 (2016) is marked unsupported on the homepage; data and APIs may be outdated.
 ---
 # Stitch
-
-This is an automatically generated stub page for stitch. Please update with proper information.

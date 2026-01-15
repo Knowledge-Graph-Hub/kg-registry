@@ -1,6 +1,16 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://saezlab.org/
+  - contact_type: email
+    value: contact@saezlab.org
+  id: saezlab
+  label: Saez-Rodriguez Lab
+creation_date: '2025-11-17T00:00:00Z'
 description: PROGENy (Pathway RespOnsive GENes for activity inference) is a resource
   that leverages a large compendium of publicly available signaling perturbation experiments
   to yield a common core of pathway responsive genes for human and mouse. These pathway
@@ -15,7 +25,7 @@ domains:
 - pathways
 homepage_url: https://saezlab.github.io/progeny/
 id: progeny
-last_modified_date: '2025-11-17T00:00:00Z'
+last_modified_date: '2026-01-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
@@ -30,6 +40,7 @@ products:
   name: PROGENy R Package
   original_source:
   - progeny
+  is_public: true
   product_url: https://www.bioconductor.org/packages/release/bioc/html/progeny.html
 - category: DocumentationProduct
   description: Documentation website for PROGENy with installation instructions, vignettes,
@@ -39,6 +50,7 @@ products:
   name: PROGENy Documentation
   original_source:
   - progeny
+  is_public: true
   product_url: https://saezlab.github.io/progeny/
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -131,5 +143,3 @@ taxon:
 warnings: []
 ---
 # Progeny
-
-This is an automatically generated stub page for progeny. Please update with proper information.
