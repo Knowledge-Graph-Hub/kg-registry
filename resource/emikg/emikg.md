@@ -23,6 +23,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology
 id: emikg
+last_modified_date: '2026-01-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -34,19 +35,34 @@ products:
   format: kgx
   id: emikg.kg
   name: EMI Knowledge Graph
-  product_url: https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology
-  repository: https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology
+  product_url: https://doi.org/10.5281/zenodo.17079767
+  repository: https://github.com/earth-metabolome-initiative/metrin-kg
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
 - category: ProgrammingInterface
   description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
   format: http
   id: emikg.sparql
   name: EMI KG SPARQL Endpoint
-  product_url: https://biosoda.unil.ch/emi/sparql
+  product_url: https://qlever.earthmetabolome.org/api/metrin-kg
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
 - category: GraphicalInterface
   description: Web-based SPARQL query editor for the EMI Knowledge Graph
   id: emikg.web
   name: EMI KG SPARQL Query Editor
-  product_url: https://sib-swiss.github.io/sparql-editor/dbgi
+  product_url: https://sib-swiss.github.io/sparql-editor/emi
+  original_source:
+  - emi
+  - pf1600
+  - globi
+  - try
 ---
 
 
