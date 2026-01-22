@@ -250,7 +250,7 @@ products:
   id: translator.tmkp.graph
   name: Translator TMKP KGX Graph
   original_source:
-  - tmkp
+  - text-mining-kp
   secondary_source:
   - translator
   product_url: https://stars.renci.org/var/translator/releases/tmkp/2025_12_15/
