@@ -36,7 +36,7 @@ products:
   id: drugrephub.sample-info.tsv
   name: Drug Repurposing Hub Sample Information TSV
   product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
-creation_date: 2026-01-22T00:00:00Z
-last_modified_date: 2026-01-22T00:00:00Z
+creation_date: "2026-01-22T00:00:00Z"
+last_modified_date: "2026-01-22T00:00:00Z"
 ---
 Drug Repurposing Hub is a curated, annotated library of approved, clinical, and pre-clinical compounds for screening and repurposing research.
