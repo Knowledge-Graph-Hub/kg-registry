@@ -23,8 +23,8 @@ The KG-Registry now includes a Parquet backend that provides enhanced querying c
 DuckDB and other dependencies are included in the project. To install:
 
 ```bash
-# Using poetry (recommended)
-poetry install
+# Using uv (recommended)
+uv sync
 
 # Or using pip
 pip install duckdb pyarrow oaklib
