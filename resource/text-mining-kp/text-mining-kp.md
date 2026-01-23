@@ -5,35 +5,39 @@ collection:
 - translator
 contacts:
 - category: Individual
+  contact_details:
+  - contact_type: github
+    value: edgargaticaCU
   label: Edgar Gatica
-description: A Translator Knowledge Provider applying text-mined assertions.
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: bill-baumgartner
+  label: Bill Baumgartner
+description: Translator Text Mining Provider that produces knowledge-graph assertions from literature mining workflows and exposes them as a KGX graph.
 domains:
-- other
-homepage_url: ''
+- biomedical
+- literature
+- translational
+homepage_url: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
 id: text-mining-kp
 layout: resource_detail
 name: Text Mining KP
 products:
 - category: GraphProduct
-  description: Text Mining KP KGX distribution
-  format: kgx
+  description: Release files for the Text Mining KP
   id: text-mining-kp.graph
-  name: Text Mining KP KGX
-  product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
-    when accessing file'
-repository: ''
+  name: Text Mining KP Release Files
+  product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
+repository: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
+synonyms:
+- tmkp
+creation_date: 2026-01-22T00:00:00Z
+last_modified_date: 2026-01-22T00:00:00Z
+tags:
+- translator
 ---
-A Translator Knowledge Provider applying text-mined assertions.
-
-contacts:
-- category: Individual
- Edgar Gatica and Bill Baumgartner
+Text Mining KP produces literature-mined knowledge graph assertions for Translator.
 
 ## Automated Evaluation
 
