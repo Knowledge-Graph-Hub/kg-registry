@@ -43,8 +43,7 @@ class ParquetBackend:
     def _init_tables(self):
         """Initialize DuckDB tables for KG-Registry data."""
         # Create resources table
-        self.conn.execute(
-            """
+        self.conn.execute("""
             CREATE TABLE IF NOT EXISTS resources (
                 id VARCHAR PRIMARY KEY,
                 name VARCHAR,
@@ -65,23 +64,19 @@ class ParquetBackend:
                 raw_data JSON,
                 sync_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
-        """
-        )
+        """)
 
         # Create domains table for better querying
-        self.conn.execute(
-            """
+        self.conn.execute("""
             CREATE TABLE IF NOT EXISTS resource_domains (
                 resource_id VARCHAR,
                 domain VARCHAR,
                 PRIMARY KEY (resource_id, domain)
             )
-        """
-        )
+        """)
 
         # Create products table for better querying
-        self.conn.execute(
-            """
+        self.conn.execute("""
             CREATE TABLE IF NOT EXISTS resource_products (
                 resource_id VARCHAR,
                 product_id VARCHAR,
@@ -92,19 +87,16 @@ class ParquetBackend:
                 product_url VARCHAR,
                 PRIMARY KEY (resource_id, product_id)
             )
-        """
-        )
+        """)
 
         # Create taxa table for better querying
-        self.conn.execute(
-            """
+        self.conn.execute("""
             CREATE TABLE IF NOT EXISTS resource_taxa (
                 resource_id VARCHAR,
                 taxon VARCHAR,
                 PRIMARY KEY (resource_id, taxon)
             )
-        """
-        )
+        """)
 
     def sync_from_yaml(self, yaml_file: str) -> int:
         """Sync data from YAML file to in-memory DuckDB database.
@@ -437,27 +429,23 @@ class ParquetBackend:
             stats["active_resources"] = active_count[0] if active_count else 0
 
             # Resources by category
-            category_result = self.conn.execute(
-                """
+            category_result = self.conn.execute("""
                 SELECT category, COUNT(*) as count
                 FROM resources
                 WHERE category IS NOT NULL
                 GROUP BY category
                 ORDER BY count DESC
-                """
-            )
+                """)
             category_counts = category_result.fetchall()
             stats["by_category"] = {cat: count for cat, count in category_counts}
 
             # Resources by domain
-            domain_result = self.conn.execute(
-                """
+            domain_result = self.conn.execute("""
                 SELECT domain, COUNT(*) as count
                 FROM resource_domains
                 GROUP BY domain
                 ORDER BY count DESC
-                """
-            )
+                """)
             domain_counts = domain_result.fetchall()
             stats["by_domain"] = {domain: count for domain, count in domain_counts}
         except Exception as e:

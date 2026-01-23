@@ -117,7 +117,9 @@ def parquet_query(
                 # For taxon queries, we need to use ParquetBackend for hierarchy support
                 with ParquetBackend() as backend:
                     backend.load_from_parquet(parquet_dir)
-                    resources = backend.query_by_taxon(taxon, include_descendants=taxon_include_descendants)
+                    resources = backend.query_by_taxon(
+                        taxon, include_descendants=taxon_include_descendants
+                    )
             else:
                 # Build filtered query
                 query = "SELECT * FROM resources WHERE 1=1"
