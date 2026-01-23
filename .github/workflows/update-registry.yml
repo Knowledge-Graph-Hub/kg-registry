@@ -13,22 +13,18 @@ jobs:
   update-registry:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Python and uv
+        uses: astral-sh/setup-uv@v3
         with:
           python-version: '3.10'
           
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install poetry
-          poetry install
+        run: uv sync --dev
           
       - name: Update registry files
-        run: |
-          poetry run make all
+        run: uv run make all
           
       - name: Commit and push changes
         run: |

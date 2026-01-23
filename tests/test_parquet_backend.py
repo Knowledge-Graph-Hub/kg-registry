@@ -257,14 +257,12 @@ class TestParquetBackend(unittest.TestCase):
                 self.assertEqual(results[0]["id"], "test-resource-1")
 
                 # Join query
-                results = querier.execute_query(
-                    """
+                results = querier.execute_query("""
                     SELECT r.id, r.name, d.domain
                     FROM resources r
                     JOIN resource_domains d ON r.id = d.resource_id
                     WHERE d.domain = 'example'
-                """
-                )
+                """)
                 self.assertEqual(len(results), 1)
                 self.assertEqual(results[0]["id"], "test-resource-1")
                 self.assertEqual(results[0]["domain"], "example")

@@ -91,17 +91,17 @@ from organizations import (
 
 ```bash
 # Combine organizations
-poetry run python util/combine-organizations.py
+uv run python util/combine-organizations.py
 
 # Create organization pages (dry run)
-poetry run python util/organizations.py create
+uv run python util/organizations.py create
 
 # Create organization pages (execute)
-poetry run python util/organizations.py create --execute
+uv run python util/organizations.py create --execute
 
 # Organizations module with subcommands
-poetry run python util/organizations.py combine
-poetry run python util/organizations.py create --execute
+uv run python util/organizations.py combine
+uv run python util/organizations.py create --execute
 ```
 
 ## Migration Notes
