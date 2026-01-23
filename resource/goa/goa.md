@@ -162,8 +162,18 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
   secondary_source:
   - automat
+- category: GraphProduct
+  description: KGX graph package for Gene Ontology Annotations (build goa_2025-10-10_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.goa.graph
+  name: Translator GOA KGX Graph
+  original_source:
+  - goa
+  product_url: https://stars.renci.org/var/translator/releases/goa/2025_12_15/
+  secondary_source:
+  - translator
 ---
-
 ## Overview
 
 The Gene Ontology Annotation (GOA) Database is a comprehensive resource providing high-quality Gene Ontology (GO) annotations to biological entities including proteins in the UniProt Knowledgebase (UniProtKB), RNA molecules from RNAcentral, and protein complexes from the Complex Portal. As a key component of the Gene Ontology Consortium infrastructure, GOA serves as a central hub for functional annotation of gene products across multiple species and databases.

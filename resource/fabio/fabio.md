@@ -47,11 +47,11 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-15_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-01-07_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-01-06_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-01-15: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-01-23: FTP error: timed
     out'
 - category: OntologyProduct
   description: OpenBioDiv-O, the OpenBiodiv Ontology

@@ -97,6 +97,7 @@ crd	Comparative RNA Database (CRD)	Aggregator		resource/crd/crd.md
 creeds	CREEDS	DataSource		resource/creeds/creeds.md
 cro	Contributor Role Ontology	Ontology	https://github.com/data2health/contributor-role-ontology	resource/cro/cro.md
 cteno	Ctenophore Ontology	Ontology	https://github.com/obophenotype/ctenophore-ontology	resource/cteno/cteno.md
+ctkp	Ctkp	DataSource		resource/ctkp/ctkp.md
 cto	CTO: Core Ontology of Clinical Trials	Ontology	https://github.com/ClinicalTrialOntology/CTO/	resource/cto/cto.md
 cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	resource/cvdo/cvdo.md
 dc	Dublin Core Metadata Terms	DataModel	https://www.dublincore.org/	resource/dc/dc.md
@@ -116,6 +117,7 @@ dreamkg	DREAM-KG	KnowledgeGraph	https://dreamkg.com/	resource/dreamkg/dreamkg.md
 drkg	Drug Repurposing Knowledge Graph	KnowledgeGraph	https://github.com/gnn4dr/DRKG	resource/drkg/drkg.md
 dron	The Drug Ontology	Ontology	https://github.com/ufbmi/dron	resource/dron/dron.md
 drug-approvals-kp	Drug Approvals KP	KnowledgeGraph		resource/drug-approvals-kp/drug-approvals-kp.md
+drugrephub	Drug Repurposing Hub	DataSource	https://repo-hub.broadinstitute.org/repurposing	resource/drugrephub/drugrephub.md
 dsstox	DSSTox	DataSource	https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database	resource/dsstox/dsstox.md
 duo	Data Use Ontology	Ontology	https://github.com/EBISPOT/DUO	resource/duo/duo.md
 ebrains	EBRAINS Knowledge Graph	KnowledgeGraph	https://docs.kg.ebrains.eu/	resource/ebrains/ebrains.md
@@ -177,10 +179,12 @@ gaz	Gazetteer	Ontology	http://environmentontology.github.io/gaz/	resource/gaz/ga
 gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohorts/GECKO	resource/gecko/gecko.md
 gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencode.md
 gene-ontology	Gene Ontology (GO)	Ontology	https://geneontology.org/	resource/gene-ontology/gene-ontology.md
+gene2phenotype	Gene2phenotype	DataSource		resource/gene2phenotype/gene2phenotype.md
 genecards	GeneCards	Aggregator	https://www.genecards.org/	resource/genecards/genecards.md
 genemania	GeneMANIA	DataSource	https://genemania.org/	resource/genemania/genemania.md
 genepio	Genomic Epidemiology Ontology	Ontology	http://genepio.org/	resource/genepio/genepio.md
 genetics-kp	Genetics KP	KnowledgeGraph		resource/genetics-kp/genetics-kp.md
+geneticskp	Geneticskp	DataSource		resource/geneticskp/geneticskp.md
 geno	Genotype Ontology	Ontology	https://github.com/monarch-initiative/GENO-ontology/	resource/geno/geno.md
 genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/genomickb/genomickb.md
 genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com/genophenoenvo/knowledge-graph	resource/genophenoenvo-kg/genophenoenvo-kg.md
@@ -220,7 +224,7 @@ iao	Information Artifact Ontology	Ontology	https://github.com/information-artifa
 ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm.nih.gov/37020958/	resource/ibkh/ibkh.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
 ico	Informed Consent Ontology	Ontology	https://github.com/ICO-ontology/ICO	resource/ico/ico.md
-identifier-mappings	ID Mappings	KnowledgeGraph	https://www.wikidata.org/	resource/identifier-mappings/identifier-mappings.md
+identifier-mappings	ID Mappings	KnowledgeGraph	https://frink.renci.org/registry/kgs/identifier-mappings/	resource/identifier-mappings/identifier-mappings.md
 ido	Infectious Disease Ontology	Ontology	http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology	resource/ido/ido.md
 idomal	Malaria Ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/idomal/idomal.md
 iev	Event (INOH pathway ontology)	Ontology	http://www.inoh.org	resource/iev/iev.md
@@ -462,13 +466,14 @@ tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarba
 taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank	resource/taxrank/taxrank.md
 tbkg	Tumor-Biomarker Knowledge Graph	KnowledgeGraph	https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full	resource/tbkg/tbkg.md
 tera	TERA: Toxicological Effect and Risk Assessment Knowledge Graph	KnowledgeGraph	https://niva-knowledge-graph.github.io/TERA/	resource/tera/tera.md
-text-mining-kp	Text Mining KP	KnowledgeGraph		resource/text-mining-kp/text-mining-kp.md
+text-mining-kp	Text Mining KP	KnowledgeGraph	https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap	resource/text-mining-kp/text-mining-kp.md
 tgma	Mosquito gross anatomy ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tgma/tgma.md
 tmrnawebsite	The tmRNA Website	DataSource	http://bioinformatics.sandia.gov/tmrna/	resource/tmrnawebsite/tmrnawebsite.md
 to	Plant Trait Ontology	Ontology	http://browser.planteome.org/amigo	resource/to/to.md
 toxcast	ToxCast	DataSource		resource/toxcast/toxcast.md
 toxin	TOXIN	KnowledgeGraph	https://toxin-search.netlify.app/	resource/toxin/toxin.md
 trans	Pathogen Transmission Ontology	Ontology	https://github.com/DiseaseOntology/PathogenTransmissionOntology	resource/trans/trans.md
+translator	NCATS Translator Graph Releases	Aggregator	https://ui.transltr.io/	resource/translator/translator.md
 tto	Teleost taxonomy ontology	Ontology	https://github.com/phenoscape/teleost-taxonomy-ontology	resource/tto/tto.md
 txpo	Toxic Process Ontology	Ontology	https://toxpilot.nibiohn.go.jp/	resource/txpo/txpo.md
 ubkg	Unified Biomedical Knowledge Graph	KnowledgeGraph	https://ubkg.docs.xconsortia.org/	resource/ubkg/ubkg.md

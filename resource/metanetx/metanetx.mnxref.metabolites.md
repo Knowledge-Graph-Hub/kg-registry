@@ -10,9 +10,9 @@ product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
 secondary_source:
 - metanetx
 warnings:
-- File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+- File was not able to be retrieved when checked on 2026-01-15_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2026-01-06_ No Content-Length
+- File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
   accessing file

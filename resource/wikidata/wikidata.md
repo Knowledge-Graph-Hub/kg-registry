@@ -73,11 +73,11 @@ products:
   name: Wikidata Help Documentation
   product_url: https://www.wikidata.org/wiki/Wikidata:Introduction
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for accessing entity data in JSON format with content negotiation
@@ -94,6 +94,14 @@ products:
   - identifier-mappings
   - wikidata
   product_url: https://frink.apps.renci.org/identifier-mappings/sparql
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for ID Mappings
+  id: identifier-mappings.tpf
+  name: ID Mappings TPF
+  original_source:
+  - identifier-mappings
+  - wikidata
+  product_url: https://frink.apps.renci.org/ldf/identifier-mappings
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:
 - Wikidata

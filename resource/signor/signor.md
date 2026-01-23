@@ -1,14 +1,14 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- ber
 contacts:
 - category: Organization
   contact_details:
   - contact_type: url
     value: https://signor.uniroma2.it/contact.php
   label: SIGNOR Team (University of Rome Tor Vergata & Sapienza University of Rome)
-collection:
-- ber
 creation_date: '2025-08-12T00:00:00Z'
 description: "SIGNOR (SIGnaling Network Open Resource) is a manually curated repository\
   \ of experimentally supported, causal relationships between human proteins and other\
@@ -25,6 +25,7 @@ domains:
 - proteomics
 homepage_url: https://signor.uniroma2.it/
 id: signor
+infores_id: signor
 last_modified_date: '2025-08-23T00:00:00Z'
 layout: resource_detail
 license:
@@ -171,17 +172,26 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: KGX graph package for SIGNOR causal interactions (build signor_2025_Oct_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.signor.graph
+  name: Translator SIGNOR KGX Graph
+  original_source:
+  - signor
+  product_url: https://stars.renci.org/var/translator/releases/signor/2025_12_15/
+  secondary_source:
+  - translator
 publications:
 - id: https://doi.org/10.1093/nar/gkac883
   journal: Nucleic Acids Research
   preferred: true
   title: 'SIGNOR 3.0, the SIGnaling network open resource 3.0: 2022 update'
   year: '2022'
-infores_id: signor
 taxon:
 - NCBITaxon:9606
 ---
-
 # SIGNOR
 
 SIGNOR (SIGnaling Network Open Resource) is a curated knowledgebase capturing causally directed, signed interactions underlying human cellular signaling. Interactions link proteins and other entities (chemicals, stimuli, phenotypes, complexes, families) with effect, mechanism, residue context when available, evidence (PMIDs), and a relevance score. Data can be accessed via the web UI, downloadable latest stable release, and granular REST endpoints (`getData.php`, `getPathwayData.php`, and others for complexes and human-only subsets). Use CC-BY 4.0 licensed data with appropriate citation (Lo Surdo et al., 2022). When integrating, preserve directionality and sign to enable pathway and network inference.

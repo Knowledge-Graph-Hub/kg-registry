@@ -28,7 +28,7 @@ products:
   name: fma.owl
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

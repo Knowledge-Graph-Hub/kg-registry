@@ -59,11 +59,11 @@ products:
   - go-cam
   product_url: https://github.com/geneontology/go-cam
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/api/
@@ -82,6 +82,17 @@ products:
   original_source:
   - go-cam
   product_url: https://github.com/geneontology/minerva
+- category: GraphProduct
+  description: KGX graph package for GO-CAM models (build go_cam_2025-10-10_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.go_cam.graph
+  name: Translator GO-CAM KGX Graph
+  original_source:
+  - go-cam
+  product_url: https://stars.renci.org/var/translator/releases/go_cam/2025_12_15/
+  secondary_source:
+  - translator
 publications:
 - authors:
   - Paul D Thomas

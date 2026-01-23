@@ -325,13 +325,14 @@ products:
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 14976820
+  edge_count: 15356321
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -347,7 +348,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -387,6 +388,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -411,13 +414,14 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14976820
+  edge_count: 15356321
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -433,7 +437,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -473,6 +477,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -497,13 +503,14 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 14976820
+  edge_count: 15356321
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -519,7 +526,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -559,6 +566,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -584,12 +593,13 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 14976820
+  edge_count: 15356321
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -605,7 +615,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -645,6 +655,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -670,12 +682,13 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 14976820
+  edge_count: 15356321
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -691,7 +704,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -731,6 +744,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -808,13 +823,14 @@ products:
   - current_build
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14976820
+  edge_count: 15356321
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -830,7 +846,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -870,6 +886,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -894,13 +912,14 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14976820
+  edge_count: 15356321
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -916,7 +935,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -956,6 +975,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -980,13 +1001,14 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14976820
+  edge_count: 15356321
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -1002,7 +1024,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -1042,6 +1064,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -1066,13 +1090,14 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14976820
+  edge_count: 15356321
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
   node_categories:
   - biolink:AnatomicalEntity
   - biolink:BiologicalProcess
+  - biolink:Case
   - biolink:Cell
   - biolink:CellularComponent
   - biolink:ChemicalEntity
@@ -1088,7 +1113,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1369527
+  node_count: 1379605
   original_source:
   - phenio
   - alliance
@@ -1128,6 +1153,8 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_disease
+  - biolink:has_gene
   - biolink:has_mode_of_inheritance
   - biolink:has_participant
   - biolink:has_phenotype
@@ -1257,11 +1284,11 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
     when accessing file'
 publications:
 - authors:

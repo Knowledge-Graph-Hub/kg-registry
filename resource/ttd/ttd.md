@@ -275,11 +275,11 @@ products:
   name: TTD Help Documentation
   product_url: https://idrblab.org/ttd/help
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
@@ -304,6 +304,17 @@ products:
   product_url: https://zenodo.org/record/4077338
   secondary_source:
   - pharmkg
+- category: GraphProduct
+  description: KGX graph package for Therapeutic Target Database (build ttd_2024_03_30_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.ttd.graph
+  name: Translator TTD KGX Graph
+  original_source:
+  - ttd
+  product_url: https://stars.renci.org/var/translator/releases/ttd/2025_12_15/
+  secondary_source:
+  - translator
 publications:
 - authors:
   - Ying Zhou

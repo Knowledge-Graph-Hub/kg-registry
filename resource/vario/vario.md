@@ -30,19 +30,15 @@ products:
   format: owl
   id: vario.owl
   name: VariO main release in OWL
+  product_file_size: 497896
   product_url: http://purl.obolibrary.org/obo/vario.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
-    when accessing file'
 - category: OntologyProduct
   description: VariO in OBO format
   format: obo
   id: vario.obo
   name: VariO in OBO format
+  product_file_size: 110673
   product_url: http://purl.obolibrary.org/obo/vario.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
-    when accessing file'
 ---
 ## Description
 

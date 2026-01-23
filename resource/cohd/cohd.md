@@ -67,12 +67,23 @@ products:
   - cohd
   product_url: https://cohd.io/api
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 502 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 502 error
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 502 error
     when accessing file'
+- category: GraphProduct
+  description: KGX graph package for Columbia Open Health Data (build cohd_2024-11-25_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.cohd.graph
+  name: Translator COHD KGX Graph
+  original_source:
+  - cohd
+  product_url: https://stars.renci.org/var/translator/releases/cohd/2025_12_15/
+  secondary_source:
+  - translator
 repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 taxon:
 - NCBITaxon:9606

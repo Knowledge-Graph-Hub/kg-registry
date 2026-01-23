@@ -147,11 +147,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
     when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
@@ -167,11 +167,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
     when accessing file'
 publications:
 - id: https://doi.org/10.1093/nar/gky1151

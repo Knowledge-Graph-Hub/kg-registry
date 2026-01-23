@@ -29,14 +29,14 @@ products:
   format: owl
   id: fypo.owl
   name: fypo.owl
-  product_file_size: 45104824
+  product_file_size: 45104410
   product_url: http://purl.obolibrary.org/obo/fypo.owl
 - category: OntologyProduct
   description: Fission Yeast Phenotype Ontology in OBO format
   format: obo
   id: fypo.obo
   name: fypo.obo
-  product_file_size: 7126703
+  product_file_size: 7125836
   product_url: http://purl.obolibrary.org/obo/fypo.obo
 repository: https://github.com/pombase/fypo
 taxon:

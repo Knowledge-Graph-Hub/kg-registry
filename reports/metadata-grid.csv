@@ -141,6 +141,7 @@ drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
 drugmechdb,active,PASS
+drugrephub,active,PASS
 dsstox,active,PASS
 dsstoxdb,active,PASS
 duo,active,PASS
@@ -558,6 +559,7 @@ topmed,active,PASS
 toxcast,active,PASS
 toxin,active,PASS
 trans,active,PASS
+translator,active,PASS
 try,active,PASS
 ttd,active,PASS
 tto,active,PASS

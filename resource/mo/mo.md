@@ -29,7 +29,7 @@ products:
   name: mo.owl
   product_url: http://purl.obolibrary.org/obo/mo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
     when accessing file'
 ---
 ## Description

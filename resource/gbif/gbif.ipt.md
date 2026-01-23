@@ -7,9 +7,9 @@ id: gbif.ipt
 name: GBIF Integrated Publishing Toolkit (IPT)
 product_url: https://www.gbif.org/ipt
 warnings:
-- File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

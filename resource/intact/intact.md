@@ -486,11 +486,11 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
     when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
@@ -506,6 +506,17 @@ products:
   - hprd
   - intact
   - mint
+- category: GraphProduct
+  description: KGX graph package for IntAct molecular interactions (build intact_2025_08_28_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.intact.graph
+  name: Translator IntAct KGX Graph
+  original_source:
+  - intact
+  product_url: https://stars.renci.org/var/translator/releases/intact/2025_12_15/
+  secondary_source:
+  - translator
 ---
 # IntAct
 

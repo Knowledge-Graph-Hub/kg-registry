@@ -6,9 +6,9 @@ id: bio2rdf.biosearch
 name: BioSearch Semantic Search Engine
 product_url: https://biosemantics.org/biosearch
 warnings:
-- File was not able to be retrieved when checked on 2026-01-07_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-01-15_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-01-07_ Timeout connecting
   to URL
 layout: product_detail
 ---
