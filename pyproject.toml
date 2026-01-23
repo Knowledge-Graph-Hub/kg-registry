@@ -1,34 +1,42 @@
-[tool.poetry]
+[project]
 name = "kg-registry"
 version = "0.0.1"
 description = "A registry for knowlege graphs."
-authors = ["Harry Caufield <j.harry.caufield@gmail.com>", "Justin Reese <justaddcoffee@gmail.com>"]
-license = "GPL-3"
 readme = "README.md"
+license = { text = "GPL-3" }
+authors = [
+	{ name = "Harry Caufield", email = "j.harry.caufield@gmail.com" },
+	{ name = "Justin Reese", email = "justaddcoffee@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+	"linkml>=1.8.5",
+	"pyyaml>=6.0.2",
+	"jsonschema>=4.23.0",
+	"sparqlwrapper>=2.0.0",
+	"pyrsistent>=0.20.0",
+	"python-frontmatter>=1.1.0",
+	"yamllint>=1.35.1",
+	"ruamel-yaml>=0.18.10",
+	"duckdb>=1.1.0",
+	"oaklib>=0.6.0",
+	"pysolr>=3.9.0",
+	"rdflib>=7.5.0"
+]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-linkml = "^1.8.5"
-pyyaml = "^6.0.2"
-jsonschema = "^4.23.0"
-sparqlwrapper = "^2.0.0"
-pyrsistent = "^0.20.0"
-python-frontmatter = "^1.1.0"
-yamllint = "^1.35.1"
-ruamel-yaml = "^0.18.10"
-duckdb = "^1.1.0"
-oaklib = "^0.6.0"
-pysolr = "^3.9.0"
-rdflib = "^7.5.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = ">=7.1.2"
-setuptools = ">=65.5.0"
-tox = ">=3.25.1"
+[project.optional-dependencies]
+dev = [
+	"pytest>=7.1.2",
+	"setuptools>=65.5.0",
+	"tox>=3.25.1"
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = ["pytest>=7.1.2", "setuptools>=65.5.0", "tox>=3.25.1"]
 
 [tool.black]
 line-length = 100
