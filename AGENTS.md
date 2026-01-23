@@ -27,7 +27,7 @@ New date fields should be set to today's date.
 
 Don't fill out the `curators` field as this is specific to the KG-Registry team.
 
-You can use the existing Poetry environment to validate Resource or Product pages (precede any `make` command with `poetry run`).
+You can use the existing uv-managed environment to validate Resource or Product pages (precede any `make` command with `uv run`).
 
 Note that ToolResource is not a valid category.
 
