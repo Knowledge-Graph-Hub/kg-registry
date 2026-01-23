@@ -21,16 +21,14 @@ def _load_ingest_module():
 def _write_parquet_edges(path: Path):
     con = duckdb.connect(":memory:")
     # Minimal schema similar to QC edge report
-    con.execute(
-        """
+    con.execute("""
         CREATE TABLE edges AS
         SELECT * FROM (
             VALUES
               ('biolink:Gene','biolink:interacts_with','biolink:Gene','prov_a','infores:a', 10),
               ('biolink:Gene','biolink:related_to','biolink:Gene','prov_b','infores:b', 5)
         ) AS t(subject_category, predicate, object_category, provided_by, primary_knowledge_source, count);
-        """
-    )
+        """)
     con.execute(f"COPY edges TO '{path.as_posix()}' (FORMAT 'parquet')")
     con.close()
 
@@ -38,16 +36,14 @@ def _write_parquet_edges(path: Path):
 def _write_parquet_nodes(path: Path):
     con = duckdb.connect(":memory:")
     # Minimal schema similar to QC node report
-    con.execute(
-        """
+    con.execute("""
         CREATE TABLE nodes AS
         SELECT * FROM (
             VALUES
               ('biolink:Gene', 'NCBITaxon:9606', 8, 8.0),
               ('biolink:Disease', 'NCBITaxon:9606', 2, 2.0)
         ) AS t(category, in_taxon, count, count_1);
-        """
-    )
+        """)
     con.execute(f"COPY nodes TO '{path.as_posix()}' (FORMAT 'parquet')")
     con.close()
 

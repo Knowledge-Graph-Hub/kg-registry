@@ -1,3 +1,3 @@
 DB = ../../semantic-sql/db
 
-RUN = poetry run
+RUN = uv run

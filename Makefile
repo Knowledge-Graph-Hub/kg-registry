@@ -27,7 +27,7 @@
 
 ### Configuration
 
-RUN = poetry run
+RUN = uv run
 
 # All resource .md files
 # Note this includes pages for individual products, too

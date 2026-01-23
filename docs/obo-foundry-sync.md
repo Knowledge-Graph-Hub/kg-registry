@@ -18,13 +18,13 @@ The OBO Foundry sync feature automatically creates and updates KG-Registry resou
 
 ```bash
 # Sync all active OBO Foundry ontologies
-poetry run python util/sync_obo_foundry.py --verbose
+uv run python util/sync_obo_foundry.py --verbose
 
 # Test sync with limited number of ontologies
-poetry run python util/sync_obo_foundry.py --limit 5 --verbose
+uv run python util/sync_obo_foundry.py --limit 5 --verbose
 
 # Dry run to see what would be synced
-poetry run python util/sync_obo_foundry.py --dry-run --verbose
+uv run python util/sync_obo_foundry.py --dry-run --verbose
 ```
 
 ### Make Targets
