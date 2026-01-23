@@ -35,8 +35,8 @@ dev = [
 requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
-[tool.uv]
-dev-dependencies = ["pytest>=7.1.2", "setuptools>=65.5.0", "tox>=3.25.1"]
+[dependency-groups]
+dev = ["pytest>=7.1.2", "setuptools>=65.5.0", "tox>=3.25.1"]
 
 [tool.black]
 line-length = 100
