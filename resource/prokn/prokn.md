@@ -963,3 +963,10 @@ products:
   original_source:
   - prokn
   product_url: https://research.bioinformatics.udel.edu/ProKN/restapi
+
+---
+Protein Knowledge Network
+
+## Automated Evaluation
+
+- View the automated evaluation: [prokn automated evaluation](prokn_eval_automated.html)
