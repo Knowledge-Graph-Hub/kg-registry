@@ -37,10 +37,10 @@ license:
 name: UniBioMap
 products:
 - category: GraphProduct
-  description: Downloadable raw data for the UniBioMap knowledge graph.
+  description: Core UniBioMap graph edges file.
   format: csv
-  id: unibiomap.data
-  name: UniBioMap Data
+  id: unibiomap.links
+  name: UniBioMap Graph Links
   original_source:
   - unibiomap
   - hpa
@@ -79,9 +79,189 @@ products:
   - inchikey
   - uci
   - omim
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphProduct
+  description: UniBioMap compound entity descriptions.
+  format: json
+  id: unibiomap.compound_desc
+  name: UniBioMap Compound Descriptions
   secondary_source:
   - unibiomap
-  product_url: https://zhanggroup.org/UniBioMap/index.html?page=download.html
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json
+- category: GraphProduct
+  description: UniBioMap protein entity descriptions.
+  format: json
+  id: unibiomap.protein_desc
+  name: UniBioMap Protein Descriptions
+  secondary_source:
+  - unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json
+- category: GraphProduct
+  description: UniBioMap disease entity descriptions.
+  format: json
+  id: unibiomap.disease_desc
+  name: UniBioMap Disease Descriptions
+  secondary_source:
+  - unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
+- category: GraphProduct
+  description: UniBioMap Gene Ontology entity descriptions.
+  format: json
+  id: unibiomap.go_desc
+  name: UniBioMap GO Descriptions
+  original_source:
+  - go
+  secondary_source:
+  - unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
+- category: GraphProduct
+  description: UniBioMap pathway entity descriptions.
+  format: json
+  id: unibiomap.pathway_desc
+  name: UniBioMap Pathway Descriptions
+  secondary_source:
+  - unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json
+- category: GraphProduct
+  description: UniBioMap phenotype entity descriptions.
+  format: json
+  id: unibiomap.phenotype_desc
+  name: UniBioMap Phenotype Descriptions
+  secondary_source:
+  - unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json
 - category: GraphicalInterface
   description: Web interface for browsing UniBioMap resources and documentation.
   format: http
