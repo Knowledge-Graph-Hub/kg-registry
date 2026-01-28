@@ -37,7 +37,12 @@ products:
   name: Drug Repurposing Hub Drug Information TSV
   product_url: https://repo-hub.broadinstitute.org/public/data/repo-drug-annotation-20200324.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: Error connecting
+  - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
+    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
+    retries exceeded with url_ /public/data/repo-drug-annotation-20200324.txt (Caused
+    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -51,7 +56,12 @@ products:
   name: Drug Repurposing Hub Sample Information TSV
   product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: Error connecting
+  - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
+    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
+    retries exceeded with url_ /public/data/repo-sample-annotation-20240610.txt (Caused
+    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate

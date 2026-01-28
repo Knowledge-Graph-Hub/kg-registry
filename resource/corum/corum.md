@@ -38,7 +38,7 @@ products:
   name: CORUM All Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -50,12 +50,12 @@ products:
     issuer certificate (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-01-23: Error connecting
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -71,7 +71,7 @@ products:
   name: CORUM Core Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -83,12 +83,12 @@ products:
     issuer certificate (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-01-23: Error connecting
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -104,7 +104,7 @@ products:
   name: CORUM PSI-MI
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -116,12 +116,12 @@ products:
     issuer certificate (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-01-23: Error connecting
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -136,7 +136,7 @@ products:
   name: CORUM MITAB
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -148,12 +148,12 @@ products:
     issuer certificate (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-08_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
+  - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-01-23: Error connecting
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local

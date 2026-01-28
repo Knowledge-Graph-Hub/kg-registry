@@ -29,8 +29,8 @@ products:
   name: nmr.owl
   product_url: http://purl.obolibrary.org/obo/nmr.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 ---
 ## Description
 

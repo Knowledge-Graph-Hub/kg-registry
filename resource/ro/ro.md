@@ -30,7 +30,7 @@ products:
   format: owl
   id: ro.owl
   name: Relation Ontology
-  product_file_size: 131164
+  product_file_size: 132025
   product_url: http://purl.obolibrary.org/obo/ro.owl
 - category: OntologyProduct
   description: The obo edition is less expressive than the OWL, and has imports merged
@@ -38,14 +38,14 @@ products:
   format: obo
   id: ro.obo
   name: Relation Ontology in obo format
-  product_file_size: 83438
+  product_file_size: 84333
   product_url: http://purl.obolibrary.org/obo/ro.obo
 - category: OntologyProduct
   description: Relation Ontology in obojson format
   format: json
   id: ro.json
   name: Relation Ontology in obojson format
-  product_file_size: 113698
+  product_file_size: 114142
   product_url: http://purl.obolibrary.org/obo/ro.json
 - category: OntologyProduct
   description: Minimal subset intended to work with BFO-classes
@@ -59,14 +59,14 @@ products:
   format: owl
   id: ro.ro-base.owl
   name: RO base ontology
-  product_file_size: 94729
+  product_file_size: 97499
   product_url: http://purl.obolibrary.org/obo/ro/ro-base.owl
 - category: OntologyProduct
   description: For use in ecology and environmental science
   format: owl
   id: ro.subsets.ro-interaction.owl
   name: Interaction relations
-  product_file_size: 62037
+  product_file_size: 64252
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl
 - category: OntologyProduct
   description: Ecology subset
@@ -75,7 +75,7 @@ products:
   name: Ecology subset
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: For use in neuroscience

@@ -69,13 +69,13 @@ products:
   name: HPA Normal Tissue Data
   product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Pathology data including cancer tissue expression and patient survival
@@ -85,15 +85,15 @@ products:
   name: HPA Pathology Data
   product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Subcellular localization data based on immunofluorescent staining of
@@ -103,15 +103,15 @@ products:
   name: HPA Subcellular Location Data
   product_url: https://www.proteinatlas.org/download/subcellular_location.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: RNA expression data in human tissues based on transcriptomic analysis
@@ -120,13 +120,13 @@ products:
   name: HPA RNA Tissue Expression Data
   product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: RNA expression data in human cell lines based on RNA-seq analysis
@@ -135,15 +135,15 @@ products:
   name: HPA RNA Cell Line Expression Data
   product_url: https://www.proteinatlas.org/download/rna_celline.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Single cell expression data from human tissues based on scRNA-seq analysis
@@ -152,13 +152,13 @@ products:
   name: HPA Single Cell RNA Expression Data
   product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Brain-specific expression data including regional and cellular distribution
@@ -167,13 +167,13 @@ products:
   name: HPA Brain RNA Expression Data
   product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Blood protein expression data from healthy individuals and disease
@@ -183,13 +183,13 @@ products:
   name: HPA Blood Protein Data
   product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Immune cell expression data from single cell transcriptomics studies
@@ -198,15 +198,15 @@ products:
   name: HPA Immune Cell RNA Data
   product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: Programmatic access to individual protein entries in XML format via
@@ -460,6 +460,186 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 publications:
 - authors:
   - Uhlén M

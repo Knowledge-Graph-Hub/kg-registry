@@ -11,9 +11,9 @@ original_source:
 - loinc
 product_url: https://loinc.org/download/loinc-complete/
 warnings:
-- File was not able to be retrieved when checked on 2026-01-15_ HTTP 503 error when
+- File was not able to be retrieved when checked on 2026-01-23_ HTTP 503 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-01-07_ HTTP 503 error when
+- File was not able to be retrieved when checked on 2026-01-15_ HTTP 503 error when
   accessing file
 layout: product_detail
 ---

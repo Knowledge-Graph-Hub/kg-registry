@@ -36,10 +36,8 @@ products:
   format: owl
   id: tto.owl
   name: tto.owl
+  product_file_size: 3526608
   product_url: http://purl.obolibrary.org/obo/tto.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: Timeout connecting
-    to URL'
 repository: https://github.com/phenoscape/teleost-taxonomy-ontology
 taxon:
 - NCBITaxon:32443

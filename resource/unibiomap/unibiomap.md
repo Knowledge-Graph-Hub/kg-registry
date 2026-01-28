@@ -79,6 +79,7 @@ products:
   - inchikey
   - uci
   - omim
+  product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
 - category: GraphProduct
   description: Auxiliary UniBioMap graph annotations and metadata.
@@ -123,6 +124,7 @@ products:
   - inchikey
   - uci
   - omim
+  product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
 - category: GraphProduct
   description: Predicted UniBioMap graph edges with confidence scores.
@@ -167,6 +169,7 @@ products:
   - inchikey
   - uci
   - omim
+  product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
 - category: GraphProduct
   description: Full unfiltered UniBioMap predicted graph edges file.
@@ -211,31 +214,41 @@ products:
   - inchikey
   - uci
   - omim
+  product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphProduct
   description: UniBioMap compound entity descriptions.
   format: json
   id: unibiomap.compound_desc
   name: UniBioMap Compound Descriptions
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json
   secondary_source:
   - unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: UniBioMap protein entity descriptions.
   format: json
   id: unibiomap.protein_desc
   name: UniBioMap Protein Descriptions
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json
   secondary_source:
   - unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: UniBioMap disease entity descriptions.
   format: json
   id: unibiomap.disease_desc
   name: UniBioMap Disease Descriptions
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
   secondary_source:
   - unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: UniBioMap Gene Ontology entity descriptions.
   format: json
@@ -243,25 +256,34 @@ products:
   name: UniBioMap GO Descriptions
   original_source:
   - go
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   secondary_source:
   - unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: UniBioMap pathway entity descriptions.
   format: json
   id: unibiomap.pathway_desc
   name: UniBioMap Pathway Descriptions
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json
   secondary_source:
   - unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: UniBioMap phenotype entity descriptions.
   format: json
   id: unibiomap.phenotype_desc
   name: UniBioMap Phenotype Descriptions
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json
   secondary_source:
   - unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: Web interface for browsing UniBioMap resources and documentation.
   format: http

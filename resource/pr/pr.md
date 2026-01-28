@@ -44,8 +44,8 @@ products:
   name: pro_nonreasoned.owl
   product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: PRO without reasoning applied, OBO format.
   format: obo
@@ -53,8 +53,8 @@ products:
   name: pro_nonreasoned.obo
   product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.

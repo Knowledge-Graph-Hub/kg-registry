@@ -30,7 +30,7 @@ products:
   format: owl
   id: fbbi.owl
   name: fbbi.owl
-  product_file_size: 44554
+  product_file_size: 630985
   product_url: http://purl.obolibrary.org/obo/fbbi.owl
 repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
 ---

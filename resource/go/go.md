@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -108,7 +108,7 @@ products:
   format: owl
   id: go.snapshot.go.owl
   name: GO (OWL edition), daily snapshot release
-  product_file_size: 129226316
+  product_file_size: 129057533
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -116,7 +116,7 @@ products:
   format: obo
   id: go.snapshot.go.obo
   name: GO (OBO Format edition), daily snapshot release
-  product_file_size: 36317597
+  product_file_size: 36289217
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1567,6 +1567,201 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphProduct
+  description: UniBioMap Gene Ontology entity descriptions.
+  format: json
+  id: unibiomap.go_desc
+  name: UniBioMap GO Descriptions
+  original_source:
+  - go
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
+  secondary_source:
+  - unibiomap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+    header found'
 - category: MappingProduct
   compression: gzip
   description: Gene to Gene Ontology mapping data providing functional annotations
@@ -1720,11 +1915,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-07_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

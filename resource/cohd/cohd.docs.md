@@ -9,9 +9,9 @@ original_source:
 - cohd
 product_url: https://cohd.io/api
 warnings:
-- File was not able to be retrieved when checked on 2026-01-15_ HTTP 502 error when
+- File was not able to be retrieved when checked on 2026-01-23_ HTTP 502 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-01-07_ HTTP 502 error when
+- File was not able to be retrieved when checked on 2026-01-15_ HTTP 502 error when
   accessing file
 layout: product_detail
 ---

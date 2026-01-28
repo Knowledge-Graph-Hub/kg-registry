@@ -2,12 +2,12 @@
 activity_status: active
 category: Aggregator
 creation_date: '2025-08-12T00:00:00Z'
-description: "PhosphoSitePlus is a comprehensive resource for experimentally validated\
-  \ post-translational modifications (PTMs) with emphasis on phosphorylation, ubiquitination,\
-  \ acetylation, methylation and more. It aggregates curated site-specific modification\
-  \ data, kinase\u2013substrate relationships, protein domains, mutation impact annotations,\
-  \ sequence motifs, and pathway/interaction context to support signaling, proteomics,\
-  \ and systems biology research."
+description: PhosphoSitePlus is a comprehensive resource for experimentally validated
+  post-translational modifications (PTMs) with emphasis on phosphorylation, ubiquitination,
+  acetylation, methylation and more. It aggregates curated site-specific modification
+  data, kinase–substrate relationships, protein domains, mutation impact annotations,
+  sequence motifs, and pathway/interaction context to support signaling, proteomics,
+  and systems biology research.
 domains:
 - proteomics
 - biomedical
@@ -19,15 +19,15 @@ layout: resource_detail
 name: PhosphoSitePlus
 products:
 - category: GraphicalInterface
-  description: "Web portal for browsing PTM sites, kinase\u2013substrate relationships,\
-    \ motifs, mutations and protein pages"
+  description: Web portal for browsing PTM sites, kinase–substrate relationships,
+    motifs, mutations and protein pages
   format: http
   id: phosphositeplus.portal
   name: PhosphoSitePlus Portal
   product_url: https://www.phosphosite.org/
 - category: Product
-  description: "Bulk data downloads (PTM site tables, kinase\u2013substrate data,\
-    \ regulatory sites, disease-associated mutations) requiring agreement to terms"
+  description: Bulk data downloads (PTM site tables, kinase–substrate data, regulatory
+    sites, disease-associated mutations) requiring agreement to terms
   format: http
   id: phosphositeplus.downloads
   name: PhosphoSitePlus Downloads
@@ -151,6 +151,186 @@ products:
   product_url: https://kinace.kinametrix.com/
   secondary_source:
   - kinace
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 publications:
 - doi: 10.1093/nar/gku1267
   id: doi:10.1093/nar/gku1267

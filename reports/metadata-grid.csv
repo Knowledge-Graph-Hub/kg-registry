@@ -109,6 +109,7 @@ creeds,active,PASS
 cro,active,PASS
 ctd,active,PASS
 cteno,active,PASS
+ctkp,active,PASS
 cto,active,PASS
 ctrp,active,PASS
 cvdo,active,PASS
@@ -210,11 +211,13 @@ gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
 gene-ontology,active,PASS
+gene2phenotype,active,PASS
 genebass,active,PASS
 genecards,active,PASS
 genemania,active,PASS
 genepio,active,PASS
 genetics-kp,active,PASS
+geneticskp,active,PASS
 geno,active,PASS
 genomickb,active,PASS
 genophenoenvo-kg,active,PASS
@@ -570,6 +573,7 @@ ubkg,active,PASS
 uf-okn,active,PASS
 ukbiobank,active,PASS
 umls,active,PASS
+unibiomap,active,PASS
 unichem,active,PASS
 unii,active,PASS
 uniprot,active,PASS

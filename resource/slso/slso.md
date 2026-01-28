@@ -47,8 +47,8 @@ products:
   name: slso.json
   product_url: http://purl.obolibrary.org/obo/slso.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Includes axioms linking to other ontologies, but no imports of those
     ontologies
@@ -57,8 +57,8 @@ products:
   name: slso-base.owl
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 repository: https://github.com/nasa/LSDAO
 ---
 ## Description

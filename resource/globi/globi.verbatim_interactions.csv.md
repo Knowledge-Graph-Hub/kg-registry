@@ -8,9 +8,9 @@ id: globi.verbatim_interactions.csv
 name: GloBI verbatim interactions (CSV)
 product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-01-15_ No Content-Length
+- File was not able to be retrieved when checked on 2026-01-23_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2026-01-07_ No Content-Length
+- File was not able to be retrieved when checked on 2026-01-15_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
   to URL

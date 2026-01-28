@@ -24,11 +24,13 @@ atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource
 automat	Automat	Aggregator	https://robokop.renci.org/api-docs/docs/category/automat	resource/automat/automat.md
 bacdive	BacDive	DataSource	https://bacdive.dsmz.de/	resource/bacdive/bacdive.md
 bactotraits	BactoTraits	DataSource	https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53	resource/bactotraits/bactotraits.md
+batman	Batman	DataSource		resource/batman/batman.md
 bcgo	Beta Cell Genomics Ontology	Ontology	https://github.com/obi-bcgo/bcgo	resource/bcgo/bcgo.md
 bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOntologies/bco	resource/bco/bco.md
 bigg	BiGG Models	DataSource	http://bigg.ucsd.edu/	resource/bigg/bigg.md
 bila	Bilateria anatomy	Ontology	http://4dx.embl.de/4DXpress	resource/bila/bila.md
 bind	Biomolecular Interaction Network Database (BIND)	DataSource	http://bind.ca	resource/bind/bind.md
+bioblinker	Bioblinker	DataSource		resource/bioblinker/bioblinker.md
 biobricks-aopwiki	BioBricks AOP-Wiki	KnowledgeGraph	https://github.com/biobricks-ai/aopwikirdf-kg	resource/biobricks-aopwiki/biobricks-aopwiki.md
 biobricks-ice	BioBricks ICE	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-ice/biobricks-ice.md
 biobricks-mesh	BioBricks MeSH	KnowledgeGraph	https://github.com/biobricks-ai/mesh-kg	resource/biobricks-mesh/biobricks-mesh.md
@@ -86,6 +88,7 @@ cmo	Clinical measurement ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/se
 cob	Core Ontology for Biology and Biomedicine	Ontology	https://obofoundry.org/COB/	resource/cob/cob.md
 colao	Coleoptera Anatomy Ontology (COLAO)	Ontology	https://github.com/insect-morphology/colao	resource/colao/colao.md
 compartments	COMPARTMENTS	DataSource		resource/compartments/compartments.md
+compath	Compath	DataSource		resource/compath/compath.md
 complexportal	Complex Portal	DataSource	https://www.ebi.ac.uk/complexportal/home	resource/complexportal/complexportal.md
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
 connectivitymap	Connectivity Map	DataSource	https://www.broadinstitute.org/connectivity-map-cmap	resource/connectivitymap/connectivitymap.md
@@ -210,6 +213,7 @@ habronattus	Habronattus courtship	Ontology	http://www.mesquiteproject.org/ontolo
 hancestro	Human Ancestry Ontology	Ontology	https://ebispot.github.io/hancestro/	resource/hancestro/hancestro.md
 hao	Hymenoptera Anatomy Ontology	Ontology	http://hymao.org	resource/hao/hao.md
 harmonizome-kg	Harmonizome-KG	KnowledgeGraph	https://maayanlab.cloud/harmonizome-kg/	resource/harmonizome-kg/harmonizome-kg.md
+hijazi20	Hijazi20	DataSource		resource/hijazi20/hijazi20.md
 hom	Homology Ontology	Ontology	https://github.com/BgeeDB/homology-ontology	resource/hom/hom.md
 hprd	HPRD	Aggregator	http://www.hprd.org/	resource/hprd/hprd.md
 hra-kg	Human Reference Atlas Knowledge Graph (HRA KG)	KnowledgeGraph	https://apps.humanatlas.io/dashboard/data	resource/hra-kg/hra-kg.md
@@ -231,6 +235,7 @@ iev	Event (INOH pathway ontology)	Ontology	http://www.inoh.org	resource/iev/iev.
 ikraph	iKraph	KnowledgeGraph	https://biokde.insilicom.com/	resource/ikraph/ikraph.md
 imodulondb	iModulonDB	DataSource	https://imodulondb.org/	resource/imodulondb/imodulondb.md
 imr	Molecule role (INOH Protein name/family name ontology)	Ontology	http://www.inoh.org	resource/imr/imr.md
+inchikey	Inchikey	DataSource		resource/inchikey/inchikey.md
 indra	INDRA	Aggregator	https://www.indra.bio/	resource/indra/indra.md
 ino	Interaction Network Ontology	Ontology	https://github.com/INO-ontology/ino	resource/ino/ino.md
 insight	INSIGHT	KnowledgeGraph	https://insight-project.org/	resource/insight/insight.md
@@ -465,6 +470,8 @@ tao	Teleost Anatomy Ontology	Ontology	http://wiki.phenoscape.org/wiki/Teleost_An
 tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarbase/tarbase.md
 taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank	resource/taxrank/taxrank.md
 tbkg	Tumor-Biomarker Knowledge Graph	KnowledgeGraph	https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full	resource/tbkg/tbkg.md
+tcdb	Tcdb	DataSource		resource/tcdb/tcdb.md
+tcm-bank	Tcm-bank	DataSource		resource/tcm-bank/tcm-bank.md
 tera	TERA: Toxicological Effect and Risk Assessment Knowledge Graph	KnowledgeGraph	https://niva-knowledge-graph.github.io/TERA/	resource/tera/tera.md
 text-mining-kp	Text Mining KP	KnowledgeGraph	https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap	resource/text-mining-kp/text-mining-kp.md
 tgma	Mosquito gross anatomy ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tgma/tgma.md
@@ -477,8 +484,10 @@ translator	NCATS Translator Graph Releases	Aggregator	https://ui.transltr.io/	re
 tto	Teleost taxonomy ontology	Ontology	https://github.com/phenoscape/teleost-taxonomy-ontology	resource/tto/tto.md
 txpo	Toxic Process Ontology	Ontology	https://toxpilot.nibiohn.go.jp/	resource/txpo/txpo.md
 ubkg	Unified Biomedical Knowledge Graph	KnowledgeGraph	https://ubkg.docs.xconsortia.org/	resource/ubkg/ubkg.md
+uci	Uci	DataSource		resource/uci/uci.md
 uf-okn	UF-OKN	KnowledgeGraph	https://ufokn.com/	resource/uf-okn/uf-okn.md
 ukbiobank	UK Biobank	DataSource	https://www.ukbiobank.ac.uk/	resource/ukbiobank/ukbiobank.md
+unibiomap	UniBioMap	KnowledgeGraph	https://zhanggroup.org/UniBioMap/	resource/unibiomap/unibiomap.md
 uo	Units of measurement ontology	Ontology	https://github.com/bio-ontology-research-group/unit-ontology	resource/uo/uo.md
 upa	Unipathway	Ontology	https://github.com/geneontology/unipathway	resource/upa/upa.md
 upheno	Unified Phenotype Ontology (uPheno)	Ontology	https://github.com/obophenotype/upheno	resource/upheno/upheno.md

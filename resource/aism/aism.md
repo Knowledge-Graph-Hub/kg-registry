@@ -32,7 +32,7 @@ products:
   format: owl
   id: aism.owl
   name: aism.owl
-  product_file_size: 1892677
+  product_file_size: 1374218
   product_url: http://purl.obolibrary.org/obo/aism.owl
 - category: OntologyProduct
   description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
@@ -40,7 +40,7 @@ products:
   format: obo
   id: aism.obo
   name: aism.obo
-  product_file_size: 1205046
+  product_file_size: 893828
   product_url: http://purl.obolibrary.org/obo/aism.obo
 - category: OntologyProduct
   description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
@@ -48,7 +48,7 @@ products:
   format: json
   id: aism.json
   name: aism.json
-  product_file_size: 1272055
+  product_file_size: 927149
   product_url: http://purl.obolibrary.org/obo/aism.json
 repository: https://github.com/insect-morphology/aism
 ---

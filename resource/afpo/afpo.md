@@ -44,8 +44,8 @@ products:
   name: AfPO (OBO edition)
   product_url: http://purl.obolibrary.org/obo/afpo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
@@ -53,8 +53,8 @@ products:
   name: AfPO (obographs JSON edition)
   product_url: http://purl.obolibrary.org/obo/afpo.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-23: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
+    to URL'
 repository: https://github.com/h3abionet/afpo
 ---
 ## Description
