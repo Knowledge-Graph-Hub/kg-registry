@@ -29,27 +29,487 @@ name: STRING
 products:
 - category: GraphProduct
   compression: gzip
-  description: Complete protein-protein interaction network data with confidence scores
-  format: tsv
+  description: protein network data (full network, scored links between proteins)
+  format: txt
   id: string.protein.links
   name: STRING Protein Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
   product_file_size: 138154280240
   product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
-  description: Detailed protein network data including subscores per evidence channel
-  format: tsv
+  description: protein network data (full network, incl. subscores per channel)
+  format: txt
   id: string.protein.links.detailed
   name: STRING Protein Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
   product_file_size: 203534412387
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
-  description: Complete database dump containing all network nodes, edges, and scores
+  description: "protein network data (full network, incl. distinction: direct vs. interologs)"
+  format: txt
+  id: string.protein.links.full
+  name: STRING Protein Links Full
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, scored links between proteins)
+  format: txt
+  id: string.protein.physical.links
+  name: STRING Protein Physical Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, incl. subscores per channel)
+  format: txt
+  id: string.protein.physical.links.detailed
+  name: STRING Protein Physical Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: "protein network data (physical subnetwork, incl. distinction: direct vs. interologs)"
+  format: txt
+  id: string.protein.physical.links.full
+  name: STRING Protein Physical Links Full
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores between orthologous groups
+  format: txt
+  id: string.cog.links
+  name: STRING COG Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores (incl. subscores per channel)
+  format: txt
+  id: string.cog.links.detailed
+  name: STRING COG Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: list of STRING proteins incl. their display names and descriptions
+  format: txt
+  id: string.protein.info
+  name: STRING Protein Info
+  product_url: https://stringdb-downloads.org/download/protein.info.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: sequences of the proteins in STRING (can be used as a BLAST db)
+  format: fasta
+  id: string.protein.sequences
+  name: STRING Protein Sequences
+  product_url: https://stringdb-downloads.org/download/protein.sequences.v12.0.fa.gz
+- category: Product
+  compression: gzip
+  description: "aliases for STRING proteins: locus names, accessions, descriptions"
+  format: txt
+  id: string.protein.aliases
+  name: STRING Protein Aliases
+  product_url: https://stringdb-downloads.org/download/protein.aliases.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: SW alignment scores between proteins within each STRING species
+  format: txt
+  id: string.protein.homology
+  name: STRING Protein Homology
+  product_url: https://stringdb-downloads.org/download/protein.homology.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: list of terms associated with proteins used in the STRING enrichment
+  format: txt
+  id: string.protein.enrichment.terms
+  name: STRING Protein Enrichment Terms
+  product_url: https://stringdb-downloads.org/download/protein.enrichment.terms.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: hierarchical STRING clusters and their proteins
+  format: txt
+  id: string.clusters.proteins
+  name: STRING Clusters Proteins
+  product_url: https://stringdb-downloads.org/download/clusters.proteins.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: hierarchical STRING clusters annotations
+  format: txt
+  id: string.clusters.info
+  name: STRING Clusters Info
+  product_url: https://stringdb-downloads.org/download/clusters.info.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: hierarchical STRING clusters tree (represented as child-parent relationship)
+  format: txt
+  id: string.clusters.tree
+  name: STRING Clusters Tree
+  product_url: https://stringdb-downloads.org/download/clusters.tree.v12.0.txt.gz
+- category: Product
+  description: cross-species (aligned) eukaryotic protein network embeddings
+  format: hdf5
+  id: string.protein.network.embeddings
+  name: STRING Protein Network Embeddings
+  product_url: https://stringdb-downloads.org/download/protein.network.embeddings.v12.0.h5
+- category: Product
+  description: ProtT5 eukaryotic protein sequence embeddings
+  format: hdf5
+  id: string.protein.sequence.embeddings
+  name: STRING Protein Sequence Embeddings
+  product_url: https://stringdb-downloads.org/download/protein.sequence.embeddings.v12.0.h5
+- category: Product
+  compression: gzip
+  description: hierarchical eggNOG orthologous groups and their proteins
+  format: txt
+  id: string.protein.orthology
+  name: STRING Protein Orthology
+  product_url: https://stringdb-downloads.org/download/protein.orthology.v12.0.txt.gz
+- category: Product
+  compression: gzip
+  description: LCA orthologous groups (COGs,NOGs,KOGs,...) and their proteins
+  format: txt
+  id: string.cog.mappings
+  name: STRING COG Mappings
+  product_url: https://stringdb-downloads.org/download/COG.mappings.v12.0.txt.gz
+- category: Product
+  description: organisms in STRING
+  format: txt
+  id: string.species
+  name: STRING Species List
+  product_url: https://stringdb-downloads.org/download/species.v12.0.txt
+- category: Product
+  description: STRING tree of species
+  format: txt
+  id: string.species.tree
+  name: STRING Species Tree
+  product_url: https://stringdb-downloads.org/download/species.tree.v12.0.txt
+- category: DocumentationProduct
+  description: STRING database schema
+  format: pdf
+  id: string.database.schema
+  name: STRING Database Schema
+  product_url: https://stringdb-downloads.org/download/database.schema.v12.0.pdf
+- category: Product
+  compression: gzip
+  description: "full database, part I: the players (proteins, species, COGs,...)"
+  id: string.database.items
+  name: STRING Database Items Schema
+  product_url: https://stringdb-downloads.org/download/items_schema.v12.0.sql.gz
+- category: GraphProduct
+  compression: gzip
+  description: "full database, part II: the networks (nodes, edges, scores,...)"
   id: string.database
-  name: STRING Database Dump
+  name: STRING Database Network Schema
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  compression: gzip
+  description: "full database, part III: interaction evidence (excluding license-restricted data)"
+  id: string.database.evidence
+  name: STRING Database Evidence Schema
+  product_url: https://stringdb-downloads.org/download/evidence_schema.v12.0.sql.gz
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to STRING data
   id: string.api
