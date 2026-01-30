@@ -62,22 +62,22 @@ products:
   name: DIP Data Downloads
   product_url: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
-    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2026-01-06_ Error connecting
-    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
-    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2026-01-23_ Error connecting
     to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
     exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2026-01-28: Error connecting
+  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
+    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
+    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
+  - File was not able to be retrieved when checked on 2026-01-28_ Error connecting
+    to URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries
+    exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2026-01-30: Error connecting
     to URL: HTTPSConnectionPool(host=''dip.doe-mbi.ucla.edu'', port=443): Max retries
     exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -96,6 +96,385 @@ products:
   - hprd
   - intact
   - mint
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (full network, scored links between proteins)
+  format: txt
+  id: string.protein.links
+  name: STRING Protein Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 138154280240
+  product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (full network, incl. subscores per channel)
+  format: txt
+  id: string.protein.links.detailed
+  name: STRING Protein Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 203534412387
+  product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'protein network data (full network, incl. distinction: direct vs.
+    interologs)'
+  format: txt
+  id: string.protein.links.full
+  name: STRING Protein Links Full
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 214269334954
+  product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, scored links between proteins)
+  format: txt
+  id: string.protein.physical.links
+  name: STRING Protein Physical Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 11867396121
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, incl. subscores per channel)
+  format: txt
+  id: string.protein.physical.links.detailed
+  name: STRING Protein Physical Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 14859366689
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'protein network data (physical subnetwork, incl. distinction: direct
+    vs. interologs)'
+  format: txt
+  id: string.protein.physical.links.full
+  name: STRING Protein Physical Links Full
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 15528028374
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores between orthologous groups
+  format: txt
+  id: string.cog.links
+  name: STRING COG Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 185338269
+  product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores (incl. subscores per channel)
+  format: txt
+  id: string.cog.links.detailed
+  name: STRING COG Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 250279091
+  product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'full database, part II: the networks (nodes, edges, scores,...)'
+  id: string.database
+  name: STRING Database Network Schema
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 281505096430
+  product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 publications:
 - id: https://doi.org/10.1093/nar/30.1.303
   title: 'DIP, the Database of Interacting Proteins: a research tool for studying

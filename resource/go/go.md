@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -63,7 +63,7 @@ products:
   format: owl
   id: go.go-base.owl
   name: GO Base Module
-  product_file_size: 160571191
+  product_file_size: 160299649
   product_url: http://purl.obolibrary.org/obo/go/go-base.owl
 - category: OntologyProduct
   description: As go-plus.owl, in obographs json format
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -118,6 +118,385 @@ products:
   name: GO (OBO Format edition), daily snapshot release
   product_file_size: 36289217
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (full network, scored links between proteins)
+  format: txt
+  id: string.protein.links
+  name: STRING Protein Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 138154280240
+  product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (full network, incl. subscores per channel)
+  format: txt
+  id: string.protein.links.detailed
+  name: STRING Protein Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 203534412387
+  product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'protein network data (full network, incl. distinction: direct vs.
+    interologs)'
+  format: txt
+  id: string.protein.links.full
+  name: STRING Protein Links Full
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 214269334954
+  product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, scored links between proteins)
+  format: txt
+  id: string.protein.physical.links
+  name: STRING Protein Physical Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 11867396121
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, incl. subscores per channel)
+  format: txt
+  id: string.protein.physical.links.detailed
+  name: STRING Protein Physical Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 14859366689
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'protein network data (physical subnetwork, incl. distinction: direct
+    vs. interologs)'
+  format: txt
+  id: string.protein.physical.links.full
+  name: STRING Protein Physical Links Full
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 15528028374
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores between orthologous groups
+  format: txt
+  id: string.cog.links
+  name: STRING COG Links
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 185338269
+  product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores (incl. subscores per channel)
+  format: txt
+  id: string.cog.links.detailed
+  name: STRING COG Links Detailed
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 250279091
+  product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'full database, part II: the networks (nodes, edges, scores,...)'
+  id: string.database
+  name: STRING Database Network Schema
+  original_source:
+  - biocyc
+  - biogrid
+  - cog
+  - compartments
+  - dip
+  - diseases
+  - eggnog
+  - ensembl
+  - flybase
+  - geo
+  - go
+  - hprd
+  - hgnc
+  - intact
+  - interpro
+  - kegg
+  - mint
+  - omim
+  - pdb
+  - pfam
+  - proteomehd
+  - pubmedcentral
+  - reactome
+  - refseq
+  - sgd
+  - simap
+  - smart
+  - swissmodel
+  - tissues
+  - uniprot
+  - wikipathways
+  - wormbase
+  - progenomes
+  product_file_size: 281505096430
+  product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -1143,6 +1522,186 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - tcm-bank
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - bioblinker
+  - hijazi20
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - uci
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
@@ -1568,188 +2127,6 @@ products:
   secondary_source:
   - indra
 - category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - tcm-bank
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - bioblinker
-  - hijazi20
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - uci
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - tcm-bank
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - bioblinker
-  - hijazi20
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - uci
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - tcm-bank
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - bioblinker
-  - hijazi20
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - uci
-  - omim
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
-    to URL'
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - tcm-bank
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - bioblinker
-  - hijazi20
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - uci
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-- category: GraphProduct
   description: UniBioMap Gene Ontology entity descriptions.
   format: json
   id: unibiomap.go_desc
@@ -1760,7 +2137,9 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-28_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
     header found'
 - category: MappingProduct
   compression: gzip
@@ -1915,11 +2294,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

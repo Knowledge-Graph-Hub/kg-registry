@@ -42,6 +42,7 @@ original_source:
 - inchikey
 - uci
 - omim
+product_file_size: 2484982268
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
 layout: product_detail
 ---

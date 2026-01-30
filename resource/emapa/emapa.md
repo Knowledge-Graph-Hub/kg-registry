@@ -30,14 +30,14 @@ products:
   format: owl
   id: emapa.owl
   name: emapa.owl
-  product_file_size: 342224
+  product_file_size: 333676
   product_url: http://purl.obolibrary.org/obo/emapa.owl
 - category: OntologyProduct
   description: Mouse Developmental Anatomy Ontology in OBO format
   format: obo
   id: emapa.obo
   name: emapa.obo
-  product_file_size: 193122
+  product_file_size: 193355
   product_url: http://purl.obolibrary.org/obo/emapa.obo
 repository: https://github.com/obophenotype/mouse-anatomy-ontology
 taxon:

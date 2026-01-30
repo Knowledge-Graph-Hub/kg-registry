@@ -113,7 +113,8 @@ products:
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
-  description: "protein network data (full network, incl. distinction: direct vs. interologs)"
+  description: 'protein network data (full network, incl. distinction: direct vs.
+    interologs)'
   format: txt
   id: string.protein.links.full
   name: STRING Protein Links Full
@@ -151,6 +152,7 @@ products:
   - wikipathways
   - wormbase
   - progenomes
+  product_file_size: 214269334954
   product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -192,6 +194,7 @@ products:
   - wikipathways
   - wormbase
   - progenomes
+  product_file_size: 11867396121
   product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -233,10 +236,12 @@ products:
   - wikipathways
   - wormbase
   - progenomes
+  product_file_size: 14859366689
   product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
-  description: "protein network data (physical subnetwork, incl. distinction: direct vs. interologs)"
+  description: 'protein network data (physical subnetwork, incl. distinction: direct
+    vs. interologs)'
   format: txt
   id: string.protein.physical.links.full
   name: STRING Protein Physical Links Full
@@ -274,6 +279,7 @@ products:
   - wikipathways
   - wormbase
   - progenomes
+  product_file_size: 15528028374
   product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -315,6 +321,7 @@ products:
   - wikipathways
   - wormbase
   - progenomes
+  product_file_size: 185338269
   product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -356,6 +363,7 @@ products:
   - wikipathways
   - wormbase
   - progenomes
+  product_file_size: 250279091
   product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -363,6 +371,7 @@ products:
   format: txt
   id: string.protein.info
   name: STRING Protein Info
+  product_file_size: 1247927909
   product_url: https://stringdb-downloads.org/download/protein.info.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -370,13 +379,15 @@ products:
   format: fasta
   id: string.protein.sequences
   name: STRING Protein Sequences
+  product_file_size: 13003020999
   product_url: https://stringdb-downloads.org/download/protein.sequences.v12.0.fa.gz
 - category: Product
   compression: gzip
-  description: "aliases for STRING proteins: locus names, accessions, descriptions"
+  description: 'aliases for STRING proteins: locus names, accessions, descriptions'
   format: txt
   id: string.protein.aliases
   name: STRING Protein Aliases
+  product_file_size: 3469549093
   product_url: https://stringdb-downloads.org/download/protein.aliases.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -384,6 +395,7 @@ products:
   format: txt
   id: string.protein.homology
   name: STRING Protein Homology
+  product_file_size: 18695040184
   product_url: https://stringdb-downloads.org/download/protein.homology.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -391,6 +403,7 @@ products:
   format: txt
   id: string.protein.enrichment.terms
   name: STRING Protein Enrichment Terms
+  product_file_size: 23627938784
   product_url: https://stringdb-downloads.org/download/protein.enrichment.terms.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -398,6 +411,7 @@ products:
   format: txt
   id: string.clusters.proteins
   name: STRING Clusters Proteins
+  product_file_size: 14024645691
   product_url: https://stringdb-downloads.org/download/clusters.proteins.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -405,6 +419,7 @@ products:
   format: txt
   id: string.clusters.info
   name: STRING Clusters Info
+  product_file_size: 217876761
   product_url: https://stringdb-downloads.org/download/clusters.info.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -412,18 +427,21 @@ products:
   format: txt
   id: string.clusters.tree
   name: STRING Clusters Tree
+  product_file_size: 57934238
   product_url: https://stringdb-downloads.org/download/clusters.tree.v12.0.txt.gz
 - category: Product
   description: cross-species (aligned) eukaryotic protein network embeddings
   format: hdf5
   id: string.protein.network.embeddings
   name: STRING Protein Network Embeddings
+  product_file_size: 19250141917
   product_url: https://stringdb-downloads.org/download/protein.network.embeddings.v12.0.h5
 - category: Product
   description: ProtT5 eukaryotic protein sequence embeddings
   format: hdf5
   id: string.protein.sequence.embeddings
   name: STRING Protein Sequence Embeddings
+  product_file_size: 41108799687
   product_url: https://stringdb-downloads.org/download/protein.sequence.embeddings.v12.0.h5
 - category: Product
   compression: gzip
@@ -431,6 +449,7 @@ products:
   format: txt
   id: string.protein.orthology
   name: STRING Protein Orthology
+  product_file_size: 2197752616
   product_url: https://stringdb-downloads.org/download/protein.orthology.v12.0.txt.gz
 - category: Product
   compression: gzip
@@ -438,34 +457,39 @@ products:
   format: txt
   id: string.cog.mappings
   name: STRING COG Mappings
+  product_file_size: 755326221
   product_url: https://stringdb-downloads.org/download/COG.mappings.v12.0.txt.gz
 - category: Product
   description: organisms in STRING
   format: txt
   id: string.species
   name: STRING Species List
+  product_file_size: 1023159
   product_url: https://stringdb-downloads.org/download/species.v12.0.txt
 - category: Product
   description: STRING tree of species
   format: txt
   id: string.species.tree
   name: STRING Species Tree
+  product_file_size: 97357335
   product_url: https://stringdb-downloads.org/download/species.tree.v12.0.txt
 - category: DocumentationProduct
   description: STRING database schema
   format: pdf
   id: string.database.schema
   name: STRING Database Schema
+  product_file_size: 52997
   product_url: https://stringdb-downloads.org/download/database.schema.v12.0.pdf
 - category: Product
   compression: gzip
-  description: "full database, part I: the players (proteins, species, COGs,...)"
+  description: 'full database, part I: the players (proteins, species, COGs,...)'
   id: string.database.items
   name: STRING Database Items Schema
+  product_file_size: 45578053363
   product_url: https://stringdb-downloads.org/download/items_schema.v12.0.sql.gz
 - category: GraphProduct
   compression: gzip
-  description: "full database, part II: the networks (nodes, edges, scores,...)"
+  description: 'full database, part II: the networks (nodes, edges, scores,...)'
   id: string.database
   name: STRING Database Network Schema
   original_source:
@@ -506,9 +530,11 @@ products:
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 - category: Product
   compression: gzip
-  description: "full database, part III: interaction evidence (excluding license-restricted data)"
+  description: 'full database, part III: interaction evidence (excluding license-restricted
+    data)'
   id: string.database.evidence
   name: STRING Database Evidence Schema
+  product_file_size: 59513213030
   product_url: https://stringdb-downloads.org/download/evidence_schema.v12.0.sql.gz
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to STRING data
@@ -1744,11 +1770,11 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

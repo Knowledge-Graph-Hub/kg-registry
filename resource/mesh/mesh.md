@@ -373,11 +373,11 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-28_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-01-23_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-01-15_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-01-28: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-01-30: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -467,10 +467,8 @@ products:
   - inchikey
   - uci
   - omim
+  product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
-    to URL'
 - category: GraphProduct
   description: Predicted UniBioMap graph edges with confidence scores.
   format: csv

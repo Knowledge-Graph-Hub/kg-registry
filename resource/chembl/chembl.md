@@ -409,10 +409,8 @@ products:
   - inchikey
   - uci
   - omim
+  product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
-    to URL'
 - category: GraphProduct
   description: Auxiliary UniBioMap graph annotations and metadata.
   format: tsv
@@ -563,7 +561,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - Kizilören T
+  - "Kizil\xF6ren T"
   - Gaulton A
   - Bento AP
   - Adasme MF

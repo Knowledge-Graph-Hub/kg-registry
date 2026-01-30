@@ -7,6 +7,8 @@ id: mirtarbase.archive
 name: miRTarBase Previous Releases Archive
 product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
 warnings:
+- File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
@@ -15,7 +17,5 @@ warnings:
   '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
 - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-01-06_ HTTP 403 error when
-  accessing file
 layout: product_detail
 ---

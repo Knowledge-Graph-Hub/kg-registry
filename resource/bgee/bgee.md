@@ -1009,11 +1009,11 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

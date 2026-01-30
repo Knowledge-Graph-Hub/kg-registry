@@ -29,7 +29,7 @@ products:
   format: owl
   id: psdo.owl
   name: psdo.owl
-  product_file_size: 7494
+  product_file_size: 7544
   product_url: http://purl.obolibrary.org/obo/psdo.owl
 repository: https://github.com/Display-Lab/psdo
 ---

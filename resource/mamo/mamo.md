@@ -22,10 +22,8 @@ products:
   format: owl
   id: mamo.owl
   name: mamo.owl
+  product_file_size: 204902
   product_url: http://purl.obolibrary.org/obo/mamo.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
-    to URL'
 repository: http://sourceforge.net/p/mamo-ontology
 ---
 ## Description

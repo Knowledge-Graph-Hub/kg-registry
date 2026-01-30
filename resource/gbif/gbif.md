@@ -57,11 +57,11 @@ products:
   name: GBIF Darwin Core Archive Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -71,11 +71,11 @@ products:
   name: GBIF Simple CSV Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
@@ -93,11 +93,11 @@ products:
   name: GBIF Integrated Publishing Toolkit (IPT)
   product_url: https://www.gbif.org/ipt
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-15_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-28: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
     when accessing file'
 publications:
 - authors:

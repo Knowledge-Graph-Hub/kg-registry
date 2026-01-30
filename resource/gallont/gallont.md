@@ -43,8 +43,8 @@ products:
   name: gallont.json
   product_url: http://purl.obolibrary.org/obo/gallont.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-28: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Plant Gall Ontology in OBO format
   format: obo
