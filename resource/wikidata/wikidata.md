@@ -24,7 +24,7 @@ domains:
 homepage_url: https://www.wikidata.org/
 id: wikidata
 infores_id: wikidata
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-02-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -53,11 +53,66 @@ products:
   name: Wikidata Query Service Interface
   product_url: https://query.wikidata.org/
 - category: Product
-  description: Complete database dumps in JSON, RDF/XML, and TTL formats, available
-    as compressed archives for download and local processing
-  id: wikidata.dumps
-  name: Wikidata Database Dumps
-  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/
+  compression: gzip
+  description: JSON dumps containing all Wikidata entities
+  format: json
+  id: wikidata.dumps.json
+  name: Wikidata JSON Entity Dumps
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
+- category: Product
+  compression: gzip
+  description: Canonical full-statement RDF dump in Turtle format (the "all" dump)
+  format: ttl
+  id: wikidata.dumps.rdf.full.ttl
+  name: Wikidata RDF Full Dump (Turtle)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz
+- category: Product
+  compression: gzip
+  description: Canonical full-statement RDF dump in N-Triples format (the "all" dump)
+  format: ntriples
+  id: wikidata.dumps.rdf.full.nt
+  name: Wikidata RDF Full Dump (N-Triples)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.nt.gz
+- category: Product
+  compression: gzip
+  description: RDF "truthy" dump in N-Triples format containing direct values from
+    best-rank statements only
+  format: ntriples
+  id: wikidata.dumps.rdf.truthy.nt
+  name: Wikidata RDF Truthy Dump (N-Triples)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.gz
+- category: Product
+  compression: gzip
+  description: Lexeme namespace JSON dump
+  format: json
+  id: wikidata.dumps.lexemes.json
+  name: Wikidata Lexeme JSON Dump
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz
+- category: Product
+  compression: gzip
+  description: Lexeme namespace RDF dump in Turtle format
+  format: ttl
+  id: wikidata.dumps.lexemes.ttl
+  name: Wikidata Lexeme RDF Dump (Turtle)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.ttl.gz
+- category: Product
+  compression: gzip
+  description: Lexeme namespace RDF dump in N-Triples format
+  format: ntriples
+  id: wikidata.dumps.lexemes.nt
+  name: Wikidata Lexeme RDF Dump (N-Triples)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.nt.gz
+- category: Product
+  description: Full XML database dumps of Wikidata
+  format: xml
+  id: wikidata.dumps.xml
+  name: Wikidata XML Dumps
+  product_url: https://dumps.wikimedia.org/wikidatawiki/
+- category: Product
+  description: Incremental add/change dumps that cover the previous 24 hours
+  id: wikidata.dumps.incremental
+  name: Wikidata Incremental Dumps
+  product_url: https://dumps.wikimedia.org/other/incr/wikidatawiki/
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to Wikidata content, allowing
     reading and editing of items, properties, and statements
@@ -65,20 +120,6 @@ products:
   id: wikidata.api
   name: Wikidata Action API
   product_url: https://www.wikidata.org/w/api.php
-- category: DocumentationProduct
-  description: Comprehensive help documentation covering data model, editing guidelines,
-    tools, and community best practices
-  format: http
-  id: wikidata.help
-  name: Wikidata Help Documentation
-  product_url: https://www.wikidata.org/wiki/Wikidata:Introduction
-  warnings:
-  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
-    when accessing file'
 - category: ProgrammingInterface
   description: REST API for accessing entity data in JSON format with content negotiation
     support
