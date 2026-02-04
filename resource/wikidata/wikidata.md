@@ -65,20 +65,6 @@ products:
   id: wikidata.api
   name: Wikidata Action API
   product_url: https://www.wikidata.org/w/api.php
-- category: DocumentationProduct
-  description: Comprehensive help documentation covering data model, editing guidelines,
-    tools, and community best practices
-  format: http
-  id: wikidata.help
-  name: Wikidata Help Documentation
-  product_url: https://www.wikidata.org/wiki/Wikidata:Introduction
-  warnings:
-  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
-    when accessing file'
 - category: ProgrammingInterface
   description: REST API for accessing entity data in JSON format with content negotiation
     support
