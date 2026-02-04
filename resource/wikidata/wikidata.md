@@ -24,7 +24,7 @@ domains:
 homepage_url: https://www.wikidata.org/
 id: wikidata
 infores_id: wikidata
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-02-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
