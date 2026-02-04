@@ -53,11 +53,66 @@ products:
   name: Wikidata Query Service Interface
   product_url: https://query.wikidata.org/
 - category: Product
-  description: Complete database dumps in JSON, RDF/XML, and TTL formats, available
-    as compressed archives for download and local processing
-  id: wikidata.dumps
-  name: Wikidata Database Dumps
-  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/
+  compression: gzip
+  description: JSON dumps containing all Wikidata entities
+  format: json
+  id: wikidata.dumps.json
+  name: Wikidata JSON Entity Dumps
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
+- category: Product
+  compression: gzip
+  description: Canonical full-statement RDF dump in Turtle format (the "all" dump)
+  format: ttl
+  id: wikidata.dumps.rdf.full.ttl
+  name: Wikidata RDF Full Dump (Turtle)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz
+- category: Product
+  compression: gzip
+  description: Canonical full-statement RDF dump in N-Triples format (the "all" dump)
+  format: ntriples
+  id: wikidata.dumps.rdf.full.nt
+  name: Wikidata RDF Full Dump (N-Triples)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.nt.gz
+- category: Product
+  compression: gzip
+  description: RDF "truthy" dump in N-Triples format containing direct values from
+    best-rank statements only
+  format: ntriples
+  id: wikidata.dumps.rdf.truthy.nt
+  name: Wikidata RDF Truthy Dump (N-Triples)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.gz
+- category: Product
+  compression: gzip
+  description: Lexeme namespace JSON dump
+  format: json
+  id: wikidata.dumps.lexemes.json
+  name: Wikidata Lexeme JSON Dump
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz
+- category: Product
+  compression: gzip
+  description: Lexeme namespace RDF dump in Turtle format
+  format: ttl
+  id: wikidata.dumps.lexemes.ttl
+  name: Wikidata Lexeme RDF Dump (Turtle)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.ttl.gz
+- category: Product
+  compression: gzip
+  description: Lexeme namespace RDF dump in N-Triples format
+  format: ntriples
+  id: wikidata.dumps.lexemes.nt
+  name: Wikidata Lexeme RDF Dump (N-Triples)
+  product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.nt.gz
+- category: Product
+  description: Full XML database dumps of Wikidata
+  format: xml
+  id: wikidata.dumps.xml
+  name: Wikidata XML Dumps
+  product_url: https://dumps.wikimedia.org/wikidatawiki/
+- category: Product
+  description: Incremental add/change dumps that cover the previous 24 hours
+  id: wikidata.dumps.incremental
+  name: Wikidata Incremental Dumps
+  product_url: https://dumps.wikimedia.org/other/incr/wikidatawiki/
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to Wikidata content, allowing
     reading and editing of items, properties, and statements
