@@ -33,11 +33,11 @@ products:
   name: Text Mining KP Release Files
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-23_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-01-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
+  - File was not able to be retrieved when checked on 2026-01-30_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
     header found'
 - category: GraphProduct
   description: KGX graph package for Text Mining KP (build tmkp_tmkp-2023-03-05_1.0_2025sep1_4.3.6;

@@ -58,6 +58,7 @@ products:
   format: json
   id: wikidata.dumps.json
   name: Wikidata JSON Entity Dumps
+  product_file_size: 151566969874
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
 - category: Product
   compression: gzip
@@ -65,6 +66,7 @@ products:
   format: ttl
   id: wikidata.dumps.rdf.full.ttl
   name: Wikidata RDF Full Dump (Turtle)
+  product_file_size: 149370935070
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz
 - category: Product
   compression: gzip
@@ -72,6 +74,7 @@ products:
   format: ntriples
   id: wikidata.dumps.rdf.full.nt
   name: Wikidata RDF Full Dump (N-Triples)
+  product_file_size: 246159505683
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.nt.gz
 - category: Product
   compression: gzip
@@ -80,6 +83,7 @@ products:
   format: ntriples
   id: wikidata.dumps.rdf.truthy.nt
   name: Wikidata RDF Truthy Dump (N-Triples)
+  product_file_size: 69713859532
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.gz
 - category: Product
   compression: gzip
@@ -87,6 +91,7 @@ products:
   format: json
   id: wikidata.dumps.lexemes.json
   name: Wikidata Lexeme JSON Dump
+  product_file_size: 575745192
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz
 - category: Product
   compression: gzip
@@ -94,6 +99,7 @@ products:
   format: ttl
   id: wikidata.dumps.lexemes.ttl
   name: Wikidata Lexeme RDF Dump (Turtle)
+  product_file_size: 762464579
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.ttl.gz
 - category: Product
   compression: gzip
@@ -101,6 +107,7 @@ products:
   format: ntriples
   id: wikidata.dumps.lexemes.nt
   name: Wikidata Lexeme RDF Dump (N-Triples)
+  product_file_size: 1401838999
   product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.nt.gz
 - category: Product
   description: Full XML database dumps of Wikidata

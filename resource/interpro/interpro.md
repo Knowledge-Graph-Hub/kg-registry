@@ -244,8 +244,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -749,7 +749,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - Llinares-López F
+  - "Llinares-L\xF3pez F"
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H

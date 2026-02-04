@@ -31,14 +31,14 @@ products:
   format: owl
   id: go.owl
   name: GO (OWL edition)
-  product_file_size: 127608493
+  product_file_size: 129057533
   product_url: http://purl.obolibrary.org/obo/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, in obo format
   format: obo
   id: go.obo
   name: GO (OBO Format edition)
-  product_file_size: 35266549
+  product_file_size: 36289217
   product_url: http://purl.obolibrary.org/obo/go.obo
 - category: OntologyProduct
   description: Equivalent to go.owl, in obograph json format
@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -55,7 +55,7 @@ products:
   format: owl
   id: go.extensions.go-plus.owl
   name: GO-Plus
-  product_file_size: 235965574
+  product_file_size: 235714202
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -82,7 +82,7 @@ products:
   format: obo
   id: go.go-basic.obo
   name: GO-Basic, Filtered, for use with legacy tools
-  product_file_size: 31417323
+  product_file_size: 31933366
   product_url: http://purl.obolibrary.org/obo/go/go-basic.obo
 - category: OntologyProduct
   description: As go-basic.obo, in json format
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-04: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -2137,9 +2137,11 @@ products:
   secondary_source:
   - unibiomap
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-30_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-01-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-01-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
     header found'
 - category: MappingProduct
   compression: gzip
@@ -2294,11 +2296,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-01-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-23_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-01-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-04: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

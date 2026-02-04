@@ -96,6 +96,7 @@ cm4ai_talent_kg,active,PASS
 cmap,active,PASS
 cmo,active,PASS
 cob,active,PASS
+cog,active,PASS
 cohd,active,PASS
 colao,active,PASS
 compartments,active,PASS
@@ -161,6 +162,7 @@ ecosim,active,PASS
 ecto,active,PASS
 edam,active,PASS
 efo,active,PASS
+eggnog,active,PASS
 emapa,active,PASS
 embiology,active,PASS
 emi,active,PASS
@@ -443,6 +445,7 @@ pathwhiz,active,PASS
 pato,active,PASS
 pcl,active,PASS
 pco,active,PASS
+pdb,active,PASS
 pdbe,active,PASS
 pdro,active,PASS
 pdsp,active,PASS
@@ -477,13 +480,16 @@ preppi,active,PASS
 primekg,active,PASS
 prism,active,PASS
 proco,active,PASS
+progenomes,active,PASS
 progeny,active,PASS
 protcid,active,PASS
+proteomehd,active,PASS
 proton,active,PASS
 psdo,active,PASS
 pso,active,PASS
 pubchem,active,PASS
 pubmed,active,PASS
+pubmedcentral,active,PASS
 pubtator,active,PASS
 pw,active,PASS
 rampdb,active,PASS
@@ -526,10 +532,12 @@ sgd,active,PASS
 sibils,active,PASS
 signor,active,PASS
 silva,active,PASS
+simap,active,PASS
 skm,active,PASS
 skos,active,PASS
 sldb,active,PASS
 slso,active,PASS
+smart,active,PASS
 smpdb,active,PASS
 snodb,active,PASS
 snomedct,active,PASS
@@ -550,6 +558,7 @@ string,active,PASS
 sudokn,active,PASS
 suppkg,active,PASS
 swisslipid,active,PASS
+swissmodel,active,PASS
 swo,active,PASS
 symp,active,PASS
 t4fs,active,PASS

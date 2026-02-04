@@ -39,6 +39,7 @@ original_source:
 - wikipathways
 - wormbase
 - progenomes
+product_file_size: 214269334954
 product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
 layout: product_detail
 ---

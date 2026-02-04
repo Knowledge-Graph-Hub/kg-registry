@@ -7,6 +7,8 @@ id: eol-traitbank.docs
 name: TraitBank Documentation
 product_url: https://eol.org/docs/what-is-eol/data-services
 warnings:
+- File was not able to be retrieved when checked on 2026-01-30_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2026-01-28_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-01-23_ Error connecting to

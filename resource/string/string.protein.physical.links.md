@@ -39,6 +39,7 @@ original_source:
 - wikipathways
 - wormbase
 - progenomes
+product_file_size: 11867396121
 product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
 layout: product_detail
 ---
