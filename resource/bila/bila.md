@@ -30,7 +30,7 @@ products:
   name: bila.owl
   product_url: http://purl.obolibrary.org/obo/bila.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-04: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 403 error
     when accessing file'
 taxon:
 - NCBITaxon:33213

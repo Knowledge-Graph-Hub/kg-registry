@@ -99,11 +99,11 @@ products:
   secondary_source:
   - pombase
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-01-30_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-01-28_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -146,6 +146,8 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
@@ -154,7 +156,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-04: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -655,11 +657,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-01-30_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-04: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD

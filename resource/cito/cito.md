@@ -46,11 +46,11 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-04_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-01-30_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-01-28_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-02-04: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-13: FTP error: timed
     out'
 repository: https://github.com/sparontologies/cito
 ---

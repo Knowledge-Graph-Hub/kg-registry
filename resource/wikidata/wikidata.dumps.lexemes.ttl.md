@@ -5,6 +5,7 @@ description: Lexeme namespace RDF dump in Turtle format
 format: ttl
 id: wikidata.dumps.lexemes.ttl
 name: Wikidata Lexeme RDF Dump (Turtle)
+product_file_size: 762464579
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.ttl.gz
 layout: product_detail
 ---

@@ -77,13 +77,13 @@ products:
   - wormbase
   product_url: ftp://ftp.wormbase.org/pub/wormbase/
   warnings:
-  - File was not able to be retrieved when checked on 2026-01-28_ FTP error_ [Errno
+  - File was not able to be retrieved when checked on 2026-01-30_ FTP error_ [Errno
     101] Network is unreachable
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
-  - File was not able to be retrieved when checked on 2026-01-30_ FTP error_ [Errno
+  - File was not able to be retrieved when checked on 2026-02-04_ FTP error_ [Errno
     101] Network is unreachable
-  - 'File was not able to be retrieved when checked on 2026-02-04: FTP error: [Errno
+  - 'File was not able to be retrieved when checked on 2026-02-13: FTP error: [Errno
     101] Network is unreachable'
 - category: GraphicalInterface
   description: Sub-portal hosting approximately 100 parasitic helminth genomes with

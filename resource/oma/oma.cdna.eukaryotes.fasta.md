@@ -11,6 +11,8 @@ product_url: https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz
 secondary_source:
 - oma
 warnings:
+- File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-01-30_ HTTP 403 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when

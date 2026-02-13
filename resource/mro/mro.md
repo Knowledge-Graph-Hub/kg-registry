@@ -30,7 +30,7 @@ products:
   format: owl
   id: mro.owl
   name: mro.owl
-  product_file_size: 82438902
+  product_file_size: 82450469
   product_url: http://purl.obolibrary.org/obo/mro.owl
 repository: https://github.com/IEDB/MRO
 ---

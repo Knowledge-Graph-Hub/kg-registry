@@ -46,7 +46,7 @@ products:
   name: OBOGraphs JSON version of Main release
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-04: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim
@@ -62,49 +62,6 @@ products:
   name: taxslim disjointness axioms
   product_file_size: 75398508
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
@@ -129,108 +86,6 @@ products:
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   secondary_source:
   - mechreponet
-- category: GraphProduct
-  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.nodes
-  name: RTX-KG2.10.1c KGX JSONL Nodes
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 376501785
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: GraphProduct
-  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.edges
-  name: RTX-KG2.10.1c KGX JSONL Edges
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 1807360397
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: ProgrammingInterface
-  description: Neo4j distribution of the RTX-KG2 as a graph database
-  dump_format: neo4j
-  id: rtx-kg2.neo4j
-  is_neo4j: true
-  is_public: false
-  name: RTX-KG2 Neo4j
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_url: https://arax.ncats.io/
-  secondary_source:
-  - rtx-kg2
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -363,33 +218,49 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
   original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
   - ncbigene
+  - pubmed
   - mesh
-  - pubchem
+  - pid
+  - doid
+  - diseases
+  - drugcentral
   - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
+  - gwascatalog
+  - reactome
+  - lincs-l1000
   - uberon
-  - panther
-  - hgnc
+  - wikipathways
+  - bindingdb
   - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
-  - microbiomekg
+  - spoke
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -421,6 +292,91 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
+- category: GraphProduct
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_file_size: 376501785
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+  secondary_source:
+  - rtx-kg2
+- category: GraphProduct
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_file_size: 1807360397
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  secondary_source:
+  - rtx-kg2
+- category: ProgrammingInterface
+  description: Neo4j distribution of the RTX-KG2 as a graph database
+  dump_format: neo4j
+  id: rtx-kg2.neo4j
+  is_neo4j: true
+  is_public: false
+  name: RTX-KG2 Neo4j
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://arax.ncats.io/
+  secondary_source:
+  - rtx-kg2
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -527,6 +483,50 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
 repository: https://github.com/obophenotype/ncbitaxon
 ---
 ## Description

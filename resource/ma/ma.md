@@ -30,14 +30,14 @@ products:
   format: owl
   id: ma.owl
   name: ma.owl
-  product_file_size: 94803
+  product_file_size: 94938
   product_url: http://purl.obolibrary.org/obo/ma.owl
 - category: OntologyProduct
   description: Mouse adult gross anatomy in OBO format
   format: obo
   id: ma.obo
   name: ma.obo
-  product_file_size: 59828
+  product_file_size: 59899
   product_url: http://purl.obolibrary.org/obo/ma.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
