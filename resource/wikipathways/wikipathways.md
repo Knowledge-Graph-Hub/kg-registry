@@ -14,13 +14,13 @@ contacts:
 - category: Individual
   contact_details:
   - contact_type: email
-    value: apico@gladstone.ucsf.edu
-  label: Alex Pico
+    value: martina.kutmon@maastrichtuniversity.nl
+  label: Martina Kutmon
 - category: Individual
   contact_details:
   - contact_type: email
-    value: martina.kutmon@maastrichtuniversity.nl
-  label: Martina Kutmon
+    value: egon.willighagen@maastrichtuniversity.nl
+  label: Egon Willighagen
 creation_date: '2025-06-05T00:00:00Z'
 description: WikiPathways is an open, collaborative platform dedicated to the curation
   of biological pathways. The database contains 1,913 human-curated pathways across
@@ -32,6 +32,7 @@ domains:
 - pathways
 - genomics
 - biomedical
+fairsharing_id: FAIRsharing.1x53qk
 homepage_url: https://www.wikipathways.org/
 id: wikipathways
 infores_id: wikipathways
@@ -111,11 +112,6 @@ products:
   id: wikipathways.sparql
   name: WikiPathways SPARQL Endpoint
   product_url: https://sparql.wikipathways.org/
-- category: ProgrammingInterface
-  description: Web service API for programmatic access to WikiPathways content
-  id: wikipathways.api
-  name: WikiPathways API
-  product_url: https://webservice.wikipathways.org/ui/
 - category: GraphicalInterface
   description: The main web interface for browsing, viewing, and downloading pathways
   id: wikipathways.web
@@ -931,12 +927,6 @@ The redesigned WikiPathways website (2024 update) offers:
 - Complex federated queries for cross-database integration
 - Result formats: JSON, XML, CSV, TSV, N-Triples
 
-**Web Service API:** https://webservice.wikipathways.org/ui/
-- RESTful API for programmatic pathway queries
-- Query types: search, getPathways, getPathwaysByXref, getPathwaysByParentOntology
-- Return formats: JSON, XML
-- Supports batch operations and complex filtering
-
 **R Package - rWikiPathways:**
 - CRAN package for R environments
 - Programmatic queries from R/Bioconductor
@@ -1047,22 +1037,18 @@ WikiPathways integrates with diverse analysis platforms:
 **Martina Kutmon** (Maastricht University)
 - Pathway curator and database manager
 - Contact: martina.kutmon@maastrichtuniversity.nl
-- Expertise in pathway curation and knowledge management
+- Expertise in pathway curation, network approaches, and knowledge management
 
-**Alex Pico** (Gladstone Institutes, UCSF)
-- Scientific director and original pathway curation lead
-- Contact: apico@gladstone.ucsf.edu
-- Long-standing commitment to open pathway knowledge
+**Egon Willighagen** (Maastricht University)
+- Pathway curator and database manager
+- Contact: egon.willighagen@maastrichtuniversity.nl
+- Expertise in pathway curation, chemistry, and knowledge management
 
 ### Host and Partner Institutions
 
 **Primary Affiliation:**
-- Maastricht University (Department of Bioinformatics - BiGCaT)
+- Maastricht University
 - Provides infrastructure, funding, and institutional support
-
-**Contributing Institutions:**
-- Gladstone Institutes (UCSF)
-- International research community contributions
 
 ### Community Model
 
@@ -1079,6 +1065,7 @@ WikiPathways integrates with diverse analysis platforms:
 - NIH and EU research funding for specific projects
 - Community volunteer contributions
 - OpenStack community infrastructure support
+- ELIXIR Europe Service
 
 **Status:**
 - Actively maintained with regular database releases
@@ -1089,7 +1076,7 @@ WikiPathways integrates with diverse analysis platforms:
 
 - **Open Science Standards** - CC0 public domain licensing
 - **Semantic Web Standards** - RDF, SPARQL, OWL compatibility
-- **Biological Data Standards** - Integration with Gene Ontology, CHEBI, UniProt identifiers
+- **Biological Data Standards** - Integration with Gene Ontology, ChEBI, UniProt identifiers
 - **Interoperability** - Support for pathway exchange formats and cross-database queries
 - **FAIR Principles** - Findable, Accessible, Interoperable, Reusable data
 
@@ -1111,7 +1098,6 @@ For previous versions, see full publication record below.
 
 - **Main Website:** https://www.wikipathways.org/
 - **SPARQL Endpoint:** https://sparql.wikipathways.org/
-- **Web Service API:** https://webservice.wikipathways.org/ui/
 - **Data Downloads:** https://data.wikipathways.org/
 - **GitHub Repository:** https://github.com/wikipathways/wikipathways-database
 - **R Package (rWikiPathways):** https://cran.r-project.org/web/packages/rWikiPathways/

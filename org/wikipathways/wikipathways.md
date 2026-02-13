@@ -2,7 +2,7 @@
 category: Organization
 contact_details:
 - contact_type: url
-  value: https://pfocr.wikipathways.org/
+  value: https://www.wikipathways.org/
 creation_date: '2025-12-07T00:00:00Z'
 description: WikiPathways is a collaborative biological pathway database. The resource
   provides pathway diagrams, gene interactions, and pathway information.
