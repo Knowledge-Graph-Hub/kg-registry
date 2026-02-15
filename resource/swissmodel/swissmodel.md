@@ -2,15 +2,37 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for swissmodel. This page was automatically generated
-  because it was referenced by other resources.
+description: A protein structure homology-modeling resource providing automated model
+  generation workflows and a repository of precomputed structural models.
 domains:
-- stub
+- proteomics
+- biological systems
+homepage_url: https://swissmodel.expasy.org/
 id: swissmodel
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Swissmodel
+name: SWISS-MODEL
 products:
+- category: GraphicalInterface
+  description: Main interface for automated protein structure homology modeling.
+  format: http
+  id: swissmodel.portal
+  name: SWISS-MODEL Portal
+  product_url: https://swissmodel.expasy.org/
+- category: GraphicalInterface
+  description: Search and download interface for the SWISS-MODEL Repository of annotated
+    homology models.
+  format: http
+  id: swissmodel.repository
+  name: SWISS-MODEL Repository
+  product_url: https://swissmodel.expasy.org/repository
+- category: ProgrammingInterface
+  description: Programmatic API for submitting and retrieving SWISS-MODEL tasks and
+    model data.
+  format: http
+  id: swissmodel.api
+  name: SWISS-MODEL API
+  product_url: https://swissmodel.expasy.org/coreapi/
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +412,11 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- SWISS-MODEL
+- SWISSMODEL
 ---
-# Swissmodel
+# SWISS-MODEL
 
-This is an automatically generated stub page for swissmodel. Please update with proper information.
+SWISS-MODEL is a web resource for protein three-dimensional structure prediction by
+homology modeling and for browsing precomputed models in the SWISS-MODEL Repository.

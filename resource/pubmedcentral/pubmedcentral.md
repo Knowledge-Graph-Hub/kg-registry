@@ -2,15 +2,37 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for pubmedcentral. This page was automatically generated
-  because it was referenced by other resources.
+description: The U.S. National Library of Medicine's free full-text archive of biomedical
+  and life sciences journal literature.
 domains:
-- stub
+- literature
+- biomedical
+homepage_url: https://pmc.ncbi.nlm.nih.gov/
 id: pubmedcentral
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Pubmedcentral
+name: PubMed Central (PMC)
 products:
+- category: GraphicalInterface
+  description: Full-text biomedical and life sciences literature interface maintained
+    by NCBI.
+  format: http
+  id: pubmedcentral.portal
+  name: PMC Portal
+  product_url: https://pmc.ncbi.nlm.nih.gov/
+- category: ProgrammingInterface
+  description: Open Access service endpoint for discovering and retrieving OA-subset
+    article packages.
+  format: http
+  id: pubmedcentral.oa-api
+  name: PMC Open Access API
+  product_url: https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi
+- category: Product
+  description: NCBI FTP site for bulk PubMed Central archive and OA subset files.
+  format: http
+  id: pubmedcentral.ftp
+  name: PMC FTP Archive
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/pmc/
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +412,11 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- PMC
+- PubMed Central
 ---
-# Pubmedcentral
+# PubMed Central (PMC)
 
-This is an automatically generated stub page for pubmedcentral. Please update with proper information.
+PubMed Central is the U.S. National Library of Medicine's free full-text archive of
+biomedical and life sciences journal literature.

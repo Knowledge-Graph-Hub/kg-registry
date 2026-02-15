@@ -2,15 +2,37 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for pdb. This page was automatically generated because
-  it was referenced by other resources.
+description: The global archive of experimentally determined three-dimensional structures
+  of proteins, nucleic acids, and macromolecular complexes.
 domains:
-- stub
+- biological systems
+- proteomics
+homepage_url: https://www.rcsb.org/
 id: pdb
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Pdb
+name: Protein Data Bank (PDB)
 products:
+- category: GraphicalInterface
+  description: Web interface for searching and exploring biomolecular 3D structure entries.
+  format: http
+  id: pdb.portal
+  name: RCSB PDB Portal
+  product_url: https://www.rcsb.org/
+- category: ProgrammingInterface
+  description: Programmatic API for structured retrieval of PDB entry, entity, and assembly
+    data.
+  format: http
+  id: pdb.data-api
+  name: RCSB Data API
+  product_url: https://data.rcsb.org/
+- category: Product
+  description: Bulk download site for archive files from the worldwide Protein Data
+    Bank.
+  format: http
+  id: pdb.archive
+  name: wwPDB Archive Downloads
+  product_url: https://files.wwpdb.org/
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +412,11 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- PDB
+- Protein Data Bank
 ---
-# Pdb
+# Protein Data Bank (PDB)
 
-This is an automatically generated stub page for pdb. Please update with proper information.
+PDB is the global archive of experimentally determined three-dimensional structures
+of biological macromolecules, managed by the worldwide Protein Data Bank consortium.

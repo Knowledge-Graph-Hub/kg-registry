@@ -2,15 +2,39 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for cog. This page was automatically generated because
-  it was referenced by other resources.
+description: A resource for orthology-based functional classification of proteins into
+  clusters of orthologous groups (COGs) across complete genomes.
 domains:
-- stub
+- genomics
+- microbiology
+- biological systems
+homepage_url: https://www.ncbi.nlm.nih.gov/research/cog-project/
 id: cog
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Cog
+name: COG
 products:
+- category: GraphicalInterface
+  description: NCBI web interface for exploring the 2024 COG update and project resources.
+  format: http
+  id: cog.portal
+  name: COG Project Portal
+  product_url: https://www.ncbi.nlm.nih.gov/research/cog
+- category: Product
+  description: COG 2024 functional assignment table in CSV format.
+  format: csv
+  id: cog.download.cog-24-csv
+  name: COG 2024 Functional Assignments
+  product_file_size: 637440210
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/COG/COG2024/data/cog-24.cog.csv
+- category: Product
+  compression: gzip
+  description: Protein FASTA set for the COG 2024 release.
+  format: fasta
+  id: cog.download.cogorg24-fasta
+  name: COG 2024 Protein FASTA
+  product_file_size: 1629401512
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/COG/COG2024/data/COGorg24.faa.gz
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +414,11 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- COG
+- Clusters of Orthologous Groups
 ---
-# Cog
+# COG
 
-This is an automatically generated stub page for cog. Please update with proper information.
+COG is an orthology resource that groups proteins from complete genomes into clusters
+of orthologous groups and provides associated annotations.

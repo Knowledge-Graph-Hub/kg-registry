@@ -2,15 +2,40 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for progenomes. This page was automatically generated
-  because it was referenced by other resources.
+description: A large-scale microbial genome resource with consistent annotation, species
+  clustering, and downloadable representative genome and protein datasets.
 domains:
-- stub
+- genomics
+- microbiology
+- biological systems
+homepage_url: https://progenomes.embl.de/
 id: progenomes
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Progenomes
+name: proGenomes
 products:
+- category: GraphicalInterface
+  description: Main proGenomes web interface for exploring microbial genomes and clusters.
+  format: http
+  id: progenomes.portal
+  name: proGenomes Portal
+  product_url: https://progenomes.embl.de/
+- category: Product
+  compression: gzip
+  description: NCBI taxonomy mapping table for proGenomes v4 entries.
+  format: tsv
+  id: progenomes.pg4.ncbi-taxonomy
+  name: proGenomes v4 NCBI Taxonomy Table
+  product_file_size: 6094365
+  product_url: https://progenomes.embl.de/data/pg4_ncbi_taxonomy.tsv.gz
+- category: Product
+  compression: gzip
+  description: Representative protein FASTA set for proGenomes v4.
+  format: fasta
+  id: progenomes.pg4.rep-proteins
+  name: proGenomes v4 Representative Proteins
+  product_file_size: 30345688548
+  product_url: https://progenomes.embl.de/data/repGenomes/pg4_proteins_representatives.faa.gz
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +415,11 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- proGenomes
+- ProGenomes Database
 ---
-# Progenomes
+# proGenomes
 
-This is an automatically generated stub page for progenomes. Please update with proper information.
+proGenomes is a large-scale microbial genome resource with consistent annotations,
+quality controls, representative sets, and downloadable genome-derived datasets.
