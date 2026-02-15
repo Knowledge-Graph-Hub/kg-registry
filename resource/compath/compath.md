@@ -2,15 +2,47 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-28T00:00:00Z'
-description: Stub Resource page for compath. This page was automatically generated
-  because it was referenced by other resources.
+description: A pathway mapping and harmonization framework for integrating and comparing
+  pathway knowledge across multiple pathway databases.
 domains:
-- stub
+- pathways
+- biological systems
+homepage_url: https://compath.scai.fraunhofer.de/
 id: compath
-last_modified_date: '2026-01-28T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Compath
+name: ComPath
 products:
+- category: GraphicalInterface
+  description: Main ComPath portal for pathway database harmonization and analysis.
+  format: http
+  id: compath.portal
+  name: ComPath Portal
+  product_url: https://compath.scai.fraunhofer.de/
+- category: GraphicalInterface
+  description: Overview interface for pathway databases integrated in ComPath.
+  format: http
+  id: compath.overview
+  name: ComPath Overview
+  product_url: https://compath.scai.fraunhofer.de/overview
+- category: GraphicalInterface
+  description: Interface for pathway similarity comparisons.
+  format: http
+  id: compath.similarity
+  name: ComPath Similarity Explorer
+  product_url: https://compath.scai.fraunhofer.de/similarity
+- category: GraphicalInterface
+  description: Catalog interface for browsing curated pathway mappings.
+  format: http
+  id: compath.catalog
+  name: ComPath Catalog
+  product_url: https://compath.scai.fraunhofer.de/catalog
+- category: DocumentationProduct
+  description: Curation protocol and methodology documentation for ComPath mappings.
+  format: http
+  id: compath.curation-protocol
+  name: ComPath Curation Protocol
+  product_url: https://compath.scai.fraunhofer.de/curation_protocol
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -191,10 +223,10 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- ComPath
 ---
-# Compath
+# ComPath
 
-This is an automatically generated stub page for compath. Please update with proper information.
+ComPath is a framework and web resource for integrating, comparing, and curating mappings
+across pathway knowledge databases.
