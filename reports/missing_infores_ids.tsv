@@ -86,10 +86,10 @@ cm4ai_talent_kg	CM4AI Talent KG	KnowledgeGraph	https://cm4aikg.vercel.app/	resou
 cmf	CranioMaxilloFacial ontology	Ontology	https://code.google.com/p/craniomaxillofacial-ontology/	resource/cmf/cmf.md
 cmo	Clinical measurement ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/search.html	resource/cmo/cmo.md
 cob	Core Ontology for Biology and Biomedicine	Ontology	https://obofoundry.org/COB/	resource/cob/cob.md
-cog	Cog	DataSource		resource/cog/cog.md
+cog	COG	DataSource	https://www.ncbi.nlm.nih.gov/research/cog-project/	resource/cog/cog.md
 colao	Coleoptera Anatomy Ontology (COLAO)	Ontology	https://github.com/insect-morphology/colao	resource/colao/colao.md
 compartments	COMPARTMENTS	DataSource		resource/compartments/compartments.md
-compath	Compath	DataSource		resource/compath/compath.md
+compath	ComPath	DataSource	https://compath.scai.fraunhofer.de/	resource/compath/compath.md
 complexportal	Complex Portal	DataSource	https://www.ebi.ac.uk/complexportal/home	resource/complexportal/complexportal.md
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
 connectivitymap	Connectivity Map	DataSource	https://www.broadinstitute.org/connectivity-map-cmap	resource/connectivitymap/connectivitymap.md
@@ -134,7 +134,7 @@ ecocore	An ontology of core ecological entities	Ontology	https://github.com/Ecol
 ecocyc	EcoCyc	DataSource	https://ecocyc.org/	resource/ecocyc/ecocyc.md
 ecosim	ecosim	Resource	http://purl.obolibrary.org/obo/ecosim.owl	resource/ecosim/ecosim.md
 edam	EDAM Ontology	Ontology	https://edamontology.org/	resource/edam/edam.md
-eggnog	Eggnog	DataSource		resource/eggnog/eggnog.md
+eggnog	eggNOG	DataSource	https://eggnogdb.org/	resource/eggnog/eggnog.md
 ehda	Human developmental anatomy, timed version	Ontology	http://genex.hgu.mrc.ac.uk/	resource/ehda/ehda.md
 ehdaa	Human developmental anatomy, abstract version	Ontology		resource/ehdaa/ehdaa.md
 ehdaa2	Human developmental anatomy, abstract	Ontology	https://github.com/obophenotype/human-developmental-anatomy-ontology	resource/ehdaa2/ehdaa2.md
@@ -184,7 +184,7 @@ gaz	Gazetteer	Ontology	http://environmentontology.github.io/gaz/	resource/gaz/ga
 gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohorts/GECKO	resource/gecko/gecko.md
 gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencode.md
 gene-ontology	Gene Ontology (GO)	Ontology	https://geneontology.org/	resource/gene-ontology/gene-ontology.md
-gene2phenotype	Gene2phenotype	DataSource		resource/gene2phenotype/gene2phenotype.md
+gene2phenotype	Gene2Phenotype	DataSource	https://www.ebi.ac.uk/gene2phenotype/	resource/gene2phenotype/gene2phenotype.md
 genecards	GeneCards	Aggregator	https://www.genecards.org/	resource/genecards/genecards.md
 genemania	GeneMANIA	DataSource	https://genemania.org/	resource/genemania/genemania.md
 genepio	Genomic Epidemiology Ontology	Ontology	http://genepio.org/	resource/genepio/genepio.md
@@ -376,7 +376,7 @@ pathophenodb	PathoPhenoDB	DataSource	http://patho.phenomebrowser.net/	resource/p
 pcl	Provisional Cell Ontology	Ontology	https://github.com/obophenotype/provisional_cell_ontology	resource/pcl/pcl.md
 pco	Population and Community Ontology	Ontology	https://github.com/PopulationAndCommunityOntology/pco	resource/pco/pco.md
 pd_st	Platynereis stage ontology	Ontology	http://4dx.embl.de/platy	resource/pd_st/pd_st.md
-pdb	Pdb	DataSource		resource/pdb/pdb.md
+pdb	Protein Data Bank (PDB)	DataSource	https://www.rcsb.org/	resource/pdb/pdb.md
 pdbe	PDBe Knowledge Base	Aggregator	https://www.ebi.ac.uk/pdbe/pdbe-kb/	resource/pdbe/pdbe.md
 pdro	The Prescription of Drugs Ontology	Ontology	https://github.com/OpenLHS/PDRO	resource/pdro/pdro.md
 pdumdv	Platynereis Developmental Stages	Ontology	https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv	resource/pdumdv/pdumdv.md
@@ -402,7 +402,7 @@ po	Plant Ontology	Ontology	http://browser.planteome.org/amigo	resource/po/po.md
 poro	Porifera Ontology	Ontology	https://github.com/obophenotype/porifera-ontology	resource/poro/poro.md
 ppo	Plant Phenology Ontology	Ontology	https://github.com/PlantPhenoOntology/PPO	resource/ppo/ppo.md
 proco	Process Chemistry Ontology	Ontology	https://github.com/proco-ontology/PROCO	resource/proco/proco.md
-progenomes	Progenomes	DataSource		resource/progenomes/progenomes.md
+progenomes	proGenomes	DataSource	https://progenomes.embl.de/	resource/progenomes/progenomes.md
 progeny	PROGENy	DataSource	https://saezlab.github.io/progeny/	resource/progeny/progeny.md
 propreo	Proteomics data and process provenance	Ontology	http://lsdis.cs.uga.edu/projects/glycomics/propreo/	resource/propreo/propreo.md
 protcid	ProtCID	DataSource	http://dunbrack2.fccc.edu/protcid/	resource/protcid/protcid.md
@@ -410,7 +410,7 @@ proteomehd	Proteomehd	DataSource		resource/proteomehd/proteomehd.md
 psdo	Performance Summary Display Ontology	Ontology	https://github.com/Display-Lab/psdo	resource/psdo/psdo.md
 pso	Plant Stress Ontology	Ontology	https://github.com/Planteome/plant-stress-ontology	resource/pso/pso.md
 psygenet	PsyGeNET	DataSource	http://www.psygenet.org/	resource/psygenet/psygenet.md
-pubmedcentral	Pubmedcentral	DataSource		resource/pubmedcentral/pubmedcentral.md
+pubmedcentral	PubMed Central (PMC)	DataSource	https://pmc.ncbi.nlm.nih.gov/	resource/pubmedcentral/pubmedcentral.md
 pubtator	PubTator	DataSource	https://www.ncbi.nlm.nih.gov/research/pubtator3/	resource/pubtator/pubtator.md
 pw	Pathway ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/search.html	resource/pw/pw.md
 rbo	Radiation Biology Ontology	Ontology	https://github.com/Radiobiology-Informatics-Consortium/RBO	resource/rbo/rbo.md
@@ -453,7 +453,7 @@ skm	Stress Knowledge Map	KnowledgeGraph	https://skm.nib.si/	resource/skm/skm.md
 skos	SKOS	DataModel	https://www.w3.org/2004/02/skos/	resource/skos/skos.md
 sldb	sldb	KnowledgeGraph	https://kghub.io/sldb/	resource/sldb/sldb.md
 slso	Space Life Sciences Ontology	Ontology	https://github.com/nasa/LSDAO	resource/slso/slso.md
-smart	Smart	DataSource		resource/smart/smart.md
+smart	SMART	DataSource	https://smart.embl.de/	resource/smart/smart.md
 snodb	snoDB	DataSource	https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/	resource/snodb/snodb.md
 snopy	snOPY	DataSource	http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi	resource/snopy/snopy.md
 snornadatabase	snoRNABase	DataSource	https://www-snorna.biotoul.fr/	resource/snornadatabase/snornadatabase.md
@@ -467,7 +467,7 @@ stato	The Statistical Methods Ontology	Ontology	http://stato-ontology.org/	resou
 stellar	STELLAR	Resource	https://snap.stanford.edu/stellar/	resource/stellar/stellar.md
 sudokn	SUDOKN	KnowledgeGraph	https://projects.engineering.asu.edu/sudokn/	resource/sudokn/sudokn.md
 swisslipid	swisslipid	DataSource	https://www.swisslipids.org/	resource/swisslipid/swisslipid.md
-swissmodel	Swissmodel	DataSource		resource/swissmodel/swissmodel.md
+swissmodel	SWISS-MODEL	DataSource	https://swissmodel.expasy.org/	resource/swissmodel/swissmodel.md
 swo	Software ontology	Ontology	https://github.com/allysonlister/swo	resource/swo/swo.md
 symp	Symptom Ontology	Ontology	https://github.com/DiseaseOntology/SymptomOntology	resource/symp/symp.md
 t4fs	terms4FAIRskills	Ontology	https://github.com/terms4fairskills/FAIRterminology	resource/t4fs/t4fs.md
@@ -479,7 +479,7 @@ tao	Teleost Anatomy Ontology	Ontology	http://wiki.phenoscape.org/wiki/Teleost_An
 tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarbase/tarbase.md
 taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank	resource/taxrank/taxrank.md
 tbkg	Tumor-Biomarker Knowledge Graph	KnowledgeGraph	https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full	resource/tbkg/tbkg.md
-tcdb	Tcdb	DataSource		resource/tcdb/tcdb.md
+tcdb	Transporter Classification Database (TCDB)	DataSource	https://www.tcdb.org/	resource/tcdb/tcdb.md
 tcm-bank	Tcm-bank	DataSource		resource/tcm-bank/tcm-bank.md
 tera	TERA: Toxicological Effect and Risk Assessment Knowledge Graph	KnowledgeGraph	https://niva-knowledge-graph.github.io/TERA/	resource/tera/tera.md
 text-mining-kp	Text Mining KP	KnowledgeGraph	https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap	resource/text-mining-kp/text-mining-kp.md

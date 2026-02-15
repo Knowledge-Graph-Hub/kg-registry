@@ -30,14 +30,14 @@ products:
   format: owl
   id: cdno.owl
   name: cdno.owl
-  product_file_size: 547230
+  product_file_size: 590900
   product_url: http://purl.obolibrary.org/obo/cdno.owl
 - category: OntologyProduct
   description: Compositional Dietary Nutrition Ontology in OBO format
   format: obo
   id: cdno.obo
   name: cdno.obo
-  product_file_size: 324568
+  product_file_size: 331277
   product_url: http://purl.obolibrary.org/obo/cdno.obo
 repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
 ---

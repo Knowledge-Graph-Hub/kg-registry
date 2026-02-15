@@ -31,7 +31,7 @@ products:
   name: ogi.owl
   product_url: http://purl.obolibrary.org/obo/ogi.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
 ---
 ## Description

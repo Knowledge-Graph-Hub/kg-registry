@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -2448,11 +2448,11 @@ products:
   secondary_source:
   - unibiomap
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-01-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
 - category: Product
   description: Gene ontology annotations from the Gene Ontology Consortium
@@ -2463,11 +2463,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-01-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
 repository: https://github.com/geneontology/go-ontology
 taxon:

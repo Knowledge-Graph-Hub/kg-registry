@@ -25,8 +25,10 @@ products:
   format: owl
   id: flu.owl
   name: flu.owl
-  product_file_size: 127517
   product_url: http://purl.obolibrary.org/obo/flu.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: Timeout connecting
+    to URL'
 ---
 ## Description
 

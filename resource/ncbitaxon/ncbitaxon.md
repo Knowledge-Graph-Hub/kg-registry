@@ -46,7 +46,7 @@ products:
   name: OBOGraphs JSON version of Main release
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim

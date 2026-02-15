@@ -31,12 +31,14 @@ products:
   format: fasta
   id: eggnog.download.e7.proteins
   name: eggNOG 7 Proteins
+  product_file_size: 12753324465
   product_url: https://eggnogdb.org/public/eggnog7/e7.proteins.fa.gz
 - category: Product
   description: Tar archive containing orthologous group FASTA sequence files.
   format: mixed
   id: eggnog.download.e7.og-fasta-sequences
   name: eggNOG 7 OG FASTA Sequences
+  product_file_size: 28479795200
   product_url: https://eggnogdb.org/public/eggnog7/e7.og_fasta_sequences.tar
 - category: Product
   compression: gzip
@@ -44,6 +46,7 @@ products:
   format: tsv
   id: eggnog.download.e7.og-info-kegg-go
   name: eggNOG 7 OG Info (KEGG/GO)
+  product_file_size: 967458606
   product_url: https://eggnogdb.org/public/eggnog7/e7.og_info_kegg_go.tsv.gz
 - category: Product
   compression: gzip
@@ -51,6 +54,7 @@ products:
   format: tsv
   id: eggnog.download.e7.protein-families
   name: eggNOG 7 Protein Families
+  product_file_size: 807966782
   product_url: https://eggnogdb.org/public/eggnog7/e7.protein_families.tsv.gz
 - category: Product
   compression: gzip
@@ -58,6 +62,7 @@ products:
   format: tsv
   id: eggnog.download.e7.clu2ogs
   name: eggNOG 7 Protein Family to OGs
+  product_file_size: 15838901
   product_url: https://eggnogdb.org/public/eggnog7/e7.clu2ogs.tsv.gz
 - category: Product
   compression: gzip
@@ -65,6 +70,7 @@ products:
   format: tsv
   id: eggnog.download.e7.taxid-info
   name: eggNOG 7 Taxonomic Information
+  product_file_size: 1270490
   product_url: https://eggnogdb.org/public/eggnog7/e7.taxid_info.tsv.gz
 - category: Product
   compression: gzip
@@ -72,6 +78,7 @@ products:
   format: tsv
   id: eggnog.download.e7.trees
   name: eggNOG 7 Protein Family Trees
+  product_file_size: 2753498624
   product_url: https://eggnogdb.org/public/eggnog7/e7.trees.tsv.gz
 - category: GraphProduct
   compression: gzip
@@ -454,7 +461,7 @@ products:
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 synonyms:
 - eggNOG
-- "Evolutionary Genealogy of Genes: Non-supervised Orthologous Groups"
+- 'Evolutionary Genealogy of Genes: Non-supervised Orthologous Groups'
 ---
 # eggNOG
 

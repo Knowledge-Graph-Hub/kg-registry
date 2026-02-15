@@ -75,7 +75,7 @@ products:
   name: Ecology subset
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: For use in neuroscience

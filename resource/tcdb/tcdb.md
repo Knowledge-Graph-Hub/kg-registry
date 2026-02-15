@@ -49,12 +49,16 @@ products:
   id: tcdb.download.substrates
   name: TC Systems to Substrates Table
   product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: Timeout connecting
+    to URL'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
     but this endpoint serves data, not Python source code.
   format: tsv
   id: tcdb.download.families
   name: TC Family Definitions
+  product_file_size: 41693
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/families.py
 - category: Product
   description: Tab-delimited table mapping sequence accessions to TC identifiers.
@@ -63,21 +67,27 @@ products:
   id: tcdb.download.refseq
   name: Sequence Accessions to TCIDs
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
+    header found'
 - category: Product
-  description: Tab-delimited table mapping systems, subfamilies, and families to
-    superfamilies. The URL ends in .py, but this endpoint serves data, not Python
-    source code.
+  description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
+    The URL ends in .py, but this endpoint serves data, not Python source code.
   format: tsv
   id: tcdb.download.superfamilies
   name: TC Superfamily Mapping
+  product_file_size: 41446
   product_url: https://www.tcdb.org/cgi-bin/substrates/listSuperfamilies.py
 - category: Product
-  description: Tab-delimited table mapping protein accessions to TC identifiers.
-    The URL ends in .py, but this endpoint serves data, not Python source code.
+  description: Tab-delimited table mapping protein accessions to TC identifiers. The
+    URL ends in .py, but this endpoint serves data, not Python source code.
   format: tsv
   id: tcdb.download.acc2tcid
   name: Accessions to TCIDs
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -85,6 +95,9 @@ products:
   id: tcdb.download.go
   name: TC Annotation Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -92,6 +105,9 @@ products:
   id: tcdb.download.pdb
   name: TC Structure Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
     ends in .py, but this endpoint serves data, not Python source code.
@@ -99,6 +115,9 @@ products:
   id: tcdb.download.pfam
   name: TC Protein Family Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
+    header found'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
