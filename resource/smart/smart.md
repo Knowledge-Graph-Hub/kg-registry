@@ -2,15 +2,36 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for smart. This page was automatically generated because
-  it was referenced by other resources.
+description: A protein domain annotation and architecture analysis resource covering
+  curated domain models and annotated proteomes.
 domains:
-- stub
+- proteomics
+- genomics
+- biological systems
+homepage_url: https://smart.embl.de/
 id: smart
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Smart
+name: SMART
 products:
+- category: GraphicalInterface
+  description: Main SMART portal for protein domain annotation and architecture analysis.
+  format: http
+  id: smart.portal
+  name: SMART Portal
+  product_url: https://smart.embl.de/
+- category: GraphicalInterface
+  description: SMART search interface for querying proteins and domain annotations.
+  format: http
+  id: smart.search
+  name: SMART Search
+  product_url: https://smart.embl.de/smart/search.cgi
+- category: GraphicalInterface
+  description: Genomic SMART genome listing interface.
+  format: http
+  id: smart.list-genomes
+  name: SMART Genome List
+  product_url: https://smart.embl.de/smart/list_genomes.cgi
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +411,11 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- SMART
+- Simple Modular Architecture Research Tool
 ---
-# Smart
+# SMART
 
-This is an automatically generated stub page for smart. Please update with proper information.
+SMART is a resource for identification and annotation of protein domains and analysis
+of protein domain architectures across reference proteomes.
