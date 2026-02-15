@@ -2,15 +2,103 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-01-28T00:00:00Z'
-description: Stub Resource page for tcdb. This page was automatically generated because
-  it was referenced by other resources.
+description: A curated classification database of membrane transport proteins, organized
+  by the Transporter Classification (TC) system and supporting sequence- and family-level
+  exploration.
 domains:
-- stub
+- biological systems
+- proteomics
+homepage_url: https://www.tcdb.org/
 id: tcdb
-last_modified_date: '2026-01-28T00:00:00Z'
+last_modified_date: '2026-02-15T00:00:00Z'
 layout: resource_detail
-name: Tcdb
+name: Transporter Classification Database (TCDB)
 products:
+- category: GraphicalInterface
+  description: Main web interface for browsing transporter families, proteins, and
+    curated annotations.
+  format: http
+  id: tcdb.portal
+  name: TCDB Portal
+  product_url: https://www.tcdb.org/
+- category: GraphicalInterface
+  description: Sequence similarity search interface against TCDB transporter sequences.
+  format: http
+  id: tcdb.blast
+  name: TCDB BLAST
+  product_url: https://www.tcdb.org/progs/blast.php
+- category: Product
+  description: Complete TCDB protein sequence export.
+  format: fasta
+  id: tcdb.download.fasta
+  name: TCDB Protein Sequences
+  product_file_size: 13590695
+  product_url: https://www.tcdb.org/public/tcdb
+- category: Product
+  compression: targz
+  description: Precomputed tcDoms dataset archive.
+  format: mixed
+  id: tcdb.download.tcdoms
+  name: tcDoms Archive
+  product_file_size: 14664403
+  product_url: https://www.tcdb.org/public/tcDoms.tar.gz
+- category: Product
+  description: Tab-delimited table mapping TC systems to substrate identifiers. The
+    URL ends in .py, but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.substrates
+  name: TC Systems to Substrates Table
+  product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
+- category: Product
+  description: Tab-delimited table with TC family definitions. The URL ends in .py,
+    but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.families
+  name: TC Family Definitions
+  product_url: https://www.tcdb.org/cgi-bin/projectv/public/families.py
+- category: Product
+  description: Tab-delimited table mapping sequence accessions to TC identifiers.
+    The URL ends in .py, but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.refseq
+  name: Sequence Accessions to TCIDs
+  product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
+- category: Product
+  description: Tab-delimited table mapping systems, subfamilies, and families to
+    superfamilies. The URL ends in .py, but this endpoint serves data, not Python
+    source code.
+  format: tsv
+  id: tcdb.download.superfamilies
+  name: TC Superfamily Mapping
+  product_url: https://www.tcdb.org/cgi-bin/substrates/listSuperfamilies.py
+- category: Product
+  description: Tab-delimited table mapping protein accessions to TC identifiers.
+    The URL ends in .py, but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.acc2tcid
+  name: Accessions to TCIDs
+  product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
+- category: Product
+  description: Tab-delimited annotation mapping table for TC systems. The URL ends
+    in .py, but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.go
+  name: TC Annotation Mapping Table
+  product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
+- category: Product
+  description: Tab-delimited structure mapping table for TC systems. The URL ends
+    in .py, but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.pdb
+  name: TC Structure Mapping Table
+  product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
+- category: Product
+  description: Tab-delimited protein family mapping table for TC systems. The URL
+    ends in .py, but this endpoint serves data, not Python source code.
+  format: tsv
+  id: tcdb.download.pfam
+  name: TC Protein Family Mapping Table
+  product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -191,10 +279,11 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- TCDB
+- Transporter Classification Database
 ---
-# Tcdb
+# Transporter Classification Database (TCDB)
 
-This is an automatically generated stub page for tcdb. Please update with proper information.
+TCDB is a curated classification resource for membrane transport proteins that organizes
+transport systems into a hierarchical transporter classification scheme.
