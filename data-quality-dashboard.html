@@ -31,6 +31,14 @@ title: Data Quality Dashboard
             <h3>Status / Date Signals</h3>
             <div id="date-bars"></div>
         </div>
+        <div class="col-lg-6 mb-4">
+            <h3>Identifiers & Contacts</h3>
+            <div id="identity-bars"></div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h3>KnowledgeGraph Evaluation Coverage</h3>
+            <div id="kg-eval-bars"></div>
+        </div>
     </div>
 
     <h2 class="mt-2">Top 10 Resources Most In Need Of Improvement</h2>
@@ -51,6 +59,25 @@ title: Data Quality Dashboard
             <tbody></tbody>
         </table>
     </div>
+
+    <h2 class="mt-4">How Issue Score Is Calculated</h2>
+    <p class="text-muted">
+        A resource score is the sum of weighted issue counts:
+        <code>score = Σ(weight × issue_count)</code>.
+        Higher scores mean the resource is likely in greater need of curation.
+    </p>
+    <div class="table-responsive">
+        <table class="table table-sm table-bordered" id="score-weights-table">
+            <thead>
+            <tr>
+                <th>Issue Key</th>
+                <th>Weight</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <p class="text-muted small" id="unscored-metrics"></p>
 </div>
 
 <style>
@@ -145,9 +172,13 @@ function renderCards(data) {
         { label: 'Products', value: data.products.total },
         { label: 'Stub Resources', value: data.resources.stub_count },
         { label: 'Resources Without Products', value: data.resources.without_products },
+        { label: 'Missing infores_id', value: data.resources.missing_infores_id || 0 },
+        { label: 'Missing license', value: data.resources.missing_license || 0 },
+        { label: 'Missing contacts', value: data.resources.missing_contacts || 0 },
+        { label: 'Contacts Not Linked To Org', value: data.resources.contacts_without_org_connection || 0 },
         { label: 'Broken URLs', value: data.links.broken_urls },
-        { label: 'Unchecked URLs', value: data.links.unchecked_urls },
         { label: 'Resources With Broken Links', value: data.resources.with_broken_links },
+        { label: 'KG Missing Eval Page', value: data.knowledge_graph_evaluations?.without_evaluation_page || 0 },
         { label: 'Avg Issue Score', value: data.scoring.average_score }
     ];
 
@@ -209,6 +240,25 @@ function renderTopResources(data) {
     });
 }
 
+function renderScoreDocumentation(data) {
+    const tbody = document.querySelector('#score-weights-table tbody');
+    tbody.innerHTML = '';
+    const weights = data.scoring?.weights || {};
+    Object.entries(weights)
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .forEach(([key, weight]) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td><code>${key}</code></td><td>${fmt(weight)}</td>`;
+            tbody.appendChild(tr);
+        });
+
+    const unscored = data.scoring?.tracked_but_unscored_metrics || [];
+    const text = unscored.length
+        ? `Tracked but currently unscored metrics: ${unscored.join(', ')}.`
+        : 'All tracked metrics shown in this table are currently included in the issue score.';
+    document.getElementById('unscored-metrics').textContent = text;
+}
+
 async function loadDashboard() {
     const errorNode = document.getElementById('dashboard-error');
     try {
@@ -253,7 +303,23 @@ async function loadDashboard() {
             { label: 'Stale >365 days', value: data.dates.stale_over_365_days || 0, color: '#5f3dc4' }
         ], dateTotal);
 
+        renderBars('identity-bars', [
+            { label: 'Missing license', value: data.resources.missing_license || 0, color: '#9c36b5' },
+            { label: 'Missing repository', value: data.resources.missing_repository || 0, color: '#7048e8' },
+            { label: 'Missing infores_id', value: data.resources.missing_infores_id || 0, color: '#1c7ed6' },
+            { label: 'Missing fairsharing_id', value: data.resources.missing_fairsharing_id || 0, color: '#1098ad' },
+            { label: 'Missing contacts', value: data.resources.missing_contacts || 0, color: '#f76707' },
+            { label: 'Contacts not linked to Organization', value: data.resources.contacts_without_org_connection || 0, color: '#c92a2a' }
+        ], resourceTotal);
+
+        const kgTotal = data.knowledge_graph_evaluations?.knowledge_graph_total || 0;
+        renderBars('kg-eval-bars', [
+            { label: 'KGs with evaluation page', value: data.knowledge_graph_evaluations?.with_evaluation_page || 0, color: '#2f9e44' },
+            { label: 'KGs without evaluation page', value: data.knowledge_graph_evaluations?.without_evaluation_page || 0, color: '#c92a2a' }
+        ], kgTotal);
+
         renderTopResources(data);
+        renderScoreDocumentation(data);
         document.getElementById('dashboard-content').style.display = 'block';
     } catch (error) {
         errorNode.textContent = `Unable to load dashboard metrics: ${error.message}`;

@@ -33,9 +33,14 @@ def test_build_dashboard_data_counts_and_scoring():
         {
             "id": "res2",
             "name": "Resource Two",
+            "category": "DataSource",
             "activity_status": "active",
             "description": "Has products",
             "homepage_url": "https://example.org/res2",
+            "repository": "https://github.com/example/res2",
+            "infores_id": "res2",
+            "license": {"id": "https://creativecommons.org/licenses/by/4.0/", "label": "CC BY 4.0"},
+            "contacts": [{"category": "Organization", "id": "ncbi", "label": "NCBI"}],
             "creation_date": "2026-01-01T00:00:00Z",
             "last_modified_date": "2026-01-10T00:00:00Z",
             "products": [
@@ -74,6 +79,8 @@ def test_build_dashboard_data_counts_and_scoring():
 
     data = mod.build_dashboard_data(
         resources,
+        org_index={"ids": {"ncbi"}, "short_ids": set(), "labels": {
+            "nationalcenterforbiotechnologyinformation"}},
         url_results=url_results,
         now=now,
         link_mode="live",
@@ -84,6 +91,13 @@ def test_build_dashboard_data_counts_and_scoring():
     assert data["resources"]["total"] == 2
     assert data["resources"]["stub_count"] == 1
     assert data["resources"]["without_products"] == 1
+    assert data["resources"]["missing_license"] == 1
+    assert data["resources"]["missing_repository"] == 1
+    assert data["resources"]["missing_infores_id"] == 1
+    assert data["resources"]["missing_fairsharing_id"] == 2
+    assert data["resources"]["missing_contacts"] == 1
+    assert data["resources"]["contacts_with_org_connection"] == 1
+    assert data["resources"]["contacts_without_org_connection"] == 0
     assert data["products"]["total"] == 2
     assert data["products"]["missing_format"] == 1
     assert data["products"]["missing_original_source"] == 1
@@ -98,6 +112,48 @@ def test_build_dashboard_data_counts_and_scoring():
     assert len(top) == 2
     assert top[0]["id"] == "stubres"
     assert top[0]["score"] > top[1]["score"]
+
+
+def test_knowledge_graph_evaluation_coverage():
+    repo_root = Path(__file__).resolve().parents[1]
+    mod = _load_quality_dashboard_module(repo_root)
+
+    now = datetime(2026, 2, 16, tzinfo=timezone.utc)
+    resources = [
+        {
+            "id": "drugmechdb",
+            "name": "DrugMechDB",
+            "category": "KnowledgeGraph",
+            "_resource_file": "resource/drugmechdb/drugmechdb.md",
+        },
+        {
+            "id": "smart",
+            "name": "SMART",
+            "category": "KnowledgeGraph",
+            "_resource_file": "resource/smart/smart.md",
+        },
+    ]
+
+    data = mod.build_dashboard_data(
+        resources,
+        org_index={"ids": set(), "short_ids": set(), "labels": set()},
+        url_results={},
+        now=now,
+        link_mode="cache-or-unchecked",
+        link_summary={
+            "total_unique_urls": 0,
+            "live_checked_urls": 0,
+            "cache_hits": 0,
+            "healthy_urls": 0,
+            "broken_urls": 0,
+            "unchecked_urls": 0,
+        },
+        cache_path=repo_root / "cache" / "quality_url_status_cache.yml",
+    )
+
+    assert data["knowledge_graph_evaluations"]["knowledge_graph_total"] == 2
+    assert data["knowledge_graph_evaluations"]["with_evaluation_page"] == 1
+    assert data["knowledge_graph_evaluations"]["without_evaluation_page"] == 1
 
 
 def test_normalize_cache_entry_with_legacy_skip_reason():

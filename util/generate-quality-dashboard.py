@@ -34,6 +34,12 @@ ISSUE_WEIGHTS = {
     "no_products": 8,
     "missing_description": 3,
     "missing_homepage_url": 3,
+    "missing_license": 2,
+    "missing_repository": 2,
+    "missing_infores_id": 3,
+    "missing_contacts": 2,
+    "contacts_not_connected_to_org": 1,
+    "kg_missing_evaluation_page": 2,
     "missing_creation_date": 2,
     "missing_last_modified_date": 2,
     "unchanged_since_creation": 2,
@@ -49,6 +55,12 @@ ISSUE_LABELS = {
     "no_products": "No products listed",
     "missing_description": "Missing description",
     "missing_homepage_url": "Missing homepage_url",
+    "missing_license": "Missing license",
+    "missing_repository": "Missing repository",
+    "missing_infores_id": "Missing infores_id",
+    "missing_contacts": "Missing contacts",
+    "contacts_not_connected_to_org": "Contacts not linked to Organization entry",
+    "kg_missing_evaluation_page": "KnowledgeGraph missing evaluation page",
     "missing_creation_date": "Missing creation_date",
     "missing_last_modified_date": "Missing last_modified_date",
     "unchanged_since_creation": "Not modified since creation",
@@ -160,6 +172,96 @@ def parse_datetime(value: Any) -> Optional[datetime]:
         except ValueError:
             return None
     return None
+
+
+def has_license_data(value: Any) -> bool:
+    if isinstance(value, str):
+        return value.strip() != ""
+    if isinstance(value, dict):
+        for key in ("id", "label", "url"):
+            if is_non_empty_text(value.get(key)):
+                return True
+        return False
+    return False
+
+
+def normalize_text(value: Any) -> str:
+    if not isinstance(value, str):
+        return ""
+    return re.sub(r"[^a-z0-9]", "", value.lower())
+
+
+def load_organization_index() -> Dict[str, set[str]]:
+    org_dir = ROOT / "org"
+    org_ids: set[str] = set()
+    org_short_ids: set[str] = set()
+    org_labels: set[str] = set()
+
+    if not org_dir.exists():
+        return {"ids": org_ids, "short_ids": org_short_ids, "labels": org_labels}
+
+    for subdir in org_dir.iterdir():
+        if not subdir.is_dir():
+            continue
+        md_files = sorted(subdir.glob("*.md"))
+        if not md_files:
+            continue
+        metadata, _, error = load_frontmatter_file(md_files[0], use_ruamel=False)
+        if error is not None or metadata is None:
+            continue
+        if is_non_empty_text(metadata.get("id")):
+            org_ids.add(str(metadata["id"]).strip().lower())
+        if is_non_empty_text(metadata.get("short_id")):
+            org_short_ids.add(str(metadata["short_id"]).strip().lower())
+        if is_non_empty_text(metadata.get("label")):
+            org_labels.add(normalize_text(metadata["label"]))
+
+    return {"ids": org_ids, "short_ids": org_short_ids, "labels": org_labels}
+
+
+def contact_links_to_organization(contact: Dict[str, Any], org_index: Dict[str, set[str]]) -> bool:
+    contact_id = contact.get("id")
+    if is_non_empty_text(contact_id):
+        cid = str(contact_id).strip().lower()
+        if cid in org_index["ids"] or cid in org_index["short_ids"]:
+            return True
+
+    # Labels are used widely for organization contacts, often without an explicit ID.
+    contact_label = contact.get("label") or contact.get("name")
+    if is_non_empty_text(contact_label):
+        normalized = normalize_text(contact_label)
+        if normalized and normalized in org_index["labels"]:
+            return True
+
+    return False
+
+
+def has_evaluation_page(resource: Dict[str, Any]) -> bool:
+    rel_resource_file = resource.get("_resource_file")
+    if not is_non_empty_text(rel_resource_file):
+        return False
+
+    resource_path = ROOT / str(rel_resource_file)
+    if not resource_path.exists():
+        return False
+
+    resource_dir = resource_path.parent
+    main_stem = resource_path.stem
+    for md_file in resource_dir.glob("*.md"):
+        if md_file.name == f"{main_stem}.md":
+            continue
+
+        # Fast path by filename convention.
+        if "_eval" in md_file.stem:
+            return True
+
+        metadata, _, error = load_frontmatter_file(md_file, use_ruamel=False)
+        if error is not None or metadata is None:
+            continue
+        if str(metadata.get("layout", "")).strip() == "eval_detail":
+            return True
+
+    return False
 
 
 def load_resources(resource_dir: Path) -> List[Dict[str, Any]]:
@@ -444,6 +546,7 @@ def add_scored_issue(
 def build_dashboard_data(
     resources: List[Dict[str, Any]],
     *,
+    org_index: Dict[str, set[str]],
     url_results: Dict[str, Dict[str, Any]],
     now: datetime,
     link_mode: str,
@@ -455,6 +558,13 @@ def build_dashboard_data(
     without_products = 0
     missing_description = 0
     missing_homepage = 0
+    missing_license = 0
+    missing_repository = 0
+    missing_infores_id = 0
+    missing_fairsharing_id = 0
+    missing_contacts = 0
+    contacts_with_org_connection = 0
+    contacts_without_org_connection = 0
 
     total_products = 0
     products_missing_format = 0
@@ -468,6 +578,10 @@ def build_dashboard_data(
     missing_creation_date = 0
     missing_last_modified_date = 0
     stale_over_365 = 0
+
+    kg_total = 0
+    kg_with_evaluation_page = 0
+    kg_without_evaluation_page = 0
 
     top_records: List[Dict[str, Any]] = []
     resource_broken_map: Dict[str, Dict[str, List[str]]] = {}
@@ -497,6 +611,39 @@ def build_dashboard_data(
             missing_description += 1
         if not is_non_empty_text(resource.get("homepage_url")):
             missing_homepage += 1
+        if not has_license_data(resource.get("license")):
+            missing_license += 1
+        if not is_non_empty_text(resource.get("repository")):
+            missing_repository += 1
+        if not is_non_empty_text(resource.get("infores_id")):
+            missing_infores_id += 1
+        if not is_non_empty_text(resource.get("fairsharing_id")):
+            missing_fairsharing_id += 1
+
+        contacts = ensure_list(resource.get("contacts"))
+        has_contacts = len(contacts) > 0
+        if not has_contacts:
+            missing_contacts += 1
+        else:
+            has_org_connection = False
+            for contact in contacts:
+                if isinstance(contact, dict) and contact_links_to_organization(contact, org_index):
+                    has_org_connection = True
+                    break
+            if has_org_connection:
+                contacts_with_org_connection += 1
+            else:
+                contacts_without_org_connection += 1
+
+        is_knowledge_graph = str(resource.get("category", "")).strip() == "KnowledgeGraph"
+        evaluation_present = False
+        if is_knowledge_graph:
+            kg_total += 1
+            evaluation_present = has_evaluation_page(resource)
+            if evaluation_present:
+                kg_with_evaluation_page += 1
+            else:
+                kg_without_evaluation_page += 1
 
         creation_dt = parse_datetime(resource.get("creation_date"))
         modified_dt = parse_datetime(resource.get("last_modified_date"))
@@ -524,6 +671,18 @@ def build_dashboard_data(
             score += add_scored_issue(issues, issue_key="missing_description")
         if not is_non_empty_text(resource.get("homepage_url")):
             score += add_scored_issue(issues, issue_key="missing_homepage_url")
+        if not has_license_data(resource.get("license")):
+            score += add_scored_issue(issues, issue_key="missing_license")
+        if not is_non_empty_text(resource.get("repository")):
+            score += add_scored_issue(issues, issue_key="missing_repository")
+        if not is_non_empty_text(resource.get("infores_id")):
+            score += add_scored_issue(issues, issue_key="missing_infores_id")
+        if not has_contacts:
+            score += add_scored_issue(issues, issue_key="missing_contacts")
+        elif not has_org_connection:
+            score += add_scored_issue(issues, issue_key="contacts_not_connected_to_org")
+        if is_knowledge_graph and not evaluation_present:
+            score += add_scored_issue(issues, issue_key="kg_missing_evaluation_page")
         if creation_dt is None:
             score += add_scored_issue(issues, issue_key="missing_creation_date")
         if modified_dt is None:
@@ -674,6 +833,13 @@ def build_dashboard_data(
             "without_products": without_products,
             "missing_description": missing_description,
             "missing_homepage_url": missing_homepage,
+            "missing_license": missing_license,
+            "missing_repository": missing_repository,
+            "missing_infores_id": missing_infores_id,
+            "missing_fairsharing_id": missing_fairsharing_id,
+            "missing_contacts": missing_contacts,
+            "contacts_with_org_connection": contacts_with_org_connection,
+            "contacts_without_org_connection": contacts_without_org_connection,
             "with_broken_links": resources_with_broken_links,
         },
         "products": {
@@ -696,8 +862,14 @@ def build_dashboard_data(
             "cache_path": cache_path_display,
             **link_summary,
         },
+        "knowledge_graph_evaluations": {
+            "knowledge_graph_total": kg_total,
+            "with_evaluation_page": kg_with_evaluation_page,
+            "without_evaluation_page": kg_without_evaluation_page,
+        },
         "scoring": {
             "weights": ISSUE_WEIGHTS,
+            "tracked_but_unscored_metrics": ["missing_fairsharing_id"],
             "average_score": average_score,
             "median_score": median_score,
             "resources_with_issues": sum(1 for score in scores if score > 0),
@@ -719,6 +891,7 @@ def main() -> int:
     resources = load_resources(resource_dir)
     if not resources:
         raise RuntimeError(f"No resources loaded from {resource_dir}")
+    org_index = load_organization_index()
 
     # Gather all URLs up front for global link checks.
     all_urls: List[str] = []
@@ -748,6 +921,7 @@ def main() -> int:
 
     data = build_dashboard_data(
         resources,
+        org_index=org_index,
         url_results=url_results,
         now=now,
         link_mode="live" if args.check_links else "cache-or-unchecked",
