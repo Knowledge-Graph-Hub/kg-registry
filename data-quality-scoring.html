@@ -1,0 +1,85 @@
+---
+layout: default
+title: Data Quality Scoring
+---
+
+<h1>Data Quality Scoring</h1>
+<p class="text-muted">
+    This page explains how the Data Quality Dashboard computes the issue score used to rank
+    resources most in need of improvement.
+</p>
+<p>
+    <a class="btn btn-outline-secondary btn-sm" href="data-quality-dashboard.html">Back to Data Quality Dashboard</a>
+</p>
+
+<h2>Formula</h2>
+<p>
+    The score is calculated as:
+    <code>score = Σ(weight × issue_count)</code>
+</p>
+<p class="text-muted">
+    A higher score indicates more (or more severe) quality issues for that resource.
+</p>
+
+<h2>Current Weights</h2>
+<p class="text-muted small" id="scoring-meta"></p>
+<div class="table-responsive">
+    <table class="table table-sm table-bordered" id="score-weights-table">
+        <thead>
+        <tr>
+            <th>Issue Key</th>
+            <th>Weight</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<h2>Tracked But Unscored Metrics</h2>
+<p class="text-muted" id="unscored-metrics"></p>
+
+<div id="scoring-error" class="alert alert-warning" style="display:none;" role="alert"></div>
+
+<script>
+const numberFmt = new Intl.NumberFormat();
+function fmt(value) {
+    return numberFmt.format(value ?? 0);
+}
+
+async function loadScoring() {
+    const errorNode = document.getElementById('scoring-error');
+    try {
+        const response = await fetch('reports/quality-dashboard.json');
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+        const data = await response.json();
+        const weights = data.scoring?.weights || {};
+
+        const tbody = document.querySelector('#score-weights-table tbody');
+        tbody.innerHTML = '';
+        Object.entries(weights)
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+            .forEach(([key, weight]) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td><code>${key}</code></td><td>${fmt(weight)}</td>`;
+                tbody.appendChild(tr);
+            });
+
+        const generated = data.generated_at || 'unknown';
+        document.getElementById('scoring-meta').textContent =
+            `Loaded from reports/quality-dashboard.json (generated ${generated}).`;
+
+        const unscored = data.scoring?.tracked_but_unscored_metrics || [];
+        const unscoredText = unscored.length
+            ? unscored.join(', ')
+            : 'None currently.';
+        document.getElementById('unscored-metrics').textContent = unscoredText;
+    } catch (error) {
+        errorNode.textContent = `Unable to load scoring details: ${error.message}`;
+        errorNode.style.display = 'block';
+    }
+}
+
+loadScoring();
+</script>

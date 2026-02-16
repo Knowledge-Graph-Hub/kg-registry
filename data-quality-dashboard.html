@@ -7,91 +7,106 @@ title: Data Quality Dashboard
 <p class="text-muted">
     Quality metrics for KG-Registry resources, including completeness, access checks, and status-change signals.
 </p>
+<p>
+    <a class="btn btn-outline-primary btn-sm" href="data-quality-scoring.html">
+        How Issue Score Is Calculated
+    </a>
+</p>
 <p id="dashboard-meta" class="text-muted small"></p>
 
 <div id="dashboard-error" class="alert alert-warning" style="display:none;" role="alert"></div>
 
 <div id="dashboard-content" style="display:none;">
-    <div id="summary-cards" class="quality-summary-grid"></div>
+    <div class="quality-layout">
+        <div class="quality-main">
+            <div id="summary-cards" class="quality-summary-grid"></div>
 
-    <div class="row mt-4">
-        <div class="col-lg-6 mb-4">
-            <h3>Resource Completeness</h3>
-            <div id="resource-bars"></div>
+            <div class="row mt-4">
+                <div class="col-lg-6 mb-4">
+                    <h3>Resource Completeness</h3>
+                    <div id="resource-bars"></div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3>Product Completeness</h3>
+                    <div id="product-bars"></div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3>Access Health</h3>
+                    <div id="access-bars"></div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3>Status / Date Signals</h3>
+                    <div id="date-bars"></div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3>Identifiers & Contacts</h3>
+                    <div id="identity-bars"></div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3>KnowledgeGraph Evaluation Coverage</h3>
+                    <div id="kg-eval-bars"></div>
+                </div>
+            </div>
+
+            <h2 class="mt-2">Top 10 Resources Most In Need Of Improvement</h2>
+            <p class="text-muted small">
+                Ranked by weighted issue score from missing metadata, stub status, and access failures.
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped table-sm align-middle" id="top-resources-table">
+                    <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Resource</th>
+                        <th>Score</th>
+                        <th>Main Issues</th>
+                        <th>Broken Links</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
-        <div class="col-lg-6 mb-4">
-            <h3>Product Completeness</h3>
-            <div id="product-bars"></div>
-        </div>
-        <div class="col-lg-6 mb-4">
-            <h3>Access Health</h3>
-            <div id="access-bars"></div>
-        </div>
-        <div class="col-lg-6 mb-4">
-            <h3>Status / Date Signals</h3>
-            <div id="date-bars"></div>
-        </div>
-        <div class="col-lg-6 mb-4">
-            <h3>Identifiers & Contacts</h3>
-            <div id="identity-bars"></div>
-        </div>
-        <div class="col-lg-6 mb-4">
-            <h3>KnowledgeGraph Evaluation Coverage</h3>
-            <div id="kg-eval-bars"></div>
-        </div>
+
+        <aside class="quality-sidebar">
+            <div class="quality-sidebar-inner">
+                <h2>Category Match List</h2>
+                <p class="text-muted small">
+                    Click a metric label to view matching Resource/Product IDs.
+                </p>
+                <p id="detail-list-meta" class="text-muted small">No category selected.</p>
+                <pre id="detail-list-output" class="quality-list-view"></pre>
+            </div>
+        </aside>
     </div>
-
-    <h2 class="mt-2">Top 10 Resources Most In Need Of Improvement</h2>
-    <p class="text-muted small">
-        Ranked by weighted issue score from missing metadata, stub status, and access failures.
-    </p>
-    <div class="table-responsive">
-        <table class="table table-striped table-sm align-middle" id="top-resources-table">
-            <thead>
-            <tr>
-                <th>Rank</th>
-                <th>Resource</th>
-                <th>Score</th>
-                <th>Main Issues</th>
-                <th>Broken Links</th>
-            </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
-
-    <h2 class="mt-4">How Issue Score Is Calculated</h2>
-    <p class="text-muted">
-        A resource score is the sum of weighted issue counts:
-        <code>score = Σ(weight × issue_count)</code>.
-        Higher scores mean the resource is likely in greater need of curation.
-    </p>
-    <div class="table-responsive">
-        <table class="table table-sm table-bordered" id="score-weights-table">
-            <thead>
-            <tr>
-                <th>Issue Key</th>
-                <th>Weight</th>
-            </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
-    <p class="text-muted small" id="unscored-metrics"></p>
-
-    <h2 class="mt-4">Category Match List</h2>
-    <p class="text-muted small">
-        Click a metric label above to view matching Resource/Product IDs.
-    </p>
-    <p id="detail-list-meta" class="text-muted small">No category selected.</p>
-    <pre id="detail-list-output" class="quality-list-view"></pre>
 </div>
 
 <style>
 .quality-summary-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 12px;
+}
+
+.quality-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.quality-main {
+    flex: 1 1 66%;
+    min-width: 0;
+}
+
+.quality-sidebar {
+    flex: 0 0 32%;
+    max-width: 420px;
+}
+
+.quality-sidebar-inner {
+    position: sticky;
+    top: 12px;
 }
 
 .quality-card {
@@ -163,8 +178,8 @@ title: Data Quality Dashboard
 }
 
 .quality-list-view {
-    min-height: 120px;
-    max-height: 380px;
+    min-height: 260px;
+    max-height: calc(100vh - 220px);
     overflow: auto;
     border: 1px solid #dee2e6;
     border-radius: 6px;
@@ -172,6 +187,23 @@ title: Data Quality Dashboard
     background: #fcfdff;
     white-space: pre-wrap;
     word-break: break-word;
+}
+
+@media (max-width: 1200px) {
+    .quality-layout {
+        flex-direction: column;
+    }
+    .quality-sidebar {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+    .quality-sidebar-inner {
+        position: static;
+    }
+    .quality-list-view {
+        max-height: 360px;
+    }
 }
 </style>
 
@@ -278,25 +310,6 @@ function renderTopResources(data) {
     });
 }
 
-function renderScoreDocumentation(data) {
-    const tbody = document.querySelector('#score-weights-table tbody');
-    tbody.innerHTML = '';
-    const weights = data.scoring?.weights || {};
-    Object.entries(weights)
-        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-        .forEach(([key, weight]) => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `<td><code>${key}</code></td><td>${fmt(weight)}</td>`;
-            tbody.appendChild(tr);
-        });
-
-    const unscored = data.scoring?.tracked_but_unscored_metrics || [];
-    const text = unscored.length
-        ? `Tracked but currently unscored metrics: ${unscored.join(', ')}.`
-        : 'All tracked metrics shown in this table are currently included in the issue score.';
-    document.getElementById('unscored-metrics').textContent = text;
-}
-
 function showDetailList(detailKey, label) {
     const lists = dashboardData?.detail_lists || {};
     const values = lists[detailKey] || [];
@@ -381,7 +394,6 @@ async function loadDashboard() {
         ], kgTotal);
 
         renderTopResources(data);
-        renderScoreDocumentation(data);
         document.getElementById('dashboard-content').style.display = 'block';
     } catch (error) {
         errorNode.textContent = `Unable to load dashboard metrics: ${error.message}`;
