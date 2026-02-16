@@ -553,6 +553,37 @@ def build_dashboard_data(
     link_summary: Dict[str, Any],
     cache_path: Path,
 ) -> Dict[str, Any]:
+    detail_lists: Dict[str, set[str]] = {
+        "resource_total_ids": set(),
+        "product_total_ids": set(),
+        "stub_resource_ids": set(),
+        "resources_without_products_ids": set(),
+        "missing_description_resource_ids": set(),
+        "missing_homepage_url_resource_ids": set(),
+        "missing_license_resource_ids": set(),
+        "missing_repository_resource_ids": set(),
+        "missing_infores_id_resource_ids": set(),
+        "missing_fairsharing_id_resource_ids": set(),
+        "missing_contacts_resource_ids": set(),
+        "contacts_with_org_connection_resource_ids": set(),
+        "contacts_without_org_connection_resource_ids": set(),
+        "products_missing_format_ids": set(),
+        "products_missing_original_source_ids": set(),
+        "products_missing_product_url_ids": set(),
+        "retrieval_warning_product_ids": set(),
+        "healthy_link_page_ids": set(),
+        "broken_link_page_ids": set(),
+        "unchecked_link_page_ids": set(),
+        "resource_with_broken_links_ids": set(),
+        "modified_after_creation_resource_ids": set(),
+        "unchanged_since_creation_resource_ids": set(),
+        "missing_creation_date_resource_ids": set(),
+        "missing_last_modified_date_resource_ids": set(),
+        "stale_over_365_days_resource_ids": set(),
+        "kg_with_evaluation_page_resource_ids": set(),
+        "kg_without_evaluation_page_resource_ids": set(),
+    }
+
     status_counts: Dict[str, int] = {}
     stub_count = 0
     without_products = 0
@@ -586,13 +617,15 @@ def build_dashboard_data(
     top_records: List[Dict[str, Any]] = []
     resource_broken_map: Dict[str, Dict[str, List[str]]] = {}
 
-    # Collect URL references with resource context for per-resource broken-link counts.
-    url_targets: List[Tuple[str, str]] = []
+    # Collect URL references with resource and page context for link-category lists.
+    # Tuple: (resource_id, page_id, url)
+    url_targets: List[Tuple[str, str, str]] = []
 
     for resource in resources:
         resource_id = str(resource.get("id", "unknown"))
         resource_name = resource.get("name") if is_non_empty_text(
             resource.get("name")) else resource_id
+        detail_lists["resource_total_ids"].add(resource_id)
 
         activity_status = str(resource.get("activity_status", "unknown"))
         status_counts[activity_status] = status_counts.get(activity_status, 0) + 1
@@ -602,28 +635,37 @@ def build_dashboard_data(
         has_stub_domain = "stub" in domains
         if has_stub_domain:
             stub_count += 1
+            detail_lists["stub_resource_ids"].add(resource_id)
 
         products = ensure_list(resource.get("products"))
         if len(products) == 0:
             without_products += 1
+            detail_lists["resources_without_products_ids"].add(resource_id)
 
         if not is_non_empty_text(resource.get("description")):
             missing_description += 1
+            detail_lists["missing_description_resource_ids"].add(resource_id)
         if not is_non_empty_text(resource.get("homepage_url")):
             missing_homepage += 1
+            detail_lists["missing_homepage_url_resource_ids"].add(resource_id)
         if not has_license_data(resource.get("license")):
             missing_license += 1
+            detail_lists["missing_license_resource_ids"].add(resource_id)
         if not is_non_empty_text(resource.get("repository")):
             missing_repository += 1
+            detail_lists["missing_repository_resource_ids"].add(resource_id)
         if not is_non_empty_text(resource.get("infores_id")):
             missing_infores_id += 1
+            detail_lists["missing_infores_id_resource_ids"].add(resource_id)
         if not is_non_empty_text(resource.get("fairsharing_id")):
             missing_fairsharing_id += 1
+            detail_lists["missing_fairsharing_id_resource_ids"].add(resource_id)
 
         contacts = ensure_list(resource.get("contacts"))
         has_contacts = len(contacts) > 0
         if not has_contacts:
             missing_contacts += 1
+            detail_lists["missing_contacts_resource_ids"].add(resource_id)
         else:
             has_org_connection = False
             for contact in contacts:
@@ -632,8 +674,10 @@ def build_dashboard_data(
                     break
             if has_org_connection:
                 contacts_with_org_connection += 1
+                detail_lists["contacts_with_org_connection_resource_ids"].add(resource_id)
             else:
                 contacts_without_org_connection += 1
+                detail_lists["contacts_without_org_connection_resource_ids"].add(resource_id)
 
         is_knowledge_graph = str(resource.get("category", "")).strip() == "KnowledgeGraph"
         evaluation_present = False
@@ -642,23 +686,30 @@ def build_dashboard_data(
             evaluation_present = has_evaluation_page(resource)
             if evaluation_present:
                 kg_with_evaluation_page += 1
+                detail_lists["kg_with_evaluation_page_resource_ids"].add(resource_id)
             else:
                 kg_without_evaluation_page += 1
+                detail_lists["kg_without_evaluation_page_resource_ids"].add(resource_id)
 
         creation_dt = parse_datetime(resource.get("creation_date"))
         modified_dt = parse_datetime(resource.get("last_modified_date"))
         if creation_dt is None:
             missing_creation_date += 1
+            detail_lists["missing_creation_date_resource_ids"].add(resource_id)
         if modified_dt is None:
             missing_last_modified_date += 1
+            detail_lists["missing_last_modified_date_resource_ids"].add(resource_id)
         if creation_dt is not None and modified_dt is not None:
             with_both_dates += 1
             if modified_dt > creation_dt:
                 modified_after_creation += 1
+                detail_lists["modified_after_creation_resource_ids"].add(resource_id)
             else:
                 unchanged_since_creation += 1
+                detail_lists["unchanged_since_creation_resource_ids"].add(resource_id)
             if (now - modified_dt).days > 365:
                 stale_over_365 += 1
+                detail_lists["stale_over_365_days_resource_ids"].add(resource_id)
 
         score = 0
         issues: List[Dict[str, Any]] = []
@@ -696,21 +747,28 @@ def build_dashboard_data(
         for key in ("homepage_url", "repository"):
             url_value = resource.get(key)
             if is_non_empty_text(url_value):
-                url_targets.append((resource_id, str(url_value)))
+                url_targets.append((resource_id, resource_id, str(url_value)))
 
         missing_format_for_resource = 0
         missing_source_for_resource = 0
         missing_url_for_resource = 0
         warning_links_for_resource: set[str] = set()
 
-        for product in products:
+        for idx, product in enumerate(products):
             if not isinstance(product, dict):
                 continue
             total_products += 1
+            product_id_value = product.get("id")
+            if is_non_empty_text(product_id_value):
+                product_id = str(product_id_value)
+            else:
+                product_id = f"{resource_id}.product-{idx+1}"
+            detail_lists["product_total_ids"].add(product_id)
 
             if not is_non_empty_text(product.get("format")):
                 products_missing_format += 1
                 missing_format_for_resource += 1
+                detail_lists["products_missing_format_ids"].add(product_id)
 
             category = str(product.get("category", ""))
             if category not in INTERFACE_CATEGORIES:
@@ -719,30 +777,33 @@ def build_dashboard_data(
                 if not has_source:
                     products_missing_original_source += 1
                     missing_source_for_resource += 1
+                    detail_lists["products_missing_original_source_ids"].add(product_id)
 
             product_url = product.get("product_url")
             if is_non_empty_text(product_url):
-                url_targets.append((resource_id, str(product_url)))
+                url_targets.append((resource_id, product_id, str(product_url)))
             else:
                 products_missing_product_url += 1
                 missing_url_for_resource += 1
+                detail_lists["products_missing_product_url_ids"].add(product_id)
 
             product_repository = product.get("repository")
             if is_non_empty_text(product_repository):
-                url_targets.append((resource_id, str(product_repository)))
+                url_targets.append((resource_id, product_id, str(product_repository)))
 
             warning_values = ensure_list(product.get("warnings"))
             for warning in warning_values:
                 if isinstance(warning, str) and WARNING_RETRIEVAL_PATTERN.match(warning):
                     retrieval_warning_count += 1
+                    detail_lists["retrieval_warning_product_ids"].add(product_id)
                     if is_non_empty_text(product_url):
                         warning_url = str(product_url)
                         # If this run already has a healthy URL check, treat the warning as stale.
                         if url_results.get(warning_url, {}).get("ok") is not True:
                             warning_links_for_resource.add(warning_url)
                     else:
-                        product_id = str(product.get("id", "unknown-product"))
                         warning_links_for_resource.add(f"warning:{resource_id}:{product_id}")
+                        detail_lists["broken_link_page_ids"].add(product_id)
 
         if missing_format_for_resource:
             score += add_scored_issue(
@@ -777,8 +838,16 @@ def build_dashboard_data(
         )
 
     # Merge URL-check results into per-resource broken map.
-    for resource_id, url in url_targets:
+    for resource_id, page_id, url in url_targets:
         info = url_results.get(url, {})
+        ok = info.get("ok")
+        if ok is True:
+            detail_lists["healthy_link_page_ids"].add(page_id)
+        elif ok is False:
+            detail_lists["broken_link_page_ids"].add(page_id)
+        else:
+            detail_lists["unchecked_link_page_ids"].add(page_id)
+
         if info.get("ok") is not False:
             continue
         if resource_id not in resource_broken_map:
@@ -798,6 +867,7 @@ def build_dashboard_data(
             record["score"] += add_scored_issue(
                 record["issues"], issue_key="broken_link", count=broken_count
             )
+            detail_lists["resource_with_broken_links_ids"].add(rid)
             record["broken_links"] = [
                 {"url": url, "sources": sources}
                 for url, sources in sorted(broken_links.items(), key=lambda kv: kv[0].lower())
@@ -875,6 +945,10 @@ def build_dashboard_data(
             "resources_with_issues": sum(1 for score in scores if score > 0),
         },
         "top_resources": top_ten,
+        "detail_lists": {
+            key: sorted(values, key=lambda item: item.lower())
+            for key, values in detail_lists.items()
+        },
     }
     return data
 

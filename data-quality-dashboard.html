@@ -78,6 +78,13 @@ title: Data Quality Dashboard
         </table>
     </div>
     <p class="text-muted small" id="unscored-metrics"></p>
+
+    <h2 class="mt-4">Category Match List</h2>
+    <p class="text-muted small">
+        Click a metric label above to view matching Resource/Product IDs.
+    </p>
+    <p id="detail-list-meta" class="text-muted small">No category selected.</p>
+    <pre id="detail-list-output" class="quality-list-view"></pre>
 </div>
 
 <style>
@@ -142,10 +149,35 @@ title: Data Quality Dashboard
     padding: 2px 8px;
     margin: 2px 4px 2px 0;
 }
+
+.metric-link {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #24527a;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+    font: inherit;
+}
+
+.quality-list-view {
+    min-height: 120px;
+    max-height: 380px;
+    overflow: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 10px;
+    background: #fcfdff;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
 </style>
 
 <script>
 const numberFmt = new Intl.NumberFormat();
+let dashboardData = null;
 
 function fmt(value) {
     return numberFmt.format(value ?? 0);
@@ -168,17 +200,17 @@ function setMeta(data) {
 
 function renderCards(data) {
     const cards = [
-        { label: 'Resources', value: data.resources.total },
-        { label: 'Products', value: data.products.total },
-        { label: 'Stub Resources', value: data.resources.stub_count },
-        { label: 'Resources Without Products', value: data.resources.without_products },
-        { label: 'Missing infores_id', value: data.resources.missing_infores_id || 0 },
-        { label: 'Missing license', value: data.resources.missing_license || 0 },
-        { label: 'Missing contacts', value: data.resources.missing_contacts || 0 },
-        { label: 'Contacts Not Linked To Org', value: data.resources.contacts_without_org_connection || 0 },
-        { label: 'Broken URLs', value: data.links.broken_urls },
-        { label: 'Resources With Broken Links', value: data.resources.with_broken_links },
-        { label: 'KG Missing Eval Page', value: data.knowledge_graph_evaluations?.without_evaluation_page || 0 },
+        { label: 'Resources', detailKey: 'resource_total_ids', value: data.resources.total },
+        { label: 'Products', detailKey: 'product_total_ids', value: data.products.total },
+        { label: 'Stub Resources', detailKey: 'stub_resource_ids', value: data.resources.stub_count },
+        { label: 'Resources Without Products', detailKey: 'resources_without_products_ids', value: data.resources.without_products },
+        { label: 'Missing infores_id', detailKey: 'missing_infores_id_resource_ids', value: data.resources.missing_infores_id || 0 },
+        { label: 'Missing license', detailKey: 'missing_license_resource_ids', value: data.resources.missing_license || 0 },
+        { label: 'Missing contacts', detailKey: 'missing_contacts_resource_ids', value: data.resources.missing_contacts || 0 },
+        { label: 'Contacts Not Linked To Org', detailKey: 'contacts_without_org_connection_resource_ids', value: data.resources.contacts_without_org_connection || 0 },
+        { label: 'Broken URLs', detailKey: 'broken_link_page_ids', value: data.links.broken_urls },
+        { label: 'Resources With Broken Links', detailKey: 'resource_with_broken_links_ids', value: data.resources.with_broken_links },
+        { label: 'KG Missing Eval Page', detailKey: 'kg_without_evaluation_page_resource_ids', value: data.knowledge_graph_evaluations?.without_evaluation_page || 0 },
         { label: 'Avg Issue Score', value: data.scoring.average_score }
     ];
 
@@ -187,7 +219,10 @@ function renderCards(data) {
     cards.forEach(card => {
         const div = document.createElement('div');
         div.className = 'quality-card';
-        div.innerHTML = `<h4>${card.label}</h4><div class="value">${fmt(card.value)}</div>`;
+        const labelHtml = card.detailKey
+            ? `<button class="metric-link" data-detail-key="${card.detailKey}" data-detail-label="${card.label}">${card.label}</button>`
+            : card.label;
+        div.innerHTML = `<h4>${labelHtml}</h4><div class="value">${fmt(card.value)}</div>`;
         root.appendChild(div);
     });
 }
@@ -202,9 +237,12 @@ function renderBars(containerId, bars, total) {
         const row = document.createElement('div');
         row.className = 'bar-row';
         const percentage = Math.max(0, Math.min(100, pct(bar.value, total)));
+        const labelHtml = bar.detailKey
+            ? `<button class="metric-link" data-detail-key="${bar.detailKey}" data-detail-label="${bar.label}">${bar.label}</button>`
+            : bar.label;
         row.innerHTML = `
             <div class="bar-header">
-                <span>${bar.label}</span>
+                <span>${labelHtml}</span>
                 <span>${fmt(bar.value)} (${percentage.toFixed(1)}%)</span>
             </div>
             <div class="bar-track">
@@ -259,6 +297,29 @@ function renderScoreDocumentation(data) {
     document.getElementById('unscored-metrics').textContent = text;
 }
 
+function showDetailList(detailKey, label) {
+    const lists = dashboardData?.detail_lists || {};
+    const values = lists[detailKey] || [];
+    const meta = document.getElementById('detail-list-meta');
+    const output = document.getElementById('detail-list-output');
+    meta.textContent = `${label}: ${fmt(values.length)} matching IDs`;
+    output.textContent = values.length ? values.join('\n') : '(none)';
+}
+
+document.addEventListener('click', (event) => {
+    const target = event.target.closest('.metric-link');
+    if (!target) {
+        return;
+    }
+    event.preventDefault();
+    const key = target.dataset.detailKey;
+    const label = target.dataset.detailLabel || target.textContent.trim();
+    if (!key) {
+        return;
+    }
+    showDetailList(key, label);
+});
+
 async function loadDashboard() {
     const errorNode = document.getElementById('dashboard-error');
     try {
@@ -267,55 +328,56 @@ async function loadDashboard() {
             throw new Error(`HTTP ${response.status}`);
         }
         const data = await response.json();
+        dashboardData = data;
 
         setMeta(data);
         renderCards(data);
 
         const resourceTotal = data.resources.total || 0;
         renderBars('resource-bars', [
-            { label: 'Stub resources', value: data.resources.stub_count || 0, color: '#d94841' },
-            { label: 'Missing description', value: data.resources.missing_description || 0, color: '#f08c00' },
-            { label: 'Missing homepage_url', value: data.resources.missing_homepage_url || 0, color: '#e67700' },
-            { label: 'Without products', value: data.resources.without_products || 0, color: '#b02a37' }
+            { label: 'Stub resources', detailKey: 'stub_resource_ids', value: data.resources.stub_count || 0, color: '#d94841' },
+            { label: 'Missing description', detailKey: 'missing_description_resource_ids', value: data.resources.missing_description || 0, color: '#f08c00' },
+            { label: 'Missing homepage_url', detailKey: 'missing_homepage_url_resource_ids', value: data.resources.missing_homepage_url || 0, color: '#e67700' },
+            { label: 'Without products', detailKey: 'resources_without_products_ids', value: data.resources.without_products || 0, color: '#b02a37' }
         ], resourceTotal);
 
         const productTotal = data.products.total || 0;
         renderBars('product-bars', [
-            { label: 'Missing format', value: data.products.missing_format || 0, color: '#a61e4d' },
-            { label: 'Missing original_source', value: data.products.missing_original_source || 0, color: '#7c3aed' },
-            { label: 'Missing product_url', value: data.products.missing_product_url || 0, color: '#2563eb' },
-            { label: 'Retrieval warning mentions', value: data.products.retrieval_warning_mentions || 0, color: '#0f766e' }
+            { label: 'Missing format', detailKey: 'products_missing_format_ids', value: data.products.missing_format || 0, color: '#a61e4d' },
+            { label: 'Missing original_source', detailKey: 'products_missing_original_source_ids', value: data.products.missing_original_source || 0, color: '#7c3aed' },
+            { label: 'Missing product_url', detailKey: 'products_missing_product_url_ids', value: data.products.missing_product_url || 0, color: '#2563eb' },
+            { label: 'Retrieval warning mentions', detailKey: 'retrieval_warning_product_ids', value: data.products.retrieval_warning_mentions || 0, color: '#0f766e' }
         ], productTotal);
 
         const linkTotal = data.links.total_unique_urls || 0;
         renderBars('access-bars', [
-            { label: 'Healthy URLs', value: data.links.healthy_urls || 0, color: '#2f9e44' },
-            { label: 'Broken URLs', value: data.links.broken_urls || 0, color: '#c92a2a' },
-            { label: 'Unchecked URLs', value: data.links.unchecked_urls || 0, color: '#868e96' }
+            { label: 'Healthy URLs', detailKey: 'healthy_link_page_ids', value: data.links.healthy_urls || 0, color: '#2f9e44' },
+            { label: 'Broken URLs', detailKey: 'broken_link_page_ids', value: data.links.broken_urls || 0, color: '#c92a2a' },
+            { label: 'Unchecked URLs', detailKey: 'unchecked_link_page_ids', value: data.links.unchecked_urls || 0, color: '#868e96' }
         ], linkTotal);
 
         const dateTotal = data.resources.total || 0;
         renderBars('date-bars', [
-            { label: 'Modified after creation', value: data.dates.modified_after_creation || 0, color: '#1971c2' },
-            { label: 'Unchanged since creation', value: data.dates.unchanged_since_creation || 0, color: '#e67700' },
-            { label: 'Missing creation_date', value: data.dates.missing_creation_date || 0, color: '#c92a2a' },
-            { label: 'Missing last_modified_date', value: data.dates.missing_last_modified_date || 0, color: '#d6336c' },
-            { label: 'Stale >365 days', value: data.dates.stale_over_365_days || 0, color: '#5f3dc4' }
+            { label: 'Modified after creation', detailKey: 'modified_after_creation_resource_ids', value: data.dates.modified_after_creation || 0, color: '#1971c2' },
+            { label: 'Unchanged since creation', detailKey: 'unchanged_since_creation_resource_ids', value: data.dates.unchanged_since_creation || 0, color: '#e67700' },
+            { label: 'Missing creation_date', detailKey: 'missing_creation_date_resource_ids', value: data.dates.missing_creation_date || 0, color: '#c92a2a' },
+            { label: 'Missing last_modified_date', detailKey: 'missing_last_modified_date_resource_ids', value: data.dates.missing_last_modified_date || 0, color: '#d6336c' },
+            { label: 'Stale >365 days', detailKey: 'stale_over_365_days_resource_ids', value: data.dates.stale_over_365_days || 0, color: '#5f3dc4' }
         ], dateTotal);
 
         renderBars('identity-bars', [
-            { label: 'Missing license', value: data.resources.missing_license || 0, color: '#9c36b5' },
-            { label: 'Missing repository', value: data.resources.missing_repository || 0, color: '#7048e8' },
-            { label: 'Missing infores_id', value: data.resources.missing_infores_id || 0, color: '#1c7ed6' },
-            { label: 'Missing fairsharing_id', value: data.resources.missing_fairsharing_id || 0, color: '#1098ad' },
-            { label: 'Missing contacts', value: data.resources.missing_contacts || 0, color: '#f76707' },
-            { label: 'Contacts not linked to Organization', value: data.resources.contacts_without_org_connection || 0, color: '#c92a2a' }
+            { label: 'Missing license', detailKey: 'missing_license_resource_ids', value: data.resources.missing_license || 0, color: '#9c36b5' },
+            { label: 'Missing repository', detailKey: 'missing_repository_resource_ids', value: data.resources.missing_repository || 0, color: '#7048e8' },
+            { label: 'Missing infores_id', detailKey: 'missing_infores_id_resource_ids', value: data.resources.missing_infores_id || 0, color: '#1c7ed6' },
+            { label: 'Missing fairsharing_id', detailKey: 'missing_fairsharing_id_resource_ids', value: data.resources.missing_fairsharing_id || 0, color: '#1098ad' },
+            { label: 'Missing contacts', detailKey: 'missing_contacts_resource_ids', value: data.resources.missing_contacts || 0, color: '#f76707' },
+            { label: 'Contacts not linked to Organization', detailKey: 'contacts_without_org_connection_resource_ids', value: data.resources.contacts_without_org_connection || 0, color: '#c92a2a' }
         ], resourceTotal);
 
         const kgTotal = data.knowledge_graph_evaluations?.knowledge_graph_total || 0;
         renderBars('kg-eval-bars', [
-            { label: 'KGs with evaluation page', value: data.knowledge_graph_evaluations?.with_evaluation_page || 0, color: '#2f9e44' },
-            { label: 'KGs without evaluation page', value: data.knowledge_graph_evaluations?.without_evaluation_page || 0, color: '#c92a2a' }
+            { label: 'KGs with evaluation page', detailKey: 'kg_with_evaluation_page_resource_ids', value: data.knowledge_graph_evaluations?.with_evaluation_page || 0, color: '#2f9e44' },
+            { label: 'KGs without evaluation page', detailKey: 'kg_without_evaluation_page_resource_ids', value: data.knowledge_graph_evaluations?.without_evaluation_page || 0, color: '#c92a2a' }
         ], kgTotal);
 
         renderTopResources(data);

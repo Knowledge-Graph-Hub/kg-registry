@@ -107,6 +107,11 @@ def test_build_dashboard_data_counts_and_scoring():
     assert data["dates"]["unchanged_since_creation"] == 1
     assert data["links"]["broken_urls"] == 1
     assert data["resources"]["with_broken_links"] == 1
+    assert sorted(data["detail_lists"]["resource_total_ids"]) == ["res2", "stubres"]
+    assert sorted(data["detail_lists"]["product_total_ids"]) == ["res2.download", "res2.graph"]
+    assert data["detail_lists"]["missing_contacts_resource_ids"] == ["stubres"]
+    assert data["detail_lists"]["broken_link_page_ids"] == ["res2.download"]
+    assert data["detail_lists"]["resource_with_broken_links_ids"] == ["res2"]
 
     top = data["top_resources"]
     assert len(top) == 2
@@ -154,6 +159,8 @@ def test_knowledge_graph_evaluation_coverage():
     assert data["knowledge_graph_evaluations"]["knowledge_graph_total"] == 2
     assert data["knowledge_graph_evaluations"]["with_evaluation_page"] == 1
     assert data["knowledge_graph_evaluations"]["without_evaluation_page"] == 1
+    assert data["detail_lists"]["kg_with_evaluation_page_resource_ids"] == ["drugmechdb"]
+    assert data["detail_lists"]["kg_without_evaluation_page_resource_ids"] == ["smart"]
 
 
 def test_normalize_cache_entry_with_legacy_skip_reason():
