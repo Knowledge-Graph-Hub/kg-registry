@@ -1,0 +1,265 @@
+---
+layout: default
+title: Data Quality Dashboard
+---
+
+<h1>Data Quality Dashboard</h1>
+<p class="text-muted">
+    Quality metrics for KG-Registry resources, including completeness, access checks, and status-change signals.
+</p>
+<p id="dashboard-meta" class="text-muted small"></p>
+
+<div id="dashboard-error" class="alert alert-warning" style="display:none;" role="alert"></div>
+
+<div id="dashboard-content" style="display:none;">
+    <div id="summary-cards" class="quality-summary-grid"></div>
+
+    <div class="row mt-4">
+        <div class="col-lg-6 mb-4">
+            <h3>Resource Completeness</h3>
+            <div id="resource-bars"></div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h3>Product Completeness</h3>
+            <div id="product-bars"></div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h3>Access Health</h3>
+            <div id="access-bars"></div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h3>Status / Date Signals</h3>
+            <div id="date-bars"></div>
+        </div>
+    </div>
+
+    <h2 class="mt-2">Top 10 Resources Most In Need Of Improvement</h2>
+    <p class="text-muted small">
+        Ranked by weighted issue score from missing metadata, stub status, and access failures.
+    </p>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm align-middle" id="top-resources-table">
+            <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Resource</th>
+                <th>Score</th>
+                <th>Main Issues</th>
+                <th>Broken Links</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+.quality-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.quality-card {
+    border: 1px solid #e2e6ea;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: #fbfcfd;
+}
+
+.quality-card h4 {
+    font-size: 0.82rem;
+    color: #4e5d6b;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.quality-card .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #203246;
+}
+
+.bar-list {
+    display: grid;
+    gap: 8px;
+}
+
+.bar-row .bar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.92rem;
+    margin-bottom: 2px;
+}
+
+.bar-track {
+    height: 10px;
+    background: #e9edf2;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    min-width: 2px;
+}
+
+.issue-pill {
+    display: inline-block;
+    background: #edf2f7;
+    color: #334a62;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    padding: 2px 8px;
+    margin: 2px 4px 2px 0;
+}
+</style>
+
+<script>
+const numberFmt = new Intl.NumberFormat();
+
+function fmt(value) {
+    return numberFmt.format(value ?? 0);
+}
+
+function pct(value, total) {
+    if (!total || total <= 0) {
+        return 0;
+    }
+    return (value / total) * 100;
+}
+
+function setMeta(data) {
+    const mode = data.links?.mode || 'unknown';
+    const generated = data.generated_at || 'unknown';
+    const checked = data.links?.live_checked_urls ?? 0;
+    document.getElementById('dashboard-meta').textContent =
+        `Generated: ${generated} | Link mode: ${mode} | Live URL checks this run: ${fmt(checked)}`;
+}
+
+function renderCards(data) {
+    const cards = [
+        { label: 'Resources', value: data.resources.total },
+        { label: 'Products', value: data.products.total },
+        { label: 'Stub Resources', value: data.resources.stub_count },
+        { label: 'Resources Without Products', value: data.resources.without_products },
+        { label: 'Broken URLs', value: data.links.broken_urls },
+        { label: 'Unchecked URLs', value: data.links.unchecked_urls },
+        { label: 'Resources With Broken Links', value: data.resources.with_broken_links },
+        { label: 'Avg Issue Score', value: data.scoring.average_score }
+    ];
+
+    const root = document.getElementById('summary-cards');
+    root.innerHTML = '';
+    cards.forEach(card => {
+        const div = document.createElement('div');
+        div.className = 'quality-card';
+        div.innerHTML = `<h4>${card.label}</h4><div class="value">${fmt(card.value)}</div>`;
+        root.appendChild(div);
+    });
+}
+
+function renderBars(containerId, bars, total) {
+    const root = document.getElementById(containerId);
+    root.innerHTML = '';
+    const wrapper = document.createElement('div');
+    wrapper.className = 'bar-list';
+
+    bars.forEach(bar => {
+        const row = document.createElement('div');
+        row.className = 'bar-row';
+        const percentage = Math.max(0, Math.min(100, pct(bar.value, total)));
+        row.innerHTML = `
+            <div class="bar-header">
+                <span>${bar.label}</span>
+                <span>${fmt(bar.value)} (${percentage.toFixed(1)}%)</span>
+            </div>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:${percentage}%; background:${bar.color};"></div>
+            </div>
+        `;
+        wrapper.appendChild(row);
+    });
+
+    root.appendChild(wrapper);
+}
+
+function renderTopResources(data) {
+    const tbody = document.querySelector('#top-resources-table tbody');
+    tbody.innerHTML = '';
+    const rows = data.top_resources || [];
+    rows.forEach((item, idx) => {
+        const tr = document.createElement('tr');
+        const issueHtml = (item.issues || [])
+            .slice(0, 4)
+            .map(issue => `<span class="issue-pill">${issue.label} x${issue.count}</span>`)
+            .join('');
+        const brokenCount = item.broken_links ? item.broken_links.length : 0;
+        const href = item.resource_page || '#';
+        tr.innerHTML = `
+            <td>${idx + 1}</td>
+            <td><a href="${href}">${item.name || item.id}</a><br><small class="text-muted">${item.id}</small></td>
+            <td><strong>${fmt(item.score)}</strong></td>
+            <td>${issueHtml || '<span class="text-muted">None</span>'}</td>
+            <td>${fmt(brokenCount)}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+async function loadDashboard() {
+    const errorNode = document.getElementById('dashboard-error');
+    try {
+        const response = await fetch('reports/quality-dashboard.json');
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+        const data = await response.json();
+
+        setMeta(data);
+        renderCards(data);
+
+        const resourceTotal = data.resources.total || 0;
+        renderBars('resource-bars', [
+            { label: 'Stub resources', value: data.resources.stub_count || 0, color: '#d94841' },
+            { label: 'Missing description', value: data.resources.missing_description || 0, color: '#f08c00' },
+            { label: 'Missing homepage_url', value: data.resources.missing_homepage_url || 0, color: '#e67700' },
+            { label: 'Without products', value: data.resources.without_products || 0, color: '#b02a37' }
+        ], resourceTotal);
+
+        const productTotal = data.products.total || 0;
+        renderBars('product-bars', [
+            { label: 'Missing format', value: data.products.missing_format || 0, color: '#a61e4d' },
+            { label: 'Missing original_source', value: data.products.missing_original_source || 0, color: '#7c3aed' },
+            { label: 'Missing product_url', value: data.products.missing_product_url || 0, color: '#2563eb' },
+            { label: 'Retrieval warning mentions', value: data.products.retrieval_warning_mentions || 0, color: '#0f766e' }
+        ], productTotal);
+
+        const linkTotal = data.links.total_unique_urls || 0;
+        renderBars('access-bars', [
+            { label: 'Healthy URLs', value: data.links.healthy_urls || 0, color: '#2f9e44' },
+            { label: 'Broken URLs', value: data.links.broken_urls || 0, color: '#c92a2a' },
+            { label: 'Unchecked URLs', value: data.links.unchecked_urls || 0, color: '#868e96' }
+        ], linkTotal);
+
+        const dateTotal = data.resources.total || 0;
+        renderBars('date-bars', [
+            { label: 'Modified after creation', value: data.dates.modified_after_creation || 0, color: '#1971c2' },
+            { label: 'Unchanged since creation', value: data.dates.unchanged_since_creation || 0, color: '#e67700' },
+            { label: 'Missing creation_date', value: data.dates.missing_creation_date || 0, color: '#c92a2a' },
+            { label: 'Missing last_modified_date', value: data.dates.missing_last_modified_date || 0, color: '#d6336c' },
+            { label: 'Stale >365 days', value: data.dates.stale_over_365_days || 0, color: '#5f3dc4' }
+        ], dateTotal);
+
+        renderTopResources(data);
+        document.getElementById('dashboard-content').style.display = 'block';
+    } catch (error) {
+        errorNode.textContent = `Unable to load dashboard metrics: ${error.message}`;
+        errorNode.style.display = 'block';
+    }
+}
+
+loadDashboard();
+</script>

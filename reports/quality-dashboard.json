@@ -1,0 +1,964 @@
+{
+  "dates": {
+    "missing_creation_date": 453,
+    "missing_last_modified_date": 455,
+    "modified_after_creation": 132,
+    "stale_over_365_days": 6,
+    "unchanged_since_creation": 142,
+    "with_both_dates": 274
+  },
+  "generated_at": "2026-02-16T21:54:02Z",
+  "links": {
+    "broken_urls": 0,
+    "cache_hits": 0,
+    "cache_path": "cache/quality_url_status_cache.yml",
+    "healthy_urls": 0,
+    "live_checked_urls": 0,
+    "mode": "cache-or-unchecked",
+    "total_unique_urls": 3181,
+    "unchecked_urls": 3181
+  },
+  "products": {
+    "missing_format": 765,
+    "missing_original_source": 1376,
+    "missing_product_url": 98,
+    "retrieval_warning_mentions": 408,
+    "total": 4606
+  },
+  "resource_count": 740,
+  "resources": {
+    "missing_description": 0,
+    "missing_homepage_url": 48,
+    "status_counts": {
+      "active": 621,
+      "inactive": 102,
+      "orphaned": 7,
+      "unknown": 6,
+      "unresponsive": 4
+    },
+    "stub_count": 11,
+    "total": 740,
+    "with_broken_links": 160,
+    "without_products": 66
+  },
+  "scoring": {
+    "average_score": 10.32,
+    "median_score": 8.0,
+    "resources_with_issues": 721,
+    "weights": {
+      "broken_link": 3,
+      "missing_creation_date": 2,
+      "missing_description": 3,
+      "missing_homepage_url": 3,
+      "missing_last_modified_date": 2,
+      "no_products": 8,
+      "product_missing_format": 1,
+      "product_missing_original_source": 2,
+      "product_missing_product_url": 2,
+      "stale_last_modified": 2,
+      "stub_domain": 8,
+      "unchanged_since_creation": 2
+    }
+  },
+  "top_resources": [
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/mesh/mesh.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/mesh/mesh.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/mgi/mgi.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/mgi/mgi.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/mgi/mgi.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/reactome/reactome.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/reactome/reactome.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/rhea/rhea.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/rhea/rhea.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/ror/ror.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/ror/ror.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/slm/slm.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/slm/slm.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/slm/slm.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/zfin/zfin.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://w3id.org/biopragmatics/resources/zfin/zfin.owl"
+        }
+      ],
+      "id": "obo-db-ingest",
+      "issues": [
+        {
+          "count": 166,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 332
+        },
+        {
+          "count": 32,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 96
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_creation_date",
+          "label": "Missing creation_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_last_modified_date",
+          "label": "Missing last_modified_date",
+          "points": 2
+        },
+        {
+          "count": 2,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 2
+        }
+      ],
+      "name": "OBO Database Ingestion",
+      "resource_page": "resource/obo-db-ingest/obo-db-ingest.html",
+      "score": 434
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-02-TTD_drug_download.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-03-Drug_xrefs.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://idrblab.org/ttd/help"
+        }
+      ],
+      "id": "ttd",
+      "issues": [
+        {
+          "count": 16,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 48
+        },
+        {
+          "count": 14,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 28
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "Therapeutic Target Database",
+      "resource_page": "resource/ttd/ttd.html",
+      "score": 79
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "complexportal",
+      "issues": [
+        {
+          "count": 35,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 70
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "Complex Portal",
+      "resource_page": "resource/complexportal/complexportal.html",
+      "score": 71
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_fid_files.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_image_files.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip"
+        }
+      ],
+      "id": "foodb",
+      "issues": [
+        {
+          "count": 11,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 33
+        },
+        {
+          "count": 11,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 22
+        },
+        {
+          "count": 10,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 10
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_creation_date",
+          "label": "Missing creation_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_last_modified_date",
+          "label": "Missing last_modified_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 2
+        }
+      ],
+      "name": "FooDB",
+      "resource_page": "resource/foodb/foodb.html",
+      "score": 71
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://api.globalbioticinteractions.org/interactionFields?type=json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://zenodo.org/record/14640564/files/citations.csv.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://zenodo.org/record/14640564/files/datasets.csv.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://zenodo.org/record/14640564/files/interactions.csv.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz"
+        }
+      ],
+      "id": "globi",
+      "issues": [
+        {
+          "count": 22,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 44
+        },
+        {
+          "count": 7,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 21
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 1
+        }
+      ],
+      "name": "Global Biotic Interactions (GloBI)",
+      "resource_page": "resource/globi/globi.html",
+      "score": 66
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "bindingdb",
+      "issues": [
+        {
+          "count": 24,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 48
+        },
+        {
+          "count": 7,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 7
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_creation_date",
+          "label": "Missing creation_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_last_modified_date",
+          "label": "Missing last_modified_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 2
+        }
+      ],
+      "name": "BindingDB",
+      "resource_page": "resource/bindingdb/bindingdb.html",
+      "score": 61
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-base.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-base.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-base.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-full.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-full.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-full.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-simple.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-simple.obo"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-simple.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl.json"
+        }
+      ],
+      "id": "pcl",
+      "issues": [
+        {
+          "count": 10,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 30
+        },
+        {
+          "count": 12,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 24
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_creation_date",
+          "label": "Missing creation_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_last_modified_date",
+          "label": "Missing last_modified_date",
+          "points": 2
+        }
+      ],
+      "name": "Provisional Cell Ontology",
+      "resource_page": "resource/pcl/pcl.html",
+      "score": 58
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/blood_protein.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/brain_rna.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/normal_tissue.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/pathology.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/rna_celline.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/rna_single_cell.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/rna_tissue.tsv.zip"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.proteinatlas.org/download/subcellular_location.tsv.zip"
+        }
+      ],
+      "id": "hpa",
+      "issues": [
+        {
+          "count": 9,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 27
+        },
+        {
+          "count": 12,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 24
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        },
+        {
+          "count": 2,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 2
+        }
+      ],
+      "name": "Human Protein Atlas",
+      "resource_page": "resource/hpa/hpa.html",
+      "score": 57
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/go.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/go/extensions/go-plus.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "http://purl.obolibrary.org/obo/go/go-basic.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json"
+        },
+        {
+          "sources": [
+            "warning"
+          ],
+          "url": "https://www.genecards.org/"
+        }
+      ],
+      "id": "go",
+      "issues": [
+        {
+          "count": 11,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 22
+        },
+        {
+          "count": 6,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 18
+        },
+        {
+          "count": 9,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 9
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_creation_date",
+          "label": "Missing creation_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_last_modified_date",
+          "label": "Missing last_modified_date",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 2
+        }
+      ],
+      "name": "Gene Ontology",
+      "resource_page": "resource/go/go.html",
+      "score": 55
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "srpdb",
+      "issues": [
+        {
+          "count": 27,
+          "issue_key": "product_missing_original_source",
+          "label": "Products missing original_source",
+          "points": 54
+        }
+      ],
+      "name": "SRPDB",
+      "resource_page": "resource/srpdb/srpdb.html",
+      "score": 54
+    }
+  ]
+}

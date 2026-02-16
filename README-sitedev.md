@@ -142,6 +142,24 @@ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:4.2.0
 
 Then access the site using the Docker host's IP address rather than localhost, e.g., http://192.168.1.100:4000/kg-registry/
 
+## Data Quality Dashboard
+
+The site includes a data quality dashboard at `/kg-registry/data-quality-dashboard.html`.
+It reads metrics from `reports/quality-dashboard.json`, generated from all Resource pages.
+
+Generate/update the dashboard metrics:
+
+```shell
+make quality-dashboard
+```
+
+By default, this runs live URL checks for access metrics (broken/healthy links).
+To skip live checks and use cache/unchecked link mode:
+
+```shell
+QUALITY_DASHBOARD_CHECK_LINKS=no make quality-dashboard
+```
+
 ## Code quality
 
 1. Install the Node Package Manager (NPM) following [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)

@@ -28,6 +28,8 @@
 ### Configuration
 
 RUN = uv run
+QUALITY_DASHBOARD_CHECK_LINKS ?= yes
+QUALITY_DASHBOARD_LINK_FLAGS = $(if $(filter yes YES true TRUE 1,$(QUALITY_DASHBOARD_CHECK_LINKS)),--check-links,--no-check-links)
 
 # All resource .md files
 # Note this includes pages for individual products, too
@@ -52,7 +54,7 @@ SCHEMA_DOC_DIR = docs/schema
 SCHEMA_DIR = src/kg_registry/kg_registry_schema
 
 ### Main Tasks
-.PHONY: all pull_and_build test pull clean sync-obo-foundry
+.PHONY: all pull_and_build test pull clean sync-obo-foundry quality-dashboard
 
 all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/kgs.ttl registry/parquet registry/taxon_mapping.yaml registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
@@ -107,7 +109,7 @@ clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 clean-cache:
-	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
+	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -331,6 +333,11 @@ build:
 	mkdir -p $@
 build/resource:
 	mkdir -p $@
+
+quality-dashboard: reports/quality-dashboard.json
+
+reports/quality-dashboard.json: $(RESOURCES) util/generate-quality-dashboard.py
+	$(RUN) python util/generate-quality-dashboard.py --output $@ $(QUALITY_DASHBOARD_LINK_FLAGS)
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard-full.csv

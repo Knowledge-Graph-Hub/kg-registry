@@ -1,0 +1,116 @@
+import importlib.util
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+def _load_quality_dashboard_module(repo_root: Path):
+    util_dir = repo_root / "util"
+    sys.path.insert(0, str(util_dir))
+    script_path = util_dir / "generate-quality-dashboard.py"
+    spec = importlib.util.spec_from_file_location("quality_dashboard", str(script_path))
+    assert spec is not None and spec.loader is not None, "Could not load generate-quality-dashboard.py"
+    mod = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
+    spec.loader.exec_module(mod)  # type: ignore[attr-defined]
+    return mod
+
+
+def test_build_dashboard_data_counts_and_scoring():
+    repo_root = Path(__file__).resolve().parents[1]
+    mod = _load_quality_dashboard_module(repo_root)
+
+    now = datetime(2026, 2, 16, tzinfo=timezone.utc)
+    resources = [
+        {
+            "id": "stubres",
+            "name": "Stub Resource",
+            "activity_status": "active",
+            "domains": ["stub"],
+            "products": [],
+            "creation_date": "2026-01-01T00:00:00Z",
+            "last_modified_date": "2026-01-01T00:00:00Z",
+        },
+        {
+            "id": "res2",
+            "name": "Resource Two",
+            "activity_status": "active",
+            "description": "Has products",
+            "homepage_url": "https://example.org/res2",
+            "creation_date": "2026-01-01T00:00:00Z",
+            "last_modified_date": "2026-01-10T00:00:00Z",
+            "products": [
+                {
+                    "id": "res2.graph",
+                    "category": "GraphProduct",
+                    "name": "Graph",
+                },
+                {
+                    "id": "res2.download",
+                    "category": "GraphProduct",
+                    "name": "Download",
+                    "format": "tsv",
+                    "original_source": ["stubres"],
+                    "product_url": "https://example.org/bad-link",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2026-02-10: timeout"
+                    ],
+                },
+            ],
+        },
+    ]
+
+    url_results = {
+        "https://example.org/res2": {"ok": True, "source": "live"},
+        "https://example.org/bad-link": {"ok": False, "source": "live", "status_code": 404},
+    }
+    link_summary = {
+        "total_unique_urls": 2,
+        "live_checked_urls": 2,
+        "cache_hits": 0,
+        "healthy_urls": 1,
+        "broken_urls": 1,
+        "unchecked_urls": 0,
+    }
+
+    data = mod.build_dashboard_data(
+        resources,
+        url_results=url_results,
+        now=now,
+        link_mode="live",
+        link_summary=link_summary,
+        cache_path=repo_root / "cache" / "quality_url_status_cache.yml",
+    )
+
+    assert data["resources"]["total"] == 2
+    assert data["resources"]["stub_count"] == 1
+    assert data["resources"]["without_products"] == 1
+    assert data["products"]["total"] == 2
+    assert data["products"]["missing_format"] == 1
+    assert data["products"]["missing_original_source"] == 1
+    assert data["products"]["missing_product_url"] == 1
+    assert data["products"]["retrieval_warning_mentions"] == 1
+    assert data["dates"]["modified_after_creation"] == 1
+    assert data["dates"]["unchanged_since_creation"] == 1
+    assert data["links"]["broken_urls"] == 1
+    assert data["resources"]["with_broken_links"] == 1
+
+    top = data["top_resources"]
+    assert len(top) == 2
+    assert top[0]["id"] == "stubres"
+    assert top[0]["score"] > top[1]["score"]
+
+
+def test_normalize_cache_entry_with_legacy_skip_reason():
+    repo_root = Path(__file__).resolve().parents[1]
+    mod = _load_quality_dashboard_module(repo_root)
+
+    normalized = mod.normalize_cache_entry(
+        {
+            "skip_reason": "html_page",
+            "checked_at": "2026-02-15T00:00:00Z",
+        }
+    )
+
+    assert normalized is not None
+    assert normalized["ok"] is True
+    assert normalized["source"] == "cache"
