@@ -56,7 +56,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean sync-obo-foundry quality-dashboard
 
-all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/kgs.ttl registry/parquet registry/taxon_mapping.yaml registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/kgs.ttl registry/parquet registry/taxon_mapping.yaml registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema quality-dashboard
 
 # This is minimal for now, but
 # will be expanded to include other docs
