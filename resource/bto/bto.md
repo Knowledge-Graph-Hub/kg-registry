@@ -30,18 +30,21 @@ products:
   format: owl
   id: bto.owl
   name: bto.owl
+  product_file_size: 722362
   product_url: http://purl.obolibrary.org/obo/bto.owl
 - category: OntologyProduct
   description: BRENDA tissue / enzyme source in OBO format
   format: obo
   id: bto.obo
   name: bto.obo
+  product_file_size: 479657
   product_url: http://purl.obolibrary.org/obo/bto.obo
 - category: OntologyProduct
   description: BRENDA tissue / enzyme source in JSON format
   format: json
   id: bto.json
   name: bto.json
+  product_file_size: 595708
   product_url: http://purl.obolibrary.org/obo/bto.json
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological

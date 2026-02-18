@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: http://ifomis.org/bfo/
 id: bfo
+infores_id: bfo
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -29,12 +30,14 @@ products:
   format: owl
   id: bfo.owl
   name: bfo.owl
+  product_file_size: 20902
   product_url: http://purl.obolibrary.org/obo/bfo.owl
 - category: OntologyProduct
   description: Basic Formal Ontology in OBO format
   format: obo
   id: bfo.obo
   name: bfo.obo
+  product_file_size: 17898
   product_url: http://purl.obolibrary.org/obo/bfo.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

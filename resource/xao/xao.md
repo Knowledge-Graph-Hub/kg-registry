@@ -1,47 +1,48 @@
 ---
-id: xao
-name: Xenopus Anatomy Ontology
-description: XAO represents the anatomy and development of the African frogs Xenopus
-  laevis and tropicalis.
 activity_status: active
-homepage_url: http://www.xenbase.org/anatomy/xao.do?method=display
-repository: https://github.com/xenopus-anatomy/xao
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:8353
 contacts:
 - category: Individual
-  label: Erik Segerdell
-  orcid: 0000-0002-9611-1279
   contact_details:
   - contact_type: email
     value: Erik.Segerdell@cchmc.org
   - contact_type: github
     value: seger
+  label: Erik Segerdell
+  orcid: 0000-0002-9611-1279
+description: XAO represents the anatomy and development of the African frogs Xenopus
+  laevis and tropicalis.
+domains:
+- anatomy and development
+homepage_url: http://www.xenbase.org/anatomy/xao.do?method=display
+id: xao
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Xenopus Anatomy Ontology
 products:
-- id: xao.owl
-  name: xao.owl
+- category: OntologyProduct
   description: Xenopus Anatomy Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: xao.owl
+  name: xao.owl
+  product_file_size: 226615
   product_url: http://purl.obolibrary.org/obo/xao.owl
-- id: xao.obo
-  name: xao.obo
+- category: OntologyProduct
   description: Xenopus Anatomy Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: xao.obo
+  name: xao.obo
+  product_file_size: 149154
   product_url: http://purl.obolibrary.org/obo/xao.obo
+repository: https://github.com/xenopus-anatomy/xao
+taxon:
+- NCBITaxon:8353
 ---
-
 ## Description
 
 XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.

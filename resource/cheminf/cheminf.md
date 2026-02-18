@@ -30,6 +30,7 @@ products:
   format: owl
   id: cheminf.owl
   name: cheminf.owl
+  product_file_size: 22830
   product_url: http://purl.obolibrary.org/obo/cheminf.owl
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
@@ -51,10 +52,12 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-02-15_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-13_ FTP error_ timed
-    out
+  - 'File was not able to be retrieved when checked on 2026-02-18: FTP error: timed
+    out'
 repository: https://github.com/semanticchemistry/semanticchemistry
 ---
 ## Description

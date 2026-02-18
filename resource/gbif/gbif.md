@@ -57,10 +57,12 @@ products:
   name: GBIF Darwin Core Archive Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Simple CSV format occurrence downloads with interpreted data and commonly
@@ -69,10 +71,12 @@ products:
   name: GBIF Simple CSV Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
     and data formats documentation
@@ -89,14 +93,16 @@ products:
   name: GBIF Integrated Publishing Toolkit (IPT)
   product_url: https://www.gbif.org/ipt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
   - Robertson T
-  - "D\xF6ring M"
+  - Döring M
   - Guralnick R
   - Bloom D
   - Wieczorek J

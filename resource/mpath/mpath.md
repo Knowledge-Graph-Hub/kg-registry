@@ -18,6 +18,7 @@ domains:
 - biomedical
 homepage_url: http://www.pathbase.net
 id: mpath
+infores_id: mpath
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -30,6 +31,7 @@ products:
   format: owl
   id: mpath.owl
   name: mpath.owl
+  product_file_size: 88952
   product_url: http://purl.obolibrary.org/obo/mpath.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

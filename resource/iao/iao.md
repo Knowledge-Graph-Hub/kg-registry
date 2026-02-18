@@ -29,12 +29,14 @@ products:
   format: owl
   id: iao.owl
   name: iao.owl
+  product_file_size: 78925
   product_url: http://purl.obolibrary.org/obo/iao.owl
 - category: OntologyProduct
   description: IAO ontology metadata
   format: owl
   id: iao.ontology-metadata.owl
   name: IAO ontology metadata
+  product_file_size: 11084
   product_url: http://purl.obolibrary.org/obo/iao/ontology-metadata.owl
 - category: OntologyProduct
   description: IAO dev
@@ -42,12 +44,16 @@ products:
   id: iao.dev.iao.owl
   name: IAO dev
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: An ontology based on a theory of document acts describing what people
     can do with documents
   format: owl
   id: iao.d-acts.owl
   name: ontology of document acts
+  product_file_size: 10158
   product_url: http://purl.obolibrary.org/obo/iao/d-acts.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

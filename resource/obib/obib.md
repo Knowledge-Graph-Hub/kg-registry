@@ -30,6 +30,7 @@ products:
   format: owl
   id: obib.owl
   name: obib.owl
+  product_file_size: 230390
   product_url: http://purl.obolibrary.org/obo/obib.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

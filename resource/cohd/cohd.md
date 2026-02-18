@@ -8,15 +8,15 @@ contacts:
     value: http://people.dbmi.columbia.edu/~chw7007/
   label: Columbia University Department of Biomedical Informatics - Weng Lab
 creation_date: '2025-11-04T00:00:00Z'
-description: "The Columbia Open Health Data (COHD) API provides access to observed\
-  \ clinical frequencies and co-occurrence frequencies from electronic health records\
-  \ at Columbia University Medical Center. The database contains counts and frequencies\
-  \ of conditions, procedures, drug exposures, and patient demographics from the OHDSI\
-  \ common data model, along with statistical associations between clinical concepts.\
-  \ To protect patient privacy, all concepts where count \u226410 were excluded and\
-  \ counts were randomized using Poisson distribution. COHD offers multiple datasets\
-  \ including 5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical\
-  \ forms, plus beta temporal co-occurrence data."
+description: The Columbia Open Health Data (COHD) API provides access to observed
+  clinical frequencies and co-occurrence frequencies from electronic health records
+  at Columbia University Medical Center. The database contains counts and frequencies
+  of conditions, procedures, drug exposures, and patient demographics from the OHDSI
+  common data model, along with statistical associations between clinical concepts.
+  To protect patient privacy, all concepts where count ≤10 were excluded and counts
+  were randomized using Poisson distribution. COHD offers multiple datasets including
+  5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical
+  forms, plus beta temporal co-occurrence data.
 domains:
 - clinical
 - health
@@ -67,10 +67,12 @@ products:
   - cohd
   product_url: https://cohd.io/api
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 502 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 502 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 502 error
+    when accessing file'
 - category: GraphProduct
   description: KGX graph package for Columbia Open Health Data (build cohd_2024-11-25_1.0_2025sep1_4.3.6;
     release 2025_12_15)

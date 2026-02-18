@@ -18,6 +18,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
+infores_id: chebi
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -42,12 +43,14 @@ products:
   format: json
   id: chebi.json
   name: chebi.json
+  product_file_size: 506200789
   product_url: http://purl.obolibrary.org/obo/chebi.json
 - category: OntologyProduct
   description: chebi, compressed owl
   format: owl
   id: chebi.owl.gz
   name: chebi, compressed owl
+  product_file_size: 62912402
   product_url: http://purl.obolibrary.org/obo/chebi.owl.gz
 - category: OntologyProduct
   description: chebi_lite, no syns or xrefs
@@ -61,6 +64,174 @@ products:
   id: chebi.chebi_core.obo
   name: chebi_core, no xrefs
   product_url: http://purl.obolibrary.org/obo/chebi/chebi_core.obo
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -427,174 +598,6 @@ products:
   - chembl
   - chebi
 - category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 2484982268
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-- category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
   format: kgx
@@ -897,8 +900,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -971,10 +974,12 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-02-15_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-13_ FTP error_ timed
-    out
+  - 'File was not able to be retrieved when checked on 2026-02-18: FTP error: timed
+    out'
 - category: GraphProduct
   description: Nodes for the Drug Approvals KP, v0.3.9
   format: kgx

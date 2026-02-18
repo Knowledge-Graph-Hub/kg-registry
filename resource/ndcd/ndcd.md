@@ -42,10 +42,12 @@ products:
   - ndcd
   product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Downloadable database file in Excel format containing finished drug
@@ -56,10 +58,12 @@ products:
   - ndcd
   product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API providing programmatic access to National Drug Code data through
     the openFDA platform

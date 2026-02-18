@@ -30,18 +30,21 @@ products:
   format: owl
   id: oba.owl
   name: oba.owl
+  product_file_size: 166637718
   product_url: http://purl.obolibrary.org/obo/oba.owl
 - category: OntologyProduct
   description: Ontology of Biological Attributes in OBO format
   format: obo
   id: oba.obo
   name: oba.obo
+  product_file_size: 33532280
   product_url: http://purl.obolibrary.org/obo/oba.obo
 - category: OntologyProduct
   description: Ontology of Biological Attributes in OBO format
   format: obo
   id: oba.subsets.oba-basic.obo
   name: oba.subsets.oba-basic.obo
+  product_file_size: 11853852
   product_url: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

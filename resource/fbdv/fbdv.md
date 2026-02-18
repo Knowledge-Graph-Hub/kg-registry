@@ -29,30 +29,35 @@ products:
   format: owl
   id: fbdv.owl
   name: fbdv.owl
+  product_file_size: 523797
   product_url: http://purl.obolibrary.org/obo/fbdv.owl
 - category: OntologyProduct
   description: Drosophila development in OBO format
   format: obo
   id: fbdv.obo
   name: fbdv.obo
+  product_file_size: 118696
   product_url: http://purl.obolibrary.org/obo/fbdv.obo
 - category: OntologyProduct
   description: Drosophila development in JSON format
   format: json
   id: fbdv.json
   name: fbdv.json
+  product_file_size: 358729
   product_url: http://purl.obolibrary.org/obo/fbdv.json
 - category: OntologyProduct
   description: Drosophila development in OWL format
   format: owl
   id: fbdv.fbdv-simple.owl
   name: fbdv.fbdv-simple.owl
+  product_file_size: 442797
   product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl
 - category: OntologyProduct
   description: Drosophila development in OBO format
   format: obo
   id: fbdv.fbdv-simple.obo
   name: fbdv.fbdv-simple.obo
+  product_file_size: 118720
   product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

@@ -30,18 +30,21 @@ products:
   format: owl
   id: cob.owl
   name: COB
+  product_file_size: 7601
   product_url: http://purl.obolibrary.org/obo/cob.owl
 - category: OntologyProduct
   description: base module for COB
   format: owl
   id: cob.cob-base.owl
   name: COB base module
+  product_file_size: 2994
   product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
 - category: OntologyProduct
   description: COB with native IDs preserved rather than rewired to OBO IDs
   format: owl
   id: cob.cob-native.owl
   name: COB native module
+  product_file_size: 6472
   product_url: http://purl.obolibrary.org/obo/cob/cob-native.owl
 - category: OntologyProduct
   description: COB to external
@@ -49,12 +52,16 @@ products:
   id: cob.cob-to-external.owl
   name: COB to external
   product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: demo of COB including subsets of other ontologies (Experimental, for
     demo purposes only)
   format: owl
   id: cob.products.demo-cob.owl
   name: COB demo ontology (experimental)
+  product_file_size: 447985
   product_url: http://purl.obolibrary.org/obo/cob/products/demo-cob.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

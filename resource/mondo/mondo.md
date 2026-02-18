@@ -18,6 +18,7 @@ domains:
 - biomedical
 homepage_url: https://monarch-initiative.github.io/mondo
 id: mondo
+infores_id: mondo
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -30,18 +31,21 @@ products:
   format: owl
   id: mondo.owl
   name: Mondo OWL edition
+  product_file_size: 239379389
   product_url: http://purl.obolibrary.org/obo/mondo.owl
 - category: OntologyProduct
   description: OBO serialization of mondo.owl.
   format: obo
   id: mondo.obo
   name: Mondo OBO Format edition
+  product_file_size: 50723023
   product_url: http://purl.obolibrary.org/obo/mondo.obo
 - category: OntologyProduct
   description: Obographs serialization of mondo.owl.
   format: obo
   id: mondo.json
   name: Mondo JSON edition
+  product_file_size: 102754087
   product_url: http://purl.obolibrary.org/obo/mondo.json
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -49,6 +53,7 @@ products:
   format: owl
   id: mondo.mondo-base.owl
   name: Mondo Base Release
+  product_file_size: 224650188
   product_url: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
 - category: OntologyProduct
   description: The main ontology classes and their hierarchies, without references
@@ -56,6 +61,7 @@ products:
   format: owl
   id: mondo.mondo-simple.owl
   name: Mondo Simple Release
+  product_file_size: 213029944
   product_url: http://purl.obolibrary.org/obo/mondo/mondo-simple.owl
 - category: GraphProduct
   description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange

@@ -1,39 +1,39 @@
 ---
-id: bco
-name: Biological Collections Ontology
-description: An ontology to support the interoperability of biodiversity data, including
-  data on museum collections, environmental/metagenomic samples, and ecological surveys.
 activity_status: active
-homepage_url: https://github.com/BiodiversityOntologies/bco
-repository: https://github.com/BiodiversityOntologies/bco
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
   contact_details:
   - contact_type: email
     value: rlwalls2008@gmail.com
   - contact_type: github
     value: ramonawalls
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
+description: An ontology to support the interoperability of biodiversity data, including
+  data on museum collections, environmental/metagenomic samples, and ecological surveys.
+domains:
+- biological systems
+homepage_url: https://github.com/BiodiversityOntologies/bco
+id: bco
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Biological Collections Ontology
 products:
-- id: bco.owl
-  name: bco.owl
+- category: OntologyProduct
   description: Biological Collections Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: bco.owl
+  name: bco.owl
+  product_file_size: 108849
   product_url: http://purl.obolibrary.org/obo/bco.owl
+repository: https://github.com/BiodiversityOntologies/bco
 ---
-
 ## Description
 
 An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.

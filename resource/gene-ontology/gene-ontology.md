@@ -32,12 +32,14 @@ products:
   format: owl
   id: go.owl
   name: GO (OWL edition)
+  product_file_size: 129057533
   product_url: http://purl.obolibrary.org/obo/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, in obo format
   format: obo
   id: go.obo
   name: GO (OBO Format edition)
+  product_file_size: 36289217
   product_url: http://purl.obolibrary.org/obo/go.obo
 - category: GraphicalInterface
   description: Gene Ontology web browser and search interface

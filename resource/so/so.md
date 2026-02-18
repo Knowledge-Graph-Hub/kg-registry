@@ -18,6 +18,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.sequenceontology.org/
 id: so
+infores_id: so
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -30,12 +31,14 @@ products:
   format: owl
   id: so.owl
   name: Main SO OWL release
+  product_file_size: 291621
   product_url: http://purl.obolibrary.org/obo/so.owl
 - category: OntologyProduct
   description: Main SO release in OBO Format
   format: obo
   id: so.obo
   name: Main SO release in OBO Format
+  product_file_size: 193405
   product_url: http://purl.obolibrary.org/obo/so.obo
 - category: OntologyProduct
   description: This subset includes only locatable sequence features and is designed
@@ -43,6 +46,7 @@ products:
   format: owl
   id: so.subsets.SOFA.owl
   name: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
+  product_file_size: 43606
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
 - category: OntologyProduct
   description: This subset includes only locatable sequence features and is designed
@@ -50,6 +54,7 @@ products:
   format: obo
   id: so.subsets.SOFA.obo
   name: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
+  product_file_size: 28447
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

@@ -1,45 +1,46 @@
 ---
-id: bspo
-name: Biological Spatial Ontology
-description: An ontology for representing spatial concepts, anatomical axes, gradients,
-  regions, planes, sides, and surfaces
 activity_status: active
-homepage_url: https://github.com/obophenotype/biological-spatial-ontology
-repository: https://github.com/obophenotype/biological-spatial-ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
+description: An ontology for representing spatial concepts, anatomical axes, gradients,
+  regions, planes, sides, and surfaces
+domains:
+- anatomy and development
+homepage_url: https://github.com/obophenotype/biological-spatial-ontology
+id: bspo
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Biological Spatial Ontology
 products:
-- id: bspo.owl
-  name: bspo.owl
+- category: OntologyProduct
   description: Biological Spatial Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: bspo.owl
+  name: bspo.owl
+  product_file_size: 45961
   product_url: http://purl.obolibrary.org/obo/bspo.owl
-- id: bspo.obo
-  name: bspo.obo
+- category: OntologyProduct
   description: Biological Spatial Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: bspo.obo
+  name: bspo.obo
+  product_file_size: 27154
   product_url: http://purl.obolibrary.org/obo/bspo.obo
+repository: https://github.com/obophenotype/biological-spatial-ontology
 ---
-
 ## Description
 
 An ontology for representing spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces

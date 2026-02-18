@@ -29,12 +29,14 @@ products:
   format: owl
   id: hsapdv.owl
   name: hsapdv.owl
+  product_file_size: 528600
   product_url: http://purl.obolibrary.org/obo/hsapdv.owl
 - category: OntologyProduct
   description: Human Developmental Stages in OBO format
   format: obo
   id: hsapdv.obo
   name: hsapdv.obo
+  product_file_size: 143585
   product_url: http://purl.obolibrary.org/obo/hsapdv.obo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

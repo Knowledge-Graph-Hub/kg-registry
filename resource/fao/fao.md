@@ -1,46 +1,47 @@
 ---
-id: fao
-name: Fungal gross anatomy
-description: A structured controlled vocabulary for the anatomy of fungi.
 activity_status: active
-homepage_url: https://github.com/obophenotype/fungal-anatomy-ontology/
-repository: https://github.com/obophenotype/fungal-anatomy-ontology
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:4751
 contacts:
 - category: Individual
-  label: Val Wood
-  orcid: 0000-0001-6330-7526
   contact_details:
   - contact_type: email
     value: vw253@cam.ac.uk
   - contact_type: github
     value: ValWood
+  label: Val Wood
+  orcid: 0000-0001-6330-7526
+description: A structured controlled vocabulary for the anatomy of fungi.
+domains:
+- anatomy and development
+homepage_url: https://github.com/obophenotype/fungal-anatomy-ontology/
+id: fao
+layout: resource_detail
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Fungal gross anatomy
 products:
-- id: fao.owl
-  name: fao.owl
+- category: OntologyProduct
   description: Fungal gross anatomy in OWL format
   format: owl
-  category: OntologyProduct
+  id: fao.owl
+  name: fao.owl
+  product_file_size: 14367
   product_url: http://purl.obolibrary.org/obo/fao.owl
-- id: fao.obo
-  name: fao.obo
+- category: OntologyProduct
   description: Fungal gross anatomy in OBO format
   format: obo
-  category: OntologyProduct
+  id: fao.obo
+  name: fao.obo
+  product_file_size: 9190
   product_url: http://purl.obolibrary.org/obo/fao.obo
+repository: https://github.com/obophenotype/fungal-anatomy-ontology
+taxon:
+- NCBITaxon:4751
 ---
-
 ## Description
 
 A structured controlled vocabulary for the anatomy of fungi.

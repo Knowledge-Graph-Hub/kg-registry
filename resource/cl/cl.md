@@ -18,6 +18,7 @@ domains:
 - anatomy and development
 homepage_url: https://obophenotype.github.io/cell-ontology/
 id: cl
+infores_id: cl
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -30,6 +31,7 @@ products:
   format: owl
   id: cl.owl
   name: Main CL OWL edition
+  product_file_size: 66753027
   product_url: http://purl.obolibrary.org/obo/cl.owl
 - category: OntologyProduct
   description: Complete ontology, plus inter-ontology axioms, and imports modules
@@ -37,6 +39,7 @@ products:
   format: obo
   id: cl.obo
   name: CL obo format edition
+  product_file_size: 17349355
   product_url: http://purl.obolibrary.org/obo/cl.obo
 - category: OntologyProduct
   description: Complete ontology, plus inter-ontology axioms, and imports modules
@@ -44,42 +47,49 @@ products:
   format: json
   id: cl.json
   name: CL OBOGraph-JSON format edition
+  product_file_size: 38790011
   product_url: http://purl.obolibrary.org/obo/cl.json
 - category: OntologyProduct
   description: Basic version, no inter-ontology axioms
   format: owl
   id: cl.cl-basic.owl
   name: Basic CL
+  product_file_size: 8979957
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
 - category: OntologyProduct
   description: Basic version, no inter-ontology axioms
   format: obo
   id: cl.cl-basic.obo
   name: Basic CL (OBO version)
+  product_file_size: 3112081
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
 - category: OntologyProduct
   description: Basic version, no inter-ontology axioms
   format: json
   id: cl.cl-basic.json
   name: Basic CL (OBOGraph-JSON version)
+  product_file_size: 5189872
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
 - category: OntologyProduct
   description: complete CL but with no imports or external axioms
   format: owl
   id: cl.cl-base.owl
   name: CL base module
+  product_file_size: 12017204
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.owl
 - category: OntologyProduct
   description: complete CL but with no imports or external axioms
   format: obo
   id: cl.cl-base.obo
   name: CL base module (OBO version)
+  product_file_size: 3514034
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.obo
 - category: OntologyProduct
   description: complete CL but with no imports or external axioms
   format: json
   id: cl.cl-base.json
   name: CL base module (OBOGraph-JSON version)
+  product_file_size: 6852450
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.json
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -105,155 +115,6 @@ products:
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   secondary_source:
   - mechreponet
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-- category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -449,12 +310,161 @@ products:
   - protcid
   secondary_source:
   - spoke
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
 - category: GraphProduct
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

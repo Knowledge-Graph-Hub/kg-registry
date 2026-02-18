@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: https://oborel.github.io/
 id: ro
+infores_id: ro
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -29,6 +30,7 @@ products:
   format: owl
   id: ro.owl
   name: Relation Ontology
+  product_file_size: 132025
   product_url: http://purl.obolibrary.org/obo/ro.owl
 - category: OntologyProduct
   description: The obo edition is less expressive than the OWL, and has imports merged
@@ -36,30 +38,35 @@ products:
   format: obo
   id: ro.obo
   name: Relation Ontology in obo format
+  product_file_size: 84333
   product_url: http://purl.obolibrary.org/obo/ro.obo
 - category: OntologyProduct
   description: Relation Ontology in obojson format
   format: json
   id: ro.json
   name: Relation Ontology in obojson format
+  product_file_size: 114142
   product_url: http://purl.obolibrary.org/obo/ro.json
 - category: OntologyProduct
   description: Minimal subset intended to work with BFO-classes
   format: owl
   id: ro.core.owl
   name: RO Core relations
+  product_file_size: 7819
   product_url: http://purl.obolibrary.org/obo/ro/core.owl
 - category: OntologyProduct
   description: Axioms defined within RO and to be used in imports for other ontologies
   format: owl
   id: ro.ro-base.owl
   name: RO base ontology
+  product_file_size: 97499
   product_url: http://purl.obolibrary.org/obo/ro/ro-base.owl
 - category: OntologyProduct
   description: For use in ecology and environmental science
   format: owl
   id: ro.subsets.ro-interaction.owl
   name: Interaction relations
+  product_file_size: 64252
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl
 - category: OntologyProduct
   description: Ecology subset
@@ -67,11 +74,15 @@ products:
   id: ro.subsets.ro-eco.owl
   name: Ecology subset
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: For use in neuroscience
   format: owl
   id: ro.subsets.ro-neuro.owl
   name: Neuroscience subset
+  product_file_size: 5164
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

@@ -17,6 +17,7 @@ domains:
 - anatomy and development
 homepage_url: http://purl.obolibrary.org/obo/fbbt
 id: fbbt
+infores_id: fbbt
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -29,30 +30,35 @@ products:
   format: owl
   id: fbbt.owl
   name: fbbt.owl
+  product_file_size: 119307478
   product_url: http://purl.obolibrary.org/obo/fbbt.owl
 - category: OntologyProduct
   description: Drosophila gross anatomy in OBO format
   format: obo
   id: fbbt.obo
   name: fbbt.obo
+  product_file_size: 38424787
   product_url: http://purl.obolibrary.org/obo/fbbt.obo
 - category: OntologyProduct
   description: Drosophila gross anatomy in JSON format
   format: json
   id: fbbt.json
   name: fbbt.json
+  product_file_size: 77689601
   product_url: http://purl.obolibrary.org/obo/fbbt.json
 - category: OntologyProduct
   description: Drosophila gross anatomy in OWL format
   format: owl
   id: fbbt.fbbt-simple.owl
   name: fbbt.fbbt-simple.owl
+  product_file_size: 111168511
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl
 - category: OntologyProduct
   description: Drosophila gross anatomy in OBO format
   format: obo
   id: fbbt.fbbt-simple.obo
   name: fbbt.fbbt-simple.obo
+  product_file_size: 38424811
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

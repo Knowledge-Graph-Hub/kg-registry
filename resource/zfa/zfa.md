@@ -18,6 +18,7 @@ domains:
 - anatomy and development
 homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfa
+infores_id: zfa
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -30,12 +31,14 @@ products:
   format: owl
   id: zfa.owl
   name: zfa.owl
+  product_file_size: 401719
   product_url: http://purl.obolibrary.org/obo/zfa.owl
 - category: OntologyProduct
   description: Zebrafish anatomy and development ontology in OBO format
   format: obo
   id: zfa.obo
   name: zfa.obo
+  product_file_size: 254974
   product_url: http://purl.obolibrary.org/obo/zfa.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

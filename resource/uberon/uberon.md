@@ -18,6 +18,7 @@ domains:
 - anatomy and development
 homepage_url: http://uberon.org
 id: uberon
+infores_id: uberon
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -30,24 +31,28 @@ products:
   format: owl
   id: uberon.owl
   name: Uberon
+  product_file_size: 97323970
   product_url: http://purl.obolibrary.org/obo/uberon.owl
 - category: OntologyProduct
   description: Axioms defined within Uberon and to be used in imports for other ontologies
   format: owl
   id: uberon.uberon-base.owl
   name: Uberon base ontology
+  product_file_size: 56683591
   product_url: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
 - category: OntologyProduct
   description: Uberon edition that excludes external ontologies and most relations
   format: obo
   id: uberon.uberon-basic.obo
   name: Uberon basic
+  product_file_size: 11928512
   product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
 - category: OntologyProduct
   description: Uberon plus all metazoan ontologies
   format: owl
   id: uberon.collected-metazoan.owl
   name: Uberon collected metazoan ontology
+  product_file_size: 283766409
   product_url: http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl
 - category: OntologyProduct
   description: Uberon and all metazoan ontologies with redundant species-specific
@@ -55,13 +60,183 @@ products:
   format: owl
   id: uberon.composite-metazoan.owl
   name: Uberon composite metazoan ontology
+  product_file_size: 258612004
   product_url: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
 - category: OntologyProduct
   description: Uberon composite vertebrate ontology
   format: owl
   id: uberon.composite-vertebrate.owl
   name: Uberon composite vertebrate ontology
+  product_file_size: 125673982
   product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphProduct
   compression: zip
   description: Nodes from Uber-Anatomy Ontology
@@ -396,174 +571,6 @@ products:
   - chembl
   - chebi
 - category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 2484982268
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-- category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
   id: spoke.graph
@@ -759,8 +766,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

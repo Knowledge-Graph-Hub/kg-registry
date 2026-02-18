@@ -1,38 +1,38 @@
 ---
-id: mop
-name: Molecular Process Ontology
-description: Processes at the molecular level
 activity_status: active
-homepage_url: https://github.com/rsc-ontologies/rxno
-repository: https://github.com/rsc-ontologies/rxno
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
   contact_details:
   - contact_type: email
     value: batchelorc@rsc.org
   - contact_type: github
     value: batchelorc
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
+description: Processes at the molecular level
+domains:
+- chemistry and biochemistry
+homepage_url: https://github.com/rsc-ontologies/rxno
+id: mop
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Molecular Process Ontology
 products:
-- id: mop.owl
-  name: Molecular Process Ontology
+- category: OntologyProduct
   description: Molecular Process Ontology
   format: owl
-  category: OntologyProduct
+  id: mop.owl
+  name: Molecular Process Ontology
+  product_file_size: 154788
   product_url: http://purl.obolibrary.org/obo/mop.owl
+repository: https://github.com/rsc-ontologies/rxno
 ---
-
 ## Description
 
 Processes at the molecular level

@@ -32,6 +32,7 @@ products:
   format: owl
   id: ido.owl
   name: ido.owl
+  product_file_size: 69658
   product_url: http://purl.obolibrary.org/obo/ido.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

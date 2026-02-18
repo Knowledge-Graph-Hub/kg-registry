@@ -30,6 +30,7 @@ products:
   format: owl
   id: ogms.owl
   name: ogms.owl
+  product_file_size: 39126
   product_url: http://purl.obolibrary.org/obo/ogms.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

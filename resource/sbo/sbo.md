@@ -29,6 +29,7 @@ products:
   format: owl
   id: sbo.owl
   name: sbo.owl
+  product_file_size: 50738
   product_url: http://purl.obolibrary.org/obo/sbo.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

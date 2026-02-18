@@ -36,10 +36,12 @@ products:
   - hrpimp
   product_url: https://github.com/VIDallab/huri
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web interface for browsing and exploring the Human Reference Interactome
   format: http
@@ -121,7 +123,7 @@ publications:
   - Campos-Laborie FJ
   - Charloteaux B
   - Choi D
-  - "Cot\xE9 AG"
+  - Coté AG
   - Daley M
   - Deimling S
   - Desbuleux A
@@ -130,7 +132,7 @@ publications:
   - Hardy MF
   - Kishore N
   - Knapp JJ
-  - "Kov\xE1cs IA"
+  - Kovács IA
   - Lemmens I
   - Mee MW
   - Mellor JC
@@ -176,7 +178,7 @@ publications:
   - Sheykhkarimli D
   - Sheynkman GM
   - Simonovsky E
-  - "Ta\u015Fan M"
+  - Taşan M
   - Tejeda A
   - Tropepe V
   - Twizere JC

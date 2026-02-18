@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/ncbitaxon
 id: ncbitaxon
+infores_id: ncbi-taxon
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -29,12 +30,14 @@ products:
   format: owl
   id: ncbitaxon.owl
   name: Main release
+  product_file_size: 1915871262
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.owl
 - category: OntologyProduct
   description: OBO Format version of Main release
   format: obo
   id: ncbitaxon.obo
   name: OBO Format version of Main release
+  product_file_size: 654510820
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.obo
 - category: OntologyProduct
   description: OBOGraphs JSON version of Main release
@@ -42,17 +45,22 @@ products:
   id: ncbitaxon.json
   name: OBOGraphs JSON version of Main release
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+    header found'
 - category: OntologyProduct
   description: taxslim
   format: owl
   id: ncbitaxon.subsets.taxslim.owl
   name: taxslim
+  product_file_size: 39898238
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 - category: OntologyProduct
   description: taxslim disjointness axioms
   format: owl
   id: ncbitaxon.subsets.taxslim-disjoint-over-in-taxon.owl
   name: taxslim disjointness axioms
+  product_file_size: 75398508
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -465,8 +473,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

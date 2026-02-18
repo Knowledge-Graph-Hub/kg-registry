@@ -9,9 +9,9 @@ original_source:
 - tcrd
 product_url: http://juniper.health.unm.edu/tcrd/
 warnings:
-- File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-02-13_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting
   to URL
 layout: product_detail
 ---

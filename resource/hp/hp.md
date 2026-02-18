@@ -18,6 +18,7 @@ domains:
 - biological systems
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
+infores_id: hpo
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
@@ -30,6 +31,7 @@ products:
   format: json
   id: hp.json
   name: Official HPO release in obographs JSON format
+  product_file_size: 22063007
   product_url: http://purl.obolibrary.org/obo/hp.json
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -37,6 +39,7 @@ products:
   format: obo
   id: hp.obo
   name: Official HPO release in OBO format
+  product_file_size: 10703106
   product_url: http://purl.obolibrary.org/obo/hp.obo
 - category: OntologyProduct
   description: Manually classified version of the ontology without the use of a reasoner,
@@ -44,6 +47,7 @@ products:
   format: owl
   id: hp.owl
   name: Official HPO release in OWL
+  product_file_size: 76165285
   product_url: http://purl.obolibrary.org/obo/hp.owl
 - category: OntologyProduct
   description: Manually curated version of the ontology without the use of a reasoner,
@@ -51,6 +55,7 @@ products:
   format: obo
   id: hp.hp-base.json
   name: HPO base release in obographs JSON format
+  product_file_size: 22264343
   product_url: http://purl.obolibrary.org/obo/hp/hp-base.json
 - category: OntologyProduct
   description: Manually curated version of the ontology without the use of a reasoner,
@@ -58,6 +63,7 @@ products:
   format: obo
   id: hp.hp-base.obo
   name: HPO base release in OBO format
+  product_file_size: 11259310
   product_url: http://purl.obolibrary.org/obo/hp/hp-base.obo
 - category: OntologyProduct
   description: Manually curated version of the ontology without the use of a reasoner,
@@ -65,6 +71,7 @@ products:
   format: owl
   id: hp.hp-base.owl
   name: HPO base release in OWL format
+  product_file_size: 48376110
   product_url: http://purl.obolibrary.org/obo/hp/hp-base.owl
 - category: OntologyProduct
   description: Version of the ontology automatically classified with the use of a
@@ -72,6 +79,7 @@ products:
   format: json
   id: hp.hp-full.json
   name: HPO full release in obographs JSON format
+  product_file_size: 42991056
   product_url: http://purl.obolibrary.org/obo/hp/hp-full.json
 - category: OntologyProduct
   description: Version of the ontology automatically classified with the use of a
@@ -79,6 +87,7 @@ products:
   format: obo
   id: hp.hp-full.obo
   name: HPO full release in OBO format
+  product_file_size: 19203487
   product_url: http://purl.obolibrary.org/obo/hp/hp-full.obo
 - category: OntologyProduct
   description: Version of the ontology automatically classified with the use of a
@@ -86,6 +95,7 @@ products:
   format: owl
   id: hp.hp-full.owl
   name: HPO full release in OWL format
+  product_file_size: 85256414
   product_url: http://purl.obolibrary.org/obo/hp/hp-full.owl
 - category: OntologyProduct
   description: Version of the ontology corresponding to the primary release (hp.owl),
@@ -93,6 +103,7 @@ products:
   format: json
   id: hp.hp-international.json
   name: HPO International Edition in obographs JSON format
+  product_file_size: 49246551
   product_url: http://purl.obolibrary.org/obo/hp/hp-international.json
 - category: OntologyProduct
   description: Version of the ontology corresponding to the primary release (hp.owl),
@@ -100,6 +111,7 @@ products:
   format: obo
   id: hp.hp-international.obo
   name: HPO International Edition in OBO format
+  product_file_size: 22152711
   product_url: http://purl.obolibrary.org/obo/hp/hp-international.obo
 - category: OntologyProduct
   description: Version of the ontology corresponding to the primary release (hp.owl),
@@ -107,6 +119,7 @@ products:
   format: owl
   id: hp.hp-international.owl
   name: HPO International Edition in OWL format
+  product_file_size: 208345468
   product_url: http://purl.obolibrary.org/obo/hp/hp-international.owl
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -114,6 +127,7 @@ products:
   format: json
   id: hp.hp-simple-non-classified.json
   name: HPO simple, manually classified, without imports in obographs JSON format
+  product_file_size: 22063054
   product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -121,6 +135,7 @@ products:
   format: obo
   id: hp.hp-simple-non-classified.obo
   name: HPO simple, manually classified, without imports in OBO format
+  product_file_size: 10703156
   product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo
 - category: OntologyProduct
   description: Simple, manually curated version of the ontology without the use of
@@ -128,25 +143,197 @@ products:
   format: owl
   id: hp.hp-simple-non-classified.owl
   name: HPO simple, manually classified, without imports in OWL format
+  product_file_size: 29893603
   product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl
 - category: OntologyProduct
   description: https://hpo.jax.org/app/data/annotations
   format: tsv
   id: hp.phenotype.hpoa
   name: HPO Annotations (Phenotype to Disease)
+  product_file_size: 35261380
   product_url: http://purl.obolibrary.org/obo/hp/phenotype.hpoa
 - category: OntologyProduct
   description: https://hpo.jax.org/app/data/annotations
   format: tsv
   id: hp.phenotype_to_genes.txt
   name: HPO phenotype to gene annotations
+  product_file_size: 65852754
   product_url: http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt
 - category: OntologyProduct
   description: https://hpo.jax.org/app/data/annotations
   format: tsv
   id: hp.genes_to_phenotype.txt
   name: HPO gene to phenotype annotations
+  product_file_size: 20533481
   product_url: http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphProduct
   description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
     (KGX) format, containing integrated clinical and environmental exposures data
@@ -556,174 +743,6 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 2484982268
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -1835,8 +1854,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

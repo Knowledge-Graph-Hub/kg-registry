@@ -20,6 +20,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/ncit-obo-org/ncit-obo-edition
 id: ncit
+infores_id: ncit
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,12 +34,14 @@ products:
   format: owl
   id: ncit.owl
   name: NCIt OBO Edition OWL format
+  product_file_size: 782238438
   product_url: http://purl.obolibrary.org/obo/ncit.owl
 - category: OntologyProduct
   description: NCIt OBO Edition OBO format
   format: obo
   id: ncit.obo
   name: NCIt OBO Edition OBO format
+  product_file_size: 238812762
   product_url: http://purl.obolibrary.org/obo/ncit.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

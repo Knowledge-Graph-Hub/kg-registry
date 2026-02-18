@@ -220,8 +220,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -373,10 +373,12 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-02-15_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-13_ FTP error_ timed
-    out
+  - 'File was not able to be retrieved when checked on 2026-02-18: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv

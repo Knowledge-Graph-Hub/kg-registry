@@ -584,15 +584,17 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
-  - "Janet Pi\xF1ero"
-  - "Juan Manuel Ram\xEDrez-Anguita"
-  - "Josep Sa\xFCch-Pitarch"
+  - Janet Piñero
+  - Juan Manuel Ramírez-Anguita
+  - Josep Saüch-Pitarch
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz

@@ -30,12 +30,14 @@ products:
   format: owl
   id: mod.owl
   name: PSI-MOD.owl
+  product_file_size: 433944
   product_url: http://purl.obolibrary.org/obo/mod.owl
 - category: OntologyProduct
   description: PSI-MOD Ontology, OBO format
   format: obo
   id: mod.obo
   name: PSI-MOD.obo
+  product_file_size: 251654
   product_url: http://purl.obolibrary.org/obo/mod.obo
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional

@@ -1,55 +1,57 @@
 ---
-id: upheno
-name: Unified Phenotype Ontology (uPheno)
-description: The uPheno ontology integrates multiple phenotype ontologies into a unified
-  cross-species phenotype ontology.
 activity_status: active
-homepage_url: https://github.com/obophenotype/upheno
-repository: https://github.com/obophenotype/upheno
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: James McLaughlin
-  orcid: 0000-0002-8361-2795
   contact_details:
   - contact_type: email
     value: jmcl@ebi.ac.uk
   - contact_type: github
     value: jamesamcl
+  label: James McLaughlin
+  orcid: 0000-0002-8361-2795
+description: The uPheno ontology integrates multiple phenotype ontologies into a unified
+  cross-species phenotype ontology.
+domains:
+- biological systems
+homepage_url: https://github.com/obophenotype/upheno
+id: upheno
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Unified Phenotype Ontology (uPheno)
 products:
-- id: upheno.owl
-  name: uPheno 1 (inactive)
+- category: OntologyProduct
   description: uPheno 1 is no longer actively maintained, please start using uPheno
     2 (see below).
   format: owl
-  category: OntologyProduct
+  id: upheno.owl
+  name: uPheno 1 (inactive)
+  product_file_size: 416269865
   product_url: http://purl.obolibrary.org/obo/upheno.owl
-- id: upheno.mp-hp-view.owl
-  name: uPheno MP-HP equivalence axioms
+- category: OntologyProduct
   description: No longer actively maintained.
   format: owl
-  category: OntologyProduct
+  id: upheno.mp-hp-view.owl
+  name: uPheno MP-HP equivalence axioms
+  product_file_size: 51640383
   product_url: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
-- id: upheno.v2.upheno.owl
-  name: uPheno 2
+- category: OntologyProduct
   description: The new version of uPheno, along with species independent phenotypes
     and additional phenotype relations. The ontology is still in Beta status, but
     we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is
     no longer actively maintained.
   format: owl
-  category: OntologyProduct
+  id: upheno.v2.upheno.owl
+  name: uPheno 2
+  product_file_size: 416269865
   product_url: http://purl.obolibrary.org/obo/upheno/v2/upheno.owl
+repository: https://github.com/obophenotype/upheno
 ---
-
 ## Description
 
 The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.

@@ -1,45 +1,50 @@
 ---
-id: eo
-name: Plant Environment Ontology
-description: A structured, controlled vocabulary which describes the treatments, growing
-  conditions, and/or study types used in plant biology experiments.
 activity_status: inactive
-homepage_url: http://planteome.org/
-repository: https://github.com/Planteome/plant-environment-ontology
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- environment
 contacts:
 - category: Individual
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
+description: A structured, controlled vocabulary which describes the treatments, growing
+  conditions, and/or study types used in plant biology experiments.
+domains:
+- environment
+homepage_url: http://planteome.org/
+id: eo
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Plant Environment Ontology
 products:
-- id: eo.owl
-  name: eo.owl
+- category: OntologyProduct
   description: Plant Environment Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: eo.owl
+  name: eo.owl
   product_url: http://purl.obolibrary.org/obo/eo.owl
-- id: eo.obo
-  name: eo.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Plant Environment Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: eo.obo
+  name: eo.obo
   product_url: http://purl.obolibrary.org/obo/eo.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
+repository: https://github.com/Planteome/plant-environment-ontology
 ---
-
 ## Description
 
 A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.

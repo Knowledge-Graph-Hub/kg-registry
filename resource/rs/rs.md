@@ -1,46 +1,46 @@
 ---
-id: rs
-name: Rat Strain Ontology
-description: Ontology of rat strains
 activity_status: active
-homepage_url: http://rgd.mcw.edu/rgdweb/search/strains.html
-repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
-taxon:
-- NCBITaxon:10114
 contacts:
 - category: Individual
-  label: Shur-Jen Wang
-  orcid: 0000-0001-5256-8683
   contact_details:
   - contact_type: email
     value: sjwang@mcw.edu
   - contact_type: github
     value: shurjenw
+  label: Shur-Jen Wang
+  orcid: 0000-0001-5256-8683
+description: Ontology of rat strains
+domains:
+- biological systems
+homepage_url: http://rgd.mcw.edu/rgdweb/search/strains.html
+id: rs
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Rat Strain Ontology
 products:
-- id: rs.owl
-  name: rs.owl
+- category: OntologyProduct
   description: Rat Strain Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: rs.owl
+  name: rs.owl
+  product_file_size: 5521553
   product_url: http://purl.obolibrary.org/obo/rs.owl
-- id: rs.obo
-  name: rs.obo
+- category: OntologyProduct
   description: Rat Strain Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: rs.obo
+  name: rs.obo
   product_url: http://purl.obolibrary.org/obo/rs.obo
+repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
+taxon:
+- NCBITaxon:10114
 ---
-
 ## Description
 
 Ontology of rat strains

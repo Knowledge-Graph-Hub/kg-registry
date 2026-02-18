@@ -1,59 +1,66 @@
 ---
-id: slso
-name: Space Life Sciences Ontology
-description: The Space Life Sciences Ontology is an application ontology and is intended
-  to support the operation of NASA's Life Sciences Data Archive and other systems
-  that contain space life science research data.
 activity_status: active
-homepage_url: https://github.com/nasa/LSDAO
-repository: https://github.com/nasa/LSDAO
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Dan Berrios
-  orcid: 0000-0003-4312-9552
   contact_details:
   - contact_type: email
     value: daniel.c.berrios@nasa.gov
   - contact_type: github
     value: DanBerrios
+  label: Dan Berrios
+  orcid: 0000-0003-4312-9552
+description: The Space Life Sciences Ontology is an application ontology and is intended
+  to support the operation of NASA's Life Sciences Data Archive and other systems
+  that contain space life science research data.
+domains:
+- biomedical
+homepage_url: https://github.com/nasa/LSDAO
+id: slso
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Space Life Sciences Ontology
 products:
-- id: slso.owl
-  name: slso.owl
+- category: OntologyProduct
   description: Space Life Sciences Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: slso.owl
+  name: slso.owl
+  product_file_size: 584157
   product_url: http://purl.obolibrary.org/obo/slso.owl
-- id: slso.obo
-  name: slso.obo
+- category: OntologyProduct
   description: Space Life Sciences Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: slso.obo
+  name: slso.obo
+  product_file_size: 413238
   product_url: http://purl.obolibrary.org/obo/slso.obo
-- id: slso.json
-  name: slso.json
+- category: OntologyProduct
   description: Space Life Sciences Ontology in JSON format
   format: json
-  category: OntologyProduct
+  id: slso.json
+  name: slso.json
   product_url: http://purl.obolibrary.org/obo/slso.json
-- id: slso-base.owl
-  name: slso-base.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Includes axioms linking to other ontologies, but no imports of those
     ontologies
   format: owl
-  category: OntologyProduct
+  id: slso-base.owl
+  name: slso-base.owl
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
+repository: https://github.com/nasa/LSDAO
 ---
-
 ## Description
 
 The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data.

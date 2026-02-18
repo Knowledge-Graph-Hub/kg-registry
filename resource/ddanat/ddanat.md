@@ -1,47 +1,48 @@
 ---
-id: ddanat
-name: Dictyostelium discoideum anatomy
-description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium
-  discoideum
 activity_status: active
-homepage_url: http://dictybase.org/
-repository: https://github.com/dictyBase/migration-data
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:44689
 contacts:
 - category: Individual
-  label: Petra Fey
-  orcid: 0000-0002-4532-2703
   contact_details:
   - contact_type: email
     value: pfey@northwestern.edu
   - contact_type: github
     value: pfey03
+  label: Petra Fey
+  orcid: 0000-0002-4532-2703
+description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium
+  discoideum
+domains:
+- anatomy and development
+homepage_url: http://dictybase.org/
+id: ddanat
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Dictyostelium discoideum anatomy
 products:
-- id: ddanat.owl
-  name: ddanat.owl
+- category: OntologyProduct
   description: Dictyostelium discoideum anatomy in OWL format
   format: owl
-  category: OntologyProduct
+  id: ddanat.owl
+  name: ddanat.owl
+  product_file_size: 15269
   product_url: http://purl.obolibrary.org/obo/ddanat.owl
-- id: ddanat.obo
-  name: ddanat.obo
+- category: OntologyProduct
   description: Dictyostelium discoideum anatomy in OBO format
   format: obo
-  category: OntologyProduct
+  id: ddanat.obo
+  name: ddanat.obo
+  product_file_size: 8493
   product_url: http://purl.obolibrary.org/obo/ddanat.obo
+repository: https://github.com/dictyBase/migration-data
+taxon:
+- NCBITaxon:44689
 ---
-
 ## Description
 
 A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum

@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: http://geneontology.org/
 id: go
+infores_id: go
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -30,12 +31,14 @@ products:
   format: owl
   id: go.owl
   name: GO (OWL edition)
+  product_file_size: 129057533
   product_url: http://purl.obolibrary.org/obo/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, in obo format
   format: obo
   id: go.obo
   name: GO (OBO Format edition)
+  product_file_size: 36289217
   product_url: http://purl.obolibrary.org/obo/go.obo
 - category: OntologyProduct
   description: Equivalent to go.owl, in obograph json format
@@ -43,12 +46,16 @@ products:
   id: go.json
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+    header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     with subsets of those ontologies
   format: owl
   id: go.extensions.go-plus.owl
   name: GO-Plus
+  product_file_size: 235714202
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -56,6 +63,7 @@ products:
   format: owl
   id: go.go-base.owl
   name: GO Base Module
+  product_file_size: 160299649
   product_url: http://purl.obolibrary.org/obo/go/go-base.owl
 - category: OntologyProduct
   description: As go-plus.owl, in obographs json format
@@ -63,6 +71,9 @@ products:
   id: go.extensions.go-plus.json
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
     to be acyclic and annotations can be propagated up the graph. The relations included
@@ -71,6 +82,7 @@ products:
   format: obo
   id: go.go-basic.obo
   name: GO-Basic, Filtered, for use with legacy tools
+  product_file_size: 31933366
   product_url: http://purl.obolibrary.org/obo/go/go-basic.obo
 - category: OntologyProduct
   description: As go-basic.obo, in json format
@@ -78,18 +90,25 @@ products:
   id: go.go-basic.json
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
   format: owl
   id: go.extensions.go-taxon-groupings.owl
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
     is not archived.
   format: owl
   id: go.snapshot.go.owl
   name: GO (OWL edition), daily snapshot release
+  product_file_size: 129057533
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -97,7 +116,176 @@ products:
   format: obo
   id: go.snapshot.go.obo
   name: GO (OBO Format edition), daily snapshot release
+  product_file_size: 36289217
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - unibiomap
+  - hpa
+  - go
+  - bindingdb
+  - foodb
+  - tcdb
+  - biogrid
+  - ctd
+  - chebi
+  - stitch
+  - intact
+  - uniprot
+  - unichem
+  - pubchem
+  - batman
+  - string
+  - ncbigene
+  - drugbank
+  - kegg
+  - sider
+  - compath
+  - phosphositeplus
+  - hp
+  - chembl
+  - reactome
+  - smpdb
+  - uberon
+  - hmdb
+  - medgen
+  - umls
+  - mesh
+  - inchikey
+  - unichem
+  - omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -405,174 +593,6 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 2484982268
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -1759,8 +1779,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2193,6 +2213,18 @@ products:
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 - category: GraphProduct
+  description: ProteomeHD data files
+  id: proteomehd.data
+  name: ProteomeHD Data
+  original_source:
+  - proteomehd
+  - uniprot
+  - reactome
+  - intact
+  - go
+  - goa
+  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+- category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
   id: rna-kg.kg.neo4j
@@ -2381,18 +2413,6 @@ products:
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
   - File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno
     104] Connection reset by peer
-- category: GraphProduct
-  description: ProteomeHD data files
-  id: proteomehd.data
-  name: ProteomeHD Data
-  original_source:
-  - proteomehd
-  - uniprot
-  - reactome
-  - intact
-  - go
-  - goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
   format: tsv
@@ -2428,10 +2448,12 @@ products:
   secondary_source:
   - unibiomap
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
+  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+    header found'
 - category: Product
   description: Gene ontology annotations from the Gene Ontology Consortium
   format: http
@@ -2441,10 +2463,12 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1

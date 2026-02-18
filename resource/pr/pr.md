@@ -17,6 +17,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://proconsortium.org
 id: pr
+infores_id: pr
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -42,12 +43,18 @@ products:
   id: pr-asserted.owl
   name: pro_nonreasoned.owl
   product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: PRO without reasoning applied, OBO format.
   format: obo
   id: pr-asserted.obo
   name: pro_nonreasoned.obo
   product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+    when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
@@ -225,8 +232,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

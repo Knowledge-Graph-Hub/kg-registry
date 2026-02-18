@@ -22,6 +22,11 @@ products:
   original_source:
   - simap
   product_url: http://mips.helmholtz-muenchen.de/simap/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)

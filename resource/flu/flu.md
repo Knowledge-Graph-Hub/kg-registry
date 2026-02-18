@@ -1,33 +1,33 @@
 ---
-id: flu
-name: Influenza Ontology
-description: Description unavailable.
 activity_status: inactive
-homepage_url: http://purl.obolibrary.org/obo/flu/
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Burke Squires
   contact_details:
   - contact_type: email
     value: burkesquires@gmail.com
+  label: Burke Squires
+description: Description unavailable.
+domains:
+- biomedical
+homepage_url: http://purl.obolibrary.org/obo/flu/
+id: flu
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Influenza Ontology
 products:
-- id: flu.owl
-  name: flu.owl
+- category: OntologyProduct
   description: Influenza Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: flu.owl
+  name: flu.owl
+  product_file_size: 127517
   product_url: http://purl.obolibrary.org/obo/flu.owl
 ---
-
 ## Description
 
 Description unavailable.

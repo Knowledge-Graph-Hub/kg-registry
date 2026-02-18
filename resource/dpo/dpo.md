@@ -1,52 +1,54 @@
 ---
-id: dpo
-name: Drosophila Phenotype Ontology
-description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 activity_status: active
-homepage_url: http://purl.obolibrary.org/obo/fbcv
-repository: https://github.com/FlyBase/drosophila-phenotype-ontology
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
-taxon:
-- NCBITaxon:7227
 contacts:
 - category: Individual
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
   contact_details:
   - contact_type: email
     value: cp390@cam.ac.uk
   - contact_type: github
     value: Clare72
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
+description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
+domains:
+- biological systems
+homepage_url: http://purl.obolibrary.org/obo/fbcv
+id: dpo
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Drosophila Phenotype Ontology
 products:
-- id: dpo.owl
-  name: dpo.owl
+- category: OntologyProduct
   description: Drosophila Phenotype Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: dpo.owl
+  name: dpo.owl
+  product_file_size: 4002750
   product_url: http://purl.obolibrary.org/obo/dpo.owl
-- id: dpo.obo
-  name: dpo.obo
+- category: OntologyProduct
   description: Drosophila Phenotype Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: dpo.obo
+  name: dpo.obo
+  product_file_size: 133576
   product_url: http://purl.obolibrary.org/obo/dpo.obo
-- id: dpo.json
-  name: dpo.json
+- category: OntologyProduct
   description: Drosophila Phenotype Ontology in JSON format
   format: json
-  category: OntologyProduct
+  id: dpo.json
+  name: dpo.json
+  product_file_size: 2021460
   product_url: http://purl.obolibrary.org/obo/dpo.json
+repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+taxon:
+- NCBITaxon:7227
 ---
-
 ## Description
 
 An ontology of commonly encountered and/or high level Drosophila phenotypes.

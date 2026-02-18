@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: https://www.informatics.jax.org/vocab/mp_ontology/
 id: mp
+infores_id: mp
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -30,6 +31,7 @@ products:
   format: owl
   id: mp.owl
   name: MP (OWL edition)
+  product_file_size: 102632253
   product_url: http://purl.obolibrary.org/obo/mp.owl
 - category: OntologyProduct
   description: A direct translation of the MP (OWL edition) into OBO format.
@@ -37,11 +39,15 @@ products:
   id: mp.obo
   name: MP (OBO edition)
   product_url: http://purl.obolibrary.org/obo/mp.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+    header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
   format: json
   id: mp.json
   name: MP (obographs JSON edition)
+  product_file_size: 54620788
   product_url: http://purl.obolibrary.org/obo/mp.json
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -49,6 +55,7 @@ products:
   format: owl
   id: mp.mp-base.owl
   name: MP Base Module
+  product_file_size: 50338260
   product_url: http://purl.obolibrary.org/obo/mp/mp-base.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

@@ -1,38 +1,38 @@
 ---
-id: bcgo
-name: Beta Cell Genomics Ontology
-description: An application ontology built for beta cell genomics studies.
 activity_status: inactive
-homepage_url: https://github.com/obi-bcgo/bcgo
-repository: https://github.com/obi-bcgo/bcgo
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
   contact_details:
   - contact_type: email
     value: jiezheng@pennmedicine.upenn.edu
   - contact_type: github
     value: zhengj2007
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
+description: An application ontology built for beta cell genomics studies.
+domains:
+- anatomy and development
+homepage_url: https://github.com/obi-bcgo/bcgo
+id: bcgo
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Beta Cell Genomics Ontology
 products:
-- id: bcgo.owl
-  name: bcgo.owl
+- category: OntologyProduct
   description: Beta Cell Genomics Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: bcgo.owl
+  name: bcgo.owl
+  product_file_size: 335620
   product_url: http://purl.obolibrary.org/obo/bcgo.owl
+repository: https://github.com/obi-bcgo/bcgo
 ---
-
 ## Description
 
 An application ontology built for beta cell genomics studies.

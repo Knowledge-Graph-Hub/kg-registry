@@ -56,10 +56,12 @@ products:
   - loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 503 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 503 error
+    when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
   format: mixed
@@ -69,10 +71,12 @@ products:
   - loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 503 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
     development (CC-BY 4.0 licensed document)
@@ -82,10 +86,12 @@ products:
   - loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 503 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 503 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 503 error
+    when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS

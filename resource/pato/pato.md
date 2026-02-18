@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/pato-ontology/pato/
 id: pato
+infores_id: pato
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -29,18 +30,21 @@ products:
   format: owl
   id: pato.owl
   name: pato.owl
+  product_file_size: 1205348
   product_url: http://purl.obolibrary.org/obo/pato.owl
 - category: OntologyProduct
   description: Phenotype And Trait Ontology in OBO format
   format: obo
   id: pato.obo
   name: pato.obo
+  product_file_size: 110437
   product_url: http://purl.obolibrary.org/obo/pato.obo
 - category: OntologyProduct
   description: Phenotype And Trait Ontology in JSON format
   format: json
   id: pato.json
   name: pato.json
+  product_file_size: 883967
   product_url: http://purl.obolibrary.org/obo/pato.json
 - category: OntologyProduct
   description: Includes axioms linking to other ontologies, but no imports of those
@@ -48,6 +52,7 @@ products:
   format: owl
   id: pato.pato-base.owl
   name: pato.pato-base.owl
+  product_file_size: 180954
   product_url: http://purl.obolibrary.org/obo/pato/pato-base.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

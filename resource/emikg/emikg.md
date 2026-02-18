@@ -35,37 +35,38 @@ products:
   format: kgx
   id: emikg.kg
   name: EMI Knowledge Graph
-  product_url: https://doi.org/10.5281/zenodo.17079767
-  repository: https://github.com/earth-metabolome-initiative/metrin-kg
   original_source:
   - emi
   - pf1600
   - globi
   - try
+  product_url: https://doi.org/10.5281/zenodo.17079767
+  repository: https://github.com/earth-metabolome-initiative/metrin-kg
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
   format: http
   id: emikg.sparql
   name: EMI KG SPARQL Endpoint
-  product_url: https://qlever.earthmetabolome.org/api/metrin-kg
   original_source:
   - emi
   - pf1600
   - globi
   - try
+  product_url: https://qlever.earthmetabolome.org/api/metrin-kg
 - category: GraphicalInterface
   description: Web-based SPARQL query editor for the EMI Knowledge Graph
   id: emikg.web
   name: EMI KG SPARQL Query Editor
-  product_url: https://sib-swiss.github.io/sparql-editor/emi
   original_source:
   - emi
   - pf1600
   - globi
   - try
+  product_url: https://sib-swiss.github.io/sparql-editor/emi
 ---
-
-
 ## Automated Evaluation
 
 - View the automated evaluation: [emikg automated evaluation](emikg_eval_automated.html)

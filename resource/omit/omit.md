@@ -30,6 +30,7 @@ products:
   format: owl
   id: omit.owl
   name: omit.owl
+  product_file_size: 2146508
   product_url: http://purl.obolibrary.org/obo/omit.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
