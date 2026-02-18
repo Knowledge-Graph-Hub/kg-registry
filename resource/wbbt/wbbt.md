@@ -1,48 +1,47 @@
 ---
+id: wbbt
+name: C. elegans Gross Anatomy Ontology
+description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
+  elegans</i>.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:6237
 contacts:
 - category: Individual
+  label: Raymond Lee
+  orcid: 0000-0002-8151-7479
   contact_details:
   - contact_type: email
     value: raymond@caltech.edu
   - contact_type: github
     value: raymond91125
-  label: Raymond Lee
-  orcid: 0000-0002-8151-7479
-description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
-  elegans</i>.
-domains:
-- anatomy and development
-homepage_url: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
-id: wbbt
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: C. elegans Gross Anatomy Ontology
 products:
-- category: OntologyProduct
+- id: wbbt.owl
+  name: wbbt.owl
   description: C. elegans Gross Anatomy Ontology in OWL format
   format: owl
-  id: wbbt.owl
-  name: wbbt.owl
-  product_file_size: 325464
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/wbbt.owl
-- category: OntologyProduct
+- id: wbbt.obo
+  name: wbbt.obo
   description: C. elegans Gross Anatomy Ontology in OBO format
   format: obo
-  id: wbbt.obo
-  name: wbbt.obo
-  product_file_size: 163163
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/wbbt.obo
-repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
-taxon:
-- NCBITaxon:6237
 ---
+
 ## Description
 
 A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.

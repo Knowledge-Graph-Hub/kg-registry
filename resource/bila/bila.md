@@ -1,40 +1,38 @@
 ---
+id: bila
+name: Bilateria anatomy
+description: Description unavailable.
 activity_status: inactive
-category: Ontology
+homepage_url: http://4dx.embl.de/4DXpress
+license:
+  id: ''
+  label: Not specified
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:33213
 contacts:
 - category: Individual
+  label: Thorsten Henrich
+  orcid: 0000-0002-1548-3290
   contact_details:
   - contact_type: email
     value: henrich@embl.de
   - contact_type: github
     value: ThorstenHen
-  label: Thorsten Henrich
-  orcid: 0000-0002-1548-3290
-description: Description unavailable.
-domains:
-- anatomy and development
-homepage_url: http://4dx.embl.de/4DXpress
-id: bila
-layout: resource_detail
-license:
-  id: ''
-  label: Not specified
-name: Bilateria anatomy
 products:
-- category: OntologyProduct
+- id: bila.owl
+  name: bila.owl
   description: Bilateria anatomy in OWL format
   format: owl
-  id: bila.owl
-  name: bila.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/bila.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
-taxon:
-- NCBITaxon:33213
 ---
+
 ## Description
 
 Description unavailable.

@@ -10,10 +10,10 @@ contacts:
     value: https://www.ebi.ac.uk/support/intact
   id: ebi
   label: IntAct Team (EMBL-EBI)
-description: IntAct is an open, curated molecular interaction database maintained
-  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
-  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
-  along with curated datasets and documentation.
+description: "IntAct is an open, curated molecular interaction database maintained\
+  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
+  \ literature curation and direct submissions, and distributes data in PSI\u2011\
+  MI XML and MITAB formats along with curated datasets and documentation."
 domains:
 - proteomics
 - systems biology
@@ -486,12 +486,10 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -555,7 +553,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -597,7 +595,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -639,7 +637,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -681,7 +679,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv

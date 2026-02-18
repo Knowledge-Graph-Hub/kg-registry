@@ -82,12 +82,10 @@ products:
   secondary_source:
   - translator
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+    accessing file
 - category: GraphProduct
   description: KGX graph package for Clinical Trials Knowledge Provider (build ctkp_3.1.23_1.0_2025sep1_4.3.6;
     release 2025_12_15)
@@ -111,8 +109,8 @@ products:
   secondary_source:
   - translator
 - category: GraphProduct
-  description: KGX graph package for DGIdb drug–gene interactions (build dgidb_2024_12_06_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
+  description: "KGX graph package for DGIdb drug\u2013gene interactions (build dgidb_2024_12_06_1.0_2025sep1_4.3.6;\
+    \ release 2025_12_15)"
   format: kgx
   id: translator.dgidb.graph
   name: Translator DGIdb KGX Graph

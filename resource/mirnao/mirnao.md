@@ -1,36 +1,34 @@
 ---
-activity_status: inactive
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: topalis@imbb.forth.gr
-  label: Pantelis Topalis
-description: An application ontology for use with miRNA databases.
-domains:
-- chemistry and biochemistry
-homepage_url: http://code.google.com/p/mirna-ontology/
 id: mirnao
-layout: resource_detail
+name: microRNA Ontology
+description: An application ontology for use with miRNA databases.
+activity_status: inactive
+homepage_url: http://code.google.com/p/mirna-ontology/
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: microRNA Ontology
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- chemistry and biochemistry
+contacts:
+- category: Individual
+  label: Pantelis Topalis
+  contact_details:
+  - contact_type: email
+    value: topalis@imbb.forth.gr
 products:
-- category: OntologyProduct
+- id: mirnao.owl
+  name: mirnao.owl
   description: microRNA Ontology in OWL format
   format: owl
-  id: mirnao.owl
-  name: mirnao.owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mirnao.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
 ---
+
 ## Description
 
 An application ontology for use with miRNA databases.

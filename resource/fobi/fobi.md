@@ -1,41 +1,41 @@
 ---
+id: fobi
+name: Food-Biomarker Ontology
+description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake
+  data and associate it with metabolomic data
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
+repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Individual
+  label: Pol Castellano Escuder
+  orcid: 0000-0001-6466-877X
   contact_details:
   - contact_type: email
     value: polcaes@gmail.com
   - contact_type: github
     value: pcastellanoescuder
-  label: Pol Castellano Escuder
-  orcid: 0000-0001-6466-877X
-description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake
-  data and associate it with metabolomic data
-domains:
-- chemistry and biochemistry
-homepage_url: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
-id: fobi
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Food-Biomarker Ontology
 products:
-- category: OntologyProduct
+- id: fobi.owl
+  name: FOBI is an ontology to represent food intake data and associate it with metabolomic
+    data
   description: FOBI is an ontology to represent food intake data and associate it
     with metabolomic data
   format: owl
-  id: fobi.owl
-  name: FOBI is an ontology to represent food intake data and associate it with metabolomic
-    data
-  product_file_size: 118923
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/fobi.owl
-repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 ---
+
 ## Description
 
 FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data

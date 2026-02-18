@@ -15,7 +15,6 @@ original_source:
 - ctd
 - chebi
 - stitch
-- tcm-bank
 - intact
 - uniprot
 - unichem
@@ -32,15 +31,13 @@ original_source:
 - chembl
 - reactome
 - smpdb
-- bioblinker
-- hijazi20
 - uberon
 - hmdb
 - medgen
 - umls
 - mesh
 - inchikey
-- uci
+- unichem
 - omim
 product_file_size: 2484982268
 product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv

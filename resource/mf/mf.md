@@ -1,39 +1,39 @@
 ---
+id: mf
+name: Mental Functioning Ontology
+description: The Mental Functioning Ontology is an overarching ontology for all aspects
+  of mental functioning.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/jannahastings/mental-functioning-ontology
+repository: https://github.com/jannahastings/mental-functioning-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Janna Hastings
+  orcid: 0000-0002-3469-4923
   contact_details:
   - contact_type: email
     value: janna.hastings@gmail.com
   - contact_type: github
     value: jannahastings
-  label: Janna Hastings
-  orcid: 0000-0002-3469-4923
-description: The Mental Functioning Ontology is an overarching ontology for all aspects
-  of mental functioning.
-domains:
-- biomedical
-homepage_url: https://github.com/jannahastings/mental-functioning-ontology
-id: mf
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Mental Functioning Ontology
 products:
-- category: OntologyProduct
+- id: mf.owl
+  name: mf.owl
   description: Mental Functioning Ontology in OWL format
   format: owl
-  id: mf.owl
-  name: mf.owl
-  product_file_size: 55614
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mf.owl
-repository: https://github.com/jannahastings/mental-functioning-ontology
 ---
+
 ## Description
 
 The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.

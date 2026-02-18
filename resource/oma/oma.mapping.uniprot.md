@@ -12,9 +12,9 @@ product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
 secondary_source:
 - oma
 warnings:
-- File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
   accessing file

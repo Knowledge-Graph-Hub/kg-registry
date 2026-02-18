@@ -99,12 +99,10 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -146,9 +144,9 @@ products:
   secondary_source:
   - oma
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
@@ -156,8 +154,6 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -499,8 +495,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -657,12 +653,10 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -674,9 +668,6 @@ products:
   secondary_source:
   - ttd
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -692,8 +683,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
 - category: Product
   description: GO annotations for human proteins
   format: txt
@@ -705,8 +694,6 @@ products:
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
 - category: Product
   description: GO annotations for mouse proteins
@@ -736,8 +723,6 @@ products:
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
@@ -947,7 +932,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -989,7 +974,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -1031,7 +1016,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -1073,7 +1058,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv

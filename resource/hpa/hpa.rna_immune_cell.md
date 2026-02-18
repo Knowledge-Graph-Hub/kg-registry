@@ -6,9 +6,9 @@ id: hpa.rna_immune_cell
 name: HPA Immune Cell RNA Data
 product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
   to URL

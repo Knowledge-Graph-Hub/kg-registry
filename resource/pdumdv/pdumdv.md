@@ -1,45 +1,44 @@
 ---
+id: pdumdv
+name: Platynereis Developmental Stages
+description: Life cycle stages for Platynereis dumerilii
 activity_status: inactive
-category: Ontology
+homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
+repository: https://github.com/obophenotype/developmental-stage-ontologies
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 contacts:
 - category: Individual
+  label: Fr d ric Bastian
+  orcid: 0000-0002-9415-5104
   contact_details:
   - contact_type: email
     value: frederic.bastian@unil.ch
   - contact_type: github
     value: fbastian
-  label: Fr d ric Bastian
-  orcid: 0000-0002-9415-5104
-description: Life cycle stages for Platynereis dumerilii
-domains:
-- anatomy and development
-homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
-id: pdumdv
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Platynereis Developmental Stages
 products:
-- category: OntologyProduct
+- id: pdumdv.owl
+  name: pdumdv.owl
   description: Platynereis Developmental Stages in OWL format
   format: owl
-  id: pdumdv.owl
-  name: pdumdv.owl
-  product_file_size: 6379
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pdumdv.owl
-- category: OntologyProduct
+- id: pdumdv.obo
+  name: pdumdv.obo
   description: Platynereis Developmental Stages in OBO format
   format: obo
-  id: pdumdv.obo
-  name: pdumdv.obo
-  product_file_size: 4411
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pdumdv.obo
-repository: https://github.com/obophenotype/developmental-stage-ontologies
 ---
+
 ## Description
 
 Life cycle stages for Platynereis dumerilii

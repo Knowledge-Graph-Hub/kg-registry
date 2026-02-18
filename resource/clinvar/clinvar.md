@@ -1080,12 +1080,10 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
     databases
@@ -1098,12 +1096,10 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 publications:
 - authors:
   - Landrum MJ

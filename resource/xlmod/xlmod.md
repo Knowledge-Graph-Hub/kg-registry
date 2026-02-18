@@ -1,48 +1,47 @@
 ---
+id: xlmod
+name: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+description: A structured controlled vocabulary for cross-linking reagents used with
+  proteomics mass spectrometry.
 activity_status: active
-category: Ontology
+homepage_url: http://www.psidev.info/groups/controlled-vocabularies
+repository: https://github.com/HUPO-PSI/xlmod-CV
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Individual
+  label: Lutz Fischer
+  orcid: 0000-0003-4978-0864
   contact_details:
   - contact_type: email
     value: lutz.fischer@tu-berlin.de
   - contact_type: github
     value: lutzfischer
-  label: Lutz Fischer
-  orcid: 0000-0003-4978-0864
-description: A structured controlled vocabulary for cross-linking reagents used with
-  proteomics mass spectrometry.
-domains:
-- chemistry and biochemistry
-homepage_url: http://www.psidev.info/groups/controlled-vocabularies
-id: xlmod
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
 products:
-- category: OntologyProduct
+- id: xlmod.obo
+  name: xlmod.obo
   description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
     in OBO format
   format: obo
-  id: xlmod.obo
-  name: xlmod.obo
-  product_file_size: 56264
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/xlmod.obo
-- category: OntologyProduct
+- id: xlmod.owl
+  name: xlmod.owl
   description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
     in OWL format
   format: owl
-  id: xlmod.owl
-  name: xlmod.owl
-  product_file_size: 96196
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/xlmod.owl
-repository: https://github.com/HUPO-PSI/xlmod-CV
 ---
+
 ## Description
 
 A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.

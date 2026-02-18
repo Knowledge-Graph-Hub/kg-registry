@@ -1,47 +1,46 @@
 ---
+id: apo
+name: Ascomycete phenotype ontology
+description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 activity_status: active
-category: Ontology
+homepage_url: http://www.yeastgenome.org/
+repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
+taxon:
+- NCBITaxon:4890
 contacts:
 - category: Individual
+  label: Stacia R Engel
+  orcid: 0000-0001-5472-917X
   contact_details:
   - contact_type: email
     value: stacia@stanford.edu
   - contact_type: github
     value: srengel
-  label: Stacia R Engel
-  orcid: 0000-0001-5472-917X
-description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
-domains:
-- biological systems
-homepage_url: http://www.yeastgenome.org/
-id: apo
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Ascomycete phenotype ontology
 products:
-- category: OntologyProduct
+- id: apo.owl
+  name: apo.owl
   description: Ascomycete phenotype ontology in OWL format
   format: owl
-  id: apo.owl
-  name: apo.owl
-  product_file_size: 32488
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/apo.owl
-- category: OntologyProduct
+- id: apo.obo
+  name: apo.obo
   description: Ascomycete phenotype ontology in OBO format
   format: obo
-  id: apo.obo
-  name: apo.obo
-  product_file_size: 16796
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/apo.obo
-repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
-taxon:
-- NCBITaxon:4890
 ---
+
 ## Description
 
 A structured controlled vocabulary for the phenotypes of Ascomycete fungi

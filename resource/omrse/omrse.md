@@ -1,44 +1,44 @@
 ---
+id: omrse
+name: Ontology for Modeling and Representation of Social Entities
+description: The Ontology for Modeling and Representation of Social Entities (OMRSE)
+  is an OBO Foundry ontology that represents the various entities that arise from
+  human social interactions, such as social acts, social roles, social groups, and
+  organizations.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
+repository: https://github.com/mcwdsi/OMRSE
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
+taxon:
+- NCBITaxon:9606
 contacts:
 - category: Individual
+  label: Bill Hogan
+  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
-  label: Bill Hogan
-  orcid: 0000-0002-9881-1017
-description: The Ontology for Modeling and Representation of Social Entities (OMRSE)
-  is an OBO Foundry ontology that represents the various entities that arise from
-  human social interactions, such as social acts, social roles, social groups, and
-  organizations.
-domains:
-- biomedical
-homepage_url: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
-id: omrse
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Ontology for Modeling and Representation of Social Entities
 products:
-- category: OntologyProduct
+- id: omrse.owl
+  name: omrse.owl
   description: Ontology for Modeling and Representation of Social Entities in OWL
     format
   format: owl
-  id: omrse.owl
-  name: omrse.owl
-  product_file_size: 171404
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/omrse.owl
-repository: https://github.com/mcwdsi/OMRSE
-taxon:
-- NCBITaxon:9606
 ---
+
 ## Description
 
 The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.

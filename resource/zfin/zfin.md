@@ -60,9 +60,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 502 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -76,8 +76,6 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 502 error
-    when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
   format: json
@@ -92,9 +90,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -103,8 +101,6 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
@@ -1169,12 +1165,10 @@ products:
   - zfin
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: MappingProduct
   compression: zip
   description: A single delimited text file format containing a list of mappings between

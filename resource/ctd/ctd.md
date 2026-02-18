@@ -1140,12 +1140,10 @@ products:
   secondary_source:
   - translator
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+    accessing file
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1184,7 +1182,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -1226,7 +1224,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -1268,7 +1266,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -1310,7 +1308,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv

@@ -1,39 +1,39 @@
 ---
+id: mro
+name: MHC Restriction Ontology
+description: An ontology for Major Histocompatibility Complex (MHC) restriction in
+  experiments
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/IEDB/MRO
+repository: https://github.com/IEDB/MRO
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Individual
+  label: Bjoern Peters
+  orcid: 0000-0002-8457-6693
   contact_details:
   - contact_type: email
     value: bpeters@lji.org
   - contact_type: github
     value: bpeters42
-  label: Bjoern Peters
-  orcid: 0000-0002-8457-6693
-description: An ontology for Major Histocompatibility Complex (MHC) restriction in
-  experiments
-domains:
-- chemistry and biochemistry
-homepage_url: https://github.com/IEDB/MRO
-id: mro
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: MHC Restriction Ontology
 products:
-- category: OntologyProduct
+- id: mro.owl
+  name: mro.owl
   description: MHC Restriction Ontology in OWL format
   format: owl
-  id: mro.owl
-  name: mro.owl
-  product_file_size: 82450469
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mro.owl
-repository: https://github.com/IEDB/MRO
 ---
+
 ## Description
 
 An ontology for Major Histocompatibility Complex (MHC) restriction in experiments

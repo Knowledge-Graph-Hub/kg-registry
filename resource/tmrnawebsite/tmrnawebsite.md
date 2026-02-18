@@ -33,12 +33,10 @@ products:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+    accessing file
 - category: Product
   description: Multiple sequence alignments for 632 tmRNA and 2,258 distinct SmpB
     sequences
@@ -49,12 +47,10 @@ products:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+    accessing file
 - category: Product
   description: Krona-based interactive phylogenetic visualization tool for 9,387 tmRNA
     instances
@@ -65,12 +61,10 @@ products:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+    accessing file
 - category: Product
   description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in
     genomic sequences
@@ -81,12 +75,10 @@ products:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/software.html
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
+    accessing file
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

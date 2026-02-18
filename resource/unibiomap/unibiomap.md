@@ -74,7 +74,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -116,7 +116,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -158,7 +158,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -200,7 +200,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
@@ -213,12 +213,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap protein entity descriptions.
   format: json
@@ -228,12 +226,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap disease entity descriptions.
   format: json
@@ -243,12 +239,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap Gene Ontology entity descriptions.
   format: json
@@ -260,12 +254,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap pathway entity descriptions.
   format: json
@@ -275,12 +267,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap phenotype entity descriptions.
   format: json
@@ -290,12 +280,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: GraphicalInterface
   description: Web interface for browsing UniBioMap resources and documentation.
   format: http

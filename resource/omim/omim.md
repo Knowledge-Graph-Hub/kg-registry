@@ -7,9 +7,9 @@ contacts:
   - contact_type: url
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
-description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
-  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
-  relationships and the molecular basis of disease.
+description: "OMIM (Online Mendelian Inheritance in Man) is a continuously updated,\
+  \ expert-curated catalog of human genes and genetic disorders, focusing on genotype\u2013\
+  phenotype relationships and the molecular basis of disease."
 domains:
 - biomedical
 - clinical
@@ -147,12 +147,10 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
     Orphanet, DisGeNET and other disease databases
@@ -167,12 +165,10 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -211,7 +207,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -253,7 +249,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -295,7 +291,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -337,7 +333,7 @@ products:
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
@@ -724,11 +720,11 @@ publications:
 - id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
-  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
+  title: "OMIM.org\u2014leveraging knowledge across phenotype\u2013gene relationships"
   year: '2019'
 - id: https://doi.org/10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: OMIM.org—an online catalog of human genes and genetic disorders
+  title: "OMIM.org\u2014an online catalog of human genes and genetic disorders"
   year: '2015'
 taxon:
 - NCBITaxon:9606

@@ -45,12 +45,10 @@ products:
   name: PROTON Top Module
   product_url: http://www.ontotext.com/proton/protontop
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+    accessing file
 - category: DocumentationProduct
   description: Comprehensive technical documentation and class reference for PROTON
     ontology covering all modules, properties, and usage guidelines

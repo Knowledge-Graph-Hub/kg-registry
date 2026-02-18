@@ -1,154 +1,47 @@
 ---
+id: po
+name: Plant Ontology
+description: The Plant Ontology is a structured vocabulary and database resource that
+  links plant anatomy, morphology and growth and development to plant genomics data.
 activity_status: active
-category: Ontology
+homepage_url: http://browser.planteome.org/amigo
+repository: https://github.com/Planteome/plant-ontology
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:33090
 contacts:
 - category: Individual
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
-description: The Plant Ontology is a structured vocabulary and database resource that
-  links plant anatomy, morphology and growth and development to plant genomics data.
-domains:
-- anatomy and development
-homepage_url: http://browser.planteome.org/amigo
-id: po
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Plant Ontology
 products:
-- category: OntologyProduct
+- id: po.owl
+  name: po.owl
   description: Plant Ontology in OWL format
   format: owl
-  id: po.owl
-  name: po.owl
-  product_file_size: 360811
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/po.owl
-- category: OntologyProduct
+- id: po.obo
+  name: po.obo
   description: Plant Ontology in OBO format
   format: obo
-  id: po.obo
-  name: po.obo
-  product_file_size: 222891
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/po.obo
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-repository: https://github.com/Planteome/plant-ontology
-taxon:
-- NCBITaxon:33090
 ---
+
 ## Description
 
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.

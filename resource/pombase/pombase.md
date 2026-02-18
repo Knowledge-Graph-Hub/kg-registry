@@ -36,12 +36,10 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
     chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -59,12 +57,10 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
+    header found
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number

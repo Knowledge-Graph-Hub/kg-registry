@@ -1,46 +1,45 @@
 ---
+id: phipo
+name: Pathogen Host Interaction Phenotype Ontology
+description: PHIPO is a formal ontology of species-neutral phenotypes observed in
+  pathogen-host interactions.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/PHI-base/phipo
+repository: https://github.com/PHI-base/phipo
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Alayne Cuzick
+  orcid: 0000-0001-8941-3984
   contact_details:
   - contact_type: email
     value: alayne.cuzick@rothamsted.ac.uk
   - contact_type: github
     value: CuzickA
-  label: Alayne Cuzick
-  orcid: 0000-0001-8941-3984
-description: PHIPO is a formal ontology of species-neutral phenotypes observed in
-  pathogen-host interactions.
-domains:
-- biological systems
-homepage_url: https://github.com/PHI-base/phipo
-id: phipo
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Pathogen Host Interaction Phenotype Ontology
 products:
-- category: OntologyProduct
+- id: phipo.owl
+  name: phipo.owl
   description: Pathogen Host Interaction Phenotype Ontology in OWL format
   format: owl
-  id: phipo.owl
-  name: phipo.owl
-  product_file_size: 1709926
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/phipo.owl
-- category: OntologyProduct
+- id: phipo.obo
+  name: phipo.obo
   description: Pathogen Host Interaction Phenotype Ontology in OBO format
   format: obo
-  id: phipo.obo
-  name: phipo.obo
-  product_file_size: 1133822
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/phipo.obo
-repository: https://github.com/PHI-base/phipo
 ---
+
 ## Description
 
 PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.

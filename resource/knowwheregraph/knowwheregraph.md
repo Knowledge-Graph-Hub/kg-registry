@@ -66,7 +66,9 @@ products:
   name: KnowWhereGraph Ontology Documentation
   product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
+    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-05_ Error connecting
     to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries
@@ -74,10 +76,6 @@ products:
     port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
 publications:
 - authors:
   - Zhu R

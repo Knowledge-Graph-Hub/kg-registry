@@ -38,14 +38,12 @@ products:
   secondary_source:
   - goldterms
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
+    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
 - category: GraphicalInterface
   format: owl
   id: goldterms.bioportal

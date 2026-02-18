@@ -32,14 +32,12 @@ products:
   secondary_source:
   - kg-covid-19
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 404 error when
+  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
+    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 ---
 KG-COVID-19: a knowledge graph for COVID-19 and SARS-COV-2.

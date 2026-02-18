@@ -1,138 +1,45 @@
 ---
+id: ms
+name: Mass spectrometry ontology
+description: A structured controlled vocabulary for the annotation of experiments
+  concerned with proteomics mass spectrometry.
 activity_status: active
-category: Ontology
+homepage_url: http://www.psidev.info/groups/controlled-vocabularies
+repository: https://github.com/HUPO-PSI/psi-ms-CV
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Joshua Klein
+  orcid: 0000-0003-1279-6838
   contact_details:
   - contact_type: email
     value: joshua.adam.klein@gmail.com
   - contact_type: github
     value: mobiusklein
-  label: Joshua Klein
-  orcid: 0000-0003-1279-6838
-description: A structured controlled vocabulary for the annotation of experiments
-  concerned with proteomics mass spectrometry.
-domains:
-- biomedical
-homepage_url: http://www.psidev.info/groups/controlled-vocabularies
-id: ms
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Mass spectrometry ontology
 products:
-- category: OntologyProduct
+- id: ms.obo
+  name: ms.obo
   description: Mass spectrometry ontology in OBO format
   format: obo
-  id: ms.obo
-  name: ms.obo
-  product_file_size: 1121316
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ms.obo
-- category: OntologyProduct
+- id: ms.owl
+  name: ms.owl
   description: Mass spectrometry ontology in OWL format
   format: owl
-  id: ms.owl
-  name: ms.owl
-  product_file_size: 4850384
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ms.owl
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-repository: https://github.com/HUPO-PSI/psi-ms-CV
 ---
+
 ## Description
 
 A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
