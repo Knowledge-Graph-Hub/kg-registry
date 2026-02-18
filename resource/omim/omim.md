@@ -189,7 +189,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -206,8 +205,6 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
@@ -234,7 +231,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -251,8 +247,6 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
@@ -279,7 +273,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -296,8 +289,6 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
@@ -324,7 +315,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -341,8 +331,6 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
