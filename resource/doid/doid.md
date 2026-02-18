@@ -42,6 +42,102 @@ products:
   product_file_size: 1367026
   product_url: http://purl.obolibrary.org/obo/doid.obo
 - category: GraphProduct
+  compression: zip
+  description: Nodes from Human Disease Ontology
+  format: csv
+  id: biomarkerkg.nodes.condition
+  name: BKG Condition Nodes
+  original_source:
+  - doid
+  product_file_size: 5501
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+  secondary_source:
+  - biomarkerkg
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
+- category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
@@ -168,158 +264,6 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
-    and integrating information from diverse biomedical resources including DRKG,
-    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
-    SIDER, and others).
-  id: ibkh.graph
-  name: iBKH Knowledge Graph
-  original_source:
-  - drkg
-  - idisk
-  - brenda
-  - ctd
-  - drugbank
-  - kegg
-  - pharmgkb
-  - reactome
-  - sider
-  - tissues
-  - bgee
-  - doid
-  - uberon
-  - cl
-  - hgnc
-  - chembl
-  - chebi
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: GraphicalInterface
-  description: A browser interface for a knowledge graph for Alzheimer's Disease.
-  format: http
-  id: alzkb.browser
-  name: AlzKB Graph Database Browser
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://alzkb.ai:7473/login
-  secondary_source:
-  - alzkb
-  - hetionet
-- category: GraphProduct
-  description: Memgraph data release for AlzKB.
-  id: alzkb.data
-  name: AlzKB Data Release (Version 2.0.0)
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-  secondary_source:
-  - alzkb
-  - hetionet
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -412,6 +356,74 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
+    and integrating information from diverse biomedical resources including DRKG,
+    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
+    SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - drkg
+  - idisk
+  - brenda
+  - ctd
+  - drugbank
+  - kegg
+  - pharmgkb
+  - reactome
+  - sider
+  - tissues
+  - bgee
+  - doid
+  - uberon
+  - cl
+  - hgnc
+  - chembl
+  - chebi
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
+  - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -559,18 +571,6 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
-- category: GraphProduct
-  compression: zip
-  description: Nodes from Human Disease Ontology
-  format: csv
-  id: biomarkerkg.nodes.condition
-  name: BKG Condition Nodes
-  original_source:
-  - doid
-  product_file_size: 5501
-  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
-  secondary_source:
-  - biomarkerkg
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 taxon:
 - NCBITaxon:9606

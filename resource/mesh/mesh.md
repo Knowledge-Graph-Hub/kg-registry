@@ -373,11 +373,11 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-04_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-15_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-15: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-18: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -395,7 +395,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -412,15 +411,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -440,7 +437,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -457,15 +453,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -485,7 +479,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -502,15 +495,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -530,7 +521,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -547,15 +537,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv

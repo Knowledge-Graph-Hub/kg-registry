@@ -1,16 +1,32 @@
 ---
 activity_status: active
 category: DataSource
-creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for proteomehd. This page was automatically generated
-  because it was referenced by other resources.
+creation_date: '2026-02-18T00:00:00Z'
+description: ProteomeHD is a proteomics resource centered on protein co-regulation
+  evidence across perturbation experiments, used in integrated protein association
+  resources.
 domains:
-- stub
+- proteomics
+- systems biology
+- biomedical
+homepage_url: https://github.com/Rappsilber-Laboratory/ProteomeHD
 id: proteomehd
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
-name: Proteomehd
+name: ProteomeHD
 products:
+- category: GraphProduct
+  description: ProteomeHD data files
+  id: proteomehd.data
+  name: ProteomeHD Data
+  original_source:
+  - proteomehd
+  - uniprot
+  - reactome
+  - intact
+  - go
+  - goa
+  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -390,10 +406,7 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Proteomehd
+# ProteomeHD
 
-This is an automatically generated stub page for proteomehd. Please update with proper information.
+ProteomeHD provides protein-level co-regulation data used in downstream network resources.

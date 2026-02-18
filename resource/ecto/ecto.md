@@ -38,7 +38,7 @@ products:
   format: owl
   id: ecto.owl
   name: ecto.owl
-  product_file_size: 2307757
+  product_file_size: 2277332
   product_url: http://purl.obolibrary.org/obo/ecto.owl
 - category: OntologyProduct
   description: Environmental conditions, treatments and exposures ontology in OBO
@@ -46,7 +46,7 @@ products:
   format: obo
   id: ecto.obo
   name: ecto.obo
-  product_file_size: 1512450
+  product_file_size: 1509031
   product_url: http://purl.obolibrary.org/obo/ecto.obo
 - category: OntologyProduct
   description: Environmental conditions, treatments and exposures ontology in JSON
@@ -54,7 +54,7 @@ products:
   format: json
   id: ecto.json
   name: ecto.json
-  product_file_size: 1642823
+  product_file_size: 1646990
   product_url: http://purl.obolibrary.org/obo/ecto.json
 - category: OntologyProduct
   description: Environmental conditions, treatments and exposures ontology in OWL
@@ -62,7 +62,7 @@ products:
   format: owl
   id: ecto.ecto-base.owl
   name: ecto.ecto-base.owl
-  product_file_size: 130323
+  product_file_size: 160667
   product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.owl
 - category: OntologyProduct
   description: Environmental conditions, treatments and exposures ontology in OBO
@@ -70,7 +70,7 @@ products:
   format: obo
   id: ecto.ecto-base.obo
   name: ecto.ecto-base.obo
-  product_file_size: 71596
+  product_file_size: 97093
   product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.obo
 - category: OntologyProduct
   description: Environmental conditions, treatments and exposures ontology in JSON
@@ -78,7 +78,7 @@ products:
   format: json
   id: ecto.ecto-base.json
   name: ecto.ecto-base.json
-  product_file_size: 86977
+  product_file_size: 141984
   product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.json
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

@@ -382,7 +382,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -399,15 +398,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -427,7 +424,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -444,15 +440,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -472,7 +466,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -489,15 +482,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -517,7 +508,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -534,15 +524,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv

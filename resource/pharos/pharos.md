@@ -51,11 +51,11 @@ products:
   name: TCRD Database Downloads
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
+  - File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-13_ Timeout connecting
+  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-15: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
@@ -71,11 +71,11 @@ products:
   name: Pharos API Documentation
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: PHAROS Automat
@@ -96,11 +96,11 @@ products:
   name: Pharos Documentation
   product_url: https://pharos.nih.gov/about
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
     when accessing file'
 publications:
 - authors:

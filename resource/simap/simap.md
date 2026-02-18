@@ -1,16 +1,32 @@
 ---
-activity_status: active
+activity_status: unknown
 category: DataSource
-creation_date: '2026-01-30T00:00:00Z'
-description: Stub Resource page for simap. This page was automatically generated because
-  it was referenced by other resources.
+creation_date: '2026-02-18T00:00:00Z'
+description: SIMAP (Similarity Matrix of Proteins) is a protein sequence similarity
+  resource historically used as an upstream source in integrative protein interaction
+  systems.
 domains:
-- stub
+- proteomics
+- genomics
+- biological systems
 id: simap
-last_modified_date: '2026-01-30T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
-name: Simap
+name: SIMAP
 products:
+- category: Product
+  description: Legacy SIMAP homepage used for sequence-similarity resource access.
+  format: http
+  id: simap.portal
+  name: SIMAP Portal
+  original_source:
+  - simap
+  product_url: http://mips.helmholtz-muenchen.de/simap/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -391,9 +407,8 @@ products:
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- Current operational status of the legacy SIMAP portal should be rechecked periodically.
 ---
-# Simap
+# SIMAP
 
-This is an automatically generated stub page for simap. Please update with proper information.
+SIMAP is represented as a legacy protein-similarity data source referenced by downstream resources.

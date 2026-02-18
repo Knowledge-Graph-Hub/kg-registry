@@ -173,6 +173,18 @@ products:
   product_url: https://stars.renci.org/var/translator/releases/goa/2025_12_15/
   secondary_source:
   - translator
+- category: GraphProduct
+  description: ProteomeHD data files
+  id: proteomehd.data
+  name: ProteomeHD Data
+  original_source:
+  - proteomehd
+  - uniprot
+  - reactome
+  - intact
+  - go
+  - goa
+  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
 ---
 ## Overview
 

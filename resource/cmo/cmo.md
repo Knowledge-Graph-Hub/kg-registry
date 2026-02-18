@@ -30,14 +30,14 @@ products:
   format: owl
   id: cmo.owl
   name: cmo.owl
-  product_file_size: 9396839
+  product_file_size: 9396957
   product_url: http://purl.obolibrary.org/obo/cmo.owl
 - category: OntologyProduct
   description: Clinical measurement ontology in OBO format
   format: obo
   id: cmo.obo
   name: cmo.obo
-  product_file_size: 2578255
+  product_file_size: 2578275
   product_url: http://purl.obolibrary.org/obo/cmo.obo
 repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
 ---

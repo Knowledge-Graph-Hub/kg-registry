@@ -16,7 +16,7 @@ description: A structured controlled vocabulary of the adult anatomy of the mous
   (Mus).
 domains:
 - anatomy and development
-homepage_url: https://github.com/obophenotype/mouse-anatomy-ontology
+homepage_url: https://github.com/obophenotype/adult-mouse-anatomy-ontology
 id: ma
 layout: resource_detail
 license:
@@ -145,7 +145,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-repository: https://github.com/obophenotype/mouse-anatomy-ontology
+repository: https://github.com/obophenotype/adult-mouse-anatomy-ontology
 taxon:
 - NCBITaxon:10088
 ---

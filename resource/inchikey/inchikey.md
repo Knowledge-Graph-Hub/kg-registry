@@ -1,16 +1,33 @@
 ---
 activity_status: active
-category: DataSource
-creation_date: '2026-01-28T00:00:00Z'
-description: Stub Resource page for inchikey. This page was automatically generated
-  because it was referenced by other resources.
+category: DataModel
+creation_date: '2026-02-18T00:00:00Z'
+description: InChIKey is a fixed-length hashed representation of the IUPAC International
+  Chemical Identifier (InChI), used for indexing and linking chemical structures across
+  resources.
 domains:
-- stub
+- chemistry and biochemistry
+- drug discovery
+homepage_url: https://www.inchi-trust.org/
 id: inchikey
-last_modified_date: '2026-01-28T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
-name: Inchikey
+name: InChIKey
 products:
+- category: DocumentationProduct
+  description: InChI Trust documentation and supporting material for the InChI/InChIKey
+    identifier standard.
+  format: http
+  id: inchikey.docs
+  name: InChI/InChIKey Documentation
+  original_source:
+  - inchikey
+  product_url: https://www.inchi-trust.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -27,7 +44,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -44,15 +60,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -72,7 +86,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -89,15 +102,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -117,7 +128,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -134,15 +144,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -162,7 +170,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -179,22 +186,20 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- InChI key
+- IUPAC InChIKey
 ---
-# Inchikey
+# InChIKey
 
-This is an automatically generated stub page for inchikey. Please update with proper information.
+InChIKey is a compact chemical structure identifier used broadly for interoperability.

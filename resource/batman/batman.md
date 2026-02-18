@@ -1,16 +1,28 @@
 ---
 activity_status: active
 category: DataSource
-creation_date: '2026-01-28T00:00:00Z'
-description: Stub Resource page for batman. This page was automatically generated
-  because it was referenced by other resources.
+creation_date: '2026-02-18T00:00:00Z'
+description: BATMAN-TCM is a web resource for predicting potential targets and molecular
+  mechanisms of traditional Chinese medicine ingredients and formulas.
 domains:
-- stub
+- pharmacology
+- drug discovery
+- pathways
+homepage_url: http://bionet.ncpsb.org.cn/batman-tcm/
 id: batman
-last_modified_date: '2026-01-28T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
-name: Batman
+name: BATMAN-TCM
 products:
+- category: GraphicalInterface
+  description: Interactive BATMAN-TCM web interface for querying compounds, targets,
+    and enriched pathways.
+  format: http
+  id: batman.web
+  name: BATMAN-TCM Web Interface
+  original_source:
+  - batman
+  product_url: http://bionet.ncpsb.org.cn/batman-tcm/
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -27,7 +39,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -44,15 +55,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -72,7 +81,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -89,15 +97,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -117,7 +123,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -134,15 +139,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -162,7 +165,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -179,22 +181,20 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- BATMAN
+- BATMAN-TCM
 ---
-# Batman
+# BATMAN-TCM
 
-This is an automatically generated stub page for batman. Please update with proper information.
+BATMAN-TCM is a web resource for target and mechanism exploration in traditional Chinese medicine.

@@ -39,7 +39,7 @@ products:
   name: emapa.obo
   product_file_size: 193424
   product_url: http://purl.obolibrary.org/obo/emapa.obo
-repository: https://github.com/obophenotype/mouse-anatomy-ontology
+repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
 taxon:
 - NCBITaxon:10088
 ---

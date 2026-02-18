@@ -66,6 +66,14 @@ products:
   original_source:
   - unichem
   product_url: https://chembl.gitbook.io/unichem
+- category: DocumentationProduct
+  description: UniChem compound sources page illustrating the UCI identifier namespace.
+  format: http
+  id: unichem.docs.uci
+  name: UCI Documentation Entry Point
+  original_source:
+  - unichem
+  product_url: https://www.ebi.ac.uk/unichem/compoundsources?type=uci&compound=1
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -82,7 +90,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -99,15 +106,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 1406201678
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
@@ -127,7 +132,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -144,15 +148,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -172,7 +174,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -189,15 +190,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -217,7 +216,6 @@ products:
   - ctd
   - chebi
   - stitch
-  - tcm-bank
   - intact
   - uniprot
   - unichem
@@ -234,15 +232,13 @@ products:
   - chembl
   - reactome
   - smpdb
-  - bioblinker
-  - hijazi20
   - uberon
   - hmdb
   - medgen
   - umls
   - mesh
   - inchikey
-  - uci
+  - unichem
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
@@ -291,7 +287,7 @@ Find all databases that contain information about a specific compound using:
 - Source-specific database IDs
 - InChI (International Chemical Identifier)
 - InChIKey (hashed version of InChI)
-- UCI (UniChem Compound Identifier)
+- unichem (UniChem Compound Identifier)
 
 ### REST API
 The UniChem API provides programmatic access for:

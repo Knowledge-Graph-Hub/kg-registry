@@ -30,7 +30,6 @@ bfo,active,PASS
 bgee,active,PASS
 bigg,active,PASS
 bindingdb,active,PASS
-bioblinker,active,PASS
 biobricks-aopwiki,active,PASS
 biobricks-ice,active,PASS
 biobricks-mesh,active,PASS
@@ -254,7 +253,6 @@ hao,active,PASS
 harmonizome-kg,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
-hijazi20,active,PASS
 hmdb,active,PASS
 hom,active,PASS
 hp,active,PASS
@@ -532,7 +530,6 @@ sgd,active,PASS
 sibils,active,PASS
 signor,active,PASS
 silva,active,PASS
-simap,active,PASS
 skm,active,PASS
 skos,active,PASS
 sldb,active,PASS
@@ -567,7 +564,6 @@ tarbase,active,PASS
 taxrank,active,PASS
 tcdb,active,PASS
 tcga,active,PASS
-tcm-bank,active,PASS
 tcrd,active,PASS
 tera,active,PASS
 text-mining-kp,active,PASS
@@ -586,7 +582,6 @@ txpo,active,PASS
 ubergraph,active,PASS
 uberon,active,PASS
 ubkg,active,PASS
-uci,active,PASS
 uf-okn,active,PASS
 ukbiobank,active,PASS
 umls,active,PASS
