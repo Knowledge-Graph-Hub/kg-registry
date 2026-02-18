@@ -1,19 +1,24 @@
 ---
 activity_status: active
-category: DataSource
-creation_date: '2026-01-23T00:00:00Z'
-description: Stub Resource page for geneticskp. This page was automatically generated
-  because it was referenced by other resources.
+category: KnowledgeGraph
+collection:
+- translator
+creation_date: '2026-02-18T00:00:00Z'
+description: Genetics KP is a Translator knowledge provider focused on integrating
+  genetic association evidence (including GWAS-derived signals) into a unified framework
+  for gene-disease relationship analysis.
 domains:
-- stub
+- genomics
+- health
+- translational
+homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: geneticskp
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
-name: Geneticskp
+name: Genetics KP
 products:
 - category: GraphProduct
-  description: KGX graph package for Genetics KP (build geneticskp_2025-12-15_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
+  description: KGX graph package for Genetics KP distributed in Translator STAR releases.
   format: kgx
   id: translator.geneticskp.graph
   name: Translator Genetics KP KGX Graph
@@ -22,10 +27,18 @@ products:
   product_url: https://stars.renci.org/var/translator/releases/geneticskp/2025_12_15/
   secondary_source:
   - translator
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- category: ProgrammingInterface
+  description: Translator Reasoner API endpoint for Genetics KP.
+  format: http
+  id: geneticskp.trapi
+  name: Genetics KP TRAPI Endpoint
+  original_source:
+  - geneticskp
+  product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/
+repository: https://github.com/broadinstitute/genetics-kp-dev
+tags:
+- translator
 ---
-# Geneticskp
+# Genetics KP
 
-This is an automatically generated stub page for geneticskp. Please update with proper information.
+Genetics KP contributes Translator-compatible genetic evidence and associations.
