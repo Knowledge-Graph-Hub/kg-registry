@@ -167,6 +167,541 @@ products:
   product_file_size: 20533481
   product_url: http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt
 - category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  compression: targz
+  description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
+  format: kgx
+  id: kg-microbe.graph.raw
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: KG-Microbe KGX Graph - Raw
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 12464495186
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
+    growth preferences.
+  format: kgx
+  id: kg-microbe.graph.core
+  name: KG-Microbe KGX Graph - Core
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
+  format: kgx
+  id: kg-microbe.graph.biomedical
+  name: KG-Microbe KGX Graph - Biomedical
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: Core plus Uniprot genome annotations
+  format: kgx
+  id: kg-microbe.graph.function
+  name: KG-Microbe KGX Graph - Function
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 4623010863
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: Biomedical plus Uniprot genome annotations
+  format: kgx
+  id: kg-microbe.graph.biomedical-function
+  name: KG-Microbe KGX Graph - Biomedical-Function
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 4640682152
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
+- category: GraphProduct
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
+  original_source:
+  - clingen
+  - clinvar
+  - mgd
+  - rgd
+  - orphanet
+  - psygenet
+  - uniprot
+  - disgenet
+  - hp
+  - gwascatalog
+  - phewascat
+  - ukbiobank
+  - finngen
+  - clinicaltrialsgov
+  product_url: https://www.disgenet.com/
+  secondary_source:
+  - disgenet
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
   id: unibiomap.links
@@ -335,238 +870,6 @@ products:
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphProduct
-  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
-    (KGX) format, containing integrated clinical and environmental exposures data
-    as a knowledge graph with 226 nodes and 14,342 edges
-  format: kgx-jsonl
-  id: icees-kg.graph
-  name: KGX distribution of the ICEES Exposures KP
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-  secondary_source:
-  - icees-kg
-- category: ProgrammingInterface
-  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
-    standardized Translator protocols
-  format: http
-  id: icees-kg.trapi
-  name: ICEES KG TRAPI API
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-  secondary_source:
-  - icees-kg
-- category: Product
-  description: Meta knowledge graph and metadata describing the data sources, node
-    types, edge types, and predicates available in ICEES KG
-  format: json
-  id: icees-kg.metadata
-  name: ICEES KG Metadata
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-  secondary_source:
-  - icees-kg
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  description: DisGeNET data, including gene to disease associations and variant to
-    disease associations (requires registration and subscription).
-  id: disgenet.data
-  name: DisGeNET Data
-  original_source:
-  - clingen
-  - clinvar
-  - mgd
-  - rgd
-  - orphanet
-  - psygenet
-  - uniprot
-  - disgenet
-  - hp
-  - gwascatalog
-  - phewascat
-  - ukbiobank
-  - finngen
-  - clinicaltrialsgov
-  product_url: https://www.disgenet.com/
-  secondary_source:
-  - disgenet
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
   id: rtx-kg2.graph.nodes
@@ -651,361 +954,6 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: ProcessProduct
-  description: INDRA CoGEx is a graph database integrating causal relations, ontological
-    relations, properties, and data, assembled at scale automatically from the scientific
-    literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
-  name: INDRA CoGEx Build Code
-  original_source:
-  - chembl
-  - sider
-  - reactome
-  - wikipathways
-  - hp
-  - nihreporter
-  - disgenet
-  - pubmed
-  - gwascatalog
-  - cellmarker
-  - go
-  - bgee
-  - ccle
-  - clinicaltrialsgov
-  - indra
-  product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - indra
-- category: GraphProduct
-  compression: targz
-  description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
-  format: kgx
-  id: kg-microbe.graph.raw
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0 1.0
-  name: KG-Microbe KGX Graph - Raw
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
-    growth preferences.
-  format: kgx
-  id: kg-microbe.graph.core
-  name: KG-Microbe KGX Graph - Core
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
-  format: kgx
-  id: kg-microbe.graph.biomedical
-  name: KG-Microbe KGX Graph - Biomedical
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: Core plus Uniprot genome annotations
-  format: kgx
-  id: kg-microbe.graph.function
-  name: KG-Microbe KGX Graph - Function
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: Biomedical plus Uniprot genome annotations
-  format: kgx
-  id: kg-microbe.graph.biomedical-function
-  name: KG-Microbe KGX Graph - Biomedical-Function
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_file_size: 4640682152
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
-  secondary_source:
-  - kg-microbe
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 15356321
@@ -1452,6 +1400,49 @@ products:
   secondary_source:
   - kg-monarch
 - category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15356321
   format: kgx-jsonl
@@ -1807,80 +1798,181 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
-- category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
   format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
+  id: efo.owl
+  name: EFO OWL
   original_source:
+  - bfo
+  - bto
+  - chebi
   - cl
   - clo
-  - chebi
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
   - go
+  - hancestro
   - hp
+  - iao
+  - ido
+  - ma
   - mondo
-  - pw
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
   - pr
   - ro
+  - semapv
+  - skos
   - so
+  - to
   - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
   original_source:
-  - go
-  - cl
-  - mesh
+  - bfo
+  - bto
   - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
   - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+- category: GraphProduct
+  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
+    (KGX) format, containing integrated clinical and environmental exposures data
+    as a knowledge graph with 226 nodes and 14,342 edges
+  format: kgx-jsonl
+  id: icees-kg.graph
+  name: KGX distribution of the ICEES Exposures KP
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+  secondary_source:
+  - icees-kg
+- category: ProgrammingInterface
+  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
+    standardized Translator protocols
+  format: http
+  id: icees-kg.trapi
+  name: ICEES KG TRAPI API
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+  secondary_source:
+  - icees-kg
+- category: Product
+  description: Meta knowledge graph and metadata describing the data sources, node
+    types, edge types, and predicates available in ICEES KG
+  format: json
+  id: icees-kg.metadata
+  name: ICEES KG Metadata
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+  secondary_source:
+  - icees-kg
+- category: GraphProduct
+  description: KGX graph package for Human Phenotype Ontology annotations (build hpoa_2025-11-24_1.0_2025sep1_4.3.6;
+    release 2025_12_15)
+  format: kgx
+  id: translator.hpoa.graph
+  name: Translator HPOA KGX Graph
+  original_source:
+  - hp
+  product_url: https://stars.renci.org/var/translator/releases/hpoa/2025_12_15/
+  secondary_source:
+  - translator
 - category: GraphProduct
   description: Nodes for the Drug Approvals KP, v0.3.9
   format: kgx
@@ -1922,98 +2014,6 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
-- category: GraphProduct
-  description: KGX graph package for Human Phenotype Ontology annotations (build hpoa_2025-11-24_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
-  id: translator.hpoa.graph
-  name: Translator HPOA KGX Graph
-  original_source:
-  - hp
-  product_url: https://stars.renci.org/var/translator/releases/hpoa/2025_12_15/
-  secondary_source:
-  - translator
-- category: GraphProduct
-  description: RNA-KG as a Neo4j Dump
-  format: neo4j
-  id: rna-kg.kg.neo4j
-  name: RNA-KG Neo4j Dump
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 3976840239
-  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Nodes in CSV format
-  format: csv
-  id: rna-kg.kg.nodes
-  name: RNA-KG Nodes
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 4424633304
-  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Edges in CSV format
-  format: csv
-  id: rna-kg.kg.edges
-  name: RNA-KG Edges
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 18370248815
-  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-  secondary_source:
-  - rna-kg
 repository: https://github.com/obophenotype/human-phenotype-ontology
 taxon:
 - NCBITaxon:9606

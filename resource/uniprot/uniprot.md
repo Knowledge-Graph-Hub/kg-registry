@@ -101,7 +101,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
     header found'
@@ -148,16 +148,16 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -659,7 +659,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
     when accessing file'

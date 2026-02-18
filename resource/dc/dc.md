@@ -238,7 +238,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-15_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2026-02-18: FTP error: timed
     out'

@@ -50,8 +50,6 @@ products:
   name: TC Systems to Substrates Table
   product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
@@ -72,8 +70,6 @@ products:
   name: Sequence Accessions to TCIDs
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
@@ -94,8 +90,6 @@ products:
   name: Accessions to TCIDs
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
@@ -108,8 +102,6 @@ products:
   name: TC Annotation Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
@@ -122,8 +114,6 @@ products:
   name: TC Structure Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
@@ -136,8 +126,6 @@ products:
   name: TC Protein Family Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length

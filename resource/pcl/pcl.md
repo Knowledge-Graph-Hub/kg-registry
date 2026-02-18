@@ -101,8 +101,8 @@ products:
   name: pcl-full.json
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl

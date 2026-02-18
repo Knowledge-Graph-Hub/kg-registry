@@ -13116,6 +13116,7 @@
       "dsstox.description",
       "emikg.kg",
       "ena.ftp",
+      "envo.owl",
       "eo.obo",
       "eo.owl",
       "eol-traitbank.bulk-csv",
@@ -13146,6 +13147,7 @@
       "foodb.data.xml",
       "foodon_core.owl",
       "forum.graph.dump",
+      "fovt.fovt-base.owl",
       "gallont.json",
       "gbif.csv-download",
       "gbif.dwc-archive",
@@ -13163,6 +13165,7 @@
       "genecards.protein.interactions",
       "genecards.protein.structures",
       "genecards.variant.data",
+      "geo.owl",
       "globi.citations.csv",
       "globi.datasets.csv",
       "globi.fields.json",
@@ -13299,6 +13302,7 @@
       "oma.proteins.fasta",
       "oma.rdf",
       "openpredict.predictions",
+      "ovae.owl",
       "pcl-base.json",
       "pcl-base.obo",
       "pcl-base.owl",
@@ -13570,7 +13574,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-02-18T16:58:43Z",
+  "generated_at": "2026-02-18T18:11:26Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 123,
     "with_evaluation_page": 119,
@@ -13578,10 +13582,10 @@
   },
   "links": {
     "broken_urls": 429,
-    "cache_hits": 3180,
+    "cache_hits": 3195,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 2766,
-    "live_checked_urls": 15,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 3195,
     "unchecked_urls": 0
@@ -13590,7 +13594,7 @@
     "missing_format": 771,
     "missing_original_source": 1378,
     "missing_product_url": 98,
-    "retrieval_warning_mentions": 410,
+    "retrieval_warning_mentions": 414,
     "total": 4605
   },
   "resource_count": 736,

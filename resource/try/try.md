@@ -23,6 +23,11 @@ products:
   - try
   product_url: https://www.try-db.org/TryWeb/Home.php
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-18_ Error connecting
+    to URL_ HTTPSConnectionPool(host='www.try-db.org', port=443)_ Max retries exceeded
+    with url_ /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
+    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
+    certificate (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-02-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='www.try-db.org', port=443)_ Max retries exceeded
     with url_ /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
@@ -33,16 +38,11 @@ products:
     with url_ /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
     certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2026-02-18_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.try-db.org', port=443)_ Max retries exceeded
-    with url_ /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-    certificate (_ssl.c_1028)')))
   - 'File was not able to be retrieved when checked on 2026-02-18: Error connecting
     to URL: HTTPSConnectionPool(host=''www.try-db.org'', port=443): Max retries exceeded
     with url: /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
     CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-    certificate (_ssl.c:1028)'')))'
+    certificate (_ssl.c:1000)'')))'
 - category: GraphProduct
   description: Graph version of the Earth Metabolome Initiative Ontology
   format: kgx
