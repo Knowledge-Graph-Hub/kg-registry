@@ -43,6 +43,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
     to URL_ Exceeded 30 redirects.
+  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+    to URL_ Exceeded 30 redirects.
 synonyms:
 - ICD-10-CM
 - ICD10 Clinical Modification

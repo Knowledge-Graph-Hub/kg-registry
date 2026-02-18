@@ -99,8 +99,8 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
     header found
 - category: MappingProduct
@@ -144,8 +144,8 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
@@ -653,8 +653,8 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
     accessing file
 - category: Product
@@ -671,6 +671,9 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
@@ -683,6 +686,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
 - category: Product
   description: GO annotations for human proteins
   format: txt
@@ -694,6 +699,8 @@ products:
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
 - category: Product
   description: GO annotations for mouse proteins
@@ -723,6 +730,8 @@ products:
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
@@ -1441,6 +1450,18 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: GraphProduct
+  description: ProteomeHD data files
+  id: proteomehd.data
+  name: ProteomeHD Data
+  original_source:
+  - proteomehd
+  - uniprot
+  - reactome
+  - intact
+  - go
+  - goa
+  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

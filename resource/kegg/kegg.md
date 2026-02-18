@@ -395,6 +395,9 @@ products:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
     interactions

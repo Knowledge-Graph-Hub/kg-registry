@@ -1,47 +1,152 @@
 ---
-id: zfa
-name: Zebrafish anatomy and development ontology
-description: A structured controlled vocabulary of the anatomy and development of
-  the Zebrafish
 activity_status: active
-homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
-repository: https://github.com/cerivs/zebrafish-anatomical-ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:7954
 contacts:
 - category: Individual
-  label: Ceri Van Slyke
-  orcid: 0000-0002-2244-7917
   contact_details:
   - contact_type: email
     value: van_slyke@zfin.org
   - contact_type: github
     value: cerivs
+  label: Ceri Van Slyke
+  orcid: 0000-0002-2244-7917
+description: A structured controlled vocabulary of the anatomy and development of
+  the Zebrafish
+domains:
+- anatomy and development
+homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
+id: zfa
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Zebrafish anatomy and development ontology
 products:
-- id: zfa.owl
-  name: zfa.owl
+- category: OntologyProduct
   description: Zebrafish anatomy and development ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: zfa.owl
+  name: zfa.owl
   product_url: http://purl.obolibrary.org/obo/zfa.owl
-- id: zfa.obo
-  name: zfa.obo
+- category: OntologyProduct
   description: Zebrafish anatomy and development ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: zfa.obo
+  name: zfa.obo
   product_url: http://purl.obolibrary.org/obo/zfa.obo
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+taxon:
+- NCBITaxon:7954
 ---
-
 ## Description
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish

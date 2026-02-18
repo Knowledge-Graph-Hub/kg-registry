@@ -486,8 +486,8 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 403 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 403 error when
     accessing file
 - category: Product
@@ -1062,6 +1062,18 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: GraphProduct
+  description: ProteomeHD data files
+  id: proteomehd.data
+  name: ProteomeHD Data
+  original_source:
+  - proteomehd
+  - uniprot
+  - reactome
+  - intact
+  - go
+  - goa
+  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
 ---
 # IntAct
 

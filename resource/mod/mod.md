@@ -1,45 +1,136 @@
 ---
-id: mod
-name: Protein modification
-description: PSI-MOD is an ontology consisting of terms that describe protein chemical
-  modifications
 activity_status: active
-homepage_url: http://www.psidev.info/MOD
-repository: https://github.com/HUPO-PSI/psi-mod-CV
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Pierre-Alain Binz
-  orcid: 0000-0002-0045-7698
   contact_details:
   - contact_type: email
     value: pierre-alain.binz@chuv.ch
   - contact_type: github
     value: pabinz
+  label: Pierre-Alain Binz
+  orcid: 0000-0002-0045-7698
+description: PSI-MOD is an ontology consisting of terms that describe protein chemical
+  modifications
+domains:
+- chemistry and biochemistry
+homepage_url: http://www.psidev.info/MOD
+id: mod
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Protein modification
 products:
-- id: mod.owl
-  name: PSI-MOD.owl
+- category: OntologyProduct
   description: PSI-MOD Ontology, OWL format
   format: owl
-  category: OntologyProduct
+  id: mod.owl
+  name: PSI-MOD.owl
   product_url: http://purl.obolibrary.org/obo/mod.owl
-- id: mod.obo
-  name: PSI-MOD.obo
+- category: OntologyProduct
   description: PSI-MOD Ontology, OBO format
   format: obo
-  category: OntologyProduct
+  id: mod.obo
+  name: PSI-MOD.obo
   product_url: http://purl.obolibrary.org/obo/mod.obo
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+repository: https://github.com/HUPO-PSI/psi-mod-CV
 ---
-
 ## Description
 
 PSI-MOD is an ontology consisting of terms that describe protein chemical modifications

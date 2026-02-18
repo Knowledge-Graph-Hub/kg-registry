@@ -232,6 +232,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
     to URL_ Exceeded 30 redirects.
+  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+    to URL_ Exceeded 30 redirects.
 publications:
 - id: https://doi.org/10.1093/nar/gkad1044
   journal: Nucleic Acids Research

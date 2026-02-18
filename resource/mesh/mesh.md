@@ -351,6 +351,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
     to URL_ Exceeded 30 redirects.
+  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+    to URL_ Exceeded 30 redirects.
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
@@ -371,8 +373,8 @@ products:
   secondary_source:
   - forum
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: FTP error: timed
-    out'
+  - File was not able to be retrieved when checked on 2026-02-15_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-02-13_ FTP error_ timed
     out
 - category: GraphProduct

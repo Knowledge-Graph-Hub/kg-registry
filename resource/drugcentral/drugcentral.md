@@ -229,8 +229,8 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
@@ -252,8 +252,8 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
@@ -274,8 +274,8 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-02-13_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
@@ -323,8 +323,8 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-15: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when

@@ -66,7 +66,6 @@ products:
   original_source:
   - unichem
   product_url: https://chembl.gitbook.io/unichem
-products:
 - category: DocumentationProduct
   description: UniChem compound sources page illustrating the UCI identifier namespace.
   format: http
