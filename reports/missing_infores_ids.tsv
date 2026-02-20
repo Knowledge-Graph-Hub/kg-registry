@@ -371,6 +371,7 @@ ovae	Ontology of Vaccine Adverse Events	Ontology	http://www.violinet.org/ovae/	r
 pankbase	PanKBase	DataSource	https://pankbase.org/	resource/pankbase/pankbase.md
 pao	Plant Anatomy Ontology	Ontology	http://www.plantontology.org	resource/pao/pao.md
 pathophenodb	PathoPhenoDB	DataSource	http://patho.phenomebrowser.net/	resource/pathophenodb/pathophenodb.md
+pbpko	Physiologically-Based Pharmacokinetic Ontology	Ontology	https://github.com/InSilicoVida-Research-Lab/pbpko	resource/pbpko/pbpko.md
 pcl	Provisional Cell Ontology	Ontology	https://github.com/obophenotype/provisional_cell_ontology	resource/pcl/pcl.md
 pco	Population and Community Ontology	Ontology	https://github.com/PopulationAndCommunityOntology/pco	resource/pco/pco.md
 pd_st	Platynereis stage ontology	Ontology	http://4dx.embl.de/platy	resource/pd_st/pd_st.md

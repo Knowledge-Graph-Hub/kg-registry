@@ -8,7 +8,7 @@ domains:
   - biomedical
 id: "genebass"
 infores_id: "genebass"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: 'Genebass: Gene-based association summary statistics'
 homepage_url: https://genebass.org/
@@ -21,6 +21,24 @@ contacts:
     contact_details:
       - contact_type: url
         value: "https://www.ukbiobank.ac.uk/"
+publications:
+  - preferred: true
+    id: doi:10.1016/j.xgen.2022.100168
+    title: Systematic single-variant and gene-based association testing of thousands
+      of phenotypes in 394,841 UK Biobank exomes
+    journal: Cell Genomics
+    year: "2022"
+    doi: 10.1016/j.xgen.2022.100168
+products:
+  - category: GraphicalInterface
+    description: Interactive web interface for searching and browsing Genebass gene-based
+      and variant-level association results.
+    format: http
+    id: genebass.portal
+    name: Genebass Portal
+    original_source:
+      - genebass
+    product_url: https://app.genebass.org/
 ---
 
 # Genebass: Gene-based association summary statistics

@@ -18,11 +18,37 @@ domains:
 homepage_url: https://medlineplus.gov/genetics/
 id: ghr
 infores_id: ghr
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Genetics Home Reference
 synonyms:
 - GHR
+products:
+- category: GraphicalInterface
+  description: MedlinePlus Genetics portal containing migrated Genetics Home Reference
+    content.
+  format: http
+  id: ghr.portal
+  name: MedlinePlus Genetics Portal
+  original_source:
+  - ghr
+  product_url: https://medlineplus.gov/genetics/
+- category: GraphicalInterface
+  description: Browse page for genetic conditions from the MedlinePlus Genetics migration.
+  format: http
+  id: ghr.conditions
+  name: MedlinePlus Genetics Conditions
+  original_source:
+  - ghr
+  product_url: https://medlineplus.gov/genetics/condition/
+- category: GraphicalInterface
+  description: Browse page for gene summaries from the MedlinePlus Genetics migration.
+  format: http
+  id: ghr.gene-catalog
+  name: MedlinePlus Genetics Gene Catalog
+  original_source:
+  - ghr
+  product_url: https://medlineplus.gov/genetics/gene/
 ---
 
 # Genetics Home Reference

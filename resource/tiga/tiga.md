@@ -18,11 +18,28 @@ domains:
 homepage_url: https://datascience.unm.edu/tiga/
 id: "tiga"
 infores_id: "tiga"
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Target Illumination GWAS Analytics
 synonyms:
   - TIGA
+products:
+  - category: GraphicalInterface
+    description: Web application for exploring TIGA evidence-ranked gene-trait associations.
+    format: http
+    id: tiga.portal
+    name: TIGA Web Application
+    original_source:
+      - tiga
+    product_url: https://datascience.unm.edu/tiga/
+  - category: Product
+    description: Download directory for TIGA data exports and releases.
+    format: mixed
+    id: tiga.downloads
+    name: TIGA Downloads
+    original_source:
+      - tiga
+    product_url: https://unmtid-dbs.net/download/TIGA/
 ---
 
 # Target Illumination GWAS Analytics

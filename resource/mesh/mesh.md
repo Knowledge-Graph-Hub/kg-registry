@@ -377,7 +377,7 @@ products:
     out
   - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-18: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-20: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

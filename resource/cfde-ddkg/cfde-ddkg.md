@@ -7,18 +7,38 @@ contacts:
   - contact_type: github
     value: jeevangelista
   label: John Erol Evangelista
-description: "The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration,\
-  \ and reuse of Common Fund data to accelerate discoveries in biomedical research.The\
-  \ Data Distillery project aims to integrate summarized (\u201Cdistilled\u201D) Common\
-  \ Fund data within a knowledge graph. The purpose of the Data Distillery Knowledge\
-  \ Graph (DDKG) is to link multiple sources of expertly curated data, thus providing\
-  \ data integration across multiple Common Fund data coordinating centers (DCCs)."
+description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration,
+  and reuse of Common Fund data to accelerate discoveries in biomedical research.The
+  Data Distillery project aims to integrate summarized (“distilled”) Common Fund data
+  within a knowledge graph. The purpose of the Data Distillery Knowledge Graph (DDKG)
+  is to link multiple sources of expertly curated data, thus providing data integration
+  across multiple Common Fund data coordinating centers (DCCs).
 domains:
 - health
 homepage_url: https://dd-kg-ui.cfde.cloud/about
 id: cfde-ddkg
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Data Distillery Knowledge Graph (DDKG)
+products:
+- category: GraphicalInterface
+  description: Interactive web interface for browsing and querying Data Distillery
+    Knowledge Graph resources.
+  format: http
+  id: cfde-ddkg.portal
+  name: DDKG Web Interface
+  original_source:
+  - cfde-ddkg
+  product_url: https://dd-kg-ui.cfde.cloud/
+- category: Product
+  description: JSON manifest listing downloadable DDKG resources and files.
+  format: json
+  id: cfde-ddkg.downloads
+  name: DDKG Downloads Manifest
+  original_source:
+  - cfde-ddkg
+  product_file_size: 5216
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json
 repository: https://github.com/MaayanLab/datadistillery-kg
 ---
 The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse 

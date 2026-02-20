@@ -7,7 +7,7 @@ domains:
   - biomedical
 id: "annotator"
 infores_id: "annotator"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Annotator Service
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Annotator-Service
@@ -17,6 +17,25 @@ contacts:
     contact_details:
       - contact_type: url
         value: "https://ncats.nih.gov/translator"
+products:
+  - category: GraphicalInterface
+    description: Web interface for querying Translator Annotator service responses.
+    format: http
+    id: annotator.portal
+    name: Translator Annotator Portal
+    original_source:
+      - annotator
+    product_url: https://annotator.transltr.io/
+  - category: ProgrammingInterface
+    connection_url: https://annotator.transltr.io
+    description: Public HTTP API endpoint for entity annotation lookups in Translator.
+    format: http
+    id: annotator.api
+    is_public: true
+    name: Translator Annotator API
+    original_source:
+      - annotator
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Annotator-Service
 ---
 
 # Annotator Service

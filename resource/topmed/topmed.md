@@ -1,6 +1,12 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nhlbi.nih.gov/
+  label: NHLBI (National Heart, Lung, and Blood Institute)
 creation_date: '2025-10-30T00:00:00Z'
 description: The NHLBI Trans-Omics for Precision Medicine (TOPMed) program generates
   scientific resources to enhance understanding of fundamental biological processes
@@ -10,25 +16,53 @@ domains:
 - genomics
 - clinical
 - precision medicine
+homepage_url: https://topmed.nhlbi.nih.gov/
 id: topmed
 infores_id: topmed
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: NHLBI Trans-Omics for Precision Medicine
-homepage_url: https://topmed.nhlbi.nih.gov/
+products:
+- category: GraphicalInterface
+  description: TOPMed program website for navigating cohorts, resources, and program
+    documentation.
+  format: http
+  id: topmed.portal
+  name: TOPMed Portal
+  original_source:
+  - topmed
+  product_url: https://topmed.nhlbi.nih.gov/
+- category: GraphicalInterface
+  description: TOPMed data access page with instructions and links for controlled-access
+    data workflows.
+  format: http
+  id: topmed.data-access
+  name: TOPMed Data Access
+  original_source:
+  - topmed
+  product_url: https://topmed.nhlbi.nih.gov/data-resources/data-access
+- category: DocumentationProduct
+  description: PDF summary table of whole-genome sequencing counts available in TOPMed.
+  format: pdf
+  id: topmed.wgs-counts
+  name: TOPMed WGS Counts PDF
+  original_source:
+  - topmed
+  product_file_size: 442890
+  product_url: https://topmed.nhlbi.nih.gov/sites/default/files/documents/TOPMed%20WGS%20Counts%2020250505.pdf
+publications:
+- doi: 10.1038/s41586-021-03205-y
+  id: doi:10.1038/s41586-021-03205-y
+  journal: Nature
+  preferred: true
+  title: Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program
+  year: '2021'
 synonyms:
 - TOPMed
 - Trans-Omics for Precision Medicine
-contacts:
-- category: Organization
-  label: NHLBI (National Heart, Lung, and Blood Institute)
-  contact_details:
-  - contact_type: url
-    value: https://www.nhlbi.nih.gov/
 taxon:
 - NCBITaxon:9606
 ---
-
 # NHLBI Trans-Omics for Precision Medicine
 
 ## Overview

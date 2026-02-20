@@ -23,7 +23,7 @@ domains:
 - toxicology
 homepage_url: https://insight-project.org/
 id: insight
-last_modified_date: '2025-08-30T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: INSIGHT
 publications:
@@ -33,6 +33,15 @@ publications:
   title: 'INSIGHT: an integrative clinical and translational biomedical knowledge
     graph for multi-scale analytics'
   year: '2025'
+products:
+- category: GraphicalInterface
+  description: INSIGHT project web portal for project updates, consortium information, and dissemination materials.
+  format: http
+  id: insight.portal
+  name: INSIGHT Project Portal
+  original_source:
+  - insight
+  product_url: https://insight-project.org/
 taxon:
 - NCBITaxon:9606
 ---

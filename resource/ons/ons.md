@@ -29,7 +29,7 @@ products:
   format: owl
   id: ons.owl
   name: ONS latest release
-  product_file_size: 206106
+  product_file_size: 215578
   product_url: http://purl.obolibrary.org/obo/ons.owl
 repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 ---

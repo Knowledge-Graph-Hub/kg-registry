@@ -7,12 +7,31 @@ domains:
   - genomics
 id: "cacao"
 infores_id: "cacao"
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Community Assessment of Community Annotation with Ontologies
 homepage_url: http://gowiki.tamu.edu/wiki/index.php/Category:CACAO
 synonyms:
   - CACAO
+products:
+  - category: GraphicalInterface
+    description: GO Wiki page for CACAO project information and annotation competition content.
+    format: http
+    id: cacao.gowiki
+    name: CACAO GO Wiki Page
+    original_source:
+      - cacao
+    product_url: http://gowiki.tamu.edu/wiki/index.php/Category:CACAO
+  - category: ProgrammingInterface
+    connection_url: https://gowiki.tamu.edu/wiki/api.php
+    description: MediaWiki API endpoint for accessing CACAO and related GO Wiki content programmatically.
+    format: http
+    id: cacao.api
+    is_public: true
+    name: GO Wiki API
+    original_source:
+      - cacao
+    product_url: https://gowiki.tamu.edu/wiki/api.php
 ---
 
 # Community Assessment of Community Annotation with Ontologies

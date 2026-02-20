@@ -38,7 +38,7 @@ products:
     with url_ /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
     certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-02-18: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-02-20: Error connecting
     to URL: HTTPSConnectionPool(host=''www.try-db.org'', port=443): Max retries exceeded
     with url: /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
     CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer

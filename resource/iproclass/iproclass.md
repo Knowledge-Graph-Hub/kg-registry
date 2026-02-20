@@ -7,13 +7,30 @@ domains:
   - proteomics
 id: "iproclass"
 infores_id: "iproclass"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: iProClass
 homepage_url: http://pir.georgetown.edu/iproclass/
 synonyms:
   - iProClass
   - Integrated Protein Classification
+products:
+  - category: GraphicalInterface
+    description: Historical iProClass web interface for integrated protein annotation lookup.
+    format: http
+    id: iproclass.portal
+    name: iProClass Portal
+    original_source:
+      - iproclass
+    product_url: http://pir.georgetown.edu/iproclass/
+  - category: DocumentationProduct
+    description: Protein Information Resource site with parent documentation and context for iProClass.
+    format: http
+    id: iproclass.pir-docs
+    name: PIR Documentation
+    original_source:
+      - iproclass
+    product_url: https://proteininformationresource.org/
 ---
 
 # iProClass

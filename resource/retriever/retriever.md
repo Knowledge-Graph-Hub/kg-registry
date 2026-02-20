@@ -19,12 +19,30 @@ domains:
 homepage_url: https://github.com/BioPack-team/retriever
 id: "retriever"
 infores_id: "retriever"
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: BioPack Retriever
 repository: https://github.com/BioPack-team/retriever
 synonyms:
   - Retriever
+products:
+  - category: ProcessProduct
+    description: Retriever source code implementing query deduplication, caching, and
+      TRAPI aggregation workflows.
+    format: http
+    id: retriever.code
+    name: Retriever Source Repository
+    original_source:
+      - retriever
+    product_url: https://github.com/BioPack-team/retriever
+  - category: DocumentationProduct
+    description: Project README with deployment and usage instructions for Retriever.
+    format: http
+    id: retriever.docs
+    name: Retriever Documentation
+    original_source:
+      - retriever
+    product_url: https://github.com/BioPack-team/retriever#readme
 ---
 
 # BioPack Retriever
