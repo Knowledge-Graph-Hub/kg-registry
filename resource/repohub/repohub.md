@@ -58,7 +58,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Downloadable sample information file with compound library details
     and annotations
@@ -86,7 +86,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Physical screening library of 5,506 compounds (90% FDA-approved or
     in clinical trials) available as assay-ready plates
@@ -113,7 +113,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: REPO1 subset library available in 5-point, 10-fold dilution series
     as single-use assay-ready plates
@@ -140,7 +140,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Follow-up compound collection of approximately 2,400 compounds available
     for secondary studies
@@ -167,7 +167,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: DocumentationProduct
   description: About page with detailed information on the Drug Repurposing Hub history,
     team, and usage
@@ -195,7 +195,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: DocumentationProduct
   description: Case studies demonstrating applications of the Drug Repurposing Hub
   format: http
@@ -222,7 +222,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: DocumentationProduct
   description: Information about conducting screens with the Drug Repurposing Hub
     library
@@ -250,7 +250,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
+    issuer certificate (_ssl.c:1000)'')))'
 - category: DocumentationProduct
   description: Policy document for compound intake and donation to the collection
   format: pdf
@@ -277,7 +277,7 @@ products:
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
+    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

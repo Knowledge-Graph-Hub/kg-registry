@@ -42,7 +42,7 @@ products:
     to URL: HTTPSConnectionPool(host=''www.try-db.org'', port=443): Max retries exceeded
     with url: /TryWeb/Home.php (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
     CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-    certificate (_ssl.c:1028)'')))'
+    certificate (_ssl.c:1000)'')))'
 - category: GraphProduct
   description: Graph version of the Earth Metabolome Initiative Ontology
   format: kgx
