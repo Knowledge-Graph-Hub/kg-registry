@@ -61,8 +61,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
+    header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases
   format: tsv

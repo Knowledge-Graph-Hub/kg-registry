@@ -63,6 +63,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
@@ -89,6 +91,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
@@ -113,6 +117,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
@@ -130,6 +136,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
@@ -166,11 +174,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
@@ -208,11 +216,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
@@ -232,6 +240,8 @@ products:
   product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'

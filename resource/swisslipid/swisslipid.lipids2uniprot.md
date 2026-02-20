@@ -7,6 +7,7 @@ name: SwissLipids Lipids to UniProt
 original_source:
 - swisslipid
 - uniprot
+product_file_size: 37147786
 product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=lipids2uniprot.tsv
 layout: product_detail
 ---

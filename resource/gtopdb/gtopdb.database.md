@@ -6,7 +6,7 @@ id: gtopdb.database
 name: GtoPdb Full Database
 product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+- File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
   header found

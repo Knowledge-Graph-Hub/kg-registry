@@ -7,7 +7,7 @@ id: pharos.tcrd.download
 name: TCRD Database Downloads
 product_url: http://juniper.health.unm.edu/tcrd/download/
 warnings:
-- File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
   to URL

@@ -45,7 +45,7 @@ products:
   dump_format: neo4j
   edge_count: 220000000
   format: mixed
-  id: clinicalkg.graph
+  id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
   original_source:
@@ -91,7 +91,7 @@ products:
   dump_format: neo4j
   edge_count: 220000000
   format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
+  id: clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
   original_source:

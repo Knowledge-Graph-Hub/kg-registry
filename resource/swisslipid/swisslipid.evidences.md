@@ -8,6 +8,7 @@ name: SwissLipids Evidences
 original_source:
 - swisslipid
 - eco
+product_file_size: 47076
 product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=evidences.tsv
 layout: product_detail
 ---

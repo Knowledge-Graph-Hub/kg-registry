@@ -128,6 +128,23 @@ products:
   - v4.0.0
   - current_build
 - category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -233,23 +250,6 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
 repository: https://github.com/oborel/obo-relations
 ---
 ## Description

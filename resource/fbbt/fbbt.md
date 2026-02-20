@@ -37,8 +37,10 @@ products:
   format: obo
   id: fbbt.obo
   name: fbbt.obo
-  product_file_size: 38424787
   product_url: http://purl.obolibrary.org/obo/fbbt.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-20: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Drosophila gross anatomy in JSON format
   format: json

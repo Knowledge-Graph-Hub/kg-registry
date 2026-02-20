@@ -196,210 +196,6 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  description: RNA-KG as a Neo4j Dump
-  format: neo4j
-  id: rna-kg.kg.neo4j
-  name: RNA-KG Neo4j Dump
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 3976840239
-  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Nodes in CSV format
-  format: csv
-  id: rna-kg.kg.nodes
-  name: RNA-KG Nodes
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 4424633304
-  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Edges in CSV format
-  format: csv
-  id: rna-kg.kg.edges
-  name: RNA-KG Edges
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 18370248815
-  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
-    and integrating information from diverse biomedical resources including DRKG,
-    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
-    SIDER, and others).
-  id: ibkh.graph
-  name: iBKH Knowledge Graph
-  original_source:
-  - drkg
-  - idisk
-  - brenda
-  - ctd
-  - drugbank
-  - kegg
-  - pharmgkb
-  - reactome
-  - sider
-  - tissues
-  - bgee
-  - doid
-  - uberon
-  - cl
-  - hgnc
-  - chembl
-  - chebi
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
@@ -629,6 +425,180 @@ products:
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 - category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
+  - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
+    and integrating information from diverse biomedical resources including DRKG,
+    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
+    SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - drkg
+  - idisk
+  - brenda
+  - ctd
+  - drugbank
+  - kegg
+  - pharmgkb
+  - reactome
+  - sider
+  - tissues
+  - bgee
+  - doid
+  - uberon
+  - cl
+  - hgnc
+  - chembl
+  - chebi
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
+- category: GraphProduct
+  compression: zip
+  description: Nodes from Uber-Anatomy Ontology
+  format: csv
+  id: biomarkerkg.nodes.anatomy
+  name: BKG Anatomy Nodes
+  original_source:
+  - uberon
+  product_file_size: 332
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
+  secondary_source:
+  - biomarkerkg
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
   id: rtx-kg2.graph.nodes
@@ -714,48 +684,86 @@ products:
   secondary_source:
   - rtx-kg2
 - category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
+  description: RNA-KG as a Neo4j Dump
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
   original_source:
-  - cl
-  - clo
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
   - chebi
-  - go
-  - hp
-  - mondo
-  - pw
   - pr
-  - ro
-  - so
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
   - uberon
   - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
+  - pw
   - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -862,45 +870,37 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
 - category: GraphProduct
+  compatibility:
+  - standard: biolink
   compression: zip
-  description: Nodes from Uber-Anatomy Ontology
-  format: csv
-  id: biomarkerkg.nodes.anatomy
-  name: BKG Anatomy Nodes
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
   original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
   - uberon
-  product_file_size: 332
-  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
-  secondary_source:
-  - biomarkerkg
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
 repository: https://github.com/obophenotype/uberon
 taxon:
 - NCBITaxon:33208

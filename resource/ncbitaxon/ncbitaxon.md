@@ -62,30 +62,6 @@ products:
   name: taxslim disjointness axioms
   product_file_size: 75398508
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -261,37 +237,57 @@ products:
   - protcid
   secondary_source:
   - spoke
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
   original_source:
+  - ctd
+  - doid
   - go
-  - cl
-  - mesh
   - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
   - reactome
+  - interpro
   - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
   - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -377,6 +373,23 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -483,50 +496,37 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
   original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
+  - go
+  - cl
   - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
+  - chebi
   - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
+  - interpro
+  - uberon
+  - pr
   - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
 repository: https://github.com/obophenotype/ncbitaxon
 ---
 ## Description

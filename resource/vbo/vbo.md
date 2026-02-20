@@ -30,8 +30,10 @@ products:
   format: owl
   id: vbo.owl
   name: vbo.owl
-  product_file_size: 2077292
   product_url: http://purl.obolibrary.org/obo/vbo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-20: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OBO format
   format: obo

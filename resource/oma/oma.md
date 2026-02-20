@@ -79,6 +79,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: Product
@@ -94,13 +96,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
@@ -122,6 +124,8 @@ products:
   - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
@@ -145,6 +149,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: Product
@@ -166,6 +172,8 @@ products:
   - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
@@ -189,6 +197,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: Product
@@ -211,6 +221,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: Product
@@ -231,6 +243,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: Product
@@ -253,6 +267,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: MappingProduct
@@ -270,13 +286,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'

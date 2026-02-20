@@ -52,6 +52,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-02-20: Timeout connecting
     to URL'
 - category: Product
@@ -71,6 +73,8 @@ products:
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
@@ -92,6 +96,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
@@ -103,6 +109,8 @@ products:
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
@@ -116,6 +124,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
@@ -127,6 +137,8 @@ products:
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'

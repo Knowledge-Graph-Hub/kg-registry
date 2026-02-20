@@ -29,10 +29,8 @@ products:
   format: owl
   id: envo.owl
   name: main ENVO OWL release
+  product_file_size: 819909
   product_url: http://purl.obolibrary.org/obo/envo.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
-    to URL'
 - category: OntologyProduct
   description: ENVO in obographs JSON format
   format: json

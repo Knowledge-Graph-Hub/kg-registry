@@ -7,6 +7,7 @@ id: swisslipid.tissues
 name: SwissLipids Tissues
 original_source:
 - swisslipid
+product_file_size: 9540
 product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=tissues.tsv
 layout: product_detail
 ---
