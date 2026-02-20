@@ -14,7 +14,7 @@ domains:
 - biomedical
 id: gdc
 infores_id: gdc
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: National Cancer Institute Genomic Data Commons Data Portal
 homepage_url: https://portal.gdc.cancer.gov
@@ -29,6 +29,13 @@ contacts:
     value: https://www.cancer.gov/
   - contact_type: url
     value: https://gdc.cancer.gov/
+publications:
+- preferred: true
+  id: doi:10.1182/blood-2017-03-735654
+  title: The NCI Genomic Data Commons as an engine for precision medicine
+  journal: Blood
+  year: "2017"
+  doi: 10.1182/blood-2017-03-735654
 taxon:
 - NCBITaxon:9606
 ---

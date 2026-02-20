@@ -12,7 +12,7 @@ domains:
 - precision medicine
 id: topmed
 infores_id: topmed
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: NHLBI Trans-Omics for Precision Medicine
 homepage_url: https://topmed.nhlbi.nih.gov/
@@ -25,6 +25,13 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://www.nhlbi.nih.gov/
+publications:
+- preferred: true
+  id: doi:10.1038/s41586-021-03205-y
+  title: Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program
+  journal: Nature
+  year: "2021"
+  doi: 10.1038/s41586-021-03205-y
 taxon:
 - NCBITaxon:9606
 ---
