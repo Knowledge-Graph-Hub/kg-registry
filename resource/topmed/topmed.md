@@ -1,6 +1,12 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nhlbi.nih.gov/
+  label: NHLBI (National Heart, Lung, and Blood Institute)
 creation_date: '2025-10-30T00:00:00Z'
 description: The NHLBI Trans-Omics for Precision Medicine (TOPMed) program generates
   scientific resources to enhance understanding of fundamental biological processes
@@ -10,28 +16,12 @@ domains:
 - genomics
 - clinical
 - precision medicine
+homepage_url: https://topmed.nhlbi.nih.gov/
 id: topmed
 infores_id: topmed
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: NHLBI Trans-Omics for Precision Medicine
-homepage_url: https://topmed.nhlbi.nih.gov/
-synonyms:
-- TOPMed
-- Trans-Omics for Precision Medicine
-contacts:
-- category: Organization
-  label: NHLBI (National Heart, Lung, and Blood Institute)
-  contact_details:
-  - contact_type: url
-    value: https://www.nhlbi.nih.gov/
-publications:
-- preferred: true
-  id: doi:10.1038/s41586-021-03205-y
-  title: Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program
-  journal: Nature
-  year: "2021"
-  doi: 10.1038/s41586-021-03205-y
 products:
 - category: GraphicalInterface
   description: TOPMed program website for navigating cohorts, resources, and program
@@ -58,11 +48,21 @@ products:
   name: TOPMed WGS Counts PDF
   original_source:
   - topmed
+  product_file_size: 442890
   product_url: https://topmed.nhlbi.nih.gov/sites/default/files/documents/TOPMed%20WGS%20Counts%2020250505.pdf
+publications:
+- doi: 10.1038/s41586-021-03205-y
+  id: doi:10.1038/s41586-021-03205-y
+  journal: Nature
+  preferred: true
+  title: Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program
+  year: '2021'
+synonyms:
+- TOPMed
+- Trans-Omics for Precision Medicine
 taxon:
 - NCBITaxon:9606
 ---
-
 # NHLBI Trans-Omics for Precision Medicine
 
 ## Overview

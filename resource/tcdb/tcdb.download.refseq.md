@@ -9,7 +9,7 @@ product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
 warnings:
 - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+- File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
   header found
 layout: product_detail
 ---

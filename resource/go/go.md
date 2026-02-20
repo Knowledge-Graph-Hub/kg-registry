@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -2224,6 +2224,16 @@ products:
   - go
   - goa
   product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+- category: Product
+  description: TSV export of SwissLipids links to Gene Ontology terms with taxon context.
+  format: tsv
+  id: swisslipid.go
+  name: SwissLipids GO Annotations
+  original_source:
+  - swisslipid
+  - go
+  product_file_size: 48388
+  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=go.tsv
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -2450,9 +2460,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: Product
   description: Gene ontology annotations from the Gene Ontology Consortium
@@ -2465,9 +2475,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 repository: https://github.com/geneontology/go-ontology
 taxon:

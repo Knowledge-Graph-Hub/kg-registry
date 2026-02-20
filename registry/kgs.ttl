@@ -445,7 +445,9 @@ kgr:ars a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Autonomous Relay System (ARS) is the primary interface and query routing service for the NCATS Biomedical Data Translator, orchestrating queries across multiple knowledge providers and reasoning agents." ;
     dcterms:identifier "ars" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ars.api,
+        kgr:ars.portal ;
     schema1:identifier "ars" ;
     schema1:name "Autonomous Relay System" ;
     skos:altLabel "ARS",
@@ -1216,7 +1218,9 @@ kgr:cacao a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CACAO (Community Assessment of Community Annotation with Ontologies) was a collaborative annotation project where undergraduate students used the Gene Ontology to annotate proteins based on evidence from scientific papers. The project appears to be inactive as the website is no longer accessible." ;
     dcterms:identifier "cacao" ;
-    dcterms:modified "2025-11-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cacao.api,
+        kgr:cacao.gowiki ;
     schema1:identifier "cacao" ;
     schema1:name "Community Assessment of Community Annotation with Ontologies" ;
     skos:altLabel "CACAO" ;
@@ -1488,6 +1492,9 @@ kgr:cfde-ddkg a schema1:KnowledgeGraph ;
     rdfs:label "Data Distillery Knowledge Graph (DDKG)" ;
     dcterms:description "The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.The Data Distillery project aims to integrate summarized (“distilled”) Common Fund data within a knowledge graph. The purpose of the Data Distillery Knowledge Graph (DDKG) is to link multiple sources of expertly curated data, thus providing data integration across multiple Common Fund data coordinating centers (DCCs)." ;
     dcterms:identifier "cfde-ddkg" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cfde-ddkg.downloads,
+        kgr:cfde-ddkg.portal ;
     schema1:name "Data Distillery Knowledge Graph (DDKG)" ;
     doap:repository <https://github.com/MaayanLab/datadistillery-kg> ;
     skos:inScheme "health" ;
@@ -1938,7 +1945,10 @@ kgr:clinical-data-kp a schema1:KnowledgeGraph ;
     rdfs:label "Clinical Data KP" ;
     dcterms:description "A Translator Knowledge Provider integrating clinical data." ;
     dcterms:identifier "clinical-data-kp" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:clinical-data-kp.docs,
+        kgr:clinical-data-kp.portal ;
     schema1:name "Clinical Data KP" ;
     skos:inScheme "clinical",
         "digital health",
@@ -2357,6 +2367,9 @@ kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     rdfs:label "Connections Hypothesis KP" ;
     dcterms:description "A Translator Knowledge Provider exploring connections hypotheses." ;
     dcterms:identifier "connections-hypothesis-kp" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:connections-hypothesis-kp.code,
+        kgr:connections-hypothesis-kp.smartapi ;
     schema1:name "Connections Hypothesis KP" ;
     skos:inScheme "health" ;
     adms:status "Active" ;
@@ -2512,7 +2525,9 @@ kgr:cqs a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Translator Curated Query Service (CQS) is an SRI service providing ARA-like reasoning capabilities through customizable inference rules captured as templates, generating predicted edges with provenance metadata and scoring." ;
     dcterms:identifier "cqs" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cqs.code,
+        kgr:cqs.docs ;
     schema1:identifier "cqs" ;
     schema1:name "Translator Curated Query Service" ;
     skos:altLabel "CQS",
@@ -2730,7 +2745,8 @@ kgr:date a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DATE (Drugs to target pAthways by the Tissue Expression) was a computational resource integrating drug targets with pathway information and tissue-specific gene expression to predict drug effects and therapeutic opportunities. The resource appears to be archived." ;
     dcterms:identifier "date" ;
-    dcterms:modified "2025-11-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:date.archive ;
     schema1:identifier "date" ;
     schema1:name "Drugs to target pAthways by the Tissue Expression" ;
     skos:altLabel "DATE" ;
@@ -3155,8 +3171,9 @@ kgr:doaf a schema1:Ontology ;
     dcterms:description "The Disease Ontology Annotation Framework (DOAF) was a semantic framework for representing and sharing disease annotations, enabling standardized disease ontology annotations across biomedical resources." ;
     dcterms:identifier "doaf" ;
     dcterms:isReferencedBy <https://doi.org/10.1371/journal.pone.0049686> ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:doaf.framework-publication ;
     schema1:identifier "doaf" ;
     schema1:name "Disease Ontology Annotation Framework" ;
     skos:altLabel "DOAF",
@@ -3555,7 +3572,8 @@ kgr:eco a schema1:Ontology ;
     dcterms:identifier "eco" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     schema1:hasPart kgr:eco.obo,
-        kgr:eco.owl ;
+        kgr:eco.owl,
+        kgr:swisslipid.evidences ;
     schema1:name "Evidence and Conclusion Ontology" ;
     doap:repository <https://github.com/evidenceontology/evidenceontology> ;
     skos:inScheme "biomedical" ;
@@ -4724,8 +4742,12 @@ kgr:gdc a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NCI Genomic Data Commons (GDC) is a data sharing platform promoting precision medicine in oncology by providing unified access to harmonized cancer genomic and clinical data from major cancer research programs including TCGA and TARGET, processed with standardized bioinformatics pipelines to enable direct comparison and integrated analysis." ;
     dcterms:identifier "gdc" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1182/blood-2017-03-735654> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:gdc.api,
+        kgr:gdc.data-transfer-tool,
+        kgr:gdc.portal ;
     schema1:identifier "gdc" ;
     schema1:name "National Cancer Institute Genomic Data Commons Data Portal" ;
     skos:altLabel "GDC",
@@ -4926,7 +4948,9 @@ kgr:genebass a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Genebass is a comprehensive resource of exome-based gene-level and single-variant association statistics from 281,852 UK Biobank participants across 3,817 phenotypes, enabling large-scale genotype-phenotype association studies." ;
     dcterms:identifier "genebass" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1016/j.xgen.2022.100168> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:genebass.portal ;
     schema1:identifier "genebass" ;
     schema1:name "Genebass: Gene-based association summary statistics" ;
     skos:altLabel "Gene-based association summary statistics",
@@ -5003,7 +5027,8 @@ kgr:geneprof a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GeneProf was a database resource for gene expression profiles and functional genomics data. The underlying resource is currently inaccessible (404 error), indicating the resource is likely inactive or deprecated." ;
     dcterms:identifier "geneprof" ;
-    dcterms:modified "2025-11-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:geneprof.translator-wiki ;
     schema1:identifier "geneprof" ;
     schema1:name "GeneProf" ;
     skos:inScheme "genomics" ;
@@ -5014,6 +5039,9 @@ kgr:genetics-kp a schema1:KnowledgeGraph ;
     rdfs:label "Genetics KP" ;
     dcterms:description "A Translator Knowledge Provider focusing on genetic data." ;
     dcterms:identifier "genetics-kp" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:genetics-kp.code,
+        kgr:genetics-kp.docs ;
     schema1:name "Genetics KP" ;
     skos:inScheme "health" ;
     adms:status "Active" .
@@ -5137,7 +5165,10 @@ kgr:ghr a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Consumer health resource about genetic conditions from the US National Library of Medicine. This resource has been merged into MedlinePlus Genetics as of 2020." ;
     dcterms:identifier "ghr" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ghr.conditions,
+        kgr:ghr.gene-catalog,
+        kgr:ghr.portal ;
     schema1:identifier "ghr" ;
     schema1:name "Genetics Home Reference" ;
     skos:altLabel "GHR" ;
@@ -5389,6 +5420,7 @@ kgr:go a schema1:Ontology ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
+        kgr:swisslipid.go,
         kgr:unibiomap.auxs,
         kgr:unibiomap.go_desc,
         kgr:unibiomap.links,
@@ -6586,8 +6618,9 @@ kgr:insight a schema1:KnowledgeGraph ;
     dcterms:description "INSIGHT is an integrative knowledge graph resource designed to support translational and clinical informatics by linking heterogeneous biomedical entities (genes, variants, diseases, phenotypes, pathways, drugs, and clinical concepts) with provenance and harmonized semantics to enable multi-scale reasoning and decision support." ;
     dcterms:identifier "insight" ;
     dcterms:isReferencedBy <doi:10.1016/j.csbj.2025.03.042> ;
-    dcterms:modified "2025-08-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:insight.portal ;
     schema1:name "INSIGHT" ;
     skos:inScheme "biomedical",
         "clinical",
@@ -6704,7 +6737,9 @@ kgr:iproclass a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "iProClass was an integrated protein classification database that provided comprehensive annotations by integrating information from UniProt, PIR, and multiple external databases including protein family, function, pathway, and interaction data." ;
     dcterms:identifier "iproclass" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:iproclass.pir-docs,
+        kgr:iproclass.portal ;
     schema1:identifier "iproclass" ;
     schema1:name "iProClass" ;
     skos:altLabel "Integrated Protein Classification",
@@ -8525,6 +8560,9 @@ kgr:multiomics-kp a schema1:KnowledgeGraph ;
     rdfs:label "Multiomics KP" ;
     dcterms:description "A Translator Knowledge Provider incorporating multiomics data." ;
     dcterms:identifier "multiomics-kp" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:multiomics-kp.code,
+        kgr:multiomics-kp.docs ;
     schema1:name "Multiomics KP" ;
     skos:inScheme "health" ;
     adms:status "Active" .
@@ -8620,7 +8658,10 @@ kgr:ncatsgardkg a schema1:KnowledgeGraph ;
     dcterms:identifier "ncatsgardkg" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/jamia/ocad186>,
         <https://doi.org/10.1101/2023.02.15.528673> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:ncatsgardkg.code,
+        kgr:ncatsgardkg.raw-data ;
     schema1:name "NCATS GARD KG" ;
     doap:repository <https://github.com/ncats/RD-Clust> ;
     skos:inScheme "biomedical",
@@ -9571,7 +9612,10 @@ kgr:omicsdi a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets across multiple repositories, providing a unified search interface for genomics, proteomics, metabolomics, and transcriptomics data." ;
     dcterms:identifier "omicsdi" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1038/nbt.3790> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:omicsdi.api,
+        kgr:omicsdi.portal ;
     schema1:identifier "omicsdi" ;
     schema1:name "OmicsDI" ;
     skos:altLabel "Omics Discovery Index",
@@ -9779,6 +9823,9 @@ kgr:ontology-kp a schema1:KnowledgeGraph ;
     rdfs:label "Ontology KP" ;
     dcterms:description "A Translator Knowledge Provider dedicated to ontology-based services." ;
     dcterms:identifier "ontology-kp" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ontology-kp.docs,
+        kgr:ontology-kp.ubergraph ;
     schema1:name "Ontology KP" ;
     skos:inScheme "other" ;
     adms:status "Active" .
@@ -9928,7 +9975,11 @@ kgr:orcid a schema1:DataSource ;
     rdfs:label "ORCID" ;
     dcterms:description "ORCID is a free, unique, persistent identifier (PID) for individuals to use as they engage in research, scholarship, and innovation activities." ;
     dcterms:identifier "orcid" ;
+    dcterms:isReferencedBy <doi:10.1087/20120404> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:orcid.api,
+        kgr:orcid.portal ;
     schema1:name "ORCID" ;
     doap:repository <https://github.com/ORCID> ;
     skos:inScheme "other" ;
@@ -11581,6 +11632,9 @@ kgr:reacto a schema1:Resource ;
     rdfs:label "Reactome Entity Ontology (REACTO)" ;
     dcterms:description "Representation of entities in Reactome" ;
     dcterms:identifier "reacto" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:reacto.go-lego-reacto.owl,
+        kgr:reacto.owl ;
     schema1:name "Reactome Entity Ontology (REACTO)" ;
     doap:repository <http://purl.obolibrary.org/obo/go/extensions/reacto.owl> ;
     skos:inScheme "biological systems" ;
@@ -11815,7 +11869,9 @@ kgr:retriever a schema1:Aggregator ;
     dcterms:created "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Retriever is an NCATS Translator component that serves as a TRAPI (Translator Reasoner API) access layer and intermediary between Knowledge Providers and the Shepherd ARA. Retriever deduplicates subquery operations, provides a cache layer, and centralizes normalization calls for improved efficiency in querying multiple knowledge graph backends. It aggregates TRAPI query responses from DogPark Knowledge Providers, using external database backends to serve integrated biomedical knowledge." ;
     dcterms:identifier "retriever" ;
-    dcterms:modified "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:retriever.code,
+        kgr:retriever.docs ;
     schema1:identifier "retriever" ;
     schema1:name "BioPack Retriever" ;
     doap:repository <https://github.com/BioPack-team/retriever> ;
@@ -11903,7 +11959,8 @@ kgr:rhea a schema1:DataSource ;
         kgr:obo-db-ingest.rhea.json,
         kgr:obo-db-ingest.rhea.obo,
         kgr:obo-db-ingest.rhea.owl,
-        kgr:obo-db-ingest.rhea.sssom.tsv ;
+        kgr:obo-db-ingest.rhea.sssom.tsv,
+        kgr:swisslipid.enzymes ;
     schema1:identifier "rhea" ;
     schema1:name "Rhea" ;
     skos:inScheme "chemistry and biochemistry" ;
@@ -12352,6 +12409,10 @@ kgr:service-kp a schema1:KnowledgeGraph ;
     rdfs:label "Service KP" ;
     dcterms:description "A Translator Knowledge Provider" ;
     dcterms:identifier "service-kp" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:service-kp.code,
+        kgr:service-kp.docs,
+        kgr:service-kp.portal ;
     schema1:name "Service KP" ;
     skos:inScheme "health" ;
     adms:status "Active" .
@@ -12572,6 +12633,10 @@ kgr:sldb a schema1:KnowledgeGraph ;
     rdfs:label "sldb" ;
     dcterms:description "A graph of synthetic lethal interactions." ;
     dcterms:identifier "sldb" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:sldb.code,
+        kgr:sldb.docs,
+        kgr:sldb.releases ;
     schema1:name "sldb" ;
     doap:repository <https://github.com/monarch-initiative/SLDBGen> ;
     skos:inScheme "organisms" ;
@@ -13091,8 +13156,10 @@ kgr:suppkg a schema1:KnowledgeGraph ;
     dcterms:description "SuppKG is a knowledge graph that integrates information about dietary supplements and their relationships with diseases, genes, proteins, and other biomedical entities, developed to support translational research and clinical decision-making." ;
     dcterms:identifier "suppkg" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.jbi.2022.104120> ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:suppkg.docs,
+        kgr:suppkg.source-data ;
     schema1:identifier "suppkg" ;
     schema1:name "SuppKG" ;
     skos:altLabel "Dietary Supplement Knowledge Graph",
@@ -13108,6 +13175,15 @@ kgr:swisslipid a schema1:DataSource ;
     dcterms:description "SwissLipids is a knowledge resource for lipids and their biology." ;
     dcterms:identifier "swisslipid" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btv285> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:swisslipid.api,
+        kgr:swisslipid.enzymes,
+        kgr:swisslipid.evidences,
+        kgr:swisslipid.go,
+        kgr:swisslipid.lipids,
+        kgr:swisslipid.lipids2uniprot,
+        kgr:swisslipid.portal,
+        kgr:swisslipid.tissues ;
     schema1:name "swisslipid" ;
     doap:repository <https://www.swisslipids.org/> ;
     skos:inScheme "chemistry and biochemistry" ;
@@ -13431,7 +13507,9 @@ kgr:tiga a schema1:DataSource ;
     dcterms:created "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Target Illumination GWAS Analytics (TIGA) database is a manually curated resource containing genotype-phenotype associations pulled from numerous genome-wide association studies (GWAS). TIGA provides bibliometric assessment of scientific consensus based on iCite Relative Citation Ratio and meanRank scores for aggregate multivariate evidence, supporting target illumination and validation in translational research. TIGA is part of the NCATS Translator Knowledge Provider ecosystem." ;
     dcterms:identifier "tiga" ;
-    dcterms:modified "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:tiga.downloads,
+        kgr:tiga.portal ;
     schema1:identifier "tiga" ;
     schema1:name "Target Illumination GWAS Analytics" ;
     skos:altLabel "TIGA" ;
@@ -13524,8 +13602,12 @@ kgr:topmed a schema1:DataSource ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NHLBI Trans-Omics for Precision Medicine (TOPMed) program generates scientific resources to enhance understanding of fundamental biological processes that underlie heart, lung, blood, and sleep disorders, providing whole genome sequencing and multi-omics data from diverse populations." ;
     dcterms:identifier "topmed" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1038/s41586-021-03205-y> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:topmed.data-access,
+        kgr:topmed.portal,
+        kgr:topmed.wgs-counts ;
     schema1:identifier "topmed" ;
     schema1:name "NHLBI Trans-Omics for Precision Medicine" ;
     skos:altLabel "TOPMed",
@@ -13787,6 +13869,9 @@ kgr:uf-okn a schema1:KnowledgeGraph ;
     rdfs:label "UF-OKN" ;
     dcterms:description "The Urban Flooding Open Knowledge Network (UF-OKN) is an informational infrastructure built with knowledge graphs to connect urban infrastructure with hydrologic forecasts, delivering actionable, real-time and historical flood-risk information as Linked Data for exploration and app development." ;
     dcterms:identifier "uf-okn" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:uf-okn.code,
+        kgr:uf-okn.portal ;
     schema1:name "UF-OKN" ;
     doap:repository <https://github.com/UFOKN/Knowledge-Graph> ;
     skos:inScheme "environment" ;
@@ -13980,6 +14065,8 @@ kgr:uniprot a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
+        kgr:swisslipid.enzymes,
+        kgr:swisslipid.lipids2uniprot,
         kgr:ttd.uniprot-all,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j,
@@ -14911,6 +14998,16 @@ kgr:aro.owl a schema1:OntologyProduct ;
     dcterms:description "Antibiotic Resistance Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/aro.owl> .
 
+kgr:ars.api a schema1:ProgrammingInterface ;
+    rdfs:label "ARS API" ;
+    dcterms:description "TRAPI-compatible ARS endpoint for asynchronous query submission." ;
+    schema1:url <https://ars-prod.transltr.io/ars/api/submit> .
+
+kgr:ars.portal a schema1:GraphicalInterface ;
+    rdfs:label "ARS Production Portal" ;
+    dcterms:description "Primary web entry point for submitting and tracking Translator ARS queries." ;
+    schema1:url <https://ars-prod.transltr.io/> .
+
 kgr:atgo.ontology a schema1:OntologyProduct ;
     rdfs:label "ATGO Hierarchical Ontology" ;
     dcterms:description "Second-generation hierarchical ontology of 220 autophagy functions built from 156,364 synthetic-lethal genetic interactions across autophagy-activating conditions in Saccharomyces cerevisiae." ;
@@ -15408,6 +15505,16 @@ kgr:bv-brc.site a schema1:GraphicalInterface ;
     dcterms:description "Web-based interface providing access to BV-BRC data, tools, and services" ;
     schema1:url <https://www.bv-brc.org/> .
 
+kgr:cacao.api a schema1:ProgrammingInterface ;
+    rdfs:label "GO Wiki API" ;
+    dcterms:description "MediaWiki API endpoint for accessing CACAO and related GO Wiki content programmatically." ;
+    schema1:url <https://gowiki.tamu.edu/wiki/api.php> .
+
+kgr:cacao.gowiki a schema1:GraphicalInterface ;
+    rdfs:label "CACAO GO Wiki Page" ;
+    dcterms:description "GO Wiki page for CACAO project information and annotation competition content." ;
+    schema1:url <http://gowiki.tamu.edu/wiki/index.php/Category:CACAO> .
+
 kgr:cam-kp.api a schema1:ProgrammingInterface ;
     rdfs:label "CAM-KP REST API" ;
     dcterms:description "TRAPI-compliant REST API for programmatic access to causal knowledge graphs supporting Translator ecosystem integration and federated querying" ;
@@ -15657,6 +15764,16 @@ kgr:ceph.owl a schema1:OntologyProduct ;
     rdfs:label "main version" ;
     dcterms:description "main version" ;
     schema1:url <http://purl.obolibrary.org/obo/ceph.owl> .
+
+kgr:cfde-ddkg.downloads a schema1:Product ;
+    rdfs:label "DDKG Downloads Manifest" ;
+    dcterms:description "JSON manifest listing downloadable DDKG resources and files." ;
+    schema1:url <https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json> .
+
+kgr:cfde-ddkg.portal a schema1:GraphicalInterface ;
+    rdfs:label "DDKG Web Interface" ;
+    dcterms:description "Interactive web interface for browsing and querying Data Distillery Knowledge Graph resources." ;
+    schema1:url <https://dd-kg-ui.cfde.cloud/> .
 
 kgr:cfde-gse.api a schema1:ProgrammingInterface ;
     rdfs:label "CFDE-GSE API" ;
@@ -16033,6 +16150,16 @@ kgr:clingen.web.interface a schema1:GraphicalInterface ;
     rdfs:label "ClinGen Search Interface" ;
     dcterms:description "Web-based interface for accessing ClinGen's curated data. Allows users to search and browse curated gene-disease pairs, variant interpretations, and other ClinGen resources." ;
     schema1:url <https://search.clinicalgenome.org/> .
+
+kgr:clinical-data-kp.docs a schema1:DocumentationProduct ;
+    rdfs:label "Clinical Data KP Documentation" ;
+    dcterms:description "Team and tooling documentation for the Clinical Data Provider." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Data-Provider> .
+
+kgr:clinical-data-kp.portal a schema1:GraphicalInterface ;
+    rdfs:label "Clinical Data KP Portal" ;
+    dcterms:description "Translator project portal describing clinical data provider activities." ;
+    schema1:url <https://ncats.nih.gov/research/research-activities/translator/projects> .
 
 kgr:clinicaltrialsgov.aact a schema1:Product ;
     rdfs:label "AACT Database" ;
@@ -16429,6 +16556,16 @@ kgr:complexportal.zebrafish.complextab a schema1:Product ;
     dcterms:description "Zebrafish complexes dataset from Complex Portal in ComplexTAB format" ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7955.tsv> .
 
+kgr:connections-hypothesis-kp.code a schema1:ProcessProduct ;
+    rdfs:label "Connections Hypothesis KP Source Code" ;
+    dcterms:description "Source code for the Connections Hypothesis Provider API implementation." ;
+    schema1:url <https://github.com/di2ag/chp_api/tree/production> .
+
+kgr:connections-hypothesis-kp.smartapi a schema1:DocumentationProduct ;
+    rdfs:label "Connections Hypothesis KP SmartAPI Entry" ;
+    dcterms:description "SmartAPI registry listing for CHP service metadata and interface documentation." ;
+    schema1:url <https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f> .
+
 kgr:corum.all_complexes a schema1:Product ;
     rdfs:label "CORUM All Complexes" ;
     dcterms:description "Complete dataset of all curated protein complexes in CORUM in tab-delimited format" ;
@@ -16523,6 +16660,16 @@ kgr:cpic.term_standardization a schema1:DocumentationProduct ;
     rdfs:label "CPIC Term Standardization Project" ;
     dcterms:description "Term standardization project resources for clinical pharmacogenetic test result terminology" ;
     schema1:url <https://cpicpgx.org/resources/term-standardization> .
+
+kgr:cqs.code a schema1:ProcessProduct ;
+    rdfs:label "CQS Source Repository" ;
+    dcterms:description "Source code and templates implementing Curated Query Service inference logic." ;
+    schema1:url <https://github.com/TranslatorSRI/CQS> .
+
+kgr:cqs.docs a schema1:DocumentationProduct ;
+    rdfs:label "CQS Documentation" ;
+    dcterms:description "Service overview and usage guidance for CQS in the Translator wiki." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Translator-Curated-Query-Service> .
 
 kgr:creeds.automatic_disease_signatures a schema1:Product ;
     rdfs:label "CREEDS Automatic Disease Signatures" ;
@@ -16658,6 +16805,11 @@ kgr:darkkinasekb.synapse a schema1:Dataset ;
     rdfs:label "DKK Synapse Data Repository" ;
     dcterms:description "Bulk datasets and resources distributed through Synapse platform" ;
     schema1:url <https://www.synapse.org/#!Synapse:syn18360482/files/> .
+
+kgr:date.archive a schema1:Product ;
+    rdfs:label "DATE Archive ZIP" ;
+    dcterms:description "Archived DATE ZIP package for tissue-specific drug-target-pathway analyses." ;
+    schema1:url <https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip> .
 
 kgr:dbsnp.api a schema1:ProgrammingInterface ;
     rdfs:label "dbSNP E-utilities API" ;
@@ -16943,6 +17095,11 @@ kgr:disprot.idpo a schema1:OntologyProduct ;
     rdfs:label "IDP Ontology (IDPO)" ;
     dcterms:description "IDP Ontology (IDPO) for representing functional aspects of intrinsically disordered proteins" ;
     schema1:url <https://www.disprot.org/assets/data/IDPO_v0.3.0.owl> .
+
+kgr:doaf.framework-publication a schema1:DocumentationProduct ;
+    rdfs:label "DOAF Framework Publication" ;
+    dcterms:description "PLOS ONE article describing the Disease Ontology Annotation Framework and its use for disease annotation." ;
+    schema1:url <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686> .
 
 kgr:docm.data.sql a schema1:ProcessProduct ;
     rdfs:label "DoCM SQL Database" ;
@@ -18223,6 +18380,21 @@ kgr:gbif.portal a schema1:GraphicalInterface ;
     dcterms:description "Web portal for searching, filtering, and discovering occurrence records, species information, datasets, and organizations with interactive mapping and download capabilities" ;
     schema1:url <https://www.gbif.org/> .
 
+kgr:gdc.api a schema1:ProgrammingInterface ;
+    rdfs:label "GDC API" ;
+    dcterms:description "REST API documentation and endpoint for programmatic access to GDC metadata and files." ;
+    schema1:url <https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/> .
+
+kgr:gdc.data-transfer-tool a schema1:DocumentationProduct ;
+    rdfs:label "GDC Data Transfer Tool" ;
+    dcterms:description "Documentation and download links for the GDC Data Transfer Tool used for bulk file download." ;
+    schema1:url <https://gdc.cancer.gov/access-data/gdc-data-transfer-tool> .
+
+kgr:gdc.portal a schema1:GraphicalInterface ;
+    rdfs:label "GDC Data Portal" ;
+    dcterms:description "Main GDC web portal for interactive exploration of projects, cohorts, and files." ;
+    schema1:url <https://portal.gdc.cancer.gov/> .
+
 kgr:gdsc.anova a schema1:Product ;
     rdfs:label "GDSC ANOVA Results" ;
     dcterms:description "ANOVA analysis results of associations between drug sensitivity and genomic features" ;
@@ -18351,6 +18523,11 @@ kgr:gene2phenotype.portal a schema1:GraphicalInterface ;
     dcterms:description "Main interface for searching curated gene-disease evidence and panels." ;
     schema1:url <https://www.ebi.ac.uk/gene2phenotype/> .
 
+kgr:genebass.portal a schema1:GraphicalInterface ;
+    rdfs:label "Genebass Portal" ;
+    dcterms:description "Interactive web interface for searching and browsing Genebass gene-based and variant-level association results." ;
+    schema1:url <https://app.genebass.org/> .
+
 kgr:genecards.web.interface a schema1:GraphicalInterface ;
     rdfs:label "GeneCards Web Interface" ;
     dcterms:description "Web-based interface for searching and browsing comprehensive gene-centric information integrating data from over 200 sources" ;
@@ -18365,6 +18542,21 @@ kgr:genepio.owl a schema1:OntologyProduct ;
     rdfs:label "genepio.owl" ;
     dcterms:description "Genomic Epidemiology Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/genepio.owl> .
+
+kgr:geneprof.translator-wiki a schema1:GraphicalInterface ;
+    rdfs:label "GeneProf Translator Wiki Page" ;
+    dcterms:description "Translator wiki page documenting the GeneProf resource and historical access details." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/GeneProf> .
+
+kgr:genetics-kp.code a schema1:ProcessProduct ;
+    rdfs:label "Genetics KP Source Code" ;
+    dcterms:description "Source code repository for the Genetics Knowledge Provider implementation." ;
+    schema1:url <https://github.com/broadinstitute/genetics-kp-dev> .
+
+kgr:genetics-kp.docs a schema1:DocumentationProduct ;
+    rdfs:label "Genetics KP Documentation" ;
+    dcterms:description "Team overview and data source documentation for the Genetics Knowledge Provider." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider> .
 
 kgr:geneticskp.trapi a schema1:ProgrammingInterface ;
     rdfs:label "Genetics KP TRAPI Endpoint" ;
@@ -18415,6 +18607,21 @@ kgr:gff.specification a schema1:DocumentationProduct ;
     rdfs:label "GFF3 Specification" ;
     dcterms:description "GFF3 specification and documentation from Sequence Ontology" ;
     schema1:url <http://www.sequenceontology.org/gff3.shtml> .
+
+kgr:ghr.conditions a schema1:GraphicalInterface ;
+    rdfs:label "MedlinePlus Genetics Conditions" ;
+    dcterms:description "Browse page for genetic conditions from the MedlinePlus Genetics migration." ;
+    schema1:url <https://medlineplus.gov/genetics/condition/> .
+
+kgr:ghr.gene-catalog a schema1:GraphicalInterface ;
+    rdfs:label "MedlinePlus Genetics Gene Catalog" ;
+    dcterms:description "Browse page for gene summaries from the MedlinePlus Genetics migration." ;
+    schema1:url <https://medlineplus.gov/genetics/gene/> .
+
+kgr:ghr.portal a schema1:GraphicalInterface ;
+    rdfs:label "MedlinePlus Genetics Portal" ;
+    dcterms:description "MedlinePlus Genetics portal containing migrated Genetics Home Reference content." ;
+    schema1:url <https://medlineplus.gov/genetics/> .
 
 kgr:glkb.site a schema1:GraphicalInterface ;
     rdfs:label "GLKB Site" ;
@@ -19697,6 +19904,11 @@ kgr:ino.owl a schema1:OntologyProduct ;
     dcterms:description "Interaction Network Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/ino.owl> .
 
+kgr:insight.portal a schema1:GraphicalInterface ;
+    rdfs:label "INSIGHT Project Portal" ;
+    dcterms:description "INSIGHT project web portal for project updates, consortium information, and dissemination materials." ;
+    schema1:url <https://insight-project.org/> .
+
 kgr:intact.datasets a schema1:Product ;
     rdfs:label "IntAct Datasets" ;
     dcterms:description "Curated and computational datasets (disease-, method-, and species-specific) with per-dataset downloads" ;
@@ -19776,6 +19988,16 @@ kgr:interpro.xml a schema1:DataModelProduct ;
     rdfs:label "InterPro XML" ;
     dcterms:description "Complete InterPro database in XML format containing entries, member database signatures, GO terms, and relationships" ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz> .
+
+kgr:iproclass.pir-docs a schema1:DocumentationProduct ;
+    rdfs:label "PIR Documentation" ;
+    dcterms:description "Protein Information Resource site with parent documentation and context for iProClass." ;
+    schema1:url <https://proteininformationresource.org/> .
+
+kgr:iproclass.portal a schema1:GraphicalInterface ;
+    rdfs:label "iProClass Portal" ;
+    dcterms:description "Historical iProClass web interface for integrated protein annotation lookup." ;
+    schema1:url <http://pir.georgetown.edu/iproclass/> .
 
 kgr:irefindex.irefr a schema1:Product ;
     rdfs:label "iRefR Package" ;
@@ -21413,6 +21635,16 @@ kgr:msigdb.investigate a schema1:GraphicalInterface ;
 kgr:mskcc a "Organization" ;
     rdfs:label "Memorial Sloan Kettering Cancer Center" .
 
+kgr:multiomics-kp.code a schema1:ProcessProduct ;
+    rdfs:label "Multiomics KP Source Code" ;
+    dcterms:description "Source repository for deployment and integration code used by the Multiomics Provider team." ;
+    schema1:url <https://github.com/PriceLab/DOCKET> .
+
+kgr:multiomics-kp.docs a schema1:DocumentationProduct ;
+    rdfs:label "Multiomics KP Documentation" ;
+    dcterms:description "Team overview and interface links for the Multiomics Provider." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-Provider> .
+
 kgr:namsnetwork.portal a schema1:GraphicalInterface ;
     rdfs:label "NAMs Network Portal" ;
     dcterms:description "NAMs Network web interface for exploring and searching New Approach Methodologies for chemical and material safety assessment" ;
@@ -21443,6 +21675,16 @@ kgr:nbo.owl a schema1:OntologyProduct ;
 
 kgr:ncats-rampdb a "Organization" ;
     rdfs:label "NCATS RaMP-DB Team" .
+
+kgr:ncatsgardkg.code a schema1:ProcessProduct ;
+    rdfs:label "NCATS GARD KG Source Repository" ;
+    dcterms:description "RD-Clust source repository implementing NCATS GARD KG clustering and analysis workflows." ;
+    schema1:url <https://github.com/ncats/RD-Clust> .
+
+kgr:ncatsgardkg.raw-data a schema1:Product ;
+    rdfs:label "NCATS GARD KG Raw Data Directory" ;
+    dcterms:description "Repository subdirectory containing raw datasets used to construct the NCATS GARD KG workflow." ;
+    schema1:url <https://github.com/ncats/RD-Clust/tree/main/data/raw> .
 
 kgr:ncbigene.gene2accession a schema1:MappingProduct ;
     rdfs:label "Gene to Accession Mapping" ;
@@ -22772,6 +23014,16 @@ kgr:omiabis.owl a schema1:OntologyProduct ;
     dcterms:description "Ontologized MIABIS in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/omiabis.owl> .
 
+kgr:omicsdi.api a schema1:ProgrammingInterface ;
+    rdfs:label "OmicsDI API" ;
+    dcterms:description "Swagger-documented web service for programmatic querying of OmicsDI dataset metadata." ;
+    schema1:url <https://www.omicsdi.org/ws/swagger-ui/index.html> .
+
+kgr:omicsdi.portal a schema1:GraphicalInterface ;
+    rdfs:label "OmicsDI Portal" ;
+    dcterms:description "Web portal for searching and browsing integrated omics dataset metadata across repositories." ;
+    schema1:url <https://www.omicsdi.org/> .
+
 kgr:omim.api a schema1:ProgrammingInterface ;
     rdfs:label "OMIM API" ;
     dcterms:description "REST-based API for programmatic access to OMIM data (registration and API key required)" ;
@@ -22877,6 +23129,16 @@ kgr:ontoavida.owl a schema1:OntologyProduct ;
     dcterms:description "The main ontology in OWL" ;
     schema1:url <http://purl.obolibrary.org/obo/ontoavida.owl> .
 
+kgr:ontology-kp.docs a schema1:DocumentationProduct ;
+    rdfs:label "Ontology KP Documentation" ;
+    dcterms:description "Translator wiki documentation for the SRI Ontology Service and Ontology KP usage." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/SRI-Ontology-Service> .
+
+kgr:ontology-kp.ubergraph a schema1:ProcessProduct ;
+    rdfs:label "Ontology KP UberGraph Source" ;
+    dcterms:description "UberGraph source repository used to support ontology reasoning and integrated ontology queries." ;
+    schema1:url <https://github.com/INCATools/ubergraph> .
+
 kgr:ontoneo.owl a schema1:OntologyProduct ;
     rdfs:label "ONTONEO" ;
     dcterms:description "The full version of ONTONEO in OWL format" ;
@@ -22952,6 +23214,16 @@ kgr:opmi.owl a schema1:OntologyProduct ;
     rdfs:label "opmi.owl" ;
     dcterms:description "Ontology of Precision Medicine and Investigation in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/opmi.owl> .
+
+kgr:orcid.api a schema1:ProgrammingInterface ;
+    rdfs:label "ORCID Public API" ;
+    dcterms:description "Public API documentation and access information for ORCID record retrieval." ;
+    schema1:url <https://info.orcid.org/what-is-orcid/services/public-api/> .
+
+kgr:orcid.portal a schema1:GraphicalInterface ;
+    rdfs:label "ORCID Registry Portal" ;
+    dcterms:description "Web interface for searching ORCID records and viewing researcher profiles." ;
+    schema1:url <https://orcid.org/> .
 
 kgr:ordo.owl a schema1:DataModelProduct ;
     rdfs:label "ORDO OWL" ;
@@ -24262,6 +24534,16 @@ kgr:rdp.tools a schema1:ProcessProduct ;
     dcterms:description "Command-line tools for rRNA sequence analysis, installation instructions and Docker images available via community tutorials." ;
     schema1:url <https://jfq3.gitbook.io/rdptools-docker/> .
 
+kgr:reacto.go-lego-reacto.owl a schema1:OntologyProduct ;
+    rdfs:label "GO LEGO REACTO Integrated Ontology" ;
+    dcterms:description "Integrated GO-LEGO-REACTO ontology for logical inference workflows." ;
+    schema1:url <http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl> .
+
+kgr:reacto.owl a schema1:OntologyProduct ;
+    rdfs:label "REACTO OWL Ontology" ;
+    dcterms:description "Primary REACTO ontology file representing Reactome entities in OWL." ;
+    schema1:url <http://purl.obolibrary.org/obo/go/extensions/reacto.owl> .
+
 kgr:reactome.api a schema1:ProgrammingInterface ;
     rdfs:label "Reactome REST API" ;
     dcterms:description "RESTful web service API for programmatic access to Reactome pathway data and content, supporting JSON responses for web applications and tools" ;
@@ -24398,6 +24680,16 @@ kgr:reprotox-kg.portal a schema1:GraphicalInterface ;
     rdfs:label "ReproTox-KG Explorer" ;
     dcterms:description "Web portal for exploring reproductive toxicology knowledge with chemical-outcome relationship visualization" ;
     schema1:url <https://reprotox-kg.net/> .
+
+kgr:retriever.code a schema1:ProcessProduct ;
+    rdfs:label "Retriever Source Repository" ;
+    dcterms:description "Retriever source code implementing query deduplication, caching, and TRAPI aggregation workflows." ;
+    schema1:url <https://github.com/BioPack-team/retriever> .
+
+kgr:retriever.docs a schema1:DocumentationProduct ;
+    rdfs:label "Retriever Documentation" ;
+    dcterms:description "Project README with deployment and usage instructions for Retriever." ;
+    schema1:url <https://github.com/BioPack-team/retriever#readme> .
 
 kgr:rex.owl a schema1:OntologyProduct ;
     rdfs:label "rex.owl" ;
@@ -24785,6 +25077,21 @@ kgr:sepio.owl a schema1:OntologyProduct ;
 kgr:sequence-ontology a "Organization" ;
     rdfs:label "Sequence Ontology Consortium" .
 
+kgr:service-kp.code a schema1:ProcessProduct ;
+    rdfs:label "Service KP Source Code" ;
+    dcterms:description "BioThings API stack source repository used by the Service Provider team." ;
+    schema1:url <https://github.com/biothings/biothings.api> .
+
+kgr:service-kp.docs a schema1:DocumentationProduct ;
+    rdfs:label "Service KP Documentation" ;
+    dcterms:description "Team documentation for the Translator Service Provider." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/Service-Provider> .
+
+kgr:service-kp.portal a schema1:GraphicalInterface ;
+    rdfs:label "Service KP SmartAPI Portal" ;
+    dcterms:description "SmartAPI Translator portal for browsing registered Translator APIs." ;
+    schema1:url <https://smart-api.info/portal/translator> .
+
 kgr:sibils.api.rest.fetch a schema1:ProgrammingInterface ;
     rdfs:label "SIBiLS Fetch API" ;
     dcterms:description "RESTful API for fetching annotated contents from SIBiLS collections" ;
@@ -25024,6 +25331,21 @@ kgr:skos.reference a schema1:DocumentationProduct ;
     rdfs:label "SKOS Reference" ;
     dcterms:description "SKOS Simple Knowledge Organization System Reference" ;
     schema1:url <https://www.w3.org/TR/skos-reference/> .
+
+kgr:sldb.code a schema1:ProcessProduct ;
+    rdfs:label "SLDB Source Repository" ;
+    dcterms:description "Source code for building the synthetic lethal interaction graph." ;
+    schema1:url <https://github.com/monarch-initiative/SLDBGen> .
+
+kgr:sldb.docs a schema1:DocumentationProduct ;
+    rdfs:label "SLDB Documentation" ;
+    dcterms:description "Project README and documentation for SLDB graph generation and usage." ;
+    schema1:url <https://github.com/monarch-initiative/SLDBGen#readme> .
+
+kgr:sldb.releases a schema1:Product ;
+    rdfs:label "SLDB Releases" ;
+    dcterms:description "Release artifacts for SLDB graph builds." ;
+    schema1:url <https://github.com/monarch-initiative/SLDBGen/releases> .
 
 kgr:slso-base.owl a schema1:OntologyProduct ;
     rdfs:label "slso-base.owl" ;
@@ -25674,6 +25996,36 @@ kgr:sudokn.sparql a schema1:ProgrammingInterface ;
     dcterms:description "SPARQL endpoint for SUDOKN" ;
     schema1:url <https://frink.apps.renci.org/sudokn/sparql> .
 
+kgr:suppkg.docs a schema1:DocumentationProduct ;
+    rdfs:label "SuppKG Documentation" ;
+    dcterms:description "Translator wiki page describing SuppKG scope and example supplement-disease relationships." ;
+    schema1:url <https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG> .
+
+kgr:suppkg.source-data a schema1:ProcessProduct ;
+    rdfs:label "SuppKG Source Data Repository" ;
+    dcterms:description "Source data directory used for SuppKG in the SemRep_DS repository." ;
+    schema1:url <https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG> .
+
+kgr:swisslipid.api a schema1:ProgrammingInterface ;
+    rdfs:label "SwissLipids API" ;
+    dcterms:description "Public API page for programmatic SwissLipids access." ;
+    schema1:url <https://www.swisslipids.org/#/api> .
+
+kgr:swisslipid.lipids a schema1:Product ;
+    rdfs:label "SwissLipids Lipids" ;
+    dcterms:description "Comprehensive TSV catalogue of SwissLipids lipid entities and identifiers." ;
+    schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=lipids.tsv> .
+
+kgr:swisslipid.portal a schema1:GraphicalInterface ;
+    rdfs:label "SwissLipids Portal" ;
+    dcterms:description "Main SwissLipids interface for browsing lipid classes and analytes." ;
+    schema1:url <https://www.swisslipids.org/> .
+
+kgr:swisslipid.tissues a schema1:Product ;
+    rdfs:label "SwissLipids Tissues" ;
+    dcterms:description "TSV export of lipid tissue and cell annotations with taxon and evidence tags." ;
+    schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=tissues.tsv> .
+
 kgr:swissmodel.api a schema1:ProgrammingInterface ;
     rdfs:label "SWISS-MODEL API" ;
     dcterms:description "Programmatic API for submitting and retrieving SWISS-MODEL tasks and model data." ;
@@ -25993,6 +26345,16 @@ kgr:tgma.owl a schema1:OntologyProduct ;
     dcterms:description "Mosquito gross anatomy ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/tgma.owl> .
 
+kgr:tiga.downloads a schema1:Product ;
+    rdfs:label "TIGA Downloads" ;
+    dcterms:description "Download directory for TIGA data exports and releases." ;
+    schema1:url <https://unmtid-dbs.net/download/TIGA/> .
+
+kgr:tiga.portal a schema1:GraphicalInterface ;
+    rdfs:label "TIGA Web Application" ;
+    dcterms:description "Web application for exploring TIGA evidence-ranked gene-trait associations." ;
+    schema1:url <https://datascience.unm.edu/tiga/> .
+
 kgr:tissues.downloads a schema1:Product ;
     rdfs:label "TISSUES Data Downloads" ;
     dcterms:description "Downloadable datasets of tissue expression evidence including integrated scores and source-specific data" ;
@@ -26042,6 +26404,21 @@ kgr:to.owl a schema1:OntologyProduct ;
     rdfs:label "to.owl" ;
     dcterms:description "Plant Trait Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/to.owl> .
+
+kgr:topmed.data-access a schema1:GraphicalInterface ;
+    rdfs:label "TOPMed Data Access" ;
+    dcterms:description "TOPMed data access page with instructions and links for controlled-access data workflows." ;
+    schema1:url <https://topmed.nhlbi.nih.gov/data-resources/data-access> .
+
+kgr:topmed.portal a schema1:GraphicalInterface ;
+    rdfs:label "TOPMed Portal" ;
+    dcterms:description "TOPMed program website for navigating cohorts, resources, and program documentation." ;
+    schema1:url <https://topmed.nhlbi.nih.gov/> .
+
+kgr:topmed.wgs-counts a schema1:DocumentationProduct ;
+    rdfs:label "TOPMed WGS Counts PDF" ;
+    dcterms:description "PDF summary table of whole-genome sequencing counts available in TOPMed." ;
+    schema1:url <https://topmed.nhlbi.nih.gov/sites/default/files/documents/TOPMed%20WGS%20Counts%2020250505.pdf> .
 
 kgr:toxcast.api a schema1:ProgrammingInterface ;
     rdfs:label "CompTox Chemicals Dashboard API (ToxCast)" ;
@@ -26228,6 +26605,16 @@ kgr:ubkg.guesdt a schema1:GraphicalInterface ;
 
 kgr:ucsb-geography a "Organization" ;
     rdfs:label "University of California, Santa Barbara - Department of Geography" .
+
+kgr:uf-okn.code a schema1:ProcessProduct ;
+    rdfs:label "UF-OKN Source Code" ;
+    dcterms:description "Source repository for UF-OKN knowledge graph construction and maintenance." ;
+    schema1:url <https://github.com/UFOKN/Knowledge-Graph> .
+
+kgr:uf-okn.portal a schema1:GraphicalInterface ;
+    rdfs:label "UF-OKN Portal" ;
+    dcterms:description "Public UF-OKN web portal for project information and application context." ;
+    schema1:url <https://ufokn.com/> .
 
 kgr:ukbiobank.showcase a schema1:GraphicalInterface ;
     rdfs:label "UK Biobank Data Showcase" ;
@@ -27501,6 +27888,21 @@ kgr:snomedct.icd10cm.map a schema1:MappingProduct ;
     dcterms:description "The biannual release of the SNOMED CT to ICD-10-CM Map, which maps SNOMED CT concepts to ICD-10-CM codes." ;
     schema1:url <https://download.nlm.nih.gov/mlb/utsauth/ICD10CM/SNOMED_CT_to_ICD-10-CM_Resources_20250301.zip> .
 
+kgr:swisslipid.evidences a schema1:Product ;
+    rdfs:label "SwissLipids Evidences" ;
+    dcterms:description "TSV export of evidence annotations including ECO terms and supporting PMIDs." ;
+    schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=evidences.tsv> .
+
+kgr:swisslipid.go a schema1:Product ;
+    rdfs:label "SwissLipids GO Annotations" ;
+    dcterms:description "TSV export of SwissLipids links to Gene Ontology terms with taxon context." ;
+    schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=go.tsv> .
+
+kgr:swisslipid.lipids2uniprot a schema1:MappingProduct ;
+    rdfs:label "SwissLipids Lipids to UniProt" ;
+    dcterms:description "TSV mapping between SwissLipids lipid entries and UniProtKB proteins." ;
+    schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=lipids2uniprot.tsv> .
+
 kgr:translator.alliance.graph a schema1:GraphProduct ;
     rdfs:label "Translator Alliance KGX Graph" ;
     dcterms:description "KGX graph package for Alliance of Genome Resources (build alliance_8.2.0_1.0_2025sep1_4.3.6; release 2025_12_15)" ;
@@ -27754,6 +28156,11 @@ kgr:repodb.full_dataset a schema1:Product ;
     rdfs:label "RepoDB Full Dataset" ;
     dcterms:description "Complete RepoDB dataset containing drug repositioning successes and failures, with approved drugs, indications, and clinical trial outcomes" ;
     schema1:url <https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=> .
+
+kgr:swisslipid.enzymes a schema1:Product ;
+    rdfs:label "SwissLipids Enzymes" ;
+    dcterms:description "TSV export of lipid-related enzymes with UniProt, Rhea, and evidence links." ;
+    schema1:url <https://www.swisslipids.org/api/file.php?cas=download_files&file=enzymes.tsv> .
 
 kgr:genecards.expression.data a schema1:Product ;
     rdfs:label "GeneCards Expression Data" ;

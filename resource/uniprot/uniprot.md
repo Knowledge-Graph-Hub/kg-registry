@@ -101,9 +101,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-15_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-18: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -148,16 +148,16 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -659,9 +659,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -1468,6 +1468,28 @@ products:
   - go
   - goa
   product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+- category: Product
+  description: TSV export of lipid-related enzymes with UniProt, Rhea, and evidence
+    links.
+  format: tsv
+  id: swisslipid.enzymes
+  name: SwissLipids Enzymes
+  original_source:
+  - swisslipid
+  - uniprot
+  - rhea
+  product_file_size: 126760
+  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=enzymes.tsv
+- category: MappingProduct
+  description: TSV mapping between SwissLipids lipid entries and UniProtKB proteins.
+  format: tsv
+  id: swisslipid.lipids2uniprot
+  name: SwissLipids Lipids to UniProt
+  original_source:
+  - swisslipid
+  - uniprot
+  product_file_size: 37147786
+  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=lipids2uniprot.tsv
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

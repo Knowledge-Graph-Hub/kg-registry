@@ -47,7 +47,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -56,7 +56,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
     when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
@@ -74,7 +74,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -83,7 +83,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-18: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM
@@ -263,6 +263,18 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
+- category: Product
+  description: TSV export of lipid-related enzymes with UniProt, Rhea, and evidence
+    links.
+  format: tsv
+  id: swisslipid.enzymes
+  name: SwissLipids Enzymes
+  original_source:
+  - swisslipid
+  - uniprot
+  - rhea
+  product_file_size: 126760
+  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=enzymes.tsv
 publications:
 - authors:
   - Bansal P

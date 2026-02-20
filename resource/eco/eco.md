@@ -38,6 +38,17 @@ products:
   name: eco.obo
   product_file_size: 156464
   product_url: http://purl.obolibrary.org/obo/eco.obo
+- category: Product
+  description: TSV export of evidence annotations including ECO terms and supporting
+    PMIDs.
+  format: tsv
+  id: swisslipid.evidences
+  name: SwissLipids Evidences
+  original_source:
+  - swisslipid
+  - eco
+  product_file_size: 47076
+  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=evidences.tsv
 repository: https://github.com/evidenceontology/evidenceontology
 ---
 ## Description
