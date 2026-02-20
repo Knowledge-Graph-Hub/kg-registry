@@ -19,9 +19,27 @@ domains:
 - environment
 homepage_url: https://ufokn.com/
 id: uf-okn
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: UF-OKN
 repository: https://github.com/UFOKN/Knowledge-Graph
+products:
+- category: GraphicalInterface
+  description: Public UF-OKN web portal for project information and application context.
+  format: http
+  id: uf-okn.portal
+  name: UF-OKN Portal
+  original_source:
+  - uf-okn
+  product_url: https://ufokn.com/
+- category: ProcessProduct
+  description: Source repository for UF-OKN knowledge graph construction and maintenance.
+  format: http
+  id: uf-okn.code
+  name: UF-OKN Source Code
+  original_source:
+  - uf-okn
+  product_url: https://github.com/UFOKN/Knowledge-Graph
 ---
 UF-OKN
 

@@ -7,7 +7,7 @@ domains:
   - biomedical
 id: "ars"
 infores_id: "ars"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Autonomous Relay System
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Autonomous-Relay-System-(ARS)
@@ -20,6 +20,26 @@ contacts:
     contact_details:
       - contact_type: url
         value: "https://ncats.nih.gov/translator"
+products:
+  - category: GraphicalInterface
+    description: Primary web entry point for submitting and tracking Translator ARS
+      queries.
+    format: http
+    id: ars.portal
+    name: ARS Production Portal
+    original_source:
+      - ars
+    product_url: https://ars-prod.transltr.io/
+  - category: ProgrammingInterface
+    connection_url: https://ars-prod.transltr.io/ars/api
+    description: TRAPI-compatible ARS endpoint for asynchronous query submission.
+    format: http
+    id: ars.api
+    is_public: true
+    name: ARS API
+    original_source:
+      - ars
+    product_url: https://ars-prod.transltr.io/ars/api/submit
 ---
 
 # Autonomous Relay System

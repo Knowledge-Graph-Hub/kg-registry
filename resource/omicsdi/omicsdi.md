@@ -31,6 +31,27 @@ publications:
   journal: Nature Biotechnology
   year: "2017"
   doi: 10.1038/nbt.3790
+products:
+- category: GraphicalInterface
+  description: Web portal for searching and browsing integrated omics dataset metadata
+    across repositories.
+  format: http
+  id: omicsdi.portal
+  name: OmicsDI Portal
+  original_source:
+  - omicsdi
+  product_url: https://www.omicsdi.org/
+- category: ProgrammingInterface
+  connection_url: https://www.omicsdi.org/ws
+  description: Swagger-documented web service for programmatic querying of OmicsDI
+    dataset metadata.
+  format: http
+  id: omicsdi.api
+  is_public: true
+  name: OmicsDI API
+  original_source:
+  - omicsdi
+  product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 ---
 
 # OmicsDI

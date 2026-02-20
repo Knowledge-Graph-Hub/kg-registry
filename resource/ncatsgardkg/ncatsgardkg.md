@@ -18,6 +18,7 @@ domains:
 - genomics
 homepage_url: https://github.com/ncats/RD-Clust
 id: ncatsgardkg
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: NCATS GARD KG
 publications:
@@ -30,6 +31,23 @@ publications:
   title: 'RD-Clust: A tool for rare disease clustering and drug discovery'
   year: '2023'
 repository: https://github.com/ncats/RD-Clust
+products:
+- category: ProcessProduct
+  description: RD-Clust source repository implementing NCATS GARD KG clustering and analysis workflows.
+  format: http
+  id: ncatsgardkg.code
+  name: NCATS GARD KG Source Repository
+  original_source:
+  - ncatsgardkg
+  product_url: https://github.com/ncats/RD-Clust
+- category: Product
+  description: Repository subdirectory containing raw datasets used to construct the NCATS GARD KG workflow.
+  format: http
+  id: ncatsgardkg.raw-data
+  name: NCATS GARD KG Raw Data Directory
+  original_source:
+  - ncatsgardkg
+  product_url: https://github.com/ncats/RD-Clust/tree/main/data/raw
 taxon:
 - NCBITaxon:9606
 ---

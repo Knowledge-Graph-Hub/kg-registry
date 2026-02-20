@@ -7,7 +7,7 @@ domains:
   - biomedical
 id: "cqs"
 infores_id: "cqs"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Translator Curated Query Service
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Translator-Curated-Query-Service
@@ -20,6 +20,24 @@ contacts:
     contact_details:
       - contact_type: url
         value: "https://ncats.nih.gov/translator"
+products:
+  - category: DocumentationProduct
+    description: Service overview and usage guidance for CQS in the Translator wiki.
+    format: http
+    id: cqs.docs
+    name: CQS Documentation
+    original_source:
+      - cqs
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Translator-Curated-Query-Service
+  - category: ProcessProduct
+    description: Source code and templates implementing Curated Query Service inference
+      logic.
+    format: http
+    id: cqs.code
+    name: CQS Source Repository
+    original_source:
+      - cqs
+    product_url: https://github.com/TranslatorSRI/CQS
 ---
 
 # Translator Curated Query Service

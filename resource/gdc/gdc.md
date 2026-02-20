@@ -36,6 +36,36 @@ publications:
   journal: Blood
   year: "2017"
   doi: 10.1182/blood-2017-03-735654
+products:
+- category: GraphicalInterface
+  description: Main GDC web portal for interactive exploration of projects, cohorts, and
+    files.
+  format: http
+  id: gdc.portal
+  name: GDC Data Portal
+  original_source:
+  - gdc
+  product_url: https://portal.gdc.cancer.gov/
+- category: ProgrammingInterface
+  connection_url: https://api.gdc.cancer.gov/
+  description: REST API documentation and endpoint for programmatic access to GDC
+    metadata and files.
+  format: http
+  id: gdc.api
+  is_public: true
+  name: GDC API
+  original_source:
+  - gdc
+  product_url: https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/
+- category: DocumentationProduct
+  description: Documentation and download links for the GDC Data Transfer Tool used
+    for bulk file download.
+  format: http
+  id: gdc.data-transfer-tool
+  name: GDC Data Transfer Tool
+  original_source:
+  - gdc
+  product_url: https://gdc.cancer.gov/access-data/gdc-data-transfer-tool
 taxon:
 - NCBITaxon:9606
 ---

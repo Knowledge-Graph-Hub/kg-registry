@@ -8,12 +8,23 @@ domains:
   - systems biology
 id: date
 infores_id: date
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Drugs to target pAthways by the Tissue Expression
 homepage_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
 synonyms:
   - DATE
+products:
+  - category: Product
+    compression: zip
+    description: Archived DATE ZIP package for tissue-specific drug-target-pathway analyses.
+    dump_format: other
+    format: mixed
+    id: date.archive
+    name: DATE Archive ZIP
+    original_source:
+      - date
+    product_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
 ---
 
 # Drugs to target pAthways by the Tissue Expression

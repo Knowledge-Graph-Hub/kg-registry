@@ -29,6 +29,16 @@ publications:
     journal: Cell Genomics
     year: "2022"
     doi: 10.1016/j.xgen.2022.100168
+products:
+  - category: GraphicalInterface
+    description: Interactive web interface for searching and browsing Genebass gene-based
+      and variant-level association results.
+    format: http
+    id: genebass.portal
+    name: Genebass Portal
+    original_source:
+      - genebass
+    product_url: https://app.genebass.org/
 ---
 
 # Genebass: Gene-based association summary statistics

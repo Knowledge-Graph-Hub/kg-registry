@@ -7,10 +7,19 @@ domains:
   - genomics
 id: "geneprof"
 infores_id: "geneprof"
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: GeneProf
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/GeneProf
+products:
+  - category: GraphicalInterface
+    description: Translator wiki page documenting the GeneProf resource and historical access details.
+    format: http
+    id: geneprof.translator-wiki
+    name: GeneProf Translator Wiki Page
+    original_source:
+      - geneprof
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/GeneProf
 ---
 
 # GeneProf

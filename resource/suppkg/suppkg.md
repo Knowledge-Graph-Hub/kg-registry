@@ -18,13 +18,30 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
 id: suppkg
 infores_id: suppkg
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: SuppKG
 publications:
 - id: https://doi.org/10.1016/j.jbi.2022.104120
   title: 'SuppKG: A knowledge graph for dietary supplements'
   year: '2022'
+products:
+- category: DocumentationProduct
+  description: Translator wiki page describing SuppKG scope and example supplement-disease relationships.
+  format: http
+  id: suppkg.docs
+  name: SuppKG Documentation
+  original_source:
+  - suppkg
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
+- category: ProcessProduct
+  description: Source data directory used for SuppKG in the SemRep_DS repository.
+  format: http
+  id: suppkg.source-data
+  name: SuppKG Source Data Repository
+  original_source:
+  - suppkg
+  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 synonyms:
 - SuppKG
 - Dietary Supplement Knowledge Graph

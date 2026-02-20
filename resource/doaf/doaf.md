@@ -10,7 +10,7 @@ domains:
 - clinical
 id: doaf
 infores_id: doaf
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Disease Ontology Annotation Framework
 homepage_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686
@@ -21,6 +21,15 @@ publications:
 - id: https://doi.org/10.1371/journal.pone.0049686
   title: 'The Disease Ontology: Structuring the Landscape of Human Disease'
   year: '2012'
+products:
+- category: DocumentationProduct
+  description: PLOS ONE article describing the Disease Ontology Annotation Framework and its use for disease annotation.
+  format: http
+  id: doaf.framework-publication
+  name: DOAF Framework Publication
+  original_source:
+  - doaf
+  product_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686
 taxon:
 - NCBITaxon:9606
 ---

@@ -23,6 +23,25 @@ publications:
   journal: Learned Publishing
   year: "2012"
   doi: 10.1087/20120404
+products:
+- category: GraphicalInterface
+  description: Web interface for searching ORCID records and viewing researcher profiles.
+  format: http
+  id: orcid.portal
+  name: ORCID Registry Portal
+  original_source:
+  - orcid
+  product_url: https://orcid.org/
+- category: ProgrammingInterface
+  connection_url: https://pub.orcid.org/v3.0/
+  description: Public API documentation and access information for ORCID record retrieval.
+  format: http
+  id: orcid.api
+  is_public: true
+  name: ORCID Public API
+  original_source:
+  - orcid
+  product_url: https://info.orcid.org/what-is-orcid/services/public-api/
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
