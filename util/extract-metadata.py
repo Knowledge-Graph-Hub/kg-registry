@@ -42,6 +42,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Helper utils for KG-Registry",
         formatter_class=argparse.RawTextHelpFormatter,
+        fromfile_prefix_chars="@",
     )
 
     subparsers = parser.add_subparsers(dest="subcommand", help="sub-command help")

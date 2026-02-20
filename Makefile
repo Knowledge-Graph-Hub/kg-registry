@@ -210,8 +210,11 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 # Also create product pages where needed
 # and propagate product entries to related resources
 # But don't show the whole command because it is very long
-tmp/unsorted-resources.yml: $(RESOURCES) | tmp
-	@$(RUN) python ./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+tmp/resource-files.txt: $(RESOURCES) | tmp
+	@find resource -type f -name '*.md' | LC_ALL=C sort > $@.tmp && mv $@.tmp $@
+
+tmp/unsorted-resources.yml: tmp/resource-files.txt | tmp
+	@$(RUN) python ./util/extract-metadata.py concat -o $@.tmp @$< && mv $@.tmp $@
 
 # Populate infores identifiers for resources and products
 # This step updates the resource markdown files with infores_id fields
@@ -244,11 +247,11 @@ endif
 # Run validation, including with LinkML validator
 # But don't show the whole command because it is very long
 # These commands need the combined schema to be built first
-extract-metadata: $(RESOURCES) $(SOURCE_SCHEMA_ALL)
-	@$(RUN) ./util/extract-metadata.py validate $^
+extract-metadata: tmp/resource-files.txt $(SOURCE_SCHEMA_ALL)
+	@$(RUN) ./util/extract-metadata.py validate @$<
 
-prettify: $(RESOURCES) $(SOURCE_SCHEMA_ALL)
-	@$(RUN) ./util/extract-metadata.py prettify $^
+prettify: tmp/resource-files.txt $(SOURCE_SCHEMA_ALL)
+	@$(RUN) ./util/extract-metadata.py prettify @$<
 
 # Run tox tests (requires `pip install tox`)
 tox:
