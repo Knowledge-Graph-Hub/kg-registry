@@ -191,13 +191,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -210,9 +210,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial

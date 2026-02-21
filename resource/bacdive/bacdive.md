@@ -10,8 +10,8 @@ description: BacDive (Bacterial Diversity Metadatabase) is the world's largest d
 domains:
 - microbiology
 - biological systems
-id: bacdive
 homepage_url: https://bacdive.dsmz.de/
+id: bacdive
 last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: BacDive
@@ -148,6 +148,17 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
+- category: Product
+  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
+    mapped to standardized ontologies.
+  id: metatraits.traits
+  name: metaTraits Trait List
+  original_source:
+  - bacdive
+  - bv-brc
+  - goldterms
+  - progenomes
+  product_url: https://metatraits.embl.de/traits
 taxon:
 - NCBITaxon:2
 ---

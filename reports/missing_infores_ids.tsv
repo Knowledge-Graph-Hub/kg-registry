@@ -277,6 +277,7 @@ mechreponet	MechRepoNet	KnowledgeGraph	https://github.com/SuLab/MechRepoNet	reso
 mediadive	MediaDive	DataSource	https://mediadive.dsmz.de/	resource/mediadive/mediadive.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
+metatraits	metaTraits	KnowledgeGraph	https://metatraits.embl.de/	resource/metatraits/metatraits.md
 metpo	METPO (Microbial Ecophysiological Trait and Phenotype Ontology)	Ontology	https://github.com/berkeleybop/metpo	resource/metpo/metpo.md
 mf	Mental Functioning Ontology	Ontology	https://github.com/jannahastings/mental-functioning-ontology	resource/mf/mf.md
 mfmo	Mammalian Feeding Muscle Ontology	Ontology	https://github.com/rdruzinsky/feedontology	resource/mfmo/mfmo.md

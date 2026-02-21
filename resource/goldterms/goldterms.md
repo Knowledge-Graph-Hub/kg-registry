@@ -38,13 +38,11 @@ products:
   secondary_source:
   - goldterms
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   format: owl
@@ -65,6 +63,17 @@ products:
   product_url: https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml
   secondary_source:
   - goldterms
+- category: Product
+  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
+    mapped to standardized ontologies.
+  id: metatraits.traits
+  name: metaTraits Trait List
+  original_source:
+  - bacdive
+  - bv-brc
+  - goldterms
+  - progenomes
+  product_url: https://metatraits.embl.de/traits
 repository: https://github.com/cmungall/gold-ontology
 tags:
 - biopragmatics

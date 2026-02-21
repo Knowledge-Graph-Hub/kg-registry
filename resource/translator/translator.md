@@ -82,11 +82,9 @@ products:
   secondary_source:
   - translator
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: KGX graph package for Clinical Trials Knowledge Provider (build ctkp_3.1.23_1.0_2025sep1_4.3.6;

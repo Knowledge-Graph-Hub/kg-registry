@@ -39,13 +39,11 @@ products:
   secondary_source:
   - primekg
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 403 error
     when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 taxon:

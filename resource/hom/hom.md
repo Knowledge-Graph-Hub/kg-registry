@@ -32,7 +32,7 @@ products:
   name: hom.owl
   product_url: http://purl.obolibrary.org/obo/hom.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 403 error
     when accessing file'
 repository: https://github.com/BgeeDB/homology-ontology
 ---

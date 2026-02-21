@@ -36,11 +36,9 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 404 error
     when accessing file'
 ---
 SciBite
