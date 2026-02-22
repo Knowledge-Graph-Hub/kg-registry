@@ -51,7 +51,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 500 error
+  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 500 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 500 error
     when accessing file'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
@@ -67,7 +69,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 500 error
+  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 500 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 500 error
     when accessing file'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
@@ -83,7 +87,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 500 error
+  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 500 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 500 error
     when accessing file'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT

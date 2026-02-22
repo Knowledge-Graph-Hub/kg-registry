@@ -25,7 +25,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-21: Timeout connecting
+  - File was not able to be retrieved when checked on 2026-02-21_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-02-22: Timeout connecting
     to URL'
 - category: GraphProduct
   compression: gzip

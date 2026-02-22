@@ -59,7 +59,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -71,7 +73,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
@@ -91,7 +95,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-21: HTTP 403 error
+  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
     when accessing file'
 publications:
 - authors:
