@@ -415,6 +415,17 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
+    mapped to standardized ontologies.
+  id: metatraits.traits
+  name: metaTraits Trait List
+  original_source:
+  - bacdive
+  - bv-brc
+  - goldterms
+  - progenomes
+  product_url: https://metatraits.embl.de/traits
 synonyms:
 - proGenomes
 - ProGenomes Database

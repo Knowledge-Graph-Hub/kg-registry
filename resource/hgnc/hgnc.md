@@ -142,11 +142,11 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -699,11 +699,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate

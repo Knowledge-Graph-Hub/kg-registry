@@ -52,7 +52,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -73,7 +75,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -97,7 +101,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph

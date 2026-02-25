@@ -12,6 +12,7 @@ contacts:
   - contact_type: email
     value: help@bv-brc.org
   label: BV-BRC Help Desk
+creation_date: '2025-05-28T00:00:00Z'
 description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is a
   comprehensive resource for bacterial and viral infectious disease research that
   combines the data, technology, and extensive user communities from two long-running
@@ -25,6 +26,7 @@ domains:
 - biomedical
 homepage_url: https://www.bv-brc.org/
 id: bv-brc
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.bv-brc.org/about
@@ -100,6 +102,17 @@ products:
   - protcid
   secondary_source:
   - spoke
+- category: Product
+  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
+    mapped to standardized ontologies.
+  id: metatraits.traits
+  name: metaTraits Trait List
+  original_source:
+  - bacdive
+  - bv-brc
+  - goldterms
+  - progenomes
+  product_url: https://metatraits.embl.de/traits
 publications:
 - authors:
   - Olson RD
@@ -153,8 +166,6 @@ repository: https://github.com/BV-BRC
 taxon:
 - NCBITaxon:2
 - NCBITaxon:9606
-creation_date: '2025-05-28T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
 ---
 ## Overview
 

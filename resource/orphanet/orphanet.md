@@ -162,11 +162,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
 repository: https://github.com/Orphanet
 taxon:

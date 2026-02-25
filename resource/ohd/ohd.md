@@ -39,7 +39,7 @@ products:
   name: OHD dev
   product_url: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 creation_date: '2025-09-29T00:00:00Z'
