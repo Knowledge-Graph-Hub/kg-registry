@@ -455,6 +455,28 @@ class OBOFoundrySync:
 
         return kg_resource
 
+    def _load_existing_metadata(self, resource_file: Path) -> Dict[str, Any]:
+        """Load YAML frontmatter from an existing resource markdown file."""
+        if not resource_file.exists():
+            return {}
+
+        try:
+            text = resource_file.read_text(encoding='utf-8')
+            if not text.startswith('---'):
+                return {}
+            parts = text.split('---', 2)
+            if len(parts) < 3:
+                return {}
+            data = yaml.safe_load(parts[1])
+            return data if isinstance(data, dict) else {}
+        except Exception as e:
+            logger.warning(f"Failed to load existing metadata from {resource_file}: {e}")
+            return {}
+
+    def _today_iso(self) -> str:
+        """Return today's date normalized as ISO date-time with Z suffix."""
+        return datetime.utcnow().strftime('%Y-%m-%dT00:00:00Z')
+
     def create_resource_markdown(self, resource_data: Dict[str, Any]) -> str:
         """Create markdown content for a resource"""
 
@@ -471,6 +493,12 @@ class OBOFoundrySync:
             'layout': resource_data['layout'],
             'category': resource_data['category']
         }
+
+        # Keep date fields in frontmatter when present
+        if resource_data.get('creation_date'):
+            frontmatter['creation_date'] = resource_data['creation_date']
+        if resource_data.get('last_modified_date'):
+            frontmatter['last_modified_date'] = resource_data['last_modified_date']
 
         # Add optional fields including enhanced Contact and Product objects
         for field in ['domains', 'tags', 'taxon', 'contacts', 'products']:
@@ -588,12 +616,25 @@ class OBOFoundrySync:
             resource_dir = self.registry_root / ontology_id
             resource_dir.mkdir(parents=True, exist_ok=True)
 
-            # Create markdown file
-            markdown_content = self.create_resource_markdown(kg_resource)
             resource_file = resource_dir / f"{ontology_id}.md"
 
             # Check if this is an update or new resource
             is_new = ontology_id not in self.existing_resources
+
+            # Preserve existing dates when present; seed for new resources
+            existing_metadata = self._load_existing_metadata(resource_file)
+            if existing_metadata.get('creation_date'):
+                kg_resource['creation_date'] = existing_metadata['creation_date']
+            if existing_metadata.get('last_modified_date'):
+                kg_resource['last_modified_date'] = existing_metadata['last_modified_date']
+
+            if not kg_resource.get('creation_date'):
+                kg_resource['creation_date'] = self._today_iso()
+            if not kg_resource.get('last_modified_date'):
+                kg_resource['last_modified_date'] = self._today_iso()
+
+            # Create markdown file
+            markdown_content = self.create_resource_markdown(kg_resource)
 
             # Write the file
             with open(resource_file, 'w', encoding='utf-8') as f:
