@@ -33,7 +33,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -41,10 +41,12 @@ products:
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-24: Error connecting
+    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
+    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
 - category: Product
   description: Dataset of microRNA target sites with detailed binding site information
     in CSV format.
@@ -57,7 +59,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -65,10 +67,12 @@ products:
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-24: Error connecting
+    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
+    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
 - category: Product
   description: Species-specific microRNA-target interaction datasets in CSV format
     for human, mouse, rat, and 25+ other species.
@@ -81,7 +85,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
@@ -89,10 +93,12 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-24: Error connecting
+    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
+    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
 - category: Product
   description: Curated datasets filtered for strong experimental evidence including
     reporter assays, western blot, qPCR, and CLIP-Seq data.
@@ -105,7 +111,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -113,10 +119,12 @@ products:
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-12-07_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-24: Error connecting
+    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
+    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
 - category: Product
   description: Archive of previous miRTarBase releases for reproducibility and historical
     comparisons.
@@ -129,7 +137,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-13_ Timeout connecting
     to URL
@@ -137,10 +145,12 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-24: Error connecting
+    to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
+    exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
+    ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph

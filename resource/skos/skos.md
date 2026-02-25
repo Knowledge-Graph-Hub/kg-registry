@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: DataModel
+creation_date: '2025-06-25T00:00:00Z'
 description: SKOS (Simple Knowledge Organization System) is a W3C recommendation designed
   for representation of thesauri, classification schemes, taxonomies, subject-heading
   systems, or any other type of structured controlled vocabulary.
@@ -8,6 +9,7 @@ domains:
 - upper
 homepage_url: https://www.w3.org/2004/02/skos/
 id: skos
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
@@ -222,11 +224,11 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-22: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 - category: OntologyProduct
   description: OpenBioDiv-O, the OpenBiodiv Ontology

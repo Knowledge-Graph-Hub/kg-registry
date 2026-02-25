@@ -17,6 +17,7 @@ contacts:
   - contact_type: url
     value: https://omabrowser.org/oma/team/
   label: Adrian Altenhoff
+creation_date: '2025-05-07T00:00:00Z'
 description: OMA (Orthologous MAtrix) is a database of orthologous genes among multiple
   species, providing a systematic classification of orthologs across complete genomes.
 domains:
@@ -24,6 +25,7 @@ domains:
 - organisms
 homepage_url: https://omabrowser.org/
 id: oma
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -79,9 +81,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: OMA orthology groups in OrthoXML format
@@ -102,9 +102,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
@@ -125,9 +123,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -149,9 +145,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -173,9 +167,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-02_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -197,9 +189,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -221,9 +211,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: OMA Browser database in HDF5 format
@@ -243,9 +231,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -267,9 +253,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: gzip
@@ -292,9 +276,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.

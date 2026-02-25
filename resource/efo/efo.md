@@ -10,6 +10,7 @@ contacts:
     value: https://www.ebi.ac.uk/spot/ontology/
   id: ebi
   label: EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)
+creation_date: '2025-06-04T00:00:00Z'
 description: The Experimental Factor Ontology (EFO) provides a systematic description
   of many experimental variables available in EBI databases, and for projects such
   as the GWAS catalog. It combines parts of several biological ontologies, such as
@@ -22,6 +23,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/efo/
 id: efo
 infores_id: efo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

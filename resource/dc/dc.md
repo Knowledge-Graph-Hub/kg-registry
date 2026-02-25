@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: DataModel
+creation_date: '2025-06-25T00:00:00Z'
 description: Dublin Core Metadata Initiative (DCMI) Metadata Terms is an authoritative
   specification of metadata terms for resource description. It includes the fifteen
   elements of the Dublin Core Metadata Element Set plus several dozen properties,
@@ -236,11 +237,11 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-22: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 publications:
 - id: https://www.iso.org/standard/71339.html

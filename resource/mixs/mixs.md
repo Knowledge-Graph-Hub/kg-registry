@@ -38,5 +38,7 @@ products:
   secondary_source:
   - mixs
 repository: https://github.com/GenomicsStandardsConsortium/mixs
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-09-27T00:00:00Z'
 ---
 mixs

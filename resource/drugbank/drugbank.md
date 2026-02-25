@@ -9,6 +9,7 @@ contacts:
   - contact_type: url
     value: https://www.drugbank.com/contact
   label: DrugBank
+creation_date: '2025-03-09T00:00:00Z'
 description: DrugBank Online is a comprehensive, publicly accessible database containing
   detailed information on drugs and drug targets, combining chemical, pharmacological,
   pharmaceutical data with drug target information including sequence, structure,
@@ -22,6 +23,7 @@ domains:
 homepage_url: https://www.drugbank.com/
 id: drugbank
 infores_id: drugbank
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://go.drugbank.com/legal/terms_of_use
@@ -474,11 +476,11 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

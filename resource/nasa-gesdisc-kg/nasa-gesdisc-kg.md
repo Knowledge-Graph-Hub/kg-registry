@@ -32,6 +32,8 @@ products:
   original_source:
   - nasa-gesdisc-kg
   product_url: https://frink.apps.renci.org/nasa-gesdisc-kg/sparql
+creation_date: '2025-12-08T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 NASA-GESDISC-KG
 

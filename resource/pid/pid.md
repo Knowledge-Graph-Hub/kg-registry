@@ -164,6 +164,7 @@ synonyms:
 - NCI-Nature PID
 taxon:
 - NCBITaxon:9606
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 # Pathway Interaction Database
 

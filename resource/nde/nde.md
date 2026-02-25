@@ -41,6 +41,8 @@ products:
   product_url: https://frink.apps.renci.org/nde/sparql
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-12-08T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 NIAID Data Ecosystem KG
 

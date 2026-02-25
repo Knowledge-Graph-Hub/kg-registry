@@ -331,7 +331,6 @@ medlineplus,active,PASS
 mesh,active,PASS
 metacyc,active,PASS
 metanetx,active,PASS
-metatraits,active,PASS
 metpo,active,PASS
 mf,active,PASS
 mfoem,active,PASS
@@ -431,7 +430,6 @@ opl,active,PASS
 opmi,active,PASS
 orcid,active,PASS
 ordo,active,PASS
-oregano,active,PASS
 ornaseq,active,PASS
 orphanet,active,PASS
 orthodb,active,PASS

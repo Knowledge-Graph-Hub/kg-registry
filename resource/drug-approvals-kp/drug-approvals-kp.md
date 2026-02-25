@@ -60,6 +60,8 @@ products:
   secondary_source:
   - drug-approvals-kp
 repository: https://github.com/multiomicsKP/drug_approvals_kp
+creation_date: '2025-04-22T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 Drug Approvals KP
 

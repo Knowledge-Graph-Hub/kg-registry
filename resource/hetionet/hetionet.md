@@ -190,6 +190,8 @@ repository: https://github.com/hetio/hetionet
 infores_id: hetionet
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-06-24T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 
 # Hetionet

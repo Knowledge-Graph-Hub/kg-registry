@@ -11,6 +11,7 @@ contacts:
 - category: Individual
   label: Andrew I. Su
   orcid: 0000-0002-9859-4104
+creation_date: '2025-07-17T00:00:00Z'
 description: 'Mechanistic Repositioning Network with Indications (MIND) is a knowledge
   graph incorporating two biomedical resources: MechRepoNet and DrugCentral. MechRepoNet
   is a knowledge graph comprising of 18 biomedical resources that reflects and expands
@@ -23,6 +24,7 @@ domains:
 - biomedical
 homepage_url: https://zenodo.org/records/8117748
 id: mind
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -50,9 +52,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -73,9 +73,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -99,9 +97,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph

@@ -112,6 +112,8 @@ publications:
 repository: https://github.com/EpistasisLab/AlzKB
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-06-24T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 The Alzheimer's Knowledge Base (AlzKB) is a comprehensive knowledge graph for Alzheimer's Disease research. It integrates data from 22 diverse public biomedical databases into a unified knowledge representation, providing a platform for AI-driven research and drug discovery/repurposing.
 

@@ -205,5 +205,7 @@ products:
   secondary_source:
   - automat
 repository: https://github.com/RobokopU24/
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-10-29T00:00:00Z'
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.

@@ -181,6 +181,7 @@ warnings:
 infores_id: cosmic
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-07-08T00:00:00Z'
 ---
 
 # COSMIC

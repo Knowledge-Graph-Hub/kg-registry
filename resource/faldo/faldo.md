@@ -180,6 +180,8 @@ products:
 repository: https://github.com/OBioFoundry/FALDO
 synonyms:
 - Feature Annotation Location Description Ontology
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2025-10-31T00:00:00Z'
 ---
 # FALDO
 

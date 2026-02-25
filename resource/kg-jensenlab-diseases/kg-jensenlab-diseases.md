@@ -41,6 +41,8 @@ products:
   product_file_size: 132
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
+creation_date: '2025-05-06T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 
 

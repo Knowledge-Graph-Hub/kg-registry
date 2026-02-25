@@ -40,6 +40,8 @@ products:
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-03-18T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 KG-Alzheimers is a knowledge graph created in collaboration between Lawrence Berkeley National
 Lab and Washington University, designed to integrate data related to Alzheimer's 

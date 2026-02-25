@@ -291,6 +291,8 @@ publications:
   title: DGIdb - mining the druggable genome
   year: '2013'
 repository: https://github.com/griffithlab/dgi-db
+creation_date: '2025-05-30T00:00:00Z'
+last_modified_date: '2026-01-23T00:00:00Z'
 ---
 ## DGIdb: Drug Gene Interaction Database
 

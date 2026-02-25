@@ -47,6 +47,8 @@ products:
   product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
   secondary_source:
   - genomickb
+creation_date: '2025-03-20T00:00:00Z'
+last_modified_date: '2025-08-12T00:00:00Z'
 ---
 GenomicKB
 

@@ -17,6 +17,7 @@ contacts:
   - contact_type: url
     value: http://www.massgeneral.org/cancer/
   label: Massachusetts General Hospital Cancer Center
+creation_date: '2025-05-28T00:00:00Z'
 description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and resource
   that characterizes cancer cell lines and their responses to anti-cancer drugs. It
   contains drug screening data for over 1000 cancer cell lines with hundreds of compounds,
@@ -32,6 +33,7 @@ domains:
 homepage_url: https://www.cancerrxgene.org/
 id: gdsc
 infores_id: gdsc
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.cancerrxgene.org/legal
@@ -84,9 +86,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

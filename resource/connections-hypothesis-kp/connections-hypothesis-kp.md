@@ -31,6 +31,7 @@ products:
   original_source:
   - connections-hypothesis-kp
   product_url: https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f
+creation_date: '2025-03-09T00:00:00Z'
 ---
 A Translator Knowledge Provider exploring connections hypotheses.
 

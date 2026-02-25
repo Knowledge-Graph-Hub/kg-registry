@@ -10,6 +10,7 @@ contacts:
     value: https://www.ebi.ac.uk/interpro/contact/
   id: ebi
   label: InterPro
+creation_date: '2025-03-09T00:00:00Z'
 description: InterPro is a database of protein families, domains and functional sites
   in which identifiable features found in known proteins can be applied to unknown
   protein sequences.
@@ -21,6 +22,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/interpro/
 id: interpro
 infores_id: interpro
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

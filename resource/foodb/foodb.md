@@ -9,6 +9,7 @@ contacts:
   label: Scott Han
 - category: Organization
   label: The Metabolomics Innovation Centre (TMIC)
+creation_date: '2025-05-29T00:00:00Z'
 description: The Food Database (FooDB) is the world's largest and most comprehensive
   resource on food constituents, chemistry, and biology. It provides detailed information
   about the chemical constituents found in food, designed for applications in nutrition,
@@ -21,6 +22,7 @@ domains:
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -49,9 +51,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: targz
@@ -69,9 +69,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -89,9 +87,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: targz
@@ -108,9 +104,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -127,9 +121,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -146,9 +138,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -165,9 +155,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -184,9 +172,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -203,9 +189,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -222,9 +206,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -241,9 +223,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

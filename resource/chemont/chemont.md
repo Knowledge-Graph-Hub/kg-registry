@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: Ontology
+creation_date: '2025-12-11T00:00:00Z'
 description: ChemOnt (Chemical Ontology) is a comprehensive chemical ontology that
   provides a hierarchical classification of chemical entities. It is designed to support
   chemical informatics applications and enable semantic integration of chemical data
@@ -10,6 +11,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://classyfire.wishartlab.com/
 id: chemont
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: ChemOnt
 products:
@@ -45,11 +47,11 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-22: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 repository: https://github.com/wishartlab/chemontology
 ---

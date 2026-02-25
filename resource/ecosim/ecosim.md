@@ -30,6 +30,8 @@ products:
   original_source:
   - ecosim
 category: Resource
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-09-27T00:00:00Z'
 ---
 
 Ontology rendering of the EcoSIM Land System Model

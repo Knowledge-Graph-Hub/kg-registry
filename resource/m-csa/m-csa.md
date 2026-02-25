@@ -43,5 +43,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest
+creation_date: '2025-03-17T00:00:00Z'
+last_modified_date: '2025-08-06T00:00:00Z'
 ---
 M-CSA

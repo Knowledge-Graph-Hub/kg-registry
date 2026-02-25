@@ -100,17 +100,6 @@ products:
   - protcid
   secondary_source:
   - spoke
-- category: Product
-  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
-    mapped to standardized ontologies.
-  id: metatraits.traits
-  name: metaTraits Trait List
-  original_source:
-  - bacdive
-  - bv-brc
-  - goldterms
-  - progenomes
-  product_url: https://metatraits.embl.de/traits
 publications:
 - authors:
   - Olson RD
@@ -164,6 +153,8 @@ repository: https://github.com/BV-BRC
 taxon:
 - NCBITaxon:2
 - NCBITaxon:9606
+creation_date: '2025-05-28T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 ## Overview
 

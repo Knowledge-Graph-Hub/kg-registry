@@ -76,6 +76,8 @@ products:
   secondary_source:
   - translator
 repository: https://github.com/INCATools/ubergraph
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2026-01-23T00:00:00Z'
 ---
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies
 

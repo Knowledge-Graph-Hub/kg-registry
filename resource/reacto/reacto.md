@@ -38,5 +38,6 @@ products:
   product_file_size: 1224800846
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+creation_date: '2025-03-09T00:00:00Z'
 ---
 For logical inference, import the integrated tbox ontology http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl

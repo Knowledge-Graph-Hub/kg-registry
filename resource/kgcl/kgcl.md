@@ -101,6 +101,8 @@ publications:
   year: '2025'
 repository: https://github.com/INCATools/kgcl/
 version: 0.7.0
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-08-06T00:00:00Z'
 ---
 ## Overview
 

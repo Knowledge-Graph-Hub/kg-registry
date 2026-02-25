@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: Ontology
+creation_date: '2025-12-11T00:00:00Z'
 description: CiTO (Citation Typing Ontology) is a formal ontology that provides a
   machine-readable vocabulary for describing the nature and type of citations within
   bibliographic references. It enables the semantic representation of the relationships
@@ -11,6 +12,7 @@ domains:
 - general
 homepage_url: https://sparontologies.github.io/cito/current/cito.html
 id: cito
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: CiTO
 products:
@@ -46,11 +48,11 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-22: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 repository: https://github.com/sparontologies/cito
 ---

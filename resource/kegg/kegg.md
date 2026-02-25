@@ -11,6 +11,7 @@ contacts:
   - contact_type: url
     value: https://www.kegg.jp/feedback/
   label: KEGG
+creation_date: '2025-03-17T00:00:00Z'
 description: The Kyoto Encyclopedia of Genes and Genomes (KEGG) is a database resource
   for understanding high-level functions and utilities of the biological system, such
   as the cell, the organism and the ecosystem, from molecular-level information, especially
@@ -28,6 +29,7 @@ domains:
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 infores_id: kegg
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.kegg.jp/feedback/copyright.html

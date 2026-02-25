@@ -33,6 +33,8 @@ products:
   secondary_source:
   - cl-kg
 repository: https://github.com/Cellular-Semantics/CL_KG
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene.
 

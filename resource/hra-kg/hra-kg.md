@@ -82,6 +82,8 @@ products:
   secondary_source:
   - hra-kg
 repository: https://github.com/hubmapconsortium/hra-kg
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-08-12T00:00:00Z'
 ---
 ### Human Reference Atlas Knowledge Graph (HRA KG)
 

@@ -89,6 +89,8 @@ products:
 repository: https://github.com/sbnb-irb/chemical-checker
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-07-08T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 # Chemical Checker (CC)
 

@@ -162,6 +162,8 @@ products:
   secondary_source:
   - biomarkerkg
 repository: https://github.com/MaayanLab/BiomarkerKG
+creation_date: '2025-05-04T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 The Biomarker Knowledge Graph (BKG) is a comprehensive resource that integrates biomarker data across multiple dimensions including anatomical structures, compounds, conditions, roles, and variants. This knowledge graph serves as a centralized platform for biomarker research, enabling researchers to explore complex relationships between biomarkers and various biological and clinical entities.
 

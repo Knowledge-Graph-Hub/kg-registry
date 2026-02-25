@@ -177,6 +177,8 @@ products:
 repository: https://github.com/kids-first/
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 ## Kids First Data Resource Center
 

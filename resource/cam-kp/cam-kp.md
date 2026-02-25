@@ -152,6 +152,7 @@ publications:
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
 - NCBITaxon:1
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 # CAM-KP (Causal Activity Models Knowledge Provider)
 

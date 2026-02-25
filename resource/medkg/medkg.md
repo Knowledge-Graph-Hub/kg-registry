@@ -40,6 +40,8 @@ publications:
   title: '''MedKG: enabling drug discovery through a unified biomedical knowledge
     graph'''
   year: '2025'
+creation_date: '2025-03-24T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 MedKG
 

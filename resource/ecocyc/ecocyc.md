@@ -72,6 +72,8 @@ products:
   - ecocyc
   product_url: http://www.biomedcentral.com/1752-0509/8/79
 repository: https://biocyc.org/download.shtml
+creation_date: '2025-03-17T00:00:00Z'
+last_modified_date: '2025-09-27T00:00:00Z'
 ---
 EcoCyc is a comprehensive database that captures information from over 44,000 publications for Escherichia coli K-12 substr. MG1655. It is part of the larger BioCyc collection of thousands of Pathway/Genome Databases for sequenced genomes. 
 

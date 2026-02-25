@@ -106,5 +106,7 @@ publications:
 repository: https://github.com/bio-ontology-research-group/pathophenodb
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-05-28T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 PathoPhenoDB Knowledge Graph

@@ -182,6 +182,8 @@ publications:
     fungal, plant, archaeal, bacterial and viral orthologs
   year: '2017'
 repository: https://github.com/zdobnov-lab/orthodb
+creation_date: '2025-05-07T00:00:00Z'
+last_modified_date: '2025-12-07T00:00:00Z'
 ---
 
 OrthoDB is a comprehensive database of orthologous protein-coding genes across multiple species with a hierarchical catalog of orthologs. It provides evolutionary and functional annotations of orthologous groups at various taxonomic levels, covering Eukaryotes, Prokaryotes, and Viruses.

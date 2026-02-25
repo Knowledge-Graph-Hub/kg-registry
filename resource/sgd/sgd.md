@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: sgd-helpdesk@lists.stanford.edu
   label: SGD Helpdesk
+creation_date: '2025-03-09T00:00:00Z'
 description: The Saccharomyces Genome Database (SGD) project collects information
   and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.
 domains:
@@ -14,6 +15,7 @@ domains:
 homepage_url: https://www.yeastgenome.org/
 id: sgd
 infores_id: sgd
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Saccharomyces Genome Database
 products:
@@ -239,11 +241,11 @@ products:
   - zfin
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip

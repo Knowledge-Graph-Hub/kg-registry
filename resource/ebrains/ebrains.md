@@ -40,6 +40,8 @@ products:
   secondary_source:
   - ebrains
 repository: https://github.com/HumanBrainProject/kg-core
+creation_date: '2025-05-01T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 EBRAINS Knowledge Graph
 

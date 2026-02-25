@@ -14,6 +14,7 @@ contacts:
     value: info@ncbi.nlm.nih.gov
   id: ncbi
   label: NCBI Help Desk
+creation_date: '2025-06-04T00:00:00Z'
 description: NCBI Gene integrates information from a wide range of species. A record
   may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations,
   phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide.
@@ -22,6 +23,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/gene/
 id: ncbigene
 infores_id: ncbi-gene
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -509,11 +511,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: zip

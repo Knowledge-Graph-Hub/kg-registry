@@ -457,5 +457,7 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+creation_date: '2025-07-08T00:00:00Z'
+last_modified_date: '2026-01-30T00:00:00Z'
 ---
 # COMPARTMENTS

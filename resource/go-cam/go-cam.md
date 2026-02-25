@@ -17,6 +17,7 @@ contacts:
   - contact_type: email
     value: go-helpdesk@geneontology.org
   label: Gene Ontology Consortium
+creation_date: '2025-03-09T00:00:00Z'
 description: A structured framework for integrating Gene Ontology annotations into
   computable models of biological functions.
 domains:
@@ -27,6 +28,7 @@ domains:
 homepage_url: http://geneontology.org/go-cam/docs
 id: go-cam
 infores_id: go-cam
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -61,9 +63,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/api/

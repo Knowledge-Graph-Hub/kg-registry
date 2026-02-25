@@ -66,6 +66,7 @@ products:
   - globi
   - try
   product_url: https://sib-swiss.github.io/sparql-editor/emi
+creation_date: '2025-05-20T00:00:00Z'
 ---
 ## Automated Evaluation
 

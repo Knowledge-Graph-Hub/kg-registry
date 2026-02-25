@@ -53,9 +53,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-02-22: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-02-24: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
@@ -73,9 +71,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: PHAROS Automat
@@ -98,9 +94,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 publications:
 - authors:

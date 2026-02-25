@@ -50,6 +50,8 @@ publications:
   title: Increased discoverability of rare disease datasets through knowledge graph
     integration
   year: '2025'
+creation_date: '2025-04-11T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 C-Path KG
 

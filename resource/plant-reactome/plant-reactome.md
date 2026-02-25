@@ -164,6 +164,7 @@ taxon:
 - NCBITaxon:4113
 - NCBITaxon:15368
 - NCBITaxon:88036
+last_modified_date: '2025-12-17T00:00:00Z'
 ---
 # Plant Reactome
 

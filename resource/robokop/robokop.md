@@ -50,6 +50,8 @@ products:
       - automat
 repository: https://github.com/NCATS-Gamma/robokop
 infores_id: robokop
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-10-30T00:00:00Z'
 ---
 
 ### ROBOKOP: A Knowledge Graph System for Biomedical Question Answering

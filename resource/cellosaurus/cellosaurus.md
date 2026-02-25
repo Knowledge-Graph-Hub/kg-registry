@@ -16,6 +16,7 @@ contacts:
     value: cellosaurus@sib.swiss
   id: sib
   label: CALIPHO Group - SIB Swiss Institute of Bioinformatics
+creation_date: '2025-05-07T00:00:00Z'
 description: Cellosaurus is a knowledge resource on cell lines providing information
   on cell lines from vertebrates, invertebrates, and plants, including standardized
   nomenclature, cross-references to other databases, and information on problematic
@@ -25,6 +26,7 @@ domains:
 - health
 homepage_url: https://www.cellosaurus.org/
 id: cellosaurus
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -77,9 +79,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: Product
   description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -94,9 +94,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data

@@ -79,6 +79,8 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+creation_date: '2025-07-19T00:00:00Z'
+last_modified_date: '2025-07-20T00:00:00Z'
 ---
 
 INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated 

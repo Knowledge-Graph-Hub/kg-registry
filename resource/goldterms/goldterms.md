@@ -13,6 +13,7 @@ contacts:
     value: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+creation_date: '2025-03-09T00:00:00Z'
 description: Translation of JGI GOLD (Genomes OnLine Database) ecosystem classification
   paths to OWL, plus mappings to MIxS and environment ontologies like ENVO.
 domains:
@@ -22,6 +23,7 @@ domains:
 - biological systems
 homepage_url: https://gold.jgi.doe.gov/
 id: goldterms
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/cmungall/gold-ontology/blob/main/LICENSE
@@ -42,9 +44,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   format: owl
@@ -65,17 +65,6 @@ products:
   product_url: https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml
   secondary_source:
   - goldterms
-- category: Product
-  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
-    mapped to standardized ontologies.
-  id: metatraits.traits
-  name: metaTraits Trait List
-  original_source:
-  - bacdive
-  - bv-brc
-  - goldterms
-  - progenomes
-  product_url: https://metatraits.embl.de/traits
 repository: https://github.com/cmungall/gold-ontology
 tags:
 - biopragmatics

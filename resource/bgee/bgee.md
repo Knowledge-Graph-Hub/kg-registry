@@ -10,6 +10,7 @@ contacts:
     value: https://www.bgee.org/contact/
   id: sib
   label: Bgee Team - SIB Swiss Institute of Bioinformatics
+creation_date: '2025-05-07T00:00:00Z'
 description: Bgee is a database for retrieval and comparison of gene expression patterns
   across multiple animal species, providing information about gene expression in different
   anatomical structures, developmental stages, and species.
@@ -19,6 +20,7 @@ domains:
 homepage_url: https://www.bgee.org/
 id: bgee
 infores_id: bgee
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1009,11 +1011,11 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

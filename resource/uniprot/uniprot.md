@@ -8,6 +8,7 @@ contacts:
     value: help@uniprot.org
   id: ebi
   label: UniProt Consortium
+creation_date: '2025-03-09T00:00:00Z'
 description: UniProt Protein Knowledge Base
 domains:
 - biological systems
@@ -16,6 +17,7 @@ domains:
 homepage_url: https://www.uniprot.org/
 id: uniprot
 infores_id: uniprot
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -99,11 +101,11 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -146,7 +148,7 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
@@ -156,7 +158,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -657,11 +659,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD

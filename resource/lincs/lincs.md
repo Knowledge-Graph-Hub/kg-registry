@@ -383,6 +383,8 @@ publications:
 infores_id: lincs
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-05-29T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 
 The Library of Integrated Network-based Cellular Signatures (LINCS) is an NIH Common Fund program that catalogs how human cells globally respond to chemical, genetic, and disease perturbations. By assembling an integrated picture of the range of responses of human cells exposed to many perturbations, the LINCS program aims to better understand human disease and to advance the development of new therapies.

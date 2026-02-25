@@ -35,5 +35,7 @@ products:
   secondary_source:
   - neo
 repository: https://github.com/geneontology/neo/
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-08-06T00:00:00Z'
 ---
 Noctua Entity Ontology. Conversion of gene and gene-centric entity IDs from uniprot and MODs.

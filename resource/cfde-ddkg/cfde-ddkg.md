@@ -40,6 +40,7 @@ products:
   product_file_size: 5216
   product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json
 repository: https://github.com/MaayanLab/datadistillery-kg
+creation_date: '2025-03-09T00:00:00Z'
 ---
 The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse 
 of Common Fund data to accelerate discoveries in biomedical research.The Data Distillery 

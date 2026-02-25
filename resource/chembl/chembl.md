@@ -566,6 +566,8 @@ repository: https://github.com/chembl
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
 

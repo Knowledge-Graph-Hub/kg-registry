@@ -12,6 +12,7 @@ contacts:
   - contact_type: email
     value: jamie.davies@ed.ac.uk
   label: Jamie Davies
+creation_date: '2025-05-30T00:00:00Z'
 description: The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource providing
   quantitative information on drug targets and the substances that act on them, including
   approved drugs and experimental therapeutics
@@ -24,6 +25,7 @@ domains:
 homepage_url: https://www.guidetopharmacology.org
 id: gtopdb
 infores_id: gtopdb
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/4.0/
@@ -53,9 +55,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
@@ -69,9 +69,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
@@ -84,9 +82,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
@@ -99,9 +95,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
@@ -115,9 +109,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -131,9 +123,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -146,9 +136,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological

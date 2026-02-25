@@ -93,6 +93,8 @@ publications:
   title: GlyGen - Computational and informatics resources for glycoscience
   year: '2020'
 repository: https://github.com/glygener/glygen-backend-api
+creation_date: '2025-05-04T00:00:00Z'
+last_modified_date: '2025-08-06T00:00:00Z'
 ---
 GlyGen is a data integration and dissemination project for carbohydrate and glycoconjugate related data. It provides researchers with a comprehensive, integrated, and unified resource for glycan and glycoprotein information, bringing together data from multiple international data sources and partners.
 

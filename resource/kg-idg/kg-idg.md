@@ -10,11 +10,13 @@ contacts:
     value: caufieldjh
   label: J. Harry Caufield
   orcid: 0000-0001-5705-7831
+creation_date: '2025-03-09T00:00:00Z'
 description: a Knowledge Graph for Illuminating the Druggable Genome
 domains:
 - health
 homepage_url: https://kghub.org/kg-idg/index.html
 id: kg-idg
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause
@@ -34,9 +36,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 ---

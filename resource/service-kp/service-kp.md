@@ -38,6 +38,7 @@ products:
   original_source:
   - service-kp
   product_url: https://github.com/biothings/biothings.api
+creation_date: '2025-03-09T00:00:00Z'
 ---
 A Translator Knowledge Provider providing...
 

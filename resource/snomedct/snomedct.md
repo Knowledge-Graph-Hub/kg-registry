@@ -17,6 +17,7 @@ contacts:
     value: https://www.nlm.nih.gov/healthit/snomedct/index.html
   id: ncbi
   label: National Library of Medicine (NLM)
+creation_date: '2025-06-04T00:00:00Z'
 description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the
   most comprehensive, multilingual clinical healthcare terminology in the world. It
   provides a standardized way to represent clinical phrases captured by clinicians
@@ -30,6 +31,7 @@ domains:
 homepage_url: https://www.snomed.org/
 id: snomedct
 infores_id: snomedct
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.snomed.org/snomed-ct/get-snomed

@@ -71,6 +71,8 @@ publications:
 repository: https://github.com/TaylorResearchLab/Petagraph
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 ## Petagraph: A Large-Scale Biomedical Knowledge Graph
 

@@ -77,6 +77,8 @@ products:
   is_public: true
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-03-17T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 
 PanKBase

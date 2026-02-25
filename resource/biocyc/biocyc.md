@@ -422,5 +422,7 @@ products:
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 taxon:
 - NCBITaxon:2759
+creation_date: '2025-03-18T00:00:00Z'
+last_modified_date: '2026-01-30T00:00:00Z'
 ---
 BioCyc

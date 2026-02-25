@@ -138,6 +138,8 @@ publications:
     year: '2022'
 repository: https://github.com/RTXteam/RTX-KG2
 infores_id: rtx-kg2
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-10-30T00:00:00Z'
 ---
 
 ## RTX-KG2: A Semantically Standardized Knowledge Graph for Translational Biomedicine

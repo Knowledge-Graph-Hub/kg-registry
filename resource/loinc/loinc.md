@@ -7,6 +7,7 @@ contacts:
   - contact_type: url
     value: https://loinc.org/contact/
   label: Regenstrief Institute (LOINC)
+creation_date: '2025-06-04T00:00:00Z'
 description: LOINC (Logical Observation Identifiers Names and Codes) is the international
   standard for identifying health measurements, laboratory and clinical observations,
   and documents; it provides universal codes and structured names enabling interoperable
@@ -19,6 +20,7 @@ domains:
 homepage_url: https://loinc.org/
 id: loinc
 infores_id: loinc
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://loinc.org/license/
@@ -58,9 +60,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
@@ -73,9 +73,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -88,9 +86,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 503 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 503 error
     when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

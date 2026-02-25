@@ -642,6 +642,8 @@ publications:
   year: '2019'
 repository: ''
 version: '37.0'
+creation_date: '2025-05-28T00:00:00Z'
+last_modified_date: '2026-01-30T00:00:00Z'
 ---
 Pfam is a large collection of protein families, each represented by multiple sequence alignments and profile hidden Markov models (HMMs). Proteins are generally composed of one or more functional regions, commonly termed domains. The presence of different domains in varying combinations in different proteins gives rise to the diverse repertoire of proteins found in nature. Identifying the domains present in a protein can provide insights into its function.
 

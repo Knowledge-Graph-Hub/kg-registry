@@ -31,6 +31,7 @@ products:
   original_source:
   - genetics-kp
   product_url: https://github.com/broadinstitute/genetics-kp-dev
+creation_date: '2025-03-09T00:00:00Z'
 ---
 A Translator Knowledge Provider focusing on genetic data.
 

@@ -188,6 +188,8 @@ publications:
   title: Annotation of spatially resolved single-cell data with STELLAR
   year: '2022'
 repository: https://github.com/snap-stanford/stellar
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2025-10-15T00:00:00Z'
 ---
 # STELLAR - Spatially Resolved Single-Cell Data Analysis
 

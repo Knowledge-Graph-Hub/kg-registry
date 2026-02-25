@@ -61,5 +61,7 @@ publications:
   id: doi:10.1101/2024.09.22.614323
   title: Building a literature knowledge base towards transparent biomedical AI
   year: '2025'
+creation_date: '2025-03-20T00:00:00Z'
+last_modified_date: '2025-04-11T00:00:00Z'
 ---
 GLKB

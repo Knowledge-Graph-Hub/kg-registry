@@ -82,6 +82,8 @@ products:
     secondary_source:
       - spoke
 infores_id: metacyc
+creation_date: '2025-03-17T00:00:00Z'
+last_modified_date: '2025-10-31T00:00:00Z'
 ---
 
 MetaCyc

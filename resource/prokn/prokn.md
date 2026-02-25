@@ -964,6 +964,7 @@ products:
   - prokn
   product_url: https://research.bioinformatics.udel.edu/ProKN/restapi
 
+last_modified_date: '2026-01-23T00:00:00Z'
 ---
 Protein Knowledge Network
 

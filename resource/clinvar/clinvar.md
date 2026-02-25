@@ -8,6 +8,7 @@ contacts:
     value: clinvar@ncbi.nlm.nih.gov
   id: ncbi
   label: ClinVar Team, National Center for Biotechnology Information (NCBI)
+creation_date: '2025-06-04T00:00:00Z'
 description: ClinVar is a freely accessible, public archive of reports of human genetic
   variations and their relationships to human health. It collects and presents data
   on variants found in patient samples, classifications for diseases and drug responses,
@@ -24,6 +25,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/clinvar/
 id: clinvar
 infores_id: clinvar
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -1080,11 +1082,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -1098,11 +1100,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 publications:
 - authors:
