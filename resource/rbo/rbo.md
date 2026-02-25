@@ -70,6 +70,8 @@ products:
   product_file_size: 45493
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

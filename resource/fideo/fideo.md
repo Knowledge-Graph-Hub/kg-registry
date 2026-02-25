@@ -34,6 +34,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 repository: https://gitub.u-bordeaux.fr/erias/fideo
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

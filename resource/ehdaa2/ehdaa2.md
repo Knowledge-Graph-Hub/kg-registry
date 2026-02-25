@@ -39,6 +39,8 @@ products:
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

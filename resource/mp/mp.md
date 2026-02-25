@@ -293,6 +293,8 @@ products:
 repository: https://github.com/mgijax/mammalian-phenotype-ontology
 taxon:
 - NCBITaxon:40674
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

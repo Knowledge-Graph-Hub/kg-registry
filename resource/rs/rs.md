@@ -40,6 +40,8 @@ products:
 repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
 taxon:
 - NCBITaxon:10114
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

@@ -199,6 +199,8 @@ products:
   secondary_source:
   - kg-microbe
 repository: https://github.com/EnvironmentOntology/envo
+creation_date: '2025-07-10T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

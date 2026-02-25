@@ -34,6 +34,8 @@ products:
   product_file_size: 88427
   product_url: http://purl.obolibrary.org/obo/dideo.owl
 repository: https://github.com/DIDEO/DIDEO
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

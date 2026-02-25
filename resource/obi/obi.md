@@ -288,6 +288,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/obi-ontology/obi
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

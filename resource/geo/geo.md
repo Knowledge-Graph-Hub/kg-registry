@@ -411,6 +411,8 @@ products:
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 repository: https://github.com/ufbmi/geographical-entity-ontology
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

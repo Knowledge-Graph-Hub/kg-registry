@@ -794,6 +794,8 @@ products:
 repository: https://github.com/monarch-initiative/mondo
 taxon:
 - NCBITaxon:33208
+creation_date: '2025-04-22T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

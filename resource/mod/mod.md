@@ -132,6 +132,8 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://github.com/HUPO-PSI/psi-mod-CV
+creation_date: '2025-08-12T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

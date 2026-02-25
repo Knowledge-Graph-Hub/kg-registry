@@ -32,6 +32,8 @@ products:
   product_file_size: 215578
   product_url: http://purl.obolibrary.org/obo/ons.owl
 repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

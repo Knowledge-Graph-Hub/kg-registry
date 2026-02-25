@@ -42,6 +42,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

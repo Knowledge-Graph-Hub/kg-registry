@@ -1090,6 +1090,8 @@ products:
   - 1.0.2
   - '1.0'
 repository: https://github.com/ebi-chebi/ChEBI
+creation_date: '2025-03-18T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 
