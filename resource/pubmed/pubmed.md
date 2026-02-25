@@ -188,11 +188,11 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -225,11 +225,11 @@ products:
   - pubmed
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 418 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 418 error
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 418 error
     when accessing file'
 - category: Product
   description: Manually curated disease-gene associations and annotations for amyloidoses
@@ -261,11 +261,11 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
     out
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-25: FTP error: timed
     out'
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:

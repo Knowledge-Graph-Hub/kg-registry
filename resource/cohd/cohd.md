@@ -69,7 +69,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 502 error
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 502 error
     when accessing file'
 - category: GraphProduct
   description: KGX graph package for Columbia Open Health Data (build cohd_2024-11-25_1.0_2025sep1_4.3.6;
