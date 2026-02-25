@@ -25,6 +25,8 @@ products:
   product_file_size: 204902
   product_url: http://purl.obolibrary.org/obo/mamo.owl
 repository: http://sourceforge.net/p/mamo-ontology
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

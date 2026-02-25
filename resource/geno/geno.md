@@ -50,6 +50,8 @@ products:
   secondary_source:
   - chr
 repository: https://github.com/monarch-initiative/GENO-ontology
+creation_date: '2025-09-04T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

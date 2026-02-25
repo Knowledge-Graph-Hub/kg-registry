@@ -2017,6 +2017,8 @@ products:
 repository: https://github.com/obophenotype/human-phenotype-ontology
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-04-22T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

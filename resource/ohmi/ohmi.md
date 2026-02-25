@@ -35,6 +35,8 @@ products:
   product_file_size: 146555
   product_url: http://purl.obolibrary.org/obo/ohmi.owl
 repository: https://github.com/ohmi-ontology/ohmi
+creation_date: '2025-07-10T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

@@ -142,6 +142,8 @@ products:
 repository: https://github.com/PaulNSchofield/mpath
 taxon:
 - NCBITaxon:10088
+creation_date: '2025-06-25T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

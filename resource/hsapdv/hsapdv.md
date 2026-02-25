@@ -166,6 +166,8 @@ products:
   secondary_source:
   - ubkg
 repository: https://github.com/obophenotype/developmental-stage-ontologies
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

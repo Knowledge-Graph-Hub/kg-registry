@@ -45,6 +45,8 @@ products:
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 taxon:
 - NCBITaxon:7954
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

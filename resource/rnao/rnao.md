@@ -38,6 +38,8 @@ products:
   product_file_size: 11126
   product_url: http://purl.obolibrary.org/obo/rnao.obo
 repository: https://github.com/BGSU-RNA/rnao
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

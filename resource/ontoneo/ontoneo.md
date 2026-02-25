@@ -34,6 +34,8 @@ products:
   product_file_size: 238873
   product_url: http://purl.obolibrary.org/obo/ontoneo.owl
 repository: https://github.com/ontoneo-project/Ontoneo
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

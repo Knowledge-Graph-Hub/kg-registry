@@ -68,6 +68,8 @@ products:
   product_file_size: 1154978
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

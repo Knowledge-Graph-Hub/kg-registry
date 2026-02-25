@@ -2482,6 +2482,8 @@ products:
 repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1
+creation_date: '2025-03-16T00:00:00Z'
+last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

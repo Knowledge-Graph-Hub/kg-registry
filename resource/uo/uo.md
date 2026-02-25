@@ -371,6 +371,8 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/bio-ontology-research-group/unit-ontology
+creation_date: '2025-06-04T00:00:00Z'
+last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

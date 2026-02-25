@@ -41,6 +41,8 @@ products:
 repository: https://github.com/obophenotype/fungal-anatomy-ontology
 taxon:
 - NCBITaxon:4751
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 
