@@ -31,7 +31,7 @@ products:
   format: owl
   id: mp.owl
   name: MP (OWL edition)
-  product_file_size: 102632253
+  product_file_size: 102908651
   product_url: http://purl.obolibrary.org/obo/mp.owl
 - category: OntologyProduct
   description: A direct translation of the MP (OWL edition) into OBO format.
@@ -40,14 +40,14 @@ products:
   name: MP (OBO edition)
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
   format: json
   id: mp.json
   name: MP (obographs JSON edition)
-  product_file_size: 54620788
+  product_file_size: 54836173
   product_url: http://purl.obolibrary.org/obo/mp.json
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,

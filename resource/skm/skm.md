@@ -222,6 +222,8 @@ repository: https://github.com/NIB-SI/skm-tools
 taxon:
 - NCBITaxon:33090
 version: '1.0'
+creation_date: '2025-06-17T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 # Stress Knowledge Map
 

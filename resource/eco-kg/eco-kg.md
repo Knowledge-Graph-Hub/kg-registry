@@ -56,6 +56,8 @@ tags:
 - core
 taxon:
 - NCBITaxon:33090
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 eco-KG: a knowledge graph of plant traits starting with Planteome and EOL TraitBank. The graph integrates data from various sources related to plant phenotypes, traits, and ecological relationships.
 

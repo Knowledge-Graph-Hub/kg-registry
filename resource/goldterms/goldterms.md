@@ -13,6 +13,7 @@ contacts:
     value: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+creation_date: '2025-03-09T00:00:00Z'
 description: Translation of JGI GOLD (Genomes OnLine Database) ecosystem classification
   paths to OWL, plus mappings to MIxS and environment ontologies like ENVO.
 domains:
@@ -22,6 +23,7 @@ domains:
 - biological systems
 homepage_url: https://gold.jgi.doe.gov/
 id: goldterms
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/cmungall/gold-ontology/blob/main/LICENSE
@@ -38,13 +40,11 @@ products:
   secondary_source:
   - goldterms
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   format: owl

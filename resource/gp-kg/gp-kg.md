@@ -46,6 +46,8 @@ publications:
   title: 'KG-Predict: A knowledge graph computational framework for drug repurposing'
   year: '2022'
 repository: http://nlp.case.edu/public/data/GPKG-Predict/
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 GP-KG
 

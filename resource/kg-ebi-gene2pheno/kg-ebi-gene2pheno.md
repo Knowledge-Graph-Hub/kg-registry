@@ -41,6 +41,8 @@ products:
   product_file_size: 142045
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/ebi_gene2phenotype
+creation_date: '2025-05-07T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 
 

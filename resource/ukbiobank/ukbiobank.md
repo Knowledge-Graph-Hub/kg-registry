@@ -132,6 +132,8 @@ publications:
   year: '2015'
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-06-27T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 # UK Biobank
 

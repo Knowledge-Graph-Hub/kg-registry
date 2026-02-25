@@ -11,6 +11,7 @@ contacts:
   - contact_type: github
     value: marinkaz
   label: Marinka Zitnik
+creation_date: '2025-03-09T00:00:00Z'
 description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality
   biomedical resources to describe 17,080 diseases with over 4 million relationships
   across ten major biological scales.
@@ -23,6 +24,7 @@ domains:
 homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 id: primekg
 infores_id: primekg
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -39,13 +41,11 @@ products:
   secondary_source:
   - primekg
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 taxon:

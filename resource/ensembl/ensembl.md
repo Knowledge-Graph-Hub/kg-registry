@@ -8,6 +8,7 @@ contacts:
     value: helpdesk@ensembl.org
   id: ebi
   label: Ensembl Help Desk
+creation_date: '2025-05-30T00:00:00Z'
 description: A genome browser for vertebrate genomes that supports research in comparative
   genomics, evolution, sequence variation, and transcriptional regulation
 domains:
@@ -15,6 +16,7 @@ domains:
 homepage_url: https://www.ensembl.org
 id: ensembl
 infores_id: ensembl-gene
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -568,9 +570,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip

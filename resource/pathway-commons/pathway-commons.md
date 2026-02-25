@@ -109,6 +109,7 @@ synonyms:
   - PC
 taxon:
   - "NCBITaxon:9606"
+last_modified_date: '2025-12-20T00:00:00Z'
 ---
 
 # Pathway Commons

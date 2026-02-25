@@ -10,6 +10,7 @@ contacts:
     value: https://pubchem.ncbi.nlm.nih.gov/contact
   id: ncbi
   label: National Center for Biotechnology Information (NCBI)
+creation_date: '2025-05-04T00:00:00Z'
 description: PubChem is an open chemistry database that collects information on chemical
   structures, identifiers, chemical and physical properties, biological activities,
   patents, health, safety, toxicity data, and other information.
@@ -19,6 +20,7 @@ domains:
 homepage_url: https://pubchem.ncbi.nlm.nih.gov/
 id: pubchem
 infores_id: pubchem
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -303,9 +305,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-20: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

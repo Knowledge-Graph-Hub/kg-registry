@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: helpdesk@pombase.org
   label: PomBase
+creation_date: '2025-03-25T00:00:00Z'
 description: PomBase is a comprehensive database for the fission yeast Schizosaccharomyces
   pombe, providing structural and functional annotation, literature curation and access
   to large-scale data sets.
@@ -15,6 +16,7 @@ domains:
 homepage_url: https://www.pombase.org/
 id: pombase
 infores_id: pombase
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,11 +38,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -59,11 +59,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each

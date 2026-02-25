@@ -118,6 +118,8 @@ usages:
   label: PheKnowLator build framework
   type: actual
   url: https://github.com/callahantiff/PheKnowLator/wiki
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-08-26T00:00:00Z'
 ---
 PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first fully customizable 
 knowledge graph (KG) construction framework enabling users to build complex KGs that 

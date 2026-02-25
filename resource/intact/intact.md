@@ -10,6 +10,7 @@ contacts:
     value: https://www.ebi.ac.uk/support/intact
   id: ebi
   label: IntAct Team (EMBL-EBI)
+creation_date: '2025-07-08T00:00:00Z'
 description: IntAct is an open, curated molecular interaction database maintained
   at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
   curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
@@ -488,9 +489,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5

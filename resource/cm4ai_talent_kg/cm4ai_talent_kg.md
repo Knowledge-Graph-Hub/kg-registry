@@ -26,6 +26,8 @@ products:
   original_source:
   - cm4ai_talent_kg
   product_url: https://cm4aikg.vercel.app/
+creation_date: '2025-07-16T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 A knowledge graph containing connections between researchers, projects, and publications centering on members of the Bridge2AI Consortium and the Cell Maps for AI (CM4AI) project.
 

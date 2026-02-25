@@ -9,6 +9,7 @@ contacts:
   - contact_type: github
     value: caufieldjh
   label: J. Harry Caufield
+creation_date: '2025-03-09T00:00:00Z'
 description: An ontology for accessing and comparing knowledge concerning phenotypes
   across species and genetic backgrounds.
 domains:
@@ -16,6 +17,7 @@ domains:
 homepage_url: https://monarch-initiative.github.io/phenio/
 id: phenio
 infores_id: phenio
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause
@@ -37,13 +39,11 @@ products:
   secondary_source:
   - phenio
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:

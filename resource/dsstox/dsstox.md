@@ -9,6 +9,7 @@ contacts:
   - contact_type: email
     value: EPA_ComptoxTools@epa.gov
   label: EPA CCTE
+creation_date: '2025-06-24T00:00:00Z'
 description: EPA's Distributed Structure-Searchable Toxicity (DSSTox) Database contains
   curated chemical substances mapped to data including chemical identifiers and structure
   representations, providing the chemical underpinning for EPA's computational toxicology
@@ -20,6 +21,7 @@ domains:
 - health
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstox
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -54,11 +56,9 @@ products:
   name: DSSToxDB Description
   product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.

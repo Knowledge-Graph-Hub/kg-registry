@@ -113,6 +113,8 @@ repository: ''
 tags:
 - core
 version: '3.0'
+creation_date: '2025-05-28T00:00:00Z'
+last_modified_date: '2025-10-31T00:00:00Z'
 ---
 The Protein Common Interface Database (ProtCID) contains comprehensive, PDB-wide structural information on the interactions of proteins and individual protein domains with other molecules. The database is based on Pfam v34 and identifies common interfaces across different crystal structures.
 

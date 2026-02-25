@@ -10,6 +10,7 @@ contacts:
     value: https://www.metanetx.org/
   id: sib
   label: MetaNetX Team - SIB Swiss Institute of Bioinformatics
+creation_date: '2025-05-07T00:00:00Z'
 description: MetaNetX is an online platform for accessing, analyzing, and manipulating
   genome-scale metabolic networks (GSM) and biochemical pathways, integrating data
   from multiple sources with a unified namespace for metabolites and biochemical reactions.
@@ -18,6 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.metanetx.org/
 id: metanetx
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -55,15 +57,15 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-01-28_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-20: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-02-24: No Content-Length
     header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases

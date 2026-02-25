@@ -156,6 +156,8 @@ publications:
     omics analysis
   year: '2021'
 repository: https://github.com/saezlab/pypath
+creation_date: '2025-07-08T00:00:00Z'
+last_modified_date: '2025-09-27T00:00:00Z'
 ---
 # OmniPath
 

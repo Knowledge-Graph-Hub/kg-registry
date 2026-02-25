@@ -123,10 +123,12 @@ kgr:aao a schema1:Ontology ;
 
 kgr:achilles a schema1:DataSource ;
     rdfs:label "Project Achilles" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Project Achilles is a systematic effort aimed at identifying and cataloging gene essentiality across hundreds of genomically characterized cancer cell lines. Achilles uses genome-scale RNAi and CRISPR-Cas9 genetic perturbation reagents to silence or knockout individual genes and identify those genes that affect cell survival." ;
     dcterms:identifier "achilles" ;
     dcterms:isReferencedBy <doi:10.1016/j.cell.2017.06.010> ;
     dcterms:license <https://depmap.org/portal/terms/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings ;
     schema1:name "Project Achilles" ;
@@ -275,9 +277,11 @@ kgr:alliance a schema1:Aggregator ;
 
 kgr:alzkb a schema1:KnowledgeGraph ;
     rdfs:label "Alzheimer's Knowledge Base" ;
+    dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge base for AI research in Alzheimer Disease, based on graph databases." ;
     dcterms:identifier "alzkb" ;
     dcterms:isReferencedBy <https://doi.org/10.2196/46777> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data ;
@@ -324,6 +328,7 @@ kgr:amyco a schema1:DataSource ;
 
 kgr:aop-db a schema1:Aggregator ;
     rdfs:label "AOP-DB" ;
+    dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed integrative knowledgebase that connects chemicals and stressors to molecular initiating events, key events across biological organization levels, and adverse outcomes relevant to human health and ecological risk assessment. It harmonizes data from toxicology, high‑throughput screening, pathway, gene/protein, and phenotype resources to enable computational toxicology, mode-of-action analysis, and predictive risk prioritization." ;
     dcterms:identifier "aop-db" ;
     dcterms:license <https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db> ;
@@ -340,6 +345,7 @@ kgr:aop-db a schema1:Aggregator ;
 
 kgr:aop-wiki a schema1:DataSource ;
     rdfs:label "AOP-Wiki" ;
+    dcterms:created "2025-09-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The AOP-Wiki is the primary collaborative authoring and curation interface for the Adverse Outcome Pathway Knowledge Base (AOP-KB). It enables the community to develop, review, browse, and export Adverse Outcome Pathways (AOPs) linking molecular initiating events through key events to adverse outcomes relevant to human and ecological risk assessment. Structured exports (XML and tabular subsets) support computational toxicology, ontology mapping, and integration into predictive assessment workflows." ;
     dcterms:identifier "aop-wiki" ;
     dcterms:license <https://aopwiki.org/> ;
@@ -507,9 +513,11 @@ kgr:ato a schema1:Ontology ;
 
 kgr:automat a schema1:Aggregator ;
     rdfs:label "Automat" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider offering multiple sub-graphs in KGX format." ;
     dcterms:identifier "automat" ;
     dcterms:license <https://biopragmatics.github.io/obo-db-ingest/> ;
+    dcterms:modified "2025-10-29T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.biolink,
         kgr:automat.ctd,
         kgr:automat.drugcentral,
@@ -636,11 +644,13 @@ kgr:bfo a schema1:Ontology ;
 
 kgr:bgee a schema1:DataSource ;
     rdfs:label "Bgee - Gene Expression Database" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species, providing information about gene expression in different anatomical structures, developmental stages, and species." ;
     dcterms:identifier "bgee" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkaa793>,
         <doi:10.1093/nar/gkae1118> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:10141>,
@@ -697,10 +707,12 @@ kgr:bgee a schema1:DataSource ;
 
 kgr:bigg a schema1:DataSource ;
     rdfs:label "BiGG Models" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions." ;
     dcterms:identifier "bigg" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkv1049> ;
     dcterms:license <http://bigg.ucsd.edu/license#license> ;
+    dcterms:modified "2025-09-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.bigg.compartment.json,
         kgr:obo-db-ingest.bigg.compartment.obo,
         kgr:obo-db-ingest.bigg.compartment.owl,
@@ -755,10 +767,12 @@ kgr:bind a schema1:DataSource ;
 
 kgr:bindingdb a schema1:DataSource ;
     rdfs:label "BindingDB" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BindingDB is a public, web-accessible database of measured binding affinities between small, drug-like molecules and protein targets, focusing on the interactions of proteins with small, drug-like molecules. It contains 3.0M data points for 1.3M compounds and 9.6K targets, serving as a crucial resource for drug discovery, pharmacology, and related fields." ;
     dcterms:identifier "bindingdb" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae1075> ;
     dcterms:license <https://www.bindingdb.org/rwd/bind/info.jsp> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bindingdb.all_2d,
         kgr:bindingdb.all_3d,
         kgr:bindingdb.all_tsv,
@@ -830,8 +844,10 @@ kgr:bio2rdf a schema1:Aggregator ;
 
 kgr:biobricks-aopwiki a schema1:KnowledgeGraph ;
     rdfs:label "BioBricks AOP-Wiki" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from the AOP-Wiki. It provides structured data about biological pathways linking chemical exposures to adverse health effects." ;
     dcterms:identifier "biobricks-aopwiki" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-aopwiki.sparql ;
     schema1:name "BioBricks AOP-Wiki" ;
     doap:repository <https://github.com/biobricks-ai/aopwikirdf-kg> ;
@@ -842,8 +858,10 @@ kgr:biobricks-aopwiki a schema1:KnowledgeGraph ;
 
 kgr:biobricks-ice a schema1:KnowledgeGraph ;
     rdfs:label "BioBricks ICE" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for cheminformatics and chemical safety data from EPA's CompTox database." ;
     dcterms:identifier "biobricks-ice" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-ice.sparql ;
     schema1:name "BioBricks ICE" ;
     doap:repository <https://github.com/biobricks-ai/biobricks-okg> ;
@@ -854,8 +872,10 @@ kgr:biobricks-ice a schema1:KnowledgeGraph ;
 
 kgr:biobricks-mesh a schema1:KnowledgeGraph ;
     rdfs:label "BioBricks MeSH" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks MeSH is an open knowledge graph of Medical Subject Headings (MeSH) biomedical vocabulary, providing structured access to the NLM's controlled vocabulary thesaurus." ;
     dcterms:identifier "biobricks-mesh" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-mesh.sparql ;
     schema1:name "BioBricks MeSH" ;
     doap:repository <https://github.com/biobricks-ai/mesh-kg> ;
@@ -866,8 +886,10 @@ kgr:biobricks-mesh a schema1:KnowledgeGraph ;
 
 kgr:biobricks-pubchem-annotations a schema1:KnowledgeGraph ;
     rdfs:label "BioBricks PubChem Annotations" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks PubChem Annotations is an open knowledge graph of chemical annotations from PubChem, providing structured access to chemical compound data and annotations." ;
     dcterms:identifier "biobricks-pubchem-annotations" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-pubchem-annotations.sparql ;
     schema1:name "BioBricks PubChem Annotations" ;
     doap:repository <https://github.com/biobricks-ai/pubchem-annotations-kg> ;
@@ -877,8 +899,10 @@ kgr:biobricks-pubchem-annotations a schema1:KnowledgeGraph ;
 
 kgr:biobricks-tox21 a schema1:KnowledgeGraph ;
     rdfs:label "BioBricks Tox21" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening data, providing structured access to high-throughput toxicity testing results." ;
     dcterms:identifier "biobricks-tox21" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-tox21.sparql ;
     schema1:name "BioBricks Tox21" ;
     doap:repository <https://github.com/biobricks-ai/biobricks-okg> ;
@@ -888,8 +912,10 @@ kgr:biobricks-tox21 a schema1:KnowledgeGraph ;
 
 kgr:biobricks-toxcast a schema1:KnowledgeGraph ;
     rdfs:label "BioBricks ToxCast" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput screening data, providing structured access to chemical toxicity testing results." ;
     dcterms:identifier "biobricks-toxcast" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-toxcast.sparql ;
     schema1:name "BioBricks ToxCast" ;
     doap:repository <https://github.com/biobricks-ai/biobricks-okg> ;
@@ -899,9 +925,11 @@ kgr:biobricks-toxcast a schema1:KnowledgeGraph ;
 
 kgr:biocyc a schema1:DataSource ;
     rdfs:label "BioCyc" ;
+    dcterms:created "2025-03-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioCyc is a collection of 20,070 Pathway/Genome Databases (PGDBs) for model eukaryotes and for thousands of microbes, plus software tools for exploring them. BioCyc is an encyclopedic reference that contains curated data from 146,000 publications." ;
     dcterms:identifier "biocyc" ;
     dcterms:license <https://biocyc.org/download.shtml> ;
+    dcterms:modified "2026-01-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2759> ;
     schema1:hasPart kgr:obo-db-ingest.bigg.metabolite.sssom.tsv,
         kgr:string.cog.links,
@@ -994,8 +1022,10 @@ kgr:biogrid a schema1:DataSource ;
 
 kgr:biohealth a schema1:KnowledgeGraph ;
     rdfs:label "Bio-Health KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health." ;
     dcterms:identifier "biohealth" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biohealth.sparql ;
     schema1:name "Bio-Health KG" ;
     skos:inScheme "biomedical",
@@ -1006,10 +1036,12 @@ kgr:biohealth a schema1:KnowledgeGraph ;
 
 kgr:biolink a schema1:DataModel ;
     rdfs:label "Biolink-Model" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Entity and association taxonomy and datamodel for life-sciences data" ;
     dcterms:identifier "biolink" ;
     dcterms:isReferencedBy <doi:10.1111/cts.13302> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-10-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.biolink,
         kgr:biolink.docs,
         kgr:biolink.infores.docs,
@@ -1030,9 +1062,11 @@ kgr:biolink a schema1:DataModel ;
 
 kgr:biomarker a schema1:KnowledgeGraph ;
     rdfs:label "BiomarkerKB" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BiomarkerKB is a Common Fund Data Ecosystem (CFDE) sponsored project to develop a knowledgebase that organizes and integrates biomarker data from different public sources, providing researchers with comprehensive, integrated access to biomarker information." ;
     dcterms:identifier "biomarker" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "BiomarkerKB" ;
@@ -1044,8 +1078,10 @@ kgr:biomarker a schema1:KnowledgeGraph ;
 
 kgr:biomarkerkg a schema1:KnowledgeGraph ;
     rdfs:label "Biomarker Knowledge Graph" ;
+    dcterms:created "2025-05-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Biomarker Knowledge Graph (BKG) is a comprehensive resource for biomarker data that integrates multiple biomedical resources to connect biomarkers with anatomical structures, compounds, conditions, roles, and variants." ;
     dcterms:identifier "biomarkerkg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biomarkerkg.edges.anatomy,
         kgr:biomarkerkg.edges.compound,
         kgr:biomarkerkg.edges.condition,
@@ -1102,9 +1138,11 @@ kgr:bioportal a schema1:Aggregator ;
 
 kgr:bioteque a schema1:KnowledgeGraph ;
     rdfs:label "Bioteque" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph of biological entities and their associations that integrates and formats biomedical data as pre-calculated knowledge graph embeddings" ;
     dcterms:identifier "bioteque" ;
     dcterms:isReferencedBy <doi:10.1038/s41467-022-33026-0> ;
+    dcterms:modified "2025-09-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.bqsupports,
         kgr:bioteque.code,
         kgr:bioteque.embeddings ;
@@ -1193,10 +1231,12 @@ kgr:bto a schema1:Ontology ;
 
 kgr:bv-brc a schema1:DataSource ;
     rdfs:label "Bacterial and Viral Bioinformatics Resource Center" ;
+    dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is a comprehensive resource for bacterial and viral infectious disease research that combines the data, technology, and extensive user communities from two long-running centers - PATRIC (the bacterial system) and IRD/ViPR (the viral systems). BV-BRC provides integrated data, advanced bioinformatics tools, and workflows to support the scientific community in understanding and combating infectious diseases." ;
     dcterms:identifier "bv-brc" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/36350631/> ;
     dcterms:license <https://www.bv-brc.org/about> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:bv-brc.api,
@@ -1238,6 +1278,7 @@ kgr:cam-kp a schema1:KnowledgeGraph ;
         <doi:10.1093/nar/gkaq891>,
         <doi:10.1093/nar/gky1209> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:cam-kp.api,
         kgr:cam-kp.automat,
@@ -1316,6 +1357,7 @@ kgr:catalogue-of-life a schema1:KnowledgeGraph ;
     dcterms:isReferencedBy <doi:10.1186/1471-2105-12-447>,
         <doi:10.1371/journal.pbio.2005053> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:catalogue-of-life.annual-releases,
         kgr:catalogue-of-life.api,
@@ -1338,8 +1380,10 @@ kgr:catalogue-of-life a schema1:KnowledgeGraph ;
 
 kgr:ccle a schema1:DataSource ;
     rdfs:label "CCLE" ;
+    dcterms:created "2025-03-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CCLE is the Cancer Cell Line Encyclopedia, a collaboration between the Broad Institute and the Novartis Institutes for Biomedical Research." ;
     dcterms:identifier "ccle" ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:indra.cogex.code,
@@ -1452,10 +1496,12 @@ kgr:cellmarker a schema1:DataSource ;
 
 kgr:cellosaurus a schema1:DataSource ;
     rdfs:label "Cellosaurus" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Cellosaurus is a knowledge resource on cell lines providing information on cell lines from vertebrates, invertebrates, and plants, including standardized nomenclature, cross-references to other databases, and information on problematic cell lines." ;
     dcterms:identifier "cellosaurus" ;
     dcterms:isReferencedBy <doi:10.7171/jbt.18-2902-002> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:cellosaurus.api.rest,
@@ -1490,6 +1536,7 @@ kgr:ceph a schema1:Ontology ;
 
 kgr:cfde-ddkg a schema1:KnowledgeGraph ;
     rdfs:label "Data Distillery Knowledge Graph (DDKG)" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.The Data Distillery project aims to integrate summarized (“distilled”) Common Fund data within a knowledge graph. The purpose of the Data Distillery Knowledge Graph (DDKG) is to link multiple sources of expertly curated data, thus providing data integration across multiple Common Fund data coordinating centers (DCCs)." ;
     dcterms:identifier "cfde-ddkg" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -1524,9 +1571,11 @@ kgr:cfde-gse a schema1:KnowledgeGraph ;
 
 kgr:cgnc a schema1:DataSource ;
     rdfs:label "CGNC" ;
+    dcterms:created "2025-03-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CGNC is the Chicken Gene Nomenclature Consortium. It is  an international group of researchers interested in providing standardized gene nomenclature for chicken genes." ;
     dcterms:identifier "cgnc" ;
     dcterms:isReferencedBy <doi:10.1186/1471-2164-10-S2-S5> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cgnc.genes,
         kgr:obo-db-ingest.cgnc.json,
         kgr:obo-db-ingest.cgnc.obo,
@@ -1608,10 +1657,12 @@ kgr:chebi a schema1:Ontology ;
 
 kgr:chembl a schema1:DataSource ;
     rdfs:label "ChEMBL" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs." ;
     dcterms:identifier "chembl" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkad1004> ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:chembl.api,
@@ -1647,8 +1698,10 @@ kgr:chembl a schema1:DataSource ;
 
 kgr:chemicalchecker a schema1:DataSource ;
     rdfs:label "Chemical Checker" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Chemical Checker (CC) is a data-driven resource of small molecule bioactivity data, organized into five levels of increasing complexity, ranging from chemical properties to clinical outcomes. It is designed to support computational drug discovery tasks." ;
     dcterms:identifier "chemicalchecker" ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:chemicalchecker.api,
@@ -1675,8 +1728,10 @@ kgr:cheminf a schema1:Ontology ;
 
 kgr:chemont a schema1:Ontology ;
     rdfs:label "ChemOnt" ;
+    dcterms:created "2025-12-11T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ChemOnt (Chemical Ontology) is a comprehensive chemical ontology that provides a hierarchical classification of chemical entities. It is designed to support chemical informatics applications and enable semantic integration of chemical data across biomedical systems. ChemOnt is developed and maintained by the Wishart Lab and integrates chemical structures with ontological classifications." ;
     dcterms:identifier "chemont" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:chemont.classyfire,
         kgr:chemont.obo,
         kgr:forum.graph.dump ;
@@ -1713,9 +1768,11 @@ kgr:chmo a schema1:Ontology ;
 
 kgr:chr a schema1:Ontology ;
     rdfs:label "Monochrom Ontology" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Monochrom, also known as Chromo or CHR, is an automatic translation of UCSC chromosome bands to OWL classes. Each chromosome and chromosomal region is represented as an OWL class." ;
     dcterms:identifier "chr" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-10-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:chr.model.owl ;
     schema1:name "Monochrom Ontology" ;
     doap:repository <https://github.com/monarch-initiative/monochrom/> ;
@@ -1794,8 +1851,10 @@ kgr:circbase a schema1:Aggregator ;
 
 kgr:cito a schema1:Ontology ;
     rdfs:label "CiTO" ;
+    dcterms:created "2025-12-11T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CiTO (Citation Typing Ontology) is a formal ontology that provides a machine-readable vocabulary for describing the nature and type of citations within bibliographic references. It enables the semantic representation of the relationships between citing and cited scholarly works, supporting the analysis of citation networks and the characterization of how one publication cites another." ;
     dcterms:identifier "cito" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cito.documentation,
         kgr:cito.ttl,
         kgr:forum.graph.dump ;
@@ -1808,11 +1867,13 @@ kgr:cito a schema1:Ontology ;
 
 kgr:civic a schema1:DataSource ;
     rdfs:label "CIViC" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase is a free and open resource for public use that enables the interpretation of variants in cancer by providing community-curated information about the clinical significance of genomic variants." ;
     dcterms:identifier "civic" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/ng.3774>,
         <https://doi.org/10.1186/s13073-019-0687-x> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:civic.api.v1,
         kgr:civic.api.v2,
@@ -1871,9 +1932,11 @@ kgr:cl a schema1:Ontology ;
 
 kgr:cl-kg a schema1:KnowledgeGraph ;
     rdfs:label "Cell Ontology Knowledge Graph (CL-KG)" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene." ;
     dcterms:identifier "cl-kg" ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cl-kg.api.neo4j ;
     schema1:name "Cell Ontology Knowledge Graph (CL-KG)" ;
     doap:repository <https://github.com/Cellular-Semantics/CL_KG> ;
@@ -1896,8 +1959,10 @@ kgr:clao a schema1:Ontology ;
 
 kgr:climatemodelskg a schema1:KnowledgeGraph ;
     rdfs:label "Climate Models KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Climate Models KG is a knowledge graph to support evaluation and development of climate models, providing structured access to climate modeling data and relationships." ;
     dcterms:identifier "climatemodelskg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:climatemodelskg.sparql ;
     schema1:name "Climate Models KG" ;
     skos:inScheme "environment",
@@ -1907,11 +1972,13 @@ kgr:climatemodelskg a schema1:KnowledgeGraph ;
 
 kgr:clingen a schema1:DataSource ;
     rdfs:label "ClinGen" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Clinical Genome Resource (ClinGen) is a National Institutes of Health (NIH)-funded resource dedicated to building a central resource that defines the clinical relevance of genes and variants for use in precision medicine and research. ClinGen brings together clinical and research experts to develop standard approaches for interpreting genomic variants, curate evidence for gene-disease relationships, and share this knowledge through freely accessible databases." ;
     dcterms:identifier "clingen" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.gim.2024.101228>,
         <https://doi.org/10.1056/NEJMsr1406261> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:clingen.actionability,
         kgr:clingen.dosage,
@@ -1943,6 +2010,7 @@ kgr:clingen a schema1:DataSource ;
 
 kgr:clinical-data-kp a schema1:KnowledgeGraph ;
     rdfs:label "Clinical Data KP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider integrating clinical data." ;
     dcterms:identifier "clinical-data-kp" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -1959,10 +2027,12 @@ kgr:clinical-data-kp a schema1:KnowledgeGraph ;
 
 kgr:clinicalkg a schema1:KnowledgeGraph ;
     rdfs:label "Clinical Knowledge Graph (CKG)" ;
+    dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Clinical Knowledge Graph (CKG) is an open-source platform that integrates proteomics and clinical data with knowledge from diverse biomedical databases and literature to support precision medicine. The CKG has reported scale of ~16 million nodes and ~220 million relationships and provides tooling for analysis, reporting, and knowledge discovery." ;
     dcterms:identifier "clinicalkg" ;
     dcterms:isReferencedBy <doi:10.1101/2020.05.09.084897> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:clinicalkg.graph ;
     schema1:name "Clinical Knowledge Graph (CKG)" ;
@@ -1976,10 +2046,12 @@ kgr:clinicalkg a schema1:KnowledgeGraph ;
 
 kgr:clinicaltrialsgov a schema1:DataSource ;
     rdfs:label "ClinicalTrials.gov" ;
+    dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ClinicalTrials.gov is a database of privately and publicly funded clinical studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and WHO International Clinical Trials Registry Platform (ICTRP)." ;
     dcterms:identifier "clinicaltrialsgov" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/21366476/> ;
     dcterms:license <https://clinicaltrials.gov/about-site/terms-conditions> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aact.database,
         kgr:aact.downloads,
@@ -2010,11 +2082,13 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
 
 kgr:clinvar a schema1:DataSource ;
     rdfs:label "ClinVar" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ClinVar is a freely accessible, public archive of reports of human genetic variations and their relationships to human health. It collects and presents data on variants found in patient samples, classifications for diseases and drug responses, and supporting evidence. ClinVar enables access to and communication about the clinical significance of genetic variants, providing healthcare professionals, researchers, and the public with vital information for interpreting genetic test results." ;
     dcterms:identifier "clinvar" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae1090>,
         <doi:10.1093/nar/gkx1153> ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:clinvar.api,
         kgr:clinvar.tab,
@@ -2097,8 +2171,10 @@ kgr:clyh a schema1:Ontology ;
 
 kgr:cm4ai_talent_kg a schema1:KnowledgeGraph ;
     rdfs:label "CM4AI Talent KG" ;
+    dcterms:created "2025-07-16T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph containing connections between researchers, projects, and publications centering on members of the Bridge2AI Consortium and the Cell Maps for AI (CM4AI) project." ;
     dcterms:identifier "cm4ai_talent_kg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cm4ai_talent_kg.web_interface ;
     schema1:name "CM4AI Talent KG" ;
     skos:inScheme "literature" ;
@@ -2237,9 +2313,11 @@ kgr:colao a schema1:Ontology ;
 
 kgr:compartments a schema1:DataSource ;
     rdfs:label "COMPARTMENTS" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "COMPARTMENTS is an evidence-weighted subcellular localization knowledge resource that integrates experimental data, manual curation, high-throughput localization screens, automatic text mining, and sequence-based predictions to assign proteins to cellular compartments with confidence scores." ;
     dcterms:identifier "compartments" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:compartments.downloads,
         kgr:compartments.portal,
@@ -2365,6 +2443,7 @@ kgr:complexportal a schema1:DataSource ;
 
 kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     rdfs:label "Connections Hypothesis KP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider exploring connections hypotheses." ;
     dcterms:identifier "connections-hypothesis-kp" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -2441,6 +2520,7 @@ kgr:corum a schema1:DataSource ;
 
 kgr:cosmic a schema1:DataSource ;
     rdfs:label "COSMIC" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "COSMIC (Catalogue Of Somatic Mutations In Cancer) is a comprehensive resource for somatic mutations in human cancer. It curates, standardizes, and integrates mutation data across genes, cancer types, and samples, and provides access via a web portal and licensed downloads." ;
     dcterms:identifier "cosmic" ;
     dcterms:license <https://cancer.sanger.ac.uk/cosmic/license> ;
@@ -2462,9 +2542,11 @@ kgr:cosmic a schema1:DataSource ;
 
 kgr:cpathkg a schema1:KnowledgeGraph ;
     rdfs:label "C-Path Knowledge Graph" ;
+    dcterms:created "2025-04-11T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The C-Path Knowledge Graph project is intended to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph." ;
     dcterms:identifier "cpathkg" ;
     dcterms:isReferencedBy <doi:10.1093/jamiaopen/ooaf001> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code ;
     schema1:name "C-Path Knowledge Graph" ;
     skos:inScheme "health" ;
@@ -2554,10 +2636,12 @@ kgr:crd a schema1:Aggregator ;
 
 kgr:creeds a schema1:DataSource ;
     rdfs:label "CREEDS" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CREEDS (CRowd Extracted Expression of Differential Signatures) is a database of crowdsourced gene expression signatures for drug, genetic, and disease perturbations." ;
     dcterms:identifier "creeds" ;
     dcterms:isReferencedBy <doi:10.1038/ncomms12846> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-09-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:creeds.automatic_disease_signatures,
         kgr:creeds.automatic_single_drug,
@@ -2586,9 +2670,11 @@ kgr:cro a schema1:Ontology ;
 
 kgr:ctd a schema1:DataSource ;
     rdfs:label "Comparative Toxicogenomics Database" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "CTD is a robust, publicly available database that aims to advance understanding about how environmental exposures affect human health." ;
     dcterms:identifier "ctd" ;
     dcterms:license <https://ctdbase.org/about/legal.jsp> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
         kgr:automat.ctd,
@@ -2757,11 +2843,13 @@ kgr:date a schema1:DataSource ;
 
 kgr:dbsnp a schema1:DataSource ;
     rdfs:label "dbSNP" ;
+    dcterms:created "2025-05-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "dbSNP contains human single nucleotide variations, microsatellites, and small-scale insertions and deletions along with publication, population frequency, molecular consequence, and genomic and RefSeq mapping information for both common variations and clinical mutations." ;
     dcterms:identifier "dbsnp" ;
     dcterms:isReferencedBy <doi:10.1093/nar/29.1.308>,
         <doi:10.1093/nar/gkad1045> ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:biomarkerkg.nodes.variant,
         kgr:dbsnp.api,
@@ -2783,6 +2871,7 @@ kgr:dbsnp a schema1:DataSource ;
 
 kgr:dc a schema1:DataModel ;
     rdfs:label "Dublin Core Metadata Terms" ;
+    dcterms:created "2025-06-25T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Dublin Core Metadata Initiative (DCMI) Metadata Terms is an authoritative specification of metadata terms for resource description. It includes the fifteen elements of the Dublin Core Metadata Element Set plus several dozen properties, classes, datatypes, and vocabulary encoding schemes. The terms are intended for use in combination with metadata terms from other vocabularies in application profiles. DCMI metadata terms are expressed in RDF vocabularies for use in Linked Data and are published as ISO standards (ISO 15836-1:2017 for the original 15 elements, ISO 15836-2:2019 for extended terms)." ;
     dcterms:identifier "dc" ;
     dcterms:isReferencedBy <https://www.iso.org/standard/71339.html>,
@@ -2821,8 +2910,10 @@ kgr:dc_cl a schema1:Ontology ;
 
 kgr:dct a schema1:Ontology ;
     rdfs:label "Dublin Core Terms" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Dublin Core Metadata Terms (DCT) is a vocabulary of standardized metadata elements for describing resources, providing interoperable metadata standards for resource discovery across digital libraries and information systems." ;
     dcterms:identifier "dct" ;
+    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "Dublin Core Terms" ;
@@ -2919,12 +3010,14 @@ kgr:depmap a schema1:DataSource ;
 
 kgr:dgidb a schema1:DataSource ;
     rdfs:label "DGIdb" ;
+    dcterms:created "2025-05-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Drug Gene Interaction Database (DGIdb) is a resource that consolidates disparate data sources describing drug-gene interactions and gene druggability to help researchers identify actionable drug targets or repurposable drugs for genes of interest." ;
     dcterms:identifier "dgidb" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/nmeth.2689>,
         <https://doi.org/10.1093/nar/gkv1165>,
         <https://doi.org/10.1093/nar/gkx1143> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:dgidb.api,
@@ -3068,11 +3161,13 @@ kgr:disdriv a schema1:Ontology ;
 
 kgr:diseases a schema1:Aggregator ;
     rdfs:label "DISEASES" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DISEASES is a weekly updated database that integrates evidence on disease-gene associations from automatic text mining, manually curated literature, cancer mutation data, and genome-wide association studies. It provides confidence scores to facilitate comparison of different types and sources of evidence." ;
     dcterms:identifier "diseases" ;
     dcterms:isReferencedBy <PMID:25484339>,
         <PMID:35348650> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:amyco.annotations,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
@@ -3110,10 +3205,12 @@ kgr:diseases a schema1:Aggregator ;
 
 kgr:disgenet a schema1:DataSource ;
     rdfs:label "DisGeNET" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DisGeNET is the world's largest and most extensive gene-disease association (GDA) network, integrating data from expert-curated repositories, GWAS catalogs, animal models, and scientific literature. It contains gene-disease associations, variant-disease associations, and disease-disease associations with extensive evidence supporting each connection." ;
     dcterms:identifier "disgenet" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkz1021> ;
     dcterms:license <https://www.disgenet.com/Legal> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -3285,8 +3382,10 @@ kgr:dpo a schema1:Ontology ;
 
 kgr:dreamkg a schema1:KnowledgeGraph ;
     rdfs:label "DREAM-KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DREAM-KG (Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs) is a knowledge graph designed to address homelessness with explainable AI, integrating data across social services and community resources." ;
     dcterms:identifier "dreamkg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dreamkg.sparql ;
     schema1:name "DREAM-KG" ;
     skos:inScheme "health",
@@ -3296,8 +3395,10 @@ kgr:dreamkg a schema1:KnowledgeGraph ;
 
 kgr:drkg a schema1:KnowledgeGraph ;
     rdfs:label "Drug Repurposing Knowledge Graph" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Drug Repurposing Knowledge Graph (DRKG) is a comprehensive biological knowledge graph relating genes, compounds, diseases, biological processes, side effects and symptoms." ;
     dcterms:identifier "drkg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:drkg.graph,
         kgr:ibkh.graph ;
     schema1:name "Drug Repurposing Knowledge Graph" ;
@@ -3320,8 +3421,10 @@ kgr:dron a schema1:Ontology ;
 
 kgr:drug-approvals-kp a schema1:KnowledgeGraph ;
     rdfs:label "Drug Approvals KP" ;
+    dcterms:created "2025-04-22T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator knowledge provider focused on drug approval status and other drug-related metadata." ;
     dcterms:identifier "drug-approvals-kp" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:drug-approvals-kp.code,
         kgr:drug-approvals-kp.graph.edges,
         kgr:drug-approvals-kp.graph.nodes ;
@@ -3335,11 +3438,13 @@ kgr:drug-approvals-kp a schema1:KnowledgeGraph ;
 
 kgr:drugbank a schema1:DataSource ;
     rdfs:label "DrugBank" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DrugBank Online is a comprehensive, publicly accessible database containing detailed information on drugs and drug targets, combining chemical, pharmacological, pharmaceutical data with drug target information including sequence, structure, and pathway details." ;
     dcterms:identifier "drugbank" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkad976>,
         <https://doi.org/10.1093/nar/gkx1037> ;
     dcterms:license <https://go.drugbank.com/legal/terms_of_use> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -3377,10 +3482,12 @@ kgr:drugbank a schema1:DataSource ;
 
 kgr:drugcentral a schema1:DataSource ;
     rdfs:label "DrugCentral" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DrugCentral is online drug information resource created and maintained by Division of Translational Informatics at University of New Mexico." ;
     dcterms:identifier "drugcentral" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkw993> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.drugcentral,
         kgr:bioteque.embeddings,
         kgr:drugcentral.data,
@@ -3403,10 +3510,12 @@ kgr:drugcentral a schema1:DataSource ;
 
 kgr:drugmechdb a schema1:KnowledgeGraph ;
     rdfs:label "DrugMechDB" ;
+    dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "DrugMechDB is a curated database that captures mechanistic paths from a drug to a disease within a given indication. Expert curators normalize concepts and relationships to standard biomedical identifiers and represent each indication as a directed path through a biological knowledge graph, suitable for computational analysis and benchmarking." ;
     dcterms:identifier "drugmechdb" ;
     dcterms:isReferencedBy <doi:10.1038/s41597-023-02534-z> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:drugmechdb.graph,
         kgr:drugmechdb.web ;
@@ -3440,10 +3549,12 @@ kgr:drugrephub a schema1:DataSource ;
 
 kgr:dsstox a schema1:DataSource ;
     rdfs:label "DSSTox" ;
+    dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "EPA's Distributed Structure-Searchable Toxicity (DSSTox) Database contains curated chemical substances mapped to data including chemical identifiers and structure representations, providing the chemical underpinning for EPA's computational toxicology tools." ;
     dcterms:identifier "dsstox" ;
     dcterms:isReferencedBy <doi:10.1186/s13321-017-0247-6> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:dsstox.api,
@@ -3490,8 +3601,10 @@ kgr:duo a schema1:Ontology ;
 
 kgr:ebrains a schema1:KnowledgeGraph ;
     rdfs:label "EBRAINS Knowledge Graph" ;
+    dcterms:created "2025-05-01T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph for the EBRAINS project, an infrastructure for data, tools and computing facilities for brain-related research." ;
     dcterms:identifier "ebrains" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ebrains.api.core,
         kgr:ebrains.stats ;
     schema1:name "EBRAINS Knowledge Graph" ;
@@ -3541,9 +3654,11 @@ kgr:ecao a schema1:Ontology ;
 
 kgr:ecid a schema1:DataSource ;
     rdfs:label "ECID" ;
+    dcterms:created "2025-05-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ECID is a biomedical knowledgebase of curated inter-chemical correlations from the core chemical datasets in exposomics. These datasets are prioritized from human biomonitoring studies using targeted and untargeted assays. ECID has applications in characterizing and understanding the effects of exposome chemicals on the human health." ;
     dcterms:identifier "ecid" ;
     dcterms:isReferencedBy <doi:10.1016/j.envint.2022.107240> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:ecid.bloodexposome.data,
         kgr:ecid.ccdb.site,
@@ -3582,9 +3697,11 @@ kgr:eco a schema1:Ontology ;
 
 kgr:eco-kg a schema1:KnowledgeGraph ;
     rdfs:label "eco-KG" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph of plant traits starting with Planteome and EOL TraitBank." ;
     dcterms:identifier "eco-kg" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:33090> ;
     schema1:hasPart kgr:eco-kg.api,
         kgr:eco-kg.graph ;
@@ -3612,9 +3729,11 @@ kgr:ecocore a schema1:Ontology ;
 
 kgr:ecocyc a schema1:DataSource ;
     rdfs:label "EcoCyc" ;
+    dcterms:created "2025-03-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "EcoCyc captures information from 44,000 publications for Escherichia coli K-12 substr. MG1655. Use EcoCyc to search for knowledge on E. coli genes, regulation, and metabolism; analyze transcriptomics data; perform comparative analyses; and run a metabolic model." ;
     dcterms:identifier "ecocyc" ;
     dcterms:license <https://ecocyc.org/download.shtml> ;
+    dcterms:modified "2025-09-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ecocyc.api,
         kgr:ecocyc.metabolic_model,
         kgr:ecocyc.web,
@@ -3630,8 +3749,10 @@ kgr:ecocyc a schema1:DataSource ;
 
 kgr:ecosim a schema1:Resource ;
     rdfs:label "ecosim" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Ontology rendering of the EcoSIM Land System Model" ;
     dcterms:identifier "ecosim" ;
+    dcterms:modified "2025-09-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ecosim.model.owl ;
     schema1:name "ecosim" ;
     doap:repository <http://purl.obolibrary.org/obo/ecosim.owl> ;
@@ -3660,10 +3781,12 @@ kgr:ecto a schema1:Ontology ;
 
 kgr:edam a schema1:Ontology ;
     rdfs:label "EDAM Ontology" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "EDAM is an ontology of bioscientific data analysis and data management, covering topics, operations, data, identifiers, and formats. It supports semantic annotation of tools, workflows, training, and provenance metadata across life sciences." ;
     dcterms:identifier "edam" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btt113> ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:edam.csv,
         kgr:edam.owl,
         kgr:edam.tsv,
@@ -3678,10 +3801,12 @@ kgr:edam a schema1:Ontology ;
 
 kgr:efo a schema1:Ontology ;
     rdfs:label "Experimental Factor Ontology" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for projects such as the GWAS catalog. It combines parts of several biological ontologies, such as UBERON anatomy, ChEBI chemical compounds, and Cell Ontology." ;
     dcterms:identifier "efo" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/bioinformatics/btq099> ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:clo.owl,
@@ -3798,9 +3923,11 @@ kgr:emapa a schema1:Ontology ;
 
 kgr:embiology a schema1:KnowledgeGraph ;
     rdfs:label "EmBiology" ;
+    dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "EmBiology is a commercial, web-based knowledge graph platform from Elsevier that surfaces biological relationships across entities such as genes, proteins, diseases, cells, and more. EmBiology connects 1.4 million entities via 15.7 million relationships and provides 87.2 million referenced facts (figures reported by Elsevier), with weekly updates and annual rescans of the corpus. It uses NLP (including the TERMite engine) and expert curation to extract and quality-control relationships from full-text scientific literature and other sources, and offers interactive visualization (e.g., Sankey diagrams) and filtering to support discovery and decision-making in drug research and biology." ;
     dcterms:identifier "embiology" ;
     dcterms:license <https://www.elsevier.com/legal/elsevier-website-terms-and-conditions> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:embiology.web ;
     schema1:name "EmBiology" ;
@@ -3832,6 +3959,7 @@ kgr:emi a schema1:Ontology ;
 
 kgr:emikg a schema1:KnowledgeGraph ;
     rdfs:label "EMI KG" ;
+    dcterms:created "2025-05-20T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph version of the Earth Metabolome Initiative (EMI) Ontology, containing over 413 million triples derived from metabolomic datasets. It provides a structured representation of metabolomic data within a semantic framework." ;
     dcterms:identifier "emikg" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -3890,10 +4018,12 @@ kgr:enrichr-kg a schema1:KnowledgeGraph ;
 
 kgr:ensembl a schema1:DataSource ;
     rdfs:label "Ensembl" ;
+    dcterms:created "2025-05-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A genome browser for vertebrate genomes that supports research in comparative genomics, evolution, sequence variation, and transcriptional regulation" ;
     dcterms:identifier "ensembl" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkae1071> ;
     dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:7227>,
@@ -4002,6 +4132,7 @@ kgr:eol-traitbank a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1371/journal.pone.0089965>,
         <doi:10.3233/SW-150190> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:eol-traitbank.api,
         kgr:eol-traitbank.bulk-csv,
@@ -4094,6 +4225,7 @@ kgr:epsd a schema1:DataSource ;
 
 kgr:eqtlgen a schema1:DataSource ;
     rdfs:label "eQTLGen Consortium" ;
+    dcterms:created "2025-09-03T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The eQTLGen Consortium conducts large-scale meta-analyses of expression quantitative trait loci (eQTLs) in blood samples to investigate the genetic architecture of gene expression and understand the genetic underpinnings of complex traits. Phase I analyzed 31,684 blood and PBMC samples from 37 cohorts, identifying thousands of cis-eQTLs, trans-eQTLs, and expression quantitative trait score (eQTS) associations. The consortium also includes a single-cell eQTLGen project. Phase II is expanding to genome-wide eQTL meta-analysis across even more blood-based cohorts. The resulting summary statistics provide a valuable resource for interpreting genome-wide association studies (GWAS), developing novel methods, and understanding molecular mechanisms of complex traits." ;
     dcterms:identifier "eqtlgen" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/s41588-021-00913-z> ;
@@ -4138,9 +4270,11 @@ kgr:eram a schema1:DataSource ;
 
 kgr:erccrbp a schema1:DataSource ;
     rdfs:label "ERCC RNA Binding Protein Dataset" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ERCC RNA Binding Protein dataset (ERCCRBP) is a collection of data focused on RNA binding proteins involved in extracellular RNA functions as part of the NIH Common Fund's Extracellular RNA Communication Consortium (ERCC) program. This dataset provides insights into the protein-RNA interactions important for exRNA stability, transport, and signaling." ;
     dcterms:identifier "erccrbp" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "ERCC RNA Binding Protein Dataset" ;
@@ -4152,9 +4286,11 @@ kgr:erccrbp a schema1:DataSource ;
 
 kgr:erccreg a schema1:DataSource ;
     rdfs:label "ERCC Regulatory Element Dataset" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ERCC Regulatory Element dataset (erccreg) is a collection of data related to regulatory elements of extracellular RNA as part of the NIH Common Fund's Extracellular RNA Communication Consortium (ERCC) program. This dataset focuses on RNA-based regulatory mechanisms involved in extracellular communication." ;
     dcterms:identifier "erccreg" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "ERCC Regulatory Element Dataset" ;
@@ -4305,8 +4441,10 @@ kgr:expressionatlas a schema1:Aggregator ;
 
 kgr:fabio a schema1:Ontology ;
     rdfs:label "FABIO" ;
+    dcterms:created "2025-12-11T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "FABIO (Functional Requirements for Bibliographic Records Object) is a comprehensive ontology for describing bibliographic resources and their properties. It extends the FRBR (Functional Requirements for Bibliographic Records) model into a machine-readable ontology format, enabling semantic representation of bibliographic entities, relationships, and metadata. FABIO supports the organization and discovery of scholarly works and publication resources across knowledge systems." ;
     dcterms:identifier "fabio" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:fabio.documentation,
         kgr:fabio.ttl,
         kgr:forum.graph.dump,
@@ -4343,9 +4481,11 @@ kgr:faers a schema1:DataSource ;
 
 kgr:faldo a schema1:Ontology ;
     rdfs:label "FALDO" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "FALDO (Feature Annotation Location Description Ontology) is an ontology for describing sequence feature locations using RDF/OWL. It provides a standardized way to represent genomic and protein sequence positions, regions, and strands in Semantic Web formats." ;
     dcterms:identifier "faldo" ;
     dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:faldo.browser,
         kgr:faldo.rdf,
         kgr:faldo.ttl,
@@ -4464,11 +4604,13 @@ kgr:fideo a schema1:Ontology ;
 
 kgr:finngen a schema1:DataSource ;
     rdfs:label "FinnGen" ;
+    dcterms:created "2025-06-27T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "FinnGen is a large-scale genomics research project aimed at improving human health through genetic insights from the genetically unique Finnish population, combining genome information with digital health record data from 500,000 Finnish biobank participants." ;
     dcterms:identifier "finngen" ;
     dcterms:isReferencedBy <doi:10.1038/s41588-024-01975-5>,
         <doi:10.1038/s41588-025-02100-w> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:disgenet.data,
         kgr:finngen.endpoints,
@@ -4486,8 +4628,10 @@ kgr:finngen a schema1:DataSource ;
 
 kgr:fiokg a schema1:KnowledgeGraph ;
     rdfs:label "SAWGraph FIO KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The FIO KG is part of the SAWGraph (Safe Agricultural Products and Water Graph) project, providing structured data about food industry operations and their environmental impacts." ;
     dcterms:identifier "fiokg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:fiokg.sparql ;
     schema1:name "SAWGraph FIO KG" ;
     skos:inScheme "agriculture",
@@ -4596,11 +4740,13 @@ kgr:fobi a schema1:Ontology ;
 
 kgr:foodb a schema1:DataSource ;
     rdfs:label "FooDB" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Food Database (FooDB) is the world's largest and most comprehensive resource on food constituents, chemistry, and biology. It provides detailed information about the chemical constituents found in food, designed for applications in nutrition, food science, dietary planning, and general education." ;
     dcterms:identifier "foodb" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkn810>,
         <https://doi.org/10.1093/nar/gkx1089> ;
     dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:foodb.data.csv,
@@ -4666,9 +4812,11 @@ kgr:foodon a schema1:Ontology ;
 
 kgr:forum a schema1:KnowledgeGraph ;
     rdfs:label "FORUM" ;
+    dcterms:created "2025-12-11T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "FORUM is a Knowledge Graph providing a semantic representation of relations between chemicals and biomedical concepts. It is built from a federation of life science databases and scientific literature repositories. FORUM supports metabolomics studies by enabling the identification of biomarkers and classification of individuals through comprehensive chemical-concept associations." ;
     dcterms:identifier "forum" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btab627> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:forum.api,
         kgr:forum.graph.dump,
         kgr:forum.void,
@@ -4761,12 +4909,14 @@ kgr:gdc a schema1:DataSource ;
 
 kgr:gdsc a schema1:DataSource ;
     rdfs:label "Genomics of Drug Sensitivity in Cancer" ;
+    dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and resource that characterizes cancer cell lines and their responses to anti-cancer drugs. It contains drug screening data for over 1000 cancer cell lines with hundreds of compounds, as well as genomic feature data such as mutations, copy number variations, methylation, and gene expression. The aim is to identify molecular features of cancers that predict response to anti-cancer drugs." ;
     dcterms:identifier "gdsc" ;
     dcterms:isReferencedBy <http://doi.org/10.1093/nar/gks1111>,
         <https://doi.org/10.1016/j.cell.2016.06.017>,
         <https://doi.org/10.1038/nature11005> ;
     dcterms:license <https://www.cancerrxgene.org/legal> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:gdsc.anova,
@@ -5037,6 +5187,7 @@ kgr:geneprof a schema1:DataSource ;
 
 kgr:genetics-kp a schema1:KnowledgeGraph ;
     rdfs:label "Genetics KP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider focusing on genetic data." ;
     dcterms:identifier "genetics-kp" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -5078,9 +5229,11 @@ kgr:geno a schema1:Ontology ;
 
 kgr:genomickb a schema1:KnowledgeGraph ;
     rdfs:label "GenomicKB" ;
+    dcterms:created "2025-03-20T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Genomic Knowledgebase (GenomicKB) is a database that uses a knowledge graph to consolidate genomic datasets and annotations. GenomicKB integrates data from more than 30 consortia, in which the genomic entities and relationships are represented as diverse nodes and edges with properties." ;
     dcterms:identifier "genomickb" ;
     dcterms:license <https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome#modal-licence-preview> ;
+    dcterms:modified "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genomickb.graph,
         kgr:genomickb.site ;
     schema1:name "GenomicKB" ;
@@ -5135,8 +5288,10 @@ kgr:geo a schema1:Ontology ;
 
 kgr:geoconnex a schema1:KnowledgeGraph ;
     rdfs:label "GEOCONNEX" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring." ;
     dcterms:identifier "geoconnex" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:geoconnex.sparql ;
     schema1:name "GEOCONNEX" ;
     skos:inScheme "environment" ;
@@ -5180,9 +5335,11 @@ kgr:ghr a schema1:DataSource ;
 
 kgr:glkb a schema1:DataSource ;
     rdfs:label "GLKB" ;
+    dcterms:created "2025-03-20T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Genomic Literature Knowledge Base (GLKB) is a comprehensive and powerful resource that integrates over 263 million biomedical terms and more than 14.6 million biomedical relationships. This collection is curated from 33 million PubMed abstracts and nine well-established biomedical repositories, offering an unparalleled wealth of knowledge for researchers and practitioners in the field." ;
     dcterms:identifier "glkb" ;
     dcterms:isReferencedBy <doi:10.1101/2024.09.22.614323> ;
+    dcterms:modified "2025-04-11T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:glkb.site ;
     schema1:name "GLKB" ;
     skos:inScheme "biological systems" ;
@@ -5256,10 +5413,12 @@ kgr:glycocoo a schema1:Ontology ;
 
 kgr:glyconnect a schema1:DataSource ;
     rdfs:label "GlyConnect" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite and glycan information, with data on various species, tissues, and disease associations." ;
     dcterms:identifier "glyconnect" ;
     dcterms:isReferencedBy <doi:10.1021/acs.jproteome.8b00766> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-12-07T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:glyconnect.api.rest,
         kgr:glyconnect.api.sparql,
         kgr:glyconnect.compositions,
@@ -5301,10 +5460,12 @@ kgr:glycordf a schema1:Ontology ;
 
 kgr:glygen a schema1:DataSource ;
     rdfs:label "GlyGen" ;
+    dcterms:created "2025-05-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GlyGen is an integrated, data-driven resource for glycoproteins, glycans, and carbohydrate-active enzymes, providing researchers with comprehensive, high-quality data on glycobiology." ;
     dcterms:identifier "glygen" ;
     dcterms:isReferencedBy <doi:10.1093/glycob/cwaa085> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biomarkerkg.nodes.biomarker,
         kgr:glygen.api,
         kgr:glygen.data.site,
@@ -5318,9 +5479,11 @@ kgr:glygen a schema1:DataSource ;
 
 kgr:gnbr a schema1:KnowledgeGraph ;
     rdfs:label "GNBR" ;
+    dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Global Network of Biomedical Relationships (GNBR) is a large-scale biomedical knowledge graph derived from literature. GNBR uses text mining of PubMed abstracts to extract typed relationships between genes, diseases and drugs/chemicals, organizing them into semantic themes suitable for link prediction and downstream applications such as drug repurposing. GNBR has been widely used as a text-derived KG resource and is available via GitHub and Zenodo." ;
     dcterms:identifier "gnbr" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/bty114> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:gnbr.graph,
         kgr:pharmkg.graph ;
@@ -5434,10 +5597,12 @@ kgr:go a schema1:Ontology ;
 
 kgr:go-cam a schema1:DataModel ;
     rdfs:label "Gene Ontology Causal Activity Modeling (GO-CAM)" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A structured framework for integrating Gene Ontology annotations into computable models of biological functions." ;
     dcterms:identifier "go-cam" ;
     dcterms:isReferencedBy <doi:10.1038/s41588-019-0500-1> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:go-cam.api,
         kgr:go-cam.browser,
         kgr:go-cam.minerva,
@@ -5484,9 +5649,11 @@ kgr:goa a schema1:DataSource ;
 
 kgr:goldterms a schema1:DataModel ;
     rdfs:label "GOLD Environmental Paths" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Translation of JGI GOLD (Genomes OnLine Database) ecosystem classification paths to OWL, plus mappings to MIxS and environment ontologies like ENVO." ;
     dcterms:identifier "goldterms" ;
     dcterms:license <https://github.com/cmungall/gold-ontology/blob/main/LICENSE> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:goldterms.bioportal,
         kgr:goldterms.data.owl,
         kgr:goldterms.definitions.yaml ;
@@ -5503,9 +5670,11 @@ kgr:goldterms a schema1:DataModel ;
 
 kgr:gp-kg a schema1:KnowledgeGraph ;
     rdfs:label "GP-KG" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph for drug repurposing" ;
     dcterms:identifier "gp-kg" ;
     dcterms:isReferencedBy <doi:10.1016/j.jbi.2022.104133> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gp-kg.graph,
         kgr:gp-kg.process.kg-predict ;
     schema1:name "GP-KG" ;
@@ -5567,10 +5736,12 @@ kgr:gsso a schema1:Ontology ;
 
 kgr:gtex a schema1:DataSource ;
     rdfs:label "GTEx" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Genotype-Tissue Expression (GTEx) project provides a comprehensive resource to study tissue-specific gene expression and regulation. Samples were collected from 54 non-diseased tissue sites across nearly 1000 individuals, primarily for molecular assays including WGS, WES, and RNA-Seq." ;
     dcterms:identifier "gtex" ;
     dcterms:isReferencedBy <doi:10.1126/science.1262110>,
         <doi:10.1126/science.aaz1776> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:automat.gtex,
         kgr:bioteque.embeddings,
@@ -5594,10 +5765,12 @@ kgr:gtex a schema1:DataSource ;
 
 kgr:gtopdb a schema1:DataSource ;
     rdfs:label "Guide to Pharmacology" ;
+    dcterms:created "2025-05-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource providing quantitative information on drug targets and the substances that act on them, including approved drugs and experimental therapeutics" ;
     dcterms:identifier "gtopdb" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkad944> ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.gtopdb,
         kgr:gtopdb.api.rest,
         kgr:gtopdb.approved_drugs.csv,
@@ -5677,10 +5850,12 @@ kgr:gtrx a schema1:Aggregator ;
 
 kgr:gutmgene a schema1:DataSource ;
     rdfs:label "GutMGene" ;
+    dcterms:created "2025-04-13T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A manually curated database of target genes of gut microbes and microbial metabolites in humans and mice." ;
     dcterms:identifier "gutmgene" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkab786>,
         <doi:10.1093/nar/gkae1002> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2> ;
     schema1:hasPart kgr:gutmgene.site,
         kgr:mgmlink.code ;
@@ -5791,10 +5966,12 @@ kgr:harmonizome-kg a schema1:KnowledgeGraph ;
 
 kgr:hetionet a schema1:KnowledgeGraph ;
     rdfs:label "Hetionet" ;
+    dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Hetionet is an integrative network of biomedical knowledge assembled from 29 different databases of genes, compounds, diseases, and more. It combines over 50 years of biomedical information into a single resource." ;
     dcterms:identifier "hetionet" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/gigascience/giad047> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -5820,9 +5997,11 @@ kgr:hetionet a schema1:KnowledgeGraph ;
 
 kgr:hgnc a schema1:DataSource ;
     rdfs:label "HGNC" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "HGNC is the HUGO Gene Nomenclature Committee. It is a resource for approved human gene names." ;
     dcterms:identifier "hgnc" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:automat.hgnc,
         kgr:biogrid.identifiers,
@@ -6127,9 +6306,11 @@ kgr:hra a schema1:DataModel ;
 
 kgr:hra-kg a schema1:KnowledgeGraph ;
     rdfs:label "Human Reference Atlas Knowledge Graph (HRA KG)" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The HRA Knowledge Graph (HRA KG) is a linked open data resource that integrates anatomical structures, cell types, and biomarkers to support cross-scale biological queries." ;
     dcterms:identifier "hra-kg" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hra-kg.graph.json,
         kgr:hra-kg.graph.nq,
         kgr:hra-kg.graph.nt,
@@ -6289,8 +6470,10 @@ kgr:huri a schema1:DataSource ;
 
 kgr:hydrologykg a schema1:KnowledgeGraph ;
     rdfs:label "SAWGraph Hydrology KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Hydrology KG is part of the SAWGraph (Safe Agricultural Products and Water Graph) project, providing structured data about hydrological systems and water resources." ;
     dcterms:identifier "hydrologykg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hydrologykg.sparql ;
     schema1:name "SAWGraph Hydrology KG" ;
     skos:inScheme "environment" ;
@@ -6317,9 +6500,11 @@ kgr:iao a schema1:Ontology ;
 
 kgr:ibkh a schema1:KnowledgeGraph ;
     rdfs:label "integrative Biomedical Knowledge Hub" ;
+    dcterms:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A comprehensive biomedical knowledge graph created by harmonizing and integrating information from diverse biomedical resources for biomedical discovery and drug repurposing." ;
     dcterms:identifier "ibkh" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.isci.2023.106460> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ibkh.graph ;
     schema1:name "integrative Biomedical Knowledge Hub" ;
     skos:altLabel "iBKH" ;
@@ -6567,9 +6752,11 @@ kgr:inchikey a schema1:DataModel ;
 
 kgr:indra a schema1:Aggregator ;
     rdfs:label "INDRA" ;
+    dcterms:created "2025-07-19T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated model assembly system interfacing with NLP systems and databases to collect knowledge, and through a process of assembly, produce causal graphs and dynamical models." ;
     dcterms:identifier "indra" ;
     dcterms:license <https://opensource.org/licenses/BSD-2-Clause> ;
+    dcterms:modified "2025-07-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:indra.api.cogex,
         kgr:indra.cogex.code,
         kgr:indra.discovery,
@@ -6632,6 +6819,7 @@ kgr:insight a schema1:KnowledgeGraph ;
 
 kgr:intact a schema1:Aggregator ;
     rdfs:label "IntAct" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "IntAct is an open, curated molecular interaction database maintained at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats along with curated datasets and documentation." ;
     dcterms:identifier "intact" ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
@@ -6679,10 +6867,12 @@ kgr:intact a schema1:Aggregator ;
 
 kgr:interpro a schema1:DataSource ;
     rdfs:label "InterPro" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences." ;
     dcterms:identifier "interpro" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae1082> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:drugmechdb.graph,
         kgr:goa.mapping-files,
@@ -6804,10 +6994,12 @@ kgr:itis a schema1:DataSource ;
 
 kgr:kegg a schema1:DataSource ;
     rdfs:label "KEGG" ;
+    dcterms:created "2025-03-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Kyoto Encyclopedia of Genes and Genomes (KEGG) is a database resource for understanding high-level functions and utilities of the biological system, such as the cell, the organism and the ecosystem, from molecular-level information, especially large-scale molecular datasets generated by genome sequencing and other high-throughput experimental technologies." ;
     dcterms:identifier "kegg" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae909> ;
     dcterms:license <https://www.kegg.jp/feedback/copyright.html> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:3702>,
@@ -6877,9 +7069,11 @@ kgr:kegg a schema1:DataSource ;
 
 kgr:kg-alzheimers a schema1:KnowledgeGraph ;
     rdfs:label "KG-Alzheimers" ;
+    dcterms:created "2025-03-18T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Knowledge Graph for integrating data related to Alzheimer's disease, supporting Retrieval-Augmented Generation (RAG) and AI assistant development for Alzheimer's disease research." ;
     dcterms:identifier "kg-alzheimers" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:kg-alzheimers.graph ;
     schema1:name "KG-Alzheimers" ;
@@ -6892,9 +7086,11 @@ kgr:kg-alzheimers a schema1:KnowledgeGraph ;
 
 kgr:kg-covid-19 a schema1:KnowledgeGraph ;
     rdfs:label "KG-COVID-19" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph for COVID-19 and SARS-COV-2." ;
     dcterms:identifier "kg-covid-19" ;
     dcterms:license <https://opensource.org/license/bsd-3-clause> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kg-covid-19.graph ;
     schema1:name "KG-COVID-19" ;
     doap:repository <https://github.com/Knowledge-Graph-Hub/kg-covid-19> ;
@@ -6907,8 +7103,10 @@ kgr:kg-covid-19 a schema1:KnowledgeGraph ;
 
 kgr:kg-ebi-gene2pheno a schema1:KnowledgeGraph ;
     rdfs:label "EBI Gene2Phenotype KG" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ingest of EMBL-EBI's Gene2Phenotype resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)" ;
     dcterms:identifier "kg-ebi-gene2pheno" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kg-ebi-gene2pheno.edges.kgx,
         kgr:kg-ebi-gene2pheno.edges.trapi,
         kgr:kg-ebi-gene2pheno.nodes.kgx ;
@@ -6933,9 +7131,11 @@ kgr:kg-enp a schema1:KnowledgeGraph ;
 
 kgr:kg-idg a schema1:KnowledgeGraph ;
     rdfs:label "KG-IDG" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "a Knowledge Graph for Illuminating the Druggable Genome" ;
     dcterms:identifier "kg-idg" ;
     dcterms:license <https://opensource.org/license/bsd-3-clause> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kg-idg.graph ;
     schema1:name "KG-IDG" ;
     doap:repository <https://github.com/Knowledge-Graph-Hub/kg-idg> ;
@@ -6945,8 +7145,10 @@ kgr:kg-idg a schema1:KnowledgeGraph ;
 
 kgr:kg-jensenlab-diseases a schema1:KnowledgeGraph ;
     rdfs:label "JensenLab DISEASES KG" ;
+    dcterms:created "2025-05-06T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ingest of Jensen Lab's DISEASES resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)" ;
     dcterms:identifier "kg-jensenlab-diseases" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kg-jensenlab-diseases.edges.kgx,
         kgr:kg-jensenlab-diseases.edges.trapi,
         kgr:kg-jensenlab-diseases.nodes.kgx ;
@@ -6957,9 +7159,11 @@ kgr:kg-jensenlab-diseases a schema1:KnowledgeGraph ;
 
 kgr:kg-microbe a schema1:KnowledgeGraph ;
     rdfs:label "KG Microbe" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Knowledge Graph about microbes. The KG is designed to integrate diverse knowledge about microbes from a variety of structured and unstructured sources." ;
     dcterms:identifier "kg-microbe" ;
     dcterms:license <https://opensource.org/license/bsd-3-clause> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2>,
         <NCBITaxon:2759> ;
     schema1:hasPart kgr:kg-microbe.graph.biomedical,
@@ -6980,10 +7184,11 @@ kgr:kg-microbe a schema1:KnowledgeGraph ;
 
 kgr:kg-monarch a schema1:KnowledgeGraph ;
     rdfs:label "KG Monarch" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-02-18T16:16:19+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-02-20T23:00:44+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:kg-monarch.associations.all,
@@ -7055,11 +7260,13 @@ kgr:kg-predict a schema1:KnowledgeGraph ;
 
 kgr:kgcl a schema1:DataModel ;
     rdfs:label "Knowledge Graph Change Language" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A data model for describing change operations at a high level on an ontology or ontology-like artefact, such as a Knowledge Graph. KGCL enables standardized representation of changes in ontologies and knowledge graphs for tracking, auditing, and reproducibility. It provides a formal language for representing and documenting changes in knowledge graphs, facilitating version control, change history, and collaboration." ;
     dcterms:hasVersion "0.7.0" ;
     dcterms:identifier "kgcl" ;
     dcterms:isReferencedBy <doi:10.1093/database/baae133> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2025-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kgcl.model.jsonld,
         kgr:kgcl.model.owl,
         kgr:kgcl.model.shacl,
@@ -7073,8 +7280,10 @@ kgr:kgcl a schema1:DataModel ;
 
 kgr:kidsfirst a schema1:DataSource ;
     rdfs:label "Kids First Data Resource Center" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Gabriella Miller Kids First Pediatric Research Program Data Resource Center (Kids First DRC) provides researchers access to genomic and clinical data from pediatric cancer and structural birth defect cohorts to accelerate discovery and development of more effective treatments." ;
     dcterms:identifier "kidsfirst" ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:kidsfirst.cavatica,
         kgr:kidsfirst.pedcbioportal,
@@ -7166,6 +7375,7 @@ kgr:knowwheregraph a schema1:KnowledgeGraph ;
         <doi:10.1002/aaai.12043>,
         <doi:10.1016/j.websem.2024.100819> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:knowwheregraph.explorer,
         kgr:knowwheregraph.graph,
         kgr:knowwheregraph.ontology,
@@ -7205,11 +7415,13 @@ kgr:lepao a schema1:Ontology ;
 
 kgr:lincs a schema1:DataSource ;
     rdfs:label "LINCS" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Library of Integrated Network-based Cellular Signatures (LINCS) is a comprehensive collection of data that catalogs how human cells globally respond to chemical, genetic, and disease perturbations. It aims to better understand human disease and advance the development of new therapies by assembling an integrated picture of the range of responses of human cells exposed to many perturbations." ;
     dcterms:identifier "lincs" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.cels.2017.11.001>,
         <https://doi.org/10.1038/s41467-022-32205-3>,
         <https://doi.org/10.1093/nar/gkx1063> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:lincs.api,
@@ -7413,11 +7625,13 @@ kgr:loggerhead a schema1:Ontology ;
 
 kgr:loinc a schema1:DataModel ;
     rdfs:label "LOINC" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "LOINC (Logical Observation Identifiers Names and Codes) is the international standard for identifying health measurements, laboratory and clinical observations, and documents; it provides universal codes and structured names enabling interoperable exchange and aggregation of clinical, laboratory, and other health data worldwide." ;
     dcterms:identifier "loinc" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkac998>,
         <https://doi.org/10.1093/nar/gkad1044> ;
     dcterms:license <https://loinc.org/license/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:athena.mappings,
         kgr:loinc.api.fhir,
@@ -7438,9 +7652,11 @@ kgr:loinc a schema1:DataModel ;
 
 kgr:m-csa a schema1:DataSource ;
     rdfs:label "M-CSA" ;
+    dcterms:created "2025-03-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Mechanism and Catalytic Site Atlas (M-CSA) is a database of enzyme reaction mechanisms. It provides annotation on the protein, catalytic residues, cofactors, and the reaction mechanisms of hundreds of enzymes. There are two kinds of entries in M-CSA. 'Detailed mechanism' entries are more complete and show the individual chemical steps of the mechanism as schemes with electron flow arrows. 'Catalytic Site' entries annotate the catalytic residues necessary for the reaction, but do not show the mechanism." ;
     dcterms:identifier "m-csa" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.rhea.sssom.tsv ;
     schema1:name "M-CSA" ;
     skos:inScheme "biological systems" ;
@@ -7698,9 +7914,11 @@ kgr:mediadive a schema1:DataSource ;
 
 kgr:medkg a schema1:KnowledgeGraph ;
     rdfs:label "MedKG" ;
+    dcterms:created "2025-03-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "MedKG is a comprehensive and continuously updated knowledge graph designed to address challenges in precision medicine and drug discovery. MedKG integrates data from 35 authoritative sources, encompassing 34 node types and 79 relationships. A Continuous Integration/Continuous Update pipeline ensures MedKG remains current, addressing a critical limitation of static knowledge bases. The integration of molecular embeddings enhances semantic analysis capabilities, bridging the gap between chemical structures and biological entities." ;
     dcterms:identifier "medkg" ;
     dcterms:isReferencedBy <doi:10.1007/s11030-025-11164-z> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:medkb.site ;
     schema1:name "MedKG" ;
     skos:inScheme "biological systems" ;
@@ -7769,9 +7987,11 @@ kgr:mesh a schema1:Ontology ;
 
 kgr:metacyc a schema1:DataSource ;
     rdfs:label "MetaCyc" ;
+    dcterms:created "2025-03-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "MetaCyc is a curated database of experimentally elucidated metabolic pathways from all domains of life. MetaCyc contains pathways involved in both primary and secondary metabolism, as well as associated metabolites, reactions, enzymes, and genes. The goal of MetaCyc is to catalog the universe of metabolism by storing a representative sample of each experimentally elucidated pathway." ;
     dcterms:identifier "metacyc" ;
     dcterms:license <https://metacyc.org/download.shtml> ;
+    dcterms:modified "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.rhea.sssom.tsv,
         kgr:spoke.graph ;
     schema1:identifier "metacyc" ;
@@ -7782,6 +8002,7 @@ kgr:metacyc a schema1:DataSource ;
 
 kgr:metanetx a schema1:DataSource ;
     rdfs:label "MetaNetX" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "MetaNetX is an online platform for accessing, analyzing, and manipulating genome-scale metabolic networks (GSM) and biochemical pathways, integrating data from multiple sources with a unified namespace for metabolites and biochemical reactions." ;
     dcterms:identifier "metanetx" ;
     dcterms:isReferencedBy <doi:10.1093/bib/bbs058>,
@@ -7789,6 +8010,7 @@ kgr:metanetx a schema1:DataSource ;
         <doi:10.1093/nar/gkaa992>,
         <doi:10.1093/nar/gkv1117> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:metanetx.mnxref.metabolites,
         kgr:metanetx.mnxref.reactions,
         kgr:metanetx.rdf,
@@ -7915,9 +8137,11 @@ kgr:mgd a schema1:Aggregator ;
 
 kgr:mgmlink a schema1:KnowledgeGraph ;
     rdfs:label "MGMLink" ;
+    dcterms:created "2025-04-13T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A knowledge graph of linked microbes, genes and metabolites." ;
     dcterms:identifier "mgmlink" ;
     dcterms:isReferencedBy <doi:10.1038/s41598-025-91230-6> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2759> ;
     schema1:hasPart kgr:mgmlink.code ;
     schema1:name "MGMLink" ;
@@ -8011,10 +8235,12 @@ kgr:microbiomekg a schema1:KnowledgeGraph ;
 
 kgr:mind a schema1:KnowledgeGraph ;
     rdfs:label "MIND" ;
+    dcterms:created "2025-07-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Mechanistic Repositioning Network with Indications (MIND) is a knowledge graph incorporating two biomedical resources: MechRepoNet and DrugCentral. MechRepoNet is a knowledge graph comprising of 18 biomedical resources that reflects and expands on important drug mechanism relationships identified from a curated biomedical drug mechanism dataset. MIND was created by mapping DrugCentral edges to existing MechRepoNet nodes through the Unified Medical Language System (UMLS) and Medical Subject Headings (MeSH). The MIND training set has a total of 9,651,040 edges." ;
     dcterms:identifier "mind" ;
     dcterms:isReferencedBy <https://doi.org/10.1101/2023.05.12.540594> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mind.entities,
         kgr:mind.relations,
         kgr:mind.test,
@@ -8194,9 +8420,11 @@ kgr:mirtarbase a schema1:DataSource ;
 
 kgr:mixs a schema1:DataModel ;
     rdfs:label "MIxS" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "MIxS, or the Minimum Information about any (X) Sequence is a standard for describing the contextual information about the sampling and sequencing of any genomic sequence. The standard has Terms that describe characteristics of a sample that addresses: What is the source of the sequence? In what kind of environment was the sample collected? What methods were utilized to process the sample?" ;
     dcterms:identifier "mixs" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-09-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mixs.model ;
     schema1:name "MIxS" ;
     doap:repository <https://github.com/GenomicsStandardsConsortium/mixs> ;
@@ -8289,9 +8517,11 @@ kgr:modomics a schema1:DataSource ;
 
 kgr:molecular-data-kp a schema1:KnowledgeGraph ;
     rdfs:label "MolePro" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "MolePro is a Molecular Data Provider translating molecular scale to systems scale through a Reasoner API. It is a Translator Knowledge Provider." ;
     dcterms:identifier "molecular-data-kp" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:molecular-data-kp.api,
         kgr:molecular-data-kp.graph.edges,
         kgr:molecular-data-kp.graph.nodes ;
@@ -8558,6 +8788,7 @@ kgr:msigdb a schema1:DataSource ;
 
 kgr:multiomics-kp a schema1:KnowledgeGraph ;
     rdfs:label "Multiomics KP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider incorporating multiomics data." ;
     dcterms:identifier "multiomics-kp" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -8587,6 +8818,7 @@ kgr:mutationds a schema1:DataSource ;
 
 kgr:mw a schema1:DataSource ;
     rdfs:label "Metabolomics Workbench" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Metabolomics Workbench is a public repository for metabolomics data and metadata, serving as the National Metabolomics Data Repository (NMDR). It provides tools, protocols, training, and access to over 2,000 metabolomics studies containing data from more than 75,000 samples and 32,000 known metabolites. Funded by the NIH Common Fund from 2012-2022." ;
     dcterms:identifier "mw" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/s41592-019-0694-2> ;
@@ -8602,8 +8834,10 @@ kgr:mw a schema1:DataSource ;
 
 kgr:namsnetwork a schema1:KnowledgeGraph ;
     rdfs:label "NAMs Network" ;
+    dcterms:created "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "NAMs.network is the first database of regulatory-relevant New Approach Methodologies (NAMs) for assessing the safety of materials and chemicals. Given the ethical, economic, and time-related challenges associated with animal testing, as well as emerging bans on such methods in the EU, it is paramount to develop and validate alternative in silico, in chemico, in vitro, and ex vivo approaches. NAMs.network provides state-of-the-art knowledge on different NAMs for materials and chemical safety assessment." ;
     dcterms:identifier "namsnetwork" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:namsnetwork.portal ;
     schema1:name "NAMs Network" ;
     skos:inScheme "chemistry and biochemistry",
@@ -8631,8 +8865,10 @@ kgr:nanopublications a schema1:DataModel ;
 
 kgr:nasa-gesdisc-kg a schema1:KnowledgeGraph ;
     rdfs:label "NASA-GESDISC-KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NASA Knowledge Graph Dataset is an expansive graph-based dataset designed to integrate and interconnect information about satellite datasets, scientific publications, instruments, platforms, projects, data centers, and science keywords. This knowledge graph is particularly focused on datasets managed by NASA's Distributed Active Archive Centers (DAACs), which are NASA's data repositories responsible for archiving and distributing scientific data. In addition to NASA DAACs, the graph includes datasets from 184 data providers worldwide, including various government agencies and academic institutions." ;
     dcterms:identifier "nasa-gesdisc-kg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nasa-gesdisc-kg.sparql ;
     schema1:name "NASA-GESDISC-KG" ;
     skos:inScheme "environment",
@@ -8654,6 +8890,7 @@ kgr:nbo a schema1:Ontology ;
 
 kgr:ncatsgardkg a schema1:KnowledgeGraph ;
     rdfs:label "NCATS GARD KG" ;
+    dcterms:created "2025-07-11T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NCATS GARD Knowledge Graph integrates data about rare diseases, creating a comprehensive resource for rare disease research and drug discovery. It leverages clustering and machine learning approaches to identify relationships between rare diseases and potential therapeutic targets." ;
     dcterms:identifier "ncatsgardkg" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/jamia/ocad186>,
@@ -8673,10 +8910,12 @@ kgr:ncatsgardkg a schema1:KnowledgeGraph ;
 
 kgr:ncbigene a schema1:DataSource ;
     rdfs:label "NCBI Gene" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "NCBI Gene integrates information from a wide range of species. A record may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations, phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide." ;
     dcterms:identifier "ncbigene" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkq1237> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:aop-db.data,
@@ -8798,8 +9037,10 @@ kgr:ndcd a schema1:DataSource ;
 
 kgr:nde a schema1:KnowledgeGraph ;
     rdfs:label "NIAID Data Ecosystem KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NDE (NIAID Data Ecosystem) KG contains infectious and immune-mediated disease datasets. These include datasets from NIAID-funded repositories as well as globally-relevant infectious and immune-mediated disease (IID) repositories from NIH and beyond. The datasets include -omics data, clinical data, epidemiological data, pathogen-host interaction data, flow cytometry, and imaging." ;
     dcterms:identifier "nde" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:nde.sparql ;
     schema1:name "NIAID Data Ecosystem KG" ;
@@ -8830,8 +9071,10 @@ kgr:ndfrt a schema1:DataSource ;
 
 kgr:neo a schema1:Resource ;
     rdfs:label "Noctua Entity Ontology" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "This repository contains classes required by Noctua/Minerva for representing entities that are object of 'enabled by' relations, and similar molecular relationships. This includes: genes, protein (gene-level generic proteins and isoforms), functional RNAs, and complexes. These are represented as ontology classes, although NEO is not really an ontology in a conventional sense: there is no hierarchy, it is organized as a largely flat list." ;
     dcterms:identifier "neo" ;
+    dcterms:modified "2025-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:neo.model ;
     schema1:name "Noctua Entity Ontology" ;
     doap:repository <https://github.com/geneontology/neo/> ;
@@ -8907,8 +9150,10 @@ kgr:nihreporter a schema1:DataSource ;
 
 kgr:nikg a schema1:KnowledgeGraph ;
     rdfs:label "Neighborhood Information KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Neighborhood Information KG (NIKG) is a knowledge graph warehouse for neighborhood information, providing structured data about community characteristics, demographics, and local resources." ;
     dcterms:identifier "nikg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nikg.sparql ;
     schema1:name "Neighborhood Information KG" ;
     skos:inScheme "social determinants" ;
@@ -8986,10 +9231,12 @@ kgr:noncode a schema1:DataSource ;
 
 kgr:np-kg a schema1:KnowledgeGraph ;
     rdfs:label "NP-KG" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "NP-KG is a graph framework that creates a biomedical knowledge graph to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug interactions (NPDIs)." ;
     dcterms:identifier "np-kg" ;
     dcterms:isReferencedBy <doi:10.1016/j.jbi.2023.104341> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv ;
     schema1:name "NP-KG" ;
@@ -9003,6 +9250,7 @@ kgr:np-kg a schema1:KnowledgeGraph ;
 
 kgr:npo a schema1:Ontology ;
     rdfs:label "Neuron Phenotype Ontology" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Neuron Phenotype Ontology (NPO) is a FAIR ontology-based data model for representing complex cellular phenotypes of neurons. It characterizes neuron types as bundles of normalized phenotypic properties across multiple dimensions including species, anatomical location, morphology, molecular constituents, electrophysiology, connectivity, and circuit roles. The NPO provides a standardized and automatable approach for naming cell types and normalizing their constituent phenotypes using identifiers from community ontologies, enabling interoperability between different neuron naming schemes and classification systems." ;
     dcterms:identifier "npo" ;
     dcterms:isReferencedBy <PMID:35267146> ;
@@ -9134,6 +9382,7 @@ kgr:obis a schema1:DataSource ;
     dcterms:identifier "obis" ;
     dcterms:isReferencedBy <obis-data> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-12-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2157>,
         <NCBITaxon:2158>,
         <NCBITaxon:2159> ;
@@ -9154,9 +9403,11 @@ kgr:obis a schema1:DataSource ;
 
 kgr:obo-db-ingest a schema1:Aggregator ;
     rdfs:label "OBO Database Ingestion" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A set of databases formalized in OBO, OWL, and OBO Graph JSON formats, as well as mappings and nodelists." ;
     dcterms:identifier "obo-db-ingest" ;
     dcterms:license <https://biopragmatics.github.io/obo-db-ingest/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.bigg.compartment.json,
         kgr:obo-db-ingest.bigg.compartment.obo,
         kgr:obo-db-ingest.bigg.compartment.owl,
@@ -9416,6 +9667,7 @@ kgr:occo a schema1:Ontology ;
 
 kgr:offsides a schema1:DataSource ;
     rdfs:label "OFFSIDES" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OFFSIDES is a database of drug side effects that were found through data mining of FDA Adverse Event Reporting System (FAERS) but are not listed on the official FDA drug labels. Part of the nSIDES resource developed by Tatonetti Lab." ;
     dcterms:identifier "offsides" ;
     dcterms:modified "2025-11-26T00:00:00+00:00"^^xsd:dateTime ;
@@ -9572,9 +9824,11 @@ kgr:ols a schema1:Aggregator ;
 
 kgr:oma a schema1:DataSource ;
     rdfs:label "OMA" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OMA (Orthologous MAtrix) is a database of orthologous genes among multiple species, providing a systematic classification of orthologs across complete genomes." ;
     dcterms:identifier "oma" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:oma.api.rest,
         kgr:oma.api.sparql,
         kgr:oma.cdna.eukaryotes.fasta,
@@ -9628,11 +9882,13 @@ kgr:omicsdi a schema1:DataSource ;
 
 kgr:omim a schema1:DataSource ;
     rdfs:label "OMIM" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OMIM (Online Mendelian Inheritance in Man) is a continuously updated, expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype relationships and the molecular basis of disease." ;
     dcterms:identifier "omim" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gku1205>,
         <https://doi.org/10.1093/nar/gky1151> ;
     dcterms:license <https://www.omim.org/help/agreement> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.disease.associations,
         kgr:genecards.gene.annotations,
@@ -9697,10 +9953,12 @@ kgr:omnicorp a schema1:DataSource ;
 
 kgr:omnipath a schema1:Aggregator ;
     rdfs:label "OmniPath" ;
+    dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OmniPath is a comprehensive prior knowledge resource that integrates molecular interactions and biological pathway information from over 100 original databases and resources. It provides unified access to protein-protein interactions, gene regulatory interactions, enzyme-PTM relationships, protein complexes, protein annotations, and intercellular communication data through multiple interfaces including web services, R/Bioconductor packages, Python clients, and Cytoscape plugins." ;
     dcterms:identifier "omnipath" ;
     dcterms:isReferencedBy <doi:10.1038/nmeth.4077>,
         <doi:10.15252/msb.20209923> ;
+    dcterms:modified "2025-09-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:omnipath.cytoscape_plugin,
         kgr:omnipath.explorer,
@@ -9821,6 +10079,7 @@ kgr:ontoavida a schema1:Ontology ;
 
 kgr:ontology-kp a schema1:KnowledgeGraph ;
     rdfs:label "Ontology KP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider dedicated to ontology-based services." ;
     dcterms:identifier "ontology-kp" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -9864,6 +10123,7 @@ kgr:open-tree-of-life a schema1:DataSource ;
         <doi:10.1093/sysbio/syab038>,
         <doi:10.1111/2041-210X.12593> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2025-12-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:otol.api,
         kgr:otol.bulk-download,
@@ -9886,6 +10146,7 @@ kgr:openbiodiv a schema1:KnowledgeGraph ;
     dcterms:isReferencedBy <doi:10.1186/s13326-017-0174-5>,
         <doi:10.3390/publications7020038> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:openbiodiv.api,
         kgr:openbiodiv.ontology.guide,
@@ -9927,11 +10188,13 @@ kgr:openpredict a schema1:Aggregator ;
 
 kgr:opentargets a schema1:KnowledgeGraph ;
     rdfs:label "Open Targets" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Open Targets is a collaborative effort to systematically identify and prioritise the best targets to safely and effectively treat rare and common diseases." ;
     dcterms:identifier "opentargets" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/s41587-025-02659-z>,
         <https://doi.org/10.1093/bioinformatics/btaf070> ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:epigraphdb.graph,
@@ -9973,6 +10236,7 @@ kgr:opmi a schema1:Ontology ;
 
 kgr:orcid a schema1:DataSource ;
     rdfs:label "ORCID" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ORCID is a free, unique, persistent identifier (PID) for individuals to use as they engage in research, scholarship, and innovation activities." ;
     dcterms:identifier "orcid" ;
     dcterms:isReferencedBy <doi:10.1087/20120404> ;
@@ -9988,9 +10252,11 @@ kgr:orcid a schema1:DataSource ;
 
 kgr:ordo a schema1:DataSource ;
     rdfs:label "Orphanet Rare Disease Ontology (ORDO)" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Orphanet Rare Disease Ontology (ORDO) is an open-access ontology developed from the Orphanet information system, enabling complex queries of rare diseases and their epidemiological data (age of onset, prevalence, mode of inheritance) and gene-disorder functional relationships." ;
     dcterms:identifier "ordo" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:efo.obo,
         kgr:efo.owl,
@@ -10057,11 +10323,13 @@ kgr:orphanet a schema1:DataSource ;
 
 kgr:orthodb a schema1:DataSource ;
     rdfs:label "OrthoDB" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OrthoDB is a comprehensive database of orthologous protein-coding genes across multiple species, providing evolutionary and functional annotations of orthologous groups." ;
     dcterms:identifier "orthodb" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkw1119>,
         <doi:10.1093/nar/gky1053> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-12-07T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:orthodb.aa_fasta,
         kgr:orthodb.api.rest,
         kgr:orthodb.api.sparql,
@@ -10137,9 +10405,11 @@ kgr:oxo a schema1:Aggregator ;
 
 kgr:pankbase a schema1:DataSource ;
     rdfs:label "PanKBase" ;
+    dcterms:created "2025-03-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PanKbase is a comprehensive, centralized resource for the study of the human pancreas and diabetes. The PanKbase collective aims to integrate diverse type 1 diabetes (T1D) datasets with expert-curated knowledge in a centralized, open-source data hub. Part of the NIH/NIDDK Human Islet Research Network (HIRN)." ;
     dcterms:identifier "pankbase" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:pankbase.api,
         kgr:pankbase.graph,
@@ -10157,8 +10427,10 @@ kgr:pankbase a schema1:DataSource ;
 
 kgr:panther a schema1:Resource ;
     rdfs:label "PANTHER" ;
+    dcterms:created "2025-03-25T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PANTHER is a Protein ANalysis THrough Evolutionary Relationships Classification System. The mission of the PANTHER knowledgebase is to support biomedical and other research by providing comprehensive information about the evolution of protein-coding gene families, particularly protein phylogeny, function and genetic variation impacting that function." ;
     dcterms:identifier "panther" ;
+    dcterms:modified "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.panther,
         kgr:kg-monarch.graph,
         kgr:kg-monarch.graph.duckdb,
@@ -10191,9 +10463,11 @@ kgr:pao a schema1:Ontology ;
 
 kgr:pathophenodb a schema1:DataSource ;
     rdfs:label "PathoPhenoDB" ;
+    dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PathoPhenoDB is a database of human pathogens, the diseases and phenotypes they elicit in human organisms, and information related to drug treatments and mechanisms of drug resistance. Specifically, PathoPhenoDB contains associations between pathogens and diseases, between pathogens and phenotypes, between drugs that are approved to treat particular pathogens, and it identifies genes or proteins within pathogens that can convey resistance to particular drugs." ;
     dcterms:identifier "pathophenodb" ;
     dcterms:isReferencedBy <http://doi.org/10.1038/s41597-019-0090-x> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:pathophenodb.data,
         kgr:pathophenodb.web,
@@ -10216,6 +10490,7 @@ kgr:pathway-commons a schema1:Aggregator ;
         <doi:10.1093/nar/gkz946>,
         <doi:10.1186/1471-2105-7-497> ;
     dcterms:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dcterms:modified "2025-12-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:pathway-commons.api,
         kgr:pathway-commons.biopax,
@@ -10301,6 +10576,20 @@ kgr:patric a schema1:DataSource ;
         "microbiology" ;
     adms:status "Inactive" ;
     foaf:homepage <https://www.bv-brc.org/> .
+
+kgr:pbpko a schema1:Ontology ;
+    rdfs:label "Physiologically-Based Pharmacokinetic Ontology" ;
+    dcterms:description "An ontology for modeling and understanding of pharmacokinetics in biological systems." ;
+    dcterms:identifier "pbpko" ;
+    dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+    schema1:hasPart kgr:pbpko.json,
+        kgr:pbpko.obo,
+        kgr:pbpko.owl ;
+    schema1:name "Physiologically-Based Pharmacokinetic Ontology" ;
+    doap:repository <https://github.com/InSilicoVida-Research-Lab/pbpko> ;
+    skos:inScheme "chemistry and biochemistry" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/InSilicoVida-Research-Lab/pbpko> .
 
 kgr:pcl a schema1:Ontology ;
     rdfs:label "Provisional Cell Ontology" ;
@@ -10468,10 +10757,12 @@ kgr:peco a schema1:Ontology ;
 
 kgr:petagraph a schema1:KnowledgeGraph ;
     rdfs:label "Petagraph" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Petagraph is a large-scale biomedical knowledge graph that encompasses over 32 million nodes and 118 million relationships, integrating multi-omics and clinical data. Built on the Unified Biomedical Knowledge Graph (UBKG), Petagraph leverages more than 180 ontologies and standards to embed millions of quantitative genomics data points within a richly connected annotation environment." ;
     dcterms:identifier "petagraph" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/s41597-024-04070-w> ;
     dcterms:license <https://www.nlm.nih.gov/databases/umls.html> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:petagraph.graph ;
     schema1:name "Petagraph" ;
@@ -10502,6 +10793,7 @@ kgr:pf1600 a schema1:Dataset ;
 
 kgr:pfam a schema1:DataSource ;
     rdfs:label "Pfam" ;
+    dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Pfam is a large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs), providing annotations of protein domains and functional sites." ;
     dcterms:hasVersion "37.0" ;
     dcterms:identifier "pfam" ;
@@ -10509,6 +10801,7 @@ kgr:pfam a schema1:DataSource ;
         <https://doi.org/10.1093/nar/gkae997>,
         <https://doi.org/10.1093/nar/gky995> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-01-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:pfam.a.data,
@@ -10664,9 +10957,11 @@ kgr:pharmdb a schema1:KnowledgeGraph ;
 
 kgr:pharmgkb a schema1:Resource ;
     rdfs:label "PharmGKB" ;
+    dcterms:created "2025-05-01T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PharmGKB collects, curates and disseminates knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships." ;
     dcterms:identifier "pharmgkb" ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.pharmacogenomics,
         kgr:ibkh.graph,
@@ -10723,9 +11018,11 @@ kgr:pharmgkb a schema1:Resource ;
 
 kgr:pharmkg a schema1:KnowledgeGraph ;
     rdfs:label "PharmKG" ;
+    dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PharmKG is a multi-relational, attributed biomedical knowledge graph benchmark that integrates curated databases and literature-derived relationships to link genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations across ~7,600–8,000 disambiguated entities (29 relation types), with domain-specific features for entities from multi-omics sources (e.g., gene expression, chemical structure, disease embeddings). It provides baselines for knowledge graph embedding and a neural network-based method, and supports downstream tasks such as drug repurposing and target identification." ;
     dcterms:identifier "pharmkg" ;
     dcterms:isReferencedBy <doi:10.1093/bib/bbaa344> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:pharmkg.graph ;
     schema1:name "PharmKG" ;
@@ -10769,10 +11066,12 @@ kgr:pharos a schema1:Aggregator ;
 
 kgr:pheknowlator a schema1:KnowledgeGraph ;
     rdfs:label "PheKnowLator" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PheKnowLator (Phenotype Knowledge Translator; pkt_kg) is a customizable knowledge graph (KG) construction framework enabling users to build large, heterogeneous KGs that are Semantic Web compliant and amenable to OWL reasoning, generate property graphs, and export to formats compatible with popular graph toolkits. The project provides configurable build recipes (e.g., OWL, property graph), reproducible pipelines, and documentation for deployment and usage in the GitHub Wiki." ;
     dcterms:identifier "pheknowlator" ;
     dcterms:isReferencedBy <doi:10.1101/2020.04.30.071407> ;
     dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2025-08-26T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:mgmlink.code,
         kgr:pheknowlator.code,
         kgr:pheknowlator.doc,
@@ -10787,9 +11086,11 @@ kgr:pheknowlator a schema1:KnowledgeGraph ;
 
 kgr:phenio a schema1:Resource ;
     rdfs:label "An integrated ontology for Phenomics" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "An ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds." ;
     dcterms:identifier "phenio" ;
     dcterms:license <https://opensource.org/license/bsd-3-clause> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kg-monarch.graph,
         kgr:kg-monarch.graph.duckdb,
         kgr:kg-monarch.graph.jsonl,
@@ -10875,6 +11176,7 @@ kgr:pid a schema1:DataSource ;
     dcterms:description "The Pathway Interaction Database (PID) was a highly curated collection of human molecular signaling, regulatory pathways, and key cellular processes developed through a collaboration between the US National Cancer Institute and Nature Publishing Group. The database focused specifically on cancer-relevant signaling and regulatory pathways rather than metabolic processes, providing detailed network-level representations of molecular interactions with comprehensive literature citations and evidence codes for each event. PID contained three main data collections the NCI-Nature Curated pathways representing expert-curated cancer signaling networks, imported Reactome pathways in BioPAX format, and BioCarta pathway data, together comprising 77 expert-reviewed pathways with over 4,300 manually curated interactions involving more than 2,600 proteins annotated with detailed posttranslational modifications including 7,400+ phosphorylation events. Each interaction in the NCI-Nature curated collection was associated with specific literature references from over 3,100 distinct PubMed citations and annotated with evidence codes indicating the type of experimental support. The database employed a sophisticated data model distinguishing five types of molecular events including transcription, translocation, biochemical reactions, protein modifications, and macroprocesses, with molecules characterized by posttranslational modifications, cellular locations, and activity states. PID provided powerful query capabilities enabling users to search by molecule names, construct dynamic interaction networks connecting specified molecules, overlay experimental data from gene expression studies onto pathways using batch query tools with statistical enrichment analysis, and visualize both predefined expert-curated pathways and novel networks generated computationally from the interaction database. The resource was particularly valuable for cancer research, allowing identification of parallel signaling paths, elucidation of therapy resistance mechanisms, and integration of genomic abnormalities with pathway contexts. While the original NCI-hosted PID website is no longer actively maintained and was discontinued, the complete PID dataset has been preserved and remains accessible through Pathway Commons, NDEx Bioscience Network Exchange, and as BioPAX Level 2 format exports, ensuring continued availability of this valuable curated knowledge for the research community." ;
     dcterms:identifier "pid" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkn653> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -10983,6 +11285,7 @@ kgr:plant-reactome a schema1:DataSource ;
         <doi:10.1093/nar/gkw932>,
         <doi:10.1093/nar/gkz996> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:15368>,
         <NCBITaxon:2763>,
         <NCBITaxon:3055>,
@@ -11070,9 +11373,11 @@ kgr:po a schema1:Ontology ;
 
 kgr:pombase a schema1:Resource ;
     rdfs:label "PomBase" ;
+    dcterms:created "2025-03-25T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PomBase is a comprehensive database for the fission yeast Schizosaccharomyces pombe, providing structural and functional annotation, literature curation and access to large-scale data sets." ;
     dcterms:identifier "pombase" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:4896>,
         <NCBITaxon:4932> ;
     schema1:hasPart kgr:kg-monarch.graph,
@@ -11171,9 +11476,11 @@ kgr:preppi a schema1:DataSource ;
 
 kgr:primekg a schema1:KnowledgeGraph ;
     rdfs:label "PrimeKG" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality biomedical resources to describe 17,080 diseases with over 4 million relationships across ten major biological scales." ;
     dcterms:identifier "primekg" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:primekg.graph ;
     schema1:identifier "primekg" ;
@@ -11290,6 +11597,7 @@ kgr:propreo a schema1:Ontology ;
 
 kgr:protcid a schema1:DataSource ;
     rdfs:label "ProtCID" ;
+    dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Protein Common Interface Database (ProtCID) provides comprehensive, PDB-wide structural information on protein interactions, identifying and clustering interfaces observed in multiple crystal forms of homologous proteins." ;
     dcterms:hasVersion "3.0" ;
     dcterms:identifier "protcid" ;
@@ -11297,6 +11605,7 @@ kgr:protcid a schema1:DataSource ;
         <https://doi.org/10.1038/s41467-020-14301-4>,
         <https://doi.org/10.1093/nar/gkq1059> ;
     dcterms:license <https://dunbrack2.fccc.edu/ProtCID/About.aspx> ;
+    dcterms:modified "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:protcid.database,
         kgr:protcid.site,
         kgr:spoke.graph ;
@@ -11338,6 +11647,7 @@ kgr:proton a schema1:Ontology ;
     dcterms:hasVersion "3.0 Beta" ;
     dcterms:identifier "proton" ;
     dcterms:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:openbiodiv.ontology.ttl,
         kgr:proton.browser,
         kgr:proton.documentation,
@@ -11414,10 +11724,12 @@ kgr:psygenet a schema1:DataSource ;
 
 kgr:pubchem a schema1:DataSource ;
     rdfs:label "PubChem" ;
+    dcterms:created "2025-05-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PubChem is an open chemistry database that collects information on chemical structures, identifiers, chemical and physical properties, biological activities, patents, health, safety, toxicity data, and other information." ;
     dcterms:identifier "pubchem" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gky1033> ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:biomarkerkg.nodes.compound,
@@ -11515,10 +11827,12 @@ kgr:pubmedcentral a schema1:DataSource ;
 
 kgr:pubtator a schema1:DataSource ;
     rdfs:label "PubTator" ;
+    dcterms:created "2025-05-15T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PubTator 3.0 is an AI-powered biomedical literature resource that uses state-of-the-art AI techniques to provide semantic and relation searches for key biomedical entities like proteins, genetic variants, diseases and chemicals. It offers over one billion entity and relation annotations across approximately 36 million PubMed abstracts and 6 million full-text articles from the PMC open access subset, updated weekly." ;
     dcterms:identifier "pubtator" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae235> ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:gnbr.graph,
         kgr:pubtator.api,
@@ -11592,10 +11906,12 @@ kgr:rbo a schema1:Ontology ;
 
 kgr:rdbridge a schema1:KnowledgeGraph ;
     rdfs:label "RDBridge" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Rare Disease Bridge (RDBridge) offers search functions for genes, potential drugs, pathways, literature, and medical imaging data that will support mechanistic research, drug development, diagnosis, and treatment for rare diseases." ;
     dcterms:identifier "rdbridge" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btad440> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:rdbridge.graph,
         kgr:rdbridge.literaturedatabase,
@@ -11630,6 +11946,7 @@ kgr:rdp a schema1:DataSource ;
 
 kgr:reacto a schema1:Resource ;
     rdfs:label "Reactome Entity Ontology (REACTO)" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Representation of entities in Reactome" ;
     dcterms:identifier "reacto" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -11946,10 +12263,12 @@ kgr:rgd a schema1:DataSource ;
 
 kgr:rhea a schema1:DataSource ;
     rdfs:label "Rhea" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Rhea is an expert-curated knowledgebase of chemical and transport reactions of biological interest." ;
     dcterms:identifier "rhea" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkab1016> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:kg-microbe.graph.biomedical,
         kgr:kg-microbe.graph.biomedical-function,
         kgr:kg-microbe.graph.core,
@@ -12113,9 +12432,11 @@ kgr:ro a schema1:Ontology ;
 
 kgr:robokop a schema1:KnowledgeGraph ;
     rdfs:label "ROBOKOP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented Pathways) is an open-source biomedical knowledge graph system that enables complex queries over a large-scale integrated knowledge graph." ;
     dcterms:identifier "robokop" ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.robokopkg,
         kgr:automat.robokopplus,
         kgr:robokop.graph ;
@@ -12142,10 +12463,12 @@ kgr:rs a schema1:Ontology ;
 
 kgr:rtx-kg2 a schema1:KnowledgeGraph ;
     rdfs:label "RTX-KG2" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "RTX-KG2 is a comprehensive biomedical knowledge graph that integrates information from over 80 structured knowledge sources into a semantically standardized model, supporting translational biomedicine and the ARAX biomedical reasoning system." ;
     dcterms:identifier "rtx-kg2" ;
     dcterms:isReferencedBy <https://doi.org/10.1186/s12859-022-04932-3> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:rtx-kg2.code,
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
@@ -12163,8 +12486,10 @@ kgr:rtx-kg2 a schema1:KnowledgeGraph ;
 
 kgr:ruralkg a schema1:KnowledgeGraph ;
     rdfs:label "Rural Resilience KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience, connecting data about healthcare access, legal services, and community resources in rural areas." ;
     dcterms:identifier "ruralkg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ruralkg.sparql ;
     schema1:name "Rural Resilience KG" ;
     skos:inScheme "health",
@@ -12219,8 +12544,10 @@ kgr:sao a schema1:Ontology ;
 
 kgr:sawgraph a schema1:KnowledgeGraph ;
     rdfs:label "SAWGraph PFAS graph" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Safe Agricultural Products and Water Graph (SAWGraph) PFAS graph stores data on PFAS observations and releases, describing the samples, the geospatial features they were taken from, the sampled environmental media, the specific chemical substances and the measurement values observed." ;
     dcterms:identifier "sawgraph" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sawgraph.sparql ;
     schema1:name "SAWGraph PFAS graph" ;
     doap:repository <https://github.com/sawgraph> ;
@@ -12246,8 +12573,10 @@ kgr:sbo a schema1:Ontology ;
 
 kgr:scales a schema1:KnowledgeGraph ;
     rdfs:label "SCALES" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SCALES is an integrated justice platform to connect criminal justice data across data silos, enabling comprehensive analysis of court records, sentencing data, and legal outcomes." ;
     dcterms:identifier "scales" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:scales.sparql ;
     schema1:name "SCALES" ;
     skos:inScheme "social determinants" ;
@@ -12269,8 +12598,10 @@ kgr:scdo a schema1:Ontology ;
 
 kgr:scibite a schema1:Resource ;
     rdfs:label "SciBite" ;
+    dcterms:created "2025-03-10T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Data produced by SciBite" ;
     dcterms:identifier "scibite" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:scibite.hgnc ;
     schema1:identifier "scibite" ;
     schema1:name "SciBite" ;
@@ -12297,8 +12628,10 @@ kgr:sckan a schema1:DataSource ;
 
 kgr:securechainkg a schema1:KnowledgeGraph ;
     rdfs:label "SecureChain KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SecureChain is a knowledge graph for resilient, trustworthy, and secure software supply chains, providing structured data about software components, dependencies, vulnerabilities, and security practices." ;
     dcterms:identifier "securechainkg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:securechainkg.sparql ;
     schema1:name "SecureChain KG" ;
     skos:inScheme "information technology" ;
@@ -12322,6 +12655,7 @@ kgr:semapv a schema1:Ontology ;
 
 kgr:semmeddb a schema1:DataSource ;
     rdfs:label "Semantic MEDLINE Database (SemMedDB)" ;
+    dcterms:created "2025-05-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SemMedDB is a repository of semantic predications (subject-predicate-object triples) extracted from biomedical literature by SemRep, a natural language processing system. It contains over 130 million semantic predications extracted from more than 37 million PubMed citations, supporting biomedical knowledge discovery, literature-based discovery, and clinical applications." ;
     dcterms:identifier "semmeddb" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.jbi.2003.11.003>,
@@ -12329,6 +12663,7 @@ kgr:semmeddb a schema1:DataSource ;
         <https://doi.org/10.1186/1471-2105-12-486>,
         <https://doi.org/10.1186/s12859-020-3517-7> ;
     dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
+    dcterms:modified "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:epigraphdb.graph,
         kgr:rtx-kg2.graph.edges,
@@ -12351,8 +12686,10 @@ kgr:semmeddb a schema1:DataSource ;
 
 kgr:semopenalex a schema1:KnowledgeGraph ;
     rdfs:label "SemOpenAlex" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SemOpenAlex provides comprehensive information on scientific publications and related entities, offering a semantic layer over the OpenAlex scholarly database with linked data about papers, authors, institutions, and citations." ;
     dcterms:identifier "semopenalex" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:semopenalex.sparql ;
     schema1:name "SemOpenAlex" ;
     skos:inScheme "literature" ;
@@ -12407,6 +12744,7 @@ kgr:sepio a schema1:Ontology ;
 
 kgr:service-kp a schema1:KnowledgeGraph ;
     rdfs:label "Service KP" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider" ;
     dcterms:identifier "service-kp" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -12419,8 +12757,10 @@ kgr:service-kp a schema1:KnowledgeGraph ;
 
 kgr:sgd a schema1:DataSource ;
     rdfs:label "Saccharomyces Genome Database" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae." ;
     dcterms:identifier "sgd" ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:4932> ;
     schema1:hasPart kgr:genecards.model.organisms,
         kgr:rnacentral.api,
@@ -12444,10 +12784,12 @@ kgr:sgd a schema1:DataSource ;
 
 kgr:sibils a schema1:DataSource ;
     rdfs:label "SIBiLS" ;
+    dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval in biological literature, with customizable search in semantically enriched contents based on keywords and mapped biomedical entities from standardized vocabularies." ;
     dcterms:identifier "sibils" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkaa328> ;
     dcterms:license <https://creativecommons.org/licenses/by/3.0/ch/> ;
+    dcterms:modified "2025-12-07T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sibils.api.rest.fetch,
         kgr:sibils.api.rest.qa,
         kgr:sibils.api.rest.search,
@@ -12475,11 +12817,13 @@ kgr:sibo a schema1:Ontology ;
 
 kgr:sider a schema1:DataSource ;
     rdfs:label "SIDER" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SIDER (Side Effect Resource) contains information on marketed medicines and their recorded adverse drug reactions. The information is extracted from public documents and package inserts, including side effect frequency, drug and side effect classifications, and links to further information." ;
     dcterms:identifier "sider" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/msb.2009.98>,
         <https://doi.org/10.1093/nar/gkv1075> ;
     dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:bioteque.embeddings,
@@ -12572,12 +12916,14 @@ kgr:silva a schema1:DataSource ;
 
 kgr:skm a schema1:KnowledgeGraph ;
     rdfs:label "Stress Knowledge Map" ;
+    dcterms:created "2025-06-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A comprehensive knowledge graph resource for systems biology analysis of plant stress responses, containing mechanistic models and knowledge networks for plant stress signaling. It includes two knowledge graphs, the mechanistic Plant Stress Signalling model (PSS) and the Comprehensive Knowledge Network (CKN)." ;
     dcterms:hasVersion "1.0" ;
     dcterms:identifier "skm" ;
     dcterms:isReferencedBy <https://doi.org/10.1016/j.xplc.2024.100920> ;
     dcterms:language "en" ;
     dcterms:license <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:33090> ;
     schema1:hasPart kgr:skm.ckn.explorer,
         kgr:skm.ckn.v1.annotations,
@@ -12606,11 +12952,13 @@ kgr:skm a schema1:KnowledgeGraph ;
 
 kgr:skos a schema1:DataModel ;
     rdfs:label "SKOS" ;
+    dcterms:created "2025-06-25T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SKOS (Simple Knowledge Organization System) is a W3C recommendation designed for representation of thesauri, classification schemes, taxonomies, subject-heading systems, or any other type of structured controlled vocabulary." ;
     dcterms:hasVersion "SKOS Reference (August 18, 2009)" ;
     dcterms:identifier "skos" ;
     dcterms:isReferencedBy <doi:10.1016/j.websem.2009.06.001> ;
     dcterms:license <https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:chr.model.owl,
         kgr:clo.owl,
         kgr:edam.csv,
@@ -12631,6 +12979,7 @@ kgr:skos a schema1:DataModel ;
 
 kgr:sldb a schema1:KnowledgeGraph ;
     rdfs:label "sldb" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A graph of synthetic lethal interactions." ;
     dcterms:identifier "sldb" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -12750,9 +13099,11 @@ kgr:snodb a schema1:DataSource ;
 
 kgr:snomedct a schema1:Ontology ;
     rdfs:label "SNOMED CT" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the most comprehensive, multilingual clinical healthcare terminology in the world. It provides a standardized way to represent clinical phrases captured by clinicians and enables automatic interpretation of these terms. SNOMED CT includes more than 360,000 active concepts with unique meanings and formal logic-based definitions organized into hierarchies." ;
     dcterms:identifier "snomedct" ;
     dcterms:license <https://www.snomed.org/snomed-ct/get-snomed> ;
+    dcterms:modified "2026-02-18T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:athena.mappings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
@@ -12875,8 +13226,10 @@ kgr:so a schema1:Ontology ;
 
 kgr:sockg a schema1:KnowledgeGraph ;
     rdfs:label "SOC-KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets. It provides structured data about soil carbon measurements, agricultural practices, and environmental factors." ;
     dcterms:identifier "sockg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sockg.sparql ;
     schema1:name "SOC-KG" ;
     skos:inScheme "agriculture",
@@ -12897,8 +13250,10 @@ kgr:sopharm a schema1:Ontology ;
 
 kgr:spatialkg a schema1:KnowledgeGraph ;
     rdfs:label "SAWGraph Spatial KG" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The SAWGraph Spatial KG is part of the Safe Agricultural Products and Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the S2 grid as well as administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them for the 48 contiguous states in the U.S." ;
     dcterms:identifier "spatialkg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:spatialkg.sparql ;
     schema1:name "SAWGraph Spatial KG" ;
     skos:inScheme "environment" ;
@@ -12920,6 +13275,7 @@ kgr:spd a schema1:Ontology ;
 
 kgr:spoke a schema1:KnowledgeGraph ;
     rdfs:label "SPOKE" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Scalable Precision Medicine Open Knowledge Engine (SPOKE) is a comprehensive biomedical knowledge graph that connects diverse data from multiple domains to enable discovery and precision medicine applications." ;
     dcterms:hasVersion "2.0" ;
     dcterms:identifier "spoke" ;
@@ -12927,6 +13283,7 @@ kgr:spoke a schema1:KnowledgeGraph ;
         <https://doi.org/10.1093/bioinformatics/btad080>,
         <https://doi.org/10.7554/eLife.26726> ;
     dcterms:license <https://spoke.rbvi.ucsf.edu/docs/licenses.html> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:spoke.graph,
         kgr:spoke.neighborhood_explorer,
@@ -12946,8 +13303,10 @@ kgr:spoke a schema1:KnowledgeGraph ;
 
 kgr:spoke-genelab a schema1:KnowledgeGraph ;
     rdfs:label "SPOKE GeneLab" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The spoke-genelab KG complements the SPOKE Open Knowledge Network KG and is designed to integrate omics data from NASA's Open Science Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments." ;
     dcterms:identifier "spoke-genelab" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:spoke-genelab.sparql ;
     schema1:name "SPOKE GeneLab" ;
     doap:repository <https://github.com/BaranziniLab/spoke_genelab> ;
@@ -12958,8 +13317,10 @@ kgr:spoke-genelab a schema1:KnowledgeGraph ;
 
 kgr:sri-reference-kg a schema1:KnowledgeGraph ;
     rdfs:label "SRI-Reference KG" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Monarch Initiative’s SRI reference knowledge graph." ;
     dcterms:identifier "sri-reference-kg" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sri-reference-kg.graph ;
     schema1:identifier "sri-reference-kg" ;
     schema1:name "SRI-Reference KG" ;
@@ -13030,10 +13391,12 @@ kgr:stato a schema1:Ontology ;
 
 kgr:stellar a schema1:Resource ;
     rdfs:label "STELLAR" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "STELLAR is a geometric deep learning method for cell type discovery and identification in spatially resolved single-cell datasets. It automatically assigns cells to known cell types and discovers novel cell types by transferring annotations across different dissection regions, tissues, and donors." ;
     dcterms:identifier "stellar" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/s41592-022-01651-8> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2025-10-15T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:stellar.code,
         kgr:stellar.datasets,
         kgr:stellar.demo,
@@ -13075,11 +13438,13 @@ kgr:stitch a schema1:DataSource ;
 
 kgr:string a schema1:DataSource ;
     rdfs:label "STRING" ;
+    dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "STRING is a database of known and predicted protein-protein interactions. The interactions include direct (physical) and indirect (functional) associations derived from computational prediction, knowledge transfer between organisms, and interactions aggregated from other primary databases." ;
     dcterms:hasVersion "12.0" ;
     dcterms:identifier "string" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkac1000> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:aop-db.data,
         kgr:automat.stringdb,
         kgr:bioteque.embeddings,
@@ -13142,8 +13507,10 @@ kgr:string a schema1:DataSource ;
 
 kgr:sudokn a schema1:KnowledgeGraph ;
     rdfs:label "SUDOKN" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SUDOKN (Supply and Demand Open Knowledge Network) is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers (SMMs)." ;
     dcterms:identifier "sudokn" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sudokn.sparql ;
     schema1:name "SUDOKN" ;
     skos:inScheme "other" ;
@@ -13172,6 +13539,7 @@ kgr:suppkg a schema1:KnowledgeGraph ;
 
 kgr:swisslipid a schema1:DataSource ;
     rdfs:label "swisslipid" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SwissLipids is a knowledge resource for lipids and their biology." ;
     dcterms:identifier "swisslipid" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btv285> ;
@@ -13791,9 +14159,11 @@ kgr:txpo a schema1:Ontology ;
 
 kgr:ubergraph a schema1:KnowledgeGraph ;
     rdfs:label "Ubergraph" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph" ;
     dcterms:identifier "ubergraph" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.ubergraph,
         kgr:translator.ubergraph.graph,
         kgr:ubergraph.blazegraph.jnl,
@@ -13849,9 +14219,11 @@ kgr:uberon a schema1:Ontology ;
 
 kgr:ubkg a schema1:KnowledgeGraph ;
     rdfs:label "Unified Biomedical Knowledge Graph" ;
+    dcterms:created "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Unified Biomedical Knowledge Graph (UBKG) is a knowledge graph infrastructure that represents a set of interrelated concepts from biomedical ontologies and vocabularies. It combines information from the National Library of Medicine's Unified Medical Language System (UMLS) with sets of assertions from ontologies outside the UMLS to establish connections between different sets of assertions that can enable discovery of previously unknown relationships." ;
     dcterms:identifier "ubkg" ;
     dcterms:license <https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf> ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:petagraph.graph,
         kgr:ubkg.api,
         kgr:ubkg.csv,
@@ -13867,6 +14239,7 @@ kgr:ubkg a schema1:KnowledgeGraph ;
 
 kgr:uf-okn a schema1:KnowledgeGraph ;
     rdfs:label "UF-OKN" ;
+    dcterms:created "2025-08-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Urban Flooding Open Knowledge Network (UF-OKN) is an informational infrastructure built with knowledge graphs to connect urban infrastructure with hydrologic forecasts, delivering actionable, real-time and historical flood-risk information as Linked Data for exploration and app development." ;
     dcterms:identifier "uf-okn" ;
     dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
@@ -13880,11 +14253,13 @@ kgr:uf-okn a schema1:KnowledgeGraph ;
 
 kgr:ukbiobank a schema1:DataSource ;
     rdfs:label "UK Biobank" ;
+    dcterms:created "2025-06-27T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "UK Biobank is a large-scale biomedical database and research resource containing genetic, lifestyle and health information from half a million UK participants, designed to improve the prevention, diagnosis and treatment of a wide range of serious and life-threatening illnesses." ;
     dcterms:identifier "ukbiobank" ;
     dcterms:isReferencedBy <doi:10.1038/s41586-018-0579-z>,
         <doi:10.1371/journal.pmed.1001779> ;
     dcterms:license <https://www.ukbiobank.ac.uk/terms-and-conditions/> ;
+    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:disgenet.data,
         kgr:epigraphdb.graph,
@@ -14016,9 +14391,11 @@ kgr:unii a schema1:DataSource ;
 
 kgr:uniprot a schema1:DataSource ;
     rdfs:label "uniprot" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "UniProt Protein Knowledge Base" ;
     dcterms:identifier "uniprot" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:10116>,
         <NCBITaxon:3702>,
@@ -14400,8 +14777,10 @@ kgr:wikipathways a schema1:DataSource ;
 
 kgr:wildlifekn a schema1:KnowledgeGraph ;
     rdfs:label "Wildlife-KN" ;
+    dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Wildlife-KN seeks to create a comprehensive, integrative knowledge network for the management of wildlife in the context of climate change, connecting species data, habitat information, and conservation strategies." ;
     dcterms:identifier "wildlifekn" ;
+    dcterms:modified "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:131567> ;
     schema1:hasPart kgr:wildlifekn.sparql ;
     schema1:name "Wildlife-KN" ;
@@ -14593,9 +14972,11 @@ kgr:zfa a schema1:Ontology ;
 
 kgr:zfin a schema1:DataSource ;
     rdfs:label "ZFIN" ;
+    dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Zebrafish Information Network, including the Zebrafish Anatomical Ontology" ;
     dcterms:identifier "zfin" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:7955> ;
     schema1:hasPart kgr:biogrid.identifiers,
         kgr:genecards.model.organisms,
@@ -18327,6 +18708,7 @@ kgr:gbif a schema1:DataSource,
     dcterms:identifier "gbif" ;
     dcterms:isReferencedBy <doi:10.1371/journal.pone.0102623> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:gbif.api,
         kgr:gbif.csv-download,
@@ -23544,6 +23926,21 @@ kgr:patric.web a schema1:GraphicalInterface ;
     rdfs:label "PATRIC/BV-BRC Web Portal" ;
     dcterms:description "Web portal for bacterial genomics (now at BV-BRC)" ;
     schema1:url <https://www.bv-brc.org/> .
+
+kgr:pbpko.json a schema1:OntologyProduct ;
+    rdfs:label "pbpko.json" ;
+    dcterms:description "Physiologically-Based Pharmacokinetic Ontology in JSON format" ;
+    schema1:url <http://purl.obolibrary.org/obo/pbpko.json> .
+
+kgr:pbpko.obo a schema1:OntologyProduct ;
+    rdfs:label "pbpko.obo" ;
+    dcterms:description "Physiologically-Based Pharmacokinetic Ontology in OBO format" ;
+    schema1:url <http://purl.obolibrary.org/obo/pbpko.obo> .
+
+kgr:pbpko.owl a schema1:OntologyProduct ;
+    rdfs:label "pbpko.owl" ;
+    dcterms:description "Physiologically-Based Pharmacokinetic Ontology in OWL format" ;
+    schema1:url <http://purl.obolibrary.org/obo/pbpko.owl> .
 
 kgr:pcl-base.json a schema1:OntologyProduct ;
     rdfs:label "pcl-base.json" ;

@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: hgnc@genenames.org
   label: HUGO Gene Nomenclature Committee
+creation_date: '2025-03-09T00:00:00Z'
 description: HGNC is the HUGO Gene Nomenclature Committee. It is a resource for approved
   human gene names.
 domains:
@@ -15,6 +16,7 @@ fairsharing_id: FAIRsharing.amcv1e
 homepage_url: https://www.genenames.org/
 id: hgnc
 infores_id: hgnc
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -142,9 +144,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -699,9 +701,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate

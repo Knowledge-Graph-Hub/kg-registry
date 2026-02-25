@@ -4,6 +4,7 @@ category: DataSource
 contacts:
 - category: Organization
   label: Rhea Team
+creation_date: '2025-03-09T00:00:00Z'
 description: Rhea is an expert-curated knowledgebase of chemical and transport reactions
   of biological interest.
 domains:
@@ -11,6 +12,7 @@ domains:
 homepage_url: https://www.rhea-db.org/
 id: rhea
 infores_id: rhea
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -47,7 +49,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -56,7 +58,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
@@ -74,7 +76,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -83,7 +85,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM

@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: Ontology
+creation_date: '2025-12-11T00:00:00Z'
 description: FABIO (Functional Requirements for Bibliographic Records Object) is a
   comprehensive ontology for describing bibliographic resources and their properties.
   It extends the FRBR (Functional Requirements for Bibliographic Records) model into
@@ -12,6 +13,7 @@ domains:
 - general
 homepage_url: https://sparontologies.github.io/fabio/current/fabio.html
 id: fabio
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: FABIO
 products:
@@ -49,9 +51,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-20: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 - category: OntologyProduct
   description: OpenBioDiv-O, the OpenBiodiv Ontology

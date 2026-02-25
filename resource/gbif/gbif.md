@@ -19,6 +19,7 @@ domains: []
 homepage_url: https://www.gbif.org/
 id: gbif
 infores_id: gbif
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -57,11 +58,9 @@ products:
   name: GBIF Darwin Core Archive Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -71,11 +70,9 @@ products:
   name: GBIF Simple CSV Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
@@ -93,11 +90,9 @@ products:
   name: GBIF Integrated Publishing Toolkit (IPT)
   product_url: https://www.gbif.org/ipt
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 publications:
 - authors:

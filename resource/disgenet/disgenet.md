@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: info@disgenet.com
   label: MedBioinformatics Solutions SL
+creation_date: '2025-06-04T00:00:00Z'
 description: DisGeNET is the world's largest and most extensive gene-disease association
   (GDA) network, integrating data from expert-curated repositories, GWAS catalogs,
   animal models, and scientific literature. It contains gene-disease associations,
@@ -22,6 +23,7 @@ domains:
 homepage_url: https://www.disgenet.com/
 id: disgenet
 infores_id: disgenet
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.disgenet.com/Legal
@@ -586,9 +588,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 publications:
 - authors:

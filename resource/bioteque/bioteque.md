@@ -105,6 +105,8 @@ publications:
     embeddings in the Bioteque
   year: '2022'
 repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-09-10T00:00:00Z'
 ---
 ## Bioteque Knowledge Graph
 

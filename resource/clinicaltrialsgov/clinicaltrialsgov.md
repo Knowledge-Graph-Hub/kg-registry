@@ -15,6 +15,7 @@ contacts:
   - contact_type: email
     value: register@clinicaltrials.gov
   label: ClinicalTrials.gov Help Desk
+creation_date: '2025-05-28T00:00:00Z'
 description: ClinicalTrials.gov is a database of privately and publicly funded clinical
   studies conducted around the world, maintained by the National Library of Medicine
   (NLM) at the National Institutes of Health (NIH). The registry contains information
@@ -35,6 +36,7 @@ fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov
 infores_id: clinicaltrials
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions
@@ -191,13 +193,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -210,9 +212,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial

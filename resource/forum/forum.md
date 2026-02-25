@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+creation_date: '2025-12-11T00:00:00Z'
 description: FORUM is a Knowledge Graph providing a semantic representation of relations
   between chemicals and biomedical concepts. It is built from a federation of life
   science databases and scientific literature repositories. FORUM supports metabolomics
@@ -11,6 +12,7 @@ domains:
 - biomedical
 homepage_url: https://forum-webapp.semantic-metabolomics.fr/
 id: forum
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: FORUM
 products:
@@ -51,11 +53,9 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ FTP error_ timed
-    out
   - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-20: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-24: FTP error: timed
     out'
 publications:
 - authors:

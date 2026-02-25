@@ -871,5 +871,7 @@ products:
   secondary_source:
   - translator
 repository: https://data.pantherdb.org/ftp/
+creation_date: '2025-03-25T00:00:00Z'
+last_modified_date: '2026-01-23T00:00:00Z'
 ---
 PANTHER

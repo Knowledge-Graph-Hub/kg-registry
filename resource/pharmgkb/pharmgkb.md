@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: feedback@pharmgkb.org
   label: PharmGKB
+creation_date: '2025-05-01T00:00:00Z'
 description: PharmGKB collects, curates and disseminates knowledge about clinically
   actionable gene-drug associations and genotype-phenotype relationships.
 domains:
@@ -18,6 +19,7 @@ domains:
 homepage_url: https://www.pharmgkb.org/
 id: pharmgkb
 infores_id: pharmgkb
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -494,9 +496,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

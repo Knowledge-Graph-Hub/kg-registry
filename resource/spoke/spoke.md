@@ -140,6 +140,8 @@ version: '2.0'
 infores_id: spoke
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 
 SPOKE (Scalable Precision Medicine Open Knowledge Engine) is a comprehensive biomedical knowledge graph developed at the University of California, San Francisco (UCSF). It integrates data from over 30 public databases to create a rich network of biomedical relationships. 

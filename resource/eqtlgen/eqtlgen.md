@@ -137,6 +137,7 @@ publications:
     and polygenic scores that regulate blood gene expression
   year: '2021'
 repository: https://github.com/eqtlgen
+creation_date: '2025-09-03T00:00:00Z'
 ---
 # eQTLGen Consortium
 

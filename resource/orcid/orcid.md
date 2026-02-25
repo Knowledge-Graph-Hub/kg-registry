@@ -45,6 +45,7 @@ products:
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
+creation_date: '2025-03-09T00:00:00Z'
 ---
 
 ORCID is a free, unique, persistent identifier (PID) for individuals

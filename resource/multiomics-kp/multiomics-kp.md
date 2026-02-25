@@ -33,6 +33,7 @@ products:
   original_source:
   - multiomics-kp
   product_url: https://github.com/PriceLab/DOCKET
+creation_date: '2025-03-09T00:00:00Z'
 ---
 A Translator Knowledge Provider incorporating multiomics data.
 

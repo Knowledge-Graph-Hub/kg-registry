@@ -27,6 +27,8 @@ products:
   product_file_size: 230046094
   product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 repository: ''
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 The Monarch Initiative’s SRI reference knowledge graph.
 

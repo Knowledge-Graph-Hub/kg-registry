@@ -9,6 +9,7 @@ contacts:
   - contact_type: url
     value: https://string-db.org/
   label: STRING Consortium
+creation_date: '2025-06-04T00:00:00Z'
 description: STRING is a database of known and predicted protein-protein interactions.
   The interactions include direct (physical) and indirect (functional) associations
   derived from computational prediction, knowledge transfer between organisms, and
@@ -20,6 +21,7 @@ domains:
 homepage_url: https://string-db.org/
 id: string
 infores_id: string
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1772,9 +1774,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

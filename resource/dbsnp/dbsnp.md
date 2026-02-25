@@ -10,6 +10,7 @@ contacts:
     value: https://www.ncbi.nlm.nih.gov/home/about/contact/
   id: ncbi
   label: National Center for Biotechnology Information (NCBI)
+creation_date: '2025-05-04T00:00:00Z'
 description: dbSNP contains human single nucleotide variations, microsatellites, and
   small-scale insertions and deletions along with publication, population frequency,
   molecular consequence, and genomic and RefSeq mapping information for both common
@@ -20,6 +21,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/snp/
 id: dbsnp
 infores_id: dbsnp
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -175,9 +177,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 publications:
 - authors:

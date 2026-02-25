@@ -50,6 +50,7 @@ products:
   product_url: https://github.com/ncats/RD-Clust/tree/main/data/raw
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-07-11T00:00:00Z'
 ---
 # NCATS GARD KG
 

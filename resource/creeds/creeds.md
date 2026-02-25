@@ -128,6 +128,8 @@ publications:
   title: Extraction and analysis of signatures from the Gene Expression Omnibus by
     the crowd
   year: '2016'
+creation_date: '2025-07-08T00:00:00Z'
+last_modified_date: '2025-09-10T00:00:00Z'
 ---
 # CREEDS: Crowd Extracted Expression of Differential Signatures
 

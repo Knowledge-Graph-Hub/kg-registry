@@ -46,6 +46,7 @@ products:
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Data-Provider
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-03-09T00:00:00Z'
 ---
 A Translator Knowledge Provider integrating clinical data.
 

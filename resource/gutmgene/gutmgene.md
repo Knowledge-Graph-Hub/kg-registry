@@ -77,5 +77,7 @@ publications:
   year: '2025'
 taxon:
 - NCBITaxon:2
+creation_date: '2025-04-13T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 GutMGene

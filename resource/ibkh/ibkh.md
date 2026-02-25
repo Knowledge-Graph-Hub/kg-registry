@@ -79,6 +79,8 @@ publications:
   year: '2023'
 synonyms:
 - iBKH
+creation_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 The integrative Biomedical Knowledge Hub (iBKH) is a comprehensive biomedical knowledge graph created by harmonizing and integrating information from diverse biomedical resources. It provides an efficient and effective way to manage abundant knowledge in biomedical and life science.
 

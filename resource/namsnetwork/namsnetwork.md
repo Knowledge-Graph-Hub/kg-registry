@@ -29,6 +29,8 @@ products:
   id: namsnetwork.portal
   name: NAMs Network Portal
   product_url: https://nams.network/
+creation_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 NAMs Network
 

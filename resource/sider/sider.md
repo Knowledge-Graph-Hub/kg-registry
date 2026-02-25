@@ -618,6 +618,8 @@ publications:
   year: '2010'
 warnings:
 - The last release for this resource was on October 21, 2015.
+creation_date: '2025-05-29T00:00:00Z'
+last_modified_date: '2026-02-18T00:00:00Z'
 ---
 SIDER (Side Effect Resource) is a database of drugs and their side effects, which was developed at the European Molecular Biology Laboratory (EMBL). The database contains information extracted from public documents and package inserts, providing valuable data on marketed medicines and their recorded adverse drug reactions.
 

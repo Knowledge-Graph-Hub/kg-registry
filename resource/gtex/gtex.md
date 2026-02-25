@@ -9,6 +9,7 @@ contacts:
   - contact_type: url
     value: https://www.gtexportal.org/home/contact
   label: GTEx Consortium
+creation_date: '2025-06-04T00:00:00Z'
 description: The Genotype-Tissue Expression (GTEx) project provides a comprehensive
   resource to study tissue-specific gene expression and regulation. Samples were collected
   from 54 non-diseased tissue sites across nearly 1000 individuals, primarily for
@@ -20,6 +21,7 @@ domains:
 homepage_url: https://www.gtexportal.org/home/
 id: gtex
 infores_id: gtex
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: GTEx
 products:
@@ -292,9 +294,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 publications:
 - authors:

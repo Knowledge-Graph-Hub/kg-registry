@@ -7,6 +7,7 @@ contacts:
   - contact_type: url
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
+creation_date: '2025-06-04T00:00:00Z'
 description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
   expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
   relationships and the molecular basis of disease.
@@ -17,6 +18,7 @@ domains:
 homepage_url: https://www.omim.org/
 id: omim
 infores_id: omim
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.omim.org/help/agreement
@@ -149,9 +151,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
@@ -169,9 +171,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

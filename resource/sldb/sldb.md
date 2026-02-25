@@ -41,6 +41,7 @@ products:
   original_source:
   - sldb
   product_url: https://github.com/monarch-initiative/SLDBGen/releases
+creation_date: '2025-03-09T00:00:00Z'
 ---
 A graph of synthetic lethal interactions.
 

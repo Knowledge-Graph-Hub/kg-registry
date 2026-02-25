@@ -293,6 +293,8 @@ publications:
 repository: https://github.com/opentargets
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-05-29T00:00:00Z'
+last_modified_date: '2026-01-06T00:00:00Z'
 ---
 ## Open Targets: Delivering Systematic Drug Target Selection
 

@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: agbase@email.arizona.edu
   label: CGNC
+creation_date: '2025-03-24T00:00:00Z'
 description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international
   group of researchers interested in providing standardized gene nomenclature for
   chicken genes.
@@ -14,6 +15,7 @@ domains:
 - organisms
 homepage_url: http://birdgenenames.org/cgnc/
 id: cgnc
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: CGNC
 products:
@@ -29,11 +31,9 @@ products:
   secondary_source:
   - cgnc
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: Product
   description: cgnc OBO

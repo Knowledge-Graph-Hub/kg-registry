@@ -228,4 +228,6 @@ publications:
 infores_id: civic
 taxon:
 - NCBITaxon:9606
+creation_date: '2025-05-29T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---

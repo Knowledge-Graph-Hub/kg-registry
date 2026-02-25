@@ -29,7 +29,7 @@ products:
   format: owl
   id: ogg.owl
   name: ogg.owl
-  product_file_size: 0
+  product_file_size: 127956460
   product_url: http://purl.obolibrary.org/obo/ogg.owl
 repository: https://bitbucket.org/hegroup/ogg
 ---

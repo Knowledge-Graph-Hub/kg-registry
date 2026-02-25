@@ -4,6 +4,7 @@ category: DataSource
 contacts:
 - category: Organization
   label: Comparative Toxicogenomics Database
+creation_date: '2025-03-09T00:00:00Z'
 description: CTD is a robust, publicly available database that aims to advance understanding
   about how environmental exposures affect human health.
 domains:
@@ -11,6 +12,7 @@ domains:
 homepage_url: https://ctdbase.org/
 id: ctd
 infores_id: ctd
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ctdbase.org/about/legal.jsp
@@ -1142,9 +1144,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-24: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

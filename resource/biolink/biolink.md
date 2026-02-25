@@ -428,5 +428,7 @@ publications:
     and translational science'''
   year: '2022'
 repository: https://github.com/biolink/biolink-model/
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-10-06T00:00:00Z'
 ---
 Entity and association taxonomy and datamodel for life-sciences data.

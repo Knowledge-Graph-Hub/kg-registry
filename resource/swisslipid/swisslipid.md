@@ -117,5 +117,6 @@ publications:
   title: The SwissLipids knowledgebase for lipid biology
   year: '2015'
 repository: https://www.swisslipids.org/
+creation_date: '2025-03-09T00:00:00Z'
 ---
 SwissLipids is a knowledge resource for lipids and their biology.

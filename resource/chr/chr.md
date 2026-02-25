@@ -41,5 +41,7 @@ products:
   secondary_source:
   - chr
 repository: https://github.com/monarch-initiative/monochrom/
+creation_date: '2025-03-09T00:00:00Z'
+last_modified_date: '2025-10-06T00:00:00Z'
 ---
 Automatic translation of UCSC chromosome bands to OWL classes

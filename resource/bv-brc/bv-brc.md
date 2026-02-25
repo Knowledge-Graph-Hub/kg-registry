@@ -153,6 +153,8 @@ repository: https://github.com/BV-BRC
 taxon:
 - NCBITaxon:2
 - NCBITaxon:9606
+creation_date: '2025-05-28T00:00:00Z'
+last_modified_date: '2025-12-13T00:00:00Z'
 ---
 ## Overview
 
