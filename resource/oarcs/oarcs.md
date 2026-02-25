@@ -12,11 +12,13 @@ contacts:
     value: mjy
   label: Matt Yoder
   orcid: 0000-0002-5640-5491
+creation_date: '2025-09-29T00:00:00Z'
 description: OArCS is an ontology describing the Arthropod ciruclatory system.
 domains:
 - anatomy and development
 homepage_url: https://github.com/aszool/oarcs
 id: oarcs
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 27840
   product_url: http://purl.obolibrary.org/obo/oarcs.owl
 repository: https://github.com/aszool/oarcs
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

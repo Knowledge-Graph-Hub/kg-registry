@@ -4,6 +4,7 @@ category: Ontology
 collection:
 - obo-foundry
 contacts: []
+creation_date: '2025-09-29T00:00:00Z'
 description: The Mathematical Modelling Ontology (MAMO) is a classification of the
   types of mathematical models used mostly in the life sciences, their variables,
   relationships and other relevant features.
@@ -11,6 +12,7 @@ domains:
 - biological systems
 homepage_url: http://sourceforge.net/p/mamo-ontology/wiki/Home/
 id: mamo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://opensource.org/licenses/Artistic-2.0
@@ -25,8 +27,6 @@ products:
   product_file_size: 204902
   product_url: http://purl.obolibrary.org/obo/mamo.owl
 repository: http://sourceforge.net/p/mamo-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

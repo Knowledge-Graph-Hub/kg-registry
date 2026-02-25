@@ -12,12 +12,14 @@ contacts:
     value: jrsjrs
   label: Jennifer Smith
   orcid: 0000-0002-6443-9376
+creation_date: '2025-09-29T00:00:00Z'
 description: A representation of the variety of methods used to make clinical and
   phenotype measurements.
 domains:
 - biomedical
 homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 id: mmo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 503578
   product_url: http://purl.obolibrary.org/obo/mmo.obo
 repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

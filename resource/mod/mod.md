@@ -12,12 +12,14 @@ contacts:
     value: pabinz
   label: Pierre-Alain Binz
   orcid: 0000-0002-0045-7698
+creation_date: '2025-08-12T00:00:00Z'
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical
   modifications
 domains:
 - chemistry and biochemistry
 homepage_url: http://www.psidev.info/MOD
 id: mod
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -132,8 +134,6 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://github.com/HUPO-PSI/psi-mod-CV
-creation_date: '2025-08-12T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

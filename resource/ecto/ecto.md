@@ -12,6 +12,7 @@ contacts:
     value: diatomsRcool
   label: Anne Thessen
   orcid: 0000-0002-2908-3327
+creation_date: '2025-06-25T00:00:00Z'
 description: ECTO describes exposures to experimental treatments of plants and model
   organisms (e.g. exposures to modification of diet, lighting levels, temperature);
   exposures of humans or any other organisms to stressors through a variety of routes,
@@ -25,6 +26,7 @@ domains:
 homepage_url: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 id: ecto
 infores_id: ecto
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -187,8 +189,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

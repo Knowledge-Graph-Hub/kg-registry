@@ -12,6 +12,7 @@ contacts:
     value: amalik01
   label: Adnan Malik
   orcid: 0000-0001-8123-5351
+creation_date: '2025-03-18T00:00:00Z'
 description: A structured classification of molecular entities of biological interest
   focusing on 'small' chemical compounds.
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
 infores_id: chebi
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -837,9 +839,9 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2026-02-25: FTP error: timed
     out'
@@ -1090,8 +1092,6 @@ products:
   - 1.0.2
   - '1.0'
 repository: https://github.com/ebi-chebi/ChEBI
-creation_date: '2025-03-18T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

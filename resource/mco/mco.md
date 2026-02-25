@@ -12,11 +12,13 @@ contacts:
     value: citmejia
   label: Citlalli Mej a-Almonte
   orcid: 0000-0002-0142-5591
+creation_date: '2025-09-29T00:00:00Z'
 description: Microbial Conditions Ontology is an ontology...
 domains:
 - biomedical
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -39,8 +41,6 @@ products:
   product_file_size: 409757
   product_url: http://purl.obolibrary.org/obo/mco.obo
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

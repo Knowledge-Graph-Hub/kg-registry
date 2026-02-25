@@ -12,12 +12,14 @@ contacts:
     value: pcastellanoescuder
   label: Pol Castellano Escuder
   orcid: 0000-0001-6466-877X
+creation_date: '2025-09-29T00:00:00Z'
 description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake
   data and associate it with metabolomic data
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 id: fobi
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -35,8 +37,6 @@ products:
   product_file_size: 118923
   product_url: http://purl.obolibrary.org/obo/fobi.owl
 repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

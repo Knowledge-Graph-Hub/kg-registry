@@ -12,12 +12,14 @@ contacts:
     value: pbuttigieg
   label: Pier Luigi Buttigieg
   orcid: 0000-0002-4366-3088
+creation_date: '2025-09-29T00:00:00Z'
 description: Ecocore is a community ontology for the concise and controlled description
   of ecological traits of organisms.
 domains:
 - environment
 homepage_url: https://github.com/EcologicalSemantics/ecocore
 id: ecocore
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 834439
   product_url: http://purl.obolibrary.org/obo/ecocore.obo
 repository: https://github.com/EcologicalSemantics/ecocore
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

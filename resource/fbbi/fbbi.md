@@ -12,12 +12,14 @@ contacts:
     value: wawong
   label: Willy Wong
   orcid: 0000-0002-8841-5870
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of sample preparation, visualization
   and imaging methods used in biomedical research.
 domains:
 - biomedical
 homepage_url: http://cellimagelibrary.org/
 id: fbbi
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 630985
   product_url: http://purl.obolibrary.org/obo/fbbi.owl
 repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

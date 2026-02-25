@@ -12,11 +12,13 @@ contacts:
     value: fbastian
   label: Fr d ric Bastian
   orcid: 0000-0002-9415-5104
+creation_date: '2025-09-29T00:00:00Z'
 description: Life cycle stages for Platynereis dumerilii
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
 id: pdumdv
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -39,8 +41,6 @@ products:
   product_file_size: 4411
   product_url: http://purl.obolibrary.org/obo/pdumdv.obo
 repository: https://github.com/obophenotype/developmental-stage-ontologies
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

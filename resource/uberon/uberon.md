@@ -12,6 +12,7 @@ contacts:
     value: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+creation_date: '2025-05-04T00:00:00Z'
 description: An integrated cross-species anatomy ontology covering animals and bridging
   multiple species-specific ontologies
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: http://uberon.org
 id: uberon
 infores_id: uberon
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -904,8 +906,6 @@ products:
 repository: https://github.com/obophenotype/uberon
 taxon:
 - NCBITaxon:33208
-creation_date: '2025-05-04T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

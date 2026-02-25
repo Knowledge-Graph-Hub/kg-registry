@@ -12,12 +12,14 @@ contacts:
     value: ramonawalls
   label: Ramona Walls
   orcid: 0000-0001-8815-0078
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to support the interoperability of biodiversity data, including
   data on museum collections, environmental/metagenomic samples, and ecological surveys.
 domains:
 - biological systems
 homepage_url: https://github.com/BiodiversityOntologies/bco
 id: bco
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 108849
   product_url: http://purl.obolibrary.org/obo/bco.owl
 repository: https://github.com/BiodiversityOntologies/bco
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

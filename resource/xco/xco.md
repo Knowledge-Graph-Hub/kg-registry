@@ -12,12 +12,14 @@ contacts:
     value: jrsjrs
   label: Jennifer Smith
   orcid: 0000-0002-6443-9376
+creation_date: '2025-09-29T00:00:00Z'
 description: Conditions under which physiological and morphological measurements are
   made both in the clinic and in studies involving humans or model organisms.
 domains:
 - biomedical
 homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 id: xco
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 1089898
   product_url: http://purl.obolibrary.org/obo/xco.obo
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

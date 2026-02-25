@@ -12,11 +12,13 @@ contacts:
     value: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
+creation_date: '2025-09-29T00:00:00Z'
 description: A reference ontology for parasite life cycle stages.
 domains:
 - biological systems
 homepage_url: https://github.com/OPL-ontology/OPL
 id: opl
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 75624
   product_url: http://purl.obolibrary.org/obo/opl.owl
 repository: https://github.com/OPL-ontology/OPL
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

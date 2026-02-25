@@ -12,6 +12,7 @@ contacts:
     value: edwardsnj
   label: Nathan Edwards
   orcid: 0000-0001-5168-3196
+creation_date: '2025-09-29T00:00:00Z'
 description: GlyTouCan provides stable accessions for glycans described at varyious
   degrees of characterization, including compositions (no linkage) and topologies
   (no carbon bond positions or anomeric configurations). GNOme organizes these stable
@@ -21,6 +22,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://gnome.glyomics.org/
 id: gno
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -52,8 +54,6 @@ products:
   product_file_size: 358051529
   product_url: http://purl.obolibrary.org/obo/gno.json
 repository: https://github.com/glygen-glycan-data/GNOme
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

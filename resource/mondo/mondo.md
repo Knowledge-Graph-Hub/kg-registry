@@ -12,6 +12,7 @@ contacts:
     value: sabrinatoro
   label: Sabrina Toro
   orcid: 0000-0002-4142-7153
+creation_date: '2025-04-22T00:00:00Z'
 description: A global community effort to harmonize multiple disease resources to
   yield a coherent merged ontology.
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: https://monarch-initiative.github.io/mondo
 id: mondo
 infores_id: mondo
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -794,8 +796,6 @@ products:
 repository: https://github.com/monarch-initiative/mondo
 taxon:
 - NCBITaxon:33208
-creation_date: '2025-04-22T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

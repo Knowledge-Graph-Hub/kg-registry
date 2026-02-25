@@ -12,11 +12,13 @@ contacts:
     value: gthayman
   label: G. Thomas Hayman
   orcid: 0000-0002-9553-7227
+creation_date: '2025-08-20T00:00:00Z'
 description: A controlled vocabulary for annotating gene products to pathways.
 domains:
 - biological systems
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: pw
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -163,8 +165,6 @@ products:
   secondary_source:
   - rna-kg
 repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
-creation_date: '2025-08-20T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

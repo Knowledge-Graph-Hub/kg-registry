@@ -481,7 +481,7 @@ products:
   name: clinicaltrials OBO
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -490,7 +490,7 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b61b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -504,7 +504,7 @@ products:
   name: clinicaltrials OWL
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -513,7 +513,7 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b6ba0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -527,7 +527,7 @@ products:
   name: clinicaltrials OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -536,7 +536,7 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b72f0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -947,7 +947,7 @@ products:
   name: gtdb OBO
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -956,7 +956,7 @@ products:
     url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1295,11 +1295,11 @@ products:
   name: mesh OWL
   product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1313,7 +1313,7 @@ products:
   name: mesh OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -1327,7 +1327,7 @@ products:
     url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1341,7 +1341,7 @@ products:
   name: mgi OBO
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -1350,7 +1350,7 @@ products:
     url_ /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e3289a20>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1364,11 +1364,11 @@ products:
   name: mgi OWL
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1382,7 +1382,7 @@ products:
   name: mgi OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -1396,7 +1396,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1530,7 +1530,7 @@ products:
   name: msigdb OBO
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -1539,7 +1539,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1553,11 +1553,11 @@ products:
   name: msigdb OWL
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1571,7 +1571,7 @@ products:
   name: msigdb OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -1580,7 +1580,7 @@ products:
     url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1641,7 +1641,7 @@ products:
   name: nihreporter.project OBO
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -1650,7 +1650,7 @@ products:
     url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.obo (Caused
     by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a9990>_
     Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1661,11 +1661,11 @@ products:
   name: nihreporter.project OWL
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1676,7 +1676,7 @@ products:
   name: nihreporter.project OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -1685,7 +1685,7 @@ products:
     Failed to establish a new connection_ [Errno 101] Network is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1839,7 +1839,7 @@ products:
   name: pathbank OBO
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -1853,7 +1853,7 @@ products:
     url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1867,11 +1867,11 @@ products:
   name: pathbank OWL
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -1885,11 +1885,11 @@ products:
   name: pathbank OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2300,7 +2300,7 @@ products:
   name: reactome OWL
   product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2314,7 +2314,7 @@ products:
     url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2328,7 +2328,7 @@ products:
   name: reactome OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2342,7 +2342,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2414,7 +2414,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2423,7 +2423,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2441,7 +2441,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2450,7 +2450,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2493,11 +2493,11 @@ products:
   name: ror OWL
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2511,7 +2511,7 @@ products:
   name: ror OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2520,7 +2520,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2604,7 +2604,7 @@ products:
   name: slm OBO
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2613,7 +2613,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2627,7 +2627,7 @@ products:
   name: slm OWL
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2636,7 +2636,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2650,7 +2650,7 @@ products:
   name: slm OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2664,7 +2664,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2709,7 +2709,7 @@ products:
   name: uniprot OBO
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -2718,7 +2718,7 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e328a800>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2732,7 +2732,7 @@ products:
   name: uniprot OWL
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -2741,7 +2741,7 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2755,7 +2755,7 @@ products:
   name: uniprot OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -2769,7 +2769,7 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2881,7 +2881,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -2895,7 +2895,7 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
@@ -2913,7 +2913,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -2922,7 +2922,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'

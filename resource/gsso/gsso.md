@@ -12,6 +12,7 @@ contacts:
     value: Superraptor
   label: Clair Kronk
   orcid: 0000-0001-8397-8810
+creation_date: '2025-09-29T00:00:00Z'
 description: The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for
   annotating interdisciplinary information concerning gender, sex, and sexual orientation
   for primary usage in the biomedical and adjacent sciences.
@@ -19,6 +20,7 @@ domains:
 - biological systems
 homepage_url: https://gsso.research.cchmc.org/
 id: gsso
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -47,8 +49,6 @@ products:
   product_file_size: 1894658
   product_url: http://purl.obolibrary.org/obo/gsso.json
 repository: https://github.com/Superraptor/GSSO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

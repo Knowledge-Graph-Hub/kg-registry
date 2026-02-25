@@ -9,11 +9,13 @@ contacts:
   - contact_type: email
     value: dsonensh@odu.edu
   label: Daniel Sonenshine
+creation_date: '2025-09-29T00:00:00Z'
 description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
 domains:
 - anatomy and development
 homepage_url: https://www.vectorbase.org/ontology-browser
 id: tads
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,8 +40,6 @@ products:
 repository: https://github.com/VEuPathDB-ontology/TADS
 taxon:
 - NCBITaxon:6939
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

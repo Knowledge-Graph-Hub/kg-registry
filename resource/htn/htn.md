@@ -12,12 +12,14 @@ contacts:
     value: aellenhicks
   label: Amanda Hicks
   orcid: 0000-0002-1795-5570
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for representing clinical data about hypertension, intended
   to support classification of patients according to various diagnostic guidelines
 domains:
 - biomedical
 homepage_url: https://github.com/aellenhicks/htn_owl
 id: htn
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 140471
   product_url: http://purl.obolibrary.org/obo/htn.owl
 repository: https://github.com/aellenhicks/htn_owl
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

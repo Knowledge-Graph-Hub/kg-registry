@@ -12,12 +12,14 @@ contacts:
     value: nataled
   label: Darren Natale
   orcid: 0000-0001-5809-9523
+creation_date: '2025-06-25T00:00:00Z'
 description: An ontological representation of protein-related entities
 domains:
 - chemistry and biochemistry
 homepage_url: http://proconsortium.org
 id: pr
 infores_id: pr
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -368,8 +370,6 @@ products:
   - 1.0.2
   - '1.0'
 repository: https://github.com/PROconsortium/PRoteinOntology
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

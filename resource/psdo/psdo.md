@@ -12,11 +12,13 @@ contacts:
     value: zachll
   label: Zach Landis-Lewis
   orcid: 0000-0002-9117-9338
+creation_date: '2025-09-29T00:00:00Z'
 description: Ontology to reproducibly study visualizations of clinical performance
 domains:
 - biomedical
 homepage_url: https://github.com/Display-Lab/psdo
 id: psdo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 9703
   product_url: http://purl.obolibrary.org/obo/psdo.owl
 repository: https://github.com/Display-Lab/psdo
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

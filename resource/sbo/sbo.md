@@ -12,12 +12,14 @@ contacts:
     value: rsmsheriff
   label: Rahuman Sheriff
   orcid: 0000-0003-0705-9809
+creation_date: '2025-06-04T00:00:00Z'
 description: Terms commonly used in Systems Biology, and in particular in computational
   modeling.
 domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/sbo/
 id: sbo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://opensource.org/licenses/Artistic-2.0
@@ -159,8 +161,6 @@ products:
   secondary_source:
   - ubkg
 repository: https://github.com/EBI-BioModels/SBO
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

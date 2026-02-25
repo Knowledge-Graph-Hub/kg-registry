@@ -41,9 +41,9 @@ products:
   name: UNII List Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
@@ -55,9 +55,9 @@ products:
   name: UNII Data Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
@@ -68,9 +68,9 @@ products:
   name: Legacy UNIIs
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'

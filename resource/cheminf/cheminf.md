@@ -12,12 +12,14 @@ contacts:
     value: egonw
   label: Egon Willighagen
   orcid: 0000-0001-7542-0286
+creation_date: '2025-09-29T00:00:00Z'
 description: Includes terms for the descriptors commonly used in cheminformatics software
   applications and the algorithms which generate them.
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/semanticchemistry/semanticchemistry
 id: cheminf
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -52,15 +54,13 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-20_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2026-02-25: FTP error: timed
     out'
 repository: https://github.com/semanticchemistry/semanticchemistry
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

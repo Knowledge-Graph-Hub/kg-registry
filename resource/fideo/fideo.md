@@ -12,11 +12,13 @@ contacts:
     value: getbordea
   label: Georgeta Bordea
   orcid: 0000-0001-9921-8234
+creation_date: '2025-09-29T00:00:00Z'
 description: Food-Drug interactions automatically extracted from scientific literature
 domains:
 - chemistry and biochemistry
 homepage_url: https://gitub.u-bordeaux.fr/erias/fideo
 id: fideo
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -34,8 +36,6 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
 repository: https://gitub.u-bordeaux.fr/erias/fideo
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

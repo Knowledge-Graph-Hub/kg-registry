@@ -10,12 +10,14 @@ contacts:
     value: stoeckrt@pcbi.upenn.edu
   label: Chris Stoeckert
   orcid: 0000-0002-5714-991X
+creation_date: '2025-09-29T00:00:00Z'
 description: A standardized description of a microarray experiment in support of MAGE
   v.1.
 domains:
 - biomedical
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -31,8 +33,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

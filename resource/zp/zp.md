@@ -12,12 +12,14 @@ contacts:
     value: ybradford
   label: Yvonne Bradford
   orcid: 0000-0002-9900-7880
+creation_date: '2025-09-29T00:00:00Z'
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the
   Zebrafish model organism.
 domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/zebrafish-phenotype-ontology
 id: zp
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 15870641
   product_url: http://purl.obolibrary.org/obo/zp.obo
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

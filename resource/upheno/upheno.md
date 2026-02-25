@@ -12,12 +12,14 @@ contacts:
     value: jamesamcl
   label: James McLaughlin
   orcid: 0000-0002-8361-2795
+creation_date: '2025-09-29T00:00:00Z'
 description: The uPheno ontology integrates multiple phenotype ontologies into a unified
   cross-species phenotype ontology.
 domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/upheno
 id: upheno
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -51,8 +53,6 @@ products:
   product_file_size: 416269865
   product_url: http://purl.obolibrary.org/obo/upheno/v2/upheno.owl
 repository: https://github.com/obophenotype/upheno
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

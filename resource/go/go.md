@@ -12,12 +12,14 @@ contacts:
     value: suzialeksander
   label: Suzi Aleksander
   orcid: 0000-0001-6787-2901
+creation_date: '2025-03-16T00:00:00Z'
 description: An ontology for describing the function of genes and gene products
 domains:
 - biological systems
 homepage_url: http://geneontology.org/
 id: go
 infores_id: go
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -2302,9 +2304,9 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
@@ -2473,17 +2475,15 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
 repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1
-creation_date: '2025-03-16T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

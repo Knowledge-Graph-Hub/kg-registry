@@ -12,12 +12,14 @@ contacts:
     value: bpeters42
   label: Bjoern Peters
   orcid: 0000-0002-8457-6693
+creation_date: '2025-06-25T00:00:00Z'
 description: COB brings together key terms from a wide range of OBO projects to improve
   interoperability.
 domains:
 - biological systems
 homepage_url: https://obofoundry.org/COB/
 id: cob
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -170,8 +172,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/OBOFoundry/COB
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

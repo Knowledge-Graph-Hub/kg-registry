@@ -12,6 +12,7 @@ contacts:
     value: dosumis
   label: David Osumi-Sutherland
   orcid: 0000-0002-7073-9172
+creation_date: '2025-06-04T00:00:00Z'
 description: The Cell Ontology is a structured controlled vocabulary for cell types
   in animals.
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: https://obophenotype.github.io/cell-ontology/
 id: cl
 infores_id: cl
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -574,8 +576,6 @@ products:
 repository: https://github.com/obophenotype/cell-ontology
 taxon:
 - NCBITaxon:33208
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

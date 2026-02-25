@@ -12,11 +12,13 @@ contacts:
     value: carrineblank
   label: Carrine Blank
   orcid: 0000-0002-2100-6351
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of prokaryotic phenotypic and metabolic characters
 domains:
 - biological systems
 homepage_url: https://github.com/carrineblank/MicrO
 id: micro
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 665050
   product_url: http://purl.obolibrary.org/obo/micro.owl
 repository: https://github.com/carrineblank/MicrO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

@@ -10,12 +10,14 @@ contacts:
     value: wasila.dahdul@usd.edu
   label: Wasila Dahdul
   orcid: 0000-0003-3162-7490
+creation_date: '2025-09-29T00:00:00Z'
 description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended
   to cover terms relevant to other taxa
 domains:
 - anatomy and development
 homepage_url: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 id: tao
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -32,8 +34,6 @@ products:
   product_url: http://purl.obolibrary.org/obo/tao.owl
 taxon:
 - NCBITaxon:32443
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

@@ -12,12 +12,14 @@ contacts:
     value: yuki-yamagata
   label: Yuki Yamagata
   orcid: 0000-0002-9673-1283
+creation_date: '2025-09-29T00:00:00Z'
 description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving
   toxicity courses and processes. The first version of TXPO focuses on liver toxicity.
 domains:
 - chemistry and biochemistry
 homepage_url: https://toxpilot.nibiohn.go.jp/
 id: txpo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 1799724
   product_url: http://purl.obolibrary.org/obo/txpo.owl
 repository: https://github.com/txpo-ontology/TXPO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

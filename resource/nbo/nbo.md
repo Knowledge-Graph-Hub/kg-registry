@@ -12,11 +12,13 @@ contacts:
     value: gkoutos
   label: George Gkoutos
   orcid: 0000-0002-2061-091X
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of human and animal behaviours and behavioural phenotypes
 domains:
 - biological systems
 homepage_url: https://github.com/obo-behavior/behavior-ontology/
 id: nbo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 372935
   product_url: http://purl.obolibrary.org/obo/nbo.owl
 repository: https://github.com/obo-behavior/behavior-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

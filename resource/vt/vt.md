@@ -12,11 +12,13 @@ contacts:
     value: caripark
   label: Carissa Park
   orcid: 0000-0002-2346-5201
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of traits covering vertebrates
 domains:
 - biological systems
 homepage_url: https://github.com/AnimalGenome/vertebrate-trait-ontology
 id: vt
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 416136
   product_url: http://purl.obolibrary.org/obo/vt.owl
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

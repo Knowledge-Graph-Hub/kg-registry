@@ -12,11 +12,13 @@ contacts:
     value: pfabry
   label: Paul Fabry
   orcid: 0000-0002-3336-2476
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to describe entities related to cardiovascular diseases
 domains:
 - biomedical
 homepage_url: https://github.com/OpenLHS/CVDO
 id: cvdo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 105498
   product_url: http://purl.obolibrary.org/obo/cvdo.owl
 repository: https://github.com/OpenLHS/CVDO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

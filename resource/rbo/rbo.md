@@ -12,12 +12,14 @@ contacts:
     value: DanBerrios
   label: Daniel C. Berrios
   orcid: 0000-0003-4312-9552
+creation_date: '2025-09-29T00:00:00Z'
 description: RBO is an ontology for the effects of radiation on biota in terrestrial
   and space environments.
 domains:
 - environment
 homepage_url: https://github.com/Radiobiology-Informatics-Consortium/RBO
 id: rbo
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -70,8 +72,6 @@ products:
   product_file_size: 45493
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

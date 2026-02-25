@@ -31,11 +31,11 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 405 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 405 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 405 error
     when accessing file'
@@ -50,11 +50,11 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 405 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 405 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 405 error
     when accessing file'
@@ -69,11 +69,11 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 405 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-15_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 405 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 405 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 405 error
     when accessing file'

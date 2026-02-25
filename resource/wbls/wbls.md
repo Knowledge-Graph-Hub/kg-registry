@@ -12,12 +12,14 @@ contacts:
     value: chris-grove
   label: Chris Grove
   orcid: 0000-0001-9076-6015
+creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of the development of <i>Caenorhabditis
   elegans</i>.
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/c-elegans-development-ontology
 id: wbls
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -148,8 +150,6 @@ products:
 repository: https://github.com/obophenotype/c-elegans-development-ontology
 taxon:
 - NCBITaxon:6237
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

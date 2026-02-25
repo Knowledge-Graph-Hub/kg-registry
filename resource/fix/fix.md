@@ -6,11 +6,13 @@ collection:
 contacts:
 - category: Individual
   label: chEBI
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of physico-chemical methods and properties.
 domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/chebi
 id: fix
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,8 +37,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-02-25: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

@@ -12,11 +12,13 @@ contacts:
     value: balhoff
   label: Jim Balhoff
   orcid: 0000-0002-8688-6599
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domains:
 - biological systems
 homepage_url: https://github.com/phenoscape/teleost-taxonomy-ontology
 id: tto
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -41,8 +43,6 @@ products:
 repository: https://github.com/phenoscape/teleost-taxonomy-ontology
 taxon:
 - NCBITaxon:32443
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

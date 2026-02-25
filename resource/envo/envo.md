@@ -12,11 +12,13 @@ contacts:
     value: pbuttigieg
   label: Pier Luigi Buttigieg
   orcid: 0000-0002-4366-3088
+creation_date: '2025-07-10T00:00:00Z'
 description: An ontology of environmental systems, components, and processes.
 domains:
 - environment
 homepage_url: http://environmentontology.org/
 id: envo
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -199,8 +201,6 @@ products:
   secondary_source:
   - kg-microbe
 repository: https://github.com/EnvironmentOntology/envo
-creation_date: '2025-07-10T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

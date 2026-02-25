@@ -12,6 +12,7 @@ contacts:
     value: JCGiron
   label: Jennifer C. Giron
   orcid: 0000-0002-0851-6883
+creation_date: '2025-09-29T00:00:00Z'
 description: The Coleoptera Anatomy Ontology contains terms used for describing the
   anatomy and phenotype of beetles in biodiversity research. It has been built using
   the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect Skeleto-Muscular
@@ -20,6 +21,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/insect-morphology/colao
 id: colao
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -42,8 +44,6 @@ products:
   product_file_size: 83585
   product_url: http://purl.obolibrary.org/obo/colao.obo
 repository: https://github.com/insect-morphology/colao
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

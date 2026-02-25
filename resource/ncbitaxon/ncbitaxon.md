@@ -12,12 +12,14 @@ contacts:
     value: fbastian
   label: Frederic Bastian
   orcid: 0000-0002-9415-5104
+creation_date: '2025-05-28T00:00:00Z'
 description: An ontology representation of the NCBI organismal taxonomy
 domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/ncbitaxon
 id: ncbitaxon
 infores_id: ncbi-taxon
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -528,8 +530,6 @@ products:
   - 1.0.2
   - '1.0'
 repository: https://github.com/obophenotype/ncbitaxon
-creation_date: '2025-05-28T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

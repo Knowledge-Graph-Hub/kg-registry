@@ -12,6 +12,7 @@ contacts:
     value: daniwelter
   label: Danielle Welter
   orcid: 0000-0003-1058-2668
+creation_date: '2025-06-25T00:00:00Z'
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
   of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
   association studies.
@@ -19,6 +20,7 @@ domains:
 - biological systems
 homepage_url: https://ebispot.github.io/hancestro/
 id: hancestro
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -150,8 +152,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/EBISPOT/hancestro
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

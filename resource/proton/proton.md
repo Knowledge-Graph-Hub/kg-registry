@@ -46,9 +46,9 @@ products:
   name: PROTON Top Module
   product_url: http://www.ontotext.com/proton/protontop
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'

@@ -15,6 +15,8 @@ collection:
 - obo-foundry
 layout: resource_detail
 category: Ontology
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2025-10-06T00:00:00Z'
 domains:
 - biomedical
 contacts:
@@ -33,8 +35,6 @@ products:
   format: owl
   category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/exmo.owl
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2025-10-06T00:00:00Z'
 ---
 
 ## Description

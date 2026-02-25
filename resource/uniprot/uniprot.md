@@ -101,9 +101,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
@@ -148,9 +148,9 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
@@ -659,9 +659,9 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'

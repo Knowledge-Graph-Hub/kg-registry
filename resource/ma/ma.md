@@ -12,12 +12,14 @@ contacts:
     value: tfhayamizu
   label: Terry Hayamizu
   orcid: 0000-0002-0956-8634
+creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of the adult anatomy of the mouse
   (Mus).
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/adult-mouse-anatomy-ontology
 id: ma
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -148,8 +150,6 @@ products:
 repository: https://github.com/obophenotype/adult-mouse-anatomy-ontology
 taxon:
 - NCBITaxon:10088
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

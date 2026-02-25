@@ -12,6 +12,7 @@ contacts:
     value: PaulNSchofield
   label: Paul Schofield
   orcid: 0000-0002-5111-7263
+creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology
   phenotypes
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: http://www.pathbase.net
 id: mpath
 infores_id: mpath
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -142,8 +144,6 @@ products:
 repository: https://github.com/PaulNSchofield/mpath
 taxon:
 - NCBITaxon:10088
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

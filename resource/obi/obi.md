@@ -12,12 +12,14 @@ contacts:
     value: bpeters42
   label: Bjoern Peters
   orcid: 0000-0002-8457-6693
+creation_date: '2025-06-04T00:00:00Z'
 description: An integrated ontology for the description of life-science and clinical
   investigations
 domains:
 - biomedical
 homepage_url: http://obi-ontology.org
 id: obi
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -288,8 +290,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/obi-ontology/obi
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

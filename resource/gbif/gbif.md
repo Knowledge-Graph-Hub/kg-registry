@@ -58,9 +58,9 @@ products:
   name: GBIF Darwin Core Archive Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
@@ -72,9 +72,9 @@ products:
   name: GBIF Simple CSV Downloads
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
@@ -94,9 +94,9 @@ products:
   name: GBIF Integrated Publishing Toolkit (IPT)
   product_url: https://www.gbif.org/ipt
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'

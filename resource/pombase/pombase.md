@@ -38,9 +38,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'
@@ -61,9 +61,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-20_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
     header found'

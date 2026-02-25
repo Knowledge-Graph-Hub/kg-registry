@@ -9,11 +9,13 @@ contacts:
   - contact_type: email
     value: mejino@u.washington.edu
   label: Onard Mejino
+creation_date: '2025-06-25T00:00:00Z'
 description: This is currently a slimmed down version of FMA
 domains:
 - anatomy and development
 homepage_url: http://si.washington.edu/projects/fma
 id: fma
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -139,8 +141,6 @@ products:
 repository: https://bitbucket.org/uwsig/fma
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

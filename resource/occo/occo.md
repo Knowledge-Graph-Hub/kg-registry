@@ -12,6 +12,7 @@ contacts:
     value: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology representing occupations. It is designed to facilitate harmonization
   of existing occupation standards, such as the US Bureau of Labor Statistics Standard
   Occupational Classification (US SOC), the International Standard Classification
@@ -22,6 +23,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/Occupation-Ontology/OccO
 id: occo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,8 +39,6 @@ products:
   product_file_size: 280761
   product_url: http://purl.obolibrary.org/obo/occo.owl
 repository: https://github.com/Occupation-Ontology/OccO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

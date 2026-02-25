@@ -12,11 +12,13 @@ contacts:
     value: batchelorc
   label: Colin Batchelor
   orcid: 0000-0001-5985-7429
+creation_date: '2025-09-29T00:00:00Z'
 description: Processes at the molecular level
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/rsc-ontologies/rxno
 id: mop
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 154788
   product_url: http://purl.obolibrary.org/obo/mop.owl
 repository: https://github.com/rsc-ontologies/rxno
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

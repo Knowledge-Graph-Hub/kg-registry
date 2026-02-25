@@ -12,11 +12,13 @@ contacts:
     value: Clare72
   label: Clare Pilgrim
   orcid: 0000-0002-1373-1705
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domains:
 - biological systems
 homepage_url: http://purl.obolibrary.org/obo/fbcv
 id: dpo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -48,8 +50,6 @@ products:
 repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 taxon:
 - NCBITaxon:7227
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

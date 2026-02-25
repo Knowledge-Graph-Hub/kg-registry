@@ -9,12 +9,14 @@ contacts:
   - contact_type: email
     value: psidev-gps-dev@lists.sourceforge.net
   label: SEP developers via the PSI and MSI mailing lists
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of sample processing
   and separation techniques in scientific experiments.
 domains:
 - biomedical
 homepage_url: http://psidev.info/index.php?q=node/312
 id: sep
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -30,8 +32,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

@@ -12,12 +12,14 @@ contacts:
     value: fbastian
   label: Frederic Bastian
   orcid: 0000-0002-9415-5104
+creation_date: '2025-09-29T00:00:00Z'
 description: This ontology represents concepts related to homology, as well as other
   concepts used to describe similarity and non-homology.
 domains:
 - anatomy and development
 homepage_url: https://github.com/BgeeDB/homology-ontology
 id: hom
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -35,8 +37,6 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
     when accessing file'
 repository: https://github.com/BgeeDB/homology-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

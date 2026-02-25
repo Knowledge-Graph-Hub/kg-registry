@@ -12,12 +12,14 @@ contacts:
     value: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
+creation_date: '2025-06-25T00:00:00Z'
 description: An ontology to standardize and integrate cell line information and to
   support computer-assisted reasoning.
 domains:
 - anatomy and development
 homepage_url: https://github.com/CLO-Ontology/CLO
 id: clo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -182,8 +184,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/CLO-Ontology/CLO
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

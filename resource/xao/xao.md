@@ -12,12 +12,14 @@ contacts:
     value: seger
   label: Erik Segerdell
   orcid: 0000-0002-9611-1279
+creation_date: '2025-09-29T00:00:00Z'
 description: XAO represents the anatomy and development of the African frogs Xenopus
   laevis and tropicalis.
 domains:
 - anatomy and development
 homepage_url: http://www.xenbase.org/anatomy/xao.do?method=display
 id: xao
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -42,8 +44,6 @@ products:
 repository: https://github.com/xenopus-anatomy/xao
 taxon:
 - NCBITaxon:8353
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

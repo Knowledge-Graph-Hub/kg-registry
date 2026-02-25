@@ -66,16 +66,16 @@ products:
   name: TraitBank Bulk Data Export
   product_url: https://editors.eol.org/other_files/SDR/traits_all.zip
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-24_ Error connecting
+    to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
+    with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-02-20_ Error connecting
     to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
     with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-02-18_ Error connecting
-    to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
-    with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-01-28_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
@@ -83,11 +83,11 @@ products:
     with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2026-02-24_ Error connecting
+  - File was not able to be retrieved when checked on 2026-02-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
     with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2026-02-25: Error connecting
     to URL: HTTPSConnectionPool(host=''editors.eol.org'', port=443): Max retries exceeded
     with url: /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -101,16 +101,16 @@ products:
   name: TraitBank Documentation
   product_url: https://eol.org/docs/what-is-eol/data-services
   warnings:
+  - File was not able to be retrieved when checked on 2026-02-24_ Error connecting
+    to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
+    url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-02-20_ Error connecting
     to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
     url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-02-18_ Error connecting
-    to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
-    url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
   - File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
@@ -118,11 +118,11 @@ products:
     url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2026-02-24_ Error connecting
+  - File was not able to be retrieved when checked on 2026-02-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
     url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2026-02-25: Error connecting
     to URL: HTTPSConnectionPool(host=''eol.org'', port=443): Max retries exceeded
     with url: /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,

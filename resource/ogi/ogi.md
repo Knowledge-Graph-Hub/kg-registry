@@ -12,12 +12,14 @@ contacts:
     value: linikujp
   label: Asiyah Yu Lin
   orcid: 0000-0002-5379-5359
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology that formalizes the genomic element by defining an upper
   class genetic interval
 domains:
 - chemistry and biochemistry
 homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
 id: ogi
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -33,8 +35,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

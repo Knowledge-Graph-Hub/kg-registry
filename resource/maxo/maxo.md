@@ -12,6 +12,7 @@ contacts:
     value: LCCarmody
   label: Leigh Carmody
   orcid: 0000-0001-7941-2961
+creation_date: '2025-08-13T00:00:00Z'
 description: The Medical Action Ontology (MAxO) provides a broad view of medical actions
   and includes terms for medical procedures, interventions, therapies, treatments,
   and recommendations.
@@ -20,6 +21,7 @@ domains:
 homepage_url: https://github.com/monarch-initiative/MAxO
 id: maxo
 infores_id: maxo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -871,8 +873,6 @@ products:
   secondary_source:
   - kg-monarch
 repository: https://github.com/monarch-initiative/MAxO
-creation_date: '2025-08-13T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

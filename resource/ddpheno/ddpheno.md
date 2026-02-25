@@ -12,12 +12,14 @@ contacts:
     value: pfey03
   label: Petra Fey
   orcid: 0000-0002-4532-2703
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium
   discoideum</i>.
 domains:
 - anatomy and development
 homepage_url: http://dictybase.org/
 id: ddpheno
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -42,8 +44,6 @@ products:
 repository: https://github.com/obophenotype/dicty-phenotype-ontology
 taxon:
 - NCBITaxon:44689
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

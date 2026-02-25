@@ -12,12 +12,14 @@ contacts:
     value: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured, controlled vocabulary which describes the treatments, growing
   conditions, and/or study types used in plant biology experiments.
 domains:
 - environment
 homepage_url: http://planteome.org/
 id: eo
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,8 +46,6 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
 repository: https://github.com/Planteome/plant-environment-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

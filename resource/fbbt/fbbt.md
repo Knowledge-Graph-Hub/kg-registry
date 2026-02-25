@@ -12,12 +12,14 @@ contacts:
     value: Clare72
   label: Clare Pilgrim
   orcid: 0000-0002-1373-1705
+creation_date: '2025-06-25T00:00:00Z'
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domains:
 - anatomy and development
 homepage_url: http://purl.obolibrary.org/obo/fbbt
 id: fbbt
 infores_id: fbbt
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -169,8 +171,6 @@ products:
 repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 taxon:
 - NCBITaxon:7227
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

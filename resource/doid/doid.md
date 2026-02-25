@@ -12,12 +12,14 @@ contacts:
     value: lschriml
   label: Lynn Schriml
   orcid: 0000-0001-8910-9851
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for describing the classification of human diseases organized
   by etiology.
 domains:
 - biomedical
 homepage_url: https://disease-ontology.org
 id: doid
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -574,8 +576,6 @@ products:
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

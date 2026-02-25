@@ -12,12 +12,14 @@ contacts:
     value: jmwhorton
   label: Justin Whorton
   orcid: 0009-0003-4268-6207
+creation_date: '2025-06-04T00:00:00Z'
 description: An ontology built for annotation and modeling of biobank repository and
   biobanking administration
 domains:
 - biomedical
 homepage_url: https://github.com/biobanking/biobanking
 id: obib
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -160,8 +162,6 @@ products:
   secondary_source:
   - ubkg
 repository: https://github.com/biobanking/biobanking
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

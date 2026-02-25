@@ -12,6 +12,7 @@ contacts:
     value: akodamullil
   label: Alpha Tom Kodamullil
   orcid: 0000-0001-9896-3531
+creation_date: '2025-09-29T00:00:00Z'
 description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses
   varieties of concepts related to Alzheimer'S Disease, structured by upper level
   Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities
@@ -21,6 +22,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 id: ado
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,8 +38,6 @@ products:
   product_file_size: 1166665
   product_url: http://purl.obolibrary.org/obo/ado.owl
 repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

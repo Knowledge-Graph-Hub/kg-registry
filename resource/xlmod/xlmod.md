@@ -12,12 +12,14 @@ contacts:
     value: lutzfischer
   label: Lutz Fischer
   orcid: 0000-0003-4978-0864
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for cross-linking reagents used with
   proteomics mass spectrometry.
 domains:
 - chemistry and biochemistry
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
 id: xlmod
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -42,8 +44,6 @@ products:
   product_file_size: 96196
   product_url: http://purl.obolibrary.org/obo/xlmod.owl
 repository: https://github.com/HUPO-PSI/xlmod-CV
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

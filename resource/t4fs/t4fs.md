@@ -12,12 +12,14 @@ contacts:
     value: allysonlister
   label: Allyson Lister
   orcid: 0000-0002-7702-4495
+creation_date: '2025-09-29T00:00:00Z'
 description: A terminology for the skills necessary to make data FAIR and to keep
   it FAIR.
 domains:
 - biomedical
 homepage_url: https://github.com/terms4fairskills/FAIRterminology
 id: t4fs
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -85,8 +87,6 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
 repository: https://github.com/terms4fairskills/FAIRterminology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

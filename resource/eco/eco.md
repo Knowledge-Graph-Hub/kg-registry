@@ -12,11 +12,13 @@ contacts:
     value: mgiglio99
   label: Michelle Giglio
   orcid: 0000-0001-7628-5565
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for experimental and other evidence statements.
 domains:
 - biomedical
 homepage_url: https://www.evidenceontology.org
 id: eco
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -50,8 +52,6 @@ products:
   product_file_size: 47076
   product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=evidences.tsv
 repository: https://github.com/evidenceontology/evidenceontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

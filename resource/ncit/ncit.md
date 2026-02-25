@@ -12,6 +12,7 @@ contacts:
     value: ghost
   label: None
   orcid: 0000-0000-0000-0000
+creation_date: '2025-06-25T00:00:00Z'
 description: NCI Thesaurus (NCIt)is a reference terminology that includes broad coverage
   of the cancer domain, including cancer related diseases, findings and abnormalities.
   The NCIt OBO Edition aims to increase integration of the NCIt with OBO Library ontologies.
@@ -21,6 +22,7 @@ domains:
 homepage_url: https://github.com/ncit-obo-org/ncit-obo-edition
 id: ncit
 infores_id: ncit
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -177,8 +179,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/ncit-obo-org/ncit-obo-edition
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

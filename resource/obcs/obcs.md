@@ -12,11 +12,13 @@ contacts:
     value: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
+creation_date: '2025-09-29T00:00:00Z'
 description: A biomedical ontology in the domain of biological and clinical statistics.
 domains:
 - biomedical
 homepage_url: https://github.com/obcs/obcs
 id: obcs
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -32,8 +34,6 @@ products:
   product_file_size: 213907
   product_url: http://purl.obolibrary.org/obo/obcs.owl
 repository: https://github.com/obcs/obcs
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

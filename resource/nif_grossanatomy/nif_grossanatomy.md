@@ -11,6 +11,8 @@ collection:
 - obo-foundry
 layout: resource_detail
 category: Ontology
+creation_date: '2025-09-29T00:00:00Z'
+last_modified_date: '2025-10-06T00:00:00Z'
 domains:
 - anatomy and development
 contacts:
@@ -21,8 +23,6 @@ contacts:
   - contact_type: email
     value: smtifahim@gmail.com
 products: []
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2025-10-06T00:00:00Z'
 ---
 
 ## Description

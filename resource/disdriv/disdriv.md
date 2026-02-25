@@ -12,6 +12,7 @@ contacts:
     value: lschriml
   label: Lynn Schriml
   orcid: 0000-0001-8910-9851
+creation_date: '2025-09-29T00:00:00Z'
 description: Ontology for drivers and triggers of human diseases, built to classify
   ExO ontology exposure stressors. An application ontology. Built in collaboration
   with EnvO, ExO, ECTO and ChEBI.
@@ -19,6 +20,7 @@ domains:
 - biomedical
 homepage_url: https://disease-ontology.org/
 id: disdriv
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,8 +38,6 @@ products:
 repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

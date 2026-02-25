@@ -12,11 +12,13 @@ contacts:
     value: leechuck
   label: Robert Hoehndorf
   orcid: 0000-0001-8149-5890
+creation_date: '2025-09-29T00:00:00Z'
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domains:
 - biological systems
 homepage_url: https://github.com/flora-phenotype-ontology/flopoontology
 id: flopo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -34,8 +36,6 @@ products:
 repository: https://github.com/flora-phenotype-ontology/flopoontology
 taxon:
 - NCBITaxon:33090
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

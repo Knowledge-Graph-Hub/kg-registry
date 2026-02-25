@@ -12,12 +12,14 @@ contacts:
     value: Lemon-Liu
   label: Meng LIU
   orcid: 0000-0003-3781-6962
+creation_date: '2025-09-29T00:00:00Z'
 description: ICEO is an integrated biological ontology for the description of bacterial
   integrative and conjugative elements (ICEs).
 domains:
 - biological systems
 homepage_url: https://github.com/ontoice/ICEO
 id: iceo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 1257537
   product_url: http://purl.obolibrary.org/obo/iceo.owl
 repository: https://github.com/ontoice/ICEO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

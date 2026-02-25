@@ -12,12 +12,14 @@ contacts:
     value: luis-gonzalez-m
   label: Luis Gonz lez-Monta a
   orcid: 0000-0002-9136-9932
+creation_date: '2025-09-29T00:00:00Z'
 description: 'CLAO is an ontology of anatomical terms employed in morphological descriptions
   for the Class Collembola (Arthropoda: Hexapoda).'
 domains:
 - anatomy and development
 homepage_url: https://github.com/luis-gonzalez-m/Collembola
 id: clao
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 74344
   product_url: http://purl.obolibrary.org/obo/clao.obo
 repository: https://github.com/luis-gonzalez-m/Collembola
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

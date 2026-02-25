@@ -10,12 +10,14 @@ contacts:
     value: mbrochhausen@gmail.com
   label: Mathias Brochhausen
   orcid: 0000-0003-1834-3856
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontological version of MIABIS (Minimum Information About BIobank data
   Sharing)
 domains:
 - biomedical
 homepage_url: https://github.com/OMIABIS/omiabis-dev
 id: omiabis
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -31,8 +33,6 @@ products:
   product_file_size: 109985
   product_url: http://purl.obolibrary.org/obo/omiabis.owl
 repository: https://github.com/OMIABIS/omiabis-dev
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

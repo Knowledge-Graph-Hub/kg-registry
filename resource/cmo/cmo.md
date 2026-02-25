@@ -12,12 +12,14 @@ contacts:
     value: jrsjrs
   label: Jennifer Smith
   orcid: 0000-0002-6443-9376
+creation_date: '2025-09-29T00:00:00Z'
 description: Morphological and physiological measurement records generated from clinical
   and model organism research and health programs.
 domains:
 - biomedical
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: cmo
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 2578741
   product_url: http://purl.obolibrary.org/obo/cmo.obo
 repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

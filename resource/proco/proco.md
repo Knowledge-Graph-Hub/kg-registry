@@ -12,12 +12,14 @@ contacts:
     value: schaferw
   label: Wes Schafer
   orcid: 0000-0002-8786-1756
+creation_date: '2025-09-29T00:00:00Z'
 description: PROCO covers process chemistry, the chemical field concerned with scaling
   up laboratory syntheses to commercially viable processes.
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/proco-ontology/PROCO
 id: proco
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 143615
   product_url: http://purl.obolibrary.org/obo/proco.owl
 repository: https://github.com/proco-ontology/PROCO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

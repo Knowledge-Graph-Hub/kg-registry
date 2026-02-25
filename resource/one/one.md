@@ -12,12 +12,14 @@ contacts:
     value: cyang0128
   label: Chen Yang
   orcid: 0000-0001-9202-5309
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to standardize research output of nutritional epidemiologic
   studies.
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 id: one
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 9258
   product_url: http://purl.obolibrary.org/obo/one.owl
 repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

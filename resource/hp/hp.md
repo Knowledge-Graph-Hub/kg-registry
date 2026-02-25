@@ -12,6 +12,7 @@ contacts:
     value: drseb
   label: Sebastian Koehler
   orcid: 0000-0002-5316-1399
+creation_date: '2025-04-22T00:00:00Z'
 description: The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary
   for the phenotypic features encountered in human hereditary and other disease.
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 infores_id: hpo
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
@@ -2017,8 +2019,6 @@ products:
 repository: https://github.com/obophenotype/human-phenotype-ontology
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-04-22T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

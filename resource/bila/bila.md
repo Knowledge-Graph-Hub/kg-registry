@@ -12,11 +12,13 @@ contacts:
     value: ThorstenHen
   label: Thorsten Henrich
   orcid: 0000-0002-1548-3290
+creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
 homepage_url: http://4dx.embl.de/4DXpress
 id: bila
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -34,8 +36,6 @@ products:
     when accessing file'
 taxon:
 - NCBITaxon:33213
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

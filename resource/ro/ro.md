@@ -12,12 +12,14 @@ contacts:
     value: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+creation_date: '2025-06-25T00:00:00Z'
 description: Relationship types shared across multiple ontologies
 domains:
 - biological systems
 homepage_url: https://oborel.github.io/
 id: ro
 infores_id: ro
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -251,8 +253,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/oborel/obo-relations
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

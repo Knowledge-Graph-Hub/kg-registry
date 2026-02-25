@@ -12,12 +12,14 @@ contacts:
     value: diatomsRcool
   label: Anne Thessen
   orcid: 0000-0002-2908-3327
+creation_date: '2025-09-29T00:00:00Z'
 description: Vocabularies for describing exposure data to inform understanding of
   environmental health.
 domains:
 - biomedical
 homepage_url: https://github.com/CTDbase/exposure-ontology
 id: exo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 12690
   product_url: http://purl.obolibrary.org/obo/exo.obo
 repository: https://github.com/CTDbase/exposure-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

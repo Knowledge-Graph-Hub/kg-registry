@@ -12,6 +12,7 @@ contacts:
     value: dosumis
   label: David Osumi-Sutherland
   orcid: 0000-0002-7073-9172
+creation_date: '2025-09-29T00:00:00Z'
 description: Cell types that are provisionally defined by experimental techniques
   such as single cell or single nucleus transcriptomics rather than a straightforward
   & coherent set of properties.
@@ -19,6 +20,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/provisional_cell_ontology
 id: pcl
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -56,8 +58,8 @@ products:
   name: pcl-base.owl
   product_url: http://purl.obolibrary.org/obo/pcl-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-25: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -65,8 +67,8 @@ products:
   name: pcl-base.obo
   product_url: http://purl.obolibrary.org/obo/pcl-base.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-25: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -101,8 +103,8 @@ products:
   name: pcl-full.json
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-25: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -110,8 +112,8 @@ products:
   name: pcl-simple.owl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-02-25: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -131,8 +133,6 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
 repository: https://github.com/obophenotype/provisional_cell_ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

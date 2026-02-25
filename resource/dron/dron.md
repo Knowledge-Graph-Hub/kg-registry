@@ -12,12 +12,14 @@ contacts:
     value: hoganwr
   label: William Hogan
   orcid: 0000-0002-9881-1017
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to support comparative effectiveness researchers studying
   claims data.
 domains:
 - biomedical
 homepage_url: https://github.com/ufbmi/dron
 id: dron
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 693880191
   product_url: http://purl.obolibrary.org/obo/dron.owl
 repository: https://github.com/ufbmi/dron
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

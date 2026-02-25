@@ -12,12 +12,14 @@ contacts:
     value: sbello
   label: Sue Bello
   orcid: 0000-0003-4606-0597
+creation_date: '2025-06-04T00:00:00Z'
 description: Standard terms for annotating mammalian phenotypic data.
 domains:
 - biological systems
 homepage_url: https://www.informatics.jax.org/vocab/mp_ontology/
 id: mp
 infores_id: mp
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -293,8 +295,6 @@ products:
 repository: https://github.com/mgijax/mammalian-phenotype-ontology
 taxon:
 - NCBITaxon:40674
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

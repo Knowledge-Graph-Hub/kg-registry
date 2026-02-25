@@ -12,12 +12,14 @@ contacts:
     value: JadeHotchkiss
   label: Jade Hotchkiss
   orcid: 0000-0002-2193-0704
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for the standardization of terminology and integration of
   knowledge about Sickle Cell Disease.
 domains:
 - biomedical
 homepage_url: https://scdontology.h3abionet.org/
 id: scdo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -39,8 +41,6 @@ products:
   product_file_size: 324416
   product_url: http://purl.obolibrary.org/obo/scdo.obo
 repository: https://github.com/scdodev/scdo-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

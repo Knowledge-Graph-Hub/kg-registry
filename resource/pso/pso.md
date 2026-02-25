@@ -12,12 +12,14 @@ contacts:
     value: cooperl09
   label: Laurel Cooper
   orcid: 0000-0002-6379-8932
+creation_date: '2025-09-29T00:00:00Z'
 description: The Plant Stress Ontology describes biotic and abiotic stresses that
   a plant may encounter.
 domains:
 - agriculture
 homepage_url: https://github.com/Planteome/plant-stress-ontology
 id: pso
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 241726
   product_url: http://purl.obolibrary.org/obo/pso.obo
 repository: https://github.com/Planteome/plant-stress-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

@@ -12,12 +12,14 @@ contacts:
     value: linikujp
   label: Asiyah Yu Lin
   orcid: 0000-0002-5379-5359
+creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology to represent genetic susceptibility to a specific
   disease, adverse event, or a pathological process.
 domains:
 - biomedical
 homepage_url: https://github.com/linikujp/OGSF
 id: ogsf
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 69686
   product_url: http://purl.obolibrary.org/obo/ogsf.owl
 repository: https://github.com/linikujp/OGSF
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

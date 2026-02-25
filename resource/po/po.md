@@ -12,12 +12,14 @@ contacts:
     value: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
+creation_date: '2025-06-25T00:00:00Z'
 description: The Plant Ontology is a structured vocabulary and database resource that
   links plant anatomy, morphology and growth and development to plant genomics data.
 domains:
 - anatomy and development
 homepage_url: http://browser.planteome.org/amigo
 id: po
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -148,8 +150,6 @@ products:
 repository: https://github.com/Planteome/plant-ontology
 taxon:
 - NCBITaxon:33090
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

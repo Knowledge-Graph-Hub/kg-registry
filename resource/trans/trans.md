@@ -12,6 +12,7 @@ contacts:
     value: lschriml
   label: Lynn Schriml
   orcid: 0000-0001-8910-9851
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology representing the disease transmission process during which
   the pathogen is transmitted directly or indirectly from its natural reservoir, a
   susceptible host or source to a new host.
@@ -19,6 +20,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 id: trans
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -41,8 +43,6 @@ products:
   product_file_size: 2508
   product_url: http://purl.obolibrary.org/obo/trans.obo
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

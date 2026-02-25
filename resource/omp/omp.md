@@ -12,11 +12,13 @@ contacts:
     value: jimhu-tamu
   label: James C. Hu
   orcid: 0000-0001-9016-2684
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of phenotypes covering microbes
 domains:
 - biological systems
 homepage_url: http://microbialphenotypes.org
 id: omp
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -39,8 +41,6 @@ products:
   product_file_size: 124064
   product_url: http://purl.obolibrary.org/obo/omp.obo
 repository: https://github.com/microbialphenotypes/OMP-ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

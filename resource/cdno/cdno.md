@@ -12,12 +12,14 @@ contacts:
     value: LilyAndres
   label: Liliana Andres Hernandez
   orcid: 0000-0002-7696-731X
+creation_date: '2025-09-29T00:00:00Z'
 description: CDNO provides structured terminologies to describe nutritional attributes
   of material entities that contribute to human diet.
 domains:
 - chemistry and biochemistry
 homepage_url: https://cdno.info/
 id: cdno
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -40,8 +42,6 @@ products:
   product_file_size: 331277
   product_url: http://purl.obolibrary.org/obo/cdno.obo
 repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

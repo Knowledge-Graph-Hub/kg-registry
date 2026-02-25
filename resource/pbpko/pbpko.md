@@ -12,12 +12,14 @@ contacts:
     value: Crispae
   label: Saurav Kumar
   orcid: 0000-0003-0593-2598
+creation_date: '2026-02-20T00:00:00Z'
 description: An ontology for modeling and understanding of pharmacokinetics in biological
   systems.
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/InSilicoVida-Research-Lab/pbpko
 id: pbpko
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -51,8 +53,6 @@ products:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
-creation_date: '2026-02-20T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

@@ -12,12 +12,14 @@ contacts:
     value: Clare72
   label: Clare Pilgrim
   orcid: 0000-0002-1373-1705
+creation_date: '2025-09-29T00:00:00Z'
 description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
   and of other taxa referred to in FlyBase.
 domains:
 - biological systems
 homepage_url: http://www.flybase.org/
 id: fbsp
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,8 +37,6 @@ products:
     when accessing file'
 taxon:
 - NCBITaxon:7227
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

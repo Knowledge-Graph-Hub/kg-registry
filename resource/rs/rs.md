@@ -12,11 +12,13 @@ contacts:
     value: shurjenw
   label: Shur-Jen Wang
   orcid: 0000-0001-5256-8683
+creation_date: '2025-09-29T00:00:00Z'
 description: Ontology of rat strains
 domains:
 - biological systems
 homepage_url: http://rgd.mcw.edu/rgdweb/search/strains.html
 id: rs
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -40,8 +42,6 @@ products:
 repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
 taxon:
 - NCBITaxon:10114
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

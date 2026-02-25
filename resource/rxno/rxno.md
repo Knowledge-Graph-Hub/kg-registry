@@ -12,12 +12,14 @@ contacts:
     value: batchelorc
   label: Colin Batchelor
   orcid: 0000-0001-5985-7429
+creation_date: '2025-09-29T00:00:00Z'
 description: Connects organic name reactions to their roles in an organic synthesis
   and to processes in MOP
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/rsc-ontologies/rxno
 id: rxno
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 95394
   product_url: http://purl.obolibrary.org/obo/rxno.owl
 repository: https://github.com/rsc-ontologies/rxno
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

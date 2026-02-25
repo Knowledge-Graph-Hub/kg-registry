@@ -12,12 +12,14 @@ contacts:
     value: mbrochhausen
   label: Mathias Brochhausen
   orcid: 0000-0003-1834-3856
+creation_date: '2025-09-29T00:00:00Z'
 description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction
   Evidence Ontology
 domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/DIDEO/DIDEO
 id: dideo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,8 +36,6 @@ products:
   product_file_size: 88427
   product_url: http://purl.obolibrary.org/obo/dideo.owl
 repository: https://github.com/DIDEO/DIDEO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

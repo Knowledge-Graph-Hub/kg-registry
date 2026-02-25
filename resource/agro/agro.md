@@ -12,12 +12,14 @@ contacts:
     value: marieALaporte
   label: Marie-Ang lique Laporte
   orcid: 0000-0002-8461-9745
+creation_date: '2025-09-29T00:00:00Z'
 description: Ontology of agronomic practices, agronomic techniques, and agronomic
   variables used in agronomic experiments
 domains:
 - agriculture
 homepage_url: https://github.com/AgriculturalSemantics/agro
 id: agro
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 463598
   product_url: http://purl.obolibrary.org/obo/agro.owl
 repository: https://github.com/AgriculturalSemantics/agro
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

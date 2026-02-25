@@ -9,12 +9,14 @@ contacts:
   - contact_type: email
     value: J.Bard@ed.ac.uk
   label: Jonathan Bard
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of stage-specific anatomical structures
   of the developing human.
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology
 id: ehdaa2
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -39,8 +41,6 @@ products:
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

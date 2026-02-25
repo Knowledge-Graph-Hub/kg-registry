@@ -12,6 +12,7 @@ contacts:
     value: luanalicata
   label: Luana Licata
   orcid: 0000-0001-5084-9000
+creation_date: '2025-06-04T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with protein-protein interactions.
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: https://github.com/HUPO-PSI/psi-mi-CV
 id: mi
 infores_id: mi
+last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -260,8 +262,6 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://github.com/HUPO-PSI/psi-mi-CV
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-20T00:00:00Z'
 ---
 ## Description
 

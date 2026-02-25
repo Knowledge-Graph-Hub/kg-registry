@@ -9,11 +9,13 @@ contacts:
   - contact_type: email
     value: topalis@imbb.forth.gr
   label: Pantelis Topalis
+creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology for use with miRNA databases.
 domains:
 - chemistry and biochemistry
 homepage_url: http://code.google.com/p/mirna-ontology/
 id: mirnao
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -30,8 +32,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
     when accessing file'
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

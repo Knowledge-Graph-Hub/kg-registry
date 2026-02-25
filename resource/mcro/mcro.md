@@ -12,6 +12,7 @@ contacts:
     value: ProfTuan
   label: Tuan Amith
   orcid: 0000-0003-4333-1857
+creation_date: '2025-09-29T00:00:00Z'
 description: An ontology representing the structure of model card reports - reports
   that describe basic characteristics of machine learning models for the public and
   consumers.
@@ -19,6 +20,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/UTHealth-Ontology/MCRO
 id: mcro
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,8 +36,6 @@ products:
   product_file_size: 7969
   product_url: http://purl.obolibrary.org/obo/mcro.owl
 repository: https://github.com/UTHealth-Ontology/MCRO
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

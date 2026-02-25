@@ -10,11 +10,13 @@ contacts:
     value: wasila.dahdul@usd.edu
   label: Wasila Dahdul
   orcid: 0000-0003-3162-7490
+creation_date: '2025-09-29T00:00:00Z'
 description: Vertebrate skeletal anatomy ontology.
 domains:
 - anatomy and development
 homepage_url: https://www.nescent.org/phenoscape/Main_Page
 id: vsao
+last_modified_date: '2026-02-22T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -30,8 +32,6 @@ products:
   product_url: http://purl.obolibrary.org/obo/vsao.owl
 taxon:
 - NCBITaxon:7742
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-22T00:00:00Z'
 ---
 ## Description
 

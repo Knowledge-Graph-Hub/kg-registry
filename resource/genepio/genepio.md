@@ -12,12 +12,14 @@ contacts:
     value: ddooley
   label: Damion Dooley
   orcid: 0000-0002-8844-9165
+creation_date: '2025-09-29T00:00:00Z'
 description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
   to identify, document and research foodborne pathogens and associated outbreaks.
 domains:
 - biomedical
 homepage_url: http://genepio.org/
 id: genepio
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -33,8 +35,6 @@ products:
   product_file_size: 732830
   product_url: http://purl.obolibrary.org/obo/genepio.owl
 repository: https://github.com/GenEpiO/genepio
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

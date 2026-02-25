@@ -12,11 +12,13 @@ contacts:
     value: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
+creation_date: '2025-06-25T00:00:00Z'
 description: An ontology of information entities.
 domains:
 - biomedical
 homepage_url: https://github.com/information-artifact-ontology/IAO/
 id: iao
+last_modified_date: '2026-02-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -179,8 +181,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/information-artifact-ontology/IAO
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-24T00:00:00Z'
 ---
 ## Description
 

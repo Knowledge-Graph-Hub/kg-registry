@@ -12,11 +12,13 @@ contacts:
     value: chris-grove
   label: Chris Grove
   orcid: 0000-0001-9076-6015
+creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/c-elegans-phenotype-ontology
 id: wbphenotype
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -48,8 +50,6 @@ products:
 repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 taxon:
 - NCBITaxon:6237
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

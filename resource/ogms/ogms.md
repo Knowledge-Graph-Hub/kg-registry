@@ -12,12 +12,14 @@ contacts:
     value: BAevermann
   label: Brian Aevermann
   orcid: 0000-0003-1346-1327
+creation_date: '2025-06-25T00:00:00Z'
 description: An ontology for representing treatment of disease and diagnosis and on
   carcinomas and other pathological entities
 domains:
 - biomedical
 homepage_url: https://github.com/OGMS/ogms
 id: ogms
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -141,8 +143,6 @@ products:
 repository: https://github.com/OGMS/ogms
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

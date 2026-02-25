@@ -12,6 +12,7 @@ contacts:
     value: allysonlister
   label: Allyson Lister
   orcid: 0000-0002-7702-4495
+creation_date: '2025-09-29T00:00:00Z'
 description: The Software Ontology (SWO) is a resource for describing software tools,
   their types, tasks, versions, provenance and associated data. It contains detailed
   information on licensing and formats as well as software applications themselves,
@@ -20,6 +21,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/allysonlister/swo
 id: swo
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -42,8 +44,6 @@ products:
   product_file_size: 204434
   product_url: http://purl.obolibrary.org/obo/swo.json
 repository: https://github.com/allysonlister/swo
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 

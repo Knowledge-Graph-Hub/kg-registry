@@ -12,6 +12,7 @@ contacts:
     value: keilbeck
   label: Karen Eilbeck
   orcid: 0000-0002-0831-6427
+creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary for sequence annotation, for the exchange
   of annotation data and for the description of sequence objects in databases.
 domains:
@@ -19,6 +20,7 @@ domains:
 homepage_url: http://www.sequenceontology.org/
 id: so
 infores_id: so
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -206,8 +208,6 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
-creation_date: '2025-06-25T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ## Description
 
