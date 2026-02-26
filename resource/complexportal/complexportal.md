@@ -7,7 +7,7 @@ contacts:
   - contact_type: email
     value: intact-help@ebi.ac.uk
   - contact_type: url
-    value: https://www.ebi.ac.uk/support/complexportal
+    value: https://www.ebi.ac.uk/about/contact/support/complexportal
   id: ebi
   label: EMBL-EBI
 creation_date: '2025-07-17T00:00:00Z'
@@ -19,9 +19,10 @@ domains:
 - systems biology
 funding:
 - EMBL-EBI
-homepage_url: https://www.ebi.ac.uk/complexportal/home
+homepage_url: https://www.ebi.ac.uk/complexportal/
 id: complexportal
-last_modified_date: '2025-12-15T00:00:00Z'
+infores_id: complexportal
+last_modified_date: '2026-02-26T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,13 +35,17 @@ products:
   format: http
   id: complexportal.portal
   name: Complex Portal Web Interface
-  product_url: https://www.ebi.ac.uk/complexportal/home
+  original_source:
+  - complexportal
+  product_url: https://www.ebi.ac.uk/complexportal/
 - category: Product
   description: Complete Complex Portal dataset in PSI-MI XML 2.5 format, organized
     by species
   format: psi_mi_xml
   id: complexportal.psi25
   name: Complex Portal PSI-MI XML 2.5
+  original_source:
+  - complexportal
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/
 - category: Product
   description: Complete Complex Portal dataset in PSI-MI XML 3.0 format, organized
@@ -48,6 +53,8 @@ products:
   format: psi_mi_xml
   id: complexportal.psi30
   name: Complex Portal PSI-MI XML 3.0
+  original_source:
+  - complexportal
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/
 - category: Product
   description: Complex Portal data in ComplexTAB flat-file format for easy parsing
@@ -55,6 +62,8 @@ products:
   format: tsv
   id: complexportal.complextab
   name: Complex Portal ComplexTAB
+  original_source:
+  - complexportal
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/
 - category: Product
   compression: zip
@@ -62,34 +71,88 @@ products:
   format: psi_mi_xml
   id: complexportal.human.psi25
   name: Complex Portal Human PSI-MI XML 2.5
-  product_file_size: 26432841
+  original_source:
+  - complexportal
+  product_file_size: 27080450
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/Homo_sapiens.zip
 - category: Product
+  compression: zip
   description: Human complexes dataset from Complex Portal in PSI-MI XML 3.0 format
   format: psi_mi_xml
   id: complexportal.human.psi30
   name: Complex Portal Human PSI-MI XML 3.0
-  product_file_size: 23336478
+  original_source:
+  - complexportal
+  product_file_size: 23735308
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/human.zip
+- category: Product
+  compression: zip
+  description: Human predicted complexes dataset from Complex Portal in PSI-MI XML
+    2.5 format
+  format: psi_mi_xml
+  id: complexportal.human.predicted.psi25
+  name: Complex Portal Human Predicted PSI-MI XML 2.5
+  original_source:
+  - complexportal
+  product_file_size: 152994603
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/Homo_sapiens_predicted.zip
+- category: Product
+  compression: zip
+  description: Human predicted complexes dataset from Complex Portal in PSI-MI XML
+    3.0 format
+  format: psi_mi_xml
+  id: complexportal.human.predicted.psi30
+  name: Complex Portal Human Predicted PSI-MI XML 3.0
+  original_source:
+  - complexportal
+  product_file_size: 120346920
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/human_predicted.zip
 - category: Product
   description: Human complexes dataset from Complex Portal in ComplexTAB format
   format: tsv
   id: complexportal.human.complextab
   name: Complex Portal Human ComplexTAB
+  original_source:
+  - complexportal
   product_file_size: 5056483
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9606.tsv
 - category: Product
+  description: Human predicted complexes dataset from Complex Portal in ComplexTAB
+    format
+  format: tsv
+  id: complexportal.human.predicted.complextab
+  name: Complex Portal Human Predicted ComplexTAB
+  original_source:
+  - complexportal
+  product_file_size: 5194064
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9606_predicted.tsv
+- category: Product
+  compression: zip
   description: Mouse complexes dataset from Complex Portal in PSI-MI XML 2.5 format
   format: psi_mi_xml
   id: complexportal.mouse.psi25
   name: Complex Portal Mouse PSI-MI XML 2.5
-  product_file_size: 6243553
+  original_source:
+  - complexportal
+  product_file_size: 6265397
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/Mus_musculus.zip
+- category: Product
+  compression: zip
+  description: Mouse complexes dataset from Complex Portal in PSI-MI XML 3.0 format
+  format: psi_mi_xml
+  id: complexportal.mouse.psi30
+  name: Complex Portal Mouse PSI-MI XML 3.0
+  original_source:
+  - complexportal
+  product_file_size: 5335441
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/mouse.zip
 - category: Product
   description: Mouse complexes dataset from Complex Portal in ComplexTAB format
   format: tsv
   id: complexportal.mouse.complextab
   name: Complex Portal Mouse ComplexTAB
+  original_source:
+  - complexportal
   product_file_size: 1451848
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/10090.tsv
 - category: Product
@@ -98,8 +161,30 @@ products:
   format: psi_mi_xml
   id: complexportal.yeast.psi25
   name: Complex Portal Yeast PSI-MI XML 2.5
-  product_file_size: 4602061
+  original_source:
+  - complexportal
+  product_file_size: 4635082
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/Saccharomyces_cerevisiae.zip
+- category: Product
+  compression: zip
+  description: Yeast complexes dataset from Complex Portal in PSI-MI XML 3.0 format
+  format: psi_mi_xml
+  id: complexportal.yeast.psi30
+  name: Complex Portal Yeast PSI-MI XML 3.0
+  original_source:
+  - complexportal
+  product_file_size: 4038669
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/yeast.zip
+- category: Product
+  description: Budding yeast (S288c) complexes dataset from Complex Portal in ComplexTAB
+    format
+  format: tsv
+  id: complexportal.yeast.s288c.complextab
+  name: Complex Portal Yeast S288c ComplexTAB
+  original_source:
+  - complexportal
+  product_file_size: 892741
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/559292.tsv
 - category: Product
   description: Fruit fly complexes dataset from Complex Portal in ComplexTAB format
   format: tsv
@@ -285,11 +370,42 @@ products:
   name: Complex Portal SARS-CoV-2 ComplexTAB
   product_file_size: 73071
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/2697049.tsv
+- category: Product
+  description: Tab-delimited list of complexes released in the current Complex Portal
+    FTP release
+  format: txt
+  id: complexportal.released-complexes
+  name: Complex Portal Released Complexes
+  original_source:
+  - complexportal
+  product_file_size: 265768
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/released_complexes.txt
+- category: MappingProduct
+  description: Cross-references exported from Complex Portal to external databases
+  format: tsv
+  id: complexportal.db-crossrefs
+  name: Complex Portal Database Cross-References
+  original_source:
+  - complexportal
+  product_file_size: 1258425
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/various/complex_portal_dr_export.tsv
+- category: MappingProduct
+  description: Translation table between stable Complex Portal IDs and IntAct accession
+    identifiers
+  format: txt
+  id: complexportal.id-translation
+  name: Complex Portal ID Translation Table
+  original_source:
+  - complexportal
+  product_file_size: 69895
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/various/cpx_ebi_ac_translation.txt
 - category: ProgrammingInterface
   description: RESTful web service API for programmatic access to Complex Portal data
   format: http
   id: complexportal.webservice
   name: Complex Portal Web Service
+  original_source:
+  - complexportal
   product_url: https://www.ebi.ac.uk/complexportal/webservice
 - category: DocumentationProduct
   description: Comprehensive documentation covering data formats, API usage, and complex
@@ -297,6 +413,8 @@ products:
   format: http
   id: complexportal.documentation
   name: Complex Portal Documentation
+  original_source:
+  - complexportal
   product_url: https://www.ebi.ac.uk/complexportal/documentation
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
