@@ -1,0 +1,16 @@
+---
+category: Product
+description: depmap Nodes TSV
+format: tsv
+id: obo-db-ingest.depmap.tsv
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
+name: depmap Nodes TSV
+original_source:
+- depmap
+product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.tsv
+secondary_source:
+- obo-db-ingest
+layout: product_detail
+---

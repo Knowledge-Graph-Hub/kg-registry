@@ -17,7 +17,7 @@ domains:
 - upper
 homepage_url: https://biopragmatics.github.io/obo-db-ingest/
 id: obo-db-ingest
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-02-26T00:00:00Z'
 layout: resource_detail
 license:
   id: https://biopragmatics.github.io/obo-db-ingest/
@@ -82,6 +82,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.bigg.compartment.tsv
+  name: bigg.compartment Nodes TSV
+  description: bigg.compartment Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.tsv
+  original_source:
+  - bigg
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+- category: Product
   description: bigg.metabolite OBO
   format: obo
   id: obo-db-ingest.bigg.metabolite.obo
@@ -142,6 +155,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.bigg.metabolite.tsv
+  name: bigg.metabolite Nodes TSV
+  description: bigg.metabolite Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
+  original_source:
+  - bigg
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+- category: Product
   description: bigg.model OBO
   format: obo
   id: obo-db-ingest.bigg.model.obo
@@ -183,6 +209,19 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
   secondary_source:
   - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.bigg.model.tsv
+  name: bigg.model Nodes TSV
+  description: bigg.model Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
+  original_source:
+  - bigg
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
 - category: Product
   description: bigg.reaction OBO
   format: obo
@@ -240,6 +279,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.bigg.reaction.tsv
+  name: bigg.reaction Nodes TSV
+  description: bigg.reaction Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
+  original_source:
+  - bigg
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+- category: Product
   description: ccle OBO
   format: obo
   id: obo-db-ingest.ccle.obo
@@ -295,6 +347,19 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
   secondary_source:
   - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.ccle.tsv
+  name: ccle Nodes TSV
+  description: ccle Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.tsv
+  original_source:
+  - ccle
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
 - category: Product
   description: cgnc OBO
   format: obo
@@ -352,6 +417,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.cgnc.tsv
+  name: cgnc Nodes TSV
+  description: cgnc Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.tsv
+  original_source:
+  - cgnc
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: chembl.compound OBO
   format: obo
   id: obo-db-ingest.chembl.compound.obo
@@ -391,6 +469,19 @@ products:
   name: chembl.compound SSSOM
   product_file_size: 767775
   product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.sssom.tsv
+- category: Product
+  id: obo-db-ingest.chembl.compound.tsv
+  name: chembl.compound Nodes TSV
+  description: chembl.compound Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
+  original_source:
+  - chembl
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
 - category: Product
   description: chembl.target OBO
   format: obo
@@ -432,6 +523,19 @@ products:
   product_file_size: 72721
   product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.sssom.tsv
 - category: Product
+  id: obo-db-ingest.chembl.target.tsv
+  name: chembl.target Nodes TSV
+  description: chembl.target Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv
+  original_source:
+  - chembl
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+- category: Product
   description: civic.gid OBO
   format: obo
   id: obo-db-ingest.civic.gid.obo
@@ -472,6 +576,19 @@ products:
   product_file_size: 3977
   product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv
 - category: Product
+  id: obo-db-ingest.civic.gid.tsv
+  name: civic.gid Nodes TSV
+  description: civic.gid Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv
+  original_source:
+  - civic
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+- category: Product
   description: clinicaltrials OBO
   format: obo
   id: obo-db-ingest.clinicaltrials.obo
@@ -479,21 +596,8 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
   name: clinicaltrials OBO
-  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79b61b0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz
+  compression: gzip
 - category: Product
   description: clinicaltrials OWL
   format: owl
@@ -502,21 +606,8 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
   name: clinicaltrials OWL
-  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79b6ba0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl.gz
+  compression: gzip
 - category: Product
   description: clinicaltrials OBO Graph JSON
   format: json
@@ -525,21 +616,8 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
   name: clinicaltrials OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79b72f0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz
+  compression: gzip
 - category: MappingProduct
   description: clinicaltrials SSSOM
   format: sssom
@@ -550,6 +628,19 @@ products:
   name: clinicaltrials SSSOM
   product_file_size: 6299996
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
+- category: Product
+  id: obo-db-ingest.clinicaltrials.tsv
+  name: clinicaltrials Nodes TSV
+  description: clinicaltrials Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv
+  original_source:
+  - clinicaltrials
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions#availability
+    label: Custom
 - category: Product
   description: complexportal OBO
   format: obo
@@ -591,6 +682,19 @@ products:
   product_file_size: 58537
   product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.sssom.tsv
 - category: Product
+  id: obo-db-ingest.complexportal.tsv
+  name: complexportal Nodes TSV
+  description: complexportal Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.tsv
+  original_source:
+  - complexportal
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+- category: Product
   description: cpt OBO
   format: obo
   id: obo-db-ingest.cpt.obo
@@ -618,6 +722,16 @@ products:
   name: cpt SSSOM
   product_file_size: 977
   product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.sssom.tsv
+- category: Product
+  id: obo-db-ingest.cpt.tsv
+  name: cpt Nodes TSV
+  description: cpt Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.tsv
+  original_source:
+  - cpt
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: credit OBO
   format: obo
@@ -648,6 +762,32 @@ products:
   name: credit OBO Graph JSON
   product_file_size: 1577
   product_url: https://w3id.org/biopragmatics/resources/credit/credit.json
+- category: MappingProduct
+  id: obo-db-ingest.credit.sssom.tsv
+  name: credit SSSOM
+  description: credit SSSOM
+  format: sssom
+  product_url: https://w3id.org/biopragmatics/resources/credit/credit.sssom.tsv
+  original_source:
+  - credit
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
+  id: obo-db-ingest.credit.tsv
+  name: credit Nodes TSV
+  description: credit Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/credit/credit.tsv
+  original_source:
+  - credit
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: cvx OBO
   format: obo
@@ -676,6 +816,16 @@ products:
   name: cvx SSSOM
   product_file_size: 128
   product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.sssom.tsv
+- category: Product
+  id: obo-db-ingest.cvx.tsv
+  name: cvx Nodes TSV
+  description: cvx Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.tsv
+  original_source:
+  - cvx
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: depmap OBO
   format: obo
@@ -717,6 +867,19 @@ products:
   product_file_size: 16632
   product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv
 - category: Product
+  id: obo-db-ingest.depmap.tsv
+  name: depmap Nodes TSV
+  description: depmap Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.tsv
+  original_source:
+  - depmap
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: dictybase.gene OBO
   format: obo
   id: obo-db-ingest.dictybase.gene.obo
@@ -746,6 +909,19 @@ products:
   name: dictybase.gene OBO Graph JSON
   product_file_size: 306419
   product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.json
+- category: Product
+  id: obo-db-ingest.dictybase.gene.tsv
+  name: dictybase.gene Nodes TSV
+  description: dictybase.gene Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv
+  original_source:
+  - dictybase
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
 - category: Product
   description: drugcentral OBO
   format: obo
@@ -787,45 +963,67 @@ products:
   product_file_size: 613562
   product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.sssom.tsv
 - category: Product
-  description: eccode OBO
+  id: obo-db-ingest.drugcentral.tsv
+  name: drugcentral Nodes TSV
+  description: drugcentral Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.tsv
+  original_source:
+  - drugcentral
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+- category: Product
+  description: ec OBO
   format: obo
-  id: obo-db-ingest.eccode.obo
+  id: obo-db-ingest.ec.obo
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: eccode OBO
-  product_file_size: 2716228
-  product_url: https://w3id.org/biopragmatics/resources/eccode/eccode.obo
+  name: ec OBO
+  product_url: https://w3id.org/biopragmatics/resources/ec/ec.obo
 - category: Product
-  description: eccode OWL
+  description: ec OWL
   format: owl
-  id: obo-db-ingest.eccode.owl
+  id: obo-db-ingest.ec.owl
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: eccode OWL
-  product_file_size: 3161152
-  product_url: https://w3id.org/biopragmatics/resources/eccode/eccode.owl
+  name: ec OWL
+  product_url: https://w3id.org/biopragmatics/resources/ec/ec.owl
 - category: Product
-  description: eccode OBO Graph JSON
+  description: ec OBO Graph JSON
   format: json
-  id: obo-db-ingest.eccode.json
+  id: obo-db-ingest.ec.json
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: eccode OBO Graph JSON
-  product_file_size: 1632691
-  product_url: https://w3id.org/biopragmatics/resources/eccode/eccode.json
+  name: ec OBO Graph JSON
+  product_url: https://w3id.org/biopragmatics/resources/ec/ec.json
 - category: MappingProduct
-  description: eccode SSSOM
+  description: ec SSSOM
   format: sssom
-  id: obo-db-ingest.eccode.sssom.tsv
+  id: obo-db-ingest.ec.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: eccode SSSOM
-  product_file_size: 8840
-  product_url: https://w3id.org/biopragmatics/resources/eccode/eccode.sssom.tsv
+  name: ec SSSOM
+  product_url: https://w3id.org/biopragmatics/resources/ec/ec.sssom.tsv
+- category: Product
+  id: obo-db-ingest.ec.tsv
+  name: ec Nodes TSV
+  description: ec Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/ec/ec.tsv
+  original_source:
+  - ec
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: flybase OBO
   format: obo
@@ -857,6 +1055,19 @@ products:
   product_file_size: 1883340
   product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.json
 - category: Product
+  id: obo-db-ingest.flybase.tsv
+  name: flybase Nodes TSV
+  description: flybase Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.tsv
+  original_source:
+  - flybase
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: gard OBO
   format: obo
   id: obo-db-ingest.gard.obo
@@ -877,6 +1088,16 @@ products:
   name: gard OBO Graph JSON
   product_file_size: 333132
   product_url: https://w3id.org/biopragmatics/resources/gard/gard.json
+- category: Product
+  id: obo-db-ingest.gard.tsv
+  name: gard Nodes TSV
+  description: gard Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/gard/gard.tsv
+  original_source:
+  - gard
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: geonames OBO
   format: obo
@@ -908,6 +1129,19 @@ products:
   product_file_size: 1475667
   product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.json
 - category: Product
+  id: obo-db-ingest.geonames.tsv
+  name: geonames Nodes TSV
+  description: geonames Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.tsv
+  original_source:
+  - geonames
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: geonames.feature OBO
   format: obo
   id: obo-db-ingest.geonames.feature.obo
@@ -938,6 +1172,19 @@ products:
   product_file_size: 28938
   product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json
 - category: Product
+  id: obo-db-ingest.geonames.feature.tsv
+  name: geonames.feature Nodes TSV
+  description: geonames.feature Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.tsv
+  original_source:
+  - geonames.feature
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: gtdb OBO
   format: obo
   id: obo-db-ingest.gtdb.obo
@@ -945,21 +1192,8 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
   name: gtdb OBO
-  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo.gz
+  compression: gzip
 - category: Product
   description: gtdb OWL
   format: owl
@@ -978,8 +1212,8 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
   name: gtdb OBO Graph JSON
-  product_file_size: 3604366
-  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.json
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz
+  compression: gzip
 - category: MappingProduct
   description: gtdb SSSOM
   format: sssom
@@ -991,13 +1225,27 @@ products:
   product_file_size: 1667414
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 - category: Product
-  description: HGNC OBO
+  id: obo-db-ingest.gtdb.tsv
+  name: gtdb Nodes TSV
+  description: gtdb Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.tsv.gz
+  compression: gzip
+  original_source:
+  - gtdb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+- category: Product
+  description: hgnc OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: HGNC OBO
+  name: hgnc OBO
   original_source:
   - hgnc
   product_file_size: 4253807
@@ -1006,13 +1254,13 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: HGNC OWL
+  description: hgnc OWL
   format: owl
   id: obo-db-ingest.hgnc.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: HGNC OWL
+  name: hgnc OWL
   original_source:
   - hgnc
   product_file_size: 6489789
@@ -1021,13 +1269,13 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: HGNC OBO Graph JSON
+  description: hgnc OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: HGNC OBO Graph JSON
+  name: hgnc OBO Graph JSON
   original_source:
   - hgnc
   product_file_size: 4855839
@@ -1047,6 +1295,20 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
   secondary_source:
   - obo-db-ingest
+  format: sssom
+- category: Product
+  id: obo-db-ingest.hgnc.tsv
+  name: hgnc Nodes TSV
+  description: hgnc Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.tsv
+  original_source:
+  - hgnc
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
 - category: Product
   description: hgnc.genegroup OBO
   format: obo
@@ -1090,6 +1352,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.hgnc.genegroup.tsv
+  name: hgnc.genegroup Nodes TSV
+  description: hgnc.genegroup Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.tsv
+  original_source:
+  - hgnc
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+- category: Product
   description: icd10 OBO
   format: obo
   id: obo-db-ingest.icd10.obo
@@ -1119,6 +1394,19 @@ products:
   name: icd10 OBO Graph JSON
   product_file_size: 52408
   product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.json
+- category: Product
+  id: obo-db-ingest.icd10.tsv
+  name: icd10 Nodes TSV
+  description: icd10 Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.tsv
+  original_source:
+  - icd10
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
+    label: Custom
 - category: Product
   description: icd11 OBO
   format: obo
@@ -1159,6 +1447,59 @@ products:
   name: icd11 SSSOM
   product_file_size: 297909
   product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv
+- category: Product
+  id: obo-db-ingest.icd11.tsv
+  name: icd11 Nodes TSV
+  description: icd11 Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.tsv
+  original_source:
+  - icd11
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
+    label: CC-BY-ND-3.0-IGO
+- category: Product
+  id: obo-db-ingest.iconclass.obo
+  name: iconclass OBO
+  description: iconclass OBO
+  format: obo
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.obo
+  original_source:
+  - iconclass
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.iconclass.owl
+  name: iconclass OWL
+  description: iconclass OWL
+  format: owl
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.owl
+  original_source:
+  - iconclass
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.iconclass.json
+  name: iconclass OBO Graph JSON
+  description: iconclass OBO Graph JSON
+  format: json
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.json
+  original_source:
+  - iconclass
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.iconclass.tsv
+  name: iconclass Nodes TSV
+  description: iconclass Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.tsv
+  original_source:
+  - iconclass
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: interpro OBO
   format: obo
@@ -1202,6 +1543,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.interpro.tsv
+  name: interpro Nodes TSV
+  description: interpro Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+- category: Product
   description: itis OBO
   format: obo
   id: obo-db-ingest.itis.obo
@@ -1217,13 +1571,13 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: ITIS OWL
+  description: itis OWL
   format: owl
   id: obo-db-ingest.itis.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: ITIS OWL
+  name: itis OWL
   original_source:
   - itis
   product_file_size: 14607611
@@ -1232,19 +1586,32 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: ITIS OBO Graph JSON
+  description: itis OBO Graph JSON
   format: json
   id: obo-db-ingest.itis.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: ITIS OBO Graph JSON
+  name: itis OBO Graph JSON
   original_source:
   - itis
   product_file_size: 12669423
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.json.gz
   secondary_source:
   - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.itis.tsv
+  name: itis Nodes TSV
+  description: itis Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/itis/itis.tsv
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
 - category: Product
   description: kegg.genome OBO
   format: obo
@@ -1276,6 +1643,19 @@ products:
   product_file_size: 20525
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
 - category: Product
+  id: obo-db-ingest.kegg.genome.tsv
+  name: kegg.genome Nodes TSV
+  description: kegg.genome Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv
+  original_source:
+  - kegg
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+- category: Product
   description: mesh OBO
   format: obo
   id: obo-db-ingest.mesh.obo
@@ -1293,16 +1673,8 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: mesh OWL
-  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl.gz
+  compression: gzip
 - category: Product
   description: mesh OBO Graph JSON
   format: json
@@ -1311,26 +1683,21 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: mesh OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c763470>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json.gz
+  compression: gzip
+- category: Product
+  id: obo-db-ingest.mesh.tsv
+  name: mesh Nodes TSV
+  description: mesh Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.tsv
+  original_source:
+  - mesh
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
 - category: Product
   description: mgi OBO
   format: obo
@@ -1339,21 +1706,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: mgi OBO
-  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e3289a20>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz
+  compression: gzip
 - category: Product
   description: mgi OWL
   format: owl
@@ -1362,16 +1716,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: mgi OWL
-  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl.gz
+  compression: gzip
 - category: Product
   description: mgi OBO Graph JSON
   format: json
@@ -1380,26 +1726,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: mgi OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761850>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e32a8190>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz
+  compression: gzip
 - category: MappingProduct
   description: mgi SSSOM
   format: sssom
@@ -1410,6 +1738,19 @@ products:
   name: mgi SSSOM
   product_file_size: 1080459
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.sssom.tsv
+- category: Product
+  id: obo-db-ingest.mgi.tsv
+  name: mgi Nodes TSV
+  description: mgi Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.tsv
+  original_source:
+  - mgi
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: mirbase OBO
   format: obo
@@ -1451,6 +1792,19 @@ products:
   product_file_size: 53837
   product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv
 - category: Product
+  id: obo-db-ingest.mirbase.tsv
+  name: mirbase Nodes TSV
+  description: mirbase Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.tsv
+  original_source:
+  - mirbase
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+- category: Product
   description: mirbase.family OBO
   format: obo
   id: obo-db-ingest.mirbase.family.obo
@@ -1481,6 +1835,19 @@ products:
   product_file_size: 113961
   product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json
 - category: Product
+  id: obo-db-ingest.mirbase.family.tsv
+  name: mirbase.family Nodes TSV
+  description: mirbase.family Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.tsv
+  original_source:
+  - mirbase
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+- category: Product
   description: mirbase.mature OBO
   format: obo
   id: obo-db-ingest.mirbase.mature.obo
@@ -1510,16 +1877,19 @@ products:
   name: mirbase.mature OBO Graph JSON
   product_file_size: 373573
   product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json
-- category: MappingProduct
-  description: mirbase.mature SSSOM
-  format: sssom
-  id: obo-db-ingest.mirbase.mature.sssom.tsv
+- category: Product
+  id: obo-db-ingest.mirbase.mature.tsv
+  name: mirbase.mature Nodes TSV
+  description: mirbase.mature Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.tsv
+  original_source:
+  - mirbase
+  secondary_source:
+  - obo-db-ingest
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
-  name: mirbase.mature SSSOM
-  product_file_size: 64
-  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.sssom.tsv
 - category: Product
   description: msigdb OBO
   format: obo
@@ -1528,21 +1898,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: msigdb OBO
-  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/msigdb/msigdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761820>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz
+  compression: gzip
 - category: Product
   description: msigdb OWL
   format: owl
@@ -1551,16 +1908,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: msigdb OWL
-  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz
+  compression: gzip
 - category: Product
   description: msigdb OBO Graph JSON
   format: json
@@ -1569,21 +1918,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: msigdb OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz
+  compression: gzip
 - category: MappingProduct
   description: msigdb SSSOM
   format: sssom
@@ -1594,6 +1930,19 @@ products:
   name: msigdb SSSOM
   product_file_size: 92467
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv
+- category: Product
+  id: obo-db-ingest.msigdb.tsv
+  name: msigdb Nodes TSV
+  description: msigdb Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
+  original_source:
+  - msigdb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: ncbi.gc OBO
   format: obo
@@ -1635,60 +1984,50 @@ products:
   product_file_size: 191
   product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv
 - category: Product
+  id: obo-db-ingest.ncbi.gc.tsv
+  name: ncbi.gc Nodes TSV
+  description: ncbi.gc Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv
+  original_source:
+  - ncbi.gc
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+- category: Product
   description: nihreporter.project OBO
   format: obo
   id: obo-db-ingest.nihreporter.project.obo
   name: nihreporter.project OBO
-  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.obo (Caused
-    by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a9990>_
-    Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo.gz
+  compression: gzip
 - category: Product
   description: nihreporter.project OWL
   format: owl
   id: obo-db-ingest.nihreporter.project.owl
   name: nihreporter.project OWL
-  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl.gz
+  compression: gzip
 - category: Product
   description: nihreporter.project OBO Graph JSON
   format: json
   id: obo-db-ingest.nihreporter.project.json
   name: nihreporter.project OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.json (Caused
-    by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c762b10>_
-    Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json.gz
+  compression: gzip
+- category: Product
+  id: obo-db-ingest.nihreporter.project.tsv
+  name: nihreporter.project Nodes TSV
+  description: nihreporter.project Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz
+  compression: gzip
+  original_source:
+  - nihreporter
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: nlm OBO
   format: obo
@@ -1730,6 +2069,19 @@ products:
   product_file_size: 422890
   product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.sssom.tsv
 - category: Product
+  id: obo-db-ingest.nlm.tsv
+  name: nlm Nodes TSV
+  description: nlm Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.tsv
+  original_source:
+  - nlm
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+- category: Product
   description: nlm.publisher OBO
   format: obo
   id: obo-db-ingest.nlm.publisher.obo
@@ -1759,6 +2111,32 @@ products:
   name: nlm.publisher OBO Graph JSON
   product_file_size: 12675
   product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json
+- category: MappingProduct
+  id: obo-db-ingest.nlm.publisher.sssom.tsv
+  name: nlm.publisher SSSOM
+  description: nlm.publisher SSSOM
+  format: sssom
+  product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.sssom.tsv
+  original_source:
+  - nlm.publisher
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+- category: Product
+  id: obo-db-ingest.nlm.publisher.tsv
+  name: nlm.publisher Nodes TSV
+  description: nlm.publisher Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.tsv
+  original_source:
+  - nlm.publisher
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
 - category: Product
   description: npass OBO
   format: obo
@@ -1800,6 +2178,19 @@ products:
   product_file_size: 833693
   product_url: https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv
 - category: Product
+  id: obo-db-ingest.npass.tsv
+  name: npass Nodes TSV
+  description: npass Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/npass/npass.tsv
+  original_source:
+  - npass
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC
+- category: Product
   description: omim.ps OBO
   format: obo
   id: obo-db-ingest.omim.ps.obo
@@ -1830,6 +2221,19 @@ products:
   product_file_size: 11140
   product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json
 - category: Product
+  id: obo-db-ingest.omim.ps.tsv
+  name: omim.ps Nodes TSV
+  description: omim.ps Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv
+  original_source:
+  - omim
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://www.omim.org/help/agreement
+    label: Custom
+- category: Product
   description: pathbank OBO
   format: obo
   id: obo-db-ingest.pathbank.obo
@@ -1837,26 +2241,8 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: pathbank OBO
-  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e3289ba0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz
+  compression: gzip
 - category: Product
   description: pathbank OWL
   format: owl
@@ -1865,16 +2251,8 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: pathbank OWL
-  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl.gz
+  compression: gzip
 - category: Product
   description: pathbank OBO Graph JSON
   format: json
@@ -1883,16 +2261,8 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: pathbank OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz
+  compression: gzip
 - category: MappingProduct
   description: pathbank SSSOM
   format: sssom
@@ -1903,6 +2273,19 @@ products:
   name: pathbank SSSOM
   product_file_size: 570276
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.sssom.tsv
+- category: Product
+  id: obo-db-ingest.pathbank.tsv
+  name: pathbank Nodes TSV
+  description: pathbank Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.tsv
+  original_source:
+  - pathbank
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
 - category: Product
   description: pfam OBO
   format: obo
@@ -1934,6 +2317,19 @@ products:
   product_file_size: 595575
   product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.json
 - category: Product
+  id: obo-db-ingest.pfam.tsv
+  name: pfam Nodes TSV
+  description: pfam Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.tsv
+  original_source:
+  - pfam
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+- category: Product
   description: pfam.clan OBO
   format: obo
   id: obo-db-ingest.pfam.clan.obo
@@ -1963,6 +2359,19 @@ products:
   name: pfam.clan OBO Graph JSON
   product_file_size: 7820
   product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.json
+- category: Product
+  id: obo-db-ingest.pfam.clan.tsv
+  name: pfam.clan Nodes TSV
+  description: pfam.clan Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv
+  original_source:
+  - pfam
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
 - category: Product
   description: pharmgkb.disease OBO
   format: obo
@@ -2020,6 +2429,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.pharmgkb.disease.tsv
+  name: pharmgkb.disease Nodes TSV
+  description: pharmgkb.disease Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.tsv
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+- category: Product
   description: pharmgkb.drug OBO
   format: obo
   id: obo-db-ingest.pharmgkb.drug.obo
@@ -2075,6 +2497,19 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
   secondary_source:
   - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.pharmgkb.drug.tsv
+  name: pharmgkb.drug Nodes TSV
+  description: pharmgkb.drug Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.tsv
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
 - category: Product
   description: pharmgkb.gene OBO
   format: obo
@@ -2132,6 +2567,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.pharmgkb.gene.tsv
+  name: pharmgkb.gene Nodes TSV
+  description: pharmgkb.gene Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.tsv
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+- category: Product
   description: pharmgkb.pathways OBO
   format: obo
   id: obo-db-ingest.pharmgkb.pathways.obo
@@ -2173,6 +2621,19 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
   secondary_source:
   - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.pharmgkb.pathways.tsv
+  name: pharmgkb.pathways Nodes TSV
+  description: pharmgkb.pathways Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.tsv
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
 - category: Product
   description: pharmgkb.variant OBO
   format: obo
@@ -2230,6 +2691,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  id: obo-db-ingest.pharmgkb.variant.tsv
+  name: pharmgkb.variant Nodes TSV
+  description: pharmgkb.variant Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.tsv
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+- category: Product
   description: pid.pathway OBO
   format: obo
   id: obo-db-ingest.pid.pathway.obo
@@ -2250,6 +2724,16 @@ products:
   name: pid.pathway OBO Graph JSON
   product_file_size: 47185
   product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json
+- category: Product
+  id: obo-db-ingest.pid.pathway.tsv
+  name: pid.pathway Nodes TSV
+  description: pid.pathway Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.tsv
+  original_source:
+  - pid
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pombase OBO
   format: obo
@@ -2281,6 +2765,19 @@ products:
   product_file_size: 368065
   product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.json
 - category: Product
+  id: obo-db-ingest.pombase.tsv
+  name: pombase Nodes TSV
+  description: pombase Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.tsv
+  original_source:
+  - pombase
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: reactome OBO
   format: obo
   id: obo-db-ingest.reactome.obo
@@ -2298,26 +2795,8 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: reactome OWL
-  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl.gz
+  compression: gzip
 - category: Product
   description: reactome OBO Graph JSON
   format: json
@@ -2326,26 +2805,21 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: reactome OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c762270>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e32a9570>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json.gz
+  compression: gzip
+- category: Product
+  id: obo-db-ingest.reactome.tsv
+  name: reactome Nodes TSV
+  description: reactome Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.tsv
+  original_source:
+  - reactome
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
 - category: Product
   description: rgd OBO
   format: obo
@@ -2364,8 +2838,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rgd OWL
-  product_file_size: 231833
-  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.owl
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.owl.gz
+  compression: gzip
 - category: Product
   description: rgd OBO Graph JSON
   format: json
@@ -2374,8 +2848,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rgd OBO Graph JSON
-  product_file_size: 4448579
-  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.json
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.json.gz
+  compression: gzip
 - category: MappingProduct
   description: rgd SSSOM
   format: sssom
@@ -2386,6 +2860,19 @@ products:
   name: rgd SSSOM
   product_file_size: 632341
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
+- category: Product
+  id: obo-db-ingest.rgd.tsv
+  name: rgd Nodes TSV
+  description: rgd Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.tsv
+  original_source:
+  - rgd
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: rhea OBO
   format: obo
@@ -2410,23 +2897,10 @@ products:
   name: rhea OWL
   original_source:
   - rhea
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  compression: gzip
 - category: Product
   description: rhea OBO Graph JSON
   format: json
@@ -2437,31 +2911,18 @@ products:
   name: rhea OBO Graph JSON
   original_source:
   - rhea
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  compression: gzip
 - category: MappingProduct
-  description: Rhea SSSOM
+  description: rhea SSSOM
   format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: Rhea SSSOM
+  name: rhea SSSOM
   original_source:
   - rhea
   - reactome
@@ -2473,6 +2934,19 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.rhea.tsv
+  name: rhea Nodes TSV
+  description: rhea Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.tsv
+  original_source:
+  - rhea
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: ror OBO
   format: obo
@@ -2491,16 +2965,8 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: ror OWL
-  product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl.gz
+  compression: gzip
 - category: Product
   description: ror OBO Graph JSON
   format: json
@@ -2509,21 +2975,8 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: ror OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/ror/ror.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c771610>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/ror/ror.json.gz
+  compression: gzip
 - category: MappingProduct
   description: ror SSSOM
   format: sssom
@@ -2534,6 +2987,19 @@ products:
   name: ror SSSOM
   product_file_size: 2333177
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
+- category: Product
+  id: obo-db-ingest.ror.tsv
+  name: ror Nodes TSV
+  description: ror Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
+  original_source:
+  - ror
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
 - category: Product
   description: sgd OBO
   format: obo
@@ -2565,6 +3031,19 @@ products:
   product_file_size: 628568
   product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.json
 - category: Product
+  id: obo-db-ingest.sgd.tsv
+  name: sgd Nodes TSV
+  description: sgd Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
+  original_source:
+  - sgd
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: signor OBO
   format: obo
   id: obo-db-ingest.signor.obo
@@ -2595,6 +3074,19 @@ products:
   product_file_size: 50966
   product_url: https://w3id.org/biopragmatics/resources/signor/signor.json
 - category: Product
+  id: obo-db-ingest.signor.tsv
+  name: signor Nodes TSV
+  description: signor Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
+  original_source:
+  - signor
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+- category: Product
   description: slm OBO
   format: obo
   id: obo-db-ingest.slm.obo
@@ -2602,21 +3094,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: slm OBO
-  product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/slm/slm.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c760410>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo.gz
+  compression: gzip
 - category: Product
   description: slm OWL
   format: owl
@@ -2625,21 +3104,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: slm OWL
-  product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/slm/slm.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c762780>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl.gz
+  compression: gzip
 - category: Product
   description: slm OBO Graph JSON
   format: json
@@ -2648,26 +3114,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: slm OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e32ab970>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.json.gz
+  compression: gzip
 - category: MappingProduct
   description: slm SSSOM
   format: sssom
@@ -2678,6 +3126,60 @@ products:
   name: slm SSSOM
   product_file_size: 10965328
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv
+- category: Product
+  id: obo-db-ingest.slm.tsv
+  name: slm Nodes TSV
+  description: slm Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz
+  compression: gzip
+  original_source:
+  - slm
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
+  id: obo-db-ingest.spdx.obo
+  name: spdx OBO
+  description: spdx OBO
+  format: obo
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.obo
+  original_source:
+  - spdx
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.spdx.owl
+  name: spdx OWL
+  description: spdx OWL
+  format: owl
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.owl
+  original_source:
+  - spdx
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.spdx.json
+  name: spdx OBO Graph JSON
+  description: spdx OBO Graph JSON
+  format: json
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.json
+  original_source:
+  - spdx
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  id: obo-db-ingest.spdx.tsv
+  name: spdx Nodes TSV
+  description: spdx Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.tsv
+  original_source:
+  - spdx
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: sty OBO
   format: obo
@@ -2700,6 +3202,16 @@ products:
   product_file_size: 3145
   product_url: https://w3id.org/biopragmatics/resources/sty/sty.json
 - category: Product
+  id: obo-db-ingest.sty.tsv
+  name: sty Nodes TSV
+  description: sty Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
+  original_source:
+  - sty
+  secondary_source:
+  - obo-db-ingest
+- category: Product
   description: uniprot OBO
   format: obo
   id: obo-db-ingest.uniprot.obo
@@ -2707,21 +3219,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: uniprot OBO
-  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e328a800>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz
+  compression: gzip
 - category: Product
   description: uniprot OWL
   format: owl
@@ -2730,21 +3229,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: uniprot OWL
-  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl.gz
+  compression: gzip
 - category: Product
   description: uniprot OBO Graph JSON
   format: json
@@ -2753,26 +3239,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: uniprot OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e32a8940>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz
+  compression: gzip
 - category: MappingProduct
   description: uniprot SSSOM
   format: sssom
@@ -2783,6 +3251,19 @@ products:
   name: uniprot SSSOM
   product_file_size: 1503008
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv
+- category: Product
+  id: obo-db-ingest.uniprot.tsv
+  name: uniprot Nodes TSV
+  description: uniprot Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.tsv
+  original_source:
+  - uniprot
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 - category: Product
   description: uniprot.ptm OBO
   format: obo
@@ -2824,6 +3305,19 @@ products:
   product_file_size: 8833
   product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.sssom.tsv
 - category: Product
+  id: obo-db-ingest.uniprot.ptm.tsv
+  name: uniprot.ptm Nodes TSV
+  description: uniprot.ptm Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv
+  original_source:
+  - uniprot
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+- category: Product
   description: wikipathways OBO
   format: obo
   id: obo-db-ingest.wikipathways.obo
@@ -2854,6 +3348,19 @@ products:
   product_file_size: 394845
   product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
 - category: Product
+  id: obo-db-ingest.wikipathways.tsv
+  name: wikipathways Nodes TSV
+  description: wikipathways Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.tsv
+  original_source:
+  - wikipathways
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+- category: Product
   description: zfin OBO
   format: obo
   id: obo-db-ingest.zfin.obo
@@ -2877,28 +3384,10 @@ products:
   name: zfin OWL
   original_source:
   - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79e83b0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  compression: gzip
 - category: Product
   description: zfin OBO Graph JSON
   format: json
@@ -2909,23 +3398,10 @@ products:
   name: zfin OBO Graph JSON
   original_source:
   - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761070>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
+  compression: gzip
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
@@ -2939,6 +3415,20 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
   secondary_source:
   - obo-db-ingest
+  format: sssom
+- category: Product
+  id: obo-db-ingest.zfin.tsv
+  name: zfin Nodes TSV
+  description: zfin Nodes TSV
+  format: tsv
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
+  original_source:
+  - zfin
+  secondary_source:
+  - obo-db-ingest
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---
 OBO Database Ingestion
