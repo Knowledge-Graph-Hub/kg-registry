@@ -1,13 +1,13 @@
 ---
 category: Product
 compression: gzip
-description: ITIS OBO Graph JSON
+description: itis OBO Graph JSON
 format: json
 id: obo-db-ingest.itis.json
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
-name: ITIS OBO Graph JSON
+name: itis OBO Graph JSON
 original_source:
 - itis
 product_file_size: 12669423

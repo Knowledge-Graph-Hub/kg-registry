@@ -10,14 +10,14 @@ contacts:
     value: https://signor.uniroma2.it/contact.php
   label: SIGNOR Team (University of Rome Tor Vergata & Sapienza University of Rome)
 creation_date: '2025-08-12T00:00:00Z'
-description: "SIGNOR (SIGnaling Network Open Resource) is a manually curated repository\
-  \ of experimentally supported, causal relationships between human proteins and other\
-  \ biologically relevant entities (chemicals, phenotypes, complexes, families, stimuli).\
-  \ Each interaction is annotated with effect, mechanism, directionality, evidence\
-  \ (PMID), and a relevance score, enabling construction and analysis of signed, directed\
-  \ signaling networks and pathways. Cite SIGNOR (Lo Surdo et al., 2022 NAR) when\
-  \ using data; interaction data are directional and signed\u2014verify effect/mechanism\
-  \ fields when integrating."
+description: SIGNOR (SIGnaling Network Open Resource) is a manually curated repository
+  of experimentally supported, causal relationships between human proteins and other
+  biologically relevant entities (chemicals, phenotypes, complexes, families, stimuli).
+  Each interaction is annotated with effect, mechanism, directionality, evidence (PMID),
+  and a relevance score, enabling construction and analysis of signed, directed signaling
+  networks and pathways. Cite SIGNOR (Lo Surdo et al., 2022 NAR) when using data;
+  interaction data are directional and signed—verify effect/mechanism fields when
+  integrating.
 domains:
 - pathways
 - biomedical
@@ -183,6 +183,20 @@ products:
   product_url: https://stars.renci.org/var/translator/releases/signor/2025_12_15/
   secondary_source:
   - translator
+- category: Product
+  description: signor Nodes TSV
+  format: tsv
+  id: obo-db-ingest.signor.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+  name: signor Nodes TSV
+  original_source:
+  - signor
+  product_file_size: 29422
+  product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - id: https://doi.org/10.1093/nar/gkac883
   journal: Nucleic Acids Research

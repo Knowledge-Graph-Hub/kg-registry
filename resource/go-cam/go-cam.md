@@ -61,11 +61,9 @@ products:
   - go-cam
   product_url: https://github.com/geneontology/go-cam
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/api/

@@ -169,6 +169,20 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+- category: Product
+  description: depmap Nodes TSV
+  format: tsv
+  id: obo-db-ingest.depmap.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: depmap Nodes TSV
+  original_source:
+  - depmap
+  product_file_size: 18757
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Meyers RM
@@ -199,7 +213,6 @@ repository: https://github.com/broadinstitute/depmap_omics
 taxon:
 - NCBITaxon:9606
 ---
-
 # DepMap
 
 The Cancer Dependency Map (DepMap) is a comprehensive effort to systematically identify cancer dependencies and the biomarkers that predict them. As a collaborative initiative led by the Broad Institute, DepMap aims to accelerate the development of precision treatments for cancer by providing open access to key cancer dependency data, analytical tools, and visualization resources.

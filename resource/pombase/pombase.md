@@ -38,11 +38,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -61,11 +59,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -1094,6 +1090,20 @@ products:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
+- category: Product
+  description: pombase Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pombase.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: pombase Nodes TSV
+  original_source:
+  - pombase
+  product_file_size: 143806
+  product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://www.pombase.org/datasets
 taxon:
 - NCBITaxon:4896

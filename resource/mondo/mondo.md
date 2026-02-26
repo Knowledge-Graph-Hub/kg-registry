@@ -793,6 +793,16 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
+- category: Product
+  description: History file tracking changes to Mondo term mappings to CUIs
+  format: txt
+  id: medgen.mondo-history
+  name: Mondo CUI History
+  original_source:
+  - medgen
+  - mondo
+  product_file_size: 1012883
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
 repository: https://github.com/monarch-initiative/mondo
 taxon:
 - NCBITaxon:33208

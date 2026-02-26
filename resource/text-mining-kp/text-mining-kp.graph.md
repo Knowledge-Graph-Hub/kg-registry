@@ -7,7 +7,7 @@ product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
 warnings:
 - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+- File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
   header found
 layout: product_detail
 ---

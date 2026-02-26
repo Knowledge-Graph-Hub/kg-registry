@@ -23,7 +23,7 @@ products:
   name: vhog.owl
   product_url: http://purl.obolibrary.org/obo/vhog.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 ---
 ## Description

@@ -10,6 +10,7 @@ contacts:
     value: https://www.ebi.ac.uk/support/pfam
   id: ebi
   label: European Bioinformatics Institute (EMBL-EBI)
+creation_date: '2025-05-28T00:00:00Z'
 description: Pfam is a large collection of protein families, each represented by multiple
   sequence alignments and hidden Markov models (HMMs), providing annotations of protein
   domains and functional sites.
@@ -18,6 +19,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/interpro/entry/pfam/
 id: pfam
 infores_id: pfam
+last_modified_date: '2026-01-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -577,6 +579,34 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: pfam Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pfam.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam Nodes TSV
+  original_source:
+  - pfam
+  product_file_size: 460967
+  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pfam.clan Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pfam.clan.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: pfam.clan Nodes TSV
+  original_source:
+  - pfam
+  product_file_size: 6407
+  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - T. Paysan-Lafosse
@@ -642,8 +672,6 @@ publications:
   year: '2019'
 repository: ''
 version: '37.0'
-creation_date: '2025-05-28T00:00:00Z'
-last_modified_date: '2026-01-30T00:00:00Z'
 ---
 Pfam is a large collection of protein families, each represented by multiple sequence alignments and profile hidden Markov models (HMMs). Proteins are generally composed of one or more functional regions, commonly termed domains. The presence of different domains in varying combinations in different proteins gives rise to the diverse repertoire of proteins found in nature. Identifying the domains present in a protein can provide insights into its function.
 

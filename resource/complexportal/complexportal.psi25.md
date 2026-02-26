@@ -5,6 +5,8 @@ description: Complete Complex Portal dataset in PSI-MI XML 2.5 format, organized
 format: psi_mi_xml
 id: complexportal.psi25
 name: Complex Portal PSI-MI XML 2.5
+original_source:
+- complexportal
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/
 layout: product_detail
 ---

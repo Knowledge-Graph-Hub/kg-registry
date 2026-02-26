@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: zfin SSSOM
+format: sssom
 id: obo-db-ingest.zfin.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by/4.0/

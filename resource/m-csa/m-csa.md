@@ -6,7 +6,8 @@ contacts:
   contact_details:
   - contact_type: email
     value: ribeiro@ebi.ac.uk
-  label: António JM Ribeiro
+  label: "Ant\xF3nio JM Ribeiro"
+creation_date: '2025-03-17T00:00:00Z'
 description: The Mechanism and Catalytic Site Atlas (M-CSA) is a database of enzyme
   reaction mechanisms. It provides annotation on the protein, catalytic residues,
   cofactors, and the reaction mechanisms of hundreds of enzymes. There are two kinds
@@ -18,6 +19,7 @@ domains:
 - biological systems
 homepage_url: https://www.ebi.ac.uk/thornton-srv/m-csa/
 id: m-csa
+last_modified_date: '2025-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -25,13 +27,13 @@ license:
 name: M-CSA
 products:
 - category: MappingProduct
-  description: Rhea SSSOM
+  description: rhea SSSOM
   format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: Rhea SSSOM
+  name: rhea SSSOM
   original_source:
   - rhea
   - reactome
@@ -43,7 +45,5 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest
-creation_date: '2025-03-17T00:00:00Z'
-last_modified_date: '2025-08-06T00:00:00Z'
 ---
 M-CSA

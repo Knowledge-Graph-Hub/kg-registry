@@ -49,6 +49,7 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  compression: gzip
   description: zfin OWL
   format: owl
   id: obo-db-ingest.zfin.owl
@@ -58,29 +59,12 @@ products:
   name: zfin OWL
   original_source:
   - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
+  product_file_size: 4556098
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f4fb79e83b0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
 - category: Product
+  compression: gzip
   description: zfin OBO Graph JSON
   format: json
   id: obo-db-ingest.zfin.json
@@ -90,25 +74,13 @@ products:
   name: zfin OBO Graph JSON
   original_source:
   - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
+  product_file_size: 4010220
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761070>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
+  format: sssom
   id: obo-db-ingest.zfin.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -1173,9 +1145,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: zip
@@ -1195,6 +1167,20 @@ products:
   product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
   secondary_source:
   - biogrid
+- category: Product
+  description: zfin Nodes TSV
+  format: tsv
+  id: obo-db-ingest.zfin.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: zfin Nodes TSV
+  original_source:
+  - zfin
+  product_file_size: 1884582
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://github.com/ZFIN/
 taxon:
 - NCBITaxon:7955

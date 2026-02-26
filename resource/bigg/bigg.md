@@ -6,6 +6,7 @@ collection:
 contacts:
 - category: Organization
   label: Systems Biology Research Group at the University of California, San Diego
+creation_date: '2025-03-09T00:00:00Z'
 description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
 domains:
 - biological systems
@@ -14,6 +15,7 @@ domains:
 - simulation
 homepage_url: http://bigg.ucsd.edu/
 id: bigg
+last_modified_date: '2025-09-27T00:00:00Z'
 layout: resource_detail
 license:
   id: http://bigg.ucsd.edu/license#license
@@ -235,6 +237,62 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
   secondary_source:
   - obo-db-ingest
+- category: Product
+  description: bigg.compartment Nodes TSV
+  format: tsv
+  id: obo-db-ingest.bigg.compartment.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.compartment Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 297
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: bigg.metabolite Nodes TSV
+  format: tsv
+  id: obo-db-ingest.bigg.metabolite.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.metabolite Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 266629
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: bigg.model Nodes TSV
+  format: tsv
+  id: obo-db-ingest.bigg.model.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.model Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 1151
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: bigg.reaction Nodes TSV
+  format: tsv
+  id: obo-db-ingest.bigg.reaction.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.reaction Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 593163
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - King ZA
@@ -253,7 +311,5 @@ publications:
     models'
   year: '2016'
 repository: https://github.com/SBRG/bigg_models
-creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-09-27T00:00:00Z'
 ---
 BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.

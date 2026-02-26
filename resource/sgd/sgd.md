@@ -243,9 +243,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip
@@ -626,6 +626,20 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: sgd Nodes TSV
+  format: tsv
+  id: obo-db-ingest.sgd.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: sgd Nodes TSV
+  original_source:
+  - sgd
+  product_file_size: 503057
+  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
+  secondary_source:
+  - obo-db-ingest
 taxon:
 - NCBITaxon:4932
 ---

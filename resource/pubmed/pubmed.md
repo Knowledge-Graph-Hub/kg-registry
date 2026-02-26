@@ -190,9 +190,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -227,9 +227,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 418 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 418 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 418 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 418 error
     when accessing file'
 - category: Product
   description: Manually curated disease-gene associations and annotations for amyloidoses
@@ -263,10 +263,21 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-25: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-26: FTP error: timed
     out'
+- category: Product
+  compression: gzip
+  description: Links between MedGen concepts and PubMed articles with gzip compression
+  format: txt
+  id: medgen.pubmed-links
+  name: MedGen PubMed Links
+  original_source:
+  - medgen
+  - pubmed
+  product_file_size: 239947326
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/medgen_pubmed_lnk.txt.gz
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

@@ -9,6 +9,7 @@ contacts:
   label: CIViC Support
 - category: Organization
   label: The McDonnell Genome Institute at Washington University School of Medicine
+creation_date: '2025-05-29T00:00:00Z'
 description: The Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase
   is a free and open resource for public use that enables the interpretation of variants
   in cancer by providing community-curated information about the clinical significance
@@ -21,6 +22,8 @@ domains:
 - precision medicine
 homepage_url: https://civicdb.org/
 id: civic
+infores_id: civic
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -145,6 +148,20 @@ products:
   - protcid
   secondary_source:
   - spoke
+- category: Product
+  description: civic.gid Nodes TSV
+  format: tsv
+  id: obo-db-ingest.civic.gid.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: civic.gid Nodes TSV
+  original_source:
+  - civic
+  product_file_size: 34804
+  product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Griffith M
@@ -225,9 +242,6 @@ publications:
   title: Standard operating procedure for curation and clinical interpretation of
     variants in cancer
   year: '2019'
-infores_id: civic
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-05-29T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
 ---

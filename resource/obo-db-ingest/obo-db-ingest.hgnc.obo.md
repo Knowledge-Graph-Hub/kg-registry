@@ -1,12 +1,12 @@
 ---
 category: Product
-description: HGNC OBO
+description: hgnc OBO
 format: obo
 id: obo-db-ingest.hgnc.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
-name: HGNC OBO
+name: hgnc OBO
 original_source:
 - hgnc
 product_file_size: 4253807

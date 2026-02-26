@@ -37,13 +37,13 @@ license:
 name: KEGG
 products:
 - category: MappingProduct
-  description: Rhea SSSOM
+  description: rhea SSSOM
   format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: Rhea SSSOM
+  name: rhea SSSOM
   original_source:
   - rhea
   - reactome
@@ -1006,6 +1006,20 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: kegg.genome Nodes TSV
+  format: tsv
+  id: obo-db-ingest.kegg.genome.tsv
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome Nodes TSV
+  original_source:
+  - kegg
+  product_file_size: 187935
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - id: doi:10.1093/nar/gkae909
   preferred: true

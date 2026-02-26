@@ -4,12 +4,14 @@ category: DataSource
 contacts:
 - category: Organization
   label: CCLE
+creation_date: '2025-03-18T00:00:00Z'
 description: CCLE is the Cancer Cell Line Encyclopedia, a collaboration between the
   Broad Institute and the Novartis Institutes for Biomedical Research.
 domains:
 - health
 homepage_url: https://sites.broadinstitute.org/ccle/
 id: ccle
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 name: CCLE
 products:
@@ -140,9 +142,21 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: Product
+  description: ccle Nodes TSV
+  format: tsv
+  id: obo-db-ingest.ccle.tsv
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL-1.0
+  name: ccle Nodes TSV
+  original_source:
+  - ccle
+  product_file_size: 12188
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.tsv
+  secondary_source:
+  - obo-db-ingest
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-03-18T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
 ---
 CCLE

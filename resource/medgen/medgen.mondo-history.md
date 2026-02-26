@@ -4,11 +4,10 @@ description: History file tracking changes to Mondo term mappings to CUIs
 format: txt
 id: medgen.mondo-history
 name: Mondo CUI History
+original_source:
+- medgen
+- mondo
+product_file_size: 1012883
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
-warnings:
-- File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
-  header found
 layout: product_detail
 ---

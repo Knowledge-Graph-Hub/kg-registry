@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- ber
 contacts:
 - category: Organization
   contact_details:
@@ -9,8 +11,6 @@ contacts:
   - contact_type: email
     value: itiswebmaster@itis.gov
   label: Integrated Taxonomic Information System (ITIS)
-collection:
-- ber
 creation_date: '2025-09-03T00:00:00Z'
 description: The Integrated Taxonomic Information System (ITIS) provides authoritative
   taxonomic information on plants, animals, fungi, and microbes of North America and
@@ -73,13 +73,13 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: ITIS OWL
+  description: itis OWL
   format: owl
   id: obo-db-ingest.itis.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: ITIS OWL
+  name: itis OWL
   original_source:
   - itis
   product_file_size: 14607611
@@ -88,17 +88,31 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: ITIS OBO Graph JSON
+  description: itis OBO Graph JSON
   format: json
   id: obo-db-ingest.itis.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: ITIS OBO Graph JSON
+  name: itis OBO Graph JSON
   original_source:
   - itis
   product_file_size: 12669423
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.json.gz
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: itis Nodes TSV
+  format: tsv
+  id: obo-db-ingest.itis.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: itis Nodes TSV
+  original_source:
+  - itis
+  product_file_size: 9497861
+  product_url: https://w3id.org/biopragmatics/resources/itis/itis.tsv
   secondary_source:
   - obo-db-ingest
 taxon:

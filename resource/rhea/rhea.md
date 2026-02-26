@@ -34,6 +34,7 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  compression: gzip
   description: rhea OWL
   format: owl
   id: obo-db-ingest.rhea.owl
@@ -43,24 +44,12 @@ products:
   name: rhea OWL
   original_source:
   - rhea
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
+  product_file_size: 7945039
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
 - category: Product
+  compression: gzip
   description: rhea OBO Graph JSON
   format: json
   id: obo-db-ingest.rhea.json
@@ -70,31 +59,18 @@ products:
   name: rhea OBO Graph JSON
   original_source:
   - rhea
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
+  product_file_size: 5228738
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
-    when accessing file'
 - category: MappingProduct
-  description: Rhea SSSOM
+  description: rhea SSSOM
   format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: Rhea SSSOM
+  name: rhea SSSOM
   original_source:
   - rhea
   - reactome
@@ -277,6 +253,20 @@ products:
   - rhea
   product_file_size: 126760
   product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=enzymes.tsv
+- category: Product
+  description: rhea Nodes TSV
+  format: tsv
+  id: obo-db-ingest.rhea.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: rhea Nodes TSV
+  original_source:
+  - rhea
+  product_file_size: 981824
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Bansal P

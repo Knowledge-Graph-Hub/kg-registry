@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: hgnc SSSOM
+format: sssom
 id: obo-db-ingest.hgnc.sssom.tsv
 license:
   id: https://creativecommons.org.publicdomain/zero/1.0/

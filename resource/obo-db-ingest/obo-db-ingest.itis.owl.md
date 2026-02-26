@@ -1,13 +1,13 @@
 ---
 category: Product
 compression: gzip
-description: ITIS OWL
+description: itis OWL
 format: owl
 id: obo-db-ingest.itis.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
-name: ITIS OWL
+name: itis OWL
 original_source:
 - itis
 product_file_size: 14607611

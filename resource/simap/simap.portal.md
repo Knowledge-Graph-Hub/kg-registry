@@ -10,7 +10,7 @@ product_url: http://mips.helmholtz-muenchen.de/simap/
 warnings:
 - File was not able to be retrieved when checked on 2026-02-25_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-02-24_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-02-25_ Timeout connecting
   to URL
 layout: product_detail
 ---

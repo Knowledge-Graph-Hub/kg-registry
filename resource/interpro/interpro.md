@@ -246,8 +246,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -731,6 +731,20 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: interpro Nodes TSV
+  format: tsv
+  id: obo-db-ingest.interpro.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: interpro Nodes TSV
+  original_source:
+  - interpro
+  product_file_size: 697846
+  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Blum M
@@ -751,7 +765,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - "Llinares-L\xF3pez F"
+  - Llinares-López F
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H

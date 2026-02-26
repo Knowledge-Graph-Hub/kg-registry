@@ -1,16 +1,10 @@
 ---
 category: Product
+compression: gzip
 description: nihreporter.project OWL
 format: owl
 id: obo-db-ingest.nihreporter.project.owl
 name: nihreporter.project OWL
-product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
-warnings:
-- File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-  to URL
+product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl.gz
 layout: product_detail
 ---

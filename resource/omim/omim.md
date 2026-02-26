@@ -151,9 +151,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
@@ -171,9 +171,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -722,6 +722,32 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: MappingProduct
+  compression: gzip
+  description: Combined mappings between MedGen, HPO, and OMIM with gzip compression
+  format: txt
+  id: medgen.hpo-omim-mapping
+  name: MedGen HPO OMIM Mapping
+  original_source:
+  - medgen
+  - hp
+  - omim
+  product_file_size: 4125863
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_OMIM_Mapping.txt.gz
+- category: Product
+  description: omim.ps Nodes TSV
+  format: tsv
+  id: obo-db-ingest.omim.ps.tsv
+  license:
+    id: https://www.omim.org/help/agreement
+    label: Custom
+  name: omim.ps Nodes TSV
+  original_source:
+  - omim
+  product_file_size: 9568
+  product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research

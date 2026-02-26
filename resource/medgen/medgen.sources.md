@@ -4,7 +4,9 @@ description: Information about source databases and their contributions to MedGe
 format: txt
 id: medgen.sources
 name: MedGen Sources
-product_file_size: 3550
+original_source:
+- medgen
+product_file_size: 10385
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_Sources.txt
 layout: product_detail
 ---

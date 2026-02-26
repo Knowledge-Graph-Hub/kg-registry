@@ -5,6 +5,8 @@ description: Advanced search interface with support for queries by name, related
 format: http
 id: medgen.search
 name: Advanced Search
-product_url: https://www.ncbi.nlm.nih.gov/medgen/advanced
+original_source:
+- medgen
+product_url: https://www.ncbi.nlm.nih.gov/medgen/advanced/
 layout: product_detail
 ---

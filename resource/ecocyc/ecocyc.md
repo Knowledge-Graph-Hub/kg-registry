@@ -12,6 +12,7 @@ contacts:
   - contact_type: url
     value: https://ecocyc.org/contact.shtml
   label: EcoCyc
+creation_date: '2025-03-17T00:00:00Z'
 description: EcoCyc captures information from 44,000 publications for Escherichia
   coli K-12 substr. MG1655. Use EcoCyc to search for knowledge on E. coli genes, regulation,
   and metabolism; analyze transcriptomics data; perform comparative analyses; and
@@ -23,6 +24,7 @@ domains:
 - pathways
 homepage_url: https://ecocyc.org/
 id: ecocyc
+last_modified_date: '2025-09-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ecocyc.org/download.shtml
@@ -30,13 +32,13 @@ license:
 name: EcoCyc
 products:
 - category: MappingProduct
-  description: Rhea SSSOM
+  description: rhea SSSOM
   format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: Rhea SSSOM
+  name: rhea SSSOM
   original_source:
   - rhea
   - reactome
@@ -72,8 +74,6 @@ products:
   - ecocyc
   product_url: http://www.biomedcentral.com/1752-0509/8/79
 repository: https://biocyc.org/download.shtml
-creation_date: '2025-03-17T00:00:00Z'
-last_modified_date: '2025-09-27T00:00:00Z'
 ---
 EcoCyc is a comprehensive database that captures information from over 44,000 publications for Escherichia coli K-12 substr. MG1655. It is part of the larger BioCyc collection of thousands of Pathway/Genome Databases for sequenced genomes. 
 

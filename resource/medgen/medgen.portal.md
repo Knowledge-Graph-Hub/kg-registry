@@ -5,6 +5,8 @@ description: Main web portal for searching and browsing conditions, phenotypes, 
 format: http
 id: medgen.portal
 name: MedGen Portal
+original_source:
+- medgen
 product_url: https://www.ncbi.nlm.nih.gov/medgen/
 layout: product_detail
 ---

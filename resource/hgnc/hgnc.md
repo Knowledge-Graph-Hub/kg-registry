@@ -24,13 +24,13 @@ license:
 name: HGNC
 products:
 - category: Product
-  description: HGNC OBO
+  description: hgnc OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: HGNC OBO
+  name: hgnc OBO
   original_source:
   - hgnc
   product_file_size: 4253807
@@ -39,13 +39,13 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: HGNC OWL
+  description: hgnc OWL
   format: owl
   id: obo-db-ingest.hgnc.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: HGNC OWL
+  name: hgnc OWL
   original_source:
   - hgnc
   product_file_size: 6489789
@@ -54,13 +54,13 @@ products:
   - obo-db-ingest
 - category: Product
   compression: gzip
-  description: HGNC OBO Graph JSON
+  description: hgnc OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: HGNC OBO Graph JSON
+  name: hgnc OBO Graph JSON
   original_source:
   - hgnc
   product_file_size: 4855839
@@ -69,6 +69,7 @@ products:
   - obo-db-ingest
 - category: MappingProduct
   description: hgnc SSSOM
+  format: sssom
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
     id: https://creativecommons.org.publicdomain/zero/1.0/
@@ -144,9 +145,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -701,9 +702,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
@@ -1147,6 +1148,34 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: hgnc Nodes TSV
+  format: tsv
+  id: obo-db-ingest.hgnc.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: hgnc Nodes TSV
+  original_source:
+  - hgnc
+  product_file_size: 1234512
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: hgnc.genegroup Nodes TSV
+  format: tsv
+  id: obo-db-ingest.hgnc.genegroup.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: hgnc.genegroup Nodes TSV
+  original_source:
+  - hgnc
+  product_file_size: 190009
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://github.com/HGNC
 taxon:
 - NCBITaxon:9606

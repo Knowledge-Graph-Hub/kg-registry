@@ -31,11 +31,9 @@ products:
   secondary_source:
   - cgnc
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 404 error
     when accessing file'
 - category: Product
   description: cgnc OBO
@@ -91,6 +89,20 @@ products:
   - cgnc
   product_file_size: 258292
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: cgnc Nodes TSV
+  format: tsv
+  id: obo-db-ingest.cgnc.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: cgnc Nodes TSV
+  original_source:
+  - cgnc
+  product_file_size: 406670
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.tsv
   secondary_source:
   - obo-db-ingest
 publications:

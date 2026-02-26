@@ -312,6 +312,89 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing concept names and source
+    identifiers with gzip compression
+  format: txt
+  id: medgen.mgconso
+  name: MGCONSO (Concept Names)
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 15843494
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing definitions and descriptions
+    with gzip compression
+  format: txt
+  id: medgen.mgdef
+  name: MGDEF (Definitions)
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 5062289
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+- category: MappingProduct
+  compression: gzip
+  description: Rich Release Format (RRF) file containing relationships between concepts
+    with gzip compression
+  format: txt
+  id: medgen.mgrel
+  name: MGREL (Relationships)
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 15661303
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing attributes and properties
+    with gzip compression
+  format: txt
+  id: medgen.mgsat
+  name: MGSAT (Attributes)
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 11710268
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing semantic type assignments
+    with gzip compression
+  format: txt
+  id: medgen.mgsty
+  name: MGSTY (Semantic Types)
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 1644564
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing concept names for search
+    with gzip compression
+  format: txt
+  id: medgen.names
+  name: NAMES
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 3097271
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
+- category: Product
+  compression: gzip
+  description: Merged CUI mappings showing concept consolidations with gzip compression
+  format: txt
+  id: medgen.merged
+  name: MERGED (Merged CUIs)
+  original_source:
+  - medgen
+  - umls
+  product_file_size: 47602
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
 publications:
 - id: PMID:14681409
   preferred: true

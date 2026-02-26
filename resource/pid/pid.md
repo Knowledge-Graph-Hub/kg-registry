@@ -48,6 +48,7 @@ domains:
 - biological systems
 homepage_url: http://pid.nci.nih.gov/
 id: pid
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 name: Pathway Interaction Database
 products:
@@ -154,6 +155,17 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+- category: Product
+  description: pid.pathway Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pid.pathway.tsv
+  name: pid.pathway Nodes TSV
+  original_source:
+  - pid
+  product_file_size: 3923
+  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - id: https://doi.org/10.1093/nar/gkn653
   title: 'PID: the Pathway Interaction Database'
@@ -164,7 +176,6 @@ synonyms:
 - NCI-Nature PID
 taxon:
 - NCBITaxon:9606
-last_modified_date: '2025-12-13T00:00:00Z'
 ---
 # Pathway Interaction Database
 

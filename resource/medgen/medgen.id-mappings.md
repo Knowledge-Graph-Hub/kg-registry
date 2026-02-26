@@ -6,7 +6,9 @@ description: Mappings between MedGen CUIs and external source identifiers with g
 format: txt
 id: medgen.id-mappings
 name: MedGen ID Mappings
-product_file_size: 5557930
+original_source:
+- medgen
+product_file_size: 5955308
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz
 layout: product_detail
 ---

@@ -5,6 +5,8 @@ description: Web portal for searching, browsing, and visualizing macromolecular 
 format: http
 id: complexportal.portal
 name: Complex Portal Web Interface
-product_url: https://www.ebi.ac.uk/complexportal/home
+original_source:
+- complexportal
+product_url: https://www.ebi.ac.uk/complexportal/
 layout: product_detail
 ---

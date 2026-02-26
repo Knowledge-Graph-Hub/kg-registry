@@ -8,6 +8,7 @@ contacts:
     value: chembl-help@ebi.ac.uk
   id: ebi
   label: ChEMBL
+creation_date: '2025-03-09T00:00:00Z'
 description: ChEMBL is a manually curated database of bioactive molecules with drug-like
   properties. It brings together chemical, bioactivity and genomic data to aid the
   translation of genomic information into effective new drugs.
@@ -16,6 +17,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/chembl/
 id: chembl
 infores_id: chembl
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/
@@ -534,6 +536,34 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: Product
+  description: chembl.compound Nodes TSV
+  format: tsv
+  id: obo-db-ingest.chembl.compound.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.compound Nodes TSV
+  original_source:
+  - chembl
+  product_file_size: 411222
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: chembl.target Nodes TSV
+  format: tsv
+  id: obo-db-ingest.chembl.target.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/3.0/
+    label: CC-BY-SA-3.0
+  name: chembl.target Nodes TSV
+  original_source:
+  - chembl
+  product_file_size: 260194
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Zdrazil B
@@ -549,7 +579,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - "Kizil\xF6ren T"
+  - Kizilören T
   - Gaulton A
   - Bento AP
   - Adasme MF
@@ -566,8 +596,6 @@ repository: https://github.com/chembl
 taxon:
 - NCBITaxon:9606
 - NCBITaxon:10090
-creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
 

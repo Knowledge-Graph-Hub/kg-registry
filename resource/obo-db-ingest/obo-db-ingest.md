@@ -82,18 +82,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.bigg.compartment.tsv
-  name: bigg.compartment Nodes TSV
   description: bigg.compartment Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.tsv
-  original_source:
-  - bigg
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.bigg.compartment.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
+  name: bigg.compartment Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 297
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: bigg.metabolite OBO
   format: obo
@@ -155,18 +156,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.bigg.metabolite.tsv
-  name: bigg.metabolite Nodes TSV
   description: bigg.metabolite Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
-  original_source:
-  - bigg
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.bigg.metabolite.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
+  name: bigg.metabolite Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 266629
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: bigg.model OBO
   format: obo
@@ -210,18 +212,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.bigg.model.tsv
-  name: bigg.model Nodes TSV
   description: bigg.model Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
-  original_source:
-  - bigg
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.bigg.model.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
+  name: bigg.model Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 1151
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: bigg.reaction OBO
   format: obo
@@ -279,18 +282,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.bigg.reaction.tsv
-  name: bigg.reaction Nodes TSV
   description: bigg.reaction Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
-  original_source:
-  - bigg
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.bigg.reaction.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
+  name: bigg.reaction Nodes TSV
+  original_source:
+  - bigg
+  product_file_size: 593163
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ccle OBO
   format: obo
@@ -348,18 +352,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.ccle.tsv
-  name: ccle Nodes TSV
   description: ccle Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.tsv
-  original_source:
-  - ccle
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.ccle.tsv
   license:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
+  name: ccle Nodes TSV
+  original_source:
+  - ccle
+  product_file_size: 12188
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: cgnc OBO
   format: obo
@@ -417,18 +422,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.cgnc.tsv
-  name: cgnc Nodes TSV
   description: cgnc Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.tsv
-  original_source:
-  - cgnc
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.cgnc.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: cgnc Nodes TSV
+  original_source:
+  - cgnc
+  product_file_size: 406670
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: chembl.compound OBO
   format: obo
@@ -470,18 +476,19 @@ products:
   product_file_size: 767775
   product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.sssom.tsv
 - category: Product
-  id: obo-db-ingest.chembl.compound.tsv
-  name: chembl.compound Nodes TSV
   description: chembl.compound Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
-  original_source:
-  - chembl
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.chembl.compound.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/3.0/
     label: CC-BY-SA-3.0
+  name: chembl.compound Nodes TSV
+  original_source:
+  - chembl
+  product_file_size: 411222
+  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: chembl.target OBO
   format: obo
@@ -523,18 +530,19 @@ products:
   product_file_size: 72721
   product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.sssom.tsv
 - category: Product
-  id: obo-db-ingest.chembl.target.tsv
-  name: chembl.target Nodes TSV
   description: chembl.target Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv
-  original_source:
-  - chembl
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.chembl.target.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/3.0/
     label: CC-BY-SA-3.0
+  name: chembl.target Nodes TSV
+  original_source:
+  - chembl
+  product_file_size: 260194
+  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: civic.gid OBO
   format: obo
@@ -576,19 +584,21 @@ products:
   product_file_size: 3977
   product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv
 - category: Product
-  id: obo-db-ingest.civic.gid.tsv
-  name: civic.gid Nodes TSV
   description: civic.gid Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv
-  original_source:
-  - civic
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.civic.gid.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: civic.gid Nodes TSV
+  original_source:
+  - civic
+  product_file_size: 34804
+  product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: clinicaltrials OBO
   format: obo
   id: obo-db-ingest.clinicaltrials.obo
@@ -596,9 +606,10 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
   name: clinicaltrials OBO
+  product_file_size: 41571299
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: clinicaltrials OWL
   format: owl
   id: obo-db-ingest.clinicaltrials.owl
@@ -606,9 +617,10 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
   name: clinicaltrials OWL
+  product_file_size: 40291602
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: clinicaltrials OBO Graph JSON
   format: json
   id: obo-db-ingest.clinicaltrials.json
@@ -616,8 +628,8 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
   name: clinicaltrials OBO Graph JSON
+  product_file_size: 40813205
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz
-  compression: gzip
 - category: MappingProduct
   description: clinicaltrials SSSOM
   format: sssom
@@ -629,18 +641,19 @@ products:
   product_file_size: 6299996
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
 - category: Product
-  id: obo-db-ingest.clinicaltrials.tsv
-  name: clinicaltrials Nodes TSV
   description: clinicaltrials Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv
-  original_source:
-  - clinicaltrials
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.clinicaltrials.tsv
   license:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
     label: Custom
+  name: clinicaltrials Nodes TSV
+  original_source:
+  - clinicaltrials
+  product_file_size: 19140027
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: complexportal OBO
   format: obo
@@ -682,18 +695,19 @@ products:
   product_file_size: 58537
   product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.sssom.tsv
 - category: Product
-  id: obo-db-ingest.complexportal.tsv
-  name: complexportal Nodes TSV
   description: complexportal Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.tsv
-  original_source:
-  - complexportal
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.complexportal.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: complexportal Nodes TSV
+  original_source:
+  - complexportal
+  product_file_size: 654220
+  product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: cpt OBO
   format: obo
@@ -723,13 +737,14 @@ products:
   product_file_size: 977
   product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.sssom.tsv
 - category: Product
-  id: obo-db-ingest.cpt.tsv
-  name: cpt Nodes TSV
   description: cpt Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.tsv
+  id: obo-db-ingest.cpt.tsv
+  name: cpt Nodes TSV
   original_source:
   - cpt
+  product_file_size: 4342
+  product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -763,31 +778,33 @@ products:
   product_file_size: 1577
   product_url: https://w3id.org/biopragmatics/resources/credit/credit.json
 - category: MappingProduct
-  id: obo-db-ingest.credit.sssom.tsv
-  name: credit SSSOM
   description: credit SSSOM
   format: sssom
-  product_url: https://w3id.org/biopragmatics/resources/credit/credit.sssom.tsv
-  original_source:
-  - credit
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.credit.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: credit SSSOM
+  original_source:
+  - credit
+  product_file_size: 136
+  product_url: https://w3id.org/biopragmatics/resources/credit/credit.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.credit.tsv
-  name: credit Nodes TSV
   description: credit Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/credit/credit.tsv
-  original_source:
-  - credit
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.credit.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: credit Nodes TSV
+  original_source:
+  - credit
+  product_file_size: 1046
+  product_url: https://w3id.org/biopragmatics/resources/credit/credit.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: cvx OBO
   format: obo
@@ -817,13 +834,14 @@ products:
   product_file_size: 128
   product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.sssom.tsv
 - category: Product
-  id: obo-db-ingest.cvx.tsv
-  name: cvx Nodes TSV
   description: cvx Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.tsv
+  id: obo-db-ingest.cvx.tsv
+  name: cvx Nodes TSV
   original_source:
   - cvx
+  product_file_size: 6401
+  product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -867,18 +885,19 @@ products:
   product_file_size: 16632
   product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv
 - category: Product
-  id: obo-db-ingest.depmap.tsv
-  name: depmap Nodes TSV
   description: depmap Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.tsv
-  original_source:
-  - depmap
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.depmap.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: depmap Nodes TSV
+  original_source:
+  - depmap
+  product_file_size: 18757
+  product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: dictybase.gene OBO
   format: obo
@@ -910,18 +929,19 @@ products:
   product_file_size: 306419
   product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.json
 - category: Product
-  id: obo-db-ingest.dictybase.gene.tsv
-  name: dictybase.gene Nodes TSV
   description: dictybase.gene Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv
-  original_source:
-  - dictybase
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.dictybase.gene.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: dictybase.gene Nodes TSV
+  original_source:
+  - dictybase
+  product_file_size: 197677
+  product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: drugcentral OBO
   format: obo
@@ -963,18 +983,19 @@ products:
   product_file_size: 613562
   product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.sssom.tsv
 - category: Product
-  id: obo-db-ingest.drugcentral.tsv
-  name: drugcentral Nodes TSV
   description: drugcentral Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.tsv
-  original_source:
-  - drugcentral
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.drugcentral.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: drugcentral Nodes TSV
+  original_source:
+  - drugcentral
+  product_file_size: 407590
+  product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ec OBO
   format: obo
@@ -983,6 +1004,7 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: ec OBO
+  product_file_size: 2920072
   product_url: https://w3id.org/biopragmatics/resources/ec/ec.obo
 - category: Product
   description: ec OWL
@@ -992,6 +1014,7 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: ec OWL
+  product_file_size: 3327515
   product_url: https://w3id.org/biopragmatics/resources/ec/ec.owl
 - category: Product
   description: ec OBO Graph JSON
@@ -1001,6 +1024,7 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: ec OBO Graph JSON
+  product_file_size: 1800108
   product_url: https://w3id.org/biopragmatics/resources/ec/ec.json
 - category: MappingProduct
   description: ec SSSOM
@@ -1010,20 +1034,22 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: ec SSSOM
+  product_file_size: 8674
   product_url: https://w3id.org/biopragmatics/resources/ec/ec.sssom.tsv
 - category: Product
-  id: obo-db-ingest.ec.tsv
-  name: ec Nodes TSV
   description: ec Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/ec/ec.tsv
-  original_source:
-  - ec
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.ec.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: ec Nodes TSV
+  original_source:
+  - ec
+  product_file_size: 283274
+  product_url: https://w3id.org/biopragmatics/resources/ec/ec.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: flybase OBO
   format: obo
@@ -1055,18 +1081,19 @@ products:
   product_file_size: 1883340
   product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.json
 - category: Product
-  id: obo-db-ingest.flybase.tsv
-  name: flybase Nodes TSV
   description: flybase Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.tsv
-  original_source:
-  - flybase
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.flybase.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: flybase Nodes TSV
+  original_source:
+  - flybase
+  product_file_size: 2007373
+  product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: gard OBO
   format: obo
@@ -1089,13 +1116,14 @@ products:
   product_file_size: 333132
   product_url: https://w3id.org/biopragmatics/resources/gard/gard.json
 - category: Product
-  id: obo-db-ingest.gard.tsv
-  name: gard Nodes TSV
   description: gard Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/gard/gard.tsv
+  id: obo-db-ingest.gard.tsv
+  name: gard Nodes TSV
   original_source:
   - gard
+  product_file_size: 314439
+  product_url: https://w3id.org/biopragmatics/resources/gard/gard.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -1129,18 +1157,19 @@ products:
   product_file_size: 1475667
   product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.json
 - category: Product
-  id: obo-db-ingest.geonames.tsv
-  name: geonames Nodes TSV
   description: geonames Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.tsv
-  original_source:
-  - geonames
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.geonames.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: geonames Nodes TSV
+  original_source:
+  - geonames
+  product_file_size: 549884
+  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: geonames.feature OBO
   format: obo
@@ -1172,19 +1201,21 @@ products:
   product_file_size: 28938
   product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json
 - category: Product
-  id: obo-db-ingest.geonames.feature.tsv
-  name: geonames.feature Nodes TSV
   description: geonames.feature Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.tsv
-  original_source:
-  - geonames.feature
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.geonames.feature.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: geonames.feature Nodes TSV
+  original_source:
+  - geonames.feature
+  product_file_size: 20951
+  product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: gtdb OBO
   format: obo
   id: obo-db-ingest.gtdb.obo
@@ -1192,8 +1223,8 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
   name: gtdb OBO
+  product_file_size: 6294776
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo.gz
-  compression: gzip
 - category: Product
   description: gtdb OWL
   format: owl
@@ -1205,6 +1236,7 @@ products:
   product_file_size: 3186823
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl
 - category: Product
+  compression: gzip
   description: gtdb OBO Graph JSON
   format: json
   id: obo-db-ingest.gtdb.json
@@ -1212,8 +1244,8 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
   name: gtdb OBO Graph JSON
+  product_file_size: 4213217
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz
-  compression: gzip
 - category: MappingProduct
   description: gtdb SSSOM
   format: sssom
@@ -1225,19 +1257,20 @@ products:
   product_file_size: 1667414
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 - category: Product
-  id: obo-db-ingest.gtdb.tsv
-  name: gtdb Nodes TSV
+  compression: gzip
   description: gtdb Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.tsv.gz
-  compression: gzip
-  original_source:
-  - gtdb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.gtdb.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: gtdb Nodes TSV
+  original_source:
+  - gtdb
+  product_file_size: 2918783
+  product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.tsv.gz
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: hgnc OBO
   format: obo
@@ -1284,6 +1317,7 @@ products:
   - obo-db-ingest
 - category: MappingProduct
   description: hgnc SSSOM
+  format: sssom
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
     id: https://creativecommons.org.publicdomain/zero/1.0/
@@ -1295,20 +1329,20 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  format: sssom
 - category: Product
-  id: obo-db-ingest.hgnc.tsv
-  name: hgnc Nodes TSV
   description: hgnc Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.tsv
-  original_source:
-  - hgnc
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.hgnc.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: hgnc Nodes TSV
+  original_source:
+  - hgnc
+  product_file_size: 1234512
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: hgnc.genegroup OBO
   format: obo
@@ -1352,18 +1386,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.hgnc.genegroup.tsv
-  name: hgnc.genegroup Nodes TSV
   description: hgnc.genegroup Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.tsv
-  original_source:
-  - hgnc
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.hgnc.genegroup.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: hgnc.genegroup Nodes TSV
+  original_source:
+  - hgnc
+  product_file_size: 190009
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: icd10 OBO
   format: obo
@@ -1395,18 +1430,19 @@ products:
   product_file_size: 52408
   product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.json
 - category: Product
-  id: obo-db-ingest.icd10.tsv
-  name: icd10 Nodes TSV
   description: icd10 Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.tsv
-  original_source:
-  - icd10
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.icd10.tsv
   license:
     id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
     label: Custom
+  name: icd10 Nodes TSV
+  original_source:
+  - icd10
+  product_file_size: 40794
+  product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: icd11 OBO
   format: obo
@@ -1448,56 +1484,61 @@ products:
   product_file_size: 297909
   product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv
 - category: Product
-  id: obo-db-ingest.icd11.tsv
-  name: icd11 Nodes TSV
   description: icd11 Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.tsv
-  original_source:
-  - icd11
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.icd11.tsv
   license:
     id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
     label: CC-BY-ND-3.0-IGO
+  name: icd11 Nodes TSV
+  original_source:
+  - icd11
+  product_file_size: 4174868
+  product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.iconclass.obo
-  name: iconclass OBO
   description: iconclass OBO
   format: obo
-  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.obo
+  id: obo-db-ingest.iconclass.obo
+  name: iconclass OBO
   original_source:
   - iconclass
+  product_file_size: 650455
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.obo
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.iconclass.owl
-  name: iconclass OWL
   description: iconclass OWL
   format: owl
-  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.owl
+  id: obo-db-ingest.iconclass.owl
+  name: iconclass OWL
   original_source:
   - iconclass
+  product_file_size: 864770
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.owl
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.iconclass.json
-  name: iconclass OBO Graph JSON
   description: iconclass OBO Graph JSON
   format: json
-  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.json
+  id: obo-db-ingest.iconclass.json
+  name: iconclass OBO Graph JSON
   original_source:
   - iconclass
+  product_file_size: 694590
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.json
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.iconclass.tsv
-  name: iconclass Nodes TSV
   description: iconclass Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.tsv
+  id: obo-db-ingest.iconclass.tsv
+  name: iconclass Nodes TSV
   original_source:
   - iconclass
+  product_file_size: 611565
+  product_url: https://w3id.org/biopragmatics/resources/iconclass/iconclass.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -1543,18 +1584,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.interpro.tsv
-  name: interpro Nodes TSV
   description: interpro Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
-  original_source:
-  - interpro
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.interpro.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: interpro Nodes TSV
+  original_source:
+  - interpro
+  product_file_size: 697846
+  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: itis OBO
   format: obo
@@ -1600,18 +1642,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.itis.tsv
-  name: itis Nodes TSV
   description: itis Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/itis/itis.tsv
-  original_source:
-  - itis
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.itis.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: itis Nodes TSV
+  original_source:
+  - itis
+  product_file_size: 9497861
+  product_url: https://w3id.org/biopragmatics/resources/itis/itis.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: kegg.genome OBO
   format: obo
@@ -1643,18 +1686,19 @@ products:
   product_file_size: 20525
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
 - category: Product
-  id: obo-db-ingest.kegg.genome.tsv
-  name: kegg.genome Nodes TSV
   description: kegg.genome Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv
-  original_source:
-  - kegg
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.kegg.genome.tsv
   license:
     id: https://www.kegg.jp/kegg/legal.html
     label: Custom
+  name: kegg.genome Nodes TSV
+  original_source:
+  - kegg
+  product_file_size: 187935
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: mesh OBO
   format: obo
@@ -1666,6 +1710,7 @@ products:
   product_file_size: 13534704
   product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.obo
 - category: Product
+  compression: gzip
   description: mesh OWL
   format: owl
   id: obo-db-ingest.mesh.owl
@@ -1673,9 +1718,10 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: mesh OWL
+  product_file_size: 15978588
   product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: mesh OBO Graph JSON
   format: json
   id: obo-db-ingest.mesh.json
@@ -1683,22 +1729,24 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: mesh OBO Graph JSON
+  product_file_size: 15337148
   product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json.gz
-  compression: gzip
 - category: Product
-  id: obo-db-ingest.mesh.tsv
-  name: mesh Nodes TSV
   description: mesh Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.tsv
-  original_source:
-  - mesh
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.mesh.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: mesh Nodes TSV
+  original_source:
+  - mesh
+  product_file_size: 12212627
+  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: mgi OBO
   format: obo
   id: obo-db-ingest.mgi.obo
@@ -1706,9 +1754,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: mgi OBO
+  product_file_size: 9628994
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: mgi OWL
   format: owl
   id: obo-db-ingest.mgi.owl
@@ -1716,9 +1765,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: mgi OWL
+  product_file_size: 15551282
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: mgi OBO Graph JSON
   format: json
   id: obo-db-ingest.mgi.json
@@ -1726,8 +1776,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: mgi OBO Graph JSON
+  product_file_size: 12304920
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz
-  compression: gzip
 - category: MappingProduct
   description: mgi SSSOM
   format: sssom
@@ -1739,18 +1789,19 @@ products:
   product_file_size: 1080459
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.sssom.tsv
 - category: Product
-  id: obo-db-ingest.mgi.tsv
-  name: mgi Nodes TSV
   description: mgi Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.tsv
-  original_source:
-  - mgi
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.mgi.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: mgi Nodes TSV
+  original_source:
+  - mgi
+  product_file_size: 6615249
+  product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: mirbase OBO
   format: obo
@@ -1792,18 +1843,19 @@ products:
   product_file_size: 53837
   product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv
 - category: Product
-  id: obo-db-ingest.mirbase.tsv
-  name: mirbase Nodes TSV
   description: mirbase Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.tsv
-  original_source:
-  - mirbase
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.mirbase.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: mirbase Nodes TSV
+  original_source:
+  - mirbase
+  product_file_size: 384582
+  product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: mirbase.family OBO
   format: obo
@@ -1835,18 +1887,19 @@ products:
   product_file_size: 113961
   product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json
 - category: Product
-  id: obo-db-ingest.mirbase.family.tsv
-  name: mirbase.family Nodes TSV
   description: mirbase.family Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.tsv
-  original_source:
-  - mirbase
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.mirbase.family.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: mirbase.family Nodes TSV
+  original_source:
+  - mirbase
+  product_file_size: 15085
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: mirbase.mature OBO
   format: obo
@@ -1878,19 +1931,21 @@ products:
   product_file_size: 373573
   product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json
 - category: Product
-  id: obo-db-ingest.mirbase.mature.tsv
-  name: mirbase.mature Nodes TSV
   description: mirbase.mature Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.tsv
-  original_source:
-  - mirbase
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.mirbase.mature.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: mirbase.mature Nodes TSV
+  original_source:
+  - mirbase
+  product_file_size: 293915
+  product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: msigdb OBO
   format: obo
   id: obo-db-ingest.msigdb.obo
@@ -1898,9 +1953,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: msigdb OBO
+  product_file_size: 19115104
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: msigdb OWL
   format: owl
   id: obo-db-ingest.msigdb.owl
@@ -1908,9 +1964,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: msigdb OWL
+  product_file_size: 18147081
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: msigdb OBO Graph JSON
   format: json
   id: obo-db-ingest.msigdb.json
@@ -1918,8 +1975,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: msigdb OBO Graph JSON
+  product_file_size: 19170792
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json.gz
-  compression: gzip
 - category: MappingProduct
   description: msigdb SSSOM
   format: sssom
@@ -1931,18 +1988,19 @@ products:
   product_file_size: 92467
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv
 - category: Product
-  id: obo-db-ingest.msigdb.tsv
-  name: msigdb Nodes TSV
   description: msigdb Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
-  original_source:
-  - msigdb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.msigdb.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: msigdb Nodes TSV
+  original_source:
+  - msigdb
+  product_file_size: 3121367
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ncbi.gc OBO
   format: obo
@@ -1984,48 +2042,53 @@ products:
   product_file_size: 191
   product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv
 - category: Product
-  id: obo-db-ingest.ncbi.gc.tsv
-  name: ncbi.gc Nodes TSV
   description: ncbi.gc Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv
-  original_source:
-  - ncbi.gc
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.ncbi.gc.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: ncbi.gc Nodes TSV
+  original_source:
+  - ncbi.gc
+  product_file_size: 531
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: nihreporter.project OBO
   format: obo
   id: obo-db-ingest.nihreporter.project.obo
   name: nihreporter.project OBO
+  product_file_size: 69000371
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: nihreporter.project OWL
   format: owl
   id: obo-db-ingest.nihreporter.project.owl
   name: nihreporter.project OWL
+  product_file_size: 91398017
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: nihreporter.project OBO Graph JSON
   format: json
   id: obo-db-ingest.nihreporter.project.json
   name: nihreporter.project OBO Graph JSON
+  product_file_size: 81463463
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json.gz
-  compression: gzip
 - category: Product
-  id: obo-db-ingest.nihreporter.project.tsv
-  name: nihreporter.project Nodes TSV
+  compression: gzip
   description: nihreporter.project Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz
-  compression: gzip
+  id: obo-db-ingest.nihreporter.project.tsv
+  name: nihreporter.project Nodes TSV
   original_source:
   - nihreporter
+  product_file_size: 65861949
+  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -2069,18 +2132,19 @@ products:
   product_file_size: 422890
   product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.sssom.tsv
 - category: Product
-  id: obo-db-ingest.nlm.tsv
-  name: nlm Nodes TSV
   description: nlm Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.tsv
-  original_source:
-  - nlm
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.nlm.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: nlm Nodes TSV
+  original_source:
+  - nlm
+  product_file_size: 1156325
+  product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: nlm.publisher OBO
   format: obo
@@ -2112,31 +2176,33 @@ products:
   product_file_size: 12675
   product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json
 - category: MappingProduct
-  id: obo-db-ingest.nlm.publisher.sssom.tsv
-  name: nlm.publisher SSSOM
   description: nlm.publisher SSSOM
   format: sssom
-  product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.sssom.tsv
-  original_source:
-  - nlm.publisher
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.nlm.publisher.sssom.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: nlm.publisher SSSOM
+  original_source:
+  - nlm.publisher
+  product_file_size: 140
+  product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.nlm.publisher.tsv
-  name: nlm.publisher Nodes TSV
   description: nlm.publisher Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.tsv
-  original_source:
-  - nlm.publisher
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.nlm.publisher.tsv
   license:
     id: https://creativecommons.org/public-domain/pdm/
     label: public domain
+  name: nlm.publisher Nodes TSV
+  original_source:
+  - nlm.publisher
+  product_file_size: 8289
+  product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: npass OBO
   format: obo
@@ -2178,18 +2244,19 @@ products:
   product_file_size: 833693
   product_url: https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv
 - category: Product
-  id: obo-db-ingest.npass.tsv
-  name: npass Nodes TSV
   description: npass Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/npass/npass.tsv
-  original_source:
-  - npass
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.npass.tsv
   license:
     id: https://creativecommons.org/licenses/by-nc/4.0/
     label: CC-BY-NC
+  name: npass Nodes TSV
+  original_source:
+  - npass
+  product_file_size: 2460413
+  product_url: https://w3id.org/biopragmatics/resources/npass/npass.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: omim.ps OBO
   format: obo
@@ -2221,19 +2288,21 @@ products:
   product_file_size: 11140
   product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json
 - category: Product
-  id: obo-db-ingest.omim.ps.tsv
-  name: omim.ps Nodes TSV
   description: omim.ps Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv
-  original_source:
-  - omim
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.omim.ps.tsv
   license:
     id: https://www.omim.org/help/agreement
     label: Custom
+  name: omim.ps Nodes TSV
+  original_source:
+  - omim
+  product_file_size: 9568
+  product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: pathbank OBO
   format: obo
   id: obo-db-ingest.pathbank.obo
@@ -2241,9 +2310,10 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: pathbank OBO
+  product_file_size: 1849960
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: pathbank OWL
   format: owl
   id: obo-db-ingest.pathbank.owl
@@ -2251,9 +2321,10 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: pathbank OWL
+  product_file_size: 6878307
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: pathbank OBO Graph JSON
   format: json
   id: obo-db-ingest.pathbank.json
@@ -2261,8 +2332,8 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: pathbank OBO Graph JSON
+  product_file_size: 8672175
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json.gz
-  compression: gzip
 - category: MappingProduct
   description: pathbank SSSOM
   format: sssom
@@ -2274,18 +2345,19 @@ products:
   product_file_size: 570276
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.sssom.tsv
 - category: Product
-  id: obo-db-ingest.pathbank.tsv
-  name: pathbank Nodes TSV
   description: pathbank Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.tsv
-  original_source:
-  - pathbank
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pathbank.tsv
   license:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
+  name: pathbank Nodes TSV
+  original_source:
+  - pathbank
+  product_file_size: 727666
+  product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pfam OBO
   format: obo
@@ -2317,18 +2389,19 @@ products:
   product_file_size: 595575
   product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.json
 - category: Product
-  id: obo-db-ingest.pfam.tsv
-  name: pfam Nodes TSV
   description: pfam Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.tsv
-  original_source:
-  - pfam
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pfam.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: pfam Nodes TSV
+  original_source:
+  - pfam
+  product_file_size: 460967
+  product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pfam.clan OBO
   format: obo
@@ -2360,18 +2433,19 @@ products:
   product_file_size: 7820
   product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.json
 - category: Product
-  id: obo-db-ingest.pfam.clan.tsv
-  name: pfam.clan Nodes TSV
   description: pfam.clan Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv
-  original_source:
-  - pfam
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pfam.clan.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: pfam.clan Nodes TSV
+  original_source:
+  - pfam
+  product_file_size: 6407
+  product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.disease OBO
   format: obo
@@ -2429,18 +2503,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.pharmgkb.disease.tsv
-  name: pharmgkb.disease Nodes TSV
   description: pharmgkb.disease Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.tsv
-  original_source:
-  - pharmgkb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pharmgkb.disease.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: pharmgkb.disease Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 85777
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.drug OBO
   format: obo
@@ -2498,18 +2573,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.pharmgkb.drug.tsv
-  name: pharmgkb.drug Nodes TSV
   description: pharmgkb.drug Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.tsv
-  original_source:
-  - pharmgkb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pharmgkb.drug.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: pharmgkb.drug Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 55062
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.gene OBO
   format: obo
@@ -2567,18 +2643,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.pharmgkb.gene.tsv
-  name: pharmgkb.gene Nodes TSV
   description: pharmgkb.gene Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.tsv
-  original_source:
-  - pharmgkb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pharmgkb.gene.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: pharmgkb.gene Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 757356
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.pathways OBO
   format: obo
@@ -2622,18 +2699,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.pharmgkb.pathways.tsv
-  name: pharmgkb.pathways Nodes TSV
   description: pharmgkb.pathways Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.tsv
-  original_source:
-  - pharmgkb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pharmgkb.pathways.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: pharmgkb.pathways Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 2140
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.variant OBO
   format: obo
@@ -2691,18 +2769,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.pharmgkb.variant.tsv
-  name: pharmgkb.variant Nodes TSV
   description: pharmgkb.variant Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.tsv
-  original_source:
-  - pharmgkb
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pharmgkb.variant.tsv
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
     label: CC-BY-SA-4.0
+  name: pharmgkb.variant Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 19203
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pid.pathway OBO
   format: obo
@@ -2725,13 +2804,14 @@ products:
   product_file_size: 47185
   product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json
 - category: Product
-  id: obo-db-ingest.pid.pathway.tsv
-  name: pid.pathway Nodes TSV
   description: pid.pathway Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.tsv
+  id: obo-db-ingest.pid.pathway.tsv
+  name: pid.pathway Nodes TSV
   original_source:
   - pid
+  product_file_size: 3923
+  product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -2765,18 +2845,19 @@ products:
   product_file_size: 368065
   product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.json
 - category: Product
-  id: obo-db-ingest.pombase.tsv
-  name: pombase Nodes TSV
   description: pombase Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.tsv
-  original_source:
-  - pombase
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.pombase.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: pombase Nodes TSV
+  original_source:
+  - pombase
+  product_file_size: 143806
+  product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: reactome OBO
   format: obo
@@ -2788,6 +2869,7 @@ products:
   product_file_size: 4695236
   product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
 - category: Product
+  compression: gzip
   description: reactome OWL
   format: owl
   id: obo-db-ingest.reactome.owl
@@ -2795,9 +2877,10 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: reactome OWL
+  product_file_size: 5333931
   product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: reactome OBO Graph JSON
   format: json
   id: obo-db-ingest.reactome.json
@@ -2805,21 +2888,22 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: reactome OBO Graph JSON
+  product_file_size: 5919602
   product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json.gz
-  compression: gzip
 - category: Product
-  id: obo-db-ingest.reactome.tsv
-  name: reactome Nodes TSV
   description: reactome Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.tsv
-  original_source:
-  - reactome
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.reactome.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: reactome Nodes TSV
+  original_source:
+  - reactome
+  product_file_size: 445199
+  product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: rgd OBO
   format: obo
@@ -2831,6 +2915,7 @@ products:
   product_file_size: 3728799
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.obo
 - category: Product
+  compression: gzip
   description: rgd OWL
   format: owl
   id: obo-db-ingest.rgd.owl
@@ -2838,9 +2923,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rgd OWL
+  product_file_size: 6347162
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: rgd OBO Graph JSON
   format: json
   id: obo-db-ingest.rgd.json
@@ -2848,8 +2934,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rgd OBO Graph JSON
+  product_file_size: 4392993
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.json.gz
-  compression: gzip
 - category: MappingProduct
   description: rgd SSSOM
   format: sssom
@@ -2861,18 +2947,19 @@ products:
   product_file_size: 632341
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
 - category: Product
-  id: obo-db-ingest.rgd.tsv
-  name: rgd Nodes TSV
   description: rgd Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.tsv
-  original_source:
-  - rgd
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.rgd.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: rgd Nodes TSV
+  original_source:
+  - rgd
+  product_file_size: 1729216
+  product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: rhea OBO
   format: obo
@@ -2888,6 +2975,7 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  compression: gzip
   description: rhea OWL
   format: owl
   id: obo-db-ingest.rhea.owl
@@ -2897,11 +2985,12 @@ products:
   name: rhea OWL
   original_source:
   - rhea
+  product_file_size: 7945039
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl.gz
   secondary_source:
   - obo-db-ingest
-  compression: gzip
 - category: Product
+  compression: gzip
   description: rhea OBO Graph JSON
   format: json
   id: obo-db-ingest.rhea.json
@@ -2911,10 +3000,10 @@ products:
   name: rhea OBO Graph JSON
   original_source:
   - rhea
+  product_file_size: 5228738
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json.gz
   secondary_source:
   - obo-db-ingest
-  compression: gzip
 - category: MappingProduct
   description: rhea SSSOM
   format: sssom
@@ -2935,18 +3024,19 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.rhea.tsv
-  name: rhea Nodes TSV
   description: rhea Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.tsv
-  original_source:
-  - rhea
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.rhea.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: rhea Nodes TSV
+  original_source:
+  - rhea
+  product_file_size: 981824
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ror OBO
   format: obo
@@ -2958,6 +3048,7 @@ products:
   product_file_size: 9684743
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.obo
 - category: Product
+  compression: gzip
   description: ror OWL
   format: owl
   id: obo-db-ingest.ror.owl
@@ -2965,9 +3056,10 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: ror OWL
+  product_file_size: 14168326
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: ror OBO Graph JSON
   format: json
   id: obo-db-ingest.ror.json
@@ -2975,8 +3067,8 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: ror OBO Graph JSON
+  product_file_size: 13799938
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.json.gz
-  compression: gzip
 - category: MappingProduct
   description: ror SSSOM
   format: sssom
@@ -2988,18 +3080,19 @@ products:
   product_file_size: 2333177
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
 - category: Product
-  id: obo-db-ingest.ror.tsv
-  name: ror Nodes TSV
   description: ror Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
-  original_source:
-  - ror
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.ror.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: ror Nodes TSV
+  original_source:
+  - ror
+  product_file_size: 5381101
+  product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: sgd OBO
   format: obo
@@ -3031,18 +3124,19 @@ products:
   product_file_size: 628568
   product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.json
 - category: Product
-  id: obo-db-ingest.sgd.tsv
-  name: sgd Nodes TSV
   description: sgd Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
-  original_source:
-  - sgd
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.sgd.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: sgd Nodes TSV
+  original_source:
+  - sgd
+  product_file_size: 503057
+  product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: signor OBO
   format: obo
@@ -3074,19 +3168,21 @@ products:
   product_file_size: 50966
   product_url: https://w3id.org/biopragmatics/resources/signor/signor.json
 - category: Product
-  id: obo-db-ingest.signor.tsv
-  name: signor Nodes TSV
   description: signor Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
-  original_source:
-  - signor
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.signor.tsv
   license:
     id: https://creativecommons.org/licenses/by-nc/4.0/
     label: CC-BY-NC-4.0
+  name: signor Nodes TSV
+  original_source:
+  - signor
+  product_file_size: 29422
+  product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
+  compression: gzip
   description: slm OBO
   format: obo
   id: obo-db-ingest.slm.obo
@@ -3094,9 +3190,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: slm OBO
+  product_file_size: 48029397
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: slm OWL
   format: owl
   id: obo-db-ingest.slm.owl
@@ -3104,9 +3201,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: slm OWL
+  product_file_size: 61858122
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: slm OBO Graph JSON
   format: json
   id: obo-db-ingest.slm.json
@@ -3114,8 +3212,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: slm OBO Graph JSON
+  product_file_size: 53629121
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.json.gz
-  compression: gzip
 - category: MappingProduct
   description: slm SSSOM
   format: sssom
@@ -3127,57 +3225,62 @@ products:
   product_file_size: 10965328
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv
 - category: Product
-  id: obo-db-ingest.slm.tsv
-  name: slm Nodes TSV
+  compression: gzip
   description: slm Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz
-  compression: gzip
-  original_source:
-  - slm
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.slm.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: slm Nodes TSV
+  original_source:
+  - slm
+  product_file_size: 9655893
+  product_url: https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.spdx.obo
-  name: spdx OBO
   description: spdx OBO
   format: obo
-  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.obo
+  id: obo-db-ingest.spdx.obo
+  name: spdx OBO
   original_source:
   - spdx
+  product_file_size: 31617
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.obo
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.spdx.owl
-  name: spdx OWL
   description: spdx OWL
   format: owl
-  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.owl
+  id: obo-db-ingest.spdx.owl
+  name: spdx OWL
   original_source:
   - spdx
+  product_file_size: 37909
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.owl
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.spdx.json
-  name: spdx OBO Graph JSON
   description: spdx OBO Graph JSON
   format: json
-  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.json
+  id: obo-db-ingest.spdx.json
+  name: spdx OBO Graph JSON
   original_source:
   - spdx
+  product_file_size: 39391
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.json
   secondary_source:
   - obo-db-ingest
 - category: Product
-  id: obo-db-ingest.spdx.tsv
-  name: spdx Nodes TSV
   description: spdx Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.tsv
+  id: obo-db-ingest.spdx.tsv
+  name: spdx Nodes TSV
   original_source:
   - spdx
+  product_file_size: 11467
+  product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -3202,16 +3305,18 @@ products:
   product_file_size: 3145
   product_url: https://w3id.org/biopragmatics/resources/sty/sty.json
 - category: Product
-  id: obo-db-ingest.sty.tsv
-  name: sty Nodes TSV
   description: sty Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
+  id: obo-db-ingest.sty.tsv
+  name: sty Nodes TSV
   original_source:
   - sty
+  product_file_size: 1583
+  product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
+  compression: gzip
   description: uniprot OBO
   format: obo
   id: obo-db-ingest.uniprot.obo
@@ -3219,9 +3324,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: uniprot OBO
+  product_file_size: 25430978
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: uniprot OWL
   format: owl
   id: obo-db-ingest.uniprot.owl
@@ -3229,9 +3335,10 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: uniprot OWL
+  product_file_size: 36283492
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl.gz
-  compression: gzip
 - category: Product
+  compression: gzip
   description: uniprot OBO Graph JSON
   format: json
   id: obo-db-ingest.uniprot.json
@@ -3239,8 +3346,8 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: uniprot OBO Graph JSON
+  product_file_size: 38595991
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json.gz
-  compression: gzip
 - category: MappingProduct
   description: uniprot SSSOM
   format: sssom
@@ -3252,18 +3359,19 @@ products:
   product_file_size: 1503008
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv
 - category: Product
-  id: obo-db-ingest.uniprot.tsv
-  name: uniprot Nodes TSV
   description: uniprot Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.tsv
-  original_source:
-  - uniprot
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.uniprot.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: uniprot Nodes TSV
+  original_source:
+  - uniprot
+  product_file_size: 3801999
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: uniprot.ptm OBO
   format: obo
@@ -3305,18 +3413,19 @@ products:
   product_file_size: 8833
   product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.sssom.tsv
 - category: Product
-  id: obo-db-ingest.uniprot.ptm.tsv
-  name: uniprot.ptm Nodes TSV
   description: uniprot.ptm Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv
-  original_source:
-  - uniprot
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.uniprot.ptm.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: uniprot.ptm Nodes TSV
+  original_source:
+  - uniprot
+  product_file_size: 6660
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: wikipathways OBO
   format: obo
@@ -3348,18 +3457,19 @@ products:
   product_file_size: 394845
   product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
 - category: Product
-  id: obo-db-ingest.wikipathways.tsv
-  name: wikipathways Nodes TSV
   description: wikipathways Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.tsv
-  original_source:
-  - wikipathways
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.wikipathways.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
+  name: wikipathways Nodes TSV
+  original_source:
+  - wikipathways
+  product_file_size: 33562
+  product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: zfin OBO
   format: obo
@@ -3375,6 +3485,7 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
+  compression: gzip
   description: zfin OWL
   format: owl
   id: obo-db-ingest.zfin.owl
@@ -3384,11 +3495,12 @@ products:
   name: zfin OWL
   original_source:
   - zfin
+  product_file_size: 4556098
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl.gz
   secondary_source:
   - obo-db-ingest
-  compression: gzip
 - category: Product
+  compression: gzip
   description: zfin OBO Graph JSON
   format: json
   id: obo-db-ingest.zfin.json
@@ -3398,12 +3510,13 @@ products:
   name: zfin OBO Graph JSON
   original_source:
   - zfin
+  product_file_size: 4010220
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json.gz
   secondary_source:
   - obo-db-ingest
-  compression: gzip
 - category: MappingProduct
   description: zfin SSSOM
+  format: sssom
   id: obo-db-ingest.zfin.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -3415,20 +3528,20 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  format: sssom
 - category: Product
-  id: obo-db-ingest.zfin.tsv
-  name: zfin Nodes TSV
   description: zfin Nodes TSV
   format: tsv
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
-  original_source:
-  - zfin
-  secondary_source:
-  - obo-db-ingest
+  id: obo-db-ingest.zfin.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
+  name: zfin Nodes TSV
+  original_source:
+  - zfin
+  product_file_size: 1884582
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---
 OBO Database Ingestion

@@ -375,9 +375,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-25: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-26: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -547,6 +547,20 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: Product
+  description: mesh Nodes TSV
+  format: tsv
+  id: obo-db-ingest.mesh.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: mesh Nodes TSV
+  original_source:
+  - mesh
+  product_file_size: 12212627
+  product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
 ---
 # Medical Subject Headings (MeSH)

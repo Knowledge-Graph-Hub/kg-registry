@@ -239,9 +239,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-24_ FTP error_ timed
+  - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-02-25: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-02-26: FTP error: timed
     out'
 publications:
 - id: https://www.iso.org/standard/71339.html

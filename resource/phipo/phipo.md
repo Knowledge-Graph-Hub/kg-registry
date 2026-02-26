@@ -39,8 +39,10 @@ products:
   format: obo
   id: phipo.obo
   name: phipo.obo
-  product_file_size: 1133822
   product_url: http://purl.obolibrary.org/obo/phipo.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-02-26: Timeout connecting
+    to URL'
 repository: https://github.com/PHI-base/phipo
 ---
 ## Description

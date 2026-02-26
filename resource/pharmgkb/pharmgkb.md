@@ -496,9 +496,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -525,6 +525,76 @@ products:
   - hgnc
   - chembl
   - chebi
+- category: Product
+  description: pharmgkb.disease Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pharmgkb.disease.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.disease Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 85777
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.drug Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pharmgkb.drug.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.drug Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 55062
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.gene Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pharmgkb.gene.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.gene Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 757356
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.pathways Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pharmgkb.pathways.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.pathways Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 2140
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.variant Nodes TSV
+  format: tsv
+  id: obo-db-ingest.pharmgkb.variant.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.variant Nodes TSV
+  original_source:
+  - pharmgkb
+  product_file_size: 19203
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://www.pharmgkb.org/downloads
 taxon:
 - NCBITaxon:9606

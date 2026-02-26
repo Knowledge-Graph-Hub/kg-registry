@@ -103,9 +103,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -150,7 +150,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
@@ -158,7 +158,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -661,9 +661,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-24_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -1492,6 +1492,34 @@ products:
   - uniprot
   product_file_size: 37147786
   product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=lipids2uniprot.tsv
+- category: Product
+  description: uniprot Nodes TSV
+  format: tsv
+  id: obo-db-ingest.uniprot.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot Nodes TSV
+  original_source:
+  - uniprot
+  product_file_size: 3801999
+  product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: uniprot.ptm Nodes TSV
+  format: tsv
+  id: obo-db-ingest.uniprot.ptm.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: uniprot.ptm Nodes TSV
+  original_source:
+  - uniprot
+  product_file_size: 6660
+  product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

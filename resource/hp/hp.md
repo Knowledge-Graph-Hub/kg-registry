@@ -2005,6 +2005,40 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
+- category: MappingProduct
+  compression: gzip
+  description: Mappings between MedGen and Human Phenotype Ontology terms with gzip
+    compression
+  format: txt
+  id: medgen.hpo-mapping
+  name: MedGen HPO Mapping
+  original_source:
+  - medgen
+  - hp
+  product_file_size: 389609
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_Mapping.txt.gz
+- category: MappingProduct
+  compression: gzip
+  description: Combined mappings between MedGen, HPO, and OMIM with gzip compression
+  format: txt
+  id: medgen.hpo-omim-mapping
+  name: MedGen HPO OMIM Mapping
+  original_source:
+  - medgen
+  - hp
+  - omim
+  product_file_size: 4125863
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_OMIM_Mapping.txt.gz
+- category: Product
+  description: History file tracking changes to HPO term mappings to CUIs
+  format: txt
+  id: medgen.hpo-history
+  name: HPO CUI History
+  original_source:
+  - medgen
+  - hp
+  product_file_size: 1299018
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt
 - category: GraphProduct
   description: KGX graph package for Human Phenotype Ontology annotations (build hpoa_2025-11-24_1.0_2025sep1_4.3.6;
     release 2025_12_15)
