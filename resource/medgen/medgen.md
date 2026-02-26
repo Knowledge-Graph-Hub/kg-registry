@@ -1,7 +1,16 @@
 ---
 activity_status: active
 category: Aggregator
-creation_date: '2010-01-01T00:00:00Z'
+contacts:
+- category: Organization
+  id: ncbi
+  label: MedGen Team (NCBI)
+  contact_details:
+  - contact_type: email
+    value: medgen_help@ncbi.nlm.nih.gov
+  - contact_type: url
+    value: https://www.ncbi.nlm.nih.gov/medgen/docs/overview/
+creation_date: '2025-07-17T00:00:00Z'
 description: NCBI's portal to information about conditions, phenotypes, and findings
   in humans related to medical genetics. Aggregates and organizes data from multiple
   authoritative sources including UMLS, OMIM, HPO, Mondo, Orphanet, GeneReviews, PharmGKB,
@@ -16,8 +25,11 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/medgen/
 id: medgen
 infores_id: medgen
-last_modified_date: '2025-10-21T00:00:00Z'
+last_modified_date: '2026-02-26T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  label: NCBI and NLM Data Usage Policies and Disclaimers
 name: MedGen
 products:
 - category: GraphicalInterface
@@ -27,67 +39,89 @@ products:
   id: medgen.portal
   name: MedGen Portal
   product_url: https://www.ncbi.nlm.nih.gov/medgen/
+  original_source:
+  - medgen
 - category: GraphicalInterface
   description: Advanced search interface with support for queries by name, related
     gene, clinical feature, and other criteria
   format: http
   id: medgen.search
   name: Advanced Search
-  product_url: https://www.ncbi.nlm.nih.gov/medgen/advanced
+  product_url: https://www.ncbi.nlm.nih.gov/medgen/advanced/
+  original_source:
+  - medgen
 - category: Product
   compression: gzip
-  description: Rich Rich Format file containing concept names and source identifiers
-    with gzip compression
+  description: Rich Release Format (RRF) file containing concept names and source
+    identifiers with gzip compression
   format: txt
   id: medgen.mgconso
   name: MGCONSO (Concept Names)
-  product_file_size: 15653306
+  product_file_size: 15843494
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: Product
   compression: gzip
-  description: Rich Rich Format file containing definitions and descriptions with
-    gzip compression
+  description: Rich Release Format (RRF) file containing definitions and descriptions
+    with gzip compression
   format: txt
   id: medgen.mgdef
   name: MGDEF (Definitions)
-  product_file_size: 4977905
+  product_file_size: 5062289
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: MappingProduct
   compression: gzip
-  description: Rich Rich Format file containing relationships between concepts with
-    gzip compression
+  description: Rich Release Format (RRF) file containing relationships between concepts
+    with gzip compression
   format: txt
   id: medgen.mgrel
   name: MGREL (Relationships)
-  product_file_size: 15645774
+  product_file_size: 15661303
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: Product
   compression: gzip
-  description: Rich Rich Format file containing attributes and properties with gzip
-    compression
+  description: Rich Release Format (RRF) file containing attributes and properties
+    with gzip compression
   format: txt
   id: medgen.mgsat
   name: MGSAT (Attributes)
-  product_file_size: 11745616
+  product_file_size: 11710268
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: Product
   compression: gzip
-  description: Rich Rich Format file containing semantic type assignments with gzip
-    compression
+  description: Rich Release Format (RRF) file containing semantic type assignments
+    with gzip compression
   format: txt
   id: medgen.mgsty
   name: MGSTY (Semantic Types)
-  product_file_size: 1626886
+  product_file_size: 1644564
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: Product
   compression: gzip
-  description: Rich Rich Format file containing concept names for search with gzip
-    compression
+  description: Rich Release Format (RRF) file containing concept names for search
+    with gzip compression
   format: txt
   id: medgen.names
   name: NAMES
-  product_file_size: 3069349
+  product_file_size: 3097271
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: MappingProduct
   compression: gzip
   description: Mappings between MedGen CUIs and external source identifiers with gzip
@@ -95,8 +129,10 @@ products:
   format: txt
   id: medgen.id-mappings
   name: MedGen ID Mappings
-  product_file_size: 5557930
+  product_file_size: 5955308
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGenIDMappings.txt.gz
+  original_source:
+  - medgen
 - category: MappingProduct
   compression: gzip
   description: Mappings between MedGen and Human Phenotype Ontology terms with gzip
@@ -104,110 +140,135 @@ products:
   format: txt
   id: medgen.hpo-mapping
   name: MedGen HPO Mapping
-  product_file_size: 385401
+  product_file_size: 389609
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_Mapping.txt.gz
+  original_source:
+  - medgen
+  - hp
 - category: MappingProduct
   compression: gzip
   description: Combined mappings between MedGen, HPO, and OMIM with gzip compression
   format: txt
   id: medgen.hpo-omim-mapping
   name: MedGen HPO OMIM Mapping
-  product_file_size: 4022635
+  product_file_size: 4125863
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_HPO_OMIM_Mapping.txt.gz
+  original_source:
+  - medgen
+  - hp
+  - omim
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
   format: txt
   id: medgen.pubmed-links
   name: MedGen PubMed Links
-  product_file_size: 240401320
+  product_file_size: 239947326
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/medgen_pubmed_lnk.txt.gz
+  original_source:
+  - medgen
+  - pubmed
 - category: Product
   description: History file tracking changes to MedGen CUIs
   format: txt
   id: medgen.cui-history
   name: MedGen CUI History
-  product_file_size: 18224
+  product_file_size: 88702
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_CUI_history.txt
+  original_source:
+  - medgen
+- category: Product
+  description: History of mappings between MedGen UIDs and CUIs over time
+  format: txt
+  id: medgen.uid-cui-history
+  name: MedGen UID CUI History
+  original_source:
+  - medgen
+  product_file_size: 59225507
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_UID_CUI_history.txt
 - category: Product
   description: History file tracking changes to HPO term mappings to CUIs
   format: txt
   id: medgen.hpo-history
   name: HPO CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
-    header found'
+  product_file_size: 1299018
+  original_source:
+  - medgen
+  - hp
 - category: Product
   description: History file tracking changes to Mondo term mappings to CUIs
   format: txt
   id: medgen.mondo-history
   name: Mondo CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
-    header found'
+  product_file_size: 1012883
+  original_source:
+  - medgen
+  - mondo
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
   format: txt
   id: medgen.ordo-history
   name: ORDO CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-24_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-02-25: No Content-Length
-    header found'
+  product_file_size: 1130936
+  original_source:
+  - medgen
+  - orphanet
 - category: Product
   description: Information about source databases and their contributions to MedGen
   format: txt
   id: medgen.sources
   name: MedGen Sources
-  product_file_size: 3550
+  product_file_size: 10385
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MedGen_Sources.txt
+  original_source:
+  - medgen
 - category: Product
   compression: gzip
   description: Merged CUI mappings showing concept consolidations with gzip compression
   format: txt
   id: medgen.merged
   name: MERGED (Merged CUIs)
-  product_file_size: 44086
+  product_file_size: 47602
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
+  original_source:
+  - medgen
+  - umls
 - category: Product
   description: CSV format data files directory with additional data exports
   format: csv
   id: medgen.csv
   name: CSV Data Files
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
+  original_source:
+  - medgen
 - category: DocumentationProduct
   description: Documentation, help pages, and user guides for MedGen
   format: http
   id: medgen.help
   name: MedGen Documentation
   product_url: https://www.ncbi.nlm.nih.gov/medgen/docs/overview/
+  original_source:
+  - medgen
 - category: DocumentationProduct
   description: Frequently asked questions about MedGen
   format: http
   id: medgen.faq
   name: FAQ
   product_url: https://www.ncbi.nlm.nih.gov/medgen/docs/faq/
+  original_source:
+  - medgen
 - category: DocumentationProduct
   description: README file with detailed information about FTP data files and formats
   format: txt
   id: medgen.readme
   name: README
-  product_file_size: 5325
+  product_file_size: 17286
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/README.txt
+  original_source:
+  - medgen
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -431,6 +492,15 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: DocumentationProduct
+  description: Directory of MedGen presentations related to terminology and curation
+    workflows
+  format: http
+  id: medgen.presentations
+  name: MedGen Presentations
+  original_source:
+  - medgen
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/presentations/
 taxon:
 - NCBITaxon:9606
 ---
