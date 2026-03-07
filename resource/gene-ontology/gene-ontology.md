@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://geneontology.org/
 id: gene-ontology
-last_modified_date: '2025-01-05T00:00:00Z'
+last_modified_date: '2026-03-07T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -47,14 +47,14 @@ products:
   id: gene-ontology.amigo
   is_public: true
   name: AmiGO 2
-  product_url: http://amigo.geneontology.org/amigo
+  product_url: https://amigo.geneontology.org/amigo
 - category: ProgrammingInterface
   description: Gene Ontology API for programmatic access
   format: http
   id: gene-ontology.api
   is_public: true
   name: Gene Ontology API
-  product_url: https://www.ebi.ac.uk/QuickGO/api/
+  product_url: https://api.geneontology.org/api/
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
     by Gene Ontology biocurators linking genes, proteins, and biological processes
