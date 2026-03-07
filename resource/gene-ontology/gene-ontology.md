@@ -54,7 +54,7 @@ products:
   id: gene-ontology.api
   is_public: true
   name: Gene Ontology API
-  product_url: https://api.geneontology.org/api/
+  product_url: https://api.geneontology.org/
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
     by Gene Ontology biocurators linking genes, proteins, and biological processes
