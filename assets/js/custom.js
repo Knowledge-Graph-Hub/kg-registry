@@ -236,6 +236,7 @@ jQuery(document).ready(function () {
     function tableHtml(content, domain = false, tableDomains) {
         const header = domain ? `<div class="p-1 bg-light"><strong>${capitalize(tableDomains)}</strong></div>` : '';
         return `${header}
+                <div class="registry-table-wrapper">
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr>
@@ -267,7 +268,7 @@ jQuery(document).ready(function () {
                                 </span>
                             </th>
                             <th scope="col" style="width: 5%; vertical-align: middle;" class="text-center">
-                                <span>Evaluation</span>
+                                <span>Eval</span>
                             </th>
                         </tr>
                     </thead>
@@ -275,6 +276,7 @@ jQuery(document).ready(function () {
                         ${content}
                     </tbody>
                 </table>
+                </div>
                 `;
     }
 

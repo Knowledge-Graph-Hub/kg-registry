@@ -25,6 +25,7 @@ html, body {
 body {
     display: flex;
     flex-flow: column;
+    min-width: 0;
 }
 
 .footer {
@@ -69,6 +70,145 @@ Custom blockquote formatting
     padding: 5px;
     margin-left: 20px;
     margin-bottom: 16px;
+}
+
+.site-container {
+    width: min(100%, 1440px);
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2rem);
+    padding-top: clamp(1.25rem, 3vw, 2rem);
+    padding-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.site-container > .row,
+.site-container > .col {
+    min-width: 0;
+}
+
+.site-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-container h1,
+.site-container h2,
+.site-container h3,
+.site-container h4,
+.site-container h5,
+.site-container p,
+.site-container li,
+.site-container td,
+.site-container th,
+.site-container .card-text,
+.site-container .list-group-item,
+.site-container .alert {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.header-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
+.header-card-row > .card {
+    flex: 1 1 12rem;
+    min-width: min(100%, 12rem);
+    max-width: none !important;
+    margin-bottom: 0 !important;
+}
+
+.registry-counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    align-items: center;
+}
+
+.registry-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.registry-filter {
+    flex: 1 1 12rem;
+    min-width: min(100%, 12rem);
+}
+
+.registry-filter label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.registry-table-wrapper,
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.registry-table-wrapper table {
+    min-width: 900px;
+}
+
+#results table {
+    min-width: 640px;
+}
+
+.example-query-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.example-query-list .btn {
+    margin: 0 !important;
+    text-align: left;
+    white-space: normal;
+}
+
+.btn-group {
+    flex-wrap: wrap;
+}
+
+.btn-group > .btn {
+    flex: 0 0 auto;
+}
+
+.form-control,
+.form-select,
+textarea {
+    max-width: 100%;
+}
+
+@media (max-width: 576px) {
+    .site-container {
+        padding-inline: 0.875rem;
+        padding-top: 1rem;
+    }
+
+    .header-card-row {
+        gap: 0.75rem;
+    }
+
+    .header-card-row > .card,
+    .registry-filter {
+        flex-basis: 100%;
+        min-width: 0;
+    }
+
+    .navbar .container-fluid {
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-right: 0.5rem;
+    }
 }
 </style>
 
