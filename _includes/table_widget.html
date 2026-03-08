@@ -5,10 +5,10 @@
     <a href="/kg-registry/registry/parquet-downloads.html">Parquet</a>
     ]
 </div>
-<div class="mb-2">
+<div class="mb-2 registry-counts">
     <span id="resource-count" class="badge bg-primary" style="font-size: 1rem;">0 resources</span>
-    <span id="kg-count" class="badge bg-success ms-2" style="font-size: 1rem;">0 KGs</span>
-    <span class="ms-2 text-muted" style="font-size: 0.9rem;">
+    <span id="kg-count" class="badge bg-success" style="font-size: 1rem;">0 KGs</span>
+    <span class="text-muted" style="font-size: 0.9rem;">
         Legend:
         <span class="ms-0" style="text-decoration: underline dotted; cursor: help;"
             title="Resource activity status is not 'active' (e.g., inactive/orphaned/unresponsive)">⏸ status</span>
@@ -16,26 +16,26 @@
 </div>
 <div class="mt-2">
     <!-- Filter dropdowns positioned above the table -->
-    <div class="d-flex flex-row gap-3 mb-3">
-        <div>
+    <div class="registry-filter-bar mb-3">
+        <div class="registry-filter">
             <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
             <select id="dd-domains" class="form-select form-select-sm">
                 <option selected value="">All Domains</option>
             </select>
         </div>
-        <div>
+        <div class="registry-filter">
             <label for="dd-resourcetypes" style="font-size:x-small">Resource Types</label>
             <select id="dd-resourcetypes" class="form-select form-select-sm">
                 <option selected value="">All Resource Types</option>
             </select>
         </div>
-        <div>
+        <div class="registry-filter">
             <label for="dd-collections" style="font-size:x-small">Collections</label>
             <select id="dd-collections" class="form-select form-select-sm">
                 <option selected value="">All Collections</option>
             </select>
         </div>
-        <div>
+        <div class="registry-filter">
             <label for="dd-activity" style="font-size:x-small">Activity Status</label>
             <select id="dd-activity" class="form-select form-select-sm">
                 <option selected value="">All Statuses</option>
@@ -44,7 +44,7 @@
                 <option value="orphaned">Orphaned</option>
             </select>
         </div>
-        <div>
+        <div class="registry-filter">
             <label for="dd-evaluation" style="font-size:x-small">Has Evaluation</label>
             <select id="dd-evaluation" class="form-select form-select-sm">
                 <option selected value="">All Resources</option>
@@ -54,7 +54,7 @@
                 <option value="no">Without Evaluation</option>
             </select>
         </div>
-        <div>
+        <div class="registry-filter">
             <label for="dd-taxa" style="font-size:x-small">Organism/Taxon</label>
             <select id="dd-taxa" class="form-select form-select-sm">
                 <option selected value="">All Taxa</option>

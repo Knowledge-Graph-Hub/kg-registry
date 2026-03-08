@@ -28,12 +28,14 @@ title: Advanced Search - KG Registry
                     <textarea class="form-control" id="sqlQuery" rows="5" placeholder="SELECT * FROM resources LIMIT 10;">SELECT * FROM resources LIMIT 10;</textarea>
                 </div>
                 <div class="mt-3">
-                    <button id="runQuery" class="btn btn-primary">Run Query</button>
-                    <button id="resetQuery" class="btn btn-secondary">Reset</button>
+                    <div class="d-flex flex-wrap gap-2">
+                        <button id="runQuery" class="btn btn-primary">Run Query</button>
+                        <button id="resetQuery" class="btn btn-secondary">Reset</button>
+                    </div>
                 </div>
                 <div class="mt-3">
                     <h6>Example Queries:</h6>
-                    <div class="d-flex flex-wrap">
+                    <div class="example-query-list">
                         <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT id, name, category FROM resources ORDER BY name LIMIT 20;">Basic Resource Info</button>
                         <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT r.id, r.name, COUNT(d.domain) as domain_count FROM resources r JOIN resource_domains d ON r.id = d.resource_id GROUP BY r.id, r.name ORDER BY domain_count DESC LIMIT 10;">Resources by Domain Count</button>
                         <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT r.id, r.name, p.product_id, p.product_name FROM resources r JOIN resource_products p ON r.id = p.resource_id LIMIT 20;">Resources with Products</button>
@@ -51,7 +53,7 @@ title: Advanced Search - KG Registry
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                     <h5>Results</h5>
                     <button id="downloadResults" class="btn btn-sm btn-success" disabled>Download as CSV</button>
                 </div>
