@@ -5,6 +5,6 @@ format: http
 id: gene-ontology.amigo
 is_public: true
 name: AmiGO 2
-product_url: http://amigo.geneontology.org/amigo
+product_url: https://amigo.geneontology.org/amigo
 layout: product_detail
 ---
