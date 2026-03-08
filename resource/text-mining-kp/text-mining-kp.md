@@ -35,7 +35,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphProduct
   description: KGX graph package for Text Mining KP (build tmkp_tmkp-2023-03-05_1.0_2025sep1_4.3.6;

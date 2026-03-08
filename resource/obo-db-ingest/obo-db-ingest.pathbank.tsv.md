@@ -9,6 +9,7 @@ license:
 name: pathbank Nodes TSV
 original_source:
 - pathbank
+product_file_size: 727666
 product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.tsv
 secondary_source:
 - obo-db-ingest

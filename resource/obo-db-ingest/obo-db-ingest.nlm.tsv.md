@@ -9,6 +9,7 @@ license:
 name: nlm Nodes TSV
 original_source:
 - nlm
+product_file_size: 1156325
 product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.tsv
 secondary_source:
 - obo-db-ingest

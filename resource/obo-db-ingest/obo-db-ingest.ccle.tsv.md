@@ -9,6 +9,7 @@ license:
 name: ccle Nodes TSV
 original_source:
 - ccle
+product_file_size: 12188
 product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.tsv
 secondary_source:
 - obo-db-ingest

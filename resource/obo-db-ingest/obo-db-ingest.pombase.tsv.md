@@ -9,6 +9,7 @@ license:
 name: pombase Nodes TSV
 original_source:
 - pombase
+product_file_size: 143806
 product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.tsv
 secondary_source:
 - obo-db-ingest

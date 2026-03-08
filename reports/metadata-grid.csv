@@ -86,6 +86,7 @@ climatemodelskg,active,PASS
 clingen,active,PASS
 clinical-data-kp,active,PASS
 clinicalkg,active,PASS
+clinicaltrials,active,PASS
 clinicaltrialsgov,active,PASS
 clinvar,active,PASS
 clo,active,PASS
@@ -107,7 +108,9 @@ corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
 cpic,active,PASS
+cpt,active,PASS
 cqs,active,PASS
+credit,active,PASS
 creeds,active,PASS
 cro,active,PASS
 ctd,active,PASS
@@ -116,6 +119,7 @@ ctkp,active,PASS
 cto,active,PASS
 ctrp,active,PASS
 cvdo,active,PASS
+cvx,active,PASS
 dailymed,active,PASS
 darkkinasekb,active,PASS
 dbsnp,active,PASS
@@ -204,6 +208,7 @@ forum,active,PASS
 fovt,active,PASS
 fypo,active,PASS
 gallont,active,PASS
+gard,active,PASS
 gaz,active,PASS
 gbif,active,PASS
 gdc,active,PASS
@@ -227,6 +232,7 @@ genomickb,active,PASS
 genophenoenvo-kg,active,PASS
 geo,active,PASS
 geoconnex,active,PASS
+geonames,active,PASS
 gff,active,PASS
 glkb,active,PASS
 globi,active,PASS
@@ -242,6 +248,7 @@ goldterms,active,PASS
 gp-kg,active,PASS
 greengenes,active,PASS
 gsso,active,PASS
+gtdb,active,PASS
 gtex,active,PASS
 gtopdb,active,PASS
 gtrnadb,active,PASS
@@ -271,9 +278,11 @@ iao,active,PASS
 ibkh,active,PASS
 icd10,active,PASS
 icd10cm,active,PASS
+icd11,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
 ico,active,PASS
+iconclass,active,PASS
 identifier-mappings,active,PASS
 idisk,active,PASS
 ido,active,PASS
@@ -337,6 +346,7 @@ mf,active,PASS
 mfoem,active,PASS
 mfomd,active,PASS
 mgd,active,PASS
+mgi,active,PASS
 mgmlink,active,PASS
 mgnify,active,PASS
 mi,active,PASS
@@ -374,6 +384,7 @@ nanopublications,active,PASS
 nasa-gesdisc-kg,active,PASS
 nbo,active,PASS
 ncatsgardkg,active,PASS
+ncbi,active,PASS
 ncbigene,active,PASS
 ncbitaxon,active,PASS
 ncit,active,PASS
@@ -385,10 +396,12 @@ neo,active,PASS
 ngbo,active,PASS
 nihreporter,active,PASS
 nikg,active,PASS
+nlm,active,PASS
 nlm-ckn,active,PASS
 nomen,active,PASS
 noncode,active,PASS
 np-kg,active,PASS
+npass,active,PASS
 npo,active,PASS
 nsides,active,PASS
 oae,active,PASS
@@ -439,6 +452,7 @@ ovae,active,PASS
 owlsim,active,PASS
 pankbase,active,PASS
 panther,active,PASS
+pathbank,active,PASS
 pathophenodb,active,PASS
 pathway-commons,active,PASS
 pathwhiz,active,PASS
@@ -512,6 +526,7 @@ rna-kg,active,PASS
 rnacentral,active,PASS
 ro,active,PASS
 robokop,active,PASS
+ror,active,PASS
 rs,active,PASS
 rtx-kg2,active,PASS
 ruralkg,active,PASS
@@ -536,6 +551,7 @@ silva,active,PASS
 skm,active,PASS
 skos,active,PASS
 sldb,active,PASS
+slm,active,PASS
 slso,active,PASS
 smart,active,PASS
 smpdb,active,PASS
@@ -548,6 +564,7 @@ so,active,PASS
 sockg,active,PASS
 spatialkg,active,PASS
 spd,active,PASS
+spdx,active,PASS
 spoke,active,PASS
 spoke-genelab,active,PASS
 sri-reference-kg,active,PASS
@@ -555,6 +572,7 @@ srpdb,active,PASS
 stato,active,PASS
 stellar,active,PASS
 string,active,PASS
+sty,active,PASS
 sudokn,active,PASS
 suppkg,active,PASS
 swisslipid,active,PASS

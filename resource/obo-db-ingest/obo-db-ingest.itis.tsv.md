@@ -9,6 +9,7 @@ license:
 name: itis Nodes TSV
 original_source:
 - itis
+product_file_size: 9497861
 product_url: https://w3id.org/biopragmatics/resources/itis/itis.tsv
 secondary_source:
 - obo-db-ingest

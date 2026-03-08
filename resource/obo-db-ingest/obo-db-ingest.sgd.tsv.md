@@ -9,6 +9,7 @@ license:
 name: sgd Nodes TSV
 original_source:
 - sgd
+product_file_size: 503057
 product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
 secondary_source:
 - obo-db-ingest

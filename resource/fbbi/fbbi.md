@@ -32,8 +32,10 @@ products:
   format: owl
   id: fbbi.owl
   name: fbbi.owl
-  product_file_size: 630985
   product_url: http://purl.obolibrary.org/obo/fbbi.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-03-08: Timeout connecting
+    to URL'
 repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
 ---
 ## Description

@@ -10,6 +10,7 @@ license:
 name: rhea OBO Graph JSON
 original_source:
 - rhea
+product_file_size: 5228738
 product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json.gz
 secondary_source:
 - obo-db-ingest

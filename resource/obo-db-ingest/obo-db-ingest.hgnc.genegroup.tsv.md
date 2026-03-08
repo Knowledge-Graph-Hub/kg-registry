@@ -9,6 +9,7 @@ license:
 name: hgnc.genegroup Nodes TSV
 original_source:
 - hgnc
+product_file_size: 190009
 product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.tsv
 secondary_source:
 - obo-db-ingest

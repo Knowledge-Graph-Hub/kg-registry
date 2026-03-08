@@ -9,6 +9,7 @@ license:
 name: depmap Nodes TSV
 original_source:
 - depmap
+product_file_size: 18757
 product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.tsv
 secondary_source:
 - obo-db-ingest

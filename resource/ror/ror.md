@@ -10,11 +10,25 @@ id: ror
 last_modified_date: '2026-02-26T00:00:00Z'
 layout: resource_detail
 name: Ror
+products:
+- category: Product
+  description: ror Nodes TSV
+  format: tsv
+  id: obo-db-ingest.ror.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: ror Nodes TSV
+  original_source:
+  - ror
+  product_file_size: 5381101
+  product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
+  secondary_source:
+  - obo-db-ingest
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
 ---
-
 # Ror
 
 This is an automatically generated stub page for ror. Please update with proper information.

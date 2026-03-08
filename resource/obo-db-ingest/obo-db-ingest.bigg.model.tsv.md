@@ -9,6 +9,7 @@ license:
 name: bigg.model Nodes TSV
 original_source:
 - bigg
+product_file_size: 1151
 product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
 secondary_source:
 - obo-db-ingest

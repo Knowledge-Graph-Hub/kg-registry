@@ -10,6 +10,7 @@ license:
 name: slm Nodes TSV
 original_source:
 - slm
+product_file_size: 9655893
 product_url: https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz
 secondary_source:
 - obo-db-ingest

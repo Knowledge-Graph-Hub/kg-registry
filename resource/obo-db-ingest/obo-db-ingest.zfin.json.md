@@ -10,6 +10,7 @@ license:
 name: zfin OBO Graph JSON
 original_source:
 - zfin
+product_file_size: 4010220
 product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json.gz
 secondary_source:
 - obo-db-ingest

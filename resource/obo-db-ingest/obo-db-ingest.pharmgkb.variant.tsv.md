@@ -9,6 +9,7 @@ license:
 name: pharmgkb.variant Nodes TSV
 original_source:
 - pharmgkb
+product_file_size: 19203
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.tsv
 secondary_source:
 - obo-db-ingest

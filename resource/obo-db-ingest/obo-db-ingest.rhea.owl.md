@@ -10,6 +10,7 @@ license:
 name: rhea OWL
 original_source:
 - rhea
+product_file_size: 7945039
 product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl.gz
 secondary_source:
 - obo-db-ingest

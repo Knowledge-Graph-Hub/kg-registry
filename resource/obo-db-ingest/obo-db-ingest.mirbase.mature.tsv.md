@@ -9,6 +9,7 @@ license:
 name: mirbase.mature Nodes TSV
 original_source:
 - mirbase
+product_file_size: 293915
 product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.tsv
 secondary_source:
 - obo-db-ingest

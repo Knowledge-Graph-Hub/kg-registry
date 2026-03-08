@@ -215,7 +215,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphProduct
   description: UniBioMap protein entity descriptions.
@@ -228,7 +230,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphProduct
   description: UniBioMap disease entity descriptions.
@@ -241,7 +245,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphProduct
   description: UniBioMap Gene Ontology entity descriptions.
@@ -256,7 +262,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphProduct
   description: UniBioMap pathway entity descriptions.
@@ -269,7 +277,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphProduct
   description: UniBioMap phenotype entity descriptions.
@@ -282,7 +292,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface for browsing UniBioMap resources and documentation.

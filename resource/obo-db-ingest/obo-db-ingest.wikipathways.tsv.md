@@ -9,6 +9,7 @@ license:
 name: wikipathways Nodes TSV
 original_source:
 - wikipathways
+product_file_size: 33562
 product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.tsv
 secondary_source:
 - obo-db-ingest

@@ -6,6 +6,7 @@ id: obo-db-ingest.sty.tsv
 name: sty Nodes TSV
 original_source:
 - sty
+product_file_size: 1583
 product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
 secondary_source:
 - obo-db-ingest

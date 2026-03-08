@@ -32,14 +32,14 @@ products:
   format: owl
   id: mmo.owl
   name: mmo.owl
-  product_file_size: 1915558
+  product_file_size: 1924469
   product_url: http://purl.obolibrary.org/obo/mmo.owl
 - category: OntologyProduct
   description: Measurement method ontology in OBO format
   format: obo
   id: mmo.obo
   name: mmo.obo
-  product_file_size: 503578
+  product_file_size: 506215
   product_url: http://purl.obolibrary.org/obo/mmo.obo
 repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
 ---

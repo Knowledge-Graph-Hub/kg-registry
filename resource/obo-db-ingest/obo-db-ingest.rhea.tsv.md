@@ -9,6 +9,7 @@ license:
 name: rhea Nodes TSV
 original_source:
 - rhea
+product_file_size: 981824
 product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.tsv
 secondary_source:
 - obo-db-ingest

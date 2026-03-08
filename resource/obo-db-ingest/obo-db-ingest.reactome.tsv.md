@@ -9,6 +9,7 @@ license:
 name: reactome Nodes TSV
 original_source:
 - reactome
+product_file_size: 445199
 product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.tsv
 secondary_source:
 - obo-db-ingest

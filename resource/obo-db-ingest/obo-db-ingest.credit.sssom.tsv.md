@@ -9,6 +9,7 @@ license:
 name: credit SSSOM
 original_source:
 - credit
+product_file_size: 136
 product_url: https://w3id.org/biopragmatics/resources/credit/credit.sssom.tsv
 secondary_source:
 - obo-db-ingest

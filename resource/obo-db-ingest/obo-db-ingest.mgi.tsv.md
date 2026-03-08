@@ -9,6 +9,7 @@ license:
 name: mgi Nodes TSV
 original_source:
 - mgi
+product_file_size: 6615249
 product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.tsv
 secondary_source:
 - obo-db-ingest

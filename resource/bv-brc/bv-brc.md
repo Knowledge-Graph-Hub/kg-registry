@@ -113,6 +113,9 @@ products:
   - goldterms
   - progenomes
   product_url: https://metatraits.embl.de/traits
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-03-08: Timeout connecting
+    to URL'
 publications:
 - authors:
   - Olson RD

@@ -63,7 +63,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases

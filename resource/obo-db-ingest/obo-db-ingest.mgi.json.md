@@ -8,6 +8,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: mgi OBO Graph JSON
+product_file_size: 12304920
 product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json.gz
 layout: product_detail
 ---

@@ -9,6 +9,7 @@ license:
 name: cgnc Nodes TSV
 original_source:
 - cgnc
+product_file_size: 406670
 product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.tsv
 secondary_source:
 - obo-db-ingest

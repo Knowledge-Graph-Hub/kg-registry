@@ -9,6 +9,7 @@ license:
 name: nlm.publisher Nodes TSV
 original_source:
 - nlm.publisher
+product_file_size: 8289
 product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.tsv
 secondary_source:
 - obo-db-ingest

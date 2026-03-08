@@ -9,6 +9,7 @@ license:
 name: drugcentral Nodes TSV
 original_source:
 - drugcentral
+product_file_size: 407590
 product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.tsv
 secondary_source:
 - obo-db-ingest

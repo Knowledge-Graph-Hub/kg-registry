@@ -9,6 +9,7 @@ license:
 name: npass Nodes TSV
 original_source:
 - npass
+product_file_size: 2460413
 product_url: https://w3id.org/biopragmatics/resources/npass/npass.tsv
 secondary_source:
 - obo-db-ingest

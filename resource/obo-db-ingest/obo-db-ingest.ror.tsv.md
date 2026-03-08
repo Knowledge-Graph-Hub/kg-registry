@@ -9,6 +9,7 @@ license:
 name: ror Nodes TSV
 original_source:
 - ror
+product_file_size: 5381101
 product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
 secondary_source:
 - obo-db-ingest

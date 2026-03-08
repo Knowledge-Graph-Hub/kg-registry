@@ -9,6 +9,7 @@ license:
 name: icd11 Nodes TSV
 original_source:
 - icd11
+product_file_size: 4174868
 product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.tsv
 secondary_source:
 - obo-db-ingest

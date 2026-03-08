@@ -9,6 +9,7 @@ license:
 name: zfin Nodes TSV
 original_source:
 - zfin
+product_file_size: 1884582
 product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.tsv
 secondary_source:
 - obo-db-ingest

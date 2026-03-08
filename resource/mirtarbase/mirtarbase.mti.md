@@ -7,6 +7,8 @@ id: mirtarbase.mti
 name: miRTarBase Complete MTI Dataset
 product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
 warnings:
+- File was not able to be retrieved when checked on 2026-02-26_ HTTP 403 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-02-25_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
@@ -15,8 +17,6 @@ warnings:
   URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
   with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
   '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1028)')))
-- File was not able to be retrieved when checked on 2026-02-20_ HTTP 403 error when
-  accessing file
 - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
   URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
   with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,

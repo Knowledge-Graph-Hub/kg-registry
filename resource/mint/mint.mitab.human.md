@@ -7,8 +7,8 @@ id: mint.mitab.human
 name: MINT Human Interactions
 product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
 warnings:
-- File was not able to be retrieved when checked on 2026-02-25_ HTTP 500 error when
-  accessing file
+- File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+  header found
 - File was not able to be retrieved when checked on 2026-02-25_ HTTP 500 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-02-18_ No Content-Length

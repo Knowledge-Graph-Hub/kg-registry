@@ -9,6 +9,7 @@ license:
 name: pharmgkb.gene Nodes TSV
 original_source:
 - pharmgkb
+product_file_size: 757356
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.tsv
 secondary_source:
 - obo-db-ingest

@@ -10,6 +10,7 @@ license:
 name: gtdb Nodes TSV
 original_source:
 - gtdb
+product_file_size: 2918783
 product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.tsv.gz
 secondary_source:
 - obo-db-ingest

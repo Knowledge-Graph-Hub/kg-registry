@@ -9,6 +9,7 @@ license:
 name: ec Nodes TSV
 original_source:
 - ec
+product_file_size: 283274
 product_url: https://w3id.org/biopragmatics/resources/ec/ec.tsv
 secondary_source:
 - obo-db-ingest

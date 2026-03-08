@@ -49,7 +49,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -74,7 +74,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -93,7 +93,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -102,7 +102,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -110,7 +110,7 @@ products:
   format: owl
   id: go.snapshot.go.owl
   name: GO (OWL edition), daily snapshot release
-  product_file_size: 129057533
+  product_file_size: 129414878
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -118,7 +118,7 @@ products:
   format: obo
   id: go.snapshot.go.obo
   name: GO (OBO Format edition), daily snapshot release
-  product_file_size: 36289217
+  product_file_size: 36415389
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -2304,11 +2304,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2026-02-26_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-02-26: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Browser for searching and viewing Gene Ontology terms and GOA annotations
@@ -2475,11 +2475,11 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
     header found'
 repository: https://github.com/geneontology/go-ontology
 taxon:

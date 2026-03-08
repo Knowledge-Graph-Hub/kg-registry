@@ -9,6 +9,7 @@ license:
 name: dictybase.gene Nodes TSV
 original_source:
 - dictybase
+product_file_size: 197677
 product_url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.tsv
 secondary_source:
 - obo-db-ingest

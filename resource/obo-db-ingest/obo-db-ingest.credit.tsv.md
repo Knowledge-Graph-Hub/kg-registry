@@ -9,6 +9,7 @@ license:
 name: credit Nodes TSV
 original_source:
 - credit
+product_file_size: 1046
 product_url: https://w3id.org/biopragmatics/resources/credit/credit.tsv
 secondary_source:
 - obo-db-ingest

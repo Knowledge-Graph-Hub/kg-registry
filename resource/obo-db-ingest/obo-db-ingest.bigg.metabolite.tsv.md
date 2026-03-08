@@ -9,6 +9,7 @@ license:
 name: bigg.metabolite Nodes TSV
 original_source:
 - bigg
+product_file_size: 266629
 product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
 secondary_source:
 - obo-db-ingest

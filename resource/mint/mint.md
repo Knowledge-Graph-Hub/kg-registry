@@ -51,8 +51,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-01-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -67,8 +69,10 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -83,8 +87,10 @@ products:
     header found
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-02-26: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 500 error
+    when accessing file'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).

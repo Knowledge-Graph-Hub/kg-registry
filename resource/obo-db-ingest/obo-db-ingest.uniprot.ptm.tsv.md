@@ -9,6 +9,7 @@ license:
 name: uniprot.ptm Nodes TSV
 original_source:
 - uniprot
+product_file_size: 6660
 product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv
 secondary_source:
 - obo-db-ingest

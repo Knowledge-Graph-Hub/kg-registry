@@ -9,6 +9,7 @@ license:
 name: signor Nodes TSV
 original_source:
 - signor
+product_file_size: 29422
 product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
 secondary_source:
 - obo-db-ingest

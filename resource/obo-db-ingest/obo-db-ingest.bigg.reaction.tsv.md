@@ -9,6 +9,7 @@ license:
 name: bigg.reaction Nodes TSV
 original_source:
 - bigg
+product_file_size: 593163
 product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
 secondary_source:
 - obo-db-ingest

@@ -9,6 +9,7 @@ license:
 name: pfam.clan Nodes TSV
 original_source:
 - pfam
+product_file_size: 6407
 product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv
 secondary_source:
 - obo-db-ingest

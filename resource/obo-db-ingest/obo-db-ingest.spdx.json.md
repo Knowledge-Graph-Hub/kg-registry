@@ -6,6 +6,7 @@ id: obo-db-ingest.spdx.json
 name: spdx OBO Graph JSON
 original_source:
 - spdx
+product_file_size: 39391
 product_url: https://w3id.org/biopragmatics/resources/spdx/spdx.json
 secondary_source:
 - obo-db-ingest

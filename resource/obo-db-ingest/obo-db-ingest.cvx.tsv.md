@@ -6,6 +6,7 @@ id: obo-db-ingest.cvx.tsv
 name: cvx Nodes TSV
 original_source:
 - cvx
+product_file_size: 6401
 product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.tsv
 secondary_source:
 - obo-db-ingest

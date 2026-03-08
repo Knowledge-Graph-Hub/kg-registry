@@ -9,6 +9,7 @@ license:
 name: interpro Nodes TSV
 original_source:
 - interpro
+product_file_size: 697846
 product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
 secondary_source:
 - obo-db-ingest

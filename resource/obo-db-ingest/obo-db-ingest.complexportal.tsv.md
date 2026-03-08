@@ -9,6 +9,7 @@ license:
 name: complexportal Nodes TSV
 original_source:
 - complexportal
+product_file_size: 654220
 product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.tsv
 secondary_source:
 - obo-db-ingest

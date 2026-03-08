@@ -9,6 +9,7 @@ license:
 name: kegg.genome Nodes TSV
 original_source:
 - kegg
+product_file_size: 187935
 product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv
 secondary_source:
 - obo-db-ingest

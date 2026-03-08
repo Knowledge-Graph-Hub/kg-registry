@@ -9,6 +9,7 @@ license:
 name: nlm.publisher SSSOM
 original_source:
 - nlm.publisher
+product_file_size: 140
 product_url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.sssom.tsv
 secondary_source:
 - obo-db-ingest

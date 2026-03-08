@@ -10,6 +10,7 @@ license:
 name: zfin OWL
 original_source:
 - zfin
+product_file_size: 4556098
 product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl.gz
 secondary_source:
 - obo-db-ingest

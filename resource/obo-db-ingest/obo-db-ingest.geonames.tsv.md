@@ -9,6 +9,7 @@ license:
 name: geonames Nodes TSV
 original_source:
 - geonames
+product_file_size: 549884
 product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.tsv
 secondary_source:
 - obo-db-ingest

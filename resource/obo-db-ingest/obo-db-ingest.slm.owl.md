@@ -8,6 +8,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: slm OWL
+product_file_size: 61858122
 product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl.gz
 layout: product_detail
 ---
