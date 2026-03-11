@@ -9,9 +9,9 @@ product_url: https://w3id.org/goldterms/goldterms.owl
 secondary_source:
 - goldterms
 warnings:
-- File was not able to be retrieved when checked on 2026-02-26_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-03-08_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-02-26_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
   to URL

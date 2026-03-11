@@ -9,15 +9,15 @@ contacts:
   label: DBpedia Association
 creation_date: '2026-03-11T00:00:00Z'
 description: DBpedia is a community knowledge graph published as RDF and built from
-  structured content extracted from Wikipedia and related Wikimedia data. It is
-  accessible through linked data URIs, a public SPARQL endpoint, and continuously
-  updated releases distributed through the DBpedia Databus.
+  structured content extracted from Wikipedia and related Wikimedia data. It is accessible
+  through linked data URIs, a public SPARQL endpoint, and continuously updated releases
+  distributed through the DBpedia Databus.
 domains:
 - general
 homepage_url: https://www.dbpedia.org/
 id: dbpedia
-layout: resource_detail
 last_modified_date: '2026-03-11T00:00:00Z'
+layout: resource_detail
 name: DBpedia
 products:
 - category: GraphicalInterface
@@ -48,13 +48,13 @@ products:
   - dbpedia
   - wikipedia
   - wikidata
+  product_file_size: 18605
+  product_url: https://databus.dbpedia.org/dbpedia/collections/latest-core
   secondary_source:
   - dbpedia
-  product_url: https://databus.dbpedia.org/dbpedia/collections/latest-core
 synonyms:
 - DBpedia
 ---
-
 # DBpedia
 
 ## Overview

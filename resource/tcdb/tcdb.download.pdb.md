@@ -7,9 +7,9 @@ id: tcdb.download.pdb
 name: TC Structure Mapping Table
 product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
 warnings:
-- File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
+- File was not able to be retrieved when checked on 2026-03-08_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
+- File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
   header found
 layout: product_detail
 ---

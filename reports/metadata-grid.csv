@@ -122,6 +122,7 @@ cvdo,active,PASS
 cvx,active,PASS
 dailymed,active,PASS
 darkkinasekb,active,PASS
+dbpedia,active,PASS
 dbsnp,active,PASS
 dc,active,PASS
 dct,active,PASS
@@ -445,6 +446,7 @@ opmi,active,PASS
 orcid,active,PASS
 ordo,active,PASS
 oregano,active,PASS
+orkg,active,PASS
 ornaseq,active,PASS
 orphanet,active,PASS
 orthodb,active,PASS
@@ -622,6 +624,7 @@ wbls,active,PASS
 wbphenotype,active,PASS
 wikidata,active,PASS
 wikipathways,active,PASS
+wikipedia,active,PASS
 wildlifekn,active,PASS
 wormbase,active,PASS
 xao,active,PASS

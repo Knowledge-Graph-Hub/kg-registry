@@ -48,7 +48,7 @@ products:
   name: OBOGraphs JSON version of Main release
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-11: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim
@@ -529,6 +529,30 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
+- category: GraphProduct
+  description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
+    format.
+  format: ntriples
+  id: orkg.dump
+  name: ORKG RDF Dump
+  original_source:
+  - orkg
+  - wikidata
+  - geonames
+  - ncit
+  - chebi
+  - ncbitaxon
+  - go
+  - clo
+  - omit
+  - iao
+  - uo
+  - stato
+  - obi
+  product_file_size: 642902930
+  product_url: https://orkg.org/api/rdf/dump
+  secondary_source:
+  - orkg
 repository: https://github.com/obophenotype/ncbitaxon
 ---
 ## Description

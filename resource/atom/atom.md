@@ -40,11 +40,11 @@ products:
   - pubmed
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 418 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-26_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 418 error
+  - File was not able to be retrieved when checked on 2026-03-08_ HTTP 418 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 418 error
     when accessing file'
 - category: ProcessProduct
   description: Natural language processing pipeline for constructing anti-tumor biomaterial
@@ -57,11 +57,11 @@ products:
   - atom
   product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 418 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-02-26_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 418 error
+  - File was not able to be retrieved when checked on 2026-03-08_ HTTP 418 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 418 error
     when accessing file'
 publications:
 - authors:

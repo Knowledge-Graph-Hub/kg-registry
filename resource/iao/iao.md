@@ -47,7 +47,7 @@ products:
   name: IAO dev
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: An ontology based on a theory of document acts describing what people
@@ -180,6 +180,30 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: GraphProduct
+  description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
+    format.
+  format: ntriples
+  id: orkg.dump
+  name: ORKG RDF Dump
+  original_source:
+  - orkg
+  - wikidata
+  - geonames
+  - ncit
+  - chebi
+  - ncbitaxon
+  - go
+  - clo
+  - omit
+  - iao
+  - uo
+  - stato
+  - obi
+  product_file_size: 642902930
+  product_url: https://orkg.org/api/rdf/dump
+  secondary_source:
+  - orkg
 repository: https://github.com/information-artifact-ontology/IAO
 ---
 ## Description

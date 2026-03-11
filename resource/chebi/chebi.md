@@ -45,14 +45,14 @@ products:
   format: json
   id: chebi.json
   name: chebi.json
-  product_file_size: 506200789
+  product_file_size: 506385117
   product_url: http://purl.obolibrary.org/obo/chebi.json
 - category: OntologyProduct
   description: chebi, compressed owl
   format: owl
   id: chebi.owl.gz
   name: chebi, compressed owl
-  product_file_size: 62912402
+  product_file_size: 62935653
   product_url: http://purl.obolibrary.org/obo/chebi.owl.gz
 - category: OntologyProduct
   description: chebi_lite, no syns or xrefs
@@ -839,11 +839,11 @@ products:
   secondary_source:
   - forum
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-08_ FTP error_ timed
+    out
   - File was not able to be retrieved when checked on 2026-02-26_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-02-25_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-03-08: FTP error: timed
+  - 'File was not able to be retrieved when checked on 2026-03-11: FTP error: timed
     out'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
@@ -1091,6 +1091,30 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
+- category: GraphProduct
+  description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
+    format.
+  format: ntriples
+  id: orkg.dump
+  name: ORKG RDF Dump
+  original_source:
+  - orkg
+  - wikidata
+  - geonames
+  - ncit
+  - chebi
+  - ncbitaxon
+  - go
+  - clo
+  - omit
+  - iao
+  - uo
+  - stato
+  - obi
+  product_file_size: 642902930
+  product_url: https://orkg.org/api/rdf/dump
+  secondary_source:
+  - orkg
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ## Description

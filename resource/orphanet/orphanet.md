@@ -162,11 +162,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-08_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2026-02-26_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-25_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 403 error
     when accessing file'
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs

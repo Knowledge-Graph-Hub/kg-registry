@@ -25,7 +25,7 @@ products:
   name: rex.owl
   product_url: http://purl.obolibrary.org/obo/rex.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-08: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 403 error
     when accessing file'
 ---
 ## Description

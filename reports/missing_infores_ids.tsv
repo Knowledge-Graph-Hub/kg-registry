@@ -106,6 +106,7 @@ ctkp	Clinical Trials KP	KnowledgeGraph	https://github.com/NCATSTranslator/Transl
 cto	CTO: Core Ontology of Clinical Trials	Ontology	https://github.com/ClinicalTrialOntology/CTO/	resource/cto/cto.md
 cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	resource/cvdo/cvdo.md
 cvx	Cvx	DataSource		resource/cvx/cvx.md
+dbpedia	DBpedia	KnowledgeGraph	https://www.dbpedia.org/	resource/dbpedia/dbpedia.md
 dc	Dublin Core Metadata Terms	DataModel	https://www.dublincore.org/	resource/dc/dc.md
 dc_cl	Dendritic cell	Ontology	http://www.dukeontologygroup.org/Projects.html	resource/dc_cl/dc_cl.md
 dct	Dublin Core Terms	Ontology	https://www.dublincore.org/specifications/dublin-core/dcmi-terms/	resource/dct/dct.md
@@ -379,6 +380,7 @@ opl	Ontology for Parasite LifeCycle	Ontology	https://github.com/OPL-ontology/OPL
 opmi	Ontology of Precision Medicine and Investigation	Ontology	https://github.com/OPMI/opmi	resource/opmi/opmi.md
 orcid	ORCID	DataSource	https://orcid.org/	resource/orcid/orcid.md
 oregano	OREGANO	KnowledgeGraph	https://gitub.u-bordeaux.fr/erias/oregano	resource/oregano/oregano.md
+orkg	Open Research Knowledge Graph	KnowledgeGraph	https://orkg.org/	resource/orkg/orkg.md
 ornaseq	Ontology of RNA Sequencing	Ontology	http://kim.bio.upenn.edu/software/ornaseq.shtml	resource/ornaseq/ornaseq.md
 orthodb	OrthoDB	DataSource	https://www.orthodb.org/	resource/orthodb/orthodb.md
 ovae	Ontology of Vaccine Adverse Events	Ontology	http://www.violinet.org/ovae/	resource/ovae/ovae.md
@@ -527,6 +529,7 @@ vto	Vertebrate Taxonomy Ontology	Ontology	https://github.com/phenoscape/vertebra
 wbbt	C. elegans Gross Anatomy Ontology	Ontology	https://github.com/obophenotype/c-elegans-gross-anatomy-ontology	resource/wbbt/wbbt.md
 wbls	C. elegans development ontology	Ontology	https://github.com/obophenotype/c-elegans-development-ontology	resource/wbls/wbls.md
 wbphenotype	C. elegans phenotype	Ontology	https://github.com/obophenotype/c-elegans-phenotype-ontology	resource/wbphenotype/wbphenotype.md
+wikipedia	Wikipedia	DataSource	https://www.wikipedia.org/	resource/wikipedia/wikipedia.md
 wildlifekn	Wildlife-KN	KnowledgeGraph	https://sites.nd.edu/kn-wildlife/	resource/wildlifekn/wildlifekn.md
 xao	Xenopus Anatomy Ontology	Ontology	http://www.xenbase.org/anatomy/xao.do?method=display	resource/xao/xao.md
 xco	Experimental condition ontology	Ontology	https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000	resource/xco/xco.md

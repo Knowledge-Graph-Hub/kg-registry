@@ -50,11 +50,11 @@ products:
   name: TC Systems to Substrates Table
   product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2026-02-26_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-03-08: Timeout connecting
+  - File was not able to be retrieved when checked on 2026-03-08_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-03-11: Timeout connecting
     to URL'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
@@ -72,11 +72,11 @@ products:
   name: Sequence Accessions to TCIDs
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-08_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-11: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
@@ -94,11 +94,11 @@ products:
   name: Accessions to TCIDs
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-08_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-11: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
@@ -108,11 +108,11 @@ products:
   name: TC Annotation Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-08_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-11: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
@@ -122,11 +122,11 @@ products:
   name: TC Structure Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-08_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-11: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
@@ -136,11 +136,11 @@ products:
   name: TC Protein Family Mapping Table
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-08: No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-08_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-03-11: No Content-Length
     header found'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

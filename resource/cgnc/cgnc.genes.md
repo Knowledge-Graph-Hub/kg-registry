@@ -11,9 +11,9 @@ product_url: http://birdgenenames.org/cgnc/downloads.jsp?file=standard
 secondary_source:
 - cgnc
 warnings:
-- File was not able to be retrieved when checked on 2026-02-26_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-03-08_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-02-25_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-02-26_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

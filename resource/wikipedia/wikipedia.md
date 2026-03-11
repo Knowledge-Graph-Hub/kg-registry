@@ -11,8 +11,8 @@ domains:
 - general
 homepage_url: https://www.wikipedia.org/
 id: wikipedia
-layout: resource_detail
 last_modified_date: '2026-03-11T00:00:00Z'
+layout: resource_detail
 name: Wikipedia
 products:
 - category: GraphicalInterface
@@ -58,18 +58,31 @@ products:
   product_url: https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/2026-03-01/xml/bzip2/
 - category: Product
   description: English Wikipedia full revision-history XML export directory from the
-    Wikimedia dump service. This dump contains complete page revision histories,
-    split across multiple `.xml.bz2` files.
+    Wikimedia dump service. This dump contains complete page revision histories, split
+    across multiple `.xml.bz2` files.
   format: xml
   id: wikipedia.dumps.enwiki.history
   name: English Wikipedia Full Revision History XML Dumps
   original_source:
   - wikipedia
   product_url: https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/2026-03-01/xml/bzip2/
+- category: Product
+  description: Databus collection for the latest core DBpedia release used by the
+    main SPARQL endpoint and linked data interface.
+  format: http
+  id: dbpedia.latest-core
+  name: DBpedia Latest Core Collection
+  original_source:
+  - dbpedia
+  - wikipedia
+  - wikidata
+  product_file_size: 18605
+  product_url: https://databus.dbpedia.org/dbpedia/collections/latest-core
+  secondary_source:
+  - dbpedia
 synonyms:
 - English Wikipedia
 ---
-
 # Wikipedia
 
 ## Overview
