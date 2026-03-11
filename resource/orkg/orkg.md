@@ -94,6 +94,20 @@ products:
   name: ORKG RDF Dump
   original_source:
   - orkg
+  - wikidata
+  - geonames
+  - ncit
+  - chebi
+  - ncbitaxon
+  - go
+  - clo
+  - omit
+  - iao
+  - uo
+  - stato
+  - obi
+  secondary_source:
+  - orkg
   product_file_size: 642902930
   product_url: https://orkg.org/api/rdf/dump
 publications:
