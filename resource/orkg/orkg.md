@@ -9,9 +9,9 @@ contacts:
   label: Open Research Knowledge Graph Team
 creation_date: '2026-03-11T00:00:00Z'
 description: The Open Research Knowledge Graph (ORKG) aims to describe research papers
-  in a structured manner. With the ORKG, papers are easier to find and compare. It
-  provides structured, machine-readable representations of research contributions
-  that can be queried, compared, and reused.
+  in a structured manner. It represents research papers and their contributions as
+  structured, machine-readable descriptions that can be explored, compared, and
+  reused through the ORKG portal and API.
 domains:
 - literature
 homepage_url: https://orkg.org/
@@ -25,8 +25,8 @@ name: Open Research Knowledge Graph
 repository: https://gitlab.com/TIBHannover/orkg/orkg-frontend/
 products:
 - category: GraphicalInterface
-  description: Web interface for browsing, searching, and comparing research contributions
-    in the ORKG
+  description: Web portal for browsing papers, creating structured research descriptions,
+    and comparing research contributions in ORKG.
   format: http
   id: orkg.portal
   name: ORKG Web Portal
@@ -34,26 +34,84 @@ products:
   - orkg
   product_url: https://orkg.org/
 - category: ProgrammingInterface
-  description: REST API providing programmatic access to ORKG data and structured
-    research contribution metadata
+  description: Public REST API for programmatic access to ORKG resources, comparisons,
+    papers, and other structured scholarly content.
   format: http
   id: orkg.api
+  is_public: true
   name: ORKG REST API
   original_source:
   - orkg
   product_url: https://orkg.org/api
-- category: Product
-  description: ORKG data dump in N-Triples RDF format for bulk download and reuse
-  format: ntriples
-  id: orkg.dump
-  name: ORKG RDF Data Dump
+- category: DocumentationProduct
+  description: Static reference documentation for the ORKG REST API published via
+    GitLab Pages.
+  format: http
+  id: orkg.api-docs
+  name: ORKG API Documentation
+  original_source:
+  - orkg.api
+  product_url: http://tibhannover.gitlab.io/orkg/orkg-backend/api-doc/
+- category: ProcessProduct
+  description: Python package wrapping the ORKG API for programmatic access from
+    Python workflows.
+  format: python
+  id: orkg.python
+  name: ORKG Python Package
+  original_source:
+  - orkg.api
+  product_url: https://pypi.org/project/orkg/
+- category: DocumentationProduct
+  description: Official ORKG documentation covering tutorials, reference material,
+    and REST API model documentation.
+  format: http
+  id: orkg.docs
+  name: ORKG Documentation
   original_source:
   - orkg
-  product_url: https://orkg.org/about
+  product_url: https://docs.orkg.org/
+- category: GraphicalInterface
+  description: Virtuoso-based SPARQL query editor for querying ORKG RDF data.
+  format: http
+  id: orkg.triplestore
+  name: ORKG Virtuoso Query Editor
+  original_source:
+  - orkg
+  product_url: https://orkg.org/triplestore
+- category: GraphicalInterface
+  description: Visual SPARQL editor for exploring ORKG data with query examples.
+  format: http
+  id: orkg.sparql
+  name: ORKG Visual SPARQL Editor
+  original_source:
+  - orkg
+  product_url: https://orkg.org/sparql/
+- category: GraphProduct
+  description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
+    format.
+  format: ntriples
+  id: orkg.dump
+  name: ORKG RDF Dump
+  original_source:
+  - orkg
+  product_file_size: 642902930
+  product_url: https://orkg.org/api/rdf/dump
 publications:
-- id: https://doi.org/10.1145/3360901.3364435
-  title: "Towards a Knowledge Graph for Science"
-  year: "2019"
+- authors:
+  - Mohamad Yaser Jaradeh
+  - Allard Oelen
+  - Kheir Eddine Farfar
+  - Manuel Prinz
+  - Jennifer D'Souza
+  - "Gábor Kismihók"
+  - Markus Stocker
+  - "Sören Auer"
+  doi: 10.1145/3360901.3364435
+  id: doi:10.1145/3360901.3364435
+  journal: Proceedings of the 10th International Conference on Knowledge Capture
+  preferred: true
+  title: Open Research Knowledge Graph
+  year: '2019'
 synonyms:
 - ORKG
 ---
@@ -62,18 +120,18 @@ synonyms:
 
 ## Overview
 
-The Open Research Knowledge Graph (ORKG) is a scholarly knowledge graph that describes research contributions from scientific papers in a structured, machine-readable manner. It is developed by TIB – Leibniz Information Centre for Science and Technology.
+The Open Research Knowledge Graph (ORKG) is a scholarly knowledge graph for representing research papers and their contributions as structured descriptions rather than only free text. It provides a web portal for curation and comparison plus a public REST API for programmatic access.
 
 ## Key Features
 
-- **Structured Research Descriptions**: Research contributions are described using structured data rather than unstructured text
-- **Comparisons**: Enables systematic comparison of research contributions across papers
-- **FAIR Principles**: Data is represented as Linked Data following FAIR (Findable, Accessible, Interoperable, Reusable) principles
-- **Community-driven**: Researchers can contribute structured descriptions of their own papers
+- **Structured Research Descriptions**: Papers and contributions are represented in machine-readable form
+- **Comparisons**: ORKG supports side-by-side comparison of research contributions across papers
+- **Multiple Scholarly Views**: The platform documents dedicated models for comparisons, visualizations, smart reviews, templates, and literature lists
+- **Programmatic Access**: ORKG exposes a public REST API and official documentation for developers and integrators
 
 ## Applications
 
-- **Literature Search**: Find papers by their structured content, not just keywords
-- **Research Comparison**: Systematically compare methodologies, results, and findings across papers
-- **Knowledge Discovery**: Explore connections between research contributions
-- **Data Reuse**: Programmatic access to structured research metadata via REST API and RDF dumps
+- **Literature Search**: Find papers using structured scholarly metadata
+- **Research Comparison**: Compare methods, datasets, results, and other contribution details
+- **Knowledge Discovery**: Explore reusable scholarly entities and relationships captured in ORKG
+- **Integration**: Reuse ORKG content through the public REST API and documentation
