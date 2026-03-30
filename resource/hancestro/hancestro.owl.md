@@ -5,7 +5,6 @@ description: The full version of HANCESTRO in OWL format, with BFO upper hierarc
 format: owl
 id: hancestro.owl
 name: HANCESTRO
-product_file_size: 145675
 product_url: http://purl.obolibrary.org/obo/hancestro.owl
 layout: product_detail
 ---

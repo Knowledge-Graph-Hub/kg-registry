@@ -7,7 +7,6 @@ description: The new version of uPheno, along with species independent phenotype
 format: owl
 id: upheno.v2.upheno.owl
 name: uPheno 2
-product_file_size: 416269865
 product_url: http://purl.obolibrary.org/obo/upheno/v2/upheno.owl
 layout: product_detail
 ---

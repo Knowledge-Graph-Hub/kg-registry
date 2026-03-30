@@ -39,10 +39,8 @@ products:
   format: obo
   id: emapa.obo
   name: emapa.obo
+  product_file_size: 193424
   product_url: http://purl.obolibrary.org/obo/emapa.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
 repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
 taxon:
 - NCBITaxon:10088
