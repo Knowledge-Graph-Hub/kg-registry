@@ -1,4 +1,5 @@
-import importlib.util
+"""Test domain sanitization performed by extract-metadata validation."""
+
 import tempfile
 from pathlib import Path
 from types import SimpleNamespace
@@ -6,19 +7,8 @@ from types import SimpleNamespace
 import yaml
 
 
-def _load_extract_metadata_module(repo_root: Path):
-    script_path = repo_root / "util" / "extract-metadata.py"
-    spec = importlib.util.spec_from_file_location("extract_metadata", str(script_path))
-    assert spec is not None and spec.loader is not None
-    mod = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
-    spec.loader.exec_module(mod)  # type: ignore[attr-defined]
-    return mod
-
-
-def test_invalid_domains_are_removed_and_valid_remain():
-    repo_root = Path(__file__).resolve().parents[1]
-    mod = _load_extract_metadata_module(repo_root)
-
+def test_invalid_domains_are_removed_and_valid_remain(extract_metadata_module):
+    mod = extract_metadata_module
     with tempfile.TemporaryDirectory() as td:
         res_dir = Path(td) / "tmpres"
         res_dir.mkdir(parents=True, exist_ok=True)

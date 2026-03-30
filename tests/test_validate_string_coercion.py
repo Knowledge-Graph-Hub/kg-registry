@@ -1,4 +1,5 @@
-import importlib.util
+"""Test string coercion performed by extract-metadata validation."""
+
 import tempfile
 from pathlib import Path
 from types import SimpleNamespace
@@ -6,20 +7,8 @@ from types import SimpleNamespace
 import yaml
 
 
-def _load_extract_metadata_module(repo_root: Path):
-    """Dynamically load util/extract-metadata.py as a module."""
-    script_path = repo_root / "util" / "extract-metadata.py"
-    spec = importlib.util.spec_from_file_location("extract_metadata", str(script_path))
-    assert spec is not None and spec.loader is not None, "Could not load extract-metadata.py"
-    mod = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
-    spec.loader.exec_module(mod)  # type: ignore[attr-defined]
-    return mod
-
-
-def test_validate_coerces_numeric_strings_and_writes_back():
-    repo_root = Path(__file__).resolve().parents[1]
-    mod = _load_extract_metadata_module(repo_root)
-
+def test_validate_coerces_numeric_strings_and_writes_back(extract_metadata_module):
+    mod = extract_metadata_module
     with tempfile.TemporaryDirectory() as td:
         # Create a resource-like directory and markdown file
         res_dir = Path(td) / "tmpres"

@@ -1,21 +1,8 @@
-import importlib.util
-import sys
+"""Test KG-Monarch ingest helpers against small parquet fixtures."""
+
 from pathlib import Path
 
 import duckdb  # type: ignore
-
-HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
-INGEST_PATH = ROOT / "src" / "kg_registry" / "ingests" / "kg-monarch" / "kg-monarch.py"
-
-
-def _load_ingest_module():
-    spec = importlib.util.spec_from_file_location("kg_monarch_ingest", str(INGEST_PATH))
-    assert spec and spec.loader, "Failed to load ingest module spec"
-    mod = importlib.util.module_from_spec(spec)
-    sys.modules["kg_monarch_ingest"] = mod
-    spec.loader.exec_module(mod)  # type: ignore[attr-defined]
-    return mod
 
 
 def _write_parquet_edges(path: Path):
@@ -48,13 +35,13 @@ def _write_parquet_nodes(path: Path):
     con.close()
 
 
-def test_counts_and_types_from_parquet(tmp_path):
+def test_counts_and_types_from_parquet(tmp_path, kg_monarch_ingest_module):
     edge_pq = tmp_path / "edge_report.parquet"
     node_pq = tmp_path / "node_report.parquet"
     _write_parquet_edges(edge_pq)
     _write_parquet_nodes(node_pq)
 
-    ingest = _load_ingest_module()
+    ingest = kg_monarch_ingest_module
 
     # counts: edges=sum(count)=15, nodes=sum(count)=10 per our fixture
     ecount, ncount = ingest.counts_from_parquet(str(edge_pq), str(node_pq))

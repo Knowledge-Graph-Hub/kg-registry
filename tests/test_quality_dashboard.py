@@ -1,24 +1,12 @@
-import importlib.util
-import sys
+"""Test quality dashboard aggregation and coverage metrics."""
+
 from datetime import datetime, timezone
 from pathlib import Path
 
 
-def _load_quality_dashboard_module(repo_root: Path):
-    util_dir = repo_root / "util"
-    sys.path.insert(0, str(util_dir))
-    script_path = util_dir / "generate-quality-dashboard.py"
-    spec = importlib.util.spec_from_file_location("quality_dashboard", str(script_path))
-    assert spec is not None and spec.loader is not None, "Could not load generate-quality-dashboard.py"
-    mod = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
-    spec.loader.exec_module(mod)  # type: ignore[attr-defined]
-    return mod
-
-
-def test_build_dashboard_data_counts_and_scoring():
+def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
+    mod = quality_dashboard_module
     repo_root = Path(__file__).resolve().parents[1]
-    mod = _load_quality_dashboard_module(repo_root)
-
     now = datetime(2026, 2, 16, tzinfo=timezone.utc)
     resources = [
         {
@@ -119,10 +107,9 @@ def test_build_dashboard_data_counts_and_scoring():
     assert top[0]["score"] > top[1]["score"]
 
 
-def test_knowledge_graph_evaluation_coverage():
+def test_knowledge_graph_evaluation_coverage(quality_dashboard_module):
     repo_root = Path(__file__).resolve().parents[1]
-    mod = _load_quality_dashboard_module(repo_root)
-
+    mod = quality_dashboard_module
     now = datetime(2026, 2, 16, tzinfo=timezone.utc)
     resources = [
         {
@@ -163,10 +150,8 @@ def test_knowledge_graph_evaluation_coverage():
     assert data["detail_lists"]["kg_without_evaluation_page_resource_ids"] == ["smart"]
 
 
-def test_normalize_cache_entry_with_legacy_skip_reason():
-    repo_root = Path(__file__).resolve().parents[1]
-    mod = _load_quality_dashboard_module(repo_root)
-
+def test_normalize_cache_entry_with_legacy_skip_reason(quality_dashboard_module):
+    mod = quality_dashboard_module
     normalized = mod.normalize_cache_entry(
         {
             "skip_reason": "html_page",

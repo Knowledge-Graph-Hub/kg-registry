@@ -1,3 +1,5 @@
+"""Test FRINK registry transformation and merge behavior."""
+
 def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
     resource = frink_syncer.transform_frink_to_kg_registry(frink_entry_example)
 

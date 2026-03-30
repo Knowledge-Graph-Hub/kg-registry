@@ -1,17 +1,10 @@
 #!/usr/bin/env python3
-"""
-Test script for OBO Foundry caching functionality
-"""
+"""Test OBO Foundry cache creation, reuse, expiration, and validation behavior."""
 
 import os
-import sys
 import time
-from pathlib import Path
 
-# Add util to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "util"))
-
-from sync_obo_foundry import OBOFoundrySync
+from util.sync_obo_foundry import OBOFoundrySync
 
 
 def test_cache_creation():
