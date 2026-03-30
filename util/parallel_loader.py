@@ -1,18 +1,25 @@
 #!/usr/bin/env python3
 
 """
-Parallel file loading utility for extract-metadata.py
+Parallel file loading utility for extract-metadata.py.
 
-This module provides backward-compatible imports from common.py.
-New code should use common.py directly.
+This module provides backward-compatible imports from ``util.common``.
+New code should use ``util.common`` directly.
 """
 
-from common import (
-    load_frontmatter_file,
-    load_frontmatter_files_parallel,
-)
-from typing import List, Tuple, Dict, Any, Optional
 import pathlib
+from typing import Any, Dict, List, Optional, Tuple
+
+try:
+    from util.common import (
+        load_frontmatter_file,
+        load_frontmatter_files_parallel,
+    )
+except ImportError:
+    from common import (  # type: ignore
+        load_frontmatter_file,
+        load_frontmatter_files_parallel,
+    )
 
 
 def load_md_single(fn: str) -> Tuple[str, Optional[Dict[str, Any]], Optional[str], Optional[Exception]]:
@@ -60,4 +67,3 @@ def filter_library_files(results: List[Tuple[str, Dict[str, Any], str]]) -> List
         if metadata and metadata.get("id") == pathlib.Path(fn).parent.name:
             library.append((metadata, content))
     return library
-

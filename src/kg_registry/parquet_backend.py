@@ -9,11 +9,13 @@ import duckdb
 import yaml
 
 try:
-    from oaklib import get_adapter
-    from oaklib.datamodels.obograph import Edge
+    from yaml import CSafeLoader as SafeLoader
 except ImportError:
-    get_adapter = None
-    Edge = None
+    from yaml import SafeLoader
+
+get_adapter = None
+Edge = None
+_OAKLIB_IMPORT_ATTEMPTED = False
 
 __all__ = [
     "ParquetBackend",
@@ -107,8 +109,8 @@ class ParquetBackend:
         Returns:
             Number of resources synced
         """
-        with open(yaml_file, "r") as f:
-            data = yaml.safe_load(f)
+        with open(yaml_file, "r", encoding="utf-8") as f:
+            data = yaml.load(f, Loader=SafeLoader)
 
         if not data or "resources" not in data:
             return 0
@@ -122,23 +124,61 @@ class ParquetBackend:
         self.conn.execute("DELETE FROM resource_products")
         self.conn.execute("DELETE FROM resource_taxa")
 
+        resource_rows = []
+        domain_rows = []
+        product_rows = []
+        taxon_rows = []
+
         for resource in resources:
             if not resource.get("id"):
                 continue
 
-            # Insert into resources table
-            self._insert_resource(resource)
-
-            # Insert domains
-            self._insert_domains(resource)
-
-            # Insert products
-            self._insert_products(resource)
-
-            # Insert taxa
-            self._insert_taxa(resource)
-
+            resource_rows.append(self._resource_row(resource))
+            domain_rows.extend(self._domain_rows(resource))
+            product_rows.extend(self._product_rows(resource))
+            taxon_rows.extend(self._taxon_rows(resource))
             synced_count += 1
+
+        if resource_rows:
+            self.conn.executemany(
+                """
+                INSERT OR REPLACE INTO resources (
+                    id, name, description, category, activity_status, homepage_url, repository,
+                    creation_date, last_modified_date, license_id, license_label, domains,
+                    contacts, curators, products, layout, raw_data
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                resource_rows,
+            )
+
+        if domain_rows:
+            self.conn.executemany(
+                """
+                INSERT OR IGNORE INTO resource_domains (resource_id, domain)
+                VALUES (?, ?)
+                """,
+                domain_rows,
+            )
+
+        if product_rows:
+            self.conn.executemany(
+                """
+                INSERT OR REPLACE INTO resource_products (
+                    resource_id, product_id, product_name, product_category,
+                    product_description, product_format, product_url
+                ) VALUES (?, ?, ?, ?, ?, ?, ?)
+                """,
+                product_rows,
+            )
+
+        if taxon_rows:
+            self.conn.executemany(
+                """
+                INSERT OR IGNORE INTO resource_taxa (resource_id, taxon)
+                VALUES (?, ?)
+                """,
+                taxon_rows,
+            )
 
         # Export to Parquet if output directory is specified
         if self.output_dir and synced_count > 0:
@@ -146,10 +186,32 @@ class ParquetBackend:
 
         return synced_count
 
-    def _insert_resource(self, resource: Dict[str, Any]):
-        """Insert a resource into the resources table."""
+    def _resource_row(self, resource: Dict[str, Any]) -> tuple[Any, ...]:
+        """Build a resource table row."""
         license_data = resource.get("license", {})
 
+        return (
+            resource.get("id"),
+            resource.get("name"),
+            resource.get("description"),
+            resource.get("category"),
+            resource.get("activity_status"),
+            resource.get("homepage_url"),
+            resource.get("repository"),
+            self._parse_date(resource.get("creation_date")),
+            self._parse_date(resource.get("last_modified_date")),
+            license_data.get("id") if isinstance(license_data, dict) else None,
+            license_data.get("label") if isinstance(license_data, dict) else license_data,
+            resource.get("domains", []),
+            json.dumps(resource.get("contacts", [])),
+            json.dumps(resource.get("curators", [])),
+            json.dumps(resource.get("products", [])),
+            resource.get("layout"),
+            json.dumps(resource),
+        )
+
+    def _insert_resource(self, resource: Dict[str, Any]):
+        """Insert a resource into the resources table."""
         self.conn.execute(
             """
             INSERT OR REPLACE INTO resources (
@@ -157,59 +219,43 @@ class ParquetBackend:
                 creation_date, last_modified_date, license_id, license_label, domains,
                 contacts, curators, products, layout, raw_data
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """,
-            [
-                resource.get("id"),
-                resource.get("name"),
-                resource.get("description"),
-                resource.get("category"),
-                resource.get("activity_status"),
-                resource.get("homepage_url"),
-                resource.get("repository"),
-                self._parse_date(resource.get("creation_date")),
-                self._parse_date(resource.get("last_modified_date")),
-                license_data.get("id") if isinstance(license_data, dict) else None,
-                license_data.get("label") if isinstance(license_data, dict) else license_data,
-                resource.get("domains", []),
-                json.dumps(resource.get("contacts", [])),
-                json.dumps(resource.get("curators", [])),
-                json.dumps(resource.get("products", [])),
-                resource.get("layout"),
-                json.dumps(resource),
-            ],
+            """,
+            self._resource_row(resource),
         )
+
+    def _domain_rows(self, resource: Dict[str, Any]) -> List[tuple[str, str]]:
+        """Build rows for the resource_domains table."""
+        resource_id = resource.get("id")
+        domains = resource.get("domains", [])
+        if not resource_id:
+            return []
+        return [(resource_id, domain) for domain in domains]
 
     def _insert_domains(self, resource: Dict[str, Any]):
         """Insert resource domains into the resource_domains table."""
-        resource_id = resource.get("id")
-        domains = resource.get("domains", [])
-
-        for domain in domains:
-            self.conn.execute(
+        rows = self._domain_rows(resource)
+        if rows:
+            self.conn.executemany(
                 """
                 INSERT OR IGNORE INTO resource_domains (resource_id, domain)
                 VALUES (?, ?)
-            """,
-                [resource_id, domain],
+                """,
+                rows,
             )
 
-    def _insert_products(self, resource: Dict[str, Any]):
-        """Insert resource products into the resource_products table."""
+    def _product_rows(self, resource: Dict[str, Any]) -> List[tuple[Any, ...]]:
+        """Build rows for the resource_products table."""
         resource_id = resource.get("id")
         products = resource.get("products", [])
+        rows = []
+        if not resource_id:
+            return rows
 
         for product in products:
             if not product.get("id"):
                 continue
-
-            self.conn.execute(
-                """
-                INSERT OR REPLACE INTO resource_products (
-                    resource_id, product_id, product_name, product_category,
-                    product_description, product_format, product_url
-                ) VALUES (?, ?, ?, ?, ?, ?, ?)
-            """,
-                [
+            rows.append(
+                (
                     resource_id,
                     product.get("id"),
                     product.get("name"),
@@ -217,21 +263,42 @@ class ParquetBackend:
                     product.get("description"),
                     product.get("format"),
                     product.get("product_url"),
-                ],
+                )
             )
+        return rows
+
+    def _insert_products(self, resource: Dict[str, Any]):
+        """Insert resource products into the resource_products table."""
+        rows = self._product_rows(resource)
+        if rows:
+            self.conn.executemany(
+                """
+                INSERT OR REPLACE INTO resource_products (
+                    resource_id, product_id, product_name, product_category,
+                    product_description, product_format, product_url
+                ) VALUES (?, ?, ?, ?, ?, ?, ?)
+                """,
+                rows,
+            )
+
+    def _taxon_rows(self, resource: Dict[str, Any]) -> List[tuple[str, str]]:
+        """Build rows for the resource_taxa table."""
+        resource_id = resource.get("id")
+        taxa = resource.get("taxon", [])
+        if not resource_id:
+            return []
+        return [(resource_id, taxon) for taxon in taxa]
 
     def _insert_taxa(self, resource: Dict[str, Any]):
         """Insert resource taxa into the resource_taxa table."""
-        resource_id = resource.get("id")
-        taxa = resource.get("taxon", [])
-
-        for taxon in taxa:
-            self.conn.execute(
+        rows = self._taxon_rows(resource)
+        if rows:
+            self.conn.executemany(
                 """
                 INSERT OR IGNORE INTO resource_taxa (resource_id, taxon)
                 VALUES (?, ?)
-            """,
-                [resource_id, taxon],
+                """,
+                rows,
             )
 
     def _parse_date(self, date_str: Optional[str]) -> Optional[datetime]:
@@ -356,6 +423,7 @@ class ParquetBackend:
         Returns:
             Set of all descendant taxon identifiers
         """
+        self._ensure_oaklib()
         if get_adapter is None:
             return set()
 
@@ -376,6 +444,24 @@ class ParquetBackend:
             # If OAK fails for any reason, return empty set
             # The caller will fall back to just using the original taxon
             return set()
+
+    @staticmethod
+    def _ensure_oaklib() -> None:
+        """Import oaklib lazily for taxon expansion only."""
+        global get_adapter, Edge, _OAKLIB_IMPORT_ATTEMPTED
+
+        if _OAKLIB_IMPORT_ATTEMPTED:
+            return
+
+        _OAKLIB_IMPORT_ATTEMPTED = True
+        try:
+            from oaklib import get_adapter as oak_get_adapter
+            from oaklib.datamodels.obograph import Edge as oak_edge
+        except ImportError:
+            return
+
+        get_adapter = oak_get_adapter
+        Edge = oak_edge
 
     def query_active_resources(self) -> List[Dict[str, Any]]:
         """Query all active resources.

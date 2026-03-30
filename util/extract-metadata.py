@@ -33,8 +33,10 @@ SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_regi
 if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
 
-# Check if parallel loading is enabled (default: yes)
-PARALLEL_LOADING = os.environ.get("PARALLEL_LOADING", "yes").lower() in ("yes", "true", "1")
+# Check if parallel loading is enabled (default: no).
+# Threaded frontmatter parsing is often slower than sequential loading on local
+# and CI builds, so keep it opt-in.
+PARALLEL_LOADING = os.environ.get("PARALLEL_LOADING", "no").lower() in ("yes", "true", "1")
 PARALLEL_WORKERS = int(os.environ.get("PARALLEL_WORKERS", "10"))
 
 

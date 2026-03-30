@@ -22,13 +22,25 @@ from typing import Dict, List, Set
 
 import yaml
 
-# Try to import oaklib for hierarchical expansion
-try:
-    from oaklib import get_adapter
-    HAS_OAKLIB = True
-except ImportError:
-    HAS_OAKLIB = False
-    print("Warning: oaklib not available, will use static mappings", file=sys.stderr)
+_OAKLIB_IMPORT_ATTEMPTED = False
+_OAKLIB_GET_ADAPTER = None
+
+
+def get_oak_adapter():
+    """Import oaklib lazily when hierarchical taxon expansion is explicitly enabled."""
+    global _OAKLIB_IMPORT_ATTEMPTED, _OAKLIB_GET_ADAPTER
+
+    if _OAKLIB_IMPORT_ATTEMPTED:
+        return _OAKLIB_GET_ADAPTER
+
+    _OAKLIB_IMPORT_ATTEMPTED = True
+    try:
+        from oaklib import get_adapter as oak_get_adapter
+    except ImportError:
+        return None
+
+    _OAKLIB_GET_ADAPTER = oak_get_adapter
+    return _OAKLIB_GET_ADAPTER
 
 
 def get_all_database_taxa(parquet_dir: str) -> Set[str]:
@@ -56,7 +68,8 @@ def get_all_database_taxa(parquet_dir: str) -> Set[str]:
 
 def get_descendants_with_oak(taxon: str) -> Set[str]:
     """Get all descendant taxa using OAK (Ontology Access Kit)."""
-    if not HAS_OAKLIB:
+    get_adapter = get_oak_adapter()
+    if get_adapter is None:
         return {taxon}
 
     try:
@@ -74,14 +87,17 @@ def get_descendants_with_oak(taxon: str) -> Set[str]:
 
 
 def find_matching_taxa(
-    filter_taxon: str, database_taxa: Set[str]
+    filter_taxon: str, database_taxa: Set[str], use_oaklib: bool = False
 ) -> List[str]:
     """Find all database taxa that are descendants of the filter taxon."""
     matching = []
 
     # If OAK is available, use it
-    if HAS_OAKLIB:
+    if use_oaklib:
         try:
+            get_adapter = get_oak_adapter()
+            if get_adapter is None:
+                raise RuntimeError("oaklib is not available")
             # Use sqlite:obo:ncbitaxon adapter for fast local access to NCBI Taxonomy
             adapter = get_adapter("sqlite:obo:ncbitaxon")
 
@@ -126,7 +142,10 @@ def find_matching_taxa(
 
 
 def generate_taxon_mapping(
-    parquet_dir: str, filter_taxa: List[str] = None, include_all_taxa: bool = False
+    parquet_dir: str,
+    filter_taxa: List[str] = None,
+    include_all_taxa: bool = False,
+    use_oaklib: bool = False,
 ) -> Dict[str, List[str]]:
     """Generate taxon hierarchy mapping.
 
@@ -134,6 +153,7 @@ def generate_taxon_mapping(
         parquet_dir: Directory containing parquet files
         filter_taxa: List of taxa to filter by (if None, uses defaults)
         include_all_taxa: If True, generate mappings for all taxa in database
+        use_oaklib: If True, use oaklib for hierarchical expansion
 
     Returns:
         Dictionary mapping filter taxa to their descendant database taxa
@@ -168,7 +188,7 @@ def generate_taxon_mapping(
     # Generate mappings
     mapping = {}
     for filter_taxon in filter_taxa:
-        matching_taxa = find_matching_taxa(filter_taxon, database_taxa)
+        matching_taxa = find_matching_taxa(filter_taxon, database_taxa, use_oaklib=use_oaklib)
         mapping[filter_taxon] = matching_taxa
 
         print(
@@ -203,6 +223,13 @@ def main():
         action="store_true",
         help="Generate mappings for all taxa found in database (overrides --filter-taxa)",
     )
+    parser.add_argument(
+        "--use-oaklib",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Use oaklib for hierarchical expansion. Disabled by default to avoid"
+        " downloading the full NCBI taxonomy on clean machines.",
+    )
 
     args = parser.parse_args()
 
@@ -213,7 +240,12 @@ def main():
     print(f"Generating taxon mapping from {args.parquet_dir}...", file=sys.stderr)
 
     # Generate mapping
-    mapping = generate_taxon_mapping(args.parquet_dir, args.filter_taxa, args.include_all_taxa)
+    mapping = generate_taxon_mapping(
+        args.parquet_dir,
+        args.filter_taxa,
+        args.include_all_taxa,
+        use_oaklib=args.use_oaklib,
+    )
 
     # Write to YAML file
     with open(args.output, "w") as f:

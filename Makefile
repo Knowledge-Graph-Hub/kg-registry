@@ -31,6 +31,8 @@ RUN = uv run
 QUALITY_DASHBOARD_CHECK_LINKS ?= yes
 QUALITY_DASHBOARD_LINK_FLAGS = $(if $(filter yes YES true TRUE 1,$(QUALITY_DASHBOARD_CHECK_LINKS)),--check-links,--no-check-links)
 QUALITY_DASHBOARD_JSON = reports/quality-dashboard.json
+TAXON_MAPPING_USE_OAKLIB ?= no
+TAXON_MAPPING_OAK_FLAG = $(if $(filter yes YES true TRUE 1,$(TAXON_MAPPING_USE_OAKLIB)),--use-oaklib,--no-use-oaklib)
 DUCKDB_WASM_FILES = assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js
 
 # All resource .md files
@@ -181,7 +183,8 @@ registry/taxon_mapping.yaml: registry/parquet
 	$(RUN) python util/generate_taxon_mapping.py \
 		--parquet-dir registry/parquet \
 		--output registry/taxon_mapping.yaml \
-		--include-all-taxa
+		--include-all-taxa \
+		$(TAXON_MAPPING_OAK_FLAG)
 	@echo "✅ Taxon mapping generated in registry/taxon_mapping.yaml"
 
 registry/parquet-downloads.html: registry/parquet
