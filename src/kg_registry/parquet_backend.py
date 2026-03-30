@@ -8,11 +8,6 @@ from typing import Any, Dict, List, Optional, Set
 import duckdb
 import yaml
 
-try:
-    from yaml import CSafeLoader
-except ImportError:
-    CSafeLoader = None
-
 get_adapter = None
 Edge = None
 _OAKLIB_IMPORT_ATTEMPTED = False
@@ -22,13 +17,6 @@ __all__ = [
     "sync_yaml_to_parquet",
     "create_database",
 ]
-
-
-def _get_yaml_loader() -> Any:
-    """Return the fastest available safe YAML loader."""
-    if CSafeLoader is not None:
-        return CSafeLoader
-    return yaml.SafeLoader
 
 
 class ParquetBackend:
@@ -117,7 +105,7 @@ class ParquetBackend:
             Number of resources synced
         """
         with open(yaml_file, "r", encoding="utf-8") as f:
-            data = yaml.load(f, Loader=_get_yaml_loader())
+            data = yaml.safe_load(f)
 
         if not data or "resources" not in data:
             return 0
