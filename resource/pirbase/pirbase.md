@@ -63,8 +63,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: FASTA format sequences for mouse piRNAs (version 3.0)
@@ -75,8 +73,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: FASTA format sequences for rat piRNAs
@@ -87,8 +83,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: FASTA format sequences for Drosophila melanogaster piRNAs (version
@@ -100,8 +94,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: FASTA format sequences for C. elegans piRNAs (version 3.0)
@@ -112,8 +104,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: FASTA format sequences for zebrafish piRNAs
@@ -124,8 +114,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Gold standard human piRNA sequences with high confidence annotations
@@ -136,8 +124,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Gold standard mouse piRNA sequences with high confidence annotations
@@ -148,8 +134,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Gold standard Drosophila piRNA sequences with high confidence annotations
@@ -160,8 +144,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Genome coordinates for human piRNAs on hg19 assembly in BED format
@@ -172,8 +154,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Genome coordinates for human piRNAs on GRCh38 assembly in BED format
@@ -184,8 +164,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Genome coordinates for mouse piRNAs on GRCm38 assembly in BED format
@@ -196,8 +174,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Genome coordinates for Drosophila piRNAs on BDGP6 assembly in BED format
@@ -208,8 +184,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: DocumentationProduct
   description: Tutorial and user manual for piRBase
   format: http
@@ -219,8 +193,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
-    to URL'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

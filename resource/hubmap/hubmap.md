@@ -78,8 +78,6 @@ products:
   name: Antibody Validation Reports
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 401 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 401 error

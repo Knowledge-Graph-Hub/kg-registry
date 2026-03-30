@@ -39,8 +39,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -53,8 +51,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -67,8 +63,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/ADaM/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -81,8 +75,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SEND/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -95,8 +87,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -109,8 +99,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Protocol/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -123,8 +111,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Glossary/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -137,8 +123,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/DDF/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -151,8 +135,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/TMF/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: Product
@@ -165,8 +147,6 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/MRCT%20Center%20Clinical%20Research%20Glossary/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
 - category: GraphicalInterface
@@ -195,8 +175,10 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
-    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
+    to URL: Exceeded 30 redirects.'
   - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
     to URL_ Exceeded 30 redirects.
 synonyms:

@@ -9,6 +9,7 @@ contacts:
   - contact_type: url
     value: https://aopwiki.org/info_pages/10
   label: AOP-Wiki Coordination Group
+creation_date: '2025-09-04T00:00:00Z'
 description: The AOP-Wiki is the primary collaborative authoring and curation interface
   for the Adverse Outcome Pathway Knowledge Base (AOP-KB). It enables the community
   to develop, review, browse, and export Adverse Outcome Pathways (AOPs) linking molecular
@@ -44,10 +45,6 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
-    with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - File was not able to be retrieved when checked on 2026-02-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -150,8 +147,6 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/aops
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -171,11 +166,6 @@ products:
   name: AOP Developers' Handbook
   product_url: https://aopwiki.org/handbooks/4
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-13: Error connecting
-    to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
-    with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-    certificate (_ssl.c:1000)'')))'
   - File was not able to be retrieved when checked on 2026-02-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
@@ -209,7 +199,6 @@ products:
   - aop-db
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-09-04T00:00:00Z'
 ---
 # AOP-Wiki
 

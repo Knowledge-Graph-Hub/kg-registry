@@ -52,7 +52,7 @@ products:
   name: TISSUES Data Downloads
   product_url: https://tissues.jensenlab.org/Downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological

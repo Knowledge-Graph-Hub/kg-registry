@@ -2268,8 +2268,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2305,8 +2305,6 @@ products:
   product_url: https://www.genecards.org/
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
@@ -2352,8 +2350,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
 - category: Product
@@ -2366,8 +2362,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
 - category: Product
@@ -2380,8 +2374,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
 - category: Product
@@ -2396,8 +2388,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno
-    104] Connection reset by peer
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
@@ -2411,8 +2401,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
 - category: Product
@@ -2425,8 +2413,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
 - category: Product
@@ -2440,8 +2426,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno
-    104] Connection reset by peer
 - category: GraphProduct
   description: ProteomeHD data files
   id: proteomehd.data
@@ -2500,8 +2484,6 @@ products:
   - unibiomap
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'

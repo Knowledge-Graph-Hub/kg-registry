@@ -220,8 +220,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -349,8 +349,10 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
-    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
+    to URL: Exceeded 30 redirects.'
   - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
     to URL_ Exceeded 30 redirects.
 - category: GraphProduct
@@ -374,8 +376,6 @@ products:
   - forum
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - File was not able to be retrieved when checked on 2026-03-11_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2026-03-30: FTP error: timed
     out'

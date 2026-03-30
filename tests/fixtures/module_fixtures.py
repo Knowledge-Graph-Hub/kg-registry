@@ -50,6 +50,23 @@ def quality_dashboard_module(repo_root: Path, util_dir: Path):
 
 
 @pytest.fixture(scope="session")
+def generate_taxon_mapping_module(repo_root: Path, util_dir: Path):
+    return _load_module(
+        "generate_taxon_mapping",
+        repo_root / "util" / "generate_taxon_mapping.py",
+        extra_sys_path=util_dir,
+    )
+
+
+@pytest.fixture(scope="session")
+def retrieve_file_sizes_parallel_module(repo_root: Path):
+    return _load_module(
+        "retrieve_file_sizes_parallel",
+        repo_root / "util" / "retrieve-file-sizes-parallel.py",
+    )
+
+
+@pytest.fixture(scope="session")
 def kg_monarch_ingest_module(repo_root: Path):
     return _load_module(
         "kg_monarch_ingest",

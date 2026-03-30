@@ -56,8 +56,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - File was not able to be retrieved when checked on 2026-03-11_ FTP error_ timed
-    out
   - 'File was not able to be retrieved when checked on 2026-03-30: FTP error: timed
     out'
 repository: https://github.com/semanticchemistry/semanticchemistry

@@ -103,8 +103,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
 - category: MappingProduct
@@ -150,16 +148,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 403 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
-    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -661,8 +657,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
 - category: Product
@@ -679,9 +673,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
@@ -692,8 +683,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
 - category: Product
@@ -706,8 +695,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
 - category: Product
@@ -722,8 +709,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno
-    104] Connection reset by peer
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
@@ -737,8 +722,6 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
 - category: GraphicalInterface

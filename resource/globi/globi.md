@@ -57,16 +57,14 @@ products:
   name: GloBI interpreted interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+    accessing file
 - category: Product
   compression: gzip
   description: Tab-separated verbatim species interaction pairs (original unresolved
@@ -85,16 +83,14 @@ products:
   name: GloBI verbatim interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+    accessing file
 - category: Product
   compression: gzip
   description: Tab-separated refuted species interaction pairs (interpreted names)
@@ -111,16 +107,14 @@ products:
   name: GloBI refuted interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+    accessing file
 - category: Product
   compression: gzip
   description: Comma-separated refuted verbatim species interaction pairs (original
@@ -130,16 +124,14 @@ products:
   name: GloBI refuted verbatim interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-01-15_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-01-15_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
+    accessing file
 - category: Product
   compression: gzip
   description: RDF N-Quads representation of interaction data
@@ -172,16 +164,14 @@ products:
   name: GloBI datasets index (CSV)
   product_url: https://zenodo.org/record/14640564/files/datasets.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+    accessing file
 - category: Product
   compression: gzip
   description: Tab-separated taxonomic name mapping file
@@ -214,16 +204,14 @@ products:
   name: GloBI data citations (CSV)
   product_url: https://zenodo.org/record/14640564/files/citations.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error when
+    accessing file
 - category: Product
   compression: gzip
   description: Tab-separated refuted species interactions (original unresolved names)
@@ -239,8 +227,6 @@ products:
   name: interactionFields.json
   product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
@@ -288,9 +274,7 @@ products:
   - try
   product_url: https://doi.org/10.5281/zenodo.17079767
   repository: https://github.com/earth-metabolome-initiative/metrin-kg
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-    to URL
+  warnings: []
 - category: ProgrammingInterface
   description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
   format: http

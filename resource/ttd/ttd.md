@@ -67,9 +67,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Raw format drug information including all TTD drug data
   format: txt
@@ -80,9 +77,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Cross-matching identifiers between TTD drugs and public databases
   format: txt
@@ -93,9 +87,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Synonyms of drugs and small molecules in TTD
   format: txt
@@ -106,9 +97,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Drug to disease mapping with ICD identifiers
   format: txt
@@ -119,9 +107,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Target to disease mapping with ICD identifiers
   format: txt
@@ -132,9 +117,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Target to drug mapping with mode of action information
   format: csv
@@ -145,9 +127,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Biomarker to disease mapping with ICD identifiers
   format: txt
@@ -158,9 +137,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Target to compound mapping with experimental activity data
   format: txt
@@ -171,9 +147,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -188,9 +161,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Sequence data for all targets in FASTA format
   format: fasta
@@ -201,9 +171,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: Structure data for all drugs in SDF format
   format: sdf
@@ -214,9 +181,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: SMILES and InChI representations for approved drugs
   format: txt
@@ -237,9 +201,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: Product
   description: WikiPathways data for all targets
   format: txt
@@ -250,10 +211,7 @@ products:
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
   secondary_source:
   - ttd
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
+  warnings: []
 - category: Product
   description: Drug combination data including synergistic, additive, and antagonistic
     interactions
@@ -265,9 +223,6 @@ products:
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
 - category: DocumentationProduct
   description: Help documentation and user guide for TTD
   format: http
@@ -275,8 +230,6 @@ products:
   name: TTD Help Documentation
   product_url: https://idrblab.org/ttd/help
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 404 error when
     accessing file
 - category: GraphProduct

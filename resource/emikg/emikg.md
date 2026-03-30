@@ -15,6 +15,7 @@ contacts:
   - contact_type: url
     value: https://www.dbgi.org
   label: Digital Botanical Gardens Initiative
+creation_date: '2025-05-20T00:00:00Z'
 description: A knowledge graph version of the Earth Metabolome Initiative (EMI) Ontology,
   containing over 413 million triples derived from metabolomic datasets. It provides
   a structured representation of metabolomic data within a semantic framework.
@@ -42,9 +43,7 @@ products:
   - try
   product_url: https://doi.org/10.5281/zenodo.17079767
   repository: https://github.com/earth-metabolome-initiative/metrin-kg
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-02-18: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProgrammingInterface
   description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
   format: http
@@ -66,7 +65,6 @@ products:
   - globi
   - try
   product_url: https://sib-swiss.github.io/sparql-editor/emi
-creation_date: '2025-05-20T00:00:00Z'
 ---
 ## Automated Evaluation
 

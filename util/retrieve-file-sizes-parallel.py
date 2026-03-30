@@ -112,6 +112,13 @@ def convert_github_url_to_raw(url: str) -> str:
     return url
 
 
+def normalize_url_for_lookup(url: str) -> str:
+    """Normalize URLs for cache and in-run deduplication."""
+    if not isinstance(url, str):
+        return url
+    return convert_github_url_to_raw(url)
+
+
 def get_ftp_info(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]]:
     """
     Retrieve file/directory information from FTP URL.
@@ -200,7 +207,7 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
     try:
         # Convert GitHub blob URLs to raw URLs for direct file access
         original_url = url
-        url = convert_github_url_to_raw(url)
+        url = normalize_url_for_lookup(url)
 
         if url != original_url:
             safe_print(f"Checking file size for: {original_url}")
@@ -437,52 +444,56 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
 
             updated_count = 0
             products_list = metadata.get('products')
+            updated_products_by_id = {
+                updated_product.get('id'): updated_product
+                for updated_product in products
+                if isinstance(updated_product, dict) and updated_product.get('id')
+            }
             if isinstance(products_list, list):
                 for product in products_list:
                     if isinstance(product, dict) and 'id' in product:
-                        # Find matching updated product
-                        for updated_product in products:
-                            if updated_product.get('id') == product['id']:
-                                updated_this_product = False
+                        updated_product = updated_products_by_id.get(product['id'])
+                        if updated_product is not None:
+                            updated_this_product = False
 
-                                # Update file size if we don't already have one
-                                if 'product_file_size' in updated_product and 'product_file_size' not in product:
-                                    product['product_file_size'] = updated_product['product_file_size']
+                            # Update file size if we don't already have one
+                            if 'product_file_size' in updated_product and 'product_file_size' not in product:
+                                product['product_file_size'] = updated_product['product_file_size']
+                                updated_this_product = True
+
+                            # Replace warnings entirely if flag present
+                            if updated_product.get('_replace_warnings') is True:
+                                new_warnings = updated_product.get('warnings', [])
+                                # Only act if different
+                                existing_list = product.get('warnings', []) if isinstance(
+                                    product.get('warnings'), list) else []
+                                if existing_list != new_warnings:
+                                    if new_warnings:
+                                        product['warnings'] = list(new_warnings)
+                                    elif 'warnings' in product:
+                                        # Remove key by setting to empty list (schema expects list) or popping
+                                        product['warnings'] = []
                                     updated_this_product = True
+                            else:
+                                # Merge warnings (additive) if no replace flag
+                                if 'warnings' in updated_product:
+                                    if 'warnings' not in product:
+                                        product['warnings'] = []
+                                    elif not isinstance(product['warnings'], list):
+                                        product['warnings'] = []
+                                    # Before merging, drop stale retrieval warnings still lingering
+                                    import re as _re2
+                                    product['warnings'] = [
+                                        w for w in product['warnings']
+                                        if not _re2.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                                    ]
+                                    for warning in updated_product['warnings']:
+                                        if warning not in product['warnings']:
+                                            product['warnings'].append(warning)
+                                            updated_this_product = True
 
-                                # Replace warnings entirely if flag present
-                                if updated_product.get('_replace_warnings') is True:
-                                    new_warnings = updated_product.get('warnings', [])
-                                    # Only act if different
-                                    existing_list = product.get('warnings', []) if isinstance(
-                                        product.get('warnings'), list) else []
-                                    if existing_list != new_warnings:
-                                        if new_warnings:
-                                            product['warnings'] = list(new_warnings)
-                                        elif 'warnings' in product:
-                                            # Remove key by setting to empty list (schema expects list) or popping
-                                            product['warnings'] = []
-                                        updated_this_product = True
-                                else:
-                                    # Merge warnings (additive) if no replace flag
-                                    if 'warnings' in updated_product:
-                                        if 'warnings' not in product:
-                                            product['warnings'] = []
-                                        elif not isinstance(product['warnings'], list):
-                                            product['warnings'] = []
-                                        # Before merging, drop stale retrieval warnings still lingering
-                                        import re as _re2
-                                        product['warnings'] = [
-                                            w for w in product['warnings']
-                                            if not _re2.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
-                                        ]
-                                        for warning in updated_product['warnings']:
-                                            if warning not in product['warnings']:
-                                                product['warnings'].append(warning)
-                                                updated_this_product = True
-
-                                if updated_this_product:
-                                    updated_count += 1
+                            if updated_this_product:
+                                updated_count += 1
 
                         # Global propagation: if this product id in cleaned_ids, ensure stale retrieval warnings are removed
                         if product.get('id') in cleaned_ids:
@@ -541,6 +552,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     failed_products = 0
     cache_skipped = 0
     processed_products = 0
+    deduplicated_url_hits = 0
 
     # Pre-scan to determine products that already have at least one clean occurrence (no retrieval warning)
     product_warning_presence: Dict[str, Dict[str, bool]] = {}
@@ -572,9 +584,8 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     updated_products_by_resource: Dict[str, List[Dict[str, Any]]] = {}
     cleaned_product_ids: set[str] = set()
 
-    # Collect all URL checking tasks
-    url_tasks = []
-    product_map = {}  # Map from task index to (resource, product, resource_id)
+    # Collect all URL checking tasks grouped by normalized URL
+    url_task_groups: Dict[str, List[Tuple[Dict[str, Any], Dict[str, Any], str]]] = {}
 
     for resource in data['resources']:
         if 'products' not in resource:
@@ -606,43 +617,60 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
 
             processed_products += 1
             url = product['product_url']
-            product_id = product.get('id', 'unknown')
-
-            # Store task info
-            task_idx = len(url_tasks)
-            url_tasks.append((url, product_id, resource_id, product))
-            product_map[task_idx] = (resource, product, resource_id)
+            normalized_url = normalize_url_for_lookup(url)
+            url_task_groups.setdefault(normalized_url, []).append((resource, product, resource_id))
 
         # Break out of resource loop if we hit the limit
         if limit is not None and processed_products >= limit:
             break
 
+    deduplicated_url_hits = processed_products - len(url_task_groups)
+
     # Process URLs in parallel
-    safe_print(f"\n🚀 Processing {len(url_tasks)} URLs with {max_workers} parallel workers...")
+    safe_print(
+        f"\n🚀 Processing {len(url_task_groups)} unique URLs with {max_workers} parallel workers..."
+    )
+    if deduplicated_url_hits > 0:
+        safe_print(f"🔁 Reused in-run URL results for {deduplicated_url_hits} duplicate product URLs")
 
     # Thread-safe cache updates
     cache_lock = threading.Lock()
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks
-        future_to_idx = {}
-        for idx, (url, product_id, resource_id, product) in enumerate(url_tasks):
-            future = executor.submit(
-                process_single_url, url, product_id, resource_id, cache,
-                ignore_cache, clean_warnings_only, product
+        future_to_group = {}
+        for normalized_url, group_entries in url_task_groups.items():
+            _, representative_product, representative_resource_id = next(
+                (
+                    entry for entry in group_entries
+                    if isinstance(entry[1].get('warnings'), list) and any(
+                        str(w).startswith("File was not able to be retrieved when checked on ")
+                        for w in entry[1]['warnings']
+                    )
+                ),
+                group_entries[0],
             )
-            future_to_idx[future] = idx
+            future = executor.submit(
+                process_single_url,
+                normalized_url,
+                representative_product.get('id', 'unknown'),
+                representative_resource_id,
+                cache,
+                ignore_cache,
+                clean_warnings_only,
+                representative_product,
+            )
+            future_to_group[future] = group_entries
 
         # Process results as they complete
-        for future in as_completed(future_to_idx):
-            idx = future_to_idx[future]
-            resource, product, resource_id = product_map[idx]
+        for future in as_completed(future_to_group):
+            group_entries = future_to_group[future]
 
             try:
                 result = future.result()
 
                 if result.get('skipped'):
-                    cache_skipped += 1
+                    cache_skipped += len(group_entries)
                     continue
 
                 # Update cache (thread-safe)
@@ -655,77 +683,78 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                         cache_record['last_success_bytes'] = result['file_size']
                     cache[url] = cache_record
 
-                # Update product based on result
-                if result['file_size'] is not None:
-                    product['product_file_size'] = result['file_size']
-                    # Remove stale retrieval warnings if the URL now succeeds
-                    if 'warnings' in product and isinstance(product['warnings'], list):
-                        import re
-                        before_cnt = len(product['warnings'])
-                        product['warnings'] = [
-                            w for w in product['warnings']
-                            if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
-                        ]
-                        after_cnt = len(product['warnings'])
-                        if after_cnt < before_cnt:
-                            safe_print(
-                                f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')}")
-                            product['_replace_warnings'] = True
-                            cleaned_product_ids.add(product.get('id'))
+                # Update all products sharing this normalized URL
+                for _, product, resource_id in group_entries:
+                    if result['file_size'] is not None:
+                        product['product_file_size'] = result['file_size']
+                        # Remove stale retrieval warnings if the URL now succeeds
+                        if 'warnings' in product and isinstance(product['warnings'], list):
+                            import re
+                            before_cnt = len(product['warnings'])
+                            product['warnings'] = [
+                                w for w in product['warnings']
+                                if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                            ]
+                            after_cnt = len(product['warnings'])
+                            if after_cnt < before_cnt:
+                                safe_print(
+                                    f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')}")
+                                product['_replace_warnings'] = True
+                                cleaned_product_ids.add(product.get('id'))
 
-                    updated_products += 1
-                    if resource_id not in updated_products_by_resource:
-                        updated_products_by_resource[resource_id] = []
-                    updated_products_by_resource[resource_id].append(product.copy())
-
-                elif result['error_message'] is not None:
-                    # Add warning with current date
-                    current_date = datetime.now(timezone.utc).date().isoformat()
-                    warning_message = f"File was not able to be retrieved when checked on {current_date}: {result['error_message']}"
-
-                    # Ensure warnings list exists
-                    if 'warnings' not in product:
-                        product['warnings'] = []
-                    elif not isinstance(product['warnings'], list):
-                        product['warnings'] = []
-
-                    # Add the warning if it's not already there
-                    if warning_message not in product['warnings']:
-                        product['warnings'].append(warning_message)
-
-                        # Track this update for writing back to resource files
+                        updated_products += 1
                         if resource_id not in updated_products_by_resource:
                             updated_products_by_resource[resource_id] = []
                         updated_products_by_resource[resource_id].append(product.copy())
 
-                    failed_products += 1
+                    elif result['error_message'] is not None:
+                        # Add warning with current date
+                        current_date = datetime.now(timezone.utc).date().isoformat()
+                        warning_message = f"File was not able to be retrieved when checked on {current_date}: {result['error_message']}"
 
-                else:
-                    # Accessible (HTTP 200) but no size (likely HTML/no content-length). Treat as success for warning clearing.
-                    if 'warnings' in product and isinstance(product['warnings'], list):
-                        import re
-                        before_cnt = len(product['warnings'])
-                        product['warnings'] = [
-                            w for w in product['warnings']
-                            if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
-                        ]
-                        after_cnt = len(product['warnings'])
-                        if after_cnt < before_cnt:
-                            safe_print(
-                                f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')} (HTML/no-size)")
-                            product['_replace_warnings'] = True
-                            cleaned_product_ids.add(product.get('id'))
+                        # Ensure warnings list exists
+                        if 'warnings' not in product:
+                            product['warnings'] = []
+                        elif not isinstance(product['warnings'], list):
+                            product['warnings'] = []
+
+                        # Add the warning if it's not already there
+                        if warning_message not in product['warnings']:
+                            product['warnings'].append(warning_message)
+
+                            # Track this update for writing back to resource files
                             if resource_id not in updated_products_by_resource:
                                 updated_products_by_resource[resource_id] = []
                             updated_products_by_resource[resource_id].append(product.copy())
+                        failed_products += 1
+
+                    else:
+                        # Accessible (HTTP 200) but no size (likely HTML/no content-length). Treat as success for warning clearing.
+                        if 'warnings' in product and isinstance(product['warnings'], list):
+                            import re
+                            before_cnt = len(product['warnings'])
+                            product['warnings'] = [
+                                w for w in product['warnings']
+                                if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                            ]
+                            after_cnt = len(product['warnings'])
+                            if after_cnt < before_cnt:
+                                safe_print(
+                                    f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')} (HTML/no-size)")
+                                product['_replace_warnings'] = True
+                                cleaned_product_ids.add(product.get('id'))
+                                if resource_id not in updated_products_by_resource:
+                                    updated_products_by_resource[resource_id] = []
+                                updated_products_by_resource[resource_id].append(product.copy())
 
             except Exception as e:
                 safe_print(f"❌ Error processing URL task: {e}")
-                failed_products += 1
+                failed_products += len(group_entries)
 
     safe_print(f"\n📊 File Size Retrieval Summary:")
     safe_print(f"   Total products: {total_products}")
     safe_print(f"   Processed: {processed_products}")
+    safe_print(f"   Unique URLs checked: {len(url_task_groups)}")
     safe_print(f"   Updated: {updated_products}")
     safe_print(f"   Skipped (category/has-size/no-url): {skipped_products}")
     safe_print(f"   Skipped via cache: {cache_skipped}")

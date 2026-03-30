@@ -41,8 +41,8 @@ products:
   name: pbpko.obo
   product_url: http://purl.obolibrary.org/obo/pbpko.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Physiologically-Based Pharmacokinetic Ontology in JSON format
   format: json

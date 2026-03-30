@@ -4,6 +4,7 @@ description: Plant Gall Ontology in OBO format
 format: obo
 id: gallont.obo
 name: gallont.obo
+product_file_size: 60631
 product_url: http://purl.obolibrary.org/obo/gallont.obo
 layout: product_detail
 ---

@@ -9,6 +9,7 @@ contacts:
   - contact_type: url
     value: https://www.epa.gov/
   label: U.S. Environmental Protection Agency (EPA)
+creation_date: '2025-06-24T00:00:00Z'
 description: "The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed integrative\
   \ knowledgebase that connects chemicals and stressors to molecular initiating events,\
   \ key events across biological organization levels, and adverse outcomes relevant\
@@ -66,7 +67,7 @@ products:
   - aop-db
   product_url: https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-07: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2025-12-05_ No Content-Length
     header found
@@ -167,7 +168,6 @@ products:
   - hetionet
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-06-24T00:00:00Z'
 ---
 # AOP-DB
 

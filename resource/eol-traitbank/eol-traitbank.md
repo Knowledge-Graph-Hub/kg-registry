@@ -92,6 +92,8 @@ products:
   name: TraitBank Documentation
   product_url: https://eol.org/docs/what-is-eol/data-services
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-02-26: Error connecting
     to URL: HTTPSConnectionPool(host=''eol.org'', port=443): Max retries exceeded
     with url: /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,

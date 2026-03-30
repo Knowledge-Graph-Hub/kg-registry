@@ -193,14 +193,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 404 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
-    when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http
@@ -211,8 +209,6 @@ products:
   product_url: https://www.genecards.org/
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
