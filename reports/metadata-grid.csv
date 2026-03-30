@@ -186,6 +186,7 @@ erccrbp,active,PASS
 erccreg,active,PASS
 eupathdb,active,PASS
 evlncrnas,active,PASS
+evoweb,active,PASS
 exmo,active,PASS
 exo,active,PASS
 expressionatlas,active,PASS
@@ -220,6 +221,7 @@ genage,active,PASS
 gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
+gene-expression-atlas-okn,active,PASS
 gene-ontology,active,PASS
 gene2phenotype,active,PASS
 genebass,active,PASS
@@ -329,6 +331,7 @@ m-csa,active,PASS
 ma,active,PASS
 malacards,active,PASS
 mangal,active,PASS
+maudekg,active,PASS
 maxo,active,PASS
 mco,active,PASS
 mcro,active,PASS
@@ -388,6 +391,7 @@ ncatsgardkg,active,PASS
 ncbi,active,PASS
 ncbigene,active,PASS
 ncbitaxon,active,PASS
+ncipidkg,active,PASS
 ncit,active,PASS
 ncro,active,PASS
 ndcd,active,PASS
@@ -407,6 +411,7 @@ npo,active,PASS
 nsides,active,PASS
 oae,active,PASS
 oarcs,active,PASS
+oard-kg,active,PASS
 oba,active,PASS
 obcs,active,PASS
 obi,active,PASS
@@ -420,6 +425,7 @@ ogms,active,PASS
 ohd,active,PASS
 ohmi,active,PASS
 ohpi,active,PASS
+okn-void,active,PASS
 ols,active,PASS
 oma,active,PASS
 omicsdi,active,PASS
@@ -453,6 +459,7 @@ orthodb,active,PASS
 ovae,active,PASS
 owlsim,active,PASS
 pankbase,active,PASS
+pankgraph,active,PASS
 panther,active,PASS
 pathbank,active,PASS
 pathophenodb,active,PASS
@@ -511,6 +518,7 @@ pubtator,active,PASS
 pw,active,PASS
 rampdb,active,PASS
 rbo,active,PASS
+rdkg,active,PASS
 reacto,active,PASS
 reactome,active,PASS
 rediportal,active,PASS
@@ -569,6 +577,7 @@ spd,active,PASS
 spdx,active,PASS
 spoke,active,PASS
 spoke-genelab,active,PASS
+spoke-okn,active,PASS
 sri-reference-kg,active,PASS
 srpdb,active,PASS
 stato,active,PASS
@@ -606,6 +615,7 @@ ubergraph,active,PASS
 uberon,active,PASS
 ubkg,active,PASS
 uf-okn,active,PASS
+ufokn,active,PASS
 ukbiobank,active,PASS
 umls,active,PASS
 unibiomap,active,PASS

@@ -45,13 +45,13 @@ products:
   name: MINT MITAB Full Dataset
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
@@ -63,13 +63,13 @@ products:
   name: MINT Human Interactions
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
@@ -81,13 +81,13 @@ products:
   name: MINT Mouse Interactions
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2026-02-26_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-03-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'

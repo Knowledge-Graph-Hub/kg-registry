@@ -32,10 +32,8 @@ products:
   format: owl
   id: emapa.owl
   name: emapa.owl
+  product_file_size: 333779
   product_url: http://purl.obolibrary.org/obo/emapa.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
 - category: OntologyProduct
   description: Mouse Developmental Anatomy Ontology in OBO format
   format: obo

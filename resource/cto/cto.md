@@ -35,10 +35,8 @@ products:
   format: owl
   id: cto.owl
   name: cto.owl
+  product_file_size: 96492
   product_url: http://purl.obolibrary.org/obo/cto.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 500 error
-    when accessing file'
 repository: https://github.com/ClinicalTrialOntology/CTO
 ---
 ## Description
