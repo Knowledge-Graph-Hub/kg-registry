@@ -10,8 +10,7 @@ contacts:
     value: tianyi@purdue.edu
   label: Tianyi Zhang
 description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
-  software supply chains, providing structured data about software components, dependencies,
-  vulnerabilities, and security practices.
+  software supply chains.
 domains:
 - information technology
 homepage_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
@@ -26,8 +25,15 @@ products:
   original_source:
   - securechainkg
   product_url: https://frink.apps.renci.org/securechainkg/sparql
+- id: securechainkg.tpf
+  name: SecureChain KG TPF
+  description: Triple Pattern Fragments endpoint for SecureChain KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/securechainkg
+  original_source:
+  - securechainkg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 SecureChain KG
 

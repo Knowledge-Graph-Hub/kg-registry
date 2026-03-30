@@ -33,7 +33,7 @@ products:
   format: owl
   id: omo.owl
   name: omo.owl
-  product_file_size: 14891
+  product_file_size: 15170
   product_url: http://purl.obolibrary.org/obo/omo.owl
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

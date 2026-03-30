@@ -32,7 +32,7 @@ products:
   format: owl
   id: rbo.owl
   name: rbo.owl
-  product_file_size: 1901421
+  product_file_size: 1902434
   product_url: http://purl.obolibrary.org/obo/rbo.owl
 - category: OntologyProduct
   description: Radiation Biology Ontology in OBO format
@@ -48,14 +48,14 @@ products:
   name: rbo.json
   product_url: http://purl.obolibrary.org/obo/rbo.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-11: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Radiation Biology Ontology in OWL format
   format: owl
   id: rbo.rbo-base.owl
   name: rbo.rbo-base.owl
-  product_file_size: 47344
+  product_file_size: 47966
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
 - category: OntologyProduct
   description: Radiation Biology Ontology in OBO format
@@ -69,7 +69,7 @@ products:
   format: json
   id: rbo.rbo-base.json
   name: rbo.rbo-base.json
-  product_file_size: 45493
+  product_file_size: 46077
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
 ---

@@ -1,0 +1,712 @@
+- contact:
+    email: aidong@virginia.edu
+    github: ''
+    label: Aidong Zhang
+  description: Bio-Health KG is a dynamically-updated open knowledge network for health,
+    integrating biomedical insights with social determinants of health.
+  frink-options:
+    documentation-path: biohealth
+    lakefs-repo: biohealth
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
+  shortname: biohealth
+  sparql: https://frink.apps.renci.org/biohealth/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
+  template: overrides/kg.html
+  title: Bio-Health KG
+  tpf: https://frink.apps.renci.org/ldf/biohealth
+- contact:
+    email: apadilla@lincolninst.edu
+    github: adplincinst
+    label: Andrew Padilla
+  description: Geoconnex is an open, community-driven knowledge graph linking U.S.
+    hydrologic features to enable seamless water data discovery, access, and collaborative
+    monitoring.
+  frink-options:
+    documentation-path: geoconnex
+    lakefs-repo: geoconnex
+  funding: null
+  homepage: https://docs.geoconnex.us/about/intro
+  shortname: geoconnex
+  sparql: https://frink.apps.renci.org/geoconnex/sparql
+  stats: https://frink.renci.org/kg-stats/geoconnex
+  template: overrides/kg.html
+  title: GEOCONNEX
+  tpf: https://frink.apps.renci.org/ldf/geoconnex
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
+  description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all
+    OKN graphs
+  frink-options:
+    documentation-path: okn-void
+    lakefs-repo: okn-void
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://frink.renci.org/registry/kgs/okn-void/
+  shortname: okn-void
+  sparql: https://frink.apps.renci.org/okn-void/sparql
+  template: overrides/kg.html
+  title: OKN VoID graph descriptions
+  tpf: https://frink.apps.renci.org/ldf/okn-void
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
+  description: Integrated suite of OBO ontologies with precomputed inferred relationships
+  frink-options:
+    documentation-path: ubergraph
+    lakefs-repo: ubergraph
+  homepage: https://github.com/INCATools/ubergraph/
+  shortname: ubergraph
+  sparql: https://frink.apps.renci.org/ubergraph/sparql
+  template: overrides/kg.html
+  title: Ubergraph
+  tpf: https://frink.apps.renci.org/ldf/ubergraph
+- contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: Jim Balhoff
+  description: Wikidata is a free and open knowledge base that can be read and edited
+    by both humans and machines
+  homepage: https://www.wikidata.org/
+  shortname: wikidata
+  sparql: https://frink.apps.renci.org/wikidata/sparql
+  template: overrides/kg.html
+  title: Wikidata
+  tpf: https://frink.apps.renci.org/ldf/wikidata
+- contact:
+    email: chenc@udel.edu
+    github: chenchuming
+    label: Chuming Chen
+  description: The Protein Knowledge Network (ProKN) integrates protein-centric data
+    with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning
+    heterogeneous biological data types across multiple domains to foster CFDE re-use
+    and collaboration through enhanced connectivity and data integration, enabling
+    new capabilities for functional genomics and systems-level understanding of disease
+    mechanisms.
+  frink-options:
+    documentation-path: prokn
+    lakefs-repo: prokn
+  funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://research.bioinformatics.udel.edu/ProKN/
+  shortname: prokn
+  sparql: https://frink.apps.renci.org/prokn/sparql
+  stats: https://frink.renci.org/kg-stats/prokn
+  template: overrides/kg.html
+  title: Protein Knowledge Network
+  tpf: https://frink.apps.renci.org/ldf/prokn
+- contact:
+    email: cli@uta.edu
+    github: idirlab
+    label: Chengkai Li
+  description: The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil
+    carbon modeling, which is crucial for voluntary carbon markets.
+  frink-options:
+    documentation-path: soc-kg
+    lakefs-repo: soc-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
+  homepage: https://idir.sockg.org/
+  shortname: sockg
+  sparql: https://frink.apps.renci.org/sockg/sparql
+  stats: https://frink.renci.org/kg-stats/soc-kg
+  template: overrides/kg.html
+  title: SOC-KG
+  tpf: https://frink.apps.renci.org/ldf/sockg
+- contact:
+    email: climatepub4kg@tuprd.onmicrosoft.com
+    github: aayushacharya
+    label: Aayush Acharya
+  description: Climate Models KG is a knowledge graph to support evaluation and development
+    of climate models.
+  frink-options:
+    documentation-path: climatepub4-kg
+    lakefs-repo: climatepub4-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
+  shortname: climatemodelskg
+  sparql: https://frink.apps.renci.org/climatemodelskg/sparql
+  stats: https://frink.renci.org/kg-stats/climate-kg
+  template: overrides/kg.html
+  title: Climate Models KG
+  tpf: https://frink.apps.renci.org/ldf/climatemodelskg
+- contact:
+    email: farhad.ameri@asu.edu
+    github: fameri
+    label: Farhad Ameri
+  description: Supply and Demand Open Knowledge Network is an interconnected network
+    of publicly available manufacturing capability data focused on Small and Medium-Sized
+    Manufacturers.
+  frink-options:
+    documentation-path: sudokn-kg
+    lakefs-repo: sudokn-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
+  homepage: https://projects.engineering.asu.edu/sudokn/
+  shortname: sudokn
+  sparql: https://frink.apps.renci.org/sudokn/sparql
+  stats: https://frink.renci.org/kg-stats/sudokn
+  template: overrides/kg.html
+  title: SUDOKN
+  tpf: https://frink.apps.renci.org/ldf/sudokn
+- contact:
+    email: jeetvora@gwu.edu
+    github: jeet-vora
+    label: Jeet Vora
+  description: The BiomarkerKB knowledge graph is a structured network that connects
+    biomarkers to diseases, drugs, biological entities, and evidence from the scientific
+    literature.
+  frink-options:
+    documentation-path: biomarkerkg
+    lakefs-repo: biomarkerkg
+  funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
+  homepage: https://biomarkerkb.org/home/
+  shortname: biomarkerkg
+  sparql: https://frink.apps.renci.org/biomarkerkg/sparql
+  stats: https://frink.renci.org/kg-stats/biomarkerkg
+  template: overrides/kg.html
+  title: BiomarkerKB KG
+  tpf: https://frink.apps.renci.org/ldf/biomarkerkg
+- contact:
+    email: jiaqi.gong@ua.edu
+    github: SAIL-UA
+    label: Jiaqi Gong
+  description: Rural Resilience KG is a cross-domain knowledge graph to integrate
+    health and justice for rural resilience.
+  frink-options:
+    documentation-path: rural-kg
+    lakefs-repo: rural-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
+  shortname: ruralkg
+  sparql: https://frink.apps.renci.org/ruralkg/sparql
+  stats: https://frink.renci.org/kg-stats/rural-kg
+  template: overrides/kg.html
+  title: Rural Resilience KG
+  tpf: https://frink.apps.renci.org/ldf/ruralkg
+- contact:
+    email: lew.lefton@gmail.com
+    github: ''
+    label: Lew Lefton
+  description: Comprehensive information on scientific publications and related entities.
+  frink-options:
+    documentation-path: sem-open-alex-kg
+    lakefs-repo: sem-open-alex-kg
+  homepage: https://semopenalex.org/
+  shortname: semopenalex
+  sparql: https://frink.apps.renci.org/semopenalex/sparql
+  template: overrides/kg.html
+  title: SemOpenAlex
+  tpf: https://frink.apps.renci.org/ldf/semopenalex
+- contact:
+    email: lisa@renci.org
+    github: lstillwe
+    label: Lisa Stillwell
+  description: The NASA Knowledge Graph Dataset is an expansive graph-based dataset
+    designed to integrate and interconnect information about satellite datasets, scientific
+    publications, instruments, platforms, projects, data centers, and science keywords.
+    This knowledge graph is particularly focused on datasets managed by NASA's Distributed
+    Active Archive Centers (DAACs), which are NASA's data repositories responsible
+    for archiving and distributing scientific data. In addition to NASA DAACs, the
+    graph includes datasets from 184 data providers worldwide, including various government
+    agencies and academic institutions.
+  frink-options:
+    documentation-path: nasa-gesdisc
+    lakefs-repo: nasa-gesdisc
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/nasa.yaml
+  funding: null
+  homepage: https://disc.gsfc.nasa.gov
+  shortname: nasa-gesdisc-kg
+  sparql: https://frink.apps.renci.org/nasa-gesdisc-kg/sparql
+  stats: https://frink.renci.org/kg-stats/nasa-gesdisc-kg
+  template: overrides/kg.html
+  title: NASA-GESDISC-KG
+  tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
+- contact:
+    email: morshedm@renci.org
+    github: mahir256
+    label: Mahir Morshed
+  description: Mappings using standard RDF predicates between Wikidata entities and
+    external identifiers represented as RDF IRIs
+  frink-options:
+    documentation-path: identifier-mappings
+    lakefs-repo: identifier-mappings
+  homepage: https://www.wikidata.org/
+  shortname: identifier-mappings
+  sparql: https://frink.apps.renci.org/identifier-mappings/sparql
+  stats: https://frink.renci.org/kg-stats/identifier-mappings
+  template: overrides/kg.html
+  title: ID Mappings
+  tpf: https://frink.apps.renci.org/ldf/identifier-mappings
+- contact:
+    email: sergio.baranzini@ucsf.edu
+    github: baranzini-lab
+    label: Sergio Baranzini
+  description: "The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge\
+    \ Network) KG and is designed to integrate omics data from NASA\u2019s Open Science\
+    \ Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments."
+  frink-options:
+    documentation-path: spoke-genelab
+    lakefs-repo: spoke-genelab-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-genelab.yaml
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
+  homepage: https://github.com/BaranziniLab/spoke_genelab
+  shortname: spoke-genelab
+  sparql: https://frink.apps.renci.org/spoke-genelab/sparql
+  stats: https://frink.renci.org/kg-stats/spoke-genelab
+  template: overrides/kg.html
+  title: SPOKE GeneLab
+  tpf: https://frink.apps.renci.org/ldf/spoke-genelab
+- contact:
+    email: sergio.baranzini@ucsf.edu
+    github: baranzini-lab
+    label: Sergio Baranzini
+  description: The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive
+    biomedical and environmental health knowledge graph that integrates diverse data
+    across genomics, environmental science, and public health.
+  frink-options:
+    documentation-path: spoke-kg
+    lakefs-repo: spoke-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/spoke-okn.yaml
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
+  homepage: https://spoke.ucsf.edu
+  shortname: spoke-okn
+  sparql: https://frink.apps.renci.org/spoke-okn/sparql
+  stats: https://frink.renci.org/kg-stats/spoke-okn
+  template: overrides/kg.html
+  title: SPOKE-OKN
+  tpf: https://frink.apps.renci.org/ldf/spoke-okn
+- contact:
+    email: support@ndexbio.org
+    github: ''
+    label: Cytoscape and NDEx Team
+  description: The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database
+    version 2.0 networks into RDF, capturing protein interactions, signaling pathways,
+    and post-translational modifications enriched with INDRA evidence metadata.
+  frink-options:
+    documentation-path: ncipidkg
+    lakefs-repo: ncipidkg
+  homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
+  shortname: ncipidkg
+  stats: https://frink.renci.org/kg-stats/ncipidkg
+  template: overrides/kg.html
+  title: NCI-PID 2.0 KG
+- contact:
+    email: tom@insilica.co
+    github: tomlue
+    label: Tom Luechtefeld
+  description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways
+    from the AOP-Wiki.
+  frink-options:
+    documentation-path: biobricks-aopwiki-kg
+    lakefs-repo: biobricks-aopwiki-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/aopwikirdf-kg
+  shortname: biobricks-aopwiki
+  sparql: https://frink.apps.renci.org/biobricks-aopwiki/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-aopwiki-kg
+  template: overrides/kg.html
+  title: BioBricks AOP-Wiki
+  tpf: https://frink.apps.renci.org/ldf/biobricks-aopwiki
+- contact:
+    email: tom@insilica.co
+    github: tomlue
+    label: Tom Luechtefeld
+  description: BioBricks ICE (Integrated Chemical Environment) is an open knowledge
+    graph for cheminformatics and chemical safety data from EPA's CompTox database.
+  frink-options:
+    documentation-path: biobricks-ice-kg
+    lakefs-repo: biobricks-ice-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/biobricks-okg
+  shortname: biobricks-ice
+  sparql: https://frink.apps.renci.org/biobricks-ice/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
+  template: overrides/kg.html
+  title: BioBricks ICE
+  tpf: https://frink.apps.renci.org/ldf/biobricks-ice
+- contact:
+    email: tom@insilica.co
+    github: tomlue
+    label: Tom Luechtefeld
+  description: BioBricks MeSH is an open knowledge graph of Medical Subject Headings
+    (MeSH) biomedical vocabulary.
+  frink-options:
+    documentation-path: biobricks-mesh-kg
+    lakefs-repo: biobricks-mesh-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/mesh-kg
+  shortname: biobricks-mesh
+  sparql: https://frink.apps.renci.org/biobricks-mesh/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-mesh-kg
+  template: overrides/kg.html
+  title: BioBricks MeSH
+  tpf: https://frink.apps.renci.org/ldf/biobricks-mesh
+- contact:
+    email: tom@insilica.co
+    github: tomlue
+    label: Tom Luechtefeld
+  description: BioBricks PubChem Annotations is an open knowledge graph of chemical
+    annotations from PubChem.
+  frink-options:
+    documentation-path: biobricks-pubchem-annotations-kg
+    lakefs-repo: biobricks-pubchem-annotations-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
+  shortname: biobricks-pubchem-annotations
+  sparql: https://frink.apps.renci.org/biobricks-pubchem-annotations/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-pubchem-annotations-kg
+  template: overrides/kg.html
+  title: BioBricks PubChem Annotations
+  tpf: https://frink.apps.renci.org/ldf/biobricks-pubchem-annotations
+- contact:
+    email: tom@insilica.co
+    github: tomlue
+    label: Tom Luechtefeld
+  description: BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening
+    data.
+  frink-options:
+    documentation-path: biobricks-tox21-kg
+    lakefs-repo: biobricks-tox21-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/biobricks-okg
+  shortname: biobricks-tox21
+  sparql: https://frink.apps.renci.org/biobricks-tox21/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-tox21-kg
+  template: overrides/kg.html
+  title: BioBricks Tox21
+  tpf: https://frink.apps.renci.org/ldf/biobricks-tox21
+- contact:
+    email: tom@insilica.co
+    github: tomlue
+    label: Tom Luechtefeld
+  description: BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput
+    screening data.
+  frink-options:
+    documentation-path: biobricks-toxcast-kg
+    lakefs-repo: biobricks-toxcast-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
+  homepage: https://github.com/biobricks-ai/biobricks-okg
+  shortname: biobricks-toxcast
+  sparql: https://frink.apps.renci.org/biobricks-toxcast/sparql
+  stats: https://frink.renci.org/kg-stats/biobricks-toxcast-kg
+  template: overrides/kg.html
+  title: BioBricks ToxCast
+  tpf: https://frink.apps.renci.org/ldf/biobricks-toxcast
+- contact:
+    email: xzhang33@nd.edu
+    github: XiangqiWang77
+    label: Xiangliang Zhang
+  description: This project seeks to create a comprehensive, integrative knowledge
+    network for the management of wildlife in the context of climate change
+  frink-options:
+    documentation-path: wildlife-kg
+    lakefs-repo: wildlife-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/wokn.yaml
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
+  homepage: https://sites.nd.edu/kn-wildlife/
+  shortname: wildlifekn
+  sparql: https://frink.apps.renci.org/wildlifekn/sparql
+  template: overrides/kg.html
+  title: Wildlife-KN
+  tpf: https://frink.apps.renci.org/ldf/wildlifekn
+- contact:
+    email: yeghialt@ucmail.uc.edu
+    github: ''
+    label: Lilit Yeghiazarian
+  description: The Urban Flooding Open Knowledge Network (UF-OKN) is an informational
+    infrastructure built using knowledge graphs aiming to extract structured content
+    from the information scattered across open-source geospatial datasets and hydrologic
+    models.
+  frink-options:
+    documentation-path: ufokn-kg
+    lakefs-repo: urban-flooding-open-knowledge-network
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
+  homepage: https://ufokn.com
+  shortname: ufokn
+  sparql: https://frink.apps.renci.org/ufokn/sparql
+  stats: https://frink.renci.org/kg-stats/wen-kg
+  template: overrides/kg.html
+  title: UF-OKN
+  tpf: https://frink.apps.renci.org/ldf/ufokn
+- contact:
+    email: yuzhou.chen@temple.edu
+    github: yuzhouguangc
+    label: Yuzhou Chen
+  description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs
+    to Address Homelessness With Explainable AI
+  frink-options:
+    documentation-path: dream-kg
+    lakefs-repo: dream-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
+  homepage: https://dreamkg.com/
+  shortname: dreamkg
+  sparql: https://frink.apps.renci.org/dreamkg/sparql
+  stats: https://frink.renci.org/kg-stats/dream-kg
+  template: overrides/kg.html
+  title: DREAM-KG
+  tpf: https://frink.apps.renci.org/ldf/dreamkg
+- contacts:
+  - email: Erik.Wright@bcm.edu
+    github: WrightLabScience
+    label: Erik Wright
+  description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
+  frink-options:
+    documentation-path: evoweb
+    lakefs-repo: evoweb
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
+  homepage: https://data.niaid.nih.gov/
+  shortname: evoweb
+  sparql: https://frink.apps.renci.org/evoweb/sparql
+  stats: https://frink.renci.org/kg-stats/evoweb
+  template: overrides/kg.html
+  title: EvoWeb
+  tpf: https://frink.apps.renci.org/ldf/evoweb
+- contacts:
+  - email: asu@scripps.edu
+    github: andrewsu
+    label: Andrew Su
+  - email: plwhetzel@gmail.com
+    github: twhetzel
+    label: Trish Whetzel
+  description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
+  frink-options:
+    documentation-path: gene-expression-atlas-okn
+    lakefs-repo: gene-expression-atlas-okn
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://www.ebi.ac.uk/gxa/home
+  shortname: gene-expression-atlas-okn
+  sparql: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
+  stats: https://frink.renci.org/kg-stats/gene-expression-atlas-okn
+  template: overrides/kg.html
+  title: Gene Expression Atlas
+  tpf: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
+- contacts:
+  - email: asu@scripps.edu
+    github: andrewsu
+    label: Andrew Su
+  - email: plwhetzel@gmail.com
+    github: twhetzel
+    label: Trish Whetzel
+  description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
+    disease datasets. These include datasets from NIAID-funded repositories as well
+    as globally-relevant infectious and immune-mediated disease (IID) repositories
+    from NIH and beyond. The datasets include -omics data, clinical data, epidemiological
+    data, pathogen-host interaction data, flow cytometry, and imaging.
+  frink-options:
+    documentation-path: nde
+    lakefs-repo: nde
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://data.niaid.nih.gov/
+  shortname: nde
+  sparql: https://frink.apps.renci.org/nde/sparql
+  stats: https://frink.renci.org/kg-stats/nde
+  template: overrides/kg.html
+  title: NIAID Data Ecosystem KG
+  tpf: https://frink.apps.renci.org/ldf/nde
+- contacts:
+  - email: ct2865@cumc.columbia.edu
+    github: CaseyTa
+    label: Casey Ta
+  - email: cw2384@cumc.columbia.edu
+    github: ChunhuaWeng
+    label: Chunhua Weng
+  description: Clinical associations between rare diseases and phenotypes derived
+    from electronic health records
+  frink-options:
+    documentation-path: oard-kg
+    lakefs-repo: oard-kg
+  funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
+  homepage: https://github.com/WengLab-InformaticsResearch/oard-react
+  shortname: oard-kg
+  sparql: https://frink.apps.renci.org/oard-kg/sparql
+  template: overrides/kg.html
+  title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
+  tpf: https://frink.apps.renci.org/ldf/oard-kg
+- contacts:
+  - email: danny.e.oneal@gmail.com
+    github: danny-oneal
+    label: Danny O'Neal
+  - email: scottgdaniel@gmail.com
+    github: scottgdaniel
+    label: Scott Daniel
+  description: SCALES is an integrated justice platform to connect criminal justice
+    data across data silos.
+  frink-options:
+    documentation-path: scales-kg
+    lakefs-repo: scales-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
+  homepage: https://scales-okn.org/
+  shortname: scales
+  sparql: https://frink.apps.renci.org/scales/sparql
+  stats: https://frink.renci.org/kg-stats/scales-kg
+  template: overrides/kg.html
+  title: SCALES
+  tpf: https://frink.apps.renci.org/ldf/scales
+- contacts:
+  - email: david.kedrowski@maine.edu
+    github: dkedrowski
+    label: David Kedrowski
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The Hydrology KG is the part of the SAWGraph project that describes
+    streams, waterbodies and wells and their locations.
+  frink-options:
+    documentation-path: hydrology-kg
+    lakefs-repo: hydrology-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: hydrologykg
+  sparql: https://frink.apps.renci.org/hydrologykg/sparql
+  stats: https://frink.renci.org/kg-stats/hydrology-kg
+  template: overrides/kg.html
+  title: SAWGraph Hydrology KG
+  tpf: https://frink.apps.renci.org/ldf/hydrologykg
+- contacts:
+  - email: david.kedrowski@maine.edu
+    github: dkedrowski
+    label: David Kedrowski
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The SAWGraph Spatial KG is part of the Safe Agricultural Products and
+    Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the
+    S2 grid as well as administrative regions of levels 1 to 3 (states, counties,
+    and county subdivisions) and the spatial relationships between them for the 48
+    contiguous states in the U.S.
+  frink-options:
+    documentation-path: spatial-kg
+    lakefs-repo: spatial-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: spatialkg
+  sparql: https://frink.apps.renci.org/spatialkg/sparql
+  stats: https://frink.renci.org/kg-stats/spatial-kg
+  template: overrides/kg.html
+  title: SAWGraph Spatial KG
+  tpf: https://frink.apps.renci.org/ldf/spatialkg
+- contacts:
+  - email: drjieliu@umich.edu
+    github: jieliu6
+    label: Jie Liu
+  description: "PanKgraph \u2014 PanKbase Knowledge Graph (NIDDK)"
+  frink-options:
+    documentation-path: pankbase-kg
+    lakefs-repo: pankbase-kg
+    neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/pankgraph.yaml
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
+  homepage: https://pankbase.org/
+  shortname: pankgraph
+  sparql: https://frink.apps.renci.org/pankgraph/sparql
+  stats: https://frink.renci.org/kg-stats/pankbase-kg
+  template: overrides/kg.html
+  title: PanKgraph
+  tpf: https://frink.apps.renci.org/ldf/pankgraph
+- contacts:
+  - email: jinlian.wang@uth.tmc.edu
+    github: wnagjl99
+    label: Jinlian Wang
+  description: RDKG is an open knowledge graph for rare diseases that integrates standardized
+    disease identifiers and cross-references to support discovery and evidence synthesis.
+  frink-options:
+    documentation-path: rdkg
+    lakefs-repo: rdkg
+  shortname: rdkg
+  template: overrides/kg.html
+  title: Rare Disease Knowledge Graph
+- contacts:
+  - email: katrina.schweikert@maine.edu
+    github: kschweikert
+    label: Katrina Schweikert
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The FRS (Facility Registry Service) KG is the part of the SAWGraph
+    project that stores data about facilities from EPA's Facility Registry service
+    (FRS) together with their NAICS industry classification and the spatial location.
+  frink-options:
+    documentation-path: fio-kg
+    lakefs-repo: fio-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: fiokg
+  sparql: https://frink.apps.renci.org/fiokg/sparql
+  stats: https://frink.renci.org/kg-stats/fio-kg
+  template: overrides/kg.html
+  title: SAWGraph FRS KG
+  tpf: https://frink.apps.renci.org/ldf/fiokg
+- contacts:
+  - email: katrina.schweikert@maine.edu
+    github: kschweikert
+    label: Katrina Schweikert
+  - email: torsten.hahmann@maine.edu
+    github: thahmann
+    label: Torsten Hahmann
+  description: The Safe Agricultural Products and Water Graph (SAWGraph) PFAS KG stores
+    data on PFAS observations and releases, describing the samples, the geospatial
+    features they were taken from, the sampled environmental media, the specific chemical
+    substances and the measurement values observed.
+  frink-options:
+    documentation-path: sawgraph-kg
+    lakefs-repo: sawgraph-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
+  homepage: https://sawgraph.github.io/
+  shortname: sawgraph
+  sparql: https://frink.apps.renci.org/sawgraph/sparql
+  stats: https://frink.renci.org/kg-stats/sawgraph
+  template: overrides/kg.html
+  title: SAWGraph PFAS KG
+  tpf: https://frink.apps.renci.org/ldf/sawgraph
+- contacts:
+  - email: psingh37@pride.hofstra.edu
+    github: Prabhadeus
+    label: Prabhjot Singh
+  description: Knowledge graph constructed from FDA MAUDE adverse event reports using
+    standardized FDA product codes.
+  frink-options:
+    documentation-path: maudekg
+    lakefs-repo: maude-kg
+  homepage: https://github.com/Prabhadeus/Proto-OKN
+  shortname: maudekg
+  sparql: https://frink.apps.renci.org/maudekg/sparql
+  stats: https://frink.renci.org/kg-stats/maudekg
+  template: overrides/kg.html
+  title: FDA MAUDE Adverse Event Knowledge Graph
+  tpf: https://frink.apps.renci.org/ldf/maudekg
+- contacts:
+  - email: tianyi@purdue.edu
+    github: tianyi-zhang
+    label: Tianyi Zhang
+  - email: di5@purdue.edu
+    github: NecoraNyaru
+    label: Yifeng Di
+  description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
+    software supply chains.
+  frink-options:
+    documentation-path: secure-chain-kg
+    lakefs-repo: secure-chain-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
+  homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
+  shortname: securechainkg
+  sparql: https://frink.apps.renci.org/securechainkg/sparql
+  stats: https://frink.renci.org/kg-stats/secure-chain-kg
+  template: overrides/kg.html
+  title: SecureChain KG
+  tpf: https://frink.apps.renci.org/ldf/securechainkg
+- contacts:
+  - email: wenc056@ucsd.edu
+    github: John-Steve-C
+    label: Wentao Chen
+  - email: jshang@ucsd.edu
+    github: shangjingbo1226
+    label: Jingbo Shang
+  description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
+    neighborhood information.
+  frink-options:
+    documentation-path: neighborhood-kg
+    lakefs-repo: neighborhood-information-kg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
+  shortname: nikg
+  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
+  stats: https://frink.renci.org/kg-stats/nikg
+  template: overrides/kg.html
+  title: Neighborhood Information KG
+  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg

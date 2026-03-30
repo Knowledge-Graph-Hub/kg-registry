@@ -5,6 +5,13 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Andrew Padilla
+  contact_details:
+  - contact_type: email
+    value: apadilla@lincolninst.edu
+  - contact_type: github
+    value: adplincinst
+- category: Individual
   contact_details:
   - contact_type: email
     value: apadilla@lincolninst.edu
@@ -25,8 +32,15 @@ products:
   original_source:
   - geoconnex
   product_url: https://frink.apps.renci.org/geoconnex/sparql
+- id: geoconnex.tpf
+  name: GEOCONNEX TPF
+  description: Triple Pattern Fragments endpoint for GEOCONNEX
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/geoconnex
+  original_source:
+  - geoconnex
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 GEOCONNEX
 

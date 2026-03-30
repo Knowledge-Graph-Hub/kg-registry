@@ -9,9 +9,8 @@ contacts:
   - contact_type: email
     value: torsten.hahmann@maine.edu
   label: Torsten Hahmann
-description: The Hydrology KG is part of the SAWGraph (Safe Agricultural Products
-  and Water Graph) project, providing structured data about hydrological systems and
-  water resources.
+description: The Hydrology KG is the part of the SAWGraph project that describes streams,
+  waterbodies and wells and their locations.
 domains:
 - environment
 homepage_url: https://sawgraph.github.io/
@@ -26,8 +25,15 @@ products:
   original_source:
   - hydrologykg
   product_url: https://frink.apps.renci.org/hydrologykg/sparql
+- id: hydrologykg.tpf
+  name: SAWGraph Hydrology KG TPF
+  description: Triple Pattern Fragments endpoint for SAWGraph Hydrology KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/hydrologykg
+  original_source:
+  - hydrologykg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 SAWGraph Hydrology KG
 

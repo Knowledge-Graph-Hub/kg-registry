@@ -3,6 +3,13 @@ activity_status: active
 category: KnowledgeGraph
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  contact_details:
+  - contact_type: email
+    value: balhoff@renci.org
+  - contact_type: github
+    value: balhoff
+- category: Individual
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
@@ -10,11 +17,10 @@ contacts:
     value: balhoff
   label: James P. Balhoff
   orcid: 0000-0002-8688-6599
-description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified
-  semantic graph
+description: Integrated suite of OBO ontologies with precomputed inferred relationships
 domains:
 - other
-homepage_url: https://ubergraph.apps.renci.org/sparql
+homepage_url: https://github.com/INCATools/ubergraph/
 id: ubergraph
 infores_id: ubergraph
 layout: resource_detail
@@ -75,9 +81,25 @@ products:
   product_url: https://stars.renci.org/var/translator/releases/ubergraph/2025_12_15/
   secondary_source:
   - translator
+- id: ubergraph.sparql
+  name: Ubergraph SPARQL
+  description: SPARQL endpoint for Ubergraph
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ubergraph/sparql
+  original_source:
+  - ubergraph
+- id: ubergraph.tpf
+  name: Ubergraph TPF
+  description: Triple Pattern Fragments endpoint for Ubergraph
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/ubergraph
+  original_source:
+  - ubergraph
 repository: https://github.com/INCATools/ubergraph
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
+collection:
+- okn
 ---
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies
 

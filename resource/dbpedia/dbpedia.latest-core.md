@@ -9,6 +9,7 @@ original_source:
 - dbpedia
 - wikipedia
 - wikidata
+product_file_size: 18605
 product_url: https://databus.dbpedia.org/dbpedia/collections/latest-core
 secondary_source:
 - dbpedia

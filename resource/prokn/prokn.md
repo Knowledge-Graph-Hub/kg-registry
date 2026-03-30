@@ -5,12 +5,24 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Chuming Chen
+  contact_details:
+  - contact_type: email
+    value: chenc@udel.edu
+  - contact_type: github
+    value: chenchuming
+- category: Individual
   contact_details:
   - contact_type: email
     value: chenc@udel.edu
   label: Chuming Chen
 creation_date: '2026-01-23T00:00:00Z'
-description: The Protein Knowledge Network (ProKN) integrates protein-centric data with Common Fund Data Ecosystem resources to link proteins, variants, pathways, and phenotypes for functional genomics and systems-level insights.
+description: The Protein Knowledge Network (ProKN) integrates protein-centric data
+  with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning
+  heterogeneous biological data types across multiple domains to foster CFDE re-use
+  and collaboration through enhanced connectivity and data integration, enabling new
+  capabilities for functional genomics and systems-level understanding of disease
+  mechanisms.
 domains:
 - proteomics
 - genomics
@@ -948,7 +960,8 @@ products:
   - prokn
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Variant.IMPACT.Protein.edges.csv
 - category: GraphicalInterface
-  description: Web explorer for the Protein Knowledge Network with interactive graph browsing
+  description: Web explorer for the Protein Knowledge Network with interactive graph
+    browsing
   format: http
   id: prokn.explorer
   name: Protein Knowledge Network Explorer
@@ -963,8 +976,24 @@ products:
   original_source:
   - prokn
   product_url: https://research.bioinformatics.udel.edu/ProKN/restapi
-
-last_modified_date: '2026-01-23T00:00:00Z'
+- id: prokn.sparql
+  name: Protein Knowledge Network SPARQL
+  description: SPARQL endpoint for Protein Knowledge Network
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/prokn/sparql
+  original_source:
+  - prokn
+- id: prokn.tpf
+  name: Protein Knowledge Network TPF
+  description: Triple Pattern Fragments endpoint for Protein Knowledge Network
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/prokn
+  original_source:
+  - prokn
+last_modified_date: '2026-03-30T00:00:00Z'
+name: Protein Knowledge Network
+homepage_url: https://research.bioinformatics.udel.edu/ProKN/
+layout: resource_detail
 ---
 Protein Knowledge Network
 

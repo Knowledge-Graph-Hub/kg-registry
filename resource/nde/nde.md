@@ -18,7 +18,7 @@ contacts:
   - contact_type: github
     value: twhetzel
   label: Trish Whetzel
-description: The NDE (NIAID Data Ecosystem) KG contains infectious and immune-mediated
+description: The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated
   disease datasets. These include datasets from NIAID-funded repositories as well
   as globally-relevant infectious and immune-mediated disease (IID) repositories from
   NIH and beyond. The datasets include -omics data, clinical data, epidemiological
@@ -39,10 +39,17 @@ products:
   original_source:
   - nde
   product_url: https://frink.apps.renci.org/nde/sparql
+- id: nde.tpf
+  name: NIAID Data Ecosystem KG TPF
+  description: Triple Pattern Fragments endpoint for NIAID Data Ecosystem KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/nde
+  original_source:
+  - nde
 taxon:
 - NCBITaxon:9606
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 NIAID Data Ecosystem KG
 

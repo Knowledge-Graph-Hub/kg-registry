@@ -5,6 +5,13 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Lisa Stillwell
+  contact_details:
+  - contact_type: email
+    value: lisa@renci.org
+  - contact_type: github
+    value: lstillwe
+- category: Individual
   contact_details:
   - contact_type: email
     value: lisa@renci.org
@@ -32,8 +39,15 @@ products:
   original_source:
   - nasa-gesdisc-kg
   product_url: https://frink.apps.renci.org/nasa-gesdisc-kg/sparql
+- id: nasa-gesdisc-kg.tpf
+  name: NASA-GESDISC-KG TPF
+  description: Triple Pattern Fragments endpoint for NASA-GESDISC-KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
+  original_source:
+  - nasa-gesdisc-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 NASA-GESDISC-KG
 

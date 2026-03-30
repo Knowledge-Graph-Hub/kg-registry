@@ -5,19 +5,24 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Mahir Morshed
+  contact_details:
+  - contact_type: email
+    value: morshedm@renci.org
+  - contact_type: github
+    value: mahir256
+- category: Individual
   contact_details:
   - contact_type: email
     value: morshedm@renci.org
   label: Mahir Morshed
-description: ID Mappings is a FRINK-hosted subset of the Wikidata graph containing mappings
-  between Wikidata entities and external identifiers expressed with standard RDF predicates
-  such as skos:exactMatch, enabling consistent cross-reference and integration across
-  knowledge bases.
+description: Mappings using standard RDF predicates between Wikidata entities and
+  external identifiers represented as RDF IRIs
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-23T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 domains:
 - general
-homepage_url: https://frink.renci.org/registry/kgs/identifier-mappings/
+homepage_url: https://www.wikidata.org/
 id: identifier-mappings
 layout: resource_detail
 name: ID Mappings
@@ -28,7 +33,6 @@ products:
   name: ID Mappings SPARQL
   original_source:
   - identifier-mappings
-  - wikidata
   product_url: https://frink.apps.renci.org/identifier-mappings/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for ID Mappings
@@ -36,7 +40,6 @@ products:
   name: ID Mappings TPF
   original_source:
   - identifier-mappings
-  - wikidata
   product_url: https://frink.apps.renci.org/ldf/identifier-mappings
 ---
 ID Mappings

@@ -5,17 +5,17 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Aidong Zhang
   contact_details:
   - contact_type: email
     value: aidong@virginia.edu
-  label: Aidong Zhang
 description: Bio-Health KG is a dynamically-updated open knowledge network for health,
   integrating biomedical insights with social determinants of health.
 domains:
 - health
 - biomedical
 - social determinants
-homepage_url: https://frink.apps.renci.org/biohealth/sparql
+homepage_url: https://frink.renci.org/registry/kgs/biohealth/
 id: biohealth
 layout: resource_detail
 name: Bio-Health KG
@@ -27,8 +27,15 @@ products:
   original_source:
   - biohealth
   product_url: https://frink.apps.renci.org/biohealth/sparql
+- id: biohealth.tpf
+  name: Bio-Health KG TPF
+  description: Triple Pattern Fragments endpoint for Bio-Health KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/biohealth
+  original_source:
+  - biohealth
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 Bio-Health KG
 

@@ -2,21 +2,28 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
+- category: Individual
+  label: Jeet Vora
+  contact_details:
+  - contact_type: email
+    value: jeetvora@gwu.edu
+  - contact_type: github
+    value: jeet-vora
 - category: Organization
   contact_details:
   - contact_type: email
     value: avi.maayan@mssm.edu
   label: MaayanLab
-description: Biomarker Knowledge Graph (BKG) is a comprehensive resource for biomarker
-  data that integrates multiple biomedical resources to connect biomarkers with anatomical
-  structures, compounds, conditions, roles, and variants.
+description: The BiomarkerKB knowledge graph is a structured network that connects
+  biomarkers to diseases, drugs, biological entities, and evidence from the scientific
+  literature.
 domains:
 - health
 - biological systems
-homepage_url: https://bkg.dev.maayanlab.cloud/
+homepage_url: https://biomarkerkb.org/home/
 id: biomarkerkg
 layout: resource_detail
-name: Biomarker Knowledge Graph
+name: BiomarkerKB KG
 products:
 - category: GraphicalInterface
   description: Web interface to explore and query the Biomarker Knowledge Graph
@@ -161,9 +168,25 @@ products:
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
   secondary_source:
   - biomarkerkg
+- id: biomarkerkg.sparql
+  name: BiomarkerKB KG SPARQL
+  description: SPARQL endpoint for BiomarkerKB KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/biomarkerkg/sparql
+  original_source:
+  - biomarkerkg
+- id: biomarkerkg.tpf
+  name: BiomarkerKB KG TPF
+  description: Triple Pattern Fragments endpoint for BiomarkerKB KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/biomarkerkg
+  original_source:
+  - biomarkerkg
 repository: https://github.com/MaayanLab/BiomarkerKG
 creation_date: '2025-05-04T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
+collection:
+- okn
 ---
 The Biomarker Knowledge Graph (BKG) is a comprehensive resource that integrates biomarker data across multiple dimensions including anatomical structures, compounds, conditions, roles, and variants. This knowledge graph serves as a centralized platform for biomarker research, enabling researchers to explore complex relationships between biomarkers and various biological and clinical entities.
 

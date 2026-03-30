@@ -36,14 +36,14 @@ products:
   format: owl
   id: ncit.owl
   name: NCIt OBO Edition OWL format
-  product_file_size: 782238438
+  product_file_size: 811620064
   product_url: http://purl.obolibrary.org/obo/ncit.owl
 - category: OntologyProduct
   description: NCIt OBO Edition OBO format
   format: obo
   id: ncit.obo
   name: NCIt OBO Edition OBO format
-  product_file_size: 238812762
+  product_file_size: 248162694
   product_url: http://purl.obolibrary.org/obo/ncit.obo
 - category: ProgrammingInterface
   description: TRAPI web API for querying MicrobiomeKG

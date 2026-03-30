@@ -5,13 +5,19 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Tom Luechtefeld
+  contact_details:
+  - contact_type: email
+    value: tom@insilica.co
+  - contact_type: github
+    value: tomlue
+- category: Individual
   contact_details:
   - contact_type: email
     value: tom@insilica.co
   label: Tom Luechtefeld
 description: BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways
-  from the AOP-Wiki. It provides structured data about biological pathways linking
-  chemical exposures to adverse health effects.
+  from the AOP-Wiki.
 domains:
 - toxicology
 - biological systems
@@ -27,9 +33,16 @@ products:
   original_source:
   - biobricks-aopwiki
   product_url: https://frink.apps.renci.org/biobricks-aopwiki/sparql
+- id: biobricks-aopwiki.tpf
+  name: BioBricks AOP-Wiki TPF
+  description: Triple Pattern Fragments endpoint for BioBricks AOP-Wiki
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/biobricks-aopwiki
+  original_source:
+  - biobricks-aopwiki
 repository: https://github.com/biobricks-ai/aopwikirdf-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 BioBricks AOP-Wiki
 

@@ -5,6 +5,13 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Tom Luechtefeld
+  contact_details:
+  - contact_type: email
+    value: tom@insilica.co
+  - contact_type: github
+    value: tomlue
+- category: Individual
   contact_details:
   - contact_type: email
     value: tom@insilica.co
@@ -26,9 +33,16 @@ products:
   original_source:
   - biobricks-ice
   product_url: https://frink.apps.renci.org/biobricks-ice/sparql
+- id: biobricks-ice.tpf
+  name: BioBricks ICE TPF
+  description: Triple Pattern Fragments endpoint for BioBricks ICE
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/biobricks-ice
+  original_source:
+  - biobricks-ice
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 BioBricks ICE
 

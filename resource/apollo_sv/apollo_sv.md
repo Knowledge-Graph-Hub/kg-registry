@@ -32,7 +32,7 @@ products:
   format: owl
   id: apollo_sv.owl
   name: apollo_sv.owl
-  product_file_size: 266319
+  product_file_size: 264551
   product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
 repository: https://github.com/ApolloDev/apollo-sv
 ---

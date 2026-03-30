@@ -34,28 +34,28 @@ products:
   format: owl
   id: fovt.owl
   name: fovt.owl
-  product_file_size: 2417022
+  product_file_size: 2587818
   product_url: http://purl.obolibrary.org/obo/fovt.owl
 - category: OntologyProduct
   description: FuTRES Ontology of Vertebrate Traits in OBO format
   format: obo
   id: fovt.obo
   name: fovt.obo
-  product_file_size: 1539512
+  product_file_size: 1628339
   product_url: http://purl.obolibrary.org/obo/fovt.obo
 - category: OntologyProduct
   description: FuTRES Ontology of Vertebrate Traits in OWL format
   format: owl
   id: fovt.fovt-base.owl
   name: fovt.fovt-base.owl
-  product_file_size: 76581
+  product_file_size: 81796
   product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
 - category: OntologyProduct
   description: FuTRES Ontology of Vertebrate Traits in OBO format
   format: obo
   id: fovt.fovt-base.obo
   name: fovt.fovt-base.obo
-  product_file_size: 33174
+  product_file_size: 36309
   product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
 repository: https://github.com/futres/fovt
 ---

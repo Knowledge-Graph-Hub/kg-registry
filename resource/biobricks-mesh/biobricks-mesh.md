@@ -5,13 +5,19 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Tom Luechtefeld
+  contact_details:
+  - contact_type: email
+    value: tom@insilica.co
+  - contact_type: github
+    value: tomlue
+- category: Individual
   contact_details:
   - contact_type: email
     value: tom@insilica.co
   label: Tom Luechtefeld
 description: BioBricks MeSH is an open knowledge graph of Medical Subject Headings
-  (MeSH) biomedical vocabulary, providing structured access to the NLM's controlled
-  vocabulary thesaurus.
+  (MeSH) biomedical vocabulary.
 domains:
 - biomedical
 - health
@@ -27,9 +33,16 @@ products:
   original_source:
   - biobricks-mesh
   product_url: https://frink.apps.renci.org/biobricks-mesh/sparql
+- id: biobricks-mesh.tpf
+  name: BioBricks MeSH TPF
+  description: Triple Pattern Fragments endpoint for BioBricks MeSH
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/biobricks-mesh
+  original_source:
+  - biobricks-mesh
 repository: https://github.com/biobricks-ai/mesh-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 BioBricks MeSH
 

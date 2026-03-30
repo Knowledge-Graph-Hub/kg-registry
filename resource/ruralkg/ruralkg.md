@@ -5,17 +5,23 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Jiaqi Gong
+  contact_details:
+  - contact_type: email
+    value: jiaqi.gong@ua.edu
+  - contact_type: github
+    value: SAIL-UA
+- category: Individual
   contact_details:
   - contact_type: email
     value: jiaqi.gong@ua.edu
   label: Jiaqi Gong
 description: Rural Resilience KG is a cross-domain knowledge graph to integrate health
-  and justice for rural resilience, connecting data about healthcare access, legal
-  services, and community resources in rural areas.
+  and justice for rural resilience.
 domains:
 - health
 - social determinants
-homepage_url: https://frink.apps.renci.org/ruralkg/sparql
+homepage_url: https://frink.renci.org/registry/kgs/rural-kg/
 id: ruralkg
 layout: resource_detail
 name: Rural Resilience KG
@@ -27,8 +33,15 @@ products:
   original_source:
   - ruralkg
   product_url: https://frink.apps.renci.org/ruralkg/sparql
+- id: ruralkg.tpf
+  name: Rural Resilience KG TPF
+  description: Triple Pattern Fragments endpoint for Rural Resilience KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/ruralkg
+  original_source:
+  - ruralkg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 Rural Resilience KG
 

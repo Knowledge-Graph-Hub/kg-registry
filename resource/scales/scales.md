@@ -19,8 +19,7 @@ contacts:
     value: scottgdaniel
   label: Scott Daniel
 description: SCALES is an integrated justice platform to connect criminal justice
-  data across data silos, enabling comprehensive analysis of court records, sentencing
-  data, and legal outcomes.
+  data across data silos.
 domains:
 - social determinants
 homepage_url: https://scales-okn.org/
@@ -35,8 +34,15 @@ products:
   original_source:
   - scales
   product_url: https://frink.apps.renci.org/scales/sparql
+- id: scales.tpf
+  name: SCALES TPF
+  description: Triple Pattern Fragments endpoint for SCALES
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/scales
+  original_source:
+  - scales
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 SCALES
 

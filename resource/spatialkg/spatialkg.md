@@ -30,8 +30,15 @@ products:
   original_source:
   - spatialkg
   product_url: https://frink.apps.renci.org/spatialkg/sparql
+- id: spatialkg.tpf
+  name: SAWGraph Spatial KG TPF
+  description: Triple Pattern Fragments endpoint for SAWGraph Spatial KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/spatialkg
+  original_source:
+  - spatialkg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 ---
 SAWGraph Spatial KG
 

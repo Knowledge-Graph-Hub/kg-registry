@@ -33,14 +33,14 @@ products:
   format: owl
   id: trans.owl
   name: trans.owl
-  product_file_size: 4176
+  product_file_size: 4172
   product_url: http://purl.obolibrary.org/obo/trans.owl
 - category: OntologyProduct
   description: Pathogen Transmission Ontology in OBO format
   format: obo
   id: trans.obo
   name: trans.obo
-  product_file_size: 2508
+  product_file_size: 2629
   product_url: http://purl.obolibrary.org/obo/trans.obo
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 ---

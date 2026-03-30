@@ -1,7 +1,16 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+collection:
+- okn
 contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: balhoff@renci.org
+  - contact_type: github
+    value: balhoff
+  label: Jim Balhoff
 - category: Organization
   contact_details:
   - contact_type: email
@@ -12,19 +21,13 @@ contacts:
   label: Wikimedia Foundation
 creation_date: '2025-10-31T00:00:00Z'
 description: Wikidata is a free and open knowledge base that can be read and edited
-  by both humans and machines. Acting as central storage for the structured data of
-  Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource,
-  and others, it contains over 119 million data items that anyone can edit. Wikidata
-  provides structured, machine-readable data under a free license (CC0), supports
-  multilingual content, and can be interlinked with other open data sets on the linked
-  data web. The content is available through standard formats, SPARQL queries, and
-  APIs.
+  by both humans and machines
 domains:
 - general
 homepage_url: https://www.wikidata.org/
 id: wikidata
 infores_id: wikidata
-last_modified_date: '2026-02-04T00:00:00Z'
+last_modified_date: '2026-03-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -39,12 +42,13 @@ products:
   name: Wikidata Web Portal
   product_url: https://www.wikidata.org/
 - category: ProgrammingInterface
-  description: SPARQL endpoint for querying Wikidata using semantic web query language,
-    enabling complex queries across the knowledge graph
+  description: SPARQL endpoint for Wikidata
   format: http
   id: wikidata.sparql
-  name: Wikidata SPARQL Query Service
-  product_url: https://query.wikidata.org/sparql
+  name: Wikidata SPARQL
+  original_source:
+  - wikidata
+  product_url: https://frink.apps.renci.org/wikidata/sparql
 - category: GraphicalInterface
   description: Interactive web-based SPARQL query editor with example queries, visualization
     tools, and query assistance for exploring Wikidata
@@ -140,7 +144,6 @@ products:
   name: ID Mappings SPARQL
   original_source:
   - identifier-mappings
-  - wikidata
   product_url: https://frink.apps.renci.org/identifier-mappings/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for ID Mappings
@@ -148,7 +151,6 @@ products:
   name: ID Mappings TPF
   original_source:
   - identifier-mappings
-  - wikidata
   product_url: https://frink.apps.renci.org/ldf/identifier-mappings
 - category: Product
   description: Databus collection for the latest core DBpedia release used by the
@@ -188,6 +190,13 @@ products:
   product_url: https://orkg.org/api/rdf/dump
   secondary_source:
   - orkg
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for Wikidata
+  id: wikidata.tpf
+  name: Wikidata TPF
+  original_source:
+  - wikidata
+  product_url: https://frink.apps.renci.org/ldf/wikidata
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:
 - Wikidata

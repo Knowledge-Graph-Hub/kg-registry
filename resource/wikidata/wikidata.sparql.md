@@ -1,10 +1,11 @@
 ---
 category: ProgrammingInterface
-description: SPARQL endpoint for querying Wikidata using semantic web query language,
-  enabling complex queries across the knowledge graph
+description: SPARQL endpoint for Wikidata
 format: http
 id: wikidata.sparql
-name: Wikidata SPARQL Query Service
-product_url: https://query.wikidata.org/sparql
+name: Wikidata SPARQL
+original_source:
+- wikidata
+product_url: https://frink.apps.renci.org/wikidata/sparql
 layout: product_detail
 ---
