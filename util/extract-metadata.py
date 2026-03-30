@@ -676,56 +676,56 @@ def concat_resource_yaml(args):
         for obj in objs:
             if obj["id"] not in to_be_propagated:
                 continue
-                total_written = 0
+            total_written = 0
 
-                if "products" not in obj:
-                    obj["products"] = []
-                fn = f"resource/{obj['id']}/{obj['id']}.md"
-                (metadata, md) = load_md(fn)
-                if "products" not in metadata:
-                    metadata["products"] = []
-                elif not isinstance(metadata["products"], list):
-                    metadata["products"] = [metadata["products"]] if metadata["products"] else []
+            if "products" not in obj:
+                obj["products"] = []
+            fn = f"resource/{obj['id']}/{obj['id']}.md"
+            (metadata, md) = load_md(fn)
+            if "products" not in metadata:
+                metadata["products"] = []
+            elif not isinstance(metadata["products"], list):
+                metadata["products"] = [metadata["products"]] if metadata["products"] else []
 
-                obj_product_ids = {
-                    existing_product["id"]
-                    for existing_product in obj["products"]
-                    if isinstance(existing_product, dict) and "id" in existing_product
-                }
-                metadata_product_ids = {
-                    existing_product["id"]
-                    for existing_product in metadata["products"]
-                    if isinstance(existing_product, dict) and "id" in existing_product
-                }
-                metadata_changed = False
+            obj_product_ids = {
+                existing_product["id"]
+                for existing_product in obj["products"]
+                if isinstance(existing_product, dict) and "id" in existing_product
+            }
+            metadata_product_ids = {
+                existing_product["id"]
+                for existing_product in metadata["products"]
+                if isinstance(existing_product, dict) and "id" in existing_product
+            }
+            metadata_changed = False
 
-                # Do the writing here
-                for product in to_be_propagated[obj["id"]]:
-                    if "id" in product:
-                        product_id = product["id"]
-                        if product_id not in obj_product_ids:
-                            obj["products"].append(product)
-                            obj_product_ids.add(product_id)
-                            total_written += 1
-                        if product_id not in metadata_product_ids:
-                            metadata["products"].append(product)
-                            metadata_product_ids.add(product_id)
-                            metadata_changed = True
-                    else:
-                        # Fall back to full object comparison if no ID exists
-                        if product not in obj["products"]:
-                            obj["products"].append(product)
-                            total_written += 1
-                        if product not in metadata["products"]:
-                            metadata["products"].append(product)
-                            metadata_changed = True
+            # Do the writing here
+            for product in to_be_propagated[obj["id"]]:
+                if "id" in product:
+                    product_id = product["id"]
+                    if product_id not in obj_product_ids:
+                        obj["products"].append(product)
+                        obj_product_ids.add(product_id)
+                        total_written += 1
+                    if product_id not in metadata_product_ids:
+                        metadata["products"].append(product)
+                        metadata_product_ids.add(product_id)
+                        metadata_changed = True
+                else:
+                    # Fall back to full object comparison if no ID exists
+                    if product not in obj["products"]:
+                        obj["products"].append(product)
+                        total_written += 1
+                    if product not in metadata["products"]:
+                        metadata["products"].append(product)
+                        metadata_changed = True
 
-                if metadata_changed:
-                    with open(fn, "w") as f:
-                        f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+            if metadata_changed:
+                with open(fn, "w") as f:
+                    f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
 
-                if total_written > 0:
-                    print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
+            if total_written > 0:
+                print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
 
     def sync_product_references(objs):
         """Ensure that any product referenced on non-owning resource pages is kept byte-for-byte
