@@ -1,5 +1,7 @@
 """Test FRINK registry transformation and merge behavior."""
 
+import copy
+
 def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
     resource = frink_syncer.transform_frink_to_kg_registry(frink_entry_example)
 
@@ -9,6 +11,7 @@ def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
     assert resource["homepage_url"] == "https://example.org/prokn"
     assert resource["category"] == "KnowledgeGraph"
     assert resource["collection"] == ["okn"]
+    assert resource["domains"] == ["general"]
     assert resource["contacts"] == [
         {
             "category": "Individual",
@@ -61,3 +64,19 @@ def test_merge_preserves_existing_graph_products_and_adds_frink_endpoints(
     assert merged_products["prokn.sparql"]["product_url"] == "https://frink.apps.renci.org/prokn/sparql"
     assert merged_products["prokn.sparql"]["original_source"] == ["prokn"]
     assert merged_products["prokn.tpf"]["product_url"] == "https://frink.apps.renci.org/ldf/prokn"
+
+
+def test_merge_backfills_missing_domains_from_frink_sync(
+    frink_syncer,
+    frink_existing_resource_example,
+    frink_synced_resource_example,
+):
+    existing_without_domains = copy.deepcopy(frink_existing_resource_example)
+    existing_without_domains.pop("domains", None)
+
+    merged = frink_syncer.merge_resource_metadata(
+        existing_without_domains,
+        frink_synced_resource_example,
+    )
+
+    assert merged["domains"] == ["general"]

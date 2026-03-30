@@ -168,6 +168,7 @@ class FRINKSync:
             "contacts": contacts,
             "products": products,
             "collection": ["okn"],
+            "domains": ["general"],
             "layout": "resource_detail",
             "category": "KnowledgeGraph",
         }
@@ -323,6 +324,9 @@ class FRINKSync:
         merged["collection"] = self._merge_unique_lists(
             existing_metadata.get("collection"), synced_metadata.get("collection")
         )
+        merged["domains"] = self._merge_domains(
+            existing_metadata.get("domains"), synced_metadata.get("domains")
+        )
         merged["contacts"] = self.merge_contacts(
             existing_metadata.get("contacts"), synced_metadata.get("contacts")
         )
@@ -339,6 +343,20 @@ class FRINKSync:
             if item not in merged:
                 merged.append(item)
         return merged
+
+    def _merge_domains(self, existing: Any, synced: Any) -> List[str]:
+        existing_domains = [domain for domain in existing or [] if isinstance(domain, str)]
+        synced_domains = [domain for domain in synced or [] if isinstance(domain, str)]
+
+        if existing_domains:
+            # Treat FRINK's fallback "general" domain as a backfill for missing data,
+            # not as a domain to append to curated resource annotations.
+            if synced_domains == ["general"]:
+                cleaned_existing = [domain for domain in existing_domains if domain != "general"]
+                return cleaned_existing or ["general"]
+            return self._merge_unique_lists(existing_domains, synced_domains)
+
+        return synced_domains
 
     def _metadata_for_compare(self, metadata: Dict[str, Any]) -> Dict[str, Any]:
         comparable = copy.deepcopy(metadata)
