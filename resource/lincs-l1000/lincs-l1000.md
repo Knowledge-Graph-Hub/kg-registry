@@ -54,8 +54,6 @@ products:
   name: LINCS L1000 GEO Dataset
   product_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2025-11-10_ Timeout connecting
     to URL
 - category: GraphProduct
@@ -230,7 +228,6 @@ repository: https://github.com/cmap/l1000-jupyter
 taxon:
 - NCBITaxon:9606
 ---
-
 ## Overview
 
 The LINCS L1000 platform represents a major advance in high-throughput transcriptional profiling technology. By measuring only 978 carefully selected "landmark" genes and using computational inference for the remaining transcriptome, L1000 achieves dramatic cost reduction (approximately $2 per sample) while maintaining high reproducibility and comparability to RNA-seq. This breakthrough enabled the generation of over 1.3 million gene expression profiles as part of the NIH LINCS Program, creating one of the largest publicly available transcriptional profiling resources.

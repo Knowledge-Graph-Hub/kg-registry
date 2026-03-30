@@ -1,6 +1,7 @@
 ---
 activity_status: active
 category: DataSource
+creation_date: '2025-07-08T00:00:00Z'
 description: COMPARTMENTS is an evidence-weighted subcellular localization knowledge
   resource that integrates experimental data, manual curation, high-throughput localization
   screens, automatic text mining, and sequence-based predictions to assign proteins
@@ -10,6 +11,7 @@ domains:
 - systems biology
 - biological systems
 id: compartments
+last_modified_date: '2026-01-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -74,10 +76,12 @@ products:
   name: COMPARTMENTS Bulk Downloads
   product_url: https://compartments.jensenlab.org/Downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -457,7 +461,5 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-creation_date: '2025-07-08T00:00:00Z'
-last_modified_date: '2026-01-30T00:00:00Z'
 ---
 # COMPARTMENTS

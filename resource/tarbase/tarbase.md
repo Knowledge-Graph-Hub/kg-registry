@@ -95,12 +95,10 @@ products:
   name: Help Documentation
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -110,12 +108,10 @@ products:
   name: Downloads Documentation
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface

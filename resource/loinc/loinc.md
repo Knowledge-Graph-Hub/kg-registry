@@ -58,8 +58,6 @@ products:
   - loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 503 error
@@ -73,8 +71,6 @@ products:
   - loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 503 error
@@ -88,8 +84,6 @@ products:
   - loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 503 error
@@ -238,10 +232,12 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
-    to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
     to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
+    to URL: Exceeded 30 redirects.'
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.1093/nar/gkad1044
   journal: Nucleic Acids Research

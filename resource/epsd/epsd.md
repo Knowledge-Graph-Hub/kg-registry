@@ -52,11 +52,6 @@ products:
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fd6e7ba18b0>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fe0f52798d0>: Failed to establish a new connection: [Errno 111] Connection
-    refused''))'
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -80,11 +75,6 @@ products:
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fd6e7ba1ee0>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fe0f79e7820>: Failed to establish a new connection: [Errno 111] Connection
-    refused''))'
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -108,11 +98,6 @@ products:
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fd6e7ba1a90>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fe0f1bcc430>: Failed to establish a new connection: [Errno 111] Connection
-    refused''))'
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -138,11 +123,6 @@ products:
     with url_ /Download.php (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fd6e7e34050>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
-    exceeded with url: /Download.php (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fe0f79e4df0>: Failed to establish a new connection: [Errno 111] Connection
-    refused''))'
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_

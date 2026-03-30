@@ -34,23 +34,6 @@ products:
   name: GENO
   product_file_size: 172287
   product_url: http://purl.obolibrary.org/obo/geno.owl
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
 repository: https://github.com/monarch-initiative/GENO-ontology
 ---
 ## Description
