@@ -56,10 +56,11 @@ SCHEMA_DOC_DIR = docs/schema
 SCHEMA_DIR = src/kg_registry/kg_registry_schema
 
 ### Main Tasks
-.PHONY: all pull_and_build test pull clean sync-obo-foundry quality-dashboard
+.PHONY: all pull_and_build test pull clean sync-obo-foundry sync-frink quality-dashboard
 
 all: \
 	ingest-kg-monarch \
+	sync-frink \
 	sync-obo-foundry \
 	_config.yml \
 	registry/kgs.jsonld \
@@ -94,6 +95,18 @@ integration-test: test valid-purl-report.txt
 ingest-kg-monarch:
 	$(RUN) python src/kg_registry/ingests/kg-monarch/kg-monarch.py
 
+# Sync FRINK OKN registry graphs to KG-Registry
+.PHONY: sync-frink sync-frink-dry-run sync-frink-test
+
+sync-frink-dry-run:
+	$(RUN) python util/sync_frink.py --dry-run --verbose
+
+sync-frink-test:
+	$(RUN) python util/sync_frink.py --limit 5 --verbose
+
+sync-frink:
+	$(RUN) python util/sync_frink.py --verbose
+
 # Sync OBO Foundry ontologies to KG-Registry
 .PHONY: sync-obo-foundry sync-obo-foundry-dry-run sync-obo-foundry-test
 
@@ -124,7 +137,7 @@ clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 clean-cache:
-	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
+	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -198,7 +211,7 @@ registry/kgs.ttl: registry/kgs.yml
 # Validation uses parallel execution by default (5-10x faster)
 # Set PARALLEL_VALIDATION=no to use sequential validation
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-obo-foundry | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-frink sync-obo-foundry | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid
