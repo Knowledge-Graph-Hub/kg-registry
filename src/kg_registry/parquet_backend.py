@@ -9,9 +9,9 @@ import duckdb
 import yaml
 
 try:
-    from yaml import CSafeLoader as SafeLoader
+    from yaml import CSafeLoader
 except ImportError:
-    from yaml import SafeLoader
+    CSafeLoader = None
 
 get_adapter = None
 Edge = None
@@ -22,6 +22,13 @@ __all__ = [
     "sync_yaml_to_parquet",
     "create_database",
 ]
+
+
+def _get_yaml_loader() -> Any:
+    """Return the fastest available safe YAML loader."""
+    if CSafeLoader is not None:
+        return CSafeLoader
+    return yaml.SafeLoader
 
 
 class ParquetBackend:
@@ -110,7 +117,7 @@ class ParquetBackend:
             Number of resources synced
         """
         with open(yaml_file, "r", encoding="utf-8") as f:
-            data = yaml.load(f, Loader=SafeLoader)
+            data = yaml.load(f, Loader=_get_yaml_loader())
 
         if not data or "resources" not in data:
             return 0
@@ -247,7 +254,7 @@ class ParquetBackend:
         """Build rows for the resource_products table."""
         resource_id = resource.get("id")
         products = resource.get("products", [])
-        rows = []
+        rows: List[tuple[Any, ...]] = []
         if not resource_id:
             return rows
 
