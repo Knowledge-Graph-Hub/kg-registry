@@ -76,12 +76,10 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+    header found
 - category: Product
   compression: gzip
   description: RDF version of the MetaNetX data for semantic web applications

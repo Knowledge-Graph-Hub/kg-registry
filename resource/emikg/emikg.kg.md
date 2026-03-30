@@ -11,8 +11,6 @@ original_source:
 - try
 product_url: https://doi.org/10.5281/zenodo.17079767
 repository: https://github.com/earth-metabolome-initiative/metrin-kg
-warnings:
-- File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

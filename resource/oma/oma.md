@@ -117,16 +117,16 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
-    when accessing file'
 - category: Product
   compression: gzip
   description: Pairwise orthologs in tab-separated text format
@@ -229,14 +229,14 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
+    accessing file
 - category: Product
   compression: gzip
   description: OMA data in RDF format (Turtle syntax)

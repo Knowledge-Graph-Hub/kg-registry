@@ -92,6 +92,13 @@ products:
   name: TraitBank Documentation
   product_url: https://eol.org/docs/what-is-eol/data-services
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-02-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''eol.org'', port=443): Max retries exceeded
+    with url: /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
   - File was not able to be retrieved when checked on 2026-02-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
     url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
@@ -109,18 +116,11 @@ products:
     url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-02-26: Error connecting
-    to URL: HTTPSConnectionPool(host=''eol.org'', port=443): Max retries exceeded
-    with url: /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
 publications:
 - authors:
   - Adams B
   - Franz N
-  - König-Ries B
+  - "K\xF6nig-Ries B"
   - McGuinness D
   - Schildhauer M
   - Parr CS
@@ -153,7 +153,7 @@ publications:
   - Kataoka C
   - Lara MJ
   - Maney D
-  - Martínez-Meyer E
+  - "Mart\xEDnez-Meyer E"
   - Measey J
   - Rapp C
   - Sarkar I

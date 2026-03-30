@@ -42,10 +42,10 @@ products:
   - hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
+    to URL'
 - category: Product
   description: All metabolite metabolizing enzyme gene sequences (FASTA)
   format: fasta
@@ -66,10 +66,10 @@ products:
   - hmdb
   product_url: https://www.hmdb.ca/downloads#structures
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
+    to URL'
 - category: Product
   description: All metabolites dataset (XML)
   format: xml

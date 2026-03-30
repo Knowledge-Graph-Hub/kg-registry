@@ -9,8 +9,6 @@ original_source:
 product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
 secondary_source:
 - ttd
-warnings:
-- File was not able to be retrieved when checked on 2025-10-29_ Error connecting to
-  URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+warnings: []
 layout: product_detail
 ---

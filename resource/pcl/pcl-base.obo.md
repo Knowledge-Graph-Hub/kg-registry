@@ -5,5 +5,8 @@ format: obo
 id: pcl-base.obo
 name: pcl-base.obo
 product_url: http://purl.obolibrary.org/obo/pcl-base.obo
+warnings:
+- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+  to URL
 layout: product_detail
 ---

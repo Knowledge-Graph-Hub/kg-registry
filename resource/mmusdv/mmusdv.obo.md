@@ -4,6 +4,7 @@ description: Mouse Developmental Stages in OBO format
 format: obo
 id: mmusdv.obo
 name: mmusdv.obo
+product_file_size: 104741
 product_url: http://purl.obolibrary.org/obo/mmusdv.obo
 layout: product_detail
 ---
