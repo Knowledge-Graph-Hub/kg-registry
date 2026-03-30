@@ -31,6 +31,13 @@ INACTIVE_STATUSES = ["inactive", "orphaned", "unresponsive"]
 metadata_grid = {}
 
 
+def build_validator(schema):
+    """Build and cache a concrete JSON Schema validator for repeated resource checks."""
+    validator_cls = jsonschema.validators.validator_for(schema)
+    validator_cls.check_schema(schema)
+    return validator_cls(schema)
+
+
 def main():
     global metadata_grid
     parser = ArgumentParser(
@@ -59,8 +66,10 @@ def main():
     # Load in the YAML and the JSON schemas that we will need:
     data = load_data(yaml_infile)
     schema = get_schema()
+    validator = build_validator(schema)
 
     results = {"error": [], "warn": [], "info": []}
+    validate_func = lambda item, schema_obj: validate_metadata(item, schema_obj, validator=validator)
 
     # Check if parallel validation is enabled
     use_parallel = os.environ.get('PARALLEL_VALIDATION', 'yes').lower() == 'yes'
@@ -71,7 +80,7 @@ def main():
         results = validate_resources_parallel(
             data["resources"],
             schema,
-            validate_metadata,
+            validate_func,
             update_results,
             max_workers=max_workers
         )
@@ -85,7 +94,7 @@ def main():
             print(f"Using sequential validation for {len(data['resources'])} resources (< 50 resources)")
         
         for item in data["resources"]:
-            add = validate_metadata(item, schema)
+            add = validate_func(item, schema)
             results = update_results(results, add)
 
     # save the metadata-grid with ALL results
@@ -128,7 +137,7 @@ def get_schema():
     return schema
 
 
-def validate_metadata(item, schema):
+def validate_metadata(item, schema, validator=None):
     """Given an item and a schema, validate the item against the
     schema. Add the full results to the metadata_grid and return a map of
     errors, warnings, and infos for any active resources."""
@@ -153,7 +162,9 @@ def validate_metadata(item, schema):
     has_warn = False
     has_info = False
     try:
-        jsonschema.validate(item, schema)
+        if validator is None:
+            validator = build_validator(schema)
+        validator.validate(item)
     except jsonschema.exceptions.ValidationError as ve:
         title = list(ve.absolute_schema_path)[0]  # Find the named section within the schema
         if title == "required":

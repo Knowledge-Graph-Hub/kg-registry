@@ -232,9 +232,7 @@ def concat_resource_yaml(args):
                     if "id" in product and (product["id"]).startswith(obj["id"]):
                         fn = f"resource/{obj['id']}/{product['id']}.md"
                         file_path = pathlib.Path(fn)
-
-                        # Create a copy of the product to add layout
-                        product_with_layout = deepcopy(product)
+                        product_for_page = sanitize_product_for_page(product)
 
                         # Check if file exists
                         if file_path.exists():
@@ -247,14 +245,13 @@ def concat_resource_yaml(args):
                                 if "layout" in existing_product_copy:
                                     del existing_product_copy["layout"]
 
-                                # Compare content (ignoring order)
-                                if yaml.dump(sorted(product.items())) == yaml.dump(sorted(existing_product_copy.items())):
+                                if product_for_page == existing_product_copy:
                                     continue
                                 else:
                                     print(
                                         f"Updating page for product {product['id']} - content changed")
                                     # Show what's different
-                                    product_keys = set(product.keys())
+                                    product_keys = set(product_for_page.keys())
                                     existing_keys = set(existing_product_copy.keys())
 
                                     # Show added or removed keys
@@ -268,7 +265,7 @@ def concat_resource_yaml(args):
                                     # Show changed values for common keys
                                     common_keys = product_keys.intersection(existing_keys)
                                     for key in common_keys:
-                                        if product[key] != existing_product_copy.get(key):
+                                        if product_for_page[key] != existing_product_copy.get(key):
                                             print(f"  Changed '{key}'")
                             except Exception as e:
                                 print(
@@ -276,23 +273,11 @@ def concat_resource_yaml(args):
                         else:
                             print(f"Creating new page for product {product['id']}")
 
-                        # Write the product to its own page
-                        # Sanitize any warning strings to avoid raw colons that could confuse downstream YAML parsing
-                        if isinstance(product, dict) and product.get("warnings"):
-                            sanitized = []
-                            for w in product["warnings"]:
-                                if isinstance(w, str):
-                                    # Replace colon characters with underscores for safety
-                                    sanitized.append(w.replace(":", "_"))
-                                else:
-                                    sanitized.append(w)
-                            product["warnings"] = sanitized
-
                         # Ensure directory exists before writing file
                         file_path.parent.mkdir(parents=True, exist_ok=True)
 
                         with open(fn, "w") as f:
-                            f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
+                            f.write("---\n" + yaml.dump(product_for_page) + layout_string + "\n---\n")
 
     def _normalize_warning_msg(msg: str) -> str:
         """Return a normalized warning string with dates and extra whitespace removed for similarity grouping."""
@@ -618,8 +603,12 @@ def concat_resource_yaml(args):
                                     if resource_id not in to_be_propagated:
                                         to_be_propagated[resource_id] = []
                                     to_be_propagated[resource_id].append(deepcopy(product))
-        print(
-            f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
+        if len(to_be_propagated) > 20:
+            print(f"Found {len(to_be_propagated)} resources with products to propagate")
+        else:
+            print(
+                f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}"
+            )
 
         # Remove duplicate products from all resources first
         for obj in objs:
@@ -677,66 +666,63 @@ def concat_resource_yaml(args):
 
         # Now update the concatenated list of resources
         # And write newly added products to their respective Resource pages
-        print("Cross-resource references:")
-        print("Resource Name\tCount of products referencing")
-        for obj in objs:
-            if obj["id"] in to_be_propagated:
-                print(f"{obj['id']}\t{len(to_be_propagated[obj['id']])}")
+        if len(to_be_propagated) <= 25:
+            print("Cross-resource references:")
+            print("Resource Name\tCount of products referencing")
+            for obj in objs:
+                if obj["id"] in to_be_propagated:
+                    print(f"{obj['id']}\t{len(to_be_propagated[obj['id']])}")
 
+        for obj in objs:
+            if obj["id"] not in to_be_propagated:
+                continue
                 total_written = 0
 
                 if "products" not in obj:
                     obj["products"] = []
+                fn = f"resource/{obj['id']}/{obj['id']}.md"
+                (metadata, md) = load_md(fn)
+                if "products" not in metadata:
+                    metadata["products"] = []
+                elif not isinstance(metadata["products"], list):
+                    metadata["products"] = [metadata["products"]] if metadata["products"] else []
+
+                obj_product_ids = {
+                    existing_product["id"]
+                    for existing_product in obj["products"]
+                    if isinstance(existing_product, dict) and "id" in existing_product
+                }
+                metadata_product_ids = {
+                    existing_product["id"]
+                    for existing_product in metadata["products"]
+                    if isinstance(existing_product, dict) and "id" in existing_product
+                }
+                metadata_changed = False
 
                 # Do the writing here
                 for product in to_be_propagated[obj["id"]]:
-                    # Check if a product with the same ID already exists
-                    product_exists = False
                     if "id" in product:
                         product_id = product["id"]
-                        # Check in the concatenated list of resources
-                        for existing_product in obj["products"]:
-                            if "id" in existing_product and existing_product["id"] == product_id:
-                                product_exists = True
-                                break
-
-                        if not product_exists:
+                        if product_id not in obj_product_ids:
                             obj["products"].append(product)
+                            obj_product_ids.add(product_id)
                             total_written += 1
+                        if product_id not in metadata_product_ids:
+                            metadata["products"].append(product)
+                            metadata_product_ids.add(product_id)
+                            metadata_changed = True
                     else:
                         # Fall back to full object comparison if no ID exists
                         if product not in obj["products"]:
                             obj["products"].append(product)
                             total_written += 1
-
-                    # Write to the respective Resource page
-                    fn = f"resource/{obj['id']}/{obj['id']}.md"
-                    (metadata, md) = load_md(fn)
-                    if "products" not in metadata:
-                        metadata["products"] = []
-                    elif not isinstance(metadata["products"], list):
-                        metadata["products"] = [metadata["products"]
-                                                ] if metadata["products"] else []
-
-                    # Check if a product with the same ID already exists in the Resource page
-                    metadata_product_exists = False
-                    if "id" in product:
-                        product_id = product["id"]
-                        for existing_product in metadata["products"]:
-                            if isinstance(existing_product, dict) and "id" in existing_product and existing_product["id"] == product_id:
-                                metadata_product_exists = True
-                                break
-
-                        if not metadata_product_exists:
-                            metadata["products"].append(product)
-                            with open(fn, "w") as f:
-                                f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
-                    else:
-                        # Fall back to full object comparison if no ID exists
                         if product not in metadata["products"]:
                             metadata["products"].append(product)
-                            with open(fn, "w") as f:
-                                f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                            metadata_changed = True
+
+                if metadata_changed:
+                    with open(fn, "w") as f:
+                        f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
 
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
@@ -1258,6 +1244,18 @@ def load_md(fn):
     onto_stuff = frontmatter.load(fn)
 
     return (onto_stuff.metadata, onto_stuff.content)
+
+
+def sanitize_product_for_page(product):
+    """Return a copy of a product normalized for standalone product-page storage."""
+    product_for_page = deepcopy(product)
+    warnings = product_for_page.get("warnings")
+    if isinstance(warnings, list):
+        product_for_page["warnings"] = [
+            warning.replace(":", "_") if isinstance(warning, str) else warning
+            for warning in warnings
+        ]
+    return product_for_page
 
 
 def get_YAML_text(fn):
