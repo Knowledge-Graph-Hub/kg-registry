@@ -14,6 +14,12 @@ For more on this, see [Ehrlinger and Wöß 2016.](https://ceur-ws.org/Vol-1695/p
 
 The Knowledge Graph Registry is intended to provide metadata about knowledge graphs, their sources, and their contents.
 
+## How is KG-Registry licensed?
+
+The curated registry data are made available under the CC0 1.0 Universal waiver. The repository source code is made available under the BSD 3-Clause license.
+
+See the repository root license files for the full license text: `LICENSE-code.md` for the curated data and `LICENSE.md` for the source code.
+
 ## What types of things are in the Registry?
 
 - **Resources**: These represent top-level entries for knowledge graph and data sources. [More detail here.](resources.html)
