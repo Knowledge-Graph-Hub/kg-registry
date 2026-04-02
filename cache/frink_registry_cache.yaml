@@ -613,6 +613,22 @@
   template: overrides/kg.html
   title: Rare Disease Knowledge Graph
 - contacts:
+  - email: johnbeve@buffalo.edu
+    github: johnbeve
+    label: John Beverley
+  - email: rhurley3@buffalo.edu
+    github: Regina-Hurley
+    label: Regina Hurley
+  description: Knowledge graph Promoting Healthy Aging through Semantic Enrichment
+  frink-options:
+    documentation-path: phases-kg
+    lakefs-repo: phases-kg
+  funding: https://reporter.nih.gov/project-details/11184405
+  homepage: https://healthyphases.org/
+  shortname: phaseskg
+  template: overrides/kg.html
+  title: PHASES KG
+- contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
     label: Katrina Schweikert

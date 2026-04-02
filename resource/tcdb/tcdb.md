@@ -54,6 +54,8 @@ products:
     to URL
   - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
+    to URL'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
     but this endpoint serves data, not Python source code.
@@ -73,6 +75,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
@@ -94,6 +98,8 @@ products:
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -105,6 +111,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
@@ -118,6 +126,8 @@ products:
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
     ends in .py, but this endpoint serves data, not Python source code.
@@ -129,6 +139,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
     header found'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

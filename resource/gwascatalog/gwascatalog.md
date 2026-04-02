@@ -72,6 +72,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
     entries
@@ -96,6 +98,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
     Factor Ontology terms
@@ -109,6 +113,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
     when accessing file'
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -124,6 +130,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
     (current release)
@@ -138,6 +146,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
   format: svg
@@ -150,6 +160,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
@@ -452,6 +464,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
 ---
 ## Overview

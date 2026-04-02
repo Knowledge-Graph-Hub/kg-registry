@@ -89,6 +89,8 @@ products:
     header found
   - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 15356321
@@ -891,16 +893,81 @@ products:
   secondary_source:
   - kg-monarch
 - category: GraphProduct
-  description: KGX graph package for Alliance of Genome Resources (build alliance_8.2.0_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for Alliance of Genome Resources distributed
+    via the NCATS Translator release site (release 2026_03_06; build alliance_8.3.0_2023bb02_2025sep1_4.3.6;
+    source version 8.3.0; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 129701
+  format: kgx-jsonl
   id: translator.alliance.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator Alliance KGX Graph
+  node_count: 16157
   original_source:
   - alliance
-  product_url: https://stars.renci.org/var/translator/releases/alliance/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_06'
+  - alliance_8.3.0_2023bb02_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 taxon:
 - NCBITaxon:6239
 - NCBITaxon:7227

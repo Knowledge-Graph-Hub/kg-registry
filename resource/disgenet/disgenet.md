@@ -590,11 +590,13 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
-  - "Janet Pi\xF1ero"
-  - "Juan Manuel Ram\xEDrez-Anguita"
-  - "Josep Sa\xFCch-Pitarch"
+  - Janet Piñero
+  - Juan Manuel Ramírez-Anguita
+  - Josep Saüch-Pitarch
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz

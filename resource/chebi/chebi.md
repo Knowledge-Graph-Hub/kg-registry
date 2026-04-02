@@ -45,14 +45,14 @@ products:
   format: json
   id: chebi.json
   name: chebi.json
-  product_file_size: 506385117
+  product_file_size: 506456231
   product_url: http://purl.obolibrary.org/obo/chebi.json
 - category: OntologyProduct
   description: chebi, compressed owl
   format: owl
   id: chebi.owl.gz
   name: chebi, compressed owl
-  product_file_size: 62935653
+  product_file_size: 62947851
   product_url: http://purl.obolibrary.org/obo/chebi.owl.gz
 - category: OntologyProduct
   description: chebi_lite, no syns or xrefs
@@ -842,6 +842,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
   - 'File was not able to be retrieved when checked on 2026-03-30: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-04-02: FTP error: timed
     out'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump

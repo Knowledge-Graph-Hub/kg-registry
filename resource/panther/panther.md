@@ -7,6 +7,7 @@ contacts:
   - contact_type: email
     value: pantherfeedback@yahoo.com
   label: PANTHER
+creation_date: '2025-03-25T00:00:00Z'
 description: PANTHER is a Protein ANalysis THrough Evolutionary Relationships Classification
   System. The mission of the PANTHER knowledgebase is to support biomedical and other
   research by providing comprehensive information about the evolution of protein-coding
@@ -17,6 +18,7 @@ domains:
 homepage_url: https://www.pantherdb.org/
 id: panther
 infores_id: panther
+last_modified_date: '2026-01-23T00:00:00Z'
 layout: resource_detail
 name: PANTHER
 products:
@@ -860,18 +862,81 @@ products:
   secondary_source:
   - microbiomekg
 - category: GraphProduct
-  description: KGX graph package for PANTHER pathways (build panther_19.0_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for PANTHER distributed via the NCATS Translator
+    release site (release 2026_03_06; build panther_19.0_0b240030_2025sep1_4.3.6;
+    source version 19.0; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 135318
+  format: kgx-jsonl
   id: translator.panther.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator PANTHER KGX Graph
+  node_count: 66728
   original_source:
   - panther
-  product_url: https://stars.renci.org/var/translator/releases/panther/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_06'
+  - panther_19.0_0b240030_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 repository: https://data.pantherdb.org/ftp/
-creation_date: '2025-03-25T00:00:00Z'
-last_modified_date: '2026-01-23T00:00:00Z'
 ---
 PANTHER

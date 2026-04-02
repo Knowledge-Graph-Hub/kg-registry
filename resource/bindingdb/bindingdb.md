@@ -15,6 +15,7 @@ contacts:
     value: https://pharmacy.ucsd.edu/
   label: Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California
     San Diego
+creation_date: '2025-06-04T00:00:00Z'
 description: BindingDB is a public, web-accessible database of measured binding affinities
   between small, drug-like molecules and protein targets, focusing on the interactions
   of proteins with small, drug-like molecules. It contains 3.0M data points for 1.3M
@@ -29,6 +30,7 @@ fairsharing_id: FAIRsharing.3b36hk
 homepage_url: https://www.bindingdb.org/rwd/bind/index.jsp
 id: bindingdb
 infores_id: bindingdb
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.bindingdb.org/rwd/bind/info.jsp
@@ -428,6 +430,82 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for BindingDB distributed via the NCATS Translator
+    release site (release 2026_03_06; build bindingdb_202603_2f3418c8_2025sep1_4.3.6;
+    source version 202603; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 1045781
+  format: kgx-jsonl
+  id: translator.bindingdb.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator BindingDB KGX Graph
+  node_count: 736988
+  original_source:
+  - bindingdb
+  product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_06'
+  - bindingdb_202603_2f3418c8_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - authors:
   - Tiqing Liu
@@ -443,8 +521,6 @@ publications:
   title: 'BindingDB in 2024: a FAIR knowledgebase of protein-small molecule binding
     data'
   year: '2025'
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 # BindingDB
 

@@ -53,10 +53,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
     bioactive compounds
@@ -67,10 +69,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
   format: csv
@@ -80,10 +84,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
   format: csv
@@ -93,10 +99,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
     in the database
@@ -107,10 +115,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: RDF/linked data format of the GtoPdb data (target-ligand interactions
     with supporting information)
@@ -121,10 +131,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Complete PostgreSQL database dump of the current Guide to Pharmacology
     database
@@ -134,10 +146,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological
     access-point to GtoPdb data
@@ -247,16 +261,81 @@ products:
   secondary_source:
   - automat
 - category: GraphProduct
-  description: KGX graph package for Guide to Pharmacology (build gtopdb_20251215_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for GToPdb distributed via the NCATS Translator
+    release site (release 2026_03_19; build gtopdb_2026.1_4d453431_2025sep1_4.3.6;
+    source version 2026.1; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 18581
+  format: kgx-jsonl
   id: translator.gtopdb.graph
+  latest_version: '2026_03_19'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator GToPdb KGX Graph
+  node_count: 10644
   original_source:
   - gtopdb
-  product_url: https://stars.renci.org/var/translator/releases/gtopdb/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_19'
+  - gtopdb_2026.1_4d453431_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - authors:
   - Harding SD

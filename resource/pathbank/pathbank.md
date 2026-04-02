@@ -53,6 +53,9 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: CSV download of PathBank pathway subjects and descriptions from the
@@ -66,6 +69,9 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: zip
   description: BioPAX archive of PathBank pathway data from the official downloads
@@ -79,6 +85,9 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: zip
   description: SBML archive of PathBank pathway models from the official downloads
@@ -92,6 +101,9 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
+    to URL'
 - category: Product
   description: pathbank Nodes TSV
   format: tsv
@@ -106,6 +118,82 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.tsv
   secondary_source:
   - obo-db-ingest
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for Pathbank distributed via the NCATS Translator
+    release site (release 2026_03_27; build pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6;
+    source version 2019-09-13; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 1465291
+  format: kgx-jsonl
+  id: translator.pathbank.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator PathBank KGX Graph
+  node_count: 33443
+  original_source:
+  - pathbank
+  product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - doi: 10.1093/nar/gkad1041
   id: doi:10.1093/nar/gkad1041
@@ -116,7 +204,7 @@ publications:
 - doi: 10.1093/nar/gkz861
   id: doi:10.1093/nar/gkz861
   journal: Nucleic Acids Research
-  title: "PathBank: A Comprehensive Pathway Database for Model Organisms"
+  title: 'PathBank: A Comprehensive Pathway Database for Model Organisms'
   year: '2020'
 synonyms:
 - PathBank 2.0

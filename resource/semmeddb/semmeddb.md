@@ -8,6 +8,7 @@ contacts:
     value: support@nlm.nih.gov
   id: ncbi
   label: National Library of Medicine
+creation_date: '2025-05-30T00:00:00Z'
 description: SemMedDB is a repository of semantic predications (subject-predicate-object
   triples) extracted from biomedical literature by SemRep, a natural language processing
   system. It contains over 130 million semantic predications extracted from more than
@@ -24,6 +25,7 @@ domains:
 homepage_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html
 id: semmeddb
 infores_id: semmeddb
+last_modified_date: '2026-01-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/web_policies.html
@@ -150,16 +152,81 @@ products:
   secondary_source:
   - epigraphdb
 - category: GraphProduct
-  description: KGX graph package for SemMedDB text-derived predications (build semmeddb_semmeddb-2023-kg2.10.3_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for SemMedDB distributed via the NCATS Translator
+    release site (release 2026_03_27; build semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6;
+    source version semmeddb-2023-kg2.10.3; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 1412108
+  format: kgx-jsonl
   id: translator.semmeddb.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator SemMedDB KGX Graph
+  node_count: 69187
   original_source:
   - semmeddb
-  product_url: https://stars.renci.org/var/translator/releases/semmeddb/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_27'
+  - semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - authors:
   - Kilicoglu H
@@ -205,8 +272,6 @@ publications:
   year: '2003'
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-05-30T00:00:00Z'
-last_modified_date: '2026-01-23T00:00:00Z'
 ---
 ## Overview
 

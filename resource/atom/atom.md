@@ -44,6 +44,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 418 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 418 error
+    when accessing file'
 - category: ProcessProduct
   description: Natural language processing pipeline for constructing anti-tumor biomaterial
     knowledge graphs from unstructured biomedicine literature, implementing entity
@@ -58,6 +60,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 418 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 418 error
     when accessing file'
 publications:
 - authors:

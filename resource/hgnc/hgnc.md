@@ -147,6 +147,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
   format: sssom
@@ -701,6 +703,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate

@@ -62,6 +62,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Simple CSV format occurrence downloads with interpreted data and commonly
@@ -73,6 +75,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
@@ -93,6 +97,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
 publications:
 - authors:

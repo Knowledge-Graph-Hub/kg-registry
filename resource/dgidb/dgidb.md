@@ -9,6 +9,7 @@ contacts:
   - contact_type: url
     value: http://www.griffithlab.com
   label: Griffith Lab
+creation_date: '2025-05-30T00:00:00Z'
 description: The Drug Gene Interaction Database (DGIdb) is a resource that consolidates
   disparate data sources describing drug-gene interactions and gene druggability to
   help researchers identify actionable drug targets or repurposable drugs for genes
@@ -22,6 +23,7 @@ domains:
 homepage_url: https://dgidb.org
 id: dgidb
 infores_id: dgidb
+last_modified_date: '2026-01-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -212,16 +214,81 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
-  description: "KGX graph package for DGIdb drug\u2013gene interactions (build dgidb_2024_12_06_1.0_2025sep1_4.3.6;\
-    \ release 2025_12_15)"
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for DGIdb distributed via the NCATS Translator
+    release site (release 2026_03_06; build dgidb_2024_12_06_755e30d8_2025sep1_4.3.6;
+    source version 2024_12_06; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 52065
+  format: kgx-jsonl
   id: translator.dgidb.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator DGIdb KGX Graph
+  node_count: 11691
   original_source:
   - dgidb
-  product_url: https://stars.renci.org/var/translator/releases/dgidb/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_06'
+  - dgidb_2024_12_06_755e30d8_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - authors:
   - Cotto KC
@@ -291,8 +358,6 @@ publications:
   title: DGIdb - mining the druggable genome
   year: '2013'
 repository: https://github.com/griffithlab/dgi-db
-creation_date: '2025-05-30T00:00:00Z'
-last_modified_date: '2026-01-23T00:00:00Z'
 ---
 ## DGIdb: Drug Gene Interaction Database
 

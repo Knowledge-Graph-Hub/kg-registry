@@ -62,6 +62,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 503 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
+    when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
   format: mixed
@@ -75,6 +77,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 503 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
     development (CC-BY 4.0 licensed document)
@@ -87,6 +91,8 @@ products:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
     when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
@@ -232,12 +238,14 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
     to URL: Exceeded 30 redirects.'
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.1093/nar/gkad1044
   journal: Nucleic Acids Research

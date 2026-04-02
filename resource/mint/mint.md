@@ -47,12 +47,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -63,12 +65,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -79,12 +83,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).

@@ -9,6 +9,7 @@ contacts:
   label: Michael Kuhn
 - category: Organization
   label: European Molecular Biology Laboratory (EMBL)
+creation_date: '2025-05-29T00:00:00Z'
 description: SIDER (Side Effect Resource) contains information on marketed medicines
   and their recorded adverse drug reactions. The information is extracted from public
   documents and package inserts, including side effect frequency, drug and side effect
@@ -21,6 +22,7 @@ domains:
 homepage_url: http://sideeffects.embl.de/
 id: sider
 infores_id: sider
+last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -415,16 +417,29 @@ products:
   - chembl
   - chebi
 - category: GraphProduct
-  description: KGX graph package for SIDER drug side effects (build sider_4.1_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for SIDER distributed via the NCATS Translator
+    release site (release 2026_03_06; build sider_4.1_56b9c307_2025sep1_4.3.6; source
+    version 4.1; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 139874
+  format: kgx-jsonl
   id: translator.sider.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator SIDER KGX Graph
+  node_count: 5533
   original_source:
   - sider
-  product_url: https://stars.renci.org/var/translator/releases/sider/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_06'
+  - sider_4.1_56b9c307_2025sep1_4.3.6
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -593,6 +608,58 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - authors:
   - Kuhn M
@@ -618,8 +685,6 @@ publications:
   year: '2010'
 warnings:
 - The last release for this resource was on October 21, 2015.
-creation_date: '2025-05-29T00:00:00Z'
-last_modified_date: '2026-02-18T00:00:00Z'
 ---
 SIDER (Side Effect Resource) is a database of drugs and their side effects, which was developed at the European Molecular Biology Laboratory (EMBL). The database contains information extracted from public documents and package inserts, providing valuable data on marketed medicines and their recorded adverse drug reactions.
 
