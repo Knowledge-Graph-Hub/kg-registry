@@ -124,6 +124,15 @@ sync-obo-foundry-test:
 sync-obo-foundry:
 	$(RUN) python util/sync_obo_foundry.py --verbose
 
+# Sync Translator release metadata to KG-Registry
+.PHONY: sync-translator sync-translator-dry-run
+
+sync-translator-dry-run:
+	$(RUN) python util/sync_translator.py --dry-run --verbose
+
+sync-translator:
+	$(RUN) python util/sync_translator.py --verbose
+
 # Build the combined schema
 # Also write proper yaml header to it
 $(SOURCE_SCHEMA_ALL):
