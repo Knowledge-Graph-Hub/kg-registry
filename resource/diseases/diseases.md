@@ -12,6 +12,7 @@ contacts:
   - contact_type: url
     value: https://jensenlab.org/
   label: JensenLab
+creation_date: '2025-06-04T00:00:00Z'
 description: DISEASES is a weekly updated database that integrates evidence on disease-gene
   associations from automatic text mining, manually curated literature, cancer mutation
   data, and genome-wide association studies. It provides confidence scores to facilitate
@@ -24,6 +25,7 @@ domains:
 homepage_url: https://diseases.jensenlab.org/
 id: diseases
 infores_id: diseases
+last_modified_date: '2026-01-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -248,16 +250,29 @@ products:
   secondary_source:
   - diseases
 - category: GraphProduct
-  description: KGX graph package for DISEASES text-mined associations (build diseases_2025_12_07_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for DISEASES distributed via the NCATS Translator
+    release site (release 2026_03_19; build diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6;
+    source version 2026_03_17; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 270546
+  format: kgx-jsonl
   id: translator.diseases.graph
+  latest_version: '2026_03_19'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator DISEASES KGX Graph
+  node_count: 22024
   original_source:
   - diseases
-  product_url: https://stars.renci.org/var/translator/releases/diseases/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_19'
+  - diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -637,6 +652,58 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - id: PMID:35348650
   preferred: true
@@ -646,8 +713,6 @@ synonyms:
 - JensenLab DISEASES
 taxon:
 - NCBITaxon:9606
-creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2026-01-30T00:00:00Z'
 ---
 # DISEASES
 

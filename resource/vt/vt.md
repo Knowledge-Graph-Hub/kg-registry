@@ -31,7 +31,7 @@ products:
   format: owl
   id: vt.owl
   name: vt.owl
-  product_file_size: 417049
+  product_file_size: 416669
   product_url: http://purl.obolibrary.org/obo/vt.owl
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
 ---

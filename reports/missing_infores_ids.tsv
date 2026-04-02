@@ -393,7 +393,7 @@ ovae	Ontology of Vaccine Adverse Events	Ontology	http://www.violinet.org/ovae/	r
 pankbase	PanKBase	DataSource	https://pankbase.org/	resource/pankbase/pankbase.md
 pankgraph	PanKgraph	KnowledgeGraph	https://pankbase.org/	resource/pankgraph/pankgraph.md
 pao	Plant Anatomy Ontology	Ontology	http://www.plantontology.org	resource/pao/pao.md
-pathbank	Pathbank	DataSource		resource/pathbank/pathbank.md
+pathbank	PathBank	DataSource	https://pathbank.org/	resource/pathbank/pathbank.md
 pathophenodb	PathoPhenoDB	DataSource	http://patho.phenomebrowser.net/	resource/pathophenodb/pathophenodb.md
 pbpko	Physiologically-Based Pharmacokinetic Ontology	Ontology	https://github.com/InSilicoVida-Research-Lab/pbpko	resource/pbpko/pbpko.md
 pcl	Provisional Cell Ontology	Ontology	https://github.com/obophenotype/provisional_cell_ontology	resource/pcl/pcl.md
@@ -410,6 +410,7 @@ pgo	Pseudogene Ontology	Ontology	https://bioportal.bioontology.org/ontologies/ps
 pharmacodb	PharmacoDB	DataSource	https://pharmacodb.ca/	resource/pharmacodb/pharmacodb.md
 pharmdb	PharmDB	KnowledgeGraph	http://www.pharmdb-k.org/	resource/pharmdb/pharmdb.md
 pharmkg	PharmKG	KnowledgeGraph	https://github.com/MindRank-Biotech/PharmKG	resource/pharmkg/pharmkg.md
+phaseskg	PHASES KG	KnowledgeGraph	https://healthyphases.org/	resource/phaseskg/phaseskg.md
 pheknowlator	PheKnowLator	KnowledgeGraph	https://github.com/callahantiff/PheKnowLator	resource/pheknowlator/pheknowlator.md
 phewascat	PheWAS Catalog	Aggregator	https://phewascatalog.org/phewas/#home	resource/phewascat/phewascat.md
 phipo	Pathogen Host Interaction Phenotype Ontology	Ontology	https://github.com/PHI-base/phipo	resource/phipo/phipo.md
@@ -517,7 +518,7 @@ to	Plant Trait Ontology	Ontology	http://browser.planteome.org/amigo	resource/to/
 toxcast	ToxCast	DataSource		resource/toxcast/toxcast.md
 toxin	TOXIN	KnowledgeGraph	https://toxin-search.netlify.app/	resource/toxin/toxin.md
 trans	Pathogen Transmission Ontology	Ontology	https://github.com/DiseaseOntology/PathogenTransmissionOntology	resource/trans/trans.md
-translator	NCATS Translator Graph Releases	Aggregator	https://ui.transltr.io/	resource/translator/translator.md
+translator	NCATS Translator Graph Releases	Aggregator	https://kgx-storage.rtx.ai/releases/	resource/translator/translator.md
 tto	Teleost taxonomy ontology	Ontology	https://github.com/phenoscape/teleost-taxonomy-ontology	resource/tto/tto.md
 txpo	Toxic Process Ontology	Ontology	https://toxpilot.nibiohn.go.jp/	resource/txpo/txpo.md
 ubkg	Unified Biomedical Knowledge Graph	KnowledgeGraph	https://ubkg.docs.xconsortia.org/	resource/ubkg/ubkg.md

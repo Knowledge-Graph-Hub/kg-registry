@@ -22,8 +22,8 @@ id: pso
 last_modified_date: '2026-02-18T00:00:00Z'
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Stress Ontology
 products:

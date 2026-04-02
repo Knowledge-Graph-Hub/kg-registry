@@ -33,14 +33,14 @@ products:
   format: owl
   id: zfa.owl
   name: zfa.owl
-  product_file_size: 422888
+  product_file_size: 401627
   product_url: http://purl.obolibrary.org/obo/zfa.owl
 - category: OntologyProduct
   description: Zebrafish anatomy and development ontology in OBO format
   format: obo
   id: zfa.obo
   name: zfa.obo
-  product_file_size: 265923
+  product_file_size: 254897
   product_url: http://purl.obolibrary.org/obo/zfa.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

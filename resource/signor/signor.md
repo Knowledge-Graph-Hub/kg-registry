@@ -10,14 +10,14 @@ contacts:
     value: https://signor.uniroma2.it/contact.php
   label: SIGNOR Team (University of Rome Tor Vergata & Sapienza University of Rome)
 creation_date: '2025-08-12T00:00:00Z'
-description: SIGNOR (SIGnaling Network Open Resource) is a manually curated repository
-  of experimentally supported, causal relationships between human proteins and other
-  biologically relevant entities (chemicals, phenotypes, complexes, families, stimuli).
-  Each interaction is annotated with effect, mechanism, directionality, evidence (PMID),
-  and a relevance score, enabling construction and analysis of signed, directed signaling
-  networks and pathways. Cite SIGNOR (Lo Surdo et al., 2022 NAR) when using data;
-  interaction data are directional and signed—verify effect/mechanism fields when
-  integrating.
+description: "SIGNOR (SIGnaling Network Open Resource) is a manually curated repository\
+  \ of experimentally supported, causal relationships between human proteins and other\
+  \ biologically relevant entities (chemicals, phenotypes, complexes, families, stimuli).\
+  \ Each interaction is annotated with effect, mechanism, directionality, evidence\
+  \ (PMID), and a relevance score, enabling construction and analysis of signed, directed\
+  \ signaling networks and pathways. Cite SIGNOR (Lo Surdo et al., 2022 NAR) when\
+  \ using data; interaction data are directional and signed\u2014verify effect/mechanism\
+  \ fields when integrating."
 domains:
 - pathways
 - biomedical
@@ -173,16 +173,29 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
-  description: KGX graph package for SIGNOR causal interactions (build signor_2025_Oct_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for SIGNOR distributed via the NCATS Translator
+    release site (release 2026_03_06; build signor_2026_January_e2465db9_2025sep1_4.3.6;
+    source version 2026_January; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 18341
+  format: kgx-jsonl
   id: translator.signor.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator SIGNOR KGX Graph
+  node_count: 6633
   original_source:
   - signor
-  product_url: https://stars.renci.org/var/translator/releases/signor/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_06'
+  - signor_2026_January_e2465db9_2025sep1_4.3.6
 - category: Product
   description: signor Nodes TSV
   format: tsv
@@ -197,6 +210,58 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
   secondary_source:
   - obo-db-ingest
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - id: https://doi.org/10.1093/nar/gkac883
   journal: Nucleic Acids Research

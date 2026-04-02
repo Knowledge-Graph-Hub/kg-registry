@@ -175,12 +175,14 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
     to URL: Exceeded 30 redirects.'
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
 synonyms:
 - CDISC Controlled Terminology
 - CDISC CT

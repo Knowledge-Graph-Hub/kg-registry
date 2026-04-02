@@ -69,14 +69,16 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-01-05_ Error connecting
     to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries
     exceeded with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu',
     port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Zhu R

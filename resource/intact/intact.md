@@ -11,10 +11,10 @@ contacts:
   id: ebi
   label: IntAct Team (EMBL-EBI)
 creation_date: '2025-07-08T00:00:00Z'
-description: "IntAct is an open, curated molecular interaction database maintained\
-  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
-  \ literature curation and direct submissions, and distributes data in PSI\u2011\
-  MI XML and MITAB formats along with curated datasets and documentation."
+description: IntAct is an open, curated molecular interaction database maintained
+  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
+  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
+  along with curated datasets and documentation.
 domains:
 - proteomics
 - systems biology
@@ -491,6 +491,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -506,16 +508,29 @@ products:
   - intact
   - mint
 - category: GraphProduct
-  description: KGX graph package for IntAct molecular interactions (build intact_2025_08_28_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for IntAct distributed via the NCATS Translator
+    release site (release 2026_03_06; build intact_2026_01_14_e14f80a8_2025sep1_4.3.6;
+    source version 2026_01_14; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 622361
+  format: kgx-jsonl
   id: translator.intact.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator IntAct KGX Graph
+  node_count: 27681
   original_source:
   - intact
-  product_url: https://stars.renci.org/var/translator/releases/intact/2025_12_15/
+  product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_06'
+  - intact_2026_01_14_e14f80a8_2025sep1_4.3.6
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1075,6 +1090,58 @@ products:
   - go
   - goa
   product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 ---
 # IntAct
 

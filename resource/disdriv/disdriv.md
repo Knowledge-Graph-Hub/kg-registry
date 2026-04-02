@@ -33,7 +33,7 @@ products:
   format: owl
   id: disdriv.owl
   name: disdriv.owl
-  product_file_size: 13965
+  product_file_size: 13991
   product_url: http://purl.obolibrary.org/obo/disdriv.owl
 repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
 taxon:

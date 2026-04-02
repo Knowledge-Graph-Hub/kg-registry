@@ -82,6 +82,8 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 401 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   id: hubmap.data_ingest_portal

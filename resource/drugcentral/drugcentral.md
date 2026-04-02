@@ -233,12 +233,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -256,10 +258,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -278,12 +282,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -327,23 +333,38 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
-  description: KGX graph package for DrugCentral Annotation KP (build dakp_0.4.3_1.0_2025sep1_4.3.6;
-    release 2025_12_15)
-  format: kgx
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for Drug Approvals KP distributed via the NCATS
+    Translator release site (release 2026_03_19; build dakp_0.5.3_c3f74ab4_2025sep1_4.3.6;
+    source version 0.5.3; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 73999
+  format: kgx-jsonl
   id: translator.dakp.graph
+  latest_version: '2026_03_19'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
   name: Translator DAKP KGX Graph
+  node_count: 3783
   original_source:
-  - drugcentral
-  product_url: https://stars.renci.org/var/translator/releases/dakp/2025_12_15/
+  - drug-approvals-kp
+  product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
   secondary_source:
   - translator
+  versions:
+  - '2026_03_19'
+  - dakp_0.5.3_c3f74ab4_2025sep1_4.3.6
 - category: Product
   description: drugcentral Nodes TSV
   format: tsv
@@ -358,6 +379,82 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.tsv
   secondary_source:
   - obo-db-ingest
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for DrugCentral distributed via the NCATS Translator
+    release site (release 2026_03_19; build drugcentral_2023_11_01_82890f34_2025sep1_4.3.6;
+    source version 2023_11_01; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 36494
+  format: kgx-jsonl
+  id: translator.drugcentral.graph
+  latest_version: '2026_03_19'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator DrugCentral KGX Graph
+  node_count: 5493
+  original_source:
+  - drugcentral
+  product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_19'
+  - drugcentral_2023_11_01_82890f34_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - alliance
+  - bgee
+  - bindingdb
+  - chembl
+  - cohd
+  - ctd
+  - ctkp
+  - drug-approvals-kp
+  - dgidb
+  - diseases
+  - drugrephub
+  - drugcentral
+  - gtopdb
+  - gene2phenotype
+  - geneticskp
+  - go-cam
+  - goa
+  - hp
+  - icees-kg
+  - intact
+  - ncbigene
+  - panther
+  - pathbank
+  - semmeddb
+  - sider
+  - signor
+  - text-mining-kp
+  - ttd
+  - ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
 - authors:
   - Ursu O

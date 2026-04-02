@@ -57,6 +57,8 @@ For example, if a resource named `dataplace` produces a dataset named "genes", t
 
 Please [open an issue on the Registry's GitHub page](https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new/choose) to request addition of new resources or updates to existing metadata.
 
+Some resource pages are also maintained through scripted syncs from external registries and release feeds. See [External Syncs](../external-syncs.html) for the current list.
+
 ## Who manages the Registry?
 
 The KG-Registry is built and managed by members of the [Berkeley Bioinformatics Open-source Projects (BBOP) group](https://berkeleybop.github.io/) at the [Lawrence Berkeley National Laboratory](https://www.lbl.gov/).
