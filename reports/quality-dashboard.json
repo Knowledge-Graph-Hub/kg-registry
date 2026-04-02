@@ -13539,10 +13539,6 @@
       "oma.proteins.fasta",
       "oma.rdf",
       "openpredict.predictions",
-      "pathbank.biopax",
-      "pathbank.downloads",
-      "pathbank.pathways.csv",
-      "pathbank.sbml",
       "pbpko.json",
       "pbpko.obo",
       "pcl-base.json",
@@ -13831,7 +13827,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-04-02T20:37:39Z",
+  "generated_at": "2026-04-02T20:59:39Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 138,
     "with_evaluation_page": 119,
@@ -13839,10 +13835,10 @@
   },
   "links": {
     "broken_urls": 523,
-    "cache_hits": 3379,
+    "cache_hits": 3412,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 2889,
-    "live_checked_urls": 33,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 3412,
     "unchecked_urls": 0
@@ -13851,7 +13847,7 @@
     "missing_format": 825,
     "missing_original_source": 1354,
     "missing_product_url": 101,
-    "retrieval_warning_mentions": 635,
+    "retrieval_warning_mentions": 418,
     "total": 4977
   },
   "resource_count": 771,

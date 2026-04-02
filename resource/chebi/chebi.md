@@ -839,12 +839,10 @@ products:
   secondary_source:
   - forum
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-03-30: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-04-02: FTP error: timed
     out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j

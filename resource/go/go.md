@@ -2304,12 +2304,10 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -2485,12 +2483,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1

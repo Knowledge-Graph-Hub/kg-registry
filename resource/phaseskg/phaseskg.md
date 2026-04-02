@@ -12,6 +12,8 @@ layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-04-02T00:00:00Z'
 last_modified_date: '2026-04-02T00:00:00Z'
+contacts: []
+products: []
 ---
 PHASES KG
 

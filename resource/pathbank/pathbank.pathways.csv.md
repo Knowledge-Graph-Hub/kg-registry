@@ -12,5 +12,8 @@ name: PathBank Pathways CSV
 original_source:
 - pathbank
 product_url: https://pathbank.org/downloads
+warnings:
+- File was not able to be retrieved when checked on 2026-04-02_ Timeout connecting
+  to URL
 layout: product_detail
 ---

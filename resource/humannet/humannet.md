@@ -44,8 +44,6 @@ products:
   - humannet
   product_url: https://www.inetbio.org/humannet/download.php
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
     to URL'
 - category: ProgrammingInterface

@@ -53,9 +53,7 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: Product
   compression: zip
   description: CSV download of PathBank pathway subjects and descriptions from the
@@ -69,9 +67,7 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphProduct
   compression: zip
   description: BioPAX archive of PathBank pathway data from the official downloads
@@ -85,9 +81,7 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphProduct
   compression: zip
   description: SBML archive of PathBank pathway models from the official downloads
@@ -101,9 +95,7 @@ products:
   original_source:
   - pathbank
   product_url: https://pathbank.org/downloads
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: Product
   description: pathbank Nodes TSV
   format: tsv

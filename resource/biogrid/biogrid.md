@@ -926,12 +926,10 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -1497,8 +1495,8 @@ publications:
 - id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
-    genetic, and chemical interactions
+  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
+    \ protein, genetic, and chemical interactions"
   year: '2020'
 - id: https://doi.org/10.1093/nar/gky1079
   journal: Nucleic Acids Research

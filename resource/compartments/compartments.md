@@ -76,12 +76,10 @@ products:
   name: COMPARTMENTS Bulk Downloads
   product_url: https://compartments.jensenlab.org/Downloads
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-03-30: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
+    header found
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
