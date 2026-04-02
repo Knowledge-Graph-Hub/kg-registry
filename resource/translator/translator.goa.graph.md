@@ -1,14 +1,27 @@
 ---
 category: GraphProduct
-description: KGX graph package for Gene Ontology Annotations (build goa_2025-10-10_1.0_2025sep1_4.3.6;
-  release 2025_12_15)
-format: kgx
+compatibility:
+- standard: biolink
+  version: 4.3.6
+description: KGX JSONL graph package for GOA distributed via the NCATS Translator
+  release site (release 2026_03_06; build goa_2026-01-23_5fdd3125_2025sep1_4.3.6;
+  source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
+edge_count: 1132872
+format: kgx-jsonl
 id: translator.goa.graph
+latest_version: '2026_03_06'
+license:
+  id: https://opensource.org/license/mit/
+  label: MIT
 name: Translator GOA KGX Graph
+node_count: 91993
 original_source:
 - goa
-product_url: https://stars.renci.org/var/translator/releases/goa/2025_12_15/
+product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
 secondary_source:
 - translator
+versions:
+- '2026_03_06'
+- goa_2026-01-23_5fdd3125_2025sep1_4.3.6
 layout: product_detail
 ---

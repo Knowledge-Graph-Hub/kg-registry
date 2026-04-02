@@ -1,19 +1,27 @@
 ---
 category: GraphProduct
-description: KGX graph package for Comparative Toxicogenomics Database (build ctd_November_2025_1.0_2025sep1_4.3.6;
-  release 2025_12_15)
-format: kgx
+compatibility:
+- standard: biolink
+  version: 4.3.6
+description: KGX JSONL graph package for CTD distributed via the NCATS Translator
+  release site (release 2026_03_27; build ctd_February_2026_b588520f_2025sep1_4.3.6;
+  source version February_2026; Biolink 4.3.6; Node Normalizer 2025sep1).
+edge_count: 4175538
+format: kgx-jsonl
 id: translator.ctd.graph
+latest_version: '2026_03_27'
+license:
+  id: https://opensource.org/license/mit/
+  label: MIT
 name: Translator CTD KGX Graph
+node_count: 86425
 original_source:
 - ctd
-product_url: https://stars.renci.org/var/translator/releases/ctd/2025_12_15/
+product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
 secondary_source:
 - translator
-warnings:
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+versions:
+- '2026_03_27'
+- ctd_February_2026_b588520f_2025sep1_4.3.6
 layout: product_detail
 ---
