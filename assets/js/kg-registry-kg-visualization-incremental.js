@@ -1051,27 +1051,8 @@ function exportAsSVG() {
     return;
   }
 
-  // Clone the SVG
   const svgElement = document.querySelector('#graph-container svg');
-  const clone = svgElement.cloneNode(true);
-
-  // Get the bounding box of all elements
-  const bbox = svgElement.querySelector('g.graph-elements').getBBox();
-  const padding = 50;
-
-  // Set viewBox to fit content
-  clone.setAttribute('viewBox', `${bbox.x - padding} ${bbox.y - padding} ${bbox.width + padding * 2} ${bbox.height + padding * 2}`);
-  clone.setAttribute('width', bbox.width + padding * 2);
-  clone.setAttribute('height', bbox.height + padding * 2);
-
-  // Add white background
-  const background = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-  background.setAttribute('x', bbox.x - padding);
-  background.setAttribute('y', bbox.y - padding);
-  background.setAttribute('width', bbox.width + padding * 2);
-  background.setAttribute('height', bbox.height + padding * 2);
-  background.setAttribute('fill', 'white');
-  clone.insertBefore(background, clone.firstChild);
+  const { clone } = createExportClone(svgElement);
 
   // Serialize SVG
   const serializer = new XMLSerializer();
@@ -1097,25 +1078,7 @@ function exportAsPNG() {
   }
 
   const svgElement = document.querySelector('#graph-container svg');
-  const bbox = svgElement.querySelector('g.graph-elements').getBBox();
-  const padding = 50;
-  const width = bbox.width + padding * 2;
-  const height = bbox.height + padding * 2;
-
-  // Clone and prepare SVG
-  const clone = svgElement.cloneNode(true);
-  clone.setAttribute('viewBox', `${bbox.x - padding} ${bbox.y - padding} ${width} ${height}`);
-  clone.setAttribute('width', width);
-  clone.setAttribute('height', height);
-
-  // Add white background
-  const background = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-  background.setAttribute('x', bbox.x - padding);
-  background.setAttribute('y', bbox.y - padding);
-  background.setAttribute('width', width);
-  background.setAttribute('height', height);
-  background.setAttribute('fill', 'white');
-  clone.insertBefore(background, clone.firstChild);
+  const { clone, width, height } = createExportClone(svgElement, { forRaster: true });
 
   // Serialize SVG
   const serializer = new XMLSerializer();
@@ -1134,6 +1097,12 @@ function exportAsPNG() {
 
     // Convert to PNG and download
     canvas.toBlob((blob) => {
+      if (!blob) {
+        URL.revokeObjectURL(svgUrl);
+        alert('PNG export failed while rendering the image blob.');
+        return;
+      }
+
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
@@ -1141,9 +1110,43 @@ function exportAsPNG() {
       link.click();
       URL.revokeObjectURL(url);
       URL.revokeObjectURL(svgUrl);
-    });
+    }, 'image/png');
+  };
+  img.onerror = () => {
+    URL.revokeObjectURL(svgUrl);
+    alert('PNG export failed because the graph could not be converted into a raster image.');
   };
   img.src = svgUrl;
+}
+
+function createExportClone(svgElement, options = {}) {
+  const { forRaster = false } = options;
+  const bbox = svgElement.querySelector('g.graph-elements').getBBox();
+  const padding = 50;
+  const width = bbox.width + padding * 2;
+  const height = bbox.height + padding * 2;
+  const clone = svgElement.cloneNode(true);
+
+  clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  clone.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
+  clone.setAttribute('viewBox', `${bbox.x - padding} ${bbox.y - padding} ${width} ${height}`);
+  clone.setAttribute('width', width);
+  clone.setAttribute('height', height);
+
+  if (forRaster) {
+    // Rasterizing SVGs with embedded HTML foreignObject icons is unreliable across browsers.
+    clone.querySelectorAll('foreignObject.node-icon').forEach((icon) => icon.remove());
+  }
+
+  const background = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  background.setAttribute('x', bbox.x - padding);
+  background.setAttribute('y', bbox.y - padding);
+  background.setAttribute('width', width);
+  background.setAttribute('height', height);
+  background.setAttribute('fill', 'white');
+  clone.insertBefore(background, clone.firstChild);
+
+  return { clone, width, height };
 }
 
 /**
