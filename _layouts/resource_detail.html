@@ -104,71 +104,82 @@ layout: default
 </div>
 {% endif %}
 <div class="col">
-  <div class="row">
-    <div class="row header-card-row">
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Domains</h5>
-          <p class="card-text">
-            {% for domain in page.domains %}
-            {% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[domain] %}
-            <span title="{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{
-              domain }}</span>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          </p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 header-card-row">
+      <div class="col d-flex">
+        <div class="card bg-light h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Domains</h5>
+            <p class="card-text">
+              {% for domain in page.domains %}
+              {% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[domain] %}
+              <span title="{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{
+                domain }}</span>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">License</h5>
-          {% if page.license %}
-          <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
-          {% else %}
-          <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
-          {% endif %}
+      <div class="col d-flex">
+        <div class="card bg-light h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">License</h5>
+            {% if page.license %}
+            <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
+            {% else %}
+            <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
+            {% endif %}
+          </div>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Homepage</h5>
-          {% if page.homepage_url %}
-          <p class="card-text"><a href="{{page.homepage_url}}">{{page.id}}</a></p>
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
+      <div class="col d-flex">
+        <div class="card bg-light h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Homepage</h5>
+            {% if page.homepage_url %}
+            <p class="card-text"><a href="{{page.homepage_url}}">{{page.id}}</a></p>
+            {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+            {% endif %}
+          </div>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Repository</h5>
-          {% if page.repository and page.repository != "" and page.repository contains "https://github.com/" %}
-          <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-github"></i> GitHub</a></p>
-          {% elsif page.repository and page.repository != "" %}
-          <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-code-square"></i> {{ page.repository |
-              split: '//' | last | split: '/' | first }}</a></p>
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
+      <div class="col d-flex">
+        <div class="card bg-light h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Repository</h5>
+            {% if page.repository and page.repository != "" and page.repository contains "https://github.com/" %}
+            <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-github"></i> GitHub</a></p>
+            {% elsif page.repository and page.repository != "" %}
+            <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-code-square"></i> {{ page.repository |
+                split: '//' | last | split: '/' | first }}</a></p>
+            {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+            {% endif %}
+          </div>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Infores ID</h5>
-          {% if page.infores_id %}
-          <p class="card-text">infores:{{page.infores_id}}</p>
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
+      <div class="col d-flex">
+        <div class="card bg-light h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Infores ID</h5>
+            {% if page.infores_id %}
+            <p class="card-text">infores:{{page.infores_id}}</p>
+            {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+            {% endif %}
+          </div>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">FAIRsharing ID</h5>
-          {% if page.fairsharing_id %}
-          <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
+      <div class="col d-flex">
+        <div class="card bg-light h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">FAIRsharing ID</h5>
+            {% if page.fairsharing_id %}
+            <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
+            {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
