@@ -49,12 +49,14 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
     and other interaction databases.
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: HPRD data in XML format for programmatic access
   id: hprd.xml.download
@@ -63,12 +65,14 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: HPRD data in tab-delimited format for programmatic access
   id: hprd.tsv.download
@@ -77,12 +81,14 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
   - Original HPRD website is no longer accessible. Data may be available through archive.org
     or integrated databases.
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 503 error
+    when accessing file'
 - category: GraphicalInterface
   description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
     and binding motifs
@@ -564,7 +570,7 @@ publications:
   doi: 10.1093/nar/gkj141
   id: https://doi.org/10.1093/nar/gkj141
   journal: Nucleic Acids Research
-  title: "Human protein reference database\u20142006 update"
+  title: Human protein reference database—2006 update
   year: '2006'
 - authors:
   - Peri S

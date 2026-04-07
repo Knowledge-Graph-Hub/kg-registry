@@ -31,7 +31,7 @@ products:
   format: owl
   id: oae.owl
   name: oae.owl
-  product_file_size: 1274570
+  product_file_size: 1274564
   product_url: http://purl.obolibrary.org/obo/oae.owl
 repository: https://github.com/OAE-ontology/OAE
 ---

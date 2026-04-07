@@ -102,10 +102,12 @@ products:
   name: Downloads
   product_url: https://ngdc.cncb.ac.cn/lncbook/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

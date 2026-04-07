@@ -49,7 +49,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -74,7 +74,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -93,7 +93,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -102,7 +102,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -2158,6 +2158,49 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -2304,10 +2347,12 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -2483,10 +2528,12 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
+    header found'
 repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1

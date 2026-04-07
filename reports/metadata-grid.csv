@@ -258,6 +258,7 @@ gtrnadb,active,PASS
 gtrx,active,PASS
 gutmgene,active,PASS
 gwascatalog,active,PASS
+hald,active,PASS
 hancestro,active,PASS
 hao,active,PASS
 harmonizome-kg,active,PASS
@@ -310,6 +311,7 @@ kg-jensenlab-diseases,active,PASS
 kg-microbe,active,PASS
 kg-monarch,active,PASS
 kg-predict,active,PASS
+kg4sl,active,PASS
 kgcl,active,PASS
 kidsfirst,active,PASS
 kinace,active,PASS
@@ -481,6 +483,7 @@ pfocr,active,PASS
 pgo,active,PASS
 pgxmine,active,PASS
 pharmacodb,active,PASS
+pharmebinet,active,PASS
 pharmgkb,active,PASS
 pharmkg,active,PASS
 pharos,active,PASS
@@ -665,6 +668,7 @@ cacao,inactive,PASS
 cam-kp,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
+ckg,inactive,PASS
 cmf,inactive,PASS
 connectivitymap,inactive,PASS
 cpdb,inactive,PASS

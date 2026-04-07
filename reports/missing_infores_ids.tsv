@@ -73,6 +73,7 @@ ciel	CIEL	Aggregator	https://openconceptlab.org/project/ciel/	resource/ciel/ciel
 cio	Confidence Information Ontology	Ontology	https://github.com/BgeeDB/confidence-information-ontology	resource/cio/cio.md
 circbase	circBase	Aggregator		resource/circbase/circbase.md
 cito	CiTO	Ontology	https://sparontologies.github.io/cito/current/cito.html	resource/cito/cito.md
+ckg	Clinical Knowledge Graph	KnowledgeGraph	https://ckg.readthedocs.io/	resource/ckg/ckg.md
 cl-kg	Cell Ontology Knowledge Graph (CL-KG)	KnowledgeGraph	https://cellular-semantics.github.io/CL_KG/	resource/cl-kg/cl-kg.md
 clao	Collembola Anatomy Ontology	Ontology	https://github.com/luis-gonzalez-m/Collembola	resource/clao/clao.md
 climatemodelskg	Climate Models KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/climatepub4-kg/	resource/climatemodelskg/climatemodelskg.md
@@ -220,6 +221,7 @@ gtdb	Gtdb	DataSource		resource/gtdb/gtdb.md
 gtrnadb	GtRNAdb	DataSource	https://gtrnadb.org/	resource/gtrnadb/gtrnadb.md
 gutmgene	GutMGene	DataSource	http://bio-computing.hrbmu.edu.cn/gutmgene	resource/gutmgene/gutmgene.md
 habronattus	Habronattus courtship	Ontology	http://www.mesquiteproject.org/ontology/Habronattus/index.html	resource/habronattus/habronattus.md
+hald	Human Aging and Longevity Database	KnowledgeGraph	https://bis.zju.edu.cn/hald	resource/hald/hald.md
 hancestro	Human Ancestry Ontology	Ontology	https://ebispot.github.io/hancestro/	resource/hancestro/hancestro.md
 hao	Hymenoptera Anatomy Ontology	Ontology	http://hymao.org	resource/hao/hao.md
 harmonizome-kg	Harmonizome-KG	KnowledgeGraph	https://maayanlab.cloud/harmonizome-kg/	resource/harmonizome-kg/harmonizome-kg.md
@@ -261,6 +263,7 @@ kg-jensenlab-diseases	JensenLab DISEASES KG	KnowledgeGraph		resource/kg-jensenla
 kg-microbe	KG Microbe	KnowledgeGraph	https://kghub.org/kg-microbe/index.html	resource/kg-microbe/kg-microbe.md
 kg-monarch	KG Monarch	KnowledgeGraph	https://kghub.org/kg-monarch/index.html	resource/kg-monarch/kg-monarch.md
 kg-predict	KG-Predict	KnowledgeGraph	http://nlp.case.edu/public/data/GPKG-Predict/	resource/kg-predict/kg-predict.md
+kg4sl	KG4SL	KnowledgeGraph	https://github.com/JieZheng-ShanghaiTech/KG4SL	resource/kg4sl/kg4sl.md
 kgcl	Knowledge Graph Change Language	DataModel	https://incatools.github.io/kgcl/	resource/kgcl/kgcl.md
 kidsfirst	Kids First Data Resource Center	DataSource	https://kidsfirstdrc.org/	resource/kidsfirst/kidsfirst.md
 kinhub	KinHub	DataSource	http://www.kinhub.org/	resource/kinhub/kinhub.md
@@ -409,6 +412,7 @@ pgdso	Plant Growth and Development Stage	Ontology	http://www.plantontology.org	r
 pgo	Pseudogene Ontology	Ontology	https://bioportal.bioontology.org/ontologies/pseudo	resource/pgo/pgo.md
 pharmacodb	PharmacoDB	DataSource	https://pharmacodb.ca/	resource/pharmacodb/pharmacodb.md
 pharmdb	PharmDB	KnowledgeGraph	http://www.pharmdb-k.org/	resource/pharmdb/pharmdb.md
+pharmebinet	PharMeBINet	KnowledgeGraph	https://pharmebi.net/	resource/pharmebinet/pharmebinet.md
 pharmkg	PharmKG	KnowledgeGraph	https://github.com/MindRank-Biotech/PharmKG	resource/pharmkg/pharmkg.md
 phaseskg	PHASES KG	KnowledgeGraph	https://healthyphases.org/	resource/phaseskg/phaseskg.md
 pheknowlator	PheKnowLator	KnowledgeGraph	https://github.com/callahantiff/PheKnowLator	resource/pheknowlator/pheknowlator.md

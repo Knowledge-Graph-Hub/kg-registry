@@ -68,10 +68,12 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
     entries
@@ -92,10 +94,12 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
     Factor Ontology terms
@@ -106,10 +110,12 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
     integration
@@ -120,10 +126,12 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
     (current release)
@@ -134,10 +142,12 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
   format: svg
@@ -147,10 +157,12 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
     per-study summary statistics under CC0 where available)
@@ -449,10 +461,55 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 ---
 ## Overview
 

@@ -220,8 +220,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -349,12 +349,14 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
     to URL: Exceeded 30 redirects.'
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
     FORUM data
@@ -375,10 +377,12 @@ products:
   secondary_source:
   - forum
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-04-02: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-04-07: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv

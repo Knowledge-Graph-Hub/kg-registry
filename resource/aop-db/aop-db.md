@@ -10,13 +10,12 @@ contacts:
     value: https://www.epa.gov/
   label: U.S. Environmental Protection Agency (EPA)
 creation_date: '2025-06-24T00:00:00Z'
-description: "The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed integrative\
-  \ knowledgebase that connects chemicals and stressors to molecular initiating events,\
-  \ key events across biological organization levels, and adverse outcomes relevant\
-  \ to human health and ecological risk assessment. It harmonizes data from toxicology,\
-  \ high\u2011throughput screening, pathway, gene/protein, and phenotype resources\
-  \ to enable computational toxicology, mode-of-action analysis, and predictive risk\
-  \ prioritization."
+description: The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed integrative
+  knowledgebase that connects chemicals and stressors to molecular initiating events,
+  key events across biological organization levels, and adverse outcomes relevant
+  to human health and ecological risk assessment. It harmonizes data from toxicology,
+  high‑throughput screening, pathway, gene/protein, and phenotype resources to enable
+  computational toxicology, mode-of-action analysis, and predictive risk prioritization.
 domains: []
 homepage_url: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
 id: aop-db
@@ -67,8 +66,6 @@ products:
   - aop-db
   product_url: https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2025-12-05_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
@@ -106,6 +103,10 @@ products:
     with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fca293233d0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http

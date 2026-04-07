@@ -607,6 +607,49 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.tsv
   secondary_source:
   - obo-db-ingest
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - authors:
   - T. Paysan-Lafosse
@@ -617,7 +660,7 @@ publications:
   - B. Lazaro Pinto
   - G.A. Salazar
   - M.L. Bileschi
-  - F. Llinares-López
+  - "F. Llinares-L\xF3pez"
   - L. Meng-Papaxanthos
   - L.J. Colwell
   - NV. Grishin

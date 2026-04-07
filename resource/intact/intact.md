@@ -11,10 +11,10 @@ contacts:
   id: ebi
   label: IntAct Team (EMBL-EBI)
 creation_date: '2025-07-08T00:00:00Z'
-description: "IntAct is an open, curated molecular interaction database maintained\
-  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
-  \ literature curation and direct submissions, and distributes data in PSI\u2011\
-  MI XML and MITAB formats along with curated datasets and documentation."
+description: IntAct is an open, curated molecular interaction database maintained
+  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
+  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
+  along with curated datasets and documentation.
 domains:
 - proteomics
 - systems biology
@@ -487,10 +487,12 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -1140,6 +1142,49 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 ---
 # IntAct
 

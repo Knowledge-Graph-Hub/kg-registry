@@ -365,8 +365,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -476,10 +476,12 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -673,6 +675,49 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

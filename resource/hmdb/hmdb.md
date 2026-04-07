@@ -46,6 +46,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
 - category: Product
   description: All metabolite metabolizing enzyme gene sequences (FASTA)
   format: fasta
@@ -56,6 +58,8 @@ products:
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolite structures (SDF)
@@ -70,6 +74,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
 - category: Product
   description: All metabolites dataset (XML)
   format: xml
@@ -581,6 +587,49 @@ products:
   - omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 taxon:
 - NCBITaxon:9606
 ---

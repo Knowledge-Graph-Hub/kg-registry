@@ -12,16 +12,16 @@ warnings:
   with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
   CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
   certificate (_ssl.c_1028)')))
+- File was not able to be retrieved when checked on 2026-04-02_ Error connecting to
+  URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries exceeded
+  with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
+  CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
+  certificate (_ssl.c_1000)')))
 - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
   URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries exceeded
   with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
   CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
   certificate (_ssl.c_1028)')))
-- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
-  URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries exceeded
-  with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-  CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-  certificate (_ssl.c_1000)')))
 - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
   URL_ HTTPSConnectionPool(host='dip.doe-mbi.ucla.edu', port=443)_ Max retries exceeded
   with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1, '[SSL_

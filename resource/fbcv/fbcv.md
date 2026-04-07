@@ -32,21 +32,21 @@ products:
   format: owl
   id: fbcv.owl
   name: fbcv.owl
-  product_file_size: 4275897
+  product_file_size: 4294066
   product_url: http://purl.obolibrary.org/obo/fbcv.owl
 - category: OntologyProduct
   description: FlyBase Controlled Vocabulary in OBO format
   format: obo
   id: fbcv.obo
   name: fbcv.obo
-  product_file_size: 568316
+  product_file_size: 568816
   product_url: http://purl.obolibrary.org/obo/fbcv.obo
 - category: OntologyProduct
   description: FlyBase Controlled Vocabulary in JSON format
   format: json
   id: fbcv.json
   name: fbcv.json
-  product_file_size: 2731574
+  product_file_size: 2716834
   product_url: http://purl.obolibrary.org/obo/fbcv.json
 repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 ---
