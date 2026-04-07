@@ -678,6 +678,18 @@ layout: default
     {% endif %}
   </div>
 
+  {% assign details_content = content | strip %}
+  {% if details_content != "" %}
+  <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="details">
+    <div class="card-header">
+      <h4><i class="bi bi-file-text"></i> Details</h4>
+    </div>
+    <div class="card-body">
+      {{ details_content }}
+    </div>
+  </div>
+  {% endif %}
+
   <div class="row">
     <h4>
       Is this information incorrect or incomplete? <a
