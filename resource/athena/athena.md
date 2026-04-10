@@ -59,6 +59,7 @@ products:
   - rxnorm
   - ndcd
   - gemscript
+  - medispan-gpi
   product_url: https://athena.ohdsi.org/vocabulary/list
   secondary_source:
   - athena
