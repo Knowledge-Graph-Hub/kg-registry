@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Ontology
+collection:
+- omop
 creation_date: '2025-10-30T00:00:00Z'
 description: ICD-10-CM (International Classification of Diseases, 10th Revision, Clinical
   Modification) is a clinical modification of the WHO's ICD-10 system, providing diagnostic
@@ -12,7 +14,7 @@ domains:
 homepage_url: https://icd10cmtool.cdc.gov/
 id: icd10cm
 infores_id: icd10cm
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: ICD-10-CM
 products:

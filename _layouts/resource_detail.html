@@ -44,15 +44,26 @@ layout: default
     {% assign collection = page.collection[0] %}
     {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[collection] %}
     {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
+    {% assign collection_display = page.collection[0] | capitalize %}
+    {% if collection == "aop" %}{% assign collection_display = "AOP" %}{% endif %}
+    {% if collection == "ber" %}{% assign collection_display = "BER" %}{% endif %}
+    {% if collection == "omop" %}{% assign collection_display = "OMOP" %}{% endif %}
+    {% if collection == "obo-foundry" %}{% assign collection_display = "OBO Foundry" %}{% endif %}
+    {% if collection == "okn" %}{% assign collection_display = "OKN" %}{% endif %}
     the <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{
-        page.collection[0] | capitalize }}</strong></span> collection.
+        collection_display }}</strong></span> collection.
     {% else %}
     these collections:
     {% for collection in page.collection %}
     {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[collection] %}
     {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
-    <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection |
-        capitalize }}</strong></span>{% unless forloop.last %}, {% endunless %}
+    {% assign collection_display = collection | capitalize %}
+    {% if collection == "aop" %}{% assign collection_display = "AOP" %}{% endif %}
+    {% if collection == "ber" %}{% assign collection_display = "BER" %}{% endif %}
+    {% if collection == "omop" %}{% assign collection_display = "OMOP" %}{% endif %}
+    {% if collection == "obo-foundry" %}{% assign collection_display = "OBO Foundry" %}{% endif %}
+    {% if collection == "okn" %}{% assign collection_display = "OKN" %}{% endif %}
+    <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection_display }}</strong></span>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
     {% endif %}
   </p>

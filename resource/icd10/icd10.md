@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- omop
 contacts:
 - category: Organization
   contact_details:
@@ -42,7 +44,7 @@ domains:
 homepage_url: https://icd.who.int/browse10
 id: icd10
 infores_id: icd10
-last_modified_date: '2025-11-10T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: ICD-10
 products:

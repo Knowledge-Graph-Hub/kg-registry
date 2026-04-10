@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- omop
 creation_date: '2025-11-19T00:00:00Z'
 description: The FDA National Drug Code Directory is a comprehensive database maintained
   by the U.S. Food and Drug Administration containing information about finished drug
@@ -18,7 +20,7 @@ domains:
 homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
 id: ndcd
 infores_id: ndcd
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: National Drug Code Directory
 products:
@@ -40,14 +42,7 @@ products:
   name: NDC Database Text File
   original_source:
   - ndcd
-  product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
-    when accessing file'
+  product_url: https://www.accessdata.fda.gov/cder/ndctext.zip
 - category: Product
   compression: zip
   description: Downloadable database file in Excel format containing finished drug
@@ -56,14 +51,7 @@ products:
   name: NDC Database Excel File
   original_source:
   - ndcd
-  product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
-    when accessing file'
+  product_url: https://www.accessdata.fda.gov/cder/ndcxls.zip
 - category: ProgrammingInterface
   description: REST API providing programmatic access to National Drug Code data through
     the openFDA platform
@@ -74,6 +62,7 @@ products:
   - ndcd
   product_url: https://open.fda.gov/apis/drug/ndc/
 synonyms:
+- NDC
 - NDCD
 - NDC Directory
 taxon:

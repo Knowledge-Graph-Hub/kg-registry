@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Ontology
+collection:
+- omop
 creation_date: '2025-10-10T00:00:00Z'
 description: The Medical Subject Headings (MeSH) is a hierarchically-organized controlled
   vocabulary produced by the National Library of Medicine (NLM). It serves as the
@@ -13,7 +15,7 @@ domains:
 homepage_url: https://www.nlm.nih.gov/mesh/meshhome.html
 id: mesh
 infores_id: mesh
-last_modified_date: '2025-10-10T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html

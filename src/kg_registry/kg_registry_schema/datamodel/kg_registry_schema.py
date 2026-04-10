@@ -662,6 +662,10 @@ class CollectionEnum(str, Enum):
     """
     A resource or product relevant to the US Department of Energy Biological and Environmental Research (BER) program.
     """
+    omop = "omop"
+    """
+    This entity is part of the OMOP Common Data Model ecosystem, including vocabularies and related standards used in OHDSI workflows.
+    """
     translator = "translator"
     """
     This entity is part of those developed and used by the NCATS Biomedical Translator program.

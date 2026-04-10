@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Aggregator
+collection:
+- omop
 contacts:
 - category: Organization
   contact_details:
@@ -13,7 +15,9 @@ description: Athena is the OHDSI (Observational Health Data Sciences and Informa
   and vocabularies for observational healthcare data. It includes SNOMED CT, RxNorm,
   LOINC, ICD codes, and many other standard vocabularies, along with mappings between
   them. Athena enables the transformation of healthcare data into the OMOP Common
-  Data Model format for federated research across multiple healthcare systems.
+  Data Model format for federated research across multiple healthcare systems. Access
+  to vocabulary selection and download workflows is mediated through the Athena web
+  application rather than stable public download URLs.
 domains:
 - clinical
 - biomedical
@@ -22,29 +26,46 @@ domains:
 homepage_url: https://athena.ohdsi.org/
 id: athena
 infores_id: athena
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: Athena
 products:
 - category: GraphicalInterface
-  description: Web interface for searching and browsing standardized vocabularies
+  description: Web interface for searching and browsing standardized vocabularies;
+    account login is required for download workflows
   format: http
   id: athena.web
   name: Athena Vocabulary Browser
   original_source:
   - athena
   product_url: https://athena.ohdsi.org/search-terms/start
+  warnings:
+  - Athena is an authenticated web application; access to vocabulary download workflows
+    requires login.
 - category: Product
-  description: Downloadable standardized vocabulary bundles for OMOP CDM
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
   format: csv
   id: athena.vocabularies
   name: Athena Vocabulary Downloads
   original_source:
-  - athena
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  - rxnorm
+  - ndcd
+  - gemscript
+  - medispan-gpi
   product_url: https://athena.ohdsi.org/vocabulary/list
+  secondary_source:
+  - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 - category: MappingProduct
   description: Concept mappings between different terminology systems
   format: csv
@@ -62,14 +83,8 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
-    to URL: Exceeded 30 redirects.'
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
-    when accessing file'
+  - Athena mapping exports are accessed through the authenticated Athena web application;
+    stable direct public file URLs are not exposed.
 synonyms:
 - Athena
 - OHDSI Athena
@@ -90,7 +105,8 @@ It includes major healthcare terminologies such as SNOMED CT, RxNorm, LOINC, ICD
 - **Concept Mappings**: Extensive mappings between different terminology systems
 - **OMOP CDM Support**: Vocabularies formatted for OMOP Common Data Model
 - **Regular Updates**: Frequent updates to maintain currency with source vocabularies
-- **Free Access**: Public access to standardized vocabularies for research
+- **Account-Based Access**: Vocabulary selection and download workflows are handled
+  through the Athena web application
 - **Concept Search**: Advanced search capabilities across all vocabularies
 
 ## Integrated Vocabularies
@@ -106,13 +122,13 @@ Athena includes:
 ## Products
 
 ### Athena Vocabulary Browser
-Web-based interface for searching, browsing, and exploring standardized vocabularies and their relationships.
+Web-based interface for searching, browsing, and exploring standardized vocabularies and their relationships. Athena is exposed as an authenticated web application rather than as a stable set of public direct-download URLs.
 
 ### Vocabulary Downloads
-Downloadable vocabulary bundles in CSV format for local implementation in OMOP CDM databases.
+Downloadable vocabulary bundles in CSV format for local implementation in OMOP CDM databases. In practice, these are selected and prepared within the logged-in Athena interface, so the registry points to the Athena entry page rather than to a stable file URL.
 
 ### Concept Mappings
-Cross-vocabulary mappings enabling interoperability between different terminology systems.
+Cross-vocabulary mappings enabling interoperability between different terminology systems. As with vocabulary downloads, Athena exposes these through the web application workflow rather than stable public file links.
 
 ## Information Resource ID
 

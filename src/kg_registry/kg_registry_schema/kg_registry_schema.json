@@ -247,6 +247,7 @@
             "enum": [
                 "aop",
                 "ber",
+                "omop",
                 "translator",
                 "obo-foundry",
                 "okn"
