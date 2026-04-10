@@ -177,14 +177,32 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
-    to URL: Exceeded 30 redirects.'
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
-    when accessing file'
+  - Athena mapping exports are accessed through the authenticated Athena web application;
+    stable direct public file URLs are not exposed.
+- category: Product
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
+  format: csv
+  id: athena.vocabularies
+  name: Athena Vocabulary Downloads
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  - rxnorm
+  - ndcd
+  - gemscript
+  - medispan-gpi
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  secondary_source:
+  - athena
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 synonyms:
 - CDISC Controlled Terminology
 - CDISC CT

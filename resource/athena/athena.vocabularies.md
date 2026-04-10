@@ -1,14 +1,27 @@
 ---
 category: Product
-description: Downloadable standardized vocabulary bundles for OMOP CDM
+description: Downloadable standardized vocabulary bundles for OMOP CDM assembled through
+  the authenticated Athena web application
 format: csv
 id: athena.vocabularies
 name: Athena Vocabulary Downloads
 original_source:
-- athena
+- snomedct
+- icd10
+- icd10cm
+- mesh
+- loinc
+- cdiscvocab
+- ciel
+- rxnorm
+- ndcd
+- gemscript
+- medispan-gpi
 product_url: https://athena.ohdsi.org/vocabulary/list
+secondary_source:
+- athena
 warnings:
-- File was not able to be retrieved when checked on 2025-12-08_ Error connecting to
-  URL_ Exceeded 30 redirects.
+- Athena vocabulary downloads are prepared through the logged-in web application;
+  stable direct public file URLs are not exposed.
 layout: product_detail
 ---

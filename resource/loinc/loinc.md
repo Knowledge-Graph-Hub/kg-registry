@@ -62,9 +62,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
@@ -77,9 +77,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -92,9 +92,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 503 error
     when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
@@ -240,14 +240,32 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
-    to URL: Exceeded 30 redirects.'
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
-    when accessing file'
+  - Athena mapping exports are accessed through the authenticated Athena web application;
+    stable direct public file URLs are not exposed.
+- category: Product
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
+  format: csv
+  id: athena.vocabularies
+  name: Athena Vocabulary Downloads
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  - rxnorm
+  - ndcd
+  - gemscript
+  - medispan-gpi
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  secondary_source:
+  - athena
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 publications:
 - id: https://doi.org/10.1093/nar/gkad1044
   journal: Nucleic Acids Research

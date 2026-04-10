@@ -103,9 +103,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -156,9 +156,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -661,9 +661,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD

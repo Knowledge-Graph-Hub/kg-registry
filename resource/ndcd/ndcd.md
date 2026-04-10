@@ -42,6 +42,7 @@ products:
   name: NDC Database Text File
   original_source:
   - ndcd
+  product_file_size: 10514948
   product_url: https://www.accessdata.fda.gov/cder/ndctext.zip
 - category: Product
   compression: zip
@@ -51,6 +52,7 @@ products:
   name: NDC Database Excel File
   original_source:
   - ndcd
+  product_file_size: 10514948
   product_url: https://www.accessdata.fda.gov/cder/ndcxls.zip
 - category: ProgrammingInterface
   description: REST API providing programmatic access to National Drug Code data through
@@ -61,6 +63,30 @@ products:
   original_source:
   - ndcd
   product_url: https://open.fda.gov/apis/drug/ndc/
+- category: Product
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
+  format: csv
+  id: athena.vocabularies
+  name: Athena Vocabulary Downloads
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  - rxnorm
+  - ndcd
+  - gemscript
+  - medispan-gpi
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  secondary_source:
+  - athena
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 synonyms:
 - NDC
 - NDCD

@@ -190,9 +190,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -227,9 +227,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 418 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 418 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 418 error
     when accessing file'
 - category: Product
   description: Manually curated disease-gene associations and annotations for amyloidoses
@@ -263,9 +263,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-04-02: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-04-07: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-04-10: FTP error: timed
     out'
 - category: Product
   compression: gzip

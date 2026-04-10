@@ -45,58 +45,58 @@ products:
   format: http
   id: rxnorm.data_files
   name: RxNorm Data Files
-  product_url: https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html
   original_source:
   - rxnorm
+  product_url: https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html
 - category: ProgrammingInterface
   description: RESTful web services providing programmatic access to RxNorm drug terminology
     data including drug names, identifiers, relationships, and properties
   format: http
   id: rxnorm.api
+  is_public: true
   name: RxNorm API
-  product_url: https://rxnav.nlm.nih.gov/RxNormAPIs.html
   original_source:
   - rxnorm
-  is_public: true
+  product_url: https://rxnav.nlm.nih.gov/RxNormAPIs.html
 - category: GraphicalInterface
   description: Interactive web browser for searching and exploring RxNorm drug concepts,
     relationships, and properties with multiple viewing options
   format: http
   id: rxnorm.rxnav
+  is_public: true
   name: RxNav Browser
-  product_url: https://mor.nlm.nih.gov/RxNav/
   original_source:
   - rxnorm
-  is_public: true
+  product_url: https://mor.nlm.nih.gov/RxNav/
 - category: GraphicalInterface
   description: Tool for exploring drug class hierarchies and finding RxNorm drug members
     associated with each class from multiple classification systems
   format: http
   id: rxnorm.rxclass
+  is_public: true
   name: RxClass
-  product_url: https://mor.nlm.nih.gov/RxClass/
   original_source:
   - rxnorm
-  is_public: true
+  product_url: https://mor.nlm.nih.gov/RxClass/
 - category: ProgrammingInterface
   description: Interactive tool allowing users to combine multiple API functions to
     build custom drug information applications
   format: http
   id: rxnorm.rxmix
+  is_public: true
   name: RxMix
-  product_url: https://mor.nlm.nih.gov/RxMix/
   original_source:
   - rxnorm
-  is_public: true
+  product_url: https://mor.nlm.nih.gov/RxMix/
 - category: Product
   description: Locally installable package containing RxNav, RxClass, RxMix tools
     and RESTful APIs for offline use
   format: http
   id: rxnorm.rxnav_in_a_box
   name: RxNav-in-a-Box
-  product_url: https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html
   original_source:
   - rxnorm
+  product_url: https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html
 - category: Product
   description: VANDF data integrated into RxNorm
   id: ndfrt.rxnorm
@@ -106,6 +106,30 @@ products:
   product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
   secondary_source:
   - rxnorm
+- category: Product
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
+  format: csv
+  id: athena.vocabularies
+  name: Athena Vocabulary Downloads
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  - rxnorm
+  - ndcd
+  - gemscript
+  - medispan-gpi
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  secondary_source:
+  - athena
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 publications:
 - category: Publication
   id: PMID:21515544
@@ -113,7 +137,6 @@ publications:
 taxon:
 - NCBITaxon:9606
 ---
-
 # RxNorm
 
 ## Overview

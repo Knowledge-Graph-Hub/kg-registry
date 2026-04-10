@@ -38,9 +38,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 ---

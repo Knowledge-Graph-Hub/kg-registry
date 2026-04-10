@@ -104,14 +104,8 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-12-09: Error connecting
-    to URL: Exceeded 30 redirects.'
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
-    when accessing file'
+  - Athena mapping exports are accessed through the authenticated Athena web application;
+    stable direct public file URLs are not exposed.
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -253,6 +247,30 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/icd10/icd10.tsv
   secondary_source:
   - obo-db-ingest
+- category: Product
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
+  format: csv
+  id: athena.vocabularies
+  name: Athena Vocabulary Downloads
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  - rxnorm
+  - ndcd
+  - gemscript
+  - medispan-gpi
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  secondary_source:
+  - athena
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 publications:
 - id: https://doi.org/10.1186/s12911-021-01534-6
   title: ICD-11 - an international classification of diseases for the twenty-first

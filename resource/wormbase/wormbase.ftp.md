@@ -8,7 +8,7 @@ original_source:
 - wormbase
 product_url: ftp://ftp.wormbase.org/pub/wormbase/
 warnings:
-- File was not able to be retrieved when checked on 2026-04-02_ FTP error_ [Errno
+- File was not able to be retrieved when checked on 2026-04-07_ FTP error_ [Errno
   101] Network is unreachable
 - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ [Errno
   101] Network is unreachable

@@ -33,21 +33,21 @@ products:
   format: owl
   id: mondo.owl
   name: Mondo OWL edition
-  product_file_size: 243027702
+  product_file_size: 241954309
   product_url: http://purl.obolibrary.org/obo/mondo.owl
 - category: OntologyProduct
   description: OBO serialization of mondo.owl.
   format: obo
   id: mondo.obo
   name: Mondo OBO Format edition
-  product_file_size: 51259763
+  product_file_size: 51081036
   product_url: http://purl.obolibrary.org/obo/mondo.obo
 - category: OntologyProduct
   description: Obographs serialization of mondo.owl.
   format: obo
   id: mondo.json
   name: Mondo JSON edition
-  product_file_size: 103341322
+  product_file_size: 102877798
   product_url: http://purl.obolibrary.org/obo/mondo.json
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -55,7 +55,7 @@ products:
   format: owl
   id: mondo.mondo-base.owl
   name: Mondo Base Release
-  product_file_size: 228298517
+  product_file_size: 227201131
   product_url: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
 - category: OntologyProduct
   description: The main ontology classes and their hierarchies, without references
@@ -63,7 +63,7 @@ products:
   format: owl
   id: mondo.mondo-simple.owl
   name: Mondo Simple Release
-  product_file_size: 216652356
+  product_file_size: 215504840
   product_url: http://purl.obolibrary.org/obo/mondo/mondo-simple.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

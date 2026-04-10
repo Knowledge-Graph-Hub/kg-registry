@@ -188,6 +188,7 @@ gallont	Plant Gall Ontology	Ontology	https://adeans.github.io/gallont/	resource/
 gard	Gard	DataSource		resource/gard/gard.md
 gaz	Gazetteer	Ontology	http://environmentontology.github.io/gaz/	resource/gaz/gaz.md
 gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohorts/GECKO	resource/gecko/gecko.md
+gemscript	Gemscript	DataSource	https://help.visionhealth.co.uk/DLM860/consultation_manager/Content/Whats%20New.htm	resource/gemscript/gemscript.md
 gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencode.md
 gene-expression-atlas-okn	Gene Expression Atlas	KnowledgeGraph	https://www.ebi.ac.uk/gxa/home	resource/gene-expression-atlas-okn/gene-expression-atlas-okn.md
 gene-ontology	Gene Ontology (GO)	Ontology	https://geneontology.org/	resource/gene-ontology/gene-ontology.md
@@ -290,6 +291,7 @@ mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditio
 mcro	Model Card Report Ontology	Ontology	https://github.com/UTHealth-Ontology/MCRO	resource/mcro/mcro.md
 mechreponet	MechRepoNet	KnowledgeGraph	https://github.com/SuLab/MechRepoNet	resource/mechreponet/mechreponet.md
 mediadive	MediaDive	DataSource	https://mediadive.dsmz.de/	resource/mediadive/mediadive.md
+medispan-gpi	Medi-Span Generic Product Identifier	DataSource	https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi	resource/medispan-gpi/medispan-gpi.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
 metatraits	metaTraits	KnowledgeGraph	https://metatraits.embl.de/	resource/metatraits/metatraits.md
@@ -366,6 +368,7 @@ ogi	Ontology for genetic interval	Ontology	https://code.google.com/p/ontology-fo
 ogms	Ontology for General Medical Science	Ontology	https://github.com/OGMS/ogms	resource/ogms/ogms.md
 ogsf	Ontology of Genetic Susceptibility Factor	Ontology	https://github.com/linikujp/OGSF	resource/ogsf/ogsf.md
 ohd	Oral Health and Disease Ontology	Ontology	https://purl.obolibrary.org/obo/ohd/home	resource/ohd/ohd.md
+ohdsi	OHDSI	Aggregator	https://www.ohdsi.org/	resource/ohdsi/ohdsi.md
 ohmi	Ontology of Host-Microbiome Interactions	Ontology	https://github.com/ohmi-ontology/ohmi	resource/ohmi/ohmi.md
 ohpi	Ontology of Host Pathogen Interactions	Ontology	https://github.com/OHPI/ohpi	resource/ohpi/ohpi.md
 okn-void	OKN VoID graph descriptions	KnowledgeGraph	https://frink.renci.org/registry/kgs/okn-void/	resource/okn-void/okn-void.md

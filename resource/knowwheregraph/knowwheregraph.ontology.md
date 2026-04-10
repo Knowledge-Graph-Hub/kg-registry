@@ -8,6 +8,10 @@ is_public: true
 name: KnowWhereGraph Ontology Documentation
 product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
 warnings:
+- File was not able to be retrieved when checked on 2026-04-07_ Error connecting to
+  URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries exceeded
+  with url_ /lod/ontology (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+  certificate verify failed_ certificate has expired (_ssl.c_1000)')))
 - File was not able to be retrieved when checked on 2026-04-02_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when

@@ -8,7 +8,7 @@ original_source:
 - humannet
 product_url: https://www.inetbio.org/humannet/download.php
 warnings:
-- File was not able to be retrieved when checked on 2026-04-02_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-04-07_ Timeout connecting
   to URL
 layout: product_detail
 ---

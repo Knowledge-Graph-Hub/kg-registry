@@ -217,6 +217,7 @@ gdc,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
 gelinea,active,PASS
+gemscript,active,PASS
 genage,active,PASS
 gencc,active,PASS
 gencode,active,PASS
@@ -341,6 +342,7 @@ mechreponet,active,PASS
 medgen,active,PASS
 medi,active,PASS
 mediadive,active,PASS
+medispan-gpi,active,PASS
 medkg,active,PASS
 medlineplus,active,PASS
 mesh,active,PASS
@@ -425,6 +427,7 @@ offsides,active,PASS
 ogg,active,PASS
 ogms,active,PASS
 ohd,active,PASS
+ohdsi,active,PASS
 ohmi,active,PASS
 ohpi,active,PASS
 okn-void,active,PASS

@@ -45,9 +45,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 taxon:

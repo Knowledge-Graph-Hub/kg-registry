@@ -6,7 +6,7 @@ id: foodb.data.experimental_msms
 name: FooDB Experimental MS-MS Spectra
 product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-04-02_ No Content-Length
+- File was not able to be retrieved when checked on 2026-04-07_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found
