@@ -57,6 +57,8 @@ products:
   - cdiscvocab
   - ciel
   - rxnorm
+  - ndcd
+  - gemscript
   product_url: https://athena.ohdsi.org/vocabulary/list
   secondary_source:
   - athena
