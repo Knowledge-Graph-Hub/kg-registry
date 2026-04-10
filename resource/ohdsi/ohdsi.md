@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Aggregator
+collection:
+- omop
 contacts:
 - category: Organization
   contact_details:

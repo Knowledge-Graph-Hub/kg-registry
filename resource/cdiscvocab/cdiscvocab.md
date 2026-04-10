@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Aggregator
+collection:
+- omop
 contacts:
 - category: Organization
   contact_details:
@@ -24,7 +26,7 @@ domains:
 - information technology
 homepage_url: https://www.cdisc.org/standards/terminology/controlled-terminology
 id: cdiscvocab
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: CDISC Controlled Terminology
 products:

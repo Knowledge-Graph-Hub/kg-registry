@@ -1029,6 +1029,11 @@ enums:
           A resource or product relevant to the US Department of Energy
           Biological and Environmental Research (BER) program.
         meaning: https://www.energy.gov/science/ber/biological-and-environmental-research
+      omop:
+        description: >-
+          This entity is part of the OMOP Common Data Model ecosystem,
+          including vocabularies and related standards used in OHDSI workflows.
+        meaning: https://ohdsi.github.io/CommonDataModel/
       translator:
         description: >-
           This entity is part of those developed and used

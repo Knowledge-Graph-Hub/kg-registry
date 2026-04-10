@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Aggregator
+collection:
+- omop
 contacts:
 - category: Individual
   contact_details:
@@ -28,7 +30,7 @@ domains:
 - information technology
 homepage_url: https://openconceptlab.org/project/ciel/
 id: ciel
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

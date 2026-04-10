@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Ontology
+collection:
+- omop
 contacts:
 - category: Organization
   contact_details:
@@ -31,7 +33,7 @@ domains:
 homepage_url: https://www.snomed.org/
 id: snomedct
 infores_id: snomedct
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.snomed.org/snomed-ct/get-snomed
