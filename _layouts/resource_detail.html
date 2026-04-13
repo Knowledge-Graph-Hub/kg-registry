@@ -195,18 +195,59 @@ layout: default
       </div>
     </div>
 
-    {% if page.warnings %}
-    {% for warning in page.warnings %}
-    <div class="alert alert-warning" style="max-width: 72rem" role="alert">
-      ⚠ {{warning}}
-    </div>
-    {% endfor %}
-    {% endif %}
+	    {% if page.warnings %}
+	    {% for warning in page.warnings %}
+	    <div class="alert alert-warning" style="max-width: 72rem" role="alert">
+	      ⚠ {{warning}}
+	    </div>
+	    {% endfor %}
+	    {% endif %}
 
-    {% if page.contacts %}
-    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="contacts">
-      <div class="card-header">
-        <h4><i class="bi bi-person-workspace"></i> Contacts</h4>
+	    {% if page.products and page.products.size > 0 %}
+	    {% capture resource_product_summary_json %}
+	    [
+	      {% for p in page.products %}
+	        {% assign first_segment = p.id | split: '.' | first %}
+	        {% assign summary_source_id = first_segment %}
+	        {% assign summary_source_url = "/resource/" | append: first_segment | append: "/" | append: first_segment | append: ".html" %}
+	        {% if p.secondary_source and p.secondary_source contains page.id %}
+	          {% assign summary_source_id = page.id %}
+	          {% assign summary_source_url = page.url %}
+	        {% elsif p.secondary_source %}
+	          {% assign summary_source_id = p.secondary_source | first %}
+	          {% assign summary_source_url = "/resource/" | append: summary_source_id | append: "/" | append: summary_source_id | append: ".html" %}
+	        {% elsif p.id == page.id or first_segment == page.id %}
+	          {% assign summary_source_id = page.id %}
+	          {% assign summary_source_url = page.url %}
+	        {% endif %}
+	        {
+	          "id": {{ p.id | jsonify }},
+	          "category": {{ p.category | default: "Product" | jsonify }},
+	          "sourceId": {{ summary_source_id | jsonify }},
+	          "sourceUrl": {{ summary_source_url | relative_url | jsonify }}
+	        }{% unless forloop.last %},{% endunless %}
+	      {% endfor %}
+	    ]
+	    {% endcapture %}
+	    <div class="card px-0 resource-product-summary-card" style="margin-bottom: 1.5em; max-width: 72rem" id="product-summary">
+	      <div class="card-header">
+	        <h4><i class="bi bi-grid-1x2-fill"></i> Product Summary</h4>
+	      </div>
+	      <div class="card-body resource-product-summary"
+	        data-resource-id="{{ page.id }}"
+	        data-resource-url="{{ page.url | relative_url }}">
+	        <div class="resource-product-summary-chart">
+	          <div class="resource-product-summary-treemap" data-summary-treemap aria-label="Treemap of products by source and type"></div>
+	        </div>
+	        <script type="application/json" class="resource-product-summary-data">{{ resource_product_summary_json | strip }}</script>
+	      </div>
+	    </div>
+	    {% endif %}
+
+	    {% if page.contacts %}
+	    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="contacts">
+	      <div class="card-header">
+	        <h4><i class="bi bi-person-workspace"></i> Contacts</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for c in page.contacts %}

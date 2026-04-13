@@ -107,8 +107,32 @@ Custom blockquote formatting
 }
 
 .header-card-row {
-    max-width: 72rem;
+    max-width: calc(72rem + var(--bs-gutter-x));
     margin-bottom: 1.5rem;
+}
+
+.resource-product-summary {
+    display: block;
+}
+
+.resource-product-summary-chart {
+    min-width: 0;
+}
+
+.resource-product-summary-treemap {
+    min-height: 8rem;
+    border: 1px solid #dbe5ef;
+    border-radius: 0.85rem;
+    background:
+        radial-gradient(circle at top left, rgba(221, 235, 247, 0.8), transparent 42%),
+        linear-gradient(180deg, #fbfdff 0%, #f3f7fb 100%);
+    padding: 0.5rem;
+}
+
+.resource-product-summary-treemap svg {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .registry-counts {

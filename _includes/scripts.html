@@ -12,6 +12,9 @@
         // Create rotating network logo
         createNetworkLogo();
         
+        // Render product summaries on resource pages
+        renderResourceProductSummaries();
+
         // Call the async function without waiting for it
         renderProvenanceDiagrams().catch(console.error);
 
@@ -20,6 +23,7 @@
             // Debounce the resize event
             if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
             this.resizeTimeout = setTimeout(function () {
+                renderResourceProductSummaries();
                 renderProvenanceDiagrams().catch(console.error);
             }, 200);
         });
@@ -403,6 +407,509 @@
         "GraphicalInterface": "window",
         "ProgrammingInterface": "code-square"
     };
+
+    const productCategoryLabels = {
+        "DataProduct": { singular: "Data Product", plural: "Data Products" },
+        "GraphProduct": { singular: "Graph Product", plural: "Graph Products" },
+        "MappingProduct": { singular: "Mapping Product", plural: "Mapping Products" },
+        "ProcessProduct": { singular: "Process Product", plural: "Process Products" },
+        "DataModelProduct": { singular: "Data Model Product", plural: "Data Model Products" },
+        "OntologyProduct": { singular: "Ontology Product", plural: "Ontology Products" },
+        "GraphicalInterface": { singular: "Graphical Interface", plural: "Graphical Interfaces" },
+        "ProgrammingInterface": { singular: "Programming Interface", plural: "Programming Interfaces" },
+        "DocumentationProduct": { singular: "Documentation Product", plural: "Documentation Products" },
+        "Product": { singular: "Product", plural: "Products" }
+    };
+
+    const maxTreemapSourceGroups = 8;
+    const initialAggregateSourceThreshold = 1;
+    const maxAggregateSourceThreshold = 3;
+
+    function getProductCategoryLabels(category) {
+        if (productCategoryLabels[category]) {
+            return productCategoryLabels[category];
+        }
+
+        const fallback = (category || 'Product')
+            .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+            .trim();
+
+        return {
+            singular: fallback,
+            plural: fallback.endsWith('s') ? fallback : `${fallback}s`
+        };
+    }
+
+    function getProductCategoryDisplayName(category, count) {
+        const labels = getProductCategoryLabels(category);
+        return count === 1 ? labels.singular : labels.plural;
+    }
+
+    function truncateSummaryLabel(text, width) {
+        const maxChars = Math.max(8, Math.floor(width / 7));
+        if (text.length <= maxChars) {
+            return text;
+        }
+        return `${text.slice(0, Math.max(5, maxChars - 1)).trimEnd()}…`;
+    }
+
+    function buildTreemapSourceLabelLines(name, count, width) {
+        const countLabel = `(${count})`;
+
+        if (width >= 150) {
+            return [truncateSummaryLabel(`${name} ${countLabel}`, width)];
+        }
+
+        return [
+            truncateSummaryLabel(name, width),
+            truncateSummaryLabel(countLabel, width)
+        ];
+    }
+
+    function renderResourceProductSummaries() {
+        const summaryContainers = document.querySelectorAll('.resource-product-summary');
+
+        summaryContainers.forEach(container => {
+            const dataEl = container.querySelector('.resource-product-summary-data');
+            if (!dataEl) {
+                return;
+            }
+
+            try {
+                const products = JSON.parse(dataEl.textContent);
+                renderResourceProductSummary(container, products);
+            } catch (error) {
+                console.error('Error rendering resource product summary:', error);
+            }
+        });
+    }
+
+    function renderResourceProductSummary(container, products) {
+        const resourceId = container.getAttribute('data-resource-id');
+        const treemapEl = container.querySelector('[data-summary-treemap]');
+
+        if (!Array.isArray(products) || products.length === 0) {
+            if (treemapEl) {
+                treemapEl.innerHTML = '';
+            }
+            return;
+        }
+
+        const sourceCounts = new Map();
+        const sourceTypeCounts = new Map();
+
+        products.forEach(product => {
+            const category = product.category || 'Product';
+            const sourceId = product.sourceId || resourceId;
+            const sourceUrl = product.sourceUrl || '';
+
+            if (!sourceCounts.has(sourceId)) {
+                sourceCounts.set(sourceId, {
+                    id: sourceId,
+                    url: sourceUrl,
+                    isCurrent: sourceId === resourceId,
+                    count: 0
+                });
+            }
+            sourceCounts.get(sourceId).count += 1;
+
+            if (!sourceTypeCounts.has(sourceId)) {
+                sourceTypeCounts.set(sourceId, new Map());
+            }
+
+            const nestedTypeCounts = sourceTypeCounts.get(sourceId);
+            if (!nestedTypeCounts.has(category)) {
+                nestedTypeCounts.set(category, {
+                    category,
+                    count: 0
+                });
+            }
+            nestedTypeCounts.get(category).count += 1;
+        });
+
+        const sourceEntries = sortTreemapSourceEntries(Array.from(sourceCounts.values()));
+
+        const treemapSummary = buildTreemapSourceSummary(sourceEntries, sourceTypeCounts);
+
+        renderResourceProductTreemap(treemapEl, {
+            sourceEntries: treemapSummary.sourceEntries,
+            sourceTypeCounts: treemapSummary.sourceTypeCounts
+        });
+    }
+
+    function buildTreemapSourceSummary(sourceEntries, sourceTypeCounts) {
+        if (sourceEntries.length <= maxTreemapSourceGroups) {
+            return { sourceEntries, sourceTypeCounts };
+        }
+
+        const externalEntries = sourceEntries.filter(entry => !entry.isCurrent);
+        if (externalEntries.length === 0) {
+            return { sourceEntries, sourceTypeCounts };
+        }
+
+        let aggregateThreshold = initialAggregateSourceThreshold;
+        let aggregatedSourceIds = [];
+
+        while (aggregateThreshold <= maxAggregateSourceThreshold) {
+            aggregatedSourceIds = externalEntries
+                .filter(entry => entry.count <= aggregateThreshold)
+                .map(entry => entry.id);
+
+            if (aggregatedSourceIds.length > 0) {
+                const remainingGroups = sourceEntries.length - aggregatedSourceIds.length + 1;
+                if (remainingGroups <= maxTreemapSourceGroups || aggregateThreshold === maxAggregateSourceThreshold) {
+                    break;
+                }
+            }
+
+            aggregateThreshold += 1;
+        }
+
+        if (aggregatedSourceIds.length === 0) {
+            return { sourceEntries, sourceTypeCounts };
+        }
+
+        const aggregatedSourceSet = new Set(aggregatedSourceIds);
+        const aggregatedTypeCounts = new Map();
+        let aggregatedCount = 0;
+
+        aggregatedSourceIds.forEach(sourceId => {
+            aggregatedCount += sourceTypeCounts.get(sourceId)
+                ? Array.from(sourceTypeCounts.get(sourceId).values()).reduce((sum, entry) => sum + entry.count, 0)
+                : 0;
+
+            (sourceTypeCounts.get(sourceId) || new Map()).forEach((typeEntry, category) => {
+                if (!aggregatedTypeCounts.has(category)) {
+                    aggregatedTypeCounts.set(category, {
+                        category,
+                        count: 0
+                    });
+                }
+                aggregatedTypeCounts.get(category).count += typeEntry.count;
+            });
+        });
+
+        const nextSourceEntries = sourceEntries
+            .filter(entry => !aggregatedSourceSet.has(entry.id))
+            .concat([{
+                id: '__other_resources__',
+                name: 'Other Resources',
+                url: '',
+                isCurrent: false,
+                isAggregate: true,
+                count: aggregatedCount,
+                aggregatedSourceIds
+            }]);
+
+        const nextSourceTypeCounts = new Map();
+        sourceTypeCounts.forEach((value, key) => {
+            if (!aggregatedSourceSet.has(key)) {
+                nextSourceTypeCounts.set(key, value);
+            }
+        });
+        nextSourceTypeCounts.set('__other_resources__', aggregatedTypeCounts);
+
+        return {
+            sourceEntries: sortTreemapSourceEntries(nextSourceEntries),
+            sourceTypeCounts: nextSourceTypeCounts
+        };
+    }
+
+    function sortTreemapSourceEntries(sourceEntries) {
+        return [...sourceEntries].sort((a, b) => {
+            if (!!a.isCurrent !== !!b.isCurrent) {
+                return a.isCurrent ? -1 : 1;
+            }
+            if (!!a.isAggregate !== !!b.isAggregate) {
+                return a.isAggregate ? 1 : -1;
+            }
+            if (b.count !== a.count) {
+                return b.count - a.count;
+            }
+            return (a.name || a.id).localeCompare(b.name || b.id);
+        });
+    }
+
+    function tileTreemapSourceGroups(node, x0, y0, x1, y1) {
+        const children = node.children || [];
+        if (children.length === 0) {
+            return;
+        }
+
+        if (children.length === 1) {
+            const [child] = children;
+            child.x0 = x0;
+            child.x1 = x1;
+            child.y0 = y0;
+            child.y1 = y1;
+            return;
+        }
+
+        const totalValue = children.reduce((sum, child) => sum + (child.value || 0), 0);
+        const totalWidth = x1 - x0;
+        let leftX = x0;
+        let rightX = x1;
+        let middleChildren = children;
+
+        const firstChild = children[0];
+        if (firstChild?.data?.isCurrent) {
+            const leftWidth = totalValue > 0 ? totalWidth * ((firstChild.value || 0) / totalValue) : 0;
+            firstChild.x0 = leftX;
+            firstChild.x1 = leftX + leftWidth;
+            firstChild.y0 = y0;
+            firstChild.y1 = y1;
+            leftX += leftWidth;
+            middleChildren = children.slice(1);
+        }
+
+        const lastChild = middleChildren[middleChildren.length - 1];
+        if (lastChild?.data?.isAggregate) {
+            const rightWidth = totalValue > 0 ? totalWidth * ((lastChild.value || 0) / totalValue) : 0;
+            lastChild.x0 = rightX - rightWidth;
+            lastChild.x1 = rightX;
+            lastChild.y0 = y0;
+            lastChild.y1 = y1;
+            rightX -= rightWidth;
+            middleChildren = middleChildren.slice(0, -1);
+        }
+
+        if (middleChildren.length === 0) {
+            return;
+        }
+
+        if (middleChildren.length === 1) {
+            const [child] = middleChildren;
+            child.x0 = leftX;
+            child.x1 = rightX;
+            child.y0 = y0;
+            child.y1 = y1;
+            return;
+        }
+
+        const middleNode = {
+            children: middleChildren,
+            value: middleChildren.reduce((sum, child) => sum + (child.value || 0), 0)
+        };
+        d3.treemapBinary(middleNode, leftX, y0, rightX, y1);
+    }
+
+    function renderResourceProductTreemap(container, summary) {
+        if (!container) {
+            return;
+        }
+
+        container.innerHTML = '';
+
+        const leafCount = summary.sourceEntries.reduce((sum, source) => {
+            const typeCountMap = summary.sourceTypeCounts.get(source.id);
+            return sum + (typeCountMap ? typeCountMap.size : 0);
+        }, 0);
+
+        const width = Math.max(280, Math.floor(container.getBoundingClientRect().width) - 16);
+        const height = Math.max(
+            120,
+            Math.min(
+                340,
+                summary.sourceEntries.length * 30 + leafCount * 12 + 36
+            )
+        );
+
+        const hierarchyData = {
+            name: 'Products',
+            children: summary.sourceEntries.map((source, index) => ({
+                name: source.name || (source.isCurrent ? 'This Resource' : source.id),
+                sourceId: source.id,
+                sourceUrl: source.url,
+                isCurrent: source.isCurrent,
+                isAggregate: source.isAggregate,
+                order: index,
+                aggregatedSourceIds: source.aggregatedSourceIds || [],
+                children: Array.from(summary.sourceTypeCounts.get(source.id).values())
+                    .sort((a, b) => {
+                        if (b.count !== a.count) {
+                            return b.count - a.count;
+                        }
+                        return getProductCategoryDisplayName(a.category, a.count)
+                            .localeCompare(getProductCategoryDisplayName(b.category, b.count));
+                    })
+                    .map(typeEntry => ({
+                        name: getProductCategoryDisplayName(typeEntry.category, typeEntry.count),
+                        category: typeEntry.category,
+                        sourceId: source.id,
+                        value: typeEntry.count
+                    }))
+            }))
+        };
+
+        const root = d3.hierarchy(hierarchyData)
+            .sum(d => d.value || 0)
+            .sort((a, b) => {
+                if (a.depth === 1 && b.depth === 1) {
+                    return (a.data.order || 0) - (b.data.order || 0);
+                }
+                return (b.value || 0) - (a.value || 0);
+            });
+
+        const sourceTile = d3.treemapSquarify.ratio(1.1);
+
+        d3.treemap()
+            .size([width, height])
+            .paddingOuter(6)
+            .paddingInner(4)
+            .paddingTop(node => (node.depth === 1 ? 32 : 0))
+            .tile((node, x0, y0, x1, y1) => {
+                if (node.depth === 0) {
+                    tileTreemapSourceGroups(node, x0, y0, x1, y1);
+                } else {
+                    sourceTile(node, x0, y0, x1, y1);
+                }
+            })
+            .round(true)(root);
+
+        const svg = d3.select(container)
+            .append('svg')
+            .attr('viewBox', `0 0 ${width} ${height}`)
+            .attr('role', 'img')
+            .attr('aria-label', 'Products grouped by source and product type');
+
+        const sourcePalette = [
+            '#4c78a8',
+            '#f58518',
+            '#54a24b',
+            '#e45756',
+            '#72b7b2',
+            '#b279a2',
+            '#ff9da6',
+            '#9d755d'
+        ];
+
+        const sourceColor = d3.scaleOrdinal()
+            .domain(summary.sourceEntries.map(entry => entry.id))
+            .range(sourcePalette);
+
+        svg.append('g')
+            .selectAll('rect')
+            .data(root.children || [])
+            .enter()
+            .append('rect')
+            .attr('x', d => d.x0)
+            .attr('y', d => d.y0)
+            .attr('width', d => Math.max(0, d.x1 - d.x0))
+            .attr('height', d => Math.max(0, d.y1 - d.y0))
+            .attr('rx', 10)
+            .attr('ry', 10)
+            .attr('fill', 'none')
+            .attr('stroke', d => sourceColor(d.data.sourceId))
+            .attr('stroke-width', 1.5)
+            .attr('opacity', 0.55);
+
+        const sourceLabels = svg.append('g')
+            .selectAll('g')
+            .data((root.children || []).filter(d => (d.x1 - d.x0) > 56 && (d.y1 - d.y0) > 36))
+            .enter()
+            .append('g');
+
+        sourceLabels.each(function(d) {
+            const selection = d3.select(this);
+            const textTarget = (!d.data.isCurrent && d.data.sourceUrl)
+                ? selection.append('a')
+                    .attr('href', d.data.sourceUrl)
+                    .attr('target', '_self')
+                : selection;
+
+            const lines = buildTreemapSourceLabelLines(d.data.name, d.value, d.x1 - d.x0 - 14);
+            const text = textTarget.append('text')
+                .attr('x', d.x0 + 8)
+                .attr('y', d.y0 + 15)
+                .attr('fill', sourceColor(d.data.sourceId))
+                .attr('font-size', 14)
+                .attr('font-weight', 700)
+                .style('text-decoration', (!d.data.isCurrent && d.data.sourceUrl) ? 'underline' : null)
+                .style('cursor', (!d.data.isCurrent && d.data.sourceUrl) ? 'pointer' : null);
+
+            lines.forEach((line, index) => {
+                text.append('tspan')
+                    .attr('x', d.x0 + 8)
+                    .attr('dy', index === 0 ? 0 : 13)
+                    .text(line);
+            });
+
+            const sourceTitle = d.data.isAggregate && d.data.aggregatedSourceIds.length > 0
+                ? `${d.data.name} (${d.value}): ${d.data.aggregatedSourceIds.join(', ')}`
+                : `${d.data.name} (${d.value})`;
+
+            selection.append('title')
+                .text(sourceTitle);
+        });
+
+        const leaves = svg.append('g')
+            .selectAll('g')
+            .data(root.leaves())
+            .enter()
+            .append('g');
+
+        leaves.append('rect')
+            .attr('x', d => d.x0)
+            .attr('y', d => d.y0)
+            .attr('width', d => Math.max(0, d.x1 - d.x0))
+            .attr('height', d => Math.max(0, d.y1 - d.y0))
+            .attr('rx', 8)
+            .attr('ry', 8)
+            .attr('fill', d => {
+                const base = d3.color(sourceColor(d.data.sourceId));
+                if (!base) {
+                    return '#d7e6f4';
+                }
+                base.opacity = 0.82;
+                return base.formatRgb();
+            })
+            .attr('stroke', '#ffffff')
+            .attr('stroke-width', 1.25);
+
+        leaves.append('title')
+            .text(d => `${d.data.value} ${d.data.name} from ${d.parent.data.name}`);
+
+        leaves.each(function(d) {
+            const leaf = d3.select(this);
+            const width = d.x1 - d.x0;
+            const height = d.y1 - d.y0;
+            const label = `${d.data.value} ${d.data.name}`;
+            const countOnlyLabel = `${d.data.value}`;
+
+            if (width < 64 || height < 28) {
+                return;
+            }
+
+            const text = leaf.append('text')
+                .attr('x', d.x0 + 8)
+                .attr('y', d.y0 + 18)
+                .attr('fill', '#102a43')
+                .attr('font-size', width > 140 && height > 54 ? 15 : 13)
+                .attr('font-weight', 600);
+
+            if (width > 140 && height > 54) {
+                text.append('tspan')
+                    .attr('x', d.x0 + 8)
+                    .attr('dy', 0)
+                    .text(d.data.value);
+
+                text.append('tspan')
+                    .attr('x', d.x0 + 8)
+                    .attr('dy', 16)
+                    .text(truncateSummaryLabel(d.data.name, width - 16));
+            } else {
+                const fullLabel = truncateSummaryLabel(label, width - 16);
+                const countFits = countOnlyLabel.length <= Math.max(1, Math.floor((width - 16) / 7));
+                const fullLabelLooksTruncated = fullLabel.includes('…');
+
+                text.text(
+                    fullLabelLooksTruncated && countFits
+                        ? countOnlyLabel
+                        : fullLabel
+                );
+            }
+        });
+    }
 
     // Function to validate PROV export data
     function validateProvData(data) {
