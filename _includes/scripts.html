@@ -514,15 +514,7 @@
             nestedTypeCounts.get(category).count += 1;
         });
 
-        const sourceEntries = Array.from(sourceCounts.values()).sort((a, b) => {
-            if (a.isCurrent !== b.isCurrent) {
-                return a.isCurrent ? -1 : 1;
-            }
-            if (b.count !== a.count) {
-                return b.count - a.count;
-            }
-            return a.id.localeCompare(b.id);
-        });
+        const sourceEntries = sortTreemapSourceEntries(Array.from(sourceCounts.values()));
 
         const treemapSummary = buildTreemapSourceSummary(sourceEntries, sourceTypeCounts);
 
@@ -594,16 +586,7 @@
                 isAggregate: true,
                 count: aggregatedCount,
                 aggregatedSourceIds
-            }])
-            .sort((a, b) => {
-                if (a.isCurrent !== b.isCurrent) {
-                    return a.isCurrent ? -1 : 1;
-                }
-                if (b.count !== a.count) {
-                    return b.count - a.count;
-                }
-                return (a.name || a.id).localeCompare(b.name || b.id);
-            });
+            }]);
 
         const nextSourceTypeCounts = new Map();
         sourceTypeCounts.forEach((value, key) => {
@@ -614,9 +597,24 @@
         nextSourceTypeCounts.set('__other_resources__', aggregatedTypeCounts);
 
         return {
-            sourceEntries: nextSourceEntries,
+            sourceEntries: sortTreemapSourceEntries(nextSourceEntries),
             sourceTypeCounts: nextSourceTypeCounts
         };
+    }
+
+    function sortTreemapSourceEntries(sourceEntries) {
+        return [...sourceEntries].sort((a, b) => {
+            if (!!a.isCurrent !== !!b.isCurrent) {
+                return a.isCurrent ? -1 : 1;
+            }
+            if (!!a.isAggregate !== !!b.isAggregate) {
+                return a.isAggregate ? 1 : -1;
+            }
+            if (b.count !== a.count) {
+                return b.count - a.count;
+            }
+            return (a.name || a.id).localeCompare(b.name || b.id);
+        });
     }
 
     function renderResourceProductTreemap(container, summary) {
@@ -642,12 +640,13 @@
 
         const hierarchyData = {
             name: 'Products',
-            children: summary.sourceEntries.map(source => ({
+            children: summary.sourceEntries.map((source, index) => ({
                 name: source.name || (source.isCurrent ? 'This Resource' : source.id),
                 sourceId: source.id,
                 sourceUrl: source.url,
                 isCurrent: source.isCurrent,
                 isAggregate: source.isAggregate,
+                order: index,
                 aggregatedSourceIds: source.aggregatedSourceIds || [],
                 children: Array.from(summary.sourceTypeCounts.get(source.id).values())
                     .sort((a, b) => {
@@ -668,13 +667,27 @@
 
         const root = d3.hierarchy(hierarchyData)
             .sum(d => d.value || 0)
-            .sort((a, b) => (b.value || 0) - (a.value || 0));
+            .sort((a, b) => {
+                if (a.depth === 1 && b.depth === 1) {
+                    return (a.data.order || 0) - (b.data.order || 0);
+                }
+                return (b.value || 0) - (a.value || 0);
+            });
+
+        const sourceTile = d3.treemapSquarify.ratio(1.1);
 
         d3.treemap()
             .size([width, height])
             .paddingOuter(6)
             .paddingInner(4)
             .paddingTop(node => (node.depth === 1 ? 24 : 0))
+            .tile((node, x0, y0, x1, y1) => {
+                if (node.depth === 0) {
+                    d3.treemapDice(node, x0, y0, x1, y1);
+                } else {
+                    sourceTile(node, x0, y0, x1, y1);
+                }
+            })
             .round(true)(root);
 
         const svg = d3.select(container)
