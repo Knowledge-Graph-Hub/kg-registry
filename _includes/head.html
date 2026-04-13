@@ -112,76 +112,7 @@ Custom blockquote formatting
 }
 
 .resource-product-summary {
-    display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
-    gap: 1.25rem;
-    align-items: start;
-}
-
-.resource-product-summary-copy {
-    min-width: 0;
-}
-
-.resource-product-summary-total {
-    color: #4f6173;
-}
-
-.resource-product-summary-lists {
-    display: grid;
-    gap: 1rem;
-}
-
-.resource-product-summary-heading {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-.resource-product-summary-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-}
-
-.resource-product-summary-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.45rem 0.75rem;
-    border: 1px solid #d9e4ef;
-    border-radius: 999px;
-    background: linear-gradient(180deg, #fbfdff 0%, #eef5fb 100%);
-    color: #2d4257;
-    font-size: 0.95rem;
-    line-height: 1.2;
-}
-
-.resource-product-summary-chip:hover {
-    text-decoration: none;
-    color: #203244;
-    border-color: #bfd3e4;
-    background: linear-gradient(180deg, #ffffff 0%, #e8f2fb 100%);
-}
-
-.resource-product-summary-chip-count {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 1.75rem;
-    padding: 0.1rem 0.45rem;
-    border-radius: 999px;
-    background: #dceaf7;
-    color: #234b6f;
-    font-weight: 700;
-}
-
-.resource-product-summary-chip-label {
-    overflow-wrap: normal;
-    word-break: normal;
-}
-
-.resource-product-summary-empty {
-    color: #6c757d;
-    font-style: italic;
+    display: block;
 }
 
 .resource-product-summary-chart {
@@ -202,12 +133,6 @@ Custom blockquote formatting
     display: block;
     width: 100%;
     height: auto;
-}
-
-@media (max-width: 992px) {
-    .resource-product-summary {
-        grid-template-columns: 1fr;
-    }
 }
 
 .registry-counts {

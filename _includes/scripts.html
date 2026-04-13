@@ -469,18 +469,9 @@
 
     function renderResourceProductSummary(container, products) {
         const resourceId = container.getAttribute('data-resource-id');
-        const resourceUrl = container.getAttribute('data-resource-url') || '';
-        const totalEl = container.querySelector('[data-summary-total]');
-        const sourcesEl = container.querySelector('[data-summary-sources]');
-        const typesEl = container.querySelector('[data-summary-types]');
         const treemapEl = container.querySelector('[data-summary-treemap]');
 
         if (!Array.isArray(products) || products.length === 0) {
-            if (totalEl) {
-                totalEl.textContent = 'No products summarized yet.';
-            }
-            renderSummaryChips(sourcesEl, []);
-            renderSummaryChips(typesEl, []);
             if (treemapEl) {
                 treemapEl.innerHTML = '';
             }
@@ -488,13 +479,12 @@
         }
 
         const sourceCounts = new Map();
-        const typeCounts = new Map();
         const sourceTypeCounts = new Map();
 
         products.forEach(product => {
             const category = product.category || 'Product';
             const sourceId = product.sourceId || resourceId;
-            const sourceUrl = product.sourceUrl || resourceUrl;
+            const sourceUrl = product.sourceUrl || '';
 
             if (!sourceCounts.has(sourceId)) {
                 sourceCounts.set(sourceId, {
@@ -505,14 +495,6 @@
                 });
             }
             sourceCounts.get(sourceId).count += 1;
-
-            if (!typeCounts.has(category)) {
-                typeCounts.set(category, {
-                    category,
-                    count: 0
-                });
-            }
-            typeCounts.get(category).count += 1;
 
             if (!sourceTypeCounts.has(sourceId)) {
                 sourceTypeCounts.set(sourceId, new Map());
@@ -538,79 +520,10 @@
             return a.id.localeCompare(b.id);
         });
 
-        const typeEntries = Array.from(typeCounts.values()).sort((a, b) => {
-            if (b.count !== a.count) {
-                return b.count - a.count;
-            }
-            return getProductCategoryDisplayName(a.category, a.count)
-                .localeCompare(getProductCategoryDisplayName(b.category, b.count));
-        });
-
-        if (totalEl) {
-            const productCountLabel = products.length === 1 ? 'product' : 'products';
-            const sourceCountLabel = sourceEntries.length === 1 ? 'source' : 'sources';
-            const typeCountLabel = typeEntries.length === 1 ? 'product type' : 'product types';
-            totalEl.textContent = `${products.length} ${productCountLabel} across ${sourceEntries.length} ${sourceCountLabel} and ${typeEntries.length} ${typeCountLabel}.`;
-        }
-
-        renderSummaryChips(
-            sourcesEl,
-            sourceEntries.map(entry => ({
-                count: entry.count,
-                label: entry.isCurrent ? 'This Resource' : entry.id,
-                href: entry.isCurrent ? null : entry.url
-            }))
-        );
-
-        renderSummaryChips(
-            typesEl,
-            typeEntries.map(entry => ({
-                count: entry.count,
-                label: getProductCategoryDisplayName(entry.category, entry.count)
-            }))
-        );
-
         renderResourceProductTreemap(treemapEl, {
             products,
             sourceEntries,
             sourceTypeCounts
-        });
-    }
-
-    function renderSummaryChips(container, items) {
-        if (!container) {
-            return;
-        }
-
-        container.innerHTML = '';
-
-        if (!items || items.length === 0) {
-            const empty = document.createElement('span');
-            empty.className = 'resource-product-summary-empty';
-            empty.textContent = 'None.';
-            container.appendChild(empty);
-            return;
-        }
-
-        items.forEach(item => {
-            const chip = item.href ? document.createElement('a') : document.createElement('span');
-            chip.className = 'resource-product-summary-chip';
-
-            if (item.href) {
-                chip.href = item.href;
-            }
-
-            const count = document.createElement('span');
-            count.className = 'resource-product-summary-chip-count';
-            count.textContent = item.count;
-
-            const label = document.createElement('span');
-            label.className = 'resource-product-summary-chip-label';
-            label.textContent = item.label;
-
-            chip.appendChild(count);
-            chip.appendChild(label);
-            container.appendChild(chip);
         });
     }
 
@@ -635,7 +548,8 @@
             children: summary.sourceEntries.map(source => ({
                 name: source.isCurrent ? 'This Resource' : source.id,
                 sourceId: source.id,
-                value: source.count,
+                sourceUrl: source.url,
+                isCurrent: source.isCurrent,
                 children: Array.from(summary.sourceTypeCounts.get(source.id).values())
                     .sort((a, b) => {
                         if (b.count !== a.count) {
@@ -701,17 +615,30 @@
             .attr('stroke-width', 1.5)
             .attr('opacity', 0.55);
 
-        svg.append('g')
-            .selectAll('text')
+        const sourceLabels = svg.append('g')
+            .selectAll('g')
             .data((root.children || []).filter(d => (d.x1 - d.x0) > 96 && (d.y1 - d.y0) > 28))
             .enter()
-            .append('text')
-            .attr('x', d => d.x0 + 8)
-            .attr('y', d => d.y0 + 16)
-            .attr('fill', d => sourceColor(d.data.sourceId))
-            .attr('font-size', 12)
-            .attr('font-weight', 700)
-            .text(d => truncateSummaryLabel(`${d.data.name} (${d.value})`, d.x1 - d.x0 - 12));
+            .append('g');
+
+        sourceLabels.each(function(d) {
+            const selection = d3.select(this);
+            const textTarget = (!d.data.isCurrent && d.data.sourceUrl)
+                ? selection.append('a')
+                    .attr('href', d.data.sourceUrl)
+                    .attr('target', '_self')
+                : selection;
+
+            textTarget.append('text')
+                .attr('x', d.x0 + 8)
+                .attr('y', d.y0 + 16)
+                .attr('fill', sourceColor(d.data.sourceId))
+                .attr('font-size', 12)
+                .attr('font-weight', 700)
+                .style('text-decoration', (!d.data.isCurrent && d.data.sourceUrl) ? 'underline' : null)
+                .style('cursor', (!d.data.isCurrent && d.data.sourceUrl) ? 'pointer' : null)
+                .text(truncateSummaryLabel(`${d.data.name} (${d.value})`, d.x1 - d.x0 - 12));
+        });
 
         const leaves = svg.append('g')
             .selectAll('g')
