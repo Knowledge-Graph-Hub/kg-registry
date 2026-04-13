@@ -421,6 +421,10 @@
         "Product": { singular: "Product", plural: "Products" }
     };
 
+    const maxTreemapSourceGroups = 8;
+    const initialAggregateSourceThreshold = 1;
+    const maxAggregateSourceThreshold = 3;
+
     function getProductCategoryLabels(category) {
         if (productCategoryLabels[category]) {
             return productCategoryLabels[category];
@@ -520,11 +524,99 @@
             return a.id.localeCompare(b.id);
         });
 
+        const treemapSummary = buildTreemapSourceSummary(sourceEntries, sourceTypeCounts);
+
         renderResourceProductTreemap(treemapEl, {
-            products,
-            sourceEntries,
-            sourceTypeCounts
+            sourceEntries: treemapSummary.sourceEntries,
+            sourceTypeCounts: treemapSummary.sourceTypeCounts
         });
+    }
+
+    function buildTreemapSourceSummary(sourceEntries, sourceTypeCounts) {
+        if (sourceEntries.length <= maxTreemapSourceGroups) {
+            return { sourceEntries, sourceTypeCounts };
+        }
+
+        const externalEntries = sourceEntries.filter(entry => !entry.isCurrent);
+        if (externalEntries.length === 0) {
+            return { sourceEntries, sourceTypeCounts };
+        }
+
+        let aggregateThreshold = initialAggregateSourceThreshold;
+        let aggregatedSourceIds = [];
+
+        while (aggregateThreshold <= maxAggregateSourceThreshold) {
+            aggregatedSourceIds = externalEntries
+                .filter(entry => entry.count <= aggregateThreshold)
+                .map(entry => entry.id);
+
+            if (aggregatedSourceIds.length > 0) {
+                const remainingGroups = sourceEntries.length - aggregatedSourceIds.length + 1;
+                if (remainingGroups <= maxTreemapSourceGroups || aggregateThreshold === maxAggregateSourceThreshold) {
+                    break;
+                }
+            }
+
+            aggregateThreshold += 1;
+        }
+
+        if (aggregatedSourceIds.length === 0) {
+            return { sourceEntries, sourceTypeCounts };
+        }
+
+        const aggregatedSourceSet = new Set(aggregatedSourceIds);
+        const aggregatedTypeCounts = new Map();
+        let aggregatedCount = 0;
+
+        aggregatedSourceIds.forEach(sourceId => {
+            aggregatedCount += sourceTypeCounts.get(sourceId)
+                ? Array.from(sourceTypeCounts.get(sourceId).values()).reduce((sum, entry) => sum + entry.count, 0)
+                : 0;
+
+            (sourceTypeCounts.get(sourceId) || new Map()).forEach((typeEntry, category) => {
+                if (!aggregatedTypeCounts.has(category)) {
+                    aggregatedTypeCounts.set(category, {
+                        category,
+                        count: 0
+                    });
+                }
+                aggregatedTypeCounts.get(category).count += typeEntry.count;
+            });
+        });
+
+        const nextSourceEntries = sourceEntries
+            .filter(entry => !aggregatedSourceSet.has(entry.id))
+            .concat([{
+                id: '__other_resources__',
+                name: 'Other Resources',
+                url: '',
+                isCurrent: false,
+                isAggregate: true,
+                count: aggregatedCount,
+                aggregatedSourceIds
+            }])
+            .sort((a, b) => {
+                if (a.isCurrent !== b.isCurrent) {
+                    return a.isCurrent ? -1 : 1;
+                }
+                if (b.count !== a.count) {
+                    return b.count - a.count;
+                }
+                return (a.name || a.id).localeCompare(b.name || b.id);
+            });
+
+        const nextSourceTypeCounts = new Map();
+        sourceTypeCounts.forEach((value, key) => {
+            if (!aggregatedSourceSet.has(key)) {
+                nextSourceTypeCounts.set(key, value);
+            }
+        });
+        nextSourceTypeCounts.set('__other_resources__', aggregatedTypeCounts);
+
+        return {
+            sourceEntries: nextSourceEntries,
+            sourceTypeCounts: nextSourceTypeCounts
+        };
     }
 
     function renderResourceProductTreemap(container, summary) {
@@ -534,22 +626,29 @@
 
         container.innerHTML = '';
 
+        const leafCount = summary.sourceEntries.reduce((sum, source) => {
+            const typeCountMap = summary.sourceTypeCounts.get(source.id);
+            return sum + (typeCountMap ? typeCountMap.size : 0);
+        }, 0);
+
         const width = Math.max(280, Math.floor(container.getBoundingClientRect().width) - 16);
         const height = Math.max(
-            224,
+            120,
             Math.min(
                 340,
-                summary.sourceEntries.length * 56 + summary.products.length * 18 + 72
+                summary.sourceEntries.length * 30 + leafCount * 12 + 36
             )
         );
 
         const hierarchyData = {
             name: 'Products',
             children: summary.sourceEntries.map(source => ({
-                name: source.isCurrent ? 'This Resource' : source.id,
+                name: source.name || (source.isCurrent ? 'This Resource' : source.id),
                 sourceId: source.id,
                 sourceUrl: source.url,
                 isCurrent: source.isCurrent,
+                isAggregate: source.isAggregate,
+                aggregatedSourceIds: source.aggregatedSourceIds || [],
                 children: Array.from(summary.sourceTypeCounts.get(source.id).values())
                     .sort((a, b) => {
                         if (b.count !== a.count) {
@@ -633,11 +732,18 @@
                 .attr('x', d.x0 + 8)
                 .attr('y', d.y0 + 16)
                 .attr('fill', sourceColor(d.data.sourceId))
-                .attr('font-size', 12)
+                .attr('font-size', 14)
                 .attr('font-weight', 700)
                 .style('text-decoration', (!d.data.isCurrent && d.data.sourceUrl) ? 'underline' : null)
                 .style('cursor', (!d.data.isCurrent && d.data.sourceUrl) ? 'pointer' : null)
                 .text(truncateSummaryLabel(`${d.data.name} (${d.value})`, d.x1 - d.x0 - 12));
+
+            const sourceTitle = d.data.isAggregate && d.data.aggregatedSourceIds.length > 0
+                ? `${d.data.name} (${d.value}): ${d.data.aggregatedSourceIds.join(', ')}`
+                : `${d.data.name} (${d.value})`;
+
+            selection.append('title')
+                .text(sourceTitle);
         });
 
         const leaves = svg.append('g')
@@ -681,7 +787,7 @@
                 .attr('x', d.x0 + 8)
                 .attr('y', d.y0 + 18)
                 .attr('fill', '#102a43')
-                .attr('font-size', width > 140 && height > 54 ? 13 : 11)
+                .attr('font-size', width > 140 && height > 54 ? 15 : 13)
                 .attr('font-weight', 600);
 
             if (width > 140 && height > 54) {
