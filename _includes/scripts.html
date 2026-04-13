@@ -453,6 +453,19 @@
         return `${text.slice(0, Math.max(5, maxChars - 1)).trimEnd()}…`;
     }
 
+    function buildTreemapSourceLabelLines(name, count, width) {
+        const countLabel = `(${count})`;
+
+        if (width >= 150) {
+            return [truncateSummaryLabel(`${name} ${countLabel}`, width)];
+        }
+
+        return [
+            truncateSummaryLabel(name, width),
+            truncateSummaryLabel(countLabel, width)
+        ];
+    }
+
     function renderResourceProductSummaries() {
         const summaryContainers = document.querySelectorAll('.resource-product-summary');
 
@@ -617,6 +630,69 @@
         });
     }
 
+    function tileTreemapSourceGroups(node, x0, y0, x1, y1) {
+        const children = node.children || [];
+        if (children.length === 0) {
+            return;
+        }
+
+        if (children.length === 1) {
+            const [child] = children;
+            child.x0 = x0;
+            child.x1 = x1;
+            child.y0 = y0;
+            child.y1 = y1;
+            return;
+        }
+
+        const totalValue = children.reduce((sum, child) => sum + (child.value || 0), 0);
+        const totalWidth = x1 - x0;
+        let leftX = x0;
+        let rightX = x1;
+        let middleChildren = children;
+
+        const firstChild = children[0];
+        if (firstChild?.data?.isCurrent) {
+            const leftWidth = totalValue > 0 ? totalWidth * ((firstChild.value || 0) / totalValue) : 0;
+            firstChild.x0 = leftX;
+            firstChild.x1 = leftX + leftWidth;
+            firstChild.y0 = y0;
+            firstChild.y1 = y1;
+            leftX += leftWidth;
+            middleChildren = children.slice(1);
+        }
+
+        const lastChild = middleChildren[middleChildren.length - 1];
+        if (lastChild?.data?.isAggregate) {
+            const rightWidth = totalValue > 0 ? totalWidth * ((lastChild.value || 0) / totalValue) : 0;
+            lastChild.x0 = rightX - rightWidth;
+            lastChild.x1 = rightX;
+            lastChild.y0 = y0;
+            lastChild.y1 = y1;
+            rightX -= rightWidth;
+            middleChildren = middleChildren.slice(0, -1);
+        }
+
+        if (middleChildren.length === 0) {
+            return;
+        }
+
+        if (middleChildren.length === 1) {
+            const [child] = middleChildren;
+            child.x0 = leftX;
+            child.x1 = rightX;
+            child.y0 = y0;
+            child.y1 = y1;
+            return;
+        }
+
+        const middleNode = {
+            children: middleChildren,
+            value: middleChildren.reduce((sum, child) => sum + (child.value || 0), 0)
+        };
+        d3.treemapBinary(middleNode, leftX, y0, rightX, y1);
+    }
+
     function renderResourceProductTreemap(container, summary) {
         if (!container) {
             return;
@@ -680,10 +756,10 @@
             .size([width, height])
             .paddingOuter(6)
             .paddingInner(4)
-            .paddingTop(node => (node.depth === 1 ? 24 : 0))
+            .paddingTop(node => (node.depth === 1 ? 32 : 0))
             .tile((node, x0, y0, x1, y1) => {
                 if (node.depth === 0) {
-                    d3.treemapDice(node, x0, y0, x1, y1);
+                    tileTreemapSourceGroups(node, x0, y0, x1, y1);
                 } else {
                     sourceTile(node, x0, y0, x1, y1);
                 }
@@ -729,7 +805,7 @@
 
         const sourceLabels = svg.append('g')
             .selectAll('g')
-            .data((root.children || []).filter(d => (d.x1 - d.x0) > 96 && (d.y1 - d.y0) > 28))
+            .data((root.children || []).filter(d => (d.x1 - d.x0) > 56 && (d.y1 - d.y0) > 36))
             .enter()
             .append('g');
 
@@ -741,15 +817,22 @@
                     .attr('target', '_self')
                 : selection;
 
-            textTarget.append('text')
+            const lines = buildTreemapSourceLabelLines(d.data.name, d.value, d.x1 - d.x0 - 14);
+            const text = textTarget.append('text')
                 .attr('x', d.x0 + 8)
-                .attr('y', d.y0 + 16)
+                .attr('y', d.y0 + 15)
                 .attr('fill', sourceColor(d.data.sourceId))
                 .attr('font-size', 14)
                 .attr('font-weight', 700)
                 .style('text-decoration', (!d.data.isCurrent && d.data.sourceUrl) ? 'underline' : null)
-                .style('cursor', (!d.data.isCurrent && d.data.sourceUrl) ? 'pointer' : null)
-                .text(truncateSummaryLabel(`${d.data.name} (${d.value})`, d.x1 - d.x0 - 12));
+                .style('cursor', (!d.data.isCurrent && d.data.sourceUrl) ? 'pointer' : null);
+
+            lines.forEach((line, index) => {
+                text.append('tspan')
+                    .attr('x', d.x0 + 8)
+                    .attr('dy', index === 0 ? 0 : 13)
+                    .text(line);
+            });
 
             const sourceTitle = d.data.isAggregate && d.data.aggregatedSourceIds.length > 0
                 ? `${d.data.name} (${d.value}): ${d.data.aggregatedSourceIds.join(', ')}`
@@ -791,6 +874,7 @@
             const width = d.x1 - d.x0;
             const height = d.y1 - d.y0;
             const label = `${d.data.value} ${d.data.name}`;
+            const countOnlyLabel = `${d.data.value}`;
 
             if (width < 64 || height < 28) {
                 return;
@@ -814,7 +898,15 @@
                     .attr('dy', 16)
                     .text(truncateSummaryLabel(d.data.name, width - 16));
             } else {
-                text.text(truncateSummaryLabel(label, width - 16));
+                const fullLabel = truncateSummaryLabel(label, width - 16);
+                const countFits = countOnlyLabel.length <= Math.max(1, Math.floor((width - 16) / 7));
+                const fullLabelLooksTruncated = fullLabel.includes('…');
+
+                text.text(
+                    fullLabelLooksTruncated && countFits
+                        ? countOnlyLabel
+                        : fullLabel
+                );
             }
         });
     }
