@@ -5,6 +5,6 @@ description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually c
 id: cam-kp.go-cams
 name: Gene Ontology CAMs
 original_source:
-- gene-ontology
+- go
 layout: product_detail
 ---
