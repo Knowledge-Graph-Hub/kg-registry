@@ -7,15 +7,18 @@ KG-Registry resources for each ontology, transforming the metadata to fit
 our schema structure.
 """
 
+import copy
 import sys
 import yaml
 import requests
 import os
 import time
 from pathlib import Path
-from typing import Dict, List, Any, Optional
-from datetime import datetime
+from typing import Dict, List, Any, Optional, Tuple
+from datetime import datetime, UTC
 import logging
+
+import frontmatter
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -473,9 +476,226 @@ class OBOFoundrySync:
             logger.warning(f"Failed to load existing metadata from {resource_file}: {e}")
             return {}
 
+    def _load_existing_post(self, resource_file: Path) -> Tuple[Dict[str, Any], str]:
+        """Load existing metadata and markdown body from a resource file."""
+        if not resource_file.exists():
+            return {}, ""
+
+        try:
+            post = frontmatter.load(resource_file)
+            metadata = dict(post.metadata) if isinstance(post.metadata, dict) else {}
+            return metadata, post.content
+        except Exception as exc:
+            logger.warning("Failed to load existing post from %s: %s", resource_file, exc)
+            return {}, resource_file.read_text(encoding='utf-8')
+
     def _today_iso(self) -> str:
         """Return today's date normalized as ISO date-time with Z suffix."""
-        return datetime.utcnow().strftime('%Y-%m-%dT00:00:00Z')
+        return datetime.now(UTC).strftime('%Y-%m-%dT00:00:00Z')
+
+    def _contact_identity(self, contact: Dict[str, Any]) -> Tuple[str, str, str]:
+        label = str(contact.get('label', '')).strip().lower()
+        email = ""
+        github = ""
+        for detail in contact.get('contact_details', []) or []:
+            if not isinstance(detail, dict):
+                continue
+            if detail.get('contact_type') == 'email':
+                email = str(detail.get('value', '')).strip().lower()
+            elif detail.get('contact_type') == 'github':
+                github = str(detail.get('value', '')).strip().lower()
+        return label, email, github
+
+    def merge_contacts(self, existing_contacts: Any, synced_contacts: Any) -> List[Dict[str, Any]]:
+        existing = [copy.deepcopy(c) for c in existing_contacts or [] if isinstance(c, dict)]
+        synced = [copy.deepcopy(c) for c in synced_contacts or [] if isinstance(c, dict)]
+        if not existing:
+            return synced
+        if not synced:
+            return existing
+
+        merged = synced[:]
+        seen = {self._contact_identity(contact) for contact in synced}
+        for contact in existing:
+            identity = self._contact_identity(contact)
+            if identity in seen:
+                continue
+            merged.append(contact)
+            seen.add(identity)
+        return merged
+
+    def merge_products(self, existing_products: Any, synced_products: Any) -> List[Dict[str, Any]]:
+        existing = [copy.deepcopy(p) for p in existing_products or [] if isinstance(p, dict)]
+        synced = [copy.deepcopy(p) for p in synced_products or [] if isinstance(p, dict)]
+        if not existing:
+            return synced
+        if not synced:
+            return existing
+
+        synced_by_id = {
+            product.get('id'): product for product in synced if isinstance(product.get('id'), str)
+        }
+        merged: List[Dict[str, Any]] = []
+        seen_ids = set()
+
+        for product in existing:
+            product_id = product.get('id')
+            if isinstance(product_id, str) and product_id in synced_by_id:
+                updated = copy.deepcopy(product)
+                updated.update(synced_by_id[product_id])
+                merged.append(updated)
+                seen_ids.add(product_id)
+            else:
+                merged.append(product)
+
+        for product in synced:
+            product_id = product.get('id')
+            if product_id in seen_ids:
+                continue
+            merged.append(product)
+
+        return merged
+
+    def _merge_unique_lists(self, existing: Any, synced: Any) -> List[Any]:
+        merged: List[Any] = []
+        for item in (existing or []) + (synced or []):
+            if item not in merged:
+                merged.append(item)
+        return merged
+
+    def merge_resource_metadata(
+        self, existing_metadata: Dict[str, Any], synced_metadata: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        if not existing_metadata:
+            return copy.deepcopy(synced_metadata)
+
+        merged = copy.deepcopy(existing_metadata)
+
+        for field in [
+            'name',
+            'description',
+            'homepage_url',
+            'repository',
+            'activity_status',
+            'category',
+            'layout',
+            'license',
+        ]:
+            if synced_metadata.get(field):
+                merged[field] = copy.deepcopy(synced_metadata[field])
+
+        for field in ['domains', 'tags', 'taxon', 'collection', 'publications']:
+            merged_values = self._merge_unique_lists(
+                existing_metadata.get(field), synced_metadata.get(field)
+            )
+            if merged_values:
+                merged[field] = merged_values
+
+        merged['contacts'] = self.merge_contacts(
+            existing_metadata.get('contacts'), synced_metadata.get('contacts')
+        )
+        merged['products'] = self.merge_products(
+            existing_metadata.get('products'), synced_metadata.get('products')
+        )
+
+        return merged
+
+    def _metadata_for_compare(self, metadata: Dict[str, Any]) -> Dict[str, Any]:
+        comparable = copy.deepcopy(metadata)
+        comparable.pop('last_modified_date', None)
+        return comparable
+
+    def _content_for_compare(self, content: str) -> str:
+        return content.strip()
+
+    def _serialize_resource(self, metadata: Dict[str, Any], content: str) -> str:
+        yaml_content = yaml.safe_dump(
+            metadata,
+            default_flow_style=False,
+            sort_keys=False,
+            allow_unicode=True,
+        ).strip()
+        body = content.rstrip()
+        if body:
+            return f"---\n{yaml_content}\n---\n{body}\n"
+        return f"---\n{yaml_content}\n---\n"
+
+    def _default_content(self, resource_data: Dict[str, Any]) -> str:
+        """Create default markdown body for newly synchronized resources."""
+        body = f"""## Description
+
+{resource_data['description']}
+
+"""
+
+        if resource_data.get('contacts'):
+            body += "## Contacts\n\n"
+            for contact in resource_data['contacts']:
+                contact_line = []
+                if contact.get('label'):
+                    contact_line.append(contact['label'])
+
+                if contact.get('contact_details'):
+                    contact_details = contact['contact_details']
+                    if isinstance(contact_details, list):
+                        email_detail = next(
+                            (cd for cd in contact_details if cd.get('contact_type') == 'email'), None
+                        )
+                        if email_detail:
+                            contact_line.append(f"({email_detail['value']})")
+                    else:
+                        contact_line.append(f"({contact_details})")
+
+                if contact.get('orcid'):
+                    contact_line.append(
+                        f"[ORCID: {contact['orcid']}](https://orcid.org/{contact['orcid']})"
+                    )
+
+                if contact_line:
+                    body += f"- {' '.join(contact_line)}\n"
+                else:
+                    body += f"- Contact (category: {contact.get('category', 'Unknown')})\n"
+            body += "\n"
+
+        if resource_data.get('products'):
+            body += "## Products\n\n"
+            for product in resource_data['products']:
+                body += f"### {product['name']}\n\n"
+                if product.get('description'):
+                    body += f"{product['description']}\n\n"
+                if product.get('product_url'):
+                    body += f"**URL**: [{product['product_url']}]({product['product_url']})\n\n"
+                if product.get('format'):
+                    body += f"**Format**: {product['format']}\n\n"
+
+        if resource_data.get('publications'):
+            body += "## Publications\n\n"
+            for pub in resource_data['publications']:
+                title = pub.get('title', 'Untitled')
+                url = pub.get('url', '')
+                if url:
+                    body += f"- [{title}]({url})\n"
+                else:
+                    body += f"- {title}\n"
+            body += "\n"
+
+        if resource_data.get('domains'):
+            domains_str = ', '.join(resource_data['domains'])
+            body += f"**Domains**: {domains_str}\n\n"
+
+        if resource_data.get('tags'):
+            tags_str = ', '.join(resource_data['tags'])
+            body += f"**Tags**: {tags_str}\n\n"
+
+        if resource_data.get('taxon'):
+            taxon = resource_data['taxon']
+            if isinstance(taxon, list):
+                body += f"**Taxon**: {', '.join(taxon)}\n\n"
+            elif isinstance(taxon, dict):
+                body += f"**Taxon**: {taxon.get('label', '')} ({taxon.get('id', '')})\n\n"
+
+        body += "---\n\n*This resource was automatically synchronized from the OBO Foundry registry.*"
+        return body
 
     def create_resource_markdown(self, resource_data: Dict[str, Any]) -> str:
         """Create markdown content for a resource"""
@@ -618,27 +838,35 @@ class OBOFoundrySync:
 
             resource_file = resource_dir / f"{ontology_id}.md"
 
-            # Check if this is an update or new resource
             is_new = ontology_id not in self.existing_resources
+            existing_metadata, existing_content = self._load_existing_post(resource_file)
+            merged_metadata = self.merge_resource_metadata(existing_metadata, kg_resource)
 
-            # Preserve existing dates when present; seed for new resources
-            existing_metadata = self._load_existing_metadata(resource_file)
+            today_iso = self._today_iso()
             if existing_metadata.get('creation_date'):
-                kg_resource['creation_date'] = existing_metadata['creation_date']
-            if existing_metadata.get('last_modified_date'):
-                kg_resource['last_modified_date'] = existing_metadata['last_modified_date']
+                merged_metadata['creation_date'] = existing_metadata['creation_date']
+            else:
+                merged_metadata['creation_date'] = today_iso
 
-            if not kg_resource.get('creation_date'):
-                kg_resource['creation_date'] = self._today_iso()
-            if not kg_resource.get('last_modified_date'):
-                kg_resource['last_modified_date'] = self._today_iso()
+            content = existing_content if self._content_for_compare(existing_content) else self._default_content(
+                kg_resource
+            )
 
-            # Create markdown file
-            markdown_content = self.create_resource_markdown(kg_resource)
+            has_changed = is_new or (
+                self._metadata_for_compare(existing_metadata)
+                != self._metadata_for_compare(merged_metadata)
+                or self._content_for_compare(existing_content) != self._content_for_compare(content)
+            )
 
-            # Write the file
-            with open(resource_file, 'w', encoding='utf-8') as f:
-                f.write(markdown_content)
+            if not has_changed:
+                logger.info("No OBO Foundry changes detected for %s", ontology_id)
+                return True
+
+            merged_metadata['last_modified_date'] = today_iso
+            resource_file.write_text(
+                self._serialize_resource(merged_metadata, content),
+                encoding='utf-8',
+            )
 
             if is_new:
                 logger.info(f"Created new resource: {ontology_id}")
