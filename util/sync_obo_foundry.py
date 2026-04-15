@@ -254,7 +254,7 @@ class OBOFoundrySync:
         contact_info = obo_ontology.get('contact')
         if contact_info:
             if isinstance(contact_info, dict):
-                contact_obj = {
+                contact_obj: Dict[str, Any] = {
                     'category': 'Individual'  # Use Individual as default Contact category
                 }
 
@@ -267,7 +267,7 @@ class OBOFoundrySync:
                     contact_obj['orcid'] = contact_info['orcid']
 
                 # Build contact_details list with proper structure
-                contact_details = []
+                contact_details: List[Dict[str, str]] = []
                 if contact_info.get('email'):
                     contact_details.append({
                         'contact_type': 'email',
@@ -286,7 +286,7 @@ class OBOFoundrySync:
                 contacts.append(contact_obj)
             elif isinstance(contact_info, str):
                 # Handle simple string contact
-                contact_obj = {
+                contact_obj: Dict[str, Any] = {
                     'category': 'Individual'
                 }
                 if '@' in contact_info:
