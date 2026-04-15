@@ -107,6 +107,28 @@ class OBOFoundrySync:
 
         return filtered_tags
 
+    def _normalize_publication_id(self, identifier: Any) -> Optional[str]:
+        """Normalize publication identifiers to a schema-compatible `id` value."""
+        if isinstance(identifier, int):
+            return f"PMID:{identifier}"
+
+        if not isinstance(identifier, str):
+            return None
+
+        normalized = identifier.strip()
+        if not normalized:
+            return None
+
+        lower = normalized.lower()
+        if normalized.isdigit():
+            return f"PMID:{normalized}"
+        if lower.startswith(('http://', 'https://', 'pmid:', 'doi:', 'arxiv:')):
+            return normalized
+        if lower.startswith('10.'):
+            return f"doi:{normalized}"
+
+        return normalized
+
     def _is_cache_valid(self) -> bool:
         """Check if cache file exists and is within TTL"""
         if not self.cache_file.exists():
@@ -399,11 +421,11 @@ class OBOFoundrySync:
         for pub in obo_publications:
             if isinstance(pub, dict):
                 pub_title = pub.get('title', 'Untitled')
-                pub_id = pub.get('id', '')
+                pub_id = self._normalize_publication_id(pub.get('id'))
                 if pub_id:
                     publications.append({
+                        'id': pub_id,
                         'title': pub_title,
-                        'url': pub_id if pub_id.startswith('http') else f"https://www.ncbi.nlm.nih.gov/pubmed/{pub_id}"
                     })
 
         # Build the KG-Registry resource structure
@@ -556,6 +578,55 @@ class OBOFoundrySync:
 
         return merged
 
+    def _publication_identity(self, publication: Dict[str, Any]) -> Tuple[str, str]:
+        identifier = self._normalize_publication_id(publication.get('id'))
+        if identifier:
+            return ('id', identifier)
+
+        title = str(publication.get('title', '')).strip().lower()
+        return ('title', title)
+
+    def merge_publications(
+        self, existing_publications: Any, synced_publications: Any
+    ) -> List[Dict[str, Any]]:
+        existing = [copy.deepcopy(p) for p in existing_publications or [] if isinstance(p, dict)]
+        synced = [copy.deepcopy(p) for p in synced_publications or [] if isinstance(p, dict)]
+        if not existing:
+            return synced
+        if not synced:
+            return existing
+
+        synced_by_identity = {}
+        for publication in synced:
+            identity = self._publication_identity(publication)
+            if identity[1]:
+                synced_by_identity[identity] = publication
+
+        merged: List[Dict[str, Any]] = []
+        seen = set()
+
+        for publication in existing:
+            identity = self._publication_identity(publication)
+            if identity[1] and identity in synced_by_identity:
+                updated = copy.deepcopy(publication)
+                updated.update(synced_by_identity[identity])
+                merged.append(updated)
+                seen.add(identity)
+            else:
+                merged.append(publication)
+                if identity[1]:
+                    seen.add(identity)
+
+        for publication in synced:
+            identity = self._publication_identity(publication)
+            if identity[1] and identity in seen:
+                continue
+            merged.append(publication)
+            if identity[1]:
+                seen.add(identity)
+
+        return merged
+
     def _merge_unique_lists(self, existing: Any, synced: Any) -> List[Any]:
         merged: List[Any] = []
         for item in (existing or []) + (synced or []):
@@ -584,7 +655,7 @@ class OBOFoundrySync:
             if synced_metadata.get(field):
                 merged[field] = copy.deepcopy(synced_metadata[field])
 
-        for field in ['domains', 'tags', 'taxon', 'collection', 'publications']:
+        for field in ['domains', 'tags', 'taxon', 'collection']:
             merged_values = self._merge_unique_lists(
                 existing_metadata.get(field), synced_metadata.get(field)
             )
@@ -596,6 +667,9 @@ class OBOFoundrySync:
         )
         merged['products'] = self.merge_products(
             existing_metadata.get('products'), synced_metadata.get('products')
+        )
+        merged['publications'] = self.merge_publications(
+            existing_metadata.get('publications'), synced_metadata.get('publications')
         )
 
         return merged
@@ -672,9 +746,9 @@ class OBOFoundrySync:
             body += "## Publications\n\n"
             for pub in resource_data['publications']:
                 title = pub.get('title', 'Untitled')
-                url = pub.get('url', '')
-                if url:
-                    body += f"- [{title}]({url})\n"
+                identifier = pub.get('id') or pub.get('url') or ''
+                if identifier:
+                    body += f"- [{title}]({identifier})\n"
                 else:
                     body += f"- {title}\n"
             body += "\n"
@@ -789,9 +863,9 @@ class OBOFoundrySync:
             markdown_content += "## Publications\n\n"
             for pub in resource_data['publications']:
                 title = pub.get('title', 'Untitled')
-                url = pub.get('url', '')
-                if url:
-                    markdown_content += f"- [{title}]({url})\n"
+                identifier = pub.get('id') or pub.get('url') or ''
+                if identifier:
+                    markdown_content += f"- [{title}]({identifier})\n"
                 else:
                     markdown_content += f"- {title}\n"
             markdown_content += "\n"

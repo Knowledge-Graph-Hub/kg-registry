@@ -1,11 +1,12 @@
 """Tests for OBO Foundry sync merge behavior."""
 
 import frontmatter
+import pytest
 
 from util.sync_obo_foundry import OBOFoundrySync
 
 
-def test_merge_resource_metadata_preserves_curated_fields_and_products(tmp_path):
+def test_merge_resource_metadata_preserves_curated_fields_products_and_publications(tmp_path):
     syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
 
     existing = {
@@ -13,6 +14,13 @@ def test_merge_resource_metadata_preserves_curated_fields_and_products(tmp_path)
         "infores_id": "go",
         "synonyms": ["GO"],
         "domains": ["biomedical"],
+        "publications": [
+            {
+                "id": "PMID:10802651",
+                "title": "Original title",
+                "preferred": True,
+            }
+        ],
         "contacts": [
             {
                 "category": "Organization",
@@ -67,10 +75,21 @@ def test_merge_resource_metadata_preserves_curated_fields_and_products(tmp_path)
                 "format": "owl",
             }
         ],
+        "publications": [
+            {
+                "id": "PMID:10802651",
+                "title": "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium",
+            },
+            {
+                "id": "https://doi.org/10.1093/nar/gkaf1271",
+                "title": "The Gene Ontology resource: enriching a GOld mine",
+            },
+        ],
     }
 
     merged = syncer.merge_resource_metadata(existing, synced)
     merged_products = {product["id"]: product for product in merged["products"]}
+    merged_publications = {publication["id"]: publication for publication in merged["publications"]}
 
     assert merged["infores_id"] == "go"
     assert merged["synonyms"] == ["GO"]
@@ -80,6 +99,12 @@ def test_merge_resource_metadata_preserves_curated_fields_and_products(tmp_path)
     assert merged_products["go.owl"]["product_file_size"] == 123
     assert merged_products["go.owl"]["warnings"] == ["cached warning"]
     assert merged_products["go.owl"]["product_url"] == "http://purl.obolibrary.org/obo/go.owl"
+    assert set(merged_publications) == {"PMID:10802651", "https://doi.org/10.1093/nar/gkaf1271"}
+    assert merged_publications["PMID:10802651"]["preferred"] is True
+    assert (
+        merged_publications["PMID:10802651"]["title"]
+        == "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium"
+    )
 
 
 def test_sync_ontology_preserves_curated_body_and_extra_metadata(tmp_path):
@@ -134,3 +159,39 @@ Keep this body.
     assert post.metadata["last_modified_date"] == syncer._today_iso()
     assert set(products) == {"go.api", "go.owl"}
     assert "Keep this body." in post.content
+
+
+@pytest.mark.parametrize(
+    ("raw_identifier", "expected"),
+    [
+        ("https://www.ncbi.nlm.nih.gov/pubmed/10802651", "https://www.ncbi.nlm.nih.gov/pubmed/10802651"),
+        ("10.1093/nar/gkaf1271", "doi:10.1093/nar/gkaf1271"),
+        ("10802651", "PMID:10802651"),
+        (10802651, "PMID:10802651"),
+    ],
+)
+def test_normalize_publication_id(raw_identifier, expected, tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+    assert syncer._normalize_publication_id(raw_identifier) == expected
+
+
+def test_transform_obo_to_kg_registry_emits_publication_ids(tmp_path):
+    syncer = OBOFoundrySync(registry_root=str(tmp_path / "resource"))
+
+    resource = syncer.transform_obo_to_kg_registry(
+        {
+            "id": "go",
+            "title": "Gene Ontology",
+            "publications": [
+                {"id": "https://www.ncbi.nlm.nih.gov/pubmed/10802651", "title": "PubMed paper"},
+                {"id": "10.1093/nar/gkaf1271", "title": "DOI paper"},
+                {"id": "10802651", "title": "Numeric PMID"},
+            ],
+        }
+    )
+
+    assert resource["publications"] == [
+        {"id": "https://www.ncbi.nlm.nih.gov/pubmed/10802651", "title": "PubMed paper"},
+        {"id": "doi:10.1093/nar/gkaf1271", "title": "DOI paper"},
+        {"id": "PMID:10802651", "title": "Numeric PMID"},
+    ]
