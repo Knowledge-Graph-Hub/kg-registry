@@ -12,14 +12,21 @@ contacts:
     value: suzialeksander
   label: Suzi Aleksander
   orcid: 0000-0001-6787-2901
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://geneontology.org/
+  id: gene-ontology-consortium
+  label: Gene Ontology Consortium
 creation_date: '2025-03-16T00:00:00Z'
 description: An ontology for describing the function of genes and gene products
 domains:
+- biomedical
 - biological systems
-homepage_url: http://geneontology.org/
+homepage_url: https://geneontology.org/
 id: go
 infores_id: go
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -120,6 +127,20 @@ products:
   name: GO (OBO Format edition), daily snapshot release
   product_file_size: 36555702
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
+- category: GraphicalInterface
+  description: Gene Ontology web browser and search interface
+  format: http
+  id: go.amigo
+  is_public: true
+  name: AmiGO 2
+  product_url: https://amigo.geneontology.org/amigo
+- category: ProgrammingInterface
+  description: Gene Ontology API for programmatic access
+  format: http
+  id: go.api
+  is_public: true
+  name: Gene Ontology API
+  product_url: https://api.geneontology.org/
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -2311,8 +2332,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2347,12 +2368,10 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -2528,13 +2547,20 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-04-07: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+- category: Product
+  description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
+    by Gene Ontology biocurators linking genes, proteins, and biological processes
+  id: cam-kp.go-cams
+  name: Gene Ontology CAMs
+  original_source:
+  - go
 repository: https://github.com/geneontology/go-ontology
+synonyms:
+- GO
 taxon:
 - NCBITaxon:1
 ---

@@ -70,7 +70,7 @@ products:
   id: cam-kp.go-cams
   name: Gene Ontology CAMs
   original_source:
-  - gene-ontology
+  - go
 - category: Product
   description: Chemical-gene interaction models and toxicological pathways derived
     from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
