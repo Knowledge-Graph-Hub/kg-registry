@@ -18,7 +18,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/information-artifact-ontology/IAO/
 id: iao
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -48,6 +48,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: An ontology based on a theory of document acts describing what people
@@ -204,6 +206,7 @@ products:
   product_url: https://orkg.org/api/rdf/dump
   secondary_source:
   - orkg
+publications: []
 repository: https://github.com/information-artifact-ontology/IAO
 ---
 ## Description

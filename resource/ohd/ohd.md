@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://purl.obolibrary.org/obo/ohd/home
 id: ohd
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -43,6 +43,12 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
+  title: Structuring, reuse and analysis of electronic dental data using the Oral
+    Health and Disease Ontology
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 ---
 ## Description

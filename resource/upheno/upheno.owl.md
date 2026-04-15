@@ -5,6 +5,7 @@ description: uPheno 1 is no longer actively maintained, please start using uPhen
 format: owl
 id: upheno.owl
 name: uPheno 1 (inactive)
+product_file_size: 416269865
 product_url: http://purl.obolibrary.org/obo/upheno.owl
 layout: product_detail
 ---

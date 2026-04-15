@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Fernanda Farinelli
+  orcid: 0000-0003-2338-8872
   contact_details:
   - contact_type: email
     value: fernanda.farinelli@gmail.com
   - contact_type: github
     value: FernandaFarinelli
-  label: Fernanda Farinelli
-  orcid: 0000-0003-2338-8872
 creation_date: '2025-09-29T00:00:00Z'
 description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary
   to provide a representation of the data from electronic health records (EHRs) involved
@@ -20,7 +20,7 @@ domains:
 - biomedical
 homepage_url: https://ontoneo.com/
 id: ontoneo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,12 @@ products:
   product_file_size: 238873
   product_url: http://purl.obolibrary.org/obo/ontoneo.owl
 repository: https://github.com/ontoneo-project/Ontoneo
+publications:
+- id: https://doi.org/10.5281/zenodo.17429771
+  title: 'OntONeo: The Obstetric and Neonatal Ontology'
+- id: https://doi.org/10.5281/zenodo.17508651
+  title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal
+    Domain
 ---
 ## Description
 

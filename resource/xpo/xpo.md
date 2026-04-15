@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Erik Segerdell
+  orcid: 0000-0002-9611-1279
   contact_details:
   - contact_type: email
     value: Erik.Segerdell@cchmc.org
   - contact_type: github
     value: seger
-  label: Erik Segerdell
-  orcid: 0000-0002-9611-1279
 creation_date: '2025-09-29T00:00:00Z'
 description: XPO represents anatomical, cellular, and gene function phenotypes occurring
   throughout the development of the African frogs Xenopus laevis and tropicalis.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/xenopus-phenotype-ontology
 id: xpo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -44,6 +44,10 @@ products:
 repository: https://github.com/obophenotype/xenopus-phenotype-ontology
 taxon:
 - NCBITaxon:8353
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
+  title: 'The Xenopus phenotype ontology: bridging model organism phenotype data to
+    human health and development.'
 ---
 ## Description
 

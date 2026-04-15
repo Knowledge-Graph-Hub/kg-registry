@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
   contact_details:
   - contact_type: email
     value: zhengj2007@gmail.com
   - contact_type: github
     value: zhengj2007
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
 creation_date: '2025-06-25T00:00:00Z'
 description: An ontology to standardize and integrate cell line information and to
   support computer-assisted reasoning.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/CLO-Ontology/CLO
 id: clo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -208,6 +208,9 @@ products:
   secondary_source:
   - orkg
 repository: https://github.com/CLO-Ontology/CLO
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25852852
+  title: 'CLO: The Cell Line Ontology'
 ---
 ## Description
 

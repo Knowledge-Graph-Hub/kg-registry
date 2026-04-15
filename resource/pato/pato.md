@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: George Gkoutos
+  orcid: 0000-0002-2061-091X
   contact_details:
   - contact_type: email
     value: g.gkoutos@gmail.com
   - contact_type: github
     value: gkoutos
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
 creation_date: '2025-06-04T00:00:00Z'
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
 domains:
@@ -19,7 +19,7 @@ domains:
 homepage_url: https://github.com/pato-ontology/pato/
 id: pato
 infores_id: pato
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -290,6 +290,11 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/pato-ontology/pato
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/28387809
+  title: 'The anatomy of phenotype ontologies: principles, properties and applications'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
+  title: Using ontologies to describe mouse phenotypes
 ---
 ## Description
 

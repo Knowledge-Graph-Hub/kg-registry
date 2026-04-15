@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
   contact_details:
   - contact_type: email
     value: rlwalls2008@gmail.com
   - contact_type: github
     value: ramonawalls
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology about groups of interacting organisms such as populations
   and communities
@@ -19,7 +19,7 @@ domains:
 - environment
 homepage_url: https://github.com/PopulationAndCommunityOntology/pco
 id: pco
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -35,6 +35,7 @@ products:
   product_file_size: 62282
   product_url: http://purl.obolibrary.org/obo/pco.owl
 repository: https://github.com/PopulationAndCommunityOntology/pco
+publications: []
 ---
 ## Description
 

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Frederic Bastian
+  orcid: 0000-0002-9415-5104
   contact_details:
   - contact_type: email
     value: bgee@sib.swiss
   - contact_type: github
     value: fbastian
-  label: Frederic Bastian
-  orcid: 0000-0002-9415-5104
 creation_date: '2025-09-29T00:00:00Z'
 description: This ontology represents concepts related to homology, as well as other
   concepts used to describe similarity and non-homology.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/BgeeDB/homology-ontology
 id: hom
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -35,6 +35,9 @@ products:
   product_file_size: 9398
   product_url: http://purl.obolibrary.org/obo/hom.owl
 repository: https://github.com/BgeeDB/homology-ontology
+publications:
+- id: https://doi.org/10.1016/j.tig.2009.12.012
+  title: An ontology to clarify homology-related concepts
 ---
 ## Description
 

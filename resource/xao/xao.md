@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Erik Segerdell
+  orcid: 0000-0002-9611-1279
   contact_details:
   - contact_type: email
     value: Erik.Segerdell@cchmc.org
   - contact_type: github
     value: seger
-  label: Erik Segerdell
-  orcid: 0000-0002-9611-1279
 creation_date: '2025-09-29T00:00:00Z'
 description: XAO represents the anatomy and development of the African frogs Xenopus
   laevis and tropicalis.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://www.xenbase.org/anatomy/xao.do?method=display
 id: xao
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -44,6 +44,12 @@ products:
 repository: https://github.com/xenopus-anatomy/xao
 taxon:
 - NCBITaxon:8353
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
+  title: An ontology for Xenopus anatomy and development.
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
+  title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins
+    more accurate annotation of gene expression and queries on Xenbase.'
 ---
 ## Description
 

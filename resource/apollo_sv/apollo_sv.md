@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: William Hogan
+  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
-  label: William Hogan
-  orcid: 0000-0002-9881-1017
 creation_date: '2025-09-29T00:00:00Z'
 description: An OWL2 ontology of phenomena in infectious disease epidemiology and
   population biology for use in epidemic simulation.
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/ApolloDev/apollo-sv
 id: apollo_sv
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,6 +35,10 @@ products:
   product_file_size: 264551
   product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
 repository: https://github.com/ApolloDev/apollo-sv
+publications:
+- id: https://doi.org/10.1186/s13326-016-0092-y
+  title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious
+    disease epidemiology and population biology for use in epidemic simulation'
 ---
 ## Description
 

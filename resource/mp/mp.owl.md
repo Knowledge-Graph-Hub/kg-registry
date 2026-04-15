@@ -5,6 +5,7 @@ description: The main ontology in OWL. Contains all MP terms and links to other 
 format: owl
 id: mp.owl
 name: MP (OWL edition)
+product_file_size: 103265062
 product_url: http://purl.obolibrary.org/obo/mp.owl
 layout: product_detail
 ---

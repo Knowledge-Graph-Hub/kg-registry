@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Stacia R Engel
+  orcid: 0000-0001-5472-917X
   contact_details:
   - contact_type: email
     value: stacia@stanford.edu
   - contact_type: github
     value: srengel
-  label: Stacia R Engel
-  orcid: 0000-0001-5472-917X
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 domains:
 - biological systems
 homepage_url: http://www.yeastgenome.org/
 id: apo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -43,6 +43,9 @@ products:
 repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
 taxon:
 - NCBITaxon:4890
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
+  title: New mutant phenotype data curation system in the Saccharomyces Genome Database
 ---
 ## Description
 

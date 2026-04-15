@@ -20,7 +20,7 @@ domains:
 homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
 infores_id: chebi
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -841,9 +841,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-04-07: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-04-10: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-04-15: FTP error: timed
     out'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
@@ -1115,6 +1115,11 @@ products:
   product_url: https://orkg.org/api/rdf/dump
   secondary_source:
   - orkg
+publications:
+- id: https://doi.org/10.1093/nar/gkaf1271
+  title: 'ChEBI: re-engineered for a sustainable future'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
+  title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ## Description

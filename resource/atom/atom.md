@@ -42,10 +42,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 418 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 418 error
-    when accessing file'
 - category: ProcessProduct
   description: Natural language processing pipeline for constructing anti-tumor biomaterial
     knowledge graphs from unstructured biomedicine literature, implementing entity
@@ -59,10 +55,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-07: HTTP 418 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 418 error
-    when accessing file'
 publications:
 - authors:
   - Tong Wang

@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/semanticchemistry/semanticchemistry
 id: cheminf
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -56,10 +56,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-04-07: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-04-10: FTP error: timed
     out'
+  - 'File was not able to be retrieved when checked on 2026-04-15: FTP error: timed
+    out'
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/21991315
+  title: 'The chemical information ontology: provenance and disambiguation for chemical
+    data on the biological semantic web'
 repository: https://github.com/semanticchemistry/semanticchemistry
 ---
 ## Description

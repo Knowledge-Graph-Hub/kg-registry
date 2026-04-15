@@ -23,7 +23,7 @@ domains:
 - biological systems
 homepage_url: https://adeans.github.io/gallont/
 id: gallont
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -47,6 +47,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Plant Gall Ontology in OBO format
   format: obo
@@ -54,6 +56,7 @@ products:
   name: gallont.obo
   product_file_size: 60631
   product_url: http://purl.obolibrary.org/obo/gallont.obo
+publications: []
 repository: https://github.com/adeans/gallont
 ---
 ## Description

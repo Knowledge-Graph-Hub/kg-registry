@@ -19,7 +19,7 @@ domains:
 homepage_url: https://oborel.github.io/
 id: ro
 infores_id: ro
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -78,6 +78,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: For use in neuroscience
@@ -252,6 +254,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+publications: []
 repository: https://github.com/oborel/obo-relations
 ---
 ## Description

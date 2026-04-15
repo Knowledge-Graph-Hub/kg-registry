@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Melanie Courtot
+  orcid: 0000-0002-9551-6370
   contact_details:
   - contact_type: email
     value: mcourtot@gmail.com
   - contact_type: github
     value: mcourtot
-  label: Melanie Courtot
-  orcid: 0000-0002-9551-6370
 creation_date: '2025-09-29T00:00:00Z'
 description: DUO is an ontology which represent data use conditions.
 domains:
 - biomedical
 homepage_url: https://github.com/EBISPOT/DUO
 id: duo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -34,6 +34,7 @@ products:
   product_file_size: 8062
   product_url: http://purl.obolibrary.org/obo/duo.owl
 repository: https://github.com/EBISPOT/DUO
+publications: []
 ---
 ## Description
 

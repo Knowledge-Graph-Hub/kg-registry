@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
   contact_details:
   - contact_type: email
     value: mhb120@gmail.com
   - contact_type: github
     value: mbrush
-  label: Matthew Brush
-  orcid: 0000-0002-1048-5019
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for representing the provenance of scientific claims and
   the evidence that supports them.
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/monarch-initiative/SEPIO-ontology
 id: sepio
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -35,6 +35,7 @@ products:
   product_file_size: 75985
   product_url: http://purl.obolibrary.org/obo/sepio.owl
 repository: https://github.com/monarch-initiative/SEPIO-ontology
+publications: []
 ---
 ## Description
 

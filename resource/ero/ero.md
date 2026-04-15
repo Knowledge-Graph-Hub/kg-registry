@@ -16,7 +16,7 @@ domains:
 - biomedical
 homepage_url: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
 id: ero
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/
@@ -36,6 +36,12 @@ products:
     with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
     expired (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries exceeded
+    with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
+    expired (_ssl.c:1028)'')))'
+publications: []
 ---
 ## Description
 

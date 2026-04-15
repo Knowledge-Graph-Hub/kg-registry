@@ -168,7 +168,7 @@ expressionatlas	Expression Atlas	Aggregator	https://www.ebi.ac.uk/gxa/home	resou
 fabio	FABIO	Ontology	https://sparontologies.github.io/fabio/current/fabio.html	resource/fabio/fabio.md
 faldo	FALDO	Ontology	http://biohackathon.org/resource/faldo	resource/faldo/faldo.md
 fao	Fungal gross anatomy	Ontology	https://github.com/obophenotype/fungal-anatomy-ontology/	resource/fao/fao.md
-fbbi	Biological Imaging Methods Ontology	Ontology	http://cellimagelibrary.org/	resource/fbbi/fbbi.md
+fbbi	Biological Imaging Methods Ontology	Ontology	https://github.com/foundingGIDE/fbbi	resource/fbbi/fbbi.md
 fbcv	FlyBase Controlled Vocabulary	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/fbcv/fbcv.md
 fbdv	Drosophila development	Ontology	http://purl.obolibrary.org/obo/fbdv	resource/fbdv/fbdv.md
 fbsp	Fly taxonomy	Ontology	http://www.flybase.org/	resource/fbsp/fbsp.md
@@ -191,7 +191,6 @@ gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohor
 gemscript	Gemscript	DataSource	https://help.visionhealth.co.uk/DLM860/consultation_manager/Content/Whats%20New.htm	resource/gemscript/gemscript.md
 gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencode.md
 gene-expression-atlas-okn	Gene Expression Atlas	KnowledgeGraph	https://www.ebi.ac.uk/gxa/home	resource/gene-expression-atlas-okn/gene-expression-atlas-okn.md
-gene-ontology	Gene Ontology (GO)	Ontology	https://geneontology.org/	resource/gene-ontology/gene-ontology.md
 gene2phenotype	Gene2Phenotype	DataSource	https://www.ebi.ac.uk/gene2phenotype/	resource/gene2phenotype/gene2phenotype.md
 genecards	GeneCards	Aggregator	https://www.genecards.org/	resource/genecards/genecards.md
 genemania	GeneMANIA	DataSource	https://genemania.org/	resource/genemania/genemania.md

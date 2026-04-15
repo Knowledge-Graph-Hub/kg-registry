@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
 creation_date: '2025-09-29T00:00:00Z'
 description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically
   represent and standardize various aspects of coronavirus infectious diseases, including
@@ -21,7 +21,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/cido-ontology/cido
 id: cido
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -37,6 +37,10 @@ products:
   product_file_size: 2511321
   product_url: http://purl.obolibrary.org/obo/cido.owl
 repository: https://github.com/cido-ontology/cido
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+  title: 'A comprehensive update on CIDO: the community-based coronavirus infectious
+    disease ontology'
 ---
 ## Description
 

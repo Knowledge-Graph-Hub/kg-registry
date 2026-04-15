@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Meghan Balk
+  orcid: 0000-0003-2699-3066
   contact_details:
   - contact_type: email
     value: meghan.balk@gmail.com
   - contact_type: github
     value: megbalk
-  label: Meghan Balk
-  orcid: 0000-0003-2699-3066
 creation_date: '2025-09-29T00:00:00Z'
 description: FuTRES Ontology of Vertebrate Traits is an application ontology used
   to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections
@@ -21,7 +21,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/futres/fovt
 id: fovt
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -58,6 +58,7 @@ products:
   product_file_size: 36309
   product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
 repository: https://github.com/futres/fovt
+publications: []
 ---
 ## Description
 

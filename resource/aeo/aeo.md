@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
-  label: Jonathan Bard
 creation_date: '2025-09-29T00:00:00Z'
 description: AEO is an ontology of anatomical structures that expands CARO, the Common
   Anatomy Reference Ontology
@@ -16,7 +16,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology/
 id: aeo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,6 +32,7 @@ products:
   product_file_size: 25664
   product_url: http://purl.obolibrary.org/obo/aeo.owl
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+publications: []
 ---
 ## Description
 

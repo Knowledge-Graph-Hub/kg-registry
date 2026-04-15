@@ -14,7 +14,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2025-10-06T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 domains:
 - biomedical
 contacts:
@@ -30,8 +30,11 @@ products:
   format: owl
   category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/dinto.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
+  title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug Drug Interactions
+    and Their Mechanisms.'
 ---
-
 ## Description
 
 A formal represention for drug-drug interactions knowledge.

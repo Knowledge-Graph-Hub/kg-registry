@@ -11,7 +11,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://purl.obolibrary.org/obo/rex.owl
 id: rex
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -27,6 +27,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    when accessing file'
+publications: []
 ---
 ## Description
 

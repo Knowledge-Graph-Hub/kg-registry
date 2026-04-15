@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Luis A. Gonzalez-Montana
+  orcid: 0000-0002-9136-9932
   contact_details:
   - contact_type: email
     value: lagonzalezmo@unal.edu.co
   - contact_type: github
     value: luis-gonzalez-m
-  label: Luis A. Gonzalez-Montana
-  orcid: 0000-0002-9136-9932
 creation_date: '2025-09-29T00:00:00Z'
 description: The Lepidoptera Anatomy Ontology contains terms used for describing the
   anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is
@@ -20,7 +20,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/insect-morphology/lepao
 id: lepao
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -43,6 +43,7 @@ products:
   product_file_size: 74809
   product_url: http://purl.obolibrary.org/obo/lepao.obo
 repository: https://github.com/insect-morphology/lepao
+publications: []
 ---
 ## Description
 

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Raymond Lee
+  orcid: 0000-0002-8151-7479
   contact_details:
   - contact_type: email
     value: raymond@caltech.edu
   - contact_type: github
     value: raymond91125
-  label: Raymond Lee
-  orcid: 0000-0002-8151-7479
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
   elegans</i>.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 id: wbbt
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,6 +44,9 @@ products:
 repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 taxon:
 - NCBITaxon:6237
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
+  title: Building a cell and anatomy ontology of Caenorhabditis elegans
 ---
 ## Description
 

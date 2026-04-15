@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Joshua Klein
+  orcid: 0000-0003-1279-6838
   contact_details:
   - contact_type: email
     value: joshua.adam.klein@gmail.com
   - contact_type: github
     value: mobiusklein
-  label: Joshua Klein
-  orcid: 0000-0003-1279-6838
 creation_date: '2025-08-12T00:00:00Z'
 description: A structured controlled vocabulary for the annotation of experiments
   concerned with proteomics mass spectrometry.
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: http://www.psidev.info/groups/controlled-vocabularies
 id: ms
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -177,6 +177,9 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://github.com/HUPO-PSI/psi-ms-CV
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/23482073
+  title: The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.
 ---
 ## Description
 

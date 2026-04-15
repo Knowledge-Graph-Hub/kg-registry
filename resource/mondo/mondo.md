@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Sabrina Toro
+  orcid: 0000-0002-4142-7153
   contact_details:
   - contact_type: email
     value: Sabrina@tislab.org
   - contact_type: github
     value: sabrinatoro
-  label: Sabrina Toro
-  orcid: 0000-0002-4142-7153
 creation_date: '2025-04-22T00:00:00Z'
 description: A global community effort to harmonize multiple disease resources to
   yield a coherent merged ontology.
@@ -20,7 +20,7 @@ domains:
 homepage_url: https://monarch-initiative.github.io/mondo
 id: mondo
 infores_id: mondo
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -806,6 +806,11 @@ products:
 repository: https://github.com/monarch-initiative/mondo
 taxon:
 - NCBITaxon:33208
+publications:
+- id: https://doi.org/10.1093/genetics/iyaf215
+  title: 'Mondo: Integrating Disease Terminology Across Communities'
+- id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
+  title: 'Mondo: Unifying diseases for the world, by the world'
 ---
 ## Description
 

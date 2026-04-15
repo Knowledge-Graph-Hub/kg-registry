@@ -23,7 +23,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://foodon.org/
 id: foodon
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -47,6 +47,12 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
+  title: 'FoodOn: a harmonized food ontology to increase global food traceability,
+    quality control and data integration'
 repository: https://github.com/FoodOntology/foodon
 ---
 ## Description

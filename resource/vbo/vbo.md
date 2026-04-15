@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Sabrina Toro
+  orcid: 0000-0002-4142-7153
   contact_details:
   - contact_type: email
     value: Sabrina@tislab.org
   - contact_type: github
     value: sabrinatoro
-  label: Sabrina Toro
-  orcid: 0000-0002-4142-7153
 creation_date: '2025-09-29T00:00:00Z'
 description: Vertebrate Breed Ontology is an ontology created to serve as a single
   computable resource for vertebrate breed names.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/monarch-initiative/vertebrate-breed-ontology
 id: vbo
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -70,6 +70,9 @@ products:
   product_file_size: 1154978
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
+publications:
+- id: https://doi.org/10.1111/jvim.70133
+  title: 'The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization'
 ---
 ## Description
 

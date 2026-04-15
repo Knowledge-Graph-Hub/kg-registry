@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
 creation_date: '2025-09-29T00:00:00Z'
 description: a formalization of concepts and relations relevant to evolutionary comparative
   analysis
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/evoinfo/cdao
 id: cdao
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -35,6 +35,9 @@ products:
   product_file_size: 10952
   product_url: http://purl.obolibrary.org/obo/cdao.owl
 repository: https://github.com/evoinfo/cdao
+publications:
+- id: https://doi.org/10.4137/EBO.S2320
+  title: Initial Implementation of a Comparative Data Analysis Ontology
 ---
 ## Description
 

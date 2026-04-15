@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Barry Smith
+  orcid: 0000-0003-1384-116X
   contact_details:
   - contact_type: email
     value: phismith@buffalo.edu
   - contact_type: github
     value: phismith
-  label: Barry Smith
-  orcid: 0000-0003-1384-116X
 creation_date: '2025-06-25T00:00:00Z'
 description: The upper level ontology upon which OBO Foundry ontologies are built.
 domains:
@@ -19,7 +19,7 @@ domains:
 homepage_url: http://ifomis.org/bfo/
 id: bfo
 infores_id: bfo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -148,6 +148,7 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/BFO-ontology/BFO
+publications: []
 ---
 ## Description
 

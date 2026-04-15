@@ -194,6 +194,7 @@ fabio,active,PASS
 faers,active,PASS
 faldo,active,PASS
 fao,active,PASS
+fbbi,active,PASS
 fbbt,active,PASS
 fbcv,active,PASS
 fbdv,active,PASS
@@ -223,7 +224,6 @@ gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
 gene-expression-atlas-okn,active,PASS
-gene-ontology,active,PASS
 gene2phenotype,active,PASS
 genebass,active,PASS
 genecards,active,PASS
@@ -690,7 +690,6 @@ epo,inactive,PASS
 ero,inactive,PASS
 eupath,inactive,PASS
 ev,inactive,PASS
-fbbi,inactive,PASS
 fbsp,inactive,PASS
 fix,orphaned,PASS
 flu,inactive,PASS

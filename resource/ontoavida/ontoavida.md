@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Miguel A. Fortuna
+  orcid: 0000-0002-8374-1941
   contact_details:
   - contact_type: email
     value: fortuna@ebd.csic.es
   - contact_type: github
     value: miguelfortuna
-  label: Miguel A. Fortuna
-  orcid: 0000-0002-8374-1941
 creation_date: '2025-09-29T00:00:00Z'
 description: OntoAvida develops an integrated vocabulary for the description of the
   most widely-used computational approach for studying evolution using digital organisms
@@ -21,7 +21,7 @@ domains:
 - biological systems
 homepage_url: https://gitlab.com/fortunalab/ontoavida
 id: ontoavida
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,6 +44,9 @@ products:
   product_file_size: 240082
   product_url: http://purl.obolibrary.org/obo/ontoavida.obo
 repository: https://gitlab.com/fortunalab/ontoavida
+publications:
+- id: https://doi.org/10.1038/s41597-023-02514-3
+  title: Ontology for the Avida digital evolution platform
 ---
 ## Description
 

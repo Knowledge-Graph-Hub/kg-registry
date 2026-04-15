@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Alpha Tom Kodamullil
+  orcid: 0000-0001-9896-3531
   contact_details:
   - contact_type: email
     value: alpha.tom.kodamullil@scai.fraunhofer.de
   - contact_type: github
     value: akodamullil
-  label: Alpha Tom Kodamullil
-  orcid: 0000-0001-9896-3531
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology that represents comprehensive knowledge involving
   a variety of fields of medical and biological aspects.
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/SCAI-BIO/BiomarkerOntology
 id: bmont
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,7 @@ products:
   product_file_size: 167585
   product_url: http://purl.obolibrary.org/obo/BMONT.owl
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
+publications: []
 ---
 ## Description
 

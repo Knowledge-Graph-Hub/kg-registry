@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Val Wood
+  orcid: 0000-0001-6330-7526
   contact_details:
   - contact_type: email
     value: vw253@cam.ac.uk
   - contact_type: github
     value: ValWood
-  label: Val Wood
-  orcid: 0000-0001-6330-7526
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for the anatomy of fungi.
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/fungal-anatomy-ontology/
 id: fao
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -43,6 +43,7 @@ products:
 repository: https://github.com/obophenotype/fungal-anatomy-ontology
 taxon:
 - NCBITaxon:4751
+publications: []
 ---
 ## Description
 

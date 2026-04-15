@@ -15,7 +15,7 @@ domains:
 - anatomy and development
 homepage_url: http://si.washington.edu/projects/fma
 id: fma
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -31,6 +31,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -138,6 +140,14 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
+  title: Translating the Foundational Model of Anatomy into OWL
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
+  title: 'The foundational model of anatomy in OWL: Experience and perspectives'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
+  title: 'Challenges in converting frame-based ontology into OWL: the Foundational
+    Model of Anatomy case-study'
 repository: https://bitbucket.org/uwsig/fma
 taxon:
 - NCBITaxon:9606

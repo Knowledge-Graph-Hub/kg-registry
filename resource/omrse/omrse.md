@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Bill Hogan
+  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
-  label: Bill Hogan
-  orcid: 0000-0002-9881-1017
 creation_date: '2025-07-10T00:00:00Z'
 description: The Ontology for Modeling and Representation of Social Entities (OMRSE)
   is an OBO Foundry ontology that represents the various entities that arise from
@@ -21,7 +21,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
 id: omrse
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -40,6 +40,9 @@ products:
 repository: https://github.com/mcwdsi/OMRSE
 taxon:
 - NCBITaxon:9606
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
+  title: 'The ontology of medically related social entities: recent developments'
 ---
 ## Description
 

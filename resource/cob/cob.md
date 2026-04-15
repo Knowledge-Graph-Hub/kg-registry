@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://obofoundry.org/COB/
 id: cob
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -56,6 +56,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: demo of COB including subsets of other ontologies (Experimental, for
@@ -171,6 +173,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+publications: []
 repository: https://github.com/OBOFoundry/COB
 ---
 ## Description

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pier Luigi Buttigieg
+  orcid: 0000-0002-4366-3088
   contact_details:
   - contact_type: email
     value: p.buttigieg@gmail.com
   - contact_type: github
     value: pbuttigieg
-  label: Pier Luigi Buttigieg
-  orcid: 0000-0002-4366-3088
 creation_date: '2025-09-29T00:00:00Z'
 description: Ecocore is a community ontology for the concise and controlled description
   of ecological traits of organisms.
@@ -19,7 +19,7 @@ domains:
 - environment
 homepage_url: https://github.com/EcologicalSemantics/ecocore
 id: ecocore
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -42,6 +42,7 @@ products:
   product_file_size: 834439
   product_url: http://purl.obolibrary.org/obo/ecocore.obo
 repository: https://github.com/EcologicalSemantics/ecocore
+publications: []
 ---
 ## Description
 

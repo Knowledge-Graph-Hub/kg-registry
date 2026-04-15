@@ -5,17 +5,17 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pantelis Topalis
   contact_details:
   - contact_type: email
     value: topalis@imbb.forth.gr
-  label: Pantelis Topalis
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
 domains:
 - anatomy and development
 homepage_url: https://www.vectorbase.org/ontology-browser
 id: tgma
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -40,6 +40,7 @@ products:
 repository: https://github.com/VEuPathDB-ontology/TGMA
 taxon:
 - NCBITaxon:44484
+publications: []
 ---
 ## Description
 

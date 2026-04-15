@@ -17,8 +17,22 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-03-30T00:00:00Z'
-products: []
+last_modified_date: '2026-04-15T00:00:00Z'
+products:
+- id: ncipidkg.sparql
+  name: NCI-PID 2.0 KG SPARQL
+  description: SPARQL endpoint for NCI-PID 2.0 KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ncipidkg/sparql
+  original_source:
+  - ncipidkg
+- id: ncipidkg.tpf
+  name: NCI-PID 2.0 KG TPF
+  description: Triple Pattern Fragments endpoint for NCI-PID 2.0 KG
+  category: ProgrammingInterface
+  product_url: https://frink.apps.renci.org/ldf/ncipidkg
+  original_source:
+  - ncipidkg
 domains:
 - general
 ---
