@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Robert Hoehndorf
+  orcid: 0000-0001-8149-5890
   contact_details:
   - contact_type: email
     value: robert.hoehndorf@kaust.edu.sa
   - contact_type: github
     value: leechuck
-  label: Robert Hoehndorf
-  orcid: 0000-0001-8149-5890
 creation_date: '2025-09-29T00:00:00Z'
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domains:
 - biological systems
 homepage_url: https://github.com/flora-phenotype-ontology/flopoontology
 id: flopo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,6 +36,10 @@ products:
 repository: https://github.com/flora-phenotype-ontology/flopoontology
 taxon:
 - NCBITaxon:33090
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
+  title: 'The flora phenotype ontology (FLOPO): tool for integrating morphological
+    traits and phenotypes of vascular plants'
 ---
 ## Description
 

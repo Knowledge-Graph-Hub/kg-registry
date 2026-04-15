@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Petra Fey
+  orcid: 0000-0002-4532-2703
   contact_details:
   - contact_type: email
     value: pfey@northwestern.edu
   - contact_type: github
     value: pfey03
-  label: Petra Fey
-  orcid: 0000-0002-4532-2703
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium
   discoideum
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://dictybase.org/
 id: ddanat
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -44,6 +44,9 @@ products:
 repository: https://github.com/dictyBase/migration-data
 taxon:
 - NCBITaxon:44689
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
+  title: An anatomy ontology to represent biological knowledge in Dictyostelium discoideum
 ---
 ## Description
 

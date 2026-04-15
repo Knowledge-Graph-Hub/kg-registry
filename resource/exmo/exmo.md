@@ -16,7 +16,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2025-10-06T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 domains:
 - biomedical
 contacts:
@@ -35,8 +35,10 @@ products:
   format: owl
   category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/exmo.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/39695140
+  title: Core reference ontology for individualized exercise prescription
 ---
-
 ## Description
 
 A core reference ontology built upon BFO about exercise medicine and it contains the related terms for healthy people, people with chronic conditions and people living with diability to exercise.

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Nathan Edwards
+  orcid: 0000-0001-5168-3196
   contact_details:
   - contact_type: email
     value: nje5@georgetown.edu
   - contact_type: github
     value: edwardsnj
-  label: Nathan Edwards
-  orcid: 0000-0001-5168-3196
 creation_date: '2025-09-29T00:00:00Z'
 description: GlyTouCan provides stable accessions for glycans described at varyious
   degrees of characterization, including compositions (no linkage) and topologies
@@ -22,7 +22,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://gnome.glyomics.org/
 id: gno
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -54,6 +54,9 @@ products:
   product_file_size: 359497890
   product_url: http://purl.obolibrary.org/obo/gno.json
 repository: https://github.com/glygen-glycan-data/GNOme
+publications:
+- id: https://doi.org/10.5281/zenodo.6678278
+  title: GNOme - Glycan Naming and Subsumption Ontology
 ---
 ## Description
 

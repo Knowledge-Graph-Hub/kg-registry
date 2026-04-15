@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Lindsay Cowell
+  orcid: 0000-0003-1617-8244
   contact_details:
   - contact_type: email
     value: Lindsay.Cowell@utsouthwestern.edu
   - contact_type: github
     value: lgcowell
-  label: Lindsay Cowell
-  orcid: 0000-0003-1617-8244
 creation_date: '2025-06-25T00:00:00Z'
 description: A set of interoperable ontologies that will together provide coverage
   of the infectious disease domain. IDO core is the upper-level ontology that hosts
@@ -21,7 +21,7 @@ domains:
 - biomedical
 homepage_url: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
 id: ido
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -145,6 +145,9 @@ products:
 repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
 taxon:
 - NCBITaxon:9606
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34275487
+  title: The Infectious Disease Ontology in the age of COVID-19
 ---
 ## Description
 

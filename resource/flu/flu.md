@@ -5,17 +5,17 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Burke Squires
   contact_details:
   - contact_type: email
     value: burkesquires@gmail.com
-  label: Burke Squires
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - biomedical
 homepage_url: http://purl.obolibrary.org/obo/flu/
 id: flu
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -29,6 +29,7 @@ products:
   name: flu.owl
   product_file_size: 127517
   product_url: http://purl.obolibrary.org/obo/flu.owl
+publications: []
 ---
 ## Description
 

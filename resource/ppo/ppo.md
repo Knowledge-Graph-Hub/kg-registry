@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
   contact_details:
   - contact_type: email
     value: rlwalls2008@gmail.com
   - contact_type: github
     value: ramonawalls
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for describing the phenology of individual plants and populations
   of plants, and for integrating plant phenological data across sources and scales.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/PlantPhenoOntology/PPO
 id: ppo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,7 @@ products:
 repository: https://github.com/PlantPhenoOntology/PPO
 taxon:
 - NCBITaxon:33090
+publications: []
 ---
 ## Description
 

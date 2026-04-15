@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Edison Ong
+  orcid: 0000-0002-5159-414X
   contact_details:
   - contact_type: email
     value: edong@umich.edu
   - contact_type: github
     value: e4ong1031
-  label: Edison Ong
-  orcid: 0000-0002-5159-414X
 creation_date: '2025-09-29T00:00:00Z'
 description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI)
   and represents the virulence factors (VFs) and how the mutants of VFs in the Victors
@@ -21,7 +21,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/OHPI/ohpi
 id: ohpi
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -37,6 +37,10 @@ products:
   product_file_size: 1482262
   product_url: http://purl.obolibrary.org/obo/ohpi.owl
 repository: https://github.com/OHPI/ohpi
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/30365026
+  title: 'Victors: a web-based knowledge base of virulence factors in human and animal
+    pathogens'
 ---
 ## Description
 

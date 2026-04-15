@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Melissa Haendel
+  orcid: 0000-0001-9114-8737
   contact_details:
   - contact_type: email
     value: haendel@ohsu.edu
   - contact_type: github
     value: mellybelly
-  label: Melissa Haendel
-  orcid: 0000-0001-9114-8737
 creation_date: '2025-09-29T00:00:00Z'
 description: An upper level ontology to facilitate interoperability between existing
   anatomy ontologies for different species
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/caro/
 id: caro
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,6 +35,7 @@ products:
   product_file_size: 586722
   product_url: http://purl.obolibrary.org/obo/caro.owl
 repository: https://github.com/obophenotype/caro
+publications: []
 ---
 ## Description
 

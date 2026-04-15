@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Sofia Robb
+  orcid: 0000-0002-3528-5267
   contact_details:
   - contact_type: email
     value: smr@stowers.org
   - contact_type: github
     value: srobb1
-  label: Sofia Robb
-  orcid: 0000-0002-3528-5267
 creation_date: '2025-09-29T00:00:00Z'
 description: Planarian Phenotype Ontology is an ontology of phenotypes observed in
   the planarian Schmidtea mediterranea.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/planarian-phenotype-ontology
 id: planp
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -42,6 +42,7 @@ products:
   product_file_size: 339560
   product_url: http://purl.obolibrary.org/obo/planp.obo
 repository: https://github.com/obophenotype/planarian-phenotype-ontology
+publications: []
 ---
 ## Description
 

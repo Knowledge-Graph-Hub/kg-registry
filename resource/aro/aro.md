@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Andrew G. McArthur
+  orcid: 0000-0002-1142-3063
   contact_details:
   - contact_type: email
     value: mcarthua@mcmaster.ca
   - contact_type: github
     value: agmcarthur
-  label: Andrew G. McArthur
-  orcid: 0000-0002-1142-3063
 creation_date: '2025-09-29T00:00:00Z'
 description: Antibiotic resistance genes and mutations
 domains:
 - biological systems
 homepage_url: https://github.com/arpcard/aro
 id: aro
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,6 +34,10 @@ products:
   product_file_size: 687021
   product_url: http://purl.obolibrary.org/obo/aro.owl
 repository: https://github.com/arpcard/aro
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
+  title: 'CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic
+    resistance database.'
 ---
 ## Description
 

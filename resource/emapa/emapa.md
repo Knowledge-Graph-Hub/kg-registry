@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Terry Hayamizu
+  orcid: 0000-0002-0956-8634
   contact_details:
   - contact_type: email
     value: Terry.Hayamizu@jax.org
   - contact_type: github
     value: tfhayamizu
-  label: Terry Hayamizu
-  orcid: 0000-0002-0956-8634
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for mouse anatomy covering embryonic development and postnatal
   stages.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://www.informatics.jax.org/expression.shtml
 id: emapa
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,6 +44,18 @@ products:
 repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
 taxon:
 - NCBITaxon:10088
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
+  title: An internet-accessible database of mouse developmental anatomy based on a
+    systematic nomenclature
+- id: https://www.ncbi.nlm.nih.gov/pubmed/23972281
+  title: 'EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
+  title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating
+    Biomedical Data'
+- id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
+  title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
+    Expression Database for Mouse Development (GXD)'
 ---
 ## Description
 

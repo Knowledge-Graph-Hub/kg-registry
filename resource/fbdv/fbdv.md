@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
   contact_details:
   - contact_type: email
     value: cp390@cam.ac.uk
   - contact_type: github
     value: Clare72
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domains:
 - anatomy and development
 homepage_url: http://purl.obolibrary.org/obo/fbdv
 id: fbdv
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -170,6 +170,7 @@ products:
 repository: https://github.com/FlyBase/drosophila-developmental-ontology
 taxon:
 - NCBITaxon:7227
+publications: []
 ---
 ## Description
 

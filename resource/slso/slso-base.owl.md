@@ -6,5 +6,8 @@ format: owl
 id: slso-base.owl
 name: slso-base.owl
 product_url: http://purl.obolibrary.org/obo/slso-base.owl
+warnings:
+- File was not able to be retrieved when checked on 2026-04-10_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

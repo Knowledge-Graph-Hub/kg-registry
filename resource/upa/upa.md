@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Anne Morgat
+  orcid: 0000-0002-1216-2969
   contact_details:
   - contact_type: email
     value: Anne.Morgat@sib.swiss
   - contact_type: github
     value: amorgat
-  label: Anne Morgat
-  orcid: 0000-0002-1216-2969
 creation_date: '2025-09-29T00:00:00Z'
 description: A manually curated resource for the representation and annotation of
   metabolic pathways
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/geneontology/unipathway
 id: upa
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -42,6 +42,9 @@ products:
   product_file_size: 454223
   product_url: http://purl.obolibrary.org/obo/upa.obo
 repository: https://github.com/geneontology/unipathway
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
+  title: 'UniPathway: a resource for the exploration and annotation of metabolic pathways'
 ---
 ## Description
 

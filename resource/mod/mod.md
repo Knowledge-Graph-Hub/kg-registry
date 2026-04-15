@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pierre-Alain Binz
+  orcid: 0000-0002-0045-7698
   contact_details:
   - contact_type: email
     value: pierre-alain.binz@chuv.ch
   - contact_type: github
     value: pabinz
-  label: Pierre-Alain Binz
-  orcid: 0000-0002-0045-7698
 creation_date: '2025-08-12T00:00:00Z'
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical
   modifications
@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.psidev.info/MOD
 id: mod
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -177,6 +177,10 @@ products:
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://github.com/HUPO-PSI/psi-mod-CV
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18688235
+  title: The PSI-MOD community standard for representation of protein modification
+    data
 ---
 ## Description
 

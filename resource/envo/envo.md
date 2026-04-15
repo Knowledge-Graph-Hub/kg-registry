@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pier Luigi Buttigieg
+  orcid: 0000-0002-4366-3088
   contact_details:
   - contact_type: email
     value: pier.buttigieg@awi.de
   - contact_type: github
     value: pbuttigieg
-  label: Pier Luigi Buttigieg
-  orcid: 0000-0002-4366-3088
 creation_date: '2025-07-10T00:00:00Z'
 description: An ontology of environmental systems, components, and processes.
 domains:
 - environment
 homepage_url: http://environmentontology.org/
 id: envo
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -201,6 +201,12 @@ products:
   secondary_source:
   - kg-microbe
 repository: https://github.com/EnvironmentOntology/envo
+publications:
+- id: https://doi.org/10.1186/2041-1480-4-43
+  title: 'The environment ontology: contextualising biological and biomedical entities'
+- id: https://doi.org/10.1186/s13326-016-0097-6
+  title: 'The environment ontology in 2016: bridging domains with increased scope,
+    semantic density, and interoperation'
 ---
 ## Description
 

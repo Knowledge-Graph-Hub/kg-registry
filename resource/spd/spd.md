@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Martin Ramirez
+  orcid: 0000-0002-0358-0130
   contact_details:
   - contact_type: email
     value: ramirez@macn.gov.ar
   - contact_type: github
     value: martinjramirez
-  label: Martin Ramirez
-  orcid: 0000-0002-0358-0130
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for spider comparative biology including anatomical parts
   (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web,
@@ -20,7 +20,7 @@ domains:
 - anatomy and development
 homepage_url: http://research.amnh.org/atol/files/
 id: spd
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -38,6 +38,10 @@ products:
 repository: https://github.com/obophenotype/spider-ontology
 taxon:
 - NCBITaxon:6893
+publications:
+- id: https://doi.org/10.3390/d11100202
+  title: The Spider Anatomy Ontology (SPD) A Versatile Tool to Link Anatomy with Cross-Disciplinary
+    Data
 ---
 ## Description
 

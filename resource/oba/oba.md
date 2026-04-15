@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
 creation_date: '2025-06-25T00:00:00Z'
 description: A collection of biological attributes (traits) covering all kingdoms
   of life.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/bio-attribute-ontology
 id: oba
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -155,6 +155,10 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/obophenotype/bio-attribute-ontology
+publications:
+- id: https://doi.org/10.1007/s00335-023-09992-1
+  title: The Ontology of Biological Attributes (OBA) - computational traits for the
+    life sciences
 ---
 ## Description
 

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
   contact_details:
   - contact_type: email
     value: mhb120@gmail.com
   - contact_type: github
     value: mbrush
-  label: Matthew Brush
-  orcid: 0000-0002-1048-5019
 creation_date: '2025-09-04T00:00:00Z'
 description: An integrated ontology for representing the genetic variations described
   in genotypes, and their causal relationships to phenotype and diseases.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/monarch-initiative/GENO-ontology/
 id: geno
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -52,6 +52,7 @@ products:
   secondary_source:
   - chr
 repository: https://github.com/monarch-initiative/GENO-ontology
+publications: []
 ---
 ## Description
 

@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Yongqunh He
+  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
-  label: Yongqunh He
-  orcid: 0000-0001-9189-9661
 creation_date: '2025-09-29T00:00:00Z'
 description: A biomedical ontology in the domain of vaccine adverse events.
 domains:
 - biomedical
 homepage_url: http://www.violinet.org/ovae/
 id: ovae
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -34,6 +34,7 @@ products:
   product_file_size: 286812
   product_url: http://purl.obolibrary.org/obo/ovae.owl
 repository: https://github.com/OVAE-Ontology/ovae
+publications: []
 ---
 ## Description
 

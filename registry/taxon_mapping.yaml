@@ -180,5 +180,3 @@ taxon_hierarchy:
   - NCBITaxon:9940
   NCBITaxon:9986:
   - NCBITaxon:9986
-  NCBITaxon:all:
-  - NCBITaxon:all

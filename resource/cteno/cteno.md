@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
 creation_date: '2025-09-29T00:00:00Z'
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/ctenophore-ontology
 id: cteno
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -36,6 +36,7 @@ products:
 repository: https://github.com/obophenotype/ctenophore-ontology
 taxon:
 - NCBITaxon:10197
+publications: []
 ---
 ## Description
 

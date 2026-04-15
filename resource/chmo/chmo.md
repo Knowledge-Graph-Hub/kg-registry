@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
   contact_details:
   - contact_type: email
     value: batchelorc@rsc.org
   - contact_type: github
     value: batchelorc
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
 creation_date: '2025-09-29T00:00:00Z'
 description: CHMO, the chemical methods ontology, describes methods used to
 domains:
 - biomedical
 homepage_url: https://github.com/rsc-ontologies/rsc-cmo
 id: chmo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -34,6 +34,7 @@ products:
   product_file_size: 460248
   product_url: http://purl.obolibrary.org/obo/chmo.owl
 repository: https://github.com/rsc-ontologies/rsc-cmo
+publications: []
 ---
 ## Description
 

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
 creation_date: '2025-05-04T00:00:00Z'
 description: An integrated cross-species anatomy ontology covering animals and bridging
   multiple species-specific ontologies
@@ -20,7 +20,7 @@ domains:
 homepage_url: http://uberon.org
 id: uberon
 infores_id: uberon
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -906,6 +906,12 @@ products:
 repository: https://github.com/obophenotype/uberon
 taxon:
 - NCBITaxon:33208
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
+  title: Uberon, an integrative multi-species anatomy ontology
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
+  title: Unification of multi-species vertebrate anatomy ontologies for comparative
+    biology in Uberon
 ---
 ## Description
 

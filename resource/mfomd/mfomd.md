@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Janna Hastings
+  orcid: 0000-0002-3469-4923
   contact_details:
   - contact_type: email
     value: janna.hastings@gmail.com
   - contact_type: github
     value: jannahastings
-  label: Janna Hastings
-  orcid: 0000-0002-3469-4923
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to describe and classify mental diseases such as schizophrenia,
   annotated with DSM-IV and ICD codes where applicable
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/jannahastings/mental-functioning-ontology
 id: mfomd
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -35,6 +35,7 @@ products:
   product_file_size: 1294
   product_url: http://purl.obolibrary.org/obo/mfomd.owl
 repository: https://github.com/jannahastings/mental-functioning-ontology
+publications: []
 ---
 ## Description
 

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Christian-Alexander Dudek
+  orcid: 0000-0001-9117-7909
   contact_details:
   - contact_type: email
     value: c.dudek@tu-braunschweig.de
   - contact_type: github
     value: chdudek
-  label: Christian-Alexander Dudek
-  orcid: 0000-0001-9117-7909
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary for the source of an enzyme comprising
   tissues, cell lines, cell types and cell cultures.
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://www.brenda-enzymes.org
 id: bto
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -336,6 +336,10 @@ products:
   secondary_source:
   - efo
 repository: https://github.com/BRENDA-Enzymes/BTO
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/21030441
+  title: 'The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of
+    all organisms for enzyme sources'
 ---
 ## Description
 

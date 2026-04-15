@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Lynn Schriml
+  orcid: 0000-0001-8910-9851
   contact_details:
   - contact_type: email
     value: lschriml@som.umaryland.edu
   - contact_type: github
     value: lschriml
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
 creation_date: '2025-09-29T00:00:00Z'
 description: A gazetteer constructed on ontological principles. The countries are
   actively maintained.
@@ -19,7 +19,7 @@ domains:
 - environment
 homepage_url: http://environmentontology.github.io/gaz/
 id: gaz
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -49,6 +49,7 @@ products:
   product_file_size: 42847
   product_url: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
 repository: https://github.com/EnvironmentOntology/gaz
+publications: []
 ---
 ## Description
 

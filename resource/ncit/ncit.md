@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: None
+  orcid: 0000-0000-0000-0000
   contact_details:
   - contact_type: email
     value: noreply@example.com
   - contact_type: github
     value: ghost
-  label: None
-  orcid: 0000-0000-0000-0000
 creation_date: '2025-06-25T00:00:00Z'
 description: NCI Thesaurus (NCIt)is a reference terminology that includes broad coverage
   of the cancer domain, including cancer related diseases, findings and abnormalities.
@@ -22,7 +22,7 @@ domains:
 homepage_url: https://github.com/ncit-obo-org/ncit-obo-edition
 id: ncit
 infores_id: ncit
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -203,6 +203,7 @@ products:
   secondary_source:
   - orkg
 repository: https://github.com/ncit-obo-org/ncit-obo-edition
+publications: []
 ---
 ## Description
 

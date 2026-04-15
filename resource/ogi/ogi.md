@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
 id: ogi
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -35,6 +35,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
+publications: []
 ---
 ## Description
 

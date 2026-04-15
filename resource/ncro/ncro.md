@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
   contact_details:
   - contact_type: email
     value: huang@southalabama.edu
   - contact_type: github
     value: Huang-OMIT
-  label: Jingshan Huang
-  orcid: 0000-0003-2408-2883
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domains:
 - biomedical
 homepage_url: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
 id: ncro
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,6 +34,7 @@ products:
   product_file_size: 4548
   product_url: http://purl.obolibrary.org/obo/ncro/dev/ncro.owl
 repository: https://github.com/OmniSearch/ncro
+publications: []
 ---
 ## Description
 

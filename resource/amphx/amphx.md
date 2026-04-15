@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Hector Escriva
+  orcid: 0000-0001-7577-5028
   contact_details:
   - contact_type: email
     value: hescriva@obs-banyuls.fr
   - contact_type: github
     value: hescriva
-  label: Hector Escriva
-  orcid: 0000-0001-7577-5028
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
   lanceolatum).
@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: https://github.com/EBISPOT/amphx_ontology
 id: amphx
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -42,6 +42,7 @@ products:
   product_file_size: 8608
   product_url: http://purl.obolibrary.org/obo/amphx.obo
 repository: https://github.com/EBISPOT/amphx_ontology
+publications: []
 ---
 ## Description
 

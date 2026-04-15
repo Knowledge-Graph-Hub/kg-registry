@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Sebastian Koehler
+  orcid: 0000-0002-5316-1399
   contact_details:
   - contact_type: email
     value: dr.sebastian.koehler@gmail.com
   - contact_type: github
     value: drseb
-  label: Sebastian Koehler
-  orcid: 0000-0002-5316-1399
 creation_date: '2025-04-22T00:00:00Z'
 description: The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary
   for the phenotypic features encountered in human hereditary and other disease.
@@ -20,7 +20,7 @@ domains:
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 infores_id: hpo
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
@@ -2161,6 +2161,17 @@ products:
 repository: https://github.com/obophenotype/human-phenotype-ontology
 taxon:
 - NCBITaxon:9606
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
+  title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human
+    hereditary disease.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/26119816
+  title: 'The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24217912
+  title: 'The Human Phenotype Ontology project: linking molecular biology and disease
+    through phenotype data.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
+  title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.
 ---
 ## Description
 

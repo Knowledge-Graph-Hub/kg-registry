@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Philippe Rocca-Serra
+  orcid: 0000-0001-9853-5668
   contact_details:
   - contact_type: email
     value: proccaserra@gmail.com
   - contact_type: github
     value: proccaserra
-  label: Philippe Rocca-Serra
-  orcid: 0000-0001-9853-5668
 creation_date: '2025-09-29T00:00:00Z'
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide
   coverage for processes such as statistical tests, their conditions of application,
@@ -24,7 +24,7 @@ domains:
 - biomedical
 homepage_url: http://stato-ontology.org/
 id: stato
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -64,6 +64,11 @@ products:
   secondary_source:
   - orkg
 repository: https://github.com/ISA-tools/stato
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31831744
+  title: Experiment design driven FAIRification of omics data matrices, an exemplar
+- id: https://www.ncbi.nlm.nih.gov/pubmed/32109232
+  title: Semantic concept schema of the linear mixed model of experimental observations
 ---
 ## Description
 

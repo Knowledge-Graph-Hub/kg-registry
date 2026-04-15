@@ -12,7 +12,7 @@ domains:
 - biological systems
 homepage_url: http://sourceforge.net/p/mamo-ontology/wiki/Home/
 id: mamo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://opensource.org/licenses/Artistic-2.0
@@ -27,6 +27,7 @@ products:
   product_file_size: 204902
   product_url: http://purl.obolibrary.org/obo/mamo.owl
 repository: http://sourceforge.net/p/mamo-ontology
+publications: []
 ---
 ## Description
 

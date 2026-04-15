@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Brian Aevermann
+  orcid: 0000-0003-1346-1327
   contact_details:
   - contact_type: email
     value: baeverma@jcvi.org
   - contact_type: github
     value: BAevermann
-  label: Brian Aevermann
-  orcid: 0000-0003-1346-1327
 creation_date: '2025-06-25T00:00:00Z'
 description: An ontology for representing treatment of disease and diagnosis and on
   carcinomas and other pathological entities
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/OGMS/ogms
 id: ogms
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -143,6 +143,11 @@ products:
 repository: https://github.com/OGMS/ogms
 taxon:
 - NCBITaxon:9606
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/21347182
+  title: Toward an ontological treatment of disease and diagnosis
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+  title: Biomarkers in the Ontology for General Medical Science
 ---
 ## Description
 

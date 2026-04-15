@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domains:
 - biological systems
 homepage_url: https://github.com/phenoscape/teleost-taxonomy-ontology
 id: tto
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -43,6 +43,9 @@ products:
 repository: https://github.com/phenoscape/teleost-taxonomy-ontology
 taxon:
 - NCBITaxon:32443
+publications:
+- id: https://doi.org/10.1038/npre.2010.4629.1
+  title: The Teleost Taxonomy Ontology
 ---
 ## Description
 

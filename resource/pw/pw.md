@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: G. Thomas Hayman
+  orcid: 0000-0002-9553-7227
   contact_details:
   - contact_type: email
     value: gthayman@mcw.edu
   - contact_type: github
     value: gthayman
-  label: G. Thomas Hayman
-  orcid: 0000-0002-9553-7227
 creation_date: '2025-08-20T00:00:00Z'
 description: A controlled vocabulary for annotating gene products to pathways.
 domains:
 - biological systems
 homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
 id: pw
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -165,6 +165,11 @@ products:
   secondary_source:
   - rna-kg
 repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/21478484
+  title: The Rat Genome Database pathway portal.
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24499703
+  title: The pathway ontology - updates and applications.
 ---
 ## Description
 

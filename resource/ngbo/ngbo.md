@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Dalia Alghamdi
+  orcid: 0000-0002-2801-0767
   contact_details:
   - contact_type: email
     value: dal.alghamdi92@gmail.com
   - contact_type: github
     value: dalalghamdi
-  label: Dalia Alghamdi
-  orcid: 0000-0002-2801-0767
 creation_date: '2025-09-29T00:00:00Z'
 description: 'The Next Generation Biobanking Ontology (NGBO) is an open application
   ontology representing contextual data about omics digital assets in biobank. The
@@ -22,7 +22,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/Dalalghamdi/NGBO
 id: ngbo
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,6 +38,7 @@ products:
   product_file_size: 187540
   product_url: http://purl.obolibrary.org/obo/ngbo.owl
 repository: https://github.com/Dalalghamdi/NGBO
+publications: []
 ---
 ## Description
 

@@ -19,7 +19,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://github.com/InSilicoVida-Research-Lab/pbpko
 id: pbpko
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -43,6 +43,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Physiologically-Based Pharmacokinetic Ontology in JSON format
   format: json
@@ -52,6 +54,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+publications: []
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---
 ## Description

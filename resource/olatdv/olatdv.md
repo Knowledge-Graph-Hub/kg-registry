@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Fr d ric Bastian
+  orcid: 0000-0002-9415-5104
   contact_details:
   - contact_type: email
     value: frederic.bastian@unil.ch
   - contact_type: github
     value: fbastian
-  label: Fr d ric Bastian
-  orcid: 0000-0002-9415-5104
 creation_date: '2025-09-29T00:00:00Z'
 description: Life cycle stages for Medaka
 domains:
 - anatomy and development
 homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
 id: olatdv
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -41,6 +41,7 @@ products:
   product_file_size: 11939
   product_url: http://purl.obolibrary.org/obo/olatdv.owl
 repository: https://github.com/obophenotype/developmental-stage-ontologies
+publications: []
 ---
 ## Description
 

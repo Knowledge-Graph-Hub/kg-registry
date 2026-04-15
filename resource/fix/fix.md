@@ -12,7 +12,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: http://www.ebi.ac.uk/chebi
 id: fix
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -28,6 +28,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Physico-chemical methods and properties in OBO format
   format: obo
@@ -37,6 +39,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+  - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+publications: []
 ---
 ## Description
 

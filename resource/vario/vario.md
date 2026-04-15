@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Mauno Vihinen
+  orcid: 0000-0002-9614-7976
   contact_details:
   - contact_type: email
     value: mauno.vihinen@med.lu.se
   - contact_type: github
     value: maunov
-  label: Mauno Vihinen
-  orcid: 0000-0002-9614-7976
 creation_date: '2025-09-29T00:00:00Z'
 description: Variation Ontology, VariO, is an ontology for standardized, systematic
   description of effects, consequences and mechanisms of variations.
@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: http://variationontology.org
 id: vario
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -41,6 +41,13 @@ products:
   name: VariO in OBO format
   product_file_size: 110673
   product_url: http://purl.obolibrary.org/obo/vario.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
+  title: Variation Ontology for annotation of variation effects and mechanisms
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
+  title: 'Variation ontology: annotator guide'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
+  title: Types and effects of protein variations
 ---
 ## Description
 

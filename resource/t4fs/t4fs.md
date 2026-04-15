@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/terms4fairskills/FAIRterminology
 id: t4fs
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -60,6 +60,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OBO format
     without upper-level ontology (ULO) terms to give the user community a simpler
@@ -72,6 +74,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in JSON format
@@ -86,6 +90,12 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+    when accessing file'
+publications:
+- id: https://doi.org/10.5281/zenodo.4705219
+  title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for
+    terms4FAIRskills: Technical report'
 repository: https://github.com/terms4fairskills/FAIRterminology
 ---
 ## Description

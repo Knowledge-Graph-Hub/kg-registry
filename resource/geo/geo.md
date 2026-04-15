@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Bill Hogan
+  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
-  label: Bill Hogan
-  orcid: 0000-0002-9881-1017
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of geographical entities
 domains:
 - environment
 homepage_url: https://github.com/ufbmi/geographical-entity-ontology/wiki
 id: geo
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -413,6 +413,7 @@ products:
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 repository: https://github.com/ufbmi/geographical-entity-ontology
+publications: []
 ---
 ## Description
 

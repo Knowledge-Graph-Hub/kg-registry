@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
 creation_date: '2025-09-29T00:00:00Z'
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domains:
 - biological systems
 homepage_url: https://github.com/phenoscape/taxrank
 id: taxrank
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -41,6 +41,10 @@ products:
   product_file_size: 2271
   product_url: http://purl.obolibrary.org/obo/taxrank.obo
 repository: https://github.com/phenoscape/taxrank
+publications:
+- id: https://doi.org/10.1186/2041-1480-4-34
+  title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
+    organism and species phenotypes'
 ---
 ## Description
 

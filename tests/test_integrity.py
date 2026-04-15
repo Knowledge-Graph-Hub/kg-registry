@@ -93,7 +93,7 @@ def test_root_resource_publications_have_at_most_one_preferred_entry():
 
 
 def test_root_resource_publications_have_non_empty_identifier():
-    """Every publication entry should carry a non-empty identifier or URL."""
+    """Every publication entry should carry a non-empty `id`."""
     violations = []
 
     for path, index, publication in _iter_publications():
@@ -101,9 +101,9 @@ def test_root_resource_publications_have_non_empty_identifier():
             violations.append(f"{path} publication[{index}] is not a mapping")
             continue
 
-        identifier = publication.get("id") or publication.get("url")
+        identifier = publication.get("id")
         if not isinstance(identifier, str) or not identifier.strip():
-            violations.append(f"{path} publication[{index}] is missing id/url")
+            violations.append(f"{path} publication[{index}] is missing id")
 
     assert not violations, "Publication identifier issues found:\n" + "\n".join(violations)
 
@@ -116,7 +116,7 @@ def test_root_resource_publication_identifiers_use_supported_formats():
         if not isinstance(publication, dict):
             continue
 
-        identifier = publication.get("id") or publication.get("url")
+        identifier = publication.get("id")
         if not isinstance(identifier, str):
             continue
 

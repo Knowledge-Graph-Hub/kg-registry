@@ -5,20 +5,20 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: James C. Hu
+  orcid: 0000-0001-9016-2684
   contact_details:
   - contact_type: email
     value: jimhu@tamu.edu
   - contact_type: github
     value: jimhu-tamu
-  label: James C. Hu
-  orcid: 0000-0001-9016-2684
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of phenotypes covering microbes
 domains:
 - biological systems
 homepage_url: http://microbialphenotypes.org
 id: omp
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -41,6 +41,9 @@ products:
   product_file_size: 124064
   product_url: http://purl.obolibrary.org/obo/omp.obo
 repository: https://github.com/microbialphenotypes/OMP-ontology
+publications:
+- id: https://doi.org/10.1186/s12866-014-0294-3
+  title: An ontology for microbial phenotypes
 ---
 ## Description
 

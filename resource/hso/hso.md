@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Fernanda Dorea
+  orcid: 0000-0001-8638-8525
   contact_details:
   - contact_type: email
     value: fernanda.dorea@sva.se
   - contact_type: github
     value: nandadorea
-  label: Fernanda Dorea
-  orcid: 0000-0001-8638-8525
 creation_date: '2025-09-29T00:00:00Z'
 description: The health Surveillance Ontology (HSO) focuses on "surveillance system
   level data", that is, data outputs from surveillance activities, such as number
@@ -21,7 +21,7 @@ domains:
 - biomedical
 homepage_url: https://w3id.org/hso
 id: hso
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -37,6 +37,7 @@ products:
   product_file_size: 138245
   product_url: http://purl.obolibrary.org/obo/hso.owl
 repository: https://github.com/SVA-SE/HSO
+publications: []
 ---
 ## Description
 

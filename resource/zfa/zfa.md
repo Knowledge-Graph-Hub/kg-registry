@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Ceri Van Slyke
+  orcid: 0000-0002-2244-7917
   contact_details:
   - contact_type: email
     value: van_slyke@zfin.org
   - contact_type: github
     value: cerivs
-  label: Ceri Van Slyke
-  orcid: 0000-0002-2244-7917
 creation_date: '2025-06-25T00:00:00Z'
 description: A structured controlled vocabulary of the anatomy and development of
   the Zebrafish
@@ -20,7 +20,7 @@ domains:
 homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfa
 infores_id: zfa
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -151,6 +151,10 @@ products:
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 taxon:
 - NCBITaxon:7954
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
+  title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and
+    development of Danio rerio.'
 ---
 ## Description
 

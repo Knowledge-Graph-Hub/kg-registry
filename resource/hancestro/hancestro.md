@@ -20,7 +20,7 @@ domains:
 - biological systems
 homepage_url: https://ebispot.github.io/hancestro/
 id: hancestro
-last_modified_date: '2026-02-24T00:00:00Z'
+last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,6 +44,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -151,6 +153,10 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
+  title: A standardized framework for representation of ancestry data in genomics
+    studies, with application to the NHGRI-EBI GWAS Catalog
 repository: https://github.com/EBISPOT/hancestro
 ---
 ## Description

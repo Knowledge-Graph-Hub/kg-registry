@@ -285,9 +285,11 @@
     lakefs-repo: ncipidkg
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
   shortname: ncipidkg
+  sparql: https://frink.apps.renci.org/ncipidkg/sparql
   stats: https://frink.renci.org/kg-stats/ncipidkg
   template: overrides/kg.html
   title: NCI-PID 2.0 KG
+  tpf: https://frink.apps.renci.org/ldf/ncipidkg
 - contact:
     email: tom@insilica.co
     github: tomlue
