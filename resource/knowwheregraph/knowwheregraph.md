@@ -75,6 +75,11 @@ products:
     port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
   - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
+    exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
+    expired (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
     to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
     exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
@@ -86,7 +91,7 @@ products:
     to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
     exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
-    expired (_ssl.c:1028)'')))'
+    expired (_ssl.c:1000)'')))'
 publications:
 - authors:
   - Zhu R
