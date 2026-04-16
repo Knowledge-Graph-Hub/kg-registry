@@ -11,8 +11,11 @@ domains:
 - health
 homepage_url: https://github.com/di2ag/chp_api
 id: connections-hypothesis-kp
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.apache.org/licenses/LICENSE-2.0
+  label: Apache License 2.0
 name: Connections Hypothesis KP
 products:
 - category: ProcessProduct
