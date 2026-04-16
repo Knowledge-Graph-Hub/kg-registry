@@ -44,8 +44,11 @@ domains:
 homepage_url: https://dip.doe-mbi.ucla.edu/
 id: dip
 infores_id: dip
-last_modified_date: '2025-11-10T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
+  label: DIP Terms of Use
 name: Database of Interacting Proteins
 products:
 - category: GraphicalInterface

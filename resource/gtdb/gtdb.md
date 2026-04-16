@@ -7,8 +7,11 @@ description: Stub Resource page for gtdb. This page was automatically generated 
 domains:
 - stub
 id: gtdb
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-sa/4.0/
+  label: CC-BY-SA-4.0
 name: Gtdb
 products:
 - category: Product

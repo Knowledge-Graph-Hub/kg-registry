@@ -16,8 +16,11 @@ domains:
 homepage_url: https://xenbase.org/xenbase/
 id: xenbase
 infores_id: xenbase
-last_modified_date: '2025-10-09T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://xenbase.org/xenbase/
+  label: Varies
 name: Xenbase
 products:
 - category: GraphicalInterface

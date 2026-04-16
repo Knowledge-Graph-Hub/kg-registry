@@ -21,7 +21,10 @@ domains:
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk
 infores_id: idisk
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
+license:
+  id: https://conservancy.umn.edu/handle/11299/204783
+  label: Varies
 layout: resource_detail
 name: integrated Dietary Supplement Knowledge Base
 products:

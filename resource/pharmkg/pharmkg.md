@@ -25,6 +25,9 @@ domains:
 homepage_url: https://github.com/MindRank-Biotech/PharmKG
 id: pharmkg
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: PharmKG
 products:
 - category: GraphProduct
@@ -69,7 +72,7 @@ repository: https://github.com/MindRank-Biotech/PharmKG
 taxon:
 - NCBITaxon:9606
 creation_date: '2025-08-12T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 ---
 PharmKG
 

@@ -20,8 +20,11 @@ domains:
 - general
 homepage_url: https://mapping-commons.github.io/semantic-mapping-vocabulary/
 id: "semapv"
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 name: Semantic Mapping Vocabulary
 repository: https://github.com/mapping-commons/semantic-mapping-vocabulary
 synonyms:

@@ -16,11 +16,11 @@ domains:
 - anatomy and development
 homepage_url: https://www.nescent.org/phenoscape/Main_Page
 id: vsao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 name: Vertebrate Skeletal Anatomy Ontology-
 products:
 - category: OntologyProduct

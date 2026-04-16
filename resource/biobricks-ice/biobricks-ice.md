@@ -24,6 +24,9 @@ domains:
 homepage_url: https://github.com/biobricks-ai/biobricks-okg
 id: biobricks-ice
 layout: resource_detail
+license:
+  id: https://opensource.org/licenses/MIT
+  label: MIT License
 name: BioBricks ICE
 products:
 - category: ProgrammingInterface
@@ -42,7 +45,7 @@ products:
   - biobricks-ice
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-03-30T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 ---
 BioBricks ICE
 

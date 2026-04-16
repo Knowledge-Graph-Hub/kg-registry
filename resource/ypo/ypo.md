@@ -5,14 +5,14 @@ description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.yeastgenome.org/
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 collection:
 - obo-foundry
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 domains:
 - biological systems
 taxon:

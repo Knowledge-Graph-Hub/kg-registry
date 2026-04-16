@@ -14,8 +14,11 @@ domains:
 homepage_url: https://icd10cmtool.cdc.gov/
 id: icd10cm
 infores_id: icd10cm
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.cdc.gov/other/agencymaterials.html
+  label: Public Domain
 name: ICD-10-CM
 products:
 - category: GraphicalInterface

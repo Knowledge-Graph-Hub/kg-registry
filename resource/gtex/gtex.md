@@ -21,8 +21,11 @@ domains:
 homepage_url: https://www.gtexportal.org/home/
 id: gtex
 infores_id: gtex
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.gtexportal.org/home/license
+  label: GTEx Portal Data License
 name: GTEx
 products:
 - category: GraphicalInterface

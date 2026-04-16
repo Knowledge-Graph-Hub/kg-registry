@@ -7,8 +7,11 @@ description: Stub Resource page for nlm. This page was automatically generated b
 domains:
 - stub
 id: nlm
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.nlm.nih.gov/web_policies.html
+  label: Public Domain
 name: Nlm
 products:
 - category: DataModelProduct

@@ -15,8 +15,11 @@ domains:
 - genomics
 id: "gencc"
 infores_id: "gencc"
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 name: The Gene Curation Coalition (GenCC)
 homepage_url: https://thegencc.org/
 products:
