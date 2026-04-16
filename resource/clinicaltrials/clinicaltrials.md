@@ -7,8 +7,11 @@ description: Stub Resource page for clinicaltrials. This page was automatically 
 domains:
 - stub
 id: clinicaltrials
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://clinicaltrials.gov/about-site/terms-conditions
+  label: Public Domain
 name: Clinicaltrials
 products:
 - category: Product
