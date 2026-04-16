@@ -20,8 +20,11 @@ domains:
 homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
 id: ndcd
 infores_id: ndcd
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.fda.gov/about-fda/about-website/website-policies
+  label: Public Domain
 name: National Drug Code Directory
 products:
 - category: GraphicalInterface
