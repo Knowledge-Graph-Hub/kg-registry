@@ -16,8 +16,11 @@ domains:
 - literature
 homepage_url: https://lncipedia.org/
 id: lncipedia
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.lncipedia.org/download
+  label: Non-Commercial Use Only
 name: LncIPedia
 products:
 - category: GraphicalInterface

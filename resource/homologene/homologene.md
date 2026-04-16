@@ -23,8 +23,11 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/homologene
 id: homologene
 infores_id: homologene
-last_modified_date: '2025-11-04T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+  label: Public Domain
 name: HomoloGene
 products:
 - category: Product
