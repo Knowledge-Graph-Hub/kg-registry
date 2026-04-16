@@ -956,6 +956,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON
       format
@@ -965,6 +967,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/afpo.json
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
   repository: https://github.com/h3abionet/afpo
@@ -1154,6 +1158,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
     edge_count: 15356321
@@ -2301,6 +2307,8 @@ resources:
       with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7fca293233d0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http
@@ -4928,6 +4936,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph,
       harmonizing and integrating information from diverse biomedical resources including
@@ -6011,8 +6021,11 @@ resources:
   evaluation_page: resource/biobricks-ice/biobricks-ice_eval_automated.html
   homepage_url: https://github.com/biobricks-ai/biobricks-okg
   id: biobricks-ice
-  last_modified_date: '2026-03-30T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT License
   name: BioBricks ICE
   products:
   - category: ProgrammingInterface
@@ -6723,6 +6736,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - Wu C
@@ -7674,6 +7689,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Historical consolidated protein interaction index in PSI-MITAB 2.5
       format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact,
@@ -10976,13 +10993,13 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
@@ -10992,13 +11009,13 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
@@ -11009,13 +11026,13 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: Product
     description: All cell markers of different cell types from different tissues in
@@ -11026,13 +11043,13 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
@@ -11176,6 +11193,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
     format: ttl
@@ -11191,6 +11210,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
     id: cellosaurus.api.rest
@@ -11392,6 +11413,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Clarke DJB
@@ -11446,6 +11469,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: cgnc OBO
     format: obo
@@ -12452,6 +12477,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   - category: GraphProduct
     description: RNA-KG as a Neo4j Dump
     format: neo4j
@@ -13543,6 +13570,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/21991315
     title: 'The chemical information ontology: provenance and disambiguation for chemical
@@ -13601,6 +13630,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   repository: https://github.com/wishartlab/chemontology
 - activity_status: active
   category: Ontology
@@ -14119,6 +14150,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   repository: https://github.com/sparontologies/cito
 - activity_status: active
   category: DataSource
@@ -16286,8 +16319,11 @@ resources:
   domains:
   - stub
   id: clinicaltrials
-  last_modified_date: '2026-02-26T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions
+    label: Public Domain
   name: Clinicaltrials
   products:
   - category: Product
@@ -16507,6 +16543,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Clinical trial information from ClinicalTrials.gov
     format: http
@@ -16520,6 +16558,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Cloud-based PostgreSQL database with daily refreshed clinical trial
       data, accessible via standard PostgreSQL clients
@@ -17641,6 +17681,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other
       variant databases
@@ -17657,6 +17699,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - Landrum MJ
@@ -18297,6 +18341,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: demo of COB including subsets of other ontologies (Experimental,
       for demo purposes only)
@@ -18904,6 +18950,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 502 error
+      when accessing file'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -19111,6 +19159,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -20241,8 +20291,11 @@ resources:
   evaluation_page: resource/connections-hypothesis-kp/connections-hypothesis-kp_eval_automated.html
   homepage_url: https://github.com/di2ag/chp_api
   id: connections-hypothesis-kp
-  last_modified_date: '2026-02-20T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License 2.0
   name: Connections Hypothesis KP
   products:
   - category: ProcessProduct
@@ -20344,7 +20397,7 @@ resources:
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20366,7 +20419,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20387,7 +20440,7 @@ resources:
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20409,7 +20462,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20430,7 +20483,7 @@ resources:
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20452,7 +20505,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20472,7 +20525,7 @@ resources:
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -20494,7 +20547,7 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -23522,6 +23575,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - Sherry ST
@@ -23791,6 +23846,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   publications:
   - id: https://www.iso.org/standard/71339.html
     preferred: true
@@ -23811,8 +23868,12 @@ resources:
   domains: []
   homepage_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
   id: dct
-  last_modified_date: '2025-11-25T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   name: Dublin Core Terms
   products:
   - category: GraphProduct
@@ -25855,8 +25916,11 @@ resources:
   homepage_url: https://dip.doe-mbi.ucla.edu/
   id: dip
   infores_id: dip
-  last_modified_date: '2025-11-10T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://dip.doe-mbi.ucla.edu/dip/Download.cgi
+    label: DIP Terms of Use
   name: Database of Interacting Proteins
   products:
   - category: GraphicalInterface
@@ -25878,7 +25942,7 @@ resources:
       exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''dip.doe-mbi.ucla.edu'', port=443): Max retries
       exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -25898,7 +25962,7 @@ resources:
       exceeded with url_ /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''dip.doe-mbi.ucla.edu'', port=443): Max retries
       exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -27853,6 +27917,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: Graph database dump and additional relationship files for the Clinical
       Knowledge Graph.
@@ -29593,6 +29659,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph,
       harmonizing and integrating information from diverse biomedical resources including
@@ -30086,6 +30154,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -30107,6 +30177,8 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -30131,6 +30203,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -30180,6 +30254,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -30429,7 +30505,7 @@ resources:
       Max retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
       certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -30444,7 +30520,7 @@ resources:
       retries exceeded with url_ /public/data/repo-drug-annotation-20200324.txt (Caused
       by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
       verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -30463,7 +30539,7 @@ resources:
       Max retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
       certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -30478,7 +30554,7 @@ resources:
       retries exceeded with url_ /public/data/repo-sample-annotation-20240610.txt
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -30621,6 +30697,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http
@@ -34009,6 +34087,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -34996,6 +35076,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/EPIO_merged.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
   repository: https://github.com/SCAI-BIO/EpilepsyOntology
@@ -36324,6 +36406,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 500 error
+      when accessing file'
   - category: Product
     description: Baseline expression summary data across human tissues and cell types
       from GTEx, Human Protein Atlas and other major studies
@@ -36676,6 +36760,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   - category: OntologyProduct
     description: OpenBioDiv-O, the OpenBiodiv Ontology
     format: ttl
@@ -37516,6 +37602,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   publications: []
   repository: https://gitub.u-bordeaux.fr/erias/fideo
 - activity_status: active
@@ -37986,6 +38074,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -38480,6 +38570,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -38498,6 +38590,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -38516,6 +38610,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -38533,6 +38629,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -38550,6 +38648,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -38567,6 +38667,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -38584,6 +38686,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -38601,6 +38705,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -38618,6 +38724,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -38635,6 +38743,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Image files of compounds, foods, and chemical structures
@@ -38652,6 +38762,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -39212,6 +39324,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
     title: 'FoodOn: a harmonized food ontology to increase global food traceability,
@@ -39276,6 +39390,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   publications:
   - authors:
     - Delmas M
@@ -39454,6 +39570,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Plant Gall Ontology in OBO format
     format: obo
@@ -39605,6 +39723,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Simple CSV format occurrence downloads with interpreted data and
@@ -39617,6 +39737,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: DocumentationProduct
     description: Comprehensive technical documentation, API reference, developer guides,
       and data formats documentation
@@ -39637,6 +39759,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - Robertson T
@@ -39815,6 +39939,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -40334,8 +40460,12 @@ resources:
   homepage_url: https://thegencc.org/
   id: gencc
   infores_id: gencc
-  last_modified_date: '2025-11-08T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: The Gene Curation Coalition (GenCC)
   products:
   - category: Product
@@ -40844,6 +40974,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Disease association data integrated from OMIM, MalaCards, ClinVar,
       Orphanet, DisGeNET and other disease databases
@@ -40862,6 +40994,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other
       expression databases
@@ -40878,6 +41012,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Pathway information integrated from Reactome, WikiPathways and other
       pathway databases
@@ -40893,6 +41029,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Protein interaction data aggregated from IntAct, STRING, BioGRID
       and other interaction databases
@@ -40909,6 +41047,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other
       variant databases
@@ -40925,6 +41065,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Literature references from PubMed automatically associated with genes
     format: http
@@ -40938,6 +41080,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Gene ontology annotations from the Gene Ontology Consortium
     format: http
@@ -40951,6 +41095,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
       sources
@@ -40966,6 +41112,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Model organism data from FlyBase, SGD, ZFIN and other model organism
       databases
@@ -40982,6 +41130,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Protein structure data from PDB Europe and other structural databases
     format: http
@@ -40995,6 +41145,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Clinical trial information from ClinicalTrials.gov
     format: http
@@ -41008,6 +41160,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -42360,6 +42514,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: Tab-separated verbatim species interaction pairs (original unresolved
@@ -42386,6 +42542,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: Tab-separated refuted species interaction pairs (interpreted names)
@@ -42410,6 +42568,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: Comma-separated refuted verbatim species interaction pairs (original
@@ -42427,6 +42587,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: RDF N-Quads representation of interaction data
@@ -42467,6 +42629,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: Tab-separated taxonomic name mapping file
@@ -42507,6 +42671,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2026-01-02_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: Tab-separated refuted species interactions (original unresolved names)
@@ -42526,6 +42692,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Field (column) definitions CSV endpoint
     format: csv
@@ -43295,8 +43463,12 @@ resources:
   homepage_url: https://github.com/jakelever/GNBR
   id: gnbr
   infores_id: gnbr
-  last_modified_date: '2025-12-13T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   name: GNBR
   products:
   - category: GraphProduct
@@ -43461,6 +43633,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: OntologyProduct
     description: The main ontology plus axioms connecting to select external ontologies,
       with subsets of those ontologies
@@ -43486,6 +43660,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: OntologyProduct
     description: Basic version of the GO, filtered such that the graph is guaranteed
       to be acyclic and annotations can be propagated up the graph. The relations
@@ -43505,6 +43681,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: OntologyProduct
     description: Classes added to ncbitaxon for groupings such as prokaryotes
     format: owl
@@ -43513,6 +43691,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: OntologyProduct
     description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -45775,6 +45955,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
       format.
@@ -45955,6 +46137,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually
       curated by Gene Ontology biocurators linking genes, proteins, and biological
@@ -46042,6 +46226,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
     description: Programmatic access to GO-CAM models through the Gene Ontology API
@@ -46203,6 +46389,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     format: owl
     id: goldterms.bioportal
@@ -46653,8 +46841,12 @@ resources:
   domains:
   - stub
   id: gtdb
-  last_modified_date: '2026-02-26T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
   name: Gtdb
   products:
   - category: Product
@@ -46697,8 +46889,11 @@ resources:
   homepage_url: https://www.gtexportal.org/home/
   id: gtex
   infores_id: gtex
-  last_modified_date: '2026-02-20T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.gtexportal.org/home/license
+    label: GTEx Portal Data License
   name: GTEx
   products:
   - category: GraphicalInterface
@@ -46973,6 +47168,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - GTEx Consortium
@@ -47045,14 +47242,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
       bioactive compounds
@@ -47063,14 +47262,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
     format: csv
@@ -47080,14 +47281,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
     format: csv
@@ -47097,14 +47300,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
       in the database
@@ -47115,14 +47320,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
       with supporting information)
@@ -47133,14 +47340,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
       database
@@ -47150,14 +47359,16 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: No Content-Length
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
       access-point to GtoPdb data
@@ -47865,6 +48076,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Study metadata file containing per-study information for GWAS Catalog
       entries
@@ -47889,6 +48102,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
       Factor Ontology terms
@@ -47903,6 +48118,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: RDF/OWL representation of GWAS Catalog associations enabling semantic
       integration
@@ -47917,6 +48134,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG
       format (current release)
@@ -47931,6 +48150,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: Archive of previous GWAS Catalog diagram versions (SVG format)
     format: svg
@@ -47944,6 +48165,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: Harmonised summary statistics landing page (FTP directory containing
       per-study summary statistics under CC0 where available)
@@ -48247,6 +48470,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: Graph database dump and additional relationship files for the Clinical
       Knowledge Graph.
@@ -48448,6 +48673,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
@@ -49029,6 +49256,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
     format: sssom
@@ -49584,6 +49813,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring and visualizing kinase-substrate
       interactions
@@ -50148,6 +50379,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: All metabolite metabolizing enzyme gene sequences (FASTA)
     format: fasta
@@ -50158,6 +50391,8 @@ resources:
     product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: All metabolite structures (SDF)
@@ -50172,6 +50407,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: All metabolites dataset (XML)
     format: xml
@@ -53018,6 +53255,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Pathology data including cancer tissue expression and patient survival
       information
@@ -53034,6 +53273,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Subcellular localization data based on immunofluorescent staining
       of human cell lines
@@ -53050,6 +53291,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: RNA expression data in human tissues based on transcriptomic analysis
     format: tsv
@@ -53063,6 +53306,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: RNA expression data in human cell lines based on RNA-seq analysis
     format: tsv
@@ -53078,6 +53323,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Single cell expression data from human tissues based on scRNA-seq
       analysis
@@ -53092,6 +53339,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Brain-specific expression data including regional and cellular distribution
     format: tsv
@@ -53105,6 +53354,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Blood protein expression data from healthy individuals and disease
       states
@@ -53119,6 +53370,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Immune cell expression data from single cell transcriptomics studies
     format: tsv
@@ -53134,6 +53387,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     description: Programmatic access to individual protein entries in XML format via
       Ensembl ID
@@ -53943,6 +54198,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web interface for browsing and exploring the Human Reference Interactome
     format: http
@@ -54444,6 +54701,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 401 error
+      when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
     id: hubmap.data_ingest_portal
@@ -54636,7 +54895,8 @@ resources:
     original_source:
     - humannet
     product_url: https://www.inetbio.org/humannet/
-  - category: GraphProduct
+  - _replace_warnings: true
+    category: GraphProduct
     description: Downloadable functional gene network with confidence scores
     format: tsv
     id: humannet.network
@@ -54644,9 +54904,7 @@ resources:
     original_source:
     - humannet
     product_url: https://www.inetbio.org/humannet/download.php
-    warnings:
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    warnings: []
   - category: ProgrammingInterface
     description: API for programmatic access to HumanNet data
     format: http
@@ -54892,6 +55150,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: An ontology based on a theory of document acts describing what people
@@ -55431,8 +55691,11 @@ resources:
   homepage_url: https://icd10cmtool.cdc.gov/
   id: icd10cm
   infores_id: icd10cm
-  last_modified_date: '2026-04-10T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.cdc.gov/other/agencymaterials.html
+    label: Public Domain
   name: ICD-10-CM
   products:
   - category: GraphicalInterface
@@ -55896,8 +56159,11 @@ resources:
   homepage_url: https://doi.org/10.13020/d6bm3v
   id: idisk
   infores_id: idisk
-  last_modified_date: '2025-11-25T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://conservancy.umn.edu/handle/11299/204783
+    label: Varies
   name: integrated Dietary Supplement Knowledge Base
   products:
   - category: GraphProduct
@@ -56353,6 +56619,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -56628,8 +56896,11 @@ resources:
   homepage_url: https://www.innatedb.com/
   id: innatedb
   infores_id: innatedb
-  last_modified_date: '2025-11-26T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.innatedb.com/
+    label: Varies
   name: InnateDB
   products:
   - category: GraphicalInterface
@@ -57236,6 +57507,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Historical consolidated protein interaction index in PSI-MITAB 2.5
       format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact,
@@ -59993,6 +60266,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -60111,6 +60386,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -60365,7 +60642,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2026-04-15T23:23:23Z'
+  last_modified_date: '2026-04-16T17:40:36Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -62175,7 +62452,7 @@ resources:
       retries exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
       expired (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max
       retries exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
@@ -62190,7 +62467,7 @@ resources:
       port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
     - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max
       retries exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
@@ -63408,6 +63685,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -63664,8 +63943,11 @@ resources:
   - literature
   homepage_url: https://lncipedia.org/
   id: lncipedia
-  last_modified_date: '2025-10-30T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.lncipedia.org/download
+    label: Non-Commercial Use Only
   name: LncIPedia
   products:
   - category: GraphicalInterface
@@ -64053,6 +64335,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 503 error
+      when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
     format: mixed
@@ -64066,6 +64350,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
       development (CC-BY 4.0 licensed document)
@@ -64079,6 +64365,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 503 error
+      when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -64512,6 +64800,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -64740,6 +65030,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - Rappaport N
@@ -65883,6 +66175,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -65904,6 +66198,8 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -65928,6 +66224,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -67248,6 +67546,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -67615,6 +67915,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
     format: tsv
@@ -67630,6 +67932,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     compression: gzip
     description: RDF version of the MetaNetX data for semantic web applications
@@ -68999,6 +69303,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -69020,6 +69326,8 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
       indications
@@ -69044,6 +69352,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
     format: tsv
@@ -69143,6 +69453,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
       sapiens (NCBITaxon 9606).
@@ -69159,6 +69471,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
       musculus (NCBITaxon 10090).
@@ -69175,6 +69489,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: ProgrammingInterface
     description: PSICQUIC SOAP and REST web services for programmatic access to MINT
       data using Molecular Interactions Query Language (MIQL).
@@ -70366,7 +70682,7 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -70384,7 +70700,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: Dataset of microRNA target sites with detailed binding site information
@@ -70399,7 +70715,7 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
@@ -70417,7 +70733,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: Species-specific microRNA-target interaction datasets in CSV format
@@ -70432,7 +70748,7 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -70450,7 +70766,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: Curated datasets filtered for strong experimental evidence including
@@ -70465,7 +70781,7 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -70483,7 +70799,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: Archive of previous miRTarBase releases for reproducibility and historical
@@ -70498,7 +70814,7 @@ resources:
       retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php (Caused
       by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
       to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
@@ -70516,7 +70832,7 @@ resources:
       exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by
       SSLError(SSLError(1, '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake
       failure (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - description: The MechRepoNet knowledge graph in its original format
     id: mechreponet.kg
@@ -72625,6 +72941,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/mp.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: OntologyProduct
     description: For a description of the format see https://github.com/geneontology/obographs.
@@ -74763,6 +75081,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: MappingProduct
     compression: zip
     description: A single delimited text file format containing a list of mappings
@@ -75063,6 +75383,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: OntologyProduct
     description: taxslim
@@ -75867,8 +76189,11 @@ resources:
   homepage_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
   id: ndcd
   infores_id: ndcd
-  last_modified_date: '2026-04-10T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.fda.gov/about-fda/about-website/website-policies
+    label: Public Domain
   name: National Drug Code Directory
   products:
   - category: GraphicalInterface
@@ -76267,8 +76592,11 @@ resources:
   domains:
   - stub
   id: nlm
-  last_modified_date: '2026-02-26T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.nlm.nih.gov/web_policies.html
+    label: Public Domain
   name: Nlm
   products:
   - category: DataModelProduct
@@ -76458,6 +76786,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphicalInterface
     description: Predicted functions for plant lncRNAs based on co-expression analysis
     format: http
@@ -81831,6 +82161,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
     title: Structuring, reuse and analysis of electronic dental data using the Oral
@@ -82274,6 +82606,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
     format: xml
@@ -82295,6 +82629,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
     format: xml
@@ -82318,6 +82654,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Pairwise orthologs in tab-separated text format
@@ -82340,6 +82678,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Protein sequences from all genomes in FASTA format
@@ -82362,6 +82702,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2026-01-02_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -82384,6 +82726,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -82406,6 +82750,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
     id: oma.hdf5
@@ -82428,6 +82774,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: OMA data in RDF format (Turtle syntax)
@@ -82450,6 +82798,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: MappingProduct
     compression: gzip
     description: Mapping of OMA identifiers to UniProt accession numbers
@@ -82473,6 +82823,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
 - activity_status: active
   category: DataSource
   contacts:
@@ -82681,6 +83033,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Disease association data integrated from OMIM, MalaCards, ClinVar,
       Orphanet, DisGeNET and other disease databases
@@ -82699,6 +83053,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -84696,6 +85052,8 @@ resources:
       when accessing file
     - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 405 error
+      when accessing file'
   publications:
   - id: https://doi.org/10.1093/bioinformatics/btab540
   repository: https://github.com/MaastrichtU-IDS/translator-openpredict
@@ -85795,6 +86153,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: History file tracking changes to Orphanet term mappings to CUIs
     format: txt
@@ -87986,6 +88346,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Physiologically-Based Pharmacokinetic Ontology in JSON format
     format: json
@@ -87995,9 +88357,9 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
   repository: https://github.com/InSilicoVida-Research-Lab/pbpko
@@ -88053,6 +88415,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OWL format
     format: owl
@@ -88061,6 +88425,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/pcl-base.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OBO format
@@ -88071,6 +88437,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
     format: json
@@ -88080,6 +88448,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OWL format
     format: owl
@@ -88089,6 +88459,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OBO format
     format: obo
@@ -88099,6 +88471,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2026-04-10: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
@@ -88111,6 +88485,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OWL format
     format: owl
@@ -88122,6 +88498,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2026-04-10: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OBO format
     format: obo
@@ -88131,6 +88509,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
     format: json
@@ -88139,6 +88519,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/pcl-simple.json
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
   repository: https://github.com/obophenotype/provisional_cell_ontology
@@ -88907,6 +89289,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: GO annotations for PDB entries
     format: txt
@@ -90927,6 +91311,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph,
       harmonizing and integrating information from diverse biomedical resources including
@@ -91052,8 +91438,12 @@ resources:
   evaluation_page: resource/pharmkg/pharmkg_eval.html
   homepage_url: https://github.com/MindRank-Biotech/PharmKG
   id: pharmkg
-  last_modified_date: '2025-12-13T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   name: PharmKG
   products:
   - category: GraphProduct
@@ -91154,6 +91544,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: ProgrammingInterface
     description: GraphQL API for programmatic access to Pharos and TCRD data enabling
       custom queries and integrations
@@ -91172,6 +91564,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: PHAROS Automat
     format: kgx-jsonl
@@ -91195,6 +91589,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications:
   - authors:
     - Nguyen DT
@@ -91449,6 +91845,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -93650,6 +94048,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphicalInterface
     description: JBrowse genome browser for visualizing lncRNA locations, expression
       patterns, and epigenetic modifications
@@ -94130,6 +94530,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
       chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -94151,6 +94553,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -95332,6 +95736,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: PRO without reasoning applied, OBO format.
     format: obo
@@ -95340,6 +95746,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   - description: The MechRepoNet knowledge graph in its original format
     id: mechreponet.kg
@@ -95727,7 +96135,7 @@ resources:
       Max retries exceeded with url: /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
       certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''honiglab.c2b2.columbia.edu'', port=443):
       Max retries exceeded with url: /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -95749,7 +96157,7 @@ resources:
       retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''honiglab.c2b2.columbia.edu'', port=443):
       Max retries exceeded with url: /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -95812,6 +96220,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
   taxon:
   - NCBITaxon:9606
@@ -97108,9 +97518,11 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 202 error
+      when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 202 error
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: DocumentationProduct
     description: Comprehensive technical documentation and class reference for PROTON
@@ -97541,6 +97953,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -97923,6 +98337,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Co-occurrence data from PubMed abstracts
     format: mixed
@@ -97990,6 +98406,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   - category: Product
     compression: gzip
     description: Links between MedGen concepts and PubMed articles with gzip compression
@@ -98800,6 +99218,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/rbo.json
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   - category: OntologyProduct
     description: Radiation Biology Ontology in OWL format
@@ -100527,6 +100947,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph,
       harmonizing and integrating information from diverse biomedical resources including
@@ -101607,6 +102029,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -102092,6 +102516,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
       disease-centric search capabilities
@@ -102198,7 +102624,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102218,7 +102644,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102236,7 +102662,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102256,7 +102682,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102273,7 +102699,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102293,7 +102719,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102310,7 +102736,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102330,7 +102756,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102347,7 +102773,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102367,7 +102793,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102385,7 +102811,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102405,7 +102831,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102422,7 +102848,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102442,7 +102868,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102460,7 +102886,7 @@ resources:
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102480,7 +102906,7 @@ resources:
       retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -102497,7 +102923,7 @@ resources:
       Max retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -102517,7 +102943,7 @@ resources:
       retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
       SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
       verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443):
       Max retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -103010,6 +103436,11 @@ resources:
       with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
       object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
       or service not known)"))
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
+      to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries
+      exceeded with url: /downloads/ (Caused by NameResolutionError("HTTPSConnection(host=''reprotox-kg.net'',
+      port=443): Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service
+      not known)"))'
   publications:
   - authors:
     - Smith AB
@@ -105237,6 +105668,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: For use in neuroscience
     format: owl
@@ -106256,6 +106689,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
 - activity_status: active
   category: DataSource
   creation_date: '2025-09-09T00:00:00Z'
@@ -106492,8 +106927,12 @@ resources:
   - general
   homepage_url: https://mapping-commons.github.io/semantic-mapping-vocabulary/
   id: semapv
-  last_modified_date: '2025-12-03T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: Semantic Mapping Vocabulary
   products:
   - category: OntologyProduct
@@ -107149,6 +107588,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)
@@ -108758,6 +109199,8 @@ resources:
       out'
     - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
       out
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+      out'
   - category: OntologyProduct
     description: OpenBioDiv-O, the OpenBiodiv Ontology
     format: ttl
@@ -108911,6 +109354,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Includes axioms linking to other ontologies, but no imports of those
       ontologies
@@ -108920,6 +109365,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/slso-base.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
   repository: https://github.com/nasa/LSDAO
@@ -109762,7 +110209,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109782,7 +110229,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109800,7 +110247,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109820,7 +110267,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109838,7 +110285,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109858,7 +110305,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109875,7 +110322,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109895,7 +110342,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109913,7 +110360,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109933,7 +110380,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109950,7 +110397,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109970,7 +110417,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -109988,7 +110435,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110008,7 +110455,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110026,7 +110473,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110046,7 +110493,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110064,7 +110511,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -110084,7 +110531,7 @@ resources:
       Max retries exceeded with url_ /snoDB/rRNA_modifications/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -110101,7 +110548,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110121,7 +110568,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110138,7 +110585,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110158,7 +110605,7 @@ resources:
       Max retries exceeded with url_ /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110183,7 +110630,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110203,7 +110650,7 @@ resources:
       Max retries exceeded with url_ /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110220,7 +110667,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110240,7 +110687,7 @@ resources:
       Max retries exceeded with url_ /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -110258,7 +110705,7 @@ resources:
       port=443): Max retries exceeded with url: /snoDB/experiment_details/ (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/experiment_details/ (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -110278,7 +110725,7 @@ resources:
       Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
       port=443): Max retries exceeded with url: /snoDB/experiment_details/ (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -114784,6 +115231,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -115026,8 +115475,11 @@ resources:
   domains:
   - stub
   id: sty
-  last_modified_date: '2026-02-26T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://lhncbc.nlm.nih.gov/semanticnetwork/
+    label: Public Domain
   name: Sty
   products:
   - category: Product
@@ -115838,6 +116290,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: This community view of T4FS makes the ontology available in OBO format
       without upper-level ontology (ULO) terms to give the user community a simpler
@@ -115851,6 +116305,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: This community view of T4FS makes the ontology available in JSON
       format without upper-level ontology (ULO) terms to give the user community a
@@ -115863,6 +116319,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/t4fs-community.json
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications:
   - id: https://doi.org/10.5281/zenodo.4705219
@@ -116208,14 +116666,14 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2026-04-02: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: DocumentationProduct
     description: Downloads page with file format specifications and field descriptions
     format: http
@@ -116230,6 +116688,8 @@ resources:
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
       to URL'
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
@@ -116572,6 +117032,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: Product
     description: Tab-delimited table with TC family definitions. The URL ends in .py,
       but this endpoint serves data, not Python source code.
@@ -116592,6 +117054,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited table mapping systems, subfamilies, and families to
       superfamilies. The URL ends in .py, but this endpoint serves data, not Python
@@ -116613,6 +117077,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited annotation mapping table for TC systems. The URL ends
       in .py, but this endpoint serves data, not Python source code.
@@ -116625,6 +117091,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited structure mapping table for TC systems. The URL ends
       in .py, but this endpoint serves data, not Python source code.
@@ -116637,6 +117105,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited protein family mapping table for TC systems. The URL
       ends in .py, but this endpoint serves data, not Python source code.
@@ -116649,6 +117119,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv
@@ -116943,6 +117415,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: ProgrammingInterface
     description: RESTful API providing programmatic access to TCRD data through Pharos
       for computational workflows and custom applications
@@ -116966,6 +117440,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   publications:
   - id: https://doi.org/10.1093/nar/gkaa993
     title: 'Pharos 2021: mining the human proteome for disease biology'
@@ -117183,6 +117659,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -117367,6 +117845,8 @@ resources:
     product_url: https://tissues.jensenlab.org/Downloads
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
       header found'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
@@ -121796,6 +122276,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: UniBioMap protein entity descriptions.
     format: json
@@ -121809,6 +122291,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: UniBioMap disease entity descriptions.
     format: json
@@ -121822,6 +122306,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: UniBioMap Gene Ontology entity descriptions.
     format: json
@@ -121837,6 +122323,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: UniBioMap pathway entity descriptions.
     format: json
@@ -121850,6 +122338,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: GraphProduct
     description: UniBioMap phenotype entity descriptions.
     format: json
@@ -121863,6 +122353,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: Web interface for browsing UniBioMap resources and documentation.
     format: http
@@ -122172,6 +122664,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Comprehensive UNII data with detailed substance attributes and mappings
@@ -122184,6 +122678,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: Legacy UNII identifiers for historical substances
     format: txt
@@ -122195,6 +122691,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - description: The MechRepoNet knowledge graph in its original format
     id: mechreponet.kg
     name: MechRepoNet Knowledge Graph
@@ -122333,6 +122831,8 @@ resources:
       header found'
     - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
       header found
+    - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -122384,6 +122884,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -122887,6 +123389,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: UniProt IDs for all targets in TTD
     format: txt
@@ -125643,6 +126147,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: Product
     description: WikiPathways data for all targets
     format: txt
@@ -126297,6 +126803,8 @@ resources:
       101] Network is unreachable
     - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
+    - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: [Errno
+      101] Network is unreachable'
   - category: GraphicalInterface
     description: Sub-portal hosting approximately 100 parasitic helminth genomes with
       annotations and comparative genomics tools
@@ -126810,8 +127318,11 @@ resources:
   homepage_url: https://xenbase.org/xenbase/
   id: xenbase
   infores_id: xenbase
-  last_modified_date: '2025-10-09T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://xenbase.org/xenbase/
+    label: Varies
   name: Xenbase
   products:
   - category: GraphicalInterface
@@ -129162,6 +129673,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: MappingProduct
     compression: zip
     description: A single delimited text file format containing a list of mappings
@@ -129569,7 +130082,7 @@ resources:
   - biological systems
   homepage_url: http://www.animaldiversity.org
   id: adw
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
   license:
     id: ''
@@ -129934,6 +130447,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications: []
   taxon:
   - NCBITaxon:33213
@@ -130062,6 +130577,8 @@ resources:
       to URL'
     - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+      to URL'
   publications:
   - authors:
     - Belleau F
@@ -130764,6 +131281,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
       to URL
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Kamburov A
@@ -131333,7 +131852,7 @@ resources:
   - anatomy and development
   homepage_url: http://emouseatlas.org
   id: emap
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
   license:
     id: ''
@@ -131387,6 +131906,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: OntologyProduct
     description: Plant Environment Ontology in OBO format
     format: obo
@@ -131395,6 +131916,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/eo.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
@@ -131427,6 +131950,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/epo.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -131466,12 +131991,12 @@ resources:
       exceeded with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
       expired (_ssl.c:1028)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
       to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries
       exceeded with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
       expired (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries
       exceeded with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
@@ -131560,7 +132085,7 @@ resources:
   - biological systems
   homepage_url: http://www.flybase.org/
   id: fbsp
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
   license:
     id: ''
@@ -131575,6 +132100,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/fbsp.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   publications: []
   taxon:
@@ -131608,6 +132135,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   - category: OntologyProduct
     description: Physico-chemical methods and properties in OBO format
     format: obo
@@ -131616,6 +132145,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/fix.obo
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+      to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
       to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
   publications: []
 - activity_status: inactive
@@ -131681,6 +132212,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/fma.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
@@ -132185,8 +132718,11 @@ resources:
   homepage_url: https://www.ncbi.nlm.nih.gov/homologene
   id: homologene
   infores_id: homologene
-  last_modified_date: '2025-11-04T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: Public Domain
   name: HomoloGene
   products:
   - category: Product
@@ -132282,6 +132818,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
       and other interaction databases.
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in XML format for programmatic access
     id: hprd.xml.download
@@ -132296,6 +132834,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: HPRD data in tab-delimited format for programmatic access
     id: hprd.tsv.download
@@ -132310,6 +132850,8 @@ resources:
       when accessing file
     - Original HPRD website is no longer accessible. Data may be available through
       archive.org or integrated databases.
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 503 error
+      when accessing file'
   - category: GraphicalInterface
     description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
       and binding motifs
@@ -133731,6 +134273,11 @@ resources:
       exceeded with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
       object at 0x7fd68a510490>_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno
       -2] Name or service not known)"))
+    - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
+      to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
+      exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
+      port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or
+      service not known)"))'
   - category: ProgrammingInterface
     description: REST API for programmatic access to miRNA-mRNA target prediction
       data
@@ -133783,6 +134330,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/mirnao.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -133860,6 +134409,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/mo.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -133971,6 +134522,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -133989,7 +134542,7 @@ resources:
   - biological systems
   homepage_url: http://www.obofoundry.org/ro
   id: obo_rel
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
   license:
     id: ''
@@ -134032,6 +134585,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/ogi.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
       when accessing file'
   publications: []
 - activity_status: inactive
@@ -134330,8 +134885,11 @@ resources:
   homepage_url: https://www.ebi.ac.uk/spot/oxo/
   id: oxo
   infores_id: oxo
-  last_modified_date: '2025-11-04T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License 2.0
   name: Ontology Xref Service
   products:
   - category: ProgrammingInterface
@@ -135518,6 +136076,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -135892,6 +136452,8 @@ resources:
     product_url: http://purl.obolibrary.org/obo/sep.owl
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
       when accessing file'
   publications: []
 - activity_status: orphaned
@@ -137286,6 +137848,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Multiple sequence alignments for 632 tmRNA and 2,258 distinct SmpB
       sequences
@@ -137300,6 +137864,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Krona-based interactive phylogenetic visualization tool for 9,387
       tmRNA instances
@@ -137314,6 +137880,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in
       genomic sequences
@@ -137328,6 +137896,8 @@ resources:
       when accessing file'
     - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error
       when accessing file
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -137748,6 +138318,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+      when accessing file'
   publications: []
 - activity_status: inactive
   category: Ontology
@@ -137766,7 +138338,7 @@ resources:
   - anatomy and development
   homepage_url: https://www.nescent.org/phenoscape/Main_Page
   id: vsao
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
   license:
     id: ''
@@ -137800,7 +138372,7 @@ resources:
   - biological systems
   homepage_url: http://www.yeastgenome.org/
   id: ypo
-  last_modified_date: '2026-04-15T00:00:00Z'
+  last_modified_date: '2026-04-16T00:00:00Z'
   layout: resource_detail
   license:
     id: ''

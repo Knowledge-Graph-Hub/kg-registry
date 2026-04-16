@@ -5,8 +5,8 @@ description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.animaldiversity.org
 license:
-  id: https://animaldiversity.org/about/use_conditions/
-  label: Varies
+  id: ''
+  label: Not specified
 collection:
 - obo-foundry
 layout: resource_detail

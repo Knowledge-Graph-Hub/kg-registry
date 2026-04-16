@@ -19,8 +19,8 @@ id: vsao
 last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
+  id: ''
+  label: Not specified
 name: Vertebrate Skeletal Anatomy Ontology-
 products:
 - category: OntologyProduct

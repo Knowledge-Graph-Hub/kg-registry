@@ -8,7 +8,7 @@ product_url: http://xteam.xbio.top/download/all_cell_markers.txt
 warnings:
 - File was not able to be retrieved when checked on 2026-04-15_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-04-10_ No Content-Length
+- File was not able to be retrieved when checked on 2026-04-15_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL

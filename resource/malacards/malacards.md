@@ -43,10 +43,12 @@ products:
   name: MalaCards Previous Version Archive
   product_url: https://previous.malacards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -271,10 +273,12 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
   - Rappaport N

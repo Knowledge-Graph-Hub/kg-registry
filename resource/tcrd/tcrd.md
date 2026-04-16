@@ -66,10 +66,12 @@ products:
   - tcrd
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -89,10 +91,12 @@ products:
   - tcrd
   product_url: http://juniper.health.unm.edu/tcrd/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
+    to URL'
 publications:
 - id: https://doi.org/10.1093/nar/gkaa993
   title: 'Pharos 2021: mining the human proteome for disease biology'

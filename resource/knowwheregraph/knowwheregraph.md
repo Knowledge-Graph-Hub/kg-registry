@@ -80,14 +80,14 @@ products:
     exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
     expired (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-04-10: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
     to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
     exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
     expired (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2026-04-02: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
     to URL: HTTPSConnectionPool(host=''stko-kwg.geog.ucsb.edu'', port=443): Max retries
     exceeded with url: /lod/ontology (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has

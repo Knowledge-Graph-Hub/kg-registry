@@ -50,6 +50,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+    header found'
 - category: OntologyProduct
   description: taxslim
   format: owl
@@ -502,8 +504,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

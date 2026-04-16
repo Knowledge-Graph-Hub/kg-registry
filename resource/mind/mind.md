@@ -46,14 +46,16 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -69,12 +71,14 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -91,14 +95,16 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-04-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -133,7 +139,7 @@ publications:
 - authors:
   - Roger Tu
   - Meghamala Sinha
-  - "Carolina Gonz\xE1lez"
+  - Carolina González
   - Eric Hu
   - Shehzaad Dhuliawala
   - Andrew McCallum

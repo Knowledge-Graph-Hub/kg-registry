@@ -5,8 +5,8 @@ description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.obofoundry.org/ro
 license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
+  id: ''
+  label: Not specified
 collection:
 - obo-foundry
 layout: resource_detail

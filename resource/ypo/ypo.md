@@ -5,8 +5,8 @@ description: Description unavailable.
 activity_status: inactive
 homepage_url: http://www.yeastgenome.org/
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
+  id: ''
+  label: Not specified
 collection:
 - obo-foundry
 layout: resource_detail

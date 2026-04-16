@@ -22,8 +22,8 @@ id: fbsp
 last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
+  id: ''
+  label: Not specified
 name: Fly taxonomy
 products:
 - category: OntologyProduct
@@ -34,6 +34,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/fbsp.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
     when accessing file'
 publications: []
 taxon:

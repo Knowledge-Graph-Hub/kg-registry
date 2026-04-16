@@ -188,10 +188,12 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
   format: mixed
@@ -255,10 +257,12 @@ products:
   secondary_source:
   - forum
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-15: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-04-15: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-04-16: FTP error: timed
+    out'
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
