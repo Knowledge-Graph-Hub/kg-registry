@@ -24,8 +24,11 @@ domains:
 homepage_url: https://www.ebi.ac.uk/spot/oxo/
 id: oxo
 infores_id: oxo
-last_modified_date: '2025-11-04T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://www.apache.org/licenses/LICENSE-2.0
+  label: Apache License 2.0
 name: Ontology Xref Service
 products:
 - category: ProgrammingInterface
