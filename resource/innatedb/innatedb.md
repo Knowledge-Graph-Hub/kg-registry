@@ -13,7 +13,10 @@ domains:
 id: innatedb
 infores_id: innatedb
 homepage_url: https://www.innatedb.com/
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
+license:
+  id: https://www.innatedb.com/
+  label: Varies
 layout: resource_detail
 name: InnateDB
 synonyms:

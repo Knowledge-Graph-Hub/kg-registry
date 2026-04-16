@@ -5,6 +5,9 @@ description: Dublin Core Metadata Terms (DCT) is a vocabulary of standardized me
 domains: []
 id: "dct"
 homepage_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 layout: resource_detail
 name: Dublin Core Terms
 synonyms:
@@ -140,7 +143,7 @@ products:
 warnings:
   - This is an automatically generated stub page. Please replace with accurate information about this resource.
 creation_date: '2025-06-04T00:00:00Z'
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 ---
 
 # Dublin Core Terms

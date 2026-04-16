@@ -7,7 +7,10 @@ description: Stub Resource page for sty. This page was automatically generated b
 domains:
 - stub
 id: sty
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
+license:
+  id: https://lhncbc.nlm.nih.gov/semanticnetwork/
+  label: Public Domain
 layout: resource_detail
 name: Sty
 products:
