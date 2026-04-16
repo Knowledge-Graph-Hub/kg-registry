@@ -19,11 +19,11 @@ domains:
 - anatomy and development
 homepage_url: http://emouseatlas.org
 id: emap
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
 license:
-  id: ''
-  label: Not specified
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Mouse gross anatomy and development, timed
 products:
 - category: OntologyProduct
