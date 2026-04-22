@@ -142,6 +142,7 @@ eggnog	eggNOG	DataSource	https://eggnogdb.org/	resource/eggnog/eggnog.md
 ehda	Human developmental anatomy, timed version	Ontology	http://genex.hgu.mrc.ac.uk/	resource/ehda/ehda.md
 ehdaa	Human developmental anatomy, abstract version	Ontology		resource/ehdaa/ehdaa.md
 ehdaa2	Human developmental anatomy, abstract	Ontology	https://github.com/obophenotype/human-developmental-anatomy-ontology	resource/ehdaa2/ehdaa2.md
+ekg	eKG	KnowledgeGraph	https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601	resource/ekg/ekg.md
 emap	Mouse gross anatomy and development, timed	Ontology	http://emouseatlas.org	resource/emap/emap.md
 emapa	Mouse Developmental Anatomy Ontology	Ontology	http://www.informatics.jax.org/expression.shtml	resource/emapa/emapa.md
 embiology	EmBiology	KnowledgeGraph	https://www.embiology.com/	resource/embiology/embiology.md

@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: RDF Distribution of KG-Monarch
-edge_count: 15356321
+edge_count: 15371045
 format: rdfxml
 id: kg-monarch.graph.rdf
 name: RDF Distribution of KG-Monarch
@@ -24,7 +24,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1379605
+node_count: 1449211
 original_source:
 - phenio
 - alliance
@@ -51,12 +51,11 @@ predicates:
 - biolink:acts_upstream_of_or_within_negative_effect
 - biolink:acts_upstream_of_or_within_positive_effect
 - biolink:acts_upstream_of_positive_effect
-- biolink:ameliorates_condition
+- biolink:applied_to_treat
 - biolink:associated_with_increased_likelihood_of
 - biolink:caused_by
 - biolink:causes
 - biolink:colocalizes_with
-- biolink:contraindicated_in
 - biolink:contributes_to
 - biolink:disease_has_location
 - biolink:disrupts
@@ -64,6 +63,7 @@ predicates:
 - biolink:expressed_in
 - biolink:gene_associated_with_condition
 - biolink:genetically_associated_with
+- biolink:has_adverse_event
 - biolink:has_disease
 - biolink:has_gene
 - biolink:has_mode_of_inheritance
@@ -79,10 +79,10 @@ predicates:
 - biolink:orthologous_to
 - biolink:part_of
 - biolink:participates_in
-- biolink:preventative_for_condition
 - biolink:related_to
 - biolink:same_as
 - biolink:subclass_of
+- biolink:treats
 - biolink:treats_or_applied_or_studied_to_treat
 product_file_size: 879238775
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz

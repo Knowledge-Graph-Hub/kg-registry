@@ -48,9 +48,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
     when accessing file'
 publications:
 - authors:

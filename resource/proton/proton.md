@@ -48,11 +48,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 202 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation and class reference for PROTON

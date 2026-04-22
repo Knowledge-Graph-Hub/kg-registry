@@ -410,12 +410,12 @@ products:
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
     object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
-  - 'File was not able to be retrieved when checked on 2026-04-15: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
     to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
     with url: /downloads/ (Caused by NameResolutionError("HTTPSConnection(host=''reprotox-kg.net'',
     port=443): Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service not
     known)"))'
-  - 'File was not able to be retrieved when checked on 2026-04-16: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-04-22: Error connecting
     to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
     with url: /downloads/ (Caused by NameResolutionError("HTTPSConnection(host=''reprotox-kg.net'',
     port=443): Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service not

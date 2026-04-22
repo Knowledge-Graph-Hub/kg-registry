@@ -633,7 +633,7 @@ products:
   - '1.0'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 15356321
+  edge_count: 15371045
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -656,7 +656,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -683,12 +683,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -696,6 +695,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -711,10 +711,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
@@ -722,7 +722,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 15356321
+  edge_count: 15371045
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -745,7 +745,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -772,12 +772,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -785,6 +784,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -800,10 +800,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
@@ -811,7 +811,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 15356321
+  edge_count: 15371045
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -834,7 +834,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -861,12 +861,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -874,6 +873,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -889,10 +889,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 879238775
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
@@ -901,7 +901,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 15356321
+  edge_count: 15371045
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -923,7 +923,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -950,12 +950,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -963,6 +962,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -978,10 +978,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
@@ -990,7 +990,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 15356321
+  edge_count: 15371045
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -1012,7 +1012,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -1039,12 +1039,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1052,6 +1051,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -1067,10 +1067,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
@@ -1202,7 +1202,7 @@ products:
   - rna-kg
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 15356321
+  edge_count: 15371045
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -1225,7 +1225,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -1252,12 +1252,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1265,6 +1264,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -1280,10 +1280,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 15279494795
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
@@ -1291,7 +1291,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 15356321
+  edge_count: 15371045
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -1314,7 +1314,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -1341,12 +1341,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1354,6 +1353,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -1369,10 +1369,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1149505896
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
@@ -1380,7 +1380,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 15356321
+  edge_count: 15371045
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1403,7 +1403,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -1430,12 +1430,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1443,6 +1442,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -1458,10 +1458,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 4386388748
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
@@ -1469,7 +1469,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 15356321
+  edge_count: 15371045
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1492,7 +1492,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1379605
+  node_count: 1449211
   original_source:
   - phenio
   - alliance
@@ -1519,12 +1519,11 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
+  - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
   - biolink:caused_by
   - biolink:causes
   - biolink:colocalizes_with
-  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1532,6 +1531,7 @@ products:
   - biolink:expressed_in
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
+  - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
   - biolink:has_mode_of_inheritance
@@ -1547,10 +1547,10 @@ products:
   - biolink:orthologous_to
   - biolink:part_of
   - biolink:participates_in
-  - biolink:preventative_for_condition
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
@@ -1643,9 +1643,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
