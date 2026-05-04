@@ -7,7 +7,7 @@ id: hpa.pathology
 name: HPA Pathology Data
 product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-04-16_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-04-22_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
   accessing file

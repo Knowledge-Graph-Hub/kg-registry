@@ -51,9 +51,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
@@ -69,9 +69,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
@@ -87,9 +87,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT

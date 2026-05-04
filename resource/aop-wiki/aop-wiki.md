@@ -41,8 +41,8 @@ products:
 - category: ProgrammingInterface
   connection_url: https://aopwiki-rdf.prod.openrisknet.org/
   description: OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki
-    quarterly XML dumps for querying AOPs, key events, key event relationships,
-    and stressors.
+    quarterly XML dumps for querying AOPs, key events, key event relationships, and
+    stressors.
   format: http
   id: aop-wiki.sparql
   is_public: true
@@ -213,6 +213,19 @@ products:
   product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
   secondary_source:
   - aop-db
+- category: ProgrammingInterface
+  connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/
+  description: OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB
+    for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology,
+    ontology, and gene interaction relationships.
+  format: http
+  id: aop-db.sparql
+  is_public: true
+  name: AOP-DB SPARQL Endpoint
+  original_source:
+  - aop-db
+  - aop-wiki
+  product_url: https://openrisknet.org/e-infrastructure/services/147/
 taxon:
 - NCBITaxon:9606
 version: '2.8'

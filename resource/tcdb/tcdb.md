@@ -52,9 +52,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-04-22: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting
     to URL'
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
@@ -74,9 +74,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
@@ -96,9 +96,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
@@ -110,9 +110,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
@@ -124,9 +124,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
@@ -138,9 +138,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

@@ -7,7 +7,7 @@ id: gtopdb.ligands.csv
 name: GtoPdb Ligands Dataset
 product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
 warnings:
-- File was not able to be retrieved when checked on 2026-04-16_ No Content-Length
+- File was not able to be retrieved when checked on 2026-04-22_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-04-15_ HTTP 503 error when
   accessing file

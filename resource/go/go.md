@@ -56,9 +56,9 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -83,9 +83,9 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -104,9 +104,9 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -115,9 +115,9 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -2378,9 +2378,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
@@ -2559,9 +2559,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-04-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated

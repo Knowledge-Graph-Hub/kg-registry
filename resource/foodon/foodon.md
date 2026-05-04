@@ -45,9 +45,9 @@ products:
   name: FoodOn core ontology (currently the same as foodon.owl)
   product_url: http://purl.obolibrary.org/obo/foodon_core.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-16: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
     when accessing file'
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272

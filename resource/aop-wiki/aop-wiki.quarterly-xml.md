@@ -4,6 +4,7 @@ description: Quarterly permanent XML snapshot (versioned) of AOP-Wiki content su
   for citation and archival use
 format: xml
 id: aop-wiki.quarterly-xml
+latest_version: '2026-04-01'
 name: AOP-Wiki Quarterly XML Snapshot
 original_source:
 - aop-wiki
