@@ -16,10 +16,13 @@ description: The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed i
   to human health and ecological risk assessment. It harmonizes data from toxicology,
   high‑throughput screening, pathway, gene/protein, and phenotype resources to enable
   computational toxicology, mode-of-action analysis, and predictive risk prioritization.
-domains: []
+domains:
+- toxicology
+- environment
+- pathways
 homepage_url: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
 id: aop-db
-last_modified_date: '2025-09-04T00:00:00Z'
+last_modified_date: '2026-05-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
@@ -35,6 +38,19 @@ products:
   original_source:
   - aop-db
   product_url: https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db
+- category: ProgrammingInterface
+  connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/
+  description: OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB
+    for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology,
+    ontology, and gene interaction relationships.
+  format: http
+  id: aop-db.sparql
+  is_public: true
+  name: AOP-DB SPARQL Endpoint
+  original_source:
+  - aop-db
+  - aop-wiki
+  product_url: https://openrisknet.org/e-infrastructure/services/147/
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
     to better characterize adverse outcomes of toxicological interest that are relevant
@@ -167,8 +183,33 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+publications:
+- authors:
+  - Mortensen HM
+  - Senn J
+  - Levey T
+  - Langley P
+  - Williams AJ
+  doi: 10.1038/s41597-021-00962-3
+  id: doi:10.1038/s41597-021-00962-3
+  journal: Scientific Data
+  preferred: true
+  title: The 2021 update of the EPA's adverse outcome pathway database
+  year: '2021'
+- authors:
+  - Pittman ME
+  - Edwards SW
+  - Ives C
+  - Mortensen HM
+  doi: 10.1016/j.taap.2018.02.006
+  id: doi:10.1016/j.taap.2018.02.006
+  journal: Toxicology and Applied Pharmacology
+  title: 'AOP-DB: A database resource for the exploration of Adverse Outcome Pathways
+    through integrated association networks'
+  year: '2018'
 taxon:
 - NCBITaxon:9606
+version: '2'
 ---
 # AOP-DB
 

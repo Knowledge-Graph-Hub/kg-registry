@@ -16,10 +16,13 @@ description: The AOP-Wiki is the primary collaborative authoring and curation in
   initiating events through key events to adverse outcomes relevant to human and ecological
   risk assessment. Structured exports (XML and tabular subsets) support computational
   toxicology, ontology mapping, and integration into predictive assessment workflows.
-domains: []
+domains:
+- toxicology
+- environment
+- pathways
 homepage_url: https://aopwiki.org/
 id: aop-wiki
-last_modified_date: '2025-09-04T00:00:00Z'
+last_modified_date: '2026-05-04T00:00:00Z'
 layout: resource_detail
 license:
   id: https://aopwiki.org/
@@ -35,11 +38,24 @@ products:
   original_source:
   - aop-wiki
   product_url: https://aopwiki.org/
+- category: ProgrammingInterface
+  connection_url: https://aopwiki-rdf.prod.openrisknet.org/
+  description: OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki
+    quarterly XML dumps for querying AOPs, key events, key event relationships,
+    and stressors.
+  format: http
+  id: aop-wiki.sparql
+  is_public: true
+  name: AOP-Wiki SPARQL Endpoint
+  original_source:
+  - aop-wiki
+  product_url: https://openrisknet.org/e-infrastructure/services/133/
 - category: Product
   description: Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable
     for citation and archival use
   format: xml
   id: aop-wiki.quarterly-xml
+  latest_version: '2026-04-01'
   name: AOP-Wiki Quarterly XML Snapshot
   original_source:
   - aop-wiki
@@ -199,6 +215,7 @@ products:
   - aop-db
 taxon:
 - NCBITaxon:9606
+version: '2.8'
 ---
 # AOP-Wiki
 
