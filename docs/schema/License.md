@@ -72,18 +72,18 @@ URI: [kgr:License](https://w3id.org/bridge2ai/data-sheets-schema/License)
 
 | used by | used in | type | used |
 | ---  | --- | --- | --- |
-| [Resource](Resource.html) | [license](license.html) | range | [License](License.html) |
-| [KnowledgeGraph](KnowledgeGraph.html) | [license](license.html) | range | [License](License.html) |
-| [DataSource](DataSource.html) | [license](license.html) | range | [License](License.html) |
-| [DataModel](DataModel.html) | [license](license.html) | range | [License](License.html) |
-| [Aggregator](Aggregator.html) | [license](license.html) | range | [License](License.html) |
-| [Product](Product.html) | [license](license.html) | range | [License](License.html) |
-| [GraphProduct](GraphProduct.html) | [license](license.html) | range | [License](License.html) |
-| [DataModelProduct](DataModelProduct.html) | [license](license.html) | range | [License](License.html) |
-| [MappingProduct](MappingProduct.html) | [license](license.html) | range | [License](License.html) |
-| [ProcessProduct](ProcessProduct.html) | [license](license.html) | range | [License](License.html) |
-| [GraphicalInterface](GraphicalInterface.html) | [license](license.html) | range | [License](License.html) |
-| [ProgrammingInterface](ProgrammingInterface.html) | [license](license.html) | range | [License](License.html) |
+| [Resource](Resource.html) | [license](license_slot.html) | range | [License](License.html) |
+| [KnowledgeGraph](KnowledgeGraph.html) | [license](license_slot.html) | range | [License](License.html) |
+| [DataSource](DataSource.html) | [license](license_slot.html) | range | [License](License.html) |
+| [DataModel](DataModel.html) | [license](license_slot.html) | range | [License](License.html) |
+| [Aggregator](Aggregator.html) | [license](license_slot.html) | range | [License](License.html) |
+| [Product](Product.html) | [license](license_slot.html) | range | [License](License.html) |
+| [GraphProduct](GraphProduct.html) | [license](license_slot.html) | range | [License](License.html) |
+| [DataModelProduct](DataModelProduct.html) | [license](license_slot.html) | range | [License](License.html) |
+| [MappingProduct](MappingProduct.html) | [license](license_slot.html) | range | [License](License.html) |
+| [ProcessProduct](ProcessProduct.html) | [license](license_slot.html) | range | [License](License.html) |
+| [GraphicalInterface](GraphicalInterface.html) | [license](license_slot.html) | range | [License](License.html) |
+| [ProgrammingInterface](ProgrammingInterface.html) | [license](license_slot.html) | range | [License](License.html) |
 
 
 

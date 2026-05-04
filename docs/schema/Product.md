@@ -181,7 +181,7 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
 | [product_url](product_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | direct |
 | [produced_by](produced_by.html) | * <br/> [ProcessProduct](ProcessProduct.html) | The process(es) that produced the product, referred to by the identifier of e... | direct |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the product | direct |
-| [license](license.html) | 0..1 <br/> [License](License.html) | The license of the product | direct |
+| [license](license_slot.html) | 0..1 <br/> [License](License.html) | The license of the product | direct |
 | [compression](compression.html) | 0..1 <br/> [CompressionEnum](CompressionEnum.html) | The type of compression used with the product | direct |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact points for the product | direct |
 | [tags](tags.html) | * <br/> [TagEnum](TagEnum.html) | Tags associated with the product | direct |

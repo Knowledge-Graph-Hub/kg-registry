@@ -170,7 +170,7 @@ URI: [kgr:Resource](https://w3id.org/bridge2ai/data-sheets-schema/Resource)
 | [description](description.html) | 0..1 <br/> [String](String.html) | A description of the resource | direct |
 | [homepage_url](homepage_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The primary URL of the resource | direct |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the resource | direct |
-| [license](license.html) | 0..1 <br/> [License](License.html) | The license of the resource | direct |
+| [license](license_slot.html) | 0..1 <br/> [License](License.html) | The license of the resource | direct |
 | [version](version.html) | 0..1 <br/> [String](String.html) | The version of the resource | direct |
 | [language](language.html) | 0..1 <br/> [String](String.html) | The human language of the resource | direct |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact point(s) for the resource | direct |

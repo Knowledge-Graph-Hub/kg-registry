@@ -170,7 +170,7 @@ URI: [kgr:ProgrammingInterface](https://w3id.org/bridge2ai/data-sheets-schema/Pr
 | [product_url](product_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | [Product](Product.html) |
 | [produced_by](produced_by.html) | * <br/> [ProcessProduct](ProcessProduct.html) | The process(es) that produced the product, referred to by the identifier of e... | [Product](Product.html) |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the product | [Product](Product.html) |
-| [license](license.html) | 0..1 <br/> [License](License.html) | The license of the product | [Product](Product.html) |
+| [license](license_slot.html) | 0..1 <br/> [License](License.html) | The license of the product | [Product](Product.html) |
 | [compression](compression.html) | 0..1 <br/> [CompressionEnum](CompressionEnum.html) | The type of compression used with the product | [Product](Product.html) |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact points for the product | [Product](Product.html) |
 | [tags](tags.html) | * <br/> [TagEnum](TagEnum.html) | Tags associated with the product | [Product](Product.html) |

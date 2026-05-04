@@ -427,6 +427,15 @@ schema-docs:
 		sed -i 's/href "..\/\([^"]*\)"/href "\1.html"/g' $$file; \
 		echo "---\nlayout: schema_doc\nmermaid: true\n---\n\n$$(cat $$file)" > $$file; \
 	done
+	# Work around LinkML generating License.md and license.md, which collide
+	# on case-insensitive filesystems. Keep the class page unchanged and move
+	# the lower-case slot page to a distinct generated filename.
+	if [ -f $(SCHEMA_DOC_DIR)/license.md ]; then \
+		mv $(SCHEMA_DOC_DIR)/license.md $(SCHEMA_DOC_DIR)/license_slot.md; \
+	fi
+	find $(SCHEMA_DOC_DIR) -type f -name '*.md' -exec sed -i \
+		-e 's/(license\.html)/(license_slot.html)/g' \
+		-e 's/href "license\.html"/href "license_slot.html"/g' {} +
 
 # Generate the schema files
 # This needs the PHONY here to ensure that the full schema gets rebuilt
