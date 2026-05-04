@@ -78,7 +78,7 @@ Name: kg_registry_schema
 | [label](label.html) | The name of the individual |
 | [language](language.html) | The human language of the resource |
 | [layout](layout.html) | The layout of the entity |
-| [license](license.html) | The license of the resource |
+| [license](license_slot.html) | The license of the resource |
 | [logo](logo.html) | The URL of a logo for the license |
 | [name](name.html) | The human-readable name of the resource |
 | [node_categories](node_categories.html) | The node categories in the graph |
