@@ -21,11 +21,11 @@ domains:
 homepage_url: https://www.ebi.ac.uk/intact/home
 id: intact
 infores_id: intact
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2026-05-04T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://www.apache.org/licenses/LICENSE-2.0
-  label: Apache License 2.0
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: IntAct
 products:
 - category: GraphicalInterface
@@ -37,39 +37,80 @@ products:
   original_source:
   - intact
   product_url: https://www.ebi.ac.uk/intact/home
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/intact/ws
+  description: IntAct web service and URL-based programmatic interface for retrieving
+    molecular interaction networks in PSI-MI formats.
+  format: http
+  id: intact.api
+  is_public: true
+  name: IntAct Web Service
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/ws
+  secondary_source:
+  - intact
 - category: Product
   description: IntAct data in PSI-MI XML 2.5 format (directory)
   format: psi_mi_xml
   id: intact.ftp.psi25
   name: IntAct PSI-MI XML 2.5
   original_source:
+  - afcs
+  - hpidb
   - intact
+  - mint
+  - pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  secondary_source:
+  - intact
 - category: Product
   description: IntAct data in PSI-MI XML 3.0 format (directory)
   format: psi_mi_xml
   id: intact.ftp.psi30
   name: IntAct PSI-MI XML 3.0
   original_source:
+  - afcs
+  - hpidb
   - intact
+  - mint
+  - pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  secondary_source:
+  - intact
 - category: Product
   description: IntAct data in PSI-MI MITAB format (directory)
   format: psi_mi_mitab
   id: intact.ftp.psimitab
   name: IntAct PSI-MI MITAB 2.7
   original_source:
+  - afcs
+  - hpidb
   - intact
+  - mint
+  - pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  secondary_source:
+  - intact
 - category: Product
   description: Entire MITAB export of the database as a single archive (intact.zip)
   format: psi_mi_mitab
   id: intact.ftp.psimitab.all
   name: IntAct MITAB Archive
   original_source:
+  - afcs
+  - hpidb
   - intact
+  - mint
+  - pdbe
   product_file_size: 846305671
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  secondary_source:
+  - intact
 - category: Product
   description: Curated and computational datasets (disease-, method-, and species-specific)
     with per-dataset downloads
@@ -77,8 +118,14 @@ products:
   id: intact.datasets
   name: IntAct Datasets
   original_source:
+  - afcs
+  - hpidb
   - intact
+  - mint
+  - pdbe
   product_url: https://www.ebi.ac.uk/intact/download/datasets
+  secondary_source:
+  - intact
 - category: DocumentationProduct
   description: User guide and documentation for search, exports, data sources, and
     submission
@@ -1185,6 +1232,76 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+publications:
+- authors:
+  - Noemi del Toro
+  - Anjali Shrivastava
+  - Eliot Ragueneau
+  - Birgit Meldal
+  - Colin Combe
+  - Elisabet Barrera
+  - Livia Perfetto
+  - Karyn How
+  - Prashansa Ratan
+  - Gautam Shirodkar
+  - Odilia Lu
+  - Bálint Mészáros
+  - Xavier Watkins
+  - Sangya Pundir
+  - Luana Licata
+  - Marta Iannuccelli
+  - Matteo Pellegrini
+  - Maria Jesus Martin
+  - Simona Panni
+  - Margaret Duesbury
+  - Sylvain D Vallet
+  - Juri Rappsilber
+  - Sylvie Ricard-Blum
+  - Gianni Cesareni
+  - Lukasz Salwinski
+  - Sandra Orchard
+  - Pablo Porras
+  - Kalpana Panneerselvam
+  - Henning Hermjakob
+  doi: 10.1093/nar/gkab1006
+  id: doi:10.1093/nar/gkab1006
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'The IntAct database: efficient access to fine-grained molecular interaction
+    data'
+  year: '2022'
+- authors:
+  - Samuel Kerrien
+  - Bruno Aranda
+  - Lionel Breuza
+  - Alan Bridge
+  - Fiona Broackes-Carter
+  - Carol Chen
+  - Margaret Duesbury
+  - Marine Dumousseau
+  - Marc Feuermann
+  - Ursula Hinz
+  - Christine Jandrasits
+  - Rafael C Jimenez
+  - Jyoti Khadake
+  - Usha Mahadevan
+  - Patrick Masson
+  - Ivo Pedruzzi
+  - Eric Pfeiffenberger
+  - Pablo Porras
+  - Arathi Raghunath
+  - Bernd Roechert
+  - Sandra Orchard
+  - Henning Hermjakob
+  doi: 10.1093/nar/gkr1088
+  id: doi:10.1093/nar/gkr1088
+  journal: Nucleic Acids Research
+  title: The IntAct molecular interaction database in 2012
+  year: '2012'
+repository: https://github.com/intact-portal
+synonyms:
+- IntAct Molecular Interaction Database
+- IMEx IntAct
 ---
 # IntAct
 
@@ -1195,10 +1312,11 @@ IntAct is a curated molecular interaction database, aggregating experimental evi
 ## Access
 
 - Portal: browse and search interactions via the IntAct web interface
+- API: programmatic access through the IntAct web service and URL-based interface
 - FTP: bulk downloads in PSI‑MI XML (2.5, 3.0) and MITAB (2.7)
 - Datasets: curated and computational datasets with themed collections
 - Documentation: user guide covering data sources, formats, export, and submission
 
 ## Citation
 
-Please cite IntAct and any specific datasets used, and refer to the Apache 2.0 license terms for data reuse.
+Please cite IntAct and any specific datasets used, and refer to the CC BY 4.0 license terms for data reuse.
