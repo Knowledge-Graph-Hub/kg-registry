@@ -1,5 +1,5 @@
 ---
-activity_status: active
+activity_status: unresponsive
 category: DataSource
 contacts:
 - category: Organization
@@ -9,11 +9,12 @@ contacts:
   id: mississippi-state-university-college-of-veterinary-medicine
   label: Mississippi State University College of Veterinary Medicine
 creation_date: '2026-05-04T00:00:00Z'
-description: The Host-Pathogen Interaction Database (HPIDB) is a public resource
-  for host-pathogen protein-protein interactions. HPIDB integrates experimentally
+description: The Host-Pathogen Interaction Database (HPIDB) was a public resource
+  for host-pathogen protein-protein interactions. HPIDB integrated experimentally
   verified interactions from public molecular interaction databases and targeted
   curation into a non-redundant resource for searching, downloading, visualizing,
-  and inferring host-pathogen interaction networks.
+  and inferring host-pathogen interaction networks, but its primary homepage was
+  not accessible during curation on 2026-05-04.
 domains:
 - biomedical
 - immunology
@@ -36,6 +37,8 @@ products:
   original_source:
   - hpidb
   product_url: https://hpidb.igbb.msstate.edu/
+  warnings:
+  - The HPIDB homepage was not reachable during curation on 2026-05-04.
 - category: Product
   description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB
     format.
@@ -45,6 +48,9 @@ products:
   original_source:
   - hpidb
   product_url: https://hpidb.igbb.msstate.edu/
+  warnings:
+  - The HPIDB homepage and historical AgBase download URL were not reachable during
+    curation on 2026-05-04.
 publications:
 - id: https://doi.org/10.1093/database/baw103
   title: 'HPIDB 2.0: a curated database for host-pathogen interactions'
@@ -71,5 +77,6 @@ synonyms:
 
 # Host-Pathogen Interaction Database
 
-HPIDB provides curated and integrated host-pathogen protein-protein interaction
-data for infectious disease and host-pathogen network analysis.
+HPIDB provided curated and integrated host-pathogen protein-protein interaction
+data for infectious disease and host-pathogen network analysis. Its primary
+homepage was not reachable during curation on 2026-05-04.
