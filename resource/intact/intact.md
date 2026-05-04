@@ -1198,11 +1198,35 @@ products:
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - authors:
-  - del Toro N
-  - Shrivastava A
-  - Ragueneau E
-  - Meldal B
-  - Hermjakob H
+  - Noemi del Toro
+  - Anjali Shrivastava
+  - Eliot Ragueneau
+  - Birgit Meldal
+  - Colin Combe
+  - Elisabet Barrera
+  - Livia Perfetto
+  - Karyn How
+  - Prashansa Ratan
+  - Gautam Shirodkar
+  - Odilia Lu
+  - Bálint Mészáros
+  - Xavier Watkins
+  - Sangya Pundir
+  - Luana Licata
+  - Marta Iannuccelli
+  - Matteo Pellegrini
+  - Maria Jesus Martin
+  - Simona Panni
+  - Margaret Duesbury
+  - Sylvain D Vallet
+  - Juri Rappsilber
+  - Sylvie Ricard-Blum
+  - Gianni Cesareni
+  - Lukasz Salwinski
+  - Sandra Orchard
+  - Pablo Porras
+  - Kalpana Panneerselvam
+  - Henning Hermjakob
   doi: 10.1093/nar/gkab1006
   id: doi:10.1093/nar/gkab1006
   journal: Nucleic Acids Research
@@ -1211,12 +1235,28 @@ publications:
     data'
   year: '2022'
 - authors:
-  - Kerrien S
-  - Aranda B
-  - Breuza L
-  - Bridge A
-  - Orchard S
-  - Hermjakob H
+  - Samuel Kerrien
+  - Bruno Aranda
+  - Lionel Breuza
+  - Alan Bridge
+  - Fiona Broackes-Carter
+  - Carol Chen
+  - Margaret Duesbury
+  - Marine Dumousseau
+  - Marc Feuermann
+  - Ursula Hinz
+  - Christine Jandrasits
+  - Rafael C Jimenez
+  - Jyoti Khadake
+  - Usha Mahadevan
+  - Patrick Masson
+  - Ivo Pedruzzi
+  - Eric Pfeiffenberger
+  - Pablo Porras
+  - Arathi Raghunath
+  - Bernd Roechert
+  - Sandra Orchard
+  - Henning Hermjakob
   doi: 10.1093/nar/gkr1088
   id: doi:10.1093/nar/gkr1088
   journal: Nucleic Acids Research
