@@ -46,6 +46,8 @@ products:
   is_public: true
   name: IntAct Web Service
   original_source:
+  - afcs
+  - hpidb
   - intact
   - mint
   - pdbe
@@ -58,6 +60,8 @@ products:
   id: intact.ftp.psi25
   name: IntAct PSI-MI XML 2.5
   original_source:
+  - afcs
+  - hpidb
   - intact
   - mint
   - pdbe
@@ -70,6 +74,8 @@ products:
   id: intact.ftp.psi30
   name: IntAct PSI-MI XML 3.0
   original_source:
+  - afcs
+  - hpidb
   - intact
   - mint
   - pdbe
@@ -82,6 +88,8 @@ products:
   id: intact.ftp.psimitab
   name: IntAct PSI-MI MITAB 2.7
   original_source:
+  - afcs
+  - hpidb
   - intact
   - mint
   - pdbe
@@ -94,6 +102,8 @@ products:
   id: intact.ftp.psimitab.all
   name: IntAct MITAB Archive
   original_source:
+  - afcs
+  - hpidb
   - intact
   - mint
   - pdbe
@@ -108,6 +118,8 @@ products:
   id: intact.datasets
   name: IntAct Datasets
   original_source:
+  - afcs
+  - hpidb
   - intact
   - mint
   - pdbe
