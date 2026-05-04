@@ -11,10 +11,10 @@ contacts:
 creation_date: '2026-05-04T00:00:00Z'
 description: The Host-Pathogen Interaction Database (HPIDB) was a public resource
   for host-pathogen protein-protein interactions. HPIDB integrated experimentally
-  verified interactions from public molecular interaction databases and targeted
-  curation into a non-redundant resource for searching, downloading, visualizing,
-  and inferring host-pathogen interaction networks, but its primary homepage was
-  not accessible during curation on 2026-05-04.
+  verified interactions from public molecular interaction databases and targeted curation
+  into a non-redundant resource for searching, downloading, visualizing, and inferring
+  host-pathogen interaction networks, but its primary homepage was not accessible
+  during curation on 2026-05-04.
 domains:
 - biomedical
 - immunology
@@ -40,8 +40,7 @@ products:
   warnings:
   - The HPIDB homepage was not reachable during curation on 2026-05-04.
 - category: Product
-  description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB
-    format.
+  description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB format.
   format: psi_mi_mitab
   id: hpidb.mitab
   name: HPIDB PSI-MITAB Dataset
@@ -51,30 +50,122 @@ products:
   warnings:
   - The HPIDB homepage and historical AgBase download URL were not reachable during
     curation on 2026-05-04.
+  - 'File was not able to be retrieved when checked on 2026-05-04: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/intact/ws
+  description: IntAct web service and URL-based programmatic interface for retrieving
+    molecular interaction networks in PSI-MI formats.
+  format: http
+  id: intact.api
+  is_public: true
+  name: IntAct Web Service
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/ws
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 2.5 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi25
+  name: IntAct PSI-MI XML 2.5
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 3.0 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi30
+  name: IntAct PSI-MI XML 3.0
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI MITAB format (directory)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab
+  name: IntAct PSI-MI MITAB 2.7
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  secondary_source:
+  - intact
+- category: Product
+  description: Entire MITAB export of the database as a single archive (intact.zip)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab.all
+  name: IntAct MITAB Archive
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_file_size: 846305671
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  secondary_source:
+  - intact
+- category: Product
+  description: Curated and computational datasets (disease-, method-, and species-specific)
+    with per-dataset downloads
+  format: http
+  id: intact.datasets
+  name: IntAct Datasets
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/download/datasets
+  secondary_source:
+  - intact
 publications:
-- id: https://doi.org/10.1093/database/baw103
-  title: 'HPIDB 2.0: a curated database for host-pathogen interactions'
-  authors:
+- authors:
   - Muna G. Ammari
   - Cathy R. Gresham
   - Fiona M. McCarthy
   - Bindu Nanduri
-  journal: Database
-  year: '2016'
   doi: 10.1093/database/baw103
-- id: https://doi.org/10.1186/1471-2105-11-S6-S16
-  title: HPIDB--a unified resource for host-pathogen interactions
-  authors:
+  id: https://doi.org/10.1093/database/baw103
+  journal: Database
+  title: 'HPIDB 2.0: a curated database for host-pathogen interactions'
+  year: '2016'
+- authors:
   - Ranjit Kumar
   - Bindu Nanduri
-  journal: BMC Bioinformatics
-  year: '2010'
   doi: 10.1186/1471-2105-11-S6-S16
+  id: https://doi.org/10.1186/1471-2105-11-S6-S16
+  journal: BMC Bioinformatics
+  title: HPIDB--a unified resource for host-pathogen interactions
+  year: '2010'
 synonyms:
 - HPIDB
 - Host Pathogen Interaction Database
 ---
-
 # Host-Pathogen Interaction Database
 
 HPIDB provided curated and integrated host-pathogen protein-protein interaction

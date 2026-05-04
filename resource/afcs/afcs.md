@@ -47,20 +47,108 @@ products:
   name: AFCS IntAct MITAB Dataset
   original_source:
   - afcs
+  product_file_size: 720961
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/datasets/AFCS.zip
   secondary_source:
   - intact
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/intact/ws
+  description: IntAct web service and URL-based programmatic interface for retrieving
+    molecular interaction networks in PSI-MI formats.
+  format: http
+  id: intact.api
+  is_public: true
+  name: IntAct Web Service
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/ws
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 2.5 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi25
+  name: IntAct PSI-MI XML 2.5
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 3.0 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi30
+  name: IntAct PSI-MI XML 3.0
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI MITAB format (directory)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab
+  name: IntAct PSI-MI MITAB 2.7
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  secondary_source:
+  - intact
+- category: Product
+  description: Entire MITAB export of the database as a single archive (intact.zip)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab.all
+  name: IntAct MITAB Archive
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_file_size: 846305671
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  secondary_source:
+  - intact
+- category: Product
+  description: Curated and computational datasets (disease-, method-, and species-specific)
+    with per-dataset downloads
+  format: http
+  id: intact.datasets
+  name: IntAct Datasets
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/download/datasets
+  secondary_source:
+  - intact
 publications:
-- id: https://doi.org/10.1038/nature01304
-  title: Overview of the Alliance for Cellular Signaling
-  authors:
+- authors:
   - Participating investigators and scientists of the Alliance for Cellular Signaling
-  journal: Nature
-  year: '2002'
   doi: 10.1038/nature01304
-- id: https://doi.org/10.1038/nature01307
-  title: The Molecule Pages database
-  authors:
+  id: https://doi.org/10.1038/nature01304
+  journal: Nature
+  title: Overview of the Alliance for Cellular Signaling
+  year: '2002'
+- authors:
   - Joshua Li
   - Yuhong Ning
   - Warren Hedley
@@ -69,12 +157,12 @@ publications:
   - Nicole Tindill
   - Timo Hannay
   - Shankar Subramaniam
-  journal: Nature
-  year: '2002'
   doi: 10.1038/nature01307
-- id: https://doi.org/10.1093/nar/gkm907
+  id: https://doi.org/10.1038/nature01307
+  journal: Nature
   title: The Molecule Pages database
-  authors:
+  year: '2002'
+- authors:
   - Brian Saunders
   - Stephen Lyon
   - Matthew Day
@@ -82,13 +170,14 @@ publications:
   - Emily Chenette
   - Shankar Subramaniam
   - Ilango Vadivelu
-  journal: Nucleic Acids Research
-  year: '2008'
   doi: 10.1093/nar/gkm907
+  id: https://doi.org/10.1093/nar/gkm907
+  journal: Nucleic Acids Research
+  title: The Molecule Pages database
+  year: '2008'
 synonyms:
 - AfCS
 ---
-
 # Alliance for Cellular Signaling
 
 The Alliance for Cellular Signaling was a collaborative signaling biology project

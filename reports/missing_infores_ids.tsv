@@ -8,6 +8,7 @@ ado	Alzheimer's Disease Ontology	Ontology	https://github.com/Fraunhofer-SCAI-App
 adw	Animal natural history and life history	Ontology	http://www.animaldiversity.org	resource/adw/adw.md
 aeo	Anatomical Entity Ontology	Ontology	https://github.com/obophenotype/human-developmental-anatomy-ontology/	resource/aeo/aeo.md
 aero	Adverse Event Reporting Ontology	Ontology	http://purl.obolibrary.org/obo/aero	resource/aero/aero.md
+afcs	Alliance for Cellular Signaling	DataSource	http://www.signaling-gateway.org/molecule	resource/afcs/afcs.md
 afpo	African Population Ontology	Ontology	https://github.com/h3abionet/afpo	resource/afpo/afpo.md
 agro	Agronomy Ontology	Ontology	https://github.com/AgriculturalSemantics/agro	resource/agro/agro.md
 aism	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)	Ontology	https://github.com/insect-morphology/aism	resource/aism/aism.md

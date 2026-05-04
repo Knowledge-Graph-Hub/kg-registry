@@ -47,8 +47,6 @@ products:
   name: IAO dev
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
     when accessing file'
 - category: OntologyProduct

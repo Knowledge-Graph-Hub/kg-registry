@@ -534,12 +534,10 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -1232,6 +1230,18 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  compression: zip
+  description: IntAct-hosted AFCS protein interaction dataset in PSI-MI MITAB format.
+  format: psi_mi_mitab
+  id: afcs.intact.mitab
+  name: AFCS IntAct MITAB Dataset
+  original_source:
+  - afcs
+  product_file_size: 720961
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/datasets/AFCS.zip
+  secondary_source:
+  - intact
 publications:
 - authors:
   - Noemi del Toro

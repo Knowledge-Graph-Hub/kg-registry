@@ -41,8 +41,6 @@ products:
   name: pbpko.obo
   product_url: http://purl.obolibrary.org/obo/pbpko.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
@@ -52,12 +50,10 @@ products:
   name: pbpko.json
   product_url: http://purl.obolibrary.org/obo/pbpko.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
 publications: []
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---

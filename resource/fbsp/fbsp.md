@@ -33,8 +33,6 @@ products:
   name: fbsp.owl
   product_url: http://purl.obolibrary.org/obo/fbsp.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
 publications: []

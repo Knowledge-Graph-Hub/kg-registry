@@ -56,8 +56,6 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: OntologyProduct
@@ -83,8 +81,6 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: OntologyProduct
@@ -104,8 +100,6 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
 - category: OntologyProduct
@@ -115,8 +109,6 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
@@ -2340,8 +2332,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2376,12 +2368,10 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -2557,12 +2547,10 @@ products:
   secondary_source:
   - unibiomap
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
     by Gene Ontology biocurators linking genes, proteins, and biological processes

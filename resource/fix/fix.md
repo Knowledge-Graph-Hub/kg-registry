@@ -26,8 +26,6 @@ products:
   name: fix.owl
   product_url: http://purl.obolibrary.org/obo/fix.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
@@ -37,8 +35,6 @@ products:
   name: fix.obo
   product_url: http://purl.obolibrary.org/obo/fix.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-04-22: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
   - 'File was not able to be retrieved when checked on 2026-05-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 publications: []

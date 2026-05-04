@@ -45,16 +45,14 @@ products:
   name: MINT MITAB Full Dataset
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -63,16 +61,14 @@ products:
   name: MINT Human Interactions
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -81,16 +77,14 @@ products:
   name: MINT Mouse Interactions
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-04-22: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
@@ -497,6 +491,95 @@ products:
   - progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/intact/ws
+  description: IntAct web service and URL-based programmatic interface for retrieving
+    molecular interaction networks in PSI-MI formats.
+  format: http
+  id: intact.api
+  is_public: true
+  name: IntAct Web Service
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/ws
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 2.5 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi25
+  name: IntAct PSI-MI XML 2.5
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 3.0 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi30
+  name: IntAct PSI-MI XML 3.0
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI MITAB format (directory)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab
+  name: IntAct PSI-MI MITAB 2.7
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  secondary_source:
+  - intact
+- category: Product
+  description: Entire MITAB export of the database as a single archive (intact.zip)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab.all
+  name: IntAct MITAB Archive
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_file_size: 846305671
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  secondary_source:
+  - intact
+- category: Product
+  description: Curated and computational datasets (disease-, method-, and species-specific)
+    with per-dataset downloads
+  format: http
+  id: intact.datasets
+  name: IntAct Datasets
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/download/datasets
+  secondary_source:
+  - intact
 publications:
 - doi: 10.1016/s0014-5793(01)03293-8
   id: PMID:11911893

@@ -6,7 +6,7 @@ id: foodon_core.owl
 name: FoodOn core ontology (currently the same as foodon.owl)
 product_url: http://purl.obolibrary.org/obo/foodon_core.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-04-22_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

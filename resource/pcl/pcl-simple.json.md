@@ -6,7 +6,7 @@ id: pcl-simple.json
 name: pcl-simple.json
 product_url: http://purl.obolibrary.org/obo/pcl-simple.json
 warnings:
-- File was not able to be retrieved when checked on 2026-04-22_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

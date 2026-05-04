@@ -305,12 +305,10 @@ products:
   - pdbe
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: GO annotations for PDB entries
   format: txt
@@ -323,6 +321,95 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/intact/ws
+  description: IntAct web service and URL-based programmatic interface for retrieving
+    molecular interaction networks in PSI-MI formats.
+  format: http
+  id: intact.api
+  is_public: true
+  name: IntAct Web Service
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/ws
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 2.5 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi25
+  name: IntAct PSI-MI XML 2.5
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI XML 3.0 format (directory)
+  format: psi_mi_xml
+  id: intact.ftp.psi30
+  name: IntAct PSI-MI XML 3.0
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  secondary_source:
+  - intact
+- category: Product
+  description: IntAct data in PSI-MI MITAB format (directory)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab
+  name: IntAct PSI-MI MITAB 2.7
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  secondary_source:
+  - intact
+- category: Product
+  description: Entire MITAB export of the database as a single archive (intact.zip)
+  format: psi_mi_mitab
+  id: intact.ftp.psimitab.all
+  name: IntAct MITAB Archive
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_file_size: 846305671
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  secondary_source:
+  - intact
+- category: Product
+  description: Curated and computational datasets (disease-, method-, and species-specific)
+    with per-dataset downloads
+  format: http
+  id: intact.datasets
+  name: IntAct Datasets
+  original_source:
+  - afcs
+  - hpidb
+  - intact
+  - mint
+  - pdbe
+  product_url: https://www.ebi.ac.uk/intact/download/datasets
+  secondary_source:
+  - intact
 publications:
 - id: https://doi.org/10.1093/nar/gkab988
   preferred: true

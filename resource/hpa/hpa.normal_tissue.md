@@ -7,7 +7,7 @@ id: hpa.normal_tissue
 name: HPA Normal Tissue Data
 product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-04-22_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
   accessing file

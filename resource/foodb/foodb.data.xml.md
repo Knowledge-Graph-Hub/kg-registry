@@ -7,7 +7,7 @@ id: foodb.data.xml
 name: FooDB XML Data
 product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-04-22_ No Content-Length
+- File was not able to be retrieved when checked on 2026-05-04_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found
