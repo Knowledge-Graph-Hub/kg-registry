@@ -21,11 +21,11 @@ domains:
 homepage_url: https://www.ebi.ac.uk/intact/home
 id: intact
 infores_id: intact
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2026-05-04T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://www.apache.org/licenses/LICENSE-2.0
-  label: Apache License 2.0
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: IntAct
 products:
 - category: GraphicalInterface
@@ -37,6 +37,17 @@ products:
   original_source:
   - intact
   product_url: https://www.ebi.ac.uk/intact/home
+- category: ProgrammingInterface
+  connection_url: https://www.ebi.ac.uk/intact/ws
+  description: IntAct web service and URL-based programmatic interface for retrieving
+    molecular interaction networks in PSI-MI formats.
+  format: http
+  id: intact.api
+  is_public: true
+  name: IntAct Web Service
+  original_source:
+  - intact
+  product_url: https://www.ebi.ac.uk/intact/ws
 - category: Product
   description: IntAct data in PSI-MI XML 2.5 format (directory)
   format: psi_mi_xml
@@ -1185,6 +1196,36 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+publications:
+- authors:
+  - del Toro N
+  - Shrivastava A
+  - Ragueneau E
+  - Meldal B
+  - Hermjakob H
+  doi: 10.1093/nar/gkab1006
+  id: doi:10.1093/nar/gkab1006
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'The IntAct database: efficient access to fine-grained molecular interaction
+    data'
+  year: '2022'
+- authors:
+  - Kerrien S
+  - Aranda B
+  - Breuza L
+  - Bridge A
+  - Orchard S
+  - Hermjakob H
+  doi: 10.1093/nar/gkr1088
+  id: doi:10.1093/nar/gkr1088
+  journal: Nucleic Acids Research
+  title: The IntAct molecular interaction database in 2012
+  year: '2012'
+repository: https://github.com/intact-portal
+synonyms:
+- IntAct Molecular Interaction Database
+- IMEx IntAct
 ---
 # IntAct
 
@@ -1195,10 +1236,11 @@ IntAct is a curated molecular interaction database, aggregating experimental evi
 ## Access
 
 - Portal: browse and search interactions via the IntAct web interface
+- API: programmatic access through the IntAct web service and URL-based interface
 - FTP: bulk downloads in PSI‑MI XML (2.5, 3.0) and MITAB (2.7)
 - Datasets: curated and computational datasets with themed collections
 - Documentation: user guide covering data sources, formats, export, and submission
 
 ## Citation
 
-Please cite IntAct and any specific datasets used, and refer to the Apache 2.0 license terms for data reuse.
+Please cite IntAct and any specific datasets used, and refer to the CC BY 4.0 license terms for data reuse.
