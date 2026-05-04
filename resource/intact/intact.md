@@ -47,7 +47,11 @@ products:
   name: IntAct Web Service
   original_source:
   - intact
+  - mint
+  - pdbe
   product_url: https://www.ebi.ac.uk/intact/ws
+  secondary_source:
+  - intact
 - category: Product
   description: IntAct data in PSI-MI XML 2.5 format (directory)
   format: psi_mi_xml
@@ -55,7 +59,11 @@ products:
   name: IntAct PSI-MI XML 2.5
   original_source:
   - intact
+  - mint
+  - pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  secondary_source:
+  - intact
 - category: Product
   description: IntAct data in PSI-MI XML 3.0 format (directory)
   format: psi_mi_xml
@@ -63,7 +71,11 @@ products:
   name: IntAct PSI-MI XML 3.0
   original_source:
   - intact
+  - mint
+  - pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  secondary_source:
+  - intact
 - category: Product
   description: IntAct data in PSI-MI MITAB format (directory)
   format: psi_mi_mitab
@@ -71,7 +83,11 @@ products:
   name: IntAct PSI-MI MITAB 2.7
   original_source:
   - intact
+  - mint
+  - pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  secondary_source:
+  - intact
 - category: Product
   description: Entire MITAB export of the database as a single archive (intact.zip)
   format: psi_mi_mitab
@@ -79,8 +95,12 @@ products:
   name: IntAct MITAB Archive
   original_source:
   - intact
+  - mint
+  - pdbe
   product_file_size: 846305671
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  secondary_source:
+  - intact
 - category: Product
   description: Curated and computational datasets (disease-, method-, and species-specific)
     with per-dataset downloads
@@ -89,7 +109,11 @@ products:
   name: IntAct Datasets
   original_source:
   - intact
+  - mint
+  - pdbe
   product_url: https://www.ebi.ac.uk/intact/download/datasets
+  secondary_source:
+  - intact
 - category: DocumentationProduct
   description: User guide and documentation for search, exports, data sources, and
     submission
