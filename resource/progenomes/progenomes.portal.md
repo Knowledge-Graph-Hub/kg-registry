@@ -6,4 +6,7 @@ id: progenomes.portal
 name: proGenomes Portal
 product_url: https://progenomes.embl.de/
 layout: product_detail
+original_source:
+  - source: progenomes
+    relation_type: prov:hadPrimarySource
 ---

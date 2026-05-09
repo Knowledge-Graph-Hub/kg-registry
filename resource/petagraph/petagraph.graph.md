@@ -7,11 +7,10 @@ id: petagraph.graph
 name: Petagraph Knowledge Graph (Neo4J)
 node_count: 32000000
 original_source:
+  - source: petagraph
+    relation_type: prov:hadPrimarySource
   - source: ubkg
     relation_type: prov:hadPrimarySource
 product_url: https://ubkg-downloads.xconsortia.org/
-secondary_source:
-  - source: petagraph
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

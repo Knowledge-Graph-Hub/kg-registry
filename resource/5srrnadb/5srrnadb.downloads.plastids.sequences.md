@@ -7,4 +7,7 @@ name: Plastids Sequences FASTA
 product_file_size: 127316
 product_url: http://www.combio.pl/rrna/static/download/Plastids.fasta
 layout: product_detail
+original_source:
+  - source: 5srrnadb
+    relation_type: prov:hadPrimarySource
 ---

@@ -33,6 +33,9 @@ products:
     name: main ENVO OWL release
     product_file_size: 819909
     product_url: http://purl.obolibrary.org/obo/envo.owl
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: ENVO in obographs JSON format
     format: json
@@ -40,6 +43,9 @@ products:
     name: ENVO in obographs JSON format
     product_file_size: 653600
     product_url: http://purl.obolibrary.org/obo/envo.json
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: ENVO in OBO Format. May be lossy
     format: obo
@@ -47,6 +53,9 @@ products:
     name: ENVO in OBO Format. May be lossy
     product_file_size: 595276
     product_url: http://purl.obolibrary.org/obo/envo.obo
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: OBO-Basic edition of ENVO
     format: obo
@@ -54,6 +63,9 @@ products:
     name: OBO-Basic edition of ENVO
     product_file_size: 422465
     product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Earth Microbiome Project subset
     format: owl
@@ -61,6 +73,9 @@ products:
     name: Earth Microbiome Project subset
     product_file_size: 19016
     product_url: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: GSC Lite subset of ENVO
     format: obo
@@ -68,6 +83,9 @@ products:
     name: GSC Lite subset of ENVO
     product_file_size: 12912
     product_url: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: targz
     description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)

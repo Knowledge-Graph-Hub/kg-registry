@@ -6,4 +6,7 @@ id: bv-brc.site
 name: BV-BRC Web Interface
 product_url: https://www.bv-brc.org/
 layout: product_detail
+original_source:
+  - source: bv-brc
+    relation_type: prov:hadPrimarySource
 ---

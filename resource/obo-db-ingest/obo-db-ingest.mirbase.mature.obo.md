@@ -10,4 +10,7 @@ name: mirbase.mature OBO
 product_file_size: 329057
 product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

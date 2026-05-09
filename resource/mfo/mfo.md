@@ -1,40 +1,43 @@
 ---
 id: mfo
 name: Medaka fish anatomy and development
-description: A structured controlled vocabulary of the anatomy and development of
-  the Japanese medaka fish, <i>Oryzias latipes</i>.
+description: A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.
 activity_status: inactive
 license:
   id: ''
   label: Not specified
 collection:
-- obo-foundry
+  - obo-foundry
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
 last_modified_date: '2026-04-15T00:00:00Z'
 domains:
-- anatomy and development
+  - anatomy and development
 taxon:
-- NCBITaxon:8089
+  - NCBITaxon:8089
 contacts:
-- category: Individual
-  label: Thorsten Henrich
-  orcid: 0000-0002-1548-3290
-  contact_details:
-  - contact_type: email
-    value: henrich@embl.de
-  - contact_type: github
-    value: ThorstenHen
+  - category: Individual
+    label: Thorsten Henrich
+    orcid: 0000-0002-1548-3290
+    contact_details:
+      - contact_type: email
+        value: henrich@embl.de
+      - contact_type: github
+        value: ThorstenHen
 products:
-- id: mfo.owl
-  name: mfo.owl
-  description: Medaka fish anatomy and development in OWL format
-  format: owl
-  category: OntologyProduct
-  product_url: http://purl.obolibrary.org/obo/mfo.owl
+  - id: mfo.owl
+    name: mfo.owl
+    description: Medaka fish anatomy and development in OWL format
+    format: owl
+    category: OntologyProduct
+    product_url: http://purl.obolibrary.org/obo/mfo.owl
+    original_source:
+      - source: mfo
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.

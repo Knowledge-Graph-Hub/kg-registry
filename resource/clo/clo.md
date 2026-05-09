@@ -33,6 +33,9 @@ products:
     name: clo.owl
     product_file_size: 2121232
     product_url: http://purl.obolibrary.org/obo/clo.owl
+    original_source:
+      - source: clo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse relations.
     format: owl

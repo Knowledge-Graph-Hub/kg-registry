@@ -2,23 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Edison Ong
-  orcid: 0000-0002-5159-414X
-  contact_details:
-  - contact_type: email
-    value: edong@umich.edu
-  - contact_type: github
-    value: e4ong1031
+  - category: Individual
+    label: Edison Ong
+    orcid: 0000-0002-5159-414X
+    contact_details:
+      - contact_type: email
+        value: edong@umich.edu
+      - contact_type: github
+        value: e4ong1031
 creation_date: '2025-09-29T00:00:00Z'
-description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI)
-  and represents the virulence factors (VFs) and how the mutants of VFs in the Victors
-  database become less virulence inside a host organism or host cells. It is developed
-  to represent manually curated HPI knowledge available in the PHIDIAS resource.
+description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI) and represents the virulence factors (VFs) and how the mutants of VFs in the Victors database become less virulence inside a host organism or host cells. It is developed to represent manually curated HPI knowledge available in the PHIDIAS resource.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/OHPI/ohpi
 id: ohpi
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -29,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Host Pathogen Interactions
 products:
-- category: OntologyProduct
-  description: Ontology of Host Pathogen Interactions in OWL format
-  format: owl
-  id: ohpi.owl
-  name: ohpi.owl
-  product_file_size: 1482262
-  product_url: http://purl.obolibrary.org/obo/ohpi.owl
+  - category: OntologyProduct
+    description: Ontology of Host Pathogen Interactions in OWL format
+    format: owl
+    id: ohpi.owl
+    name: ohpi.owl
+    product_file_size: 1482262
+    product_url: http://purl.obolibrary.org/obo/ohpi.owl
+    original_source:
+      - source: ohpi
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/OHPI/ohpi
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/30365026
-  title: 'Victors: a web-based knowledge base of virulence factors in human and animal
-    pathogens'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30365026
+    title: 'Victors: a web-based knowledge base of virulence factors in human and animal pathogens'
 ---
+
 ## Description
 
 OHPI is a community-driven ontology of host-pathogen interactions (OHPI) and represents the virulence factors (VFs) and how the mutants of VFs in the Victors database become less virulence inside a host organism or host cells. It is developed to represent manually curated HPI knowledge available in the PHIDIAS resource.

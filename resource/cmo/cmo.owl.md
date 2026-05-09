@@ -7,4 +7,7 @@ name: cmo.owl
 product_file_size: 9415213
 product_url: http://purl.obolibrary.org/obo/cmo.owl
 layout: product_detail
+original_source:
+  - source: cmo
+    relation_type: prov:hadPrimarySource
 ---

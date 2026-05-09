@@ -34,84 +34,126 @@ products:
     id: depmap.portal
     name: DepMap Portal
     product_url: https://depmap.org/portal/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive tool for exploring relationships across DepMap datasets and cell lines
     format: http
     id: depmap.data_explorer
     name: DepMap Data Explorer
     product_url: https://depmap.org/portal/interactive/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Tool for exploring and selecting cancer cell lines based on various criteria
     format: http
     id: depmap.cell_line_selector
     name: DepMap Cell Line Selector
     product_url: https://depmap.org/portal/cell_line_selector/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Context Explorer tool for exploring enriched genetic dependencies and compound sensitivities across lineage and subtype contexts
     format: http
     id: depmap.context_explorer
     name: DepMap Context Explorer
     product_url: https://depmap.org/portal/context/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Target Discovery App for identifying selective and predictable gene dependencies
     format: http
     id: depmap.target_discovery
     name: DepMap Target Discovery
     product_url: https://depmap.org/portal/tda/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Complete collection of DepMap datasets available for download including CRISPR screens, drug screens, and omics data
     format: mixed
     id: depmap.downloads
     name: DepMap Data Downloads
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CRISPR-Cas9 knockout screening data processed with Chronos algorithm to identify gene dependencies
     format: csv
     id: depmap.crispr_gene_effects
     name: DepMap CRISPR Gene Effects (Chronos)
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Drug screening data from various platforms including GDSC, PRISM, and CTD2
     format: csv
     id: depmap.drug_sensitivity
     name: DepMap Drug Sensitivity Data
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Gene expression data (RNA-seq) for DepMap cell lines
     format: csv
     id: depmap.expression_data
     name: DepMap Expression Data
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Copy number variation data for DepMap cell lines
     format: csv
     id: depmap.copy_number
     name: DepMap Copy Number Data
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Mutation data for DepMap cell lines
     format: csv
     id: depmap.mutations
     name: DepMap Mutation Data
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Proteomics data for DepMap cell lines
     format: csv
     id: depmap.proteomics
     name: DepMap Proteomics Data
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Metabolomics data for DepMap cell lines
     format: csv
     id: depmap.metabolomics
     name: DepMap Metabolomics Data
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Comprehensive metadata and annotations for all DepMap cell lines
     format: csv
     id: depmap.cell_line_info
     name: DepMap Cell Line Information
     product_url: https://depmap.org/portal/data_page/
+    original_source:
+      - source: depmap
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological entities and their associations
     id: bioteque.embeddings

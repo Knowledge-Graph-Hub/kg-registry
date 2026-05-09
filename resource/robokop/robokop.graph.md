@@ -8,8 +8,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 280
 product_url: http://robokopkg.renci.org
-secondary_source:
-  - source: robokop
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

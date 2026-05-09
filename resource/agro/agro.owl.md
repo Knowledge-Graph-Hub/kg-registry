@@ -7,4 +7,7 @@ name: AgrO
 product_file_size: 463598
 product_url: http://purl.obolibrary.org/obo/agro.owl
 layout: product_detail
+original_source:
+  - source: agro
+    relation_type: prov:hadPrimarySource
 ---

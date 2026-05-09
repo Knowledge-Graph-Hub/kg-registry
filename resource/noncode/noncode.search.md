@@ -6,4 +6,7 @@ id: noncode.search
 name: Search Gene/Transcript
 product_url: http://www.noncode.org/search.php
 layout: product_detail
+original_source:
+  - source: noncode
+    relation_type: prov:hadPrimarySource
 ---

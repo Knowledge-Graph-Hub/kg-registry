@@ -18,6 +18,9 @@ products:
     id: 5srrnadb.portal
     name: 5SRNAdb Portal
     product_url: http://www.combio.pl/5srnadb/
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Archaea 5S rRNA sequences (non-structural alignment) in FASTA format
     format: fasta
@@ -25,6 +28,9 @@ products:
     name: Archaea Sequences FASTA
     product_file_size: 49552
     product_url: http://www.combio.pl/rrna/static/download/Archaea.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Archaea 5S rRNA structural alignment (FASTA with secondary structure annotation)
     format: fasta
@@ -32,6 +38,9 @@ products:
     name: Archaea Structural Alignment FASTA
     product_file_size: 56822
     product_url: http://www.combio.pl/rrna/static/download/Archaea.ss.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Bacteria 5S rRNA sequences (non-structural alignment) in FASTA format
     format: fasta
@@ -39,6 +48,9 @@ products:
     name: Bacteria Sequences FASTA
     product_file_size: 1109201
     product_url: http://www.combio.pl/rrna/static/download/Bacteria.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Bacteria 5S rRNA structural alignment (FASTA with secondary structure annotation)
     format: fasta
@@ -46,6 +58,9 @@ products:
     name: Bacteria Structural Alignment FASTA
     product_file_size: 1483731
     product_url: http://www.combio.pl/rrna/static/download/Bacteria.ss.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Eukaryota 5S rRNA sequences (non-structural alignment) in FASTA format
     format: fasta
@@ -53,6 +68,9 @@ products:
     name: Eukaryota Sequences FASTA
     product_file_size: 431005
     product_url: http://www.combio.pl/rrna/static/download/Eukaryota.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Eukaryota 5S rRNA structural alignment (FASTA with secondary structure annotation)
     format: fasta
@@ -60,6 +78,9 @@ products:
     name: Eukaryota Structural Alignment FASTA
     product_file_size: 497661
     product_url: http://www.combio.pl/rrna/static/download/Eukaryota.ss.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Plastids 5S rRNA sequences (non-structural alignment) in FASTA format
     format: fasta
@@ -67,6 +88,9 @@ products:
     name: Plastids Sequences FASTA
     product_file_size: 127316
     product_url: http://www.combio.pl/rrna/static/download/Plastids.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Plastids 5S rRNA structural alignment (FASTA with secondary structure annotation)
     format: fasta
@@ -74,6 +98,9 @@ products:
     name: Plastids Structural Alignment FASTA
     product_file_size: 153189
     product_url: http://www.combio.pl/rrna/static/download/Plastids.ss.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Mitochondria 5S rRNA sequences (non-structural alignment) in FASTA format
     format: fasta
@@ -81,6 +108,9 @@ products:
     name: Mitochondria Sequences FASTA
     product_file_size: 16156
     product_url: http://www.combio.pl/rrna/static/download/Mitochondria.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Mitochondria 5S rRNA structural alignment (FASTA with secondary structure annotation)
     format: fasta
@@ -88,6 +118,9 @@ products:
     name: Mitochondria Structural Alignment FASTA
     product_file_size: 18634
     product_url: http://www.combio.pl/rrna/static/download/Mitochondria.ss.fasta
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

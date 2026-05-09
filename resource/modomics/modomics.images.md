@@ -6,4 +6,7 @@ name: MODOMICS Modified Base Images
 product_file_size: 11835390
 product_url: https://genesilico.pl/modomics/download/modification_pics/
 layout: product_detail
+original_source:
+  - source: modomics
+    relation_type: prov:hadPrimarySource
 ---

@@ -28,17 +28,15 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: ctkp
     relation_type: prov:hadPrimarySource
-  - source: drug-approvals-kp
-    relation_type: prov:hadPrimarySource
   - source: dgidb
     relation_type: prov:hadPrimarySource
   - source: diseases
     relation_type: prov:hadPrimarySource
-  - source: drugrephub
+  - source: drug-approvals-kp
     relation_type: prov:hadPrimarySource
   - source: drugcentral
     relation_type: prov:hadPrimarySource
-  - source: gtopdb
+  - source: drugrephub
     relation_type: prov:hadPrimarySource
   - source: gene2phenotype
     relation_type: prov:hadPrimarySource
@@ -47,6 +45,8 @@ original_source:
   - source: go-cam
     relation_type: prov:hadPrimarySource
   - source: goa
+    relation_type: prov:hadPrimarySource
+  - source: gtopdb
     relation_type: prov:hadPrimarySource
   - source: hp
     relation_type: prov:hadPrimarySource
@@ -68,14 +68,13 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: text-mining-kp
     relation_type: prov:hadPrimarySource
+  - source: translator
+    relation_type: prov:hadPrimarySource
   - source: ttd
     relation_type: prov:hadPrimarySource
   - source: ubergraph
     relation_type: prov:hadPrimarySource
 product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-secondary_source:
-  - source: translator
-    relation_type: prov:wasInfluencedBy
 versions:
   - '2026_03_27'
   - 423af7989cac

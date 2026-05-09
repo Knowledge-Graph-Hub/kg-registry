@@ -1,12 +1,14 @@
 ---
 category: Product
 compression: gzip
-description: Tab-separated file containing all drug indications extracted from drug
-  labels using MedDRA terminology.
+description: Tab-separated file containing all drug indications extracted from drug labels using MedDRA terminology.
 format: tsv
 id: sider.meddra_all_indications
 name: SIDER MedDRA All Indications
 product_file_size: 344689
 product_url: http://sideeffects.embl.de/media/download/meddra_all_indications.tsv.gz
 layout: product_detail
+original_source:
+  - source: sider
+    relation_type: prov:hadPrimarySource
 ---

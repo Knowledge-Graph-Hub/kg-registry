@@ -30,36 +30,54 @@ products:
     id: pfam.site
     name: Interface for the Pfam Database
     product_url: https://www.ebi.ac.uk/interpro/entry/pfam/#table
+    original_source:
+      - source: pfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: The Pfam HMM library for Pfam-A families, used for searching protein sequences against Pfam.
     id: pfam.a.models
     name: Pfam-A HMM Library
     product_file_size: 347150343
     product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+    original_source:
+      - source: pfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: The Pfam HMM data for Pfam-A families, used for searching protein sequences against Pfam.
     id: pfam.a.data
     name: Pfam-A HMM data
     product_file_size: 652678
     product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
+    original_source:
+      - source: pfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pfam-A Seed alignment.
     id: pfam.a.seedalignment
     name: Pfam-A Seed alignment
     product_file_size: 172548313
     product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.seed.gz
+    original_source:
+      - source: pfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pfam-A Full alignment.
     id: pfam.a.fullalignment
     name: Pfam-A Full alignment
     product_file_size: 21077145205
     product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.full.gz
+    original_source:
+      - source: pfam
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for programmatic access to Pfam data via the InterPro database.
     format: json
     id: pfam.api
     name: InterPro API
     product_url: https://www.ebi.ac.uk/interpro/api/
+    original_source:
+      - source: pfam
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

@@ -8,4 +8,7 @@ name: GloBI taxonomic hierarchy cache
 product_file_size: 310167049
 product_url: https://zenodo.org/record/14640564/files/taxonCache.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

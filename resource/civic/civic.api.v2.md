@@ -6,4 +6,7 @@ is_public: true
 name: CIViC GraphQL API (V2)
 product_url: https://civicdb.org/api/graphiql
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

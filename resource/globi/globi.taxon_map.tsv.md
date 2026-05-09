@@ -8,4 +8,7 @@ name: GloBI taxonomic name map
 product_file_size: 111241785
 product_url: https://zenodo.org/record/14640564/files/taxonMap.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: ogms.owl
 product_file_size: 39126
 product_url: http://purl.obolibrary.org/obo/ogms.owl
 layout: product_detail
+original_source:
+  - source: ogms
+    relation_type: prov:hadPrimarySource
 ---

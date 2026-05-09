@@ -5,4 +5,7 @@ id: forum.webapp
 name: FORUM Web Application
 product_url: https://forum-webapp.semantic-metabolomics.fr/
 layout: product_detail
+original_source:
+  - source: forum
+    relation_type: prov:hadPrimarySource
 ---

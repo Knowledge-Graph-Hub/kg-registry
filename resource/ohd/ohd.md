@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: wdduncan@gmail.com
-  - contact_type: github
-    value: wdduncan
-  label: Bill Duncan
-  orcid: 0000-0001-9625-1899
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: wdduncan@gmail.com
+      - contact_type: github
+        value: wdduncan
+    label: Bill Duncan
+    orcid: 0000-0001-9625-1899
 creation_date: '2025-09-29T00:00:00Z'
-description: The Oral Health and Disease Ontology is used for representing the diagnosis
-  and treatment of dental maladies.
+description: The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://purl.obolibrary.org/obo/ohd/home
 id: ohd
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,30 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Oral Health and Disease Ontology
 products:
-- category: OntologyProduct
-  description: Oral Health and Disease Ontology in OWL format
-  format: owl
-  id: ohd.owl
-  name: ohd.owl
-  product_file_size: 307089
-  product_url: http://purl.obolibrary.org/obo/ohd.owl
-- category: OntologyProduct
-  description: OHD dev
-  format: owl
-  id: ohd.dev.ohd.owl
-  name: OHD dev
-  product_url: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Oral Health and Disease Ontology in OWL format
+    format: owl
+    id: ohd.owl
+    name: ohd.owl
+    product_file_size: 307089
+    product_url: http://purl.obolibrary.org/obo/ohd.owl
+    original_source:
+      - source: ohd
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: OHD dev
+    format: owl
+    id: ohd.dev.ohd.owl
+    name: OHD dev
+    product_url: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: ohd
+        relation_type: prov:hadPrimarySource
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
-  title: Structuring, reuse and analysis of electronic dental data using the Oral
-    Health and Disease Ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
+    title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 ---
+
 ## Description
 
 The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.

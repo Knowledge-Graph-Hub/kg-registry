@@ -10,4 +10,7 @@ name: drugcentral OBO
 product_file_size: 1419153
 product_url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

@@ -1,10 +1,12 @@
 ---
 category: GraphicalInterface
-description: Network visualization tool for assessing combinatorial effects of multiple
-  miRNAs on common gene targets
+description: Network visualization tool for assessing combinatorial effects of multiple miRNAs on common gene targets
 format: http
 id: tarbase.visualizations
 name: Visualizations
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/visualizations
 layout: product_detail
+original_source:
+  - source: tarbase
+    relation_type: prov:hadPrimarySource
 ---

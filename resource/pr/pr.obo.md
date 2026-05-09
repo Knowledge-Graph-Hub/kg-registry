@@ -6,4 +6,7 @@ id: pr.obo
 name: pro_reasoned.obo
 product_url: http://purl.obolibrary.org/obo/pr.obo
 layout: product_detail
+original_source:
+  - source: pr
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,4 +8,7 @@ name: STRING Protein Orthology
 product_file_size: 2197752616
 product_url: https://stringdb-downloads.org/download/protein.orthology.v12.0.txt.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

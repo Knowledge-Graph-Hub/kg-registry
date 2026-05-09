@@ -6,4 +6,7 @@ id: mirgenedb.covariance
 name: MirGeneDB Covariance Models
 product_url: https://mirgenedb.org/covariance
 layout: product_detail
+original_source:
+  - source: mirgenedb
+    relation_type: prov:hadPrimarySource
 ---

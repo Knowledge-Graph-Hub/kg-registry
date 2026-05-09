@@ -7,4 +7,7 @@ name: CIViC Accepted Variants (Nightly)
 product_file_size: 1229101
 product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted.vcf
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

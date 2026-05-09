@@ -8,4 +8,7 @@ name: STRING COG Mappings
 product_file_size: 755326221
 product_url: https://stringdb-downloads.org/download/COG.mappings.v12.0.txt.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

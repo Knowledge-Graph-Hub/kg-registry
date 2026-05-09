@@ -13,8 +13,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 1977072
 product_url: https://edamontology.org/EDAM.tsv
-secondary_source:
-  - source: edam
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

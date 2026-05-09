@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Robert Hoehndorf
-  orcid: 0000-0001-8149-5890
-  contact_details:
-  - contact_type: email
-    value: robert.hoehndorf@kaust.edu.sa
-  - contact_type: github
-    value: leechuck
+  - category: Individual
+    label: Robert Hoehndorf
+    orcid: 0000-0001-8149-5890
+    contact_details:
+      - contact_type: email
+        value: robert.hoehndorf@kaust.edu.sa
+      - contact_type: github
+        value: leechuck
 creation_date: '2025-09-29T00:00:00Z'
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/flora-phenotype-ontology/flopoontology
 id: flopo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,21 +26,24 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Flora Phenotype Ontology
 products:
-- category: OntologyProduct
-  description: Flora Phenotype Ontology in OWL format
-  format: owl
-  id: flopo.owl
-  name: flopo.owl
-  product_file_size: 767285
-  product_url: http://purl.obolibrary.org/obo/flopo.owl
+  - category: OntologyProduct
+    description: Flora Phenotype Ontology in OWL format
+    format: owl
+    id: flopo.owl
+    name: flopo.owl
+    product_file_size: 767285
+    product_url: http://purl.obolibrary.org/obo/flopo.owl
+    original_source:
+      - source: flopo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/flora-phenotype-ontology/flopoontology
 taxon:
-- NCBITaxon:33090
+  - NCBITaxon:33090
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
-  title: 'The flora phenotype ontology (FLOPO): tool for integrating morphological
-    traits and phenotypes of vascular plants'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
+    title: 'The flora phenotype ontology (FLOPO): tool for integrating morphological traits and phenotypes of vascular plants'
 ---
+
 ## Description
 
 Traits and phenotypes of flowering plants occurring in digitized Floras

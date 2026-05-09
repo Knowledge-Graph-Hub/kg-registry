@@ -30,9 +30,6 @@ products:
       - source: biolink
         relation_type: prov:hadPrimarySource
     product_url: https://biolink.github.io/biolink-model/
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
   - category: DocumentationProduct
     description: Information Resource Registry Model documentation, including descriptions of the information resource (infores) registry itself.
     format: http
@@ -42,9 +39,6 @@ products:
       - source: biolink
         relation_type: prov:hadPrimarySource
     product_url: https://biolink.github.io/information-resource-registry/
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
   - category: DataModelProduct
     compatibility:
       - standard: biolink
@@ -59,9 +53,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 717005
     product_url: https://w3id.org/biolink/biolink-model.owl.ttl
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
     versions:
       - v4.2.6-rc5
       - v4.2.6-rc4
@@ -107,9 +98,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 138288
     product_url: https://w3id.org/biolink/biolink-model.json
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
     versions:
       - v4.2.6-rc5
       - v4.2.6-rc4
@@ -155,9 +143,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 9599
     product_url: https://w3id.org/biolink/biolink-model.graphql
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
     versions:
       - v4.2.6-rc5
       - v4.2.6-rc4
@@ -203,9 +188,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 18600
     product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
     versions:
       - v4.2.6-rc5
       - v4.2.6-rc4
@@ -251,9 +233,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 161190
     product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
     versions:
       - v4.2.6-rc5
       - v4.2.6-rc4
@@ -299,9 +278,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 17816
     product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
-    secondary_source:
-      - source: biolink
-        relation_type: prov:wasInfluencedBy
     versions:
       - v4.2.6-rc5
       - v4.2.6-rc4

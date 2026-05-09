@@ -16,10 +16,9 @@ node_count: 91993
 original_source:
   - source: goa
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
 versions:
   - '2026_03_06'
   - goa_2026-01-23_5fdd3125_2025sep1_4.3.6

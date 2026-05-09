@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Mathias Brochhausen
-  orcid: 0000-0003-1834-3856
-  contact_details:
-  - contact_type: email
-    value: mbrochhausen@uams.edu
-  - contact_type: github
-    value: mbrochhausen
+  - category: Individual
+    label: Mathias Brochhausen
+    orcid: 0000-0003-1834-3856
+    contact_details:
+      - contact_type: email
+        value: mbrochhausen@uams.edu
+      - contact_type: github
+        value: mbrochhausen
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of minimum information regarding potential drug-drug interaction
-  information.
+description: An ontology of minimum information regarding potential drug-drug interaction information.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/MPIO-Developers/MPIO
 id: mpio
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Minimum PDDI Information Ontology
 products:
-- category: OntologyProduct
-  description: Minimum PDDI Information Ontology in OWL format
-  format: owl
-  id: mpio.owl
-  name: mpio.owl
-  product_file_size: 19172
-  product_url: http://purl.obolibrary.org/obo/mpio.owl
+  - category: OntologyProduct
+    description: Minimum PDDI Information Ontology in OWL format
+    format: owl
+    id: mpio.owl
+    name: mpio.owl
+    product_file_size: 19172
+    product_url: http://purl.obolibrary.org/obo/mpio.owl
+    original_source:
+      - source: mpio
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/MPIO-Developers/MPIO
 publications: []
 ---
+
 ## Description
 
 An ontology of minimum information regarding potential drug-drug interaction information.

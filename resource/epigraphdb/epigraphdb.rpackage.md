@@ -8,8 +8,5 @@ original_source:
   - source: epigraphdb
     relation_type: prov:hadPrimarySource
 product_url: https://mrcieu.github.io/epigraphdb-r/
-secondary_source:
-  - source: epigraphdb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

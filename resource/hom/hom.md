@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Frederic Bastian
-  orcid: 0000-0002-9415-5104
-  contact_details:
-  - contact_type: email
-    value: bgee@sib.swiss
-  - contact_type: github
-    value: fbastian
+  - category: Individual
+    label: Frederic Bastian
+    orcid: 0000-0002-9415-5104
+    contact_details:
+      - contact_type: email
+        value: bgee@sib.swiss
+      - contact_type: github
+        value: fbastian
 creation_date: '2025-09-29T00:00:00Z'
-description: This ontology represents concepts related to homology, as well as other
-  concepts used to describe similarity and non-homology.
+description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/BgeeDB/homology-ontology
 id: hom
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,18 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Homology Ontology
 products:
-- category: OntologyProduct
-  description: Homology Ontology in OWL format
-  format: owl
-  id: hom.owl
-  name: hom.owl
-  product_file_size: 9398
-  product_url: http://purl.obolibrary.org/obo/hom.owl
+  - category: OntologyProduct
+    description: Homology Ontology in OWL format
+    format: owl
+    id: hom.owl
+    name: hom.owl
+    product_file_size: 9398
+    product_url: http://purl.obolibrary.org/obo/hom.owl
+    original_source:
+      - source: hom
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/BgeeDB/homology-ontology
 publications:
-- id: https://doi.org/10.1016/j.tig.2009.12.012
-  title: An ontology to clarify homology-related concepts
+  - id: https://doi.org/10.1016/j.tig.2009.12.012
+    title: An ontology to clarify homology-related concepts
 ---
+
 ## Description
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.

@@ -7,4 +7,7 @@ name: MeSH Data (N-Triples)
 product_file_size: 2100000000
 product_url: https://zenodo.org/records/4244313/files/mesh.nt
 layout: product_detail
+original_source:
+  - source: tera
+    relation_type: prov:hadPrimarySource
 ---

@@ -10,4 +10,7 @@ name: nlm SSSOM
 product_file_size: 422890
 product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.sssom.tsv
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

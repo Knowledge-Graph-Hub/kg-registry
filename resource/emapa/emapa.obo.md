@@ -7,4 +7,7 @@ name: emapa.obo
 product_file_size: 199038
 product_url: http://purl.obolibrary.org/obo/emapa.obo
 layout: product_detail
+original_source:
+  - source: emapa
+    relation_type: prov:hadPrimarySource
 ---

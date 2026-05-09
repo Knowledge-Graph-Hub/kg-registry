@@ -6,4 +6,7 @@ id: ribovision.examples
 name: Examples Gallery
 product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/examples/
 layout: product_detail
+original_source:
+  - source: ribovision
+    relation_type: prov:hadPrimarySource
 ---

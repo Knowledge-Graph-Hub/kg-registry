@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
-  contact_details:
-  - contact_type: email
-    value: batchelorc@rsc.org
-  - contact_type: github
-    value: batchelorc
+  - category: Individual
+    label: Colin Batchelor
+    orcid: 0000-0001-5985-7429
+    contact_details:
+      - contact_type: email
+        value: batchelorc@rsc.org
+      - contact_type: github
+        value: batchelorc
 creation_date: '2025-09-29T00:00:00Z'
 description: Processes at the molecular level
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://github.com/rsc-ontologies/rxno
 id: mop
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Molecular Process Ontology
 products:
-- category: OntologyProduct
-  description: Molecular Process Ontology
-  format: owl
-  id: mop.owl
-  name: Molecular Process Ontology
-  product_file_size: 154788
-  product_url: http://purl.obolibrary.org/obo/mop.owl
+  - category: OntologyProduct
+    description: Molecular Process Ontology
+    format: owl
+    id: mop.owl
+    name: Molecular Process Ontology
+    product_file_size: 154788
+    product_url: http://purl.obolibrary.org/obo/mop.owl
+    original_source:
+      - source: mop
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/rsc-ontologies/rxno
 publications: []
 ---
+
 ## Description
 
 Processes at the molecular level

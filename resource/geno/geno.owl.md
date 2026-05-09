@@ -7,4 +7,7 @@ name: GENO
 product_file_size: 172287
 product_url: http://purl.obolibrary.org/obo/geno.owl
 layout: product_detail
+original_source:
+  - source: geno
+    relation_type: prov:hadPrimarySource
 ---

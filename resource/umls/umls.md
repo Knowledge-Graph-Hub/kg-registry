@@ -56,11 +56,17 @@ products:
     id: umls.release
     name: UMLS Knowledge Sources Release Files
     product_url: https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html
+    original_source:
+      - source: umls
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: MetamorphoSys tool for customizing UMLS subsets by vocabulary, language, or semantic type and loading data into local databases
     id: umls.metamorphosys
     name: MetamorphoSys Customization Tool
     product_url: https://www.nlm.nih.gov/research/umls/implementation_resources/metamorphosys/help.html
+    original_source:
+      - source: umls
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: SPECIALIST Lexicon and Lexical Tools for normalizing strings, generating lexical variants, and creating indexes for biomedical text processing
     id: umls.specialist_lexicon

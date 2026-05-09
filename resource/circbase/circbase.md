@@ -71,16 +71,25 @@ products:
     description: Web interface for searching and browsing circular RNA annotations across species.
     category: GraphicalInterface
     product_url: https://www.circbase.org/
+    original_source:
+      - source: circbase
+        relation_type: prov:hadPrimarySource
   - id: circbase.downloads
     name: circBase Bulk Downloads
     description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs provided via the downloads CGI page.
     category: Product
     product_url: https://www.circbase.org/cgi-bin/downloads.cgi
+    original_source:
+      - source: circbase
+        relation_type: prov:hadPrimarySource
   - id: circbase.docs
     name: circBase Documentation
     description: Help and documentation describing circBase data sources, identifiers, and usage notes.
     category: DocumentationProduct
     product_url: https://www.circbase.org/doc/help_mod.html
+    original_source:
+      - source: circbase
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: RNA-KG Nodes in CSV format
     format: csv

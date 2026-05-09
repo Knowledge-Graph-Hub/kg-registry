@@ -2,22 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Robert Druzinsky
-  orcid: 0000-0002-1572-1316
-  contact_details:
-  - contact_type: email
-    value: druzinsk@uic.edu
-  - contact_type: github
-    value: RDruzinsky
+  - category: Individual
+    label: Robert Druzinsky
+    orcid: 0000-0002-1572-1316
+    contact_details:
+      - contact_type: email
+        value: druzinsk@uic.edu
+      - contact_type: github
+        value: RDruzinsky
 creation_date: '2025-09-29T00:00:00Z'
-description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles
-  of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal
-  behaviors.
+description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/rdruzinsky/feedontology
 id: mfmo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -28,18 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mammalian Feeding Muscle Ontology
 products:
-- category: OntologyProduct
-  description: Mammalian Feeding Muscle Ontology in OWL format
-  format: owl
-  id: mfmo.owl
-  name: mfmo.owl
-  product_file_size: 15791
-  product_url: http://purl.obolibrary.org/obo/mfmo.owl
+  - category: OntologyProduct
+    description: Mammalian Feeding Muscle Ontology in OWL format
+    format: owl
+    id: mfmo.owl
+    name: mfmo.owl
+    product_file_size: 15791
+    product_url: http://purl.obolibrary.org/obo/mfmo.owl
+    original_source:
+      - source: mfmo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/RDruzinsky/feedontology
 taxon:
-- NCBITaxon:40674
+  - NCBITaxon:40674
 publications: []
 ---
+
 ## Description
 
 The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors.

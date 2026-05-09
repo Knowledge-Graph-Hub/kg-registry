@@ -2,19 +2,16 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.gbif.org/
-  - contact_type: email
-    value: info@gbif.org
-  id: gbif-secretariat
-  label: GBIF Secretariat
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.gbif.org/
+      - contact_type: email
+        value: info@gbif.org
+    id: gbif-secretariat
+    label: GBIF Secretariat
 creation_date: '2025-12-17T00:00:00Z'
-description: Global Biodiversity Information Facility (GBIF) is an international network
-  and data infrastructure providing open access to over 3.1 billion species occurrence
-  records from 81,000+ datasets contributed by 2,500+ publishing institutions worldwide.
-  GBIF aggregates species distribution and biodiversity data using Darwin Core standards.
+description: Global Biodiversity Information Facility (GBIF) is an international network and data infrastructure providing open access to over 3.1 billion species occurrence records from 81,000+ datasets contributed by 2,500+ publishing institutions worldwide. GBIF aggregates species distribution and biodiversity data using Darwin Core standards.
 domains: []
 homepage_url: https://www.gbif.org/
 id: gbif
@@ -26,101 +23,104 @@ license:
   label: CC0 and CC BY (mixed)
 name: Global Biodiversity Information Facility (GBIF)
 products:
-- category: GraphicalInterface
-  description: Web portal for searching, filtering, and discovering occurrence records,
-    species information, datasets, and organizations with interactive mapping and
-    download capabilities
-  format: http
-  id: gbif.portal
-  name: GBIF.org Portal
-  product_url: https://www.gbif.org/
-- category: ProgrammingInterface
-  description: RESTful API providing programmatic access to registry, species, occurrence,
-    and map data with JSON responses and support for complex queries
-  format: http
-  id: gbif.api
-  is_public: true
-  name: GBIF REST API
-  product_url: https://api.gbif.org/v1/
-- category: ProgrammingInterface
-  description: Raster tile maps API providing global occurrence distribution maps
-    in PNG and Mapbox Vector Tile (MVT) formats
-  format: http
-  id: gbif.maps-api
-  is_public: true
-  name: GBIF Maps API
-  product_url: https://api.gbif.org/maps/
-- category: Product
-  compression: zip
-  description: Darwin Core Archive format occurrence downloads from 81,000+ datasets
-    with interpreted and verbatim data, metadata, and multimedia information
-  id: gbif.dwc-archive
-  name: GBIF Darwin Core Archive Downloads
-  product_url: https://www.gbif.org/occurrence/download
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
-- category: Product
-  compression: zip
-  description: Simple CSV format occurrence downloads with interpreted data and commonly
-    used columns, suitable for spreadsheet and programming analysis
-  id: gbif.csv-download
-  name: GBIF Simple CSV Downloads
-  product_url: https://www.gbif.org/occurrence/download
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
-- category: DocumentationProduct
-  description: Comprehensive technical documentation, API reference, developer guides,
-    and data formats documentation
-  format: http
-  id: gbif.documentation
-  is_public: true
-  name: GBIF Technical Documentation
-  product_url: https://techdocs.gbif.org/
-- category: Product
-  description: Integrated Publishing Toolkit (IPT) - free, open-source Java software
-    for publishing Darwin Core formatted biodiversity datasets with web interface
-    and automated data management capabilities
-  id: gbif.ipt
-  name: GBIF Integrated Publishing Toolkit (IPT)
-  product_url: https://www.gbif.org/ipt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
+  - category: GraphicalInterface
+    description: Web portal for searching, filtering, and discovering occurrence records, species information, datasets, and organizations with interactive mapping and download capabilities
+    format: http
+    id: gbif.portal
+    name: GBIF.org Portal
+    product_url: https://www.gbif.org/
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: RESTful API providing programmatic access to registry, species, occurrence, and map data with JSON responses and support for complex queries
+    format: http
+    id: gbif.api
+    is_public: true
+    name: GBIF REST API
+    product_url: https://api.gbif.org/v1/
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: Raster tile maps API providing global occurrence distribution maps in PNG and Mapbox Vector Tile (MVT) formats
+    format: http
+    id: gbif.maps-api
+    is_public: true
+    name: GBIF Maps API
+    product_url: https://api.gbif.org/maps/
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    compression: zip
+    description: Darwin Core Archive format occurrence downloads from 81,000+ datasets with interpreted and verbatim data, metadata, and multimedia information
+    id: gbif.dwc-archive
+    name: GBIF Darwin Core Archive Downloads
+    product_url: https://www.gbif.org/occurrence/download
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    compression: zip
+    description: Simple CSV format occurrence downloads with interpreted data and commonly used columns, suitable for spreadsheet and programming analysis
+    id: gbif.csv-download
+    name: GBIF Simple CSV Downloads
+    product_url: https://www.gbif.org/occurrence/download
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+  - category: DocumentationProduct
+    description: Comprehensive technical documentation, API reference, developer guides, and data formats documentation
+    format: http
+    id: gbif.documentation
+    is_public: true
+    name: GBIF Technical Documentation
+    product_url: https://techdocs.gbif.org/
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    description: Integrated Publishing Toolkit (IPT) - free, open-source Java software for publishing Darwin Core formatted biodiversity datasets with web interface and automated data management capabilities
+    id: gbif.ipt
+    name: GBIF Integrated Publishing Toolkit (IPT)
+    product_url: https://www.gbif.org/ipt
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: gbif
+        relation_type: prov:hadPrimarySource
 publications:
-- authors:
-  - Robertson T
-  - Döring M
-  - Guralnick R
-  - Bloom D
-  - Wieczorek J
-  - Braak K
-  - Otegui J
-  - Russell L
-  - Desmet P
-  doi: 10.1371/journal.pone.0102623
-  id: doi:10.1371/journal.pone.0102623
-  journal: PLOS ONE
-  title: 'The GBIF Integrated Publishing Toolkit: Facilitating the Efficient Publishing
-    of Biodiversity Data on the Internet'
-  year: '2014'
+  - authors:
+      - Robertson T
+      - Döring M
+      - Guralnick R
+      - Bloom D
+      - Wieczorek J
+      - Braak K
+      - Otegui J
+      - Russell L
+      - Desmet P
+    doi: 10.1371/journal.pone.0102623
+    id: doi:10.1371/journal.pone.0102623
+    journal: PLOS ONE
+    title: 'The GBIF Integrated Publishing Toolkit: Facilitating the Efficient Publishing of Biodiversity Data on the Internet'
+    year: '2014'
 repository: https://github.com/gbif
 taxon:
-- NCBITaxon:1
+  - NCBITaxon:1
 ---
+
 # Global Biodiversity Information Facility (GBIF)
 
 ## Overview

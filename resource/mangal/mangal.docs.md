@@ -6,4 +6,7 @@ id: mangal.docs
 name: mangal.io Documentation
 product_url: https://mangal.io/documentation
 layout: product_detail
+original_source:
+  - source: mangal
+    relation_type: prov:hadPrimarySource
 ---

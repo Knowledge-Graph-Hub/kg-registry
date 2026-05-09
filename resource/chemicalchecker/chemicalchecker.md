@@ -26,17 +26,26 @@ products:
     id: chemicalchecker.signatures
     name: Chemical Checker Signatures
     product_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html
+    original_source:
+      - source: chemicalchecker
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: Software tool for producing bioactivity signature vectors.
     format: python
     id: chemicalchecker.signaturizer
     name: Signaturizer
     product_url: https://github.com/sbnb-irb/signaturizer
+    original_source:
+      - source: chemicalchecker
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Programmatic interface for Chemical Checker data.
     id: chemicalchecker.api
     name: Chemical Checker RESTful API
     product_url: https://chemicalchecker.com/api/db/getSignature/
+    original_source:
+      - source: chemicalchecker
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological entities and their associations
     id: bioteque.embeddings

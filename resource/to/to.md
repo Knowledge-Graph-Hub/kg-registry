@@ -33,6 +33,9 @@ products:
     name: to.owl
     product_file_size: 213609
     product_url: http://purl.obolibrary.org/obo/to.owl
+    original_source:
+      - source: to
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Plant Trait Ontology in OBO format
     format: obo
@@ -40,6 +43,9 @@ products:
     name: to.obo
     product_file_size: 157379
     product_url: http://purl.obolibrary.org/obo/to.obo
+    original_source:
+      - source: to
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

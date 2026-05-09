@@ -2,22 +2,19 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: avi.maayan@mssm.edu
-  - contact_type: url
-    value: https://labs.icahn.mssm.edu/maayanlab/
-  label: Ma'ayan Laboratory
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: avi.maayan@mssm.edu
+      - contact_type: url
+        value: https://labs.icahn.mssm.edu/maayanlab/
+    label: Ma'ayan Laboratory
 creation_date: '2025-09-23T00:00:00Z'
-description: ChEA-KG is a knowledge graph built around the ChEA (ChIP Enrichment Analysis)
-  database that integrates chromatin immunoprecipitation sequencing data with transcription
-  factor binding sites, gene regulatory networks, and functional annotations to provide
-  comprehensive insights into transcriptional regulation across cell types and conditions.
+description: ChEA-KG is a knowledge graph built around the ChEA (ChIP Enrichment Analysis) database that integrates chromatin immunoprecipitation sequencing data with transcription factor binding sites, gene regulatory networks, and functional annotations to provide comprehensive insights into transcriptional regulation across cell types and conditions.
 domains:
-- biomedical
-- genomics
-- systems biology
+  - biomedical
+  - genomics
+  - systems biology
 homepage_url: https://maayanlab.cloud/chea-kg/
 id: chea-kg
 last_modified_date: '2025-09-23T00:00:00Z'
@@ -27,52 +24,61 @@ license:
   label: CC BY 4.0
 name: ChEA-KG
 products:
-- category: GraphicalInterface
-  description: Interactive web interface for exploring transcription factor-target
-    gene relationships with regulatory network visualization
-  format: http
-  id: chea-kg.portal
-  name: ChEA-KG Explorer
-  product_url: https://maayanlab.cloud/chea-kg/
-- category: ProgrammingInterface
-  description: RESTful API for programmatic access to ChIP-seq derived transcription
-    factor binding data
-  format: http
-  id: chea-kg.api
-  name: ChEA-KG API
-  product_url: https://maayanlab.cloud/chea-kg/api/
-- category: GraphProduct
-  description: Neo4j database containing transcription factors, target genes, and
-    regulatory relationships from ChIP-seq studies
-  dump_format: neo4j
-  format: neo4j
-  id: chea-kg.graph
-  name: ChEA-KG Database
-- category: Product
-  description: Processed ChIP-seq datasets with transcription factor binding sites
-    and target gene annotations
-  id: chea-kg.chipseq
-  name: ChEA ChIP-seq Data
-  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+  - category: GraphicalInterface
+    description: Interactive web interface for exploring transcription factor-target gene relationships with regulatory network visualization
+    format: http
+    id: chea-kg.portal
+    name: ChEA-KG Explorer
+    product_url: https://maayanlab.cloud/chea-kg/
+    original_source:
+      - source: chea-kg
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: RESTful API for programmatic access to ChIP-seq derived transcription factor binding data
+    format: http
+    id: chea-kg.api
+    name: ChEA-KG API
+    product_url: https://maayanlab.cloud/chea-kg/api/
+    original_source:
+      - source: chea-kg
+        relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    description: Neo4j database containing transcription factors, target genes, and regulatory relationships from ChIP-seq studies
+    dump_format: neo4j
+    format: neo4j
+    id: chea-kg.graph
+    name: ChEA-KG Database
+    original_source:
+      - source: chea-kg
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    description: Processed ChIP-seq datasets with transcription factor binding sites and target gene annotations
+    id: chea-kg.chipseq
+    name: ChEA ChIP-seq Data
+    product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+    original_source:
+      - source: chea-kg
+        relation_type: prov:hadPrimarySource
 publications:
-- authors:
-  - Keenan AB
-  - Torre D
-  - Lachmann A
-  - Leong AK
-  - Wojtkiewicz ML
-  - Utti V
-  - Jagodnik KM
-  - Kropiwnicki E
-  - Wang Z
-  - Ma'ayan A
-  id: doi:10.1093/nar/gkz446
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'ChEA3: transcription factor enrichment analysis by orthogonal omics integration'
-  year: '2019'
+  - authors:
+      - Keenan AB
+      - Torre D
+      - Lachmann A
+      - Leong AK
+      - Wojtkiewicz ML
+      - Utti V
+      - Jagodnik KM
+      - Kropiwnicki E
+      - Wang Z
+      - Ma'ayan A
+    id: doi:10.1093/nar/gkz446
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'ChEA3: transcription factor enrichment analysis by orthogonal omics integration'
+    year: '2019'
 repository: https://github.com/MaayanLab/chea-kg
 ---
+
 # ChEA-KG
 
 ChEA-KG is a comprehensive knowledge graph that integrates chromatin immunoprecipitation sequencing (ChIP-seq) data from the ChEA database with transcription factor binding information, target gene annotations, and regulatory network data to provide detailed insights into transcriptional regulation mechanisms across diverse biological contexts.
@@ -139,7 +145,7 @@ ChEA-KG is a comprehensive knowledge graph that integrates chromatin immunopreci
 
 ### Functional Annotations
 - Gene Ontology enrichment for target gene sets
-- Pathway enrichment analysis for regulatory modules  
+- Pathway enrichment analysis for regulatory modules
 - Disease associations of transcription factor networks
 - Drug target information for regulatory proteins
 

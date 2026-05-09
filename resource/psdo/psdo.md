@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Zach Landis-Lewis
-  orcid: 0000-0002-9117-9338
-  contact_details:
-  - contact_type: email
-    value: zachll@umich.edu
-  - contact_type: github
-    value: zachll
+  - category: Individual
+    label: Zach Landis-Lewis
+    orcid: 0000-0002-9117-9338
+    contact_details:
+      - contact_type: email
+        value: zachll@umich.edu
+      - contact_type: github
+        value: zachll
 creation_date: '2025-09-29T00:00:00Z'
 description: Ontology to reproducibly study visualizations of clinical performance
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/Display-Lab/psdo
 id: psdo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Performance Summary Display Ontology
 products:
-- category: OntologyProduct
-  description: Performance Summary Display Ontology in OWL format
-  format: owl
-  id: psdo.owl
-  name: psdo.owl
-  product_file_size: 9703
-  product_url: http://purl.obolibrary.org/obo/psdo.owl
+  - category: OntologyProduct
+    description: Performance Summary Display Ontology in OWL format
+    format: owl
+    id: psdo.owl
+    name: psdo.owl
+    product_file_size: 9703
+    product_url: http://purl.obolibrary.org/obo/psdo.owl
+    original_source:
+      - source: psdo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/Display-Lab/psdo
 publications: []
 ---
+
 ## Description
 
 Ontology to reproducibly study visualizations of clinical performance

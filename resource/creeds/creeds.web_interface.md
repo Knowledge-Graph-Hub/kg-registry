@@ -5,4 +5,7 @@ id: creeds.web_interface
 name: CREEDS Web Interface
 product_url: https://maayanlab.cloud/CREEDS/
 layout: product_detail
+original_source:
+  - source: creeds
+    relation_type: prov:hadPrimarySource
 ---

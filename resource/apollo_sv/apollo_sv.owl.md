@@ -7,4 +7,7 @@ name: apollo_sv.owl
 product_file_size: 264551
 product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
 layout: product_detail
+original_source:
+  - source: apollo_sv
+    relation_type: prov:hadPrimarySource
 ---

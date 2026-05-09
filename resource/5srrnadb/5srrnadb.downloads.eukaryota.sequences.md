@@ -7,4 +7,7 @@ name: Eukaryota Sequences FASTA
 product_file_size: 431005
 product_url: http://www.combio.pl/rrna/static/download/Eukaryota.fasta
 layout: product_detail
+original_source:
+  - source: 5srrnadb
+    relation_type: prov:hadPrimarySource
 ---

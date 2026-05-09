@@ -16,10 +16,9 @@ node_count: 3783
 original_source:
   - source: drug-approvals-kp
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
 versions:
   - '2026_03_19'
   - dakp_0.5.3_c3f74ab4_2025sep1_4.3.6

@@ -9,6 +9,8 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: dbsnp
     relation_type: prov:hadPrimarySource
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: gwascatalog
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/

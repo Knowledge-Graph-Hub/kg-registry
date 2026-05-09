@@ -16,10 +16,9 @@ node_count: 32276
 original_source:
   - source: text-mining-kp
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
 versions:
   - '2026_03_06'
   - tmkp_tmkp-2023-03-05_6dadae40_2025sep1_4.3.6

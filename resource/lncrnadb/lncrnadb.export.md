@@ -6,4 +6,7 @@ id: lncrnadb.export
 name: Export Results
 product_url: http://www.lncrnadb.org/
 layout: product_detail
+original_source:
+  - source: lncrnadb
+    relation_type: prov:hadPrimarySource
 ---

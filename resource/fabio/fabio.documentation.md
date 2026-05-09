@@ -5,4 +5,7 @@ id: fabio.documentation
 name: FABIO Documentation
 product_url: https://sparontologies.github.io/fabio/current/fabio.html
 layout: product_detail
+original_source:
+  - source: fabio
+    relation_type: prov:hadPrimarySource
 ---

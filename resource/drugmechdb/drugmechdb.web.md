@@ -6,4 +6,7 @@ id: drugmechdb.web
 name: DrugMechDB Website
 product_url: https://sulab.github.io/DrugMechDB/
 layout: product_detail
+original_source:
+  - source: drugmechdb
+    relation_type: prov:hadPrimarySource
 ---

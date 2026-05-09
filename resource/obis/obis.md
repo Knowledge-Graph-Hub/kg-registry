@@ -34,6 +34,9 @@ products:
     id: "obis.mapper"
     name: OBIS Web Mapper
     product_url: "https://portal.obis.org/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful API providing programmatic access to marine biodiversity records, species information, and occurrence data with filtering by taxonomy, location, depth, and time
     format: http
@@ -41,6 +44,9 @@ products:
     is_public: true
     name: OBIS API
     product_url: "https://api.obis.org/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: R package robis for programmatic data access and querying of OBIS data from R environment
     format: http
@@ -48,21 +54,33 @@ products:
     is_public: true
     name: robis R Package
     product_url: "https://cran.r-project.org/web/packages/robis/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Complete biodiversity record exports in Darwin Core Archive format containing occurrence data with standardized metadata and EML documentation
     id: "obis.dca"
     name: OBIS Darwin Core Archive Downloads
     product_url: "https://portal.obis.org/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Cloud-native GeoParquet format biodiversity records available on AWS S3 for efficient large-scale spatial analysis without local downloads
     id: "obis.geoparquet"
     name: OBIS GeoParquet on AWS
     product_url: "https://registry.opendata.aws/obis/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: OBIS-SEAMAP specialized database for marine megavertebrates containing distribution, abundance, and telemetry data for marine mammals, seabirds, and sea turtles
     id: "obis.seamap"
     name: OBIS-SEAMAP Marine Megavertebrates Database
     product_url: "https://seamap.env.duke.edu/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive OBIS manual covering data standards, quality control procedures, Darwin Core implementation, publication guidelines, and API usage documentation
     format: http
@@ -70,6 +88,9 @@ products:
     is_public: true
     name: OBIS Manual
     product_url: "https://manual.obis.org/"
+    original_source:
+      - source: obis
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - OBIS Contributors

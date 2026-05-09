@@ -7,4 +7,7 @@ name: tto.owl
 product_file_size: 3526608
 product_url: http://purl.obolibrary.org/obo/tto.owl
 layout: product_detail
+original_source:
+  - source: tto
+    relation_type: prov:hadPrimarySource
 ---

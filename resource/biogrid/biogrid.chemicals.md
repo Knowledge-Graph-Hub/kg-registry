@@ -7,8 +7,8 @@ id: biogrid.chemicals
 latest_version: 5.0.252
 name: BIOGRID-CHEMICALS-LATEST.chemtab.zip
 product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-CHEMICALS-LATEST.chemtab.zip
-secondary_source:
-  - source: biogrid
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
+original_source:
+  - source: biogrid
+    relation_type: prov:hadPrimarySource
 ---

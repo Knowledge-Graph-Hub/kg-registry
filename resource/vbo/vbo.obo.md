@@ -7,4 +7,7 @@ name: vbo.obo
 product_file_size: 990658
 product_url: http://purl.obolibrary.org/obo/vbo.obo
 layout: product_detail
+original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
 ---

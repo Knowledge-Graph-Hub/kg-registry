@@ -34,9 +34,6 @@ products:
       - source: sibils
         relation_type: prov:hadPrimarySource
     product_url: https://sibils.org/
-    secondary_source:
-      - source: sibils
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: SPARQL endpoint for querying SIBiLS data
     id: sibils.api.sparql
@@ -46,9 +43,6 @@ products:
       - source: sibils
         relation_type: prov:hadPrimarySource
     product_url: https://sparql.sibils.org/sparql
-    secondary_source:
-      - source: sibils
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for fetching annotated contents from SIBiLS collections
     id: sibils.api.rest.fetch
@@ -58,9 +52,6 @@ products:
       - source: sibils
         relation_type: prov:hadPrimarySource
     product_url: https://sibils.org/API#Fetch-API
-    secondary_source:
-      - source: sibils
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for customizable search in SIBiLS collections
     id: sibils.api.rest.search
@@ -70,9 +61,6 @@ products:
       - source: sibils
         relation_type: prov:hadPrimarySource
     product_url: https://sibils.org/API#Customizable-search-API
-    secondary_source:
-      - source: sibils
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for question answering using natural language in SIBiLS collections
     id: sibils.api.rest.qa
@@ -82,9 +70,6 @@ products:
       - source: sibils
         relation_type: prov:hadPrimarySource
     product_url: https://sibils.org/API#Question-Answering-API
-    secondary_source:
-      - source: sibils
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Gobeill J

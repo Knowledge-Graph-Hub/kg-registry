@@ -8,4 +8,7 @@ name: PharmKB Pathways (TSV)
 product_file_size: 195089
 product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

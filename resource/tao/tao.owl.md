@@ -7,4 +7,7 @@ name: tao.owl
 product_file_size: 5063653
 product_url: http://purl.obolibrary.org/obo/tao.owl
 layout: product_detail
+original_source:
+  - source: tao
+    relation_type: prov:hadPrimarySource
 ---

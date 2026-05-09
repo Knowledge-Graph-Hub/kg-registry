@@ -5,9 +5,11 @@ format: http
 id: genecards.pharmacogenomics
 name: GeneCards Pharmacogenomics Data
 original_source:
-  - source: pharmgkb
-    relation_type: prov:hadPrimarySource
   - source: drugbank
+    relation_type: prov:hadPrimarySource
+  - source: genecards
+    relation_type: prov:hadPrimarySource
+  - source: pharmgkb
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/
 warnings:

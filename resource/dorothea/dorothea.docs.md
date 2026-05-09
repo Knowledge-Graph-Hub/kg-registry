@@ -6,4 +6,7 @@ id: dorothea.docs
 name: DoRothEA Documentation
 product_url: https://saezlab.github.io/dorothea/articles/dorothea.html
 layout: product_detail
+original_source:
+  - source: dorothea
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jade Hotchkiss
-  orcid: 0000-0002-2193-0704
-  contact_details:
-  - contact_type: email
-    value: giant.plankton@gmail.com
-  - contact_type: github
-    value: JadeHotchkiss
+  - category: Individual
+    label: Jade Hotchkiss
+    orcid: 0000-0002-2193-0704
+    contact_details:
+      - contact_type: email
+        value: giant.plankton@gmail.com
+      - contact_type: github
+        value: JadeHotchkiss
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for the standardization of terminology and integration of
-  knowledge about Sickle Cell Disease.
+description: An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://scdontology.h3abionet.org/
 id: scdo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,32 +25,36 @@ license:
   label: GPL-3.0
 name: Sickle Cell Disease Ontology
 products:
-- category: OntologyProduct
-  description: Sickle Cell Disease Ontology in OWL format
-  format: owl
-  id: scdo.owl
-  name: scdo.owl
-  product_file_size: 367519
-  product_url: http://purl.obolibrary.org/obo/scdo.owl
-- category: OntologyProduct
-  description: Sickle Cell Disease Ontology in OBO format
-  format: obo
-  id: scdo.obo
-  name: scdo.obo
-  product_file_size: 324416
-  product_url: http://purl.obolibrary.org/obo/scdo.obo
+  - category: OntologyProduct
+    description: Sickle Cell Disease Ontology in OWL format
+    format: owl
+    id: scdo.owl
+    name: scdo.owl
+    product_file_size: 367519
+    product_url: http://purl.obolibrary.org/obo/scdo.owl
+    original_source:
+      - source: scdo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Sickle Cell Disease Ontology in OBO format
+    format: obo
+    id: scdo.obo
+    name: scdo.obo
+    product_file_size: 324416
+    product_url: http://purl.obolibrary.org/obo/scdo.obo
+    original_source:
+      - source: scdo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/scdodev/scdo-ontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/35363306
-  title: 'The Sickle Cell Disease Ontology: recent development and expansion of the
-    universal sickle cell knowledge representation.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/33021900
-  title: 'The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing
-    of New Planetary Health Applications.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/31769834
-  title: 'The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge
-    representation.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35363306
+    title: 'The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33021900
+    title: 'The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31769834
+    title: 'The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation.'
 ---
+
 ## Description
 
 An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.

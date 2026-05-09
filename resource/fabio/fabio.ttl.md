@@ -7,4 +7,7 @@ name: FABIO Turtle File
 product_file_size: 140152
 product_url: http://purl.org/spar/fabio.ttl
 layout: product_detail
+original_source:
+  - source: fabio
+    relation_type: prov:hadPrimarySource
 ---

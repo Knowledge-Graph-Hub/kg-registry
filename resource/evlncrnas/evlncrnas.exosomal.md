@@ -6,4 +6,7 @@ id: evlncrnas.exosomal
 name: Exosomal lncRNA Browser
 product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/exosomal
 layout: product_detail
+original_source:
+  - source: evlncrnas
+    relation_type: prov:hadPrimarySource
 ---

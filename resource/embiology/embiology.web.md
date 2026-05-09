@@ -6,4 +6,7 @@ id: embiology.web
 name: EmBiology Web Interface
 product_url: https://www.embiology.com/
 layout: product_detail
+original_source:
+  - source: embiology
+    relation_type: prov:hadPrimarySource
 ---

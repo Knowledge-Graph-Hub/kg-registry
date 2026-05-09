@@ -111,6 +111,9 @@ products:
     name: CREEDS Manual Single Gene Perturbations
     product_file_size: 58276121
     product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-v1.0.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Manual gene expression signatures derived from disease signatures
     format: json
@@ -118,6 +121,9 @@ products:
     name: CREEDS Manual Disease Signatures
     product_file_size: 16865407
     product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-v1.0.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Manual gene expression signatures derived single drug perturbations
     format: json
@@ -125,6 +131,9 @@ products:
     name: CREEDS Manual Single Drug Perturbations
     product_file_size: 17836091
     product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-v1.0.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: DrugMatrix single drug perturbations
     format: json
@@ -132,6 +141,9 @@ products:
     name: CREEDS DrugMatrix single drug perturbations
     product_file_size: 86943390
     product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-DM.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Automatic gene expression signatures derived from single gene perturbations
     format: json
@@ -139,6 +151,9 @@ products:
     name: CREEDS Automatic Single Gene Perturbations
     product_file_size: 175552254
     product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Automatic gene expression signatures derived from disease signatures
     format: json
@@ -146,6 +161,9 @@ products:
     name: CREEDS Automatic Disease Signatures
     product_file_size: 29173111
     product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-p1.0.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Automatic gene expression signatures derived from single drug perturbations
     format: json
@@ -153,11 +171,17 @@ products:
     name: CREEDS Automatic Single Drug Perturbations
     product_file_size: 87060413
     product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-p1.0.json
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web interface for exploring CREEDS gene expression signatures
     id: creeds.web_interface
     name: CREEDS Web Interface
     product_url: https://maayanlab.cloud/CREEDS/
+    original_source:
+      - source: creeds
+        relation_type: prov:hadPrimarySource
 publications:
   - doi: 10.1038/ncomms12846
     id: doi:10.1038/ncomms12846
@@ -196,7 +220,7 @@ The CREEDS database is freely accessible through a web interface at [https://maa
 
 CREEDS signatures can be used for a variety of applications in biomedical research:
 
-- **Drug Signatures**: 
+- **Drug Signatures**:
   - Drug repositioning and repurposing
   - Identifying mechanisms of action for compounds
   - Predicting drug side effects

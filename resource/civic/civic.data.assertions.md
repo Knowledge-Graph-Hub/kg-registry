@@ -7,4 +7,7 @@ name: CIViC Assertions (Nightly)
 product_file_size: 114011
 product_url: https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

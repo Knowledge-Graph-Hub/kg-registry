@@ -18,33 +18,51 @@ products:
     id: lncrnadb.portal
     name: lncRNAdb Portal
     product_url: http://www.lncrnadb.org/
+    original_source:
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Search interface supporting queries by lncRNA name or alias, nucleotide sequence string, species, annotation status, and full-text search
     format: http
     id: lncrnadb.search
     name: Search Interface
     product_url: http://www.lncrnadb.org/
+    original_source:
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Tab-delimited file download of search results
     format: tsv
     id: lncrnadb.export
     name: Export Results
     product_url: http://www.lncrnadb.org/
+    original_source:
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Integration with UCSC Genome Browser for genomic context visualization
     format: http
     id: lncrnadb.ucsc-integration
     name: UCSC Genome Browser Integration
+    original_source:
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Integration with Noncoding RNA Expression Database (NRED) for expression information from various sources
     format: http
     id: lncrnadb.nred-integration
     name: NRED Integration
+    original_source:
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: User submission interface for adding new entries and updating existing data with published information
     format: http
     id: lncrnadb.submit
     name: User Submission System
+    original_source:
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

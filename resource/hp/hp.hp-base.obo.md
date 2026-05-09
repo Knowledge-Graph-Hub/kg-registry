@@ -1,11 +1,13 @@
 ---
 category: OntologyProduct
-description: Manually curated version of the ontology without the use of a reasoner,
-  with references to imported terms, in OBO file format.
+description: Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OBO file format.
 format: obo
 id: hp.hp-base.obo
 name: HPO base release in OBO format
 product_file_size: 11259310
 product_url: http://purl.obolibrary.org/obo/hp/hp-base.obo
 layout: product_detail
+original_source:
+  - source: hp
+    relation_type: prov:hadPrimarySource
 ---

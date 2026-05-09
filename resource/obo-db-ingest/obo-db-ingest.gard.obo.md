@@ -7,4 +7,7 @@ name: gard OBO
 product_file_size: 275262
 product_url: https://w3id.org/biopragmatics/resources/gard/gard.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

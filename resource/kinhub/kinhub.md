@@ -21,18 +21,27 @@ products:
     format: http
     product_url: http://www.kinhub.org/
     description: Main portal providing resources and tools for human protein kinases
+    original_source:
+      - source: kinhub
+        relation_type: prov:hadPrimarySource
   - id: kinhub.kinmap
     name: KinMap
     category: GraphicalInterface
     format: http
     product_url: http://www.kinhub.org/kinmap/index.html
     description: Interactive web-based tool for navigating and annotating the human kinome tree with biochemical, structural, and disease data
+    original_source:
+      - source: kinhub
+        relation_type: prov:hadPrimarySource
   - id: kinhub.kinases-list
     name: Human Protein Kinases List
     category: Product
     format: http
     product_url: http://www.kinhub.org/kinases.html
     description: Comprehensive list of human protein kinases with unified naming scheme
+    original_source:
+      - source: kinhub
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive web interface for exploring and visualizing kinase-substrate interactions
     format: http

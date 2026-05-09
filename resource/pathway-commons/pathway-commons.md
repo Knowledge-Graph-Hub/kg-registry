@@ -35,6 +35,9 @@ products:
     is_public: true
     name: Pathway Commons REST API
     product_url: "http://www.pathwaycommons.org/pc/webservice.do"
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive web-based interface for browsing, searching, and visualizing biological pathways and molecular interactions
     format: http
@@ -42,27 +45,45 @@ products:
     is_public: true
     name: Pathway Commons Web Interface
     product_url: "https://www.pathwaycommons.org/"
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Downloadable integrated pathway datasets in multiple standardized formats including BioPAX, SIF, GMT, and JSON-LD
     id: "pathway-commons.downloads"
     name: Pathway Commons Data Downloads
     product_url: "https://www.pathwaycommons.org/"
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Integrated BioPAX Level 3 unified model containing normalized pathway data, molecular interactions, and cross-database entity mappings from 22 sources
     id: "pathway-commons.biopax"
     name: Integrated BioPAX Model
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Simple Interaction Format (SIF) network files representing binary pairwise molecular relationships for network analysis and visualization
     id: "pathway-commons.sif"
     name: SIF Network Format
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Gene Matrix Transposed (GMT) format gene sets for pathway enrichment analysis with tools like GSEA (Gene Set Enrichment Analysis)
     id: "pathway-commons.gmt"
     name: GMT Gene Set Format
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: JSON-LD format for linked data web applications with semantic context and programmatic access to pathway information
     id: "pathway-commons.jsonld"
     name: JSON-LD Linked Data Format
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive API documentation, data format specifications, and tutorials for using Pathway Commons data and services
     format: http
@@ -70,6 +91,9 @@ products:
     is_public: true
     name: Pathway Commons Documentation
     product_url: "https://pathwaycommons.github.io/pcapi/"
+    original_source:
+      - source: pathway-commons
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - Rodchenkov I

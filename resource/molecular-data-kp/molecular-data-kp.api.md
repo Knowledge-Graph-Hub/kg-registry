@@ -9,8 +9,5 @@ original_source:
   - source: molecular-data-kp
     relation_type: prov:hadPrimarySource
 product_url: https://translator.broadinstitute.org/molecular_data_provider/api
-secondary_source:
-  - source: molecular-data-kp
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

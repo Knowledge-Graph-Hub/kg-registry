@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Erik Segerdell
-  orcid: 0000-0002-9611-1279
-  contact_details:
-  - contact_type: email
-    value: Erik.Segerdell@cchmc.org
-  - contact_type: github
-    value: seger
+  - category: Individual
+    label: Erik Segerdell
+    orcid: 0000-0002-9611-1279
+    contact_details:
+      - contact_type: email
+        value: Erik.Segerdell@cchmc.org
+      - contact_type: github
+        value: seger
 creation_date: '2025-09-29T00:00:00Z'
-description: XPO represents anatomical, cellular, and gene function phenotypes occurring
-  throughout the development of the African frogs Xenopus laevis and tropicalis.
+description: XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/obophenotype/xenopus-phenotype-ontology
 id: xpo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,28 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Xenopus Phenotype Ontology
 products:
-- category: OntologyProduct
-  description: Xenopus Phenotype Ontology in OWL format
-  format: owl
-  id: xpo.owl
-  name: xpo.owl
-  product_file_size: 97539811
-  product_url: http://purl.obolibrary.org/obo/xpo.owl
-- category: OntologyProduct
-  description: Xenopus Phenotype Ontology in OBO format
-  format: obo
-  id: xpo.obo
-  name: xpo.obo
-  product_file_size: 11508476
-  product_url: http://purl.obolibrary.org/obo/xpo.obo
+  - category: OntologyProduct
+    description: Xenopus Phenotype Ontology in OWL format
+    format: owl
+    id: xpo.owl
+    name: xpo.owl
+    product_file_size: 97539811
+    product_url: http://purl.obolibrary.org/obo/xpo.owl
+    original_source:
+      - source: xpo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Xenopus Phenotype Ontology in OBO format
+    format: obo
+    id: xpo.obo
+    name: xpo.obo
+    product_file_size: 11508476
+    product_url: http://purl.obolibrary.org/obo/xpo.obo
+    original_source:
+      - source: xpo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/xenopus-phenotype-ontology
 taxon:
-- NCBITaxon:8353
+  - NCBITaxon:8353
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
-  title: 'The Xenopus phenotype ontology: bridging model organism phenotype data to
-    human health and development.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
+    title: 'The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development.'
 ---
+
 ## Description
 
 XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.

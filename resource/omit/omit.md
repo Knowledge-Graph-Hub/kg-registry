@@ -33,6 +33,9 @@ products:
     name: omit.owl
     product_file_size: 2146508
     product_url: http://purl.obolibrary.org/obo/omit.owl
+    original_source:
+      - source: omit
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

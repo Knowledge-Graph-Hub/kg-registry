@@ -34,6 +34,9 @@ products:
     name: bfo.owl
     product_file_size: 20902
     product_url: http://purl.obolibrary.org/obo/bfo.owl
+    original_source:
+      - source: bfo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Basic Formal Ontology in OBO format
     format: obo
@@ -41,6 +44,9 @@ products:
     name: bfo.obo
     product_file_size: 17898
     product_url: http://purl.obolibrary.org/obo/bfo.obo
+    original_source:
+      - source: bfo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

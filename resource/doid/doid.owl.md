@@ -1,12 +1,13 @@
 ---
 category: OntologyProduct
-description: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
-  plus equivalent axioms to other OBO Foundry ontologies.
+description: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
 format: owl
 id: doid.owl
-name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
-  plus equivalent axioms to other OBO Foundry ontologies.
+name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
 product_file_size: 2118169
 product_url: http://purl.obolibrary.org/obo/doid.owl
 layout: product_detail
+original_source:
+  - source: doid
+    relation_type: prov:hadPrimarySource
 ---

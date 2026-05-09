@@ -7,4 +7,7 @@ name: HPO Annotations (Phenotype to Disease)
 product_file_size: 35261380
 product_url: http://purl.obolibrary.org/obo/hp/phenotype.hpoa
 layout: product_detail
+original_source:
+  - source: hp
+    relation_type: prov:hadPrimarySource
 ---

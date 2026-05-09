@@ -30,24 +30,36 @@ products:
     id: rfam.portal
     name: Rfam Web Portal
     product_url: https://rfam.org/
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for programmatic access to Rfam data
     format: http
     id: rfam.api
     name: Rfam REST API
     product_url: https://rfam.org/api
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP archive with covariance models, sequence alignments, and database files
     format: http
     id: rfam.ftp
     name: Rfam FTP Archive
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: DataModelProduct
     description: Public MySQL database for direct SQL access to Rfam data
     format: mysql
     id: rfam.public-db
     name: Rfam Public MySQL Database
     product_url: https://docs.rfam.org/en/latest/database.html
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Covariance models for all RNA families in CM format
     format: txt
@@ -55,6 +67,9 @@ products:
     name: Rfam Covariance Models
     product_file_size: 45111170
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: SEED alignments for all RNA families in Stockholm format
     format: stockholm
@@ -62,18 +77,27 @@ products:
     name: Rfam SEED Alignments
     product_file_size: 5083331
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FULL alignments for all RNA families
     format: txt
     id: rfam.full-alignments
     name: Rfam FULL Alignments
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FASTA format sequences for all RNA families
     format: fasta
     id: rfam.fasta
     name: Rfam FASTA Sequences
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: PDB structure mappings showing RNA families with 3D structures
     format: txt
@@ -81,12 +105,18 @@ products:
     name: Rfam PDB Mappings
     product_file_size: 179072
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/.preview/pdb_full_region.txt.gz
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive documentation for Rfam database and tools
     format: http
     id: rfam.docs
     name: Rfam Documentation
     product_url: https://docs.rfam.org/
+    original_source:
+      - source: rfam
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

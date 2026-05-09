@@ -34,6 +34,9 @@ products:
     name: ecto.owl
     product_file_size: 2277332
     product_url: http://purl.obolibrary.org/obo/ecto.owl
+    original_source:
+      - source: ecto
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Environmental conditions, treatments and exposures ontology in OBO format
     format: obo
@@ -41,6 +44,9 @@ products:
     name: ecto.obo
     product_file_size: 1509031
     product_url: http://purl.obolibrary.org/obo/ecto.obo
+    original_source:
+      - source: ecto
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Environmental conditions, treatments and exposures ontology in JSON format
     format: json
@@ -48,6 +54,9 @@ products:
     name: ecto.json
     product_file_size: 1646990
     product_url: http://purl.obolibrary.org/obo/ecto.json
+    original_source:
+      - source: ecto
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Environmental conditions, treatments and exposures ontology in OWL format
     format: owl
@@ -55,6 +64,9 @@ products:
     name: ecto.ecto-base.owl
     product_file_size: 160667
     product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.owl
+    original_source:
+      - source: ecto
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Environmental conditions, treatments and exposures ontology in OBO format
     format: obo
@@ -62,6 +74,9 @@ products:
     name: ecto.ecto-base.obo
     product_file_size: 97093
     product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.obo
+    original_source:
+      - source: ecto
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Environmental conditions, treatments and exposures ontology in JSON format
     format: json
@@ -69,6 +84,9 @@ products:
     name: ecto.ecto-base.json
     product_file_size: 141984
     product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.json
+    original_source:
+      - source: ecto
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

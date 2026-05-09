@@ -5,9 +5,11 @@ format: txt
 id: goa.uniprot
 name: UniProt GOA Annotations
 original_source:
-  - source: uniprot
-    relation_type: prov:hadPrimarySource
   - source: go
+    relation_type: prov:hadPrimarySource
+  - source: goa
+    relation_type: prov:hadPrimarySource
+  - source: uniprot
     relation_type: prov:hadPrimarySource
 product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
 warnings:

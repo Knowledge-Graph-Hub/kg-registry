@@ -6,4 +6,7 @@ id: chemicalchecker.signatures
 name: Chemical Checker Signatures
 product_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html
 layout: product_detail
+original_source:
+  - source: chemicalchecker
+    relation_type: prov:hadPrimarySource
 ---

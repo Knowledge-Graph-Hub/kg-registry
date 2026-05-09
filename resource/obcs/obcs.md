@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
-  contact_details:
-  - contact_type: email
-    value: jiezhen@med.umich.edu
-  - contact_type: github
-    value: zhengj2007
+  - category: Individual
+    label: Jie Zheng
+    orcid: 0000-0002-2999-0103
+    contact_details:
+      - contact_type: email
+        value: jiezhen@med.umich.edu
+      - contact_type: github
+        value: zhengj2007
 creation_date: '2025-09-29T00:00:00Z'
 description: A biomedical ontology in the domain of biological and clinical statistics.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/obcs/obcs
 id: obcs
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Biological and Clinical Statistics
 products:
-- category: OntologyProduct
-  description: Ontology of Biological and Clinical Statistics in OWL format
-  format: owl
-  id: obcs.owl
-  name: obcs.owl
-  product_file_size: 213907
-  product_url: http://purl.obolibrary.org/obo/obcs.owl
+  - category: OntologyProduct
+    description: Ontology of Biological and Clinical Statistics in OWL format
+    format: owl
+    id: obcs.owl
+    name: obcs.owl
+    product_file_size: 213907
+    product_url: http://purl.obolibrary.org/obo/obcs.owl
+    original_source:
+      - source: obcs
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obcs/obcs
 publications: []
 ---
+
 ## Description
 
 A biomedical ontology in the domain of biological and clinical statistics.

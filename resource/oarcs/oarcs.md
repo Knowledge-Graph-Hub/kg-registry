@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Matt Yoder
-  orcid: 0000-0002-5640-5491
-  contact_details:
-  - contact_type: email
-    value: mjyoder@illinois.edu
-  - contact_type: github
-    value: mjy
+  - category: Individual
+    label: Matt Yoder
+    orcid: 0000-0002-5640-5491
+    contact_details:
+      - contact_type: email
+        value: mjyoder@illinois.edu
+      - contact_type: github
+        value: mjy
 creation_date: '2025-09-29T00:00:00Z'
 description: OArCS is an ontology describing the Arthropod ciruclatory system.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/aszool/oarcs
 id: oarcs
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Arthropod Circulatory Systems
 products:
-- category: OntologyProduct
-  description: Ontology of Arthropod Circulatory Systems in OWL format
-  format: owl
-  id: oarcs.owl
-  name: oarcs.owl
-  product_file_size: 27840
-  product_url: http://purl.obolibrary.org/obo/oarcs.owl
+  - category: OntologyProduct
+    description: Ontology of Arthropod Circulatory Systems in OWL format
+    format: owl
+    id: oarcs.owl
+    name: oarcs.owl
+    product_file_size: 27840
+    product_url: http://purl.obolibrary.org/obo/oarcs.owl
+    original_source:
+      - source: oarcs
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/aszool/oarcs
 publications: []
 ---
+
 ## Description
 
 OArCS is an ontology describing the Arthropod ciruclatory system.

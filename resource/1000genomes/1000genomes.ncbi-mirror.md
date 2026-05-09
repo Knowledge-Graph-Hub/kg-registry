@@ -6,4 +6,7 @@ id: 1000genomes.ncbi-mirror
 name: NCBI Mirror
 product_url: https://ftp-trace.ncbi.nih.gov/1000genomes/ftp/
 layout: product_detail
+original_source:
+  - source: 1000genomes
+    relation_type: prov:hadPrimarySource
 ---

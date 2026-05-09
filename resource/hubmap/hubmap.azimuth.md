@@ -5,4 +5,7 @@ id: hubmap.azimuth
 name: Azimuth
 product_url: https://azimuth.hubmapconsortium.org/
 layout: product_detail
+original_source:
+  - source: hubmap
+    relation_type: prov:hadPrimarySource
 ---

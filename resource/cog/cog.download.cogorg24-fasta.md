@@ -8,4 +8,7 @@ name: COG 2024 Protein FASTA
 product_file_size: 1629401512
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/COG/COG2024/data/COGorg24.faa.gz
 layout: product_detail
+original_source:
+  - source: cog
+    relation_type: prov:hadPrimarySource
 ---

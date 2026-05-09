@@ -7,4 +7,7 @@ name: Rfam PDB Mappings
 product_file_size: 179072
 product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/.preview/pdb_full_region.txt.gz
 layout: product_detail
+original_source:
+  - source: rfam
+    relation_type: prov:hadPrimarySource
 ---

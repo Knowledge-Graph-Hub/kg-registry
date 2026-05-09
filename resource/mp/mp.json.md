@@ -7,4 +7,7 @@ name: MP (obographs JSON edition)
 product_file_size: 55018989
 product_url: http://purl.obolibrary.org/obo/mp.json
 layout: product_detail
+original_source:
+  - source: mp
+    relation_type: prov:hadPrimarySource
 ---

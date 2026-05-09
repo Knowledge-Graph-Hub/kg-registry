@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Janna Hastings
-  orcid: 0000-0002-3469-4923
-  contact_details:
-  - contact_type: email
-    value: janna.hastings@gmail.com
-  - contact_type: github
-    value: jannahastings
+  - category: Individual
+    label: Janna Hastings
+    orcid: 0000-0002-3469-4923
+    contact_details:
+      - contact_type: email
+        value: janna.hastings@gmail.com
+      - contact_type: github
+        value: jannahastings
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of affective phenomena such as emotions, moods, appraisals
-  and subjective feelings.
+description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/jannahastings/emotion-ontology
 id: mfoem
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Emotion Ontology
 products:
-- category: OntologyProduct
-  description: Emotion Ontology in OWL format
-  format: owl
-  id: mfoem.owl
-  name: mfoem.owl
-  product_file_size: 72354
-  product_url: http://purl.obolibrary.org/obo/mfoem.owl
+  - category: OntologyProduct
+    description: Emotion Ontology in OWL format
+    format: owl
+    id: mfoem.owl
+    name: mfoem.owl
+    product_file_size: 72354
+    product_url: http://purl.obolibrary.org/obo/mfoem.owl
+    original_source:
+      - source: mfoem
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/jannahastings/emotion-ontology
 publications: []
 ---
+
 ## Description
 
 An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.

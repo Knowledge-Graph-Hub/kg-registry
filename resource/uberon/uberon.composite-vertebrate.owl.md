@@ -7,4 +7,7 @@ name: Uberon composite vertebrate ontology
 product_file_size: 126856799
 product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
 layout: product_detail
+original_source:
+  - source: uberon
+    relation_type: prov:hadPrimarySource
 ---

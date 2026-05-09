@@ -30,9 +30,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1074149258
     product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
-    secondary_source:
-      - source: np-kg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX multidigraph object
     dump_format: gpickle
@@ -43,9 +40,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 936065236
     product_url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
-    secondary_source:
-      - source: np-kg
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Taneja SB

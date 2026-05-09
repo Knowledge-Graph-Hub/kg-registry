@@ -33,6 +33,9 @@ products:
     name: vo.owl
     product_file_size: 1492352
     product_url: http://purl.obolibrary.org/obo/vo.owl
+    original_source:
+      - source: vo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse relations.
     format: owl

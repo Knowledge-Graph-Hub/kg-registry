@@ -7,4 +7,7 @@ name: hao.obo
 product_file_size: 129805
 product_url: http://purl.obolibrary.org/obo/hao.obo
 layout: product_detail
+original_source:
+  - source: hao
+    relation_type: prov:hadPrimarySource
 ---

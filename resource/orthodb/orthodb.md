@@ -31,9 +31,6 @@ products:
       - source: orthodb
         relation_type: prov:hadPrimarySource
     product_url: https://www.orthodb.org/
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: SPARQL endpoint for querying OrthoDB data
     id: orthodb.api.sparql
@@ -43,9 +40,6 @@ products:
       - source: orthodb
         relation_type: prov:hadPrimarySource
     product_url: https://sparql.orthodb.org/
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to OrthoDB data
     id: orthodb.api.rest
@@ -55,9 +49,6 @@ products:
       - source: orthodb
         relation_type: prov:hadPrimarySource
     product_url: https://www.orthodb.org/api/
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: Tab-separated file with species information based on NCBI taxonomy
@@ -69,9 +60,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 644375
     product_url: https://data.orthodb.org/current/download/odb12v1_species.tab.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: Tab-separated file with information about orthologous groups
@@ -83,9 +71,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 145213387
     product_url: https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: MappingProduct
     compression: gzip
     description: Tab-separated file mapping orthologous groups to genes
@@ -97,9 +82,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 4909850611
     product_url: https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: Tab-separated file with gene information and annotations
@@ -111,9 +93,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 4785964374
     product_url: https://data.orthodb.org/current/download/odb12v1_genes.tab.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: MappingProduct
     compression: gzip
     description: Tab-separated file with gene cross-references to other databases
@@ -125,9 +104,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 4692134033
     product_url: https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: Tab-separated file with orthologous group functional annotations including GO, COG, and InterPro
@@ -139,9 +115,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 349253826
     product_url: https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: FASTA-formatted amino acid sequences for all genes
@@ -153,9 +126,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 38928290988
     product_url: https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: FASTA-formatted coding sequences for all genes
@@ -167,9 +137,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 57560209301
     product_url: https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz
-    secondary_source:
-      - source: orthodb
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Kriventseva EV

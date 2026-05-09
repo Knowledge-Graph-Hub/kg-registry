@@ -16,10 +16,9 @@ node_count: 8842
 original_source:
   - source: drugrephub
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
 versions:
   - '2026_03_06'
   - drug_rep_hub_2025-08-19_99c18ef1_2025sep1_4.3.6

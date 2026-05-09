@@ -54,9 +54,6 @@ products:
       - source: epigraphdb
         relation_type: prov:hadPrimarySource
     product_url: https://mrcieu.github.io/epigraphdb-r/
-    secondary_source:
-      - source: epigraphdb
-        relation_type: prov:wasInfluencedBy
   - category: DocumentationProduct
     description: Example notebooks demonstrating EpiGraphDB use cases, including causal inference, pleiotropy assessment, drug target identification, literature triangulation, and metadata queries
     id: epigraphdb.examples
@@ -106,9 +103,6 @@ products:
       - source: mrbase
         relation_type: prov:hadPrimarySource
     product_url: https://docs.epigraphdb.org/graph-database/
-    secondary_source:
-      - source: epigraphdb
-        relation_type: prov:wasInfluencedBy
   - category: DocumentationProduct
     description: Documentation hub containing conceptual overviews, API endpoint references, data integration details, metrics, and research study links
     format: http

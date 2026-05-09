@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Mathias Brochhausen
-  orcid: 0000-0003-1834-3856
-  contact_details:
-  - contact_type: email
-    value: mbrochhausen@gmail.com
-  - contact_type: github
-    value: mbrochhausen
+  - category: Individual
+    label: Mathias Brochhausen
+    orcid: 0000-0003-1834-3856
+    contact_details:
+      - contact_type: email
+        value: mbrochhausen@gmail.com
+      - contact_type: github
+        value: mbrochhausen
 creation_date: '2025-09-29T00:00:00Z'
-description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction
-  Evidence Ontology
+description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction Evidence Ontology
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://github.com/DIDEO/DIDEO
 id: dideo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,17 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
 products:
-- category: OntologyProduct
-  description: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology in
-    OWL format
-  format: owl
-  id: dideo.owl
-  name: dideo.owl
-  product_file_size: 88427
-  product_url: http://purl.obolibrary.org/obo/dideo.owl
+  - category: OntologyProduct
+    description: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology in OWL format
+    format: owl
+    id: dideo.owl
+    name: dideo.owl
+    product_file_size: 88427
+    product_url: http://purl.obolibrary.org/obo/dideo.owl
+    original_source:
+      - source: dideo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/DIDEO/DIDEO
 publications: []
 ---
+
 ## Description
 
 The Potential Drug-drug Interaction and Potential Drug-drug Interaction Evidence Ontology

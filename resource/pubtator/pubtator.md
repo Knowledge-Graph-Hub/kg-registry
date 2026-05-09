@@ -34,9 +34,6 @@ products:
       - source: pubtator
         relation_type: prov:hadPrimarySource
     product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3-api/
-    secondary_source:
-      - source: pubtator
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Bulk downloads of annotated articles and extraction summaries for entities and relations
     id: pubtator.bulk
@@ -45,9 +42,6 @@ products:
       - source: pubtator
         relation_type: prov:hadPrimarySource
     product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/PubTator3
-    secondary_source:
-      - source: pubtator
-        relation_type: prov:wasInfluencedBy
   - category: GraphicalInterface
     description: Web interface for exploring PubTator annotations with semantic and relation search capabilities
     id: pubtator.site
@@ -57,9 +51,6 @@ products:
       - source: pubtator
         relation_type: prov:hadPrimarySource
     product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
-    secondary_source:
-      - source: pubtator
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: "Text-mined biomedical knowledge graph of gene–disease–drug relationships (semantic themes)"
     id: gnbr.graph

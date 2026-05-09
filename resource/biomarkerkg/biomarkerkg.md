@@ -31,9 +31,6 @@ products:
       - source: biomarkerkg
         relation_type: prov:hadPrimarySource
     product_url: https://bkg.dev.maayanlab.cloud/
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from Uber-Anatomy Ontology
@@ -41,13 +38,12 @@ products:
     id: biomarkerkg.nodes.anatomy
     name: BKG Anatomy Nodes
     original_source:
+      - source: biomarkerkg
+        relation_type: prov:hadPrimarySource
       - source: uberon
         relation_type: prov:hadPrimarySource
     product_file_size: 332
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from GlyGen Biomarker Database
@@ -55,13 +51,12 @@ products:
     id: biomarkerkg.nodes.biomarker
     name: BKG Biomarker Nodes
     original_source:
+      - source: biomarkerkg
+        relation_type: prov:hadPrimarySource
       - source: glygen
         relation_type: prov:hadPrimarySource
     product_file_size: 1252064
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from PubChem Database
@@ -69,13 +64,12 @@ products:
     id: biomarkerkg.nodes.compound
     name: BKG Compound Nodes
     original_source:
+      - source: biomarkerkg
+        relation_type: prov:hadPrimarySource
       - source: pubchem
         relation_type: prov:hadPrimarySource
     product_file_size: 871
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from Human Disease Ontology
@@ -83,13 +77,12 @@ products:
     id: biomarkerkg.nodes.condition
     name: BKG Condition Nodes
     original_source:
+      - source: biomarkerkg
+        relation_type: prov:hadPrimarySource
       - source: doid
         relation_type: prov:hadPrimarySource
     product_file_size: 5501
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from OBCI
@@ -101,9 +94,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 276
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from dbSNP
@@ -111,13 +101,12 @@ products:
     id: biomarkerkg.nodes.variant
     name: BKG Variant Nodes
     original_source:
+      - source: biomarkerkg
+        relation_type: prov:hadPrimarySource
       - source: dbsnp
         relation_type: prov:hadPrimarySource
     product_file_size: 782975
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Biomarker to Anatomy relationships (determined_using_sample_from)
@@ -129,9 +118,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1229
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Biomarker to Compound relationships (indicated_by_above_normal_level_of, indicated_by_below_normal_level_of)
@@ -143,9 +129,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1333
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.edges.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Biomarker to Condition relationships (diagnostic_for, indicates_risk_of_developing, prognostic_for)
@@ -157,9 +140,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1204603
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.edges.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Biomarker to Role relationships (has_best_classification)
@@ -171,9 +151,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 355306
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Biomarker to Variant relationships (indicated_by_presence_of)
@@ -185,9 +162,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1067491
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
   - id: biomarkerkg.sparql
     name: BiomarkerKB KG SPARQL
     description: SPARQL endpoint for BiomarkerKB KG

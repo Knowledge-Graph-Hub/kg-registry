@@ -22,6 +22,9 @@ products:
     id: ukbiobank.showcase
     name: UK Biobank Data Showcase
     product_url: https://biobank.ndph.ox.ac.uk/showcase/
+    original_source:
+      - source: ukbiobank
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
     id: disgenet.data

@@ -2,19 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: stoeckrt@pcbi.upenn.edu
-  label: Chris Stoeckert
-  orcid: 0000-0002-5714-991X
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: stoeckrt@pcbi.upenn.edu
+    label: Chris Stoeckert
+    orcid: 0000-0002-5714-991X
 creation_date: '2025-09-29T00:00:00Z'
-description: A standardized description of a microarray experiment in support of MAGE
-  v.1.
+description: A standardized description of a microarray experiment in support of MAGE v.1.
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -24,19 +23,21 @@ license:
   label: Not specified
 name: Microarray experimental conditions
 products:
-- category: OntologyProduct
-  description: Microarray experimental conditions in OWL format
-  format: owl
-  id: mo.owl
-  name: mo.owl
-  product_url: http://purl.obolibrary.org/obo/mo.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Microarray experimental conditions in OWL format
+    format: owl
+    id: mo.owl
+    name: mo.owl
+    product_url: http://purl.obolibrary.org/obo/mo.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: mo
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 A standardized description of a microarray experiment in support of MAGE v.1.

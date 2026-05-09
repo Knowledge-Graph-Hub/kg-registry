@@ -8,8 +8,5 @@ original_source:
   - source: mrbase
     relation_type: prov:hadPrimarySource
 product_url: https://github.com/MRCIEU/TwoSampleMR
-secondary_source:
-  - source: mrbase
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

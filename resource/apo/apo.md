@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Stacia R Engel
-  orcid: 0000-0001-5472-917X
-  contact_details:
-  - contact_type: email
-    value: stacia@stanford.edu
-  - contact_type: github
-    value: srengel
+  - category: Individual
+    label: Stacia R Engel
+    orcid: 0000-0001-5472-917X
+    contact_details:
+      - contact_type: email
+        value: stacia@stanford.edu
+      - contact_type: github
+        value: srengel
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 domains:
-- biological systems
+  - biological systems
 homepage_url: http://www.yeastgenome.org/
 id: apo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,27 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ascomycete phenotype ontology
 products:
-- category: OntologyProduct
-  description: Ascomycete phenotype ontology in OWL format
-  format: owl
-  id: apo.owl
-  name: apo.owl
-  product_file_size: 32488
-  product_url: http://purl.obolibrary.org/obo/apo.owl
-- category: OntologyProduct
-  description: Ascomycete phenotype ontology in OBO format
-  format: obo
-  id: apo.obo
-  name: apo.obo
-  product_file_size: 16797
-  product_url: http://purl.obolibrary.org/obo/apo.obo
+  - category: OntologyProduct
+    description: Ascomycete phenotype ontology in OWL format
+    format: owl
+    id: apo.owl
+    name: apo.owl
+    product_file_size: 32488
+    product_url: http://purl.obolibrary.org/obo/apo.owl
+    original_source:
+      - source: apo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Ascomycete phenotype ontology in OBO format
+    format: obo
+    id: apo.obo
+    name: apo.obo
+    product_file_size: 16797
+    product_url: http://purl.obolibrary.org/obo/apo.obo
+    original_source:
+      - source: apo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
 taxon:
-- NCBITaxon:4890
+  - NCBITaxon:4890
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
-  title: New mutant phenotype data curation system in the Saccharomyces Genome Database
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
+    title: New mutant phenotype data curation system in the Saccharomyces Genome Database
 ---
+
 ## Description
 
 A structured controlled vocabulary for the phenotypes of Ascomycete fungi

@@ -6,4 +6,7 @@ id: mangal.portal
 name: mangal.io Web Portal
 product_url: https://mangal.io/
 layout: product_detail
+original_source:
+  - source: mangal
+    relation_type: prov:hadPrimarySource
 ---

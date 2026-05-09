@@ -10,4 +10,7 @@ name: CL Basic OBO
 product_file_size: 2413965
 product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
 layout: product_detail
+original_source:
+  - source: cl
+    relation_type: prov:hadPrimarySource
 ---

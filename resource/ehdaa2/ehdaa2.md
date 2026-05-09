@@ -2,18 +2,17 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jonathan Bard
-  contact_details:
-  - contact_type: email
-    value: J.Bard@ed.ac.uk
+  - category: Individual
+    label: Jonathan Bard
+    contact_details:
+      - contact_type: email
+        value: J.Bard@ed.ac.uk
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of stage-specific anatomical structures
-  of the developing human.
+description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/human-developmental-anatomy-ontology
 id: ehdaa2
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -24,28 +23,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Human developmental anatomy, abstract
 products:
-- category: OntologyProduct
-  description: Human developmental anatomy, abstract in OWL format
-  format: owl
-  id: ehdaa2.owl
-  name: ehdaa2.owl
-  product_file_size: 125946
-  product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
-- category: OntologyProduct
-  description: Human developmental anatomy, abstract in OBO format
-  format: obo
-  id: ehdaa2.obo
-  name: ehdaa2.obo
-  product_file_size: 83809
-  product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
+  - category: OntologyProduct
+    description: Human developmental anatomy, abstract in OWL format
+    format: owl
+    id: ehdaa2.owl
+    name: ehdaa2.owl
+    product_file_size: 125946
+    product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
+    original_source:
+      - source: ehdaa2
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Human developmental anatomy, abstract in OBO format
+    format: obo
+    id: ehdaa2.obo
+    name: ehdaa2.obo
+    product_file_size: 83809
+    product_url: http://purl.obolibrary.org/obo/ehdaa2.obo
+    original_source:
+      - source: ehdaa2
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
-  title: A new ontology (structured hierarchy) of human developmental anatomy for
-    the first 7 weeks (Carnegie stages 1-20).
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
+    title: A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).
 ---
+
 ## Description
 
 A structured controlled vocabulary of stage-specific anatomical structures of the developing human.

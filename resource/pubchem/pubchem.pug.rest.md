@@ -8,8 +8,5 @@ original_source:
   - source: pubchem
     relation_type: prov:hadPrimarySource
 product_url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-secondary_source:
-  - source: pubchem
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

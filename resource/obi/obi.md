@@ -33,6 +33,9 @@ products:
     name: OBI
     product_file_size: 723493
     product_url: http://purl.obolibrary.org/obo/obi.owl
+    original_source:
+      - source: obi
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The OBO-format version of OBI
     format: obo
@@ -40,6 +43,9 @@ products:
     name: OBI in OBO
     product_file_size: 307971
     product_url: http://purl.obolibrary.org/obo/obi.obo
+    original_source:
+      - source: obi
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: A collection of important high-level terms and their relations from OBI and other ontologies
     format: owl
@@ -47,6 +53,9 @@ products:
     name: OBI Core
     product_file_size: 39447
     product_url: http://purl.obolibrary.org/obo/obi/obi_core.owl
+    original_source:
+      - source: obi
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Base module for OBI
     format: owl
@@ -54,6 +63,9 @@ products:
     name: OBI Base module
     product_file_size: 617030
     product_url: http://purl.obolibrary.org/obo/obi/obi-base.owl
+    original_source:
+      - source: obi
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

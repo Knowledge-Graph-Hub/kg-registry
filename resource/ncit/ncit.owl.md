@@ -1,11 +1,13 @@
 ---
 category: OntologyProduct
-description: A direct transformation of the standard NCIt content using OBO-style
-  term and ontology IRIs and annotation properties.
+description: A direct transformation of the standard NCIt content using OBO-style term and ontology IRIs and annotation properties.
 format: owl
 id: ncit.owl
 name: NCIt OBO Edition OWL format
 product_file_size: 811620064
 product_url: http://purl.obolibrary.org/obo/ncit.owl
 layout: product_detail
+original_source:
+  - source: ncit
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: ecao.obo
 product_file_size: 1002010
 product_url: http://purl.obolibrary.org/obo/ecao.obo
 layout: product_detail
+original_source:
+  - source: ecao
+    relation_type: prov:hadPrimarySource
 ---

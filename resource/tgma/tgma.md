@@ -2,17 +2,17 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Pantelis Topalis
-  contact_details:
-  - contact_type: email
-    value: topalis@imbb.forth.gr
+  - category: Individual
+    label: Pantelis Topalis
+    contact_details:
+      - contact_type: email
+        value: topalis@imbb.forth.gr
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://www.vectorbase.org/ontology-browser
 id: tgma
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -23,25 +23,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Mosquito gross anatomy ontology
 products:
-- category: OntologyProduct
-  description: Mosquito gross anatomy ontology in OWL format
-  format: owl
-  id: tgma.owl
-  name: tgma.owl
-  product_file_size: 298621
-  product_url: http://purl.obolibrary.org/obo/tgma.owl
-- category: OntologyProduct
-  description: Mosquito gross anatomy ontology in OBO format
-  format: obo
-  id: tgma.obo
-  name: tgma.obo
-  product_file_size: 143032
-  product_url: http://purl.obolibrary.org/obo/tgma.obo
+  - category: OntologyProduct
+    description: Mosquito gross anatomy ontology in OWL format
+    format: owl
+    id: tgma.owl
+    name: tgma.owl
+    product_file_size: 298621
+    product_url: http://purl.obolibrary.org/obo/tgma.owl
+    original_source:
+      - source: tgma
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Mosquito gross anatomy ontology in OBO format
+    format: obo
+    id: tgma.obo
+    name: tgma.obo
+    product_file_size: 143032
+    product_url: http://purl.obolibrary.org/obo/tgma.obo
+    original_source:
+      - source: tgma
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/VEuPathDB-ontology/TGMA
 taxon:
-- NCBITaxon:44484
+  - NCBITaxon:44484
 publications: []
 ---
+
 ## Description
 
 A structured controlled vocabulary of the anatomy of mosquitoes.

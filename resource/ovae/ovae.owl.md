@@ -7,4 +7,7 @@ name: ovae.owl
 product_file_size: 286812
 product_url: http://purl.obolibrary.org/obo/ovae.owl
 layout: product_detail
+original_source:
+  - source: ovae
+    relation_type: prov:hadPrimarySource
 ---

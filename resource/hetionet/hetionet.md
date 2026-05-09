@@ -30,6 +30,9 @@ products:
     id: hetionet.neo4j
     name: Hetionet v1.0 Neo4j Database
     product_url: https://neo4j.het.io/browser/
+    original_source:
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Hetionet v1.0 in JSON format
     format: json
@@ -37,12 +40,18 @@ products:
     name: Hetionet v1.0 JSON
     product_file_size: 131
     product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
+    original_source:
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Hetionet v1.0 as a Neo4j database
     id: hetionet.data.neo4j
     name: Hetionet v1.0 Neo4j
     product_file_size: 132
     product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
+    original_source:
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Hetionet v1.0 as SIF edges
     format: sif
@@ -50,6 +59,9 @@ products:
     name: Hetionet v1.0 edges (SIF)
     product_file_size: 131
     product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
+    original_source:
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Hetionet v1.0 as TSV nodes
     format: tsv
@@ -57,6 +69,9 @@ products:
     name: Hetionet v1.0 nodes (TSV)
     product_file_size: 427128
     product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
+    original_source:
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: Python package for creating, querying, and operating on hetnets (heterogeneous networks)
     id: hetnetpy
@@ -68,6 +83,9 @@ products:
     id: hetionet.search
     name: Hetnet Connectivity Search
     product_url: https://het.io/search
+    original_source:
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http

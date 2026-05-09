@@ -7,4 +7,7 @@ name: fbdv.fbdv-simple.obo
 product_file_size: 118720
 product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 layout: product_detail
+original_source:
+  - source: fbdv
+    relation_type: prov:hadPrimarySource
 ---

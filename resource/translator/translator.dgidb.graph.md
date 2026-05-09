@@ -16,10 +16,9 @@ node_count: 11691
 original_source:
   - source: dgidb
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
 versions:
   - '2026_03_06'
   - dgidb_2024_12_06_755e30d8_2025sep1_4.3.6

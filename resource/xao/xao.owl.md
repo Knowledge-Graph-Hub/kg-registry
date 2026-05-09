@@ -7,4 +7,7 @@ name: xao.owl
 product_file_size: 226615
 product_url: http://purl.obolibrary.org/obo/xao.owl
 layout: product_detail
+original_source:
+  - source: xao
+    relation_type: prov:hadPrimarySource
 ---

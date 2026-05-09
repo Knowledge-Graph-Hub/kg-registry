@@ -2,18 +2,14 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://naturalhistory.si.edu/research/eol
-  id: smithsonian-nmnh
-  label: Smithsonian Institution's National Museum of Natural History
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://naturalhistory.si.edu/research/eol
+    id: smithsonian-nmnh
+    label: Smithsonian Institution's National Museum of Natural History
 creation_date: '2025-12-17T00:00:00Z'
-description: Encyclopedia of Life (EOL) TraitBank is a searchable, comprehensive,
-  open digital repository for organism traits, measurements, interactions, and other
-  attributes aggregated from 50+ data sources. It covers 1.7 million taxa across the
-  entire tree of life with 11 million+ trait records organized using semantic web
-  standards and Darwin Core terminology.
+description: Encyclopedia of Life (EOL) TraitBank is a searchable, comprehensive, open digital repository for organism traits, measurements, interactions, and other attributes aggregated from 50+ data sources. It covers 1.7 million taxa across the entire tree of life with 11 million+ trait records organized using semantic web standards and Darwin Core terminology.
 domains: []
 homepage_url: https://eol.org/pages/traitbank
 id: eol-traitbank
@@ -25,145 +21,130 @@ license:
   label: CC BY 4.0
 name: Encyclopedia of Life (EOL) TraitBank
 products:
-- category: GraphicalInterface
-  description: Interactive web interface for searching, browsing, and discovering
-    organism trait data across all taxa with filtering by taxonomic group and attribute
-    type
-  format: http
-  id: eol-traitbank.web
-  name: TraitBank Web Portal
-  product_url: https://eol.org/pages/traitbank
-- category: ProgrammingInterface
-  description: Neo4j Cypher query interface providing programmatic access to structured
-    trait data, requiring authentication via EOL account
-  format: http
-  id: eol-traitbank.cypher
-  is_public: true
-  name: TraitBank Cypher Query Interface
-  product_url: https://eol.org/services/authenticate
-- category: ProgrammingInterface
-  description: RESTful API endpoints for taxonomy, media, and text data access from
-    Encyclopedia of Life
-  format: http
-  id: eol-traitbank.api
-  is_public: true
-  name: EOL API
-  product_url: https://api.eol.org/
-- category: ProgrammingInterface
-  description: EOL Reconciliation Service API for resolving taxon names to EOL taxon
-    IDs using OpenRefine-compatible reconciliation protocol
-  format: http
-  id: eol-traitbank.reconciliation
-  is_public: true
-  name: EOL Reconciliation API
-  product_url: https://eol.org/api/reconciliation
-- category: Product
-  compression: zip
-  description: Complete TraitBank bulk data export containing all 11 million+ trait
-    records in CSV format with measurement details and source attribution
-  format: csv
-  id: eol-traitbank.bulk-csv
-  name: TraitBank Bulk Data Export
-  product_file_size: 592310894
-  product_url: https://editors.eol.org/other_files/SDR/traits_all.zip
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-26_ Error connecting
-    to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
-    with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-02-24_ Error connecting
-    to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
-    with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-01-28_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded
-    with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-- category: DocumentationProduct
-  description: Comprehensive documentation covering TraitBank data structure, API
-    usage, authentication methods, and data formats
-  format: http
-  id: eol-traitbank.docs
-  name: TraitBank Documentation
-  product_url: https://eol.org/docs/what-is-eol/data-services
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
-    url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-02-24_ Error connecting
-    to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
-    url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with
-    url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+  - category: GraphicalInterface
+    description: Interactive web interface for searching, browsing, and discovering organism trait data across all taxa with filtering by taxonomic group and attribute type
+    format: http
+    id: eol-traitbank.web
+    name: TraitBank Web Portal
+    product_url: https://eol.org/pages/traitbank
+    original_source:
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: Neo4j Cypher query interface providing programmatic access to structured trait data, requiring authentication via EOL account
+    format: http
+    id: eol-traitbank.cypher
+    is_public: true
+    name: TraitBank Cypher Query Interface
+    product_url: https://eol.org/services/authenticate
+    original_source:
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: RESTful API endpoints for taxonomy, media, and text data access from Encyclopedia of Life
+    format: http
+    id: eol-traitbank.api
+    is_public: true
+    name: EOL API
+    product_url: https://api.eol.org/
+    original_source:
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: EOL Reconciliation Service API for resolving taxon names to EOL taxon IDs using OpenRefine-compatible reconciliation protocol
+    format: http
+    id: eol-traitbank.reconciliation
+    is_public: true
+    name: EOL Reconciliation API
+    product_url: https://eol.org/api/reconciliation
+    original_source:
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    compression: zip
+    description: Complete TraitBank bulk data export containing all 11 million+ trait records in CSV format with measurement details and source attribution
+    format: csv
+    id: eol-traitbank.bulk-csv
+    name: TraitBank Bulk Data Export
+    product_file_size: 592310894
+    product_url: https://editors.eol.org/other_files/SDR/traits_all.zip
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-26_ Error connecting to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-02-24_ Error connecting to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
+      - File was not able to be retrieved when checked on 2026-01-28_ Timeout connecting to URL
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='editors.eol.org', port=443)_ Max retries exceeded with url_ /other_files/SDR/traits_all.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+    original_source:
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
+  - category: DocumentationProduct
+    description: Comprehensive documentation covering TraitBank data structure, API usage, authentication methods, and data formats
+    format: http
+    id: eol-traitbank.docs
+    name: TraitBank Documentation
+    product_url: https://eol.org/docs/what-is-eol/data-services
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-25_ Error connecting to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-02-24_ Error connecting to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
+      - File was not able to be retrieved when checked on 2026-02-15_ Timeout connecting to URL
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='eol.org', port=443)_ Max retries exceeded with url_ /docs/what-is-eol/data-services (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+    original_source:
+      - source: eol-traitbank
+        relation_type: prov:hadPrimarySource
 publications:
-- authors:
-  - Adams B
-  - Franz N
-  - König-Ries B
-  - McGuinness D
-  - Schildhauer M
-  - Parr CS
-  - Schulz KS
-  - Hammock J
-  - Wilson N
-  - Leary P
-  - Rice J
-  - Corrigan RJ
-  doi: 10.3233/SW-150190
-  id: doi:10.3233/SW-150190
-  journal: Semantic Web Journal
-  preferred: true
-  title: 'TraitBank: Practical semantics for organism attribute data'
-  year: '2016'
-- authors:
-  - Parr CS
-  - Wilson N
-  - Leary P
-  - Struzan GS
-  - Ved P
-  - Lans KA
-  - Loyacano J
-  - Brest M
-  - Corrigan RJ
-  - Hancher C
-  - Helgen KM
-  - Herrick J
-  - Hammock J
-  - Kataoka C
-  - Lara MJ
-  - Maney D
-  - Martínez-Meyer E
-  - Measey J
-  - Rapp C
-  - Sarkar I
-  - Schulz KS
-  - Seubert E
-  - Wee B
-  - Wyckoff M
-  doi: 10.1371/journal.pone.0089965
-  id: doi:10.1371/journal.pone.0089965
-  journal: PLoS ONE
-  title: 'The Encyclopedia of Life v2: Providing Global Access to Knowledge About
-    Life on Earth'
-  year: '2014'
+  - authors:
+      - Adams B
+      - Franz N
+      - König-Ries B
+      - McGuinness D
+      - Schildhauer M
+      - Parr CS
+      - Schulz KS
+      - Hammock J
+      - Wilson N
+      - Leary P
+      - Rice J
+      - Corrigan RJ
+    doi: 10.3233/SW-150190
+    id: doi:10.3233/SW-150190
+    journal: Semantic Web Journal
+    preferred: true
+    title: 'TraitBank: Practical semantics for organism attribute data'
+    year: '2016'
+  - authors:
+      - Parr CS
+      - Wilson N
+      - Leary P
+      - Struzan GS
+      - Ved P
+      - Lans KA
+      - Loyacano J
+      - Brest M
+      - Corrigan RJ
+      - Hancher C
+      - Helgen KM
+      - Herrick J
+      - Hammock J
+      - Kataoka C
+      - Lara MJ
+      - Maney D
+      - Martínez-Meyer E
+      - Measey J
+      - Rapp C
+      - Sarkar I
+      - Schulz KS
+      - Seubert E
+      - Wee B
+      - Wyckoff M
+    doi: 10.1371/journal.pone.0089965
+    id: doi:10.1371/journal.pone.0089965
+    journal: PLoS ONE
+    title: 'The Encyclopedia of Life v2: Providing Global Access to Knowledge About Life on Earth'
+    year: '2014'
 repository: https://github.com/EOL
 taxon:
-- NCBITaxon:1
+  - NCBITaxon:1
 ---
+
 # Encyclopedia of Life (EOL) TraitBank
 
 ## Overview

@@ -6,4 +6,7 @@ id: compath.similarity
 name: ComPath Similarity Explorer
 product_url: https://compath.scai.fraunhofer.de/similarity
 layout: product_detail
+original_source:
+  - source: compath
+    relation_type: prov:hadPrimarySource
 ---

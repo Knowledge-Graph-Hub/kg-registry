@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Melanie Courtot
-  orcid: 0000-0002-9551-6370
-  contact_details:
-  - contact_type: email
-    value: mcourtot@gmail.com
-  - contact_type: github
-    value: mcourtot
+  - category: Individual
+    label: Melanie Courtot
+    orcid: 0000-0002-9551-6370
+    contact_details:
+      - contact_type: email
+        value: mcourtot@gmail.com
+      - contact_type: github
+        value: mcourtot
 creation_date: '2025-09-29T00:00:00Z'
 description: DUO is an ontology which represent data use conditions.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/EBISPOT/DUO
 id: duo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Data Use Ontology
 products:
-- category: OntologyProduct
-  description: Data Use Ontology in OWL format
-  format: owl
-  id: duo.owl
-  name: duo.owl
-  product_file_size: 8062
-  product_url: http://purl.obolibrary.org/obo/duo.owl
+  - category: OntologyProduct
+    description: Data Use Ontology in OWL format
+    format: owl
+    id: duo.owl
+    name: duo.owl
+    product_file_size: 8062
+    product_url: http://purl.obolibrary.org/obo/duo.owl
+    original_source:
+      - source: duo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/EBISPOT/DUO
 publications: []
 ---
+
 ## Description
 
 DUO is an ontology which represent data use conditions.

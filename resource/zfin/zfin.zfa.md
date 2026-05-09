@@ -11,8 +11,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 401588
 product_url: http://purl.obolibrary.org/obo/zfa.owl
-secondary_source:
-  - source: zfin
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

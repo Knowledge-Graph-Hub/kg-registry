@@ -1,7 +1,6 @@
 ---
 category: Product
-description: HuBMAP Data Portal providing access to standardized single-cell and spatial
-  tissue data from human donors
+description: HuBMAP Data Portal providing access to standardized single-cell and spatial tissue data from human donors
 format: mixed
 id: hubmap.data_portal
 license:
@@ -10,4 +9,7 @@ license:
 name: HuBMAP Data Portal
 product_url: https://portal.hubmapconsortium.org/
 layout: product_detail
+original_source:
+  - source: hubmap
+    relation_type: prov:hadPrimarySource
 ---

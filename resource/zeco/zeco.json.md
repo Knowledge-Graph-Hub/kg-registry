@@ -7,4 +7,7 @@ name: zeco.json
 product_file_size: 8591
 product_url: http://purl.obolibrary.org/obo/zeco.json
 layout: product_detail
+original_source:
+  - source: zeco
+    relation_type: prov:hadPrimarySource
 ---

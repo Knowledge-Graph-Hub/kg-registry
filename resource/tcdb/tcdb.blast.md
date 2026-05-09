@@ -6,4 +6,7 @@ id: tcdb.blast
 name: TCDB BLAST
 product_url: https://www.tcdb.org/progs/blast.php
 layout: product_detail
+original_source:
+  - source: tcdb
+    relation_type: prov:hadPrimarySource
 ---

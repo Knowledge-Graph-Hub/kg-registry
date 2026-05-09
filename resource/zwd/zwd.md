@@ -24,6 +24,9 @@ products:
     id: zwd.alignments
     name: Zasha Weinberg Data Repository Sequence Alignments
     product_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
+    original_source:
+      - source: zwd
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

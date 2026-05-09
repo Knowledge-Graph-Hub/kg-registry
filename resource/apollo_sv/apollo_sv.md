@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: William Hogan
-  orcid: 0000-0002-9881-1017
-  contact_details:
-  - contact_type: email
-    value: hoganwr@gmail.com
-  - contact_type: github
-    value: hoganwr
+  - category: Individual
+    label: William Hogan
+    orcid: 0000-0002-9881-1017
+    contact_details:
+      - contact_type: email
+        value: hoganwr@gmail.com
+      - contact_type: github
+        value: hoganwr
 creation_date: '2025-09-29T00:00:00Z'
-description: An OWL2 ontology of phenomena in infectious disease epidemiology and
-  population biology for use in epidemic simulation.
+description: An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/ApolloDev/apollo-sv
 id: apollo_sv
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Apollo Structured Vocabulary
 products:
-- category: OntologyProduct
-  description: Apollo Structured Vocabulary in OWL format
-  format: owl
-  id: apollo_sv.owl
-  name: apollo_sv.owl
-  product_file_size: 264551
-  product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
+  - category: OntologyProduct
+    description: Apollo Structured Vocabulary in OWL format
+    format: owl
+    id: apollo_sv.owl
+    name: apollo_sv.owl
+    product_file_size: 264551
+    product_url: http://purl.obolibrary.org/obo/apollo_sv.owl
+    original_source:
+      - source: apollo_sv
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/ApolloDev/apollo-sv
 publications:
-- id: https://doi.org/10.1186/s13326-016-0092-y
-  title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious
-    disease epidemiology and population biology for use in epidemic simulation'
+  - id: https://doi.org/10.1186/s13326-016-0092-y
+    title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation'
 ---
+
 ## Description
 
 An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.

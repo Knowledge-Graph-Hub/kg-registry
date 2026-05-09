@@ -10,4 +10,7 @@ name: pombase OBO
 product_file_size: 232235
 product_url: https://w3id.org/biopragmatics/resources/pombase/pombase.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

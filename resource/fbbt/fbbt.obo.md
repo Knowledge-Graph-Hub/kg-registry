@@ -7,4 +7,7 @@ name: fbbt.obo
 product_file_size: 38455655
 product_url: http://purl.obolibrary.org/obo/fbbt.obo
 layout: product_detail
+original_source:
+  - source: fbbt
+    relation_type: prov:hadPrimarySource
 ---

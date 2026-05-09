@@ -33,9 +33,6 @@ products:
       - source: genomickb
         relation_type: prov:hadPrimarySource
     product_url: https://gkb.dcmb.med.umich.edu/search
-    secondary_source:
-      - source: genomickb
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
     dump_format: neo4j
@@ -45,9 +42,6 @@ products:
       - source: genomickb
         relation_type: prov:hadPrimarySource
     product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
-    secondary_source:
-      - source: genomickb
-        relation_type: prov:wasInfluencedBy
 creation_date: '2025-03-20T00:00:00Z'
 last_modified_date: '2025-08-12T00:00:00Z'
 ---

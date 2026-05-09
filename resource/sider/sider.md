@@ -31,6 +31,9 @@ products:
     id: sider.web
     name: SIDER Web Interface
     product_url: http://sideeffects.embl.de/
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Tab-separated file mapping drugs to their names and synonyms.
     format: tsv
@@ -38,6 +41,9 @@ products:
     name: SIDER Drug Names
     product_file_size: 34759
     product_url: http://sideeffects.embl.de/media/download/drug_names.tsv
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Tab-separated file mapping drugs to their ATC codes.
     format: tsv
@@ -45,6 +51,9 @@ products:
     name: SIDER Drug ATC Codes
     product_file_size: 32760
     product_url: http://sideeffects.embl.de/media/download/drug_atc.tsv
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Tab-separated file containing all drug indications extracted from drug labels using MedDRA terminology.
@@ -53,6 +62,9 @@ products:
     name: SIDER MedDRA All Indications
     product_file_size: 344689
     product_url: http://sideeffects.embl.de/media/download/meddra_all_indications.tsv.gz
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Tab-separated file containing all side effects extracted from drug labels using MedDRA terminology.
@@ -61,6 +73,9 @@ products:
     name: SIDER MedDRA All Side Effects
     product_file_size: 2381171
     product_url: http://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Tab-separated file containing side effect frequency information extracted from drug labels using MedDRA terminology.
@@ -69,6 +84,9 @@ products:
     name: SIDER MedDRA Frequency
     product_file_size: 2058445
     product_url: http://sideeffects.embl.de/media/download/meddra_freq.tsv.gz
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Tab-separated file containing all original label indications extracted from drug labels using MedDRA terminology.
@@ -77,6 +95,9 @@ products:
     name: SIDER MedDRA All Label Indications
     product_file_size: 5916355
     product_url: http://sideeffects.embl.de/media/download/meddra_all_label_indications.tsv.gz
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Tab-separated file containing all original label side effects extracted from drug labels using MedDRA terminology.
@@ -85,6 +106,9 @@ products:
     name: SIDER MedDRA All Label Side Effects
     product_file_size: 42534383
     product_url: http://sideeffects.embl.de/media/download/meddra_all_label_se.tsv.gz
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Tab-separated file mapping MedDRA terms to their concept ID.
@@ -93,6 +117,9 @@ products:
     name: SIDER MedDRA Dictionary
     product_file_size: 1084933
     product_url: http://sideeffects.embl.de/media/download/meddra.tsv.gz
+    original_source:
+      - source: sider
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

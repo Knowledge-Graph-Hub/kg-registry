@@ -8,8 +8,5 @@ original_source:
   - source: disgenet
     relation_type: prov:hadPrimarySource
 product_url: https://www.disgenet.com/
-secondary_source:
-  - source: disgenet
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

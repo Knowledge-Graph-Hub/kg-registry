@@ -28,45 +28,69 @@ products:
     id: nihreporter.portal
     name: NIH Reporter Web Portal
     product_url: https://reporter.nih.gov/
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Bulk download of NIH research project data in structured format
     format: csv
     id: nihreporter.projects
     name: NIH Reporter Exporter Projects
     product_url: https://reporter.nih.gov/exporter/projects
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: API access to NIH research project data and search functionality
     format: http
     id: nihreporter.api
     name: NIH Reporter API
     product_url: https://reporter.nih.gov/
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Database of abstracts linked to NIH-funded research projects
     format: json
     id: nihreporter.abstracts
     name: NIH-Funded Project Abstracts
     product_url: https://reporter.nih.gov/exporter/abstracts
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Database of patents linked to NIH-funded research projects
     id: nihreporter.patents
     name: NIH-Funded Project Patents
     product_url: https://reporter.nih.gov/exporter/patents
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Database of clinical studies linked to NIH-funded research projects
     id: nihreporter.clinicalstudies
     name: NIH-Funded Project Clinical Studies
     product_url: https://reporter.nih.gov/exporter/clinicalstudies
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Database of publications linked to NIH-funded research projects
     format: json
     id: nihreporter.publications
     name: NIH-Funded Publications Database
     product_url: https://reporter.nih.gov/exporter/publications
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Database of publication link tables for NIH-funded research projects
     id: nihreporter.linktables
     name: NIH-Funded Publications Link Tables
     product_url: https://reporter.nih.gov/exporter/linktables
+    original_source:
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
     id: indra.cogex.code

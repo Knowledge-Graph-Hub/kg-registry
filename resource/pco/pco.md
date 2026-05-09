@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
-  contact_details:
-  - contact_type: email
-    value: rlwalls2008@gmail.com
-  - contact_type: github
-    value: ramonawalls
+  - category: Individual
+    label: Ramona Walls
+    orcid: 0000-0001-8815-0078
+    contact_details:
+      - contact_type: email
+        value: rlwalls2008@gmail.com
+      - contact_type: github
+        value: ramonawalls
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology about groups of interacting organisms such as populations
-  and communities
+description: An ontology about groups of interacting organisms such as populations and communities
 domains:
-- environment
+  - environment
 homepage_url: https://github.com/PopulationAndCommunityOntology/pco
 id: pco
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Population and Community Ontology
 products:
-- category: OntologyProduct
-  description: Population and Community Ontology in OWL format
-  format: owl
-  id: pco.owl
-  name: pco.owl
-  product_file_size: 62282
-  product_url: http://purl.obolibrary.org/obo/pco.owl
+  - category: OntologyProduct
+    description: Population and Community Ontology in OWL format
+    format: owl
+    id: pco.owl
+    name: pco.owl
+    product_file_size: 62282
+    product_url: http://purl.obolibrary.org/obo/pco.owl
+    original_source:
+      - source: pco
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/PopulationAndCommunityOntology/pco
 publications: []
 ---
+
 ## Description
 
 An ontology about groups of interacting organisms such as populations and communities

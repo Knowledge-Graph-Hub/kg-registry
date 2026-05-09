@@ -32,18 +32,27 @@ products:
     id: civic.site
     name: CIViC Web Interface
     product_url: https://civicdb.org/
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: GraphQL API for programmatic access to the CIViC database.
     id: civic.api.v2
     is_public: true
     name: CIViC GraphQL API (V2)
     product_url: https://civicdb.org/api/graphiql
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for programmatic access to the CIViC database (deprecated but still accessible).
     id: civic.api.v1
     is_public: true
     name: CIViC REST API (V1 - Deprecated)
     product_url: https://v1.civicdb.org/api
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Feature summaries, nightly version
     format: tsv
@@ -51,6 +60,9 @@ products:
     name: CIViC Features (Nightly)
     product_file_size: 171302
     product_url: https://civicdb.org/downloads/nightly/nightly-FeatureSummaries.tsv
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Variant summaries, nightly version
     format: tsv
@@ -58,6 +70,9 @@ products:
     name: CIViC Variants (Nightly)
     product_file_size: 533165
     product_url: https://civicdb.org/downloads/nightly/nightly-VariantSummaries.tsv
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Molecular Profile summaries, nightly version
     format: tsv
@@ -65,6 +80,9 @@ products:
     name: CIViC Molecular Profiles (Nightly)
     product_file_size: 621001
     product_url: https://civicdb.org/downloads/nightly/nightly-MolecularProfileSummaries.tsv
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Clinical Evidence summaries, nightly version
     format: tsv
@@ -72,6 +90,9 @@ products:
     name: CIViC Clinical Evidence (Nightly)
     product_file_size: 3711846
     product_url: https://civicdb.org/downloads/nightly/nightly-ClinicalEvidenceSummaries.tsv
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Variant Group summaries, nightly version
     format: tsv
@@ -79,6 +100,9 @@ products:
     name: CIViC Variant Groups (Nightly)
     product_file_size: 10453
     product_url: https://civicdb.org/downloads/nightly/nightly-VariantGroupSummaries.tsv
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Assertion summaries, nightly version
     format: tsv
@@ -86,6 +110,9 @@ products:
     name: CIViC Assertions (Nightly)
     product_file_size: 114011
     product_url: https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Accepted Variants, nightly version
     format: vcf
@@ -93,6 +120,9 @@ products:
     name: CIViC Accepted Variants (Nightly)
     product_file_size: 1229101
     product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted.vcf
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CIViC Accepted and Submitted Variants, nightly version
     format: vcf
@@ -100,6 +130,9 @@ products:
     name: CIViC Accepted and Submitted Variants (Nightly)
     product_file_size: 3014555
     product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted_and_submitted.vcf
+    original_source:
+      - source: civic
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

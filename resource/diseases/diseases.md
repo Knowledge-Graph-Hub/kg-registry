@@ -45,6 +45,9 @@ products:
     name: Text Mining Channel (Full)
     product_file_size: 1920661253
     product_url: https://download.jensenlab.org/human_disease_textmining_full.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Disease-gene associations from text mining channel with z-scores and confidence scores (filtered non-redundant)
     format: tsv
@@ -52,6 +55,9 @@ products:
     name: Text Mining Channel (Filtered)
     product_file_size: 48652618
     product_url: https://download.jensenlab.org/human_disease_textmining_filtered.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Disease-gene associations from manually curated knowledge channel with evidence types and confidence scores (full dataset)
     format: tsv
@@ -59,6 +65,9 @@ products:
     name: Knowledge Channel (Full)
     product_file_size: 6883980
     product_url: https://download.jensenlab.org/human_disease_knowledge_full.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Disease-gene associations from manually curated knowledge channel with evidence types and confidence scores (filtered non-redundant)
     format: tsv
@@ -66,6 +75,9 @@ products:
     name: Knowledge Channel (Filtered)
     product_file_size: 602129
     product_url: https://download.jensenlab.org/human_disease_knowledge_filtered.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Disease-gene associations from experimental data channel including cancer mutations and GWAS with source scores and confidence scores (full dataset)
     format: tsv
@@ -73,6 +85,9 @@ products:
     name: Experiments Channel (Full)
     product_file_size: 26901903
     product_url: https://download.jensenlab.org/human_disease_experiments_full.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Disease-gene associations from experimental data channel including cancer mutations and GWAS with source scores and confidence scores (filtered non-redundant)
     format: tsv
@@ -80,6 +95,9 @@ products:
     name: Experiments Channel (Filtered)
     product_file_size: 2567625
     product_url: https://download.jensenlab.org/human_disease_experiments_filtered.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Experimental integrated channel combining evidence from all sources (full dataset)
     format: tsv
@@ -87,6 +105,9 @@ products:
     name: Integrated Channel (Full)
     product_file_size: 648296693
     product_url: https://download.jensenlab.org/human_disease_integrated_full.tsv
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: targz
     description: Dictionary of human gene and disease names for the DISEASES tagger
@@ -94,6 +115,9 @@ products:
     name: DISEASES Dictionary
     product_file_size: 15984342
     product_url: https://download.jensenlab.org/diseases_dictionary.tar.gz
+    original_source:
+      - source: diseases
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
     dump_format: neo4j

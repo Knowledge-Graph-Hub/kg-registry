@@ -2,20 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
+  - category: Individual
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
+    contact_details:
+      - contact_type: email
+        value: cjmungall@lbl.gov
+      - contact_type: github
+        value: cmungall
 creation_date: '2025-09-29T00:00:00Z'
 description: An anatomical and developmental ontology for cephalopods
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/cephalopod-ontology
 id: ceph
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,25 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Cephalopod Ontology
 products:
-- category: OntologyProduct
-  description: main version
-  format: owl
-  id: ceph.owl
-  name: main version
-  product_file_size: 48794
-  product_url: http://purl.obolibrary.org/obo/ceph.owl
-- category: OntologyProduct
-  description: oboformat edition
-  format: obo
-  id: ceph.obo
-  name: oboformat edition
-  product_file_size: 82316
-  product_url: http://purl.obolibrary.org/obo/ceph.obo
+  - category: OntologyProduct
+    description: main version
+    format: owl
+    id: ceph.owl
+    name: main version
+    product_file_size: 48794
+    product_url: http://purl.obolibrary.org/obo/ceph.owl
+    original_source:
+      - source: ceph
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: oboformat edition
+    format: obo
+    id: ceph.obo
+    name: oboformat edition
+    product_file_size: 82316
+    product_url: http://purl.obolibrary.org/obo/ceph.obo
+    original_source:
+      - source: ceph
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/cephalopod-ontology
 taxon:
-- NCBITaxon:6605
+  - NCBITaxon:6605
 publications: []
 ---
+
 ## Description
 
 An anatomical and developmental ontology for cephalopods

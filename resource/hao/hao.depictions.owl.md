@@ -7,4 +7,7 @@ name: hao.depictions.owl
 product_file_size: 33370
 product_url: http://purl.obolibrary.org/obo/hao/depictions.owl
 layout: product_detail
+original_source:
+  - source: hao
+    relation_type: prov:hadPrimarySource
 ---

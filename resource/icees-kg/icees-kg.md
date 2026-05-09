@@ -49,9 +49,6 @@ products:
       - source: icees-kg
         relation_type: prov:hadPrimarySource
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-    secondary_source:
-      - source: icees-kg
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using standardized Translator protocols
     format: http
@@ -77,9 +74,6 @@ products:
       - source: icees-kg
         relation_type: prov:hadPrimarySource
     product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-    secondary_source:
-      - source: icees-kg
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Meta knowledge graph and metadata describing the data sources, node types, edge types, and predicates available in ICEES KG
     format: json
@@ -105,9 +99,6 @@ products:
       - source: icees-kg
         relation_type: prov:hadPrimarySource
     product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-    secondary_source:
-      - source: icees-kg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compatibility:
       - standard: biolink

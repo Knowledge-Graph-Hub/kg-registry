@@ -7,4 +7,7 @@ name: cvx SSSOM
 product_file_size: 128
 product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.sssom.tsv
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

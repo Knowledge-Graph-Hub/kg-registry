@@ -2,23 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
-  contact_details:
-  - contact_type: email
-    value: yongqunh@med.umich.edu
-  - contact_type: github
-    value: yongqunh
+  - category: Individual
+    label: Yongqun Oliver He
+    orcid: 0000-0001-9189-9661
+    contact_details:
+      - contact_type: email
+        value: yongqunh@med.umich.edu
+      - contact_type: github
+        value: yongqunh
 creation_date: '2025-09-29T00:00:00Z'
-description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically
-  represent and standardize various aspects of coronavirus infectious diseases, including
-  their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention,
-  and treatment.
+description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically represent and standardize various aspects of coronavirus infectious diseases, including their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention, and treatment.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/cido-ontology/cido
 id: cido
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -29,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Coronavirus Infectious Disease Ontology
 products:
-- category: OntologyProduct
-  description: Coronavirus Infectious Disease Ontology in OWL format
-  format: owl
-  id: cido.owl
-  name: cido.owl
-  product_file_size: 2511321
-  product_url: http://purl.obolibrary.org/obo/cido.owl
+  - category: OntologyProduct
+    description: Coronavirus Infectious Disease Ontology in OWL format
+    format: owl
+    id: cido.owl
+    name: cido.owl
+    product_file_size: 2511321
+    product_url: http://purl.obolibrary.org/obo/cido.owl
+    original_source:
+      - source: cido
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/cido-ontology/cido
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
-  title: 'A comprehensive update on CIDO: the community-based coronavirus infectious
-    disease ontology'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+    title: 'A comprehensive update on CIDO: the community-based coronavirus infectious disease ontology'
 ---
+
 ## Description
 
 The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically represent and standardize various aspects of coronavirus infectious diseases, including their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention, and treatment.

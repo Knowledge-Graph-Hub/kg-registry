@@ -7,4 +7,7 @@ name: gecko.owl
 product_file_size: 18443
 product_url: http://purl.obolibrary.org/obo/gecko.owl
 layout: product_detail
+original_source:
+  - source: gecko
+    relation_type: prov:hadPrimarySource
 ---

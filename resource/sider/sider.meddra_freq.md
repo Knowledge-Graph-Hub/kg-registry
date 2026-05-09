@@ -1,12 +1,14 @@
 ---
 category: Product
 compression: gzip
-description: Tab-separated file containing side effect frequency information extracted
-  from drug labels using MedDRA terminology.
+description: Tab-separated file containing side effect frequency information extracted from drug labels using MedDRA terminology.
 format: tsv
 id: sider.meddra_freq
 name: SIDER MedDRA Frequency
 product_file_size: 2058445
 product_url: http://sideeffects.embl.de/media/download/meddra_freq.tsv.gz
 layout: product_detail
+original_source:
+  - source: sider
+    relation_type: prov:hadPrimarySource
 ---

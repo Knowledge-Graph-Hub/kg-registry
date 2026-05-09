@@ -8,4 +8,7 @@ name: GloBI refuted interactions (TSV)
 product_file_size: 17546643
 product_url: https://zenodo.org/record/14640564/files/refuted-interactions.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

@@ -6,4 +6,7 @@ id: evlncrnas.download
 name: Download Data
 product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/download
 layout: product_detail
+original_source:
+  - source: evlncrnas
+    relation_type: prov:hadPrimarySource
 ---

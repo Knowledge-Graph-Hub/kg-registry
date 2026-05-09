@@ -24,8 +24,5 @@ original_source:
   - source: icees-kg
     relation_type: prov:hadPrimarySource
 product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-secondary_source:
-  - source: icees-kg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

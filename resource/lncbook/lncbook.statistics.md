@@ -6,4 +6,7 @@ id: lncbook.statistics
 name: Statistics Page
 product_url: https://ngdc.cncb.ac.cn/lncbook/statistics
 layout: product_detail
+original_source:
+  - source: lncbook
+    relation_type: prov:hadPrimarySource
 ---

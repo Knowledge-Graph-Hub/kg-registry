@@ -7,4 +7,7 @@ name: Uberon basic
 product_file_size: 12146722
 product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
 layout: product_detail
+original_source:
+  - source: uberon
+    relation_type: prov:hadPrimarySource
 ---

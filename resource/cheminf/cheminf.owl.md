@@ -7,4 +7,7 @@ name: cheminf.owl
 product_file_size: 22830
 product_url: http://purl.obolibrary.org/obo/cheminf.owl
 layout: product_detail
+original_source:
+  - source: cheminf
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: plana.owl
 product_file_size: 178099
 product_url: http://purl.obolibrary.org/obo/plana.owl
 layout: product_detail
+original_source:
+  - source: plana
+    relation_type: prov:hadPrimarySource
 ---

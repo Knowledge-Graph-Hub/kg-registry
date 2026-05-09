@@ -6,4 +6,7 @@ id: ribovision.expansion-segments
 name: Expansion Segment Annotations
 product_url: https://ribovision2.chemistry.gatech.edu/
 layout: product_detail
+original_source:
+  - source: ribovision
+    relation_type: prov:hadPrimarySource
 ---

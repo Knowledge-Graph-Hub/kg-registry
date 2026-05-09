@@ -6,4 +6,7 @@ id: gene2phenotype.api.schema
 name: Gene2Phenotype API Schema
 product_url: https://www.ebi.ac.uk/gene2phenotype/api/schema/
 layout: product_detail
+original_source:
+  - source: gene2phenotype
+    relation_type: prov:hadPrimarySource
 ---

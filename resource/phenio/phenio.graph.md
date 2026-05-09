@@ -16,8 +16,5 @@ original_source:
 product_file_size: 47081100
 product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
 repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
-secondary_source:
-  - source: phenio
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

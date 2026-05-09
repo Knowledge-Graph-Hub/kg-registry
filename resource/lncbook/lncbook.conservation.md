@@ -6,4 +6,7 @@ id: lncbook.conservation
 name: Conservation Browser
 product_url: https://ngdc.cncb.ac.cn/lncbook/omics/conservation
 layout: product_detail
+original_source:
+  - source: lncbook
+    relation_type: prov:hadPrimarySource
 ---

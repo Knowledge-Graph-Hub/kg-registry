@@ -16,10 +16,9 @@ node_count: 28023
 original_source:
   - source: geneticskp
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
 versions:
   - '2026_03_27'
   - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6

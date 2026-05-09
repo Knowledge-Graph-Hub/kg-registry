@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: egon.willighagen@gmail.com
-  - contact_type: github
-    value: egonw
-  label: Egon Willighagen
-  orcid: 0000-0001-7542-0286
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: egon.willighagen@gmail.com
+      - contact_type: github
+        value: egonw
+    label: Egon Willighagen
+    orcid: 0000-0001-7542-0286
 creation_date: '2025-09-29T00:00:00Z'
-description: Includes terms for the descriptors commonly used in cheminformatics software
-  applications and the algorithms which generate them.
+description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://github.com/semanticchemistry/semanticchemistry
 id: cheminf
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,56 +26,55 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Chemical Information Ontology
 products:
-- category: OntologyProduct
-  description: Chemical Information Ontology in OWL format
-  format: owl
-  id: cheminf.owl
-  name: cheminf.owl
-  product_file_size: 22830
-  product_url: http://purl.obolibrary.org/obo/cheminf.owl
-- category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cito
-  - relation_type: prov:hadPrimarySource
-    source: fabio
-  - relation_type: prov:hadPrimarySource
-    source: dc
-  - relation_type: prov:hadPrimarySource
-    source: cheminf
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  - relation_type: prov:hadPrimarySource
-    source: chemont
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  - relation_type: prov:hadPrimarySource
-    source: pubmed
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: forum
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-05-04: FTP error: timed
-    out'
-  - 'File was not able to be retrieved when checked on 2026-05-09: FTP error: timed
-    out'
+  - category: OntologyProduct
+    description: Chemical Information Ontology in OWL format
+    format: owl
+    id: cheminf.owl
+    name: cheminf.owl
+    product_file_size: 22830
+    product_url: http://purl.obolibrary.org/obo/cheminf.owl
+    original_source:
+      - source: cheminf
+        relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    description: Downloadable knowledge graph dump in TAR/GZ format containing complete FORUM data
+    id: forum.graph.dump
+    name: FORUM Knowledge Graph Dump
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: mesh
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cito
+      - relation_type: prov:hadPrimarySource
+        source: fabio
+      - relation_type: prov:hadPrimarySource
+        source: dc
+      - relation_type: prov:hadPrimarySource
+        source: cheminf
+      - relation_type: prov:hadPrimarySource
+        source: skos
+      - relation_type: prov:hadPrimarySource
+        source: chemont
+      - relation_type: prov:hadPrimarySource
+        source: pubchem
+      - relation_type: prov:hadPrimarySource
+        source: pubmed
+    product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+    secondary_source:
+      - relation_type: prov:wasInfluencedBy
+        source: forum
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed out
+      - 'File was not able to be retrieved when checked on 2026-05-04: FTP error: timed out'
+      - 'File was not able to be retrieved when checked on 2026-05-09: FTP error: timed out'
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21991315
-  title: 'The chemical information ontology: provenance and disambiguation for chemical
-    data on the biological semantic web'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21991315
+    title: 'The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web'
 repository: https://github.com/semanticchemistry/semanticchemistry
 ---
+
 ## Description
 
 Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.

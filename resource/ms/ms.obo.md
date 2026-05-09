@@ -7,4 +7,7 @@ name: ms.obo
 product_file_size: 1143028
 product_url: http://purl.obolibrary.org/obo/ms.obo
 layout: product_detail
+original_source:
+  - source: ms
+    relation_type: prov:hadPrimarySource
 ---

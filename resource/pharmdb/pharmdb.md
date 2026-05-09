@@ -18,10 +18,16 @@ products:
     id: pharmdb.portal
     name: PharmDB Portal
     product_url: http://www.pharmdb-k.org/
+    original_source:
+      - source: pharmdb
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets, diseases, and associations
     id: pharmdb.graph
     name: PharmDB-K Graph
+    original_source:
+      - source: pharmdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological entities and their associations
     id: bioteque.embeddings

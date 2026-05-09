@@ -5,6 +5,8 @@ format: http
 id: genecards.pathway.data
 name: GeneCards Pathway Data
 original_source:
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: reactome
     relation_type: prov:hadPrimarySource
   - source: wikipathways

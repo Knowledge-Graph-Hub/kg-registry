@@ -31,6 +31,9 @@ products:
     id: medi.release
     name: MEDI Dataset Releases
     product_url: https://github.com/everycure-org/matrix-indication-list/releases
+    original_source:
+      - source: medi
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/everycure-org/matrix-indication-list
 taxon:
   - NCBITaxon:9606

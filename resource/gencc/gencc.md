@@ -12,7 +12,7 @@ contacts:
 creation_date: '2025-11-08T00:00:00Z'
 description: The Gene Curation Coalition (GenCC) is a global collaborative effort to harmonize gene-disease validity curation across multiple expert organizations and clinical testing laboratories. GenCC brings together leading resources including ClinGen, OMIM, Orphanet, DECIPHER, Genomics England PanelApp, and multiple clinical diagnostic laboratories to standardize terminology and share gene-disease validity assertions publicly. The coalition was formed in 2018 to address the lack of universal standards and terminologies for defining gene-disease relationships used in genomic medicine and research. Through a modified Delphi survey involving the international genetics community, GenCC established consensus terminology for grading gene-disease validity, including standardized terms such as Definitive, Strong, Moderate, Limited, Disputed Evidence, Refuted Evidence, No Known Disease Relationship, and Animal Model Only. The GenCC database provides curated gene-disease validity assertions with a focus on monogenic Mendelian diseases, including information on mode of inheritance, classification confidence level, supporting evidence, and links to detailed curations from member organizations.
 domains:
-- genomics
+  - genomics
 id: "gencc"
 infores_id: "gencc"
 last_modified_date: '2026-04-16T00:00:00Z'
@@ -29,18 +29,27 @@ products:
     id: "gencc.database"
     name: GenCC Database
     product_url: https://search.thegencc.org/
+    original_source:
+      - source: gencc
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive web-based search and browse interface at search.thegencc.org allowing users to filter gene-disease assertions by gene symbol, disease, submitter, and validity classification
     format: http
     id: "gencc.search_interface"
     name: GenCC Search Interface
     product_url: https://search.thegencc.org/
+    original_source:
+      - source: gencc
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Freely available downloadable datasets in multiple formats (XLSX, XLS, TSV, CSV) containing all GenCC gene-disease assertions with comprehensive metadata under CC0 1.0 Public Domain Dedication
     format: http
     id: "gencc.downloads"
     name: GenCC Data Downloads
     product_url: https://search.thegencc.org/download
+    original_source:
+      - source: gencc
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - Marina T. DiStefano

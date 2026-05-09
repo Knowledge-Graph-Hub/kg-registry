@@ -7,4 +7,7 @@ name: gsso.obo
 product_file_size: 969731
 product_url: http://purl.obolibrary.org/obo/gsso.obo
 layout: product_detail
+original_source:
+  - source: gsso
+    relation_type: prov:hadPrimarySource
 ---

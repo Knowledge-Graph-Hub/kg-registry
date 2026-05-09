@@ -7,4 +7,7 @@ name: spd.owl
 product_file_size: 69679
 product_url: http://purl.obolibrary.org/obo/spd.owl
 layout: product_detail
+original_source:
+  - source: spd
+    relation_type: prov:hadPrimarySource
 ---

@@ -6,4 +6,7 @@ id: lncbook.variation
 name: Variation Browser
 product_url: https://ngdc.cncb.ac.cn/lncbook/omics/variation
 layout: product_detail
+original_source:
+  - source: lncbook
+    relation_type: prov:hadPrimarySource
 ---

@@ -16,10 +16,9 @@ node_count: 33443
 original_source:
   - source: pathbank
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
 versions:
   - '2026_03_27'
   - pathbank_2019-09-13_4589e2d2_2025sep1_4.3.6

@@ -39,6 +39,9 @@ products:
     id: bindingdb.all_2d
     name: BindingDB All Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_All_2D_202507_sdf.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Full dataset containing all binding measurements in BindingDB with 3D compound structures
@@ -47,6 +50,9 @@ products:
     name: BindingDB All Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_All_3D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Full dataset containing all binding measurements in BindingDB in tab-separated values format
@@ -54,6 +60,9 @@ products:
     id: bindingdb.all_tsv
     name: BindingDB All Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_All_202507_tsv.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data curated from articles by BindingDB with 2D compound structures
@@ -61,6 +70,9 @@ products:
     id: bindingdb.articles_2d
     name: BindingDB Articles Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_BindingDB_Articles_2D_202507_sdf.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data curated from articles by BindingDB with 3D compound structures
@@ -68,6 +80,9 @@ products:
     id: bindingdb.articles_3d
     name: BindingDB Articles Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_BindingDB_Articles_3D_202507_sdf.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data curated from articles by BindingDB in tab-separated values format
@@ -75,6 +90,9 @@ products:
     id: bindingdb.articles_tsv
     name: BindingDB Articles Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_BindingDB_Articles_202507_tsv.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from ChEMBL with 2D compound structures
@@ -83,6 +101,9 @@ products:
     name: BindingDB ChEMBL Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_2D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from ChEMBL with 3D compound structures
@@ -91,6 +112,9 @@ products:
     name: BindingDB ChEMBL Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_3D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from ChEMBL in tab-separated values format
@@ -98,6 +122,9 @@ products:
     id: bindingdb.chembl_tsv
     name: BindingDB ChEMBL Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_202507_tsv.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from Patents with 2D compound structures
@@ -105,6 +132,9 @@ products:
     id: bindingdb.patents_2d
     name: BindingDB Patents Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_2D_202507_sdf.zip
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from Patents with 3D compound structures
@@ -113,6 +143,9 @@ products:
     name: BindingDB Patents Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_3D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from Patents in tab-separated values format
@@ -121,6 +154,9 @@ products:
     name: BindingDB Patents Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_202507_tsv.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from PubChem with 2D compound structures
@@ -129,6 +165,9 @@ products:
     name: BindingDB PubChem Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_2D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from PubChem with 3D compound structures
@@ -137,6 +176,9 @@ products:
     name: BindingDB PubChem Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_3D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from PubChem in tab-separated values format
@@ -145,6 +187,9 @@ products:
     name: BindingDB PubChem Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_202507_tsv.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: COVID-19 related binding data with 2D compound structures
@@ -153,6 +198,9 @@ products:
     name: BindingDB COVID-19 Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_2D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: COVID-19 related binding data with 3D compound structures
@@ -161,6 +209,9 @@ products:
     name: BindingDB COVID-19 Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_3D_202507_sdf.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: zip
     description: COVID-19 related binding data in tab-separated values format
@@ -169,6 +220,9 @@ products:
     name: BindingDB COVID-19 Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_202507_tsv.zip
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FASTA format protein sequences of all protein targets in BindingDB
     format: fasta
@@ -176,41 +230,62 @@ products:
     name: BindingDB Target Sequences
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDBTargetSequences.fasta
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to PubChem CIDs
     id: bindingdb.cid_mapping
     name: BindingDB-PubChem CID Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CID.txt
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to PubChem SIDs
     id: bindingdb.sid_mapping
     name: BindingDB-PubChem SID Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_SID.txt
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to ChEBI IDs
     id: bindingdb.chebi_mapping
     name: BindingDB-ChEBI Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CHEBI_ID.txt
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to DrugBank IDs
     id: bindingdb.drugbank_mapping
     name: BindingDB-DrugBank Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_DrugBankID.txt
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping of BindingDB polymer (single protein) IDs to UniProt IDs
     id: bindingdb.uniprot_mapping
     name: BindingDB-UniProt Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_UniProt.txt
     warnings: []
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful web services for programmatic access to BindingDB data
     id: bindingdb.api
     name: BindingDB RESTful API
     product_url: https://www.bindingdb.org/rwd/bind/BindingDBRESTfulAPI.jsp
+    original_source:
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

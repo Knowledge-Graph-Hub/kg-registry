@@ -6,4 +6,7 @@ id: chebi.obo
 name: chebi.obo
 product_url: http://purl.obolibrary.org/obo/chebi.obo
 layout: product_detail
+original_source:
+  - source: chebi
+    relation_type: prov:hadPrimarySource
 ---

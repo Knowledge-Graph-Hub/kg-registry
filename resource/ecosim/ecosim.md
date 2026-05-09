@@ -25,9 +25,6 @@ products:
     description: OWL release of ecosim
     category: Product
     format: owl
-    secondary_source:
-      - source: ecosim
-        relation_type: prov:wasInfluencedBy
     original_source:
       - source: ecosim
         relation_type: prov:hadPrimarySource

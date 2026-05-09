@@ -33,6 +33,8 @@ products:
     id: alzkb.browser
     name: AlzKB Graph Database Browser
     original_source:
+      - source: alzkb
+        relation_type: prov:hadPrimarySource
       - source: aop-db
         relation_type: prov:hadPrimarySource
       - source: bgee
@@ -75,8 +77,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://alzkb.ai:7473/login
     secondary_source:
-      - source: alzkb
-        relation_type: prov:wasInfluencedBy
       - source: hetionet
         relation_type: prov:wasInfluencedBy
   - category: GraphProduct
@@ -84,6 +84,8 @@ products:
     id: alzkb.data
     name: AlzKB Data Release (Version 2.0.0)
     original_source:
+      - source: alzkb
+        relation_type: prov:hadPrimarySource
       - source: aop-db
         relation_type: prov:hadPrimarySource
       - source: bgee
@@ -116,8 +118,6 @@ products:
         relation_type: prov:hadPrimarySource
       - source: reactome
         relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
       - source: sider
         relation_type: prov:hadPrimarySource
       - source: tissues
@@ -128,8 +128,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
     secondary_source:
-      - source: alzkb
-        relation_type: prov:wasInfluencedBy
       - source: hetionet
         relation_type: prov:wasInfluencedBy
 publications:

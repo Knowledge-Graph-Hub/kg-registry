@@ -7,4 +7,7 @@ name: to.owl
 product_file_size: 213609
 product_url: http://purl.obolibrary.org/obo/to.owl
 layout: product_detail
+original_source:
+  - source: to
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,4 +8,7 @@ name: GloBI interactions RDF (N-Quads)
 product_file_size: 13113796760
 product_url: https://zenodo.org/record/14640564/files/interactions.nq.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

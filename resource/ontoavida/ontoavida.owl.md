@@ -7,4 +7,7 @@ name: OWL
 product_file_size: 472853
 product_url: http://purl.obolibrary.org/obo/ontoavida.owl
 layout: product_detail
+original_source:
+  - source: ontoavida
+    relation_type: prov:hadPrimarySource
 ---

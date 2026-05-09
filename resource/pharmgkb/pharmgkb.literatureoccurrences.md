@@ -8,4 +8,7 @@ name: PharmKB Literature Occurrences
 product_file_size: 1918901
 product_url: https://api.pharmgkb.org/v1/download/file/data/occurrences.zip
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: ohpi.owl
 product_file_size: 1482262
 product_url: http://purl.obolibrary.org/obo/ohpi.owl
 layout: product_detail
+original_source:
+  - source: ohpi
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,19 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Mathias Brochhausen
-  orcid: 0000-0003-1834-3856
-  contact_details:
-  - contact_type: email
-    value: mbrochhausen@gmail.com
+  - category: Individual
+    label: Mathias Brochhausen
+    orcid: 0000-0003-1834-3856
+    contact_details:
+      - contact_type: email
+        value: mbrochhausen@gmail.com
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontological version of MIABIS (Minimum Information About BIobank data
-  Sharing)
+description: An ontological version of MIABIS (Minimum Information About BIobank data Sharing)
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/OMIABIS/omiabis-dev
 id: omiabis
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -25,16 +24,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontologized MIABIS
 products:
-- category: OntologyProduct
-  description: Ontologized MIABIS in OWL format
-  format: owl
-  id: omiabis.owl
-  name: omiabis.owl
-  product_file_size: 109985
-  product_url: http://purl.obolibrary.org/obo/omiabis.owl
+  - category: OntologyProduct
+    description: Ontologized MIABIS in OWL format
+    format: owl
+    id: omiabis.owl
+    name: omiabis.owl
+    product_file_size: 109985
+    product_url: http://purl.obolibrary.org/obo/omiabis.owl
+    original_source:
+      - source: omiabis
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/OMIABIS/omiabis-dev
 publications: []
 ---
+
 ## Description
 
 An ontological version of MIABIS (Minimum Information About BIobank data Sharing)

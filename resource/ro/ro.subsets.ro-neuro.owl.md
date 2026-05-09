@@ -7,4 +7,7 @@ name: Neuroscience subset
 product_file_size: 5164
 product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl
 layout: product_detail
+original_source:
+  - source: ro
+    relation_type: prov:hadPrimarySource
 ---

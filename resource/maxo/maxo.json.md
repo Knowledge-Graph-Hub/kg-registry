@@ -7,4 +7,7 @@ name: maxo.json
 product_file_size: 9856275
 product_url: http://purl.obolibrary.org/obo/maxo.json
 layout: product_detail
+original_source:
+  - source: maxo
+    relation_type: prov:hadPrimarySource
 ---

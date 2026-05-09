@@ -4,6 +4,8 @@ description: Causal Activity Model graphs automatically generated from Reactome 
 id: cam-kp.reactome-cams
 name: Reactome Pathway CAMs
 original_source:
+  - source: cam-kp
+    relation_type: prov:hadPrimarySource
   - source: reactome
     relation_type: prov:hadPrimarySource
 layout: product_detail

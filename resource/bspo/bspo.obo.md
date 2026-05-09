@@ -7,4 +7,7 @@ name: bspo.obo
 product_file_size: 27154
 product_url: http://purl.obolibrary.org/obo/bspo.obo
 layout: product_detail
+original_source:
+  - source: bspo
+    relation_type: prov:hadPrimarySource
 ---

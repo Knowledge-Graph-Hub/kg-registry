@@ -5,4 +5,7 @@ id: wikipathways.sparql
 name: WikiPathways SPARQL Endpoint
 product_url: https://sparql.wikipathways.org/
 layout: product_detail
+original_source:
+  - source: wikipathways
+    relation_type: prov:hadPrimarySource
 ---

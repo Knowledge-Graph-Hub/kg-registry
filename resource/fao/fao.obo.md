@@ -7,4 +7,7 @@ name: fao.obo
 product_file_size: 9190
 product_url: http://purl.obolibrary.org/obo/fao.obo
 layout: product_detail
+original_source:
+  - source: fao
+    relation_type: prov:hadPrimarySource
 ---

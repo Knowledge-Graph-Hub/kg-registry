@@ -8,4 +8,7 @@ name: Wikidata RDF Full Dump (Turtle)
 product_file_size: 149370935070
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: eupath.owl
 product_file_size: 438457
 product_url: http://purl.obolibrary.org/obo/eupath.owl
 layout: product_detail
+original_source:
+  - source: eupath
+    relation_type: prov:hadPrimarySource
 ---

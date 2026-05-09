@@ -6,4 +6,7 @@ id: smart.portal
 name: SMART Portal
 product_url: https://smart.embl.de/
 layout: product_detail
+original_source:
+  - source: smart
+    relation_type: prov:hadPrimarySource
 ---

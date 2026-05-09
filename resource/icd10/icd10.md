@@ -35,12 +35,18 @@ products:
     id: icd10.browser
     name: ICD-10 Browser
     product_url: https://icd.who.int/browse10
+    original_source:
+      - source: icd10
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Official ICD-10 classification files and documentation available for download
     format: txt
     id: icd10.downloads
     name: ICD-10 Downloads
     product_url: https://www.who.int/standards/classifications/classification-of-diseases
+    original_source:
+      - source: icd10
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Training materials and courses for learning ICD-10 coding and classification
     format: http
@@ -50,6 +56,9 @@ products:
     warnings:
       - File was not able to be retrieved when checked on 2025-12-07_ Error connecting to URL_ HTTPSConnectionPool(host='icd.who.int', port=443)_ Max retries exceeded with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
       - File was not able to be retrieved when checked on 2025-12-05_ Error connecting to URL_ HTTPSConnectionPool(host='icd.who.int', port=443)_ Max retries exceeded with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+    original_source:
+      - source: icd10
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps SNOMED CT concepts to ICD-10-CM codes.
     id: snomedct.icd10cm.map

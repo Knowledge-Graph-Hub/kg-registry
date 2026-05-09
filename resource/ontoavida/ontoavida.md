@@ -2,23 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Miguel A. Fortuna
-  orcid: 0000-0002-8374-1941
-  contact_details:
-  - contact_type: email
-    value: fortuna@ebd.csic.es
-  - contact_type: github
-    value: miguelfortuna
+  - category: Individual
+    label: Miguel A. Fortuna
+    orcid: 0000-0002-8374-1941
+    contact_details:
+      - contact_type: email
+        value: fortuna@ebd.csic.es
+      - contact_type: github
+        value: miguelfortuna
 creation_date: '2025-09-29T00:00:00Z'
-description: OntoAvida develops an integrated vocabulary for the description of the
-  most widely-used computational approach for studying evolution using digital organisms
-  (i.e., self-replicating computer programs that evolve within a user-defined computational
-  environment).
+description: OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment).
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://gitlab.com/fortunalab/ontoavida
 id: ontoavida
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -29,25 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: 'OntoAvida: ontology for Avida digital evolution platform'
 products:
-- category: OntologyProduct
-  description: The main ontology in OWL
-  format: owl
-  id: ontoavida.owl
-  name: OWL
-  product_file_size: 472853
-  product_url: http://purl.obolibrary.org/obo/ontoavida.owl
-- category: OntologyProduct
-  description: Equivalent to ontoavida.owl, in obo format
-  format: obo
-  id: ontoavida.obo
-  name: OBO
-  product_file_size: 240082
-  product_url: http://purl.obolibrary.org/obo/ontoavida.obo
+  - category: OntologyProduct
+    description: The main ontology in OWL
+    format: owl
+    id: ontoavida.owl
+    name: OWL
+    product_file_size: 472853
+    product_url: http://purl.obolibrary.org/obo/ontoavida.owl
+    original_source:
+      - source: ontoavida
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Equivalent to ontoavida.owl, in obo format
+    format: obo
+    id: ontoavida.obo
+    name: OBO
+    product_file_size: 240082
+    product_url: http://purl.obolibrary.org/obo/ontoavida.obo
+    original_source:
+      - source: ontoavida
+        relation_type: prov:hadPrimarySource
 repository: https://gitlab.com/fortunalab/ontoavida
 publications:
-- id: https://doi.org/10.1038/s41597-023-02514-3
-  title: Ontology for the Avida digital evolution platform
+  - id: https://doi.org/10.1038/s41597-023-02514-3
+    title: Ontology for the Avida digital evolution platform
 ---
+
 ## Description
 
 OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment).

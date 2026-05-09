@@ -33,6 +33,9 @@ products:
     name: geo.owl
     product_file_size: 17397
     product_url: http://purl.obolibrary.org/obo/geo.owl
+    original_source:
+      - source: geo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

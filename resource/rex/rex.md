@@ -2,13 +2,12 @@
 activity_status: orphaned
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts: []
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of physico-chemical processes, i.e. physico-chemical changes
-  occurring in course of time.
+description: An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: http://purl.obolibrary.org/obo/rex.owl
 id: rex
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -18,19 +17,21 @@ license:
   label: Not specified
 name: Physico-chemical process
 products:
-- category: OntologyProduct
-  description: Physico-chemical process in OWL format
-  format: owl
-  id: rex.owl
-  name: rex.owl
-  product_url: http://purl.obolibrary.org/obo/rex.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Physico-chemical process in OWL format
+    format: owl
+    id: rex.owl
+    name: rex.owl
+    product_url: http://purl.obolibrary.org/obo/rex.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: rex
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.

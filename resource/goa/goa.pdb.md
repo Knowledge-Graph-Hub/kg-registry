@@ -5,9 +5,11 @@ format: txt
 id: goa.pdb
 name: PDB GOA Annotations
 original_source:
-  - source: pdbe
-    relation_type: prov:hadPrimarySource
   - source: go
+    relation_type: prov:hadPrimarySource
+  - source: goa
+    relation_type: prov:hadPrimarySource
+  - source: pdbe
     relation_type: prov:hadPrimarySource
 product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
 warnings:

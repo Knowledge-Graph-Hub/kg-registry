@@ -10,4 +10,7 @@ name: gtdb OWL
 product_file_size: 3186823
 product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

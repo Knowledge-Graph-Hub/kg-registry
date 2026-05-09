@@ -32,10 +32,9 @@ products:
     original_source:
       - source: alliance
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -56,10 +55,9 @@ products:
     original_source:
       - source: bgee
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -80,10 +78,9 @@ products:
     original_source:
       - source: bindingdb
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -104,10 +101,9 @@ products:
     original_source:
       - source: chembl
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -128,10 +124,9 @@ products:
     original_source:
       - source: cohd
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
     latest_version: '2026_03_12'
     versions:
       - '2026_03_12'
@@ -152,10 +147,9 @@ products:
     original_source:
       - source: ctd
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -176,10 +170,9 @@ products:
     original_source:
       - source: ctkp
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -200,10 +193,9 @@ products:
     original_source:
       - source: drug-approvals-kp
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/dakp/latest/
     latest_version: '2026_03_19'
     versions:
       - '2026_03_19'
@@ -224,10 +216,9 @@ products:
     original_source:
       - source: dgidb
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/dgidb/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -248,10 +239,9 @@ products:
     original_source:
       - source: diseases
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
     latest_version: '2026_03_19'
     versions:
       - '2026_03_19'
@@ -272,10 +262,9 @@ products:
     original_source:
       - source: drugrephub
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/drug_rep_hub/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -296,10 +285,9 @@ products:
     original_source:
       - source: drugcentral
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
     latest_version: '2026_03_19'
     versions:
       - '2026_03_19'
@@ -320,10 +308,9 @@ products:
     original_source:
       - source: gene2phenotype
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -344,10 +331,9 @@ products:
     original_source:
       - source: geneticskp
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -368,10 +354,9 @@ products:
     original_source:
       - source: go-cam
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -392,10 +377,9 @@ products:
     original_source:
       - source: goa
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -416,10 +400,9 @@ products:
     original_source:
       - source: gtopdb
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
     latest_version: '2026_03_19'
     versions:
       - '2026_03_19'
@@ -440,10 +423,9 @@ products:
     original_source:
       - source: hp
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -464,10 +446,9 @@ products:
     original_source:
       - source: icees-kg
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
     latest_version: '2026_03_12'
     versions:
       - '2026_03_12'
@@ -488,10 +469,9 @@ products:
     original_source:
       - source: intact
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -512,10 +492,9 @@ products:
     original_source:
       - source: panther
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -536,10 +515,9 @@ products:
     original_source:
       - source: pathbank
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/pathbank/latest/
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -560,10 +538,9 @@ products:
     original_source:
       - source: semmeddb
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -584,10 +561,9 @@ products:
     original_source:
       - source: sider
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -608,10 +584,9 @@ products:
     original_source:
       - source: signor
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -632,10 +607,9 @@ products:
     original_source:
       - source: text-mining-kp
         relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
-    secondary_source:
       - source: translator
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/tmkp/latest/
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -668,17 +642,15 @@ products:
         relation_type: prov:hadPrimarySource
       - source: ctkp
         relation_type: prov:hadPrimarySource
-      - source: drug-approvals-kp
-        relation_type: prov:hadPrimarySource
       - source: dgidb
         relation_type: prov:hadPrimarySource
       - source: diseases
         relation_type: prov:hadPrimarySource
-      - source: drugrephub
+      - source: drug-approvals-kp
         relation_type: prov:hadPrimarySource
       - source: drugcentral
         relation_type: prov:hadPrimarySource
-      - source: gtopdb
+      - source: drugrephub
         relation_type: prov:hadPrimarySource
       - source: gene2phenotype
         relation_type: prov:hadPrimarySource
@@ -687,6 +659,8 @@ products:
       - source: go-cam
         relation_type: prov:hadPrimarySource
       - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
         relation_type: prov:hadPrimarySource
       - source: hp
         relation_type: prov:hadPrimarySource
@@ -708,14 +682,13 @@ products:
         relation_type: prov:hadPrimarySource
       - source: text-mining-kp
         relation_type: prov:hadPrimarySource
+      - source: translator
+        relation_type: prov:hadPrimarySource
       - source: ttd
         relation_type: prov:hadPrimarySource
       - source: ubergraph
         relation_type: prov:hadPrimarySource
     product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'
@@ -734,12 +707,11 @@ products:
     id: translator.ttd.graph
     name: Translator TTD KGX Graph
     original_source:
+      - source: translator
+        relation_type: prov:hadPrimarySource
       - source: ttd
         relation_type: prov:hadPrimarySource
     product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
     latest_version: '2026_03_06'
     versions:
       - '2026_03_06'
@@ -758,12 +730,11 @@ products:
     id: translator.ubergraph.graph
     name: Translator Ubergraph KGX Graph
     original_source:
+      - source: translator
+        relation_type: prov:hadPrimarySource
       - source: ubergraph
         relation_type: prov:hadPrimarySource
     product_url: https://kgx-storage.rtx.ai/releases/ubergraph/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
     latest_version: '2026_03_27'
     versions:
       - '2026_03_27'

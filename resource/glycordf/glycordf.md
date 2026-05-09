@@ -44,12 +44,18 @@ products:
     name: GlycoRDF Ontology (OWL)
     product_file_size: 32914
     product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology
     format: http
     id: glycordf.bioportal
     name: GlycoRDF BioPortal Entry
     product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive documentation of the GlycoRDF ontology classes, predicates, and usage examples
     format: doc
@@ -57,30 +63,45 @@ products:
     name: GlycoRDF Documentation
     product_file_size: 62492
     product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/documentation.docx
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Official project homepage with overview, documentation, and links to database implementations
     format: http
     id: glycordf.homepage
     name: GlycoRDF Project Homepage
     product_url: http://www.glycoinfo.org/GlycoRDF/
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: GitHub repository containing ontology files, documentation, and source code for RDF generation
     format: http
     id: glycordf.github
     name: GlycoRDF GitHub Repository
     product_url: https://github.com/glycoinfo/GlycoRDF
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Wiki with developer information, database provider documentation, and implementation guidelines
     format: http
     id: glycordf.wiki
     name: GlycoRDF Wiki
     product_url: https://github.com/ReneRanzinger/GlycoRDF/wiki
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: Java source code for generating GlycoRDF data from glycomics databases
     format: java
     id: glycordf.java-source
     name: GlycoRDF Java Source Code
     repository: https://github.com/glycoinfo/GlycoRDF
+    original_source:
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

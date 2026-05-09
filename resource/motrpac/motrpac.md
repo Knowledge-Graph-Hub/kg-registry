@@ -33,60 +33,90 @@ products:
     id: motrpac.data-browser
     name: MoTrPAC Data Browser
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Phenotypic data from young adult rats (6-month old) that performed endurance exercise training
     format: csv
     id: motrpac.phenotype
     name: Rat Young Adult Endurance Training - Phenotype Data
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Epigenomics data including ATAC-seq and RRBS analyses, sample-level metadata, QC, and quantitative results across tissues
     format: csv
     id: motrpac.epigenomics
     name: Rat Young Adult Endurance Training - Epigenomics Data
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: RNA-seq analyses, sample-level metadata, QC, and quantitative results across tissues
     format: csv
     id: motrpac.transcriptomics
     name: Rat Young Adult Endurance Training - Transcriptomics Data
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Untargeted proteomics data including Acetyl Proteomics, Global Proteomics, Phosphoproteomics, and Protein Ubiquitination analyses across tissues
     format: csv
     id: motrpac.proteomics-untargeted
     name: Rat Young Adult Endurance Training - Proteomics (Untargeted)
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Untargeted metabolomics analyses, sample-level metadata, QC, and quantitative results across tissues
     format: csv
     id: motrpac.metabolomics-untargeted
     name: Rat Young Adult Endurance Training - Metabolomics (Untargeted)
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Targeted metabolomics analyses, sample-level metadata, QC, and quantitative results across tissues
     format: csv
     id: motrpac.metabolomics-targeted
     name: Rat Young Adult Endurance Training - Metabolomics (Targeted)
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Targeted proteomics immunoassay data with analyses, sample-level metadata, QC, and quantitative results across tissues
     format: csv
     id: motrpac.proteomics-targeted
     name: Rat Young Adult Endurance Training - Proteomics (Targeted/Immunoassay)
     product_url: https://motrpac-data.org/data-download
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Video tutorials demonstrating how to use the MoTrPAC Data Hub and access datasets
     format: http
     id: motrpac.video-tutorials
     name: MoTrPAC Data Hub Video Tutorials
     product_url: https://motrpac-data.org/
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Main portal for the MoTrPAC Data Hub providing access to data downloads, documentation, and visualization tools
     format: http
     id: motrpac.data-hub
     name: MoTrPAC Data Hub Portal
     product_url: https://motrpac-data.org/
+    original_source:
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j
@@ -368,7 +398,7 @@ The complete young adult rat endurance training dataset is publicly available, r
 1. **Phenotypic Data**: Comprehensive phenotypic measurements and metadata from trained animals
 2. **Epigenomics**: ATAC-seq and RRBS (Reduced Representation Bisulfite Sequencing) data
 3. **Transcriptomics**: RNA-seq data across all tissues
-4. **Proteomics (Untargeted)**: 
+4. **Proteomics (Untargeted)**:
    - Acetyl Proteomics
    - Global Proteomics
    - Phosphoproteomics

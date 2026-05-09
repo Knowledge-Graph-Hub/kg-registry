@@ -11,4 +11,7 @@ name: rgd OWL
 product_file_size: 6347162
 product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.owl.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

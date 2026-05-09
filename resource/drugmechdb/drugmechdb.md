@@ -32,27 +32,29 @@ products:
     latest_version: 2.0.1
     name: DrugMechDB Graph Dataset
     original_source:
-      - source: go
+      - source: chebi
         relation_type: prov:hadPrimarySource
       - source: cl
         relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
       - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: drugmechdb
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hp
         relation_type: prov:hadPrimarySource
       - source: interpro
         relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: pr
+      - source: mesh
         relation_type: prov:hadPrimarySource
       - source: ncbitaxon
         relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
       - source: reactome
         relation_type: prov:hadPrimarySource
-      - source: hp
+      - source: uberon
         relation_type: prov:hadPrimarySource
       - source: uniprot
         relation_type: prov:hadPrimarySource
@@ -69,6 +71,9 @@ products:
     id: drugmechdb.web
     name: DrugMechDB Website
     product_url: https://sulab.github.io/DrugMechDB/
+    original_source:
+      - source: drugmechdb
+        relation_type: prov:hadPrimarySource
 publications:
   - doi: 10.1038/s41597-023-02534-z
     id: doi:10.1038/s41597-023-02534-z

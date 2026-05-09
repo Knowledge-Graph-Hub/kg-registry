@@ -6,4 +6,7 @@ name: Hetionet v1.0 Neo4j
 product_file_size: 132
 product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
 layout: product_detail
+original_source:
+  - source: hetionet
+    relation_type: prov:hadPrimarySource
 ---

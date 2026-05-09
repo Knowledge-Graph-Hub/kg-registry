@@ -7,4 +7,7 @@ name: HPA Complete Data (JSON)
 product_file_size: 10840984
 product_url: https://www.proteinatlas.org/download/proteinatlas.json.gz
 layout: product_detail
+original_source:
+  - source: hpa
+    relation_type: prov:hadPrimarySource
 ---

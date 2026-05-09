@@ -7,4 +7,7 @@ name: pid.pathway OBO Graph JSON
 product_file_size: 47185
 product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

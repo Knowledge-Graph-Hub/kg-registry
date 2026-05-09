@@ -8,8 +8,5 @@ original_source:
   - source: genomickb
     relation_type: prov:hadPrimarySource
 product_url: https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
-secondary_source:
-  - source: genomickb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

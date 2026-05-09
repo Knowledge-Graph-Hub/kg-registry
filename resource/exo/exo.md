@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Anne Thessen
-  orcid: 0000-0002-2908-3327
-  contact_details:
-  - contact_type: email
-    value: annethessen@gmail.com
-  - contact_type: github
-    value: diatomsRcool
+  - category: Individual
+    label: Anne Thessen
+    orcid: 0000-0002-2908-3327
+    contact_details:
+      - contact_type: email
+        value: annethessen@gmail.com
+      - contact_type: github
+        value: diatomsRcool
 creation_date: '2025-09-29T00:00:00Z'
-description: Vocabularies for describing exposure data to inform understanding of
-  environmental health.
+description: Vocabularies for describing exposure data to inform understanding of environmental health.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/CTDbase/exposure-ontology
 id: exo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,23 +26,30 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Exposure ontology
 products:
-- category: OntologyProduct
-  description: Exposure ontology in OWL format
-  format: owl
-  id: exo.owl
-  name: exo.owl
-  product_file_size: 17786
-  product_url: http://purl.obolibrary.org/obo/exo.owl
-- category: OntologyProduct
-  description: Exposure ontology in OBO format
-  format: obo
-  id: exo.obo
-  name: exo.obo
-  product_file_size: 12690
-  product_url: http://purl.obolibrary.org/obo/exo.obo
+  - category: OntologyProduct
+    description: Exposure ontology in OWL format
+    format: owl
+    id: exo.owl
+    name: exo.owl
+    product_file_size: 17786
+    product_url: http://purl.obolibrary.org/obo/exo.owl
+    original_source:
+      - source: exo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Exposure ontology in OBO format
+    format: obo
+    id: exo.obo
+    name: exo.obo
+    product_file_size: 12690
+    product_url: http://purl.obolibrary.org/obo/exo.obo
+    original_source:
+      - source: exo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/CTDbase/exposure-ontology
 publications: []
 ---
+
 ## Description
 
 Vocabularies for describing exposure data to inform understanding of environmental health.

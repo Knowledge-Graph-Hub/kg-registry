@@ -33,6 +33,9 @@ products:
     name: ogms.owl
     product_file_size: 39126
     product_url: http://purl.obolibrary.org/obo/ogms.owl
+    original_source:
+      - source: ogms
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

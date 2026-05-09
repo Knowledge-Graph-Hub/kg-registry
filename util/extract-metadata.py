@@ -23,9 +23,9 @@ from ruamel.yaml.scanner import ScannerError
 from yamllint import config, linter
 
 try:
-    from util.source_associations import iter_source_ids
+    from util.source_associations import ensure_direct_product_primary_source, iter_source_ids
 except ModuleNotFoundError:
-    from source_associations import iter_source_ids
+    from source_associations import ensure_direct_product_primary_source, iter_source_ids
 
 __author__ = "cjm"
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -283,6 +283,43 @@ def concat_resource_yaml(args):
 
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product_for_page) + layout_string + "\n---\n")
+
+    def normalize_direct_product_sources(objs):
+        """Ensure resource-owned products use a primary-source provenance relation."""
+        updated_count = 0
+        for obj in objs:
+            resource_id = obj.get("id")
+            products = obj.get("products") if isinstance(obj.get("products"), list) else []
+            if not isinstance(resource_id, str) or not products:
+                continue
+
+            changed = False
+            for product in products:
+                if isinstance(product, dict) and ensure_direct_product_primary_source(resource_id, product):
+                    updated_count += 1
+                    changed = True
+
+            if changed:
+                fn = f"resource/{resource_id}/{resource_id}.md"
+                try:
+                    metadata, md = load_md(fn)
+                    metadata_products = (
+                        metadata.get("products")
+                        if isinstance(metadata.get("products"), list)
+                        else []
+                    )
+                    metadata_changed = False
+                    for product in metadata_products:
+                        if isinstance(product, dict) and ensure_direct_product_primary_source(resource_id, product):
+                            metadata_changed = True
+                    if metadata_changed:
+                        with open(fn, "w") as f:
+                            f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                except Exception as e:
+                    print(f"Error normalizing direct product sources for {resource_id}: {str(e)}")
+
+        if updated_count:
+            print(f"Normalized primary source relations for {updated_count} direct products")
 
     def _normalize_warning_msg(msg: str) -> str:
         """Return a normalized warning string with dates and extra whitespace removed for similarity grouping."""
@@ -1192,6 +1229,9 @@ def concat_resource_yaml(args):
 
     # Deduplicate similar product warnings (keep most recent)
     dedupe_product_warnings(objs)
+
+    # Normalize direct resource-product provenance before writing generated pages.
+    normalize_direct_product_sources(objs)
 
     # Generate product pages
     generate_product_pages(objs)

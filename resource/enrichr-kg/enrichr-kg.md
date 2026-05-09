@@ -2,24 +2,21 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: avi.maayan@mssm.edu
-  - contact_type: url
-    value: https://labs.icahn.mssm.edu/maayanlab/
-  label: Ma'ayan Laboratory
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: avi.maayan@mssm.edu
+      - contact_type: url
+        value: https://labs.icahn.mssm.edu/maayanlab/
+    label: Ma'ayan Laboratory
 creation_date: '2025-09-23T00:00:00Z'
-description: Enrichr-KG is a comprehensive knowledge graph that integrates gene set
-  enrichment analysis libraries from Enrichr, connecting genes to biological terms,
-  pathways, diseases, drugs, and other functional annotations across multiple domains
-  and species to enable multi-layered biological discovery and hypothesis generation.
+description: Enrichr-KG is a comprehensive knowledge graph that integrates gene set enrichment analysis libraries from Enrichr, connecting genes to biological terms, pathways, diseases, drugs, and other functional annotations across multiple domains and species to enable multi-layered biological discovery and hypothesis generation.
 domains:
-- biomedical
-- genomics
-- systems biology
-- drug discovery
-- biological systems
+  - biomedical
+  - genomics
+  - systems biology
+  - drug discovery
+  - biological systems
 homepage_url: https://maayanlab.cloud/enrichr-kg/
 id: enrichr-kg
 last_modified_date: '2025-09-23T00:00:00Z'
@@ -29,44 +26,51 @@ license:
   label: CC BY 4.0
 name: Enrichr-KG
 products:
-- category: GraphicalInterface
-  description: Interactive web interface for exploring the Enrichr-KG knowledge graph
-    with single and two-term search capabilities
-  format: http
-  id: enrichr-kg.portal
-  name: Enrichr-KG Explorer
-  product_url: https://maayanlab.cloud/enrichr-kg/
-- category: ProgrammingInterface
-  description: API endpoints for programmatic access to Enrichr-KG graph data and
-    enrichment analysis
-  format: http
-  id: enrichr-kg.api
-  name: Enrichr-KG API
-  product_url: https://maayanlab.cloud/enrichr-kg/api/
-- category: GraphProduct
-  description: Neo4j graph database containing integrated gene set enrichment libraries
-    with genes, terms, pathways, and functional annotations
-  dump_format: neo4j
-  format: neo4j
-  id: enrichr-kg.graph
-  name: Enrichr-KG Neo4j Database
+  - category: GraphicalInterface
+    description: Interactive web interface for exploring the Enrichr-KG knowledge graph with single and two-term search capabilities
+    format: http
+    id: enrichr-kg.portal
+    name: Enrichr-KG Explorer
+    product_url: https://maayanlab.cloud/enrichr-kg/
+    original_source:
+      - source: enrichr-kg
+        relation_type: prov:hadPrimarySource
+  - category: ProgrammingInterface
+    description: API endpoints for programmatic access to Enrichr-KG graph data and enrichment analysis
+    format: http
+    id: enrichr-kg.api
+    name: Enrichr-KG API
+    product_url: https://maayanlab.cloud/enrichr-kg/api/
+    original_source:
+      - source: enrichr-kg
+        relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    description: Neo4j graph database containing integrated gene set enrichment libraries with genes, terms, pathways, and functional annotations
+    dump_format: neo4j
+    format: neo4j
+    id: enrichr-kg.graph
+    name: Enrichr-KG Neo4j Database
+    original_source:
+      - source: enrichr-kg
+        relation_type: prov:hadPrimarySource
 publications:
-- authors:
-  - Evangelista JE
-  - Xie Z
-  - Marino GB
-  - Nguyen N
-  - Clarke DJB
-  - Ma'ayan A
-  id: doi:10.1093/nar/gkad393
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'Enrichr-KG: bridging enrichment analysis across multiple libraries'
-  year: '2023'
+  - authors:
+      - Evangelista JE
+      - Xie Z
+      - Marino GB
+      - Nguyen N
+      - Clarke DJB
+      - Ma'ayan A
+    id: doi:10.1093/nar/gkad393
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Enrichr-KG: bridging enrichment analysis across multiple libraries'
+    year: '2023'
 repository: https://github.com/MaayanLab/enrichr-kg
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # Enrichr-KG
 
 Enrichr-KG is a comprehensive knowledge graph that bridges multiple gene set enrichment analysis libraries from the Enrichr platform. The knowledge graph integrates over 200 gene set libraries spanning diverse biological domains including pathways, diseases, drugs, cell types, tissues, and functional annotations.

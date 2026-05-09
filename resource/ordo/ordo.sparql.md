@@ -5,4 +5,7 @@ id: ordo.sparql
 name: ORDO SPARQL Endpoint
 product_url: https://www.orphadata.com/ordo-sparql-endpoint/
 layout: product_detail
+original_source:
+  - source: ordo
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: pw.obo
 product_file_size: 1347597
 product_url: http://purl.obolibrary.org/obo/pw.obo
 layout: product_detail
+original_source:
+  - source: pw
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Yongqun Oliver He
-  orcid: 0000-0001-9189-9661
-  contact_details:
-  - contact_type: email
-    value: yongqunh@med.umich.edu
-  - contact_type: github
-    value: yongqunh
+  - category: Individual
+    label: Yongqun Oliver He
+    orcid: 0000-0001-9189-9661
+    contact_details:
+      - contact_type: email
+        value: yongqunh@med.umich.edu
+      - contact_type: github
+        value: yongqunh
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of interactions and interaction networks
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/INO-ontology/ino
 id: ino
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Interaction Network Ontology
 products:
-- category: OntologyProduct
-  description: Interaction Network Ontology in OWL format
-  format: owl
-  id: ino.owl
-  name: ino.owl
-  product_file_size: 56433
-  product_url: http://purl.obolibrary.org/obo/ino.owl
+  - category: OntologyProduct
+    description: Interaction Network Ontology in OWL format
+    format: owl
+    id: ino.owl
+    name: ino.owl
+    product_file_size: 56433
+    product_url: http://purl.obolibrary.org/obo/ino.owl
+    original_source:
+      - source: ino
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/INO-ontology/ino
 publications:
-- id: https://doi.org/10.1186/2041-1480-6-2
-  title: Development and application of an Interaction Network Ontology for literature
-    mining of vaccine-associated gene-gene interactions
+  - id: https://doi.org/10.1186/2041-1480-6-2
+    title: Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions
 ---
+
 ## Description
 
 An ontology of interactions and interaction networks

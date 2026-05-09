@@ -16,10 +16,9 @@ node_count: 16157
 original_source:
   - source: alliance
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
 versions:
   - '2026_03_06'
   - alliance_8.3.0_2023bb02_2025sep1_4.3.6

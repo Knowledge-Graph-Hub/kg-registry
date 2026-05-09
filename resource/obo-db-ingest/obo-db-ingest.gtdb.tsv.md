@@ -11,10 +11,9 @@ name: gtdb Nodes TSV
 original_source:
   - source: gtdb
     relation_type: prov:hadPrimarySource
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 product_file_size: 2918783
 product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.tsv.gz
-secondary_source:
-  - source: obo-db-ingest
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

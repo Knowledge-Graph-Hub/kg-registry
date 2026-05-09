@@ -6,4 +6,7 @@ is_public: true
 name: CompTox API
 product_url: https://api-ccte.epa.gov/docs/index.html
 layout: product_detail
+original_source:
+  - source: dsstox
+    relation_type: prov:hadPrimarySource
 ---

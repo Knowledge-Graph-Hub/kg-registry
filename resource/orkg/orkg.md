@@ -46,6 +46,8 @@ products:
     id: orkg.api-docs
     name: ORKG API Documentation
     original_source:
+      - source: orkg
+        relation_type: prov:hadPrimarySource
       - source: orkg.api
         relation_type: prov:hadPrimarySource
     product_url: http://tibhannover.gitlab.io/orkg/orkg-backend/api-doc/
@@ -55,6 +57,8 @@ products:
     id: orkg.python
     name: ORKG Python Package
     original_source:
+      - source: orkg
+        relation_type: prov:hadPrimarySource
       - source: orkg.api
         relation_type: prov:hadPrimarySource
     product_url: https://pypi.org/project/orkg/
@@ -117,9 +121,6 @@ products:
         relation_type: prov:hadPrimarySource
       - source: obi
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: orkg
-        relation_type: prov:wasInfluencedBy
     product_file_size: 642902930
     product_url: https://orkg.org/api/rdf/dump
 publications:

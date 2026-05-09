@@ -7,4 +7,7 @@ name: mco.obo
 product_file_size: 409757
 product_url: http://purl.obolibrary.org/obo/mco.obo
 layout: product_detail
+original_source:
+  - source: mco
+    relation_type: prov:hadPrimarySource
 ---

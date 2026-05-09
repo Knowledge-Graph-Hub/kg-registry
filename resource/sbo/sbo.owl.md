@@ -7,4 +7,7 @@ name: sbo.owl
 product_file_size: 50738
 product_url: http://purl.obolibrary.org/obo/sbo.owl
 layout: product_detail
+original_source:
+  - source: sbo
+    relation_type: prov:hadPrimarySource
 ---

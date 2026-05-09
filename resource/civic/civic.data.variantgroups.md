@@ -7,4 +7,7 @@ name: CIViC Variant Groups (Nightly)
 product_file_size: 10453
 product_url: https://civicdb.org/downloads/nightly/nightly-VariantGroupSummaries.tsv
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

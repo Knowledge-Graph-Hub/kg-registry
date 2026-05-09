@@ -7,4 +7,7 @@ name: gaz.obo
 product_file_size: 189228723
 product_url: http://purl.obolibrary.org/obo/gaz.obo
 layout: product_detail
+original_source:
+  - source: gaz
+    relation_type: prov:hadPrimarySource
 ---

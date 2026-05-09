@@ -7,4 +7,7 @@ name: ado.owl
 product_file_size: 1166665
 product_url: http://purl.obolibrary.org/obo/ado.owl
 layout: product_detail
+original_source:
+  - source: ado
+    relation_type: prov:hadPrimarySource
 ---

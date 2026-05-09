@@ -6,4 +6,7 @@ id: modomics.owl
 name: MODOMICS Ontology (OWL)
 product_url: https://genesilico.pl/modomics/download/ModifiedBases.owl
 layout: product_detail
+original_source:
+  - source: modomics
+    relation_type: prov:hadPrimarySource
 ---

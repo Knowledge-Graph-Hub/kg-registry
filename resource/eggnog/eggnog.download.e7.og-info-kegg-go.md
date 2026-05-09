@@ -8,4 +8,7 @@ name: eggNOG 7 OG Info (KEGG/GO)
 product_file_size: 967458606
 product_url: https://eggnogdb.org/public/eggnog7/e7.og_info_kegg_go.tsv.gz
 layout: product_detail
+original_source:
+  - source: eggnog
+    relation_type: prov:hadPrimarySource
 ---

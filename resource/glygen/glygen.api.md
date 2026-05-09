@@ -8,8 +8,5 @@ original_source:
   - source: glygen
     relation_type: prov:hadPrimarySource
 product_url: https://api.glygen.org/
-secondary_source:
-  - source: glygen
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

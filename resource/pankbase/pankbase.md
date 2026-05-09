@@ -34,9 +34,6 @@ products:
     name: PanKGraph
     description: Knowledge graph representation of human pancreas and diabetes data
     category: GraphProduct
-    secondary_source:
-      - source: pankbase
-        relation_type: prov:wasInfluencedBy
     original_source:
       - source: pankbase
         relation_type: prov:hadPrimarySource
@@ -45,9 +42,6 @@ products:
     description: Graphical interface for exploring the PanKGraph
     category: GraphicalInterface
     product_url: https://pankgraph.org/
-    secondary_source:
-      - source: pankbase
-        relation_type: prov:wasInfluencedBy
     original_source:
       - source: pankbase
         relation_type: prov:hadPrimarySource
@@ -58,9 +52,6 @@ products:
     description: Programming interface for exploring the PanKGraph
     category: ProgrammingInterface
     product_url: https://pankgraph.org/api
-    secondary_source:
-      - source: pankbase
-        relation_type: prov:wasInfluencedBy
     original_source:
       - source: pankbase
         relation_type: prov:hadPrimarySource
@@ -72,9 +63,6 @@ products:
     description: Programming interface for accessing contents of the PanKbase Data Portal
     category: ProgrammingInterface
     product_url: https://pankbase-db.github.io/pankbase-client-openapi-spec/
-    secondary_source:
-      - source: pankbase
-        relation_type: prov:wasInfluencedBy
     original_source:
       - source: pankbase
         relation_type: prov:hadPrimarySource

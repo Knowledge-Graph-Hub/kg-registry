@@ -29,30 +29,45 @@ products:
     id: 1000genomes.portal
     name: IGSR Portal
     product_url: https://www.internationalgenome.org/
+    original_source:
+      - source: 1000genomes
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive data portal to browse IGSR/1000 Genomes data by sample, population, technology, data type, and collection
     format: http
     id: 1000genomes.data-portal
     name: IGSR Data Portal
     product_url: https://www.internationalgenome.org/data-portal
+    original_source:
+      - source: 1000genomes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Primary FTP site hosting IGSR and 1000 Genomes Project data collections and releases
     format: http
     id: 1000genomes.ftp
     name: IGSR FTP Site
     product_url: http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/
+    original_source:
+      - source: 1000genomes
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Instructions for accessing IGSR data via Globus or Aspera (recommended for bulk transfers)
     format: http
     id: 1000genomes.globus-docs
     name: Globus Access Instructions
     product_url: https://www.internationalgenome.org/faq/what-tools-can-i-use-to-download-igsr-data
+    original_source:
+      - source: 1000genomes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Mirror of original 1000 Genomes Project data at NCBI
     format: http
     id: 1000genomes.ncbi-mirror
     name: NCBI Mirror
     product_url: https://ftp-trace.ncbi.nih.gov/1000genomes/ftp/
+    original_source:
+      - source: 1000genomes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.
     id: aop-db.data

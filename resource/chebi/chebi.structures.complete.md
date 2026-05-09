@@ -13,8 +13,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 59170179
 product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_complete_3star.sdf.gz
-secondary_source:
-  - source: chebi
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

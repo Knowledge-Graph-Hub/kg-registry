@@ -28,11 +28,17 @@ products:
     description: Database containing protein-protein interfaces, domain-domain interfaces, protein-peptide interfaces, and protein-ligand interactions based on structural data from the PDB.
     id: protcid.database
     name: ProtCID Database
+    original_source:
+      - source: protcid
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web interface for searching and visualizing protein interaction data from ProtCID.
     id: protcid.site
     name: ProtCID Web Interface
     product_url: https://dunbrack2.fccc.edu/ProtCID/Search/search.aspx
+    original_source:
+      - source: protcid
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

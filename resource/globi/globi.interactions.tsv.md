@@ -8,4 +8,7 @@ name: GloBI interpreted interactions (TSV)
 product_file_size: 3044531169
 product_url: https://zenodo.org/record/14640564/files/interactions.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

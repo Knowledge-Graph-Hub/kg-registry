@@ -7,4 +7,7 @@ name: ecto.json
 product_file_size: 1646990
 product_url: http://purl.obolibrary.org/obo/ecto.json
 layout: product_detail
+original_source:
+  - source: ecto
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: vto.owl
 product_file_size: 152582746
 product_url: http://purl.obolibrary.org/obo/vto.owl
 layout: product_detail
+original_source:
+  - source: vto
+    relation_type: prov:hadPrimarySource
 ---

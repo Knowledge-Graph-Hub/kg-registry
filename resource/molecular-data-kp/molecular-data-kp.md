@@ -28,9 +28,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 3676906360
     product_url: https://molepro.s3.amazonaws.com/nodes.tsv
-    secondary_source:
-      - source: molecular-data-kp
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: KGX edges for Molecular Data KP
     format: kgx
@@ -41,9 +38,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 20140191116
     product_url: https://molepro.s3.amazonaws.com/edges.tsv
-    secondary_source:
-      - source: molecular-data-kp
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     connection_url: https://translator.broadinstitute.org/molecular_data_provider/api
     description: Open API for Molecular Data KP
@@ -54,9 +48,6 @@ products:
       - source: molecular-data-kp
         relation_type: prov:hadPrimarySource
     product_url: https://translator.broadinstitute.org/molecular_data_provider/api
-    secondary_source:
-      - source: molecular-data-kp
-        relation_type: prov:wasInfluencedBy
 repository: https://github.com/broadinstitute/molecular-data-provider/
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'

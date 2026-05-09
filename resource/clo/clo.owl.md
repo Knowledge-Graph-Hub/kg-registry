@@ -7,4 +7,7 @@ name: clo.owl
 product_file_size: 2121232
 product_url: http://purl.obolibrary.org/obo/clo.owl
 layout: product_detail
+original_source:
+  - source: clo
+    relation_type: prov:hadPrimarySource
 ---

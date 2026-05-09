@@ -8,8 +8,5 @@ original_source:
   - source: orthodb
     relation_type: prov:hadPrimarySource
 product_url: https://www.orthodb.org/api/
-secondary_source:
-  - source: orthodb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

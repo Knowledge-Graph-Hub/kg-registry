@@ -2,17 +2,17 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Daniel Sonenshine
-  contact_details:
-  - contact_type: email
-    value: dsonensh@odu.edu
+  - category: Individual
+    label: Daniel Sonenshine
+    contact_details:
+      - contact_type: email
+        value: dsonensh@odu.edu
 creation_date: '2025-09-29T00:00:00Z'
 description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://www.vectorbase.org/ontology-browser
 id: tads
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -23,25 +23,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Tick Anatomy Ontology
 products:
-- category: OntologyProduct
-  description: Tick Anatomy Ontology in OWL format
-  format: owl
-  id: tads.owl
-  name: tads.owl
-  product_file_size: 80482
-  product_url: http://purl.obolibrary.org/obo/tads.owl
-- category: OntologyProduct
-  description: Tick Anatomy Ontology in OBO format
-  format: obo
-  id: tads.obo
-  name: tads.obo
-  product_file_size: 48576
-  product_url: http://purl.obolibrary.org/obo/tads.obo
+  - category: OntologyProduct
+    description: Tick Anatomy Ontology in OWL format
+    format: owl
+    id: tads.owl
+    name: tads.owl
+    product_file_size: 80482
+    product_url: http://purl.obolibrary.org/obo/tads.owl
+    original_source:
+      - source: tads
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Tick Anatomy Ontology in OBO format
+    format: obo
+    id: tads.obo
+    name: tads.obo
+    product_file_size: 48576
+    product_url: http://purl.obolibrary.org/obo/tads.obo
+    original_source:
+      - source: tads
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/VEuPathDB-ontology/TADS
 taxon:
-- NCBITaxon:6939
+  - NCBITaxon:6939
 publications: []
 ---
+
 ## Description
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

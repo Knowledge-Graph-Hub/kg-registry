@@ -8,12 +8,11 @@ license:
   label: CC-BY-4.0
 name: sgd Nodes TSV
 original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
   - source: sgd
     relation_type: prov:hadPrimarySource
 product_file_size: 503057
 product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
-secondary_source:
-  - source: obo-db-ingest
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

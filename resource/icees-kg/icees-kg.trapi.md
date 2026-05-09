@@ -24,8 +24,5 @@ original_source:
   - source: icees-kg
     relation_type: prov:hadPrimarySource
 product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-secondary_source:
-  - source: icees-kg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

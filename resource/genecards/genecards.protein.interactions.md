@@ -5,11 +5,13 @@ format: http
 id: genecards.protein.interactions
 name: GeneCards Protein Interactions
 original_source:
+  - source: biogrid
+    relation_type: prov:hadPrimarySource
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: intact
     relation_type: prov:hadPrimarySource
   - source: string
-    relation_type: prov:hadPrimarySource
-  - source: biogrid
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/
 warnings:

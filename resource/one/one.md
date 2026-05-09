@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Chen Yang
-  orcid: 0000-0001-9202-5309
-  contact_details:
-  - contact_type: email
-    value: chenyangnutrition@gmail.com
-  - contact_type: github
-    value: cyang0128
+  - category: Individual
+    label: Chen Yang
+    orcid: 0000-0001-9202-5309
+    contact_details:
+      - contact_type: email
+        value: chenyangnutrition@gmail.com
+      - contact_type: github
+        value: cyang0128
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology to standardize research output of nutritional epidemiologic
-  studies.
+description: An ontology to standardize research output of nutritional epidemiologic studies.
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 id: one
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for Nutritional Epidemiology
 products:
-- category: OntologyProduct
-  description: Ontology for Nutritional Epidemiology in OWL format
-  format: owl
-  id: one.owl
-  name: one.owl
-  product_file_size: 9258
-  product_url: http://purl.obolibrary.org/obo/one.owl
+  - category: OntologyProduct
+    description: Ontology for Nutritional Epidemiology in OWL format
+    format: owl
+    id: one.owl
+    name: one.owl
+    product_file_size: 9258
+    product_url: http://purl.obolibrary.org/obo/one.owl
+    original_source:
+      - source: one
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 publications: []
 ---
+
 ## Description
 
 An ontology to standardize research output of nutritional epidemiologic studies.

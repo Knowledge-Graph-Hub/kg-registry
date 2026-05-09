@@ -9,8 +9,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 18043
 product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
-secondary_source:
-  - source: hra-kg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

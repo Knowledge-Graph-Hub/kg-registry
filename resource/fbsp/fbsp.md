@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: cp390@cam.ac.uk
-  - contact_type: github
-    value: Clare72
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: cp390@cam.ac.uk
+      - contact_type: github
+        value: Clare72
+    label: Clare Pilgrim
+    orcid: 0000-0002-1373-1705
 creation_date: '2025-09-29T00:00:00Z'
-description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
-  and of other taxa referred to in FlyBase.
+description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.
 domains:
-- biological systems
+  - biological systems
 homepage_url: http://www.flybase.org/
 id: fbsp
 last_modified_date: '2026-04-16T00:00:00Z'
@@ -26,21 +25,23 @@ license:
   label: Not specified
 name: Fly taxonomy
 products:
-- category: OntologyProduct
-  description: Fly taxonomy in OWL format
-  format: owl
-  id: fbsp.owl
-  name: fbsp.owl
-  product_url: http://purl.obolibrary.org/obo/fbsp.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Fly taxonomy in OWL format
+    format: owl
+    id: fbsp.owl
+    name: fbsp.owl
+    product_url: http://purl.obolibrary.org/obo/fbsp.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: fbsp
+        relation_type: prov:hadPrimarySource
 publications: []
 taxon:
-- NCBITaxon:7227
+  - NCBITaxon:7227
 ---
+
 ## Description
 
 The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.

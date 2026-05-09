@@ -7,4 +7,7 @@ name: fypo.obo
 product_file_size: 7104105
 product_url: http://purl.obolibrary.org/obo/fypo.obo
 layout: product_detail
+original_source:
+  - source: fypo
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: vsao.owl
 product_file_size: 600603
 product_url: http://purl.obolibrary.org/obo/vsao.owl
 layout: product_detail
+original_source:
+  - source: vsao
+    relation_type: prov:hadPrimarySource
 ---

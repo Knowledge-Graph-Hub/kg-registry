@@ -7,4 +7,7 @@ name: GO (OBO Format edition)
 product_file_size: 36555702
 product_url: http://purl.obolibrary.org/obo/go.obo
 layout: product_detail
+original_source:
+  - source: go
+    relation_type: prov:hadPrimarySource
 ---

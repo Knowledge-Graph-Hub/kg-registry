@@ -7,4 +7,7 @@ name: CREEDS Manual Disease Signatures
 product_file_size: 16865407
 product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-v1.0.json
 layout: product_detail
+original_source:
+  - source: creeds
+    relation_type: prov:hadPrimarySource
 ---

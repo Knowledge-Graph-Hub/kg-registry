@@ -7,4 +7,7 @@ name: rbo.rbo-base.json
 product_file_size: 46077
 product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
 layout: product_detail
+original_source:
+  - source: rbo
+    relation_type: prov:hadPrimarySource
 ---

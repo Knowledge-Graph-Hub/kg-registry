@@ -7,4 +7,7 @@ name: eco.obo
 product_file_size: 157676
 product_url: http://purl.obolibrary.org/obo/eco.obo
 layout: product_detail
+original_source:
+  - source: eco
+    relation_type: prov:hadPrimarySource
 ---

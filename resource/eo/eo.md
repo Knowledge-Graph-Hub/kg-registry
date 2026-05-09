@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: jaiswalp@science.oregonstate.edu
-  - contact_type: github
-    value: jaiswalp
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: jaiswalp@science.oregonstate.edu
+      - contact_type: github
+        value: jaiswalp
+    label: Pankaj Jaiswal
+    orcid: 0000-0002-1005-8383
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured, controlled vocabulary which describes the treatments, growing
-  conditions, and/or study types used in plant biology experiments.
+description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domains:
-- environment
+  - environment
 homepage_url: http://planteome.org/
 id: eo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,33 +26,36 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Environment Ontology
 products:
-- category: OntologyProduct
-  description: Plant Environment Ontology in OWL format
-  format: owl
-  id: eo.owl
-  name: eo.owl
-  product_url: http://purl.obolibrary.org/obo/eo.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: Plant Environment Ontology in OBO format
-  format: obo
-  id: eo.obo
-  name: eo.obo
-  product_url: http://purl.obolibrary.org/obo/eo.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Plant Environment Ontology in OWL format
+    format: owl
+    id: eo.owl
+    name: eo.owl
+    product_url: http://purl.obolibrary.org/obo/eo.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: eo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Plant Environment Ontology in OBO format
+    format: obo
+    id: eo.obo
+    name: eo.obo
+    product_url: http://purl.obolibrary.org/obo/eo.obo
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: eo
+        relation_type: prov:hadPrimarySource
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
-  title: Ontologies as integrative tools for plant science.
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
+    title: Ontologies as integrative tools for plant science.
 repository: https://github.com/Planteome/plant-environment-ontology
 ---
+
 ## Description
 
 A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.

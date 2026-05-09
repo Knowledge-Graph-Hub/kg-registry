@@ -10,4 +10,7 @@ name: nlm OBO Graph JSON
 product_file_size: 2497051
 product_url: https://w3id.org/biopragmatics/resources/nlm/nlm.json
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

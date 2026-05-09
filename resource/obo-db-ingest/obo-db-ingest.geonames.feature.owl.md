@@ -10,4 +10,7 @@ name: geonames.feature OWL
 product_file_size: 28833
 product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

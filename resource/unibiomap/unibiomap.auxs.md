@@ -69,8 +69,6 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: inchikey
     relation_type: prov:hadPrimarySource
-  - source: unichem
-    relation_type: prov:hadPrimarySource
   - source: omim
     relation_type: prov:hadPrimarySource
 product_file_size: 591290539

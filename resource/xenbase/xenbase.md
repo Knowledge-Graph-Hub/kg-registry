@@ -25,60 +25,90 @@ products:
     id: xenbase.web-portal
     name: Xenbase Web Portal
     product_url: https://xenbase.org/xenbase/
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP site providing access to Xenopus genome assemblies, gene models, sequences, BLAST databases, and curated data reports
     format: mixed
     id: xenbase.ftp-downloads
     name: Xenbase Data Downloads
     product_url: https://xenbase.org/xenbase/static-xenbase/ftpDatafiles.jsp
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Complete genome assemblies and gene models for Xenopus laevis (v10.1) and Xenopus tropicalis (v10.0)
     format: fasta
     id: xenbase.genomes
     name: Xenopus Genome Assemblies
     product_url: https://download.xenbase.org/xenbase
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Genome browser for Xenopus laevis v10.1 with integrated genomic and expression data
     format: http
     id: xenbase.jbrowse-laevis
     name: X. laevis JBrowse Genome Browser
     product_url: https://xenbase.org/xenbase/displayJBrowse.do?data=data/xl10_1
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Genome browser for Xenopus tropicalis v10.0 with integrated genomic and expression data
     format: http
     id: xenbase.jbrowse-tropicalis
     name: X. tropicalis JBrowse Genome Browser
     product_url: https://xenbase.org/xenbase/displayJBrowse.do?data=data/xt10_0
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: BLAST search interface for Xenopus nucleotide and protein sequences
     format: http
     id: xenbase.blast
     name: Xenbase BLAST Services
     product_url: https://xenbase.org/xenbase/genomes/blast.do?database=Nucleotide/Xenla_10_1_Scaffolds
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Curated gene expression data including RNA-seq, in situ hybridization, and microarray data from GEO datasets
     format: http
     id: xenbase.expression-data
     name: Gene Expression Data
     product_url: https://xenbase.org/xenbase/geneExpression/geneExpressionSearch.do?method=display
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Comprehensive phenotype and mutant data including disease models and morphant phenotypes
     format: http
     id: xenbase.phenotype-data
     name: Phenotype and Mutant Data
     product_url: https://xenbase.org/xenbase/searchPhenotype.do?method=display
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Community wiki with protocols, methods, and resources for Xenopus research
     format: http
     id: xenbase.wiki
     name: Xenbase Community Wiki
     product_url: https://wiki.xenbase.org/xenwiki/index.php?title=Xenopus_Wiki_-_Home
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST APIs and web services for programmatic access to Xenbase data
     format: http
     id: xenbase.apis
     name: Xenbase APIs and Web Services
     product_url: https://xenbase.org/xenbase/static/apis-links.jsp
+    original_source:
+      - source: xenbase
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
     edge_count: 15371045
@@ -1099,7 +1129,7 @@ Xenbase provides access to:
 
 ## Supported Species
 
-- **Primary**: Xenopus laevis (African clawed frog), Xenopus tropicalis (Western clawed frog)  
+- **Primary**: Xenopus laevis (African clawed frog), Xenopus tropicalis (Western clawed frog)
 - **Additional**: Ambystoma mexicanum, Nanorana parkeri, Lithobates catesbeiana, Hymenochirus boettgeri
 
 ## Ontologies

@@ -5,6 +5,8 @@ format: postgres
 id: aact.downloads
 name: AACT Database Downloads
 original_source:
+  - source: aact
+    relation_type: prov:hadPrimarySource
   - source: clinicaltrialsgov
     relation_type: prov:hadPrimarySource
 product_url: https://aact.ctti-clinicaltrials.org/downloads

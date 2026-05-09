@@ -5,4 +5,7 @@ id: wikipathways.web
 name: WikiPathways Web Interface
 product_url: https://www.wikipathways.org/
 layout: product_detail
+original_source:
+  - source: wikipathways
+    relation_type: prov:hadPrimarySource
 ---

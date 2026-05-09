@@ -13,9 +13,6 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 138288
 product_url: https://w3id.org/biolink/biolink-model.json
-secondary_source:
-  - source: biolink
-    relation_type: prov:wasInfluencedBy
 versions:
   - v4.2.6-rc5
   - v4.2.6-rc4

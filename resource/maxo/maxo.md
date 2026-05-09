@@ -34,6 +34,9 @@ products:
     name: maxo.owl
     product_file_size: 16448041
     product_url: http://purl.obolibrary.org/obo/maxo.owl
+    original_source:
+      - source: maxo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Medical Action Ontology in OBO format
     format: obo
@@ -41,6 +44,9 @@ products:
     name: maxo.obo
     product_file_size: 4180499
     product_url: http://purl.obolibrary.org/obo/maxo.obo
+    original_source:
+      - source: maxo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Medical Action Ontology in JSON format
     format: json
@@ -48,6 +54,9 @@ products:
     name: maxo.json
     product_file_size: 9856275
     product_url: http://purl.obolibrary.org/obo/maxo.json
+    original_source:
+      - source: maxo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Medical Action Ontology in OWL format
     format: owl
@@ -55,6 +64,9 @@ products:
     name: maxo.maxo-base.owl
     product_file_size: 3536393
     product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
+    original_source:
+      - source: maxo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Medical Action Ontology in OBO format
     format: obo
@@ -62,6 +74,9 @@ products:
     name: maxo.maxo-base.obo
     product_file_size: 1093805
     product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.obo
+    original_source:
+      - source: maxo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Medical Action Ontology in JSON format
     format: json
@@ -69,6 +84,9 @@ products:
     name: maxo.maxo-base.json
     product_file_size: 2538108
     product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.json
+    original_source:
+      - source: maxo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
     edge_count: 15371045

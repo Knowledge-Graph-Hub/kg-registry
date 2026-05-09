@@ -7,4 +7,7 @@ name: CIViC Clinical Evidence (Nightly)
 product_file_size: 3711846
 product_url: https://civicdb.org/downloads/nightly/nightly-ClinicalEvidenceSummaries.tsv
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

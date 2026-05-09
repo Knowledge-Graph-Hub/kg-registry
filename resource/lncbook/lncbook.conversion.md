@@ -6,4 +6,7 @@ id: lncbook.conversion
 name: ID Conversion Tool
 product_url: https://ngdc.cncb.ac.cn/lncbook/tools/conversion
 layout: product_detail
+original_source:
+  - source: lncbook
+    relation_type: prov:hadPrimarySource
 ---

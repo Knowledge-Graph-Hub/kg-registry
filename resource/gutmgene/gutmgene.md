@@ -29,9 +29,6 @@ products:
       - source: gutmgene
         relation_type: prov:hadPrimarySource
     product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
-    secondary_source:
-      - source: gutmgene
-        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: Code for generating MGMLink
     id: mgmlink.code

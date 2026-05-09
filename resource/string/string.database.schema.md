@@ -7,4 +7,7 @@ name: STRING Database Schema
 product_file_size: 52997
 product_url: https://stringdb-downloads.org/download/database.schema.v12.0.pdf
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

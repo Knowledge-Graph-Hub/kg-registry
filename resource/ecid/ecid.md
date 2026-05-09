@@ -49,9 +49,6 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
     product_url: https://ccdb.ecidbase.org/
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: GraphicalInterface
     description: Interface for Exposome Data Interpretation Resource for interpreting inter-chemical correlations
     id: ecid.edir.site
@@ -61,9 +58,6 @@ products:
       - source: ecid
         relation_type: prov:hadPrimarySource
     product_url: https://edir.ecidbase.org/
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Compound lists from 73 untargeted datasets with 3,329 unique 2D structures.
     id: ecid.compound.lists
@@ -73,9 +67,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Analytes measured by targeted assays for the NIEHS HHEAR program.
     id: ecid.hhear.analyte.list
@@ -85,9 +76,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Chemical analytes reported for the ECHO cohort measured by targeted assays.
     id: ecid.echo.analyte.list
@@ -97,9 +85,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Selected datasets (n=289) for computing and curating inter-chemical correlations.
     id: ecid.dataset.list
@@ -109,9 +94,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Chemical analytes reported by the NHANES biomonitoring survey.
     id: ecid.nhanes.analyte.list
@@ -121,9 +103,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Metabolite and chemical names reported by Metabolon Inc. in PMC articles.
     id: ecid.metabolomics.data.dictionary
@@ -133,9 +112,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: mwTAB files processed to yield curated compound names and identifiers.
     id: ecid.metabolomics.workbench.dictionary
@@ -145,9 +121,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Catalogues chemicals expected and detected in human blood specimens.
     id: ecid.bloodexposome.data
@@ -157,9 +130,6 @@ products:
     original_source:
       - source: ecid
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: ecid
-        relation_type: prov:wasInfluencedBy
     format: csv
 taxon:
   - NCBITaxon:9606

@@ -6,4 +6,7 @@ id: modomics.annotation
 name: MODOMICS Data Annotation Information
 product_url: https://genesilico.pl/modomics/data_information/
 layout: product_detail
+original_source:
+  - source: modomics
+    relation_type: prov:hadPrimarySource
 ---

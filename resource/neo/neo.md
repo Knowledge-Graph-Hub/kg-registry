@@ -28,9 +28,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 2278767531
     product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-    secondary_source:
-      - source: neo
-        relation_type: prov:wasInfluencedBy
 repository: https://github.com/geneontology/neo/
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2025-08-06T00:00:00Z'

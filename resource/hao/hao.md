@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Matt Yoder
-  orcid: 0000-0002-5640-5491
-  contact_details:
-  - contact_type: email
-    value: diapriid@gmail.com
-  - contact_type: github
-    value: mjy
+  - category: Individual
+    label: Matt Yoder
+    orcid: 0000-0002-5640-5491
+    contact_details:
+      - contact_type: email
+        value: diapriid@gmail.com
+      - contact_type: github
+        value: mjy
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of the anatomy of the Hymenoptera
-  (bees, wasps, and ants)
+description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: http://hymao.org
 id: hao
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,34 +26,44 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Hymenoptera Anatomy Ontology
 products:
-- category: OntologyProduct
-  description: Hymenoptera Anatomy Ontology in OWL format
-  format: owl
-  id: hao.owl
-  name: hao.owl
-  product_file_size: 287954
-  product_url: http://purl.obolibrary.org/obo/hao.owl
-- category: OntologyProduct
-  description: Hymenoptera Anatomy Ontology in OBO format
-  format: obo
-  id: hao.obo
-  name: hao.obo
-  product_file_size: 129805
-  product_url: http://purl.obolibrary.org/obo/hao.obo
-- category: OntologyProduct
-  description: Hymenoptera Anatomy Ontology in OWL format
-  format: owl
-  id: hao.depictions.owl
-  name: hao.depictions.owl
-  product_file_size: 33370
-  product_url: http://purl.obolibrary.org/obo/hao/depictions.owl
+  - category: OntologyProduct
+    description: Hymenoptera Anatomy Ontology in OWL format
+    format: owl
+    id: hao.owl
+    name: hao.owl
+    product_file_size: 287954
+    product_url: http://purl.obolibrary.org/obo/hao.owl
+    original_source:
+      - source: hao
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Hymenoptera Anatomy Ontology in OBO format
+    format: obo
+    id: hao.obo
+    name: hao.obo
+    product_file_size: 129805
+    product_url: http://purl.obolibrary.org/obo/hao.obo
+    original_source:
+      - source: hao
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Hymenoptera Anatomy Ontology in OWL format
+    format: owl
+    id: hao.depictions.owl
+    name: hao.depictions.owl
+    product_file_size: 33370
+    product_url: http://purl.obolibrary.org/obo/hao/depictions.owl
+    original_source:
+      - source: hao
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/hymao/hao
 taxon:
-- NCBITaxon:7399
+  - NCBITaxon:7399
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
-  title: A gross anatomy ontology for hymenoptera
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
+    title: A gross anatomy ontology for hymenoptera
 ---
+
 ## Description
 
 A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

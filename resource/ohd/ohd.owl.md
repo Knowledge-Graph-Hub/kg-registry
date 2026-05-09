@@ -7,4 +7,7 @@ name: ohd.owl
 product_file_size: 307089
 product_url: http://purl.obolibrary.org/obo/ohd.owl
 layout: product_detail
+original_source:
+  - source: ohd
+    relation_type: prov:hadPrimarySource
 ---

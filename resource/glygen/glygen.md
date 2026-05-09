@@ -28,9 +28,6 @@ products:
       - source: glygen
         relation_type: prov:hadPrimarySource
     product_url: https://glygen.org/
-    secondary_source:
-      - source: glygen
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for accessing GlyGen data
     id: glygen.api
@@ -40,9 +37,6 @@ products:
       - source: glygen
         relation_type: prov:hadPrimarySource
     product_url: https://api.glygen.org/
-    secondary_source:
-      - source: glygen
-        relation_type: prov:wasInfluencedBy
   - category: GraphicalInterface
     description: Interface for searching GlyGen protein and glycan data
     format: csv
@@ -52,9 +46,6 @@ products:
       - source: glygen
         relation_type: prov:hadPrimarySource
     product_url: https://data.glygen.org/
-    secondary_source:
-      - source: glygen
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: zip
     description: Nodes from GlyGen Biomarker Database

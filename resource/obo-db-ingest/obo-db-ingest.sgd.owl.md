@@ -10,4 +10,7 @@ name: sgd OWL
 product_file_size: 680487
 product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

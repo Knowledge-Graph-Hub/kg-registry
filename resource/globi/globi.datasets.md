@@ -6,4 +6,7 @@ id: globi.datasets
 name: GloBI Datasets
 product_url: https://www.globalbioticinteractions.org/datasets
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

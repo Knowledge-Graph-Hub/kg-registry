@@ -10,4 +10,7 @@ name: icd11 OBO
 product_file_size: 4730644
 product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
-  contact_details:
-  - contact_type: email
-    value: balhoff@renci.org
-  - contact_type: github
-    value: balhoff
+  - category: Individual
+    label: Jim Balhoff
+    orcid: 0000-0002-8688-6599
+    contact_details:
+      - contact_type: email
+        value: balhoff@renci.org
+      - contact_type: github
+        value: balhoff
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/phenoscape/teleost-taxonomy-ontology
 id: tto
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,27 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Teleost taxonomy ontology
 products:
-- category: OntologyProduct
-  description: Teleost taxonomy ontology in OBO format
-  format: obo
-  id: tto.obo
-  name: tto.obo
-  product_file_size: 2260220
-  product_url: http://purl.obolibrary.org/obo/tto.obo
-- category: OntologyProduct
-  description: Teleost taxonomy ontology in OWL format
-  format: owl
-  id: tto.owl
-  name: tto.owl
-  product_file_size: 3526608
-  product_url: http://purl.obolibrary.org/obo/tto.owl
+  - category: OntologyProduct
+    description: Teleost taxonomy ontology in OBO format
+    format: obo
+    id: tto.obo
+    name: tto.obo
+    product_file_size: 2260220
+    product_url: http://purl.obolibrary.org/obo/tto.obo
+    original_source:
+      - source: tto
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Teleost taxonomy ontology in OWL format
+    format: owl
+    id: tto.owl
+    name: tto.owl
+    product_file_size: 3526608
+    product_url: http://purl.obolibrary.org/obo/tto.owl
+    original_source:
+      - source: tto
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/phenoscape/teleost-taxonomy-ontology
 taxon:
-- NCBITaxon:32443
+  - NCBITaxon:32443
 publications:
-- id: https://doi.org/10.1038/npre.2010.4629.1
-  title: The Teleost Taxonomy Ontology
+  - id: https://doi.org/10.1038/npre.2010.4629.1
+    title: The Teleost Taxonomy Ontology
 ---
+
 ## Description
 
 An ontology covering the taxonomy of teleosts (bony fish)

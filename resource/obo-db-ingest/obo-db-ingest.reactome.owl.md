@@ -11,4 +11,7 @@ name: reactome OWL
 product_file_size: 5333931
 product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Alpha Tom Kodamullil
-  orcid: 0000-0001-9896-3531
-  contact_details:
-  - contact_type: email
-    value: alpha.tom.kodamullil@scai.fraunhofer.de
-  - contact_type: github
-    value: akodamullil
+  - category: Individual
+    label: Alpha Tom Kodamullil
+    orcid: 0000-0001-9896-3531
+    contact_details:
+      - contact_type: email
+        value: alpha.tom.kodamullil@scai.fraunhofer.de
+      - contact_type: github
+        value: akodamullil
 creation_date: '2025-09-29T00:00:00Z'
-description: An application ontology that represents comprehensive knowledge involving
-  a variety of fields of medical and biological aspects.
+description: An application ontology that represents comprehensive knowledge involving a variety of fields of medical and biological aspects.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/SCAI-BIO/BiomarkerOntology
 id: bmont
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,17 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Biomarker Ontology
 products:
-- category: OntologyProduct
-  description: Includes axioms linking to other ontologies, but no imports of those
-    ontologies
-  format: owl
-  id: bmont.BMONT.owl
-  name: bmont.BMONT.owl
-  product_file_size: 167585
-  product_url: http://purl.obolibrary.org/obo/BMONT.owl
+  - category: OntologyProduct
+    description: Includes axioms linking to other ontologies, but no imports of those ontologies
+    format: owl
+    id: bmont.BMONT.owl
+    name: bmont.BMONT.owl
+    product_file_size: 167585
+    product_url: http://purl.obolibrary.org/obo/BMONT.owl
+    original_source:
+      - source: bmont
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
 publications: []
 ---
+
 ## Description
 
 An application ontology that represents comprehensive knowledge involving a variety of fields of medical and biological aspects.

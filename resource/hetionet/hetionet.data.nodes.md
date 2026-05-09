@@ -7,4 +7,7 @@ name: Hetionet v1.0 nodes (TSV)
 product_file_size: 427128
 product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
 layout: product_detail
+original_source:
+  - source: hetionet
+    relation_type: prov:hadPrimarySource
 ---

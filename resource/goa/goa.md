@@ -30,6 +30,9 @@ products:
     id: goa.portal
     name: GOA Website
     product_url: https://www.ebi.ac.uk/GOA/index
+    original_source:
+      - source: goa
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browser for searching and viewing Gene Ontology terms and GOA annotations
     format: http
@@ -37,6 +40,8 @@ products:
     name: QuickGO Browser
     original_source:
       - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
         relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/QuickGO/
   - category: Product
@@ -47,6 +52,8 @@ products:
     original_source:
       - source: go
         relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
     warnings:
       - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
@@ -56,9 +63,11 @@ products:
     id: goa.uniprot
     name: UniProt GOA Annotations
     original_source:
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
       - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
         relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
     warnings:
@@ -69,9 +78,11 @@ products:
     id: goa.human
     name: Human GOA Annotations
     original_source:
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
       - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
         relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
     warnings:
@@ -82,9 +93,11 @@ products:
     id: goa.mouse
     name: Mouse GOA Annotations
     original_source:
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
       - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
         relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
     warnings:
@@ -95,11 +108,13 @@ products:
     id: goa.mapping-files
     name: GO Mapping Files
     original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
       - source: interpro
         relation_type: prov:hadPrimarySource
       - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: go
         relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
     warnings:
@@ -110,9 +125,11 @@ products:
     id: goa.pdb
     name: PDB GOA Annotations
     original_source:
-      - source: pdbe
-        relation_type: prov:hadPrimarySource
       - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
         relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
     warnings:
@@ -125,6 +142,8 @@ products:
     original_source:
       - source: go
         relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
     warnings:
       - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
@@ -134,6 +153,9 @@ products:
     id: goa.documentation
     name: GOA Documentation
     product_url: https://www.ebi.ac.uk/GOA/newto
+    original_source:
+      - source: goa
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: HumanGOA Automat
     format: kgx-jsonl

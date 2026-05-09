@@ -7,4 +7,7 @@ name: chmo.owl
 product_file_size: 460248
 product_url: http://purl.obolibrary.org/obo/chmo.owl
 layout: product_detail
+original_source:
+  - source: chmo
+    relation_type: prov:hadPrimarySource
 ---

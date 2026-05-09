@@ -4,6 +4,8 @@ description: Chemical-gene interaction models and toxicological pathways derived
 id: cam-kp.ctd-interactions
 name: CTD Chemical-Gene Models
 original_source:
+  - source: cam-kp
+    relation_type: prov:hadPrimarySource
   - source: ctd
     relation_type: prov:hadPrimarySource
 layout: product_detail

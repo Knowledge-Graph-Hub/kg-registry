@@ -16,10 +16,9 @@ node_count: 27173
 original_source:
   - source: hp
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/hpoa/latest/
 versions:
   - '2026_03_06'
   - hpoa_2026-02-16_e80fcfa7_2025sep1_4.3.6

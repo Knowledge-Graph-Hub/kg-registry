@@ -7,4 +7,7 @@ name: Mondo OBO Format edition
 product_file_size: 51081036
 product_url: http://purl.obolibrary.org/obo/mondo.obo
 layout: product_detail
+original_source:
+  - source: mondo
+    relation_type: prov:hadPrimarySource
 ---

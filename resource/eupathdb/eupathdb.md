@@ -18,36 +18,54 @@ products:
     id: eupathdb.portal
     name: VEuPathDB Web Portal
     product_url: https://veupathdb.org/veupathdb/app
+    original_source:
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Web services API for programmatic access to EuPathDB data and analyses.
     format: http
     id: eupathdb.api
     name: VEuPathDB Web Services API
     product_url: https://veupathdb.org/veupathdb/service
+    original_source:
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP and download access to genome sequences, annotations, and analysis results for component databases.
     format: http
     id: eupathdb.downloads
     name: VEuPathDB Data Downloads
     product_url: https://veupathdb.org/veupathdb/app/downloads
+    original_source:
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Real-time collaborative genome annotation and curation platform for structural and functional annotation.
     format: http
     id: eupathdb.apollo
     name: Apollo Genome Annotation
     product_url: https://veupathdb.org/veupathdb/app/workspace/strategies
+    original_source:
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Map-based visualization tool for field-collected data including insecticide resistance, population abundance, and pathogen infection status.
     format: http
     id: eupathdb.mapveu
     name: MapVEu
     product_url: https://mapveu.org
+    original_source:
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive documentation including tutorials, exercises, and user guides for VEuPathDB tools and features.
     format: http
     id: eupathdb.docs
     name: VEuPathDB Documentation and Tutorials
     product_url: https://veupathdb.org/veupathdb/app/static-content/landing.html
+    original_source:
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: TRAPI web API for querying MicrobiomeKG
     format: http

@@ -16,10 +16,9 @@ node_count: 41243
 original_source:
   - source: ctkp
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
 versions:
   - '2026_03_27'
   - ctkp_3.1.37_a99268cc_2025sep1_4.3.6

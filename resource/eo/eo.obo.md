@@ -6,7 +6,9 @@ id: eo.obo
 name: eo.obo
 product_url: http://purl.obolibrary.org/obo/eo.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
 layout: product_detail
+original_source:
+  - source: eo
+    relation_type: prov:hadPrimarySource
 ---

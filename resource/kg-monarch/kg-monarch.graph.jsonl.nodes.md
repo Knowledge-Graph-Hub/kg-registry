@@ -26,8 +26,6 @@ node_categories:
   - biolink:SequenceVariant
 node_count: 1449211
 original_source:
-  - source: phenio
-    relation_type: prov:hadPrimarySource
   - source: alliance
     relation_type: prov:hadPrimarySource
   - source: bgee
@@ -46,9 +44,13 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: hp
     relation_type: prov:hadPrimarySource
+  - source: kg-monarch
+    relation_type: prov:hadPrimarySource
   - source: maxo
     relation_type: prov:hadPrimarySource
   - source: panther
+    relation_type: prov:hadPrimarySource
+  - source: phenio
     relation_type: prov:hadPrimarySource
   - source: pombase
     relation_type: prov:hadPrimarySource
@@ -103,8 +105,5 @@ predicates:
   - biolink:treats_or_applied_or_studied_to_treat
 product_file_size: 1149505896
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
-secondary_source:
-  - source: kg-monarch
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

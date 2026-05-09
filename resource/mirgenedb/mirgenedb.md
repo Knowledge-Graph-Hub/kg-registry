@@ -17,36 +17,54 @@ products:
     id: mirgenedb.portal
     name: MirGeneDB Web Portal
     product_url: https://mirgenedb.org/
+    original_source:
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Downloadable FASTA, GFF, BED, and tabular files for microRNA genes from individual species.
     format: http
     id: mirgenedb.species_downloads
     name: MirGeneDB Species-Specific Downloads
     product_url: https://mirgenedb.org/download
+    original_source:
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Downloadable covariance models for more than 700 conserved microRNA families.
     format: http
     id: mirgenedb.covariance
     name: MirGeneDB Covariance Models
     product_url: https://mirgenedb.org/covariance
+    original_source:
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Downloadable processed FASTA files of all read data used in MirGeneDB annotations.
     format: fasta
     id: mirgenedb.reads
     name: MirGeneDB Processed Read Data
     product_url: https://mirgenedb.org/download
+    original_source:
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Bulk download ZIP archives for all microRNA gene data across species.
     format: http
     id: mirgenedb.bulk
     name: MirGeneDB Bulk Data Archive
     product_url: https://mirgenedb.org/download
+    original_source:
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Documentation and information about MirGeneDB nomenclature, annotation standards, and database usage.
     format: http
     id: mirgenedb.info
     name: MirGeneDB Information and Help
     product_url: https://mirgenedb.org/information
+    original_source:
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

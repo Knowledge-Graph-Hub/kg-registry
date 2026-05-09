@@ -19,6 +19,9 @@ products:
     id: progenomes.portal
     name: proGenomes Portal
     product_url: https://progenomes.embl.de/
+    original_source:
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: NCBI taxonomy mapping table for proGenomes v4 entries.
@@ -27,6 +30,9 @@ products:
     name: proGenomes v4 NCBI Taxonomy Table
     product_file_size: 6094365
     product_url: https://progenomes.embl.de/data/pg4_ncbi_taxonomy.tsv.gz
+    original_source:
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Representative protein FASTA set for proGenomes v4.
@@ -35,6 +41,9 @@ products:
     name: proGenomes v4 Representative Proteins
     product_file_size: 30345688548
     product_url: https://progenomes.embl.de/data/repGenomes/pg4_proteins_representatives.faa.gz
+    original_source:
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

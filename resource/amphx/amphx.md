@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Hector Escriva
-  orcid: 0000-0001-7577-5028
-  contact_details:
-  - contact_type: email
-    value: hescriva@obs-banyuls.fr
-  - contact_type: github
-    value: hescriva
+  - category: Individual
+    label: Hector Escriva
+    orcid: 0000-0001-7577-5028
+    contact_details:
+      - contact_type: email
+        value: hescriva@obs-banyuls.fr
+      - contact_type: github
+        value: hescriva
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
-  lanceolatum).
+description: An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/EBISPOT/amphx_ontology
 id: amphx
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,23 +26,30 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: The Amphioxus Development and Anatomy Ontology
 products:
-- category: OntologyProduct
-  description: The Amphioxus Development and Anatomy Ontology in OWL format
-  format: owl
-  id: amphx.owl
-  name: amphx.owl
-  product_file_size: 13761
-  product_url: http://purl.obolibrary.org/obo/amphx.owl
-- category: OntologyProduct
-  description: The Amphioxus Development and Anatomy Ontology in OBO format
-  format: obo
-  id: amphx.obo
-  name: amphx.obo
-  product_file_size: 8608
-  product_url: http://purl.obolibrary.org/obo/amphx.obo
+  - category: OntologyProduct
+    description: The Amphioxus Development and Anatomy Ontology in OWL format
+    format: owl
+    id: amphx.owl
+    name: amphx.owl
+    product_file_size: 13761
+    product_url: http://purl.obolibrary.org/obo/amphx.owl
+    original_source:
+      - source: amphx
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: The Amphioxus Development and Anatomy Ontology in OBO format
+    format: obo
+    id: amphx.obo
+    name: amphx.obo
+    product_file_size: 8608
+    product_url: http://purl.obolibrary.org/obo/amphx.obo
+    original_source:
+      - source: amphx
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/EBISPOT/amphx_ontology
 publications: []
 ---
+
 ## Description
 
 An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).

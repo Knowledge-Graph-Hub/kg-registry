@@ -7,4 +7,7 @@ name: proco.owl
 product_file_size: 143615
 product_url: http://purl.obolibrary.org/obo/proco.owl
 layout: product_detail
+original_source:
+  - source: proco
+    relation_type: prov:hadPrimarySource
 ---

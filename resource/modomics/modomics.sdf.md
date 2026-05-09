@@ -7,4 +7,7 @@ name: MODOMICS SDF Files
 product_file_size: 271038
 product_url: https://genesilico.pl/modomics/download/sdf2/
 layout: product_detail
+original_source:
+  - source: modomics
+    relation_type: prov:hadPrimarySource
 ---

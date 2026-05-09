@@ -11,4 +11,7 @@ name: mgi OBO
 product_file_size: 9628994
 product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

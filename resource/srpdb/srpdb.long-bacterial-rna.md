@@ -6,4 +6,7 @@ id: srpdb.long-bacterial-rna
 name: Long Bacterial SRP RNA Alignments
 product_url: https://rth.dk/resources/rnp/SRPDB/srprna.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

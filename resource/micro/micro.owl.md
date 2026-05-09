@@ -7,4 +7,7 @@ name: micro.owl
 product_file_size: 665050
 product_url: http://purl.obolibrary.org/obo/micro.owl
 layout: product_detail
+original_source:
+  - source: micro
+    relation_type: prov:hadPrimarySource
 ---

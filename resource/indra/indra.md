@@ -95,29 +95,26 @@ products:
       - source: indra
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/gyorilab/indra_cogex
-    secondary_source:
-      - source: indra
-        relation_type: prov:wasInfluencedBy
 creation_date: '2025-07-19T00:00:00Z'
 last_modified_date: '2025-07-20T00:00:00Z'
 ---
 
-INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated 
-model assembly system that interfaces with natural language processing systems 
-and structured databases to collect mechanistic and causal assertions. It 
-represents them in a standardized form (INDRA Statements) and assembles them 
+INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated
+model assembly system that interfaces with natural language processing systems
+and structured databases to collect mechanistic and causal assertions. It
+represents them in a standardized form (INDRA Statements) and assembles them
 into various modeling formalisms including causal graphs and dynamical models.
 
 ## Key Features
 
-- **Knowledge Integration**: Aggregates mechanistic information from multiple 
-  sources including pathway databases, literature extraction via NLP, and 
+- **Knowledge Integration**: Aggregates mechanistic information from multiple
+  sources including pathway databases, literature extraction via NLP, and
   curated databases
-- **Standardized Representation**: Converts diverse knowledge into uniform 
+- **Standardized Representation**: Converts diverse knowledge into uniform
   INDRA Statements format
-- **Assembly Procedures**: Applies knowledge-level assembly to correct 
+- **Assembly Procedures**: Applies knowledge-level assembly to correct
   systematic errors, resolve redundancies, and assess reliability
-- **Multiple Output Formats**: Generates causal graphs, rule-based models 
+- **Multiple Output Formats**: Generates causal graphs, rule-based models
   (PySB), and network models
 
 ## Data Sources

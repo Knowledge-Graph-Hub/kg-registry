@@ -18,42 +18,63 @@ products:
     id: gtrnadb.portal
     name: GtRNAdb Web Portal
     product_url: https://gtrnadb.org/
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse tRNA predictions organized by phylogenetic taxonomy (Eukaryota, Archaea, Bacteria)
     format: http
     id: gtrnadb.browse
     name: Browse by Phylogeny
     product_url: https://gtrnadb.org/browse.html
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Search tRNAs by species, amino acid isotype, anticodon, intron count, tRNA score, and structural features
     format: http
     id: gtrnadb.sifter
     name: tRNA Sifter
     product_url: https://gtrnadb.org/search.html
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: BLAST search interface for sequence similarity searches against all tRNAs in the database
     format: http
     id: gtrnadb.blast
     name: Search by Sequence (BLAST)
     product_url: https://gtrnadb.org/blast.html
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Frequently asked questions about GtRNAdb and tRNA gene predictions
     format: http
     id: gtrnadb.faq
     name: FAQ
     product_url: https://gtrnadb.org/faq.html
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive user guide for GtRNAdb features and search capabilities
     format: http
     id: gtrnadb.docs
     name: User Guide
     product_url: https://gtrnadb.org/docs/
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Archive of previous GtRNAdb data releases with change logs
     format: http
     id: gtrnadb.archives
     name: Previous Releases Archive
     product_url: https://gtrnadb.org/archives.html
+    original_source:
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

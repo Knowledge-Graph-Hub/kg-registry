@@ -2,49 +2,56 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-- translator
+  - translator
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: colxu@scripps.edu
-  - contact_type: github
-    value: colleenXu
-  label: Colleen Xu
-description: An ingest of Jensen Lab's DISEASES resource, for Translator use (output
-  in Translator standards and NodeNormed, using own custom pipeline)
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: colxu@scripps.edu
+      - contact_type: github
+        value: colleenXu
+    label: Colleen Xu
+description: An ingest of Jensen Lab's DISEASES resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)
 domains:
-- health
+  - health
 id: kg-jensenlab-diseases
 layout: resource_detail
 name: JensenLab DISEASES KG
 products:
-- category: GraphProduct
-  description: KGX nodes file for JensenLab DISEASES KG
-  format: kgx-jsonl
-  id: kg-jensenlab-diseases.nodes.kgx
-  name: DISEASES KGX nodes
-  product_file_size: 130
-  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
-- category: GraphProduct
-  description: KGX edges file for JensenLab DISEASES KG
-  format: kgx-jsonl
-  id: kg-jensenlab-diseases.edges.kgx
-  name: DISEASES KGX edges
-  product_file_size: 132
-  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
-- category: GraphProduct
-  description: TRAPI edges file for JensenLab DISEASES KG
-  format: trapi-jsonl
-  id: kg-jensenlab-diseases.edges.trapi
-  name: DISEASES TRAPI edges
-  product_file_size: 132
-  product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
+  - category: GraphProduct
+    description: KGX nodes file for JensenLab DISEASES KG
+    format: kgx-jsonl
+    id: kg-jensenlab-diseases.nodes.kgx
+    name: DISEASES KGX nodes
+    product_file_size: 130
+    product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
+    original_source:
+      - source: kg-jensenlab-diseases
+        relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    description: KGX edges file for JensenLab DISEASES KG
+    format: kgx-jsonl
+    id: kg-jensenlab-diseases.edges.kgx
+    name: DISEASES KGX edges
+    product_file_size: 132
+    product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
+    original_source:
+      - source: kg-jensenlab-diseases
+        relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    description: TRAPI edges file for JensenLab DISEASES KG
+    format: trapi-jsonl
+    id: kg-jensenlab-diseases.edges.trapi
+    name: DISEASES TRAPI edges
+    product_file_size: 132
+    product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
+    original_source:
+      - source: kg-jensenlab-diseases
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 creation_date: '2025-05-06T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---
-
 
 ## Automated Evaluation
 

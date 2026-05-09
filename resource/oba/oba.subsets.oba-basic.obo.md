@@ -7,4 +7,7 @@ name: oba.subsets.oba-basic.obo
 product_file_size: 11853852
 product_url: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
 layout: product_detail
+original_source:
+  - source: oba
+    relation_type: prov:hadPrimarySource
 ---

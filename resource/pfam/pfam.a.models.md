@@ -1,10 +1,12 @@
 ---
 category: Product
-description: The Pfam HMM library for Pfam-A families, used for searching protein
-  sequences against Pfam.
+description: The Pfam HMM library for Pfam-A families, used for searching protein sequences against Pfam.
 id: pfam.a.models
 name: Pfam-A HMM Library
 product_file_size: 347150343
 product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
 layout: product_detail
+original_source:
+  - source: pfam
+    relation_type: prov:hadPrimarySource
 ---

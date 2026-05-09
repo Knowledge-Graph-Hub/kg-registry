@@ -7,4 +7,7 @@ name: omrse.owl
 product_file_size: 126133
 product_url: http://purl.obolibrary.org/obo/omrse.owl
 layout: product_detail
+original_source:
+  - source: omrse
+    relation_type: prov:hadPrimarySource
 ---

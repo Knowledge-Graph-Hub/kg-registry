@@ -7,4 +7,7 @@ name: gallont.obo
 product_file_size: 60631
 product_url: http://purl.obolibrary.org/obo/gallont.obo
 layout: product_detail
+original_source:
+  - source: gallont
+    relation_type: prov:hadPrimarySource
 ---

@@ -17,6 +17,9 @@ products:
     id: rediportal.portal
     name: REDIportal Web Portal
     product_url: http://srv00.recas.ba.infn.it/atlas/
+    original_source:
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

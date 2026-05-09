@@ -7,4 +7,7 @@ name: SRI-Reference KG (KGX distribution)
 product_file_size: 230046094
 product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 layout: product_detail
+original_source:
+  - source: sri-reference-kg
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: cdno.obo
 product_file_size: 331277
 product_url: http://purl.obolibrary.org/obo/cdno.obo
 layout: product_detail
+original_source:
+  - source: cdno
+    relation_type: prov:hadPrimarySource
 ---

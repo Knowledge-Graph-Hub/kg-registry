@@ -6,4 +6,7 @@ name: BLAST/BLAT
 product_url: https://www.ensembl.org/Multi/Tools/Blast
 warnings: []
 layout: product_detail
+original_source:
+  - source: ensembl
+    relation_type: prov:hadPrimarySource
 ---

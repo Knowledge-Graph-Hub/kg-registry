@@ -7,4 +7,7 @@ name: vbo.vbo-base.owl
 product_file_size: 2016216
 product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
 layout: product_detail
+original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
 ---

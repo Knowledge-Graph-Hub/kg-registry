@@ -7,4 +7,7 @@ name: VariO main release in OWL
 product_file_size: 497896
 product_url: http://purl.obolibrary.org/obo/vario.owl
 layout: product_detail
+original_source:
+  - source: vario
+    relation_type: prov:hadPrimarySource
 ---

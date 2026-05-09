@@ -7,4 +7,7 @@ name: mpio.owl
 product_file_size: 19172
 product_url: http://purl.obolibrary.org/obo/mpio.owl
 layout: product_detail
+original_source:
+  - source: mpio
+    relation_type: prov:hadPrimarySource
 ---

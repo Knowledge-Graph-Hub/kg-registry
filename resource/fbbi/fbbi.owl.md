@@ -7,4 +7,7 @@ name: fbbi.owl
 product_file_size: 701623
 product_url: http://purl.obolibrary.org/obo/fbbi.owl
 layout: product_detail
+original_source:
+  - source: fbbi
+    relation_type: prov:hadPrimarySource
 ---

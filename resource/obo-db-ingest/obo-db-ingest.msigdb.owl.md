@@ -11,4 +11,7 @@ name: msigdb OWL
 product_file_size: 18147081
 product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

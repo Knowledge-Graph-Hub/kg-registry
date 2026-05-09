@@ -10,4 +10,7 @@ name: mirbase.family OBO Graph JSON
 product_file_size: 113961
 product_url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

@@ -30,16 +30,25 @@ products:
     id: kidsfirst.portal
     name: Kids First Data Resource Portal
     product_url: https://portal.kidsfirstdrc.org/
+    original_source:
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Cloud-based analysis platform for Kids First data, allowing researchers to analyze and integrate genomic and clinical data in a secure environment.
     id: kidsfirst.cavatica
     name: CAVATICA Platform
     product_url: https://cavatica.sbgenomics.com/
+    original_source:
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web-based tool for exploring and visualizing pediatric cancer genomic datasets, integrated with clinical data.
     id: kidsfirst.pedcbioportal
     name: PedcBioPortal
     product_url: https://pedcbioportal.kidsfirstdrc.org/
+    original_source:
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

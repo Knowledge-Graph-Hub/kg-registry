@@ -10,4 +10,7 @@ name: pfam OBO
 product_file_size: 510198
 product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

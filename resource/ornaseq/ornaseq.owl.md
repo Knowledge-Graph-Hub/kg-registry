@@ -7,4 +7,7 @@ name: ornaseq.owl
 product_file_size: 27418
 product_url: http://purl.obolibrary.org/obo/ornaseq.owl
 layout: product_detail
+original_source:
+  - source: ornaseq
+    relation_type: prov:hadPrimarySource
 ---

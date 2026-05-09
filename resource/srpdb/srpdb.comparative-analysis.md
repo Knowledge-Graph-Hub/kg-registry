@@ -6,4 +6,7 @@ id: srpdb.comparative-analysis
 name: Comparative Sequence Analysis Documentation
 product_url: https://rth.dk/resources/rnp/SRPDB/CompaSeqAnal.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

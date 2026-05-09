@@ -6,4 +6,7 @@ id: kinhub.kinases-list
 name: Human Protein Kinases List
 product_url: http://www.kinhub.org/kinases.html
 layout: product_detail
+original_source:
+  - source: kinhub
+    relation_type: prov:hadPrimarySource
 ---

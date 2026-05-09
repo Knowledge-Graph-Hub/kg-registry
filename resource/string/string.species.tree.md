@@ -7,4 +7,7 @@ name: STRING Species Tree
 product_file_size: 97357335
 product_url: https://stringdb-downloads.org/download/species.tree.v12.0.txt
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

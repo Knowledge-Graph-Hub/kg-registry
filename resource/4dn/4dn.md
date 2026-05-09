@@ -37,33 +37,51 @@ products:
     id: 4dn.hic
     name: 4DN Hi-C Datasets
     product_url: https://data.4dnucleome.org/hic-data-overview
+    original_source:
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
   - category: DataProduct
     description: A collection of microscopy datasets, including super-resolution microscopy and chromatin tracing data, for visualizing nuclear organization.
     format: tsv
     id: 4dn.microscopy
     name: 4DN Microscopy Datasets
     product_url: https://data.4dnucleome.org/microscopy-data-overview
+    original_source:
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
   - category: DataProduct
     description: A specialized collection of chromatin tracing datasets that provide insights into the 3D organization of chromatin in the nucleus.
     format: tsv
     id: 4dn.chromatin_tracing
     name: 4DN Chromatin Tracing Datasets
     product_url: https://data.4dnucleome.org/resources/data-collections/chromatin-tracing-datasets
+    original_source:
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: A web-based visualization tool for exploring and comparing genomic data, particularly suited for Hi-C and other 4DN datasets.
     id: 4dn.higlass
     name: HiGlass
     product_url: https://data.4dnucleome.org/tools/visualization
+    original_source:
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: A cloud-based Jupyter environment for analyzing 4DN data without downloading it, including example notebooks for data exploration.
     id: 4dn.jupyterhub
     name: 4DN JupyterHub
     product_url: https://data.4dnucleome.org/tools/jupyterhub
+    original_source:
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: A tool for entering and accessing microscope metadata with standardized formats.
     id: 4dn.micrometa
     name: Micro Meta App
     product_url: https://data.4dnucleome.org/tools/micro-meta-app
+    original_source:
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

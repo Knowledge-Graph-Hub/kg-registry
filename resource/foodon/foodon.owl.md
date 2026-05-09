@@ -7,4 +7,7 @@ name: FoodOn ontology with import file references and over 9,000 food products
 product_file_size: 2852449
 product_url: http://purl.obolibrary.org/obo/foodon.owl
 layout: product_detail
+original_source:
+  - source: foodon
+    relation_type: prov:hadPrimarySource
 ---

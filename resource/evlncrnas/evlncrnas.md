@@ -18,66 +18,99 @@ products:
     id: evlncrnas.portal
     name: EVLncRNAs Web Portal
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse functional lncRNAs by species with sortable entries
     format: http
     id: evlncrnas.species
     name: Species Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/species
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse lncRNAs by associated diseases including cancers and other pathologies
     format: http
     id: evlncrnas.diseases
     name: Disease Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/diseases
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive network visualization of lncRNA interactions with proteins, RNAs, and DNAs
     format: http
     id: evlncrnas.interactions
     name: Interaction Network Viewer
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/interactions
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse lncRNA structural information from experimental studies
     format: http
     id: evlncrnas.structures
     name: Structure Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/structures
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse peptide-coding lncRNAs validated by experiments
     format: http
     id: evlncrnas.peptide
     name: Peptide-Coding lncRNA Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/peptide-coding
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse circular RNA (circRNA) entries with functional validation
     format: http
     id: evlncrnas.circrnas
     name: CircRNA Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/circrnas
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse exosomal lncRNAs from extracellular vesicles
     format: http
     id: evlncrnas.exosomal
     name: Exosomal lncRNA Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/exosomal
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse resistant lncRNAs including drug resistance-associated entries
     format: http
     id: evlncrnas.resistant
     name: Resistant lncRNA Browser
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/resistant
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Help documentation and usage instructions for EVLncRNAs database
     format: http
     id: evlncrnas.help
     name: Help Documentation
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/help
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Download page for bulk data access to EVLncRNAs database content
     format: http
     id: evlncrnas.download
     name: Download Data
     product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/download
+    original_source:
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

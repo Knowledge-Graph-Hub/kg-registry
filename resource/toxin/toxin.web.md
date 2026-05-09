@@ -5,8 +5,8 @@ format: http
 id: toxin.web
 name: TOXIN Search Portal
 product_url: https://toxin-search.netlify.app/
-secondary_source:
-  - source: toxin
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
+original_source:
+  - source: toxin
+    relation_type: prov:hadPrimarySource
 ---

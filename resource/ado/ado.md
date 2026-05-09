@@ -2,24 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Alpha Tom Kodamullil
-  orcid: 0000-0001-9896-3531
-  contact_details:
-  - contact_type: email
-    value: alpha.tom.kodamullil@scai.fraunhofer.de
-  - contact_type: github
-    value: akodamullil
+  - category: Individual
+    label: Alpha Tom Kodamullil
+    orcid: 0000-0001-9896-3531
+    contact_details:
+      - contact_type: email
+        value: alpha.tom.kodamullil@scai.fraunhofer.de
+      - contact_type: github
+        value: akodamullil
 creation_date: '2025-09-29T00:00:00Z'
-description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses
-  varieties of concepts related to Alzheimer'S Disease, structured by upper level
-  Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities
-  that demonstrate the network of the understanding on Alzheimer's disease and can
-  be readily applied for text mining.
+description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses varieties of concepts related to Alzheimer'S Disease, structured by upper level Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities that demonstrate the network of the understanding on Alzheimer's disease and can be readily applied for text mining.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 id: ado
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -30,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Alzheimer's Disease Ontology
 products:
-- category: OntologyProduct
-  description: Alzheimer's Disease Ontology in OWL format
-  format: owl
-  id: ado.owl
-  name: ado.owl
-  product_file_size: 1166665
-  product_url: http://purl.obolibrary.org/obo/ado.owl
+  - category: OntologyProduct
+    description: Alzheimer's Disease Ontology in OWL format
+    format: owl
+    id: ado.owl
+    name: ado.owl
+    product_file_size: 1166665
+    product_url: http://purl.obolibrary.org/obo/ado.owl
+    original_source:
+      - source: ado
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 publications: []
 ---
+
 ## Description
 
 Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses varieties of concepts related to Alzheimer'S Disease, structured by upper level Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities that demonstrate the network of the understanding on Alzheimer's disease and can be readily applied for text mining.

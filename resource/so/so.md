@@ -34,6 +34,9 @@ products:
     name: Main SO OWL release
     product_file_size: 291621
     product_url: http://purl.obolibrary.org/obo/so.owl
+    original_source:
+      - source: so
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Main SO release in OBO Format
     format: obo
@@ -41,6 +44,9 @@ products:
     name: Main SO release in OBO Format
     product_file_size: 193405
     product_url: http://purl.obolibrary.org/obo/so.obo
+    original_source:
+      - source: so
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
     format: owl
@@ -48,6 +54,9 @@ products:
     name: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
     product_file_size: 43606
     product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
+    original_source:
+      - source: so
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
     format: obo
@@ -55,6 +64,9 @@ products:
     name: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
     product_file_size: 28447
     product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
+    original_source:
+      - source: so
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse relations.
     format: owl

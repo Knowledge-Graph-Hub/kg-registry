@@ -38,18 +38,27 @@ products:
     name: GlycoCoO OWL Ontology
     product_file_size: 5642
     product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/ontology/glycocoo.owl
+    original_source:
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: GitHub Wiki with developer information, database providers, and prefix documentation
     format: http
     id: glycocoo.wiki
     name: GlycoCoO Wiki Documentation
     product_url: https://github.com/glycoinfo/GlycoCoO/wiki
+    original_source:
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Sample RDF data files demonstrating GlycoCoO usage with examples from UniCarbKB, GlyConnect, and GlycoNAVI
     format: http
     id: glycocoo.rdf-samples
     name: GlycoCoO RDF Sample Data
     product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
+    original_source:
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Example SPARQL queries for querying glycoconjugate data across federated endpoints
     format: http
@@ -57,6 +66,9 @@ products:
     name: GlycoCoO SPARQL Query Examples
     product_file_size: 2467
     product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
+    original_source:
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

@@ -7,4 +7,7 @@ name: STRING Protein Network Embeddings
 product_file_size: 19250141917
 product_url: https://stringdb-downloads.org/download/protein.network.embeddings.v12.0.h5
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

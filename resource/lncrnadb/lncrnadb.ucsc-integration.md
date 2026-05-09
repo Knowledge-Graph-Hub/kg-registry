@@ -5,4 +5,7 @@ format: http
 id: lncrnadb.ucsc-integration
 name: UCSC Genome Browser Integration
 layout: product_detail
+original_source:
+  - source: lncrnadb
+    relation_type: prov:hadPrimarySource
 ---

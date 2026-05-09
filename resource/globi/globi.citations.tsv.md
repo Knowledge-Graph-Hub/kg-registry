@@ -8,4 +8,7 @@ name: GloBI data citations (TSV)
 product_file_size: 40815688
 product_url: https://zenodo.org/record/14640564/files/citations.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: dpo.owl
 product_file_size: 4011164
 product_url: http://purl.obolibrary.org/obo/dpo.owl
 layout: product_detail
+original_source:
+  - source: dpo
+    relation_type: prov:hadPrimarySource
 ---

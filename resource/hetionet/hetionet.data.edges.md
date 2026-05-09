@@ -7,4 +7,7 @@ name: Hetionet v1.0 edges (SIF)
 product_file_size: 131
 product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
 layout: product_detail
+original_source:
+  - source: hetionet
+    relation_type: prov:hadPrimarySource
 ---

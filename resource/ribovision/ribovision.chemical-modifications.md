@@ -6,4 +6,7 @@ id: ribovision.chemical-modifications
 name: Chemical Modifications
 product_url: https://ribovision2.chemistry.gatech.edu/
 layout: product_detail
+original_source:
+  - source: ribovision
+    relation_type: prov:hadPrimarySource
 ---

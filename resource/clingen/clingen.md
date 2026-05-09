@@ -32,39 +32,60 @@ products:
     id: clingen.gene-disease
     name: Gene-Disease Validity Curations
     product_url: https://search.clinicalgenome.org/kb/gene-validity
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: ClinGen Dosage Sensitivity curations evaluate whether genes and genomic regions are sensitive to copy number variation. These curations determine if haploinsufficiency (loss of one copy) or triplosensitivity (gain of one copy) of a gene/region causes disease.
     format: tsv
     id: clingen.dosage
     name: Dosage Sensitivity Curations
     product_url: https://search.clinicalgenome.org/kb/gene-dosage
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: ClinGen Clinical Actionability evaluations assess the clinical actions available to manage risk for patients with specific genetic disorders. These curations score the actionability of gene-disease pairs based on severity, likelihood of disease, efficacy of interventions, and knowledge base.
     format: tsv
     id: clingen.actionability
     name: Clinical Actionability Curations
     product_url: https://search.clinicalgenome.org/kb/actionability
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: ClinGen Variant Pathogenicity curations assess the clinical significance of genetic variants based on ACMG/AMP guidelines. Expert panels classify variants as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
     format: csv
     id: clingen.variant
     name: Variant Pathogenicity Curations
     product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API providing access to ClinGen's Evidence Repository for variant pathogenicity assessments. Allows programmatic retrieval of structured evidence used to evaluate the clinical significance of genetic variants.
     id: clingen.evrepo.api
     name: ClinGen Evidence Repository API
     product_url: https://erepo.clinicalgenome.org/evrepo/api/
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web-based interface for accessing ClinGen's curated data. Allows users to search and browse curated gene-disease pairs, variant interpretations, and other ClinGen resources.
     id: clingen.web.interface
     name: ClinGen Search Interface
     product_url: https://search.clinicalgenome.org/
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: Framework for standardized interpretation of genetic variants, including disease-specific modifications to the ACMG/AMP guidelines. These frameworks guide variant classification by expert panels and clinical laboratories.
     id: clingen.variant.frameworks
     name: Variant Interpretation Frameworks
     product_url: https://www.clinicalgenome.org/working-groups/sequence-variant-interpretation/
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j
@@ -1337,13 +1358,13 @@ ClinGen serves as a critical bridge between genomic research and clinical applic
 ClinGen's primary goal is to improve patient care by ensuring that clinicians, researchers, and patients have access to reliable genomic information. The resource achieves this through several key curation activities:
 
 - **Gene-Disease Validity**: Evaluating the strength of evidence supporting relationships between genes and diseases. Gene Curation Expert Panels (GCEPs) classify evidence for gene-disease relationships as Definitive, Strong, Moderate, Limited, No Reported Evidence, or Disputed.
-  
+
 - **Variant Pathogenicity**: Assessing whether specific genetic variants cause disease. Variant Curation Expert Panels (VCEPs) apply the ACMG/AMP guidelines to classify variants as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
-  
+
 - **Dosage Sensitivity**: Determining if changes in gene copy number (deletions or duplications) result in disease. The Dosage Sensitivity Working Group evaluates whether gains or losses of specific genomic regions lead to clinical phenotypes.
-  
+
 - **Clinical Actionability**: Evaluating medical interventions available for individuals with genetic conditions. The Actionability Working Group assesses what clinical interventions are available for patients with specific genetic disorders and scores their actionability.
-  
+
 - **Somatic Cancer Variant Interpretation**: Curating the clinical significance of genomic alterations in cancer. The Somatic Cancer Working Group applies specialized frameworks to classify cancer-related variants.
 
 ## Expert Panels

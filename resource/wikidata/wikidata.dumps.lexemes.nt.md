@@ -8,4 +8,7 @@ name: Wikidata Lexeme RDF Dump (N-Triples)
 product_file_size: 1401838999
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.nt.gz
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,8 +8,5 @@ original_source:
   - source: cellosaurus
     relation_type: prov:hadPrimarySource
 product_url: https://www.cellosaurus.org/str-search/
-secondary_source:
-  - source: cellosaurus
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

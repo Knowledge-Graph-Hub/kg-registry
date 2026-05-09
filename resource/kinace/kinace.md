@@ -22,29 +22,28 @@ products:
     product_url: https://kinace.kinametrix.com/
     format: http
     original_source:
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: iptmnet
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: epsd
-        relation_type: prov:hadPrimarySource
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
       - source: coralkinome
         relation_type: prov:hadPrimarySource
       - source: darkkinasekb
         relation_type: prov:hadPrimarySource
-      - source: hgnc
+      - source: epsd
         relation_type: prov:hadPrimarySource
-      - source: kegg
+      - source: hgnc
         relation_type: prov:hadPrimarySource
       - source: interpro
         relation_type: prov:hadPrimarySource
-    secondary_source:
+      - source: iptmnet
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
       - source: kinace
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+      - source: kinhub
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
 synonyms:
   - KinAce
 taxon:

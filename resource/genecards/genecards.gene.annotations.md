@@ -5,17 +5,19 @@ format: http
 id: genecards.gene.annotations
 name: GeneCards Gene Annotations
 original_source:
-  - source: hgnc
-    relation_type: prov:hadPrimarySource
-  - source: omim
-    relation_type: prov:hadPrimarySource
   - source: ensembl
+    relation_type: prov:hadPrimarySource
+  - source: genecards
+    relation_type: prov:hadPrimarySource
+  - source: hgnc
     relation_type: prov:hadPrimarySource
   - source: ncbigene
     relation_type: prov:hadPrimarySource
-  - source: uniprot
+  - source: omim
     relation_type: prov:hadPrimarySource
   - source: refseq
+    relation_type: prov:hadPrimarySource
+  - source: uniprot
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/
 warnings:

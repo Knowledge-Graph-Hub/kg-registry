@@ -17,24 +17,36 @@ products:
     id: sckan.query_interface
     name: SCKAN Query Interface (Docker)
     product_url: https://github.com/SciCrunch/sparc-curation/tree/master/docs/sckan#download-docker-and-x11
+    original_source:
+      - source: sckan
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Detailed ApiNATOMY models of neural circuits for organs including bladder, heart, colon, stomach, spleen, pancreas, and airways. Models are available in open-physiology repositories.
     format: http
     id: sckan.apinatomy
     name: SCKAN ApiNATOMY Models
     product_url: https://github.com/open-physiology/apinatomy-models
+    original_source:
+      - source: sckan
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Documentation, setup instructions, tutorials, and example queries for using and exploring SCKAN.
     format: http
     id: sckan.docs
     name: SCKAN Documentation and Tutorials
     product_url: https://github.com/SciCrunch/sparc-curation/tree/master/docs/sckan
+    original_source:
+      - source: sckan
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Latest SCKAN data release, including curated knowledge and models, available via Zenodo.
     format: http
     id: sckan.data_release
     name: SCKAN Data Release
     product_url: https://doi.org/10.5281/zenodo.5337441
+    original_source:
+      - source: sckan
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

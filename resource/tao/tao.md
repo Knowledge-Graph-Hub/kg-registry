@@ -2,19 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Wasila Dahdul
-  orcid: 0000-0003-3162-7490
-  contact_details:
-  - contact_type: email
-    value: wasila.dahdul@usd.edu
+  - category: Individual
+    label: Wasila Dahdul
+    orcid: 0000-0003-3162-7490
+    contact_details:
+      - contact_type: email
+        value: wasila.dahdul@usd.edu
 creation_date: '2025-09-29T00:00:00Z'
-description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended
-  to cover terms relevant to other taxa
+description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 id: tao
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -25,20 +24,23 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Teleost Anatomy Ontology
 products:
-- category: OntologyProduct
-  description: Teleost Anatomy Ontology in OWL format
-  format: owl
-  id: tao.owl
-  name: tao.owl
-  product_file_size: 5063653
-  product_url: http://purl.obolibrary.org/obo/tao.owl
+  - category: OntologyProduct
+    description: Teleost Anatomy Ontology in OWL format
+    format: owl
+    id: tao.owl
+    name: tao.owl
+    product_file_size: 5063653
+    product_url: http://purl.obolibrary.org/obo/tao.owl
+    original_source:
+      - source: tao
+        relation_type: prov:hadPrimarySource
 taxon:
-- NCBITaxon:32443
+  - NCBITaxon:32443
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
-  title: 'The teleost anatomy ontology: anatomical representation for the genomics
-    age'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
+    title: 'The teleost anatomy ontology: anatomical representation for the genomics age'
 ---
+
 ## Description
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa

@@ -8,4 +8,7 @@ name: STRING Clusters Info
 product_file_size: 217876761
 product_url: https://stringdb-downloads.org/download/clusters.info.v12.0.txt.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

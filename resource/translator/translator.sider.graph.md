@@ -16,10 +16,9 @@ node_count: 5533
 original_source:
   - source: sider
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/sider/latest/
 versions:
   - '2026_03_06'
   - sider_4.1_56b9c307_2025sep1_4.3.6

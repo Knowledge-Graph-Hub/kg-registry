@@ -10,8 +10,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 1400714190
 product_url: https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz
-secondary_source:
-  - source: drugcentral
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -7,4 +7,7 @@ name: symp.obo
 product_file_size: 49360
 product_url: http://purl.obolibrary.org/obo/symp.obo
 layout: product_detail
+original_source:
+  - source: symp
+    relation_type: prov:hadPrimarySource
 ---

@@ -9,4 +9,7 @@ license:
 name: Human Reference Atlas
 product_url: https://humanatlas.io/
 layout: product_detail
+original_source:
+  - source: hubmap
+    relation_type: prov:hadPrimarySource
 ---

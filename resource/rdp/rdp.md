@@ -17,12 +17,18 @@ products:
     id: rdp.classifier
     name: RDP Classifier (stand-alone)
     product_url: https://sourceforge.net/projects/rdp-classifier/
+    original_source:
+      - source: rdp
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: Command-line tools for rRNA sequence analysis, installation instructions and Docker images available via community tutorials.
     format: http
     id: rdp.tools
     name: RDP Tools (command-line)
     product_url: https://jfq3.gitbook.io/rdptools-docker/
+    original_source:
+      - source: rdp
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

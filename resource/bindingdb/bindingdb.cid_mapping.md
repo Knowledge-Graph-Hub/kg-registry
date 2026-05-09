@@ -6,4 +6,7 @@ name: BindingDB-PubChem CID Mapping
 product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CID.txt
 warnings: []
 layout: product_detail
+original_source:
+  - source: bindingdb
+    relation_type: prov:hadPrimarySource
 ---

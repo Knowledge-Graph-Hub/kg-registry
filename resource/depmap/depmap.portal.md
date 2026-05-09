@@ -6,4 +6,7 @@ id: depmap.portal
 name: DepMap Portal
 product_url: https://depmap.org/portal/
 layout: product_detail
+original_source:
+  - source: depmap
+    relation_type: prov:hadPrimarySource
 ---

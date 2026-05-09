@@ -13,8 +13,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 3373041
 product_url: http://edamontology.org/EDAM.owl
-secondary_source:
-  - source: edam
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

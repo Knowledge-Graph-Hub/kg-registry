@@ -33,6 +33,9 @@ products:
     id: semmeddb.semrep.tool
     name: SemRep NLP System
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html
+    original_source:
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl

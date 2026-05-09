@@ -9,4 +9,7 @@ product_file_size: 30925
 product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
 warnings: []
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

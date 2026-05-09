@@ -6,4 +6,7 @@ id: rfam.docs
 name: Rfam Documentation
 product_url: https://docs.rfam.org/
 layout: product_detail
+original_source:
+  - source: rfam
+    relation_type: prov:hadPrimarySource
 ---

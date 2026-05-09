@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jennifer Smith
-  orcid: 0000-0002-6443-9376
-  contact_details:
-  - contact_type: email
-    value: jrsmith@mcw.edu
-  - contact_type: github
-    value: jrsjrs
+  - category: Individual
+    label: Jennifer Smith
+    orcid: 0000-0002-6443-9376
+    contact_details:
+      - contact_type: email
+        value: jrsmith@mcw.edu
+      - contact_type: github
+        value: jrsjrs
 creation_date: '2025-09-29T00:00:00Z'
-description: A representation of the variety of methods used to make clinical and
-  phenotype measurements.
+description: A representation of the variety of methods used to make clinical and phenotype measurements.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 id: mmo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,28 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Measurement method ontology
 products:
-- category: OntologyProduct
-  description: Measurement method ontology in OWL format
-  format: owl
-  id: mmo.owl
-  name: mmo.owl
-  product_file_size: 1924733
-  product_url: http://purl.obolibrary.org/obo/mmo.owl
-- category: OntologyProduct
-  description: Measurement method ontology in OBO format
-  format: obo
-  id: mmo.obo
-  name: mmo.obo
-  product_file_size: 506276
-  product_url: http://purl.obolibrary.org/obo/mmo.obo
+  - category: OntologyProduct
+    description: Measurement method ontology in OWL format
+    format: owl
+    id: mmo.owl
+    name: mmo.owl
+    product_file_size: 1924733
+    product_url: http://purl.obolibrary.org/obo/mmo.owl
+    original_source:
+      - source: mmo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Measurement method ontology in OBO format
+    format: obo
+    id: mmo.obo
+    name: mmo.obo
+    product_file_size: 506276
+    product_url: http://purl.obolibrary.org/obo/mmo.obo
+    original_source:
+      - source: mmo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
-  title: Three ontologies to define phenotype measurement data.
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
-  title: 'The clinical measurement, measurement method and experimental condition
-    ontologies: expansion, improvements and new applications.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
+    title: Three ontologies to define phenotype measurement data.
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
+    title: 'The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.'
 ---
+
 ## Description
 
 A representation of the variety of methods used to make clinical and phenotype measurements.

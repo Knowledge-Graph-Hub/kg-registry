@@ -19,6 +19,9 @@ products:
     id: cog.portal
     name: COG Project Portal
     product_url: https://www.ncbi.nlm.nih.gov/research/cog
+    original_source:
+      - source: cog
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: COG 2024 functional assignment table in CSV format.
     format: csv
@@ -26,6 +29,9 @@ products:
     name: COG 2024 Functional Assignments
     product_file_size: 637440210
     product_url: https://ftp.ncbi.nlm.nih.gov/pub/COG/COG2024/data/cog-24.cog.csv
+    original_source:
+      - source: cog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Protein FASTA set for the COG 2024 release.
@@ -34,6 +40,9 @@ products:
     name: COG 2024 Protein FASTA
     product_file_size: 1629401512
     product_url: https://ftp.ncbi.nlm.nih.gov/pub/COG/COG2024/data/COGorg24.faa.gz
+    original_source:
+      - source: cog
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

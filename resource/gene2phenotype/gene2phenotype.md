@@ -19,18 +19,27 @@ products:
     id: gene2phenotype.portal
     name: Gene2Phenotype Portal
     product_url: https://www.ebi.ac.uk/gene2phenotype/
+    original_source:
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: API documentation interface for programmatic access to G2P records.
     format: http
     id: gene2phenotype.api
     name: Gene2Phenotype API
     product_url: https://www.ebi.ac.uk/gene2phenotype/api/
+    original_source:
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: OpenAPI schema endpoint for the Gene2Phenotype API.
     format: http
     id: gene2phenotype.api.schema
     name: Gene2Phenotype API Schema
     product_url: https://www.ebi.ac.uk/gene2phenotype/api/schema/
+    original_source:
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compatibility:
       - standard: biolink

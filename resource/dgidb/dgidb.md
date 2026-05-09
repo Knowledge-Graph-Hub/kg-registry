@@ -33,6 +33,9 @@ products:
     is_public: true
     name: DGIdb API
     product_url: https://dgidb.org/api
+    original_source:
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl

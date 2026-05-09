@@ -7,4 +7,7 @@ name: one.owl
 product_file_size: 9258
 product_url: http://purl.obolibrary.org/obo/one.owl
 layout: product_detail
+original_source:
+  - source: one
+    relation_type: prov:hadPrimarySource
 ---

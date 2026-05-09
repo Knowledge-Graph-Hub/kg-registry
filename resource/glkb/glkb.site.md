@@ -8,8 +8,5 @@ original_source:
   - source: glkb
     relation_type: prov:hadPrimarySource
 product_url: https://glkb.dcmb.med.umich.edu/
-secondary_source:
-  - source: glkb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

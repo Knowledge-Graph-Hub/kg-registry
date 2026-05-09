@@ -7,4 +7,7 @@ name: rnao.obo
 product_file_size: 11126
 product_url: http://purl.obolibrary.org/obo/rnao.obo
 layout: product_detail
+original_source:
+  - source: rnao
+    relation_type: prov:hadPrimarySource
 ---

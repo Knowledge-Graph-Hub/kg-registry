@@ -27,12 +27,11 @@ products:
     id: gnbr.graph
     name: GNBR graph
     original_source:
+      - source: gnbr
+        relation_type: prov:hadPrimarySource
       - source: pubtator
         relation_type: prov:hadPrimarySource
     product_url: https://zenodo.org/records/3459420
-    secondary_source:
-      - source: gnbr
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
     edge_count: 500958

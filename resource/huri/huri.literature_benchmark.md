@@ -1,7 +1,6 @@
 ---
 category: Product
-description: Literature-curated high-quality protein-protein interactions from comparable
-  experimental approaches
+description: Literature-curated high-quality protein-protein interactions from comparable experimental approaches
 format: tsv
 id: huri.literature_benchmark
 license:
@@ -10,4 +9,7 @@ license:
 name: HuRI Literature Benchmark
 product_url: http://www.interactome-atlas.org/download
 layout: product_detail
+original_source:
+  - source: huri
+    relation_type: prov:hadPrimarySource
 ---

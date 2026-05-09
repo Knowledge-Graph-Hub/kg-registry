@@ -1,10 +1,12 @@
 ---
 category: GraphicalInterface
-description: Interactive web interface for exploring transcription factor-target gene
-  relationships with regulatory network visualization
+description: Interactive web interface for exploring transcription factor-target gene relationships with regulatory network visualization
 format: http
 id: chea-kg.portal
 name: ChEA-KG Explorer
 product_url: https://maayanlab.cloud/chea-kg/
 layout: product_detail
+original_source:
+  - source: chea-kg
+    relation_type: prov:hadPrimarySource
 ---

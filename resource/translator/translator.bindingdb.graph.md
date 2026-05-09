@@ -16,10 +16,9 @@ node_count: 736988
 original_source:
   - source: bindingdb
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/bindingdb/latest/
 versions:
   - '2026_03_06'
   - bindingdb_202603_2f3418c8_2025sep1_4.3.6

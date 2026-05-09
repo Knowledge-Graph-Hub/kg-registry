@@ -16,10 +16,9 @@ node_count: 74689
 original_source:
   - source: bgee
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
 versions:
   - '2026_03_06'
   - bgee_15.2_a4fc19df_2025sep1_4.3.6

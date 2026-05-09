@@ -9,8 +9,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 11700
 product_url: https://w3id.org/kgcl/kgcl.owl.ttl
-secondary_source:
-  - source: kgcl
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

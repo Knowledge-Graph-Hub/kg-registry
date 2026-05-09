@@ -7,4 +7,7 @@ name: chiro.obo
 product_file_size: 3337
 product_url: http://purl.obolibrary.org/obo/chiro.obo
 layout: product_detail
+original_source:
+  - source: chiro
+    relation_type: prov:hadPrimarySource
 ---

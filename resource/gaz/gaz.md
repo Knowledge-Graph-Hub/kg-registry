@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
-  contact_details:
-  - contact_type: email
-    value: lschriml@som.umaryland.edu
-  - contact_type: github
-    value: lschriml
+  - category: Individual
+    label: Lynn Schriml
+    orcid: 0000-0001-8910-9851
+    contact_details:
+      - contact_type: email
+        value: lschriml@som.umaryland.edu
+      - contact_type: github
+        value: lschriml
 creation_date: '2025-09-29T00:00:00Z'
-description: A gazetteer constructed on ontological principles. The countries are
-  actively maintained.
+description: A gazetteer constructed on ontological principles. The countries are actively maintained.
 domains:
-- environment
+  - environment
 homepage_url: http://environmentontology.github.io/gaz/
 id: gaz
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,30 +26,40 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Gazetteer
 products:
-- category: OntologyProduct
-  description: Gazetteer in OWL format
-  format: owl
-  id: gaz.owl
-  name: gaz.owl
-  product_file_size: 1308877129
-  product_url: http://purl.obolibrary.org/obo/gaz.owl
-- category: OntologyProduct
-  description: Gazetteer in OBO format
-  format: obo
-  id: gaz.obo
-  name: gaz.obo
-  product_file_size: 189228723
-  product_url: http://purl.obolibrary.org/obo/gaz.obo
-- category: OntologyProduct
-  description: A country specific subset of the GAZ.
-  format: owl
-  id: gaz.gaz-countries.owl
-  name: GAZ countries
-  product_file_size: 42847
-  product_url: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
+  - category: OntologyProduct
+    description: Gazetteer in OWL format
+    format: owl
+    id: gaz.owl
+    name: gaz.owl
+    product_file_size: 1308877129
+    product_url: http://purl.obolibrary.org/obo/gaz.owl
+    original_source:
+      - source: gaz
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Gazetteer in OBO format
+    format: obo
+    id: gaz.obo
+    name: gaz.obo
+    product_file_size: 189228723
+    product_url: http://purl.obolibrary.org/obo/gaz.obo
+    original_source:
+      - source: gaz
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: A country specific subset of the GAZ.
+    format: owl
+    id: gaz.gaz-countries.owl
+    name: GAZ countries
+    product_file_size: 42847
+    product_url: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
+    original_source:
+      - source: gaz
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/EnvironmentOntology/gaz
 publications: []
 ---
+
 ## Description
 
 A gazetteer constructed on ontological principles. The countries are actively maintained.

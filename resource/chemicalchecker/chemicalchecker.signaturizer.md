@@ -6,4 +6,7 @@ id: chemicalchecker.signaturizer
 name: Signaturizer
 product_url: https://github.com/sbnb-irb/signaturizer
 layout: product_detail
+original_source:
+  - source: chemicalchecker
+    relation_type: prov:hadPrimarySource
 ---

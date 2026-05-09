@@ -6,4 +6,7 @@ id: eggnog.download
 name: eggNOG Downloads
 product_url: https://eggnogdb.org/downloads/
 layout: product_detail
+original_source:
+  - source: eggnog
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,11 +7,10 @@ name: C-Path Knowledge Graph Integration
 original_source:
   - source: biolink
     relation_type: prov:hadPrimarySource
+  - source: cpathkg
+    relation_type: prov:hadPrimarySource
   - source: kg-monarch
     relation_type: prov:hadPrimarySource
 product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
-secondary_source:
-  - source: cpathkg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

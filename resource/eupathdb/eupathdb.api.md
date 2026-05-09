@@ -6,4 +6,7 @@ id: eupathdb.api
 name: VEuPathDB Web Services API
 product_url: https://veupathdb.org/veupathdb/service
 layout: product_detail
+original_source:
+  - source: eupathdb
+    relation_type: prov:hadPrimarySource
 ---

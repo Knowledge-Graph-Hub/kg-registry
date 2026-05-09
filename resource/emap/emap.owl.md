@@ -7,4 +7,7 @@ name: emap.owl
 product_file_size: 611769
 product_url: http://purl.obolibrary.org/obo/emap.owl
 layout: product_detail
+original_source:
+  - source: emap
+    relation_type: prov:hadPrimarySource
 ---

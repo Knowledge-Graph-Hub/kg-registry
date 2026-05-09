@@ -9,8 +9,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 117036445
 product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
-secondary_source:
-  - source: cellosaurus
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -28,24 +28,36 @@ products:
     id: phewascat.portal
     name: PheWAS Catalog Portal
     product_url: https://phewascatalog.org/phewas/#home
+    original_source:
+      - source: phewascat
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: PheWAS association results for SNPs from GWAS Catalog analyzed against EMR-derived phenotypes
     format: csv
     id: phewascat.associations
     name: PheWAS Association Data
     product_url: https://phewascatalog.org/phewas/#home
+    original_source:
+      - source: phewascat
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Phecode mapping files for translating ICD codes to phenotypes used in PheWAS analysis
     format: csv
     id: phewascat.phecodes
     name: Phecode Maps
     product_url: https://phewascatalog.org/phewas/#home
+    original_source:
+      - source: phewascat
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: R package for performing PheWAS analysis using the catalog data and methods
     format: http
     id: phewascat.rpackage
     name: PheWAS R Package
     product_url: https://www.vumc.org/cpm/center-precision-medicine-blog/phewas-r-package
+    original_source:
+      - source: phewascat
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
     id: disgenet.data

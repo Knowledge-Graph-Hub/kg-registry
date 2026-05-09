@@ -7,4 +7,7 @@ name: pato.obo
 product_file_size: 110437
 product_url: http://purl.obolibrary.org/obo/pato.obo
 layout: product_detail
+original_source:
+  - source: pato
+    relation_type: prov:hadPrimarySource
 ---

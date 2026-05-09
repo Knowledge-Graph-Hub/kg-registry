@@ -7,4 +7,7 @@ name: bto.obo
 product_file_size: 479657
 product_url: http://purl.obolibrary.org/obo/bto.obo
 layout: product_detail
+original_source:
+  - source: bto
+    relation_type: prov:hadPrimarySource
 ---

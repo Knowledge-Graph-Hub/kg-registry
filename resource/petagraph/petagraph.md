@@ -37,12 +37,11 @@ products:
     name: Petagraph Knowledge Graph (Neo4J)
     node_count: 32000000
     original_source:
+      - source: petagraph
+        relation_type: prov:hadPrimarySource
       - source: ubkg
         relation_type: prov:hadPrimarySource
     product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - source: petagraph
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Benjamin J. Stear
@@ -100,7 +99,7 @@ Petagraph integrates 21 sources of supporting omics and annotation data, includi
    - 4D Nucleome program data
    - Single-cell fetal heart data
    - ClinVar genetic variants
-   
+
 2. **Mapping Data**:
    - Human-to-mouse ortholog mappings
    - Human gene-to-phenotype mappings

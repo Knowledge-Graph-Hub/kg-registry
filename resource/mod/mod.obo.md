@@ -7,4 +7,7 @@ name: PSI-MOD.obo
 product_file_size: 251654
 product_url: http://purl.obolibrary.org/obo/mod.obo
 layout: product_detail
+original_source:
+  - source: mod
+    relation_type: prov:hadPrimarySource
 ---

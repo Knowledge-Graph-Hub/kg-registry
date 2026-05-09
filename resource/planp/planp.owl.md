@@ -7,4 +7,7 @@ name: planp.owl
 product_file_size: 535526
 product_url: http://purl.obolibrary.org/obo/planp.owl
 layout: product_detail
+original_source:
+  - source: planp
+    relation_type: prov:hadPrimarySource
 ---

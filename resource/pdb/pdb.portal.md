@@ -6,4 +6,7 @@ id: pdb.portal
 name: RCSB PDB Portal
 product_url: https://www.rcsb.org/
 layout: product_detail
+original_source:
+  - source: pdb
+    relation_type: prov:hadPrimarySource
 ---

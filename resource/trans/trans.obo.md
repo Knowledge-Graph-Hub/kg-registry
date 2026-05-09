@@ -7,4 +7,7 @@ name: trans.obo
 product_file_size: 2629
 product_url: http://purl.obolibrary.org/obo/trans.obo
 layout: product_detail
+original_source:
+  - source: trans
+    relation_type: prov:hadPrimarySource
 ---

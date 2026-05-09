@@ -10,6 +10,8 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: goldterms
     relation_type: prov:hadPrimarySource
+  - source: metatraits
+    relation_type: prov:hadPrimarySource
   - source: progenomes
     relation_type: prov:hadPrimarySource
 product_url: https://metatraits.embl.de/traits

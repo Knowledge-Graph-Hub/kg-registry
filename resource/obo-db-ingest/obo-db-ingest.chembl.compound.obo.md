@@ -10,4 +10,7 @@ name: chembl.compound OBO
 product_file_size: 5380016
 product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

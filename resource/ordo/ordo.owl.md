@@ -7,4 +7,7 @@ name: ORDO OWL
 product_file_size: 49203440
 product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
 layout: product_detail
+original_source:
+  - source: ordo
+    relation_type: prov:hadPrimarySource
 ---

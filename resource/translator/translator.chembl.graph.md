@@ -16,10 +16,9 @@ node_count: 153369
 original_source:
   - source: chembl
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
 versions:
   - '2026_03_06'
   - chembl_36_76533eea_2025sep1_4.3.6

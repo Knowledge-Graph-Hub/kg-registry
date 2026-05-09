@@ -18,8 +18,5 @@ original_source:
   - source: pdbe
     relation_type: prov:hadPrimarySource
 product_url: https://www.ebi.ac.uk/intact/ws
-secondary_source:
-  - source: intact
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

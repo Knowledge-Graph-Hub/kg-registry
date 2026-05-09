@@ -6,4 +6,7 @@ id: srpdb.cpsrp43
 name: cpSRP43 Protein Sequences
 product_url: https://rth.dk/resources/rnp/SRPDB/srpprotein.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

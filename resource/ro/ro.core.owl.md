@@ -7,4 +7,7 @@ name: RO Core relations
 product_file_size: 7819
 product_url: http://purl.obolibrary.org/obo/ro/core.owl
 layout: product_detail
+original_source:
+  - source: ro
+    relation_type: prov:hadPrimarySource
 ---

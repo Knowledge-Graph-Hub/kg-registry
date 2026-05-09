@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Melissa Haendel
-  orcid: 0000-0001-9114-8737
-  contact_details:
-  - contact_type: email
-    value: haendel@ohsu.edu
-  - contact_type: github
-    value: mellybelly
+  - category: Individual
+    label: Melissa Haendel
+    orcid: 0000-0001-9114-8737
+    contact_details:
+      - contact_type: email
+        value: haendel@ohsu.edu
+      - contact_type: github
+        value: mellybelly
 creation_date: '2025-09-29T00:00:00Z'
-description: An upper level ontology to facilitate interoperability between existing
-  anatomy ontologies for different species
+description: An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/caro/
 id: caro
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Common Anatomy Reference Ontology
 products:
-- category: OntologyProduct
-  description: Common Anatomy Reference Ontology in OWL format
-  format: owl
-  id: caro.owl
-  name: caro.owl
-  product_file_size: 586722
-  product_url: http://purl.obolibrary.org/obo/caro.owl
+  - category: OntologyProduct
+    description: Common Anatomy Reference Ontology in OWL format
+    format: owl
+    id: caro.owl
+    name: caro.owl
+    product_file_size: 586722
+    product_url: http://purl.obolibrary.org/obo/caro.owl
+    original_source:
+      - source: caro
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/caro
 publications: []
 ---
+
 ## Description
 
 An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species

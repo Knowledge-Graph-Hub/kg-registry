@@ -7,4 +7,7 @@ name: occo.owl
 product_file_size: 280761
 product_url: http://purl.obolibrary.org/obo/occo.owl
 layout: product_detail
+original_source:
+  - source: occo
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Laurel Cooper
-  orcid: 0000-0002-6379-8932
-  contact_details:
-  - contact_type: email
-    value: cooperl@oregonstate.edu
-  - contact_type: github
-    value: cooperl09
+  - category: Individual
+    label: Laurel Cooper
+    orcid: 0000-0002-6379-8932
+    contact_details:
+      - contact_type: email
+        value: cooperl@oregonstate.edu
+      - contact_type: github
+        value: cooperl09
 creation_date: '2025-09-29T00:00:00Z'
-description: The Plant Stress Ontology describes biotic and abiotic stresses that
-  a plant may encounter.
+description: The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.
 domains:
-- agriculture
+  - agriculture
 homepage_url: https://github.com/Planteome/plant-stress-ontology
 id: pso
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,26 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Stress Ontology
 products:
-- category: OntologyProduct
-  description: Plant Stress Ontology in OWL format
-  format: owl
-  id: pso.owl
-  name: pso.owl
-  product_file_size: 365840
-  product_url: http://purl.obolibrary.org/obo/pso.owl
-- category: OntologyProduct
-  description: Plant Stress Ontology in OBO format
-  format: obo
-  id: pso.obo
-  name: pso.obo
-  product_file_size: 241726
-  product_url: http://purl.obolibrary.org/obo/pso.obo
+  - category: OntologyProduct
+    description: Plant Stress Ontology in OWL format
+    format: owl
+    id: pso.owl
+    name: pso.owl
+    product_file_size: 365840
+    product_url: http://purl.obolibrary.org/obo/pso.owl
+    original_source:
+      - source: pso
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Plant Stress Ontology in OBO format
+    format: obo
+    id: pso.obo
+    name: pso.obo
+    product_file_size: 241726
+    product_url: http://purl.obolibrary.org/obo/pso.obo
+    original_source:
+      - source: pso
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/Planteome/plant-stress-ontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
-  title: 'The Planteome database: an integrated resource for reference ontologies,
-    plant genomics and phenomics.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+    title: 'The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.'
 ---
+
 ## Description
 
 The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.

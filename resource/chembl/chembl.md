@@ -31,9 +31,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/chembl/
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for accessing ChEMBL data programmatically
     id: chembl.api
@@ -43,9 +40,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/chembl/api/data/docs
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: PostgreSQL database dump of the complete ChEMBL database
@@ -56,9 +50,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: MySQL database dump of the complete ChEMBL database
@@ -69,9 +60,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: SQLite database file containing the complete ChEMBL database
@@ -82,9 +70,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: Structure data files for all chemical compounds in ChEMBL
@@ -95,9 +80,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: Product
     compression: gzip
     description: RDF version of the ChEMBL database
@@ -108,9 +90,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: SPARQL endpoint for the ChEMBL RDF data
     id: chembl.sparql
@@ -120,9 +99,6 @@ products:
       - source: chembl
         relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/rdf/services/sparql
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: MappingProduct
     description: Mapping between chembl_35 target chembl_ids and UniProt accessions
     id: chembl.map_to_uniprot
@@ -135,9 +111,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1012901
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
-    secondary_source:
-      - source: chembl
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

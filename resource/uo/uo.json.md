@@ -7,4 +7,7 @@ name: uo.json
 product_file_size: 24296
 product_url: http://purl.obolibrary.org/obo/uo.json
 layout: product_detail
+original_source:
+  - source: uo
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,8 +8,5 @@ original_source:
   - source: pubtator
     relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3-api/
-secondary_source:
-  - source: pubtator
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -2,18 +2,17 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: schober@imbi.uni-freiburg.de
-  label: Schober Daniel
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: schober@imbi.uni-freiburg.de
+    label: Schober Daniel
 creation_date: '2025-09-29T00:00:00Z'
-description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic
-  Resonance (NMR) component in a metabolomics investigation.
+description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://msi-ontology.sourceforge.net/
 id: nmr
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -23,20 +22,21 @@ license:
   label: Not specified
 name: NMR-instrument specific component of metabolomics investigations
 products:
-- category: OntologyProduct
-  description: NMR-instrument specific component of metabolomics investigations in
-    OWL format
-  format: owl
-  id: nmr.owl
-  name: nmr.owl
-  product_url: http://purl.obolibrary.org/obo/nmr.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
+  - category: OntologyProduct
+    description: NMR-instrument specific component of metabolomics investigations in OWL format
+    format: owl
+    id: nmr.owl
+    name: nmr.owl
+    product_url: http://purl.obolibrary.org/obo/nmr.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting to URL'
+    original_source:
+      - source: nmr
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.

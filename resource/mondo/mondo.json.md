@@ -7,4 +7,7 @@ name: Mondo JSON edition
 product_file_size: 102877798
 product_url: http://purl.obolibrary.org/obo/mondo.json
 layout: product_detail
+original_source:
+  - source: mondo
+    relation_type: prov:hadPrimarySource
 ---

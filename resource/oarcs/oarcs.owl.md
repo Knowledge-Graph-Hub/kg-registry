@@ -7,4 +7,7 @@ name: oarcs.owl
 product_file_size: 27840
 product_url: http://purl.obolibrary.org/obo/oarcs.owl
 layout: product_detail
+original_source:
+  - source: oarcs
+    relation_type: prov:hadPrimarySource
 ---

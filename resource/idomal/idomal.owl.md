@@ -7,4 +7,7 @@ name: idomal.owl
 product_file_size: 309674
 product_url: http://purl.obolibrary.org/obo/idomal.owl
 layout: product_detail
+original_source:
+  - source: idomal
+    relation_type: prov:hadPrimarySource
 ---
