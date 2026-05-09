@@ -24,6 +24,69 @@ function sourceAssociationId(sourceAssociation) {
   return '';
 }
 
+function sourceAssociationRelation(sourceAssociation, defaultRelation = 'derived_from') {
+  if (sourceAssociation && typeof sourceAssociation === 'object' && typeof sourceAssociation.relation_type === 'string') {
+    return sourceAssociation.relation_type.trim() || defaultRelation;
+  }
+  return defaultRelation;
+}
+
+function productSourceAssociations(product) {
+  const associations = [];
+
+  if (product.original_source && Array.isArray(product.original_source)) {
+    product.original_source.forEach(sourceAssociation => {
+      associations.push({
+        association: sourceAssociation,
+        defaultRelation: 'prov:hadPrimarySource'
+      });
+    });
+  }
+
+  if (product.secondary_source && Array.isArray(product.secondary_source)) {
+    product.secondary_source.forEach(sourceAssociation => {
+      associations.push({
+        association: sourceAssociation,
+        defaultRelation: 'prov:wasInfluencedBy'
+      });
+    });
+  }
+
+  return associations;
+}
+
+function edgeSourceId(edge) {
+  return typeof edge.source === 'object' ? edge.source.id : edge.source;
+}
+
+function edgeTargetId(edge) {
+  return typeof edge.target === 'object' ? edge.target.id : edge.target;
+}
+
+function edgeRelationType(edge) {
+  return edge.relationType || edge.type || '';
+}
+
+function edgeRelationLabel(edge) {
+  const relationType = edgeRelationType(edge);
+  const labels = {
+    'prov:hadPrimarySource': 'had primary source',
+    'prov:wasDerivedFrom': 'was derived from',
+    'prov:wasInfluencedBy': 'was influenced by',
+    'prov:wasInformedBy': 'was informed by',
+    'prov:used': 'used',
+    'has_product': 'has product',
+    'has_component': 'has component',
+    'shared_domain': 'shared domain',
+    'derived_from': 'derived from'
+  };
+  return labels[relationType] || relationType.replace(/^prov:/, '').replace(/_/g, ' ');
+}
+
+function edgeTriple(edge) {
+  return `${edgeSourceId(edge)} ${edgeRelationType(edge)} ${edgeTargetId(edge)}`;
+}
+
 /**
  * Generate a link to the registry page for a node
  */
@@ -113,11 +176,12 @@ let displayedGraph = { nodes: [], links: [] }; // Currently displayed graph
 let activeResourceIds = new Set(); // Set of resource IDs currently in the graph
 let simulation;
 let svg;
-let linkElements, nodeElements, textElements, iconElements;
+let linkElements, nodeElements, textElements, iconElements, edgeLabelElements;
 let selectedNode = null;
 let showProducts = true;
 let showDomainConnections = false;
 let showIcons = true;
+let showEdgeTypes = false;
 
 // Initialize the visualization
 document.addEventListener('DOMContentLoaded', () => {
@@ -278,18 +342,17 @@ function addResourcesToGraph(resourceIds) {
         });
 
         // Create links to all source resources (whether in graph or not)
-        if (product.original_source && Array.isArray(product.original_source)) {
-          product.original_source.forEach(sourceAssociation => {
-            const sourceId = sourceAssociationId(sourceAssociation);
-            if (!sourceId) return;
-            // Create link to source resource regardless of whether it's displayed
-            displayedGraph.links.push({
-              source: productId,
-              target: sourceId,
-              type: 'derived_from'
-            });
+        productSourceAssociations(product).forEach(({ association, defaultRelation }) => {
+          const sourceId = sourceAssociationId(association);
+          if (!sourceId) return;
+          // Create link to source resource regardless of whether it's displayed
+          displayedGraph.links.push({
+            source: productId,
+            target: sourceId,
+            type: 'derived_from',
+            relationType: sourceAssociationRelation(association, defaultRelation)
           });
-        }
+        });
       });
     }
 
@@ -382,8 +445,8 @@ function removeResourceFromGraph(resourceId) {
   // Remove related links
   const nodeIds = new Set(displayedGraph.nodes.map(n => n.id));
   displayedGraph.links = displayedGraph.links.filter(link => {
-    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    const sourceId = edgeSourceId(link);
+    const targetId = edgeTargetId(link);
     return nodeIds.has(sourceId) && nodeIds.has(targetId);
   });
 
@@ -417,8 +480,8 @@ function updateGraph() {
   // Filter links to only include those where both source and target nodes exist in the graph
   const nodeIds = new Set(displayedGraph.nodes.map(n => n.id));
   const validLinks = displayedGraph.links.filter(link => {
-    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    const sourceId = edgeSourceId(link);
+    const targetId = edgeTargetId(link);
     return nodeIds.has(sourceId) && nodeIds.has(targetId);
   });
 
@@ -426,7 +489,7 @@ function updateGraph() {
 
   // Update links
   linkElements = g.selectAll('line')
-    .data(validLinks, d => `${d.source.id || d.source}-${d.target.id || d.target}`);
+    .data(validLinks, d => `${edgeSourceId(d)}-${edgeTargetId(d)}-${edgeRelationType(d)}`);
 
   linkElements.exit().remove();
 
@@ -437,6 +500,29 @@ function updateGraph() {
     .attr('stroke-opacity', config.links.opacity.default);
 
   linkElements = linkEnter.merge(linkElements);
+  linkElements.selectAll('title').remove();
+  linkElements.append('title').text(edgeTriple);
+
+  // Update edge labels
+  edgeLabelElements = g.selectAll('text.edge-label')
+    .data(validLinks, d => `${edgeSourceId(d)}-${edgeTargetId(d)}-${edgeRelationType(d)}`);
+
+  edgeLabelElements.exit().remove();
+
+  const edgeLabelEnter = edgeLabelElements.enter()
+    .append('text')
+    .attr('class', 'edge-label')
+    .attr('font-size', 9)
+    .attr('text-anchor', 'middle')
+    .attr('pointer-events', 'none')
+    .text(edgeRelationLabel);
+
+  edgeLabelElements = edgeLabelEnter.merge(edgeLabelElements)
+    .text(edgeRelationLabel)
+    .style('display', showEdgeTypes ? 'block' : 'none');
+
+  edgeLabelElements.selectAll('title').remove();
+  edgeLabelElements.append('title').text(edgeTriple);
 
   // Update nodes
   nodeElements = g.selectAll('circle')
@@ -495,13 +581,14 @@ function updateGraph() {
   iconElements.style('display', showIcons ? 'block' : 'none');
 
   // Update labels
-  textElements = g.selectAll('text')
+  textElements = g.selectAll('text.node-label')
     .data(displayedGraph.nodes, d => d.id);
 
   textElements.exit().remove();
 
   const textEnter = textElements.enter()
     .append('text')
+    .attr('class', 'node-label')
     .attr('font-size', 10)
     .attr('dx', 12)
     .attr('dy', 4)
@@ -525,6 +612,10 @@ function updateGraph() {
       .attr('y1', d => d.source.y)
       .attr('x2', d => d.target.x)
       .attr('y2', d => d.target.y);
+
+    edgeLabelElements
+      .attr('x', d => (d.source.x + d.target.x) / 2)
+      .attr('y', d => (d.source.y + d.target.y) / 2);
 
     nodeElements
       .attr('cx', d => d.x)
@@ -584,8 +675,8 @@ function calculateConnectedComponents() {
   });
 
   displayedGraph.links.forEach(link => {
-    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    const sourceId = edgeSourceId(link);
+    const targetId = edgeTargetId(link);
 
     if (adjacencyList.has(sourceId)) {
       adjacencyList.get(sourceId).push(targetId);
@@ -710,6 +801,14 @@ function setupControls() {
     }
   });
 
+  // Show edge types checkbox
+  document.getElementById('show-edge-types').addEventListener('change', (e) => {
+    showEdgeTypes = e.target.checked;
+    if (edgeLabelElements) {
+      edgeLabelElements.style('display', showEdgeTypes ? 'block' : 'none');
+    }
+  });
+
   // Search input for filtering resources
   document.getElementById('search-input').addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
@@ -788,8 +887,8 @@ function expandNode(node) {
       if (n.parentId) {
         // For each product, find its sources
         displayedGraph.links.forEach(link => {
-          const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-          const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+          const sourceId = edgeSourceId(link);
+          const targetId = edgeTargetId(link);
 
           if (sourceId === node.id && link.type === 'derived_from') {
             if (allResourceMap[targetId] && !displayedGraph.nodes.find(n => n.id === targetId)) {
@@ -806,15 +905,13 @@ function expandNode(node) {
     if (parentResource && parentResource.products) {
       parentResource.products.forEach(product => {
         if (product.id === node.id || product.product_url === node.url) {
-          if (product.original_source && Array.isArray(product.original_source)) {
-            product.original_source.forEach(sourceAssociation => {
-              const sourceId = sourceAssociationId(sourceAssociation);
-              if (!sourceId) return;
-              if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
-                resourcesToAdd.add(sourceId);
-              }
-            });
-          }
+          productSourceAssociations(product).forEach(({ association }) => {
+            const sourceId = sourceAssociationId(association);
+            if (!sourceId) return;
+            if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
+              resourcesToAdd.add(sourceId);
+            }
+          });
         }
       });
     }
@@ -830,18 +927,16 @@ function expandNode(node) {
       return;
     }
 
-    // Add resources referenced in products' original_source
+    // Add resources referenced in products' source associations
     if (showProducts && resource.products && Array.isArray(resource.products)) {
       resource.products.forEach((product) => {
-        if (product.original_source && Array.isArray(product.original_source)) {
-          product.original_source.forEach(sourceAssociation => {
-            const sourceId = sourceAssociationId(sourceAssociation);
-            if (!sourceId) return;
-            if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
-              resourcesToAdd.add(sourceId);
-            }
-          });
-        }
+        productSourceAssociations(product).forEach(({ association }) => {
+          const sourceId = sourceAssociationId(association);
+          if (!sourceId) return;
+          if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
+            resourcesToAdd.add(sourceId);
+          }
+        });
       });
     }
 
@@ -886,8 +981,8 @@ function hideNode(node) {
     // Remove related links
     const nodeIds = new Set(displayedGraph.nodes.map(n => n.id));
     displayedGraph.links = displayedGraph.links.filter(link => {
-      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+      const sourceId = edgeSourceId(link);
+      const targetId = edgeTargetId(link);
       return nodeIds.has(sourceId) && nodeIds.has(targetId);
     });
 
@@ -910,8 +1005,8 @@ function selectNode(node) {
 
       // Check if connected
       const isConnected = displayedGraph.links.some(link => {
-        const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-        const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+        const sourceId = edgeSourceId(link);
+        const targetId = edgeTargetId(link);
         return (sourceId === node.id && targetId === d.id) ||
           (targetId === node.id && sourceId === d.id);
       });
@@ -921,17 +1016,26 @@ function selectNode(node) {
 
   linkElements
     .attr('stroke-width', d => {
-      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+      const sourceId = edgeSourceId(d);
+      const targetId = edgeTargetId(d);
       return (sourceId === node.id || targetId === node.id) ?
         config.links.width.highlighted : config.links.width.default;
     })
     .style('opacity', d => {
-      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+      const sourceId = edgeSourceId(d);
+      const targetId = edgeTargetId(d);
       return (sourceId === node.id || targetId === node.id) ?
         config.links.opacity.highlighted : 0.2;
     });
+
+  if (edgeLabelElements) {
+    edgeLabelElements
+      .style('opacity', d => {
+        const sourceId = edgeSourceId(d);
+        const targetId = edgeTargetId(d);
+        return (sourceId === node.id || targetId === node.id) ? 1 : 0.2;
+      });
+  }
 
   // Show node details panel
   showNodeDetails(node);
@@ -972,6 +1076,9 @@ function hideNodeDetails() {
   linkElements
     .attr('stroke-width', config.links.width.default)
     .style('opacity', config.links.opacity.default);
+  if (edgeLabelElements) {
+    edgeLabelElements.style('opacity', 1);
+  }
 }
 
 /**
@@ -1179,13 +1286,13 @@ function exportAsTSV() {
 
   // Add each link
   displayedGraph.links.forEach(link => {
-    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    const sourceId = edgeSourceId(link);
+    const targetId = edgeTargetId(link);
     const sourceNode = displayedGraph.nodes.find(n => n.id === sourceId);
     const targetNode = displayedGraph.nodes.find(n => n.id === targetId);
 
     if (sourceNode && targetNode) {
-      tsv += `${sourceId}\t${targetId}\t${link.type}\t${sourceNode.name}\t${targetNode.name}\t${sourceNode.type}\t${targetNode.type}\n`;
+      tsv += `${sourceId}\t${targetId}\t${edgeRelationType(link)}\t${sourceNode.name}\t${targetNode.name}\t${sourceNode.type}\t${targetNode.type}\n`;
     }
   });
 
