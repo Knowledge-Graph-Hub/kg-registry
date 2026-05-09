@@ -598,7 +598,14 @@ layout: default
               ❔
               {% endif %}
             </td>
-            <td>{{page_source_relation_type}}</td>
+            {% assign page_source_relation_label = page_source_relation_type | remove: "prov:" | replace: "hadPrimarySource", "had primary source" | replace: "wasDerivedFrom", "was derived from" | replace: "wasInfluencedBy", "was influenced by" | replace: "wasInformedBy", "was informed by" | replace: "used", "used" %}
+            <td>
+              {% if page_source_relation_type %}
+              <span title="{{p.id | escape}} {{page_source_relation_type | escape}} {{page.id | escape}}" style="text-decoration: underline dotted; cursor: help;">{{page_source_relation_label}}</span>
+              {% else %}
+              ❔
+              {% endif %}
+            </td>
             <td>
               {{ p.description | truncate: 40 }}
             </td>

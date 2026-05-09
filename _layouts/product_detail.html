@@ -240,11 +240,14 @@ layout: default
             {% for source_association in page.secondary_source %}
             {% assign source = source_association.source | default: source_association %}
             {% assign relation_type = source_association.relation_type | default: "prov:wasInfluencedBy" %}
+            {% assign relation_label = relation_type | remove: "prov:" | replace: "hadPrimarySource", "had primary source" | replace: "wasDerivedFrom", "was derived from" | replace: "wasInfluencedBy", "was influenced by" | replace: "wasInformedBy", "was informed by" | replace: "used", "used" %}
             <tr>
               <td>
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
               </td>
-              <td>{{relation_type}}</td>
+              <td>
+                <span title="{{page.id | escape}} {{relation_type | escape}} {{source | escape}}" style="text-decoration: underline dotted; cursor: help;">{{relation_label}}</span>
+              </td>
               {% endfor %}
           </tbody>
         </table>
