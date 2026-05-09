@@ -23,6 +23,10 @@ import requests
 import yaml
 
 from common import RESOURCE_DIR, ROOT, load_frontmatter_file
+try:
+    from util.source_associations import iter_source_ids
+except ModuleNotFoundError:
+    from source_associations import iter_source_ids
 
 # Products in these categories are generally interfaces; provenance source
 # metadata is less meaningful than for data products.
@@ -772,8 +776,10 @@ def build_dashboard_data(
 
             category = str(product.get("category", ""))
             if category not in INTERFACE_CATEGORIES:
-                original_source = ensure_list(product.get("original_source"))
-                has_source = any(is_non_empty_text(source) for source in original_source)
+                has_source = any(
+                    is_non_empty_text(source)
+                    for source in iter_source_ids(product.get("original_source"))
+                )
                 if not has_source:
                     products_missing_original_source += 1
                     missing_source_for_resource += 1

@@ -21,6 +21,17 @@ import yaml
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
 
+try:
+    from util.source_associations import (
+        ORIGINAL_SOURCE_RELATION,
+        merge_source_associations,
+    )
+except ModuleNotFoundError:
+    from source_associations import (
+        ORIGINAL_SOURCE_RELATION,
+        merge_source_associations,
+    )
+
 __author__ = "kg-registry-team"
 
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -226,17 +237,21 @@ def update_resource_infores(
 
                     if original_sources:
                         current_sources = product.get('original_source', [])
-                        # Merge with existing sources (avoid duplicates)
-                        if not current_sources:
-                            current_sources = []
-                        merged_sources = list(set(current_sources + original_sources))
-                        merged_sources.sort()
+                        merged_sources = merge_source_associations(
+                            current_sources,
+                            original_sources,
+                            ORIGINAL_SOURCE_RELATION,
+                        )
 
                         if merged_sources != current_sources:
                             if not dry_run:
                                 product['original_source'] = merged_sources
                             modified = True
-                            new_sources = set(merged_sources) - set(current_sources)
+                            current_source_ids = {
+                                source.get("source") if isinstance(source, dict) else source
+                                for source in current_sources
+                            }
+                            new_sources = set(original_sources) - current_source_ids
                             if new_sources:
                                 messages.append(
                                     f"      └─ Added original_source: {', '.join(new_sources)}")

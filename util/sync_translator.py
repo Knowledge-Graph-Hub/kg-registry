@@ -25,6 +25,17 @@ from urllib.request import urlopen
 import frontmatter  # type: ignore
 import yaml
 
+try:
+    from util.source_associations import (
+        make_original_source_associations,
+        make_secondary_source_associations,
+    )
+except ModuleNotFoundError:
+    from source_associations import (
+        make_original_source_associations,
+        make_secondary_source_associations,
+    )
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -365,9 +376,9 @@ class TranslatorSync:
                 mapped_resource_id=mapped_primary_source,
                 existing_name=existing_name,
             ),
-            "original_source": mapped_sources,
+            "original_source": make_original_source_associations(mapped_sources),
             "product_url": f"{self.RELEASES_BASE_URL}/{release_key}/latest/",
-            "secondary_source": ["translator"],
+            "secondary_source": make_secondary_source_associations(["translator"]),
         }
 
         if isinstance(latest_version, str) and latest_version.strip():

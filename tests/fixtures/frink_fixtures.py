@@ -54,7 +54,10 @@ def frink_existing_resource_example():
                 "description": "Old endpoint description",
                 "category": "ProgrammingInterface",
                 "product_url": "https://old.example.org/sparql",
-                "original_source": ["prokn", "legacy"],
+                "original_source": [
+                    {"source": "prokn", "relation_type": "prov:hadPrimarySource"},
+                    {"source": "legacy", "relation_type": "prov:hadPrimarySource"},
+                ],
             },
         ],
         "contacts": [

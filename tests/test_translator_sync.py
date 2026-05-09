@@ -34,8 +34,12 @@ def test_build_product_uses_latest_url_and_concrete_versions():
         "2026_03_06",
         "bindingdb_202603_2f3418c8_2025sep1_4.3.6",
     ]
-    assert product["original_source"] == ["bindingdb"]
-    assert product["secondary_source"] == ["translator"]
+    assert product["original_source"] == [
+        {"source": "bindingdb", "relation_type": "prov:hadPrimarySource"}
+    ]
+    assert product["secondary_source"] == [
+        {"source": "translator", "relation_type": "prov:wasInfluencedBy"}
+    ]
     assert product["node_count"] == 736988
     assert product["edge_count"] == 1045781
     assert product["compatibility"] == [{"standard": "biolink", "version": "4.3.6"}]
@@ -77,14 +81,14 @@ def test_build_product_maps_translator_aggregate_sources_to_registry_ids():
     assert product["id"] == "translator.translator_kg.graph"
     assert product["name"] == "Translator Aggregate KGX Graph"
     assert product["original_source"] == [
-        "alliance",
-        "drug-approvals-kp",
-        "drugrephub",
-        "go-cam",
-        "hp",
-        "icees-kg",
-        "ncbigene",
-        "text-mining-kp",
+        {"source": "alliance", "relation_type": "prov:hadPrimarySource"},
+        {"source": "drug-approvals-kp", "relation_type": "prov:hadPrimarySource"},
+        {"source": "drugrephub", "relation_type": "prov:hadPrimarySource"},
+        {"source": "go-cam", "relation_type": "prov:hadPrimarySource"},
+        {"source": "hp", "relation_type": "prov:hadPrimarySource"},
+        {"source": "icees-kg", "relation_type": "prov:hadPrimarySource"},
+        {"source": "ncbigene", "relation_type": "prov:hadPrimarySource"},
+        {"source": "text-mining-kp", "relation_type": "prov:hadPrimarySource"},
     ]
     assert product["latest_version"] == "2026_03_27"
     assert product["versions"] == ["2026_03_27"]

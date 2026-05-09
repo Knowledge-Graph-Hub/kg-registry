@@ -42,7 +42,9 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
                     "category": "GraphProduct",
                     "name": "Download",
                     "format": "tsv",
-                    "original_source": ["stubres"],
+                    "original_source": [
+                        {"source": "stubres", "relation_type": "prov:hadPrimarySource"}
+                    ],
                     "product_url": "https://example.org/bad-link",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2026-02-10: timeout"
