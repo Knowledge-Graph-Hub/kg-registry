@@ -921,6 +921,18 @@
         return '';
     }
 
+    function normalizeProvenanceDiagramData(data) {
+        return {
+            ...data,
+            originalSources: Array.isArray(data.originalSources)
+                ? data.originalSources.map(sourceAssociationId).filter(source => source !== '')
+                : [],
+            secondarySources: Array.isArray(data.secondarySources)
+                ? data.secondarySources.map(sourceAssociationId).filter(source => source !== '')
+                : []
+        };
+    }
+
     // Function to validate PROV export data
     function validateProvData(data) {
         // Create a validated copy of the data
@@ -1227,7 +1239,7 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         const provenanceContainers = document.querySelectorAll('.provenance-diagram');
         
         for (const container of provenanceContainers) {
-            const data = JSON.parse(container.getAttribute('data-provenance'));
+            const data = normalizeProvenanceDiagramData(JSON.parse(container.getAttribute('data-provenance')));
 
             // Set up the legend toggle button
             const containerCardBody = container.closest('.card-body');
