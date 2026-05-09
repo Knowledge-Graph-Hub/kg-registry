@@ -6,10 +6,12 @@ format: fasta
 id: uniprot.trembl.fasta
 name: Unreviewed (TrEMBL) FASTA
 original_source:
-- uniprot
+  - source: uniprot
+    relation_type: prov:hadPrimarySource
 product_file_size: 63579343267
 product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz
 secondary_source:
-- uniprot
+  - source: uniprot
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -6,7 +6,8 @@ id: ecocyc.api
 is_public: true
 name: EcoCyc Web Services
 original_source:
-- ecocyc
+  - source: ecocyc
+    relation_type: prov:hadPrimarySource
 product_url: https://ecocyc.org/web-services.shtml
 layout: product_detail
 ---

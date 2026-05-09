@@ -5,7 +5,8 @@ format: tsv
 id: interpro.parent_child_tree
 name: Parent-Child Tree
 original_source:
-- interpro
+  - source: interpro
+    relation_type: prov:hadPrimarySource
 product_file_size: 627613
 product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt
 layout: product_detail

@@ -7,9 +7,11 @@ is_neo4j: true
 is_public: true
 name: PanKGraph API
 original_source:
-- pankbase
+  - source: pankbase
+    relation_type: prov:hadPrimarySource
 product_url: https://pankgraph.org/api
 secondary_source:
-- pankbase
+  - source: pankbase
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

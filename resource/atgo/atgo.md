@@ -2,19 +2,15 @@
 activity_status: inactive
 category: Ontology
 contacts:
-- category: Individual
-  label: Trey Ideker
-- category: Individual
-  label: Subramaniam Subramani
+  - category: Individual
+    label: Trey Ideker
+  - category: Individual
+    label: Subramaniam Subramani
 creation_date: '2025-10-30T00:00:00Z'
-description: ATGO (Autophagy Ontology) is a hierarchical functional ontology of autophagy
-  processes built through Active Interaction Mapping of genetic interaction data from
-  Saccharomyces cerevisiae. The second-generation ontology contains 220 functions
-  representing autophagy organization including vesicle transport, cell cycle, and
-  stress response pathways.
+description: ATGO (Autophagy Ontology) is a hierarchical functional ontology of autophagy processes built through Active Interaction Mapping of genetic interaction data from Saccharomyces cerevisiae. The second-generation ontology contains 220 functions representing autophagy organization including vesicle transport, cell cycle, and stress response pathways.
 domains:
-- biological systems
-- systems biology
+  - biological systems
+  - systems biology
 homepage_url: http://atgo.ucsd.edu/
 id: atgo
 infores_id: atgo
@@ -22,129 +18,58 @@ last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 name: Autophagy Ontology
 products:
-- category: OntologyProduct
-  description: Second-generation hierarchical ontology of 220 autophagy functions
-    built from 156,364 synthetic-lethal genetic interactions across autophagy-activating
-    conditions in Saccharomyces cerevisiae.
-  id: atgo.ontology
-  name: ATGO Hierarchical Ontology
-  original_source:
-  - atgo
-  product_url: http://atgo.ucsd.edu/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-01-06_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu',
-    port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-  - File was not able to be retrieved when checked on 2025-12-13_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fb70a995de0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f1820ddb470>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f20808aa410>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f8e7e642bd0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-11_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f643ec4e980>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-09_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f27e2fc30a0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f1b77aa6c50>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-08_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fa6d3a1cca0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-07_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fa0ec285880>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-05_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f3acffafe50>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f3d84d44ca0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fd6e7c0c320>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fe0f79162c0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f435f93f250>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7f7a1bb3c350>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fecb4d8bdf0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fa9b784b9a0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
+  - category: OntologyProduct
+    description: Second-generation hierarchical ontology of 220 autophagy functions built from 156,364 synthetic-lethal genetic interactions across autophagy-activating conditions in Saccharomyces cerevisiae.
+    id: atgo.ontology
+    name: ATGO Hierarchical Ontology
+    original_source:
+      - source: atgo
+        relation_type: prov:hadPrimarySource
+    product_url: http://atgo.ucsd.edu/
+    warnings:
+      - File was not able to be retrieved when checked on 2026-01-06_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError("HTTPConnection(host='atgo.ucsd.edu', port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
+      - File was not able to be retrieved when checked on 2025-12-13_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb70a995de0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-11_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1820ddb470>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-11_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f20808aa410>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-11_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8e7e642bd0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-11_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f643ec4e980>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-09_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f27e2fc30a0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-08_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1b77aa6c50>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-08_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa6d3a1cca0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-07_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa0ec285880>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-05_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3acffafe50>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3d84d44ca0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd6e7c0c320>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe0f79162c0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f435f93f250>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-11-25_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7a1bb3c350>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-11-25_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fecb4d8bdf0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
+      - File was not able to be retrieved when checked on 2025-11-22_ Error connecting to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa9b784b9a0>_ Failed to establish a new connection_ [Errno 111] Connection refused'))
 publications:
-- authors:
-  - Michael H Kramer
-  - Jean-Claude Farré
-  - Koyel Mitra
-  - Michael Ku Yu
-  - Keiichiro Ono
-  - Barry Demchak
-  - Katherine Licon
-  - Mikayla Flagg
-  - Rama Balakrishnan
-  - J Michael Cherry
-  - Trey Ideker
-  - Subramaniam Subramani
-  doi: 10.1016/j.molcel.2016.12.024
-  id: PMID:28132844
-  journal: Molecular Cell
-  title: Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy
-  year: '2017'
+  - authors:
+      - Michael H Kramer
+      - Jean-Claude Farré
+      - Koyel Mitra
+      - Michael Ku Yu
+      - Keiichiro Ono
+      - Barry Demchak
+      - Katherine Licon
+      - Mikayla Flagg
+      - Rama Balakrishnan
+      - J Michael Cherry
+      - Trey Ideker
+      - Subramaniam Subramani
+    doi: 10.1016/j.molcel.2016.12.024
+    id: PMID:28132844
+    journal: Molecular Cell
+    title: Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy
+    year: '2017'
 synonyms:
-- ATGO
+  - ATGO
 taxon:
-- NCBITaxon:4932
+  - NCBITaxon:4932
 ---
+
 # Autophagy Ontology
 
 ## Overview

@@ -5,26 +5,45 @@ format: http
 id: microbiomekg.api
 name: MicrobiomeKG Plover API
 original_source:
-- biolink
-- chebi
-- ncbitaxon
-- ncbigene
-- mesh
-- pubchem
-- go
-- mondo
-- ncit
-- efo
-- uniprot
-- rhea
-- pr
-- uberon
-- panther
-- hgnc
-- drugbank
-- eupathdb
+  - source: biolink
+    relation_type: prov:hadPrimarySource
+  - source: chebi
+    relation_type: prov:hadPrimarySource
+  - source: ncbitaxon
+    relation_type: prov:hadPrimarySource
+  - source: ncbigene
+    relation_type: prov:hadPrimarySource
+  - source: mesh
+    relation_type: prov:hadPrimarySource
+  - source: pubchem
+    relation_type: prov:hadPrimarySource
+  - source: go
+    relation_type: prov:hadPrimarySource
+  - source: mondo
+    relation_type: prov:hadPrimarySource
+  - source: ncit
+    relation_type: prov:hadPrimarySource
+  - source: efo
+    relation_type: prov:hadPrimarySource
+  - source: uniprot
+    relation_type: prov:hadPrimarySource
+  - source: rhea
+    relation_type: prov:hadPrimarySource
+  - source: pr
+    relation_type: prov:hadPrimarySource
+  - source: uberon
+    relation_type: prov:hadPrimarySource
+  - source: panther
+    relation_type: prov:hadPrimarySource
+  - source: hgnc
+    relation_type: prov:hadPrimarySource
+  - source: drugbank
+    relation_type: prov:hadPrimarySource
+  - source: eupathdb
+    relation_type: prov:hadPrimarySource
 product_url: https://multiomics.transltr.io/mbkp
 secondary_source:
-- microbiomekg
+  - source: microbiomekg
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

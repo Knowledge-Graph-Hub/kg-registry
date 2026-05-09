@@ -6,9 +6,11 @@ format: sdf
 id: pubchem.substances.sdf
 name: PubChem Substances SDF
 original_source:
-- pubchem
+  - source: pubchem
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/
 secondary_source:
-- pubchem
+  - source: pubchem
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

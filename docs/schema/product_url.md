@@ -15,8 +15,7 @@ _The URL of the product. This may be a link to download a specific file, a base 
 
 
 URI: [kgr:product_url](https://w3id.org/bridge2ai/data-sheets-schema/product_url)
-
-
+Alias: product_url
 
 <!-- no inheritance hierarchy -->
 
@@ -28,14 +27,15 @@ URI: [kgr:product_url](https://w3id.org/bridge2ai/data-sheets-schema/product_url
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
-| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
-| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
-| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
+| [DocumentationProduct](DocumentationProduct.html) | A product that is documentation for a resource |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that provides the rules of a data model |  no  |
 | [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
 | [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-
+| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
+| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
+| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
+| [OntologyProduct](OntologyProduct.html) | A product that is an ontology, a formal representation of a set of concepts w... |  no  |
+| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
 
 
 
@@ -49,9 +49,7 @@ URI: [kgr:product_url](https://w3id.org/bridge2ai/data-sheets-schema/product_url
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

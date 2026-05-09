@@ -6,7 +6,8 @@ id: kegg.api
 is_public: true
 name: KEGG REST API
 original_source:
-- kegg
+  - source: kegg
+    relation_type: prov:hadPrimarySource
 product_url: https://www.kegg.jp/kegg/rest/
 layout: product_detail
 ---

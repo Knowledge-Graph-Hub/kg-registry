@@ -12,7 +12,7 @@ _The type of compression used with a product._
 
 
 
-URI: [CompressionEnum](CompressionEnum.html)
+URI: [kgr:CompressionEnum](https://w3id.org/bridge2ai/data-sheets-schema/CompressionEnum)
 
 ## Permissible Values
 
@@ -41,9 +41,7 @@ URI: [CompressionEnum](CompressionEnum.html)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

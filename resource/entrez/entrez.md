@@ -2,21 +2,17 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.ncbi.nlm.nih.gov/home/about/contact/
-  id: ncbi
-  label: NCBI
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.ncbi.nlm.nih.gov/home/about/contact/
+    id: ncbi
+    label: NCBI
 creation_date: '2025-11-05T00:00:00Z'
-description: Entrez is NCBI's primary text search and retrieval system that integrates
-  multiple biological databases including PubMed, GenBank, Gene, Protein, and many
-  others. It provides a unified query interface and retrieval mechanism across NCBI's
-  vast collection of biomedical and genomic data resources, enabling researchers to
-  search and access information from disparate databases using a single query system.
+description: Entrez is NCBI's primary text search and retrieval system that integrates multiple biological databases including PubMed, GenBank, Gene, Protein, and many others. It provides a unified query interface and retrieval mechanism across NCBI's vast collection of biomedical and genomic data resources, enabling researchers to search and access information from disparate databases using a single query system.
 domains:
-- biomedical
-- literature
+  - biomedical
+  - literature
 homepage_url: https://www.ncbi.nlm.nih.gov/Web/Search/entrezfs.html
 id: entrez
 infores_id: entrez
@@ -24,37 +20,40 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: Entrez
 products:
-- category: ProgrammingInterface
-  description: E-utilities API for programmatic access to Entrez databases
-  format: http
-  id: entrez.eutils
-  name: Entrez E-utilities
-  original_source:
-  - entrez
-  product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
-- category: GraphicalInterface
-  description: Web-based search interface for Entrez databases
-  format: http
-  id: entrez.web
-  name: Entrez Web Interface
-  original_source:
-  - entrez
-  product_url: https://www.ncbi.nlm.nih.gov/sites/gquery
-- category: ProgrammingInterface
-  description: Entrez Direct command-line tools for Unix systems
-  format: mixed
-  id: entrez.edirect
-  name: Entrez Direct (EDirect)
-  original_source:
-  - entrez
-  product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
-  repository: https://github.com/ncbi/entrez-direct
+  - category: ProgrammingInterface
+    description: E-utilities API for programmatic access to Entrez databases
+    format: http
+    id: entrez.eutils
+    name: Entrez E-utilities
+    original_source:
+      - source: entrez
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+  - category: GraphicalInterface
+    description: Web-based search interface for Entrez databases
+    format: http
+    id: entrez.web
+    name: Entrez Web Interface
+    original_source:
+      - source: entrez
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ncbi.nlm.nih.gov/sites/gquery
+  - category: ProgrammingInterface
+    description: Entrez Direct command-line tools for Unix systems
+    format: mixed
+    id: entrez.edirect
+    name: Entrez Direct (EDirect)
+    original_source:
+      - source: entrez
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+    repository: https://github.com/ncbi/entrez-direct
 synonyms:
-- Entrez
-- NCBIGene
-- NCBI Entrez
+  - Entrez
+  - NCBIGene
+  - NCBI Entrez
 taxon:
-- NCBITaxon:1
+  - NCBITaxon:1
 ---
 
 # Entrez

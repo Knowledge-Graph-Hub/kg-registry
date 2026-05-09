@@ -20,7 +20,8 @@ products:
     id: cacao.gowiki
     name: CACAO GO Wiki Page
     original_source:
-      - cacao
+      - source: cacao
+        relation_type: prov:hadPrimarySource
     product_url: http://gowiki.tamu.edu/wiki/index.php/Category:CACAO
   - category: ProgrammingInterface
     connection_url: https://gowiki.tamu.edu/wiki/api.php
@@ -30,7 +31,8 @@ products:
     is_public: true
     name: GO Wiki API
     original_source:
-      - cacao
+      - source: cacao
+        relation_type: prov:hadPrimarySource
     product_url: https://gowiki.tamu.edu/wiki/api.php
 ---
 

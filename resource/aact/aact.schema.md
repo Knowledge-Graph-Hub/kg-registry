@@ -4,7 +4,8 @@ description: Complete database schema documentation showing table structure and 
 id: aact.schema
 name: AACT Database Schema
 original_source:
-- aact
+  - source: aact
+    relation_type: prov:hadPrimarySource
 product_url: https://aact.ctti-clinicaltrials.org/schema
 layout: product_detail
 ---

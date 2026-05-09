@@ -2,18 +2,16 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: chembl-help@ebi.ac.uk
-  id: ebi
-  label: ChEMBL
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: chembl-help@ebi.ac.uk
+    id: ebi
+    label: ChEMBL
 creation_date: '2025-03-09T00:00:00Z'
-description: ChEMBL is a manually curated database of bioactive molecules with drug-like
-  properties. It brings together chemical, bioactivity and genomic data to aid the
-  translation of genomic information into effective new drugs.
+description: ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://www.ebi.ac.uk/chembl/
 id: chembl
 infores_id: chembl
@@ -24,644 +22,977 @@ license:
   label: CC-BY-SA-3.0
 name: ChEMBL
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and exploring ChEMBL data
-  id: chembl.site
-  is_public: true
-  name: ChEMBL Web Interface
-  original_source:
-  - chembl
-  product_url: https://www.ebi.ac.uk/chembl/
-  secondary_source:
-  - chembl
-- category: ProgrammingInterface
-  description: RESTful API for accessing ChEMBL data programmatically
-  id: chembl.api
-  is_public: true
-  name: ChEMBL API
-  original_source:
-  - chembl
-  product_url: https://www.ebi.ac.uk/chembl/api/data/docs
-  secondary_source:
-  - chembl
-- category: Product
-  compression: gzip
-  description: PostgreSQL database dump of the complete ChEMBL database
-  format: postgres
-  id: chembl.postgres
-  name: ChEMBL PostgreSQL
-  original_source:
-  - chembl
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-  secondary_source:
-  - chembl
-- category: Product
-  compression: gzip
-  description: MySQL database dump of the complete ChEMBL database
-  format: mysql
-  id: chembl.mysql
-  name: ChEMBL MySQL
-  original_source:
-  - chembl
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-  secondary_source:
-  - chembl
-- category: Product
-  compression: gzip
-  description: SQLite database file containing the complete ChEMBL database
-  format: sqlite
-  id: chembl.sqlite
-  name: ChEMBL SQLite
-  original_source:
-  - chembl
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-  secondary_source:
-  - chembl
-- category: Product
-  compression: gzip
-  description: Structure data files for all chemical compounds in ChEMBL
-  format: sdf
-  id: chembl.sdf
-  name: ChEMBL SDF
-  original_source:
-  - chembl
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
-  secondary_source:
-  - chembl
-- category: Product
-  compression: gzip
-  description: RDF version of the ChEMBL database
-  format: ttl
-  id: chembl.rdf
-  name: ChEMBL RDF
-  original_source:
-  - chembl
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
-  secondary_source:
-  - chembl
-- category: ProgrammingInterface
-  description: SPARQL endpoint for the ChEMBL RDF data
-  id: chembl.sparql
-  is_public: true
-  name: ChEMBL SPARQL
-  original_source:
-  - chembl
-  product_url: https://www.ebi.ac.uk/rdf/services/sparql
-  secondary_source:
-  - chembl
-- category: MappingProduct
-  description: Mapping between chembl_35 target chembl_ids and UniProt accessions
-  id: chembl.map_to_uniprot
-  is_public: true
-  name: ChEMBL map to UniProt
-  original_source:
-  - chembl
-  - uniprot
-  product_file_size: 1012901
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
-  secondary_source:
-  - chembl
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: GraphProduct
-  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.nodes
-  name: RTX-KG2.10.1c KGX JSONL Nodes
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 376501785
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: GraphProduct
-  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.edges
-  name: RTX-KG2.10.1c KGX JSONL Edges
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 1807360397
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: ProgrammingInterface
-  description: Neo4j distribution of the RTX-KG2 as a graph database
-  dump_format: neo4j
-  id: rtx-kg2.neo4j
-  is_neo4j: true
-  is_public: false
-  name: RTX-KG2 Neo4j
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_url: https://arax.ncats.io/
-  secondary_source:
-  - rtx-kg2
-- category: ProcessProduct
-  description: INDRA CoGEx is a graph database integrating causal relations, ontological
-    relations, properties, and data, assembled at scale automatically from the scientific
-    literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
-  name: INDRA CoGEx Build Code
-  original_source:
-  - chembl
-  - sider
-  - reactome
-  - wikipathways
-  - hp
-  - nihreporter
-  - disgenet
-  - pubmed
-  - gwascatalog
-  - cellmarker
-  - go
-  - bgee
-  - ccle
-  - clinicaltrialsgov
-  - indra
-  product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - indra
-- category: GraphProduct
-  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
-    (KGX) format, containing integrated clinical and environmental exposures data
-    as a knowledge graph with 226 nodes and 14,342 edges
-  format: kgx-jsonl
-  id: icees-kg.graph
-  name: KGX distribution of the ICEES Exposures KP
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-  secondary_source:
-  - icees-kg
-- category: ProgrammingInterface
-  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
-    standardized Translator protocols
-  format: http
-  id: icees-kg.trapi
-  name: ICEES KG TRAPI API
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-  secondary_source:
-  - icees-kg
-- category: Product
-  description: Meta knowledge graph and metadata describing the data sources, node
-    types, edge types, and predicates available in ICEES KG
-  format: json
-  id: icees-kg.metadata
-  name: ICEES KG Metadata
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-  secondary_source:
-  - icees-kg
-- category: GraphProduct
-  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
-    and integrating information from diverse biomedical resources including DRKG,
-    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
-    SIDER, and others).
-  id: ibkh.graph
-  name: iBKH Knowledge Graph
-  original_source:
-  - drkg
-  - idisk
-  - brenda
-  - ctd
-  - drugbank
-  - kegg
-  - pharmgkb
-  - reactome
-  - sider
-  - tissues
-  - bgee
-  - doid
-  - uberon
-  - cl
-  - hgnc
-  - chembl
-  - chebi
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-    version: 4.3.6
-  description: KGX JSONL graph package for ChEMBL distributed via the NCATS Translator
-    release site (release 2026_03_06; build chembl_36_76533eea_2025sep1_4.3.6; source
-    version 36; Biolink 4.3.6; Node Normalizer 2025sep1).
-  edge_count: 267871
-  format: kgx-jsonl
-  id: translator.chembl.graph
-  latest_version: '2026_03_06'
-  license:
-    id: https://opensource.org/license/mit/
-    label: MIT
-  name: Translator ChEMBL KGX Graph
-  node_count: 153369
-  original_source:
-  - chembl
-  product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
-  secondary_source:
-  - translator
-  versions:
-  - '2026_03_06'
-  - chembl_36_76533eea_2025sep1_4.3.6
-- category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 2484982268
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-- category: Product
-  description: chembl.compound Nodes TSV
-  format: tsv
-  id: obo-db-ingest.chembl.compound.tsv
-  license:
-    id: https://creativecommons.org/licenses/by-sa/3.0/
-    label: CC-BY-SA-3.0
-  name: chembl.compound Nodes TSV
-  original_source:
-  - chembl
-  product_file_size: 411222
-  product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: chembl.target Nodes TSV
-  format: tsv
-  id: obo-db-ingest.chembl.target.tsv
-  license:
-    id: https://creativecommons.org/licenses/by-sa/3.0/
-    label: CC-BY-SA-3.0
-  name: chembl.target Nodes TSV
-  original_source:
-  - chembl
-  product_file_size: 260194
-  product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-    version: 4.3.6
-  description: Aggregated KGX JSONL graph package combining 29 Translator release
-    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
-    2025sep1).
-  edge_count: 29243943
-  format: kgx-jsonl
-  id: translator.translator_kg.graph
-  latest_version: '2026_03_27'
-  license:
-    id: https://opensource.org/license/mit/
-    label: MIT
-  name: Translator Aggregate KGX Graph
-  node_count: 1696790
-  original_source:
-  - alliance
-  - bgee
-  - bindingdb
-  - chembl
-  - cohd
-  - ctd
-  - ctkp
-  - drug-approvals-kp
-  - dgidb
-  - diseases
-  - drugrephub
-  - drugcentral
-  - gtopdb
-  - gene2phenotype
-  - geneticskp
-  - go-cam
-  - goa
-  - hp
-  - icees-kg
-  - intact
-  - ncbigene
-  - panther
-  - pathbank
-  - semmeddb
-  - sider
-  - signor
-  - text-mining-kp
-  - ttd
-  - ubergraph
-  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-  secondary_source:
-  - translator
-  versions:
-  - '2026_03_27'
-  - 423af7989cac
+  - category: GraphicalInterface
+    description: Web interface for searching and exploring ChEMBL data
+    id: chembl.site
+    is_public: true
+    name: ChEMBL Web Interface
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/chembl/
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: RESTful API for accessing ChEMBL data programmatically
+    id: chembl.api
+    is_public: true
+    name: ChEMBL API
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/chembl/api/data/docs
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: PostgreSQL database dump of the complete ChEMBL database
+    format: postgres
+    id: chembl.postgres
+    name: ChEMBL PostgreSQL
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: MySQL database dump of the complete ChEMBL database
+    format: mysql
+    id: chembl.mysql
+    name: ChEMBL MySQL
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: SQLite database file containing the complete ChEMBL database
+    format: sqlite
+    id: chembl.sqlite
+    name: ChEMBL SQLite
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: Structure data files for all chemical compounds in ChEMBL
+    format: sdf
+    id: chembl.sdf
+    name: ChEMBL SDF
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: RDF version of the ChEMBL database
+    format: ttl
+    id: chembl.rdf
+    name: ChEMBL RDF
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for the ChEMBL RDF data
+    id: chembl.sparql
+    is_public: true
+    name: ChEMBL SPARQL
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/rdf/services/sparql
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: MappingProduct
+    description: Mapping between chembl_35 target chembl_ids and UniProt accessions
+    id: chembl.map_to_uniprot
+    is_public: true
+    name: ChEMBL map to UniProt
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1012901
+    product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
+    secondary_source:
+      - source: chembl
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: civic
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: pathophenodb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: protcid
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: spoke
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: rtx-kg2
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+    product_file_size: 376501785
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: rtx-kg2
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1807360397
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: rtx-kg2
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+    product_url: https://arax.ncats.io/
+    secondary_source:
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
+  - category: ProcessProduct
+    description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
+    id: indra.cogex.code
+    name: INDRA CoGEx Build Code
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: nihreporter
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: cellmarker
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: ccle
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: indra
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/gyorilab/indra_cogex
+    secondary_source:
+      - source: indra
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges
+    format: kgx-jsonl
+    id: icees-kg.graph
+    name: KGX distribution of the ICEES Exposures KP
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using standardized Translator protocols
+    format: http
+    id: icees-kg.trapi
+    name: ICEES KG TRAPI API
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Meta knowledge graph and metadata describing the data sources, node types, edge types, and predicates available in ICEES KG
+    format: json
+    id: icees-kg.metadata
+    name: ICEES KG Metadata
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing and integrating information from diverse biomedical resources including DRKG, iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome, SIDER, and others).
+    id: ibkh.graph
+    name: iBKH Knowledge Graph
+    original_source:
+      - source: drkg
+        relation_type: prov:hadPrimarySource
+      - source: idisk
+        relation_type: prov:hadPrimarySource
+      - source: brenda
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: pharmgkb
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.3.6
+    description: KGX JSONL graph package for ChEMBL distributed via the NCATS Translator release site (release 2026_03_06; build chembl_36_76533eea_2025sep1_4.3.6; source version 36; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 267871
+    format: kgx-jsonl
+    id: translator.chembl.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator ChEMBL KGX Graph
+    node_count: 153369
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/chembl/latest/
+    secondary_source:
+      - source: translator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - '2026_03_06'
+      - chembl_36_76533eea_2025sep1_4.3.6
+  - category: GraphProduct
+    description: Core UniBioMap graph edges file.
+    format: csv
+    id: unibiomap.links
+    name: UniBioMap Graph Links
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1406201678
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+  - category: GraphProduct
+    description: Auxiliary UniBioMap graph annotations and metadata.
+    format: tsv
+    id: unibiomap.auxs
+    name: UniBioMap Graph Auxiliaries
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 591290539
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+  - category: GraphProduct
+    description: Predicted UniBioMap graph edges with confidence scores.
+    format: csv
+    id: unibiomap.pred
+    name: UniBioMap Predicted Graph
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2484982268
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+  - category: GraphProduct
+    description: Full unfiltered UniBioMap predicted graph edges file.
+    format: csv
+    id: unibiomap.pred.full
+    name: UniBioMap Predicted Graph (Full)
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 6303875907
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+  - category: Product
+    description: chembl.compound Nodes TSV
+    format: tsv
+    id: obo-db-ingest.chembl.compound.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/3.0/
+      label: CC-BY-SA-3.0
+    name: chembl.compound Nodes TSV
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_file_size: 411222
+    product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: chembl.target Nodes TSV
+    format: tsv
+    id: obo-db-ingest.chembl.target.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/3.0/
+      label: CC-BY-SA-3.0
+    name: chembl.target Nodes TSV
+    original_source:
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+    product_file_size: 260194
+    product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.3.6
+    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 29243943
+    format: kgx-jsonl
+    id: translator.translator_kg.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Aggregate KGX Graph
+    node_count: 1696790
+    original_source:
+      - source: alliance
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: cohd
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: ctkp
+        relation_type: prov:hadPrimarySource
+      - source: drug-approvals-kp
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugrephub
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
+      - source: geneticskp
+        relation_type: prov:hadPrimarySource
+      - source: go-cam
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: panther
+        relation_type: prov:hadPrimarySource
+      - source: pathbank
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: signor
+        relation_type: prov:hadPrimarySource
+      - source: text-mining-kp
+        relation_type: prov:hadPrimarySource
+      - source: ttd
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+    secondary_source:
+      - source: translator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - '2026_03_27'
+      - 423af7989cac
 publications:
-- authors:
-  - Zdrazil B
-  - Felix E
-  - Hunter F
-  - Manners EJM
-  - Blackshaw J
-  - Corbett S
-  - de Veij M
-  - Ioannidis H
-  - Mendez Lopez DM
-  - Mosquera JF
-  - Magarinos MP
-  - Bosc N
-  - Arcila R
-  - "Kizil\xF6ren T"
-  - Gaulton A
-  - Bento AP
-  - Adasme MF
-  - Monecke PM
-  - Landrum GA
-  - Leach AR
-  doi: doi:10.1093/nar/gkad1004
-  id: doi:10.1093/nar/gkad1004
-  preferred: true
-  title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple
-    bioactivity data types and time periods'
-  year: '2023'
+  - authors:
+      - Zdrazil B
+      - Felix E
+      - Hunter F
+      - Manners EJM
+      - Blackshaw J
+      - Corbett S
+      - de Veij M
+      - Ioannidis H
+      - Mendez Lopez DM
+      - Mosquera JF
+      - Magarinos MP
+      - Bosc N
+      - Arcila R
+      - "Kizilören T"
+      - Gaulton A
+      - Bento AP
+      - Adasme MF
+      - Monecke PM
+      - Landrum GA
+      - Leach AR
+    doi: doi:10.1093/nar/gkad1004
+    id: doi:10.1093/nar/gkad1004
+    preferred: true
+    title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods'
+    year: '2023'
 repository: https://github.com/chembl
 taxon:
-- NCBITaxon:9606
-- NCBITaxon:10090
+  - NCBITaxon:9606
+  - NCBITaxon:10090
 ---
+
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
 
 The database contains detailed information on:

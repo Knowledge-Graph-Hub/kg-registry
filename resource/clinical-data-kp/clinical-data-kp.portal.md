@@ -5,7 +5,8 @@ format: http
 id: clinical-data-kp.portal
 name: Clinical Data KP Portal
 original_source:
-- clinical-data-kp
+  - source: clinical-data-kp
+    relation_type: prov:hadPrimarySource
 product_url: https://ncats.nih.gov/research/research-activities/translator/projects
 layout: product_detail
 ---

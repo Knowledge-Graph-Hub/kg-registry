@@ -2,15 +2,11 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: MEDI (MATRIX Indication List) is a curated dataset of drug indications
-  and contraindications extracted from FDA DailyMed product labels using large language
-  models. Developed by the Every Cure organization, MEDI provides ground truth data
-  for drug repurposing predictive models by mapping drug-indication and drug-contraindication
-  relationships with standardized disease ontology terms (MONDO).
+description: MEDI (MATRIX Indication List) is a curated dataset of drug indications and contraindications extracted from FDA DailyMed product labels using large language models. Developed by the Every Cure organization, MEDI provides ground truth data for drug repurposing predictive models by mapping drug-indication and drug-contraindication relationships with standardized disease ontology terms (MONDO).
 domains:
-- pharmacology
-- drug discovery
-- clinical
+  - pharmacology
+  - drug discovery
+  - clinical
 homepage_url: https://github.com/everycure-org/matrix-indication-list
 id: medi
 infores_id: medi
@@ -21,24 +17,23 @@ license:
   label: License (see repository)
 name: MeDI
 products:
-- category: Product
-  description: GitHub repository containing the MEDI dataset, extraction pipelines,
-    and processing code for drug indications and contraindications
-  format: mixed
-  id: medi.github
-  name: MEDI GitHub Repository
-  original_source:
-  - medi
-  product_url: https://github.com/everycure-org/matrix-indication-list
-- category: Product
-  description: Latest release of the MEDI dataset containing curated drug-indication
-    and drug-contraindication mappings
-  id: medi.release
-  name: MEDI Dataset Releases
-  product_url: https://github.com/everycure-org/matrix-indication-list/releases
+  - category: Product
+    description: GitHub repository containing the MEDI dataset, extraction pipelines, and processing code for drug indications and contraindications
+    format: mixed
+    id: medi.github
+    name: MEDI GitHub Repository
+    original_source:
+      - source: medi
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/everycure-org/matrix-indication-list
+  - category: Product
+    description: Latest release of the MEDI dataset containing curated drug-indication and drug-contraindication mappings
+    id: medi.release
+    name: MEDI Dataset Releases
+    product_url: https://github.com/everycure-org/matrix-indication-list/releases
 repository: https://github.com/everycure-org/matrix-indication-list
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # MeDI (MATRIX Indication List)

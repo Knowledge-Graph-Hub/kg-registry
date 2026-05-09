@@ -1,12 +1,12 @@
 ---
 category: GraphicalInterface
-description: Web interface for browsing entities, pathways, and visualizing causal
-  signaling graphs
+description: Web interface for browsing entities, pathways, and visualizing causal signaling graphs
 format: http
 id: signor.web
 name: SIGNOR Website
 original_source:
-- signor
+  - source: signor
+    relation_type: prov:hadPrimarySource
 product_url: https://signor.uniroma2.it/
 layout: product_detail
 ---

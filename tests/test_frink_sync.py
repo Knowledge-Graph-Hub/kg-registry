@@ -29,7 +29,7 @@ def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
             "description": "SPARQL endpoint for Protein Knowledge Network",
             "category": "ProgrammingInterface",
             "product_url": "https://frink.apps.renci.org/prokn/sparql",
-            "original_source": ["prokn"],
+            "original_source": [{"source": "prokn", "relation_type": "prov:hadPrimarySource"}],
         },
         {
             "id": "prokn.tpf",
@@ -37,7 +37,7 @@ def test_transform_frink_entry_to_resource(frink_syncer, frink_entry_example):
             "description": "Triple Pattern Fragments endpoint for Protein Knowledge Network",
             "category": "ProgrammingInterface",
             "product_url": "https://frink.apps.renci.org/ldf/prokn",
-            "original_source": ["prokn"],
+            "original_source": [{"source": "prokn", "relation_type": "prov:hadPrimarySource"}],
         },
     ]
 
@@ -62,7 +62,9 @@ def test_merge_preserves_existing_graph_products_and_adds_frink_endpoints(
     assert set(merged_products) == {"prokn.graph", "prokn.sparql", "prokn.tpf"}
     assert merged_products["prokn.graph"]["category"] == "GraphProduct"
     assert merged_products["prokn.sparql"]["product_url"] == "https://frink.apps.renci.org/prokn/sparql"
-    assert merged_products["prokn.sparql"]["original_source"] == ["prokn"]
+    assert merged_products["prokn.sparql"]["original_source"] == [
+        {"source": "prokn", "relation_type": "prov:hadPrimarySource"}
+    ]
     assert merged_products["prokn.tpf"]["product_url"] == "https://frink.apps.renci.org/ldf/prokn"
 
 

@@ -4,9 +4,11 @@ description: Code for Human Phenotype Ontology
 id: hp.code
 name: HP Code
 original_source:
-- hp
+  - source: hp
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/obophenotype/human-phenotype-ontology
 secondary_source:
-- hp
+  - source: hp
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

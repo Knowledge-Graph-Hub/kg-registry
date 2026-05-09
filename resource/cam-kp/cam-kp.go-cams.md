@@ -1,10 +1,10 @@
 ---
 category: Product
-description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
-  by Gene Ontology biocurators linking genes, proteins, and biological processes
+description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes
 id: cam-kp.go-cams
 name: Gene Ontology CAMs
 original_source:
-- go
+  - source: go
+    relation_type: prov:hadPrimarySource
 layout: product_detail
 ---

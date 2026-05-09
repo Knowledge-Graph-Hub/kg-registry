@@ -5,9 +5,11 @@ id: oma.site
 is_public: true
 name: OMA Browser
 original_source:
-- oma
+  - source: oma
+    relation_type: prov:hadPrimarySource
 product_url: https://omabrowser.org/oma/
 secondary_source:
-- oma
+  - source: oma
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -2,18 +2,18 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: jakelever
-  label: Jake Lever
+  - category: Individual
+    contact_details:
+      - contact_type: github
+        value: jakelever
+    label: Jake Lever
 creation_date: '2025-10-30T00:00:00Z'
 description: PGxMine uses text mining to identify pharmacogenomic associations between chemicals and genetic variants in the biomedical literature to assist curation of PharmGKB. The system uses the Kindred relation classifier along with PubTator annotations to extract chemical-variant associations from PubMed, PubMed Central Open Access, and PubMed Central Author Manuscript Collection.
 domains:
-- pharmacology
-- genomics
-- literature
-- precision medicine
+  - pharmacology
+  - genomics
+  - literature
+  - precision medicine
 homepage_url: https://pgxmine.pharmgkb.org/
 id: pgxmine
 infores_id: pgxmine
@@ -24,42 +24,46 @@ license:
   label: MIT
 name: PGxMine
 products:
-- category: GraphicalInterface
-  description: Interactive Shiny web application for browsing and filtering text-mined pharmacogenomic associations
-  format: http
-  id: pgxmine.viewer
-  name: PGxMine Shiny Viewer
-  original_source:
-  - pgxmine
-  product_url: https://pgxmine.pharmgkb.org/
-- category: Product
-  description: Collated chemical-variant associations with citation counts, normalized to PharmGKB, dbSNP, and Entrez identifiers
-  format: tsv
-  id: pgxmine.collated
-  name: PGxMine Collated Associations
-  original_source:
-  - pgxmine
-  product_file_size: 2306867
-  product_url: https://doi.org/10.5281/zenodo.6617348
-- category: Product
-  description: Supporting sentences for chemical-variant associations with publication metadata
-  format: tsv
-  id: pgxmine.sentences
-  name: PGxMine Sentences
-  original_source:
-  - pgxmine
-  product_file_size: 115867935
-  product_url: https://doi.org/10.5281/zenodo.6617348
-- category: ProcessProduct
-  description: Python codebase for extracting pharmacogenomic associations using text mining
-  id: pgxmine.code
-  name: PGxMine Code
-  original_source:
-  - pgxmine
-  product_url: https://github.com/jakelever/pgxmine
+  - category: GraphicalInterface
+    description: Interactive Shiny web application for browsing and filtering text-mined pharmacogenomic associations
+    format: http
+    id: pgxmine.viewer
+    name: PGxMine Shiny Viewer
+    original_source:
+      - source: pgxmine
+        relation_type: prov:hadPrimarySource
+    product_url: https://pgxmine.pharmgkb.org/
+  - category: Product
+    description: Collated chemical-variant associations with citation counts, normalized to PharmGKB, dbSNP, and Entrez identifiers
+    format: tsv
+    id: pgxmine.collated
+    name: PGxMine Collated Associations
+    original_source:
+      - source: pgxmine
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2306867
+    product_url: https://doi.org/10.5281/zenodo.6617348
+  - category: Product
+    description: Supporting sentences for chemical-variant associations with publication metadata
+    format: tsv
+    id: pgxmine.sentences
+    name: PGxMine Sentences
+    original_source:
+      - source: pgxmine
+        relation_type: prov:hadPrimarySource
+    product_file_size: 115867935
+    product_url: https://doi.org/10.5281/zenodo.6617348
+  - category: ProcessProduct
+    description: Python codebase for extracting pharmacogenomic associations using text mining
+    id: pgxmine.code
+    name: PGxMine Code
+    original_source:
+      - source: pgxmine
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/jakelever/pgxmine
 repository: https://github.com/jakelever/pgxmine
 synonyms:
-- PGxMine
+  - PGxMine
 ---
 
 # PGxMine

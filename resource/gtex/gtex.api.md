@@ -5,7 +5,8 @@ format: json
 id: gtex.api
 name: GTEx REST API
 original_source:
-- gtex
+  - source: gtex
+    relation_type: prov:hadPrimarySource
 product_url: https://gtexportal.org/rest/
 layout: product_detail
 ---

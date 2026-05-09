@@ -5,7 +5,8 @@ format: csv
 id: prism.datasets
 name: PRISM Drug Sensitivity Datasets
 original_source:
-- prism
+  - source: prism
+    relation_type: prov:hadPrimarySource
 product_url: https://depmap.org/portal/data_page/
 layout: product_detail
 ---

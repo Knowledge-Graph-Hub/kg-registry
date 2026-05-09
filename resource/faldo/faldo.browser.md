@@ -5,7 +5,8 @@ format: http
 id: faldo.browser
 name: FALDO Ontology Browser
 original_source:
-- faldo
+  - source: faldo
+    relation_type: prov:hadPrimarySource
 product_url: http://biohackathon.org/resource/faldo
 layout: product_detail
 ---

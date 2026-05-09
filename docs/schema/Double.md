@@ -25,9 +25,7 @@ URI: [xsd:double](http://www.w3.org/2001/XMLSchema#double)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

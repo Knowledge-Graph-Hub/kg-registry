@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Pier Luigi Buttigieg
-  orcid: 0000-0002-4366-3088
-  contact_details:
-  - contact_type: email
-    value: pier.buttigieg@awi.de
-  - contact_type: github
-    value: pbuttigieg
+  - category: Individual
+    label: Pier Luigi Buttigieg
+    orcid: 0000-0002-4366-3088
+    contact_details:
+      - contact_type: email
+        value: pier.buttigieg@awi.de
+      - contact_type: github
+        value: pbuttigieg
 creation_date: '2025-07-10T00:00:00Z'
 description: An ontology of environmental systems, components, and processes.
 domains:
-- environment
+  - environment
 homepage_url: http://environmentontology.org/
 id: envo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,188 +26,267 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Environment Ontology
 products:
-- category: OntologyProduct
-  description: main ENVO OWL release
-  format: owl
-  id: envo.owl
-  name: main ENVO OWL release
-  product_file_size: 819909
-  product_url: http://purl.obolibrary.org/obo/envo.owl
-- category: OntologyProduct
-  description: ENVO in obographs JSON format
-  format: json
-  id: envo.json
-  name: ENVO in obographs JSON format
-  product_file_size: 653600
-  product_url: http://purl.obolibrary.org/obo/envo.json
-- category: OntologyProduct
-  description: ENVO in OBO Format. May be lossy
-  format: obo
-  id: envo.obo
-  name: ENVO in OBO Format. May be lossy
-  product_file_size: 595276
-  product_url: http://purl.obolibrary.org/obo/envo.obo
-- category: OntologyProduct
-  description: OBO-Basic edition of ENVO
-  format: obo
-  id: envo.subsets.envo-basic.obo
-  name: OBO-Basic edition of ENVO
-  product_file_size: 422465
-  product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
-- category: OntologyProduct
-  description: Earth Microbiome Project subset
-  format: owl
-  id: envo.subsets.envoEmpo.owl
-  name: Earth Microbiome Project subset
-  product_file_size: 19016
-  product_url: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
-- category: OntologyProduct
-  description: GSC Lite subset of ENVO
-  format: obo
-  id: envo.subsets.EnvO-Lite-GSC.obo
-  name: GSC Lite subset of ENVO
-  product_file_size: 12912
-  product_url: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
-- category: GraphProduct
-  compression: targz
-  description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
-  format: kgx
-  id: kg-microbe.graph.raw
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0 1.0
-  name: KG-Microbe KGX Graph - Raw
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
-    growth preferences.
-  format: kgx
-  id: kg-microbe.graph.core
-  name: KG-Microbe KGX Graph - Core
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
-  format: kgx
-  id: kg-microbe.graph.biomedical
-  name: KG-Microbe KGX Graph - Biomedical
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: Core plus Uniprot genome annotations
-  format: kgx
-  id: kg-microbe.graph.function
-  name: KG-Microbe KGX Graph - Function
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
-  secondary_source:
-  - kg-microbe
-- category: GraphProduct
-  compression: targz
-  description: Biomedical plus Uniprot genome annotations
-  format: kgx
-  id: kg-microbe.graph.biomedical-function
-  name: KG-Microbe KGX Graph - Biomedical-Function
-  original_source:
-  - envo
-  - ncbitaxon
-  - chebi
-  - go
-  - mondo
-  - hp
-  - bacdive
-  - mediadive
-  - uniprot
-  - rhea
-  - ec
-  - bactotraits
-  - ctd
-  - disbiome
-  - metpo
-  product_file_size: 4640682152
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
-  secondary_source:
-  - kg-microbe
+  - category: OntologyProduct
+    description: main ENVO OWL release
+    format: owl
+    id: envo.owl
+    name: main ENVO OWL release
+    product_file_size: 819909
+    product_url: http://purl.obolibrary.org/obo/envo.owl
+  - category: OntologyProduct
+    description: ENVO in obographs JSON format
+    format: json
+    id: envo.json
+    name: ENVO in obographs JSON format
+    product_file_size: 653600
+    product_url: http://purl.obolibrary.org/obo/envo.json
+  - category: OntologyProduct
+    description: ENVO in OBO Format. May be lossy
+    format: obo
+    id: envo.obo
+    name: ENVO in OBO Format. May be lossy
+    product_file_size: 595276
+    product_url: http://purl.obolibrary.org/obo/envo.obo
+  - category: OntologyProduct
+    description: OBO-Basic edition of ENVO
+    format: obo
+    id: envo.subsets.envo-basic.obo
+    name: OBO-Basic edition of ENVO
+    product_file_size: 422465
+    product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
+  - category: OntologyProduct
+    description: Earth Microbiome Project subset
+    format: owl
+    id: envo.subsets.envoEmpo.owl
+    name: Earth Microbiome Project subset
+    product_file_size: 19016
+    product_url: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
+  - category: OntologyProduct
+    description: GSC Lite subset of ENVO
+    format: obo
+    id: envo.subsets.EnvO-Lite-GSC.obo
+    name: GSC Lite subset of ENVO
+    product_file_size: 12912
+    product_url: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
+  - category: GraphProduct
+    compression: targz
+    description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
+    format: kgx
+    id: kg-microbe.graph.raw
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
+    name: KG-Microbe KGX Graph - Raw
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: mediadive
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: ec
+        relation_type: prov:hadPrimarySource
+      - source: bactotraits
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: disbiome
+        relation_type: prov:hadPrimarySource
+      - source: metpo
+        relation_type: prov:hadPrimarySource
+    product_file_size: 12464495186
+    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+    secondary_source:
+      - source: kg-microbe
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compression: targz
+    description: The core KG KG-Microbe-Core with ontologies, organismal traits, and growth preferences.
+    format: kgx
+    id: kg-microbe.graph.core
+    name: KG-Microbe KGX Graph - Core
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: mediadive
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: ec
+        relation_type: prov:hadPrimarySource
+      - source: bactotraits
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: disbiome
+        relation_type: prov:hadPrimarySource
+      - source: metpo
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+    secondary_source:
+      - source: kg-microbe
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compression: targz
+    description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
+    format: kgx
+    id: kg-microbe.graph.biomedical
+    name: KG-Microbe KGX Graph - Biomedical
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: mediadive
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: ec
+        relation_type: prov:hadPrimarySource
+      - source: bactotraits
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: disbiome
+        relation_type: prov:hadPrimarySource
+      - source: metpo
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+    secondary_source:
+      - source: kg-microbe
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compression: targz
+    description: Core plus Uniprot genome annotations
+    format: kgx
+    id: kg-microbe.graph.function
+    name: KG-Microbe KGX Graph - Function
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: mediadive
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: ec
+        relation_type: prov:hadPrimarySource
+      - source: bactotraits
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: disbiome
+        relation_type: prov:hadPrimarySource
+      - source: metpo
+        relation_type: prov:hadPrimarySource
+    product_file_size: 4623010863
+    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+    secondary_source:
+      - source: kg-microbe
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compression: targz
+    description: Biomedical plus Uniprot genome annotations
+    format: kgx
+    id: kg-microbe.graph.biomedical-function
+    name: KG-Microbe KGX Graph - Biomedical-Function
+    original_source:
+      - source: envo
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: mediadive
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: ec
+        relation_type: prov:hadPrimarySource
+      - source: bactotraits
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: disbiome
+        relation_type: prov:hadPrimarySource
+      - source: metpo
+        relation_type: prov:hadPrimarySource
+    product_file_size: 4640682152
+    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+    secondary_source:
+      - source: kg-microbe
+        relation_type: prov:wasInfluencedBy
 repository: https://github.com/EnvironmentOntology/envo
 publications:
-- id: https://doi.org/10.1186/2041-1480-4-43
-  title: 'The environment ontology: contextualising biological and biomedical entities'
-- id: https://doi.org/10.1186/s13326-016-0097-6
-  title: 'The environment ontology in 2016: bridging domains with increased scope,
-    semantic density, and interoperation'
+  - id: https://doi.org/10.1186/2041-1480-4-43
+    title: 'The environment ontology: contextualising biological and biomedical entities'
+  - id: https://doi.org/10.1186/s13326-016-0097-6
+    title: 'The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation'
 ---
+
 ## Description
 
 An ontology of environmental systems, components, and processes.

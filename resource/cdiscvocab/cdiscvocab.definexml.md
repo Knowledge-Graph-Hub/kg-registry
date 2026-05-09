@@ -1,15 +1,14 @@
 ---
 category: Product
-description: Define-XML controlled terminology providing enumeration values for the
-  CDISC Define-XML data exchange standard.
+description: Define-XML controlled terminology providing enumeration values for the CDISC Define-XML data exchange standard.
 format: mixed
 id: cdiscvocab.definexml
 name: Define-XML Controlled Terminology
 original_source:
-- cdiscvocab
+  - source: cdiscvocab
+    relation_type: prov:hadPrimarySource
 product_url: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when accessing file
 layout: product_detail
 ---

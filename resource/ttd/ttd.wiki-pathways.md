@@ -5,10 +5,12 @@ format: txt
 id: ttd.wiki-pathways
 name: Target WikiPathways
 original_source:
-- wikipathways
+  - source: wikipathways
+    relation_type: prov:hadPrimarySource
 product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
 secondary_source:
-- ttd
+  - source: ttd
+    relation_type: prov:wasInfluencedBy
 warnings: []
 layout: product_detail
 ---

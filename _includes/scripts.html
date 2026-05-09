@@ -911,6 +911,58 @@
         });
     }
 
+    function sourceAssociationId(sourceAssociation) {
+        if (typeof sourceAssociation === 'string') {
+            return sourceAssociation.trim();
+        }
+        if (sourceAssociation && typeof sourceAssociation === 'object' && typeof sourceAssociation.source === 'string') {
+            return sourceAssociation.source.trim();
+        }
+        return '';
+    }
+
+    function sourceAssociationRelation(sourceAssociation, defaultRelation) {
+        if (sourceAssociation && typeof sourceAssociation === 'object' && typeof sourceAssociation.relation_type === 'string') {
+            return sourceAssociation.relation_type.trim() || defaultRelation;
+        }
+        return defaultRelation;
+    }
+
+    function normalizeSourceAssociations(sourceAssociations, defaultRelation) {
+        if (!Array.isArray(sourceAssociations)) {
+            return [];
+        }
+        return sourceAssociations
+            .map(sourceAssociation => ({
+                source: sourceAssociationId(sourceAssociation),
+                relationType: sourceAssociationRelation(sourceAssociation, defaultRelation)
+            }))
+            .filter(sourceAssociation => sourceAssociation.source !== '');
+    }
+
+    function normalizeProvenanceDiagramData(data) {
+        return {
+            ...data,
+            originalSources: Array.isArray(data.originalSources)
+                ? data.originalSources.map(sourceAssociationId).filter(source => source !== '')
+                : [],
+            secondarySources: Array.isArray(data.secondarySources)
+                ? data.secondarySources.map(sourceAssociationId).filter(source => source !== '')
+                : []
+        };
+    }
+
+    function provLocalName(relationType) {
+        return relationType.replace(/^prov:/, '');
+    }
+
+    function allSourceAssociations(validatedData) {
+        return [
+            ...validatedData.originalSources,
+            ...validatedData.secondarySources
+        ];
+    }
+
     // Function to validate PROV export data
     function validateProvData(data) {
         // Create a validated copy of the data
@@ -920,18 +972,14 @@
             secondarySources: []
         };
         
-        // Validate original sources (ensure it's an array of strings)
+        // Validate original sources
         if (data.originalSources && Array.isArray(data.originalSources)) {
-            validated.originalSources = data.originalSources.filter(source => 
-                typeof source === 'string' && source.trim() !== ''
-            );
+            validated.originalSources = normalizeSourceAssociations(data.originalSources, 'prov:hadPrimarySource');
         }
         
-        // Validate secondary sources (ensure it's an array of strings)
+        // Validate secondary sources
         if (data.secondarySources && Array.isArray(data.secondarySources)) {
-            validated.secondarySources = data.secondarySources.filter(source => 
-                typeof source === 'string' && source.trim() !== ''
-            );
+            validated.secondarySources = normalizeSourceAssociations(data.secondarySources, 'prov:wasInfluencedBy');
         }
         
         return validated;
@@ -970,66 +1018,27 @@
         <rdfs:seeAlso>${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html</rdfs:seeAlso>
     </prov:entity>`;
         
-        // Add secondary sources
-        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
-            for (const source of validatedData.secondarySources) {
+        // Add source entities
+        if (allSourceAssociations(validatedData).length > 0) {
+            for (const sourceAssociation of allSourceAssociations(validatedData)) {
+                const source = sourceAssociation.source;
+                const relationName = provLocalName(sourceAssociation.relationType);
                 // Add the entity
                 xml += `
     
-    <!-- Secondary source entity -->
+    <!-- Source entity -->
     <prov:entity prov:id="kgr:${source}">
         <prov:label>${source}</prov:label>
         <prov:type>kgr:Resource</prov:type>
-        <prov:type>kgr:secondary_source</prov:type>
         <rdfs:seeAlso>${kgRegistryUrl}resource/${source}/${source}.html</rdfs:seeAlso>
     </prov:entity>
     
-    <!-- Derivation relation: product was derived from secondary source -->
-    <prov:wasDerivedFrom>
+    <!-- Provenance relation: product ${sourceAssociation.relationType} source -->
+    <prov:${relationName}>
         <prov:generatedEntity prov:ref="kgr:${validatedData.product}"/>
         <prov:usedEntity prov:ref="kgr:${source}"/>
-        <prov:type>prov:Derivation</prov:type>
-    </prov:wasDerivedFrom>`;
-            }
-        }
-        
-        // Add original sources
-        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
-            for (const source of validatedData.originalSources) {
-                // Add the entity
-                xml += `
-    
-    <!-- Original source entity -->
-    <prov:entity prov:id="kgr:${source}">
-        <prov:label>${source}</prov:label>
-        <prov:type>kgr:Resource</prov:type>
-        <prov:type>kgr:original_source</prov:type>
-        <rdfs:seeAlso>${kgRegistryUrl}resource/${source}/${source}.html</rdfs:seeAlso>
-    </prov:entity>`;
-                
-                // If there are secondary sources, connect original to secondary
-                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
-                    for (const secondarySource of validatedData.secondarySources) {
-                        xml += `
-    
-    <!-- Derivation relation: secondary source was derived from original source -->
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="kgr:${secondarySource}"/>
-        <prov:usedEntity prov:ref="kgr:${source}"/>
-        <prov:type>prov:Derivation</prov:type>
-    </prov:wasDerivedFrom>`;
-                    }
-                } else {
-                    // If no secondary sources, connect original directly to product
-                    xml += `
-    
-    <!-- Derivation relation: product was derived from original source -->
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="kgr:${validatedData.product}"/>
-        <prov:usedEntity prov:ref="kgr:${source}"/>
-        <prov:type>prov:Derivation</prov:type>
-    </prov:wasDerivedFrom>`;
-                }
+        <prov:type>${sourceAssociation.relationType}</prov:type>
+    </prov:${relationName}>`;
             }
         }
         
@@ -1070,50 +1079,21 @@ kgr:${validatedData.product} a prov:Entity ;
     rdfs:seeAlso "${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html" .
 `;
         
-        // Add secondary sources
-        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
-            for (const source of validatedData.secondarySources) {
+        // Add source entities and typed product-to-source relations
+        if (allSourceAssociations(validatedData).length > 0) {
+            for (const sourceAssociation of allSourceAssociations(validatedData)) {
+                const source = sourceAssociation.source;
                 // Add the entity
                 rdf += `
-# Secondary source entity
+# Source entity
 kgr:${source} a prov:Entity ;
-    prov:type kgr:Resource , kgr:secondary_source ;
+    prov:type kgr:Resource ;
     rdfs:label "${source}" ;
     rdfs:seeAlso "${kgRegistryUrl}resource/${source}/${source}.html" .
 
-# Derivation relation: product was derived from secondary source
-kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
+# Provenance relation: product ${sourceAssociation.relationType} source
+kgr:${validatedData.product} ${sourceAssociation.relationType} kgr:${source} .
 `;
-            }
-        }
-        
-        // Add original sources
-        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
-            for (const source of validatedData.originalSources) {
-                // Add the entity
-                rdf += `
-# Original source entity
-kgr:${source} a prov:Entity ;
-    prov:type kgr:Resource , kgr:original_source ;
-    rdfs:label "${source}" ;
-    rdfs:seeAlso "${kgRegistryUrl}resource/${source}/${source}.html" .
-`;
-                
-                // If there are secondary sources, connect original to secondary
-                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
-                    for (const secondarySource of validatedData.secondarySources) {
-                        rdf += `
-# Derivation relation: secondary source was derived from original source
-kgr:${secondarySource} prov:wasDerivedFrom kgr:${source} .
-`;
-                    }
-                } else {
-                    // If no secondary sources, connect original directly to product
-                    rdf += `
-# Derivation relation: product was derived from original source
-kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
-`;
-                }
             }
         }
         
@@ -1150,62 +1130,30 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
                     "prov:generatedAtTime": { "$": timestamp, "type": "xsd:dateTime" },
                     "rdfs:seeAlso": `${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html`
                 }
-            },
-            "wasDerivedFrom": {}
+            }
         };
         
-        // Add secondary sources
-        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
-            validatedData.secondarySources.forEach((source, index) => {
+        // Add source entities and typed product-to-source relations
+        if (allSourceAssociations(validatedData).length > 0) {
+            allSourceAssociations(validatedData).forEach((sourceAssociation, index) => {
+                const source = sourceAssociation.source;
+                const relationName = provLocalName(sourceAssociation.relationType);
                 // Add entity
                 provJSON.entity[`kgr:${source}`] = {
-                    "prov:type": [
-                        { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
-                        { "$": "kgr:secondary_source", "type": "prov:QUALIFIED_NAME" }
-                    ],
+                    "prov:type": { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
                     "rdfs:label": source,
                     "rdfs:seeAlso": `${kgRegistryUrl}resource/${source}/${source}.html`
                 };
-                
-                // Add derivation relation: product was derived from secondary source
-                provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}`] = {
+
+                // Add typed provenance relation from product to source
+                if (!provJSON[relationName]) {
+                    provJSON[relationName] = {};
+                }
+                provJSON[relationName][`_:${relationName}${index}`] = {
                     "prov:generatedEntity": { "$": `kgr:${validatedData.product}`, "type": "prov:QUALIFIED_NAME" },
                     "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
-                    "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                    "prov:type": { "$": sourceAssociation.relationType, "type": "prov:QUALIFIED_NAME" }
                 };
-            });
-        }
-        
-        // Add original sources
-        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
-            validatedData.originalSources.forEach((source, index) => {
-                // Add entity
-                provJSON.entity[`kgr:${source}`] = {
-                    "prov:type": [
-                        { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
-                        { "$": "kgr:original_source", "type": "prov:QUALIFIED_NAME" }
-                    ],
-                    "rdfs:label": source,
-                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${source}/${source}.html`
-                };
-                
-                // If there are secondary sources, connect original to secondary
-                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
-                    validatedData.secondarySources.forEach((secondarySource, sIndex) => {
-                        provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}_${sIndex}`] = {
-                            "prov:generatedEntity": { "$": `kgr:${secondarySource}`, "type": "prov:QUALIFIED_NAME" },
-                            "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
-                            "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
-                        };
-                    });
-                } else {
-                    // If no secondary sources, connect original directly to product
-                    provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}_direct`] = {
-                        "prov:generatedEntity": { "$": `kgr:${validatedData.product}`, "type": "prov:QUALIFIED_NAME" },
-                        "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
-                        "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
-                    };
-                }
             });
         }
         
@@ -1217,7 +1165,7 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         const provenanceContainers = document.querySelectorAll('.provenance-diagram');
         
         for (const container of provenanceContainers) {
-            const data = JSON.parse(container.getAttribute('data-provenance'));
+            const data = normalizeProvenanceDiagramData(JSON.parse(container.getAttribute('data-provenance')));
 
             // Set up the legend toggle button
             const containerCardBody = container.closest('.card-body');

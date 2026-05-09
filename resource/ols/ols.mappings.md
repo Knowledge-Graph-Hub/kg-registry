@@ -6,7 +6,8 @@ format: tsv
 id: ols.mappings
 name: OLS SSSOM Mappings
 original_source:
-- ols
+  - source: ols
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
 layout: product_detail
 ---

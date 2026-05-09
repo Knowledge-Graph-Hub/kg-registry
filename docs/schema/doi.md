@@ -8,15 +8,14 @@ mermaid: true
 # Slot: doi
 
 
-_The DOI of the publication. This should include the doi: prefix._
+_The DOI of the publication. This does not need to include a prefix of any kind, as it will be formatted as a URL._
 
 
 
 
 
 URI: [kgr:doi](https://w3id.org/bridge2ai/data-sheets-schema/doi)
-
-
+Alias: doi
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:doi](https://w3id.org/bridge2ai/data-sheets-schema/doi)
 
 
 
-
 ## Properties
 
 * Range: [Uriorcurie](Uriorcurie.html)
@@ -43,9 +41,7 @@ URI: [kgr:doi](https://w3id.org/bridge2ai/data-sheets-schema/doi)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 
@@ -75,7 +71,8 @@ URI: [kgr:doi](https://w3id.org/bridge2ai/data-sheets-schema/doi)
 <details>
 ```yaml
 name: doi
-description: 'The DOI of the publication. This should include the doi: prefix.'
+description: The DOI of the publication. This does not need to include a prefix of
+  any kind, as it will be formatted as a URL.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 rank: 1000
 alias: doi

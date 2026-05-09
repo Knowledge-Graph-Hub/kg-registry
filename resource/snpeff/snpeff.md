@@ -2,20 +2,20 @@
 activity_status: active
 category: Resource
 contacts:
-- category: Individual
-  label: Pablo Cingolani
-  contact_details:
-  - contact_type: github
-    value: pcingola
-  - contact_type: url
-    value: http://www.linkedin.com/in/pablocingolani
+  - category: Individual
+    label: Pablo Cingolani
+    contact_details:
+      - contact_type: github
+        value: pcingola
+      - contact_type: url
+        value: http://www.linkedin.com/in/pablocingolani
 creation_date: '2025-10-31T00:00:00Z'
 description: SnpEff is a genetic variant annotation and functional effect prediction toolbox widely used in genomics pipelines. It annotates and predicts the effects of genetic variants on genes and proteins (such as amino acid changes), supports over 38,000 genomes, uses standardized Sequence Ontology terms, and implements the VCF annotation standard ANN field. SnpEff is bundled with SnpSift, a companion tool for filtering and manipulating genomic annotated variants. Both tools are integrated with Galaxy and GATK, making them essential components of sequencing data analysis workflows.
 domains:
-- biomedical
-- genomics
-- precision medicine
-- biological systems
+  - biomedical
+  - genomics
+  - precision medicine
+  - biological systems
 homepage_url: https://pcingola.github.io/SnpEff/
 id: snpeff
 infores_id: snpeff
@@ -26,80 +26,86 @@ license:
   label: MIT
 name: SnpEff
 products:
-- category: ProgrammingInterface
-  description: SnpEff core package with command-line interface for variant annotation and effect prediction
-  id: snpeff.download
-  name: SnpEff Download Package
-  original_source:
-  - snpeff
-  product_url: https://snpeff.odsp.astrazeneca.com/versions/snpEff_latest_core.zip
-- category: GraphicalInterface
-  description: Comprehensive documentation website for SnpEff with usage examples, tutorials, and command references
-  format: http
-  id: snpeff.documentation
-  name: SnpEff Documentation
-  original_source:
-  - snpeff
-  product_url: https://pcingola.github.io/SnpEff/snpeff/introduction/
-- category: GraphicalInterface
-  description: SnpSift documentation covering tools for filtering, annotating, and manipulating VCF files
-  format: http
-  id: snpsift.documentation
-  name: SnpSift Documentation
-  original_source:
-  - snpeff
-  product_url: https://pcingola.github.io/SnpEff/snpsift/introduction/
-- category: Product
-  description: Over 38,000 pre-built genome databases available for automatic download and annotation
-  id: snpeff.databases
-  name: SnpEff Genome Databases
-  original_source:
-  - snpeff
-  product_url: https://pcingola.github.io/SnpEff/download/
-  warnings:
-  - Databases are automatically downloaded when running SnpEff; manual download is optional
-- category: ProgrammingInterface
-  description: SnpEff source code repository on GitHub
-  id: snpeff.github
-  name: SnpEff GitHub Repository
-  original_source:
-  - snpeff
-  product_url: https://github.com/pcingola/SnpEff
-- category: Product
-  description: Historical releases and versions of SnpEff available on SourceForge
-  id: snpeff.sourceforge
-  name: SnpEff SourceForge Archive
-  original_source:
-  - snpeff
-  product_url: https://sourceforge.net/projects/snpeff/files/
+  - category: ProgrammingInterface
+    description: SnpEff core package with command-line interface for variant annotation and effect prediction
+    id: snpeff.download
+    name: SnpEff Download Package
+    original_source:
+      - source: snpeff
+        relation_type: prov:hadPrimarySource
+    product_url: https://snpeff.odsp.astrazeneca.com/versions/snpEff_latest_core.zip
+  - category: GraphicalInterface
+    description: Comprehensive documentation website for SnpEff with usage examples, tutorials, and command references
+    format: http
+    id: snpeff.documentation
+    name: SnpEff Documentation
+    original_source:
+      - source: snpeff
+        relation_type: prov:hadPrimarySource
+    product_url: https://pcingola.github.io/SnpEff/snpeff/introduction/
+  - category: GraphicalInterface
+    description: SnpSift documentation covering tools for filtering, annotating, and manipulating VCF files
+    format: http
+    id: snpsift.documentation
+    name: SnpSift Documentation
+    original_source:
+      - source: snpeff
+        relation_type: prov:hadPrimarySource
+    product_url: https://pcingola.github.io/SnpEff/snpsift/introduction/
+  - category: Product
+    description: Over 38,000 pre-built genome databases available for automatic download and annotation
+    id: snpeff.databases
+    name: SnpEff Genome Databases
+    original_source:
+      - source: snpeff
+        relation_type: prov:hadPrimarySource
+    product_url: https://pcingola.github.io/SnpEff/download/
+    warnings:
+      - Databases are automatically downloaded when running SnpEff; manual download is optional
+  - category: ProgrammingInterface
+    description: SnpEff source code repository on GitHub
+    id: snpeff.github
+    name: SnpEff GitHub Repository
+    original_source:
+      - source: snpeff
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/pcingola/SnpEff
+  - category: Product
+    description: Historical releases and versions of SnpEff available on SourceForge
+    id: snpeff.sourceforge
+    name: SnpEff SourceForge Archive
+    original_source:
+      - source: snpeff
+        relation_type: prov:hadPrimarySource
+    product_url: https://sourceforge.net/projects/snpeff/files/
 publications:
-- authors:
-  - Cingolani P
-  - Platts A
-  - Wang le L
-  - Coon M
-  - Nguyen T
-  - Wang L
-  - Land SJ
-  - Lu X
-  - Ruden DM
-  id: https://pubmed.ncbi.nlm.nih.gov/22728672/
-  journal: Fly
-  preferred: true
-  title: 'A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3'
-  year: '2012'
-- authors:
-  - Cingolani P
-  - Patel VM
-  - Coon M
-  - Nguyen T
-  - Land SJ
-  - Ruden DM
-  - Lu X
-  journal: Frontiers in Genetics
-  id: https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2012.00035/full
-  title: 'Using Drosophila melanogaster as a model for genotoxic chemical mutational studies with a new program, SnpSift'
-  year: '2012'
+  - authors:
+      - Cingolani P
+      - Platts A
+      - Wang le L
+      - Coon M
+      - Nguyen T
+      - Wang L
+      - Land SJ
+      - Lu X
+      - Ruden DM
+    id: https://pubmed.ncbi.nlm.nih.gov/22728672/
+    journal: Fly
+    preferred: true
+    title: 'A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3'
+    year: '2012'
+  - authors:
+      - Cingolani P
+      - Patel VM
+      - Coon M
+      - Nguyen T
+      - Land SJ
+      - Ruden DM
+      - Lu X
+    journal: Frontiers in Genetics
+    id: https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2012.00035/full
+    title: 'Using Drosophila melanogaster as a model for genotoxic chemical mutational studies with a new program, SnpSift'
+    year: '2012'
 repository: https://github.com/pcingola/SnpEff
 ---
 

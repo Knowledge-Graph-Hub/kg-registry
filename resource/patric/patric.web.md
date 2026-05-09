@@ -5,7 +5,8 @@ format: http
 id: patric.web
 name: PATRIC/BV-BRC Web Portal
 original_source:
-- patric
+  - source: patric
+    relation_type: prov:hadPrimarySource
 product_url: https://www.bv-brc.org/
 layout: product_detail
 ---

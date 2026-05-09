@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Matthew Brush
-  orcid: 0000-0002-1048-5019
-  contact_details:
-  - contact_type: email
-    value: mhb120@gmail.com
-  - contact_type: github
-    value: mbrush
+  - category: Individual
+    label: Matthew Brush
+    orcid: 0000-0002-1048-5019
+    contact_details:
+      - contact_type: email
+        value: mhb120@gmail.com
+      - contact_type: github
+        value: mbrush
 creation_date: '2025-09-04T00:00:00Z'
-description: An integrated ontology for representing the genetic variations described
-  in genotypes, and their causal relationships to phenotype and diseases.
+description: An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/monarch-initiative/GENO-ontology/
 id: geno
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,33 +26,42 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Genotype Ontology
 products:
-- category: OntologyProduct
-  description: GENO
-  format: owl
-  id: geno.owl
-  name: GENO
-  product_file_size: 172287
-  product_url: http://purl.obolibrary.org/obo/geno.owl
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
+  - category: OntologyProduct
+    description: GENO
+    format: owl
+    id: geno.owl
+    name: GENO
+    product_file_size: 172287
+    product_url: http://purl.obolibrary.org/obo/geno.owl
+  - category: OntologyProduct
+    description: OWL release of Monochrom Ontology
+    format: owl
+    id: chr.model.owl
+    name: Monochrom Ontology OWL release
+    original_source:
+      - source: ro
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: iao
+        relation_type: prov:hadPrimarySource
+      - source: geno
+        relation_type: prov:hadPrimarySource
+      - source: skos
+        relation_type: prov:hadPrimarySource
+      - source: gff
+        relation_type: prov:hadPrimarySource
+    product_file_size: 102365
+    product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+    secondary_source:
+      - source: chr
+        relation_type: prov:wasInfluencedBy
 repository: https://github.com/monarch-initiative/GENO-ontology
 publications: []
 ---
+
 ## Description
 
 An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.

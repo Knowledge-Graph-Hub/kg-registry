@@ -2,19 +2,17 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.ebi.ac.uk/
-  id: ebi
-  label: EMBL-EBI
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.ebi.ac.uk/
+    id: ebi
+    label: EMBL-EBI
 creation_date: '2025-10-30T00:00:00Z'
-description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets
-  across multiple repositories, providing a unified search interface for genomics,
-  proteomics, metabolomics, and transcriptomics data.
+description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets across multiple repositories, providing a unified search interface for genomics, proteomics, metabolomics, and transcriptomics data.
 domains:
-- genomics
-- proteomics
+  - genomics
+  - proteomics
 homepage_url: https://www.omicsdi.org/
 id: omicsdi
 infores_id: omicsdi
@@ -22,36 +20,36 @@ last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: OmicsDI
 synonyms:
-- OmicsDI
-- Omics Discovery Index
+  - OmicsDI
+  - Omics Discovery Index
 publications:
-- preferred: true
-  id: doi:10.1038/nbt.3790
-  title: Discovering and linking public omics data sets using the Omics Discovery Index
-  journal: Nature Biotechnology
-  year: "2017"
-  doi: 10.1038/nbt.3790
+  - preferred: true
+    id: doi:10.1038/nbt.3790
+    title: Discovering and linking public omics data sets using the Omics Discovery Index
+    journal: Nature Biotechnology
+    year: "2017"
+    doi: 10.1038/nbt.3790
 products:
-- category: GraphicalInterface
-  description: Web portal for searching and browsing integrated omics dataset metadata
-    across repositories.
-  format: http
-  id: omicsdi.portal
-  name: OmicsDI Portal
-  original_source:
-  - omicsdi
-  product_url: https://www.omicsdi.org/
-- category: ProgrammingInterface
-  connection_url: https://www.omicsdi.org/ws
-  description: Swagger-documented web service for programmatic querying of OmicsDI
-    dataset metadata.
-  format: http
-  id: omicsdi.api
-  is_public: true
-  name: OmicsDI API
-  original_source:
-  - omicsdi
-  product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing integrated omics dataset metadata across repositories.
+    format: http
+    id: omicsdi.portal
+    name: OmicsDI Portal
+    original_source:
+      - source: omicsdi
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.omicsdi.org/
+  - category: ProgrammingInterface
+    connection_url: https://www.omicsdi.org/ws
+    description: Swagger-documented web service for programmatic querying of OmicsDI dataset metadata.
+    format: http
+    id: omicsdi.api
+    is_public: true
+    name: OmicsDI API
+    original_source:
+      - source: omicsdi
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.omicsdi.org/ws/swagger-ui/index.html
 ---
 
 # OmicsDI

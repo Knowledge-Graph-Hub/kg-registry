@@ -4,6 +4,7 @@ description: Historical dataset of biomolecular interactions, complexes, and pat
 id: bind.data
 name: BIND Data
 original_source:
-- bind
+  - source: bind
+    relation_type: prov:hadPrimarySource
 layout: product_detail
 ---

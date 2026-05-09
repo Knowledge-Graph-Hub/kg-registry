@@ -5,9 +5,11 @@ id: orthodb.api.rest
 is_public: true
 name: OrthoDB API
 original_source:
-- orthodb
+  - source: orthodb
+    relation_type: prov:hadPrimarySource
 product_url: https://www.orthodb.org/api/
 secondary_source:
-- orthodb
+  - source: orthodb
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -5,9 +5,11 @@ id: sibils.site
 is_public: true
 name: SIBiLS Web Interface
 original_source:
-- sibils
+  - source: sibils
+    relation_type: prov:hadPrimarySource
 product_url: https://sibils.org/
 secondary_source:
-- sibils
+  - source: sibils
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

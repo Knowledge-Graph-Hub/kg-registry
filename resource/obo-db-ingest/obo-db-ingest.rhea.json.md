@@ -9,10 +9,12 @@ license:
   label: CC-BY-4.0
 name: rhea OBO Graph JSON
 original_source:
-- rhea
+  - source: rhea
+    relation_type: prov:hadPrimarySource
 product_file_size: 5228738
 product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json.gz
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

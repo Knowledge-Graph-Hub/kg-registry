@@ -71,7 +71,7 @@ def test_concat_propagates_cross_resource_products(
                     "name": "Bioteque embeddings",
                     "category": "GraphEmbeddingProduct",
                     "description": "Embeddings built using BTO",
-                    "original_source": ["bto"],
+                    "original_source": [{"source": "bto", "relation_type": "prov:hadPrimarySource"}],
                 }
             ],
         },
@@ -90,7 +90,7 @@ def test_concat_propagates_cross_resource_products(
                     "name": "ClinicalKG graph",
                     "category": "KnowledgeGraphProduct",
                     "description": "Graph with BTO as a secondary source",
-                    "secondary_source": ["bto"],
+                    "secondary_source": [{"source": "bto", "relation_type": "prov:wasInfluencedBy"}],
                 }
             ],
         },

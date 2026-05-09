@@ -6,7 +6,8 @@ id: fooddb.xml
 is_public: true
 name: FooDB XML File
 original_source:
-- fooddb
+  - source: fooddb
+    relation_type: prov:hadPrimarySource
 product_file_size: 6731854848
 product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
 layout: product_detail

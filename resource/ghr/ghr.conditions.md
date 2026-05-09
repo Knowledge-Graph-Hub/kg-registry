@@ -5,7 +5,8 @@ format: http
 id: ghr.conditions
 name: MedlinePlus Genetics Conditions
 original_source:
-- ghr
+  - source: ghr
+    relation_type: prov:hadPrimarySource
 product_url: https://medlineplus.gov/genetics/condition/
 layout: product_detail
 ---

@@ -4,7 +4,8 @@ description: SPARQL endpoint for Ubergraph
 id: ubergraph.sparql
 name: Ubergraph SPARQL
 original_source:
-- ubergraph
+  - source: ubergraph
+    relation_type: prov:hadPrimarySource
 product_url: https://frink.apps.renci.org/ubergraph/sparql
 layout: product_detail
 ---

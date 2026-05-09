@@ -15,8 +15,7 @@ _The date the knowledge graph was last modified._
 
 
 URI: [kgr:date_modified](https://w3id.org/bridge2ai/data-sheets-schema/date_modified)
-
-
+Alias: date_modified
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:date_modified](https://w3id.org/bridge2ai/data-sheets-schema/date_modi
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:date_modified](https://w3id.org/bridge2ai/data-sheets-schema/date_modi
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

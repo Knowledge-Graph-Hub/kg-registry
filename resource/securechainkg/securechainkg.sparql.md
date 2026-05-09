@@ -4,7 +4,8 @@ description: SPARQL endpoint for SecureChain KG
 id: securechainkg.sparql
 name: SecureChain KG SPARQL
 original_source:
-- securechainkg
+  - source: securechainkg
+    relation_type: prov:hadPrimarySource
 product_url: https://frink.apps.renci.org/securechainkg/sparql
 layout: product_detail
 ---

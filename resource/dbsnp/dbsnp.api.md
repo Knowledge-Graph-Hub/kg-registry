@@ -5,9 +5,11 @@ id: dbsnp.api
 is_public: true
 name: dbSNP E-utilities API
 original_source:
-- dbsnp
+  - source: dbsnp
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/books/NBK25500/
 secondary_source:
-- dbsnp
+  - source: dbsnp
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

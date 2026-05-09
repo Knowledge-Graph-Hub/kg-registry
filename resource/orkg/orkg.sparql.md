@@ -5,7 +5,8 @@ format: http
 id: orkg.sparql
 name: ORKG Visual SPARQL Editor
 original_source:
-- orkg
+  - source: orkg
+    relation_type: prov:hadPrimarySource
 product_url: https://orkg.org/sparql/
 layout: product_detail
 ---

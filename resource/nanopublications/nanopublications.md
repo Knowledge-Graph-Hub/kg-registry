@@ -22,7 +22,8 @@ products:
     name: Nanopublications Browser
     product_url: http://nanopub.net/
     original_source:
-      - nanopublications
+      - source: nanopublications
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Decentralized server network for storing and retrieving nanopublications
     format: http
@@ -30,7 +31,8 @@ products:
     name: Nanopublication Server Network
     product_url: http://nanopub.net/
     original_source:
-      - nanopublications
+      - source: nanopublications
+        relation_type: prov:hadPrimarySource
 publications:
   - id: "https://doi.org/10.7717/peerj-cs.387"
     title: "Genuine semantic publishing"

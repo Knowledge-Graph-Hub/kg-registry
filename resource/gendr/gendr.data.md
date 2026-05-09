@@ -5,7 +5,8 @@ format: csv
 id: gendr.data
 name: GenDR Data Download
 original_source:
-- gendr
+  - source: gendr
+    relation_type: prov:hadPrimarySource
 product_file_size: 8209
 product_url: http://genomics.senescence.info/diet/dataset.zip
 layout: product_detail

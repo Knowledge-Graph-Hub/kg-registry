@@ -6,9 +6,11 @@ format: tsv
 id: bgee.expr_calls
 name: Bgee Expression Calls
 original_source:
-- bgee
+  - source: bgee
+    relation_type: prov:hadPrimarySource
 product_url: https://www.bgee.org/download/gene-expression-calls
 secondary_source:
-- bgee
+  - source: bgee
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

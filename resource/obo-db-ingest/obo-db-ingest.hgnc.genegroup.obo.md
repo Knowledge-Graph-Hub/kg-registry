@@ -8,10 +8,12 @@ license:
   label: CC0-1.0
 name: hgnc.genegroup OBO
 original_source:
-- hgnc
+  - source: hgnc
+    relation_type: prov:hadPrimarySource
 product_file_size: 185057
 product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

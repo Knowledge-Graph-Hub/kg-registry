@@ -20,21 +20,22 @@ URI: [kgr:Registry](https://w3id.org/bridge2ai/data-sheets-schema/Registry)
 
 
 
-
 ```mermaid
  classDiagram
     class Registry
-    click Registry href "Registry.html"
+    click Registry href "Registry/.html"
       Registry : resources
-        
-          
-    
-    
-    Registry --> "*" Resource : resources
-    click Resource href "Resource.html"
 
-        
-      
+
+
+
+
+        Registry --> "*" Resource : resources
+        click Resource href "Resource/.html"
+
+
+
+
 ```
 
 
@@ -57,8 +58,8 @@ URI: [kgr:Registry](https://w3id.org/bridge2ai/data-sheets-schema/Registry)
 
 
 
-## Identifier and Mapping Information
 
+## Identifier and Mapping Information
 
 
 
@@ -79,7 +80,6 @@ URI: [kgr:Registry](https://w3id.org/bridge2ai/data-sheets-schema/Registry)
 | ---  | ---  |
 | self | kgr:Registry |
 | native | kgr:Registry |
-
 
 
 

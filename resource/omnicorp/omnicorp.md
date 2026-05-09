@@ -2,11 +2,11 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
-  label: NCATS Translator
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+    label: NCATS Translator
 creation_date: '2025-11-05T00:00:00Z'
 description: OmniCorp provides co-occurrence data derived from PubMed abstracts, enabling researchers to identify and quantify relationships between biomedical concepts based on their frequency of co-mention in the literature. This resource is part of the NCATS Translator infrastructure and supports literature-based discovery and evidence aggregation for knowledge graph construction.
 domains:
@@ -20,30 +20,34 @@ layout: resource_detail
 name: OmniCorp
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
 products:
-- category: Product
-  description: Co-occurrence data from PubMed abstracts
-  format: mixed
-  id: omnicorp.cooccurrence
-  name: OmniCorp Co-occurrence Data
-  original_source:
-  - pubmed
-  secondary_source:
-  - omnicorp
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
-- category: ProgrammingInterface
-  description: API access to OmniCorp co-occurrence data
-  format: http
-  id: omnicorp.api
-  name: OmniCorp API
-  original_source:
-  - pubmed
-  secondary_source:
-  - omnicorp
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  - category: Product
+    description: Co-occurrence data from PubMed abstracts
+    format: mixed
+    id: omnicorp.cooccurrence
+    name: OmniCorp Co-occurrence Data
+    original_source:
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: omnicorp
+        relation_type: prov:wasInfluencedBy
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  - category: ProgrammingInterface
+    description: API access to OmniCorp co-occurrence data
+    format: http
+    id: omnicorp.api
+    name: OmniCorp API
+    original_source:
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: omnicorp
+        relation_type: prov:wasInfluencedBy
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
 synonyms:
   - OmniCorp
 tags:
-- translator
+  - translator
 ---
 
 # OmniCorp
@@ -79,4 +83,3 @@ This resource has the Information Resource identifier: `infores:omnicorp`
 ## Tags
 
 - NCATS Translator
-

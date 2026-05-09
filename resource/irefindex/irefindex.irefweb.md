@@ -4,6 +4,7 @@ description: Web interface for navigating the global protein-protein interaction
 id: irefindex.irefweb
 name: iRefWeb
 original_source:
-- irefindex
+  - source: irefindex
+    relation_type: prov:hadPrimarySource
 layout: product_detail
 ---

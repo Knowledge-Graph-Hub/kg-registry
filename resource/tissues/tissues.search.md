@@ -5,7 +5,8 @@ format: http
 id: tissues.search
 name: TISSUES Search
 original_source:
-- tissues
+  - source: tissues
+    relation_type: prov:hadPrimarySource
 product_url: https://tissues.jensenlab.org/Search
 layout: product_detail
 ---

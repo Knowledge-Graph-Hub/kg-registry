@@ -5,7 +5,8 @@ format: http
 id: complexportal.webservice
 name: Complex Portal Web Service
 original_source:
-- complexportal
+  - source: complexportal
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ebi.ac.uk/complexportal/webservice
 layout: product_detail
 ---

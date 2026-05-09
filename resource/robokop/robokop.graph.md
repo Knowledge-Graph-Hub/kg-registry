@@ -1,14 +1,15 @@
 ---
 category: Product
-description: A biomedical knowledge graph containing ~10 million nodes and ~250 million
-  edges from ~30 biological data sources and bio-ontologies.
+description: A biomedical knowledge graph containing ~10 million nodes and ~250 million edges from ~30 biological data sources and bio-ontologies.
 id: robokop.graph
 name: ROBOKOP Knowledge Graph (KG)
 original_source:
-- robokop
+  - source: robokop
+    relation_type: prov:hadPrimarySource
 product_file_size: 280
 product_url: http://robokopkg.renci.org
 secondary_source:
-- robokop
+  - source: robokop
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

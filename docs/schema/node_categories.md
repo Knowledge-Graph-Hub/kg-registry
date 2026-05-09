@@ -15,8 +15,7 @@ _The node categories in the graph._
 
 
 URI: [kgr:node_categories](https://w3id.org/bridge2ai/data-sheets-schema/node_categories)
-
-
+Alias: node_categories
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:node_categories](https://w3id.org/bridge2ai/data-sheets-schema/node_ca
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -45,9 +43,7 @@ URI: [kgr:node_categories](https://w3id.org/bridge2ai/data-sheets-schema/node_ca
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

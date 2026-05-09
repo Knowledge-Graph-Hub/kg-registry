@@ -5,9 +5,11 @@ id: pubchem.pug.rest
 is_public: true
 name: PubChem PUG REST API
 original_source:
-- pubchem
+  - source: pubchem
+    relation_type: prov:hadPrimarySource
 product_url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
 secondary_source:
-- pubchem
+  - source: pubchem
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

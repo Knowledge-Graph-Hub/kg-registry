@@ -5,9 +5,11 @@ id: dbsnp.variation.api
 is_public: true
 name: NCBI Variation Services API
 original_source:
-- dbsnp
+  - source: dbsnp
+    relation_type: prov:hadPrimarySource
 product_url: https://api.ncbi.nlm.nih.gov/variation/v0/
 secondary_source:
-- dbsnp
+  - source: dbsnp
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

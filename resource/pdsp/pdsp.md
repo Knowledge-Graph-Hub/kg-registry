@@ -2,23 +2,18 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://pdsp.unc.edu/
-  label: UNC Chapel Hill PDSP
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://pdsp.unc.edu/
+    label: UNC Chapel Hill PDSP
 creation_date: '2025-11-05T00:00:00Z'
-description: The Psychoactive Drug Screening Program (PDSP) at UNC Chapel Hill provides
-  screening of novel psychoactive compounds for pharmacological and functional activity
-  at cloned human or rodent CNS receptors, channels, and transporters. The PDSP Ki
-  Database contains binding affinities for thousands of drugs and drug candidates
-  at neuroreceptors, providing critical pharmacological data for drug discovery and
-  neuroscience research.
+description: The Psychoactive Drug Screening Program (PDSP) at UNC Chapel Hill provides screening of novel psychoactive compounds for pharmacological and functional activity at cloned human or rodent CNS receptors, channels, and transporters. The PDSP Ki Database contains binding affinities for thousands of drugs and drug candidates at neuroreceptors, providing critical pharmacological data for drug discovery and neuroscience research.
 domains:
-- pharmacology
-- neuroscience
-- drug discovery
-- biomedical
+  - pharmacology
+  - neuroscience
+  - drug discovery
+  - biomedical
 homepage_url: https://pdsp.unc.edu/
 id: pdsp
 infores_id: pdsp
@@ -26,38 +21,42 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: Psychoactive Drug Screening Program
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and browsing PDSP Ki Database
-  format: http
-  id: pdsp.web
-  name: PDSP Ki Database
-  original_source:
-  - pdsp
-  product_url: https://pdsp.unc.edu/databases/kidb.php
-- category: Product
-  description: Receptor binding affinity data for psychoactive compounds
-  format: csv
-  id: pdsp.data
-  name: PDSP Binding Data
-  original_source:
-  - pdsp
-  product_url: https://pdsp.unc.edu/databases/kidb.php
-- category: DocumentationProduct
-  description: Screening assay protocols and methodologies
-  format: pdf
-  id: pdsp.protocols
-  name: PDSP Assay Protocols
-  original_source:
-  - pdsp
-  product_file_size: 24885088
-  product_url: https://pdsp.unc.edu/pdspweb/content/PDSP%20Protocols%20II%202013-03-28.pdf
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing PDSP Ki Database
+    format: http
+    id: pdsp.web
+    name: PDSP Ki Database
+    original_source:
+      - source: pdsp
+        relation_type: prov:hadPrimarySource
+    product_url: https://pdsp.unc.edu/databases/kidb.php
+  - category: Product
+    description: Receptor binding affinity data for psychoactive compounds
+    format: csv
+    id: pdsp.data
+    name: PDSP Binding Data
+    original_source:
+      - source: pdsp
+        relation_type: prov:hadPrimarySource
+    product_url: https://pdsp.unc.edu/databases/kidb.php
+  - category: DocumentationProduct
+    description: Screening assay protocols and methodologies
+    format: pdf
+    id: pdsp.protocols
+    name: PDSP Assay Protocols
+    original_source:
+      - source: pdsp
+        relation_type: prov:hadPrimarySource
+    product_file_size: 24885088
+    product_url: https://pdsp.unc.edu/pdspweb/content/PDSP%20Protocols%20II%202013-03-28.pdf
 synonyms:
-- PDSP
-- NIMH PDSP
+  - PDSP
+  - NIMH PDSP
 taxon:
-- NCBITaxon:9606
-- NCBITaxon:10116
+  - NCBITaxon:9606
+  - NCBITaxon:10116
 ---
+
 # Psychoactive Drug Screening Program
 
 ## Overview

@@ -1,15 +1,16 @@
 ---
 category: GraphProduct
-description: The graph representation of the Human Reference Atlas (HRA) dataset,
-  v2.2, JSON-LD format
+description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, JSON-LD format
 format: jsonld
 id: hra-kg.graph.json
 name: HRA KG graph data, v2.2, JSON-LD format
 original_source:
-- hra-kg
+  - source: hra-kg
+    relation_type: prov:hadPrimarySource
 product_file_size: 18043
 product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
 secondary_source:
-- hra-kg
+  - source: hra-kg
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

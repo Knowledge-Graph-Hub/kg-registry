@@ -2,40 +2,38 @@
 activity_status: active
 category: Resource
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
-  label: Christopher J. Mungall
-  orcid: 0000-0002-6601-2165
-description: 'This repository contains classes required by Noctua/Minerva for representing
-  entities that are object of ''enabled by'' relations, and similar molecular relationships.
-  This includes: genes, protein (gene-level generic proteins and isoforms), functional
-  RNAs, and complexes. These are represented as ontology classes, although NEO is
-  not really an ontology in a conventional sense: there is no hierarchy, it is organized
-  as a largely flat list.'
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: cjmungall@lbl.gov
+      - contact_type: github
+        value: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+description: 'This repository contains classes required by Noctua/Minerva for representing entities that are object of ''enabled by'' relations, and similar molecular relationships. This includes: genes, protein (gene-level generic proteins and isoforms), functional RNAs, and complexes. These are represented as ontology classes, although NEO is not really an ontology in a conventional sense: there is no hierarchy, it is organized as a largely flat list.'
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/geneontology/neo/
 id: neo
 layout: resource_detail
 name: Noctua Entity Ontology
 products:
-- category: Product
-  description: OWL release of neo
-  format: owl
-  id: neo.model
-  name: neo OWL release
-  original_source:
-  - neo
-  product_file_size: 2278767531
-  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-  secondary_source:
-  - neo
+  - category: Product
+    description: OWL release of neo
+    format: owl
+    id: neo.model
+    name: neo OWL release
+    original_source:
+      - source: neo
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2278767531
+    product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+    secondary_source:
+      - source: neo
+        relation_type: prov:wasInfluencedBy
 repository: https://github.com/geneontology/neo/
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2025-08-06T00:00:00Z'
 ---
+
 Noctua Entity Ontology. Conversion of gene and gene-centric entity IDs from uniprot and MODs.

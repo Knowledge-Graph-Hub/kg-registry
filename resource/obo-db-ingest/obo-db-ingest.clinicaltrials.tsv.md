@@ -8,10 +8,12 @@ license:
   label: Custom
 name: clinicaltrials Nodes TSV
 original_source:
-- clinicaltrials
+  - source: clinicaltrials
+    relation_type: prov:hadPrimarySource
 product_file_size: 19140027
 product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

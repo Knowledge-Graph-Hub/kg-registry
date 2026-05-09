@@ -5,7 +5,8 @@ format: http
 id: openpredict.api
 name: OpenPredict API
 original_source:
-- openpredict
+  - source: openpredict
+    relation_type: prov:hadPrimarySource
 product_url: https://openpredict.semanticscience.org/
 layout: product_detail
 ---

@@ -2,24 +2,19 @@
 activity_status: active
 category: DataSource
 collection:
-- aop
+  - aop
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://aopwiki.org/info_pages/10
-  label: AOP-Wiki Coordination Group
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://aopwiki.org/info_pages/10
+    label: AOP-Wiki Coordination Group
 creation_date: '2025-09-04T00:00:00Z'
-description: The AOP-Wiki is the primary collaborative authoring and curation interface
-  for the Adverse Outcome Pathway Knowledge Base (AOP-KB). It enables the community
-  to develop, review, browse, and export Adverse Outcome Pathways (AOPs) linking molecular
-  initiating events through key events to adverse outcomes relevant to human and ecological
-  risk assessment. Structured exports (XML and tabular subsets) support computational
-  toxicology, ontology mapping, and integration into predictive assessment workflows.
+description: The AOP-Wiki is the primary collaborative authoring and curation interface for the Adverse Outcome Pathway Knowledge Base (AOP-KB). It enables the community to develop, review, browse, and export Adverse Outcome Pathways (AOPs) linking molecular initiating events through key events to adverse outcomes relevant to human and ecological risk assessment. Structured exports (XML and tabular subsets) support computational toxicology, ontology mapping, and integration into predictive assessment workflows.
 domains:
-- toxicology
-- environment
-- pathways
+  - toxicology
+  - environment
+  - pathways
 homepage_url: https://aopwiki.org/
 id: aop-wiki
 last_modified_date: '2026-05-04T00:00:00Z'
@@ -29,207 +24,157 @@ license:
   label: Varies
 name: AOP-Wiki
 products:
-- category: GraphicalInterface
-  description: Web portal for browsing, authoring, and reviewing AOPs, key events
-    (KEs), key event relationships (KERs), stressors, and supporting documentation
-  format: http
-  id: aop-wiki.portal
-  name: AOP-Wiki Portal
-  original_source:
-  - aop-wiki
-  product_url: https://aopwiki.org/
-- category: ProgrammingInterface
-  connection_url: https://aopwiki-rdf.prod.openrisknet.org/
-  description: OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki
-    quarterly XML dumps for querying AOPs, key events, key event relationships, and
-    stressors.
-  format: http
-  id: aop-wiki.sparql
-  is_public: true
-  name: AOP-Wiki SPARQL Endpoint
-  original_source:
-  - aop-wiki
-  product_url: https://openrisknet.org/e-infrastructure/services/133/
-- category: Product
-  description: Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable
-    for citation and archival use
-  format: xml
-  id: aop-wiki.quarterly-xml
-  latest_version: '2026-04-01'
-  name: AOP-Wiki Quarterly XML Snapshot
-  original_source:
-  - aop-wiki
-  product_url: https://aopwiki.org/downloads
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-- category: Product
-  description: Nightly XML export (rolling) containing latest AOP-Wiki content (overwritten
-    daily)
-  format: xml
-  id: aop-wiki.nightly-xml
-  name: AOP-Wiki Nightly XML Export
-  original_source:
-  - aop-wiki
-  product_file_size: 9933339
-  product_url: https://aopwiki.org/downloads/aop-wiki-xml.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-- category: Product
-  description: Tab-delimited subset listing AOP to Key Event (including MIE, intermediate
-    KE, and Adverse Outcome) associations
-  format: tsv
-  id: aop-wiki.ke-overview
-  name: AOP-Wiki Key Events TSV
-  original_source:
-  - aop-wiki
-  product_file_size: 238066
-  product_url: https://aopwiki.org/downloads/aop_ke_mie_ao.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-- category: Product
-  description: Tab-delimited subset listing Key Event Relationships (KERs) with evidence
-    and quantitative understanding indicators
-  format: tsv
-  id: aop-wiki.ker
-  name: AOP-Wiki Key Event Relationships TSV
-  original_source:
-  - aop-wiki
-  product_file_size: 189389
-  product_url: https://aopwiki.org/downloads/aop_ke_ker.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-- category: Product
-  description: Tab-delimited subset of Key Event Components (actions, biological objects/processes
-    with ontology references)
-  format: tsv
-  id: aop-wiki.ke-components
-  name: AOP-Wiki Key Event Components TSV
-  original_source:
-  - aop-wiki
-  product_file_size: 291132
-  product_url: https://aopwiki.org/downloads/aop_ke_ec.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-- category: Product
-  description: Per-AOP dynamic XML feed accessible via each AOP page (XML button)
-    for up-to-minute content retrieval
-  format: xml
-  id: aop-wiki.dynamic-aop-xml
-  name: AOP-Wiki Dynamic AOP XML Feed
-  original_source:
-  - aop-wiki
-  product_url: https://aopwiki.org/aops
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-- category: DocumentationProduct
-  description: This document is the AOP Developers' Handbook supplement to the Guidance
-    Document for developing and assessing Adverse Outcome Pathways (AOPs). The Guidance
-    Document provides a historical background for the AOP development programme, and
-    outlines the elements required to construct an AOP as well as the principles of
-    the AOP framework.
-  format: http
-  id: aop-wiki.devhandbook
-  name: AOP Developers' Handbook
-  product_url: https://aopwiki.org/handbooks/4
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-    certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-    certificate (_ssl.c_1017)')))
-- category: Product
-  description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
-    to better characterize adverse outcomes of toxicological interest that are relevant
-    to human health and the environment. Since its inception, the AOP-DB has been
-    developed with the aim of integrating AOP molecular target information with other
-    publicly available datasets to facilitate computational analyses of AOP information.
-  id: aop-db.data
-  name: AOP-DB Data
-  original_source:
-  - aop-wiki
-  - ctd
-  - toxcast
-  - disgenet
-  - ncbigene
-  - string
-  - 1000genomes
-  - ensembl
-  - gwascatalog
-  product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
-  secondary_source:
-  - aop-db
-- category: ProgrammingInterface
-  connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/
-  description: OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB
-    for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology,
-    ontology, and gene interaction relationships.
-  format: http
-  id: aop-db.sparql
-  is_public: true
-  name: AOP-DB SPARQL Endpoint
-  original_source:
-  - aop-db
-  - aop-wiki
-  product_url: https://openrisknet.org/e-infrastructure/services/147/
+  - category: GraphicalInterface
+    description: Web portal for browsing, authoring, and reviewing AOPs, key events (KEs), key event relationships (KERs), stressors, and supporting documentation
+    format: http
+    id: aop-wiki.portal
+    name: AOP-Wiki Portal
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_url: https://aopwiki.org/
+  - category: ProgrammingInterface
+    connection_url: https://aopwiki-rdf.prod.openrisknet.org/
+    description: OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki quarterly XML dumps for querying AOPs, key events, key event relationships, and stressors.
+    format: http
+    id: aop-wiki.sparql
+    is_public: true
+    name: AOP-Wiki SPARQL Endpoint
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_url: https://openrisknet.org/e-infrastructure/services/133/
+  - category: Product
+    description: Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable for citation and archival use
+    format: xml
+    id: aop-wiki.quarterly-xml
+    latest_version: '2026-04-01'
+    name: AOP-Wiki Quarterly XML Snapshot
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_url: https://aopwiki.org/downloads
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-04_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: Product
+    description: Nightly XML export (rolling) containing latest AOP-Wiki content (overwritten daily)
+    format: xml
+    id: aop-wiki.nightly-xml
+    name: AOP-Wiki Nightly XML Export
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_file_size: 9933339
+    product_url: https://aopwiki.org/downloads/aop-wiki-xml.gz
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-13_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: Product
+    description: Tab-delimited subset listing AOP to Key Event (including MIE, intermediate KE, and Adverse Outcome) associations
+    format: tsv
+    id: aop-wiki.ke-overview
+    name: AOP-Wiki Key Events TSV
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_file_size: 238066
+    product_url: https://aopwiki.org/downloads/aop_ke_mie_ao.tsv
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-13_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: Product
+    description: Tab-delimited subset listing Key Event Relationships (KERs) with evidence and quantitative understanding indicators
+    format: tsv
+    id: aop-wiki.ker
+    name: AOP-Wiki Key Event Relationships TSV
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_file_size: 189389
+    product_url: https://aopwiki.org/downloads/aop_ke_ker.tsv
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-13_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: Product
+    description: Tab-delimited subset of Key Event Components (actions, biological objects/processes with ontology references)
+    format: tsv
+    id: aop-wiki.ke-components
+    name: AOP-Wiki Key Event Components TSV
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_file_size: 291132
+    product_url: https://aopwiki.org/downloads/aop_ke_ec.tsv
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-13_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: Product
+    description: Per-AOP dynamic XML feed accessible via each AOP page (XML button) for up-to-minute content retrieval
+    format: xml
+    id: aop-wiki.dynamic-aop-xml
+    name: AOP-Wiki Dynamic AOP XML Feed
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_url: https://aopwiki.org/aops
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-13_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: DocumentationProduct
+    description: This document is the AOP Developers' Handbook supplement to the Guidance Document for developing and assessing Adverse Outcome Pathways (AOPs). The Guidance Document provides a historical background for the AOP development programme, and outlines the elements required to construct an AOP as well as the principles of the AOP framework.
+    format: http
+    id: aop-wiki.devhandbook
+    name: AOP Developers' Handbook
+    product_url: https://aopwiki.org/handbooks/4
+    warnings:
+      - File was not able to be retrieved when checked on 2026-02-04_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - category: Product
+    description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.
+    id: aop-db.data
+    name: AOP-DB Data
+    original_source:
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: toxcast
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 1000genomes
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+    product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
+    secondary_source:
+      - source: aop-db
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    connection_url: https://aopdb.rdf.bigcat-bioinformatics.org/
+    description: OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology, and gene interaction relationships.
+    format: http
+    id: aop-db.sparql
+    is_public: true
+    name: AOP-DB SPARQL Endpoint
+    original_source:
+      - source: aop-db
+        relation_type: prov:hadPrimarySource
+      - source: aop-wiki
+        relation_type: prov:hadPrimarySource
+    product_url: https://openrisknet.org/e-infrastructure/services/147/
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 version: '2.8'
 ---
+
 # AOP-Wiki
 
 ## Overview

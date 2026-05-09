@@ -2,310 +2,481 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: damcdonald@ucsd.edu
-  label: Daniel McDonald
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://greengenes2.ucsd.edu/
-  label: University of California San Diego
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: damcdonald@ucsd.edu
+    label: Daniel McDonald
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://greengenes2.ucsd.edu/
+    label: University of California San Diego
 collection:
-- ber
+  - ber
 creation_date: '2025-09-09T00:00:00Z'
-description: Greengenes2 is a comprehensive reference database and phylogenetic tree
-  for 16S rRNA gene sequences that unifies microbial data from multiple sources into
-  a single coherent framework. It provides standardized taxonomic assignments and
-  phylogenetic placement for microbiome research and enables consistent analysis across
-  different studies and sequencing platforms.
+description: Greengenes2 is a comprehensive reference database and phylogenetic tree for 16S rRNA gene sequences that unifies microbial data from multiple sources into a single coherent framework. It provides standardized taxonomic assignments and phylogenetic placement for microbiome research and enables consistent analysis across different studies and sequencing platforms.
 domains:
-- biomedical
-- microbiome
-- microbiology
-- organisms
+  - biomedical
+  - microbiome
+  - microbiology
+  - organisms
 homepage_url: https://greengenes2.ucsd.edu/
 id: greengenes
 last_modified_date: '2025-09-24T00:00:00Z'
 layout: resource_detail
 name: Greengenes2
 products:
-- category: GraphicalInterface
-  description: Web-based search interface for querying Greengenes2 database by species,
-    ASV sequences, or clade names
-  format: http
-  id: greengenes.portal
-  name: Greengenes2 Web Portal
-  product_url: https://greengenes2.ucsd.edu/
-- category: Product
-  description: FTP archive containing Greengenes2 database files including phylogenetic
-    trees, taxonomy, and sequence data
-  format: http
-  id: greengenes.ftp
-  name: Greengenes2 FTP Archive
-  product_url: http://ftp.microbio.me/greengenes_release/current/
-- category: Product
-  description: Reference phylogenetic tree in Newick format containing unified microbial
-    phylogeny
-  format: txt
-  id: greengenes.phylogeny
-  name: Greengenes2 Phylogenetic Tree
-  product_url: http://ftp.microbio.me/greengenes_release/current/
-- category: Product
-  description: 16S rRNA gene sequences in FASTA format for all organisms in the database
-  format: fasta
-  id: greengenes.sequences
-  name: Greengenes2 Sequences
-  product_url: http://ftp.microbio.me/greengenes_release/current/
-- category: Product
-  description: Taxonomic assignments and metadata for all sequences in the database
-  format: tsv
-  id: greengenes.taxonomy
-  name: Greengenes2 Taxonomy
-  product_url: http://ftp.microbio.me/greengenes_release/current/
-- category: ProcessProduct
-  description: QIIME 2 plugin for integrating Greengenes2 data into microbiome analysis
-    workflows
-  format: python
-  id: greengenes.qiime2-plugin
-  name: q2-greengenes2 Plugin
-  product_url: https://github.com/biocore/q2-greengenes2/
-- category: GraphicalInterface
-  description: Web portal for searching and browsing ncRNA sequences, structures,
-    and annotations
-  format: http
-  id: rnacentral.portal
-  name: RNAcentral Portal
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/
-- category: ProgrammingInterface
-  description: REST API for programmatic access to RNAcentral data
-  format: http
-  id: rnacentral.api
-  name: RNAcentral REST API
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/api
-- category: Product
-  description: FTP archive with current and archived release files (sequences and
-    annotations)
-  format: http
-  id: rnacentral.ftp
-  name: RNAcentral FTP Archive
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
-- category: DataModelProduct
-  description: Public PostgreSQL database for direct SQL access to RNAcentral data
-  format: postgres
-  id: rnacentral.public-db
-  name: RNAcentral Public Postgres Database
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/help/public-database
+  - category: GraphicalInterface
+    description: Web-based search interface for querying Greengenes2 database by species, ASV sequences, or clade names
+    format: http
+    id: greengenes.portal
+    name: Greengenes2 Web Portal
+    product_url: https://greengenes2.ucsd.edu/
+  - category: Product
+    description: FTP archive containing Greengenes2 database files including phylogenetic trees, taxonomy, and sequence data
+    format: http
+    id: greengenes.ftp
+    name: Greengenes2 FTP Archive
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: Product
+    description: Reference phylogenetic tree in Newick format containing unified microbial phylogeny
+    format: txt
+    id: greengenes.phylogeny
+    name: Greengenes2 Phylogenetic Tree
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: Product
+    description: 16S rRNA gene sequences in FASTA format for all organisms in the database
+    format: fasta
+    id: greengenes.sequences
+    name: Greengenes2 Sequences
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: Product
+    description: Taxonomic assignments and metadata for all sequences in the database
+    format: tsv
+    id: greengenes.taxonomy
+    name: Greengenes2 Taxonomy
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: ProcessProduct
+    description: QIIME 2 plugin for integrating Greengenes2 data into microbiome analysis workflows
+    format: python
+    id: greengenes.qiime2-plugin
+    name: q2-greengenes2 Plugin
+    product_url: https://github.com/biocore/q2-greengenes2/
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://rnacentral.org/help/public-database
 publications:
-- authors:
-  - McDonald D
-  - Jiang Y
-  - Balaban M
-  - Cantrell K
-  - Zhu Q
-  - Gonzalez A
-  - Morton JT
-  - Nicolaou G
-  - Parks DH
-  - Karst SM
-  - Albertsen M
-  - Hugenholtz P
-  - Keller A
-  - Knight R
-  id: doi:10.1038/s41587-023-01845-1
-  journal: Nature Biotechnology
-  preferred: true
-  title: Greengenes2 unifies microbial data in a single reference tree
-  year: '2024'
+  - authors:
+      - McDonald D
+      - Jiang Y
+      - Balaban M
+      - Cantrell K
+      - Zhu Q
+      - Gonzalez A
+      - Morton JT
+      - Nicolaou G
+      - Parks DH
+      - Karst SM
+      - Albertsen M
+      - Hugenholtz P
+      - Keller A
+      - Knight R
+    id: doi:10.1038/s41587-023-01845-1
+    journal: Nature Biotechnology
+    preferred: true
+    title: Greengenes2 unifies microbial data in a single reference tree
+    year: '2024'
 repository: https://github.com/biocore/greengenes2/
 taxon:
-- NCBITaxon:2
+  - NCBITaxon:2
 ---
+
 # Greengenes2
 
 Greengenes2 is a comprehensive reference database and phylogenetic framework for 16S rRNA gene sequences that addresses the fragmentation problem in microbial data analysis. By unifying sequences from multiple databases into a single coherent phylogenetic tree, Greengenes2 enables consistent taxonomic assignments and comparative analyses across different microbiome studies and sequencing platforms.

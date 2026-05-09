@@ -1,11 +1,11 @@
 ---
 category: ProcessProduct
-description: Server-side component for storing, validating, and reasoning over GO-CAM
-  models
+description: Server-side component for storing, validating, and reasoning over GO-CAM models
 id: go-cam.minerva
 name: Minerva
 original_source:
-- go-cam
+  - source: go-cam
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/geneontology/minerva
 layout: product_detail
 ---

@@ -4,7 +4,8 @@ description: UCSC Genome Browser trackhub for directly displaying LncIPedia anno
 id: lncipedia.trackhub
 name: LncIPedia UCSC Trackhub
 original_source:
-- lncipedia
+  - source: lncipedia
+    relation_type: prov:hadPrimarySource
 product_url: https://www.lncipedia.org/trackhub/hub.txt
 layout: product_detail
 ---

@@ -1,12 +1,12 @@
 ---
 category: Product
-description: Comprehensive list of all integrated chemistry databases and their metadata
-  in UniChem
+description: Comprehensive list of all integrated chemistry databases and their metadata in UniChem
 format: http
 id: unichem.sources
 name: UniChem Source Database List
 original_source:
-- unichem
+  - source: unichem
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ebi.ac.uk/unichem/sources
 layout: product_detail
 ---

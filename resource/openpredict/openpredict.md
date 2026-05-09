@@ -2,25 +2,19 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://openpredict.semanticscience.org/
-  label: Institute for Data Science at Maastricht University
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://openpredict.semanticscience.org/
+    label: Institute for Data Science at Maastricht University
 creation_date: '2025-11-05T00:00:00Z'
-description: OpenPredict is an NCATS Translator Knowledge Provider that provides machine
-  learning-based predictions for drug-target interactions and drug-disease associations
-  to support drug repurposing. OpenPredict integrates multiple biomedical knowledge
-  graphs and applies various machine learning algorithms to predict potential therapeutic
-  uses for existing drugs. The service offers predictions with confidence scores and
-  provides evidence trails linking drugs to diseases through intermediate biological
-  entities like targets and pathways.
+description: OpenPredict is an NCATS Translator Knowledge Provider that provides machine learning-based predictions for drug-target interactions and drug-disease associations to support drug repurposing. OpenPredict integrates multiple biomedical knowledge graphs and applies various machine learning algorithms to predict potential therapeutic uses for existing drugs. The service offers predictions with confidence scores and provides evidence trails linking drugs to diseases through intermediate biological entities like targets and pathways.
 domains:
-- drug discovery
-- pharmacology
-- precision medicine
-- translational
-- biomedical
+  - drug discovery
+  - pharmacology
+  - precision medicine
+  - translational
+  - biomedical
 homepage_url: https://openpredict.semanticscience.org/
 id: openpredict
 infores_id: openpredict
@@ -28,48 +22,49 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: OpenPredict
 products:
-- category: ProgrammingInterface
-  description: TRAPI-compliant API for drug repurposing predictions
-  format: http
-  id: openpredict.api
-  name: OpenPredict API
-  original_source:
-  - openpredict
-  product_url: https://openpredict.semanticscience.org/
-- category: GraphicalInterface
-  description: Web interface for exploring drug repurposing predictions
-  format: http
-  id: openpredict.ui
-  name: OpenPredict Web Interface
-  original_source:
-  - openpredict
-  product_url: https://openpredict.semanticscience.org/
-- category: Product
-  description: Pre-computed drug-disease predictions
-  format: mixed
-  id: openpredict.predictions
-  name: OpenPredict Prediction Data
-  original_source:
-  - openpredict
-  product_url: https://openpredict.semanticscience.org/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 405 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
+  - category: ProgrammingInterface
+    description: TRAPI-compliant API for drug repurposing predictions
+    format: http
+    id: openpredict.api
+    name: OpenPredict API
+    original_source:
+      - source: openpredict
+        relation_type: prov:hadPrimarySource
+    product_url: https://openpredict.semanticscience.org/
+  - category: GraphicalInterface
+    description: Web interface for exploring drug repurposing predictions
+    format: http
+    id: openpredict.ui
+    name: OpenPredict Web Interface
+    original_source:
+      - source: openpredict
+        relation_type: prov:hadPrimarySource
+    product_url: https://openpredict.semanticscience.org/
+  - category: Product
+    description: Pre-computed drug-disease predictions
+    format: mixed
+    id: openpredict.predictions
+    name: OpenPredict Prediction Data
+    original_source:
+      - source: openpredict
+        relation_type: prov:hadPrimarySource
+    product_url: https://openpredict.semanticscience.org/
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 405 error when accessing file'
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file
+      - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting to URL'
 publications:
-- id: https://doi.org/10.1093/bioinformatics/btab540
+  - id: https://doi.org/10.1093/bioinformatics/btab540
 repository: https://github.com/MaastrichtU-IDS/translator-openpredict
 synonyms:
-- OpenPredict
-- OpenPredict API
+  - OpenPredict
+  - OpenPredict API
 tags:
-- translator
+  - translator
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # OpenPredict
 
 ## Overview

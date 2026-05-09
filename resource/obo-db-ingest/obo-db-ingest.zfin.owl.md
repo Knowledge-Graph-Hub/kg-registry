@@ -9,10 +9,12 @@ license:
   label: CC-BY-4.0
 name: zfin OWL
 original_source:
-- zfin
+  - source: zfin
+    relation_type: prov:hadPrimarySource
 product_file_size: 4556098
 product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl.gz
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -15,8 +15,7 @@ _The number of edges in the graph._
 
 
 URI: [kgr:edge_count](https://w3id.org/bridge2ai/data-sheets-schema/edge_count)
-
-
+Alias: edge_count
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:edge_count](https://w3id.org/bridge2ai/data-sheets-schema/edge_count)
 
 
 
-
 ## Properties
 
 * Range: [Integer](Integer.html)
@@ -43,9 +41,7 @@ URI: [kgr:edge_count](https://w3id.org/bridge2ai/data-sheets-schema/edge_count)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

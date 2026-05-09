@@ -120,6 +120,15 @@
   stroke-width: 2px;
 }
 
+.edge-label {
+  fill: #374151;
+  paint-order: stroke;
+  stroke: #f8f9fa;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  font-weight: 600;
+}
+
 text.highlighted {
   opacity: 1;
   font-weight: bold;

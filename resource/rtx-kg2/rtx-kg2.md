@@ -34,63 +34,102 @@ products:
     id: rtx-kg2.graph.nodes
     name: RTX-KG2.10.1c KGX JSONL Nodes
     original_source:
-      - chembl
-      - drugbank
-      - kegg
-      - reactome
-      - go
-      - drugcentral
-      - uniprot
-      - mondo
-      - hp
-      - chebi
-      - uberon
-      - ncbitaxon
-      - dgidb
-      - disgenet
-      - ensembl
-      - gtopdb
-      - rtx-kg2
-      - semmeddb
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: rtx-kg2
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
     product_file_size: 376501785
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
     secondary_source:
-      - rtx-kg2
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
     id: rtx-kg2.graph.edges
     name: RTX-KG2.10.1c KGX JSONL Edges
     original_source:
-      - chembl
-      - drugbank
-      - kegg
-      - reactome
-      - go
-      - drugcentral
-      - uniprot
-      - mondo
-      - hp
-      - chebi
-      - uberon
-      - ncbitaxon
-      - dgidb
-      - disgenet
-      - ensembl
-      - gtopdb
-      - rtx-kg2
-      - semmeddb
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: rtx-kg2
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
     product_file_size: 1807360397
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
     secondary_source:
-      - rtx-kg2
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: Code for building RTX-KG2, in Python
     id: rtx-kg2.code
     name: Code for building RTX-KG2
     product_url: https://github.com/RTXteam/RTX-KG2
     secondary_source:
-      - rtx-kg2
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: Neo4j distribution of the RTX-KG2 as a graph database
     dump_format: neo4j
@@ -99,27 +138,46 @@ products:
     is_public: false
     name: RTX-KG2 Neo4j
     original_source:
-      - chembl
-      - drugbank
-      - kegg
-      - reactome
-      - go
-      - drugcentral
-      - uniprot
-      - mondo
-      - hp
-      - chebi
-      - uberon
-      - ncbitaxon
-      - dgidb
-      - disgenet
-      - ensembl
-      - gtopdb
-      - rtx-kg2
-      - semmeddb
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: rtx-kg2
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
     product_url: https://arax.ncats.io/
     secondary_source:
-      - rtx-kg2
+      - source: rtx-kg2
+        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Wood EC

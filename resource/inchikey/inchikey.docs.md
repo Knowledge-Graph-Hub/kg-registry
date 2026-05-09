@@ -1,17 +1,15 @@
 ---
 category: DocumentationProduct
-description: InChI Trust documentation and supporting material for the InChI/InChIKey
-  identifier standard.
+description: InChI Trust documentation and supporting material for the InChI/InChIKey identifier standard.
 format: http
 id: inchikey.docs
 name: InChI/InChIKey Documentation
 original_source:
-- inchikey
+  - source: inchikey
+    relation_type: prov:hadPrimarySource
 product_url: https://www.inchi-trust.org/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
 layout: product_detail
 ---

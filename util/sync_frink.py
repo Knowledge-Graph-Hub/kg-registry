@@ -25,6 +25,11 @@ from urllib.request import urlopen
 import frontmatter  # type: ignore
 import yaml
 
+try:
+    from util.source_associations import make_original_source_associations
+except ModuleNotFoundError:
+    from source_associations import make_original_source_associations
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -209,7 +214,7 @@ class FRINKSync:
                     "description": f"SPARQL endpoint for {resource_name}",
                     "category": "ProgrammingInterface",
                     "product_url": sparql,
-                    "original_source": [resource_id],
+                    "original_source": make_original_source_associations([resource_id]),
                 }
             )
 
@@ -222,7 +227,7 @@ class FRINKSync:
                     "description": f"Triple Pattern Fragments endpoint for {resource_name}",
                     "category": "ProgrammingInterface",
                     "product_url": tpf,
-                    "original_source": [resource_id],
+                    "original_source": make_original_source_associations([resource_id]),
                 }
             )
 
@@ -295,7 +300,7 @@ class FRINKSync:
                 updated = copy.deepcopy(product)
                 updated.update(synced_by_id[product_id])
                 if not updated.get("original_source"):
-                    updated["original_source"] = [resource_id]
+                    updated["original_source"] = make_original_source_associations([resource_id])
                 merged.append(updated)
                 seen_ids.add(product_id)
             else:

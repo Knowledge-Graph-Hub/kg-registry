@@ -1,12 +1,12 @@
 ---
 category: Product
-description: eQTL (expression quantitative trait loci) data linking genetic variants
-  to gene expression across tissues
+description: eQTL (expression quantitative trait loci) data linking genetic variants to gene expression across tissues
 format: tsv
 id: gtex.eqtl-data
 name: GTEx eQTL Data
 original_source:
-- gtex
+  - source: gtex
+    relation_type: prov:hadPrimarySource
 product_url: https://www.gtexportal.org/home/downloads/adult-gtex/qtl
 layout: product_detail
 ---

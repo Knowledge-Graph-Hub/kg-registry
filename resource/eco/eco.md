@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Michelle Giglio
-  orcid: 0000-0001-7628-5565
-  contact_details:
-  - contact_type: email
-    value: mgiglio@som.umaryland.edu
-  - contact_type: github
-    value: mgiglio99
+  - category: Individual
+    label: Michelle Giglio
+    orcid: 0000-0001-7628-5565
+    contact_details:
+      - contact_type: email
+        value: mgiglio@som.umaryland.edu
+      - contact_type: github
+        value: mgiglio99
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for experimental and other evidence statements.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://www.evidenceontology.org
 id: eco
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,42 +26,42 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Evidence and Conclusion Ontology
 products:
-- category: OntologyProduct
-  description: Evidence and Conclusion Ontology in OWL format
-  format: owl
-  id: eco.owl
-  name: eco.owl
-  product_file_size: 346249
-  product_url: http://purl.obolibrary.org/obo/eco.owl
-- category: OntologyProduct
-  description: Evidence and Conclusion Ontology in OBO format
-  format: obo
-  id: eco.obo
-  name: eco.obo
-  product_file_size: 157676
-  product_url: http://purl.obolibrary.org/obo/eco.obo
-- category: Product
-  description: TSV export of evidence annotations including ECO terms and supporting
-    PMIDs.
-  format: tsv
-  id: swisslipid.evidences
-  name: SwissLipids Evidences
-  original_source:
-  - swisslipid
-  - eco
-  product_file_size: 47076
-  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=evidences.tsv
+  - category: OntologyProduct
+    description: Evidence and Conclusion Ontology in OWL format
+    format: owl
+    id: eco.owl
+    name: eco.owl
+    product_file_size: 346249
+    product_url: http://purl.obolibrary.org/obo/eco.owl
+  - category: OntologyProduct
+    description: Evidence and Conclusion Ontology in OBO format
+    format: obo
+    id: eco.obo
+    name: eco.obo
+    product_file_size: 157676
+    product_url: http://purl.obolibrary.org/obo/eco.obo
+  - category: Product
+    description: TSV export of evidence annotations including ECO terms and supporting PMIDs.
+    format: tsv
+    id: swisslipid.evidences
+    name: SwissLipids Evidences
+    original_source:
+      - source: swisslipid
+        relation_type: prov:hadPrimarySource
+      - source: eco
+        relation_type: prov:hadPrimarySource
+    product_file_size: 47076
+    product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=evidences.tsv
 repository: https://github.com/evidenceontology/evidenceontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
-  title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
-  title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
-    information.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
-  title: Standardized description of scientific evidence using the Evidence Ontology
-    (ECO)
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
+    title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
+    title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence information.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
+    title: Standardized description of scientific evidence using the Evidence Ontology (ECO)
 ---
+
 ## Description
 
 An ontology for experimental and other evidence statements.

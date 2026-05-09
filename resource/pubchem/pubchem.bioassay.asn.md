@@ -6,9 +6,11 @@ format: xml
 id: pubchem.bioassay.asn
 name: PubChem BioAssay ASN
 original_source:
-- pubchem
+  - source: pubchem
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/ASN/
 secondary_source:
-- pubchem
+  - source: pubchem
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

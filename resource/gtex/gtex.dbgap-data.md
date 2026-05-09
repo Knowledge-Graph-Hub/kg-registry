@@ -5,7 +5,8 @@ format: vcf
 id: gtex.dbgap-data
 name: GTEx dbGaP Data
 original_source:
-- gtex
+  - source: gtex
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
 layout: product_detail
 ---

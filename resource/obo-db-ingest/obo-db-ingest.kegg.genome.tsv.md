@@ -8,10 +8,12 @@ license:
   label: Custom
 name: kegg.genome Nodes TSV
 original_source:
-- kegg
+  - source: kegg
+    relation_type: prov:hadPrimarySource
 product_file_size: 187935
 product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

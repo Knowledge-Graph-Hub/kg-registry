@@ -2,11 +2,11 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN
-  label: NCATS Translator
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN
+    label: NCATS Translator
 creation_date: '2025-11-05T00:00:00Z'
 description: ARAGORN (Autonomous Relay Agent for Generation Of Ranked Networks) is an NCATS Translator Autonomous Relay Agent (ARA) that performs query operations by compiling and ranking data from multiple ARAGORN-affiliated knowledge provider services. ARAGORN acts as an intermediary between user queries and underlying knowledge providers, aggregating results, performing inference, and ranking answers based on evidence and confidence scores. It implements the Translator Reasoner API (TRAPI) standard for biomedical question-answering.
 domains:
@@ -20,28 +20,30 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: ARAGORN
 products:
-- category: ProgrammingInterface
-  description: TRAPI-compliant API for biomedical question answering
-  format: http
-  id: aragorn.api
-  name: ARAGORN API
-  original_source:
-  - aragorn
-  product_url: https://aragorn.renci.org/
-- category: GraphicalInterface
-  description: Web interface for querying ARAGORN
-  format: http
-  id: aragorn.ui
-  name: ARAGORN User Interface
-  original_source:
-  - aragorn
-  product_url: https://ui.transltr.io/
+  - category: ProgrammingInterface
+    description: TRAPI-compliant API for biomedical question answering
+    format: http
+    id: aragorn.api
+    name: ARAGORN API
+    original_source:
+      - source: aragorn
+        relation_type: prov:hadPrimarySource
+    product_url: https://aragorn.renci.org/
+  - category: GraphicalInterface
+    description: Web interface for querying ARAGORN
+    format: http
+    id: aragorn.ui
+    name: ARAGORN User Interface
+    original_source:
+      - source: aragorn
+        relation_type: prov:hadPrimarySource
+    product_url: https://ui.transltr.io/
 repository: https://github.com/ranking-agent/aragorn
 synonyms:
   - ARAGORN
   - Autonomous Relay Agent for Generation Of Ranked Networks
 tags:
-- translator
+  - translator
 ---
 
 # ARAGORN
@@ -95,4 +97,3 @@ Source code and documentation: https://github.com/ranking-agent/aragorn
 ## Tags
 
 - NCATS Translator
-

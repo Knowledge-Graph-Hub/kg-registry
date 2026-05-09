@@ -8,10 +8,12 @@ license:
   label: CC-BY-NC
 name: npass Nodes TSV
 original_source:
-- npass
+  - source: npass
+    relation_type: prov:hadPrimarySource
 product_file_size: 2460413
 product_url: https://w3id.org/biopragmatics/resources/npass/npass.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

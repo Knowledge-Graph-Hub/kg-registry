@@ -5,7 +5,8 @@ format: http
 id: sennet.api
 name: SenNet API
 original_source:
-- sennet
+  - source: sennet
+    relation_type: prov:hadPrimarySource
 product_url: https://sennetconsortium.org/
 layout: product_detail
 ---

@@ -2,23 +2,21 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: info@disprot.org
-  label: DisProt Team
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: biocomp@bio.unipd.it
-  label: Damiano Piovesan
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: info@disprot.org
+    label: DisProt Team
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: biocomp@bio.unipd.it
+    label: Damiano Piovesan
 creation_date: '2025-10-30T00:00:00Z'
-description: DisProt is a manually curated database of experimentally validated intrinsically
-  disordered proteins (IDPs) and intrinsically disordered regions (IDRs), providing
-  annotations for structural disorder and functional aspects of protein disorder.
+description: DisProt is a manually curated database of experimentally validated intrinsically disordered proteins (IDPs) and intrinsically disordered regions (IDRs), providing annotations for structural disorder and functional aspects of protein disorder.
 domains:
-- proteomics
-- biological systems
+  - proteomics
+  - biological systems
 homepage_url: https://www.disprot.org
 id: disprot
 infores_id: disprot
@@ -29,60 +27,62 @@ license:
   label: Creative Commons Attribution 4.0 International (CC BY 4.0)
 name: DisProt
 products:
-- category: GraphicalInterface
-  description: Web interface for browsing and searching intrinsically disordered protein
-    annotations with search filters and organism browsing
-  format: http
-  id: disprot.browser
-  name: DisProt Browser
-  original_source:
-  - disprot
-  product_url: https://www.disprot.org/browse
-- category: Product
-  description: Bulk download of DisProt data in multiple formats including JSON, TSV,
-    FASTA, and GAF
-  format: json
-  id: disprot.downloads
-  name: DisProt Downloads
-  original_source:
-  - disprot
-  product_url: https://www.disprot.org/download
-- category: ProgrammingInterface
-  description: RESTful API for programmatic access to DisProt data
-  format: http
-  id: disprot.api
-  is_public: true
-  name: DisProt API
-  original_source:
-  - disprot
-  product_url: https://www.disprot.org/api
-- category: GraphicalInterface
-  description: Deposition system for submitting experimental data on intrinsically
-    disordered proteins
-  id: disprot.deposition
-  name: DisProt Deposition System
-  original_source:
-  - disprot
-  product_url: https://deposition.disprot.org/
-- category: OntologyProduct
-  description: IDP Ontology (IDPO) for representing functional aspects of intrinsically
-    disordered proteins
-  format: owl
-  id: disprot.idpo
-  name: IDP Ontology (IDPO)
-  original_source:
-  - disprot
-  product_file_size: 50945
-  product_url: https://www.disprot.org/assets/data/IDPO_v0.3.0.owl
+  - category: GraphicalInterface
+    description: Web interface for browsing and searching intrinsically disordered protein annotations with search filters and organism browsing
+    format: http
+    id: disprot.browser
+    name: DisProt Browser
+    original_source:
+      - source: disprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.disprot.org/browse
+  - category: Product
+    description: Bulk download of DisProt data in multiple formats including JSON, TSV, FASTA, and GAF
+    format: json
+    id: disprot.downloads
+    name: DisProt Downloads
+    original_source:
+      - source: disprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.disprot.org/download
+  - category: ProgrammingInterface
+    description: RESTful API for programmatic access to DisProt data
+    format: http
+    id: disprot.api
+    is_public: true
+    name: DisProt API
+    original_source:
+      - source: disprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.disprot.org/api
+  - category: GraphicalInterface
+    description: Deposition system for submitting experimental data on intrinsically disordered proteins
+    id: disprot.deposition
+    name: DisProt Deposition System
+    original_source:
+      - source: disprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://deposition.disprot.org/
+  - category: OntologyProduct
+    description: IDP Ontology (IDPO) for representing functional aspects of intrinsically disordered proteins
+    format: owl
+    id: disprot.idpo
+    name: IDP Ontology (IDPO)
+    original_source:
+      - source: disprot
+        relation_type: prov:hadPrimarySource
+    product_file_size: 50945
+    product_url: https://www.disprot.org/assets/data/IDPO_v0.3.0.owl
 publications:
-- category: Publication
-  id: PMID:37904585
-  preferred: true
-- category: Publication
-  id: PMID:34850135
-- category: Publication
-  id: PMID:31713636
+  - category: Publication
+    id: PMID:37904585
+    preferred: true
+  - category: Publication
+    id: PMID:34850135
+  - category: Publication
+    id: PMID:31713636
 ---
+
 # DisProt
 
 ## Overview

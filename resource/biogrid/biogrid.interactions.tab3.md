@@ -8,6 +8,7 @@ latest_version: 5.0.252
 name: BIOGRID-ALL-LATEST.tab3.zip
 product_url: https://downloads.thebiogrid.org/BioGRID/Latest-Release/BIOGRID-ALL-LATEST.tab3.zip
 secondary_source:
-- biogrid
+  - source: biogrid
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

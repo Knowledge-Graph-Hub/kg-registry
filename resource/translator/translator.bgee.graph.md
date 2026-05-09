@@ -1,11 +1,9 @@
 ---
 category: GraphProduct
 compatibility:
-- standard: biolink
-  version: 4.3.6
-description: KGX JSONL graph package for Bgee - Gene Expression Database distributed
-  via the NCATS Translator release site (release 2026_03_06; build bgee_15.2_a4fc19df_2025sep1_4.3.6;
-  source version 15.2; Biolink 4.3.6; Node Normalizer 2025sep1).
+  - standard: biolink
+    version: 4.3.6
+description: KGX JSONL graph package for Bgee - Gene Expression Database distributed via the NCATS Translator release site (release 2026_03_06; build bgee_15.2_a4fc19df_2025sep1_4.3.6; source version 15.2; Biolink 4.3.6; Node Normalizer 2025sep1).
 edge_count: 4654943
 format: kgx-jsonl
 id: translator.bgee.graph
@@ -16,12 +14,14 @@ license:
 name: Translator Bgee KGX Graph
 node_count: 74689
 original_source:
-- bgee
+  - source: bgee
+    relation_type: prov:hadPrimarySource
 product_url: https://kgx-storage.rtx.ai/releases/bgee/latest/
 secondary_source:
-- translator
+  - source: translator
+    relation_type: prov:wasInfluencedBy
 versions:
-- '2026_03_06'
-- bgee_15.2_a4fc19df_2025sep1_4.3.6
+  - '2026_03_06'
+  - bgee_15.2_a4fc19df_2025sep1_4.3.6
 layout: product_detail
 ---

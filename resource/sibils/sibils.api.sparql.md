@@ -5,9 +5,11 @@ id: sibils.api.sparql
 is_public: true
 name: SIBiLS SPARQL Endpoint
 original_source:
-- sibils
+  - source: sibils
+    relation_type: prov:hadPrimarySource
 product_url: https://sparql.sibils.org/sparql
 secondary_source:
-- sibils
+  - source: sibils
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -6,7 +6,8 @@ format: tsv
 id: ncbigene.gene_history
 name: Gene History Data
 original_source:
-- ncbigene
+  - source: ncbigene
+    relation_type: prov:hadPrimarySource
 product_file_size: 153023757
 product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_history.gz
 layout: product_detail

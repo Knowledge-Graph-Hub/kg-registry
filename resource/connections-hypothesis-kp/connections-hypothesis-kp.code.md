@@ -5,7 +5,8 @@ format: http
 id: connections-hypothesis-kp.code
 name: Connections Hypothesis KP Source Code
 original_source:
-- connections-hypothesis-kp
+  - source: connections-hypothesis-kp
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/di2ag/chp_api/tree/production
 layout: product_detail
 ---

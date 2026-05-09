@@ -15,8 +15,7 @@ _The authors of the publication._
 
 
 URI: [kgr:authors](https://w3id.org/bridge2ai/data-sheets-schema/authors)
-
-
+Alias: authors
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:authors](https://w3id.org/bridge2ai/data-sheets-schema/authors)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -45,9 +43,7 @@ URI: [kgr:authors](https://w3id.org/bridge2ai/data-sheets-schema/authors)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

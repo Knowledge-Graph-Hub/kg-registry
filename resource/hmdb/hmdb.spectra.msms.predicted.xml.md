@@ -5,7 +5,8 @@ format: xml
 id: hmdb.spectra.msms.predicted.xml
 name: HMDB MS-MS Predicted Spectra (XML)
 original_source:
-- hmdb
+  - source: hmdb
+    relation_type: prov:hadPrimarySource
 product_url: https://www.hmdb.ca/downloads#spectra
 layout: product_detail
 ---

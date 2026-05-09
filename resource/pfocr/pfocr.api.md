@@ -5,7 +5,8 @@ format: http
 id: pfocr.api
 name: PFOCR API
 original_source:
-- pfocr
+  - source: pfocr
+    relation_type: prov:hadPrimarySource
 product_url: https://pfocr.wikipathways.org/
 layout: product_detail
 ---

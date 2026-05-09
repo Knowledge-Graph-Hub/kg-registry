@@ -2,11 +2,11 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://manticore.niehs.nih.gov/cebssearch/
-  label: NIEHS
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://manticore.niehs.nih.gov/cebssearch/
+    label: NIEHS
 creation_date: '2025-11-05T00:00:00Z'
 description: Chemical Effects in Biological Systems (CEBS) is a public, web-accessible, manually curated repository of toxicology study data from the National Toxicology Program (NTP) and other research programs. CEBS contains individual-level and summarized study data from carcinogenicity studies, short-term toxicity studies, genetic toxicity assays, and other toxicological investigations. The database integrates chemical structure information, study designs, experimental conditions, and biological effects to support toxicology research and risk assessment.
 domains:
@@ -21,30 +21,33 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: CEBS
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and browsing CEBS toxicology data
-  format: http
-  id: cebs.web
-  name: CEBS Search Interface
-  original_source:
-  - cebs
-  product_url: https://manticore.niehs.nih.gov/cebssearch/
-- category: Product
-  description: Toxicology study data from NTP and other programs
-  format: mixed
-  id: cebs.data
-  name: CEBS Study Data
-  original_source:
-  - cebs
-  product_url: https://manticore.niehs.nih.gov/cebssearch/
-- category: ProgrammingInterface
-  description: API access to CEBS data
-  format: http
-  id: cebs.api
-  name: CEBS API
-  original_source:
-  - cebs
-  product_url: https://manticore.niehs.nih.gov/cebssearch/
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing CEBS toxicology data
+    format: http
+    id: cebs.web
+    name: CEBS Search Interface
+    original_source:
+      - source: cebs
+        relation_type: prov:hadPrimarySource
+    product_url: https://manticore.niehs.nih.gov/cebssearch/
+  - category: Product
+    description: Toxicology study data from NTP and other programs
+    format: mixed
+    id: cebs.data
+    name: CEBS Study Data
+    original_source:
+      - source: cebs
+        relation_type: prov:hadPrimarySource
+    product_url: https://manticore.niehs.nih.gov/cebssearch/
+  - category: ProgrammingInterface
+    description: API access to CEBS data
+    format: http
+    id: cebs.api
+    name: CEBS API
+    original_source:
+      - source: cebs
+        relation_type: prov:hadPrimarySource
+    product_url: https://manticore.niehs.nih.gov/cebssearch/
 synonyms:
   - CEBS
   - Chemical Effects in Biological Systems

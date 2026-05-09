@@ -6,10 +6,12 @@ format: xml
 id: uniprot.trembl.xml
 name: Unreviewed (TrEMBL) XML
 original_source:
-- uniprot
+  - source: uniprot
+    relation_type: prov:hadPrimarySource
 product_file_size: 243378751330
 product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.xml.gz
 secondary_source:
-- uniprot
+  - source: uniprot
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

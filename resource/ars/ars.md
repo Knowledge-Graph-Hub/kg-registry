@@ -22,13 +22,13 @@ contacts:
         value: "https://ncats.nih.gov/translator"
 products:
   - category: GraphicalInterface
-    description: Primary web entry point for submitting and tracking Translator ARS
-      queries.
+    description: Primary web entry point for submitting and tracking Translator ARS queries.
     format: http
     id: ars.portal
     name: ARS Production Portal
     original_source:
-      - ars
+      - source: ars
+        relation_type: prov:hadPrimarySource
     product_url: https://ars-prod.transltr.io/
   - category: ProgrammingInterface
     connection_url: https://ars-prod.transltr.io/ars/api
@@ -38,7 +38,8 @@ products:
     is_public: true
     name: ARS API
     original_source:
-      - ars
+      - source: ars
+        relation_type: prov:hadPrimarySource
     product_url: https://ars-prod.transltr.io/ars/api/submit
 ---
 

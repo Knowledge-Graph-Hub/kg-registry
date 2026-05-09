@@ -5,10 +5,12 @@ format: tsv
 id: kg-monarch.associations.macromolecular_machine_to_molecular_activity
 name: Macromolecular Machine to Molecular Activity Associations
 original_source:
-- kg-monarch
+  - source: kg-monarch
+    relation_type: prov:hadPrimarySource
 product_file_size: 24519759
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/macromolecular_machine_to_molecular_activity_association.all.tsv.gz
 secondary_source:
-- kg-monarch
+  - source: kg-monarch
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

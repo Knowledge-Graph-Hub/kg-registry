@@ -2,26 +2,21 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: info@ncbi.nlm.nih.gov
-  - contact_type: url
-    value: https://www.ncbi.nlm.nih.gov/research/pubtator3/
-  id: ncbi
-  label: National Center for Biotechnology Information (NCBI)
-description: PubTator 3.0 is an AI-powered biomedical literature resource that uses
-  state-of-the-art AI techniques to provide semantic and relation searches for key
-  biomedical entities like proteins, genetic variants, diseases and chemicals. It
-  offers over one billion entity and relation annotations across approximately 36
-  million PubMed abstracts and 6 million full-text articles from the PMC open access
-  subset, updated weekly.
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: info@ncbi.nlm.nih.gov
+      - contact_type: url
+        value: https://www.ncbi.nlm.nih.gov/research/pubtator3/
+    id: ncbi
+    label: National Center for Biotechnology Information (NCBI)
+description: PubTator 3.0 is an AI-powered biomedical literature resource that uses state-of-the-art AI techniques to provide semantic and relation searches for key biomedical entities like proteins, genetic variants, diseases and chemicals. It offers over one billion entity and relation annotations across approximately 36 million PubMed abstracts and 6 million full-text articles from the PMC open access subset, updated weekly.
 domains:
-- literature
-- biomedical
-- health
-- genomics
-- pharmacology
+  - literature
+  - biomedical
+  - health
+  - genomics
+  - pharmacology
 homepage_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
 id: pubtator
 layout: resource_detail
@@ -30,70 +25,73 @@ license:
   label: Public Domain
 name: PubTator
 products:
-- category: ProgrammingInterface
-  description: PubTator 3.0 API for programmatic access to entity annotation, relation
-    search, and other features
-  id: pubtator.api
-  is_public: true
-  name: PubTator 3.0 API
-  original_source:
-  - pubtator
-  product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3-api/
-  secondary_source:
-  - pubtator
-- category: Product
-  description: Bulk downloads of annotated articles and extraction summaries for entities
-    and relations
-  id: pubtator.bulk
-  name: PubTator 3.0 Bulk Downloads
-  original_source:
-  - pubtator
-  product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/PubTator3
-  secondary_source:
-  - pubtator
-- category: GraphicalInterface
-  description: Web interface for exploring PubTator annotations with semantic and
-    relation search capabilities
-  id: pubtator.site
-  is_public: true
-  name: PubTator 3.0 Web Interface
-  original_source:
-  - pubtator
-  product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
-  secondary_source:
-  - pubtator
-- category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
-  id: gnbr.graph
-  name: GNBR graph
-  original_source:
-  - pubtator
-  product_url: https://zenodo.org/records/3459420
-  secondary_source:
-  - gnbr
+  - category: ProgrammingInterface
+    description: PubTator 3.0 API for programmatic access to entity annotation, relation search, and other features
+    id: pubtator.api
+    is_public: true
+    name: PubTator 3.0 API
+    original_source:
+      - source: pubtator
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3-api/
+    secondary_source:
+      - source: pubtator
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Bulk downloads of annotated articles and extraction summaries for entities and relations
+    id: pubtator.bulk
+    name: PubTator 3.0 Bulk Downloads
+    original_source:
+      - source: pubtator
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/PubTator3
+    secondary_source:
+      - source: pubtator
+        relation_type: prov:wasInfluencedBy
+  - category: GraphicalInterface
+    description: Web interface for exploring PubTator annotations with semantic and relation search capabilities
+    id: pubtator.site
+    is_public: true
+    name: PubTator 3.0 Web Interface
+    original_source:
+      - source: pubtator
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
+    secondary_source:
+      - source: pubtator
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: "Text-mined biomedical knowledge graph of gene–disease–drug relationships (semantic themes)"
+    id: gnbr.graph
+    name: GNBR graph
+    original_source:
+      - source: pubtator
+        relation_type: prov:hadPrimarySource
+    product_url: https://zenodo.org/records/3459420
+    secondary_source:
+      - source: gnbr
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Wei CH
-  - Allot A
-  - Lai PT
-  - Leaman R
-  - Tian S
-  - Luo L
-  - Jin Q
-  - Wang Z
-  - Chen Q
-  - Lu Z
-  doi: 10.1093/nar/gkae235
-  id: doi:10.1093/nar/gkae235
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'PubTator 3.0: an AI-powered literature resource for unlocking biomedical
-    knowledge'
-  year: '2024'
+  - authors:
+      - Wei CH
+      - Allot A
+      - Lai PT
+      - Leaman R
+      - Tian S
+      - Luo L
+      - Jin Q
+      - Wang Z
+      - Chen Q
+      - Lu Z
+    doi: 10.1093/nar/gkae235
+    id: doi:10.1093/nar/gkae235
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge'
+    year: '2024'
 repository: https://github.com/ncbi/AIONER
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 creation_date: '2025-05-15T00:00:00Z'
 last_modified_date: '2025-12-13T00:00:00Z'
 ---

@@ -5,9 +5,11 @@ id: orthodb.site
 is_public: true
 name: OrthoDB Web Interface
 original_source:
-- orthodb
+  - source: orthodb
+    relation_type: prov:hadPrimarySource
 product_url: https://www.orthodb.org/
 secondary_source:
-- orthodb
+  - source: orthodb
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

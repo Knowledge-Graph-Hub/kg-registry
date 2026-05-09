@@ -15,8 +15,7 @@ _The title of the publication._
 
 
 URI: [kgr:title](https://w3id.org/bridge2ai/data-sheets-schema/title)
-
-
+Alias: title
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:title](https://w3id.org/bridge2ai/data-sheets-schema/title)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:title](https://w3id.org/bridge2ai/data-sheets-schema/title)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

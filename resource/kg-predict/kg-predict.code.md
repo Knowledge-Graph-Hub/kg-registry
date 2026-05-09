@@ -1,11 +1,11 @@
 ---
 category: ProcessProduct
-description: Python implementation of KG-Predict framework for graph embedding and
-  drug repurposing prediction
+description: Python implementation of KG-Predict framework for graph embedding and drug repurposing prediction
 id: kg-predict.code
 name: KG-Predict Code
 original_source:
-- kg-predict
+  - source: kg-predict
+    relation_type: prov:hadPrimarySource
 product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
 layout: product_detail
 ---

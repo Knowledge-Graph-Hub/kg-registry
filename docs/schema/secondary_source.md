@@ -8,15 +8,14 @@ mermaid: true
 # Slot: secondary_source
 
 
-_The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource._
+_The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product._
 
 
 
 
 
 URI: [kgr:secondary_source](https://w3id.org/bridge2ai/data-sheets-schema/secondary_source)
-
-
+Alias: secondary_source
 
 <!-- no inheritance hierarchy -->
 
@@ -28,14 +27,15 @@ URI: [kgr:secondary_source](https://w3id.org/bridge2ai/data-sheets-schema/second
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
-| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
-| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
-| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
+| [DocumentationProduct](DocumentationProduct.html) | A product that is documentation for a resource |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that provides the rules of a data model |  no  |
 | [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
 | [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-
+| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
+| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
+| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
+| [OntologyProduct](OntologyProduct.html) | A product that is an ontology, a formal representation of a set of concepts w... |  no  |
+| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
 
 
 
@@ -44,16 +44,14 @@ URI: [kgr:secondary_source](https://w3id.org/bridge2ai/data-sheets-schema/second
 
 ## Properties
 
-* Range: [Resource](Resource.html)
+* Range: [SourceAssociation](SourceAssociation.html)
 
 * Multivalued: True
 
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 
@@ -83,16 +81,19 @@ URI: [kgr:secondary_source](https://w3id.org/bridge2ai/data-sheets-schema/second
 <details>
 ```yaml
 name: secondary_source
-description: The source(s) of the product, other than its original source, referred
-  to by the identifier of each resource. This may be an Aggregator or another resource.
+description: The source(s) of the product, other than its original source, with the
+  provenance relation describing how the product relates to each source. This may
+  be an Aggregator or another resource. This may also be a specific product.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 rank: 1000
 alias: secondary_source
 owner: Product
 domain_of:
 - Product
-range: Resource
+range: SourceAssociation
 multivalued: true
+inlined: true
+inlined_as_list: true
 
 ```
 </details>

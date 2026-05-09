@@ -2,15 +2,14 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-- translator
+  - translator
 contacts:
-- category: Individual
-  label: Sandrine Muller
-  orcid: 0000-0001-5998-3003
-description: MolePro is a Molecular Data Provider translating molecular scale to systems
-  scale through a Reasoner API. It is a Translator Knowledge Provider.
+  - category: Individual
+    label: Sandrine Muller
+    orcid: 0000-0001-5998-3003
+description: MolePro is a Molecular Data Provider translating molecular scale to systems scale through a Reasoner API. It is a Translator Knowledge Provider.
 domains:
-- health
+  - health
 homepage_url: https://github.com/broadinstitute/molecular-data-provider/
 id: molecular-data-kp
 layout: resource_detail
@@ -19,43 +18,50 @@ license:
   label: MIT License
 name: MolePro
 products:
-- category: GraphProduct
-  description: KGX nodes for Molecular Data KP
-  format: kgx
-  id: molecular-data-kp.graph.nodes
-  name: Nodes for Molecular Data KP
-  original_source:
-  - molecular-data-kp
-  product_file_size: 3676906360
-  product_url: https://molepro.s3.amazonaws.com/nodes.tsv
-  secondary_source:
-  - molecular-data-kp
-- category: GraphProduct
-  description: KGX edges for Molecular Data KP
-  format: kgx
-  id: molecular-data-kp.graph.edges
-  name: Edges for Molecular Data KP
-  original_source:
-  - molecular-data-kp
-  product_file_size: 20140191116
-  product_url: https://molepro.s3.amazonaws.com/edges.tsv
-  secondary_source:
-  - molecular-data-kp
-- category: ProgrammingInterface
-  connection_url: https://translator.broadinstitute.org/molecular_data_provider/api
-  description: Open API for Molecular Data KP
-  id: molecular-data-kp.api
-  is_public: true
-  name: Open API for Molecular Data KP
-  original_source:
-  - molecular-data-kp
-  product_url: https://translator.broadinstitute.org/molecular_data_provider/api
-  secondary_source:
-  - molecular-data-kp
+  - category: GraphProduct
+    description: KGX nodes for Molecular Data KP
+    format: kgx
+    id: molecular-data-kp.graph.nodes
+    name: Nodes for Molecular Data KP
+    original_source:
+      - source: molecular-data-kp
+        relation_type: prov:hadPrimarySource
+    product_file_size: 3676906360
+    product_url: https://molepro.s3.amazonaws.com/nodes.tsv
+    secondary_source:
+      - source: molecular-data-kp
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: KGX edges for Molecular Data KP
+    format: kgx
+    id: molecular-data-kp.graph.edges
+    name: Edges for Molecular Data KP
+    original_source:
+      - source: molecular-data-kp
+        relation_type: prov:hadPrimarySource
+    product_file_size: 20140191116
+    product_url: https://molepro.s3.amazonaws.com/edges.tsv
+    secondary_source:
+      - source: molecular-data-kp
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    connection_url: https://translator.broadinstitute.org/molecular_data_provider/api
+    description: Open API for Molecular Data KP
+    id: molecular-data-kp.api
+    is_public: true
+    name: Open API for Molecular Data KP
+    original_source:
+      - source: molecular-data-kp
+        relation_type: prov:hadPrimarySource
+    product_url: https://translator.broadinstitute.org/molecular_data_provider/api
+    secondary_source:
+      - source: molecular-data-kp
+        relation_type: prov:wasInfluencedBy
 repository: https://github.com/broadinstitute/molecular-data-provider/
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---
+
 A Translator Knowledge Provider for molecular data.
 
 contacts:

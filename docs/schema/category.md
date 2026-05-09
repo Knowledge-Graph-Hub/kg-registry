@@ -15,8 +15,7 @@ _The category of the entity. This should be identical to its class name._
 
 
 URI: [kgr:category](https://w3id.org/bridge2ai/data-sheets-schema/category)
-
-
+Alias: category
 
 
 ## Inheritance
@@ -33,27 +32,29 @@ URI: [kgr:category](https://w3id.org/bridge2ai/data-sheets-schema/category)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Individual](Individual.html) | An individual person |  no  |
-| [Contact](Contact.html) | A contact point for a resource or product |  no  |
-| [License](License.html) | A license for a resource or product |  no  |
+| [Contact](Contact.html) | A contact point for a resource or product, or a curator of a resource or prod... |  no  |
 | [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [Usage](Usage.html) | The usage of a resource |  no  |
-| [DataSource](DataSource.html) | A data source |  no  |
-| [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
 | [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
+| [Usage](Usage.html) | The usage of a resource |  no  |
 | [Publication](Publication.html) | A publication associated with a resource |  no  |
 | [Organization](Organization.html) | An organization |  no  |
-| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [OntologyProduct](OntologyProduct.html) | A product that is an ontology, a formal representation of a set of concepts w... |  no  |
+| [License](License.html) | A license for a resource or product |  no  |
+| [DataSource](DataSource.html) | A data source |  no  |
 | [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
-| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
-| [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
+| [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
+| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
 | [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [DataModel](DataModel.html) | A data model is a formal representation of concepts and relationships within ... |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that provides the rules of a data model |  no  |
+| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
+| [Ontology](Ontology.html) | An ontology is a formal representation of a set of concepts within a domain a... |  no  |
+| [DocumentationProduct](DocumentationProduct.html) | A product that is documentation for a resource |  no  |
+| [Individual](Individual.html) | An individual person |  no  |
+| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
 | [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-
+| [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
 
 
 
@@ -67,9 +68,7 @@ URI: [kgr:category](https://w3id.org/bridge2ai/data-sheets-schema/category)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

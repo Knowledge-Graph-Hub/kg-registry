@@ -15,8 +15,7 @@ _The predicate types in the graph._
 
 
 URI: [kgr:predicates](https://w3id.org/bridge2ai/data-sheets-schema/predicates)
-
-
+Alias: predicates
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:predicates](https://w3id.org/bridge2ai/data-sheets-schema/predicates)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -45,9 +43,7 @@ URI: [kgr:predicates](https://w3id.org/bridge2ai/data-sheets-schema/predicates)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

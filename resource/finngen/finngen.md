@@ -2,21 +2,18 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: finngen-info@helsinki.fi
-  label: FinnGen
-description: FinnGen is a large-scale genomics research project aimed at improving
-  human health through genetic insights from the genetically unique Finnish population,
-  combining genome information with digital health record data from 500,000 Finnish
-  biobank participants.
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: finngen-info@helsinki.fi
+    label: FinnGen
+description: FinnGen is a large-scale genomics research project aimed at improving human health through genetic insights from the genetically unique Finnish population, combining genome information with digital health record data from 500,000 Finnish biobank participants.
 domains:
-- genomics
-- biomedical
-- health
-- precision medicine
-- clinical
+  - genomics
+  - biomedical
+  - health
+  - precision medicine
+  - clinical
 homepage_url: https://www.finngen.fi/en
 id: finngen
 layout: resource_detail
@@ -25,69 +22,78 @@ license:
   label: CC-BY-4.0
 name: FinnGen
 products:
-- category: Product
-  description: Summary statistics from genome-wide association studies of various
-    disease phenotypes conducted on Finnish population data, with the most recent
-    release being Data Freeze 13.
-  id: finngen.summary_stats
-  name: FinnGen GWAS Summary Statistics
-  product_url: https://www.finngen.fi/en/access_results
-- category: GraphicalInterface
-  description: A web service for browsing disease endpoints in FinnGen, including
-    statistics, definitions, and relationships between diseases.
-  id: finngen.risteys
-  name: Risteys
-  product_url: https://risteys.finngen.fi/
-- category: Product
-  description: Results from meta-analysis of FinnGen data with other major biobanks,
-    allowing for more powerful detection of genetic associations.
-  id: finngen.meta_analysis
-  name: FinnGen Meta-Analysis Results
-  product_url: https://www.finngen.fi/en/access_results
-- category: GraphProduct
-  description: DisGeNET data, including gene to disease associations and variant to
-    disease associations (requires registration and subscription).
-  id: disgenet.data
-  name: DisGeNET Data
-  original_source:
-  - clingen
-  - clinvar
-  - mgd
-  - rgd
-  - orphanet
-  - psygenet
-  - uniprot
-  - disgenet
-  - hp
-  - gwascatalog
-  - phewascat
-  - ukbiobank
-  - finngen
-  - clinicaltrialsgov
-  product_url: https://www.disgenet.com/
-  secondary_source:
-  - disgenet
-- category: Product
-  description: Clinical endpoint definitions and control groups for FinnGen data releases,
-    including detailed documentation for each data freeze.
-  id: finngen.endpoints
-  name: FinnGen Clinical Endpoints
-  product_url: https://www.finngen.fi/en/researchers/clinical-endpoints
+  - category: Product
+    description: Summary statistics from genome-wide association studies of various disease phenotypes conducted on Finnish population data, with the most recent release being Data Freeze 13.
+    id: finngen.summary_stats
+    name: FinnGen GWAS Summary Statistics
+    product_url: https://www.finngen.fi/en/access_results
+  - category: GraphicalInterface
+    description: A web service for browsing disease endpoints in FinnGen, including statistics, definitions, and relationships between diseases.
+    id: finngen.risteys
+    name: Risteys
+    product_url: https://risteys.finngen.fi/
+  - category: Product
+    description: Results from meta-analysis of FinnGen data with other major biobanks, allowing for more powerful detection of genetic associations.
+    id: finngen.meta_analysis
+    name: FinnGen Meta-Analysis Results
+    product_url: https://www.finngen.fi/en/access_results
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: mgd
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: orphanet
+        relation_type: prov:hadPrimarySource
+      - source: psygenet
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: phewascat
+        relation_type: prov:hadPrimarySource
+      - source: ukbiobank
+        relation_type: prov:hadPrimarySource
+      - source: finngen
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.disgenet.com/
+    secondary_source:
+      - source: disgenet
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Clinical endpoint definitions and control groups for FinnGen data releases, including detailed documentation for each data freeze.
+    id: finngen.endpoints
+    name: FinnGen Clinical Endpoints
+    product_url: https://www.finngen.fi/en/researchers/clinical-endpoints
 publications:
-- doi: 10.1038/s41588-024-01975-5
-  id: doi:10.1038/s41588-024-01975-5
-  title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy
-    and myocardial resilience
-  year: '2024'
-- doi: 10.1038/s41588-025-02100-w
-  id: doi:10.1038/s41588-025-02100-w
-  title: Genome-wide association study of long COVID
-  year: '2025'
+  - doi: 10.1038/s41588-024-01975-5
+    id: doi:10.1038/s41588-024-01975-5
+    title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy and myocardial resilience
+    year: '2024'
+  - doi: 10.1038/s41588-025-02100-w
+    id: doi:10.1038/s41588-025-02100-w
+    title: Genome-wide association study of long COVID
+    year: '2025'
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 creation_date: '2025-06-27T00:00:00Z'
 last_modified_date: '2025-12-13T00:00:00Z'
 ---
+
 # FinnGen
 
 FinnGen is a large-scale public-private partnership research project combining genome information with digital health record data from Finnish biobanks and health registries. The project aims to improve human health through genetic research and advance the development of personalized medicine.

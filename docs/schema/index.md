@@ -6,7 +6,7 @@ mermaid: true
 # kg_registry_schema
 
 A schema for representing metadata about
-knowlege graphs, their sources, and their contents.
+knowledge graphs, their sources, and their contents.
 
 URI: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 
@@ -18,28 +18,33 @@ Name: kg_registry_schema
 
 | Class | Description |
 | --- | --- |
-| [Contact](Contact.html) | A contact point for a resource or product. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Individual](Individual.html) | An individual person. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Organization](Organization.html) | An organization. |
+| [Contact](Contact.html) | A contact point for a resource or product, or a curator of a resource or prod... |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Individual](Individual.html) | An individual person |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Organization](Organization.html) | An organization |
+| [ContactDetails](ContactDetails.html) | A field for details about how to contact a person or organization |
 | [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FundingSource](FundingSource.html) | A funding source for a resource. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[License](License.html) | A license for a resource or product. The id field should be a URL to the license text, e.g., https://creativecommons.org/licenses/by/4.0/ |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Product](Product.html) | A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource. Similar to the "browsers" field in OBO Foundry. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources. The sources should be identified in the original_source field. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Publication](Publication.html) | A publication associated with a resource. Its id should be a DOI (with prefix), but a URL is acceptable if a DOI is not available. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry. Each resource may have multiple products or representations, but they will all be considered part of a the same parent resource. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Aggregator](Aggregator.html) | An aggregator of data sources. Note that this may be a data source itself, and its products may undergo changes in the process of their inclusion in the aggregator. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataModel](DataModel.html) | A data model, such as an ontology or schema. May be used in construction of a knowledge graph. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataSource](DataSource.html) | A data source. One data source may have multiple products. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource. This is any heterogeneous collection of data that is represented as nodes (entities) and edges (relationships) between them. The nodes and edges may have attributes associated with them. This is not identical to the graph *product*, as a single KnowledgeGraph may have multiple products or representations. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Usage](Usage.html) | The usage of a resource. This may be actual, experimental, or theoretical. |
-| [Registry](Registry.html) | A registry of knowledge graphs and their components. |
-| [StandardCompatibility](StandardCompatibility.html) | Details about the compatibility of a product with a particular standard, including data models such as Biolink Model and graph standards such as KGX. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FundingSource](FundingSource.html) | A funding source for a resource |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[License](License.html) | A license for a resource or product |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Product](Product.html) | A top-level class for all products in the knowledge graph registry |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataModelProduct](DataModelProduct.html) | A product that provides the rules of a data model |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DocumentationProduct](DocumentationProduct.html) | A product that is documentation for a resource |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OntologyProduct](OntologyProduct.html) | A product that is an ontology, a formal representation of a set of concepts w... |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Publication](Publication.html) | A publication associated with a resource |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Aggregator](Aggregator.html) | An aggregator of data sources |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataModel](DataModel.html) | A data model is a formal representation of concepts and relationships within ... |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataSource](DataSource.html) | A data source |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Ontology](Ontology.html) | An ontology is a formal representation of a set of concepts within a domain a... |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Usage](Usage.html) | The usage of a resource |
+| [Registry](Registry.html) | A registry of knowledge graphs and their components |
+| [SourceAssociation](SourceAssociation.html) | A typed provenance association from a product to another resource or product ... |
+| [StandardCompatibility](StandardCompatibility.html) | Details about the compatibility of a product with a particular standard, incl... |
 
 
 
@@ -50,25 +55,31 @@ Name: kg_registry_schema
 | [activity_status](activity_status.html) | The status of the resource |
 | [authors](authors.html) | The authors of the publication |
 | [category](category.html) | The category of the entity |
+| [collection](collection.html) | A collection of entries in the registry |
 | [compatibility](compatibility.html) | A list of standards that the product conforms to |
 | [components](components.html) | The components of the knowledge graph |
 | [compression](compression.html) | The type of compression used with the product |
 | [connection_url](connection_url.html) | A URL specific to the product |
+| [contact_details](contact_details.html) | A field for contact details, including email, GitHub, and contact-specific UR... |
+| [contact_type](contact_type.html) | The type of contact detail |
+| [contact_type_name](contact_type_name.html) | The name of the contact detail, if the contact_type is "other" |
+| [contact_type_url](contact_type_url.html) | The URL of the contact detail, if the contact_type is "other" |
 | [contacts](contacts.html) | The contact point(s) for the resource |
 | [contributors](contributors.html) | Contributors to the knowledge graph |
+| [creation_date](creation_date.html) | The date the entry was created |
 | [creator](creator.html) | The person or organization responsible for creating the knowledge graph |
+| [curators](curators.html) | The curator(s) of the resource |
 | [date_created](date_created.html) | The date the knowledge graph was created |
 | [date_modified](date_modified.html) | The date the knowledge graph was last modified |
 | [description](description.html) | A description of the resource |
 | [doi](doi.html) | The DOI of the publication |
-| [domain](domain.html) | The domain that the resource is relevant to |
+| [domains](domains.html) | The domain(s) that the resource is relevant to |
 | [dump_format](dump_format.html) | The format of a dump of the product as a file |
 | [edge_count](edge_count.html) | The number of edges in the graph |
-| [email](email.html) | The email address of the individual |
 | [fairsharing_id](fairsharing_id.html) | The FAIRsharing ID of the resource |
 | [format](format.html) | The format or serialization of the product |
 | [funding](funding.html) | The funding source(s) for the resource |
-| [github](github.html) | The GitHub username of the individual |
+| [github_url](github_url.html) | The GitHub URL of the organization |
 | [homepage_url](homepage_url.html) | The primary URL of the resource |
 | [id](id.html) | The identifier of an entity |
 | [infores_id](infores_id.html) | The Infores ID of the resource |
@@ -77,6 +88,8 @@ Name: kg_registry_schema
 | [journal](journal.html) | The journal the publication was published in |
 | [label](label.html) | The name of the individual |
 | [language](language.html) | The human language of the resource |
+| [last_modified_date](last_modified_date.html) | The date the entry was last modified |
+| [latest_version](latest_version.html) | The latest version of the product, or the most recent version curated in the ... |
 | [layout](layout.html) | The layout of the entity |
 | [license](license_slot.html) | The license of the resource |
 | [logo](logo.html) | The URL of a logo for the license |
@@ -84,24 +97,32 @@ Name: kg_registry_schema
 | [node_categories](node_categories.html) | The node categories in the graph |
 | [node_count](node_count.html) | The number of nodes in the graph |
 | [orcid](orcid.html) | The ORCID of the individual |
-| [original_source](original_source.html) | The original source(s) of the product, referred to  by the identifier of each... |
+| [original_source](original_source.html) | The original source(s) of the product, with the provenance relation describin... |
 | [predicates](predicates.html) | The predicate types in the graph |
 | [preferred](preferred.html) | Whether this is the preferred publication for the resource |
 | [produced_by](produced_by.html) | The process(es) that produced the product, referred to by the identifier of e... |
+| [product_file_size](product_file_size.html) | The size of the product file, in bytes |
 | [product_url](product_url.html) | The URL of the product |
 | [products](products.html) | The products or representations of the resource |
 | [publications](publications.html) | Publications associated with the resource |
+| [relation_type](relation_type.html) | The PROV-O relation type that describes how the product is related to the sou... |
 | [repository](repository.html) | A main version control repository for the resource |
 | [resources](resources.html) | A list of entries in the registry |
-| [secondary_source](secondary_source.html) | The source(s) of the product, other than its original source, referred to by ... |
+| [secondary_source](secondary_source.html) | The source(s) of the product, other than its original source, with the proven... |
+| [short_id](short_id.html) | A short identifier for the organization |
+| [source](source.html) | The identifier of the resource or product that is related to the product thro... |
 | [standard](standard.html) | The name of the standard that the product is compatible with |
+| [synonyms](synonyms.html) | A list of synonyms for the resource |
 | [tags](tags.html) | Tags associated with the resource |
+| [taxon](taxon.html) | The taxon or taxa that the resource is relevant to |
 | [title](title.html) | The title of the publication |
 | [type](type.html) | The type of usage |
-| [url](url.html) | The URL of a site for the organization |
+| [url](url.html) | A URL for a description or example of the usage |
 | [usages](usages.html) | The usage(s) of the resource |
 | [users](users.html) | The user implementing or working with the resource |
+| [value](value.html) | The value of the contact detail |
 | [version](version.html) | The version of the resource |
+| [versions](versions.html) | A list of names of versions of the product |
 | [warnings](warnings.html) | A list of warnings about an item to be displayed in the interface |
 | [year](year.html) | The year the publication was published |
 
@@ -111,10 +132,13 @@ Name: kg_registry_schema
 | Enumeration | Description |
 | --- | --- |
 | [ActivityStatusEnum](ActivityStatusEnum.html) | The status of a resource |
+| [CollectionEnum](CollectionEnum.html) | Specific collections for grouping KG-Registry entries |
 | [CompressionEnum](CompressionEnum.html) | The type of compression used with a product |
-| [DomainEnum](DomainEnum.html) | The domain that a resource is most relevant to |
+| [ContactTypeEnum](ContactTypeEnum.html) | The type of contact detail |
+| [DomainEnum](DomainEnum.html) | A domain that a resource is relevant to |
 | [DumpFormatEnum](DumpFormatEnum.html) | The format of a dump of a product, generally a graph, as a file |
 | [FormatEnum](FormatEnum.html) | The serialization/format of a product |
+| [ProvenanceRelationEnum](ProvenanceRelationEnum.html) | PROV-O relation types used to describe how a product is related to a resource... |
 | [StandardEnum](StandardEnum.html) | The standard or standards that a product conforms to |
 | [TagEnum](TagEnum.html) | General-purpose tags that can be associated with resources |
 | [UsageEnum](UsageEnum.html) | The type of usage of a resource |

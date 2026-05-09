@@ -5,7 +5,8 @@ format: http
 id: genage.models.search
 name: GenAge Model Organisms Search
 original_source:
-- genage
+  - source: genage
+    relation_type: prov:hadPrimarySource
 product_url: https://genomics.senescence.info/genes/models.html
 layout: product_detail
 ---

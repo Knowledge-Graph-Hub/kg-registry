@@ -6,7 +6,8 @@ format: xml
 id: interpro.uniparc_match
 name: UniParc Match
 original_source:
-- interpro
+  - source: interpro
+    relation_type: prov:hadPrimarySource
 product_file_size: 331243597405
 product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz
 layout: product_detail

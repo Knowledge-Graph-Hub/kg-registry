@@ -5,7 +5,8 @@ format: http
 id: uf-okn.portal
 name: UF-OKN Portal
 original_source:
-- uf-okn
+  - source: uf-okn
+    relation_type: prov:hadPrimarySource
 product_url: https://ufokn.com/
 layout: product_detail
 ---

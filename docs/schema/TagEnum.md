@@ -12,7 +12,7 @@ _General-purpose tags that can be associated with resources._
 
 
 
-URI: [TagEnum](TagEnum.html)
+URI: [kgr:TagEnum](https://w3id.org/bridge2ai/data-sheets-schema/TagEnum)
 
 ## Permissible Values
 
@@ -35,9 +35,7 @@ URI: [TagEnum](TagEnum.html)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

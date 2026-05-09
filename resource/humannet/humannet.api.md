@@ -5,7 +5,8 @@ format: http
 id: humannet.api
 name: HumanNet API
 original_source:
-- humannet
+  - source: humannet
+    relation_type: prov:hadPrimarySource
 product_url: https://www.inetbio.org/humannet/
 layout: product_detail
 ---

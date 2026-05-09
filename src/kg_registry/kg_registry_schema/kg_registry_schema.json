@@ -698,17 +698,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -747,17 +739,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -1159,17 +1143,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -1208,17 +1184,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -1603,17 +1571,9 @@
                     ]
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -1662,17 +1622,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -1844,17 +1796,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -1893,17 +1837,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -2462,17 +2398,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -2511,17 +2439,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -2988,17 +2908,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3037,17 +2949,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3309,17 +3213,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3358,17 +3254,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3540,17 +3428,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3589,17 +3469,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3792,17 +3664,9 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "description": "The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3841,17 +3705,9 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "description": "The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
+                        "$ref": "#/$defs/SourceAssociation"
                     },
                     "type": [
                         "array",
@@ -3895,6 +3751,18 @@
             ],
             "title": "ProgrammingInterface",
             "type": "object"
+        },
+        "ProvenanceRelationEnum": {
+            "description": "PROV-O relation types used to describe how a product is related to a resource or product source.",
+            "enum": [
+                "prov:hadPrimarySource",
+                "prov:wasDerivedFrom",
+                "prov:wasInfluencedBy",
+                "prov:wasInformedBy",
+                "prov:used"
+            ],
+            "title": "ProvenanceRelationEnum",
+            "type": "string"
         },
         "Publication": {
             "additionalProperties": false,
@@ -4252,6 +4120,34 @@
                 "layout"
             ],
             "title": "Resource",
+            "type": "object"
+        },
+        "SourceAssociation": {
+            "additionalProperties": false,
+            "description": "A typed provenance association from a product to another resource or product that served as a source, input, influence, or other provenance-related contributor.",
+            "properties": {
+                "relation_type": {
+                    "$ref": "#/$defs/ProvenanceRelationEnum",
+                    "description": "The PROV-O relation type that describes how the product is related to the source."
+                },
+                "source": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "description": "The identifier of the resource or product that is related to the product through this provenance association.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "source",
+                "relation_type"
+            ],
+            "title": "SourceAssociation",
             "type": "object"
         },
         "StandardCompatibility": {

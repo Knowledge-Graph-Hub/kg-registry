@@ -24,20 +24,19 @@ contacts:
 publications:
   - preferred: true
     id: doi:10.1016/j.xgen.2022.100168
-    title: Systematic single-variant and gene-based association testing of thousands
-      of phenotypes in 394,841 UK Biobank exomes
+    title: Systematic single-variant and gene-based association testing of thousands of phenotypes in 394,841 UK Biobank exomes
     journal: Cell Genomics
     year: "2022"
     doi: 10.1016/j.xgen.2022.100168
 products:
   - category: GraphicalInterface
-    description: Interactive web interface for searching and browsing Genebass gene-based
-      and variant-level association results.
+    description: Interactive web interface for searching and browsing Genebass gene-based and variant-level association results.
     format: http
     id: genebass.portal
     name: Genebass Portal
     original_source:
-      - genebass
+      - source: genebass
+        relation_type: prov:hadPrimarySource
     product_url: https://app.genebass.org/
 ---
 

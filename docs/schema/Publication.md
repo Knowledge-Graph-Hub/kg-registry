@@ -8,7 +8,7 @@ mermaid: true
 # Class: Publication
 
 
-_A publication associated with a resource. Its id should be a DOI (with prefix), but a URL is acceptable if a DOI is not available._
+_A publication associated with a resource. Its id should be in CURIE format, so it may be a DOI (with prefix) or a URL._
 
 
 
@@ -20,35 +20,49 @@ URI: [kgr:Publication](https://w3id.org/bridge2ai/data-sheets-schema/Publication
 
 
 
-
 ```mermaid
  classDiagram
     class Publication
-    click Publication href "Publication.html"
+    click Publication href "Publication/.html"
       NamedThing <|-- Publication
-        click NamedThing href "NamedThing.html"
-      
+        click NamedThing href "NamedThing/.html"
+
       Publication : authors
-        
+
       Publication : category
-        
+
+      Publication : collection
+
+
+
+
+
+        Publication --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
+      Publication : creation_date
+
       Publication : doi
-        
+
       Publication : id
-        
+
       Publication : journal
-        
+
+      Publication : last_modified_date
+
       Publication : layout
-        
+
       Publication : preferred
-        
+
       Publication : title
-        
+
       Publication : warnings
-        
+
       Publication : year
-        
-      
+
+
 ```
 
 
@@ -74,7 +88,10 @@ URI: [kgr:Publication](https://w3id.org/bridge2ai/data-sheets-schema/Publication
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | [NamedThing](NamedThing.html) |
 | [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | [NamedThing](NamedThing.html) |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | [NamedThing](NamedThing.html) |
 
 
 
@@ -88,6 +105,7 @@ URI: [kgr:Publication](https://w3id.org/bridge2ai/data-sheets-schema/Publication
 | [KnowledgeGraph](KnowledgeGraph.html) | [publications](publications.html) | range | [Publication](Publication.html) |
 | [DataSource](DataSource.html) | [publications](publications.html) | range | [Publication](Publication.html) |
 | [DataModel](DataModel.html) | [publications](publications.html) | range | [Publication](Publication.html) |
+| [Ontology](Ontology.html) | [publications](publications.html) | range | [Publication](Publication.html) |
 | [Aggregator](Aggregator.html) | [publications](publications.html) | range | [Publication](Publication.html) |
 | [Usage](Usage.html) | [publications](publications.html) | range | [Publication](Publication.html) |
 
@@ -96,8 +114,8 @@ URI: [kgr:Publication](https://w3id.org/bridge2ai/data-sheets-schema/Publication
 
 
 
-## Identifier and Mapping Information
 
+## Identifier and Mapping Information
 
 
 
@@ -124,7 +142,6 @@ URI: [kgr:Publication](https://w3id.org/bridge2ai/data-sheets-schema/Publication
 
 
 
-
 ## LinkML Source
 
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
@@ -134,8 +151,8 @@ URI: [kgr:Publication](https://w3id.org/bridge2ai/data-sheets-schema/Publication
 <details>
 ```yaml
 name: Publication
-description: A publication associated with a resource. Its id should be a DOI (with
-  prefix), but a URL is acceptable if a DOI is not available.
+description: A publication associated with a resource. Its id should be in CURIE format,
+  so it may be a DOI (with prefix) or a URL.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 is_a: NamedThing
 attributes:
@@ -182,7 +199,8 @@ attributes:
     range: string
   doi:
     name: doi
-    description: 'The DOI of the publication. This should include the doi: prefix.'
+    description: The DOI of the publication. This does not need to include a prefix
+      of any kind, as it will be formatted as a URL.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     domain_of:
@@ -197,8 +215,8 @@ attributes:
 <details>
 ```yaml
 name: Publication
-description: A publication associated with a resource. Its id should be a DOI (with
-  prefix), but a URL is acceptable if a DOI is not available.
+description: A publication associated with a resource. Its id should be in CURIE format,
+  so it may be a DOI (with prefix) or a URL.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 is_a: NamedThing
 attributes:
@@ -255,7 +273,8 @@ attributes:
     range: string
   doi:
     name: doi
-    description: 'The DOI of the publication. This should include the doi: prefix.'
+    description: The DOI of the publication. This does not need to include a prefix
+      of any kind, as it will be formatted as a URL.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: doi
@@ -275,6 +294,7 @@ attributes:
     owner: Publication
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -306,18 +326,56 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: Publication
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: Publication
     domain_of:
     - NamedThing
+    - Organization
     range: string
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: Publication
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: Publication
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 
 ```
 </details>

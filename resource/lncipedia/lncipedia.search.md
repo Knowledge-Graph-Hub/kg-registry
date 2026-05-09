@@ -5,7 +5,8 @@ format: http
 id: lncipedia.search
 name: LncIPedia Search
 original_source:
-- lncipedia
+  - source: lncipedia
+    relation_type: prov:hadPrimarySource
 product_url: https://lncipedia.org/db/search
 layout: product_detail
 ---

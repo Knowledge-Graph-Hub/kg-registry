@@ -2,28 +2,24 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Individual
-  label: Juan M. Banda
-- category: Individual
-  label: Lee Evans
-- category: Individual
-  label: Rami S. Vanguri
-- category: Individual
-  label: Nicholas P. Tatonetti
-- category: Individual
-  label: Patrick B. Ryan
+  - category: Individual
+    label: Juan M. Banda
+  - category: Individual
+    label: Lee Evans
+  - category: Individual
+    label: Rami S. Vanguri
+  - category: Individual
+    label: Nicholas P. Tatonetti
+  - category: Individual
+    label: Patrick B. Ryan
 creation_date: '2025-10-30T00:00:00Z'
-description: AEOLUS (Adverse Event Open Learning through Universal Standardization)
-  is a curated and standardized version of the FDA Adverse Event Reporting System
-  (FAERS) that removes duplicate case records and applies standardized vocabularies,
-  with drug names mapped to RxNorm concepts and outcomes mapped to SNOMED-CT concepts,
-  providing pre-computed summary statistics about drug-outcome relationships.
+description: AEOLUS (Adverse Event Open Learning through Universal Standardization) is a curated and standardized version of the FDA Adverse Event Reporting System (FAERS) that removes duplicate case records and applies standardized vocabularies, with drug names mapped to RxNorm concepts and outcomes mapped to SNOMED-CT concepts, providing pre-computed summary statistics about drug-outcome relationships.
 domains:
-- clinical
-- pharmacology
-- drug discovery
-- health
-- biomedical
+  - clinical
+  - pharmacology
+  - drug discovery
+  - health
+  - biomedical
 homepage_url: https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4
 id: aeolus
 infores_id: aeolus
@@ -31,33 +27,32 @@ last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 name: Adverse Event Open Learning through Universal Standardization (AEOLUS)
 products:
-- category: Product
-  description: Standardized and deduplicated version of FDA FAERS data with drug names
-    mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
-    summary statistics for drug-outcome relationships.
-  id: aeolus.standardized_data
-  name: AEOLUS Standardized FAERS Data
-  original_source:
-  - faers
-  - aeolus
-  product_url: https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4
+  - category: Product
+    description: Standardized and deduplicated version of FDA FAERS data with drug names mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed summary statistics for drug-outcome relationships.
+    id: aeolus.standardized_data
+    name: AEOLUS Standardized FAERS Data
+    original_source:
+      - source: faers
+        relation_type: prov:hadPrimarySource
+      - source: aeolus
+        relation_type: prov:hadPrimarySource
+    product_url: https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4
 publications:
-- authors:
-  - Banda JM
-  - Evans L
-  - Vanguri RS
-  - Tatonetti NP
-  - Ryan PB
-  id: doi:10.1038/sdata.2016.26
-  doi: 10.1038/sdata.2016.26
-  journal: Scientific Data
-  title: A curated and standardized adverse drug event resource to accelerate drug
-    safety research
-  year: '2016'
+  - authors:
+      - Banda JM
+      - Evans L
+      - Vanguri RS
+      - Tatonetti NP
+      - Ryan PB
+    id: doi:10.1038/sdata.2016.26
+    doi: 10.1038/sdata.2016.26
+    journal: Scientific Data
+    title: A curated and standardized adverse drug event resource to accelerate drug safety research
+    year: '2016'
 synonyms:
-- AEOLUS
+  - AEOLUS
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # Adverse Event Open Learning through Universal Standardization (AEOLUS)

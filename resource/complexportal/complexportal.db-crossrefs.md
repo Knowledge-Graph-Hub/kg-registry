@@ -5,7 +5,8 @@ format: tsv
 id: complexportal.db-crossrefs
 name: Complex Portal Database Cross-References
 original_source:
-- complexportal
+  - source: complexportal
+    relation_type: prov:hadPrimarySource
 product_file_size: 1258425
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/various/complex_portal_dr_export.tsv
 layout: product_detail

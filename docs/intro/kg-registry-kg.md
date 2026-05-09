@@ -41,6 +41,7 @@ The **Display Options** dropdown provides several customization features:
 - **Show Products**: Toggle visibility of product nodes
 - **Show Domain Connections**: Display connections between resources that share domains
 - **Show Icons**: Toggle Bootstrap icons on nodes representing different resource and product types
+- **Show Edge Types**: Toggle labels on edges, including provenance relations such as `had primary source`
 - **Filter Node Types**: Show only specific types of nodes (e.g., only DataSources)
 
 ### Export Capabilities

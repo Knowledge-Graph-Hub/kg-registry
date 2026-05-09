@@ -5,12 +5,11 @@ format: csv
 id: gdsc.ftp
 name: GDSC FTP Data Repository
 original_source:
-- gdsc
+  - source: gdsc
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
 layout: product_detail
 ---

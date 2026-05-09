@@ -2,25 +2,24 @@
 activity_status: active
 category: DataModel
 collection:
-- translator
-- ber
+  - translator
+  - ber
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: cjmungall@lbl.gov
+      - contact_type: github
+        value: cmungall
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
 creation_date: '2025-03-09T00:00:00Z'
-description: Translation of JGI GOLD (Genomes OnLine Database) ecosystem classification
-  paths to OWL, plus mappings to MIxS and environment ontologies like ENVO.
+description: Translation of JGI GOLD (Genomes OnLine Database) ecosystem classification paths to OWL, plus mappings to MIxS and environment ontologies like ENVO.
 domains:
-- environment
-- microbiology
-- genomics
-- biological systems
+  - environment
+  - microbiology
+  - genomics
+  - biological systems
 homepage_url: https://gold.jgi.doe.gov/
 id: goldterms
 last_modified_date: '2026-02-20T00:00:00Z'
@@ -30,57 +29,64 @@ license:
   label: BSD 3-Clause License
 name: GOLD Environmental Paths
 products:
-- category: DataModelProduct
-  format: owl
-  id: goldterms.data.owl
-  name: Main GOLDTERMS OWL release
-  original_source:
-  - goldterms
-  product_url: https://w3id.org/goldterms/goldterms.owl
-  secondary_source:
-  - goldterms
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
-- category: GraphicalInterface
-  format: owl
-  id: goldterms.bioportal
-  name: GOLDTERMS on BioPortal
-  original_source:
-  - goldterms
-  product_url: https://bioportal.bioontology.org/ontologies/GOLDTERMS
-  secondary_source:
-  - goldterms
-- category: DataModelProduct
-  format: yaml
-  id: goldterms.definitions.yaml
-  name: GOLD definitions in YAML format
-  original_source:
-  - goldterms
-  product_file_size: 27808
-  product_url: https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml
-  secondary_source:
-  - goldterms
-- category: Product
-  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
-    mapped to standardized ontologies.
-  id: metatraits.traits
-  name: metaTraits Trait List
-  original_source:
-  - bacdive
-  - bv-brc
-  - goldterms
-  - progenomes
-  product_url: https://metatraits.embl.de/traits
+  - category: DataModelProduct
+    format: owl
+    id: goldterms.data.owl
+    name: Main GOLDTERMS OWL release
+    original_source:
+      - source: goldterms
+        relation_type: prov:hadPrimarySource
+    product_url: https://w3id.org/goldterms/goldterms.owl
+    secondary_source:
+      - source: goldterms
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+      - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL
+  - category: GraphicalInterface
+    format: owl
+    id: goldterms.bioportal
+    name: GOLDTERMS on BioPortal
+    original_source:
+      - source: goldterms
+        relation_type: prov:hadPrimarySource
+    product_url: https://bioportal.bioontology.org/ontologies/GOLDTERMS
+    secondary_source:
+      - source: goldterms
+        relation_type: prov:wasInfluencedBy
+  - category: DataModelProduct
+    format: yaml
+    id: goldterms.definitions.yaml
+    name: GOLD definitions in YAML format
+    original_source:
+      - source: goldterms
+        relation_type: prov:hadPrimarySource
+    product_file_size: 27808
+    product_url: https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml
+    secondary_source:
+      - source: goldterms
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Trait data table listing all 140+ harmonized traits available in metaTraits, mapped to standardized ontologies.
+    id: metatraits.traits
+    name: metaTraits Trait List
+    original_source:
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: goldterms
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_url: https://metatraits.embl.de/traits
 repository: https://github.com/cmungall/gold-ontology
 tags:
-- biopragmatics
-- core
+  - biopragmatics
+  - core
 ---
+
 A rendering of the GOLD (Genomes OnLine Database) ecosystem classification as OWL, plus mappings to MIxS and environment ontologies. The ontology represents environmental classification paths from GOLD, organizing them into a hierarchical structure with three main branches:
 
 1. Environmental - Representing natural environments (aquatic, terrestrial, etc.)

@@ -5,7 +5,8 @@ format: http
 id: orcid.portal
 name: ORCID Registry Portal
 original_source:
-- orcid
+  - source: orcid
+    relation_type: prov:hadPrimarySource
 product_url: https://orcid.org/
 layout: product_detail
 ---

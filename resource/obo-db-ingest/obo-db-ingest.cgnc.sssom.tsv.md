@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: cgnc SSSOM
 original_source:
-- cgnc
+  - source: cgnc
+    relation_type: prov:hadPrimarySource
 product_file_size: 258292
 product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

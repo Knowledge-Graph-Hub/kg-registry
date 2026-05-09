@@ -22,6 +22,11 @@ from ruamel.yaml.scalarstring import DoubleQuotedScalarString as DQ
 from ruamel.yaml.scanner import ScannerError
 from yamllint import config, linter
 
+try:
+    from util.source_associations import iter_source_ids
+except ModuleNotFoundError:
+    from source_associations import iter_source_ids
+
 __author__ = "cjm"
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -381,10 +386,8 @@ def concat_resource_yaml(args):
                 for product in obj["products"]:
                     # Check original_source and secondary_source fields
                     for field_name in ["original_source", "secondary_source"]:
-                        if field_name in product and isinstance(product[field_name], list):
-                            for resource_ref in product[field_name]:
-                                if not resource_ref or not isinstance(resource_ref, str):
-                                    continue
+                        if field_name in product:
+                            for resource_ref in iter_source_ids(product[field_name]):
 
                                 # Handle resource.product format
                                 if '.' in resource_ref:
@@ -598,7 +601,7 @@ def concat_resource_yaml(args):
                 for product in obj["products"]:
                     for field_name in ["original_source", "secondary_source"]:
                         if field_name in product:
-                            for resource_id in product[field_name]:
+                            for resource_id in iter_source_ids(product[field_name]):
                                 if resource_id != obj["id"]:
                                     if resource_id not in to_be_propagated:
                                         to_be_propagated[resource_id] = []

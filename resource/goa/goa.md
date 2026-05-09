@@ -1,26 +1,20 @@
 ---
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.ebi.ac.uk/GOA/contactus
-  id: ebi
-  label: GOA Team at EMBL-EBI
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.ebi.ac.uk/GOA/contactus
+    id: ebi
+    label: GOA Team at EMBL-EBI
 creation_date: '2025-10-29T00:00:00Z'
-description: 'The Gene Ontology Annotation (GOA) Database provides high-quality Gene
-  Ontology (GO) annotations to proteins in the UniProt Knowledgebase (UniProtKB),
-  RNA molecules from RNAcentral, and protein complexes from the Complex Portal. GOA
-  files contain a mixture of manual annotations supplied by members of the Gene Ontology
-  Consortium and computationally assigned GO terms describing gene products. All annotations
-  are clearly indicated by associated evidence codes with links to source data. Files
-  are released approximately every four weeks in coordination with UniProtKB releases.
+description: 'The Gene Ontology Annotation (GOA) Database provides high-quality Gene Ontology (GO) annotations to proteins in the UniProt Knowledgebase (UniProtKB), RNA molecules from RNAcentral, and protein complexes from the Complex Portal. GOA files contain a mixture of manual annotations supplied by members of the Gene Ontology Consortium and computationally assigned GO terms describing gene products. All annotations are clearly indicated by associated evidence codes with links to source data. Files are released approximately every four weeks in coordination with UniProtKB releases.
 
   '
 domains:
-- genomics
-- biological systems
-- proteomics
+  - genomics
+  - biological systems
+  - proteomics
 homepage_url: https://www.ebi.ac.uk/GOA/index
 id: goa
 last_modified_date: '2025-10-29T00:00:00Z'
@@ -30,213 +24,253 @@ license:
   label: EMBL-EBI Terms of Use
 name: GOA
 products:
-- category: GraphicalInterface
-  description: Web portal for accessing GOA information, statistics, and navigation
-    to downloads
-  format: http
-  id: goa.portal
-  name: GOA Website
-  product_url: https://www.ebi.ac.uk/GOA/index
-- category: GraphicalInterface
-  description: Browser for searching and viewing Gene Ontology terms and GOA annotations
-  format: http
-  id: goa.quickgo
-  name: QuickGO Browser
-  original_source:
-  - go
-  product_url: https://www.ebi.ac.uk/QuickGO/
-- category: Product
-  description: FTP site containing current and archived GOA annotation files for all
-    species
-  format: http
-  id: goa.ftp
-  name: GOA FTP Site
-  original_source:
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-- category: Product
-  description: GO annotations for all UniProtKB entries
-  format: txt
-  id: goa.uniprot
-  name: UniProt GOA Annotations
-  original_source:
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-- category: Product
-  description: GO annotations for human proteins
-  format: txt
-  id: goa.human
-  name: Human GOA Annotations
-  original_source:
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-- category: Product
-  description: GO annotations for mouse proteins
-  format: txt
-  id: goa.mouse
-  name: Mouse GOA Annotations
-  original_source:
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-- category: MappingProduct
-  description: Files containing transitive assignments of InterPro matches, UniProtKB
-    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
-    GO terms
-  format: txt
-  id: goa.mapping-files
-  name: GO Mapping Files
-  original_source:
-  - interpro
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-- category: Product
-  description: GO annotations for PDB entries
-  format: txt
-  id: goa.pdb
-  name: PDB GOA Annotations
-  original_source:
-  - pdbe
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-- category: Product
-  description: GO annotations organized by proteomes
-  format: txt
-  id: goa.proteomes
-  name: Proteomes GOA Annotations
-  original_source:
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-- category: DocumentationProduct
-  description: Documentation including FAQ, About pages, and contact information
-  format: http
-  id: goa.documentation
-  name: GOA Documentation
-  product_url: https://www.ebi.ac.uk/GOA/newto
-- category: GraphProduct
-  description: HumanGOA Automat
-  format: kgx-jsonl
-  id: automat.humangoa
-  infores_id: automat-human-goa
-  name: humangoa_automat
-  original_source:
-  - goa
-  product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
-  secondary_source:
-  - automat
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-    version: 4.3.6
-  description: KGX JSONL graph package for GOA distributed via the NCATS Translator
-    release site (release 2026_03_06; build goa_2026-01-23_5fdd3125_2025sep1_4.3.6;
-    source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
-  edge_count: 1132872
-  format: kgx-jsonl
-  id: translator.goa.graph
-  latest_version: '2026_03_06'
-  license:
-    id: https://opensource.org/license/mit/
-    label: MIT
-  name: Translator GOA KGX Graph
-  node_count: 91993
-  original_source:
-  - goa
-  product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
-  secondary_source:
-  - translator
-  versions:
-  - '2026_03_06'
-  - goa_2026-01-23_5fdd3125_2025sep1_4.3.6
-- category: GraphProduct
-  description: ProteomeHD data files
-  id: proteomehd.data
-  name: ProteomeHD Data
-  original_source:
-  - proteomehd
-  - uniprot
-  - reactome
-  - intact
-  - go
-  - goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-    version: 4.3.6
-  description: Aggregated KGX JSONL graph package combining 29 Translator release
-    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
-    2025sep1).
-  edge_count: 29243943
-  format: kgx-jsonl
-  id: translator.translator_kg.graph
-  latest_version: '2026_03_27'
-  license:
-    id: https://opensource.org/license/mit/
-    label: MIT
-  name: Translator Aggregate KGX Graph
-  node_count: 1696790
-  original_source:
-  - alliance
-  - bgee
-  - bindingdb
-  - chembl
-  - cohd
-  - ctd
-  - ctkp
-  - drug-approvals-kp
-  - dgidb
-  - diseases
-  - drugrephub
-  - drugcentral
-  - gtopdb
-  - gene2phenotype
-  - geneticskp
-  - go-cam
-  - goa
-  - hp
-  - icees-kg
-  - intact
-  - ncbigene
-  - panther
-  - pathbank
-  - semmeddb
-  - sider
-  - signor
-  - text-mining-kp
-  - ttd
-  - ubergraph
-  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-  secondary_source:
-  - translator
-  versions:
-  - '2026_03_27'
-  - 423af7989cac
+  - category: GraphicalInterface
+    description: Web portal for accessing GOA information, statistics, and navigation to downloads
+    format: http
+    id: goa.portal
+    name: GOA Website
+    product_url: https://www.ebi.ac.uk/GOA/index
+  - category: GraphicalInterface
+    description: Browser for searching and viewing Gene Ontology terms and GOA annotations
+    format: http
+    id: goa.quickgo
+    name: QuickGO Browser
+    original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/QuickGO/
+  - category: Product
+    description: FTP site containing current and archived GOA annotation files for all species
+    format: http
+    id: goa.ftp
+    name: GOA FTP Site
+    original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+  - category: Product
+    description: GO annotations for all UniProtKB entries
+    format: txt
+    id: goa.uniprot
+    name: UniProt GOA Annotations
+    original_source:
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  - category: Product
+    description: GO annotations for human proteins
+    format: txt
+    id: goa.human
+    name: Human GOA Annotations
+    original_source:
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  - category: Product
+    description: GO annotations for mouse proteins
+    format: txt
+    id: goa.mouse
+    name: Mouse GOA Annotations
+    original_source:
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  - category: MappingProduct
+    description: Files containing transitive assignments of InterPro matches, UniProtKB keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected GO terms
+    format: txt
+    id: goa.mapping-files
+    name: GO Mapping Files
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  - category: Product
+    description: GO annotations for PDB entries
+    format: txt
+    id: goa.pdb
+    name: PDB GOA Annotations
+    original_source:
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+  - category: Product
+    description: GO annotations organized by proteomes
+    format: txt
+    id: goa.proteomes
+    name: Proteomes GOA Annotations
+    original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  - category: DocumentationProduct
+    description: Documentation including FAQ, About pages, and contact information
+    format: http
+    id: goa.documentation
+    name: GOA Documentation
+    product_url: https://www.ebi.ac.uk/GOA/newto
+  - category: GraphProduct
+    description: HumanGOA Automat
+    format: kgx-jsonl
+    id: automat.humangoa
+    infores_id: automat-human-goa
+    name: humangoa_automat
+    original_source:
+      - source: goa
+        relation_type: prov:hadPrimarySource
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
+    secondary_source:
+      - source: automat
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.3.6
+    description: KGX JSONL graph package for GOA distributed via the NCATS Translator release site (release 2026_03_06; build goa_2026-01-23_5fdd3125_2025sep1_4.3.6; source version 2026-01-23; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 1132872
+    format: kgx-jsonl
+    id: translator.goa.graph
+    latest_version: '2026_03_06'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator GOA KGX Graph
+    node_count: 91993
+    original_source:
+      - source: goa
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/goa/latest/
+    secondary_source:
+      - source: translator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - '2026_03_06'
+      - goa_2026-01-23_5fdd3125_2025sep1_4.3.6
+  - category: GraphProduct
+    description: ProteomeHD data files
+    id: proteomehd.data
+    name: ProteomeHD Data
+    original_source:
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.3.6
+    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 29243943
+    format: kgx-jsonl
+    id: translator.translator_kg.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Aggregate KGX Graph
+    node_count: 1696790
+    original_source:
+      - source: alliance
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: cohd
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: ctkp
+        relation_type: prov:hadPrimarySource
+      - source: drug-approvals-kp
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugrephub
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
+      - source: geneticskp
+        relation_type: prov:hadPrimarySource
+      - source: go-cam
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: panther
+        relation_type: prov:hadPrimarySource
+      - source: pathbank
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: signor
+        relation_type: prov:hadPrimarySource
+      - source: text-mining-kp
+        relation_type: prov:hadPrimarySource
+      - source: ttd
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+    secondary_source:
+      - source: translator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - '2026_03_27'
+      - 423af7989cac
 ---
+
 ## Overview
 
 The Gene Ontology Annotation (GOA) Database is a comprehensive resource providing high-quality Gene Ontology (GO) annotations to biological entities including proteins in the UniProt Knowledgebase (UniProtKB), RNA molecules from RNAcentral, and protein complexes from the Complex Portal. As a key component of the Gene Ontology Consortium infrastructure, GOA serves as a central hub for functional annotation of gene products across multiple species and databases.

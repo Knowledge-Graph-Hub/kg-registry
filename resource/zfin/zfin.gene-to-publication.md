@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: ZFIN gene to publication
 original_source:
-- zfin
+  - source: zfin
+    relation_type: prov:hadPrimarySource
 product_file_size: 39531152
 product_url: https://zfin.org/downloads/gene_publication.txt
 secondary_source:
-- zfin
+  - source: zfin
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

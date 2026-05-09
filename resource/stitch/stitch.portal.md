@@ -1,13 +1,13 @@
 ---
 category: Product
-description: Web interface for searching and visualizing chemical-protein interactions
-  across organisms
+description: Web interface for searching and visualizing chemical-protein interactions across organisms
 format: http
 id: stitch.portal
 is_public: true
 name: STITCH Web Portal
 original_source:
-- stitch
+  - source: stitch
+    relation_type: prov:hadPrimarySource
 product_url: http://stitch-db.org/
 layout: product_detail
 ---

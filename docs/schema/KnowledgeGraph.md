@@ -20,137 +20,186 @@ URI: [kgr:KnowledgeGraph](https://w3id.org/bridge2ai/data-sheets-schema/Knowledg
 
 
 
-
 ```mermaid
  classDiagram
     class KnowledgeGraph
-    click KnowledgeGraph href "KnowledgeGraph.html"
+    click KnowledgeGraph href "KnowledgeGraph/.html"
       Resource <|-- KnowledgeGraph
-        click Resource href "Resource.html"
-      
+        click Resource href "Resource/.html"
+
       KnowledgeGraph : activity_status
-        
-          
-    
-    
-    KnowledgeGraph --> "0..1" ActivityStatusEnum : activity_status
-    click ActivityStatusEnum href "ActivityStatusEnum.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "0..1" ActivityStatusEnum : activity_status
+        click ActivityStatusEnum href "ActivityStatusEnum/.html"
+
+
+
       KnowledgeGraph : category
-        
+
+      KnowledgeGraph : collection
+
+
+
+
+
+        KnowledgeGraph --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
       KnowledgeGraph : components
-        
-          
-    
-    
-    KnowledgeGraph --> "*" Resource : components
-    click Resource href "Resource.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" Resource : components
+        click Resource href "Resource/.html"
+
+
+
       KnowledgeGraph : contacts
-        
-          
-    
-    
-    KnowledgeGraph --> "*" Contact : contacts
-    click Contact href "Contact.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" Contact : contacts
+        click Contact href "Contact/.html"
+
+
+
       KnowledgeGraph : contributors
-        
+
+      KnowledgeGraph : creation_date
+
       KnowledgeGraph : creator
-        
+
+      KnowledgeGraph : curators
+
+
+
+
+
+        KnowledgeGraph --> "*" Contact : curators
+        click Contact href "Contact/.html"
+
+
+
       KnowledgeGraph : date_created
-        
+
       KnowledgeGraph : date_modified
-        
+
       KnowledgeGraph : description
-        
-      KnowledgeGraph : domain
-        
-          
-    
-    
-    KnowledgeGraph --> "1" DomainEnum : domain
-    click DomainEnum href "DomainEnum.html"
 
-        
+      KnowledgeGraph : domains
+
+
+
+
+
+        KnowledgeGraph --> "1..*" DomainEnum : domains
+        click DomainEnum href "DomainEnum/.html"
+
+
+
       KnowledgeGraph : fairsharing_id
-        
+
       KnowledgeGraph : funding
-        
-          
-    
-    
-    KnowledgeGraph --> "*" FundingSource : funding
-    click FundingSource href "FundingSource.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" FundingSource : funding
+        click FundingSource href "FundingSource/.html"
+
+
+
       KnowledgeGraph : homepage_url
-        
+
       KnowledgeGraph : id
-        
+
       KnowledgeGraph : infores_id
-        
+
       KnowledgeGraph : language
-        
+
+      KnowledgeGraph : last_modified_date
+
       KnowledgeGraph : layout
-        
+
       KnowledgeGraph : license
-        
-          
-    
-    
-    KnowledgeGraph --> "0..1" License : license
-    click License href "License.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "0..1" License : license
+        click License href "License/.html"
+
+
+
       KnowledgeGraph : name
-        
+
       KnowledgeGraph : products
-        
-          
-    
-    
-    KnowledgeGraph --> "*" Product : products
-    click Product href "Product.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" Product : products
+        click Product href "Product/.html"
+
+
+
       KnowledgeGraph : publications
-        
-          
-    
-    
-    KnowledgeGraph --> "*" Publication : publications
-    click Publication href "Publication.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" Publication : publications
+        click Publication href "Publication/.html"
+
+
+
       KnowledgeGraph : repository
-        
+
+      KnowledgeGraph : synonyms
+
       KnowledgeGraph : tags
-        
-          
-    
-    
-    KnowledgeGraph --> "*" TagEnum : tags
-    click TagEnum href "TagEnum.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" TagEnum : tags
+        click TagEnum href "TagEnum/.html"
+
+
+
+      KnowledgeGraph : taxon
+
       KnowledgeGraph : usages
-        
-          
-    
-    
-    KnowledgeGraph --> "*" Usage : usages
-    click Usage href "Usage.html"
 
-        
+
+
+
+
+        KnowledgeGraph --> "*" Usage : usages
+        click Usage href "Usage/.html"
+
+
+
       KnowledgeGraph : version
-        
+
       KnowledgeGraph : warnings
-        
-      
+
+
 ```
 
 
@@ -182,18 +231,26 @@ URI: [kgr:KnowledgeGraph](https://w3id.org/bridge2ai/data-sheets-schema/Knowledg
 | [version](version.html) | 0..1 <br/> [String](String.html) | The version of the resource | [Resource](Resource.html) |
 | [language](language.html) | 0..1 <br/> [String](String.html) | The human language of the resource | [Resource](Resource.html) |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact point(s) for the resource | [Resource](Resource.html) |
+| [curators](curators.html) | * <br/> [Contact](Contact.html) | The curator(s) of the resource | [Resource](Resource.html) |
 | [products](products.html) | * <br/> [Product](Product.html) | The products or representations of the resource | [Resource](Resource.html) |
-| [domain](domain.html) | 1 <br/> [DomainEnum](DomainEnum.html) | The domain that the resource is relevant to | [Resource](Resource.html) |
+| [domains](domains.html) | 1..* <br/> [DomainEnum](DomainEnum.html) | The domain(s) that the resource is relevant to | [Resource](Resource.html) |
 | [tags](tags.html) | * <br/> [TagEnum](TagEnum.html) | Tags associated with the resource | [Resource](Resource.html) |
 | [funding](funding.html) | * <br/> [FundingSource](FundingSource.html) | The funding source(s) for the resource | [Resource](Resource.html) |
 | [publications](publications.html) | * <br/> [Publication](Publication.html) | Publications associated with the resource | [Resource](Resource.html) |
 | [usages](usages.html) | * <br/> [Usage](Usage.html) | The usage(s) of the resource | [Resource](Resource.html) |
 | [fairsharing_id](fairsharing_id.html) | 0..1 <br/> [String](String.html) | The FAIRsharing ID of the resource | [Resource](Resource.html) |
 | [infores_id](infores_id.html) | 0..1 <br/> [String](String.html) | The Infores ID of the resource | [Resource](Resource.html) |
+| [taxon](taxon.html) | * <br/> [Uriorcurie](Uriorcurie.html) | The taxon or taxa that the resource is relevant to | [Resource](Resource.html) |
+| [synonyms](synonyms.html) | * <br/> [String](String.html) | A list of synonyms for the resource | [Resource](Resource.html) |
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |
-| [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | [NamedThing](NamedThing.html) |
+| [layout](layout.html) | 1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | [NamedThing](NamedThing.html) |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | [NamedThing](NamedThing.html) |
+
+
 
 
 
@@ -208,9 +265,7 @@ URI: [kgr:KnowledgeGraph](https://w3id.org/bridge2ai/data-sheets-schema/Knowledg
 * heterogeneous graph
 
 
-
 ## Identifier and Mapping Information
-
 
 
 
@@ -231,7 +286,6 @@ URI: [kgr:KnowledgeGraph](https://w3id.org/bridge2ai/data-sheets-schema/Knowledg
 | ---  | ---  |
 | self | kgr:KnowledgeGraph |
 | native | kgr:KnowledgeGraph |
-
 
 
 
@@ -404,6 +458,7 @@ attributes:
     domain_of:
     - Resource
     - Product
+    - Organization
     - Usage
     range: string
   homepage_url:
@@ -417,6 +472,7 @@ attributes:
     owner: KnowledgeGraph
     domain_of:
     - Resource
+    - Organization
     range: uriorcurie
   repository:
     name: repository
@@ -481,6 +537,20 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  curators:
+    name: curators
+    description: The curator(s) of the resource. May be an individual or organization.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: curators
+    owner: KnowledgeGraph
+    domain_of:
+    - Resource
+    - Product
+    range: Contact
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
   products:
     name: products
     description: The products or representations of the resource.
@@ -494,17 +564,18 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
-  domain:
-    name: domain
-    description: The domain that the resource is relevant to. This is not multivalued.
+  domains:
+    name: domains
+    description: The domain(s) that the resource is relevant to.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
-    alias: domain
+    alias: domains
     owner: KnowledgeGraph
     domain_of:
     - Resource
     range: DomainEnum
     required: true
+    multivalued: true
   tags:
     name: tags
     description: Tags associated with the resource.
@@ -576,6 +647,31 @@ attributes:
     - Resource
     - Product
     range: string
+  taxon:
+    name: taxon
+    description: The taxon or taxa that the resource is relevant to. This is preferably
+      an NCBI Taxonomy identifier, in CURIE format.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: taxon
+    owner: KnowledgeGraph
+    domain_of:
+    - Resource
+    range: uriorcurie
+    multivalued: true
+  synonyms:
+    name: synonyms
+    description: A list of synonyms for the resource. These may include acronyms,
+      abbreviations, or other alternate names for the resource. They are not necessarily
+      unique across resources.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: synonyms
+    owner: KnowledgeGraph
+    domain_of:
+    - Resource
+    range: string
+    multivalued: true
   id:
     name: id
     description: The identifier of an entity. This is used to identify it within the
@@ -588,6 +684,7 @@ attributes:
     owner: KnowledgeGraph
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -619,18 +716,57 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: KnowledgeGraph
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: KnowledgeGraph
     domain_of:
     - NamedThing
+    - Organization
     range: string
+    required: true
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: KnowledgeGraph
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: KnowledgeGraph
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 
 ```
 </details>

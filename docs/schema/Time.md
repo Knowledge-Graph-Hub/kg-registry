@@ -26,9 +26,7 @@ URI: [xsd:time](http://www.w3.org/2001/XMLSchema#time)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

@@ -8,10 +8,12 @@ license:
   label: CC-BY-SA-3.0
 name: chembl.compound Nodes TSV
 original_source:
-- chembl
+  - source: chembl
+    relation_type: prov:hadPrimarySource
 product_file_size: 411222
 product_url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

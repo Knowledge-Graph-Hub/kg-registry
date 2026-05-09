@@ -5,7 +5,8 @@ format: http
 id: genetics-kp.code
 name: Genetics KP Source Code
 original_source:
-- genetics-kp
+  - source: genetics-kp
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/broadinstitute/genetics-kp-dev
 layout: product_detail
 ---

@@ -2,29 +2,25 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: taylordm
-  - contact_type: email
-    value: taylordm@chop.edu
-  label: Deanne M. Taylor
-- category: Organization
-  contact_details:
-  - contact_type: github
-    value: TaylorResearchLab
-  - contact_type: url
-    value: https://taylorlab.chop.edu/
-  label: Taylor Research Lab
-description: Petagraph is a large-scale biomedical knowledge graph that encompasses
-  over 32 million nodes and 118 million relationships, integrating multi-omics and
-  clinical data. Built on the Unified Biomedical Knowledge Graph (UBKG), Petagraph
-  leverages more than 180 ontologies and standards to embed millions of quantitative
-  genomics data points within a richly connected annotation environment.
+  - category: Individual
+    contact_details:
+      - contact_type: github
+        value: taylordm
+      - contact_type: email
+        value: taylordm@chop.edu
+    label: Deanne M. Taylor
+  - category: Organization
+    contact_details:
+      - contact_type: github
+        value: TaylorResearchLab
+      - contact_type: url
+        value: https://taylorlab.chop.edu/
+    label: Taylor Research Lab
+description: Petagraph is a large-scale biomedical knowledge graph that encompasses over 32 million nodes and 118 million relationships, integrating multi-omics and clinical data. Built on the Unified Biomedical Knowledge Graph (UBKG), Petagraph leverages more than 180 ontologies and standards to embed millions of quantitative genomics data points within a richly connected annotation environment.
 domains:
-- health
-- biomedical
-- genomics
+  - health
+  - biomedical
+  - genomics
 homepage_url: https://github.com/TaylorResearchLab/Petagraph
 id: petagraph
 layout: resource_detail
@@ -33,47 +29,47 @@ license:
   label: UMLS License Agreement
 name: Petagraph
 products:
-- category: GraphProduct
-  description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
-    transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
-    118 million relationships.
-  dump_format: neo4j
-  edge_count: 118000000
-  id: petagraph.graph
-  name: Petagraph Knowledge Graph (Neo4J)
-  node_count: 32000000
-  original_source:
-  - ubkg
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - petagraph
+  - category: GraphProduct
+    description: A comprehensive multi-omics biomedical knowledge graph connecting genomic, transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and 118 million relationships.
+    dump_format: neo4j
+    edge_count: 118000000
+    id: petagraph.graph
+    name: Petagraph Knowledge Graph (Neo4J)
+    node_count: 32000000
+    original_source:
+      - source: ubkg
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: petagraph
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Benjamin J. Stear
-  - Taha Mohseni Ahooyi
-  - J. Alan Simmons
-  - Charles Kollar
-  - Lance Hartman
-  - Katherine Beigel
-  - Aditya Lahiri
-  - Shubha Vasisht
-  - Tiffany J. Callahan
-  - Christopher M. Nemarich
-  - Jonathan C. Silverstein
-  - Deanne M. Taylor
-  doi: doi:10.1038/s41597-024-04070-w
-  id: https://doi.org/10.1038/s41597-024-04070-w
-  journal: Scientific Data
-  preferred: true
-  title: 'Petagraph: A large-scale unifying knowledge graph framework for integrating
-    biomolecular and biomedical data'
-  year: '2024'
+  - authors:
+      - Benjamin J. Stear
+      - Taha Mohseni Ahooyi
+      - J. Alan Simmons
+      - Charles Kollar
+      - Lance Hartman
+      - Katherine Beigel
+      - Aditya Lahiri
+      - Shubha Vasisht
+      - Tiffany J. Callahan
+      - Christopher M. Nemarich
+      - Jonathan C. Silverstein
+      - Deanne M. Taylor
+    doi: doi:10.1038/s41597-024-04070-w
+    id: https://doi.org/10.1038/s41597-024-04070-w
+    journal: Scientific Data
+    preferred: true
+    title: 'Petagraph: A large-scale unifying knowledge graph framework for integrating biomolecular and biomedical data'
+    year: '2024'
 repository: https://github.com/TaylorResearchLab/Petagraph
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2025-12-13T00:00:00Z'
 ---
+
 ## Petagraph: A Large-Scale Biomedical Knowledge Graph
 
 **Petagraph** is a comprehensive biomedical knowledge graph that encompasses over 32 million nodes and 118 million relationships. It provides a cohesive data environment that enables users to efficiently analyze, annotate, and discern relationships within and across complex multi-omics datasets.

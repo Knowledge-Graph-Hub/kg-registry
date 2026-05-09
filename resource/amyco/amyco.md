@@ -2,15 +2,11 @@
 activity_status: orphaned
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: The Amyloidoses Collection (AmyCo) database contains manually curated
-  data from biomedical literature on amyloidoses and other diseases related to amyloid
-  deposition. It classifies 75 diseases and provides disease-gene associations. The
-  resource is no longer independently accessible but is integrated into the DISEASES
-  database.
+description: The Amyloidoses Collection (AmyCo) database contains manually curated data from biomedical literature on amyloidoses and other diseases related to amyloid deposition. It classifies 75 diseases and provides disease-gene associations. The resource is no longer independently accessible but is integrated into the DISEASES database.
 domains:
-- biomedical
-- clinical
-- health
+  - biomedical
+  - clinical
+  - health
 id: amyco
 infores_id: amyco
 last_modified_date: '2025-11-25T00:00:00Z'
@@ -18,32 +14,34 @@ layout: resource_detail
 name: The Amyloidoses Collection (AmyCo) Database
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/AmyCo
 synonyms:
-- AmyCo
+  - AmyCo
 products:
-- id: amyco.annotations
-  name: AmyCo Curated Annotations
-  description: Manually curated disease-gene associations and annotations for amyloidoses
-    and amyloid deposition-related diseases extracted from biomedical literature.
-  category: Product
-  original_source:
-  - pubmed
-  - amyco
-  secondary_source:
-  - diseases
+  - id: amyco.annotations
+    name: AmyCo Curated Annotations
+    description: Manually curated disease-gene associations and annotations for amyloidoses and amyloid deposition-related diseases extracted from biomedical literature.
+    category: Product
+    original_source:
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: amyco
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: diseases
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Nastou KC
-  - Nasi GI
-  - Tsiolaki PL
-  - Litou ZI
-  - Iconomidou VA
-  id: doi:10.1080/13506129.2019.1603143
-  doi: 10.1080/13506129.2019.1603143
-  journal: Amyloid
-  title: 'AmyCo: the amyloidoses collection'
-  year: '2019'
+  - authors:
+      - Nastou KC
+      - Nasi GI
+      - Tsiolaki PL
+      - Litou ZI
+      - Iconomidou VA
+    id: doi:10.1080/13506129.2019.1603143
+    doi: 10.1080/13506129.2019.1603143
+    journal: Amyloid
+    title: 'AmyCo: the amyloidoses collection'
+    year: '2019'
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # The Amyloidoses Collection (AmyCo) Database

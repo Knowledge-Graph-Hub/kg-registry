@@ -5,9 +5,11 @@ id: bgee.site
 is_public: true
 name: Bgee Web Interface
 original_source:
-- bgee
+  - source: bgee
+    relation_type: prov:hadPrimarySource
 product_url: https://www.bgee.org/
 secondary_source:
-- bgee
+  - source: bgee
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -5,7 +5,8 @@ description: Solr search index database for ontology searching (requires Solr 9.
 id: ols.solr
 name: OLS Solr Database
 original_source:
-- ols
+  - source: ols
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
 layout: product_detail
 ---

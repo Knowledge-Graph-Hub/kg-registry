@@ -5,7 +5,8 @@ format: http
 id: aragorn.api
 name: ARAGORN API
 original_source:
-- aragorn
+  - source: aragorn
+    relation_type: prov:hadPrimarySource
 product_url: https://aragorn.renci.org/
 layout: product_detail
 ---

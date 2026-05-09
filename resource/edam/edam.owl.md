@@ -5,12 +5,16 @@ format: owl
 id: edam.owl
 name: EDAM OWL
 original_source:
-- edam
-- dc
-- skos
+  - source: edam
+    relation_type: prov:hadPrimarySource
+  - source: dc
+    relation_type: prov:hadPrimarySource
+  - source: skos
+    relation_type: prov:hadPrimarySource
 product_file_size: 3373041
 product_url: http://edamontology.org/EDAM.owl
 secondary_source:
-- edam
+  - source: edam
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

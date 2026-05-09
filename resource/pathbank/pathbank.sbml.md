@@ -9,7 +9,8 @@ license:
   label: ODbL-1.0
 name: PathBank SBML Archive
 original_source:
-- pathbank
+  - source: pathbank
+    relation_type: prov:hadPrimarySource
 product_url: https://pathbank.org/downloads
 warnings: []
 layout: product_detail

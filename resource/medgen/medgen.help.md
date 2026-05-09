@@ -5,7 +5,8 @@ format: http
 id: medgen.help
 name: MedGen Documentation
 original_source:
-- medgen
+  - source: medgen
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/medgen/docs/overview/
 layout: product_detail
 ---

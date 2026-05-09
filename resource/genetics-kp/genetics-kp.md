@@ -2,37 +2,39 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-- translator
+  - translator
 contacts:
-- category: Individual
-  label: Jason Flannick
+  - category: Individual
+    label: Jason Flannick
 description: A Translator Knowledge Provider focusing on genetic data.
 domains:
-- health
+  - health
 id: genetics-kp
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
 products:
-- category: DocumentationProduct
-  description: Team overview and data source documentation for the Genetics Knowledge
-    Provider.
-  format: http
-  id: genetics-kp.docs
-  name: Genetics KP Documentation
-  original_source:
-  - genetics-kp
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
-- category: ProcessProduct
-  description: Source code repository for the Genetics Knowledge Provider implementation.
-  format: http
-  id: genetics-kp.code
-  name: Genetics KP Source Code
-  original_source:
-  - genetics-kp
-  product_url: https://github.com/broadinstitute/genetics-kp-dev
+  - category: DocumentationProduct
+    description: Team overview and data source documentation for the Genetics Knowledge Provider.
+    format: http
+    id: genetics-kp.docs
+    name: Genetics KP Documentation
+    original_source:
+      - source: genetics-kp
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
+  - category: ProcessProduct
+    description: Source code repository for the Genetics Knowledge Provider implementation.
+    format: http
+    id: genetics-kp.code
+    name: Genetics KP Source Code
+    original_source:
+      - source: genetics-kp
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/broadinstitute/genetics-kp-dev
 creation_date: '2025-03-09T00:00:00Z'
 ---
+
 A Translator Knowledge Provider focusing on genetic data.
 
 ## Automated Evaluation

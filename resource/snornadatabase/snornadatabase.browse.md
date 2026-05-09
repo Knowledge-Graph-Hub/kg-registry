@@ -1,12 +1,12 @@
 ---
 category: GraphicalInterface
-description: Browse function for viewing and downloading snoRNA sequences in FASTA
-  format
+description: Browse function for viewing and downloading snoRNA sequences in FASTA format
 format: http
 id: snornadatabase.browse
 name: snoRNABase Browse
 original_source:
-- snornadatabase
+  - source: snornadatabase
+    relation_type: prov:hadPrimarySource
 product_url: https://www-snorna.biotoul.fr/browse.php
 layout: product_detail
 ---

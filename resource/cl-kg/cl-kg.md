@@ -2,16 +2,15 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: ubyndr
-  label: Ugur Bayindir
-  orcid: 0000-0002-6012-3729
-description: CL-KG is a knowledge graph integrating the cell ontology and linked ontologies
-  with hierarchical annotations of single cell transcriptomics data from CellXGene.
+  - category: Individual
+    contact_details:
+      - contact_type: github
+        value: ubyndr
+    label: Ugur Bayindir
+    orcid: 0000-0002-6012-3729
+description: CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://cellular-semantics.github.io/CL_KG/
 id: cl-kg
 layout: resource_detail
@@ -20,22 +19,25 @@ license:
   label: Apache License 2.0
 name: Cell Ontology Knowledge Graph (CL-KG)
 products:
-- category: ProgrammingInterface
-  connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
-  description: Publicly available Neo4j instance for CL-KG.
-  id: cl-kg.api.neo4j
-  is_neo4j: true
-  is_public: true
-  name: CL-KG Neo4j graph instance
-  original_source:
-  - cl-kg
-  product_url: https://cellular-semantics.sanger.ac.uk/browser/
-  secondary_source:
-  - cl-kg
+  - category: ProgrammingInterface
+    connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
+    description: Publicly available Neo4j instance for CL-KG.
+    id: cl-kg.api.neo4j
+    is_neo4j: true
+    is_public: true
+    name: CL-KG Neo4j graph instance
+    original_source:
+      - source: cl-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://cellular-semantics.sanger.ac.uk/browser/
+    secondary_source:
+      - source: cl-kg
+        relation_type: prov:wasInfluencedBy
 repository: https://github.com/Cellular-Semantics/CL_KG
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---
+
 CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene.
 
 ## Automated Evaluation

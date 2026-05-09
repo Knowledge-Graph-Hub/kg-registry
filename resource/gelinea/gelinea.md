@@ -23,7 +23,8 @@ products:
     id: gelinea.tool
     name: GeLiNEA Tool
     original_source:
-      - gelinea
+      - source: gelinea
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/broadinstitute/GeLiNEA
 publications:
   - authors:

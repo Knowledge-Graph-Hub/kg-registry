@@ -5,8 +5,10 @@ format: txt
 id: medgen.mondo-history
 name: Mondo CUI History
 original_source:
-- medgen
-- mondo
+  - source: medgen
+    relation_type: prov:hadPrimarySource
+  - source: mondo
+    relation_type: prov:hadPrimarySource
 product_file_size: 1012883
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
 layout: product_detail

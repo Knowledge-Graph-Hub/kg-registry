@@ -5,8 +5,10 @@ format: owl
 id: ecosim.model.owl
 name: ecosim OWL release
 original_source:
-- ecosim
+  - source: ecosim
+    relation_type: prov:hadPrimarySource
 secondary_source:
-- ecosim
+  - source: ecosim
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

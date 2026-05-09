@@ -2,21 +2,19 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: jhc@lbl.gov
-  - contact_type: github
-    value: caufieldjh
-  label: J. Harry Caufield
-  orcid: 0000-0001-5705-7831
-description: A Knowledge Graph for integrating data related to Alzheimer's disease,
-  supporting Retrieval-Augmented Generation (RAG) and AI assistant development for
-  Alzheimer's disease research.
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: jhc@lbl.gov
+      - contact_type: github
+        value: caufieldjh
+    label: J. Harry Caufield
+    orcid: 0000-0001-5705-7831
+description: A Knowledge Graph for integrating data related to Alzheimer's disease, supporting Retrieval-Augmented Generation (RAG) and AI assistant development for Alzheimer's disease research.
 domains:
-- health
-- neuroscience
-- biomedical
+  - health
+  - neuroscience
+  - biomedical
 homepage_url: https://kghub.org/kg-alzheimers/index.html
 id: kg-alzheimers
 layout: resource_detail
@@ -25,24 +23,27 @@ license:
   label: CC0 1.0
 name: KG-Alzheimers
 products:
-- category: GraphProduct
-  compression: targz
-  description: KGX Distribution of KG-Alzheimers
-  format: kgx
-  id: kg-alzheimers.graph
-  name: KGX Distribution of KG-Alzheimers
-  original_source:
-  - kg-alzheimers
-  product_file_size: 210868256
-  product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  secondary_source:
-  - kg-alzheimers
+  - category: GraphProduct
+    compression: targz
+    description: KGX Distribution of KG-Alzheimers
+    format: kgx
+    id: kg-alzheimers.graph
+    name: KGX Distribution of KG-Alzheimers
+    original_source:
+      - source: kg-alzheimers
+        relation_type: prov:hadPrimarySource
+    product_file_size: 210868256
+    product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+    secondary_source:
+      - source: kg-alzheimers
+        relation_type: prov:wasInfluencedBy
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 creation_date: '2025-03-18T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---
+
 KG-Alzheimers is a knowledge graph created in collaboration between Lawrence Berkeley National
 Lab and Washington University, designed to integrate data related to Alzheimer's 
 disease. The purpose is to support use cases including retrieval augmented generation (RAG)

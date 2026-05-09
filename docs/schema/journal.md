@@ -15,8 +15,7 @@ _The journal the publication was published in._
 
 
 URI: [kgr:journal](https://w3id.org/bridge2ai/data-sheets-schema/journal)
-
-
+Alias: journal
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:journal](https://w3id.org/bridge2ai/data-sheets-schema/journal)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:journal](https://w3id.org/bridge2ai/data-sheets-schema/journal)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

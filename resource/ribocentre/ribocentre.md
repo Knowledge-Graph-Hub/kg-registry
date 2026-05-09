@@ -2,291 +2,470 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: miao_zhichao@gzlab.ac.cn
-  label: Zhichao Miao
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: huanglin36@mail.sysu.edu.cn
-  label: Lin Huang
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: miao_zhichao@gzlab.ac.cn
+    label: Zhichao Miao
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: huanglin36@mail.sysu.edu.cn
+    label: Lin Huang
 creation_date: '2025-09-09T00:00:00Z'
-description: Ribocentre is a comprehensive database containing information about natural
-  ribozymes, including sequences, structures, catalytic mechanisms, and applications.
-  It provides searchable and browsable access to ribozyme research data with interactive
-  2D and 3D visualizations.
+description: Ribocentre is a comprehensive database containing information about natural ribozymes, including sequences, structures, catalytic mechanisms, and applications. It provides searchable and browsable access to ribozyme research data with interactive 2D and 3D visualizations.
 domains:
-- genomics
-- biological systems
+  - genomics
+  - biological systems
 homepage_url: https://www.ribocentre.org/
 id: ribocentre
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: Ribocentre
 products:
-- category: GraphicalInterface
-  description: Web portal for searching and browsing ribozyme data including sequences,
-    structures, catalytic information, and publications
-  format: http
-  id: ribocentre.portal
-  name: Ribocentre Web Portal
-  original_source:
-  - ribocentre
-  product_url: https://www.ribocentre.org/
-- category: GraphicalInterface
-  description: Browse comprehensive information about different ribozyme types with
-    timelines, structures, and mechanisms
-  format: http
-  id: ribocentre.ribozymes
-  name: Ribozyme Browser
-  original_source:
-  - ribocentre
-  product_url: https://www.ribocentre.org/ribozyme/
-- category: GraphicalInterface
-  description: Interactive 2D and 3D structure visualization tools for ribozymes
-  format: http
-  id: ribocentre.structures
-  name: Structure Visualization
-  original_source:
-  - ribocentre
-  product_url: https://www.ribocentre.org/structure/
-- category: GraphicalInterface
-  description: Search functionality integrated with RNAcentral for sequence searching
-  format: http
-  id: ribocentre.search
-  name: Sequence Search
-  original_source:
-  - ribocentre
-  - rnacentral
-  product_url: https://www.ribocentre.org/search.html
-- category: DocumentationProduct
-  description: Comprehensive publication database with 293+ entries of ribozyme research
-    articles
-  format: http
-  id: ribocentre.publications
-  name: Publications Database
-  original_source:
-  - ribocentre
-  product_url: https://www.ribocentre.org/publications/
-- category: GraphicalInterface
-  description: Web portal for searching and browsing ncRNA sequences, structures,
-    and annotations
-  format: http
-  id: rnacentral.portal
-  name: RNAcentral Portal
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/
-- category: ProgrammingInterface
-  description: REST API for programmatic access to RNAcentral data
-  format: http
-  id: rnacentral.api
-  name: RNAcentral REST API
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/api
-- category: Product
-  description: FTP archive with current and archived release files (sequences and
-    annotations)
-  format: http
-  id: rnacentral.ftp
-  name: RNAcentral FTP Archive
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
-- category: DataModelProduct
-  description: Public PostgreSQL database for direct SQL access to RNAcentral data
-  format: postgres
-  id: rnacentral.public-db
-  name: RNAcentral Public Postgres Database
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/help/public-database
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ribozyme data including sequences, structures, catalytic information, and publications
+    format: http
+    id: ribocentre.portal
+    name: Ribocentre Web Portal
+    original_source:
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ribocentre.org/
+  - category: GraphicalInterface
+    description: Browse comprehensive information about different ribozyme types with timelines, structures, and mechanisms
+    format: http
+    id: ribocentre.ribozymes
+    name: Ribozyme Browser
+    original_source:
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ribocentre.org/ribozyme/
+  - category: GraphicalInterface
+    description: Interactive 2D and 3D structure visualization tools for ribozymes
+    format: http
+    id: ribocentre.structures
+    name: Structure Visualization
+    original_source:
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ribocentre.org/structure/
+  - category: GraphicalInterface
+    description: Search functionality integrated with RNAcentral for sequence searching
+    format: http
+    id: ribocentre.search
+    name: Sequence Search
+    original_source:
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ribocentre.org/search.html
+  - category: DocumentationProduct
+    description: Comprehensive publication database with 293+ entries of ribozyme research articles
+    format: http
+    id: ribocentre.publications
+    name: Publications Database
+    original_source:
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ribocentre.org/publications/
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+      - source: 5srrnadb
+        relation_type: prov:hadPrimarySource
+      - source: crd
+        relation_type: prov:hadPrimarySource
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
+      - source: ena
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: evlncrnas
+        relation_type: prov:hadPrimarySource
+      - source: expressionatlas
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: genecards
+        relation_type: prov:hadPrimarySource
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
+      - source: gtrnadb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: lncbase
+        relation_type: prov:hadPrimarySource
+      - source: lncbook
+        relation_type: prov:hadPrimarySource
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
+      - source: lncrnadb
+        relation_type: prov:hadPrimarySource
+      - source: malacards
+        relation_type: prov:hadPrimarySource
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
+      - source: mirgenedb
+        relation_type: prov:hadPrimarySource
+      - source: modomics
+        relation_type: prov:hadPrimarySource
+      - source: noncode
+        relation_type: prov:hadPrimarySource
+      - source: pdbe
+        relation_type: prov:hadPrimarySource
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
+      - source: plncdb
+        relation_type: prov:hadPrimarySource
+      - source: pombase
+        relation_type: prov:hadPrimarySource
+      - source: rdp
+        relation_type: prov:hadPrimarySource
+      - source: rediportal
+        relation_type: prov:hadPrimarySource
+      - source: rfam
+        relation_type: prov:hadPrimarySource
+      - source: rgd
+        relation_type: prov:hadPrimarySource
+      - source: ribocentre
+        relation_type: prov:hadPrimarySource
+      - source: ribovision
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: silva
+        relation_type: prov:hadPrimarySource
+      - source: snodb
+        relation_type: prov:hadPrimarySource
+      - source: snopy
+        relation_type: prov:hadPrimarySource
+      - source: snornadatabase
+        relation_type: prov:hadPrimarySource
+      - source: srpdb
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: tarbase
+        relation_type: prov:hadPrimarySource
+      - source: tmrnawebsite
+        relation_type: prov:hadPrimarySource
+      - source: zfin
+        relation_type: prov:hadPrimarySource
+      - source: zwd
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+    product_url: https://rnacentral.org/help/public-database
 publications:
-- id: PMID:36399504
-  preferred: true
-- id: PMID:37883399
+  - id: PMID:36399504
+    preferred: true
+  - id: PMID:37883399
 synonyms:
-- RiboCentre
+  - RiboCentre
 ---
+
 # Ribocentre
 
 ## Overview

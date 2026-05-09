@@ -5,7 +5,8 @@ format: http
 id: ribocentre.structures
 name: Structure Visualization
 original_source:
-- ribocentre
+  - source: ribocentre
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ribocentre.org/structure/
 layout: product_detail
 ---

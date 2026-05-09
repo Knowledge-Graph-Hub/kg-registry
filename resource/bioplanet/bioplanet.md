@@ -18,7 +18,8 @@ products:
     id: "bioplanet.data"
     name: BioPlanet Pathway Data
     original_source:
-      - bioplanet
+      - source: bioplanet
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - Huang R

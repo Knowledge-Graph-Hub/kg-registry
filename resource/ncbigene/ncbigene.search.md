@@ -5,7 +5,8 @@ format: http
 id: ncbigene.search
 name: NCBI Gene Search Interface
 original_source:
-- ncbigene
+  - source: ncbigene
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/gene/
 layout: product_detail
 ---

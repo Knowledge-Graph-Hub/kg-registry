@@ -2,45 +2,48 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: bsantan
-  label: Brook Santangelo
+  - category: Individual
+    contact_details:
+      - contact_type: github
+        value: bsantan
+    label: Brook Santangelo
 description: A knowledge graph of linked microbes, genes and metabolites.
 domains:
-- biological systems
-- microbiology
+  - biological systems
+  - microbiology
 id: mgmlink
 layout: resource_detail
 name: MGMLink
 products:
-- category: ProcessProduct
-  description: Code for generating MGMLink
-  id: mgmlink.code
-  name: MGMLink code
-  original_source:
-  - gutmgene
-  - pheknowlator
-  product_url: https://github.com/bsantan/MGMLink
-  secondary_source:
-  - mgmlink
+  - category: ProcessProduct
+    description: Code for generating MGMLink
+    id: mgmlink.code
+    name: MGMLink code
+    original_source:
+      - source: gutmgene
+        relation_type: prov:hadPrimarySource
+      - source: pheknowlator
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/bsantan/MGMLink
+    secondary_source:
+      - source: mgmlink
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Santangelo BE
-  - Bada M
-  - Hunter LE
-  - Lozupone C
-  doi: 10.1038/s41598-025-91230-6
-  id: doi:10.1038/s41598-025-91230-6
-  title: '''Hypothesizing mechanistic links between microbes and disease using knowledge
-    graphs'''
-  year: '2025'
+  - authors:
+      - Santangelo BE
+      - Bada M
+      - Hunter LE
+      - Lozupone C
+    doi: 10.1038/s41598-025-91230-6
+    id: doi:10.1038/s41598-025-91230-6
+    title: '''Hypothesizing mechanistic links between microbes and disease using knowledge graphs'''
+    year: '2025'
 taxon:
-- NCBITaxon:2759
+  - NCBITaxon:2759
 creation_date: '2025-04-13T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---
+
 MGMLink
 
 ## Automated Evaluation

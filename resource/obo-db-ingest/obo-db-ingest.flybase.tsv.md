@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: flybase Nodes TSV
 original_source:
-- flybase
+  - source: flybase
+    relation_type: prov:hadPrimarySource
 product_file_size: 2007373
 product_url: https://w3id.org/biopragmatics/resources/flybase/flybase.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

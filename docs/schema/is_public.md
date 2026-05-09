@@ -15,8 +15,7 @@ _Whether the API is publicly accessible, or requires only publicly provided cred
 
 
 URI: [kgr:is_public](https://w3id.org/bridge2ai/data-sheets-schema/is_public)
-
-
+Alias: is_public
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:is_public](https://w3id.org/bridge2ai/data-sheets-schema/is_public)
 
 
 
-
 ## Properties
 
 * Range: [Boolean](Boolean.html)
@@ -43,9 +41,7 @@ URI: [kgr:is_public](https://w3id.org/bridge2ai/data-sheets-schema/is_public)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

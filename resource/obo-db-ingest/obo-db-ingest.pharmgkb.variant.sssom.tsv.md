@@ -8,10 +8,12 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.variant SSSOM
 original_source:
-- pharmgkb
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 product_file_size: 56599
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -5,7 +5,8 @@ format: ttl
 id: pathophenodb.ttl
 name: PathoPhenoDB TTL Knowledge Graph
 original_source:
-- pathophenodb
+  - source: pathophenodb
+    relation_type: prov:hadPrimarySource
 product_url: http://patho.phenomebrowser.net/data/downloads/pathophenodb.ttl
 layout: product_detail
 ---

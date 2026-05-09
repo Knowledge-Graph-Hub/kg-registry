@@ -21,102 +21,156 @@ publications:
     journal: RNA
     preferred: true
 products:
-- category: GraphProduct
-  description: RNA-KG as a Neo4j Dump
-  format: neo4j
-  id: rna-kg.kg.neo4j
-  name: RNA-KG Neo4j Dump
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 3976840239
-  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-  secondary_source:
-  - rna-kg
-- id: circbase.portal
-  name: circBase Portal
-  description: Web interface for searching and browsing circular RNA annotations across species.
-  category: GraphicalInterface
-  product_url: https://www.circbase.org/
-- id: circbase.downloads
-  name: circBase Bulk Downloads
-  description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs provided via the downloads CGI page.
-  category: Product
-  product_url: https://www.circbase.org/cgi-bin/downloads.cgi
-- id: circbase.docs
-  name: circBase Documentation
-  description: Help and documentation describing circBase data sources, identifiers, and usage notes.
-  category: DocumentationProduct
-  product_url: https://www.circbase.org/doc/help_mod.html
-- category: GraphProduct
-  description: RNA-KG Nodes in CSV format
-  format: csv
-  id: rna-kg.kg.nodes
-  name: RNA-KG Nodes
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 4424633304
-  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Edges in CSV format
-  format: csv
-  id: rna-kg.kg.edges
-  name: RNA-KG Edges
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 18370248815
-  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-  secondary_source:
-  - rna-kg
-
+  - category: GraphProduct
+    description: RNA-KG as a Neo4j Dump
+    format: neo4j
+    id: rna-kg.kg.neo4j
+    name: RNA-KG Neo4j Dump
+    original_source:
+      - source: dbsnp
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: circbase
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_file_size: 3976840239
+    product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+    secondary_source:
+      - source: rna-kg
+        relation_type: prov:wasInfluencedBy
+  - id: circbase.portal
+    name: circBase Portal
+    description: Web interface for searching and browsing circular RNA annotations across species.
+    category: GraphicalInterface
+    product_url: https://www.circbase.org/
+  - id: circbase.downloads
+    name: circBase Bulk Downloads
+    description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs provided via the downloads CGI page.
+    category: Product
+    product_url: https://www.circbase.org/cgi-bin/downloads.cgi
+  - id: circbase.docs
+    name: circBase Documentation
+    description: Help and documentation describing circBase data sources, identifiers, and usage notes.
+    category: DocumentationProduct
+    product_url: https://www.circbase.org/doc/help_mod.html
+  - category: GraphProduct
+    description: RNA-KG Nodes in CSV format
+    format: csv
+    id: rna-kg.kg.nodes
+    name: RNA-KG Nodes
+    original_source:
+      - source: dbsnp
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: circbase
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_file_size: 4424633304
+    product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+    secondary_source:
+      - source: rna-kg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: RNA-KG Edges in CSV format
+    format: csv
+    id: rna-kg.kg.edges
+    name: RNA-KG Edges
+    original_source:
+      - source: dbsnp
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: circbase
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_file_size: 18370248815
+    product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+    secondary_source:
+      - source: rna-kg
+        relation_type: prov:wasInfluencedBy
 ---
+
 # circBase

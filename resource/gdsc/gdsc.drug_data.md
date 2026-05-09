@@ -5,7 +5,8 @@ format: csv
 id: gdsc.drug_data
 name: GDSC Drug Sensitivity Data
 original_source:
-- gdsc
+  - source: gdsc
+    relation_type: prov:hadPrimarySource
 product_url: https://www.cancerrxgene.org/downloads/drug_data
 layout: product_detail
 ---

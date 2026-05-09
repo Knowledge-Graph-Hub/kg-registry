@@ -15,8 +15,7 @@ _Whether the API is for a Neo4j database._
 
 
 URI: [kgr:is_neo4j](https://w3id.org/bridge2ai/data-sheets-schema/is_neo4j)
-
-
+Alias: is_neo4j
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:is_neo4j](https://w3id.org/bridge2ai/data-sheets-schema/is_neo4j)
 
 
 
-
 ## Properties
 
 * Range: [Boolean](Boolean.html)
@@ -43,9 +41,7 @@ URI: [kgr:is_neo4j](https://w3id.org/bridge2ai/data-sheets-schema/is_neo4j)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

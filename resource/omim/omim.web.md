@@ -5,7 +5,8 @@ format: http
 id: omim.web
 name: OMIM Website
 original_source:
-- omim
+  - source: omim
+    relation_type: prov:hadPrimarySource
 product_url: https://www.omim.org/
 layout: product_detail
 ---

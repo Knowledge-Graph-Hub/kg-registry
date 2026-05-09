@@ -8,17 +8,17 @@ license:
   label: CC-BY-4.0
 name: MIND Test Data
 original_source:
-- drugcentral
-- mechreponet
+  - source: drugcentral
+    relation_type: prov:hadPrimarySource
+  - source: mechreponet
+    relation_type: prov:hadPrimarySource
 product_url: https://zenodo.org/records/8117748/files/test.txt
 secondary_source:
-- mind
+  - source: mind
+    relation_type: prov:wasInfluencedBy
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when accessing file
 layout: product_detail
 ---

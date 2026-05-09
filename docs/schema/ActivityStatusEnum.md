@@ -12,7 +12,7 @@ _The status of a resource. Corresponds to those used by OBO Foundry._
 
 
 
-URI: [ActivityStatusEnum](ActivityStatusEnum.html)
+URI: [kgr:ActivityStatusEnum](https://w3id.org/bridge2ai/data-sheets-schema/ActivityStatusEnum)
 
 ## Permissible Values
 
@@ -22,6 +22,7 @@ URI: [ActivityStatusEnum](ActivityStatusEnum.html)
 | inactive | None | The resource is inactive |
 | orphaned | None | The resource is not actively maintained |
 | unresponsive | None | The resource is no longer accessible |
+| unknown | None | The status of the resource is unknown |
 
 
 
@@ -36,9 +37,7 @@ URI: [ActivityStatusEnum](ActivityStatusEnum.html)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 
@@ -76,6 +75,9 @@ permissible_values:
   unresponsive:
     text: unresponsive
     description: The resource is no longer accessible. Only its metadata is available.
+  unknown:
+    text: unknown
+    description: The status of the resource is unknown.
 
 ```
 </details>

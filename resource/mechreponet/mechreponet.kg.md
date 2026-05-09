@@ -3,25 +3,43 @@ description: The MechRepoNet knowledge graph in its original format
 id: mechreponet.kg
 name: MechRepoNet Knowledge Graph
 original_source:
-- ctd
-- doid
-- go
-- chebi
-- reactome
-- interpro
-- hp
-- cl
-- pr
-- uberon
-- ncbitaxon
-- hetionet
-- complexportal
-- rnacentral
-- mirtarbase
-- unii
-- biolink
+  - source: ctd
+    relation_type: prov:hadPrimarySource
+  - source: doid
+    relation_type: prov:hadPrimarySource
+  - source: go
+    relation_type: prov:hadPrimarySource
+  - source: chebi
+    relation_type: prov:hadPrimarySource
+  - source: reactome
+    relation_type: prov:hadPrimarySource
+  - source: interpro
+    relation_type: prov:hadPrimarySource
+  - source: hp
+    relation_type: prov:hadPrimarySource
+  - source: cl
+    relation_type: prov:hadPrimarySource
+  - source: pr
+    relation_type: prov:hadPrimarySource
+  - source: uberon
+    relation_type: prov:hadPrimarySource
+  - source: ncbitaxon
+    relation_type: prov:hadPrimarySource
+  - source: hetionet
+    relation_type: prov:hadPrimarySource
+  - source: complexportal
+    relation_type: prov:hadPrimarySource
+  - source: rnacentral
+    relation_type: prov:hadPrimarySource
+  - source: mirtarbase
+    relation_type: prov:hadPrimarySource
+  - source: unii
+    relation_type: prov:hadPrimarySource
+  - source: biolink
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 secondary_source:
-- mechreponet
+  - source: mechreponet
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

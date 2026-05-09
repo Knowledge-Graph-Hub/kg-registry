@@ -27,13 +27,13 @@ synonyms:
   - Retriever
 products:
   - category: ProcessProduct
-    description: Retriever source code implementing query deduplication, caching, and
-      TRAPI aggregation workflows.
+    description: Retriever source code implementing query deduplication, caching, and TRAPI aggregation workflows.
     format: http
     id: retriever.code
     name: Retriever Source Repository
     original_source:
-      - retriever
+      - source: retriever
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/BioPack-team/retriever
   - category: DocumentationProduct
     description: Project README with deployment and usage instructions for Retriever.
@@ -41,7 +41,8 @@ products:
     id: retriever.docs
     name: Retriever Documentation
     original_source:
-      - retriever
+      - source: retriever
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/BioPack-team/retriever#readme
 ---
 

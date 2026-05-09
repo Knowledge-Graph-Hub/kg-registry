@@ -1,11 +1,11 @@
 ---
 category: DataModelProduct
-description: BRITE hierarchies and tables for functional hierarchies of biological
-  objects
+description: BRITE hierarchies and tables for functional hierarchies of biological objects
 id: kegg.brite
 name: KEGG BRITE
 original_source:
-- kegg
+  - source: kegg
+    relation_type: prov:hadPrimarySource
 product_url: https://www.kegg.jp/kegg/brite.html
 layout: product_detail
 ---

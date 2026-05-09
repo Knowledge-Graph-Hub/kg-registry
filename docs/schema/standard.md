@@ -15,8 +15,7 @@ _The name of the standard that the product is compatible with._
 
 
 URI: [kgr:standard](https://w3id.org/bridge2ai/data-sheets-schema/standard)
-
-
+Alias: standard
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:standard](https://w3id.org/bridge2ai/data-sheets-schema/standard)
 
 
 
-
 ## Properties
 
 * Range: [StandardEnum](StandardEnum.html)
@@ -43,9 +41,7 @@ URI: [kgr:standard](https://w3id.org/bridge2ai/data-sheets-schema/standard)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

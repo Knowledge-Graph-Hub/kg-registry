@@ -5,7 +5,8 @@ format: http
 id: pharmebinet.browser
 name: PharMeBINet Web Application
 original_source:
-- pharmebinet
+  - source: pharmebinet
+    relation_type: prov:hadPrimarySource
 product_url: https://pharmebi.net/
 layout: product_detail
 ---

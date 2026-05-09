@@ -5,7 +5,8 @@ format: http
 id: sennet.portal
 name: SenNet Data Portal
 original_source:
-- sennet
+  - source: sennet
+    relation_type: prov:hadPrimarySource
 product_url: https://data.sennetconsortium.org/
 layout: product_detail
 ---

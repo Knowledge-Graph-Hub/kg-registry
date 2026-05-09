@@ -2,15 +2,12 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2025-11-22T00:00:00Z'
-description: A semantic web-based knowledge graph integrating cancer registry data
-  from multiple U.S. state registries with external datasets to enable advanced analytics,
-  complex queries, hypothesis generation, and visualization for cancer surveillance
-  and research
+description: A semantic web-based knowledge graph integrating cancer registry data from multiple U.S. state registries with external datasets to enable advanced analytics, complex queries, hypothesis generation, and visualization for cancer surveillance and research
 domains:
-- clinical
-- biomedical
-- health
-- translational
+  - clinical
+  - biomedical
+  - health
+  - translational
 homepage_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 id: cancer-registry-kg
 last_modified_date: '2025-11-22T00:00:00Z'
@@ -20,87 +17,72 @@ license:
   label: NIHMS Public Access
 name: Cancer Registry Knowledge Graph
 products:
-- category: GraphProduct
-  description: RDF-based knowledge graph containing 374,682 unique tumor records from
-    Louisiana Tumor Registry (2000-2016) with 240 columns of NAACCR-standardized cancer
-    data including demographics, tumor characteristics, treatment, and outcomes. Contains
-    90,673,527 triples stored in Virtuoso triplestore with SPARQL endpoint access.
-  id: cancer-registry-kg.ltr
-  name: Louisiana Tumor Registry Knowledge Graph
-  original_source:
-  - cancer-registry-kg
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: GraphProduct
-  description: RDF-based knowledge graph containing 207,766 unique tumor records from
-    Kentucky Cancer Registry (2010-2016) with 232 columns of cancer data. Contains
-    48,409,945 triples demonstrating the framework's ability to dynamically integrate
-    multiple registry datasets without code changes.
-  id: cancer-registry-kg.kcr
-  name: Kentucky Cancer Registry Knowledge Graph
-  original_source:
-  - cancer-registry-kg
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Linked neighborhood concentrated disadvantage index (CDI) dataset for
-    Louisiana and Kentucky census tracts, enabling socioeconomic analysis of cancer
-    incidence patterns and disparities. Demonstrates knowledge graph capability for
-    third-party data integration to explain variation in cancer outcomes.
-  id: cancer-registry-kg.cdi
-  name: Concentrated Disadvantage Index Integration
-  original_source:
-  - cancer-registry-kg
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: ProgrammingInterface
-  description: Python-based API using RDFLib for parameterized SPARQL query execution
-    against cancer registry knowledge graph. Provides template-based queries for hypothesis
-    generation, treatment sequence analysis, and multi-dataset integration without
-    requiring users to write SPARQL directly.
-  id: cancer-registry-kg.api
-  name: Cancer Registry Query API
-  original_source:
-  - cancer-registry-kg
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
-- category: GraphicalInterface
-  description: Interactive graph visualization service using Gephi with Semantic Web
-    Importer plugin to query Virtuoso SPARQL endpoint. Provides high-level and low-level
-    visualizations with graph algorithms (PageRank, connected components, modularity)
-    for pattern discovery and anomaly detection.
-  id: cancer-registry-kg.visualization
-  name: Gephi-Based KG Visualization
-  original_source:
-  - cancer-registry-kg
-  product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+  - category: GraphProduct
+    description: RDF-based knowledge graph containing 374,682 unique tumor records from Louisiana Tumor Registry (2000-2016) with 240 columns of NAACCR-standardized cancer data including demographics, tumor characteristics, treatment, and outcomes. Contains 90,673,527 triples stored in Virtuoso triplestore with SPARQL endpoint access.
+    id: cancer-registry-kg.ltr
+    name: Louisiana Tumor Registry Knowledge Graph
+    original_source:
+      - source: cancer-registry-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+  - category: GraphProduct
+    description: RDF-based knowledge graph containing 207,766 unique tumor records from Kentucky Cancer Registry (2010-2016) with 232 columns of cancer data. Contains 48,409,945 triples demonstrating the framework's ability to dynamically integrate multiple registry datasets without code changes.
+    id: cancer-registry-kg.kcr
+    name: Kentucky Cancer Registry Knowledge Graph
+    original_source:
+      - source: cancer-registry-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+  - category: Product
+    description: Linked neighborhood concentrated disadvantage index (CDI) dataset for Louisiana and Kentucky census tracts, enabling socioeconomic analysis of cancer incidence patterns and disparities. Demonstrates knowledge graph capability for third-party data integration to explain variation in cancer outcomes.
+    id: cancer-registry-kg.cdi
+    name: Concentrated Disadvantage Index Integration
+    original_source:
+      - source: cancer-registry-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when accessing file
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+  - category: ProgrammingInterface
+    description: Python-based API using RDFLib for parameterized SPARQL query execution against cancer registry knowledge graph. Provides template-based queries for hypothesis generation, treatment sequence analysis, and multi-dataset integration without requiring users to write SPARQL directly.
+    id: cancer-registry-kg.api
+    name: Cancer Registry Query API
+    original_source:
+      - source: cancer-registry-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
+  - category: GraphicalInterface
+    description: Interactive graph visualization service using Gephi with Semantic Web Importer plugin to query Virtuoso SPARQL endpoint. Provides high-level and low-level visualizations with graph algorithms (PageRank, connected components, modularity) for pattern discovery and anomaly detection.
+    id: cancer-registry-kg.visualization
+    name: Gephi-Based KG Visualization
+    original_source:
+      - source: cancer-registry-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 publications:
-- authors:
-  - S.M. Shamimul Hasan
-  - Donna Rivera
-  - Xiao-Cheng Wu
-  - Eric B. Durbin
-  - J. Blair Christian
-  - Georgia Tourassi
-  doi: 10.1109/JBHI.2020.2990797
-  id: PMID:32386166
-  journal: IEEE Journal of Biomedical and Health Informatics
-  title: Knowledge Graph-Enabled Cancer Data Analytics
-  year: '2020'
+  - authors:
+      - S.M. Shamimul Hasan
+      - Donna Rivera
+      - Xiao-Cheng Wu
+      - Eric B. Durbin
+      - J. Blair Christian
+      - Georgia Tourassi
+    doi: 10.1109/JBHI.2020.2990797
+    id: PMID:32386166
+    journal: IEEE Journal of Biomedical and Health Informatics
+    title: Knowledge Graph-Enabled Cancer Data Analytics
+    year: '2020'
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 ## Overview
 
 The Cancer Registry Knowledge Graph is a semantic web-based digital library framework designed to address major challenges in the secondary use of cancer registry data for research and analytics. Built on Resource Description Framework (RDF) technology, this knowledge graph approach transforms traditional relational database cancer registry data into a flexible, queryable graph structure that enables complex analyses, dynamic data linking, and iterative schema evolution.

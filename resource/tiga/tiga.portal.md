@@ -5,7 +5,8 @@ format: http
 id: tiga.portal
 name: TIGA Web Application
 original_source:
-- tiga
+  - source: tiga
+    relation_type: prov:hadPrimarySource
 product_url: https://datascience.unm.edu/tiga/
 layout: product_detail
 ---

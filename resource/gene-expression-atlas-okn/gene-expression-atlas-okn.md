@@ -5,30 +5,33 @@ description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac
 activity_status: active
 homepage_url: https://www.ebi.ac.uk/gxa/home
 products:
-- id: gene-expression-atlas-okn.sparql
-  name: Gene Expression Atlas SPARQL
-  description: SPARQL endpoint for Gene Expression Atlas
-  category: ProgrammingInterface
-  product_url: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
-  original_source:
-  - gene-expression-atlas-okn
-- id: gene-expression-atlas-okn.tpf
-  name: Gene Expression Atlas TPF
-  description: Triple Pattern Fragments endpoint for Gene Expression Atlas
-  category: ProgrammingInterface
-  product_url: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
-  original_source:
-  - gene-expression-atlas-okn
+  - id: gene-expression-atlas-okn.sparql
+    name: Gene Expression Atlas SPARQL
+    description: SPARQL endpoint for Gene Expression Atlas
+    category: ProgrammingInterface
+    product_url: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
+    original_source:
+      - source: gene-expression-atlas-okn
+        relation_type: prov:hadPrimarySource
+  - id: gene-expression-atlas-okn.tpf
+    name: Gene Expression Atlas TPF
+    description: Triple Pattern Fragments endpoint for Gene Expression Atlas
+    category: ProgrammingInterface
+    product_url: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
+    original_source:
+      - source: gene-expression-atlas-okn
+        relation_type: prov:hadPrimarySource
 collection:
-- okn
+  - okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
 last_modified_date: '2026-03-30T00:00:00Z'
 contacts: []
 domains:
-- general
+  - general
 ---
+
 Gene Expression Atlas
 
 ## Description

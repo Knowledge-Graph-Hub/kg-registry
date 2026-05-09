@@ -5,7 +5,8 @@ format: json
 id: pfocr.data
 name: PFOCR Pathway Data
 original_source:
-- pfocr
+  - source: pfocr
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/wikipathways/pfocr-database
 layout: product_detail
 ---

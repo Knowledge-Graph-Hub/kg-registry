@@ -5,7 +5,8 @@ format: http
 id: darkkinasekb.synapse
 name: DKK Synapse Data Repository
 original_source:
-- darkkinasekb
+  - source: darkkinasekb
+    relation_type: prov:hadPrimarySource
 product_url: https://www.synapse.org/#!Synapse:syn18360482/files/
 layout: product_detail
 ---

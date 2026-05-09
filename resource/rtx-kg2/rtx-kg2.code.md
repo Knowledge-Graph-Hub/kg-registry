@@ -5,6 +5,7 @@ id: rtx-kg2.code
 name: Code for building RTX-KG2
 product_url: https://github.com/RTXteam/RTX-KG2
 secondary_source:
-- rtx-kg2
+  - source: rtx-kg2
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

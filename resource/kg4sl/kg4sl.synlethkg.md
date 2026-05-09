@@ -5,7 +5,8 @@ format: mixed
 id: kg4sl.synlethkg
 name: SynLethKG Data Files
 original_source:
-- kg4sl
+  - source: kg4sl
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL/tree/main/data
 layout: product_detail
 ---

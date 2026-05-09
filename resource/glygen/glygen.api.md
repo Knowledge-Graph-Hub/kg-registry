@@ -5,9 +5,11 @@ id: glygen.api
 is_public: true
 name: GlyGen API
 original_source:
-- glygen
+  - source: glygen
+    relation_type: prov:hadPrimarySource
 product_url: https://api.glygen.org/
 secondary_source:
-- glygen
+  - source: glygen
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

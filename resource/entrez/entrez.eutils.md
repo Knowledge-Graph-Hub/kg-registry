@@ -5,7 +5,8 @@ format: http
 id: entrez.eutils
 name: Entrez E-utilities
 original_source:
-- entrez
+  - source: entrez
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
 layout: product_detail
 ---

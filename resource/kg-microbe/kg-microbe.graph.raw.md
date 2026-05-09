@@ -9,24 +9,40 @@ license:
   label: CC0 1.0
 name: KG-Microbe KGX Graph - Raw
 original_source:
-- envo
-- ncbitaxon
-- chebi
-- go
-- mondo
-- hp
-- bacdive
-- mediadive
-- uniprot
-- rhea
-- ec
-- bactotraits
-- ctd
-- disbiome
-- metpo
+  - source: envo
+    relation_type: prov:hadPrimarySource
+  - source: ncbitaxon
+    relation_type: prov:hadPrimarySource
+  - source: chebi
+    relation_type: prov:hadPrimarySource
+  - source: go
+    relation_type: prov:hadPrimarySource
+  - source: mondo
+    relation_type: prov:hadPrimarySource
+  - source: hp
+    relation_type: prov:hadPrimarySource
+  - source: bacdive
+    relation_type: prov:hadPrimarySource
+  - source: mediadive
+    relation_type: prov:hadPrimarySource
+  - source: uniprot
+    relation_type: prov:hadPrimarySource
+  - source: rhea
+    relation_type: prov:hadPrimarySource
+  - source: ec
+    relation_type: prov:hadPrimarySource
+  - source: bactotraits
+    relation_type: prov:hadPrimarySource
+  - source: ctd
+    relation_type: prov:hadPrimarySource
+  - source: disbiome
+    relation_type: prov:hadPrimarySource
+  - source: metpo
+    relation_type: prov:hadPrimarySource
 product_file_size: 12464495186
 product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
 secondary_source:
-- kg-microbe
+  - source: kg-microbe
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

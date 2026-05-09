@@ -20,33 +20,47 @@ URI: [schema:Thing](http://schema.org/Thing)
 
 
 
-
 ```mermaid
  classDiagram
     class NamedThing
-    click NamedThing href "NamedThing.html"
+    click NamedThing href "NamedThing/.html"
       NamedThing <|-- Resource
-        click Resource href "Resource.html"
+        click Resource href "Resource/.html"
       NamedThing <|-- Product
-        click Product href "Product.html"
+        click Product href "Product/.html"
       NamedThing <|-- FundingSource
-        click FundingSource href "FundingSource.html"
+        click FundingSource href "FundingSource/.html"
       NamedThing <|-- License
-        click License href "License.html"
+        click License href "License/.html"
       NamedThing <|-- Publication
-        click Publication href "Publication.html"
+        click Publication href "Publication/.html"
       NamedThing <|-- Usage
-        click Usage href "Usage.html"
-      
+        click Usage href "Usage/.html"
+
       NamedThing : category
-        
+
+      NamedThing : collection
+
+
+
+
+
+        NamedThing --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
+      NamedThing : creation_date
+
       NamedThing : id
-        
+
+      NamedThing : last_modified_date
+
       NamedThing : layout
-        
+
       NamedThing : warnings
-        
-      
+
+
 ```
 
 
@@ -71,7 +85,10 @@ URI: [schema:Thing](http://schema.org/Thing)
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | direct |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | direct |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | direct |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | direct |
 | [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | direct |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | direct |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | direct |
 
 
 
@@ -87,14 +104,18 @@ URI: [schema:Thing](http://schema.org/Thing)
 | [KnowledgeGraph](KnowledgeGraph.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [DataSource](DataSource.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [DataModel](DataModel.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
+| [Ontology](Ontology.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [Aggregator](Aggregator.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [Product](Product.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [GraphProduct](GraphProduct.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [DataModelProduct](DataModelProduct.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
+| [OntologyProduct](OntologyProduct.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [MappingProduct](MappingProduct.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [ProcessProduct](ProcessProduct.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [GraphicalInterface](GraphicalInterface.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [ProgrammingInterface](ProgrammingInterface.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
+| [DocumentationProduct](DocumentationProduct.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
+| [SourceAssociation](SourceAssociation.html) | [source](source.html) | range | [NamedThing](NamedThing.html) |
 | [Individual](Individual.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [Organization](Organization.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
 | [FundingSource](FundingSource.html) | [category](category.html) | domain | [NamedThing](NamedThing.html) |
@@ -107,8 +128,8 @@ URI: [schema:Thing](http://schema.org/Thing)
 
 
 
-## Identifier and Mapping Information
 
+## Identifier and Mapping Information
 
 
 
@@ -135,7 +156,6 @@ URI: [schema:Thing](http://schema.org/Thing)
 
 
 
-
 ## LinkML Source
 
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
@@ -151,7 +171,10 @@ slots:
 - id
 - category
 - warnings
+- collection
 - layout
+- creation_date
+- last_modified_date
 class_uri: schema:Thing
 
 ```
@@ -177,6 +200,7 @@ attributes:
     owner: NamedThing
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -208,18 +232,56 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: NamedThing
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: NamedThing
     domain_of:
     - NamedThing
+    - Organization
     range: string
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: NamedThing
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: NamedThing
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 class_uri: schema:Thing
 
 ```

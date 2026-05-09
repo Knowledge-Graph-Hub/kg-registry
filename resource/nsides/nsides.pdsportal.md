@@ -5,7 +5,8 @@ format: http
 id: nsides.pdsportal
 name: PDSPortal
 original_source:
-- nsides
+  - source: nsides
+    relation_type: prov:hadPrimarySource
 product_url: https://pdsportal.shinyapps.io/pdsportal/
 layout: product_detail
 ---

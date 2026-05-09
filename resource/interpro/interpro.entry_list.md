@@ -5,7 +5,8 @@ format: tsv
 id: interpro.entry_list
 name: InterPro Entry List
 original_source:
-- interpro
+  - source: interpro
+    relation_type: prov:hadPrimarySource
 product_file_size: 2670480
 product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list
 layout: product_detail

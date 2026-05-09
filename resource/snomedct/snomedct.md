@@ -2,34 +2,29 @@
 activity_status: active
 category: Ontology
 collection:
-- omop
+  - omop
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: info@snomed.org
-  - contact_type: url
-    value: https://www.snomed.org/contact-us
-  label: SNOMED International
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: custserv@nlm.nih.gov
-  - contact_type: url
-    value: https://www.nlm.nih.gov/healthit/snomedct/index.html
-  id: ncbi
-  label: National Library of Medicine (NLM)
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: info@snomed.org
+      - contact_type: url
+        value: https://www.snomed.org/contact-us
+    label: SNOMED International
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: custserv@nlm.nih.gov
+      - contact_type: url
+        value: https://www.nlm.nih.gov/healthit/snomedct/index.html
+    id: ncbi
+    label: National Library of Medicine (NLM)
 creation_date: '2025-06-04T00:00:00Z'
-description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the
-  most comprehensive, multilingual clinical healthcare terminology in the world. It
-  provides a standardized way to represent clinical phrases captured by clinicians
-  and enables automatic interpretation of these terms. SNOMED CT includes more than
-  360,000 active concepts with unique meanings and formal logic-based definitions
-  organized into hierarchies.
+description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the most comprehensive, multilingual clinical healthcare terminology in the world. It provides a standardized way to represent clinical phrases captured by clinicians and enables automatic interpretation of these terms. SNOMED CT includes more than 360,000 active concepts with unique meanings and formal logic-based definitions organized into hierarchies.
 domains:
-- biomedical
-- clinical
-- health
+  - biomedical
+  - clinical
+  - health
 homepage_url: https://www.snomed.org/
 id: snomedct
 infores_id: snomedct
@@ -40,356 +35,583 @@ license:
   label: SNOMED CT Affiliate License
 name: SNOMED CT
 products:
-- category: OntologyProduct
-  description: The biannual release of the US Edition of SNOMED CT, combining content
-    from both the US Extension and International releases.
-  id: snomedct.us.content
-  name: SNOMED CT US Edition
-  original_source:
-  - snomedct
-  product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
-- category: OntologyProduct
-  description: The monthly release of the International Edition of SNOMED CT, the
-    core release from SNOMED International, as RF2 files.
-  id: snomedct.international.content
-  name: SNOMED CT International Edition
-  original_source:
-  - snomedct
-  product_url: https://download.nlm.nih.gov/umls/kss/IHTSDO2025/IHTSDO20250601/SnomedCT_InternationalRF2_PRODUCTION_20250601T120000Z.zip
-- category: MappingProduct
-  description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
-    SNOMED CT concepts to ICD-10-CM codes.
-  id: snomedct.icd10cm.map
-  name: SNOMED CT to ICD-10-CM Map
-  original_source:
-  - snomedct
-  - icd10
-  product_url: https://download.nlm.nih.gov/mlb/utsauth/ICD10CM/SNOMED_CT_to_ICD-10-CM_Resources_20250301.zip
-- category: GraphicalInterface
-  description: The SNOMED International browser for exploring the SNOMED CT terminology.
-  format: http
-  id: snomedct.browser
-  name: SNOMED CT Browser
-  original_source:
-  - snomedct
-  product_url: https://browser.ihtsdotools.org/
-- category: OntologyProduct
-  description: A frequently used subset of SNOMED CT concepts for nursing documentation
-    in electronic health records. August 2017 release.
-  id: snomedct.nursing
-  name: SNOMED CT Nursing Problem List Subset
-  original_source:
-  - snomedct
-  product_url: https://download.nlm.nih.gov/mlb/utsauth/NursingProblemListSubset/SNOMEDCT_Nursing_201708.csv
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: MappingProduct
-  description: Concept mappings between different terminology systems
-  format: csv
-  id: athena.mappings
-  name: Athena Concept Mappings
-  original_source:
-  - snomedct
-  - icd10
-  - icd10cm
-  - mesh
-  - loinc
-  - cdiscvocab
-  - ciel
-  product_url: https://athena.ohdsi.org/search-terms/start
-  secondary_source:
-  - athena
-  warnings:
-  - Athena mapping exports are accessed through the authenticated Athena web application;
-    stable direct public file URLs are not exposed.
-- category: GraphProduct
-  description: Graph database dump and additional relationship files for the Clinical
-    Knowledge Graph.
-  format: neo4j
-  id: ckg.graph
-  name: CKG Graph Database Dump
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: Product
-  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
-    through the authenticated Athena web application
-  format: csv
-  id: athena.vocabularies
-  name: Athena Vocabulary Downloads
-  original_source:
-  - snomedct
-  - icd10
-  - icd10cm
-  - mesh
-  - loinc
-  - cdiscvocab
-  - ciel
-  - rxnorm
-  - ndcd
-  - gemscript
-  - medispan-gpi
-  product_url: https://athena.ohdsi.org/vocabulary/list
-  secondary_source:
-  - athena
-  warnings:
-  - Athena vocabulary downloads are prepared through the logged-in web application;
-    stable direct public file URLs are not exposed.
+  - category: OntologyProduct
+    description: The biannual release of the US Edition of SNOMED CT, combining content from both the US Extension and International releases.
+    id: snomedct.us.content
+    name: SNOMED CT US Edition
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
+  - category: OntologyProduct
+    description: The monthly release of the International Edition of SNOMED CT, the core release from SNOMED International, as RF2 files.
+    id: snomedct.international.content
+    name: SNOMED CT International Edition
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+    product_url: https://download.nlm.nih.gov/umls/kss/IHTSDO2025/IHTSDO20250601/SnomedCT_InternationalRF2_PRODUCTION_20250601T120000Z.zip
+  - category: MappingProduct
+    description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps SNOMED CT concepts to ICD-10-CM codes.
+    id: snomedct.icd10cm.map
+    name: SNOMED CT to ICD-10-CM Map
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/ICD10CM/SNOMED_CT_to_ICD-10-CM_Resources_20250301.zip
+  - category: GraphicalInterface
+    description: The SNOMED International browser for exploring the SNOMED CT terminology.
+    format: http
+    id: snomedct.browser
+    name: SNOMED CT Browser
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+    product_url: https://browser.ihtsdotools.org/
+  - category: OntologyProduct
+    description: A frequently used subset of SNOMED CT concepts for nursing documentation in electronic health records. August 2017 release.
+    id: snomedct.nursing
+    name: SNOMED CT Nursing Problem List Subset
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/NursingProblemListSubset/SNOMEDCT_Nursing_201708.csv
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: signor
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: oncokb
+        relation_type: prov:hadPrimarySource
+      - source: mutationds
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: corum
+        relation_type: prov:hadPrimarySource
+      - source: cancer-genome-interpreter
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: mod
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: ms
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: signor
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: oncokb
+        relation_type: prov:hadPrimarySource
+      - source: mutationds
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: corum
+        relation_type: prov:hadPrimarySource
+      - source: cancer-genome-interpreter
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: mod
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: ms
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: MappingProduct
+    description: Concept mappings between different terminology systems
+    format: csv
+    id: athena.mappings
+    name: Athena Concept Mappings
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: icd10cm
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: cdiscvocab
+        relation_type: prov:hadPrimarySource
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/search-terms/start
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - Athena mapping exports are accessed through the authenticated Athena web application; stable direct public file URLs are not exposed.
+  - category: GraphProduct
+    description: Graph database dump and additional relationship files for the Clinical Knowledge Graph.
+    format: neo4j
+    id: ckg.graph
+    name: CKG Graph Database Dump
+    original_source:
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: signor
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: oncokb
+        relation_type: prov:hadPrimarySource
+      - source: mutationds
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: corum
+        relation_type: prov:hadPrimarySource
+      - source: cancer-genome-interpreter
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: mod
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: ms
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: Product
+    description: Downloadable standardized vocabulary bundles for OMOP CDM assembled through the authenticated Athena web application
+    format: csv
+    id: athena.vocabularies
+    name: Athena Vocabulary Downloads
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: icd10cm
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: cdiscvocab
+        relation_type: prov:hadPrimarySource
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+      - source: rxnorm
+        relation_type: prov:hadPrimarySource
+      - source: ndcd
+        relation_type: prov:hadPrimarySource
+      - source: gemscript
+        relation_type: prov:hadPrimarySource
+      - source: medispan-gpi
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/vocabulary/list
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - Athena vocabulary downloads are prepared through the logged-in web application; stable direct public file URLs are not exposed.
 repository: https://browser.ihtsdotools.org/
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # SNOMED CT
 
 SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the most comprehensive, multilingual clinical healthcare terminology in the world. It serves as a standardized vocabulary for clinical documentation and enables consistent representation of clinical content in electronic health records.
