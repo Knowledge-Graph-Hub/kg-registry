@@ -22,6 +22,9 @@ prefixes:
   dcterms:
     prefix_prefix: dcterms
     prefix_reference: http://purl.org/dc/terms/
+  prov:
+    prefix_prefix: prov
+    prefix_reference: http://www.w3.org/ns/prov#
   xsd:
     prefix_prefix: xsd
     prefix_reference: http://www.w3.org/2001/XMLSchema#
@@ -294,6 +297,38 @@ enums:
       unknown:
         text: unknown
         description: The status of the resource is unknown.
+  ProvenanceRelationEnum:
+    name: ProvenanceRelationEnum
+    description: PROV-O relation types used to describe how a product is related to
+      a resource or product source.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    permissible_values:
+      prov:hadPrimarySource:
+        text: prov:hadPrimarySource
+        description: The source is a primary source for this product. This is the
+          default relation type for original_source associations.
+        meaning: prov:hadPrimarySource
+      prov:wasDerivedFrom:
+        text: prov:wasDerivedFrom
+        description: The product was derived from, transformed from, updated from,
+          or constructed based on the source.
+        meaning: prov:wasDerivedFrom
+      prov:wasInfluencedBy:
+        text: prov:wasInfluencedBy
+        description: The product was influenced by the source in a broad provenance
+          sense. This is the default relation type for secondary_source associations
+          when a more specific PROV-O relation is not known.
+        meaning: prov:wasInfluencedBy
+      prov:wasInformedBy:
+        text: prov:wasInformedBy
+        description: The product was informed by the source, for cases where information
+          from the source affected the product without implying direct derivation.
+        meaning: prov:wasInformedBy
+      prov:used:
+        text: prov:used
+        description: The product was produced by an activity that used the source
+          as an input, reference, ontology, vocabulary, or other entity.
+        meaning: prov:used
   CompressionEnum:
     name: CompressionEnum
     description: The type of compression used with a product.
@@ -4732,9 +4767,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: Product
@@ -4747,16 +4782,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: Product
@@ -4769,11 +4804,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -5380,9 +5414,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: GraphProduct
@@ -5395,16 +5429,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: GraphProduct
@@ -5417,11 +5451,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -5990,9 +6023,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: DataModelProduct
@@ -6005,16 +6038,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: DataModelProduct
@@ -6027,11 +6060,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -6601,9 +6633,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: OntologyProduct
@@ -6616,16 +6648,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: OntologyProduct
@@ -6638,11 +6670,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -7212,9 +7243,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: MappingProduct
@@ -7227,16 +7258,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: MappingProduct
@@ -7249,11 +7280,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -7822,9 +7852,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: ProcessProduct
@@ -7837,16 +7867,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: ProcessProduct
@@ -7859,11 +7889,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -8433,9 +8462,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: GraphicalInterface
@@ -8448,16 +8477,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: GraphicalInterface
@@ -8470,11 +8499,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -9072,9 +9100,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: ProgrammingInterface
@@ -9087,16 +9115,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: ProgrammingInterface
@@ -9109,11 +9137,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -9683,9 +9710,9 @@ classes:
         range: string
       original_source:
         name: original_source
-        description: The original source(s) of the product, referred to  by the identifier
-          of each resource. This may be the parent resource or another resource. This
-          may also be a specific product.
+        description: The original source(s) of the product, with the provenance relation
+          describing how the product relates to each source. This may be the parent
+          resource or another resource. This may also be a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: original_source
         owner: DocumentationProduct
@@ -9698,16 +9725,16 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       secondary_source:
         name: secondary_source
         description: The source(s) of the product, other than its original source,
-          referred to by the identifier of each resource. This may be an Aggregator
-          or another resource. This may also be a specific product.
+          with the provenance relation describing how the product relates to each
+          source. This may be an Aggregator or another resource. This may also be
+          a specific product.
         from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
         alias: secondary_source
         owner: DocumentationProduct
@@ -9720,11 +9747,10 @@ classes:
         - ProcessProduct
         - GraphicalInterface
         - ProgrammingInterface
-        range: NamedThing
+        range: SourceAssociation
         multivalued: true
-        any_of:
-        - range: Resource
-        - range: Product
+        inlined: true
+        inlined_as_list: true
       product_url:
         name: product_url
         description: The URL of the product. This may be a link to download a specific
@@ -10285,6 +10311,38 @@ classes:
         domain_of:
         - ContactDetails
         range: string
+        required: true
+  SourceAssociation:
+    name: SourceAssociation
+    description: A typed provenance association from a product to another resource
+      or product that served as a source, input, influence, or other provenance-related
+      contributor.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    attributes:
+      source:
+        name: source
+        description: The identifier of the resource or product that is related to
+          the product through this provenance association.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: source
+        owner: SourceAssociation
+        domain_of:
+        - SourceAssociation
+        range: NamedThing
+        required: true
+        any_of:
+        - range: Resource
+        - range: Product
+      relation_type:
+        name: relation_type
+        description: The PROV-O relation type that describes how the product is related
+          to the source.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: relation_type
+        owner: SourceAssociation
+        domain_of:
+        - SourceAssociation
+        range: ProvenanceRelationEnum
         required: true
   Individual:
     name: Individual

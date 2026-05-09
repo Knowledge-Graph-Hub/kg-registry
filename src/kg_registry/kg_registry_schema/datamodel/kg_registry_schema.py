@@ -92,6 +92,8 @@ linkml_meta = LinkMLMeta({'default_prefix': 'kgr',
                           'prefix_reference': 'https://w3id.org/bridge2ai/data-sheets-schema/'},
                   'linkml': {'prefix_prefix': 'linkml',
                              'prefix_reference': 'https://w3id.org/linkml/'},
+                  'prov': {'prefix_prefix': 'prov',
+                           'prefix_reference': 'http://www.w3.org/ns/prov#'},
                   'skos': {'prefix_prefix': 'skos',
                            'prefix_reference': 'http://www.w3.org/2004/02/skos/core#'}},
      'see_also': ['https://kghub.org/kg-registry/'],
@@ -367,6 +369,32 @@ class ActivityStatusEnum(str, Enum):
     unknown = "unknown"
     """
     The status of the resource is unknown.
+    """
+
+
+class ProvenanceRelationEnum(str, Enum):
+    """
+    PROV-O relation types used to describe how a product is related to a resource or product source.
+    """
+    provCOLONhadPrimarySource = "prov:hadPrimarySource"
+    """
+    The source is a primary source for this product. This is the default relation type for original_source associations.
+    """
+    provCOLONwasDerivedFrom = "prov:wasDerivedFrom"
+    """
+    The product was derived from, transformed from, updated from, or constructed based on the source.
+    """
+    provCOLONwasInfluencedBy = "prov:wasInfluencedBy"
+    """
+    The product was influenced by the source in a broad provenance sense. This is the default relation type for secondary_source associations when a more specific PROV-O relation is not known.
+    """
+    provCOLONwasInformedBy = "prov:wasInformedBy"
+    """
+    The product was informed by the source, for cases where information from the source affected the product without implying direct derivation.
+    """
+    provCOLONused = "prov:used"
+    """
+    The product was produced by an activity that used the source as an input, reference, ontology, vocabulary, or other entity.
     """
 
 
@@ -948,10 +976,8 @@ class Product(NamedThing):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -989,10 +1015,8 @@ class GraphProduct(Product):
     node_categories: Optional[list[str]] = Field(default=[], description="""The node categories in the graph.""", json_schema_extra = { "linkml_meta": {'domain_of': ['GraphProduct']} })
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1026,10 +1050,8 @@ class DataModelProduct(Product):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1063,10 +1085,8 @@ class OntologyProduct(Product):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1100,10 +1120,8 @@ class MappingProduct(Product):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1137,10 +1155,8 @@ class ProcessProduct(Product):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1174,10 +1190,8 @@ class GraphicalInterface(Product):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1214,10 +1228,8 @@ class ProgrammingInterface(Product):
     connection_url: Optional[str] = Field(default=None, description="""A URL specific to the product. For example, a URL to a specific Neo4j database. Do not include a prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['ProgrammingInterface']} })
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1251,10 +1263,8 @@ class DocumentationProduct(Product):
 
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
-    original_source: Optional[list[str]] = Field(default=[], description="""The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
-    secondary_source: Optional[list[str]] = Field(default=[], description="""The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
-         'domain_of': ['Product']} })
+    original_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The original source(s) of the product, with the provenance relation describing how the product relates to each source. This may be the parent resource or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
+    secondary_source: Optional[list[SourceAssociation]] = Field(default=[], description="""The source(s) of the product, other than its original source, with the provenance relation describing how the product relates to each source. This may be an Aggregator or another resource. This may also be a specific product.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=[], description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'domain_of': ['Product']} })
@@ -1290,6 +1300,17 @@ class ContactDetails(ConfiguredBaseModel):
     contact_type_name: Optional[str] = Field(default=None, description="""The name of the contact detail, if the contact_type is \"other\". For example, if the contact value is a username at the Gumball Project's GitLab, this may be \"Gumball Project GitLab\".""", json_schema_extra = { "linkml_meta": {'domain_of': ['ContactDetails']} })
     contact_type_url: Optional[str] = Field(default=None, description="""The URL of the contact detail, if the contact_type is \"other\". For example, if the contact value is a username at the Gumball Project's GitLab, this may be \"https://gitlab.gumballproject.org/\".""", json_schema_extra = { "linkml_meta": {'domain_of': ['ContactDetails']} })
     value: str = Field(default=..., description="""The value of the contact detail. For example, an email address or URL. Do not include a prefix.""", json_schema_extra = { "linkml_meta": {'domain_of': ['ContactDetails']} })
+
+
+class SourceAssociation(ConfiguredBaseModel):
+    """
+    A typed provenance association from a product to another resource or product that served as a source, input, influence, or other provenance-related contributor.
+    """
+    linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
+
+    source: str = Field(default=..., description="""The identifier of the resource or product that is related to the product through this provenance association.""", json_schema_extra = { "linkml_meta": {'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
+         'domain_of': ['SourceAssociation']} })
+    relation_type: ProvenanceRelationEnum = Field(default=..., description="""The PROV-O relation type that describes how the product is related to the source.""", json_schema_extra = { "linkml_meta": {'domain_of': ['SourceAssociation']} })
 
 
 class Individual(Contact):
@@ -1462,6 +1483,7 @@ GraphicalInterface.model_rebuild()
 ProgrammingInterface.model_rebuild()
 DocumentationProduct.model_rebuild()
 ContactDetails.model_rebuild()
+SourceAssociation.model_rebuild()
 Individual.model_rebuild()
 Organization.model_rebuild()
 FundingSource.model_rebuild()
