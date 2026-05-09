@@ -2,195 +2,196 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: avi.maayan@mssm.edu
-      - contact_type: github
-        value: MaayanLab
-    label: Avi Ma'ayan
-    orcid: 0000-0002-6628-6249
-description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a database of crowdsourced gene expression signatures for drug, genetic, and disease perturbations.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: avi.maayan@mssm.edu
+  - contact_type: github
+    value: MaayanLab
+  label: Avi Ma'ayan
+  orcid: 0000-0002-6628-6249
+creation_date: '2025-07-08T00:00:00Z'
+description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a database
+  of crowdsourced gene expression signatures for drug, genetic, and disease perturbations.
 domains:
-  - pharmacology
-  - genomics
+- pharmacology
+- genomics
 id: creeds
+last_modified_date: '2025-09-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: CREEDS
 products:
-  - category: Product
-    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
-    id: bioteque.embeddings
-    name: Bioteque Embeddings
-    original_source:
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: cosmic
-        relation_type: prov:hadPrimarySource
-      - source: achilles
-        relation_type: prov:hadPrimarySource
-      - source: depmap
-        relation_type: prov:hadPrimarySource
-      - source: ccle
-        relation_type: prov:hadPrimarySource
-      - source: gdsc
-        relation_type: prov:hadPrimarySource
-      - source: cellosaurus
-        relation_type: prov:hadPrimarySource
-      - source: clue
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: pharmacodb
-        relation_type: prov:hadPrimarySource
-      - source: prism
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: offsides
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: repohub
-        relation_type: prov:hadPrimarySource
-      - source: chemicalchecker
-        relation_type: prov:hadPrimarySource
-      - source: repodb
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: dorothea
-        relation_type: prov:hadPrimarySource
-      - source: progeny
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: corum
-        relation_type: prov:hadPrimarySource
-      - source: huri
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: omnipath
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: bto
-        relation_type: prov:hadPrimarySource
-    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-    secondary_source:
-      - source: bioteque
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: Manual gene expression signatures derived from single gene perturbations
-    format: json
-    id: creeds.manual_single_gene
-    name: CREEDS Manual Single Gene Perturbations
-    product_file_size: 58276121
-    product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-v1.0.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Manual gene expression signatures derived from disease signatures
-    format: json
-    id: creeds.manual_disease_signatures
-    name: CREEDS Manual Disease Signatures
-    product_file_size: 16865407
-    product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-v1.0.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Manual gene expression signatures derived single drug perturbations
-    format: json
-    id: creeds.manual_single_drug
-    name: CREEDS Manual Single Drug Perturbations
-    product_file_size: 17836091
-    product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-v1.0.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: DrugMatrix single drug perturbations
-    format: json
-    id: creeds.drugmatrix
-    name: CREEDS DrugMatrix single drug perturbations
-    product_file_size: 86943390
-    product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-DM.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Automatic gene expression signatures derived from single gene perturbations
-    format: json
-    id: creeds.automatic_single_gene
-    name: CREEDS Automatic Single Gene Perturbations
-    product_file_size: 175552254
-    product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Automatic gene expression signatures derived from disease signatures
-    format: json
-    id: creeds.automatic_disease_signatures
-    name: CREEDS Automatic Disease Signatures
-    product_file_size: 29173111
-    product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-p1.0.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Automatic gene expression signatures derived from single drug perturbations
-    format: json
-    id: creeds.automatic_single_drug
-    name: CREEDS Automatic Single Drug Perturbations
-    product_file_size: 87060413
-    product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-p1.0.json
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Web interface for exploring CREEDS gene expression signatures
-    id: creeds.web_interface
-    name: CREEDS Web Interface
-    product_url: https://maayanlab.cloud/CREEDS/
-    original_source:
-      - source: creeds
-        relation_type: prov:hadPrimarySource
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: bioteque
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chemicalchecker
+  - relation_type: prov:hadPrimarySource
+    source: clue
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: offsides
+  - relation_type: prov:hadPrimarySource
+    source: omnipath
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: progeny
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+- category: Product
+  description: Manual gene expression signatures derived from single gene perturbations
+  format: json
+  id: creeds.manual_single_gene
+  name: CREEDS Manual Single Gene Perturbations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 58276121
+  product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-v1.0.json
+- category: Product
+  description: Manual gene expression signatures derived from disease signatures
+  format: json
+  id: creeds.manual_disease_signatures
+  name: CREEDS Manual Disease Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 16865407
+  product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-v1.0.json
+- category: Product
+  description: Manual gene expression signatures derived single drug perturbations
+  format: json
+  id: creeds.manual_single_drug
+  name: CREEDS Manual Single Drug Perturbations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 17836091
+  product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-v1.0.json
+- category: Product
+  description: DrugMatrix single drug perturbations
+  format: json
+  id: creeds.drugmatrix
+  name: CREEDS DrugMatrix single drug perturbations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 86943390
+  product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-DM.json
+- category: Product
+  description: Automatic gene expression signatures derived from single gene perturbations
+  format: json
+  id: creeds.automatic_single_gene
+  name: CREEDS Automatic Single Gene Perturbations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 175552254
+  product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
+- category: Product
+  description: Automatic gene expression signatures derived from disease signatures
+  format: json
+  id: creeds.automatic_disease_signatures
+  name: CREEDS Automatic Disease Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 29173111
+  product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-p1.0.json
+- category: Product
+  description: Automatic gene expression signatures derived from single drug perturbations
+  format: json
+  id: creeds.automatic_single_drug
+  name: CREEDS Automatic Single Drug Perturbations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_file_size: 87060413
+  product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-p1.0.json
+- category: GraphicalInterface
+  description: Web interface for exploring CREEDS gene expression signatures
+  id: creeds.web_interface
+  name: CREEDS Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  product_url: https://maayanlab.cloud/CREEDS/
 publications:
-  - doi: 10.1038/ncomms12846
-    id: doi:10.1038/ncomms12846
-    title: Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd
-    year: '2016'
-creation_date: '2025-07-08T00:00:00Z'
-last_modified_date: '2025-09-10T00:00:00Z'
+- doi: 10.1038/ncomms12846
+  id: doi:10.1038/ncomms12846
+  title: Extraction and analysis of signatures from the Gene Expression Omnibus by
+    the crowd
+  year: '2016'
 ---
-
 # CREEDS: Crowd Extracted Expression of Differential Signatures
 
 CREEDS (CRowd Extracted Expression of Differential Signatures) is a database of crowdsourced gene expression signatures for drug, genetic, and disease perturbations. The database was developed by the Ma'ayan Lab at the Icahn School of Medicine at Mount Sinai.

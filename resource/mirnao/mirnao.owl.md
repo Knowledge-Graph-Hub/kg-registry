@@ -4,11 +4,12 @@ description: microRNA Ontology in OWL format
 format: owl
 id: mirnao.owl
 name: mirnao.owl
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: mirnao
 product_url: http://purl.obolibrary.org/obo/mirnao.owl
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: mirnao
-    relation_type: prov:hadPrimarySource
 ---

@@ -1,14 +1,18 @@
 ---
 category: Product
-description: Target Central Resource Database (TCRD) downloadable database files containing comprehensive protein target information including druggability classifications, expression data, disease associations, and chemical probe information
+description: Target Central Resource Database (TCRD) downloadable database files containing
+  comprehensive protein target information including druggability classifications,
+  expression data, disease associations, and chemical probe information
 id: pharos.tcrd.download
 name: TCRD Database Downloads
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: pharos
 product_url: http://juniper.health.unm.edu/tcrd/download/
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
+- File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+  to URL
 layout: product_detail
-original_source:
-  - source: pharos
-    relation_type: prov:hadPrimarySource
 ---

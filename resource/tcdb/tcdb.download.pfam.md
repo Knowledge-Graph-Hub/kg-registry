@@ -1,15 +1,18 @@
 ---
 category: Product
-description: Tab-delimited protein family mapping table for TC systems. The URL ends in .py, but this endpoint serves data, not Python source code.
+description: Tab-delimited protein family mapping table for TC systems. The URL ends
+  in .py, but this endpoint serves data, not Python source code.
 format: tsv
 id: tcdb.download.pfam
 name: TC Protein Family Mapping Table
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: tcdb
 product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+- File was not able to be retrieved when checked on 2026-05-09_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+  header found
 layout: product_detail
-original_source:
-  - source: tcdb
-    relation_type: prov:hadPrimarySource
 ---

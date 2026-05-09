@@ -25,12 +25,10 @@ products:
     source: inchikey
   product_url: https://www.inchi-trust.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -101,8 +99,6 @@ products:
     source: mesh
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  - relation_type: prov:hadPrimarySource
-    source: unichem
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 1406201678
@@ -178,8 +174,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inchikey
   - relation_type: prov:hadPrimarySource
-    source: unichem
-  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -254,8 +248,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inchikey
   - relation_type: prov:hadPrimarySource
-    source: unichem
-  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 2484982268
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
@@ -329,8 +321,6 @@ products:
     source: mesh
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  - relation_type: prov:hadPrimarySource
-    source: unichem
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 6303875907

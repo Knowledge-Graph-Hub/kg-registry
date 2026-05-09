@@ -2,20 +2,21 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: saurav.kumar@iispv.cat
-      - contact_type: github
-        value: Crispae
-    label: Saurav Kumar
-    orcid: 0000-0003-0593-2598
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: saurav.kumar@iispv.cat
+  - contact_type: github
+    value: Crispae
+  label: Saurav Kumar
+  orcid: 0000-0003-0593-2598
 creation_date: '2026-02-20T00:00:00Z'
-description: An ontology for modeling and understanding of pharmacokinetics in biological systems.
+description: An ontology for modeling and understanding of pharmacokinetics in biological
+  systems.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://github.com/InSilicoVida-Research-Lab/pbpko
 id: pbpko
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,45 +27,47 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Physiologically-Based Pharmacokinetic Ontology
 products:
-  - category: OntologyProduct
-    description: Physiologically-Based Pharmacokinetic Ontology in OWL format
-    format: owl
-    id: pbpko.owl
-    name: pbpko.owl
-    product_file_size: 53137
-    product_url: http://purl.obolibrary.org/obo/pbpko.owl
-    original_source:
-      - source: pbpko
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Physiologically-Based Pharmacokinetic Ontology in OBO format
-    format: obo
-    id: pbpko.obo
-    name: pbpko.obo
-    product_url: http://purl.obolibrary.org/obo/pbpko.obo
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting to URL'
-    original_source:
-      - source: pbpko
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Physiologically-Based Pharmacokinetic Ontology in JSON format
-    format: json
-    id: pbpko.json
-    name: pbpko.json
-    product_url: http://purl.obolibrary.org/obo/pbpko.json
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting to URL'
-    original_source:
-      - source: pbpko
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Physiologically-Based Pharmacokinetic Ontology in OWL format
+  format: owl
+  id: pbpko.owl
+  name: pbpko.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pbpko
+  product_file_size: 53137
+  product_url: http://purl.obolibrary.org/obo/pbpko.owl
+- category: OntologyProduct
+  description: Physiologically-Based Pharmacokinetic Ontology in OBO format
+  format: obo
+  id: pbpko.obo
+  name: pbpko.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pbpko
+  product_url: http://purl.obolibrary.org/obo/pbpko.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
+  description: Physiologically-Based Pharmacokinetic Ontology in JSON format
+  format: json
+  id: pbpko.json
+  name: pbpko.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pbpko
+  product_url: http://purl.obolibrary.org/obo/pbpko.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
+    when accessing file'
 publications: []
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---
-
 ## Description
 
 An ontology for modeling and understanding of pharmacokinetics in biological systems.

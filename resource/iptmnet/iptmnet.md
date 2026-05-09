@@ -2,9 +2,13 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-13T00:00:00Z'
-description: iPTMnet is an integrated resource for protein post-translational modification (PTM) network discovery that employs an integrative bioinformatics approach combining text mining, data mining, and ontological representation to capture rich PTM information, including PTM enzyme-substrate-site relationships, PTM-specific protein-protein interactions (PPIs), and PTM conservation across species.
+description: iPTMnet is an integrated resource for protein post-translational modification
+  (PTM) network discovery that employs an integrative bioinformatics approach combining
+  text mining, data mining, and ontological representation to capture rich PTM information,
+  including PTM enzyme-substrate-site relationships, PTM-specific protein-protein
+  interactions (PPIs), and PTM conservation across species.
 domains:
-  - proteomics
+- proteomics
 homepage_url: https://research.bioinformatics.udel.edu/iptmnet/
 id: iptmnet
 infores_id: iptmnet
@@ -12,41 +16,40 @@ last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: iPTMnet
 products:
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
-    format: http
-    id: kinace.portal
-    name: KinAce Web Portal
-    original_source:
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: iptmnet
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: epsd
-        relation_type: prov:hadPrimarySource
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
-      - source: coralkinome
-        relation_type: prov:hadPrimarySource
-      - source: darkkinasekb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-    product_url: https://kinace.kinametrix.com/
-    secondary_source:
-      - source: kinace
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: epsd
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: kinace
+  - relation_type: prov:hadPrimarySource
+    source: kinhub
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://kinace.kinametrix.com/
 publications:
-  - id: PMID:29145615
+- id: PMID:29145615
 synonyms: []
 ---
-
 # iPTMnet
 
 ## Description

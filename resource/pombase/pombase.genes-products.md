@@ -1,6 +1,8 @@
 ---
 category: Product
-description: Tab-delimited file of systematic ID, primary gene name (where assigned), chromosome, product description, UniProtKB accession, all synonyms, and product type (protein coding, ncRNA, etc.) for each gene
+description: Tab-delimited file of systematic ID, primary gene name (where assigned),
+  chromosome, product description, UniProtKB accession, all synonyms, and product
+  type (protein coding, ncRNA, etc.) for each gene
 format: tsv
 id: pombase.genes-products
 license:
@@ -8,13 +10,15 @@ license:
   label: CC-BY-4.0
 name: PomBase gene names and products
 original_source:
-  - source: uniprot
-    relation_type: prov:hadPrimarySource
-  - source: pombase
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: uniprot
+- relation_type: prov:hadPrimarySource
+  source: pombase
 product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+- File was not able to be retrieved when checked on 2026-05-09_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+  header found
 layout: product_detail
 ---

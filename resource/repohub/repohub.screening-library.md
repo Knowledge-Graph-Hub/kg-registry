@@ -1,17 +1,38 @@
 ---
 category: Product
-description: Physical screening library of 5,506 compounds (90% FDA-approved or in clinical trials) available as assay-ready plates
+description: Physical screening library of 5,506 compounds (90% FDA-approved or in
+  clinical trials) available as assay-ready plates
 id: repohub.screening-library
 name: Screening Library
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: repohub
 product_url: https://repo-hub.broadinstitute.org/repurposing#about
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ Error connecting to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-04-15_ Error connecting to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+- File was not able to be retrieved when checked on 2026-05-09_ Error connecting to
+  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
+  exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1000)')))
+- File was not able to be retrieved when checked on 2026-04-15_ Error connecting to
+  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
+  exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1028)')))
+- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
+  exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1028)')))
+- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
+  exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1000)')))
+- File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
+  exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1017)')))
 layout: product_detail
-original_source:
-  - source: repohub
-    relation_type: prov:hadPrimarySource
 ---

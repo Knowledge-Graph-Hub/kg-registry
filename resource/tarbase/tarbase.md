@@ -2,556 +2,580 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: TarBase v9.0 is a comprehensive database of experimentally supported miRNA targets on protein-coding transcripts. It contains interactions identified via high-throughput methods (HITS-CLIP, PAR-CLIP, CLASH) and low-throughput experimental validation, all uniformly analyzed and manually curated with rich metadata.
+description: TarBase v9.0 is a comprehensive database of experimentally supported
+  miRNA targets on protein-coding transcripts. It contains interactions identified
+  via high-throughput methods (HITS-CLIP, PAR-CLIP, CLASH) and low-throughput experimental
+  validation, all uniformly analyzed and manually curated with rich metadata.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: https://dianalab.e-ce.uth.gr/tarbasev9
 id: tarbase
 last_modified_date: '2025-10-27T00:00:00Z'
 layout: resource_detail
 name: TarBase
 products:
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing experimentally supported miRNA-gene interactions
-    format: http
-    id: tarbase.portal
-    name: TarBase Portal
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Interactive search interface for querying miRNA targets and gene miRNomes with advanced filtering options
-    format: http
-    id: tarbase.interactions
-    name: Interactions Search
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/interactions
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Network visualization tool for assessing combinatorial effects of multiple miRNAs on common gene targets
-    format: http
-    id: tarbase.visualizations
-    name: Visualizations
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/visualizations
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Statistics page showing database content and coverage metrics
-    format: http
-    id: tarbase.statistics
-    name: Statistics
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/statistics
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Text-mining interface for literature-based interaction discovery
-    format: http
-    id: tarbase.textmining
-    name: Text-Mining Interface
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/textmining
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    compression: gzip
-    description: Experimentally validated miRNA-gene interactions for Homo sapiens in tab-delimited format
-    format: tsv
-    id: tarbase.homo-sapiens
-    name: Homo sapiens Interactions
-    product_file_size: 111135987
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Homo_sapiens_TarBase-v9.tsv.gz
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    compression: gzip
-    description: Experimentally validated miRNA-gene interactions for Mus musculus in tab-delimited format
-    format: tsv
-    id: tarbase.mus-musculus
-    name: Mus musculus Interactions
-    product_file_size: 16498710
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Mus_musculus_TarBase-v9.tsv.gz
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting to URL
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    compression: gzip
-    description: Experimentally validated viral miRNA-gene interactions in tab-delimited format
-    format: tsv
-    id: tarbase.viral
-    name: Viral Species Interactions
-    product_file_size: 884524
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    compression: gzip
-    description: Experimentally validated miRNA-gene interactions for other species in tab-delimited format
-    format: tsv
-    id: tarbase.other-species
-    name: Other Species Interactions
-    product_file_size: 164821
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Other_species_TarBase-v9.tsv.gz
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Comprehensive help documentation with query examples and filtering options
-    format: http
-    id: tarbase.help
-    name: Help Documentation
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
-    warnings:
-      - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting to URL'
-      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Downloads page with file format specifications and field descriptions
-    format: http
-    id: tarbase.downloads-doc
-    name: Downloads Documentation
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
-    warnings:
-      - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-      - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting to URL'
-      - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting to URL'
-    original_source:
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
-    format: http
-    id: rnacentral.portal
-    name: RNAcentral Portal
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: 5srrnadb
-      - relation_type: prov:hadPrimarySource
-        source: crd
-      - relation_type: prov:hadPrimarySource
-        source: dictybase
-      - relation_type: prov:hadPrimarySource
-        source: ena
-      - relation_type: prov:hadPrimarySource
-        source: ensembl
-      - relation_type: prov:hadPrimarySource
-        source: evlncrnas
-      - relation_type: prov:hadPrimarySource
-        source: expressionatlas
-      - relation_type: prov:hadPrimarySource
-        source: flybase
-      - relation_type: prov:hadPrimarySource
-        source: genecards
-      - relation_type: prov:hadPrimarySource
-        source: greengenes
-      - relation_type: prov:hadPrimarySource
-        source: gtrnadb
-      - relation_type: prov:hadPrimarySource
-        source: hgnc
-      - relation_type: prov:hadPrimarySource
-        source: intact
-      - relation_type: prov:hadPrimarySource
-        source: lncbase
-      - relation_type: prov:hadPrimarySource
-        source: lncbook
-      - relation_type: prov:hadPrimarySource
-        source: lncipedia
-      - relation_type: prov:hadPrimarySource
-        source: lncrnadb
-      - relation_type: prov:hadPrimarySource
-        source: malacards
-      - relation_type: prov:hadPrimarySource
-        source: mgnify
-      - relation_type: prov:hadPrimarySource
-        source: mirbase
-      - relation_type: prov:hadPrimarySource
-        source: mirgenedb
-      - relation_type: prov:hadPrimarySource
-        source: modomics
-      - relation_type: prov:hadPrimarySource
-        source: noncode
-      - relation_type: prov:hadPrimarySource
-        source: pdbe
-      - relation_type: prov:hadPrimarySource
-        source: pirbase
-      - relation_type: prov:hadPrimarySource
-        source: plncdb
-      - relation_type: prov:hadPrimarySource
-        source: pombase
-      - relation_type: prov:hadPrimarySource
-        source: rdp
-      - relation_type: prov:hadPrimarySource
-        source: rediportal
-      - relation_type: prov:hadPrimarySource
-        source: rfam
-      - relation_type: prov:hadPrimarySource
-        source: rgd
-      - relation_type: prov:hadPrimarySource
-        source: ribocentre
-      - relation_type: prov:hadPrimarySource
-        source: ribovision
-      - relation_type: prov:hadPrimarySource
-        source: sgd
-      - relation_type: prov:hadPrimarySource
-        source: silva
-      - relation_type: prov:hadPrimarySource
-        source: snodb
-      - relation_type: prov:hadPrimarySource
-        source: snopy
-      - relation_type: prov:hadPrimarySource
-        source: snornadatabase
-      - relation_type: prov:hadPrimarySource
-        source: srpdb
-      - relation_type: prov:hadPrimarySource
-        source: tair
-      - relation_type: prov:hadPrimarySource
-        source: tarbase
-      - relation_type: prov:hadPrimarySource
-        source: tmrnawebsite
-      - relation_type: prov:hadPrimarySource
-        source: zfin
-      - relation_type: prov:hadPrimarySource
-        source: zwd
-      - relation_type: prov:hadPrimarySource
-        source: rnacentral
-    product_url: https://rnacentral.org/
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to RNAcentral data
-    format: http
-    id: rnacentral.api
-    name: RNAcentral REST API
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: 5srrnadb
-      - relation_type: prov:hadPrimarySource
-        source: crd
-      - relation_type: prov:hadPrimarySource
-        source: dictybase
-      - relation_type: prov:hadPrimarySource
-        source: ena
-      - relation_type: prov:hadPrimarySource
-        source: ensembl
-      - relation_type: prov:hadPrimarySource
-        source: evlncrnas
-      - relation_type: prov:hadPrimarySource
-        source: expressionatlas
-      - relation_type: prov:hadPrimarySource
-        source: flybase
-      - relation_type: prov:hadPrimarySource
-        source: genecards
-      - relation_type: prov:hadPrimarySource
-        source: greengenes
-      - relation_type: prov:hadPrimarySource
-        source: gtrnadb
-      - relation_type: prov:hadPrimarySource
-        source: hgnc
-      - relation_type: prov:hadPrimarySource
-        source: intact
-      - relation_type: prov:hadPrimarySource
-        source: lncbase
-      - relation_type: prov:hadPrimarySource
-        source: lncbook
-      - relation_type: prov:hadPrimarySource
-        source: lncipedia
-      - relation_type: prov:hadPrimarySource
-        source: lncrnadb
-      - relation_type: prov:hadPrimarySource
-        source: malacards
-      - relation_type: prov:hadPrimarySource
-        source: mgnify
-      - relation_type: prov:hadPrimarySource
-        source: mirbase
-      - relation_type: prov:hadPrimarySource
-        source: mirgenedb
-      - relation_type: prov:hadPrimarySource
-        source: modomics
-      - relation_type: prov:hadPrimarySource
-        source: noncode
-      - relation_type: prov:hadPrimarySource
-        source: pdbe
-      - relation_type: prov:hadPrimarySource
-        source: pirbase
-      - relation_type: prov:hadPrimarySource
-        source: plncdb
-      - relation_type: prov:hadPrimarySource
-        source: pombase
-      - relation_type: prov:hadPrimarySource
-        source: rdp
-      - relation_type: prov:hadPrimarySource
-        source: rediportal
-      - relation_type: prov:hadPrimarySource
-        source: rfam
-      - relation_type: prov:hadPrimarySource
-        source: rgd
-      - relation_type: prov:hadPrimarySource
-        source: ribocentre
-      - relation_type: prov:hadPrimarySource
-        source: ribovision
-      - relation_type: prov:hadPrimarySource
-        source: sgd
-      - relation_type: prov:hadPrimarySource
-        source: silva
-      - relation_type: prov:hadPrimarySource
-        source: snodb
-      - relation_type: prov:hadPrimarySource
-        source: snopy
-      - relation_type: prov:hadPrimarySource
-        source: snornadatabase
-      - relation_type: prov:hadPrimarySource
-        source: srpdb
-      - relation_type: prov:hadPrimarySource
-        source: tair
-      - relation_type: prov:hadPrimarySource
-        source: tarbase
-      - relation_type: prov:hadPrimarySource
-        source: tmrnawebsite
-      - relation_type: prov:hadPrimarySource
-        source: zfin
-      - relation_type: prov:hadPrimarySource
-        source: zwd
-      - relation_type: prov:hadPrimarySource
-        source: rnacentral
-    product_url: https://rnacentral.org/api
-  - category: Product
-    description: FTP archive with current and archived release files (sequences and annotations)
-    format: http
-    id: rnacentral.ftp
-    name: RNAcentral FTP Archive
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: 5srrnadb
-      - relation_type: prov:hadPrimarySource
-        source: crd
-      - relation_type: prov:hadPrimarySource
-        source: dictybase
-      - relation_type: prov:hadPrimarySource
-        source: ena
-      - relation_type: prov:hadPrimarySource
-        source: ensembl
-      - relation_type: prov:hadPrimarySource
-        source: evlncrnas
-      - relation_type: prov:hadPrimarySource
-        source: expressionatlas
-      - relation_type: prov:hadPrimarySource
-        source: flybase
-      - relation_type: prov:hadPrimarySource
-        source: genecards
-      - relation_type: prov:hadPrimarySource
-        source: greengenes
-      - relation_type: prov:hadPrimarySource
-        source: gtrnadb
-      - relation_type: prov:hadPrimarySource
-        source: hgnc
-      - relation_type: prov:hadPrimarySource
-        source: intact
-      - relation_type: prov:hadPrimarySource
-        source: lncbase
-      - relation_type: prov:hadPrimarySource
-        source: lncbook
-      - relation_type: prov:hadPrimarySource
-        source: lncipedia
-      - relation_type: prov:hadPrimarySource
-        source: lncrnadb
-      - relation_type: prov:hadPrimarySource
-        source: malacards
-      - relation_type: prov:hadPrimarySource
-        source: mgnify
-      - relation_type: prov:hadPrimarySource
-        source: mirbase
-      - relation_type: prov:hadPrimarySource
-        source: mirgenedb
-      - relation_type: prov:hadPrimarySource
-        source: modomics
-      - relation_type: prov:hadPrimarySource
-        source: noncode
-      - relation_type: prov:hadPrimarySource
-        source: pdbe
-      - relation_type: prov:hadPrimarySource
-        source: pirbase
-      - relation_type: prov:hadPrimarySource
-        source: plncdb
-      - relation_type: prov:hadPrimarySource
-        source: pombase
-      - relation_type: prov:hadPrimarySource
-        source: rdp
-      - relation_type: prov:hadPrimarySource
-        source: rediportal
-      - relation_type: prov:hadPrimarySource
-        source: rfam
-      - relation_type: prov:hadPrimarySource
-        source: rgd
-      - relation_type: prov:hadPrimarySource
-        source: ribocentre
-      - relation_type: prov:hadPrimarySource
-        source: ribovision
-      - relation_type: prov:hadPrimarySource
-        source: sgd
-      - relation_type: prov:hadPrimarySource
-        source: silva
-      - relation_type: prov:hadPrimarySource
-        source: snodb
-      - relation_type: prov:hadPrimarySource
-        source: snopy
-      - relation_type: prov:hadPrimarySource
-        source: snornadatabase
-      - relation_type: prov:hadPrimarySource
-        source: srpdb
-      - relation_type: prov:hadPrimarySource
-        source: tair
-      - relation_type: prov:hadPrimarySource
-        source: tarbase
-      - relation_type: prov:hadPrimarySource
-        source: tmrnawebsite
-      - relation_type: prov:hadPrimarySource
-        source: zfin
-      - relation_type: prov:hadPrimarySource
-        source: zwd
-      - relation_type: prov:hadPrimarySource
-        source: rnacentral
-    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
-  - category: DataModelProduct
-    description: Public PostgreSQL database for direct SQL access to RNAcentral data
-    format: postgres
-    id: rnacentral.public-db
-    name: RNAcentral Public Postgres Database
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: 5srrnadb
-      - relation_type: prov:hadPrimarySource
-        source: crd
-      - relation_type: prov:hadPrimarySource
-        source: dictybase
-      - relation_type: prov:hadPrimarySource
-        source: ena
-      - relation_type: prov:hadPrimarySource
-        source: ensembl
-      - relation_type: prov:hadPrimarySource
-        source: evlncrnas
-      - relation_type: prov:hadPrimarySource
-        source: expressionatlas
-      - relation_type: prov:hadPrimarySource
-        source: flybase
-      - relation_type: prov:hadPrimarySource
-        source: genecards
-      - relation_type: prov:hadPrimarySource
-        source: greengenes
-      - relation_type: prov:hadPrimarySource
-        source: gtrnadb
-      - relation_type: prov:hadPrimarySource
-        source: hgnc
-      - relation_type: prov:hadPrimarySource
-        source: intact
-      - relation_type: prov:hadPrimarySource
-        source: lncbase
-      - relation_type: prov:hadPrimarySource
-        source: lncbook
-      - relation_type: prov:hadPrimarySource
-        source: lncipedia
-      - relation_type: prov:hadPrimarySource
-        source: lncrnadb
-      - relation_type: prov:hadPrimarySource
-        source: malacards
-      - relation_type: prov:hadPrimarySource
-        source: mgnify
-      - relation_type: prov:hadPrimarySource
-        source: mirbase
-      - relation_type: prov:hadPrimarySource
-        source: mirgenedb
-      - relation_type: prov:hadPrimarySource
-        source: modomics
-      - relation_type: prov:hadPrimarySource
-        source: noncode
-      - relation_type: prov:hadPrimarySource
-        source: pdbe
-      - relation_type: prov:hadPrimarySource
-        source: pirbase
-      - relation_type: prov:hadPrimarySource
-        source: plncdb
-      - relation_type: prov:hadPrimarySource
-        source: pombase
-      - relation_type: prov:hadPrimarySource
-        source: rdp
-      - relation_type: prov:hadPrimarySource
-        source: rediportal
-      - relation_type: prov:hadPrimarySource
-        source: rfam
-      - relation_type: prov:hadPrimarySource
-        source: rgd
-      - relation_type: prov:hadPrimarySource
-        source: ribocentre
-      - relation_type: prov:hadPrimarySource
-        source: ribovision
-      - relation_type: prov:hadPrimarySource
-        source: sgd
-      - relation_type: prov:hadPrimarySource
-        source: silva
-      - relation_type: prov:hadPrimarySource
-        source: snodb
-      - relation_type: prov:hadPrimarySource
-        source: snopy
-      - relation_type: prov:hadPrimarySource
-        source: snornadatabase
-      - relation_type: prov:hadPrimarySource
-        source: srpdb
-      - relation_type: prov:hadPrimarySource
-        source: tair
-      - relation_type: prov:hadPrimarySource
-        source: tarbase
-      - relation_type: prov:hadPrimarySource
-        source: tmrnawebsite
-      - relation_type: prov:hadPrimarySource
-        source: zfin
-      - relation_type: prov:hadPrimarySource
-        source: zwd
-      - relation_type: prov:hadPrimarySource
-        source: rnacentral
-    product_url: https://rnacentral.org/help/public-database
+- category: GraphicalInterface
+  description: Web portal for searching and browsing experimentally supported miRNA-gene
+    interactions
+  format: http
+  id: tarbase.portal
+  name: TarBase Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9
+- category: GraphicalInterface
+  description: Interactive search interface for querying miRNA targets and gene miRNomes
+    with advanced filtering options
+  format: http
+  id: tarbase.interactions
+  name: Interactions Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/interactions
+- category: GraphicalInterface
+  description: Network visualization tool for assessing combinatorial effects of multiple
+    miRNAs on common gene targets
+  format: http
+  id: tarbase.visualizations
+  name: Visualizations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/visualizations
+- category: GraphicalInterface
+  description: Statistics page showing database content and coverage metrics
+  format: http
+  id: tarbase.statistics
+  name: Statistics
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/statistics
+- category: GraphicalInterface
+  description: Text-mining interface for literature-based interaction discovery
+  format: http
+  id: tarbase.textmining
+  name: Text-Mining Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/textmining
+- category: Product
+  compression: gzip
+  description: Experimentally validated miRNA-gene interactions for Homo sapiens in
+    tab-delimited format
+  format: tsv
+  id: tarbase.homo-sapiens
+  name: Homo sapiens Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_file_size: 111135987
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Homo_sapiens_TarBase-v9.tsv.gz
+- category: Product
+  compression: gzip
+  description: Experimentally validated miRNA-gene interactions for Mus musculus in
+    tab-delimited format
+  format: tsv
+  id: tarbase.mus-musculus
+  name: Mus musculus Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_file_size: 16498710
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Mus_musculus_TarBase-v9.tsv.gz
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting
+    to URL
+- category: Product
+  compression: gzip
+  description: Experimentally validated viral miRNA-gene interactions in tab-delimited
+    format
+  format: tsv
+  id: tarbase.viral
+  name: Viral Species Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_file_size: 884524
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz
+- category: Product
+  compression: gzip
+  description: Experimentally validated miRNA-gene interactions for other species
+    in tab-delimited format
+  format: tsv
+  id: tarbase.other-species
+  name: Other Species Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_file_size: 164821
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Other_species_TarBase-v9.tsv.gz
+- category: DocumentationProduct
+  description: Comprehensive help documentation with query examples and filtering
+    options
+  format: http
+  id: tarbase.help
+  name: Help Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: DocumentationProduct
+  description: Downloads page with file format specifications and field descriptions
+  format: http
+  id: tarbase.downloads-doc
+  name: Downloads Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Skoufos
-      - Kakoulidis
-      - Tastsoglou
-      - Zacharopoulou
-      - Kotsira
-      - Miliotis
-      - Mavromati
-      - Grigoriadis
-      - Zioga
-      - Velli
-      - Koutou
-      - Karagkouni
-      - Stavropoulos
-      - Kardaras
-      - Lifousi
-      - Vavalou
-      - Ovsepian
-      - Skoulakis
-      - Tasoulis
-      - Georgakopoulos
-      - Plagianakos
-      - Hatzigeorgiou
-    id: https://doi.org/10.1093/nar/gkad1071
-    journal: Nucleic Acids Research
-    preferred: true
-    title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to cell-types and virally encoded miRNAs
-    year: '2023'
+- authors:
+  - Skoufos
+  - Kakoulidis
+  - Tastsoglou
+  - Zacharopoulou
+  - Kotsira
+  - Miliotis
+  - Mavromati
+  - Grigoriadis
+  - Zioga
+  - Velli
+  - Koutou
+  - Karagkouni
+  - Stavropoulos
+  - Kardaras
+  - Lifousi
+  - Vavalou
+  - Ovsepian
+  - Skoulakis
+  - Tasoulis
+  - Georgakopoulos
+  - Plagianakos
+  - Hatzigeorgiou
+  id: https://doi.org/10.1093/nar/gkad1071
+  journal: Nucleic Acids Research
+  preferred: true
+  title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to
+    cell-types and virally encoded miRNAs
+  year: '2023'
 ---
-
 # TarBase
 
 TarBase v9.0 is the reference database of experimentally supported microRNA (miRNA) targets on protein-coding transcripts. Developed and maintained by the DIANA Lab at the University of Thessaly, TarBase provides researchers with a comprehensive, curated collection of validated miRNA-gene interactions.

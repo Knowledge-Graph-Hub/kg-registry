@@ -92,12 +92,10 @@ products:
     source: alliance
   product_url: https://download.alliancegenome.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 15371045
@@ -126,8 +124,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -146,9 +142,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -202,9 +202,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
   edge_count: 15371045
@@ -233,8 +230,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -253,9 +248,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -309,9 +308,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   edge_count: 15371045
@@ -340,8 +336,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -360,9 +354,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -416,9 +414,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 879238775
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
@@ -447,8 +442,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -467,9 +460,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -523,9 +520,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
@@ -554,8 +548,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -574,9 +566,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -630,9 +626,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 15371045
@@ -661,8 +654,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -681,9 +672,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -737,9 +732,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 15279494795
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15371045
@@ -768,8 +760,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -788,9 +778,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -844,9 +838,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1149505896
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15371045
@@ -875,8 +866,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -895,9 +884,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -951,9 +944,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 4386388748
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
   edge_count: 15371045
@@ -982,8 +972,6 @@ products:
   node_count: 1449211
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: phenio
-  - relation_type: prov:hadPrimarySource
     source: alliance
   - relation_type: prov:hadPrimarySource
     source: bgee
@@ -1002,9 +990,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
     source: maxo
   - relation_type: prov:hadPrimarySource
     source: panther
+  - relation_type: prov:hadPrimarySource
+    source: phenio
   - relation_type: prov:hadPrimarySource
     source: pombase
   - relation_type: prov:hadPrimarySource
@@ -1058,9 +1050,6 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: kg-monarch
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -1080,10 +1069,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
-  product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
     source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/alliance/latest/
   versions:
   - '2026_03_06'
   - alliance_8.3.0_2023bb02_2025sep1_4.3.6
@@ -1119,17 +1107,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ctkp
   - relation_type: prov:hadPrimarySource
-    source: drug-approvals-kp
-  - relation_type: prov:hadPrimarySource
     source: dgidb
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: drug-approvals-kp
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: gtopdb
+    source: drugrephub
   - relation_type: prov:hadPrimarySource
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
@@ -1138,6 +1124,8 @@ products:
     source: go-cam
   - relation_type: prov:hadPrimarySource
     source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
@@ -1159,13 +1147,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: text-mining-kp
   - relation_type: prov:hadPrimarySource
+    source: translator
+  - relation_type: prov:hadPrimarySource
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: translator
   versions:
   - '2026_03_27'
   - 423af7989cac

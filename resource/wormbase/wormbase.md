@@ -83,14 +83,12 @@ products:
     source: wormbase
   product_url: ftp://ftp.wormbase.org/pub/wormbase/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: FTP error: [Errno
+    101] Network is unreachable'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ [Errno
     101] Network is unreachable
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
-  - 'File was not able to be retrieved when checked on 2026-05-04: FTP error: [Errno
-    101] Network is unreachable'
-  - 'File was not able to be retrieved when checked on 2026-05-09: FTP error: [Errno
-    101] Network is unreachable'
 - category: GraphicalInterface
   description: Sub-portal hosting approximately 100 parasitic helminth genomes with
     annotations and comparative genomics tools
@@ -130,9 +128,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -148,6 +146,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -162,6 +162,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -171,8 +173,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 138154280240
   product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
 - category: GraphProduct
@@ -205,9 +205,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -223,6 +223,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -237,6 +239,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -246,8 +250,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 203534412387
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
@@ -281,9 +283,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -299,6 +301,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -313,6 +317,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -322,8 +328,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 214269334954
   product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
 - category: GraphProduct
@@ -356,9 +360,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -374,6 +378,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -388,6 +394,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -397,8 +405,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 11867396121
   product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
 - category: GraphProduct
@@ -431,9 +437,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -449,6 +455,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -463,6 +471,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -472,8 +482,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 14859366689
   product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
 - category: GraphProduct
@@ -507,9 +515,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -525,6 +533,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -539,6 +549,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -548,8 +560,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 15528028374
   product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
 - category: GraphProduct
@@ -582,9 +592,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -600,6 +610,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -614,6 +626,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -623,8 +637,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 185338269
   product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
 - category: GraphProduct
@@ -657,9 +669,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -675,6 +687,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -689,6 +703,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -698,8 +714,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 250279091
   product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
 - category: GraphProduct
@@ -731,9 +745,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -749,6 +763,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -763,6 +779,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -772,8 +790,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 publications:

@@ -2,17 +2,17 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: topalis@imbb.forth.gr
-    label: Pantelis Topalis
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: topalis@imbb.forth.gr
+  label: Pantelis Topalis
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology for use with miRNA databases.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: http://code.google.com/p/mirna-ontology/
 id: mirnao
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -23,21 +23,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: microRNA Ontology
 products:
-  - category: OntologyProduct
-    description: microRNA Ontology in OWL format
-    format: owl
-    id: mirnao.owl
-    name: mirnao.owl
-    product_url: http://purl.obolibrary.org/obo/mirnao.owl
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
-    original_source:
-      - source: mirnao
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: microRNA Ontology in OWL format
+  format: owl
+  id: mirnao.owl
+  name: mirnao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirnao
+  product_url: http://purl.obolibrary.org/obo/mirnao.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
 publications: []
 ---
-
 ## Description
 
 An application ontology for use with miRNA databases.

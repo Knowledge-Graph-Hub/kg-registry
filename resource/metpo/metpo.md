@@ -2,18 +2,20 @@
 activity_status: active
 category: Ontology
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.berkeleybop.org/
-    id: berkeleybop
-    label: Berkeley Bioinformatics Open-source Projects
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.berkeleybop.org/
+  id: berkeleybop
+  label: Berkeley Bioinformatics Open-source Projects
 creation_date: '2025-11-25T00:00:00Z'
-description: METPO (Microbial Ecophysiological Trait and Phenotype Ontology) is an ontology for describing microbial ecophysiological traits and phenotypes relevant to microbial ecology and environmental systems biology.
+description: METPO (Microbial Ecophysiological Trait and Phenotype Ontology) is an
+  ontology for describing microbial ecophysiological traits and phenotypes relevant
+  to microbial ecology and environmental systems biology.
 domains:
-  - microbiology
-  - systems biology
-  - biological systems
+- microbiology
+- systems biology
+- biological systems
 homepage_url: https://github.com/berkeleybop/metpo
 id: metpo
 last_modified_date: '2026-01-05T00:00:00Z'
@@ -23,236 +25,231 @@ license:
   label: CC BY 4.0
 name: METPO (Microbial Ecophysiological Trait and Phenotype Ontology)
 products:
-  - category: OntologyProduct
-    description: METPO ontology in OWL format
-    format: owl
-    id: metpo.owl
-    is_public: true
-    name: METPO OWL
-    product_file_size: 24016
-    product_url: https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl
-    original_source:
-      - source: metpo
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    compression: targz
-    description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
-    format: kgx
-    id: kg-microbe.graph.raw
-    license:
-      id: https://creativecommons.org/publicdomain/zero/1.0/
-      label: CC0 1.0
-    name: KG-Microbe KGX Graph - Raw
-    original_source:
-      - source: envo
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: bacdive
-        relation_type: prov:hadPrimarySource
-      - source: mediadive
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: rhea
-        relation_type: prov:hadPrimarySource
-      - source: ec
-        relation_type: prov:hadPrimarySource
-      - source: bactotraits
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: disbiome
-        relation_type: prov:hadPrimarySource
-      - source: metpo
-        relation_type: prov:hadPrimarySource
-    product_file_size: 12464495186
-    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
-    secondary_source:
-      - source: kg-microbe
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compression: targz
-    description: The core KG KG-Microbe-Core with ontologies, organismal traits, and growth preferences.
-    format: kgx
-    id: kg-microbe.graph.core
-    name: KG-Microbe KGX Graph - Core
-    original_source:
-      - source: envo
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: bacdive
-        relation_type: prov:hadPrimarySource
-      - source: mediadive
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: rhea
-        relation_type: prov:hadPrimarySource
-      - source: ec
-        relation_type: prov:hadPrimarySource
-      - source: bactotraits
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: disbiome
-        relation_type: prov:hadPrimarySource
-      - source: metpo
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-    secondary_source:
-      - source: kg-microbe
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compression: targz
-    description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
-    format: kgx
-    id: kg-microbe.graph.biomedical
-    name: KG-Microbe KGX Graph - Biomedical
-    original_source:
-      - source: envo
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: bacdive
-        relation_type: prov:hadPrimarySource
-      - source: mediadive
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: rhea
-        relation_type: prov:hadPrimarySource
-      - source: ec
-        relation_type: prov:hadPrimarySource
-      - source: bactotraits
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: disbiome
-        relation_type: prov:hadPrimarySource
-      - source: metpo
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-    secondary_source:
-      - source: kg-microbe
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compression: targz
-    description: Core plus Uniprot genome annotations
-    format: kgx
-    id: kg-microbe.graph.function
-    name: KG-Microbe KGX Graph - Function
-    original_source:
-      - source: envo
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: bacdive
-        relation_type: prov:hadPrimarySource
-      - source: mediadive
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: rhea
-        relation_type: prov:hadPrimarySource
-      - source: ec
-        relation_type: prov:hadPrimarySource
-      - source: bactotraits
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: disbiome
-        relation_type: prov:hadPrimarySource
-      - source: metpo
-        relation_type: prov:hadPrimarySource
-    product_file_size: 4623010863
-    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
-    secondary_source:
-      - source: kg-microbe
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compression: targz
-    description: Biomedical plus Uniprot genome annotations
-    format: kgx
-    id: kg-microbe.graph.biomedical-function
-    name: KG-Microbe KGX Graph - Biomedical-Function
-    original_source:
-      - source: envo
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: bacdive
-        relation_type: prov:hadPrimarySource
-      - source: mediadive
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: rhea
-        relation_type: prov:hadPrimarySource
-      - source: ec
-        relation_type: prov:hadPrimarySource
-      - source: bactotraits
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: disbiome
-        relation_type: prov:hadPrimarySource
-      - source: metpo
-        relation_type: prov:hadPrimarySource
-    product_file_size: 4640682152
-    product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
-    secondary_source:
-      - source: kg-microbe
-        relation_type: prov:wasInfluencedBy
+- category: OntologyProduct
+  description: METPO ontology in OWL format
+  format: owl
+  id: metpo.owl
+  is_public: true
+  name: METPO OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metpo
+  product_file_size: 24016
+  product_url: https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl
+- category: GraphProduct
+  compression: targz
+  description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
+  format: kgx
+  id: kg-microbe.graph.raw
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: KG-Microbe KGX Graph - Raw
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  - relation_type: prov:hadPrimarySource
+    source: bactotraits
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kg-microbe
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  - relation_type: prov:hadPrimarySource
+    source: metpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 12464495186
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+- category: GraphProduct
+  compression: targz
+  description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
+    growth preferences.
+  format: kgx
+  id: kg-microbe.graph.core
+  name: KG-Microbe KGX Graph - Core
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  - relation_type: prov:hadPrimarySource
+    source: bactotraits
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kg-microbe
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  - relation_type: prov:hadPrimarySource
+    source: metpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+- category: GraphProduct
+  compression: targz
+  description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
+  format: kgx
+  id: kg-microbe.graph.biomedical
+  name: KG-Microbe KGX Graph - Biomedical
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  - relation_type: prov:hadPrimarySource
+    source: bactotraits
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kg-microbe
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  - relation_type: prov:hadPrimarySource
+    source: metpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+- category: GraphProduct
+  compression: targz
+  description: Core plus Uniprot genome annotations
+  format: kgx
+  id: kg-microbe.graph.function
+  name: KG-Microbe KGX Graph - Function
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  - relation_type: prov:hadPrimarySource
+    source: bactotraits
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kg-microbe
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  - relation_type: prov:hadPrimarySource
+    source: metpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 4623010863
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+- category: GraphProduct
+  compression: targz
+  description: Biomedical plus Uniprot genome annotations
+  format: kgx
+  id: kg-microbe.graph.biomedical-function
+  name: KG-Microbe KGX Graph - Biomedical-Function
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bacdive
+  - relation_type: prov:hadPrimarySource
+    source: bactotraits
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  - relation_type: prov:hadPrimarySource
+    source: ec
+  - relation_type: prov:hadPrimarySource
+    source: envo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: kg-microbe
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  - relation_type: prov:hadPrimarySource
+    source: metpo
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 4640682152
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
 repository: https://github.com/berkeleybop/metpo
 synonyms:
-  - METPO
-  - Microbial Ecophysiological Trait and Phenotype Ontology
+- METPO
+- Microbial Ecophysiological Trait and Phenotype Ontology
 taxon:
-  - NCBITaxon:2
+- NCBITaxon:2
 ---
-
 # METPO
 
 For more information, see the [KG-Microbe project](https://github.com/Knowledge-Graph-Hub/kg-microbe).

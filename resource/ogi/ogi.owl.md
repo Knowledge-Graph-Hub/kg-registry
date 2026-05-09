@@ -4,11 +4,12 @@ description: Ontology for genetic interval in OWL format
 format: owl
 id: ogi.owl
 name: ogi.owl
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: ogi
 product_url: http://purl.obolibrary.org/obo/ogi.owl
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: ogi
-    relation_type: prov:hadPrimarySource
 ---

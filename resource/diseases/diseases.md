@@ -2,23 +2,26 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: qingyao.huang@uzh.ch
-    label: Qingyao Huang
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://jensenlab.org/
-    label: JensenLab
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: qingyao.huang@uzh.ch
+  label: Qingyao Huang
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://jensenlab.org/
+  label: JensenLab
 creation_date: '2025-06-04T00:00:00Z'
-description: DISEASES is a weekly updated database that integrates evidence on disease-gene associations from automatic text mining, manually curated literature, cancer mutation data, and genome-wide association studies. It provides confidence scores to facilitate comparison of different types and sources of evidence.
+description: DISEASES is a weekly updated database that integrates evidence on disease-gene
+  associations from automatic text mining, manually curated literature, cancer mutation
+  data, and genome-wide association studies. It provides confidence scores to facilitate
+  comparison of different types and sources of evidence.
 domains:
-  - health
-  - genomics
-  - biomedical
-  - literature
+- health
+- genomics
+- biomedical
+- literature
 homepage_url: https://diseases.jensenlab.org/
 id: diseases
 infores_id: diseases
@@ -29,1211 +32,1248 @@ license:
   label: CC BY 4.0
 name: DISEASES
 products:
-  - category: GraphicalInterface
-    description: Web search interface for querying human genes and diseases to view integrated evidence from multiple channels
-    format: http
-    id: diseases.portal
-    name: DISEASES Web Search
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-    product_url: https://diseases.jensenlab.org/
-  - category: Product
-    description: Disease-gene associations from text mining channel with z-scores and confidence scores (full dataset)
-    format: tsv
-    id: diseases.textmining-full
-    name: Text Mining Channel (Full)
-    product_file_size: 1920661253
-    product_url: https://download.jensenlab.org/human_disease_textmining_full.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Disease-gene associations from text mining channel with z-scores and confidence scores (filtered non-redundant)
-    format: tsv
-    id: diseases.textmining-filtered
-    name: Text Mining Channel (Filtered)
-    product_file_size: 48652618
-    product_url: https://download.jensenlab.org/human_disease_textmining_filtered.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Disease-gene associations from manually curated knowledge channel with evidence types and confidence scores (full dataset)
-    format: tsv
-    id: diseases.knowledge-full
-    name: Knowledge Channel (Full)
-    product_file_size: 6883980
-    product_url: https://download.jensenlab.org/human_disease_knowledge_full.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Disease-gene associations from manually curated knowledge channel with evidence types and confidence scores (filtered non-redundant)
-    format: tsv
-    id: diseases.knowledge-filtered
-    name: Knowledge Channel (Filtered)
-    product_file_size: 602129
-    product_url: https://download.jensenlab.org/human_disease_knowledge_filtered.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Disease-gene associations from experimental data channel including cancer mutations and GWAS with source scores and confidence scores (full dataset)
-    format: tsv
-    id: diseases.experiments-full
-    name: Experiments Channel (Full)
-    product_file_size: 26901903
-    product_url: https://download.jensenlab.org/human_disease_experiments_full.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Disease-gene associations from experimental data channel including cancer mutations and GWAS with source scores and confidence scores (filtered non-redundant)
-    format: tsv
-    id: diseases.experiments-filtered
-    name: Experiments Channel (Filtered)
-    product_file_size: 2567625
-    product_url: https://download.jensenlab.org/human_disease_experiments_filtered.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Experimental integrated channel combining evidence from all sources (full dataset)
-    format: tsv
-    id: diseases.integrated-full
-    name: Integrated Channel (Full)
-    product_file_size: 648296693
-    product_url: https://download.jensenlab.org/human_disease_integrated_full.tsv
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    compression: targz
-    description: Dictionary of human gene and disease names for the DISEASES tagger
-    id: diseases.dictionary
-    name: DISEASES Dictionary
-    product_file_size: 15984342
-    product_url: https://download.jensenlab.org/diseases_dictionary.tar.gz
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
-    original_source:
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: oncokb
-        relation_type: prov:hadPrimarySource
-      - source: mutationds
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: corum
-        relation_type: prov:hadPrimarySource
-      - source: cancer-genome-interpreter
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: bto
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: mod
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: ms
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: cancer-genome-interpreter.clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
-    original_source:
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: oncokb
-        relation_type: prov:hadPrimarySource
-      - source: mutationds
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: corum
-        relation_type: prov:hadPrimarySource
-      - source: cancer-genome-interpreter
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: bto
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: mod
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: ms
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: pubmed
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pid
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: lincs-l1000
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: civic
-        relation_type: prov:hadPrimarySource
-      - source: gdsc
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: metacyc
-        relation_type: prov:hadPrimarySource
-      - source: bv-brc
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: pathophenodb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: protcid
-        relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: spoke
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: Manually curated disease-gene associations and annotations for amyloidoses and amyloid deposition-related diseases extracted from biomedical literature.
-    id: amyco.annotations
-    name: AmyCo Curated Annotations
-    original_source:
-      - source: pubmed
-        relation_type: prov:hadPrimarySource
-      - source: amyco
-        relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: diseases
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: KGX JSONL graph package for DISEASES distributed via the NCATS Translator release site (release 2026_03_19; build diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6; source version 2026_03_17; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 270546
-    format: kgx-jsonl
-    id: translator.diseases.graph
-    latest_version: '2026_03_19'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator DISEASES KGX Graph
-    node_count: 22024
-    original_source:
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_19'
-      - diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6
-  - category: GraphProduct
-    compression: gzip
-    description: protein network data (full network, scored links between proteins)
-    format: txt
-    id: string.protein.links
-    name: STRING Protein Links
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 138154280240
-    product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: protein network data (full network, incl. subscores per channel)
-    format: txt
-    id: string.protein.links.detailed
-    name: STRING Protein Links Detailed
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 203534412387
-    product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: 'protein network data (full network, incl. distinction: direct vs. interologs)'
-    format: txt
-    id: string.protein.links.full
-    name: STRING Protein Links Full
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 214269334954
-    product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: protein network data (physical subnetwork, scored links between proteins)
-    format: txt
-    id: string.protein.physical.links
-    name: STRING Protein Physical Links
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 11867396121
-    product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: protein network data (physical subnetwork, incl. subscores per channel)
-    format: txt
-    id: string.protein.physical.links.detailed
-    name: STRING Protein Physical Links Detailed
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 14859366689
-    product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: 'protein network data (physical subnetwork, incl. distinction: direct vs. interologs)'
-    format: txt
-    id: string.protein.physical.links.full
-    name: STRING Protein Physical Links Full
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 15528028374
-    product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: association scores between orthologous groups
-    format: txt
-    id: string.cog.links
-    name: STRING COG Links
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 185338269
-    product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: association scores (incl. subscores per channel)
-    format: txt
-    id: string.cog.links.detailed
-    name: STRING COG Links Detailed
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 250279091
-    product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
-  - category: GraphProduct
-    compression: gzip
-    description: 'full database, part II: the networks (nodes, edges, scores,...)'
-    id: string.database
-    name: STRING Database Network Schema
-    original_source:
-      - source: biocyc
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: cog
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: eggnog
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: geo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: pdb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: proteomehd
-        relation_type: prov:hadPrimarySource
-      - source: pubmedcentral
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: simap
-        relation_type: prov:hadPrimarySource
-      - source: smart
-        relation_type: prov:hadPrimarySource
-      - source: swissmodel
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: wormbase
-        relation_type: prov:hadPrimarySource
-      - source: progenomes
-        relation_type: prov:hadPrimarySource
-    product_file_size: 281505096430
-    product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 29243943
-    format: kgx-jsonl
-    id: translator.translator_kg.graph
-    latest_version: '2026_03_27'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator Aggregate KGX Graph
-    node_count: 1696790
-    original_source:
-      - source: alliance
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: ctkp
-        relation_type: prov:hadPrimarySource
-      - source: drug-approvals-kp
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: drugrephub
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: gene2phenotype
-        relation_type: prov:hadPrimarySource
-      - source: geneticskp
-        relation_type: prov:hadPrimarySource
-      - source: go-cam
-        relation_type: prov:hadPrimarySource
-      - source: goa
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: panther
-        relation_type: prov:hadPrimarySource
-      - source: pathbank
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: text-mining-kp
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: ubergraph
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_27'
-      - 423af7989cac
-  - category: GraphProduct
-    description: Graph database dump and additional relationship files for the Clinical Knowledge Graph.
-    format: neo4j
-    id: ckg.graph
-    name: CKG Graph Database Dump
-    original_source:
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: refseq
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: oncokb
-        relation_type: prov:hadPrimarySource
-      - source: mutationds
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: corum
-        relation_type: prov:hadPrimarySource
-      - source: cancer-genome-interpreter
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: bto
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: mod
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: ms
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphicalInterface
+  description: Web search interface for querying human genes and diseases to view
+    integrated evidence from multiple channels
+  format: http
+  id: diseases.portal
+  name: DISEASES Web Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_url: https://diseases.jensenlab.org/
+- category: Product
+  description: Disease-gene associations from text mining channel with z-scores and
+    confidence scores (full dataset)
+  format: tsv
+  id: diseases.textmining-full
+  name: Text Mining Channel (Full)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 1920661253
+  product_url: https://download.jensenlab.org/human_disease_textmining_full.tsv
+- category: Product
+  description: Disease-gene associations from text mining channel with z-scores and
+    confidence scores (filtered non-redundant)
+  format: tsv
+  id: diseases.textmining-filtered
+  name: Text Mining Channel (Filtered)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 48652618
+  product_url: https://download.jensenlab.org/human_disease_textmining_filtered.tsv
+- category: Product
+  description: Disease-gene associations from manually curated knowledge channel with
+    evidence types and confidence scores (full dataset)
+  format: tsv
+  id: diseases.knowledge-full
+  name: Knowledge Channel (Full)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 6883980
+  product_url: https://download.jensenlab.org/human_disease_knowledge_full.tsv
+- category: Product
+  description: Disease-gene associations from manually curated knowledge channel with
+    evidence types and confidence scores (filtered non-redundant)
+  format: tsv
+  id: diseases.knowledge-filtered
+  name: Knowledge Channel (Filtered)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 602129
+  product_url: https://download.jensenlab.org/human_disease_knowledge_filtered.tsv
+- category: Product
+  description: Disease-gene associations from experimental data channel including
+    cancer mutations and GWAS with source scores and confidence scores (full dataset)
+  format: tsv
+  id: diseases.experiments-full
+  name: Experiments Channel (Full)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 26901903
+  product_url: https://download.jensenlab.org/human_disease_experiments_full.tsv
+- category: Product
+  description: Disease-gene associations from experimental data channel including
+    cancer mutations and GWAS with source scores and confidence scores (filtered non-redundant)
+  format: tsv
+  id: diseases.experiments-filtered
+  name: Experiments Channel (Filtered)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 2567625
+  product_url: https://download.jensenlab.org/human_disease_experiments_filtered.tsv
+- category: Product
+  description: Experimental integrated channel combining evidence from all sources
+    (full dataset)
+  format: tsv
+  id: diseases.integrated-full
+  name: Integrated Channel (Full)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 648296693
+  product_url: https://download.jensenlab.org/human_disease_integrated_full.tsv
+- category: Product
+  compression: targz
+  description: Dictionary of human gene and disease names for the DISEASES tagger
+  id: diseases.dictionary
+  name: DISEASES Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  product_file_size: 15984342
+  product_url: https://download.jensenlab.org/diseases_dictionary.tar.gz
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: cancer-genome-interpreter
+  - relation_type: prov:hadPrimarySource
+    source: clinicalkg
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
+    source: ms
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: cancer-genome-interpreter
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: ms
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: metacyc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: protcid
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+- category: Product
+  description: Manually curated disease-gene associations and annotations for amyloidoses
+    and amyloid deposition-related diseases extracted from biomedical literature.
+  id: amyco.annotations
+  name: AmyCo Curated Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: amyco
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: diseases
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for DISEASES distributed via the NCATS Translator
+    release site (release 2026_03_19; build diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6;
+    source version 2026_03_17; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 270546
+  format: kgx-jsonl
+  id: translator.diseases.graph
+  latest_version: '2026_03_19'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator DISEASES KGX Graph
+  node_count: 22024
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
+  versions:
+  - '2026_03_19'
+  - diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (full network, scored links between proteins)
+  format: txt
+  id: string.protein.links
+  name: STRING Protein Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 138154280240
+  product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (full network, incl. subscores per channel)
+  format: txt
+  id: string.protein.links.detailed
+  name: STRING Protein Links Detailed
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 203534412387
+  product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'protein network data (full network, incl. distinction: direct vs.
+    interologs)'
+  format: txt
+  id: string.protein.links.full
+  name: STRING Protein Links Full
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 214269334954
+  product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, scored links between proteins)
+  format: txt
+  id: string.protein.physical.links
+  name: STRING Protein Physical Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 11867396121
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: protein network data (physical subnetwork, incl. subscores per channel)
+  format: txt
+  id: string.protein.physical.links.detailed
+  name: STRING Protein Physical Links Detailed
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 14859366689
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'protein network data (physical subnetwork, incl. distinction: direct
+    vs. interologs)'
+  format: txt
+  id: string.protein.physical.links.full
+  name: STRING Protein Physical Links Full
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 15528028374
+  product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores between orthologous groups
+  format: txt
+  id: string.cog.links
+  name: STRING COG Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 185338269
+  product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: association scores (incl. subscores per channel)
+  format: txt
+  id: string.cog.links.detailed
+  name: STRING COG Links Detailed
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 250279091
+  product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
+- category: GraphProduct
+  compression: gzip
+  description: 'full database, part II: the networks (nodes, edges, scores,...)'
+  id: string.database
+  name: STRING Database Network Schema
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: cog
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: eggnog
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: swissmodel
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_file_size: 281505096430
+  product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: drug-approvals-kp
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: go-cam
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
+- category: GraphProduct
+  description: Graph database dump and additional relationship files for the Clinical
+    Knowledge Graph.
+  format: neo4j
+  id: ckg.graph
+  name: CKG Graph Database Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: cancer-genome-interpreter
+  - relation_type: prov:hadPrimarySource
+    source: ckg
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
+    source: ms
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
-  - id: PMID:35348650
-    preferred: true
-  - id: PMID:25484339
+- id: PMID:35348650
+  preferred: true
+- id: PMID:25484339
 synonyms:
-  - DISEASES Database
-  - JensenLab DISEASES
+- DISEASES Database
+- JensenLab DISEASES
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # DISEASES
 
 ## Overview

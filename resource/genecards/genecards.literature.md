@@ -5,13 +5,15 @@ format: http
 id: genecards.literature
 name: GeneCards Literature References
 original_source:
-  - source: genecards
-    relation_type: prov:hadPrimarySource
-  - source: pubmed
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: genecards
+- relation_type: prov:hadPrimarySource
+  source: pubmed
 product_url: https://www.genecards.org/
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 403 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

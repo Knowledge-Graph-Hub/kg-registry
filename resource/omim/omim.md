@@ -8,9 +8,9 @@ contacts:
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
 creation_date: '2025-06-04T00:00:00Z'
-description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
-  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
-  relationships and the molecular basis of disease.
+description: "OMIM (Online Mendelian Inheritance in Man) is a continuously updated,\
+  \ expert-curated catalog of human genes and genetic disorders, focusing on genotype\u2013\
+  phenotype relationships and the molecular basis of disease."
 domains:
 - biomedical
 - clinical
@@ -69,78 +69,77 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: ncbigene
+    source: bgee
   - relation_type: prov:hadPrimarySource
-    source: pubmed
+    source: bindingdb
   - relation_type: prov:hadPrimarySource
-    source: mesh
+    source: bv-brc
   - relation_type: prov:hadPrimarySource
-    source: pid
+    source: chembl
   - relation_type: prov:hadPrimarySource
-    source: doid
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
     source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: lincs-l1000
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  - relation_type: prov:hadPrimarySource
-    source: bindingdb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: bgee
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: chembl
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: civic
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  - relation_type: prov:hadPrimarySource
-    source: clinicaltrialsgov
-  - relation_type: prov:hadPrimarySource
     source: hpa
   - relation_type: prov:hadPrimarySource
-    source: cl
+    source: interpro
   - relation_type: prov:hadPrimarySource
     source: kegg
   - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
-    source: bv-brc
+    source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
   - relation_type: prov:hadPrimarySource
     source: pathophenodb
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
-    source: interpro
+    source: pid
   - relation_type: prov:hadPrimarySource
     source: protcid
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
     source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
 - category: MappingProduct
   description: MIM to Gene and MedGen mapping data connecting genetic disorders to
     genes
@@ -165,33 +164,32 @@ products:
   node_count: 7603
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: pharmgkb
-  - relation_type: prov:hadPrimarySource
-    source: ttd
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: humannet
-  - relation_type: prov:hadPrimarySource
-    source: ncbigene
-  - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  - relation_type: prov:hadPrimarySource
-    source: gnbr
-  - relation_type: prov:hadPrimarySource
     source: biogps
   - relation_type: prov:hadPrimarySource
     source: connectivitymap
-  product_url: https://zenodo.org/record/4077338
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
     source: pharmkg
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://zenodo.org/record/4077338
 - category: Product
   description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
     NCBI Gene, UniProt and other genomic databases
@@ -200,25 +198,25 @@ products:
   name: GeneCards Gene Annotations
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
     source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
   - relation_type: prov:hadPrimarySource
     source: ncbigene
   - relation_type: prov:hadPrimarySource
-    source: uniprot
+    source: omim
   - relation_type: prov:hadPrimarySource
     source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
     Orphanet, DisGeNET and other disease databases
@@ -227,23 +225,23 @@ products:
   name: GeneCards Disease Associations
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: omim
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: genecards
   - relation_type: prov:hadPrimarySource
     source: malacards
   - relation_type: prov:hadPrimarySource
-    source: clinvar
+    source: omim
   - relation_type: prov:hadPrimarySource
     source: orphanet
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -314,8 +312,6 @@ products:
     source: mesh
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  - relation_type: prov:hadPrimarySource
-    source: unichem
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 1406201678
@@ -391,8 +387,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inchikey
   - relation_type: prov:hadPrimarySource
-    source: unichem
-  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -466,8 +460,6 @@ products:
     source: mesh
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  - relation_type: prov:hadPrimarySource
-    source: unichem
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 2484982268
@@ -543,8 +535,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inchikey
   - relation_type: prov:hadPrimarySource
-    source: unichem
-  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
@@ -578,9 +568,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -596,6 +586,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -610,6 +602,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -619,8 +613,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 138154280240
   product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
 - category: GraphProduct
@@ -653,9 +645,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -671,6 +663,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -685,6 +679,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -694,8 +690,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 203534412387
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
@@ -729,9 +723,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -747,6 +741,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -761,6 +757,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -770,8 +768,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 214269334954
   product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
 - category: GraphProduct
@@ -804,9 +800,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -822,6 +818,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -836,6 +834,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -845,8 +845,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 11867396121
   product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
 - category: GraphProduct
@@ -879,9 +877,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -897,6 +895,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -911,6 +911,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -920,8 +922,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 14859366689
   product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
 - category: GraphProduct
@@ -955,9 +955,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -973,6 +973,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -987,6 +989,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -996,8 +1000,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 15528028374
   product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
 - category: GraphProduct
@@ -1030,9 +1032,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -1048,6 +1050,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -1062,6 +1066,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -1071,8 +1077,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 185338269
   product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
 - category: GraphProduct
@@ -1105,9 +1109,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -1123,6 +1127,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -1137,6 +1143,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -1146,8 +1154,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 250279091
   product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
 - category: GraphProduct
@@ -1179,9 +1185,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
-    source: hprd
-  - relation_type: prov:hadPrimarySource
     source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hprd
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
@@ -1197,6 +1203,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
+    source: progenomes
+  - relation_type: prov:hadPrimarySource
     source: proteomehd
   - relation_type: prov:hadPrimarySource
     source: pubmedcentral
@@ -1211,6 +1219,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: smart
   - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
     source: swissmodel
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -1220,8 +1230,6 @@ products:
     source: wikipathways
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  - relation_type: prov:hadPrimarySource
-    source: progenomes
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 - category: MappingProduct
@@ -1249,21 +1257,20 @@ products:
   name: omim.ps Nodes TSV
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 9568
   product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: obo-db-ingest
 publications:
 - id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
-  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
+  title: "OMIM.org\u2014leveraging knowledge across phenotype\u2013gene relationships"
   year: '2019'
 - id: https://doi.org/10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: OMIM.org—an online catalog of human genes and genetic disorders
+  title: "OMIM.org\u2014an online catalog of human genes and genetic disorders"
   year: '2015'
 taxon:
 - NCBITaxon:9606

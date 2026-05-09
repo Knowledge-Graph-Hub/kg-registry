@@ -2,276 +2,276 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: daniel.himmelstein@gmail.com
-      - contact_type: github
-        value: dhimmel
-    label: Daniel Himmelstein
-description: Hetionet is an integrative network of biomedical knowledge assembled from 29 different databases of genes, compounds, diseases, and more. It combines over 50 years of biomedical information into a single resource.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: daniel.himmelstein@gmail.com
+  - contact_type: github
+    value: dhimmel
+  label: Daniel Himmelstein
+creation_date: '2025-06-24T00:00:00Z'
+description: Hetionet is an integrative network of biomedical knowledge assembled
+  from 29 different databases of genes, compounds, diseases, and more. It combines
+  over 50 years of biomedical information into a single resource.
 domains:
-  - biomedical
-  - drug discovery
-  - genomics
-  - health
-  - biological systems
+- biomedical
+- drug discovery
+- genomics
+- health
+- biological systems
 homepage_url: https://het.io/
 id: hetionet
+infores_id: hetionet
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Hetionet
 products:
-  - category: GraphicalInterface
-    description: Browser for complete Hetionet v1.0 graph database in Neo4j
-    format: http
-    id: hetionet.neo4j
-    name: Hetionet v1.0 Neo4j Database
-    product_url: https://neo4j.het.io/browser/
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Hetionet v1.0 in JSON format
-    format: json
-    id: hetionet.data.json
-    name: Hetionet v1.0 JSON
-    product_file_size: 131
-    product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Hetionet v1.0 as a Neo4j database
-    id: hetionet.data.neo4j
-    name: Hetionet v1.0 Neo4j
-    product_file_size: 132
-    product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Hetionet v1.0 as SIF edges
-    format: sif
-    id: hetionet.data.edges
-    name: Hetionet v1.0 edges (SIF)
-    product_file_size: 131
-    product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Hetionet v1.0 as TSV nodes
-    format: tsv
-    id: hetionet.data.nodes
-    name: Hetionet v1.0 nodes (TSV)
-    product_file_size: 427128
-    product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-  - category: ProcessProduct
-    description: Python package for creating, querying, and operating on hetnets (heterogeneous networks)
-    id: hetnetpy
-    name: hetnetpy
-    product_url: https://github.com/hetio/hetnetpy
-  - category: GraphicalInterface
-    description: Web application to search and explore connectivity between nodes in Hetionet
-    format: http
-    id: hetionet.search
-    name: Hetnet Connectivity Search
-    product_url: https://het.io/search
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: A browser interface for a knowledge graph for Alzheimer's Disease.
-    format: http
-    id: alzkb.browser
-    name: AlzKB Graph Database Browser
-    original_source:
-      - source: aop-db
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: dsstox
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: hrpimp
-        relation_type: prov:hadPrimarySource
-      - source: lincs-l1000
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: pharmacotherapydb
-        relation_type: prov:hadPrimarySource
-      - source: pid
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-    product_url: https://alzkb.ai:7473/login
-    secondary_source:
-      - source: alzkb
-        relation_type: prov:wasInfluencedBy
-      - source: hetionet
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Memgraph data release for AlzKB.
-    id: alzkb.data
-    name: AlzKB Data Release (Version 2.0.0)
-    original_source:
-      - source: aop-db
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: dsstox
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: hrpimp
-        relation_type: prov:hadPrimarySource
-      - source: lincs-l1000
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: pharmacotherapydb
-        relation_type: prov:hadPrimarySource
-      - source: pid
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-    secondary_source:
-      - source: alzkb
-        relation_type: prov:wasInfluencedBy
-      - source: hetionet
-        relation_type: prov:wasInfluencedBy
-  - description: The MechRepoNet knowledge graph in its original format
-    id: mechreponet.kg
-    name: MechRepoNet Knowledge Graph
-    original_source:
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: pr
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-      - source: complexportal
-        relation_type: prov:hadPrimarySource
-      - source: rnacentral
-        relation_type: prov:hadPrimarySource
-      - source: mirtarbase
-        relation_type: prov:hadPrimarySource
-      - source: unii
-        relation_type: prov:hadPrimarySource
-      - source: biolink
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-    secondary_source:
-      - source: mechreponet
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Hetio Automat
-    format: kgx-jsonl
-    id: automat.hetio
-    name: hetio_automat
-    original_source:
-      - source: hetionet
-        relation_type: prov:hadPrimarySource
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/Hetio_Automat/85a5f53e63150e1e/
-    secondary_source:
-      - source: automat
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Browser for complete Hetionet v1.0 graph database in Neo4j
+  format: http
+  id: hetionet.neo4j
+  name: Hetionet v1.0 Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_url: https://neo4j.het.io/browser/
+- category: GraphProduct
+  description: Hetionet v1.0 in JSON format
+  format: json
+  id: hetionet.data.json
+  name: Hetionet v1.0 JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_file_size: 131
+  product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
+- category: GraphProduct
+  description: Hetionet v1.0 as a Neo4j database
+  id: hetionet.data.neo4j
+  name: Hetionet v1.0 Neo4j
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_file_size: 132
+  product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
+- category: GraphProduct
+  description: Hetionet v1.0 as SIF edges
+  format: sif
+  id: hetionet.data.edges
+  name: Hetionet v1.0 edges (SIF)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_file_size: 131
+  product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
+- category: GraphProduct
+  description: Hetionet v1.0 as TSV nodes
+  format: tsv
+  id: hetionet.data.nodes
+  name: Hetionet v1.0 nodes (TSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_file_size: 427128
+  product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
+- category: ProcessProduct
+  description: Python package for creating, querying, and operating on hetnets (heterogeneous
+    networks)
+  id: hetnetpy
+  name: hetnetpy
+  product_url: https://github.com/hetio/hetnetpy
+- category: GraphicalInterface
+  description: Web application to search and explore connectivity between nodes in
+    Hetionet
+  format: http
+  id: hetionet.search
+  name: Hetnet Connectivity Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_url: https://het.io/search
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
+  - relation_type: prov:hadPrimarySource
+    source: aop-db
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dsstox
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
+  - relation_type: prov:hadPrimarySource
+    source: aop-db
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: dsstox
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: hetionet
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biolink
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: complexportal
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: mechreponet
+  - relation_type: prov:hadPrimarySource
+    source: mirtarbase
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+- category: GraphProduct
+  description: Hetio Automat
+  format: kgx-jsonl
+  id: automat.hetio
+  name: hetio_automat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/Hetio_Automat/85a5f53e63150e1e/
 publications:
-  - authors:
-      - Daniel S Himmelstein
-      - Michael Zietz
-      - Vincent Rubinetti
-      - Kyle Kloster
-      - Benjamin J Heil
-      - Faisal Alquaddoomi
-      - Dongbo Hu
-      - David N Nicholson
-      - Yun Hao
-      - Blair D Sullivan
-      - Michael W Nagle
-      - Casey S Greene
-    doi: doi:10.1093/gigascience/giad047
-    id: https://doi.org/10.1093/gigascience/giad047
-    journal: GigaScience
-    title: Hetnet connectivity search provides rapid insights into how biomedical entities are related
-    year: '2023'
+- authors:
+  - Daniel S Himmelstein
+  - Michael Zietz
+  - Vincent Rubinetti
+  - Kyle Kloster
+  - Benjamin J Heil
+  - Faisal Alquaddoomi
+  - Dongbo Hu
+  - David N Nicholson
+  - Yun Hao
+  - Blair D Sullivan
+  - Michael W Nagle
+  - Casey S Greene
+  doi: doi:10.1093/gigascience/giad047
+  id: https://doi.org/10.1093/gigascience/giad047
+  journal: GigaScience
+  title: Hetnet connectivity search provides rapid insights into how biomedical entities
+    are related
+  year: '2023'
 repository: https://github.com/hetio/hetionet
-infores_id: hetionet
 taxon:
-  - NCBITaxon:9606
-creation_date: '2025-06-24T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+- NCBITaxon:9606
 ---
-
 # Hetionet
 
 Hetionet is a heterogeneous information network (hetnet) of biomedical knowledge. It integrates data from 29 public databases into a single network, containing 47,031 nodes of 11 types and 2,250,197 edges of 24 types. The network unifies information on genes, compounds, diseases, anatomy, biological processes, molecular functions, cellular components, pathways, pharmacologic classes, side effects, and symptoms.

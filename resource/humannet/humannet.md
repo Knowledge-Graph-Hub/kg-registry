@@ -2,96 +2,102 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.inetbio.org/humannet/
-    label: INetBio
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.inetbio.org/humannet/
+  label: INetBio
 creation_date: '2025-11-05T00:00:00Z'
-description: HumanNet is a probabilistic functional gene network for Homo sapiens that integrates genomic and proteomic data from multiple sources to predict functional relationships between genes. The network uses a modified Bayesian integration approach to combine evidence from diverse data types including protein-protein interactions, gene co-expression, phylogenetic profiling, and literature mining. HumanNet provides confidence scores for gene-gene functional linkages and can be used for gene function prediction, disease gene prioritization, and pathway analysis.
+description: HumanNet is a probabilistic functional gene network for Homo sapiens
+  that integrates genomic and proteomic data from multiple sources to predict functional
+  relationships between genes. The network uses a modified Bayesian integration approach
+  to combine evidence from diverse data types including protein-protein interactions,
+  gene co-expression, phylogenetic profiling, and literature mining. HumanNet provides
+  confidence scores for gene-gene functional linkages and can be used for gene function
+  prediction, disease gene prioritization, and pathway analysis.
 domains:
-  - genomics
-  - systems biology
-  - biomedical
-  - biological systems
+- genomics
+- systems biology
+- biomedical
+- biological systems
 homepage_url: https://www.inetbio.org/humannet/
 id: humannet
 last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: HumanNet
 products:
-  - category: GraphicalInterface
-    description: Web interface for querying and visualizing the HumanNet functional gene network
-    format: http
-    id: humannet.web
-    name: HumanNet Web Interface
-    original_source:
-      - source: humannet
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.inetbio.org/humannet/
-  - category: GraphProduct
-    description: Downloadable functional gene network with confidence scores
-    format: tsv
-    id: humannet.network
-    name: HumanNet Network File
-    original_source:
-      - source: humannet
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.inetbio.org/humannet/download.php
-    warnings: []
-  - category: ProgrammingInterface
-    description: API for programmatic access to HumanNet data
-    format: http
-    id: humannet.api
-    name: HumanNet API
-    original_source:
-      - source: humannet
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.inetbio.org/humannet/
-  - category: GraphProduct
-    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
-    edge_count: 500958
-    id: pharmkg.graph
-    name: PharmKG graph
-    node_count: 7603
-    original_source:
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: pharmgkb
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: humannet
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: gnbr
-        relation_type: prov:hadPrimarySource
-      - source: biogps
-        relation_type: prov:hadPrimarySource
-      - source: connectivitymap
-        relation_type: prov:hadPrimarySource
-    product_url: https://zenodo.org/record/4077338
-    secondary_source:
-      - source: pharmkg
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Web interface for querying and visualizing the HumanNet functional
+    gene network
+  format: http
+  id: humannet.web
+  name: HumanNet Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_url: https://www.inetbio.org/humannet/
+- category: GraphProduct
+  description: Downloadable functional gene network with confidence scores
+  format: tsv
+  id: humannet.network
+  name: HumanNet Network File
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_url: https://www.inetbio.org/humannet/download.php
+  warnings: []
+- category: ProgrammingInterface
+  description: API for programmatic access to HumanNet data
+  format: http
+  id: humannet.api
+  name: HumanNet API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_url: https://www.inetbio.org/humannet/
+- category: GraphProduct
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
+  edge_count: 500958
+  id: pharmkg.graph
+  name: PharmKG graph
+  node_count: 7603
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: connectivitymap
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharmkg
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://zenodo.org/record/4077338
 publications:
-  - id: https://doi.org/10.1093/nar/gky1126
+- id: https://doi.org/10.1093/nar/gky1126
 synonyms:
-  - HumanNet
-  - humannet
+- HumanNet
+- humannet
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # HumanNet
 
 ## Overview

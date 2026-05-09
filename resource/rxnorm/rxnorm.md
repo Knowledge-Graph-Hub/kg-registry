@@ -2,20 +2,36 @@
 activity_status: active
 category: DataSource
 collection:
-  - omop
+- omop
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: rxnorminfo@nlm.nih.gov
-      - contact_type: url
-        value: https://www.nlm.nih.gov/research/umls/rxnorm/
-    id: ncbi
-    label: National Library of Medicine
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: rxnorminfo@nlm.nih.gov
+  - contact_type: url
+    value: https://www.nlm.nih.gov/research/umls/rxnorm/
+  id: ncbi
+  label: National Library of Medicine
 creation_date: '2025-11-08T00:00:00Z'
-description: RxNorm is the National Library of Medicine's standardized nomenclature for clinical drugs, providing normalized names and unique concept identifiers (RxCUIs) for medications. Developed to support interoperability between healthcare systems, RxNorm links its standardized drug names to the vocabularies commonly used in pharmacy management and drug interaction software, including First Databank, Micromedex, Multum, and Gold Standard Drug Database. By providing links between these diverse vocabularies, RxNorm enables seamless communication between systems that do not use the same software or terminology. RxNorm organizes drug information into a hierarchy of term types representing different levels of specificity, from ingredients through clinical drug components to specific branded and generic products. The nomenclature covers prescription drugs, over-the-counter medications, and now includes the United States Pharmacopeia Compendial Nomenclature containing all Active Pharmaceutical Ingredients. RxNorm is updated monthly with new drug products, revisions to existing entries, and retirement of obsolete terms to maintain currency with the evolving pharmaceutical landscape. The system supports multiple use cases including electronic health records, e-prescribing, pharmacy management systems, drug interaction checking, clinical decision support, and public health surveillance.
+description: RxNorm is the National Library of Medicine's standardized nomenclature
+  for clinical drugs, providing normalized names and unique concept identifiers (RxCUIs)
+  for medications. Developed to support interoperability between healthcare systems,
+  RxNorm links its standardized drug names to the vocabularies commonly used in pharmacy
+  management and drug interaction software, including First Databank, Micromedex,
+  Multum, and Gold Standard Drug Database. By providing links between these diverse
+  vocabularies, RxNorm enables seamless communication between systems that do not
+  use the same software or terminology. RxNorm organizes drug information into a hierarchy
+  of term types representing different levels of specificity, from ingredients through
+  clinical drug components to specific branded and generic products. The nomenclature
+  covers prescription drugs, over-the-counter medications, and now includes the United
+  States Pharmacopeia Compendial Nomenclature containing all Active Pharmaceutical
+  Ingredients. RxNorm is updated monthly with new drug products, revisions to existing
+  entries, and retirement of obsolete terms to maintain currency with the evolving
+  pharmaceutical landscape. The system supports multiple use cases including electronic
+  health records, e-prescribing, pharmacy management systems, drug interaction checking,
+  clinical decision support, and public health surveillance.
 domains:
-  - health
+- health
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/
 id: rxnorm
 infores_id: rxnorm
@@ -23,117 +39,123 @@ last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: RxNorm
 products:
-  - category: Product
-    description: Monthly releases of RxNorm data files in multiple formats including RRF files for the full vocabulary and relationships
-    format: http
-    id: rxnorm.data_files
-    name: RxNorm Data Files
-    original_source:
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html
-  - category: ProgrammingInterface
-    description: RESTful web services providing programmatic access to RxNorm drug terminology data including drug names, identifiers, relationships, and properties
-    format: http
-    id: rxnorm.api
-    is_public: true
-    name: RxNorm API
-    original_source:
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-    product_url: https://rxnav.nlm.nih.gov/RxNormAPIs.html
-  - category: GraphicalInterface
-    description: Interactive web browser for searching and exploring RxNorm drug concepts, relationships, and properties with multiple viewing options
-    format: http
-    id: rxnorm.rxnav
-    is_public: true
-    name: RxNav Browser
-    original_source:
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-    product_url: https://mor.nlm.nih.gov/RxNav/
-  - category: GraphicalInterface
-    description: Tool for exploring drug class hierarchies and finding RxNorm drug members associated with each class from multiple classification systems
-    format: http
-    id: rxnorm.rxclass
-    is_public: true
-    name: RxClass
-    original_source:
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-    product_url: https://mor.nlm.nih.gov/RxClass/
-  - category: ProgrammingInterface
-    description: Interactive tool allowing users to combine multiple API functions to build custom drug information applications
-    format: http
-    id: rxnorm.rxmix
-    is_public: true
-    name: RxMix
-    original_source:
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-    product_url: https://mor.nlm.nih.gov/RxMix/
-  - category: Product
-    description: Locally installable package containing RxNav, RxClass, RxMix tools and RESTful APIs for offline use
-    format: http
-    id: rxnorm.rxnav_in_a_box
-    name: RxNav-in-a-Box
-    original_source:
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-    product_url: https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html
-  - category: Product
-    description: VANDF data integrated into RxNorm
-    id: ndfrt.rxnorm
-    name: VANDF in RxNorm
-    original_source:
-      - source: ndfrt
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
-    secondary_source:
-      - source: rxnorm
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: Downloadable standardized vocabulary bundles for OMOP CDM assembled through the authenticated Athena web application
-    format: csv
-    id: athena.vocabularies
-    name: Athena Vocabulary Downloads
-    original_source:
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: icd10
-        relation_type: prov:hadPrimarySource
-      - source: icd10cm
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: loinc
-        relation_type: prov:hadPrimarySource
-      - source: cdiscvocab
-        relation_type: prov:hadPrimarySource
-      - source: ciel
-        relation_type: prov:hadPrimarySource
-      - source: rxnorm
-        relation_type: prov:hadPrimarySource
-      - source: ndcd
-        relation_type: prov:hadPrimarySource
-      - source: gemscript
-        relation_type: prov:hadPrimarySource
-      - source: medispan-gpi
-        relation_type: prov:hadPrimarySource
-    product_url: https://athena.ohdsi.org/vocabulary/list
-    secondary_source:
-      - source: athena
-        relation_type: prov:wasInfluencedBy
-    warnings:
-      - Athena vocabulary downloads are prepared through the logged-in web application; stable direct public file URLs are not exposed.
+- category: Product
+  description: Monthly releases of RxNorm data files in multiple formats including
+    RRF files for the full vocabulary and relationships
+  format: http
+  id: rxnorm.data_files
+  name: RxNorm Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  product_url: https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html
+- category: ProgrammingInterface
+  description: RESTful web services providing programmatic access to RxNorm drug terminology
+    data including drug names, identifiers, relationships, and properties
+  format: http
+  id: rxnorm.api
+  is_public: true
+  name: RxNorm API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  product_url: https://rxnav.nlm.nih.gov/RxNormAPIs.html
+- category: GraphicalInterface
+  description: Interactive web browser for searching and exploring RxNorm drug concepts,
+    relationships, and properties with multiple viewing options
+  format: http
+  id: rxnorm.rxnav
+  is_public: true
+  name: RxNav Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  product_url: https://mor.nlm.nih.gov/RxNav/
+- category: GraphicalInterface
+  description: Tool for exploring drug class hierarchies and finding RxNorm drug members
+    associated with each class from multiple classification systems
+  format: http
+  id: rxnorm.rxclass
+  is_public: true
+  name: RxClass
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  product_url: https://mor.nlm.nih.gov/RxClass/
+- category: ProgrammingInterface
+  description: Interactive tool allowing users to combine multiple API functions to
+    build custom drug information applications
+  format: http
+  id: rxnorm.rxmix
+  is_public: true
+  name: RxMix
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  product_url: https://mor.nlm.nih.gov/RxMix/
+- category: Product
+  description: Locally installable package containing RxNav, RxClass, RxMix tools
+    and RESTful APIs for offline use
+  format: http
+  id: rxnorm.rxnav_in_a_box
+  name: RxNav-in-a-Box
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  product_url: https://lhncbc.nlm.nih.gov/RxNav/applications/RxNav-in-a-Box.html
+- category: Product
+  description: VANDF data integrated into RxNorm
+  id: ndfrt.rxnorm
+  name: VANDF in RxNorm
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ndfrt
+  product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: rxnorm
+- category: Product
+  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
+    through the authenticated Athena web application
+  format: csv
+  id: athena.vocabularies
+  name: Athena Vocabulary Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: athena
+  - relation_type: prov:hadPrimarySource
+    source: cdiscvocab
+  - relation_type: prov:hadPrimarySource
+    source: ciel
+  - relation_type: prov:hadPrimarySource
+    source: gemscript
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: icd10cm
+  - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: medispan-gpi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ndcd
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  product_url: https://athena.ohdsi.org/vocabulary/list
+  warnings:
+  - Athena vocabulary downloads are prepared through the logged-in web application;
+    stable direct public file URLs are not exposed.
 publications:
-  - category: Publication
-    id: PMID:21515544
-    preferred: true
+- category: Publication
+  id: PMID:21515544
+  preferred: true
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # RxNorm
 
 ## Overview

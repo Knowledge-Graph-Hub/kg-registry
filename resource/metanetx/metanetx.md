@@ -2,19 +2,21 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: help@metanetx.org
-      - contact_type: url
-        value: https://www.metanetx.org/
-    id: sib
-    label: MetaNetX Team - SIB Swiss Institute of Bioinformatics
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: help@metanetx.org
+  - contact_type: url
+    value: https://www.metanetx.org/
+  id: sib
+  label: MetaNetX Team - SIB Swiss Institute of Bioinformatics
 creation_date: '2025-05-07T00:00:00Z'
-description: MetaNetX is an online platform for accessing, analyzing, and manipulating genome-scale metabolic networks (GSM) and biochemical pathways, integrating data from multiple sources with a unified namespace for metabolites and biochemical reactions.
+description: MetaNetX is an online platform for accessing, analyzing, and manipulating
+  genome-scale metabolic networks (GSM) and biochemical pathways, integrating data
+  from multiple sources with a unified namespace for metabolites and biochemical reactions.
 domains:
-  - biological systems
-  - chemistry and biochemistry
+- biological systems
+- chemistry and biochemistry
 homepage_url: https://www.metanetx.org/
 id: metanetx
 last_modified_date: '2026-02-20T00:00:00Z'
@@ -24,110 +26,117 @@ license:
   label: CC-BY-4.0
 name: MetaNetX
 products:
-  - category: GraphicalInterface
-    description: Web interface for exploring and analyzing metabolic networks
-    id: metanetx.site
-    is_public: true
-    name: MetaNetX Web Interface
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: metanetx
-    product_url: https://www.metanetx.org/
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for querying MetaNetX RDF data
-    id: metanetx.sparql
-    is_public: true
-    name: MetaNetX SPARQL Endpoint
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: metanetx
-    product_url: https://rdf.metanetx.org/
-  - category: Product
-    description: MNXref unified namespace for metabolites across databases
-    format: tsv
-    id: metanetx.mnxref.metabolites
-    name: MetaNetX MNXref Metabolites
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: metanetx
-    product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
-    warnings:
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when accessing file
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-10: Timeout connecting to URL'
-      - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length header found'
-  - category: Product
-    description: MNXref unified namespace for reactions across databases
-    format: tsv
-    id: metanetx.mnxref.reactions
-    name: MetaNetX MNXref Reactions
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: metanetx
-    product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
-    warnings:
-      - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length header found
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length header found'
-  - category: Product
-    compression: gzip
-    description: RDF version of the MetaNetX data for semantic web applications
-    format: ttl
-    id: metanetx.rdf
-    name: MetaNetX RDF Data
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: metanetx
-    product_file_size: 237044998
-    product_url: https://www.metanetx.org/ftp/latest/metanetx.ttl.gz
+- category: GraphicalInterface
+  description: Web interface for exploring and analyzing metabolic networks
+  id: metanetx.site
+  is_public: true
+  name: MetaNetX Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metanetx
+  product_url: https://www.metanetx.org/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for querying MetaNetX RDF data
+  id: metanetx.sparql
+  is_public: true
+  name: MetaNetX SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metanetx
+  product_url: https://rdf.metanetx.org/
+- category: Product
+  description: MNXref unified namespace for metabolites across databases
+  format: tsv
+  id: metanetx.mnxref.metabolites
+  name: MetaNetX MNXref Metabolites
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metanetx
+  product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-10: Timeout connecting
+    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2026-02-20_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
+    accessing file
+- category: Product
+  description: MNXref unified namespace for reactions across databases
+  format: tsv
+  id: metanetx.mnxref.reactions
+  name: MetaNetX MNXref Reactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metanetx
+  product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
+    header found'
+  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+    header found
+- category: Product
+  compression: gzip
+  description: RDF version of the MetaNetX data for semantic web applications
+  format: ttl
+  id: metanetx.rdf
+  name: MetaNetX RDF Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metanetx
+  product_file_size: 237044998
+  product_url: https://www.metanetx.org/ftp/latest/metanetx.ttl.gz
 publications:
-  - authors:
-      - Moretti S
-      - Tran VDT
-      - Mehl F
-      - Ibberson M
-      - Pagni M
-    doi: doi:10.1093/nar/gkaa992
-    id: doi:10.1093/nar/gkaa992
-    preferred: true
-    title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions in the context of metabolic models
-    year: '2021'
-  - authors:
-      - Moretti S
-      - Martin O
-      - Tran VDT
-      - Bridge A
-      - Morgat A
-      - Pagni M
-    doi: doi:10.1093/nar/gkv1117
-    id: doi:10.1093/nar/gkv1117
-    title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions to bring together genome-scale metabolic networks
-    year: '2016'
-  - authors:
-      - Ganter M
-      - Bernard T
-      - Moretti S
-      - Stelling J
-      - Pagni M
-    doi: doi:10.1093/bioinformatics/btt036
-    id: doi:10.1093/bioinformatics/btt036
-    title: MetaNetX.org - a website and repository for accessing, analysing and manipulating metabolic networks
-    year: '2013'
-  - authors:
-      - Bernard T
-      - Bridge A
-      - Morgat A
-      - Moretti S
-      - Xenarios I
-      - Pagni M
-    doi: doi:10.1093/bib/bbs058
-    id: doi:10.1093/bib/bbs058
-    title: Reconciliation of metabolites and biochemical reactions for metabolic networks
-    year: '2014'
+- authors:
+  - Moretti S
+  - Tran VDT
+  - Mehl F
+  - Ibberson M
+  - Pagni M
+  doi: doi:10.1093/nar/gkaa992
+  id: doi:10.1093/nar/gkaa992
+  preferred: true
+  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions
+    in the context of metabolic models
+  year: '2021'
+- authors:
+  - Moretti S
+  - Martin O
+  - Tran VDT
+  - Bridge A
+  - Morgat A
+  - Pagni M
+  doi: doi:10.1093/nar/gkv1117
+  id: doi:10.1093/nar/gkv1117
+  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions
+    to bring together genome-scale metabolic networks
+  year: '2016'
+- authors:
+  - Ganter M
+  - Bernard T
+  - Moretti S
+  - Stelling J
+  - Pagni M
+  doi: doi:10.1093/bioinformatics/btt036
+  id: doi:10.1093/bioinformatics/btt036
+  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating
+    metabolic networks
+  year: '2013'
+- authors:
+  - Bernard T
+  - Bridge A
+  - Morgat A
+  - Moretti S
+  - Xenarios I
+  - Pagni M
+  doi: doi:10.1093/bib/bbs058
+  id: doi:10.1093/bib/bbs058
+  title: Reconciliation of metabolites and biochemical reactions for metabolic networks
+  year: '2014'
 ---
-
 MetaNetX is a comprehensive platform for accessing, analyzing, and manipulating genome-scale metabolic networks (GSMs) and biochemical pathways. Its primary focus is providing a unified namespace for metabolites and biochemical reactions in the context of metabolic models.
 
 Key features of MetaNetX include:

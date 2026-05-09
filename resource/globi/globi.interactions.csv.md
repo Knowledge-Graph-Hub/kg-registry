@@ -5,14 +5,18 @@ description: Comma-separated integrated species interaction pairs (interpreted n
 format: csv
 id: globi.interactions.csv
 name: GloBI interpreted interactions (CSV)
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: globi
 product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-  - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: globi
-    relation_type: prov:hadPrimarySource
 ---

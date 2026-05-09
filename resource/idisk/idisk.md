@@ -2,77 +2,85 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: url
-        value: https://github.com/zhang-informatics
-    label: Rui Zhang
+- category: Individual
+  contact_details:
+  - contact_type: url
+    value: https://github.com/zhang-informatics
+  label: Rui Zhang
 creation_date: '2025-10-30T00:00:00Z'
-description: The integrated DIetary Supplements Knowledge base (iDISK) is a standardized knowledge base integrating dietary supplement information from multiple authoritative sources including ingredients, products, drug interactions, effectiveness, adverse effects, and therapeutic uses, represented according to established terminology principles with UMLS and MedDRA mappings.
+description: The integrated DIetary Supplements Knowledge base (iDISK) is a standardized
+  knowledge base integrating dietary supplement information from multiple authoritative
+  sources including ingredients, products, drug interactions, effectiveness, adverse
+  effects, and therapeutic uses, represented according to established terminology
+  principles with UMLS and MedDRA mappings.
 domains:
-  - nutrition
-  - biomedical
-  - health
-  - pharmacology
+- nutrition
+- biomedical
+- health
+- pharmacology
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk
 infores_id: idisk
 last_modified_date: '2026-04-16T00:00:00Z'
+layout: resource_detail
 license:
   id: https://conservancy.umn.edu/handle/11299/204783
   label: Varies
-layout: resource_detail
 name: integrated Dietary Supplement Knowledge Base
 products:
-  - category: GraphProduct
-    description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing and integrating information from diverse biomedical resources including DRKG, iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome, SIDER, and others).
-    id: ibkh.graph
-    name: iBKH Knowledge Graph
-    original_source:
-      - source: drkg
-        relation_type: prov:hadPrimarySource
-      - source: idisk
-        relation_type: prov:hadPrimarySource
-      - source: brenda
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: pharmgkb
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
+    and integrating information from diverse biomedical resources including DRKG,
+    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
+    SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: brenda
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drkg
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ibkh
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uberon
 publications:
-  - id: doi:10.1093/jamia/ocz216
-    preferred: true
-    title: 'iDISK: the integrated DIetary Supplements Knowledge base'
-    year: '2020'
+- id: doi:10.1093/jamia/ocz216
+  preferred: true
+  title: 'iDISK: the integrated DIetary Supplements Knowledge base'
+  year: '2020'
 repository: https://github.com/zhang-informatics/iDISK
 synonyms:
-  - iDISK
+- iDISK
 ---
-
 # integrated Dietary Supplement Knowledge Base (iDISK)
 
 ## Overview

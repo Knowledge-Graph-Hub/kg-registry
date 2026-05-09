@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: georgeta.bordea@u-bordeaux.fr
-      - contact_type: github
-        value: getbordea
-    label: Georgeta Bordea
-    orcid: 0000-0001-9921-8234
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: georgeta.bordea@u-bordeaux.fr
+  - contact_type: github
+    value: getbordea
+  label: Georgeta Bordea
+  orcid: 0000-0001-9921-8234
 creation_date: '2025-09-29T00:00:00Z'
 description: Food-Drug interactions automatically extracted from scientific literature
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://gitub.u-bordeaux.fr/erias/fideo
 id: fideo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,22 +26,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Food Interactions with Drugs Evidence Ontology
 products:
-  - category: OntologyProduct
-    description: Food Interactions with Drugs Evidence Ontology in OWL format
-    format: owl
-    id: fideo.owl
-    name: fideo.owl
-    product_url: http://purl.obolibrary.org/obo/fideo.owl
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length header found'
-    original_source:
-      - source: fideo
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Food Interactions with Drugs Evidence Ontology in OWL format
+  format: owl
+  id: fideo.owl
+  name: fideo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: fideo
+  product_url: http://purl.obolibrary.org/obo/fideo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
+    header found'
 publications: []
 repository: https://gitub.u-bordeaux.fr/erias/fideo
 ---
-
 ## Description
 
 Food-Drug interactions automatically extracted from scientific literature

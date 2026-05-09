@@ -1,168 +1,170 @@
 ---
 activity_status: active
 category: DataSource
-description: UK Biobank is a large-scale biomedical database and research resource containing genetic, lifestyle and health information from half a million UK participants, designed to improve the prevention, diagnosis and treatment of a wide range of serious and life-threatening illnesses.
+creation_date: '2025-06-27T00:00:00Z'
+description: UK Biobank is a large-scale biomedical database and research resource
+  containing genetic, lifestyle and health information from half a million UK participants,
+  designed to improve the prevention, diagnosis and treatment of a wide range of serious
+  and life-threatening illnesses.
 domains:
-  - biomedical
-  - genomics
-  - health
-  - clinical
-  - phenotype
+- biomedical
+- genomics
+- health
+- clinical
+- phenotype
 homepage_url: https://www.ukbiobank.ac.uk/
 id: ukbiobank
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ukbiobank.ac.uk/terms-and-conditions/
   label: UK Biobank Data Access Agreement
 name: UK Biobank
 products:
-  - category: GraphicalInterface
-    description: The UK Biobank Data Showcase provides summary statistics of all UK Biobank data and allows researchers to identify variables for inclusion in research applications.
-    format: http
-    id: ukbiobank.showcase
-    name: UK Biobank Data Showcase
-    product_url: https://biobank.ndph.ox.ac.uk/showcase/
-    original_source:
-      - source: ukbiobank
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
-    id: disgenet.data
-    name: DisGeNET Data
-    original_source:
-      - source: clingen
-        relation_type: prov:hadPrimarySource
-      - source: clinvar
-        relation_type: prov:hadPrimarySource
-      - source: mgd
-        relation_type: prov:hadPrimarySource
-      - source: rgd
-        relation_type: prov:hadPrimarySource
-      - source: orphanet
-        relation_type: prov:hadPrimarySource
-      - source: psygenet
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: phewascat
-        relation_type: prov:hadPrimarySource
-      - source: ukbiobank
-        relation_type: prov:hadPrimarySource
-      - source: finngen
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.disgenet.com/
-    secondary_source:
-      - source: disgenet
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)
-    format: neo4j
-    id: epigraphdb.graph
-    name: EpiGraphDB Graph Database
-    original_source:
-      - source: epigraphdb
-        relation_type: prov:hadPrimarySource
-      - source: kg-monarch
-        relation_type: prov:hadPrimarySource
-      - source: vectology
-        relation_type: prov:hadPrimarySource
-      - source: ukbiobank
-        relation_type: prov:hadPrimarySource
-      - source: prsatlas
-        relation_type: prov:hadPrimarySource
-      - source: eqtlgen
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: cpic
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: mrbase
-        relation_type: prov:hadPrimarySource
-    product_url: https://docs.epigraphdb.org/graph-database/
-    secondary_source:
-      - source: epigraphdb
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: The UK Biobank Data Showcase provides summary statistics of all UK
+    Biobank data and allows researchers to identify variables for inclusion in research
+    applications.
+  format: http
+  id: ukbiobank.showcase
+  name: UK Biobank Data Showcase
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  product_url: https://biobank.ndph.ox.ac.uk/showcase/
+- category: GraphProduct
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: mgd
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: psygenet
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: phewascat
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: finngen
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://www.disgenet.com/
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: epigraphdb
+  - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
+    source: vectology
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  - relation_type: prov:hadPrimarySource
+    source: eqtlgen
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: cpic
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
 publications:
-  - authors:
-      - Clare Bycroft
-      - Colin Freeman
-      - Desislava Petkova
-      - Gavin Band
-      - Lloyd T. Elliott
-      - Kevin Sharp
-      - Allan Motyer
-      - Damjan Vukcevic
-      - Olivier Delaneau
-      - Jared O'Connell
-      - Adrian Cortes
-      - Samantha Welsh
-      - Alan Young
-      - Mark Effingham
-      - Gil McVean
-      - Stephen Leslie
-      - Naomi Allen
-      - Peter Donnelly
-      - Jonathan Marchini
-    doi: 10.1038/s41586-018-0579-z
-    id: doi:10.1038/s41586-018-0579-z
-    journal: Nature
-    title: The UK Biobank resource with deep phenotyping and genomic data
-    year: '2018'
-  - authors:
-      - Cathie Sudlow
-      - John Gallacher
-      - Naomi Allen
-      - Valerie Beral
-      - Paul Burton
-      - John Danesh
-      - Paul Downey
-      - Paul Elliott
-      - Jane Green
-      - Martin Landray
-      - Bette Liu
-      - Paul Matthews
-      - Giok Ong
-      - Jill Pell
-      - Alan Silman
-      - Alan Young
-      - Tim Sprosen
-      - Tim Peakman
-      - Rory Collins
-    doi: 10.1371/journal.pmed.1001779
-    id: doi:10.1371/journal.pmed.1001779
-    journal: PLOS Medicine
-    title: 'UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age'
-    year: '2015'
+- authors:
+  - Clare Bycroft
+  - Colin Freeman
+  - Desislava Petkova
+  - Gavin Band
+  - Lloyd T. Elliott
+  - Kevin Sharp
+  - Allan Motyer
+  - Damjan Vukcevic
+  - Olivier Delaneau
+  - Jared O'Connell
+  - Adrian Cortes
+  - Samantha Welsh
+  - Alan Young
+  - Mark Effingham
+  - Gil McVean
+  - Stephen Leslie
+  - Naomi Allen
+  - Peter Donnelly
+  - Jonathan Marchini
+  doi: 10.1038/s41586-018-0579-z
+  id: doi:10.1038/s41586-018-0579-z
+  journal: Nature
+  title: The UK Biobank resource with deep phenotyping and genomic data
+  year: '2018'
+- authors:
+  - Cathie Sudlow
+  - John Gallacher
+  - Naomi Allen
+  - Valerie Beral
+  - Paul Burton
+  - John Danesh
+  - Paul Downey
+  - Paul Elliott
+  - Jane Green
+  - Martin Landray
+  - Bette Liu
+  - Paul Matthews
+  - Giok Ong
+  - Jill Pell
+  - Alan Silman
+  - Alan Young
+  - Tim Sprosen
+  - Tim Peakman
+  - Rory Collins
+  doi: 10.1371/journal.pmed.1001779
+  id: doi:10.1371/journal.pmed.1001779
+  journal: PLOS Medicine
+  title: 'UK Biobank: An Open Access Resource for Identifying the Causes of a Wide
+    Range of Complex Diseases of Middle and Old Age'
+  year: '2015'
 taxon:
-  - NCBITaxon:9606
-creation_date: '2025-06-27T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+- NCBITaxon:9606
 ---
-
 # UK Biobank
 
 UK Biobank is a large-scale biomedical database and research resource, containing in-depth genetic and health information from half a million UK participants. The database is regularly augmented with additional data and is globally accessible to approved researchers undertaking vital research into the most common and life-threatening diseases.

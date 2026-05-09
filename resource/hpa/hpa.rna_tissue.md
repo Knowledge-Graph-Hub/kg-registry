@@ -4,13 +4,16 @@ description: RNA expression data in human tissues based on transcriptomic analys
 format: tsv
 id: hpa.rna_tissue
 name: HPA RNA Tissue Expression Data
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: hpa
 product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
+  to URL
 layout: product_detail
-original_source:
-  - source: hpa
-    relation_type: prov:hadPrimarySource
 ---

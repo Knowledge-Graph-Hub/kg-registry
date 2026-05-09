@@ -2,67 +2,71 @@
 activity_status: active
 category: Ontology
 creation_date: '2025-12-11T00:00:00Z'
-description: ChemOnt (Chemical Ontology) is a comprehensive chemical ontology that provides a hierarchical classification of chemical entities. It is designed to support chemical informatics applications and enable semantic integration of chemical data across biomedical systems. ChemOnt is developed and maintained by the Wishart Lab and integrates chemical structures with ontological classifications.
+description: ChemOnt (Chemical Ontology) is a comprehensive chemical ontology that
+  provides a hierarchical classification of chemical entities. It is designed to support
+  chemical informatics applications and enable semantic integration of chemical data
+  across biomedical systems. ChemOnt is developed and maintained by the Wishart Lab
+  and integrates chemical structures with ontological classifications.
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: http://classyfire.wishartlab.com/
 id: chemont
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: ChemOnt
 products:
-  - category: GraphicalInterface
-    description: ClassyFire web interface for chemical classification and ontology exploration
-    id: chemont.classyfire
-    name: ClassyFire Web Interface
-    product_url: http://classyfire.wishartlab.com/
-    original_source:
-      - source: chemont
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: ChemOnt OBO format ontology file (version 2.1)
-    format: obo
-    id: chemont.obo
-    name: ChemOnt OBO Ontology
-    product_file_size: 307900
-    product_url: http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zip
-    original_source:
-      - source: chemont
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Downloadable knowledge graph dump in TAR/GZ format containing complete FORUM data
-    id: forum.graph.dump
-    name: FORUM Knowledge Graph Dump
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: mesh
-      - relation_type: prov:hadPrimarySource
-        source: chebi
-      - relation_type: prov:hadPrimarySource
-        source: cito
-      - relation_type: prov:hadPrimarySource
-        source: fabio
-      - relation_type: prov:hadPrimarySource
-        source: dc
-      - relation_type: prov:hadPrimarySource
-        source: cheminf
-      - relation_type: prov:hadPrimarySource
-        source: skos
-      - relation_type: prov:hadPrimarySource
-        source: chemont
-      - relation_type: prov:hadPrimarySource
-        source: pubchem
-      - relation_type: prov:hadPrimarySource
-        source: pubmed
-    product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-    secondary_source:
-      - relation_type: prov:wasInfluencedBy
-        source: forum
-    warnings:
-      - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed out
-      - 'File was not able to be retrieved when checked on 2026-05-04: FTP error: timed out'
-      - 'File was not able to be retrieved when checked on 2026-05-09: FTP error: timed out'
+- category: GraphicalInterface
+  description: ClassyFire web interface for chemical classification and ontology exploration
+  id: chemont.classyfire
+  name: ClassyFire Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chemont
+  product_url: http://classyfire.wishartlab.com/
+- category: OntologyProduct
+  description: ChemOnt OBO format ontology file (version 2.1)
+  format: obo
+  id: chemont.obo
+  name: ChemOnt OBO Ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chemont
+  product_file_size: 307900
+  product_url: http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zip
+- category: GraphProduct
+  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
+    FORUM data
+  id: forum.graph.dump
+  name: FORUM Knowledge Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cheminf
+  - relation_type: prov:hadPrimarySource
+    source: chemont
+  - relation_type: prov:hadPrimarySource
+    source: cito
+  - relation_type: prov:hadPrimarySource
+    source: dc
+  - relation_type: prov:hadPrimarySource
+    source: fabio
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: skos
+  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: FTP error: timed
+    out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 repository: https://github.com/wishartlab/chemontology
 ---
-
 ChemOnt

@@ -2,51 +2,52 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-05T00:00:00Z'
-description: CoralKinome is a comprehensive resource for coral kinase sequences and annotations, providing phylogenetic and functional information about protein kinases in coral species to support coral biology research and conservation efforts.
+description: CoralKinome is a comprehensive resource for coral kinase sequences and
+  annotations, providing phylogenetic and functional information about protein kinases
+  in coral species to support coral biology research and conservation efforts.
 domains:
-  - genomics
-  - systems biology
-id: "coralkinome"
+- genomics
+- systems biology
 homepage_url: https://www.coralkinome.org/
+id: coralkinome
 last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: CoralKinome
-synonyms:
-  - CoralKinome
-  - Coral Kinome Database
 products:
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
-    format: http
-    id: "kinace.portal"
-    name: KinAce Web Portal
-    original_source:
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: iptmnet
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: epsd
-        relation_type: prov:hadPrimarySource
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
-      - source: coralkinome
-        relation_type: prov:hadPrimarySource
-      - source: darkkinasekb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-    product_url: https://kinace.kinametrix.com/
-    secondary_source:
-      - source: kinace
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: epsd
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: kinace
+  - relation_type: prov:hadPrimarySource
+    source: kinhub
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://kinace.kinametrix.com/
+synonyms:
+- CoralKinome
+- Coral Kinome Database
 ---
-
 # CoralKinome
 
 ## Overview

@@ -1,18 +1,39 @@
 ---
 category: DocumentationProduct
-description: Detailed information about TGIRT-Seq data processing and experimental methods
+description: Detailed information about TGIRT-Seq data processing and experimental
+  methods
 format: http
 id: snodb.experiment-details
 name: Experiment Details
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: snodb
 product_url: https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/experiment_details/
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ Error connecting to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_ Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-04-15_ Error connecting to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_ Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_ Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_ Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting to URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_ Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+- File was not able to be retrieved when checked on 2026-05-09_ Error connecting to
+  URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
+  Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1000)')))
+- File was not able to be retrieved when checked on 2026-04-15_ Error connecting to
+  URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
+  Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1028)')))
+- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+  URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
+  Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1028)')))
+- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
+  URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
+  Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1000)')))
+- File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
+  URL_ HTTPSConnectionPool(host='bioinfo-scottgroup.med.usherbrooke.ca', port=443)_
+  Max retries exceeded with url_ /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
+  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+  issuer certificate (_ssl.c_1017)')))
 layout: product_detail
-original_source:
-  - source: snodb
-    relation_type: prov:hadPrimarySource
 ---

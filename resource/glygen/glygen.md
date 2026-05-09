@@ -2,98 +2,98 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://glygen.org/contact-us/
-    label: GlyGen Team
-description: GlyGen is an integrated, data-driven resource for glycoproteins, glycans, and carbohydrate-active enzymes, providing researchers with comprehensive, high-quality data on glycobiology.
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://glygen.org/contact-us/
+  label: GlyGen Team
+creation_date: '2025-05-04T00:00:00Z'
+description: GlyGen is an integrated, data-driven resource for glycoproteins, glycans,
+  and carbohydrate-active enzymes, providing researchers with comprehensive, high-quality
+  data on glycobiology.
 domains:
-  - chemistry and biochemistry
-  - biological systems
+- chemistry and biochemistry
+- biological systems
 homepage_url: https://glygen.org/
 id: glygen
+last_modified_date: '2025-08-06T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: GlyGen
 products:
-  - category: GraphicalInterface
-    description: Web interface for exploring GlyGen data
-    id: glygen.site
-    is_public: true
-    name: GlyGen Website
-    original_source:
-      - source: glygen
-        relation_type: prov:hadPrimarySource
-    product_url: https://glygen.org/
-  - category: ProgrammingInterface
-    description: RESTful API for accessing GlyGen data
-    id: glygen.api
-    is_public: true
-    name: GlyGen API
-    original_source:
-      - source: glygen
-        relation_type: prov:hadPrimarySource
-    product_url: https://api.glygen.org/
-  - category: GraphicalInterface
-    description: Interface for searching GlyGen protein and glycan data
-    format: csv
-    id: glygen.data.site
-    name: GlyGen Data Downloads
-    original_source:
-      - source: glygen
-        relation_type: prov:hadPrimarySource
-    product_url: https://data.glygen.org/
-  - category: GraphProduct
-    compression: zip
-    description: Nodes from GlyGen Biomarker Database
-    format: csv
-    id: biomarkerkg.nodes.biomarker
-    name: BKG Biomarker Nodes
-    original_source:
-      - source: glygen
-        relation_type: prov:hadPrimarySource
-    product_file_size: 1252064
-    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
-    secondary_source:
-      - source: biomarkerkg
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Web interface for exploring GlyGen data
+  id: glygen.site
+  is_public: true
+  name: GlyGen Website
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  product_url: https://glygen.org/
+- category: ProgrammingInterface
+  description: RESTful API for accessing GlyGen data
+  id: glygen.api
+  is_public: true
+  name: GlyGen API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  product_url: https://api.glygen.org/
+- category: GraphicalInterface
+  description: Interface for searching GlyGen protein and glycan data
+  format: csv
+  id: glygen.data.site
+  name: GlyGen Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  product_url: https://data.glygen.org/
+- category: GraphProduct
+  compression: zip
+  description: Nodes from GlyGen Biomarker Database
+  format: csv
+  id: biomarkerkg.nodes.biomarker
+  name: BKG Biomarker Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomarkerkg
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  product_file_size: 1252064
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
 publications:
-  - authors:
-      - Kahsay R
-      - Vora J
-      - Navelkar R
-      - Mousavi R
-      - Bittremieux W
-      - Bakker H
-      - Moremen K
-      - Ten F
-      - Abrahams D
-      - Campbell M
-      - Glushka J
-      - Ranzinger R
-      - York W
-      - Haslam S
-      - Dell A
-      - Packer N
-      - Bourne P
-      - Azadi P
-      - Aoki-Kinoshita K
-      - Lisacek F
-      - Tiemeyer M
-      - Neelamegham S
-    doi: doi:10.1093/glycob/cwaa085
-    id: doi:10.1093/glycob/cwaa085
-    preferred: true
-    title: GlyGen - Computational and informatics resources for glycoscience
-    year: '2020'
+- authors:
+  - Kahsay R
+  - Vora J
+  - Navelkar R
+  - Mousavi R
+  - Bittremieux W
+  - Bakker H
+  - Moremen K
+  - Ten F
+  - Abrahams D
+  - Campbell M
+  - Glushka J
+  - Ranzinger R
+  - York W
+  - Haslam S
+  - Dell A
+  - Packer N
+  - Bourne P
+  - Azadi P
+  - Aoki-Kinoshita K
+  - Lisacek F
+  - Tiemeyer M
+  - Neelamegham S
+  doi: doi:10.1093/glycob/cwaa085
+  id: doi:10.1093/glycob/cwaa085
+  preferred: true
+  title: GlyGen - Computational and informatics resources for glycoscience
+  year: '2020'
 repository: https://github.com/glygener/glygen-backend-api
-creation_date: '2025-05-04T00:00:00Z'
-last_modified_date: '2025-08-06T00:00:00Z'
 ---
-
 GlyGen is a data integration and dissemination project for carbohydrate and glycoconjugate related data. It provides researchers with a comprehensive, integrated, and unified resource for glycan and glycoprotein information, bringing together data from multiple international data sources and partners.
 
 The database integrates information from multiple sources, including:

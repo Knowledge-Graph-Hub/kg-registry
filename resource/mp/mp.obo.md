@@ -4,11 +4,12 @@ description: A direct translation of the MP (OWL edition) into OBO format.
 format: obo
 id: mp.obo
 name: MP (OBO edition)
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: mp
 product_url: http://purl.obolibrary.org/obo/mp.obo
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
+- File was not able to be retrieved when checked on 2026-05-09_ No Content-Length
+  header found
 layout: product_detail
-original_source:
-  - source: mp
-    relation_type: prov:hadPrimarySource
 ---

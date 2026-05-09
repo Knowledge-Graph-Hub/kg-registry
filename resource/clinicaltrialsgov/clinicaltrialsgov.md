@@ -101,78 +101,77 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: ncbigene
+    source: bgee
   - relation_type: prov:hadPrimarySource
-    source: pubmed
+    source: bindingdb
   - relation_type: prov:hadPrimarySource
-    source: mesh
+    source: bv-brc
   - relation_type: prov:hadPrimarySource
-    source: pid
+    source: chembl
   - relation_type: prov:hadPrimarySource
-    source: doid
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
     source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: lincs-l1000
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  - relation_type: prov:hadPrimarySource
-    source: bindingdb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: bgee
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: chembl
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: civic
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  - relation_type: prov:hadPrimarySource
-    source: clinicaltrialsgov
-  - relation_type: prov:hadPrimarySource
     source: hpa
   - relation_type: prov:hadPrimarySource
-    source: cl
+    source: interpro
   - relation_type: prov:hadPrimarySource
     source: kegg
   - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
-    source: bv-brc
+    source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
   - relation_type: prov:hadPrimarySource
     source: pathophenodb
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
-    source: interpro
+    source: pid
   - relation_type: prov:hadPrimarySource
     source: protcid
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
     source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -208,9 +207,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   product_url: https://www.disgenet.com/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: disgenet
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -249,9 +245,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: indra
   product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: indra
 - category: Product
   description: Complete RepoDB dataset containing drug repositioning successes and
     failures, with approved drugs, indications, and clinical trial outcomes
@@ -260,21 +253,21 @@ products:
   name: RepoDB Full Dataset
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: clinicaltrialsgov
+    source: repodb
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http
@@ -283,14 +276,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: genecards
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial
     data, accessible via standard PostgreSQL clients
@@ -298,6 +291,8 @@ products:
   id: aact.database
   name: AACT Cloud Database
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   product_url: https://aact.ctti-clinicaltrials.org/connect
@@ -307,6 +302,8 @@ products:
   id: aact.downloads
   name: AACT Database Downloads
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   product_url: https://aact.ctti-clinicaltrials.org/downloads

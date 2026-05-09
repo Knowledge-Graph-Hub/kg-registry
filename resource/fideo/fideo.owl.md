@@ -4,11 +4,12 @@ description: Food Interactions with Drugs Evidence Ontology in OWL format
 format: owl
 id: fideo.owl
 name: fideo.owl
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: fideo
 product_url: http://purl.obolibrary.org/obo/fideo.owl
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
+- File was not able to be retrieved when checked on 2026-05-09_ No Content-Length
+  header found
 layout: product_detail
-original_source:
-  - source: fideo
-    relation_type: prov:hadPrimarySource
 ---

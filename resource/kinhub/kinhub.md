@@ -2,86 +2,90 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-05T00:00:00Z'
-description: A comprehensive resource for human protein kinases featuring KinMap, an interactive web-based tool for visualizing and annotating the human kinome tree, integrating biochemical, structural, and disease association data with a unified naming scheme
+description: A comprehensive resource for human protein kinases featuring KinMap,
+  an interactive web-based tool for visualizing and annotating the human kinome tree,
+  integrating biochemical, structural, and disease association data with a unified
+  naming scheme
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: http://www.kinhub.org/
 id: kinhub
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: KinHub
-synonyms:
-  - Human Kinase Hub
-  - Human Protein Kinases Hub
 products:
-  - id: kinhub.portal
-    name: KinHub Portal
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.kinhub.org/
-    description: Main portal providing resources and tools for human protein kinases
-    original_source:
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
-  - id: kinhub.kinmap
-    name: KinMap
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.kinhub.org/kinmap/index.html
-    description: Interactive web-based tool for navigating and annotating the human kinome tree with biochemical, structural, and disease data
-    original_source:
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
-  - id: kinhub.kinases-list
-    name: Human Protein Kinases List
-    category: Product
-    format: http
-    product_url: http://www.kinhub.org/kinases.html
-    description: Comprehensive list of human protein kinases with unified naming scheme
-    original_source:
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
-    format: http
-    id: kinace.portal
-    name: KinAce Web Portal
-    original_source:
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: iptmnet
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: epsd
-        relation_type: prov:hadPrimarySource
-      - source: kinhub
-        relation_type: prov:hadPrimarySource
-      - source: coralkinome
-        relation_type: prov:hadPrimarySource
-      - source: darkkinasekb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-    product_url: https://kinace.kinametrix.com/
-    secondary_source:
-      - source: kinace
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Main portal providing resources and tools for human protein kinases
+  format: http
+  id: kinhub.portal
+  name: KinHub Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kinhub
+  product_url: http://www.kinhub.org/
+- category: GraphicalInterface
+  description: Interactive web-based tool for navigating and annotating the human
+    kinome tree with biochemical, structural, and disease data
+  format: http
+  id: kinhub.kinmap
+  name: KinMap
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kinhub
+  product_url: http://www.kinhub.org/kinmap/index.html
+- category: Product
+  description: Comprehensive list of human protein kinases with unified naming scheme
+  format: http
+  id: kinhub.kinases-list
+  name: Human Protein Kinases List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kinhub
+  product_url: http://www.kinhub.org/kinases.html
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: darkkinasekb
+  - relation_type: prov:hadPrimarySource
+    source: epsd
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: kinace
+  - relation_type: prov:hadPrimarySource
+    source: kinhub
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://kinace.kinametrix.com/
 publications:
-  - id: eid2017kinmap
-    preferred: true
-    title: 'KinMap: a web-based tool for interactive navigation through human kinome data'
-    doi: 10.1186/s12859-016-1433-7
-    year: '2017'
+- doi: 10.1186/s12859-016-1433-7
+  id: eid2017kinmap
+  preferred: true
+  title: 'KinMap: a web-based tool for interactive navigation through human kinome
+    data'
+  year: '2017'
+synonyms:
+- Human Kinase Hub
+- Human Protein Kinases Hub
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 ## KinHub
 
 KinHub is a comprehensive web-based resource for human protein kinases, centered around KinMap, an interactive visualization tool for the human kinome tree. The resource integrates data from multiple freely-available sources including ChEMBL, the Protein Data Bank, and the Center for Therapeutic Target Validation platform.

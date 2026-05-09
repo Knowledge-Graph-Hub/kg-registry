@@ -4,14 +4,18 @@ description: Downloads page with file format specifications and field descriptio
 format: http
 id: tarbase.downloads-doc
 name: Downloads Documentation
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: tarbase
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-04-22_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-04-22_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: tarbase
-    relation_type: prov:hadPrimarySource
 ---

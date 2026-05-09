@@ -1,17 +1,22 @@
 ---
 category: Product
-description: Pathology data including cancer tissue expression and patient survival information
+description: Pathology data including cancer tissue expression and patient survival
+  information
 format: tsv
 id: hpa.pathology
 name: HPA Pathology Data
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: hpa
 product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: hpa
-    relation_type: prov:hadPrimarySource
 ---

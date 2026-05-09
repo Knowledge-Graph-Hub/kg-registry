@@ -68,78 +68,77 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: ncbigene
+    source: bgee
   - relation_type: prov:hadPrimarySource
-    source: pubmed
+    source: bindingdb
   - relation_type: prov:hadPrimarySource
-    source: mesh
+    source: bv-brc
   - relation_type: prov:hadPrimarySource
-    source: pid
+    source: chembl
   - relation_type: prov:hadPrimarySource
-    source: doid
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
     source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: lincs-l1000
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  - relation_type: prov:hadPrimarySource
-    source: bindingdb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: bgee
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: chembl
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: civic
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  - relation_type: prov:hadPrimarySource
-    source: clinicaltrialsgov
-  - relation_type: prov:hadPrimarySource
     source: hpa
   - relation_type: prov:hadPrimarySource
-    source: cl
+    source: interpro
   - relation_type: prov:hadPrimarySource
     source: kegg
   - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
-    source: bv-brc
+    source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
   - relation_type: prov:hadPrimarySource
     source: pathophenodb
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
-    source: interpro
+    source: pid
   - relation_type: prov:hadPrimarySource
     source: protcid
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
     source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -184,9 +183,6 @@ products:
     source: semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -231,9 +227,6 @@ products:
     source: semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -279,15 +272,14 @@ products:
   - relation_type: prov:hadPrimarySource
     source: semmeddb
   product_url: https://arax.ncats.io/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: rtx-kg2
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
   id: alzkb.browser
   name: AlzKB Graph Database Browser
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
   - relation_type: prov:hadPrimarySource
     source: aop-db
   - relation_type: prov:hadPrimarySource
@@ -331,14 +323,14 @@ products:
   product_url: https://alzkb.ai:7473/login
   secondary_source:
   - relation_type: prov:wasInfluencedBy
-    source: alzkb
-  - relation_type: prov:wasInfluencedBy
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
   - relation_type: prov:hadPrimarySource
     source: aop-db
   - relation_type: prov:hadPrimarySource
@@ -372,8 +364,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
     source: sider
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -384,8 +374,6 @@ products:
   product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
   secondary_source:
   - relation_type: prov:wasInfluencedBy
-    source: alzkb
-  - relation_type: prov:wasInfluencedBy
     source: hetionet
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -394,83 +382,82 @@ products:
   name: Bioteque Embeddings
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  - relation_type: prov:hadPrimarySource
     source: achilles
   - relation_type: prov:hadPrimarySource
-    source: depmap
+    source: bioteque
+  - relation_type: prov:hadPrimarySource
+    source: bto
   - relation_type: prov:hadPrimarySource
     source: ccle
   - relation_type: prov:hadPrimarySource
-    source: gdsc
-  - relation_type: prov:hadPrimarySource
     source: cellosaurus
   - relation_type: prov:hadPrimarySource
-    source: clue
-  - relation_type: prov:hadPrimarySource
-    source: ctd
-  - relation_type: prov:hadPrimarySource
-    source: pharmacodb
-  - relation_type: prov:hadPrimarySource
-    source: prism
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: lincs
-  - relation_type: prov:hadPrimarySource
-    source: compartments
-  - relation_type: prov:hadPrimarySource
-    source: offsides
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: drugcentral
-  - relation_type: prov:hadPrimarySource
-    source: repohub
+    source: chebi
   - relation_type: prov:hadPrimarySource
     source: chemicalchecker
   - relation_type: prov:hadPrimarySource
-    source: repodb
+    source: clue
   - relation_type: prov:hadPrimarySource
-    source: disgenet
+    source: compartments
   - relation_type: prov:hadPrimarySource
-    source: opentargets
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
   - relation_type: prov:hadPrimarySource
     source: creeds
   - relation_type: prov:hadPrimarySource
-    source: interpro
+    source: ctd
   - relation_type: prov:hadPrimarySource
-    source: reactome
+    source: depmap
   - relation_type: prov:hadPrimarySource
-    source: tissues
+    source: disgenet
   - relation_type: prov:hadPrimarySource
     source: dorothea
   - relation_type: prov:hadPrimarySource
-    source: progeny
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: go
   - relation_type: prov:hadPrimarySource
     source: gtex
   - relation_type: prov:hadPrimarySource
     source: hpa
   - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: corum
-  - relation_type: prov:hadPrimarySource
     source: huri
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: offsides
+  - relation_type: prov:hadPrimarySource
     source: omnipath
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: progeny
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: sider
   - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
-    source: bto
+    source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: bioteque
 - category: GraphProduct
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
     chemicals, and diseases
@@ -480,33 +467,32 @@ products:
   node_count: 7603
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: pharmgkb
-  - relation_type: prov:hadPrimarySource
-    source: ttd
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: humannet
-  - relation_type: prov:hadPrimarySource
-    source: ncbigene
-  - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  - relation_type: prov:hadPrimarySource
-    source: gnbr
-  - relation_type: prov:hadPrimarySource
     source: biogps
   - relation_type: prov:hadPrimarySource
     source: connectivitymap
-  product_url: https://zenodo.org/record/4077338
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
     source: pharmkg
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://zenodo.org/record/4077338
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -518,73 +504,75 @@ products:
   node_count: 16000000
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: tissues
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: stitch
-  - relation_type: prov:hadPrimarySource
-    source: smpdb
-  - relation_type: prov:hadPrimarySource
-    source: signor
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: refseq
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
-    source: pfam
-  - relation_type: prov:hadPrimarySource
-    source: oncokb
-  - relation_type: prov:hadPrimarySource
-    source: mutationds
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: hpa
-  - relation_type: prov:hadPrimarySource
-    source: hmdb
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: diseases
-  - relation_type: prov:hadPrimarySource
-    source: dgidb
-  - relation_type: prov:hadPrimarySource
-    source: corum
+    source: bto
   - relation_type: prov:hadPrimarySource
     source: cancer-genome-interpreter
   - relation_type: prov:hadPrimarySource
+    source: clinicalkg
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
     source: doid
   - relation_type: prov:hadPrimarySource
-    source: bto
+    source: drugbank
   - relation_type: prov:hadPrimarySource
     source: efo
   - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
-    source: snomedct
+    source: hpa
   - relation_type: prov:hadPrimarySource
-    source: mod
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: mi
   - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
     source: ms
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
@@ -592,8 +580,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -601,27 +589,29 @@ products:
   name: DrugMechDB Graph Dataset
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: go
+    source: chebi
   - relation_type: prov:hadPrimarySource
     source: cl
   - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
     source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugmechdb
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: pr
+    source: mesh
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
-    source: hp
+    source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://doi.org/10.5281/zenodo.8139357
@@ -642,41 +632,40 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chebi
   - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ncbigene
-  - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: ncit
+    source: drugbank
   - relation_type: prov:hadPrimarySource
     source: efo
   - relation_type: prov:hadPrimarySource
-    source: uniprot
+    source: eupathdb
   - relation_type: prov:hadPrimarySource
-    source: rhea
-  - relation_type: prov:hadPrimarySource
-    source: pr
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: panther
+    source: go
   - relation_type: prov:hadPrimarySource
     source: hgnc
   - relation_type: prov:hadPrimarySource
-    source: drugbank
+    source: mesh
   - relation_type: prov:hadPrimarySource
-    source: eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
     source: microbiomekg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://multiomics.transltr.io/mbkp
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -766,17 +755,17 @@ products:
   name: GeneCards Pharmacogenomics Data
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: pharmgkb
-  - relation_type: prov:hadPrimarySource
     source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -786,15 +775,29 @@ products:
   name: iBKH Knowledge Graph
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: drkg
-  - relation_type: prov:hadPrimarySource
-    source: idisk
+    source: bgee
   - relation_type: prov:hadPrimarySource
     source: brenda
   - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
     source: ctd
   - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drkg
+  - relation_type: prov:hadPrimarySource
     source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ibkh
+  - relation_type: prov:hadPrimarySource
+    source: idisk
   - relation_type: prov:hadPrimarySource
     source: kegg
   - relation_type: prov:hadPrimarySource
@@ -806,19 +809,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   - relation_type: prov:hadPrimarySource
-    source: bgee
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
     source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: chembl
-  - relation_type: prov:hadPrimarySource
-    source: chebi
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -889,8 +880,6 @@ products:
     source: mesh
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  - relation_type: prov:hadPrimarySource
-    source: unichem
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 1406201678
@@ -966,8 +955,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inchikey
   - relation_type: prov:hadPrimarySource
-    source: unichem
-  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 591290539
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
@@ -1041,8 +1028,6 @@ products:
     source: mesh
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  - relation_type: prov:hadPrimarySource
-    source: unichem
   - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 2484982268
@@ -1118,8 +1103,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: inchikey
   - relation_type: prov:hadPrimarySource
-    source: unichem
-  - relation_type: prov:hadPrimarySource
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
@@ -1131,73 +1114,75 @@ products:
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: tissues
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: stitch
-  - relation_type: prov:hadPrimarySource
-    source: smpdb
-  - relation_type: prov:hadPrimarySource
-    source: signor
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: refseq
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
-    source: pfam
-  - relation_type: prov:hadPrimarySource
-    source: oncokb
-  - relation_type: prov:hadPrimarySource
-    source: mutationds
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: hpa
-  - relation_type: prov:hadPrimarySource
-    source: hmdb
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: diseases
-  - relation_type: prov:hadPrimarySource
-    source: dgidb
-  - relation_type: prov:hadPrimarySource
-    source: corum
+    source: bto
   - relation_type: prov:hadPrimarySource
     source: cancer-genome-interpreter
   - relation_type: prov:hadPrimarySource
+    source: ckg
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
     source: doid
   - relation_type: prov:hadPrimarySource
-    source: bto
+    source: drugbank
   - relation_type: prov:hadPrimarySource
     source: efo
   - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
-    source: snomedct
+    source: hpa
   - relation_type: prov:hadPrimarySource
-    source: mod
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: mi
   - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
     source: ms
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1

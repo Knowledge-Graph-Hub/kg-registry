@@ -2,34 +2,44 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: zhangyintao@zju.edu.cn
-    label: Feng Zhu
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://idrblab.org/ttd/
-    label: College of Pharmaceutical Sciences, Zhejiang University
-  - category: Individual
-    contact_details:
-      - contact_type: url
-        value: https://bidd.group/index.html#people
-    label: Yuzong Chen
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://bidd.group/index.html#people
-    label: Department of Pharmacy, National University of Singapore
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: zhangyintao@zju.edu.cn
+  label: Feng Zhu
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://idrblab.org/ttd/
+  label: College of Pharmaceutical Sciences, Zhejiang University
+- category: Individual
+  contact_details:
+  - contact_type: url
+    value: https://bidd.group/index.html#people
+  label: Yuzong Chen
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://bidd.group/index.html#people
+  label: Department of Pharmacy, National University of Singapore
 creation_date: '2025-10-29T00:00:00Z'
-description: 'The Therapeutic Target Database (TTD) is a comprehensive aggregator providing information about known and explored therapeutic protein and nucleic acid targets, targeted diseases, pathway information, and corresponding drugs directed at these targets. TTD 2024 includes extensive druggability information across three perspectives: molecular interactions/regulations, human system profiles, and cell-based expression variations. The database encompasses 3,730 targets (including 532 successful, 1,442 clinical trial, 239 preclinical/patented, and 1,517 literature-reported targets) and 39,862 drugs, with druggability characteristics covering ligand-specific binding pockets, protein-protein interaction networks, microbiota-drug regulations, target similarity profiles, pathway involvements, tissue distributions, and cell-based expression variations across different diseases and perturbations.'
+description: 'The Therapeutic Target Database (TTD) is a comprehensive aggregator
+  providing information about known and explored therapeutic protein and nucleic acid
+  targets, targeted diseases, pathway information, and corresponding drugs directed
+  at these targets. TTD 2024 includes extensive druggability information across three
+  perspectives: molecular interactions/regulations, human system profiles, and cell-based
+  expression variations. The database encompasses 3,730 targets (including 532 successful,
+  1,442 clinical trial, 239 preclinical/patented, and 1,517 literature-reported targets)
+  and 39,862 drugs, with druggability characteristics covering ligand-specific binding
+  pockets, protein-protein interaction networks, microbiota-drug regulations, target
+  similarity profiles, pathway involvements, tissue distributions, and cell-based
+  expression variations across different diseases and perturbations.'
 domains:
-  - biomedical
-  - drug discovery
-  - genomics
-  - proteomics
-  - pharmacology
+- biomedical
+- drug discovery
+- genomics
+- proteomics
+- pharmacology
 homepage_url: https://idrblab.org/ttd/
 id: ttd
 infores_id: ttd
@@ -40,381 +50,414 @@ license:
   label: Freely accessible for research and educational purposes
 name: Therapeutic Target Database
 products:
-  - category: GraphicalInterface
-    description: Main web portal for browsing and searching TTD targets, drugs, biomarkers, and pathways
-    format: http
-    id: ttd.portal
-    name: TTD Web Portal
-    product_url: https://idrblab.org/ttd/
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Raw format target information including all TTD target data
-    format: txt
-    id: ttd.targets-raw
-    name: TTD Targets Information
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Raw format drug information including all TTD drug data
-    format: txt
-    id: ttd.drugs-raw
-    name: TTD Drug Information
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-02-TTD_drug_download.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Cross-matching identifiers between TTD drugs and public databases
-    format: txt
-    id: ttd.crossmatch
-    name: Cross-matching Drug IDs
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-03-Drug_xrefs.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Synonyms of drugs and small molecules in TTD
-    format: txt
-    id: ttd.synonyms
-    name: Drug Synonyms
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-30_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Drug to disease mapping with ICD identifiers
-    format: txt
-    id: ttd.drug-disease
-    name: Drug-Disease Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-30_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Target to disease mapping with ICD identifiers
-    format: txt
-    id: ttd.target-disease
-    name: Target-Disease Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Target to drug mapping with mode of action information
-    format: csv
-    id: ttd.target-drug
-    name: Target-Drug Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Biomarker to disease mapping with ICD identifiers
-    format: txt
-    id: ttd.biomarker-disease
-    name: Biomarker-Disease Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Target to compound mapping with experimental activity data
-    format: txt
-    id: ttd.target-compound
-    name: Target-Compound Activity Data
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: UniProt IDs for all targets in TTD
-    format: txt
-    id: ttd.uniprot-all
-    name: All Target UniProt IDs
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-  - category: Product
-    description: Sequence data for all targets in FASTA format
-    format: fasta
-    id: ttd.sequences-all
-    name: All Target Sequences
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Structure data for all drugs in SDF format
-    format: sdf
-    id: ttd.structures-all
-    name: All Drug Structures
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: SMILES and InChI representations for approved drugs
-    format: txt
-    id: ttd.smiles-inchi
-    name: Drug SMILES and InChI
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-06-Drug_SMILE_InChI.txt
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: KEGG pathway data for all targets
-    format: txt
-    id: ttd.kegg-pathways
-    name: Target KEGG Pathways
-    original_source:
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-  - category: Product
-    description: WikiPathways data for all targets
-    format: txt
-    id: ttd.wiki-pathways
-    name: Target WikiPathways
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
-    warnings: []
-  - category: Product
-    description: Drug combination data including synergistic, additive, and antagonistic interactions
-    format: txt
-    id: ttd.drug-combinations
-    name: Drug Combinations
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt
-    warnings:
-      - File was not able to be retrieved when checked on 2025-10-30_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Help documentation and user guide for TTD
-    format: http
-    id: ttd.help
-    name: TTD Help Documentation
-    product_url: https://idrblab.org/ttd/help
-    warnings:
-      - File was not able to be retrieved when checked on 2026-03-08_ HTTP 404 error when accessing file
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
-    edge_count: 500958
-    id: pharmkg.graph
-    name: PharmKG graph
-    node_count: 7603
-    original_source:
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: pharmgkb
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: humannet
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: gnbr
-        relation_type: prov:hadPrimarySource
-      - source: biogps
-        relation_type: prov:hadPrimarySource
-      - source: connectivitymap
-        relation_type: prov:hadPrimarySource
-    product_url: https://zenodo.org/record/4077338
-    secondary_source:
-      - source: pharmkg
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: KGX JSONL graph package for TTD distributed via the NCATS Translator release site (release 2026_03_06; build ttd_2024_03_30_0a11135d_2025sep1_4.3.6; source version 2024_03_30; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 69317
-    format: kgx-jsonl
-    id: translator.ttd.graph
-    latest_version: '2026_03_06'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator TTD KGX Graph
-    node_count: 25564
-    original_source:
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_06'
-      - ttd_2024_03_30_0a11135d_2025sep1_4.3.6
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 29243943
-    format: kgx-jsonl
-    id: translator.translator_kg.graph
-    latest_version: '2026_03_27'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator Aggregate KGX Graph
-    node_count: 1696790
-    original_source:
-      - source: alliance
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: ctkp
-        relation_type: prov:hadPrimarySource
-      - source: drug-approvals-kp
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: drugrephub
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: gene2phenotype
-        relation_type: prov:hadPrimarySource
-      - source: geneticskp
-        relation_type: prov:hadPrimarySource
-      - source: go-cam
-        relation_type: prov:hadPrimarySource
-      - source: goa
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: panther
-        relation_type: prov:hadPrimarySource
-      - source: pathbank
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: text-mining-kp
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: ubergraph
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_27'
-      - 423af7989cac
+- category: GraphicalInterface
+  description: Main web portal for browsing and searching TTD targets, drugs, biomarkers,
+    and pathways
+  format: http
+  id: ttd.portal
+  name: TTD Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.org/ttd/
+- category: Product
+  description: Raw format target information including all TTD target data
+  format: txt
+  id: ttd.targets-raw
+  name: TTD Targets Information
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Raw format drug information including all TTD drug data
+  format: txt
+  id: ttd.drugs-raw
+  name: TTD Drug Information
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-02-TTD_drug_download.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Cross-matching identifiers between TTD drugs and public databases
+  format: txt
+  id: ttd.crossmatch
+  name: Cross-matching Drug IDs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-03-Drug_xrefs.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Synonyms of drugs and small molecules in TTD
+  format: txt
+  id: ttd.synonyms
+  name: Drug Synonyms
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Drug to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.drug-disease
+  name: Drug-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.target-disease
+  name: Target-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to drug mapping with mode of action information
+  format: csv
+  id: ttd.target-drug
+  name: Target-Drug Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Biomarker to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.biomarker-disease
+  name: Biomarker-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to compound mapping with experimental activity data
+  format: txt
+  id: ttd.target-compound
+  name: Target-Compound Activity Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: UniProt IDs for all targets in TTD
+  format: txt
+  id: ttd.uniprot-all
+  name: All Target UniProt IDs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Sequence data for all targets in FASTA format
+  format: fasta
+  id: ttd.sequences-all
+  name: All Target Sequences
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Structure data for all drugs in SDF format
+  format: sdf
+  id: ttd.structures-all
+  name: All Drug Structures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: SMILES and InChI representations for approved drugs
+  format: txt
+  id: ttd.smiles-inchi
+  name: Drug SMILES and InChI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-06-Drug_SMILE_InChI.txt
+- category: Product
+  description: KEGG pathway data for all targets
+  format: txt
+  id: ttd.kegg-pathways
+  name: Target KEGG Pathways
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: WikiPathways data for all targets
+  format: txt
+  id: ttd.wiki-pathways
+  name: Target WikiPathways
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
+  warnings: []
+- category: Product
+  description: Drug combination data including synergistic, additive, and antagonistic
+    interactions
+  format: txt
+  id: ttd.drug-combinations
+  name: Drug Combinations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: DocumentationProduct
+  description: Help documentation and user guide for TTD
+  format: http
+  id: ttd.help
+  name: TTD Help Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://idrblab.org/ttd/help
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-08_ HTTP 404 error when
+    accessing file
+- category: GraphProduct
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
+  edge_count: 500958
+  id: pharmkg.graph
+  name: PharmKG graph
+  node_count: 7603
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: connectivitymap
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pharmkg
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://zenodo.org/record/4077338
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for TTD distributed via the NCATS Translator
+    release site (release 2026_03_06; build ttd_2024_03_30_0a11135d_2025sep1_4.3.6;
+    source version 2024_03_30; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 69317
+  format: kgx-jsonl
+  id: translator.ttd.graph
+  latest_version: '2026_03_06'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator TTD KGX Graph
+  node_count: 25564
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
+  versions:
+  - '2026_03_06'
+  - ttd_2024_03_30_0a11135d_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: drug-approvals-kp
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: go-cam
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
-  - authors:
-      - Ying Zhou
-      - Yintao Zhang
-      - Donghai Zhao
-      - Xinyuan Yu
-      - Xinyi Shen
-      - Yuan Zhou
-      - Shanshan Wang
-      - Yunqing Qiu
-      - Yuzong Chen
-      - Feng Zhu
-    category: Publication
-    id: doi:10.1093/nar/gkad751
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'TTD: Therapeutic Target Database describing target druggability information'
-    year: '2024'
-  - authors:
-      - Yuan Zhou
-      - Ying Zhang
-      - Xueya Lian
-      - Fengcheng Li
-      - Chaoxin Wang
-      - Feng Zhu
-      - Yunqing Qiu
-      - Yuzong Chen
-    category: Publication
-    id: doi:10.1093/nar/gkab953
-    journal: Nucleic Acids Research
-    preferred: false
-    title: 'Therapeutic target database update 2022: facilitating drug discovery with enriched comparative data of targeted agents'
-    year: '2022'
+- authors:
+  - Ying Zhou
+  - Yintao Zhang
+  - Donghai Zhao
+  - Xinyuan Yu
+  - Xinyi Shen
+  - Yuan Zhou
+  - Shanshan Wang
+  - Yunqing Qiu
+  - Yuzong Chen
+  - Feng Zhu
+  category: Publication
+  id: doi:10.1093/nar/gkad751
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'TTD: Therapeutic Target Database describing target druggability information'
+  year: '2024'
+- authors:
+  - Yuan Zhou
+  - Ying Zhang
+  - Xueya Lian
+  - Fengcheng Li
+  - Chaoxin Wang
+  - Feng Zhu
+  - Yunqing Qiu
+  - Yuzong Chen
+  category: Publication
+  id: doi:10.1093/nar/gkab953
+  journal: Nucleic Acids Research
+  preferred: false
+  title: 'Therapeutic target database update 2022: facilitating drug discovery with
+    enriched comparative data of targeted agents'
+  year: '2022'
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # Therapeutic Target Database
 
 ## Overview

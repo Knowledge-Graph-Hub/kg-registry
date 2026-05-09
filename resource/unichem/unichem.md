@@ -2,20 +2,27 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: chembl-help@ebi.ac.uk
-      - contact_type: url
-        value: https://chembl.gitbook.io/unichem
-    id: ebi
-    label: ChEMBL Team at EMBL-EBI
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: chembl-help@ebi.ac.uk
+  - contact_type: url
+    value: https://chembl.gitbook.io/unichem
+  id: ebi
+  label: ChEMBL Team at EMBL-EBI
 creation_date: '2025-11-04T00:00:00Z'
-description: UniChem is a large-scale non-redundant database maintained by EMBL-EBI that provides cross-references between chemical structures across multiple chemistry resources. It serves as a unified system for creating and maintaining structure-based hyperlinks between chemistry databases, particularly optimized for on-the-fly link creation via REST web services. UniChem aggregates compound identifiers from major chemistry resources including ChEMBL, ChEBI, SureChEMBL, PubChem, DrugBank, and many others, enabling efficient cross-database chemical structure queries using InChI, InChIKey, or source-specific identifiers.
+description: UniChem is a large-scale non-redundant database maintained by EMBL-EBI
+  that provides cross-references between chemical structures across multiple chemistry
+  resources. It serves as a unified system for creating and maintaining structure-based
+  hyperlinks between chemistry databases, particularly optimized for on-the-fly link
+  creation via REST web services. UniChem aggregates compound identifiers from major
+  chemistry resources including ChEMBL, ChEBI, SureChEMBL, PubChem, DrugBank, and
+  many others, enabling efficient cross-database chemical structure queries using
+  InChI, InChIKey, or source-specific identifiers.
 domains:
-  - chemistry and biochemistry
-  - drug discovery
-  - pharmacology
+- chemistry and biochemistry
+- drug discovery
+- pharmacology
 homepage_url: https://www.ebi.ac.uk/unichem/
 id: unichem
 infores_id: unichem
@@ -23,359 +30,354 @@ last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: UniChem
 products:
-  - category: GraphicalInterface
-    description: Web-based search interface for finding compound sources and performing connectivity searches across chemical databases
-    format: http
-    id: unichem.search
-    name: UniChem Search Interface
-    original_source:
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.ebi.ac.uk/unichem/search
-  - category: ProgrammingInterface
-    description: RESTful web services API for programmatic access to UniChem cross-references and connectivity searches
-    format: http
-    id: unichem.api
-    name: UniChem REST API
-    original_source:
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.ebi.ac.uk/unichem/api/docs
-  - category: Product
-    description: Comprehensive list of all integrated chemistry databases and their metadata in UniChem
-    format: http
-    id: unichem.sources
-    name: UniChem Source Database List
-    original_source:
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.ebi.ac.uk/unichem/sources
-  - category: DocumentationProduct
-    description: Complete documentation covering UniChem functionality, API usage, data model, and integration guidelines
-    format: http
-    id: unichem.docs
-    name: UniChem Documentation
-    original_source:
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-    product_url: https://chembl.gitbook.io/unichem
-  - category: DocumentationProduct
-    description: UniChem compound sources page illustrating the UCI identifier namespace.
-    format: http
-    id: unichem.docs.uci
-    name: UCI Documentation Entry Point
-    original_source:
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.ebi.ac.uk/unichem/compoundsources?type=uci&compound=1
-  - category: GraphProduct
-    description: Core UniBioMap graph edges file.
-    format: csv
-    id: unibiomap.links
-    name: UniBioMap Graph Links
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 1406201678
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-  - category: GraphProduct
-    description: Auxiliary UniBioMap graph annotations and metadata.
-    format: tsv
-    id: unibiomap.auxs
-    name: UniBioMap Graph Auxiliaries
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 591290539
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-  - category: GraphProduct
-    description: Predicted UniBioMap graph edges with confidence scores.
-    format: csv
-    id: unibiomap.pred
-    name: UniBioMap Predicted Graph
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 2484982268
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-  - category: GraphProduct
-    description: Full unfiltered UniBioMap predicted graph edges file.
-    format: csv
-    id: unibiomap.pred.full
-    name: UniBioMap Predicted Graph (Full)
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 6303875907
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphicalInterface
+  description: Web-based search interface for finding compound sources and performing
+    connectivity searches across chemical databases
+  format: http
+  id: unichem.search
+  name: UniChem Search Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  product_url: https://www.ebi.ac.uk/unichem/search
+- category: ProgrammingInterface
+  description: RESTful web services API for programmatic access to UniChem cross-references
+    and connectivity searches
+  format: http
+  id: unichem.api
+  name: UniChem REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  product_url: https://www.ebi.ac.uk/unichem/api/docs
+- category: Product
+  description: Comprehensive list of all integrated chemistry databases and their
+    metadata in UniChem
+  format: http
+  id: unichem.sources
+  name: UniChem Source Database List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  product_url: https://www.ebi.ac.uk/unichem/sources
+- category: DocumentationProduct
+  description: Complete documentation covering UniChem functionality, API usage, data
+    model, and integration guidelines
+  format: http
+  id: unichem.docs
+  name: UniChem Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  product_url: https://chembl.gitbook.io/unichem
+- category: DocumentationProduct
+  description: UniChem compound sources page illustrating the UCI identifier namespace.
+  format: http
+  id: unichem.docs.uci
+  name: UCI Documentation Entry Point
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  product_url: https://www.ebi.ac.uk/unichem/compoundsources?type=uci&compound=1
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 synonyms:
-  - unichem
+- unichem
 ---
-
 # UniChem
 
 ## Overview

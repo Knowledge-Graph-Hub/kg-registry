@@ -2,18 +2,23 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.nlm.nih.gov/research/umls/support.html
-    id: ncbi
-    label: NLM UMLS Customer Support
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nlm.nih.gov/research/umls/support.html
+  id: ncbi
+  label: NLM UMLS Customer Support
 creation_date: '2025-10-30T00:00:00Z'
-description: The Unified Medical Language System (UMLS) integrates and distributes over 200 biomedical vocabularies, terminologies, and classification standards to enable interoperability between information systems. It includes the Metathesaurus (terms and codes from vocabularies like CPT, ICD-10-CM, LOINC, MeSH, RxNorm, SNOMED CT), Semantic Network (broad categories and relationships), and SPECIALIST Lexicon (biomedical and general English lexicon with normalization tools).
+description: The Unified Medical Language System (UMLS) integrates and distributes
+  over 200 biomedical vocabularies, terminologies, and classification standards to
+  enable interoperability between information systems. It includes the Metathesaurus
+  (terms and codes from vocabularies like CPT, ICD-10-CM, LOINC, MeSH, RxNorm, SNOMED
+  CT), Semantic Network (broad categories and relationships), and SPECIALIST Lexicon
+  (biomedical and general English lexicon with normalization tools).
 domains:
-  - biomedical
-  - clinical
-  - literature
+- biomedical
+- clinical
+- literature
 homepage_url: https://www.nlm.nih.gov/research/umls/index.html
 id: umls
 infores_id: umls
@@ -24,557 +29,556 @@ license:
   label: UMLS License (free for individuals)
 name: Unified Medical Language System
 products:
-  - category: GraphicalInterface
-    description: Web interface for browsing UMLS Metathesaurus concepts, CUIs, semantic types, and synonymous terms
-    format: http
-    id: umls.browser
-    name: UMLS Metathesaurus Browser
-    original_source:
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_url: https://uts.nlm.nih.gov/uts/umls/home
-  - category: GraphicalInterface
-    description: Web interface for viewing semantic types, definitions, and hierarchical structure of the UMLS Semantic Network
-    format: http
-    id: umls.semantic_network_browser
-    name: UMLS Semantic Network Browser
-    original_source:
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_url: https://uts.nlm.nih.gov/uts/umls/semantic-network/root
-  - category: ProgrammingInterface
-    description: REST API providing programmatic access to UMLS Metathesaurus, Semantic Network, and related terminology services
-    id: umls.api
-    is_public: true
-    name: UMLS Terminology Services API
-    original_source:
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_url: https://documentation.uts.nlm.nih.gov/rest/home.html
-  - category: Product
-    description: Full UMLS Knowledge Sources release including Metathesaurus, Semantic Network, and SPECIALIST Lexicon for local installation with MetamorphoSys customization tool
-    id: umls.release
-    name: UMLS Knowledge Sources Release Files
-    product_url: https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html
-    original_source:
-      - source: umls
-        relation_type: prov:hadPrimarySource
-  - category: ProcessProduct
-    description: MetamorphoSys tool for customizing UMLS subsets by vocabulary, language, or semantic type and loading data into local databases
-    id: umls.metamorphosys
-    name: MetamorphoSys Customization Tool
-    product_url: https://www.nlm.nih.gov/research/umls/implementation_resources/metamorphosys/help.html
-    original_source:
-      - source: umls
-        relation_type: prov:hadPrimarySource
-  - category: ProcessProduct
-    description: SPECIALIST Lexicon and Lexical Tools for normalizing strings, generating lexical variants, and creating indexes for biomedical text processing
-    id: umls.specialist_lexicon
-    name: SPECIALIST Lexicon and Lexical Tools
-    original_source:
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_url: https://lhncbc.nlm.nih.gov/LSG/index.html
-  - category: GraphProduct
-    description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges
-    format: kgx-jsonl
-    id: icees-kg.graph
-    name: KGX distribution of the ICEES Exposures KP
-    original_source:
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-    secondary_source:
-      - source: icees-kg
-        relation_type: prov:wasInfluencedBy
-  - category: ProgrammingInterface
-    description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using standardized Translator protocols
-    format: http
-    id: icees-kg.trapi
-    name: ICEES KG TRAPI API
-    original_source:
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-    product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-    secondary_source:
-      - source: icees-kg
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: Meta knowledge graph and metadata describing the data sources, node types, edge types, and predicates available in ICEES KG
-    format: json
-    id: icees-kg.metadata
-    name: ICEES KG Metadata
-    original_source:
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-    product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-    secondary_source:
-      - source: icees-kg
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: VANDF drug terminology data distributed through UMLS Metathesaurus
-    id: ndfrt.umls
-    name: VANDF in UMLS
-    original_source:
-      - source: ndfrt
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.nlm.nih.gov/research/umls/
-    secondary_source:
-      - source: umls
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Core UniBioMap graph edges file.
-    format: csv
-    id: unibiomap.links
-    name: UniBioMap Graph Links
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 1406201678
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-  - category: GraphProduct
-    description: Auxiliary UniBioMap graph annotations and metadata.
-    format: tsv
-    id: unibiomap.auxs
-    name: UniBioMap Graph Auxiliaries
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 591290539
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-  - category: GraphProduct
-    description: Predicted UniBioMap graph edges with confidence scores.
-    format: csv
-    id: unibiomap.pred
-    name: UniBioMap Predicted Graph
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 2484982268
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-  - category: GraphProduct
-    description: Full unfiltered UniBioMap predicted graph edges file.
-    format: csv
-    id: unibiomap.pred.full
-    name: UniBioMap Predicted Graph (Full)
-    original_source:
-      - source: unibiomap
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: tcdb
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: stitch
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
-        relation_type: prov:hadPrimarySource
-      - source: batman
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: compath
-        relation_type: prov:hadPrimarySource
-      - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: smpdb
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: hmdb
-        relation_type: prov:hadPrimarySource
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: inchikey
-        relation_type: prov:hadPrimarySource
-      - source: unichem
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-    product_file_size: 6303875907
-    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
-  - category: Product
-    compression: gzip
-    description: Rich Release Format (RRF) file containing concept names and source identifiers with gzip compression
-    format: txt
-    id: medgen.mgconso
-    name: MGCONSO (Concept Names)
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 15843494
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
-  - category: Product
-    compression: gzip
-    description: Rich Release Format (RRF) file containing definitions and descriptions with gzip compression
-    format: txt
-    id: medgen.mgdef
-    name: MGDEF (Definitions)
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 5062289
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
-  - category: MappingProduct
-    compression: gzip
-    description: Rich Release Format (RRF) file containing relationships between concepts with gzip compression
-    format: txt
-    id: medgen.mgrel
-    name: MGREL (Relationships)
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 15661303
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
-  - category: Product
-    compression: gzip
-    description: Rich Release Format (RRF) file containing attributes and properties with gzip compression
-    format: txt
-    id: medgen.mgsat
-    name: MGSAT (Attributes)
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 11710268
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
-  - category: Product
-    compression: gzip
-    description: Rich Release Format (RRF) file containing semantic type assignments with gzip compression
-    format: txt
-    id: medgen.mgsty
-    name: MGSTY (Semantic Types)
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 1644564
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
-  - category: Product
-    compression: gzip
-    description: Rich Release Format (RRF) file containing concept names for search with gzip compression
-    format: txt
-    id: medgen.names
-    name: NAMES
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 3097271
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
-  - category: Product
-    compression: gzip
-    description: Merged CUI mappings showing concept consolidations with gzip compression
-    format: txt
-    id: medgen.merged
-    name: MERGED (Merged CUIs)
-    original_source:
-      - source: medgen
-        relation_type: prov:hadPrimarySource
-      - source: umls
-        relation_type: prov:hadPrimarySource
-    product_file_size: 47602
-    product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
+- category: GraphicalInterface
+  description: Web interface for browsing UMLS Metathesaurus concepts, CUIs, semantic
+    types, and synonymous terms
+  format: http
+  id: umls.browser
+  name: UMLS Metathesaurus Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://uts.nlm.nih.gov/uts/umls/home
+- category: GraphicalInterface
+  description: Web interface for viewing semantic types, definitions, and hierarchical
+    structure of the UMLS Semantic Network
+  format: http
+  id: umls.semantic_network_browser
+  name: UMLS Semantic Network Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://uts.nlm.nih.gov/uts/umls/semantic-network/root
+- category: ProgrammingInterface
+  description: REST API providing programmatic access to UMLS Metathesaurus, Semantic
+    Network, and related terminology services
+  id: umls.api
+  is_public: true
+  name: UMLS Terminology Services API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://documentation.uts.nlm.nih.gov/rest/home.html
+- category: Product
+  description: Full UMLS Knowledge Sources release including Metathesaurus, Semantic
+    Network, and SPECIALIST Lexicon for local installation with MetamorphoSys customization
+    tool
+  id: umls.release
+  name: UMLS Knowledge Sources Release Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html
+- category: ProcessProduct
+  description: MetamorphoSys tool for customizing UMLS subsets by vocabulary, language,
+    or semantic type and loading data into local databases
+  id: umls.metamorphosys
+  name: MetamorphoSys Customization Tool
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://www.nlm.nih.gov/research/umls/implementation_resources/metamorphosys/help.html
+- category: ProcessProduct
+  description: SPECIALIST Lexicon and Lexical Tools for normalizing strings, generating
+    lexical variants, and creating indexes for biomedical text processing
+  id: umls.specialist_lexicon
+  name: SPECIALIST Lexicon and Lexical Tools
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://lhncbc.nlm.nih.gov/LSG/index.html
+- category: GraphProduct
+  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
+    (KGX) format, containing integrated clinical and environmental exposures data
+    as a knowledge graph with 226 nodes and 14,342 edges
+  format: kgx-jsonl
+  id: icees-kg.graph
+  name: KGX distribution of the ICEES Exposures KP
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+- category: ProgrammingInterface
+  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
+    standardized Translator protocols
+  format: http
+  id: icees-kg.trapi
+  name: ICEES KG TRAPI API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+- category: Product
+  description: Meta knowledge graph and metadata describing the data sources, node
+    types, edge types, and predicates available in ICEES KG
+  format: json
+  id: icees-kg.metadata
+  name: ICEES KG Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+- category: Product
+  description: VANDF drug terminology data distributed through UMLS Metathesaurus
+  id: ndfrt.umls
+  name: VANDF in UMLS
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ndfrt
+  product_url: https://www.nlm.nih.gov/research/umls/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: umls
+- category: GraphProduct
+  description: Core UniBioMap graph edges file.
+  format: csv
+  id: unibiomap.links
+  name: UniBioMap Graph Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 1406201678
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+- category: GraphProduct
+  description: Auxiliary UniBioMap graph annotations and metadata.
+  format: tsv
+  id: unibiomap.auxs
+  name: UniBioMap Graph Auxiliaries
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 591290539
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+- category: GraphProduct
+  description: Predicted UniBioMap graph edges with confidence scores.
+  format: csv
+  id: unibiomap.pred
+  name: UniBioMap Predicted Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 2484982268
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+- category: GraphProduct
+  description: Full unfiltered UniBioMap predicted graph edges file.
+  format: csv
+  id: unibiomap.pred.full
+  name: UniBioMap Predicted Graph (Full)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: tcdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: unichem
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: batman
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: compath
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  product_file_size: 6303875907
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing concept names and source
+    identifiers with gzip compression
+  format: txt
+  id: medgen.mgconso
+  name: MGCONSO (Concept Names)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 15843494
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGCONSO.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing definitions and descriptions
+    with gzip compression
+  format: txt
+  id: medgen.mgdef
+  name: MGDEF (Definitions)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 5062289
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGDEF.RRF.gz
+- category: MappingProduct
+  compression: gzip
+  description: Rich Release Format (RRF) file containing relationships between concepts
+    with gzip compression
+  format: txt
+  id: medgen.mgrel
+  name: MGREL (Relationships)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 15661303
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing attributes and properties
+    with gzip compression
+  format: txt
+  id: medgen.mgsat
+  name: MGSAT (Attributes)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 11710268
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSAT.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing semantic type assignments
+    with gzip compression
+  format: txt
+  id: medgen.mgsty
+  name: MGSTY (Semantic Types)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 1644564
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
+- category: Product
+  compression: gzip
+  description: Rich Release Format (RRF) file containing concept names for search
+    with gzip compression
+  format: txt
+  id: medgen.names
+  name: NAMES
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 3097271
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
+- category: Product
+  compression: gzip
+  description: Merged CUI mappings showing concept consolidations with gzip compression
+  format: txt
+  id: medgen.merged
+  name: MERGED (Merged CUIs)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 47602
+  product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
 publications:
-  - id: PMID:14681409
-    preferred: true
-    title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
+- id: PMID:14681409
+  preferred: true
+  title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
 synonyms:
-  - UMLS
+- UMLS
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # Unified Medical Language System (UMLS)
 
 ## Overview

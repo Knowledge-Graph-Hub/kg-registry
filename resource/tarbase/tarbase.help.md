@@ -4,14 +4,18 @@ description: Comprehensive help documentation with query examples and filtering 
 format: http
 id: tarbase.help
 name: Help Documentation
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: tarbase
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: tarbase
-    relation_type: prov:hadPrimarySource
 ---

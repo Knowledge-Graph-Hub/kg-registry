@@ -2,152 +2,154 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://report.nih.gov/contactus
-      - contact_type: email
-        value: reporter@od.nih.gov
-    label: NIH Office of Extramural Research
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://report.nih.gov/contactus
+  - contact_type: email
+    value: reporter@od.nih.gov
+  label: NIH Office of Extramural Research
 creation_date: '2025-07-20T00:00:00Z'
-description: NIH Reporter (RePORTER) is a comprehensive data source providing access to information about NIH-funded research projects, including both intramural and extramural research activities. It serves as an electronic repository for NIH research project data, publications, and patents resulting from NIH funding since fiscal year 1985.
+description: NIH Reporter (RePORTER) is a comprehensive data source providing access
+  to information about NIH-funded research projects, including both intramural and
+  extramural research activities. It serves as an electronic repository for NIH research
+  project data, publications, and patents resulting from NIH funding since fiscal
+  year 1985.
 domains:
-  - biomedical
-  - health
-  - clinical
-  - translational
+- biomedical
+- health
+- clinical
+- translational
 homepage_url: https://reporter.nih.gov/
 id: nihreporter
 last_modified_date: '2025-09-24T00:00:00Z'
 layout: resource_detail
 name: NIH Reporter
 products:
-  - category: GraphicalInterface
-    description: Web-based search interface for exploring NIH-funded research projects with advanced search capabilities
-    format: http
-    id: nihreporter.portal
-    name: NIH Reporter Web Portal
-    product_url: https://reporter.nih.gov/
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Bulk download of NIH research project data in structured format
-    format: csv
-    id: nihreporter.projects
-    name: NIH Reporter Exporter Projects
-    product_url: https://reporter.nih.gov/exporter/projects
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: API access to NIH research project data and search functionality
-    format: http
-    id: nihreporter.api
-    name: NIH Reporter API
-    product_url: https://reporter.nih.gov/
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Database of abstracts linked to NIH-funded research projects
-    format: json
-    id: nihreporter.abstracts
-    name: NIH-Funded Project Abstracts
-    product_url: https://reporter.nih.gov/exporter/abstracts
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Database of patents linked to NIH-funded research projects
-    id: nihreporter.patents
-    name: NIH-Funded Project Patents
-    product_url: https://reporter.nih.gov/exporter/patents
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Database of clinical studies linked to NIH-funded research projects
-    id: nihreporter.clinicalstudies
-    name: NIH-Funded Project Clinical Studies
-    product_url: https://reporter.nih.gov/exporter/clinicalstudies
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Database of publications linked to NIH-funded research projects
-    format: json
-    id: nihreporter.publications
-    name: NIH-Funded Publications Database
-    product_url: https://reporter.nih.gov/exporter/publications
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Database of publication link tables for NIH-funded research projects
-    id: nihreporter.linktables
-    name: NIH-Funded Publications Link Tables
-    product_url: https://reporter.nih.gov/exporter/linktables
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-  - category: ProcessProduct
-    description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
-    id: indra.cogex.code
-    name: INDRA CoGEx Build Code
-    original_source:
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: pubmed
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: cellmarker
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: ccle
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-      - source: indra
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/gyorilab/indra_cogex
-    secondary_source:
-      - source: indra
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    compression: gzip
-    description: nihreporter.project Nodes TSV
-    format: tsv
-    id: obo-db-ingest.nihreporter.project.tsv
-    name: nihreporter.project Nodes TSV
-    original_source:
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-    product_file_size: 65861949
-    product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz
-    secondary_source:
-      - source: obo-db-ingest
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Web-based search interface for exploring NIH-funded research projects
+    with advanced search capabilities
+  format: http
+  id: nihreporter.portal
+  name: NIH Reporter Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/
+- category: Product
+  description: Bulk download of NIH research project data in structured format
+  format: csv
+  id: nihreporter.projects
+  name: NIH Reporter Exporter Projects
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/projects
+- category: ProgrammingInterface
+  description: API access to NIH research project data and search functionality
+  format: http
+  id: nihreporter.api
+  name: NIH Reporter API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/
+- category: Product
+  description: Database of abstracts linked to NIH-funded research projects
+  format: json
+  id: nihreporter.abstracts
+  name: NIH-Funded Project Abstracts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/abstracts
+- category: Product
+  description: Database of patents linked to NIH-funded research projects
+  id: nihreporter.patents
+  name: NIH-Funded Project Patents
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/patents
+- category: Product
+  description: Database of clinical studies linked to NIH-funded research projects
+  id: nihreporter.clinicalstudies
+  name: NIH-Funded Project Clinical Studies
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/clinicalstudies
+- category: Product
+  description: Database of publications linked to NIH-funded research projects
+  format: json
+  id: nihreporter.publications
+  name: NIH-Funded Publications Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/publications
+- category: Product
+  description: Database of publication link tables for NIH-funded research projects
+  id: nihreporter.linktables
+  name: NIH-Funded Publications Link Tables
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  product_url: https://reporter.nih.gov/exporter/linktables
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: cellmarker
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: indra
+  product_url: https://github.com/gyorilab/indra_cogex
+- category: Product
+  compression: gzip
+  description: nihreporter.project Nodes TSV
+  format: tsv
+  id: obo-db-ingest.nihreporter.project.tsv
+  name: nihreporter.project Nodes TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 65861949
+  product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.tsv.gz
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # NIH Reporter
 
 NIH Reporter (RePORTER - RePORT Expenditures and Results) is a comprehensive data source that provides access to information about NIH-funded research projects and their outcomes. As part of the Research Portfolio Online Reporting Tools (RePORT) suite, it serves as the primary electronic repository for NIH research funding data, supporting transparency and accountability in biomedical research funding.

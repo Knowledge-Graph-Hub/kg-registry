@@ -2,17 +2,22 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: genesets@broadinstitute.org
-    label: MSigDB Team
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: genesets@broadinstitute.org
+  label: MSigDB Team
 creation_date: '2025-10-30T00:00:00Z'
-description: The Molecular Signatures Database (MSigDB) is a comprehensive collection of tens of thousands of annotated gene sets for use with Gene Set Enrichment Analysis (GSEA) software. MSigDB includes curated gene sets from pathway databases, gene ontology annotations, hallmark gene sets, immunologic signatures, regulatory target sets, and cell type-specific signatures derived from single-cell sequencing studies. Available for both human and mouse.
+description: The Molecular Signatures Database (MSigDB) is a comprehensive collection
+  of tens of thousands of annotated gene sets for use with Gene Set Enrichment Analysis
+  (GSEA) software. MSigDB includes curated gene sets from pathway databases, gene
+  ontology annotations, hallmark gene sets, immunologic signatures, regulatory target
+  sets, and cell type-specific signatures derived from single-cell sequencing studies.
+  Available for both human and mouse.
 domains:
-  - genomics
-  - systems biology
-  - pathways
+- genomics
+- systems biology
+- pathways
 homepage_url: https://www.gsea-msigdb.org/gsea/msigdb/
 id: msigdb
 infores_id: msigdb
@@ -23,307 +28,307 @@ license:
   label: GSEA/MSigDB License Terms
 name: Molecular Signatures Database
 products:
-  - category: GraphicalInterface
-    description: Web interface for browsing, searching, and investigating gene sets across all MSigDB collections
-    format: http
-    id: msigdb.browser
-    name: MSigDB Web Browser
-    original_source:
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.gsea-msigdb.org/gsea/msigdb/
-  - category: Product
-    description: Downloadable gene set files in GMT, XML, and other formats for human collections including hallmarks, curated pathways, ontologies, and computational signatures
-    format: mixed
-    id: msigdb.downloads.human
-    name: MSigDB Human Gene Sets Downloads
-    product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
-    original_source:
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Downloadable gene set files for mouse collections including mouse-ortholog hallmarks, curated pathways, ontologies, and cell type signatures
-    format: mixed
-    id: msigdb.downloads.mouse
-    name: MSigDB Mouse Gene Sets Downloads
-    product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
-    original_source:
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Interactive tool for computing overlaps between user-provided gene sets and MSigDB collections
-    id: msigdb.investigate
-    name: MSigDB Investigate Tool
-    original_source:
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.gsea-msigdb.org/gsea/msigdb/human/annotate.jsp
-  - category: GraphicalInterface
-    description: Tool for categorizing gene set members by gene families
-    id: msigdb.gene_families
-    name: MSigDB Gene Families Tool
-    original_source:
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.gsea-msigdb.org/gsea/msigdb/human/gene_families.jsp
-  - category: GraphProduct
-    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
-    dump_format: neo4j
-    id: ubkg.neo4j
-    name: UBKG Neo4j Docker Distribution
-    original_source:
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: loinc
-        relation_type: prov:hadPrimarySource
-      - source: icd10
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: pato
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: obi
-        relation_type: prov:hadPrimarySource
-      - source: obib
-        relation_type: prov:hadPrimarySource
-      - source: edam
-        relation_type: prov:hadPrimarySource
-      - source: hsapdv
-        relation_type: prov:hadPrimarySource
-      - source: sbo
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: ordo
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: pgo
-        relation_type: prov:hadPrimarySource
-      - source: gencode
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: hra
-        relation_type: prov:hadPrimarySource
-      - source: hubmap
-        relation_type: prov:hadPrimarySource
-      - source: sennet
-        relation_type: prov:hadPrimarySource
-      - source: stellar
-        relation_type: prov:hadPrimarySource
-      - source: dct
-        relation_type: prov:hadPrimarySource
-      - source: clinvar
-        relation_type: prov:hadPrimarySource
-      - source: connectivitymap
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: clingen
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: 4dn
-        relation_type: prov:hadPrimarySource
-      - source: erccrbp
-        relation_type: prov:hadPrimarySource
-      - source: erccreg
-        relation_type: prov:hadPrimarySource
-      - source: faldo
-        relation_type: prov:hadPrimarySource
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-      - source: glycocoo
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: kidsfirst
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: motrpac
-        relation_type: prov:hadPrimarySource
-      - source: mw
-        relation_type: prov:hadPrimarySource
-      - source: npo
-        relation_type: prov:hadPrimarySource
-      - source: sckan
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: biomarker
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - source: ubkg
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
-    format: csv
-    id: ubkg.csv
-    name: UBKG Ontology CSV Files
-    original_source:
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: loinc
-        relation_type: prov:hadPrimarySource
-      - source: icd10
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: pato
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: obi
-        relation_type: prov:hadPrimarySource
-      - source: obib
-        relation_type: prov:hadPrimarySource
-      - source: edam
-        relation_type: prov:hadPrimarySource
-      - source: hsapdv
-        relation_type: prov:hadPrimarySource
-      - source: sbo
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: ordo
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: pgo
-        relation_type: prov:hadPrimarySource
-      - source: gencode
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: hra
-        relation_type: prov:hadPrimarySource
-      - source: hubmap
-        relation_type: prov:hadPrimarySource
-      - source: sennet
-        relation_type: prov:hadPrimarySource
-      - source: stellar
-        relation_type: prov:hadPrimarySource
-      - source: dct
-        relation_type: prov:hadPrimarySource
-      - source: clinvar
-        relation_type: prov:hadPrimarySource
-      - source: connectivitymap
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: clingen
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: 4dn
-        relation_type: prov:hadPrimarySource
-      - source: erccrbp
-        relation_type: prov:hadPrimarySource
-      - source: erccreg
-        relation_type: prov:hadPrimarySource
-      - source: faldo
-        relation_type: prov:hadPrimarySource
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-      - source: glycocoo
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: kidsfirst
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: motrpac
-        relation_type: prov:hadPrimarySource
-      - source: mw
-        relation_type: prov:hadPrimarySource
-      - source: npo
-        relation_type: prov:hadPrimarySource
-      - source: sckan
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: biomarker
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - source: ubkg
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: msigdb Nodes TSV
-    format: tsv
-    id: obo-db-ingest.msigdb.tsv
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: msigdb Nodes TSV
-    original_source:
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-    product_file_size: 3121367
-    product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
-    secondary_source:
-      - source: obo-db-ingest
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: Web interface for browsing, searching, and investigating gene sets
+    across all MSigDB collections
+  format: http
+  id: msigdb.browser
+  name: MSigDB Web Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/msigdb/
+- category: Product
+  description: Downloadable gene set files in GMT, XML, and other formats for human
+    collections including hallmarks, curated pathways, ontologies, and computational
+    signatures
+  format: mixed
+  id: msigdb.downloads.human
+  name: MSigDB Human Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+- category: Product
+  description: Downloadable gene set files for mouse collections including mouse-ortholog
+    hallmarks, curated pathways, ontologies, and cell type signatures
+  format: mixed
+  id: msigdb.downloads.mouse
+  name: MSigDB Mouse Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+- category: GraphicalInterface
+  description: Interactive tool for computing overlaps between user-provided gene
+    sets and MSigDB collections
+  id: msigdb.investigate
+  name: MSigDB Investigate Tool
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/msigdb/human/annotate.jsp
+- category: GraphicalInterface
+  description: Tool for categorizing gene set members by gene families
+  id: msigdb.gene_families
+  name: MSigDB Gene Families Tool
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/msigdb/human/gene_families.jsp
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: connectivitymap
+  - relation_type: prov:hadPrimarySource
+    source: dct
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: edam
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: erccrbp
+  - relation_type: prov:hadPrimarySource
+    source: erccreg
+  - relation_type: prov:hadPrimarySource
+    source: faldo
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: kidsfirst
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: npo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: obib
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pgo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stellar
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://ubkg-downloads.xconsortia.org/
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: connectivitymap
+  - relation_type: prov:hadPrimarySource
+    source: dct
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: edam
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: erccrbp
+  - relation_type: prov:hadPrimarySource
+    source: erccreg
+  - relation_type: prov:hadPrimarySource
+    source: faldo
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: kidsfirst
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: npo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: obib
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pgo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stellar
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://ubkg-downloads.xconsortia.org/
+- category: Product
+  description: msigdb Nodes TSV
+  format: tsv
+  id: obo-db-ingest.msigdb.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: msigdb Nodes TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 3121367
+  product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
 publications:
-  - id: PMID:37653294
-    title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
+- id: PMID:37653294
+  title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
 synonyms:
-  - MSigDB
+- MSigDB
 taxon:
-  - NCBITaxon:9606
-  - NCBITaxon:10090
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
-
 # Molecular Signatures Database (MSigDB)
 
 ## Overview

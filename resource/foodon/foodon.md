@@ -2,20 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: damion_dooley@sfu.ca
-      - contact_type: github
-        value: ddooley
-    label: Damion Dooley
-    orcid: 0000-0002-8844-9165
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: damion_dooley@sfu.ca
+  - contact_type: github
+    value: ddooley
+  label: Damion Dooley
+  orcid: 0000-0002-8844-9165
 creation_date: '2025-09-29T00:00:00Z'
-description: A broadly scoped ontology representing entities which bear a  food role . It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research
+description: A broadly scoped ontology representing entities which bear a  food role
+  . It encompasses materials in natural ecosystems and agriculture that are consumed
+  by humans and domesticated animals. This includes any generic (unbranded) raw or
+  processed food material found in processing plants, markets, stores or food distribution
+  points. FoodOn also imports nutritional component and dietary pattern terms from
+  other OBO Foundry ontologies to support interoperability in diet and nutrition research
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
 homepage_url: https://foodon.org/
 id: foodon
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,31 +31,31 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Food Ontology
 products:
-  - category: OntologyProduct
-    description: FoodOn ontology with import file references and over 9,000 food products
-    format: owl
-    id: foodon.owl
-    name: FoodOn ontology with import file references and over 9,000 food products
-    product_file_size: 2852449
-    product_url: http://purl.obolibrary.org/obo/foodon.owl
-    original_source:
-      - source: foodon
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: FoodOn core ontology (currently the same as foodon.owl)
-    format: owl
-    id: foodon_core.owl
-    name: FoodOn core ontology (currently the same as foodon.owl)
-    product_url: http://purl.obolibrary.org/obo/foodon_core.owl
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+- category: OntologyProduct
+  description: FoodOn ontology with import file references and over 9,000 food products
+  format: owl
+  id: foodon.owl
+  name: FoodOn ontology with import file references and over 9,000 food products
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodon
+  product_file_size: 2852449
+  product_url: http://purl.obolibrary.org/obo/foodon.owl
+- category: OntologyProduct
+  description: FoodOn core ontology (currently the same as foodon.owl)
+  format: owl
+  id: foodon_core.owl
+  name: FoodOn core ontology (currently the same as foodon.owl)
+  product_url: http://purl.obolibrary.org/obo/foodon_core.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
-    title: 'FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
+  title: 'FoodOn: a harmonized food ontology to increase global food traceability,
+    quality control and data integration'
 repository: https://github.com/FoodOntology/foodon
 ---
-
 ## Description
 
 A broadly scoped ontology representing entities which bear a  food role . It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research

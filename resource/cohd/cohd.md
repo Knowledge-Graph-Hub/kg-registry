@@ -8,15 +8,15 @@ contacts:
     value: http://people.dbmi.columbia.edu/~chw7007/
   label: Columbia University Department of Biomedical Informatics - Weng Lab
 creation_date: '2025-11-04T00:00:00Z'
-description: The Columbia Open Health Data (COHD) API provides access to observed
-  clinical frequencies and co-occurrence frequencies from electronic health records
-  at Columbia University Medical Center. The database contains counts and frequencies
-  of conditions, procedures, drug exposures, and patient demographics from the OHDSI
-  common data model, along with statistical associations between clinical concepts.
-  To protect patient privacy, all concepts where count ≤10 were excluded and counts
-  were randomized using Poisson distribution. COHD offers multiple datasets including
-  5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical
-  forms, plus beta temporal co-occurrence data.
+description: "The Columbia Open Health Data (COHD) API provides access to observed\
+  \ clinical frequencies and co-occurrence frequencies from electronic health records\
+  \ at Columbia University Medical Center. The database contains counts and frequencies\
+  \ of conditions, procedures, drug exposures, and patient demographics from the OHDSI\
+  \ common data model, along with statistical associations between clinical concepts.\
+  \ To protect patient privacy, all concepts where count \u226410 were excluded and\
+  \ counts were randomized using Poisson distribution. COHD offers multiple datasets\
+  \ including 5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical\
+  \ forms, plus beta temporal co-occurrence data."
 domains:
 - clinical
 - health
@@ -71,14 +71,12 @@ products:
     source: cohd
   product_url: https://cohd.io/api
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error when
+    accessing file
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -98,10 +96,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cohd
-  product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
     source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
   versions:
   - '2026_03_12'
   - cohd_2024-11-25_75f200bb_2025sep1_4.3.6
@@ -137,17 +134,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ctkp
   - relation_type: prov:hadPrimarySource
-    source: drug-approvals-kp
-  - relation_type: prov:hadPrimarySource
     source: dgidb
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: drug-approvals-kp
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: gtopdb
+    source: drugrephub
   - relation_type: prov:hadPrimarySource
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
@@ -156,6 +151,8 @@ products:
     source: go-cam
   - relation_type: prov:hadPrimarySource
     source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
@@ -177,13 +174,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: text-mining-kp
   - relation_type: prov:hadPrimarySource
+    source: translator
+  - relation_type: prov:hadPrimarySource
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: translator
   versions:
   - '2026_03_27'
   - 423af7989cac

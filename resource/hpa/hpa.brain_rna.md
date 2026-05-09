@@ -4,13 +4,16 @@ description: Brain-specific expression data including regional and cellular dist
 format: tsv
 id: hpa.brain_rna
 name: HPA Brain RNA Expression Data
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: hpa
 product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
+  to URL
 layout: product_detail
-original_source:
-  - source: hpa
-    relation_type: prov:hadPrimarySource
 ---

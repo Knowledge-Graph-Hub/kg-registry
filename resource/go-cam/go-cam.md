@@ -64,12 +64,10 @@ products:
     source: go-cam
   product_url: https://github.com/geneontology/go-cam
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/api/
   description: Programmatic access to GO-CAM models through the Gene Ontology API
@@ -108,10 +106,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: go-cam
-  product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
     source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
   versions:
   - '2026_03_06'
   - go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6
@@ -147,17 +144,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ctkp
   - relation_type: prov:hadPrimarySource
-    source: drug-approvals-kp
-  - relation_type: prov:hadPrimarySource
     source: dgidb
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
-    source: drugrephub
+    source: drug-approvals-kp
   - relation_type: prov:hadPrimarySource
     source: drugcentral
   - relation_type: prov:hadPrimarySource
-    source: gtopdb
+    source: drugrephub
   - relation_type: prov:hadPrimarySource
     source: gene2phenotype
   - relation_type: prov:hadPrimarySource
@@ -166,6 +161,8 @@ products:
     source: go-cam
   - relation_type: prov:hadPrimarySource
     source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
@@ -187,13 +184,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: text-mining-kp
   - relation_type: prov:hadPrimarySource
+    source: translator
+  - relation_type: prov:hadPrimarySource
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ubergraph
   product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: translator
   versions:
   - '2026_03_27'
   - 423af7989cac

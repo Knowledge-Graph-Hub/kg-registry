@@ -1,15 +1,18 @@
 ---
 category: Product
-description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in genomic sequences
+description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in genomic
+  sequences
 format: http
 id: tmrnawebsite.software
 name: tmRNA Identification Software
 original_source:
-  - source: tmrnawebsite
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: tmrnawebsite
 product_url: http://bioinformatics.sandia.gov/tmrna/software.html
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

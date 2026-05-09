@@ -72,12 +72,10 @@ products:
     source: gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
     entries
@@ -100,12 +98,10 @@ products:
     source: gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
     Factor Ontology terms
@@ -117,12 +113,10 @@ products:
     source: gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
     integration
@@ -134,12 +128,10 @@ products:
     source: gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
     (current release)
@@ -151,12 +143,10 @@ products:
     source: gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
   format: svg
@@ -167,12 +157,10 @@ products:
     source: gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
     per-study summary statistics under CC0 where available)
@@ -193,11 +181,10 @@ products:
   name: gwascatalog_automat
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: automat
+  - relation_type: prov:hadPrimarySource
     source: gwascatalog
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: automat
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -209,73 +196,75 @@ products:
   node_count: 16000000
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: tissues
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: stitch
-  - relation_type: prov:hadPrimarySource
-    source: smpdb
-  - relation_type: prov:hadPrimarySource
-    source: signor
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: refseq
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
-    source: pfam
-  - relation_type: prov:hadPrimarySource
-    source: oncokb
-  - relation_type: prov:hadPrimarySource
-    source: mutationds
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: hpa
-  - relation_type: prov:hadPrimarySource
-    source: hmdb
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: diseases
-  - relation_type: prov:hadPrimarySource
-    source: dgidb
-  - relation_type: prov:hadPrimarySource
-    source: corum
+    source: bto
   - relation_type: prov:hadPrimarySource
     source: cancer-genome-interpreter
   - relation_type: prov:hadPrimarySource
+    source: clinicalkg
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
     source: doid
   - relation_type: prov:hadPrimarySource
-    source: bto
+    source: drugbank
   - relation_type: prov:hadPrimarySource
     source: efo
   - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
-    source: snomedct
+    source: hpa
   - relation_type: prov:hadPrimarySource
-    source: mod
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: mi
   - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
     source: ms
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
@@ -317,9 +306,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: indra
   product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: indra
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -327,78 +313,77 @@ products:
   name: SPOKE Graph
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: ncbigene
+    source: bgee
   - relation_type: prov:hadPrimarySource
-    source: pubmed
+    source: bindingdb
   - relation_type: prov:hadPrimarySource
-    source: mesh
+    source: bv-brc
   - relation_type: prov:hadPrimarySource
-    source: pid
+    source: chembl
   - relation_type: prov:hadPrimarySource
-    source: doid
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
     source: diseases
   - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
     source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
   - relation_type: prov:hadPrimarySource
     source: go
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: lincs-l1000
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  - relation_type: prov:hadPrimarySource
-    source: bindingdb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: bgee
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: chembl
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: civic
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  - relation_type: prov:hadPrimarySource
-    source: clinicaltrialsgov
-  - relation_type: prov:hadPrimarySource
     source: hpa
   - relation_type: prov:hadPrimarySource
-    source: cl
+    source: interpro
   - relation_type: prov:hadPrimarySource
     source: kegg
   - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
     source: metacyc
   - relation_type: prov:hadPrimarySource
-    source: bv-brc
+    source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
   - relation_type: prov:hadPrimarySource
     source: pathophenodb
   - relation_type: prov:hadPrimarySource
     source: pfam
   - relation_type: prov:hadPrimarySource
-    source: interpro
+    source: pid
   - relation_type: prov:hadPrimarySource
     source: protcid
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
     source: spoke
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -434,15 +419,14 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   product_url: https://www.disgenet.com/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: disgenet
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
   id: alzkb.browser
   name: AlzKB Graph Database Browser
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
   - relation_type: prov:hadPrimarySource
     source: aop-db
   - relation_type: prov:hadPrimarySource
@@ -486,14 +470,14 @@ products:
   product_url: https://alzkb.ai:7473/login
   secondary_source:
   - relation_type: prov:wasInfluencedBy
-    source: alzkb
-  - relation_type: prov:wasInfluencedBy
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alzkb
   - relation_type: prov:hadPrimarySource
     source: aop-db
   - relation_type: prov:hadPrimarySource
@@ -527,8 +511,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: reactome
   - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
     source: sider
   - relation_type: prov:hadPrimarySource
     source: tissues
@@ -538,8 +520,6 @@ products:
     source: wikipathways
   product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
   secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: alzkb
   - relation_type: prov:wasInfluencedBy
     source: hetionet
 - category: Product
@@ -552,27 +532,26 @@ products:
   name: AOP-DB Data
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: 1000genomes
+  - relation_type: prov:hadPrimarySource
+    source: aop-db
+  - relation_type: prov:hadPrimarySource
     source: aop-wiki
   - relation_type: prov:hadPrimarySource
     source: ctd
   - relation_type: prov:hadPrimarySource
-    source: toxcast
-  - relation_type: prov:hadPrimarySource
     source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: ncbigene
   - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
-    source: 1000genomes
-  - relation_type: prov:hadPrimarySource
-    source: ensembl
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
+    source: toxcast
   product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: aop-db
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -666,15 +645,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: dbsnp
   - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
     source: gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: Graph database dump and additional relationship files for the Clinical
     Knowledge Graph.
@@ -683,73 +662,75 @@ products:
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: tissues
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: stitch
-  - relation_type: prov:hadPrimarySource
-    source: smpdb
-  - relation_type: prov:hadPrimarySource
-    source: signor
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: refseq
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
-    source: pfam
-  - relation_type: prov:hadPrimarySource
-    source: oncokb
-  - relation_type: prov:hadPrimarySource
-    source: mutationds
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: hpa
-  - relation_type: prov:hadPrimarySource
-    source: hmdb
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  - relation_type: prov:hadPrimarySource
-    source: foodb
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: diseases
-  - relation_type: prov:hadPrimarySource
-    source: dgidb
-  - relation_type: prov:hadPrimarySource
-    source: corum
+    source: bto
   - relation_type: prov:hadPrimarySource
     source: cancer-genome-interpreter
   - relation_type: prov:hadPrimarySource
+    source: ckg
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
     source: doid
   - relation_type: prov:hadPrimarySource
-    source: bto
+    source: drugbank
   - relation_type: prov:hadPrimarySource
     source: efo
   - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
   - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
-    source: snomedct
+    source: hpa
   - relation_type: prov:hadPrimarySource
-    source: mod
+    source: intact
   - relation_type: prov:hadPrimarySource
     source: mi
   - relation_type: prov:hadPrimarySource
+    source: mod
+  - relation_type: prov:hadPrimarySource
     source: ms
+  - relation_type: prov:hadPrimarySource
+    source: mutationds
+  - relation_type: prov:hadPrimarySource
+    source: oncokb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: phosphositeplus
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stitch
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1

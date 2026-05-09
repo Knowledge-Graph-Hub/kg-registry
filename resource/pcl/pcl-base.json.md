@@ -6,7 +6,7 @@ id: pcl-base.json
 name: pcl-base.json
 product_url: http://purl.obolibrary.org/obo/pcl-base.json
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
   accessing file

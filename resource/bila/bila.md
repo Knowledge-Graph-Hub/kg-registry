@@ -2,20 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: henrich@embl.de
-      - contact_type: github
-        value: ThorstenHen
-    label: Thorsten Henrich
-    orcid: 0000-0002-1548-3290
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: henrich@embl.de
+  - contact_type: github
+    value: ThorstenHen
+  label: Thorsten Henrich
+  orcid: 0000-0002-1548-3290
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
-  - anatomy and development
+- anatomy and development
 homepage_url: http://4dx.embl.de/4DXpress
 id: bila
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -25,23 +25,22 @@ license:
   label: Not specified
 name: Bilateria anatomy
 products:
-  - category: OntologyProduct
-    description: Bilateria anatomy in OWL format
-    format: owl
-    id: bila.owl
-    name: bila.owl
-    product_url: http://purl.obolibrary.org/obo/bila.owl
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
-    original_source:
-      - source: bila
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Bilateria anatomy in OWL format
+  format: owl
+  id: bila.owl
+  name: bila.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bila
+  product_url: http://purl.obolibrary.org/obo/bila.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
+    when accessing file'
 publications: []
 taxon:
-  - NCBITaxon:33213
+- NCBITaxon:33213
 ---
-
 ## Description
 
 Description unavailable.

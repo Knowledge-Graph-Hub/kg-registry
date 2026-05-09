@@ -4,13 +4,16 @@ description: Blood protein expression data from healthy individuals and disease 
 format: tsv
 id: hpa.blood_protein
 name: HPA Blood Protein Data
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: hpa
 product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
+  to URL
 layout: product_detail
-original_source:
-  - source: hpa
-    relation_type: prov:hadPrimarySource
 ---

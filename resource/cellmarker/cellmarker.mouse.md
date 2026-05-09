@@ -3,14 +3,18 @@ category: Product
 description: Cell markers of different cell types from different tissues in mouse
 id: cellmarker.mouse
 name: Mouse Cell Markers
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: cellmarker
 product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
-  - File was not able to be retrieved when checked on 2026-04-15_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+- File was not able to be retrieved when checked on 2026-05-09_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2026-04-15_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+  to URL
+- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+  header found
 layout: product_detail
-original_source:
-  - source: cellmarker
-    relation_type: prov:hadPrimarySource
 ---

@@ -5,13 +5,17 @@ format: txt
 id: cpdb.downloads
 name: ConsensusPathDB Data Downloads
 original_source:
-  - source: cpdb
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: cpdb
 product_url: http://cpdb.molgen.mpg.de/CPDB/download
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting to URL
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
+  to URL
 layout: product_detail
 ---

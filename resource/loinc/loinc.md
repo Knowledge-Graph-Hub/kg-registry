@@ -63,12 +63,10 @@ products:
     source: loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 503 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
+    accessing file
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
   format: mixed
@@ -79,12 +77,10 @@ products:
     source: loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 503 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
+    accessing file
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
     development (CC-BY 4.0 licensed document)
@@ -95,12 +91,10 @@ products:
     source: loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 503 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
+    accessing file
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -110,81 +104,29 @@ products:
   name: UBKG Neo4j Docker Distribution
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hgnc
+    source: 4dn
   - relation_type: prov:hadPrimarySource
-    source: loinc
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: obib
-  - relation_type: prov:hadPrimarySource
-    source: edam
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: sbo
-  - relation_type: prov:hadPrimarySource
-    source: mi
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: chebi
   - relation_type: prov:hadPrimarySource
-    source: mp
+    source: cl
   - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: pgo
-  - relation_type: prov:hadPrimarySource
-    source: gencode
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: hra
-  - relation_type: prov:hadPrimarySource
-    source: hubmap
-  - relation_type: prov:hadPrimarySource
-    source: sennet
-  - relation_type: prov:hadPrimarySource
-    source: stellar
-  - relation_type: prov:hadPrimarySource
-    source: dct
+    source: clingen
   - relation_type: prov:hadPrimarySource
     source: clinvar
   - relation_type: prov:hadPrimarySource
     source: connectivitymap
   - relation_type: prov:hadPrimarySource
-    source: hp
+    source: dct
   - relation_type: prov:hadPrimarySource
-    source: mp
+    source: disgenet
   - relation_type: prov:hadPrimarySource
-    source: msigdb
+    source: doid
   - relation_type: prov:hadPrimarySource
-    source: wikipathways
+    source: edam
   - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: 4dn
+    source: efo
   - relation_type: prov:hadPrimarySource
     source: erccrbp
   - relation_type: prov:hadPrimarySource
@@ -192,33 +134,82 @@ products:
   - relation_type: prov:hadPrimarySource
     source: faldo
   - relation_type: prov:hadPrimarySource
-    source: glycordf
+    source: gencode
   - relation_type: prov:hadPrimarySource
     source: glycocoo
   - relation_type: prov:hadPrimarySource
+    source: glycordf
+  - relation_type: prov:hadPrimarySource
     source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: icd10
   - relation_type: prov:hadPrimarySource
     source: kidsfirst
   - relation_type: prov:hadPrimarySource
     source: lincs
   - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
     source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
   - relation_type: prov:hadPrimarySource
     source: mw
   - relation_type: prov:hadPrimarySource
     source: npo
   - relation_type: prov:hadPrimarySource
-    source: sckan
+    source: obi
   - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: biomarker
+    source: obib
   - relation_type: prov:hadPrimarySource
     source: opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pgo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stellar
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
     source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://ubkg-downloads.xconsortia.org/
 - category: GraphProduct
   description: Ontology CSV files that can be imported into a neo4j instance to create
     a UBKG database. Requires UMLS API key to access.
@@ -227,81 +218,29 @@ products:
   name: UBKG Ontology CSV Files
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hgnc
+    source: 4dn
   - relation_type: prov:hadPrimarySource
-    source: loinc
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: obib
-  - relation_type: prov:hadPrimarySource
-    source: edam
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: sbo
-  - relation_type: prov:hadPrimarySource
-    source: mi
+    source: biomarker
   - relation_type: prov:hadPrimarySource
     source: chebi
   - relation_type: prov:hadPrimarySource
-    source: mp
+    source: cl
   - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: pgo
-  - relation_type: prov:hadPrimarySource
-    source: gencode
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: hra
-  - relation_type: prov:hadPrimarySource
-    source: hubmap
-  - relation_type: prov:hadPrimarySource
-    source: sennet
-  - relation_type: prov:hadPrimarySource
-    source: stellar
-  - relation_type: prov:hadPrimarySource
-    source: dct
+    source: clingen
   - relation_type: prov:hadPrimarySource
     source: clinvar
   - relation_type: prov:hadPrimarySource
     source: connectivitymap
   - relation_type: prov:hadPrimarySource
-    source: hp
+    source: dct
   - relation_type: prov:hadPrimarySource
-    source: mp
+    source: disgenet
   - relation_type: prov:hadPrimarySource
-    source: msigdb
+    source: doid
   - relation_type: prov:hadPrimarySource
-    source: wikipathways
+    source: edam
   - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: 4dn
+    source: efo
   - relation_type: prov:hadPrimarySource
     source: erccrbp
   - relation_type: prov:hadPrimarySource
@@ -309,33 +248,82 @@ products:
   - relation_type: prov:hadPrimarySource
     source: faldo
   - relation_type: prov:hadPrimarySource
-    source: glycordf
+    source: gencode
   - relation_type: prov:hadPrimarySource
     source: glycocoo
   - relation_type: prov:hadPrimarySource
+    source: glycordf
+  - relation_type: prov:hadPrimarySource
     source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: icd10
   - relation_type: prov:hadPrimarySource
     source: kidsfirst
   - relation_type: prov:hadPrimarySource
     source: lincs
   - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
     source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
   - relation_type: prov:hadPrimarySource
     source: mw
   - relation_type: prov:hadPrimarySource
     source: npo
   - relation_type: prov:hadPrimarySource
-    source: sckan
+    source: obi
   - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: biomarker
+    source: obib
   - relation_type: prov:hadPrimarySource
     source: opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pgo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stellar
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
     source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://ubkg-downloads.xconsortia.org/
 - category: MappingProduct
   description: Concept mappings between different terminology systems
   format: csv
@@ -343,23 +331,22 @@ products:
   name: Athena Concept Mappings
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: snomedct
+    source: athena
+  - relation_type: prov:hadPrimarySource
+    source: cdiscvocab
+  - relation_type: prov:hadPrimarySource
+    source: ciel
   - relation_type: prov:hadPrimarySource
     source: icd10
   - relation_type: prov:hadPrimarySource
     source: icd10cm
   - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
     source: loinc
   - relation_type: prov:hadPrimarySource
-    source: cdiscvocab
+    source: mesh
   - relation_type: prov:hadPrimarySource
-    source: ciel
+    source: snomedct
   product_url: https://athena.ohdsi.org/search-terms/start
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: athena
   warnings:
   - Athena mapping exports are accessed through the authenticated Athena web application;
     stable direct public file URLs are not exposed.
@@ -371,31 +358,30 @@ products:
   name: Athena Vocabulary Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: icd10cm
-  - relation_type: prov:hadPrimarySource
-    source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: loinc
+    source: athena
   - relation_type: prov:hadPrimarySource
     source: cdiscvocab
   - relation_type: prov:hadPrimarySource
     source: ciel
   - relation_type: prov:hadPrimarySource
-    source: rxnorm
+    source: gemscript
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: icd10cm
+  - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: medispan-gpi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   - relation_type: prov:hadPrimarySource
     source: ndcd
   - relation_type: prov:hadPrimarySource
-    source: gemscript
+    source: rxnorm
   - relation_type: prov:hadPrimarySource
-    source: medispan-gpi
+    source: snomedct
   product_url: https://athena.ohdsi.org/vocabulary/list
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: athena
   warnings:
   - Athena vocabulary downloads are prepared through the logged-in web application;
     stable direct public file URLs are not exposed.

@@ -1,15 +1,18 @@
 ---
 category: Product
 compression: zip
-description: Simple CSV format occurrence downloads with interpreted data and commonly used columns, suitable for spreadsheet and programming analysis
+description: Simple CSV format occurrence downloads with interpreted data and commonly
+  used columns, suitable for spreadsheet and programming analysis
 id: gbif.csv-download
 name: GBIF Simple CSV Downloads
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: gbif
 product_url: https://www.gbif.org/occurrence/download
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 403 error when
+  accessing file
+- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: gbif
-    relation_type: prov:hadPrimarySource
 ---

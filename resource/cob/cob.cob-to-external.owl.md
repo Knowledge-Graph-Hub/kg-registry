@@ -4,11 +4,12 @@ description: COB to external
 format: owl
 id: cob.cob-to-external.owl
 name: COB to external
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: cob
 product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
 warnings:
-  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+  accessing file
 layout: product_detail
-original_source:
-  - source: cob
-    relation_type: prov:hadPrimarySource
 ---

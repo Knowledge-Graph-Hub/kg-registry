@@ -2,369 +2,383 @@
 activity_status: active
 category: Ontology
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: rene@ccrc.uga.edu
-    label: Rene Ranzinger
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: kkiyoko@soka.ac.jp
-    label: Kiyoko F. Aoki-Kinoshita
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: rene@ccrc.uga.edu
+  label: Rene Ranzinger
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kkiyoko@soka.ac.jp
+  label: Kiyoko F. Aoki-Kinoshita
 creation_date: '2025-10-29T00:00:00Z'
 curators:
-  - category: Individual
-    contact_details:
-      - contact_type: github
-        value: ReneRanzinger
-    label: Rene Ranzinger
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: kkiyoko@soka.ac.jp
-    label: Kiyoko F. Aoki-Kinoshita
-description: 'GlycoRDF is a standardized ontology for representing glycomics data in Resource Description Framework (RDF) format. It provides a common machine-readable interface for glycomics databases, enabling integration and cross-referencing of glycan structures, biological source information, publications, and experimental data. Developed by an international consortium of glycomics bioinformatics experts, GlycoRDF defines classes and predicates for diverse glycomics data types including glycan sequences, monosaccharide compositions, biological sources, literature references, NMR data, mass spectrometry data, and liquid chromatography-mass spectrometry data. The ontology reuses concepts from established ontologies including UniProt Core, Bibliographic Ontology, Dublin Core Metadata Initiative, and HUPO-PSI Mass Spectrometry Ontology. GlycoRDF has been adopted by major glycomics database providers including CSDB, MonosaccharideDB, GlycomeDB, UniCarbKB, GlycoEpitope, GlycoNAVI, and GlycoProtDB, facilitating semantic web applications and SPARQL queries across heterogeneous glycomics data sources.
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: ReneRanzinger
+  label: Rene Ranzinger
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kkiyoko@soka.ac.jp
+  label: Kiyoko F. Aoki-Kinoshita
+description: 'GlycoRDF is a standardized ontology for representing glycomics data
+  in Resource Description Framework (RDF) format. It provides a common machine-readable
+  interface for glycomics databases, enabling integration and cross-referencing of
+  glycan structures, biological source information, publications, and experimental
+  data. Developed by an international consortium of glycomics bioinformatics experts,
+  GlycoRDF defines classes and predicates for diverse glycomics data types including
+  glycan sequences, monosaccharide compositions, biological sources, literature references,
+  NMR data, mass spectrometry data, and liquid chromatography-mass spectrometry data.
+  The ontology reuses concepts from established ontologies including UniProt Core,
+  Bibliographic Ontology, Dublin Core Metadata Initiative, and HUPO-PSI Mass Spectrometry
+  Ontology. GlycoRDF has been adopted by major glycomics database providers including
+  CSDB, MonosaccharideDB, GlycomeDB, UniCarbKB, GlycoEpitope, GlycoNAVI, and GlycoProtDB,
+  facilitating semantic web applications and SPARQL queries across heterogeneous glycomics
+  data sources.
 
   '
 domains:
-  - chemistry and biochemistry
-  - biological systems
-  - biomedical
+- chemistry and biochemistry
+- biological systems
+- biomedical
 homepage_url: http://www.glycoinfo.org/GlycoRDF/
 id: glycordf
 last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
 name: 'GlycoRDF: An Ontology to Standardize Glycomics Data in RDF'
 products:
-  - category: OntologyProduct
-    description: OWL ontology file defining the GlycoRDF standard for representing glycomics data in RDF format
-    format: owl
-    id: glycordf.ontology
-    name: GlycoRDF Ontology (OWL)
-    product_file_size: 32914
-    product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology
-    format: http
-    id: glycordf.bioportal
-    name: GlycoRDF BioPortal Entry
-    product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Comprehensive documentation of the GlycoRDF ontology classes, predicates, and usage examples
-    format: doc
-    id: glycordf.documentation
-    name: GlycoRDF Documentation
-    product_file_size: 62492
-    product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/documentation.docx
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Official project homepage with overview, documentation, and links to database implementations
-    format: http
-    id: glycordf.homepage
-    name: GlycoRDF Project Homepage
-    product_url: http://www.glycoinfo.org/GlycoRDF/
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: GitHub repository containing ontology files, documentation, and source code for RDF generation
-    format: http
-    id: glycordf.github
-    name: GlycoRDF GitHub Repository
-    product_url: https://github.com/glycoinfo/GlycoRDF
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Wiki with developer information, database provider documentation, and implementation guidelines
-    format: http
-    id: glycordf.wiki
-    name: GlycoRDF Wiki
-    product_url: https://github.com/ReneRanzinger/GlycoRDF/wiki
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: ProcessProduct
-    description: Java source code for generating GlycoRDF data from glycomics databases
-    format: java
-    id: glycordf.java-source
-    name: GlycoRDF Java Source Code
-    repository: https://github.com/glycoinfo/GlycoRDF
-    original_source:
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-  - category: GraphProduct
-    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
-    dump_format: neo4j
-    id: ubkg.neo4j
-    name: UBKG Neo4j Docker Distribution
-    original_source:
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: loinc
-        relation_type: prov:hadPrimarySource
-      - source: icd10
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: pato
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: obi
-        relation_type: prov:hadPrimarySource
-      - source: obib
-        relation_type: prov:hadPrimarySource
-      - source: edam
-        relation_type: prov:hadPrimarySource
-      - source: hsapdv
-        relation_type: prov:hadPrimarySource
-      - source: sbo
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: ordo
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: pgo
-        relation_type: prov:hadPrimarySource
-      - source: gencode
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: hra
-        relation_type: prov:hadPrimarySource
-      - source: hubmap
-        relation_type: prov:hadPrimarySource
-      - source: sennet
-        relation_type: prov:hadPrimarySource
-      - source: stellar
-        relation_type: prov:hadPrimarySource
-      - source: dct
-        relation_type: prov:hadPrimarySource
-      - source: clinvar
-        relation_type: prov:hadPrimarySource
-      - source: connectivitymap
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: clingen
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: 4dn
-        relation_type: prov:hadPrimarySource
-      - source: erccrbp
-        relation_type: prov:hadPrimarySource
-      - source: erccreg
-        relation_type: prov:hadPrimarySource
-      - source: faldo
-        relation_type: prov:hadPrimarySource
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-      - source: glycocoo
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: kidsfirst
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: motrpac
-        relation_type: prov:hadPrimarySource
-      - source: mw
-        relation_type: prov:hadPrimarySource
-      - source: npo
-        relation_type: prov:hadPrimarySource
-      - source: sckan
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: biomarker
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - source: ubkg
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
-    format: csv
-    id: ubkg.csv
-    name: UBKG Ontology CSV Files
-    original_source:
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: loinc
-        relation_type: prov:hadPrimarySource
-      - source: icd10
-        relation_type: prov:hadPrimarySource
-      - source: snomedct
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: pato
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: obi
-        relation_type: prov:hadPrimarySource
-      - source: obib
-        relation_type: prov:hadPrimarySource
-      - source: edam
-        relation_type: prov:hadPrimarySource
-      - source: hsapdv
-        relation_type: prov:hadPrimarySource
-      - source: sbo
-        relation_type: prov:hadPrimarySource
-      - source: mi
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: ordo
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: uo
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: efo
-        relation_type: prov:hadPrimarySource
-      - source: pgo
-        relation_type: prov:hadPrimarySource
-      - source: gencode
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: hra
-        relation_type: prov:hadPrimarySource
-      - source: hubmap
-        relation_type: prov:hadPrimarySource
-      - source: sennet
-        relation_type: prov:hadPrimarySource
-      - source: stellar
-        relation_type: prov:hadPrimarySource
-      - source: dct
-        relation_type: prov:hadPrimarySource
-      - source: clinvar
-        relation_type: prov:hadPrimarySource
-      - source: connectivitymap
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: mp
-        relation_type: prov:hadPrimarySource
-      - source: msigdb
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: clingen
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: 4dn
-        relation_type: prov:hadPrimarySource
-      - source: erccrbp
-        relation_type: prov:hadPrimarySource
-      - source: erccreg
-        relation_type: prov:hadPrimarySource
-      - source: faldo
-        relation_type: prov:hadPrimarySource
-      - source: glycordf
-        relation_type: prov:hadPrimarySource
-      - source: glycocoo
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: kidsfirst
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: motrpac
-        relation_type: prov:hadPrimarySource
-      - source: mw
-        relation_type: prov:hadPrimarySource
-      - source: npo
-        relation_type: prov:hadPrimarySource
-      - source: sckan
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: biomarker
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-    product_url: https://ubkg-downloads.xconsortia.org/
-    secondary_source:
-      - source: ubkg
-        relation_type: prov:wasInfluencedBy
+- category: OntologyProduct
+  description: OWL ontology file defining the GlycoRDF standard for representing glycomics
+    data in RDF format
+  format: owl
+  id: glycordf.ontology
+  name: GlycoRDF Ontology (OWL)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_file_size: 32914
+  product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology
+  format: http
+  id: glycordf.bioportal
+  name: GlycoRDF BioPortal Entry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
+- category: DocumentationProduct
+  description: Comprehensive documentation of the GlycoRDF ontology classes, predicates,
+    and usage examples
+  format: doc
+  id: glycordf.documentation
+  name: GlycoRDF Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_file_size: 62492
+  product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/documentation.docx
+- category: GraphicalInterface
+  description: Official project homepage with overview, documentation, and links to
+    database implementations
+  format: http
+  id: glycordf.homepage
+  name: GlycoRDF Project Homepage
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_url: http://www.glycoinfo.org/GlycoRDF/
+- category: GraphicalInterface
+  description: GitHub repository containing ontology files, documentation, and source
+    code for RDF generation
+  format: http
+  id: glycordf.github
+  name: GlycoRDF GitHub Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_url: https://github.com/glycoinfo/GlycoRDF
+- category: DocumentationProduct
+  description: Wiki with developer information, database provider documentation, and
+    implementation guidelines
+  format: http
+  id: glycordf.wiki
+  name: GlycoRDF Wiki
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_url: https://github.com/ReneRanzinger/GlycoRDF/wiki
+- category: ProcessProduct
+  description: Java source code for generating GlycoRDF data from glycomics databases
+  format: java
+  id: glycordf.java-source
+  name: GlycoRDF Java Source Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  repository: https://github.com/glycoinfo/GlycoRDF
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: connectivitymap
+  - relation_type: prov:hadPrimarySource
+    source: dct
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: edam
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: erccrbp
+  - relation_type: prov:hadPrimarySource
+    source: erccreg
+  - relation_type: prov:hadPrimarySource
+    source: faldo
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: kidsfirst
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: npo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: obib
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pgo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stellar
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://ubkg-downloads.xconsortia.org/
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 4dn
+  - relation_type: prov:hadPrimarySource
+    source: biomarker
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: connectivitymap
+  - relation_type: prov:hadPrimarySource
+    source: dct
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: edam
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: erccrbp
+  - relation_type: prov:hadPrimarySource
+    source: erccreg
+  - relation_type: prov:hadPrimarySource
+    source: faldo
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  - relation_type: prov:hadPrimarySource
+    source: hsapdv
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: kidsfirst
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: loinc
+  - relation_type: prov:hadPrimarySource
+    source: mi
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  - relation_type: prov:hadPrimarySource
+    source: npo
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: obib
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: pgo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: sbo
+  - relation_type: prov:hadPrimarySource
+    source: sckan
+  - relation_type: prov:hadPrimarySource
+    source: sennet
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: stellar
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://ubkg-downloads.xconsortia.org/
 publications:
-  - authors:
-      - Rene Ranzinger
-      - Kiyoko F. Aoki-Kinoshita
-      - Matthew P. Campbell
-      - Shin Kawano
-      - Thomas Lütteke
-      - Shujiro Okuda
-      - Daisuke Shinmachi
-      - Toshihide Shikanai
-      - Hiromichi Sawaki
-      - Philip Toukach
-    category: Publication
-    id: https://doi.org/10.1093/bioinformatics/btu732
-    journal: Bioinformatics
-    preferred: true
-    title: 'GlycoRDF: an ontology to standardize glycomics data in RDF'
-    year: '2015'
-  - authors:
-      - Kiyoko F. Aoki-Kinoshita
-    category: Publication
-    id: https://doi.org/10.1186/2041-1480-4-39
-    journal: Journal of Biomedical Semantics
-    preferred: false
-    title: Introducing glycomics data into the Semantic Web
-    year: '2013'
+- authors:
+  - Rene Ranzinger
+  - Kiyoko F. Aoki-Kinoshita
+  - Matthew P. Campbell
+  - Shin Kawano
+  - "Thomas L\xFCtteke"
+  - Shujiro Okuda
+  - Daisuke Shinmachi
+  - Toshihide Shikanai
+  - Hiromichi Sawaki
+  - Philip Toukach
+  category: Publication
+  id: https://doi.org/10.1093/bioinformatics/btu732
+  journal: Bioinformatics
+  preferred: true
+  title: 'GlycoRDF: an ontology to standardize glycomics data in RDF'
+  year: '2015'
+- authors:
+  - Kiyoko F. Aoki-Kinoshita
+  category: Publication
+  id: https://doi.org/10.1186/2041-1480-4-39
+  journal: Journal of Biomedical Semantics
+  preferred: false
+  title: Introducing glycomics data into the Semantic Web
+  year: '2013'
 repository: https://github.com/glycoinfo/GlycoRDF
 tags:
-  - biopragmatics
+- biopragmatics
 ---
-
 ## Overview
 
 GlycoRDF is a collaborative effort by the international glycomics community to create a standardized representation for glycomics data using Resource Description Framework (RDF) and Web Ontology Language (OWL). The ontology addresses the critical need for data integration across diverse glycomics databases, which historically have used incompatible formats and representations for glycan structures and associated metadata.

@@ -50,16 +50,12 @@ products:
     source: hpidb
   product_url: https://hpidb.igbb.msstate.edu/
   warnings:
-  - The HPIDB homepage and historical AgBase download URL were not reachable during
-    curation on 2026-05-04.
-  - 'File was not able to be retrieved when checked on 2026-05-04: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-05-09: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The HPIDB homepage and historical AgBase download URL were not reachable during
+    curation on 2026-05-04.
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/intact/ws
   description: IntAct web service and URL-based programmatic interface for retrieving
@@ -80,9 +76,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdbe
   product_url: https://www.ebi.ac.uk/intact/ws
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: intact
 - category: Product
   description: IntAct data in PSI-MI XML 2.5 format (directory)
   format: psi_mi_xml
@@ -100,9 +93,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: intact
 - category: Product
   description: IntAct data in PSI-MI XML 3.0 format (directory)
   format: psi_mi_xml
@@ -120,9 +110,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: intact
 - category: Product
   description: IntAct data in PSI-MI MITAB format (directory)
   format: psi_mi_mitab
@@ -140,9 +127,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdbe
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: intact
 - category: Product
   description: Entire MITAB export of the database as a single archive (intact.zip)
   format: psi_mi_mitab
@@ -161,9 +145,6 @@ products:
     source: pdbe
   product_file_size: 846305671
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: intact
 - category: Product
   description: Curated and computational datasets (disease-, method-, and species-specific)
     with per-dataset downloads
@@ -182,9 +163,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdbe
   product_url: https://www.ebi.ac.uk/intact/download/datasets
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: intact
 publications:
 - authors:
   - Muna G. Ammari

@@ -2,82 +2,83 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: liangcheng@hrbmu.edu.cn
-    label: Liang Cheng
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: xuezhang@hrbmu.edu.cn
-    label: Xue Zhang
-description: A manually curated database of target genes of gut microbes and microbial metabolites in humans and mice.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: liangcheng@hrbmu.edu.cn
+  label: Liang Cheng
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: xuezhang@hrbmu.edu.cn
+  label: Xue Zhang
+creation_date: '2025-04-13T00:00:00Z'
+description: A manually curated database of target genes of gut microbes and microbial
+  metabolites in humans and mice.
 domains:
-  - biological systems
-  - microbiology
+- biological systems
+- microbiology
 homepage_url: http://bio-computing.hrbmu.edu.cn/gutmgene
 id: gutmgene
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 name: GutMGene
 products:
-  - category: GraphicalInterface
-    description: GutMGene data and interface
-    id: gutmgene.site
-    name: GutMGene site
-    original_source:
-      - source: gutmgene
-        relation_type: prov:hadPrimarySource
-    product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
-  - category: ProcessProduct
-    description: Code for generating MGMLink
-    id: mgmlink.code
-    name: MGMLink code
-    original_source:
-      - source: gutmgene
-        relation_type: prov:hadPrimarySource
-      - source: pheknowlator
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/bsantan/MGMLink
-    secondary_source:
-      - source: mgmlink
-        relation_type: prov:wasInfluencedBy
+- category: GraphicalInterface
+  description: GutMGene data and interface
+  id: gutmgene.site
+  name: GutMGene site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gutmgene
+  product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
+- category: ProcessProduct
+  description: Code for generating MGMLink
+  id: mgmlink.code
+  name: MGMLink code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gutmgene
+  - relation_type: prov:hadPrimarySource
+    source: mgmlink
+  - relation_type: prov:hadPrimarySource
+    source: pheknowlator
+  product_url: https://github.com/bsantan/MGMLink
 publications:
-  - authors:
-      - Cheng L
-      - Qi C
-      - Yang H
-      - Lu M
-      - Cai Y
-      - Fu T
-      - Ren J
-      - Jin Q
-      - Zhang X
-    doi: 10.1093/nar/gkab786
-    id: doi:10.1093/nar/gkab786
-    title: '''gutMGene: a comprehensive database for target genes of gut microbes and microbial metabolites'''
-    year: '2021'
-  - authors:
-      - Qi C
-      - He G
-      - Qian K
-      - Guan S
-      - Li Z
-      - Liang S
-      - Liu J
-      - Ke X
-      - Zhang S
-      - Lu M
-      - Cheng L
-      - Zhang X
-    doi: 10.1093/nar/gkae1002
-    id: doi:10.1093/nar/gkae1002
-    title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of gut microbes and microbial metabolites'''
-    year: '2025'
+- authors:
+  - Cheng L
+  - Qi C
+  - Yang H
+  - Lu M
+  - Cai Y
+  - Fu T
+  - Ren J
+  - Jin Q
+  - Zhang X
+  doi: 10.1093/nar/gkab786
+  id: doi:10.1093/nar/gkab786
+  title: '''gutMGene: a comprehensive database for target genes of gut microbes and
+    microbial metabolites'''
+  year: '2021'
+- authors:
+  - Qi C
+  - He G
+  - Qian K
+  - Guan S
+  - Li Z
+  - Liang S
+  - Liu J
+  - Ke X
+  - Zhang S
+  - Lu M
+  - Cheng L
+  - Zhang X
+  doi: 10.1093/nar/gkae1002
+  id: doi:10.1093/nar/gkae1002
+  title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of gut
+    microbes and microbial metabolites'''
+  year: '2025'
 taxon:
-  - NCBITaxon:2
-creation_date: '2025-04-13T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+- NCBITaxon:2
 ---
-
 GutMGene

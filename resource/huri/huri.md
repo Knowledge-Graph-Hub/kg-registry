@@ -2,25 +2,30 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://ccsb.dana-farber.org/
-    label: Center for Cancer Systems Biology
-  - category: Individual
-    label: Marc Vidal
-    orcid: 0000-0002-9500-6065
-  - category: Individual
-    label: Frederick P. Roth
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://ccsb.dana-farber.org/
+  label: Center for Cancer Systems Biology
+- category: Individual
+  label: Marc Vidal
+  orcid: 0000-0002-9500-6065
+- category: Individual
+  label: Frederick P. Roth
 creation_date: '2025-08-05T00:00:00Z'
-description: The Human Reference Interactome (HuRI) is a comprehensive map of binary protein-protein interactions in human cells, generated through systematic high-throughput yeast two-hybrid screening. HuRI provides the largest experimentally verified collection of human protein interactions and serves as a foundational resource for understanding cellular networks and disease mechanisms.
+description: The Human Reference Interactome (HuRI) is a comprehensive map of binary
+  protein-protein interactions in human cells, generated through systematic high-throughput
+  yeast two-hybrid screening. HuRI provides the largest experimentally verified collection
+  of human protein interactions and serves as a foundational resource for understanding
+  cellular networks and disease mechanisms.
 domains:
-  - biomedical
-  - biological systems
-  - proteomics
-  - systems biology
+- biomedical
+- biological systems
+- proteomics
+- systems biology
 homepage_url: http://www.interactome-atlas.org/
 id: huri
+infores_id: huri
 last_modified_date: '2025-08-05T00:00:00Z'
 layout: resource_detail
 license:
@@ -28,141 +33,140 @@ license:
   label: CC BY 4.0
 name: HuRI
 products:
-  - category: Product
-    description: Human Reference Interactome (HuRI) protein-protein interaction data
-    format: tsv
-    id: huri.interactions
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC BY 4.0
-    name: HuRI Protein-Protein Interactions
-    product_url: http://www.interactome-atlas.org/download
-    original_source:
-      - source: huri
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Literature-curated high-quality protein-protein interactions from comparable experimental approaches
-    format: tsv
-    id: huri.literature_benchmark
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC BY 4.0
-    name: HuRI Literature Benchmark
-    product_url: http://www.interactome-atlas.org/download
-    original_source:
-      - source: huri
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing human protein interactions
-    id: huri.portal
-    name: HuRI Web Portal
-    product_url: http://www.interactome-atlas.org/
-    original_source:
-      - source: huri
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
-    id: bioteque.embeddings
-    name: Bioteque Embeddings
-    original_source:
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: cosmic
-        relation_type: prov:hadPrimarySource
-      - source: achilles
-        relation_type: prov:hadPrimarySource
-      - source: depmap
-        relation_type: prov:hadPrimarySource
-      - source: ccle
-        relation_type: prov:hadPrimarySource
-      - source: gdsc
-        relation_type: prov:hadPrimarySource
-      - source: cellosaurus
-        relation_type: prov:hadPrimarySource
-      - source: clue
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: pharmacodb
-        relation_type: prov:hadPrimarySource
-      - source: prism
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: offsides
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: repohub
-        relation_type: prov:hadPrimarySource
-      - source: chemicalchecker
-        relation_type: prov:hadPrimarySource
-      - source: repodb
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: dorothea
-        relation_type: prov:hadPrimarySource
-      - source: progeny
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: corum
-        relation_type: prov:hadPrimarySource
-      - source: huri
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: omnipath
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: bto
-        relation_type: prov:hadPrimarySource
-    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-    secondary_source:
-      - source: bioteque
-        relation_type: prov:wasInfluencedBy
+- category: Product
+  description: Human Reference Interactome (HuRI) protein-protein interaction data
+  format: tsv
+  id: huri.interactions
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: HuRI Protein-Protein Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_url: http://www.interactome-atlas.org/download
+- category: Product
+  description: Literature-curated high-quality protein-protein interactions from comparable
+    experimental approaches
+  format: tsv
+  id: huri.literature_benchmark
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: HuRI Literature Benchmark
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_url: http://www.interactome-atlas.org/download
+- category: GraphicalInterface
+  description: Web portal for searching and browsing human protein interactions
+  id: huri.portal
+  name: HuRI Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_url: http://www.interactome-atlas.org/
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: bioteque
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chemicalchecker
+  - relation_type: prov:hadPrimarySource
+    source: clue
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: offsides
+  - relation_type: prov:hadPrimarySource
+    source: omnipath
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: progeny
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
-  - authors:
-      - Katja Luck
-      - Dae-Kyum Kim
-      - Luke Lambourne
-      - Kerstin Spirohn
-      - et al.
-    doi: 10.1038/s41586-020-2188-x
-    id: doi:10.1038/s41586-020-2188-x
-    journal: Nature
-    preferred: true
-    title: A reference map of the human binary protein interactome
-    year: '2020'
+- authors:
+  - Katja Luck
+  - Dae-Kyum Kim
+  - Luke Lambourne
+  - Kerstin Spirohn
+  - et al.
+  doi: 10.1038/s41586-020-2188-x
+  id: doi:10.1038/s41586-020-2188-x
+  journal: Nature
+  preferred: true
+  title: A reference map of the human binary protein interactome
+  year: '2020'
 repository: https://github.com/VIDallab/huri
-infores_id: huri
 taxon:
-  - NCBITaxon:9606
-  - NCBITaxon:4932
+- NCBITaxon:9606
+- NCBITaxon:4932
 ---
-
 # HuRI - Human Reference Interactome
 
 The Human Reference Interactome (HuRI) represents the largest systematically generated map of binary protein-protein interactions in human cells. Developed at the Center for Cancer Systems Biology (CCSB) at Dana-Farber Cancer Institute, HuRI provides a foundational reference for understanding cellular networks, disease mechanisms, and biological processes.

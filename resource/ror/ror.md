@@ -2,34 +2,34 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
-description: Stub Resource page for ror. This page was automatically generated because it was referenced by other resources.
+description: Stub Resource page for ror. This page was automatically generated because
+  it was referenced by other resources.
 domains:
-  - stub
+- stub
 id: ror
 last_modified_date: '2026-02-26T00:00:00Z'
 layout: resource_detail
 name: Ror
 products:
-  - category: Product
-    description: ror Nodes TSV
-    format: tsv
-    id: obo-db-ingest.ror.tsv
-    license:
-      id: https://creativecommons.org/publicdomain/zero/1.0/
-      label: CC0-1.0
-    name: ror Nodes TSV
-    original_source:
-      - source: ror
-        relation_type: prov:hadPrimarySource
-    product_file_size: 5381101
-    product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
-    secondary_source:
-      - source: obo-db-ingest
-        relation_type: prov:wasInfluencedBy
+- category: Product
+  description: ror Nodes TSV
+  format: tsv
+  id: obo-db-ingest.ror.tsv
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: ror Nodes TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  - relation_type: prov:hadPrimarySource
+    source: ror
+  product_file_size: 5381101
+  product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
 warnings:
-  - This is an automatically generated stub page. Please replace with accurate information about this resource.
+- This is an automatically generated stub page. Please replace with accurate information
+  about this resource.
 ---
-
 # Ror
 
 This is an automatically generated stub page for ror. Please update with proper information.

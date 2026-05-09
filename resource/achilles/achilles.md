@@ -2,135 +2,137 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: achilles@broadinstitute.org
-      - contact_type: url
-        value: https://depmap.org/portal/achilles/
-    id: broad
-    label: Project Achilles, Broad Institute
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: achilles@broadinstitute.org
+  - contact_type: url
+    value: https://depmap.org/portal/achilles/
+  id: broad
+  label: Project Achilles, Broad Institute
+creation_date: '2025-07-08T00:00:00Z'
 curators:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://depmap.org/
-    label: DepMap
-description: Project Achilles is a systematic effort aimed at identifying and cataloging gene essentiality across hundreds of genomically characterized cancer cell lines. Achilles uses genome-scale RNAi and CRISPR-Cas9 genetic perturbation reagents to silence or knockout individual genes and identify those genes that affect cell survival.
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://depmap.org/
+  label: DepMap
+description: Project Achilles is a systematic effort aimed at identifying and cataloging
+  gene essentiality across hundreds of genomically characterized cancer cell lines.
+  Achilles uses genome-scale RNAi and CRISPR-Cas9 genetic perturbation reagents to
+  silence or knockout individual genes and identify those genes that affect cell survival.
 domains:
-  - biomedical
-  - genomics
-  - health
+- biomedical
+- genomics
+- health
 homepage_url: https://depmap.org/portal/achilles/
 id: achilles
+last_modified_date: '2025-12-13T00:00:00Z'
 layout: resource_detail
 license:
   id: https://depmap.org/portal/terms/
   label: DepMap Terms of Use
 name: Project Achilles
 products:
-  - category: Product
-    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
-    id: bioteque.embeddings
-    name: Bioteque Embeddings
-    original_source:
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: cosmic
-        relation_type: prov:hadPrimarySource
-      - source: achilles
-        relation_type: prov:hadPrimarySource
-      - source: depmap
-        relation_type: prov:hadPrimarySource
-      - source: ccle
-        relation_type: prov:hadPrimarySource
-      - source: gdsc
-        relation_type: prov:hadPrimarySource
-      - source: cellosaurus
-        relation_type: prov:hadPrimarySource
-      - source: clue
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: pharmacodb
-        relation_type: prov:hadPrimarySource
-      - source: prism
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: lincs
-        relation_type: prov:hadPrimarySource
-      - source: compartments
-        relation_type: prov:hadPrimarySource
-      - source: offsides
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: repohub
-        relation_type: prov:hadPrimarySource
-      - source: chemicalchecker
-        relation_type: prov:hadPrimarySource
-      - source: repodb
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: opentargets
-        relation_type: prov:hadPrimarySource
-      - source: creeds
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: tissues
-        relation_type: prov:hadPrimarySource
-      - source: dorothea
-        relation_type: prov:hadPrimarySource
-      - source: progeny
-        relation_type: prov:hadPrimarySource
-      - source: gtex
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: corum
-        relation_type: prov:hadPrimarySource
-      - source: huri
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: omnipath
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: bto
-        relation_type: prov:hadPrimarySource
-    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-    secondary_source:
-      - source: bioteque
-        relation_type: prov:wasInfluencedBy
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: bioteque
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chemicalchecker
+  - relation_type: prov:hadPrimarySource
+    source: clue
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: creeds
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: dorothea
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: offsides
+  - relation_type: prov:hadPrimarySource
+    source: omnipath
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  - relation_type: prov:hadPrimarySource
+    source: progeny
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: repodb
+  - relation_type: prov:hadPrimarySource
+    source: repohub
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
-  - authors:
-      - Tsherniak A
-      - Vazquez F
-      - Montgomery PG
-      - Weir BA
-      - Kryukov G
-      - Cowley GS
-    doi: 10.1016/j.cell.2017.06.010
-    id: doi:10.1016/j.cell.2017.06.010
-    journal: Cell
-    title: Defining a Cancer Dependency Map
-    year: '2017'
+- authors:
+  - Tsherniak A
+  - Vazquez F
+  - Montgomery PG
+  - Weir BA
+  - Kryukov G
+  - Cowley GS
+  doi: 10.1016/j.cell.2017.06.010
+  id: doi:10.1016/j.cell.2017.06.010
+  journal: Cell
+  title: Defining a Cancer Dependency Map
+  year: '2017'
 taxon:
-  - NCBITaxon:9606
-creation_date: '2025-07-08T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+- NCBITaxon:9606
 ---
-
 # Project Achilles
 
 Project Achilles is a systematic effort aimed at identifying and cataloging gene essentiality across hundreds of genomically characterized cancer cell lines. It is part of the broader Cancer Dependency Map (DepMap) initiative at the Broad Institute.
