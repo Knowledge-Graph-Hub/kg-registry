@@ -514,7 +514,8 @@ function updateGraph() {
     .attr('class', 'edge-label')
     .attr('font-size', 9)
     .attr('text-anchor', 'middle')
-    .attr('pointer-events', 'none')
+    .attr('pointer-events', 'auto')
+    .style('cursor', 'help')
     .text(edgeRelationLabel);
 
   edgeLabelElements = edgeLabelEnter.merge(edgeLabelElements)
