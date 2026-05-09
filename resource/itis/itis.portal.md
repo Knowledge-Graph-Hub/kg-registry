@@ -1,12 +1,12 @@
 ---
 category: GraphicalInterface
-description: Web portal for browsing taxonomic records, hierarchical classification,
-  name sources, and reports
+description: Web portal for browsing taxonomic records, hierarchical classification, name sources, and reports
 format: http
 id: itis.portal
 name: ITIS Web Portal
 original_source:
-- itis
+  - source: itis
+    relation_type: prov:hadPrimarySource
 product_url: https://www.itis.gov/
 layout: product_detail
 ---

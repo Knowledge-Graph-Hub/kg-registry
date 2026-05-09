@@ -5,12 +5,11 @@ format: sdf
 id: hmdb.structures.sdf
 name: HMDB Metabolite Structures (SDF)
 original_source:
-- hmdb
+  - source: hmdb
+    relation_type: prov:hadPrimarySource
 product_url: https://www.hmdb.ca/downloads#structures
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-09-04_ Timeout connecting
-  to URL
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when accessing file
+  - File was not able to be retrieved when checked on 2025-09-04_ Timeout connecting to URL
 layout: product_detail
 ---

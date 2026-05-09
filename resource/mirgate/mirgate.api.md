@@ -5,7 +5,8 @@ format: http
 id: mirgate.api
 name: miRGate API
 original_source:
-- mirgate
+  - source: mirgate
+    relation_type: prov:hadPrimarySource
 product_url: http://mirgate.bioinfo.cnio.es/API/
 layout: product_detail
 ---

@@ -2,23 +2,18 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: http://genomics.senescence.info/help.html
-  label: Human Ageing Genomic Resources
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: http://genomics.senescence.info/help.html
+    label: Human Ageing Genomic Resources
 creation_date: '2025-11-05T00:00:00Z'
-description: GenDR (Database of Dietary Restriction-Related Genes) is a curated database
-  of genes associated with dietary restriction (DR) and its effects on longevity and
-  aging. Part of the Human Ageing Genomic Resources (HAGR), GenDR compiles experimental
-  data on genes whose expression or function is altered by dietary restriction regimens
-  across multiple model organisms. The database includes information on gene function,
-  expression changes, and links to aging-related phenotypes.
+description: GenDR (Database of Dietary Restriction-Related Genes) is a curated database of genes associated with dietary restriction (DR) and its effects on longevity and aging. Part of the Human Ageing Genomic Resources (HAGR), GenDR compiles experimental data on genes whose expression or function is altered by dietary restriction regimens across multiple model organisms. The database includes information on gene function, expression changes, and links to aging-related phenotypes.
 domains:
-- genomics
-- health
-- nutrition
-- biological systems
+  - genomics
+  - health
+  - nutrition
+  - biological systems
 homepage_url: http://genomics.senescence.info/diet/
 id: gendr
 infores_id: gendr
@@ -26,39 +21,43 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: GenDR Database of Dietary Restriction-Related Genes
 products:
-- category: GraphicalInterface
-  description: Web-based search and browsing interface for GenDR
-  format: http
-  id: gendr.web
-  name: GenDR Web Interface
-  original_source:
-  - gendr
-  product_url: http://genomics.senescence.info/diet/
-- category: Product
-  description: Downloadable dataset of dietary restriction-related genes
-  format: csv
-  id: gendr.data
-  name: GenDR Data Download
-  original_source:
-  - gendr
-  product_file_size: 8209
-  product_url: http://genomics.senescence.info/diet/dataset.zip
-- category: ProgrammingInterface
-  description: Programmatic access to GenDR data
-  format: http
-  id: gendr.api
-  name: GenDR API
-  original_source:
-  - gendr
-  product_url: http://genomics.senescence.info/diet/help.html#api
+  - category: GraphicalInterface
+    description: Web-based search and browsing interface for GenDR
+    format: http
+    id: gendr.web
+    name: GenDR Web Interface
+    original_source:
+      - source: gendr
+        relation_type: prov:hadPrimarySource
+    product_url: http://genomics.senescence.info/diet/
+  - category: Product
+    description: Downloadable dataset of dietary restriction-related genes
+    format: csv
+    id: gendr.data
+    name: GenDR Data Download
+    original_source:
+      - source: gendr
+        relation_type: prov:hadPrimarySource
+    product_file_size: 8209
+    product_url: http://genomics.senescence.info/diet/dataset.zip
+  - category: ProgrammingInterface
+    description: Programmatic access to GenDR data
+    format: http
+    id: gendr.api
+    name: GenDR API
+    original_source:
+      - source: gendr
+        relation_type: prov:hadPrimarySource
+    product_url: http://genomics.senescence.info/diet/help.html#api
 publications:
-- id: https://doi.org/10.1093/nar/gkp1108
+  - id: https://doi.org/10.1093/nar/gkp1108
 synonyms:
-- GenDR
-- gendr
+  - GenDR
+  - gendr
 taxon:
-- NCBITaxon:2759
+  - NCBITaxon:2759
 ---
+
 # GenDR Database of Dietary Restriction-Related Genes
 
 ## Overview

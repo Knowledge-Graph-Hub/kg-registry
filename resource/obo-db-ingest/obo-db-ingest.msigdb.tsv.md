@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: msigdb Nodes TSV
 original_source:
-- msigdb
+  - source: msigdb
+    relation_type: prov:hadPrimarySource
 product_file_size: 3121367
 product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

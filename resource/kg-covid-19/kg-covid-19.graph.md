@@ -5,16 +5,15 @@ format: kgx
 id: kg-covid-19.graph
 name: KG-COVID-19 graph
 original_source:
-- kg-covid-19
+  - source: kg-covid-19
+    relation_type: prov:hadPrimarySource
 product_url: https://kghub.io/kg-covid-19/
 secondary_source:
-- kg-covid-19
+  - source: kg-covid-19
+    relation_type: prov:wasInfluencedBy
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when accessing file
 layout: product_detail
 ---

@@ -5,7 +5,8 @@ format: http
 id: prism.portal
 name: PRISM Data Portal
 original_source:
-- prism
+  - source: prism
+    relation_type: prov:hadPrimarySource
 product_url: https://depmap.org/portal/prism/
 layout: product_detail
 ---

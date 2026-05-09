@@ -5,7 +5,8 @@ format: http
 id: cohd.notebooks
 name: COHD API Examples
 original_source:
-- cohd
+  - source: cohd
+    relation_type: prov:hadPrimarySource
 product_file_size: 2834847
 product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
 layout: product_detail

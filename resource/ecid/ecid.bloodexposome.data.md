@@ -6,9 +6,11 @@ id: ecid.bloodexposome.data
 is_public: true
 name: Blood Exposome Database
 original_source:
-- ecid
+  - source: ecid
+    relation_type: prov:hadPrimarySource
 product_url: https://zenodo.org/records/8146024
 secondary_source:
-- ecid
+  - source: ecid
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

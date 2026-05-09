@@ -5,7 +5,8 @@ format: http
 id: regl.docs
 name: REGL Documentation
 original_source:
-- regl
+  - source: regl
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Richards-Effector-Gene-List
 layout: product_detail
 ---

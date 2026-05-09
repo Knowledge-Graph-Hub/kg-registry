@@ -2,17 +2,17 @@
 activity_status: active
 category: DataModel
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: smoxon@lbl.gov
-  - contact_type: github
-    value: sierra-moxon
-  label: Sierra Taylor Moxon
-  orcid: 0000-0002-8719-7760
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: smoxon@lbl.gov
+      - contact_type: github
+        value: sierra-moxon
+    label: Sierra Taylor Moxon
+    orcid: 0000-0002-8719-7760
 description: Entity and association taxonomy and datamodel for life-sciences data
 domains:
-- upper
+  - upper
 homepage_url: https://biolink.github.io/biolink-model/
 id: biolink
 layout: resource_detail
@@ -21,414 +21,467 @@ license:
   label: CC0 1.0
 name: Biolink-Model
 products:
-- category: DocumentationProduct
-  description: Biolink Model Documentation
-  format: http
-  id: biolink.docs
-  name: Biolink Model Documentation
-  original_source:
-  - biolink
-  product_url: https://biolink.github.io/biolink-model/
-  secondary_source:
-  - biolink
-- category: DocumentationProduct
-  description: Information Resource Registry Model documentation, including descriptions
-    of the information resource (infores) registry itself.
-  format: http
-  id: biolink.infores.docs
-  name: Information Resource Registry Model Documentation
-  original_source:
-  - biolink
-  product_url: https://biolink.github.io/information-resource-registry/
-  secondary_source:
-  - biolink
-- category: DataModelProduct
-  compatibility:
-  - standard: biolink
-    version: v4.2.5
-  description: OWL release of Biolink Model
-  format: owl
-  id: biolink.model.owl
-  latest_version: v4.2.6-rc5
-  name: Biolink Model OWL release
-  original_source:
-  - biolink
-  product_file_size: 717005
-  product_url: https://w3id.org/biolink/biolink-model.owl.ttl
-  secondary_source:
-  - biolink
-  versions:
-  - v4.2.6-rc5
-  - v4.2.6-rc4
-  - v4.2.6-rc3
-  - v4.2.6-rc2
-  - v4.2.6-rc1
-  - v4.2.5
-  - v4.2.5-rc2
-  - v4.2.5-rc1
-  - v4.2.4
-  - v4.2.3
-  - v4.2.2
-  - v4.2.1
-  - v4.2.0
-  - v4.2.0-rc.2
-  - v4.2.0-rc.1
-  - v4.1.6
-  - v4.1.5
-  - v4.1.4
-  - v4.1.3
-  - v4.1.2
-  - v4.1.1
-  - v4.1.0
-  - v4.0.0
-  - v3.6.0
-  - v3.5.4
-  - v3.5.3
-  - v3.5.2
-  - v3.5.1
-  - v3.5.0
-  - v3.4.3
-- category: DataModelProduct
-  compatibility:
-  - standard: biolink
-    version: v4.2.5
-  description: JSON schema release of Biolink Model
-  format: json
-  id: biolink.model.json
-  latest_version: v4.2.6-rc5
-  name: Biolink Model JSON release
-  original_source:
-  - biolink
-  product_file_size: 138288
-  product_url: https://w3id.org/biolink/biolink-model.json
-  secondary_source:
-  - biolink
-  versions:
-  - v4.2.6-rc5
-  - v4.2.6-rc4
-  - v4.2.6-rc3
-  - v4.2.6-rc2
-  - v4.2.6-rc1
-  - v4.2.5
-  - v4.2.5-rc2
-  - v4.2.5-rc1
-  - v4.2.4
-  - v4.2.3
-  - v4.2.2
-  - v4.2.1
-  - v4.2.0
-  - v4.2.0-rc.2
-  - v4.2.0-rc.1
-  - v4.1.6
-  - v4.1.5
-  - v4.1.4
-  - v4.1.3
-  - v4.1.2
-  - v4.1.1
-  - v4.1.0
-  - v4.0.0
-  - v3.6.0
-  - v3.5.4
-  - v3.5.3
-  - v3.5.2
-  - v3.5.1
-  - v3.5.0
-  - v3.4.3
-- category: DataModelProduct
-  compatibility:
-  - standard: biolink
-    version: v4.2.5
-  description: GraphQL release of Biolink Model
-  format: graphql
-  id: biolink.model.graphql
-  latest_version: v4.2.6-rc5
-  name: Biolink Model GraphQL release
-  original_source:
-  - biolink
-  product_file_size: 9599
-  product_url: https://w3id.org/biolink/biolink-model.graphql
-  secondary_source:
-  - biolink
-  versions:
-  - v4.2.6-rc5
-  - v4.2.6-rc4
-  - v4.2.6-rc3
-  - v4.2.6-rc2
-  - v4.2.6-rc1
-  - v4.2.5
-  - v4.2.5-rc2
-  - v4.2.5-rc1
-  - v4.2.4
-  - v4.2.3
-  - v4.2.2
-  - v4.2.1
-  - v4.2.0
-  - v4.2.0-rc.2
-  - v4.2.0-rc.1
-  - v4.1.6
-  - v4.1.5
-  - v4.1.4
-  - v4.1.3
-  - v4.1.2
-  - v4.1.1
-  - v4.1.0
-  - v4.0.0
-  - v3.6.0
-  - v3.5.4
-  - v3.5.3
-  - v3.5.2
-  - v3.5.1
-  - v3.5.0
-  - v3.4.3
-- category: DataModelProduct
-  compatibility:
-  - standard: biolink
-    version: v4.2.5
-  description: Protobuf release of Biolink Model
-  format: protobuf
-  id: biolink.model.proto
-  latest_version: v4.2.6-rc5
-  name: Biolink Model Protobuf release
-  original_source:
-  - biolink
-  product_file_size: 18600
-  product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
-  secondary_source:
-  - biolink
-  versions:
-  - v4.2.6-rc5
-  - v4.2.6-rc4
-  - v4.2.6-rc3
-  - v4.2.6-rc2
-  - v4.2.6-rc1
-  - v4.2.5
-  - v4.2.5-rc2
-  - v4.2.5-rc1
-  - v4.2.4
-  - v4.2.3
-  - v4.2.2
-  - v4.2.1
-  - v4.2.0
-  - v4.2.0-rc.2
-  - v4.2.0-rc.1
-  - v4.1.6
-  - v4.1.5
-  - v4.1.4
-  - v4.1.3
-  - v4.1.2
-  - v4.1.1
-  - v4.1.0
-  - v4.0.0
-  - v3.6.0
-  - v3.5.4
-  - v3.5.3
-  - v3.5.2
-  - v3.5.1
-  - v3.5.0
-  - v3.4.3
-- category: DataModelProduct
-  compatibility:
-  - standard: biolink
-    version: v4.2.5
-  description: SHACL release of Biolink Model
-  format: shacl
-  id: biolink.model.shacl
-  latest_version: v4.2.6-rc5
-  name: Biolink Model SHACL release
-  original_source:
-  - biolink
-  product_file_size: 161190
-  product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
-  secondary_source:
-  - biolink
-  versions:
-  - v4.2.6-rc5
-  - v4.2.6-rc4
-  - v4.2.6-rc3
-  - v4.2.6-rc2
-  - v4.2.6-rc1
-  - v4.2.5
-  - v4.2.5-rc2
-  - v4.2.5-rc1
-  - v4.2.4
-  - v4.2.3
-  - v4.2.2
-  - v4.2.1
-  - v4.2.0
-  - v4.2.0-rc.2
-  - v4.2.0-rc.1
-  - v4.1.6
-  - v4.1.5
-  - v4.1.4
-  - v4.1.3
-  - v4.1.2
-  - v4.1.1
-  - v4.1.0
-  - v4.0.0
-  - v3.6.0
-  - v3.5.4
-  - v3.5.3
-  - v3.5.2
-  - v3.5.1
-  - v3.5.0
-  - v3.4.3
-- category: DataModelProduct
-  compatibility:
-  - standard: biolink
-    version: v4.2.5
-  description: ShEx release of Biolink Model
-  format: shex
-  id: biolink.model.shex
-  latest_version: v4.2.6-rc5
-  name: Biolink Model ShEx release
-  original_source:
-  - biolink
-  product_file_size: 17816
-  product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
-  secondary_source:
-  - biolink
-  versions:
-  - v4.2.6-rc5
-  - v4.2.6-rc4
-  - v4.2.6-rc3
-  - v4.2.6-rc2
-  - v4.2.6-rc1
-  - v4.2.5
-  - v4.2.5-rc2
-  - v4.2.5-rc1
-  - v4.2.4
-  - v4.2.3
-  - v4.2.2
-  - v4.2.1
-  - v4.2.0
-  - v4.2.0-rc.2
-  - v4.2.0-rc.1
-  - v4.1.6
-  - v4.1.5
-  - v4.1.4
-  - v4.1.3
-  - v4.1.2
-  - v4.1.1
-  - v4.1.0
-  - v4.0.0
-  - v3.6.0
-  - v3.5.4
-  - v3.5.3
-  - v3.5.2
-  - v3.5.1
-  - v3.5.0
-  - v3.4.3
-- category: GraphProduct
-  description: Biolink Automat
-  format: kgx-jsonl
-  id: automat.biolink
-  name: biolink_automat
-  original_source:
-  - biolink
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/
-  secondary_source:
-  - automat
-- category: ProcessProduct
-  description: This repository is a code reference for the C-Path Knowledge Graph
-    project, to increase discoverability of rare disease datasets through integration
-    with the Monarch Knowlege Graph. Note that this is only a reference to scripts
-    and queries associated with this project and is not provided as a runnable project
-    because these workflows depend on an internal data catalog.
-  format: python
-  id: cpathkg.code
-  name: C-Path Knowledge Graph Integration
-  original_source:
-  - biolink
-  - kg-monarch
-  product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
-  secondary_source:
-  - cpathkg
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
+  - category: DocumentationProduct
+    description: Biolink Model Documentation
+    format: http
+    id: biolink.docs
+    name: Biolink Model Documentation
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://biolink.github.io/biolink-model/
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+  - category: DocumentationProduct
+    description: Information Resource Registry Model documentation, including descriptions of the information resource (infores) registry itself.
+    format: http
+    id: biolink.infores.docs
+    name: Information Resource Registry Model Documentation
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://biolink.github.io/information-resource-registry/
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+  - category: DataModelProduct
+    compatibility:
+      - standard: biolink
+        version: v4.2.5
+    description: OWL release of Biolink Model
+    format: owl
+    id: biolink.model.owl
+    latest_version: v4.2.6-rc5
+    name: Biolink Model OWL release
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_file_size: 717005
+    product_url: https://w3id.org/biolink/biolink-model.owl.ttl
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v4.2.6-rc5
+      - v4.2.6-rc4
+      - v4.2.6-rc3
+      - v4.2.6-rc2
+      - v4.2.6-rc1
+      - v4.2.5
+      - v4.2.5-rc2
+      - v4.2.5-rc1
+      - v4.2.4
+      - v4.2.3
+      - v4.2.2
+      - v4.2.1
+      - v4.2.0
+      - v4.2.0-rc.2
+      - v4.2.0-rc.1
+      - v4.1.6
+      - v4.1.5
+      - v4.1.4
+      - v4.1.3
+      - v4.1.2
+      - v4.1.1
+      - v4.1.0
+      - v4.0.0
+      - v3.6.0
+      - v3.5.4
+      - v3.5.3
+      - v3.5.2
+      - v3.5.1
+      - v3.5.0
+      - v3.4.3
+  - category: DataModelProduct
+    compatibility:
+      - standard: biolink
+        version: v4.2.5
+    description: JSON schema release of Biolink Model
+    format: json
+    id: biolink.model.json
+    latest_version: v4.2.6-rc5
+    name: Biolink Model JSON release
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_file_size: 138288
+    product_url: https://w3id.org/biolink/biolink-model.json
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v4.2.6-rc5
+      - v4.2.6-rc4
+      - v4.2.6-rc3
+      - v4.2.6-rc2
+      - v4.2.6-rc1
+      - v4.2.5
+      - v4.2.5-rc2
+      - v4.2.5-rc1
+      - v4.2.4
+      - v4.2.3
+      - v4.2.2
+      - v4.2.1
+      - v4.2.0
+      - v4.2.0-rc.2
+      - v4.2.0-rc.1
+      - v4.1.6
+      - v4.1.5
+      - v4.1.4
+      - v4.1.3
+      - v4.1.2
+      - v4.1.1
+      - v4.1.0
+      - v4.0.0
+      - v3.6.0
+      - v3.5.4
+      - v3.5.3
+      - v3.5.2
+      - v3.5.1
+      - v3.5.0
+      - v3.4.3
+  - category: DataModelProduct
+    compatibility:
+      - standard: biolink
+        version: v4.2.5
+    description: GraphQL release of Biolink Model
+    format: graphql
+    id: biolink.model.graphql
+    latest_version: v4.2.6-rc5
+    name: Biolink Model GraphQL release
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_file_size: 9599
+    product_url: https://w3id.org/biolink/biolink-model.graphql
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v4.2.6-rc5
+      - v4.2.6-rc4
+      - v4.2.6-rc3
+      - v4.2.6-rc2
+      - v4.2.6-rc1
+      - v4.2.5
+      - v4.2.5-rc2
+      - v4.2.5-rc1
+      - v4.2.4
+      - v4.2.3
+      - v4.2.2
+      - v4.2.1
+      - v4.2.0
+      - v4.2.0-rc.2
+      - v4.2.0-rc.1
+      - v4.1.6
+      - v4.1.5
+      - v4.1.4
+      - v4.1.3
+      - v4.1.2
+      - v4.1.1
+      - v4.1.0
+      - v4.0.0
+      - v3.6.0
+      - v3.5.4
+      - v3.5.3
+      - v3.5.2
+      - v3.5.1
+      - v3.5.0
+      - v3.4.3
+  - category: DataModelProduct
+    compatibility:
+      - standard: biolink
+        version: v4.2.5
+    description: Protobuf release of Biolink Model
+    format: protobuf
+    id: biolink.model.proto
+    latest_version: v4.2.6-rc5
+    name: Biolink Model Protobuf release
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_file_size: 18600
+    product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v4.2.6-rc5
+      - v4.2.6-rc4
+      - v4.2.6-rc3
+      - v4.2.6-rc2
+      - v4.2.6-rc1
+      - v4.2.5
+      - v4.2.5-rc2
+      - v4.2.5-rc1
+      - v4.2.4
+      - v4.2.3
+      - v4.2.2
+      - v4.2.1
+      - v4.2.0
+      - v4.2.0-rc.2
+      - v4.2.0-rc.1
+      - v4.1.6
+      - v4.1.5
+      - v4.1.4
+      - v4.1.3
+      - v4.1.2
+      - v4.1.1
+      - v4.1.0
+      - v4.0.0
+      - v3.6.0
+      - v3.5.4
+      - v3.5.3
+      - v3.5.2
+      - v3.5.1
+      - v3.5.0
+      - v3.4.3
+  - category: DataModelProduct
+    compatibility:
+      - standard: biolink
+        version: v4.2.5
+    description: SHACL release of Biolink Model
+    format: shacl
+    id: biolink.model.shacl
+    latest_version: v4.2.6-rc5
+    name: Biolink Model SHACL release
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_file_size: 161190
+    product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v4.2.6-rc5
+      - v4.2.6-rc4
+      - v4.2.6-rc3
+      - v4.2.6-rc2
+      - v4.2.6-rc1
+      - v4.2.5
+      - v4.2.5-rc2
+      - v4.2.5-rc1
+      - v4.2.4
+      - v4.2.3
+      - v4.2.2
+      - v4.2.1
+      - v4.2.0
+      - v4.2.0-rc.2
+      - v4.2.0-rc.1
+      - v4.1.6
+      - v4.1.5
+      - v4.1.4
+      - v4.1.3
+      - v4.1.2
+      - v4.1.1
+      - v4.1.0
+      - v4.0.0
+      - v3.6.0
+      - v3.5.4
+      - v3.5.3
+      - v3.5.2
+      - v3.5.1
+      - v3.5.0
+      - v3.4.3
+  - category: DataModelProduct
+    compatibility:
+      - standard: biolink
+        version: v4.2.5
+    description: ShEx release of Biolink Model
+    format: shex
+    id: biolink.model.shex
+    latest_version: v4.2.6-rc5
+    name: Biolink Model ShEx release
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_file_size: 17816
+    product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+    secondary_source:
+      - source: biolink
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v4.2.6-rc5
+      - v4.2.6-rc4
+      - v4.2.6-rc3
+      - v4.2.6-rc2
+      - v4.2.6-rc1
+      - v4.2.5
+      - v4.2.5-rc2
+      - v4.2.5-rc1
+      - v4.2.4
+      - v4.2.3
+      - v4.2.2
+      - v4.2.1
+      - v4.2.0
+      - v4.2.0-rc.2
+      - v4.2.0-rc.1
+      - v4.1.6
+      - v4.1.5
+      - v4.1.4
+      - v4.1.3
+      - v4.1.2
+      - v4.1.1
+      - v4.1.0
+      - v4.0.0
+      - v3.6.0
+      - v3.5.4
+      - v3.5.3
+      - v3.5.2
+      - v3.5.1
+      - v3.5.0
+      - v3.4.3
+  - category: GraphProduct
+    description: Biolink Automat
+    format: kgx-jsonl
+    id: automat.biolink
+    name: biolink_automat
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/
+    secondary_source:
+      - source: automat
+        relation_type: prov:wasInfluencedBy
+  - category: ProcessProduct
+    description: This repository is a code reference for the C-Path Knowledge Graph project, to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph. Note that this is only a reference to scripts and queries associated with this project and is not provided as a runnable project because these workflows depend on an internal data catalog.
+    format: python
+    id: cpathkg.code
+    name: C-Path Knowledge Graph Integration
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+      - source: kg-monarch
+        relation_type: prov:hadPrimarySource
+    product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
+    secondary_source:
+      - source: cpathkg
+        relation_type: prov:wasInfluencedBy
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: mirtarbase
+        relation_type: prov:hadPrimarySource
+      - source: unii
+        relation_type: prov:hadPrimarySource
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+      - source: mechreponet
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: ncit
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: panther
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+      - source: microbiomekg
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Unni DR
-  - Moxon SAT
-  - Bada M
-  - Brush M
-  - Bruskiewich R
-  - Caufield JH
-  - Clemons PA
-  - Dancik V
-  - Dumontier M
-  - Fecho K
-  - Glusman G
-  - Hadlock JJ
-  - Harris NL
-  - Joshi A
-  - Putman T
-  - Qin G
-  - Ramsey SA
-  - Shefchek KA
-  - Solbrig H
-  - Soman K
-  - Thessen AE
-  - Haendel MA
-  - Bizon C
-  - Mungall CJ
-  - The Biomedical Data Translator Consortium
-  doi: doi:10.1111/cts.13302
-  id: doi:10.1111/cts.13302
-  preferred: true
-  title: '''Biolink Model: A universal schema for knowledge graphs in clinical, biomedical,
-    and translational science'''
-  year: '2022'
+  - authors:
+      - Unni DR
+      - Moxon SAT
+      - Bada M
+      - Brush M
+      - Bruskiewich R
+      - Caufield JH
+      - Clemons PA
+      - Dancik V
+      - Dumontier M
+      - Fecho K
+      - Glusman G
+      - Hadlock JJ
+      - Harris NL
+      - Joshi A
+      - Putman T
+      - Qin G
+      - Ramsey SA
+      - Shefchek KA
+      - Solbrig H
+      - Soman K
+      - Thessen AE
+      - Haendel MA
+      - Bizon C
+      - Mungall CJ
+      - The Biomedical Data Translator Consortium
+    doi: doi:10.1111/cts.13302
+    id: doi:10.1111/cts.13302
+    preferred: true
+    title: '''Biolink Model: A universal schema for knowledge graphs in clinical, biomedical, and translational science'''
+    year: '2022'
 repository: https://github.com/biolink/biolink-model/
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2025-10-06T00:00:00Z'
 ---
+
 Entity and association taxonomy and datamodel for life-sciences data.

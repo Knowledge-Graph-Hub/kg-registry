@@ -6,7 +6,8 @@ id: hald.longevity-biomarkers.json
 latest_version: v6
 name: HALD Longevity Biomarkers
 original_source:
-- hald
+  - source: hald
+    relation_type: prov:hadPrimarySource
 product_file_size: 339386
 product_url: https://ndownloader.figshare.com/files/43612497
 layout: product_detail

@@ -29,31 +29,40 @@ products:
     id: irefindex.database
     name: iRefIndex Database
     original_source:
-      - bind
-      - biogrid
-      - dip
-      - hprd
-      - intact
-      - mint
+      - source: bind
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: R package for accessing and manipulating iRefIndex data
     format: http
     id: irefindex.irefr
     name: iRefR Package
     original_source:
-      - irefindex
+      - source: irefindex
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Cytoscape plugin for visualization and data mining of iRefIndex protein interaction data
     id: irefindex.irefscape
     name: iRefScape
     original_source:
-      - irefindex
+      - source: irefindex
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web interface for navigating the global protein-protein interaction landscape
     id: irefindex.irefweb
     name: iRefWeb
     original_source:
-      - irefindex
+      - source: irefindex
+        relation_type: prov:hadPrimarySource
 ---
 
 # iRefIndex

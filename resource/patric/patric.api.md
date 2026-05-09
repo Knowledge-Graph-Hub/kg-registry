@@ -5,7 +5,8 @@ format: http
 id: patric.api
 name: BV-BRC API
 original_source:
-- patric
+  - source: patric
+    relation_type: prov:hadPrimarySource
 product_url: https://www.bv-brc.org/docs/api/
 layout: product_detail
 ---

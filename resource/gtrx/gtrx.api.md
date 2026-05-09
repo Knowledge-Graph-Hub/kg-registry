@@ -5,7 +5,8 @@ format: http
 id: gtrx.api
 name: gTRx API
 original_source:
-- gtrx
+  - source: gtrx
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
 layout: product_detail
 ---

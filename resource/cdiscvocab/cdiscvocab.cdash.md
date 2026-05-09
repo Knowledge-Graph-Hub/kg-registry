@@ -1,15 +1,14 @@
 ---
 category: Product
-description: Clinical Data Acquisition Standards Harmonization controlled terminology
-  for consistent data collection across research studies. A subset of SDTM terminology.
+description: Clinical Data Acquisition Standards Harmonization controlled terminology for consistent data collection across research studies. A subset of SDTM terminology.
 format: mixed
 id: cdiscvocab.cdash
 name: CDASH Controlled Terminology
 original_source:
-- cdiscvocab
+  - source: cdiscvocab
+    relation_type: prov:hadPrimarySource
 product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when accessing file
 layout: product_detail
 ---

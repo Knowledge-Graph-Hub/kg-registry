@@ -5,7 +5,8 @@ format: http
 id: orkg.triplestore
 name: ORKG Virtuoso Query Editor
 original_source:
-- orkg
+  - source: orkg
+    relation_type: prov:hadPrimarySource
 product_url: https://orkg.org/triplestore
 layout: product_detail
 ---

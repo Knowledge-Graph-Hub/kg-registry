@@ -3,16 +3,16 @@ layout: resource_detail
 activity_status: active
 category: DataSource
 contacts:
-- category: Individual
-  label: Edward Catoiu
-  contact_details:
-  - contact_type: email
-    value: ecatoiu@ucsd.edu
-- category: Organization
-  label: Systems Biology Research Group at University of California San Diego
-  contact_details:
-  - contact_type: url
-    value: http://systemsbiology.ucsd.edu/
+  - category: Individual
+    label: Edward Catoiu
+    contact_details:
+      - contact_type: email
+        value: ecatoiu@ucsd.edu
+  - category: Organization
+    label: Systems Biology Research Group at University of California San Diego
+    contact_details:
+      - contact_type: url
+        value: http://systemsbiology.ucsd.edu/
 creation_date: '2025-11-06T00:00:00Z'
 description: 'iModulonDB is a knowledgebase of microbial transcriptional regulation derived from machine learning. It provides curated sets of iModulons - independently modulated groups of co-expressed genes identified through independent component analysis (ICA) of high-quality transcriptomic datasets - for prokaryotic organisms. The database offers interactive dashboards and analysis tools to explore transcriptional regulatory networks across multiple bacterial species, enabling researchers to understand gene regulation, discover new regulators, and analyze condition-specific cellular responses.'
 domains:
@@ -29,7 +29,8 @@ products:
     id: "imodulondb.browser"
     name: iModulonDB Web Interface
     original_source:
-      - imodulondb
+      - source: imodulondb
+        relation_type: prov:hadPrimarySource
     product_url: https://imodulondb.org/
   - category: ProgrammingInterface
     description: Python package for characterization, plotting, and analysis of iModulons. Provides functions for threshold determination, transcriptional regulatory network (TRN) enrichment analysis, explained variance calculation, and generation of dashboard files for iModulonDB.
@@ -37,7 +38,8 @@ products:
     id: "imodulondb.pymodulon"
     name: PyModulon Python Package
     original_source:
-      - imodulondb
+      - source: imodulondb
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/SBRG/pymodulon
   - category: Product
     description: Computational pipeline for gathering publicly available RNA-seq data, aligning reads, performing quality control, computing iModulons using independent component analysis, and formatting dashboard files. Enables users to generate their own iModulon decompositions from transcriptomic datasets.
@@ -45,7 +47,8 @@ products:
     id: "imodulondb.imodulonminer"
     name: iModulonMiner Pipeline
     original_source:
-      - imodulondb
+      - source: imodulondb
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/SBRG/iModulonMiner
   - category: Product
     description: Modulome workflow for scraping publicly available data for an organism, aligning reads, quality control, and computing iModulons. Used to expand iModulonDB across the prokaryotic evolutionary tree by processing data from the Sequence Read Archive.
@@ -53,7 +56,8 @@ products:
     id: "imodulondb.modulome_workflow"
     name: Modulome Workflow
     original_source:
-      - imodulondb
+      - source: imodulondb
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/avsastry/modulome-workflow
   - category: Product
     description: Downloadable transcriptomic datasets and iModulon decompositions for 15 organisms including E. coli, B. subtilis, S. aureus, M. tuberculosis, P. aeruginosa, P. putida, and others. Includes gene expression matrices, iModulon activity matrices, gene weights, and metadata for over 9500 expression profiles from 525 studies.
@@ -61,43 +65,44 @@ products:
     id: "imodulondb.datasets"
     name: iModulonDB Datasets
     original_source:
-      - imodulondb
+      - source: imodulondb
+        relation_type: prov:hadPrimarySource
     product_url: https://imodulondb.org/
 publications:
-- authors:
-  - Catoiu EA
-  - Krishnan J
-  - Li G
-  - Lou XA
-  - Rychel K
-  - Yuan Y
-  - Bajpe H
-  - Patel A
-  - Choe D
-  - Shin J
-  - Decker KT
-  - Chauhan SM
-  - Phaneuf PV
-  - Palsson BO
-  doi: doi:10.1093/nar/gkae1009
-  id: https://doi.org/10.1093/nar/gkae1009
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'iModulonDB 2.0: dynamic tools to facilitate knowledge-mining and user-enabled analyses of curated transcriptomic datasets'
-  year: '2025'
-- authors:
-  - Rychel K
-  - Decker K
-  - Sastry AV
-  - Phaneuf PV
-  - Poudel S
-  - Palsson BO
-  doi: doi:10.1093/nar/gkaa810
-  id: https://doi.org/10.1093/nar/gkaa810
-  journal: Nucleic Acids Research
-  preferred: false
-  title: 'iModulonDB: a knowledgebase of microbial transcriptional regulation derived from machine learning'
-  year: '2021'
+  - authors:
+      - Catoiu EA
+      - Krishnan J
+      - Li G
+      - Lou XA
+      - Rychel K
+      - Yuan Y
+      - Bajpe H
+      - Patel A
+      - Choe D
+      - Shin J
+      - Decker KT
+      - Chauhan SM
+      - Phaneuf PV
+      - Palsson BO
+    doi: doi:10.1093/nar/gkae1009
+    id: https://doi.org/10.1093/nar/gkae1009
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'iModulonDB 2.0: dynamic tools to facilitate knowledge-mining and user-enabled analyses of curated transcriptomic datasets'
+    year: '2025'
+  - authors:
+      - Rychel K
+      - Decker K
+      - Sastry AV
+      - Phaneuf PV
+      - Poudel S
+      - Palsson BO
+    doi: doi:10.1093/nar/gkaa810
+    id: https://doi.org/10.1093/nar/gkaa810
+    journal: Nucleic Acids Research
+    preferred: false
+    title: 'iModulonDB: a knowledgebase of microbial transcriptional regulation derived from machine learning'
+    year: '2021'
 repository: https://github.com/SBRG/iModulonMiner
 taxon:
   - NCBITaxon:2

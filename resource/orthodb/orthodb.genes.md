@@ -6,10 +6,12 @@ format: tsv
 id: orthodb.genes
 name: OrthoDB Genes Data
 original_source:
-- orthodb
+  - source: orthodb
+    relation_type: prov:hadPrimarySource
 product_file_size: 4785964374
 product_url: https://data.orthodb.org/current/download/odb12v1_genes.tab.gz
 secondary_source:
-- orthodb
+  - source: orthodb
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -5,7 +5,8 @@ format: http
 id: medgen.faq
 name: FAQ
 original_source:
-- medgen
+  - source: medgen
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ncbi.nlm.nih.gov/medgen/docs/faq/
 layout: product_detail
 ---

@@ -24,7 +24,8 @@ products:
     id: annotator.portal
     name: Translator Annotator Portal
     original_source:
-      - annotator
+      - source: annotator
+        relation_type: prov:hadPrimarySource
     product_url: https://annotator.transltr.io/
   - category: ProgrammingInterface
     connection_url: https://annotator.transltr.io
@@ -34,7 +35,8 @@ products:
     is_public: true
     name: Translator Annotator API
     original_source:
-      - annotator
+      - source: annotator
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Annotator-Service
 ---
 

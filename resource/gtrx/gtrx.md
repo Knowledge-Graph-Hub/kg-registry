@@ -2,24 +2,19 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
-  label: NCATS Translator
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
+    label: NCATS Translator
 creation_date: '2025-11-05T00:00:00Z'
-description: Genome-to-Treatment (gTRx) is a NCATS Translator knowledge provider that
-  integrates genomic, pharmacological, and clinical data to support precision medicine
-  applications. It connects genetic variants with drug treatments and clinical outcomes,
-  enabling researchers to explore relationships between genomic profiles and therapeutic
-  options. The resource aggregates data from multiple sources to provide evidence-based
-  connections between genes, variants, drugs, and diseases.
+description: Genome-to-Treatment (gTRx) is a NCATS Translator knowledge provider that integrates genomic, pharmacological, and clinical data to support precision medicine applications. It connects genetic variants with drug treatments and clinical outcomes, enabling researchers to explore relationships between genomic profiles and therapeutic options. The resource aggregates data from multiple sources to provide evidence-based connections between genes, variants, drugs, and diseases.
 domains:
-- genomics
-- pharmacology
-- precision medicine
-- translational
-- biomedical
+  - genomics
+  - pharmacology
+  - precision medicine
+  - translational
+  - biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
 id: gtrx
 infores_id: gtrx
@@ -27,29 +22,31 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: Genome-to-Treatment
 products:
-- category: ProgrammingInterface
-  description: TRAPI-compliant API for querying genomic-treatment relationships
-  format: http
-  id: gtrx.api
-  name: gTRx API
-  original_source:
-  - gtrx
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
-- category: Product
-  description: Integrated genomic-treatment data for precision medicine
-  format: mixed
-  id: gtrx.data
-  name: gTRx Data
-  original_source:
-  - gtrx
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
+  - category: ProgrammingInterface
+    description: TRAPI-compliant API for querying genomic-treatment relationships
+    format: http
+    id: gtrx.api
+    name: gTRx API
+    original_source:
+      - source: gtrx
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
+  - category: Product
+    description: Integrated genomic-treatment data for precision medicine
+    format: mixed
+    id: gtrx.data
+    name: gTRx Data
+    original_source:
+      - source: gtrx
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
 synonyms:
-- gTRx
-- Genome-to-Treatment
+  - gTRx
+  - Genome-to-Treatment
 tags:
-- translator
+  - translator
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # Genome-to-Treatment
@@ -96,4 +93,3 @@ This resource has the Information Resource identifier: `infores:gtrx`
 ## Tags
 
 - NCATS Translator
-

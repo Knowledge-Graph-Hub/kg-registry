@@ -8,10 +8,12 @@ license:
   label: public domain
 name: ncbi.gc Nodes TSV
 original_source:
-- ncbi.gc
+  - source: ncbi.gc
+    relation_type: prov:hadPrimarySource
 product_file_size: 531
 product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

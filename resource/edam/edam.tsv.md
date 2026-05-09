@@ -5,12 +5,16 @@ format: tsv
 id: edam.tsv
 name: EDAM TSV
 original_source:
-- edam
-- dc
-- skos
+  - source: edam
+    relation_type: prov:hadPrimarySource
+  - source: dc
+    relation_type: prov:hadPrimarySource
+  - source: skos
+    relation_type: prov:hadPrimarySource
 product_file_size: 1977072
 product_url: https://edamontology.org/EDAM.tsv
 secondary_source:
-- edam
+  - source: edam
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

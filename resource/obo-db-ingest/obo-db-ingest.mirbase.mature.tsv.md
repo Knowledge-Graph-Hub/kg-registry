@@ -8,10 +8,12 @@ license:
   label: public domain
 name: mirbase.mature Nodes TSV
 original_source:
-- mirbase
+  - source: mirbase
+    relation_type: prov:hadPrimarySource
 product_file_size: 293915
 product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

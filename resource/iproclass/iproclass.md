@@ -21,7 +21,8 @@ products:
     id: iproclass.portal
     name: iProClass Portal
     original_source:
-      - iproclass
+      - source: iproclass
+        relation_type: prov:hadPrimarySource
     product_url: http://pir.georgetown.edu/iproclass/
   - category: DocumentationProduct
     description: Protein Information Resource site with parent documentation and context for iProClass.
@@ -29,7 +30,8 @@ products:
     id: iproclass.pir-docs
     name: PIR Documentation
     original_source:
-      - iproclass
+      - source: iproclass
+        relation_type: prov:hadPrimarySource
     product_url: https://proteininformationresource.org/
 ---
 

@@ -5,9 +5,11 @@ id: ecid.metabolomics.workbench.dictionary
 is_public: true
 name: Metabolomics WorkBench Compound Dictionary
 original_source:
-- ecid
+  - source: ecid
+    relation_type: prov:hadPrimarySource
 product_url: https://zenodo.org/records/10963201
 secondary_source:
-- ecid
+  - source: ecid
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

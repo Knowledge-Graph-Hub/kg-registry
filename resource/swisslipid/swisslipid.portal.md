@@ -5,7 +5,8 @@ format: http
 id: swisslipid.portal
 name: SwissLipids Portal
 original_source:
-- swisslipid
+  - source: swisslipid
+    relation_type: prov:hadPrimarySource
 product_url: https://www.swisslipids.org/
 layout: product_detail
 ---

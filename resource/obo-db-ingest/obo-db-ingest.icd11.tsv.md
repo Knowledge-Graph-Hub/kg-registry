@@ -8,10 +8,12 @@ license:
   label: CC-BY-ND-3.0-IGO
 name: icd11 Nodes TSV
 original_source:
-- icd11
+  - source: icd11
+    relation_type: prov:hadPrimarySource
 product_file_size: 4174868
 product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

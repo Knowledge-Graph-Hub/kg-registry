@@ -2,27 +2,21 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: kfecho@renci.org
-  - contact_type: github
-    value: karafecho
-  label: Kara Fecho
-  orcid: 0000-0002-6704-9306
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: kfecho@renci.org
+      - contact_type: github
+        value: karafecho
+    label: Kara Fecho
+    orcid: 0000-0002-6704-9306
 creation_date: '2025-11-05T00:00:00Z'
-description: The Integrated Clinical and Environmental Exposures Service Knowledge
-  Graph (ICEES KG) is a Translator Knowledge Provider that integrates patient-level
-  clinical data from electronic health records with environmental exposures data including
-  airborne pollutants, landfills, concentrated animal feeding operations, and socio-economic
-  indicators. ICEES KG provides regulatory-compliant open access to integrated clinical
-  and environmental data to support translational research on exposure-driven disease
-  mechanisms and health disparities.
+description: The Integrated Clinical and Environmental Exposures Service Knowledge Graph (ICEES KG) is a Translator Knowledge Provider that integrates patient-level clinical data from electronic health records with environmental exposures data including airborne pollutants, landfills, concentrated animal feeding operations, and socio-economic indicators. ICEES KG provides regulatory-compliant open access to integrated clinical and environmental data to support translational research on exposure-driven disease mechanisms and health disparities.
 domains:
-- health
-- clinical
-- biomedical
-- public health
+  - health
+  - clinical
+  - biomedical
+  - public health
 homepage_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg
 id: icees-kg
 infores_id: icees-kg
@@ -30,149 +24,204 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: Exposures KP (icees-kg)
 products:
-- category: GraphProduct
-  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
-    (KGX) format, containing integrated clinical and environmental exposures data
-    as a knowledge graph with 226 nodes and 14,342 edges
-  format: kgx-jsonl
-  id: icees-kg.graph
-  name: KGX distribution of the ICEES Exposures KP
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-  secondary_source:
-  - icees-kg
-- category: ProgrammingInterface
-  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
-    standardized Translator protocols
-  format: http
-  id: icees-kg.trapi
-  name: ICEES KG TRAPI API
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-  secondary_source:
-  - icees-kg
-- category: Product
-  description: Meta knowledge graph and metadata describing the data sources, node
-    types, edge types, and predicates available in ICEES KG
-  format: json
-  id: icees-kg.metadata
-  name: ICEES KG Metadata
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-  secondary_source:
-  - icees-kg
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-    version: 4.3.6
-  description: KGX JSONL graph package for ICEES distributed via the NCATS Translator
-    release site (release 2026_03_12; build icees_2024-08-20_3ebb9d85_2025sep1_4.3.6;
-    source version 2024-08-20; Biolink 4.3.6; Node Normalizer 2025sep1).
-  edge_count: 13972
-  format: kgx-jsonl
-  id: translator.icees.graph
-  latest_version: '2026_03_12'
-  license:
-    id: https://opensource.org/license/mit/
-    label: MIT
-  name: Translator ICEES KGX Graph
-  node_count: 224
-  original_source:
-  - icees-kg
-  product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
-  secondary_source:
-  - translator
-  versions:
-  - '2026_03_12'
-  - icees_2024-08-20_3ebb9d85_2025sep1_4.3.6
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-    version: 4.3.6
-  description: Aggregated KGX JSONL graph package combining 29 Translator release
-    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
-    2025sep1).
-  edge_count: 29243943
-  format: kgx-jsonl
-  id: translator.translator_kg.graph
-  latest_version: '2026_03_27'
-  license:
-    id: https://opensource.org/license/mit/
-    label: MIT
-  name: Translator Aggregate KGX Graph
-  node_count: 1696790
-  original_source:
-  - alliance
-  - bgee
-  - bindingdb
-  - chembl
-  - cohd
-  - ctd
-  - ctkp
-  - drug-approvals-kp
-  - dgidb
-  - diseases
-  - drugrephub
-  - drugcentral
-  - gtopdb
-  - gene2phenotype
-  - geneticskp
-  - go-cam
-  - goa
-  - hp
-  - icees-kg
-  - intact
-  - ncbigene
-  - panther
-  - pathbank
-  - semmeddb
-  - sider
-  - signor
-  - text-mining-kp
-  - ttd
-  - ubergraph
-  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-  secondary_source:
-  - translator
-  versions:
-  - '2026_03_27'
-  - 423af7989cac
+  - category: GraphProduct
+    description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges
+    format: kgx-jsonl
+    id: icees-kg.graph
+    name: KGX distribution of the ICEES Exposures KP
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using standardized Translator protocols
+    format: http
+    id: icees-kg.trapi
+    name: ICEES KG TRAPI API
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Meta knowledge graph and metadata describing the data sources, node types, edge types, and predicates available in ICEES KG
+    format: json
+    id: icees-kg.metadata
+    name: ICEES KG Metadata
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.3.6
+    description: KGX JSONL graph package for ICEES distributed via the NCATS Translator release site (release 2026_03_12; build icees_2024-08-20_3ebb9d85_2025sep1_4.3.6; source version 2024-08-20; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 13972
+    format: kgx-jsonl
+    id: translator.icees.graph
+    latest_version: '2026_03_12'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator ICEES KGX Graph
+    node_count: 224
+    original_source:
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
+    secondary_source:
+      - source: translator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - '2026_03_12'
+      - icees_2024-08-20_3ebb9d85_2025sep1_4.3.6
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+        version: 4.3.6
+    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
+    edge_count: 29243943
+    format: kgx-jsonl
+    id: translator.translator_kg.graph
+    latest_version: '2026_03_27'
+    license:
+      id: https://opensource.org/license/mit/
+      label: MIT
+    name: Translator Aggregate KGX Graph
+    node_count: 1696790
+    original_source:
+      - source: alliance
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: cohd
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: ctkp
+        relation_type: prov:hadPrimarySource
+      - source: drug-approvals-kp
+        relation_type: prov:hadPrimarySource
+      - source: dgidb
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugrephub
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: gtopdb
+        relation_type: prov:hadPrimarySource
+      - source: gene2phenotype
+        relation_type: prov:hadPrimarySource
+      - source: geneticskp
+        relation_type: prov:hadPrimarySource
+      - source: go-cam
+        relation_type: prov:hadPrimarySource
+      - source: goa
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: panther
+        relation_type: prov:hadPrimarySource
+      - source: pathbank
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: signor
+        relation_type: prov:hadPrimarySource
+      - source: text-mining-kp
+        relation_type: prov:hadPrimarySource
+      - source: ttd
+        relation_type: prov:hadPrimarySource
+      - source: ubergraph
+        relation_type: prov:hadPrimarySource
+    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+    secondary_source:
+      - source: translator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - '2026_03_27'
+      - 423af7989cac
 publications:
-- id: https://doi.org/10.1093/jamia/ocz042
-- id: https://doi.org/10.2196/17964
+  - id: https://doi.org/10.1093/jamia/ocz042
+  - id: https://doi.org/10.2196/17964
 repository: https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES
 tags:
-- translator
+  - translator
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 ## Overview
 
 The Integrated Clinical and Environmental Exposures Service Knowledge Graph (ICEES KG) is a Translator Knowledge Provider that provides regulatory-compliant open access to integrated clinical and environmental exposures data. ICEES KG integrates patient-level clinical data derived from electronic health records, survey data, and clinical research data with environmental exposures data including airborne pollutants, landfills, concentrated animal feeding operations, and various socio-economic indicators.

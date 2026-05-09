@@ -1,15 +1,16 @@
 ---
 category: DataModelProduct
-description: JSON-LD context for the Knowledge Graph Change Language model, enabling
-  semantic interoperability for KGCL data.
+description: JSON-LD context for the Knowledge Graph Change Language model, enabling semantic interoperability for KGCL data.
 format: jsonld
 id: kgcl.model.jsonld
 name: Knowledge Graph Change Language JSON-LD Context
 original_source:
-- kgcl
+  - source: kgcl
+    relation_type: prov:hadPrimarySource
 product_file_size: 2161
 product_url: https://w3id.org/kgcl/kgcl.context.jsonld
 secondary_source:
-- kgcl
+  - source: kgcl
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -2,32 +2,25 @@
 activity_status: active
 category: Aggregator
 collection:
-- omop
+  - omop
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: ask2164@cumc.columbia.edu
-  label: Andrew S. Kanter, MD MPH
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.dbmi.columbia.edu/
-  label: Columbia University Department of Biomedical Informatics
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: ask2164@cumc.columbia.edu
+    label: Andrew S. Kanter, MD MPH
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.dbmi.columbia.edu/
+    label: Columbia University Department of Biomedical Informatics
 creation_date: '2025-11-05T00:00:00Z'
-description: The Columbia International eHealth Laboratory (CIEL) dictionary is a
-  shared open concept dictionary that provides comprehensive terminology services
-  to OpenMRS and other health information systems. Based at Columbia University's
-  Department of Biomedical Informatics, CIEL contains over 55,000 medical concepts
-  mapped to standardized code systems including ICD, SNOMED CT, LOINC, RxNorm, and
-  many others. CIEL supports open source health initiatives globally and has been
-  recognized as both a Digital Public Good by the Digital Public Goods Alliance and
-  a Content Public Good by Digital Square.
+description: The Columbia International eHealth Laboratory (CIEL) dictionary is a shared open concept dictionary that provides comprehensive terminology services to OpenMRS and other health information systems. Based at Columbia University's Department of Biomedical Informatics, CIEL contains over 55,000 medical concepts mapped to standardized code systems including ICD, SNOMED CT, LOINC, RxNorm, and many others. CIEL supports open source health initiatives globally and has been recognized as both a Digital Public Good by the Digital Public Goods Alliance and a Content Public Good by Digital Square.
 domains:
-- clinical
-- health
-- biomedical
-- information technology
+  - clinical
+  - health
+  - biomedical
+  - information technology
 homepage_url: https://openconceptlab.org/project/ciel/
 id: ciel
 last_modified_date: '2026-04-10T00:00:00Z'
@@ -37,89 +30,110 @@ license:
   label: CC BY 4.0
 name: CIEL
 products:
-- category: GraphicalInterface
-  description: Web interface for browsing CIEL concept dictionary via Open Concept
-    Lab
-  format: http
-  id: ciel.ocl
-  name: CIEL on OCL Online
-  original_source:
-  - ciel
-  product_url: https://app.openconceptlab.org/#/orgs/CIEL/sources/CIEL/
-- category: Product
-  description: CIEL concept dictionary with over 55,000 medical concepts
-  format: mixed
-  id: ciel.dictionary
-  name: CIEL Concept Dictionary
-  original_source:
-  - ciel
-  product_url: https://app.openconceptlab.org/#/orgs/CIEL/sources/CIEL/
-- category: Product
-  description: COVID-19 concept starter set for rapid implementation
-  format: mixed
-  id: ciel.covid19
-  name: CIEL COVID-19 Starter Set
-  original_source:
-  - ciel
-  product_url: https://app.openconceptlab.org/#/orgs/CIEL/collections/COVID-19-Starter-Set/
-- category: Product
-  description: Monkeypox (mpox) concept starter set
-  format: mixed
-  id: ciel.mpx
-  name: CIEL Monkeypox Starter Set
-  original_source:
-  - ciel
-  product_url: https://app.openconceptlab.org/#/orgs/CIEL/collections/MPX/
-- category: MappingProduct
-  description: Concept mappings between different terminology systems
-  format: csv
-  id: athena.mappings
-  name: Athena Concept Mappings
-  original_source:
-  - snomedct
-  - icd10
-  - icd10cm
-  - mesh
-  - loinc
-  - cdiscvocab
-  - ciel
-  product_url: https://athena.ohdsi.org/search-terms/start
-  secondary_source:
-  - athena
-  warnings:
-  - Athena mapping exports are accessed through the authenticated Athena web application;
-    stable direct public file URLs are not exposed.
-- category: Product
-  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
-    through the authenticated Athena web application
-  format: csv
-  id: athena.vocabularies
-  name: Athena Vocabulary Downloads
-  original_source:
-  - snomedct
-  - icd10
-  - icd10cm
-  - mesh
-  - loinc
-  - cdiscvocab
-  - ciel
-  - rxnorm
-  - ndcd
-  - gemscript
-  - medispan-gpi
-  product_url: https://athena.ohdsi.org/vocabulary/list
-  secondary_source:
-  - athena
-  warnings:
-  - Athena vocabulary downloads are prepared through the logged-in web application;
-    stable direct public file URLs are not exposed.
+  - category: GraphicalInterface
+    description: Web interface for browsing CIEL concept dictionary via Open Concept Lab
+    format: http
+    id: ciel.ocl
+    name: CIEL on OCL Online
+    original_source:
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://app.openconceptlab.org/#/orgs/CIEL/sources/CIEL/
+  - category: Product
+    description: CIEL concept dictionary with over 55,000 medical concepts
+    format: mixed
+    id: ciel.dictionary
+    name: CIEL Concept Dictionary
+    original_source:
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://app.openconceptlab.org/#/orgs/CIEL/sources/CIEL/
+  - category: Product
+    description: COVID-19 concept starter set for rapid implementation
+    format: mixed
+    id: ciel.covid19
+    name: CIEL COVID-19 Starter Set
+    original_source:
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://app.openconceptlab.org/#/orgs/CIEL/collections/COVID-19-Starter-Set/
+  - category: Product
+    description: Monkeypox (mpox) concept starter set
+    format: mixed
+    id: ciel.mpx
+    name: CIEL Monkeypox Starter Set
+    original_source:
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://app.openconceptlab.org/#/orgs/CIEL/collections/MPX/
+  - category: MappingProduct
+    description: Concept mappings between different terminology systems
+    format: csv
+    id: athena.mappings
+    name: Athena Concept Mappings
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: icd10cm
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: cdiscvocab
+        relation_type: prov:hadPrimarySource
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/search-terms/start
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - Athena mapping exports are accessed through the authenticated Athena web application; stable direct public file URLs are not exposed.
+  - category: Product
+    description: Downloadable standardized vocabulary bundles for OMOP CDM assembled through the authenticated Athena web application
+    format: csv
+    id: athena.vocabularies
+    name: Athena Vocabulary Downloads
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: icd10cm
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: cdiscvocab
+        relation_type: prov:hadPrimarySource
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+      - source: rxnorm
+        relation_type: prov:hadPrimarySource
+      - source: ndcd
+        relation_type: prov:hadPrimarySource
+      - source: gemscript
+        relation_type: prov:hadPrimarySource
+      - source: medispan-gpi
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/vocabulary/list
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - Athena vocabulary downloads are prepared through the logged-in web application; stable direct public file URLs are not exposed.
 synonyms:
-- CIEL
-- Columbia International eHealth Laboratory
-- CIEL Concept Dictionary
+  - CIEL
+  - Columbia International eHealth Laboratory
+  - CIEL Concept Dictionary
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # CIEL - Columbia International eHealth Laboratory
 
 ## Overview

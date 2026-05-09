@@ -5,7 +5,8 @@ format: gff
 id: gencode.human.gtf
 name: GENCODE Human Annotations GTF
 original_source:
-- gencode
+  - source: gencode
+    relation_type: prov:hadPrimarySource
 product_url: https://www.gencodegenes.org/human/
 layout: product_detail
 ---

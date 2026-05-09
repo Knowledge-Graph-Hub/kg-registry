@@ -5,7 +5,8 @@ format: http
 id: multiomics-kp.docs
 name: Multiomics KP Documentation
 original_source:
-- multiomics-kp
+  - source: multiomics-kp
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-Provider
 layout: product_detail
 ---

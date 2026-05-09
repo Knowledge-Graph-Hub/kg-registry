@@ -6,8 +6,10 @@ format: txt
 id: medgen.merged
 name: MERGED (Merged CUIs)
 original_source:
-- medgen
-- umls
+  - source: medgen
+    relation_type: prov:hadPrimarySource
+  - source: umls
+    relation_type: prov:hadPrimarySource
 product_file_size: 47602
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
 layout: product_detail

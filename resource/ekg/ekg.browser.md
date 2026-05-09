@@ -5,7 +5,8 @@ format: http
 id: ekg.browser
 name: eKG Faceted Browser
 original_source:
-- ekg
+  - source: ekg
+    relation_type: prov:hadPrimarySource
 product_url: https://api-vast.jrc.service.ec.europa.eu/fct/
 layout: product_detail
 ---

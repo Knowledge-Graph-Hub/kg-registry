@@ -2,17 +2,17 @@
 activity_status: active
 category: DataSource
 collection:
-- ber
+  - ber
 contacts:
-- category: Organization
-  label: Systems Biology Research Group at the University of California, San Diego
+  - category: Organization
+    label: Systems Biology Research Group at the University of California, San Diego
 creation_date: '2025-03-09T00:00:00Z'
 description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
 domains:
-- biological systems
-- systems biology
-- pathways
-- simulation
+  - biological systems
+  - systems biology
+  - pathways
+  - simulation
 homepage_url: http://bigg.ucsd.edu/
 id: bigg
 last_modified_date: '2025-09-27T00:00:00Z'
@@ -22,294 +22,337 @@ license:
   label: Custom
 name: BiGG Models
 products:
-- category: Product
-  description: bigg.compartment OBO
-  format: obo
-  id: obo-db-ingest.bigg.compartment.obo
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment OBO
-  original_source:
-  - bigg
-  product_file_size: 1055
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.compartment OWL
-  format: owl
-  id: obo-db-ingest.bigg.compartment.owl
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment OWL
-  original_source:
-  - bigg
-  product_file_size: 1477
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.compartment OBO Graph JSON
-  format: json
-  id: obo-db-ingest.bigg.compartment.json
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment OBO Graph JSON
-  original_source:
-  - bigg
-  product_file_size: 1114
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
-  secondary_source:
-  - obo-db-ingest
-- category: MappingProduct
-  description: bigg.compartment SSSOM
-  format: sssom
-  id: obo-db-ingest.bigg.compartment.sssom.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment SSSOM
-  original_source:
-  - bigg
-  - go
-  product_file_size: 242
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.metabolite OBO
-  format: obo
-  id: obo-db-ingest.bigg.metabolite.obo
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.metabolite OBO
-  original_source:
-  - bigg
-  product_file_size: 588366
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.metabolite OWL
-  format: owl
-  id: obo-db-ingest.bigg.metabolite.owl
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.metabolite OWL
-  original_source:
-  - bigg
-  product_file_size: 757896
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.metabolite OBO Graph JSON
-  format: json
-  id: obo-db-ingest.bigg.metabolite.json
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.metabolite OBO Graph JSON
-  original_source:
-  - bigg
-  product_file_size: 1025217
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
-  secondary_source:
-  - obo-db-ingest
-- category: MappingProduct
-  description: bigg.metabolite SSSOM
-  format: sssom
-  id: obo-db-ingest.bigg.metabolite.sssom.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.metabolite SSSOM
-  original_source:
-  - chebi
-  - bigg
-  - biocyc
-  - kegg
-  - reactome
-  product_file_size: 400516
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.model OBO
-  format: obo
-  id: obo-db-ingest.bigg.model.obo
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.model OBO
-  original_source:
-  - bigg
-  product_file_size: 2782
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.model OWL
-  format: owl
-  id: obo-db-ingest.bigg.model.owl
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.model OWL
-  original_source:
-  - bigg
-  product_file_size: 3714
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.model OBO Graph JSON
-  format: json
-  id: obo-db-ingest.bigg.model.json
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.model OBO Graph JSON
-  original_source:
-  - bigg
-  product_file_size: 2508
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.reaction OBO
-  format: obo
-  id: obo-db-ingest.bigg.reaction.obo
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.reaction OBO
-  original_source:
-  - bigg
-  product_file_size: 1195491
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.reaction OWL
-  format: owl
-  id: obo-db-ingest.bigg.reaction.owl
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.reaction OWL
-  original_source:
-  - bigg
-  product_file_size: 1806640
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.reaction OBO Graph JSON
-  format: json
-  id: obo-db-ingest.bigg.reaction.json
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.reaction OBO Graph JSON
-  original_source:
-  - bigg
-  product_file_size: 2340334
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
-  secondary_source:
-  - obo-db-ingest
-- category: MappingProduct
-  description: bigg.reaction SSSOM
-  format: sssom
-  id: obo-db-ingest.bigg.reaction.sssom.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.reaction SSSOM
-  original_source:
-  - bigg
-  product_file_size: 462968
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.compartment Nodes TSV
-  format: tsv
-  id: obo-db-ingest.bigg.compartment.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment Nodes TSV
-  original_source:
-  - bigg
-  product_file_size: 297
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.metabolite Nodes TSV
-  format: tsv
-  id: obo-db-ingest.bigg.metabolite.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.metabolite Nodes TSV
-  original_source:
-  - bigg
-  product_file_size: 266629
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.model Nodes TSV
-  format: tsv
-  id: obo-db-ingest.bigg.model.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.model Nodes TSV
-  original_source:
-  - bigg
-  product_file_size: 1151
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: bigg.reaction Nodes TSV
-  format: tsv
-  id: obo-db-ingest.bigg.reaction.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.reaction Nodes TSV
-  original_source:
-  - bigg
-  product_file_size: 593163
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
-  secondary_source:
-  - obo-db-ingest
+  - category: Product
+    description: bigg.compartment OBO
+    format: obo
+    id: obo-db-ingest.bigg.compartment.obo
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.compartment OBO
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1055
+    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.compartment OWL
+    format: owl
+    id: obo-db-ingest.bigg.compartment.owl
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.compartment OWL
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1477
+    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.compartment OBO Graph JSON
+    format: json
+    id: obo-db-ingest.bigg.compartment.json
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.compartment OBO Graph JSON
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1114
+    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: MappingProduct
+    description: bigg.compartment SSSOM
+    format: sssom
+    id: obo-db-ingest.bigg.compartment.sssom.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.compartment SSSOM
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_file_size: 242
+    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.metabolite OBO
+    format: obo
+    id: obo-db-ingest.bigg.metabolite.obo
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.metabolite OBO
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 588366
+    product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.metabolite OWL
+    format: owl
+    id: obo-db-ingest.bigg.metabolite.owl
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.metabolite OWL
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 757896
+    product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.metabolite OBO Graph JSON
+    format: json
+    id: obo-db-ingest.bigg.metabolite.json
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.metabolite OBO Graph JSON
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1025217
+    product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: MappingProduct
+    description: bigg.metabolite SSSOM
+    format: sssom
+    id: obo-db-ingest.bigg.metabolite.sssom.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.metabolite SSSOM
+    original_source:
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+    product_file_size: 400516
+    product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.model OBO
+    format: obo
+    id: obo-db-ingest.bigg.model.obo
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.model OBO
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2782
+    product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.model OWL
+    format: owl
+    id: obo-db-ingest.bigg.model.owl
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.model OWL
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 3714
+    product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.model OBO Graph JSON
+    format: json
+    id: obo-db-ingest.bigg.model.json
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.model OBO Graph JSON
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2508
+    product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.reaction OBO
+    format: obo
+    id: obo-db-ingest.bigg.reaction.obo
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.reaction OBO
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1195491
+    product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.reaction OWL
+    format: owl
+    id: obo-db-ingest.bigg.reaction.owl
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.reaction OWL
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1806640
+    product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.reaction OBO Graph JSON
+    format: json
+    id: obo-db-ingest.bigg.reaction.json
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.reaction OBO Graph JSON
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2340334
+    product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: MappingProduct
+    description: bigg.reaction SSSOM
+    format: sssom
+    id: obo-db-ingest.bigg.reaction.sssom.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.reaction SSSOM
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 462968
+    product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.compartment Nodes TSV
+    format: tsv
+    id: obo-db-ingest.bigg.compartment.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.compartment Nodes TSV
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 297
+    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.metabolite Nodes TSV
+    format: tsv
+    id: obo-db-ingest.bigg.metabolite.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.metabolite Nodes TSV
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 266629
+    product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.model Nodes TSV
+    format: tsv
+    id: obo-db-ingest.bigg.model.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.model Nodes TSV
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1151
+    product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: bigg.reaction Nodes TSV
+    format: tsv
+    id: obo-db-ingest.bigg.reaction.tsv
+    license:
+      id: http://bigg.ucsd.edu/license#license
+      label: Custom
+    name: bigg.reaction Nodes TSV
+    original_source:
+      - source: bigg
+        relation_type: prov:hadPrimarySource
+    product_file_size: 593163
+    product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - King ZA
-  - Lu JS
-  - Dräger A
-  - Miller PC
-  - Federowicz S
-  - Lerman JA
-  - Ebrahim A
-  - Palsson BO
-  - Lewis NE
-  doi: doi:10.1093/nar/gkv1049
-  id: doi:10.1093/nar/gkv1049
-  preferred: true
-  title: 'BiGG Models: A platform for integrating, standardizing, and sharing genome-scale
-    models'
-  year: '2016'
+  - authors:
+      - King ZA
+      - Lu JS
+      - Dräger A
+      - Miller PC
+      - Federowicz S
+      - Lerman JA
+      - Ebrahim A
+      - Palsson BO
+      - Lewis NE
+    doi: doi:10.1093/nar/gkv1049
+    id: doi:10.1093/nar/gkv1049
+    preferred: true
+    title: 'BiGG Models: A platform for integrating, standardizing, and sharing genome-scale models'
+    year: '2016'
 repository: https://github.com/SBRG/bigg_models
 ---
+
 BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.

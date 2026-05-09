@@ -7,9 +7,11 @@ is_neo4j: true
 is_public: true
 name: CL-KG Neo4j graph instance
 original_source:
-- cl-kg
+  - source: cl-kg
+    relation_type: prov:hadPrimarySource
 product_url: https://cellular-semantics.sanger.ac.uk/browser/
 secondary_source:
-- cl-kg
+  - source: cl-kg
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

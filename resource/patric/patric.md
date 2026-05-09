@@ -2,11 +2,11 @@
 activity_status: inactive
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.bv-brc.org/
-  label: BV-BRC
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.bv-brc.org/
+    label: BV-BRC
 creation_date: '2025-11-05T00:00:00Z'
 description: The Pathosystems Resource Integration Center (PATRIC) was a bacterial bioinformatics resource center providing integrated data and analysis tools for bacterial infectious disease research. PATRIC has been succeeded by the Bacterial and Viral Bioinformatics Resource Center (BV-BRC), which continues to provide comprehensive bacterial genomics data, comparative analysis tools, and molecular characterization resources. The legacy PATRIC data and functionality have been integrated into BV-BRC.
 domains:
@@ -21,40 +21,43 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: Pathosystems Resource Integration Center
 products:
-- category: GraphicalInterface
-  description: Web portal for bacterial genomics (now at BV-BRC)
-  format: http
-  id: patric.web
-  name: PATRIC/BV-BRC Web Portal
-  original_source:
-  - patric
-  product_url: https://www.bv-brc.org/
-- category: Product
-  description: Bacterial genome data and annotations
-  format: mixed
-  id: patric.genomes
-  name: PATRIC Genome Data
-  original_source:
-  - patric
-  product_url: https://www.bv-brc.org/
-- category: ProgrammingInterface
-  description: API for programmatic access to bacterial data
-  format: http
-  id: patric.api
-  name: BV-BRC API
-  original_source:
-  - patric
-  product_url: https://www.bv-brc.org/docs/api/
+  - category: GraphicalInterface
+    description: Web portal for bacterial genomics (now at BV-BRC)
+    format: http
+    id: patric.web
+    name: PATRIC/BV-BRC Web Portal
+    original_source:
+      - source: patric
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.bv-brc.org/
+  - category: Product
+    description: Bacterial genome data and annotations
+    format: mixed
+    id: patric.genomes
+    name: PATRIC Genome Data
+    original_source:
+      - source: patric
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.bv-brc.org/
+  - category: ProgrammingInterface
+    description: API for programmatic access to bacterial data
+    format: http
+    id: patric.api
+    name: BV-BRC API
+    original_source:
+      - source: patric
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.bv-brc.org/docs/api/
 publications:
-- id: https://doi.org/10.1093/nar/gkw1017
+  - id: https://doi.org/10.1093/nar/gkw1017
 synonyms:
   - PATRIC
   - BV-BRC
   - Bacterial and Viral Bioinformatics Resource Center
 taxon:
-- NCBITaxon:2
+  - NCBITaxon:2
 warnings:
-- PATRIC has been succeeded by BV-BRC (Bacterial and Viral Bioinformatics Resource Center). All data and tools are now available at bv-brc.org
+  - PATRIC has been succeeded by BV-BRC (Bacterial and Viral Bioinformatics Resource Center). All data and tools are now available at bv-brc.org
 ---
 
 # Pathosystems Resource Integration Center
@@ -120,4 +123,3 @@ Bacteria (NCBITaxon:2)
 ## Migration Notice
 
 PATRIC has been succeeded by BV-BRC. Users should transition to BV-BRC for continued access to bacterial bioinformatics resources.
-

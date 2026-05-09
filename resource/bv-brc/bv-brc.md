@@ -2,28 +2,23 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.bv-brc.org/
-  label: Bacterial and Viral Bioinformatics Resource Center
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: help@bv-brc.org
-  label: BV-BRC Help Desk
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.bv-brc.org/
+    label: Bacterial and Viral Bioinformatics Resource Center
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: help@bv-brc.org
+    label: BV-BRC Help Desk
 creation_date: '2025-05-28T00:00:00Z'
-description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is a
-  comprehensive resource for bacterial and viral infectious disease research that
-  combines the data, technology, and extensive user communities from two long-running
-  centers - PATRIC (the bacterial system) and IRD/ViPR (the viral systems). BV-BRC
-  provides integrated data, advanced bioinformatics tools, and workflows to support
-  the scientific community in understanding and combating infectious diseases.
+description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is a comprehensive resource for bacterial and viral infectious disease research that combines the data, technology, and extensive user communities from two long-running centers - PATRIC (the bacterial system) and IRD/ViPR (the viral systems). BV-BRC provides integrated data, advanced bioinformatics tools, and workflows to support the scientific community in understanding and combating infectious diseases.
 domains:
-- microbiology
-- genomics
-- health
-- biomedical
+  - microbiology
+  - genomics
+  - health
+  - biomedical
 homepage_url: https://www.bv-brc.org/
 id: bv-brc
 last_modified_date: '2025-12-13T00:00:00Z'
@@ -33,140 +28,177 @@ license:
   label: Custom
 name: Bacterial and Viral Bioinformatics Resource Center
 products:
-- category: GraphicalInterface
-  description: Web-based interface providing access to BV-BRC data, tools, and services
-  format: http
-  id: bv-brc.site
-  name: BV-BRC Web Interface
-  product_url: https://www.bv-brc.org/
-- category: ProgrammingInterface
-  description: Application Programming Interface for programmatic access to BV-BRC
-    data
-  format: http
-  id: bv-brc.api
-  is_public: true
-  name: BV-BRC Data API
-  product_url: https://www.bv-brc.org/api/doc/
-- category: ProcessProduct
-  description: Command Line Interface for batch access to BV-BRC data and services
-  format: http
-  id: bv-brc.cli
-  name: BV-BRC CLI
-  product_url: https://www.bv-brc.org/docs/cli_tutorial/index.html
-- category: Product
-  description: FTP server providing direct access to BV-BRC data files
-  format: http
-  id: bv-brc.ftp
-  name: BV-BRC FTP
-  product_url: https://www.bv-brc.org/docs/quick_references/ftp.html
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: Product
-  description: Trait data table listing all 140+ harmonized traits available in metaTraits,
-    mapped to standardized ontologies.
-  id: metatraits.traits
-  name: metaTraits Trait List
-  original_source:
-  - bacdive
-  - bv-brc
-  - goldterms
-  - progenomes
-  product_url: https://metatraits.embl.de/traits
+  - category: GraphicalInterface
+    description: Web-based interface providing access to BV-BRC data, tools, and services
+    format: http
+    id: bv-brc.site
+    name: BV-BRC Web Interface
+    product_url: https://www.bv-brc.org/
+  - category: ProgrammingInterface
+    description: Application Programming Interface for programmatic access to BV-BRC data
+    format: http
+    id: bv-brc.api
+    is_public: true
+    name: BV-BRC Data API
+    product_url: https://www.bv-brc.org/api/doc/
+  - category: ProcessProduct
+    description: Command Line Interface for batch access to BV-BRC data and services
+    format: http
+    id: bv-brc.cli
+    name: BV-BRC CLI
+    product_url: https://www.bv-brc.org/docs/cli_tutorial/index.html
+  - category: Product
+    description: FTP server providing direct access to BV-BRC data files
+    format: http
+    id: bv-brc.ftp
+    name: BV-BRC FTP
+    product_url: https://www.bv-brc.org/docs/quick_references/ftp.html
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: civic
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: pathophenodb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: protcid
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: spoke
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Trait data table listing all 140+ harmonized traits available in metaTraits, mapped to standardized ontologies.
+    id: metatraits.traits
+    name: metaTraits Trait List
+    original_source:
+      - source: bacdive
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: goldterms
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_url: https://metatraits.embl.de/traits
 publications:
-- authors:
-  - Olson RD
-  - Assaf R
-  - Brettin T
-  - Conrad N
-  - Cucinell C
-  - Davis JJ
-  - Dempsey DM
-  - Dickerman A
-  - Dietrich EM
-  - Kenyon RW
-  - Kuscuoglu M
-  - Lefkowitz EJ
-  - Lu J
-  - Machi D
-  - Macken C
-  - Mao C
-  - Niewiadomska A
-  - Nguyen M
-  - Olsen GJ
-  - Overbeek JC
-  - Parrello B
-  - Parrello V
-  - Porter JS
-  - Pusch GD
-  - Shukla M
-  - Singh I
-  - Stewart L
-  - Tan G
-  - Thomas C
-  - VanOeffelen M
-  - Vonstein V
-  - Wallace ZS
-  - Warren AS
-  - Wattam AR
-  - Xia F
-  - Yoo H
-  - Zhang Y
-  - Zmasek CM
-  - Scheuermann RH
-  - Stevens RL
-  doi: doi:10.1093/nar/gkac1003
-  id: https://pubmed.ncbi.nlm.nih.gov/36350631/
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC):
-    a resource combining PATRIC, IRD and ViPR'
-  year: '2022'
+  - authors:
+      - Olson RD
+      - Assaf R
+      - Brettin T
+      - Conrad N
+      - Cucinell C
+      - Davis JJ
+      - Dempsey DM
+      - Dickerman A
+      - Dietrich EM
+      - Kenyon RW
+      - Kuscuoglu M
+      - Lefkowitz EJ
+      - Lu J
+      - Machi D
+      - Macken C
+      - Mao C
+      - Niewiadomska A
+      - Nguyen M
+      - Olsen GJ
+      - Overbeek JC
+      - Parrello B
+      - Parrello V
+      - Porter JS
+      - Pusch GD
+      - Shukla M
+      - Singh I
+      - Stewart L
+      - Tan G
+      - Thomas C
+      - VanOeffelen M
+      - Vonstein V
+      - Wallace ZS
+      - Warren AS
+      - Wattam AR
+      - Xia F
+      - Yoo H
+      - Zhang Y
+      - Zmasek CM
+      - Scheuermann RH
+      - Stevens RL
+    doi: doi:10.1093/nar/gkac1003
+    id: https://pubmed.ncbi.nlm.nih.gov/36350631/
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC): a resource combining PATRIC, IRD and ViPR'
+    year: '2022'
 repository: https://github.com/BV-BRC
 taxon:
-- NCBITaxon:2
-- NCBITaxon:9606
+  - NCBITaxon:2
+  - NCBITaxon:9606
 ---
+
 ## Overview
 
 The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is an information system designed to support the biomedical research community's work on bacterial and viral infectious diseases via integration of vital pathogen information with rich data and analysis tools. BV-BRC combines the data, technology, and extensive user communities from two long-running centers: PATRIC, the bacterial system, and IRD/ViPR, the viral systems.

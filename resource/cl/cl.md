@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: David Osumi-Sutherland
-  orcid: 0000-0002-7073-9172
-  contact_details:
-  - contact_type: email
-    value: do12@sanger.ac.uk
-  - contact_type: github
-    value: dosumis
+  - category: Individual
+    label: David Osumi-Sutherland
+    orcid: 0000-0002-7073-9172
+    contact_details:
+      - contact_type: email
+        value: do12@sanger.ac.uk
+      - contact_type: github
+        value: dosumis
 creation_date: '2025-06-04T00:00:00Z'
-description: The Cell Ontology is a structured controlled vocabulary for cell types
-  in animals.
+description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://obophenotype.github.io/cell-ontology/
 id: cl
 infores_id: cl
@@ -28,558 +27,907 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Cell Ontology
 products:
-- category: OntologyProduct
-  description: Complete ontology, plus inter-ontology axioms, and imports modules
-  format: owl
-  id: cl.owl
-  name: Main CL OWL edition
-  product_file_size: 65879178
-  product_url: http://purl.obolibrary.org/obo/cl.owl
-- category: OntologyProduct
-  description: Complete ontology, plus inter-ontology axioms, and imports modules
-    merged in
-  format: obo
-  id: cl.obo
-  name: CL obo format edition
-  product_file_size: 17326417
-  product_url: http://purl.obolibrary.org/obo/cl.obo
-- category: OntologyProduct
-  description: Complete ontology, plus inter-ontology axioms, and imports modules
-    merged in
-  format: json
-  id: cl.json
-  name: CL OBOGraph-JSON format edition
-  product_file_size: 39845315
-  product_url: http://purl.obolibrary.org/obo/cl.json
-- category: OntologyProduct
-  description: Basic version, no inter-ontology axioms
-  format: owl
-  id: cl.cl-basic.owl
-  name: Basic CL
-  product_file_size: 9533929
-  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
-- category: OntologyProduct
-  description: Basic version, no inter-ontology axioms
-  format: obo
-  id: cl.cl-basic.obo
-  name: Basic CL (OBO version)
-  product_file_size: 3346117
-  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
-- category: OntologyProduct
-  description: Basic version, no inter-ontology axioms
-  format: json
-  id: cl.cl-basic.json
-  name: Basic CL (OBOGraph-JSON version)
-  product_file_size: 6060633
-  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
-- category: OntologyProduct
-  description: complete CL but with no imports or external axioms
-  format: owl
-  id: cl.cl-base.owl
-  name: CL base module
-  product_file_size: 12575443
-  product_url: http://purl.obolibrary.org/obo/cl/cl-base.owl
-- category: OntologyProduct
-  description: complete CL but with no imports or external axioms
-  format: obo
-  id: cl.cl-base.obo
-  name: CL base module (OBO version)
-  product_file_size: 3755296
-  product_url: http://purl.obolibrary.org/obo/cl/cl-base.obo
-- category: OntologyProduct
-  description: complete CL but with no imports or external axioms
-  format: json
-  id: cl.cl-base.json
-  name: CL base module (OBOGraph-JSON version)
-  product_file_size: 7755251
-  product_url: http://purl.obolibrary.org/obo/cl/cl-base.json
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: GraphProduct
-  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
-    and integrating information from diverse biomedical resources including DRKG,
-    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
-    SIDER, and others).
-  id: ibkh.graph
-  name: iBKH Knowledge Graph
-  original_source:
-  - drkg
-  - idisk
-  - brenda
-  - ctd
-  - drugbank
-  - kegg
-  - pharmgkb
-  - reactome
-  - sider
-  - tissues
-  - bgee
-  - doid
-  - uberon
-  - cl
-  - hgnc
-  - chembl
-  - chebi
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: GraphProduct
-  description: RNA-KG as a Neo4j Dump
-  format: neo4j
-  id: rna-kg.kg.neo4j
-  name: RNA-KG Neo4j Dump
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 3976840239
-  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Nodes in CSV format
-  format: csv
-  id: rna-kg.kg.nodes
-  name: RNA-KG Nodes
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 4424633304
-  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Edges in CSV format
-  format: csv
-  id: rna-kg.kg.edges
-  name: RNA-KG Edges
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 18370248815
-  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-  secondary_source:
-  - rna-kg
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
+  - category: OntologyProduct
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+    format: owl
+    id: cl.owl
+    name: Main CL OWL edition
+    product_file_size: 65879178
+    product_url: http://purl.obolibrary.org/obo/cl.owl
+  - category: OntologyProduct
+    description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
+    format: obo
+    id: cl.obo
+    name: CL obo format edition
+    product_file_size: 17326417
+    product_url: http://purl.obolibrary.org/obo/cl.obo
+  - category: OntologyProduct
+    description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
+    format: json
+    id: cl.json
+    name: CL OBOGraph-JSON format edition
+    product_file_size: 39845315
+    product_url: http://purl.obolibrary.org/obo/cl.json
+  - category: OntologyProduct
+    description: Basic version, no inter-ontology axioms
+    format: owl
+    id: cl.cl-basic.owl
+    name: Basic CL
+    product_file_size: 9533929
+    product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
+  - category: OntologyProduct
+    description: Basic version, no inter-ontology axioms
+    format: obo
+    id: cl.cl-basic.obo
+    name: Basic CL (OBO version)
+    product_file_size: 3346117
+    product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
+  - category: OntologyProduct
+    description: Basic version, no inter-ontology axioms
+    format: json
+    id: cl.cl-basic.json
+    name: Basic CL (OBOGraph-JSON version)
+    product_file_size: 6060633
+    product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
+  - category: OntologyProduct
+    description: complete CL but with no imports or external axioms
+    format: owl
+    id: cl.cl-base.owl
+    name: CL base module
+    product_file_size: 12575443
+    product_url: http://purl.obolibrary.org/obo/cl/cl-base.owl
+  - category: OntologyProduct
+    description: complete CL but with no imports or external axioms
+    format: obo
+    id: cl.cl-base.obo
+    name: CL base module (OBO version)
+    product_file_size: 3755296
+    product_url: http://purl.obolibrary.org/obo/cl/cl-base.obo
+  - category: OntologyProduct
+    description: complete CL but with no imports or external axioms
+    format: json
+    id: cl.cl-base.json
+    name: CL base module (OBOGraph-JSON version)
+    product_file_size: 7755251
+    product_url: http://purl.obolibrary.org/obo/cl/cl-base.json
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: civic
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: pathophenodb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: protcid
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: spoke
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing and integrating information from diverse biomedical resources including DRKG, iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome, SIDER, and others).
+    id: ibkh.graph
+    name: iBKH Knowledge Graph
+    original_source:
+      - source: drkg
+        relation_type: prov:hadPrimarySource
+      - source: idisk
+        relation_type: prov:hadPrimarySource
+      - source: brenda
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: pharmgkb
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: mirtarbase
+        relation_type: prov:hadPrimarySource
+      - source: unii
+        relation_type: prov:hadPrimarySource
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+      - source: mechreponet
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: clo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ro
+        relation_type: prov:hadPrimarySource
+      - source: so
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: bioportal
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: genemania
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+      - source: pheknowlator
+        relation_type: prov:wasInfluencedBy
+    versions:
+      - v1.0.0
+      - v2.0.0
+      - v2.1.0
+      - v3.0.2
+      - v4.0.0
+      - current_build
+  - category: GraphProduct
+    description: RNA-KG as a Neo4j Dump
+    format: neo4j
+    id: rna-kg.kg.neo4j
+    name: RNA-KG Neo4j Dump
+    original_source:
+      - source: dbsnp
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: circbase
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_file_size: 3976840239
+    product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+    secondary_source:
+      - source: rna-kg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: RNA-KG Nodes in CSV format
+    format: csv
+    id: rna-kg.kg.nodes
+    name: RNA-KG Nodes
+    original_source:
+      - source: dbsnp
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: circbase
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_file_size: 4424633304
+    product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+    secondary_source:
+      - source: rna-kg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: RNA-KG Edges in CSV format
+    format: csv
+    id: rna-kg.kg.edges
+    name: RNA-KG Edges
+    original_source:
+      - source: dbsnp
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: circbase
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: vo
+        relation_type: prov:hadPrimarySource
+      - source: pw
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_file_size: 18370248815
+    product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+    secondary_source:
+      - source: rna-kg
+        relation_type: prov:wasInfluencedBy
+  - category: OntologyProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+      - source: bfo
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: clo
+        relation_type: prov:hadPrimarySource
+      - source: cob
+        relation_type: prov:hadPrimarySource
+      - source: dc
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: ecto
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: fbbt
+        relation_type: prov:hadPrimarySource
+      - source: fbdv
+        relation_type: prov:hadPrimarySource
+      - source: fma
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hancestro
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: iao
+        relation_type: prov:hadPrimarySource
+      - source: ido
+        relation_type: prov:hadPrimarySource
+      - source: ma
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: mpath
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: ncit
+        relation_type: prov:hadPrimarySource
+      - source: oba
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: ogms
+        relation_type: prov:hadPrimarySource
+      - source: oio
+        relation_type: prov:hadPrimarySource
+      - source: omit
+        relation_type: prov:hadPrimarySource
+      - source: omo
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ro
+        relation_type: prov:hadPrimarySource
+      - source: semapv
+        relation_type: prov:hadPrimarySource
+      - source: skos
+        relation_type: prov:hadPrimarySource
+      - source: so
+        relation_type: prov:hadPrimarySource
+      - source: to
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: wbls
+        relation_type: prov:hadPrimarySource
+      - source: zfa
+        relation_type: prov:hadPrimarySource
+    product_file_size: 240665663
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+      - source: efo
+        relation_type: prov:wasInfluencedBy
+  - category: OntologyProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+      - source: bfo
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: clo
+        relation_type: prov:hadPrimarySource
+      - source: cob
+        relation_type: prov:hadPrimarySource
+      - source: dc
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: ecto
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: fbbt
+        relation_type: prov:hadPrimarySource
+      - source: fbdv
+        relation_type: prov:hadPrimarySource
+      - source: fma
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hancestro
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: iao
+        relation_type: prov:hadPrimarySource
+      - source: ido
+        relation_type: prov:hadPrimarySource
+      - source: ma
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: mpath
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: ncit
+        relation_type: prov:hadPrimarySource
+      - source: oba
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: ogms
+        relation_type: prov:hadPrimarySource
+      - source: oio
+        relation_type: prov:hadPrimarySource
+      - source: omit
+        relation_type: prov:hadPrimarySource
+      - source: omo
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ro
+        relation_type: prov:hadPrimarySource
+      - source: semapv
+        relation_type: prov:hadPrimarySource
+      - source: skos
+        relation_type: prov:hadPrimarySource
+      - source: so
+        relation_type: prov:hadPrimarySource
+      - source: to
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: wbls
+        relation_type: prov:hadPrimarySource
+      - source: zfa
+        relation_type: prov:hadPrimarySource
+    product_file_size: 64058275
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+      - source: efo
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+      - 2.0.1
+      - 2.0.0
+      - 1.0.2
+      - '1.0'
 repository: https://github.com/obophenotype/cell-ontology
 taxon:
-- NCBITaxon:33208
+  - NCBITaxon:33208
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
-  title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+    title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.'
 ---
+
 ## Description
 
 The Cell Ontology is a structured controlled vocabulary for cell types in animals.

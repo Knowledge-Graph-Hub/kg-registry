@@ -1,15 +1,14 @@
 ---
 category: Product
-description: Standard for Exchange of Nonclinical Data controlled terminology for
-  preclinical study data interchange and regulatory submissions to FDA.
+description: Standard for Exchange of Nonclinical Data controlled terminology for preclinical study data interchange and regulatory submissions to FDA.
 format: mixed
 id: cdiscvocab.send
 name: SEND Controlled Terminology
 original_source:
-- cdiscvocab
+  - source: cdiscvocab
+    relation_type: prov:hadPrimarySource
 product_url: https://evs.nci.nih.gov/ftp1/CDISC/SEND/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when accessing file
 layout: product_detail
 ---

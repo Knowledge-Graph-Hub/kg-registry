@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: rgd Nodes TSV
 original_source:
-- rgd
+  - source: rgd
+    relation_type: prov:hadPrimarySource
 product_file_size: 1729216
 product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

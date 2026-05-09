@@ -5,6 +5,7 @@ format: owl
 id: oio.owl
 name: OIO OWL
 original_source:
-- oio
+  - source: oio
+    relation_type: prov:hadPrimarySource
 layout: product_detail
 ---

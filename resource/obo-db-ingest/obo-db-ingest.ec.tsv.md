@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: ec Nodes TSV
 original_source:
-- ec
+  - source: ec
+    relation_type: prov:hadPrimarySource
 product_file_size: 283274
 product_url: https://w3id.org/biopragmatics/resources/ec/ec.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -6,7 +6,8 @@ format: psi_mi_xml
 id: complexportal.human.psi25
 name: Complex Portal Human PSI-MI XML 2.5
 original_source:
-- complexportal
+  - source: complexportal
+    relation_type: prov:hadPrimarySource
 product_file_size: 27080450
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/Homo_sapiens.zip
 layout: product_detail

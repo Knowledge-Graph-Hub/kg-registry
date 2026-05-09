@@ -4,10 +4,12 @@ description: Data model for cell phenotypes and biological entities they relate 
 id: nlm-ckn.schema
 name: nlm-ckn-schema
 original_source:
-- nlm-ckn
+  - source: nlm-ckn
+    relation_type: prov:hadPrimarySource
 product_file_size: 4262
 product_url: https://github.com/NIH-NLM/cell-kn-schema/blob/main/ckn-schema.yaml
 secondary_source:
-- nlm-ckn
+  - source: nlm-ckn
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

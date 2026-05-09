@@ -2,61 +2,75 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
-description: Stub Resource page for geonames. This page was automatically generated
-  because it was referenced by other resources.
+description: Stub Resource page for geonames. This page was automatically generated because it was referenced by other resources.
 domains:
-- stub
+  - stub
 id: geonames
 last_modified_date: '2026-02-26T00:00:00Z'
 layout: resource_detail
 name: Geonames
 products:
-- category: DataModelProduct
-  description: Automatically generated stub product. Please update with accurate information.
-  id: feature
-  name: Feature (Stub)
-- category: Product
-  description: geonames Nodes TSV
-  format: tsv
-  id: obo-db-ingest.geonames.tsv
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: geonames Nodes TSV
-  original_source:
-  - geonames
-  product_file_size: 549884
-  product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: GraphProduct
-  description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
-    format.
-  format: ntriples
-  id: orkg.dump
-  name: ORKG RDF Dump
-  original_source:
-  - orkg
-  - wikidata
-  - geonames
-  - ncit
-  - chebi
-  - ncbitaxon
-  - go
-  - clo
-  - omit
-  - iao
-  - uo
-  - stato
-  - obi
-  product_file_size: 642902930
-  product_url: https://orkg.org/api/rdf/dump
-  secondary_source:
-  - orkg
+  - category: DataModelProduct
+    description: Automatically generated stub product. Please update with accurate information.
+    id: feature
+    name: Feature (Stub)
+  - category: Product
+    description: geonames Nodes TSV
+    format: tsv
+    id: obo-db-ingest.geonames.tsv
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: geonames Nodes TSV
+    original_source:
+      - source: geonames
+        relation_type: prov:hadPrimarySource
+    product_file_size: 549884
+    product_url: https://w3id.org/biopragmatics/resources/geonames/geonames.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples format.
+    format: ntriples
+    id: orkg.dump
+    name: ORKG RDF Dump
+    original_source:
+      - source: orkg
+        relation_type: prov:hadPrimarySource
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
+      - source: geonames
+        relation_type: prov:hadPrimarySource
+      - source: ncit
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: clo
+        relation_type: prov:hadPrimarySource
+      - source: omit
+        relation_type: prov:hadPrimarySource
+      - source: iao
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: stato
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+    product_file_size: 642902930
+    product_url: https://orkg.org/api/rdf/dump
+    secondary_source:
+      - source: orkg
+        relation_type: prov:wasInfluencedBy
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+  - This is an automatically generated stub page. Please replace with accurate information about this resource.
 ---
+
 # Geonames
 
 This is an automatically generated stub page for geonames. Please update with proper information.

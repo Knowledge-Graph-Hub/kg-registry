@@ -5,8 +5,10 @@ format: http
 id: ribocentre.search
 name: Sequence Search
 original_source:
-- ribocentre
-- rnacentral
+  - source: ribocentre
+    relation_type: prov:hadPrimarySource
+  - source: rnacentral
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ribocentre.org/search.html
 layout: product_detail
 ---

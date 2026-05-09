@@ -5,7 +5,8 @@ format: http
 id: go-cam.browser
 name: GO-CAM Browser
 original_source:
-- go-cam
+  - source: go-cam
+    relation_type: prov:hadPrimarySource
 product_url: http://geneontology.org/go-cam
 layout: product_detail
 ---

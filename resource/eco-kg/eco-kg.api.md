@@ -6,7 +6,8 @@ id: eco-kg.api
 is_public: true
 name: eco-KG API
 original_source:
-- eco-kg
+  - source: eco-kg
+    relation_type: prov:hadPrimarySource
 product_url: https://kghub.org/eco-kg/api
 layout: product_detail
 ---

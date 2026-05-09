@@ -5,9 +5,11 @@ id: ecid.nhanes.analyte.list
 is_public: true
 name: NHANES Analyte List
 original_source:
-- ecid
+  - source: ecid
+    relation_type: prov:hadPrimarySource
 product_url: https://zenodo.org/records/11528668
 secondary_source:
-- ecid
+  - source: ecid
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

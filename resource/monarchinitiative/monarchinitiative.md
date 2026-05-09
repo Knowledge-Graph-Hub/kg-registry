@@ -2,19 +2,17 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: info@monarchinitiative.org
-  id: monarchinitiative
-  label: Monarch Initiative
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: info@monarchinitiative.org
+    id: monarchinitiative
+    label: Monarch Initiative
 creation_date: '2025-10-30T00:00:00Z'
-description: The Monarch Initiative is an international consortium that integrates,
-  aligns, and redistributes cross-species gene, genotype, variant, disease, and phenotype
-  data to improve understanding of genetic disease and support translational research.
+description: The Monarch Initiative is an international consortium that integrates, aligns, and redistributes cross-species gene, genotype, variant, disease, and phenotype data to improve understanding of genetic disease and support translational research.
 domains:
-- genomics
-- biological systems
+  - genomics
+  - biological systems
 homepage_url: https://monarchinitiative.org/
 id: monarchinitiative
 infores_id: monarchinitiative
@@ -22,41 +20,42 @@ last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Monarch Initiative
 products:
-- category: KnowledgeGraph
-  description: Monarch Knowledge Graph integrating phenotype, disease, gene data across
-    species
-  format: mixed
-  id: monarchinitiative.kg
-  name: Monarch Knowledge Graph
-  original_source:
-  - monarchinitiative
-  product_url: https://monarchinitiative.org/
-- category: ProgrammingInterface
-  description: Monarch API for programmatic access to integrated data
-  format: http
-  id: monarchinitiative.api
-  name: Monarch API
-  original_source:
-  - monarchinitiative
-  product_url: https://api.monarchinitiative.org/api/
-- category: GraphicalInterface
-  description: Web interface for browsing genes, diseases, phenotypes across species
-  format: http
-  id: monarchinitiative.portal
-  name: Monarch Web Portal
-  original_source:
-  - monarchinitiative
-  product_url: https://monarchinitiative.org/
+  - category: KnowledgeGraph
+    description: Monarch Knowledge Graph integrating phenotype, disease, gene data across species
+    format: mixed
+    id: monarchinitiative.kg
+    name: Monarch Knowledge Graph
+    original_source:
+      - source: monarchinitiative
+        relation_type: prov:hadPrimarySource
+    product_url: https://monarchinitiative.org/
+  - category: ProgrammingInterface
+    description: Monarch API for programmatic access to integrated data
+    format: http
+    id: monarchinitiative.api
+    name: Monarch API
+    original_source:
+      - source: monarchinitiative
+        relation_type: prov:hadPrimarySource
+    product_url: https://api.monarchinitiative.org/api/
+  - category: GraphicalInterface
+    description: Web interface for browsing genes, diseases, phenotypes across species
+    format: http
+    id: monarchinitiative.portal
+    name: Monarch Web Portal
+    original_source:
+      - source: monarchinitiative
+        relation_type: prov:hadPrimarySource
+    product_url: https://monarchinitiative.org/
 publications:
-- id: https://doi.org/10.1093/nar/gkw1128
-  journal: Nucleic Acids Research
-  title: 'The Monarch Initiative: an integrative data and analytic platform connecting
-    phenotypes to genotypes across species'
-  year: '2017'
+  - id: https://doi.org/10.1093/nar/gkw1128
+    journal: Nucleic Acids Research
+    title: 'The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species'
+    year: '2017'
 repository: https://github.com/monarch-initiative
 synonyms:
-- Monarch
-- The Monarch Initiative
+  - Monarch
+  - The Monarch Initiative
 ---
 
 # Monarch Initiative

@@ -6,7 +6,8 @@ id: stitch.api
 is_public: true
 name: STITCH API
 original_source:
-- stitch
+  - source: stitch
+    relation_type: prov:hadPrimarySource
 product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
 layout: product_detail
 ---

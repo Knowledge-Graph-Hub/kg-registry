@@ -29,7 +29,8 @@ products:
     id: mousemine.web
     name: MouseMine Web Interface
     original_source:
-      - mousemine
+      - source: mousemine
+        relation_type: prov:hadPrimarySource
     product_url: http://www.mousemine.org/mousemine/begin.do
   - category: ProgrammingInterface
     description: Programmatic access to MouseMine data via RESTful web services with client libraries for Perl, Python, Ruby, and Java
@@ -37,21 +38,24 @@ products:
     is_public: true
     name: MouseMine API
     original_source:
-      - mousemine
+      - source: mousemine
+        relation_type: prov:hadPrimarySource
     product_url: http://www.mousemine.org/mousemine/api.do
   - category: GraphicalInterface
     description: Pre-built query templates for common data retrieval tasks covering genome features, proteins, expression, interactions, phenotypes, diseases, and more
     id: mousemine.templates
     name: MouseMine Query Templates
     original_source:
-      - mousemine
+      - source: mousemine
+        relation_type: prov:hadPrimarySource
     product_url: http://www.mousemine.org/mousemine/templates.do
   - category: GraphicalInterface
     description: Custom query construction tool for building complex, iterative queries across multiple data types
     id: mousemine.querybuilder
     name: MouseMine QueryBuilder
     original_source:
-      - mousemine
+      - source: mousemine
+        relation_type: prov:hadPrimarySource
     product_url: http://www.mousemine.org/mousemine/customQuery.do
 synonyms:
   - MouseMine

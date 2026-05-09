@@ -5,7 +5,8 @@ format: mixed
 id: sennet.data
 name: SenNet Multi-Omics Data
 original_source:
-- sennet
+  - source: sennet
+    relation_type: prov:hadPrimarySource
 product_url: https://data.sennetconsortium.org/
 layout: product_detail
 ---

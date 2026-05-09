@@ -5,9 +5,11 @@ id: ecid.compound.lists
 is_public: true
 name: ECID Compound Lists
 original_source:
-- ecid
+  - source: ecid
+    relation_type: prov:hadPrimarySource
 product_url: https://zenodo.org/records/15204234
 secondary_source:
-- ecid
+  - source: ecid
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

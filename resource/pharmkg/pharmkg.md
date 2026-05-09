@@ -2,26 +2,19 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: github
-    value: MindRank-Biotech
-  - contact_type: url
-    value: https://github.com/MindRank-Biotech/PharmKG
-  label: MindRank Biotech
-description: "PharmKG is a multi-relational, attributed biomedical knowledge graph\
-  \ benchmark that integrates curated databases and literature-derived relationships\
-  \ to link genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations\
-  \ across ~7,600\u20138,000 disambiguated entities (29 relation types), with domain-specific\
-  \ features for entities from multi-omics sources (e.g., gene expression, chemical\
-  \ structure, disease embeddings). It provides baselines for knowledge graph embedding\
-  \ and a neural network-based method, and supports downstream tasks such as drug\
-  \ repurposing and target identification."
+  - category: Organization
+    contact_details:
+      - contact_type: github
+        value: MindRank-Biotech
+      - contact_type: url
+        value: https://github.com/MindRank-Biotech/PharmKG
+    label: MindRank Biotech
+description: "PharmKG is a multi-relational, attributed biomedical knowledge graph benchmark that integrates curated databases and literature-derived relationships to link genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations across ~7,600–8,000 disambiguated entities (29 relation types), with domain-specific features for entities from multi-omics sources (e.g., gene expression, chemical structure, disease embeddings). It provides baselines for knowledge graph embedding and a neural network-based method, and supports downstream tasks such as drug repurposing and target identification."
 domains:
-- biomedical
-- drug discovery
-- pharmacology
-- health
+  - biomedical
+  - drug discovery
+  - pharmacology
+  - health
 homepage_url: https://github.com/MindRank-Biotech/PharmKG
 id: pharmkg
 layout: resource_detail
@@ -30,50 +23,63 @@ license:
   label: CC BY 4.0
 name: PharmKG
 products:
-- category: GraphProduct
-  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
-    chemicals, and diseases
-  edge_count: 500958
-  id: pharmkg.graph
-  name: PharmKG graph
-  node_count: 7603
-  original_source:
-  - omim
-  - drugbank
-  - pharmgkb
-  - ttd
-  - sider
-  - humannet
-  - ncbigene
-  - mesh
-  - pubchem
-  - gnbr
-  - biogps
-  - connectivitymap
-  product_url: https://zenodo.org/record/4077338
-  secondary_source:
-  - pharmkg
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: pharmgkb
+        relation_type: prov:hadPrimarySource
+      - source: ttd
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: humannet
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: gnbr
+        relation_type: prov:hadPrimarySource
+      - source: biogps
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+      - source: pharmkg
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Shuangjia Zheng
-  - Jiahua Rao
-  - Ying Song
-  - Jixian Zhang
-  - Xianglu Xiao
-  - Evandro Fei Fang
-  - Yuedong Yang
-  - Zhangming Niu
-  doi: 10.1093/bib/bbaa344
-  id: doi:10.1093/bib/bbaa344
-  journal: Briefings in Bioinformatics
-  title: 'PharmKG: a dedicated knowledge graph benchmark for biomedical data mining'
-  year: '2021'
+  - authors:
+      - Shuangjia Zheng
+      - Jiahua Rao
+      - Ying Song
+      - Jixian Zhang
+      - Xianglu Xiao
+      - Evandro Fei Fang
+      - Yuedong Yang
+      - Zhangming Niu
+    doi: 10.1093/bib/bbaa344
+    id: doi:10.1093/bib/bbaa344
+    journal: Briefings in Bioinformatics
+    title: 'PharmKG: a dedicated knowledge graph benchmark for biomedical data mining'
+    year: '2021'
 repository: https://github.com/MindRank-Biotech/PharmKG
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 creation_date: '2025-08-12T00:00:00Z'
 last_modified_date: '2026-04-16T00:00:00Z'
 ---
+
 PharmKG
 
 ## Evaluation

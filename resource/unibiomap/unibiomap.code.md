@@ -4,7 +4,8 @@ description: Source code and pipelines used to build the UniBioMap knowledge gra
 id: unibiomap.code
 name: UniBioMap Code
 original_source:
-- unibiomap
+  - source: unibiomap
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/xfd997700/UniBioMap
 repository: https://github.com/xfd997700/UniBioMap
 layout: product_detail

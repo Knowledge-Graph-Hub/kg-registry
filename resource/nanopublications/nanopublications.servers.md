@@ -5,7 +5,8 @@ format: http
 id: nanopublications.servers
 name: Nanopublication Server Network
 original_source:
-- nanopublications
+  - source: nanopublications
+    relation_type: prov:hadPrimarySource
 product_url: http://nanopub.net/
 layout: product_detail
 ---

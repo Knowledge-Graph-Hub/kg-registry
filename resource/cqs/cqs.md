@@ -27,16 +27,17 @@ products:
     id: cqs.docs
     name: CQS Documentation
     original_source:
-      - cqs
+      - source: cqs
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Translator-Curated-Query-Service
   - category: ProcessProduct
-    description: Source code and templates implementing Curated Query Service inference
-      logic.
+    description: Source code and templates implementing Curated Query Service inference logic.
     format: http
     id: cqs.code
     name: CQS Source Repository
     original_source:
-      - cqs
+      - source: cqs
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/TranslatorSRI/CQS
 ---
 

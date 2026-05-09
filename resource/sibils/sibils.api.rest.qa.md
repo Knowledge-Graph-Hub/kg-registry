@@ -5,9 +5,11 @@ id: sibils.api.rest.qa
 is_public: true
 name: SIBiLS Question Answering API
 original_source:
-- sibils
+  - source: sibils
+    relation_type: prov:hadPrimarySource
 product_url: https://sibils.org/API#Question-Answering-API
 secondary_source:
-- sibils
+  - source: sibils
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

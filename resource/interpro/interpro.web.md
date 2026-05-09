@@ -5,7 +5,8 @@ format: http
 id: interpro.web
 name: InterPro Web Interface
 original_source:
-- interpro
+  - source: interpro
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ebi.ac.uk/interpro/
 layout: product_detail
 ---

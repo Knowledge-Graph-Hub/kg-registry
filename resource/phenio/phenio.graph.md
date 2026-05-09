@@ -1,8 +1,8 @@
 ---
 category: GraphProduct
 compatibility:
-- standard: biolink
-  version: 4.2.5
+  - standard: biolink
+    version: 4.2.5
 description: PHENIO as a KGX graph
 format: kgx
 id: phenio.graph
@@ -11,11 +11,13 @@ license:
   label: BSD3
 name: KG-Phenio
 original_source:
-- phenio
+  - source: phenio
+    relation_type: prov:hadPrimarySource
 product_file_size: 47081100
 product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
 repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
 secondary_source:
-- phenio
+  - source: phenio
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

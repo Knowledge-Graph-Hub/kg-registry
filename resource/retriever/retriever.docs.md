@@ -5,7 +5,8 @@ format: http
 id: retriever.docs
 name: Retriever Documentation
 original_source:
-- retriever
+  - source: retriever
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/BioPack-team/retriever#readme
 layout: product_detail
 ---

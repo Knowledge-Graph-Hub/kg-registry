@@ -1,12 +1,12 @@
 ---
 category: Product
-description: Command-line tool for performing gene-list network enrichment analysis
-  using degree-preserving random gene list null models
+description: Command-line tool for performing gene-list network enrichment analysis using degree-preserving random gene list null models
 format: python
 id: gelinea.tool
 name: GeLiNEA Tool
 original_source:
-- gelinea
+  - source: gelinea
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/broadinstitute/GeLiNEA
 layout: product_detail
 ---

@@ -7,10 +7,12 @@ license:
   label: CC-BY-3.0
 name: ZFA
 original_source:
-- zfin
+  - source: zfin
+    relation_type: prov:hadPrimarySource
 product_file_size: 401588
 product_url: http://purl.obolibrary.org/obo/zfa.owl
 secondary_source:
-- zfin
+  - source: zfin
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

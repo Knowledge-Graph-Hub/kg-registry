@@ -2,13 +2,13 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-- translator
+  - translator
 contacts:
-- category: Individual
-  label: Gregory Hyde
+  - category: Individual
+    label: Gregory Hyde
 description: A Translator Knowledge Provider exploring connections hypotheses.
 domains:
-- health
+  - health
 homepage_url: https://github.com/di2ag/chp_api
 id: connections-hypothesis-kp
 last_modified_date: '2026-04-16T00:00:00Z'
@@ -18,24 +18,27 @@ license:
   label: Apache License 2.0
 name: Connections Hypothesis KP
 products:
-- category: ProcessProduct
-  description: Source code for the Connections Hypothesis Provider API implementation.
-  format: http
-  id: connections-hypothesis-kp.code
-  name: Connections Hypothesis KP Source Code
-  original_source:
-  - connections-hypothesis-kp
-  product_url: https://github.com/di2ag/chp_api/tree/production
-- category: DocumentationProduct
-  description: SmartAPI registry listing for CHP service metadata and interface documentation.
-  format: http
-  id: connections-hypothesis-kp.smartapi
-  name: Connections Hypothesis KP SmartAPI Entry
-  original_source:
-  - connections-hypothesis-kp
-  product_url: https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f
+  - category: ProcessProduct
+    description: Source code for the Connections Hypothesis Provider API implementation.
+    format: http
+    id: connections-hypothesis-kp.code
+    name: Connections Hypothesis KP Source Code
+    original_source:
+      - source: connections-hypothesis-kp
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/di2ag/chp_api/tree/production
+  - category: DocumentationProduct
+    description: SmartAPI registry listing for CHP service metadata and interface documentation.
+    format: http
+    id: connections-hypothesis-kp.smartapi
+    name: Connections Hypothesis KP SmartAPI Entry
+    original_source:
+      - source: connections-hypothesis-kp
+        relation_type: prov:hadPrimarySource
+    product_url: https://smart-api.info/registry?q=412af63e15b73e5a30778aac84ce313f
 creation_date: '2025-03-09T00:00:00Z'
 ---
+
 A Translator Knowledge Provider exploring connections hypotheses.
 
 ## Automated Evaluation

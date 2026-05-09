@@ -5,12 +5,11 @@ format: http
 id: tmrnawebsite.alignments
 name: tmRNA and SmpB Alignments
 original_source:
-- tmrnawebsite
+  - source: tmrnawebsite
+    relation_type: prov:hadPrimarySource
 product_url: http://bioinformatics.sandia.gov/tmrna/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
 layout: product_detail
 ---

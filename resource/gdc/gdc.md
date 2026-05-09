@@ -2,16 +2,12 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: The NCI Genomic Data Commons (GDC) is a data sharing platform promoting
-  precision medicine in oncology by providing unified access to harmonized cancer
-  genomic and clinical data from major cancer research programs including TCGA and
-  TARGET, processed with standardized bioinformatics pipelines to enable direct comparison
-  and integrated analysis.
+description: The NCI Genomic Data Commons (GDC) is a data sharing platform promoting precision medicine in oncology by providing unified access to harmonized cancer genomic and clinical data from major cancer research programs including TCGA and TARGET, processed with standardized bioinformatics pipelines to enable direct comparison and integrated analysis.
 domains:
-- genomics
-- precision medicine
-- clinical
-- biomedical
+  - genomics
+  - precision medicine
+  - clinical
+  - biomedical
 id: gdc
 infores_id: gdc
 last_modified_date: '2026-02-20T00:00:00Z'
@@ -19,55 +15,55 @@ layout: resource_detail
 name: National Cancer Institute Genomic Data Commons Data Portal
 homepage_url: https://portal.gdc.cancer.gov
 synonyms:
-- GDC
-- Genomic Data Commons
+  - GDC
+  - Genomic Data Commons
 contacts:
-- category: Organization
-  label: National Cancer Institute
-  contact_details:
-  - contact_type: url
-    value: https://www.cancer.gov/
-  - contact_type: url
-    value: https://gdc.cancer.gov/
+  - category: Organization
+    label: National Cancer Institute
+    contact_details:
+      - contact_type: url
+        value: https://www.cancer.gov/
+      - contact_type: url
+        value: https://gdc.cancer.gov/
 publications:
-- preferred: true
-  id: doi:10.1182/blood-2017-03-735654
-  title: The NCI Genomic Data Commons as an engine for precision medicine
-  journal: Blood
-  year: "2017"
-  doi: 10.1182/blood-2017-03-735654
+  - preferred: true
+    id: doi:10.1182/blood-2017-03-735654
+    title: The NCI Genomic Data Commons as an engine for precision medicine
+    journal: Blood
+    year: "2017"
+    doi: 10.1182/blood-2017-03-735654
 products:
-- category: GraphicalInterface
-  description: Main GDC web portal for interactive exploration of projects, cohorts, and
-    files.
-  format: http
-  id: gdc.portal
-  name: GDC Data Portal
-  original_source:
-  - gdc
-  product_url: https://portal.gdc.cancer.gov/
-- category: ProgrammingInterface
-  connection_url: https://api.gdc.cancer.gov/
-  description: REST API documentation and endpoint for programmatic access to GDC
-    metadata and files.
-  format: http
-  id: gdc.api
-  is_public: true
-  name: GDC API
-  original_source:
-  - gdc
-  product_url: https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/
-- category: DocumentationProduct
-  description: Documentation and download links for the GDC Data Transfer Tool used
-    for bulk file download.
-  format: http
-  id: gdc.data-transfer-tool
-  name: GDC Data Transfer Tool
-  original_source:
-  - gdc
-  product_url: https://gdc.cancer.gov/access-data/gdc-data-transfer-tool
+  - category: GraphicalInterface
+    description: Main GDC web portal for interactive exploration of projects, cohorts, and files.
+    format: http
+    id: gdc.portal
+    name: GDC Data Portal
+    original_source:
+      - source: gdc
+        relation_type: prov:hadPrimarySource
+    product_url: https://portal.gdc.cancer.gov/
+  - category: ProgrammingInterface
+    connection_url: https://api.gdc.cancer.gov/
+    description: REST API documentation and endpoint for programmatic access to GDC metadata and files.
+    format: http
+    id: gdc.api
+    is_public: true
+    name: GDC API
+    original_source:
+      - source: gdc
+        relation_type: prov:hadPrimarySource
+    product_url: https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/
+  - category: DocumentationProduct
+    description: Documentation and download links for the GDC Data Transfer Tool used for bulk file download.
+    format: http
+    id: gdc.data-transfer-tool
+    name: GDC Data Transfer Tool
+    original_source:
+      - source: gdc
+        relation_type: prov:hadPrimarySource
+    product_url: https://gdc.cancer.gov/access-data/gdc-data-transfer-tool
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # NCI Genomic Data Commons (GDC)

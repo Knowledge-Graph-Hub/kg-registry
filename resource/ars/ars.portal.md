@@ -5,7 +5,8 @@ format: http
 id: ars.portal
 name: ARS Production Portal
 original_source:
-- ars
+  - source: ars
+    relation_type: prov:hadPrimarySource
 product_url: https://ars-prod.transltr.io/
 layout: product_detail
 ---

@@ -2,24 +2,20 @@
 activity_status: active
 category: Database
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://rampdb.nih.gov/
-  - contact_type: email
-    value: rampdb@nih.gov
-  id: ncats-rampdb
-  label: NCATS RaMP-DB Team
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://rampdb.nih.gov/
+      - contact_type: email
+        value: rampdb@nih.gov
+    id: ncats-rampdb
+    label: NCATS RaMP-DB Team
 creation_date: '2025-10-30T00:00:00Z'
-description: RaMP-DB (Relational database of Metabolomic Pathways) is a multi-sourced
-  integrated database with comprehensive annotations on biological pathways, structure/chemistry,
-  disease and ontology annotations for genes, proteins, and metabolites. RaMP-DB provides
-  a framework for single and batch queries of annotations, and for performing chemical
-  and biological pathway enrichment analyses on multi-omic datasets.
+description: RaMP-DB (Relational database of Metabolomic Pathways) is a multi-sourced integrated database with comprehensive annotations on biological pathways, structure/chemistry, disease and ontology annotations for genes, proteins, and metabolites. RaMP-DB provides a framework for single and batch queries of annotations, and for performing chemical and biological pathway enrichment analyses on multi-omic datasets.
 domains:
-- systems biology
-- pathways
-- biomedical
+  - systems biology
+  - pathways
+  - biomedical
 id: rampdb
 infores_id: rampdb
 last_modified_date: '2026-01-15T00:00:00Z'
@@ -27,35 +23,38 @@ layout: resource_detail
 name: RaMPDB
 homepage_url: https://rampdb.nih.gov/
 synonyms:
-- RaMP-DB
-- RaMPDB
-- Relational database of Metabolomic Pathways
+  - RaMP-DB
+  - RaMPDB
+  - Relational database of Metabolomic Pathways
 products:
-- id: rampdb.database
-  name: RaMP-DB Integrated Database
-  description: Multi-sourced relational database integrating metabolomic pathway information,
-    biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
-    and metabolites with query and enrichment analysis capabilities.
-  category: DatabaseProduct
-  product_url: https://rampdb.nih.gov/
-  original_source:
-  - kegg
-  - reactome
-  - hmdb
-  - wikipathways
-  - rampdb
-  is_public: true
-- id: rampdb.api
-  name: RaMP-DB API
-  description: Programmatic interface for accessing RaMP-DB integrated metabolomic
-    pathway data and performing enrichment analyses.
-  category: ProgrammingInterface
-  product_url: https://rampdb.nih.gov/api
-  original_source:
-  - rampdb
-  is_public: true
+  - id: rampdb.database
+    name: RaMP-DB Integrated Database
+    description: Multi-sourced relational database integrating metabolomic pathway information, biochemical reactions, ontologies, and chemical descriptors for genes, proteins, and metabolites with query and enrichment analysis capabilities.
+    category: DatabaseProduct
+    product_url: https://rampdb.nih.gov/
+    original_source:
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: rampdb
+        relation_type: prov:hadPrimarySource
+    is_public: true
+  - id: rampdb.api
+    name: RaMP-DB API
+    description: Programmatic interface for accessing RaMP-DB integrated metabolomic pathway data and performing enrichment analyses.
+    category: ProgrammingInterface
+    product_url: https://rampdb.nih.gov/api
+    original_source:
+      - source: rampdb
+        relation_type: prov:hadPrimarySource
+    is_public: true
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # RaMPDB
@@ -148,4 +147,3 @@ RaMP-DB is registered as an information resource (infores:rampdb) in the NCATS B
 *For current database version, data statistics, API documentation, and tutorials, visit the official RaMP-DB website at https://rampdb.nih.gov/*
 
 **Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-

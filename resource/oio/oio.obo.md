@@ -5,6 +5,7 @@ format: obo
 id: oio.obo
 name: OIO OBO
 original_source:
-- oio
+  - source: oio
+    relation_type: prov:hadPrimarySource
 layout: product_detail
 ---

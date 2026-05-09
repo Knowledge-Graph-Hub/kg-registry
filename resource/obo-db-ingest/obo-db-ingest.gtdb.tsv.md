@@ -9,10 +9,12 @@ license:
   label: CC-BY-SA-4.0
 name: gtdb Nodes TSV
 original_source:
-- gtdb
+  - source: gtdb
+    relation_type: prov:hadPrimarySource
 product_file_size: 2918783
 product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.tsv.gz
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

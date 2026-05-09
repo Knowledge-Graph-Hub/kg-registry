@@ -5,7 +5,8 @@ format: http
 id: cqs.docs
 name: CQS Documentation
 original_source:
-- cqs
+  - source: cqs
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Translator-Curated-Query-Service
 layout: product_detail
 ---

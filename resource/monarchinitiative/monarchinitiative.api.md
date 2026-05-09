@@ -5,7 +5,8 @@ format: http
 id: monarchinitiative.api
 name: Monarch API
 original_source:
-- monarchinitiative
+  - source: monarchinitiative
+    relation_type: prov:hadPrimarySource
 product_url: https://api.monarchinitiative.org/api/
 layout: product_detail
 ---

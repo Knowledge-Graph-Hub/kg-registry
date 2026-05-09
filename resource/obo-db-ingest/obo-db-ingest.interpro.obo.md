@@ -8,10 +8,12 @@ license:
   label: CC0-1.0
 name: interpro OBO
 original_source:
-- interpro
+  - source: interpro
+    relation_type: prov:hadPrimarySource
 product_file_size: 1166198
 product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

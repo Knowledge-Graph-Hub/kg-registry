@@ -1,11 +1,11 @@
 ---
 category: GraphicalInterface
-description: JBrowse 2 genome browser instance for interactive visualization of genomes,
-  annotations, and variants across species
+description: JBrowse 2 genome browser instance for interactive visualization of genomes, annotations, and variants across species
 id: alliance.jbrowse2
 name: Alliance JBrowse 2
 original_source:
-- alliance
+  - source: alliance
+    relation_type: prov:hadPrimarySource
 product_url: https://www.alliancegenome.org/jbrowse2/
 layout: product_detail
 ---

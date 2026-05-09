@@ -5,10 +5,12 @@ format: xml
 id: cellosaurus.xml
 name: Cellosaurus XML
 original_source:
-- cellosaurus
+  - source: cellosaurus
+    relation_type: prov:hadPrimarySource
 product_file_size: 634465764
 product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.xml
 secondary_source:
-- cellosaurus
+  - source: cellosaurus
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

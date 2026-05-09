@@ -8,7 +8,8 @@ license:
   label: Academic License
 name: DrugBank Academic Downloads
 original_source:
-- drugbank
+  - source: drugbank
+    relation_type: prov:hadPrimarySource
 product_url: https://go.drugbank.com/releases/latest
 layout: product_detail
 ---

@@ -1,8 +1,7 @@
 ---
 category: Product
 compression: zip
-description: Download catalog for PathBank tabular pathway files, pathway exchange
-  files, images, and sequence files.
+description: Download catalog for PathBank tabular pathway files, pathway exchange files, images, and sequence files.
 format: http
 id: pathbank.downloads
 license:
@@ -10,7 +9,8 @@ license:
   label: ODbL-1.0
 name: PathBank Downloads
 original_source:
-- pathbank
+  - source: pathbank
+    relation_type: prov:hadPrimarySource
 product_url: https://pathbank.org/downloads
 warnings: []
 layout: product_detail

@@ -5,7 +5,8 @@ format: csv
 id: medgen.csv
 name: CSV Data Files
 original_source:
-- medgen
+  - source: medgen
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/csv/
 layout: product_detail
 ---

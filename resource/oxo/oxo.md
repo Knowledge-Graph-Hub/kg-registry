@@ -2,25 +2,20 @@
 activity_status: inactive
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: ols-support@ebi.ac.uk
-  - contact_type: github
-    value: EBISPOT
-  id: ebi
-  label: EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: ols-support@ebi.ac.uk
+      - contact_type: github
+        value: EBISPOT
+    id: ebi
+    label: EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)
 creation_date: '2025-11-04T00:00:00Z'
-description: OxO (Ontology Xref Service) is a cross-ontology mapping service developed
-  by EMBL-EBI's Samples, Phenotypes and Ontologies Team (SPOT). The service provides
-  mappings between terms from different ontologies, enabling users to search for equivalent
-  or related terms across multiple ontological resources. OxO aggregates cross-references
-  from ontologies loaded in the Ontology Lookup Service (OLS) and enriches these with
-  manual mappings and inference-based relationships.
+description: OxO (Ontology Xref Service) is a cross-ontology mapping service developed by EMBL-EBI's Samples, Phenotypes and Ontologies Team (SPOT). The service provides mappings between terms from different ontologies, enabling users to search for equivalent or related terms across multiple ontological resources. OxO aggregates cross-references from ontologies loaded in the Ontology Lookup Service (OLS) and enriches these with manual mappings and inference-based relationships.
 domains:
-- biomedical
-- upper
-- biological systems
+  - biomedical
+  - upper
+  - biological systems
 homepage_url: https://www.ebi.ac.uk/spot/oxo/
 id: oxo
 infores_id: oxo
@@ -31,27 +26,27 @@ license:
   label: Apache License 2.0
 name: Ontology Xref Service
 products:
-- category: ProgrammingInterface
-  description: RESTful API for programmatic access to cross-ontology mappings and
-    term equivalence searches
-  format: http
-  id: oxo.api
-  name: OxO REST API
-  original_source:
-  - oxo
-  product_url: https://www.ebi.ac.uk/spot/oxo/docs/api
-- category: GraphicalInterface
-  description: Web-based interface for searching and browsing ontology cross-references
-    and mappings
-  format: http
-  id: oxo.portal
-  name: OxO Web Interface
-  original_source:
-  - oxo
-  product_url: https://www.ebi.ac.uk/spot/oxo/
+  - category: ProgrammingInterface
+    description: RESTful API for programmatic access to cross-ontology mappings and term equivalence searches
+    format: http
+    id: oxo.api
+    name: OxO REST API
+    original_source:
+      - source: oxo
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/spot/oxo/docs/api
+  - category: GraphicalInterface
+    description: Web-based interface for searching and browsing ontology cross-references and mappings
+    format: http
+    id: oxo.portal
+    name: OxO Web Interface
+    original_source:
+      - source: oxo
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/spot/oxo/
 repository: https://github.com/EBISPOT/OXO
 synonyms:
-- OxO
+  - OxO
 ---
 
 # Ontology Xref Service (OxO)

@@ -5,6 +5,7 @@ format: http
 id: irefindex.irefr
 name: iRefR Package
 original_source:
-- irefindex
+  - source: irefindex
+    relation_type: prov:hadPrimarySource
 layout: product_detail
 ---

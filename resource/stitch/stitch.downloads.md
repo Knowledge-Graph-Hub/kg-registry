@@ -6,7 +6,8 @@ id: stitch.downloads
 is_public: true
 name: STITCH Data Downloads
 original_source:
-- stitch
+  - source: stitch
+    relation_type: prov:hadPrimarySource
 product_url: http://stitch-db.org/cgi/download.pl
 layout: product_detail
 ---

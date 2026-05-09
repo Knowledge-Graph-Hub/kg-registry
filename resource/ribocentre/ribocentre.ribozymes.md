@@ -1,12 +1,12 @@
 ---
 category: GraphicalInterface
-description: Browse comprehensive information about different ribozyme types with
-  timelines, structures, and mechanisms
+description: Browse comprehensive information about different ribozyme types with timelines, structures, and mechanisms
 format: http
 id: ribocentre.ribozymes
 name: Ribozyme Browser
 original_source:
-- ribocentre
+  - source: ribocentre
+    relation_type: prov:hadPrimarySource
 product_url: https://www.ribocentre.org/ribozyme/
 layout: product_detail
 ---

@@ -6,9 +6,11 @@ id: automat.panther
 infores_id: automat-panther
 name: panther_automat
 original_source:
-- panther
+  - source: panther
+    relation_type: prov:hadPrimarySource
 product_url: https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/
 secondary_source:
-- automat
+  - source: automat
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

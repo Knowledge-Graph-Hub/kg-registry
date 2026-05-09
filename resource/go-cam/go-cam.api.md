@@ -6,7 +6,8 @@ id: go-cam.api
 is_public: true
 name: GO-CAM API
 original_source:
-- go-cam
+  - source: go-cam
+    relation_type: prov:hadPrimarySource
 product_url: http://api.geneontology.org/api/
 layout: product_detail
 ---

@@ -2,153 +2,172 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2022-04-12T00:00:00Z'
-description: MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph
-  that integrates multiple biomedical data sources to support drug repositioning via
-  mechanistic inference.
+description: MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph that integrates multiple biomedical data sources to support drug repositioning via mechanistic inference.
 domains:
-- biomedical
-- drug discovery
-- pharmacology
-- translational
+  - biomedical
+  - drug discovery
+  - pharmacology
+  - translational
 homepage_url: https://github.com/SuLab/MechRepoNet
 id: mechreponet
 last_modified_date: '2025-07-17T00:00:00Z'
 layout: resource_detail
 name: MechRepoNet
 products:
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- description: Python code for building and analyzing the MechRepoNet knowledge graph
-  id: mechreponet.code
-  name: MechRepoNet Code
-  product_url: https://github.com/SuLab/MechRepoNet
-- category: GraphProduct
-  description: Training data for the MIND knowledge graph containing 9,651,040 edges
-  format: tsv
-  id: mind.train
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: MIND Training Data
-  original_source:
-  - drugcentral
-  - mechreponet
-  product_url: https://zenodo.org/records/8117748/files/train.txt
-  secondary_source:
-  - mind
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
-    to URL
-- category: GraphProduct
-  description: Test data for the MIND knowledge graph containing DrugCentral indications
-  format: tsv
-  id: mind.test
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: MIND Test Data
-  original_source:
-  - drugcentral
-  - mechreponet
-  product_url: https://zenodo.org/records/8117748/files/test.txt
-  secondary_source:
-  - mind
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
-    accessing file
-- category: GraphProduct
-  description: Validation data for the MIND knowledge graph containing DrugCentral
-    indications
-  format: tsv
-  id: mind.valid
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: MIND Validation Data
-  original_source:
-  - drugcentral
-  - mechreponet
-  product_url: https://zenodo.org/records/8117748/files/valid.txt
-  secondary_source:
-  - mind
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
-    header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
-    to URL
-- category: Product
-  description: Dictionary of entities in the MIND knowledge graph
-  format: tsv
-  id: mind.entities
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: MIND Entities Dictionary
-  original_source:
-  - drugcentral
-  - mechreponet
-  product_file_size: 5629618
-  product_url: https://zenodo.org/records/8117748/files/entities.dict
-  secondary_source:
-  - mind
-- category: Product
-  description: Dictionary of relations in the MIND knowledge graph
-  format: tsv
-  id: mind.relations
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: MIND Relations Dictionary
-  original_source:
-  - drugcentral
-  - mechreponet
-  product_file_size: 1648
-  product_url: https://zenodo.org/records/8117748/files/relations.dict
-  secondary_source:
-  - mind
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: mirtarbase
+        relation_type: prov:hadPrimarySource
+      - source: unii
+        relation_type: prov:hadPrimarySource
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+      - source: mechreponet
+        relation_type: prov:wasInfluencedBy
+  - description: Python code for building and analyzing the MechRepoNet knowledge graph
+    id: mechreponet.code
+    name: MechRepoNet Code
+    product_url: https://github.com/SuLab/MechRepoNet
+  - category: GraphProduct
+    description: Training data for the MIND knowledge graph containing 9,651,040 edges
+    format: tsv
+    id: mind.train
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Training Data
+    original_source:
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: mechreponet
+        relation_type: prov:hadPrimarySource
+    product_url: https://zenodo.org/records/8117748/files/train.txt
+    secondary_source:
+      - source: mind
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
+      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+      - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when accessing file
+      - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting to URL
+  - category: GraphProduct
+    description: Test data for the MIND knowledge graph containing DrugCentral indications
+    format: tsv
+    id: mind.test
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Test Data
+    original_source:
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: mechreponet
+        relation_type: prov:hadPrimarySource
+    product_url: https://zenodo.org/records/8117748/files/test.txt
+    secondary_source:
+      - source: mind
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
+      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+      - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when accessing file
+  - category: GraphProduct
+    description: Validation data for the MIND knowledge graph containing DrugCentral indications
+    format: tsv
+    id: mind.valid
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Validation Data
+    original_source:
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: mechreponet
+        relation_type: prov:hadPrimarySource
+    product_url: https://zenodo.org/records/8117748/files/valid.txt
+    secondary_source:
+      - source: mind
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
+      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
+      - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when accessing file
+      - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting to URL
+  - category: Product
+    description: Dictionary of entities in the MIND knowledge graph
+    format: tsv
+    id: mind.entities
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Entities Dictionary
+    original_source:
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: mechreponet
+        relation_type: prov:hadPrimarySource
+    product_file_size: 5629618
+    product_url: https://zenodo.org/records/8117748/files/entities.dict
+    secondary_source:
+      - source: mind
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Dictionary of relations in the MIND knowledge graph
+    format: tsv
+    id: mind.relations
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Relations Dictionary
+    original_source:
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: mechreponet
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1648
+    product_url: https://zenodo.org/records/8117748/files/relations.dict
+    secondary_source:
+      - source: mind
+        relation_type: prov:wasInfluencedBy
 publications:
-- doi: 10.1093/bioinformatics/btac205
-  id: doi:10.1093/bioinformatics/btac205
-  title: Design and application of a knowledge network for automatic prioritization
-    of drug mechanisms
+  - doi: 10.1093/bioinformatics/btac205
+    id: doi:10.1093/bioinformatics/btac205
+    title: Design and application of a knowledge network for automatic prioritization of drug mechanisms
 repository: https://github.com/SuLab/MechRepoNet
 ---
+
 # MechRepoNet
 
 MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph created for the purpose of drug repositioning via mechanistic inference. It integrates multiple biomedical data sources to provide a comprehensive network of compounds, diseases, genes, pathways, and other biological entities.

@@ -2,76 +2,67 @@
 activity_status: unknown
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  label: Tong Wang
-- category: Individual
-  label: Lijun Duan
-- category: Individual
-  label: Chunxia He
-- category: Individual
-  label: Gengchen Deng
-- category: Individual
-  label: Rong Qin
-- category: Individual
-  label: Yanchun Zhang
+  - category: Individual
+    label: Tong Wang
+  - category: Individual
+    label: Lijun Duan
+  - category: Individual
+    label: Chunxia He
+  - category: Individual
+    label: Gengchen Deng
+  - category: Individual
+    label: Rong Qin
+  - category: Individual
+    label: Yanchun Zhang
 creation_date: '2025-11-22T00:00:00Z'
-description: ATOM (Anti-tumor Biomaterial Knowledge Graph) is a knowledge graph construction
-  approach that extracts structured relationships about anti-tumor biomaterials from
-  unstructured biomedicine literature, enabling researchers to efficiently access
-  information about tumor treatment materials and their relationships.
+description: ATOM (Anti-tumor Biomaterial Knowledge Graph) is a knowledge graph construction approach that extracts structured relationships about anti-tumor biomaterials from unstructured biomedicine literature, enabling researchers to efficiently access information about tumor treatment materials and their relationships.
 domains:
-- biomedical
-- clinical
-- health
+  - biomedical
+  - clinical
+  - health
 homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 id: atom
 last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 name: ATOM
 products:
-- category: GraphProduct
-  description: Anti-tumor biomaterial knowledge graph constructed from biomedicine
-    literature, containing structured relationships among anti-tumor entities extracted
-    through entity recognition, sentence simplification, triple extraction, and predicate
-    mapping.
-  id: atom.kg
-  name: ATOM Knowledge Graph
-  original_source:
-  - pubmed
-  product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
-    accessing file
-- category: ProcessProduct
-  description: Natural language processing pipeline for constructing anti-tumor biomaterial
-    knowledge graphs from unstructured biomedicine literature, implementing entity
-    recognition, sentence simplification, triple extraction, and predicate mapping
-    processes.
-  id: atom.pipeline
-  name: ATOM Construction Pipeline
-  original_source:
-  - atom
-  product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
-    accessing file
+  - category: GraphProduct
+    description: Anti-tumor biomaterial knowledge graph constructed from biomedicine literature, containing structured relationships among anti-tumor entities extracted through entity recognition, sentence simplification, triple extraction, and predicate mapping.
+    id: atom.kg
+    name: ATOM Knowledge Graph
+    original_source:
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+    product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when accessing file
+  - category: ProcessProduct
+    description: Natural language processing pipeline for constructing anti-tumor biomaterial knowledge graphs from unstructured biomedicine literature, implementing entity recognition, sentence simplification, triple extraction, and predicate mapping processes.
+    id: atom.pipeline
+    name: ATOM Construction Pipeline
+    original_source:
+      - source: atom
+        relation_type: prov:hadPrimarySource
+    product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when accessing file
 publications:
-- authors:
-  - Tong Wang
-  - Lijun Duan
-  - Chunxia He
-  - Gengchen Deng
-  - Rong Qin
-  - Yanchun Zhang
-  doi: 10.1109/BIBM47256.2019.8983062
-  id: doi:10.1109/BIBM47256.2019.8983062
-  journal: 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
-  title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine
-    Literature'
-  year: '2019'
+  - authors:
+      - Tong Wang
+      - Lijun Duan
+      - Chunxia He
+      - Gengchen Deng
+      - Rong Qin
+      - Yanchun Zhang
+    doi: 10.1109/BIBM47256.2019.8983062
+    id: doi:10.1109/BIBM47256.2019.8983062
+    journal: 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
+    title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine Literature'
+    year: '2019'
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # ATOM
 
 ## Overview

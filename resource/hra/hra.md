@@ -2,21 +2,17 @@
 activity_status: active
 category: DataModel
 contacts:
-- category: Individual
-  label: "Katy B\xF6rner"
-  orcid: 0000-0002-3321-6137
+  - category: Individual
+    label: "Katy Börner"
+    orcid: 0000-0002-3321-6137
 creation_date: '2025-11-05T00:00:00Z'
-description: The Human Reference Atlas (HRA) is a comprehensive 3D spatial framework
-  and data model for mapping the healthy human body at single-cell resolution. The
-  HRA provides reference anatomical structures, cell types, biomarkers, and standardized
-  spatial coordinates to enable integration and analysis of diverse biological data
-  types across multiple scales from organs to cells.
+description: The Human Reference Atlas (HRA) is a comprehensive 3D spatial framework and data model for mapping the healthy human body at single-cell resolution. The HRA provides reference anatomical structures, cell types, biomarkers, and standardized spatial coordinates to enable integration and analysis of diverse biological data types across multiple scales from organs to cells.
 domains:
-- anatomy and development
-- health
-- biological systems
-- biomedical
-- precision medicine
+  - anatomy and development
+  - health
+  - biological systems
+  - biomedical
+  - precision medicine
 homepage_url: https://humanatlas.io/
 id: hra
 infores_id: hra
@@ -27,166 +23,274 @@ license:
   label: CC BY 4.0
 name: Human Reference Atlas
 products:
-- category: GraphicalInterface
-  description: Web portal for exploring and visualizing the Human Reference Atlas
-  format: http
-  id: hra.portal
-  name: Human Reference Atlas Portal
-  original_source:
-  - hra
-  product_url: https://humanatlas.io/
-- category: ProgrammingInterface
-  description: API endpoints for programmatic access to HRA data
-  format: http
-  id: hra.api
-  name: HRA API
-  original_source:
-  - hra
-  product_url: https://apps.humanatlas.io/api
-- category: Product
-  description: Downloadable data files including anatomical structures, cell types,
-    and biomarkers
-  format: mixed
-  id: hra.data
-  name: HRA Data Downloads
-  original_source:
-  - hra
-  product_url: https://humanatlas.io/data
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
+  - category: GraphicalInterface
+    description: Web portal for exploring and visualizing the Human Reference Atlas
+    format: http
+    id: hra.portal
+    name: Human Reference Atlas Portal
+    original_source:
+      - source: hra
+        relation_type: prov:hadPrimarySource
+    product_url: https://humanatlas.io/
+  - category: ProgrammingInterface
+    description: API endpoints for programmatic access to HRA data
+    format: http
+    id: hra.api
+    name: HRA API
+    original_source:
+      - source: hra
+        relation_type: prov:hadPrimarySource
+    product_url: https://apps.humanatlas.io/api
+  - category: Product
+    description: Downloadable data files including anatomical structures, cell types, and biomarkers
+    format: mixed
+    id: hra.data
+    name: HRA Data Downloads
+    original_source:
+      - source: hra
+        relation_type: prov:hadPrimarySource
+    product_url: https://humanatlas.io/data
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
 publications:
-- id: https://doi.org/10.1038/s41556-021-00788-6
+  - id: https://doi.org/10.1038/s41556-021-00788-6
 repository: https://github.com/hubmapconsortium/ccf-ui
 synonyms:
-- HRA
+  - HRA
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # Human Reference Atlas
 
 ## Overview

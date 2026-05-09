@@ -2,20 +2,17 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://lincs.hms.harvard.edu/
-  label: HMS LINCS Project
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://lincs.hms.harvard.edu/
+    label: HMS LINCS Project
 creation_date: '2025-10-30T00:00:00Z'
-description: KINOMEscan is a biochemical kinase profiling assay that measures drug
-  binding using a panel of approximately 440 purified kinases. The HMS LINCS Project
-  provides a comprehensive table of all small molecules in the HMS LINCS collection
-  that have been profiled by KINOMEscan, with links to raw binding data.
+description: KINOMEscan is a biochemical kinase profiling assay that measures drug binding using a panel of approximately 440 purified kinases. The HMS LINCS Project provides a comprehensive table of all small molecules in the HMS LINCS collection that have been profiled by KINOMEscan, with links to raw binding data.
 domains:
-- drug discovery
-- pharmacology
-- biomedical
+  - drug discovery
+  - pharmacology
+  - biomedical
 homepage_url: https://lincs.hms.harvard.edu/kinomescan/
 id: kinomescan
 infores_id: kinomescan
@@ -23,27 +20,28 @@ last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
 name: KINOMEscan
 products:
-- category: GraphicalInterface
-  description: Web interface providing searchable table of all small molecules profiled
-    by KINOMEscan
-  format: http
-  id: kinomescan.portal
-  name: KINOMEscan Data Portal
-  original_source:
-  - kinomescan
-  product_url: https://lincs.hms.harvard.edu/kinomescan/
-- category: DocumentationProduct
-  description: Excel spreadsheet containing HMS LINCS KINOMEscan datasets with compound
-    information and data links
-  id: kinomescan.spreadsheet
-  name: KINOMEscan Datasets Spreadsheet
-  original_source:
-  - kinomescan
-  product_file_size: 17872
-  product_url: http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_KinomeScan_Datasets_2018-01-18.xlsx
+  - category: GraphicalInterface
+    description: Web interface providing searchable table of all small molecules profiled by KINOMEscan
+    format: http
+    id: kinomescan.portal
+    name: KINOMEscan Data Portal
+    original_source:
+      - source: kinomescan
+        relation_type: prov:hadPrimarySource
+    product_url: https://lincs.hms.harvard.edu/kinomescan/
+  - category: DocumentationProduct
+    description: Excel spreadsheet containing HMS LINCS KINOMEscan datasets with compound information and data links
+    id: kinomescan.spreadsheet
+    name: KINOMEscan Datasets Spreadsheet
+    original_source:
+      - source: kinomescan
+        relation_type: prov:hadPrimarySource
+    product_file_size: 17872
+    product_url: http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_KinomeScan_Datasets_2018-01-18.xlsx
 synonyms:
-- HMS LINCS KINOMEscan
+  - HMS LINCS KINOMEscan
 ---
+
 # KINOMEscan
 
 ## Overview

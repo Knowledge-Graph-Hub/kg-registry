@@ -6,10 +6,12 @@ format: postgres
 id: drugcentral.data
 name: DrugCentral Database dump
 original_source:
-- drugcentral
+  - source: drugcentral
+    relation_type: prov:hadPrimarySource
 product_file_size: 1400714190
 product_url: https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz
 secondary_source:
-- drugcentral
+  - source: drugcentral
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

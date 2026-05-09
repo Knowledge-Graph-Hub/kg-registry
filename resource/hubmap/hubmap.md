@@ -2,26 +2,23 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://hubmapconsortium.org/
-  - contact_type: email
-    value: help@hubmapconsortium.org
-  label: HuBMAP Consortium
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://hubmapconsortium.org/
+      - contact_type: email
+        value: help@hubmapconsortium.org
+    label: HuBMAP Consortium
 creation_date: '2025-08-05T00:00:00Z'
-description: The Human BioMolecular Atlas Program (HuBMAP) is a transformative NIH
-  Common Fund initiative dedicated to creating an open, global atlas of the human
-  body at the cellular level. HuBMAP develops the tools, technology, and infrastructure
-  needed to map healthy human tissues in unprecedented molecular detail.
+description: The Human BioMolecular Atlas Program (HuBMAP) is a transformative NIH Common Fund initiative dedicated to creating an open, global atlas of the human body at the cellular level. HuBMAP develops the tools, technology, and infrastructure needed to map healthy human tissues in unprecedented molecular detail.
 domains:
-- biomedical
-- anatomy and development
-- biological systems
-- health
-- proteomics
-- genomics
-- systems biology
+  - biomedical
+  - anatomy and development
+  - biological systems
+  - health
+  - proteomics
+  - genomics
+  - systems biology
 homepage_url: https://hubmapconsortium.org/
 id: hubmap
 last_modified_date: '2025-08-05T00:00:00Z'
@@ -31,213 +28,312 @@ license:
   label: CC BY 4.0
 name: HuBMAP
 products:
-- category: Product
-  description: HuBMAP Data Portal providing access to standardized single-cell and
-    spatial tissue data from human donors
-  format: mixed
-  id: hubmap.data_portal
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: HuBMAP Data Portal
-  product_url: https://portal.hubmapconsortium.org/
-- category: Product
-  description: Human Reference Atlas providing atlas data and reference functionality
-  format: mixed
-  id: hubmap.human_reference_atlas
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Human Reference Atlas
-  product_url: https://humanatlas.io/
-- category: GraphicalInterface
-  description: Interactive data visualization tool for spatial and single-cell multimodal
-    datasets
-  id: hubmap.vitessce
-  name: Vitessce
-  product_url: https://vitessce.io/
-- category: GraphicalInterface
-  description: Interactive JupyterLab environments for analyzing HuBMAP data
-  id: hubmap.workspaces
-  name: HuBMAP Workspaces
-  product_url: https://portal.hubmapconsortium.org/workspaces
-- category: GraphicalInterface
-  description: Single-cell RNA-seq and ATAC-seq analysis using reference datasets
-  id: hubmap.azimuth
-  name: Azimuth
-  product_url: https://azimuth.hubmapconsortium.org/
-- category: GraphicalInterface
-  description: Functional Unit State Identification and Navigation with Whole Slide
-    Imaging
-  id: hubmap.fusion
-  name: FUSION
-  product_url: http://fusion.hubmapconsortium.org/
-- category: Product
-  description: Antibody validation reports for multiplex imaging assays
-  id: hubmap.antibody_validation_reports
-  name: Antibody Validation Reports
-  product_url: https://avr.hubmapconsortium.org/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 401 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when
-    accessing file
-- category: Product
-  description: Data submission portal for registering and ingesting consortium data
-  id: hubmap.data_ingest_portal
-  name: Data Ingest Portal
-  product_url: https://ingest.hubmapconsortium.org/
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
+  - category: Product
+    description: HuBMAP Data Portal providing access to standardized single-cell and spatial tissue data from human donors
+    format: mixed
+    id: hubmap.data_portal
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC BY 4.0
+    name: HuBMAP Data Portal
+    product_url: https://portal.hubmapconsortium.org/
+  - category: Product
+    description: Human Reference Atlas providing atlas data and reference functionality
+    format: mixed
+    id: hubmap.human_reference_atlas
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC BY 4.0
+    name: Human Reference Atlas
+    product_url: https://humanatlas.io/
+  - category: GraphicalInterface
+    description: Interactive data visualization tool for spatial and single-cell multimodal datasets
+    id: hubmap.vitessce
+    name: Vitessce
+    product_url: https://vitessce.io/
+  - category: GraphicalInterface
+    description: Interactive JupyterLab environments for analyzing HuBMAP data
+    id: hubmap.workspaces
+    name: HuBMAP Workspaces
+    product_url: https://portal.hubmapconsortium.org/workspaces
+  - category: GraphicalInterface
+    description: Single-cell RNA-seq and ATAC-seq analysis using reference datasets
+    id: hubmap.azimuth
+    name: Azimuth
+    product_url: https://azimuth.hubmapconsortium.org/
+  - category: GraphicalInterface
+    description: Functional Unit State Identification and Navigation with Whole Slide Imaging
+    id: hubmap.fusion
+    name: FUSION
+    product_url: http://fusion.hubmapconsortium.org/
+  - category: Product
+    description: Antibody validation reports for multiplex imaging assays
+    id: hubmap.antibody_validation_reports
+    name: Antibody Validation Reports
+    product_url: https://avr.hubmapconsortium.org/
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 401 error when accessing file'
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when accessing file
+  - category: Product
+    description: Data submission portal for registering and ingesting consortium data
+    id: hubmap.data_ingest_portal
+    name: Data Ingest Portal
+    product_url: https://ingest.hubmapconsortium.org/
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pato
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: obi
+        relation_type: prov:hadPrimarySource
+      - source: obib
+        relation_type: prov:hadPrimarySource
+      - source: edam
+        relation_type: prov:hadPrimarySource
+      - source: hsapdv
+        relation_type: prov:hadPrimarySource
+      - source: sbo
+        relation_type: prov:hadPrimarySource
+      - source: mi
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: ordo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: uo
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: pgo
+        relation_type: prov:hadPrimarySource
+      - source: gencode
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hra
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: sennet
+        relation_type: prov:hadPrimarySource
+      - source: stellar
+        relation_type: prov:hadPrimarySource
+      - source: dct
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mp
+        relation_type: prov:hadPrimarySource
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: clingen
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: 4dn
+        relation_type: prov:hadPrimarySource
+      - source: erccrbp
+        relation_type: prov:hadPrimarySource
+      - source: erccreg
+        relation_type: prov:hadPrimarySource
+      - source: faldo
+        relation_type: prov:hadPrimarySource
+      - source: glycordf
+        relation_type: prov:hadPrimarySource
+      - source: glycocoo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: kidsfirst
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: motrpac
+        relation_type: prov:hadPrimarySource
+      - source: mw
+        relation_type: prov:hadPrimarySource
+      - source: npo
+        relation_type: prov:hadPrimarySource
+      - source: sckan
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: biomarker
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - source: ubkg
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - "Katy B\xF6rner"
-  - et al.
-  doi: 10.1038/s41592-025-02120-1
-  id: doi:10.1038/s41592-025-02120-1
-  journal: Nature Methods
-  preferred: true
-  title: 'Human BioMolecular Atlas Program (HuBMAP): 3D Human Reference Atlas Construction
-    and Usage'
-  year: '2025'
-- authors:
-  - Mark S Keller
-  - et al.
-  doi: 10.1038/s41592-024-02497-x
-  id: doi:10.1038/s41592-024-02497-x
-  journal: Nature Methods
-  title: 'Vitessce: integrative visualization of multimodal and spatially-resolved
-    single-cell data'
-  year: '2024'
+  - authors:
+      - "Katy Börner"
+      - et al.
+    doi: 10.1038/s41592-025-02120-1
+    id: doi:10.1038/s41592-025-02120-1
+    journal: Nature Methods
+    preferred: true
+    title: 'Human BioMolecular Atlas Program (HuBMAP): 3D Human Reference Atlas Construction and Usage'
+    year: '2025'
+  - authors:
+      - Mark S Keller
+      - et al.
+    doi: 10.1038/s41592-024-02497-x
+    id: doi:10.1038/s41592-024-02497-x
+    journal: Nature Methods
+    title: 'Vitessce: integrative visualization of multimodal and spatially-resolved single-cell data'
+    year: '2024'
 repository: https://github.com/hubmapconsortium
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # HuBMAP - Human BioMolecular Atlas Program
 
 The Human BioMolecular Atlas Program (HuBMAP) is a transformative initiative by the NIH Common Fund that aims to develop an open, global atlas of the human body at the cellular level. This ambitious program brings together a diverse consortium of researchers, institutions, and organizations to create comprehensive maps of healthy human tissues with unprecedented molecular detail.

@@ -5,7 +5,8 @@ format: mixed
 id: sldb.releases
 name: SLDB Releases
 original_source:
-- sldb
+  - source: sldb
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/monarch-initiative/SLDBGen/releases
 layout: product_detail
 ---

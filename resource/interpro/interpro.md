@@ -2,23 +2,21 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: interpro-help@ebi.ac.uk
-  - contact_type: url
-    value: https://www.ebi.ac.uk/interpro/contact/
-  id: ebi
-  label: InterPro
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: interpro-help@ebi.ac.uk
+      - contact_type: url
+        value: https://www.ebi.ac.uk/interpro/contact/
+    id: ebi
+    label: InterPro
 creation_date: '2025-03-09T00:00:00Z'
-description: InterPro is a database of protein families, domains and functional sites
-  in which identifiable features found in known proteins can be applied to unknown
-  protein sequences.
+description: InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.
 domains:
-- biological systems
-- proteomics
-- genomics
-- drug discovery
+  - biological systems
+  - proteomics
+  - genomics
+  - drug discovery
 homepage_url: https://www.ebi.ac.uk/interpro/
 id: interpro
 infores_id: interpro
@@ -29,763 +27,1187 @@ license:
   label: CC0-1.0
 name: InterPro
 products:
-- category: GraphicalInterface
-  description: Web interface for browsing and searching the InterPro database
-  format: http
-  id: interpro.web
-  name: InterPro Web Interface
-  original_source:
-  - interpro
-  product_url: https://www.ebi.ac.uk/interpro/
-- category: ProgrammingInterface
-  connection_url: https://www.ebi.ac.uk/interpro/api/
-  description: RESTful API for programmatic access to InterPro data
-  id: interpro.api
-  is_public: true
-  name: InterPro API
-  original_source:
-  - interpro
-  product_url: https://www.ebi.ac.uk/interpro/api/
-- category: ProcessProduct
-  compression: targz
-  description: Software package for scanning protein sequences against InterPro's
-    signatures
-  format: java
-  id: interpro.interproscan
-  name: InterProScan
-  original_source:
-  - interpro
-  product_file_size: 7153864107
-  product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
-- category: DataModelProduct
-  description: Complete list of InterPro entries with their types and short names
-  format: tsv
-  id: interpro.entry_list
-  name: InterPro Entry List
-  original_source:
-  - interpro
-  product_file_size: 2670480
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list
-- category: DataModelProduct
-  compression: gzip
-  description: Complete InterPro database in XML format containing entries, member
-    database signatures, GO terms, and relationships
-  format: xml
-  id: interpro.xml
-  name: InterPro XML
-  original_source:
-  - interpro
-  product_file_size: 40445027
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
-- category: MappingProduct
-  compression: gzip
-  description: Complete set of matches between protein sequences and InterPro entries/signatures
-  format: xml
-  id: interpro.match_complete
-  name: InterPro Match Complete
-  original_source:
-  - interpro
-  product_file_size: 89253159090
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/match_complete.xml.gz
-- category: MappingProduct
-  compression: targz
-  description: InterPro matches for UniParc protein sequences
-  format: xml
-  id: interpro.uniparc_match
-  name: UniParc Match
-  original_source:
-  - interpro
-  product_file_size: 331243597405
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz
-- category: MappingProduct
-  compression: gzip
-  description: Mappings of protein sequences to InterPro entries in a tab-delimited
-    format
-  format: tsv
-  id: interpro.protein2ipr
-  name: Protein to InterPro Mappings
-  original_source:
-  - interpro
-  product_file_size: 20975973462
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz
-- category: DataModelProduct
-  description: Hierarchical relationships between InterPro entries
-  format: tsv
-  id: interpro.parent_child_tree
-  name: Parent-Child Tree
-  original_source:
-  - interpro
-  product_file_size: 627613
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt
-- category: MappingProduct
-  description: Mappings between InterPro entries and Gene Ontology (GO) terms
-  format: tsv
-  id: interpro.interpro2go
-  name: InterPro to GO Mappings
-  original_source:
-  - go
-  - interpro
-  product_file_size: 3088718
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
-  secondary_source:
-  - interpro
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: Product
-  description: Network embeddings of the Bioteque graph that represent biological
-    entities and their associations
-  id: bioteque.embeddings
-  name: Bioteque Embeddings
-  original_source:
-  - chebi
-  - cosmic
-  - achilles
-  - depmap
-  - ccle
-  - gdsc
-  - cellosaurus
-  - clue
-  - ctd
-  - pharmacodb
-  - prism
-  - drugbank
-  - lincs
-  - compartments
-  - offsides
-  - sider
-  - drugcentral
-  - repohub
-  - chemicalchecker
-  - repodb
-  - disgenet
-  - opentargets
-  - creeds
-  - interpro
-  - reactome
-  - tissues
-  - dorothea
-  - progeny
-  - gtex
-  - hpa
-  - go
-  - corum
-  - huri
-  - intact
-  - omnipath
-  - string
-  - bto
-  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-  secondary_source:
-  - bioteque
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
-- category: Product
-  description: interpro OBO
-  format: obo
-  id: obo-db-ingest.interpro.obo
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0-1.0
-  name: interpro OBO
-  original_source:
-  - interpro
-  product_file_size: 1166198
-  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: interpro OWL
-  format: owl
-  id: obo-db-ingest.interpro.owl
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0-1.0
-  name: interpro OWL
-  original_source:
-  - interpro
-  product_file_size: 1347709
-  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: interpro OBO Graph JSON
-  format: json
-  id: obo-db-ingest.interpro.json
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0-1.0
-  name: interpro OBO Graph JSON
-  original_source:
-  - interpro
-  product_file_size: 1116474
-  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
-  secondary_source:
-  - obo-db-ingest
-- category: MappingProduct
-  description: Files containing transitive assignments of InterPro matches, UniProtKB
-    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
-    GO terms
-  format: txt
-  id: goa.mapping-files
-  name: GO Mapping Files
-  original_source:
-  - interpro
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-- category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
-  format: http
-  id: kinace.portal
-  name: KinAce Web Portal
-  original_source:
-  - phosphositeplus
-  - iptmnet
-  - uniprot
-  - epsd
-  - kinhub
-  - coralkinome
-  - darkkinasekb
-  - hgnc
-  - kegg
-  - interpro
-  product_url: https://kinace.kinametrix.com/
-  secondary_source:
-  - kinace
-- category: GraphProduct
-  compression: gzip
-  description: protein network data (full network, scored links between proteins)
-  format: txt
-  id: string.protein.links
-  name: STRING Protein Links
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 138154280240
-  product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: protein network data (full network, incl. subscores per channel)
-  format: txt
-  id: string.protein.links.detailed
-  name: STRING Protein Links Detailed
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 203534412387
-  product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: 'protein network data (full network, incl. distinction: direct vs.
-    interologs)'
-  format: txt
-  id: string.protein.links.full
-  name: STRING Protein Links Full
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 214269334954
-  product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: protein network data (physical subnetwork, scored links between proteins)
-  format: txt
-  id: string.protein.physical.links
-  name: STRING Protein Physical Links
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 11867396121
-  product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: protein network data (physical subnetwork, incl. subscores per channel)
-  format: txt
-  id: string.protein.physical.links.detailed
-  name: STRING Protein Physical Links Detailed
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 14859366689
-  product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: 'protein network data (physical subnetwork, incl. distinction: direct
-    vs. interologs)'
-  format: txt
-  id: string.protein.physical.links.full
-  name: STRING Protein Physical Links Full
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 15528028374
-  product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: association scores between orthologous groups
-  format: txt
-  id: string.cog.links
-  name: STRING COG Links
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 185338269
-  product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: association scores (incl. subscores per channel)
-  format: txt
-  id: string.cog.links.detailed
-  name: STRING COG Links Detailed
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 250279091
-  product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
-- category: GraphProduct
-  compression: gzip
-  description: 'full database, part II: the networks (nodes, edges, scores,...)'
-  id: string.database
-  name: STRING Database Network Schema
-  original_source:
-  - biocyc
-  - biogrid
-  - cog
-  - compartments
-  - dip
-  - diseases
-  - eggnog
-  - ensembl
-  - flybase
-  - geo
-  - go
-  - hprd
-  - hgnc
-  - intact
-  - interpro
-  - kegg
-  - mint
-  - omim
-  - pdb
-  - pfam
-  - proteomehd
-  - pubmedcentral
-  - reactome
-  - refseq
-  - sgd
-  - simap
-  - smart
-  - swissmodel
-  - tissues
-  - uniprot
-  - wikipathways
-  - wormbase
-  - progenomes
-  product_file_size: 281505096430
-  product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-- category: Product
-  description: interpro Nodes TSV
-  format: tsv
-  id: obo-db-ingest.interpro.tsv
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0-1.0
-  name: interpro Nodes TSV
-  original_source:
-  - interpro
-  product_file_size: 697846
-  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
-  secondary_source:
-  - obo-db-ingest
+  - category: GraphicalInterface
+    description: Web interface for browsing and searching the InterPro database
+    format: http
+    id: interpro.web
+    name: InterPro Web Interface
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/interpro/
+  - category: ProgrammingInterface
+    connection_url: https://www.ebi.ac.uk/interpro/api/
+    description: RESTful API for programmatic access to InterPro data
+    id: interpro.api
+    is_public: true
+    name: InterPro API
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.ebi.ac.uk/interpro/api/
+  - category: ProcessProduct
+    compression: targz
+    description: Software package for scanning protein sequences against InterPro's signatures
+    format: java
+    id: interpro.interproscan
+    name: InterProScan
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 7153864107
+    product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
+  - category: DataModelProduct
+    description: Complete list of InterPro entries with their types and short names
+    format: tsv
+    id: interpro.entry_list
+    name: InterPro Entry List
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2670480
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list
+  - category: DataModelProduct
+    compression: gzip
+    description: Complete InterPro database in XML format containing entries, member database signatures, GO terms, and relationships
+    format: xml
+    id: interpro.xml
+    name: InterPro XML
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 40445027
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
+  - category: MappingProduct
+    compression: gzip
+    description: Complete set of matches between protein sequences and InterPro entries/signatures
+    format: xml
+    id: interpro.match_complete
+    name: InterPro Match Complete
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 89253159090
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/match_complete.xml.gz
+  - category: MappingProduct
+    compression: targz
+    description: InterPro matches for UniParc protein sequences
+    format: xml
+    id: interpro.uniparc_match
+    name: UniParc Match
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 331243597405
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz
+  - category: MappingProduct
+    compression: gzip
+    description: Mappings of protein sequences to InterPro entries in a tab-delimited format
+    format: tsv
+    id: interpro.protein2ipr
+    name: Protein to InterPro Mappings
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 20975973462
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz
+  - category: DataModelProduct
+    description: Hierarchical relationships between InterPro entries
+    format: tsv
+    id: interpro.parent_child_tree
+    name: Parent-Child Tree
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 627613
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt
+  - category: MappingProduct
+    description: Mappings between InterPro entries and Gene Ontology (GO) terms
+    format: tsv
+    id: interpro.interpro2go
+    name: InterPro to GO Mappings
+    original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 3088718
+    product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
+    secondary_source:
+      - source: interpro
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: civic
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: pathophenodb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: protcid
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: spoke
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: achilles
+        relation_type: prov:hadPrimarySource
+      - source: depmap
+        relation_type: prov:hadPrimarySource
+      - source: ccle
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: cellosaurus
+        relation_type: prov:hadPrimarySource
+      - source: clue
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: pharmacodb
+        relation_type: prov:hadPrimarySource
+      - source: prism
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: offsides
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: repohub
+        relation_type: prov:hadPrimarySource
+      - source: chemicalchecker
+        relation_type: prov:hadPrimarySource
+      - source: repodb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+      - source: creeds
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: dorothea
+        relation_type: prov:hadPrimarySource
+      - source: progeny
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: corum
+        relation_type: prov:hadPrimarySource
+      - source: huri
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: omnipath
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+      - source: bioteque
+        relation_type: prov:wasInfluencedBy
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: hetionet
+        relation_type: prov:hadPrimarySource
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
+      - source: rnacentral
+        relation_type: prov:hadPrimarySource
+      - source: mirtarbase
+        relation_type: prov:hadPrimarySource
+      - source: unii
+        relation_type: prov:hadPrimarySource
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+      - source: mechreponet
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compatibility:
+      - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+      - 2.0.1
+      - 2.0.0
+      - 1.0.2
+      - '1.0'
+  - category: Product
+    description: interpro OBO
+    format: obo
+    id: obo-db-ingest.interpro.obo
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: interpro OBO
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1166198
+    product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: interpro OWL
+    format: owl
+    id: obo-db-ingest.interpro.owl
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: interpro OWL
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1347709
+    product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: interpro OBO Graph JSON
+    format: json
+    id: obo-db-ingest.interpro.json
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: interpro OBO Graph JSON
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1116474
+    product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
+  - category: MappingProduct
+    description: Files containing transitive assignments of InterPro matches, UniProtKB keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected GO terms
+    format: txt
+    id: goa.mapping-files
+    name: GO Mapping Files
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
+    warnings:
+      - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  - category: GraphicalInterface
+    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
+    format: http
+    id: kinace.portal
+    name: KinAce Web Portal
+    original_source:
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: iptmnet
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: epsd
+        relation_type: prov:hadPrimarySource
+      - source: kinhub
+        relation_type: prov:hadPrimarySource
+      - source: coralkinome
+        relation_type: prov:hadPrimarySource
+      - source: darkkinasekb
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_url: https://kinace.kinametrix.com/
+    secondary_source:
+      - source: kinace
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compression: gzip
+    description: protein network data (full network, scored links between proteins)
+    format: txt
+    id: string.protein.links
+    name: STRING Protein Links
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 138154280240
+    product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: protein network data (full network, incl. subscores per channel)
+    format: txt
+    id: string.protein.links.detailed
+    name: STRING Protein Links Detailed
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 203534412387
+    product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: 'protein network data (full network, incl. distinction: direct vs. interologs)'
+    format: txt
+    id: string.protein.links.full
+    name: STRING Protein Links Full
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 214269334954
+    product_url: https://stringdb-downloads.org/download/protein.links.full.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: protein network data (physical subnetwork, scored links between proteins)
+    format: txt
+    id: string.protein.physical.links
+    name: STRING Protein Physical Links
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 11867396121
+    product_url: https://stringdb-downloads.org/download/protein.physical.links.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: protein network data (physical subnetwork, incl. subscores per channel)
+    format: txt
+    id: string.protein.physical.links.detailed
+    name: STRING Protein Physical Links Detailed
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 14859366689
+    product_url: https://stringdb-downloads.org/download/protein.physical.links.detailed.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: 'protein network data (physical subnetwork, incl. distinction: direct vs. interologs)'
+    format: txt
+    id: string.protein.physical.links.full
+    name: STRING Protein Physical Links Full
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 15528028374
+    product_url: https://stringdb-downloads.org/download/protein.physical.links.full.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: association scores between orthologous groups
+    format: txt
+    id: string.cog.links
+    name: STRING COG Links
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 185338269
+    product_url: https://stringdb-downloads.org/download/COG.links.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: association scores (incl. subscores per channel)
+    format: txt
+    id: string.cog.links.detailed
+    name: STRING COG Links Detailed
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 250279091
+    product_url: https://stringdb-downloads.org/download/COG.links.detailed.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: 'full database, part II: the networks (nodes, edges, scores,...)'
+    id: string.database
+    name: STRING Database Network Schema
+    original_source:
+      - source: biocyc
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: cog
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: dip
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: flybase
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: hprd
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: mint
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: pdb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: proteomehd
+        relation_type: prov:hadPrimarySource
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: refseq
+        relation_type: prov:hadPrimarySource
+      - source: sgd
+        relation_type: prov:hadPrimarySource
+      - source: simap
+        relation_type: prov:hadPrimarySource
+      - source: smart
+        relation_type: prov:hadPrimarySource
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: wormbase
+        relation_type: prov:hadPrimarySource
+      - source: progenomes
+        relation_type: prov:hadPrimarySource
+    product_file_size: 281505096430
+    product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+  - category: Product
+    description: interpro Nodes TSV
+    format: tsv
+    id: obo-db-ingest.interpro.tsv
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0-1.0
+    name: interpro Nodes TSV
+    original_source:
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+    product_file_size: 697846
+    product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
+    secondary_source:
+      - source: obo-db-ingest
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Blum M
-  - Andreeva A
-  - Florentino LC
-  - Chuguransky SR
-  - Grego T
-  - Hobbs E
-  - Pinto BL
-  - Orr A
-  - Paysan-Lafosse T
-  - Ponamareva I
-  - Salazar GA
-  - Bordin N
-  - Bork P
-  - Bridge A
-  - Colwell L
-  - Gough J
-  - Haft DH
-  - Letunic I
-  - Llinares-López F
-  - Marchler-Bauer A
-  - Meng-Papaxanthos L
-  - Mi H
-  - Natale DA
-  - Orengo CA
-  - Pandurangan AP
-  - Piovesan D
-  - Rivoire C
-  - Sigrist CJA
-  - Thanki N
-  - Thibaud-Nissen F
-  - Thomas PD
-  - Tosatto SCE
-  - Wu CH
-  - Bateman A
-  doi: doi:10.1093/nar/gkae1082
-  id: doi:10.1093/nar/gkae1082
-  preferred: true
-  title: 'InterPro: the protein sequence classification resource in 2025'
-  year: '2024'
+  - authors:
+      - Blum M
+      - Andreeva A
+      - Florentino LC
+      - Chuguransky SR
+      - Grego T
+      - Hobbs E
+      - Pinto BL
+      - Orr A
+      - Paysan-Lafosse T
+      - Ponamareva I
+      - Salazar GA
+      - Bordin N
+      - Bork P
+      - Bridge A
+      - Colwell L
+      - Gough J
+      - Haft DH
+      - Letunic I
+      - Llinares-López F
+      - Marchler-Bauer A
+      - Meng-Papaxanthos L
+      - Mi H
+      - Natale DA
+      - Orengo CA
+      - Pandurangan AP
+      - Piovesan D
+      - Rivoire C
+      - Sigrist CJA
+      - Thanki N
+      - Thibaud-Nissen F
+      - Thomas PD
+      - Tosatto SCE
+      - Wu CH
+      - Bateman A
+    doi: doi:10.1093/nar/gkae1082
+    id: doi:10.1093/nar/gkae1082
+    preferred: true
+    title: 'InterPro: the protein sequence classification resource in 2025'
+    year: '2024'
 repository: https://www.ebi.ac.uk/interpro/
 ---
+
 InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.
 
 ## Overview

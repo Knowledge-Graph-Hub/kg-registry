@@ -7,7 +7,8 @@ id: orcid.api
 is_public: true
 name: ORCID Public API
 original_source:
-- orcid
+  - source: orcid
+    relation_type: prov:hadPrimarySource
 product_url: https://info.orcid.org/what-is-orcid/services/public-api/
 layout: product_detail
 ---

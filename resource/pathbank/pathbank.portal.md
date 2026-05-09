@@ -1,7 +1,6 @@
 ---
 category: GraphicalInterface
-description: Interactive web portal for browsing, searching, and analyzing PathBank
-  pathways.
+description: Interactive web portal for browsing, searching, and analyzing PathBank pathways.
 format: http
 id: pathbank.portal
 license:
@@ -9,7 +8,8 @@ license:
   label: ODbL-1.0
 name: PathBank Portal
 original_source:
-- pathbank
+  - source: pathbank
+    relation_type: prov:hadPrimarySource
 product_url: https://pathbank.org/
 layout: product_detail
 ---

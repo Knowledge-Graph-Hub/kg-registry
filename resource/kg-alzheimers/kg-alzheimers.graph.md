@@ -6,10 +6,12 @@ format: kgx
 id: kg-alzheimers.graph
 name: KGX Distribution of KG-Alzheimers
 original_source:
-- kg-alzheimers
+  - source: kg-alzheimers
+    relation_type: prov:hadPrimarySource
 product_file_size: 210868256
 product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
 secondary_source:
-- kg-alzheimers
+  - source: kg-alzheimers
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

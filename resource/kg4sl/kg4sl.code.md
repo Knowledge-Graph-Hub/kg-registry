@@ -1,7 +1,6 @@
 ---
 category: ProcessProduct
-description: Repository containing preprocessing, training, and evaluation code for
-  KG4SL.
+description: Repository containing preprocessing, training, and evaluation code for KG4SL.
 format: mixed
 id: kg4sl.code
 license:
@@ -9,7 +8,8 @@ license:
   label: MIT License
 name: KG4SL Code
 original_source:
-- kg4sl
+  - source: kg4sl
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL
 layout: product_detail
 ---

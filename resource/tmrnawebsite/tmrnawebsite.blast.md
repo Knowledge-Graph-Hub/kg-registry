@@ -5,12 +5,11 @@ format: http
 id: tmrnawebsite.blast
 name: tmRNA Website BLAST
 original_source:
-- tmrnawebsite
+  - source: tmrnawebsite
+    relation_type: prov:hadPrimarySource
 product_url: http://bioinformatics.sandia.gov/tmrna/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
 layout: product_detail
 ---

@@ -1,8 +1,7 @@
 ---
 category: Product
 compression: zip
-description: CSV download of PathBank pathway subjects and descriptions from the official
-  downloads page.
+description: CSV download of PathBank pathway subjects and descriptions from the official downloads page.
 format: csv
 id: pathbank.pathways.csv
 license:
@@ -10,7 +9,8 @@ license:
   label: ODbL-1.0
 name: PathBank Pathways CSV
 original_source:
-- pathbank
+  - source: pathbank
+    relation_type: prov:hadPrimarySource
 product_url: https://pathbank.org/downloads
 warnings: []
 layout: product_detail

@@ -2,75 +2,88 @@
 activity_status: inactive
 category: Resource
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: ben.elsworth@bristol.ac.uk
-  label: Ben Elsworth
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: ben.elsworth@bristol.ac.uk
+    label: Ben Elsworth
 creation_date: '2025-09-03T00:00:00Z'
-description: Vectology is a software platform and API for exploring relationships
-  among biomedical variables using sentence embedding models derived from biomedical
-  literature. It converts brief variable descriptions into vector representations
-  enabling similarity search, recommendation, and relational insight without manual
-  ontology annotation.
+description: Vectology is a software platform and API for exploring relationships among biomedical variables using sentence embedding models derived from biomedical literature. It converts brief variable descriptions into vector representations enabling similarity search, recommendation, and relational insight without manual ontology annotation.
 domains:
-- biomedical
-- genomics
-- health
-- investigations
+  - biomedical
+  - genomics
+  - health
+  - investigations
 homepage_url: http://vectology.mrcieu.ac.uk/
 id: vectology
 last_modified_date: '2025-09-03T00:00:00Z'
 layout: resource_detail
 name: Vectology
 products:
-- category: ProgrammingInterface
-  description: Public API providing access to sentence embedding-based similarity
-    endpoints and variable vector queries
-  id: vectology.api
-  is_public: true
-  name: Vectology API
-  original_source:
-  - vectology
-  product_url: http://vectology-api.mrcieu.ac.uk/
-- category: DocumentationProduct
-  description: Project information page including description, maintenance status,
-    contacts, and publication reference
-  format: http
-  id: vectology.docs
-  name: Vectology Project Page
-  original_source:
-  - vectology
-  product_url: https://mrcieu.github.io/software/vectology/
-- category: GraphProduct
-  description: Integrated graph knowledge base combining Mendelian randomization causal
-    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
-    (Neo4j backend)
-  format: neo4j
-  id: epigraphdb.graph
-  name: EpiGraphDB Graph Database
-  original_source:
-  - epigraphdb
-  - kg-monarch
-  - vectology
-  - ukbiobank
-  - prsatlas
-  - eqtlgen
-  - mondo
-  - gtex
-  - ensembl
-  - cpic
-  - opentargets
-  - efo
-  - semmeddb
-  - intact
-  - string
-  - reactome
-  - mrbase
-  product_url: https://docs.epigraphdb.org/graph-database/
-  secondary_source:
-  - epigraphdb
+  - category: ProgrammingInterface
+    description: Public API providing access to sentence embedding-based similarity endpoints and variable vector queries
+    id: vectology.api
+    is_public: true
+    name: Vectology API
+    original_source:
+      - source: vectology
+        relation_type: prov:hadPrimarySource
+    product_url: http://vectology-api.mrcieu.ac.uk/
+  - category: DocumentationProduct
+    description: Project information page including description, maintenance status, contacts, and publication reference
+    format: http
+    id: vectology.docs
+    name: Vectology Project Page
+    original_source:
+      - source: vectology
+        relation_type: prov:hadPrimarySource
+    product_url: https://mrcieu.github.io/software/vectology/
+  - category: GraphProduct
+    description: Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)
+    format: neo4j
+    id: epigraphdb.graph
+    name: EpiGraphDB Graph Database
+    original_source:
+      - source: epigraphdb
+        relation_type: prov:hadPrimarySource
+      - source: kg-monarch
+        relation_type: prov:hadPrimarySource
+      - source: vectology
+        relation_type: prov:hadPrimarySource
+      - source: ukbiobank
+        relation_type: prov:hadPrimarySource
+      - source: prsatlas
+        relation_type: prov:hadPrimarySource
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: ensembl
+        relation_type: prov:hadPrimarySource
+      - source: cpic
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: semmeddb
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: mrbase
+        relation_type: prov:hadPrimarySource
+    product_url: https://docs.epigraphdb.org/graph-database/
+    secondary_source:
+      - source: epigraphdb
+        relation_type: prov:wasInfluencedBy
 ---
+
 ## Overview
 
 Vectology provides a data-driven alternative to manual expert annotation of short biomedical variable descriptions. Using precomputed sentence embedding models trained on biomedical literature, it maps each variable description to a dense vector. Vector similarity operations enable identification of conceptually related variables, recommendation, and exploration of relationships between sets of variables.

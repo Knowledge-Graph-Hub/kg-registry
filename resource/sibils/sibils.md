@@ -2,24 +2,21 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: julien.gobeill@hesge.ch
-  label: Julien Gobeill
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://sibils.org/
-  id: sib
-  label: SIBiLS - Swiss Institute of Bioinformatics Literature Services
-description: SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides
-  personalized information retrieval in biological literature, with customizable search
-  in semantically enriched contents based on keywords and mapped biomedical entities
-  from standardized vocabularies.
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: julien.gobeill@hesge.ch
+    label: Julien Gobeill
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://sibils.org/
+    id: sib
+    label: SIBiLS - Swiss Institute of Bioinformatics Literature Services
+description: SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval in biological literature, with customizable search in semantically enriched contents based on keywords and mapped biomedical entities from standardized vocabularies.
 domains:
-- biological systems
-- health
+  - biological systems
+  - health
 homepage_url: https://sibils.org/
 id: sibils
 layout: resource_detail
@@ -28,71 +25,79 @@ license:
   label: CC-BY-3.0-CH
 name: SIBiLS
 products:
-- category: GraphicalInterface
-  description: Web interface for exploring SIBiLS data
-  id: sibils.site
-  is_public: true
-  name: SIBiLS Web Interface
-  original_source:
-  - sibils
-  product_url: https://sibils.org/
-  secondary_source:
-  - sibils
-- category: ProgrammingInterface
-  description: SPARQL endpoint for querying SIBiLS data
-  id: sibils.api.sparql
-  is_public: true
-  name: SIBiLS SPARQL Endpoint
-  original_source:
-  - sibils
-  product_url: https://sparql.sibils.org/sparql
-  secondary_source:
-  - sibils
-- category: ProgrammingInterface
-  description: RESTful API for fetching annotated contents from SIBiLS collections
-  id: sibils.api.rest.fetch
-  is_public: true
-  name: SIBiLS Fetch API
-  original_source:
-  - sibils
-  product_url: https://sibils.org/API#Fetch-API
-  secondary_source:
-  - sibils
-- category: ProgrammingInterface
-  description: RESTful API for customizable search in SIBiLS collections
-  id: sibils.api.rest.search
-  is_public: true
-  name: SIBiLS Search API
-  original_source:
-  - sibils
-  product_url: https://sibils.org/API#Customizable-search-API
-  secondary_source:
-  - sibils
-- category: ProgrammingInterface
-  description: RESTful API for question answering using natural language in SIBiLS
-    collections
-  id: sibils.api.rest.qa
-  is_public: true
-  name: SIBiLS Question Answering API
-  original_source:
-  - sibils
-  product_url: https://sibils.org/API#Question-Answering-API
-  secondary_source:
-  - sibils
+  - category: GraphicalInterface
+    description: Web interface for exploring SIBiLS data
+    id: sibils.site
+    is_public: true
+    name: SIBiLS Web Interface
+    original_source:
+      - source: sibils
+        relation_type: prov:hadPrimarySource
+    product_url: https://sibils.org/
+    secondary_source:
+      - source: sibils
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying SIBiLS data
+    id: sibils.api.sparql
+    is_public: true
+    name: SIBiLS SPARQL Endpoint
+    original_source:
+      - source: sibils
+        relation_type: prov:hadPrimarySource
+    product_url: https://sparql.sibils.org/sparql
+    secondary_source:
+      - source: sibils
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: RESTful API for fetching annotated contents from SIBiLS collections
+    id: sibils.api.rest.fetch
+    is_public: true
+    name: SIBiLS Fetch API
+    original_source:
+      - source: sibils
+        relation_type: prov:hadPrimarySource
+    product_url: https://sibils.org/API#Fetch-API
+    secondary_source:
+      - source: sibils
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: RESTful API for customizable search in SIBiLS collections
+    id: sibils.api.rest.search
+    is_public: true
+    name: SIBiLS Search API
+    original_source:
+      - source: sibils
+        relation_type: prov:hadPrimarySource
+    product_url: https://sibils.org/API#Customizable-search-API
+    secondary_source:
+      - source: sibils
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: RESTful API for question answering using natural language in SIBiLS collections
+    id: sibils.api.rest.qa
+    is_public: true
+    name: SIBiLS Question Answering API
+    original_source:
+      - source: sibils
+        relation_type: prov:hadPrimarySource
+    product_url: https://sibils.org/API#Question-Answering-API
+    secondary_source:
+      - source: sibils
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Gobeill J
-  - Caucheteur D
-  - Michel PA
-  - Mottin L
-  - Pasche E
-  - Ruch P
-  doi: doi:10.1093/nar/gkaa328
-  id: doi:10.1093/nar/gkaa328
-  preferred: true
-  title: 'SIB Literature Services: RESTful customizable search engines in biomedical
-    literature, enriched with automatically mapped biomedical concepts'
-  year: '2020'
+  - authors:
+      - Gobeill J
+      - Caucheteur D
+      - Michel PA
+      - Mottin L
+      - Pasche E
+      - Ruch P
+    doi: doi:10.1093/nar/gkaa328
+    id: doi:10.1093/nar/gkaa328
+    preferred: true
+    title: 'SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts'
+    year: '2020'
 creation_date: '2025-05-07T00:00:00Z'
 last_modified_date: '2025-12-07T00:00:00Z'
 ---

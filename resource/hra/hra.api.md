@@ -5,7 +5,8 @@ format: http
 id: hra.api
 name: HRA API
 original_source:
-- hra
+  - source: hra
+    relation_type: prov:hadPrimarySource
 product_url: https://apps.humanatlas.io/api
 layout: product_detail
 ---

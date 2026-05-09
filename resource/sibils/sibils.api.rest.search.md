@@ -5,9 +5,11 @@ id: sibils.api.rest.search
 is_public: true
 name: SIBiLS Search API
 original_source:
-- sibils
+  - source: sibils
+    relation_type: prov:hadPrimarySource
 product_url: https://sibils.org/API#Customizable-search-API
 secondary_source:
-- sibils
+  - source: sibils
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

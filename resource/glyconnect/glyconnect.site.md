@@ -5,9 +5,11 @@ id: glyconnect.site
 is_public: true
 name: GlyConnect Web Interface
 original_source:
-- glyconnect
+  - source: glyconnect
+    relation_type: prov:hadPrimarySource
 product_url: https://glyconnect.expasy.org/
 secondary_source:
-- glyconnect
+  - source: glyconnect
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

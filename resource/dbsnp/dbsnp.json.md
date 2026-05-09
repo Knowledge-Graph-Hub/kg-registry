@@ -6,9 +6,11 @@ format: json
 id: dbsnp.json
 name: dbSNP JSON Files
 original_source:
-- dbsnp
+  - source: dbsnp
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ncbi.nih.gov/snp/latest_release/JSON/
 secondary_source:
-- dbsnp
+  - source: dbsnp
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

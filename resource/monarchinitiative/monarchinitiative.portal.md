@@ -5,7 +5,8 @@ format: http
 id: monarchinitiative.portal
 name: Monarch Web Portal
 original_source:
-- monarchinitiative
+  - source: monarchinitiative
+    relation_type: prov:hadPrimarySource
 product_url: https://monarchinitiative.org/
 layout: product_detail
 ---

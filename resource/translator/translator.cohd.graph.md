@@ -1,11 +1,9 @@
 ---
 category: GraphProduct
 compatibility:
-- standard: biolink
-  version: 4.3.6
-description: KGX JSONL graph package for Columbia Open Health Data (COHD) distributed
-  via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6;
-  source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1).
+  - standard: biolink
+    version: 4.3.6
+description: KGX JSONL graph package for Columbia Open Health Data (COHD) distributed via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6; source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1).
 edge_count: 84
 format: kgx-jsonl
 id: translator.cohd.graph
@@ -16,12 +14,14 @@ license:
 name: Translator COHD KGX Graph
 node_count: 86
 original_source:
-- cohd
+  - source: cohd
+    relation_type: prov:hadPrimarySource
 product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
 secondary_source:
-- translator
+  - source: translator
+    relation_type: prov:wasInfluencedBy
 versions:
-- '2026_03_12'
-- cohd_2024-11-25_75f200bb_2025sep1_4.3.6
+  - '2026_03_12'
+  - cohd_2024-11-25_75f200bb_2025sep1_4.3.6
 layout: product_detail
 ---

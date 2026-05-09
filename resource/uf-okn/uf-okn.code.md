@@ -5,7 +5,8 @@ format: http
 id: uf-okn.code
 name: UF-OKN Source Code
 original_source:
-- uf-okn
+  - source: uf-okn
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/UFOKN/Knowledge-Graph
 layout: product_detail
 ---

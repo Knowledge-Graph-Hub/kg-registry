@@ -6,7 +6,8 @@ id: hald.literature-info.json
 latest_version: v6
 name: HALD Literature Info
 original_source:
-- hald
+  - source: hald
+    relation_type: prov:hadPrimarySource
 product_file_size: 854292307
 product_url: https://ndownloader.figshare.com/files/43612512
 layout: product_detail

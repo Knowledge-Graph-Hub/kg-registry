@@ -1,14 +1,14 @@
 ---
 category: GraphicalInterface
-description: GenProt Viewer for integrated genomic, transcriptomic and proteomic view
-  of the human genome
+description: GenProt Viewer for integrated genomic, transcriptomic and proteomic view of the human genome
 format: http
 id: hprd.genprot.viewer
 name: GenProt Viewer
 original_source:
-- hprd
+  - source: hprd
+    relation_type: prov:hadPrimarySource
 product_url: http://www.genprot.org/
 warnings:
-- GenProt website is no longer accessible.
+  - GenProt website is no longer accessible.
 layout: product_detail
 ---

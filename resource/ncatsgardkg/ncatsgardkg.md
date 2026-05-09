@@ -2,56 +2,56 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: jsanjak@gmail.com
-  label: Jaleal Sanjak
-description: The NCATS GARD Knowledge Graph integrates data about rare diseases, creating
-  a comprehensive resource for rare disease research and drug discovery. It leverages
-  clustering and machine learning approaches to identify relationships between rare
-  diseases and potential therapeutic targets.
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: jsanjak@gmail.com
+    label: Jaleal Sanjak
+description: The NCATS GARD Knowledge Graph integrates data about rare diseases, creating a comprehensive resource for rare disease research and drug discovery. It leverages clustering and machine learning approaches to identify relationships between rare diseases and potential therapeutic targets.
 domains:
-- health
-- biomedical
-- clinical
-- genomics
+  - health
+  - biomedical
+  - clinical
+  - genomics
 homepage_url: https://github.com/ncats/RD-Clust
 id: ncatsgardkg
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: NCATS GARD KG
 publications:
-- doi: 10.1093/jamia/ocad186
-  id: https://doi.org/10.1093/jamia/ocad186
-  title: A knowledge graph approach to rare disease research and drug discovery
-  year: '2023'
-- doi: 10.1101/2023.02.15.528673
-  id: https://doi.org/10.1101/2023.02.15.528673
-  title: 'RD-Clust: A tool for rare disease clustering and drug discovery'
-  year: '2023'
+  - doi: 10.1093/jamia/ocad186
+    id: https://doi.org/10.1093/jamia/ocad186
+    title: A knowledge graph approach to rare disease research and drug discovery
+    year: '2023'
+  - doi: 10.1101/2023.02.15.528673
+    id: https://doi.org/10.1101/2023.02.15.528673
+    title: 'RD-Clust: A tool for rare disease clustering and drug discovery'
+    year: '2023'
 repository: https://github.com/ncats/RD-Clust
 products:
-- category: ProcessProduct
-  description: RD-Clust source repository implementing NCATS GARD KG clustering and analysis workflows.
-  format: http
-  id: ncatsgardkg.code
-  name: NCATS GARD KG Source Repository
-  original_source:
-  - ncatsgardkg
-  product_url: https://github.com/ncats/RD-Clust
-- category: Product
-  description: Repository subdirectory containing raw datasets used to construct the NCATS GARD KG workflow.
-  format: http
-  id: ncatsgardkg.raw-data
-  name: NCATS GARD KG Raw Data Directory
-  original_source:
-  - ncatsgardkg
-  product_url: https://github.com/ncats/RD-Clust/tree/main/data/raw
+  - category: ProcessProduct
+    description: RD-Clust source repository implementing NCATS GARD KG clustering and analysis workflows.
+    format: http
+    id: ncatsgardkg.code
+    name: NCATS GARD KG Source Repository
+    original_source:
+      - source: ncatsgardkg
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/ncats/RD-Clust
+  - category: Product
+    description: Repository subdirectory containing raw datasets used to construct the NCATS GARD KG workflow.
+    format: http
+    id: ncatsgardkg.raw-data
+    name: NCATS GARD KG Raw Data Directory
+    original_source:
+      - source: ncatsgardkg
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/ncats/RD-Clust/tree/main/data/raw
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 creation_date: '2025-07-11T00:00:00Z'
 ---
+
 # NCATS GARD KG
 
 The NCATS GARD Knowledge Graph (KG) is a comprehensive knowledge graph focused on rare diseases, developed by the National Center for Advancing Translational Sciences (NCATS). This resource integrates data from the Genetic and Rare Diseases Information Center (GARD) and other sources to create a rich network of relationships between rare diseases, genes, drugs, and other biomedical entities.

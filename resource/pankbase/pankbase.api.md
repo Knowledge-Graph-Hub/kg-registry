@@ -6,9 +6,11 @@ id: pankbase.api
 is_public: true
 name: PanKBase Data Library API
 original_source:
-- pankbase
+  - source: pankbase
+    relation_type: prov:hadPrimarySource
 product_url: https://pankbase-db.github.io/pankbase-client-openapi-spec/
 secondary_source:
-- pankbase
+  - source: pankbase
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -5,7 +5,8 @@ format: http
 id: annotator.portal
 name: Translator Annotator Portal
 original_source:
-- annotator
+  - source: annotator
+    relation_type: prov:hadPrimarySource
 product_url: https://annotator.transltr.io/
 layout: product_detail
 ---

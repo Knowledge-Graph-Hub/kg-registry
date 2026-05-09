@@ -8,10 +8,12 @@ license:
   label: CC-BY-4.0
 name: credit Nodes TSV
 original_source:
-- credit
+  - source: credit
+    relation_type: prov:hadPrimarySource
 product_file_size: 1046
 product_url: https://w3id.org/biopragmatics/resources/credit/credit.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -1,22 +1,19 @@
 ---
 category: Product
-description: Complete RepoDB dataset containing drug repositioning successes and failures,
-  with approved drugs, indications, and clinical trial outcomes
+description: Complete RepoDB dataset containing drug repositioning successes and failures, with approved drugs, indications, and clinical trial outcomes
 format: csv
 id: repodb.full_dataset
 name: RepoDB Full Dataset
 original_source:
-- drugcentral
-- clinicaltrialsgov
+  - source: drugcentral
+    relation_type: prov:hadPrimarySource
+  - source: clinicaltrialsgov
+    relation_type: prov:hadPrimarySource
 product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
-  header found
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when accessing file
+  - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length header found
 layout: product_detail
 ---

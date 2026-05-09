@@ -5,7 +5,8 @@ format: csv
 id: kg-predict.ad_predictions
 name: AD Drug Predictions
 original_source:
-- kg-predict
+  - source: kg-predict
+    relation_type: prov:hadPrimarySource
 product_url: http://nlp.case.edu/public/data/GPKG-Predict/
 layout: product_detail
 ---

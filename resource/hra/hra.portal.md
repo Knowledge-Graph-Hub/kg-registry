@@ -5,7 +5,8 @@ format: http
 id: hra.portal
 name: Human Reference Atlas Portal
 original_source:
-- hra
+  - source: hra
+    relation_type: prov:hadPrimarySource
 product_url: https://humanatlas.io/
 layout: product_detail
 ---

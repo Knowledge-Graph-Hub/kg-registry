@@ -6,7 +6,8 @@ id: drugbank.clinical.api
 is_public: true
 name: DrugBank Clinical API
 original_source:
-- drugbank
+  - source: drugbank
+    relation_type: prov:hadPrimarySource
 product_url: https://www.drugbank.com/clinical
 layout: product_detail
 ---

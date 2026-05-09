@@ -2,12 +2,9 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: The Veterans Health Administration National Drug File (VANDF) is a comprehensive
-  drug terminology containing approximately 27,921 clinical drugs, 8,058 ingredients,
-  and 578 drug classes. It is maintained by the Department of Veterans Affairs and
-  distributed through UMLS and RxNorm.
+description: The Veterans Health Administration National Drug File (VANDF) is a comprehensive drug terminology containing approximately 27,921 clinical drugs, 8,058 ingredients, and 578 drug classes. It is maintained by the Department of Veterans Affairs and distributed through UMLS and RxNorm.
 domains:
-- pharmacology
+  - pharmacology
 id: ndfrt
 infores_id: ndfrt
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/vandf.html
@@ -15,31 +12,35 @@ last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Veterans Health Administration National Drug File
 synonyms:
-- VANDF
-- NDF-RT
-- VA National Drug File
-- National Drug File - Reference Terminology
+  - VANDF
+  - NDF-RT
+  - VA National Drug File
+  - National Drug File - Reference Terminology
 products:
-- category: Product
-  description: VANDF drug terminology data distributed through UMLS Metathesaurus
-  id: ndfrt.umls
-  name: VANDF in UMLS
-  product_url: https://www.nlm.nih.gov/research/umls/
-  original_source:
-  - ndfrt
-  secondary_source:
-  - umls
-- category: Product
-  description: VANDF data integrated into RxNorm
-  id: ndfrt.rxnorm
-  name: VANDF in RxNorm
-  product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
-  original_source:
-  - ndfrt
-  secondary_source:
-  - rxnorm
+  - category: Product
+    description: VANDF drug terminology data distributed through UMLS Metathesaurus
+    id: ndfrt.umls
+    name: VANDF in UMLS
+    product_url: https://www.nlm.nih.gov/research/umls/
+    original_source:
+      - source: ndfrt
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: umls
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: VANDF data integrated into RxNorm
+    id: ndfrt.rxnorm
+    name: VANDF in RxNorm
+    product_url: https://www.nlm.nih.gov/research/umls/rxnorm/
+    original_source:
+      - source: ndfrt
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: rxnorm
+        relation_type: prov:wasInfluencedBy
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
 
 # Veterans Health Administration National Drug File

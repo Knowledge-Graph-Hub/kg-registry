@@ -7,7 +7,8 @@ id: annotator.api
 is_public: true
 name: Translator Annotator API
 original_source:
-- annotator
+  - source: annotator
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Annotator-Service
 layout: product_detail
 ---

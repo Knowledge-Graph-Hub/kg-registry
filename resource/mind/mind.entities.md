@@ -8,11 +8,14 @@ license:
   label: CC-BY-4.0
 name: MIND Entities Dictionary
 original_source:
-- drugcentral
-- mechreponet
+  - source: drugcentral
+    relation_type: prov:hadPrimarySource
+  - source: mechreponet
+    relation_type: prov:hadPrimarySource
 product_file_size: 5629618
 product_url: https://zenodo.org/records/8117748/files/entities.dict
 secondary_source:
-- mind
+  - source: mind
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

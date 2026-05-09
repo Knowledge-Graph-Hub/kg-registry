@@ -2,27 +2,20 @@
 activity_status: active
 category: Aggregator
 collection:
-- omop
+  - omop
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.ohdsi.org/
-  label: OHDSI
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.ohdsi.org/
+    label: OHDSI
 creation_date: '2025-11-05T00:00:00Z'
-description: Athena is the OHDSI (Observational Health Data Sciences and Informatics)
-  standardized vocabulary repository that provides access to standardized terminologies
-  and vocabularies for observational healthcare data. It includes SNOMED CT, RxNorm,
-  LOINC, ICD codes, and many other standard vocabularies, along with mappings between
-  them. Athena enables the transformation of healthcare data into the OMOP Common
-  Data Model format for federated research across multiple healthcare systems. Access
-  to vocabulary selection and download workflows is mediated through the Athena web
-  application rather than stable public download URLs.
+description: Athena is the OHDSI (Observational Health Data Sciences and Informatics) standardized vocabulary repository that provides access to standardized terminologies and vocabularies for observational healthcare data. It includes SNOMED CT, RxNorm, LOINC, ICD codes, and many other standard vocabularies, along with mappings between them. Athena enables the transformation of healthcare data into the OMOP Common Data Model format for federated research across multiple healthcare systems. Access to vocabulary selection and download workflows is mediated through the Athena web application rather than stable public download URLs.
 domains:
-- clinical
-- biomedical
-- health
-- information technology
+  - clinical
+  - biomedical
+  - health
+  - information technology
 homepage_url: https://athena.ohdsi.org/
 id: athena
 infores_id: athena
@@ -30,67 +23,84 @@ last_modified_date: '2026-04-10T00:00:00Z'
 layout: resource_detail
 name: Athena
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and browsing standardized vocabularies;
-    account login is required for download workflows
-  format: http
-  id: athena.web
-  name: Athena Vocabulary Browser
-  original_source:
-  - athena
-  product_url: https://athena.ohdsi.org/search-terms/start
-  warnings:
-  - Athena is an authenticated web application; access to vocabulary download workflows
-    requires login.
-- category: Product
-  description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
-    through the authenticated Athena web application
-  format: csv
-  id: athena.vocabularies
-  name: Athena Vocabulary Downloads
-  original_source:
-  - snomedct
-  - icd10
-  - icd10cm
-  - mesh
-  - loinc
-  - cdiscvocab
-  - ciel
-  - rxnorm
-  - ndcd
-  - gemscript
-  - medispan-gpi
-  product_url: https://athena.ohdsi.org/vocabulary/list
-  secondary_source:
-  - athena
-  warnings:
-  - Athena vocabulary downloads are prepared through the logged-in web application;
-    stable direct public file URLs are not exposed.
-- category: MappingProduct
-  description: Concept mappings between different terminology systems
-  format: csv
-  id: athena.mappings
-  name: Athena Concept Mappings
-  original_source:
-  - snomedct
-  - icd10
-  - icd10cm
-  - mesh
-  - loinc
-  - cdiscvocab
-  - ciel
-  product_url: https://athena.ohdsi.org/search-terms/start
-  secondary_source:
-  - athena
-  warnings:
-  - Athena mapping exports are accessed through the authenticated Athena web application;
-    stable direct public file URLs are not exposed.
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing standardized vocabularies; account login is required for download workflows
+    format: http
+    id: athena.web
+    name: Athena Vocabulary Browser
+    original_source:
+      - source: athena
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/search-terms/start
+    warnings:
+      - Athena is an authenticated web application; access to vocabulary download workflows requires login.
+  - category: Product
+    description: Downloadable standardized vocabulary bundles for OMOP CDM assembled through the authenticated Athena web application
+    format: csv
+    id: athena.vocabularies
+    name: Athena Vocabulary Downloads
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: icd10cm
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: cdiscvocab
+        relation_type: prov:hadPrimarySource
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+      - source: rxnorm
+        relation_type: prov:hadPrimarySource
+      - source: ndcd
+        relation_type: prov:hadPrimarySource
+      - source: gemscript
+        relation_type: prov:hadPrimarySource
+      - source: medispan-gpi
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/vocabulary/list
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - Athena vocabulary downloads are prepared through the logged-in web application; stable direct public file URLs are not exposed.
+  - category: MappingProduct
+    description: Concept mappings between different terminology systems
+    format: csv
+    id: athena.mappings
+    name: Athena Concept Mappings
+    original_source:
+      - source: snomedct
+        relation_type: prov:hadPrimarySource
+      - source: icd10
+        relation_type: prov:hadPrimarySource
+      - source: icd10cm
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: loinc
+        relation_type: prov:hadPrimarySource
+      - source: cdiscvocab
+        relation_type: prov:hadPrimarySource
+      - source: ciel
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/search-terms/start
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - Athena mapping exports are accessed through the authenticated Athena web application; stable direct public file URLs are not exposed.
 synonyms:
-- Athena
-- OHDSI Athena
+  - Athena
+  - OHDSI Athena
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # Athena
 
 ## Overview

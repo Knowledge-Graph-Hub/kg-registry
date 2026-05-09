@@ -5,7 +5,8 @@ format: http
 id: cebs.web
 name: CEBS Search Interface
 original_source:
-- cebs
+  - source: cebs
+    relation_type: prov:hadPrimarySource
 product_url: https://manticore.niehs.nih.gov/cebssearch/
 layout: product_detail
 ---

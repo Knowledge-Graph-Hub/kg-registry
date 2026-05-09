@@ -5,9 +5,11 @@ id: sibils.api.rest.fetch
 is_public: true
 name: SIBiLS Fetch API
 original_source:
-- sibils
+  - source: sibils
+    relation_type: prov:hadPrimarySource
 product_url: https://sibils.org/API#Fetch-API
 secondary_source:
-- sibils
+  - source: sibils
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

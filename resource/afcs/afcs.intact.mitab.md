@@ -6,9 +6,11 @@ format: psi_mi_mitab
 id: afcs.intact.mitab
 name: AFCS IntAct MITAB Dataset
 original_source:
-- afcs
+  - source: afcs
+    relation_type: prov:hadPrimarySource
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/datasets/AFCS.zip
 secondary_source:
-- intact
+  - source: intact
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -2,21 +2,19 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: info@ncbi.nlm.nih.gov
-  - contact_type: url
-    value: https://pubchem.ncbi.nlm.nih.gov/contact
-  id: ncbi
-  label: National Center for Biotechnology Information (NCBI)
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: info@ncbi.nlm.nih.gov
+      - contact_type: url
+        value: https://pubchem.ncbi.nlm.nih.gov/contact
+    id: ncbi
+    label: National Center for Biotechnology Information (NCBI)
 creation_date: '2025-05-04T00:00:00Z'
-description: PubChem is an open chemistry database that collects information on chemical
-  structures, identifiers, chemical and physical properties, biological activities,
-  patents, health, safety, toxicity data, and other information.
+description: PubChem is an open chemistry database that collects information on chemical structures, identifiers, chemical and physical properties, biological activities, patents, health, safety, toxicity data, and other information.
 domains:
-- chemistry and biochemistry
-- health
+  - chemistry and biochemistry
+  - health
 homepage_url: https://pubchem.ncbi.nlm.nih.gov/
 id: pubchem
 infores_id: pubchem
@@ -27,476 +25,739 @@ license:
   label: Public Domain
 name: PubChem
 products:
-- category: Product
-  compression: gzip
-  description: Compound structures, properties, and other information in ASN.1 format
-  format: xml
-  id: pubchem.compounds.asn
-  name: PubChem Compounds ASN
-  original_source:
-  - pubchem
-  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/ASN/
-  secondary_source:
-  - pubchem
-- category: Product
-  compression: gzip
-  description: Compound structures, properties, and other information in SDF format
-  format: sdf
-  id: pubchem.compounds.sdf
-  name: PubChem Compounds SDF
-  original_source:
-  - pubchem
-  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/
-  secondary_source:
-  - pubchem
-- category: Product
-  compression: gzip
-  description: PubChem substance information in ASN.1 format
-  format: xml
-  id: pubchem.substances.asn
-  name: PubChem Substances ASN
-  original_source:
-  - pubchem
-  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/
-  secondary_source:
-  - pubchem
-- category: Product
-  compression: gzip
-  description: PubChem substance information in SDF format
-  format: sdf
-  id: pubchem.substances.sdf
-  name: PubChem Substances SDF
-  original_source:
-  - pubchem
-  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/
-  secondary_source:
-  - pubchem
-- category: Product
-  compression: gzip
-  description: PubChem BioAssay data in ASN.1 format
-  format: xml
-  id: pubchem.bioassay.asn
-  name: PubChem BioAssay ASN
-  original_source:
-  - pubchem
-  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/ASN/
-  secondary_source:
-  - pubchem
-- category: Product
-  compression: gzip
-  description: PubChem BioAssay data in XML format
-  format: xml
-  id: pubchem.bioassay.xml
-  name: PubChem BioAssay XML
-  original_source:
-  - pubchem
-  product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/XML/
-  secondary_source:
-  - pubchem
-- category: ProgrammingInterface
-  description: The PubChem Power User Gateway (PUG) REST service
-  id: pubchem.pug.rest
-  is_public: true
-  name: PubChem PUG REST API
-  original_source:
-  - pubchem
-  product_url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  secondary_source:
-  - pubchem
-- category: GraphProduct
-  compression: zip
-  description: Nodes from PubChem Database
-  format: csv
-  id: biomarkerkg.nodes.compound
-  name: BKG Compound Nodes
-  original_source:
-  - pubchem
-  product_file_size: 871
-  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
-  secondary_source:
-  - biomarkerkg
-- category: GraphicalInterface
-  description: A browser interface for a knowledge graph for Alzheimer's Disease.
-  format: http
-  id: alzkb.browser
-  name: AlzKB Graph Database Browser
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://alzkb.ai:7473/login
-  secondary_source:
-  - alzkb
-  - hetionet
-- category: GraphProduct
-  description: Memgraph data release for AlzKB.
-  id: alzkb.data
-  name: AlzKB Data Release (Version 2.0.0)
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-  secondary_source:
-  - alzkb
-  - hetionet
-- category: GraphProduct
-  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
-    chemicals, and diseases
-  edge_count: 500958
-  id: pharmkg.graph
-  name: PharmKG graph
-  node_count: 7603
-  original_source:
-  - omim
-  - drugbank
-  - pharmgkb
-  - ttd
-  - sider
-  - humannet
-  - ncbigene
-  - mesh
-  - pubchem
-  - gnbr
-  - biogps
-  - connectivitymap
-  product_url: https://zenodo.org/record/4077338
-  secondary_source:
-  - pharmkg
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
-- category: GraphProduct
-  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
-    (KGX) format, containing integrated clinical and environmental exposures data
-    as a knowledge graph with 226 nodes and 14,342 edges
-  format: kgx-jsonl
-  id: icees-kg.graph
-  name: KGX distribution of the ICEES Exposures KP
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
-  secondary_source:
-  - icees-kg
-- category: ProgrammingInterface
-  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
-    standardized Translator protocols
-  format: http
-  id: icees-kg.trapi
-  name: ICEES KG TRAPI API
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
-  secondary_source:
-  - icees-kg
-- category: Product
-  description: Meta knowledge graph and metadata describing the data sources, node
-    types, edge types, and predicates available in ICEES KG
-  format: json
-  id: icees-kg.metadata
-  name: ICEES KG Metadata
-  original_source:
-  - mesh
-  - pubchem
-  - chembl
-  - mondo
-  - chebi
-  - hp
-  - umls
-  - hmdb
-  - icees-kg
-  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
-  secondary_source:
-  - icees-kg
-- category: GraphProduct
-  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
-    FORUM data
-  id: forum.graph.dump
-  name: FORUM Knowledge Graph Dump
-  original_source:
-  - mesh
-  - chebi
-  - cito
-  - fabio
-  - dc
-  - cheminf
-  - skos
-  - chemont
-  - pubchem
-  - pubmed
-  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
-  secondary_source:
-  - forum
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: FTP error: timed
-    out'
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-- category: GraphProduct
-  description: Core UniBioMap graph edges file.
-  format: csv
-  id: unibiomap.links
-  name: UniBioMap Graph Links
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 1406201678
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
-- category: GraphProduct
-  description: Auxiliary UniBioMap graph annotations and metadata.
-  format: tsv
-  id: unibiomap.auxs
-  name: UniBioMap Graph Auxiliaries
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 591290539
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
-- category: GraphProduct
-  description: Predicted UniBioMap graph edges with confidence scores.
-  format: csv
-  id: unibiomap.pred
-  name: UniBioMap Predicted Graph
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 2484982268
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
-- category: GraphProduct
-  description: Full unfiltered UniBioMap predicted graph edges file.
-  format: csv
-  id: unibiomap.pred.full
-  name: UniBioMap Predicted Graph (Full)
-  original_source:
-  - unibiomap
-  - hpa
-  - go
-  - bindingdb
-  - foodb
-  - tcdb
-  - biogrid
-  - ctd
-  - chebi
-  - stitch
-  - intact
-  - uniprot
-  - unichem
-  - pubchem
-  - batman
-  - string
-  - ncbigene
-  - drugbank
-  - kegg
-  - sider
-  - compath
-  - phosphositeplus
-  - hp
-  - chembl
-  - reactome
-  - smpdb
-  - uberon
-  - hmdb
-  - medgen
-  - umls
-  - mesh
-  - inchikey
-  - unichem
-  - omim
-  product_file_size: 6303875907
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+  - category: Product
+    compression: gzip
+    description: Compound structures, properties, and other information in ASN.1 format
+    format: xml
+    id: pubchem.compounds.asn
+    name: PubChem Compounds ASN
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/ASN/
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: Compound structures, properties, and other information in SDF format
+    format: sdf
+    id: pubchem.compounds.sdf
+    name: PubChem Compounds SDF
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: PubChem substance information in ASN.1 format
+    format: xml
+    id: pubchem.substances.asn
+    name: PubChem Substances ASN
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: PubChem substance information in SDF format
+    format: sdf
+    id: pubchem.substances.sdf
+    name: PubChem Substances SDF
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: PubChem BioAssay data in ASN.1 format
+    format: xml
+    id: pubchem.bioassay.asn
+    name: PubChem BioAssay ASN
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/ASN/
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    compression: gzip
+    description: PubChem BioAssay data in XML format
+    format: xml
+    id: pubchem.bioassay.xml
+    name: PubChem BioAssay XML
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/XML/
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: The PubChem Power User Gateway (PUG) REST service
+    id: pubchem.pug.rest
+    is_public: true
+    name: PubChem PUG REST API
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
+    secondary_source:
+      - source: pubchem
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from PubChem Database
+    format: csv
+    id: biomarkerkg.nodes.compound
+    name: BKG Compound Nodes
+    original_source:
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+    product_file_size: 871
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
+    secondary_source:
+      - source: biomarkerkg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphicalInterface
+    description: A browser interface for a knowledge graph for Alzheimer's Disease.
+    format: http
+    id: alzkb.browser
+    name: AlzKB Graph Database Browser
+    original_source:
+      - source: aop-db
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: dsstox
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: hrpimp
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pharmacotherapydb
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_url: https://alzkb.ai:7473/login
+    secondary_source:
+      - source: alzkb
+        relation_type: prov:wasInfluencedBy
+      - source: hetionet
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Memgraph data release for AlzKB.
+    id: alzkb.data
+    name: AlzKB Data Release (Version 2.0.0)
+    original_source:
+      - source: aop-db
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: dsstox
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: hrpimp
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pharmacotherapydb
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+    secondary_source:
+      - source: alzkb
+        relation_type: prov:wasInfluencedBy
+      - source: hetionet
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: pharmgkb
+        relation_type: prov:hadPrimarySource
+      - source: ttd
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: humannet
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: gnbr
+        relation_type: prov:hadPrimarySource
+      - source: biogps
+        relation_type: prov:hadPrimarySource
+      - source: connectivitymap
+        relation_type: prov:hadPrimarySource
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+      - source: pharmkg
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+      - source: biolink
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: ncit
+        relation_type: prov:hadPrimarySource
+      - source: efo
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: rhea
+        relation_type: prov:hadPrimarySource
+      - source: pr
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: panther
+        relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: eupathdb
+        relation_type: prov:hadPrimarySource
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+      - source: microbiomekg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange (KGX) format, containing integrated clinical and environmental exposures data as a knowledge graph with 226 nodes and 14,342 edges
+    format: kgx-jsonl
+    id: icees-kg.graph
+    name: KGX distribution of the ICEES Exposures KP
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: ProgrammingInterface
+    description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using standardized Translator protocols
+    format: http
+    id: icees-kg.trapi
+    name: ICEES KG TRAPI API
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Meta knowledge graph and metadata describing the data sources, node types, edge types, and predicates available in ICEES KG
+    format: json
+    id: icees-kg.metadata
+    name: ICEES KG Metadata
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: mondo
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: icees-kg
+        relation_type: prov:hadPrimarySource
+    product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+    secondary_source:
+      - source: icees-kg
+        relation_type: prov:wasInfluencedBy
+  - category: GraphProduct
+    description: Downloadable knowledge graph dump in TAR/GZ format containing complete FORUM data
+    id: forum.graph.dump
+    name: FORUM Knowledge Graph Dump
+    original_source:
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: cito
+        relation_type: prov:hadPrimarySource
+      - source: fabio
+        relation_type: prov:hadPrimarySource
+      - source: dc
+        relation_type: prov:hadPrimarySource
+      - source: cheminf
+        relation_type: prov:hadPrimarySource
+      - source: skos
+        relation_type: prov:hadPrimarySource
+      - source: chemont
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+    product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+    secondary_source:
+      - source: forum
+        relation_type: prov:wasInfluencedBy
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: FTP error: timed out'
+      - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed out
+  - category: GraphProduct
+    description: Core UniBioMap graph edges file.
+    format: csv
+    id: unibiomap.links
+    name: UniBioMap Graph Links
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 1406201678
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.links.csv
+  - category: GraphProduct
+    description: Auxiliary UniBioMap graph annotations and metadata.
+    format: tsv
+    id: unibiomap.auxs
+    name: UniBioMap Graph Auxiliaries
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 591290539
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.auxs.tsv
+  - category: GraphProduct
+    description: Predicted UniBioMap graph edges with confidence scores.
+    format: csv
+    id: unibiomap.pred
+    name: UniBioMap Predicted Graph
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 2484982268
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.csv
+  - category: GraphProduct
+    description: Full unfiltered UniBioMap predicted graph edges file.
+    format: csv
+    id: unibiomap.pred.full
+    name: UniBioMap Predicted Graph (Full)
+    original_source:
+      - source: unibiomap
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: tcdb
+        relation_type: prov:hadPrimarySource
+      - source: biogrid
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: stitch
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: batman
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: compath
+        relation_type: prov:hadPrimarySource
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: medgen
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: inchikey
+        relation_type: prov:hadPrimarySource
+      - source: unichem
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+    product_file_size: 6303875907
+    product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
 publications:
-- authors:
-  - Kim S
-  - Chen J
-  - Cheng T
-  - Gindulyte A
-  - He J
-  - He S
-  - Li Q
-  - Shoemaker BA
-  - Thiessen PA
-  - Yu B
-  - Zaslavsky L
-  - Zhang J
-  - Bolton EE
-  doi: doi:10.1093/nar/gky1033
-  id: doi:10.1093/nar/gky1033
-  preferred: true
-  title: PubChem 2019 update - improved access to chemical data
-  year: '2019'
+  - authors:
+      - Kim S
+      - Chen J
+      - Cheng T
+      - Gindulyte A
+      - He J
+      - He S
+      - Li Q
+      - Shoemaker BA
+      - Thiessen PA
+      - Yu B
+      - Zaslavsky L
+      - Zhang J
+      - Bolton EE
+    doi: doi:10.1093/nar/gky1033
+    id: doi:10.1093/nar/gky1033
+    preferred: true
+    title: PubChem 2019 update - improved access to chemical data
+    year: '2019'
 repository: https://github.com/ncbi/NCBI-Datasets
 ---
+
 PubChem is a database of chemical molecules and their activities against biological assays maintained by the National Center for Biotechnology Information (NCBI), a component of the National Library of Medicine, which is part of the United States National Institutes of Health (NIH).
 
 The system contains three primary databases:

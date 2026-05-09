@@ -6,7 +6,8 @@ format: kgx
 id: eco-kg.graph
 name: eco-KG Graph
 original_source:
-- eco-kg
+  - source: eco-kg
+    relation_type: prov:hadPrimarySource
 product_url: https://kg-hub.berkeleybop.io/eco-kg/
 layout: product_detail
 ---

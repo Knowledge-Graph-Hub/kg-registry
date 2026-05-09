@@ -5,7 +5,8 @@ format: http
 id: suppkg.source-data
 name: SuppKG Source Data Repository
 original_source:
-- suppkg
+  - source: suppkg
+    relation_type: prov:hadPrimarySource
 product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 layout: product_detail
 ---

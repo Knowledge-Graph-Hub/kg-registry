@@ -2,19 +2,17 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://ncats.nih.gov/translator
-  label: NCATS Biomedical Data Translator
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://ncats.nih.gov/translator
+    label: NCATS Biomedical Data Translator
 creation_date: '2025-10-30T00:00:00Z'
-description: SuppKG is a knowledge graph that integrates information about dietary
-  supplements and their relationships with diseases, genes, proteins, and other biomedical
-  entities, developed to support translational research and clinical decision-making.
+description: SuppKG is a knowledge graph that integrates information about dietary supplements and their relationships with diseases, genes, proteins, and other biomedical entities, developed to support translational research and clinical decision-making.
 domains:
-- nutrition
-- biomedical
-- health
+  - nutrition
+  - biomedical
+  - health
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
 id: suppkg
 infores_id: suppkg
@@ -22,32 +20,35 @@ last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: SuppKG
 publications:
-- id: https://doi.org/10.1016/j.jbi.2022.104120
-  title: 'SuppKG: A knowledge graph for dietary supplements'
-  year: '2022'
+  - id: https://doi.org/10.1016/j.jbi.2022.104120
+    title: 'SuppKG: A knowledge graph for dietary supplements'
+    year: '2022'
 products:
-- category: DocumentationProduct
-  description: Translator wiki page describing SuppKG scope and example supplement-disease relationships.
-  format: http
-  id: suppkg.docs
-  name: SuppKG Documentation
-  original_source:
-  - suppkg
-  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
-- category: ProcessProduct
-  description: Source data directory used for SuppKG in the SemRep_DS repository.
-  format: http
-  id: suppkg.source-data
-  name: SuppKG Source Data Repository
-  original_source:
-  - suppkg
-  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
+  - category: DocumentationProduct
+    description: Translator wiki page describing SuppKG scope and example supplement-disease relationships.
+    format: http
+    id: suppkg.docs
+    name: SuppKG Documentation
+    original_source:
+      - source: suppkg
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
+  - category: ProcessProduct
+    description: Source data directory used for SuppKG in the SemRep_DS repository.
+    format: http
+    id: suppkg.source-data
+    name: SuppKG Source Data Repository
+    original_source:
+      - source: suppkg
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 synonyms:
-- SuppKG
-- Dietary Supplement Knowledge Graph
+  - SuppKG
+  - Dietary Supplement Knowledge Graph
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # SuppKG
 
 ## Overview

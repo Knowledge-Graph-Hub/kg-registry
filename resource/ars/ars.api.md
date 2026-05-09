@@ -7,7 +7,8 @@ id: ars.api
 is_public: true
 name: ARS API
 original_source:
-- ars
+  - source: ars
+    relation_type: prov:hadPrimarySource
 product_url: https://ars-prod.transltr.io/ars/api/submit
 layout: product_detail
 ---

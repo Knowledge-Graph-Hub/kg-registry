@@ -2,11 +2,11 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://pfocr.wikipathways.org/
-  label: WikiPathways
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://pfocr.wikipathways.org/
+    label: WikiPathways
 creation_date: '2025-11-05T00:00:00Z'
 description: Pathway Figure OCR (PFOCR) is a resource that extracts biological pathway information from figures in scientific publications using optical character recognition (OCR) and machine learning. PFOCR automatically identifies pathway diagrams in published literature, extracts gene and protein names from pathway figures, and creates structured pathway data. The resource enables discovery of pathway knowledge that exists only in figure format and is not captured in article text or structured databases.
 domains:
@@ -21,32 +21,35 @@ last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: PFOCR
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and browsing extracted pathway figures
-  format: http
-  id: pfocr.web
-  name: PFOCR Web Interface
-  original_source:
-  - pfocr
-  product_url: https://pfocr.wikipathways.org/
-- category: Product
-  description: Extracted pathway information from literature figures
-  format: json
-  id: pfocr.data
-  name: PFOCR Pathway Data
-  original_source:
-  - pfocr
-  product_url: https://github.com/wikipathways/pfocr-database
-- category: ProgrammingInterface
-  description: API for accessing PFOCR extracted pathway data
-  format: http
-  id: pfocr.api
-  name: PFOCR API
-  original_source:
-  - pfocr
-  product_url: https://pfocr.wikipathways.org/
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing extracted pathway figures
+    format: http
+    id: pfocr.web
+    name: PFOCR Web Interface
+    original_source:
+      - source: pfocr
+        relation_type: prov:hadPrimarySource
+    product_url: https://pfocr.wikipathways.org/
+  - category: Product
+    description: Extracted pathway information from literature figures
+    format: json
+    id: pfocr.data
+    name: PFOCR Pathway Data
+    original_source:
+      - source: pfocr
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/wikipathways/pfocr-database
+  - category: ProgrammingInterface
+    description: API for accessing PFOCR extracted pathway data
+    format: http
+    id: pfocr.api
+    name: PFOCR API
+    original_source:
+      - source: pfocr
+        relation_type: prov:hadPrimarySource
+    product_url: https://pfocr.wikipathways.org/
 publications:
-- id: https://doi.org/10.1101/379446
+  - id: https://doi.org/10.1101/379446
 repository: https://github.com/wikipathways/pfocr
 synonyms:
   - PFOCR

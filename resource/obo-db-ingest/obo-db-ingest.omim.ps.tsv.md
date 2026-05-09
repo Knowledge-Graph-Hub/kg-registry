@@ -8,10 +8,12 @@ license:
   label: Custom
 name: omim.ps Nodes TSV
 original_source:
-- omim
+  - source: omim
+    relation_type: prov:hadPrimarySource
 product_file_size: 9568
 product_url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

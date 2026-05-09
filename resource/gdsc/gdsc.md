@@ -2,34 +2,29 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.cancerrxgene.org/
-  label: Genomics of Drug Sensitivity in Cancer Project
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.sanger.ac.uk/
-  label: Wellcome Sanger Institute
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: http://www.massgeneral.org/cancer/
-  label: Massachusetts General Hospital Cancer Center
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.cancerrxgene.org/
+    label: Genomics of Drug Sensitivity in Cancer Project
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://www.sanger.ac.uk/
+    label: Wellcome Sanger Institute
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: http://www.massgeneral.org/cancer/
+    label: Massachusetts General Hospital Cancer Center
 creation_date: '2025-05-28T00:00:00Z'
-description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and resource
-  that characterizes cancer cell lines and their responses to anti-cancer drugs. It
-  contains drug screening data for over 1000 cancer cell lines with hundreds of compounds,
-  as well as genomic feature data such as mutations, copy number variations, methylation,
-  and gene expression. The aim is to identify molecular features of cancers that predict
-  response to anti-cancer drugs.
+description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and resource that characterizes cancer cell lines and their responses to anti-cancer drugs. It contains drug screening data for over 1000 cancer cell lines with hundreds of compounds, as well as genomic feature data such as mutations, copy number variations, methylation, and gene expression. The aim is to identify molecular features of cancers that predict response to anti-cancer drugs.
 domains:
-- biomedical
-- health
-- drug discovery
-- genomics
-- pharmacology
+  - biomedical
+  - health
+  - drug discovery
+  - genomics
+  - pharmacology
 homepage_url: https://www.cancerrxgene.org/
 id: gdsc
 infores_id: gdsc
@@ -40,277 +35,348 @@ license:
   label: Custom (non-commercial research use)
 name: Genomics of Drug Sensitivity in Cancer
 products:
-- category: GraphicalInterface
-  description: Web interface for searching and browsing GDSC data including cell lines,
-    compounds, and genomic features
-  format: http
-  id: gdsc.site
-  name: GDSC Web Interface
-  original_source:
-  - gdsc
-  product_url: https://www.cancerrxgene.org/
-- category: Product
-  description: Drug sensitivity data including IC50 values for cancer cell lines
-  format: csv
-  id: gdsc.drug_data
-  name: GDSC Drug Sensitivity Data
-  original_source:
-  - gdsc
-  product_url: https://www.cancerrxgene.org/downloads/drug_data
-- category: Product
-  description: ANOVA analysis results of associations between drug sensitivity and
-    genomic features
-  format: csv
-  id: gdsc.anova
-  name: GDSC ANOVA Results
-  original_source:
-  - gdsc
-  product_url: https://www.cancerrxgene.org/downloads/anova
-- category: Product
-  description: Genetic feature data including mutations, copy number variations, gene
-    expression, and methylation
-  format: csv
-  id: gdsc.genetic_features
-  name: GDSC Genetic Features
-  original_source:
-  - gdsc
-  product_url: https://www.cancerrxgene.org/downloads/genetic_features
-- category: Product
-  description: FTP repository with all GDSC data releases and archives
-  format: csv
-  id: gdsc.ftp
-  name: GDSC FTP Data Repository
-  original_source:
-  - gdsc
-  product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: Product
-  description: Network embeddings of the Bioteque graph that represent biological
-    entities and their associations
-  id: bioteque.embeddings
-  name: Bioteque Embeddings
-  original_source:
-  - chebi
-  - cosmic
-  - achilles
-  - depmap
-  - ccle
-  - gdsc
-  - cellosaurus
-  - clue
-  - ctd
-  - pharmacodb
-  - prism
-  - drugbank
-  - lincs
-  - compartments
-  - offsides
-  - sider
-  - drugcentral
-  - repohub
-  - chemicalchecker
-  - repodb
-  - disgenet
-  - opentargets
-  - creeds
-  - interpro
-  - reactome
-  - tissues
-  - dorothea
-  - progeny
-  - gtex
-  - hpa
-  - go
-  - corum
-  - huri
-  - intact
-  - omnipath
-  - string
-  - bto
-  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-  secondary_source:
-  - bioteque
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing GDSC data including cell lines, compounds, and genomic features
+    format: http
+    id: gdsc.site
+    name: GDSC Web Interface
+    original_source:
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.cancerrxgene.org/
+  - category: Product
+    description: Drug sensitivity data including IC50 values for cancer cell lines
+    format: csv
+    id: gdsc.drug_data
+    name: GDSC Drug Sensitivity Data
+    original_source:
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.cancerrxgene.org/downloads/drug_data
+  - category: Product
+    description: ANOVA analysis results of associations between drug sensitivity and genomic features
+    format: csv
+    id: gdsc.anova
+    name: GDSC ANOVA Results
+    original_source:
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.cancerrxgene.org/downloads/anova
+  - category: Product
+    description: Genetic feature data including mutations, copy number variations, gene expression, and methylation
+    format: csv
+    id: gdsc.genetic_features
+    name: GDSC Genetic Features
+    original_source:
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.cancerrxgene.org/downloads/genetic_features
+  - category: Product
+    description: FTP repository with all GDSC data releases and archives
+    format: csv
+    id: gdsc.ftp
+    name: GDSC FTP Data Repository
+    original_source:
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+    product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
+      - source: pid
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: diseases
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
+      - source: uberon
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: bindingdb
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: bgee
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: chembl
+        relation_type: prov:hadPrimarySource
+      - source: foodb
+        relation_type: prov:hadPrimarySource
+      - source: civic
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: cl
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: metacyc
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+      - source: ncbitaxon
+        relation_type: prov:hadPrimarySource
+      - source: pathophenodb
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: protcid
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: spoke
+        relation_type: prov:wasInfluencedBy
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
+      - source: achilles
+        relation_type: prov:hadPrimarySource
+      - source: depmap
+        relation_type: prov:hadPrimarySource
+      - source: ccle
+        relation_type: prov:hadPrimarySource
+      - source: gdsc
+        relation_type: prov:hadPrimarySource
+      - source: cellosaurus
+        relation_type: prov:hadPrimarySource
+      - source: clue
+        relation_type: prov:hadPrimarySource
+      - source: ctd
+        relation_type: prov:hadPrimarySource
+      - source: pharmacodb
+        relation_type: prov:hadPrimarySource
+      - source: prism
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: compartments
+        relation_type: prov:hadPrimarySource
+      - source: offsides
+        relation_type: prov:hadPrimarySource
+      - source: sider
+        relation_type: prov:hadPrimarySource
+      - source: drugcentral
+        relation_type: prov:hadPrimarySource
+      - source: repohub
+        relation_type: prov:hadPrimarySource
+      - source: chemicalchecker
+        relation_type: prov:hadPrimarySource
+      - source: repodb
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
+      - source: creeds
+        relation_type: prov:hadPrimarySource
+      - source: interpro
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: tissues
+        relation_type: prov:hadPrimarySource
+      - source: dorothea
+        relation_type: prov:hadPrimarySource
+      - source: progeny
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: hpa
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: corum
+        relation_type: prov:hadPrimarySource
+      - source: huri
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: omnipath
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: bto
+        relation_type: prov:hadPrimarySource
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+      - source: bioteque
+        relation_type: prov:wasInfluencedBy
 publications:
-- authors:
-  - Yang W
-  - Soares J
-  - Greninger P
-  - Edelman EJ
-  - Lightfoot H
-  - Forbes S
-  - Bindal N
-  - Beare D
-  - Smith JA
-  - Thompson IR
-  - Ramaswamy S
-  - Futreal PA
-  - Haber DA
-  - Stratton MR
-  - Benes C
-  - McDermott U
-  - Garnett MJ
-  doi: doi:10.1093/nar/gks1111
-  id: http://doi.org/10.1093/nar/gks1111
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic
-    biomarker discovery in cancer cells'
-  year: '2013'
-- authors:
-  - Iorio F
-  - Knijnenburg TA
-  - Vis DJ
-  - Bignell GR
-  - Menden MP
-  - Schubert M
-  - Aben N
-  - "Gon\xE7alves E"
-  - Barthorpe S
-  - Lightfoot H
-  - Cokelaer T
-  - Greninger P
-  - van Dyk E
-  - Chang H
-  - de Silva H
-  - Heyn H
-  - Deng X
-  - Egan RK
-  - Liu Q
-  - Mironenko T
-  - Mitropoulos X
-  - Richardson L
-  - Wang J
-  - Zhang T
-  - Moran S
-  - Sayols S
-  - Soleimani M
-  - Tamborero D
-  - Lopez-Bigas N
-  - Ross-Macdonald P
-  - Esteller M
-  - Gray NS
-  - Haber DA
-  - Stratton MR
-  - Benes CH
-  - Wessels LFA
-  - Saez-Rodriguez J
-  - McDermott U
-  - Garnett MJ
-  id: https://doi.org/10.1016/j.cell.2016.06.017
-  journal: Cell
-  title: A landscape of pharmacogenomic interactions in cancer
-  year: '2016'
-- authors:
-  - Garnett MJ
-  - Edelman EJ
-  - Heidorn SJ
-  - Greenman CD
-  - Dastur A
-  - Lau KW
-  - Greninger P
-  - Thompson IR
-  - Luo X
-  - Soares J
-  - Liu Q
-  - Iorio F
-  - Surdez D
-  - Chen L
-  - Milano RJ
-  - Bignell GR
-  - Tam AT
-  - Davies H
-  - Stevenson JA
-  - Barthorpe S
-  - Lutz SR
-  - Kogera F
-  - Lawrence K
-  - McLaren-Douglas A
-  - Mitropoulos X
-  - Mironenko T
-  - Thi H
-  - Richardson L
-  - Zhou W
-  - Jewitt F
-  - Zhang T
-  - O'Brien P
-  - Boisvert JL
-  - Price S
-  - Hur W
-  - Yang W
-  - Deng X
-  - Butler A
-  - Choi HG
-  - Chang JW
-  - Baselga J
-  - Stamenkovic I
-  - Engelman JA
-  - Sharma SV
-  - Delattre O
-  - Saez-Rodriguez J
-  - Gray NS
-  - Settleman J
-  - Futreal PA
-  - Haber DA
-  - Stratton MR
-  - Ramaswamy S
-  - McDermott U
-  - Benes CH
-  id: https://doi.org/10.1038/nature11005
-  journal: Nature
-  title: Systematic identification of genomic markers of drug sensitivity in cancer
-    cells
-  year: '2012'
+  - authors:
+      - Yang W
+      - Soares J
+      - Greninger P
+      - Edelman EJ
+      - Lightfoot H
+      - Forbes S
+      - Bindal N
+      - Beare D
+      - Smith JA
+      - Thompson IR
+      - Ramaswamy S
+      - Futreal PA
+      - Haber DA
+      - Stratton MR
+      - Benes C
+      - McDermott U
+      - Garnett MJ
+    doi: doi:10.1093/nar/gks1111
+    id: http://doi.org/10.1093/nar/gks1111
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic biomarker discovery in cancer cells'
+    year: '2013'
+  - authors:
+      - Iorio F
+      - Knijnenburg TA
+      - Vis DJ
+      - Bignell GR
+      - Menden MP
+      - Schubert M
+      - Aben N
+      - "Gonçalves E"
+      - Barthorpe S
+      - Lightfoot H
+      - Cokelaer T
+      - Greninger P
+      - van Dyk E
+      - Chang H
+      - de Silva H
+      - Heyn H
+      - Deng X
+      - Egan RK
+      - Liu Q
+      - Mironenko T
+      - Mitropoulos X
+      - Richardson L
+      - Wang J
+      - Zhang T
+      - Moran S
+      - Sayols S
+      - Soleimani M
+      - Tamborero D
+      - Lopez-Bigas N
+      - Ross-Macdonald P
+      - Esteller M
+      - Gray NS
+      - Haber DA
+      - Stratton MR
+      - Benes CH
+      - Wessels LFA
+      - Saez-Rodriguez J
+      - McDermott U
+      - Garnett MJ
+    id: https://doi.org/10.1016/j.cell.2016.06.017
+    journal: Cell
+    title: A landscape of pharmacogenomic interactions in cancer
+    year: '2016'
+  - authors:
+      - Garnett MJ
+      - Edelman EJ
+      - Heidorn SJ
+      - Greenman CD
+      - Dastur A
+      - Lau KW
+      - Greninger P
+      - Thompson IR
+      - Luo X
+      - Soares J
+      - Liu Q
+      - Iorio F
+      - Surdez D
+      - Chen L
+      - Milano RJ
+      - Bignell GR
+      - Tam AT
+      - Davies H
+      - Stevenson JA
+      - Barthorpe S
+      - Lutz SR
+      - Kogera F
+      - Lawrence K
+      - McLaren-Douglas A
+      - Mitropoulos X
+      - Mironenko T
+      - Thi H
+      - Richardson L
+      - Zhou W
+      - Jewitt F
+      - Zhang T
+      - O'Brien P
+      - Boisvert JL
+      - Price S
+      - Hur W
+      - Yang W
+      - Deng X
+      - Butler A
+      - Choi HG
+      - Chang JW
+      - Baselga J
+      - Stamenkovic I
+      - Engelman JA
+      - Sharma SV
+      - Delattre O
+      - Saez-Rodriguez J
+      - Gray NS
+      - Settleman J
+      - Futreal PA
+      - Haber DA
+      - Stratton MR
+      - Ramaswamy S
+      - McDermott U
+      - Benes CH
+    id: https://doi.org/10.1038/nature11005
+    journal: Nature
+    title: Systematic identification of genomic markers of drug sensitivity in cancer cells
+    year: '2012'
 repository: https://github.com/CancerRxGene
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 ## Overview
 
 The Genomics of Drug Sensitivity in Cancer (GDSC) is a major collaboration between the Cancer Genome Project at the Wellcome Sanger Institute (UK) and the Center for Molecular Therapeutics at Massachusetts General Hospital Cancer Center (USA). The project aims to discover therapeutic biomarkers that can help identify patients most likely to respond to different anti-cancer drugs.

@@ -8,14 +8,20 @@ license:
   label: Custom
 name: bigg.metabolite SSSOM
 original_source:
-- chebi
-- bigg
-- biocyc
-- kegg
-- reactome
+  - source: chebi
+    relation_type: prov:hadPrimarySource
+  - source: bigg
+    relation_type: prov:hadPrimarySource
+  - source: biocyc
+    relation_type: prov:hadPrimarySource
+  - source: kegg
+    relation_type: prov:hadPrimarySource
+  - source: reactome
+    relation_type: prov:hadPrimarySource
 product_file_size: 400516
 product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 secondary_source:
-- obo-db-ingest
+  - source: obo-db-ingest
+    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

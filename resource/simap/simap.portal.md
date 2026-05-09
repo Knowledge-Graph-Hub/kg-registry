@@ -5,12 +5,11 @@ format: http
 id: simap.portal
 name: SIMAP Portal
 original_source:
-- simap
+  - source: simap
+    relation_type: prov:hadPrimarySource
 product_url: http://mips.helmholtz-muenchen.de/simap/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-  to URL
+  - File was not able to be retrieved when checked on 2026-05-04_ Timeout connecting to URL
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting to URL
 layout: product_detail
 ---
