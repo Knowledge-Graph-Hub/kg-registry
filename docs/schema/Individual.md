@@ -20,25 +20,31 @@ URI: [kgr:Individual](https://w3id.org/bridge2ai/data-sheets-schema/Individual)
 
 
 
-
 ```mermaid
  classDiagram
     class Individual
-    click Individual href "Individual.html"
+    click Individual href "Individual/.html"
       Contact <|-- Individual
-        click Contact href "Contact.html"
-      
+        click Contact href "Contact/.html"
+
       Individual : category
-        
-      Individual : email
-        
-      Individual : github
-        
+
+      Individual : contact_details
+
+
+
+
+
+        Individual --> "*" ContactDetails : contact_details
+        click ContactDetails href "ContactDetails/.html"
+
+
+
       Individual : label
-        
+
       Individual : orcid
-        
-      
+
+
 ```
 
 
@@ -56,10 +62,10 @@ URI: [kgr:Individual](https://w3id.org/bridge2ai/data-sheets-schema/Individual)
 | Name | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- |
 | [label](label.html) | 0..1 <br/> [String](String.html) | The name of the individual | direct |
-| [email](email.html) | 0..1 <br/> [String](String.html) | The email address of the individual | direct |
-| [github](github.html) | 0..1 <br/> [String](String.html) | The GitHub username of the individual | direct |
 | [orcid](orcid.html) | 0..1 <br/> [String](String.html) | The ORCID of the individual | direct |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [Contact](Contact.html) |
+| [contact_details](contact_details.html) | * <br/> [ContactDetails](ContactDetails.html) | A field for contact details, including email, GitHub, and contact-specific UR... | [Contact](Contact.html) |
+
 
 
 
@@ -70,7 +76,6 @@ URI: [kgr:Individual](https://w3id.org/bridge2ai/data-sheets-schema/Individual)
 
 
 ## Identifier and Mapping Information
-
 
 
 
@@ -91,7 +96,6 @@ URI: [kgr:Individual](https://w3id.org/bridge2ai/data-sheets-schema/Individual)
 | ---  | ---  |
 | self | kgr:Individual |
 | native | kgr:Individual |
-
 
 
 
@@ -122,24 +126,6 @@ attributes:
     - FundingSource
     - License
     - Usage
-    range: string
-  email:
-    name: email
-    description: The email address of the individual.
-    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
-    rank: 1000
-    domain_of:
-    - Individual
-    - Organization
-    range: string
-  github:
-    name: github
-    description: The GitHub username of the individual. Do not include a prefix.
-    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
-    rank: 1000
-    domain_of:
-    - Individual
-    - Organization
     range: string
   orcid:
     name: orcid
@@ -178,28 +164,6 @@ attributes:
     - License
     - Usage
     range: string
-  email:
-    name: email
-    description: The email address of the individual.
-    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
-    rank: 1000
-    alias: email
-    owner: Individual
-    domain_of:
-    - Individual
-    - Organization
-    range: string
-  github:
-    name: github
-    description: The GitHub username of the individual. Do not include a prefix.
-    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
-    rank: 1000
-    alias: github
-    owner: Individual
-    domain_of:
-    - Individual
-    - Organization
-    range: string
   orcid:
     name: orcid
     description: The ORCID of the individual. Do not include the "https://orcid.org/"
@@ -226,6 +190,20 @@ attributes:
     - NamedThing
     - Contact
     range: category_type
+  contact_details:
+    name: contact_details
+    description: A field for contact details, including email, GitHub, and contact-specific
+      URLs.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: contact_details
+    owner: Individual
+    domain_of:
+    - Contact
+    range: ContactDetails
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
 
 ```
 </details>

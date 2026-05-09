@@ -12,7 +12,7 @@ _The standard or standards that a product conforms to. These are not serializati
 
 
 
-URI: [StandardEnum](StandardEnum.html)
+URI: [kgr:StandardEnum](https://w3id.org/bridge2ai/data-sheets-schema/StandardEnum)
 
 ## Permissible Values
 
@@ -34,9 +34,7 @@ URI: [StandardEnum](StandardEnum.html)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

@@ -15,8 +15,7 @@ _The number of nodes in the graph._
 
 
 URI: [kgr:node_count](https://w3id.org/bridge2ai/data-sheets-schema/node_count)
-
-
+Alias: node_count
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:node_count](https://w3id.org/bridge2ai/data-sheets-schema/node_count)
 
 
 
-
 ## Properties
 
 * Range: [Integer](Integer.html)
@@ -43,9 +41,7 @@ URI: [kgr:node_count](https://w3id.org/bridge2ai/data-sheets-schema/node_count)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

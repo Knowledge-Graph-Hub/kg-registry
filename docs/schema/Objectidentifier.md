@@ -26,13 +26,11 @@ URI: [shex:iri](http://www.w3.org/ns/shex#iri)
 
 
 
-
 ## Comments
 
 * Used for inheritance and type checking
 
 ## Identifier and Mapping Information
-
 
 
 

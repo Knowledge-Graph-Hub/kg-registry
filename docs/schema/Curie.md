@@ -26,14 +26,12 @@ URI: [xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 
 
-
 ## Comments
 
 * in RDF serializations this MUST be expanded to a URI
 * in non-RDF serializations MAY be serialized as the compact representation
 
 ## Identifier and Mapping Information
-
 
 
 

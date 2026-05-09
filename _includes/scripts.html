@@ -911,6 +911,16 @@
         });
     }
 
+    function sourceAssociationId(sourceAssociation) {
+        if (typeof sourceAssociation === 'string') {
+            return sourceAssociation.trim();
+        }
+        if (sourceAssociation && typeof sourceAssociation === 'object' && typeof sourceAssociation.source === 'string') {
+            return sourceAssociation.source.trim();
+        }
+        return '';
+    }
+
     // Function to validate PROV export data
     function validateProvData(data) {
         // Create a validated copy of the data
@@ -922,16 +932,16 @@
         
         // Validate original sources (ensure it's an array of strings)
         if (data.originalSources && Array.isArray(data.originalSources)) {
-            validated.originalSources = data.originalSources.filter(source => 
-                typeof source === 'string' && source.trim() !== ''
-            );
+            validated.originalSources = data.originalSources
+                .map(sourceAssociationId)
+                .filter(source => source !== '');
         }
         
         // Validate secondary sources (ensure it's an array of strings)
         if (data.secondarySources && Array.isArray(data.secondarySources)) {
-            validated.secondarySources = data.secondarySources.filter(source => 
-                typeof source === 'string' && source.trim() !== ''
-            );
+            validated.secondarySources = data.secondarySources
+                .map(sourceAssociationId)
+                .filter(source => source !== '');
         }
         
         return validated;

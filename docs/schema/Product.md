@@ -20,138 +20,193 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
 
 
 
-
 ```mermaid
  classDiagram
     class Product
-    click Product href "Product.html"
+    click Product href "Product/.html"
       NamedThing <|-- Product
-        click NamedThing href "NamedThing.html"
-      
+        click NamedThing href "NamedThing/.html"
+
 
       Product <|-- GraphProduct
-        click GraphProduct href "GraphProduct.html"
+        click GraphProduct href "GraphProduct/.html"
       Product <|-- DataModelProduct
-        click DataModelProduct href "DataModelProduct.html"
+        click DataModelProduct href "DataModelProduct/.html"
+      Product <|-- OntologyProduct
+        click OntologyProduct href "OntologyProduct/.html"
       Product <|-- MappingProduct
-        click MappingProduct href "MappingProduct.html"
+        click MappingProduct href "MappingProduct/.html"
       Product <|-- ProcessProduct
-        click ProcessProduct href "ProcessProduct.html"
+        click ProcessProduct href "ProcessProduct/.html"
       Product <|-- GraphicalInterface
-        click GraphicalInterface href "GraphicalInterface.html"
+        click GraphicalInterface href "GraphicalInterface/.html"
       Product <|-- ProgrammingInterface
-        click ProgrammingInterface href "ProgrammingInterface.html"
-      
-      
+        click ProgrammingInterface href "ProgrammingInterface/.html"
+      Product <|-- DocumentationProduct
+        click DocumentationProduct href "DocumentationProduct/.html"
+
+
       Product : category
-        
+
+      Product : collection
+
+
+
+
+
+        Product --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
       Product : compatibility
-        
-          
-    
-    
-    Product --> "*" StandardCompatibility : compatibility
-    click StandardCompatibility href "StandardCompatibility.html"
 
-        
+
+
+
+
+        Product --> "*" StandardCompatibility : compatibility
+        click StandardCompatibility href "StandardCompatibility/.html"
+
+
+
       Product : compression
-        
-          
-    
-    
-    Product --> "0..1" CompressionEnum : compression
-    click CompressionEnum href "CompressionEnum.html"
 
-        
+
+
+
+
+        Product --> "0..1" CompressionEnum : compression
+        click CompressionEnum href "CompressionEnum/.html"
+
+
+
       Product : contacts
-        
-          
-    
-    
-    Product --> "*" Contact : contacts
-    click Contact href "Contact.html"
 
-        
+
+
+
+
+        Product --> "*" Contact : contacts
+        click Contact href "Contact/.html"
+
+
+
+      Product : creation_date
+
+      Product : curators
+
+
+
+
+
+        Product --> "*" Contact : curators
+        click Contact href "Contact/.html"
+
+
+
       Product : description
-        
+
       Product : dump_format
-        
-          
-    
-    
-    Product --> "0..1" DumpFormatEnum : dump_format
-    click DumpFormatEnum href "DumpFormatEnum.html"
 
-        
+
+
+
+
+        Product --> "0..1" DumpFormatEnum : dump_format
+        click DumpFormatEnum href "DumpFormatEnum/.html"
+
+
+
       Product : format
-        
-          
-    
-    
-    Product --> "0..1" FormatEnum : format
-    click FormatEnum href "FormatEnum.html"
 
-        
+
+
+
+
+        Product --> "0..1" FormatEnum : format
+        click FormatEnum href "FormatEnum/.html"
+
+
+
       Product : id
-        
+
       Product : infores_id
-        
+
+      Product : last_modified_date
+
+      Product : latest_version
+
       Product : layout
-        
+
       Product : license
-        
-          
-    
-    
-    Product --> "0..1" License : license
-    click License href "License.html"
 
-        
+
+
+
+
+        Product --> "0..1" License : license
+        click License href "License/.html"
+
+
+
       Product : name
-        
+
       Product : original_source
-        
-          
-    
-    
-    Product --> "*" Resource : original_source
-    click Resource href "Resource.html"
 
-        
+
+
+
+
+        Product --> "*" SourceAssociation : original_source
+        click SourceAssociation href "SourceAssociation/.html"
+
+
+
       Product : produced_by
-        
-          
-    
-    
-    Product --> "*" ProcessProduct : produced_by
-    click ProcessProduct href "ProcessProduct.html"
 
-        
+
+
+
+
+        Product --> "*" ProcessProduct : produced_by
+        click ProcessProduct href "ProcessProduct/.html"
+
+
+
+      Product : product_file_size
+
       Product : product_url
-        
+
       Product : repository
-        
+
       Product : secondary_source
-        
-          
-    
-    
-    Product --> "*" Resource : secondary_source
-    click Resource href "Resource.html"
 
-        
+
+
+
+
+        Product --> "*" SourceAssociation : secondary_source
+        click SourceAssociation href "SourceAssociation/.html"
+
+
+
       Product : tags
-        
-          
-    
-    
-    Product --> "*" TagEnum : tags
-    click TagEnum href "TagEnum.html"
 
-        
+
+
+
+
+        Product --> "*" TagEnum : tags
+        click TagEnum href "TagEnum/.html"
+
+
+
+      Product : versions
+
       Product : warnings
-        
-      
+
+
 ```
 
 
@@ -163,10 +218,12 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
     * **Product**
         * [GraphProduct](GraphProduct.html)
         * [DataModelProduct](DataModelProduct.html)
+        * [OntologyProduct](OntologyProduct.html)
         * [MappingProduct](MappingProduct.html)
         * [ProcessProduct](ProcessProduct.html)
         * [GraphicalInterface](GraphicalInterface.html)
         * [ProgrammingInterface](ProgrammingInterface.html)
+        * [DocumentationProduct](DocumentationProduct.html)
 
 
 
@@ -176,23 +233,30 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
 | ---  | --- | --- | --- |
 | [name](name.html) | 1 <br/> [String](String.html) | The human-readable name of the product | direct |
 | [description](description.html) | 0..1 <br/> [String](String.html) | A description of the product | direct |
-| [original_source](original_source.html) | * <br/> [Resource](Resource.html) | The original source(s) of the product, referred to  by the identifier of each... | direct |
-| [secondary_source](secondary_source.html) | * <br/> [Resource](Resource.html) | The source(s) of the product, other than its original source, referred to by ... | direct |
+| [original_source](original_source.html) | * <br/> [SourceAssociation](SourceAssociation.html) | The original source(s) of the product, with the provenance relation describin... | direct |
+| [secondary_source](secondary_source.html) | * <br/> [SourceAssociation](SourceAssociation.html) | The source(s) of the product, other than its original source, with the proven... | direct |
 | [product_url](product_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | direct |
+| [product_file_size](product_file_size.html) | 0..1 <br/> [Integer](Integer.html) | The size of the product file, in bytes | direct |
 | [produced_by](produced_by.html) | * <br/> [ProcessProduct](ProcessProduct.html) | The process(es) that produced the product, referred to by the identifier of e... | direct |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the product | direct |
 | [license](license_slot.html) | 0..1 <br/> [License](License.html) | The license of the product | direct |
 | [compression](compression.html) | 0..1 <br/> [CompressionEnum](CompressionEnum.html) | The type of compression used with the product | direct |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact points for the product | direct |
+| [curators](curators.html) | * <br/> [Contact](Contact.html) | The curator(s) of the product | direct |
 | [tags](tags.html) | * <br/> [TagEnum](TagEnum.html) | Tags associated with the product | direct |
 | [infores_id](infores_id.html) | 0..1 <br/> [String](String.html) | The Infores ID of the product | direct |
 | [compatibility](compatibility.html) | * <br/> [StandardCompatibility](StandardCompatibility.html) | A list of standards that the product conforms to | direct |
 | [format](format.html) | 0..1 <br/> [FormatEnum](FormatEnum.html) | The format or serialization of the product | direct |
 | [dump_format](dump_format.html) | 0..1 <br/> [DumpFormatEnum](DumpFormatEnum.html) | The format of a dump of the product as a file | direct |
+| [versions](versions.html) | * <br/> [String](String.html) | A list of names of versions of the product | direct |
+| [latest_version](latest_version.html) | 0..1 <br/> [String](String.html) | The latest version of the product, or the most recent version curated in the ... | direct |
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | [NamedThing](NamedThing.html) |
 | [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | [NamedThing](NamedThing.html) |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | [NamedThing](NamedThing.html) |
 
 
 
@@ -206,7 +270,10 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
 | [KnowledgeGraph](KnowledgeGraph.html) | [products](products.html) | range | [Product](Product.html) |
 | [DataSource](DataSource.html) | [products](products.html) | range | [Product](Product.html) |
 | [DataModel](DataModel.html) | [products](products.html) | range | [Product](Product.html) |
+| [Ontology](Ontology.html) | [products](products.html) | range | [Product](Product.html) |
 | [Aggregator](Aggregator.html) | [products](products.html) | range | [Product](Product.html) |
+| [SourceAssociation](SourceAssociation.html) | [source](source.html) | any_of[range] | [Product](Product.html) |
+
 
 
 
@@ -214,7 +281,6 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
 
 
 ## Identifier and Mapping Information
-
 
 
 
@@ -235,7 +301,6 @@ URI: [kgr:Product](https://w3id.org/bridge2ai/data-sheets-schema/Product)
 | ---  | ---  |
 | self | kgr:Product |
 | native | kgr:Product |
-
 
 
 
@@ -273,29 +338,35 @@ attributes:
     domain_of:
     - Resource
     - Product
+    - Organization
     - Usage
     range: string
   original_source:
     name: original_source
-    description: The original source(s) of the product, referred to  by the identifier
-      of each resource. This may be the parent resource or another resource.
+    description: The original source(s) of the product, with the provenance relation
+      describing how the product relates to each source. This may be the parent resource
+      or another resource. This may also be a specific product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     domain_of:
     - Product
-    range: Resource
+    range: SourceAssociation
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   secondary_source:
     name: secondary_source
-    description: The source(s) of the product, other than its original source, referred
-      to by the identifier of each resource. This may be an Aggregator or another
-      resource.
+    description: The source(s) of the product, other than its original source, with
+      the provenance relation describing how the product relates to each source. This
+      may be an Aggregator or another resource. This may also be a specific product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     domain_of:
     - Product
-    range: Resource
+    range: SourceAssociation
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   product_url:
     name: product_url
     description: The URL of the product. This may be a link to download a specific
@@ -305,6 +376,15 @@ attributes:
     domain_of:
     - Product
     range: uriorcurie
+  product_file_size:
+    name: product_file_size
+    description: The size of the product file, in bytes. The build process will attempt
+      to determine this based on the file header and populate the metadata where possible.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    domain_of:
+    - Product
+    range: integer
   produced_by:
     name: produced_by
     description: The process(es) that produced the product, referred to by the identifier
@@ -345,6 +425,15 @@ attributes:
   contacts:
     name: contacts
     description: The contact points for the product. May be an individual or organization.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    domain_of:
+    - Resource
+    - Product
+    range: Contact
+    multivalued: true
+  curators:
+    name: curators
+    description: The curator(s) of the product. May be an individual or organization.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     domain_of:
     - Resource
@@ -397,6 +486,28 @@ attributes:
     domain_of:
     - Product
     range: DumpFormatEnum
+  versions:
+    name: versions
+    description: A list of names of versions of the product.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    exact_mappings:
+    - schema:version
+    - dcterms:hasVersion
+    rank: 1000
+    domain_of:
+    - Product
+    range: string
+    multivalued: true
+  latest_version:
+    name: latest_version
+    description: The latest version of the product, or the most recent version curated
+      in the registry. If the product is available at a permanent link, this may be
+      something like "latest".
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    domain_of:
+    - Product
+    range: string
 
 ```
 </details>
@@ -432,33 +543,39 @@ attributes:
     domain_of:
     - Resource
     - Product
+    - Organization
     - Usage
     range: string
   original_source:
     name: original_source
-    description: The original source(s) of the product, referred to  by the identifier
-      of each resource. This may be the parent resource or another resource.
+    description: The original source(s) of the product, with the provenance relation
+      describing how the product relates to each source. This may be the parent resource
+      or another resource. This may also be a specific product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: original_source
     owner: Product
     domain_of:
     - Product
-    range: Resource
+    range: SourceAssociation
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   secondary_source:
     name: secondary_source
-    description: The source(s) of the product, other than its original source, referred
-      to by the identifier of each resource. This may be an Aggregator or another
-      resource.
+    description: The source(s) of the product, other than its original source, with
+      the provenance relation describing how the product relates to each source. This
+      may be an Aggregator or another resource. This may also be a specific product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: secondary_source
     owner: Product
     domain_of:
     - Product
-    range: Resource
+    range: SourceAssociation
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   product_url:
     name: product_url
     description: The URL of the product. This may be a link to download a specific
@@ -470,6 +587,17 @@ attributes:
     domain_of:
     - Product
     range: uriorcurie
+  product_file_size:
+    name: product_file_size
+    description: The size of the product file, in bytes. The build process will attempt
+      to determine this based on the file header and populate the metadata where possible.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: product_file_size
+    owner: Product
+    domain_of:
+    - Product
+    range: integer
   produced_by:
     name: produced_by
     description: The process(es) that produced the product, referred to by the identifier
@@ -520,6 +648,17 @@ attributes:
     description: The contact points for the product. May be an individual or organization.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     alias: contacts
+    owner: Product
+    domain_of:
+    - Resource
+    - Product
+    range: Contact
+    multivalued: true
+  curators:
+    name: curators
+    description: The curator(s) of the product. May be an individual or organization.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    alias: curators
     owner: Product
     domain_of:
     - Resource
@@ -582,6 +721,32 @@ attributes:
     domain_of:
     - Product
     range: DumpFormatEnum
+  versions:
+    name: versions
+    description: A list of names of versions of the product.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    exact_mappings:
+    - schema:version
+    - dcterms:hasVersion
+    rank: 1000
+    alias: versions
+    owner: Product
+    domain_of:
+    - Product
+    range: string
+    multivalued: true
+  latest_version:
+    name: latest_version
+    description: The latest version of the product, or the most recent version curated
+      in the registry. If the product is available at a permanent link, this may be
+      something like "latest".
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: latest_version
+    owner: Product
+    domain_of:
+    - Product
+    range: string
   id:
     name: id
     description: The identifier of an entity. This is used to identify it within the
@@ -594,6 +759,7 @@ attributes:
     owner: Product
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -625,18 +791,56 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: Product
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: Product
     domain_of:
     - NamedThing
+    - Organization
     range: string
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: Product
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: Product
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 
 ```
 </details>

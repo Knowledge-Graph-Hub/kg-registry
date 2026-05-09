@@ -15,8 +15,7 @@ _The products or representations of the resource._
 
 
 URI: [kgr:products](https://w3id.org/bridge2ai/data-sheets-schema/products)
-
-
+Alias: products
 
 <!-- no inheritance hierarchy -->
 
@@ -28,12 +27,12 @@ URI: [kgr:products](https://w3id.org/bridge2ai/data-sheets-schema/products)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [DataModel](DataModel.html) | A data model is a formal representation of concepts and relationships within ... |  no  |
 | [DataSource](DataSource.html) | A data source |  no  |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 | [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [Ontology](Ontology.html) | An ontology is a formal representation of a set of concepts within a domain a... |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 
 
 
@@ -49,9 +48,7 @@ URI: [kgr:products](https://w3id.org/bridge2ai/data-sheets-schema/products)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

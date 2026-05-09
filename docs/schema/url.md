@@ -8,10 +8,14 @@ mermaid: true
 # Slot: url
 
 
+_A URL for a description or example of the usage._
+
+
+
+
 
 URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
-
-
+Alias: url
 
 <!-- no inheritance hierarchy -->
 
@@ -24,8 +28,6 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [Usage](Usage.html) | The usage of a resource |  no  |
-| [Organization](Organization.html) | An organization |  no  |
-
 
 
 
@@ -34,8 +36,7 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 
 ## Properties
 
-* Range: [String](String.html)
-
+* Range: [Uriorcurie](Uriorcurie.html)
 
 
 
@@ -45,6 +46,12 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 
 
 
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 
 
 
@@ -64,11 +71,14 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 <details>
 ```yaml
 name: url
+description: A URL for a description or example of the usage.
+from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+rank: 1000
 alias: url
+owner: Usage
 domain_of:
-- Organization
 - Usage
-range: string
+range: uriorcurie
 
 ```
 </details>

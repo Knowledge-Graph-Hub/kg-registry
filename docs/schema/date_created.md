@@ -15,8 +15,7 @@ _The date the knowledge graph was created._
 
 
 URI: [kgr:date_created](https://w3id.org/bridge2ai/data-sheets-schema/date_created)
-
-
+Alias: date_created
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:date_created](https://w3id.org/bridge2ai/data-sheets-schema/date_creat
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:date_created](https://w3id.org/bridge2ai/data-sheets-schema/date_creat
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

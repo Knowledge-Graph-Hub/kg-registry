@@ -15,8 +15,7 @@ _A URL specific to the product. For example, a URL to a specific Neo4j database.
 
 
 URI: [kgr:connection_url](https://w3id.org/bridge2ai/data-sheets-schema/connection_url)
-
-
+Alias: connection_url
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:connection_url](https://w3id.org/bridge2ai/data-sheets-schema/connecti
 
 
 
-
 ## Properties
 
 * Range: [Uriorcurie](Uriorcurie.html)
@@ -43,9 +41,7 @@ URI: [kgr:connection_url](https://w3id.org/bridge2ai/data-sheets-schema/connecti
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

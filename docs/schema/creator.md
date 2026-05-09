@@ -15,8 +15,7 @@ _The person or organization responsible for creating the knowledge graph._
 
 
 URI: [kgr:creator](https://w3id.org/bridge2ai/data-sheets-schema/creator)
-
-
+Alias: creator
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:creator](https://w3id.org/bridge2ai/data-sheets-schema/creator)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:creator](https://w3id.org/bridge2ai/data-sheets-schema/creator)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

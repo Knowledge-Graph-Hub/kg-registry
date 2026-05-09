@@ -15,8 +15,7 @@ _The FAIRsharing ID of the resource._
 
 
 URI: [kgr:fairsharing_id](https://w3id.org/bridge2ai/data-sheets-schema/fairsharing_id)
-
-
+Alias: fairsharing_id
 
 <!-- no inheritance hierarchy -->
 
@@ -28,12 +27,12 @@ URI: [kgr:fairsharing_id](https://w3id.org/bridge2ai/data-sheets-schema/fairshar
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [DataModel](DataModel.html) | A data model is a formal representation of concepts and relationships within ... |  no  |
 | [DataSource](DataSource.html) | A data source |  no  |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 | [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [Ontology](Ontology.html) | An ontology is a formal representation of a set of concepts within a domain a... |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 
 
 
@@ -47,9 +46,7 @@ URI: [kgr:fairsharing_id](https://w3id.org/bridge2ai/data-sheets-schema/fairshar
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

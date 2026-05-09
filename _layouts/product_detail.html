@@ -171,8 +171,8 @@ layout: default
         <div class="provenance-diagram" style="width: 100%;" 
           data-provenance='{
             "product": "{{page.id}}",
-            "originalSources": [{% for source in page.original_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}],
-            "secondarySources": [{% if page.secondary_source.first != nil %}{% for source in page.secondary_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}"{{page.secondary_source}}"{% endif %}]
+            "originalSources": {{ page.original_source | jsonify }},
+            "secondarySources": {{ page.secondary_source | jsonify }}
           }'
           data-product-category="{{category}}"
           data-product-icon="{{icon_name}}">
@@ -181,7 +181,7 @@ layout: default
         <div class="provenance-diagram" style="width: 100%;" 
           data-provenance='{
             "product": "{{page.id}}",
-            "originalSources": [{% for source in page.original_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "originalSources": {{ page.original_source | jsonify }},
             "secondarySources": []
           }'
           data-product-category="{{category}}"
@@ -192,7 +192,7 @@ layout: default
           data-provenance='{
             "product": "{{page.id}}",
             "originalSources": [],
-            "secondarySources": [{% if page.secondary_source.first != nil %}{% for source in page.secondary_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}"{{page.secondary_source}}"{% endif %}]
+            "secondarySources": {{ page.secondary_source | jsonify }}
           }'
           data-product-category="{{category}}"
           data-product-icon="{{icon_name}}">
@@ -215,7 +215,8 @@ layout: default
             </tr>
           </thead>
           <tbody>
-            {% for source in page.original_source %}
+            {% for source_association in page.original_source %}
+            {% assign source = source_association.source | default: source_association %}
             <tr>
               <td>
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
@@ -232,14 +233,18 @@ layout: default
           <thead>
             <tr>
               <th>ID</th>
+              <th>Relation</th>
             </tr>
           </thead>
           <tbody>
-            {% for source in page.secondary_source %}
+            {% for source_association in page.secondary_source %}
+            {% assign source = source_association.source | default: source_association %}
+            {% assign relation_type = source_association.relation_type | default: "prov:wasInfluencedBy" %}
             <tr>
               <td>
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
               </td>
+              <td>{{relation_type}}</td>
               {% endfor %}
           </tbody>
         </table>

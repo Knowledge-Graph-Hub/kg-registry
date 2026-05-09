@@ -14,6 +14,16 @@ function truncateText(text, maxLength = 20) {
   return text;
 }
 
+function sourceAssociationId(sourceAssociation) {
+  if (typeof sourceAssociation === 'string') {
+    return sourceAssociation.trim();
+  }
+  if (sourceAssociation && typeof sourceAssociation === 'object' && typeof sourceAssociation.source === 'string') {
+    return sourceAssociation.source.trim();
+  }
+  return '';
+}
+
 /**
  * Generate a link to the registry page for a node
  */
@@ -269,7 +279,9 @@ function addResourcesToGraph(resourceIds) {
 
         // Create links to all source resources (whether in graph or not)
         if (product.original_source && Array.isArray(product.original_source)) {
-          product.original_source.forEach(sourceId => {
+          product.original_source.forEach(sourceAssociation => {
+            const sourceId = sourceAssociationId(sourceAssociation);
+            if (!sourceId) return;
             // Create link to source resource regardless of whether it's displayed
             displayedGraph.links.push({
               source: productId,
@@ -795,7 +807,9 @@ function expandNode(node) {
       parentResource.products.forEach(product => {
         if (product.id === node.id || product.product_url === node.url) {
           if (product.original_source && Array.isArray(product.original_source)) {
-            product.original_source.forEach(sourceId => {
+            product.original_source.forEach(sourceAssociation => {
+              const sourceId = sourceAssociationId(sourceAssociation);
+              if (!sourceId) return;
               if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
                 resourcesToAdd.add(sourceId);
               }
@@ -820,7 +834,9 @@ function expandNode(node) {
     if (showProducts && resource.products && Array.isArray(resource.products)) {
       resource.products.forEach((product) => {
         if (product.original_source && Array.isArray(product.original_source)) {
-          product.original_source.forEach(sourceId => {
+          product.original_source.forEach(sourceAssociation => {
+            const sourceId = sourceAssociationId(sourceAssociation);
+            if (!sourceId) return;
             if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
               resourcesToAdd.add(sourceId);
             }

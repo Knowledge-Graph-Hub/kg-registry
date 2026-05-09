@@ -12,7 +12,7 @@ _The type of usage of a resource._
 
 
 
-URI: [UsageEnum](UsageEnum.html)
+URI: [kgr:UsageEnum](https://w3id.org/bridge2ai/data-sheets-schema/UsageEnum)
 
 ## Permissible Values
 
@@ -36,9 +36,7 @@ URI: [UsageEnum](UsageEnum.html)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

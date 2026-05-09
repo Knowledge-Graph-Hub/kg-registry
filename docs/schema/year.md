@@ -15,8 +15,7 @@ _The year the publication was published._
 
 
 URI: [kgr:year](https://w3id.org/bridge2ai/data-sheets-schema/year)
-
-
+Alias: year
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:year](https://w3id.org/bridge2ai/data-sheets-schema/year)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:year](https://w3id.org/bridge2ai/data-sheets-schema/year)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

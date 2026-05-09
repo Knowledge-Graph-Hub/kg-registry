@@ -15,8 +15,7 @@ _A list of warnings about an item to be displayed in the interface. These should
 
 
 URI: [kgr:warnings](https://w3id.org/bridge2ai/data-sheets-schema/warnings)
-
-
+Alias: warnings
 
 <!-- no inheritance hierarchy -->
 
@@ -28,24 +27,26 @@ URI: [kgr:warnings](https://w3id.org/bridge2ai/data-sheets-schema/warnings)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
+| [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
 | [Usage](Usage.html) | The usage of a resource |  no  |
 | [Publication](Publication.html) | A publication associated with a resource |  no  |
-| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
+| [OntologyProduct](OntologyProduct.html) | A product that is an ontology, a formal representation of a set of concepts w... |  no  |
+| [License](License.html) | A license for a resource or product |  no  |
 | [DataSource](DataSource.html) | A data source |  no  |
-| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
+| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
 | [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
 | [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
-| [License](License.html) | A license for a resource or product |  no  |
-| [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
 | [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
-| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
+| [DataModel](DataModel.html) | A data model is a formal representation of concepts and relationships within ... |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that provides the rules of a data model |  no  |
+| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
+| [Ontology](Ontology.html) | An ontology is a formal representation of a set of concepts within a domain a... |  no  |
+| [DocumentationProduct](DocumentationProduct.html) | A product that is documentation for a resource |  no  |
+| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
 | [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-| [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-
+| [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
 
 
 
@@ -61,9 +62,7 @@ URI: [kgr:warnings](https://w3id.org/bridge2ai/data-sheets-schema/warnings)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

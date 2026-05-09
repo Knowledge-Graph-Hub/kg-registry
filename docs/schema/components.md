@@ -15,8 +15,7 @@ _The components of the knowledge graph._
 
 
 URI: [kgr:components](https://w3id.org/bridge2ai/data-sheets-schema/components)
-
-
+Alias: components
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:components](https://w3id.org/bridge2ai/data-sheets-schema/components)
 
 
 
-
 ## Properties
 
 * Range: [Resource](Resource.html)
@@ -45,9 +43,7 @@ URI: [kgr:components](https://w3id.org/bridge2ai/data-sheets-schema/components)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

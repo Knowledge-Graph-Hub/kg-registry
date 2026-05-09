@@ -20,23 +20,24 @@ URI: [kgr:StandardCompatibility](https://w3id.org/bridge2ai/data-sheets-schema/S
 
 
 
-
 ```mermaid
  classDiagram
     class StandardCompatibility
-    click StandardCompatibility href "StandardCompatibility.html"
+    click StandardCompatibility href "StandardCompatibility/.html"
       StandardCompatibility : standard
-        
-          
-    
-    
-    StandardCompatibility --> "0..1" StandardEnum : standard
-    click StandardEnum href "StandardEnum.html"
 
-        
+
+
+
+
+        StandardCompatibility --> "0..1" StandardEnum : standard
+        click StandardEnum href "StandardEnum/.html"
+
+
+
       StandardCompatibility : version
-        
-      
+
+
 ```
 
 
@@ -63,10 +64,13 @@ URI: [kgr:StandardCompatibility](https://w3id.org/bridge2ai/data-sheets-schema/S
 | [Product](Product.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
 | [GraphProduct](GraphProduct.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
 | [DataModelProduct](DataModelProduct.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
+| [OntologyProduct](OntologyProduct.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
 | [MappingProduct](MappingProduct.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
 | [ProcessProduct](ProcessProduct.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
 | [GraphicalInterface](GraphicalInterface.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
 | [ProgrammingInterface](ProgrammingInterface.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
+| [DocumentationProduct](DocumentationProduct.html) | [compatibility](compatibility.html) | range | [StandardCompatibility](StandardCompatibility.html) |
+
 
 
 
@@ -74,7 +78,6 @@ URI: [kgr:StandardCompatibility](https://w3id.org/bridge2ai/data-sheets-schema/S
 
 
 ## Identifier and Mapping Information
-
 
 
 
@@ -95,7 +98,6 @@ URI: [kgr:StandardCompatibility](https://w3id.org/bridge2ai/data-sheets-schema/S
 | ---  | ---  |
 | self | kgr:StandardCompatibility |
 | native | kgr:StandardCompatibility |
-
 
 
 

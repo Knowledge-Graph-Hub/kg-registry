@@ -15,8 +15,7 @@ _The user implementing or working with the resource._
 
 
 URI: [kgr:users](https://w3id.org/bridge2ai/data-sheets-schema/users)
-
-
+Alias: users
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:users](https://w3id.org/bridge2ai/data-sheets-schema/users)
 
 
 
-
 ## Properties
 
 * Range: [Contact](Contact.html)
@@ -45,9 +43,7 @@ URI: [kgr:users](https://w3id.org/bridge2ai/data-sheets-schema/users)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

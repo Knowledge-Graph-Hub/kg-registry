@@ -26,9 +26,7 @@ URI: [shex:nonLiteral](http://www.w3.org/ns/shex#nonLiteral)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

@@ -15,8 +15,7 @@ _The ORCID of the individual. Do not include the "https://orcid.org/" prefix._
 
 
 URI: [kgr:orcid](https://w3id.org/bridge2ai/data-sheets-schema/orcid)
-
-
+Alias: orcid
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:orcid](https://w3id.org/bridge2ai/data-sheets-schema/orcid)
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -45,9 +43,7 @@ URI: [kgr:orcid](https://w3id.org/bridge2ai/data-sheets-schema/orcid)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

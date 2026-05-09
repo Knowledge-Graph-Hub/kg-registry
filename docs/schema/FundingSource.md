@@ -20,32 +20,48 @@ URI: [kgr:FundingSource](https://w3id.org/bridge2ai/data-sheets-schema/FundingSo
 
 
 
-
 ```mermaid
  classDiagram
     class FundingSource
-    click FundingSource href "FundingSource.html"
+    click FundingSource href "FundingSource/.html"
       NamedThing <|-- FundingSource
-        click NamedThing href "NamedThing.html"
-      
-      FundingSource : category
-        
-      FundingSource : id
-        
-      FundingSource : label
-        
-          
-    
-    
-    FundingSource --> "0..1" Organization : label
-    click Organization href "Organization.html"
+        click NamedThing href "NamedThing/.html"
 
-        
+      FundingSource : category
+
+      FundingSource : collection
+
+
+
+
+
+        FundingSource --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
+      FundingSource : creation_date
+
+      FundingSource : id
+
+      FundingSource : label
+
+
+
+
+
+        FundingSource --> "0..1" Organization : label
+        click Organization href "Organization/.html"
+
+
+
+      FundingSource : last_modified_date
+
       FundingSource : layout
-        
+
       FundingSource : warnings
-        
-      
+
+
 ```
 
 
@@ -66,7 +82,10 @@ URI: [kgr:FundingSource](https://w3id.org/bridge2ai/data-sheets-schema/FundingSo
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | [NamedThing](NamedThing.html) |
 | [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | [NamedThing](NamedThing.html) |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | [NamedThing](NamedThing.html) |
 
 
 
@@ -80,6 +99,7 @@ URI: [kgr:FundingSource](https://w3id.org/bridge2ai/data-sheets-schema/FundingSo
 | [KnowledgeGraph](KnowledgeGraph.html) | [funding](funding.html) | range | [FundingSource](FundingSource.html) |
 | [DataSource](DataSource.html) | [funding](funding.html) | range | [FundingSource](FundingSource.html) |
 | [DataModel](DataModel.html) | [funding](funding.html) | range | [FundingSource](FundingSource.html) |
+| [Ontology](Ontology.html) | [funding](funding.html) | range | [FundingSource](FundingSource.html) |
 | [Aggregator](Aggregator.html) | [funding](funding.html) | range | [FundingSource](FundingSource.html) |
 
 
@@ -87,8 +107,8 @@ URI: [kgr:FundingSource](https://w3id.org/bridge2ai/data-sheets-schema/FundingSo
 
 
 
-## Identifier and Mapping Information
 
+## Identifier and Mapping Information
 
 
 
@@ -109,7 +129,6 @@ URI: [kgr:FundingSource](https://w3id.org/bridge2ai/data-sheets-schema/FundingSo
 | ---  | ---  |
 | self | kgr:FundingSource |
 | native | kgr:FundingSource |
-
 
 
 
@@ -178,6 +197,7 @@ attributes:
     owner: FundingSource
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -209,18 +229,56 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: FundingSource
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: FundingSource
     domain_of:
     - NamedThing
+    - Organization
     range: string
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: FundingSource
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: FundingSource
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 
 ```
 </details>

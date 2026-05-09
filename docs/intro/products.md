@@ -14,8 +14,8 @@ All products have the following attributes:
 - `tags`: Additional categories for the product.
 
 Three additional attributes define the provenance of each Product:
-- `original_source`: A list of origin Resource(s) of the product. 
-- `secondary_source`: A list of secondary Resource(s) of the product.
+- `original_source`: A list of origin Resource(s) or Product(s) of the product. Each entry includes `source` and `relation_type`; the default relation type is `prov:hadPrimarySource`.
+- `secondary_source`: A list of secondary Resource(s) or Product(s) of the product. Each entry includes `source` and `relation_type`; the default relation type is `prov:wasInfluencedBy`.
 - `produced_by`: The software or other process leading to creation of the product.
 
 ## Specialized Product Types

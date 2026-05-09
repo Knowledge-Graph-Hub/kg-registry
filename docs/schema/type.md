@@ -15,8 +15,7 @@ _The type of usage._
 
 
 URI: [kgr:type](https://w3id.org/bridge2ai/data-sheets-schema/type)
-
-
+Alias: type
 
 
 ## Inheritance
@@ -40,7 +39,6 @@ URI: [kgr:type](https://w3id.org/bridge2ai/data-sheets-schema/type)
 
 
 
-
 ## Properties
 
 * Range: [UsageEnum](UsageEnum.html)
@@ -48,9 +46,7 @@ URI: [kgr:type](https://w3id.org/bridge2ai/data-sheets-schema/type)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

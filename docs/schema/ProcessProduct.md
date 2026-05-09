@@ -20,123 +20,174 @@ URI: [kgr:ProcessProduct](https://w3id.org/bridge2ai/data-sheets-schema/ProcessP
 
 
 
-
 ```mermaid
  classDiagram
     class ProcessProduct
-    click ProcessProduct href "ProcessProduct.html"
+    click ProcessProduct href "ProcessProduct/.html"
       Product <|-- ProcessProduct
-        click Product href "Product.html"
-      
+        click Product href "Product/.html"
+
       ProcessProduct : category
-        
+
+      ProcessProduct : collection
+
+
+
+
+
+        ProcessProduct --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
       ProcessProduct : compatibility
-        
-          
-    
-    
-    ProcessProduct --> "*" StandardCompatibility : compatibility
-    click StandardCompatibility href "StandardCompatibility.html"
 
-        
+
+
+
+
+        ProcessProduct --> "*" StandardCompatibility : compatibility
+        click StandardCompatibility href "StandardCompatibility/.html"
+
+
+
       ProcessProduct : compression
-        
-          
-    
-    
-    ProcessProduct --> "0..1" CompressionEnum : compression
-    click CompressionEnum href "CompressionEnum.html"
 
-        
+
+
+
+
+        ProcessProduct --> "0..1" CompressionEnum : compression
+        click CompressionEnum href "CompressionEnum/.html"
+
+
+
       ProcessProduct : contacts
-        
-          
-    
-    
-    ProcessProduct --> "*" Contact : contacts
-    click Contact href "Contact.html"
 
-        
+
+
+
+
+        ProcessProduct --> "*" Contact : contacts
+        click Contact href "Contact/.html"
+
+
+
+      ProcessProduct : creation_date
+
+      ProcessProduct : curators
+
+
+
+
+
+        ProcessProduct --> "*" Contact : curators
+        click Contact href "Contact/.html"
+
+
+
       ProcessProduct : description
-        
+
       ProcessProduct : dump_format
-        
-          
-    
-    
-    ProcessProduct --> "0..1" DumpFormatEnum : dump_format
-    click DumpFormatEnum href "DumpFormatEnum.html"
 
-        
+
+
+
+
+        ProcessProduct --> "0..1" DumpFormatEnum : dump_format
+        click DumpFormatEnum href "DumpFormatEnum/.html"
+
+
+
       ProcessProduct : format
-        
-          
-    
-    
-    ProcessProduct --> "0..1" FormatEnum : format
-    click FormatEnum href "FormatEnum.html"
 
-        
+
+
+
+
+        ProcessProduct --> "0..1" FormatEnum : format
+        click FormatEnum href "FormatEnum/.html"
+
+
+
       ProcessProduct : id
-        
+
       ProcessProduct : infores_id
-        
+
+      ProcessProduct : last_modified_date
+
+      ProcessProduct : latest_version
+
       ProcessProduct : layout
-        
+
       ProcessProduct : license
-        
-          
-    
-    
-    ProcessProduct --> "0..1" License : license
-    click License href "License.html"
 
-        
+
+
+
+
+        ProcessProduct --> "0..1" License : license
+        click License href "License/.html"
+
+
+
       ProcessProduct : name
-        
+
       ProcessProduct : original_source
-        
-          
-    
-    
-    ProcessProduct --> "*" Resource : original_source
-    click Resource href "Resource.html"
 
-        
+
+
+
+
+        ProcessProduct --> "*" SourceAssociation : original_source
+        click SourceAssociation href "SourceAssociation/.html"
+
+
+
       ProcessProduct : produced_by
-        
-          
-    
-    
-    ProcessProduct --> "*" ProcessProduct : produced_by
-    click ProcessProduct href "ProcessProduct.html"
 
-        
+
+
+
+
+        ProcessProduct --> "*" ProcessProduct : produced_by
+        click ProcessProduct href "ProcessProduct/.html"
+
+
+
+      ProcessProduct : product_file_size
+
       ProcessProduct : product_url
-        
+
       ProcessProduct : repository
-        
+
       ProcessProduct : secondary_source
-        
-          
-    
-    
-    ProcessProduct --> "*" Resource : secondary_source
-    click Resource href "Resource.html"
 
-        
+
+
+
+
+        ProcessProduct --> "*" SourceAssociation : secondary_source
+        click SourceAssociation href "SourceAssociation/.html"
+
+
+
       ProcessProduct : tags
-        
-          
-    
-    
-    ProcessProduct --> "*" TagEnum : tags
-    click TagEnum href "TagEnum.html"
 
-        
+
+
+
+
+        ProcessProduct --> "*" TagEnum : tags
+        click TagEnum href "TagEnum/.html"
+
+
+
+      ProcessProduct : versions
+
       ProcessProduct : warnings
-        
-      
+
+
 ```
 
 
@@ -156,23 +207,30 @@ URI: [kgr:ProcessProduct](https://w3id.org/bridge2ai/data-sheets-schema/ProcessP
 | ---  | --- | --- | --- |
 | [name](name.html) | 1 <br/> [String](String.html) | The human-readable name of the product | [Product](Product.html) |
 | [description](description.html) | 0..1 <br/> [String](String.html) | A description of the product | [Product](Product.html) |
-| [original_source](original_source.html) | * <br/> [Resource](Resource.html) | The original source(s) of the product, referred to  by the identifier of each... | [Product](Product.html) |
-| [secondary_source](secondary_source.html) | * <br/> [Resource](Resource.html) | The source(s) of the product, other than its original source, referred to by ... | [Product](Product.html) |
+| [original_source](original_source.html) | * <br/> [SourceAssociation](SourceAssociation.html) | The original source(s) of the product, with the provenance relation describin... | [Product](Product.html) |
+| [secondary_source](secondary_source.html) | * <br/> [SourceAssociation](SourceAssociation.html) | The source(s) of the product, other than its original source, with the proven... | [Product](Product.html) |
 | [product_url](product_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | [Product](Product.html) |
+| [product_file_size](product_file_size.html) | 0..1 <br/> [Integer](Integer.html) | The size of the product file, in bytes | [Product](Product.html) |
 | [produced_by](produced_by.html) | * <br/> [ProcessProduct](ProcessProduct.html) | The process(es) that produced the product, referred to by the identifier of e... | [Product](Product.html) |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the product | [Product](Product.html) |
 | [license](license_slot.html) | 0..1 <br/> [License](License.html) | The license of the product | [Product](Product.html) |
 | [compression](compression.html) | 0..1 <br/> [CompressionEnum](CompressionEnum.html) | The type of compression used with the product | [Product](Product.html) |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact points for the product | [Product](Product.html) |
+| [curators](curators.html) | * <br/> [Contact](Contact.html) | The curator(s) of the product | [Product](Product.html) |
 | [tags](tags.html) | * <br/> [TagEnum](TagEnum.html) | Tags associated with the product | [Product](Product.html) |
 | [infores_id](infores_id.html) | 0..1 <br/> [String](String.html) | The Infores ID of the product | [Product](Product.html) |
 | [compatibility](compatibility.html) | * <br/> [StandardCompatibility](StandardCompatibility.html) | A list of standards that the product conforms to | [Product](Product.html) |
 | [format](format.html) | 0..1 <br/> [FormatEnum](FormatEnum.html) | The format or serialization of the product | [Product](Product.html) |
 | [dump_format](dump_format.html) | 0..1 <br/> [DumpFormatEnum](DumpFormatEnum.html) | The format of a dump of the product as a file | [Product](Product.html) |
+| [versions](versions.html) | * <br/> [String](String.html) | A list of names of versions of the product | [Product](Product.html) |
+| [latest_version](latest_version.html) | 0..1 <br/> [String](String.html) | The latest version of the product, or the most recent version curated in the ... | [Product](Product.html) |
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | [NamedThing](NamedThing.html) |
 | [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | [NamedThing](NamedThing.html) |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | [NamedThing](NamedThing.html) |
 
 
 
@@ -185,10 +243,13 @@ URI: [kgr:ProcessProduct](https://w3id.org/bridge2ai/data-sheets-schema/ProcessP
 | [Product](Product.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
 | [GraphProduct](GraphProduct.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
 | [DataModelProduct](DataModelProduct.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
+| [OntologyProduct](OntologyProduct.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
 | [MappingProduct](MappingProduct.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
 | [ProcessProduct](ProcessProduct.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
 | [GraphicalInterface](GraphicalInterface.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
 | [ProgrammingInterface](ProgrammingInterface.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
+| [DocumentationProduct](DocumentationProduct.html) | [produced_by](produced_by.html) | range | [ProcessProduct](ProcessProduct.html) |
+
 
 
 
@@ -196,7 +257,6 @@ URI: [kgr:ProcessProduct](https://w3id.org/bridge2ai/data-sheets-schema/ProcessP
 
 
 ## Identifier and Mapping Information
-
 
 
 
@@ -217,7 +277,6 @@ URI: [kgr:ProcessProduct](https://w3id.org/bridge2ai/data-sheets-schema/ProcessP
 | ---  | ---  |
 | self | kgr:ProcessProduct |
 | native | kgr:ProcessProduct |
-
 
 
 
@@ -269,33 +328,39 @@ attributes:
     domain_of:
     - Resource
     - Product
+    - Organization
     - Usage
     range: string
   original_source:
     name: original_source
-    description: The original source(s) of the product, referred to  by the identifier
-      of each resource. This may be the parent resource or another resource.
+    description: The original source(s) of the product, with the provenance relation
+      describing how the product relates to each source. This may be the parent resource
+      or another resource. This may also be a specific product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: original_source
     owner: ProcessProduct
     domain_of:
     - Product
-    range: Resource
+    range: SourceAssociation
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   secondary_source:
     name: secondary_source
-    description: The source(s) of the product, other than its original source, referred
-      to by the identifier of each resource. This may be an Aggregator or another
-      resource.
+    description: The source(s) of the product, other than its original source, with
+      the provenance relation describing how the product relates to each source. This
+      may be an Aggregator or another resource. This may also be a specific product.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: secondary_source
     owner: ProcessProduct
     domain_of:
     - Product
-    range: Resource
+    range: SourceAssociation
     multivalued: true
+    inlined: true
+    inlined_as_list: true
   product_url:
     name: product_url
     description: The URL of the product. This may be a link to download a specific
@@ -307,6 +372,17 @@ attributes:
     domain_of:
     - Product
     range: uriorcurie
+  product_file_size:
+    name: product_file_size
+    description: The size of the product file, in bytes. The build process will attempt
+      to determine this based on the file header and populate the metadata where possible.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: product_file_size
+    owner: ProcessProduct
+    domain_of:
+    - Product
+    range: integer
   produced_by:
     name: produced_by
     description: The process(es) that produced the product, referred to by the identifier
@@ -357,6 +433,17 @@ attributes:
     description: The contact points for the product. May be an individual or organization.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     alias: contacts
+    owner: ProcessProduct
+    domain_of:
+    - Resource
+    - Product
+    range: Contact
+    multivalued: true
+  curators:
+    name: curators
+    description: The curator(s) of the product. May be an individual or organization.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    alias: curators
     owner: ProcessProduct
     domain_of:
     - Resource
@@ -419,6 +506,32 @@ attributes:
     domain_of:
     - Product
     range: DumpFormatEnum
+  versions:
+    name: versions
+    description: A list of names of versions of the product.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    exact_mappings:
+    - schema:version
+    - dcterms:hasVersion
+    rank: 1000
+    alias: versions
+    owner: ProcessProduct
+    domain_of:
+    - Product
+    range: string
+    multivalued: true
+  latest_version:
+    name: latest_version
+    description: The latest version of the product, or the most recent version curated
+      in the registry. If the product is available at a permanent link, this may be
+      something like "latest".
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: latest_version
+    owner: ProcessProduct
+    domain_of:
+    - Product
+    range: string
   id:
     name: id
     description: The identifier of an entity. This is used to identify it within the
@@ -431,6 +544,7 @@ attributes:
     owner: ProcessProduct
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -462,18 +576,56 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: ProcessProduct
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: ProcessProduct
     domain_of:
     - NamedThing
+    - Organization
     range: string
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: ProcessProduct
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: ProcessProduct
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 
 ```
 </details>

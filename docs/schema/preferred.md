@@ -15,8 +15,7 @@ _Whether this is the preferred publication for the resource._
 
 
 URI: [kgr:preferred](https://w3id.org/bridge2ai/data-sheets-schema/preferred)
-
-
+Alias: preferred
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:preferred](https://w3id.org/bridge2ai/data-sheets-schema/preferred)
 
 
 
-
 ## Properties
 
 * Range: [Boolean](Boolean.html)
@@ -43,9 +41,7 @@ URI: [kgr:preferred](https://w3id.org/bridge2ai/data-sheets-schema/preferred)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

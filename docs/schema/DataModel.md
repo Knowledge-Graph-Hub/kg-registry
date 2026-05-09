@@ -8,7 +8,7 @@ mermaid: true
 # Class: DataModel
 
 
-_A data model, such as an ontology or schema. May be used in construction of a knowledge graph._
+_A data model is a formal representation of concepts and relationships within a specific domain. It defines the structure and organization of data, including entities, attributes, and relationships. May be used in construction of a knowledge graph._
 
 
 
@@ -20,120 +20,167 @@ URI: [kgr:DataModel](https://w3id.org/bridge2ai/data-sheets-schema/DataModel)
 
 
 
-
 ```mermaid
  classDiagram
     class DataModel
-    click DataModel href "DataModel.html"
+    click DataModel href "DataModel/.html"
       Resource <|-- DataModel
-        click Resource href "Resource.html"
-      
+        click Resource href "Resource/.html"
+
       DataModel : activity_status
-        
-          
-    
-    
-    DataModel --> "0..1" ActivityStatusEnum : activity_status
-    click ActivityStatusEnum href "ActivityStatusEnum.html"
 
-        
+
+
+
+
+        DataModel --> "0..1" ActivityStatusEnum : activity_status
+        click ActivityStatusEnum href "ActivityStatusEnum/.html"
+
+
+
       DataModel : category
-        
+
+      DataModel : collection
+
+
+
+
+
+        DataModel --> "*" CollectionEnum : collection
+        click CollectionEnum href "CollectionEnum/.html"
+
+
+
       DataModel : contacts
-        
-          
-    
-    
-    DataModel --> "*" Contact : contacts
-    click Contact href "Contact.html"
 
-        
+
+
+
+
+        DataModel --> "*" Contact : contacts
+        click Contact href "Contact/.html"
+
+
+
+      DataModel : creation_date
+
+      DataModel : curators
+
+
+
+
+
+        DataModel --> "*" Contact : curators
+        click Contact href "Contact/.html"
+
+
+
       DataModel : description
-        
-      DataModel : domain
-        
-          
-    
-    
-    DataModel --> "1" DomainEnum : domain
-    click DomainEnum href "DomainEnum.html"
 
-        
+      DataModel : domains
+
+
+
+
+
+        DataModel --> "1..*" DomainEnum : domains
+        click DomainEnum href "DomainEnum/.html"
+
+
+
       DataModel : fairsharing_id
-        
+
       DataModel : funding
-        
-          
-    
-    
-    DataModel --> "*" FundingSource : funding
-    click FundingSource href "FundingSource.html"
 
-        
+
+
+
+
+        DataModel --> "*" FundingSource : funding
+        click FundingSource href "FundingSource/.html"
+
+
+
       DataModel : homepage_url
-        
+
       DataModel : id
-        
+
       DataModel : infores_id
-        
+
       DataModel : language
-        
+
+      DataModel : last_modified_date
+
       DataModel : layout
-        
+
       DataModel : license
-        
-          
-    
-    
-    DataModel --> "0..1" License : license
-    click License href "License.html"
 
-        
+
+
+
+
+        DataModel --> "0..1" License : license
+        click License href "License/.html"
+
+
+
       DataModel : name
-        
+
       DataModel : products
-        
-          
-    
-    
-    DataModel --> "*" Product : products
-    click Product href "Product.html"
 
-        
+
+
+
+
+        DataModel --> "*" Product : products
+        click Product href "Product/.html"
+
+
+
       DataModel : publications
-        
-          
-    
-    
-    DataModel --> "*" Publication : publications
-    click Publication href "Publication.html"
 
-        
+
+
+
+
+        DataModel --> "*" Publication : publications
+        click Publication href "Publication/.html"
+
+
+
       DataModel : repository
-        
+
+      DataModel : synonyms
+
       DataModel : tags
-        
-          
-    
-    
-    DataModel --> "*" TagEnum : tags
-    click TagEnum href "TagEnum.html"
 
-        
+
+
+
+
+        DataModel --> "*" TagEnum : tags
+        click TagEnum href "TagEnum/.html"
+
+
+
+      DataModel : taxon
+
       DataModel : usages
-        
-          
-    
-    
-    DataModel --> "*" Usage : usages
-    click Usage href "Usage.html"
 
-        
+
+
+
+
+        DataModel --> "*" Usage : usages
+        click Usage href "Usage/.html"
+
+
+
       DataModel : version
-        
+
       DataModel : warnings
-        
-      
+
+
 ```
 
 
@@ -160,18 +207,25 @@ URI: [kgr:DataModel](https://w3id.org/bridge2ai/data-sheets-schema/DataModel)
 | [version](version.html) | 0..1 <br/> [String](String.html) | The version of the resource | [Resource](Resource.html) |
 | [language](language.html) | 0..1 <br/> [String](String.html) | The human language of the resource | [Resource](Resource.html) |
 | [contacts](contacts.html) | * <br/> [Contact](Contact.html) | The contact point(s) for the resource | [Resource](Resource.html) |
+| [curators](curators.html) | * <br/> [Contact](Contact.html) | The curator(s) of the resource | [Resource](Resource.html) |
 | [products](products.html) | * <br/> [Product](Product.html) | The products or representations of the resource | [Resource](Resource.html) |
-| [domain](domain.html) | 1 <br/> [DomainEnum](DomainEnum.html) | The domain that the resource is relevant to | [Resource](Resource.html) |
+| [domains](domains.html) | 1..* <br/> [DomainEnum](DomainEnum.html) | The domain(s) that the resource is relevant to | [Resource](Resource.html) |
 | [tags](tags.html) | * <br/> [TagEnum](TagEnum.html) | Tags associated with the resource | [Resource](Resource.html) |
 | [funding](funding.html) | * <br/> [FundingSource](FundingSource.html) | The funding source(s) for the resource | [Resource](Resource.html) |
 | [publications](publications.html) | * <br/> [Publication](Publication.html) | Publications associated with the resource | [Resource](Resource.html) |
 | [usages](usages.html) | * <br/> [Usage](Usage.html) | The usage(s) of the resource | [Resource](Resource.html) |
 | [fairsharing_id](fairsharing_id.html) | 0..1 <br/> [String](String.html) | The FAIRsharing ID of the resource | [Resource](Resource.html) |
 | [infores_id](infores_id.html) | 0..1 <br/> [String](String.html) | The Infores ID of the resource | [Resource](Resource.html) |
+| [taxon](taxon.html) | * <br/> [Uriorcurie](Uriorcurie.html) | The taxon or taxa that the resource is relevant to | [Resource](Resource.html) |
+| [synonyms](synonyms.html) | * <br/> [String](String.html) | A list of synonyms for the resource | [Resource](Resource.html) |
 | [id](id.html) | 1 <br/> [String](String.html) | The identifier of an entity | [NamedThing](NamedThing.html) |
 | [category](category.html) | 0..1 <br/> [CategoryType](CategoryType.html) | The category of the entity | [NamedThing](NamedThing.html) |
 | [warnings](warnings.html) | * <br/> [String](String.html) | A list of warnings about an item to be displayed in the interface | [NamedThing](NamedThing.html) |
-| [layout](layout.html) | 0..1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [collection](collection.html) | * <br/> [CollectionEnum](CollectionEnum.html) | A collection of entries in the registry | [NamedThing](NamedThing.html) |
+| [layout](layout.html) | 1 <br/> [String](String.html) | The layout of the entity | [NamedThing](NamedThing.html) |
+| [creation_date](creation_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was created | [NamedThing](NamedThing.html) |
+| [last_modified_date](last_modified_date.html) | 0..1 <br/> [Datetime](Datetime.html) | The date the entry was last modified | [NamedThing](NamedThing.html) |
+
 
 
 
@@ -182,7 +236,6 @@ URI: [kgr:DataModel](https://w3id.org/bridge2ai/data-sheets-schema/DataModel)
 
 
 ## Identifier and Mapping Information
-
 
 
 
@@ -209,7 +262,6 @@ URI: [kgr:DataModel](https://w3id.org/bridge2ai/data-sheets-schema/DataModel)
 
 
 
-
 ## LinkML Source
 
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
@@ -219,8 +271,10 @@ URI: [kgr:DataModel](https://w3id.org/bridge2ai/data-sheets-schema/DataModel)
 <details>
 ```yaml
 name: DataModel
-description: A data model, such as an ontology or schema. May be used in construction
-  of a knowledge graph.
+description: A data model is a formal representation of concepts and relationships
+  within a specific domain. It defines the structure and organization of data, including
+  entities, attributes, and relationships. May be used in construction of a knowledge
+  graph.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 is_a: Resource
 
@@ -232,8 +286,10 @@ is_a: Resource
 <details>
 ```yaml
 name: DataModel
-description: A data model, such as an ontology or schema. May be used in construction
-  of a knowledge graph.
+description: A data model is a formal representation of concepts and relationships
+  within a specific domain. It defines the structure and organization of data, including
+  entities, attributes, and relationships. May be used in construction of a knowledge
+  graph.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 is_a: Resource
 attributes:
@@ -269,6 +325,7 @@ attributes:
     domain_of:
     - Resource
     - Product
+    - Organization
     - Usage
     range: string
   homepage_url:
@@ -282,6 +339,7 @@ attributes:
     owner: DataModel
     domain_of:
     - Resource
+    - Organization
     range: uriorcurie
   repository:
     name: repository
@@ -346,6 +404,20 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  curators:
+    name: curators
+    description: The curator(s) of the resource. May be an individual or organization.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: curators
+    owner: DataModel
+    domain_of:
+    - Resource
+    - Product
+    range: Contact
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
   products:
     name: products
     description: The products or representations of the resource.
@@ -359,17 +431,18 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
-  domain:
-    name: domain
-    description: The domain that the resource is relevant to. This is not multivalued.
+  domains:
+    name: domains
+    description: The domain(s) that the resource is relevant to.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
-    alias: domain
+    alias: domains
     owner: DataModel
     domain_of:
     - Resource
     range: DomainEnum
     required: true
+    multivalued: true
   tags:
     name: tags
     description: Tags associated with the resource.
@@ -441,6 +514,31 @@ attributes:
     - Resource
     - Product
     range: string
+  taxon:
+    name: taxon
+    description: The taxon or taxa that the resource is relevant to. This is preferably
+      an NCBI Taxonomy identifier, in CURIE format.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: taxon
+    owner: DataModel
+    domain_of:
+    - Resource
+    range: uriorcurie
+    multivalued: true
+  synonyms:
+    name: synonyms
+    description: A list of synonyms for the resource. These may include acronyms,
+      abbreviations, or other alternate names for the resource. They are not necessarily
+      unique across resources.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: synonyms
+    owner: DataModel
+    domain_of:
+    - Resource
+    range: string
+    multivalued: true
   id:
     name: id
     description: The identifier of an entity. This is used to identify it within the
@@ -453,6 +551,7 @@ attributes:
     owner: DataModel
     domain_of:
     - NamedThing
+    - Organization
     range: string
     required: true
   category:
@@ -484,18 +583,57 @@ attributes:
     multivalued: true
     inlined: true
     inlined_as_list: true
+  collection:
+    name: collection
+    description: A collection of entries in the registry. This is used to group related
+      entries together. This is multivalued to allow for multiple collections.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: collection
+    owner: DataModel
+    domain_of:
+    - NamedThing
+    range: CollectionEnum
+    multivalued: true
   layout:
     name: layout
     description: The layout of the entity. This is used to determine how to display
       the entity in the web interface. For resources, this is generally 'resource_detail'.
-      For products, this is generally 'product_detail'.
+      For products, this is generally 'product_detail'. If a value for this slot is
+      not specified, pages won't contain anything from their header metadata.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: layout
     owner: DataModel
     domain_of:
     - NamedThing
+    - Organization
     range: string
+    required: true
+  creation_date:
+    name: creation_date
+    description: The date the entry was created. This is used to determine the age
+      of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: creation_date
+    owner: DataModel
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
+  last_modified_date:
+    name: last_modified_date
+    description: The date the entry was last modified. It should be in ISO 8601 format,
+      e.g., 2024-02-12T00:00:00Z.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: last_modified_date
+    owner: DataModel
+    domain_of:
+    - NamedThing
+    - Organization
+    range: datetime
 
 ```
 </details>

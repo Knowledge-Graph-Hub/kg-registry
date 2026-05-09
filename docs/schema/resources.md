@@ -15,8 +15,7 @@ _A list of entries in the registry._
 
 
 URI: [kgr:resources](https://w3id.org/bridge2ai/data-sheets-schema/resources)
-
-
+Alias: resources
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:resources](https://w3id.org/bridge2ai/data-sheets-schema/resources)
 
 
 
-
 ## Properties
 
 * Range: [Resource](Resource.html)
@@ -45,9 +43,7 @@ URI: [kgr:resources](https://w3id.org/bridge2ai/data-sheets-schema/resources)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

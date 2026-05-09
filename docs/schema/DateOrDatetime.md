@@ -26,9 +26,7 @@ URI: [linkml:DateOrDatetime](https://w3id.org/linkml/DateOrDatetime)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

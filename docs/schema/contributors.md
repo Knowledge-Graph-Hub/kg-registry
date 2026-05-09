@@ -15,8 +15,7 @@ _Contributors to the knowledge graph._
 
 
 URI: [kgr:contributors](https://w3id.org/bridge2ai/data-sheets-schema/contributors)
-
-
+Alias: contributors
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:contributors](https://w3id.org/bridge2ai/data-sheets-schema/contributo
 
 
 
-
 ## Properties
 
 * Range: [String](String.html)
@@ -43,9 +41,7 @@ URI: [kgr:contributors](https://w3id.org/bridge2ai/data-sheets-schema/contributo
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 

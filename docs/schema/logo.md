@@ -15,8 +15,7 @@ _The URL of a logo for the license. This is added at metadata parsing time._
 
 
 URI: [kgr:logo](https://w3id.org/bridge2ai/data-sheets-schema/logo)
-
-
+Alias: logo
 
 <!-- no inheritance hierarchy -->
 
@@ -35,7 +34,6 @@ URI: [kgr:logo](https://w3id.org/bridge2ai/data-sheets-schema/logo)
 
 
 
-
 ## Properties
 
 * Range: [Uriorcurie](Uriorcurie.html)
@@ -43,9 +41,7 @@ URI: [kgr:logo](https://w3id.org/bridge2ai/data-sheets-schema/logo)
 
 
 
-
 ## Identifier and Mapping Information
-
 
 
 
