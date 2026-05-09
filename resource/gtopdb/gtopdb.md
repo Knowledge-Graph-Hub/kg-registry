@@ -2,24 +2,26 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: enquiries@guidetopharmacology.org
-    label: Guide to Pharmacology Help Desk
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: jamie.davies@ed.ac.uk
-    label: Jamie Davies
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: enquiries@guidetopharmacology.org
+  label: Guide to Pharmacology Help Desk
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jamie.davies@ed.ac.uk
+  label: Jamie Davies
 creation_date: '2025-05-30T00:00:00Z'
-description: The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource providing quantitative information on drug targets and the substances that act on them, including approved drugs and experimental therapeutics
+description: The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource providing
+  quantitative information on drug targets and the substances that act on them, including
+  approved drugs and experimental therapeutics
 domains:
-  - pharmacology
-  - health
-  - biomedical
-  - drug discovery
-  - translational
+- pharmacology
+- health
+- biomedical
+- drug discovery
+- translational
 homepage_url: https://www.guidetopharmacology.org
 id: gtopdb
 infores_id: gtopdb
@@ -30,387 +32,447 @@ license:
   label: CC-BY-SA-4.0
 name: Guide to Pharmacology
 products:
-  - category: GraphicalInterface
-    description: A web-based interface for accessing and browsing drug target data, ligand information, and pharmacological interactions
-    id: gtopdb.web
-    name: Guide to Pharmacology Web Interface
-    product_url: https://www.guidetopharmacology.org
-  - category: ProgrammingInterface
-    description: RESTful web services enabling computational access to most of the GtoPdb data in JSON format
-    id: gtopdb.api.rest
-    name: Guide to Pharmacology REST API
-    product_url: https://www.guidetopharmacology.org/webServices.jsp
-  - category: Product
-    description: Complete list of drug targets and their families with detailed information
-    format: csv
-    id: gtopdb.targets.csv
-    name: GtoPdb Targets and Families
-    product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: Product
-    description: Complete list of ligands including drugs, small molecules, and other bioactive compounds
-    format: csv
-    id: gtopdb.ligands.csv
-    name: GtoPdb Ligands Dataset
-    product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: Product
-    description: Comprehensive dataset of all interactions between ligands and targets
-    format: csv
-    id: gtopdb.interactions.csv
-    name: GtoPdb Interactions Dataset
-    product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: Product
-    description: Detailed interactions list for approved drugs and their targets
-    format: csv
-    id: gtopdb.approved_drugs.csv
-    name: GtoPdb Approved Drugs Dataset
-    product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: Product
-    description: SDF file containing chemical structures with SMILES for all ligands in the database
-    format: sdf
-    id: gtopdb.download.sdf
-    name: GtoPdb Ligand SDF File
-    product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: Product
-    description: RDF/linked data format of the GtoPdb data (target-ligand interactions with supporting information)
-    format: rdfxml
-    id: gtopdb.download.rdf
-    name: GtoPdb RDF Dataset
-    product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: Product
-    description: Complete PostgreSQL database dump of the current Guide to Pharmacology database
-    id: gtopdb.database
-    name: GtoPdb Full Database
-    product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length header found'
-      - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error when accessing file'
-      - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting to URL'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file
-  - category: GraphicalInterface
-    description: An extension of the Guide to PHARMACOLOGY database providing immunological access-point to GtoPdb data
-    id: gtopdb.immunopharmacology
-    name: Guide to IMMUNOPHARMACOLOGY
-    product_url: https://www.guidetopharmacology.org/immuno/index.jsp
-  - category: GraphicalInterface
-    description: A specialized portal providing optimized access for the malaria research community
-    id: gtopdb.malaria
-    name: Guide to MALARIA PHARMACOLOGY
-    product_url: https://www.guidetopharmacology.org/malaria/index.jsp
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: rtx-kg2
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-    product_file_size: 376501785
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-      - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: rtx-kg2
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-    product_file_size: 1807360397
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-      - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: mondo
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: rtx-kg2
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-    product_url: https://arax.ncats.io/
-    secondary_source:
-      - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: GtoPdb Automat
-    format: kgx-jsonl
-    id: automat.gtopdb
-    infores_id: automat-gtopdb
-    name: gtopdb_automat
-    original_source:
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/
-    secondary_source:
-      - source: automat
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: KGX JSONL graph package for GToPdb distributed via the NCATS Translator release site (release 2026_03_19; build gtopdb_2026.1_4d453431_2025sep1_4.3.6; source version 2026.1; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 18581
-    format: kgx-jsonl
-    id: translator.gtopdb.graph
-    latest_version: '2026_03_19'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator GToPdb KGX Graph
-    node_count: 10644
-    original_source:
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_19'
-      - gtopdb_2026.1_4d453431_2025sep1_4.3.6
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 29243943
-    format: kgx-jsonl
-    id: translator.translator_kg.graph
-    latest_version: '2026_03_27'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator Aggregate KGX Graph
-    node_count: 1696790
-    original_source:
-      - source: alliance
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: ctkp
-        relation_type: prov:hadPrimarySource
-      - source: drug-approvals-kp
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: drugrephub
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: gene2phenotype
-        relation_type: prov:hadPrimarySource
-      - source: geneticskp
-        relation_type: prov:hadPrimarySource
-      - source: go-cam
-        relation_type: prov:hadPrimarySource
-      - source: goa
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: panther
-        relation_type: prov:hadPrimarySource
-      - source: pathbank
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: text-mining-kp
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: ubergraph
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_27'
-      - 423af7989cac
+- category: GraphicalInterface
+  description: A web-based interface for accessing and browsing drug target data,
+    ligand information, and pharmacological interactions
+  id: gtopdb.web
+  name: Guide to Pharmacology Web Interface
+  product_url: https://www.guidetopharmacology.org
+- category: ProgrammingInterface
+  description: RESTful web services enabling computational access to most of the GtoPdb
+    data in JSON format
+  id: gtopdb.api.rest
+  name: Guide to Pharmacology REST API
+  product_url: https://www.guidetopharmacology.org/webServices.jsp
+- category: Product
+  description: Complete list of drug targets and their families with detailed information
+  format: csv
+  id: gtopdb.targets.csv
+  name: GtoPdb Targets and Families
+  product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: Product
+  description: Complete list of ligands including drugs, small molecules, and other
+    bioactive compounds
+  format: csv
+  id: gtopdb.ligands.csv
+  name: GtoPdb Ligands Dataset
+  product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: Product
+  description: Comprehensive dataset of all interactions between ligands and targets
+  format: csv
+  id: gtopdb.interactions.csv
+  name: GtoPdb Interactions Dataset
+  product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: Product
+  description: Detailed interactions list for approved drugs and their targets
+  format: csv
+  id: gtopdb.approved_drugs.csv
+  name: GtoPdb Approved Drugs Dataset
+  product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: Product
+  description: SDF file containing chemical structures with SMILES for all ligands
+    in the database
+  format: sdf
+  id: gtopdb.download.sdf
+  name: GtoPdb Ligand SDF File
+  product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: Product
+  description: RDF/linked data format of the GtoPdb data (target-ligand interactions
+    with supporting information)
+  format: rdfxml
+  id: gtopdb.download.rdf
+  name: GtoPdb RDF Dataset
+  product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: Product
+  description: Complete PostgreSQL database dump of the current Guide to Pharmacology
+    database
+  id: gtopdb.database
+  name: GtoPdb Full Database
+  product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-04-15: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: GraphicalInterface
+  description: An extension of the Guide to PHARMACOLOGY database providing immunological
+    access-point to GtoPdb data
+  id: gtopdb.immunopharmacology
+  name: Guide to IMMUNOPHARMACOLOGY
+  product_url: https://www.guidetopharmacology.org/immuno/index.jsp
+- category: GraphicalInterface
+  description: A specialized portal providing optimized access for the malaria research
+    community
+  id: gtopdb.malaria
+  name: Guide to MALARIA PHARMACOLOGY
+  product_url: https://www.guidetopharmacology.org/malaria/index.jsp
+- category: GraphProduct
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: rtx-kg2
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  product_file_size: 376501785
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: rtx-kg2
+- category: GraphProduct
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: rtx-kg2
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  product_file_size: 1807360397
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: rtx-kg2
+- category: ProgrammingInterface
+  description: Neo4j distribution of the RTX-KG2 as a graph database
+  dump_format: neo4j
+  id: rtx-kg2.neo4j
+  is_neo4j: true
+  is_public: false
+  name: RTX-KG2 Neo4j
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: rtx-kg2
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  product_url: https://arax.ncats.io/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: rtx-kg2
+- category: GraphProduct
+  description: GtoPdb Automat
+  format: kgx-jsonl
+  id: automat.gtopdb
+  infores_id: automat-gtopdb
+  name: gtopdb_automat
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: automat
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for GToPdb distributed via the NCATS Translator
+    release site (release 2026_03_19; build gtopdb_2026.1_4d453431_2025sep1_4.3.6;
+    source version 2026.1; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 18581
+  format: kgx-jsonl
+  id: translator.gtopdb.graph
+  latest_version: '2026_03_19'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator GToPdb KGX Graph
+  node_count: 10644
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: translator
+  versions:
+  - '2026_03_19'
+  - gtopdb_2026.1_4d453431_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: drug-approvals-kp
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: go-cam
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 publications:
-  - authors:
-      - Harding SD
-      - Armstrong JF
-      - Faccenda E
-      - Southan C
-      - Alexander SPH
-      - Davenport AP
-      - Spedding M
-      - Davies JA
-    doi: doi:10.1093/nar/gkad944
-    id: https://doi.org/10.1093/nar/gkad944
-    journal: Nucleic Acids Research
-    preferred: true
-    title: The IUPHAR/BPS Guide to PHARMACOLOGY in 2024
-    year: '2024'
+- authors:
+  - Harding SD
+  - Armstrong JF
+  - Faccenda E
+  - Southan C
+  - Alexander SPH
+  - Davenport AP
+  - Spedding M
+  - Davies JA
+  doi: doi:10.1093/nar/gkad944
+  id: https://doi.org/10.1093/nar/gkad944
+  journal: Nucleic Acids Research
+  preferred: true
+  title: The IUPHAR/BPS Guide to PHARMACOLOGY in 2024
+  year: '2024'
 repository: https://www.guidetopharmacology.org/download.jsp
 ---
-
 ## Guide to Pharmacology (GtoPdb)
 
 The IUPHAR/BPS Guide to PHARMACOLOGY (GtoPdb) is an expert-curated resource providing authoritative information on drug targets and the substances that act on them. It's developed as a collaboration between the International Union of Basic and Clinical Pharmacology (IUPHAR) and the British Pharmacological Society (BPS).

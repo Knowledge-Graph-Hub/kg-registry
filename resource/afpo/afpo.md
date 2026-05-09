@@ -48,6 +48,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
@@ -56,6 +58,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/afpo.json
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
 publications: []
 repository: https://github.com/h3abionet/afpo

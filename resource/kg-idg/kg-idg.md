@@ -2,18 +2,18 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: jhc@lbl.gov
-      - contact_type: github
-        value: caufieldjh
-    label: J. Harry Caufield
-    orcid: 0000-0001-5705-7831
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jhc@lbl.gov
+  - contact_type: github
+    value: caufieldjh
+  label: J. Harry Caufield
+  orcid: 0000-0001-5705-7831
 creation_date: '2025-03-09T00:00:00Z'
 description: a Knowledge Graph for Illuminating the Druggable Genome
 domains:
-  - health
+- health
 homepage_url: https://kghub.org/kg-idg/index.html
 id: kg-idg
 last_modified_date: '2026-02-20T00:00:00Z'
@@ -23,24 +23,27 @@ license:
   label: BSD3
 name: KG-IDG
 products:
-  - category: GraphProduct
-    description: KGX Distribution of KG-IDG
-    format: kgx
-    id: kg-idg.graph
-    name: KGX Distribution of KG-IDG
-    original_source:
-      - source: kg-idg
-        relation_type: prov:hadPrimarySource
-    product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
-    secondary_source:
-      - source: kg-idg
-        relation_type: prov:wasInfluencedBy
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
+- category: GraphProduct
+  description: KGX Distribution of KG-IDG
+  format: kgx
+  id: kg-idg.graph
+  name: KGX Distribution of KG-IDG
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-idg
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: kg-idg
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 ---
-
 KG-IDG: a Knowledge Graph for Illuminating the Druggable Genome.
 
 ## Automated Evaluation

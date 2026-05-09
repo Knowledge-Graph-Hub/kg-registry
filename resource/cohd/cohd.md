@@ -2,18 +2,26 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: http://people.dbmi.columbia.edu/~chw7007/
-    label: Columbia University Department of Biomedical Informatics - Weng Lab
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: http://people.dbmi.columbia.edu/~chw7007/
+  label: Columbia University Department of Biomedical Informatics - Weng Lab
 creation_date: '2025-11-04T00:00:00Z'
-description: "The Columbia Open Health Data (COHD) API provides access to observed clinical frequencies and co-occurrence frequencies from electronic health records at Columbia University Medical Center. The database contains counts and frequencies of conditions, procedures, drug exposures, and patient demographics from the OHDSI common data model, along with statistical associations between clinical concepts. To protect patient privacy, all concepts where count ≤10 were excluded and counts were randomized using Poisson distribution. COHD offers multiple datasets including 5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical forms, plus beta temporal co-occurrence data."
+description: The Columbia Open Health Data (COHD) API provides access to observed
+  clinical frequencies and co-occurrence frequencies from electronic health records
+  at Columbia University Medical Center. The database contains counts and frequencies
+  of conditions, procedures, drug exposures, and patient demographics from the OHDSI
+  common data model, along with statistical associations between clinical concepts.
+  To protect patient privacy, all concepts where count ≤10 were excluded and counts
+  were randomized using Poisson distribution. COHD offers multiple datasets including
+  5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical
+  forms, plus beta temporal co-occurrence data.
 domains:
-  - clinical
-  - health
-  - public health
-  - precision medicine
+- clinical
+- health
+- public health
+- precision medicine
 homepage_url: https://cohd.io/
 id: cohd
 infores_id: cohd
@@ -21,156 +29,168 @@ last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: Columbia Open Health Data (COHD)
 products:
-  - category: ProgrammingInterface
-    description: RESTful API providing programmatic access to clinical concept frequencies, co-occurrences, and associations with JSON output
-    format: http
-    id: cohd.api
-    name: COHD API
-    original_source:
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-    product_url: https://cohd.io/api
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring clinical concept frequencies and associations
-    format: http
-    id: cohd.portal
-    name: COHD Web Interface
-    original_source:
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-    product_url: https://cohd.io/
-  - category: ProcessProduct
-    description: Python Jupyter notebooks demonstrating COHD API usage and analysis workflows
-    format: http
-    id: cohd.notebooks
-    name: COHD API Examples
-    original_source:
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-    product_file_size: 2834847
-    product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
-  - category: DocumentationProduct
-    description: API documentation covering endpoint descriptions, data structure, and usage examples
-    format: http
-    id: cohd.docs
-    name: COHD Documentation
-    original_source:
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-    product_url: https://cohd.io/api
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting to URL'
-      - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 502 error when accessing file'
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error when accessing file
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: KGX JSONL graph package for Columbia Open Health Data (COHD) distributed via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6; source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 84
-    format: kgx-jsonl
-    id: translator.cohd.graph
-    latest_version: '2026_03_12'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator COHD KGX Graph
-    node_count: 86
-    original_source:
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_12'
-      - cohd_2024-11-25_75f200bb_2025sep1_4.3.6
-  - category: GraphProduct
-    compatibility:
-      - standard: biolink
-        version: 4.3.6
-    description: Aggregated KGX JSONL graph package combining 29 Translator release sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer 2025sep1).
-    edge_count: 29243943
-    format: kgx-jsonl
-    id: translator.translator_kg.graph
-    latest_version: '2026_03_27'
-    license:
-      id: https://opensource.org/license/mit/
-      label: MIT
-    name: Translator Aggregate KGX Graph
-    node_count: 1696790
-    original_source:
-      - source: alliance
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: cohd
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: ctkp
-        relation_type: prov:hadPrimarySource
-      - source: drug-approvals-kp
-        relation_type: prov:hadPrimarySource
-      - source: dgidb
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: drugrephub
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: gtopdb
-        relation_type: prov:hadPrimarySource
-      - source: gene2phenotype
-        relation_type: prov:hadPrimarySource
-      - source: geneticskp
-        relation_type: prov:hadPrimarySource
-      - source: go-cam
-        relation_type: prov:hadPrimarySource
-      - source: goa
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: icees-kg
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: panther
-        relation_type: prov:hadPrimarySource
-      - source: pathbank
-        relation_type: prov:hadPrimarySource
-      - source: semmeddb
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: signor
-        relation_type: prov:hadPrimarySource
-      - source: text-mining-kp
-        relation_type: prov:hadPrimarySource
-      - source: ttd
-        relation_type: prov:hadPrimarySource
-      - source: ubergraph
-        relation_type: prov:hadPrimarySource
-    product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
-    secondary_source:
-      - source: translator
-        relation_type: prov:wasInfluencedBy
-    versions:
-      - '2026_03_27'
-      - 423af7989cac
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to clinical concept frequencies,
+    co-occurrences, and associations with JSON output
+  format: http
+  id: cohd.api
+  name: COHD API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  product_url: https://cohd.io/api
+- category: GraphicalInterface
+  description: Interactive web interface for exploring clinical concept frequencies
+    and associations
+  format: http
+  id: cohd.portal
+  name: COHD Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  product_url: https://cohd.io/
+- category: ProcessProduct
+  description: Python Jupyter notebooks demonstrating COHD API usage and analysis
+    workflows
+  format: http
+  id: cohd.notebooks
+  name: COHD API Examples
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  product_file_size: 2834847
+  product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
+- category: DocumentationProduct
+  description: API documentation covering endpoint descriptions, data structure, and
+    usage examples
+  format: http
+  id: cohd.docs
+  name: COHD Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  product_url: https://cohd.io/api
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for Columbia Open Health Data (COHD) distributed
+    via the NCATS Translator release site (release 2026_03_12; build cohd_2024-11-25_75f200bb_2025sep1_4.3.6;
+    source version 2024-11-25; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 84
+  format: kgx-jsonl
+  id: translator.cohd.graph
+  latest_version: '2026_03_12'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator COHD KGX Graph
+  node_count: 86
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: translator
+  versions:
+  - '2026_03_12'
+  - cohd_2024-11-25_75f200bb_2025sep1_4.3.6
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: Aggregated KGX JSONL graph package combining 29 Translator release
+    sources (release 2026_03_27; build 423af7989cac; Biolink 4.3.6; Node Normalizer
+    2025sep1).
+  edge_count: 29243943
+  format: kgx-jsonl
+  id: translator.translator_kg.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Aggregate KGX Graph
+  node_count: 1696790
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cohd
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: drug-approvals-kp
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: gene2phenotype
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: go-cam
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathbank
+  - relation_type: prov:hadPrimarySource
+    source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ubergraph
+  product_url: https://kgx-storage.rtx.ai/releases/translator_kg/latest/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: translator
+  versions:
+  - '2026_03_27'
+  - 423af7989cac
 repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # Columbia Open Health Data (COHD)
 
 ## Overview

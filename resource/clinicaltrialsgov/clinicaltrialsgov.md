@@ -2,29 +2,36 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: ClinicalTrials.gov@nih.gov
-      - contact_type: url
-        value: https://clinicaltrials.gov/about-site/contact
-    id: ncbi
-    label: National Library of Medicine Clinical Trials Team
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: register@clinicaltrials.gov
-    label: ClinicalTrials.gov Help Desk
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: ClinicalTrials.gov@nih.gov
+  - contact_type: url
+    value: https://clinicaltrials.gov/about-site/contact
+  id: ncbi
+  label: National Library of Medicine Clinical Trials Team
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: register@clinicaltrials.gov
+  label: ClinicalTrials.gov Help Desk
 creation_date: '2025-05-28T00:00:00Z'
-description: ClinicalTrials.gov is a database of privately and publicly funded clinical studies conducted around the world, maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The registry contains information on over 400,000 studies covering a wide range of diseases and conditions, providing details about study design, locations, eligibility criteria, interventions, outcomes, and results. ClinicalTrials.gov serves as the primary registry for clinical trials required by the FDA Amendments Act and WHO International Clinical Trials Registry Platform (ICTRP).
+description: ClinicalTrials.gov is a database of privately and publicly funded clinical
+  studies conducted around the world, maintained by the National Library of Medicine
+  (NLM) at the National Institutes of Health (NIH). The registry contains information
+  on over 400,000 studies covering a wide range of diseases and conditions, providing
+  details about study design, locations, eligibility criteria, interventions, outcomes,
+  and results. ClinicalTrials.gov serves as the primary registry for clinical trials
+  required by the FDA Amendments Act and WHO International Clinical Trials Registry
+  Platform (ICTRP).
 domains:
-  - clinical
-  - health
-  - public health
-  - drug discovery
-  - precision medicine
-  - biomedical
-  - translational
+- clinical
+- health
+- public health
+- drug discovery
+- precision medicine
+- biomedical
+- translational
 fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov
@@ -36,270 +43,290 @@ license:
   label: Public Domain
 name: ClinicalTrials.gov
 products:
-  - category: GraphicalInterface
-    description: Web-based interface for searching and browsing clinical trials with advanced filtering and export capabilities
-    format: http
-    id: clinicaltrialsgov.search
-    name: ClinicalTrials.gov Search Portal
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://clinicaltrials.gov/search
-  - category: ProgrammingInterface
-    description: RESTful API providing programmatic access to all clinical trial records with JSON and CSV output formats
-    format: http
-    id: clinicaltrialsgov.api
-    is_public: true
-    name: ClinicalTrials.gov API
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://clinicaltrials.gov/data-api/api
-  - category: Product
-    description: Bulk downloads of all clinical trial records in multiple formats including XML, JSON, and CSV
-    format: mixed
-    id: clinicaltrialsgov.downloads
-    name: ClinicalTrials.gov Data Downloads
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://clinicaltrials.gov/data-about-studies/download-clinical-trial-data
-  - category: Product
-    description: Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL database containing all clinical trial data, updated daily
-    format: postgres
-    id: clinicaltrialsgov.aact
-    name: AACT Database
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/
-  - category: DocumentationProduct
-    description: Comprehensive documentation covering data structure, data element definitions, and API usage
-    format: http
-    id: clinicaltrialsgov.docs
-    name: ClinicalTrials.gov Documentation
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://clinicaltrials.gov/about-site
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-      - source: ncbigene
-        relation_type: prov:hadPrimarySource
-      - source: pubmed
-        relation_type: prov:hadPrimarySource
-      - source: mesh
-        relation_type: prov:hadPrimarySource
-      - source: pid
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
-      - source: diseases
-        relation_type: prov:hadPrimarySource
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: lincs-l1000
-        relation_type: prov:hadPrimarySource
-      - source: uberon
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: bindingdb
-        relation_type: prov:hadPrimarySource
-      - source: drugbank
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: string
-        relation_type: prov:hadPrimarySource
-      - source: omim
-        relation_type: prov:hadPrimarySource
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: foodb
-        relation_type: prov:hadPrimarySource
-      - source: civic
-        relation_type: prov:hadPrimarySource
-      - source: gdsc
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-      - source: hpa
-        relation_type: prov:hadPrimarySource
-      - source: cl
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
-      - source: metacyc
-        relation_type: prov:hadPrimarySource
-      - source: bv-brc
-        relation_type: prov:hadPrimarySource
-      - source: ncbitaxon
-        relation_type: prov:hadPrimarySource
-      - source: pathophenodb
-        relation_type: prov:hadPrimarySource
-      - source: pfam
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: protcid
-        relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: spoke
-        relation_type: prov:wasInfluencedBy
-  - category: GraphProduct
-    description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
-    id: disgenet.data
-    name: DisGeNET Data
-    original_source:
-      - source: clingen
-        relation_type: prov:hadPrimarySource
-      - source: clinvar
-        relation_type: prov:hadPrimarySource
-      - source: mgd
-        relation_type: prov:hadPrimarySource
-      - source: rgd
-        relation_type: prov:hadPrimarySource
-      - source: orphanet
-        relation_type: prov:hadPrimarySource
-      - source: psygenet
-        relation_type: prov:hadPrimarySource
-      - source: uniprot
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: phewascat
-        relation_type: prov:hadPrimarySource
-      - source: ukbiobank
-        relation_type: prov:hadPrimarySource
-      - source: finngen
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.disgenet.com/
-    secondary_source:
-      - source: disgenet
-        relation_type: prov:wasInfluencedBy
-  - category: ProcessProduct
-    description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
-    id: indra.cogex.code
-    name: INDRA CoGEx Build Code
-    original_source:
-      - source: chembl
-        relation_type: prov:hadPrimarySource
-      - source: sider
-        relation_type: prov:hadPrimarySource
-      - source: reactome
-        relation_type: prov:hadPrimarySource
-      - source: wikipathways
-        relation_type: prov:hadPrimarySource
-      - source: hp
-        relation_type: prov:hadPrimarySource
-      - source: nihreporter
-        relation_type: prov:hadPrimarySource
-      - source: disgenet
-        relation_type: prov:hadPrimarySource
-      - source: pubmed
-        relation_type: prov:hadPrimarySource
-      - source: gwascatalog
-        relation_type: prov:hadPrimarySource
-      - source: cellmarker
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
-      - source: bgee
-        relation_type: prov:hadPrimarySource
-      - source: ccle
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-      - source: indra
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/gyorilab/indra_cogex
-    secondary_source:
-      - source: indra
-        relation_type: prov:wasInfluencedBy
-  - category: Product
-    description: Complete RepoDB dataset containing drug repositioning successes and failures, with approved drugs, indications, and clinical trial outcomes
-    format: csv
-    id: repodb.full_dataset
-    name: RepoDB Full Dataset
-    original_source:
-      - source: drugcentral
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-      - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when accessing file
-      - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length header found
-  - category: Product
-    description: Clinical trial information from ClinicalTrials.gov
-    format: http
-    id: genecards.clinical.trials
-    name: GeneCards Clinical Trials
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://www.genecards.org/
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
-  - category: Product
-    description: Cloud-based PostgreSQL database with daily refreshed clinical trial data, accessible via standard PostgreSQL clients
-    format: postgres
-    id: aact.database
-    name: AACT Cloud Database
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/connect
-  - category: Product
-    description: Static downloadable copies of the complete AACT database
-    format: postgres
-    id: aact.downloads
-    name: AACT Database Downloads
-    original_source:
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/downloads
+- category: GraphicalInterface
+  description: Web-based interface for searching and browsing clinical trials with
+    advanced filtering and export capabilities
+  format: http
+  id: clinicaltrialsgov.search
+  name: ClinicalTrials.gov Search Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://clinicaltrials.gov/search
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to all clinical trial records
+    with JSON and CSV output formats
+  format: http
+  id: clinicaltrialsgov.api
+  is_public: true
+  name: ClinicalTrials.gov API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://clinicaltrials.gov/data-api/api
+- category: Product
+  description: Bulk downloads of all clinical trial records in multiple formats including
+    XML, JSON, and CSV
+  format: mixed
+  id: clinicaltrialsgov.downloads
+  name: ClinicalTrials.gov Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://clinicaltrials.gov/data-about-studies/download-clinical-trial-data
+- category: Product
+  description: Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL
+    database containing all clinical trial data, updated daily
+  format: postgres
+  id: clinicaltrialsgov.aact
+  name: AACT Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/
+- category: DocumentationProduct
+  description: Comprehensive documentation covering data structure, data element definitions,
+    and API usage
+  format: http
+  id: clinicaltrialsgov.docs
+  name: ClinicalTrials.gov Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://clinicaltrials.gov/about-site
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: lincs-l1000
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: gdsc
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: metacyc
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: pathophenodb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: protcid
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: spoke
+- category: GraphProduct
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clingen
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: mgd
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: psygenet
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: phewascat
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: finngen
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://www.disgenet.com/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: disgenet
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: nihreporter
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: cellmarker
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: indra
+- category: Product
+  description: Complete RepoDB dataset containing drug repositioning successes and
+    failures, with approved drugs, indications, and clinical trial outcomes
+  format: csv
+  id: repodb.full_dataset
+  name: RepoDB Full Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Clinical trial information from ClinicalTrials.gov
+  format: http
+  id: genecards.clinical.trials
+  name: GeneCards Clinical Trials
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Cloud-based PostgreSQL database with daily refreshed clinical trial
+    data, accessible via standard PostgreSQL clients
+  format: postgres
+  id: aact.database
+  name: AACT Cloud Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/connect
+- category: Product
+  description: Static downloadable copies of the complete AACT database
+  format: postgres
+  id: aact.downloads
+  name: AACT Database Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/downloads
 publications:
-  - authors:
-      - Zarin DA
-      - Tse T
-      - Williams RJ
-      - Califf RM
-      - Ide NC
-    doi: doi:10.1056/NEJMsa1012065
-    id: https://pubmed.ncbi.nlm.nih.gov/21366476/
-    journal: The New England Journal of Medicine
-    preferred: true
-    title: The ClinicalTrials.gov results database--update and key issues
-    year: '2011'
+- authors:
+  - Zarin DA
+  - Tse T
+  - Williams RJ
+  - Califf RM
+  - Ide NC
+  doi: doi:10.1056/NEJMsa1012065
+  id: https://pubmed.ncbi.nlm.nih.gov/21366476/
+  journal: The New England Journal of Medicine
+  preferred: true
+  title: The ClinicalTrials.gov results database--update and key issues
+  year: '2011'
 repository: https://github.com/ctti-clinicaltrials/aact
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # ClinicalTrials.gov
 
 ## Overview
