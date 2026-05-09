@@ -9,8 +9,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 1440676039
 product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
-secondary_source:
-  - source: ikraph
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

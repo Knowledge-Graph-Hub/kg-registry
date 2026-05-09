@@ -7,4 +7,7 @@ name: nbo.owl
 product_file_size: 372935
 product_url: http://purl.obolibrary.org/obo/nbo.owl
 layout: product_detail
+original_source:
+  - source: nbo
+    relation_type: prov:hadPrimarySource
 ---

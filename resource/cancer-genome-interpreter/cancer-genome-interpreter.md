@@ -22,12 +22,18 @@ products:
     id: cancer-genome-interpreter.portal
     name: Cancer Genome Interpreter Portal
     product_url: https://www.cancergenomeinterpreter.org/
+    original_source:
+      - source: cancer-genome-interpreter
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for programmatic access to annotation and interpretation endpoints
     format: http
     id: cancer-genome-interpreter.api
     name: Cancer Genome Interpreter REST API
     product_url: https://www.cancergenomeinterpreter.org/rest_api
+    original_source:
+      - source: cancer-genome-interpreter
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
     dump_format: neo4j

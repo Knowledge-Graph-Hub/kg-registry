@@ -1,11 +1,13 @@
 ---
 category: OntologyProduct
-description: Complete ontology, plus inter-ontology axioms, and imports modules merged
-  in
+description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
 format: json
 id: cl.json
 name: CL OBOGraph-JSON format edition
 product_file_size: 39845315
 product_url: http://purl.obolibrary.org/obo/cl.json
 layout: product_detail
+original_source:
+  - source: cl
+    relation_type: prov:hadPrimarySource
 ---

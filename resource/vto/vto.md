@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
-  contact_details:
-  - contact_type: email
-    value: balhoff@renci.org
-  - contact_type: github
-    value: balhoff
+  - category: Individual
+    label: Jim Balhoff
+    orcid: 0000-0002-8688-6599
+    contact_details:
+      - contact_type: email
+        value: balhoff@renci.org
+      - contact_type: github
+        value: balhoff
 creation_date: '2025-09-29T00:00:00Z'
 description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 id: vto
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,26 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Vertebrate Taxonomy Ontology
 products:
-- category: OntologyProduct
-  description: Vertebrate Taxonomy Ontology in OWL format
-  format: owl
-  id: vto.owl
-  name: vto.owl
-  product_file_size: 152582746
-  product_url: http://purl.obolibrary.org/obo/vto.owl
-- category: OntologyProduct
-  description: Vertebrate Taxonomy Ontology in OBO format
-  format: obo
-  id: vto.obo
-  name: vto.obo
-  product_file_size: 27544534
-  product_url: http://purl.obolibrary.org/obo/vto.obo
+  - category: OntologyProduct
+    description: Vertebrate Taxonomy Ontology in OWL format
+    format: owl
+    id: vto.owl
+    name: vto.owl
+    product_file_size: 152582746
+    product_url: http://purl.obolibrary.org/obo/vto.owl
+    original_source:
+      - source: vto
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Vertebrate Taxonomy Ontology in OBO format
+    format: obo
+    id: vto.obo
+    name: vto.obo
+    product_file_size: 27544534
+    product_url: http://purl.obolibrary.org/obo/vto.obo
+    original_source:
+      - source: vto
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 publications:
-- id: https://doi.org/10.1186/2041-1480-4-34
-  title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
-    organism and species phenotypes'
+  - id: https://doi.org/10.1186/2041-1480-4-34
+    title: 'The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes'
 ---
+
 ## Description
 
 Comprehensive hierarchy of extinct and extant vertebrate taxa.

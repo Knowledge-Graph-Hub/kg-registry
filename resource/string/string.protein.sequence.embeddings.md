@@ -7,4 +7,7 @@ name: STRING Protein Sequence Embeddings
 product_file_size: 41108799687
 product_url: https://stringdb-downloads.org/download/protein.sequence.embeddings.v12.0.h5
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

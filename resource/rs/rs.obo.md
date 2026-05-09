@@ -6,4 +6,7 @@ id: rs.obo
 name: rs.obo
 product_url: http://purl.obolibrary.org/obo/rs.obo
 layout: product_detail
+original_source:
+  - source: rs
+    relation_type: prov:hadPrimarySource
 ---

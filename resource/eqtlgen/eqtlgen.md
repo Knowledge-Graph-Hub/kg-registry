@@ -18,6 +18,9 @@ products:
     name: Significant cis-eQTLs
     product_file_size: 322775879
     product_url: https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2019-12-11-cis-eQTLsFDR0.05-ProbeLevel-CohortInfoRemoved-BonferroniAdded.txt.gz
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Full cis-eQTL summary statistics from Phase I meta-analysis at the probe level, with cohort information removed and Bonferroni-adjusted p-values added.
     format: tsv
@@ -25,6 +28,9 @@ products:
     name: Full cis-eQTL Summary Statistics
     product_file_size: 3880187026
     product_url: https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2019-12-11-cis-eQTLsFDR-ProbeLevel-CohortInfoRemoved-BonferroniAdded.txt.gz
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Significant trans-eQTL associations from Phase I meta-analysis for ~10,000 known genetic risk variants (FDR < 0.05), including Bonferroni-adjusted p-values.
     format: tsv
@@ -32,6 +38,9 @@ products:
     name: Significant trans-eQTLs
     product_file_size: 1839918
     product_url: https://molgenis26.gcc.rug.nl/downloads/eqtlgen/trans-eqtl/2018-09-04-trans-eQTLsFDR0.05-CohortInfoRemoved-BonferroniAdded.txt.gz
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Full trans-eQTL summary statistics from Phase I meta-analysis for ~10,000 known genetic risk variants, with cohort information removed and Bonferroni-adjusted p-values added.
     format: tsv
@@ -39,6 +48,9 @@ products:
     name: Full trans-eQTL Summary Statistics
     product_file_size: 6090297103
     product_url: https://molgenis26.gcc.rug.nl/downloads/eqtlgen/trans-eqtl/2018-09-04-trans-eQTLsFDR-CohortInfoRemoved-BonferroniAdded.txt.gz
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: targz
     description: cis-eQTL results formatted for Summary-data-based Mendelian Randomization (SMR) analysis, enabling inference of putatively causal genes.
@@ -47,6 +59,9 @@ products:
     name: SMR-formatted cis-eQTLs
     product_file_size: 1372512049
     product_url: https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/SMR_formatted/cis-eQTL-SMR_20191212.tar.gz
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Allele frequencies for all tested SNPs based on 26,609 eQTLGen samples (excluding FHS), including combined allele counts and minor allele frequencies.
     format: tsv
@@ -54,24 +69,36 @@ products:
     name: Allele Frequencies
     product_file_size: 240045342
     product_url: https://molgenis26.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2018-07-18_SNP_AF_for_AlleleB_combined_allele_counts_and_MAF_pos_added.txt.gz
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web interface for browsing significant cis-eQTL, trans-eQTL, and eQTS results from Phase I, with SMR-prioritised gene lists for various traits.
     format: http
     id: eqtlgen.phase1_browser
     name: eQTLGen Phase I Browser
     product_url: https://www.eqtlgen.org/phase1.html
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Analysis cookbook and documentation for eQTLGen Phase II genome-wide eQTL meta-analysis in blood.
     format: http
     id: eqtlgen.phase2_cookbook
     name: eQTLGen Phase II Cookbook
     product_url: https://eqtlgen.github.io/eqtlgen-web-site/eQTLGen-p2-cookbook.html
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Website for the single-cell eQTLGen project, providing resources and publications for single-cell eQTL analysis.
     format: http
     id: eqtlgen.sc_website
     name: Single-cell eQTLGen Website
     product_url: https://www.eqtlgen.org/sc
+    original_source:
+      - source: eqtlgen
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)
     format: neo4j

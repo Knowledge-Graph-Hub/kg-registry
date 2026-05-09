@@ -133,9 +133,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 3088718
     product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
-    secondary_source:
-      - source: interpro
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

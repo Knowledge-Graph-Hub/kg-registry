@@ -6,4 +6,7 @@ id: eggnog.portal
 name: eggNOG Portal
 product_url: https://eggnogdb.org/
 layout: product_detail
+original_source:
+  - source: eggnog
+    relation_type: prov:hadPrimarySource
 ---

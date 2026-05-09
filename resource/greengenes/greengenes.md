@@ -33,36 +33,54 @@ products:
     id: greengenes.portal
     name: Greengenes2 Web Portal
     product_url: https://greengenes2.ucsd.edu/
+    original_source:
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP archive containing Greengenes2 database files including phylogenetic trees, taxonomy, and sequence data
     format: http
     id: greengenes.ftp
     name: Greengenes2 FTP Archive
     product_url: http://ftp.microbio.me/greengenes_release/current/
+    original_source:
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Reference phylogenetic tree in Newick format containing unified microbial phylogeny
     format: txt
     id: greengenes.phylogeny
     name: Greengenes2 Phylogenetic Tree
     product_url: http://ftp.microbio.me/greengenes_release/current/
+    original_source:
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: 16S rRNA gene sequences in FASTA format for all organisms in the database
     format: fasta
     id: greengenes.sequences
     name: Greengenes2 Sequences
     product_url: http://ftp.microbio.me/greengenes_release/current/
+    original_source:
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Taxonomic assignments and metadata for all sequences in the database
     format: tsv
     id: greengenes.taxonomy
     name: Greengenes2 Taxonomy
     product_url: http://ftp.microbio.me/greengenes_release/current/
+    original_source:
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: QIIME 2 plugin for integrating Greengenes2 data into microbiome analysis workflows
     format: python
     id: greengenes.qiime2-plugin
     name: q2-greengenes2 Plugin
     product_url: https://github.com/biocore/q2-greengenes2/
+    original_source:
+      - source: greengenes
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

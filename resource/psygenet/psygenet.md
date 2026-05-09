@@ -18,6 +18,9 @@ products:
     id: psygenet.genedisease
     name: PsyGeNET Gene-Disease Associations
     product_url: http://www.psygenet.org/
+    original_source:
+      - source: psygenet
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
     id: disgenet.data

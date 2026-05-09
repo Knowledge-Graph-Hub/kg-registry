@@ -1,12 +1,14 @@
 ---
 category: Product
 compression: gzip
-description: Tab-separated verbatim species interaction pairs (original unresolved
-  names)
+description: Tab-separated verbatim species interaction pairs (original unresolved names)
 format: tsv
 id: globi.verbatim_interactions.tsv
 name: GloBI verbatim interactions (TSV)
 product_file_size: 825458639
 product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

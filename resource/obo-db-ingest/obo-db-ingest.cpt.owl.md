@@ -7,4 +7,7 @@ name: cpt OWL
 product_file_size: 7552
 product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

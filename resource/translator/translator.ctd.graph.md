@@ -16,10 +16,9 @@ node_count: 86425
 original_source:
   - source: ctd
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/ctd/latest/
 versions:
   - '2026_03_27'
   - ctd_February_2026_b588520f_2025sep1_4.3.6

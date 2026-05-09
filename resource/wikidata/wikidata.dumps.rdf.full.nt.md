@@ -8,4 +8,7 @@ name: Wikidata RDF Full Dump (N-Triples)
 product_file_size: 246159505683
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.nt.gz
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

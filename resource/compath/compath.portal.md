@@ -6,4 +6,7 @@ id: compath.portal
 name: ComPath Portal
 product_url: https://compath.scai.fraunhofer.de/
 layout: product_detail
+original_source:
+  - source: compath
+    relation_type: prov:hadPrimarySource
 ---

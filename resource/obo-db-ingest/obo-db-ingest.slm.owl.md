@@ -11,4 +11,7 @@ name: slm OWL
 product_file_size: 61858122
 product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

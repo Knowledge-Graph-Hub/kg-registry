@@ -6,4 +6,7 @@ id: xenbase.wiki
 name: Xenbase Community Wiki
 product_url: https://wiki.xenbase.org/xenwiki/index.php?title=Xenopus_Wiki_-_Home
 layout: product_detail
+original_source:
+  - source: xenbase
+    relation_type: prov:hadPrimarySource
 ---

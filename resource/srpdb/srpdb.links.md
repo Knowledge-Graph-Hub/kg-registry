@@ -6,4 +6,7 @@ id: srpdb.links
 name: Useful Links
 product_url: https://rth.dk/resources/rnp/SRPDB/SRP-Links.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

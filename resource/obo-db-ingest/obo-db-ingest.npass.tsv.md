@@ -10,10 +10,9 @@ name: npass Nodes TSV
 original_source:
   - source: npass
     relation_type: prov:hadPrimarySource
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 product_file_size: 2460413
 product_url: https://w3id.org/biopragmatics/resources/npass/npass.tsv
-secondary_source:
-  - source: obo-db-ingest
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -7,4 +7,7 @@ name: kisao.owl
 product_file_size: 96237
 product_url: http://purl.obolibrary.org/obo/kisao.owl
 layout: product_detail
+original_source:
+  - source: kisao
+    relation_type: prov:hadPrimarySource
 ---

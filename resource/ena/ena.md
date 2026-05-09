@@ -17,12 +17,18 @@ products:
     id: ena.browser
     name: ENA Browser
     product_url: https://www.ebi.ac.uk/ena/browser/home
+    original_source:
+      - source: ena
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for programmatic access to ENA data, including sequence retrieval and metadata queries.
     format: http
     id: ena.api
     name: ENA REST API
     product_url: https://www.ebi.ac.uk/ena/browser/api
+    original_source:
+      - source: ena
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP archive with nucleotide sequences, assemblies, and associated data files.
     format: http
@@ -31,24 +37,36 @@ products:
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/ena
     warnings:
       - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
+    original_source:
+      - source: ena
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interface for setting up and managing pre-release and public Data Hubs for pathogen and other sequence data.
     format: http
     id: ena.datahubs
     name: ENA Data Hubs Portal
     product_url: https://www.ebi.ac.uk/ena/browser/data-hubs
+    original_source:
+      - source: ena
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Documentation and help resources for ENA, including submission guidelines and API documentation.
     format: http
     id: ena.docs
     name: ENA Documentation
     product_url: https://www.ebi.ac.uk/ena/browser/support
+    original_source:
+      - source: ena
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Training resources for ENA users, including tutorials and webinars.
     format: http
     id: ena.training
     name: ENA Training
     product_url: https://www.ebi.ac.uk/training/services/ena
+    original_source:
+      - source: ena
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

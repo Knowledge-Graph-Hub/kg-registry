@@ -8,4 +8,7 @@ name: SIDER MedDRA Dictionary
 product_file_size: 1084933
 product_url: http://sideeffects.embl.de/media/download/meddra.tsv.gz
 layout: product_detail
+original_source:
+  - source: sider
+    relation_type: prov:hadPrimarySource
 ---

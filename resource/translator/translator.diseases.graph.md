@@ -16,10 +16,9 @@ node_count: 22024
 original_source:
   - source: diseases
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/diseases/latest/
 versions:
   - '2026_03_19'
   - diseases_2026_03_17_d92e2cc6_2025sep1_4.3.6

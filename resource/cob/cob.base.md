@@ -7,4 +7,7 @@ name: COB Base Module
 product_file_size: 2798
 product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
 layout: product_detail
+original_source:
+  - source: cob
+    relation_type: prov:hadPrimarySource
 ---

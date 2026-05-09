@@ -7,4 +7,7 @@ name: gno.owl
 product_file_size: 215188241
 product_url: http://purl.obolibrary.org/obo/gno.owl
 layout: product_detail
+original_source:
+  - source: gno
+    relation_type: prov:hadPrimarySource
 ---

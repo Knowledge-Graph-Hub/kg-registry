@@ -8,4 +8,7 @@ name: Wikidata Lexeme JSON Dump
 product_file_size: 575745192
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

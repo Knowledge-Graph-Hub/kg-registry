@@ -7,8 +7,5 @@ original_source:
   - source: goldterms
     relation_type: prov:hadPrimarySource
 product_url: https://bioportal.bioontology.org/ontologies/GOLDTERMS
-secondary_source:
-  - source: goldterms
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -32,9 +32,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 154279
     product_url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
-    secondary_source:
-      - source: mixs
-        relation_type: prov:wasInfluencedBy
 repository: https://github.com/GenomicsStandardsConsortium/mixs
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2025-09-27T00:00:00Z'

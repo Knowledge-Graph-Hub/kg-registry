@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Damion Dooley
-  orcid: 0000-0002-8844-9165
-  contact_details:
-  - contact_type: email
-    value: damion_dooley@sfu.ca
-  - contact_type: github
-    value: ddooley
+  - category: Individual
+    label: Damion Dooley
+    orcid: 0000-0002-8844-9165
+    contact_details:
+      - contact_type: email
+        value: damion_dooley@sfu.ca
+      - contact_type: github
+        value: ddooley
 creation_date: '2025-09-29T00:00:00Z'
-description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
-  to identify, document and research foodborne pathogens and associated outbreaks.
+description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://genepio.org/
 id: genepio
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Genomic Epidemiology Ontology
 products:
-- category: OntologyProduct
-  description: Genomic Epidemiology Ontology in OWL format
-  format: owl
-  id: genepio.owl
-  name: genepio.owl
-  product_file_size: 732830
-  product_url: http://purl.obolibrary.org/obo/genepio.owl
+  - category: OntologyProduct
+    description: Genomic Epidemiology Ontology in OWL format
+    format: owl
+    id: genepio.owl
+    name: genepio.owl
+    product_file_size: 732830
+    product_url: http://purl.obolibrary.org/obo/genepio.owl
+    original_source:
+      - source: genepio
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/GenEpiO/genepio
 publications: []
 ---
+
 ## Description
 
 The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.

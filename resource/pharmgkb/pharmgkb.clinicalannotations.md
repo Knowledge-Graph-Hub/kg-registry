@@ -8,4 +8,7 @@ name: PharmKB Clinical Annotations
 product_file_size: 1231768
 product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

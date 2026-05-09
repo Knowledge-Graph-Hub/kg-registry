@@ -6,4 +6,7 @@ id: evlncrnas.help
 name: Help Documentation
 product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/help
 layout: product_detail
+original_source:
+  - source: evlncrnas
+    relation_type: prov:hadPrimarySource
 ---

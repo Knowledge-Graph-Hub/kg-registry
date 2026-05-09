@@ -13,8 +13,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 18605
 product_url: https://databus.dbpedia.org/dbpedia/collections/latest-core
-secondary_source:
-  - source: dbpedia
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

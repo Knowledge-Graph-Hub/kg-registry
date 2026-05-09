@@ -7,4 +7,7 @@ is_public: true
 name: Enzyme Commission Official Database
 product_url: https://www.enzyme-database.org/
 layout: product_detail
+original_source:
+  - source: ec
+    relation_type: prov:hadPrimarySource
 ---

@@ -72,9 +72,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 376501785
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-      - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
@@ -119,17 +116,14 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1807360397
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-      - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: Code for building RTX-KG2, in Python
     id: rtx-kg2.code
     name: Code for building RTX-KG2
     product_url: https://github.com/RTXteam/RTX-KG2
-    secondary_source:
+    original_source:
       - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Neo4j distribution of the RTX-KG2 as a graph database
     dump_format: neo4j
@@ -175,9 +169,6 @@ products:
       - source: semmeddb
         relation_type: prov:hadPrimarySource
     product_url: https://arax.ncats.io/
-    secondary_source:
-      - source: rtx-kg2
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Wood EC

@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jonathan Karr
-  orcid: 0000-0002-2605-5080
-  contact_details:
-  - contact_type: email
-    value: jonrkarr@gmail.com
-  - contact_type: github
-    value: jonrkarr
+  - category: Individual
+    label: Jonathan Karr
+    orcid: 0000-0002-2605-5080
+    contact_details:
+      - contact_type: email
+        value: jonrkarr@gmail.com
+      - contact_type: github
+        value: jonrkarr
 creation_date: '2025-09-29T00:00:00Z'
-description: A classification of algorithms for simulating biology, their parameters,
-  and their outputs
+description: A classification of algorithms for simulating biology, their parameters, and their outputs
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/SED-ML/KiSAO
 id: kisao
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,18 +25,22 @@ license:
   label: Artistic License 2.0
 name: Kinetic Simulation Algorithm Ontology
 products:
-- category: OntologyProduct
-  description: Kinetic Simulation Algorithm Ontology in OWL format
-  format: owl
-  id: kisao.owl
-  name: kisao.owl
-  product_file_size: 96237
-  product_url: http://purl.obolibrary.org/obo/kisao.owl
+  - category: OntologyProduct
+    description: Kinetic Simulation Algorithm Ontology in OWL format
+    format: owl
+    id: kisao.owl
+    name: kisao.owl
+    product_file_size: 96237
+    product_url: http://purl.obolibrary.org/obo/kisao.owl
+    original_source:
+      - source: kisao
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/SED-ML/KiSAO
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
-  title: Controlled vocabularies and semantics in systems biology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
+    title: Controlled vocabularies and semantics in systems biology
 ---
+
 ## Description
 
 A classification of algorithms for simulating biology, their parameters, and their outputs

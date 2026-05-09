@@ -10,4 +10,7 @@ name: icd11 SSSOM
 product_file_size: 297909
 product_url: https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

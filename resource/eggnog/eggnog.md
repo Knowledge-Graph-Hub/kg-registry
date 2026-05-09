@@ -18,12 +18,18 @@ products:
     id: eggnog.portal
     name: eggNOG Portal
     product_url: https://eggnogdb.org/
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Download interface for eggNOG annotation and orthology data releases.
     format: http
     id: eggnog.download
     name: eggNOG Downloads
     product_url: https://eggnogdb.org/downloads/
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: All protein sequences covered in eggNOG 7.
@@ -32,6 +38,9 @@ products:
     name: eggNOG 7 Proteins
     product_file_size: 12753324465
     product_url: https://eggnogdb.org/public/eggnog7/e7.proteins.fa.gz
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Tar archive containing orthologous group FASTA sequence files.
     format: mixed
@@ -39,6 +48,9 @@ products:
     name: eggNOG 7 OG FASTA Sequences
     product_file_size: 28479795200
     product_url: https://eggnogdb.org/public/eggnog7/e7.og_fasta_sequences.tar
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Orthologous group information table including KEGG and GO annotations.
@@ -47,6 +59,9 @@ products:
     name: eggNOG 7 OG Info (KEGG/GO)
     product_file_size: 967458606
     product_url: https://eggnogdb.org/public/eggnog7/e7.og_info_kegg_go.tsv.gz
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Protein family information table.
@@ -55,6 +70,9 @@ products:
     name: eggNOG 7 Protein Families
     product_file_size: 807966782
     product_url: https://eggnogdb.org/public/eggnog7/e7.protein_families.tsv.gz
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Table listing orthologous groups per protein family.
@@ -63,6 +81,9 @@ products:
     name: eggNOG 7 Protein Family to OGs
     product_file_size: 15838901
     product_url: https://eggnogdb.org/public/eggnog7/e7.clu2ogs.tsv.gz
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Taxonomic information table for genomes included in eggNOG 7.
@@ -71,6 +92,9 @@ products:
     name: eggNOG 7 Taxonomic Information
     product_file_size: 1270490
     product_url: https://eggnogdb.org/public/eggnog7/e7.taxid_info.tsv.gz
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Protein family phylogenetic trees table.
@@ -79,6 +103,9 @@ products:
     name: eggNOG 7 Protein Family Trees
     product_file_size: 2753498624
     product_url: https://eggnogdb.org/public/eggnog7/e7.trees.tsv.gz
+    original_source:
+      - source: eggnog
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

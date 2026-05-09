@@ -29,9 +29,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 204030087
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
-    secondary_source:
-      - source: hra-kg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, JSON-LD format
     format: jsonld
@@ -42,9 +39,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 18043
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
-    secondary_source:
-      - source: hra-kg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, RDF/XML format
     format: rdfxml
@@ -55,9 +49,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 185060502
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
-    secondary_source:
-      - source: hra-kg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, N-Triples format
     format: ntriples
@@ -68,9 +59,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 291382102
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
-    secondary_source:
-      - source: hra-kg
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, N-Quads format
     format: nquads
@@ -81,9 +69,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 376981902
     product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
-    secondary_source:
-      - source: hra-kg
-        relation_type: prov:wasInfluencedBy
 repository: https://github.com/hubmapconsortium/hra-kg
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2025-08-12T00:00:00Z'

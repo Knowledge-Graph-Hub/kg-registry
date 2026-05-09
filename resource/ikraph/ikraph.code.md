@@ -11,8 +11,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_url: https://github.com/myinsilicom/iKraph
 repository: https://github.com/myinsilicom/iKraph
-secondary_source:
-  - source: ikraph
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

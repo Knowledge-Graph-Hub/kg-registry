@@ -18,30 +18,45 @@ products:
     id: compath.portal
     name: ComPath Portal
     product_url: https://compath.scai.fraunhofer.de/
+    original_source:
+      - source: compath
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Overview interface for pathway databases integrated in ComPath.
     format: http
     id: compath.overview
     name: ComPath Overview
     product_url: https://compath.scai.fraunhofer.de/overview
+    original_source:
+      - source: compath
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interface for pathway similarity comparisons.
     format: http
     id: compath.similarity
     name: ComPath Similarity Explorer
     product_url: https://compath.scai.fraunhofer.de/similarity
+    original_source:
+      - source: compath
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Catalog interface for browsing curated pathway mappings.
     format: http
     id: compath.catalog
     name: ComPath Catalog
     product_url: https://compath.scai.fraunhofer.de/catalog
+    original_source:
+      - source: compath
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Curation protocol and methodology documentation for ComPath mappings.
     format: http
     id: compath.curation-protocol
     name: ComPath Curation Protocol
     product_url: https://compath.scai.fraunhofer.de/curation_protocol
+    original_source:
+      - source: compath
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Core UniBioMap graph edges file.
     format: csv

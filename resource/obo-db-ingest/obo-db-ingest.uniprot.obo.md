@@ -11,4 +11,7 @@ name: uniprot OBO
 product_file_size: 25430978
 product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

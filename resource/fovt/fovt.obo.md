@@ -7,4 +7,7 @@ name: fovt.obo
 product_file_size: 1628339
 product_url: http://purl.obolibrary.org/obo/fovt.obo
 layout: product_detail
+original_source:
+  - source: fovt
+    relation_type: prov:hadPrimarySource
 ---

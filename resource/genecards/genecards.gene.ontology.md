@@ -5,6 +5,8 @@ format: http
 id: genecards.gene.ontology
 name: GeneCards Gene Ontology Annotations
 original_source:
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: go
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/

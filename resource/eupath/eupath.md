@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
-  contact_details:
-  - contact_type: email
-    value: jiezhen@med.umich.edu
-  - contact_type: github
-    value: zhengj2007
+  - category: Individual
+    label: Jie Zheng
+    orcid: 0000-0002-2999-0103
+    contact_details:
+      - contact_type: email
+        value: jiezhen@med.umich.edu
+      - contact_type: github
+        value: zhengj2007
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
-  Genomics Resource (VEuPathDB; https://veupathdb.org).
+description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 id: eupath
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: VEuPathDB ontology
 products:
-- category: OntologyProduct
-  description: VEuPathDB ontology in OWL format
-  format: owl
-  id: eupath.owl
-  name: eupath.owl
-  product_file_size: 438457
-  product_url: http://purl.obolibrary.org/obo/eupath.owl
+  - category: OntologyProduct
+    description: VEuPathDB ontology in OWL format
+    format: owl
+    id: eupath.owl
+    name: eupath.owl
+    product_file_size: 438457
+    product_url: http://purl.obolibrary.org/obo/eupath.owl
+    original_source:
+      - source: eupath
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 publications:
-- id: https://doi.org/10.5281/zenodo.6685957
-  title: Malaria study data integration and information retrieval based on OBO Foundry
-    ontologies.
+  - id: https://doi.org/10.5281/zenodo.6685957
+    title: Malaria study data integration and information retrieval based on OBO Foundry ontologies.
 ---
+
 ## Description
 
 An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).

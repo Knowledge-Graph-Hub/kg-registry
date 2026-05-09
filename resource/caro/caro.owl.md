@@ -7,4 +7,7 @@ name: caro.owl
 product_file_size: 586722
 product_url: http://purl.obolibrary.org/obo/caro.owl
 layout: product_detail
+original_source:
+  - source: caro
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: psdo.owl
 product_file_size: 9703
 product_url: http://purl.obolibrary.org/obo/psdo.owl
 layout: product_detail
+original_source:
+  - source: psdo
+    relation_type: prov:hadPrimarySource
 ---

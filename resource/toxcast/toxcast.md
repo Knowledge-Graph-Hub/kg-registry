@@ -50,16 +50,25 @@ products:
     description: Landing page describing the ToxCast high-throughput screening program and providing links to data and documentation.
     category: GraphicalInterface
     product_url: https://www.epa.gov/chemical-research/toxicity-forecasting
+    original_source:
+      - source: toxcast
+        relation_type: prov:hadPrimarySource
   - id: toxcast.api
     name: CompTox Chemicals Dashboard API (ToxCast)
     description: REST API providing programmatic access to ToxCast-related assay, chemical, and bioactivity data via the CompTox Chemicals Dashboard.
     category: ProgrammingInterface
     product_url: https://api-ccte.epa.gov/dashboard/
+    original_source:
+      - source: toxcast
+        relation_type: prov:hadPrimarySource
   - id: toxcast.downloads
     name: ToxCast Bulk Data Downloads
     description: Bulk release archives (assay annotations, hit-call data, summary tables) for ToxCast phases.
     category: Product
     product_url: https://www.epa.gov/chemical-research/toxicity-forecasting#data
+    original_source:
+      - source: toxcast
+        relation_type: prov:hadPrimarySource
 ---
 
 # ToxCast

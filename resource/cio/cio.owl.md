@@ -7,4 +7,7 @@ name: cio.owl
 product_file_size: 6187
 product_url: http://purl.obolibrary.org/obo/cio.owl
 layout: product_detail
+original_source:
+  - source: cio
+    relation_type: prov:hadPrimarySource
 ---

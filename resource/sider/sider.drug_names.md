@@ -7,4 +7,7 @@ name: SIDER Drug Names
 product_file_size: 34759
 product_url: http://sideeffects.embl.de/media/download/drug_names.tsv
 layout: product_detail
+original_source:
+  - source: sider
+    relation_type: prov:hadPrimarySource
 ---

@@ -14,12 +14,11 @@ license:
 name: Translator Ubergraph KGX Graph
 node_count: 580326
 original_source:
+  - source: translator
+    relation_type: prov:hadPrimarySource
   - source: ubergraph
     relation_type: prov:hadPrimarySource
 product_url: https://kgx-storage.rtx.ai/releases/ubergraph/latest/
-secondary_source:
-  - source: translator
-    relation_type: prov:wasInfluencedBy
 versions:
   - '2026_03_27'
   - ubergraph_2026-03-08_0fef3756_2025sep1_4.3.6

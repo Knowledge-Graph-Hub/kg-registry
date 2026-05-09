@@ -7,4 +7,7 @@ name: mmusdv.obo
 product_file_size: 104741
 product_url: http://purl.obolibrary.org/obo/mmusdv.obo
 layout: product_detail
+original_source:
+  - source: mmusdv
+    relation_type: prov:hadPrimarySource
 ---

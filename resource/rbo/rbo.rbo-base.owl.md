@@ -7,4 +7,7 @@ name: rbo.rbo-base.owl
 product_file_size: 47966
 product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
 layout: product_detail
+original_source:
+  - source: rbo
+    relation_type: prov:hadPrimarySource
 ---

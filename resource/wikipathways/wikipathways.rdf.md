@@ -6,4 +6,7 @@ id: wikipathways.rdf
 name: WikiPathways RDF
 product_url: http://data.wikipathways.org/current/rdf/
 layout: product_detail
+original_source:
+  - source: wikipathways
+    relation_type: prov:hadPrimarySource
 ---

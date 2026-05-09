@@ -8,12 +8,11 @@ license:
   label: CC0-1.0
 name: ror Nodes TSV
 original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
   - source: ror
     relation_type: prov:hadPrimarySource
 product_file_size: 5381101
 product_url: https://w3id.org/biopragmatics/resources/ror/ror.tsv
-secondary_source:
-  - source: obo-db-ingest
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

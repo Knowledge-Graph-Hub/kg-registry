@@ -7,4 +7,7 @@ name: omp.obo
 product_file_size: 124064
 product_url: http://purl.obolibrary.org/obo/omp.obo
 layout: product_detail
+original_source:
+  - source: omp
+    relation_type: prov:hadPrimarySource
 ---

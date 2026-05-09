@@ -6,4 +6,7 @@ id: goa.documentation
 name: GOA Documentation
 product_url: https://www.ebi.ac.uk/GOA/newto
 layout: product_detail
+original_source:
+  - source: goa
+    relation_type: prov:hadPrimarySource
 ---

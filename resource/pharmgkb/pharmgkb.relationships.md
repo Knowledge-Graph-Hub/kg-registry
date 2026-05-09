@@ -8,4 +8,7 @@ name: PharmKB Relationships
 product_file_size: 1261136
 product_url: https://api.pharmgkb.org/v1/download/file/data/relationships.zip
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

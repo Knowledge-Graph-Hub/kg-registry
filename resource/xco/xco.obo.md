@@ -7,4 +7,7 @@ name: xco.obo
 product_file_size: 1092460
 product_url: http://purl.obolibrary.org/obo/xco.obo
 layout: product_detail
+original_source:
+  - source: xco
+    relation_type: prov:hadPrimarySource
 ---

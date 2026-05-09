@@ -7,4 +7,7 @@ name: ecto.ecto-base.obo
 product_file_size: 97093
 product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.obo
 layout: product_detail
+original_source:
+  - source: ecto
+    relation_type: prov:hadPrimarySource
 ---

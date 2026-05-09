@@ -20,8 +20,5 @@ original_source:
   - source: hgnc
     relation_type: prov:hadPrimarySource
 product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
-secondary_source:
-  - source: biogrid
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

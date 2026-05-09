@@ -6,4 +6,7 @@ id: rfam.fasta
 name: Rfam FASTA Sequences
 product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
 layout: product_detail
+original_source:
+  - source: rfam
+    relation_type: prov:hadPrimarySource
 ---

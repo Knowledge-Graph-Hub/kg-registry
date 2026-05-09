@@ -14,12 +14,11 @@ license:
 name: Translator TTD KGX Graph
 node_count: 25564
 original_source:
+  - source: translator
+    relation_type: prov:hadPrimarySource
   - source: ttd
     relation_type: prov:hadPrimarySource
 product_url: https://kgx-storage.rtx.ai/releases/ttd/latest/
-secondary_source:
-  - source: translator
-    relation_type: prov:wasInfluencedBy
 versions:
   - '2026_03_06'
   - ttd_2024_03_30_0a11135d_2025sep1_4.3.6

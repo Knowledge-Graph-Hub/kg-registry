@@ -222,7 +222,9 @@ displayedGraph = {{
   ],
   links: [
     {{ source: 'res1', target: 'res1.graph', type: 'has_product' }},
-    {{ source: 'res1.graph', target: 'res2', type: 'derived_from' }},
+    {{ source: 'res1.graph', target: 'res1', type: 'derived_from', relationType: 'prov:hadPrimarySource' }},
+    {{ source: 'res1.graph', target: 'res2', type: 'derived_from', relationType: 'prov:wasInfluencedBy' }},
+    {{ source: 'res1.graph', target: 'res2', type: 'derived_from', relationType: 'prov:hadPrimarySource' }},
   ],
 }};
 
@@ -279,8 +281,10 @@ def test_graph_export_options_work() -> None:
     tsv = downloads["kg-registry-interactions-2026-04-07.tsv"]
     assert tsv["blobType"] == "text/tab-separated-values"
     assert "source\ttarget\trelationship_type" in tsv["content"]
-    assert "res1\tres1.graph\thas_product" in tsv["content"]
-    assert "res1.graph\tres2\tderived_from" in tsv["content"]
+    assert "res1.graph\tres1\tprov:hadPrimarySource" in tsv["content"]
+    assert "res1.graph\tres2\tprov:hadPrimarySource" in tsv["content"]
+    assert "res1\tres1.graph\thas_product" not in tsv["content"]
+    assert "res1.graph\tres2\tprov:wasInfluencedBy" not in tsv["content"]
 
     yaml_export = downloads["kg-registry-data-2026-04-07.yml"]
     assert yaml_export["blobType"] == "text/yaml"

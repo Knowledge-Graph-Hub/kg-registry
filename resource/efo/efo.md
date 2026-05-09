@@ -121,9 +121,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 240665663
     product_url: https://www.ebi.ac.uk/efo/efo.owl
-    secondary_source:
-      - source: efo
-        relation_type: prov:wasInfluencedBy
   - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
@@ -218,9 +215,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 64058275
     product_url: https://www.ebi.ac.uk/efo/efo.obo
-    secondary_source:
-      - source: efo
-        relation_type: prov:wasInfluencedBy
   - category: GraphicalInterface
     description: Browse EFO with EBI's Ontology Lookup Service (OLS)
     format: http
@@ -230,9 +224,6 @@ products:
       - source: efo
         relation_type: prov:hadPrimarySource
     product_url: https://www.ebi.ac.uk/ols/ontologies/efo
-    secondary_source:
-      - source: efo
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j
@@ -823,7 +814,7 @@ repository: https://github.com/EBISPOT/efo
 
 The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases and for projects such as the NHGRI-EBI GWAS catalog. It combines parts of several biological ontologies, such as UBERON anatomy, ChEBI chemical compounds, Cell Ontology, and most recently, the Monarch Disease Ontology (MONDO).
 
-The scope of EFO is to support the annotation, analysis, and visualization of data handled by many groups at the EBI and as the core ontology for Open Targets. EFO is developed by the EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT). 
+The scope of EFO is to support the annotation, analysis, and visualization of data handled by many groups at the EBI and as the core ontology for Open Targets. EFO is developed by the EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT).
 
 EFO has undergone significant restructuring in version 3, particularly in the disease branch, to improve classification based on current medical understanding and alignment with existing domain ontologies. This was achieved through mapping the EFO disease and disease staging branches to the Monarch Disease Ontology (MONDO).
 

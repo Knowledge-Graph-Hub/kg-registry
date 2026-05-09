@@ -6,4 +6,7 @@ is_public: true
 name: Open Targets Platform REST API
 product_url: https://api.platform.opentargets.org/api/v4/rest
 layout: product_detail
+original_source:
+  - source: opentargets
+    relation_type: prov:hadPrimarySource
 ---

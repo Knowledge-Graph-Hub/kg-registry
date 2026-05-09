@@ -7,4 +7,7 @@ name: labo.owl
 product_file_size: 47001
 product_url: http://purl.obolibrary.org/obo/labo.owl
 layout: product_detail
+original_source:
+  - source: labo
+    relation_type: prov:hadPrimarySource
 ---

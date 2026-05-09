@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: linikujp@gmail.com
-  - contact_type: github
-    value: linikujp
-  label: Asiyah Yu Lin
-  orcid: 0000-0002-5379-5359
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: linikujp@gmail.com
+      - contact_type: github
+        value: linikujp
+    label: Asiyah Yu Lin
+    orcid: 0000-0002-5379-5359
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology that formalizes the genomic element by defining an upper
-  class genetic interval
+description: An ontology that formalizes the genomic element by defining an upper class genetic interval
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
 id: ogi
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,19 +25,21 @@ license:
   label: Not specified
 name: Ontology for genetic interval
 products:
-- category: OntologyProduct
-  description: Ontology for genetic interval in OWL format
-  format: owl
-  id: ogi.owl
-  name: ogi.owl
-  product_url: http://purl.obolibrary.org/obo/ogi.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Ontology for genetic interval in OWL format
+    format: owl
+    id: ogi.owl
+    name: ogi.owl
+    product_url: http://purl.obolibrary.org/obo/ogi.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: ogi
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 An ontology that formalizes the genomic element by defining an upper class genetic interval

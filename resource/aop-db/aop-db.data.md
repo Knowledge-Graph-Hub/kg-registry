@@ -4,27 +4,26 @@ description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
 id: aop-db.data
 name: AOP-DB Data
 original_source:
+  - source: 1000genomes
+    relation_type: prov:hadPrimarySource
+  - source: aop-db
+    relation_type: prov:hadPrimarySource
   - source: aop-wiki
     relation_type: prov:hadPrimarySource
   - source: ctd
     relation_type: prov:hadPrimarySource
-  - source: toxcast
-    relation_type: prov:hadPrimarySource
   - source: disgenet
-    relation_type: prov:hadPrimarySource
-  - source: ncbigene
-    relation_type: prov:hadPrimarySource
-  - source: string
-    relation_type: prov:hadPrimarySource
-  - source: 1000genomes
     relation_type: prov:hadPrimarySource
   - source: ensembl
     relation_type: prov:hadPrimarySource
   - source: gwascatalog
     relation_type: prov:hadPrimarySource
+  - source: ncbigene
+    relation_type: prov:hadPrimarySource
+  - source: string
+    relation_type: prov:hadPrimarySource
+  - source: toxcast
+    relation_type: prov:hadPrimarySource
 product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
-secondary_source:
-  - source: aop-db
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

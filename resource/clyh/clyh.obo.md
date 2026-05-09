@@ -7,4 +7,7 @@ name: clyh.obo
 product_file_size: 9651
 product_url: http://purl.obolibrary.org/obo/clyh.obo
 layout: product_detail
+original_source:
+  - source: clyh
+    relation_type: prov:hadPrimarySource
 ---

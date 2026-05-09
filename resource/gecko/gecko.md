@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Rebecca Jackson
-  orcid: 0000-0003-4871-5569
-  contact_details:
-  - contact_type: email
-    value: rbca.jackson@gmail.com
-  - contact_type: github
-    value: beckyjackson
+  - category: Individual
+    label: Rebecca Jackson
+    orcid: 0000-0003-4871-5569
+    contact_details:
+      - contact_type: email
+        value: rbca.jackson@gmail.com
+      - contact_type: github
+        value: beckyjackson
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to represent genomics cohort attributes
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/IHCC-cohorts/GECKO
 id: gecko
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Genomics Cohorts Knowledge Ontology
 products:
-- category: OntologyProduct
-  description: Genomics Cohorts Knowledge Ontology in OWL format
-  format: owl
-  id: gecko.owl
-  name: gecko.owl
-  product_file_size: 18443
-  product_url: http://purl.obolibrary.org/obo/gecko.owl
+  - category: OntologyProduct
+    description: Genomics Cohorts Knowledge Ontology in OWL format
+    format: owl
+    id: gecko.owl
+    name: gecko.owl
+    product_file_size: 18443
+    product_url: http://purl.obolibrary.org/obo/gecko.owl
+    original_source:
+      - source: gecko
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/IHCC-cohorts/GECKO
 publications: []
 ---
+
 ## Description
 
 An ontology to represent genomics cohort attributes

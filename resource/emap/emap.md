@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Terry Hayamizu
-  orcid: 0000-0002-0956-8634
-  contact_details:
-  - contact_type: email
-    value: Terry.Hayamizu@jax.org
-  - contact_type: github
-    value: tfhayamizu
+  - category: Individual
+    label: Terry Hayamizu
+    orcid: 0000-0002-0956-8634
+    contact_details:
+      - contact_type: email
+        value: Terry.Hayamizu@jax.org
+      - contact_type: github
+        value: tfhayamizu
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of stage-specific anatomical structures
-  of the mouse (Mus).
+description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: http://emouseatlas.org
 id: emap
 last_modified_date: '2026-04-16T00:00:00Z'
@@ -26,17 +25,21 @@ license:
   label: Not specified
 name: Mouse gross anatomy and development, timed
 products:
-- category: OntologyProduct
-  description: Mouse gross anatomy and development, timed in OWL format
-  format: owl
-  id: emap.owl
-  name: emap.owl
-  product_file_size: 611769
-  product_url: http://purl.obolibrary.org/obo/emap.owl
+  - category: OntologyProduct
+    description: Mouse gross anatomy and development, timed in OWL format
+    format: owl
+    id: emap.owl
+    name: emap.owl
+    product_file_size: 611769
+    product_url: http://purl.obolibrary.org/obo/emap.owl
+    original_source:
+      - source: emap
+        relation_type: prov:hadPrimarySource
 taxon:
-- NCBITaxon:10088
+  - NCBITaxon:10088
 publications: []
 ---
+
 ## Description
 
 A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).

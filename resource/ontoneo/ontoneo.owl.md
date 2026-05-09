@@ -7,4 +7,7 @@ name: ONTONEO
 product_file_size: 238873
 product_url: http://purl.obolibrary.org/obo/ontoneo.owl
 layout: product_detail
+original_source:
+  - source: ontoneo
+    relation_type: prov:hadPrimarySource
 ---

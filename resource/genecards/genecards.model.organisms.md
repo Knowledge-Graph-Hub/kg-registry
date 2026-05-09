@@ -7,6 +7,8 @@ name: GeneCards Model Organism Data
 original_source:
   - source: flybase
     relation_type: prov:hadPrimarySource
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: sgd
     relation_type: prov:hadPrimarySource
   - source: zfin

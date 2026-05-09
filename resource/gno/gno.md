@@ -2,24 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Nathan Edwards
-  orcid: 0000-0001-5168-3196
-  contact_details:
-  - contact_type: email
-    value: nje5@georgetown.edu
-  - contact_type: github
-    value: edwardsnj
+  - category: Individual
+    label: Nathan Edwards
+    orcid: 0000-0001-5168-3196
+    contact_details:
+      - contact_type: email
+        value: nje5@georgetown.edu
+      - contact_type: github
+        value: edwardsnj
 creation_date: '2025-09-29T00:00:00Z'
-description: GlyTouCan provides stable accessions for glycans described at varyious
-  degrees of characterization, including compositions (no linkage) and topologies
-  (no carbon bond positions or anomeric configurations). GNOme organizes these stable
-  accessions for interative browsing, for text-based searching, and for automated
-  reasoning with well-defined characterization levels.
+description: GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels.
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://gnome.glyomics.org/
 id: gno
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -30,34 +26,42 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Glycan Naming and Subsumption Ontology (GNOme)
 products:
-- category: OntologyProduct
-  description: Glycan Naming and Subsumption Ontology, OWL format (primary)
-  format: owl
-  id: gno.owl
-  name: gno.owl
-  product_file_size: 215188241
-  product_url: http://purl.obolibrary.org/obo/gno.owl
-- category: OntologyProduct
-  description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
-    from OWL)
-  format: obo
-  id: gno.obo
-  name: gno.obo
-  product_file_size: 168981263
-  product_url: http://purl.obolibrary.org/obo/gno.obo
-- category: OntologyProduct
-  description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
-    from OWL)
-  format: json
-  id: gno.json
-  name: gno.json
-  product_file_size: 359497890
-  product_url: http://purl.obolibrary.org/obo/gno.json
+  - category: OntologyProduct
+    description: Glycan Naming and Subsumption Ontology, OWL format (primary)
+    format: owl
+    id: gno.owl
+    name: gno.owl
+    product_file_size: 215188241
+    product_url: http://purl.obolibrary.org/obo/gno.owl
+    original_source:
+      - source: gno
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion from OWL)
+    format: obo
+    id: gno.obo
+    name: gno.obo
+    product_file_size: 168981263
+    product_url: http://purl.obolibrary.org/obo/gno.obo
+    original_source:
+      - source: gno
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion from OWL)
+    format: json
+    id: gno.json
+    name: gno.json
+    product_file_size: 359497890
+    product_url: http://purl.obolibrary.org/obo/gno.json
+    original_source:
+      - source: gno
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/glygen-glycan-data/GNOme
 publications:
-- id: https://doi.org/10.5281/zenodo.6678278
-  title: GNOme - Glycan Naming and Subsumption Ontology
+  - id: https://doi.org/10.5281/zenodo.6678278
+    title: GNOme - Glycan Naming and Subsumption Ontology
 ---
+
 ## Description
 
 GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels.

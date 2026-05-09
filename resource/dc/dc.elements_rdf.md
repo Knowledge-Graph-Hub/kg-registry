@@ -6,4 +6,7 @@ id: dc.elements_rdf
 name: Dublin Core Elements RDF Schema
 product_url: http://purl.org/dc/elements/1.1/
 layout: product_detail
+original_source:
+  - source: dc
+    relation_type: prov:hadPrimarySource
 ---

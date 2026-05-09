@@ -33,6 +33,9 @@ products:
     name: omo.owl
     product_file_size: 15170
     product_url: http://purl.obolibrary.org/obo/omo.owl
+    original_source:
+      - source: omo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

@@ -6,4 +6,7 @@ id: nihreporter.abstracts
 name: NIH-Funded Project Abstracts
 product_url: https://reporter.nih.gov/exporter/abstracts
 layout: product_detail
+original_source:
+  - source: nihreporter
+    relation_type: prov:hadPrimarySource
 ---

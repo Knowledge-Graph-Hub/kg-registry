@@ -6,4 +6,7 @@ id: evlncrnas.circrnas
 name: CircRNA Browser
 product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/circrnas
 layout: product_detail
+original_source:
+  - source: evlncrnas
+    relation_type: prov:hadPrimarySource
 ---

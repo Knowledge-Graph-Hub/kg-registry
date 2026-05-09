@@ -8,4 +8,7 @@ name: eggNOG 7 Protein Family to OGs
 product_file_size: 15838901
 product_url: https://eggnogdb.org/public/eggnog7/e7.clu2ogs.tsv.gz
 layout: product_detail
+original_source:
+  - source: eggnog
+    relation_type: prov:hadPrimarySource
 ---

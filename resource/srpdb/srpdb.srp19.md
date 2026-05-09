@@ -6,4 +6,7 @@ id: srpdb.srp19
 name: SRP19 Protein Sequences
 product_url: https://rth.dk/resources/rnp/SRPDB/srpprotein.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

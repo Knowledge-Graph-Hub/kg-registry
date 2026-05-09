@@ -7,4 +7,7 @@ name: lepao.owl
 product_file_size: 141799
 product_url: http://purl.obolibrary.org/obo/lepao.owl
 layout: product_detail
+original_source:
+  - source: lepao
+    relation_type: prov:hadPrimarySource
 ---

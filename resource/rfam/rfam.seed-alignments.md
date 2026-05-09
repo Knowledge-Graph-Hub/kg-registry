@@ -7,4 +7,7 @@ name: Rfam SEED Alignments
 product_file_size: 5083331
 product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
 layout: product_detail
+original_source:
+  - source: rfam
+    relation_type: prov:hadPrimarySource
 ---

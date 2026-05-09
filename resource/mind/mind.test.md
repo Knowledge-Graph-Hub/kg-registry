@@ -12,10 +12,9 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: mechreponet
     relation_type: prov:hadPrimarySource
-product_url: https://zenodo.org/records/8117748/files/test.txt
-secondary_source:
   - source: mind
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://zenodo.org/records/8117748/files/test.txt
 warnings:
   - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found

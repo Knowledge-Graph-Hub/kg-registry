@@ -6,4 +6,7 @@ id: pirbase.genome
 name: Genome Browser Interface
 product_url: http://bigdata.ibp.ac.cn/piRBase/genome.php
 layout: product_detail
+original_source:
+  - source: pirbase
+    relation_type: prov:hadPrimarySource
 ---

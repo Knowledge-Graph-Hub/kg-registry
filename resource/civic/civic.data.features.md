@@ -7,4 +7,7 @@ name: CIViC Features (Nightly)
 product_file_size: 171302
 product_url: https://civicdb.org/downloads/nightly/nightly-FeatureSummaries.tsv
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

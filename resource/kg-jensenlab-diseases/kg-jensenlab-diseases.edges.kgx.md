@@ -7,4 +7,7 @@ name: DISEASES KGX edges
 product_file_size: 132
 product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 layout: product_detail
+original_source:
+  - source: kg-jensenlab-diseases
+    relation_type: prov:hadPrimarySource
 ---

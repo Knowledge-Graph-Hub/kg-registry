@@ -7,4 +7,7 @@ name: epio.owl
 product_file_size: 415175
 product_url: http://purl.obolibrary.org/obo/epio.owl
 layout: product_detail
+original_source:
+  - source: epio
+    relation_type: prov:hadPrimarySource
 ---

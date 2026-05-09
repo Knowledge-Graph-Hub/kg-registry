@@ -6,4 +6,7 @@ id: hetionet.search
 name: Hetnet Connectivity Search
 product_url: https://het.io/search
 layout: product_detail
+original_source:
+  - source: hetionet
+    relation_type: prov:hadPrimarySource
 ---

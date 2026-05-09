@@ -7,4 +7,7 @@ name: CREEDS DrugMatrix single drug perturbations
 product_file_size: 86943390
 product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-DM.json
 layout: product_detail
+original_source:
+  - source: creeds
+    relation_type: prov:hadPrimarySource
 ---

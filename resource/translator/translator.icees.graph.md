@@ -16,10 +16,9 @@ node_count: 224
 original_source:
   - source: icees-kg
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/icees/latest/
 versions:
   - '2026_03_12'
   - icees_2024-08-20_3ebb9d85_2025sep1_4.3.6

@@ -7,4 +7,7 @@ name: ecocore.obo
 product_file_size: 834439
 product_url: http://purl.obolibrary.org/obo/ecocore.obo
 layout: product_detail
+original_source:
+  - source: ecocore
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,4 +8,7 @@ name: STRING Clusters Tree
 product_file_size: 57934238
 product_url: https://stringdb-downloads.org/download/clusters.tree.v12.0.txt.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

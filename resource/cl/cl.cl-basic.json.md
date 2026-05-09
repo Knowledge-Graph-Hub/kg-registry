@@ -7,4 +7,7 @@ name: Basic CL (OBOGraph-JSON version)
 product_file_size: 6060633
 product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
 layout: product_detail
+original_source:
+  - source: cl
+    relation_type: prov:hadPrimarySource
 ---

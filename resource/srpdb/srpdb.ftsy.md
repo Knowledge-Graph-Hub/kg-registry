@@ -6,4 +6,7 @@ id: srpdb.ftsy
 name: SRP Receptor Alpha (FtsY) Sequences
 product_url: https://rth.dk/resources/rnp/SRPDB/moreprotein.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,18 +2,18 @@
 activity_status: orphaned
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
+  - category: Individual
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
+    contact_details:
+      - contact_type: email
+        value: cjmungall@lbl.gov
 creation_date: '2025-09-29T00:00:00Z'
 description: Social Behavior in insects
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/obophenotype/sibo
 id: sibo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -24,23 +24,30 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Social Insect Behavior Ontology
 products:
-- category: OntologyProduct
-  description: Social Insect Behavior Ontology in OWL format
-  format: owl
-  id: sibo.owl
-  name: sibo.owl
-  product_file_size: 26920
-  product_url: http://purl.obolibrary.org/obo/sibo.owl
-- category: OntologyProduct
-  description: Social Insect Behavior Ontology in OBO format
-  format: obo
-  id: sibo.obo
-  name: sibo.obo
-  product_file_size: 16744
-  product_url: http://purl.obolibrary.org/obo/sibo.obo
+  - category: OntologyProduct
+    description: Social Insect Behavior Ontology in OWL format
+    format: owl
+    id: sibo.owl
+    name: sibo.owl
+    product_file_size: 26920
+    product_url: http://purl.obolibrary.org/obo/sibo.owl
+    original_source:
+      - source: sibo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Social Insect Behavior Ontology in OBO format
+    format: obo
+    id: sibo.obo
+    name: sibo.obo
+    product_file_size: 16744
+    product_url: http://purl.obolibrary.org/obo/sibo.obo
+    original_source:
+      - source: sibo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/sibo
 publications: []
 ---
+
 ## Description
 
 Social Behavior in insects

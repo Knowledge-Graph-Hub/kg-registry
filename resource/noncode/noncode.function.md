@@ -6,4 +6,7 @@ id: noncode.function
 name: Function Prediction
 product_url: http://www.noncode.org/function.php
 layout: product_detail
+original_source:
+  - source: noncode
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,4 +8,7 @@ name: GloBI datasets index (TSV)
 product_file_size: 4373
 product_url: https://zenodo.org/record/14640564/files/datasets.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

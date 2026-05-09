@@ -12,8 +12,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 42545110
 product_url: https://zfin.org/downloads/phenoGeneCleanData_fish.txt
-secondary_source:
-  - source: zfin
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

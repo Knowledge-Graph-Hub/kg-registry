@@ -6,4 +6,7 @@ id: glycordf.java-source
 name: GlycoRDF Java Source Code
 repository: https://github.com/glycoinfo/GlycoRDF
 layout: product_detail
+original_source:
+  - source: glycordf
+    relation_type: prov:hadPrimarySource
 ---

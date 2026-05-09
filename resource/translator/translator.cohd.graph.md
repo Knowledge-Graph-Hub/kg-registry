@@ -16,10 +16,9 @@ node_count: 86
 original_source:
   - source: cohd
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/cohd/latest/
 versions:
   - '2026_03_12'
   - cohd_2024-11-25_75f200bb_2025sep1_4.3.6

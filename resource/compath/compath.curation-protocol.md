@@ -6,4 +6,7 @@ id: compath.curation-protocol
 name: ComPath Curation Protocol
 product_url: https://compath.scai.fraunhofer.de/curation_protocol
 layout: product_detail
+original_source:
+  - source: compath
+    relation_type: prov:hadPrimarySource
 ---

@@ -10,8 +10,5 @@ original_source:
   - source: bioteque
     relation_type: prov:hadPrimarySource
 product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
-secondary_source:
-  - source: bioteque
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

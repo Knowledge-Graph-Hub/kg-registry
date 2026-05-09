@@ -43,9 +43,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 3373041
     product_url: http://edamontology.org/EDAM.owl
-    secondary_source:
-      - source: edam
-        relation_type: prov:wasInfluencedBy
   - category: OntologyProduct
     description: EDAM TSV export
     format: tsv
@@ -60,9 +57,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1977072
     product_url: https://edamontology.org/EDAM.tsv
-    secondary_source:
-      - source: edam
-        relation_type: prov:wasInfluencedBy
   - category: OntologyProduct
     description: EDAM CSV export
     format: csv
@@ -77,9 +71,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1977072
     product_url: https://edamontology.org/EDAM.csv
-    secondary_source:
-      - source: edam
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

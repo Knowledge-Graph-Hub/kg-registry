@@ -7,4 +7,7 @@ name: swo.json
 product_file_size: 204434
 product_url: http://purl.obolibrary.org/obo/swo.json
 layout: product_detail
+original_source:
+  - source: swo
+    relation_type: prov:hadPrimarySource
 ---

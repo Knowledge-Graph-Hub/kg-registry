@@ -2,20 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Fr d ric Bastian
-  orcid: 0000-0002-9415-5104
-  contact_details:
-  - contact_type: email
-    value: frederic.bastian@unil.ch
-  - contact_type: github
-    value: fbastian
+  - category: Individual
+    label: Fr d ric Bastian
+    orcid: 0000-0002-9415-5104
+    contact_details:
+      - contact_type: email
+        value: frederic.bastian@unil.ch
+      - contact_type: github
+        value: fbastian
 creation_date: '2025-09-29T00:00:00Z'
 description: Life cycle stages for Platynereis dumerilii
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
 id: pdumdv
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,23 +26,30 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Platynereis Developmental Stages
 products:
-- category: OntologyProduct
-  description: Platynereis Developmental Stages in OWL format
-  format: owl
-  id: pdumdv.owl
-  name: pdumdv.owl
-  product_file_size: 6379
-  product_url: http://purl.obolibrary.org/obo/pdumdv.owl
-- category: OntologyProduct
-  description: Platynereis Developmental Stages in OBO format
-  format: obo
-  id: pdumdv.obo
-  name: pdumdv.obo
-  product_file_size: 4411
-  product_url: http://purl.obolibrary.org/obo/pdumdv.obo
+  - category: OntologyProduct
+    description: Platynereis Developmental Stages in OWL format
+    format: owl
+    id: pdumdv.owl
+    name: pdumdv.owl
+    product_file_size: 6379
+    product_url: http://purl.obolibrary.org/obo/pdumdv.owl
+    original_source:
+      - source: pdumdv
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Platynereis Developmental Stages in OBO format
+    format: obo
+    id: pdumdv.obo
+    name: pdumdv.obo
+    product_file_size: 4411
+    product_url: http://purl.obolibrary.org/obo/pdumdv.obo
+    original_source:
+      - source: pdumdv
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/developmental-stage-ontologies
 publications: []
 ---
+
 ## Description
 
 Life cycle stages for Platynereis dumerilii

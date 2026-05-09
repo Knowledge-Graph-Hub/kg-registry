@@ -16,10 +16,9 @@ node_count: 66728
 original_source:
   - source: panther
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/panther/latest/
 versions:
   - '2026_03_06'
   - panther_19.0_0b240030_2025sep1_4.3.6

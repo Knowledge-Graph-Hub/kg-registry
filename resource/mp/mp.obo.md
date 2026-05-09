@@ -6,7 +6,9 @@ id: mp.obo
 name: MP (OBO edition)
 product_url: http://purl.obolibrary.org/obo/mp.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ No Content-Length
-  header found
+  - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
 layout: product_detail
+original_source:
+  - source: mp
+    relation_type: prov:hadPrimarySource
 ---

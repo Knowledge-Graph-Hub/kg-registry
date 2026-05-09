@@ -31,9 +31,6 @@ products:
       - source: glyconnect
         relation_type: prov:hadPrimarySource
     product_url: https://glyconnect.expasy.org/
-    secondary_source:
-      - source: glyconnect
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: RESTful API for accessing GlyConnect data
     id: glyconnect.api.rest
@@ -43,9 +40,6 @@ products:
       - source: glyconnect
         relation_type: prov:hadPrimarySource
     product_url: https://glyconnect.expasy.org/api
-    secondary_source:
-      - source: glyconnect
-        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
     description: SPARQL endpoint for querying GlyConnect RDF data
     id: glyconnect.api.sparql
@@ -55,9 +49,6 @@ products:
       - source: glyconnect
         relation_type: prov:hadPrimarySource
     product_url: https://glyconnect.expasy.org/rdf
-    secondary_source:
-      - source: glyconnect
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Compositions dataset containing glycan compositions
     format: csv
@@ -67,9 +58,6 @@ products:
       - source: glyconnect
         relation_type: prov:hadPrimarySource
     product_url: https://glyconnect.expasy.org/downloads/compositions/
-    secondary_source:
-      - source: glyconnect
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Immunoglobulins dataset containing glycans commonly found on immunoglobulins
     format: csv
@@ -79,9 +67,6 @@ products:
       - source: glyconnect
         relation_type: prov:hadPrimarySource
     product_url: https://glyconnect.expasy.org/downloads/Immunoglobulins/
-    secondary_source:
-      - source: glyconnect
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Alocci D

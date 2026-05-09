@@ -2,20 +2,18 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Melanie Courtot
-  orcid: 0000-0002-9551-6370
-  contact_details:
-  - contact_type: email
-    value: mcourtot@gmail.com
+  - category: Individual
+    label: Melanie Courtot
+    orcid: 0000-0002-9551-6370
+    contact_details:
+      - contact_type: email
+        value: mcourtot@gmail.com
 creation_date: '2025-09-29T00:00:00Z'
-description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting
-  clinicians at the time of data entry, increasing quality and accuracy of reported
-  adverse events
+description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://purl.obolibrary.org/obo/aero
 id: aero
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,15 +24,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Adverse Event Reporting Ontology
 products:
-- category: OntologyProduct
-  description: Adverse Event Reporting Ontology in OWL format
-  format: owl
-  id: aero.owl
-  name: aero.owl
-  product_file_size: 19393
-  product_url: http://purl.obolibrary.org/obo/aero.owl
+  - category: OntologyProduct
+    description: Adverse Event Reporting Ontology in OWL format
+    format: owl
+    id: aero.owl
+    name: aero.owl
+    product_file_size: 19393
+    product_url: http://purl.obolibrary.org/obo/aero.owl
+    original_source:
+      - source: aero
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events

@@ -37,9 +37,11 @@ products:
     original_source:
       - source: emi
         relation_type: prov:hadPrimarySource
-      - source: pf1600
+      - source: emikg
         relation_type: prov:hadPrimarySource
       - source: globi
+        relation_type: prov:hadPrimarySource
+      - source: pf1600
         relation_type: prov:hadPrimarySource
       - source: try
         relation_type: prov:hadPrimarySource
@@ -54,9 +56,11 @@ products:
     original_source:
       - source: emi
         relation_type: prov:hadPrimarySource
-      - source: pf1600
+      - source: emikg
         relation_type: prov:hadPrimarySource
       - source: globi
+        relation_type: prov:hadPrimarySource
+      - source: pf1600
         relation_type: prov:hadPrimarySource
       - source: try
         relation_type: prov:hadPrimarySource
@@ -68,9 +72,11 @@ products:
     original_source:
       - source: emi
         relation_type: prov:hadPrimarySource
-      - source: pf1600
+      - source: emikg
         relation_type: prov:hadPrimarySource
       - source: globi
+        relation_type: prov:hadPrimarySource
+      - source: pf1600
         relation_type: prov:hadPrimarySource
       - source: try
         relation_type: prov:hadPrimarySource

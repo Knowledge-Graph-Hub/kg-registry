@@ -16,10 +16,9 @@ node_count: 6633
 original_source:
   - source: signor
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/signor/latest/
 versions:
   - '2026_03_06'
   - signor_2026_January_e2465db9_2025sep1_4.3.6

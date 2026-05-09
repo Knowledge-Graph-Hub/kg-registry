@@ -24,6 +24,9 @@ products:
     id: "kg-enp.portal"
     name: ENP-KG Portal
     product_url: https://enpkg.commons-lab.org/
+    original_source:
+      - source: kg-enp
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/enpkg/enpkg_full
 ---
 

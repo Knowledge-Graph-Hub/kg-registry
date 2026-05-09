@@ -33,6 +33,9 @@ products:
     name: stato.owl
     product_file_size: 260099
     product_url: http://purl.obolibrary.org/obo/stato.owl
+    original_source:
+      - source: stato
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples format.
     format: ntriples

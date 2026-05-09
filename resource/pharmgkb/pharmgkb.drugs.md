@@ -9,4 +9,7 @@ product_file_size: 717666
 product_url: https://api.pharmgkb.org/v1/download/file/data/drugs.zip
 warnings: []
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

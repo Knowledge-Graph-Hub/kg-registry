@@ -8,8 +8,5 @@ original_source:
   - source: dbsnp
     relation_type: prov:hadPrimarySource
 product_url: https://api.ncbi.nlm.nih.gov/variation/v0/
-secondary_source:
-  - source: dbsnp
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

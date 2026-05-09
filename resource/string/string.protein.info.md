@@ -8,4 +8,7 @@ name: STRING Protein Info
 product_file_size: 1247927909
 product_url: https://stringdb-downloads.org/download/protein.info.v12.0.txt.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

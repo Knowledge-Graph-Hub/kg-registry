@@ -7,4 +7,7 @@ name: geo.owl
 product_file_size: 17397
 product_url: http://purl.obolibrary.org/obo/geo.owl
 layout: product_detail
+original_source:
+  - source: geo
+    relation_type: prov:hadPrimarySource
 ---

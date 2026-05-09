@@ -8,4 +8,7 @@ name: Wikidata JSON Entity Dumps
 product_file_size: 151566969874
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

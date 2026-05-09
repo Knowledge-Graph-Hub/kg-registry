@@ -83,6 +83,37 @@ function edgeRelationLabel(edge) {
   return labels[relationType] || relationType.replace(/^prov:/, '').replace(/_/g, ' ');
 }
 
+function edgeRelationPriority(edge) {
+  const priority = {
+    'prov:hadPrimarySource': 100,
+    'prov:wasDerivedFrom': 90,
+    'prov:used': 80,
+    'prov:wasInformedBy': 70,
+    'prov:wasInfluencedBy': 60,
+    'derived_from': 50,
+    'has_component': 40,
+    'shared_domain': 30,
+    'has_product': 10
+  };
+  return priority[edgeRelationType(edge)] || 0;
+}
+
+function edgePairKey(edge) {
+  return [edgeSourceId(edge), edgeTargetId(edge)].sort().join('::');
+}
+
+function preferredEdgesByPair(edges) {
+  const preferredByPair = new Map();
+  edges.forEach(edge => {
+    const pairKey = edgePairKey(edge);
+    const current = preferredByPair.get(pairKey);
+    if (!current || edgeRelationPriority(edge) > edgeRelationPriority(current)) {
+      preferredByPair.set(pairKey, edge);
+    }
+  });
+  return Array.from(preferredByPair.values());
+}
+
 function edgeTriple(edge) {
   return `${edgeSourceId(edge)} ${edgeRelationType(edge)} ${edgeTargetId(edge)}`;
 }
@@ -181,7 +212,7 @@ let selectedNode = null;
 let showProducts = true;
 let showDomainConnections = false;
 let showIcons = true;
-let showEdgeTypes = false;
+let showEdgeTypes = true;
 
 // Initialize the visualization
 document.addEventListener('DOMContentLoaded', () => {
@@ -484,6 +515,7 @@ function updateGraph() {
     const targetId = edgeTargetId(link);
     return nodeIds.has(sourceId) && nodeIds.has(targetId);
   });
+  const preferredEdgeLabels = preferredEdgesByPair(validLinks);
 
   simulation.force('link').links(validLinks);
 
@@ -505,7 +537,7 @@ function updateGraph() {
 
   // Update edge labels
   edgeLabelElements = g.selectAll('text.edge-label')
-    .data(validLinks, d => `${edgeSourceId(d)}-${edgeTargetId(d)}-${edgeRelationType(d)}`);
+    .data(preferredEdgeLabels, d => edgePairKey(d));
 
   edgeLabelElements.exit().remove();
 
@@ -1285,8 +1317,8 @@ function exportAsTSV() {
   // Create TSV header
   let tsv = 'source\ttarget\trelationship_type\tsource_name\ttarget_name\tsource_type\ttarget_type\n';
 
-  // Add each link
-  displayedGraph.links.forEach(link => {
+  // Add one preferred relation per displayed entity pair
+  preferredEdgesByPair(displayedGraph.links).forEach(link => {
     const sourceId = edgeSourceId(link);
     const targetId = edgeTargetId(link);
     const sourceNode = displayedGraph.nodes.find(n => n.id === sourceId);

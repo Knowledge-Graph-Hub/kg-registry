@@ -7,4 +7,7 @@ name: zp.owl
 product_file_size: 170306263
 product_url: http://purl.obolibrary.org/obo/zp.owl
 layout: product_detail
+original_source:
+  - source: zp
+    relation_type: prov:hadPrimarySource
 ---

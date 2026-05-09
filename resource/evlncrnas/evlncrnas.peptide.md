@@ -6,4 +6,7 @@ id: evlncrnas.peptide
 name: Peptide-Coding lncRNA Browser
 product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/peptide-coding
 layout: product_detail
+original_source:
+  - source: evlncrnas
+    relation_type: prov:hadPrimarySource
 ---

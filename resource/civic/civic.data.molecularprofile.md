@@ -7,4 +7,7 @@ name: CIViC Molecular Profiles (Nightly)
 product_file_size: 621001
 product_url: https://civicdb.org/downloads/nightly/nightly-MolecularProfileSummaries.tsv
 layout: product_detail
+original_source:
+  - source: civic
+    relation_type: prov:hadPrimarySource
 ---

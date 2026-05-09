@@ -6,4 +6,7 @@ name: MODOMICS Modified Positions List
 product_file_size: 146558
 product_url: https://genesilico.pl/modomics/download/modified_positions/
 layout: product_detail
+original_source:
+  - source: modomics
+    relation_type: prov:hadPrimarySource
 ---

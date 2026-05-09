@@ -9,8 +9,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 3676906360
 product_url: https://molepro.s3.amazonaws.com/nodes.tsv
-secondary_source:
-  - source: molecular-data-kp
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

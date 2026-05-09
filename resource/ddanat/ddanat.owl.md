@@ -7,4 +7,7 @@ name: ddanat.owl
 product_file_size: 15269
 product_url: http://purl.obolibrary.org/obo/ddanat.owl
 layout: product_detail
+original_source:
+  - source: ddanat
+    relation_type: prov:hadPrimarySource
 ---

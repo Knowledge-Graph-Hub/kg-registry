@@ -7,4 +7,7 @@ name: interactionFields.csv
 product_file_size: 15860
 product_url: https://api.globalbioticinteractions.org/interactionFields?type=csv
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

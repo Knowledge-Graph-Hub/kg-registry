@@ -6,4 +6,7 @@ id: ena.training
 name: ENA Training
 product_url: https://www.ebi.ac.uk/training/services/ena
 layout: product_detail
+original_source:
+  - source: ena
+    relation_type: prov:hadPrimarySource
 ---

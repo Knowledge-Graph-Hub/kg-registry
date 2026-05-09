@@ -7,4 +7,7 @@ name: Main CL OWL edition
 product_file_size: 65879178
 product_url: http://purl.obolibrary.org/obo/cl.owl
 layout: product_detail
+original_source:
+  - source: cl
+    relation_type: prov:hadPrimarySource
 ---

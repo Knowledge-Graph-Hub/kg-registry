@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Petra Fey
-  orcid: 0000-0002-4532-2703
-  contact_details:
-  - contact_type: email
-    value: pfey@northwestern.edu
-  - contact_type: github
-    value: pfey03
+  - category: Individual
+    label: Petra Fey
+    orcid: 0000-0002-4532-2703
+    contact_details:
+      - contact_type: email
+        value: pfey@northwestern.edu
+      - contact_type: github
+        value: pfey03
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium
-  discoideum</i>.
+description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: http://dictybase.org/
 id: ddpheno
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,27 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Dictyostelium discoideum phenotype ontology
 products:
-- category: OntologyProduct
-  description: Dictyostelium discoideum phenotype ontology in OWL format
-  format: owl
-  id: ddpheno.owl
-  name: ddpheno.owl
-  product_file_size: 72832
-  product_url: http://purl.obolibrary.org/obo/ddpheno.owl
-- category: OntologyProduct
-  description: Dictyostelium discoideum phenotype ontology in OBO format
-  format: obo
-  id: ddpheno.obo
-  name: ddpheno.obo
-  product_file_size: 41003
-  product_url: http://purl.obolibrary.org/obo/ddpheno.obo
+  - category: OntologyProduct
+    description: Dictyostelium discoideum phenotype ontology in OWL format
+    format: owl
+    id: ddpheno.owl
+    name: ddpheno.owl
+    product_file_size: 72832
+    product_url: http://purl.obolibrary.org/obo/ddpheno.owl
+    original_source:
+      - source: ddpheno
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Dictyostelium discoideum phenotype ontology in OBO format
+    format: obo
+    id: ddpheno.obo
+    name: ddpheno.obo
+    product_file_size: 41003
+    product_url: http://purl.obolibrary.org/obo/ddpheno.obo
+    original_source:
+      - source: ddpheno
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/dicty-phenotype-ontology
 taxon:
-- NCBITaxon:44689
+  - NCBITaxon:44689
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/31840793
-  title: dictyBase and the Dicty Stock Center (version 2.0) - a progress report
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31840793
+    title: dictyBase and the Dicty Stock Center (version 2.0) - a progress report
 ---
+
 ## Description
 
 A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.

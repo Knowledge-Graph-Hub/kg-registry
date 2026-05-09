@@ -8,4 +8,7 @@ name: METPO OWL
 product_file_size: 24016
 product_url: https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl
 layout: product_detail
+original_source:
+  - source: metpo
+    relation_type: prov:hadPrimarySource
 ---

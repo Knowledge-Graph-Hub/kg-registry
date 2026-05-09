@@ -5,6 +5,8 @@ format: http
 id: genecards.literature
 name: GeneCards Literature References
 original_source:
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: pubmed
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/

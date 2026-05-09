@@ -8,4 +8,7 @@ name: Wikidata Lexeme RDF Dump (Turtle)
 product_file_size: 762464579
 product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.ttl.gz
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

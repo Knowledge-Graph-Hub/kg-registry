@@ -33,6 +33,9 @@ products:
     name: uo.owl
     product_file_size: 36414
     product_url: http://purl.obolibrary.org/obo/uo.owl
+    original_source:
+      - source: uo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Units of measurement ontology in OBO format
     format: obo
@@ -40,6 +43,9 @@ products:
     name: uo.obo
     product_file_size: 19896
     product_url: http://purl.obolibrary.org/obo/uo.obo
+    original_source:
+      - source: uo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Units of measurement ontology in JSON format
     format: json
@@ -47,6 +53,9 @@ products:
     name: uo.json
     product_file_size: 24296
     product_url: http://purl.obolibrary.org/obo/uo.json
+    original_source:
+      - source: uo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

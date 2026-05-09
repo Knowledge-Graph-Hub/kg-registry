@@ -10,8 +10,5 @@ original_source:
   - source: cl-kg
     relation_type: prov:hadPrimarySource
 product_url: https://cellular-semantics.sanger.ac.uk/browser/
-secondary_source:
-  - source: cl-kg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

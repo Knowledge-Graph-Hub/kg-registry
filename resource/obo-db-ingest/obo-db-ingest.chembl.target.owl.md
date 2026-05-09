@@ -10,4 +10,7 @@ name: chembl.target OWL
 product_file_size: 546755
 product_url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

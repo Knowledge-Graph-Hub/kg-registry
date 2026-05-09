@@ -7,4 +7,7 @@ name: slso.owl
 product_file_size: 584157
 product_url: http://purl.obolibrary.org/obo/slso.owl
 layout: product_detail
+original_source:
+  - source: slso
+    relation_type: prov:hadPrimarySource
 ---

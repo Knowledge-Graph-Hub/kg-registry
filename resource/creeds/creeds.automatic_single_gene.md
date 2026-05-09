@@ -7,4 +7,7 @@ name: CREEDS Automatic Single Gene Perturbations
 product_file_size: 175552254
 product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
 layout: product_detail
+original_source:
+  - source: creeds
+    relation_type: prov:hadPrimarySource
 ---

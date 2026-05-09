@@ -6,4 +6,7 @@ id: smart.search
 name: SMART Search
 product_url: https://smart.embl.de/smart/search.cgi
 layout: product_detail
+original_source:
+  - source: smart
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: GAZ countries
 product_file_size: 42847
 product_url: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
 layout: product_detail
+original_source:
+  - source: gaz
+    relation_type: prov:hadPrimarySource
 ---

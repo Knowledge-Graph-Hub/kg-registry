@@ -33,8 +33,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 642902930
 product_url: https://orkg.org/api/rdf/dump
-secondary_source:
-  - source: orkg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -6,4 +6,7 @@ id: gtrnadb.archives
 name: Previous Releases Archive
 product_url: https://gtrnadb.org/archives.html
 layout: product_detail
+original_source:
+  - source: gtrnadb
+    relation_type: prov:hadPrimarySource
 ---

@@ -16,10 +16,9 @@ node_count: 69187
 original_source:
   - source: semmeddb
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/semmeddb/latest/
 versions:
   - '2026_03_27'
   - semmeddb_semmeddb-2023-kg2.10.3_fe8e6340_2025sep1_4.3.6

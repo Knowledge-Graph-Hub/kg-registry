@@ -10,4 +10,7 @@ name: npass SSSOM
 product_file_size: 833693
 product_url: https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

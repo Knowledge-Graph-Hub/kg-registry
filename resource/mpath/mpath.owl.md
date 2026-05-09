@@ -7,4 +7,7 @@ name: mpath.owl
 product_file_size: 88952
 product_url: http://purl.obolibrary.org/obo/mpath.owl
 layout: product_detail
+original_source:
+  - source: mpath
+    relation_type: prov:hadPrimarySource
 ---

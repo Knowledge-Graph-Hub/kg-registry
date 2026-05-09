@@ -1,11 +1,13 @@
 ---
 category: OntologyProduct
-description: OWL ontology file defining the GlycoRDF standard for representing glycomics
-  data in RDF format
+description: OWL ontology file defining the GlycoRDF standard for representing glycomics data in RDF format
 format: owl
 id: glycordf.ontology
 name: GlycoRDF Ontology (OWL)
 product_file_size: 32914
 product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
 layout: product_detail
+original_source:
+  - source: glycordf
+    relation_type: prov:hadPrimarySource
 ---

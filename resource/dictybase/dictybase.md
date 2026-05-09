@@ -20,29 +20,44 @@ products:
     id: dictybase.annotations.gff
     name: dictyBase Genome Annotations
     product_url: https://dictybase.dev/downloads
+    original_source:
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Genome sequence data in FASTA format
     format: fasta
     id: dictybase.genome.fasta
     name: dictyBase Genome Sequences
     product_url: https://dictybase.dev/downloads
+    original_source:
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Protein sequence data in FASTA format
     format: fasta
     id: dictybase.proteins.fasta
     name: dictyBase Protein Sequences
     product_url: https://dictybase.dev/downloads
+    original_source:
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: GraphQL API for programmatic access to dictyBase data
     format: graphql
     id: dictybase.graphql.api
     name: dictyBase GraphQL API
     product_url: https://dictybase.dev/graphql
+    original_source:
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web-based browser for exploring Dictyostelium genomes and annotations
     id: dictybase.genome.browser
     name: dictyBase Genome Browser
     product_url: https://dictybase.dev/
+    original_source:
+      - source: dictybase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

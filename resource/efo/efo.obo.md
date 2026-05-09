@@ -93,8 +93,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 64058275
 product_url: https://www.ebi.ac.uk/efo/efo.obo
-secondary_source:
-  - source: efo
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

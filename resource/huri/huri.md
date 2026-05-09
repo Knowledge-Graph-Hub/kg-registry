@@ -37,6 +37,9 @@ products:
       label: CC BY 4.0
     name: HuRI Protein-Protein Interactions
     product_url: http://www.interactome-atlas.org/download
+    original_source:
+      - source: huri
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Literature-curated high-quality protein-protein interactions from comparable experimental approaches
     format: tsv
@@ -46,11 +49,17 @@ products:
       label: CC BY 4.0
     name: HuRI Literature Benchmark
     product_url: http://www.interactome-atlas.org/download
+    original_source:
+      - source: huri
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing human protein interactions
     id: huri.portal
     name: HuRI Web Portal
     product_url: http://www.interactome-atlas.org/
+    original_source:
+      - source: huri
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological entities and their associations
     id: bioteque.embeddings

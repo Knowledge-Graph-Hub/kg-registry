@@ -27,9 +27,9 @@ products:
     id: toxin.web
     name: TOXIN Search Portal
     product_url: https://toxin-search.netlify.app/
-    secondary_source:
+    original_source:
       - source: toxin
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
 publications:
   - id: https://doi.org/10.1093/database/baae121
     journal: Database (Oxford)

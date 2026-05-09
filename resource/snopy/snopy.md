@@ -18,90 +18,135 @@ products:
     id: snopy.portal
     name: snOPY Portal
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Search interface for querying snoRNAs by species, box type, target RNA, organization, keywords, and curation status
     format: http
     id: snopy.search
     name: Search Interface
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Ortholog browser for exploring snoRNA orthologous relationships across species
     format: http
     id: snopy.orthologs
     name: Ortholog Browser
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Target RNA viewer for exploring modification sites on rRNA and snRNA targets
     format: http
     id: snopy.target-rna
     name: Target RNA Viewer
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: BLAST interface for sequence similarity searches against snoRNA sequences
     format: http
     id: snopy.blast
     name: BLAST Interface
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=blast
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Curated snoRNA sequences for box C/D class guiding 2'-O-methylation
     format: http
     id: snopy.box-cd-snornas
     name: Box C/D snoRNAs
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Curated snoRNA sequences for box H/ACA class guiding pseudouridylation
     format: http
     id: snopy.box-haca-snornas
     name: Box H/ACA snoRNAs
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Information about intronic snoRNA gene loci within protein-coding host genes
     format: http
     id: snopy.intronic-loci
     name: Intronic snoRNA Loci
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Information about polycistronic snoRNA gene clusters with multiple genes
     format: http
     id: snopy.polycistronic-loci
     name: Polycistronic snoRNA Loci
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Information about monocistronic snoRNA gene loci with single genes
     format: http
     id: snopy.monocistronic-loci
     name: Monocistronic snoRNA Loci
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Mapped modification sites on rRNA targets
     format: http
     id: snopy.rrna-modifications
     name: rRNA Modification Sites
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Mapped modification sites on snRNA targets
     format: http
     id: snopy.snrna-modifications
     name: snRNA Modification Sites
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Orthologous snoRNA relationships identified through target RNA conservation
     format: http
     id: snopy.ortholog-data
     name: snoRNA Ortholog Data
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: About page with database description, methods, and citation information
     format: http
     id: snopy.about
     name: About snOPY
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=about
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Database statistics showing organism coverage and entry counts
     format: http
     id: snopy.statistics
     name: Statistics
     product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=statistics
+    original_source:
+      - source: snopy
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

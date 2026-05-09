@@ -7,4 +7,7 @@ name: EOL Traits Data (N-Triples)
 product_file_size: 968000000
 product_url: https://zenodo.org/records/4244313/files/traits.nt
 layout: product_detail
+original_source:
+  - source: tera
+    relation_type: prov:hadPrimarySource
 ---

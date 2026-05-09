@@ -6,4 +6,7 @@ id: ribovision.user-upload-guide
 name: User Upload Mode Guide
 product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/User_upload_Mode/
 layout: product_detail
+original_source:
+  - source: ribovision
+    relation_type: prov:hadPrimarySource
 ---

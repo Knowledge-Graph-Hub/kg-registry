@@ -18,47 +18,71 @@ products:
     id: modomics.portal
     name: MODOMICS Web Portal
     product_url: https://genesilico.pl/modomics/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Programmatic interface for accessing MODOMICS data.
     format: http
     id: modomics.api
     name: MODOMICS API
     product_url: https://genesilico.pl/modomics/api/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Three-dimensional structures of modified bases in MOL2 format for computational chemistry applications.
     id: modomics.mol2
     name: MODOMICS Modified Base Structures
     product_file_size: 1194876
     product_url: https://genesilico.pl/modomics/download/modification_mol/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Chemical structure images of modified bases for visualization and publication.
     id: modomics.images
     name: MODOMICS Modified Base Images
     product_file_size: 11835390
     product_url: https://genesilico.pl/modomics/download/modification_pics/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Modified positions in PDB structure files.
     id: modomics.pdb
     name: MODOMICS PDB Modified Positions
     product_file_size: 1194876
     product_url: https://genesilico.pl/modomics/download/modification_mol2/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Comprehensive list of modified positions in RNA sequences.
     id: modomics.positions
     name: MODOMICS Modified Positions List
     product_file_size: 146558
     product_url: https://genesilico.pl/modomics/download/modified_positions/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Ontology of base modifications in OWL Lite format for semantic web applications.
     format: owl
     id: modomics.owl
     name: MODOMICS Ontology (OWL)
     product_url: https://genesilico.pl/modomics/download/ModifiedBases.owl
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Ontology of base modifications in N3 format.
     id: modomics.n3
     name: MODOMICS Ontology (N3)
     product_url: https://genesilico.pl/modomics/download/Modifications.n3
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Structure-data files for modified bases in SDF format.
     format: sdf
@@ -66,24 +90,36 @@ products:
     name: MODOMICS SDF Files
     product_file_size: 271038
     product_url: https://genesilico.pl/modomics/download/sdf2/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Advanced search interface for querying modifications, pathways, sequences, and proteins.
     format: http
     id: modomics.search
     name: MODOMICS Advanced Search
     product_url: https://genesilico.pl/modomics/search/advance/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: User guide and documentation for using the MODOMICS database.
     format: http
     id: modomics.help
     name: MODOMICS Help Documentation
     product_url: https://genesilico.pl/modomics/help
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Information about data annotation methods and standards used in MODOMICS.
     format: http
     id: modomics.annotation
     name: MODOMICS Data Annotation Information
     product_url: https://genesilico.pl/modomics/data_information/
+    original_source:
+      - source: modomics
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

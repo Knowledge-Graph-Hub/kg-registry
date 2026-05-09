@@ -40,8 +40,5 @@ original_source:
   - source: mrbase
     relation_type: prov:hadPrimarySource
 product_url: https://docs.epigraphdb.org/graph-database/
-secondary_source:
-  - source: epigraphdb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

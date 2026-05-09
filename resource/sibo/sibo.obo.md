@@ -7,4 +7,7 @@ name: sibo.obo
 product_file_size: 16744
 product_url: http://purl.obolibrary.org/obo/sibo.obo
 layout: product_detail
+original_source:
+  - source: sibo
+    relation_type: prov:hadPrimarySource
 ---

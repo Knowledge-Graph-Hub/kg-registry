@@ -8,4 +8,7 @@ name: STRING Protein Sequences
 product_file_size: 13003020999
 product_url: https://stringdb-downloads.org/download/protein.sequences.v12.0.fa.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

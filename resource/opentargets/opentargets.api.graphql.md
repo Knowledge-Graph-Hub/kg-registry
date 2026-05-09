@@ -6,4 +6,7 @@ is_public: true
 name: Open Targets Platform GraphQL API
 product_url: https://api.platform.opentargets.org/api/v4/graphql
 layout: product_detail
+original_source:
+  - source: opentargets
+    relation_type: prov:hadPrimarySource
 ---

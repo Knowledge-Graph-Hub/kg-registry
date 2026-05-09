@@ -8,8 +8,5 @@ original_source:
   - source: ebrains
     relation_type: prov:hadPrimarySource
 product_url: https://stats.kg.ebrains.eu/
-secondary_source:
-  - source: ebrains
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

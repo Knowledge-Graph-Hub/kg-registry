@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Erik Segerdell
-  orcid: 0000-0002-9611-1279
-  contact_details:
-  - contact_type: email
-    value: Erik.Segerdell@cchmc.org
-  - contact_type: github
-    value: seger
+  - category: Individual
+    label: Erik Segerdell
+    orcid: 0000-0002-9611-1279
+    contact_details:
+      - contact_type: email
+        value: Erik.Segerdell@cchmc.org
+      - contact_type: github
+        value: seger
 creation_date: '2025-09-29T00:00:00Z'
-description: XAO represents the anatomy and development of the African frogs Xenopus
-  laevis and tropicalis.
+description: XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: http://www.xenbase.org/anatomy/xao.do?method=display
 id: xao
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,30 +26,36 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Xenopus Anatomy Ontology
 products:
-- category: OntologyProduct
-  description: Xenopus Anatomy Ontology in OWL format
-  format: owl
-  id: xao.owl
-  name: xao.owl
-  product_file_size: 226615
-  product_url: http://purl.obolibrary.org/obo/xao.owl
-- category: OntologyProduct
-  description: Xenopus Anatomy Ontology in OBO format
-  format: obo
-  id: xao.obo
-  name: xao.obo
-  product_file_size: 149154
-  product_url: http://purl.obolibrary.org/obo/xao.obo
+  - category: OntologyProduct
+    description: Xenopus Anatomy Ontology in OWL format
+    format: owl
+    id: xao.owl
+    name: xao.owl
+    product_file_size: 226615
+    product_url: http://purl.obolibrary.org/obo/xao.owl
+    original_source:
+      - source: xao
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Xenopus Anatomy Ontology in OBO format
+    format: obo
+    id: xao.obo
+    name: xao.obo
+    product_file_size: 149154
+    product_url: http://purl.obolibrary.org/obo/xao.obo
+    original_source:
+      - source: xao
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/xenopus-anatomy/xao
 taxon:
-- NCBITaxon:8353
+  - NCBITaxon:8353
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
-  title: An ontology for Xenopus anatomy and development.
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
-  title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins
-    more accurate annotation of gene expression and queries on Xenbase.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
+    title: An ontology for Xenopus anatomy and development.
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
+    title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase.'
 ---
+
 ## Description
 
 XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.

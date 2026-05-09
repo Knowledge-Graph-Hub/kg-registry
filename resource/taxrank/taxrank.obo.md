@@ -7,4 +7,7 @@ name: taxrank.obo
 product_file_size: 2271
 product_url: http://purl.obolibrary.org/obo/taxrank.obo
 layout: product_detail
+original_source:
+  - source: taxrank
+    relation_type: prov:hadPrimarySource
 ---

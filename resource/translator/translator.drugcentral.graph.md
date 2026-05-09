@@ -16,10 +16,9 @@ node_count: 5493
 original_source:
   - source: drugcentral
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/drugcentral/latest/
 versions:
   - '2026_03_19'
   - drugcentral_2023_11_01_82890f34_2025sep1_4.3.6

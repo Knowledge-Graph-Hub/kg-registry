@@ -34,6 +34,9 @@ products:
     id: bv-brc.site
     name: BV-BRC Web Interface
     product_url: https://www.bv-brc.org/
+    original_source:
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Application Programming Interface for programmatic access to BV-BRC data
     format: http
@@ -41,18 +44,27 @@ products:
     is_public: true
     name: BV-BRC Data API
     product_url: https://www.bv-brc.org/api/doc/
+    original_source:
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: Command Line Interface for batch access to BV-BRC data and services
     format: http
     id: bv-brc.cli
     name: BV-BRC CLI
     product_url: https://www.bv-brc.org/docs/cli_tutorial/index.html
+    original_source:
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP server providing direct access to BV-BRC data files
     format: http
     id: bv-brc.ftp
     name: BV-BRC FTP
     product_url: https://www.bv-brc.org/docs/quick_references/ftp.html
+    original_source:
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph

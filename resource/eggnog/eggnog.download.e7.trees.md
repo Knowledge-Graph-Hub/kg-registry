@@ -8,4 +8,7 @@ name: eggNOG 7 Protein Family Trees
 product_file_size: 2753498624
 product_url: https://eggnogdb.org/public/eggnog7/e7.trees.tsv.gz
 layout: product_detail
+original_source:
+  - source: eggnog
+    relation_type: prov:hadPrimarySource
 ---

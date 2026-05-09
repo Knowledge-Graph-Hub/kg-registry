@@ -7,4 +7,7 @@ name: ms.owl
 product_file_size: 4925738
 product_url: http://purl.obolibrary.org/obo/ms.owl
 layout: product_detail
+original_source:
+  - source: ms
+    relation_type: prov:hadPrimarySource
 ---

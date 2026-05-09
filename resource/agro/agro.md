@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Marie-Ang lique Laporte
-  orcid: 0000-0002-8461-9745
-  contact_details:
-  - contact_type: email
-    value: m.a.laporte@cgiar.org
-  - contact_type: github
-    value: marieALaporte
+  - category: Individual
+    label: Marie-Ang lique Laporte
+    orcid: 0000-0002-8461-9745
+    contact_details:
+      - contact_type: email
+        value: m.a.laporte@cgiar.org
+      - contact_type: github
+        value: marieALaporte
 creation_date: '2025-09-29T00:00:00Z'
-description: Ontology of agronomic practices, agronomic techniques, and agronomic
-  variables used in agronomic experiments
+description: Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments
 domains:
-- agriculture
+  - agriculture
 homepage_url: https://github.com/AgriculturalSemantics/agro
 id: agro
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Agronomy Ontology
 products:
-- category: OntologyProduct
-  description: Contains all AgrO terms and links to other relevant ontologies.
-  format: owl
-  id: agro.owl
-  name: AgrO
-  product_file_size: 463598
-  product_url: http://purl.obolibrary.org/obo/agro.owl
+  - category: OntologyProduct
+    description: Contains all AgrO terms and links to other relevant ontologies.
+    format: owl
+    id: agro.owl
+    name: AgrO
+    product_file_size: 463598
+    product_url: http://purl.obolibrary.org/obo/agro.owl
+    original_source:
+      - source: agro
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/AgriculturalSemantics/agro
 publications:
-- id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
-  title: 'Data-driven Agricultural Research for Development: A Need for Data Harmonization
-    Via Semantics.'
+  - id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
+    title: 'Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics.'
 ---
+
 ## Description
 
 Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments

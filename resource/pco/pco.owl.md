@@ -7,4 +7,7 @@ name: pco.owl
 product_file_size: 62282
 product_url: http://purl.obolibrary.org/obo/pco.owl
 layout: product_detail
+original_source:
+  - source: pco
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: ido.owl
 product_file_size: 69658
 product_url: http://purl.obolibrary.org/obo/ido.owl
 layout: product_detail
+original_source:
+  - source: ido
+    relation_type: prov:hadPrimarySource
 ---

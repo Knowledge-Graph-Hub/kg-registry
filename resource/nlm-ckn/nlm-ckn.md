@@ -53,9 +53,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 4262
     product_url: https://github.com/NIH-NLM/cell-kn-schema/blob/main/ckn-schema.yaml
-    secondary_source:
-      - source: nlm-ckn
-        relation_type: prov:wasInfluencedBy
 repository: https://github.com/NIH-NLM/cell-kn-mvp
 ---
 

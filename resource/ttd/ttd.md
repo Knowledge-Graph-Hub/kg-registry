@@ -46,6 +46,9 @@ products:
     id: ttd.portal
     name: TTD Web Portal
     product_url: https://idrblab.org/ttd/
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Raw format target information including all TTD target data
     format: txt
@@ -54,6 +57,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Raw format drug information including all TTD drug data
     format: txt
@@ -62,6 +68,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-02-TTD_drug_download.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Cross-matching identifiers between TTD drugs and public databases
     format: txt
@@ -70,6 +79,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-03-Drug_xrefs.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Synonyms of drugs and small molecules in TTD
     format: txt
@@ -78,6 +90,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-30_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Drug to disease mapping with ICD identifiers
     format: txt
@@ -86,6 +101,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-30_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Target to disease mapping with ICD identifiers
     format: txt
@@ -94,6 +112,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Target to drug mapping with mode of action information
     format: csv
@@ -102,6 +123,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Biomarker to disease mapping with ICD identifiers
     format: txt
@@ -110,6 +134,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Target to compound mapping with experimental activity data
     format: txt
@@ -118,18 +145,20 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: UniProt IDs for all targets in TTD
     format: txt
     id: ttd.uniprot-all
     name: All Target UniProt IDs
     original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
       - source: uniprot
         relation_type: prov:hadPrimarySource
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt
-    secondary_source:
-      - source: ttd
-        relation_type: prov:wasInfluencedBy
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
   - category: Product
@@ -140,6 +169,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Structure data for all drugs in SDF format
     format: sdf
@@ -148,12 +180,18 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf
     warnings:
       - File was not able to be retrieved when checked on 2025-10-31_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: SMILES and InChI representations for approved drugs
     format: txt
     id: ttd.smiles-inchi
     name: Drug SMILES and InChI
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-06-Drug_SMILE_InChI.txt
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: KEGG pathway data for all targets
     format: txt
@@ -162,10 +200,9 @@ products:
     original_source:
       - source: kegg
         relation_type: prov:hadPrimarySource
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
-    secondary_source:
       - source: ttd
-        relation_type: prov:wasInfluencedBy
+        relation_type: prov:hadPrimarySource
+    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
   - category: Product
@@ -174,12 +211,11 @@ products:
     id: ttd.wiki-pathways
     name: Target WikiPathways
     original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
       - source: wikipathways
         relation_type: prov:hadPrimarySource
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
-    secondary_source:
-      - source: ttd
-        relation_type: prov:wasInfluencedBy
     warnings: []
   - category: Product
     description: Drug combination data including synergistic, additive, and antagonistic interactions
@@ -189,6 +225,9 @@ products:
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt
     warnings:
       - File was not able to be retrieved when checked on 2025-10-30_ Error connecting to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Help documentation and user guide for TTD
     format: http
@@ -197,6 +236,9 @@ products:
     product_url: https://idrblab.org/ttd/help
     warnings:
       - File was not able to be retrieved when checked on 2026-03-08_ HTTP 404 error when accessing file
+    original_source:
+      - source: ttd
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
     edge_count: 500958

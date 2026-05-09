@@ -6,4 +6,7 @@ id: nihreporter.publications
 name: NIH-Funded Publications Database
 product_url: https://reporter.nih.gov/exporter/publications
 layout: product_detail
+original_source:
+  - source: nihreporter
+    relation_type: prov:hadPrimarySource
 ---

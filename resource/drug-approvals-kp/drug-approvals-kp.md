@@ -33,15 +33,14 @@ products:
         relation_type: prov:hadPrimarySource
       - source: doid
         relation_type: prov:hadPrimarySource
+      - source: drug-approvals-kp
+        relation_type: prov:hadPrimarySource
       - source: hp
         relation_type: prov:hadPrimarySource
       - source: mondo
         relation_type: prov:hadPrimarySource
     product_file_size: 701451
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-    secondary_source:
-      - source: drug-approvals-kp
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: Edges for the Drug Approvals KP, v0.3.9
     format: kgx
@@ -52,15 +51,14 @@ products:
         relation_type: prov:hadPrimarySource
       - source: doid
         relation_type: prov:hadPrimarySource
+      - source: drug-approvals-kp
+        relation_type: prov:hadPrimarySource
       - source: hp
         relation_type: prov:hadPrimarySource
       - source: mondo
         relation_type: prov:hadPrimarySource
     product_file_size: 31052966
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-    secondary_source:
-      - source: drug-approvals-kp
-        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: Code for the Drug Approvals KP
     id: drug-approvals-kp.code
@@ -69,9 +67,6 @@ products:
       - source: drug-approvals-kp
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/multiomicsKP/drug_approvals_kp
-    secondary_source:
-      - source: drug-approvals-kp
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compatibility:
       - standard: biolink

@@ -15,6 +15,8 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: intact
     relation_type: prov:hadPrimarySource
+  - source: irefindex
+    relation_type: prov:hadPrimarySource
   - source: mint
     relation_type: prov:hadPrimarySource
 layout: product_detail

@@ -27,16 +27,25 @@ products:
     id: finngen.summary_stats
     name: FinnGen GWAS Summary Statistics
     product_url: https://www.finngen.fi/en/access_results
+    original_source:
+      - source: finngen
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: A web service for browsing disease endpoints in FinnGen, including statistics, definitions, and relationships between diseases.
     id: finngen.risteys
     name: Risteys
     product_url: https://risteys.finngen.fi/
+    original_source:
+      - source: finngen
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Results from meta-analysis of FinnGen data with other major biobanks, allowing for more powerful detection of genetic associations.
     id: finngen.meta_analysis
     name: FinnGen Meta-Analysis Results
     product_url: https://www.finngen.fi/en/access_results
+    original_source:
+      - source: finngen
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
     id: disgenet.data
@@ -79,6 +88,9 @@ products:
     id: finngen.endpoints
     name: FinnGen Clinical Endpoints
     product_url: https://www.finngen.fi/en/researchers/clinical-endpoints
+    original_source:
+      - source: finngen
+        relation_type: prov:hadPrimarySource
 publications:
   - doi: 10.1038/s41588-024-01975-5
     id: doi:10.1038/s41588-024-01975-5
@@ -105,7 +117,7 @@ FinnGen is one of the world's leading biobank studies, with the goal of collecti
 The project is coordinated by the University of Helsinki and includes:
 - All Finnish public biobanks
 - Finnish universities
-- Hospital districts 
+- Hospital districts
 - International pharmaceutical companies
 - Finnish research institutes
 

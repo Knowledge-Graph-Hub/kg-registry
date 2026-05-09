@@ -6,4 +6,7 @@ id: cog.portal
 name: COG Project Portal
 product_url: https://www.ncbi.nlm.nih.gov/research/cog
 layout: product_detail
+original_source:
+  - source: cog
+    relation_type: prov:hadPrimarySource
 ---

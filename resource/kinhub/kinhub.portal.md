@@ -6,4 +6,7 @@ id: kinhub.portal
 name: KinHub Portal
 product_url: http://www.kinhub.org/
 layout: product_detail
+original_source:
+  - source: kinhub
+    relation_type: prov:hadPrimarySource
 ---

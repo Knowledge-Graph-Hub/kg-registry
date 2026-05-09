@@ -6,4 +6,7 @@ is_public: true
 name: DGIdb API
 product_url: https://dgidb.org/api
 layout: product_detail
+original_source:
+  - source: dgidb
+    relation_type: prov:hadPrimarySource
 ---

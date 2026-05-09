@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Hilmar Lapp
-  orcid: 0000-0001-9107-0714
-  contact_details:
-  - contact_type: email
-    value: hilmar.lapp@duke.edu
-  - contact_type: github
-    value: hlapp
+  - category: Individual
+    label: Hilmar Lapp
+    orcid: 0000-0001-9107-0714
+    contact_details:
+      - contact_type: email
+        value: hilmar.lapp@duke.edu
+      - contact_type: github
+        value: hlapp
 creation_date: '2025-09-29T00:00:00Z'
 description: An application ontology to formalize annotation of phylogenetic data.
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://www.evoio.org/wiki/MIAPA
 id: miapa
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: MIAPA Ontology
 products:
-- category: OntologyProduct
-  description: MIAPA Ontology in OWL format
-  format: owl
-  id: miapa.owl
-  name: miapa.owl
-  product_file_size: 5849
-  product_url: http://purl.obolibrary.org/obo/miapa.owl
+  - category: OntologyProduct
+    description: MIAPA Ontology in OWL format
+    format: owl
+    id: miapa.owl
+    name: miapa.owl
+    product_file_size: 5849
+    product_url: http://purl.obolibrary.org/obo/miapa.owl
+    original_source:
+      - source: miapa
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/evoinfo/miapa
 publications:
-- id: https://doi.org/10.1089/omi.2006.10.231
-  title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies:
-    Minimum Information about a Phylogenetic Analysis (MIAPA)'
+  - id: https://doi.org/10.1089/omi.2006.10.231
+    title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)'
 ---
+
 ## Description
 
 An application ontology to formalize annotation of phylogenetic data.

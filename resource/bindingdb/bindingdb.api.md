@@ -5,4 +5,7 @@ id: bindingdb.api
 name: BindingDB RESTful API
 product_url: https://www.bindingdb.org/rwd/bind/BindingDBRESTfulAPI.jsp
 layout: product_detail
+original_source:
+  - source: bindingdb
+    relation_type: prov:hadPrimarySource
 ---

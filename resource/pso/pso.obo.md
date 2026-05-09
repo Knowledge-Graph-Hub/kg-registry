@@ -7,4 +7,7 @@ name: pso.obo
 product_file_size: 241726
 product_url: http://purl.obolibrary.org/obo/pso.obo
 layout: product_detail
+original_source:
+  - source: pso
+    relation_type: prov:hadPrimarySource
 ---

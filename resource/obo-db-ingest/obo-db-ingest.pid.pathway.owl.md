@@ -7,4 +7,7 @@ name: pid.pathway OWL
 product_file_size: 54779
 product_url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

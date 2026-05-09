@@ -19,18 +19,27 @@ products:
     id: smart.portal
     name: SMART Portal
     product_url: https://smart.embl.de/
+    original_source:
+      - source: smart
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: SMART search interface for querying proteins and domain annotations.
     format: http
     id: smart.search
     name: SMART Search
     product_url: https://smart.embl.de/smart/search.cgi
+    original_source:
+      - source: smart
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Genomic SMART genome listing interface.
     format: http
     id: smart.list-genomes
     name: SMART Genome List
     product_url: https://smart.embl.de/smart/list_genomes.cgi
+    original_source:
+      - source: smart
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

@@ -29,17 +29,26 @@ products:
     id: stellar.code
     name: STELLAR Code
     product_url: https://github.com/snap-stanford/stellar
+    original_source:
+      - source: stellar
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Demo Jupyter notebook showing example usage of STELLAR on downsampled datasets
     id: stellar.demo
     name: STELLAR Demo Notebook
     product_url: https://github.com/snap-stanford/stellar/blob/main/demo.ipynb
+    original_source:
+      - source: stellar
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: CODEX multiplexed imaging datasets used in STELLAR research
     id: stellar.datasets
     name: STELLAR Datasets
     product_url: https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk
     warnings: []
+    original_source:
+      - source: stellar
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

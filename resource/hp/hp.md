@@ -33,6 +33,9 @@ products:
     name: Official HPO release in obographs JSON format
     product_file_size: 22063007
     product_url: http://purl.obolibrary.org/obo/hp.json
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format.
     format: obo
@@ -40,6 +43,9 @@ products:
     name: Official HPO release in OBO format
     product_file_size: 10703106
     product_url: http://purl.obolibrary.org/obo/hp.obo
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Manually classified version of the ontology without the use of a reasoner, with imported terms, in OWL format (RDF/XML).
     format: owl
@@ -47,6 +53,9 @@ products:
     name: Official HPO release in OWL
     product_file_size: 76165285
     product_url: http://purl.obolibrary.org/obo/hp.owl
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in obographs JSON file format.
     format: obo
@@ -54,6 +63,9 @@ products:
     name: HPO base release in obographs JSON format
     product_file_size: 22264343
     product_url: http://purl.obolibrary.org/obo/hp/hp-base.json
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OBO file format.
     format: obo
@@ -61,6 +73,9 @@ products:
     name: HPO base release in OBO format
     product_file_size: 11259310
     product_url: http://purl.obolibrary.org/obo/hp/hp-base.obo
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OWL (RDF/XML) file format.
     format: owl
@@ -68,6 +83,9 @@ products:
     name: HPO base release in OWL format
     product_file_size: 48376110
     product_url: http://purl.obolibrary.org/obo/hp/hp-base.owl
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in obographs JSON file format.
     format: json
@@ -75,6 +93,9 @@ products:
     name: HPO full release in obographs JSON format
     product_file_size: 42991056
     product_url: http://purl.obolibrary.org/obo/hp/hp-full.json
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OBO file format.
     format: obo
@@ -82,6 +103,9 @@ products:
     name: HPO full release in OBO format
     product_file_size: 19203487
     product_url: http://purl.obolibrary.org/obo/hp/hp-full.obo
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OWL (RDF/XML) file format.
     format: owl
@@ -89,6 +113,9 @@ products:
     name: HPO full release in OWL format
     product_file_size: 85256414
     product_url: http://purl.obolibrary.org/obo/hp/hp-full.owl
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in obographs JSON file format.
     format: json
@@ -96,6 +123,9 @@ products:
     name: HPO International Edition in obographs JSON format
     product_file_size: 49246551
     product_url: http://purl.obolibrary.org/obo/hp/hp-international.json
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OBO file format.
     format: obo
@@ -103,6 +133,9 @@ products:
     name: HPO International Edition in OBO format
     product_file_size: 22152711
     product_url: http://purl.obolibrary.org/obo/hp/hp-international.obo
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OWL (RDF/XML) file format.
     format: owl
@@ -110,6 +143,9 @@ products:
     name: HPO International Edition in OWL format
     product_file_size: 208345468
     product_url: http://purl.obolibrary.org/obo/hp/hp-international.owl
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON file format.
     format: json
@@ -117,6 +153,9 @@ products:
     name: HPO simple, manually classified, without imports in obographs JSON format
     product_file_size: 22063054
     product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format.
     format: obo
@@ -124,6 +163,9 @@ products:
     name: HPO simple, manually classified, without imports in OBO format
     product_file_size: 10703156
     product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OWL (RDF/XML) file format.
     format: owl
@@ -131,6 +173,9 @@ products:
     name: HPO simple, manually classified, without imports in OWL format
     product_file_size: 29893603
     product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: https://hpo.jax.org/app/data/annotations
     format: tsv
@@ -138,6 +183,9 @@ products:
     name: HPO Annotations (Phenotype to Disease)
     product_file_size: 35261380
     product_url: http://purl.obolibrary.org/obo/hp/phenotype.hpoa
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: https://hpo.jax.org/app/data/annotations
     format: tsv
@@ -145,6 +193,9 @@ products:
     name: HPO phenotype to gene annotations
     product_file_size: 65852754
     product_url: http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: https://hpo.jax.org/app/data/annotations
     format: tsv
@@ -152,6 +203,9 @@ products:
     name: HPO gene to phenotype annotations
     product_file_size: 20533481
     product_url: http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt
+    original_source:
+      - source: hp
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

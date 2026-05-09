@@ -33,6 +33,9 @@ products:
     name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
     product_file_size: 2118169
     product_url: http://purl.obolibrary.org/obo/doid.owl
+    original_source:
+      - source: doid
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Disease Ontology, OBO format. This file omits the equivalent axioms.
     format: obo
@@ -40,6 +43,9 @@ products:
     name: Disease Ontology, OBO format. This file omits the equivalent axioms.
     product_file_size: 1376460
     product_url: http://purl.obolibrary.org/obo/doid.obo
+    original_source:
+      - source: doid
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

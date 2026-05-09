@@ -42,9 +42,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 6866918
     product_url: https://ubergraph.apps.renci.org/sparql
-    secondary_source:
-      - source: ubergraph
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Blazegraph journal of Ubergraph
     id: ubergraph.blazegraph.jnl
@@ -54,9 +51,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 9157530809
     product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
-    secondary_source:
-      - source: ubergraph
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: Ubergraph n-quads
     format: nquads
@@ -67,9 +61,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 3718641146
     product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
-    secondary_source:
-      - source: ubergraph
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     description: UberGraph Automat
     format: kgx-jsonl

@@ -30,18 +30,27 @@ products:
     name: Open Targets Platform
     product_url: https://platform.opentargets.org/
     repository: https://github.com/opentargets/platform
+    original_source:
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: GraphQL API for accessing Open Targets Platform data programmatically.
     id: opentargets.api.graphql
     is_public: true
     name: Open Targets Platform GraphQL API
     product_url: https://api.platform.opentargets.org/api/v4/graphql
+    original_source:
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for accessing Open Targets Platform data programmatically.
     id: opentargets.api.rest
     is_public: true
     name: Open Targets Platform REST API
     product_url: https://api.platform.opentargets.org/api/v4/rest
+    original_source:
+      - source: opentargets
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

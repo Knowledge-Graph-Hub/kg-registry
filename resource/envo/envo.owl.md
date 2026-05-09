@@ -7,4 +7,7 @@ name: main ENVO OWL release
 product_file_size: 819909
 product_url: http://purl.obolibrary.org/obo/envo.owl
 layout: product_detail
+original_source:
+  - source: envo
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,22 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jennifer C. Gir n
-  orcid: 0000-0002-0851-6883
-  contact_details:
-  - contact_type: email
-    value: entiminae@gmail.com
-  - contact_type: github
-    value: JCGiron
+  - category: Individual
+    label: Jennifer C. Gir n
+    orcid: 0000-0002-0851-6883
+    contact_details:
+      - contact_type: email
+        value: entiminae@gmail.com
+      - contact_type: github
+        value: JCGiron
 creation_date: '2025-09-29T00:00:00Z'
-description: The AISM contains terms used in insect biodiversity research for describing
-  structures of the exoskeleton and the skeletomuscular system. It aims to serve as
-  the basic backbone of generalized terms to be expanded with order-specific terminology.
+description: The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/insect-morphology/aism
 id: aism
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -28,33 +26,40 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
 products:
-- category: OntologyProduct
-  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-    in OWL format
-  format: owl
-  id: aism.owl
-  name: aism.owl
-  product_file_size: 1378303
-  product_url: http://purl.obolibrary.org/obo/aism.owl
-- category: OntologyProduct
-  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-    in OBO format
-  format: obo
-  id: aism.obo
-  name: aism.obo
-  product_file_size: 896550
-  product_url: http://purl.obolibrary.org/obo/aism.obo
-- category: OntologyProduct
-  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-    in JSON format
-  format: json
-  id: aism.json
-  name: aism.json
-  product_file_size: 929390
-  product_url: http://purl.obolibrary.org/obo/aism.json
+  - category: OntologyProduct
+    description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) in OWL format
+    format: owl
+    id: aism.owl
+    name: aism.owl
+    product_file_size: 1378303
+    product_url: http://purl.obolibrary.org/obo/aism.owl
+    original_source:
+      - source: aism
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) in OBO format
+    format: obo
+    id: aism.obo
+    name: aism.obo
+    product_file_size: 896550
+    product_url: http://purl.obolibrary.org/obo/aism.obo
+    original_source:
+      - source: aism
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM) in JSON format
+    format: json
+    id: aism.json
+    name: aism.json
+    product_file_size: 929390
+    product_url: http://purl.obolibrary.org/obo/aism.json
+    original_source:
+      - source: aism
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/insect-morphology/aism
 publications: []
 ---
+
 ## Description
 
 The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.

@@ -36,6 +36,8 @@ products:
     id: aact.database
     name: AACT Cloud Database
     original_source:
+      - source: aact
+        relation_type: prov:hadPrimarySource
       - source: clinicaltrialsgov
         relation_type: prov:hadPrimarySource
     product_url: https://aact.ctti-clinicaltrials.org/connect
@@ -45,6 +47,8 @@ products:
     id: aact.downloads
     name: AACT Database Downloads
     original_source:
+      - source: aact
+        relation_type: prov:hadPrimarySource
       - source: clinicaltrialsgov
         relation_type: prov:hadPrimarySource
     product_url: https://aact.ctti-clinicaltrials.org/downloads

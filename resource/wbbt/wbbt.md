@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Raymond Lee
-  orcid: 0000-0002-8151-7479
-  contact_details:
-  - contact_type: email
-    value: raymond@caltech.edu
-  - contact_type: github
-    value: raymond91125
+  - category: Individual
+    label: Raymond Lee
+    orcid: 0000-0002-8151-7479
+    contact_details:
+      - contact_type: email
+        value: raymond@caltech.edu
+      - contact_type: github
+        value: raymond91125
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
-  elegans</i>.
+description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 id: wbbt
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,27 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: C. elegans Gross Anatomy Ontology
 products:
-- category: OntologyProduct
-  description: C. elegans Gross Anatomy Ontology in OWL format
-  format: owl
-  id: wbbt.owl
-  name: wbbt.owl
-  product_file_size: 325464
-  product_url: http://purl.obolibrary.org/obo/wbbt.owl
-- category: OntologyProduct
-  description: C. elegans Gross Anatomy Ontology in OBO format
-  format: obo
-  id: wbbt.obo
-  name: wbbt.obo
-  product_file_size: 163163
-  product_url: http://purl.obolibrary.org/obo/wbbt.obo
+  - category: OntologyProduct
+    description: C. elegans Gross Anatomy Ontology in OWL format
+    format: owl
+    id: wbbt.owl
+    name: wbbt.owl
+    product_file_size: 325464
+    product_url: http://purl.obolibrary.org/obo/wbbt.owl
+    original_source:
+      - source: wbbt
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: C. elegans Gross Anatomy Ontology in OBO format
+    format: obo
+    id: wbbt.obo
+    name: wbbt.obo
+    product_file_size: 163163
+    product_url: http://purl.obolibrary.org/obo/wbbt.obo
+    original_source:
+      - source: wbbt
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 taxon:
-- NCBITaxon:6237
+  - NCBITaxon:6237
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
-  title: Building a cell and anatomy ontology of Caenorhabditis elegans
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
+    title: Building a cell and anatomy ontology of Caenorhabditis elegans
 ---
+
 ## Description
 
 A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.

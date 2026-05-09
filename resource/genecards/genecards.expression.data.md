@@ -5,11 +5,13 @@ format: http
 id: genecards.expression.data
 name: GeneCards Expression Data
 original_source:
-  - source: gtex
+  - source: bgee
     relation_type: prov:hadPrimarySource
   - source: biogps
     relation_type: prov:hadPrimarySource
-  - source: bgee
+  - source: genecards
+    relation_type: prov:hadPrimarySource
+  - source: gtex
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/
 warnings:

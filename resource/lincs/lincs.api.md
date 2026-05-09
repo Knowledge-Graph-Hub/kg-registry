@@ -6,4 +6,7 @@ is_public: true
 name: LINCS API
 product_url: https://lincsportal.ccs.miami.edu/sigc-api/swagger-ui.html#/
 layout: product_detail
+original_source:
+  - source: lincs
+    relation_type: prov:hadPrimarySource
 ---

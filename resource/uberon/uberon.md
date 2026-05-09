@@ -34,6 +34,9 @@ products:
     name: Uberon
     product_file_size: 98551256
     product_url: http://purl.obolibrary.org/obo/uberon.owl
+    original_source:
+      - source: uberon
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Axioms defined within Uberon and to be used in imports for other ontologies
     format: owl
@@ -41,6 +44,9 @@ products:
     name: Uberon base ontology
     product_file_size: 57265394
     product_url: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
+    original_source:
+      - source: uberon
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Uberon edition that excludes external ontologies and most relations
     format: obo
@@ -48,6 +54,9 @@ products:
     name: Uberon basic
     product_file_size: 12146722
     product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
+    original_source:
+      - source: uberon
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Uberon plus all metazoan ontologies
     format: owl
@@ -55,6 +64,9 @@ products:
     name: Uberon collected metazoan ontology
     product_file_size: 284938816
     product_url: http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl
+    original_source:
+      - source: uberon
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Uberon and all metazoan ontologies with redundant species-specific terms removed
     format: owl
@@ -62,6 +74,9 @@ products:
     name: Uberon composite metazoan ontology
     product_file_size: 259794621
     product_url: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
+    original_source:
+      - source: uberon
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Uberon composite vertebrate ontology
     format: owl
@@ -69,6 +84,9 @@ products:
     name: Uberon composite vertebrate ontology
     product_file_size: 126856799
     product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
+    original_source:
+      - source: uberon
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

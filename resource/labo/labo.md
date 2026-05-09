@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Paul Fabry
-  orcid: 0000-0002-3336-2476
-  contact_details:
-  - contact_type: email
-    value: paul.fabry@usherbrooke.ca
-  - contact_type: github
-    value: pfabry
+  - category: Individual
+    label: Paul Fabry
+    orcid: 0000-0002-3336-2476
+    contact_details:
+      - contact_type: email
+        value: paul.fabry@usherbrooke.ca
+      - contact_type: github
+        value: pfabry
 creation_date: '2025-09-29T00:00:00Z'
-description: LABO is an ontology of informational entities formalizing clinical laboratory
-  tests prescriptions and reporting documents.
+description: LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/OpenLHS/LABO
 id: labo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,20 +26,24 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: clinical LABoratory Ontology
 products:
-- category: OntologyProduct
-  description: clinical LABoratory Ontology in OWL format
-  format: owl
-  id: labo.owl
-  name: labo.owl
-  product_file_size: 47001
-  product_url: http://purl.obolibrary.org/obo/labo.owl
+  - category: OntologyProduct
+    description: clinical LABoratory Ontology in OWL format
+    format: owl
+    id: labo.owl
+    name: labo.owl
+    product_file_size: 47001
+    product_url: http://purl.obolibrary.org/obo/labo.owl
+    original_source:
+      - source: labo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/OpenLHS/LABO
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 publications:
-- id: https://doi.org/10.5281/zenodo.6522019
-  title: 'LABO: An Ontology for Laboratory Test Prescription and Reporting'
+  - id: https://doi.org/10.5281/zenodo.6522019
+    title: 'LABO: An Ontology for Laboratory Test Prescription and Reporting'
 ---
+
 ## Description
 
 LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.

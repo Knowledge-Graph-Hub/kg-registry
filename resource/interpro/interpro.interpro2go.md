@@ -11,8 +11,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 3088718
 product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
-secondary_source:
-  - source: interpro
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

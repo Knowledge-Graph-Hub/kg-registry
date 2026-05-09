@@ -6,4 +6,7 @@ id: ribovision.about
 name: About RiboVision
 product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/about/
 layout: product_detail
+original_source:
+  - source: ribovision
+    relation_type: prov:hadPrimarySource
 ---

@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Val Wood
-  orcid: 0000-0001-6330-7526
-  contact_details:
-  - contact_type: email
-    value: vw253@cam.ac.uk
-  - contact_type: github
-    value: ValWood
+  - category: Individual
+    label: Val Wood
+    orcid: 0000-0001-6330-7526
+    contact_details:
+      - contact_type: email
+        value: vw253@cam.ac.uk
+      - contact_type: github
+        value: ValWood
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary for the anatomy of fungi.
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/fungal-anatomy-ontology/
 id: fao
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,25 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Fungal gross anatomy
 products:
-- category: OntologyProduct
-  description: Fungal gross anatomy in OWL format
-  format: owl
-  id: fao.owl
-  name: fao.owl
-  product_file_size: 14367
-  product_url: http://purl.obolibrary.org/obo/fao.owl
-- category: OntologyProduct
-  description: Fungal gross anatomy in OBO format
-  format: obo
-  id: fao.obo
-  name: fao.obo
-  product_file_size: 9190
-  product_url: http://purl.obolibrary.org/obo/fao.obo
+  - category: OntologyProduct
+    description: Fungal gross anatomy in OWL format
+    format: owl
+    id: fao.owl
+    name: fao.owl
+    product_file_size: 14367
+    product_url: http://purl.obolibrary.org/obo/fao.owl
+    original_source:
+      - source: fao
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Fungal gross anatomy in OBO format
+    format: obo
+    id: fao.obo
+    name: fao.obo
+    product_file_size: 9190
+    product_url: http://purl.obolibrary.org/obo/fao.obo
+    original_source:
+      - source: fao
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/fungal-anatomy-ontology
 taxon:
-- NCBITaxon:4751
+  - NCBITaxon:4751
 publications: []
 ---
+
 ## Description
 
 A structured controlled vocabulary for the anatomy of fungi.

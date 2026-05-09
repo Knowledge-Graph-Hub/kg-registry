@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
-  contact_details:
-  - contact_type: email
-    value: jaiswalp@science.oregonstate.edu
-  - contact_type: github
-    value: jaiswalp
+  - category: Individual
+    label: Pankaj Jaiswal
+    orcid: 0000-0002-1005-8383
+    contact_details:
+      - contact_type: email
+        value: jaiswalp@science.oregonstate.edu
+      - contact_type: github
+        value: jaiswalp
 creation_date: '2025-07-10T00:00:00Z'
-description: A structured, controlled vocabulary which describes the treatments, growing
-  conditions, and/or study types used in plant biology experiments.
+description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://planteome.org/
 id: peco
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,26 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Experimental Conditions Ontology
 products:
-- category: OntologyProduct
-  description: Plant Experimental Conditions Ontology in OWL format
-  format: owl
-  id: peco.owl
-  name: peco.owl
-  product_file_size: 82622
-  product_url: http://purl.obolibrary.org/obo/peco.owl
-- category: OntologyProduct
-  description: Plant Experimental Conditions Ontology in OBO format
-  format: obo
-  id: peco.obo
-  name: peco.obo
-  product_file_size: 67259
-  product_url: http://purl.obolibrary.org/obo/peco.obo
+  - category: OntologyProduct
+    description: Plant Experimental Conditions Ontology in OWL format
+    format: owl
+    id: peco.owl
+    name: peco.owl
+    product_file_size: 82622
+    product_url: http://purl.obolibrary.org/obo/peco.owl
+    original_source:
+      - source: peco
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Plant Experimental Conditions Ontology in OBO format
+    format: obo
+    id: peco.obo
+    name: peco.obo
+    product_file_size: 67259
+    product_url: http://purl.obolibrary.org/obo/peco.obo
+    original_source:
+      - source: peco
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/Planteome/plant-experimental-conditions-ontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
-  title: 'The Planteome database: an integrated resource for reference ontologies,
-    plant genomics and phenomics.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+    title: 'The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.'
 ---
+
 ## Description
 
 A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.

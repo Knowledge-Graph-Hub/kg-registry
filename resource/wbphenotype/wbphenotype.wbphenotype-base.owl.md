@@ -7,4 +7,7 @@ name: wbphenotype.wbphenotype-base.owl
 product_file_size: 329630
 product_url: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
 layout: product_detail
+original_source:
+  - source: wbphenotype
+    relation_type: prov:hadPrimarySource
 ---

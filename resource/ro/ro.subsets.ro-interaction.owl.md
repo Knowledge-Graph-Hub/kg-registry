@@ -7,4 +7,7 @@ name: Interaction relations
 product_file_size: 64252
 product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl
 layout: product_detail
+original_source:
+  - source: ro
+    relation_type: prov:hadPrimarySource
 ---

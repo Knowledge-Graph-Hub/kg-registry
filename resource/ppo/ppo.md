@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Ramona Walls
-  orcid: 0000-0001-8815-0078
-  contact_details:
-  - contact_type: email
-    value: rlwalls2008@gmail.com
-  - contact_type: github
-    value: ramonawalls
+  - category: Individual
+    label: Ramona Walls
+    orcid: 0000-0001-8815-0078
+    contact_details:
+      - contact_type: email
+        value: rlwalls2008@gmail.com
+      - contact_type: github
+        value: ramonawalls
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for describing the phenology of individual plants and populations
-  of plants, and for integrating plant phenological data across sources and scales.
+description: An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/PlantPhenoOntology/PPO
 id: ppo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,18 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Phenology Ontology
 products:
-- category: OntologyProduct
-  description: Plant Phenology Ontology in OWL format
-  format: owl
-  id: ppo.owl
-  name: ppo.owl
-  product_file_size: 67183
-  product_url: http://purl.obolibrary.org/obo/ppo.owl
+  - category: OntologyProduct
+    description: Plant Phenology Ontology in OWL format
+    format: owl
+    id: ppo.owl
+    name: ppo.owl
+    product_file_size: 67183
+    product_url: http://purl.obolibrary.org/obo/ppo.owl
+    original_source:
+      - source: ppo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/PlantPhenoOntology/PPO
 taxon:
-- NCBITaxon:33090
+  - NCBITaxon:33090
 publications: []
 ---
+
 ## Description
 
 An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.

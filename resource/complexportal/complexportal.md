@@ -198,6 +198,9 @@ products:
     name: Complex Portal Fruit Fly ComplexTAB
     product_file_size: 331098
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7227.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Worm complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -205,6 +208,9 @@ products:
     name: Complex Portal Worm ComplexTAB
     product_file_size: 179822
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/6239.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: E. coli complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -212,6 +218,9 @@ products:
     name: Complex Portal E. coli ComplexTAB
     product_file_size: 545353
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/83333.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Bacillus subtilis complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -219,6 +228,9 @@ products:
     name: Complex Portal Bacillus subtilis ComplexTAB
     product_file_size: 4539
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/562.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Arabidopsis thaliana complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -226,6 +238,9 @@ products:
     name: Complex Portal Arabidopsis thaliana ComplexTAB
     product_file_size: 426981
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/3702.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Lamprey complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -233,6 +248,9 @@ products:
     name: Complex Portal Lamprey ComplexTAB
     product_file_size: 2639
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/6523.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pufferfish (Tetraodon nigroviridis) complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -240,6 +258,9 @@ products:
     name: Complex Portal Pufferfish (Tetraodon) ComplexTAB
     product_file_size: 2753
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7787.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pufferfish (Takifugu rubripes) complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -247,6 +268,9 @@ products:
     name: Complex Portal Pufferfish (Takifugu) ComplexTAB
     product_file_size: 2900
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7788.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Zebrafish complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -254,6 +278,9 @@ products:
     name: Complex Portal Zebrafish ComplexTAB
     product_file_size: 10758
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/7955.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: African clawed frog complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -261,6 +288,9 @@ products:
     name: Complex Portal African Clawed Frog ComplexTAB
     product_file_size: 9146
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/8355.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Sea urchin complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -268,6 +298,9 @@ products:
     name: Complex Portal Sea Urchin ComplexTAB
     product_file_size: 25445
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/8732.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Chicken complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -275,6 +308,9 @@ products:
     name: Complex Portal Chicken ComplexTAB
     product_file_size: 59744
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9031.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Dog complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -282,6 +318,9 @@ products:
     name: Complex Portal Dog ComplexTAB
     product_file_size: 5945
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9615.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pig complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -289,6 +328,9 @@ products:
     name: Complex Portal Pig ComplexTAB
     product_file_size: 11171
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9823.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Cattle complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -296,6 +338,9 @@ products:
     name: Complex Portal Cattle ComplexTAB
     product_file_size: 32682
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9913.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Sheep complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -303,6 +348,9 @@ products:
     name: Complex Portal Sheep ComplexTAB
     product_file_size: 1339
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9940.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Rabbit complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -310,6 +358,9 @@ products:
     name: Complex Portal Rabbit ComplexTAB
     product_file_size: 13180
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9986.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Rat complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -317,6 +368,9 @@ products:
     name: Complex Portal Rat ComplexTAB
     product_file_size: 267755
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/10116.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Helicobacter pylori complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -324,6 +378,9 @@ products:
     name: Complex Portal Helicobacter pylori ComplexTAB
     product_file_size: 2243
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/208964.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pseudomonas aeruginosa complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -331,6 +388,9 @@ products:
     name: Complex Portal Pseudomonas aeruginosa ComplexTAB
     product_file_size: 2105
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/243277.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Fission yeast complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -338,6 +398,9 @@ products:
     name: Complex Portal Fission Yeast ComplexTAB
     product_file_size: 172403
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/284812.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Dictyostelium discoideum complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -345,6 +408,9 @@ products:
     name: Complex Portal Dictyostelium discoideum ComplexTAB
     product_file_size: 33082
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/694009.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Leishmania major complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -352,6 +418,9 @@ products:
     name: Complex Portal Leishmania major ComplexTAB
     product_file_size: 9412
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/1235996.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Toxoplasma gondii complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -359,6 +428,9 @@ products:
     name: Complex Portal Toxoplasma gondii ComplexTAB
     product_file_size: 24961
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/1263720.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: SARS-CoV-2 complexes dataset from Complex Portal in ComplexTAB format
     format: tsv
@@ -366,6 +438,9 @@ products:
     name: Complex Portal SARS-CoV-2 ComplexTAB
     product_file_size: 73071
     product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/2697049.tsv
+    original_source:
+      - source: complexportal
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Tab-delimited list of complexes released in the current Complex Portal FTP release
     format: txt

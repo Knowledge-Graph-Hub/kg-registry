@@ -7,4 +7,7 @@ name: genepio.owl
 product_file_size: 732830
 product_url: http://purl.obolibrary.org/obo/genepio.owl
 layout: product_detail
+original_source:
+  - source: genepio
+    relation_type: prov:hadPrimarySource
 ---

@@ -8,8 +8,5 @@ original_source:
   - source: oma
     relation_type: prov:hadPrimarySource
 product_url: https://omabrowser.org/oma/
-secondary_source:
-  - source: oma
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

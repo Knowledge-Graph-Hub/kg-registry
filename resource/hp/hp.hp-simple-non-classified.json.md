@@ -1,11 +1,13 @@
 ---
 category: OntologyProduct
-description: Simple, manually curated version of the ontology without the use of a
-  reasoner, and without any imported terms, in obographs JSON file format.
+description: Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON file format.
 format: json
 id: hp.hp-simple-non-classified.json
 name: HPO simple, manually classified, without imports in obographs JSON format
 product_file_size: 22063054
 product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json
 layout: product_detail
+original_source:
+  - source: hp
+    relation_type: prov:hadPrimarySource
 ---

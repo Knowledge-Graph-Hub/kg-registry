@@ -6,4 +6,7 @@ id: smart.list-genomes
 name: SMART Genome List
 product_url: https://smart.embl.de/smart/list_genomes.cgi
 layout: product_detail
+original_source:
+  - source: smart
+    relation_type: prov:hadPrimarySource
 ---

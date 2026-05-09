@@ -27,9 +27,9 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: go
     relation_type: prov:hadPrimarySource
-  - source: hprd
-    relation_type: prov:hadPrimarySource
   - source: hgnc
+    relation_type: prov:hadPrimarySource
+  - source: hprd
     relation_type: prov:hadPrimarySource
   - source: intact
     relation_type: prov:hadPrimarySource
@@ -45,6 +45,8 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: pfam
     relation_type: prov:hadPrimarySource
+  - source: progenomes
+    relation_type: prov:hadPrimarySource
   - source: proteomehd
     relation_type: prov:hadPrimarySource
   - source: pubmedcentral
@@ -59,6 +61,8 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: smart
     relation_type: prov:hadPrimarySource
+  - source: string
+    relation_type: prov:hadPrimarySource
   - source: swissmodel
     relation_type: prov:hadPrimarySource
   - source: tissues
@@ -68,8 +72,6 @@ original_source:
   - source: wikipathways
     relation_type: prov:hadPrimarySource
   - source: wormbase
-    relation_type: prov:hadPrimarySource
-  - source: progenomes
     relation_type: prov:hadPrimarySource
 product_file_size: 281505096430
 product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz

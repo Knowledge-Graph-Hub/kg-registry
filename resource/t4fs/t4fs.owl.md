@@ -7,4 +7,7 @@ name: t4fs.owl
 product_file_size: 91877
 product_url: http://purl.obolibrary.org/obo/t4fs.owl
 layout: product_detail
+original_source:
+  - source: t4fs
+    relation_type: prov:hadPrimarySource
 ---

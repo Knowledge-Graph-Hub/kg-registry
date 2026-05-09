@@ -8,4 +8,7 @@ name: PharmKB Variants
 product_file_size: 850310
 product_url: https://api.pharmgkb.org/v1/download/file/data/variants.zip
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

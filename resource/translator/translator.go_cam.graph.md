@@ -16,10 +16,9 @@ node_count: 3181
 original_source:
   - source: go-cam
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/go_cam/latest/
 versions:
   - '2026_03_06'
   - go_cam_2026-01-23_b6972b4a_2025sep1_4.3.6

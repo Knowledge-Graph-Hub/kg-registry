@@ -8,12 +8,11 @@ license:
   label: CC-BY-4.0
 name: uniprot.ptm Nodes TSV
 original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
   - source: uniprot
     relation_type: prov:hadPrimarySource
 product_file_size: 6660
 product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.tsv
-secondary_source:
-  - source: obo-db-ingest
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

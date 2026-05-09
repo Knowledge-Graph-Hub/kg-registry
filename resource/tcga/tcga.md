@@ -24,18 +24,27 @@ products:
     id: "tcga.gdc_portal"
     name: GDC Data Portal
     product_url: https://portal.gdc.cancer.gov/
+    original_source:
+      - source: tcga
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Genomic Data Commons Application Programming Interface for programmatic access to TCGA and other cancer genomic data
     format: http
     id: "tcga.gdc_api"
     name: GDC API
     product_url: https://gdc.cancer.gov/developers/gdc-application-programming-interface-api
+    original_source:
+      - source: tcga
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Data Submission Portal for uploading and managing cancer genomic data submissions to GDC
     format: http
     id: "tcga.gdc_submission"
     name: GDC Data Submission Portal
     product_url: https://portal.gdc.cancer.gov/submission
+    original_source:
+      - source: tcga
+        relation_type: prov:hadPrimarySource
 synonyms:
   - TCGA
 taxon:

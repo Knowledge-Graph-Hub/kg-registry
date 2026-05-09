@@ -7,4 +7,7 @@ id: mirbase.cel-gff3
 name: C. elegans (cel) Genome Coordinates
 product_url: https://www.mirbase.org/download/CURRENT/
 layout: product_detail
+original_source:
+  - source: mirbase
+    relation_type: prov:hadPrimarySource
 ---

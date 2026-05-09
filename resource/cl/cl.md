@@ -34,6 +34,9 @@ products:
     name: Main CL OWL edition
     product_file_size: 65879178
     product_url: http://purl.obolibrary.org/obo/cl.owl
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
     format: obo
@@ -41,6 +44,9 @@ products:
     name: CL obo format edition
     product_file_size: 17326417
     product_url: http://purl.obolibrary.org/obo/cl.obo
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
     format: json
@@ -48,6 +54,9 @@ products:
     name: CL OBOGraph-JSON format edition
     product_file_size: 39845315
     product_url: http://purl.obolibrary.org/obo/cl.json
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Basic version, no inter-ontology axioms
     format: owl
@@ -55,6 +64,9 @@ products:
     name: Basic CL
     product_file_size: 9533929
     product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Basic version, no inter-ontology axioms
     format: obo
@@ -62,6 +74,9 @@ products:
     name: Basic CL (OBO version)
     product_file_size: 3346117
     product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Basic version, no inter-ontology axioms
     format: json
@@ -69,6 +84,9 @@ products:
     name: Basic CL (OBOGraph-JSON version)
     product_file_size: 6060633
     product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: complete CL but with no imports or external axioms
     format: owl
@@ -76,6 +94,9 @@ products:
     name: CL base module
     product_file_size: 12575443
     product_url: http://purl.obolibrary.org/obo/cl/cl-base.owl
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: complete CL but with no imports or external axioms
     format: obo
@@ -83,6 +104,9 @@ products:
     name: CL base module (OBO version)
     product_file_size: 3755296
     product_url: http://purl.obolibrary.org/obo/cl/cl-base.obo
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: complete CL but with no imports or external axioms
     format: json
@@ -90,6 +114,9 @@ products:
     name: CL base module (OBOGraph-JSON version)
     product_file_size: 7755251
     product_url: http://purl.obolibrary.org/obo/cl/cl-base.json
+    original_source:
+      - source: cl
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

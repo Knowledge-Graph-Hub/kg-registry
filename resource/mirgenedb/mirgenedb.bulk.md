@@ -6,4 +6,7 @@ id: mirgenedb.bulk
 name: MirGeneDB Bulk Data Archive
 product_url: https://mirgenedb.org/download
 layout: product_detail
+original_source:
+  - source: mirgenedb
+    relation_type: prov:hadPrimarySource
 ---

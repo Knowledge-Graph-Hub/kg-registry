@@ -6,4 +6,7 @@ id: nihreporter.api
 name: NIH Reporter API
 product_url: https://reporter.nih.gov/
 layout: product_detail
+original_source:
+  - source: nihreporter
+    relation_type: prov:hadPrimarySource
 ---

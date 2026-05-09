@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Ceri Van Slyke
-  orcid: 0000-0002-2244-7917
-  contact_details:
-  - contact_type: email
-    value: van_slyke@zfin.org
-  - contact_type: github
-    value: cerivs
+  - category: Individual
+    label: Ceri Van Slyke
+    orcid: 0000-0002-2244-7917
+    contact_details:
+      - contact_type: email
+        value: van_slyke@zfin.org
+      - contact_type: github
+        value: cerivs
 creation_date: '2025-09-29T00:00:00Z'
 description: Developmental stages of the Zebrafish
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfs
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,25 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Zebrafish developmental stages ontology
 products:
-- category: OntologyProduct
-  description: Zebrafish developmental stages ontology in OWL format
-  format: owl
-  id: zfs.owl
-  name: zfs.owl
-  product_file_size: 401629
-  product_url: http://purl.obolibrary.org/obo/zfs.owl
-- category: OntologyProduct
-  description: Zebrafish developmental stages ontology in OBO format
-  format: obo
-  id: zfs.obo
-  name: zfs.obo
-  product_file_size: 254897
-  product_url: http://purl.obolibrary.org/obo/zfs.obo
+  - category: OntologyProduct
+    description: Zebrafish developmental stages ontology in OWL format
+    format: owl
+    id: zfs.owl
+    name: zfs.owl
+    product_file_size: 401629
+    product_url: http://purl.obolibrary.org/obo/zfs.owl
+    original_source:
+      - source: zfs
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Zebrafish developmental stages ontology in OBO format
+    format: obo
+    id: zfs.obo
+    name: zfs.obo
+    product_file_size: 254897
+    product_url: http://purl.obolibrary.org/obo/zfs.obo
+    original_source:
+      - source: zfs
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 taxon:
-- NCBITaxon:7954
+  - NCBITaxon:7954
 publications: []
 ---
+
 ## Description
 
 Developmental stages of the Zebrafish

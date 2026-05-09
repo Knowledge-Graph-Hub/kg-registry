@@ -6,4 +6,7 @@ id: bv-brc.cli
 name: BV-BRC CLI
 product_url: https://www.bv-brc.org/docs/cli_tutorial/index.html
 layout: product_detail
+original_source:
+  - source: bv-brc
+    relation_type: prov:hadPrimarySource
 ---

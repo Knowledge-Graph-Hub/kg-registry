@@ -7,4 +7,7 @@ name: bfo.obo
 product_file_size: 17898
 product_url: http://purl.obolibrary.org/obo/bfo.obo
 layout: product_detail
+original_source:
+  - source: bfo
+    relation_type: prov:hadPrimarySource
 ---

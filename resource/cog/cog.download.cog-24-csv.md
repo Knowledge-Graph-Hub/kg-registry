@@ -7,4 +7,7 @@ name: COG 2024 Functional Assignments
 product_file_size: 637440210
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/COG/COG2024/data/cog-24.cog.csv
 layout: product_detail
+original_source:
+  - source: cog
+    relation_type: prov:hadPrimarySource
 ---

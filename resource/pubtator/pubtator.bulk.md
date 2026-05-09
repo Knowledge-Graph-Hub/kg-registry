@@ -7,8 +7,5 @@ original_source:
   - source: pubtator
     relation_type: prov:hadPrimarySource
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/lu/PubTator3
-secondary_source:
-  - source: pubtator
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

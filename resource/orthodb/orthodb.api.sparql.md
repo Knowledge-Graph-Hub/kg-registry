@@ -8,8 +8,5 @@ original_source:
   - source: orthodb
     relation_type: prov:hadPrimarySource
 product_url: https://sparql.orthodb.org/
-secondary_source:
-  - source: orthodb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

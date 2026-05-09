@@ -34,6 +34,9 @@ products:
     name: NCIt OBO Edition OWL format
     product_file_size: 811620064
     product_url: http://purl.obolibrary.org/obo/ncit.owl
+    original_source:
+      - source: ncit
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: NCIt OBO Edition OBO format
     format: obo
@@ -41,6 +44,9 @@ products:
     name: NCIt OBO Edition OBO format
     product_file_size: 248162694
     product_url: http://purl.obolibrary.org/obo/ncit.obo
+    original_source:
+      - source: ncit
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: TRAPI web API for querying MicrobiomeKG
     format: http

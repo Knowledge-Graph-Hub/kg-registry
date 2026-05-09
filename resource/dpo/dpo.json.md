@@ -7,4 +7,7 @@ name: dpo.json
 product_file_size: 2030089
 product_url: http://purl.obolibrary.org/obo/dpo.json
 layout: product_detail
+original_source:
+  - source: dpo
+    relation_type: prov:hadPrimarySource
 ---

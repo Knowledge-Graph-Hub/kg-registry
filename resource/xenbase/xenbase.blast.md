@@ -6,4 +6,7 @@ id: xenbase.blast
 name: Xenbase BLAST Services
 product_url: https://xenbase.org/xenbase/genomes/blast.do?database=Nucleotide/Xenla_10_1_Scaffolds
 layout: product_detail
+original_source:
+  - source: xenbase
+    relation_type: prov:hadPrimarySource
 ---

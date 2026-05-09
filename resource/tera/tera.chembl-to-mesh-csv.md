@@ -7,4 +7,7 @@ name: ChEMBL to MeSH Mapping (CSV)
 product_file_size: 108500
 product_url: https://zenodo.org/records/4244313/files/chembl_to_mesh.csv
 layout: product_detail
+original_source:
+  - source: tera
+    relation_type: prov:hadPrimarySource
 ---

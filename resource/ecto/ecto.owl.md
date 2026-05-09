@@ -7,4 +7,7 @@ name: ecto.owl
 product_file_size: 2277332
 product_url: http://purl.obolibrary.org/obo/ecto.owl
 layout: product_detail
+original_source:
+  - source: ecto
+    relation_type: prov:hadPrimarySource
 ---

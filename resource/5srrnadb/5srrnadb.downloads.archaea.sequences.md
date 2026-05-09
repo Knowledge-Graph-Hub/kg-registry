@@ -7,4 +7,7 @@ name: Archaea Sequences FASTA
 product_file_size: 49552
 product_url: http://www.combio.pl/rrna/static/download/Archaea.fasta
 layout: product_detail
+original_source:
+  - source: 5srrnadb
+    relation_type: prov:hadPrimarySource
 ---

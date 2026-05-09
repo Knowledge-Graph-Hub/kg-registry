@@ -7,4 +7,7 @@ name: chebi.json
 product_file_size: 506456231
 product_url: http://purl.obolibrary.org/obo/chebi.json
 layout: product_detail
+original_source:
+  - source: chebi
+    relation_type: prov:hadPrimarySource
 ---

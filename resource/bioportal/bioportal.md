@@ -22,12 +22,18 @@ products:
     id: bioportal.portal
     name: BioPortal Portal
     product_url: https://bioportal.bioontology.org/
+    original_source:
+      - source: bioportal
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for ontology concepts, search, mappings, metrics, and downloads
     format: http
     id: bioportal.api
     name: BioPortal REST API
     product_url: http://data.bioontology.org/
+    original_source:
+      - source: bioportal
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse relations.
     format: owl

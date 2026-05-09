@@ -7,4 +7,7 @@ id: mirbase.diff
 name: miRNA.diff
 product_url: https://www.mirbase.org/download/CURRENT/
 layout: product_detail
+original_source:
+  - source: mirbase
+    relation_type: prov:hadPrimarySource
 ---

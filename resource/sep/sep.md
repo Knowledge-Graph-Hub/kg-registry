@@ -2,18 +2,17 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: psidev-gps-dev@lists.sourceforge.net
-  label: SEP developers via the PSI and MSI mailing lists
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: psidev-gps-dev@lists.sourceforge.net
+    label: SEP developers via the PSI and MSI mailing lists
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary for the annotation of sample processing
-  and separation techniques in scientific experiments.
+description: A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.
 domains:
-- biomedical
+  - biomedical
 homepage_url: http://psidev.info/index.php?q=node/312
 id: sep
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -23,19 +22,21 @@ license:
   label: Not specified
 name: Sample processing and separation techniques
 products:
-- category: OntologyProduct
-  description: Sample processing and separation techniques in OWL format
-  format: owl
-  id: sep.owl
-  name: sep.owl
-  product_url: http://purl.obolibrary.org/obo/sep.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Sample processing and separation techniques in OWL format
+    format: owl
+    id: sep.owl
+    name: sep.owl
+    product_url: http://purl.obolibrary.org/obo/sep.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: sep
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.

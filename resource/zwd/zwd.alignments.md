@@ -6,4 +6,7 @@ id: zwd.alignments
 name: Zasha Weinberg Data Repository Sequence Alignments
 product_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
 layout: product_detail
+original_source:
+  - source: zwd
+    relation_type: prov:hadPrimarySource
 ---

@@ -16,10 +16,9 @@ node_count: 27681
 original_source:
   - source: intact
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/intact/latest/
 versions:
   - '2026_03_06'
   - intact_2026_01_14_e14f80a8_2025sep1_4.3.6

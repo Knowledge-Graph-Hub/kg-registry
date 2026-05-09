@@ -2,21 +2,20 @@
 activity_status: orphaned
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Mauno Vihinen
-  orcid: 0000-0002-9614-7976
-  contact_details:
-  - contact_type: email
-    value: mauno.vihinen@med.lu.se
-  - contact_type: github
-    value: maunov
+  - category: Individual
+    label: Mauno Vihinen
+    orcid: 0000-0002-9614-7976
+    contact_details:
+      - contact_type: email
+        value: mauno.vihinen@med.lu.se
+      - contact_type: github
+        value: maunov
 creation_date: '2025-09-29T00:00:00Z'
-description: Variation Ontology, VariO, is an ontology for standardized, systematic
-  description of effects, consequences and mechanisms of variations.
+description: Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
 domains:
-- biological systems
+  - biological systems
 homepage_url: http://variationontology.org
 id: vario
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,28 +26,35 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Variation Ontology
 products:
-- category: OntologyProduct
-  description: VariO main release in OWL
-  format: owl
-  id: vario.owl
-  name: VariO main release in OWL
-  product_file_size: 497896
-  product_url: http://purl.obolibrary.org/obo/vario.owl
-- category: OntologyProduct
-  description: VariO in OBO format
-  format: obo
-  id: vario.obo
-  name: VariO in OBO format
-  product_file_size: 110673
-  product_url: http://purl.obolibrary.org/obo/vario.obo
+  - category: OntologyProduct
+    description: VariO main release in OWL
+    format: owl
+    id: vario.owl
+    name: VariO main release in OWL
+    product_file_size: 497896
+    product_url: http://purl.obolibrary.org/obo/vario.owl
+    original_source:
+      - source: vario
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: VariO in OBO format
+    format: obo
+    id: vario.obo
+    name: VariO in OBO format
+    product_file_size: 110673
+    product_url: http://purl.obolibrary.org/obo/vario.obo
+    original_source:
+      - source: vario
+        relation_type: prov:hadPrimarySource
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
-  title: Variation Ontology for annotation of variation effects and mechanisms
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
-  title: 'Variation ontology: annotator guide'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
-  title: Types and effects of protein variations
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
+    title: Variation Ontology for annotation of variation effects and mechanisms
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
+    title: 'Variation ontology: annotator guide'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
+    title: Types and effects of protein variations
 ---
+
 ## Description
 
 Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.

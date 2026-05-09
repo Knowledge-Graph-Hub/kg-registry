@@ -7,4 +7,7 @@ name: OBO
 product_file_size: 240082
 product_url: http://purl.obolibrary.org/obo/ontoavida.obo
 layout: product_detail
+original_source:
+  - source: ontoavida
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: mco.owl
 product_file_size: 772100
 product_url: http://purl.obolibrary.org/obo/mco.owl
 layout: product_detail
+original_source:
+  - source: mco
+    relation_type: prov:hadPrimarySource
 ---

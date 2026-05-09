@@ -7,4 +7,7 @@ name: rs.owl
 product_file_size: 5527319
 product_url: http://purl.obolibrary.org/obo/rs.owl
 layout: product_detail
+original_source:
+  - source: rs
+    relation_type: prov:hadPrimarySource
 ---

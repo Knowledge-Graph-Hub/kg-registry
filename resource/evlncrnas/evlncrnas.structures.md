@@ -6,4 +6,7 @@ id: evlncrnas.structures
 name: Structure Browser
 product_url: https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/#/structures
 layout: product_detail
+original_source:
+  - source: evlncrnas
+    relation_type: prov:hadPrimarySource
 ---

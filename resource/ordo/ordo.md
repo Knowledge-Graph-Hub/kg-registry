@@ -36,11 +36,17 @@ products:
     name: ORDO OWL
     product_file_size: 49203440
     product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
+    original_source:
+      - source: ordo
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: SPARQL endpoint for querying the ORDO ontology
     id: ordo.sparql
     name: ORDO SPARQL Endpoint
     product_url: https://www.orphadata.com/ordo-sparql-endpoint/
+    original_source:
+      - source: ordo
+        relation_type: prov:hadPrimarySource
   - category: DataModelProduct
     description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers) for rare diseases, along with mappings to other terminologies, and is released annually in July.
     id: orphacode.nomenclature

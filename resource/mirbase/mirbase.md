@@ -19,24 +19,36 @@ products:
     id: mirbase.portal
     name: miRBase Portal
     product_url: https://www.mirbase.org/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse interface for exploring microRNA entries organized by species and other criteria
     format: http
     id: mirbase.browse
     name: miRBase Browse Interface
     product_url: https://www.mirbase.org/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Search interface for finding microRNAs by genomic location coordinates
     format: http
     id: mirbase.genomic-search
     name: Genomic Location Search
     product_url: https://www.mirbase.org/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Search interface for finding microRNAs by tissue expression patterns
     format: http
     id: mirbase.tissue-search
     name: Tissue Expression Search
     product_url: https://www.mirbase.org/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: All published microRNA data in EMBL format
@@ -44,6 +56,9 @@ products:
     id: mirbase.mirna-dat
     name: miRNA.dat
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences of all microRNA hairpin precursors
@@ -51,6 +66,9 @@ products:
     id: mirbase.hairpin-fa
     name: hairpin.fa
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences of all mature microRNA sequences
@@ -58,6 +76,9 @@ products:
     id: mirbase.mature-fa
     name: mature.fa
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: List of changes between the last release and current release
@@ -65,6 +86,9 @@ products:
     id: mirbase.diff
     name: miRNA.diff
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: List of entries that have been removed from the database
@@ -72,6 +96,9 @@ products:
     id: mirbase.dead
     name: miRNA.dead
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for human microRNAs in GFF3 format
@@ -79,6 +106,9 @@ products:
     id: mirbase.hsa-gff3
     name: Human (hsa) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for mouse microRNAs in GFF3 format
@@ -86,6 +116,9 @@ products:
     id: mirbase.mmu-gff3
     name: Mouse (mmu) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for rat microRNAs in GFF3 format
@@ -93,6 +126,9 @@ products:
     id: mirbase.rno-gff3
     name: Rat (rno) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for Drosophila microRNAs in GFF3 format
@@ -100,6 +136,9 @@ products:
     id: mirbase.dme-gff3
     name: Drosophila (dme) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for C. elegans microRNAs in GFF3 format
@@ -107,6 +146,9 @@ products:
     id: mirbase.cel-gff3
     name: C. elegans (cel) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for zebrafish microRNAs in GFF3 format
@@ -114,6 +156,9 @@ products:
     id: mirbase.dre-gff3
     name: Zebrafish (dre) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for Arabidopsis microRNAs in GFF3 format
@@ -121,24 +166,36 @@ products:
     id: mirbase.ath-gff3
     name: Arabidopsis (ath) Genome Coordinates
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP archive with current release data files and previous releases
     format: http
     id: mirbase.ftp
     name: miRBase FTP Archive
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Release notes and documentation for data file formats
     format: txt
     id: mirbase.readme
     name: README
     product_url: https://www.mirbase.org/download/CURRENT/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive help documentation including submission guidelines, search instructions, genome assemblies, and naming conventions
     format: http
     id: mirbase.help
     name: miRBase Help Documentation
     product_url: https://www.mirbase.org/help/
+    original_source:
+      - source: mirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

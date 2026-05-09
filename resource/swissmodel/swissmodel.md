@@ -18,18 +18,27 @@ products:
     id: swissmodel.portal
     name: SWISS-MODEL Portal
     product_url: https://swissmodel.expasy.org/
+    original_source:
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Search and download interface for the SWISS-MODEL Repository of annotated homology models.
     format: http
     id: swissmodel.repository
     name: SWISS-MODEL Repository
     product_url: https://swissmodel.expasy.org/repository
+    original_source:
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Programmatic API for submitting and retrieving SWISS-MODEL tasks and model data.
     format: http
     id: swissmodel.api
     name: SWISS-MODEL API
     product_url: https://swissmodel.expasy.org/coreapi/
+    original_source:
+      - source: swissmodel
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

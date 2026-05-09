@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
-  contact_details:
-  - contact_type: email
-    value: g.gkoutos@bham.ac.uk
-  - contact_type: github
-    value: gkoutos
+  - category: Individual
+    label: George Gkoutos
+    orcid: 0000-0002-2061-091X
+    contact_details:
+      - contact_type: email
+        value: g.gkoutos@bham.ac.uk
+      - contact_type: github
+        value: gkoutos
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of human and animal behaviours and behavioural phenotypes
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/obo-behavior/behavior-ontology/
 id: nbo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,18 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Neuro Behavior Ontology
 products:
-- category: OntologyProduct
-  description: Neuro Behavior Ontology in OWL format
-  format: owl
-  id: nbo.owl
-  name: nbo.owl
-  product_file_size: 372935
-  product_url: http://purl.obolibrary.org/obo/nbo.owl
+  - category: OntologyProduct
+    description: Neuro Behavior Ontology in OWL format
+    format: owl
+    id: nbo.owl
+    name: nbo.owl
+    product_file_size: 372935
+    product_url: http://purl.obolibrary.org/obo/nbo.owl
+    original_source:
+      - source: nbo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obo-behavior/behavior-ontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24177753
-  title: Analyzing gene expression data in mice with the Neuro Behavior Ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24177753
+    title: Analyzing gene expression data in mice with the Neuro Behavior Ontology
 ---
+
 ## Description
 
 An ontology of human and animal behaviours and behavioural phenotypes

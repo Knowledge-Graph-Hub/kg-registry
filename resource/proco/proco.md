@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Wes Schafer
-  orcid: 0000-0002-8786-1756
-  contact_details:
-  - contact_type: email
-    value: wes_schafer@merck.com
-  - contact_type: github
-    value: schaferw
+  - category: Individual
+    label: Wes Schafer
+    orcid: 0000-0002-8786-1756
+    contact_details:
+      - contact_type: email
+        value: wes_schafer@merck.com
+      - contact_type: github
+        value: schaferw
 creation_date: '2025-09-29T00:00:00Z'
-description: PROCO covers process chemistry, the chemical field concerned with scaling
-  up laboratory syntheses to commercially viable processes.
+description: PROCO covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://github.com/proco-ontology/PROCO
 id: proco
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Process Chemistry Ontology
 products:
-- category: OntologyProduct
-  description: Process Chemistry Ontology in OWL format
-  format: owl
-  id: proco.owl
-  name: proco.owl
-  product_file_size: 143615
-  product_url: http://purl.obolibrary.org/obo/proco.owl
+  - category: OntologyProduct
+    description: Process Chemistry Ontology in OWL format
+    format: owl
+    id: proco.owl
+    name: proco.owl
+    product_file_size: 143615
+    product_url: http://purl.obolibrary.org/obo/proco.owl
+    original_source:
+      - source: proco
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/proco-ontology/PROCO
 publications: []
 ---
+
 ## Description
 
 PROCO covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.

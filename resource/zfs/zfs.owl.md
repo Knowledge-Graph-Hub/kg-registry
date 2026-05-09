@@ -7,4 +7,7 @@ name: zfs.owl
 product_file_size: 401629
 product_url: http://purl.obolibrary.org/obo/zfs.owl
 layout: product_detail
+original_source:
+  - source: zfs
+    relation_type: prov:hadPrimarySource
 ---

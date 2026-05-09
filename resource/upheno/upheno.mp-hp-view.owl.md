@@ -7,4 +7,7 @@ name: uPheno MP-HP equivalence axioms
 product_file_size: 51640383
 product_url: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
 layout: product_detail
+original_source:
+  - source: upheno
+    relation_type: prov:hadPrimarySource
 ---

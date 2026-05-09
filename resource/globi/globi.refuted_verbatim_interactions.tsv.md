@@ -8,4 +8,7 @@ name: GloBI refuted verbatim interactions (TSV)
 product_file_size: 2467674
 product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.tsv.gz
 layout: product_detail
+original_source:
+  - source: globi
+    relation_type: prov:hadPrimarySource
 ---

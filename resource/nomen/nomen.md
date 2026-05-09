@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Matt Yoder
-  orcid: 0000-0002-5640-5491
-  contact_details:
-  - contact_type: email
-    value: diapriid@gmail.com
-  - contact_type: github
-    value: mjy
+  - category: Individual
+    label: Matt Yoder
+    orcid: 0000-0002-5640-5491
+    contact_details:
+      - contact_type: email
+        value: diapriid@gmail.com
+      - contact_type: github
+        value: mjy
 creation_date: '2025-09-29T00:00:00Z'
-description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
-  encodes the goverened rules of nomenclature.
+description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/SpeciesFileGroup/nomen
 id: nomen
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: NOMEN - A nomenclatural ontology for biological names
 products:
-- category: OntologyProduct
-  description: core ontology
-  format: owl
-  id: nomen.owl
-  name: NOMEN
-  product_file_size: 11371
-  product_url: http://purl.obolibrary.org/obo/nomen.owl
+  - category: OntologyProduct
+    description: core ontology
+    format: owl
+    id: nomen.owl
+    name: NOMEN
+    product_file_size: 11371
+    product_url: http://purl.obolibrary.org/obo/nomen.owl
+    original_source:
+      - source: nomen
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/SpeciesFileGroup/nomen
 publications: []
 ---
+
 ## Description
 
 NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.

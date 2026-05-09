@@ -7,4 +7,7 @@ name: cto.owl
 product_file_size: 96492
 product_url: http://purl.obolibrary.org/obo/cto.owl
 layout: product_detail
+original_source:
+  - source: cto
+    relation_type: prov:hadPrimarySource
 ---

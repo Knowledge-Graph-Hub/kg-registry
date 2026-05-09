@@ -9,8 +9,5 @@ original_source:
   - source: pankbase
     relation_type: prov:hadPrimarySource
 product_url: https://pankbase-db.github.io/pankbase-client-openapi-spec/
-secondary_source:
-  - source: pankbase
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

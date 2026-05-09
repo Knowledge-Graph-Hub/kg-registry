@@ -7,4 +7,7 @@ name: mcro.owl
 product_file_size: 7969
 product_url: http://purl.obolibrary.org/obo/mcro.owl
 layout: product_detail
+original_source:
+  - source: mcro
+    relation_type: prov:hadPrimarySource
 ---

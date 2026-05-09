@@ -19,12 +19,18 @@ products:
     id: mgnify.portal
     name: MGnify Web Portal
     product_url: https://www.ebi.ac.uk/metagenomics
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for programmatic access to MGnify data, including studies, analyses, genomes, and metadata.
     format: http
     id: mgnify.api
     name: MGnify REST API
     product_url: https://www.ebi.ac.uk/metagenomics/api
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: FTP archive with current and archived release files, including sequences, annotations, and genome catalogues.
     format: http
@@ -34,30 +40,45 @@ products:
     warnings:
       - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/metagenomics'
       - File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno 104] Connection reset by peer
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Biome-specific microbial genome catalogues, including marine, human gut, and other environments.
     format: http
     id: mgnify.genomes
     name: MGnify Genomes Catalogue
     product_url: https://www.ebi.ac.uk/metagenomics/browse
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Protein database derived from metagenomic analyses, including protein families and annotations.
     format: http
     id: mgnify.proteins
     name: MGnify Proteins Database
     product_url: https://www.ebi.ac.uk/metagenomics/proteins
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Documentation and help resources for MGnify, including user guides and API documentation.
     format: http
     id: mgnify.docs
     name: MGnify Documentation
     product_url: https://www.ebi.ac.uk/metagenomics/help
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: On-demand and live training resources for MGnify users, including webinars and tutorials.
     format: http
     id: mgnify.training
     name: MGnify Training
     product_url: https://www.ebi.ac.uk/training/online/courses/mgnify-quick-tour
+    original_source:
+      - source: mgnify
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

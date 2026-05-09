@@ -6,4 +6,7 @@ id: reprotox-kg.api
 name: ReproTox-KG API
 product_url: https://reprotox-kg.net/api/
 layout: product_detail
+original_source:
+  - source: reprotox-kg
+    relation_type: prov:hadPrimarySource
 ---

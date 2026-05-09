@@ -6,4 +6,7 @@ id: snopy.box-cd-snornas
 name: Box C/D snoRNAs
 product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
 layout: product_detail
+original_source:
+  - source: snopy
+    relation_type: prov:hadPrimarySource
 ---

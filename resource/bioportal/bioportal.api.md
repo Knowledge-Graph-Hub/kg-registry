@@ -6,4 +6,7 @@ id: bioportal.api
 name: BioPortal REST API
 product_url: http://data.bioontology.org/
 layout: product_detail
+original_source:
+  - source: bioportal
+    relation_type: prov:hadPrimarySource
 ---

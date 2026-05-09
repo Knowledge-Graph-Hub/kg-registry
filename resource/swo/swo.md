@@ -2,23 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Allyson Lister
-  orcid: 0000-0002-7702-4495
-  contact_details:
-  - contact_type: email
-    value: allyson.lister@oerc.ox.ac.uk
-  - contact_type: github
-    value: allysonlister
+  - category: Individual
+    label: Allyson Lister
+    orcid: 0000-0002-7702-4495
+    contact_details:
+      - contact_type: email
+        value: allyson.lister@oerc.ox.ac.uk
+      - contact_type: github
+        value: allysonlister
 creation_date: '2025-09-29T00:00:00Z'
-description: The Software Ontology (SWO) is a resource for describing software tools,
-  their types, tasks, versions, provenance and associated data. It contains detailed
-  information on licensing and formats as well as software applications themselves,
-  mainly (but not limited) to the bioinformatics community.
+description: The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/allysonlister/swo
 id: swo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -29,26 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Software ontology
 products:
-- category: OntologyProduct
-  description: Software ontology in OWL format
-  format: owl
-  id: swo.owl
-  name: swo.owl
-  product_file_size: 236485
-  product_url: http://purl.obolibrary.org/obo/swo.owl
-- category: OntologyProduct
-  description: Software ontology in JSON format
-  format: json
-  id: swo.json
-  name: swo.json
-  product_file_size: 204434
-  product_url: http://purl.obolibrary.org/obo/swo.json
+  - category: OntologyProduct
+    description: Software ontology in OWL format
+    format: owl
+    id: swo.owl
+    name: swo.owl
+    product_file_size: 236485
+    product_url: http://purl.obolibrary.org/obo/swo.owl
+    original_source:
+      - source: swo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Software ontology in JSON format
+    format: json
+    id: swo.json
+    name: swo.json
+    product_file_size: 204434
+    product_url: http://purl.obolibrary.org/obo/swo.json
+    original_source:
+      - source: swo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/allysonlister/swo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
-  title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical
-    data analysis, curation and digital preservation'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
+    title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation'
 ---
+
 ## Description
 
 The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.

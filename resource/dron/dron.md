@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: William Hogan
-  orcid: 0000-0002-9881-1017
-  contact_details:
-  - contact_type: email
-    value: hoganwr@gmail.com
-  - contact_type: github
-    value: hoganwr
+  - category: Individual
+    label: William Hogan
+    orcid: 0000-0002-9881-1017
+    contact_details:
+      - contact_type: email
+        value: hoganwr@gmail.com
+      - contact_type: github
+        value: hoganwr
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology to support comparative effectiveness researchers studying
-  claims data.
+description: An ontology to support comparative effectiveness researchers studying claims data.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/ufbmi/dron
 id: dron
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,19 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: The Drug Ontology
 products:
-- category: OntologyProduct
-  description: The Drug Ontology in OWL format
-  format: owl
-  id: dron.owl
-  name: dron.owl
-  product_file_size: 701717829
-  product_url: http://purl.obolibrary.org/obo/dron.owl
+  - category: OntologyProduct
+    description: The Drug Ontology in OWL format
+    format: owl
+    id: dron.owl
+    name: dron.owl
+    product_file_size: 701717829
+    product_url: http://purl.obolibrary.org/obo/dron.owl
+    original_source:
+      - source: dron
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/ufbmi/dron
 publications:
-- id: https://doi.org/10.1186/s13326-017-0121-5
-  title: 'Therapeutic indications and other use-case-driven updates in the drug ontology:
-    anti-malarials, anti-hypertensives, opioid analgesics, and a large term request'
+  - id: https://doi.org/10.1186/s13326-017-0121-5
+    title: 'Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request'
 ---
+
 ## Description
 
 An ontology to support comparative effectiveness researchers studying claims data.

@@ -28,6 +28,9 @@ products:
     is_public: true
     name: OpenBiodiv Web Portal
     product_url: https://openbiodiv.net/
+    original_source:
+      - source: openbiodiv
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: SPARQL endpoint for complex semantic queries across the biodiversity knowledge graph, enabling advanced queries combining taxonomic, literature, specimen, and ecological data
     format: http
@@ -35,6 +38,9 @@ products:
     is_public: true
     name: OpenBiodiv SPARQL Endpoint
     product_url: http://graph.openbiodiv.net/
+    original_source:
+      - source: openbiodiv
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to OpenBiodiv biodiversity data with Swagger API documentation for easy integration
     format: http
@@ -42,6 +48,9 @@ products:
     is_public: true
     name: OpenBiodiv REST API
     product_url: https://graph.openbiodiv.net/webapi
+    original_source:
+      - source: openbiodiv
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: OpenBioDiv-O, the OpenBiodiv Ontology
     format: ttl
@@ -61,9 +70,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 8176
     product_url: https://raw.githubusercontent.com/pensoft/OpenBiodiv/refs/heads/master/ontology/openbiodiv-ontology-latest.ttl
-    secondary_source:
-      - source: openbiodiv
-        relation_type: prov:wasInfluencedBy
   - category: DocumentationProduct
     description: Guide to OpenBioDiv-O, the OpenBiodiv Ontology
     format: http
@@ -71,6 +77,9 @@ products:
     is_public: true
     name: OpenBioDiv-O Guide
     product_url: https://openbiodiv.net/ontologies
+    original_source:
+      - source: openbiodiv
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - Penev L

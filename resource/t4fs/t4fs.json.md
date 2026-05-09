@@ -7,4 +7,7 @@ name: t4fs.json
 product_file_size: 74586
 product_url: http://purl.obolibrary.org/obo/t4fs.json
 layout: product_detail
+original_source:
+  - source: t4fs
+    relation_type: prov:hadPrimarySource
 ---

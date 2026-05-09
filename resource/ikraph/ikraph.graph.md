@@ -10,8 +10,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 61183533
 product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
-secondary_source:
-  - source: ikraph
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

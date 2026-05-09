@@ -7,4 +7,7 @@ name: amphx.obo
 product_file_size: 8608
 product_url: http://purl.obolibrary.org/obo/amphx.obo
 layout: product_detail
+original_source:
+  - source: amphx
+    relation_type: prov:hadPrimarySource
 ---

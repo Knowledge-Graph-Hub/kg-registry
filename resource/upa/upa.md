@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Anne Morgat
-  orcid: 0000-0002-1216-2969
-  contact_details:
-  - contact_type: email
-    value: Anne.Morgat@sib.swiss
-  - contact_type: github
-    value: amorgat
+  - category: Individual
+    label: Anne Morgat
+    orcid: 0000-0002-1216-2969
+    contact_details:
+      - contact_type: email
+        value: Anne.Morgat@sib.swiss
+      - contact_type: github
+        value: amorgat
 creation_date: '2025-09-29T00:00:00Z'
-description: A manually curated resource for the representation and annotation of
-  metabolic pathways
+description: A manually curated resource for the representation and annotation of metabolic pathways
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/geneontology/unipathway
 id: upa
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,25 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Unipathway
 products:
-- category: OntologyProduct
-  description: Unipathway in OWL format
-  format: owl
-  id: upa.owl
-  name: upa.owl
-  product_file_size: 798911
-  product_url: http://purl.obolibrary.org/obo/upa.owl
-- category: OntologyProduct
-  description: Unipathway in OBO format
-  format: obo
-  id: upa.obo
-  name: upa.obo
-  product_file_size: 454223
-  product_url: http://purl.obolibrary.org/obo/upa.obo
+  - category: OntologyProduct
+    description: Unipathway in OWL format
+    format: owl
+    id: upa.owl
+    name: upa.owl
+    product_file_size: 798911
+    product_url: http://purl.obolibrary.org/obo/upa.owl
+    original_source:
+      - source: upa
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Unipathway in OBO format
+    format: obo
+    id: upa.obo
+    name: upa.obo
+    product_file_size: 454223
+    product_url: http://purl.obolibrary.org/obo/upa.obo
+    original_source:
+      - source: upa
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/geneontology/unipathway
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
-  title: 'UniPathway: a resource for the exploration and annotation of metabolic pathways'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
+    title: 'UniPathway: a resource for the exploration and annotation of metabolic pathways'
 ---
+
 ## Description
 
 A manually curated resource for the representation and annotation of metabolic pathways

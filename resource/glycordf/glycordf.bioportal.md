@@ -6,4 +6,7 @@ id: glycordf.bioportal
 name: GlycoRDF BioPortal Entry
 product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
 layout: product_detail
+original_source:
+  - source: glycordf
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: ppo.owl
 product_file_size: 67183
 product_url: http://purl.obolibrary.org/obo/ppo.owl
 layout: product_detail
+original_source:
+  - source: ppo
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: pdumdv.obo
 product_file_size: 4411
 product_url: http://purl.obolibrary.org/obo/pdumdv.obo
 layout: product_detail
+original_source:
+  - source: pdumdv
+    relation_type: prov:hadPrimarySource
 ---

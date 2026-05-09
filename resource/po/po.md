@@ -33,6 +33,9 @@ products:
     name: po.owl
     product_file_size: 360811
     product_url: http://purl.obolibrary.org/obo/po.owl
+    original_source:
+      - source: po
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Plant Ontology in OBO format
     format: obo
@@ -40,6 +43,9 @@ products:
     name: po.obo
     product_file_size: 222891
     product_url: http://purl.obolibrary.org/obo/po.obo
+    original_source:
+      - source: po
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

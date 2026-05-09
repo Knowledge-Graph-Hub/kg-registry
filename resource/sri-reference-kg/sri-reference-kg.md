@@ -2,34 +2,38 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: kevinschaper@gmail.com
-  - contact_type: github
-    value: kevinschaper
-  label: Kevin Schaper
-  orcid: 0000-0003-3311-7320
-description: "The Monarch Initiative\u2019s SRI reference knowledge graph."
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: kevinschaper@gmail.com
+      - contact_type: github
+        value: kevinschaper
+    label: Kevin Schaper
+    orcid: 0000-0003-3311-7320
+description: "The Monarch Initiative’s SRI reference knowledge graph."
 domains:
-- health
+  - health
 homepage_url: ''
 id: sri-reference-kg
 infores_id: sri-reference-kg
 layout: resource_detail
 name: SRI-Reference KG
 products:
-- category: GraphProduct
-  description: KGX distribution of the SRI-Reference KG
-  format: kgx
-  id: sri-reference-kg.graph
-  name: SRI-Reference KG (KGX distribution)
-  product_file_size: 230046094
-  product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  - category: GraphProduct
+    description: KGX distribution of the SRI-Reference KG
+    format: kgx
+    id: sri-reference-kg.graph
+    name: SRI-Reference KG (KGX distribution)
+    product_file_size: 230046094
+    product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+    original_source:
+      - source: sri-reference-kg
+        relation_type: prov:hadPrimarySource
 repository: ''
 creation_date: '2025-03-09T00:00:00Z'
 last_modified_date: '2026-01-06T00:00:00Z'
 ---
+
 The Monarch Initiative’s SRI reference knowledge graph.
 
 ## Automated Evaluation

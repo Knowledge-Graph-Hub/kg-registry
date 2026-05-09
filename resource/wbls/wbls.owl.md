@@ -7,4 +7,7 @@ name: wbls.owl
 product_file_size: 76039
 product_url: http://purl.obolibrary.org/obo/wbls.owl
 layout: product_detail
+original_source:
+  - source: wbls
+    relation_type: prov:hadPrimarySource
 ---

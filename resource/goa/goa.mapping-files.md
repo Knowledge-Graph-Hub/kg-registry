@@ -5,11 +5,13 @@ format: txt
 id: goa.mapping-files
 name: GO Mapping Files
 original_source:
+  - source: go
+    relation_type: prov:hadPrimarySource
+  - source: goa
+    relation_type: prov:hadPrimarySource
   - source: interpro
     relation_type: prov:hadPrimarySource
   - source: uniprot
-    relation_type: prov:hadPrimarySource
-  - source: go
     relation_type: prov:hadPrimarySource
 product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
 warnings:

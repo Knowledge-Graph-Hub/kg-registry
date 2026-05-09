@@ -6,4 +6,7 @@ name: Ensembl Perl API
 product_url: https://github.com/Ensembl/
 repository: https://github.com/Ensembl/
 layout: product_detail
+original_source:
+  - source: ensembl
+    relation_type: prov:hadPrimarySource
 ---

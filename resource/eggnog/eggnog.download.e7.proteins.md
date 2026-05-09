@@ -8,4 +8,7 @@ name: eggNOG 7 Proteins
 product_file_size: 12753324465
 product_url: https://eggnogdb.org/public/eggnog7/e7.proteins.fa.gz
 layout: product_detail
+original_source:
+  - source: eggnog
+    relation_type: prov:hadPrimarySource
 ---

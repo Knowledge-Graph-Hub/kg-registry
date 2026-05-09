@@ -5,4 +5,7 @@ id: forum.api
 name: FORUM API
 product_url: https://forum-webapp.semantic-metabolomics.fr/#/openapi-documentation
 layout: product_detail
+original_source:
+  - source: forum
+    relation_type: prov:hadPrimarySource
 ---

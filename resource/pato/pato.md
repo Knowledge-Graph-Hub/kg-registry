@@ -34,6 +34,9 @@ products:
     name: pato.owl
     product_file_size: 1205348
     product_url: http://purl.obolibrary.org/obo/pato.owl
+    original_source:
+      - source: pato
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Phenotype And Trait Ontology in OBO format
     format: obo
@@ -41,6 +44,9 @@ products:
     name: pato.obo
     product_file_size: 110437
     product_url: http://purl.obolibrary.org/obo/pato.obo
+    original_source:
+      - source: pato
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Phenotype And Trait Ontology in JSON format
     format: json
@@ -48,6 +54,9 @@ products:
     name: pato.json
     product_file_size: 883967
     product_url: http://purl.obolibrary.org/obo/pato.json
+    original_source:
+      - source: pato
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Includes axioms linking to other ontologies, but no imports of those ontologies
     format: owl
@@ -55,6 +64,9 @@ products:
     name: pato.pato-base.owl
     product_file_size: 180954
     product_url: http://purl.obolibrary.org/obo/pato/pato-base.owl
+    original_source:
+      - source: pato
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

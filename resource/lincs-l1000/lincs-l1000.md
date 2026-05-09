@@ -24,12 +24,18 @@ products:
     id: lincs-l1000.cmap
     name: LINCS Connectivity Map (CMap)
     product_url: https://clue.io
+    original_source:
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: The CLUE platform provides interactive analysis tools and data access for the LINCS L1000 Connectivity Map dataset, including query tools, visualization, and APIs for programmatic access.
     format: http
     id: lincs-l1000.clue
     name: CLUE Platform
     product_url: https://clue.io
+    original_source:
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: LINCS L1000 data deposited in the Gene Expression Omnibus, including raw and processed gene expression data at multiple levels of preprocessing for all 1.3+ million profiles.
     format: http
@@ -38,6 +44,9 @@ products:
     product_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742
     warnings:
       - File was not able to be retrieved when checked on 2025-11-10_ Timeout connecting to URL
+    original_source:
+      - source: lincs-l1000
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     id: spoke.graph
@@ -311,7 +320,7 @@ The LINCS L1000 platform represents a major advance in high-throughput transcrip
   - **3,462 cDNAs** for gain-of-function studies
   - **314 biologics**
   - **473,647 signatures** (consolidating biological replicates)
-  
+
 - **Cell line coverage**:
   - 9 core cancer cell lines (Touchstone reference dataset)
   - Up to 77 cell lines for Discovery dataset

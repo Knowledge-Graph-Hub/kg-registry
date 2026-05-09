@@ -4,6 +4,8 @@ description: Anti-tumor biomaterial knowledge graph constructed from biomedicine
 id: atom.kg
 name: ATOM Knowledge Graph
 original_source:
+  - source: atom
+    relation_type: prov:hadPrimarySource
   - source: pubmed
     relation_type: prov:hadPrimarySource
 product_url: https://doi.org/10.1109/BIBM47256.2019.8983062

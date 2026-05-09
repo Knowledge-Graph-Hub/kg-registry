@@ -6,4 +6,7 @@ id: compath.overview
 name: ComPath Overview
 product_url: https://compath.scai.fraunhofer.de/overview
 layout: product_detail
+original_source:
+  - source: compath
+    relation_type: prov:hadPrimarySource
 ---

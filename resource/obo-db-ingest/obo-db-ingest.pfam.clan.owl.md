@@ -10,4 +10,7 @@ name: pfam.clan OWL
 product_file_size: 11064
 product_url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

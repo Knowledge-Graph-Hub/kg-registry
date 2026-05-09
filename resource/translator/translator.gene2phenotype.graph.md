@@ -16,10 +16,9 @@ node_count: 5424
 original_source:
   - source: gene2phenotype
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/gene2phenotype/latest/
 versions:
   - '2026_03_27'
   - gene2phenotype_2026_03_27_4773272d_2025sep1_4.3.6

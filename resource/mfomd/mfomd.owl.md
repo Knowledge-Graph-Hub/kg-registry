@@ -7,4 +7,7 @@ name: mfomd.owl
 product_file_size: 1294
 product_url: http://purl.obolibrary.org/obo/mfomd.owl
 layout: product_detail
+original_source:
+  - source: mfomd
+    relation_type: prov:hadPrimarySource
 ---

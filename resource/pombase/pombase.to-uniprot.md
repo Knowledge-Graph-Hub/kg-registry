@@ -14,8 +14,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 27617
 product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
-secondary_source:
-  - source: pombase
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -10,31 +10,34 @@ license:
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
-- obo-foundry
+  - obo-foundry
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
 last_modified_date: '2026-04-15T00:00:00Z'
 domains:
-- biomedical
+  - biomedical
 contacts:
-- category: Individual
-  label: Maria Herrero
-  contact_details:
-  - contact_type: email
-    value: maria.herrero@kcl.ac.uk
+  - category: Individual
+    label: Maria Herrero
+    contact_details:
+      - contact_type: email
+        value: maria.herrero@kcl.ac.uk
 products:
-- id: dinto.owl
-  name: dinto.owl
-  description: The Drug-Drug Interactions Ontology in OWL format
-  format: owl
-  category: OntologyProduct
-  product_url: http://purl.obolibrary.org/obo/dinto.owl
+  - id: dinto.owl
+    name: dinto.owl
+    description: The Drug-Drug Interactions Ontology in OWL format
+    format: owl
+    category: OntologyProduct
+    product_url: http://purl.obolibrary.org/obo/dinto.owl
+    original_source:
+      - source: dinto
+        relation_type: prov:hadPrimarySource
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
-  title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug Drug Interactions
-    and Their Mechanisms.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
+    title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug Drug Interactions and Their Mechanisms.'
 ---
+
 ## Description
 
 A formal represention for drug-drug interactions knowledge.

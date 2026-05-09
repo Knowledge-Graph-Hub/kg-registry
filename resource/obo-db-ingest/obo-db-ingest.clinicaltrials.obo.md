@@ -11,4 +11,7 @@ name: clinicaltrials OBO
 product_file_size: 41571299
 product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

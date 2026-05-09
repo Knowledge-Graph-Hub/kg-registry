@@ -2,22 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
-  contact_details:
-  - contact_type: email
-    value: lynn.schriml@gmail.com
-  - contact_type: github
-    value: lschriml
+  - category: Individual
+    label: Lynn Schriml
+    orcid: 0000-0001-8910-9851
+    contact_details:
+      - contact_type: email
+        value: lynn.schriml@gmail.com
+      - contact_type: github
+        value: lschriml
 creation_date: '2025-09-29T00:00:00Z'
-description: Ontology for drivers and triggers of human diseases, built to classify
-  ExO ontology exposure stressors. An application ontology. Built in collaboration
-  with EnvO, ExO, ECTO and ChEBI.
+description: Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://disease-ontology.org/
 id: disdriv
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -28,18 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Disease Drivers Ontology
 products:
-- category: OntologyProduct
-  description: Disease Drivers Ontology in OWL format
-  format: owl
-  id: disdriv.owl
-  name: disdriv.owl
-  product_file_size: 13991
-  product_url: http://purl.obolibrary.org/obo/disdriv.owl
+  - category: OntologyProduct
+    description: Disease Drivers Ontology in OWL format
+    format: owl
+    id: disdriv.owl
+    name: disdriv.owl
+    product_file_size: 13991
+    product_url: http://purl.obolibrary.org/obo/disdriv.owl
+    original_source:
+      - source: disdriv
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 publications: []
 ---
+
 ## Description
 
 Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.

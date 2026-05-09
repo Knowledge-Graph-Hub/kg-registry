@@ -33,6 +33,9 @@ products:
     name: PSI-MOD.owl
     product_file_size: 433944
     product_url: http://purl.obolibrary.org/obo/mod.owl
+    original_source:
+      - source: mod
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: PSI-MOD Ontology, OBO format
     format: obo
@@ -40,6 +43,9 @@ products:
     name: PSI-MOD.obo
     product_file_size: 251654
     product_url: http://purl.obolibrary.org/obo/mod.obo
+    original_source:
+      - source: mod
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
     dump_format: neo4j

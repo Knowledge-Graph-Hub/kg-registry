@@ -8,4 +8,7 @@ name: tcDoms Archive
 product_file_size: 14664403
 product_url: https://www.tcdb.org/public/tcDoms.tar.gz
 layout: product_detail
+original_source:
+  - source: tcdb
+    relation_type: prov:hadPrimarySource
 ---

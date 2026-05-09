@@ -2,22 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
-  contact_details:
-  - contact_type: email
-    value: lynn.schriml@gmail.com
-  - contact_type: github
-    value: lschriml
+  - category: Individual
+    label: Lynn Schriml
+    orcid: 0000-0001-8910-9851
+    contact_details:
+      - contact_type: email
+        value: lynn.schriml@gmail.com
+      - contact_type: github
+        value: lschriml
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of disease symptoms, with symptoms encompasing perceived
-  changes in function, sensations or appearance reported by a patient indicative of
-  a disease.
+description: An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/DiseaseOntology/SymptomOntology
 id: symp
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -28,30 +26,36 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Symptom Ontology
 products:
-- category: OntologyProduct
-  description: Symptom Ontology in OWL format
-  format: owl
-  id: symp.owl
-  name: symp.owl
-  product_file_size: 73868
-  product_url: http://purl.obolibrary.org/obo/symp.owl
-- category: OntologyProduct
-  description: Symptom Ontology in OBO format
-  format: obo
-  id: symp.obo
-  name: symp.obo
-  product_file_size: 49360
-  product_url: http://purl.obolibrary.org/obo/symp.obo
+  - category: OntologyProduct
+    description: Symptom Ontology in OWL format
+    format: owl
+    id: symp.owl
+    name: symp.owl
+    product_file_size: 73868
+    product_url: http://purl.obolibrary.org/obo/symp.owl
+    original_source:
+      - source: symp
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Symptom Ontology in OBO format
+    format: obo
+    id: symp.obo
+    name: symp.obo
+    product_file_size: 49360
+    product_url: http://purl.obolibrary.org/obo/symp.obo
+    original_source:
+      - source: symp
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/DiseaseOntology/SymptomOntology
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
-  title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance
-    pathogen database
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
-  title: The Human Disease Ontology 2022 update
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+    title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+    title: The Human Disease Ontology 2022 update
 ---
+
 ## Description
 
 An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.

@@ -10,8 +10,5 @@ original_source:
   - source: pankbase
     relation_type: prov:hadPrimarySource
 product_url: https://pankgraph.org/api
-secondary_source:
-  - source: pankbase
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

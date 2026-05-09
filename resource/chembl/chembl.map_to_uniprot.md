@@ -11,8 +11,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 1012901
 product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
-secondary_source:
-  - source: chembl
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -29,6 +29,9 @@ products:
     is_public: true
     name: Enzyme Commission Official Database
     product_url: https://www.enzyme-database.org/
+    original_source:
+      - source: ec
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: targz
     description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)

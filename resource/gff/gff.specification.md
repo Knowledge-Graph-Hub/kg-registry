@@ -7,4 +7,7 @@ is_public: true
 name: GFF3 Specification
 product_url: http://www.sequenceontology.org/gff3.shtml
 layout: product_detail
+original_source:
+  - source: gff
+    relation_type: prov:hadPrimarySource
 ---

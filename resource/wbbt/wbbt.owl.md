@@ -7,4 +7,7 @@ name: wbbt.owl
 product_file_size: 325464
 product_url: http://purl.obolibrary.org/obo/wbbt.owl
 layout: product_detail
+original_source:
+  - source: wbbt
+    relation_type: prov:hadPrimarySource
 ---

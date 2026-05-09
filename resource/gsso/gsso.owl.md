@@ -7,4 +7,7 @@ name: gsso.owl
 product_file_size: 2201424
 product_url: http://purl.obolibrary.org/obo/gsso.owl
 layout: product_detail
+original_source:
+  - source: gsso
+    relation_type: prov:hadPrimarySource
 ---

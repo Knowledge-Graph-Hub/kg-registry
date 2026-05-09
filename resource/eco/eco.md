@@ -33,6 +33,9 @@ products:
     name: eco.owl
     product_file_size: 346249
     product_url: http://purl.obolibrary.org/obo/eco.owl
+    original_source:
+      - source: eco
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Evidence and Conclusion Ontology in OBO format
     format: obo
@@ -40,6 +43,9 @@ products:
     name: eco.obo
     product_file_size: 157676
     product_url: http://purl.obolibrary.org/obo/eco.obo
+    original_source:
+      - source: eco
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: TSV export of evidence annotations including ECO terms and supporting PMIDs.
     format: tsv

@@ -7,4 +7,7 @@ name: oba.obo
 product_file_size: 33532280
 product_url: http://purl.obolibrary.org/obo/oba.obo
 layout: product_detail
+original_source:
+  - source: oba
+    relation_type: prov:hadPrimarySource
 ---

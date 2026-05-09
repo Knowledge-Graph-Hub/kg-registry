@@ -7,4 +7,7 @@ name: ohmi.owl
 product_file_size: 156548
 product_url: http://purl.obolibrary.org/obo/ohmi.owl
 layout: product_detail
+original_source:
+  - source: ohmi
+    relation_type: prov:hadPrimarySource
 ---

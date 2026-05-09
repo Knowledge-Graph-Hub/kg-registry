@@ -7,4 +7,7 @@ name: omiabis.owl
 product_file_size: 109985
 product_url: http://purl.obolibrary.org/obo/omiabis.owl
 layout: product_detail
+original_source:
+  - source: omiabis
+    relation_type: prov:hadPrimarySource
 ---

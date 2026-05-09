@@ -18,18 +18,27 @@ products:
     id: pubmedcentral.portal
     name: PMC Portal
     product_url: https://pmc.ncbi.nlm.nih.gov/
+    original_source:
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Open Access service endpoint for discovering and retrieving OA-subset article packages.
     format: http
     id: pubmedcentral.oa-api
     name: PMC Open Access API
     product_url: https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi
+    original_source:
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: NCBI FTP site for bulk PubMed Central archive and OA subset files.
     format: http
     id: pubmedcentral.ftp
     name: PMC FTP Archive
     product_url: https://ftp.ncbi.nlm.nih.gov/pub/pmc/
+    original_source:
+      - source: pubmedcentral
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

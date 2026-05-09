@@ -35,6 +35,9 @@ products:
     is_public: true
     name: CAM-KP SPARQL Endpoint
     product_url: https://stars-app.renci.org/cam/sparql
+    original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: TRAPI-compliant REST API for programmatic access to causal knowledge graphs supporting Translator ecosystem integration and federated querying
     format: http
@@ -42,6 +45,9 @@ products:
     is_public: true
     name: CAM-KP REST API
     product_url: https://cam-kp-api-dev.renci.org/1.2.0/query
+    original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive knowledge provider interface within RENCI's Automat platform for discovering and integrating CAM-KP with other biomedical data sources
     format: http
@@ -49,11 +55,16 @@ products:
     is_public: true
     name: CAM-KP on Automat
     product_url: https://automat.renci.org/#/cam-kp
+    original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Causal Activity Model graphs automatically generated from Reactome pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
     id: cam-kp.reactome-cams
     name: Reactome Pathway CAMs
     original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
       - source: reactome
         relation_type: prov:hadPrimarySource
   - category: Product
@@ -61,6 +72,8 @@ products:
     id: cam-kp.go-cams
     name: Gene Ontology CAMs
     original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
       - source: go
         relation_type: prov:hadPrimarySource
   - category: Product
@@ -68,6 +81,8 @@ products:
     id: cam-kp.ctd-interactions
     name: CTD Chemical-Gene Models
     original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
       - source: ctd
         relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
@@ -77,6 +92,9 @@ products:
     is_public: true
     name: CAM-KP Documentation
     product_url: https://github.com/ExposuresProvider/cam-kp-api/wiki
+    original_source:
+      - source: cam-kp
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - Balhoff JP

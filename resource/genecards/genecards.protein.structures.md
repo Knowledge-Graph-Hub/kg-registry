@@ -5,6 +5,8 @@ format: http
 id: genecards.protein.structures
 name: GeneCards Protein Structure Data
 original_source:
+  - source: genecards
+    relation_type: prov:hadPrimarySource
   - source: pdbe
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/

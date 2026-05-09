@@ -6,4 +6,7 @@ id: pharmdb.portal
 name: PharmDB Portal
 product_url: http://www.pharmdb-k.org/
 layout: product_detail
+original_source:
+  - source: pharmdb
+    relation_type: prov:hadPrimarySource
 ---

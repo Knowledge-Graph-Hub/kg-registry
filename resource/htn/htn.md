@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Amanda Hicks
-  orcid: 0000-0002-1795-5570
-  contact_details:
-  - contact_type: email
-    value: aellenhicks@gmail.com
-  - contact_type: github
-    value: aellenhicks
+  - category: Individual
+    label: Amanda Hicks
+    orcid: 0000-0002-1795-5570
+    contact_details:
+      - contact_type: email
+        value: aellenhicks@gmail.com
+      - contact_type: github
+        value: aellenhicks
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for representing clinical data about hypertension, intended
-  to support classification of patients according to various diagnostic guidelines
+description: An ontology for representing clinical data about hypertension, intended to support classification of patients according to various diagnostic guidelines
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/aellenhicks/htn_owl
 id: htn
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Hypertension Ontology
 products:
-- category: OntologyProduct
-  description: HTN
-  format: owl
-  id: htn.owl
-  name: HTN
-  product_file_size: 140471
-  product_url: http://purl.obolibrary.org/obo/htn.owl
+  - category: OntologyProduct
+    description: HTN
+    format: owl
+    id: htn.owl
+    name: HTN
+    product_file_size: 140471
+    product_url: http://purl.obolibrary.org/obo/htn.owl
+    original_source:
+      - source: htn
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/aellenhicks/htn_owl
 publications: []
 ---
+
 ## Description
 
 An ontology for representing clinical data about hypertension, intended to support classification of patients according to various diagnostic guidelines

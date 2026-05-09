@@ -7,4 +7,7 @@ is_public: true
 name: Gene Ontology API
 product_url: https://api.geneontology.org/
 layout: product_detail
+original_source:
+  - source: go
+    relation_type: prov:hadPrimarySource
 ---

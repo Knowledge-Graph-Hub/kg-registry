@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
-  contact_details:
-  - contact_type: email
-    value: balhoff@renci.org
-  - contact_type: github
-    value: balhoff
+  - category: Individual
+    label: Jim Balhoff
+    orcid: 0000-0002-8688-6599
+    contact_details:
+      - contact_type: email
+        value: balhoff@renci.org
+      - contact_type: github
+        value: balhoff
 creation_date: '2025-09-29T00:00:00Z'
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/phenoscape/taxrank
 id: taxrank
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,26 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Taxonomic rank vocabulary
 products:
-- category: OntologyProduct
-  description: Taxonomic rank vocabulary in OWL format
-  format: owl
-  id: taxrank.owl
-  name: taxrank.owl
-  product_file_size: 3843
-  product_url: http://purl.obolibrary.org/obo/taxrank.owl
-- category: OntologyProduct
-  description: Taxonomic rank vocabulary in OBO format
-  format: obo
-  id: taxrank.obo
-  name: taxrank.obo
-  product_file_size: 2271
-  product_url: http://purl.obolibrary.org/obo/taxrank.obo
+  - category: OntologyProduct
+    description: Taxonomic rank vocabulary in OWL format
+    format: owl
+    id: taxrank.owl
+    name: taxrank.owl
+    product_file_size: 3843
+    product_url: http://purl.obolibrary.org/obo/taxrank.owl
+    original_source:
+      - source: taxrank
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Taxonomic rank vocabulary in OBO format
+    format: obo
+    id: taxrank.obo
+    name: taxrank.obo
+    product_file_size: 2271
+    product_url: http://purl.obolibrary.org/obo/taxrank.obo
+    original_source:
+      - source: taxrank
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/phenoscape/taxrank
 publications:
-- id: https://doi.org/10.1186/2041-1480-4-34
-  title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
-    organism and species phenotypes'
+  - id: https://doi.org/10.1186/2041-1480-4-34
+    title: 'The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes'
 ---
+
 ## Description
 
 A vocabulary of taxonomic ranks (species, family, phylum, etc)

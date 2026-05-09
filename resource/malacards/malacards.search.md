@@ -6,4 +6,7 @@ id: malacards.search
 name: MalaCards Advanced Search
 product_url: https://www.malacards.org/search/advanced
 layout: product_detail
+original_source:
+  - source: malacards
+    relation_type: prov:hadPrimarySource
 ---

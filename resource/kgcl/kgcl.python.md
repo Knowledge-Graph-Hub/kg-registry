@@ -7,8 +7,5 @@ original_source:
   - source: kgcl
     relation_type: prov:hadPrimarySource
 product_url: https://github.com/INCATools/kgcl/
-secondary_source:
-  - source: kgcl
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

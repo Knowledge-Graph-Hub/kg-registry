@@ -11,4 +11,7 @@ name: pathbank OBO
 product_file_size: 1849960
 product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

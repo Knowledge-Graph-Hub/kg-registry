@@ -7,4 +7,7 @@ name: opmi.owl
 product_file_size: 394555
 product_url: http://purl.obolibrary.org/obo/opmi.owl
 layout: product_detail
+original_source:
+  - source: opmi
+    relation_type: prov:hadPrimarySource
 ---

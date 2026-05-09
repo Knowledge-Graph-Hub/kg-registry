@@ -2,25 +2,23 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-- ber
+  - ber
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: marinka@hms.harvard.edu
-  - contact_type: github
-    value: marinkaz
-  label: Marinka Zitnik
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: marinka@hms.harvard.edu
+      - contact_type: github
+        value: marinkaz
+    label: Marinka Zitnik
 creation_date: '2025-03-09T00:00:00Z'
-description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality
-  biomedical resources to describe 17,080 diseases with over 4 million relationships
-  across ten major biological scales.
+description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality biomedical resources to describe 17,080 diseases with over 4 million relationships across ten major biological scales.
 domains:
-- health
-- precision medicine
-- biomedical
-- pathways
-- systems biology
+  - health
+  - precision medicine
+  - biomedical
+  - pathways
+  - systems biology
 homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 id: primekg
 infores_id: primekg
@@ -31,30 +29,24 @@ license:
   label: MIT License
 name: PrimeKG
 products:
-- category: GraphProduct
-  description: The full PrimeKG dataset containing disease relationships.
-  id: primekg.graph
-  name: PrimeKG Full Dataset
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: primekg
-  product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
-  secondary_source:
-  - relation_type: prov:wasInfluencedBy
-    source: primekg
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
+  - category: GraphProduct
+    description: The full PrimeKG dataset containing disease relationships.
+    id: primekg.graph
+    name: PrimeKG Full Dataset
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: primekg
+    product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
+    warnings:
+      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
+      - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting to URL
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 ### PrimeKG: A Knowledge Graph for Precision Medicine
 
 PrimeKG is a large-scale Precision Medicine Knowledge Graph that provides a holistic view of diseases by integrating 20 high-quality biomedical resources. It describes 17,080 diseases with over 4 million relationships, enabling advanced network medicine and machine learning applications.

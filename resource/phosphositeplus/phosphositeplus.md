@@ -19,18 +19,27 @@ products:
     id: phosphositeplus.portal
     name: PhosphoSitePlus Portal
     product_url: https://www.phosphosite.org/
+    original_source:
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: "Bulk data downloads (PTM site tables, kinase–substrate data, regulatory sites, disease-associated mutations) requiring agreement to terms"
     format: http
     id: phosphositeplus.downloads
     name: PhosphoSitePlus Downloads
     product_url: https://www.phosphosite.org/staticDownloads
+    original_source:
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Methodology and curation overview including data sources and evidence criteria
     format: http
     id: phosphositeplus.about
     name: PhosphoSitePlus About & Methods
     product_url: https://www.phosphosite.org/staticAboutPhosphosite
+    original_source:
+      - source: phosphositeplus
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
     dump_format: neo4j

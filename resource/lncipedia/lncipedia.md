@@ -36,6 +36,9 @@ products:
     id: lncipedia.downloads
     name: LncIPedia Downloads
     product_url: https://lncipedia.org/download
+    original_source:
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: UCSC Genome Browser trackhub for directly displaying LncIPedia annotations
     id: lncipedia.trackhub
@@ -59,6 +62,9 @@ products:
     id: lncipedia.metadata
     name: LncIPedia Metadata
     product_url: https://lncipedia.org/download#anchor-metadata
+    original_source:
+      - source: lncipedia
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

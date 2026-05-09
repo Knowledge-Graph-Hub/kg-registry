@@ -7,4 +7,7 @@ name: cido.owl
 product_file_size: 2511321
 product_url: http://purl.obolibrary.org/obo/cido.owl
 layout: product_detail
+original_source:
+  - source: cido
+    relation_type: prov:hadPrimarySource
 ---

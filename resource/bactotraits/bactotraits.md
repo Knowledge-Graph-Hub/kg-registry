@@ -33,6 +33,9 @@ products:
     is_public: true
     name: BactoTraits Database and Downloads
     product_url: https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53
+    original_source:
+      - source: bactotraits
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: targz
     description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)

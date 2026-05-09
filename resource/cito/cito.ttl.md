@@ -7,4 +7,7 @@ name: CiTO Turtle File
 product_file_size: 53618
 product_url: http://purl.org/spar/cito.ttl
 layout: product_detail
+original_source:
+  - source: cito
+    relation_type: prov:hadPrimarySource
 ---

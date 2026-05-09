@@ -2,20 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
+  - category: Individual
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
+    contact_details:
+      - contact_type: email
+        value: cjmungall@lbl.gov
+      - contact_type: github
+        value: cmungall
 creation_date: '2025-09-29T00:00:00Z'
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: https://github.com/obophenotype/ctenophore-ontology
 id: cteno
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -26,18 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ctenophore Ontology
 products:
-- category: OntologyProduct
-  description: Ctenophore Ontology in OWL format
-  format: owl
-  id: cteno.owl
-  name: cteno.owl
-  product_file_size: 15458
-  product_url: http://purl.obolibrary.org/obo/cteno.owl
+  - category: OntologyProduct
+    description: Ctenophore Ontology in OWL format
+    format: owl
+    id: cteno.owl
+    name: cteno.owl
+    product_file_size: 15458
+    product_url: http://purl.obolibrary.org/obo/cteno.owl
+    original_source:
+      - source: cteno
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/ctenophore-ontology
 taxon:
-- NCBITaxon:10197
+  - NCBITaxon:10197
 publications: []
 ---
+
 ## Description
 
 An anatomical and developmental ontology for ctenophores (Comb Jellies)

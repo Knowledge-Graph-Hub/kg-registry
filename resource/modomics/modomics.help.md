@@ -6,4 +6,7 @@ id: modomics.help
 name: MODOMICS Help Documentation
 product_url: https://genesilico.pl/modomics/help
 layout: product_detail
+original_source:
+  - source: modomics
+    relation_type: prov:hadPrimarySource
 ---

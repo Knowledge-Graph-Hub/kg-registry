@@ -8,9 +8,6 @@ original_source:
   - source: metanetx
     relation_type: prov:hadPrimarySource
 product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
-secondary_source:
-  - source: metanetx
-    relation_type: prov:wasInfluencedBy
 warnings:
   - File was not able to be retrieved when checked on 2026-05-04_ No Content-Length header found
   - File was not able to be retrieved when checked on 2026-04-10_ Timeout connecting to URL

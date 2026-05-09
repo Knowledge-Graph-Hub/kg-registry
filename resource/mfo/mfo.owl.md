@@ -6,4 +6,7 @@ id: mfo.owl
 name: mfo.owl
 product_url: http://purl.obolibrary.org/obo/mfo.owl
 layout: product_detail
+original_source:
+  - source: mfo
+    relation_type: prov:hadPrimarySource
 ---

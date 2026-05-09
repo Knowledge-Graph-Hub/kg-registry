@@ -27,12 +27,18 @@ products:
     id: lincs.portal
     name: LINCS Data Portal 2.0
     product_url: https://lincsportal.ccs.miami.edu/signatures/home
+    original_source:
+      - source: lincs
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: API for programmatic access to LINCS data and signatures.
     id: lincs.api
     is_public: true
     name: LINCS API
     product_url: https://lincsportal.ccs.miami.edu/sigc-api/swagger-ui.html#/
+    original_source:
+      - source: lincs
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

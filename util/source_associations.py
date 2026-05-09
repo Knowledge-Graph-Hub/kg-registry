@@ -63,6 +63,55 @@ def merge_source_associations(
     return sorted(merged, key=lambda association: association["source"])
 
 
+def ensure_direct_product_primary_source(resource_id: str, product: dict[str, Any]) -> bool:
+    """Ensure products owned by a resource name that resource as their primary source."""
+    product_id = product.get("id")
+    if not isinstance(resource_id, str) or not isinstance(product_id, str):
+        return False
+    if product_id != resource_id and not product_id.startswith(f"{resource_id}."):
+        return False
+
+    original_sources = normalize_source_associations(
+        product.get("original_source"),
+        ORIGINAL_SOURCE_RELATION,
+    )
+    original_changed = original_sources != _ensure_list(product.get("original_source"))
+
+    resource_source_found = False
+    for source_association in original_sources:
+        if source_association["source"] == resource_id:
+            resource_source_found = True
+            if source_association["relation_type"] != ORIGINAL_SOURCE_RELATION:
+                source_association["relation_type"] = ORIGINAL_SOURCE_RELATION
+                original_changed = True
+
+    if not resource_source_found:
+        original_sources.append(make_source_association(resource_id, ORIGINAL_SOURCE_RELATION))
+        original_sources = sorted(original_sources, key=lambda association: association["source"])
+        original_changed = True
+
+    secondary_sources = normalize_source_associations(
+        product.get("secondary_source"),
+        SECONDARY_SOURCE_RELATION,
+    )
+    filtered_secondary_sources = [
+        source_association
+        for source_association in secondary_sources
+        if source_association["source"] != resource_id
+    ]
+    secondary_changed = filtered_secondary_sources != _ensure_list(product.get("secondary_source"))
+
+    if original_changed:
+        product["original_source"] = original_sources
+    if secondary_changed:
+        if filtered_secondary_sources:
+            product["secondary_source"] = filtered_secondary_sources
+        else:
+            product.pop("secondary_source", None)
+
+    return original_changed or secondary_changed
+
+
 def source_association_id(association: Any) -> str | None:
     """Return the source identifier from either a new association or a legacy string."""
     if isinstance(association, str):

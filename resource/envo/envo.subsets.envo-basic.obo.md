@@ -7,4 +7,7 @@ name: OBO-Basic edition of ENVO
 product_file_size: 422465
 product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
 layout: product_detail
+original_source:
+  - source: envo
+    relation_type: prov:hadPrimarySource
 ---

@@ -7,4 +7,7 @@ name: HPO gene to phenotype annotations
 product_file_size: 20533481
 product_url: http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt
 layout: product_detail
+original_source:
+  - source: hp
+    relation_type: prov:hadPrimarySource
 ---

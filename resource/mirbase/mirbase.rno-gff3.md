@@ -7,4 +7,7 @@ id: mirbase.rno-gff3
 name: Rat (rno) Genome Coordinates
 product_url: https://www.mirbase.org/download/CURRENT/
 layout: product_detail
+original_source:
+  - source: mirbase
+    relation_type: prov:hadPrimarySource
 ---

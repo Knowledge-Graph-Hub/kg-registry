@@ -7,4 +7,7 @@ name: xco.owl
 product_file_size: 4315373
 product_url: http://purl.obolibrary.org/obo/xco.owl
 layout: product_detail
+original_source:
+  - source: xco
+    relation_type: prov:hadPrimarySource
 ---

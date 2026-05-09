@@ -7,4 +7,7 @@ name: CREEDS Manual Single Drug Perturbations
 product_file_size: 17836091
 product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-v1.0.json
 layout: product_detail
+original_source:
+  - source: creeds
+    relation_type: prov:hadPrimarySource
 ---

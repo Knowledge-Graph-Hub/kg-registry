@@ -7,4 +7,7 @@ name: pcl.owl
 product_file_size: 167561057
 product_url: http://purl.obolibrary.org/obo/pcl.owl
 layout: product_detail
+original_source:
+  - source: pcl
+    relation_type: prov:hadPrimarySource
 ---

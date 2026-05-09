@@ -7,4 +7,7 @@ name: ma.obo
 product_file_size: 62768
 product_url: http://purl.obolibrary.org/obo/ma.obo
 layout: product_detail
+original_source:
+  - source: ma
+    relation_type: prov:hadPrimarySource
 ---

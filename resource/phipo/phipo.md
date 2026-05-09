@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Alayne Cuzick
-  orcid: 0000-0001-8941-3984
-  contact_details:
-  - contact_type: email
-    value: alayne.cuzick@rothamsted.ac.uk
-  - contact_type: github
-    value: CuzickA
+  - category: Individual
+    label: Alayne Cuzick
+    orcid: 0000-0001-8941-3984
+    contact_details:
+      - contact_type: email
+        value: alayne.cuzick@rothamsted.ac.uk
+      - contact_type: github
+        value: CuzickA
 creation_date: '2025-09-29T00:00:00Z'
-description: PHIPO is a formal ontology of species-neutral phenotypes observed in
-  pathogen-host interactions.
+description: PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/PHI-base/phipo
 id: phipo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,25 +26,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Pathogen Host Interaction Phenotype Ontology
 products:
-- category: OntologyProduct
-  description: Pathogen Host Interaction Phenotype Ontology in OWL format
-  format: owl
-  id: phipo.owl
-  name: phipo.owl
-  product_file_size: 1709467
-  product_url: http://purl.obolibrary.org/obo/phipo.owl
-- category: OntologyProduct
-  description: Pathogen Host Interaction Phenotype Ontology in OBO format
-  format: obo
-  id: phipo.obo
-  name: phipo.obo
-  product_file_size: 1133552
-  product_url: http://purl.obolibrary.org/obo/phipo.obo
+  - category: OntologyProduct
+    description: Pathogen Host Interaction Phenotype Ontology in OWL format
+    format: owl
+    id: phipo.owl
+    name: phipo.owl
+    product_file_size: 1709467
+    product_url: http://purl.obolibrary.org/obo/phipo.owl
+    original_source:
+      - source: phipo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Pathogen Host Interaction Phenotype Ontology in OBO format
+    format: obo
+    id: phipo.obo
+    name: phipo.obo
+    product_file_size: 1133552
+    product_url: http://purl.obolibrary.org/obo/phipo.obo
+    original_source:
+      - source: phipo
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/PHI-base/phipo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34788826
-  title: 'PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34788826
+    title: 'PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions'
 ---
+
 ## Description
 
 PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.

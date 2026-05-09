@@ -7,4 +7,7 @@ name: maxo.owl
 product_file_size: 16448041
 product_url: http://purl.obolibrary.org/obo/maxo.owl
 layout: product_detail
+original_source:
+  - source: maxo
+    relation_type: prov:hadPrimarySource
 ---

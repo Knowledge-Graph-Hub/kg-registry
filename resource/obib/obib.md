@@ -33,6 +33,9 @@ products:
     name: obib.owl
     product_file_size: 230390
     product_url: http://purl.obolibrary.org/obo/obib.owl
+    original_source:
+      - source: obib
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j

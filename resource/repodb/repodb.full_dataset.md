@@ -5,9 +5,11 @@ format: csv
 id: repodb.full_dataset
 name: RepoDB Full Dataset
 original_source:
+  - source: clinicaltrialsgov
+    relation_type: prov:hadPrimarySource
   - source: drugcentral
     relation_type: prov:hadPrimarySource
-  - source: clinicaltrialsgov
+  - source: repodb
     relation_type: prov:hadPrimarySource
 product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
 warnings:

@@ -8,4 +8,7 @@ name: STRING Protein Enrichment Terms
 product_file_size: 23627938784
 product_url: https://stringdb-downloads.org/download/protein.enrichment.terms.v12.0.txt.gz
 layout: product_detail
+original_source:
+  - source: string
+    relation_type: prov:hadPrimarySource
 ---

@@ -10,8 +10,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 4692134033
 product_url: https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz
-secondary_source:
-  - source: orthodb
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -6,4 +6,7 @@ id: bv-brc.ftp
 name: BV-BRC FTP
 product_url: https://www.bv-brc.org/docs/quick_references/ftp.html
 layout: product_detail
+original_source:
+  - source: bv-brc
+    relation_type: prov:hadPrimarySource
 ---

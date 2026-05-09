@@ -6,9 +6,10 @@ id: malacards.archive
 name: MalaCards Previous Version Archive
 product_url: https://previous.malacards.org/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
+  - File was not able to be retrieved when checked on 2026-05-04_ HTTP 403 error when accessing file
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when accessing file
 layout: product_detail
+original_source:
+  - source: malacards
+    relation_type: prov:hadPrimarySource
 ---

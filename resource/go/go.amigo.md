@@ -7,4 +7,7 @@ is_public: true
 name: AmiGO 2
 product_url: https://amigo.geneontology.org/amigo
 layout: product_detail
+original_source:
+  - source: go
+    relation_type: prov:hadPrimarySource
 ---

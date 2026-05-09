@@ -6,4 +6,7 @@ id: gene2phenotype.portal
 name: Gene2Phenotype Portal
 product_url: https://www.ebi.ac.uk/gene2phenotype/
 layout: product_detail
+original_source:
+  - source: gene2phenotype
+    relation_type: prov:hadPrimarySource
 ---

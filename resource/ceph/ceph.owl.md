@@ -7,4 +7,7 @@ name: main version
 product_file_size: 48794
 product_url: http://purl.obolibrary.org/obo/ceph.owl
 layout: product_detail
+original_source:
+  - source: ceph
+    relation_type: prov:hadPrimarySource
 ---

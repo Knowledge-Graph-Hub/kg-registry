@@ -9,8 +9,5 @@ original_source:
   - source: dbsnp
     relation_type: prov:hadPrimarySource
 product_url: https://ftp.ncbi.nih.gov/snp/latest_release/JSON/
-secondary_source:
-  - source: dbsnp
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

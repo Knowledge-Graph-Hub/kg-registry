@@ -7,8 +7,5 @@ original_source:
   - source: bioteque
     relation_type: prov:hadPrimarySource
 product_url: https://bioteque.irbbarcelona.org/bqsupports
-secondary_source:
-  - source: bioteque
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

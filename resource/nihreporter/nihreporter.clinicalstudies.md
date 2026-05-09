@@ -5,4 +5,7 @@ id: nihreporter.clinicalstudies
 name: NIH-Funded Project Clinical Studies
 product_url: https://reporter.nih.gov/exporter/clinicalstudies
 layout: product_detail
+original_source:
+  - source: nihreporter
+    relation_type: prov:hadPrimarySource
 ---

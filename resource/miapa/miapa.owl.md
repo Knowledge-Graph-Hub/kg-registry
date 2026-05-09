@@ -7,4 +7,7 @@ name: miapa.owl
 product_file_size: 5849
 product_url: http://purl.obolibrary.org/obo/miapa.owl
 layout: product_detail
+original_source:
+  - source: miapa
+    relation_type: prov:hadPrimarySource
 ---

@@ -34,6 +34,9 @@ products:
     name: Mondo OWL edition
     product_file_size: 241954309
     product_url: http://purl.obolibrary.org/obo/mondo.owl
+    original_source:
+      - source: mondo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: OBO serialization of mondo.owl.
     format: obo
@@ -41,6 +44,9 @@ products:
     name: Mondo OBO Format edition
     product_file_size: 51081036
     product_url: http://purl.obolibrary.org/obo/mondo.obo
+    original_source:
+      - source: mondo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: Obographs serialization of mondo.owl.
     format: obo
@@ -48,6 +54,9 @@ products:
     name: Mondo JSON edition
     product_file_size: 102877798
     product_url: http://purl.obolibrary.org/obo/mondo.json
+    original_source:
+      - source: mondo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves
     format: owl
@@ -55,6 +64,9 @@ products:
     name: Mondo Base Release
     product_file_size: 227201131
     product_url: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
+    original_source:
+      - source: mondo
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The main ontology classes and their hierarchies, without references to external terms.
     format: owl
@@ -62,6 +74,9 @@ products:
     name: Mondo Simple Release
     product_file_size: 215504840
     product_url: http://purl.obolibrary.org/obo/mondo/mondo-simple.owl
+    original_source:
+      - source: mondo
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j
@@ -1264,15 +1279,14 @@ products:
     original_source:
       - source: doid
         relation_type: prov:hadPrimarySource
+      - source: hgnc
+        relation_type: prov:hadPrimarySource
       - source: hp
         relation_type: prov:hadPrimarySource
-      - source: hgnc
+      - source: mondo
         relation_type: prov:hadPrimarySource
     product_file_size: 1437457
     product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
-    secondary_source:
-      - source: mondo
-        relation_type: prov:wasInfluencedBy
   - category: Product
     description: History file tracking changes to Mondo term mappings to CUIs
     format: txt

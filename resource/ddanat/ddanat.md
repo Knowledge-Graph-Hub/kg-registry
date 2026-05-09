@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Petra Fey
-  orcid: 0000-0002-4532-2703
-  contact_details:
-  - contact_type: email
-    value: pfey@northwestern.edu
-  - contact_type: github
-    value: pfey03
+  - category: Individual
+    label: Petra Fey
+    orcid: 0000-0002-4532-2703
+    contact_details:
+      - contact_type: email
+        value: pfey@northwestern.edu
+      - contact_type: github
+        value: pfey03
 creation_date: '2025-09-29T00:00:00Z'
-description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium
-  discoideum
+description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum
 domains:
-- anatomy and development
+  - anatomy and development
 homepage_url: http://dictybase.org/
 id: ddanat
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,27 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Dictyostelium discoideum anatomy
 products:
-- category: OntologyProduct
-  description: Dictyostelium discoideum anatomy in OWL format
-  format: owl
-  id: ddanat.owl
-  name: ddanat.owl
-  product_file_size: 15269
-  product_url: http://purl.obolibrary.org/obo/ddanat.owl
-- category: OntologyProduct
-  description: Dictyostelium discoideum anatomy in OBO format
-  format: obo
-  id: ddanat.obo
-  name: ddanat.obo
-  product_file_size: 8493
-  product_url: http://purl.obolibrary.org/obo/ddanat.obo
+  - category: OntologyProduct
+    description: Dictyostelium discoideum anatomy in OWL format
+    format: owl
+    id: ddanat.owl
+    name: ddanat.owl
+    product_file_size: 15269
+    product_url: http://purl.obolibrary.org/obo/ddanat.owl
+    original_source:
+      - source: ddanat
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Dictyostelium discoideum anatomy in OBO format
+    format: obo
+    id: ddanat.obo
+    name: ddanat.obo
+    product_file_size: 8493
+    product_url: http://purl.obolibrary.org/obo/ddanat.obo
+    original_source:
+      - source: ddanat
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/dictyBase/migration-data
 taxon:
-- NCBITaxon:44689
+  - NCBITaxon:44689
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
-  title: An anatomy ontology to represent biological knowledge in Dictyostelium discoideum
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
+    title: An anatomy ontology to represent biological knowledge in Dictyostelium discoideum
 ---
+
 ## Description
 
 A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum

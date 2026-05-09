@@ -7,4 +7,7 @@ name: tads.owl
 product_file_size: 80482
 product_url: http://purl.obolibrary.org/obo/tads.owl
 layout: product_detail
+original_source:
+  - source: tads
+    relation_type: prov:hadPrimarySource
 ---

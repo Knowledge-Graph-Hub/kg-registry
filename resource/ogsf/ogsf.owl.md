@@ -7,4 +7,7 @@ name: ogsf.owl
 product_file_size: 69686
 product_url: http://purl.obolibrary.org/obo/ogsf.owl
 layout: product_detail
+original_source:
+  - source: ogsf
+    relation_type: prov:hadPrimarySource
 ---

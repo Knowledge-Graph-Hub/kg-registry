@@ -10,4 +10,7 @@ name: credit OBO
 product_file_size: 1421
 product_url: https://w3id.org/biopragmatics/resources/credit/credit.obo
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

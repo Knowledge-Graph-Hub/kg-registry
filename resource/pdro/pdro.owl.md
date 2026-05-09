@@ -7,4 +7,7 @@ name: pdro.owl
 product_file_size: 69036
 product_url: http://purl.obolibrary.org/obo/pdro.owl
 layout: product_detail
+original_source:
+  - source: pdro
+    relation_type: prov:hadPrimarySource
 ---

@@ -10,10 +10,9 @@ name: geonames.feature Nodes TSV
 original_source:
   - source: geonames.feature
     relation_type: prov:hadPrimarySource
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 product_file_size: 20951
 product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.tsv
-secondary_source:
-  - source: obo-db-ingest
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

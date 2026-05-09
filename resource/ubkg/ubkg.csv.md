@@ -5,81 +5,29 @@ format: csv
 id: ubkg.csv
 name: UBKG Ontology CSV Files
 original_source:
-  - source: hgnc
+  - source: 4dn
     relation_type: prov:hadPrimarySource
-  - source: loinc
-    relation_type: prov:hadPrimarySource
-  - source: icd10
-    relation_type: prov:hadPrimarySource
-  - source: snomedct
-    relation_type: prov:hadPrimarySource
-  - source: uberon
-    relation_type: prov:hadPrimarySource
-  - source: pato
-    relation_type: prov:hadPrimarySource
-  - source: cl
-    relation_type: prov:hadPrimarySource
-  - source: doid
-    relation_type: prov:hadPrimarySource
-  - source: obi
-    relation_type: prov:hadPrimarySource
-  - source: obib
-    relation_type: prov:hadPrimarySource
-  - source: edam
-    relation_type: prov:hadPrimarySource
-  - source: hsapdv
-    relation_type: prov:hadPrimarySource
-  - source: sbo
-    relation_type: prov:hadPrimarySource
-  - source: mi
+  - source: biomarker
     relation_type: prov:hadPrimarySource
   - source: chebi
     relation_type: prov:hadPrimarySource
-  - source: mp
+  - source: cl
     relation_type: prov:hadPrimarySource
-  - source: ordo
-    relation_type: prov:hadPrimarySource
-  - source: uniprot
-    relation_type: prov:hadPrimarySource
-  - source: uo
-    relation_type: prov:hadPrimarySource
-  - source: mondo
-    relation_type: prov:hadPrimarySource
-  - source: efo
-    relation_type: prov:hadPrimarySource
-  - source: pgo
-    relation_type: prov:hadPrimarySource
-  - source: gencode
-    relation_type: prov:hadPrimarySource
-  - source: reactome
-    relation_type: prov:hadPrimarySource
-  - source: hra
-    relation_type: prov:hadPrimarySource
-  - source: hubmap
-    relation_type: prov:hadPrimarySource
-  - source: sennet
-    relation_type: prov:hadPrimarySource
-  - source: stellar
-    relation_type: prov:hadPrimarySource
-  - source: dct
+  - source: clingen
     relation_type: prov:hadPrimarySource
   - source: clinvar
     relation_type: prov:hadPrimarySource
   - source: connectivitymap
     relation_type: prov:hadPrimarySource
-  - source: hp
+  - source: dct
     relation_type: prov:hadPrimarySource
-  - source: mp
+  - source: disgenet
     relation_type: prov:hadPrimarySource
-  - source: msigdb
+  - source: doid
     relation_type: prov:hadPrimarySource
-  - source: wikipathways
+  - source: edam
     relation_type: prov:hadPrimarySource
-  - source: clingen
-    relation_type: prov:hadPrimarySource
-  - source: string
-    relation_type: prov:hadPrimarySource
-  - source: 4dn
+  - source: efo
     relation_type: prov:hadPrimarySource
   - source: erccrbp
     relation_type: prov:hadPrimarySource
@@ -87,33 +35,82 @@ original_source:
     relation_type: prov:hadPrimarySource
   - source: faldo
     relation_type: prov:hadPrimarySource
-  - source: glycordf
+  - source: gencode
     relation_type: prov:hadPrimarySource
   - source: glycocoo
     relation_type: prov:hadPrimarySource
+  - source: glycordf
+    relation_type: prov:hadPrimarySource
   - source: gtex
+    relation_type: prov:hadPrimarySource
+  - source: hgnc
+    relation_type: prov:hadPrimarySource
+  - source: hp
+    relation_type: prov:hadPrimarySource
+  - source: hra
+    relation_type: prov:hadPrimarySource
+  - source: hsapdv
+    relation_type: prov:hadPrimarySource
+  - source: hubmap
+    relation_type: prov:hadPrimarySource
+  - source: icd10
     relation_type: prov:hadPrimarySource
   - source: kidsfirst
     relation_type: prov:hadPrimarySource
   - source: lincs
     relation_type: prov:hadPrimarySource
+  - source: loinc
+    relation_type: prov:hadPrimarySource
+  - source: mi
+    relation_type: prov:hadPrimarySource
+  - source: mondo
+    relation_type: prov:hadPrimarySource
   - source: motrpac
+    relation_type: prov:hadPrimarySource
+  - source: mp
+    relation_type: prov:hadPrimarySource
+  - source: msigdb
     relation_type: prov:hadPrimarySource
   - source: mw
     relation_type: prov:hadPrimarySource
   - source: npo
     relation_type: prov:hadPrimarySource
-  - source: sckan
+  - source: obi
     relation_type: prov:hadPrimarySource
-  - source: disgenet
-    relation_type: prov:hadPrimarySource
-  - source: biomarker
+  - source: obib
     relation_type: prov:hadPrimarySource
   - source: opentargets
     relation_type: prov:hadPrimarySource
-product_url: https://ubkg-downloads.xconsortia.org/
-secondary_source:
+  - source: ordo
+    relation_type: prov:hadPrimarySource
+  - source: pato
+    relation_type: prov:hadPrimarySource
+  - source: pgo
+    relation_type: prov:hadPrimarySource
+  - source: reactome
+    relation_type: prov:hadPrimarySource
+  - source: sbo
+    relation_type: prov:hadPrimarySource
+  - source: sckan
+    relation_type: prov:hadPrimarySource
+  - source: sennet
+    relation_type: prov:hadPrimarySource
+  - source: snomedct
+    relation_type: prov:hadPrimarySource
+  - source: stellar
+    relation_type: prov:hadPrimarySource
+  - source: string
+    relation_type: prov:hadPrimarySource
+  - source: uberon
+    relation_type: prov:hadPrimarySource
   - source: ubkg
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+  - source: uniprot
+    relation_type: prov:hadPrimarySource
+  - source: uo
+    relation_type: prov:hadPrimarySource
+  - source: wikipathways
+    relation_type: prov:hadPrimarySource
+product_url: https://ubkg-downloads.xconsortia.org/
 layout: product_detail
 ---

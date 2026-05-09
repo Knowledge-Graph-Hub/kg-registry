@@ -7,4 +7,7 @@ name: scdo.obo
 product_file_size: 324416
 product_url: http://purl.obolibrary.org/obo/scdo.obo
 layout: product_detail
+original_source:
+  - source: scdo
+    relation_type: prov:hadPrimarySource
 ---

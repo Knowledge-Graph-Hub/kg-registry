@@ -18,18 +18,27 @@ products:
     id: pdb.portal
     name: RCSB PDB Portal
     product_url: https://www.rcsb.org/
+    original_source:
+      - source: pdb
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Programmatic API for structured retrieval of PDB entry, entity, and assembly data.
     format: http
     id: pdb.data-api
     name: RCSB Data API
     product_url: https://data.rcsb.org/
+    original_source:
+      - source: pdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Bulk download site for archive files from the worldwide Protein Data Bank.
     format: http
     id: pdb.archive
     name: wwPDB Archive Downloads
     product_url: https://files.wwpdb.org/
+    original_source:
+      - source: pdb
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     compression: gzip
     description: protein network data (full network, scored links between proteins)

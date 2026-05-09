@@ -7,4 +7,7 @@ name: NCRO development version
 product_file_size: 4548
 product_url: http://purl.obolibrary.org/obo/ncro/dev/ncro.owl
 layout: product_detail
+original_source:
+  - source: ncro
+    relation_type: prov:hadPrimarySource
 ---

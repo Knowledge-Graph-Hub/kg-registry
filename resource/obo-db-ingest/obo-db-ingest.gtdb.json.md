@@ -11,4 +11,7 @@ name: gtdb OBO Graph JSON
 product_file_size: 4213217
 product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.json.gz
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

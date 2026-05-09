@@ -10,4 +10,7 @@ name: kegg.genome OBO Graph JSON
 product_file_size: 20525
 product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

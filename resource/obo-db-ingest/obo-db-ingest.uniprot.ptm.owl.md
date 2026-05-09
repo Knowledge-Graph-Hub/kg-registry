@@ -10,4 +10,7 @@ name: uniprot.ptm OWL
 product_file_size: 19031
 product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.owl
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

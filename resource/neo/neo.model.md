@@ -9,8 +9,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 2278767531
 product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-secondary_source:
-  - source: neo
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

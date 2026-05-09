@@ -7,4 +7,7 @@ name: ddpheno.owl
 product_file_size: 72832
 product_url: http://purl.obolibrary.org/obo/ddpheno.owl
 layout: product_detail
+original_source:
+  - source: ddpheno
+    relation_type: prov:hadPrimarySource
 ---

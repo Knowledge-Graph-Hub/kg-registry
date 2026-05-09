@@ -6,4 +6,7 @@ id: srpdb.structures
 name: SRP Structures
 product_url: https://rth.dk/resources/rnp/SRPDB/srpstructures.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

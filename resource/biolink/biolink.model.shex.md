@@ -13,9 +13,6 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 17816
 product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
-secondary_source:
-  - source: biolink
-    relation_type: prov:wasInfluencedBy
 versions:
   - v4.2.6-rc5
   - v4.2.6-rc4

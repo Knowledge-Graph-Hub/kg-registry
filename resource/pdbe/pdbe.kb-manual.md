@@ -6,4 +6,7 @@ id: pdbe.kb-manual
 name: PDBe-KB User Manual
 product_url: https://github.com/PDBe-KB/pdbe-kb-manual
 layout: product_detail
+original_source:
+  - source: pdbe
+    relation_type: prov:hadPrimarySource
 ---

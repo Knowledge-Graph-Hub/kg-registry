@@ -2,25 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: mcmelek@msn.com
-  - contact_type: github
-    value: Melek-C
-  label: Melek Chaouch
-  orcid: 0000-0001-5868-4204
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: mcmelek@msn.com
+      - contact_type: github
+        value: Melek-C
+    label: Melek Chaouch
+    orcid: 0000-0001-5868-4204
 creation_date: '2025-09-29T00:00:00Z'
-description: AfPO is an ontology that can be used in the study of diverse populations
-  across Africa. It brings together publicly available demographic, anthropological
-  and genetic data relating to African people in a standardised and structured format.
-  The AfPO can be employed to classify African study participants comprehensively
-  in prospective research studies. It can also be used to classify past study participants
-  by mapping them using a language or ethnicity identifier or synonyms.
+description: AfPO is an ontology that can be used in the study of diverse populations across Africa. It brings together publicly available demographic, anthropological and genetic data relating to African people in a standardised and structured format. The AfPO can be employed to classify African study participants comprehensively in prospective research studies. It can also be used to classify past study participants by mapping them using a language or ethnicity identifier or synonyms.
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/h3abionet/afpo
 id: afpo
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -31,39 +26,44 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: African Population Ontology
 products:
-- category: OntologyProduct
-  description: The main ontology in OWL. Contains all MP terms and links to other
-    OBO ontologies
-  format: owl
-  id: afpo.owl
-  name: AfPO (OWL edition)
-  product_file_size: 96804
-  product_url: http://purl.obolibrary.org/obo/afpo.owl
-- category: OntologyProduct
-  description: A direct translation of the AfPO (OWL edition) into OBO format
-  format: obo
-  id: afpo.obo
-  name: AfPO (OBO edition)
-  product_url: http://purl.obolibrary.org/obo/afpo.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
-  description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
-  format: json
-  id: afpo.json
-  name: AfPO (obographs JSON edition)
-  product_url: http://purl.obolibrary.org/obo/afpo.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  - category: OntologyProduct
+    description: The main ontology in OWL. Contains all MP terms and links to other OBO ontologies
+    format: owl
+    id: afpo.owl
+    name: AfPO (OWL edition)
+    product_file_size: 96804
+    product_url: http://purl.obolibrary.org/obo/afpo.owl
+    original_source:
+      - source: afpo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: A direct translation of the AfPO (OWL edition) into OBO format
+    format: obo
+    id: afpo.obo
+    name: AfPO (OBO edition)
+    product_url: http://purl.obolibrary.org/obo/afpo.obo
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: afpo
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
+    format: json
+    id: afpo.json
+    name: AfPO (obographs JSON edition)
+    product_url: http://purl.obolibrary.org/obo/afpo.json
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 404 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error when accessing file'
+    original_source:
+      - source: afpo
+        relation_type: prov:hadPrimarySource
 publications: []
 repository: https://github.com/h3abionet/afpo
 ---
+
 ## Description
 
 AfPO is an ontology that can be used in the study of diverse populations across Africa. It brings together publicly available demographic, anthropological and genetic data relating to African people in a standardised and structured format. The AfPO can be employed to classify African study participants comprehensively in prospective research studies. It can also be used to classify past study participants by mapping them using a language or ethnicity identifier or synonyms.

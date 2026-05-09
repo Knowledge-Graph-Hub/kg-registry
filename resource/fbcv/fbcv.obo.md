@@ -7,4 +7,7 @@ name: fbcv.obo
 product_file_size: 568816
 product_url: http://purl.obolibrary.org/obo/fbcv.obo
 layout: product_detail
+original_source:
+  - source: fbcv
+    relation_type: prov:hadPrimarySource
 ---

@@ -26,11 +26,10 @@ products:
     id: omnicorp.cooccurrence
     name: OmniCorp Co-occurrence Data
     original_source:
+      - source: omnicorp
+        relation_type: prov:hadPrimarySource
       - source: pubmed
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: omnicorp
-        relation_type: prov:wasInfluencedBy
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
   - category: ProgrammingInterface
     description: API access to OmniCorp co-occurrence data
@@ -38,11 +37,10 @@ products:
     id: omnicorp.api
     name: OmniCorp API
     original_source:
+      - source: omnicorp
+        relation_type: prov:hadPrimarySource
       - source: pubmed
         relation_type: prov:hadPrimarySource
-    secondary_source:
-      - source: omnicorp
-        relation_type: prov:wasInfluencedBy
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
 synonyms:
   - OmniCorp
@@ -54,7 +52,7 @@ tags:
 
 ## Overview
 
-OmniCorp provides co-occurrence data derived from PubMed abstracts, enabling researchers to identify and quantify relationships between biomedical concepts based on their frequency of co-mention in the literature. 
+OmniCorp provides co-occurrence data derived from PubMed abstracts, enabling researchers to identify and quantify relationships between biomedical concepts based on their frequency of co-mention in the literature.
 
 This resource is part of the NCATS Translator infrastructure and supports literature-based discovery and evidence aggregation for knowledge graph construction. By analyzing the co-occurrence of biomedical entities (genes, diseases, drugs, phenotypes, etc.) in PubMed literature, OmniCorp helps identify potential relationships and generate hypotheses for further investigation.
 

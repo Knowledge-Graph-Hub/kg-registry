@@ -6,4 +6,7 @@ id: greengenes.sequences
 name: Greengenes2 Sequences
 product_url: http://ftp.microbio.me/greengenes_release/current/
 layout: product_detail
+original_source:
+  - source: greengenes
+    relation_type: prov:hadPrimarySource
 ---

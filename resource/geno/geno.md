@@ -33,6 +33,9 @@ products:
     name: GENO
     product_file_size: 172287
     product_url: http://purl.obolibrary.org/obo/geno.owl
+    original_source:
+      - source: geno
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl

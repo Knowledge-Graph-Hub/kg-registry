@@ -7,4 +7,7 @@ name: vbo.vbo-base.json
 product_file_size: 1154978
 product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
 layout: product_detail
+original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
 ---

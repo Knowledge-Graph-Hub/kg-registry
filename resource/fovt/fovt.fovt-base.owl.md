@@ -7,4 +7,7 @@ name: fovt.fovt-base.owl
 product_file_size: 81796
 product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
 layout: product_detail
+original_source:
+  - source: fovt
+    relation_type: prov:hadPrimarySource
 ---

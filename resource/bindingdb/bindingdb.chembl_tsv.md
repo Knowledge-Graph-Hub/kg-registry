@@ -7,4 +7,7 @@ id: bindingdb.chembl_tsv
 name: BindingDB ChEMBL Data (TSV)
 product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_202507_tsv.zip
 layout: product_detail
+original_source:
+  - source: bindingdb
+    relation_type: prov:hadPrimarySource
 ---

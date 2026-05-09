@@ -7,8 +7,5 @@ original_source:
   - source: biomarkerkg
     relation_type: prov:hadPrimarySource
 product_url: https://bkg.dev.maayanlab.cloud/
-secondary_source:
-  - source: biomarkerkg
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

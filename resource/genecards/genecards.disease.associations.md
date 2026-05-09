@@ -5,15 +5,17 @@ format: http
 id: genecards.disease.associations
 name: GeneCards Disease Associations
 original_source:
-  - source: omim
+  - source: clinvar
+    relation_type: prov:hadPrimarySource
+  - source: disgenet
+    relation_type: prov:hadPrimarySource
+  - source: genecards
     relation_type: prov:hadPrimarySource
   - source: malacards
     relation_type: prov:hadPrimarySource
-  - source: clinvar
+  - source: omim
     relation_type: prov:hadPrimarySource
   - source: orphanet
-    relation_type: prov:hadPrimarySource
-  - source: disgenet
     relation_type: prov:hadPrimarySource
 product_url: https://www.genecards.org/
 warnings:

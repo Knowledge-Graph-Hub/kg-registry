@@ -7,4 +7,7 @@ name: amphx.owl
 product_file_size: 13761
 product_url: http://purl.obolibrary.org/obo/amphx.owl
 layout: product_detail
+original_source:
+  - source: amphx
+    relation_type: prov:hadPrimarySource
 ---

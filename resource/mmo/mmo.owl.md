@@ -7,4 +7,7 @@ name: mmo.owl
 product_file_size: 1924733
 product_url: http://purl.obolibrary.org/obo/mmo.owl
 layout: product_detail
+original_source:
+  - source: mmo
+    relation_type: prov:hadPrimarySource
 ---

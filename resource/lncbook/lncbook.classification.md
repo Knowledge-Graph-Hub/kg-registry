@@ -6,4 +6,7 @@ id: lncbook.classification
 name: Classification Tool
 product_url: https://ngdc.cncb.ac.cn/lncbook/tools/classification
 layout: product_detail
+original_source:
+  - source: lncbook
+    relation_type: prov:hadPrimarySource
 ---

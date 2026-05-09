@@ -39,9 +39,6 @@ products:
       - source: ikraph
         relation_type: prov:hadPrimarySource
     product_url: https://biokde.insilicom.com/
-    secondary_source:
-      - source: ikraph
-        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: Code for named entity recognition, relation extraction, and drug repurposing in assembly and analysis of iKraph
     id: ikraph.code
@@ -54,9 +51,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/myinsilicom/iKraph
     repository: https://github.com/myinsilicom/iKraph
-    secondary_source:
-      - source: ikraph
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: targz
     description: Graph metadata for iKraph, including a list of relations, entity type-specific metadata, data sources, and drug repurposing predictions.
@@ -68,9 +62,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 61183533
     product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
-    secondary_source:
-      - source: ikraph
-        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
     compression: targz
     description: Complete graph data for iKraph with all entities and relations extracted from PubMed abstracts
@@ -81,9 +72,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 1440676039
     product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
-    secondary_source:
-      - source: ikraph
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Zhang Y

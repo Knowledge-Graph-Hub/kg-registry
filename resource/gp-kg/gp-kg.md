@@ -26,9 +26,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 48397035
     product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
-    secondary_source:
-      - source: gp-kg
-        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: A computational framework for drug repurposing, used with GP-KG
     id: gp-kg.process.kg-predict
@@ -37,9 +34,6 @@ products:
       - source: gp-kg
         relation_type: prov:hadPrimarySource
     product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
-    secondary_source:
-      - source: gp-kg
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Gao Z

@@ -31,9 +31,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 11700
     product_url: https://w3id.org/kgcl/kgcl.owl.ttl
-    secondary_source:
-      - source: kgcl
-        relation_type: prov:wasInfluencedBy
   - category: ProcessProduct
     description: Python implementation of the Knowledge Graph Change Language standard, including a LinkML model and LARK grammar for parsing and generating KGCL statements.
     id: kgcl.python
@@ -42,9 +39,6 @@ products:
       - source: kgcl
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/INCATools/kgcl/
-    secondary_source:
-      - source: kgcl
-        relation_type: prov:wasInfluencedBy
   - category: DataModelProduct
     description: JSON-LD context for the Knowledge Graph Change Language model, enabling semantic interoperability for KGCL data.
     format: jsonld
@@ -55,9 +49,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 2161
     product_url: https://w3id.org/kgcl/kgcl.context.jsonld
-    secondary_source:
-      - source: kgcl
-        relation_type: prov:wasInfluencedBy
   - category: DataModelProduct
     description: SHACL shapes for validating Knowledge Graph Change Language instances.
     format: shacl
@@ -68,9 +59,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 15868
     product_url: https://w3id.org/kgcl/kgcl.shacl.ttl
-    secondary_source:
-      - source: kgcl
-        relation_type: prov:wasInfluencedBy
   - category: DataModelProduct
     description: YAML schema representation of the Knowledge Graph Change Language model.
     format: yaml
@@ -81,9 +69,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 7492
     product_url: https://w3id.org/kgcl/kgcl.yaml
-    secondary_source:
-      - source: kgcl
-        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Hegde H

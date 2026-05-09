@@ -18,18 +18,27 @@ products:
     id: dorothea.graph
     name: DoRothEA Regulon Graph
     product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
+    original_source:
+      - source: dorothea
+        relation_type: prov:hadPrimarySource
   - category: ProcessProduct
     description: R package containing regulon data and helper functions for TF activity inference
     format: http
     id: dorothea.r-package
     name: DoRothEA R Package
     product_url: https://github.com/saezlab/dorothea/
+    original_source:
+      - source: dorothea
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Project documentation, usage examples, and methodological notes
     format: http
     id: dorothea.docs
     name: DoRothEA Documentation
     product_url: https://saezlab.github.io/dorothea/articles/dorothea.html
+    original_source:
+      - source: dorothea
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological entities and their associations
     id: bioteque.embeddings

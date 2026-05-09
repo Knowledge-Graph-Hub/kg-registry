@@ -93,8 +93,5 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_file_size: 240665663
 product_url: https://www.ebi.ac.uk/efo/efo.owl
-secondary_source:
-  - source: efo
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -2,21 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
-  contact_details:
-  - contact_type: email
-    value: batchelorc@rsc.org
-  - contact_type: github
-    value: batchelorc
+  - category: Individual
+    label: Colin Batchelor
+    orcid: 0000-0001-5985-7429
+    contact_details:
+      - contact_type: email
+        value: batchelorc@rsc.org
+      - contact_type: github
+        value: batchelorc
 creation_date: '2025-09-29T00:00:00Z'
-description: Connects organic name reactions to their roles in an organic synthesis
-  and to processes in MOP
+description: Connects organic name reactions to their roles in an organic synthesis and to processes in MOP
 domains:
-- chemistry and biochemistry
+  - chemistry and biochemistry
 homepage_url: https://github.com/rsc-ontologies/rxno
 id: rxno
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Name Reaction Ontology
 products:
-- category: OntologyProduct
-  description: Name Reaction Ontology
-  format: owl
-  id: rxno.owl
-  name: Name Reaction Ontology
-  product_file_size: 95394
-  product_url: http://purl.obolibrary.org/obo/rxno.owl
+  - category: OntologyProduct
+    description: Name Reaction Ontology
+    format: owl
+    id: rxno.owl
+    name: Name Reaction Ontology
+    product_file_size: 95394
+    product_url: http://purl.obolibrary.org/obo/rxno.owl
+    original_source:
+      - source: rxno
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/rsc-ontologies/rxno
 publications: []
 ---
+
 ## Description
 
 Connects organic name reactions to their roles in an organic synthesis and to processes in MOP

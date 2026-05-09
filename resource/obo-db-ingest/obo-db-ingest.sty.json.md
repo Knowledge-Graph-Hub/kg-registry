@@ -7,4 +7,7 @@ name: sty OBO Graph JSON
 product_file_size: 3145
 product_url: https://w3id.org/biopragmatics/resources/sty/sty.json
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

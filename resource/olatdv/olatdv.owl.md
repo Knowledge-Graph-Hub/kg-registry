@@ -7,4 +7,7 @@ name: olatdv.owl
 product_file_size: 11939
 product_url: http://purl.obolibrary.org/obo/olatdv.owl
 layout: product_detail
+original_source:
+  - source: olatdv
+    relation_type: prov:hadPrimarySource
 ---

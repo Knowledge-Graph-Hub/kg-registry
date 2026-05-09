@@ -34,9 +34,6 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 210868256
     product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-    secondary_source:
-      - source: kg-alzheimers
-        relation_type: prov:wasInfluencedBy
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 taxon:
   - NCBITaxon:9606
@@ -45,7 +42,7 @@ last_modified_date: '2026-01-06T00:00:00Z'
 ---
 
 KG-Alzheimers is a knowledge graph created in collaboration between Lawrence Berkeley National
-Lab and Washington University, designed to integrate data related to Alzheimer's 
+Lab and Washington University, designed to integrate data related to Alzheimer's
 disease. The purpose is to support use cases including retrieval augmented generation (RAG)
 and the creation of an AI-assistant. It is built with a strong emphasis on provenance,
 transparency, and interoperability with existing biomedical knowledge graphs. Learn more

@@ -38,12 +38,18 @@ products:
     id: msigdb.downloads.human
     name: MSigDB Human Gene Sets Downloads
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+    original_source:
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Downloadable gene set files for mouse collections including mouse-ortholog hallmarks, curated pathways, ontologies, and cell type signatures
     format: mixed
     id: msigdb.downloads.mouse
     name: MSigDB Mouse Gene Sets Downloads
     product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+    original_source:
+      - source: msigdb
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Interactive tool for computing overlaps between user-provided gene sets and MSigDB collections
     id: msigdb.investigate

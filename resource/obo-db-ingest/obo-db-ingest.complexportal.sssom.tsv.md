@@ -10,4 +10,7 @@ name: complexportal SSSOM
 product_file_size: 58537
 product_url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.sssom.tsv
 layout: product_detail
+original_source:
+  - source: obo-db-ingest
+    relation_type: prov:hadPrimarySource
 ---

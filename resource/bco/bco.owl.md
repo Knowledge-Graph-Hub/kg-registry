@@ -7,4 +7,7 @@ name: bco.owl
 product_file_size: 108849
 product_url: http://purl.obolibrary.org/obo/bco.owl
 layout: product_detail
+original_source:
+  - source: bco
+    relation_type: prov:hadPrimarySource
 ---

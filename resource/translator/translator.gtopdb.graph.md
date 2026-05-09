@@ -16,10 +16,9 @@ node_count: 10644
 original_source:
   - source: gtopdb
     relation_type: prov:hadPrimarySource
-product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
-secondary_source:
   - source: translator
-    relation_type: prov:wasInfluencedBy
+    relation_type: prov:hadPrimarySource
+product_url: https://kgx-storage.rtx.ai/releases/gtopdb/latest/
 versions:
   - '2026_03_19'
   - gtopdb_2026.1_4d453431_2025sep1_4.3.6

@@ -8,9 +8,6 @@ original_source:
   - source: cgnc
     relation_type: prov:hadPrimarySource
 product_url: http://birdgenenames.org/cgnc/downloads.jsp?file=standard
-secondary_source:
-  - source: cgnc
-    relation_type: prov:wasInfluencedBy
 warnings:
   - File was not able to be retrieved when checked on 2026-05-04_ HTTP 404 error when accessing file
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file

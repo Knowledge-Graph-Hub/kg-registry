@@ -44,8 +44,5 @@ original_source:
   - source: semmeddb
     relation_type: prov:hadPrimarySource
 product_url: https://arax.ncats.io/
-secondary_source:
-  - source: rtx-kg2
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

@@ -29,6 +29,9 @@ products:
     is_public: true
     name: GFF3 Specification
     product_url: http://www.sequenceontology.org/gff3.shtml
+    original_source:
+      - source: gff
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl

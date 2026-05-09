@@ -35,8 +35,5 @@ original_source:
   - source: indra
     relation_type: prov:hadPrimarySource
 product_url: https://github.com/gyorilab/indra_cogex
-secondary_source:
-  - source: indra
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

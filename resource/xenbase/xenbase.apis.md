@@ -6,4 +6,7 @@ id: xenbase.apis
 name: Xenbase APIs and Web Services
 product_url: https://xenbase.org/xenbase/static/apis-links.jsp
 layout: product_detail
+original_source:
+  - source: xenbase
+    relation_type: prov:hadPrimarySource
 ---

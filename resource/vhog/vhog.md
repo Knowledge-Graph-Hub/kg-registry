@@ -2,12 +2,12 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts: []
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
-- anatomy and development
+  - anatomy and development
 id: vhog
 last_modified_date: '2026-04-15T00:00:00Z'
 layout: resource_detail
@@ -16,19 +16,21 @@ license:
   label: Not specified
 name: Vertebrate Homologous Ontology Group Ontology
 products:
-- category: OntologyProduct
-  description: Vertebrate Homologous Ontology Group Ontology in OWL format
-  format: owl
-  id: vhog.owl
-  name: vhog.owl
-  product_url: http://purl.obolibrary.org/obo/vhog.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
+  - category: OntologyProduct
+    description: Vertebrate Homologous Ontology Group Ontology in OWL format
+    format: owl
+    id: vhog.owl
+    name: vhog.owl
+    product_url: http://purl.obolibrary.org/obo/vhog.owl
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-05-04: HTTP 403 error when accessing file'
+      - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error when accessing file'
+    original_source:
+      - source: vhog
+        relation_type: prov:hadPrimarySource
 publications: []
 ---
+
 ## Description
 
 Description unavailable.

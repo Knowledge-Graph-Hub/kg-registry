@@ -18,6 +18,9 @@ products:
     id: genemania.web
     name: GeneMANIA Web Interface
     product_url: https://genemania.org/
+    original_source:
+      - source: genemania
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse relations.
     format: owl

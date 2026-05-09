@@ -5,4 +5,7 @@ id: wikidata.dumps.incremental
 name: Wikidata Incremental Dumps
 product_url: https://dumps.wikimedia.org/other/incr/wikidatawiki/
 layout: product_detail
+original_source:
+  - source: wikidata
+    relation_type: prov:hadPrimarySource
 ---

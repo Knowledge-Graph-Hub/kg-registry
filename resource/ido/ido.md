@@ -33,6 +33,9 @@ products:
     name: ido.owl
     product_file_size: 69658
     product_url: http://purl.obolibrary.org/obo/ido.owl
+    original_source:
+      - source: ido
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

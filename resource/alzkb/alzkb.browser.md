@@ -5,6 +5,8 @@ format: http
 id: alzkb.browser
 name: AlzKB Graph Database Browser
 original_source:
+  - source: alzkb
+    relation_type: prov:hadPrimarySource
   - source: aop-db
     relation_type: prov:hadPrimarySource
   - source: bgee
@@ -47,8 +49,6 @@ original_source:
     relation_type: prov:hadPrimarySource
 product_url: https://alzkb.ai:7473/login
 secondary_source:
-  - source: alzkb
-    relation_type: prov:wasInfluencedBy
   - source: hetionet
     relation_type: prov:wasInfluencedBy
 layout: product_detail

@@ -6,4 +6,7 @@ id: srpdb.overview
 name: SRP Overview
 product_url: https://rth.dk/resources/rnp/SRPDB/StrucFunctSRP.html
 layout: product_detail
+original_source:
+  - source: srpdb
+    relation_type: prov:hadPrimarySource
 ---

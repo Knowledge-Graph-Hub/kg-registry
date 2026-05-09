@@ -7,4 +7,7 @@ name: stato.owl
 product_file_size: 260099
 product_url: http://purl.obolibrary.org/obo/stato.owl
 layout: product_detail
+original_source:
+  - source: stato
+    relation_type: prov:hadPrimarySource
 ---

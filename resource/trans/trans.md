@@ -2,22 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Lynn Schriml
-  orcid: 0000-0001-8910-9851
-  contact_details:
-  - contact_type: email
-    value: lynn.schriml@gmail.com
-  - contact_type: github
-    value: lschriml
+  - category: Individual
+    label: Lynn Schriml
+    orcid: 0000-0001-8910-9851
+    contact_details:
+      - contact_type: email
+        value: lynn.schriml@gmail.com
+      - contact_type: github
+        value: lschriml
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology representing the disease transmission process during which
-  the pathogen is transmitted directly or indirectly from its natural reservoir, a
-  susceptible host or source to a new host.
+description: An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 id: trans
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -28,28 +26,34 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Pathogen Transmission Ontology
 products:
-- category: OntologyProduct
-  description: Pathogen Transmission Ontology in OWL format
-  format: owl
-  id: trans.owl
-  name: trans.owl
-  product_file_size: 4172
-  product_url: http://purl.obolibrary.org/obo/trans.owl
-- category: OntologyProduct
-  description: Pathogen Transmission Ontology in OBO format
-  format: obo
-  id: trans.obo
-  name: trans.obo
-  product_file_size: 2629
-  product_url: http://purl.obolibrary.org/obo/trans.obo
+  - category: OntologyProduct
+    description: Pathogen Transmission Ontology in OWL format
+    format: owl
+    id: trans.owl
+    name: trans.owl
+    product_file_size: 4172
+    product_url: http://purl.obolibrary.org/obo/trans.owl
+    original_source:
+      - source: trans
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: Pathogen Transmission Ontology in OBO format
+    format: obo
+    id: trans.obo
+    name: trans.obo
+    product_file_size: 2629
+    product_url: http://purl.obolibrary.org/obo/trans.obo
+    original_source:
+      - source: trans
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
-  title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance
-    pathogen database
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
-  title: The Human Disease Ontology 2022 update
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+    title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+    title: The Human Disease Ontology 2022 update
 ---
+
 ## Description
 
 An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.

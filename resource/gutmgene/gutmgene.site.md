@@ -7,8 +7,5 @@ original_source:
   - source: gutmgene
     relation_type: prov:hadPrimarySource
 product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
-secondary_source:
-  - source: gutmgene
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

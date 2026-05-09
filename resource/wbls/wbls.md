@@ -33,6 +33,9 @@ products:
     name: wbls.owl
     product_file_size: 76039
     product_url: http://purl.obolibrary.org/obo/wbls.owl
+    original_source:
+      - source: wbls
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: C. elegans development ontology in OBO format
     format: obo
@@ -40,6 +43,9 @@ products:
     name: wbls.obo
     product_file_size: 30116
     product_url: http://purl.obolibrary.org/obo/wbls.obo
+    original_source:
+      - source: wbls
+        relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl

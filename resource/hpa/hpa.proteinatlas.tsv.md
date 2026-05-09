@@ -7,4 +7,7 @@ name: HPA Complete Data (TSV)
 product_file_size: 6286585
 product_url: https://www.proteinatlas.org/download/proteinatlas.tsv.zip
 layout: product_detail
+original_source:
+  - source: hpa
+    relation_type: prov:hadPrimarySource
 ---

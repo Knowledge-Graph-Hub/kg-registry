@@ -5,4 +5,7 @@ id: chemicalchecker.api
 name: Chemical Checker RESTful API
 product_url: https://chemicalchecker.com/api/db/getSignature/
 layout: product_detail
+original_source:
+  - source: chemicalchecker
+    relation_type: prov:hadPrimarySource
 ---

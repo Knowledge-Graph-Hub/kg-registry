@@ -7,4 +7,7 @@ name: cio.obo
 product_file_size: 3960
 product_url: http://purl.obolibrary.org/obo/cio.obo
 layout: product_detail
+original_source:
+  - source: cio
+    relation_type: prov:hadPrimarySource
 ---

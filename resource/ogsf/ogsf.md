@@ -2,21 +2,20 @@
 activity_status: inactive
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Asiyah Yu Lin
-  orcid: 0000-0002-5379-5359
-  contact_details:
-  - contact_type: email
-    value: linikujp@gmail.com
-  - contact_type: github
-    value: linikujp
+  - category: Individual
+    label: Asiyah Yu Lin
+    orcid: 0000-0002-5379-5359
+    contact_details:
+      - contact_type: email
+        value: linikujp@gmail.com
+      - contact_type: github
+        value: linikujp
 creation_date: '2025-09-29T00:00:00Z'
-description: An application ontology to represent genetic susceptibility to a specific
-  disease, adverse event, or a pathological process.
+description: An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://github.com/linikujp/OGSF
 id: ogsf
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -27,16 +26,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Genetic Susceptibility Factor
 products:
-- category: OntologyProduct
-  description: Ontology of Genetic Susceptibility Factor in OWL format
-  format: owl
-  id: ogsf.owl
-  name: ogsf.owl
-  product_file_size: 69686
-  product_url: http://purl.obolibrary.org/obo/ogsf.owl
+  - category: OntologyProduct
+    description: Ontology of Genetic Susceptibility Factor in OWL format
+    format: owl
+    id: ogsf.owl
+    name: ogsf.owl
+    product_file_size: 69686
+    product_url: http://purl.obolibrary.org/obo/ogsf.owl
+    original_source:
+      - source: ogsf
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/linikujp/OGSF
 publications: []
 ---
+
 ## Description
 
 An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.

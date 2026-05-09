@@ -8,8 +8,5 @@ original_source:
   - source: ecid
     relation_type: prov:hadPrimarySource
 product_url: https://zenodo.org/records/10974865
-secondary_source:
-  - source: ecid
-    relation_type: prov:wasInfluencedBy
 layout: product_detail
 ---

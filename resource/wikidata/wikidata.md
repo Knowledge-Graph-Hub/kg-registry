@@ -39,6 +39,9 @@ products:
     id: wikidata.portal
     name: Wikidata Web Portal
     product_url: https://www.wikidata.org/
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: SPARQL endpoint for Wikidata
     format: http
@@ -54,6 +57,9 @@ products:
     id: wikidata.query.editor
     name: Wikidata Query Service Interface
     product_url: https://query.wikidata.org/
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: JSON dumps containing all Wikidata entities
@@ -62,6 +68,9 @@ products:
     name: Wikidata JSON Entity Dumps
     product_file_size: 151566969874
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Canonical full-statement RDF dump in Turtle format (the "all" dump)
@@ -70,6 +79,9 @@ products:
     name: Wikidata RDF Full Dump (Turtle)
     product_file_size: 149370935070
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Canonical full-statement RDF dump in N-Triples format (the "all" dump)
@@ -78,6 +90,9 @@ products:
     name: Wikidata RDF Full Dump (N-Triples)
     product_file_size: 246159505683
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.nt.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: RDF "truthy" dump in N-Triples format containing direct values from best-rank statements only
@@ -86,6 +101,9 @@ products:
     name: Wikidata RDF Truthy Dump (N-Triples)
     product_file_size: 69713859532
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Lexeme namespace JSON dump
@@ -94,6 +112,9 @@ products:
     name: Wikidata Lexeme JSON Dump
     product_file_size: 575745192
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Lexeme namespace RDF dump in Turtle format
@@ -102,6 +123,9 @@ products:
     name: Wikidata Lexeme RDF Dump (Turtle)
     product_file_size: 762464579
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.ttl.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Lexeme namespace RDF dump in N-Triples format
@@ -110,29 +134,44 @@ products:
     name: Wikidata Lexeme RDF Dump (N-Triples)
     product_file_size: 1401838999
     product_url: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.nt.gz
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Full XML database dumps of Wikidata
     format: xml
     id: wikidata.dumps.xml
     name: Wikidata XML Dumps
     product_url: https://dumps.wikimedia.org/wikidatawiki/
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Incremental add/change dumps that cover the previous 24 hours
     id: wikidata.dumps.incremental
     name: Wikidata Incremental Dumps
     product_url: https://dumps.wikimedia.org/other/incr/wikidatawiki/
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful API providing programmatic access to Wikidata content, allowing reading and editing of items, properties, and statements
     format: http
     id: wikidata.api
     name: Wikidata Action API
     product_url: https://www.wikidata.org/w/api.php
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: REST API for accessing entity data in JSON format with content negotiation support
     format: http
     id: wikidata.entity.api
     name: Wikidata Entity Data API
     product_url: https://www.wikidata.org/wiki/Special:EntityData
+    original_source:
+      - source: wikidata
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: SPARQL endpoint for ID Mappings
     id: identifier-mappings.sparql

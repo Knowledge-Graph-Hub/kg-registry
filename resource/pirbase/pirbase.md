@@ -18,36 +18,54 @@ products:
     id: pirbase.portal
     name: piRBase Portal
     product_url: http://bigdata.ibp.ac.cn/piRBase/
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Browse interface for exploring piRNAs organized by species
     format: http
     id: pirbase.browse
     name: piRBase Browse Interface
     product_url: http://bigdata.ibp.ac.cn/piRBase/browse.php
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Function annotation interface for piRNA functional analysis
     format: http
     id: pirbase.function
     name: piRNA Function Interface
     product_url: http://bigdata.ibp.ac.cn/piRBase/function.php
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Genome browser interface for viewing piRNA genomic locations
     format: http
     id: pirbase.genome
     name: Genome Browser Interface
     product_url: http://bigdata.ibp.ac.cn/piRBase/genome.php
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Epigenetics interface for exploring methylation and other epigenetic features
     format: http
     id: pirbase.epigenetics
     name: Epigenetics Interface
     product_url: http://bigdata.ibp.ac.cn/piRBase/methylation.php
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Tools interface for piRNA analysis utilities
     format: http
     id: pirbase.tools
     name: piRBase Tools
     product_url: http://bigdata.ibp.ac.cn/piRBase/tools.php
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences for human piRNAs (version 3.0)
@@ -57,6 +75,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences for mouse piRNAs (version 3.0)
@@ -66,6 +87,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences for rat piRNAs
@@ -75,6 +99,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences for Drosophila melanogaster piRNAs (version 3.0)
@@ -84,6 +111,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences for C. elegans piRNAs (version 3.0)
@@ -93,6 +123,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: FASTA format sequences for zebrafish piRNAs
@@ -102,6 +135,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Gold standard human piRNA sequences with high confidence annotations
@@ -111,6 +147,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Gold standard mouse piRNA sequences with high confidence annotations
@@ -120,6 +159,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Gold standard Drosophila piRNA sequences with high confidence annotations
@@ -129,6 +171,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for human piRNAs on hg19 assembly in BED format
@@ -138,6 +183,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for human piRNAs on GRCh38 assembly in BED format
@@ -147,6 +195,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for mouse piRNAs on GRCm38 assembly in BED format
@@ -156,6 +207,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: Genome coordinates for Drosophila piRNAs on BDGP6 assembly in BED format
@@ -165,6 +219,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Tutorial and user manual for piRBase
     format: http
@@ -173,6 +230,9 @@ products:
     product_url: http://bigdata.ibp.ac.cn/piRBase/about.php
     warnings:
       - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting to URL
+    original_source:
+      - source: pirbase
+        relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http

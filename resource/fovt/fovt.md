@@ -2,23 +2,20 @@
 activity_status: active
 category: Ontology
 collection:
-- obo-foundry
+  - obo-foundry
 contacts:
-- category: Individual
-  label: Meghan Balk
-  orcid: 0000-0003-2699-3066
-  contact_details:
-  - contact_type: email
-    value: meghan.balk@gmail.com
-  - contact_type: github
-    value: megbalk
+  - category: Individual
+    label: Meghan Balk
+    orcid: 0000-0003-2699-3066
+    contact_details:
+      - contact_type: email
+        value: meghan.balk@gmail.com
+      - contact_type: github
+        value: megbalk
 creation_date: '2025-09-29T00:00:00Z'
-description: FuTRES Ontology of Vertebrate Traits is an application ontology used
-  to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections
-  Ontology (BCO) to link observations of individual specimens to their trait values.
-  Traits are defined in the Ontology of Biological Attributes (OBA).
+description: FuTRES Ontology of Vertebrate Traits is an application ontology used to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections Ontology (BCO) to link observations of individual specimens to their trait values. Traits are defined in the Ontology of Biological Attributes (OBA).
 domains:
-- biological systems
+  - biological systems
 homepage_url: https://github.com/futres/fovt
 id: fovt
 last_modified_date: '2026-04-15T00:00:00Z'
@@ -29,37 +26,50 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: FuTRES Ontology of Vertebrate Traits
 products:
-- category: OntologyProduct
-  description: FuTRES Ontology of Vertebrate Traits in OWL format
-  format: owl
-  id: fovt.owl
-  name: fovt.owl
-  product_file_size: 2587818
-  product_url: http://purl.obolibrary.org/obo/fovt.owl
-- category: OntologyProduct
-  description: FuTRES Ontology of Vertebrate Traits in OBO format
-  format: obo
-  id: fovt.obo
-  name: fovt.obo
-  product_file_size: 1628339
-  product_url: http://purl.obolibrary.org/obo/fovt.obo
-- category: OntologyProduct
-  description: FuTRES Ontology of Vertebrate Traits in OWL format
-  format: owl
-  id: fovt.fovt-base.owl
-  name: fovt.fovt-base.owl
-  product_file_size: 81796
-  product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
-- category: OntologyProduct
-  description: FuTRES Ontology of Vertebrate Traits in OBO format
-  format: obo
-  id: fovt.fovt-base.obo
-  name: fovt.fovt-base.obo
-  product_file_size: 36309
-  product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
+  - category: OntologyProduct
+    description: FuTRES Ontology of Vertebrate Traits in OWL format
+    format: owl
+    id: fovt.owl
+    name: fovt.owl
+    product_file_size: 2587818
+    product_url: http://purl.obolibrary.org/obo/fovt.owl
+    original_source:
+      - source: fovt
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: FuTRES Ontology of Vertebrate Traits in OBO format
+    format: obo
+    id: fovt.obo
+    name: fovt.obo
+    product_file_size: 1628339
+    product_url: http://purl.obolibrary.org/obo/fovt.obo
+    original_source:
+      - source: fovt
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: FuTRES Ontology of Vertebrate Traits in OWL format
+    format: owl
+    id: fovt.fovt-base.owl
+    name: fovt.fovt-base.owl
+    product_file_size: 81796
+    product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
+    original_source:
+      - source: fovt
+        relation_type: prov:hadPrimarySource
+  - category: OntologyProduct
+    description: FuTRES Ontology of Vertebrate Traits in OBO format
+    format: obo
+    id: fovt.fovt-base.obo
+    name: fovt.fovt-base.obo
+    product_file_size: 36309
+    product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
+    original_source:
+      - source: fovt
+        relation_type: prov:hadPrimarySource
 repository: https://github.com/futres/fovt
 publications: []
 ---
+
 ## Description
 
 FuTRES Ontology of Vertebrate Traits is an application ontology used to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections Ontology (BCO) to link observations of individual specimens to their trait values. Traits are defined in the Ontology of Biological Attributes (OBA).

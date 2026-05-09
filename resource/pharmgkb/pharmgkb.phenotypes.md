@@ -8,4 +8,7 @@ name: PharmKB Phenotypes
 product_file_size: 186836
 product_url: https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip
 layout: product_detail
+original_source:
+  - source: pharmgkb
+    relation_type: prov:hadPrimarySource
 ---

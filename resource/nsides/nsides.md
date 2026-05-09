@@ -29,6 +29,9 @@ products:
     id: nsides.onsides
     name: OnSIDES
     product_url: https://github.com/tatonetti-lab/onsides/releases
+    original_source:
+      - source: nsides
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Pediatric drug safety signals across developmental phases, covering adverse events specific to children
     format: csv

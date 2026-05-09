@@ -6,4 +6,7 @@ id: mirbase.genomic-search
 name: Genomic Location Search
 product_url: https://www.mirbase.org/
 layout: product_detail
+original_source:
+  - source: mirbase
+    relation_type: prov:hadPrimarySource
 ---
