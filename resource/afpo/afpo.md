@@ -23,7 +23,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/h3abionet/afpo
 id: afpo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -50,10 +50,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: afpo
-  product_url: http://purl.obolibrary.org/obo/afpo.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  product_url: https://raw.githubusercontent.com/h3abionet/afpo/v2024-03-21/afpo.obo
 - category: OntologyProduct
   description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
@@ -62,10 +59,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: afpo
-  product_url: http://purl.obolibrary.org/obo/afpo.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
+  product_url: https://raw.githubusercontent.com/h3abionet/afpo/v2024-03-21/afpo.json
 publications: []
 repository: https://github.com/h3abionet/afpo
 ---
