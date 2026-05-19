@@ -2,14 +2,27 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
-description: Stub Resource page for cvx. This page was automatically generated because
-  it was referenced by other resources.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: iisinfo@cdc.gov
+  - contact_type: url
+    value: https://www.cdc.gov/iis/code-sets/index.html
+  label: CDC IIS Helpdesk
+description: CVX is the vaccine administered code set maintained by the Centers
+  for Disease Control and Prevention for Immunization Information Systems (IIS).
+  It provides identifiers for vaccine products and historical vaccine administrations
+  used in immunization records, exchange standards, and public health reporting.
 domains:
-- stub
+- clinical
+- health
+- public health
+homepage_url: https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx
 id: cvx
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 layout: resource_detail
-name: Cvx
+name: Vaccine Administered Code Set (CVX)
 products:
 - category: Product
   description: cvx Nodes TSV
@@ -23,10 +36,7 @@ products:
     source: obo-db-ingest
   product_file_size: 6401
   product_url: https://w3id.org/biopragmatics/resources/cvx/cvx.tsv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Cvx
+# Vaccine Administered Code Set (CVX)
 
-This is an automatically generated stub page for cvx. Please update with proper information.
+CVX is the CDC-maintained vaccine administered code set used in Immunization Information Systems and related health data exchange workflows.
