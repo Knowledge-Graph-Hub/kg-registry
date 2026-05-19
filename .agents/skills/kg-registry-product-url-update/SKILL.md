@@ -7,6 +7,12 @@ description: Use when updating the URL for a specific KG-Registry product, espec
 
 Update a stale or incorrect `product_url` for a specific KG-Registry product while preserving the intended identity of the product.
 
+## Prerequisite
+
+- Run this skill only from a local clone of the KG-Registry repository.
+- The workflow depends on editing a local resource page, checking nearby metadata in the checked-out repository, and running local validation commands after the URL update.
+- If the repository is not cloned locally, stop and clone it before attempting the update.
+
 ## When to use
 
 - The user asks to fix or update the URL for a named product.

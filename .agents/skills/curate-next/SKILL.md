@@ -7,6 +7,12 @@ description: Use when asked to curate the next N KG-Registry stub resources. Sel
 
 Curate the next N stub resources in KG-Registry.
 
+## Prerequisite
+
+- Run this skill only from a local clone of the KG-Registry repository.
+- The workflow depends on scanning local files under `resource/`, reading `reports/curation_problems.tsv`, editing checked-out pages, and running local validation commands.
+- If the repository is not cloned locally, stop and clone it before attempting batch curation.
+
 ## When to use
 
 - "Curate the next 3 stub resources"

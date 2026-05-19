@@ -7,6 +7,12 @@ description: Use when validating or quality-checking KG-Registry resource pages 
 
 Validate a KG-Registry resource page after editing, with extra attention to provenance and curation-specific quality issues.
 
+## Prerequisite
+
+- Run this skill only from a local clone of the KG-Registry repository.
+- The workflow depends on validating local files in `resource/` and running repository-local commands such as `uv run make validate-file`.
+- If the repository is not cloned locally, stop and clone it before attempting validation.
+
 ## When to use
 
 - After curating or expanding a resource page.

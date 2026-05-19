@@ -7,6 +7,12 @@ description: Use when curating or expanding a KG-Registry resource page. Applies
 
 Curate a single KG-Registry resource page end to end.
 
+## Prerequisite
+
+- Run this skill only from a local clone of the KG-Registry repository.
+- The workflow depends on reading and editing files under `resource/`, consulting local repository context, and running local validation commands.
+- If the repository is not cloned locally, stop and clone it before attempting curation.
+
 ## When to use
 
 - The user names a specific resource to curate.
