@@ -4,8 +4,8 @@ description: SPARQL endpoint for SAWGraph Hydrology KG
 id: hydrologykg.sparql
 name: SAWGraph Hydrology KG SPARQL
 original_source:
-  - source: hydrologykg
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/hydrologykg/sparql
+- relation_type: prov:hadPrimarySource
+  source: hydrologykg
+product_url: https://apps.okn.us/hydrologykg/sparql
 layout: product_detail
 ---

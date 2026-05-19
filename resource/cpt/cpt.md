@@ -2,14 +2,30 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
-description: Stub Resource page for cpt. This page was automatically generated because
-  it was referenced by other resources.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: Intellectual.PropertyServices@ama-assn.org
+  - contact_type: url
+    value: https://www.ama-assn.org/practice-management/cpt
+  label: American Medical Association
+description: Current Procedural Terminology (CPT) is a medical code set maintained
+  by the American Medical Association for describing procedures and services performed
+  by physicians and other healthcare professionals. It is widely used for clinical
+  documentation, billing, reporting, and interoperability across healthcare systems.
 domains:
-- stub
+- clinical
+- health
+fairsharing_id: FAIRsharing.wpxab1
+homepage_url: https://www.ama-assn.org/practice-management/cpt
 id: cpt
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 layout: resource_detail
-name: Cpt
+license:
+  id: https://www.ama-assn.org/about/terms-use
+  label: Custom (AMA Terms of Use)
+name: Current Procedural Terminology
 products:
 - category: Product
   description: cpt Nodes TSV
@@ -23,10 +39,10 @@ products:
     source: obo-db-ingest
   product_file_size: 4342
   product_url: https://w3id.org/biopragmatics/resources/cpt/cpt.tsv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Cpt
+# Current Procedural Terminology
 
-This is an automatically generated stub page for cpt. Please update with proper information.
+Current Procedural Terminology (CPT) is the American Medical Association's maintained
+code set for describing medical services and procedures. In KG-Registry it is represented
+as a source terminology that also has derived OBO-DB-Ingest products for downstream
+integration workflows.

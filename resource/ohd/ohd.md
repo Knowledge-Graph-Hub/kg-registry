@@ -17,9 +17,9 @@ description: The Oral Health and Disease Ontology is used for representing the d
   and treatment of dental maladies.
 domains:
 - biomedical
-homepage_url: https://purl.obolibrary.org/obo/ohd/home
+homepage_url: https://purl.obolibrary.org/obo/ohd
 id: ohd
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -28,10 +28,10 @@ license:
 name: Oral Health and Disease Ontology
 products:
 - category: OntologyProduct
-  description: Oral Health and Disease Ontology in OWL format
+  description: Oral Health and Disease Ontology
   format: owl
   id: ohd.owl
-  name: ohd.owl
+  name: Oral Health and Disease Ontology
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ohd
@@ -48,6 +48,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
     when accessing file'
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435

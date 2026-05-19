@@ -80,7 +80,6 @@ clao	Collembola Anatomy Ontology	Ontology	https://github.com/luis-gonzalez-m/Col
 climatemodelskg	Climate Models KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/climatepub4-kg/	resource/climatemodelskg/climatemodelskg.md
 clinical-data-kp	Clinical Data KP	KnowledgeGraph	https://ncats.nih.gov/research/research-activities/translator/projects	resource/clinical-data-kp/clinical-data-kp.md
 clinicalkg	Clinical Knowledge Graph (CKG)	KnowledgeGraph	https://ckg.readthedocs.io/	resource/clinicalkg/clinicalkg.md
-clinicaltrials	Clinicaltrials	DataSource		resource/clinicaltrials/clinicaltrials.md
 clo	Cell Line Ontology	Ontology	https://github.com/CLO-Ontology/CLO	resource/clo/clo.md
 clue	CLUE	DataSource	https://clue.io/	resource/clue/clue.md
 clyh	Clytia hemisphaerica Development and Anatomy Ontology	Ontology	https://github.com/EBISPOT/clyh_ontology	resource/clyh/clyh.md
@@ -98,16 +97,16 @@ coralkinome	CoralKinome	DataSource	https://www.coralkinome.org/	resource/coralki
 corum	CORUM	DataSource	https://mips.helmholtz-muenchen.de/corum/	resource/corum/corum.md
 cpathkg	C-Path Knowledge Graph	KnowledgeGraph		resource/cpathkg/cpathkg.md
 cpic	CPIC	Resource	https://cpicpgx.org/	resource/cpic/cpic.md
-cpt	Cpt	DataSource		resource/cpt/cpt.md
+cpt	Current Procedural Terminology	DataSource	https://www.ama-assn.org/practice-management/cpt	resource/cpt/cpt.md
 crd	Comparative RNA Database (CRD)	Aggregator		resource/crd/crd.md
-credit	Credit	DataSource		resource/credit/credit.md
+credit	Credit	Ontology	https://credit.niso.org/	resource/credit/credit.md
 creeds	CREEDS	DataSource		resource/creeds/creeds.md
 cro	Contributor Role Ontology	Ontology	https://github.com/data2health/contributor-role-ontology	resource/cro/cro.md
 cteno	Ctenophore Ontology	Ontology	https://github.com/obophenotype/ctenophore-ontology	resource/cteno/cteno.md
 ctkp	Clinical Trials KP	KnowledgeGraph	https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP	resource/ctkp/ctkp.md
 cto	CTO: Core Ontology of Clinical Trials	Ontology	https://github.com/ClinicalTrialOntology/CTO/	resource/cto/cto.md
 cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	resource/cvdo/cvdo.md
-cvx	Cvx	DataSource		resource/cvx/cvx.md
+cvx	Vaccine Administered Code Set (CVX)	DataSource	https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx	resource/cvx/cvx.md
 dbpedia	DBpedia	KnowledgeGraph	https://www.dbpedia.org/	resource/dbpedia/dbpedia.md
 dc	Dublin Core Metadata Terms	DataModel	https://www.dublincore.org/	resource/dc/dc.md
 dc_cl	Dendritic cell	Ontology	http://www.dukeontologygroup.org/Projects.html	resource/dc_cl/dc_cl.md
@@ -115,6 +114,7 @@ dct	Dublin Core Terms	Ontology	https://www.dublincore.org/specifications/dublin-
 ddanat	Dictyostelium discoideum anatomy	Ontology	http://dictybase.org/	resource/ddanat/ddanat.md
 ddpheno	Dictyostelium discoideum phenotype ontology	Ontology	http://dictybase.org/	resource/ddpheno/ddpheno.md
 dideo	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Ontology	https://github.com/DIDEO/DIDEO	resource/dideo/dideo.md
+digcfdekg	CFDE REVEAL Knowledge Graph	KnowledgeGraph	https://cfdeknowledge.org/	resource/digcfdekg/digcfdekg.md
 dinto	The Drug-Drug Interactions Ontology	Ontology	http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto	resource/dinto/dinto.md
 disbiome	Disbiome	DataSource	https://disbiome.ugent.be/	resource/disbiome/disbiome.md
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
@@ -368,11 +368,11 @@ ogg	The Ontology of Genes and Genomes	Ontology	https://bitbucket.org/hegroup/ogg
 ogi	Ontology for genetic interval	Ontology	https://code.google.com/p/ontology-for-genetic-interval/	resource/ogi/ogi.md
 ogms	Ontology for General Medical Science	Ontology	https://github.com/OGMS/ogms	resource/ogms/ogms.md
 ogsf	Ontology of Genetic Susceptibility Factor	Ontology	https://github.com/linikujp/OGSF	resource/ogsf/ogsf.md
-ohd	Oral Health and Disease Ontology	Ontology	https://purl.obolibrary.org/obo/ohd/home	resource/ohd/ohd.md
+ohd	Oral Health and Disease Ontology	Ontology	https://purl.obolibrary.org/obo/ohd	resource/ohd/ohd.md
 ohdsi	OHDSI	Aggregator	https://www.ohdsi.org/	resource/ohdsi/ohdsi.md
 ohmi	Ontology of Host-Microbiome Interactions	Ontology	https://github.com/ohmi-ontology/ohmi	resource/ohmi/ohmi.md
 ohpi	Ontology of Host Pathogen Interactions	Ontology	https://github.com/OHPI/ohpi	resource/ohpi/ohpi.md
-okn-void	OKN VoID graph descriptions	KnowledgeGraph	https://frink.renci.org/registry/kgs/okn-void/	resource/okn-void/okn-void.md
+okn-void	OKN VoID graph descriptions	KnowledgeGraph	https://registry.okn.us/registry/kgs/okn-void/	resource/okn-void/okn-void.md
 olatdv	Medaka Developmental Stages	Ontology	https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv	resource/olatdv/olatdv.md
 oma	OMA	DataSource	https://omabrowser.org/	resource/oma/oma.md
 omiabis	Ontologized MIABIS	Ontology	https://github.com/OMIABIS/omiabis-dev	resource/omiabis/omiabis.md

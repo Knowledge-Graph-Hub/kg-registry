@@ -185,7 +185,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: identifier-mappings
-  product_url: https://frink.apps.renci.org/identifier-mappings/sparql
+  product_url: https://apps.okn.us/identifier-mappings/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for ID Mappings
   id: identifier-mappings.tpf
@@ -193,7 +193,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: identifier-mappings
-  product_url: https://frink.apps.renci.org/ldf/identifier-mappings
+  product_url: https://apps.okn.us/ldf/identifier-mappings
 - category: Product
   description: Databus collection for the latest core DBpedia release used by the
     main SPARQL endpoint and linked data interface.

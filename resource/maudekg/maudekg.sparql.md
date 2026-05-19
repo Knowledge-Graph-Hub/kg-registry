@@ -4,8 +4,8 @@ description: SPARQL endpoint for FDA MAUDE Adverse Event Knowledge Graph
 id: maudekg.sparql
 name: FDA MAUDE Adverse Event Knowledge Graph SPARQL
 original_source:
-  - source: maudekg
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/maudekg/sparql
+- relation_type: prov:hadPrimarySource
+  source: maudekg
+product_url: https://apps.okn.us/maudekg/sparql
 layout: product_detail
 ---

@@ -4,8 +4,8 @@ description: SPARQL endpoint for NIAID Data Ecosystem KG
 id: nde.sparql
 name: NIAID Data Ecosystem KG SPARQL
 original_source:
-  - source: nde
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/nde/sparql
+- relation_type: prov:hadPrimarySource
+  source: nde
+product_url: https://apps.okn.us/nde/sparql
 layout: product_detail
 ---

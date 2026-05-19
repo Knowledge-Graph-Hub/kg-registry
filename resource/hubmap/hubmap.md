@@ -99,10 +99,12 @@ products:
     source: hubmap
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 401 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 401 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   id: hubmap.data_ingest_portal
@@ -342,7 +344,7 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
 publications:
 - authors:
-  - "Katy B\xF6rner"
+  - Katy Börner
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1

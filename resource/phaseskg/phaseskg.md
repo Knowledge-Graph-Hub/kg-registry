@@ -11,9 +11,25 @@ domains:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-04-02T00:00:00Z'
-last_modified_date: '2026-04-02T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 contacts: []
-products: []
+products:
+- id: phaseskg.sparql
+  name: PHASES KG SPARQL
+  description: SPARQL endpoint for PHASES KG
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/phaseskg/sparql
+  original_source:
+  - source: phaseskg
+    relation_type: prov:hadPrimarySource
+- id: phaseskg.tpf
+  name: PHASES KG TPF
+  description: Triple Pattern Fragments endpoint for PHASES KG
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/ldf/phaseskg
+  original_source:
+  - source: phaseskg
+    relation_type: prov:hadPrimarySource
 ---
 PHASES KG
 

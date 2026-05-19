@@ -4,8 +4,8 @@ description: Triple Pattern Fragments endpoint for Wildlife-KN
 id: wildlifekn.tpf
 name: Wildlife-KN TPF
 original_source:
-  - source: wildlifekn
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/ldf/wildlifekn
+- relation_type: prov:hadPrimarySource
+  source: wildlifekn
+product_url: https://apps.okn.us/ldf/wildlifekn
 layout: product_detail
 ---

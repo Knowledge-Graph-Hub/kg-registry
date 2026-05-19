@@ -4,8 +4,8 @@ description: SPARQL endpoint for SOC-KG
 id: sockg.sparql
 name: SOC-KG SPARQL
 original_source:
-  - source: sockg
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/sockg/sparql
+- relation_type: prov:hadPrimarySource
+  source: sockg
+product_url: https://apps.okn.us/sockg/sparql
 layout: product_detail
 ---

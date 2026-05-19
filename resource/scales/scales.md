@@ -2,50 +2,50 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-  - okn
+- okn
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: danny.e.oneal@gmail.com
-      - contact_type: github
-        value: danny-oneal
-    label: Danny O'Neal
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: scottgdaniel@gmail.com
-      - contact_type: github
-        value: scottgdaniel
-    label: Scott Daniel
-description: SCALES is an integrated justice platform to connect criminal justice data across data silos.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: danny.e.oneal@gmail.com
+  - contact_type: github
+    value: danny-oneal
+  label: Danny O'Neal
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: scottgdaniel@gmail.com
+  - contact_type: github
+    value: scottgdaniel
+  label: Scott Daniel
+description: SCALES is an integrated justice platform to connect criminal justice
+  data across data silos.
 domains:
-  - social determinants
+- social determinants
 homepage_url: https://scales-okn.org/
 id: scales
 layout: resource_detail
 name: SCALES
 products:
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for SCALES
-    id: scales.sparql
-    name: SCALES SPARQL
-    original_source:
-      - source: scales
-        relation_type: prov:hadPrimarySource
-    product_url: https://frink.apps.renci.org/scales/sparql
-  - id: scales.tpf
-    name: SCALES TPF
-    description: Triple Pattern Fragments endpoint for SCALES
-    category: ProgrammingInterface
-    product_url: https://frink.apps.renci.org/ldf/scales
-    original_source:
-      - source: scales
-        relation_type: prov:hadPrimarySource
+- category: ProgrammingInterface
+  description: SPARQL endpoint for SCALES
+  id: scales.sparql
+  name: SCALES SPARQL
+  original_source:
+  - source: scales
+    relation_type: prov:hadPrimarySource
+  product_url: https://apps.okn.us/scales/sparql
+- id: scales.tpf
+  name: SCALES TPF
+  description: Triple Pattern Fragments endpoint for SCALES
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/ldf/scales
+  original_source:
+  - source: scales
+    relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-03-30T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 ---
-
 SCALES
 
 ## Automated Evaluation

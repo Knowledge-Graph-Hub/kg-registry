@@ -1,37 +1,39 @@
 ---
 id: oard-kg
 name: Open Annotations for Rare Diseases (OARD) Knowledge Graph
-description: Clinical associations between rare diseases and phenotypes derived from electronic health records
+description: Clinical associations between rare diseases and phenotypes derived from
+  electronic health records
 activity_status: active
 homepage_url: https://github.com/WengLab-InformaticsResearch/oard-react
 products:
-  - id: oard-kg.sparql
-    name: Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL
-    description: SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge Graph
-    category: ProgrammingInterface
-    product_url: https://frink.apps.renci.org/oard-kg/sparql
-    original_source:
-      - source: oard-kg
-        relation_type: prov:hadPrimarySource
-  - id: oard-kg.tpf
-    name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
-    description: Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases (OARD) Knowledge Graph
-    category: ProgrammingInterface
-    product_url: https://frink.apps.renci.org/ldf/oard-kg
-    original_source:
-      - source: oard-kg
-        relation_type: prov:hadPrimarySource
+- id: oard-kg.sparql
+  name: Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL
+  description: SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge
+    Graph
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/oard-kg/sparql
+  original_source:
+  - source: oard-kg
+    relation_type: prov:hadPrimarySource
+- id: oard-kg.tpf
+  name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
+  description: Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases
+    (OARD) Knowledge Graph
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/ldf/oard-kg
+  original_source:
+  - source: oard-kg
+    relation_type: prov:hadPrimarySource
 collection:
-  - okn
+- okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-03-30T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 contacts: []
 domains:
-  - general
+- general
 ---
-
 Open Annotations for Rare Diseases (OARD) Knowledge Graph
 
 ## Description

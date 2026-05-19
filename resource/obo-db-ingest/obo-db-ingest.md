@@ -673,7 +673,7 @@ products:
     compression: gzip
     description: clinicaltrials OBO
     format: obo
-    id: obo-db-ingest.clinicaltrials.obo
+    id: obo-db-ingest.clinicaltrialsgov.obo
     license:
       id: https://clinicaltrials.gov/about-site/terms-conditions#availability
       label: Custom
@@ -681,13 +681,15 @@ products:
     product_file_size: 41571299
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz
     original_source:
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: clinicaltrials OWL
     format: owl
-    id: obo-db-ingest.clinicaltrials.owl
+    id: obo-db-ingest.clinicaltrialsgov.owl
     license:
       id: https://clinicaltrials.gov/about-site/terms-conditions#availability
       label: Custom
@@ -695,13 +697,15 @@ products:
     product_file_size: 40291602
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl.gz
     original_source:
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
     description: clinicaltrials OBO Graph JSON
     format: json
-    id: obo-db-ingest.clinicaltrials.json
+    id: obo-db-ingest.clinicaltrialsgov.json
     license:
       id: https://clinicaltrials.gov/about-site/terms-conditions#availability
       label: Custom
@@ -709,12 +713,14 @@ products:
     product_file_size: 40813205
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz
     original_source:
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: clinicaltrials SSSOM
     format: sssom
-    id: obo-db-ingest.clinicaltrials.sssom.tsv
+    id: obo-db-ingest.clinicaltrialsgov.sssom.tsv
     license:
       id: https://clinicaltrials.gov/about-site/terms-conditions#availability
       label: Custom
@@ -722,18 +728,20 @@ products:
     product_file_size: 6299996
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
     original_source:
+      - source: clinicaltrialsgov
+        relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
   - category: Product
     description: clinicaltrials Nodes TSV
     format: tsv
-    id: obo-db-ingest.clinicaltrials.tsv
+    id: obo-db-ingest.clinicaltrialsgov.tsv
     license:
       id: https://clinicaltrials.gov/about-site/terms-conditions#availability
       label: Custom
     name: clinicaltrials Nodes TSV
     original_source:
-      - source: clinicaltrials
+      - source: clinicaltrialsgov
         relation_type: prov:hadPrimarySource
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource

@@ -4,8 +4,8 @@ description: SPARQL endpoint for GEOCONNEX
 id: geoconnex.sparql
 name: GEOCONNEX SPARQL
 original_source:
-  - source: geoconnex
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/geoconnex/sparql
+- relation_type: prov:hadPrimarySource
+  source: geoconnex
+product_url: https://apps.okn.us/geoconnex/sparql
 layout: product_detail
 ---

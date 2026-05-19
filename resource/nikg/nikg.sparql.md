@@ -4,8 +4,8 @@ description: SPARQL endpoint for Neighborhood Information KG
 id: nikg.sparql
 name: Neighborhood Information KG SPARQL
 original_source:
-  - source: nikg
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/neighborhood-information-kg/sparql
+- relation_type: prov:hadPrimarySource
+  source: nikg
+product_url: https://apps.okn.us/nikg/sparql
 layout: product_detail
 ---
