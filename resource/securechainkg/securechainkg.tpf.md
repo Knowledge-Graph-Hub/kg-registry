@@ -4,8 +4,8 @@ description: Triple Pattern Fragments endpoint for SecureChain KG
 id: securechainkg.tpf
 name: SecureChain KG TPF
 original_source:
-  - source: securechainkg
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/ldf/securechainkg
+- relation_type: prov:hadPrimarySource
+  source: securechainkg
+product_url: https://apps.okn.us/ldf/securechainkg
 layout: product_detail
 ---

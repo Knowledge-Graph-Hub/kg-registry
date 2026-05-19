@@ -131,10 +131,10 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-04: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
   format: http
@@ -151,9 +151,9 @@ products:
     accessing file
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

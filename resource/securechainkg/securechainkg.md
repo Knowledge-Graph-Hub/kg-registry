@@ -2,41 +2,41 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-  - okn
+- okn
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: tianyi@purdue.edu
-    label: Tianyi Zhang
-description: SecureChain is a knowledge graph for resilient, trustworthy, and secure software supply chains.
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: tianyi@purdue.edu
+  label: Tianyi Zhang
+description: SecureChain is a knowledge graph for resilient, trustworthy, and secure
+  software supply chains.
 domains:
-  - information technology
+- information technology
 homepage_url: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
 id: securechainkg
 layout: resource_detail
 name: SecureChain KG
 products:
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for SecureChain KG
-    id: securechainkg.sparql
-    name: SecureChain KG SPARQL
-    original_source:
-      - source: securechainkg
-        relation_type: prov:hadPrimarySource
-    product_url: https://frink.apps.renci.org/securechainkg/sparql
-  - id: securechainkg.tpf
-    name: SecureChain KG TPF
-    description: Triple Pattern Fragments endpoint for SecureChain KG
-    category: ProgrammingInterface
-    product_url: https://frink.apps.renci.org/ldf/securechainkg
-    original_source:
-      - source: securechainkg
-        relation_type: prov:hadPrimarySource
+- category: ProgrammingInterface
+  description: SPARQL endpoint for SecureChain KG
+  id: securechainkg.sparql
+  name: SecureChain KG SPARQL
+  original_source:
+  - source: securechainkg
+    relation_type: prov:hadPrimarySource
+  product_url: https://apps.okn.us/securechainkg/sparql
+- id: securechainkg.tpf
+  name: SecureChain KG TPF
+  description: Triple Pattern Fragments endpoint for SecureChain KG
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/ldf/securechainkg
+  original_source:
+  - source: securechainkg
+    relation_type: prov:hadPrimarySource
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-03-30T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 ---
-
 SecureChain KG
 
 ## Automated Evaluation

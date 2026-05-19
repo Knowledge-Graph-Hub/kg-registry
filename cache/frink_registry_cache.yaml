@@ -10,11 +10,11 @@
     neo4j-conversion-config-path: https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/neo4j-conf/biohealth.yaml
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333740
   shortname: biohealth
-  sparql: https://frink.apps.renci.org/biohealth/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
+  sparql: https://apps.okn.us/biohealth/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: Bio-Health KG
-  tpf: https://frink.apps.renci.org/ldf/biohealth
+  tpf: https://apps.okn.us/ldf/biohealth
 - contact:
     email: apadilla@lincolninst.edu
     github: adplincinst
@@ -28,11 +28,11 @@
   funding: null
   homepage: https://docs.geoconnex.us/about/intro
   shortname: geoconnex
-  sparql: https://frink.apps.renci.org/geoconnex/sparql
-  stats: https://frink.renci.org/kg-stats/geoconnex
+  sparql: https://apps.okn.us/geoconnex/sparql
+  stats: https://registry.okn.us/kg-stats/geoconnex
   template: overrides/kg.html
   title: GEOCONNEX
-  tpf: https://frink.apps.renci.org/ldf/geoconnex
+  tpf: https://apps.okn.us/ldf/geoconnex
 - contact:
     email: balhoff@renci.org
     github: balhoff
@@ -43,12 +43,12 @@
     documentation-path: okn-void
     lakefs-repo: okn-void
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
-  homepage: https://frink.renci.org/registry/kgs/okn-void/
+  homepage: https://registry.okn.us/registry/kgs/okn-void/
   shortname: okn-void
-  sparql: https://frink.apps.renci.org/okn-void/sparql
+  sparql: https://apps.okn.us/okn-void/sparql
   template: overrides/kg.html
   title: OKN VoID graph descriptions
-  tpf: https://frink.apps.renci.org/ldf/okn-void
+  tpf: https://apps.okn.us/ldf/okn-void
 - contact:
     email: balhoff@renci.org
     github: balhoff
@@ -59,10 +59,10 @@
     lakefs-repo: ubergraph
   homepage: https://github.com/INCATools/ubergraph/
   shortname: ubergraph
-  sparql: https://frink.apps.renci.org/ubergraph/sparql
+  sparql: https://apps.okn.us/ubergraph/sparql
   template: overrides/kg.html
   title: Ubergraph
-  tpf: https://frink.apps.renci.org/ldf/ubergraph
+  tpf: https://apps.okn.us/ldf/ubergraph
 - contact:
     email: balhoff@renci.org
     github: balhoff
@@ -91,11 +91,11 @@
   funding: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://research.bioinformatics.udel.edu/ProKN/
   shortname: prokn
-  sparql: https://frink.apps.renci.org/prokn/sparql
-  stats: https://frink.renci.org/kg-stats/prokn
+  sparql: https://apps.okn.us/prokn/sparql
+  stats: https://registry.okn.us/kg-stats/prokn
   template: overrides/kg.html
   title: Protein Knowledge Network
-  tpf: https://frink.apps.renci.org/ldf/prokn
+  tpf: https://apps.okn.us/ldf/prokn
 - contact:
     email: cli@uta.edu
     github: idirlab
@@ -108,11 +108,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333834
   homepage: https://idir.sockg.org/
   shortname: sockg
-  sparql: https://frink.apps.renci.org/sockg/sparql
-  stats: https://frink.renci.org/kg-stats/soc-kg
+  sparql: https://apps.okn.us/sockg/sparql
+  stats: https://registry.okn.us/kg-stats/soc-kg
   template: overrides/kg.html
   title: SOC-KG
-  tpf: https://frink.apps.renci.org/ldf/sockg
+  tpf: https://apps.okn.us/ldf/sockg
 - contact:
     email: climatepub4kg@tuprd.onmicrosoft.com
     github: aayushacharya
@@ -124,11 +124,11 @@
     lakefs-repo: climatepub4-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333789
   shortname: climatemodelskg
-  sparql: https://frink.apps.renci.org/climatemodelskg/sparql
-  stats: https://frink.renci.org/kg-stats/climate-kg
+  sparql: https://apps.okn.us/climatemodelskg/sparql
+  stats: https://registry.okn.us/kg-stats/climate-kg
   template: overrides/kg.html
   title: Climate Models KG
-  tpf: https://frink.apps.renci.org/ldf/climatemodelskg
+  tpf: https://apps.okn.us/ldf/climatemodelskg
 - contact:
     email: farhad.ameri@asu.edu
     github: fameri
@@ -142,11 +142,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333801
   homepage: https://projects.engineering.asu.edu/sudokn/
   shortname: sudokn
-  sparql: https://frink.apps.renci.org/sudokn/sparql
-  stats: https://frink.renci.org/kg-stats/sudokn
+  sparql: https://apps.okn.us/sudokn/sparql
+  stats: https://registry.okn.us/kg-stats/sudokn
   template: overrides/kg.html
   title: SUDOKN
-  tpf: https://frink.apps.renci.org/ldf/sudokn
+  tpf: https://apps.okn.us/ldf/sudokn
 - contact:
     email: jeetvora@gwu.edu
     github: jeet-vora
@@ -160,11 +160,11 @@
   funding: https://www.nsf.gov/awardsearch/search-results?queryText=2535091
   homepage: https://biomarkerkb.org/home/
   shortname: biomarkerkg
-  sparql: https://frink.apps.renci.org/biomarkerkg/sparql
-  stats: https://frink.renci.org/kg-stats/biomarkerkg
+  sparql: https://apps.okn.us/biomarkerkg/sparql
+  stats: https://registry.okn.us/kg-stats/biomarkerkg
   template: overrides/kg.html
   title: BiomarkerKB KG
-  tpf: https://frink.apps.renci.org/ldf/biomarkerkg
+  tpf: https://apps.okn.us/ldf/biomarkerkg
 - contact:
     email: jiaqi.gong@ua.edu
     github: SAIL-UA
@@ -176,11 +176,11 @@
     lakefs-repo: rural-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333836
   shortname: ruralkg
-  sparql: https://frink.apps.renci.org/ruralkg/sparql
-  stats: https://frink.renci.org/kg-stats/rural-kg
+  sparql: https://apps.okn.us/ruralkg/sparql
+  stats: https://registry.okn.us/kg-stats/rural-kg
   template: overrides/kg.html
   title: Rural Resilience KG
-  tpf: https://frink.apps.renci.org/ldf/ruralkg
+  tpf: https://apps.okn.us/ldf/ruralkg
 - contact:
     email: lew.lefton@gmail.com
     github: ''
@@ -191,10 +191,10 @@
     lakefs-repo: sem-open-alex-kg
   homepage: https://semopenalex.org/
   shortname: semopenalex
-  sparql: https://frink.apps.renci.org/semopenalex/sparql
+  sparql: https://apps.okn.us/semopenalex/sparql
   template: overrides/kg.html
   title: SemOpenAlex
-  tpf: https://frink.apps.renci.org/ldf/semopenalex
+  tpf: https://apps.okn.us/ldf/semopenalex
 - contact:
     email: lisa@renci.org
     github: lstillwe
@@ -214,11 +214,11 @@
   funding: null
   homepage: https://disc.gsfc.nasa.gov
   shortname: nasa-gesdisc-kg
-  sparql: https://frink.apps.renci.org/nasa-gesdisc-kg/sparql
-  stats: https://frink.renci.org/kg-stats/nasa-gesdisc-kg
+  sparql: https://apps.okn.us/nasa-gesdisc-kg/sparql
+  stats: https://registry.okn.us/kg-stats/nasa-gesdisc-kg
   template: overrides/kg.html
   title: NASA-GESDISC-KG
-  tpf: https://frink.apps.renci.org/ldf/nasa-gesdisc-kg
+  tpf: https://apps.okn.us/ldf/nasa-gesdisc-kg
 - contact:
     email: morshedm@renci.org
     github: mahir256
@@ -230,11 +230,11 @@
     lakefs-repo: identifier-mappings
   homepage: https://www.wikidata.org/
   shortname: identifier-mappings
-  sparql: https://frink.apps.renci.org/identifier-mappings/sparql
-  stats: https://frink.renci.org/kg-stats/identifier-mappings
+  sparql: https://apps.okn.us/identifier-mappings/sparql
+  stats: https://registry.okn.us/kg-stats/identifier-mappings
   template: overrides/kg.html
   title: ID Mappings
-  tpf: https://frink.apps.renci.org/ldf/identifier-mappings
+  tpf: https://apps.okn.us/ldf/identifier-mappings
 - contact:
     email: sergio.baranzini@ucsf.edu
     github: baranzini-lab
@@ -249,11 +249,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://github.com/BaranziniLab/spoke_genelab
   shortname: spoke-genelab
-  sparql: https://frink.apps.renci.org/spoke-genelab/sparql
-  stats: https://frink.renci.org/kg-stats/spoke-genelab
+  sparql: https://apps.okn.us/spoke-genelab/sparql
+  stats: https://registry.okn.us/kg-stats/spoke-genelab
   template: overrides/kg.html
   title: SPOKE GeneLab
-  tpf: https://frink.apps.renci.org/ldf/spoke-genelab
+  tpf: https://apps.okn.us/ldf/spoke-genelab
 - contact:
     email: sergio.baranzini@ucsf.edu
     github: baranzini-lab
@@ -268,11 +268,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333819
   homepage: https://spoke.ucsf.edu
   shortname: spoke-okn
-  sparql: https://frink.apps.renci.org/spoke-okn/sparql
-  stats: https://frink.renci.org/kg-stats/spoke-okn
+  sparql: https://apps.okn.us/spoke-okn/sparql
+  stats: https://registry.okn.us/kg-stats/spoke-okn
   template: overrides/kg.html
   title: SPOKE-OKN
-  tpf: https://frink.apps.renci.org/ldf/spoke-okn
+  tpf: https://apps.okn.us/ldf/spoke-okn
 - contact:
     email: support@ndexbio.org
     github: ''
@@ -285,11 +285,11 @@
     lakefs-repo: ncipidkg
   homepage: https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf
   shortname: ncipidkg
-  sparql: https://frink.apps.renci.org/ncipidkg/sparql
-  stats: https://frink.renci.org/kg-stats/ncipidkg
+  sparql: https://apps.okn.us/ncipidkg/sparql
+  stats: https://registry.okn.us/kg-stats/ncipidkg
   template: overrides/kg.html
   title: NCI-PID 2.0 KG
-  tpf: https://frink.apps.renci.org/ldf/ncipidkg
+  tpf: https://apps.okn.us/ldf/ncipidkg
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -302,11 +302,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/aopwikirdf-kg
   shortname: biobricks-aopwiki
-  sparql: https://frink.apps.renci.org/biobricks-aopwiki/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-aopwiki-kg
+  sparql: https://apps.okn.us/biobricks-aopwiki/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-aopwiki-kg
   template: overrides/kg.html
   title: BioBricks AOP-Wiki
-  tpf: https://frink.apps.renci.org/ldf/biobricks-aopwiki
+  tpf: https://apps.okn.us/ldf/biobricks-aopwiki
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -319,11 +319,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
   shortname: biobricks-ice
-  sparql: https://frink.apps.renci.org/biobricks-ice/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-ice-kg
+  sparql: https://apps.okn.us/biobricks-ice/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-ice-kg
   template: overrides/kg.html
   title: BioBricks ICE
-  tpf: https://frink.apps.renci.org/ldf/biobricks-ice
+  tpf: https://apps.okn.us/ldf/biobricks-ice
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -336,11 +336,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/mesh-kg
   shortname: biobricks-mesh
-  sparql: https://frink.apps.renci.org/biobricks-mesh/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-mesh-kg
+  sparql: https://apps.okn.us/biobricks-mesh/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-mesh-kg
   template: overrides/kg.html
   title: BioBricks MeSH
-  tpf: https://frink.apps.renci.org/ldf/biobricks-mesh
+  tpf: https://apps.okn.us/ldf/biobricks-mesh
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -353,11 +353,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/pubchem-annotations-kg
   shortname: biobricks-pubchem-annotations
-  sparql: https://frink.apps.renci.org/biobricks-pubchem-annotations/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-pubchem-annotations-kg
+  sparql: https://apps.okn.us/biobricks-pubchem-annotations/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-pubchem-annotations-kg
   template: overrides/kg.html
   title: BioBricks PubChem Annotations
-  tpf: https://frink.apps.renci.org/ldf/biobricks-pubchem-annotations
+  tpf: https://apps.okn.us/ldf/biobricks-pubchem-annotations
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -370,11 +370,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
   shortname: biobricks-tox21
-  sparql: https://frink.apps.renci.org/biobricks-tox21/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-tox21-kg
+  sparql: https://apps.okn.us/biobricks-tox21/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-tox21-kg
   template: overrides/kg.html
   title: BioBricks Tox21
-  tpf: https://frink.apps.renci.org/ldf/biobricks-tox21
+  tpf: https://apps.okn.us/ldf/biobricks-tox21
 - contact:
     email: tom@insilica.co
     github: tomlue
@@ -387,11 +387,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333728
   homepage: https://github.com/biobricks-ai/biobricks-okg
   shortname: biobricks-toxcast
-  sparql: https://frink.apps.renci.org/biobricks-toxcast/sparql
-  stats: https://frink.renci.org/kg-stats/biobricks-toxcast-kg
+  sparql: https://apps.okn.us/biobricks-toxcast/sparql
+  stats: https://registry.okn.us/kg-stats/biobricks-toxcast-kg
   template: overrides/kg.html
   title: BioBricks ToxCast
-  tpf: https://frink.apps.renci.org/ldf/biobricks-toxcast
+  tpf: https://apps.okn.us/ldf/biobricks-toxcast
 - contact:
     email: xzhang33@nd.edu
     github: XiangqiWang77
@@ -405,10 +405,10 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333795
   homepage: https://sites.nd.edu/kn-wildlife/
   shortname: wildlifekn
-  sparql: https://frink.apps.renci.org/wildlifekn/sparql
+  sparql: https://apps.okn.us/wildlifekn/sparql
   template: overrides/kg.html
   title: Wildlife-KN
-  tpf: https://frink.apps.renci.org/ldf/wildlifekn
+  tpf: https://apps.okn.us/ldf/wildlifekn
 - contact:
     email: yeghialt@ucmail.uc.edu
     github: ''
@@ -423,11 +423,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333726
   homepage: https://ufokn.com
   shortname: ufokn
-  sparql: https://frink.apps.renci.org/ufokn/sparql
-  stats: https://frink.renci.org/kg-stats/wen-kg
+  sparql: https://apps.okn.us/ufokn/sparql
+  stats: https://registry.okn.us/kg-stats/wen-kg
   template: overrides/kg.html
   title: UF-OKN
-  tpf: https://frink.apps.renci.org/ldf/ufokn
+  tpf: https://apps.okn.us/ldf/ufokn
 - contact:
     email: yuzhou.chen@temple.edu
     github: yuzhouguangc
@@ -440,11 +440,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333703
   homepage: https://dreamkg.com/
   shortname: dreamkg
-  sparql: https://frink.apps.renci.org/dreamkg/sparql
-  stats: https://frink.renci.org/kg-stats/dream-kg
+  sparql: https://apps.okn.us/dreamkg/sparql
+  stats: https://registry.okn.us/kg-stats/dream-kg
   template: overrides/kg.html
   title: DREAM-KG
-  tpf: https://frink.apps.renci.org/ldf/dreamkg
+  tpf: https://apps.okn.us/ldf/dreamkg
 - contacts:
   - email: Erik.Wright@bcm.edu
     github: WrightLabScience
@@ -456,11 +456,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://data.niaid.nih.gov/
   shortname: evoweb
-  sparql: https://frink.apps.renci.org/evoweb/sparql
-  stats: https://frink.renci.org/kg-stats/evoweb
+  sparql: https://apps.okn.us/evoweb/sparql
+  stats: https://registry.okn.us/kg-stats/evoweb
   template: overrides/kg.html
   title: EvoWeb
-  tpf: https://frink.apps.renci.org/ldf/evoweb
+  tpf: https://apps.okn.us/ldf/evoweb
 - contacts:
   - email: asu@scripps.edu
     github: andrewsu
@@ -475,11 +475,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://www.ebi.ac.uk/gxa/home
   shortname: gene-expression-atlas-okn
-  sparql: https://frink.apps.renci.org/gene-expression-atlas-okn/sparql
-  stats: https://frink.renci.org/kg-stats/gene-expression-atlas-okn
+  sparql: https://apps.okn.us/gene-expression-atlas-okn/sparql
+  stats: https://registry.okn.us/kg-stats/gene-expression-atlas-okn
   template: overrides/kg.html
   title: Gene Expression Atlas
-  tpf: https://frink.apps.renci.org/ldf/gene-expression-atlas-okn
+  tpf: https://apps.okn.us/ldf/gene-expression-atlas-okn
 - contacts:
   - email: asu@scripps.edu
     github: andrewsu
@@ -498,11 +498,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
   homepage: https://data.niaid.nih.gov/
   shortname: nde
-  sparql: https://frink.apps.renci.org/nde/sparql
-  stats: https://frink.renci.org/kg-stats/nde
+  sparql: https://apps.okn.us/nde/sparql
+  stats: https://registry.okn.us/kg-stats/nde
   template: overrides/kg.html
   title: NIAID Data Ecosystem KG
-  tpf: https://frink.apps.renci.org/ldf/nde
+  tpf: https://apps.okn.us/ldf/nde
 - contacts:
   - email: ct2865@cumc.columbia.edu
     github: CaseyTa
@@ -518,10 +518,10 @@
   funding: Subaward of https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2535091
   homepage: https://github.com/WengLab-InformaticsResearch/oard-react
   shortname: oard-kg
-  sparql: https://frink.apps.renci.org/oard-kg/sparql
+  sparql: https://apps.okn.us/oard-kg/sparql
   template: overrides/kg.html
   title: Open Annotations for Rare Diseases (OARD) Knowledge Graph
-  tpf: https://frink.apps.renci.org/ldf/oard-kg
+  tpf: https://apps.okn.us/ldf/oard-kg
 - contacts:
   - email: danny.e.oneal@gmail.com
     github: danny-oneal
@@ -537,11 +537,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333803
   homepage: https://scales-okn.org/
   shortname: scales
-  sparql: https://frink.apps.renci.org/scales/sparql
-  stats: https://frink.renci.org/kg-stats/scales-kg
+  sparql: https://apps.okn.us/scales/sparql
+  stats: https://registry.okn.us/kg-stats/scales-kg
   template: overrides/kg.html
   title: SCALES
-  tpf: https://frink.apps.renci.org/ldf/scales
+  tpf: https://apps.okn.us/ldf/scales
 - contacts:
   - email: david.kedrowski@maine.edu
     github: dkedrowski
@@ -557,11 +557,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   shortname: hydrologykg
-  sparql: https://frink.apps.renci.org/hydrologykg/sparql
-  stats: https://frink.renci.org/kg-stats/hydrology-kg
+  sparql: https://apps.okn.us/hydrologykg/sparql
+  stats: https://registry.okn.us/kg-stats/hydrology-kg
   template: overrides/kg.html
   title: SAWGraph Hydrology KG
-  tpf: https://frink.apps.renci.org/ldf/hydrologykg
+  tpf: https://apps.okn.us/ldf/hydrologykg
 - contacts:
   - email: david.kedrowski@maine.edu
     github: dkedrowski
@@ -580,11 +580,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   shortname: spatialkg
-  sparql: https://frink.apps.renci.org/spatialkg/sparql
-  stats: https://frink.renci.org/kg-stats/spatial-kg
+  sparql: https://apps.okn.us/spatialkg/sparql
+  stats: https://registry.okn.us/kg-stats/spatial-kg
   template: overrides/kg.html
   title: SAWGraph Spatial KG
-  tpf: https://frink.apps.renci.org/ldf/spatialkg
+  tpf: https://apps.okn.us/ldf/spatialkg
 - contacts:
   - email: drjieliu@umich.edu
     github: jieliu6
@@ -597,11 +597,30 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333810
   homepage: https://pankbase.org/
   shortname: pankgraph
-  sparql: https://frink.apps.renci.org/pankgraph/sparql
-  stats: https://frink.renci.org/kg-stats/pankbase-kg
+  sparql: https://apps.okn.us/pankgraph/sparql
+  stats: https://registry.okn.us/kg-stats/pankbase-kg
   template: overrides/kg.html
   title: PanKgraph
-  tpf: https://frink.apps.renci.org/ldf/pankgraph
+  tpf: https://apps.okn.us/ldf/pankgraph
+- contacts:
+  - email: flannick@broadinstitute.org
+    github: flannick
+    label: Jason Flannick
+  - email: burtt@broadinstitute.org
+    github: ''
+    label: "No\xEBl Burtt"
+  description: The CFDE REVEAL Knowledge Graph is a statistically inferred genomic
+    evidence graph to integrate and disseminate knowledge within the Common Fund Data
+    Ecosystem (CFDE).
+  frink-options:
+    documentation-path: digcfdekg
+    lakefs-repo: digcfdekg
+  funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535091
+  homepage: https://cfdeknowledge.org/
+  shortname: digcfdekg
+  stats: https://registry.okn.us/kg-stats/digcfdekg
+  template: overrides/kg.html
+  title: CFDE REVEAL Knowledge Graph
 - contacts:
   - email: jinlian.wang@uth.tmc.edu
     github: wnagjl99
@@ -628,8 +647,10 @@
   funding: https://reporter.nih.gov/project-details/11184405
   homepage: https://healthyphases.org/
   shortname: phaseskg
+  sparql: https://apps.okn.us/phaseskg/sparql
   template: overrides/kg.html
   title: PHASES KG
+  tpf: https://apps.okn.us/ldf/phaseskg
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
@@ -646,11 +667,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   shortname: fiokg
-  sparql: https://frink.apps.renci.org/fiokg/sparql
-  stats: https://frink.renci.org/kg-stats/fio-kg
+  sparql: https://apps.okn.us/fiokg/sparql
+  stats: https://registry.okn.us/kg-stats/fio-kg
   template: overrides/kg.html
   title: SAWGraph FRS KG
-  tpf: https://frink.apps.renci.org/ldf/fiokg
+  tpf: https://apps.okn.us/ldf/fiokg
 - contacts:
   - email: katrina.schweikert@maine.edu
     github: kschweikert
@@ -668,11 +689,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333782
   homepage: https://sawgraph.github.io/
   shortname: sawgraph
-  sparql: https://frink.apps.renci.org/sawgraph/sparql
-  stats: https://frink.renci.org/kg-stats/sawgraph
+  sparql: https://apps.okn.us/sawgraph/sparql
+  stats: https://registry.okn.us/kg-stats/sawgraph
   template: overrides/kg.html
   title: SAWGraph PFAS KG
-  tpf: https://frink.apps.renci.org/ldf/sawgraph
+  tpf: https://apps.okn.us/ldf/sawgraph
 - contacts:
   - email: psingh37@pride.hofstra.edu
     github: Prabhadeus
@@ -684,11 +705,11 @@
     lakefs-repo: maude-kg
   homepage: https://github.com/Prabhadeus/Proto-OKN
   shortname: maudekg
-  sparql: https://frink.apps.renci.org/maudekg/sparql
-  stats: https://frink.renci.org/kg-stats/maudekg
+  sparql: https://apps.okn.us/maudekg/sparql
+  stats: https://registry.okn.us/kg-stats/maudekg
   template: overrides/kg.html
   title: FDA MAUDE Adverse Event Knowledge Graph
-  tpf: https://frink.apps.renci.org/ldf/maudekg
+  tpf: https://apps.okn.us/ldf/maudekg
 - contacts:
   - email: tianyi@purdue.edu
     github: tianyi-zhang
@@ -704,11 +725,11 @@
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333736
   homepage: https://purdue-hcss.github.io/nsf-software-supply-chain_security/
   shortname: securechainkg
-  sparql: https://frink.apps.renci.org/securechainkg/sparql
-  stats: https://frink.renci.org/kg-stats/secure-chain-kg
+  sparql: https://apps.okn.us/securechainkg/sparql
+  stats: https://registry.okn.us/kg-stats/secure-chain-kg
   template: overrides/kg.html
   title: SecureChain KG
-  tpf: https://frink.apps.renci.org/ldf/securechainkg
+  tpf: https://apps.okn.us/ldf/securechainkg
 - contacts:
   - email: wenc056@ucsd.edu
     github: John-Steve-C
@@ -723,8 +744,8 @@
     lakefs-repo: neighborhood-information-kg
   funding: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2333790
   shortname: nikg
-  sparql: https://frink.apps.renci.org/neighborhood-information-kg/sparql
-  stats: https://frink.renci.org/kg-stats/nikg
+  sparql: https://apps.okn.us/nikg/sparql
+  stats: https://registry.okn.us/kg-stats/nikg
   template: overrides/kg.html
   title: Neighborhood Information KG
-  tpf: https://frink.apps.renci.org/ldf/neighborhood-information-kg
+  tpf: https://apps.okn.us/ldf/nikg

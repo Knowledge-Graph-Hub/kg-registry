@@ -161,7 +161,7 @@ kgr:adw a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "adw" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "Animal natural history and life history" ;
     skos:inScheme "biological systems" ;
     adms:status "Inactive" ;
@@ -214,13 +214,39 @@ kgr:aero a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <http://purl.obolibrary.org/obo/aero> .
 
+kgr:afcs a schema1:DataSource ;
+    rdfs:label "Alliance for Cellular Signaling" ;
+    dcterms:created "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Alliance for Cellular Signaling (AfCS) was a large-scale collaborative signaling biology project that generated and disseminated data about cellular signaling networks, including protein-protein interaction data from high-throughput screens in B lymphocytes and cardiac myocytes. AfCS also supported the UCSD-Nature Signaling Gateway Molecule Pages, a peer-reviewed database of mammalian signaling proteins with structured information about protein interactions, protein states, state transitions, and function. IntAct preserves an AFCS interaction dataset as part of its computationally maintained datasets." ;
+    dcterms:identifier "afcs" ;
+    dcterms:isReferencedBy <https://doi.org/10.1038/nature01304>,
+        <https://doi.org/10.1038/nature01307>,
+        <https://doi.org/10.1093/nar/gkm907> ;
+    dcterms:modified "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:afcs.intact.mitab,
+        kgr:afcs.molecule-pages,
+        kgr:intact.api,
+        kgr:intact.datasets,
+        kgr:intact.ftp.psi25,
+        kgr:intact.ftp.psi30,
+        kgr:intact.ftp.psimitab,
+        kgr:intact.ftp.psimitab.all ;
+    schema1:name "Alliance for Cellular Signaling" ;
+    skos:altLabel "AfCS" ;
+    skos:inScheme "biological systems",
+        "proteomics",
+        "systems biology" ;
+    adms:status "Inactive" ;
+    foaf:homepage <http://www.signaling-gateway.org/molecule> ;
+    foaf:maker kgr:university-of-california-san-diego .
+
 kgr:afpo a schema1:Ontology ;
     rdfs:label "African Population Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "AfPO is an ontology that can be used in the study of diverse populations across Africa. It brings together publicly available demographic, anthropological and genetic data relating to African people in a standardised and structured format. The AfPO can be employed to classify African study participants comprehensively in prospective research studies. It can also be used to classify past study participants by mapping them using a language or ethnicity identifier or synonyms." ;
     dcterms:identifier "afpo" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:afpo.json,
         kgr:afpo.obo,
         kgr:afpo.owl ;
@@ -350,16 +376,23 @@ kgr:aop-db a schema1:Aggregator ;
     rdfs:label "AOP-DB" ;
     dcterms:created "2025-06-24T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed integrative knowledgebase that connects chemicals and stressors to molecular initiating events, key events across biological organization levels, and adverse outcomes relevant to human health and ecological risk assessment. It harmonizes data from toxicology, high‑throughput screening, pathway, gene/protein, and phenotype resources to enable computational toxicology, mode-of-action analysis, and predictive risk prioritization." ;
+    dcterms:hasVersion "2" ;
     dcterms:identifier "aop-db" ;
+    dcterms:isReferencedBy <doi:10.1016/j.taap.2018.02.006>,
+        <doi:10.1038/s41597-021-00962-3> ;
     dcterms:license <https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db> ;
-    dcterms:modified "2025-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:aop-db.data,
         kgr:aop-db.manual,
-        kgr:aop-db.portal ;
+        kgr:aop-db.portal,
+        kgr:aop-db.sparql ;
     schema1:name "AOP-DB" ;
+    skos:inScheme "environment",
+        "pathways",
+        "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db> .
 
@@ -367,11 +400,13 @@ kgr:aop-wiki a schema1:DataSource ;
     rdfs:label "AOP-Wiki" ;
     dcterms:created "2025-09-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The AOP-Wiki is the primary collaborative authoring and curation interface for the Adverse Outcome Pathway Knowledge Base (AOP-KB). It enables the community to develop, review, browse, and export Adverse Outcome Pathways (AOPs) linking molecular initiating events through key events to adverse outcomes relevant to human and ecological risk assessment. Structured exports (XML and tabular subsets) support computational toxicology, ontology mapping, and integration into predictive assessment workflows." ;
+    dcterms:hasVersion "2.8" ;
     dcterms:identifier "aop-wiki" ;
     dcterms:license <https://aopwiki.org/> ;
-    dcterms:modified "2025-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
+        kgr:aop-db.sparql,
         kgr:aop-wiki.devhandbook,
         kgr:aop-wiki.dynamic-aop-xml,
         kgr:aop-wiki.ke-components,
@@ -379,8 +414,12 @@ kgr:aop-wiki a schema1:DataSource ;
         kgr:aop-wiki.ker,
         kgr:aop-wiki.nightly-xml,
         kgr:aop-wiki.portal,
-        kgr:aop-wiki.quarterly-xml ;
+        kgr:aop-wiki.quarterly-xml,
+        kgr:aop-wiki.sparql ;
     schema1:name "AOP-Wiki" ;
+    skos:inScheme "environment",
+        "pathways",
+        "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://aopwiki.org/> .
 
@@ -896,7 +935,7 @@ kgr:biobricks-aopwiki a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks AOP-Wiki is an open knowledge graph for Adverse Outcome Pathways from the AOP-Wiki." ;
     dcterms:identifier "biobricks-aopwiki" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-aopwiki.sparql,
         kgr:biobricks-aopwiki.tpf ;
     schema1:name "BioBricks AOP-Wiki" ;
@@ -911,7 +950,8 @@ kgr:biobricks-ice a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks ICE (Integrated Chemical Environment) is an open knowledge graph for cheminformatics and chemical safety data from EPA's CompTox database." ;
     dcterms:identifier "biobricks-ice" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-ice.sparql,
         kgr:biobricks-ice.tpf ;
     schema1:name "BioBricks ICE" ;
@@ -926,7 +966,7 @@ kgr:biobricks-mesh a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks MeSH is an open knowledge graph of Medical Subject Headings (MeSH) biomedical vocabulary." ;
     dcterms:identifier "biobricks-mesh" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-mesh.sparql,
         kgr:biobricks-mesh.tpf ;
     schema1:name "BioBricks MeSH" ;
@@ -941,7 +981,7 @@ kgr:biobricks-pubchem-annotations a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks PubChem Annotations is an open knowledge graph of chemical annotations from PubChem." ;
     dcterms:identifier "biobricks-pubchem-annotations" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-pubchem-annotations.sparql,
         kgr:biobricks-pubchem-annotations.tpf ;
     schema1:name "BioBricks PubChem Annotations" ;
@@ -955,7 +995,7 @@ kgr:biobricks-tox21 a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks Tox21 is an open knowledge graph for Tox21 toxicology screening data." ;
     dcterms:identifier "biobricks-tox21" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-tox21.sparql,
         kgr:biobricks-tox21.tpf ;
     schema1:name "BioBricks Tox21" ;
@@ -969,7 +1009,7 @@ kgr:biobricks-toxcast a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BioBricks ToxCast is an open knowledge graph for EPA ToxCast high-throughput screening data." ;
     dcterms:identifier "biobricks-toxcast" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biobricks-toxcast.sparql,
         kgr:biobricks-toxcast.tpf ;
     schema1:name "BioBricks ToxCast" ;
@@ -1080,7 +1120,7 @@ kgr:biohealth a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Bio-Health KG is a dynamically-updated open knowledge network for health, integrating biomedical insights with social determinants of health." ;
     dcterms:identifier "biohealth" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biohealth.sparql,
         kgr:biohealth.tpf ;
     schema1:name "Bio-Health KG" ;
@@ -1137,7 +1177,7 @@ kgr:biomarkerkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-05-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The BiomarkerKB knowledge graph is a structured network that connects biomarkers to diseases, drugs, biological entities, and evidence from the scientific literature." ;
     dcterms:identifier "biomarkerkg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:biomarkerkg.edges.anatomy,
         kgr:biomarkerkg.edges.compound,
         kgr:biomarkerkg.edges.condition,
@@ -2098,7 +2138,7 @@ kgr:climatemodelskg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Climate Models KG is a knowledge graph to support evaluation and development of climate models." ;
     dcterms:identifier "climatemodelskg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:climatemodelskg.sparql,
         kgr:climatemodelskg.tpf ;
     schema1:name "Climate Models KG" ;
@@ -2181,17 +2221,6 @@ kgr:clinicalkg a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://ckg.readthedocs.io/> .
 
-kgr:clinicaltrials a schema1:DataSource ;
-    rdfs:label "Clinicaltrials" ;
-    dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for clinicaltrials. This page was automatically generated because it was referenced by other resources." ;
-    dcterms:identifier "clinicaltrials" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:obo-db-ingest.clinicaltrials.tsv ;
-    schema1:name "Clinicaltrials" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
-
 kgr:clinicaltrialsgov a schema1:DataSource ;
     rdfs:label "ClinicalTrials.gov" ;
     dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
@@ -2211,6 +2240,11 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:disgenet.data,
         kgr:genecards.clinical.trials,
         kgr:indra.cogex.code,
+        kgr:obo-db-ingest.clinicaltrialsgov.json,
+        kgr:obo-db-ingest.clinicaltrialsgov.obo,
+        kgr:obo-db-ingest.clinicaltrialsgov.owl,
+        kgr:obo-db-ingest.clinicaltrialsgov.sssom.tsv,
+        kgr:obo-db-ingest.clinicaltrialsgov.tsv,
         kgr:repodb.full_dataset,
         kgr:spoke.graph ;
     schema1:identifier "clinicaltrials" ;
@@ -2622,7 +2656,8 @@ kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A Translator Knowledge Provider exploring connections hypotheses." ;
     dcterms:identifier "connections-hypothesis-kp" ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:connections-hypothesis-kp.code,
         kgr:connections-hypothesis-kp.smartapi ;
     schema1:name "Connections Hypothesis KP" ;
@@ -2780,15 +2815,19 @@ kgr:cpic a schema1:Resource ;
     foaf:homepage <https://cpicpgx.org/> .
 
 kgr:cpt a schema1:DataSource ;
-    rdfs:label "Cpt" ;
+    rdfs:label "Current Procedural Terminology" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for cpt. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "Current Procedural Terminology (CPT) is a medical code set maintained by the American Medical Association for describing procedures and services performed by physicians and other healthcare professionals. It is widely used for clinical documentation, billing, reporting, and interoperability across healthcare systems." ;
     dcterms:identifier "cpt" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.ama-assn.org/about/terms-use> ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.cpt.tsv ;
-    schema1:name "Cpt" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Current Procedural Terminology" ;
+    skos:inScheme "clinical",
+        "health" ;
+    skos:notation "FAIRsharing.wpxab1" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ama-assn.org/practice-management/cpt> .
 
 kgr:cqs a schema1:DataSource ;
     rdfs:label "Translator Curated Query Service" ;
@@ -2822,17 +2861,22 @@ kgr:crd a schema1:Aggregator ;
         "genomics" ;
     adms:status "unresponsive" .
 
-kgr:credit a schema1:DataSource ;
+kgr:credit a schema1:Ontology ;
     rdfs:label "Credit" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for credit. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "CRediT (Contributor Roles Taxonomy) is a controlled vocabulary of contributor roles used to describe how individuals contributed to research and scholarly outputs. It provides a standardized taxonomy for representing contributions such as conceptualization, software, data curation, and writing." ;
     dcterms:identifier "credit" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.credit.sssom.tsv,
         kgr:obo-db-ingest.credit.tsv ;
     schema1:name "Credit" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    skos:inScheme "general",
+        "information technology",
+        "investigations" ;
+    skos:notation "FAIRsharing.fe4816" ;
+    adms:status "Active" ;
+    foaf:homepage <https://credit.niso.org/> .
 
 kgr:creeds a schema1:DataSource ;
     rdfs:label "CREEDS" ;
@@ -2995,15 +3039,18 @@ kgr:cvdo a schema1:Ontology ;
     foaf:homepage <https://github.com/OpenLHS/CVDO> .
 
 kgr:cvx a schema1:DataSource ;
-    rdfs:label "Cvx" ;
+    rdfs:label "Vaccine Administered Code Set (CVX)" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for cvx. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "CVX is the vaccine administered code set maintained by the Centers for Disease Control and Prevention for Immunization Information Systems (IIS). It provides identifiers for vaccine products and historical vaccine administrations used in immunization records, exchange standards, and public health reporting." ;
     dcterms:identifier "cvx" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.cvx.tsv ;
-    schema1:name "Cvx" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Vaccine Administered Code Set (CVX)" ;
+    skos:inScheme "clinical",
+        "health",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx> .
 
 kgr:dailymed a schema1:DataSource ;
     rdfs:label "DailyMed" ;
@@ -3151,7 +3198,8 @@ kgr:dct a schema1:Ontology ;
     dcterms:created "2025-06-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Dublin Core Metadata Terms (DCT) is a vocabulary of standardized metadata elements for describing resources, providing interoperable metadata standards for resource discovery across digital libraries and information systems." ;
     dcterms:identifier "dct" ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "Dublin Core Terms" ;
@@ -3332,6 +3380,17 @@ kgr:dideo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/DIDEO/DIDEO> .
 
+kgr:digcfdekg a schema1:KnowledgeGraph ;
+    rdfs:label "CFDE REVEAL Knowledge Graph" ;
+    dcterms:created "2026-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem (CFDE)." ;
+    dcterms:identifier "digcfdekg" ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:name "CFDE REVEAL Knowledge Graph" ;
+    skos:inScheme "general" ;
+    adms:status "Active" ;
+    foaf:homepage <https://cfdeknowledge.org/> .
+
 kgr:dinto a schema1:Ontology ;
     rdfs:label "The Drug-Drug Interactions Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -3355,7 +3414,8 @@ kgr:dip a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1038/nmeth.1931>,
         <https://doi.org/10.1093/nar/30.1.303>,
         <https://doi.org/10.1093/nar/gkh086> ;
-    dcterms:modified "2025-11-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://dip.doe-mbi.ucla.edu/dip/Download.cgi> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dip.downloads,
         kgr:dip.search,
         kgr:irefindex.database,
@@ -3651,7 +3711,7 @@ kgr:dreamkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness With Explainable AI" ;
     dcterms:identifier "dreamkg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dreamkg.sparql,
         kgr:dreamkg.tpf ;
     schema1:name "DREAM-KG" ;
@@ -4195,13 +4255,33 @@ kgr:ehdaa2 a schema1:Ontology ;
     adms:status "Inactive" ;
     foaf:homepage <https://github.com/obophenotype/human-developmental-anatomy-ontology> .
 
+kgr:ekg a schema1:KnowledgeGraph ;
+    rdfs:label "eKG" ;
+    dcterms:created "2026-04-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "eKG is an epidemiological knowledge graph extracted from the World Health Organization Disease Outbreak News corpus using an ensemble of large language models and published through the European Commission Joint Research Centre Data Catalogue." ;
+    dcterms:identifier "ekg" ;
+    dcterms:isReferencedBy <doi:10.1038/s41597-025-05276-2> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-04-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ekg.browser,
+        kgr:ekg.csv,
+        kgr:ekg.rdf,
+        kgr:ekg.sparql,
+        kgr:ekg.ttl ;
+    schema1:name "eKG" ;
+    skos:inScheme "biomedical",
+        "health",
+        "public health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601> .
+
 kgr:emap a schema1:Ontology ;
     rdfs:label "Mouse gross anatomy and development, timed" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus)." ;
     dcterms:identifier "emap" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10088> ;
     schema1:hasPart kgr:emap.owl ;
     schema1:name "Mouse gross anatomy and development, timed" ;
@@ -4714,7 +4794,7 @@ kgr:evoweb a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)" ;
     dcterms:identifier "evoweb" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:evoweb.sparql,
         kgr:evoweb.tpf ;
     schema1:name "EvoWeb" ;
@@ -4946,7 +5026,7 @@ kgr:fbsp a schema1:Ontology ;
     dcterms:description "The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase." ;
     dcterms:identifier "fbsp" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:7227> ;
     schema1:hasPart kgr:fbsp.owl ;
     schema1:name "Fly taxonomy" ;
@@ -4997,7 +5077,7 @@ kgr:fiokg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The FRS (Facility Registry Service) KG is the part of the SAWGraph project that stores data about facilities from EPA's Facility Registry service (FRS) together with their NAICS industry classification and the spatial location." ;
     dcterms:identifier "fiokg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:fiokg.sparql,
         kgr:fiokg.tpf ;
     schema1:name "SAWGraph FRS KG" ;
@@ -5427,7 +5507,8 @@ kgr:gencc a schema1:DataSource ;
     dcterms:description "The Gene Curation Coalition (GenCC) is a global collaborative effort to harmonize gene-disease validity curation across multiple expert organizations and clinical testing laboratories. GenCC brings together leading resources including ClinGen, OMIM, Orphanet, DECIPHER, Genomics England PanelApp, and multiple clinical diagnostic laboratories to standardize terminology and share gene-disease validity assertions publicly. The coalition was formed in 2018 to address the lack of universal standards and terminologies for defining gene-disease relationships used in genomic medicine and research. Through a modified Delphi survey involving the international genetics community, GenCC established consensus terminology for grading gene-disease validity, including standardized terms such as Definitive, Strong, Moderate, Limited, Disputed Evidence, Refuted Evidence, No Known Disease Relationship, and Animal Model Only. The GenCC database provides curated gene-disease validity assertions with a focus on monogenic Mendelian diseases, including information on mode of inheritance, classification confidence level, supporting evidence, and links to detailed curations from member organizations." ;
     dcterms:identifier "gencc" ;
     dcterms:isReferencedBy <doi:10.1016/j.gim.2022.04.017> ;
-    dcterms:modified "2025-11-08T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:gencc.database,
         kgr:gencc.downloads,
@@ -5485,7 +5566,7 @@ kgr:gene-expression-atlas-okn a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home)." ;
     dcterms:identifier "gene-expression-atlas-okn" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:gene-expression-atlas-okn.sparql,
         kgr:gene-expression-atlas-okn.tpf ;
     schema1:name "Gene Expression Atlas" ;
@@ -5719,7 +5800,7 @@ kgr:geoconnex a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Geoconnex is an open, community-driven knowledge graph linking U.S. hydrologic features to enable seamless water data discovery, access, and collaborative monitoring." ;
     dcterms:identifier "geoconnex" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:geoconnex.sparql,
         kgr:geoconnex.tpf ;
     schema1:name "GEOCONNEX" ;
@@ -5925,7 +6006,8 @@ kgr:gnbr a schema1:KnowledgeGraph ;
     dcterms:description "The Global Network of Biomedical Relationships (GNBR) is a large-scale biomedical knowledge graph derived from literature. GNBR uses text mining of PubMed abstracts to extract typed relationships between genes, diseases and drugs/chemicals, organizing them into semantic themes suitable for link prediction and downstream applications such as drug repurposing. GNBR has been widely used as a text-derived KG resource and is available via GitHub and Zenodo." ;
     dcterms:identifier "gnbr" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/bty114> ;
-    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:gnbr.graph,
         kgr:pharmkg.graph ;
@@ -6060,9 +6142,10 @@ kgr:go-cam a schema1:DataModel ;
     dcterms:identifier "go-cam" ;
     dcterms:isReferencedBy <doi:10.1038/s41588-019-0500-1> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:go-cam.api,
         kgr:go-cam.browser,
+        kgr:go-cam.linkml-schema,
         kgr:go-cam.minerva,
         kgr:go-cam.model,
         kgr:go-cam.noctua,
@@ -6204,7 +6287,8 @@ kgr:gtdb a schema1:DataSource ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Stub Resource page for gtdb. This page was automatically generated because it was referenced by other resources." ;
     dcterms:identifier "gtdb" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.gtdb.tsv ;
     schema1:name "Gtdb" ;
     skos:inScheme "stub" ;
@@ -6217,7 +6301,8 @@ kgr:gtex a schema1:DataSource ;
     dcterms:identifier "gtex" ;
     dcterms:isReferencedBy <doi:10.1126/science.1262110>,
         <doi:10.1126/science.aaz1776> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.gtexportal.org/home/license> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:automat.gtex,
         kgr:bioteque.embeddings,
@@ -6630,7 +6715,8 @@ kgr:homologene a schema1:DataSource ;
     dcterms:created "2025-11-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "HomoloGene was NCBI's database of homologs (genes with common ancestry) from completely sequenced eukaryotic genomes. The database organized genes into homology groups representing putative orthologs and paralogs across multiple species. HomoloGene was retired in January 2024 and replaced by the NCBI Orthologs dataset, which is now accessible through NCBI Datasets and the Gene database. The last HomoloGene build (build 68) was produced in 2014 and is no longer aligned with current data in NCBI RefSeq and Gene. Historical data from build 68 remains available on FTP for archival purposes only." ;
     dcterms:identifier "homologene" ;
-    dcterms:modified "2025-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2759> ;
     schema1:hasPart kgr:homologene.data,
         kgr:homologene.ftp_archive,
@@ -6774,6 +6860,35 @@ kgr:hpa a schema1:Aggregator ;
         "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.proteinatlas.org/> .
+
+kgr:hpidb a schema1:DataSource ;
+    rdfs:label "Host-Pathogen Interaction Database" ;
+    dcterms:created "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Host-Pathogen Interaction Database (HPIDB) was a public resource for host-pathogen protein-protein interactions. HPIDB integrated experimentally verified interactions from public molecular interaction databases and targeted curation into a non-redundant resource for searching, downloading, visualizing, and inferring host-pathogen interaction networks, but its primary homepage was not accessible during curation on 2026-05-04." ;
+    dcterms:identifier "hpidb" ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/database/baw103>,
+        <https://doi.org/10.1186/1471-2105-11-S6-S16> ;
+    dcterms:modified "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:hpidb.mitab,
+        kgr:hpidb.portal,
+        kgr:intact.api,
+        kgr:intact.datasets,
+        kgr:intact.ftp.psi25,
+        kgr:intact.ftp.psi30,
+        kgr:intact.ftp.psimitab,
+        kgr:intact.ftp.psimitab.all ;
+    schema1:identifier "hpidb" ;
+    schema1:name "Host-Pathogen Interaction Database" ;
+    skos:altLabel "HPIDB",
+        "Host Pathogen Interaction Database" ;
+    skos:inScheme "biomedical",
+        "immunology",
+        "microbiology",
+        "proteomics" ;
+    skos:notation "FAIRsharing.fk0z49" ;
+    adms:status "unresponsive" ;
+    foaf:homepage <https://hpidb.igbb.msstate.edu/> ;
+    foaf:maker kgr:mississippi-state-university-college-of-veterinary-medicine .
 
 kgr:hprd a schema1:Aggregator ;
     rdfs:label "HPRD" ;
@@ -7011,7 +7126,7 @@ kgr:hydrologykg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Hydrology KG is the part of the SAWGraph project that describes streams, waterbodies and wells and their locations." ;
     dcterms:identifier "hydrologykg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:hydrologykg.sparql,
         kgr:hydrologykg.tpf ;
     schema1:name "SAWGraph Hydrology KG" ;
@@ -7090,7 +7205,8 @@ kgr:icd10cm a schema1:Ontology ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "ICD-10-CM (International Classification of Diseases, 10th Revision, Clinical Modification) is a clinical modification of the WHO's ICD-10 system, providing diagnostic codes used for billing, epidemiology, and health management in the United States, with greater specificity than the international version." ;
     dcterms:identifier "icd10cm" ;
-    dcterms:modified "2026-04-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.cdc.gov/other/agencymaterials.html> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:athena.mappings,
         kgr:athena.vocabularies,
@@ -7189,7 +7305,7 @@ kgr:identifier-mappings a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Mappings using standard RDF predicates between Wikidata entities and external identifiers represented as RDF IRIs" ;
     dcterms:identifier "identifier-mappings" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:identifier-mappings.sparql,
         kgr:identifier-mappings.tpf ;
     schema1:name "ID Mappings" ;
@@ -7203,7 +7319,8 @@ kgr:idisk a schema1:KnowledgeGraph ;
     dcterms:description "The integrated DIetary Supplements Knowledge base (iDISK) is a standardized knowledge base integrating dietary supplement information from multiple authoritative sources including ingredients, products, drug interactions, effectiveness, adverse effects, and therapeutic uses, represented according to established terminology principles with UMLS and MedDRA mappings." ;
     dcterms:identifier "idisk" ;
     dcterms:isReferencedBy <doi:10.1093/jamia/ocz216> ;
-    dcterms:modified "2025-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://conservancy.umn.edu/handle/11299/204783> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ibkh.graph ;
     schema1:identifier "idisk" ;
     schema1:name "integrated Dietary Supplement Knowledge Base" ;
@@ -7359,7 +7476,8 @@ kgr:innatedb a schema1:DataSource ;
     dcterms:description "InnateDB is a publicly available database of genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection, with over 18,780 manually curated interactions and integrated bioinformatics and visualization tools for systems-level analysis." ;
     dcterms:identifier "innatedb" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gks1147> ;
-    dcterms:modified "2025-11-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.innatedb.com/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2> ;
     schema1:hasPart kgr:innatedb.downloads,
         kgr:innatedb.portal ;
@@ -7410,15 +7528,19 @@ kgr:intact a schema1:Aggregator ;
     dcterms:created "2025-07-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "IntAct is an open, curated molecular interaction database maintained at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats along with curated datasets and documentation." ;
     dcterms:identifier "intact" ;
-    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
-    dcterms:modified "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:automat.intact,
+    dcterms:isReferencedBy <doi:10.1093/nar/gkab1006>,
+        <doi:10.1093/nar/gkr1088> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:afcs.intact.mitab,
+        kgr:automat.intact,
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:ckg.graph,
         kgr:clinicalkg.graph,
         kgr:epigraphdb.graph,
         kgr:genecards.protein.interactions,
+        kgr:intact.api,
         kgr:intact.datasets,
         kgr:intact.docs.user-guide,
         kgr:intact.ftp.psi25,
@@ -7449,6 +7571,9 @@ kgr:intact a schema1:Aggregator ;
         kgr:unibiomap.pred.full ;
     schema1:identifier "intact" ;
     schema1:name "IntAct" ;
+    doap:repository <https://github.com/intact-portal> ;
+    skos:altLabel "IMEx IntAct",
+        "IntAct Molecular Interaction Database" ;
     skos:inScheme "proteomics",
         "systems biology" ;
     adms:status "Active" ;
@@ -7783,7 +7908,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-04-10T19:38:54+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T18:36:44+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:kg-monarch.associations.all,
@@ -8176,7 +8301,8 @@ kgr:lncipedia a schema1:DataSource ;
     dcterms:isReferencedBy <PMID:23042674>,
         <PMID:25378313>,
         <PMID:30371849> ;
-    dcterms:modified "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.lncipedia.org/download> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:lncipedia.downloads,
         kgr:lncipedia.igv,
@@ -8391,7 +8517,7 @@ kgr:maudekg a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Knowledge graph constructed from FDA MAUDE adverse event reports using standardized FDA product codes." ;
     dcterms:identifier "maudekg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:maudekg.sparql,
         kgr:maudekg.tpf ;
     schema1:name "FDA MAUDE Adverse Event Knowledge Graph" ;
@@ -8992,7 +9118,13 @@ kgr:mint a schema1:Aggregator ;
         <PMID:22096227> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2025-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:irefindex.database,
+    schema1:hasPart kgr:intact.api,
+        kgr:intact.datasets,
+        kgr:intact.ftp.psi25,
+        kgr:intact.ftp.psi30,
+        kgr:intact.ftp.psimitab,
+        kgr:intact.ftp.psimitab.all,
+        kgr:irefindex.database,
         kgr:mint.advanced.search,
         kgr:mint.mitab.all,
         kgr:mint.mitab.human,
@@ -9643,7 +9775,7 @@ kgr:nasa-gesdisc-kg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NASA Knowledge Graph Dataset is an expansive graph-based dataset designed to integrate and interconnect information about satellite datasets, scientific publications, instruments, platforms, projects, data centers, and science keywords. This knowledge graph is particularly focused on datasets managed by NASA's Distributed Active Archive Centers (DAACs), which are NASA's data repositories responsible for archiving and distributing scientific data. In addition to NASA DAACs, the graph includes datasets from 184 data providers worldwide, including various government agencies and academic institutions." ;
     dcterms:identifier "nasa-gesdisc-kg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nasa-gesdisc-kg.sparql,
         kgr:nasa-gesdisc-kg.tpf ;
     schema1:name "NASA-GESDISC-KG" ;
@@ -9774,7 +9906,7 @@ kgr:ncipidkg a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database version 2.0 networks into RDF, capturing protein interactions, signaling pathways, and post-translational modifications enriched with INDRA evidence metadata." ;
     dcterms:identifier "ncipidkg" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ncipidkg.sparql,
         kgr:ncipidkg.tpf ;
     schema1:name "NCI-PID 2.0 KG" ;
@@ -9821,7 +9953,8 @@ kgr:ndcd a schema1:DataSource ;
     dcterms:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The FDA National Drug Code Directory is a comprehensive database maintained by the U.S. Food and Drug Administration containing information about finished drug products, unfinished drugs, and compounded drug products. Drug establishments are required to provide FDA with current lists of all drugs using unique three-segment National Drug Code (NDC) numbers. The directory includes prescription and over-the-counter drugs, approved and unapproved drugs, and repackaged and relabeled drugs. The database is updated daily and provides essential drug identification and regulatory information for healthcare professionals, researchers, and regulatory compliance." ;
     dcterms:identifier "ndcd" ;
-    dcterms:modified "2026-04-10T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.fda.gov/about-fda/about-website/website-policies> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:athena.vocabularies,
         kgr:ndcd.api,
@@ -9845,7 +9978,7 @@ kgr:nde a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The nde (NIAID Data Ecosystem) KG contains infectious and immune-mediated disease datasets. These include datasets from NIAID-funded repositories as well as globally-relevant infectious and immune-mediated disease (IID) repositories from NIH and beyond. The datasets include -omics data, clinical data, epidemiological data, pathogen-host interaction data, flow cytometry, and imaging." ;
     dcterms:identifier "nde" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:nde.sparql,
         kgr:nde.tpf ;
@@ -9968,7 +10101,7 @@ kgr:nikg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Neighborhood Information KG (NIKG) is a knowledge graph warehouse for neighborhood information." ;
     dcterms:identifier "nikg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:nikg.sparql,
         kgr:nikg.tpf ;
     schema1:name "Neighborhood Information KG" ;
@@ -9981,7 +10114,8 @@ kgr:nlm a schema1:DataSource ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Stub Resource page for nlm. This page was automatically generated because it was referenced by other resources." ;
     dcterms:identifier "nlm" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.nlm.tsv,
         kgr:publisher ;
     schema1:name "Nlm" ;
@@ -10138,8 +10272,10 @@ kgr:oae a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "A biomedical ontology in the domain of adverse events" ;
     dcterms:identifier "oae" ;
-    dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/25093068>,
+        <https://www.ncbi.nlm.nih.gov/pubmed/41526409> ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:oae.owl ;
     schema1:name "Ontology of Adverse Events" ;
     doap:repository <https://github.com/OAE-ontology/OAE> ;
@@ -10166,7 +10302,7 @@ kgr:oard-kg a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Clinical associations between rare diseases and phenotypes derived from electronic health records" ;
     dcterms:identifier "oard-kg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:oard-kg.sparql,
         kgr:oard-kg.tpf ;
     schema1:name "Open Annotations for Rare Diseases (OARD) Knowledge Graph" ;
@@ -10323,11 +10459,11 @@ kgr:obo-db-ingest a schema1:Aggregator ;
         kgr:obo-db-ingest.civic.gid.owl,
         kgr:obo-db-ingest.civic.gid.sssom.tsv,
         kgr:obo-db-ingest.civic.gid.tsv,
-        kgr:obo-db-ingest.clinicaltrials.json,
-        kgr:obo-db-ingest.clinicaltrials.obo,
-        kgr:obo-db-ingest.clinicaltrials.owl,
-        kgr:obo-db-ingest.clinicaltrials.sssom.tsv,
-        kgr:obo-db-ingest.clinicaltrials.tsv,
+        kgr:obo-db-ingest.clinicaltrialsgov.json,
+        kgr:obo-db-ingest.clinicaltrialsgov.obo,
+        kgr:obo-db-ingest.clinicaltrialsgov.owl,
+        kgr:obo-db-ingest.clinicaltrialsgov.sssom.tsv,
+        kgr:obo-db-ingest.clinicaltrialsgov.tsv,
         kgr:obo-db-ingest.complexportal.json,
         kgr:obo-db-ingest.complexportal.obo,
         kgr:obo-db-ingest.complexportal.owl,
@@ -10593,7 +10729,7 @@ kgr:obo_rel a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "obo_rel" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "OBO relationship types (legacy)" ;
     skos:inScheme "biological systems" ;
     adms:status "Inactive" ;
@@ -10693,14 +10829,14 @@ kgr:ohd a schema1:Ontology ;
     dcterms:identifier "ohd" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/32819435> ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ohd.dev.ohd.owl,
         kgr:ohd.owl ;
     schema1:name "Oral Health and Disease Ontology" ;
     doap:repository <https://github.com/oral-health-and-disease-ontologies/ohd-ontology> ;
     skos:inScheme "biomedical" ;
     adms:status "Active" ;
-    foaf:homepage <https://purl.obolibrary.org/obo/ohd/home> .
+    foaf:homepage <https://purl.obolibrary.org/obo/ohd> .
 
 kgr:ohmi a schema1:Ontology ;
     rdfs:label "Ontology of Host-Microbiome Interactions" ;
@@ -10755,13 +10891,13 @@ kgr:okn-void a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Collected VoID (Vocabulary of Interlinked Datasets) metadata for all OKN graphs" ;
     dcterms:identifier "okn-void" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:okn-void.sparql,
         kgr:okn-void.tpf ;
     schema1:name "OKN VoID graph descriptions" ;
     skos:inScheme "general" ;
     adms:status "Active" ;
-    foaf:homepage <https://frink.renci.org/registry/kgs/okn-void/> .
+    foaf:homepage <https://registry.okn.us/registry/kgs/okn-void/> .
 
 kgr:olatdv a schema1:Ontology ;
     rdfs:label "Medaka Developmental Stages" ;
@@ -11448,7 +11584,8 @@ kgr:oxo a schema1:Aggregator ;
     dcterms:created "2025-11-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OxO (Ontology Xref Service) is a cross-ontology mapping service developed by EMBL-EBI's Samples, Phenotypes and Ontologies Team (SPOT). The service provides mappings between terms from different ontologies, enabling users to search for equivalent or related terms across multiple ontological resources. OxO aggregates cross-references from ontologies loaded in the Ontology Lookup Service (OLS) and enriches these with manual mappings and inference-based relationships." ;
     dcterms:identifier "oxo" ;
-    dcterms:modified "2025-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:oxo.api,
         kgr:oxo.portal ;
     schema1:identifier "oxo" ;
@@ -11489,7 +11626,7 @@ kgr:pankgraph a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PanKgraph — PanKbase Knowledge Graph (NIDDK)" ;
     dcterms:identifier "pankgraph" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pankgraph.sparql,
         kgr:pankgraph.tpf ;
     schema1:name "PanKgraph" ;
@@ -11788,6 +11925,12 @@ kgr:pdbe a schema1:Aggregator ;
     dcterms:modified "2025-10-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.protein.structures,
         kgr:goa.pdb,
+        kgr:intact.api,
+        kgr:intact.datasets,
+        kgr:intact.ftp.psi25,
+        kgr:intact.ftp.psi30,
+        kgr:intact.ftp.psimitab,
+        kgr:intact.ftp.psimitab.all,
         kgr:pdbe.download-service,
         kgr:pdbe.kb-api,
         kgr:pdbe.kb-ftp,
@@ -12178,7 +12321,8 @@ kgr:pharmkg a schema1:KnowledgeGraph ;
     dcterms:description "PharmKG is a multi-relational, attributed biomedical knowledge graph benchmark that integrates curated databases and literature-derived relationships to link genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations across ~7,600–8,000 disambiguated entities (29 relation types), with domain-specific features for entities from multi-omics sources (e.g., gene expression, chemical structure, disease embeddings). It provides baselines for knowledge graph embedding and a neural network-based method, and supports downstream tasks such as drug repurposing and target identification." ;
     dcterms:identifier "pharmkg" ;
     dcterms:isReferencedBy <doi:10.1093/bib/bbaa344> ;
-    dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:pharmkg.graph ;
     schema1:name "PharmKG" ;
@@ -12225,7 +12369,9 @@ kgr:phaseskg a schema1:KnowledgeGraph ;
     dcterms:created "2026-04-02T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Knowledge graph Promoting Healthy Aging through Semantic Enrichment" ;
     dcterms:identifier "phaseskg" ;
-    dcterms:modified "2026-04-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:phaseskg.sparql,
+        kgr:phaseskg.tpf ;
     schema1:name "PHASES KG" ;
     skos:inScheme "general" ;
     adms:status "Active" ;
@@ -13738,7 +13884,7 @@ kgr:ruralkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Rural Resilience KG is a cross-domain knowledge graph to integrate health and justice for rural resilience." ;
     dcterms:identifier "ruralkg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ruralkg.sparql,
         kgr:ruralkg.tpf ;
     schema1:name "Rural Resilience KG" ;
@@ -13802,7 +13948,7 @@ kgr:sawgraph a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Safe Agricultural Products and Water Graph (SAWGraph) PFAS KG stores data on PFAS observations and releases, describing the samples, the geospatial features they were taken from, the sampled environmental media, the specific chemical substances and the measurement values observed." ;
     dcterms:identifier "sawgraph" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sawgraph.sparql,
         kgr:sawgraph.tpf ;
     schema1:name "SAWGraph PFAS KG" ;
@@ -13834,7 +13980,7 @@ kgr:scales a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SCALES is an integrated justice platform to connect criminal justice data across data silos." ;
     dcterms:identifier "scales" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:scales.sparql,
         kgr:scales.tpf ;
     schema1:name "SCALES" ;
@@ -13895,7 +14041,7 @@ kgr:securechainkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SecureChain is a knowledge graph for resilient, trustworthy, and secure software supply chains." ;
     dcterms:identifier "securechainkg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:securechainkg.sparql,
         kgr:securechainkg.tpf ;
     schema1:name "SecureChain KG" ;
@@ -13908,7 +14054,8 @@ kgr:semapv a schema1:Ontology ;
     dcterms:created "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Semantic Mapping Vocabulary (SEMAPV) is a vocabulary for describing the processes, entities, and agents involved in the curation of semantic mappings between ontologies and terminologies. SEMAPV is developed in conjunction with the Simple Standard for Sharing Ontology Mappings (SSSOM), providing detailed vocabulary to describe different kinds of matching processes (lexical, logical, etc.) as well as pre- and post-processing techniques employed in mapping workflows." ;
     dcterms:identifier "semapv" ;
-    dcterms:modified "2025-12-03T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:efo.obo,
         kgr:efo.owl ;
     schema1:name "Semantic Mapping Vocabulary" ;
@@ -13955,7 +14102,7 @@ kgr:semopenalex a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Comprehensive information on scientific publications and related entities." ;
     dcterms:identifier "semopenalex" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:semopenalex.sparql,
         kgr:semopenalex.tpf ;
     schema1:name "SemOpenAlex" ;
@@ -14529,7 +14676,7 @@ kgr:sockg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Soil Organic Carbon Knowledge Graph (SOCKG) enhances robust soil carbon modeling, which is crucial for voluntary carbon markets." ;
     dcterms:identifier "sockg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sockg.sparql,
         kgr:sockg.tpf ;
     schema1:name "SOC-KG" ;
@@ -14556,7 +14703,7 @@ kgr:spatialkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The SAWGraph Spatial KG is part of the Safe Agricultural Products and Water Graph (SAWGraph) project. It contains all the Level 13 grid cells from the S2 grid as well as administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them for the 48 contiguous states in the U.S." ;
     dcterms:identifier "spatialkg" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:spatialkg.sparql,
         kgr:spatialkg.tpf ;
     schema1:name "SAWGraph Spatial KG" ;
@@ -14627,7 +14774,7 @@ kgr:spoke-genelab a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The spoke-genelab KG complements the spokeokn (SPOKE Open Knowledge Network) KG and is designed to integrate omics data from NASA’s Open Science Data Repository (OSDR/GeneLab), which hosts results from spaceflight experiments." ;
     dcterms:identifier "spoke-genelab" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:spoke-genelab.sparql,
         kgr:spoke-genelab.tpf ;
     schema1:name "SPOKE GeneLab" ;
@@ -14642,7 +14789,7 @@ kgr:spoke-okn a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The spoke-okn (SPOKE Open Knowledge Network) KG is a comprehensive biomedical and environmental health knowledge graph that integrates diverse data across genomics, environmental science, and public health." ;
     dcterms:identifier "spoke-okn" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:spoke-okn.sparql,
         kgr:spoke-okn.tpf ;
     schema1:name "SPOKE-OKN" ;
@@ -14852,7 +14999,8 @@ kgr:sty a schema1:DataSource ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Stub Resource page for sty. This page was automatically generated because it was referenced by other resources." ;
     dcterms:identifier "sty" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://lhncbc.nlm.nih.gov/semanticnetwork/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.sty.tsv ;
     schema1:name "Sty" ;
     skos:inScheme "stub" ;
@@ -14863,7 +15011,7 @@ kgr:sudokn a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Supply and Demand Open Knowledge Network is an interconnected network of publicly available manufacturing capability data focused on Small and Medium-Sized Manufacturers." ;
     dcterms:identifier "sudokn" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:sudokn.sparql,
         kgr:sudokn.tpf ;
     schema1:name "SUDOKN" ;
@@ -15561,7 +15709,7 @@ kgr:ubergraph a schema1:KnowledgeGraph ;
     dcterms:description "Integrated suite of OBO ontologies with precomputed inferred relationships" ;
     dcterms:identifier "ubergraph" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.ubergraph,
         kgr:translator.translator_kg.graph,
         kgr:translator.ubergraph.graph,
@@ -15662,7 +15810,7 @@ kgr:ufokn a schema1:KnowledgeGraph ;
     dcterms:created "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Urban Flooding Open Knowledge Network (UF-OKN) is an informational infrastructure built using knowledge graphs aiming to extract structured content from the information scattered across open-source geospatial datasets and hydrologic models." ;
     dcterms:identifier "ufokn" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:ufokn.sparql,
         kgr:ufokn.tpf ;
     schema1:name "UF-OKN" ;
@@ -16075,7 +16223,7 @@ kgr:vsao a schema1:Ontology ;
     dcterms:description "Vertebrate skeletal anatomy ontology." ;
     dcterms:identifier "vsao" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:7742> ;
     schema1:hasPart kgr:vsao.owl ;
     schema1:name "Vertebrate Skeletal Anatomy Ontology-" ;
@@ -16274,7 +16422,7 @@ kgr:wildlifekn a schema1:KnowledgeGraph ;
     dcterms:created "2025-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "This project seeks to create a comprehensive, integrative knowledge network for the management of wildlife in the context of climate change" ;
     dcterms:identifier "wildlifekn" ;
-    dcterms:modified "2026-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:131567> ;
     schema1:hasPart kgr:wildlifekn.sparql,
         kgr:wildlifekn.tpf ;
@@ -16360,7 +16508,8 @@ kgr:xenbase a schema1:DataSource ;
     dcterms:description "Xenbase is the Xenopus model organism knowledgebase, a web-accessible resource that integrates all the diverse biological, genomic, genotype and phenotype data available from Xenopus research. It provides comprehensive data on Xenopus laevis and Xenopus tropicalis, including genome assemblies, gene expression data, anatomy information, phenotypes, and developmental biology resources." ;
     dcterms:identifier "xenbase" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/genetics/iyad018> ;
-    dcterms:modified "2025-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://xenbase.org/xenbase/> ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:8355> ;
     schema1:hasPart kgr:biogrid.identifiers,
         kgr:kg-monarch.graph,
@@ -16431,7 +16580,7 @@ kgr:ypo a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "ypo" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:4932> ;
     schema1:name "Yeast phenotypes" ;
     skos:inScheme "biological systems" ;
@@ -16717,6 +16866,11 @@ kgr:aero.owl a schema1:OntologyProduct ;
     dcterms:description "Adverse Event Reporting Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/aero.owl> .
 
+kgr:afcs.molecule-pages a schema1:GraphicalInterface ;
+    rdfs:label "AfCS-Nature Molecule Pages" ;
+    dcterms:description "Historical Signaling Gateway Molecule Pages web interface for curated mammalian signaling protein information." ;
+    schema1:url <http://www.signaling-gateway.org/molecule> .
+
 kgr:afpo.json a schema1:OntologyProduct ;
     rdfs:label "AfPO (obographs JSON edition)" ;
     dcterms:description "A direct translation of the AfPO (OWL edition) into OBOGraph JSON format" ;
@@ -16846,6 +17000,11 @@ kgr:aop-wiki.quarterly-xml a schema1:Product ;
     rdfs:label "AOP-Wiki Quarterly XML Snapshot" ;
     dcterms:description "Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable for citation and archival use" ;
     schema1:url <https://aopwiki.org/downloads> .
+
+kgr:aop-wiki.sparql a schema1:ProgrammingInterface ;
+    rdfs:label "AOP-Wiki SPARQL Endpoint" ;
+    dcterms:description "OpenRiskNet SPARQL endpoint loaded with RDF converted from AOP-Wiki quarterly XML dumps for querying AOPs, key events, key event relationships, and stressors." ;
+    schema1:url <https://openrisknet.org/e-infrastructure/services/133/> .
 
 kgr:apo.obo a schema1:OntologyProduct ;
     rdfs:label "apo.obo" ;
@@ -17142,62 +17301,62 @@ kgr:bio2rdf.web a schema1:GraphicalInterface ;
 kgr:biobricks-aopwiki.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks AOP-Wiki SPARQL" ;
     dcterms:description "SPARQL endpoint for BioBricks AOP-Wiki" ;
-    schema1:url <https://frink.apps.renci.org/biobricks-aopwiki/sparql> .
+    schema1:url <https://apps.okn.us/biobricks-aopwiki/sparql> .
 
 kgr:biobricks-aopwiki.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks AOP-Wiki TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks AOP-Wiki" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biobricks-aopwiki> .
+    schema1:url <https://apps.okn.us/ldf/biobricks-aopwiki> .
 
 kgr:biobricks-ice.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks ICE SPARQL" ;
     dcterms:description "SPARQL endpoint for BioBricks ICE" ;
-    schema1:url <https://frink.apps.renci.org/biobricks-ice/sparql> .
+    schema1:url <https://apps.okn.us/biobricks-ice/sparql> .
 
 kgr:biobricks-ice.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks ICE TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks ICE" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biobricks-ice> .
+    schema1:url <https://apps.okn.us/ldf/biobricks-ice> .
 
 kgr:biobricks-mesh.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks MeSH SPARQL" ;
     dcterms:description "SPARQL endpoint for BioBricks MeSH" ;
-    schema1:url <https://frink.apps.renci.org/biobricks-mesh/sparql> .
+    schema1:url <https://apps.okn.us/biobricks-mesh/sparql> .
 
 kgr:biobricks-mesh.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks MeSH TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks MeSH" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biobricks-mesh> .
+    schema1:url <https://apps.okn.us/ldf/biobricks-mesh> .
 
 kgr:biobricks-pubchem-annotations.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks PubChem Annotations SPARQL" ;
     dcterms:description "SPARQL endpoint for BioBricks PubChem Annotations" ;
-    schema1:url <https://frink.apps.renci.org/biobricks-pubchem-annotations/sparql> .
+    schema1:url <https://apps.okn.us/biobricks-pubchem-annotations/sparql> .
 
 kgr:biobricks-pubchem-annotations.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks PubChem Annotations TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks PubChem Annotations" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biobricks-pubchem-annotations> .
+    schema1:url <https://apps.okn.us/ldf/biobricks-pubchem-annotations> .
 
 kgr:biobricks-tox21.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks Tox21 SPARQL" ;
     dcterms:description "SPARQL endpoint for BioBricks Tox21" ;
-    schema1:url <https://frink.apps.renci.org/biobricks-tox21/sparql> .
+    schema1:url <https://apps.okn.us/biobricks-tox21/sparql> .
 
 kgr:biobricks-tox21.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks Tox21 TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks Tox21" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biobricks-tox21> .
+    schema1:url <https://apps.okn.us/ldf/biobricks-tox21> .
 
 kgr:biobricks-toxcast.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks ToxCast SPARQL" ;
     dcterms:description "SPARQL endpoint for BioBricks ToxCast" ;
-    schema1:url <https://frink.apps.renci.org/biobricks-toxcast/sparql> .
+    schema1:url <https://apps.okn.us/biobricks-toxcast/sparql> .
 
 kgr:biobricks-toxcast.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BioBricks ToxCast TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BioBricks ToxCast" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biobricks-toxcast> .
+    schema1:url <https://apps.okn.us/ldf/biobricks-toxcast> .
 
 kgr:biogps.api a schema1:ProgrammingInterface ;
     rdfs:label "BioGPS API" ;
@@ -17252,12 +17411,12 @@ kgr:biogrid.web a schema1:GraphicalInterface ;
 kgr:biohealth.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Bio-Health KG SPARQL" ;
     dcterms:description "SPARQL endpoint for Bio-Health KG" ;
-    schema1:url <https://frink.apps.renci.org/biohealth/sparql> .
+    schema1:url <https://apps.okn.us/biohealth/sparql> .
 
 kgr:biohealth.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Bio-Health KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Bio-Health KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biohealth> .
+    schema1:url <https://apps.okn.us/ldf/biohealth> .
 
 kgr:biolink.docs a schema1:DocumentationProduct ;
     rdfs:label "Biolink Model Documentation" ;
@@ -17337,12 +17496,12 @@ kgr:biomarkerkg.site a schema1:GraphicalInterface ;
 kgr:biomarkerkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "BiomarkerKB KG SPARQL" ;
     dcterms:description "SPARQL endpoint for BiomarkerKB KG" ;
-    schema1:url <https://frink.apps.renci.org/biomarkerkg/sparql> .
+    schema1:url <https://apps.okn.us/biomarkerkg/sparql> .
 
 kgr:biomarkerkg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "BiomarkerKB KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for BiomarkerKB KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/biomarkerkg> .
+    schema1:url <https://apps.okn.us/ldf/biomarkerkg> .
 
 kgr:bioplanet.data a schema1:Product ;
     rdfs:label "BioPlanet Pathway Data" ;
@@ -18063,12 +18222,12 @@ kgr:clao.owl a schema1:OntologyProduct ;
 kgr:climatemodelskg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Climate Models KG SPARQL" ;
     dcterms:description "SPARQL endpoint for Climate Models KG" ;
-    schema1:url <https://frink.apps.renci.org/climatemodelskg/sparql> .
+    schema1:url <https://apps.okn.us/climatemodelskg/sparql> .
 
 kgr:climatemodelskg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Climate Models KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Climate Models KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/climatemodelskg> .
+    schema1:url <https://apps.okn.us/ldf/climatemodelskg> .
 
 kgr:clingen.actionability a schema1:Product ;
     rdfs:label "Clinical Actionability Curations" ;
@@ -19173,12 +19332,12 @@ kgr:dpo.owl a schema1:OntologyProduct ;
 kgr:dreamkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "DREAM-KG SPARQL" ;
     dcterms:description "SPARQL endpoint for DREAM-KG" ;
-    schema1:url <https://frink.apps.renci.org/dreamkg/sparql> .
+    schema1:url <https://apps.okn.us/dreamkg/sparql> .
 
 kgr:dreamkg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "DREAM-KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for DREAM-KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/dreamkg> .
+    schema1:url <https://apps.okn.us/ldf/dreamkg> .
 
 kgr:drkg.graph a schema1:GraphProduct ;
     rdfs:label "DRKG graph" ;
@@ -19483,6 +19642,31 @@ kgr:ehdaa2.owl a schema1:OntologyProduct ;
     rdfs:label "ehdaa2.owl" ;
     dcterms:description "Human developmental anatomy, abstract in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/ehdaa2.owl> .
+
+kgr:ekg.browser a schema1:GraphicalInterface ;
+    rdfs:label "eKG Faceted Browser" ;
+    dcterms:description "Virtuoso faceted browser for exploring eKG" ;
+    schema1:url <https://api-vast.jrc.service.ec.europa.eu/fct/> .
+
+kgr:ekg.csv a schema1:Product ;
+    rdfs:label "eKG Raw Extractions CSV" ;
+    dcterms:description "CSV file containing the raw epidemiological information extractions used to derive eKG" ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/corpus_processed/SUMMARIZED/OutputAnnotatedTexts-LLMs-ENSEMBLE_whoDons.csv> .
+
+kgr:ekg.rdf a schema1:GraphProduct ;
+    rdfs:label "eKG RDF" ;
+    dcterms:description "RDF/XML serialization of the eKG epidemiological knowledge graph" ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.rdf> .
+
+kgr:ekg.sparql a schema1:ProgrammingInterface ;
+    rdfs:label "eKG SPARQL endpoint" ;
+    dcterms:description "Public SPARQL endpoint for querying eKG" ;
+    schema1:url <https://api-vast.jrc.service.ec.europa.eu/sparql/> .
+
+kgr:ekg.ttl a schema1:GraphProduct ;
+    rdfs:label "eKG TTL" ;
+    dcterms:description "Turtle serialization of the eKG epidemiological knowledge graph" ;
+    schema1:url <https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.ttl> .
 
 kgr:emap.owl a schema1:OntologyProduct ;
     rdfs:label "emap.owl" ;
@@ -19881,12 +20065,12 @@ kgr:evlncrnas.structures a schema1:GraphicalInterface ;
 kgr:evoweb.sparql a schema1:ProgrammingInterface ;
     rdfs:label "EvoWeb SPARQL" ;
     dcterms:description "SPARQL endpoint for EvoWeb" ;
-    schema1:url <https://frink.apps.renci.org/evoweb/sparql> .
+    schema1:url <https://apps.okn.us/evoweb/sparql> .
 
 kgr:evoweb.tpf a schema1:ProgrammingInterface ;
     rdfs:label "EvoWeb TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for EvoWeb" ;
-    schema1:url <https://frink.apps.renci.org/ldf/evoweb> .
+    schema1:url <https://apps.okn.us/ldf/evoweb> .
 
 kgr:exmo.owl a schema1:OntologyProduct ;
     rdfs:label "exmo.owl" ;
@@ -20130,12 +20314,12 @@ kgr:finngen.summary_stats a schema1:Product ;
 kgr:fiokg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph FRS KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SAWGraph FRS KG" ;
-    schema1:url <https://frink.apps.renci.org/fiokg/sparql> .
+    schema1:url <https://apps.okn.us/fiokg/sparql> .
 
 kgr:fiokg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph FRS KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SAWGraph FRS KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/fiokg> .
+    schema1:url <https://apps.okn.us/ldf/fiokg> .
 
 kgr:fix.obo a schema1:OntologyProduct ;
     rdfs:label "fix.obo" ;
@@ -20561,12 +20745,12 @@ kgr:gendr.web a schema1:GraphicalInterface ;
 kgr:gene-expression-atlas-okn.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Gene Expression Atlas SPARQL" ;
     dcterms:description "SPARQL endpoint for Gene Expression Atlas" ;
-    schema1:url <https://frink.apps.renci.org/gene-expression-atlas-okn/sparql> .
+    schema1:url <https://apps.okn.us/gene-expression-atlas-okn/sparql> .
 
 kgr:gene-expression-atlas-okn.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Gene Expression Atlas TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Gene Expression Atlas" ;
-    schema1:url <https://frink.apps.renci.org/ldf/gene-expression-atlas-okn> .
+    schema1:url <https://apps.okn.us/ldf/gene-expression-atlas-okn> .
 
 kgr:gene-ontology-consortium a "Organization" ;
     rdfs:label "Gene Ontology Consortium" .
@@ -20664,12 +20848,12 @@ kgr:geo.owl a schema1:OntologyProduct ;
 kgr:geoconnex.sparql a schema1:ProgrammingInterface ;
     rdfs:label "GEOCONNEX SPARQL" ;
     dcterms:description "SPARQL endpoint for GEOCONNEX" ;
-    schema1:url <https://frink.apps.renci.org/geoconnex/sparql> .
+    schema1:url <https://apps.okn.us/geoconnex/sparql> .
 
 kgr:geoconnex.tpf a schema1:ProgrammingInterface ;
     rdfs:label "GEOCONNEX TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for GEOCONNEX" ;
-    schema1:url <https://frink.apps.renci.org/ldf/geoconnex> .
+    schema1:url <https://apps.okn.us/ldf/geoconnex> .
 
 kgr:gff.specification a schema1:DocumentationProduct ;
     rdfs:label "GFF3 Specification" ;
@@ -20928,12 +21112,17 @@ kgr:gno.owl a schema1:OntologyProduct ;
 kgr:go-cam.api a schema1:ProgrammingInterface ;
     rdfs:label "GO-CAM API" ;
     dcterms:description "Programmatic access to GO-CAM models through the Gene Ontology API" ;
-    schema1:url <http://api.geneontology.org/api/> .
+    schema1:url <http://api.geneontology.org/> .
 
 kgr:go-cam.browser a schema1:GraphicalInterface ;
     rdfs:label "GO-CAM Browser" ;
     dcterms:description "Web interface for browsing, searching, and exploring GO-CAM models" ;
     schema1:url <http://geneontology.org/go-cam> .
+
+kgr:go-cam.linkml-schema a schema1:DataModelProduct ;
+    rdfs:label "GO-CAM LinkML Schema" ;
+    dcterms:description "LinkML YAML schema for representing Gene Ontology Causal Activity Models (GO-CAMs)" ;
+    schema1:url <https://raw.githubusercontent.com/geneontology/gocam-py/main/src/gocam/schema/gocam.yaml> .
 
 kgr:go-cam.minerva a schema1:ProcessProduct ;
     rdfs:label "Minerva" ;
@@ -21714,6 +21903,16 @@ kgr:hpa.subcellular_location a schema1:Product ;
     dcterms:description "Subcellular localization data based on immunofluorescent staining of human cell lines" ;
     schema1:url <https://www.proteinatlas.org/download/subcellular_location.tsv.zip> .
 
+kgr:hpidb.mitab a schema1:Product ;
+    rdfs:label "HPIDB PSI-MITAB Dataset" ;
+    dcterms:description "Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB format." ;
+    schema1:url <https://hpidb.igbb.msstate.edu/> .
+
+kgr:hpidb.portal a schema1:GraphicalInterface ;
+    rdfs:label "HPIDB Web Portal" ;
+    dcterms:description "Web interface for searching HPIDB by sequence, keyword, and homologous host-pathogen protein interaction." ;
+    schema1:url <https://hpidb.igbb.msstate.edu/> .
+
 kgr:hprd.genprot.viewer a schema1:GraphicalInterface ;
     rdfs:label "GenProt Viewer" ;
     dcterms:description "GenProt Viewer for integrated genomic, transcriptomic and proteomic view of the human genome" ;
@@ -21882,12 +22081,12 @@ kgr:huri.portal a schema1:GraphicalInterface ;
 kgr:hydrologykg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph Hydrology KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SAWGraph Hydrology KG" ;
-    schema1:url <https://frink.apps.renci.org/hydrologykg/sparql> .
+    schema1:url <https://apps.okn.us/hydrologykg/sparql> .
 
 kgr:hydrologykg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph Hydrology KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SAWGraph Hydrology KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/hydrologykg> .
+    schema1:url <https://apps.okn.us/ldf/hydrologykg> .
 
 kgr:iao.d-acts.owl a schema1:OntologyProduct ;
     rdfs:label "ontology of document acts" ;
@@ -22042,35 +22241,10 @@ kgr:insight.portal a schema1:GraphicalInterface ;
     dcterms:description "INSIGHT project web portal for project updates, consortium information, and dissemination materials." ;
     schema1:url <https://insight-project.org/> .
 
-kgr:intact.datasets a schema1:Product ;
-    rdfs:label "IntAct Datasets" ;
-    dcterms:description "Curated and computational datasets (disease-, method-, and species-specific) with per-dataset downloads" ;
-    schema1:url <https://www.ebi.ac.uk/intact/download/datasets> .
-
 kgr:intact.docs.user-guide a schema1:DocumentationProduct ;
     rdfs:label "IntAct User Guide" ;
     dcterms:description "User guide and documentation for search, exports, data sources, and submission" ;
     schema1:url <https://www.ebi.ac.uk/intact/documentation/user-guide> .
-
-kgr:intact.ftp.psi25 a schema1:Product ;
-    rdfs:label "IntAct PSI-MI XML 2.5" ;
-    dcterms:description "IntAct data in PSI-MI XML 2.5 format (directory)" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/> .
-
-kgr:intact.ftp.psi30 a schema1:Product ;
-    rdfs:label "IntAct PSI-MI XML 3.0" ;
-    dcterms:description "IntAct data in PSI-MI XML 3.0 format (directory)" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/> .
-
-kgr:intact.ftp.psimitab a schema1:Product ;
-    rdfs:label "IntAct PSI-MI MITAB 2.7" ;
-    dcterms:description "IntAct data in PSI-MI MITAB format (directory)" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/> .
-
-kgr:intact.ftp.psimitab.all a schema1:Product ;
-    rdfs:label "IntAct MITAB Archive" ;
-    dcterms:description "Entire MITAB export of the database as a single archive (intact.zip)" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip> .
 
 kgr:intact.portal a schema1:GraphicalInterface ;
     rdfs:label "IntAct Portal" ;
@@ -22834,12 +23008,12 @@ kgr:mangal.portal a schema1:GraphicalInterface ;
 kgr:maudekg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "FDA MAUDE Adverse Event Knowledge Graph SPARQL" ;
     dcterms:description "SPARQL endpoint for FDA MAUDE Adverse Event Knowledge Graph" ;
-    schema1:url <https://frink.apps.renci.org/maudekg/sparql> .
+    schema1:url <https://apps.okn.us/maudekg/sparql> .
 
 kgr:maudekg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "FDA MAUDE Adverse Event Knowledge Graph TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for FDA MAUDE Adverse Event Knowledge Graph" ;
-    schema1:url <https://frink.apps.renci.org/ldf/maudekg> .
+    schema1:url <https://apps.okn.us/ldf/maudekg> .
 
 kgr:maxo.json a schema1:OntologyProduct ;
     rdfs:label "maxo.json" ;
@@ -23390,6 +23564,9 @@ kgr:mirtarbase.target_sites a schema1:Product ;
     dcterms:description "Dataset of microRNA target sites with detailed binding site information in CSV format." ;
     schema1:url <https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php> .
 
+kgr:mississippi-state-university-college-of-veterinary-medicine a "Organization" ;
+    rdfs:label "Mississippi State University College of Veterinary Medicine" .
+
 kgr:mixs.model a schema1:DataModelProduct ;
     rdfs:label "MIxS OWL release" ;
     dcterms:description "OWL release of mixs" ;
@@ -23776,12 +23953,12 @@ kgr:nanopublications.servers a schema1:ProgrammingInterface ;
 kgr:nasa-gesdisc-kg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "NASA-GESDISC-KG SPARQL" ;
     dcterms:description "SPARQL endpoint for NASA-GESDISC-KG" ;
-    schema1:url <https://frink.apps.renci.org/nasa-gesdisc-kg/sparql> .
+    schema1:url <https://apps.okn.us/nasa-gesdisc-kg/sparql> .
 
 kgr:nasa-gesdisc-kg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "NASA-GESDISC-KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for NASA-GESDISC-KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/nasa-gesdisc-kg> .
+    schema1:url <https://apps.okn.us/ldf/nasa-gesdisc-kg> .
 
 kgr:naturalis a "Organization" ;
     rdfs:label "Naturalis Biodiversity Center" .
@@ -23872,12 +24049,12 @@ kgr:ncbitaxon.subsets.taxslim.owl a schema1:OntologyProduct ;
 kgr:ncipidkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "NCI-PID 2.0 KG SPARQL" ;
     dcterms:description "SPARQL endpoint for NCI-PID 2.0 KG" ;
-    schema1:url <https://frink.apps.renci.org/ncipidkg/sparql> .
+    schema1:url <https://apps.okn.us/ncipidkg/sparql> .
 
 kgr:ncipidkg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "NCI-PID 2.0 KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for NCI-PID 2.0 KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/ncipidkg> .
+    schema1:url <https://apps.okn.us/ldf/ncipidkg> .
 
 kgr:ncit.obo a schema1:OntologyProduct ;
     rdfs:label "NCIt OBO Edition OBO format" ;
@@ -23917,12 +24094,12 @@ kgr:ndcd.text a schema1:Product ;
 kgr:nde.sparql a schema1:ProgrammingInterface ;
     rdfs:label "NIAID Data Ecosystem KG SPARQL" ;
     dcterms:description "SPARQL endpoint for NIAID Data Ecosystem KG" ;
-    schema1:url <https://frink.apps.renci.org/nde/sparql> .
+    schema1:url <https://apps.okn.us/nde/sparql> .
 
 kgr:nde.tpf a schema1:ProgrammingInterface ;
     rdfs:label "NIAID Data Ecosystem KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for NIAID Data Ecosystem KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/nde> .
+    schema1:url <https://apps.okn.us/ldf/nde> .
 
 kgr:neo.model a schema1:Product ;
     rdfs:label "neo OWL release" ;
@@ -23977,12 +24154,12 @@ kgr:nihreporter.publications a schema1:Product ;
 kgr:nikg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Neighborhood Information KG SPARQL" ;
     dcterms:description "SPARQL endpoint for Neighborhood Information KG" ;
-    schema1:url <https://frink.apps.renci.org/neighborhood-information-kg/sparql> .
+    schema1:url <https://apps.okn.us/nikg/sparql> .
 
 kgr:nikg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Neighborhood Information KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Neighborhood Information KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/neighborhood-information-kg> .
+    schema1:url <https://apps.okn.us/ldf/nikg> .
 
 kgr:nlm-ckn.schema a schema1:DataModelProduct ;
     rdfs:label "nlm-ckn-schema" ;
@@ -24102,12 +24279,12 @@ kgr:oarcs.owl a schema1:OntologyProduct ;
 kgr:oard-kg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL" ;
     dcterms:description "SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge Graph" ;
-    schema1:url <https://frink.apps.renci.org/oard-kg/sparql> .
+    schema1:url <https://apps.okn.us/oard-kg/sparql> .
 
 kgr:oard-kg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases (OARD) Knowledge Graph" ;
-    schema1:url <https://frink.apps.renci.org/ldf/oard-kg> .
+    schema1:url <https://apps.okn.us/ldf/oard-kg> .
 
 kgr:oba.obo a schema1:OntologyProduct ;
     rdfs:label "oba.obo" ;
@@ -24248,26 +24425,6 @@ kgr:obo-db-ingest.civic.gid.sssom.tsv a schema1:MappingProduct ;
     rdfs:label "civic.gid SSSOM" ;
     dcterms:description "civic.gid SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv> .
-
-kgr:obo-db-ingest.clinicaltrials.json a schema1:Product ;
-    rdfs:label "clinicaltrials OBO Graph JSON" ;
-    dcterms:description "clinicaltrials OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz> .
-
-kgr:obo-db-ingest.clinicaltrials.obo a schema1:Product ;
-    rdfs:label "clinicaltrials OBO" ;
-    dcterms:description "clinicaltrials OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz> .
-
-kgr:obo-db-ingest.clinicaltrials.owl a schema1:Product ;
-    rdfs:label "clinicaltrials OWL" ;
-    dcterms:description "clinicaltrials OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl.gz> .
-
-kgr:obo-db-ingest.clinicaltrials.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "clinicaltrials SSSOM" ;
-    dcterms:description "clinicaltrials SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv> .
 
 kgr:obo-db-ingest.complexportal.json a schema1:Product ;
     rdfs:label "complexportal OBO Graph JSON" ;
@@ -25050,8 +25207,8 @@ kgr:ohd.dev.ohd.owl a schema1:OntologyProduct ;
     schema1:url <http://purl.obolibrary.org/obo/ohd/dev/ohd.owl> .
 
 kgr:ohd.owl a schema1:OntologyProduct ;
-    rdfs:label "ohd.owl" ;
-    dcterms:description "Oral Health and Disease Ontology in OWL format" ;
+    rdfs:label "Oral Health and Disease Ontology" ;
+    dcterms:description "Oral Health and Disease Ontology" ;
     schema1:url <http://purl.obolibrary.org/obo/ohd.owl> .
 
 kgr:ohdsi a schema1:Aggregator,
@@ -25159,12 +25316,12 @@ kgr:oio.owl a schema1:OntologyProduct ;
 kgr:okn-void.sparql a schema1:ProgrammingInterface ;
     rdfs:label "OKN VoID graph descriptions SPARQL" ;
     dcterms:description "SPARQL endpoint for OKN VoID graph descriptions" ;
-    schema1:url <https://frink.apps.renci.org/okn-void/sparql> .
+    schema1:url <https://apps.okn.us/okn-void/sparql> .
 
 kgr:okn-void.tpf a schema1:ProgrammingInterface ;
     rdfs:label "OKN VoID graph descriptions TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for OKN VoID graph descriptions" ;
-    schema1:url <https://frink.apps.renci.org/ldf/okn-void> .
+    schema1:url <https://apps.okn.us/ldf/okn-void> .
 
 kgr:olatdv.obo a schema1:OntologyProduct ;
     rdfs:label "olatdv.obo" ;
@@ -25754,12 +25911,12 @@ kgr:pankbase.graph.site a schema1:GraphicalInterface ;
 kgr:pankgraph.sparql a schema1:ProgrammingInterface ;
     rdfs:label "PanKgraph SPARQL" ;
     dcterms:description "SPARQL endpoint for PanKgraph" ;
-    schema1:url <https://frink.apps.renci.org/pankgraph/sparql> .
+    schema1:url <https://apps.okn.us/pankgraph/sparql> .
 
 kgr:pankgraph.tpf a schema1:ProgrammingInterface ;
     rdfs:label "PanKgraph TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for PanKgraph" ;
-    schema1:url <https://frink.apps.renci.org/ldf/pankgraph> .
+    schema1:url <https://apps.okn.us/ldf/pankgraph> .
 
 kgr:pathbank.biopax a schema1:GraphProduct ;
     rdfs:label "PathBank BioPAX Archive" ;
@@ -26308,6 +26465,16 @@ kgr:pharos.tcrd.download a schema1:Product ;
     rdfs:label "TCRD Database Downloads" ;
     dcterms:description "Target Central Resource Database (TCRD) downloadable database files containing comprehensive protein target information including druggability classifications, expression data, disease associations, and chemical probe information" ;
     schema1:url <http://juniper.health.unm.edu/tcrd/download/> .
+
+kgr:phaseskg.sparql a schema1:ProgrammingInterface ;
+    rdfs:label "PHASES KG SPARQL" ;
+    dcterms:description "SPARQL endpoint for PHASES KG" ;
+    schema1:url <https://apps.okn.us/phaseskg/sparql> .
+
+kgr:phaseskg.tpf a schema1:ProgrammingInterface ;
+    rdfs:label "PHASES KG TPF" ;
+    dcterms:description "Triple Pattern Fragments endpoint for PHASES KG" ;
+    schema1:url <https://apps.okn.us/ldf/phaseskg> .
 
 kgr:pheknowlator.code a schema1:ProcessProduct ;
     rdfs:label "PheKnowLator code" ;
@@ -27330,12 +27497,12 @@ kgr:rtx-kg2.code a schema1:ProcessProduct ;
 kgr:ruralkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Rural Resilience KG SPARQL" ;
     dcterms:description "SPARQL endpoint for Rural Resilience KG" ;
-    schema1:url <https://frink.apps.renci.org/ruralkg/sparql> .
+    schema1:url <https://apps.okn.us/ruralkg/sparql> .
 
 kgr:ruralkg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Rural Resilience KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Rural Resilience KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/ruralkg> .
+    schema1:url <https://apps.okn.us/ldf/ruralkg> .
 
 kgr:rxno.owl a schema1:OntologyProduct ;
     rdfs:label "Name Reaction Ontology" ;
@@ -27378,12 +27545,12 @@ kgr:saezlab a "Organization" ;
 kgr:sawgraph.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph PFAS KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SAWGraph PFAS KG" ;
-    schema1:url <https://frink.apps.renci.org/sawgraph/sparql> .
+    schema1:url <https://apps.okn.us/sawgraph/sparql> .
 
 kgr:sawgraph.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph PFAS KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SAWGraph PFAS KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/sawgraph> .
+    schema1:url <https://apps.okn.us/ldf/sawgraph> .
 
 kgr:sbo.owl a schema1:OntologyProduct ;
     rdfs:label "sbo.owl" ;
@@ -27393,12 +27560,12 @@ kgr:sbo.owl a schema1:OntologyProduct ;
 kgr:scales.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SCALES SPARQL" ;
     dcterms:description "SPARQL endpoint for SCALES" ;
-    schema1:url <https://frink.apps.renci.org/scales/sparql> .
+    schema1:url <https://apps.okn.us/scales/sparql> .
 
 kgr:scales.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SCALES TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SCALES" ;
-    schema1:url <https://frink.apps.renci.org/ldf/scales> .
+    schema1:url <https://apps.okn.us/ldf/scales> .
 
 kgr:scdo.obo a schema1:OntologyProduct ;
     rdfs:label "scdo.obo" ;
@@ -27433,12 +27600,12 @@ kgr:sckan.query_interface a schema1:GraphicalInterface ;
 kgr:securechainkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SecureChain KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SecureChain KG" ;
-    schema1:url <https://frink.apps.renci.org/securechainkg/sparql> .
+    schema1:url <https://apps.okn.us/securechainkg/sparql> .
 
 kgr:securechainkg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SecureChain KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SecureChain KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/securechainkg> .
+    schema1:url <https://apps.okn.us/ldf/securechainkg> .
 
 kgr:semmeddb.semrep.tool a schema1:ProcessProduct ;
     rdfs:label "SemRep NLP System" ;
@@ -27448,12 +27615,12 @@ kgr:semmeddb.semrep.tool a schema1:ProcessProduct ;
 kgr:semopenalex.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SemOpenAlex SPARQL" ;
     dcterms:description "SPARQL endpoint for SemOpenAlex" ;
-    schema1:url <https://frink.apps.renci.org/semopenalex/sparql> .
+    schema1:url <https://apps.okn.us/semopenalex/sparql> .
 
 kgr:semopenalex.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SemOpenAlex TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SemOpenAlex" ;
-    schema1:url <https://frink.apps.renci.org/ldf/semopenalex> .
+    schema1:url <https://apps.okn.us/ldf/semopenalex> .
 
 kgr:sennet.api a schema1:ProgrammingInterface ;
     rdfs:label "SenNet API" ;
@@ -28064,12 +28231,12 @@ kgr:so.subsets.SOFA.owl a schema1:OntologyProduct ;
 kgr:sockg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SOC-KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SOC-KG" ;
-    schema1:url <https://frink.apps.renci.org/sockg/sparql> .
+    schema1:url <https://apps.okn.us/sockg/sparql> .
 
 kgr:sockg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SOC-KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SOC-KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/sockg> .
+    schema1:url <https://apps.okn.us/ldf/sockg> .
 
 kgr:spar a "Organization" ;
     rdfs:label "SPAR (Semantic Publishing and Referencing) Ontologies" .
@@ -28077,12 +28244,12 @@ kgr:spar a "Organization" ;
 kgr:spatialkg.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph Spatial KG SPARQL" ;
     dcterms:description "SPARQL endpoint for SAWGraph Spatial KG" ;
-    schema1:url <https://frink.apps.renci.org/spatialkg/sparql> .
+    schema1:url <https://apps.okn.us/spatialkg/sparql> .
 
 kgr:spatialkg.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SAWGraph Spatial KG TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SAWGraph Spatial KG" ;
-    schema1:url <https://frink.apps.renci.org/ldf/spatialkg> .
+    schema1:url <https://apps.okn.us/ldf/spatialkg> .
 
 kgr:spd.owl a schema1:OntologyProduct ;
     rdfs:label "spd.owl" ;
@@ -28092,22 +28259,22 @@ kgr:spd.owl a schema1:OntologyProduct ;
 kgr:spoke-genelab.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE GeneLab SPARQL" ;
     dcterms:description "SPARQL endpoint for SPOKE GeneLab" ;
-    schema1:url <https://frink.apps.renci.org/spoke-genelab/sparql> .
+    schema1:url <https://apps.okn.us/spoke-genelab/sparql> .
 
 kgr:spoke-genelab.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE GeneLab TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SPOKE GeneLab" ;
-    schema1:url <https://frink.apps.renci.org/ldf/spoke-genelab> .
+    schema1:url <https://apps.okn.us/ldf/spoke-genelab> .
 
 kgr:spoke-okn.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE-OKN SPARQL" ;
     dcterms:description "SPARQL endpoint for SPOKE-OKN" ;
-    schema1:url <https://frink.apps.renci.org/spoke-okn/sparql> .
+    schema1:url <https://apps.okn.us/spoke-okn/sparql> .
 
 kgr:spoke-okn.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE-OKN TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SPOKE-OKN" ;
-    schema1:url <https://frink.apps.renci.org/ldf/spoke-okn> .
+    schema1:url <https://apps.okn.us/ldf/spoke-okn> .
 
 kgr:spoke.neighborhood_explorer a schema1:GraphicalInterface ;
     rdfs:label "SPOKE Neighborhood Explorer" ;
@@ -28425,12 +28592,12 @@ kgr:stringdb a "Organization" ;
 kgr:sudokn.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SUDOKN SPARQL" ;
     dcterms:description "SPARQL endpoint for SUDOKN" ;
-    schema1:url <https://frink.apps.renci.org/sudokn/sparql> .
+    schema1:url <https://apps.okn.us/sudokn/sparql> .
 
 kgr:sudokn.tpf a schema1:ProgrammingInterface ;
     rdfs:label "SUDOKN TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for SUDOKN" ;
-    schema1:url <https://frink.apps.renci.org/ldf/sudokn> .
+    schema1:url <https://apps.okn.us/ldf/sudokn> .
 
 kgr:suppkg.docs a schema1:DocumentationProduct ;
     rdfs:label "SuppKG Documentation" ;
@@ -29002,12 +29169,12 @@ kgr:ubergraph.rdf a schema1:Product ;
 kgr:ubergraph.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Ubergraph SPARQL" ;
     dcterms:description "SPARQL endpoint for Ubergraph" ;
-    schema1:url <https://frink.apps.renci.org/ubergraph/sparql> .
+    schema1:url <https://apps.okn.us/ubergraph/sparql> .
 
 kgr:ubergraph.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Ubergraph TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Ubergraph" ;
-    schema1:url <https://frink.apps.renci.org/ldf/ubergraph> .
+    schema1:url <https://apps.okn.us/ldf/ubergraph> .
 
 kgr:uberon.collected-metazoan.owl a schema1:OntologyProduct ;
     rdfs:label "Uberon collected metazoan ontology" ;
@@ -29065,12 +29232,12 @@ kgr:uf-okn.portal a schema1:GraphicalInterface ;
 kgr:ufokn.sparql a schema1:ProgrammingInterface ;
     rdfs:label "UF-OKN SPARQL" ;
     dcterms:description "SPARQL endpoint for UF-OKN" ;
-    schema1:url <https://frink.apps.renci.org/ufokn/sparql> .
+    schema1:url <https://apps.okn.us/ufokn/sparql> .
 
 kgr:ufokn.tpf a schema1:ProgrammingInterface ;
     rdfs:label "UF-OKN TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for UF-OKN" ;
-    schema1:url <https://frink.apps.renci.org/ldf/ufokn> .
+    schema1:url <https://apps.okn.us/ldf/ufokn> .
 
 kgr:ukbiobank.showcase a schema1:GraphicalInterface ;
     rdfs:label "UK Biobank Data Showcase" ;
@@ -29249,6 +29416,9 @@ kgr:uniref.uniref90.xml a schema1:Product ;
 
 kgr:univ-lorraine a "Organization" ;
     rdfs:label "Université de Lorraine" .
+
+kgr:university-of-california-san-diego a "Organization" ;
+    rdfs:label "University of California San Diego" .
 
 kgr:uo.json a schema1:OntologyProduct ;
     rdfs:label "uo.json" ;
@@ -29546,12 +29716,12 @@ kgr:wikipedia.rest a schema1:ProgrammingInterface ;
 kgr:wildlifekn.sparql a schema1:ProgrammingInterface ;
     rdfs:label "Wildlife-KN SPARQL" ;
     dcterms:description "SPARQL endpoint for Wildlife-KN" ;
-    schema1:url <https://frink.apps.renci.org/wildlifekn/sparql> .
+    schema1:url <https://apps.okn.us/wildlifekn/sparql> .
 
 kgr:wildlifekn.tpf a schema1:ProgrammingInterface ;
     rdfs:label "Wildlife-KN TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for Wildlife-KN" ;
-    schema1:url <https://frink.apps.renci.org/ldf/wildlifekn> .
+    schema1:url <https://apps.okn.us/ldf/wildlifekn> .
 
 kgr:wishart-lab a "Organization" ;
     rdfs:label "Wishart Lab (University of Alberta)" .
@@ -29761,6 +29931,16 @@ kgr:aeolus.standardized_data a schema1:Product ;
     dcterms:description "Standardized and deduplicated version of FDA FAERS data with drug names mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed summary statistics for drug-outcome relationships." ;
     schema1:url <https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4> .
 
+kgr:afcs.intact.mitab a schema1:Product ;
+    rdfs:label "AFCS IntAct MITAB Dataset" ;
+    dcterms:description "IntAct-hosted AFCS protein interaction dataset in PSI-MI MITAB format." ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/datasets/AFCS.zip> .
+
+kgr:aop-db.sparql a schema1:ProgrammingInterface ;
+    rdfs:label "AOP-DB SPARQL Endpoint" ;
+    dcterms:description "OpenRiskNet Virtuoso SPARQL endpoint loaded with RDF of the EPA AOP-DB for querying integrated AOP, gene, chemical, disease, tissue, pathway, orthology, ontology, and gene interaction relationships." ;
+    schema1:url <https://openrisknet.org/e-infrastructure/services/147/> .
+
 kgr:automat.biolink a schema1:GraphProduct ;
     rdfs:label "biolink_automat" ;
     dcterms:description "Biolink Automat" ;
@@ -29935,12 +30115,12 @@ kgr:goa.quickgo a schema1:GraphicalInterface ;
 kgr:identifier-mappings.sparql a schema1:ProgrammingInterface ;
     rdfs:label "ID Mappings SPARQL" ;
     dcterms:description "SPARQL endpoint for ID Mappings" ;
-    schema1:url <https://frink.apps.renci.org/identifier-mappings/sparql> .
+    schema1:url <https://apps.okn.us/identifier-mappings/sparql> .
 
 kgr:identifier-mappings.tpf a schema1:ProgrammingInterface ;
     rdfs:label "ID Mappings TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for ID Mappings" ;
-    schema1:url <https://frink.apps.renci.org/ldf/identifier-mappings> .
+    schema1:url <https://apps.okn.us/ldf/identifier-mappings> .
 
 kgr:interpro.interpro2go a schema1:MappingProduct ;
     rdfs:label "InterPro to GO Mappings" ;
@@ -30219,7 +30399,27 @@ kgr:obo-db-ingest.civic.gid.tsv a schema1:Product ;
     dcterms:description "civic.gid Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.tsv> .
 
-kgr:obo-db-ingest.clinicaltrials.tsv a schema1:Product ;
+kgr:obo-db-ingest.clinicaltrialsgov.json a schema1:Product ;
+    rdfs:label "clinicaltrials OBO Graph JSON" ;
+    dcterms:description "clinicaltrials OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz> .
+
+kgr:obo-db-ingest.clinicaltrialsgov.obo a schema1:Product ;
+    rdfs:label "clinicaltrials OBO" ;
+    dcterms:description "clinicaltrials OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz> .
+
+kgr:obo-db-ingest.clinicaltrialsgov.owl a schema1:Product ;
+    rdfs:label "clinicaltrials OWL" ;
+    dcterms:description "clinicaltrials OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl.gz> .
+
+kgr:obo-db-ingest.clinicaltrialsgov.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "clinicaltrials SSSOM" ;
+    dcterms:description "clinicaltrials SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv> .
+
+kgr:obo-db-ingest.clinicaltrialsgov.tsv a schema1:Product ;
     rdfs:label "clinicaltrials Nodes TSV" ;
     dcterms:description "clinicaltrials Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv> .
@@ -31137,6 +31337,36 @@ kgr:emikg.web a schema1:GraphicalInterface ;
     rdfs:label "EMI KG SPARQL Query Editor" ;
     dcterms:description "Web-based SPARQL query editor for the EMI Knowledge Graph" ;
     schema1:url <https://sib-swiss.github.io/sparql-editor/emi> .
+
+kgr:intact.api a schema1:ProgrammingInterface ;
+    rdfs:label "IntAct Web Service" ;
+    dcterms:description "IntAct web service and URL-based programmatic interface for retrieving molecular interaction networks in PSI-MI formats." ;
+    schema1:url <https://www.ebi.ac.uk/intact/ws> .
+
+kgr:intact.datasets a schema1:Product ;
+    rdfs:label "IntAct Datasets" ;
+    dcterms:description "Curated and computational datasets (disease-, method-, and species-specific) with per-dataset downloads" ;
+    schema1:url <https://www.ebi.ac.uk/intact/download/datasets> .
+
+kgr:intact.ftp.psi25 a schema1:Product ;
+    rdfs:label "IntAct PSI-MI XML 2.5" ;
+    dcterms:description "IntAct data in PSI-MI XML 2.5 format (directory)" ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/> .
+
+kgr:intact.ftp.psi30 a schema1:Product ;
+    rdfs:label "IntAct PSI-MI XML 3.0" ;
+    dcterms:description "IntAct data in PSI-MI XML 3.0 format (directory)" ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/> .
+
+kgr:intact.ftp.psimitab a schema1:Product ;
+    rdfs:label "IntAct PSI-MI MITAB 2.7" ;
+    dcterms:description "IntAct data in PSI-MI MITAB format (directory)" ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/> .
+
+kgr:intact.ftp.psimitab.all a schema1:Product ;
+    rdfs:label "IntAct MITAB Archive" ;
+    dcterms:description "Entire MITAB export of the database as a single archive (intact.zip)" ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip> .
 
 kgr:metatraits.traits a schema1:Product ;
     rdfs:label "metaTraits Trait List" ;

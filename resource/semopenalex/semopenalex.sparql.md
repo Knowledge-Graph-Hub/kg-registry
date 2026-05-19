@@ -4,8 +4,8 @@ description: SPARQL endpoint for SemOpenAlex
 id: semopenalex.sparql
 name: SemOpenAlex SPARQL
 original_source:
-  - source: semopenalex
-    relation_type: prov:hadPrimarySource
-product_url: https://frink.apps.renci.org/semopenalex/sparql
+- relation_type: prov:hadPrimarySource
+  source: semopenalex
+product_url: https://apps.okn.us/semopenalex/sparql
 layout: product_detail
 ---

@@ -67,6 +67,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+    header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     with subsets of those ontologies
@@ -101,6 +103,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
     to be acyclic and annotations can be propagated up the graph. The relations included
@@ -126,6 +130,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
   format: owl
@@ -137,6 +143,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -265,7 +273,7 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -288,7 +296,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -371,7 +379,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -394,7 +402,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -477,7 +485,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -500,7 +508,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -584,7 +592,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 15371045
+  edge_count: 14998050
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -606,7 +614,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -690,7 +698,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -712,7 +720,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -795,7 +803,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -818,7 +826,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -901,7 +909,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -924,7 +932,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1007,7 +1015,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 15371045
+  edge_count: 14998050
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1030,7 +1038,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1113,7 +1121,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 15371045
+  edge_count: 14998050
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1136,7 +1144,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -3529,8 +3537,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3582,10 +3590,12 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -3813,10 +3823,12 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+    header found'
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
     by Gene Ontology biocurators linking genes, proteins, and biological processes

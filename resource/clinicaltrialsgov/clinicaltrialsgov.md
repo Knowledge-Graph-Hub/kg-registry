@@ -260,14 +260,16 @@ products:
     source: repodb
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http
@@ -280,10 +282,12 @@ products:
     source: genecards
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial
     data, accessible via standard PostgreSQL clients
@@ -307,6 +311,84 @@ products:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   product_url: https://aact.ctti-clinicaltrials.org/downloads
+- category: Product
+  compression: gzip
+  description: clinicaltrials OBO
+  format: obo
+  id: obo-db-ingest.clinicaltrialsgov.obo
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions#availability
+    label: Custom
+  name: clinicaltrials OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 41571299
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo.gz
+- category: Product
+  compression: gzip
+  description: clinicaltrials OWL
+  format: owl
+  id: obo-db-ingest.clinicaltrialsgov.owl
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions#availability
+    label: Custom
+  name: clinicaltrials OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 40291602
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl.gz
+- category: Product
+  compression: gzip
+  description: clinicaltrials OBO Graph JSON
+  format: json
+  id: obo-db-ingest.clinicaltrialsgov.json
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions#availability
+    label: Custom
+  name: clinicaltrials OBO Graph JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 40813205
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json.gz
+- category: MappingProduct
+  description: clinicaltrials SSSOM
+  format: sssom
+  id: obo-db-ingest.clinicaltrialsgov.sssom.tsv
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions#availability
+    label: Custom
+  name: clinicaltrials SSSOM
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 6299996
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
+- category: Product
+  description: clinicaltrials Nodes TSV
+  format: tsv
+  id: obo-db-ingest.clinicaltrialsgov.tsv
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions#availability
+    label: Custom
+  name: clinicaltrials Nodes TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 19140027
+  product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv
 publications:
 - authors:
   - Zarin DA

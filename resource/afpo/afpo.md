@@ -50,7 +50,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: afpo
-  product_url: https://raw.githubusercontent.com/h3abionet/afpo/v2024-03-21/afpo.obo
+  product_url: http://purl.obolibrary.org/obo/afpo.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
@@ -59,7 +62,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: afpo
-  product_url: https://raw.githubusercontent.com/h3abionet/afpo/v2024-03-21/afpo.json
+  product_url: http://purl.obolibrary.org/obo/afpo.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+    when accessing file'
 publications: []
 repository: https://github.com/h3abionet/afpo
 ---

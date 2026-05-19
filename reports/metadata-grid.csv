@@ -86,7 +86,6 @@ climatemodelskg,active,PASS
 clingen,active,PASS
 clinical-data-kp,active,PASS
 clinicalkg,active,PASS
-clinicaltrials,active,PASS
 clinicaltrialsgov,active,PASS
 clinvar,active,PASS
 clo,active,PASS
@@ -133,6 +132,7 @@ depmap,active,PASS
 dgidb,active,PASS
 dictybase,active,PASS
 dideo,active,PASS
+digcfdekg,active,PASS
 dip,active,PASS
 disbiome,active,PASS
 disdriv,active,PASS

@@ -125,7 +125,7 @@ products:
   product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -148,7 +148,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -231,7 +231,7 @@ products:
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -254,7 +254,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -337,7 +337,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -360,7 +360,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -444,7 +444,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 15371045
+  edge_count: 14998050
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -466,7 +466,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -550,7 +550,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 15371045
+  edge_count: 14998050
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -572,7 +572,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -655,7 +655,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -678,7 +678,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -761,7 +761,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 15371045
+  edge_count: 14998050
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -784,7 +784,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -867,7 +867,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 15371045
+  edge_count: 14998050
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -890,7 +890,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -973,7 +973,7 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 15371045
+  edge_count: 14998050
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -996,7 +996,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1449211
+  node_count: 1460060
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1094,10 +1094,12 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -2114,8 +2116,8 @@ publications:
 - id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
-    \ protein, genetic, and chemical interactions"
+  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
+    genetic, and chemical interactions
   year: '2020'
 - id: https://doi.org/10.1093/nar/gky1079
   journal: Nucleic Acids Research

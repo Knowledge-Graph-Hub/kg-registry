@@ -5,12 +5,12 @@ collection:
 - okn
 contacts:
 - category: Individual
+  label: Jim Balhoff
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
 - category: Individual
   contact_details:
   - contact_type: email
@@ -26,7 +26,7 @@ domains:
 homepage_url: https://github.com/INCATools/ubergraph/
 id: ubergraph
 infores_id: ubergraph
-last_modified_date: '2026-03-30T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -102,17 +102,17 @@ products:
   id: ubergraph.sparql
   name: Ubergraph SPARQL
   original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ubergraph
-  product_url: https://frink.apps.renci.org/ubergraph/sparql
+  - source: ubergraph
+    relation_type: prov:hadPrimarySource
+  product_url: https://apps.okn.us/ubergraph/sparql
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Ubergraph
   id: ubergraph.tpf
   name: Ubergraph TPF
   original_source:
-  - relation_type: prov:hadPrimarySource
-    source: ubergraph
-  product_url: https://frink.apps.renci.org/ldf/ubergraph
+  - source: ubergraph
+    relation_type: prov:hadPrimarySource
+  product_url: https://apps.okn.us/ldf/ubergraph
 - category: GraphProduct
   compatibility:
   - standard: biolink
