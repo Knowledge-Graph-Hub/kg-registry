@@ -40,14 +40,12 @@ products:
     source: primekg
   product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
-    when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 taxon:
 - NCBITaxon:9606

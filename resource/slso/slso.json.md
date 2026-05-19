@@ -9,7 +9,7 @@ original_source:
   source: slso
 product_url: http://purl.obolibrary.org/obo/slso.json
 warnings:
-- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-19_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

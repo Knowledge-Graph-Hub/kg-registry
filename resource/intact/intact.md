@@ -11,10 +11,10 @@ contacts:
   id: ebi
   label: IntAct Team (EMBL-EBI)
 creation_date: '2025-07-08T00:00:00Z'
-description: IntAct is an open, curated molecular interaction database maintained
-  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
-  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
-  along with curated datasets and documentation.
+description: "IntAct is an open, curated molecular interaction database maintained\
+  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
+  \ literature curation and direct submissions, and distributes data in PSI\u2011\
+  MI XML and MITAB formats along with curated datasets and documentation."
 domains:
 - proteomics
 - systems biology
@@ -864,12 +864,10 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -2113,7 +2111,7 @@ publications:
   - Prashansa Ratan
   - Gautam Shirodkar
   - Odilia Lu
-  - Bálint Mészáros
+  - "B\xE1lint M\xE9sz\xE1ros"
   - Xavier Watkins
   - Sangya Pundir
   - Luana Licata

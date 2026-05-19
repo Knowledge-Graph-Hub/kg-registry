@@ -9,7 +9,7 @@ original_source:
   source: rex
 product_url: http://purl.obolibrary.org/obo/rex.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-05-09_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-05-19_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

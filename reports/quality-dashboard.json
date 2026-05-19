@@ -12644,7 +12644,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-05-19T18:49:07Z",
+  "generated_at": "2026-05-19T19:27:41Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 144,
     "with_evaluation_page": 120,
@@ -12652,10 +12652,10 @@
   },
   "links": {
     "broken_urls": 492,
-    "cache_hits": 0,
+    "cache_hits": 3473,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 2981,
-    "live_checked_urls": 3473,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 3473,
     "unchecked_urls": 0
@@ -12664,7 +12664,7 @@
     "missing_format": 829,
     "missing_original_source": 25,
     "missing_product_url": 101,
-    "retrieval_warning_mentions": 668,
+    "retrieval_warning_mentions": 421,
     "total": 5104
   },
   "resource_count": 780,
@@ -12724,331 +12724,331 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://apps.okn.us/prokn/sparql"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.AminoAcid.nodes.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Isoform.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Isoform.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Anatomy.nodes.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.nodes.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.nodes.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.BIOACTIVITY.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.nodes.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.HAS_ISOFORM.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.PTM.TARGETS.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.DOWN_REGULATED.Experiment.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.IS_SITE_OF.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UNREGULATED.Experiment.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UP_REGULATED.Experiment.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.TARGETS.Protein.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Disease.SKOS_EXACT_MATCH.DiseaseOrPhenotype.edges.csv"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_PTM.PTM.edges.csv"
         }
@@ -13102,70 +13102,70 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-base.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-base.obo"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-base.owl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-full.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-full.obo"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-full.owl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-simple.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-simple.obo"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-simple.owl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl.json"
         }
@@ -13206,89 +13206,89 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/api/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/oma-proteins.fa.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/oma-uniprot.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/OMA.ttl.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/OmaGroups.orthoxml"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/OmaGroups.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/OmaHOGs.orthoxml"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/OmaServer.h5"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/current/OrthologousPairs.txt.gz"
         }
@@ -13330,56 +13330,56 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://alzkb.ai:7473/login"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://amigo.geneontology.org/amigo"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://orkg.org/api/rdf/dump"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -13414,62 +13414,62 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://alzkb.ai:7473/login"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -13511,53 +13511,53 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing#about"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing#case-studies"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing#download"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing#home"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing#screen"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://repo-hub.broadinstitute.org/repurposing-app"
         }
@@ -13610,61 +13610,61 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_genes.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_species.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/zdobnov-lab/orthodb"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.orthodb.org/api/"
         }
@@ -13699,26 +13699,26 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://alzkb.ai:7473/login"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -13766,63 +13766,63 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/blood_protein.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/brain_rna.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/normal_tissue.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/pathology.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/rna_celline.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/rna_single_cell.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/rna_tissue.tsv.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.proteinatlas.org/download/subcellular_location.tsv.zip"
         }
@@ -13864,47 +13864,47 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/about/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/experiment_details/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/sequence_similarity_search/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/statistics/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/"
         }

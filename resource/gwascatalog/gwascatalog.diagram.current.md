@@ -10,7 +10,7 @@ original_source:
   source: gwascatalog
 product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
 warnings:
-- File was not able to be retrieved when checked on 2026-05-09_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-19_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
   accessing file

@@ -342,12 +342,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap protein entity descriptions.
   format: json
@@ -358,12 +356,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap disease entity descriptions.
   format: json
@@ -374,12 +370,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap Gene Ontology entity descriptions.
   format: json
@@ -392,12 +386,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap pathway entity descriptions.
   format: json
@@ -408,12 +400,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: UniBioMap phenotype entity descriptions.
   format: json
@@ -424,14 +414,12 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-04-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphicalInterface
   description: Web interface for browsing UniBioMap resources and documentation.
   format: http

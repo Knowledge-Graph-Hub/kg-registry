@@ -57,8 +57,6 @@ products:
     source: tissues
   product_url: https://tissues.jensenlab.org/Downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-09: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
 - category: Product

@@ -98,12 +98,10 @@ products:
     source: expressionatlas
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-09: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 500 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error when
+    accessing file
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
     from GTEx, Human Protein Atlas and other major studies
@@ -552,7 +550,7 @@ publications:
   - Yanhui Hu
   - Nick Brown
   - Norbert Perrimon
-  - Juan Antonio Vizcaíno
+  - "Juan Antonio Vizca\xEDno"
   - Tony Burdett
   - Sarah Teichmann
   - Alvis Brazma
@@ -581,7 +579,7 @@ publications:
   - Marcela K Tello-Ruiz
   - Sunita Kumari
   - Doreen Ware
-  - Juan Antonio Vizcaíno
+  - "Juan Antonio Vizca\xEDno"
   - Tony Burdett
   - Sarah A Teichmann
   - Alvis Brazma

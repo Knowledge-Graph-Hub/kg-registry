@@ -10,6 +10,11 @@ original_source:
   source: plncdb
 product_url: http://plncdb.tobaccodb.org/
 warnings:
+- File was not able to be retrieved when checked on 2026-05-19_ Error connecting to
+  URL_ HTTPConnectionPool(host='plncdb.tobaccodb.org', port=80)_ Max retries exceeded
+  with url_ / (Caused by NameResolutionError("HTTPConnection(host='plncdb.tobaccodb.org',
+  port=80)_ Failed to resolve 'plncdb.tobaccodb.org' ([Errno -2] Name or service not
+  known)"))
 - File was not able to be retrieved when checked on 2026-05-09_ HTTP 403 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
