@@ -22,11 +22,13 @@ Entries in KG-Registry are either *Resources* or *Products*. Resources represent
 For more detail:
 - [Resources](https://kghub.org/kg-registry/docs/intro/resources.html)
 - [Products](https://kghub.org/kg-registry/docs/intro/products.html)
+- [Agent-Assisted Curation](https://kghub.org/kg-registry/docs/intro/agent-skills.html)
 - [Parquet Backend & Advanced Search](docs/parquet_backend.md)
 
 ## Site Development
 
 For developers working on the KG-Registry website and backend:
 - [Site Development Guide](README-sitedev.md) - Setup, deployment, and troubleshooting
+- [Agent Skills Guide](docs/intro/agent-skills.md) - Local agent-assisted curation workflows in `.agents/`
 - [Parquet Backend Documentation](docs/parquet_backend.md) - Database schema and querying
 - [Advanced Search Feature](advanced-search.html) - SQL-based resource discovery interface

@@ -59,6 +59,14 @@ Please [open an issue on the Registry's GitHub page](https://github.com/Knowledg
 
 Some resource pages are also maintained through scripted syncs from external registries and release feeds. See [External Syncs](../external-syncs.html) for the current list.
 
+## How does agent-assisted curation work?
+
+KG-Registry also includes local agent skills for curating and validating resource pages from a checked-out copy of the repository.
+
+These workflows live in the repository's `.agents/` directory and are intended for local use by curators working directly on source files under `resource/`.
+
+See [Agent Skills](agent-skills.html) for the available workflows, prerequisites, and usage guidance.
+
 ## Who manages the Registry?
 
 The KG-Registry is built and managed by members of the [Berkeley Bioinformatics Open-source Projects (BBOP) group](https://berkeleybop.github.io/) at the [Lawrence Berkeley National Laboratory](https://www.lbl.gov/).
