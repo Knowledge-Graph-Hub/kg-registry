@@ -5,6 +5,7 @@
       "Bash(cut:*)",
       "Bash(sort:*)",
       "Bash(find resource:*)",
+      "Bash(curl:*)",
       "Bash(uv run make validate-file:*)",
       "Bash(uv run make prettify-file:*)",
       "Bash(cat reports/curation_problems.tsv:*)",
