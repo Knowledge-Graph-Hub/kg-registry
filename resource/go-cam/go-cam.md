@@ -28,7 +28,7 @@ domains:
 homepage_url: http://geneontology.org/go-cam/docs
 id: go-cam
 infores_id: go-cam
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-19T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -68,8 +68,18 @@ products:
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+- category: DataModelProduct
+  description: LinkML YAML schema for representing Gene Ontology Causal Activity
+    Models (GO-CAMs)
+  format: yaml
+  id: go-cam.linkml-schema
+  name: GO-CAM LinkML Schema
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go-cam
+  product_url: https://raw.githubusercontent.com/geneontology/gocam-py/main/src/gocam/schema/gocam.yaml
 - category: ProgrammingInterface
-  connection_url: http://api.geneontology.org/api/
+  connection_url: http://api.geneontology.org/
   description: Programmatic access to GO-CAM models through the Gene Ontology API
   id: go-cam.api
   is_public: true
@@ -77,7 +87,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: go-cam
-  product_url: http://api.geneontology.org/api/
+  product_url: http://api.geneontology.org/
 - category: ProcessProduct
   description: Server-side component for storing, validating, and reasoning over GO-CAM
     models
