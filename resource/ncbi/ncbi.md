@@ -2,24 +2,28 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
-description: Stub Resource page for ncbi. This page was automatically generated because
-  it was referenced by other resources.
+description: The National Center for Biotechnology Information advances science and health by providing access to biomedical and genomic information, databases, tools, and services.
 domains:
-- stub
+  - biomedical
+homepage_url: https://www.ncbi.nlm.nih.gov/
 id: ncbi
-last_modified_date: '2026-02-26T00:00:00Z'
+last_modified_date: '2026-05-20T00:00:00Z'
 layout: resource_detail
-name: Ncbi
+license:
+  id: https://www.nlm.nih.gov/web_policies.html
+  label: Public Domain
+name: National Center for Biotechnology Information
 products:
-- category: DataModelProduct
-  description: Automatically generated stub product. Please update with accurate information.
-  id: gc
-  name: Gc (Stub)
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+  - category: DataModelProduct
+    description: NCBI Genetic Codes tables summarizing translation tables used in GenBank and the NCBI taxonomy.
+    id: ncbi.gc
+    name: NCBI Genetic Codes
+    product_url: https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: ncbi
 ---
 
-# Ncbi
+# National Center for Biotechnology Information
 
-This is an automatically generated stub page for ncbi. Please update with proper information.
+NCBI is a major biomedical information resource at the U.S. National Library of Medicine, offering databases, search systems, analysis tools, and download services across genomics, literature, taxonomy, and related domains.
