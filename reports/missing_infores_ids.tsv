@@ -19,6 +19,7 @@ aop-db	AOP-DB	Aggregator	https://www.epa.gov/healthresearch/adverse-outcome-path
 aop-wiki	AOP-Wiki	DataSource	https://aopwiki.org/	resource/aop-wiki/aop-wiki.md
 apo	Ascomycete phenotype ontology	Ontology	http://www.yeastgenome.org/	resource/apo/apo.md
 apollo_sv	Apollo Structured Vocabulary	Ontology	https://github.com/ApolloDev/apollo-sv	resource/apollo_sv/apollo_sv.md
+archs4	ARCHS4	DataSource	https://archs4.org/	resource/archs4/archs4.md
 aro	Antibiotic Resistance Ontology	Ontology	https://github.com/arpcard/aro	resource/aro/aro.md
 ato	Amphibian taxonomy	Ontology	http://www.amphibanat.org	resource/ato/ato.md
 atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource/atom/atom.md
@@ -62,6 +63,7 @@ ceph	Cephalopod Ontology	Ontology	https://github.com/obophenotype/cephalopod-ont
 cfde-ddkg	Data Distillery Knowledge Graph (DDKG)	KnowledgeGraph	https://dd-kg-ui.cfde.cloud/about	resource/cfde-ddkg/cfde-ddkg.md
 cfde-gse	Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)	KnowledgeGraph	https://cfde.cloud/gse/	resource/cfde-gse/cfde-gse.md
 cgnc	CGNC	DataSource	http://birdgenenames.org/cgnc/	resource/cgnc/cgnc.md
+chea	ChEA	DataSource	https://maayanlab.cloud/chea3/	resource/chea/chea.md
 chea-kg	ChEA-KG	KnowledgeGraph	https://maayanlab.cloud/chea-kg/	resource/chea-kg/chea-kg.md
 chemicalchecker	Chemical Checker	DataSource	http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/	resource/chemicalchecker/chemicalchecker.md
 cheminf	Chemical Information Ontology	Ontology	https://github.com/semanticchemistry/semanticchemistry	resource/cheminf/cheminf.md
@@ -148,7 +150,10 @@ emap	Mouse gross anatomy and development, timed	Ontology	http://emouseatlas.org	
 emapa	Mouse Developmental Anatomy Ontology	Ontology	http://www.informatics.jax.org/expression.shtml	resource/emapa/emapa.md
 embiology	EmBiology	KnowledgeGraph	https://www.embiology.com/	resource/embiology/embiology.md
 emikg	EMI KG	KnowledgeGraph	https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology	resource/emikg/emikg.md
+emind	eMIND	DataSource	https://research.bioinformatics.udel.edu/itextmine/emind	resource/emind/emind.md
 ena	European Nucleotide Archive (ENA)	DataSource		resource/ena/ena.md
+encode	ENCODE	DataSource	https://www.encodeproject.org/	resource/encode/encode.md
+enrichr	Enrichr	DataSource	https://maayanlab.cloud/Enrichr/	resource/enrichr/enrichr.md
 enrichr-kg	Enrichr-KG	KnowledgeGraph	https://maayanlab.cloud/enrichr-kg/	resource/enrichr-kg/enrichr-kg.md
 envo	Environment Ontology	Ontology	http://environmentontology.org/	resource/envo/envo.md
 eo	Plant Environment Ontology	Ontology	http://planteome.org/	resource/eo/eo.md
@@ -187,7 +192,7 @@ forum	FORUM	KnowledgeGraph	https://forum-webapp.semantic-metabolomics.fr/	resour
 fovt	FuTRES Ontology of Vertebrate Traits	Ontology	https://github.com/futres/fovt	resource/fovt/fovt.md
 fypo	Fission Yeast Phenotype Ontology	Ontology	https://github.com/pombase/fypo	resource/fypo/fypo.md
 gallont	Plant Gall Ontology	Ontology	https://adeans.github.io/gallont/	resource/gallont/gallont.md
-gard	Gard	DataSource		resource/gard/gard.md
+gard	Genetic and Rare Diseases Information Center	DataSource	https://rarediseases.info.nih.gov/	resource/gard/gard.md
 gaz	Gazetteer	Ontology	http://environmentontology.github.io/gaz/	resource/gaz/gaz.md
 gecko	Genomics Cohorts Knowledge Ontology	Ontology	https://github.com/IHCC-cohorts/GECKO	resource/gecko/gecko.md
 gemscript	Gemscript	DataSource	https://help.visionhealth.co.uk/DLM860/consultation_manager/Content/Whats%20New.htm	resource/gemscript/gemscript.md
@@ -204,7 +209,7 @@ genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/geno
 genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com/genophenoenvo/knowledge-graph	resource/genophenoenvo-kg/genophenoenvo-kg.md
 geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-entity-ontology/wiki	resource/geo/geo.md
 geoconnex	GEOCONNEX	KnowledgeGraph	https://docs.geoconnex.us/about/intro	resource/geoconnex/geoconnex.md
-geonames	Geonames	DataSource		resource/geonames/geonames.md
+geonames	GeoNames	DataSource	https://www.geonames.org/	resource/geonames/geonames.md
 gff	GFF	DataModel	http://www.sequenceontology.org/gff3.shtml	resource/gff/gff.md
 glkb	GLKB	DataSource	https://glkb.dcmb.med.umich.edu/	resource/glkb/glkb.md
 globi	Global Biotic Interactions (GloBI)	KnowledgeGraph	https://www.globalbioticinteractions.org/	resource/globi/globi.md
@@ -219,7 +224,7 @@ gp-kg	GP-KG	KnowledgeGraph	http://nlp.case.edu/public/data/GPKG-Predict/	resourc
 greengenes	Greengenes2	DataSource	https://greengenes2.ucsd.edu/	resource/greengenes/greengenes.md
 gro	Cereal Plant Gross Anatomy	Ontology	http://www.gramene.org/plant_ontology/	resource/gro/gro.md
 gsso	Gender, Sex, and Sexual Orientation (GSSO) ontology	Ontology	https://gsso.research.cchmc.org/	resource/gsso/gsso.md
-gtdb	Gtdb	DataSource		resource/gtdb/gtdb.md
+gtdb	Genome Taxonomy Database	DataSource	https://gtdb.ecogenomic.org/	resource/gtdb/gtdb.md
 gtrnadb	GtRNAdb	DataSource	https://gtrnadb.org/	resource/gtrnadb/gtrnadb.md
 gutmgene	GutMGene	DataSource	http://bio-computing.hrbmu.edu.cn/gutmgene	resource/gutmgene/gutmgene.md
 habronattus	Habronattus courtship	Ontology	http://www.mesquiteproject.org/ontology/Habronattus/index.html	resource/habronattus/habronattus.md
@@ -227,6 +232,8 @@ hald	Human Aging and Longevity Database	KnowledgeGraph	https://bis.zju.edu.cn/ha
 hancestro	Human Ancestry Ontology	Ontology	https://ebispot.github.io/hancestro/	resource/hancestro/hancestro.md
 hao	Hymenoptera Anatomy Ontology	Ontology	http://hymao.org	resource/hao/hao.md
 harmonizome-kg	Harmonizome-KG	KnowledgeGraph	https://maayanlab.cloud/harmonizome-kg/	resource/harmonizome-kg/harmonizome-kg.md
+hgnchpo	Hgnchpo	DataSource		resource/hgnchpo/hgnchpo.md
+hmaz	Hmaz	DataSource		resource/hmaz/hmaz.md
 hom	Homology Ontology	Ontology	https://github.com/BgeeDB/homology-ontology	resource/hom/hom.md
 hprd	HPRD	Aggregator	http://www.hprd.org/	resource/hprd/hprd.md
 hra-kg	Human Reference Atlas Knowledge Graph (HRA KG)	KnowledgeGraph	https://apps.humanatlas.io/dashboard/data	resource/hra-kg/hra-kg.md
@@ -239,16 +246,20 @@ humannet	HumanNet	DataSource	https://www.inetbio.org/humannet/	resource/humannet
 hydrologykg	SAWGraph Hydrology KG	KnowledgeGraph	https://sawgraph.github.io/	resource/hydrologykg/hydrologykg.md
 iao	Information Artifact Ontology	Ontology	https://github.com/information-artifact-ontology/IAO/	resource/iao/iao.md
 ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm.nih.gov/37020958/	resource/ibkh/ibkh.md
-icd11	Icd11	DataSource		resource/icd11/icd11.md
+icd11	ICD-11	DataSource	https://icd.who.int/en	resource/icd11/icd11.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
 ico	Informed Consent Ontology	Ontology	https://github.com/ICO-ontology/ICO	resource/ico/ico.md
-iconclass	Iconclass	DataSource		resource/iconclass/iconclass.md
+iconclass	ICONCLASS	DataSource	https://iconclass.org/	resource/iconclass/iconclass.md
 identifier-mappings	ID Mappings	KnowledgeGraph	https://www.wikidata.org/	resource/identifier-mappings/identifier-mappings.md
+idgd	Idgd	DataSource		resource/idgd/idgd.md
+idgp	Idgp	DataSource		resource/idgp/idgp.md
 ido	Infectious Disease Ontology	Ontology	http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology	resource/ido/ido.md
 idomal	Malaria Ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/idomal/idomal.md
 iev	Event (INOH pathway ontology)	Ontology	http://www.inoh.org	resource/iev/iev.md
 ikraph	iKraph	KnowledgeGraph	https://biokde.insilicom.com/	resource/ikraph/ikraph.md
+imex	Imex	DataSource		resource/imex/imex.md
 imodulondb	iModulonDB	DataSource	https://imodulondb.org/	resource/imodulondb/imodulondb.md
+impc	Impc	DataSource		resource/impc/impc.md
 imr	Molecule role (INOH Protein name/family name ontology)	Ontology	http://www.inoh.org	resource/imr/imr.md
 inchikey	InChIKey	DataModel	https://www.inchi-trust.org/	resource/inchikey/inchikey.md
 indra	INDRA	Aggregator	https://www.indra.bio/	resource/indra/indra.md
@@ -302,7 +313,7 @@ mfmo	Mammalian Feeding Muscle Ontology	Ontology	https://github.com/rdruzinsky/fe
 mfo	Medaka fish anatomy and development	Ontology		resource/mfo/mfo.md
 mfoem	Emotion Ontology	Ontology	https://github.com/jannahastings/emotion-ontology	resource/mfoem/mfoem.md
 mfomd	Mental Disease Ontology	Ontology	https://github.com/jannahastings/mental-functioning-ontology	resource/mfomd/mfomd.md
-mgi	Mgi	DataSource		resource/mgi/mgi.md
+mgi	Mouse Genome Informatics	DataSource	https://www.informatics.jax.org/	resource/mgi/mgi.md
 mgmlink	MGMLink	KnowledgeGraph		resource/mgmlink/mgmlink.md
 mgnify	MGnify	Aggregator		resource/mgnify/mgnify.md
 miapa	MIAPA Ontology	Ontology	http://www.evoio.org/wiki/MIAPA	resource/miapa/miapa.md
@@ -334,7 +345,7 @@ namsnetwork	NAMs Network	KnowledgeGraph	https://nams.network/	resource/namsnetwo
 nasa-gesdisc-kg	NASA-GESDISC-KG	KnowledgeGraph	https://disc.gsfc.nasa.gov	resource/nasa-gesdisc-kg/nasa-gesdisc-kg.md
 nbo	Neuro Behavior Ontology	Ontology	https://github.com/obo-behavior/behavior-ontology/	resource/nbo/nbo.md
 ncatsgardkg	NCATS GARD KG	KnowledgeGraph	https://github.com/ncats/RD-Clust	resource/ncatsgardkg/ncatsgardkg.md
-ncbi	Ncbi	DataSource		resource/ncbi/ncbi.md
+ncbi	National Center for Biotechnology Information	DataSource	https://www.ncbi.nlm.nih.gov/	resource/ncbi/ncbi.md
 ncipidkg	NCI-PID 2.0 KG	KnowledgeGraph	https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf	resource/ncipidkg/ncipidkg.md
 ncro	Non-Coding RNA Ontology	Ontology	http://omnisearch.soc.southalabama.edu/w/index.php/Ontology	resource/ncro/ncro.md
 nde	NIAID Data Ecosystem KG	KnowledgeGraph	https://data.niaid.nih.gov/	resource/nde/nde.md
@@ -345,13 +356,13 @@ nif_dysfunction	NIF Dysfunction	Ontology	http://neuinfo.org/	resource/nif_dysfun
 nif_grossanatomy	NIF Gross Anatomy	Ontology	http://neuinfo.org/	resource/nif_grossanatomy/nif_grossanatomy.md
 nihreporter	NIH Reporter	DataSource	https://reporter.nih.gov/	resource/nihreporter/nihreporter.md
 nikg	Neighborhood Information KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/neighborhood-kg/	resource/nikg/nikg.md
-nlm	Nlm	DataSource		resource/nlm/nlm.md
+nlm	National Library of Medicine	DataSource	https://www.nlm.nih.gov/	resource/nlm/nlm.md
 nlm-ckn	NLM-CKN	KnowledgeGraph		resource/nlm-ckn/nlm-ckn.md
 nmr	NMR-instrument specific component of metabolomics investigations	Ontology	http://msi-ontology.sourceforge.net/	resource/nmr/nmr.md
 nomen	NOMEN - A nomenclatural ontology for biological names	Ontology	https://github.com/SpeciesFileGroup/nomen	resource/nomen/nomen.md
 noncode	NONCODE	DataSource	http://www.noncode.org/	resource/noncode/noncode.md
 np-kg	NP-KG	KnowledgeGraph	https://doi.org/10.5281/zenodo.6814507	resource/np-kg/np-kg.md
-npass	Npass	DataSource		resource/npass/npass.md
+npass	NPASS	DataSource	https://bidd.group/NPASS/	resource/npass/npass.md
 npo	Neuron Phenotype Ontology	Ontology	https://bioportal.bioontology.org/ontologies/NPOKB	resource/npo/npo.md
 oae	Ontology of Adverse Events	Ontology	https://github.com/OAE-ontology/OAE/	resource/oae/oae.md
 oarcs	Ontology of Arthropod Circulatory Systems	Ontology	https://github.com/aszool/oarcs	resource/oarcs/oarcs.md
@@ -424,6 +435,7 @@ phewascat	PheWAS Catalog	Aggregator	https://phewascatalog.org/phewas/#home	resou
 phipo	Pathogen Host Interaction Phenotype Ontology	Ontology	https://github.com/PHI-base/phipo	resource/phipo/phipo.md
 phosphositeplus	PhosphoSitePlus	Aggregator	https://www.phosphosite.org/	resource/phosphositeplus/phosphositeplus.md
 pid	Pathway Interaction Database	DataSource	http://pid.nci.nih.gov/	resource/pid/pid.md
+pir	Pir	DataSource		resource/pir/pir.md
 pirbase	piRBase	Aggregator	http://bigdata.ibp.ac.cn/piRBase	resource/pirbase/pirbase.md
 pistoia-pgo	Pistoia Alliance Pharma General Ontology	Ontology	https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/	resource/pistoia-pgo/pistoia-pgo.md
 plana	planaria-ontology	Ontology	https://github.com/obophenotype/planaria-ontology	resource/plana/plana.md
@@ -436,6 +448,7 @@ ppo	Plant Phenology Ontology	Ontology	https://github.com/PlantPhenoOntology/PPO	
 proco	Process Chemistry Ontology	Ontology	https://github.com/proco-ontology/PROCO	resource/proco/proco.md
 progenomes	proGenomes	DataSource	https://progenomes.embl.de/	resource/progenomes/progenomes.md
 progeny	PROGENy	DataSource	https://saezlab.github.io/progeny/	resource/progeny/progeny.md
+prokn	Protein Knowledge Network	KnowledgeGraph	https://research.bioinformatics.udel.edu/ProKN/	resource/prokn/prokn.md
 propreo	Proteomics data and process provenance	Ontology	http://lsdis.cs.uga.edu/projects/glycomics/propreo/	resource/propreo/propreo.md
 protcid	ProtCID	DataSource	http://dunbrack2.fccc.edu/protcid/	resource/protcid/protcid.md
 proteomehd	ProteomeHD	DataSource	https://github.com/Rappsilber-Laboratory/ProteomeHD	resource/proteomehd/proteomehd.md
@@ -453,6 +466,7 @@ reacto	Reactome Entity Ontology (REACTO)	Resource	http://purl.obolibrary.org/obo
 rediportal	REDIportal	DataSource		resource/rediportal/rediportal.md
 redrugs	ReDrugs	KnowledgeGraph	http://redrugs.tw.rpi.edu/	resource/redrugs/redrugs.md
 refseq	RefSeq	DataSource	https://www.ncbi.nlm.nih.gov/refseq/	resource/refseq/refseq.md
+remap	Remap	DataSource		resource/remap/remap.md
 repohub	Drug Repurposing Hub	DataSource	https://repo-hub.broadinstitute.org/repurposing	resource/repohub/repohub.md
 reprotox-kg	ReproTox-KG	KnowledgeGraph	https://reprotox-kg.net/	resource/reprotox-kg/reprotox-kg.md
 resid	Protein covalent bond	Ontology	http://www.ebi.ac.uk/RESID/	resource/resid/resid.md
@@ -462,7 +476,7 @@ ribocentre	Ribocentre	DataSource	https://www.ribocentre.org/	resource/ribocentre
 ribovision	RiboVision	Resource	https://ribovision2.chemistry.gatech.edu/	resource/ribovision/ribovision.md
 rna-kg	RNA-KG	KnowledgeGraph	https://RNA-KG.biodata.di.unimi.it	resource/rna-kg/rna-kg.md
 rnao	RNA ontology	Ontology	https://github.com/bgsu-rna/rnao	resource/rnao/rnao.md
-ror	Ror	DataSource		resource/ror/ror.md
+ror	Research Organization Registry	DataSource	https://ror.org/	resource/ror/ror.md
 rs	Rat Strain Ontology	Ontology	http://rgd.mcw.edu/rgdweb/search/strains.html	resource/rs/rs.md
 ruralkg	Rural Resilience KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/rural-kg/	resource/ruralkg/ruralkg.md
 rxno	Name Reaction Ontology	Ontology	https://github.com/rsc-ontologies/rxno	resource/rxno/rxno.md
@@ -486,7 +500,6 @@ simap	SIMAP	DataSource		resource/simap/simap.md
 skm	Stress Knowledge Map	KnowledgeGraph	https://skm.nib.si/	resource/skm/skm.md
 skos	SKOS	DataModel	https://www.w3.org/2004/02/skos/	resource/skos/skos.md
 sldb	sldb	KnowledgeGraph	https://kghub.io/sldb/	resource/sldb/sldb.md
-slm	Slm	DataSource		resource/slm/slm.md
 slso	Space Life Sciences Ontology	Ontology	https://github.com/nasa/LSDAO	resource/slso/slso.md
 smart	SMART	DataSource	https://smart.embl.de/	resource/smart/smart.md
 snodb	snoDB	DataSource	https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/	resource/snodb/snodb.md
@@ -496,15 +509,16 @@ sockg	SOC-KG	KnowledgeGraph	https://idir.sockg.org/	resource/sockg/sockg.md
 sopharm	Suggested Ontology for Pharmacogenomics	Ontology	http://www.loria.fr/~coulet/sopharm2.0_description.php	resource/sopharm/sopharm.md
 spatialkg	SAWGraph Spatial KG	KnowledgeGraph	https://sawgraph.github.io/	resource/spatialkg/spatialkg.md
 spd	Spider Ontology	Ontology	http://research.amnh.org/atol/files/	resource/spd/spd.md
-spdx	Spdx	DataSource		resource/spdx/spdx.md
+spdx	SPDX License List	DataModel	https://spdx.org/licenses/	resource/spdx/spdx.md
 spoke-genelab	SPOKE GeneLab	KnowledgeGraph	https://github.com/BaranziniLab/spoke_genelab	resource/spoke-genelab/spoke-genelab.md
 spoke-okn	SPOKE-OKN	KnowledgeGraph	https://spoke.ucsf.edu	resource/spoke-okn/spoke-okn.md
+sra	Sra	DataSource		resource/sra/sra.md
 srpdb	SRPDB	DataSource	https://rth.dk/resources/rnp/SRPDB/	resource/srpdb/srpdb.md
 stato	The Statistical Methods Ontology	Ontology	http://stato-ontology.org/	resource/stato/stato.md
 stellar	STELLAR	Resource	https://snap.stanford.edu/stellar/	resource/stellar/stellar.md
-sty	Sty	DataSource		resource/sty/sty.md
+sty	UMLS Semantic Types	Ontology	https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html	resource/sty/sty.md
 sudokn	SUDOKN	KnowledgeGraph	https://projects.engineering.asu.edu/sudokn/	resource/sudokn/sudokn.md
-swisslipid	swisslipid	DataSource	https://www.swisslipids.org/	resource/swisslipid/swisslipid.md
+swisslipid	SwissLipids	DataSource	https://www.swisslipids.org/	resource/swisslipid/swisslipid.md
 swissmodel	SWISS-MODEL	DataSource	https://swissmodel.expasy.org/	resource/swissmodel/swissmodel.md
 swo	Software ontology	Ontology	https://github.com/allysonlister/swo	resource/swo/swo.md
 symp	Symptom Ontology	Ontology	https://github.com/DiseaseOntology/SymptomOntology	resource/symp/symp.md

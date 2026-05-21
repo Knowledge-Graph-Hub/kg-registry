@@ -38,12 +38,14 @@ products:
   product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   repository: https://github.com/monarch-initiative/phenio
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compatibility:
   - standard: biolink

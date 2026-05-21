@@ -928,10 +928,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1626,6 +1628,90 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: Latest human gene-level ARCHS4 expression matrix in HDF5 format using
+    Ensembl 107 annotations
+  format: hdf5
+  id: archs4.human.gene_counts
+  name: ARCHS4 Human Gene Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 61899310543
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5
+- category: Product
+  description: Latest mouse gene-level ARCHS4 expression matrix in HDF5 format using
+    Ensembl 107 annotations
+  format: hdf5
+  id: archs4.mouse.gene_counts
+  name: ARCHS4 Mouse Gene Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 49065676268
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/mouse_gene_v2.latest.h5
+- category: Product
+  description: Latest human transcript-level ARCHS4 expression matrix in HDF5 format
+    using Ensembl 107 annotations
+  format: hdf5
+  id: archs4.human.transcript_counts
+  name: ARCHS4 Human Transcript Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 192013010374
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/human_transcript_v2.latest.h5
+- category: Product
+  description: Latest mouse transcript-level ARCHS4 expression matrix in HDF5 format
+    using Ensembl 107 annotations
+  format: hdf5
+  id: archs4.mouse.transcript_counts
+  name: ARCHS4 Mouse Transcript Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 113637723557
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/mouse_transcript_v2.latest.h5
+- category: Product
+  description: Collection page for ARCHS4 Zoo downloads covering selected additional
+    species beyond human and mouse
+  format: hdf5
+  id: archs4.zoo
+  name: ARCHS4 Zoo Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_url: https://archs4.org/zoo
 publications:
 - authors:
   - Dyer SC

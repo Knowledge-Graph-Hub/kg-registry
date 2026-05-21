@@ -6,6 +6,6 @@ name: Protein Knowledge Network TPF
 original_source:
 - relation_type: prov:hadPrimarySource
   source: prokn
-product_url: https://frink.apps.renci.org/ldf/prokn
+product_url: https://apps.okn.us/ldf/prokn
 layout: product_detail
 ---

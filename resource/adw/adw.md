@@ -5,10 +5,10 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Animal Diversity Web technical staff
   contact_details:
   - contact_type: email
     value: adw_geeks@umich.edu
+  label: Animal Diversity Web technical staff
 creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
@@ -33,6 +33,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/adw.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
     when accessing file'
 publications: []
 ---

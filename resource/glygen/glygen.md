@@ -63,6 +63,258 @@ products:
     source: glygen
   product_file_size: 1252064
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
+- category: GraphProduct
+  description: GlyGen amino acid nodes used in ProKN
+  format: csv
+  id: prokn.glygen.aminoacid.nodes
+  name: ProKN GlyGen AminoAcid Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 853
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.AminoAcid.nodes.csv
+- category: GraphProduct
+  description: GlyGen glycoprotein glycosylated site edges
+  format: csv
+  id: prokn.glygen.glycoprotein.glycosylated_at.glycosylationsite.edges
+  name: ProKN GlyGen Glycosylated Site Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 14046942
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv
+- category: GraphProduct
+  description: GlyGen glycoprotein evidence edges
+  format: csv
+  id: prokn.glygen.glycoprotein.has_evidence.glycoproteinevidence.edges
+  name: ProKN GlyGen Evidence Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 33863751
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv
+- category: GraphProduct
+  description: GlyGen glycoprotein PRO entry edges
+  format: csv
+  id: prokn.glygen.glycoprotein.has_pro_entry.gpid2pro.edges
+  name: ProKN GlyGen PRO Entry Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 15557656
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv
+- category: GraphProduct
+  description: GlyGen glycoprotein isoform sequence edges
+  format: csv
+  id: prokn.glygen.glycoprotein.sequence.isoform.edges
+  name: ProKN GlyGen Isoform Sequence Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 7097575
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.SEQUENCE.Isoform.edges.csv
+- category: GraphProduct
+  description: GlyGen glycoprotein protein sequence edges
+  format: csv
+  id: prokn.glygen.glycoprotein.sequence.protein.edges
+  name: ProKN GlyGen Protein Sequence Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 7773165
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.SEQUENCE.Protein.edges.csv
+- category: GraphProduct
+  description: GlyGen glycoprotein evidence citation edges
+  format: csv
+  id: prokn.glygen.glycoproteinevidence.citation.glycoproteincitation.edges
+  name: ProKN GlyGen Evidence Citation Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 571669
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv
+- category: GraphProduct
+  description: GlyGen glycosylation enzyme protein edges
+  format: csv
+  id: prokn.glygen.glycosylation.has_enzyme_protein.protein.edges
+  name: ProKN GlyGen Enzyme Protein Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 23734
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv
+- category: GraphProduct
+  description: GlyGen glycosylation site saccharide edges
+  format: csv
+  id: prokn.glygen.glycosylationsite.has_saccharide.glytoucan.edges
+  name: ProKN GlyGen Saccharide Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 11352916
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv
+- category: GraphProduct
+  description: GlyGen glycosylation site location edges
+  format: csv
+  id: prokn.glygen.glycosylationsite.location.glygenlocation.edges
+  name: ProKN GlyGen Site Location Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 12742560
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv
+- category: GraphProduct
+  description: GlyGen glycosyltransferase reaction enzyme edges
+  format: csv
+  id: prokn.glygen.glycosyltransferasereaction.has_enzyme_protein_gr.protein.edges
+  name: ProKN GlyGen Reaction Enzyme Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 25008
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv
+- category: GraphProduct
+  description: GlyGen location amino acid edges
+  format: csv
+  id: prokn.glygen.glygenlocation.has_amino_acid.aminoacid.edges
+  name: ProKN GlyGen Location Amino Acid Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 12480310
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv
+- category: GraphProduct
+  description: GlyGen residue attached by glycosylation edges
+  format: csv
+  id: prokn.glygen.glygenresidue.attached_by.glycosylation.edges
+  name: ProKN GlyGen Residue Attachment Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 87915
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv
+- category: GraphProduct
+  description: GlyGen residue parent edges
+  format: csv
+  id: prokn.glygen.glygenresidue.has_parent.glygenresidue.edges
+  name: ProKN GlyGen Residue Parent Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 18592
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv
+- category: GraphProduct
+  description: GlyGen glytoucan canonical residue edges
+  format: csv
+  id: prokn.glygen.glytoucan.has_canonical_residue.glygenresidue.edges
+  name: ProKN GlyGen Canonical Residue Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 21661105
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv
+- category: GraphProduct
+  description: GlyGen glytoucan glyco-sequence edges
+  format: csv
+  id: prokn.glygen.glytoucan.has_glycosequence.gyglycosequence.edges
+  name: ProKN GlyGen Glycosequence Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 31816753
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv
+- category: GraphProduct
+  description: GlyGen glytoucan motif edges
+  format: csv
+  id: prokn.glygen.glytoucan.has_motif.glycanmotif.edges
+  name: ProKN GlyGen Motif Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 4403891
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv
+- category: GraphProduct
+  description: GlyGen glytoucan source edges
+  format: csv
+  id: prokn.glygen.glytoucan.is_from_source.glygensrc.edges
+  name: ProKN GlyGen Source Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 7768294
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv
+- category: GraphProduct
+  description: GlyGen glytoucan synthesized by reaction edges
+  format: csv
+  id: prokn.glygen.glytoucan.synthesized_by.glycosyltransferasereaction.edges
+  name: ProKN GlyGen Synthesized By Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 54721397
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv
+- category: GraphProduct
+  description: GlyGen protein isoform edges
+  format: csv
+  id: prokn.glygen.protein.has_isoform.isoform.edges
+  name: ProKN GlyGen Protein Isoform Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1357770
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Isoform.edges.csv
+- category: GraphProduct
+  description: GlyGen protein isoform protein edges
+  format: csv
+  id: prokn.glygen.protein.has_isoform.protein.edges
+  name: ProKN GlyGen Protein Isoform Protein Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 653113
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Protein.edges.csv
 publications:
 - authors:
   - Kahsay R

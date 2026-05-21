@@ -161,7 +161,8 @@ kgr:adw a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "adw" ;
     dcterms:license "Not specified" ;
-    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:adw.owl ;
     schema1:name "Animal natural history and life history" ;
     skos:inScheme "biological systems" ;
     adms:status "Inactive" ;
@@ -498,6 +499,32 @@ kgr:arax a schema1:Aggregator ;
     skos:related "translator" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/Expander-Agent> .
+
+kgr:archs4 a schema1:DataSource ;
+    rdfs:label "ARCHS4" ;
+    dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ARCHS4 is a Ma'ayan Lab resource for uniformly processed public RNA-seq data that provides gene and transcript count matrices, metadata search, and interactive exploration for large collections of human and mouse samples aggregated from GEO and SRA." ;
+    dcterms:identifier "archs4" ;
+    dcterms:isReferencedBy <doi:10.1038/s41467-018-03751-6> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:archs4.human.gene_counts,
+        kgr:archs4.human.transcript_counts,
+        kgr:archs4.mouse.gene_counts,
+        kgr:archs4.mouse.transcript_counts,
+        kgr:archs4.portal,
+        kgr:archs4.zoo,
+        kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries ;
+    schema1:name "ARCHS4" ;
+    doap:repository <https://github.com/MaayanLab/archs4> ;
+    skos:inScheme "biomedical",
+        "genomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://archs4.org/> .
 
 kgr:aro a schema1:Ontology ;
     rdfs:label "Antibiotic Resistance Ontology" ;
@@ -1710,17 +1737,40 @@ kgr:cgnc a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <http://birdgenenames.org/cgnc/> .
 
+kgr:chea a schema1:DataSource ;
+    rdfs:label "ChEA" ;
+    dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ChEA is a family of transcription factor enrichment resources developed by the Ma'ayan Lab, spanning the original ChIP Enrichment Analysis database and later ChEA2 and ChEA3 releases that assemble transcription factor target gene sets from ChIP-X experiments and other orthogonal omics data." ;
+    dcterms:identifier "chea" ;
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btq466>,
+        <doi:10.1093/nar/gkz446> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:chea-kg.api,
+        kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea-kg.portal,
+        kgr:chea.api,
+        kgr:chea.libraries,
+        kgr:chea.portal ;
+    schema1:name "ChEA" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/chea3/> .
+
 kgr:chea-kg a schema1:KnowledgeGraph ;
     rdfs:label "ChEA-KG" ;
     dcterms:created "2025-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "ChEA-KG is a knowledge graph built around the ChEA (ChIP Enrichment Analysis) database that integrates chromatin immunoprecipitation sequencing data with transcription factor binding sites, gene regulatory networks, and functional annotations to provide comprehensive insights into transcriptional regulation across cell types and conditions." ;
+    dcterms:description "ChEA-KG is a Ma'ayan Lab transcription factor knowledge graph and web resource associated with the ChEA3 platform, integrating transcription factor target gene libraries, coexpression networks, benchmarking datasets, and interactive query results for transcription factor enrichment analysis." ;
     dcterms:identifier "chea-kg" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkz446> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2025-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:chea-kg.api,
-        kgr:chea-kg.chipseq,
         kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
         kgr:chea-kg.portal ;
     schema1:name "ChEA-KG" ;
     doap:repository <https://github.com/MaayanLab/chea-kg> ;
@@ -2291,6 +2341,7 @@ kgr:clinvar a schema1:DataSource ;
         kgr:kg-monarch.graph.neo4j.nodes,
         kgr:kg-monarch.graph.rdf,
         kgr:pheknowlator.graph,
+        kgr:prokn.clinvar.gene.associated_with.diseaseorphenotype.edges,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "clinvar" ;
@@ -4361,6 +4412,25 @@ kgr:emikg a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology> .
 
+kgr:emind a schema1:DataSource ;
+    rdfs:label "eMIND" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "eMIND is a University of Delaware and Protein Information Resource text-mining workflow for extracting protein-coding variant impacts in Alzheimer's disease and related dementias from the biomedical literature." ;
+    dcterms:identifier "emind" ;
+    dcterms:isReferencedBy <doi:10.1101/2023.09.07.556602> ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:emind.json,
+        kgr:emind.site,
+        kgr:prokn.emind.protein.has_variant.variant.edges,
+        kgr:prokn.emind.variant.associated_with.disease.edges,
+        kgr:prokn.emind.variant.impact.disease.edges,
+        kgr:prokn.emind.variant.impact.protein.edges ;
+    schema1:name "eMIND" ;
+    skos:inScheme "biomedical",
+        "genomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://research.bioinformatics.udel.edu/itextmine/emind> .
+
 kgr:ena a schema1:DataSource ;
     rdfs:label "European Nucleotide Archive (ENA)" ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -4382,14 +4452,62 @@ kgr:ena a schema1:DataSource ;
         "genomics" ;
     adms:status "Active" .
 
+kgr:encode a schema1:DataSource ;
+    rdfs:label "ENCODE" ;
+    dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Encyclopedia of DNA Elements (ENCODE) is an NHGRI-funded international consortium and data resource that catalogs functional elements in the human genome and related model systems using large-scale functional genomics assays, standardized processing pipelines, and openly accessible metadata." ;
+    dcterms:identifier "encode" ;
+    dcterms:isReferencedBy <doi:10.1038/nature11247> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries,
+        kgr:encode.annotations,
+        kgr:encode.api,
+        kgr:encode.experiment-matrix,
+        kgr:encode.portal ;
+    schema1:name "ENCODE" ;
+    doap:repository <https://github.com/ENCODE-DCC/encoded> ;
+    skos:inScheme "genomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.encodeproject.org/> .
+
+kgr:enrichr a schema1:DataSource ;
+    rdfs:label "Enrichr" ;
+    dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Enrichr is a Ma'ayan Lab web-based gene set enrichment analysis resource that accepts gene lists and related inputs, tests them against hundreds of curated and crowd-sourced gene set libraries, and provides ranked enrichment results, visualizations, and programmatic access." ;
+    dcterms:identifier "enrichr" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkw377>,
+        <doi:10.1186/1471-2105-14-128> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries,
+        kgr:enrichr-kg.api,
+        kgr:enrichr-kg.graph,
+        kgr:enrichr-kg.portal,
+        kgr:enrichr.api,
+        kgr:enrichr.library-statistics,
+        kgr:enrichr.portal ;
+    schema1:name "Enrichr" ;
+    doap:repository <https://github.com/MaayanLab/enrichr_issues> ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://maayanlab.cloud/Enrichr/> .
+
 kgr:enrichr-kg a schema1:KnowledgeGraph ;
     rdfs:label "Enrichr-KG" ;
     dcterms:created "2025-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Enrichr-KG is a comprehensive knowledge graph that integrates gene set enrichment analysis libraries from Enrichr, connecting genes to biological terms, pathways, diseases, drugs, and other functional annotations across multiple domains and species to enable multi-layered biological discovery and hypothesis generation." ;
+    dcterms:description "Enrichr-KG is a Ma'ayan Lab knowledge graph and enrichment web resource built from Enrichr gene set libraries, connecting genes to pathways, diseases, drugs, cell types, ontologies, and other functional annotations for graph-based exploration and enrichment analysis." ;
     dcterms:identifier "enrichr-kg" ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkad393> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2025-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:enrichr-kg.api,
         kgr:enrichr-kg.graph,
@@ -4418,6 +4536,11 @@ kgr:ensembl a schema1:DataSource ;
         <NCBITaxon:7955>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:aop-db.data,
+        kgr:archs4.human.gene_counts,
+        kgr:archs4.human.transcript_counts,
+        kgr:archs4.mouse.gene_counts,
+        kgr:archs4.mouse.transcript_counts,
+        kgr:archs4.zoo,
         kgr:ensembl.api.perl,
         kgr:ensembl.api.rest,
         kgr:ensembl.biomart,
@@ -5347,15 +5470,16 @@ kgr:gallont a schema1:Ontology ;
     foaf:homepage <https://adeans.github.io/gallont/> .
 
 kgr:gard a schema1:DataSource ;
-    rdfs:label "Gard" ;
+    rdfs:label "Genetic and Rare Diseases Information Center" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for gard. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Genetic and Rare Diseases Information Center provides free, reliable, and easy-to-understand information and resources about rare and genetic diseases." ;
     dcterms:identifier "gard" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.gard.tsv ;
-    schema1:name "Gard" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Genetic and Rare Diseases Information Center" ;
+    skos:inScheme "health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://rarediseases.info.nih.gov/> .
 
 kgr:gaz a schema1:Ontology ;
     rdfs:label "Gazetteer" ;
@@ -5779,7 +5903,15 @@ kgr:geo a schema1:Ontology ;
     dcterms:identifier "geo" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:geo.owl,
+    schema1:hasPart kgr:archs4.human.gene_counts,
+        kgr:archs4.human.transcript_counts,
+        kgr:archs4.mouse.gene_counts,
+        kgr:archs4.mouse.transcript_counts,
+        kgr:archs4.zoo,
+        kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries,
+        kgr:geo.owl,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
         kgr:string.database,
@@ -5809,17 +5941,19 @@ kgr:geoconnex a schema1:KnowledgeGraph ;
     foaf:homepage <https://docs.geoconnex.us/about/intro> .
 
 kgr:geonames a schema1:DataSource ;
-    rdfs:label "Geonames" ;
+    rdfs:label "GeoNames" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for geonames. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "GeoNames is a geographical database covering all countries and providing over eleven million place names through downloads and web services." ;
     dcterms:identifier "geonames" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:feature,
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:geonames.feature-codes,
         kgr:obo-db-ingest.geonames.tsv,
         kgr:orkg.dump ;
-    schema1:name "Geonames" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "GeoNames" ;
+    skos:inScheme "general" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.geonames.org/> .
 
 kgr:gff a schema1:DataModel ;
     rdfs:label "GFF" ;
@@ -5992,7 +6126,28 @@ kgr:glygen a schema1:DataSource ;
     schema1:hasPart kgr:biomarkerkg.nodes.biomarker,
         kgr:glygen.api,
         kgr:glygen.data.site,
-        kgr:glygen.site ;
+        kgr:glygen.site,
+        kgr:prokn.glygen.aminoacid.nodes,
+        kgr:prokn.glygen.glycoprotein.glycosylated_at.glycosylationsite.edges,
+        kgr:prokn.glygen.glycoprotein.has_evidence.glycoproteinevidence.edges,
+        kgr:prokn.glygen.glycoprotein.has_pro_entry.gpid2pro.edges,
+        kgr:prokn.glygen.glycoprotein.sequence.isoform.edges,
+        kgr:prokn.glygen.glycoprotein.sequence.protein.edges,
+        kgr:prokn.glygen.glycoproteinevidence.citation.glycoproteincitation.edges,
+        kgr:prokn.glygen.glycosylation.has_enzyme_protein.protein.edges,
+        kgr:prokn.glygen.glycosylationsite.has_saccharide.glytoucan.edges,
+        kgr:prokn.glygen.glycosylationsite.location.glygenlocation.edges,
+        kgr:prokn.glygen.glycosyltransferasereaction.has_enzyme_protein_gr.protein.edges,
+        kgr:prokn.glygen.glygenlocation.has_amino_acid.aminoacid.edges,
+        kgr:prokn.glygen.glygenresidue.attached_by.glycosylation.edges,
+        kgr:prokn.glygen.glygenresidue.has_parent.glygenresidue.edges,
+        kgr:prokn.glygen.glytoucan.has_canonical_residue.glygenresidue.edges,
+        kgr:prokn.glygen.glytoucan.has_glycosequence.gyglycosequence.edges,
+        kgr:prokn.glygen.glytoucan.has_motif.glycanmotif.edges,
+        kgr:prokn.glygen.glytoucan.is_from_source.glygensrc.edges,
+        kgr:prokn.glygen.glytoucan.synthesized_by.glycosyltransferasereaction.edges,
+        kgr:prokn.glygen.protein.has_isoform.isoform.edges,
+        kgr:prokn.glygen.protein.has_isoform.protein.edges ;
     schema1:name "GlyGen" ;
     doap:repository <https://github.com/glygener/glygen-backend-api> ;
     skos:inScheme "biological systems",
@@ -6102,6 +6257,29 @@ kgr:go a schema1:Ontology ;
         kgr:obo-db-ingest.bigg.compartment.sssom.tsv,
         kgr:orkg.dump,
         kgr:pheknowlator.graph,
+        kgr:prokn.go.goterm.is_a.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_negative_effect.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_or_within.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_or_within_negative_effect.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_or_within_positive_effect.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_positive_effect.goterm.edges,
+        kgr:prokn.go.protein.colocalizes_with.goterm.edges,
+        kgr:prokn.go.protein.contributes_to.goterm.edges,
+        kgr:prokn.go.protein.enables.goterm.edges,
+        kgr:prokn.go.protein.involved_in.goterm.edges,
+        kgr:prokn.go.protein.is_active_in.goterm.edges,
+        kgr:prokn.go.protein.located_in.goterm.edges,
+        kgr:prokn.go.protein.not_acts_upstream_of_or_within.goterm.edges,
+        kgr:prokn.go.protein.not_acts_upstream_of_or_within_negative_effect.goterm.edges,
+        kgr:prokn.go.protein.not_colocalizes_with.goterm.edges,
+        kgr:prokn.go.protein.not_contributes_to.goterm.edges,
+        kgr:prokn.go.protein.not_enables.goterm.edges,
+        kgr:prokn.go.protein.not_involved_in.goterm.edges,
+        kgr:prokn.go.protein.not_is_active_in.goterm.edges,
+        kgr:prokn.go.protein.not_located_in.goterm.edges,
+        kgr:prokn.go.protein.not_part_of.goterm.edges,
+        kgr:prokn.go.protein.part_of.goterm.edges,
         kgr:proteomehd.data,
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
@@ -6283,16 +6461,17 @@ kgr:gsso a schema1:Ontology ;
     foaf:homepage <https://gsso.research.cchmc.org/> .
 
 kgr:gtdb a schema1:DataSource ;
-    rdfs:label "Gtdb" ;
+    rdfs:label "Genome Taxonomy Database" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for gtdb. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Genome Taxonomy Database provides a standardized bacterial and archaeal taxonomy derived from genome phylogeny." ;
     dcterms:identifier "gtdb" ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.gtdb.tsv ;
-    schema1:name "Gtdb" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Genome Taxonomy Database" ;
+    skos:inScheme "microbiology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://gtdb.ecogenomic.org/> .
 
 kgr:gtex a schema1:DataSource ;
     rdfs:label "GTEx" ;
@@ -6306,6 +6485,9 @@ kgr:gtex a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:automat.gtex,
         kgr:bioteque.embeddings,
+        kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries,
         kgr:epigraphdb.graph,
         kgr:genecards.expression.data,
         kgr:gtex.api,
@@ -6313,6 +6495,11 @@ kgr:gtex a schema1:DataSource ;
         kgr:gtex.dbgap-data,
         kgr:gtex.eqtl-data,
         kgr:gtex.portal,
+        kgr:prokn.gtexexp.anatomy.nodes,
+        kgr:prokn.gtexexp.gene.expressed_in.anatomy.edges,
+        kgr:prokn.gtexexp.gtexexp.expressed_in.anatomy.edges,
+        kgr:prokn.gtexexp.gtexexp.expressed_in.gene.edges,
+        kgr:prokn.gtexexp.gtexexp.has_expression.expbins.edges,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "gtex" ;
@@ -6621,6 +6808,7 @@ kgr:hgnc a schema1:DataSource ;
         kgr:obo-db-ingest.hgnc.tsv,
         kgr:omim.mim2gene,
         kgr:pheknowlator.graph,
+        kgr:prokn.hgncuniprot.gene.is_protein.protein.edges,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -6644,6 +6832,31 @@ kgr:hgnc a schema1:DataSource ;
     skos:notation "FAIRsharing.amcv1e" ;
     adms:status "Active" ;
     foaf:homepage <https://www.genenames.org/> .
+
+kgr:hgnchpo a schema1:DataSource ;
+    rdfs:label "Hgnchpo" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for hgnchpo. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "hgnchpo" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges ;
+    schema1:name "Hgnchpo" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
+kgr:hmaz a schema1:DataSource ;
+    rdfs:label "Hmaz" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for hmaz. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "hmaz" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges,
+        kgr:prokn.hmaz.anatomy.nodes ;
+    schema1:name "Hmaz" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:hmdb a schema1:Aggregator ;
     rdfs:label "Human Metabolome Database" ;
@@ -7222,15 +7435,16 @@ kgr:icd10cm a schema1:Ontology ;
     foaf:homepage <https://icd10cmtool.cdc.gov/> .
 
 kgr:icd11 a schema1:DataSource ;
-    rdfs:label "Icd11" ;
+    rdfs:label "ICD-11" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for icd11. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "ICD-11 is the eleventh revision of the International Classification of Diseases and serves as the World Health Organization's global standard for diagnostic health information." ;
     dcterms:identifier "icd11" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.icd11.tsv ;
-    schema1:name "Icd11" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "ICD-11" ;
+    skos:inScheme "clinical" ;
+    adms:status "Active" ;
+    foaf:homepage <https://icd.who.int/en> .
 
 kgr:icees-kg a schema1:KnowledgeGraph ;
     rdfs:label "Exposures KP (icees-kg)" ;
@@ -7287,18 +7501,19 @@ kgr:ico a schema1:Ontology ;
     foaf:homepage <https://github.com/ICO-ontology/ICO> .
 
 kgr:iconclass a schema1:DataSource ;
-    rdfs:label "Iconclass" ;
+    rdfs:label "ICONCLASS" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for iconclass. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "ICONCLASS is a comprehensive classification system for the subjects and content of images, used widely by museums, libraries, and other cultural heritage collections." ;
     dcterms:identifier "iconclass" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.iconclass.json,
         kgr:obo-db-ingest.iconclass.obo,
         kgr:obo-db-ingest.iconclass.owl,
         kgr:obo-db-ingest.iconclass.tsv ;
-    schema1:name "Iconclass" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "ICONCLASS" ;
+    skos:inScheme "other" ;
+    adms:status "Active" ;
+    foaf:homepage <https://iconclass.org/> .
 
 kgr:identifier-mappings a schema1:KnowledgeGraph ;
     rdfs:label "ID Mappings" ;
@@ -7312,6 +7527,30 @@ kgr:identifier-mappings a schema1:KnowledgeGraph ;
     skos:inScheme "general" ;
     adms:status "Active" ;
     foaf:homepage <https://www.wikidata.org/> .
+
+kgr:idgd a schema1:DataSource ;
+    rdfs:label "Idgd" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for idgd. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "idgd" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges,
+        kgr:prokn.idgd.compound.nodes ;
+    schema1:name "Idgd" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
+kgr:idgp a schema1:DataSource ;
+    rdfs:label "Idgp" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for idgp. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "idgp" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.idgp.compound.bioactivity.protein.edges,
+        kgr:prokn.idgp.compound.nodes ;
+    schema1:name "Idgp" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:idisk a schema1:KnowledgeGraph ;
     rdfs:label "integrated Dietary Supplement Knowledge Base" ;
@@ -7400,6 +7639,19 @@ kgr:ikraph a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://biokde.insilicom.com/> .
 
+kgr:imex a schema1:DataSource ;
+    rdfs:label "Imex" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for imex. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "imex" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.imex.complex.nodes,
+        kgr:prokn.imex.protein.interacts_with.protein.edges,
+        kgr:prokn.imex.protein.participates_in.complex.edges ;
+    schema1:name "Imex" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:imodulondb a schema1:DataSource ;
     rdfs:label "iModulonDB" ;
     dcterms:created "2025-11-06T00:00:00+00:00"^^xsd:dateTime ;
@@ -7420,6 +7672,28 @@ kgr:imodulondb a schema1:DataSource ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://imodulondb.org/> .
+
+kgr:impc a schema1:DataSource ;
+    rdfs:label "Impc" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for impc. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "impc" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.impc.impcallele.impc_ensembl_id.impcmousegene.edges,
+        kgr:prokn.impc.impchumangene.interacts_with.impchumangene.edges,
+        kgr:prokn.impc.impchumangene.interacts_with.impcmousegene.edges,
+        kgr:prokn.impc.impchumangene.orthologous_to.impcmousegene.edges,
+        kgr:prokn.impc.impcmousegene.impc_mouse_allele_id.impcallele.edges,
+        kgr:prokn.impc.impcmousegene.impc_mouse_alleles.impcallele.edges,
+        kgr:prokn.impc.impcmousegene.interacts_with.impchumangene.edges,
+        kgr:prokn.impc.impcmousegene.interacts_with.impcmousegene.edges,
+        kgr:prokn.impc.impcmousegene.orthologous_to.impchumangene.edges,
+        kgr:prokn.impc.imppublication.impc_alleles.impcallele.edges,
+        kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
+        kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges ;
+    schema1:name "Impc" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:imr a schema1:Ontology ;
     rdfs:label "Molecule role (INOH Protein name/family name ontology)" ;
@@ -7607,6 +7881,8 @@ kgr:interpro a schema1:DataSource ;
         kgr:obo-db-ingest.interpro.obo,
         kgr:obo-db-ingest.interpro.owl,
         kgr:obo-db-ingest.interpro.tsv,
+        kgr:prokn.interpro.domain.is_a.domain.edges,
+        kgr:prokn.interpro.protein.has_domain.domain.edges,
         kgr:spoke.graph,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
@@ -7663,7 +7939,9 @@ kgr:iptmnet a schema1:DataSource ;
     dcterms:identifier "iptmnet" ;
     dcterms:isReferencedBy <PMID:29145615> ;
     dcterms:modified "2025-11-13T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:kinace.portal ;
+    schema1:hasPart kgr:kinace.portal,
+        kgr:prokn.iptmnet.protein.catalyzes.ptmsite.edges,
+        kgr:prokn.iptmnet.protein.has_site.site.edges ;
     schema1:identifier "iptmnet" ;
     schema1:name "iPTMnet" ;
     skos:inScheme "proteomics" ;
@@ -7908,7 +8186,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-05-19T18:36:44+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-19T19:13:55+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:kg-monarch.associations.all,
@@ -8173,6 +8451,12 @@ kgr:lincs a schema1:DataSource ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:lincs.api,
         kgr:lincs.portal,
+        kgr:prokn.lincs.compound.in_similarity_relationship_with.compound.edges,
+        kgr:prokn.lincs.compound.negatively_regulates.gene.edges,
+        kgr:prokn.lincs.compound.positively_regulates.gene.edges,
+        kgr:prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges,
+        kgr:prokn.lincs_p100.perturbagen.is_used_in.experiment.edges,
+        kgr:prokn.lincs_p100.ptmsite.is_site.site.edges,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "lincs" ;
@@ -8971,15 +9255,16 @@ kgr:mgd a schema1:Aggregator ;
     foaf:homepage <https://www.informatics.jax.org/> .
 
 kgr:mgi a schema1:DataSource ;
-    rdfs:label "Mgi" ;
+    rdfs:label "Mouse Genome Informatics" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for mgi. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "Mouse Genome Informatics is the international database resource for the laboratory mouse, providing integrated genetic, genomic, and biological data to support studies of human health and disease." ;
     dcterms:identifier "mgi" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.mgi.tsv ;
-    schema1:name "Mgi" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Mouse Genome Informatics" ;
+    skos:inScheme "genomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.informatics.jax.org/> .
 
 kgr:mgmlink a schema1:KnowledgeGraph ;
     rdfs:label "MGMLink" ;
@@ -9681,6 +9966,11 @@ kgr:msigdb a schema1:DataSource ;
         kgr:msigdb.gene_families,
         kgr:msigdb.investigate,
         kgr:obo-db-ingest.msigdb.tsv,
+        kgr:prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.has_marker_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.has_signature_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:identifier "msigdb" ;
@@ -10110,17 +10400,18 @@ kgr:nikg a schema1:KnowledgeGraph ;
     foaf:homepage <https://frink.renci.org/registry/kgs/neighborhood-kg/> .
 
 kgr:nlm a schema1:DataSource ;
-    rdfs:label "Nlm" ;
+    rdfs:label "National Library of Medicine" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for nlm. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The National Library of Medicine is the world's largest biomedical library and a national resource for health professionals, scientists, and the public." ;
     dcterms:identifier "nlm" ;
     dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
-    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:obo-db-ingest.nlm.tsv,
-        kgr:publisher ;
-    schema1:name "Nlm" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:obo-db-ingest.nlm.tsv ;
+    schema1:name "National Library of Medicine" ;
+    skos:inScheme "health",
+        "literature" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.nlm.nih.gov/> .
 
 kgr:nlm-ckn a schema1:KnowledgeGraph ;
     rdfs:label "NLM-CKN" ;
@@ -10215,15 +10506,16 @@ kgr:np-kg a schema1:KnowledgeGraph ;
     foaf:homepage <https://doi.org/10.5281/zenodo.6814507> .
 
 kgr:npass a schema1:DataSource ;
-    rdfs:label "Npass" ;
+    rdfs:label "NPASS" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for npass. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "NPASS is a natural products database that integrates species sources, chemical structures, biological targets, quantitative activity data, and ADME-toxicity information." ;
     dcterms:identifier "npass" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.npass.tsv ;
-    schema1:name "Npass" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "NPASS" ;
+    skos:inScheme "drug discovery" ;
+    adms:status "Active" ;
+    foaf:homepage <https://bidd.group/NPASS/> .
 
 kgr:npo a schema1:Ontology ;
     rdfs:label "Neuron Phenotype Ontology" ;
@@ -10685,11 +10977,6 @@ kgr:obo-db-ingest a schema1:Aggregator ;
         kgr:obo-db-ingest.signor.obo,
         kgr:obo-db-ingest.signor.owl,
         kgr:obo-db-ingest.signor.tsv,
-        kgr:obo-db-ingest.slm.json,
-        kgr:obo-db-ingest.slm.obo,
-        kgr:obo-db-ingest.slm.owl,
-        kgr:obo-db-ingest.slm.sssom.tsv,
-        kgr:obo-db-ingest.slm.tsv,
         kgr:obo-db-ingest.spdx.json,
         kgr:obo-db-ingest.spdx.obo,
         kgr:obo-db-ingest.spdx.owl,
@@ -10698,6 +10985,11 @@ kgr:obo-db-ingest a schema1:Aggregator ;
         kgr:obo-db-ingest.sty.obo,
         kgr:obo-db-ingest.sty.owl,
         kgr:obo-db-ingest.sty.tsv,
+        kgr:obo-db-ingest.swisslipid.json,
+        kgr:obo-db-ingest.swisslipid.obo,
+        kgr:obo-db-ingest.swisslipid.owl,
+        kgr:obo-db-ingest.swisslipid.sssom.tsv,
+        kgr:obo-db-ingest.swisslipid.tsv,
         kgr:obo-db-ingest.uniprot.json,
         kgr:obo-db-ingest.uniprot.obo,
         kgr:obo-db-ingest.uniprot.owl,
@@ -12509,6 +12801,21 @@ kgr:pid a schema1:DataSource ;
     adms:status "Inactive" ;
     foaf:homepage <http://pid.nci.nih.gov/> .
 
+kgr:pir a schema1:DataSource ;
+    rdfs:label "Pir" ;
+    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for pir. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "pir" ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.pir.compound.skos_exact_match.compound.edges,
+        kgr:prokn.pir.gene.skos_exact_match.impc_gene.edges,
+        kgr:prokn.pir.gene.skos_exact_match.impchumangene.edges,
+        kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
+        kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges ;
+    schema1:name "Pir" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
+
 kgr:pirbase a schema1:Aggregator ;
     rdfs:label "piRBase" ;
     dcterms:created "2014-01-01T00:00:00+00:00"^^xsd:dateTime ;
@@ -12927,6 +13234,127 @@ kgr:progeny a schema1:DataSource ;
     foaf:homepage <https://saezlab.github.io/progeny/> ;
     foaf:maker kgr:saezlab .
 
+kgr:prokn a schema1:KnowledgeGraph ;
+    rdfs:label "Protein Knowledge Network" ;
+    dcterms:created "2026-01-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Protein Knowledge Network (ProKN) integrates protein-centric data with the genomic-centric datasets of the Common Fund Data Ecosystem (CFDE), spanning heterogeneous biological data types across multiple domains to foster CFDE re-use and collaboration through enhanced connectivity and data integration, enabling new capabilities for functional genomics and systems-level understanding of disease mechanisms." ;
+    dcterms:identifier "prokn" ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:prokn.api,
+        kgr:prokn.clinvar.gene.associated_with.diseaseorphenotype.edges,
+        kgr:prokn.downloads,
+        kgr:prokn.emind.protein.has_variant.variant.edges,
+        kgr:prokn.emind.variant.associated_with.disease.edges,
+        kgr:prokn.emind.variant.impact.disease.edges,
+        kgr:prokn.emind.variant.impact.protein.edges,
+        kgr:prokn.explorer,
+        kgr:prokn.glygen.aminoacid.nodes,
+        kgr:prokn.glygen.glycoprotein.glycosylated_at.glycosylationsite.edges,
+        kgr:prokn.glygen.glycoprotein.has_evidence.glycoproteinevidence.edges,
+        kgr:prokn.glygen.glycoprotein.has_pro_entry.gpid2pro.edges,
+        kgr:prokn.glygen.glycoprotein.sequence.isoform.edges,
+        kgr:prokn.glygen.glycoprotein.sequence.protein.edges,
+        kgr:prokn.glygen.glycoproteinevidence.citation.glycoproteincitation.edges,
+        kgr:prokn.glygen.glycosylation.has_enzyme_protein.protein.edges,
+        kgr:prokn.glygen.glycosylationsite.has_saccharide.glytoucan.edges,
+        kgr:prokn.glygen.glycosylationsite.location.glygenlocation.edges,
+        kgr:prokn.glygen.glycosyltransferasereaction.has_enzyme_protein_gr.protein.edges,
+        kgr:prokn.glygen.glygenlocation.has_amino_acid.aminoacid.edges,
+        kgr:prokn.glygen.glygenresidue.attached_by.glycosylation.edges,
+        kgr:prokn.glygen.glygenresidue.has_parent.glygenresidue.edges,
+        kgr:prokn.glygen.glytoucan.has_canonical_residue.glygenresidue.edges,
+        kgr:prokn.glygen.glytoucan.has_glycosequence.gyglycosequence.edges,
+        kgr:prokn.glygen.glytoucan.has_motif.glycanmotif.edges,
+        kgr:prokn.glygen.glytoucan.is_from_source.glygensrc.edges,
+        kgr:prokn.glygen.glytoucan.synthesized_by.glycosyltransferasereaction.edges,
+        kgr:prokn.glygen.protein.has_isoform.isoform.edges,
+        kgr:prokn.glygen.protein.has_isoform.protein.edges,
+        kgr:prokn.go.goterm.is_a.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_negative_effect.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_or_within.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_or_within_negative_effect.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_or_within_positive_effect.goterm.edges,
+        kgr:prokn.go.protein.acts_upstream_of_positive_effect.goterm.edges,
+        kgr:prokn.go.protein.colocalizes_with.goterm.edges,
+        kgr:prokn.go.protein.contributes_to.goterm.edges,
+        kgr:prokn.go.protein.enables.goterm.edges,
+        kgr:prokn.go.protein.involved_in.goterm.edges,
+        kgr:prokn.go.protein.is_active_in.goterm.edges,
+        kgr:prokn.go.protein.located_in.goterm.edges,
+        kgr:prokn.go.protein.not_acts_upstream_of_or_within.goterm.edges,
+        kgr:prokn.go.protein.not_acts_upstream_of_or_within_negative_effect.goterm.edges,
+        kgr:prokn.go.protein.not_colocalizes_with.goterm.edges,
+        kgr:prokn.go.protein.not_contributes_to.goterm.edges,
+        kgr:prokn.go.protein.not_enables.goterm.edges,
+        kgr:prokn.go.protein.not_involved_in.goterm.edges,
+        kgr:prokn.go.protein.not_is_active_in.goterm.edges,
+        kgr:prokn.go.protein.not_located_in.goterm.edges,
+        kgr:prokn.go.protein.not_part_of.goterm.edges,
+        kgr:prokn.go.protein.part_of.goterm.edges,
+        kgr:prokn.gtexexp.anatomy.nodes,
+        kgr:prokn.gtexexp.gene.expressed_in.anatomy.edges,
+        kgr:prokn.gtexexp.gtexexp.expressed_in.anatomy.edges,
+        kgr:prokn.gtexexp.gtexexp.expressed_in.gene.edges,
+        kgr:prokn.gtexexp.gtexexp.has_expression.expbins.edges,
+        kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges,
+        kgr:prokn.hgncuniprot.gene.is_protein.protein.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges,
+        kgr:prokn.hmaz.anatomy.nodes,
+        kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges,
+        kgr:prokn.idgd.compound.nodes,
+        kgr:prokn.idgp.compound.bioactivity.protein.edges,
+        kgr:prokn.idgp.compound.nodes,
+        kgr:prokn.imex.complex.nodes,
+        kgr:prokn.imex.protein.interacts_with.protein.edges,
+        kgr:prokn.imex.protein.participates_in.complex.edges,
+        kgr:prokn.impc.impcallele.impc_ensembl_id.impcmousegene.edges,
+        kgr:prokn.impc.impchumangene.interacts_with.impchumangene.edges,
+        kgr:prokn.impc.impchumangene.interacts_with.impcmousegene.edges,
+        kgr:prokn.impc.impchumangene.orthologous_to.impcmousegene.edges,
+        kgr:prokn.impc.impcmousegene.impc_mouse_allele_id.impcallele.edges,
+        kgr:prokn.impc.impcmousegene.impc_mouse_alleles.impcallele.edges,
+        kgr:prokn.impc.impcmousegene.interacts_with.impchumangene.edges,
+        kgr:prokn.impc.impcmousegene.interacts_with.impcmousegene.edges,
+        kgr:prokn.impc.impcmousegene.orthologous_to.impchumangene.edges,
+        kgr:prokn.impc.imppublication.impc_alleles.impcallele.edges,
+        kgr:prokn.interpro.domain.is_a.domain.edges,
+        kgr:prokn.interpro.protein.has_domain.domain.edges,
+        kgr:prokn.iptmnet.protein.catalyzes.ptmsite.edges,
+        kgr:prokn.iptmnet.protein.has_site.site.edges,
+        kgr:prokn.lincs.compound.in_similarity_relationship_with.compound.edges,
+        kgr:prokn.lincs.compound.negatively_regulates.gene.edges,
+        kgr:prokn.lincs.compound.positively_regulates.gene.edges,
+        kgr:prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges,
+        kgr:prokn.lincs_p100.perturbagen.is_used_in.experiment.edges,
+        kgr:prokn.lincs_p100.ptmsite.is_site.site.edges,
+        kgr:prokn.mcp,
+        kgr:prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.has_marker_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.has_signature_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges,
+        kgr:prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges,
+        kgr:prokn.pir.compound.skos_exact_match.compound.edges,
+        kgr:prokn.pir.gene.skos_exact_match.impc_gene.edges,
+        kgr:prokn.pir.gene.skos_exact_match.impchumangene.edges,
+        kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
+        kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges,
+        kgr:prokn.reactome.pathway.event_of.pathway.edges,
+        kgr:prokn.reactome.protein.participates_in.pathway.edges,
+        kgr:prokn.sparql,
+        kgr:prokn.tpf,
+        kgr:prokn.uniprotkb.protein.has_site.site.edges,
+        kgr:prokn.uniprotkb.protein.has_variant.variant.edges ;
+    schema1:name "Protein Knowledge Network" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "proteomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://research.bioinformatics.udel.edu/ProKN/> .
+
 kgr:propreo a schema1:Ontology ;
     rdfs:label "Proteomics data and process provenance" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -13184,7 +13612,9 @@ kgr:pubtator a schema1:DataSource ;
     dcterms:license <https://www.ncbi.nlm.nih.gov/home/about/policies/> ;
     dcterms:modified "2025-12-13T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:gnbr.graph,
+    schema1:hasPart kgr:emind.json,
+        kgr:emind.site,
+        kgr:gnbr.graph,
         kgr:pubtator.api,
         kgr:pubtator.bulk,
         kgr:pubtator.site ;
@@ -13359,6 +13789,8 @@ kgr:reactome a schema1:DataSource ;
         kgr:obo-db-ingest.reactome.tsv,
         kgr:obo-db-ingest.rhea.sssom.tsv,
         kgr:pheknowlator.graph,
+        kgr:prokn.reactome.pathway.event_of.pathway.edges,
+        kgr:prokn.reactome.protein.participates_in.pathway.edges,
         kgr:proteomehd.data,
         kgr:rampdb.database,
         kgr:reactome.api,
@@ -13471,6 +13903,19 @@ kgr:refseq a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.ncbi.nlm.nih.gov/refseq/> ;
     foaf:maker kgr:ncbi .
+
+kgr:remap a schema1:DataSource ;
+    rdfs:label "Remap" ;
+    dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for remap. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "remap" ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries ;
+    schema1:name "Remap" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:repodb a schema1:DataSource ;
     rdfs:label "RepoDB" ;
@@ -13829,15 +14274,17 @@ kgr:robokop a schema1:KnowledgeGraph ;
     foaf:homepage <http://robokop.renci.org> .
 
 kgr:ror a schema1:DataSource ;
-    rdfs:label "Ror" ;
+    rdfs:label "Research Organization Registry" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for ror. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Research Organization Registry is a global, community-led registry of open persistent identifiers and metadata for research and funding organizations." ;
     dcterms:identifier "ror" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.ror.tsv ;
-    schema1:name "Ror" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Research Organization Registry" ;
+    skos:inScheme "general" ;
+    adms:status "Active" ;
+    foaf:homepage <https://ror.org/> .
 
 kgr:rs a schema1:Ontology ;
     rdfs:label "Rat Strain Ontology" ;
@@ -14418,17 +14865,6 @@ kgr:sldb a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://kghub.io/sldb/> .
 
-kgr:slm a schema1:DataSource ;
-    rdfs:label "Slm" ;
-    dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for slm. This page was automatically generated because it was referenced by other resources." ;
-    dcterms:identifier "slm" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:obo-db-ingest.slm.tsv ;
-    schema1:name "Slm" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
-
 kgr:slso a schema1:Ontology ;
     rdfs:label "Space Life Sciences Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -14727,19 +15163,23 @@ kgr:spd a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <http://research.amnh.org/atol/files/> .
 
-kgr:spdx a schema1:DataSource ;
-    rdfs:label "Spdx" ;
+kgr:spdx a schema1:DataModel ;
+    rdfs:label "SPDX License List" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for spdx. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The SPDX License List is a standardized catalog of license and exception identifiers used by the SPDX specification to support consistent software, data, hardware, and documentation licensing metadata." ;
     dcterms:identifier "spdx" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.spdx.json,
         kgr:obo-db-ingest.spdx.obo,
         kgr:obo-db-ingest.spdx.owl,
         kgr:obo-db-ingest.spdx.tsv ;
-    schema1:name "Spdx" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "SPDX License List" ;
+    skos:altLabel "SPDX",
+        "System Package Data Exchange" ;
+    skos:inScheme "general",
+        "information technology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://spdx.org/licenses/> .
 
 kgr:spoke a schema1:KnowledgeGraph ;
     rdfs:label "SPOKE" ;
@@ -14796,6 +15236,21 @@ kgr:spoke-okn a schema1:KnowledgeGraph ;
     skos:inScheme "general" ;
     adms:status "Active" ;
     foaf:homepage <https://spoke.ucsf.edu> .
+
+kgr:sra a schema1:DataSource ;
+    rdfs:label "Sra" ;
+    dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for sra. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "sra" ;
+    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:archs4.human.gene_counts,
+        kgr:archs4.human.transcript_counts,
+        kgr:archs4.mouse.gene_counts,
+        kgr:archs4.mouse.transcript_counts,
+        kgr:archs4.zoo ;
+    schema1:name "Sra" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:sri-reference-kg a schema1:KnowledgeGraph ;
     rdfs:label "SRI-Reference KG" ;
@@ -14994,17 +15449,21 @@ kgr:string a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://string-db.org/> .
 
-kgr:sty a schema1:DataSource ;
-    rdfs:label "Sty" ;
+kgr:sty a schema1:Ontology ;
+    rdfs:label "UMLS Semantic Types" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for sty. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "UMLS Semantic Types are the broad subject categories in the UMLS Semantic Network used to categorize concepts in the UMLS Metathesaurus." ;
     dcterms:identifier "sty" ;
     dcterms:license <https://lhncbc.nlm.nih.gov/semanticnetwork/> ;
-    dcterms:modified "2026-04-16T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:obo-db-ingest.sty.tsv ;
-    schema1:name "Sty" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "UMLS Semantic Types" ;
+    skos:altLabel "STY",
+        "UMLS semantic types" ;
+    skos:inScheme "biomedical",
+        "health" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html> .
 
 kgr:sudokn a schema1:KnowledgeGraph ;
     rdfs:label "SUDOKN" ;
@@ -15040,13 +15499,15 @@ kgr:suppkg a schema1:KnowledgeGraph ;
     foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG> .
 
 kgr:swisslipid a schema1:DataSource ;
-    rdfs:label "swisslipid" ;
+    rdfs:label "SwissLipids" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SwissLipids is a knowledge resource for lipids and their biology." ;
     dcterms:identifier "swisslipid" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btv285> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:swisslipid.api,
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:obo-db-ingest.swisslipid.tsv,
+        kgr:swisslipid.api,
         kgr:swisslipid.enzymes,
         kgr:swisslipid.evidences,
         kgr:swisslipid.go,
@@ -15054,8 +15515,10 @@ kgr:swisslipid a schema1:DataSource ;
         kgr:swisslipid.lipids2uniprot,
         kgr:swisslipid.portal,
         kgr:swisslipid.tissues ;
-    schema1:name "swisslipid" ;
+    schema1:name "SwissLipids" ;
     doap:repository <https://www.swisslipids.org/> ;
+    skos:altLabel "slm",
+        "swisslipid" ;
     skos:inScheme "chemistry and biochemistry" ;
     adms:status "Active" ;
     foaf:homepage <https://www.swisslipids.org/> .
@@ -15295,7 +15758,10 @@ kgr:tcga a schema1:DataSource ;
     dcterms:identifier "tcga" ;
     dcterms:modified "2025-11-08T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:tcga.gdc_api,
+    schema1:hasPart kgr:chea-kg.graph,
+        kgr:chea-kg.libraries,
+        kgr:chea.libraries,
+        kgr:tcga.gdc_api,
         kgr:tcga.gdc_portal,
         kgr:tcga.gdc_submission ;
     schema1:identifier "tcga" ;
@@ -16005,6 +16471,9 @@ kgr:uniprot a schema1:DataSource ;
         kgr:pheknowlator.graph,
         kgr:pombase.genes-products,
         kgr:pombase.to-uniprot,
+        kgr:prokn.hgncuniprot.gene.is_protein.protein.edges,
+        kgr:prokn.uniprotkb.protein.has_site.site.edges,
+        kgr:prokn.uniprotkb.protein.has_variant.variant.edges,
         kgr:proteomehd.data,
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
@@ -16856,6 +17325,11 @@ kgr:ado.owl a schema1:OntologyProduct ;
     dcterms:description "Alzheimer's Disease Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/ado.owl> .
 
+kgr:adw.owl a schema1:OntologyProduct ;
+    rdfs:label "adw.owl" ;
+    dcterms:description "Animal natural history and life history ontology in OWL format." ;
+    schema1:url <http://purl.obolibrary.org/obo/adw.owl> .
+
 kgr:aeo.owl a schema1:OntologyProduct ;
     rdfs:label "aeo.owl" ;
     dcterms:description "Anatomical Entity Ontology in OWL format" ;
@@ -17055,6 +17529,11 @@ kgr:arax.ui a schema1:GraphicalInterface ;
     rdfs:label "ARAX Web UI" ;
     dcterms:description "Web browser interface for querying ARAX and exploring answers. Provides interactive visual query graph builder, TRAPI operations input, TRAPI JSON input, and ARAXi workflow language input methods." ;
     schema1:url <https://arax.ncats.io/> .
+
+kgr:archs4.portal a schema1:GraphicalInterface ;
+    rdfs:label "ARCHS4 Portal" ;
+    dcterms:description "Web portal for metadata search, expression lookup, signature search, and interactive exploration of ARCHS4 sample and gene spaces" ;
+    schema1:url <https://archs4.org/> .
 
 kgr:aro.owl a schema1:OntologyProduct ;
     rdfs:label "aro.owl" ;
@@ -17905,24 +18384,15 @@ kgr:cgnc.genes a schema1:Product ;
     dcterms:description "All CGNC public data, including CGNC ID, Entrez Gene ID, Ensembl Gene ID, gene symbol, gene name, gene synonym, curation status and last edit date." ;
     schema1:url <http://birdgenenames.org/cgnc/downloads.jsp?file=standard> .
 
-kgr:chea-kg.api a schema1:ProgrammingInterface ;
-    rdfs:label "ChEA-KG API" ;
-    dcterms:description "RESTful API for programmatic access to ChIP-seq derived transcription factor binding data" ;
-    schema1:url <https://maayanlab.cloud/chea-kg/api/> .
+kgr:chea.api a schema1:ProgrammingInterface ;
+    rdfs:label "ChEA API" ;
+    dcterms:description "ChEA3 enrichment API for submitting gene sets and retrieving transcription factor ranking results" ;
+    schema1:url <https://maayanlab.cloud/chea3/api/enrich/> .
 
-kgr:chea-kg.chipseq a schema1:Product ;
-    rdfs:label "ChEA ChIP-seq Data" ;
-    dcterms:description "Processed ChIP-seq datasets with transcription factor binding sites and target gene annotations" ;
-    schema1:url <https://maayanlab.cloud/chea3/index.html#content4-13> .
-
-kgr:chea-kg.graph a schema1:GraphProduct ;
-    rdfs:label "ChEA-KG Database" ;
-    dcterms:description "Neo4j database containing transcription factors, target genes, and regulatory relationships from ChIP-seq studies" .
-
-kgr:chea-kg.portal a schema1:GraphicalInterface ;
-    rdfs:label "ChEA-KG Explorer" ;
-    dcterms:description "Interactive web interface for exploring transcription factor-target gene relationships with regulatory network visualization" ;
-    schema1:url <https://maayanlab.cloud/chea-kg/> .
+kgr:chea.portal a schema1:GraphicalInterface ;
+    rdfs:label "ChEA Explorer" ;
+    dcterms:description "Public ChEA3 web interface for transcription factor enrichment analysis and result visualization" ;
+    schema1:url <https://maayanlab.cloud/chea3/> .
 
 kgr:chebi.chebi_core.obo a schema1:OntologyProduct ;
     rdfs:label "chebi_core, no xrefs" ;
@@ -19723,19 +20193,40 @@ kgr:ena.training a schema1:DocumentationProduct ;
     dcterms:description "Training resources for ENA users, including tutorials and webinars." ;
     schema1:url <https://www.ebi.ac.uk/training/services/ena> .
 
-kgr:enrichr-kg.api a schema1:ProgrammingInterface ;
-    rdfs:label "Enrichr-KG API" ;
-    dcterms:description "API endpoints for programmatic access to Enrichr-KG graph data and enrichment analysis" ;
-    schema1:url <https://maayanlab.cloud/enrichr-kg/api/> .
+kgr:encode.annotations a schema1:GraphicalInterface ;
+    rdfs:label "ENCODE Encyclopedia Annotations" ;
+    dcterms:description "Encyclopedia annotations view for released candidate cis-regulatory elements and other integrated ENCODE annotation products" ;
+    schema1:url <https://www.encodeproject.org/search/?type=Annotation&encyclopedia_version=current&annotation_type=candidate+Cis-Regulatory+Elements&annotation_type=chromatin+state&annotation_type=representative+DNase+hypersensitivity+sites&status=released> .
 
-kgr:enrichr-kg.graph a schema1:GraphProduct ;
-    rdfs:label "Enrichr-KG Neo4j Database" ;
-    dcterms:description "Neo4j graph database containing integrated gene set enrichment libraries with genes, terms, pathways, and functional annotations" .
+kgr:encode.api a schema1:ProgrammingInterface ;
+    rdfs:label "ENCODE REST API" ;
+    dcterms:description "REST API for retrieving ENCODE metadata and released objects in JSON format and performing structured search queries" ;
+    schema1:url <https://www.encodeproject.org/help/rest-api/> .
 
-kgr:enrichr-kg.portal a schema1:GraphicalInterface ;
-    rdfs:label "Enrichr-KG Explorer" ;
-    dcterms:description "Interactive web interface for exploring the Enrichr-KG knowledge graph with single and two-term search capabilities" ;
-    schema1:url <https://maayanlab.cloud/enrichr-kg/> .
+kgr:encode.experiment-matrix a schema1:GraphicalInterface ;
+    rdfs:label "ENCODE Experiment Matrix" ;
+    dcterms:description "Experiment matrix interface for browsing released ENCODE experiments across assays, biosamples, targets, and organisms" ;
+    schema1:url <https://www.encodeproject.org/matrix/?type=Experiment> .
+
+kgr:encode.portal a schema1:GraphicalInterface ;
+    rdfs:label "ENCODE Portal" ;
+    dcterms:description "Main ENCODE portal for searching, browsing, and filtering released functional genomics experiments, biosamples, files, and annotations" ;
+    schema1:url <https://www.encodeproject.org/> .
+
+kgr:enrichr.api a schema1:ProgrammingInterface ;
+    rdfs:label "Enrichr API" ;
+    dcterms:description "REST API for submitting gene lists, retrieving enrichment results, exporting analyses, and querying Enrichr programmatically" ;
+    schema1:url <https://maayanlab.cloud/Enrichr/help#api> .
+
+kgr:enrichr.library-statistics a schema1:Product ;
+    rdfs:label "Enrichr Library Statistics" ;
+    dcterms:description "JSON endpoint listing Enrichr gene set libraries with category assignments, term counts, gene coverage, and source links" ;
+    schema1:url <https://maayanlab.cloud/Enrichr/datasetStatistics> .
+
+kgr:enrichr.portal a schema1:GraphicalInterface ;
+    rdfs:label "Enrichr Web Portal" ;
+    dcterms:description "Main Enrichr web interface for submitting gene sets, exploring enrichment results, browsing libraries, and viewing interactive visualizations" ;
+    schema1:url <https://maayanlab.cloud/Enrichr/> .
 
 kgr:ensembl.api.perl a schema1:ProgrammingInterface ;
     rdfs:label "Ensembl Perl API" ;
@@ -20282,10 +20773,6 @@ kgr:fbsp.owl a schema1:OntologyProduct ;
     dcterms:description "Fly taxonomy in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/fbsp.owl> .
 
-kgr:feature a schema1:DataModelProduct ;
-    rdfs:label "Feature (Stub)" ;
-    dcterms:description "Automatically generated stub product. Please update with accurate information." .
-
 kgr:fideo.owl a schema1:OntologyProduct ;
     rdfs:label "fideo.owl" ;
     dcterms:description "Food Interactions with Drugs Evidence Ontology in OWL format" ;
@@ -20613,10 +21100,6 @@ kgr:gbif.portal a schema1:GraphicalInterface ;
     dcterms:description "Web portal for searching, filtering, and discovering occurrence records, species information, datasets, and organizations with interactive mapping and download capabilities" ;
     schema1:url <https://www.gbif.org/> .
 
-kgr:gc a schema1:DataModelProduct ;
-    rdfs:label "Gc (Stub)" ;
-    dcterms:description "Automatically generated stub product. Please update with accurate information." .
-
 kgr:gdc.api a schema1:ProgrammingInterface ;
     rdfs:label "GDC API" ;
     dcterms:description "REST API documentation and endpoint for programmatic access to GDC metadata and files." ;
@@ -20854,6 +21337,11 @@ kgr:geoconnex.tpf a schema1:ProgrammingInterface ;
     rdfs:label "GEOCONNEX TPF" ;
     dcterms:description "Triple Pattern Fragments endpoint for GEOCONNEX" ;
     schema1:url <https://apps.okn.us/ldf/geoconnex> .
+
+kgr:geonames.feature-codes a schema1:DocumentationProduct ;
+    rdfs:label "GeoNames Feature Codes" ;
+    dcterms:description "GeoNames feature class and feature code vocabulary for classifying geographic entities." ;
+    schema1:url <https://www.geonames.org/export/codes.html> .
 
 kgr:gff.specification a schema1:DocumentationProduct ;
     rdfs:label "GFF3 Specification" ;
@@ -23981,6 +24469,11 @@ kgr:ncatsgardkg.raw-data a schema1:Product ;
     dcterms:description "Repository subdirectory containing raw datasets used to construct the NCATS GARD KG workflow." ;
     schema1:url <https://github.com/ncats/RD-Clust/tree/main/data/raw> .
 
+kgr:ncbi.gc a schema1:DataModelProduct ;
+    rdfs:label "NCBI Genetic Codes" ;
+    dcterms:description "NCBI Genetic Codes tables summarizing translation tables used in GenBank and the NCBI taxonomy." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi> .
+
 kgr:ncbigene.gene2accession a schema1:MappingProduct ;
     rdfs:label "Gene to Accession Mapping" ;
     dcterms:description "Gene to accession mapping data providing links between gene records and nucleotide/protein sequence accessions" ;
@@ -25086,26 +25579,6 @@ kgr:obo-db-ingest.signor.owl a schema1:Product ;
     dcterms:description "signor OWL" ;
     schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.owl> .
 
-kgr:obo-db-ingest.slm.json a schema1:Product ;
-    rdfs:label "slm OBO Graph JSON" ;
-    dcterms:description "slm OBO Graph JSON" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.json.gz> .
-
-kgr:obo-db-ingest.slm.obo a schema1:Product ;
-    rdfs:label "slm OBO" ;
-    dcterms:description "slm OBO" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.obo.gz> .
-
-kgr:obo-db-ingest.slm.owl a schema1:Product ;
-    rdfs:label "slm OWL" ;
-    dcterms:description "slm OWL" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.owl.gz> .
-
-kgr:obo-db-ingest.slm.sssom.tsv a schema1:MappingProduct ;
-    rdfs:label "slm SSSOM" ;
-    dcterms:description "slm SSSOM" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv> .
-
 kgr:obo-db-ingest.sty.json a schema1:Product ;
     rdfs:label "sty OBO Graph JSON" ;
     dcterms:description "sty OBO Graph JSON" ;
@@ -25120,6 +25593,26 @@ kgr:obo-db-ingest.sty.owl a schema1:Product ;
     rdfs:label "sty OWL" ;
     dcterms:description "sty OWL" ;
     schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.owl> .
+
+kgr:obo-db-ingest.swisslipid.json a schema1:Product ;
+    rdfs:label "swisslipid OBO Graph JSON" ;
+    dcterms:description "swisslipid OBO Graph JSON" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.json.gz> .
+
+kgr:obo-db-ingest.swisslipid.obo a schema1:Product ;
+    rdfs:label "swisslipid OBO" ;
+    dcterms:description "swisslipid OBO" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.obo.gz> .
+
+kgr:obo-db-ingest.swisslipid.owl a schema1:Product ;
+    rdfs:label "swisslipid OWL" ;
+    dcterms:description "swisslipid OWL" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.owl.gz> .
+
+kgr:obo-db-ingest.swisslipid.sssom.tsv a schema1:MappingProduct ;
+    rdfs:label "swisslipid SSSOM" ;
+    dcterms:description "swisslipid SSSOM" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv> .
 
 kgr:obo-db-ingest.uniprot.json a schema1:Product ;
     rdfs:label "uniprot OBO Graph JSON" ;
@@ -26856,6 +27349,36 @@ kgr:progeny.rpackage a schema1:ProgrammingInterface ;
     dcterms:description "R package containing pathway signatures for 14 signaling pathways in human and mouse, available through Bioconductor" ;
     schema1:url <https://www.bioconductor.org/packages/release/bioc/html/progeny.html> .
 
+kgr:prokn.api a schema1:ProgrammingInterface ;
+    rdfs:label "Protein Knowledge Network REST API" ;
+    dcterms:description "REST API for the Protein Knowledge Network" ;
+    schema1:url <https://research.bioinformatics.udel.edu/ProKN/restapi> .
+
+kgr:prokn.downloads a schema1:Product ;
+    rdfs:label "Protein Knowledge Network Downloads" ;
+    dcterms:description "Bulk downloads page listing current ProKN node and edge CSV exports with file sizes and update timestamps" ;
+    schema1:url <https://research.bioinformatics.udel.edu/ProKN/downloads> .
+
+kgr:prokn.explorer a schema1:GraphicalInterface ;
+    rdfs:label "Protein Knowledge Network Explorer" ;
+    dcterms:description "Web explorer for the Protein Knowledge Network with interactive graph browsing" ;
+    schema1:url <https://research.bioinformatics.udel.edu/ProKN/explorer> .
+
+kgr:prokn.mcp a schema1:ProgrammingInterface ;
+    rdfs:label "ProKN MCP Interface" ;
+    dcterms:description "Hosted Model Context Protocol endpoint for MCP-compatible clients accessing ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/ProKN/mcp> .
+
+kgr:prokn.sparql a schema1:ProgrammingInterface ;
+    rdfs:label "Protein Knowledge Network SPARQL" ;
+    dcterms:description "SPARQL endpoint for Protein Knowledge Network" ;
+    schema1:url <https://apps.okn.us/prokn/sparql> .
+
+kgr:prokn.tpf a schema1:ProgrammingInterface ;
+    rdfs:label "Protein Knowledge Network TPF" ;
+    dcterms:description "Triple Pattern Fragments endpoint for Protein Knowledge Network" ;
+    schema1:url <https://apps.okn.us/ldf/prokn> .
+
 kgr:protcid.database a schema1:Product ;
     rdfs:label "ProtCID Database" ;
     dcterms:description "Database containing protein-protein interfaces, domain-domain interfaces, protein-peptide interfaces, and protein-ligand interactions based on structural data from the PDB." .
@@ -26939,10 +27462,6 @@ kgr:pubchem.substances.sdf a schema1:Product ;
     rdfs:label "PubChem Substances SDF" ;
     dcterms:description "PubChem substance information in SDF format" ;
     schema1:url <https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/> .
-
-kgr:publisher a schema1:DataModelProduct ;
-    rdfs:label "Publisher (Stub)" ;
-    dcterms:description "Automatically generated stub product. Please update with accurate information." .
 
 kgr:pubmed.advanced.search a schema1:GraphicalInterface ;
     rdfs:label "PubMed Advanced Search" ;
@@ -30063,10 +30582,44 @@ kgr:cam-kp.reactome-cams a schema1:Product ;
     rdfs:label "Reactome Pathway CAMs" ;
     dcterms:description "Causal Activity Model graphs automatically generated from Reactome pathways using the Pathways2GO tool, translating pathway reactions to causal relationships" .
 
+kgr:chea-kg.api a schema1:ProgrammingInterface ;
+    rdfs:label "ChEA-KG API" ;
+    dcterms:description "ChEA3 API endpoint for submitting gene sets and retrieving transcription factor enrichment results as JSON" ;
+    schema1:url <https://maayanlab.cloud/chea3/api/enrich/> .
+
+kgr:chea-kg.portal a schema1:GraphicalInterface ;
+    rdfs:label "ChEA-KG Explorer" ;
+    dcterms:description "Interactive ChEA3 web interface for transcription factor enrichment analysis, result tables, and network visualizations" ;
+    schema1:url <https://maayanlab.cloud/chea-kg/> .
+
 kgr:chembl.map_to_uniprot a schema1:MappingProduct ;
     rdfs:label "ChEMBL map to UniProt" ;
     dcterms:description "Mapping between chembl_35 target chembl_ids and UniProt accessions" ;
     schema1:url <https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt> .
+
+kgr:emind.json a schema1:Product ;
+    rdfs:label "eMIND JSON Export" ;
+    dcterms:description "Gzipped JSON export of the eMIND text-mined literature annotations for variant impacts in Alzheimer's disease and related dementias" ;
+    schema1:url <https://hershey.dbi.udel.edu/textmining/export/emind/eMIND_iTextmine.json.gz> .
+
+kgr:emind.site a schema1:GraphicalInterface ;
+    rdfs:label "eMIND Web Interface" ;
+    dcterms:description "Web interface for browsing eMIND text-mined variant-impact annotations in Alzheimer's disease and related dementia literature" ;
+    schema1:url <https://research.bioinformatics.udel.edu/itextmine/integrate/search/emind/medline/*> .
+
+kgr:enrichr-kg.api a schema1:ProgrammingInterface ;
+    rdfs:label "Enrichr-KG API" ;
+    dcterms:description "API surface for programmatic access to Enrichr-KG enrichment analysis and graph-backed query results" ;
+    schema1:url <https://maayanlab.cloud/enrichr-kg/api/> .
+
+kgr:enrichr-kg.graph a schema1:GraphProduct ;
+    rdfs:label "Enrichr-KG Neo4j Database" ;
+    dcterms:description "Neo4j graph database integrating Enrichr gene set libraries with genes, terms, pathways, diseases, drugs, cell types, and other functional annotations" .
+
+kgr:enrichr-kg.portal a schema1:GraphicalInterface ;
+    rdfs:label "Enrichr-KG Explorer" ;
+    dcterms:description "Interactive web interface for gene set enrichment analysis, Enrichr term expansion, and graph exploration across integrated Enrichr-KG libraries" ;
+    schema1:url <https://maayanlab.cloud/enrichr-kg/> .
 
 kgr:fda a "Organization" ;
     rdfs:label "FDA Center for Drug Evaluation and Research",
@@ -30864,11 +31417,6 @@ kgr:obo-db-ingest.signor.tsv a schema1:Product ;
     dcterms:description "signor Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/signor/signor.tsv> .
 
-kgr:obo-db-ingest.slm.tsv a schema1:Product ;
-    rdfs:label "slm Nodes TSV" ;
-    dcterms:description "slm Nodes TSV" ;
-    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz> .
-
 kgr:obo-db-ingest.spdx.json a schema1:Product ;
     rdfs:label "spdx OBO Graph JSON" ;
     dcterms:description "spdx OBO Graph JSON" ;
@@ -30893,6 +31441,11 @@ kgr:obo-db-ingest.sty.tsv a schema1:Product ;
     rdfs:label "sty Nodes TSV" ;
     dcterms:description "sty Nodes TSV" ;
     schema1:url <https://w3id.org/biopragmatics/resources/sty/sty.tsv> .
+
+kgr:obo-db-ingest.swisslipid.tsv a schema1:Product ;
+    rdfs:label "swisslipid Nodes TSV" ;
+    dcterms:description "swisslipid Nodes TSV" ;
+    schema1:url <https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz> .
 
 kgr:obo-db-ingest.uniprot.ptm.tsv a schema1:Product ;
     rdfs:label "uniprot.ptm Nodes TSV" ;
@@ -30963,6 +31516,496 @@ kgr:pombase.to-uniprot a schema1:MappingProduct ;
     rdfs:label "PomBase to UniProt map" ;
     dcterms:description "Tab-delimited file with the PomBase systematic identifier for each protein-coding gene mapped to the corresponding UniProt accession number" ;
     schema1:url <https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv> .
+
+kgr:prokn.clinvar.gene.associated_with.diseaseorphenotype.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN ClinVar Association Edges" ;
+    dcterms:description "ClinVar gene associated with disease/phenotype edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv> .
+
+kgr:prokn.emind.protein.has_variant.variant.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN eMIND Variant Edges" ;
+    dcterms:description "eMIND protein variant edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Protein.HAS_VARIANT.Variant.edges.csv> .
+
+kgr:prokn.emind.variant.associated_with.disease.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN eMIND Variant Disease Edges" ;
+    dcterms:description "eMIND variant associated with disease edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Variant.ASSOCIATED_WITH.Disease.edges.csv> .
+
+kgr:prokn.emind.variant.impact.disease.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN eMIND Variant Impact Disease Edges" ;
+    dcterms:description "eMIND variant impact on disease edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Variant.IMPACT.Disease.edges.csv> .
+
+kgr:prokn.emind.variant.impact.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN eMIND Variant Impact Protein Edges" ;
+    dcterms:description "eMIND variant impact on protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Variant.IMPACT.Protein.edges.csv> .
+
+kgr:prokn.glygen.aminoacid.nodes a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen AminoAcid Nodes" ;
+    dcterms:description "GlyGen amino acid nodes used in ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.AminoAcid.nodes.csv> .
+
+kgr:prokn.glygen.glycoprotein.glycosylated_at.glycosylationsite.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Glycosylated Site Edges" ;
+    dcterms:description "GlyGen glycoprotein glycosylated site edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv> .
+
+kgr:prokn.glygen.glycoprotein.has_evidence.glycoproteinevidence.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Evidence Edges" ;
+    dcterms:description "GlyGen glycoprotein evidence edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv> .
+
+kgr:prokn.glygen.glycoprotein.has_pro_entry.gpid2pro.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen PRO Entry Edges" ;
+    dcterms:description "GlyGen glycoprotein PRO entry edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv> .
+
+kgr:prokn.glygen.glycoprotein.sequence.isoform.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Isoform Sequence Edges" ;
+    dcterms:description "GlyGen glycoprotein isoform sequence edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.SEQUENCE.Isoform.edges.csv> .
+
+kgr:prokn.glygen.glycoprotein.sequence.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Protein Sequence Edges" ;
+    dcterms:description "GlyGen glycoprotein protein sequence edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.SEQUENCE.Protein.edges.csv> .
+
+kgr:prokn.glygen.glycoproteinevidence.citation.glycoproteincitation.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Evidence Citation Edges" ;
+    dcterms:description "GlyGen glycoprotein evidence citation edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv> .
+
+kgr:prokn.glygen.glycosylation.has_enzyme_protein.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Enzyme Protein Edges" ;
+    dcterms:description "GlyGen glycosylation enzyme protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv> .
+
+kgr:prokn.glygen.glycosylationsite.has_saccharide.glytoucan.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Saccharide Edges" ;
+    dcterms:description "GlyGen glycosylation site saccharide edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv> .
+
+kgr:prokn.glygen.glycosylationsite.location.glygenlocation.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Site Location Edges" ;
+    dcterms:description "GlyGen glycosylation site location edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv> .
+
+kgr:prokn.glygen.glycosyltransferasereaction.has_enzyme_protein_gr.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Reaction Enzyme Edges" ;
+    dcterms:description "GlyGen glycosyltransferase reaction enzyme edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv> .
+
+kgr:prokn.glygen.glygenlocation.has_amino_acid.aminoacid.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Location Amino Acid Edges" ;
+    dcterms:description "GlyGen location amino acid edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv> .
+
+kgr:prokn.glygen.glygenresidue.attached_by.glycosylation.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Residue Attachment Edges" ;
+    dcterms:description "GlyGen residue attached by glycosylation edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv> .
+
+kgr:prokn.glygen.glygenresidue.has_parent.glygenresidue.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Residue Parent Edges" ;
+    dcterms:description "GlyGen residue parent edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv> .
+
+kgr:prokn.glygen.glytoucan.has_canonical_residue.glygenresidue.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Canonical Residue Edges" ;
+    dcterms:description "GlyGen glytoucan canonical residue edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv> .
+
+kgr:prokn.glygen.glytoucan.has_glycosequence.gyglycosequence.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Glycosequence Edges" ;
+    dcterms:description "GlyGen glytoucan glyco-sequence edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv> .
+
+kgr:prokn.glygen.glytoucan.has_motif.glycanmotif.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Motif Edges" ;
+    dcterms:description "GlyGen glytoucan motif edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv> .
+
+kgr:prokn.glygen.glytoucan.is_from_source.glygensrc.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Source Edges" ;
+    dcterms:description "GlyGen glytoucan source edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv> .
+
+kgr:prokn.glygen.glytoucan.synthesized_by.glycosyltransferasereaction.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Synthesized By Edges" ;
+    dcterms:description "GlyGen glytoucan synthesized by reaction edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv> .
+
+kgr:prokn.glygen.protein.has_isoform.isoform.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Protein Isoform Edges" ;
+    dcterms:description "GlyGen protein isoform edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Isoform.edges.csv> .
+
+kgr:prokn.glygen.protein.has_isoform.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GlyGen Protein Isoform Protein Edges" ;
+    dcterms:description "GlyGen protein isoform protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Protein.edges.csv> .
+
+kgr:prokn.go.goterm.is_a.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Term Hierarchy Edges" ;
+    dcterms:description "GO term hierarchy edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.GOTerm.IS_A.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.acts_upstream_of.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Acts Upstream Of Edges" ;
+    dcterms:description "GO protein acts upstream of GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.acts_upstream_of_negative_effect.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Acts Upstream Negative Edges" ;
+    dcterms:description "GO protein acts upstream of negative effect edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_NEGATIVE_EFFECT.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.acts_upstream_of_or_within.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Acts Upstream Or Within Edges" ;
+    dcterms:description "GO protein acts upstream of or within edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.acts_upstream_of_or_within_negative_effect.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Acts Upstream Or Within Negative Edges" ;
+    dcterms:description "GO protein acts upstream of or within negative effect edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN_NEGATIVE_EFFECT.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.acts_upstream_of_or_within_positive_effect.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Acts Upstream Or Within Positive Edges" ;
+    dcterms:description "GO protein acts upstream of or within positive effect edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN_POSITIVE_EFFECT.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.acts_upstream_of_positive_effect.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Acts Upstream Positive Edges" ;
+    dcterms:description "GO protein acts upstream of positive effect edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_POSITIVE_EFFECT.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.colocalizes_with.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Colocalizes Edges" ;
+    dcterms:description "GO protein colocalizes with GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.COLOCALIZES_WITH.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.contributes_to.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Contributes To Edges" ;
+    dcterms:description "GO protein contributes to GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.CONTRIBUTES_TO.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.enables.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Enables Edges" ;
+    dcterms:description "GO protein enables GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ENABLES.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.involved_in.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Involved In Edges" ;
+    dcterms:description "GO protein involved in GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.INVOLVED_IN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.is_active_in.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Active In Edges" ;
+    dcterms:description "GO protein active in GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.IS_ACTIVE_IN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.located_in.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Located In Edges" ;
+    dcterms:description "GO protein located in GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.LOCATED_IN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_acts_upstream_of_or_within.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Acts Upstream Or Within Edges" ;
+    dcterms:description "GO protein not acts upstream of or within edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_ACTS_UPSTREAM_OF_OR_WITHIN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_acts_upstream_of_or_within_negative_effect.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Acts Upstream Negative Edges" ;
+    dcterms:description "GO protein not acts upstream of or within negative effect edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_ACTS_UPSTREAM_OF_OR_WITHIN_NEGATIVE_EFFECT.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_colocalizes_with.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Colocalizes Edges" ;
+    dcterms:description "GO protein not colocalizes with GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_COLOCALIZES_WITH.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_contributes_to.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Contributes Edges" ;
+    dcterms:description "GO protein not contributes to GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_CONTRIBUTES_TO.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_enables.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Enables Edges" ;
+    dcterms:description "GO protein not enables GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_ENABLES.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_involved_in.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Involved In Edges" ;
+    dcterms:description "GO protein not involved in GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_INVOLVED_IN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_is_active_in.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Active In Edges" ;
+    dcterms:description "GO protein not active in GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_IS_ACTIVE_IN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_located_in.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Located In Edges" ;
+    dcterms:description "GO protein not located in GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_LOCATED_IN.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.not_part_of.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Not Part Of Edges" ;
+    dcterms:description "GO protein not part of GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_PART_OF.GOTerm.edges.csv> .
+
+kgr:prokn.go.protein.part_of.goterm.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GO Part Of Edges" ;
+    dcterms:description "GO protein part of GO term edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.PART_OF.GOTerm.edges.csv> .
+
+kgr:prokn.gtexexp.anatomy.nodes a schema1:GraphProduct ;
+    rdfs:label "ProKN GTEx Anatomy Nodes" ;
+    dcterms:description "GTEx expression anatomy nodes (GTEXEXP) used in ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Anatomy.nodes.csv> .
+
+kgr:prokn.gtexexp.gene.expressed_in.anatomy.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GTEx Gene Expression Edges" ;
+    dcterms:description "GTEx gene expressed in anatomy edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv> .
+
+kgr:prokn.gtexexp.gtexexp.expressed_in.anatomy.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GTExEXP Anatomy Expression Edges" ;
+    dcterms:description "GTEx expression to anatomy edges (GTExEXP node type)" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv> .
+
+kgr:prokn.gtexexp.gtexexp.expressed_in.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GTExEXP Gene Expression Edges" ;
+    dcterms:description "GTEx expression to gene edges (GTExEXP node type)" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv> .
+
+kgr:prokn.gtexexp.gtexexp.has_expression.expbins.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN GTExEXP Expression Bin Edges" ;
+    dcterms:description "GTEx expression to expression bins edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv> .
+
+kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN HGNCHPO Association Edges" ;
+    dcterms:description "HGNCHPO gene associated with disease/phenotype edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv> .
+
+kgr:prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN HMAZ Heart Marker Edges" ;
+    dcterms:description "HMAZ anatomy to heart marker gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv> .
+
+kgr:prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN HMAZ Kidney Marker Edges" ;
+    dcterms:description "HMAZ anatomy to kidney marker gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv> .
+
+kgr:prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN HMAZ Liver Marker Edges" ;
+    dcterms:description "HMAZ anatomy to liver marker gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv> .
+
+kgr:prokn.hmaz.anatomy.nodes a schema1:GraphProduct ;
+    rdfs:label "ProKN HMAZ Anatomy Nodes" ;
+    dcterms:description "HMAZ anatomy nodes used in ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.nodes.csv> .
+
+kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IDGD Indication Edges" ;
+    dcterms:description "IDGD compound indication edges to disease/phenotype" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv> .
+
+kgr:prokn.idgd.compound.nodes a schema1:GraphProduct ;
+    rdfs:label "ProKN IDGD Compound Nodes" ;
+    dcterms:description "IDG compound-disease nodes (IDGD) used in ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.nodes.csv> .
+
+kgr:prokn.idgp.compound.bioactivity.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IDGP Bioactivity Edges" ;
+    dcterms:description "IDGP compound bioactivity to protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.BIOACTIVITY.Protein.edges.csv> .
+
+kgr:prokn.idgp.compound.nodes a schema1:GraphProduct ;
+    rdfs:label "ProKN IDGP Compound Nodes" ;
+    dcterms:description "IDG compound-protein nodes (IDGP) used in ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv> .
+
+kgr:prokn.imex.complex.nodes a schema1:GraphProduct ;
+    rdfs:label "ProKN IMEx Complex Nodes" ;
+    dcterms:description "IMEx complex nodes used in ProKN" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMEx.Complex.nodes.csv> .
+
+kgr:prokn.imex.protein.interacts_with.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMEx Protein Interaction Edges" ;
+    dcterms:description "IMEx protein interacts with protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMEx.Protein.INTERACTS_WITH.Protein.edges.csv> .
+
+kgr:prokn.imex.protein.participates_in.complex.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMEx Protein Participates In Complex Edges" ;
+    dcterms:description "IMEx protein participates in complex edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMEx.Protein.PARTICIPATES_IN.Complex.edges.csv> .
+
+kgr:prokn.impc.impcallele.impc_ensembl_id.impcmousegene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Allele to Mouse Gene Edges" ;
+    dcterms:description "IMPC allele to mouse gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcAllele.IMPC_ENSEMBL_ID.ImpcMouseGene.edges.csv> .
+
+kgr:prokn.impc.impchumangene.interacts_with.impchumangene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Human-Human Interaction Edges" ;
+    dcterms:description "IMPC human gene interacts with human gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcHumanGene.BIOLINK_INTERACTS_WITH.ImpcHumanGene.edges.csv> .
+
+kgr:prokn.impc.impchumangene.interacts_with.impcmousegene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Human-Mouse Interaction Edges" ;
+    dcterms:description "IMPC human gene interacts with mouse gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcHumanGene.BIOLINK_INTERACTS_WITH.ImpcMouseGene.edges.csv> .
+
+kgr:prokn.impc.impchumangene.orthologous_to.impcmousegene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Ortholog Edges" ;
+    dcterms:description "IMPC human gene orthologous to mouse gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcHumanGene.BIOLINK_ORTHOLOGOUS_TO.ImpcMouseGene.edges.csv> .
+
+kgr:prokn.impc.impcmousegene.impc_mouse_allele_id.impcallele.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Mouse Allele ID Edges" ;
+    dcterms:description "IMPC mouse gene allele ID edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcMouseGene.IMPC_MOUSE_ALLELE_ID.ImpcAllele.edges.csv> .
+
+kgr:prokn.impc.impcmousegene.impc_mouse_alleles.impcallele.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Mouse Alleles Edges" ;
+    dcterms:description "IMPC mouse gene allele membership edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcMouseGene.IMPC_MOUSE_ALLELES.ImpcAllele.edges.csv> .
+
+kgr:prokn.impc.impcmousegene.interacts_with.impchumangene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Mouse-Human Interaction Edges" ;
+    dcterms:description "IMPC mouse gene interacts with human gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcMouseGene.BIOLINK_INTERACTS_WITH.ImpcHumanGene.edges.csv> .
+
+kgr:prokn.impc.impcmousegene.interacts_with.impcmousegene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Mouse-Mouse Interaction Edges" ;
+    dcterms:description "IMPC mouse gene interacts with mouse gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcMouseGene.BIOLINK_INTERACTS_WITH.ImpcMouseGene.edges.csv> .
+
+kgr:prokn.impc.impcmousegene.orthologous_to.impchumangene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Mouse-Human Ortholog Edges" ;
+    dcterms:description "IMPC mouse gene orthologous to human gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcMouseGene.IMPC_HUMAN_GENE_ORTHOLOGUES.ImpcHumanGene.edges.csv> .
+
+kgr:prokn.impc.imppublication.impc_alleles.impcallele.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN IMPC Publication Allele Edges" ;
+    dcterms:description "IMPC publication allele edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcPublication.IMPC_ALLELES.ImpcAllele.edges.csv> .
+
+kgr:prokn.interpro.domain.is_a.domain.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN InterPro Domain Hierarchy Edges" ;
+    dcterms:description "InterPro domain is_a domain edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Domain.IS_A.Domain.edges.csv> .
+
+kgr:prokn.interpro.protein.has_domain.domain.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN InterPro Domain Edges" ;
+    dcterms:description "InterPro protein has domain edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Protein.HAS_DOMAIN.Domain.edges.csv> .
+
+kgr:prokn.iptmnet.protein.catalyzes.ptmsite.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN iPTMnet Protein Catalyzes PTM Site Edges" ;
+    dcterms:description "iPTMnet protein catalyzes PTM site edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.CATALYZES.PTMSite.edges.csv> .
+
+kgr:prokn.iptmnet.protein.has_site.site.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN iPTMnet Protein Site Edges" ;
+    dcterms:description "iPTMnet protein has site edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.HAS_SITE.Site.edges.csv> .
+
+kgr:prokn.lincs.compound.in_similarity_relationship_with.compound.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN LINCS Compound Similarity Edges" ;
+    dcterms:description "LINCS compound similarity edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv> .
+
+kgr:prokn.lincs.compound.negatively_regulates.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN LINCS Negative Regulation Edges" ;
+    dcterms:description "LINCS compound negatively regulates gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv> .
+
+kgr:prokn.lincs.compound.positively_regulates.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN LINCS Positive Regulation Edges" ;
+    dcterms:description "LINCS compound positively regulates gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv> .
+
+kgr:prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN LINCS P100 Perturbation Effect Edges" ;
+    dcterms:description "LINCS P100 experiment perturbation effect on PTM site edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Experiment.PERTURBATION_EFFECT.PTMSite.edges.csv> .
+
+kgr:prokn.lincs_p100.perturbagen.is_used_in.experiment.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN LINCS P100 Perturbagen Edges" ;
+    dcterms:description "LINCS P100 perturbagen experiment edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Perturbagen.IS_USED_IN.Experiment.edges.csv> .
+
+kgr:prokn.lincs_p100.ptmsite.is_site.site.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN LINCS P100 PTM Site Mapping Edges" ;
+    dcterms:description "LINCS P100 PTM site is site of site edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.PTMSite.IS_SITE.Site.edges.csv> .
+
+kgr:prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN MSIGDB Chromosome Band Edges" ;
+    dcterms:description "MSIGDB chromosome band contains gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv> .
+
+kgr:prokn.msigdb.msigdb.has_marker_gene.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN MSIGDB Marker Gene Edges" ;
+    dcterms:description "MSIGDB marker gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv> .
+
+kgr:prokn.msigdb.msigdb.has_signature_gene.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN MSIGDB Signature Gene Edges" ;
+    dcterms:description "MSIGDB signature gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv> .
+
+kgr:prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN MSIGDB Pathway Gene Edges" ;
+    dcterms:description "MSIGDB pathway associated with gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv> .
+
+kgr:prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN MSIGDB Targets Expression Edges" ;
+    dcterms:description "MSIGDB targets expression of gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv> .
+
+kgr:prokn.pir.compound.skos_exact_match.compound.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN PIR Compound Exact Match Edges" ;
+    dcterms:description "PIR compound exact match edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.SKOS_EXACT_MATCH.Compound.edges.csv> .
+
+kgr:prokn.pir.gene.skos_exact_match.impc_gene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN PIR Gene Exact Match Edges" ;
+    dcterms:description "PIR gene exact match to IMPC human gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Gene.SKOS_EXACT_MATCH.ImpcHumanGene.edges.csv> .
+
+kgr:prokn.pir.gene.skos_exact_match.impchumangene.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN PIR Gene Exact Match Edges" ;
+    dcterms:description "PIR gene exact match to IMPC human gene edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Gene.SKOS_EXACT_MATCH.ImpcHumanGene.edges.csv> .
+
+kgr:prokn.reactome.pathway.event_of.pathway.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN Reactome Pathway Event Edges" ;
+    dcterms:description "Reactome pathway event hierarchy edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Pathway.PATHWAY_EVENT_OF.Pathway.edges.csv> .
+
+kgr:prokn.reactome.protein.participates_in.pathway.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN Reactome Protein Pathway Edges" ;
+    dcterms:description "Reactome protein participates in pathway edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Protein.PARTICIPATES_IN.Pathway.edges.csv> .
+
+kgr:prokn.uniprotkb.protein.has_site.site.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN UniProtKB Protein Site Edges" ;
+    dcterms:description "UniProtKB protein has site edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_SITE.Site.edges.csv> .
+
+kgr:prokn.uniprotkb.protein.has_variant.variant.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN UniProtKB Variant Edges" ;
+    dcterms:description "UniProtKB protein variant edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_VARIANT.Variant.edges.csv> .
 
 kgr:ribocentre.search a schema1:GraphicalInterface ;
     rdfs:label "Sequence Search" ;
@@ -31263,6 +32306,21 @@ kgr:obo-db-ingest.bigg.compartment.sssom.tsv a schema1:MappingProduct ;
     dcterms:description "bigg.compartment SSSOM" ;
     schema1:url <https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv> .
 
+kgr:prokn.hgncuniprot.gene.is_protein.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN HGNC UniProt Gene-Protein Edges" ;
+    dcterms:description "HGNC to UniProt gene is_protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv> .
+
+kgr:prokn.pir.impchumangene.orthologous_to.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN PIR Human Gene to Protein Ortholog Edges" ;
+    dcterms:description "PIR IMPC human gene orthologous to protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcHumanGene.BIOLINK_ORTHOLOGOUS_TO.Protein.edges.csv> .
+
+kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges a schema1:GraphProduct ;
+    rdfs:label "ProKN PIR Mouse Gene Product Edges" ;
+    dcterms:description "PIR IMPC mouse gene has gene product protein edges" ;
+    schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcMouseGene.BIOLINK_HAS_GENE_PRODUCT.Protein.edges.csv> .
+
 kgr:repodb.full_dataset a schema1:Product ;
     rdfs:label "RepoDB Full Dataset" ;
     dcterms:description "Complete RepoDB dataset containing drug repositioning successes and failures, with approved drugs, indications, and clinical trial outcomes" ;
@@ -31277,6 +32335,31 @@ kgr:translator.dakp.graph a schema1:GraphProduct ;
     rdfs:label "Translator DAKP KGX Graph" ;
     dcterms:description "KGX JSONL graph package for Drug Approvals KP distributed via the NCATS Translator release site (release 2026_03_19; build dakp_0.5.3_c3f74ab4_2025sep1_4.3.6; source version 0.5.3; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
     schema1:url <https://kgx-storage.rtx.ai/releases/dakp/latest/> .
+
+kgr:archs4.human.gene_counts a schema1:Product ;
+    rdfs:label "ARCHS4 Human Gene Counts" ;
+    dcterms:description "Latest human gene-level ARCHS4 expression matrix in HDF5 format using Ensembl 107 annotations" ;
+    schema1:url <https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5> .
+
+kgr:archs4.human.transcript_counts a schema1:Product ;
+    rdfs:label "ARCHS4 Human Transcript Counts" ;
+    dcterms:description "Latest human transcript-level ARCHS4 expression matrix in HDF5 format using Ensembl 107 annotations" ;
+    schema1:url <https://s3.dev.maayanlab.cloud/archs4/files/human_transcript_v2.latest.h5> .
+
+kgr:archs4.mouse.gene_counts a schema1:Product ;
+    rdfs:label "ARCHS4 Mouse Gene Counts" ;
+    dcterms:description "Latest mouse gene-level ARCHS4 expression matrix in HDF5 format using Ensembl 107 annotations" ;
+    schema1:url <https://s3.dev.maayanlab.cloud/archs4/files/mouse_gene_v2.latest.h5> .
+
+kgr:archs4.mouse.transcript_counts a schema1:Product ;
+    rdfs:label "ARCHS4 Mouse Transcript Counts" ;
+    dcterms:description "Latest mouse transcript-level ARCHS4 expression matrix in HDF5 format using Ensembl 107 annotations" ;
+    schema1:url <https://s3.dev.maayanlab.cloud/archs4/files/mouse_transcript_v2.latest.h5> .
+
+kgr:archs4.zoo a schema1:Product ;
+    rdfs:label "ARCHS4 Zoo Downloads" ;
+    dcterms:description "Collection page for ARCHS4 Zoo downloads covering selected additional species beyond human and mouse" ;
+    schema1:url <https://archs4.org/zoo> .
 
 kgr:genecards.expression.data a schema1:Product ;
     rdfs:label "GeneCards Expression Data" ;
@@ -31431,6 +32514,11 @@ kgr:athena.mappings a schema1:MappingProduct ;
     dcterms:description "Concept mappings between different terminology systems" ;
     schema1:url <https://athena.ohdsi.org/search-terms/start> .
 
+kgr:chea.libraries a schema1:Product ;
+    rdfs:label "ChEA Library Downloads" ;
+    dcterms:description "Download catalog for ChEA3 transcription factor target libraries and benchmark datasets" ;
+    schema1:url <https://maayanlab.cloud/chea3/index.html#content4-13> .
+
 kgr:chr.model.owl a schema1:OntologyProduct ;
     rdfs:label "Monochrom Ontology OWL release" ;
     dcterms:description "OWL release of Monochrom Ontology" ;
@@ -31444,6 +32532,15 @@ kgr:broad a "Organization" ;
         "Broad Institute of MIT and Harvard",
         "DepMap Team, Broad Institute",
         "Project Achilles, Broad Institute" .
+
+kgr:chea-kg.graph a schema1:GraphProduct ;
+    rdfs:label "ChEA-KG Database" ;
+    dcterms:description "Neo4j knowledge graph integrating transcription factor target libraries, coexpression networks, and benchmark datasets used by the ChEA3 resource" .
+
+kgr:chea-kg.libraries a schema1:Product ;
+    rdfs:label "ChEA-KG Library Downloads" ;
+    dcterms:description "Download catalog for ChEA3 transcription factor target libraries, benchmark datasets, and additional supporting libraries" ;
+    schema1:url <https://maayanlab.cloud/chea3/index.html#content4-13> .
 
 kgr:icees-kg.graph a schema1:GraphProduct ;
     rdfs:label "KGX distribution of the ICEES Exposures KP" ;
@@ -31650,20 +32747,22 @@ kgr:ncbi a schema1:DataSource,
         "NCBI Help Desk",
         "NCBI PubMed Help Desk",
         "NLM UMLS Customer Support",
+        "National Center for Biotechnology Information",
         "National Center for Biotechnology Information (NCBI)",
         "National Library of Medicine",
         "National Library of Medicine (NLM)",
         "National Library of Medicine Clinical Trials Team",
-        "Ncbi",
         "US National Library of Medicine" ;
     dcterms:created "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for ncbi. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The National Center for Biotechnology Information advances science and health by providing access to biomedical and genomic information, databases, tools, and services." ;
     dcterms:identifier "ncbi" ;
-    dcterms:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:gc ;
-    schema1:name "Ncbi" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:license <https://www.nlm.nih.gov/web_policies.html> ;
+    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:ncbi.gc ;
+    schema1:name "National Center for Biotechnology Information" ;
+    skos:inScheme "biomedical" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/> .
 
 kgr:alzkb.browser a schema1:GraphicalInterface ;
     rdfs:label "AlzKB Graph Database Browser" ;

@@ -730,6 +730,168 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: Latest human gene-level ARCHS4 expression matrix in HDF5 format using
+    Ensembl 107 annotations
+  format: hdf5
+  id: archs4.human.gene_counts
+  name: ARCHS4 Human Gene Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 61899310543
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5
+- category: Product
+  description: Latest mouse gene-level ARCHS4 expression matrix in HDF5 format using
+    Ensembl 107 annotations
+  format: hdf5
+  id: archs4.mouse.gene_counts
+  name: ARCHS4 Mouse Gene Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 49065676268
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/mouse_gene_v2.latest.h5
+- category: Product
+  description: Latest human transcript-level ARCHS4 expression matrix in HDF5 format
+    using Ensembl 107 annotations
+  format: hdf5
+  id: archs4.human.transcript_counts
+  name: ARCHS4 Human Transcript Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 192013010374
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/human_transcript_v2.latest.h5
+- category: Product
+  description: Latest mouse transcript-level ARCHS4 expression matrix in HDF5 format
+    using Ensembl 107 annotations
+  format: hdf5
+  id: archs4.mouse.transcript_counts
+  name: ARCHS4 Mouse Transcript Counts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_file_size: 113637723557
+  product_url: https://s3.dev.maayanlab.cloud/archs4/files/mouse_transcript_v2.latest.h5
+- category: Product
+  description: Collection page for ARCHS4 Zoo downloads covering selected additional
+    species beyond human and mouse
+  format: hdf5
+  id: archs4.zoo
+  name: ARCHS4 Zoo Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: sra
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  product_url: https://archs4.org/zoo
+- category: GraphProduct
+  description: Neo4j knowledge graph integrating transcription factor target libraries,
+    coexpression networks, and benchmark datasets used by the ChEA3 resource
+  dump_format: neo4j
+  format: neo4j
+  id: chea-kg.graph
+  name: ChEA-KG Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea-kg
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: chea
+- category: Product
+  description: Download catalog for ChEA3 transcription factor target libraries, benchmark
+    datasets, and additional supporting libraries
+  format: http
+  id: chea-kg.libraries
+  name: ChEA-KG Library Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea-kg
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: chea
+- category: Product
+  description: Download catalog for ChEA3 transcription factor target libraries and
+    benchmark datasets
+  format: http
+  id: chea.libraries
+  name: ChEA Library Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
 publications: []
 repository: https://github.com/ufbmi/geographical-entity-ontology
 ---

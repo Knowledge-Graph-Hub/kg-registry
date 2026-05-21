@@ -953,8 +953,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2287,10 +2287,12 @@ products:
     source: wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -3467,6 +3469,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Reactome pathway event hierarchy edges
+  format: csv
+  id: prokn.reactome.pathway.event_of.pathway.edges
+  name: ProKN Reactome Pathway Event Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1088495
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Pathway.PATHWAY_EVENT_OF.Pathway.edges.csv
+- category: GraphProduct
+  description: Reactome protein participates in pathway edges
+  format: csv
+  id: prokn.reactome.protein.participates_in.pathway.edges
+  name: ProKN Reactome Protein Pathway Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 17112000
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Protein.PARTICIPATES_IN.Pathway.edges.csv
 repository: https://github.com/reactome
 taxon:
 - NCBITaxon:9606

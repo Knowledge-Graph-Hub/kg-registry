@@ -1399,10 +1399,12 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
     databases
@@ -1420,10 +1422,24 @@ products:
     source: gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
+- category: GraphProduct
+  description: ClinVar gene associated with disease/phenotype edges
+  format: csv
+  id: prokn.clinvar.gene.associated_with.diseaseorphenotype.edges
+  name: ProKN ClinVar Association Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 16911644
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv
 publications:
 - authors:
   - Landrum MJ

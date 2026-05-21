@@ -18,6 +18,7 @@ apo,active,PASS
 apollo_sv,active,PASS
 aragorn,active,PASS
 arax,active,PASS
+archs4,active,PASS
 aro,active,PASS
 ars,active,PASS
 athena,active,PASS
@@ -64,6 +65,7 @@ cellosaurus,active,PASS
 cfde-ddkg,active,PASS
 cfde-gse,active,PASS
 cgnc,active,PASS
+chea,active,PASS
 chea-kg,active,PASS
 chebi,active,PASS
 chembl,active,PASS
@@ -172,7 +174,10 @@ emapa,active,PASS
 embiology,active,PASS
 emi,active,PASS
 emikg,active,PASS
+emind,active,PASS
 ena,active,PASS
+encode,active,PASS
+enrichr,active,PASS
 enrichr-kg,active,PASS
 ensembl,active,PASS
 entrez,active,PASS
@@ -266,6 +271,8 @@ hao,active,PASS
 harmonizome-kg,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
+hgnchpo,active,PASS
+hmaz,active,PASS
 hmdb,active,PASS
 hom,active,PASS
 hp,active,PASS
@@ -290,10 +297,14 @@ iceo,active,PASS
 ico,active,PASS
 iconclass,active,PASS
 identifier-mappings,active,PASS
+idgd,active,PASS
+idgp,active,PASS
 idisk,active,PASS
 ido,active,PASS
 ikraph,active,PASS
+imex,active,PASS
 imodulondb,active,PASS
+impc,active,PASS
 inchikey,active,PASS
 indra,active,PASS
 innatedb,active,PASS
@@ -497,6 +508,7 @@ phenio,active,PASS
 phewascat,active,PASS
 phipo,active,PASS
 phosphositeplus,active,PASS
+pir,active,PASS
 pirbase,active,PASS
 pistoia-pgo,active,PASS
 plana,active,PASS
@@ -514,6 +526,7 @@ prism,active,PASS
 proco,active,PASS
 progenomes,active,PASS
 progeny,active,PASS
+prokn,active,PASS
 protcid,active,PASS
 proteomehd,active,PASS
 proton,active,PASS
@@ -531,6 +544,7 @@ reacto,active,PASS
 reactome,active,PASS
 rediportal,active,PASS
 refseq,active,PASS
+remap,active,PASS
 repodb,active,PASS
 repohub,active,PASS
 reprotox-kg,active,PASS
@@ -569,7 +583,6 @@ silva,active,PASS
 skm,active,PASS
 skos,active,PASS
 sldb,active,PASS
-slm,active,PASS
 slso,active,PASS
 smart,active,PASS
 smpdb,active,PASS
@@ -586,6 +599,7 @@ spdx,active,PASS
 spoke,active,PASS
 spoke-genelab,active,PASS
 spoke-okn,active,PASS
+sra,active,PASS
 sri-reference-kg,active,PASS
 srpdb,active,PASS
 stato,active,PASS

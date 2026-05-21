@@ -359,6 +359,78 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+- category: GraphProduct
+  description: LINCS compound similarity edges
+  format: csv
+  id: prokn.lincs.compound.in_similarity_relationship_with.compound.edges
+  name: ProKN LINCS Compound Similarity Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 6193189
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv
+- category: GraphProduct
+  description: LINCS compound negatively regulates gene edges
+  format: csv
+  id: prokn.lincs.compound.negatively_regulates.gene.edges
+  name: ProKN LINCS Negative Regulation Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 28342168
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv
+- category: GraphProduct
+  description: LINCS compound positively regulates gene edges
+  format: csv
+  id: prokn.lincs.compound.positively_regulates.gene.edges
+  name: ProKN LINCS Positive Regulation Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 28223124
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv
+- category: GraphProduct
+  description: LINCS P100 perturbagen experiment edges
+  format: csv
+  id: prokn.lincs_p100.perturbagen.is_used_in.experiment.edges
+  name: ProKN LINCS P100 Perturbagen Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 541848
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Perturbagen.IS_USED_IN.Experiment.edges.csv
+- category: GraphProduct
+  description: LINCS P100 experiment perturbation effect on PTM site edges
+  format: csv
+  id: prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges
+  name: ProKN LINCS P100 Perturbation Effect Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 52555993
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Experiment.PERTURBATION_EFFECT.PTMSite.edges.csv
+- category: GraphProduct
+  description: LINCS P100 PTM site is site of site edges
+  format: csv
+  id: prokn.lincs_p100.ptmsite.is_site.site.edges
+  name: ProKN LINCS P100 PTM Site Mapping Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 980
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.PTMSite.IS_SITE.Site.edges.csv
 publications:
 - authors:
   - Keenan AB
@@ -380,7 +452,7 @@ publications:
   - Koleti A
   - Vidovic D
   - Chung C
-  - "Sch\xFCrer SC"
+  - Schürer SC
   - Vasiliauskas J
   - Pilarczyk M
   - Shamsaei B
@@ -504,7 +576,7 @@ publications:
   - Medvedovic M
   - Ma'ayan A
   - Pillai A
-  - "Sch\xFCrer SC"
+  - Schürer SC
   doi: doi:10.1093/nar/gkx1063
   id: https://doi.org/10.1093/nar/gkx1063
   journal: Nucleic Acids Research
