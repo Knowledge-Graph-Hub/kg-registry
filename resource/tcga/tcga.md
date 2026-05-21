@@ -2,55 +2,142 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    label: NCI Genomic Data Commons Support
-    contact_details:
-      - contact_type: url
-        value: "https://gdc.cancer.gov/support"
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://gdc.cancer.gov/support
+  label: NCI Genomic Data Commons Support
 creation_date: '2025-11-08T00:00:00Z'
-description: The Cancer Genome Atlas (TCGA) is a landmark cancer genomics program that molecularly characterized over 20,000 primary cancer and matched normal samples spanning 33 cancer types. This joint effort between NCI and the National Human Genome Research Institute began in 2006, bringing together researchers from diverse disciplines and multiple institutions. TCGA generated over 2.5 petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, which has led to improvements in the ability to diagnose, treat, and prevent cancer, remains publicly available through the Genomic Data Commons for anyone in the research community to use.
+description: The Cancer Genome Atlas (TCGA) is a landmark cancer genomics program
+  that molecularly characterized over 20,000 primary cancer and matched normal samples
+  spanning 33 cancer types. This joint effort between NCI and the National Human Genome
+  Research Institute began in 2006, bringing together researchers from diverse disciplines
+  and multiple institutions. TCGA generated over 2.5 petabytes of genomic, epigenomic,
+  transcriptomic, and proteomic data. The data, which has led to improvements in the
+  ability to diagnose, treat, and prevent cancer, remains publicly available through
+  the Genomic Data Commons for anyone in the research community to use.
 domains:
-  - genomics
-id: "tcga"
-infores_id: "tcga"
+- genomics
+homepage_url: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
+id: tcga
+infores_id: tcga
 last_modified_date: '2025-11-08T00:00:00Z'
 layout: resource_detail
 name: The Cancer Genome Atlas
-homepage_url: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
 products:
-  - category: Product
-    description: Genomic Data Commons Data Portal providing access to harmonized TCGA data with over 2.5 petabytes of cancer genomic data
-    format: http
-    id: "tcga.gdc_portal"
-    name: GDC Data Portal
-    product_url: https://portal.gdc.cancer.gov/
-    original_source:
-      - source: tcga
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: Genomic Data Commons Application Programming Interface for programmatic access to TCGA and other cancer genomic data
-    format: http
-    id: "tcga.gdc_api"
-    name: GDC API
-    product_url: https://gdc.cancer.gov/developers/gdc-application-programming-interface-api
-    original_source:
-      - source: tcga
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Data Submission Portal for uploading and managing cancer genomic data submissions to GDC
-    format: http
-    id: "tcga.gdc_submission"
-    name: GDC Data Submission Portal
-    product_url: https://portal.gdc.cancer.gov/submission
-    original_source:
-      - source: tcga
-        relation_type: prov:hadPrimarySource
+- category: Product
+  description: Genomic Data Commons Data Portal providing access to harmonized TCGA
+    data with over 2.5 petabytes of cancer genomic data
+  format: http
+  id: tcga.gdc_portal
+  name: GDC Data Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://portal.gdc.cancer.gov/
+- category: ProgrammingInterface
+  description: Genomic Data Commons Application Programming Interface for programmatic
+    access to TCGA and other cancer genomic data
+  format: http
+  id: tcga.gdc_api
+  name: GDC API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://gdc.cancer.gov/developers/gdc-application-programming-interface-api
+- category: GraphicalInterface
+  description: Data Submission Portal for uploading and managing cancer genomic data
+    submissions to GDC
+  format: http
+  id: tcga.gdc_submission
+  name: GDC Data Submission Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://portal.gdc.cancer.gov/submission
+- category: GraphProduct
+  description: Neo4j knowledge graph integrating transcription factor target libraries,
+    coexpression networks, and benchmark datasets used by the ChEA3 resource
+  dump_format: neo4j
+  format: neo4j
+  id: chea-kg.graph
+  name: ChEA-KG Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea-kg
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: chea
+- category: Product
+  description: Download catalog for ChEA3 transcription factor target libraries, benchmark
+    datasets, and additional supporting libraries
+  format: http
+  id: chea-kg.libraries
+  name: ChEA-KG Library Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea-kg
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: chea
+- category: Product
+  description: Download catalog for ChEA3 transcription factor target libraries and
+    benchmark datasets
+  format: http
+  id: chea.libraries
+  name: ChEA Library Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
 synonyms:
-  - TCGA
+- TCGA
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # The Cancer Genome Atlas
 
 ## Overview

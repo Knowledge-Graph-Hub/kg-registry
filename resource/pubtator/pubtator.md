@@ -62,8 +62,8 @@ products:
     source: pubtator
   product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   id: gnbr.graph
   name: GNBR graph
   original_source:
@@ -72,6 +72,31 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://zenodo.org/records/3459420
+- category: GraphicalInterface
+  description: Web interface for browsing eMIND text-mined variant-impact annotations
+    in Alzheimer's disease and related dementia literature
+  format: http
+  id: emind.site
+  name: eMIND Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: emind
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  product_url: https://research.bioinformatics.udel.edu/itextmine/integrate/search/emind/medline/*
+- category: Product
+  description: Gzipped JSON export of the eMIND text-mined literature annotations
+    for variant impacts in Alzheimer's disease and related dementias
+  format: json
+  id: emind.json
+  name: eMIND JSON Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: emind
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  product_file_size: 941473
+  product_url: https://hershey.dbi.udel.edu/textmining/export/emind/eMIND_iTextmine.json.gz
 publications:
 - authors:
   - Wei CH

@@ -320,6 +320,66 @@ products:
     source: obo-db-ingest
   product_file_size: 3121367
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.tsv
+- category: GraphProduct
+  description: MSIGDB chromosome band contains gene edges
+  format: csv
+  id: prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges
+  name: ProKN MSIGDB Chromosome Band Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 5090569
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv
+- category: GraphProduct
+  description: MSIGDB marker gene edges
+  format: csv
+  id: prokn.msigdb.msigdb.has_marker_gene.gene.edges
+  name: ProKN MSIGDB Marker Gene Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 24846141
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv
+- category: GraphProduct
+  description: MSIGDB signature gene edges
+  format: csv
+  id: prokn.msigdb.msigdb.has_signature_gene.gene.edges
+  name: ProKN MSIGDB Signature Gene Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1690507
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv
+- category: GraphProduct
+  description: MSIGDB pathway associated with gene edges
+  format: csv
+  id: prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges
+  name: ProKN MSIGDB Pathway Gene Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 125939588
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv
+- category: GraphProduct
+  description: MSIGDB targets expression of gene edges
+  format: csv
+  id: prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges
+  name: ProKN MSIGDB Targets Expression Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 156490605
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv
 publications:
 - id: PMID:37653294
   title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).

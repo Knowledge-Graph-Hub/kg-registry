@@ -125,14 +125,16 @@ products:
     source: tarbase
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
   format: http
@@ -143,14 +145,16 @@ products:
     source: tarbase
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -568,8 +572,8 @@ publications:
   id: https://doi.org/10.1093/nar/gkad1071
   journal: Nucleic Acids Research
   preferred: true
-  title: "TarBase-v9.0 extends experimentally supported miRNA\u2013gene interactions\
-    \ to cell-types and virally encoded miRNAs"
+  title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to
+    cell-types and virally encoded miRNAs
   year: '2023'
 ---
 # TarBase

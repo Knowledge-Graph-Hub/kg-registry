@@ -1,18 +1,20 @@
 ---
 activity_status: active
-category: DataSource
+category: Ontology
 creation_date: '2026-02-26T00:00:00Z'
-description: Stub Resource page for sty. This page was automatically generated because
-  it was referenced by other resources.
+description: UMLS Semantic Types are the broad subject categories in the UMLS Semantic
+  Network used to categorize concepts in the UMLS Metathesaurus.
 domains:
-- stub
+- biomedical
+- health
+homepage_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html
 id: sty
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-05-20T00:00:00Z'
 layout: resource_detail
 license:
   id: https://lhncbc.nlm.nih.gov/semanticnetwork/
   label: Public Domain
-name: Sty
+name: UMLS Semantic Types
 products:
 - category: Product
   description: sty Nodes TSV
@@ -26,10 +28,10 @@ products:
     source: sty
   product_file_size: 1583
   product_url: https://w3id.org/biopragmatics/resources/sty/sty.tsv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- STY
+- UMLS semantic types
 ---
-# Sty
+# UMLS Semantic Types
 
-This is an automatically generated stub page for sty. Please update with proper information.
+The UMLS Semantic Types are part of the UMLS Semantic Network and provide a consistent high-level categorization for concepts represented in the UMLS Metathesaurus.

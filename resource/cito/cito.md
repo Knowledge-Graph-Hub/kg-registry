@@ -64,10 +64,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-05-20: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-21: FTP error: timed
+    out'
 repository: https://github.com/sparontologies/cito
 ---
 CiTO

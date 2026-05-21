@@ -29,7 +29,9 @@ products:
     source: fix
   product_url: http://purl.obolibrary.org/obo/fix.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Physico-chemical methods and properties in OBO format
@@ -41,7 +43,9 @@ products:
     source: fix
   product_url: http://purl.obolibrary.org/obo/fix.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
+  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 publications: []
 ---

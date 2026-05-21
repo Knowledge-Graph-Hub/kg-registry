@@ -151,10 +151,12 @@ products:
   product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
   format: sssom
@@ -1119,10 +1121,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
     interactions
@@ -2023,6 +2027,20 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: HGNC to UniProt gene is_protein edges
+  format: csv
+  id: prokn.hgncuniprot.gene.is_protein.protein.edges
+  name: ProKN HGNC UniProt Gene-Protein Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1750609
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv
 repository: https://github.com/HGNC
 taxon:
 - NCBITaxon:9606

@@ -9,12 +9,12 @@ original_source:
   source: repohub
 product_url: https://repo-hub.broadinstitute.org/repurposing#case-studies
 warnings:
-- File was not able to be retrieved when checked on 2026-05-19_ Error connecting to
+- File was not able to be retrieved when checked on 2026-05-20_ Error connecting to
   URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
   exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
   '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
   issuer certificate (_ssl.c_1028)')))
-- File was not able to be retrieved when checked on 2026-05-09_ Error connecting to
+- File was not able to be retrieved when checked on 2026-05-19_ Error connecting to
   URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
   exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
   '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local

@@ -2,15 +2,16 @@
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 630,
+    "modified_after_creation": 642,
     "stale_over_365_days": 6,
-    "unchanged_since_creation": 150,
-    "with_both_dates": 780
+    "unchanged_since_creation": 151,
+    "with_both_dates": 793
   },
   "detail_lists": {
     "broken_link_page_ids": [
       "aao",
       "adw",
+      "adw.owl",
       "afcs",
       "afcs.molecule-pages",
       "afpo.json",
@@ -331,6 +332,7 @@
       "noncode.disease",
       "noncode.function",
       "noncode.genome-browser",
+      "npass",
       "oard-kg.sparql",
       "obis.seamap",
       "obo_rel",
@@ -437,61 +439,8 @@
       "preppi",
       "preppi.download",
       "preppi.search",
-      "prokn.clinvar.gene.associated_with.diseaseorphenotype.edges",
-      "prokn.glygen.aminoacid.nodes",
-      "prokn.glygen.glycoprotein.glycosylated_at.glycosylationsite.edges",
-      "prokn.glygen.glycoprotein.has_evidence.glycoproteinevidence.edges",
-      "prokn.glygen.glycoprotein.has_pro_entry.gpid2pro.edges",
-      "prokn.glygen.glycoprotein.sequence.isoform.edges",
-      "prokn.glygen.glycoprotein.sequence.protein.edges",
-      "prokn.glygen.glycoproteinevidence.citation.glycoproteincitation.edges",
-      "prokn.glygen.glycosylation.has_enzyme_protein.protein.edges",
-      "prokn.glygen.glycosylationsite.has_saccharide.glytoucan.edges",
-      "prokn.glygen.glycosylationsite.location.glygenlocation.edges",
-      "prokn.glygen.glycosyltransferasereaction.has_enzyme_protein_gr.protein.edges",
-      "prokn.glygen.glygenlocation.has_amino_acid.aminoacid.edges",
-      "prokn.glygen.glygenresidue.attached_by.glycosylation.edges",
-      "prokn.glygen.glygenresidue.has_parent.glygenresidue.edges",
-      "prokn.glygen.glytoucan.has_canonical_residue.glygenresidue.edges",
-      "prokn.glygen.glytoucan.has_glycosequence.gyglycosequence.edges",
-      "prokn.glygen.glytoucan.has_motif.glycanmotif.edges",
-      "prokn.glygen.glytoucan.is_from_source.glygensrc.edges",
-      "prokn.glygen.glytoucan.synthesized_by.glycosyltransferasereaction.edges",
-      "prokn.glygen.protein.has_isoform.isoform.edges",
-      "prokn.glygen.protein.has_isoform.protein.edges",
-      "prokn.gtexexp.anatomy.nodes",
-      "prokn.gtexexp.gene.expressed_in.anatomy.edges",
-      "prokn.gtexexp.gtexexp.expressed_in.anatomy.edges",
-      "prokn.gtexexp.gtexexp.expressed_in.gene.edges",
-      "prokn.gtexexp.gtexexp.has_expression.expbins.edges",
-      "prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges",
-      "prokn.hgncuniprot.gene.is_protein.protein.edges",
-      "prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges",
-      "prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges",
-      "prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges",
-      "prokn.hmaz.anatomy.nodes",
-      "prokn.idgd.compound.indication.diseaseorphenotype.edges",
-      "prokn.idgd.compound.nodes",
-      "prokn.idgp.compound.bioactivity.protein.edges",
-      "prokn.idgp.compound.nodes",
-      "prokn.iptmnet.protein.has_isoform.protein.edges",
-      "prokn.iptmnet.ptm.targets.protein.edges",
-      "prokn.lincs.compound.in_similarity_relationship_with.compound.edges",
-      "prokn.lincs.compound.negatively_regulates.gene.edges",
-      "prokn.lincs.compound.positively_regulates.gene.edges",
-      "prokn.lincs_p100.phosphosite.down_regulated.experiment.edges",
-      "prokn.lincs_p100.phosphosite.is_site_of.protein.edges",
-      "prokn.lincs_p100.phosphosite.unregulated.experiment.edges",
-      "prokn.lincs_p100.phosphosite.up_regulated.experiment.edges",
-      "prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges",
-      "prokn.msigdb.msigdb.has_marker_gene.gene.edges",
-      "prokn.msigdb.msigdb.has_signature_gene.gene.edges",
-      "prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges",
-      "prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges",
-      "prokn.pir.compound.targets.protein.edges",
-      "prokn.pir.disease.skos_exact_match.diseaseorphenotype.edges",
+      "prokn.mcp",
       "prokn.sparql",
-      "prokn.uniprotkb.protein.has_ptm.ptm.edges",
       "propreo",
       "protcid",
       "proton",
@@ -627,6 +576,7 @@
       "aop-wiki",
       "aragorn",
       "arax",
+      "archs4",
       "ars",
       "athena",
       "bgee",
@@ -644,6 +594,7 @@
       "cellosaurus",
       "cfde-gse",
       "cgnc",
+      "chea",
       "chea-kg",
       "chembl",
       "ciel",
@@ -685,6 +636,7 @@
       "efo",
       "embiology",
       "emikg",
+      "enrichr",
       "enrichr-kg",
       "ensembl",
       "entrez",
@@ -748,6 +700,7 @@
       "metacyc",
       "metanetx",
       "mgd",
+      "mgi",
       "mint",
       "molepro",
       "monarchinitiative",
@@ -942,6 +895,8 @@
       "ekg",
       "emap",
       "emapa",
+      "emind",
+      "encode",
       "envo",
       "eo",
       "eol-traitbank",
@@ -977,6 +932,7 @@
       "genomickb",
       "geo",
       "geoconnex",
+      "geonames",
       "gff",
       "glkb",
       "glycocoo",
@@ -1005,6 +961,7 @@
       "icees-kg",
       "iceo",
       "ico",
+      "iconclass",
       "identifier-mappings",
       "idisk",
       "ido",
@@ -1087,6 +1044,7 @@
       "nmr",
       "nomen",
       "np-kg",
+      "npass",
       "npo",
       "oae",
       "oarcs",
@@ -1171,6 +1129,7 @@
       "rnao",
       "ro",
       "robokop",
+      "ror",
       "rs",
       "rtx-kg2",
       "ruralkg",
@@ -1335,6 +1294,13 @@
       "arax.examples",
       "arax.github",
       "arax.ui",
+      "archs4",
+      "archs4.human.gene_counts",
+      "archs4.human.transcript_counts",
+      "archs4.mouse.gene_counts",
+      "archs4.mouse.transcript_counts",
+      "archs4.portal",
+      "archs4.zoo",
       "aro",
       "aro.owl",
       "ars",
@@ -1547,10 +1513,14 @@
       "cfde-ddkg.downloads",
       "cfde-ddkg.portal",
       "cgnc",
+      "chea",
       "chea-kg",
       "chea-kg.api",
-      "chea-kg.chipseq",
+      "chea-kg.libraries",
       "chea-kg.portal",
+      "chea.api",
+      "chea.libraries",
+      "chea.portal",
       "chebi",
       "chebi.chebi_core.obo",
       "chebi.chebi_lite.obo",
@@ -1989,15 +1959,27 @@
       "emikg",
       "emikg.kg",
       "emikg.web",
+      "emind",
+      "emind.json",
+      "emind.site",
       "ena.api",
       "ena.browser",
       "ena.datahubs",
       "ena.docs",
       "ena.ftp",
       "ena.training",
+      "encode",
+      "encode.annotations",
+      "encode.api",
+      "encode.experiment-matrix",
+      "encode.portal",
+      "enrichr",
       "enrichr-kg",
       "enrichr-kg.api",
       "enrichr-kg.portal",
+      "enrichr.api",
+      "enrichr.library-statistics",
+      "enrichr.portal",
       "ensembl",
       "ensembl.api.perl",
       "ensembl.api.rest",
@@ -2173,6 +2155,7 @@
       "gallont",
       "gallont.obo",
       "gallont.owl",
+      "gard",
       "gaz",
       "gaz.gaz-countries.owl",
       "gaz.obo",
@@ -2236,6 +2219,8 @@
       "geo.owl",
       "geoconnex",
       "geoconnex.tpf",
+      "geonames",
+      "geonames.feature-codes",
       "ghr",
       "ghr.conditions",
       "ghr.gene-catalog",
@@ -2340,6 +2325,7 @@
       "gsso.json",
       "gsso.obo",
       "gsso.owl",
+      "gtdb",
       "gtex",
       "gtex.api",
       "gtex.bulk-data",
@@ -2479,6 +2465,7 @@
       "icd10.training",
       "icd10cm",
       "icd10cm.tool",
+      "icd11",
       "icees-kg",
       "icees-kg.graph",
       "icees-kg.metadata",
@@ -2487,6 +2474,7 @@
       "iceo.owl",
       "ico",
       "ico.owl",
+      "iconclass",
       "identifier-mappings",
       "identifier-mappings.tpf",
       "idisk",
@@ -2804,6 +2792,7 @@
       "mgd.downloads",
       "mgd.gxd",
       "mgd.portal",
+      "mgi",
       "mgmlink.code",
       "mgnify.api",
       "mgnify.docs",
@@ -2959,6 +2948,8 @@
       "ncatsgardkg",
       "ncatsgardkg.code",
       "ncatsgardkg.raw-data",
+      "ncbi",
+      "ncbi.gc",
       "ncbigene",
       "ncbigene.gene2accession",
       "ncbigene.gene2ensembl",
@@ -3012,6 +3003,7 @@
       "nihreporter.publications",
       "nikg",
       "nikg.tpf",
+      "nlm",
       "nlm-ckn",
       "nlm-ckn.schema",
       "nmr",
@@ -3332,11 +3324,6 @@
       "obo-db-ingest.signor.obo",
       "obo-db-ingest.signor.owl",
       "obo-db-ingest.signor.tsv",
-      "obo-db-ingest.slm.json",
-      "obo-db-ingest.slm.obo",
-      "obo-db-ingest.slm.owl",
-      "obo-db-ingest.slm.sssom.tsv",
-      "obo-db-ingest.slm.tsv",
       "obo-db-ingest.spdx.json",
       "obo-db-ingest.spdx.obo",
       "obo-db-ingest.spdx.owl",
@@ -3345,6 +3332,11 @@
       "obo-db-ingest.sty.obo",
       "obo-db-ingest.sty.owl",
       "obo-db-ingest.sty.tsv",
+      "obo-db-ingest.swisslipid.json",
+      "obo-db-ingest.swisslipid.obo",
+      "obo-db-ingest.swisslipid.owl",
+      "obo-db-ingest.swisslipid.sssom.tsv",
+      "obo-db-ingest.swisslipid.tsv",
       "obo-db-ingest.uniprot.json",
       "obo-db-ingest.uniprot.obo",
       "obo-db-ingest.uniprot.owl",
@@ -3713,11 +3705,34 @@
       "progeny.rpackage",
       "prokn",
       "prokn.api",
+      "prokn.clinvar.gene.associated_with.diseaseorphenotype.edges",
+      "prokn.downloads",
       "prokn.emind.protein.has_variant.variant.edges",
       "prokn.emind.variant.associated_with.disease.edges",
       "prokn.emind.variant.impact.disease.edges",
       "prokn.emind.variant.impact.protein.edges",
       "prokn.explorer",
+      "prokn.glygen.aminoacid.nodes",
+      "prokn.glygen.glycoprotein.glycosylated_at.glycosylationsite.edges",
+      "prokn.glygen.glycoprotein.has_evidence.glycoproteinevidence.edges",
+      "prokn.glygen.glycoprotein.has_pro_entry.gpid2pro.edges",
+      "prokn.glygen.glycoprotein.sequence.isoform.edges",
+      "prokn.glygen.glycoprotein.sequence.protein.edges",
+      "prokn.glygen.glycoproteinevidence.citation.glycoproteincitation.edges",
+      "prokn.glygen.glycosylation.has_enzyme_protein.protein.edges",
+      "prokn.glygen.glycosylationsite.has_saccharide.glytoucan.edges",
+      "prokn.glygen.glycosylationsite.location.glygenlocation.edges",
+      "prokn.glygen.glycosyltransferasereaction.has_enzyme_protein_gr.protein.edges",
+      "prokn.glygen.glygenlocation.has_amino_acid.aminoacid.edges",
+      "prokn.glygen.glygenresidue.attached_by.glycosylation.edges",
+      "prokn.glygen.glygenresidue.has_parent.glygenresidue.edges",
+      "prokn.glygen.glytoucan.has_canonical_residue.glygenresidue.edges",
+      "prokn.glygen.glytoucan.has_glycosequence.gyglycosequence.edges",
+      "prokn.glygen.glytoucan.has_motif.glycanmotif.edges",
+      "prokn.glygen.glytoucan.is_from_source.glygensrc.edges",
+      "prokn.glygen.glytoucan.synthesized_by.glycosyltransferasereaction.edges",
+      "prokn.glygen.protein.has_isoform.isoform.edges",
+      "prokn.glygen.protein.has_isoform.protein.edges",
       "prokn.go.goterm.is_a.goterm.edges",
       "prokn.go.protein.acts_upstream_of.goterm.edges",
       "prokn.go.protein.acts_upstream_of_negative_effect.goterm.edges",
@@ -3741,6 +3756,21 @@
       "prokn.go.protein.not_located_in.goterm.edges",
       "prokn.go.protein.not_part_of.goterm.edges",
       "prokn.go.protein.part_of.goterm.edges",
+      "prokn.gtexexp.anatomy.nodes",
+      "prokn.gtexexp.gene.expressed_in.anatomy.edges",
+      "prokn.gtexexp.gtexexp.expressed_in.anatomy.edges",
+      "prokn.gtexexp.gtexexp.expressed_in.gene.edges",
+      "prokn.gtexexp.gtexexp.has_expression.expbins.edges",
+      "prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges",
+      "prokn.hgncuniprot.gene.is_protein.protein.edges",
+      "prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges",
+      "prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges",
+      "prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges",
+      "prokn.hmaz.anatomy.nodes",
+      "prokn.idgd.compound.indication.diseaseorphenotype.edges",
+      "prokn.idgd.compound.nodes",
+      "prokn.idgp.compound.bioactivity.protein.edges",
+      "prokn.idgp.compound.nodes",
       "prokn.imex.complex.nodes",
       "prokn.imex.protein.interacts_with.protein.edges",
       "prokn.imex.protein.participates_in.complex.edges",
@@ -3756,13 +3786,28 @@
       "prokn.impc.imppublication.impc_alleles.impcallele.edges",
       "prokn.interpro.domain.is_a.domain.edges",
       "prokn.interpro.protein.has_domain.domain.edges",
+      "prokn.iptmnet.protein.catalyzes.ptmsite.edges",
+      "prokn.iptmnet.protein.has_site.site.edges",
+      "prokn.lincs.compound.in_similarity_relationship_with.compound.edges",
+      "prokn.lincs.compound.negatively_regulates.gene.edges",
+      "prokn.lincs.compound.positively_regulates.gene.edges",
+      "prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges",
       "prokn.lincs_p100.perturbagen.is_used_in.experiment.edges",
+      "prokn.lincs_p100.ptmsite.is_site.site.edges",
+      "prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges",
+      "prokn.msigdb.msigdb.has_marker_gene.gene.edges",
+      "prokn.msigdb.msigdb.has_signature_gene.gene.edges",
+      "prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges",
+      "prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges",
+      "prokn.pir.compound.skos_exact_match.compound.edges",
       "prokn.pir.gene.skos_exact_match.impc_gene.edges",
+      "prokn.pir.gene.skos_exact_match.impchumangene.edges",
       "prokn.pir.impchumangene.orthologous_to.protein.edges",
       "prokn.pir.impcmousegene.has_gene_product.protein.edges",
       "prokn.reactome.pathway.event_of.pathway.edges",
       "prokn.reactome.protein.participates_in.pathway.edges",
       "prokn.tpf",
+      "prokn.uniprotkb.protein.has_site.site.edges",
       "prokn.uniprotkb.protein.has_variant.variant.edges",
       "protcid.site",
       "proteomehd",
@@ -3902,6 +3947,7 @@
       "ro.subsets.ro-neuro.owl",
       "robokop",
       "robokop.graph",
+      "ror",
       "rs",
       "rs.obo",
       "rs.owl",
@@ -4063,6 +4109,7 @@
       "spatialkg.tpf",
       "spd",
       "spd.owl",
+      "spdx",
       "spoke",
       "spoke-genelab",
       "spoke-genelab.tpf",
@@ -4143,6 +4190,7 @@
       "string.species",
       "string.species.tree",
       "string.web",
+      "sty",
       "sudokn",
       "sudokn.tpf",
       "suppkg",
@@ -4692,16 +4740,20 @@
       "geneprof",
       "geneticskp",
       "genophenoenvo-kg",
-      "geonames",
       "globi",
       "gtdb",
       "gtrnadb",
       "hald",
+      "hgnchpo",
+      "hmaz",
       "hrpimp",
       "icd10cm",
       "icd11",
-      "iconclass",
+      "idgd",
+      "idgp",
       "iev",
+      "imex",
+      "impc",
       "inchikey",
       "iproclass",
       "iptmnet",
@@ -4719,7 +4771,6 @@
       "mechreponet",
       "medi",
       "mesh",
-      "mgi",
       "mgnify",
       "mirbase",
       "mirgate",
@@ -4732,7 +4783,6 @@
       "ndfrt",
       "nlm",
       "noncode",
-      "npass",
       "oard-kg",
       "offsides",
       "owlsim",
@@ -4746,6 +4796,7 @@
       "pharmebinet",
       "phaseskg",
       "phosphositeplus",
+      "pir",
       "pirbase",
       "plncdb",
       "progenomes",
@@ -4757,19 +4808,19 @@
       "rediportal",
       "redrugs",
       "regl",
+      "remap",
       "repohub",
       "rex",
       "ribovision",
-      "ror",
       "sckan",
       "simap",
       "skos",
-      "slm",
       "smart",
       "snodb",
       "snopy",
       "snornadatabase",
       "spdx",
+      "sra",
       "srpdb",
       "startgeo",
       "sty",
@@ -4815,6 +4866,7 @@
       "apollo_sv",
       "aragorn",
       "arax",
+      "archs4",
       "aro",
       "ars",
       "atgo",
@@ -4872,6 +4924,7 @@
       "cfde-ddkg",
       "cfde-gse",
       "cgnc",
+      "chea",
       "chea-kg",
       "chebi",
       "chembl",
@@ -4991,7 +5044,10 @@
       "embiology",
       "emi",
       "emikg",
+      "emind",
       "ena",
+      "encode",
+      "enrichr",
       "enrichr-kg",
       "ensembl",
       "entrez",
@@ -5098,6 +5154,8 @@
       "hao",
       "harmonizome-kg",
       "hetionet",
+      "hgnchpo",
+      "hmaz",
       "hmdb",
       "hom",
       "homologene",
@@ -5124,12 +5182,16 @@
       "ico",
       "iconclass",
       "identifier-mappings",
+      "idgd",
+      "idgp",
       "idisk",
       "ido",
       "idomal",
       "iev",
       "ikraph",
+      "imex",
       "imodulondb",
+      "impc",
       "imr",
       "inchikey",
       "indra",
@@ -5368,6 +5430,7 @@
       "phipo",
       "phosphositeplus",
       "pid",
+      "pir",
       "pirbase",
       "pistoia-pgo",
       "plana",
@@ -5411,6 +5474,7 @@
       "redrugs",
       "refseq",
       "regl",
+      "remap",
       "repodb",
       "repohub",
       "reprotox-kg",
@@ -5458,7 +5522,6 @@
       "skm",
       "skos",
       "sldb",
-      "slm",
       "slso",
       "smart",
       "smpdb",
@@ -5476,6 +5539,7 @@
       "spoke",
       "spoke-genelab",
       "spoke-okn",
+      "sra",
       "sri-reference-kg",
       "srpdb",
       "startgeo",
@@ -5575,41 +5639,37 @@
       "ena",
       "eupathdb",
       "ev",
-      "gard",
       "genetics-kp",
-      "geonames",
-      "gtdb",
-      "icd11",
-      "iconclass",
+      "hgnchpo",
+      "hmaz",
+      "idgd",
+      "idgp",
+      "imex",
+      "impc",
       "kg-ebi-gene2pheno",
       "kg-jensenlab-diseases",
       "lipro",
       "malacards",
       "mat",
       "mfo",
-      "mgi",
       "mgmlink",
       "mgnify",
       "mirgenedb",
       "mirtarbase",
       "modomics",
       "multiomics-kp",
-      "ncbi",
-      "nlm",
       "nlm-ckn",
-      "npass",
       "oio",
       "ontology-kp",
+      "pir",
       "rdp",
       "rediportal",
-      "ror",
+      "remap",
       "sckan",
       "service-kp",
       "simap",
-      "slm",
-      "spdx",
+      "sra",
       "sri-reference-kg",
-      "sty",
       "tahe",
       "tahh",
       "toxcast",
@@ -5636,6 +5696,7 @@
       "aop-wiki",
       "apo",
       "apollo_sv",
+      "archs4",
       "aro",
       "ato",
       "atom",
@@ -5679,6 +5740,7 @@
       "cfde-ddkg",
       "cfde-gse",
       "cgnc",
+      "chea",
       "chea-kg",
       "chemicalchecker",
       "cheminf",
@@ -5765,7 +5827,10 @@
       "emapa",
       "embiology",
       "emikg",
+      "emind",
       "ena",
+      "encode",
+      "enrichr",
       "enrichr-kg",
       "envo",
       "eo",
@@ -5844,6 +5909,8 @@
       "hancestro",
       "hao",
       "harmonizome-kg",
+      "hgnchpo",
+      "hmaz",
       "hom",
       "hprd",
       "hra-kg",
@@ -5861,11 +5928,15 @@
       "ico",
       "iconclass",
       "identifier-mappings",
+      "idgd",
+      "idgp",
       "ido",
       "idomal",
       "iev",
       "ikraph",
+      "imex",
       "imodulondb",
+      "impc",
       "imr",
       "inchikey",
       "indra",
@@ -6041,6 +6112,7 @@
       "phipo",
       "phosphositeplus",
       "pid",
+      "pir",
       "pirbase",
       "pistoia-pgo",
       "plana",
@@ -6071,6 +6143,7 @@
       "rediportal",
       "redrugs",
       "refseq",
+      "remap",
       "repohub",
       "reprotox-kg",
       "resid",
@@ -6104,7 +6177,6 @@
       "skm",
       "skos",
       "sldb",
-      "slm",
       "slso",
       "smart",
       "snodb",
@@ -6117,6 +6189,7 @@
       "spdx",
       "spoke-genelab",
       "spoke-okn",
+      "sra",
       "srpdb",
       "stato",
       "stellar",
@@ -6251,6 +6324,7 @@
       "ecid",
       "ecosim",
       "eggnog",
+      "emind",
       "ena",
       "entrez",
       "epsd",
@@ -6280,7 +6354,6 @@
       "genetics-kp",
       "geneticskp",
       "geoconnex",
-      "geonames",
       "gff",
       "ghr",
       "glkb",
@@ -6291,6 +6364,8 @@
       "gtrnadb",
       "gtrx",
       "gutmgene",
+      "hgnchpo",
+      "hmaz",
       "hpidb",
       "humannet",
       "hydrologykg",
@@ -6300,7 +6375,11 @@
       "icees-kg",
       "iconclass",
       "identifier-mappings",
+      "idgd",
+      "idgp",
+      "imex",
       "imodulondb",
+      "impc",
       "inchikey",
       "insight",
       "iproclass",
@@ -6349,7 +6428,6 @@
       "nanopublications",
       "nasa-gesdisc-kg",
       "ncatsgardkg",
-      "ncbi",
       "ncipidkg",
       "nde",
       "ndfrt",
@@ -6387,6 +6465,7 @@
       "phewascat",
       "phosphositeplus",
       "pid",
+      "pir",
       "pirbase",
       "plncdb",
       "preppi",
@@ -6405,12 +6484,12 @@
       "rediportal",
       "refseq",
       "regl",
+      "remap",
       "repohub",
       "retriever",
       "rgd",
       "ribocentre",
       "ribovision",
-      "ror",
       "ruralkg",
       "rxnorm",
       "sawgraph",
@@ -6425,7 +6504,6 @@
       "silva",
       "simap",
       "sldb",
-      "slm",
       "smart",
       "smpdb",
       "snodb",
@@ -6436,12 +6514,12 @@
       "spdx",
       "spoke-genelab",
       "spoke-okn",
+      "sra",
       "sri-reference-kg",
       "srpdb",
       "startgeo",
       "sudokn",
       "suppkg",
-      "swisslipid",
       "swissmodel",
       "tair",
       "tarbase",
@@ -6507,6 +6585,7 @@
       "cebs",
       "cellmarker",
       "cgnc",
+      "chea",
       "ciel",
       "circbase",
       "civic",
@@ -6561,6 +6640,7 @@
       "emap",
       "embiology",
       "emikg",
+      "emind",
       "ena",
       "entrez",
       "epigraphdb",
@@ -6613,6 +6693,8 @@
       "gutmgene",
       "gwascatalog",
       "habronattus",
+      "hgnchpo",
+      "hmaz",
       "hmdb",
       "homologene",
       "hpidb",
@@ -6624,7 +6706,11 @@
       "icd11",
       "iconclass",
       "identifier-mappings",
+      "idgd",
+      "idgp",
       "iev",
+      "imex",
+      "impc",
       "imr",
       "inchikey",
       "innatedb",
@@ -6727,6 +6813,7 @@
       "pharmdb",
       "phaseskg",
       "phosphositeplus",
+      "pir",
       "pirbase",
       "plncdb",
       "plo",
@@ -6744,6 +6831,7 @@
       "rdp",
       "rediportal",
       "regl",
+      "remap",
       "repodb",
       "repohub",
       "resid",
@@ -6771,7 +6859,6 @@
       "sider",
       "signor",
       "simap",
-      "slm",
       "smart",
       "smpdb",
       "snodb",
@@ -6782,6 +6869,7 @@
       "spatialkg",
       "spdx",
       "spoke-okn",
+      "sra",
       "sri-reference-kg",
       "srpdb",
       "startgeo",
@@ -6896,6 +6984,7 @@
       "ceph",
       "cfde-ddkg",
       "cgnc",
+      "chea-kg",
       "chebi",
       "chembl",
       "chemicalchecker",
@@ -6999,7 +7088,9 @@
       "emapa",
       "embiology",
       "emikg",
+      "emind",
       "ena",
+      "enrichr-kg",
       "ensembl",
       "envo",
       "eo",
@@ -7042,6 +7133,7 @@
       "fovt",
       "fypo",
       "gallont",
+      "gard",
       "gaz",
       "gbif",
       "gdc",
@@ -7061,6 +7153,7 @@
       "genomickb",
       "geo",
       "geoconnex",
+      "geonames",
       "gff",
       "ghr",
       "glkb",
@@ -7101,8 +7194,10 @@
       "ibkh",
       "icd10",
       "icd10cm",
+      "icd11",
       "iceo",
       "ico",
+      "iconclass",
       "identifier-mappings",
       "idisk",
       "ido",
@@ -7164,6 +7259,7 @@
       "mfo",
       "mfoem",
       "mfomd",
+      "mgi",
       "mgmlink",
       "mgnify",
       "mi",
@@ -7200,6 +7296,7 @@
       "nasa-gesdisc-kg",
       "nbo",
       "ncatsgardkg",
+      "ncbi",
       "ncbigene",
       "ncbitaxon",
       "ncipidkg",
@@ -7221,6 +7318,7 @@
       "nomen",
       "noncode",
       "np-kg",
+      "npass",
       "npo",
       "nsides",
       "oae",
@@ -7343,6 +7441,7 @@
       "rnao",
       "ro",
       "robokop",
+      "ror",
       "rs",
       "rtx-kg2",
       "ruralkg",
@@ -7381,6 +7480,7 @@
       "sopharm",
       "spatialkg",
       "spd",
+      "spdx",
       "spoke",
       "spoke-genelab",
       "spoke-okn",
@@ -7482,6 +7582,7 @@
       "aact.playground",
       "aact.schema",
       "ado.owl",
+      "adw.owl",
       "aeo.owl",
       "aeolus.standardized_data",
       "aero.owl",
@@ -7531,6 +7632,12 @@
       "arax.examples",
       "arax.github",
       "arax.ui",
+      "archs4.human.gene_counts",
+      "archs4.human.transcript_counts",
+      "archs4.mouse.gene_counts",
+      "archs4.mouse.transcript_counts",
+      "archs4.portal",
+      "archs4.zoo",
       "aro.owl",
       "ars.api",
       "ars.portal",
@@ -7731,9 +7838,12 @@
       "cfde-gse.portal",
       "cgnc.genes",
       "chea-kg.api",
-      "chea-kg.chipseq",
       "chea-kg.graph",
+      "chea-kg.libraries",
       "chea-kg.portal",
+      "chea.api",
+      "chea.libraries",
+      "chea.portal",
       "chebi.chebi_core.obo",
       "chebi.chebi_lite.obo",
       "chebi.json",
@@ -8107,15 +8217,24 @@
       "emikg.kg",
       "emikg.sparql",
       "emikg.web",
+      "emind.json",
+      "emind.site",
       "ena.api",
       "ena.browser",
       "ena.datahubs",
       "ena.docs",
       "ena.ftp",
       "ena.training",
+      "encode.annotations",
+      "encode.api",
+      "encode.experiment-matrix",
+      "encode.portal",
       "enrichr-kg.api",
       "enrichr-kg.graph",
       "enrichr-kg.portal",
+      "enrichr.api",
+      "enrichr.library-statistics",
+      "enrichr.portal",
       "ensembl.api.perl",
       "ensembl.api.rest",
       "ensembl.biomart",
@@ -8226,7 +8345,6 @@
       "fbdv.obo",
       "fbdv.owl",
       "fbsp.owl",
-      "feature",
       "fideo.owl",
       "finngen.endpoints",
       "finngen.meta_analysis",
@@ -8288,7 +8406,6 @@
       "gbif.ipt",
       "gbif.maps-api",
       "gbif.portal",
-      "gc",
       "gdc.api",
       "gdc.data-transfer-tool",
       "gdc.portal",
@@ -8348,6 +8465,7 @@
       "geo.owl",
       "geoconnex.sparql",
       "geoconnex.tpf",
+      "geonames.feature-codes",
       "gff.specification",
       "ghr.conditions",
       "ghr.gene-catalog",
@@ -9035,6 +9153,7 @@
       "nbo.owl",
       "ncatsgardkg.code",
       "ncatsgardkg.raw-data",
+      "ncbi.gc",
       "ncbigene.gene2accession",
       "ncbigene.gene2ensembl",
       "ncbigene.gene2go",
@@ -9390,11 +9509,6 @@
       "obo-db-ingest.signor.obo",
       "obo-db-ingest.signor.owl",
       "obo-db-ingest.signor.tsv",
-      "obo-db-ingest.slm.json",
-      "obo-db-ingest.slm.obo",
-      "obo-db-ingest.slm.owl",
-      "obo-db-ingest.slm.sssom.tsv",
-      "obo-db-ingest.slm.tsv",
       "obo-db-ingest.spdx.json",
       "obo-db-ingest.spdx.obo",
       "obo-db-ingest.spdx.owl",
@@ -9403,6 +9517,11 @@
       "obo-db-ingest.sty.obo",
       "obo-db-ingest.sty.owl",
       "obo-db-ingest.sty.tsv",
+      "obo-db-ingest.swisslipid.json",
+      "obo-db-ingest.swisslipid.obo",
+      "obo-db-ingest.swisslipid.owl",
+      "obo-db-ingest.swisslipid.sssom.tsv",
+      "obo-db-ingest.swisslipid.tsv",
       "obo-db-ingest.uniprot.json",
       "obo-db-ingest.uniprot.obo",
       "obo-db-ingest.uniprot.owl",
@@ -9765,6 +9884,7 @@
       "progeny.rpackage",
       "prokn.api",
       "prokn.clinvar.gene.associated_with.diseaseorphenotype.edges",
+      "prokn.downloads",
       "prokn.emind.protein.has_variant.variant.edges",
       "prokn.emind.variant.associated_with.disease.edges",
       "prokn.emind.variant.impact.disease.edges",
@@ -9844,31 +9964,30 @@
       "prokn.impc.imppublication.impc_alleles.impcallele.edges",
       "prokn.interpro.domain.is_a.domain.edges",
       "prokn.interpro.protein.has_domain.domain.edges",
-      "prokn.iptmnet.protein.has_isoform.protein.edges",
-      "prokn.iptmnet.ptm.targets.protein.edges",
+      "prokn.iptmnet.protein.catalyzes.ptmsite.edges",
+      "prokn.iptmnet.protein.has_site.site.edges",
       "prokn.lincs.compound.in_similarity_relationship_with.compound.edges",
       "prokn.lincs.compound.negatively_regulates.gene.edges",
       "prokn.lincs.compound.positively_regulates.gene.edges",
+      "prokn.lincs_p100.experiment.perturbation_effect.ptmsite.edges",
       "prokn.lincs_p100.perturbagen.is_used_in.experiment.edges",
-      "prokn.lincs_p100.phosphosite.down_regulated.experiment.edges",
-      "prokn.lincs_p100.phosphosite.is_site_of.protein.edges",
-      "prokn.lincs_p100.phosphosite.unregulated.experiment.edges",
-      "prokn.lincs_p100.phosphosite.up_regulated.experiment.edges",
+      "prokn.lincs_p100.ptmsite.is_site.site.edges",
+      "prokn.mcp",
       "prokn.msigdb.msigdb.chr_band_contains_gene.gene.edges",
       "prokn.msigdb.msigdb.has_marker_gene.gene.edges",
       "prokn.msigdb.msigdb.has_signature_gene.gene.edges",
       "prokn.msigdb.msigdb.pathway_associated_with_gene.gene.edges",
       "prokn.msigdb.msigdb.targets_expression_of_gene.gene.edges",
-      "prokn.pir.compound.targets.protein.edges",
-      "prokn.pir.disease.skos_exact_match.diseaseorphenotype.edges",
+      "prokn.pir.compound.skos_exact_match.compound.edges",
       "prokn.pir.gene.skos_exact_match.impc_gene.edges",
+      "prokn.pir.gene.skos_exact_match.impchumangene.edges",
       "prokn.pir.impchumangene.orthologous_to.protein.edges",
       "prokn.pir.impcmousegene.has_gene_product.protein.edges",
       "prokn.reactome.pathway.event_of.pathway.edges",
       "prokn.reactome.protein.participates_in.pathway.edges",
       "prokn.sparql",
       "prokn.tpf",
-      "prokn.uniprotkb.protein.has_ptm.ptm.edges",
+      "prokn.uniprotkb.protein.has_site.site.edges",
       "prokn.uniprotkb.protein.has_variant.variant.edges",
       "protcid.database",
       "protcid.site",
@@ -9888,7 +10007,6 @@
       "pubchem.pug.rest",
       "pubchem.substances.asn",
       "pubchem.substances.sdf",
-      "publisher",
       "pubmed.advanced.search",
       "pubmed.baseline",
       "pubmed.clinical.queries",
@@ -10621,7 +10739,6 @@
       "cellosaurus.api.rest",
       "cellosaurus.api.sparql",
       "cfde-gse.genesets",
-      "chea-kg.chipseq",
       "chembl.api",
       "chembl.map_to_uniprot",
       "chembl.site",
@@ -10700,7 +10817,6 @@
       "evoweb.sparql",
       "evoweb.tpf",
       "fabio.documentation",
-      "feature",
       "finngen.endpoints",
       "finngen.meta_analysis",
       "finngen.risteys",
@@ -10725,7 +10841,6 @@
       "gbif.csv-download",
       "gbif.dwc-archive",
       "gbif.ipt",
-      "gc",
       "gene-expression-atlas-okn.sparql",
       "gene-expression-atlas-okn.tpf",
       "genecards.web.interface",
@@ -10847,6 +10962,7 @@
       "namsnetwork.portal",
       "nasa-gesdisc-kg.sparql",
       "nasa-gesdisc-kg.tpf",
+      "ncbi.gc",
       "ncipidkg.sparql",
       "ncipidkg.tpf",
       "ndcd.excel",
@@ -10923,7 +11039,6 @@
       "protcid.site",
       "proteomehd.data",
       "pubchem.pug.rest",
-      "publisher",
       "pubtator.api",
       "pubtator.bulk",
       "pubtator.site",
@@ -11024,9 +11139,7 @@
       "zfin.zfa"
     ],
     "products_missing_original_source_ids": [
-      "feature",
       "foodon_core.owl",
-      "gc",
       "hancestro-base.owl",
       "hetnetpy",
       "orphacode.nomenclature",
@@ -11044,7 +11157,6 @@
       "pcl-simple.owl",
       "pr-asserted.obo",
       "pr-asserted.owl",
-      "publisher",
       "slso-base.owl",
       "t4fs-community.json",
       "t4fs-community.obo",
@@ -11061,8 +11173,6 @@
       "chea-kg.graph",
       "ecosim.model.owl",
       "enrichr-kg.graph",
-      "feature",
-      "gc",
       "glycordf.java-source",
       "harmonizome-kg.graph",
       "ibkh.graph",
@@ -11083,7 +11193,6 @@
       "pathway-commons.sif",
       "pharmdb.graph",
       "protcid.database",
-      "publisher",
       "rdbridge.graph",
       "rdbridge.literaturedatabase",
       "reprotox-kg.graph",
@@ -11117,6 +11226,7 @@
       "apollo_sv",
       "aragorn",
       "arax",
+      "archs4",
       "aro",
       "ars",
       "atgo",
@@ -11175,6 +11285,7 @@
       "cfde-ddkg",
       "cfde-gse",
       "cgnc",
+      "chea",
       "chea-kg",
       "chebi",
       "chembl",
@@ -11297,7 +11408,10 @@
       "embiology",
       "emi",
       "emikg",
+      "emind",
       "ena",
+      "encode",
+      "enrichr",
       "enrichr-kg",
       "ensembl",
       "entrez",
@@ -11405,6 +11519,8 @@
       "harmonizome-kg",
       "hetionet",
       "hgnc",
+      "hgnchpo",
+      "hmaz",
       "hmdb",
       "hom",
       "homologene",
@@ -11432,12 +11548,16 @@
       "ico",
       "iconclass",
       "identifier-mappings",
+      "idgd",
+      "idgp",
       "idisk",
       "ido",
       "idomal",
       "iev",
       "ikraph",
+      "imex",
       "imodulondb",
+      "impc",
       "imr",
       "inchikey",
       "indra",
@@ -11677,6 +11797,7 @@
       "phipo",
       "phosphositeplus",
       "pid",
+      "pir",
       "pirbase",
       "pistoia-pgo",
       "plana",
@@ -11720,6 +11841,7 @@
       "redrugs",
       "refseq",
       "regl",
+      "remap",
       "repodb",
       "repohub",
       "reprotox-kg",
@@ -11767,7 +11889,6 @@
       "skm",
       "skos",
       "sldb",
-      "slm",
       "slso",
       "smart",
       "smpdb",
@@ -11785,6 +11906,7 @@
       "spoke",
       "spoke-genelab",
       "spoke-okn",
+      "sra",
       "sri-reference-kg",
       "srpdb",
       "startgeo",
@@ -12059,6 +12181,7 @@
       "nikg",
       "nmr",
       "noncode",
+      "npass",
       "oard-kg",
       "obi",
       "obis",
@@ -12187,7 +12310,6 @@
     ],
     "resources_without_products_ids": [
       "aao",
-      "adw",
       "ato",
       "bootstrep",
       "cmf",
@@ -12225,6 +12347,7 @@
       "zea"
     ],
     "retrieval_warning_product_ids": [
+      "adw.owl",
       "afpo.json",
       "afpo.obo",
       "alliance.downloads",
@@ -12251,6 +12374,7 @@
       "drugrephub.drug-info.tsv",
       "drugrephub.sample-info.tsv",
       "dsstox.description",
+      "enrichr.library-statistics",
       "eo.obo",
       "eo.owl",
       "epio.EPIO_merged.owl",
@@ -12476,24 +12600,21 @@
       "tcrd"
     ],
     "stub_resource_ids": [
-      "gard",
-      "geonames",
-      "gtdb",
-      "icd11",
-      "iconclass",
-      "mgi",
-      "ncbi",
-      "nlm",
-      "npass",
-      "ror",
-      "slm",
-      "spdx",
-      "sty"
+      "hgnchpo",
+      "hmaz",
+      "idgd",
+      "idgp",
+      "imex",
+      "impc",
+      "pir",
+      "remap",
+      "sra"
     ],
     "unchanged_since_creation_resource_ids": [
       "aact",
       "afcs",
       "aragorn",
+      "archs4",
       "atom",
       "batman",
       "brenda",
@@ -12501,7 +12622,7 @@
       "cebs",
       "cellmarker",
       "cfde-gse",
-      "chea-kg",
+      "chea",
       "ckg",
       "cmap",
       "cohd",
@@ -12520,26 +12641,27 @@
       "dsstoxdb",
       "ekg",
       "emi",
-      "enrichr-kg",
+      "encode",
+      "enrichr",
       "entrez",
       "epigraphdb",
       "epsd",
       "eram",
       "faers",
-      "gard",
       "gemscript",
       "gencode",
       "gendr",
       "genemania",
       "geneticskp",
       "genophenoenvo-kg",
-      "geonames",
       "glycocoo",
       "glycordf",
       "goa",
       "gtrx",
       "hald",
       "harmonizome-kg",
+      "hgnchpo",
+      "hmaz",
       "hpa",
       "hpidb",
       "hra",
@@ -12547,11 +12669,13 @@
       "hubmap",
       "humannet",
       "huri",
-      "icd11",
       "icees-kg",
-      "iconclass",
+      "idgd",
+      "idgp",
       "ikraph",
+      "imex",
       "imodulondb",
+      "impc",
       "inchikey",
       "iptmnet",
       "irefindex",
@@ -12569,15 +12693,12 @@
       "medlineplus",
       "metatraits",
       "mgd",
-      "mgi",
       "microbiomekg",
       "mint",
       "motrpac",
       "mousemine",
       "mrbase",
       "msigdb",
-      "ncbi",
-      "npass",
       "obis",
       "ohdsi",
       "oio",
@@ -12599,6 +12720,7 @@
       "pharmebinet",
       "pharos",
       "phewascat",
+      "pir",
       "pistoia-pgo",
       "plant-reactome",
       "preppi",
@@ -12610,19 +12732,18 @@
       "rdkg",
       "redrugs",
       "regl",
+      "remap",
       "reprotox-kg",
       "rfam",
       "rgd",
       "ribovision",
       "rna-kg",
-      "ror",
       "sennet",
       "simap",
-      "slm",
       "smpdb",
       "snodb",
       "snpeff",
-      "spdx",
+      "sra",
       "tair",
       "tbkg",
       "tcga",
@@ -12644,56 +12765,56 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-05-19T19:27:41Z",
+  "generated_at": "2026-05-21T18:01:00Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 144,
     "with_evaluation_page": 120,
     "without_evaluation_page": 24
   },
   "links": {
-    "broken_urls": 492,
-    "cache_hits": 3473,
+    "broken_urls": 441,
+    "cache_hits": 3418,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 2981,
-    "live_checked_urls": 0,
+    "healthy_urls": 3064,
+    "live_checked_urls": 87,
     "mode": "live",
-    "total_unique_urls": 3473,
+    "total_unique_urls": 3505,
     "unchecked_urls": 0
   },
   "products": {
-    "missing_format": 829,
-    "missing_original_source": 25,
-    "missing_product_url": 101,
-    "retrieval_warning_mentions": 421,
-    "total": 5104
+    "missing_format": 826,
+    "missing_original_source": 22,
+    "missing_product_url": 107,
+    "retrieval_warning_mentions": 675,
+    "total": 5271
   },
-  "resource_count": 780,
+  "resource_count": 793,
   "resources": {
-    "contacts_with_org_connection": 222,
-    "contacts_without_org_connection": 408,
-    "missing_contacts": 150,
+    "contacts_with_org_connection": 226,
+    "contacts_without_org_connection": 414,
+    "missing_contacts": 153,
     "missing_description": 0,
-    "missing_fairsharing_id": 772,
-    "missing_homepage_url": 51,
-    "missing_infores_id": 562,
-    "missing_license": 281,
-    "missing_repository": 356,
+    "missing_fairsharing_id": 785,
+    "missing_homepage_url": 47,
+    "missing_infores_id": 575,
+    "missing_license": 286,
+    "missing_repository": 366,
     "status_counts": {
-      "active": 658,
+      "active": 671,
       "inactive": 103,
       "orphaned": 7,
       "unknown": 7,
       "unresponsive": 5
     },
-    "stub_count": 13,
-    "total": 780,
-    "with_broken_links": 311,
-    "without_products": 37
+    "stub_count": 9,
+    "total": 793,
+    "with_broken_links": 312,
+    "without_products": 36
   },
   "scoring": {
-    "average_score": 9.76,
+    "average_score": 9.45,
     "median_score": 8.0,
-    "resources_with_issues": 779,
+    "resources_with_issues": 792,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -12719,383 +12840,6 @@
     }
   },
   "top_resources": [
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://apps.okn.us/prokn/sparql"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.AminoAcid.nodes.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Isoform.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycoprotein.SEQUENCE.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Isoform.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GlyGen.Protein.HAS_ISOFORM.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Anatomy.nodes.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/HMAZ.Anatomy.nodes.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGD.Compound.nodes.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.BIOACTIVITY.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IDGP.Compound.nodes.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.HAS_ISOFORM.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.PTM.TARGETS.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.DOWN_REGULATED.Experiment.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.IS_SITE_OF.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UNREGULATED.Experiment.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Phosphosite.UP_REGULATED.Experiment.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.TARGETS.Protein.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Disease.SKOS_EXACT_MATCH.DiseaseOrPhenotype.edges.csv"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_PTM.PTM.edges.csv"
-        }
-      ],
-      "id": "prokn",
-      "issues": [
-        {
-          "count": 55,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 165
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 2,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Protein Knowledge Network",
-      "resource_page": "resource/prokn/prokn.html",
-      "score": 175
-    },
     {
       "activity_status": "active",
       "broken_links": [
@@ -13951,6 +13695,93 @@
       "name": "snoDB",
       "resource_page": "resource/snodb/snodb.html",
       "score": 32
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://xteam.xbio.top/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://xteam.xbio.top/ACT/"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://xteam.xbio.top/download/all_cell_markers.txt"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://xteam.xbio.top/download/Human_cell_markers.txt"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://xteam.xbio.top/download/Single_cell_markers.txt"
+        }
+      ],
+      "id": "cellmarker",
+      "issues": [
+        {
+          "count": 6,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 18
+        },
+        {
+          "count": 6,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 6
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "CellMarker",
+      "resource_page": "resource/cellmarker/cellmarker.html",
+      "score": 31
     }
   ]
 }

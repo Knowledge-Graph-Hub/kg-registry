@@ -10,22 +10,22 @@ contacts:
         value: https://labs.icahn.mssm.edu/maayanlab/
     label: Ma'ayan Laboratory
 creation_date: '2025-09-23T00:00:00Z'
-description: ChEA-KG is a knowledge graph built around the ChEA (ChIP Enrichment Analysis) database that integrates chromatin immunoprecipitation sequencing data with transcription factor binding sites, gene regulatory networks, and functional annotations to provide comprehensive insights into transcriptional regulation across cell types and conditions.
+description: ChEA-KG is a Ma'ayan Lab transcription factor knowledge graph and web resource associated with the ChEA3 platform, integrating transcription factor target gene libraries, coexpression networks, benchmarking datasets, and interactive query results for transcription factor enrichment analysis.
 domains:
   - biomedical
   - genomics
   - systems biology
 homepage_url: https://maayanlab.cloud/chea-kg/
 id: chea-kg
-last_modified_date: '2025-09-23T00:00:00Z'
+last_modified_date: '2026-05-21T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
+  id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  label: CC BY-NC-SA 4.0
 name: ChEA-KG
 products:
   - category: GraphicalInterface
-    description: Interactive web interface for exploring transcription factor-target gene relationships with regulatory network visualization
+    description: Interactive ChEA3 web interface for transcription factor enrichment analysis, result tables, and network visualizations
     format: http
     id: chea-kg.portal
     name: ChEA-KG Explorer
@@ -33,17 +33,23 @@ products:
     original_source:
       - source: chea-kg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: chea
+        relation_type: prov:wasInfluencedBy
   - category: ProgrammingInterface
-    description: RESTful API for programmatic access to ChIP-seq derived transcription factor binding data
+    description: ChEA3 API endpoint for submitting gene sets and retrieving transcription factor enrichment results as JSON
     format: http
     id: chea-kg.api
     name: ChEA-KG API
-    product_url: https://maayanlab.cloud/chea-kg/api/
+    product_url: https://maayanlab.cloud/chea3/api/enrich/
     original_source:
       - source: chea-kg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: chea
+        relation_type: prov:wasInfluencedBy
   - category: GraphProduct
-    description: Neo4j database containing transcription factors, target genes, and regulatory relationships from ChIP-seq studies
+    description: Neo4j knowledge graph integrating transcription factor target libraries, coexpression networks, and benchmark datasets used by the ChEA3 resource
     dump_format: neo4j
     format: neo4j
     id: chea-kg.graph
@@ -51,21 +57,56 @@ products:
     original_source:
       - source: chea-kg
         relation_type: prov:hadPrimarySource
+      - source: encode
+        relation_type: prov:hadPrimarySource
+      - source: remap
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: archs4
+        relation_type: prov:hadPrimarySource
+      - source: enrichr
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: tcga
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: chea
+        relation_type: prov:wasInfluencedBy
   - category: Product
-    description: Processed ChIP-seq datasets with transcription factor binding sites and target gene annotations
-    id: chea-kg.chipseq
-    name: ChEA ChIP-seq Data
+    description: Download catalog for ChEA3 transcription factor target libraries, benchmark datasets, and additional supporting libraries
+    format: http
+    id: chea-kg.libraries
+    name: ChEA-KG Library Downloads
     product_url: https://maayanlab.cloud/chea3/index.html#content4-13
     original_source:
       - source: chea-kg
         relation_type: prov:hadPrimarySource
+      - source: encode
+        relation_type: prov:hadPrimarySource
+      - source: remap
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: archs4
+        relation_type: prov:hadPrimarySource
+      - source: enrichr
+        relation_type: prov:hadPrimarySource
+      - source: geo
+        relation_type: prov:hadPrimarySource
+      - source: tcga
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: chea
+        relation_type: prov:wasInfluencedBy
 publications:
   - authors:
       - Keenan AB
       - Torre D
       - Lachmann A
       - Leong AK
-      - Wojtkiewicz ML
+      - Wojciechowicz ML
       - Utti V
       - Jagodnik KM
       - Kropiwnicki E
@@ -81,108 +122,22 @@ repository: https://github.com/MaayanLab/chea-kg
 
 # ChEA-KG
 
-ChEA-KG is a comprehensive knowledge graph that integrates chromatin immunoprecipitation sequencing (ChIP-seq) data from the ChEA database with transcription factor binding information, target gene annotations, and regulatory network data to provide detailed insights into transcriptional regulation mechanisms across diverse biological contexts.
+ChEA-KG is a Ma'ayan Lab transcription factor knowledge-graph project whose public web deployment currently presents the ChEA3 transcription factor enrichment interface. The resource combines transcription factor target libraries, coexpression-based networks, and benchmark perturbation datasets to support transcription factor enrichment analysis, ranked results, and interactive network visualization.
 
-## Key Features
+The public ChEA3 site explicitly documents the major upstream library families used by the resource. Primary libraries include ENCODE and ReMap ChIP-seq collections, literature-derived ChIP-seq libraries from prior ChEA releases, GTEx and ARCHS4 coexpression libraries, and Enrichr query co-occurrence data. Benchmarking datasets include single-transcription-factor perturbation signatures mined from GEO, while some network visualizations and annotations also draw on TCGA expression-derived modules.
 
-### Comprehensive ChIP-seq Integration
-- Over 100,000 ChIP-seq experiments from public repositories
-- Transcription factor binding sites mapped across the human genome
-- Cell type and tissue-specific regulatory landscapes
-- Condition-specific transcriptional programs
+The source repository documents a Neo4j-backed implementation and Docker-based local deployment workflow. The public site exposes a browser interface, a POST-based API endpoint for submitting gene sets to ChEA3, and a download section listing the library files used for enrichment analysis and benchmarking.
 
-### Multi-Species Coverage
-- Human transcription factor binding data with extensive coverage
-- Mouse regulatory networks for comparative analysis
-- Cross-species transcription factor ortholog mapping
-- Conservation analysis of regulatory relationships
+## Original Sources
 
-### Regulatory Network Construction
-- Direct transcription factor-target gene relationships
-- Co-regulatory transcription factor modules
-- Hierarchical regulatory cascades and feedback loops
-- Tissue-specific regulatory network topologies
-
-## Data Sources
-
-### ChIP-seq Repositories
-- ENCODE Project chromatin immunoprecipitation data
-- GEO ChIP-seq datasets with standardized processing
-- Roadmap Epigenomics Project regulatory landscapes
-- CISTROME database curated ChIP-seq experiments
-
-### Transcription Factor Annotations
-- UniProt transcription factor functional classifications
-- Gene Ontology transcriptional regulation terms
-- Transcription factor family classifications (TF-Class)
-- DNA binding domain structural information
-
-### Genomic Annotations
-- RefSeq gene models and transcript isoforms
-- GENCODE comprehensive gene annotations
-- Regulatory element annotations from ENCODE
-- Chromatin state segmentations across cell types
-
-### Expression Data Integration
-- GTEx tissue-specific gene expression profiles
-- Single-cell RNA-seq expression atlases
-- Perturbation experiments with transcription factor modulation
-- Time-course expression studies of regulatory dynamics
-
-## Data Types
-
-### Binding Site Information
-- Peak coordinates from ChIP-seq experiments
-- Binding strength and confidence scores
-- Motif occurrence within binding regions
-- Chromatin accessibility at binding sites
-
-### Regulatory Relationships
-- Direct transcription factor-target gene pairs
-- Binding distance to transcription start sites
-- Correlation between binding and target gene expression
-- Context-specific regulatory interactions
-
-### Functional Annotations
-- Gene Ontology enrichment for target gene sets
-- Pathway enrichment analysis for regulatory modules
-- Disease associations of transcription factor networks
-- Drug target information for regulatory proteins
-
-### Comparative Data
-- Cross-cell type binding conservation
-- Species-specific transcription factor binding patterns
-- Evolution of regulatory network architectures
-- Regulatory divergence between related cell types
-
-## Applications
-
-### Regulatory Network Analysis
-- Reconstruction of cell type-specific regulatory networks
-- Identification of master transcription factors and regulatory hubs
-- Analysis of transcriptional regulatory cascades
-- Network-based prediction of gene expression changes
-
-### Functional Genomics
-- Transcription factor enrichment analysis for gene lists
-- Prediction of upstream regulators from expression signatures
-- Integration of ChIP-seq and RNA-seq data for mechanism discovery
-- Identification of regulatory biomarkers for disease states
-
-### Drug Discovery
-- Target identification through regulatory network analysis
-- Mechanism of action prediction for transcriptional modulators
-- Drug repurposing based on transcriptional signatures
-- Biomarker discovery for drug response prediction
-
-### Systems Biology
-- Multi-omics integration incorporating transcriptional regulation
-- Modeling of regulatory network dynamics
-- Prediction of cellular responses to perturbations
-- Understanding of transcriptional control in development and disease
-
-## Technical Implementation
-ChEA-KG is implemented as a Neo4j graph database with nodes representing transcription factors, genes, cell types, and experimental conditions. Relationships capture binding events, regulatory interactions, and functional associations with confidence scores based on experimental evidence quality and reproducibility across studies.
+- ChEA and ChEA2 literature-derived transcription factor target collections
+- ENCODE ChIP-seq transcription factor target libraries
+- ReMap ChIP-seq transcription factor target libraries
+- GTEx coexpression-derived transcription factor target libraries
+- ARCHS4 coexpression-derived transcription factor target libraries
+- Enrichr query co-occurrence libraries
+- GEO-derived single-transcription-factor perturbation benchmark sets
+- TCGA-based transcription factor coexpression network views
 
 ## Automated Evaluation
 

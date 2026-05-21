@@ -65,7 +65,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -99,7 +101,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -124,7 +128,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -136,7 +142,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -3529,8 +3537,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3582,10 +3590,12 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -3813,10 +3823,12 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
     by Gene Ontology biocurators linking genes, proteins, and biological processes
@@ -3827,6 +3839,282 @@ products:
     source: cam-kp
   - relation_type: prov:hadPrimarySource
     source: go
+- category: GraphProduct
+  description: GO term hierarchy edges
+  format: csv
+  id: prokn.go.goterm.is_a.goterm.edges
+  name: ProKN GO Term Hierarchy Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 11917762
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.GOTerm.IS_A.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein acts upstream of GO term edges
+  format: csv
+  id: prokn.go.protein.acts_upstream_of.goterm.edges
+  name: ProKN GO Acts Upstream Of Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 158931
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein acts upstream of negative effect edges
+  format: csv
+  id: prokn.go.protein.acts_upstream_of_negative_effect.goterm.edges
+  name: ProKN GO Acts Upstream Negative Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 10441
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_NEGATIVE_EFFECT.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein acts upstream of or within edges
+  format: csv
+  id: prokn.go.protein.acts_upstream_of_or_within.goterm.edges
+  name: ProKN GO Acts Upstream Or Within Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 714349
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein acts upstream of or within negative effect edges
+  format: csv
+  id: prokn.go.protein.acts_upstream_of_or_within_negative_effect.goterm.edges
+  name: ProKN GO Acts Upstream Or Within Negative Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 4257
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN_NEGATIVE_EFFECT.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein acts upstream of or within positive effect edges
+  format: csv
+  id: prokn.go.protein.acts_upstream_of_or_within_positive_effect.goterm.edges
+  name: ProKN GO Acts Upstream Or Within Positive Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 13894
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN_POSITIVE_EFFECT.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein acts upstream of positive effect edges
+  format: csv
+  id: prokn.go.protein.acts_upstream_of_positive_effect.goterm.edges
+  name: ProKN GO Acts Upstream Positive Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 32541
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_POSITIVE_EFFECT.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein colocalizes with GO term edges
+  format: csv
+  id: prokn.go.protein.colocalizes_with.goterm.edges
+  name: ProKN GO Colocalizes Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 261555
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.COLOCALIZES_WITH.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein contributes to GO term edges
+  format: csv
+  id: prokn.go.protein.contributes_to.goterm.edges
+  name: ProKN GO Contributes To Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 310541
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.CONTRIBUTES_TO.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein enables GO term edges
+  format: csv
+  id: prokn.go.protein.enables.goterm.edges
+  name: ProKN GO Enables Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 53141599
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ENABLES.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein involved in GO term edges
+  format: csv
+  id: prokn.go.protein.involved_in.goterm.edges
+  name: ProKN GO Involved In Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 43447452
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.INVOLVED_IN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein active in GO term edges
+  format: csv
+  id: prokn.go.protein.is_active_in.goterm.edges
+  name: ProKN GO Active In Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1630623
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.IS_ACTIVE_IN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein located in GO term edges
+  format: csv
+  id: prokn.go.protein.located_in.goterm.edges
+  name: ProKN GO Located In Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 50784436
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.LOCATED_IN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not acts upstream of or within edges
+  format: csv
+  id: prokn.go.protein.not_acts_upstream_of_or_within.goterm.edges
+  name: ProKN GO Not Acts Upstream Or Within Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1796
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_ACTS_UPSTREAM_OF_OR_WITHIN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not acts upstream of or within negative effect edges
+  format: csv
+  id: prokn.go.protein.not_acts_upstream_of_or_within_negative_effect.goterm.edges
+  name: ProKN GO Not Acts Upstream Negative Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 455
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_ACTS_UPSTREAM_OF_OR_WITHIN_NEGATIVE_EFFECT.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not colocalizes with GO term edges
+  format: csv
+  id: prokn.go.protein.not_colocalizes_with.goterm.edges
+  name: ProKN GO Not Colocalizes Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 3336
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_COLOCALIZES_WITH.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not contributes to GO term edges
+  format: csv
+  id: prokn.go.protein.not_contributes_to.goterm.edges
+  name: ProKN GO Not Contributes Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 3198
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_CONTRIBUTES_TO.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not enables GO term edges
+  format: csv
+  id: prokn.go.protein.not_enables.goterm.edges
+  name: ProKN GO Not Enables Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 129748
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_ENABLES.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not involved in GO term edges
+  format: csv
+  id: prokn.go.protein.not_involved_in.goterm.edges
+  name: ProKN GO Not Involved In Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 143198
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_INVOLVED_IN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not active in GO term edges
+  format: csv
+  id: prokn.go.protein.not_is_active_in.goterm.edges
+  name: ProKN GO Not Active In Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 893
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_IS_ACTIVE_IN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not located in GO term edges
+  format: csv
+  id: prokn.go.protein.not_located_in.goterm.edges
+  name: ProKN GO Not Located In Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 52743
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_LOCATED_IN.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein not part of GO term edges
+  format: csv
+  id: prokn.go.protein.not_part_of.goterm.edges
+  name: ProKN GO Not Part Of Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 4731
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.NOT_PART_OF.GOTerm.edges.csv
+- category: GraphProduct
+  description: GO protein part of GO term edges
+  format: csv
+  id: prokn.go.protein.part_of.goterm.edges
+  name: ProKN GO Part Of Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 3629548
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.PART_OF.GOTerm.edges.csv
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'

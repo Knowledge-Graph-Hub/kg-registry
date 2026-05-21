@@ -344,8 +344,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -1189,6 +1189,30 @@ products:
     source: obo-db-ingest
   product_file_size: 697846
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.tsv
+- category: GraphProduct
+  description: InterPro domain is_a domain edges
+  format: csv
+  id: prokn.interpro.domain.is_a.domain.edges
+  name: ProKN InterPro Domain Hierarchy Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 171040
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Domain.IS_A.Domain.edges.csv
+- category: GraphProduct
+  description: InterPro protein has domain edges
+  format: csv
+  id: prokn.interpro.protein.has_domain.domain.edges
+  name: ProKN InterPro Domain Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 4696849
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Protein.HAS_DOMAIN.Domain.edges.csv
 publications:
 - authors:
   - Blum M
@@ -1209,7 +1233,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - "Llinares-L\xF3pez F"
+  - Llinares-López F
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H

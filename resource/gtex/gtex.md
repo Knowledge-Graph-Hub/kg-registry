@@ -460,10 +460,150 @@ products:
     source: gtex
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
+- category: GraphProduct
+  description: Neo4j knowledge graph integrating transcription factor target libraries,
+    coexpression networks, and benchmark datasets used by the ChEA3 resource
+  dump_format: neo4j
+  format: neo4j
+  id: chea-kg.graph
+  name: ChEA-KG Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea-kg
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: chea
+- category: Product
+  description: Download catalog for ChEA3 transcription factor target libraries, benchmark
+    datasets, and additional supporting libraries
+  format: http
+  id: chea-kg.libraries
+  name: ChEA-KG Library Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea-kg
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: chea
+- category: Product
+  description: Download catalog for ChEA3 transcription factor target libraries and
+    benchmark datasets
+  format: http
+  id: chea.libraries
+  name: ChEA Library Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+- category: GraphProduct
+  description: GTEx expression anatomy nodes (GTEXEXP) used in ProKN
+  format: csv
+  id: prokn.gtexexp.anatomy.nodes
+  name: ProKN GTEx Anatomy Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 6993
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Anatomy.nodes.csv
+- category: GraphProduct
+  description: GTEx gene expressed in anatomy edges
+  format: csv
+  id: prokn.gtexexp.gene.expressed_in.anatomy.edges
+  name: ProKN GTEx Gene Expression Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 341113044
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv
+- category: GraphProduct
+  description: GTEx expression to anatomy edges (GTExEXP node type)
+  format: csv
+  id: prokn.gtexexp.gtexexp.expressed_in.anatomy.edges
+  name: ProKN GTExEXP Anatomy Expression Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 406384547
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv
+- category: GraphProduct
+  description: GTEx expression to gene edges (GTExEXP node type)
+  format: csv
+  id: prokn.gtexexp.gtexexp.expressed_in.gene.edges
+  name: ProKN GTExEXP Gene Expression Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 386708211
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv
+- category: GraphProduct
+  description: GTEx expression to expression bins edges
+  format: csv
+  id: prokn.gtexexp.gtexexp.has_expression.expbins.edges
+  name: ProKN GTExEXP Expression Bin Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 413542626
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv
 publications:
 - authors:
   - GTEx Consortium
