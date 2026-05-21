@@ -1,0 +1,88 @@
+---
+activity_status: active
+category: DataSource
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: "encode-help@lists.stanford.edu"
+      - contact_type: url
+        value: "https://www.encodeproject.org/"
+    label: ENCODE Data Coordination Center
+creation_date: '2026-05-21T00:00:00Z'
+description: The Encyclopedia of DNA Elements (ENCODE) is an NHGRI-funded international consortium and data resource that catalogs functional elements in the human genome and related model systems using large-scale functional genomics assays, standardized processing pipelines, and openly accessible metadata.
+domains:
+  - genomics
+homepage_url: https://www.encodeproject.org/
+id: "encode"
+last_modified_date: '2026-05-21T00:00:00Z'
+layout: resource_detail
+license:
+  id: "https://creativecommons.org/licenses/by/4.0/"
+  label: CC BY 4.0
+name: ENCODE
+products:
+  - category: GraphicalInterface
+    description: Main ENCODE portal for searching, browsing, and filtering released functional genomics experiments, biosamples, files, and annotations
+    format: http
+    id: "encode.portal"
+    name: ENCODE Portal
+    original_source:
+      - source: encode
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.encodeproject.org/
+  - category: ProgrammingInterface
+    description: REST API for retrieving ENCODE metadata and released objects in JSON format and performing structured search queries
+    format: json
+    id: "encode.api"
+    is_public: true
+    name: ENCODE REST API
+    original_source:
+      - source: encode
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.encodeproject.org/help/rest-api/
+  - category: GraphicalInterface
+    description: Experiment matrix interface for browsing released ENCODE experiments across assays, biosamples, targets, and organisms
+    format: http
+    id: "encode.experiment-matrix"
+    name: ENCODE Experiment Matrix
+    original_source:
+      - source: encode
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.encodeproject.org/matrix/?type=Experiment
+  - category: GraphicalInterface
+    description: Encyclopedia annotations view for released candidate cis-regulatory elements and other integrated ENCODE annotation products
+    format: http
+    id: "encode.annotations"
+    name: ENCODE Encyclopedia Annotations
+    original_source:
+      - source: encode
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.encodeproject.org/search/?type=Annotation&encyclopedia_version=current&annotation_type=candidate+Cis-Regulatory+Elements&annotation_type=chromatin+state&annotation_type=representative+DNase+hypersensitivity+sites&status=released
+publications:
+  - authors:
+      - The ENCODE Project Consortium
+    id: "doi:10.1038/nature11247"
+    journal: Nature
+    preferred: true
+    title: An integrated encyclopedia of DNA elements in the human genome
+    year: "2012"
+repository: https://github.com/ENCODE-DCC/encoded
+---
+
+# ENCODE
+
+The Encyclopedia of DNA Elements (ENCODE) is an ongoing international consortium funded by NHGRI to identify and organize functional elements in the genome, including regulatory elements, protein-binding sites, chromatin features, and RNA-level signals. The ENCODE portal serves as the main public access point for consortium experiments, processed files, metadata, standards, and integrative annotations.
+
+Current ENCODE portal documentation emphasizes standardized assays, shared experimental guidelines, uniform analysis pipelines, and explicit quality metrics across major assay classes such as ChIP-seq, ATAC-seq, DNase-seq, RNA-seq, eCLIP, methylation assays, chromatin conformation assays, and single-cell methods. The public REST API exposes released ENCODE objects in JSON and supports structured programmatic search over experiments, biosamples, files, publications, and annotations.
+
+## Access
+
+- Main portal: [ENCODE Portal](https://www.encodeproject.org/)
+- REST API documentation: [ENCODE REST API](https://www.encodeproject.org/help/rest-api/)
+- Experiment browser: [Experiment Matrix](https://www.encodeproject.org/matrix/?type=Experiment)
+- Integrative annotations: [ENCODE Encyclopedia Annotations](https://www.encodeproject.org/search/?type=Annotation&encyclopedia_version=current&annotation_type=candidate+Cis-Regulatory+Elements&annotation_type=chromatin+state&annotation_type=representative+DNase+hypersensitivity+sites&status=released)
+
+## Automated Evaluation
+
+- View the automated evaluation: [encode automated evaluation](encode_eval_automated.html)
