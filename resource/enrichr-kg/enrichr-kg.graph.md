@@ -1,12 +1,15 @@
 ---
 category: GraphProduct
-description: Neo4j graph database containing integrated gene set enrichment libraries with genes, terms, pathways, and functional annotations
+description: Neo4j graph database integrating Enrichr gene set libraries with genes,
+  terms, pathways, diseases, drugs, cell types, and other functional annotations
 dump_format: neo4j
 format: neo4j
 id: enrichr-kg.graph
 name: Enrichr-KG Neo4j Database
-layout: product_detail
 original_source:
-  - source: enrichr-kg
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: enrichr-kg
+- relation_type: prov:hadPrimarySource
+  source: enrichr
+layout: product_detail
 ---
