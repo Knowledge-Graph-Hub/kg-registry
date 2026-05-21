@@ -9,6 +9,7 @@ original_source:
   source: impc
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 30886543
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcAllele.IMPC_ENSEMBL_ID.ImpcMouseGene.edges.csv
 layout: product_detail
 ---

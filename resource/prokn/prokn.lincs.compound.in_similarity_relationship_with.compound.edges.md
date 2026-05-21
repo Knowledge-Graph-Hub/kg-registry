@@ -9,6 +9,7 @@ original_source:
   source: lincs
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 6193189
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv
 layout: product_detail
 ---

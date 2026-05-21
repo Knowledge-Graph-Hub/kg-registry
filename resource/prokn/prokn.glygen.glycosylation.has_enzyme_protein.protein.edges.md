@@ -9,6 +9,7 @@ original_source:
   source: glygen
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 23734
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv
 layout: product_detail
 ---

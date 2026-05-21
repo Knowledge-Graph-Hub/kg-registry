@@ -9,6 +9,7 @@ original_source:
   source: impc
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 26416649
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcMouseGene.BIOLINK_INTERACTS_WITH.ImpcHumanGene.edges.csv
 layout: product_detail
 ---

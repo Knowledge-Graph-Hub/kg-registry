@@ -9,6 +9,7 @@ original_source:
   source: idgp
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 83991029
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv
 layout: product_detail
 ---

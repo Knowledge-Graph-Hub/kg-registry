@@ -9,6 +9,7 @@ original_source:
   source: glygen
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 25008
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv
 layout: product_detail
 ---

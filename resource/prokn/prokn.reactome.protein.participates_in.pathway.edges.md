@@ -9,6 +9,7 @@ original_source:
   source: reactome
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 17112000
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Protein.PARTICIPATES_IN.Pathway.edges.csv
 layout: product_detail
 ---

@@ -80,12 +80,10 @@ products:
     source: noncode
   product_url: http://www.noncode.org/download.php
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphicalInterface
   description: Predicted functions for plant lncRNAs based on co-expression analysis
   format: http

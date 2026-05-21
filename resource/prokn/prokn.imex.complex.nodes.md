@@ -9,6 +9,7 @@ original_source:
   source: imex
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 1381676
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMEx.Complex.nodes.csv
 layout: product_detail
 ---

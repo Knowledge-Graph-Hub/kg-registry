@@ -10,6 +10,7 @@ original_source:
   source: emind
 - relation_type: prov:wasDerivedFrom
   source: pubtator
+product_file_size: 941473
 product_url: https://hershey.dbi.udel.edu/textmining/export/emind/eMIND_iTextmine.json.gz
 layout: product_detail
 ---

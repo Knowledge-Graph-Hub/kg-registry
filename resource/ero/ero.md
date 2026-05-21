@@ -34,7 +34,7 @@ products:
     source: ero
   product_url: http://purl.obolibrary.org/obo/ero.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
     to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries exceeded
     with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
@@ -48,7 +48,7 @@ products:
     to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries exceeded
     with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
-    expired (_ssl.c:1028)'')))'
+    expired (_ssl.c:1000)'')))'
 publications: []
 ---
 ## Description

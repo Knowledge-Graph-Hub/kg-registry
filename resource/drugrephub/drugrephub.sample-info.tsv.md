@@ -11,7 +11,7 @@ original_source:
   source: drugrephub
 product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
 warnings:
-- File was not able to be retrieved when checked on 2026-05-20_ Error connecting to
+- File was not able to be retrieved when checked on 2026-05-21_ Error connecting to
   URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
   exceeded with url_ /public/data/repo-sample-annotation-20240610.txt (Caused by SSLError(SSLCertVerificationError(1,
   '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local

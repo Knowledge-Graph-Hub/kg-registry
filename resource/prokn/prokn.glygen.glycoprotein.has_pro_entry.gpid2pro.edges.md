@@ -9,6 +9,7 @@ original_source:
   source: glygen
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 15557656
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv
 layout: product_detail
 ---

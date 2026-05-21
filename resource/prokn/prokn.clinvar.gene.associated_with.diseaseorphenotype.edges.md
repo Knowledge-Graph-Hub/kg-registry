@@ -9,6 +9,7 @@ original_source:
   source: clinvar
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 16911644
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv
 layout: product_detail
 ---

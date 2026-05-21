@@ -9,6 +9,7 @@ original_source:
   source: iptmnet
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 4049194
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.CATALYZES.PTMSite.edges.csv
 layout: product_detail
 ---

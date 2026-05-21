@@ -9,6 +9,7 @@ original_source:
   source: go
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 714349
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.ACTS_UPSTREAM_OF_OR_WITHIN.GOTerm.edges.csv
 layout: product_detail
 ---

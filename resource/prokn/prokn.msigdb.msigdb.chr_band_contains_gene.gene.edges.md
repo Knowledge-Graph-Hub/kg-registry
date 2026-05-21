@@ -9,6 +9,7 @@ original_source:
   source: msigdb
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 5090569
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv
 layout: product_detail
 ---

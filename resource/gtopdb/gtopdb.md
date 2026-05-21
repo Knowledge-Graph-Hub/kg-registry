@@ -60,18 +60,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
     bioactive compounds
@@ -83,18 +81,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
   format: csv
@@ -105,18 +101,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
   format: csv
@@ -127,18 +121,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
     in the database
@@ -150,18 +142,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: Product
   description: RDF/linked data format of the GtoPdb data (target-ligand interactions
     with supporting information)
@@ -173,18 +163,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: Product
   description: Complete PostgreSQL database dump of the current Guide to Pharmacology
     database
@@ -195,18 +183,16 @@ products:
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-15: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+    accessing file
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological
     access-point to GtoPdb data

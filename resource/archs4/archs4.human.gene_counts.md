@@ -14,6 +14,7 @@ original_source:
   source: sra
 - relation_type: prov:wasDerivedFrom
   source: ensembl
+product_file_size: 61899310543
 product_url: https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5
 layout: product_detail
 ---

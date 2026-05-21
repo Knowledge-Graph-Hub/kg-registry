@@ -9,6 +9,7 @@ original_source:
   source: hmaz
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 126963
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv
 layout: product_detail
 ---

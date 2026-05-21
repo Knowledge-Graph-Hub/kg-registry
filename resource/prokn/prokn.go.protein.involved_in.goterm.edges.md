@@ -9,6 +9,7 @@ original_source:
   source: go
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 43447452
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.INVOLVED_IN.GOTerm.edges.csv
 layout: product_detail
 ---

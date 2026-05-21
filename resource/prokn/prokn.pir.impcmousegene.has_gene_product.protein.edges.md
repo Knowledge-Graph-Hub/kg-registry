@@ -11,6 +11,7 @@ original_source:
   source: impc
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 19465205
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcMouseGene.BIOLINK_HAS_GENE_PRODUCT.Protein.edges.csv
 layout: product_detail
 ---

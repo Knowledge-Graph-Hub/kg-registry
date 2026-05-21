@@ -9,6 +9,7 @@ original_source:
   source: go
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 261555
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.COLOCALIZES_WITH.GOTerm.edges.csv
 layout: product_detail
 ---

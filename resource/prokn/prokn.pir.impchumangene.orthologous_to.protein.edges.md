@@ -11,6 +11,7 @@ original_source:
   source: impc
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 18025933
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcHumanGene.BIOLINK_ORTHOLOGOUS_TO.Protein.edges.csv
 layout: product_detail
 ---

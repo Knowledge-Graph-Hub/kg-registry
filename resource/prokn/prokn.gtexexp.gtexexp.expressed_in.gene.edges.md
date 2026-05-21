@@ -9,6 +9,7 @@ original_source:
   source: gtex
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 386708211
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv
 layout: product_detail
 ---

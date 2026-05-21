@@ -9,6 +9,7 @@ original_source:
   source: impc
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 4211083
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcPublication.IMPC_ALLELES.ImpcAllele.edges.csv
 layout: product_detail
 ---

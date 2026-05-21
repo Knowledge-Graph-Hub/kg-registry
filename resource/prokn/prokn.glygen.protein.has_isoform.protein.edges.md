@@ -9,6 +9,7 @@ original_source:
   source: glygen
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 653113
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Protein.edges.csv
 layout: product_detail
 ---

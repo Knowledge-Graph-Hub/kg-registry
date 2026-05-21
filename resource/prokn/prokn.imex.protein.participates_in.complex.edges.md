@@ -9,6 +9,7 @@ original_source:
   source: imex
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 18774312
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMEx.Protein.PARTICIPATES_IN.Complex.edges.csv
 layout: product_detail
 ---

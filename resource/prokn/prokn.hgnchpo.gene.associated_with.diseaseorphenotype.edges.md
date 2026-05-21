@@ -9,6 +9,7 @@ original_source:
   source: hgnchpo
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 155778514
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv
 layout: product_detail
 ---

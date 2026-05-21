@@ -8,7 +8,7 @@ original_source:
   source: cellmarker
 product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
 warnings:
-- File was not able to be retrieved when checked on 2026-05-20_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-05-21_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-05-19_ No Content-Length
   header found

@@ -9,6 +9,7 @@ original_source:
   source: hmaz
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 12730
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.nodes.csv
 layout: product_detail
 ---

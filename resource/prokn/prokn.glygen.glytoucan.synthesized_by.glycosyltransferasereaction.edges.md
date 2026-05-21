@@ -9,6 +9,7 @@ original_source:
   source: glygen
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 54721397
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv
 layout: product_detail
 ---

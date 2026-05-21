@@ -9,6 +9,7 @@ original_source:
   source: gtex
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 6993
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Anatomy.nodes.csv
 layout: product_detail
 ---

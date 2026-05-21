@@ -9,6 +9,7 @@ original_source:
   source: interpro
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 4696849
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Protein.HAS_DOMAIN.Domain.edges.csv
 layout: product_detail
 ---

@@ -9,6 +9,7 @@ original_source:
   source: emind
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 69659
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/eMIND.Variant.IMPACT.Disease.edges.csv
 layout: product_detail
 ---

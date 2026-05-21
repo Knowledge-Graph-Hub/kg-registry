@@ -58,8 +58,6 @@ products:
     source: slso
   product_url: http://purl.obolibrary.org/obo/slso.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
@@ -70,8 +68,6 @@ products:
   name: slso-base.owl
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
     when accessing file'
 publications: []

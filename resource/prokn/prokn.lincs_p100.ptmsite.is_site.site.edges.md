@@ -9,6 +9,7 @@ original_source:
   source: lincs
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 980
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.PTMSite.IS_SITE.Site.edges.csv
 layout: product_detail
 ---

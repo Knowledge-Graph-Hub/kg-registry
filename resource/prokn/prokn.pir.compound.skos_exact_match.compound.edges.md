@@ -9,6 +9,7 @@ original_source:
   source: pir
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 100170454
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.SKOS_EXACT_MATCH.Compound.edges.csv
 layout: product_detail
 ---

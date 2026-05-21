@@ -14,6 +14,7 @@ original_source:
   source: sra
 - relation_type: prov:wasDerivedFrom
   source: ensembl
+product_file_size: 113637723557
 product_url: https://s3.dev.maayanlab.cloud/archs4/files/mouse_transcript_v2.latest.h5
 layout: product_detail
 ---

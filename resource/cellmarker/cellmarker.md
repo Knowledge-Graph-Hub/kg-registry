@@ -38,12 +38,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
 - category: Product
   description: Cell markers of different cell types from different tissues in mouse
   id: cellmarker.mouse
@@ -57,12 +57,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
 - category: Product
   description: Cell markers derived from single-cell sequencing researches in human
     and mouse
@@ -77,12 +77,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
 - category: Product
   description: All cell markers of different cell types from different tissues in
     human and mouse
@@ -97,12 +97,12 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: ACT is a tool that makes cell type annotation easier by integrating
     the CellMarker resource.

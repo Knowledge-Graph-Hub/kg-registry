@@ -9,6 +9,7 @@ original_source:
   source: lincs
 - relation_type: prov:hadPrimarySource
   source: prokn
+product_file_size: 28223124
 product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv
 layout: product_detail
 ---
