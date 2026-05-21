@@ -1,14 +1,13 @@
 ---
-category: GraphProduct
-description: Neo4j knowledge graph integrating transcription factor target libraries,
-  coexpression networks, and benchmark datasets used by the ChEA3 resource
-dump_format: neo4j
-format: neo4j
-id: chea-kg.graph
-name: ChEA-KG Database
+category: Product
+description: Download catalog for ChEA3 transcription factor target libraries and
+  benchmark datasets
+format: http
+id: chea.libraries
+name: ChEA Library Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: chea-kg
+  source: chea
 - relation_type: prov:hadPrimarySource
   source: encode
 - relation_type: prov:hadPrimarySource
@@ -23,8 +22,6 @@ original_source:
   source: geo
 - relation_type: prov:hadPrimarySource
   source: tcga
-secondary_source:
-- relation_type: prov:wasInfluencedBy
-  source: chea
+product_url: https://maayanlab.cloud/chea3/index.html#content4-13
 layout: product_detail
 ---
