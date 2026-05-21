@@ -10,7 +10,7 @@ name: This community view of T4FS makes the ontology available in OBO format wit
   term hierarchy.
 product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-05-19_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-20_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

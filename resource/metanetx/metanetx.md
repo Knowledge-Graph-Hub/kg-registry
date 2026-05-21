@@ -54,7 +54,7 @@ products:
     source: metanetx
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-04-10: Timeout connecting
     to URL'
@@ -74,7 +74,7 @@ products:
     source: metanetx
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
     header found

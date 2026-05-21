@@ -98,7 +98,7 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -143,7 +143,7 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
@@ -989,7 +989,7 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file

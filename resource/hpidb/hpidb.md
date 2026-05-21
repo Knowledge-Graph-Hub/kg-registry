@@ -50,7 +50,7 @@ products:
     source: hpidb
   product_url: https://hpidb.igbb.msstate.edu/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'

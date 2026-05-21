@@ -65,7 +65,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -99,7 +99,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -124,7 +124,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -136,7 +136,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -3582,7 +3582,7 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
@@ -3813,7 +3813,7 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found

@@ -36,7 +36,7 @@ products:
     source: text-mining-kp
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found

@@ -65,7 +65,7 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
     to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
@@ -91,7 +91,7 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -117,7 +117,7 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -132,7 +132,7 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -147,7 +147,7 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -162,7 +162,7 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found

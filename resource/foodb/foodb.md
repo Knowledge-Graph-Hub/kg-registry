@@ -49,7 +49,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -70,7 +70,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -91,7 +91,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -111,7 +111,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -131,7 +131,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -151,7 +151,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -171,7 +171,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -191,7 +191,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -211,7 +211,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -231,7 +231,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -251,7 +251,7 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found

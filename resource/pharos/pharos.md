@@ -57,7 +57,7 @@ products:
     source: pharos
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
     to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
@@ -81,7 +81,7 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
@@ -108,7 +108,7 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/about
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file

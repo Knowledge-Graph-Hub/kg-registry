@@ -98,8 +98,10 @@ products:
     source: expressionatlas
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
+    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 500 error when
     accessing file
 - category: Product

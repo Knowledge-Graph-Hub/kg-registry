@@ -3764,13 +3764,13 @@ products:
     product_url: https://w3id.org/biopragmatics/resources/signor/signor.tsv
   - category: Product
     compression: gzip
-    description: slm OBO
+    description: swisslipid OBO
     format: obo
-    id: obo-db-ingest.slm.obo
+    id: obo-db-ingest.swisslipid.obo
     license:
       id: https://creativecommons.org/licenses/by/4.0/
       label: CC-BY-4.0
-    name: slm OBO
+    name: swisslipid OBO
     product_file_size: 48029397
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo.gz
     original_source:
@@ -3778,13 +3778,13 @@ products:
         relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
-    description: slm OWL
+    description: swisslipid OWL
     format: owl
-    id: obo-db-ingest.slm.owl
+    id: obo-db-ingest.swisslipid.owl
     license:
       id: https://creativecommons.org/licenses/by/4.0/
       label: CC-BY-4.0
-    name: slm OWL
+    name: swisslipid OWL
     product_file_size: 61858122
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl.gz
     original_source:
@@ -3792,26 +3792,26 @@ products:
         relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
-    description: slm OBO Graph JSON
+    description: swisslipid OBO Graph JSON
     format: json
-    id: obo-db-ingest.slm.json
+    id: obo-db-ingest.swisslipid.json
     license:
       id: https://creativecommons.org/licenses/by/4.0/
       label: CC-BY-4.0
-    name: slm OBO Graph JSON
+    name: swisslipid OBO Graph JSON
     product_file_size: 53629121
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.json.gz
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
   - category: MappingProduct
-    description: slm SSSOM
+    description: swisslipid SSSOM
     format: sssom
-    id: obo-db-ingest.slm.sssom.tsv
+    id: obo-db-ingest.swisslipid.sssom.tsv
     license:
       id: https://creativecommons.org/licenses/by/4.0/
       label: CC-BY-4.0
-    name: slm SSSOM
+    name: swisslipid SSSOM
     product_file_size: 10965328
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv
     original_source:
@@ -3819,17 +3819,17 @@ products:
         relation_type: prov:hadPrimarySource
   - category: Product
     compression: gzip
-    description: slm Nodes TSV
+    description: swisslipid Nodes TSV
     format: tsv
-    id: obo-db-ingest.slm.tsv
+    id: obo-db-ingest.swisslipid.tsv
     license:
       id: https://creativecommons.org/licenses/by/4.0/
       label: CC-BY-4.0
-    name: slm Nodes TSV
+    name: swisslipid Nodes TSV
     original_source:
       - source: obo-db-ingest
         relation_type: prov:hadPrimarySource
-      - source: slm
+      - source: swisslipid
         relation_type: prov:hadPrimarySource
     product_file_size: 9655893
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.tsv.gz

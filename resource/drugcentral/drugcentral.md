@@ -353,7 +353,7 @@ products:
     source: mind
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -378,7 +378,7 @@ products:
     source: mind
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -402,7 +402,7 @@ products:
     source: mind
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-20: No Content-Length
     header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -459,7 +459,7 @@ products:
     source: repodb
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file

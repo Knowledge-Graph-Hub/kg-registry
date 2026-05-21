@@ -67,7 +67,7 @@ products:
     source: reprotox-kg
   product_url: https://reprotox-kg.net/downloads/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Error connecting
     to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
     with url: /downloads/ (Caused by NameResolutionError("HTTPSConnection(host=''reprotox-kg.net'',
     port=443): Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service not

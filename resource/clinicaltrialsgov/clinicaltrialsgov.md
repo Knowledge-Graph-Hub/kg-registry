@@ -260,7 +260,7 @@ products:
     source: repodb
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -280,7 +280,7 @@ products:
     source: genecards
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 403 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file

@@ -71,7 +71,7 @@ products:
     source: cohd
   product_url: https://cohd.io/api
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 502 error
     when accessing file'

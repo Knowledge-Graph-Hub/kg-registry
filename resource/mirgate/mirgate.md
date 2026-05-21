@@ -29,7 +29,7 @@ products:
     source: mirgate
   product_url: http://mirgate.bioinfo.cnio.es
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-20: Error connecting
     to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
     exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
     port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or service

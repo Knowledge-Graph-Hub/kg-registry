@@ -84,7 +84,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -101,7 +101,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -120,7 +120,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/subcellular_location.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -138,7 +138,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -154,7 +154,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/rna_celline.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -172,7 +172,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -188,7 +188,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -205,7 +205,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
@@ -221,7 +221,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
     when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
