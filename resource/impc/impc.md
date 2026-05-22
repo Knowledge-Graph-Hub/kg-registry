@@ -1,16 +1,38 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.mousephenotype.org/
+  label: International Mouse Phenotyping Consortium
 creation_date: '2026-05-20T00:00:00Z'
-description: Stub Resource page for impc. This page was automatically generated because
-  it was referenced by other resources.
+description: The International Mouse Phenotyping Consortium (IMPC) is a global functional
+  genomics program that generates and phenotypes knockout mouse lines at scale to
+  identify the functions of protein-coding genes and connect mouse phenotypes to
+  human biology and disease.
 domains:
-- stub
+- genomics
+- biomedical
+- phenotype
+- health
+homepage_url: https://www.mousephenotype.org/
 id: impc
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-22T00:00:00Z'
 layout: resource_detail
-name: Impc
+name: International Mouse Phenotyping Consortium
 products:
+- category: GraphicalInterface
+  description: Official IMPC portal for searching genes, alleles, phenotypes, disease
+    associations, and phenotyping results.
+  format: http
+  id: impc.portal
+  name: IMPC Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: impc
+  product_url: https://www.mousephenotype.org/
 - category: GraphProduct
   description: IMPC allele to mouse gene edges
   format: csv
@@ -159,10 +181,18 @@ products:
     source: prokn
   product_file_size: 4211083
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMPC.ImpcPublication.IMPC_ALLELES.ImpcAllele.edges.csv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+taxon:
+- NCBITaxon:10090
+- NCBITaxon:9606
 ---
-# Impc
 
-This is an automatically generated stub page for impc. Please update with proper information.
+# International Mouse Phenotyping Consortium
+
+IMPC coordinates large-scale generation and phenotyping of knockout mouse lines across
+multiple international centers. Its portal provides standardized genotype, allele,
+phenotype, viability, imaging, and orthology data that support functional characterization
+of mouse genes and translation of those findings to human disease biology.
+
+The ProKN products on this page represent downstream graph extractions built from IMPC
+allele, orthology, and phenotype-oriented integration outputs. They preserve IMPC as a
+primary provenance source while exposing derived graph structures for computational use.

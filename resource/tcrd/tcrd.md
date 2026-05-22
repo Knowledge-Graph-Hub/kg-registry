@@ -96,6 +96,57 @@ products:
     to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+- category: GraphProduct
+  description: ProKN compound node set derived from IDG/TCRD compound-to-protein association
+    data.
+  format: csv
+  id: prokn.idgp.compound.nodes
+  name: ProKN IDG Compound-Protein Compound Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 83991029
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv
+- category: GraphProduct
+  description: ProKN bioactivity edges linking IDG/TCRD compounds to protein targets.
+  format: csv
+  id: prokn.idgp.compound.bioactivity.protein.edges
+  name: ProKN IDG Compound-Protein Bioactivity Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 128158013
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.BIOACTIVITY.Protein.edges.csv
+- category: GraphProduct
+  description: ProKN compound node set derived from IDG/TCRD compound-to-disease indication
+    data.
+  format: csv
+  id: prokn.idgd.compound.nodes
+  name: ProKN IDG Compound-Disease Compound Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 105796
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.nodes.csv
+- category: GraphProduct
+  description: ProKN indication edges linking IDG/TCRD compounds to disease and phenotype
+    terms.
+  format: csv
+  id: prokn.idgd.compound.indication.diseaseorphenotype.edges
+  name: ProKN IDG Compound-Disease Indication Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1686928
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv
 publications:
 - id: https://doi.org/10.1093/nar/gkaa993
   title: 'Pharos 2021: mining the human proteome for disease biology'

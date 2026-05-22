@@ -1,16 +1,59 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://remap.univ-amu.fr/contact_page
+  label: ReMap Team
 creation_date: '2026-05-21T00:00:00Z'
-description: Stub Resource page for remap. This page was automatically generated because
-  it was referenced by other resources.
+description: ReMap is a curated regulatory genomics resource that integrates public
+  DNA-binding sequencing experiments to produce high-quality catalogs of transcriptional
+  regulator binding regions across human, mouse, Drosophila, and Arabidopsis.
 domains:
-- stub
+- genomics
+- systems biology
+- biological systems
+homepage_url: https://remap.univ-amu.fr/
 id: remap
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-05-22T00:00:00Z'
 layout: resource_detail
-name: Remap
+license:
+  id: https://creativecommons.org/licenses/by-nc/4.0/
+  label: CC BY-NC 4.0
+name: ReMap
 products:
+- category: GraphicalInterface
+  description: Main ReMap portal for searching transcriptional regulators, tissues,
+    and DNA-binding datasets.
+  format: http
+  id: remap.portal
+  name: ReMap Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  product_url: https://remap.univ-amu.fr/
+- category: ProgrammingInterface
+  description: ReMap REST interface for programmatic access to search, annotation,
+    and regulatory region endpoints.
+  format: http
+  id: remap.api
+  name: ReMap REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  product_url: https://remap.univ-amu.fr/rest_page
+- category: Product
+  description: ReMap download page for binding region catalogs, track hubs, and associated
+    release files.
+  format: http
+  id: remap.downloads
+  name: ReMap Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: remap
+  product_url: https://remap.univ-amu.fr/download_page
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -89,10 +132,33 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tcga
   product_url: https://maayanlab.cloud/chea3/index.html#content4-13
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+publications:
+- authors:
+  - Hammal F
+  - de Langen P
+  - Bergon A
+  - Lopez F
+  - Ballester B
+  id: https://doi.org/10.1093/nar/gkab996
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'ReMap 2022: a database of Human, Mouse, Drosophila and Arabidopsis regulatory
+    regions from an integrative analysis of DNA-binding sequencing experiments'
+  year: '2022'
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:7227
+- NCBITaxon:3702
 ---
-# Remap
 
-This is an automatically generated stub page for remap. Please update with proper information.
+# ReMap
+
+ReMap curates and reprocesses public ChIP-seq, ChIP-exo, and DAP-seq experiments to
+produce species-specific catalogs of transcriptional regulator binding regions. The
+current public site supports search, download, track hubs, and API-style access for
+human, mouse, Drosophila, and Arabidopsis regulatory atlases.
+
+This resource is also an upstream source for ChEA-family transcription factor target
+libraries in KG-Registry, so those downstream products remain attached here with explicit
+provenance back to ReMap and the derivative resources that consume it.

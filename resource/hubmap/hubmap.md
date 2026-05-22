@@ -81,6 +81,58 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hubmap
   product_url: https://azimuth.hubmapconsortium.org/
+- category: GraphProduct
+  description: ProKN anatomy node set derived from HuBMAP Azimuth reference annotations
+    for tissue-specific cell types.
+  format: csv
+  id: prokn.hmaz.anatomy.nodes
+  name: ProKN HuBMAP Azimuth Anatomy Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 12730
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.nodes.csv
+- category: GraphProduct
+  description: ProKN marker-gene edges linking HuBMAP Azimuth anatomy terms to heart-enriched
+    marker genes.
+  format: csv
+  id: prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges
+  name: ProKN HuBMAP Azimuth Heart Marker Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 48364
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv
+- category: GraphProduct
+  description: ProKN marker-gene edges linking HuBMAP Azimuth anatomy terms to kidney-enriched
+    marker genes.
+  format: csv
+  id: prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges
+  name: ProKN HuBMAP Azimuth Kidney Marker Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 126963
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv
+- category: GraphProduct
+  description: ProKN marker-gene edges linking HuBMAP Azimuth anatomy terms to liver-enriched
+    marker genes.
+  format: csv
+  id: prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges
+  name: ProKN HuBMAP Azimuth Liver Marker Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 56732
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv
 - category: GraphicalInterface
   description: Functional Unit State Identification and Navigation with Whole Slide
     Imaging
