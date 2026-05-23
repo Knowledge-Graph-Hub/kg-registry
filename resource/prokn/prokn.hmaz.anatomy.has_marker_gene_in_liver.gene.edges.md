@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: HMAZ anatomy to liver marker gene edges
+description: HuBMAP Azimuth anatomy to liver marker gene edges
 format: csv
 id: prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges
-name: ProKN HMAZ Liver Marker Edges
+name: ProKN HuBMAP Azimuth Liver Marker Edges
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: hmaz
+  source: hubmap.azimuth
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 56732

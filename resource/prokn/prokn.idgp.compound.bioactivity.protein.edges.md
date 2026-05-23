@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: IDGP compound bioactivity to protein edges
+description: TCRD compound bioactivity to protein edges
 format: csv
 id: prokn.idgp.compound.bioactivity.protein.edges
-name: ProKN IDGP Bioactivity Edges
+name: ProKN TCRD Compound-Protein Bioactivity Edges
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: idgp
+  source: tcrd
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 128158013

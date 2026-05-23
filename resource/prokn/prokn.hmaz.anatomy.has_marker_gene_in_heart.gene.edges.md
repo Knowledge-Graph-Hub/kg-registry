@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: HMAZ anatomy to heart marker gene edges
+description: HuBMAP Azimuth anatomy to heart marker gene edges
 format: csv
 id: prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges
-name: ProKN HMAZ Heart Marker Edges
+name: ProKN HuBMAP Azimuth Heart Marker Edges
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: hmaz
+  source: hubmap.azimuth
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 48364

@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: IDG compound-protein nodes (IDGP) used in ProKN
+description: IDG/TCRD compound-protein nodes used in ProKN
 format: csv
 id: prokn.idgp.compound.nodes
-name: ProKN IDGP Compound Nodes
+name: ProKN TCRD Compound-Protein Compound Nodes
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: idgp
+  source: tcrd
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 83991029
