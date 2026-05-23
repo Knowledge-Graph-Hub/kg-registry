@@ -10,6 +10,7 @@ name: GO-Basic, Filtered, for use with legacy tools
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 32126692
 product_url: http://purl.obolibrary.org/obo/go/go-basic.obo
 layout: product_detail
 ---

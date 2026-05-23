@@ -8,6 +8,7 @@ name: GO (OBO Format edition), daily snapshot release
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 36684860
 product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
 layout: product_detail
 ---

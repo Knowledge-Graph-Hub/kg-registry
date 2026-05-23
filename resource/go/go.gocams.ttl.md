@@ -8,6 +8,7 @@ name: GO-CAM TTL Archive
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 3260184
 product_url: http://current.geneontology.org/products/ttl/pathway-like_go-cams.tar.gz
 layout: product_detail
 ---

@@ -12721,7 +12721,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-05-23T16:24:55Z",
+  "generated_at": "2026-05-23T16:52:40Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 144,
     "with_evaluation_page": 120,
@@ -12729,10 +12729,10 @@
   },
   "links": {
     "broken_urls": 426,
-    "cache_hits": 3489,
+    "cache_hits": 3515,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 3089,
-    "live_checked_urls": 26,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 3515,
     "unchecked_urls": 0
@@ -12741,7 +12741,7 @@
     "missing_format": 825,
     "missing_original_source": 13,
     "missing_product_url": 107,
-    "retrieval_warning_mentions": 579,
+    "retrieval_warning_mentions": 377,
     "total": 5285
   },
   "resource_count": 789,
@@ -13253,7 +13253,7 @@
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/v12/"
         },

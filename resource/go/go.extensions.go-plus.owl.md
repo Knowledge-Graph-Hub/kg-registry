@@ -8,6 +8,7 @@ name: GO-Plus
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 236488701
 product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
 layout: product_detail
 ---

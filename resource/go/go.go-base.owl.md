@@ -8,6 +8,7 @@ name: GO Base Module
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 160974965
 product_url: http://purl.obolibrary.org/obo/go/go-base.owl
 layout: product_detail
 ---

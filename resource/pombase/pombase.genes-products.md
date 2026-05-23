@@ -16,7 +16,7 @@ original_source:
   source: pombase
 product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
 warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ No Content-Length
+- File was not able to be retrieved when checked on 2026-05-23_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found

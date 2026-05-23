@@ -9,7 +9,7 @@ original_source:
   source: vhog
 product_url: http://purl.obolibrary.org/obo/vhog.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-05-23_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

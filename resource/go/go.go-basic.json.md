@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: go
 product_url: http://purl.obolibrary.org/obo/go/go-basic.json
+warnings:
+- File was not able to be retrieved when checked on 2026-05-23_ No Content-Length
+  header found
 layout: product_detail
 ---

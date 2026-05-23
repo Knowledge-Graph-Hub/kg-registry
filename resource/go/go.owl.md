@@ -8,6 +8,7 @@ name: GO (OWL edition)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 129706298
 product_url: http://purl.obolibrary.org/obo/go.owl
 layout: product_detail
 ---

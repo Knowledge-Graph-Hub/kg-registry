@@ -27,7 +27,7 @@ domains:
 - health
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
-last_modified_date: '2026-05-21T20:28:51Z'
+last_modified_date: '2026-05-23T16:38:12Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

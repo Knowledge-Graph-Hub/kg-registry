@@ -57,8 +57,6 @@ products:
     source: enrichr
   product_url: https://maayanlab.cloud/Enrichr/datasetStatistics
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
     header found'
 - category: GraphProduct

@@ -9,7 +9,7 @@ original_source:
   source: bio2rdf
 product_url: https://biosemantics.org/biosearch
 warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-05-23_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL
