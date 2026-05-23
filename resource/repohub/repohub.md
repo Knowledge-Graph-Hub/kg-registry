@@ -3,9 +3,9 @@ activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
 description: The Drug Repurposing Hub is a curated and annotated collection of FDA-approved
-  drugs, clinical trial drugs, and pre-clinical tool compounds from the Broad Institute.
-  The collection contains over 7,500 unique compounds targeting over 2,400 protein
-  targets, with annotations for 826 drug indications and extensive metadata including
+  drugs, clinical trial drugs, and selected pre-clinical tool compounds from the Broad
+  Institute. The collection contains 7,423 unique compounds targeting 2,255 protein
+  targets, with annotations for 775 drug indications and extensive metadata including
   structures, mechanisms, and therapeutic areas.
 domains:
 - drug discovery
@@ -13,7 +13,7 @@ domains:
 - biomedical
 homepage_url: https://repo-hub.broadinstitute.org/repurposing
 id: repohub
-last_modified_date: '2025-10-27T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
 name: Drug Repurposing Hub
 products:
@@ -48,36 +48,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#download
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: Product
   description: Downloadable sample information file with compound library details
     and annotations
@@ -89,36 +62,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#download
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: Product
   description: Physical screening library of 5,506 compounds (90% FDA-approved or
     in clinical trials) available as assay-ready plates
@@ -129,36 +75,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: Product
   description: REPO1 subset library available in 5-point, 10-fold dilution series
     as single-use assay-ready plates
@@ -169,36 +88,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: Product
   description: Follow-up compound collection of approximately 2,400 compounds available
     for secondary studies
@@ -209,36 +101,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: DocumentationProduct
   description: About page with detailed information on the Drug Repurposing Hub history,
     team, and usage
@@ -250,36 +115,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: DocumentationProduct
   description: Case studies demonstrating applications of the Drug Repurposing Hub
   format: http
@@ -290,36 +128,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#case-studies
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: DocumentationProduct
   description: Information about conducting screens with the Drug Repurposing Hub
     library
@@ -331,36 +142,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/repurposing#screen
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: DocumentationProduct
   description: Policy document for compound intake and donation to the collection
   format: pdf
@@ -371,36 +155,9 @@ products:
     source: repohub
   product_url: https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
-    SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
-    SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
-    SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused by
-    SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused by
-    SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused by
-    SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+  - Automated HTTPS checks on 2026-05-23 still fail TLS certificate validation for
+    repo-hub.broadinstitute.org, although the endpoint responds with HTTP 200 when
+    certificate verification is bypassed.
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -523,9 +280,9 @@ The Broad Institute launched the Drug Repurposing Hub in 2015, initially to acce
 ## Collection Statistics
 
 The Drug Repurposing Hub contains:
-- **7,539 unique compounds**
-- **2,430 protein targets**
-- **826 drug indications**
+- **7,423 unique compounds**
+- **2,255 protein targets**
+- **775 drug indications**
 - **5,506 compounds** in the screening library (90% FDA-approved or in clinical trials)
 - **~2,400 additional compounds** available for follow-up studies
 

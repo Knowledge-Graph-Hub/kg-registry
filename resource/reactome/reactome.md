@@ -26,8 +26,11 @@ domains:
 homepage_url: https://reactome.org
 id: reactome
 infores_id: reactome
-last_modified_date: '2025-12-20T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Reactome
 products:
 - category: Product
@@ -3491,6 +3494,12 @@ products:
     source: prokn
   product_file_size: 17112000
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/Reactome.Protein.PARTICIPATES_IN.Pathway.edges.csv
+publications:
+- id: doi:10.1093/nar/gkab1028
+  doi: doi:10.1093/nar/gkab1028
+  preferred: true
+  title: 'The Reactome pathway knowledgebase 2022'
+  year: '2022'
 repository: https://github.com/reactome
 taxon:
 - NCBITaxon:9606
