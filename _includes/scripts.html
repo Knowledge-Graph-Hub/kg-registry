@@ -365,10 +365,25 @@
         window.networkLogoAnimationId = requestAnimationFrame(animate);
     }
 
+    function registryPageUrl(id) {
+        if (typeof id !== 'string') {
+            return '';
+        }
+        const trimmedId = id.trim();
+        if (!trimmedId) {
+            return '';
+        }
+        const firstSegment = trimmedId.split('.')[0];
+        if (trimmedId.includes('.')) {
+            return `/kg-registry/resource/${firstSegment}/${trimmedId}.html`;
+        }
+        return `/kg-registry/resource/${trimmedId}/${trimmedId}.html`;
+    }
+
     // Function to fetch resource category and icon
     async function fetchCategoryIcon(resourceId) {
         try {
-            const response = await fetch(`/kg-registry/resource/${resourceId}/${resourceId}.html`);
+            const response = await fetch(registryPageUrl(resourceId));
             if (!response.ok) {
                 return { category: 'unknown', icon: 'box' };
             }
@@ -1525,7 +1540,7 @@ kgr:${validatedData.product} ${sourceAssociation.relationType} kgr:${source} .
             .on('click', function (event, d) {
                 // Only navigate if it's not the product node (since we're already on the product page)
                 if (d.type !== 'product') {
-                    window.location.href = `/kg-registry/resource/${d.id}/${d.id}.html`;
+                    window.location.href = registryPageUrl(d.id);
                 }
             })
             .on('mouseover', function (event, d) {

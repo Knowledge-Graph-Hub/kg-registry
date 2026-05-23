@@ -226,7 +226,12 @@ layout: default
 	          {% assign summary_source_url = page.url %}
 	        {% elsif p.secondary_source %}
 	          {% assign summary_source_id = first_secondary_source_id %}
-	          {% assign summary_source_url = "/resource/" | append: summary_source_id | append: "/" | append: summary_source_id | append: ".html" %}
+            {% assign summary_source_first_segment = summary_source_id | split: '.' | first %}
+            {% if summary_source_id contains '.' %}
+            {% assign summary_source_url = "/resource/" | append: summary_source_first_segment | append: "/" | append: summary_source_id | append: ".html" %}
+            {% else %}
+            {% assign summary_source_url = "/resource/" | append: summary_source_id | append: "/" | append: summary_source_id | append: ".html" %}
+            {% endif %}
 	        {% elsif p.id == page.id or first_segment == page.id %}
 	          {% assign summary_source_id = page.id %}
 	          {% assign summary_source_url = page.url %}
@@ -549,7 +554,7 @@ layout: default
               {% continue %}
               {% elsif p.secondary_source %}
               <td>
-                <a href="/kg-registry/resource/{{first_secondary_source_id}}/{{p.id}}.html">{{p.id}}</a>
+                <a href="/kg-registry/resource/{{first_segment}}/{{p.id}}.html">{{p.id}}</a>
                 {% if p.warnings and p.warnings.size > 0 %}
                   {% assign latest = p.warnings | last %}
                   <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
