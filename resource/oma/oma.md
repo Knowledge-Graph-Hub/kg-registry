@@ -25,7 +25,7 @@ domains:
 - organisms
 homepage_url: https://omabrowser.org/
 id: oma
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -270,6 +270,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
+publications:
+- id: https://doi.org/10.1093/nar/gkad1020
+  title: 'OMA orthology in 2024: improved prokaryote coverage, ancestral and extant GO enrichment, a revamped synteny viewer and more in the OMA Ecosystem'
+- id: https://doi.org/10.1093/nar/gkaa1007
+  title: 'OMA orthology in 2021: website overhaul, conserved isoforms, ancestral gene order and more'
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.
 
