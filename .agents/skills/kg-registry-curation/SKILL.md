@@ -63,6 +63,8 @@ If the input is ambiguous, resolve it before editing. Do not guess between multi
    - Keep `layout: resource_detail` unless the file already uses a different valid resource layout.
    - Use an existing schema class for `category`.
    - Add or improve fields such as `description`, `homepage_url`, `repository`, `license`, `contacts`, `publications`, `domains`, `tags`, `taxon`, and `products` when supported by evidence.
+   - Only add `infores_id` when you can verify the exact identifier in the authoritative INFORES catalog at `https://biolink.github.io/information-resource-registry/infores_catalog.yaml` or its checked-in local cache. Do not infer or guess an INFORES ID from the KG-Registry resource ID, resource name, homepage, or ontology prefix.
+   - If no exact catalog-backed INFORES identifier exists, leave `infores_id` unset rather than minting a plausible-looking value.
    - Preserve useful existing products. Do not remove valid products just because the page began as a stub.
    - Fill `original_source` and `secondary_source` as lists of `SourceAssociation` objects with both `source` and `relation_type`.
    - Use KG-Registry identifiers in `source`, not homepage URLs, INFORES IDs, free text labels, or citations.
@@ -112,6 +114,7 @@ If the input is ambiguous, resolve it before editing. Do not guess between multi
 - Creating a separate Product page file.
 - Removing all existing products from a resource.
 - Using free-text source names, URLs, or INFORES IDs directly in `original_source` or `secondary_source` instead of KG-Registry identifiers.
+- Adding an `infores_id` that was inferred from the local KG-Registry ID or ontology prefix without confirming the exact value in `https://biolink.github.io/information-resource-registry/infores_catalog.yaml`.
 - Forgetting that missing source IDs can be intentionally minted as new unique KG-Registry IDs so later tooling can create stub pages for them.
 - Using `secondary_source` where `original_source` is appropriate, or omitting the parent resource from a directly owned product's primary provenance.
 - Filling in `curators` even though that field is reserved for the KG-Registry team.
