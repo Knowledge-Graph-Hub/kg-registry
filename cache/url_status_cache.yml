@@ -1,5 +1,5 @@
 ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: 'FTP error: timed out'
   protocol: ftp
 ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/:
@@ -62,7 +62,7 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/:
   protocol: ftp
   skip_reason: directory
 ftp://ftp.wormbase.org/pub/wormbase/:
-  checked_at: '2026-05-21T17:51:08Z'
+  checked_at: '2026-05-23T16:15:22Z'
   error: 'FTP error: [Errno 101] Network is unreachable'
   protocol: ftp
 http://119.3.41.228/eram/download.php:
@@ -118,15 +118,15 @@ http://biohackathon.org/resource/faldo.ttl:
   last_success_bytes: 13615
   status_code: 200
 http://bioinformatics.sandia.gov/tmrna/:
-  checked_at: '2026-05-21T17:50:47Z'
+  checked_at: '2026-05-23T16:15:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://bioinformatics.sandia.gov/tmrna/software.html:
-  checked_at: '2026-05-21T17:50:48Z'
+  checked_at: '2026-05-23T16:15:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://birdgenenames.org/cgnc/downloads.jsp?file=standard:
-  checked_at: '2026-05-21T17:49:54Z'
+  checked_at: '2026-05-23T16:14:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zip:
@@ -136,9 +136,15 @@ http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zi
   last_success_bytes: 307900
   status_code: 200
 http://cpdb.molgen.mpg.de/CPDB/download:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
+http://current.geneontology.org/products/ttl/pathway-like_go-cams.tar.gz:
+  checked_at: '2026-05-23T16:14:18Z'
+  content_length: 3260184
+  content_type: application/gzip
+  last_success_bytes: 3260184
+  status_code: 200
 http://data.wikipathways.org/current/rdf/:
   checked_at: '2025-08-26T18:14:47Z'
   content_type: text/html; charset=utf-8
@@ -165,10 +171,10 @@ http://ftp.microbio.me/greengenes_release/current/:
   skip_reason: html_page
   status_code: 200
 http://juniper.health.unm.edu/tcrd/:
-  checked_at: '2026-05-21T17:50:56Z'
+  checked_at: '2026-05-23T16:15:09Z'
   error: Timeout connecting to URL
 http://juniper.health.unm.edu/tcrd/download/:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: Timeout connecting to URL
 http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_KinomeScan_Datasets_2018-01-18.xlsx:
   checked_at: '2025-10-31T14:55:12Z'
@@ -177,10 +183,10 @@ http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_Kino
   last_success_bytes: 17872
   status_code: 200
 http://mips.helmholtz-muenchen.de/simap/:
-  checked_at: '2026-05-21T17:50:43Z'
+  checked_at: '2026-05-23T16:14:57Z'
   error: Timeout connecting to URL
 http://mirgate.bioinfo.cnio.es:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: 'Error connecting to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'',
     port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''mirgate.bioinfo.cnio.es'',
     port=80): Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno -2] Name or service
@@ -206,7 +212,7 @@ http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.htm
   skip_reason: html_page
   status_code: 200
 http://plncdb.tobaccodb.org/:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPConnectionPool(host=''plncdb.tobaccodb.org'',
     port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''plncdb.tobaccodb.org'',
     port=80): Failed to resolve ''plncdb.tobaccodb.org'' ([Errno -3] Temporary failure
@@ -219,7 +225,7 @@ http://purl.obolibrary.org/obo/BMONT.owl:
   last_success_bytes: 167585
   status_code: 200
 http://purl.obolibrary.org/obo/EPIO_merged.owl:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ado.owl:
@@ -229,7 +235,7 @@ http://purl.obolibrary.org/obo/ado.owl:
   last_success_bytes: 1166665
   status_code: 200
 http://purl.obolibrary.org/obo/adw.owl:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:15Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/aeo.owl:
@@ -246,11 +252,11 @@ http://purl.obolibrary.org/obo/aero.owl:
   last_success_bytes: 19393
   status_code: 200
 http://purl.obolibrary.org/obo/afpo.json:
-  checked_at: '2026-05-21T17:49:58Z'
+  checked_at: '2026-05-23T16:14:15Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/afpo.obo:
-  checked_at: '2026-05-21T17:49:57Z'
+  checked_at: '2026-05-23T16:14:17Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/afpo.owl:
@@ -344,7 +350,7 @@ http://purl.obolibrary.org/obo/bfo.owl:
   last_success_bytes: 20902
   status_code: 200
 http://purl.obolibrary.org/obo/bila.owl:
-  checked_at: '2026-05-21T17:49:53Z'
+  checked_at: '2026-05-23T16:14:09Z'
   content_length: 151834
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
@@ -617,7 +623,7 @@ http://purl.obolibrary.org/obo/cob/cob-native.owl:
   last_success_bytes: 6472
   status_code: 200
 http://purl.obolibrary.org/obo/cob/cob-to-external.owl:
-  checked_at: '2026-05-21T17:49:55Z'
+  checked_at: '2026-05-23T16:14:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/cob/products/demo-cob.owl:
@@ -890,11 +896,11 @@ http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl:
   last_success_bytes: 19016
   status_code: 200
 http://purl.obolibrary.org/obo/eo.obo:
-  checked_at: '2026-05-21T17:50:00Z'
+  checked_at: '2026-05-23T16:14:11Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/eo.owl:
-  checked_at: '2026-05-21T17:50:00Z'
+  checked_at: '2026-05-23T16:14:11Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/epio.owl:
@@ -904,11 +910,11 @@ http://purl.obolibrary.org/obo/epio.owl:
   last_success_bytes: 415175
   status_code: 200
 http://purl.obolibrary.org/obo/epo.owl:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ero.owl:
-  checked_at: '2026-05-21T17:50:00Z'
+  checked_at: '2026-05-23T16:14:11Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443):
     Max retries exceeded with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
@@ -1051,22 +1057,22 @@ http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl:
   last_success_bytes: 442797
   status_code: 200
 http://purl.obolibrary.org/obo/fbsp.owl:
-  checked_at: '2026-05-21T17:50:01Z'
+  checked_at: '2026-05-23T16:14:11Z'
   content_length: 5012153
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
   last_success_bytes: 5012153
   status_code: 403
 http://purl.obolibrary.org/obo/fideo.owl:
-  checked_at: '2026-05-21T17:50:02Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 http://purl.obolibrary.org/obo/fix.obo:
-  checked_at: '2026-05-21T17:50:02Z'
+  checked_at: '2026-05-23T16:14:11Z'
   error: 'Error connecting to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 http://purl.obolibrary.org/obo/fix.owl:
-  checked_at: '2026-05-21T17:50:02Z'
+  checked_at: '2026-05-23T16:14:11Z'
   content_length: 880338
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
@@ -1086,7 +1092,7 @@ http://purl.obolibrary.org/obo/flu.owl:
   last_success_bytes: 127517
   status_code: 200
 http://purl.obolibrary.org/obo/fma.owl:
-  checked_at: '2026-05-21T17:50:02Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_length: 66368046
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
@@ -1105,7 +1111,7 @@ http://purl.obolibrary.org/obo/foodon.owl:
   last_success_bytes: 2852449
   status_code: 200
 http://purl.obolibrary.org/obo/foodon_core.owl:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:13Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/fovt.obo:
@@ -1145,7 +1151,7 @@ http://purl.obolibrary.org/obo/fypo.owl:
   last_success_bytes: 45187459
   status_code: 200
 http://purl.obolibrary.org/obo/gallont.json:
-  checked_at: '2026-05-21T17:50:05Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/gallont.obo:
@@ -1223,20 +1229,20 @@ http://purl.obolibrary.org/obo/gno.owl:
   last_success_bytes: 215188241
   status_code: 200
 http://purl.obolibrary.org/obo/go.json:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 77592125
   content_type: application/json
   error: No Content-Length header found
   last_success_bytes: 77592125
   status_code: 200
 http://purl.obolibrary.org/obo/go.obo:
-  checked_at: '2026-04-02T20:27:23Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 36555702
   content_type: text/obo
   last_success_bytes: 36555702
   status_code: 200
 http://purl.obolibrary.org/obo/go.owl:
-  checked_at: '2026-04-02T20:27:23Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 129706298
   content_type: application/rdf+xml
   last_success_bytes: 129706298
@@ -1248,20 +1254,20 @@ http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl:
   last_success_bytes: 1224800846
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-plus.json:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 131618305
   content_type: application/json
   error: No Content-Length header found
   last_success_bytes: 131618305
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-plus.owl:
-  checked_at: '2026-04-02T20:27:25Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 236488701
   content_type: application/rdf+xml
   last_success_bytes: 236488701
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:18Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/go/extensions/reacto.owl:
@@ -1271,35 +1277,35 @@ http://purl.obolibrary.org/obo/go/extensions/reacto.owl:
   last_success_bytes: 145810064
   status_code: 200
 http://purl.obolibrary.org/obo/go/go-base.owl:
-  checked_at: '2026-04-02T20:27:25Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 160974965
   content_type: application/rdf+xml
   last_success_bytes: 160974965
   status_code: 200
 http://purl.obolibrary.org/obo/go/go-basic.json:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 67130778
   content_type: application/json
   error: No Content-Length header found
   last_success_bytes: 67130778
   status_code: 200
 http://purl.obolibrary.org/obo/go/go-basic.obo:
-  checked_at: '2026-04-02T20:27:25Z'
+  checked_at: '2026-05-23T16:14:17Z'
   content_length: 32126692
   content_type: text/obo
   last_success_bytes: 32126692
   status_code: 200
 http://purl.obolibrary.org/obo/go/snapshot/go.obo:
-  checked_at: '2026-04-02T20:27:25Z'
-  content_length: 36555702
+  checked_at: '2026-05-23T16:14:18Z'
+  content_length: 36684860
   content_type: text/obo
-  last_success_bytes: 36555702
+  last_success_bytes: 36684860
   status_code: 200
 http://purl.obolibrary.org/obo/go/snapshot/go.owl:
-  checked_at: '2026-04-02T20:27:25Z'
-  content_length: 129706298
+  checked_at: '2026-05-23T16:14:18Z'
+  content_length: 129908636
   content_type: application/rdf+xml
-  last_success_bytes: 129706298
+  last_success_bytes: 129908636
   status_code: 200
 http://purl.obolibrary.org/obo/gsso.json:
   checked_at: '2026-04-02T20:27:26Z'
@@ -1320,7 +1326,7 @@ http://purl.obolibrary.org/obo/gsso.owl:
   last_success_bytes: 2201424
   status_code: 200
 http://purl.obolibrary.org/obo/hancestro-base.owl:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:26Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/hancestro.owl:
@@ -1499,7 +1505,7 @@ http://purl.obolibrary.org/obo/iao/d-acts.owl:
   last_success_bytes: 10158
   status_code: 200
 http://purl.obolibrary.org/obo/iao/dev/iao.owl:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/iao/ontology-metadata.owl:
@@ -1696,7 +1702,7 @@ http://purl.obolibrary.org/obo/micro.owl:
   last_success_bytes: 665050
   status_code: 200
 http://purl.obolibrary.org/obo/mirnao.owl:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/miro.obo:
@@ -1736,7 +1742,7 @@ http://purl.obolibrary.org/obo/mmusdv.owl:
   last_success_bytes: 367557
   status_code: 200
 http://purl.obolibrary.org/obo/mo.owl:
-  checked_at: '2026-05-21T17:50:12Z'
+  checked_at: '2026-05-23T16:14:30Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/mod.obo:
@@ -1794,7 +1800,7 @@ http://purl.obolibrary.org/obo/mp.json:
   last_success_bytes: 55018989
   status_code: 200
 http://purl.obolibrary.org/obo/mp.obo:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   content_type: text/plain
   error: No Content-Length header found
   status_code: 200
@@ -1847,7 +1853,7 @@ http://purl.obolibrary.org/obo/nbo.owl:
   last_success_bytes: 372935
   status_code: 200
 http://purl.obolibrary.org/obo/ncbitaxon.json:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:21Z'
   content_length: 1981974965
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
@@ -1902,7 +1908,7 @@ http://purl.obolibrary.org/obo/ngbo.owl:
   last_success_bytes: 187540
   status_code: 200
 http://purl.obolibrary.org/obo/nmr.owl:
-  checked_at: '2026-05-21T17:50:19Z'
+  checked_at: '2026-05-23T16:14:34Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/nomen.owl:
@@ -1990,7 +1996,7 @@ http://purl.obolibrary.org/obo/ogg.owl:
   last_success_bytes: 127956460
   status_code: 200
 http://purl.obolibrary.org/obo/ogi.owl:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ogms.owl:
@@ -2012,7 +2018,7 @@ http://purl.obolibrary.org/obo/ohd.owl:
   last_success_bytes: 307089
   status_code: 200
 http://purl.obolibrary.org/obo/ohd/dev/ohd.owl:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ohmi.owl:
@@ -2160,11 +2166,11 @@ http://purl.obolibrary.org/obo/pato/pato-base.owl:
   last_success_bytes: 180954
   status_code: 200
 http://purl.obolibrary.org/obo/pbpko.json:
-  checked_at: '2026-05-21T17:50:23Z'
+  checked_at: '2026-05-23T16:14:37Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pbpko.obo:
-  checked_at: '2026-05-21T17:50:24Z'
+  checked_at: '2026-05-23T16:14:36Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pbpko.owl:
@@ -2174,44 +2180,44 @@ http://purl.obolibrary.org/obo/pbpko.owl:
   last_success_bytes: 53137
   status_code: 200
 http://purl.obolibrary.org/obo/pcl-base.json:
-  checked_at: '2026-05-21T17:50:28Z'
+  checked_at: '2026-05-23T16:14:41Z'
   error: Timeout connecting to URL
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-base.obo:
-  checked_at: '2026-05-21T17:50:25Z'
-  error: HTTP 404 error when accessing file
+  checked_at: '2026-05-23T16:14:40Z'
+  error: Timeout connecting to URL
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-base.owl:
-  checked_at: '2026-05-21T17:50:22Z'
-  error: HTTP 404 error when accessing file
+  checked_at: '2026-05-23T16:14:39Z'
+  error: Timeout connecting to URL
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-full.json:
-  checked_at: '2026-05-21T17:50:35Z'
+  checked_at: '2026-05-23T16:14:48Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-full.obo:
-  checked_at: '2026-05-21T17:50:31Z'
-  error: Timeout connecting to URL
+  checked_at: '2026-05-23T16:14:47Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-full.owl:
-  checked_at: '2026-05-21T17:50:30Z'
-  error: Timeout connecting to URL
+  checked_at: '2026-05-23T16:14:43Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-simple.json:
-  checked_at: '2026-05-21T17:50:41Z'
+  checked_at: '2026-05-23T16:14:54Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-simple.obo:
-  checked_at: '2026-05-21T17:50:41Z'
+  checked_at: '2026-05-23T16:14:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pcl-simple.owl:
-  checked_at: '2026-05-21T17:50:35Z'
-  error: HTTP 404 error when accessing file
+  checked_at: '2026-05-23T16:14:43Z'
+  error: Timeout connecting to URL
   status_code: 404
 http://purl.obolibrary.org/obo/pcl.json:
-  checked_at: '2026-05-21T17:50:27Z'
-  error: HTTP 404 error when accessing file
+  checked_at: '2026-05-23T16:14:37Z'
+  error: Timeout connecting to URL
   status_code: 404
 http://purl.obolibrary.org/obo/pcl.obo:
   checked_at: '2026-04-02T20:27:35Z'
@@ -2328,11 +2334,11 @@ http://purl.obolibrary.org/obo/ppo.owl:
   last_success_bytes: 67183
   status_code: 200
 http://purl.obolibrary.org/obo/pr-asserted.obo:
-  checked_at: '2026-05-21T17:50:45Z'
+  checked_at: '2026-05-23T16:15:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pr-asserted.owl:
-  checked_at: '2026-05-21T17:50:44Z'
+  checked_at: '2026-05-23T16:14:59Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/pr.obo:
@@ -2386,7 +2392,7 @@ http://purl.obolibrary.org/obo/pw.owl:
   last_success_bytes: 5404760
   status_code: 200
 http://purl.obolibrary.org/obo/rbo.json:
-  checked_at: '2026-05-21T17:50:47Z'
+  checked_at: '2026-05-23T16:15:01Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/rbo.obo:
@@ -2420,7 +2426,7 @@ http://purl.obolibrary.org/obo/rbo/rbo-base.owl:
   last_success_bytes: 47966
   status_code: 200
 http://purl.obolibrary.org/obo/rex.owl:
-  checked_at: '2026-05-21T17:50:33Z'
+  checked_at: '2026-05-23T16:14:47Z'
   content_length: 677757
   content_type: application/rdf+xml
   error: HTTP 403 error when accessing file
@@ -2469,7 +2475,7 @@ http://purl.obolibrary.org/obo/ro/ro-base.owl:
   last_success_bytes: 97499
   status_code: 200
 http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl:
@@ -2522,7 +2528,7 @@ http://purl.obolibrary.org/obo/scdo.owl:
   last_success_bytes: 367519
   status_code: 200
 http://purl.obolibrary.org/obo/sep.owl:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/sepio.owl:
@@ -2544,11 +2550,11 @@ http://purl.obolibrary.org/obo/sibo.owl:
   last_success_bytes: 26920
   status_code: 200
 http://purl.obolibrary.org/obo/slso-base.owl:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/slso.json:
-  checked_at: '2026-05-21T17:50:48Z'
+  checked_at: '2026-05-23T16:15:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/slso.obo:
@@ -2624,15 +2630,15 @@ http://purl.obolibrary.org/obo/symp.owl:
   last_success_bytes: 73868
   status_code: 200
 http://purl.obolibrary.org/obo/t4fs-community.json:
-  checked_at: '2026-05-21T17:50:53Z'
+  checked_at: '2026-05-23T16:15:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/t4fs-community.obo:
-  checked_at: '2026-05-21T17:50:51Z'
+  checked_at: '2026-05-23T16:15:06Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/t4fs-community.owl:
-  checked_at: '2026-05-21T17:50:52Z'
+  checked_at: '2026-05-23T16:15:05Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/t4fs.json:
@@ -2874,7 +2880,7 @@ http://purl.obolibrary.org/obo/vbo/vbo-base.owl:
   last_success_bytes: 2016216
   status_code: 200
 http://purl.obolibrary.org/obo/vhog.owl:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:03Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://purl.obolibrary.org/obo/vo.obo:
@@ -3205,22 +3211,22 @@ http://www.combio.pl/rrna/static/download/Plastids.ss.fasta:
   skip_reason: no_content_type
   status_code: 200
 http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   content_type: text/plain
   error: No Content-Length header found
   status_code: 200
 http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   content_type: text/plain
   error: No Content-Length header found
   status_code: 200
 http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   content_type: text/plain
   error: No Content-Length header found
   status_code: 200
 http://www.hprd.org/:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 http://www.interactome-atlas.org/download:
@@ -3244,11 +3250,11 @@ http://www.microrna.gr/LncBase:
   skip_reason: html_page
   status_code: 200
 http://www.noncode.org/download.php:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://www.ontotext.com/proton/protontop:
-  checked_at: '2026-05-21T17:50:32Z'
+  checked_at: '2026-05-23T16:14:44Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 http://www.psygenet.org/:
@@ -3307,32 +3313,32 @@ https://aact.ctti-clinicaltrials.org/schema:
   skip_reason: html_page
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/compound_desc.json:
-  checked_at: '2026-05-21T17:50:48Z'
+  checked_at: '2026-05-23T16:15:03Z'
   content_type: application/json
   error: No Content-Length header found
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:03Z'
   content_type: application/json
   error: No Content-Length header found
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json:
-  checked_at: '2026-05-21T17:50:05Z'
+  checked_at: '2026-05-23T16:14:18Z'
   content_type: application/json
   error: No Content-Length header found
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:03Z'
   content_type: application/json
   error: No Content-Length header found
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/phenotype_desc.json:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:04Z'
   content_type: application/json
   error: No Content-Length header found
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/protein_desc.json:
-  checked_at: '2026-05-21T17:50:48Z'
+  checked_at: '2026-05-23T16:15:03Z'
   content_type: application/json
   error: No Content-Length header found
   status_code: 200
@@ -3396,7 +3402,7 @@ https://api.globalbioticinteractions.org/interactionFields?type=csv:
   last_success_bytes: 15860
   status_code: 200
 https://api.globalbioticinteractions.org/interactionFields?type=json:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:16Z'
   content_type: application/json;charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -3478,35 +3484,35 @@ https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the
   skip_reason: html_page
   status_code: 200
 https://avr.hubmapconsortium.org/:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 401 error when accessing file
   status_code: 401
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/:
-  checked_at: '2026-05-21T17:50:35Z'
+  checked_at: '2026-05-23T16:14:48Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/about/:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:48Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/experiment_details/:
-  checked_at: '2026-05-21T17:50:35Z'
+  checked_at: '2026-05-23T16:14:48Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/experiment_details/ (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:48Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/:
-  checked_at: '2026-05-21T17:50:34Z'
+  checked_at: '2026-05-23T16:14:48Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'',
     port=443): Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -3522,7 +3528,7 @@ https://biolink.github.io/information-resource-registry/:
   skip_reason: html_page
   status_code: 200
 https://biosemantics.org/biosearch:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: Timeout connecting to URL
 https://bioteque.irbbarcelona.org/bqsupports:
   checked_at: '2025-08-26T18:14:45Z'
@@ -3550,7 +3556,7 @@ https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version
   skip_reason: html_page
   status_code: 200
 https://cfde.cloud/gse/downloads/:
-  checked_at: '2026-05-21T17:49:54Z'
+  checked_at: '2026-05-23T16:14:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://checklistbank.org/:
@@ -3579,7 +3585,7 @@ https://clinicaltrials.gov/data-about-studies/download-clinical-trial-data:
   skip_reason: html_page
   status_code: 200
 ? https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
-: checked_at: '2026-05-21T17:50:00Z'
+: checked_at: '2026-05-23T16:14:11Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://clue.io/connectopedia:
@@ -3593,11 +3599,11 @@ https://clue.io/releases/data-dashboard:
   skip_reason: html_page
   status_code: 200
 https://cohd.io/api:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: Timeout connecting to URL
   status_code: 502
 https://compartments.jensenlab.org/Downloads:
-  checked_at: '2026-05-21T17:49:58Z'
+  checked_at: '2026-05-23T16:14:10Z'
   content_type: ''
   error: No Content-Length header found
   skip_reason: no_content_type
@@ -3776,7 +3782,7 @@ https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk:
   skip_reason: html_page
   status_code: 200
 https://dataverse.harvard.edu/api/access/datafile/6180620:
-  checked_at: '2026-05-21T17:50:30Z'
+  checked_at: '2026-05-23T16:14:44Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/:
@@ -3810,11 +3816,11 @@ https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz:
   last_success_bytes: 884524
   status_code: 200
 https://dianalab.e-ce.uth.gr/tarbasev9/downloads:
-  checked_at: '2026-05-21T17:50:43Z'
+  checked_at: '2026-05-23T16:14:55Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://dianalab.e-ce.uth.gr/tarbasev9/help:
-  checked_at: '2026-05-21T17:50:43Z'
+  checked_at: '2026-05-23T16:14:55Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://dictybase.dev/downloads:
@@ -3823,7 +3829,7 @@ https://dictybase.dev/downloads:
   skip_reason: html_page
   status_code: 200
 https://dip.doe-mbi.ucla.edu/dip/Download.cgi:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:10Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''dip.doe-mbi.ucla.edu'',
     port=443): Max retries exceeded with url: /dip/Download.cgi (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -3881,7 +3887,7 @@ https://doi.org/10.5281/zenodo.8139357:
   skip_reason: html_page
   status_code: 200
 https://download.alliancegenome.org/:
-  checked_at: '2026-05-21T17:49:53Z'
+  checked_at: '2026-05-23T16:14:09Z'
   content_type: application/xml
   error: No Content-Length header found
   status_code: 200
@@ -4141,56 +4147,56 @@ https://foodb.ca/downloads:
   skip_reason: html_page
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_fid_files.zip:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:13Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://foodb.ca/public/system/downloads/foodb_image_files.zip:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:13Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:13Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:12Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:13Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
@@ -4255,11 +4261,11 @@ https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json:
-  checked_at: '2026-05-21T17:50:05Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv:
@@ -4269,11 +4275,11 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associatio
   last_success_bytes: 482336061
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.tsv:
@@ -4283,11 +4289,11 @@ https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.ts
   last_success_bytes: 48604130
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/:
@@ -4560,11 +4566,11 @@ https://ftp.ebi.ac.uk/pub/databases/spot/ols/:
   skip_reason: html_page
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
-  checked_at: '2026-05-21T17:49:54Z'
+  checked_at: '2026-05-23T16:14:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv:
-  checked_at: '2026-05-21T17:49:54Z'
+  checked_at: '2026-05-23T16:14:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ncbi.nih.gov/pub/HomoloGene/:
@@ -4757,7 +4763,7 @@ https://ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/:
   skip_reason: html_page
   status_code: 200
 https://ftp.sanger.ac.uk/project/cancerrxgene/releases/:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:14Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz:
@@ -5094,7 +5100,7 @@ https://github.com/UFOKN/Knowledge-Graph:
   skip_reason: html_page
   status_code: 200
 https://github.com/VIDallab/huri:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/avsastry/modulome-workflow:
@@ -5173,7 +5179,7 @@ https://github.com/explodecomputer/mr-base-methods-paper:
   skip_reason: html_page
   status_code: 200
 https://github.com/geneontology/go-cam:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:16Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/geneontology/minerva:
@@ -5257,7 +5263,7 @@ https://github.com/monarch-initiative/SLDBGen/releases:
   skip_reason: html_page
   status_code: 200
 https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl:
-  checked_at: '2026-05-21T17:50:28Z'
+  checked_at: '2026-05-23T16:14:41Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/multiomicsKP/drug_approvals_kp:
@@ -5431,13 +5437,13 @@ https://hershey.dbi.udel.edu/textmining/export/emind/eMIND_iTextmine.json.gz:
   last_success_bytes: 941473
   status_code: 200
 https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz:
-  checked_at: '2026-05-21T17:50:30Z'
+  checked_at: '2026-05-23T16:14:43Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''honiglab.c2b2.columbia.edu'',
     port=443): Max retries exceeded with url: /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 https://hpidb.igbb.msstate.edu/:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'',
     port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -5608,11 +5614,11 @@ https://kg-hub.berkeleybop.io/eco-kg/:
   skip_reason: html_page
   status_code: 200
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kghub.io/kg-covid-19/:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz:
@@ -5820,19 +5826,19 @@ https://lncipedia.org/download#anchor-metadata:
   skip_reason: html_page
   status_code: 200
 https://loinc.org/download/loinc-complete/:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://loinc.org/downloads/archive/:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://loinc.org/principles/:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://maayanlab.cloud/Enrichr/datasetStatistics:
-  checked_at: '2026-05-21T17:50:00Z'
+  checked_at: '2026-05-23T16:14:10Z'
   content_type: application/json;charset=UTF-8
   error: No Content-Length header found
   status_code: 200
@@ -5876,7 +5882,7 @@ https://metatraits.embl.de/traits:
   skip_reason: html_page
   status_code: 200
 https://mips.helmholtz-muenchen.de/corum/download/:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:10Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'',
     port=443): Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -5921,7 +5927,7 @@ https://mirgenedb.org/information:
   skip_reason: html_page
   status_code: 200
 https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:23Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'',
     port=443): Max retries exceeded with url: /~miRTarBase/miRTarBase_2025/php/download.php
     (Caused by SSLError(SSLError(1, ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert
@@ -5989,7 +5995,7 @@ https://mrcieu.github.io/software/vectology/:
   skip_reason: html_page
   status_code: 200
 https://ngdc.cncb.ac.cn/lncbook/download:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ngdc.cncb.ac.cn/lncbook/statistics:
@@ -6043,43 +6049,43 @@ https://ohdsi.github.io/Hades/:
   skip_reason: html_page
   status_code: 200
 https://omabrowser.org/oma/current/OMA.ttl.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/OmaGroups.orthoxml:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/OmaGroups.txt.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/OmaHOGs.orthoxml:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/OmaServer.h5:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/OrthologousPairs.txt.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/oma-proteins.fa.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://omabrowser.org/oma/current/oma-uniprot.txt.gz:
-  checked_at: '2026-05-21T17:50:09Z'
+  checked_at: '2026-05-23T16:14:22Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://openbiodiv.net/ontologies:
@@ -6088,7 +6094,7 @@ https://openbiodiv.net/ontologies:
   skip_reason: html_page
   status_code: 200
 https://openpredict.semanticscience.org/:
-  checked_at: '2026-05-21T17:50:10Z'
+  checked_at: '2026-05-23T16:14:23Z'
   error: HTTP 405 error when accessing file
   status_code: 405
 https://opentreeoflife.github.io/develop:
@@ -6102,7 +6108,7 @@ https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53:
   skip_reason: html_page
   status_code: 200
 https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383:
-  checked_at: '2026-05-21T17:49:53Z'
+  checked_at: '2026-05-23T16:14:09Z'
   content_type: application/pdf
   error: No Content-Length header found
   skip_reason: no_content_type
@@ -6134,11 +6140,11 @@ https://pharmacodb.ca/documentation:
   skip_reason: html_page
   status_code: 200
 https://pharos.nih.gov/about:
-  checked_at: '2026-05-21T17:50:29Z'
+  checked_at: '2026-05-23T16:14:42Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://pharos.nih.gov/api-docs:
-  checked_at: '2026-05-21T17:50:29Z'
+  checked_at: '2026-05-23T16:14:42Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://phewascatalog.org/phewas/#home:
@@ -6207,23 +6213,28 @@ https://portal.obis.org/:
   skip_reason: html_page
   status_code: 200
 https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:03Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:03Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip:
-  checked_at: '2026-05-21T17:50:49Z'
+  checked_at: '2026-05-23T16:15:03Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://previous.malacards.org/:
-  checked_at: '2026-05-21T17:50:08Z'
+  checked_at: '2026-05-23T16:14:21Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://proteininformationresource.org/:
   checked_at: '2026-02-20T21:44:15Z'
+  content_type: text/html
+  skip_reason: html_page
+  status_code: 200
+https://proteininformationresource.org/pirwww/download/:
+  checked_at: '2026-05-23T16:14:42Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -6254,7 +6265,7 @@ https://raw.githubusercontent.com/berkeleybop/metpo/refs/heads/main/metpo.owl:
   last_success_bytes: 24016
   status_code: 200
 https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2025_02_04.owl.zip:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://raw.githubusercontent.com/geneontology/gocam-py/main/src/gocam/schema/gocam.yaml:
@@ -6279,44 +6290,49 @@ https://registry.opendata.aws/obis/:
   content_type: text/html
   skip_reason: html_page
   status_code: 200
+https://remap.univ-amu.fr/download_page:
+  checked_at: '2026-05-23T16:14:47Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
 https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf:
-  checked_at: '2026-05-21T17:50:33Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /public/data/Compound_Intake_Policy.pdf
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 https://repo-hub.broadinstitute.org/public/data/repo-drug-annotation-20200324.txt:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:10Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:10Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 https://repo-hub.broadinstitute.org/repurposing#about:
-  checked_at: '2026-05-21T17:50:32Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
 https://repo-hub.broadinstitute.org/repurposing#case-studies:
-  checked_at: '2026-05-21T17:50:32Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
 https://repo-hub.broadinstitute.org/repurposing#download:
-  checked_at: '2026-05-21T17:50:32Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
 https://repo-hub.broadinstitute.org/repurposing#screen:
-  checked_at: '2026-05-21T17:50:32Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'',
     port=443): Max retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -6352,7 +6368,7 @@ https://reporter.nih.gov/exporter/publications:
   skip_reason: html_page
   status_code: 200
 https://reprotox-kg.net/downloads/:
-  checked_at: '2026-05-21T17:50:33Z'
+  checked_at: '2026-05-23T16:14:47Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443):
     Max retries exceeded with url: /downloads/ (Caused by NameResolutionError("HTTPSConnection(host=''reprotox-kg.net'',
     port=443): Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service not
@@ -7376,7 +7392,7 @@ https://stko-kwg.geog.ucsb.edu/lod/ontology:
   skip_reason: html_page
   status_code: 200
 https://storage.googleapis.com/translator-text-workflow-dev-public/:
-  checked_at: '2026-05-21T17:50:47Z'
+  checked_at: '2026-05-23T16:15:01Z'
   content_type: application/xml; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
@@ -7408,7 +7424,7 @@ https://techdocs.gbif.org/:
   skip_reason: html_page
   status_code: 200
 https://tissues.jensenlab.org/Downloads:
-  checked_at: '2026-05-21T17:50:47Z'
+  checked_at: '2026-05-23T16:15:02Z'
   content_type: ''
   error: No Content-Length header found
   skip_reason: no_content_type
@@ -7430,7 +7446,7 @@ https://unmtid-dbs.net/download/TIGA/:
   skip_reason: html_page
   status_code: 200
 https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=:
-  checked_at: '2026-05-21T17:49:55Z'
+  checked_at: '2026-05-23T16:14:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://veupathdb.org/veupathdb/app/downloads:
@@ -7612,7 +7628,7 @@ https://w3id.org/biopragmatics/resources/zfin/zfin.owl:
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/goldterms/goldterms.owl:
-  checked_at: '2026-05-21T17:50:05Z'
+  checked_at: '2026-05-23T16:14:18Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview:
@@ -7959,7 +7975,7 @@ https://www.ebi.ac.uk/gxa/help/index.html:
   skip_reason: html_page
   status_code: 200
 https://www.ebi.ac.uk/gxa/help/r-data-objects.html:
-  checked_at: '2026-05-21T17:50:01Z'
+  checked_at: '2026-05-23T16:14:11Z'
   error: HTTP 500 error when accessing file
   status_code: 500
 https://www.ebi.ac.uk/intact/documentation/user-guide:
@@ -7969,6 +7985,11 @@ https://www.ebi.ac.uk/intact/documentation/user-guide:
   status_code: 200
 https://www.ebi.ac.uk/intact/download/datasets:
   checked_at: '2025-09-09T16:43:59Z'
+  content_type: text/html
+  skip_reason: html_page
+  status_code: 200
+https://www.ebi.ac.uk/intact/downloads:
+  checked_at: '2026-05-23T16:14:20Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -8052,11 +8073,11 @@ https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementar
   skip_reason: html_page
   status_code: 200
 https://www.gbif.org/ipt:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:13Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://www.gbif.org/occurrence/download:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:13Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://www.gencodegenes.org/human/:
@@ -8075,7 +8096,7 @@ https://www.gencodegenes.org/pages/gencode_primary/:
   skip_reason: html_page
   status_code: 200
 https://www.genecards.org/:
-  checked_at: '2026-05-21T17:49:53Z'
+  checked_at: '2026-05-23T16:14:09Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://www.genome.jp/kegg/xml/:
@@ -8114,37 +8135,37 @@ https://www.gtexportal.org/home/downloads/adult-gtex/qtl:
   skip_reason: html_page
   status_code: 200
 https://www.guidetopharmacology.org/DATA/all_ligands.sdf:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   content_type: application/vnd.Kinar
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/interactions.csv:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:18Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/ligands.csv:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:18Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:19Z'
   content_type: text/n3
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/targets_and_families.csv:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:18Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
@@ -8154,7 +8175,7 @@ https://www.hmdb.ca/downloads#metabolite-protein-xml:
   skip_reason: html_page
   status_code: 200
 https://www.hmdb.ca/downloads#protein-gene-sequences:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:20Z'
   content_type: text/html; charset=utf-8
   error: HTTP 403 error when accessing file
   skip_reason: html_page
@@ -8165,13 +8186,13 @@ https://www.hmdb.ca/downloads#spectra:
   skip_reason: html_page
   status_code: 200
 https://www.hmdb.ca/downloads#structures:
-  checked_at: '2026-05-21T17:50:06Z'
+  checked_at: '2026-05-23T16:14:20Z'
   content_type: text/html; charset=utf-8
   error: HTTP 403 error when accessing file
   skip_reason: html_page
   status_code: 403
 https://www.inchi-trust.org/:
-  checked_at: '2026-05-21T17:50:07Z'
+  checked_at: '2026-05-23T16:14:20Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://www.inetbio.org/humannet/download.php:
@@ -8294,12 +8315,12 @@ https://www.kegg.jp/kegg/syntax/:
   skip_reason: html_page
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv:
-  checked_at: '2026-05-21T17:50:17Z'
+  checked_at: '2026-05-23T16:14:30Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv:
-  checked_at: '2026-05-21T17:50:11Z'
+  checked_at: '2026-05-23T16:14:22Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   skip_reason: html_page
@@ -8336,6 +8357,11 @@ https://www.ncbi.nlm.nih.gov/medgen/docs/overview/:
   status_code: 200
 https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424:
   checked_at: '2025-09-24T21:54:32Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.ncbi.nlm.nih.gov/sra/docs/:
+  checked_at: '2026-05-23T16:14:48Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -8405,12 +8431,12 @@ https://www.pistoiaalliance.org/resource-library/pharma-general-ontology-use-cas
   skip_reason: html_page
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv:
-  checked_at: '2026-05-21T17:50:29Z'
+  checked_at: '2026-05-23T16:14:43Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv:
-  checked_at: '2026-05-21T17:50:29Z'
+  checked_at: '2026-05-23T16:14:43Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
@@ -8468,6 +8494,46 @@ https://www.proteinatlas.org/download/subcellular_location.tsv.zip:
   checked_at: '2026-05-21T17:50:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
+https://www.proteinatlas.org/humanproteome/blood/data#blood_conc:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/brain/data:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/cancer/data:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/cell+line/data:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/single+cell/immune+cell/data#immune_cells_hpa:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/single+cell/single+cell+type/data:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/subcellular/data#locations:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/tissue/data:
+  checked_at: '2026-05-23T16:14:20Z'
+  content_type: text/html; charset=UTF-8
+  skip_reason: html_page
+  status_code: 200
 https://www.ribocentre.org/publications/:
   checked_at: '2025-10-30T22:39:59Z'
   content_type: text/html; charset=utf-8
@@ -8525,32 +8591,32 @@ https://www.synapse.org/#!Synapse:syn18360482/files/:
   skip_reason: html_page
   status_code: 200
 https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py:
-  checked_at: '2026-05-21T17:50:46Z'
+  checked_at: '2026-05-23T16:15:00Z'
   content_type: text/plain; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
 https://www.tcdb.org/cgi-bin/projectv/public/go.py:
-  checked_at: '2026-05-21T17:50:46Z'
+  checked_at: '2026-05-23T16:15:01Z'
   content_type: text/plain; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
 https://www.tcdb.org/cgi-bin/projectv/public/pdb.py:
-  checked_at: '2026-05-21T17:50:47Z'
+  checked_at: '2026-05-23T16:15:01Z'
   content_type: text/plain; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
 https://www.tcdb.org/cgi-bin/projectv/public/pfam.py:
-  checked_at: '2026-05-21T17:50:47Z'
+  checked_at: '2026-05-23T16:15:01Z'
   content_type: text/plain; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
 https://www.tcdb.org/cgi-bin/projectv/public/refseq.py:
-  checked_at: '2026-05-21T17:50:44Z'
+  checked_at: '2026-05-23T16:14:59Z'
   content_type: text/plain; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
 https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py:
-  checked_at: '2026-05-21T17:50:53Z'
+  checked_at: '2026-05-23T16:15:06Z'
   error: Timeout connecting to URL
 https://www.try-db.org/TryWeb/Home.php:
   checked_at: '2026-03-30T20:00:58Z'
@@ -8616,7 +8682,7 @@ https://zenodo.org/badge/latestdoi/2478263:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/record/14640564/files/citations.csv.gz:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:16Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -8627,7 +8693,7 @@ https://zenodo.org/record/14640564/files/citations.tsv.gz:
   last_success_bytes: 40815688
   status_code: 200
 https://zenodo.org/record/14640564/files/datasets.csv.gz:
-  checked_at: '2026-05-21T17:50:04Z'
+  checked_at: '2026-05-23T16:14:16Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -8638,7 +8704,7 @@ https://zenodo.org/record/14640564/files/datasets.tsv.gz:
   last_success_bytes: 4373
   status_code: 200
 https://zenodo.org/record/14640564/files/interactions.csv.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:14Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -8661,7 +8727,7 @@ https://zenodo.org/record/14640564/files/neo4j-graphdb.zip:
   last_success_bytes: 9059233137
   status_code: 200
 https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:15Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -8672,7 +8738,7 @@ https://zenodo.org/record/14640564/files/refuted-interactions.tsv.gz:
   last_success_bytes: 17546643
   status_code: 200
 https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:16Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -8695,7 +8761,7 @@ https://zenodo.org/record/14640564/files/taxonMap.tsv.gz:
   last_success_bytes: 111241785
   status_code: 200
 https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz:
-  checked_at: '2026-05-21T17:50:03Z'
+  checked_at: '2026-05-23T16:14:15Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
@@ -8756,17 +8822,17 @@ https://zenodo.org/records/7753956:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/records/8117748/files/test.txt:
-  checked_at: '2026-05-21T17:50:00Z'
+  checked_at: '2026-05-23T16:14:10Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/train.txt:
-  checked_at: '2026-05-21T17:49:59Z'
+  checked_at: '2026-05-23T16:14:10Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/valid.txt:
-  checked_at: '2026-05-21T17:50:00Z'
+  checked_at: '2026-05-23T16:14:10Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200

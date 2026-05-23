@@ -55,16 +55,16 @@ products:
     retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
-    by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
+    by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 - category: Product
   description: Latest physical sample-level metadata including Broad sample IDs, vendor
     catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19
@@ -92,16 +92,16 @@ products:
     retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-19: Error connecting
-    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
-    retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
-    by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
+    by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
 - category: GraphProduct
   compatibility:
   - standard: biolink

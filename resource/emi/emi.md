@@ -10,7 +10,6 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.earthmetabolome.org/earth_metabolome_ontology/
 id: emi
-infores_id: emi
 last_modified_date: '2026-01-15T00:00:00Z'
 layout: resource_detail
 license:

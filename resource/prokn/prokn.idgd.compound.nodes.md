@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: IDG compound-disease nodes (IDGD) used in ProKN
+description: IDG/TCRD compound-disease nodes used in ProKN
 format: csv
 id: prokn.idgd.compound.nodes
-name: ProKN IDGD Compound Nodes
+name: ProKN TCRD Compound-Disease Compound Nodes
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: idgd
+  source: tcrd
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 105796

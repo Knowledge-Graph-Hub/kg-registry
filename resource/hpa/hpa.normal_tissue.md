@@ -1,20 +1,13 @@
 ---
 category: Product
-description: Normal tissue expression data based on immunohistochemistry using tissue
-  microarrays
+description: Tissue atlas immunohistochemistry expression profiles for proteins across
+  45 human tissues, with annotated cell types and expression reliability data
 format: tsv
 id: hpa.normal_tissue
 name: HPA Normal Tissue Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hpa
-product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-  to URL
+product_url: https://www.proteinatlas.org/humanproteome/tissue/data
 layout: product_detail
 ---

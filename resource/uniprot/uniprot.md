@@ -98,10 +98,12 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -143,8 +145,6 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
@@ -153,6 +153,10 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -731,8 +735,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -989,10 +993,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt

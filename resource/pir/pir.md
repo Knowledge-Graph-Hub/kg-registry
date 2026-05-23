@@ -1,16 +1,50 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://proteininformationresource.org/
+  label: Protein Information Resource
 creation_date: '2026-05-20T00:00:00Z'
-description: Stub Resource page for pir. This page was automatically generated because
-  it was referenced by other resources.
+description: Protein Information Resource (PIR) is an integrated public bioinformatics
+  resource that supports genomic, proteomic, and systems biology research through
+  protein databases, annotation resources, search tools, and downloadable reference
+  datasets.
 domains:
-- stub
+- proteomics
+- genomics
+- systems biology
+homepage_url: https://proteininformationresource.org/
 id: pir
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-22T00:00:00Z'
 layout: resource_detail
-name: Pir
+license:
+  id: https://proteininformationresource.org/pirwww/about/linkpir.shtml
+  label: PIR Terms of Use
+name: Protein Information Resource
 products:
+- category: GraphicalInterface
+  description: Main PIR web interface for navigating databases, search tools, and
+    supporting resources.
+  format: http
+  id: pir.portal
+  name: PIR Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  product_url: https://proteininformationresource.org/
+- category: Product
+  description: PIR download center exposing FTP-accessible releases for iProClass,
+    PIRSF, PRO, and related PIR-maintained datasets.
+  format: http
+  id: pir.downloads
+  name: PIR Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  product_url: https://proteininformationresource.org/pirwww/download/
 - category: GraphProduct
   description: PIR compound exact match edges
   format: csv
@@ -75,10 +109,17 @@ products:
     source: prokn
   product_file_size: 19465205
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.ImpcMouseGene.BIOLINK_HAS_GENE_PRODUCT.Protein.edges.csv
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+synonyms:
+- PIR
+- Protein Information Resource
 ---
-# Pir
 
-This is an automatically generated stub page for pir. Please update with proper information.
+# Protein Information Resource
+
+PIR is a long-running public protein bioinformatics resource that historically contributed
+core sequence and annotation infrastructure to UniProt and continues to maintain protein-centric
+data integration and analysis resources. Its public site exposes databases, search tools,
+downloads, and supporting documentation for protein annotation workflows.
+
+The ProKN products on this page are derived graph views built from PIR-linked protein mappings
+and cross-resource integration, including alignments to IMPC-derived gene and orthology data.

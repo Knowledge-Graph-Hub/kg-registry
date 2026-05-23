@@ -20,7 +20,6 @@ domains:
 - biological systems
 - upper
 id: oio
-infores_id: oio
 last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 license:

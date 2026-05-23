@@ -271,8 +271,6 @@ hao,active,PASS
 harmonizome-kg,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
-hgnchpo,active,PASS
-hmaz,active,PASS
 hmdb,active,PASS
 hom,active,PASS
 hp,active,PASS
@@ -297,8 +295,6 @@ iceo,active,PASS
 ico,active,PASS
 iconclass,active,PASS
 identifier-mappings,active,PASS
-idgd,active,PASS
-idgp,active,PASS
 idisk,active,PASS
 ido,active,PASS
 ikraph,active,PASS

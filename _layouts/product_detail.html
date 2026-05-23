@@ -217,9 +217,14 @@ layout: default
           <tbody>
             {% for source_association in page.original_source %}
             {% assign source = source_association.source | default: source_association %}
+            {% assign source_first_segment = source | split: '.' | first %}
             <tr>
               <td>
+                {% if source contains '.' %}
+                <a href="/kg-registry/resource/{{source_first_segment}}/{{source}}.html">{{source}}</a>
+                {% else %}
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
+                {% endif %}
               </td>
               {% endfor %}
           </tbody>
@@ -239,11 +244,16 @@ layout: default
           <tbody>
             {% for source_association in page.secondary_source %}
             {% assign source = source_association.source | default: source_association %}
+            {% assign source_first_segment = source | split: '.' | first %}
             {% assign relation_type = source_association.relation_type | default: "prov:wasInfluencedBy" %}
             {% assign relation_label = relation_type | remove: "prov:" | replace: "hadPrimarySource", "had primary source" | replace: "wasDerivedFrom", "was derived from" | replace: "wasInfluencedBy", "was influenced by" | replace: "wasInformedBy", "was informed by" | replace: "used", "used" %}
             <tr>
               <td>
+                {% if source contains '.' %}
+                <a href="/kg-registry/resource/{{source_first_segment}}/{{source}}.html">{{source}}</a>
+                {% else %}
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
+                {% endif %}
               </td>
               <td>
                 <span title="{{page.id | escape}} {{relation_type | escape}} {{source | escape}}" style="text-decoration: underline dotted; cursor: help;">{{relation_label}}</span>

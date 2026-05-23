@@ -81,6 +81,54 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hubmap
   product_url: https://azimuth.hubmapconsortium.org/
+- category: GraphProduct
+  description: HuBMAP Azimuth anatomy nodes used in ProKN
+  format: csv
+  id: prokn.hmaz.anatomy.nodes
+  name: ProKN HuBMAP Azimuth Anatomy Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 12730
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.nodes.csv
+- category: GraphProduct
+  description: HuBMAP Azimuth anatomy to heart marker gene edges
+  format: csv
+  id: prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges
+  name: ProKN HuBMAP Azimuth Heart Marker Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 48364
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv
+- category: GraphProduct
+  description: HuBMAP Azimuth anatomy to kidney marker gene edges
+  format: csv
+  id: prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges
+  name: ProKN HuBMAP Azimuth Kidney Marker Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 126963
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv
+- category: GraphProduct
+  description: HuBMAP Azimuth anatomy to liver marker gene edges
+  format: csv
+  id: prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges
+  name: ProKN HuBMAP Azimuth Liver Marker Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap.azimuth
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 56732
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv
 - category: GraphicalInterface
   description: Functional Unit State Identification and Navigation with Whole Slide
     Imaging
@@ -99,10 +147,12 @@ products:
     source: hubmap
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 401 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 401 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   id: hubmap.data_ingest_portal
@@ -342,7 +392,7 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
 publications:
 - authors:
-  - "Katy B\xF6rner"
+  - Katy Börner
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1

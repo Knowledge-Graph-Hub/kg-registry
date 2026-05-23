@@ -1,11 +1,13 @@
 ---
 category: GraphicalInterface
-description: ACT is a tool that makes cell type annotation easier by integrating the CellMarker resource.
+description: CellMarker 2.0 annotation tool for assigning cell types using curated
+  marker genes
+format: http
 id: cellmarker.act
-name: ACT (Annotation of Cell Types)
-product_url: http://xteam.xbio.top/ACT/
-layout: product_detail
+name: Cell Annotation Tool
 original_source:
-  - source: cellmarker
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: cellmarker
+product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp
+layout: product_detail
 ---

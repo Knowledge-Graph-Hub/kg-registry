@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: IDGD compound indication edges to disease/phenotype
+description: TCRD compound indication edges to disease and phenotype terms
 format: csv
 id: prokn.idgd.compound.indication.diseaseorphenotype.edges
-name: ProKN IDGD Indication Edges
+name: ProKN TCRD Compound-Disease Indication Edges
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: idgd
+  source: tcrd
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 1686928

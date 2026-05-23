@@ -20,7 +20,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/obophenotype/provisional_cell_ontology
 id: pcl
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -58,220 +58,141 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
   id: pcl-base.owl
   name: pcl-base.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
   id: pcl-base.obo
   name: pcl-base.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-base.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-20: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
   id: pcl-base.json
   name: pcl-base.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-base.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
-    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
   id: pcl-full.owl
   name: pcl-full.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-full.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
   id: pcl-full.obo
   name: pcl-full.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-full.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
   id: pcl-full.json
   name: pcl-full.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
   id: pcl-simple.owl
   name: pcl-simple.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-04-10: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
   id: pcl-simple.obo
   name: pcl-simple.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
   id: pcl-simple.json
   name: pcl-simple.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
     when accessing file'
-publications: []
+publications:
+- id: https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1
+  title: Brain Data Standards
+- id: https://pubmed.ncbi.nlm.nih.gov/34616062/
+- id: https://pubmed.ncbi.nlm.nih.gov/31435019/
+- id: https://pubmed.ncbi.nlm.nih.gov/29322913/
 repository: https://github.com/obophenotype/provisional_cell_ontology
 ---
-## Description
+# Provisional Cell Ontology
 
-Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.
+The Provisional Cell Ontology (PCL) captures cell type definitions that are still
+primarily grounded in experimental signatures, especially single-cell and single-nucleus
+transcriptomics, rather than a stable set of classical defining properties. PCL terms
+are intended to complement the Cell Ontology while those definitions mature, and may
+later migrate into CL when they become conventionally defined.
 
-## Contacts
+PCL is maintained by the OBO Foundry and developed in the `obophenotype/provisional_cell_ontology`
+repository using an ODK-based workflow. The repository README identifies the issue
+tracker as the preferred channel for new term requests and corrections, while the OBO
+Foundry entry and OLS provide the main public discovery surfaces.
 
-- David Osumi-Sutherland (davidos@ebi.ac.uk) [ORCID: 0000-0002-7073-9172](https://orcid.org/0000-0002-7073-9172)
+## Access Points
 
-## Products
-
-### pcl.owl
-
-Provisional Cell Ontology in OWL format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl.owl](http://purl.obolibrary.org/obo/pcl.owl)
-
-**Format**: owl
-
-### pcl.obo
-
-Provisional Cell Ontology in OBO format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl.obo](http://purl.obolibrary.org/obo/pcl.obo)
-
-**Format**: obo
-
-### pcl.json
-
-Provisional Cell Ontology in JSON format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl.json](http://purl.obolibrary.org/obo/pcl.json)
-
-**Format**: json
-
-### pcl-base.owl
-
-Provisional Cell Ontology in OWL format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-base.owl](http://purl.obolibrary.org/obo/pcl-base.owl)
-
-**Format**: owl
-
-### pcl-base.obo
-
-Provisional Cell Ontology in OBO format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-base.obo](http://purl.obolibrary.org/obo/pcl-base.obo)
-
-**Format**: obo
-
-### pcl-base.json
-
-Provisional Cell Ontology in JSON format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-base.json](http://purl.obolibrary.org/obo/pcl-base.json)
-
-**Format**: json
-
-### pcl-full.owl
-
-Provisional Cell Ontology in OWL format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-full.owl](http://purl.obolibrary.org/obo/pcl-full.owl)
-
-**Format**: owl
-
-### pcl-full.obo
-
-Provisional Cell Ontology in OBO format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-full.obo](http://purl.obolibrary.org/obo/pcl-full.obo)
-
-**Format**: obo
-
-### pcl-full.json
-
-Provisional Cell Ontology in JSON format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-full.json](http://purl.obolibrary.org/obo/pcl-full.json)
-
-**Format**: json
-
-### pcl-simple.owl
-
-Provisional Cell Ontology in OWL format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-simple.owl](http://purl.obolibrary.org/obo/pcl-simple.owl)
-
-**Format**: owl
-
-### pcl-simple.obo
-
-Provisional Cell Ontology in OBO format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-simple.obo](http://purl.obolibrary.org/obo/pcl-simple.obo)
-
-**Format**: obo
-
-### pcl-simple.json
-
-Provisional Cell Ontology in JSON format
-
-**URL**: [http://purl.obolibrary.org/obo/pcl-simple.json](http://purl.obolibrary.org/obo/pcl-simple.json)
-
-**Format**: json
-
-**Domains**: biological systems
-
----
-
-*This resource was automatically synchronized from the OBO Foundry registry.*
+- OBO Foundry entry: [PCL on OBO Foundry](https://obofoundry.org/ontology/pcl)
+- Ontology browser: [PCL in OLS](https://www.ebi.ac.uk/ols4/ontologies/pcl)
+- Source repository: [obophenotype/provisional_cell_ontology](https://github.com/obophenotype/provisional_cell_ontology)
+- Issue tracker: [PCL GitHub issues](https://github.com/obophenotype/provisional_cell_ontology/issues)
+- Latest releases: [PCL release assets](https://github.com/obophenotype/provisional_cell_ontology/releases/latest)

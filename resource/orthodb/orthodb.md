@@ -48,7 +48,7 @@ products:
     original_source:
       - source: orthodb
         relation_type: prov:hadPrimarySource
-    product_url: https://www.orthodb.org/api/
+    product_url: https://data.orthodb.org/v12/
   - category: Product
     compression: gzip
     description: Tab-separated file with species information based on NCBI taxonomy
@@ -139,6 +139,18 @@ products:
     product_url: https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz
 publications:
   - authors:
+      - Tegenfeldt F
+      - Kuznetsov D
+      - Manni M
+      - Berkeley M
+      - Zdobnov EM
+      - Kriventseva EV
+    doi: doi:10.1093/nar/gkae987
+    id: doi:10.1093/nar/gkae987
+    preferred: true
+    title: 'OrthoDB and BUSCO update: annotation of orthologs with wider sampling of genomes'
+    year: '2024'
+  - authors:
       - Kriventseva EV
       - Kuznetsov D
       - Tegenfeldt F
@@ -162,21 +174,20 @@ publications:
       - Kriventseva EV
     doi: doi:10.1093/nar/gkw1119
     id: doi:10.1093/nar/gkw1119
-    preferred: true
     title: OrthoDB v9.1 - cataloging evolutionary and functional annotations for animal, fungal, plant, archaeal, bacterial and viral orthologs
     year: '2017'
 repository: https://github.com/zdobnov-lab/orthodb
 creation_date: '2025-05-07T00:00:00Z'
-last_modified_date: '2025-12-07T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 ---
 
 OrthoDB is a comprehensive database of orthologous protein-coding genes across multiple species with a hierarchical catalog of orthologs. It provides evolutionary and functional annotations of orthologous groups at various taxonomic levels, covering Eukaryotes, Prokaryotes, and Viruses.
 
-The database contains information for more than 31,000 species, including:
-- More than 5,800 Eukaryotes
-- More than 18,100 Prokaryotes
-- More than 7,900 Viruses
-- Approximately 162 million genes in total
+The current OrthoDB v12.2 release contains information for 32,072 species, including:
+- 5,952 Eukaryotes
+- 18,158 Prokaryotes
+- 7,962 Viruses
+- Approximately 165 million genes in total
 
 OrthoDB offers several key features:
 - Hierarchical orthology classification across the tree of life
@@ -187,4 +198,4 @@ OrthoDB offers several key features:
 
 The database is widely used in comparative genomics, molecular evolution studies, functional annotation, and gene family evolution analysis. It serves as a foundation for the popular BUSCO tool (Benchmarking Universal Single-Copy Orthologs) for genome assembly and annotation assessment.
 
-OrthoDB is maintained by the Zdobnov Lab at the University of Geneva and the Swiss Institute of Bioinformatics (SIB), with regular updates incorporating new genome sequences and improving data quality. Access is provided through a user-friendly web interface, a SPARQL endpoint for semantic web queries, a RESTful API for programmatic access, and bulk downloads in various formats.
+OrthoDB is maintained by the Zdobnov Lab at the University of Geneva and the Swiss Institute of Bioinformatics (SIB), with regular updates incorporating new genome sequences and improving data quality. Access is provided through a user-friendly web interface, a SPARQL endpoint for semantic web queries, the versioned OrthoDB v12 REST API, and bulk downloads in various formats.

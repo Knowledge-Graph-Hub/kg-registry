@@ -54,13 +54,13 @@ products:
   product_file_size: 6993
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Anatomy.nodes.csv
 - category: GraphProduct
-  description: HMAZ anatomy nodes used in ProKN
+  description: HuBMAP Azimuth anatomy nodes used in ProKN
   format: csv
   id: prokn.hmaz.anatomy.nodes
-  name: ProKN HMAZ Anatomy Nodes
+  name: ProKN HuBMAP Azimuth Anatomy Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hmaz
+    source: hubmap.azimuth
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 12730
@@ -78,73 +78,73 @@ products:
   product_file_size: 1381676
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/IMEx.Complex.nodes.csv
 - category: GraphProduct
-  description: IDG compound-protein nodes (IDGP) used in ProKN
+  description: IDG/TCRD compound-protein nodes used in ProKN
   format: csv
   id: prokn.idgp.compound.nodes
-  name: ProKN IDGP Compound Nodes
+  name: ProKN TCRD Compound-Protein Compound Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: idgp
+    source: tcrd
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 83991029
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv
 - category: GraphProduct
-  description: IDG compound-disease nodes (IDGD) used in ProKN
+  description: IDG/TCRD compound-disease nodes used in ProKN
   format: csv
   id: prokn.idgd.compound.nodes
-  name: ProKN IDGD Compound Nodes
+  name: ProKN TCRD Compound-Disease Compound Nodes
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: idgd
+    source: tcrd
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 105796
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.nodes.csv
 - category: GraphProduct
-  description: HMAZ anatomy to heart marker gene edges
+  description: HuBMAP Azimuth anatomy to heart marker gene edges
   format: csv
   id: prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges
-  name: ProKN HMAZ Heart Marker Edges
+  name: ProKN HuBMAP Azimuth Heart Marker Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hmaz
+    source: hubmap.azimuth
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 48364
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv
 - category: GraphProduct
-  description: HMAZ anatomy to kidney marker gene edges
+  description: HuBMAP Azimuth anatomy to kidney marker gene edges
   format: csv
   id: prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges
-  name: ProKN HMAZ Kidney Marker Edges
+  name: ProKN HuBMAP Azimuth Kidney Marker Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hmaz
+    source: hubmap.azimuth
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 126963
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv
 - category: GraphProduct
-  description: HMAZ anatomy to liver marker gene edges
+  description: HuBMAP Azimuth anatomy to liver marker gene edges
   format: csv
   id: prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges
-  name: ProKN HMAZ Liver Marker Edges
+  name: ProKN HuBMAP Azimuth Liver Marker Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hmaz
+    source: hubmap.azimuth
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 56732
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv
 - category: GraphProduct
-  description: IDGP compound bioactivity to protein edges
+  description: TCRD compound bioactivity to protein edges
   format: csv
   id: prokn.idgp.compound.bioactivity.protein.edges
-  name: ProKN IDGP Bioactivity Edges
+  name: ProKN TCRD Compound-Protein Bioactivity Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: idgp
+    source: tcrd
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 128158013
@@ -162,13 +162,13 @@ products:
   product_file_size: 6193189
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv
 - category: GraphProduct
-  description: IDGD compound indication edges to disease/phenotype
+  description: TCRD compound indication edges to disease and phenotype terms
   format: csv
   id: prokn.idgd.compound.indication.diseaseorphenotype.edges
-  name: ProKN IDGD Indication Edges
+  name: ProKN TCRD Compound-Disease Indication Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: idgd
+    source: tcrd
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 1686928
@@ -234,13 +234,13 @@ products:
   product_file_size: 171040
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/InterPro.Domain.IS_A.Domain.edges.csv
 - category: GraphProduct
-  description: HGNCHPO gene associated with disease/phenotype edges
+  description: HPO gene-to-phenotype association edges
   format: csv
   id: prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges
-  name: ProKN HGNCHPO Association Edges
+  name: ProKN HPO Gene-to-Phenotype Association Edges
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: hgnchpo
+    source: hp.genes_to_phenotype.txt
   - relation_type: prov:hadPrimarySource
     source: prokn
   product_file_size: 155778514

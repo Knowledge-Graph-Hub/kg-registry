@@ -26,7 +26,7 @@ domains:
 homepage_url: http://geneontology.org/
 id: go
 infores_id: go
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -65,7 +65,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -79,6 +79,18 @@ products:
   product_file_size: 236488701
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
 - category: OntologyProduct
+  description: As go-plus.owl, in obographs json format
+  format: json
+  id: go.extensions.go-plus.json
+  name: GO-Plus
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
+    header found'
+- category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     excluding the external ontologies themselves
   format: owl
@@ -89,18 +101,6 @@ products:
     source: go
   product_file_size: 160974965
   product_url: http://purl.obolibrary.org/obo/go/go-base.owl
-- category: OntologyProduct
-  description: As go-plus.owl, in obographs json format
-  format: json
-  id: go.extensions.go-plus.json
-  name: GO-Plus
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
     to be acyclic and annotations can be propagated up the graph. The relations included
@@ -124,7 +124,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -136,7 +136,7 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -147,7 +147,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: go
-  product_file_size: 129706298
+  product_file_size: 129908636
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -158,10 +158,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: go
-  product_file_size: 36555702
+  product_file_size: 36684860
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
 - category: GraphicalInterface
-  description: Gene Ontology web browser and search interface
+  description: Official GO browser for ontology terms, gene products, and annotations.
   format: http
   id: go.amigo
   is_public: true
@@ -171,7 +171,8 @@ products:
     source: go
   product_url: https://amigo.geneontology.org/amigo
 - category: ProgrammingInterface
-  description: Gene Ontology API for programmatic access
+  description: Official Gene Ontology API for term, annotation, and related programmatic
+    access.
   format: http
   id: go.api
   is_public: true
@@ -180,6 +181,141 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   product_url: https://api.geneontology.org/
+- category: GraphicalInterface
+  description: Browser for searching and viewing Gene Ontology terms and GOA annotations
+  format: http
+  id: goa.quickgo
+  name: QuickGO Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  product_url: https://www.ebi.ac.uk/QuickGO/
+- category: Product
+  description: FTP site containing current and archived GOA annotation files for all
+    species
+  format: http
+  id: goa.ftp
+  name: GOA FTP Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+- category: Product
+  description: GO annotations for all UniProtKB entries
+  format: txt
+  id: goa.uniprot
+  name: UniProt GOA Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+- category: Product
+  description: GO annotations for human proteins
+  format: txt
+  id: goa.human
+  name: Human GOA Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+- category: Product
+  description: GO annotations for mouse proteins
+  format: txt
+  id: goa.mouse
+  name: Mouse GOA Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+- category: MappingProduct
+  description: Files containing transitive assignments of InterPro matches, UniProtKB
+    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
+    GO terms
+  format: txt
+  id: goa.mapping-files
+  name: GO Mapping Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+- category: Product
+  description: GO annotations for PDB entries
+  format: txt
+  id: goa.pdb
+  name: PDB GOA Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+- category: Product
+  description: GO annotations organized by proteomes
+  format: txt
+  id: goa.proteomes
+  name: Proteomes GOA Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+- category: GraphProduct
+  compression: gzip
+  description: Pathway-like GO-CAM causal activity models distributed as RDF Turtle.
+  format: ttl
+  id: go.gocams.ttl
+  name: GO-CAM TTL Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 3260184
+  product_url: http://current.geneontology.org/products/ttl/pathway-like_go-cams.tar.gz
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -1823,6 +1959,194 @@ products:
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: cob
+  - relation_type: prov:hadPrimarySource
+    source: dc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hancestro
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: ma
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: oio
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: semapv
+  - relation_type: prov:hadPrimarySource
+    source: skos
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bfo
+  - relation_type: prov:hadPrimarySource
+    source: bto
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clo
+  - relation_type: prov:hadPrimarySource
+    source: cob
+  - relation_type: prov:hadPrimarySource
+    source: dc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: ecto
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: fbbt
+  - relation_type: prov:hadPrimarySource
+    source: fbdv
+  - relation_type: prov:hadPrimarySource
+    source: fma
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hancestro
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ido
+  - relation_type: prov:hadPrimarySource
+    source: ma
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: mp
+  - relation_type: prov:hadPrimarySource
+    source: mpath
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: oba
+  - relation_type: prov:hadPrimarySource
+    source: obi
+  - relation_type: prov:hadPrimarySource
+    source: ogms
+  - relation_type: prov:hadPrimarySource
+    source: oio
+  - relation_type: prov:hadPrimarySource
+    source: omit
+  - relation_type: prov:hadPrimarySource
+    source: omo
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: pato
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: pr
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: semapv
+  - relation_type: prov:hadPrimarySource
+    source: skos
+  - relation_type: prov:hadPrimarySource
+    source: so
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uo
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  - relation_type: prov:hadPrimarySource
+    source: zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -3048,6 +3372,16 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
+    by Gene Ontology biocurators linking genes, proteins, and biological processes
+  id: cam-kp.go-cams
+  name: Gene Ontology CAMs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cam-kp
+  - relation_type: prov:hadPrimarySource
+    source: go
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -3181,30 +3515,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: semmeddb
   product_url: https://arax.ncats.io/
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: chr
-  - relation_type: prov:hadPrimarySource
-    source: geno
-  - relation_type: prov:hadPrimarySource
-    source: gff
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: iao
-  - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ro
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -3337,200 +3647,12 @@ products:
     source: wikipathways
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: bfo
-  - relation_type: prov:hadPrimarySource
-    source: bto
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clo
-  - relation_type: prov:hadPrimarySource
-    source: cob
-  - relation_type: prov:hadPrimarySource
-    source: dc
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: ecto
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: fbbt
-  - relation_type: prov:hadPrimarySource
-    source: fbdv
-  - relation_type: prov:hadPrimarySource
-    source: fma
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: hancestro
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: iao
-  - relation_type: prov:hadPrimarySource
-    source: ido
-  - relation_type: prov:hadPrimarySource
-    source: ma
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: mpath
-  - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ncit
-  - relation_type: prov:hadPrimarySource
-    source: oba
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: ogms
-  - relation_type: prov:hadPrimarySource
-    source: oio
-  - relation_type: prov:hadPrimarySource
-    source: omit
-  - relation_type: prov:hadPrimarySource
-    source: omo
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: po
-  - relation_type: prov:hadPrimarySource
-    source: pr
-  - relation_type: prov:hadPrimarySource
-    source: ro
-  - relation_type: prov:hadPrimarySource
-    source: semapv
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  - relation_type: prov:hadPrimarySource
-    source: so
-  - relation_type: prov:hadPrimarySource
-    source: to
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wbls
-  - relation_type: prov:hadPrimarySource
-    source: zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: bfo
-  - relation_type: prov:hadPrimarySource
-    source: bto
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clo
-  - relation_type: prov:hadPrimarySource
-    source: cob
-  - relation_type: prov:hadPrimarySource
-    source: dc
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: ecto
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: fbbt
-  - relation_type: prov:hadPrimarySource
-    source: fbdv
-  - relation_type: prov:hadPrimarySource
-    source: fma
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: hancestro
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: iao
-  - relation_type: prov:hadPrimarySource
-    source: ido
-  - relation_type: prov:hadPrimarySource
-    source: ma
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: mpath
-  - relation_type: prov:hadPrimarySource
-    source: ncbitaxon
-  - relation_type: prov:hadPrimarySource
-    source: ncit
-  - relation_type: prov:hadPrimarySource
-    source: oba
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: ogms
-  - relation_type: prov:hadPrimarySource
-    source: oio
-  - relation_type: prov:hadPrimarySource
-    source: omit
-  - relation_type: prov:hadPrimarySource
-    source: omo
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: po
-  - relation_type: prov:hadPrimarySource
-    source: pr
-  - relation_type: prov:hadPrimarySource
-    source: ro
-  - relation_type: prov:hadPrimarySource
-    source: semapv
-  - relation_type: prov:hadPrimarySource
-    source: skos
-  - relation_type: prov:hadPrimarySource
-    source: so
-  - relation_type: prov:hadPrimarySource
-    source: to
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wbls
-  - relation_type: prov:hadPrimarySource
-    source: zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
 - category: GraphProduct
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3570,22 +3692,6 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
-- category: Product
-  description: Gene ontology annotations from the Gene Ontology Consortium
-  format: http
-  id: genecards.gene.ontology
-  name: GeneCards Gene Ontology Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: go
-  product_url: https://www.genecards.org/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
 - category: GraphProduct
   description: RDF dump of the Open Research Knowledge Graph distributed in N-Triples
     format.
@@ -3621,130 +3727,48 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/api/rdf/dump
-- category: GraphicalInterface
-  description: Browser for searching and viewing Gene Ontology terms and GOA annotations
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chr
+  - relation_type: prov:hadPrimarySource
+    source: geno
+  - relation_type: prov:hadPrimarySource
+    source: gff
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: iao
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: ro
+  - relation_type: prov:hadPrimarySource
+    source: skos
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+- category: Product
+  description: Gene ontology annotations from the Gene Ontology Consortium
   format: http
-  id: goa.quickgo
-  name: QuickGO Browser
+  id: genecards.gene.ontology
+  name: GeneCards Gene Ontology Annotations
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: https://www.ebi.ac.uk/QuickGO/
-- category: Product
-  description: FTP site containing current and archived GOA annotation files for all
-    species
-  format: http
-  id: goa.ftp
-  name: GOA FTP Site
-  original_source:
+    source: genecards
   - relation_type: prov:hadPrimarySource
     source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
+  product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-- category: Product
-  description: GO annotations for all UniProtKB entries
-  format: txt
-  id: goa.uniprot
-  name: UniProt GOA Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-- category: Product
-  description: GO annotations for human proteins
-  format: txt
-  id: goa.human
-  name: Human GOA Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-- category: Product
-  description: GO annotations for mouse proteins
-  format: txt
-  id: goa.mouse
-  name: Mouse GOA Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-- category: MappingProduct
-  description: Files containing transitive assignments of InterPro matches, UniProtKB
-    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
-    GO terms
-  format: txt
-  id: goa.mapping-files
-  name: GO Mapping Files
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-- category: Product
-  description: GO annotations for PDB entries
-  format: txt
-  id: goa.pdb
-  name: PDB GOA Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  - relation_type: prov:hadPrimarySource
-    source: pdbe
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-- category: Product
-  description: GO annotations organized by proteomes
-  format: txt
-  id: goa.proteomes
-  name: Proteomes GOA Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: ProteomeHD data files
   id: proteomehd.data
@@ -3789,44 +3813,6 @@ products:
     source: ncbigene
   product_file_size: 1223833668
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
-- category: Product
-  description: TSV export of SwissLipids links to Gene Ontology terms with taxon context.
-  format: tsv
-  id: swisslipid.go
-  name: SwissLipids GO Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: swisslipid
-  - relation_type: prov:hadPrimarySource
-    source: go
-  product_file_size: 48388
-  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=go.tsv
-- category: GraphProduct
-  description: UniBioMap Gene Ontology entity descriptions.
-  format: json
-  id: unibiomap.go_desc
-  name: UniBioMap GO Descriptions
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: unibiomap
-  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-- category: Product
-  description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
-    by Gene Ontology biocurators linking genes, proteins, and biological processes
-  id: cam-kp.go-cams
-  name: Gene Ontology CAMs
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: cam-kp
-  - relation_type: prov:hadPrimarySource
-    source: go
 - category: GraphProduct
   description: GO term hierarchy edges
   format: csv
@@ -4103,6 +4089,36 @@ products:
     source: prokn
   product_file_size: 3629548
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.Protein.PART_OF.GOTerm.edges.csv
+- category: Product
+  description: TSV export of SwissLipids links to Gene Ontology terms with taxon context.
+  format: tsv
+  id: swisslipid.go
+  name: SwissLipids GO Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 48388
+  product_url: https://www.swisslipids.org/api/file.php?cas=download_files&file=go.tsv
+- category: GraphProduct
+  description: UniBioMap Gene Ontology entity descriptions.
+  format: json
+  id: unibiomap.go_desc
+  name: UniBioMap GO Descriptions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: unibiomap
+  product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
+    header found'
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'
@@ -4114,113 +4130,18 @@ synonyms:
 taxon:
 - NCBITaxon:1
 ---
-## Description
+## Overview
 
-An ontology for describing the function of genes and gene products
+The Gene Ontology (GO) is a consortium-maintained ontology and knowledge resource for describing gene product function across species. It organizes biology into molecular function, biological process, and cellular component terms, and supports a large ecosystem of annotation, browsing, download, and programmatic access services.
 
-## Contacts
+## Scope
 
-- Suzi Aleksander (suzia@stanford.edu) [ORCID: 0000-0001-6787-2901](https://orcid.org/0000-0001-6787-2901)
+This page focuses on official GO products: ontology releases, GO Consortium browsers and APIs, GO annotation download surfaces, and GO-CAM causal activity model distributions. It does not enumerate downstream third-party knowledge graphs that merely ingest GO.
 
-## Products
+## Access
 
-### GO (OWL edition)
-
-The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies
-
-**URL**: [http://purl.obolibrary.org/obo/go.owl](http://purl.obolibrary.org/obo/go.owl)
-
-**Format**: owl
-
-### GO (OBO Format edition)
-
-Equivalent to go.owl, in obo format
-
-**URL**: [http://purl.obolibrary.org/obo/go.obo](http://purl.obolibrary.org/obo/go.obo)
-
-**Format**: obo
-
-### GO (JSON edition)
-
-Equivalent to go.owl, in obograph json format
-
-**URL**: [http://purl.obolibrary.org/obo/go.json](http://purl.obolibrary.org/obo/go.json)
-
-**Format**: json
-
-### GO-Plus
-
-The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies
-
-**URL**: [http://purl.obolibrary.org/obo/go/extensions/go-plus.owl](http://purl.obolibrary.org/obo/go/extensions/go-plus.owl)
-
-**Format**: owl
-
-### GO Base Module
-
-The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves
-
-**URL**: [http://purl.obolibrary.org/obo/go/go-base.owl](http://purl.obolibrary.org/obo/go/go-base.owl)
-
-**Format**: owl
-
-### GO-Plus
-
-As go-plus.owl, in obographs json format
-
-**URL**: [http://purl.obolibrary.org/obo/go/extensions/go-plus.json](http://purl.obolibrary.org/obo/go/extensions/go-plus.json)
-
-**Format**: json
-
-### GO-Basic, Filtered, for use with legacy tools
-
-Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies.
-
-**URL**: [http://purl.obolibrary.org/obo/go/go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo)
-
-**Format**: obo
-
-### GO-Basic, Filtered, for use with legacy tools (JSON)
-
-As go-basic.obo, in json format
-
-**URL**: [http://purl.obolibrary.org/obo/go/go-basic.json](http://purl.obolibrary.org/obo/go/go-basic.json)
-
-**Format**: json
-
-### GO Taxon Groupings
-
-Classes added to ncbitaxon for groupings such as prokaryotes
-
-**URL**: [http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl](http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl)
-
-**Format**: owl
-
-### GO (OWL edition), daily snapshot release
-
-Equivalent to go.owl, but released daily. Note the snapshot release is not archived.
-
-**URL**: [http://purl.obolibrary.org/obo/go/snapshot/go.owl](http://purl.obolibrary.org/obo/go/snapshot/go.owl)
-
-**Format**: owl
-
-### GO (OBO Format edition), daily snapshot release
-
-Equivalent to go.owl, but released daily. Note the snapshot release is not archived.
-
-**URL**: [http://purl.obolibrary.org/obo/go/snapshot/go.obo](http://purl.obolibrary.org/obo/go/snapshot/go.obo)
-
-**Format**: obo
-
-## Publications
-
-- [Gene ontology: tool for the unification of biology. The Gene Ontology Consortium](https://www.ncbi.nlm.nih.gov/pubmed/10802651)
-- [The Gene Ontology resource: enriching a GOld mine](https://www.ncbi.nlm.nih.gov/pubmed/33290552)
-
-**Domains**: biological systems
-
-**Taxon**: NCBITaxon:1
+Use AmiGO and QuickGO for browsing, the GO API for programmatic access, OBO PURLs for ontology files, and the GOA / current release download directories for annotation and GO-CAM artifacts.
 
 ---
 
-*This resource was automatically synchronized from the OBO Foundry registry.*
+*This resource was automatically synchronized from the OBO Foundry registry and then curated with additional GO Consortium access points.*

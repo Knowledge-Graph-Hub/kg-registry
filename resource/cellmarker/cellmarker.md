@@ -9,109 +9,70 @@ contacts:
   label: Yun Xiao
 creation_date: '2025-07-20T00:00:00Z'
 description: CellMarker is a comprehensive and accurate resource of cell markers for
-  various cell types in tissues of human and mouse. By manually curating over 100,000
-  published papers, the database contains 13,605 cell markers of 467 cell types in
-  158 human tissues/sub-tissues and 9,148 cell makers of 389 cell types in 81 mouse
-  tissues/sub-tissues.
+  various cell types in tissues of human and mouse. CellMarker 2.0 provides a
+  manually curated collection of 26,915 markers across 2,578 cell types and 656
+  tissues, resulting in 83,361 tissue-cell type-marker entries, and includes integrated
+  web tools for single-cell data analysis.
 domains:
 - biomedical
 - genomics
 - biological systems
 - organisms
-homepage_url: http://xteam.xbio.top/
+homepage_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/
 id: cellmarker
 infores_id: cellmarker
-last_modified_date: '2025-07-20T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
 name: CellMarker
 products:
 - category: Product
-  description: Cell markers of different cell types from different tissues in human
+  description: Human CellMarker 2.0 marker dataset in spreadsheet format
   id: cellmarker.human
   name: Human Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
-  product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  product_file_size: 7982475
+  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx
 - category: Product
-  description: Cell markers of different cell types from different tissues in mouse
+  description: Mouse CellMarker 2.0 marker dataset in spreadsheet format
   id: cellmarker.mouse
   name: Mouse Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
-  product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  product_file_size: 3740448
+  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx
 - category: Product
-  description: Cell markers derived from single-cell sequencing researches in human
-    and mouse
+  description: CellMarker 2.0 marker dataset derived from single-cell sequencing studies
+    in human and mouse
   id: cellmarker.singlecell
   name: Single Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
-  product_url: http://xteam.xbio.top/download/Single_cell_markers.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  product_file_size: 6005874
+  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx
 - category: Product
-  description: All cell markers of different cell types from different tissues in
-    human and mouse
+  description: Combined CellMarker 2.0 marker dataset for human and mouse in spreadsheet
+    format
   id: cellmarker.all
   name: All Cell Markers
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
-  product_url: http://xteam.xbio.top/download/all_cell_markers.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-19: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-21: No Content-Length
-    header found'
+  product_file_size: 10010437
+  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx
 - category: GraphicalInterface
-  description: ACT is a tool that makes cell type annotation easier by integrating
-    the CellMarker resource.
+  description: CellMarker 2.0 annotation tool for assigning cell types using curated
+    marker genes
+  format: http
   id: cellmarker.act
-  name: ACT (Annotation of Cell Types)
+  name: Cell Annotation Tool
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cellmarker
-  product_url: http://xteam.xbio.top/ACT/
+  product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -152,6 +113,25 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
 publications:
 - authors:
+  - Hu C
+  - Li T
+  - Xu Y
+  - Zhang X
+  - Li F
+  - Bai J
+  - Chen J
+  - Jiang W
+  - Yang K
+  - Ou Q
+  - Li X
+  - Zhang Y
+  doi: 10.1093/nar/gkac947
+  id: doi:10.1093/nar/gkac947
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data'
+  year: '2023'
+- authors:
   - Zhang X
   - Lan Y
   - Xu J
@@ -172,7 +152,6 @@ publications:
   doi: 10.1093/nar/gky900
   id: doi:10.1093/nar/gky900
   journal: Nucleic Acids Research
-  preferred: true
   title: CellMarker - a manually curated resource of cell markers in human and mouse
   year: '2018'
 taxon:
@@ -181,15 +160,17 @@ taxon:
 ---
 # CellMarker
 
-CellMarker is a comprehensive and accurate resource of cell markers for various cell types in tissues of human and mouse. It was developed to provide researchers with a curated database of cell markers that can be used to distinguish different cell types in tissues.
+CellMarker is a curated resource of marker genes for cell types across human and mouse tissues. The current CellMarker 2.0 release expands the original database and adds integrated web tools for single-cell analysis workflows.
 
 ## Overview
 
-By manually curating over 100,000 published papers, the database contains:
-- 13,605 cell markers of 467 cell types in 158 human tissues/sub-tissues
-- 9,148 cell makers of 389 cell types in 81 mouse tissues/sub-tissues
+CellMarker 2.0 reports:
+- 26,915 cell markers
+- 2,578 cell types
+- 656 tissues
+- 83,361 tissue-cell type-marker entries
 
-The database provides a user-friendly interface for browsing, searching, and downloading markers of diverse cell types from different tissues. Additionally, a summarized marker prevalence in each cell type is graphically presented through statistical visualizations.
+The database provides browsing, search, download, and analysis interfaces for markers of diverse cell types from different tissues. It also captures sequencing technology, marker type, and related metadata for each curated entry.
 
 ## Features
 
@@ -200,6 +181,6 @@ Users can:
 - Download cell markers of diverse cell types of different tissues
 - Submit data to CellMarker
 
-## ACT Tool
+## CellMarker 2.0 Web Tools
 
-The CellMarker team has also developed ACT (Annotation of Cell Types), a tool that makes cell type annotation easier by integrating the CellMarker resource. ACT was developed based on the structural marker map and the cell type enrichment algorithm, with the aim of efficiently facilitating the process of cell type annotation.
+CellMarker 2.0 includes integrated tools for cell annotation, clustering, malignancy analysis, differentiation, feature inspection, and cell-cell communication analysis based on single-cell datasets and the curated CellMarker resource.

@@ -67,10 +67,12 @@ products:
     source: tcrd
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -92,10 +94,60 @@ products:
     source: tcrd
   product_url: http://juniper.health.unm.edu/tcrd/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
-    to URL'
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-05-21: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
+    to URL'
+- category: GraphProduct
+  description: IDG/TCRD compound-protein nodes used in ProKN
+  format: csv
+  id: prokn.idgp.compound.nodes
+  name: ProKN TCRD Compound-Protein Compound Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 83991029
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv
+- category: GraphProduct
+  description: TCRD compound bioactivity to protein edges
+  format: csv
+  id: prokn.idgp.compound.bioactivity.protein.edges
+  name: ProKN TCRD Compound-Protein Bioactivity Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 128158013
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.BIOACTIVITY.Protein.edges.csv
+- category: GraphProduct
+  description: IDG/TCRD compound-disease nodes used in ProKN
+  format: csv
+  id: prokn.idgd.compound.nodes
+  name: ProKN TCRD Compound-Disease Compound Nodes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 105796
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.nodes.csv
+- category: GraphProduct
+  description: TCRD compound indication edges to disease and phenotype terms
+  format: csv
+  id: prokn.idgd.compound.indication.diseaseorphenotype.edges
+  name: ProKN TCRD Compound-Disease Indication Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  - relation_type: prov:hadPrimarySource
+    source: prokn
+  product_file_size: 1686928
+  product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv
 publications:
 - id: https://doi.org/10.1093/nar/gkaa993
   title: 'Pharos 2021: mining the human proteome for disease biology'

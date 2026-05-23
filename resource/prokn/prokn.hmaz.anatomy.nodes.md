@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: HMAZ anatomy nodes used in ProKN
+description: HuBMAP Azimuth anatomy nodes used in ProKN
 format: csv
 id: prokn.hmaz.anatomy.nodes
-name: ProKN HMAZ Anatomy Nodes
+name: ProKN HuBMAP Azimuth Anatomy Nodes
 original_source:
 - relation_type: prov:hadPrimarySource
-  source: hmaz
+  source: hubmap.azimuth
 - relation_type: prov:hadPrimarySource
   source: prokn
 product_file_size: 12730

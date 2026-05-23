@@ -1,6 +1,6 @@
 ---
 category: GraphicalInterface
-description: Browser for searching and viewing Gene Ontology terms and GOA annotations
+description: Browser for GO annotations and ontology terms via the GOA/QuickGO service.
 format: http
 id: goa.quickgo
 name: QuickGO Browser

@@ -11,10 +11,10 @@ contacts:
   id: ebi
   label: IntAct Team (EMBL-EBI)
 creation_date: '2025-07-08T00:00:00Z'
-description: "IntAct is an open, curated molecular interaction database maintained\
-  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
-  \ literature curation and direct submissions, and distributes data in PSI\u2011\
-  MI XML and MITAB formats along with curated datasets and documentation."
+description: IntAct is an open, curated molecular interaction database maintained
+  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
+  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
+  along with curated datasets and documentation.
 domains:
 - proteomics
 - systems biology
@@ -864,10 +864,12 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -2098,6 +2100,29 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: intact
+- category: GraphicalInterface
+  description: Search interface for the shared IMEx molecular interaction dataset.
+  format: http
+  id: imex.portal
+  name: IMEx Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imex
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  product_url: https://www.imexconsortium.org/
+- category: Product
+  description: IMEx interaction downloads distributed through IntAct in PSI-MI XML
+    and MITAB formats.
+  format: psi_mi_mitab
+  id: imex.downloads
+  name: IMEx Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imex
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  product_url: https://www.ebi.ac.uk/intact/downloads
 publications:
 - authors:
   - Noemi del Toro
@@ -2111,7 +2136,7 @@ publications:
   - Prashansa Ratan
   - Gautam Shirodkar
   - Odilia Lu
-  - "B\xE1lint M\xE9sz\xE1ros"
+  - Bálint Mészáros
   - Xavier Watkins
   - Sangya Pundir
   - Luana Licata
