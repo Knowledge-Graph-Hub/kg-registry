@@ -2,10 +2,10 @@
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 642,
+    "modified_after_creation": 650,
     "stale_over_365_days": 6,
-    "unchanged_since_creation": 151,
-    "with_both_dates": 793
+    "unchanged_since_creation": 139,
+    "with_both_dates": 789
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -50,12 +50,6 @@
       "cebs.api",
       "cebs.data",
       "cebs.web",
-      "cellmarker",
-      "cellmarker.act",
-      "cellmarker.all",
-      "cellmarker.human",
-      "cellmarker.mouse",
-      "cellmarker.singlecell",
       "cellosaurus.api.rest",
       "cellosaurus.api.sparql",
       "cellosaurus.rdf",
@@ -237,15 +231,6 @@
       "hmdb.xml.metabolites.sweat",
       "hmdb.xml.metabolites.urine",
       "hmdb.xml.proteins",
-      "hpa.blood_protein",
-      "hpa.brain_rna",
-      "hpa.normal_tissue",
-      "hpa.pathology",
-      "hpa.rna_celline",
-      "hpa.rna_immune_cell",
-      "hpa.rna_single_cell",
-      "hpa.rna_tissue",
-      "hpa.subcellular_location",
       "hpidb",
       "hpidb.mitab",
       "hpidb.portal",
@@ -967,6 +952,8 @@
       "ido",
       "idomal",
       "ikraph",
+      "imex",
+      "impc",
       "imr",
       "ino",
       "ipr",
@@ -1101,6 +1088,7 @@
       "pheknowlator",
       "phenio",
       "phipo",
+      "pir",
       "plana",
       "planp",
       "plant-reactome",
@@ -1123,6 +1111,7 @@
       "rdbridge",
       "reacto",
       "reactome",
+      "remap",
       "resid",
       "ribocentre",
       "rna-kg",
@@ -1157,6 +1146,7 @@
       "spd",
       "spoke-genelab",
       "spoke-okn",
+      "sra",
       "sri-reference-kg",
       "stato",
       "stellar",
@@ -1501,6 +1491,12 @@
       "cdno",
       "cdno.obo",
       "cdno.owl",
+      "cellmarker",
+      "cellmarker.act",
+      "cellmarker.all",
+      "cellmarker.human",
+      "cellmarker.mouse",
+      "cellmarker.singlecell",
       "cellosaurus",
       "cellosaurus.clastr",
       "cellosaurus.site",
@@ -2292,6 +2288,7 @@
       "go.go-base.owl",
       "go.go-basic.json",
       "go.go-basic.obo",
+      "go.gocams.ttl",
       "go.json",
       "go.obo",
       "go.owl",
@@ -2418,10 +2415,19 @@
       "hpa.api.rdf",
       "hpa.api.tsv",
       "hpa.api.xml",
+      "hpa.blood_protein",
+      "hpa.brain_rna",
+      "hpa.normal_tissue",
+      "hpa.pathology",
       "hpa.portal",
       "hpa.proteinatlas.json",
       "hpa.proteinatlas.tsv",
       "hpa.proteinatlas.xml",
+      "hpa.rna_celline",
+      "hpa.rna_immune_cell",
+      "hpa.rna_single_cell",
+      "hpa.rna_tissue",
+      "hpa.subcellular_location",
       "hra",
       "hra-kg",
       "hra-kg.graph.json",
@@ -2488,12 +2494,17 @@
       "ikraph.graph",
       "ikraph.graphdata",
       "ikraph.site",
+      "imex",
+      "imex.downloads",
+      "imex.portal",
       "imodulondb",
       "imodulondb.browser",
       "imodulondb.datasets",
       "imodulondb.imodulonminer",
       "imodulondb.modulome_workflow",
       "imodulondb.pymodulon",
+      "impc",
+      "impc.portal",
       "indra",
       "indra.api.cogex",
       "indra.cogex.code",
@@ -3634,6 +3645,9 @@
       "phosphositeplus.downloads",
       "phosphositeplus.portal",
       "pid",
+      "pir",
+      "pir.downloads",
+      "pir.portal",
       "pirbase",
       "pirbase.browse",
       "pirbase.cel-sequences",
@@ -3880,6 +3894,10 @@
       "refseq",
       "regl",
       "regl.docs",
+      "remap",
+      "remap.api",
+      "remap.downloads",
+      "remap.portal",
       "repodb",
       "repodb.web_interface",
       "retriever",
@@ -4116,6 +4134,10 @@
       "spoke-okn",
       "spoke-okn.tpf",
       "spoke.neighborhood_explorer",
+      "sra",
+      "sra.docs",
+      "sra.portal",
+      "sra.run_selector",
       "sri-reference-kg.graph",
       "srpdb",
       "srpdb.2d-structures",
@@ -4744,16 +4766,10 @@
       "gtdb",
       "gtrnadb",
       "hald",
-      "hgnchpo",
-      "hmaz",
       "hrpimp",
       "icd10cm",
       "icd11",
-      "idgd",
-      "idgp",
       "iev",
-      "imex",
-      "impc",
       "inchikey",
       "iproclass",
       "iptmnet",
@@ -4796,7 +4812,6 @@
       "pharmebinet",
       "phaseskg",
       "phosphositeplus",
-      "pir",
       "pirbase",
       "plncdb",
       "progenomes",
@@ -4808,7 +4823,6 @@
       "rediportal",
       "redrugs",
       "regl",
-      "remap",
       "repohub",
       "rex",
       "ribovision",
@@ -4820,7 +4834,6 @@
       "snopy",
       "snornadatabase",
       "spdx",
-      "sra",
       "srpdb",
       "startgeo",
       "sty",
@@ -5154,8 +5167,6 @@
       "hao",
       "harmonizome-kg",
       "hetionet",
-      "hgnchpo",
-      "hmaz",
       "hmdb",
       "hom",
       "homologene",
@@ -5182,8 +5193,6 @@
       "ico",
       "iconclass",
       "identifier-mappings",
-      "idgd",
-      "idgp",
       "idisk",
       "ido",
       "idomal",
@@ -5640,12 +5649,6 @@
       "eupathdb",
       "ev",
       "genetics-kp",
-      "hgnchpo",
-      "hmaz",
-      "idgd",
-      "idgp",
-      "imex",
-      "impc",
       "kg-ebi-gene2pheno",
       "kg-jensenlab-diseases",
       "lipro",
@@ -5661,14 +5664,11 @@
       "nlm-ckn",
       "oio",
       "ontology-kp",
-      "pir",
       "rdp",
       "rediportal",
-      "remap",
       "sckan",
       "service-kp",
       "simap",
-      "sra",
       "sri-reference-kg",
       "tahe",
       "tahh",
@@ -5826,6 +5826,7 @@
       "emap",
       "emapa",
       "embiology",
+      "emi",
       "emikg",
       "emind",
       "ena",
@@ -5909,8 +5910,6 @@
       "hancestro",
       "hao",
       "harmonizome-kg",
-      "hgnchpo",
-      "hmaz",
       "hom",
       "hprd",
       "hra-kg",
@@ -5928,8 +5927,6 @@
       "ico",
       "iconclass",
       "identifier-mappings",
-      "idgd",
-      "idgp",
       "ido",
       "idomal",
       "iev",
@@ -6060,6 +6057,7 @@
       "ohdsi",
       "ohmi",
       "ohpi",
+      "oio",
       "okn-void",
       "olatdv",
       "oma",
@@ -6129,6 +6127,7 @@
       "propreo",
       "protcid",
       "proteomehd",
+      "proton",
       "psdo",
       "pso",
       "psygenet",
@@ -6364,8 +6363,6 @@
       "gtrnadb",
       "gtrx",
       "gutmgene",
-      "hgnchpo",
-      "hmaz",
       "hpidb",
       "humannet",
       "hydrologykg",
@@ -6375,9 +6372,6 @@
       "icees-kg",
       "iconclass",
       "identifier-mappings",
-      "idgd",
-      "idgp",
-      "imex",
       "imodulondb",
       "impc",
       "inchikey",
@@ -6465,7 +6459,6 @@
       "phewascat",
       "phosphositeplus",
       "pid",
-      "pir",
       "pirbase",
       "plncdb",
       "preppi",
@@ -6480,11 +6473,9 @@
       "rdkg",
       "rdp",
       "reacto",
-      "reactome",
       "rediportal",
       "refseq",
       "regl",
-      "remap",
       "repohub",
       "retriever",
       "rgd",
@@ -6693,8 +6684,6 @@
       "gutmgene",
       "gwascatalog",
       "habronattus",
-      "hgnchpo",
-      "hmaz",
       "hmdb",
       "homologene",
       "hpidb",
@@ -6706,8 +6695,6 @@
       "icd11",
       "iconclass",
       "identifier-mappings",
-      "idgd",
-      "idgp",
       "iev",
       "imex",
       "impc",
@@ -6980,6 +6967,7 @@
       "cdao",
       "cdiscvocab",
       "cdno",
+      "cellmarker",
       "cellosaurus",
       "ceph",
       "cfde-ddkg",
@@ -7184,6 +7172,7 @@
       "hom",
       "homologene",
       "hp",
+      "hpa",
       "hprd",
       "hra-kg",
       "hsapdv",
@@ -7203,6 +7192,8 @@
       "ido",
       "idomal",
       "iev",
+      "imex",
+      "impc",
       "imr",
       "indra",
       "innatedb",
@@ -7398,6 +7389,7 @@
       "phipo",
       "phosphositeplus",
       "pid",
+      "pir",
       "pirbase",
       "plana",
       "planp",
@@ -7430,6 +7422,7 @@
       "reactome",
       "rediportal",
       "refseq",
+      "remap",
       "repodb",
       "repohub",
       "resid",
@@ -7472,6 +7465,7 @@
       "sldb",
       "slso",
       "smart",
+      "snodb",
       "snomedct",
       "snopy",
       "snornadatabase",
@@ -7484,6 +7478,7 @@
       "spoke",
       "spoke-genelab",
       "spoke-okn",
+      "sra",
       "sri-reference-kg",
       "srpdb",
       "startgeo",
@@ -8532,6 +8527,7 @@
       "go.go-base.owl",
       "go.go-basic.json",
       "go.go-basic.obo",
+      "go.gocams.ttl",
       "go.json",
       "go.obo",
       "go.owl",
@@ -8745,11 +8741,14 @@
       "ikraph.graph",
       "ikraph.graphdata",
       "ikraph.site",
+      "imex.downloads",
+      "imex.portal",
       "imodulondb.browser",
       "imodulondb.datasets",
       "imodulondb.imodulonminer",
       "imodulondb.modulome_workflow",
       "imodulondb.pymodulon",
+      "impc.portal",
       "inchikey.docs",
       "indra.api.cogex",
       "indra.cogex.code",
@@ -9817,6 +9816,8 @@
       "phosphositeplus.about",
       "phosphositeplus.downloads",
       "phosphositeplus.portal",
+      "pir.downloads",
+      "pir.portal",
       "pirbase.browse",
       "pirbase.cel-sequences",
       "pirbase.dme-bed",
@@ -10050,6 +10051,9 @@
       "redrugs.api",
       "redrugs.web",
       "regl.docs",
+      "remap.api",
+      "remap.downloads",
+      "remap.portal",
       "repodb.full_dataset",
       "repodb.web_interface",
       "repohub.about",
@@ -10291,6 +10295,9 @@
       "spoke.graph",
       "spoke.neighborhood_explorer",
       "spoke.sparql",
+      "sra.docs",
+      "sra.portal",
+      "sra.run_selector",
       "sri-reference-kg.graph",
       "srpdb.2d-structures",
       "srpdb.3d-structures",
@@ -10731,7 +10738,6 @@
       "catalogue-of-life.annual-releases",
       "catalogue-of-life.checklistbank",
       "catalogue-of-life.downloads",
-      "cellmarker.act",
       "cellmarker.all",
       "cellmarker.human",
       "cellmarker.mouse",
@@ -11146,15 +11152,6 @@
       "otol.bulk-download",
       "otol.documentation",
       "otol.phylesystem",
-      "pcl-base.json",
-      "pcl-base.obo",
-      "pcl-base.owl",
-      "pcl-full.json",
-      "pcl-full.obo",
-      "pcl-full.owl",
-      "pcl-simple.json",
-      "pcl-simple.obo",
-      "pcl-simple.owl",
       "pr-asserted.obo",
       "pr-asserted.owl",
       "slso-base.owl",
@@ -11519,8 +11516,6 @@
       "harmonizome-kg",
       "hetionet",
       "hgnc",
-      "hgnchpo",
-      "hmaz",
       "hmdb",
       "hom",
       "homologene",
@@ -11548,8 +11543,6 @@
       "ico",
       "iconclass",
       "identifier-mappings",
-      "idgd",
-      "idgp",
       "idisk",
       "ido",
       "idomal",
@@ -12026,7 +12019,6 @@
       "cacao",
       "cam-kp",
       "cebs",
-      "cellmarker",
       "cellosaurus",
       "cfde-gse",
       "cgnc",
@@ -12124,7 +12116,6 @@
       "hgnc",
       "hmdb",
       "hp",
-      "hpa",
       "hpidb",
       "hprd",
       "hrpimp",
@@ -12354,10 +12345,6 @@
       "aop-db.manual",
       "bila.owl",
       "bio2rdf.biosearch",
-      "cellmarker.all",
-      "cellmarker.human",
-      "cellmarker.mouse",
-      "cellmarker.singlecell",
       "cellosaurus.rdf",
       "cellosaurus.xrefs",
       "cfde-gse.genesets",
@@ -12446,15 +12433,6 @@
       "hmdb.fasta.enzymes",
       "hmdb.fasta.genes",
       "hmdb.structures.sdf",
-      "hpa.blood_protein",
-      "hpa.brain_rna",
-      "hpa.normal_tissue",
-      "hpa.pathology",
-      "hpa.rna_celline",
-      "hpa.rna_immune_cell",
-      "hpa.rna_single_cell",
-      "hpa.rna_tissue",
-      "hpa.subcellular_location",
       "hpidb.mitab",
       "hprd.ppi.data",
       "hprd.tsv.download",
@@ -12599,17 +12577,7 @@
       "pharmacodb",
       "tcrd"
     ],
-    "stub_resource_ids": [
-      "hgnchpo",
-      "hmaz",
-      "idgd",
-      "idgp",
-      "imex",
-      "impc",
-      "pir",
-      "remap",
-      "sra"
-    ],
+    "stub_resource_ids": [],
     "unchanged_since_creation_resource_ids": [
       "aact",
       "afcs",
@@ -12620,7 +12588,6 @@
       "brenda",
       "cancer-registry-kg",
       "cebs",
-      "cellmarker",
       "cfde-gse",
       "chea",
       "ckg",
@@ -12660,9 +12627,6 @@
       "gtrx",
       "hald",
       "harmonizome-kg",
-      "hgnchpo",
-      "hmaz",
-      "hpa",
       "hpidb",
       "hra",
       "hrpimp",
@@ -12670,12 +12634,8 @@
       "humannet",
       "huri",
       "icees-kg",
-      "idgd",
-      "idgp",
       "ikraph",
-      "imex",
       "imodulondb",
-      "impc",
       "inchikey",
       "iptmnet",
       "irefindex",
@@ -12720,7 +12680,6 @@
       "pharmebinet",
       "pharos",
       "phewascat",
-      "pir",
       "pistoia-pgo",
       "plant-reactome",
       "preppi",
@@ -12732,7 +12691,6 @@
       "rdkg",
       "redrugs",
       "regl",
-      "remap",
       "reprotox-kg",
       "rfam",
       "rgd",
@@ -12741,9 +12699,7 @@
       "sennet",
       "simap",
       "smpdb",
-      "snodb",
       "snpeff",
-      "sra",
       "tair",
       "tbkg",
       "tcga",
@@ -12765,56 +12721,56 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-05-21T20:42:49Z",
+  "generated_at": "2026-05-23T16:24:55Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 144,
     "with_evaluation_page": 120,
     "without_evaluation_page": 24
   },
   "links": {
-    "broken_urls": 441,
-    "cache_hits": 3505,
+    "broken_urls": 426,
+    "cache_hits": 3489,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 3064,
-    "live_checked_urls": 0,
+    "healthy_urls": 3089,
+    "live_checked_urls": 26,
     "mode": "live",
-    "total_unique_urls": 3505,
+    "total_unique_urls": 3515,
     "unchecked_urls": 0
   },
   "products": {
-    "missing_format": 826,
-    "missing_original_source": 22,
+    "missing_format": 825,
+    "missing_original_source": 13,
     "missing_product_url": 107,
-    "retrieval_warning_mentions": 426,
-    "total": 5271
+    "retrieval_warning_mentions": 579,
+    "total": 5285
   },
-  "resource_count": 793,
+  "resource_count": 789,
   "resources": {
     "contacts_with_org_connection": 226,
-    "contacts_without_org_connection": 414,
-    "missing_contacts": 153,
+    "contacts_without_org_connection": 419,
+    "missing_contacts": 144,
     "missing_description": 0,
-    "missing_fairsharing_id": 785,
-    "missing_homepage_url": 47,
-    "missing_infores_id": 575,
-    "missing_license": 286,
-    "missing_repository": 366,
+    "missing_fairsharing_id": 781,
+    "missing_homepage_url": 38,
+    "missing_infores_id": 574,
+    "missing_license": 278,
+    "missing_repository": 362,
     "status_counts": {
-      "active": 671,
+      "active": 667,
       "inactive": 103,
       "orphaned": 7,
       "unknown": 7,
       "unresponsive": 5
     },
-    "stub_count": 9,
-    "total": 793,
-    "with_broken_links": 312,
+    "stub_count": 0,
+    "total": 789,
+    "with_broken_links": 310,
     "without_products": 36
   },
   "scoring": {
-    "average_score": 9.45,
+    "average_score": 9.21,
     "median_score": 8.0,
-    "resources_with_issues": 792,
+    "resources_with_issues": 788,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -12840,111 +12796,6 @@
     }
   },
   "top_resources": [
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-base.json"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-base.obo"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-base.owl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-full.json"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-full.obo"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-full.owl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-simple.json"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-simple.obo"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-simple.owl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl.json"
-        }
-      ],
-      "id": "pcl",
-      "issues": [
-        {
-          "count": 10,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 30
-        },
-        {
-          "count": 9,
-          "issue_key": "product_missing_original_source",
-          "label": "Products missing original_source",
-          "points": 18
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Provisional Cell Ontology",
-      "resource_page": "resource/pcl/pcl.html",
-      "score": 52
-    },
     {
       "activity_status": "active",
       "broken_links": [
@@ -13402,15 +13253,15 @@
         },
         {
           "sources": [
-            "cache"
+            "live"
           ],
-          "url": "https://github.com/zdobnov-lab/orthodb"
+          "url": "https://data.orthodb.org/v12/"
         },
         {
           "sources": [
             "cache"
           ],
-          "url": "https://www.orthodb.org/api/"
+          "url": "https://github.com/zdobnov-lab/orthodb"
         }
       ],
       "id": "orthodb",
@@ -13437,6 +13288,105 @@
       "name": "OrthoDB",
       "resource_page": "resource/orthodb/orthodb.html",
       "score": 36
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-base.json"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-base.obo"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-base.owl"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-full.json"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-full.obo"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-full.owl"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-simple.json"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-simple.obo"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl-simple.owl"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://purl.obolibrary.org/obo/pcl.json"
+        }
+      ],
+      "id": "pcl",
+      "issues": [
+        {
+          "count": 10,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 30
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Provisional Cell Ontology",
+      "resource_page": "resource/pcl/pcl.html",
+      "score": 34
     },
     {
       "activity_status": "active",
@@ -13489,12 +13439,6 @@
         },
         {
           "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
           "issue_key": "contacts_not_connected_to_org",
           "label": "Contacts not linked to Organization entry",
           "points": 1
@@ -13502,105 +13446,90 @@
       ],
       "name": "Reactome",
       "resource_page": "resource/reactome/reactome.html",
-      "score": 36
+      "score": 34
     },
     {
       "activity_status": "active",
       "broken_links": [
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/blood_protein.tsv.zip"
+          "url": "https://aopwiki.org/"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/brain_rna.tsv.zip"
+          "url": "https://aopwiki.org/aops"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/normal_tissue.tsv.zip"
+          "url": "https://aopwiki.org/downloads"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/pathology.tsv.zip"
+          "url": "https://aopwiki.org/downloads/aop-wiki-xml.gz"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/rna_celline.tsv.zip"
+          "url": "https://aopwiki.org/downloads/aop_ke_ec.tsv"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip"
+          "url": "https://aopwiki.org/downloads/aop_ke_ker.tsv"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/rna_single_cell.tsv.zip"
+          "url": "https://aopwiki.org/downloads/aop_ke_mie_ao.tsv"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "https://www.proteinatlas.org/download/rna_tissue.tsv.zip"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://www.proteinatlas.org/download/subcellular_location.tsv.zip"
+          "url": "https://aopwiki.org/handbooks/4"
         }
       ],
-      "id": "hpa",
+      "id": "aop-wiki",
       "issues": [
         {
-          "count": 9,
+          "count": 8,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 27
+          "points": 24
         },
         {
           "count": 1,
-          "issue_key": "unchanged_since_creation",
-          "label": "Not modified since creation",
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
           "points": 2
         },
         {
-          "count": 2,
+          "count": 1,
           "issue_key": "product_missing_format",
           "label": "Products missing format",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 2
+          "points": 1
         }
       ],
-      "name": "Human Protein Atlas",
-      "resource_page": "resource/hpa/hpa.html",
-      "score": 33
+      "name": "AOP-Wiki",
+      "resource_page": "resource/aop-wiki/aop-wiki.html",
+      "score": 30
     },
     {
       "activity_status": "active",
@@ -13684,17 +13613,11 @@
           "issue_key": "missing_repository",
           "label": "Missing repository",
           "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "unchanged_since_creation",
-          "label": "Not modified since creation",
-          "points": 2
         }
       ],
       "name": "snoDB",
       "resource_page": "resource/snodb/snodb.html",
-      "score": 32
+      "score": 30
     },
     {
       "activity_status": "active",
@@ -13703,56 +13626,66 @@
           "sources": [
             "cache"
           ],
-          "url": "http://xteam.xbio.top/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://xteam.xbio.top/ACT/"
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9"
         },
         {
           "sources": [
             "warning",
             "cache"
           ],
-          "url": "http://xteam.xbio.top/download/all_cell_markers.txt"
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9/downloads"
         },
         {
           "sources": [
             "warning",
             "cache"
           ],
-          "url": "http://xteam.xbio.top/download/Human_cell_markers.txt"
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9/help"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt"
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9/interactions"
         },
         {
           "sources": [
-            "warning",
             "cache"
           ],
-          "url": "http://xteam.xbio.top/download/Single_cell_markers.txt"
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9/statistics"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9/textmining"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://dianalab.e-ce.uth.gr/tarbasev9/visualizations"
         }
       ],
-      "id": "cellmarker",
+      "id": "tarbase",
       "issues": [
         {
-          "count": 6,
+          "count": 7,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 18
+          "points": 21
         },
         {
-          "count": 6,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 6
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
         },
         {
           "count": 1,
@@ -13765,23 +13698,11 @@
           "issue_key": "missing_repository",
           "label": "Missing repository",
           "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "unchanged_since_creation",
-          "label": "Not modified since creation",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
         }
       ],
-      "name": "CellMarker",
-      "resource_page": "resource/cellmarker/cellmarker.html",
-      "score": 31
+      "name": "TarBase",
+      "resource_page": "resource/tarbase/tarbase.html",
+      "score": 30
     }
   ]
 }

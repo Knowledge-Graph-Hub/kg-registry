@@ -50,6 +50,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
+    when accessing file'
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
   title: 'FoodOn: a harmonized food ontology to increase global food traceability,

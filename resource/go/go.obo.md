@@ -4,10 +4,9 @@ description: Equivalent to go.owl, in obo format
 format: obo
 id: go.obo
 name: GO (OBO Format edition)
-product_file_size: 36555702
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: go
 product_url: http://purl.obolibrary.org/obo/go.obo
 layout: product_detail
-original_source:
-  - source: go
-    relation_type: prov:hadPrimarySource
 ---

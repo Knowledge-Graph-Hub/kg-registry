@@ -1621,10 +1621,11 @@ kgr:cebs a schema1:DataSource ;
 kgr:cellmarker a schema1:DataSource ;
     rdfs:label "CellMarker" ;
     dcterms:created "2025-07-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "CellMarker is a comprehensive and accurate resource of cell markers for various cell types in tissues of human and mouse. By manually curating over 100,000 published papers, the database contains 13,605 cell markers of 467 cell types in 158 human tissues/sub-tissues and 9,148 cell makers of 389 cell types in 81 mouse tissues/sub-tissues." ;
+    dcterms:description "CellMarker is a comprehensive and accurate resource of cell markers for various cell types in tissues of human and mouse. CellMarker 2.0 provides a manually curated collection of 26,915 markers across 2,578 cell types and 656 tissues, resulting in 83,361 tissue-cell type-marker entries, and includes integrated web tools for single-cell data analysis." ;
     dcterms:identifier "cellmarker" ;
-    dcterms:isReferencedBy <doi:10.1093/nar/gky900> ;
-    dcterms:modified "2025-07-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkac947>,
+        <doi:10.1093/nar/gky900> ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:cellmarker.act,
@@ -1640,7 +1641,7 @@ kgr:cellmarker a schema1:DataSource ;
         "genomics",
         "organisms" ;
     adms:status "Active" ;
-    foaf:homepage <http://xteam.xbio.top/> .
+    foaf:homepage <https://bio-bigdata.hrbmu.edu.cn/CellMarker/> .
 
 kgr:cellosaurus a schema1:DataSource ;
     rdfs:label "Cellosaurus" ;
@@ -4388,7 +4389,6 @@ kgr:emi a schema1:Ontology ;
         kgr:emikg.kg,
         kgr:emikg.sparql,
         kgr:emikg.web ;
-    schema1:identifier "emi" ;
     schema1:name "Earth Metabolome Initiative Ontology" ;
     doap:repository <https://github.com/earth-metabolome-initiative/earth_metabolome_ontology> ;
     skos:inScheme "biological systems",
@@ -6200,7 +6200,7 @@ kgr:go a schema1:Ontology ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/10802651>,
         <https://www.ncbi.nlm.nih.gov/pubmed/33290552> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
@@ -6222,6 +6222,7 @@ kgr:go a schema1:Ontology ;
         kgr:go.go-base.owl,
         kgr:go.go-basic.json,
         kgr:go.go-basic.obo,
+        kgr:go.gocams.ttl,
         kgr:go.json,
         kgr:go.obo,
         kgr:go.owl,
@@ -6620,7 +6621,7 @@ kgr:gwascatalog a schema1:DataSource ;
     dcterms:description "The NHGRI-EBI GWAS Catalog is a curated, searchable, and freely available database of SNP-trait associations from published and submitted genome-wide association studies. Expert curators extract reported traits, significant variant-trait associations, and study metadata, providing an integrated resource updated on a weekly cycle and accessible via web interfaces, bulk downloads, summary statistics, and a REST API." ;
     dcterms:identifier "gwascatalog" ;
     dcterms:license <https://www.ebi.ac.uk/about/terms-of-use> ;
-    dcterms:modified "2025-09-02T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:alzkb.browser,
         kgr:alzkb.data,
         kgr:aop-db.data,
@@ -6833,31 +6834,6 @@ kgr:hgnc a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.genenames.org/> .
 
-kgr:hgnchpo a schema1:DataSource ;
-    rdfs:label "Hgnchpo" ;
-    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for hgnchpo. This page was automatically generated because it was referenced by other resources." ;
-    dcterms:identifier "hgnchpo" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges ;
-    schema1:name "Hgnchpo" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
-
-kgr:hmaz a schema1:DataSource ;
-    rdfs:label "Hmaz" ;
-    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for hmaz. This page was automatically generated because it was referenced by other resources." ;
-    dcterms:identifier "hmaz" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges,
-        kgr:prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges,
-        kgr:prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges,
-        kgr:prokn.hmaz.anatomy.nodes ;
-    schema1:name "Hmaz" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
-
 kgr:hmdb a schema1:Aggregator ;
     rdfs:label "Human Metabolome Database" ;
     dcterms:created "2025-08-12T00:00:00+00:00"^^xsd:dateTime ;
@@ -7005,6 +6981,7 @@ kgr:hp a schema1:Ontology ;
         kgr:medgen.hpo-omim-mapping,
         kgr:mondo.sssom,
         kgr:pheknowlator.graph,
+        kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges,
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
         kgr:rna-kg.kg.nodes,
@@ -7029,12 +7006,12 @@ kgr:hp a schema1:Ontology ;
 kgr:hpa a schema1:Aggregator ;
     rdfs:label "Human Protein Atlas" ;
     dcterms:created "2025-10-09T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Human Protein Atlas (HPA) is a Swedish-based program aiming to map all human proteins in cells, tissues and organs using an integration of various omics technologies, including antibody-based imaging, mass spectrometry-based proteomics, transcriptomics and systems biology. The HPA aggregates and presents data from eight different resources covering tissue, brain, single cell, subcellular, cancer, blood, cell line, and structure & interaction atlases." ;
+    dcterms:description "The Human Protein Atlas (HPA) is a Swedish-based program aiming to map all human proteins in cells, tissues and organs using an integration of various omics technologies, including antibody-based imaging, mass spectrometry-based proteomics, transcriptomics and systems biology. The HPA aggregates and presents data from nine different resources covering tissue, brain, single cell, subcellular, cancer, blood, cell line, structure, and interaction atlases." ;
     dcterms:identifier "hpa" ;
     dcterms:isReferencedBy <doi:10.1126/science.1260419>,
         <doi:10.1126/science.aal3321> ;
-    dcterms:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
-    dcterms:modified "2025-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
@@ -7274,6 +7251,10 @@ kgr:hubmap a schema1:Aggregator ;
         kgr:hubmap.human_reference_atlas,
         kgr:hubmap.vitessce,
         kgr:hubmap.workspaces,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges,
+        kgr:prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges,
+        kgr:prokn.hmaz.anatomy.nodes,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "HuBMAP" ;
@@ -7528,30 +7509,6 @@ kgr:identifier-mappings a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://www.wikidata.org/> .
 
-kgr:idgd a schema1:DataSource ;
-    rdfs:label "Idgd" ;
-    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for idgd. This page was automatically generated because it was referenced by other resources." ;
-    dcterms:identifier "idgd" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges,
-        kgr:prokn.idgd.compound.nodes ;
-    schema1:name "Idgd" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
-
-kgr:idgp a schema1:DataSource ;
-    rdfs:label "Idgp" ;
-    dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for idgp. This page was automatically generated because it was referenced by other resources." ;
-    dcterms:identifier "idgp" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.idgp.compound.bioactivity.protein.edges,
-        kgr:prokn.idgp.compound.nodes ;
-    schema1:name "Idgp" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
-
 kgr:idisk a schema1:KnowledgeGraph ;
     rdfs:label "integrated Dietary Supplement Knowledge Base" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
@@ -7639,18 +7596,25 @@ kgr:ikraph a schema1:KnowledgeGraph ;
     adms:status "Active" ;
     foaf:homepage <https://biokde.insilicom.com/> .
 
-kgr:imex a schema1:DataSource ;
-    rdfs:label "Imex" ;
+kgr:imex a schema1:Aggregator ;
+    rdfs:label "IMEx Consortium" ;
     dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for imex. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "IMEx Consortium is an international collaboration of public molecular interaction databases that shares deep-curation effort to produce a non-redundant, freely accessible set of experimentally supported molecular interaction records in PSI-MI standard formats." ;
     dcterms:identifier "imex" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.imex.complex.nodes,
+    dcterms:isReferencedBy <https://doi.org/10.1038/s41467-020-19942-z> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:imex.downloads,
+        kgr:imex.portal,
+        kgr:prokn.imex.complex.nodes,
         kgr:prokn.imex.protein.interacts_with.protein.edges,
         kgr:prokn.imex.protein.participates_in.complex.edges ;
-    schema1:name "Imex" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "IMEx Consortium" ;
+    skos:inScheme "biological systems",
+        "proteomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.imexconsortium.org/> .
 
 kgr:imodulondb a schema1:DataSource ;
     rdfs:label "iModulonDB" ;
@@ -7674,12 +7638,15 @@ kgr:imodulondb a schema1:DataSource ;
     foaf:homepage <https://imodulondb.org/> .
 
 kgr:impc a schema1:DataSource ;
-    rdfs:label "Impc" ;
+    rdfs:label "International Mouse Phenotyping Consortium" ;
     dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for impc. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The International Mouse Phenotyping Consortium (IMPC) is a global functional genomics program that generates and phenotypes knockout mouse lines at scale to identify the functions of protein-coding genes and connect mouse phenotypes to human biology and disease." ;
     dcterms:identifier "impc" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.impc.impcallele.impc_ensembl_id.impcmousegene.edges,
+    dcterms:modified "2026-05-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:impc.portal,
+        kgr:prokn.impc.impcallele.impc_ensembl_id.impcmousegene.edges,
         kgr:prokn.impc.impchumangene.interacts_with.impchumangene.edges,
         kgr:prokn.impc.impchumangene.interacts_with.impcmousegene.edges,
         kgr:prokn.impc.impchumangene.orthologous_to.impcmousegene.edges,
@@ -7691,9 +7658,13 @@ kgr:impc a schema1:DataSource ;
         kgr:prokn.impc.imppublication.impc_alleles.impcallele.edges,
         kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
         kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges ;
-    schema1:name "Impc" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "International Mouse Phenotyping Consortium" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "health",
+        "phenotype" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.mousephenotype.org/> .
 
 kgr:imr a schema1:Ontology ;
     rdfs:label "Molecule role (INOH Protein name/family name ontology)" ;
@@ -7814,6 +7785,8 @@ kgr:intact a schema1:Aggregator ;
         kgr:clinicalkg.graph,
         kgr:epigraphdb.graph,
         kgr:genecards.protein.interactions,
+        kgr:imex.downloads,
+        kgr:imex.portal,
         kgr:intact.api,
         kgr:intact.datasets,
         kgr:intact.docs.user-guide,
@@ -8186,7 +8159,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-05-19T19:13:55+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-21T20:28:51+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:kg-monarch.associations.all,
@@ -11170,7 +11143,6 @@ kgr:oio a schema1:Ontology ;
         kgr:efo.owl,
         kgr:oio.obo,
         kgr:oio.owl ;
-    schema1:identifier "oio" ;
     schema1:name "OBO Interoperability Ontology" ;
     skos:altLabel "OIO",
         "oio" ;
@@ -11236,8 +11208,10 @@ kgr:oma a schema1:DataSource ;
     dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OMA (Orthologous MAtrix) is a database of orthologous genes among multiple species, providing a systematic classification of orthologs across complete genomes." ;
     dcterms:identifier "oma" ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkaa1007>,
+        <https://doi.org/10.1093/nar/gkad1020> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:oma.api.rest,
         kgr:oma.api.sparql,
         kgr:oma.cdna.eukaryotes.fasta,
@@ -11811,10 +11785,11 @@ kgr:orthodb a schema1:DataSource ;
     dcterms:created "2025-05-07T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OrthoDB is a comprehensive database of orthologous protein-coding genes across multiple species, providing evolutionary and functional annotations of orthologous groups." ;
     dcterms:identifier "orthodb" ;
-    dcterms:isReferencedBy <doi:10.1093/nar/gkw1119>,
+    dcterms:isReferencedBy <doi:10.1093/nar/gkae987>,
+        <doi:10.1093/nar/gkw1119>,
         <doi:10.1093/nar/gky1053> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2025-12-07T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:orthodb.aa_fasta,
         kgr:orthodb.api.rest,
         kgr:orthodb.api.sparql,
@@ -12134,8 +12109,12 @@ kgr:pcl a schema1:Ontology ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties." ;
     dcterms:identifier "pcl" ;
+    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/29322913/>,
+        <https://pubmed.ncbi.nlm.nih.gov/31435019/>,
+        <https://pubmed.ncbi.nlm.nih.gov/34616062/>,
+        <https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1> ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:pcl-base.json,
         kgr:pcl-base.obo,
         kgr:pcl-base.owl,
@@ -12802,19 +12781,27 @@ kgr:pid a schema1:DataSource ;
     foaf:homepage <http://pid.nci.nih.gov/> .
 
 kgr:pir a schema1:DataSource ;
-    rdfs:label "Pir" ;
+    rdfs:label "Protein Information Resource" ;
     dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for pir. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "Protein Information Resource (PIR) is an integrated public bioinformatics resource that supports genomic, proteomic, and systems biology research through protein databases, annotation resources, search tools, and downloadable reference datasets." ;
     dcterms:identifier "pir" ;
-    dcterms:modified "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:prokn.pir.compound.skos_exact_match.compound.edges,
+    dcterms:license <https://proteininformationresource.org/pirwww/about/linkpir.shtml> ;
+    dcterms:modified "2026-05-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:pir.downloads,
+        kgr:pir.portal,
+        kgr:prokn.pir.compound.skos_exact_match.compound.edges,
         kgr:prokn.pir.gene.skos_exact_match.impc_gene.edges,
         kgr:prokn.pir.gene.skos_exact_match.impchumangene.edges,
         kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
         kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges ;
-    schema1:name "Pir" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    schema1:name "Protein Information Resource" ;
+    skos:altLabel "PIR",
+        "Protein Information Resource" ;
+    skos:inScheme "genomics",
+        "proteomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://proteininformationresource.org/> .
 
 kgr:pirbase a schema1:Aggregator ;
     rdfs:label "piRBase" ;
@@ -13425,7 +13412,6 @@ kgr:proton a schema1:Ontology ;
         kgr:proton.documentation,
         kgr:proton.ontology,
         kgr:proton.top ;
-    schema1:identifier "proton" ;
     schema1:name "PROTON (PROTo ONtology)" ;
     doap:repository <https://github.com/Ontotext-AD/proton> ;
     skos:altLabel "PROTON 3.0",
@@ -13760,7 +13746,9 @@ kgr:reactome a schema1:DataSource ;
     dcterms:created "2025-03-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Reactome is a comprehensive, curated, and peer-reviewed pathway database representing human biological processes. It integrates information on biological molecules including proteins, small molecules, and RNA, organizing them into networks of functional interactions organized as pathways. With sophisticated graph database backend and multiple data access formats, Reactome is an essential resource for systems biology, functional genomics, drug discovery, and biomedical research, providing insights into gene function in the context of cellular and organismal processes." ;
     dcterms:identifier "reactome" ;
-    dcterms:modified "2025-12-20T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkab1028> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:10090>,
         <NCBITaxon:9606> ;
     schema1:hasPart kgr:alzkb.browser,
@@ -13905,17 +13893,29 @@ kgr:refseq a schema1:DataSource ;
     foaf:maker kgr:ncbi .
 
 kgr:remap a schema1:DataSource ;
-    rdfs:label "Remap" ;
+    rdfs:label "ReMap" ;
     dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for remap. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "ReMap is a curated regulatory genomics resource that integrates public DNA-binding sequencing experiments to produce high-quality catalogs of transcriptional regulator binding regions across human, mouse, Drosophila, and Arabidopsis." ;
     dcterms:identifier "remap" ;
-    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkab996> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:modified "2026-05-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:3702>,
+        <NCBITaxon:7227>,
+        <NCBITaxon:9606> ;
     schema1:hasPart kgr:chea-kg.graph,
         kgr:chea-kg.libraries,
-        kgr:chea.libraries ;
-    schema1:name "Remap" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:chea.libraries,
+        kgr:remap.api,
+        kgr:remap.downloads,
+        kgr:remap.portal ;
+    schema1:name "ReMap" ;
+    skos:inScheme "biological systems",
+        "genomics",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://remap.univ-amu.fr/> .
 
 kgr:repodb a schema1:DataSource ;
     rdfs:label "RepoDB" ;
@@ -13942,10 +13942,10 @@ kgr:repodb a schema1:DataSource ;
 kgr:repohub a schema1:DataSource ;
     rdfs:label "Drug Repurposing Hub" ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Drug Repurposing Hub is a curated and annotated collection of FDA-approved drugs, clinical trial drugs, and pre-clinical tool compounds from the Broad Institute. The collection contains over 7,500 unique compounds targeting over 2,400 protein targets, with annotations for 826 drug indications and extensive metadata including structures, mechanisms, and therapeutic areas." ;
+    dcterms:description "The Drug Repurposing Hub is a curated and annotated collection of FDA-approved drugs, clinical trial drugs, and selected pre-clinical tool compounds from the Broad Institute. The collection contains 7,423 unique compounds targeting 2,255 protein targets, with annotations for 775 drug indications and extensive metadata including structures, mechanisms, and therapeutic areas." ;
     dcterms:identifier "repohub" ;
     dcterms:isReferencedBy <https://doi.org/10.1038/nm.4306> ;
-    dcterms:modified "2025-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
         kgr:repohub.about,
@@ -14941,7 +14941,7 @@ kgr:snodb a schema1:DataSource ;
     dcterms:description "snoDB is a specialized database of human small nucleolar RNAs (snoRNAs), integrating data from established databases with manually curated literature. It provides comprehensive information on snoRNA genomic locations, sequences, conservation, host genes, snoRNA-RNA interactions, snoRNA-protein interactions, and abundance data across tissues and cancer cells." ;
     dcterms:identifier "snodb" ;
     dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/36165892/> ;
-    dcterms:modified "2025-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:rnacentral.api,
         kgr:rnacentral.ftp,
@@ -15238,19 +15238,27 @@ kgr:spoke-okn a schema1:KnowledgeGraph ;
     foaf:homepage <https://spoke.ucsf.edu> .
 
 kgr:sra a schema1:DataSource ;
-    rdfs:label "Sra" ;
+    rdfs:label "Sequence Read Archive" ;
     dcterms:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for sra. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "The Sequence Read Archive (SRA) is NCBI's public archive of high-throughput sequencing data and part of the International Nucleotide Sequence Database Collaboration, providing searchable access to raw sequence runs, metadata, cloud delivery, and download tooling." ;
     dcterms:identifier "sra" ;
-    dcterms:modified "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-05-22T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:archs4.human.gene_counts,
         kgr:archs4.human.transcript_counts,
         kgr:archs4.mouse.gene_counts,
         kgr:archs4.mouse.transcript_counts,
-        kgr:archs4.zoo ;
-    schema1:name "Sra" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+        kgr:archs4.zoo,
+        kgr:sra.docs,
+        kgr:sra.portal,
+        kgr:sra.run_selector ;
+    schema1:name "Sequence Read Archive" ;
+    skos:altLabel "SRA",
+        "Sequence Read Archive" ;
+    skos:inScheme "biomedical",
+        "genomics",
+        "organisms" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.ncbi.nlm.nih.gov/sra> .
 
 kgr:sri-reference-kg a schema1:KnowledgeGraph ;
     rdfs:label "SRI-Reference KG" ;
@@ -15781,7 +15789,11 @@ kgr:tcrd a schema1:DataSource ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     dcterms:modified "2025-01-10T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:tcrd.api,
+    schema1:hasPart kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges,
+        kgr:prokn.idgd.compound.nodes,
+        kgr:prokn.idgp.compound.bioactivity.protein.edges,
+        kgr:prokn.idgp.compound.nodes,
+        kgr:tcrd.api,
         kgr:tcrd.database_download,
         kgr:tcrd.documentation ;
     schema1:identifier "tcrd" ;
@@ -18273,29 +18285,29 @@ kgr:cebs.web a schema1:GraphicalInterface ;
     schema1:url <https://manticore.niehs.nih.gov/cebssearch/> .
 
 kgr:cellmarker.act a schema1:GraphicalInterface ;
-    rdfs:label "ACT (Annotation of Cell Types)" ;
-    dcterms:description "ACT is a tool that makes cell type annotation easier by integrating the CellMarker resource." ;
-    schema1:url <http://xteam.xbio.top/ACT/> .
+    rdfs:label "Cell Annotation Tool" ;
+    dcterms:description "CellMarker 2.0 annotation tool for assigning cell types using curated marker genes" ;
+    schema1:url <https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp> .
 
 kgr:cellmarker.all a schema1:Product ;
     rdfs:label "All Cell Markers" ;
-    dcterms:description "All cell markers of different cell types from different tissues in human and mouse" ;
-    schema1:url <http://xteam.xbio.top/download/all_cell_markers.txt> .
+    dcterms:description "Combined CellMarker 2.0 marker dataset for human and mouse in spreadsheet format" ;
+    schema1:url <https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx> .
 
 kgr:cellmarker.human a schema1:Product ;
     rdfs:label "Human Cell Markers" ;
-    dcterms:description "Cell markers of different cell types from different tissues in human" ;
-    schema1:url <http://xteam.xbio.top/download/Human_cell_markers.txt> .
+    dcterms:description "Human CellMarker 2.0 marker dataset in spreadsheet format" ;
+    schema1:url <https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx> .
 
 kgr:cellmarker.mouse a schema1:Product ;
     rdfs:label "Mouse Cell Markers" ;
-    dcterms:description "Cell markers of different cell types from different tissues in mouse" ;
-    schema1:url <http://xteam.xbio.top/download/Mouse_cell_markers.txt> .
+    dcterms:description "Mouse CellMarker 2.0 marker dataset in spreadsheet format" ;
+    schema1:url <https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx> .
 
 kgr:cellmarker.singlecell a schema1:Product ;
     rdfs:label "Single Cell Markers" ;
-    dcterms:description "Cell markers derived from single-cell sequencing researches in human and mouse" ;
-    schema1:url <http://xteam.xbio.top/download/Single_cell_markers.txt> .
+    dcterms:description "CellMarker 2.0 marker dataset derived from single-cell sequencing studies in human and mouse" ;
+    schema1:url <https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx> .
 
 kgr:cellosaurus.api.rest a schema1:ProgrammingInterface ;
     rdfs:label "Cellosaurus API" ;
@@ -21629,12 +21641,12 @@ kgr:go-cam.noctua a schema1:GraphicalInterface ;
 
 kgr:go.amigo a schema1:GraphicalInterface ;
     rdfs:label "AmiGO 2" ;
-    dcterms:description "Gene Ontology web browser and search interface" ;
+    dcterms:description "Official GO browser for ontology terms, gene products, and annotations." ;
     schema1:url <https://amigo.geneontology.org/amigo> .
 
 kgr:go.api a schema1:ProgrammingInterface ;
     rdfs:label "Gene Ontology API" ;
-    dcterms:description "Gene Ontology API for programmatic access" ;
+    dcterms:description "Official Gene Ontology API for term, annotation, and related programmatic access." ;
     schema1:url <https://api.geneontology.org/> .
 
 kgr:go.extensions.go-plus.json a schema1:OntologyProduct ;
@@ -21666,6 +21678,11 @@ kgr:go.go-basic.obo a schema1:OntologyProduct ;
     rdfs:label "GO-Basic, Filtered, for use with legacy tools" ;
     dcterms:description "Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies." ;
     schema1:url <http://purl.obolibrary.org/obo/go/go-basic.obo> .
+
+kgr:go.gocams.ttl a schema1:GraphProduct ;
+    rdfs:label "GO-CAM TTL Archive" ;
+    dcterms:description "Pathway-like GO-CAM causal activity models distributed as RDF Turtle." ;
+    schema1:url <http://current.geneontology.org/products/ttl/pathway-like_go-cams.tar.gz> .
 
 kgr:go.json a schema1:OntologyProduct ;
     rdfs:label "GO (JSON edition)" ;
@@ -22328,23 +22345,23 @@ kgr:hpa.api.xml a schema1:ProgrammingInterface ;
 
 kgr:hpa.blood_protein a schema1:Product ;
     rdfs:label "HPA Blood Protein Data" ;
-    dcterms:description "Blood protein expression data from healthy individuals and disease states" ;
-    schema1:url <https://www.proteinatlas.org/download/blood_protein.tsv.zip> .
+    dcterms:description "Blood atlas protein concentration data measured in blood by immunoassay and mass spectrometry" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/blood/data#blood_conc> .
 
 kgr:hpa.brain_rna a schema1:Product ;
     rdfs:label "HPA Brain RNA Expression Data" ;
-    dcterms:description "Brain-specific expression data including regional and cellular distribution" ;
-    schema1:url <https://www.proteinatlas.org/download/brain_rna.tsv.zip> .
+    dcterms:description "Brain atlas transcript expression data summarized across brain regions and subregions, including HPA brain region datasets and related transcript profiles" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/brain/data> .
 
 kgr:hpa.normal_tissue a schema1:Product ;
     rdfs:label "HPA Normal Tissue Data" ;
-    dcterms:description "Normal tissue expression data based on immunohistochemistry using tissue microarrays" ;
-    schema1:url <https://www.proteinatlas.org/download/normal_tissue.tsv.zip> .
+    dcterms:description "Tissue atlas immunohistochemistry expression profiles for proteins across 45 human tissues, with annotated cell types and expression reliability data" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/tissue/data> .
 
 kgr:hpa.pathology a schema1:Product ;
     rdfs:label "HPA Pathology Data" ;
-    dcterms:description "Pathology data including cancer tissue expression and patient survival information" ;
-    schema1:url <https://www.proteinatlas.org/download/pathology.tsv.zip> .
+    dcterms:description "Cancer atlas pathology and prognostic data, including immunohistochemistry staining profiles across tumor tissues and survival associations from TCGA-linked cohorts" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/cancer/data> .
 
 kgr:hpa.portal a schema1:GraphicalInterface ;
     rdfs:label "Human Protein Atlas Portal" ;
@@ -22353,43 +22370,43 @@ kgr:hpa.portal a schema1:GraphicalInterface ;
 
 kgr:hpa.proteinatlas.json a schema1:Product ;
     rdfs:label "HPA Complete Data (JSON)" ;
-    dcterms:description "Complete Human Protein Atlas data in JSON format, version 24.1" ;
+    dcterms:description "Complete Human Protein Atlas data in JSON format, version 25.0" ;
     schema1:url <https://www.proteinatlas.org/download/proteinatlas.json.gz> .
 
 kgr:hpa.proteinatlas.tsv a schema1:Product ;
     rdfs:label "HPA Complete Data (TSV)" ;
-    dcterms:description "Complete Human Protein Atlas data in TSV format, version 24.1" ;
+    dcterms:description "Complete Human Protein Atlas data in TSV format, version 25.0" ;
     schema1:url <https://www.proteinatlas.org/download/proteinatlas.tsv.zip> .
 
 kgr:hpa.proteinatlas.xml a schema1:Product ;
     rdfs:label "HPA Complete Data (XML)" ;
-    dcterms:description "Complete Human Protein Atlas data in XML format, version 24.0 with comprehensive protein expression and annotation data" ;
+    dcterms:description "Complete Human Protein Atlas data in XML format, version 25.0 with comprehensive protein expression and annotation data" ;
     schema1:url <https://www.proteinatlas.org/download/proteinatlas.xml.gz> .
 
 kgr:hpa.rna_celline a schema1:Product ;
     rdfs:label "HPA RNA Cell Line Expression Data" ;
-    dcterms:description "RNA expression data in human cell lines based on RNA-seq analysis" ;
-    schema1:url <https://www.proteinatlas.org/download/rna_celline.tsv.zip> .
+    dcterms:description "Cell line atlas RNA expression data summarized per gene across 1,206 human cell lines and grouped cancer cell line classes" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/cell+line/data> .
 
 kgr:hpa.rna_immune_cell a schema1:Product ;
     rdfs:label "HPA Immune Cell RNA Data" ;
-    dcterms:description "Immune cell expression data from single cell transcriptomics studies" ;
-    schema1:url <https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip> .
+    dcterms:description "Immune cell atlas transcript expression data summarized per gene across 18 immune cell types and total PBMC, with linked sample-level HPA datasets" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/single+cell/immune+cell/data#immune_cells_hpa> .
 
 kgr:hpa.rna_single_cell a schema1:Product ;
     rdfs:label "HPA Single Cell RNA Expression Data" ;
-    dcterms:description "Single cell expression data from human tissues based on scRNA-seq analysis" ;
-    schema1:url <https://www.proteinatlas.org/download/rna_single_cell.tsv.zip> .
+    dcterms:description "Single Cell Type atlas data covering aggregated cell type comparisons, tissue datasets, cell type groups, and cluster-level scRNA-seq summaries" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/single+cell/single+cell+type/data> .
 
 kgr:hpa.rna_tissue a schema1:Product ;
     rdfs:label "HPA RNA Tissue Expression Data" ;
-    dcterms:description "RNA expression data in human tissues based on transcriptomic analysis" ;
-    schema1:url <https://www.proteinatlas.org/download/rna_tissue.tsv.zip> .
+    dcterms:description "Tissue atlas transcript expression data for human tissues, including HPA and consensus RNA measurements summarized per gene" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/tissue/data> .
 
 kgr:hpa.subcellular_location a schema1:Product ;
     rdfs:label "HPA Subcellular Location Data" ;
-    dcterms:description "Subcellular localization data based on immunofluorescent staining of human cell lines" ;
-    schema1:url <https://www.proteinatlas.org/download/subcellular_location.tsv.zip> .
+    dcterms:description "Subcellular atlas localization data for proteins in immunofluorescently stained cells, including enhanced, supported, approved, uncertain, and GO cellular component annotations" ;
+    schema1:url <https://www.proteinatlas.org/humanproteome/subcellular/data#locations> .
 
 kgr:hpidb.mitab a schema1:Product ;
     rdfs:label "HPIDB PSI-MITAB Dataset" ;
@@ -22685,6 +22702,11 @@ kgr:imodulondb.pymodulon a schema1:ProgrammingInterface ;
     rdfs:label "PyModulon Python Package" ;
     dcterms:description "Python package for characterization, plotting, and analysis of iModulons. Provides functions for threshold determination, transcriptional regulatory network (TRN) enrichment analysis, explained variance calculation, and generation of dashboard files for iModulonDB." ;
     schema1:url <https://github.com/SBRG/pymodulon> .
+
+kgr:impc.portal a schema1:GraphicalInterface ;
+    rdfs:label "IMPC Portal" ;
+    dcterms:description "Official IMPC portal for searching genes, alleles, phenotypes, disease associations, and phenotyping results." ;
+    schema1:url <https://www.mousephenotype.org/> .
 
 kgr:inchikey.docs a schema1:DocumentationProduct ;
     rdfs:label "InChI/InChIKey Documentation" ;
@@ -26280,7 +26302,7 @@ kgr:orthodb.aa_fasta a schema1:Product ;
 kgr:orthodb.api.rest a schema1:ProgrammingInterface ;
     rdfs:label "OrthoDB API" ;
     dcterms:description "RESTful API for programmatic access to OrthoDB data" ;
-    schema1:url <https://www.orthodb.org/api/> .
+    schema1:url <https://data.orthodb.org/v12/> .
 
 kgr:orthodb.api.sparql a schema1:ProgrammingInterface ;
     rdfs:label "OrthoDB SPARQL Endpoint" ;
@@ -27034,6 +27056,16 @@ kgr:phosphositeplus.portal a schema1:GraphicalInterface ;
     dcterms:description "Web portal for browsing PTM sites, kinase–substrate relationships, motifs, mutations and protein pages" ;
     schema1:url <https://www.phosphosite.org/> .
 
+kgr:pir.downloads a schema1:Product ;
+    rdfs:label "PIR Downloads" ;
+    dcterms:description "PIR download center exposing FTP-accessible releases for iProClass, PIRSF, PRO, and related PIR-maintained datasets." ;
+    schema1:url <https://proteininformationresource.org/pirwww/download/> .
+
+kgr:pir.portal a schema1:GraphicalInterface ;
+    rdfs:label "PIR Portal" ;
+    dcterms:description "Main PIR web interface for navigating databases, search tools, and supporting resources." ;
+    schema1:url <https://proteininformationresource.org/> .
+
 kgr:pirbase.browse a schema1:GraphicalInterface ;
     rdfs:label "piRBase Browse Interface" ;
     dcterms:description "Browse interface for exploring piRNAs organized by species" ;
@@ -27665,6 +27697,21 @@ kgr:redrugs.web a schema1:GraphicalInterface ;
     rdfs:label "ReDrugs Web Interface" ;
     dcterms:description "Interactive web interface for exploring drug-disease networks with probabilistic filtering and graph visualization" ;
     schema1:url <http://redrugs.tw.rpi.edu/> .
+
+kgr:remap.api a schema1:ProgrammingInterface ;
+    rdfs:label "ReMap REST API" ;
+    dcterms:description "ReMap REST interface for programmatic access to search, annotation, and regulatory region endpoints." ;
+    schema1:url <https://remap.univ-amu.fr/rest_page> .
+
+kgr:remap.downloads a schema1:Product ;
+    rdfs:label "ReMap Downloads" ;
+    dcterms:description "ReMap download page for binding region catalogs, track hubs, and associated release files." ;
+    schema1:url <https://remap.univ-amu.fr/download_page> .
+
+kgr:remap.portal a schema1:GraphicalInterface ;
+    rdfs:label "ReMap Portal" ;
+    dcterms:description "Main ReMap portal for searching transcriptional regulators, tissues, and DNA-binding datasets." ;
+    schema1:url <https://remap.univ-amu.fr/> .
 
 kgr:renci a "Organization" ;
     rdfs:label "RENCI (Renaissance Computing Institute)" .
@@ -28804,6 +28851,21 @@ kgr:spoke.sparql a schema1:ProgrammingInterface ;
     rdfs:label "SPOKE SPARQL Endpoint" ;
     dcterms:description "SPARQL endpoint for querying SPOKE knowledge graph via the OKN FRINK service" ;
     schema1:url <https://frink.apps.renci.org/spoke-okn/sparql> .
+
+kgr:sra.docs a schema1:DocumentationProduct ;
+    rdfs:label "SRA Documentation" ;
+    dcterms:description "Official SRA documentation covering submission, search, download, cloud usage, and archive behavior." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/sra/docs/> .
+
+kgr:sra.portal a schema1:GraphicalInterface ;
+    rdfs:label "SRA Portal" ;
+    dcterms:description "Main SRA search and browse interface for studies, experiments, runs, and associated metadata." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/sra> .
+
+kgr:sra.run_selector a schema1:GraphicalInterface ;
+    rdfs:label "SRA Run Selector" ;
+    dcterms:description "SRA Run Selector interface for exporting run-level metadata tables and filtering search results." ;
+    schema1:url <https://www.ncbi.nlm.nih.gov/Traces/study/> .
 
 kgr:sri-reference-kg.graph a schema1:GraphProduct ;
     rdfs:label "SRI-Reference KG (KGX distribution)" ;
@@ -30675,6 +30737,16 @@ kgr:identifier-mappings.tpf a schema1:ProgrammingInterface ;
     dcterms:description "Triple Pattern Fragments endpoint for ID Mappings" ;
     schema1:url <https://apps.okn.us/ldf/identifier-mappings> .
 
+kgr:imex.downloads a schema1:Product ;
+    rdfs:label "IMEx Downloads" ;
+    dcterms:description "IMEx interaction downloads distributed through IntAct in PSI-MI XML and MITAB formats." ;
+    schema1:url <https://www.ebi.ac.uk/intact/downloads> .
+
+kgr:imex.portal a schema1:GraphicalInterface ;
+    rdfs:label "IMEx Portal" ;
+    dcterms:description "Search interface for the shared IMEx molecular interaction dataset." ;
+    schema1:url <https://www.imexconsortium.org/> .
+
 kgr:interpro.interpro2go a schema1:MappingProduct ;
     rdfs:label "InterPro to GO Mappings" ;
     dcterms:description "Mappings between InterPro entries and Gene Ontology (GO) terms" ;
@@ -31788,48 +31860,48 @@ kgr:prokn.gtexexp.gtexexp.has_expression.expbins.edges a schema1:GraphProduct ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv> .
 
 kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges a schema1:GraphProduct ;
-    rdfs:label "ProKN HGNCHPO Association Edges" ;
-    dcterms:description "HGNCHPO gene associated with disease/phenotype edges" ;
+    rdfs:label "ProKN HPO Gene-to-Phenotype Association Edges" ;
+    dcterms:description "HPO gene-to-phenotype association edges" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv> .
 
 kgr:prokn.hmaz.anatomy.has_marker_gene_in_heart.gene.edges a schema1:GraphProduct ;
-    rdfs:label "ProKN HMAZ Heart Marker Edges" ;
-    dcterms:description "HMAZ anatomy to heart marker gene edges" ;
+    rdfs:label "ProKN HuBMAP Azimuth Heart Marker Edges" ;
+    dcterms:description "HuBMAP Azimuth anatomy to heart marker gene edges" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv> .
 
 kgr:prokn.hmaz.anatomy.has_marker_gene_in_kidney.gene.edges a schema1:GraphProduct ;
-    rdfs:label "ProKN HMAZ Kidney Marker Edges" ;
-    dcterms:description "HMAZ anatomy to kidney marker gene edges" ;
+    rdfs:label "ProKN HuBMAP Azimuth Kidney Marker Edges" ;
+    dcterms:description "HuBMAP Azimuth anatomy to kidney marker gene edges" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv> .
 
 kgr:prokn.hmaz.anatomy.has_marker_gene_in_liver.gene.edges a schema1:GraphProduct ;
-    rdfs:label "ProKN HMAZ Liver Marker Edges" ;
-    dcterms:description "HMAZ anatomy to liver marker gene edges" ;
+    rdfs:label "ProKN HuBMAP Azimuth Liver Marker Edges" ;
+    dcterms:description "HuBMAP Azimuth anatomy to liver marker gene edges" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv> .
 
 kgr:prokn.hmaz.anatomy.nodes a schema1:GraphProduct ;
-    rdfs:label "ProKN HMAZ Anatomy Nodes" ;
-    dcterms:description "HMAZ anatomy nodes used in ProKN" ;
+    rdfs:label "ProKN HuBMAP Azimuth Anatomy Nodes" ;
+    dcterms:description "HuBMAP Azimuth anatomy nodes used in ProKN" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.nodes.csv> .
 
 kgr:prokn.idgd.compound.indication.diseaseorphenotype.edges a schema1:GraphProduct ;
-    rdfs:label "ProKN IDGD Indication Edges" ;
-    dcterms:description "IDGD compound indication edges to disease/phenotype" ;
+    rdfs:label "ProKN TCRD Compound-Disease Indication Edges" ;
+    dcterms:description "TCRD compound indication edges to disease and phenotype terms" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv> .
 
 kgr:prokn.idgd.compound.nodes a schema1:GraphProduct ;
-    rdfs:label "ProKN IDGD Compound Nodes" ;
-    dcterms:description "IDG compound-disease nodes (IDGD) used in ProKN" ;
+    rdfs:label "ProKN TCRD Compound-Disease Compound Nodes" ;
+    dcterms:description "IDG/TCRD compound-disease nodes used in ProKN" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.nodes.csv> .
 
 kgr:prokn.idgp.compound.bioactivity.protein.edges a schema1:GraphProduct ;
-    rdfs:label "ProKN IDGP Bioactivity Edges" ;
-    dcterms:description "IDGP compound bioactivity to protein edges" ;
+    rdfs:label "ProKN TCRD Compound-Protein Bioactivity Edges" ;
+    dcterms:description "TCRD compound bioactivity to protein edges" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.BIOACTIVITY.Protein.edges.csv> .
 
 kgr:prokn.idgp.compound.nodes a schema1:GraphProduct ;
-    rdfs:label "ProKN IDGP Compound Nodes" ;
-    dcterms:description "IDG compound-protein nodes (IDGP) used in ProKN" ;
+    rdfs:label "ProKN TCRD Compound-Protein Compound Nodes" ;
+    dcterms:description "IDG/TCRD compound-protein nodes used in ProKN" ;
     schema1:url <https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv> .
 
 kgr:prokn.imex.complex.nodes a schema1:GraphProduct ;

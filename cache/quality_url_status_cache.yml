@@ -345,6 +345,11 @@ http://cpdb.molgen.mpg.de/CPDB/download:
   ok: false
   source: cache
   status_code: 404
+http://current.geneontology.org/products/ttl/pathway-like_go-cams.tar.gz:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 http://data.bioontology.org/:
   checked_at: '2026-05-19T18:49:12Z'
   error: null
@@ -786,6 +791,7 @@ http://purl.obolibrary.org/obo/adw.owl:
   checked_at: '2026-05-21T18:01:02Z'
   error: HEAD returned HTTP 404
   ok: false
+  source: cache
   status_code: 404
 http://purl.obolibrary.org/obo/aeo.owl:
   checked_at: '2026-05-19T18:49:19Z'
@@ -5617,11 +5623,13 @@ https://archs4.org/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://archs4.org/zoo:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://ars-prod.transltr.io/:
   checked_at: '2026-05-19T18:50:19Z'
@@ -5694,7 +5702,38 @@ https://bidd.group/NPASS/:
   error: 'HEAD request failed: HTTPSConnectionPool(host=''bidd.group'', port=443):
     Read timed out. (read timeout=8.0)'
   ok: false
+  source: cache
   status_code: null
+https://bio-bigdata.hrbmu.edu.cn/CellMarker/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_annotation.jsp:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://bio2rdf.org:
   checked_at: '2026-05-19T18:50:19Z'
   error: null
@@ -6733,6 +6772,11 @@ https://data.orthodb.org/current/download/odb12v1_species.tab.gz:
   error: HEAD returned HTTP 404
   ok: false
   source: cache
+  status_code: 404
+https://data.orthodb.org/v12/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: HEAD returned HTTP 404
+  ok: false
   status_code: 404
 https://data.pantherdb.org/ftp/:
   checked_at: '2026-05-19T18:50:26Z'
@@ -9602,6 +9646,7 @@ https://github.com/ENCODE-DCC/encoded:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/EOL:
   checked_at: '2026-05-19T18:50:45Z'
@@ -9943,6 +9988,7 @@ https://github.com/MaayanLab/archs4:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MaayanLab/chea-kg:
   checked_at: '2026-05-19T18:50:48Z'
@@ -9966,6 +10012,7 @@ https://github.com/MaayanLab/enrichr_issues:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://github.com/MaayanLab/harmonizome-kg:
   checked_at: '2026-05-19T18:50:48Z'
@@ -12654,6 +12701,7 @@ https://gtdb.ecogenomic.org/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://gtexportal.org/rest/:
   checked_at: '2026-05-19T18:51:08Z'
@@ -12731,6 +12779,7 @@ https://hershey.dbi.udel.edu/textmining/export/emind/eMIND_iTextmine.json.gz:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://het.io/:
   checked_at: '2026-05-19T18:51:08Z'
@@ -12798,6 +12847,7 @@ https://icd.who.int/en:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://icd.who.int/training/icd10training/:
   checked_at: '2026-05-19T18:51:09Z'
@@ -12815,6 +12865,7 @@ https://iconclass.org/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://id.nlm.nih.gov/mesh/query:
   checked_at: '2026-05-19T18:51:09Z'
@@ -13483,16 +13534,19 @@ https://maayanlab.cloud/Enrichr/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/Enrichr/datasetStatistics:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/Enrichr/help#api:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/chea-kg/:
   checked_at: '2026-05-19T18:51:16Z'
@@ -13510,11 +13564,13 @@ https://maayanlab.cloud/chea3/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/chea3/api/enrich/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://maayanlab.cloud/chea3/index.html#content4-13:
   checked_at: '2026-05-19T18:51:16Z'
@@ -14718,6 +14774,11 @@ https://proteininformationresource.org/:
   ok: true
   source: cache
   status_code: 200
+https://proteininformationresource.org/pirwww/download/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://pubchem.ncbi.nlm.nih.gov/:
   checked_at: '2026-05-19T18:51:30Z'
   error: null
@@ -14831,6 +14892,7 @@ https://rarediseases.info.nih.gov/:
   checked_at: '2026-05-21T18:01:02Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl:
   checked_at: '2026-05-19T18:51:30Z'
@@ -14927,6 +14989,21 @@ https://registry.opendata.aws/obis/:
   error: null
   ok: true
   source: cache
+  status_code: 200
+https://remap.univ-amu.fr/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://remap.univ-amu.fr/download_page:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://remap.univ-amu.fr/rest_page:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
   status_code: 200
 https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf:
   checked_at: '2026-05-19T18:51:31Z'
@@ -15097,6 +15174,7 @@ https://research.bioinformatics.udel.edu/ProKN/downloads:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/ProKN/explorer:
   checked_at: '2026-05-19T18:51:31Z'
@@ -15108,6 +15186,7 @@ https://research.bioinformatics.udel.edu/ProKN/mcp:
   checked_at: '2026-05-21T18:01:03Z'
   error: GET returned HTTP 406
   ok: false
+  source: cache
   status_code: 406
 https://research.bioinformatics.udel.edu/ProKN/restapi:
   checked_at: '2026-05-19T18:51:31Z'
@@ -15125,11 +15204,13 @@ https://research.bioinformatics.udel.edu/itextmine/emind:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/itextmine/integrate/search/emind/medline/*:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv
 : checked_at: '2026-05-19T18:51:31Z'
@@ -15141,226 +15222,271 @@ https://research.bioinformatics.udel.edu/itextmine/integrate/search/emind/medlin
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlyGenResidue.ATTACHED_BY.Glycosylation.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlyGenResidue.HAS_PARENT.GlyGenResidue.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glycosylation.HAS_ENZYME_PROTEIN.Protein.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.GlycosyltransferaseReaction.HAS_ENZYME_PROTEIN_GR.Protein.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_CANONICAL_RESIDUE.GlyGenResidue.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_GLYCOSEQUENCE.GlyGenGlycosequence.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.HAS_MOTIF.GlycanMotif.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.IS_FROM_SOURCE.GlyGenSrc.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GLYCANS.Glytoucan.SYNTHESIZED_BY.GlycosyltransferaseReaction.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Anatomy.nodes.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Anatomy.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.EXPRESSED_IN.Gene.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.GTExEXP.HAS_EXPRESSION.EXPBINS.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_GTEXEXP.Gene.EXPRESSED_IN.Anatomy.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCHPO.Gene.ASSOCIATED_WITH.DiseaseOrPhenotype.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HGNCUNIPROT.Gene.IS_PROTEIN.Protein.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_HEART.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_KIDNEY.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.HAS_MARKER_GENE_IN_LIVER.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_HMAZ.Anatomy.nodes.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.nodes.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.BIOACTIVITY.Protein.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGP.Compound.nodes.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.IN_SIMILARITY_RELATIONSHIP_WITH.Compound.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.NEGATIVELY_REGULATES.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_LINCS.Compound.POSITIVELY_REGULATES.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.CHR_BAND_CONTAINS_GENE.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.HAS_MARKER_GENE.Gene.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.HAS_SIGNATURE_GENE.Gene.edges.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.PATHWAY_ASSOCIATED_WITH_GENE.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_MSIGDB.MSigDB.TARGETS_EXPRESSION_OF_GENE.Gene.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.AminoAcid.nodes.csv:
   checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlyGenLocation.HAS_AMINO_ACID.AminoAcid.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.GLYCOSYLATED_AT.GlycosylationSite.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_EVIDENCE.GlycoproteinEvidence.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.HAS_PRO_ENTRY.GPID2PRO.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.SEQUENCE.Isoform.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Glycoprotein.SEQUENCE.Protein.edges.csv
 : checked_at: '2026-05-21T18:01:03Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycoproteinEvidence.CITATION.GlycoproteinCitation.edges.csv
 : checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycosylationSite.HAS_SACCHARIDE.Glytoucan.edges.csv
 : checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.GlycosylationSite.LOCATION.GlyGenLocation.edges.csv
 : checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Isoform.edges.csv:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Protein.edges.csv:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/GO.GOTerm.IS_A.GOTerm.edges.csv:
   checked_at: '2026-05-19T18:51:31Z'
@@ -15828,11 +15954,13 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS.Compou
 : checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.PTMSite.IS_SITE.Site.edges.csv:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.Perturbagen.IS_USED_IN.Experiment.edges.csv:
   checked_at: '2026-05-19T18:51:33Z'
@@ -15898,6 +16026,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/PIR.Compound.TARGETS.Protein.edges.csv:
   checked_at: '2026-05-19T18:51:33Z'
@@ -15951,6 +16080,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Pr
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_VARIANT.Variant.edges.csv:
   checked_at: '2026-05-19T18:51:33Z'
@@ -15992,6 +16122,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Prot
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Protein.HAS_ISOFORM.Protein.edges.csv:
   checked_at: '2026-05-19T18:51:34Z'
@@ -16003,6 +16134,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Prot
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rest.ensembl.org:
   checked_at: '2026-05-19T18:51:34Z'
@@ -16116,6 +16248,7 @@ https://ror.org/:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://rth.dk/resources/rnp/SRPDB/:
   checked_at: '2026-05-19T18:51:34Z'
@@ -16283,21 +16416,25 @@ https://s3.dev.maayanlab.cloud/archs4/files/human_gene_v2.latest.h5:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://s3.dev.maayanlab.cloud/archs4/files/human_transcript_v2.latest.h5:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://s3.dev.maayanlab.cloud/archs4/files/mouse_gene_v2.latest.h5:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://s3.dev.maayanlab.cloud/archs4/files/mouse_transcript_v2.latest.h5:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://saezlab.github.io/dorothea/:
   checked_at: '2026-05-19T18:51:35Z'
@@ -16700,6 +16837,7 @@ https://spdx.org/licenses/:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://spoke.rbvi.ucsf.edu/neighborhood.html:
   checked_at: '2026-05-19T18:51:38Z'
@@ -20391,6 +20529,11 @@ https://www.ebi.ac.uk/intact/download/datasets:
   ok: true
   source: cache
   status_code: 200
+https://www.ebi.ac.uk/intact/downloads:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ebi.ac.uk/intact/home:
   checked_at: '2026-05-19T18:52:10Z'
   error: null
@@ -20583,21 +20726,25 @@ https://www.encodeproject.org/:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.encodeproject.org/help/rest-api/:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.encodeproject.org/matrix/?type=Experiment:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 ? https://www.encodeproject.org/search/?type=Annotation&encyclopedia_version=current&annotation_type=candidate+Cis-Regulatory+Elements&annotation_type=chromatin+state&annotation_type=representative+DNase+hypersensitivity+sites&status=released
 : checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.ensembl.org:
   checked_at: '2026-05-19T18:52:11Z'
@@ -20801,11 +20948,13 @@ https://www.geonames.org/:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.geonames.org/export/codes.html:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.globalbioticinteractions.org/:
   checked_at: '2026-05-19T18:52:13Z'
@@ -20975,6 +21124,11 @@ https://www.hmdb.ca/downloads#structures:
   ok: false
   source: cache
   status_code: 403
+https://www.imexconsortium.org/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.inchi-trust.org/:
   checked_at: '2026-05-19T18:52:14Z'
   error: GET returned HTTP 403
@@ -21263,6 +21417,11 @@ https://www.mirbase.org/help/:
   ok: true
   source: cache
   status_code: 200
+https://www.mousephenotype.org/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.mrbase.org/:
   checked_at: '2026-05-19T18:52:17Z'
   error: 'HEAD request failed: HTTPSConnectionPool(host=''www.mrbase.org'', port=443):
@@ -21280,6 +21439,12 @@ https://www.ncbi.nlm.nih.gov/:
   status_code: 200
 https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi:
   checked_at: '2026-05-21T18:01:04Z'
+  error: null
+  ok: true
+  source: cache
+  status_code: 200
+https://www.ncbi.nlm.nih.gov/Traces/study/:
+  checked_at: '2026-05-23T16:24:58Z'
   error: null
   ok: true
   status_code: 200
@@ -21433,6 +21598,16 @@ https://www.ncbi.nlm.nih.gov/snp/:
   ok: true
   source: cache
   status_code: 200
+https://www.ncbi.nlm.nih.gov/sra:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.ncbi.nlm.nih.gov/sra/docs/:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.ndexbio.org/index.html#/networkset/7bc65b82-2a2f-11ed-ac45-0ac135e8bacf:
   checked_at: '2026-05-19T18:52:18Z'
   error: null
@@ -21449,6 +21624,7 @@ https://www.nlm.nih.gov/:
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.nlm.nih.gov/bsd/disted/mesh.html:
   checked_at: '2026-05-19T18:52:18Z'
@@ -21484,6 +21660,7 @@ https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.h
   checked_at: '2026-05-21T18:01:04Z'
   error: null
   ok: true
+  source: cache
   status_code: 200
 https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html:
   checked_at: '2026-05-19T18:52:18Z'
@@ -21791,6 +21968,46 @@ https://www.proteinatlas.org/download/subcellular_location.tsv.zip:
   ok: false
   source: cache
   status_code: 404
+https://www.proteinatlas.org/humanproteome/blood/data#blood_conc:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/brain/data:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/cancer/data:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/cell+line/data:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/single+cell/immune+cell/data#immune_cells_hpa:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/single+cell/single+cell+type/data:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/subcellular/data#locations:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
+https://www.proteinatlas.org/humanproteome/tissue/data:
+  checked_at: '2026-05-23T16:24:58Z'
+  error: null
+  ok: true
+  status_code: 200
 https://www.rcsb.org/:
   checked_at: '2026-05-19T18:52:21Z'
   error: null

@@ -1,22 +1,14 @@
 ---
 category: Product
-description: Pathology data including cancer tissue expression and patient survival
-  information
+description: Cancer atlas pathology and prognostic data, including immunohistochemistry
+  staining profiles across tumor tissues and survival associations from TCGA-linked
+  cohorts
 format: tsv
 id: hpa.pathology
 name: HPA Pathology Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hpa
-product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-  accessing file
+product_url: https://www.proteinatlas.org/humanproteome/cancer/data
 layout: product_detail
 ---

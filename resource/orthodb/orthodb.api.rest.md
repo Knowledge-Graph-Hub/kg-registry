@@ -5,8 +5,8 @@ id: orthodb.api.rest
 is_public: true
 name: OrthoDB API
 original_source:
-  - source: orthodb
-    relation_type: prov:hadPrimarySource
-product_url: https://www.orthodb.org/api/
+- relation_type: prov:hadPrimarySource
+  source: orthodb
+product_url: https://data.orthodb.org/v12/
 layout: product_detail
 ---

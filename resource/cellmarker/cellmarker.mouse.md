@@ -1,20 +1,12 @@
 ---
 category: Product
-description: Cell markers of different cell types from different tissues in mouse
+description: Mouse CellMarker 2.0 marker dataset in spreadsheet format
 id: cellmarker.mouse
 name: Mouse Cell Markers
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cellmarker
-product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
-warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-05-19_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-  header found
+product_file_size: 3740448
+product_url: https://bio-bigdata.hrbmu.edu.cn/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx
 layout: product_detail
 ---

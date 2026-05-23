@@ -1,19 +1,13 @@
 ---
 category: Product
-description: Single cell expression data from human tissues based on scRNA-seq analysis
+description: Single Cell Type atlas data covering aggregated cell type comparisons,
+  tissue datasets, cell type groups, and cluster-level scRNA-seq summaries
 format: tsv
 id: hpa.rna_single_cell
 name: HPA Single Cell RNA Expression Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hpa
-product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-05-21_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-  to URL
+product_url: https://www.proteinatlas.org/humanproteome/single+cell/single+cell+type/data
 layout: product_detail
 ---
