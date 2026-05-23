@@ -13,9 +13,9 @@ creation_date: '2025-10-09T00:00:00Z'
 description: The Human Protein Atlas (HPA) is a Swedish-based program aiming to map
   all human proteins in cells, tissues and organs using an integration of various
   omics technologies, including antibody-based imaging, mass spectrometry-based proteomics,
-  transcriptomics and systems biology. The HPA aggregates and presents data from eight
+  transcriptomics and systems biology. The HPA aggregates and presents data from nine
   different resources covering tissue, brain, single cell, subcellular, cancer, blood,
-  cell line, and structure & interaction atlases.
+  cell line, structure, and interaction atlases.
 domains:
 - biomedical
 - proteomics
@@ -25,11 +25,11 @@ domains:
 homepage_url: https://www.proteinatlas.org/
 id: hpa
 infores_id: hpa
-last_modified_date: '2025-10-09T00:00:00Z'
+last_modified_date: '2026-05-23T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by-sa/3.0/
-  label: CC-BY-SA-3.0
+  id: https://creativecommons.org/licenses/by-sa/4.0/
+  label: CC-BY-SA-4.0
 name: Human Protein Atlas
 products:
 - category: GraphicalInterface
@@ -43,7 +43,7 @@ products:
     source: hpa
   product_url: https://www.proteinatlas.org/
 - category: Product
-  description: Complete Human Protein Atlas data in TSV format, version 24.1
+  description: Complete Human Protein Atlas data in TSV format, version 25.0
   format: tsv
   id: hpa.proteinatlas.tsv
   name: HPA Complete Data (TSV)
@@ -53,7 +53,7 @@ products:
   product_file_size: 6286585
   product_url: https://www.proteinatlas.org/download/proteinatlas.tsv.zip
 - category: Product
-  description: Complete Human Protein Atlas data in JSON format, version 24.1
+  description: Complete Human Protein Atlas data in JSON format, version 25.0
   format: json
   id: hpa.proteinatlas.json
   name: HPA Complete Data (JSON)
@@ -63,7 +63,7 @@ products:
   product_file_size: 10840984
   product_url: https://www.proteinatlas.org/download/proteinatlas.json.gz
 - category: Product
-  description: Complete Human Protein Atlas data in XML format, version 24.0 with
+  description: Complete Human Protein Atlas data in XML format, version 25.0 with
     comprehensive protein expression and annotation data
   format: xml
   id: hpa.proteinatlas.xml
@@ -74,161 +74,98 @@ products:
   product_file_size: 712079128
   product_url: https://www.proteinatlas.org/download/proteinatlas.xml.gz
 - category: Product
-  description: Normal tissue expression data based on immunohistochemistry using tissue
-    microarrays
+  description: Tissue atlas immunohistochemistry expression profiles for proteins
+    across 45 human tissues, with annotated cell types and expression reliability
+    data
   format: tsv
   id: hpa.normal_tissue
   name: HPA Normal Tissue Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
+  product_url: https://www.proteinatlas.org/humanproteome/tissue/data
 - category: Product
-  description: Pathology data including cancer tissue expression and patient survival
-    information
+  description: Cancer atlas pathology and prognostic data, including immunohistochemistry
+    staining profiles across tumor tissues and survival associations from TCGA-linked
+    cohorts
   format: tsv
   id: hpa.pathology
   name: HPA Pathology Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
+  product_url: https://www.proteinatlas.org/humanproteome/cancer/data
 - category: Product
-  description: Subcellular localization data based on immunofluorescent staining of
-    human cell lines
+  description: Subcellular atlas localization data for proteins in immunofluorescently
+    stained cells, including enhanced, supported, approved, uncertain, and GO cellular
+    component annotations
   format: tsv
   id: hpa.subcellular_location
   name: HPA Subcellular Location Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/subcellular_location.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
+  product_url: https://www.proteinatlas.org/humanproteome/subcellular/data#locations
 - category: Product
-  description: RNA expression data in human tissues based on transcriptomic analysis
+  description: Tissue atlas transcript expression data for human tissues, including
+    HPA and consensus RNA measurements summarized per gene
   format: tsv
   id: hpa.rna_tissue
   name: HPA RNA Tissue Expression Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
+  product_url: https://www.proteinatlas.org/humanproteome/tissue/data
 - category: Product
-  description: RNA expression data in human cell lines based on RNA-seq analysis
+  description: Cell line atlas RNA expression data summarized per gene across 1,206
+    human cell lines and grouped cancer cell line classes
   format: tsv
   id: hpa.rna_celline
   name: HPA RNA Cell Line Expression Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/rna_celline.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
+  product_url: https://www.proteinatlas.org/humanproteome/cell+line/data
 - category: Product
-  description: Single cell expression data from human tissues based on scRNA-seq analysis
+  description: Single Cell Type atlas data covering aggregated cell type comparisons,
+    tissue datasets, cell type groups, and cluster-level scRNA-seq summaries
   format: tsv
   id: hpa.rna_single_cell
   name: HPA Single Cell RNA Expression Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
+  product_url: https://www.proteinatlas.org/humanproteome/single+cell/single+cell+type/data
 - category: Product
-  description: Brain-specific expression data including regional and cellular distribution
+  description: Brain atlas transcript expression data summarized across brain regions
+    and subregions, including HPA brain region datasets and related transcript profiles
   format: tsv
   id: hpa.brain_rna
   name: HPA Brain RNA Expression Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
+  product_url: https://www.proteinatlas.org/humanproteome/brain/data
 - category: Product
-  description: Blood protein expression data from healthy individuals and disease
-    states
+  description: Blood atlas protein concentration data measured in blood by immunoassay
+    and mass spectrometry
   format: tsv
   id: hpa.blood_protein
   name: HPA Blood Protein Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
+  product_url: https://www.proteinatlas.org/humanproteome/blood/data#blood_conc
 - category: Product
-  description: Immune cell expression data from single cell transcriptomics studies
+  description: Immune cell atlas transcript expression data summarized per gene across
+    18 immune cell types and total PBMC, with linked sample-level HPA datasets
   format: tsv
   id: hpa.rna_immune_cell
   name: HPA Immune Cell RNA Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpa
-  product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-21: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
+  product_url: https://www.proteinatlas.org/humanproteome/single+cell/immune+cell/data#immune_cells_hpa
 - category: ProgrammingInterface
   description: Programmatic access to individual protein entries in XML format via
     Ensembl ID
@@ -1073,7 +1010,7 @@ The Human Protein Atlas (HPA) is a comprehensive Swedish-based program that aims
 
 ## About the Human Protein Atlas
 
-The Human Protein Atlas integrates antibody-based imaging, mass spectrometry-based proteomics, transcriptomics, and systems biology to provide a comprehensive view of the human proteome. The resource is organized into eight interconnected atlases, each focusing on different aspects of protein biology.
+The Human Protein Atlas integrates antibody-based imaging, mass spectrometry-based proteomics, transcriptomics, and systems biology to provide a comprehensive view of the human proteome. The resource is organized into nine interconnected atlases, each focusing on different aspects of protein biology.
 
 ### Key Features
 
@@ -1083,7 +1020,7 @@ The Human Protein Atlas integrates antibody-based imaging, mass spectrometry-bas
 - **Regular Updates**: Quarterly releases with new data and improved annotations
 - **Multiple Formats**: Data accessible via web portal, bulk downloads, and programmatic APIs
 
-## Eight Atlas Resources
+## Nine Atlas Resources
 
 ### 1. Tissue Atlas
 Protein and RNA expression profiles in normal human tissues based on antibodies and transcriptomics, covering:
@@ -1127,9 +1064,14 @@ RNA expression profiles in human cell lines:
 - Tissue-specific cell line collections
 - Comparative expression analysis
 
-### 8. Structure & Interaction Atlas
-3D protein structures, interaction networks, and metabolic pathways:
+### 8. Structure Atlas
+3D structures of human proteins with antibody-binding sites and genetic variants:
 - Protein structure predictions
+- Antibody-binding site context
+- Genetic variant mapping
+
+### 9. Interaction Atlas
+Human protein-protein interactions including 3D structures and metabolic enzyme profiles:
 - Protein-protein interaction networks
 - Metabolic pathway integration
 
