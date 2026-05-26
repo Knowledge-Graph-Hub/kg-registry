@@ -11,7 +11,7 @@ domains:
 - biological systems
 homepage_url: https://dianalab.e-ce.uth.gr/tarbasev9
 id: tarbase
-last_modified_date: '2025-10-27T00:00:00Z'
+last_modified_date: '2026-05-26T00:00:00Z'
 layout: resource_detail
 name: TarBase
 products:
@@ -34,7 +34,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/interactions
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/interactions
 - category: GraphicalInterface
   description: Network visualization tool for assessing combinatorial effects of multiple
     miRNAs on common gene targets
@@ -44,7 +44,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/visualizations
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/visualizations
 - category: GraphicalInterface
   description: Statistics page showing database content and coverage metrics
   format: http
@@ -53,7 +53,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/statistics
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/statistics
 - category: GraphicalInterface
   description: Text-mining interface for literature-based interaction discovery
   format: http
@@ -62,7 +62,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/textmining
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/textmining
 - category: Product
   compression: gzip
   description: Experimentally validated miRNA-gene interactions for Homo sapiens in
@@ -87,9 +87,6 @@ products:
     source: tarbase
   product_file_size: 16498710
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Mus_musculus_TarBase-v9.tsv.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting
-    to URL
 - category: Product
   compression: gzip
   description: Experimentally validated viral miRNA-gene interactions in tab-delimited
@@ -123,18 +120,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
-    to URL'
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/help
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
   format: http
@@ -143,18 +129,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-09: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
-    when accessing file'
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/downloads
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

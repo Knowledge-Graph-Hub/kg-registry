@@ -25,7 +25,7 @@ domains:
 - organisms
 homepage_url: https://omabrowser.org/
 id: oma
-last_modified_date: '2026-05-23T00:00:00Z'
+last_modified_date: '2026-05-26T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,6 +34,7 @@ name: OMA
 products:
 - category: GraphicalInterface
   description: Web interface for exploring OMA data
+  format: http
   id: oma.site
   is_public: true
   name: OMA Browser
@@ -43,6 +44,7 @@ products:
   product_url: https://omabrowser.org/oma/
 - category: ProgrammingInterface
   description: RESTful API for accessing OMA data
+  format: http
   id: oma.api.rest
   is_public: true
   name: OMA REST API
@@ -52,6 +54,7 @@ products:
   product_url: https://omabrowser.org/api/
 - category: ProgrammingInterface
   description: SPARQL endpoint for accessing OMA data
+  format: http
   id: oma.api.sparql
   is_public: true
   name: OMA SPARQL
@@ -62,26 +65,15 @@ products:
 - category: Product
   compression: gzip
   description: OMA orthology groups in plain text format
+  format: txt
   id: oma.groups.txt
   name: OMA Groups (Text)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/OmaGroups.txt.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-groups.txt.gz
 - category: Product
+  compression: gzip
   description: OMA orthology groups in OrthoXML format
   format: xml
   id: oma.groups.orthoxml
@@ -89,21 +81,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/OmaGroups.orthoxml
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-groups.orthoXML.xml.gz
 - category: Product
+  compression: gzip
   description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
   format: xml
   id: oma.hogs.orthoxml
@@ -111,22 +91,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/OmaHOGs.orthoxml
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-hogs.orthoXML.gz
 - category: Product
   compression: gzip
   description: Pairwise orthologs in tab-separated text format
@@ -136,20 +101,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/OrthologousPairs.txt.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-pairs.txt.gz
 - category: Product
   compression: gzip
   description: Protein sequences from all genomes in FASTA format
@@ -159,20 +111,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/oma-proteins.fa.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-02_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-seqs.fa.gz
 - category: Product
   compression: gzip
   description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -182,20 +121,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/eukaryotes.cdna.fa.gz
 - category: Product
   compression: gzip
   description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -205,45 +131,57 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-12-13_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/prokaryotes.cdna.fa.gz
+- category: Product
+  compression: gzip
+  description: cDNA sequences for viral genomes in FASTA format
+  format: fasta
+  id: oma.cdna.viruses.fasta
+  name: OMA cDNA Sequences (Viruses)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  product_url: https://omabrowser.org/All/viruses.cdna.fa.gz
+- category: Product
+  compression: targz
+  description: Protein sequences in SeqXML format
+  format: xml
+  id: oma.proteins.seqxml
+  name: OMA Protein Sequences (SeqXML)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  product_url: https://omabrowser.org/All/oma-seqs.seqxml.tgz
+- category: Product
+  compression: gzip
+  description: Protein annotations in text format
+  format: txt
+  id: oma.protein-annotations.txt
+  name: OMA Protein Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  product_url: https://omabrowser.org/All/oma-protein-annotations.txt.gz
 - category: Product
   description: OMA Browser database in HDF5 format
+  format: hdf5
   id: oma.hdf5
   name: OMA Browser Database (HDF5)
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/OmaServer.h5
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/OmaServer.h5
 - category: Product
-  compression: gzip
+  description: Suffix index for the OMA Browser HDF5 database
+  format: mixed
+  id: oma.hdf5.index
+  name: OMA Browser Database Index
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  product_url: https://omabrowser.org/All/OmaServer.h5.idx
+- category: Product
+  compression: targz
   description: OMA data in RDF format (Turtle syntax)
   format: ttl
   id: oma.rdf
@@ -251,20 +189,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oma
-  product_url: https://omabrowser.org/oma/current/OMA.ttl.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-rdf-turtle.tgz
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to UniProt accession numbers
@@ -276,20 +201,74 @@ products:
     source: oma
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-01-03_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
+  product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to Ensembl identifiers
+  format: tsv
+  id: oma.mapping.ensembl
+  name: OMA to Ensembl Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to RefSeq accessions
+  format: tsv
+  id: oma.mapping.refseq
+  name: OMA to RefSeq Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  product_url: https://omabrowser.org/All/oma-refseq.txt.gz
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to Entrez Gene identifiers
+  format: tsv
+  id: oma.mapping.entrez
+  name: OMA to Entrez Gene Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://omabrowser.org/All/oma-entrez.txt.gz
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to Gene Ontology terms
+  format: tsv
+  id: oma.mapping.go
+  name: OMA to GO Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_url: https://omabrowser.org/All/oma-go.txt.gz
+- category: Product
+  description: Species metadata including taxonomy identifiers and genome source information
+  format: txt
+  id: oma.species.txt
+  name: OMA Species Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  product_url: https://omabrowser.org/All/oma-species.txt
+- category: Product
+  compression: gzip
+  description: Text descriptions for OMA groups
+  format: txt
+  id: oma.group-descriptions.txt
+  name: OMA Group Descriptions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  product_url: https://omabrowser.org/All/group-descriptions.txt.gz
 publications:
 - id: https://doi.org/10.1093/nar/gkad1020
   title: 'OMA orthology in 2024: improved prokaryote coverage, ancestral and extant
