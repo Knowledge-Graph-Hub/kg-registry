@@ -1,5 +1,6 @@
 ---
 category: Product
+compression: gzip
 description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
 format: xml
 id: oma.hogs.orthoxml
@@ -7,19 +8,6 @@ name: OMA HOGs (OrthoXML)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: oma
-product_url: https://omabrowser.org/oma/current/OmaHOGs.orthoxml
-warnings:
-- File was not able to be retrieved when checked on 2026-05-23_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2025-12-15_ HTTP 502 error when
-  accessing file
+product_url: https://omabrowser.org/All/oma-hogs.orthoXML.gz
 layout: product_detail
 ---

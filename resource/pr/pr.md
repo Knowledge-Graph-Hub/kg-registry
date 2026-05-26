@@ -52,8 +52,6 @@ products:
   name: pro_nonreasoned.owl
   product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
@@ -63,8 +61,6 @@ products:
   name: pro_nonreasoned.obo
   product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
@@ -545,8 +541,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph

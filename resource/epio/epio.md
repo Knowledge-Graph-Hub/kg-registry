@@ -46,8 +46,6 @@ products:
     source: epio
   product_url: http://purl.obolibrary.org/obo/EPIO_merged.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
     when accessing file'
 publications: []

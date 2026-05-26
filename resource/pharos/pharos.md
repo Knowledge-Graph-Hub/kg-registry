@@ -57,12 +57,10 @@ products:
     source: pharos
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: ProgrammingInterface
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
     custom queries and integrations
@@ -83,12 +81,10 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: PHAROS Automat
   format: kgx-jsonl
@@ -112,12 +108,10 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/about
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 publications:
 - authors:
   - Nguyen DT
@@ -138,7 +132,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - Schürer S
+  - "Sch\xFCrer S"
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -164,16 +158,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - Vidović D
+  - "Vidovi\u0107 D"
   - Koleti A
-  - Schürer SC
+  - "Sch\xFCrer SC"
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - Mathé E
+  - "Math\xE9 E"
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993

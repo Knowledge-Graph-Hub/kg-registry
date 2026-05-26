@@ -4,9 +4,9 @@ description: Statistics page showing database content and coverage metrics
 format: http
 id: tarbase.statistics
 name: Statistics
-product_url: https://dianalab.e-ce.uth.gr/tarbasev9/statistics
-layout: product_detail
 original_source:
-  - source: tarbase
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: tarbase
+product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/statistics
+layout: product_detail
 ---

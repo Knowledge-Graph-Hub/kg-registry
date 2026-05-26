@@ -242,12 +242,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1022,6 +1020,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to RefSeq accessions
+  format: tsv
+  id: oma.mapping.refseq
+  name: OMA to RefSeq Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  product_url: https://omabrowser.org/All/oma-refseq.txt.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
 publications:
 - doi: 10.1093/nar/gkv1189
   id: doi:10.1093/nar/gkv1189

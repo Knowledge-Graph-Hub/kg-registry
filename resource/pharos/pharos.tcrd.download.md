@@ -10,7 +10,7 @@ original_source:
   source: pharos
 product_url: http://juniper.health.unm.edu/tcrd/download/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-23_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-05-26_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL

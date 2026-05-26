@@ -1,16 +1,15 @@
 ---
 category: Product
 compression: gzip
-description: Experimentally validated miRNA-gene interactions for Mus musculus in tab-delimited format
+description: Experimentally validated miRNA-gene interactions for Mus musculus in
+  tab-delimited format
 format: tsv
 id: tarbase.mus-musculus
 name: Mus musculus Interactions
+original_source:
+- relation_type: prov:hadPrimarySource
+  source: tarbase
 product_file_size: 16498710
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Mus_musculus_TarBase-v9.tsv.gz
-warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting to URL
 layout: product_detail
-original_source:
-  - source: tarbase
-    relation_type: prov:hadPrimarySource
 ---

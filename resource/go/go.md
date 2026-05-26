@@ -65,8 +65,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
 - category: OntologyProduct
@@ -90,8 +88,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
 - category: OntologyProduct
@@ -128,8 +124,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
 - category: OntologyProduct
@@ -142,8 +136,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
@@ -3771,12 +3763,10 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: ProteomeHD data files
   id: proteomehd.data
@@ -4121,12 +4111,50 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to Gene Ontology terms
+  format: tsv
+  id: oma.mapping.go
+  name: OMA to GO Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_url: https://omabrowser.org/All/oma-go.txt.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+- category: Product
+  compression: gzip
+  description: Gene association file for Reactome GO annotations
+  format: txt
+  id: reactome.go-associations.txt
+  name: Reactome Gene Association File
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 835232
+  product_url: https://download.reactome.org/96/gene_association.reactome.gz
+- category: Product
+  description: Mapping from Reactome pathways to Gene Ontology terms
+  format: txt
+  id: reactome.pathways.go-terms.txt
+  name: Reactome Pathways to GO Terms
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 60582
+  product_url: https://download.reactome.org/96/Pathways2GoTerms_human.txt
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'

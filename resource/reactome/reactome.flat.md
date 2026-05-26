@@ -1,12 +1,12 @@
 ---
 category: GraphProduct
-description: Reactome pathway and interaction data in flat file format (TSV), including curated protein complex compositions and pathway-gene associations
-format: tsv
+description: Pathway hierarchy relationships in flat text format
+format: txt
 id: reactome.flat
-name: Reactome Flat Files
+name: Reactome Pathway Hierarchy Flat File
 original_source:
-  - source: reactome
-    relation_type: prov:hadPrimarySource
-product_url: https://reactome.org/download-data
+- relation_type: prov:hadPrimarySource
+  source: reactome
+product_url: https://download.reactome.org/96/ReactomePathwaysRelation.txt
 layout: product_detail
 ---

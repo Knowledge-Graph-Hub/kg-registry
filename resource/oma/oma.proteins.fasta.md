@@ -8,17 +8,6 @@ name: OMA Protein Sequences
 original_source:
 - relation_type: prov:hadPrimarySource
   source: oma
-product_url: https://omabrowser.org/oma/current/oma-proteins.fa.gz
-warnings:
-- File was not able to be retrieved when checked on 2026-05-23_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-01-28_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-01-03_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-01-02_ HTTP 502 error when
-  accessing file
+product_url: https://omabrowser.org/All/oma-seqs.fa.gz
 layout: product_detail
 ---

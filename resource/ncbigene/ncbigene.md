@@ -738,12 +738,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: MappingProduct
   compression: zip
   description: A single delimited text file format containing a list of mappings between
@@ -1143,6 +1141,21 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: MappingProduct
+  compression: gzip
+  description: Mapping of OMA identifiers to Entrez Gene identifiers
+  format: tsv
+  id: oma.mapping.entrez
+  name: OMA to Entrez Gene Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oma
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://omabrowser.org/All/oma-entrez.txt.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
   - Donna Maglott

@@ -168,6 +168,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: snodb
+  product_file_size: 753930
   product_url: https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/download_all/
 - category: ProcessProduct
   description: Tool for integrating snoDB snoRNAs into Ensembl or RefSeq GTF annotation

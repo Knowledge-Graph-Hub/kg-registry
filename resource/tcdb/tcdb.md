@@ -65,12 +65,10 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/substrates/getSubstrates.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: Product
   description: Tab-delimited table with TC family definitions. The URL ends in .py,
     but this endpoint serves data, not Python source code.
@@ -93,12 +91,10 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: Product
   description: Tab-delimited table mapping systems, subfamilies, and families to superfamilies.
     The URL ends in .py, but this endpoint serves data, not Python source code.
@@ -121,12 +117,10 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/acc2tcid.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: Product
   description: Tab-delimited annotation mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -138,12 +132,10 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/go.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: Product
   description: Tab-delimited structure mapping table for TC systems. The URL ends
     in .py, but this endpoint serves data, not Python source code.
@@ -155,12 +147,10 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pdb.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: Product
   description: Tab-delimited protein family mapping table for TC systems. The URL
     ends in .py, but this endpoint serves data, not Python source code.
@@ -172,12 +162,10 @@ products:
     source: tcdb
   product_url: https://www.tcdb.org/cgi-bin/projectv/public/pfam.py
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-05-23: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv

@@ -33,8 +33,6 @@ products:
     source: fma
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
     when accessing file'
 - category: OntologyProduct

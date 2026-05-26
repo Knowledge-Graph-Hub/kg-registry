@@ -44,28 +44,30 @@ products:
   product_file_size: 178009249
   product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
 - category: GraphProduct
+  compression: zip
   description: Complete Reactome pathway data in BioPAX (Biological Pathway Exchange)
     format, the standard RDF/OWL-based language for representing biological pathways
     at molecular and cellular levels
-  compression: zip
   format: owl
   id: reactome.biopax
   name: Reactome BioPAX Format
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 172887692
   product_url: https://download.reactome.org/96/biopax.zip
 - category: GraphProduct
+  compression: targz
   description: Reactome pathway data in SBML (Systems Biology Markup Language) format
     for computational modeling and systems biology applications, including kinetic
     information
-  compression: targz
   format: sbml
   id: reactome.sbml
   name: Reactome SBML Format
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 219489949
   product_url: https://download.reactome.org/96/all_species.3.1.sbml.tgz
 - category: GraphProduct
   description: Reactome data in RDF/XML format for semantic web integration and knowledge
@@ -87,6 +89,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 533108259
   product_url: https://download.reactome.org/96/reactome.graphdb.dump
 - category: GraphProduct
   compression: targz
@@ -98,6 +101,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 450783610
   product_url: https://download.reactome.org/96/reactome.graphdb.tgz
 - category: GraphProduct
   description: Pathway hierarchy relationships in flat text format
@@ -107,6 +111,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 631240
   product_url: https://download.reactome.org/96/ReactomePathwaysRelation.txt
 - category: Product
   compression: gzip
@@ -117,6 +122,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 120092667
   product_url: https://download.reactome.org/96/databases/gk_current.sql.gz
 - category: Product
   compression: gzip
@@ -127,6 +133,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 259536887
   product_url: https://download.reactome.org/96/databases/gk_stable_ids.sql.gz
 - category: Product
   description: Complete list of Reactome pathways in flat text format
@@ -136,6 +143,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_file_size: 1583655
   product_url: https://download.reactome.org/96/ReactomePathways.txt
 - category: Product
   compression: gzip
@@ -148,6 +156,7 @@ products:
     source: reactome
   - relation_type: prov:hadPrimarySource
     source: go
+  product_file_size: 835232
   product_url: https://download.reactome.org/96/gene_association.reactome.gz
 - category: Product
   description: Mapping from Reactome pathways to Gene Ontology terms
@@ -159,6 +168,7 @@ products:
     source: reactome
   - relation_type: prov:hadPrimarySource
     source: go
+  product_file_size: 60582
   product_url: https://download.reactome.org/96/Pathways2GoTerms_human.txt
 - category: ProgrammingInterface
   description: RESTful web service API for programmatic access to Reactome pathway
@@ -232,7 +242,6 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
-  format: mixed
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -308,13 +317,11 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
-  product_url: https://spoke.ucsf.edu/
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
-  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -630,7 +637,6 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  format: neo4j
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -727,7 +733,6 @@ products:
     source: hetionet
 - category: GraphProduct
   description: Memgraph data release for AlzKB.
-  format: mixed
   id: alzkb.data
   name: AlzKB Data Release (Version 2.0.0)
   original_source:
@@ -861,7 +866,6 @@ products:
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 - description: The MechRepoNet knowledge graph in its original format
-  format: mixed
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
@@ -906,7 +910,6 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
-  format: http
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -1391,7 +1394,6 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 14998050
-  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -1494,10 +1496,10 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
+  warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 14998050
-  format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -2362,12 +2364,16 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
-  format: mixed
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -2407,12 +2413,10 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
-  product_url: https://pubmed.ncbi.nlm.nih.gov/37020958/
 - category: DatabaseProduct
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
-  format: http
   id: rampdb.database
   is_public: true
   name: RaMP-DB Integrated Database
@@ -2431,7 +2435,6 @@ products:
 - category: Product
   description: Causal Activity Model graphs automatically generated from Reactome
     pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
-  format: http
   id: cam-kp.reactome-cams
   name: Reactome Pathway CAMs
   original_source:
@@ -2439,7 +2442,6 @@ products:
     source: cam-kp
   - relation_type: prov:hadPrimarySource
     source: reactome
-  product_url: https://automat.renci.org/#/cam-kp
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -3357,7 +3359,6 @@ products:
 - category: GraphProduct
   compression: gzip
   description: 'full database, part II: the networks (nodes, edges, scores,...)'
-  format: txt
   id: string.database
   name: STRING Database Network Schema
   original_source:
@@ -3433,7 +3434,6 @@ products:
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 - category: GraphProduct
   description: ProteomeHD data files
-  format: mixed
   id: proteomehd.data
   name: ProteomeHD Data
   original_source:
