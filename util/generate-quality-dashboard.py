@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import warnings
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from ftplib import FTP
@@ -21,6 +22,11 @@ from urllib.parse import urlparse
 
 import requests
 import yaml
+
+try:
+    from urllib3.exceptions import InsecureRequestWarning
+except Exception:  # pragma: no cover
+    InsecureRequestWarning = None
 
 from common import RESOURCE_DIR, ROOT, load_frontmatter_file
 try:
@@ -392,25 +398,66 @@ def check_ftp_url(url: str, timeout: float) -> Dict[str, Any]:
 def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
     headers = {"User-Agent": "kg-registry-quality-dashboard/1.0"}
 
+    def _head_request(verify: bool) -> requests.Response:
+        if verify or InsecureRequestWarning is None:
+            return requests.head(url, timeout=timeout, allow_redirects=True, headers=headers, verify=verify)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", InsecureRequestWarning)
+            return requests.head(url, timeout=timeout, allow_redirects=True, headers=headers, verify=verify)
+
+    def _get_request(verify: bool) -> requests.Response:
+        if verify or InsecureRequestWarning is None:
+            return requests.get(url, timeout=timeout, allow_redirects=True, headers=headers, verify=verify)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", InsecureRequestWarning)
+            return requests.get(url, timeout=timeout, allow_redirects=True, headers=headers, verify=verify)
+
+    tls_fallback_used = False
+
     try:
-        head_resp = requests.head(url, timeout=timeout, allow_redirects=True, headers=headers)
+        head_resp = _head_request(verify=True)
         head_code = head_resp.status_code
         head_resp.close()
+    except requests.exceptions.SSLError:
+        tls_fallback_used = True
+        try:
+            head_resp = _head_request(verify=False)
+            head_code = head_resp.status_code
+            head_resp.close()
+        except requests.RequestException as error:
+            return {
+                "ok": False,
+                "status_code": None,
+                "error": f"HEAD request failed after TLS fallback: {error}",
+            }
     except requests.RequestException as error:
         return {"ok": False, "status_code": None, "error": f"HEAD request failed: {error}"}
 
     if 200 <= head_code < 400:
-        return {"ok": True, "status_code": head_code, "error": None}
+        result = {"ok": True, "status_code": head_code, "error": None}
+        if tls_fallback_used:
+            result["tls_verification_failed"] = True
+        return result
 
     # Some endpoints disallow HEAD or return transient responses there.
     fallback_codes = {401, 403, 405, 429}
     if head_code in fallback_codes:
         try:
-            get_resp = requests.get(url, timeout=timeout, allow_redirects=True, headers=headers)
+            get_resp = _get_request(verify=not tls_fallback_used)
             get_code = get_resp.status_code
             get_resp.close()
             if 200 <= get_code < 400:
-                return {"ok": True, "status_code": get_code, "error": None}
+                result = {"ok": True, "status_code": get_code, "error": None}
+                if tls_fallback_used:
+                    result["tls_verification_failed"] = True
+                return result
+            if tls_fallback_used and get_code in fallback_codes:
+                return {
+                    "ok": True,
+                    "status_code": get_code,
+                    "error": None,
+                    "tls_verification_failed": True,
+                }
             return {
                 "ok": False,
                 "status_code": get_code,
