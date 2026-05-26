@@ -16,6 +16,7 @@ from ftplib import FTP
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 import threading
+import warnings
 
 try:
     import frontmatter  # type: ignore
@@ -23,6 +24,11 @@ except ImportError:  # pragma: no cover
     frontmatter = None
 import requests
 import yaml
+
+try:
+    from urllib3.exceptions import InsecureRequestWarning
+except Exception:  # pragma: no cover
+    InsecureRequestWarning = None
 
 # ---------------------------------------------------------------------------
 # URL STATUS CACHE
@@ -79,7 +85,7 @@ def cache_should_skip(url: str, cache: Dict[str, Any], ignore_cache: bool = Fals
     if not entry:
         return False, None
     # Skip if prior run recorded skip_reason we want to honor
-    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory'}:
+    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory', 'tls_cert_accessible'}:
         return True, entry
     return False, entry
 
@@ -216,15 +222,45 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
             safe_print(f"Checking file size for: {url}")
 
         # Use HEAD request to get headers without downloading content
-        response = requests.head(url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        tls_fallback_used = False
+        try:
+            response = requests.head(url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        except requests.exceptions.SSLError:
+            # Some otherwise-healthy sites fail cert validation in automation contexts.
+            # Retry without TLS verification and treat reachability as non-broken.
+            tls_fallback_used = True
+            if InsecureRequestWarning is not None:
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore", InsecureRequestWarning)
+                    response = requests.head(
+                        url,
+                        timeout=REQUEST_TIMEOUT,
+                        allow_redirects=True,
+                        verify=False,
+                    )
+            else:
+                response = requests.head(
+                    url,
+                    timeout=REQUEST_TIMEOUT,
+                    allow_redirects=True,
+                    verify=False,
+                )
 
         # Check if request was successful
         info: Dict[str, Any] = {
             'status_code': response.status_code,
             'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
         }
+        if tls_fallback_used:
+            info['tls_verification_failed'] = True
 
         if response.status_code != 200:
+            if tls_fallback_used and response.status_code in {401, 403, 405, 429}:
+                safe_print(
+                    f"  ⚠️  TLS verification failed, but endpoint responded with HTTP {response.status_code}; treating as accessible"
+                )
+                info['skip_reason'] = 'tls_cert_accessible'
+                return None, None, info
             error_msg = f"HTTP {response.status_code} error when accessing file"
             safe_print(f"  ⚠️  {error_msg}")
             info['error'] = error_msg
@@ -248,6 +284,10 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
         content_length = response.headers.get('Content-Length')
 
         if content_length is None:
+            if tls_fallback_used:
+                safe_print("  ⚠️  TLS verification failed; endpoint is reachable but no Content-Length header was found")
+                info['skip_reason'] = 'tls_cert_accessible'
+                return None, None, info
             error_msg = "No Content-Length header found"
             safe_print(f"  ⚠️  {error_msg}")
             info['error'] = error_msg
@@ -259,6 +299,10 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
             info['content_length'] = file_size
             return file_size, None, info
         except ValueError:
+            if tls_fallback_used:
+                safe_print("  ⚠️  TLS verification failed; endpoint is reachable but Content-Length is not parseable")
+                info['skip_reason'] = 'tls_cert_accessible'
+                return None, None, info
             error_msg = f"Invalid Content-Length value: {content_length}"
             safe_print(f"  ⚠️  {error_msg}")
             info['error'] = error_msg

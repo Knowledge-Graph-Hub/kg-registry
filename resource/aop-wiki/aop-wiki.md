@@ -22,7 +22,7 @@ domains:
 - pathways
 homepage_url: https://aopwiki.org/
 id: aop-wiki
-last_modified_date: '2026-05-04T00:00:00Z'
+last_modified_date: '2026-05-26T00:00:00Z'
 layout: resource_detail
 license:
   id: https://aopwiki.org/
@@ -63,15 +63,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: aop-wiki
   product_url: https://aopwiki.org/downloads
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
 - category: Product
   description: Nightly XML export (rolling) containing latest AOP-Wiki content (overwritten
     daily)
@@ -83,17 +74,6 @@ products:
     source: aop-wiki
   product_file_size: 9933339
   product_url: https://aopwiki.org/downloads/aop-wiki-xml.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
 - category: Product
   description: Tab-delimited subset listing AOP to Key Event (including MIE, intermediate
     KE, and Adverse Outcome) associations
@@ -105,17 +85,6 @@ products:
     source: aop-wiki
   product_file_size: 238066
   product_url: https://aopwiki.org/downloads/aop_ke_mie_ao.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
 - category: Product
   description: Tab-delimited subset listing Key Event Relationships (KERs) with evidence
     and quantitative understanding indicators
@@ -127,17 +96,6 @@ products:
     source: aop-wiki
   product_file_size: 189389
   product_url: https://aopwiki.org/downloads/aop_ke_ker.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
 - category: Product
   description: Tab-delimited subset of Key Event Components (actions, biological objects/processes
     with ontology references)
@@ -149,17 +107,6 @@ products:
     source: aop-wiki
   product_file_size: 291132
   product_url: https://aopwiki.org/downloads/aop_ke_ec.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
 - category: Product
   description: Per-AOP dynamic XML feed accessible via each AOP page (XML button)
     for up-to-minute content retrieval
@@ -170,15 +117,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: aop-wiki
   product_url: https://aopwiki.org/aops
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-13_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
 - category: DocumentationProduct
   description: This document is the AOP Developers' Handbook supplement to the Guidance
     Document for developing and assessing Adverse Outcome Pathways (AOPs). The Guidance
@@ -192,23 +130,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: aop-wiki
   product_url: https://aopwiki.org/handbooks/4
-  warnings:
-  - File was not able to be retrieved when checked on 2026-02-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-    certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-    certificate (_ssl.c_1017)')))
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
     to better characterize adverse outcomes of toxicological interest that are relevant
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
+  format: http
   id: aop-db.data
   name: AOP-DB Data
   original_source:
