@@ -84,10 +84,21 @@ layout: default
     {%- endif -%}
   {%- endfor -%}
   {%- if has_eval -%}
-  <div class="mb-3">
+  <div class="mb-3 d-flex flex-wrap gap-2">
+    <a class="btn btn-outline-secondary btn-sm" href="{{ '/compare/' | relative_url }}?resource={{ page.id }}" aria-label="Compare {{ page.id }}" title="Compare">
+      <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+      <span class="ms-1">Compare</span>
+    </a>
     <a class="btn btn-outline-primary btn-sm" href="{{ eval_file }}" aria-label="View evaluation for {{ page.id }}" title="Evaluation">
       <i class="bi bi-clipboard-check" aria-hidden="true"></i>
       <span class="ms-1">Evaluation</span>
+    </a>
+  </div>
+  {%- else -%}
+  <div class="mb-3">
+    <a class="btn btn-outline-secondary btn-sm" href="{{ '/compare/' | relative_url }}?resource={{ page.id }}" aria-label="Compare {{ page.id }}" title="Compare">
+      <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+      <span class="ms-1">Compare</span>
     </a>
   </div>
   {%- endif -%}
