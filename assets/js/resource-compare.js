@@ -76,26 +76,31 @@
     const rightDomains = collectDomains(rightResource);
     const leftSources = collectOriginalSources(leftResource);
     const rightSources = collectOriginalSources(rightResource);
+    const leftCategory = normalize(leftResource && leftResource.category);
+    const rightCategory = normalize(rightResource && rightResource.category);
 
     const sharedDomains = setIntersection(leftDomains, rightDomains);
     const sharedOriginalSources = setIntersection(leftSources, rightSources);
+    const sharedCategory = leftCategory && leftCategory === rightCategory ? leftResource.category : '';
 
     const domainUnion = setUnion(leftDomains, rightDomains);
     const sourceUnion = setUnion(leftSources, rightSources);
+    const categoryUnionSize = sharedCategory ? 1 : 2;
 
-    const weightedShared = sharedDomains.length * 2 + sharedOriginalSources.length * 3;
-    const weightedUnion = domainUnion.size * 2 + sourceUnion.size * 3;
+    const weightedShared = sharedDomains.length * 2 + sharedOriginalSources.length * 3 + (sharedCategory ? 4 : 0);
+    const weightedUnion = domainUnion.size * 2 + sourceUnion.size * 3 + categoryUnionSize * 4;
     const similarityScore = weightedUnion ? Number(((weightedShared / weightedUnion) * 100).toFixed(1)) : 0;
 
     return {
       similarityScore,
       sharedDomains,
       sharedOriginalSources,
+      sharedCategory,
       leftDomains,
       rightDomains,
       leftSources,
       rightSources,
-      sharedFeatureCount: sharedDomains.length + sharedOriginalSources.length
+      sharedFeatureCount: sharedDomains.length + sharedOriginalSources.length + (sharedCategory ? 1 : 0)
     };
   }
 
@@ -230,6 +235,7 @@
 
     const sharedDomains = renderChipList(comparison.sharedDomains, 'No shared domains.');
     const sharedSources = renderChipList(comparison.sharedOriginalSources, 'No shared original sources.', getSourceUrl);
+    const sharedCategoryLabel = comparison.sharedCategory ? categoryLabel(comparison.sharedCategory) : 'Different categories';
 
     return `
       <div class="card compare-card shadow-sm mb-4">
@@ -243,6 +249,7 @@
                 <div class="small text-uppercase compare-muted fw-semibold mb-2">Similarity</div>
                 <div class="compare-score ${scoreClass}">${comparison.similarityScore.toFixed(1)}</div>
                 <div class="compare-muted mt-2">${comparison.sharedFeatureCount} shared feature${comparison.sharedFeatureCount === 1 ? '' : 's'}</div>
+                <div class="mt-2"><i class="bi bi-${categoryIcon(comparison.sharedCategory || leftResource.category)}"></i> ${escapeHtml(sharedCategoryLabel)}</div>
               </div>
             </div>
             <div class="col-lg-5">
