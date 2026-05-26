@@ -59,6 +59,23 @@ permalink: /compare/
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.7);
   }
+
+  .compare-field-label {
+    min-height: 2rem;
+    display: flex;
+    align-items: end;
+  }
+
+  .compare-field-subtitle {
+    min-height: 2.5rem;
+  }
+
+  @media (max-width: 991.98px) {
+    .compare-field-label,
+    .compare-field-subtitle {
+      min-height: 0;
+    }
+  }
 </style>
 
 <div class="compare-hero mb-4">
@@ -69,7 +86,7 @@ permalink: /compare/
         <h1 class="mb-2">Compare KG-Registry Resources</h1>
         <p class="lead mb-0" style="max-width: 54rem;">
           Compare one resource against the registry or compare a specific pair by the features they share:
-          domains and original sources.
+          category, domains, and original sources.
         </p>
       </div>
     </div>
@@ -80,16 +97,16 @@ permalink: /compare/
   <div class="card-body p-4">
     <form id="compare-form" class="row g-3 align-items-end">
       <div class="col-lg-5">
-        <label for="resource-id" class="form-label fw-semibold">Primary resource ID</label>
+        <label for="resource-id" class="form-label fw-semibold compare-field-label">Primary resource ID</label>
         <input id="resource-id" name="resource" class="form-control form-control-lg" list="resource-id-list" placeholder="e.g. raras" autocomplete="off" spellcheck="false" />
         <datalist id="resource-id-list"></datalist>
-        <div class="form-text">Enter a KG-Registry resource ID or resource name.</div>
+        <div class="form-text compare-field-subtitle">Enter a KG-Registry resource ID or resource name.</div>
       </div>
       <div class="col-lg-5">
-        <label for="compare-id" class="form-label fw-semibold">Second resource ID <span class="text-muted fw-normal">(optional)</span></label>
+        <label for="compare-id" class="form-label fw-semibold compare-field-label">Second resource ID</label>
         <input id="compare-id" name="compare" class="form-control form-control-lg" list="compare-id-list" placeholder="Leave blank to compare against the registry" autocomplete="off" spellcheck="false" />
         <datalist id="compare-id-list"></datalist>
-        <div class="form-text">If you provide a second ID, the page compares only those two resources.</div>
+        <div class="form-text compare-field-subtitle">Optional. If provided, the page compares only those two resources.</div>
       </div>
       <div class="col-lg-2 d-grid gap-2">
         <button class="btn btn-primary btn-lg" type="submit">

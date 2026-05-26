@@ -310,7 +310,7 @@
           <div class="d-flex justify-content-between flex-wrap gap-2 align-items-center mb-3">
             <div>
               <h2 class="h4 mb-1">Closest matches</h2>
-              <div class="compare-muted">Sorted by weighted overlap of domains and original sources.</div>
+              <div class="compare-muted">Sorted by weighted overlap of category, domains, and original sources.</div>
             </div>
             <div class="compare-muted small">Top ${matches.length} of ${Math.max(state.resources.length - 1, 0)}</div>
           </div>
