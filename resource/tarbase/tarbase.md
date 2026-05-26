@@ -129,7 +129,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tarbase
-  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/downloads
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
