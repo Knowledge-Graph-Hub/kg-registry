@@ -55,12 +55,12 @@ products:
     retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-drug-annotation-20200324.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -92,12 +92,12 @@ products:
     retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1028)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/repo-sample-annotation-20240610.txt (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate

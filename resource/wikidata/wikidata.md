@@ -252,6 +252,54 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikidata
   product_url: https://frink.apps.renci.org/ldf/wikidata
+- category: GraphicalInterface
+  description: Main Raras portal for searching rare diseases, symptoms, genes, and
+    patient communities
+  format: http
+  id: raras.portal
+  name: Raras Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/
+- category: GraphicalInterface
+  description: Rare disease encyclopedia for browsing disease families, disease records,
+    and related knowledge graph content
+  format: http
+  id: raras.encyclopedia
+  name: Raras Encyclopedia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/explorar
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:
 - Wikidata

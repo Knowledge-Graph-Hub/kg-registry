@@ -56,12 +56,14 @@ products:
     source: openpredict
   product_url: https://openpredict.semanticscience.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 405 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 405 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-03-30: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 405 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.1093/bioinformatics/btab540
 repository: https://github.com/MaastrichtU-IDS/translator-openpredict

@@ -226,10 +226,12 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
   format: txt
@@ -242,6 +244,54 @@ products:
     source: orphanet
   product_file_size: 1130936
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
+- category: GraphicalInterface
+  description: Main Raras portal for searching rare diseases, symptoms, genes, and
+    patient communities
+  format: http
+  id: raras.portal
+  name: Raras Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/
+- category: GraphicalInterface
+  description: Rare disease encyclopedia for browsing disease families, disease records,
+    and related knowledge graph content
+  format: http
+  id: raras.encyclopedia
+  name: Raras Encyclopedia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/explorar
 repository: https://github.com/Orphanet
 taxon:
 - NCBITaxon:9606

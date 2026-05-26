@@ -88,6 +88,11 @@ products:
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Conservation data including PhastCons scores for 100 vertebrates from
     UCSC genome browser
@@ -108,6 +113,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -136,6 +146,11 @@ products:
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Host gene information with functional annotations from Gene Ontology
   format: http
@@ -155,6 +170,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -182,6 +202,11 @@ products:
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Non-canonical snoRNA-RNA interactions from RISE database
   format: http
@@ -201,6 +226,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -229,6 +259,11 @@ products:
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: snoRNA and host gene abundance data from TGIRT-Seq across tissues and
     cancer cell lines
@@ -249,6 +284,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -277,6 +317,11 @@ products:
     Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/rRNA_modifications/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: snoRNA copy information based on RFAM classification
   format: http
@@ -300,6 +345,11 @@ products:
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Exportable data tables with advanced search and filtering capabilities
   format: http
@@ -319,6 +369,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -357,6 +412,11 @@ products:
     Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/about/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: DocumentationProduct
   description: Interactive tutorial for navigating and using snoDB features
   format: http
@@ -376,6 +436,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/tutorial/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -400,6 +465,11 @@ products:
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
+    Max retries exceeded with url: /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
     to URL: HTTPSConnectionPool(host=''bioinfo-scottgroup.med.usherbrooke.ca'', port=443):
     Max retries exceeded with url: /snoDB/experiment_details/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local

@@ -1399,10 +1399,12 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
     databases
@@ -1420,10 +1422,12 @@ products:
     source: gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: ClinVar gene associated with disease/phenotype edges
   format: csv
@@ -1436,6 +1440,54 @@ products:
     source: prokn
   product_file_size: 16911644
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_CLINVAR.Gene.GENE_ASSOCIATED_WITH_DISEASE_OR_PHENOTYPE.DiseaseOrPhenotype.edges.csv
+- category: GraphicalInterface
+  description: Main Raras portal for searching rare diseases, symptoms, genes, and
+    patient communities
+  format: http
+  id: raras.portal
+  name: Raras Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/
+- category: GraphicalInterface
+  description: Rare disease encyclopedia for browsing disease families, disease records,
+    and related knowledge graph content
+  format: http
+  id: raras.encyclopedia
+  name: Raras Encyclopedia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/explorar
 publications:
 - authors:
   - Landrum MJ

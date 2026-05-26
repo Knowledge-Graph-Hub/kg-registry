@@ -4,8 +4,8 @@
     "missing_last_modified_date": 0,
     "modified_after_creation": 650,
     "stale_over_365_days": 6,
-    "unchanged_since_creation": 139,
-    "with_both_dates": 789
+    "unchanged_since_creation": 140,
+    "with_both_dates": 790
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -1107,6 +1107,7 @@
       "pso",
       "pw",
       "rampdb",
+      "raras",
       "rbo",
       "rdbridge",
       "reacto",
@@ -3869,6 +3870,9 @@
       "rampdb",
       "rampdb.api",
       "rampdb.database",
+      "raras",
+      "raras.encyclopedia",
+      "raras.portal",
       "rbo",
       "rbo.obo",
       "rbo.owl",
@@ -4699,6 +4703,7 @@
       "pankgraph",
       "pharmebinet",
       "phaseskg",
+      "raras",
       "rdkg",
       "spoke-okn",
       "tbkg",
@@ -5473,6 +5478,7 @@
       "pubtator",
       "pw",
       "rampdb",
+      "raras",
       "rbo",
       "rdbridge",
       "rdkg",
@@ -6134,6 +6140,7 @@
       "pubmedcentral",
       "pubtator",
       "pw",
+      "raras",
       "rbo",
       "rdbridge",
       "rdkg",
@@ -6814,6 +6821,7 @@
       "psygenet",
       "pubmedcentral",
       "rampdb",
+      "raras",
       "rdkg",
       "rdp",
       "rediportal",
@@ -10026,6 +10034,8 @@
       "pw.owl",
       "rampdb.api",
       "rampdb.database",
+      "raras.encyclopedia",
+      "raras.portal",
       "rbo.json",
       "rbo.obo",
       "rbo.owl",
@@ -11824,6 +11834,7 @@
       "pubtator",
       "pw",
       "rampdb",
+      "raras",
       "rbo",
       "rdbridge",
       "rdkg",
@@ -12688,6 +12699,7 @@
       "prsatlas",
       "psygenet",
       "pubmed",
+      "raras",
       "rdkg",
       "redrugs",
       "regl",
@@ -12721,56 +12733,56 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-05-23T16:52:40Z",
+  "generated_at": "2026-05-26T15:02:29Z",
   "knowledge_graph_evaluations": {
-    "knowledge_graph_total": 144,
+    "knowledge_graph_total": 145,
     "with_evaluation_page": 120,
-    "without_evaluation_page": 24
+    "without_evaluation_page": 25
   },
   "links": {
     "broken_urls": 426,
     "cache_hits": 3515,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 3089,
-    "live_checked_urls": 0,
+    "healthy_urls": 3091,
+    "live_checked_urls": 2,
     "mode": "live",
-    "total_unique_urls": 3515,
+    "total_unique_urls": 3517,
     "unchecked_urls": 0
   },
   "products": {
     "missing_format": 825,
     "missing_original_source": 13,
     "missing_product_url": 107,
-    "retrieval_warning_mentions": 377,
-    "total": 5285
+    "retrieval_warning_mentions": 642,
+    "total": 5301
   },
-  "resource_count": 789,
+  "resource_count": 790,
   "resources": {
     "contacts_with_org_connection": 226,
-    "contacts_without_org_connection": 419,
+    "contacts_without_org_connection": 420,
     "missing_contacts": 144,
     "missing_description": 0,
-    "missing_fairsharing_id": 781,
+    "missing_fairsharing_id": 782,
     "missing_homepage_url": 38,
-    "missing_infores_id": 574,
+    "missing_infores_id": 575,
     "missing_license": 278,
-    "missing_repository": 362,
+    "missing_repository": 363,
     "status_counts": {
-      "active": 667,
+      "active": 668,
       "inactive": 103,
       "orphaned": 7,
       "unknown": 7,
       "unresponsive": 5
     },
     "stub_count": 0,
-    "total": 789,
+    "total": 790,
     "with_broken_links": 310,
     "without_products": 36
   },
   "scoring": {
     "average_score": 9.21,
     "median_score": 8.0,
-    "resources_with_issues": 788,
+    "resources_with_issues": 789,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],

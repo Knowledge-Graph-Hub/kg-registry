@@ -1268,6 +1268,54 @@ products:
     source: mondo
   product_file_size: 1012883
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
+- category: GraphicalInterface
+  description: Main Raras portal for searching rare diseases, symptoms, genes, and
+    patient communities
+  format: http
+  id: raras.portal
+  name: Raras Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/
+- category: GraphicalInterface
+  description: Rare disease encyclopedia for browsing disease families, disease records,
+    and related knowledge graph content
+  format: http
+  id: raras.encyclopedia
+  name: Raras Encyclopedia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: raras
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: icd10
+  - relation_type: prov:wasInformedBy
+    source: icd11
+  - relation_type: prov:wasInformedBy
+    source: wikidata
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  product_url: https://raras.org/explorar
 publications:
 - id: https://doi.org/10.1093/genetics/iyaf215
   title: 'Mondo: Integrating Disease Terminology Across Communities'

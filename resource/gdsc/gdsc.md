@@ -89,10 +89,12 @@ products:
     source: gdsc
   product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -288,7 +290,7 @@ publications:
   - Menden MP
   - Schubert M
   - Aben N
-  - "Gon\xE7alves E"
+  - Gonçalves E
   - Barthorpe S
   - Lightfoot H
   - Cokelaer T

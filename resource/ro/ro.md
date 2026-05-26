@@ -100,6 +100,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: For use in neuroscience
   format: owl

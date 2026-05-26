@@ -457,6 +457,7 @@ psygenet	PsyGeNET	DataSource	http://www.psygenet.org/	resource/psygenet/psygenet
 pubmedcentral	PubMed Central (PMC)	DataSource	https://pmc.ncbi.nlm.nih.gov/	resource/pubmedcentral/pubmedcentral.md
 pubtator	PubTator	DataSource	https://www.ncbi.nlm.nih.gov/research/pubtator3/	resource/pubtator/pubtator.md
 pw	Pathway ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/search.html	resource/pw/pw.md
+raras	Raras	KnowledgeGraph	https://raras.org/	resource/raras/raras.md
 rbo	Radiation Biology Ontology	Ontology	https://github.com/Radiobiology-Informatics-Consortium/RBO	resource/rbo/rbo.md
 rdbridge	RDBridge	KnowledgeGraph	http://rdb.lifesynther.com/	resource/rdbridge/rdbridge.md
 rdkg	Rare Disease Knowledge Graph	KnowledgeGraph	https://frink.renci.org/registry/kgs/rdkg/	resource/rdkg/rdkg.md
