@@ -113,6 +113,50 @@
     return resource.name ? `${resource.name} (${resource.id})` : resource.id;
   }
 
+  function categoryIcon(category) {
+    const categoryIcons = {
+      Aggregator: 'grid-3x3',
+      Resource: 'archive',
+      KnowledgeGraph: 'globe',
+      DataSource: 'shop',
+      DataModel: 'diagram-3',
+      Ontology: 'diagram-2',
+      GraphProduct: 'globe',
+      Product: 'box',
+      MappingProduct: 'map',
+      ProcessProduct: 'gear',
+      DataModelProduct: 'diagram-3',
+      OntologyProduct: 'diagram-2',
+      GraphicalInterface: 'window',
+      ProgrammingInterface: 'code-square',
+      DocumentationProduct: 'journal-text'
+    };
+
+    return categoryIcons[category] || 'box';
+  }
+
+  function categoryLabel(category) {
+    const categoryLabels = {
+      Aggregator: 'Aggregator',
+      Resource: 'Resource',
+      KnowledgeGraph: 'Knowledge Graph',
+      DataSource: 'Data Source',
+      DataModel: 'Data Model',
+      Ontology: 'Ontology',
+      GraphProduct: 'Graph Product',
+      Product: 'Product',
+      MappingProduct: 'Mapping Product',
+      ProcessProduct: 'Process Product',
+      DataModelProduct: 'Data Model Product',
+      OntologyProduct: 'Ontology Product',
+      GraphicalInterface: 'Graphical Interface',
+      ProgrammingInterface: 'Programming Interface',
+      DocumentationProduct: 'Documentation Product'
+    };
+
+    return categoryLabels[category] || category || 'Resource';
+  }
+
   function renderChipList(values, emptyLabel, makeHref) {
     if (!values.length) {
       return `<span class="text-muted">${escapeHtml(emptyLabel)}</span>`;
@@ -268,6 +312,7 @@
             <table class="table table-hover align-middle compare-table mb-0">
               <thead>
                 <tr>
+                  <th>Category</th>
                   <th>Resource</th>
                   <th>Similarity</th>
                   <th>Shared domains</th>
@@ -278,6 +323,12 @@
               <tbody>
                 ${matches.map(({ candidate, comparison }) => `
                   <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-${categoryIcon(candidate.category)}"></i>
+                        <span>${escapeHtml(categoryLabel(candidate.category))}</span>
+                      </div>
+                    </td>
                     <td>
                       <div class="fw-semibold">${escapeHtml(candidate.name || candidate.id)}</div>
                       <div class="small text-muted font-monospace">${escapeHtml(candidate.id)}</div>

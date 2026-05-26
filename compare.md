@@ -72,9 +72,6 @@ permalink: /compare/
           domains and original sources.
         </p>
       </div>
-      <div class="compare-hero-badge">
-        Live from <span class="font-monospace">registry/kgs.yml</span>
-      </div>
     </div>
   </div>
 </div>
