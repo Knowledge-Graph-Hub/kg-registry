@@ -5,6 +5,14 @@ description: Knowledge graph constructed from FDA MAUDE adverse event reports us
   standardized FDA product codes.
 activity_status: active
 homepage_url: https://github.com/Prabhadeus/Proto-OKN
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: psingh37@pride.hofstra.edu
+  - contact_type: github
+    value: Prabhadeus
+  label: Prabhjot Singh
 products:
 - id: maudekg.sparql
   name: FDA MAUDE Adverse Event Knowledge Graph SPARQL
@@ -28,15 +36,16 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
-contacts: []
+last_modified_date: '2026-05-27T00:00:00Z'
 domains:
-- general
+- biomedical
+- clinical
+- pharmacology
 ---
 FDA MAUDE Adverse Event Knowledge Graph
 
 ## Description
 
-Knowledge graph constructed from FDA MAUDE adverse event reports using standardized FDA product codes.
+Knowledge graph constructed from FDA MAUDE adverse event reports retrieved via the openFDA MAUDE API using standardized FDA product codes.
 
 *This resource was automatically synchronized from the FRINK OKN registry.*

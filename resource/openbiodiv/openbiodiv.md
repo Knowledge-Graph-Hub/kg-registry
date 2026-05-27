@@ -31,6 +31,8 @@ products:
     original_source:
       - source: openbiodiv
         relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: SPARQL endpoint for complex semantic queries across the biodiversity knowledge graph, enabling advanced queries combining taxonomic, literature, specimen, and ecological data
     format: http
@@ -41,6 +43,8 @@ products:
     original_source:
       - source: openbiodiv
         relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to OpenBiodiv biodiversity data with Swagger API documentation for easy integration
     format: http
@@ -50,6 +54,8 @@ products:
     product_url: https://graph.openbiodiv.net/webapi
     original_source:
       - source: openbiodiv
+        relation_type: prov:hadPrimarySource
+      - source: gbif
         relation_type: prov:hadPrimarySource
   - category: OntologyProduct
     description: OpenBioDiv-O, the OpenBiodiv Ontology
@@ -109,7 +115,7 @@ publications:
 repository: https://github.com/pensoft/OpenBiodiv
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 ---
 
 # OpenBiodiv
