@@ -12,7 +12,7 @@ domains:
   - health
 homepage_url: https://dd-kg-ui.cfde.cloud/about
 id: cfde-ddkg
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 name: Data Distillery Knowledge Graph (DDKG)
 products:
@@ -24,6 +24,10 @@ products:
     original_source:
       - source: cfde-ddkg
         relation_type: prov:hadPrimarySource
+      - source: ubkg
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
     product_url: https://dd-kg-ui.cfde.cloud/
   - category: Product
     description: JSON manifest listing downloadable DDKG resources and files.
@@ -32,6 +36,10 @@ products:
     name: DDKG Downloads Manifest
     original_source:
       - source: cfde-ddkg
+        relation_type: prov:hadPrimarySource
+      - source: ubkg
+        relation_type: prov:hadPrimarySource
+      - source: umls
         relation_type: prov:hadPrimarySource
     product_file_size: 5216
     product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json
