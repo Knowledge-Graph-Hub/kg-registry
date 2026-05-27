@@ -40,11 +40,22 @@
     return new Set((resource && Array.isArray(resource.domains) ? resource.domains : []).filter(Boolean).map(domain => String(domain).trim()));
   }
 
+  function isProductOwnedByResource(resourceId, product) {
+    if (typeof resourceId !== 'string' || !resourceId.trim()) return false;
+    if (!product || typeof product.id !== 'string') return false;
+
+    const normalizedResourceId = resourceId.trim();
+    const normalizedProductId = product.id.trim();
+    return normalizedProductId === normalizedResourceId || normalizedProductId.startsWith(`${normalizedResourceId}.`);
+  }
+
   function collectOriginalSources(resource) {
     const originalSources = new Set();
+    const resourceId = resource && typeof resource.id === 'string' ? resource.id : '';
     const products = resource && Array.isArray(resource.products) ? resource.products : [];
 
     products.forEach(product => {
+      if (!isProductOwnedByResource(resourceId, product)) return;
       if (!product || !Array.isArray(product.original_source)) return;
       product.original_source.forEach(sourceAssociation => {
         const sourceId = sourceAssociationId(sourceAssociation);
