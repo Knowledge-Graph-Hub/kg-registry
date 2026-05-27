@@ -33,6 +33,8 @@ products:
   original_source:
   - source: biobricks-mesh
     relation_type: prov:hadPrimarySource
+  - source: mesh
+    relation_type: prov:hadPrimarySource
   product_url: https://apps.okn.us/biobricks-mesh/sparql
 - id: biobricks-mesh.tpf
   name: BioBricks MeSH TPF
@@ -42,9 +44,11 @@ products:
   original_source:
   - source: biobricks-mesh
     relation_type: prov:hadPrimarySource
+  - source: mesh
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/mesh-kg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 ---
 BioBricks MeSH
 
