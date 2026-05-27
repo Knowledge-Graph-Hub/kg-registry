@@ -10,11 +10,36 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-03-30T00:00:00Z'
-contacts: []
-products: []
+last_modified_date: '2026-05-27T00:00:00Z'
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jinlian.wang@uth.tmc.edu
+  - contact_type: github
+    value: wnagjl99
+  label: Jinlian Wang
+products:
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for RDKG
+  format: http
+  id: rdkg.tpf
+  name: RDKG TPF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://apps.okn.us/ldf/rdkg
 domains:
-- general
+- biomedical
+- clinical
 ---
 Rare Disease Knowledge Graph
 
