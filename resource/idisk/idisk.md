@@ -72,8 +72,6 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: umls
 publications:
 - id: doi:10.1093/jamia/ocz216
   preferred: true

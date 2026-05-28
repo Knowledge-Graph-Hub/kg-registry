@@ -1,80 +1,97 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://aact.ctti-clinicaltrials.org/contactus
+  label: Clinical Trials Transformation Initiative (CTTI)
 creation_date: '2025-10-30T00:00:00Z'
-description: AACT is a publicly available relational PostgreSQL database that contains all protocol and result data elements from every study registered in ClinicalTrials.gov, refreshed daily from the ClinicalTrials.gov registry.
+description: AACT is a publicly available relational PostgreSQL database that contains
+  all protocol and result data elements from every study registered in ClinicalTrials.gov,
+  refreshed daily from the ClinicalTrials.gov registry.
 domains:
-  - clinical
-  - public health
-  - translational
+- clinical
+- public health
+- translational
+homepage_url: https://aact.ctti-clinicaltrials.org/
 id: aact
 infores_id: aact
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: Aggregate Analysis of ClinicalTrials.gov (AACT) Database
-homepage_url: https://aact.ctti-clinicaltrials.org/
-repository: https://github.com/ctti-clinicaltrials/aact
-contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://aact.ctti-clinicaltrials.org/contactus
-    label: Clinical Trials Transformation Initiative (CTTI)
 products:
-  - category: GraphicalInterface
-    description: Web-based SQL query playground for running queries on AACT data directly from the browser
-    format: http
-    id: aact.playground
-    name: AACT Playground
-    original_source:
-      - source: aact
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/playground
-  - category: Product
-    description: Cloud-based PostgreSQL database with daily refreshed clinical trial data, accessible via standard PostgreSQL clients
-    format: postgres
-    id: aact.database
-    name: AACT Cloud Database
-    original_source:
-      - source: aact
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/connect
-  - category: Product
-    description: Static downloadable copies of the complete AACT database
-    format: postgres
-    id: aact.downloads
-    name: AACT Database Downloads
-    original_source:
-      - source: aact
-        relation_type: prov:hadPrimarySource
-      - source: clinicaltrialsgov
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/downloads
-  - category: DocumentationProduct
-    description: Complete database schema documentation showing table structure and relationships
-    id: aact.schema
-    name: AACT Database Schema
-    original_source:
-      - source: aact
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/schema
-  - category: DocumentationProduct
-    description: Data dictionary with detailed information about all AACT data elements and their relationship to ClinicalTrials.gov definitions
-    id: aact.dictionary
-    name: AACT Data Dictionary
-    original_source:
-      - source: aact
-        relation_type: prov:hadPrimarySource
-    product_url: https://aact.ctti-clinicaltrials.org/data_dictionary
+- category: GraphicalInterface
+  description: Web-based SQL query playground for running queries on AACT data directly
+    from the browser
+  format: http
+  id: aact.playground
+  name: AACT Playground
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/playground
+- category: Product
+  description: Cloud-based PostgreSQL database with daily refreshed clinical trial
+    data, accessible via standard PostgreSQL clients
+  format: postgres
+  id: aact.database
+  name: AACT Cloud Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/connect
+- category: Product
+  description: Static downloadable copies of the complete AACT database
+  format: postgres
+  id: aact.downloads
+  name: AACT Database Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/downloads
+- category: DocumentationProduct
+  description: Complete database schema documentation showing table structure and
+    relationships
+  id: aact.schema
+  name: AACT Database Schema
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/schema
+- category: DocumentationProduct
+  description: Data dictionary with detailed information about all AACT data elements
+    and their relationship to ClinicalTrials.gov definitions
+  id: aact.dictionary
+  name: AACT Data Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/data_dictionary
+- category: Product
+  description: Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL
+    database containing all clinical trial data, updated daily
+  format: postgres
+  id: clinicaltrialsgov.aact
+  name: AACT Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  product_url: https://aact.ctti-clinicaltrials.org/
+repository: https://github.com/ctti-clinicaltrials/aact
 synonyms:
-  - AACT
-  - Aggregate Analysis of ClinicalTrial.gov
+- AACT
+- Aggregate Analysis of ClinicalTrial.gov
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # Aggregate Analysis of ClinicalTrials.gov (AACT) Database
 
 ## Overview

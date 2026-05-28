@@ -79,16 +79,22 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -104,14 +110,20 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -128,16 +140,22 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -153,6 +171,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_file_size: 5629618
   product_url: https://zenodo.org/records/8117748/files/entities.dict
 - category: Product
@@ -170,6 +192,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_file_size: 1648
   product_url: https://zenodo.org/records/8117748/files/relations.dict
 publications:

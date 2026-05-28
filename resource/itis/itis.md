@@ -122,6 +122,83 @@ products:
     source: obo-db-ingest
   product_file_size: 9497861
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.tsv
+- category: Product
+  description: Annual comprehensive Catalogue of Life releases (Base Release with
+    expert curation and Extended Release with broader source integration) with permanent
+    archiving and DOI assignment
+  id: catalogue-of-life.annual-releases
+  name: Annual Releases
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: https://www.catalogueoflife.org/
+- category: Product
+  description: Downloadable Catalogue of Life datasets in multiple standardized formats
+    including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
+    and MySQL dumps
+  id: catalogue-of-life.downloads
+  name: Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: https://www.catalogueoflife.org/data/download
+  warnings:
+  - Automated checks may return HTTP 418 due to anti-bot challenge on catalogueoflife.org
+    download pages; URL is retained as the canonical human-access endpoint.
+- category: GraphicalInterface
+  description: Web interface for browsing, querying, and visualizing ecological networks
+  format: http
+  id: mangal.portal
+  name: mangal.io Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_url: https://mangal.io/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to network data and metadata
+  format: http
+  id: mangal.api
+  is_public: true
+  name: mangal.io API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_url: https://api.mangal.io/
+- category: DocumentationProduct
+  description: API documentation, user guides, and data model specification
+  format: http
+  id: mangal.docs
+  name: mangal.io Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_url: https://mangal.io/documentation
 taxon:
 - NCBITaxon:2759
 ---

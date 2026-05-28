@@ -239,6 +239,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 - category: GraphProduct
@@ -283,6 +295,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
 - category: ProgrammingInterface
@@ -329,6 +353,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_url: https://arax.ncats.io/
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -952,10 +988,12 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Graph database dump and additional relationship files for the Clinical
     Knowledge Graph.
@@ -1036,11 +1074,110 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j knowledge graph containing integrated gene sets from multiple
+    Common Fund programs with cross-references
+  dump_format: neo4j
+  format: neo4j
+  id: cfde-gse.graph
+  name: CFDE-GSE Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+- category: Product
+  description: Standardized gene set collections from Common Fund programs in GMT
+    format
+  id: cfde-gse.genesets
+  name: CFDE Gene Set Collections
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://gse.cfde.cloud/downloads/
+- category: GraphProduct
+  description: Neo4j graph database integrating Enrichr gene set libraries with genes,
+    terms, pathways, diseases, drugs, cell types, and other functional annotations
+  dump_format: neo4j
+  format: neo4j
+  id: enrichr-kg.graph
+  name: Enrichr-KG Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
 publications:
 - authors:
-  - "Janet Pi\xF1ero"
-  - "Juan Manuel Ram\xEDrez-Anguita"
-  - "Josep Sa\xFCch-Pitarch"
+  - Janet Piñero
+  - Juan Manuel Ramírez-Anguita
+  - Josep Saüch-Pitarch
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz

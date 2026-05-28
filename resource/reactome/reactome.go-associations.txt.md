@@ -10,6 +10,7 @@ original_source:
   source: reactome
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 835232
 product_url: https://download.reactome.org/96/gene_association.reactome.gz
 layout: product_detail
 ---

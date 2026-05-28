@@ -21,18 +21,6 @@ products:
   original_source:
   - source: evoweb
     relation_type: prov:hadPrimarySource
-  - source: corum
-    relation_type: prov:hadPrimarySource
-  - source: string
-    relation_type: prov:hadPrimarySource
-  - source: kegg
-    relation_type: prov:hadPrimarySource
-  - source: refseq
-    relation_type: prov:hadPrimarySource
-  - source: uniprot
-    relation_type: prov:hadPrimarySource
-  - source: ncbigene
-    relation_type: prov:hadPrimarySource
 - id: evoweb.tpf
   name: EvoWeb TPF
   description: Triple Pattern Fragments endpoint for EvoWeb
@@ -41,24 +29,12 @@ products:
   original_source:
   - source: evoweb
     relation_type: prov:hadPrimarySource
-  - source: corum
-    relation_type: prov:hadPrimarySource
-  - source: string
-    relation_type: prov:hadPrimarySource
-  - source: kegg
-    relation_type: prov:hadPrimarySource
-  - source: refseq
-    relation_type: prov:hadPrimarySource
-  - source: uniprot
-    relation_type: prov:hadPrimarySource
-  - source: ncbigene
-    relation_type: prov:hadPrimarySource
 collection:
 - okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 domains:
 - biomedical
 - genomics

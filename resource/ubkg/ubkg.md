@@ -298,7 +298,47 @@ products:
     source: petagraph
   - relation_type: prov:hadPrimarySource
     source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: lincs
   product_url: https://ubkg-downloads.xconsortia.org/
+- category: GraphicalInterface
+  description: Interactive web interface for browsing and querying Data Distillery
+    Knowledge Graph resources.
+  format: http
+  id: cfde-ddkg.portal
+  name: DDKG Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://dd-kg-ui.cfde.cloud/
+- category: Product
+  description: JSON manifest listing downloadable DDKG resources and files.
+  format: json
+  id: cfde-ddkg.downloads
+  name: DDKG Downloads Manifest
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-ddkg
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 5216
+  product_url: https://s3.amazonaws.com/maayan-kg/dd-kg/minio/downloads.json
 repository: https://github.com/x-atlas-consortia
 usages:
 - description: The Petagraph Knowledge Graph is built using UBKG as a scaffold.

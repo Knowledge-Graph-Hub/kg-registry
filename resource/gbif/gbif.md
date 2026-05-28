@@ -70,10 +70,12 @@ products:
     source: gbif
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Simple CSV format occurrence downloads with interpreted data and commonly
@@ -85,10 +87,12 @@ products:
     source: gbif
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
     and data formats documentation
@@ -111,14 +115,134 @@ products:
     source: gbif
   product_url: https://www.gbif.org/ipt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Annual comprehensive Catalogue of Life releases (Base Release with
+    expert curation and Extended Release with broader source integration) with permanent
+    archiving and DOI assignment
+  id: catalogue-of-life.annual-releases
+  name: Annual Releases
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: https://www.catalogueoflife.org/
+- category: Product
+  description: Downloadable Catalogue of Life datasets in multiple standardized formats
+    including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree,
+    and MySQL dumps
+  id: catalogue-of-life.downloads
+  name: Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: https://www.catalogueoflife.org/data/download
+  warnings:
+  - Automated checks may return HTTP 418 due to anti-bot challenge on catalogueoflife.org
+    download pages; URL is retained as the canonical human-access endpoint.
+- category: GraphicalInterface
+  description: Web interface for browsing, querying, and visualizing ecological networks
+  format: http
+  id: mangal.portal
+  name: mangal.io Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_url: https://mangal.io/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to network data and metadata
+  format: http
+  id: mangal.api
+  is_public: true
+  name: mangal.io API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_url: https://api.mangal.io/
+- category: DocumentationProduct
+  description: API documentation, user guides, and data model specification
+  format: http
+  id: mangal.docs
+  name: mangal.io Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_url: https://mangal.io/documentation
+- category: GraphicalInterface
+  description: Interactive web portal for searching, exploring, and discovering biodiversity
+    knowledge graph data including taxonomic treatments, species descriptions, and
+    literature-extracted information
+  format: http
+  id: openbiodiv.portal
+  is_public: true
+  name: OpenBiodiv Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openbiodiv
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: https://openbiodiv.net/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for complex semantic queries across the biodiversity
+    knowledge graph, enabling advanced queries combining taxonomic, literature, specimen,
+    and ecological data
+  format: http
+  id: openbiodiv.sparql
+  is_public: true
+  name: OpenBiodiv SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openbiodiv
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: http://graph.openbiodiv.net/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to OpenBiodiv biodiversity data
+    with Swagger API documentation for easy integration
+  format: http
+  id: openbiodiv.api
+  is_public: true
+  name: OpenBiodiv REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openbiodiv
+  - relation_type: prov:hadPrimarySource
+    source: gbif
+  product_url: https://graph.openbiodiv.net/webapi
 publications:
 - authors:
   - Robertson T
-  - "D\xF6ring M"
+  - Döring M
   - Guralnick R
   - Bloom D
   - Wieczorek J

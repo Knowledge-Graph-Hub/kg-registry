@@ -315,6 +315,88 @@ products:
     source: prokn
   product_file_size: 653113
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_PROTEOFORM.Protein.HAS_ISOFORM.Protein.edges.csv
+- category: GraphProduct
+  description: Neo4j knowledge graph containing integrated gene sets from multiple
+    Common Fund programs with cross-references
+  dump_format: neo4j
+  format: neo4j
+  id: cfde-gse.graph
+  name: CFDE-GSE Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+- category: Product
+  description: Standardized gene set collections from Common Fund programs in GMT
+    format
+  id: cfde-gse.genesets
+  name: CFDE Gene Set Collections
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://gse.cfde.cloud/downloads/
+- category: GraphProduct
+  description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
+    transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
+    118 million relationships.
+  dump_format: neo4j
+  edge_count: 118000000
+  id: petagraph.graph
+  name: Petagraph Knowledge Graph (Neo4J)
+  node_count: 32000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: petagraph
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  product_url: https://ubkg-downloads.xconsortia.org/
 publications:
 - authors:
   - Kahsay R

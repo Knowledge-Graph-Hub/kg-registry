@@ -129,6 +129,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cfde-gse
+  product_file_size: 2119955
   product_url: https://s3.amazonaws.com/maayan-kg/cfde-kg/042123/Gene.nodes.csv
 - category: Product
   description: Downloadable edge/triple CSV snapshots from the CFDE-GSE downloads
@@ -139,6 +140,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cfde-gse
+  product_file_size: 7307504
   product_url: https://s3.amazonaws.com/maayan-kg/cfde-kg/042123/KOMP2_Mouse_Phenotypes_2022.KOMP2_Mouse_Phenotype.Gene.edges.csv
 publications:
 - authors:

@@ -2598,10 +2598,12 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -2978,6 +2980,56 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  compression: targz
+  description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
+    and a glossary of relation types.
+  id: drkg.graph
+  name: DRKG graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drkg
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_file_size: 216650245
+  product_url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
+- category: GraphProduct
+  description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
+    transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
+    118 million relationships.
+  dump_format: neo4j
+  edge_count: 118000000
+  id: petagraph.graph
+  name: Petagraph Knowledge Graph (Neo4J)
+  node_count: 32000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: petagraph
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  product_url: https://ubkg-downloads.xconsortia.org/
 publications:
 - authors:
   - Szklarczyk D

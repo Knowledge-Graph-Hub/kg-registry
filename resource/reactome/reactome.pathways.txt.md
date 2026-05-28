@@ -7,6 +7,7 @@ name: Reactome Pathway List
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reactome
+product_file_size: 1583655
 product_url: https://download.reactome.org/96/ReactomePathways.txt
 layout: product_detail
 ---

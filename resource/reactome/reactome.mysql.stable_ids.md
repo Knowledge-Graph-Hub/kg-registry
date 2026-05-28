@@ -8,6 +8,7 @@ name: Reactome Stable IDs MySQL Dump
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reactome
+product_file_size: 259536887
 product_url: https://download.reactome.org/96/databases/gk_stable_ids.sql.gz
 layout: product_detail
 ---

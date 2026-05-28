@@ -262,14 +262,16 @@ products:
     source: repodb
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http
@@ -282,10 +284,12 @@ products:
     source: genecards
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial
     data, accessible via standard PostgreSQL clients
@@ -387,6 +391,108 @@ products:
     source: obo-db-ingest
   product_file_size: 19140027
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.tsv
+- category: Product
+  description: Raw format target information including all TTD target data
+  format: txt
+  id: ttd.targets-raw
+  name: TTD Targets Information
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Drug to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.drug-disease
+  name: Drug-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.target-disease
+  name: Target-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to drug mapping with mode of action information
+  format: csv
+  id: ttd.target-drug
+  name: Target-Drug Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Biomarker to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.biomarker-disease
+  name: Biomarker-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to compound mapping with experimental activity data
+  format: txt
+  id: ttd.target-compound
+  name: Target-Compound Activity Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
 publications:
 - authors:
   - Zarin DA

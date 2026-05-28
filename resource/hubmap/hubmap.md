@@ -147,10 +147,12 @@ products:
     source: hubmap
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 401 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 401 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   id: hubmap.data_ingest_portal
@@ -388,9 +390,108 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- category: GraphProduct
+  description: Neo4j knowledge graph containing integrated gene sets from multiple
+    Common Fund programs with cross-references
+  dump_format: neo4j
+  format: neo4j
+  id: cfde-gse.graph
+  name: CFDE-GSE Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+- category: Product
+  description: Standardized gene set collections from Common Fund programs in GMT
+    format
+  id: cfde-gse.genesets
+  name: CFDE Gene Set Collections
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://gse.cfde.cloud/downloads/
+- category: GraphProduct
+  description: Neo4j graph database integrating Enrichr gene set libraries with genes,
+    terms, pathways, diseases, drugs, cell types, and other functional annotations
+  dump_format: neo4j
+  format: neo4j
+  id: enrichr-kg.graph
+  name: Enrichr-KG Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
 publications:
 - authors:
-  - "Katy B\xF6rner"
+  - Katy Börner
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1

@@ -7,8 +7,12 @@ is_neo4j: true
 is_public: true
 name: CL-KG Neo4j graph instance
 original_source:
-  - source: cl-kg
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: cl-kg
+- relation_type: prov:hadPrimarySource
+  source: cl
+- relation_type: prov:hadPrimarySource
+  source: cellxgene
 product_url: https://cellular-semantics.sanger.ac.uk/browser/
 layout: product_detail
 ---

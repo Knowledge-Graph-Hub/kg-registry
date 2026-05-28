@@ -342,8 +342,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -480,6 +480,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
 - category: Product
   description: Meta knowledge graph and metadata describing the data sources, node
@@ -506,6 +508,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
 - category: MappingProduct
   description: Concept mappings between different terminology systems
@@ -563,10 +567,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -913,6 +919,508 @@ products:
   warnings:
   - Athena vocabulary downloads are prepared through the logged-in web application;
     stable direct public file URLs are not exposed.
+- category: GraphicalInterface
+  description: FORUM web application interface for semantic metabolomics exploration
+  id: forum.webapp
+  name: FORUM Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/
+- category: ProgrammingInterface
+  description: FORUM REST API for programmatic access to chemical-disease associations
+  id: forum.api
+  name: FORUM API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/#/openapi-documentation
+- category: DocumentationProduct
+  description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
+    the knowledge graph structure
+  id: forum.void
+  name: FORUM VoID Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 96461
+  product_url: https://forum.semantic-metabolomics.fr/.well-known/void
+- category: GraphicalInterface
+  description: Browser for complete Hetionet v1.0 graph database in Neo4j
+  format: http
+  id: hetionet.neo4j
+  name: Hetionet v1.0 Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_url: https://neo4j.het.io/browser/
+- category: GraphProduct
+  description: Hetionet v1.0 in JSON format
+  format: json
+  id: hetionet.data.json
+  name: Hetionet v1.0 JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 131
+  product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
+- category: GraphProduct
+  description: Hetionet v1.0 as a Neo4j database
+  id: hetionet.data.neo4j
+  name: Hetionet v1.0 Neo4j
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 132
+  product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
+- category: GraphProduct
+  description: Hetionet v1.0 as SIF edges
+  format: sif
+  id: hetionet.data.edges
+  name: Hetionet v1.0 edges (SIF)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 131
+  product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
+- category: GraphProduct
+  description: Hetionet v1.0 as TSV nodes
+  format: tsv
+  id: hetionet.data.nodes
+  name: Hetionet v1.0 nodes (TSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 427128
+  product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
+- category: ProcessProduct
+  description: Python package for creating, querying, and operating on hetnets (heterogeneous
+    networks)
+  id: hetnetpy
+  name: hetnetpy
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_url: https://github.com/hetio/hetnetpy
+- category: GraphicalInterface
+  description: Web application to search and explore connectivity between nodes in
+    Hetionet
+  format: http
+  id: hetionet.search
+  name: Hetnet Connectivity Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_url: https://het.io/search
+- category: GraphicalInterface
+  description: Graphical interface for MedKG
+  id: medkb.site
+  name: MedKG Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: http://pitools.niper.ac.in/medkg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: medkg
+- category: GraphProduct
+  description: Training data for the MIND knowledge graph containing 9,651,040 edges
+  format: tsv
+  id: mind.train
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Training Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: mechreponet
+  - relation_type: prov:hadPrimarySource
+    source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_url: https://zenodo.org/records/8117748/files/train.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+- category: GraphProduct
+  description: Test data for the MIND knowledge graph containing DrugCentral indications
+  format: tsv
+  id: mind.test
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Test Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: mechreponet
+  - relation_type: prov:hadPrimarySource
+    source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_url: https://zenodo.org/records/8117748/files/test.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+- category: GraphProduct
+  description: Validation data for the MIND knowledge graph containing DrugCentral
+    indications
+  format: tsv
+  id: mind.valid
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Validation Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: mechreponet
+  - relation_type: prov:hadPrimarySource
+    source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_url: https://zenodo.org/records/8117748/files/valid.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+- category: Product
+  description: Dictionary of entities in the MIND knowledge graph
+  format: tsv
+  id: mind.entities
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Entities Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: mechreponet
+  - relation_type: prov:hadPrimarySource
+    source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 5629618
+  product_url: https://zenodo.org/records/8117748/files/entities.dict
+- category: Product
+  description: Dictionary of relations in the MIND knowledge graph
+  format: tsv
+  id: mind.relations
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Relations Dictionary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: mechreponet
+  - relation_type: prov:hadPrimarySource
+    source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 1648
+  product_url: https://zenodo.org/records/8117748/files/relations.dict
+- category: Product
+  description: Encyclopedia of Life traits data in N-Triples RDF format
+  format: ntriples
+  id: tera.traits-nt
+  name: EOL Traits Data (N-Triples)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 968000000
+  product_url: https://zenodo.org/records/4244313/files/traits.nt
+- category: MappingProduct
+  description: Mapping file linking CAS Registry Numbers to MeSH identifiers
+  format: csv
+  id: tera.cas-to-mesh-csv
+  name: CAS to MeSH Mapping (CSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 109400
+  product_url: https://zenodo.org/records/4244313/files/cas_to_mesh.csv
+- category: MappingProduct
+  description: Mapping file linking ChEBI identifiers to MeSH identifiers
+  format: csv
+  id: tera.chebi-to-mesh-csv
+  name: ChEBI to MeSH Mapping (CSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 78600
+  product_url: https://zenodo.org/records/4244313/files/chebi_to_mesh.csv
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
 ---
 # Medical Subject Headings (MeSH)

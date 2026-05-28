@@ -1,12 +1,16 @@
 ---
 category: GraphicalInterface
-description: Web portal for exploring reproductive toxicology knowledge with chemical-outcome relationship visualization
+description: Public web interface for querying and exploring ReproTox-KG relationships.
 format: http
 id: reprotox-kg.portal
 name: ReproTox-KG Explorer
-product_url: https://reprotox-kg.net/
-layout: product_detail
 original_source:
-  - source: reprotox-kg
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: reprotox-kg
+- relation_type: prov:hadPrimarySource
+  source: pubmed
+- relation_type: prov:hadPrimarySource
+  source: pubchem
+product_url: https://maayanlab.cloud/reprotox-kg
+layout: product_detail
 ---

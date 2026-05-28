@@ -67,6 +67,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     with subsets of those ontologies
@@ -89,6 +91,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -126,6 +130,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
   format: owl
@@ -137,6 +143,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -3424,6 +3432,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 - category: GraphProduct
@@ -3468,6 +3488,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
 - category: ProgrammingInterface
@@ -3514,6 +3546,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_url: https://arax.ncats.io/
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
@@ -3763,10 +3807,12 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: ProteomeHD data files
   id: proteomehd.data
@@ -4111,10 +4157,12 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Gene Ontology terms
@@ -4129,6 +4177,8 @@ products:
   product_url: https://omabrowser.org/All/oma-go.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -4155,6 +4205,391 @@ products:
     source: go
   product_file_size: 60582
   product_url: https://download.reactome.org/96/Pathways2GoTerms_human.txt
+- category: GraphProduct
+  description: Neo4j graph database integrating Enrichr gene set libraries with genes,
+    terms, pathways, diseases, drugs, cell types, and other functional annotations
+  dump_format: neo4j
+  format: neo4j
+  id: enrichr-kg.graph
+  name: Enrichr-KG Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
+- category: Product
+  description: Edge-table CSV snapshot from the Enrichr-KG downloads page using source.relation.target
+    edge triples
+  format: csv
+  id: enrichr-kg.edges-csv
+  name: Enrichr-KG Edge CSV Snapshot
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 35177347
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/GO_Biological_Process_2021.GO_BP.Gene.edges.csv
+- category: GraphProduct
+  description: Merged knowledge graph data files containing over 400,000 nodes and
+    5,000,000 edges integrating gene expression, molecular interactions, functions,
+    pathways, homology-based annotations, and environmental exposures from Planteome,
+    EMBL-EBI Expression Atlas, and other sources. Available as tab-separated value
+    files in KGX format with nodes and edges following the Biolink model.
+  id: genophenoenvo-kg.data
+  name: GenoPhenoEnvo KG Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genophenoenvo-kg
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: po
+  - relation_type: prov:hadPrimarySource
+    source: to
+  - relation_type: prov:hadPrimarySource
+    source: peco
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  product_url: https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo
+- category: GraphicalInterface
+  description: Browser for complete Hetionet v1.0 graph database in Neo4j
+  format: http
+  id: hetionet.neo4j
+  name: Hetionet v1.0 Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_url: https://neo4j.het.io/browser/
+- category: GraphProduct
+  description: Hetionet v1.0 in JSON format
+  format: json
+  id: hetionet.data.json
+  name: Hetionet v1.0 JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 131
+  product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
+- category: GraphProduct
+  description: Hetionet v1.0 as a Neo4j database
+  id: hetionet.data.neo4j
+  name: Hetionet v1.0 Neo4j
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 132
+  product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
+- category: GraphProduct
+  description: Hetionet v1.0 as SIF edges
+  format: sif
+  id: hetionet.data.edges
+  name: Hetionet v1.0 edges (SIF)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 131
+  product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
+- category: GraphProduct
+  description: Hetionet v1.0 as TSV nodes
+  format: tsv
+  id: hetionet.data.nodes
+  name: Hetionet v1.0 nodes (TSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_file_size: 427128
+  product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
+- category: ProcessProduct
+  description: Python package for creating, querying, and operating on hetnets (heterogeneous
+    networks)
+  id: hetnetpy
+  name: hetnetpy
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_url: https://github.com/hetio/hetnetpy
+- category: GraphicalInterface
+  description: Web application to search and explore connectivity between nodes in
+    Hetionet
+  format: http
+  id: hetionet.search
+  name: Hetnet Connectivity Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  product_url: https://het.io/search
+- category: GraphProduct
+  description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory
+    interactions, and disease associations
+  dump_format: neo4j
+  format: neo4j
+  id: lncrnalyzr.graph
+  name: lncRNAlyzr Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lncrnalyzr
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: doid
+- category: GraphicalInterface
+  description: Graphical interface for MedKG
+  id: medkb.site
+  name: MedKG Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: http://pitools.niper.ac.in/medkg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: medkg
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'

@@ -32,8 +32,6 @@ products:
   original_source:
   - source: biobricks-pubchem-annotations
     relation_type: prov:hadPrimarySource
-  - source: pubchem
-    relation_type: prov:hadPrimarySource
   product_url: https://apps.okn.us/biobricks-pubchem-annotations/sparql
 - id: biobricks-pubchem-annotations.tpf
   name: BioBricks PubChem Annotations TPF
@@ -42,8 +40,6 @@ products:
   product_url: https://apps.okn.us/ldf/biobricks-pubchem-annotations
   original_source:
   - source: biobricks-pubchem-annotations
-    relation_type: prov:hadPrimarySource
-  - source: pubchem
     relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/pubchem-annotations-kg
 creation_date: '2025-12-08T00:00:00Z'

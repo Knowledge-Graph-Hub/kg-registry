@@ -69,6 +69,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OBO format
     without upper-level ontology (ULO) terms to give the user community a simpler
@@ -82,6 +84,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in JSON format
     without upper-level ontology (ULO) terms to give the user community a simpler
@@ -94,6 +98,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/t4fs-community.json
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
     when accessing file'
 publications:
 - id: https://doi.org/10.5281/zenodo.4705219

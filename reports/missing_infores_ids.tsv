@@ -59,9 +59,10 @@ cdao	Comparative Data Analysis Ontology	Ontology	https://github.com/evoinfo/cdao
 cdiscvocab	CDISC Controlled Terminology	Aggregator	https://www.cdisc.org/standards/terminology/controlled-terminology	resource/cdiscvocab/cdiscvocab.md
 cdno	Compositional Dietary Nutrition Ontology	Ontology	https://cdno.info/	resource/cdno/cdno.md
 cellosaurus	Cellosaurus	DataSource	https://www.cellosaurus.org/	resource/cellosaurus/cellosaurus.md
+cellxgene	Cellxgene	DataSource		resource/cellxgene/cellxgene.md
 ceph	Cephalopod Ontology	Ontology	https://github.com/obophenotype/cephalopod-ontology	resource/ceph/ceph.md
 cfde-ddkg	Data Distillery Knowledge Graph (DDKG)	KnowledgeGraph	https://dd-kg-ui.cfde.cloud/about	resource/cfde-ddkg/cfde-ddkg.md
-cfde-gse	Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)	KnowledgeGraph	https://cfde.cloud/gse/	resource/cfde-gse/cfde-gse.md
+cfde-gse	Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)	KnowledgeGraph	https://gse.cfde.cloud/	resource/cfde-gse/cfde-gse.md
 cgnc	CGNC	DataSource	http://birdgenenames.org/cgnc/	resource/cgnc/cgnc.md
 chea	ChEA	DataSource	https://maayanlab.cloud/chea3/	resource/chea/chea.md
 chea-kg	ChEA-KG	KnowledgeGraph	https://maayanlab.cloud/chea-kg/	resource/chea-kg/chea-kg.md
@@ -468,7 +469,7 @@ redrugs	ReDrugs	KnowledgeGraph	http://redrugs.tw.rpi.edu/	resource/redrugs/redru
 refseq	RefSeq	DataSource	https://www.ncbi.nlm.nih.gov/refseq/	resource/refseq/refseq.md
 remap	ReMap	DataSource	https://remap.univ-amu.fr/	resource/remap/remap.md
 repohub	Drug Repurposing Hub	DataSource	https://repo-hub.broadinstitute.org/repurposing	resource/repohub/repohub.md
-reprotox-kg	ReproTox-KG	KnowledgeGraph	https://reprotox-kg.net/	resource/reprotox-kg/reprotox-kg.md
+reprotox-kg	ReproTox-KG	KnowledgeGraph	https://maayanlab.cloud/reprotox-kg	resource/reprotox-kg/reprotox-kg.md
 resid	Protein covalent bond	Ontology	http://www.ebi.ac.uk/RESID/	resource/resid/resid.md
 rex	Physico-chemical process	Ontology	http://purl.obolibrary.org/obo/rex.owl	resource/rex/rex.md
 rfam	Rfam	DataSource	https://rfam.org/	resource/rfam/rfam.md

@@ -14,6 +14,10 @@ original_source:
   source: mechreponet
 - relation_type: prov:hadPrimarySource
   source: mind
+- relation_type: prov:hadPrimarySource
+  source: umls
+- relation_type: prov:hadPrimarySource
+  source: mesh
 product_url: https://zenodo.org/records/8117748/files/train.txt
 warnings:
 - File was not able to be retrieved when checked on 2026-05-26_ No Content-Length

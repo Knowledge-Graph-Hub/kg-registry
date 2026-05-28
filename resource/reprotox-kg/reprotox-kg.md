@@ -10,7 +10,9 @@ contacts:
     value: https://maayanlab.cloud/
   label: Ma'ayan Lab
 creation_date: '2025-09-23T00:00:00Z'
-description: ReproTox-KG is a knowledge graph for structural birth defects and reproductive toxicology that integrates literature-derived and chemical evidence to support exploration of drug-birth defect relationships.
+description: ReproTox-KG is a knowledge graph for structural birth defects and reproductive
+  toxicology that integrates literature-derived and chemical evidence to support exploration
+  of drug-birth defect relationships.
 domains:
 - biomedical
 - toxicology
@@ -38,7 +40,8 @@ products:
     source: pubchem
   product_url: https://maayanlab.cloud/reprotox-kg
 - category: ProcessProduct
-  description: Source repository for the ReproTox-KG website assets, schema, and ingestion notebooks.
+  description: Source repository for the ReproTox-KG website assets, schema, and ingestion
+    notebooks.
   format: http
   id: reprotox-kg.code
   name: ReproTox-KG Source Repository
@@ -54,9 +57,11 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reprotox-kg
+  product_file_size: 2599
   product_url: https://github.com/MaayanLab/Reprotox-KG/blob/main/schema.json
 - category: Product
-  description: Data and content assets published with ReproTox-KG (markdown and supporting materials).
+  description: Data and content assets published with ReproTox-KG (markdown and supporting
+    materials).
   format: http
   id: reprotox-kg.data
   name: ReproTox-KG Data Assets

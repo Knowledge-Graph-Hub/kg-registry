@@ -1162,6 +1162,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 - category: GraphProduct
@@ -1206,6 +1218,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
 - category: ProgrammingInterface
@@ -1252,6 +1276,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_url: https://arax.ncats.io/
 - category: GraphProduct
   description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
@@ -1305,6 +1341,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
 - category: Product
   description: Meta knowledge graph and metadata describing the data sources, node
@@ -1331,6 +1369,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
@@ -1362,10 +1402,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: timed
+    out'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -1726,8 +1768,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -1802,6 +1844,130 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/api/rdf/dump
+- category: GraphicalInterface
+  description: FORUM web application interface for semantic metabolomics exploration
+  id: forum.webapp
+  name: FORUM Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/
+- category: ProgrammingInterface
+  description: FORUM REST API for programmatic access to chemical-disease associations
+  id: forum.api
+  name: FORUM API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/#/openapi-documentation
+- category: DocumentationProduct
+  description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
+    the knowledge graph structure
+  id: forum.void
+  name: FORUM VoID Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 96461
+  product_url: https://forum.semantic-metabolomics.fr/.well-known/void
+- category: GraphicalInterface
+  description: Graphical interface for MedKG
+  id: medkb.site
+  name: MedKG Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: http://pitools.niper.ac.in/medkg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: medkg
+- category: ProcessProduct
+  description: Source data directory used for SuppKG in the SemRep_DS repository.
+  format: http
+  id: suppkg.source-data
+  name: SuppKG Source Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
+- category: MappingProduct
+  description: Mapping file linking CAS Registry Numbers to MeSH identifiers
+  format: csv
+  id: tera.cas-to-mesh-csv
+  name: CAS to MeSH Mapping (CSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 109400
+  product_url: https://zenodo.org/records/4244313/files/cas_to_mesh.csv
 publications:
 - id: https://doi.org/10.1093/nar/gkaf1271
   title: 'ChEBI: re-engineered for a sustainable future'

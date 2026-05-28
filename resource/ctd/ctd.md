@@ -1469,6 +1469,8 @@ products:
     source: cam-kp
   - relation_type: prov:hadPrimarySource
     source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: doid
 - category: GraphProduct
   compatibility:
   - standard: biolink

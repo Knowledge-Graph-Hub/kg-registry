@@ -83,6 +83,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 - category: GraphProduct
@@ -127,6 +139,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
 - category: ProgrammingInterface
@@ -173,6 +197,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_url: https://arax.ncats.io/
 - category: GraphProduct
   description: Integrated graph knowledge base combining Mendelian randomization causal

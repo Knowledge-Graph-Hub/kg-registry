@@ -7,6 +7,7 @@ name: Reactome Pathway Hierarchy Flat File
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reactome
+product_file_size: 631240
 product_url: https://download.reactome.org/96/ReactomePathwaysRelation.txt
 layout: product_detail
 ---

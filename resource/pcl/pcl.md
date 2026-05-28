@@ -62,6 +62,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -76,6 +78,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -90,6 +94,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -104,6 +110,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -116,10 +124,10 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -134,6 +142,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-28: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -145,6 +155,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
@@ -160,6 +172,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -172,9 +186,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
@@ -187,6 +201,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/pcl-simple.json
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
     when accessing file'
 publications:
 - id: https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1

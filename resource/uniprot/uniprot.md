@@ -98,10 +98,12 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -144,6 +146,8 @@ products:
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -494,6 +498,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 - category: GraphProduct
@@ -538,6 +554,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
 - category: ProgrammingInterface
@@ -584,6 +612,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_url: https://arax.ncats.io/
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
@@ -981,10 +1021,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -2510,6 +2552,66 @@ products:
     source: prokn
   product_file_size: 19744738
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/UniProtKB.Protein.HAS_VARIANT.Variant.edges.csv
+- category: GraphicalInterface
+  description: Graphical interface for MedKG
+  id: medkb.site
+  name: MedKG Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: http://pitools.niper.ac.in/medkg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: medkg
+- category: ProcessProduct
+  description: Source data directory used for SuppKG in the SemRep_DS repository.
+  format: http
+  id: suppkg.source-data
+  name: SuppKG Source Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

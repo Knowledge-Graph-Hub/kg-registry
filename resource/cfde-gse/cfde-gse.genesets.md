@@ -6,11 +6,24 @@ name: CFDE Gene Set Collections
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cfde-gse
-product_url: https://cfde.cloud/gse/downloads/
-warnings:
-- File was not able to be retrieved when checked on 2026-05-26_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+- relation_type: prov:hadPrimarySource
+  source: kegg
+- relation_type: prov:hadPrimarySource
+  source: reactome
+- relation_type: prov:hadPrimarySource
+  source: msigdb
+- relation_type: prov:hadPrimarySource
+  source: disgenet
+- relation_type: prov:hadPrimarySource
+  source: gtex
+- relation_type: prov:hadPrimarySource
+  source: hubmap
+- relation_type: prov:hadPrimarySource
+  source: lincs
+- relation_type: prov:hadPrimarySource
+  source: glygen
+- relation_type: prov:hadPrimarySource
+  source: motrpac
+product_url: https://gse.cfde.cloud/downloads/
 layout: product_detail
 ---

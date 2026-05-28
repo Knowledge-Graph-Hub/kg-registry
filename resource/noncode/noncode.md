@@ -80,10 +80,12 @@ products:
     source: noncode
   product_url: http://www.noncode.org/download.php
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: Predicted functions for plant lncRNAs based on co-expression analysis
   format: http
@@ -502,6 +504,30 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rnacentral
   product_url: https://rnacentral.org/help/public-database
+- category: GraphProduct
+  description: Neo4j knowledge graph containing lncRNAs, protein-coding genes, regulatory
+    interactions, and disease associations
+  dump_format: neo4j
+  format: neo4j
+  id: lncrnalyzr.graph
+  name: lncRNAlyzr Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: lncrnalyzr
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: doid
 publications:
 - doi: 10.1093/nar/gkaa1046
   id: zhao2021noncode

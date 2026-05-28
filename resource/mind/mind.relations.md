@@ -8,12 +8,16 @@ license:
   label: CC-BY-4.0
 name: MIND Relations Dictionary
 original_source:
-  - source: drugcentral
-    relation_type: prov:hadPrimarySource
-  - source: mechreponet
-    relation_type: prov:hadPrimarySource
-  - source: mind
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: drugcentral
+- relation_type: prov:hadPrimarySource
+  source: mechreponet
+- relation_type: prov:hadPrimarySource
+  source: mind
+- relation_type: prov:hadPrimarySource
+  source: umls
+- relation_type: prov:hadPrimarySource
+  source: mesh
 product_file_size: 1648
 product_url: https://zenodo.org/records/8117748/files/relations.dict
 layout: product_detail

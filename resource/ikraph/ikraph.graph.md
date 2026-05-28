@@ -1,13 +1,16 @@
 ---
 category: GraphProduct
 compression: targz
-description: Graph metadata for iKraph, including a list of relations, entity type-specific metadata, data sources, and drug repurposing predictions.
+description: Graph metadata for iKraph, including a list of relations, entity type-specific
+  metadata, data sources, and drug repurposing predictions.
 format: json
 id: ikraph.graph
 name: iKraph graph metadata
 original_source:
-  - source: ikraph
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: ikraph
+- relation_type: prov:hadPrimarySource
+  source: pubmed
 product_file_size: 61183533
 product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
 layout: product_detail

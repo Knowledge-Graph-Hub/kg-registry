@@ -9,6 +9,7 @@ name: Reactome Graph Database Archive
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reactome
+product_file_size: 450783610
 product_url: https://download.reactome.org/96/reactome.graphdb.tgz
 layout: product_detail
 ---

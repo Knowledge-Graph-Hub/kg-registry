@@ -2,71 +2,112 @@
 activity_status: inactive
 category: Aggregator
 creation_date: '2025-10-30T00:00:00Z'
-description: iRefIndex is a consolidated protein interaction database that aggregates and indexes interaction data from multiple primary databases using sequence-based hash keys to identify and group redundant interaction records while maintaining provenance information.
+description: iRefIndex is a consolidated protein interaction database that aggregates
+  and indexes interaction data from multiple primary databases using sequence-based
+  hash keys to identify and group redundant interaction records while maintaining
+  provenance information.
 domains:
-  - proteomics
-  - biological systems
+- proteomics
+- biological systems
+homepage_url: https://irefindex.vib.be/wiki/index.php/iRefIndex
 id: irefindex
 infores_id: irefindex
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: iRefIndex
-homepage_url: https://irefindex.vib.be/wiki/index.php/iRefIndex
-publications:
-  - id: PMID:18823568
-    category: Publication
-    preferred: true
-  - id: PMID:22115179
-    category: Publication
-  - id: PMID:21975162
-    category: Publication
-warnings:
-  - The iRefIndex website appears to be inactive as of 2025. Historical data and methods remain available through publications and may be accessible through archived versions.
 products:
-  - category: Product
-    description: Historical consolidated protein interaction index in PSI-MITAB 2.5 format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI and OPHID
-    format: psi_mi_mitab
-    id: irefindex.database
-    name: iRefIndex Database
-    original_source:
-      - source: bind
-        relation_type: prov:hadPrimarySource
-      - source: biogrid
-        relation_type: prov:hadPrimarySource
-      - source: dip
-        relation_type: prov:hadPrimarySource
-      - source: hprd
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: irefindex
-        relation_type: prov:hadPrimarySource
-      - source: mint
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: R package for accessing and manipulating iRefIndex data
-    format: http
-    id: irefindex.irefr
-    name: iRefR Package
-    original_source:
-      - source: irefindex
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Cytoscape plugin for visualization and data mining of iRefIndex protein interaction data
-    id: irefindex.irefscape
-    name: iRefScape
-    original_source:
-      - source: irefindex
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Web interface for navigating the global protein-protein interaction landscape
-    id: irefindex.irefweb
-    name: iRefWeb
-    original_source:
-      - source: irefindex
-        relation_type: prov:hadPrimarySource
+- category: Product
+  description: Historical consolidated protein interaction index in PSI-MITAB 2.5
+    format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
+    and OPHID
+  format: psi_mi_mitab
+  id: irefindex.database
+  name: iRefIndex Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bind
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: dip
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+  - relation_type: prov:hadPrimarySource
+    source: mint
+- category: Product
+  description: R package for accessing and manipulating iRefIndex data
+  format: http
+  id: irefindex.irefr
+  name: iRefR Package
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+- category: Product
+  description: Cytoscape plugin for visualization and data mining of iRefIndex protein
+    interaction data
+  id: irefindex.irefscape
+  name: iRefScape
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+- category: GraphicalInterface
+  description: Web interface for navigating the global protein-protein interaction
+    landscape
+  id: irefindex.irefweb
+  name: iRefWeb
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+- category: GraphicalInterface
+  description: Interactive web interface for exploring drug-disease networks with
+    probabilistic filtering and graph visualization
+  id: redrugs.web
+  name: ReDrugs Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redrugs
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_url: http://redrugs.tw.rpi.edu/
+- category: ProgrammingInterface
+  description: SADI web services API for querying the knowledge graph including resource
+    search, interaction lookup, and network expansion
+  id: redrugs.api
+  name: ReDrugs API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redrugs
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_url: http://redrugs.tw.rpi.edu/api/
+publications:
+- category: Publication
+  id: PMID:18823568
+  preferred: true
+- category: Publication
+  id: PMID:22115179
+- category: Publication
+  id: PMID:21975162
+warnings:
+- The iRefIndex website appears to be inactive as of 2025. Historical data and methods
+  remain available through publications and may be accessible through archived versions.
 ---
-
 # iRefIndex
 
 ## Overview

@@ -2434,6 +2434,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 - category: GraphProduct
@@ -2478,6 +2490,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
 - category: ProgrammingInterface
@@ -2524,6 +2548,18 @@ products:
     source: rtx-kg2
   - relation_type: prov:hadPrimarySource
     source: semmeddb
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: smpdb
   product_url: https://arax.ncats.io/
 - category: GraphProduct
   description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
@@ -2577,6 +2613,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
 - category: Product
   description: Meta knowledge graph and metadata describing the data sources, node
@@ -2603,6 +2641,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
@@ -3122,6 +3162,50 @@ products:
   versions:
   - '2026_03_06'
   - hpoa_2026-02-16_e80fcfa7_2025sep1_4.3.6
+- category: GraphProduct
+  description: Neo4j graph database integrating Enrichr gene set libraries with genes,
+    terms, pathways, diseases, drugs, cell types, and other functional annotations
+  dump_format: neo4j
+  format: neo4j
+  id: enrichr-kg.graph
+  name: Enrichr-KG Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
   title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human

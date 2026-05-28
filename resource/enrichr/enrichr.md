@@ -59,6 +59,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -176,6 +178,66 @@ products:
     source: enrichr-kg
   - relation_type: prov:hadPrimarySource
     source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
+- category: Product
+  description: Node-table CSV snapshot from the Enrichr-KG downloads page containing
+    node metadata for a current release
+  format: csv
+  id: enrichr-kg.nodes-csv
+  name: Enrichr-KG Node CSV Snapshot
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  product_file_size: 1588029
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/Gene.nodes.csv
+- category: Product
+  description: Edge-table CSV snapshot from the Enrichr-KG downloads page using source.relation.target
+    edge triples
+  format: csv
+  id: enrichr-kg.edges-csv
+  name: Enrichr-KG Edge CSV Snapshot
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_file_size: 35177347
+  product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/GO_Biological_Process_2021.GO_BP.Gene.edges.csv
 publications:
 - authors:
   - Chen EY

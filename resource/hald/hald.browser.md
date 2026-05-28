@@ -5,8 +5,10 @@ format: http
 id: hald.browser
 name: HALD Web Interface
 original_source:
-  - source: hald
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: hald
+- relation_type: prov:hadPrimarySource
+  source: pubmed
 product_url: https://bis.zju.edu.cn/hald
 layout: product_detail
 ---

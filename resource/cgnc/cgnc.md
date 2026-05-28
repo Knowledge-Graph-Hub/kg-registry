@@ -30,10 +30,12 @@ products:
     source: cgnc
   product_url: http://birdgenenames.org/cgnc/downloads.jsp?file=standard
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
 - category: Product
   description: cgnc OBO
   format: obo
@@ -112,7 +114,7 @@ products:
 publications:
 - authors:
   - Burt DW
-  - "Carr\xCE W"
+  - CarrÎ W
   - Fell M
   - Law AS
   - Antin PB

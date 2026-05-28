@@ -10,6 +10,7 @@ name: Reactome BioPAX Format
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reactome
+product_file_size: 172887692
 product_url: https://download.reactome.org/96/biopax.zip
 layout: product_detail
 ---

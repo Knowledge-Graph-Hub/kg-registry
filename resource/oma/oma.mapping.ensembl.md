@@ -11,5 +11,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ensembl
 product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
+warnings:
+- File was not able to be retrieved when checked on 2026-05-26_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

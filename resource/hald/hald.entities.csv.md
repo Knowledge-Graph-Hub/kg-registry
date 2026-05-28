@@ -6,8 +6,10 @@ id: hald.entities.csv
 latest_version: v6
 name: HALD Neo4j Entities
 original_source:
-  - source: hald
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: hald
+- relation_type: prov:hadPrimarySource
+  source: pubmed
 product_file_size: 239792
 product_url: https://ndownloader.figshare.com/files/43612494
 layout: product_detail

@@ -8,9 +8,9 @@ contacts:
     value: https://www.omim.org/contact
   label: OMIM (Johns Hopkins University)
 creation_date: '2025-06-04T00:00:00Z'
-description: "OMIM (Online Mendelian Inheritance in Man) is a continuously updated,\
-  \ expert-curated catalog of human genes and genetic disorders, focusing on genotype\u2013\
-  phenotype relationships and the molecular basis of disease."
+description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
+  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
+  relationships and the molecular basis of disease.
 domains:
 - biomedical
 - clinical
@@ -213,10 +213,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
     Orphanet, DisGeNET and other disease databases
@@ -238,10 +240,12 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1310,15 +1314,109 @@ products:
   - relation_type: prov:wasInformedBy
     source: clinvar
   product_url: https://raras.org/explorar
+- category: GraphicalInterface
+  description: Graphical interface for MedKG
+  id: medkb.site
+  name: MedKG Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: http://pitools.niper.ac.in/medkg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: medkg
+- category: ProgrammingInterface
+  description: Triple Pattern Fragments endpoint for RDKG
+  format: http
+  id: rdkg.tpf
+  name: RDKG TPF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rdkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://apps.okn.us/ldf/rdkg
+- category: GraphicalInterface
+  description: Interactive web interface for exploring drug-disease networks with
+    probabilistic filtering and graph visualization
+  id: redrugs.web
+  name: ReDrugs Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redrugs
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_url: http://redrugs.tw.rpi.edu/
+- category: ProgrammingInterface
+  description: SADI web services API for querying the knowledge graph including resource
+    search, interaction lookup, and network expansion
+  id: redrugs.api
+  name: ReDrugs API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: redrugs
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: irefindex
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_url: http://redrugs.tw.rpi.edu/api/
 publications:
 - id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
-  title: "OMIM.org\u2014leveraging knowledge across phenotype\u2013gene relationships"
+  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
   year: '2019'
 - id: https://doi.org/10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: "OMIM.org\u2014an online catalog of human genes and genetic disorders"
+  title: OMIM.org—an online catalog of human genes and genetic disorders
   year: '2015'
 taxon:
 - NCBITaxon:9606

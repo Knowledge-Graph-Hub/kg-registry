@@ -344,6 +344,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
 - category: Product
   description: Meta knowledge graph and metadata describing the data sources, node
@@ -370,6 +372,8 @@ products:
     source: hmdb
   - relation_type: prov:hadPrimarySource
     source: icees-kg
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
 - category: GraphProduct
   description: Downloadable knowledge graph dump in TAR/GZ format containing complete
@@ -401,10 +405,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -701,6 +707,114 @@ products:
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+- category: GraphicalInterface
+  description: FORUM web application interface for semantic metabolomics exploration
+  id: forum.webapp
+  name: FORUM Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/
+- category: ProgrammingInterface
+  description: FORUM REST API for programmatic access to chemical-disease associations
+  id: forum.api
+  name: FORUM API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/#/openapi-documentation
+- category: DocumentationProduct
+  description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
+    the knowledge graph structure
+  id: forum.void
+  name: FORUM VoID Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 96461
+  product_url: https://forum.semantic-metabolomics.fr/.well-known/void
+- category: GraphicalInterface
+  description: Public web interface for querying and exploring ReproTox-KG relationships.
+  format: http
+  id: reprotox-kg.portal
+  name: ReproTox-KG Explorer
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://maayanlab.cloud/reprotox-kg
+- category: Product
+  description: Data and content assets published with ReproTox-KG (markdown and supporting
+    materials).
+  format: http
+  id: reprotox-kg.data
+  name: ReproTox-KG Data Assets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://github.com/MaayanLab/Reprotox-KG/tree/main/markdown
+- category: ProcessProduct
+  description: Source data directory used for SuppKG in the SemRep_DS repository.
+  format: http
+  id: suppkg.source-data
+  name: SuppKG Source Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
+- category: MappingProduct
+  description: Mapping file linking ChEBI identifiers to MeSH identifiers
+  format: csv
+  id: tera.chebi-to-mesh-csv
+  name: ChEBI to MeSH Mapping (CSV)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tera
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  product_file_size: 78600
+  product_url: https://zenodo.org/records/4244313/files/chebi_to_mesh.csv
 publications:
 - authors:
   - Kim S

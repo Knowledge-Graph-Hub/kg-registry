@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: oma
 product_url: https://omabrowser.org/All/oma-species.txt
+warnings:
+- File was not able to be retrieved when checked on 2026-05-26_ No Content-Length
+  header found
 layout: product_detail
 ---

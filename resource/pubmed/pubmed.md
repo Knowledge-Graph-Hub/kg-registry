@@ -265,10 +265,12 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
   format: mixed
@@ -350,10 +352,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: timed
+    out'
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
@@ -367,6 +371,474 @@ products:
     source: pubmed
   product_file_size: 239947326
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/medgen_pubmed_lnk.txt.gz
+- category: ProcessProduct
+  description: Natural language processing pipeline for constructing anti-tumor biomaterial
+    knowledge graphs from unstructured biomedicine literature, implementing entity
+    recognition, sentence simplification, triple extraction, and predicate mapping
+    processes.
+  id: atom.pipeline
+  name: ATOM Construction Pipeline
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: atom
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 418 error when
+    accessing file
+- category: GraphicalInterface
+  description: FORUM web application interface for semantic metabolomics exploration
+  id: forum.webapp
+  name: FORUM Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/
+- category: ProgrammingInterface
+  description: FORUM REST API for programmatic access to chemical-disease associations
+  id: forum.api
+  name: FORUM API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://forum-webapp.semantic-metabolomics.fr/#/openapi-documentation
+- category: DocumentationProduct
+  description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
+    the knowledge graph structure
+  id: forum.void
+  name: FORUM VoID Metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 96461
+  product_url: https://forum.semantic-metabolomics.fr/.well-known/void
+- category: GraphProduct
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
+  id: gnbr.graph
+  name: GNBR graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://zenodo.org/records/3459420
+- category: Product
+  description: Version 6 JSON file containing literature metadata for the HALD corpus.
+  format: json
+  id: hald.literature-info.json
+  latest_version: v6
+  name: HALD Literature Info
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 854292307
+  product_url: https://ndownloader.figshare.com/files/43612512
+- category: Product
+  description: Version 6 JSON file containing entity-level metadata extracted for
+    HALD.
+  format: json
+  id: hald.entity-info.json
+  latest_version: v6
+  name: HALD Entity Info
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 296732271
+  product_url: https://ndownloader.figshare.com/files/43612509
+- category: GraphProduct
+  description: Version 6 JSON file containing relation triples extracted for HALD.
+  format: json
+  id: hald.relation-info.json
+  latest_version: v6
+  name: HALD Relation Info
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 98203237
+  product_url: https://ndownloader.figshare.com/files/43612506
+- category: Product
+  description: Version 6 JSON file containing aging biomarker records from HALD.
+  format: json
+  id: hald.aging-biomarkers.json
+  latest_version: v6
+  name: HALD Aging Biomarkers
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 1199321
+  product_url: https://ndownloader.figshare.com/files/43612503
+- category: Product
+  description: Version 6 JSON file containing longevity biomarker records from HALD.
+  format: json
+  id: hald.longevity-biomarkers.json
+  latest_version: v6
+  name: HALD Longevity Biomarkers
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 339386
+  product_url: https://ndownloader.figshare.com/files/43612497
+- category: Product
+  description: Version 6 CSV file containing entity rows for loading HALD into Neo4j.
+  format: csv
+  id: hald.entities.csv
+  latest_version: v6
+  name: HALD Neo4j Entities
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 239792
+  product_url: https://ndownloader.figshare.com/files/43612494
+- category: Product
+  description: Version 6 CSV file containing relationship rows for loading HALD into
+    Neo4j.
+  format: csv
+  id: hald.roles.csv
+  latest_version: v6
+  name: HALD Neo4j Roles
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 5077672
+  product_url: https://ndownloader.figshare.com/files/43612500
+- category: GraphicalInterface
+  description: Interactive web interface for searching, browsing, and exploring HALD.
+  format: http
+  id: hald.browser
+  name: HALD Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hald
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://bis.zju.edu.cn/hald
+- category: GraphicalInterface
+  description: Biomedical Knowledge Discovery Engine. Interface for iKraph with search,
+    visualization, and exploration capabilities.
+  format: http
+  id: ikraph.site
+  name: BioKDE
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ikraph
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://biokde.insilicom.com/
+- category: ProcessProduct
+  description: Code for named entity recognition, relation extraction, and drug repurposing
+    in assembly and analysis of iKraph
+  id: ikraph.code
+  license:
+    id: https://www.gnu.org/licenses/gpl-3.0.en.html
+    label: GPL-3
+  name: iKraph Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ikraph
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://github.com/myinsilicom/iKraph
+  repository: https://github.com/myinsilicom/iKraph
+- category: GraphProduct
+  compression: targz
+  description: Graph metadata for iKraph, including a list of relations, entity type-specific
+    metadata, data sources, and drug repurposing predictions.
+  format: json
+  id: ikraph.graph
+  name: iKraph graph metadata
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ikraph
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 61183533
+  product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
+- category: GraphProduct
+  compression: targz
+  description: Complete graph data for iKraph with all entities and relations extracted
+    from PubMed abstracts
+  id: ikraph.graphdata
+  name: iKraph graph data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ikraph
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_file_size: 1440676039
+  product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
+- category: GraphicalInterface
+  description: Graphical interface for MedKG
+  id: medkb.site
+  name: MedKG Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medkg
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: http://pitools.niper.ac.in/medkg/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: medkg
+- category: GraphicalInterface
+  description: Public web interface for querying and exploring ReproTox-KG relationships.
+  format: http
+  id: reprotox-kg.portal
+  name: ReproTox-KG Explorer
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://maayanlab.cloud/reprotox-kg
+- category: Product
+  description: Data and content assets published with ReproTox-KG (markdown and supporting
+    materials).
+  format: http
+  id: reprotox-kg.data
+  name: ReproTox-KG Data Assets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://github.com/MaayanLab/Reprotox-KG/tree/main/markdown
+- category: DocumentationProduct
+  description: Translator wiki page describing SuppKG scope and example supplement-disease
+    relationships.
+  format: http
+  id: suppkg.docs
+  name: SuppKG Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
+- category: ProcessProduct
+  description: Source data directory used for SuppKG in the SemRep_DS repository.
+  format: http
+  id: suppkg.source-data
+  name: SuppKG Source Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
+- category: GraphProduct
+  description: Weighted heterogeneous knowledge graph extracted from MEDLINE corpus
+    containing 1,179 tumors, 2,550 biomarkers, 1,806 drugs, and 756 ADRs with 139,254
+    relationship edges (Tumor-Biomarker, Tumor-Drug, Tumor-ADR, Drug-Biomarker, Drug-ADR,
+    Biomarker-ADR). Includes correlation weights calculated using naive Bayesian model.
+  id: tbkg.data
+  name: TBKG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tbkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
+- category: Product
+  description: Clinical validation dataset with calculated ADRs for osimertinib ranked
+    by importance, biomarker pathways explaining drug-ADR relationships, and clinical
+    data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance
+    with official manual and 0.81 three-fold cross-validation accuracy.
+  id: tbkg.osimertinib_case_study
+  name: TBKG Osimertinib ADR Case Study Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tbkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
+- category: Product
+  description: Raw format target information including all TTD target data
+  format: txt
+  id: ttd.targets-raw
+  name: TTD Targets Information
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Drug to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.drug-disease
+  name: Drug-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.target-disease
+  name: Target-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to drug mapping with mode of action information
+  format: csv
+  id: ttd.target-drug
+  name: Target-Drug Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Biomarker to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.biomarker-disease
+  name: Biomarker-Disease Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
+- category: Product
+  description: Target to compound mapping with experimental activity data
+  format: txt
+  id: ttd.target-compound
+  name: Target-Compound Activity Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

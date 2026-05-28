@@ -2,10 +2,10 @@
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 650,
+    "modified_after_creation": 666,
     "stale_over_365_days": 6,
-    "unchanged_since_creation": 140,
-    "with_both_dates": 790
+    "unchanged_since_creation": 125,
+    "with_both_dates": 791
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -44,7 +44,6 @@
       "biomarkerkg.sparql",
       "bootstrep",
       "cacao.api",
-      "cam-kp.api",
       "cam-kp.sparql",
       "cebs",
       "cebs.api",
@@ -55,9 +54,6 @@
       "cellosaurus.rdf",
       "cellosaurus.xrefs",
       "cfde-gse",
-      "cfde-gse.api",
-      "cfde-gse.genesets",
-      "cfde-gse.portal",
       "cgnc.genes",
       "chembl.sparql",
       "chemicalchecker",
@@ -459,10 +455,6 @@
       "repohub.sample-info",
       "repohub.screening-info",
       "repohub.screening-library",
-      "reprotox-kg",
-      "reprotox-kg.api",
-      "reprotox-kg.dataset",
-      "reprotox-kg.portal",
       "resid",
       "rex",
       "rex.owl",
@@ -892,6 +884,7 @@
       "ero",
       "eupath",
       "ev",
+      "evoweb",
       "exmo",
       "exo",
       "fao",
@@ -979,6 +972,7 @@
       "mangal",
       "mao",
       "mat",
+      "maudekg",
       "maxo",
       "mco",
       "mcro",
@@ -1113,6 +1107,7 @@
       "raras",
       "rbo",
       "rdbridge",
+      "rdkg",
       "reacto",
       "reactome",
       "remap",
@@ -1457,6 +1452,7 @@
       "cacao",
       "cacao.gowiki",
       "cam-kp",
+      "cam-kp.api",
       "cam-kp.automat",
       "cam-kp.documentation",
       "cancer-genome-interpreter.api",
@@ -1512,6 +1508,13 @@
       "cfde-ddkg",
       "cfde-ddkg.downloads",
       "cfde-ddkg.portal",
+      "cfde-gse",
+      "cfde-gse.api",
+      "cfde-gse.connection-explorer",
+      "cfde-gse.edges-csv",
+      "cfde-gse.genesets",
+      "cfde-gse.nodes-csv",
+      "cfde-gse.portal",
       "cgnc",
       "chea",
       "chea-kg",
@@ -1976,6 +1979,9 @@
       "enrichr",
       "enrichr-kg",
       "enrichr-kg.api",
+      "enrichr-kg.downloads",
+      "enrichr-kg.edges-csv",
+      "enrichr-kg.nodes-csv",
       "enrichr-kg.portal",
       "enrichr.api",
       "enrichr.library-statistics",
@@ -3884,6 +3890,7 @@
       "rbo.rbo-base.obo",
       "rbo.rbo-base.owl",
       "rdkg",
+      "rdkg.tpf",
       "rdp.classifier",
       "rdp.tools",
       "reacto",
@@ -3914,6 +3921,11 @@
       "remap.portal",
       "repodb",
       "repodb.web_interface",
+      "reprotox-kg",
+      "reprotox-kg.code",
+      "reprotox-kg.data",
+      "reprotox-kg.portal",
+      "reprotox-kg.schema",
       "retriever",
       "retriever.code",
       "retriever.docs",
@@ -4737,6 +4749,7 @@
       "cacao",
       "cancer-genome-interpreter",
       "cancer-registry-kg",
+      "cellxgene",
       "chemont",
       "circbase",
       "cito",
@@ -4768,7 +4781,6 @@
       "eram",
       "eupathdb",
       "evlncrnas",
-      "evoweb",
       "fabio",
       "flybase",
       "forum",
@@ -4804,7 +4816,6 @@
       "lncrnadb",
       "malacards",
       "mamo",
-      "maudekg",
       "mechreponet",
       "medi",
       "mesh",
@@ -4839,7 +4850,6 @@
       "proteomehd",
       "psygenet",
       "pubmedcentral",
-      "rdkg",
       "rdp",
       "rediportal",
       "redrugs",
@@ -4954,6 +4964,7 @@
       "cebs",
       "cellmarker",
       "cellosaurus",
+      "cellxgene",
       "ceph",
       "cfde-ddkg",
       "cfde-gse",
@@ -5660,6 +5671,7 @@
     "missing_homepage_url_resource_ids": [
       "bioportal",
       "cancer-genome-interpreter",
+      "cellxgene",
       "circbase",
       "compartments",
       "cpathkg",
@@ -5758,6 +5770,7 @@
       "cdiscvocab",
       "cdno",
       "cellosaurus",
+      "cellxgene",
       "ceph",
       "cfde-ddkg",
       "cfde-gse",
@@ -6307,6 +6320,7 @@
       "cdiscvocab",
       "cebs",
       "cellmarker",
+      "cellxgene",
       "cfde-ddkg",
       "cgnc",
       "chemicalchecker",
@@ -6598,6 +6612,7 @@
       "cdiscvocab",
       "cebs",
       "cellmarker",
+      "cellxgene",
       "cgnc",
       "chea",
       "ciel",
@@ -6949,6 +6964,7 @@
       "atgo",
       "athena",
       "ato",
+      "atom",
       "automat",
       "bacdive",
       "bactotraits",
@@ -6995,6 +7011,7 @@
       "cellosaurus",
       "ceph",
       "cfde-ddkg",
+      "cfde-gse",
       "cgnc",
       "chea-kg",
       "chebi",
@@ -7046,6 +7063,7 @@
       "cro",
       "ctd",
       "cteno",
+      "ctkp",
       "cto",
       "ctrp",
       "cvdo",
@@ -7161,8 +7179,10 @@
       "genepio",
       "geneprof",
       "genetics-kp",
+      "geneticskp",
       "geno",
       "genomickb",
+      "genophenoenvo-kg",
       "geo",
       "geoconnex",
       "geonames",
@@ -7188,6 +7208,7 @@
       "gutmgene",
       "gwascatalog",
       "habronattus",
+      "hald",
       "hancestro",
       "hao",
       "hetionet",
@@ -7208,6 +7229,7 @@
       "icd10",
       "icd10cm",
       "icd11",
+      "icees-kg",
       "iceo",
       "ico",
       "iconclass",
@@ -7216,6 +7238,7 @@
       "ido",
       "idomal",
       "iev",
+      "ikraph",
       "imex",
       "impc",
       "imr",
@@ -7250,6 +7273,7 @@
       "lncbook",
       "lncipedia",
       "lncrnadb",
+      "lncrnalyzr",
       "loggerhead",
       "loinc",
       "m-csa",
@@ -7441,14 +7465,17 @@
       "rampdb",
       "rbo",
       "rdbridge",
+      "rdkg",
       "rdp",
       "reacto",
       "reactome",
       "rediportal",
+      "redrugs",
       "refseq",
       "remap",
       "repodb",
       "repohub",
+      "reprotox-kg",
       "resid",
       "retriever",
       "rex",
@@ -7524,7 +7551,10 @@
       "tao",
       "tarbase",
       "taxrank",
+      "tbkg",
       "tcdb",
+      "tera",
+      "text-mining-kp",
       "tgma",
       "tiga",
       "tmrnawebsite",
@@ -7533,6 +7563,7 @@
       "toxcast",
       "trans",
       "translator",
+      "ttd",
       "tto",
       "txpo",
       "ubergraph",
@@ -7852,8 +7883,11 @@
       "cfde-ddkg.downloads",
       "cfde-ddkg.portal",
       "cfde-gse.api",
+      "cfde-gse.connection-explorer",
+      "cfde-gse.edges-csv",
       "cfde-gse.genesets",
       "cfde-gse.graph",
+      "cfde-gse.nodes-csv",
       "cfde-gse.portal",
       "cgnc.genes",
       "chea-kg.api",
@@ -8249,7 +8283,10 @@
       "encode.experiment-matrix",
       "encode.portal",
       "enrichr-kg.api",
+      "enrichr-kg.downloads",
+      "enrichr-kg.edges-csv",
       "enrichr-kg.graph",
+      "enrichr-kg.nodes-csv",
       "enrichr-kg.portal",
       "enrichr.api",
       "enrichr.library-statistics",
@@ -10071,6 +10108,7 @@
       "rdbridge.graph",
       "rdbridge.literaturedatabase",
       "rdbridge.webinterface",
+      "rdkg.tpf",
       "rdp.classifier",
       "rdp.tools",
       "reacto.go-lego-reacto.owl",
@@ -10109,10 +10147,10 @@
       "repohub.sample-info",
       "repohub.screening-info",
       "repohub.screening-library",
-      "reprotox-kg.api",
-      "reprotox-kg.dataset",
-      "reprotox-kg.graph",
+      "reprotox-kg.code",
+      "reprotox-kg.data",
       "reprotox-kg.portal",
+      "reprotox-kg.schema",
       "retriever.code",
       "retriever.docs",
       "rex.owl",
@@ -11183,7 +11221,6 @@
     "products_missing_original_source_ids": [
       "foodon_core.owl",
       "hancestro-base.owl",
-      "hetnetpy",
       "orphacode.nomenclature",
       "otol.bulk-download",
       "otol.documentation",
@@ -11228,7 +11265,6 @@
       "protcid.database",
       "rdbridge.graph",
       "rdbridge.literaturedatabase",
-      "reprotox-kg.graph",
       "spoke.graph",
       "tera.python-package"
     ],
@@ -11314,6 +11350,7 @@
       "cebs",
       "cellmarker",
       "cellosaurus",
+      "cellxgene",
       "ceph",
       "cfde-ddkg",
       "cfde-gse",
@@ -12055,6 +12092,7 @@
       "bootstrep",
       "cacao",
       "cam-kp",
+      "catalogue-of-life",
       "cebs",
       "cellosaurus",
       "cfde-gse",
@@ -12078,6 +12116,7 @@
       "connectivitymap",
       "coralkinome",
       "corum",
+      "cosmic",
       "cpdb",
       "ctd",
       "dbsnp",
@@ -12168,6 +12207,7 @@
       "inchikey",
       "intact",
       "irefindex",
+      "itis",
       "kg-alzheimers",
       "kg-covid-19",
       "kg-idg",
@@ -12276,7 +12316,6 @@
       "refseq",
       "repodb",
       "repohub",
-      "reprotox-kg",
       "resid",
       "rex",
       "rfam",
@@ -12318,6 +12357,7 @@
       "tissues",
       "tmrnawebsite",
       "toxcast",
+      "translator",
       "try",
       "txpo",
       "ubergraph",
@@ -12340,6 +12380,7 @@
       "aao",
       "ato",
       "bootstrep",
+      "cellxgene",
       "cmf",
       "dc_cl",
       "digcfdekg",
@@ -12364,7 +12405,6 @@
       "pgdso",
       "plo",
       "propreo",
-      "rdkg",
       "resid",
       "sao",
       "sopharm",
@@ -12384,7 +12424,6 @@
       "bio2rdf.biosearch",
       "cellosaurus.rdf",
       "cellosaurus.xrefs",
-      "cfde-gse.genesets",
       "cgnc.genes",
       "cob.cob-to-external.owl",
       "cohd.docs",
@@ -12545,7 +12584,6 @@
       "proton.top",
       "rbo.json",
       "repodb.full_dataset",
-      "reprotox-kg.dataset",
       "rex.owl",
       "ro.subsets.ro-eco.owl",
       "scibite.hgnc",
@@ -12553,6 +12591,8 @@
       "simap.portal",
       "slso-base.owl",
       "slso.json",
+      "snodb.about",
+      "snodb.rrna-mods",
       "t4fs-community.json",
       "t4fs-community.obo",
       "t4fs-community.owl",
@@ -12591,25 +12631,25 @@
       "pharmacodb",
       "tcrd"
     ],
-    "stub_resource_ids": [],
+    "stub_resource_ids": [
+      "cellxgene"
+    ],
     "unchanged_since_creation_resource_ids": [
       "aact",
       "afcs",
       "aragorn",
       "archs4",
-      "atom",
       "batman",
       "brenda",
       "cancer-registry-kg",
       "cebs",
-      "cfde-gse",
+      "cellxgene",
       "chea",
       "ckg",
       "cmap",
       "cohd",
       "cpdb",
       "cpic",
-      "ctkp",
       "dailymed",
       "darkkinasekb",
       "dbpedia",
@@ -12633,13 +12673,10 @@
       "gencode",
       "gendr",
       "genemania",
-      "geneticskp",
-      "genophenoenvo-kg",
       "glycocoo",
       "glycordf",
       "goa",
       "gtrx",
-      "hald",
       "harmonizome-kg",
       "hpidb",
       "hra",
@@ -12647,8 +12684,6 @@
       "hubmap",
       "humannet",
       "huri",
-      "icees-kg",
-      "ikraph",
       "imodulondb",
       "inchikey",
       "iptmnet",
@@ -12659,7 +12694,6 @@
       "kg4sl",
       "kinace",
       "litvar",
-      "lncrnalyzr",
       "mangal",
       "medi",
       "mediadive",
@@ -12703,10 +12737,7 @@
       "psygenet",
       "pubmed",
       "raras",
-      "rdkg",
-      "redrugs",
       "regl",
-      "reprotox-kg",
       "rfam",
       "rgd",
       "ribovision",
@@ -12716,15 +12747,11 @@
       "smpdb",
       "snpeff",
       "tair",
-      "tbkg",
       "tcga",
       "tcrd",
-      "tera",
-      "text-mining-kp",
       "tissues",
       "toxin",
       "try",
-      "ttd",
       "umls",
       "unibiomap",
       "unichem",
@@ -12736,56 +12763,56 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-05-26T21:50:32Z",
+  "generated_at": "2026-05-28T19:18:15Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 145,
     "with_evaluation_page": 120,
     "without_evaluation_page": 25
   },
   "links": {
-    "broken_urls": 430,
-    "cache_hits": 3500,
+    "broken_urls": 422,
+    "cache_hits": 3490,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 3108,
-    "live_checked_urls": 38,
+    "healthy_urls": 3123,
+    "live_checked_urls": 55,
     "mode": "live",
-    "total_unique_urls": 3538,
+    "total_unique_urls": 3545,
     "unchecked_urls": 0
   },
   "products": {
-    "missing_format": 819,
-    "missing_original_source": 13,
-    "missing_product_url": 107,
-    "retrieval_warning_mentions": 313,
-    "total": 5323
+    "missing_format": 931,
+    "missing_original_source": 12,
+    "missing_product_url": 140,
+    "retrieval_warning_mentions": 586,
+    "total": 5620
   },
-  "resource_count": 790,
+  "resource_count": 791,
   "resources": {
     "contacts_with_org_connection": 226,
-    "contacts_without_org_connection": 420,
-    "missing_contacts": 144,
+    "contacts_without_org_connection": 423,
+    "missing_contacts": 142,
     "missing_description": 0,
-    "missing_fairsharing_id": 782,
-    "missing_homepage_url": 38,
-    "missing_infores_id": 575,
-    "missing_license": 278,
-    "missing_repository": 363,
+    "missing_fairsharing_id": 783,
+    "missing_homepage_url": 39,
+    "missing_infores_id": 576,
+    "missing_license": 279,
+    "missing_repository": 364,
     "status_counts": {
-      "active": 668,
+      "active": 669,
       "inactive": 103,
       "orphaned": 7,
       "unknown": 7,
       "unresponsive": 5
     },
-    "stub_count": 0,
-    "total": 790,
-    "with_broken_links": 310,
+    "stub_count": 1,
+    "total": 791,
+    "with_broken_links": 313,
     "without_products": 36
   },
   "scoring": {
-    "average_score": 9.24,
+    "average_score": 9.45,
     "median_score": 8.0,
-    "resources_with_issues": 789,
+    "resources_with_issues": 790,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -13067,21 +13094,21 @@
           "points": 30
         },
         {
-          "count": 11,
+          "count": 15,
           "issue_key": "product_missing_format",
           "label": "Products missing format",
-          "points": 11
+          "points": 15
         },
         {
-          "count": 2,
+          "count": 4,
           "issue_key": "product_missing_product_url",
           "label": "Products missing product_url",
-          "points": 4
+          "points": 8
         }
       ],
       "name": "Gene Ontology",
       "resource_page": "resource/go/go.html",
-      "score": 45
+      "score": 53
     },
     {
       "activity_status": "active",
@@ -13157,26 +13184,158 @@
           "points": 27
         },
         {
-          "count": 7,
+          "count": 8,
           "issue_key": "product_missing_format",
           "label": "Products missing format",
-          "points": 7
+          "points": 8
+        },
+        {
+          "count": 2,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 4
         },
         {
           "count": 1,
           "issue_key": "missing_repository",
           "label": "Missing repository",
           "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 2
         }
       ],
       "name": "GWAS Catalog",
       "resource_page": "resource/gwascatalog/gwascatalog.html",
+      "score": 41
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://alzkb.ai:7473/login"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://www.genecards.org/"
+        }
+      ],
+      "id": "reactome",
+      "issues": [
+        {
+          "count": 18,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 18
+        },
+        {
+          "count": 4,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 12
+        },
+        {
+          "count": 5,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 10
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Reactome",
+      "resource_page": "resource/reactome/reactome.html",
+      "score": 41
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://redrugs.tw.rpi.edu/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "http://redrugs.tw.rpi.edu/api/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://alzkb.ai:7473/login"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://go.drugbank.com/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://www.drugbank.com/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://www.drugbank.com/clinical"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://www.genecards.org/"
+        }
+      ],
+      "id": "drugbank",
+      "issues": [
+        {
+          "count": 7,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 21
+        },
+        {
+          "count": 13,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 13
+        },
+        {
+          "count": 2,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 4
+        }
+      ],
+      "name": "DrugBank",
+      "resource_page": "resource/drugbank/drugbank.html",
       "score": 38
     },
     {
@@ -13365,6 +13524,34 @@
     },
     {
       "activity_status": "active",
+      "broken_links": [],
+      "id": "kegg",
+      "issues": [
+        {
+          "count": 22,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 22
+        },
+        {
+          "count": 5,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 10
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        }
+      ],
+      "name": "KEGG",
+      "resource_page": "resource/kegg/kegg.html",
+      "score": 34
+    },
+    {
+      "activity_status": "active",
       "broken_links": [
         {
           "sources": [
@@ -13469,66 +13656,6 @@
           "sources": [
             "cache"
           ],
-          "url": "https://alzkb.ai:7473/login"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://www.genecards.org/"
-        }
-      ],
-      "id": "reactome",
-      "issues": [
-        {
-          "count": 14,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 14
-        },
-        {
-          "count": 4,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 12
-        },
-        {
-          "count": 3,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 6
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Reactome",
-      "resource_page": "resource/reactome/reactome.html",
-      "score": 33
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
           "url": "https://aopwiki.org/"
         },
         {
@@ -13604,150 +13731,6 @@
       "name": "AOP-Wiki",
       "resource_page": "resource/aop-wiki/aop-wiki.html",
       "score": 30
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/about/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/experiment_details/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/rRNA_modifications/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/sequence_similarity_search/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/statistics/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/tutorial/"
-        }
-      ],
-      "id": "snodb",
-      "issues": [
-        {
-          "count": 7,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 21
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_contacts",
-          "label": "Missing contacts",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        }
-      ],
-      "name": "snoDB",
-      "resource_page": "resource/snodb/snodb.html",
-      "score": 30
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "warning",
-            "live"
-          ],
-          "url": "https://omabrowser.org/All/oma-ensembl.txt.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://www.ensembl.org"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://www.ensembl.org/info/docs/tools/vep/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://www.ensembl.org/Multi/Tools/Blast"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "https://www.genecards.org/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://www.omim.org/static/omim/data/mim2gene.txt"
-        }
-      ],
-      "id": "ensembl",
-      "issues": [
-        {
-          "count": 6,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 18
-        },
-        {
-          "count": 9,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 9
-        }
-      ],
-      "name": "Ensembl",
-      "resource_page": "resource/ensembl/ensembl.html",
-      "score": 27
     }
   ]
 }

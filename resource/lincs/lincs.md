@@ -431,6 +431,132 @@ products:
     source: prokn
   product_file_size: 980
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/LINCS_P100.PTMSite.IS_SITE.Site.edges.csv
+- category: GraphProduct
+  description: Neo4j knowledge graph containing integrated gene sets from multiple
+    Common Fund programs with cross-references
+  dump_format: neo4j
+  format: neo4j
+  id: cfde-gse.graph
+  name: CFDE-GSE Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+- category: Product
+  description: Standardized gene set collections from Common Fund programs in GMT
+    format
+  id: cfde-gse.genesets
+  name: CFDE Gene Set Collections
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://gse.cfde.cloud/downloads/
+- category: GraphProduct
+  description: Neo4j graph database integrating Enrichr gene set libraries with genes,
+    terms, pathways, diseases, drugs, cell types, and other functional annotations
+  dump_format: neo4j
+  format: neo4j
+  id: enrichr-kg.graph
+  name: Enrichr-KG Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: enrichr-kg
+  - relation_type: prov:hadPrimarySource
+    source: enrichr
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
+- category: GraphProduct
+  description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
+    transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
+    118 million relationships.
+  dump_format: neo4j
+  edge_count: 118000000
+  id: petagraph.graph
+  name: Petagraph Knowledge Graph (Neo4J)
+  node_count: 32000000
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: petagraph
+  - relation_type: prov:hadPrimarySource
+    source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: lincs
+  product_url: https://ubkg-downloads.xconsortia.org/
 publications:
 - authors:
   - Keenan AB
@@ -452,7 +578,7 @@ publications:
   - Koleti A
   - Vidovic D
   - Chung C
-  - Schürer SC
+  - "Sch\xFCrer SC"
   - Vasiliauskas J
   - Pilarczyk M
   - Shamsaei B
@@ -576,7 +702,7 @@ publications:
   - Medvedovic M
   - Ma'ayan A
   - Pillai A
-  - Schürer SC
+  - "Sch\xFCrer SC"
   doi: doi:10.1093/nar/gkx1063
   id: https://doi.org/10.1093/nar/gkx1063
   journal: Nucleic Acids Research

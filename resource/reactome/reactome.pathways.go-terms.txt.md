@@ -9,6 +9,7 @@ original_source:
   source: reactome
 - relation_type: prov:hadPrimarySource
   source: go
+product_file_size: 60582
 product_url: https://download.reactome.org/96/Pathways2GoTerms_human.txt
 layout: product_detail
 ---
