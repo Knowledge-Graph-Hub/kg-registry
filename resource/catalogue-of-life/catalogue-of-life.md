@@ -60,6 +60,10 @@ products:
     original_source:
       - source: catalogue-of-life
         relation_type: prov:hadPrimarySource
+      - source: itis
+        relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Downloadable Catalogue of Life datasets in multiple standardized formats including Catalogue of Life Data Package (ColDP), Darwin Core Archive, ACEF, TextTree, and MySQL dumps
     id: catalogue-of-life.downloads
@@ -68,11 +72,17 @@ products:
     original_source:
       - source: catalogue-of-life
         relation_type: prov:hadPrimarySource
+      - source: itis
+        relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+    warnings:
+      - 'Automated checks may return HTTP 418 due to anti-bot challenge on catalogueoflife.org download pages; URL is retained as the canonical human-access endpoint.'
   - category: Product
     description: ChecklistBank repository infrastructure for publishing, discovery, and management of taxonomic datasets with data standardization to ColDP format and quality control workflows
     id: catalogue-of-life.checklistbank
     name: ChecklistBank Repository
-    product_url: https://checklistbank.org/
+    product_url: https://www.checklistbank.org/
     original_source:
       - source: catalogue-of-life
         relation_type: prov:hadPrimarySource
@@ -114,7 +124,7 @@ synonyms:
   - Catalogue of Life Checklist
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 ---
 
 # Catalogue of Life

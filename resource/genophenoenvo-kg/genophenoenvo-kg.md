@@ -12,7 +12,7 @@ domains:
   - biomedical
 homepage_url: https://github.com/genophenoenvo/knowledge-graph
 id: genophenoenvo-kg
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/BSD-3-Clause
@@ -25,6 +25,18 @@ products:
     name: GenoPhenoEnvo KG Data
     original_source:
       - source: genophenoenvo-kg
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: po
+        relation_type: prov:hadPrimarySource
+      - source: to
+        relation_type: prov:hadPrimarySource
+      - source: peco
+        relation_type: prov:hadPrimarySource
+      - source: tair
+        relation_type: prov:hadPrimarySource
+      - source: interpro
         relation_type: prov:hadPrimarySource
     product_url: https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo
   - category: GraphicalInterface
