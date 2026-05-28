@@ -20,7 +20,7 @@ domains:
 - drug discovery
 homepage_url: https://reprotox-kg.net/
 id: reprotox-kg
-last_modified_date: '2025-09-23T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
@@ -56,6 +56,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
 - category: Product
   description: Curated dataset of reproductive toxicity studies with standardized
     endpoints and exposure conditions
@@ -65,6 +69,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: reprotox-kg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
   product_url: https://reprotox-kg.net/downloads/
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting

@@ -22,7 +22,7 @@ domains:
 homepage_url: https://het.io/
 id: hetionet
 infores_id: hetionet
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -82,6 +82,9 @@ products:
     networks)
   id: hetnetpy
   name: hetnetpy
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
   product_url: https://github.com/hetio/hetnetpy
 - category: GraphicalInterface
   description: Web application to search and explore connectivity between nodes in
