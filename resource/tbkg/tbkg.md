@@ -37,7 +37,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 creation_date: '2025-11-22T00:00:00Z'
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 products:
   - id: tbkg.data
     name: TBKG Knowledge Graph Data
@@ -47,6 +47,10 @@ products:
     original_source:
       - source: tbkg
         relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
   - id: tbkg.osimertinib_case_study
     name: TBKG Osimertinib ADR Case Study Data
     description: Clinical validation dataset with calculated ADRs for osimertinib ranked by importance, biomarker pathways explaining drug-ADR relationships, and clinical data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance with official manual and 0.81 three-fold cross-validation accuracy.
@@ -54,6 +58,10 @@ products:
     product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
     original_source:
       - source: tbkg
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: umls
         relation_type: prov:hadPrimarySource
 taxon:
   - NCBITaxon:9606
