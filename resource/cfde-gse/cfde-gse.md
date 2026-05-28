@@ -28,7 +28,7 @@ domains:
 - biological systems
 homepage_url: https://cfde.cloud/gse/
 id: cfde-gse
-last_modified_date: '2025-09-23T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -65,6 +65,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
@@ -73,6 +81,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cfde-gse
+  - relation_type: prov:hadPrimarySource
+    source: kegg
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
   product_url: https://cfde.cloud/gse/downloads/
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error

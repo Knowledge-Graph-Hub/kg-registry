@@ -19,7 +19,7 @@ domains:
   - biological systems
 homepage_url: https://maayanlab.cloud/enrichr-kg/
 id: enrichr-kg
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -61,6 +61,14 @@ products:
       - source: enrichr-kg
         relation_type: prov:hadPrimarySource
       - source: enrichr
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
         relation_type: prov:hadPrimarySource
 publications:
   - authors:

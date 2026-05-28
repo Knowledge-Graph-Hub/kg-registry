@@ -22,7 +22,7 @@ domains:
   - health
 homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 id: atom
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: ATOM
 products:
@@ -44,6 +44,8 @@ products:
     name: ATOM Construction Pipeline
     original_source:
       - source: atom
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
         relation_type: prov:hadPrimarySource
     product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
     warnings:
