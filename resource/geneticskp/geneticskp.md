@@ -13,7 +13,7 @@ domains:
 - translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: geneticskp
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
 products:
@@ -50,6 +50,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://genetics-kp.transltr.io/genetics_provider/trapi/v1.4/
 - category: GraphProduct
   compatibility:

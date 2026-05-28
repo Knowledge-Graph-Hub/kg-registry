@@ -14,7 +14,7 @@ domains:
 - translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
 id: ctkp
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: Clinical Trials KP
 products:
@@ -52,6 +52,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
 - category: GraphProduct
   compatibility:
