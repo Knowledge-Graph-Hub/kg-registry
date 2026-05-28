@@ -20,7 +20,7 @@ domains:
 - drug discovery
 - biomedical
 id: drug-approvals-kp
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: Drug Approvals KP
 products:
@@ -67,6 +67,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: drug-approvals-kp
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://github.com/multiomicsKP/drug_approvals_kp
 - category: GraphProduct
   compatibility:

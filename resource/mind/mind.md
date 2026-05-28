@@ -24,7 +24,7 @@ domains:
 - biomedical
 homepage_url: https://zenodo.org/records/8117748
 id: mind
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -46,6 +46,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
@@ -71,6 +75,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
@@ -95,6 +103,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
@@ -120,6 +132,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_file_size: 5629618
   product_url: https://zenodo.org/records/8117748/files/entities.dict
 - category: Product
@@ -137,6 +153,10 @@ products:
     source: mechreponet
   - relation_type: prov:hadPrimarySource
     source: mind
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: mesh
   product_file_size: 1648
   product_url: https://zenodo.org/records/8117748/files/relations.dict
 publications:
