@@ -26,7 +26,7 @@ domains:
 - genomics
 - systems biology
 - biological systems
-homepage_url: https://cfde.cloud/gse/
+homepage_url: https://gse.cfde.cloud/
 id: cfde-gse
 last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
@@ -44,7 +44,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cfde-gse
-  product_url: https://cfde.cloud/gse/
+  product_url: https://gse.cfde.cloud/
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Common Fund gene set collections
     and enrichment analysis
@@ -54,7 +54,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cfde-gse
-  product_url: https://cfde.cloud/gse/api/
+  product_url: https://gse.cfde.cloud/api/
 - category: GraphProduct
   description: Neo4j knowledge graph containing integrated gene sets from multiple
     Common Fund programs with cross-references
@@ -89,12 +89,7 @@ products:
     source: msigdb
   - relation_type: prov:hadPrimarySource
     source: disgenet
-  product_url: https://cfde.cloud/gse/downloads/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
-    when accessing file'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
+  product_url: https://gse.cfde.cloud/downloads/
 publications:
 - authors:
   - Clarke DJB
@@ -110,7 +105,6 @@ publications:
   preferred: true
   title: Cross-program analysis of the CFDE gene sets reveals common biological themes
   year: '2022'
-repository: https://github.com/nih-cfde/cfde-gse
 ---
 # Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)
 
