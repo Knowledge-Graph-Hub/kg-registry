@@ -21,7 +21,7 @@ domains:
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk
 infores_id: idisk
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://conservancy.umn.edu/handle/11299/204783
@@ -72,6 +72,8 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: umls
 publications:
 - id: doi:10.1093/jamia/ocz216
   preferred: true

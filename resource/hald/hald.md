@@ -10,7 +10,7 @@ domains:
   - precision medicine
 homepage_url: https://bis.zju.edu.cn/hald
 id: hald
-last_modified_date: '2026-04-06T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -26,6 +26,8 @@ products:
     original_source:
       - source: hald
         relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
     product_file_size: 854292307
     product_url: https://ndownloader.figshare.com/files/43612512
   - category: Product
@@ -36,6 +38,8 @@ products:
     name: HALD Entity Info
     original_source:
       - source: hald
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
         relation_type: prov:hadPrimarySource
     product_file_size: 296732271
     product_url: https://ndownloader.figshare.com/files/43612509
@@ -48,6 +52,8 @@ products:
     original_source:
       - source: hald
         relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
     product_file_size: 98203237
     product_url: https://ndownloader.figshare.com/files/43612506
   - category: Product
@@ -58,6 +64,8 @@ products:
     name: HALD Aging Biomarkers
     original_source:
       - source: hald
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
         relation_type: prov:hadPrimarySource
     product_file_size: 1199321
     product_url: https://ndownloader.figshare.com/files/43612503
@@ -70,6 +78,8 @@ products:
     original_source:
       - source: hald
         relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
     product_file_size: 339386
     product_url: https://ndownloader.figshare.com/files/43612497
   - category: Product
@@ -80,6 +90,8 @@ products:
     name: HALD Neo4j Entities
     original_source:
       - source: hald
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
         relation_type: prov:hadPrimarySource
     product_file_size: 239792
     product_url: https://ndownloader.figshare.com/files/43612494
@@ -92,6 +104,8 @@ products:
     original_source:
       - source: hald
         relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
     product_file_size: 5077672
     product_url: https://ndownloader.figshare.com/files/43612500
   - category: GraphicalInterface
@@ -101,6 +115,8 @@ products:
     name: HALD Web Interface
     original_source:
       - source: hald
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
         relation_type: prov:hadPrimarySource
     product_url: https://bis.zju.edu.cn/hald
 publications:

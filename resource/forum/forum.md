@@ -12,7 +12,7 @@ domains:
 - biomedical
 homepage_url: https://forum-webapp.semantic-metabolomics.fr/
 id: forum
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: FORUM
 products:
@@ -23,6 +23,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://forum-webapp.semantic-metabolomics.fr/
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
@@ -31,6 +39,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://forum-webapp.semantic-metabolomics.fr/#/openapi-documentation
 - category: DocumentationProduct
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
@@ -40,6 +56,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: forum
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct

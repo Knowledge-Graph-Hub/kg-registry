@@ -70,6 +70,18 @@ products:
         relation_type: prov:hadPrimarySource
       - source: semmeddb
         relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
     product_file_size: 376501785
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   - category: GraphProduct
@@ -113,6 +125,18 @@ products:
       - source: rtx-kg2
         relation_type: prov:hadPrimarySource
       - source: semmeddb
+        relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
         relation_type: prov:hadPrimarySource
     product_file_size: 1807360397
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
@@ -168,6 +192,18 @@ products:
         relation_type: prov:hadPrimarySource
       - source: semmeddb
         relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: hmdb
+        relation_type: prov:hadPrimarySource
+      - source: intact
+        relation_type: prov:hadPrimarySource
+      - source: ncbigene
+        relation_type: prov:hadPrimarySource
+      - source: smpdb
+        relation_type: prov:hadPrimarySource
     product_url: https://arax.ncats.io/
 publications:
   - authors:
@@ -188,7 +224,7 @@ publications:
 repository: https://github.com/RTXteam/RTX-KG2
 infores_id: rtx-kg2
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 ---
 
 ## RTX-KG2: A Semantically Standardized Knowledge Graph for Translational Biomedicine

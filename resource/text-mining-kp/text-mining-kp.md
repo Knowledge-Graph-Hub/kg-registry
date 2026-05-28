@@ -23,7 +23,7 @@ domains:
 - translational
 homepage_url: https://github.com/NCATSTranslator/Text-Mining-Provider-Roadmap
 id: text-mining-kp
-last_modified_date: '2026-01-22T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: Text Mining KP
 products:
@@ -34,6 +34,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: text-mining-kp
+  - relation_type: prov:hadPrimarySource
+    source: translator
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length

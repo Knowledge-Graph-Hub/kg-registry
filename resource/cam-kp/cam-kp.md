@@ -38,13 +38,15 @@ products:
     original_source:
       - source: cam-kp
         relation_type: prov:hadPrimarySource
+    warnings:
+      - 'Endpoint was unreachable by automated checks on 2026-05-28; may be retired or intermittently unavailable.'
   - category: ProgrammingInterface
     description: TRAPI-compliant REST API for programmatic access to causal knowledge graphs supporting Translator ecosystem integration and federated querying
     format: http
     id: cam-kp.api
     is_public: true
     name: CAM-KP REST API
-    product_url: https://cam-kp-api-dev.renci.org/1.2.0/query
+    product_url: https://automat.renci.org/cam-kp
     original_source:
       - source: cam-kp
         relation_type: prov:hadPrimarySource
@@ -85,6 +87,8 @@ products:
         relation_type: prov:hadPrimarySource
       - source: ctd
         relation_type: prov:hadPrimarySource
+      - source: doid
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive API documentation, SPARQL endpoint documentation, and developer guides for querying and integrating CAM-KP
     format: http
@@ -95,6 +99,8 @@ products:
     original_source:
       - source: cam-kp
         relation_type: prov:hadPrimarySource
+    warnings:
+      - Repository was archived by the owner in 2024; documentation may be historical.
 publications:
   - authors:
       - Balhoff JP
@@ -157,7 +163,7 @@ publications:
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 ---
 
 # CAM-KP (Causal Activity Models Knowledge Provider)

@@ -41,6 +41,18 @@ products:
         relation_type: prov:hadPrimarySource
       - source: ubkg
         relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: string
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: clinvar
+        relation_type: prov:hadPrimarySource
+      - source: glygen
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
     product_url: https://ubkg-downloads.xconsortia.org/
 publications:
   - authors:
@@ -66,7 +78,7 @@ repository: https://github.com/TaylorResearchLab/Petagraph
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 ---
 
 ## Petagraph: A Large-Scale Biomedical Knowledge Graph

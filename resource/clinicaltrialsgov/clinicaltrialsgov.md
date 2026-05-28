@@ -36,7 +36,7 @@ fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov
 infores_id: clinicaltrials
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions
@@ -83,6 +83,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: aact
   product_url: https://aact.ctti-clinicaltrials.org/
 - category: DocumentationProduct
   description: Comprehensive documentation covering data structure, data element definitions,

@@ -17,7 +17,7 @@ domains:
   - biological systems
 homepage_url: https://niva-knowledge-graph.github.io/TERA/
 id: tera
-last_modified_date: '2025-10-28T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -106,6 +106,8 @@ products:
     original_source:
       - source: tera
         relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping file linking CAS Registry Numbers to MeSH identifiers
     format: csv
@@ -116,6 +118,10 @@ products:
     original_source:
       - source: tera
         relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: mesh
+        relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping file linking ChEBI identifiers to MeSH identifiers
     format: csv
@@ -125,6 +131,10 @@ products:
     product_url: https://zenodo.org/records/4244313/files/chebi_to_mesh.csv
     original_source:
       - source: tera
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
+        relation_type: prov:hadPrimarySource
+      - source: mesh
         relation_type: prov:hadPrimarySource
   - category: MappingProduct
     description: Mapping file linking ChEMBL identifiers to MeSH identifiers

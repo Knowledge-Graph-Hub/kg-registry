@@ -22,7 +22,7 @@ domains:
 homepage_url: https://het.io/
 id: hetionet
 infores_id: hetionet
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -37,6 +37,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_url: https://neo4j.het.io/browser/
 - category: GraphProduct
   description: Hetionet v1.0 in JSON format
@@ -46,6 +70,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_file_size: 131
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
@@ -55,6 +103,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_file_size: 132
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
 - category: GraphProduct
@@ -65,6 +137,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_file_size: 131
   product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
 - category: GraphProduct
@@ -75,6 +171,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_file_size: 427128
   product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
 - category: ProcessProduct
@@ -82,6 +202,33 @@ products:
     networks)
   id: hetnetpy
   name: hetnetpy
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_url: https://github.com/hetio/hetnetpy
 - category: GraphicalInterface
   description: Web application to search and explore connectivity between nodes in
@@ -92,6 +239,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.

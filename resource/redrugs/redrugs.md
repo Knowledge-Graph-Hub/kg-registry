@@ -11,7 +11,7 @@ domains:
   - translational
 homepage_url: http://redrugs.tw.rpi.edu/
 id: redrugs
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -25,6 +25,14 @@ products:
     original_source:
       - source: redrugs
         relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: irefindex
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
+        relation_type: prov:hadPrimarySource
     product_url: http://redrugs.tw.rpi.edu/
   - category: ProgrammingInterface
     description: SADI web services API for querying the knowledge graph including resource search, interaction lookup, and network expansion
@@ -32,6 +40,14 @@ products:
     name: ReDrugs API
     original_source:
       - source: redrugs
+        relation_type: prov:hadPrimarySource
+      - source: drugbank
+        relation_type: prov:hadPrimarySource
+      - source: irefindex
+        relation_type: prov:hadPrimarySource
+      - source: omim
+        relation_type: prov:hadPrimarySource
+      - source: cosmic
         relation_type: prov:hadPrimarySource
     product_url: http://redrugs.tw.rpi.edu/api/
 publications:

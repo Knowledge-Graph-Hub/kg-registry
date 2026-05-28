@@ -16,7 +16,7 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
 id: suppkg
 infores_id: suppkg
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 name: SuppKG
 publications:
@@ -32,6 +32,8 @@ products:
     original_source:
       - source: suppkg
         relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
   - category: ProcessProduct
     description: Source data directory used for SuppKG in the SemRep_DS repository.
@@ -40,6 +42,14 @@ products:
     name: SuppKG Source Data Repository
     original_source:
       - source: suppkg
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: uniprot
+        relation_type: prov:hadPrimarySource
+      - source: chebi
+        relation_type: prov:hadPrimarySource
+      - source: pubchem
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 synonyms:

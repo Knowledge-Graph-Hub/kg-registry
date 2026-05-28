@@ -32,6 +32,8 @@ products:
   original_source:
   - source: biobricks-toxcast
     relation_type: prov:hadPrimarySource
+  - source: toxcast
+    relation_type: prov:hadPrimarySource
   product_url: https://apps.okn.us/biobricks-toxcast/sparql
 - id: biobricks-toxcast.tpf
   name: BioBricks ToxCast TPF
@@ -41,9 +43,11 @@ products:
   original_source:
   - source: biobricks-toxcast
     relation_type: prov:hadPrimarySource
+  - source: toxcast
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/biobricks-ai/biobricks-okg
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 ---
 BioBricks ToxCast
 

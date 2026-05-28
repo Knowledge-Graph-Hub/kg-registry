@@ -11,7 +11,9 @@ contacts:
     label: Mangal
 creation_date: '2025-12-15T00:00:00Z'
 description: mangal.io is a collaborative database and analysis platform for ecological networks, providing a comprehensive collection of species interaction networks (food webs, pollination networks, plant-herbivore networks) with tools for visualization, analysis, and reuse of published ecological data.
-domains: []
+domains:
+  - environment
+  - biological systems
 homepage_url: https://mangal.io/
 id: mangal
 last_modified_date: '2025-12-15T00:00:00Z'
@@ -30,6 +32,12 @@ products:
     original_source:
       - source: mangal
         relation_type: prov:hadPrimarySource
+      - source: catalogue-of-life
+        relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+      - source: itis
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to network data and metadata
     format: http
@@ -40,6 +48,12 @@ products:
     original_source:
       - source: mangal
         relation_type: prov:hadPrimarySource
+      - source: catalogue-of-life
+        relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+      - source: itis
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: API documentation, user guides, and data model specification
     format: http
@@ -48,6 +62,12 @@ products:
     product_url: https://mangal.io/documentation
     original_source:
       - source: mangal
+        relation_type: prov:hadPrimarySource
+      - source: catalogue-of-life
+        relation_type: prov:hadPrimarySource
+      - source: gbif
+        relation_type: prov:hadPrimarySource
+      - source: itis
         relation_type: prov:hadPrimarySource
 taxon:
   - NCBITaxon:33208

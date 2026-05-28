@@ -16,7 +16,7 @@ domains:
 - health
 homepage_url: https://github.com/gnn4dr/DRKG
 id: drkg
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 name: Drug Repurposing Knowledge Graph
 products:
@@ -29,6 +29,18 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: drkg
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: gnbr
+  - relation_type: prov:hadPrimarySource
+    source: hetionet
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: string
   product_file_size: 216650245
   product_url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
 - category: GraphProduct

@@ -43,7 +43,7 @@ domains:
 homepage_url: https://idrblab.org/ttd/
 id: ttd
 infores_id: ttd
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://idrblab.org/ttd/
@@ -68,6 +68,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
@@ -120,6 +124,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
@@ -133,6 +141,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
@@ -146,6 +158,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
@@ -159,6 +175,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
@@ -172,6 +192,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting

@@ -19,7 +19,7 @@ domains:
   - biological systems
 homepage_url: https://maayanlab.cloud/enrichr-kg/
 id: enrichr-kg
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -51,6 +51,15 @@ products:
     secondary_source:
       - source: enrichr
         relation_type: prov:wasInfluencedBy
+  - category: GraphicalInterface
+    description: Download assets page exposing node and edge CSV snapshots for the current Enrichr-KG release
+    format: http
+    id: enrichr-kg.downloads
+    name: Enrichr-KG Downloads
+    product_url: https://maayanlab.cloud/enrichr-kg/downloads
+    original_source:
+      - source: enrichr-kg
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: Neo4j graph database integrating Enrichr gene set libraries with genes, terms, pathways, diseases, drugs, cell types, and other functional annotations
     dump_format: neo4j
@@ -61,6 +70,62 @@ products:
       - source: enrichr-kg
         relation_type: prov:hadPrimarySource
       - source: enrichr
+        relation_type: prov:hadPrimarySource
+      - source: kegg
+        relation_type: prov:hadPrimarySource
+      - source: reactome
+        relation_type: prov:hadPrimarySource
+      - source: wikipathways
+        relation_type: prov:hadPrimarySource
+      - source: disgenet
+        relation_type: prov:hadPrimarySource
+      - source: go
+        relation_type: prov:hadPrimarySource
+      - source: pfam
+        relation_type: prov:hadPrimarySource
+      - source: depmap
+        relation_type: prov:hadPrimarySource
+      - source: achilles
+        relation_type: prov:hadPrimarySource
+      - source: gtex
+        relation_type: prov:hadPrimarySource
+      - source: hubmap
+        relation_type: prov:hadPrimarySource
+      - source: lincs
+        relation_type: prov:hadPrimarySource
+      - source: archs4
+        relation_type: prov:hadPrimarySource
+      - source: hp
+        relation_type: prov:hadPrimarySource
+      - source: mgi
+        relation_type: prov:hadPrimarySource
+      - source: gwascatalog
+        relation_type: prov:hadPrimarySource
+      - source: kg-jensenlab-diseases
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    description: Node-table CSV snapshot from the Enrichr-KG downloads page containing node metadata for a current release
+    format: csv
+    id: enrichr-kg.nodes-csv
+    name: Enrichr-KG Node CSV Snapshot
+    product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/Gene.nodes.csv
+    original_source:
+      - source: enrichr-kg
+        relation_type: prov:hadPrimarySource
+      - source: enrichr
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    description: Edge-table CSV snapshot from the Enrichr-KG downloads page using source.relation.target edge triples
+    format: csv
+    id: enrichr-kg.edges-csv
+    name: Enrichr-KG Edge CSV Snapshot
+    product_url: https://s3.amazonaws.com/maayan-kg/enrichr-kg/current/GO_Biological_Process_2021.GO_BP.Gene.edges.csv
+    original_source:
+      - source: enrichr-kg
+        relation_type: prov:hadPrimarySource
+      - source: enrichr
+        relation_type: prov:hadPrimarySource
+      - source: go
         relation_type: prov:hadPrimarySource
 publications:
   - authors:

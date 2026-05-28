@@ -25,7 +25,7 @@ domains:
 - genomics
 homepage_url: https://ubkg.docs.xconsortia.org/
 id: ubkg
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
@@ -270,6 +270,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
   product_url: https://smart-api.info/ui/96e5b5c0b0efeef5b93ea98ac2794837
 - category: GraphicalInterface
   description: Guesdt (Graphing UMLS Enables Search In Dynamic Trees) application
@@ -279,6 +281,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: ubkg
+  - relation_type: prov:hadPrimarySource
+    source: umls
   product_url: https://x-atlas-consortia.github.io/Guesdt/
 - category: GraphProduct
   description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,

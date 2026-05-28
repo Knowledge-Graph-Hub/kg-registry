@@ -23,7 +23,7 @@ domains:
 homepage_url: https://github.com/jakelever/GNBR
 id: gnbr
 infores_id: gnbr
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-05-27T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -40,6 +40,8 @@ products:
     source: gnbr
   - relation_type: prov:hadPrimarySource
     source: pubtator
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
   product_url: https://zenodo.org/records/3459420
 - category: GraphProduct
   description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
