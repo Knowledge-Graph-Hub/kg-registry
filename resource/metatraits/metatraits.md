@@ -16,12 +16,13 @@ domains:
   - biological systems
 homepage_url: https://metatraits.embl.de/
 id: metatraits
-last_modified_date: '2026-02-21T00:00:00Z'
+last_modified_date: '2026-05-29T00:00:00Z'
 layout: resource_detail
 name: metaTraits
 products:
   - category: GraphicalInterface
     description: Web interface to explore and query microbial trait data in metaTraits, covering over 2.2 million genomes and 140+ harmonized traits.
+    format: http
     id: metatraits.site
     name: metaTraits Web Portal
     original_source:
@@ -30,6 +31,7 @@ products:
     product_url: https://metatraits.embl.de/
   - category: Product
     description: Trait data table listing all 140+ harmonized traits available in metaTraits, mapped to standardized ontologies.
+    format: http
     id: metatraits.traits
     name: metaTraits Trait List
     original_source:
@@ -44,6 +46,150 @@ products:
       - source: progenomes
         relation_type: prov:hadPrimarySource
     product_url: https://metatraits.embl.de/traits
+  - category: Product
+    description: Taxonomy crosswalk from GTDB release r220 to NCBI taxonomy (2025-07-28), with lineage context, genome counts, and majority-vote agreement fractions.
+    format: mixed
+    id: metatraits.gtdb2ncbi
+    name: GTDB to NCBI Taxonomy Mapping
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: gtdb
+        relation_type: prov:wasDerivedFrom
+      - source: ncbi
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/GTDB2NCBI.tsv.gz
+  - category: Product
+    description: Taxonomy crosswalk from NCBI taxonomy (2025-07-28) to GTDB release r220, with lineage context, genome counts, and majority-vote agreement fractions.
+    format: mixed
+    id: metatraits.ncbi2gtdb
+    name: NCBI to GTDB Taxonomy Mapping
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: gtdb
+        relation_type: prov:wasDerivedFrom
+      - source: ncbi
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/NCBI2GTDB.tsv.gz
+  - category: Product
+    description: Family-level harmonized trait annotations aggregated for NCBI taxonomy in compressed JSONL format.
+    format: mixed
+    id: metatraits.ncbi.family-summary
+    name: metaTraits NCBI Family Summary
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: ncbi
+        relation_type: prov:wasDerivedFrom
+      - source: bacdive
+        relation_type: prov:wasDerivedFrom
+      - source: bv-brc
+        relation_type: prov:wasDerivedFrom
+      - source: goldterms
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/ncbi_family_summary.jsonl.gz
+  - category: Product
+    description: Genus-level harmonized trait annotations aggregated for NCBI taxonomy in compressed JSONL format.
+    format: mixed
+    id: metatraits.ncbi.genus-summary
+    name: metaTraits NCBI Genus Summary
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: ncbi
+        relation_type: prov:wasDerivedFrom
+      - source: bacdive
+        relation_type: prov:wasDerivedFrom
+      - source: bv-brc
+        relation_type: prov:wasDerivedFrom
+      - source: goldterms
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/ncbi_genus_summary.jsonl.gz
+  - category: Product
+    description: Species-level harmonized trait annotations aggregated for NCBI taxonomy in compressed JSONL format.
+    format: mixed
+    id: metatraits.ncbi.species-summary
+    name: metaTraits NCBI Species Summary
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: ncbi
+        relation_type: prov:wasDerivedFrom
+      - source: bacdive
+        relation_type: prov:wasDerivedFrom
+      - source: bv-brc
+        relation_type: prov:wasDerivedFrom
+      - source: goldterms
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+  - category: Product
+    description: Family-level harmonized trait annotations aggregated for GTDB taxonomy in compressed JSONL format.
+    format: mixed
+    id: metatraits.gtdb.family-summary
+    name: metaTraits GTDB Family Summary
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: gtdb
+        relation_type: prov:wasDerivedFrom
+      - source: bacdive
+        relation_type: prov:wasDerivedFrom
+      - source: bv-brc
+        relation_type: prov:wasDerivedFrom
+      - source: goldterms
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
+  - category: Product
+    description: Genus-level harmonized trait annotations aggregated for GTDB taxonomy in compressed JSONL format.
+    format: mixed
+    id: metatraits.gtdb.genus-summary
+    name: metaTraits GTDB Genus Summary
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: gtdb
+        relation_type: prov:wasDerivedFrom
+      - source: bacdive
+        relation_type: prov:wasDerivedFrom
+      - source: bv-brc
+        relation_type: prov:wasDerivedFrom
+      - source: goldterms
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/gtdb_genus_summary.jsonl.gz
+  - category: Product
+    description: Species-level harmonized trait annotations aggregated for GTDB taxonomy in compressed JSONL format.
+    format: mixed
+    id: metatraits.gtdb.species-summary
+    name: metaTraits GTDB Species Summary
+    original_source:
+      - source: metatraits
+        relation_type: prov:hadPrimarySource
+      - source: gtdb
+        relation_type: prov:wasDerivedFrom
+      - source: bacdive
+        relation_type: prov:wasDerivedFrom
+      - source: bv-brc
+        relation_type: prov:wasDerivedFrom
+      - source: goldterms
+        relation_type: prov:wasDerivedFrom
+      - source: progenomes
+        relation_type: prov:wasDerivedFrom
+    product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
 taxon:
   - NCBITaxon:2
 ---
