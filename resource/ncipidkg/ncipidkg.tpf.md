@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for NCI-PID 2.0 KG
+format: http
 id: ncipidkg.tpf
 name: NCI-PID 2.0 KG TPF
 original_source:

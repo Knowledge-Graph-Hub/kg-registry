@@ -908,9 +908,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -937,9 +937,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -969,9 +969,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1233,6 +1233,7 @@ products:
     containing 1,179 tumors, 2,550 biomarkers, 1,806 drugs, and 756 ADRs with 139,254
     relationship edges (Tumor-Biomarker, Tumor-Drug, Tumor-ADR, Drug-Biomarker, Drug-ADR,
     Biomarker-ADR). Includes correlation weights calculated using naive Bayesian model.
+  format: mixed
   id: tbkg.data
   name: TBKG Knowledge Graph Data
   original_source:
@@ -1248,6 +1249,7 @@ products:
     by importance, biomarker pathways explaining drug-ADR relationships, and clinical
     data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance
     with official manual and 0.81 three-fold cross-validation accuracy.
+  format: mixed
   id: tbkg.osimertinib_case_study
   name: TBKG Osimertinib ADR Case Study Data
   original_source:
@@ -1281,6 +1283,45 @@ products:
   - relation_type: prov:hadPrimarySource
     source: umls
   product_url: https://x-atlas-consortia.github.io/Guesdt/
+- category: GraphProduct
+  description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
+    and disease information for drug repositioning.
+  format: http
+  id: oregano.graph
+  name: OREGANO Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oregano
+  product_url: https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: cmaup
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: npass
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: bio2rdf
 publications:
 - id: PMID:14681409
   preferred: true

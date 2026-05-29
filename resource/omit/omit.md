@@ -259,7 +259,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: obi
   product_file_size: 642902930
-  product_url: https://orkg.org/api/rdf/dump
+  product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications: []
 repository: https://github.com/OmniSearch/omit
 ---

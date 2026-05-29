@@ -16,10 +16,10 @@ contacts: []
 products:
 - id: phaseskg.sparql
   name: PHASES KG SPARQL
-  description: SPARQL query service for querying PHASES KG via the okn.us federated interface
+  description: SPARQL endpoint for PHASES KG
   category: ProgrammingInterface
   format: http
-  product_url: https://apps.okn.us/
+  product_url: https://apps.okn.us/phaseskg/sparql
   original_source:
   - source: phaseskg
     relation_type: prov:hadPrimarySource
@@ -34,7 +34,8 @@ products:
     relation_type: prov:hadPrimarySource
 - id: phaseskg.knowledge-graph-docs
   name: PHASES KG Documentation
-  description: Documentation page describing the HealthyPhases knowledge graph, technical implementation, and provenance-oriented access patterns.
+  description: Documentation page describing the HealthyPhases knowledge graph, technical
+    implementation, and provenance-oriented access patterns.
   category: DocumentationProduct
   format: http
   product_url: https://healthyphases.org/docs/research/knowledge-graph

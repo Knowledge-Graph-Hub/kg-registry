@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for PHASES KG
+format: http
 id: phaseskg.tpf
 name: PHASES KG TPF
 original_source:

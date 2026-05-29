@@ -8,6 +8,7 @@ name: CFDE-GSE Node CSV Snapshot
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cfde-gse
+product_file_size: 2119955
 product_url: https://s3.amazonaws.com/maayan-kg/cfde-kg/042123/Gene.nodes.csv
 layout: product_detail
 ---

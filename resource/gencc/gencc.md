@@ -2,69 +2,665 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    label: GenCC Team
-    contact_details:
-      - contact_type: email
-        value: "gencc@thegencc.org"
-      - contact_type: url
-        value: "https://thegencc.org/"
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: gencc@thegencc.org
+  - contact_type: url
+    value: https://thegencc.org/
+  label: GenCC Team
 creation_date: '2025-11-08T00:00:00Z'
-description: The Gene Curation Coalition (GenCC) is a global collaborative effort to harmonize gene-disease validity curation across multiple expert organizations and clinical testing laboratories. GenCC brings together leading resources including ClinGen, OMIM, Orphanet, DECIPHER, Genomics England PanelApp, and multiple clinical diagnostic laboratories to standardize terminology and share gene-disease validity assertions publicly. The coalition was formed in 2018 to address the lack of universal standards and terminologies for defining gene-disease relationships used in genomic medicine and research. Through a modified Delphi survey involving the international genetics community, GenCC established consensus terminology for grading gene-disease validity, including standardized terms such as Definitive, Strong, Moderate, Limited, Disputed Evidence, Refuted Evidence, No Known Disease Relationship, and Animal Model Only. The GenCC database provides curated gene-disease validity assertions with a focus on monogenic Mendelian diseases, including information on mode of inheritance, classification confidence level, supporting evidence, and links to detailed curations from member organizations.
+description: The Gene Curation Coalition (GenCC) is a global collaborative effort
+  to harmonize gene-disease validity curation across multiple expert organizations
+  and clinical testing laboratories. GenCC brings together leading resources including
+  ClinGen, OMIM, Orphanet, DECIPHER, Genomics England PanelApp, and multiple clinical
+  diagnostic laboratories to standardize terminology and share gene-disease validity
+  assertions publicly. The coalition was formed in 2018 to address the lack of universal
+  standards and terminologies for defining gene-disease relationships used in genomic
+  medicine and research. Through a modified Delphi survey involving the international
+  genetics community, GenCC established consensus terminology for grading gene-disease
+  validity, including standardized terms such as Definitive, Strong, Moderate, Limited,
+  Disputed Evidence, Refuted Evidence, No Known Disease Relationship, and Animal Model
+  Only. The GenCC database provides curated gene-disease validity assertions with
+  a focus on monogenic Mendelian diseases, including information on mode of inheritance,
+  classification confidence level, supporting evidence, and links to detailed curations
+  from member organizations.
 domains:
-  - genomics
-id: "gencc"
-infores_id: "gencc"
+- genomics
+homepage_url: https://thegencc.org/
+id: gencc
+infores_id: gencc
 last_modified_date: '2026-04-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 name: The Gene Curation Coalition (GenCC)
-homepage_url: https://thegencc.org/
 products:
-  - category: Product
-    description: The GenCC database containing over 15,000 curated gene-disease validity assertions on 4,500+ unique genes from 12 international submitters, with standardized classifications and evidence links
-    format: http
-    id: "gencc.database"
-    name: GenCC Database
-    product_url: https://search.thegencc.org/
-    original_source:
-      - source: gencc
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Interactive web-based search and browse interface at search.thegencc.org allowing users to filter gene-disease assertions by gene symbol, disease, submitter, and validity classification
-    format: http
-    id: "gencc.search_interface"
-    name: GenCC Search Interface
-    product_url: https://search.thegencc.org/
-    original_source:
-      - source: gencc
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Freely available downloadable datasets in multiple formats (XLSX, XLS, TSV, CSV) containing all GenCC gene-disease assertions with comprehensive metadata under CC0 1.0 Public Domain Dedication
-    format: http
-    id: "gencc.downloads"
-    name: GenCC Data Downloads
-    product_url: https://search.thegencc.org/download
-    original_source:
-      - source: gencc
-        relation_type: prov:hadPrimarySource
+- category: Product
+  description: The GenCC database containing over 15,000 curated gene-disease validity
+    assertions on 4,500+ unique genes from 12 international submitters, with standardized
+    classifications and evidence links
+  format: http
+  id: gencc.database
+  name: GenCC Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  product_url: https://search.thegencc.org/
+- category: GraphicalInterface
+  description: Interactive web-based search and browse interface at search.thegencc.org
+    allowing users to filter gene-disease assertions by gene symbol, disease, submitter,
+    and validity classification
+  format: http
+  id: gencc.search_interface
+  name: GenCC Search Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  product_url: https://search.thegencc.org/
+- category: Product
+  description: Freely available downloadable datasets in multiple formats (XLSX, XLS,
+    TSV, CSV) containing all GenCC gene-disease assertions with comprehensive metadata
+    under CC0 1.0 Public Domain Dedication
+  format: http
+  id: gencc.downloads
+  name: GenCC Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  product_url: https://search.thegencc.org/download
+- category: GraphProduct
+  compression: gzip
+  description: PharMeBINet V2 JSON release published on February 6, 2024.
+  format: json
+  id: pharmebinet.json
+  latest_version: v2
+  name: PharMeBINet JSON Release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 1942958027
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 TSV release published on February 6, 2024.
+  format: tsv
+  id: pharmebinet.tsv
+  latest_version: v2
+  name: PharMeBINet TSV Release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 1922614551
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 GraphML release published on February 6, 2024.
+  format: mixed
+  id: pharmebinet.graphml
+  latest_version: v2
+  name: PharMeBINet GraphML Release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 2027519087
+  product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+  format: neo4j
+  id: pharmebinet.neo4j
+  latest_version: v2
+  name: PharMeBINet Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 3847978577
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+  dump_format: neo4j
+  format: neo4j
+  id: pharmebinet.neo4j.dump
+  latest_version: v2
+  name: PharMeBINet Neo4j Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 3598325722
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
 publications:
-  - authors:
-      - Marina T. DiStefano
-      - Scott Goehringer
-      - Heidi L. Rehm
-    doi: "10.1016/j.gim.2022.04.017"
-    id: "doi:10.1016/j.gim.2022.04.017"
-    journal: Genetics in Medicine
-    preferred: true
-    title: 'The Gene Curation Coalition: A global effort to harmonize gene–disease evidence resources'
-    year: "2022"
+- authors:
+  - Marina T. DiStefano
+  - Scott Goehringer
+  - Heidi L. Rehm
+  doi: 10.1016/j.gim.2022.04.017
+  id: doi:10.1016/j.gim.2022.04.017
+  journal: Genetics in Medicine
+  preferred: true
+  title: "The Gene Curation Coalition: A global effort to harmonize gene\u2013disease\
+    \ evidence resources"
+  year: '2022'
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # The Gene Curation Coalition (GenCC)
 
 ## Overview

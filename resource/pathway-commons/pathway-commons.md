@@ -2,140 +2,730 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.mskcc.org/"
-    id: "mskcc"
-    label: "Memorial Sloan Kettering Cancer Center"
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://www.utoronto.ca/"
-    id: "utoronto"
-    label: "University of Toronto"
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.mskcc.org/
+  id: mskcc
+  label: Memorial Sloan Kettering Cancer Center
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.utoronto.ca/
+  id: utoronto
+  label: University of Toronto
 creation_date: '2025-12-20T00:00:00Z'
-description: Pathway Commons is a centralized web resource that aggregates biological pathway and molecular interaction data from 22 major public databases into standardized BioPAX format. It provides 4,794 pathways and over 2.3 million molecular interactions accessible through multiple interfaces including web portal, REST API, and downloadable datasets, supporting systems biology research, pathway analysis, and network visualization.
+description: Pathway Commons is a centralized web resource that aggregates biological
+  pathway and molecular interaction data from 22 major public databases into standardized
+  BioPAX format. It provides 4,794 pathways and over 2.3 million molecular interactions
+  accessible through multiple interfaces including web portal, REST API, and downloadable
+  datasets, supporting systems biology research, pathway analysis, and network visualization.
 domains:
-  - pathways
-  - systems biology
+- pathways
+- systems biology
 homepage_url: https://www.pathwaycommons.org/
-id: "pathway-commons"
-infores_id: "pathway-commons"
+id: pathway-commons
+infores_id: pathway-commons
+last_modified_date: '2025-12-20T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/3.0/"
-  label: "CC BY 3.0 (aggregated content)"
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0 (aggregated content)
 name: Pathway Commons
 products:
-  - category: ProgrammingInterface
-    description: RESTful web service API for programmatic access to Pathway Commons data with multiple query capabilities including search, pathway retrieval, and network analysis
-    format: http
-    id: "pathway-commons.api"
-    is_public: true
-    name: Pathway Commons REST API
-    product_url: "http://www.pathwaycommons.org/pc/webservice.do"
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Interactive web-based interface for browsing, searching, and visualizing biological pathways and molecular interactions
-    format: http
-    id: "pathway-commons.web"
-    is_public: true
-    name: Pathway Commons Web Interface
-    product_url: "https://www.pathwaycommons.org/"
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Downloadable integrated pathway datasets in multiple standardized formats including BioPAX, SIF, GMT, and JSON-LD
-    id: "pathway-commons.downloads"
-    name: Pathway Commons Data Downloads
-    product_url: "https://www.pathwaycommons.org/"
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Integrated BioPAX Level 3 unified model containing normalized pathway data, molecular interactions, and cross-database entity mappings from 22 sources
-    id: "pathway-commons.biopax"
-    name: Integrated BioPAX Model
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Simple Interaction Format (SIF) network files representing binary pairwise molecular relationships for network analysis and visualization
-    id: "pathway-commons.sif"
-    name: SIF Network Format
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Gene Matrix Transposed (GMT) format gene sets for pathway enrichment analysis with tools like GSEA (Gene Set Enrichment Analysis)
-    id: "pathway-commons.gmt"
-    name: GMT Gene Set Format
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: JSON-LD format for linked data web applications with semantic context and programmatic access to pathway information
-    id: "pathway-commons.jsonld"
-    name: JSON-LD Linked Data Format
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Comprehensive API documentation, data format specifications, and tutorials for using Pathway Commons data and services
-    format: http
-    id: "pathway-commons.documentation"
-    is_public: true
-    name: Pathway Commons Documentation
-    product_url: "https://pathwaycommons.github.io/pcapi/"
-    original_source:
-      - source: pathway-commons
-        relation_type: prov:hadPrimarySource
+- category: ProgrammingInterface
+  description: RESTful web service API for programmatic access to Pathway Commons
+    data with multiple query capabilities including search, pathway retrieval, and
+    network analysis
+  format: http
+  id: pathway-commons.api
+  is_public: true
+  name: Pathway Commons REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_url: http://www.pathwaycommons.org/pc/webservice.do
+- category: GraphicalInterface
+  description: Interactive web-based interface for browsing, searching, and visualizing
+    biological pathways and molecular interactions
+  format: http
+  id: pathway-commons.web
+  is_public: true
+  name: Pathway Commons Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_url: https://www.pathwaycommons.org/
+- category: Product
+  description: Downloadable integrated pathway datasets in multiple standardized formats
+    including BioPAX, SIF, GMT, and JSON-LD
+  id: pathway-commons.downloads
+  name: Pathway Commons Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_url: https://www.pathwaycommons.org/
+- category: Product
+  description: Integrated BioPAX Level 3 unified model containing normalized pathway
+    data, molecular interactions, and cross-database entity mappings from 22 sources
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+- category: Product
+  description: Simple Interaction Format (SIF) network files representing binary pairwise
+    molecular relationships for network analysis and visualization
+  id: pathway-commons.sif
+  name: SIF Network Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+- category: Product
+  description: Gene Matrix Transposed (GMT) format gene sets for pathway enrichment
+    analysis with tools like GSEA (Gene Set Enrichment Analysis)
+  id: pathway-commons.gmt
+  name: GMT Gene Set Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+- category: Product
+  description: JSON-LD format for linked data web applications with semantic context
+    and programmatic access to pathway information
+  id: pathway-commons.jsonld
+  name: JSON-LD Linked Data Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+- category: DocumentationProduct
+  description: Comprehensive API documentation, data format specifications, and tutorials
+    for using Pathway Commons data and services
+  format: http
+  id: pathway-commons.documentation
+  is_public: true
+  name: Pathway Commons Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_url: https://pathwaycommons.github.io/pcapi/
+- category: GraphProduct
+  compression: gzip
+  description: PharMeBINet V2 JSON release published on February 6, 2024.
+  format: json
+  id: pharmebinet.json
+  latest_version: v2
+  name: PharMeBINet JSON Release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 1942958027
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.json.gz/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 TSV release published on February 6, 2024.
+  format: tsv
+  id: pharmebinet.tsv
+  latest_version: v2
+  name: PharMeBINet TSV Release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 1922614551
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_tsv_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 GraphML release published on February 6, 2024.
+  format: mixed
+  id: pharmebinet.graphml
+  latest_version: v2
+  name: PharMeBINet GraphML Release
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 2027519087
+  product_url: https://zenodo.org/api/records/17814889/files/PharMeBiNet_graphml_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 Neo4j database release published on February 6, 2024.
+  format: neo4j
+  id: pharmebinet.neo4j
+  latest_version: v2
+  name: PharMeBINet Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 3847978577
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  compression: zip
+  description: PharMeBINet V2 Neo4j dump release published on February 6, 2024.
+  dump_format: neo4j
+  format: neo4j
+  id: pharmebinet.neo4j.dump
+  latest_version: v2
+  name: PharMeBINet Neo4j Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmebinet
+  product_file_size: 3598325722
+  product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: adrecs
+  - relation_type: prov:wasDerivedFrom
+    source: aelous
+  - relation_type: prov:wasDerivedFrom
+    source: atc
+  - relation_type: prov:wasDerivedFrom
+    source: bindingdb
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: cl
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: ddinter
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: drugcentral
+  - relation_type: prov:wasDerivedFrom
+    source: efo
+  - relation_type: prov:wasDerivedFrom
+    source: fideo
+  - relation_type: prov:wasDerivedFrom
+    source: foodon
+  - relation_type: prov:wasDerivedFrom
+    source: gencc
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hetionet
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: hippie
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: iid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: markerdb
+  - relation_type: prov:wasDerivedFrom
+    source: med-rt
+  - relation_type: prov:wasDerivedFrom
+    source: mirbase
+  - relation_type: prov:wasDerivedFrom
+    source: mondo
+  - relation_type: prov:wasDerivedFrom
+    source: ncbigene
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: pathway-commons
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: ptmd
+  - relation_type: prov:wasDerivedFrom
+    source: pubchem
+  - relation_type: prov:wasDerivedFrom
+    source: qptm
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: refseq
+  - relation_type: prov:wasDerivedFrom
+    source: rnadisease
+  - relation_type: prov:wasDerivedFrom
+    source: rnainter
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: smpdb
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: uberon
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
 publications:
-  - authors:
-      - Rodchenkov I
-      - Babur O
-      - Luna A
-      - et al.
-    doi: "10.1093/nar/gkz946"
-    id: "doi:10.1093/nar/gkz946"
-    journal: "Nucleic Acids Research"
-    preferred: true
-    title: "Pathway Commons 2019 Update: integration, analysis and exploration of pathway data"
-    year: "2020"
-  - authors:
-      - Cerami EG
-      - Gross BE
-      - Demir E
-      - et al.
-    doi: "10.1093/nar/gkq1016"
-    id: "doi:10.1093/nar/gkq1016"
-    journal: "Nucleic Acids Research"
-    title: "Pathway Commons, a web resource for biological pathway data"
-    year: "2011"
-  - authors:
-      - Cerami E
-      - Bader GD
-      - Gross BE
-      - Sander C
-    doi: "10.1186/1471-2105-7-497"
-    id: "doi:10.1186/1471-2105-7-497"
-    journal: "BMC Bioinformatics"
-    title: "cPath: open source software for collecting, storing, and querying biological pathways"
-    year: "2006"
-repository: "https://github.com/PathwayCommons"
+- authors:
+  - Rodchenkov I
+  - Babur O
+  - Luna A
+  - et al.
+  doi: 10.1093/nar/gkz946
+  id: doi:10.1093/nar/gkz946
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Pathway Commons 2019 Update: integration, analysis and exploration of pathway
+    data'
+  year: '2020'
+- authors:
+  - Cerami EG
+  - Gross BE
+  - Demir E
+  - et al.
+  doi: 10.1093/nar/gkq1016
+  id: doi:10.1093/nar/gkq1016
+  journal: Nucleic Acids Research
+  title: Pathway Commons, a web resource for biological pathway data
+  year: '2011'
+- authors:
+  - Cerami E
+  - Bader GD
+  - Gross BE
+  - Sander C
+  doi: 10.1186/1471-2105-7-497
+  id: doi:10.1186/1471-2105-7-497
+  journal: BMC Bioinformatics
+  title: 'cPath: open source software for collecting, storing, and querying biological
+    pathways'
+  year: '2006'
+repository: https://github.com/PathwayCommons
 synonyms:
-  - Pathway Commons
-  - PathwayCommons
-  - PC
+- Pathway Commons
+- PathwayCommons
+- PC
 taxon:
-  - "NCBITaxon:9606"
-last_modified_date: '2025-12-20T00:00:00Z'
+- NCBITaxon:9606
 ---
-
 # Pathway Commons
 
 ## Overview

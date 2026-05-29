@@ -8,6 +8,7 @@ name: CFDE-GSE Edge CSV Snapshot
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cfde-gse
+product_file_size: 7307504
 product_url: https://s3.amazonaws.com/maayan-kg/cfde-kg/042123/KOMP2_Mouse_Phenotypes_2022.KOMP2_Mouse_Phenotype.Gene.edges.csv
 layout: product_detail
 ---

@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: snodb
 product_url: https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/about/
+warnings:
+- File was not able to be retrieved when checked on 2026-05-28_ Timeout connecting
+  to URL
 layout: product_detail
 ---

@@ -226,6 +226,7 @@ products:
 - category: Product
   description: Trait data table listing all 140+ harmonized traits available in metaTraits,
     mapped to standardized ontologies.
+  format: http
   id: metatraits.traits
   name: metaTraits Trait List
   original_source:
@@ -240,6 +241,132 @@ products:
   - relation_type: prov:hadPrimarySource
     source: progenomes
   product_url: https://metatraits.embl.de/traits
+- category: Product
+  description: Family-level harmonized trait annotations aggregated for NCBI taxonomy
+    in compressed JSONL format.
+  format: mixed
+  id: metatraits.ncbi.family-summary
+  name: metaTraits NCBI Family Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metatraits
+  - relation_type: prov:wasDerivedFrom
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: bv-brc
+  - relation_type: prov:wasDerivedFrom
+    source: goldterms
+  - relation_type: prov:wasDerivedFrom
+    source: progenomes
+  product_file_size: 1540253
+  product_url: https://metatraits.embl.de/static/downloads/ncbi_family_summary.jsonl.gz
+- category: Product
+  description: Genus-level harmonized trait annotations aggregated for NCBI taxonomy
+    in compressed JSONL format.
+  format: mixed
+  id: metatraits.ncbi.genus-summary
+  name: metaTraits NCBI Genus Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metatraits
+  - relation_type: prov:wasDerivedFrom
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: bv-brc
+  - relation_type: prov:wasDerivedFrom
+    source: goldterms
+  - relation_type: prov:wasDerivedFrom
+    source: progenomes
+  product_file_size: 5417182
+  product_url: https://metatraits.embl.de/static/downloads/ncbi_genus_summary.jsonl.gz
+- category: Product
+  description: Species-level harmonized trait annotations aggregated for NCBI taxonomy
+    in compressed JSONL format.
+  format: mixed
+  id: metatraits.ncbi.species-summary
+  name: metaTraits NCBI Species Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metatraits
+  - relation_type: prov:wasDerivedFrom
+    source: ncbi
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: bv-brc
+  - relation_type: prov:wasDerivedFrom
+    source: goldterms
+  - relation_type: prov:wasDerivedFrom
+    source: progenomes
+  product_file_size: 34062481
+  product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+- category: Product
+  description: Family-level harmonized trait annotations aggregated for GTDB taxonomy
+    in compressed JSONL format.
+  format: mixed
+  id: metatraits.gtdb.family-summary
+  name: metaTraits GTDB Family Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metatraits
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: bv-brc
+  - relation_type: prov:wasDerivedFrom
+    source: goldterms
+  - relation_type: prov:wasDerivedFrom
+    source: progenomes
+  product_file_size: 4575050
+  product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
+- category: Product
+  description: Genus-level harmonized trait annotations aggregated for GTDB taxonomy
+    in compressed JSONL format.
+  format: mixed
+  id: metatraits.gtdb.genus-summary
+  name: metaTraits GTDB Genus Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metatraits
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: bv-brc
+  - relation_type: prov:wasDerivedFrom
+    source: goldterms
+  - relation_type: prov:wasDerivedFrom
+    source: progenomes
+  product_file_size: 16364735
+  product_url: https://metatraits.embl.de/static/downloads/gtdb_genus_summary.jsonl.gz
+- category: Product
+  description: Species-level harmonized trait annotations aggregated for GTDB taxonomy
+    in compressed JSONL format.
+  format: mixed
+  id: metatraits.gtdb.species-summary
+  name: metaTraits GTDB Species Summary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metatraits
+  - relation_type: prov:wasDerivedFrom
+    source: gtdb
+  - relation_type: prov:wasDerivedFrom
+    source: bacdive
+  - relation_type: prov:wasDerivedFrom
+    source: bv-brc
+  - relation_type: prov:wasDerivedFrom
+    source: goldterms
+  - relation_type: prov:wasDerivedFrom
+    source: progenomes
+  product_file_size: 48114108
+  product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
 taxon:
 - NCBITaxon:2
 ---

@@ -57,9 +57,9 @@ products:
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim
@@ -912,7 +912,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: obi
   product_file_size: 642902930
-  product_url: https://orkg.org/api/rdf/dump
+  product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications: []
 repository: https://github.com/obophenotype/ncbitaxon
 ---

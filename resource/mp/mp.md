@@ -48,9 +48,9 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.

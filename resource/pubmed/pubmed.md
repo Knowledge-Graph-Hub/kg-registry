@@ -267,9 +267,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -354,9 +354,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-05-26: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-29: FTP error: timed
     out'
 - category: Product
   compression: gzip
@@ -712,6 +712,7 @@ products:
     containing 1,179 tumors, 2,550 biomarkers, 1,806 drugs, and 756 ADRs with 139,254
     relationship edges (Tumor-Biomarker, Tumor-Drug, Tumor-ADR, Drug-Biomarker, Drug-ADR,
     Biomarker-ADR). Includes correlation weights calculated using naive Bayesian model.
+  format: mixed
   id: tbkg.data
   name: TBKG Knowledge Graph Data
   original_source:
@@ -727,6 +728,7 @@ products:
     by importance, biomarker pathways explaining drug-ADR relationships, and clinical
     data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance
     with official manual and 0.81 three-fold cross-validation accuracy.
+  format: mixed
   id: tbkg.osimertinib_case_study
   name: TBKG Osimertinib ADR Case Study Data
   original_source:

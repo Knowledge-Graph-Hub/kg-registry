@@ -243,7 +243,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: obi
   product_file_size: 642902930
-  product_url: https://orkg.org/api/rdf/dump
+  product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 - category: ProgrammingInterface
   description: Triple Pattern Fragments endpoint for Wikidata
   id: wikidata.tpf

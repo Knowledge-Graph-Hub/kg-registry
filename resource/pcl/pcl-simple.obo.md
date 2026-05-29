@@ -9,9 +9,9 @@ original_source:
   source: pcl
 product_url: http://purl.obolibrary.org/obo/pcl-simple.obo
 warnings:
+- File was not able to be retrieved when checked on 2026-05-28_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-05-26_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-05-26_ HTTP 404 error when
-  accessing file
 layout: product_detail
 ---

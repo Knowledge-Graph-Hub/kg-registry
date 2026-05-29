@@ -4,6 +4,7 @@ description: Weighted heterogeneous knowledge graph extracted from MEDLINE corpu
   containing 1,179 tumors, 2,550 biomarkers, 1,806 drugs, and 756 ADRs with 139,254
   relationship edges (Tumor-Biomarker, Tumor-Drug, Tumor-ADR, Drug-Biomarker, Drug-ADR,
   Biomarker-ADR). Includes correlation weights calculated using naive Bayesian model.
+format: mixed
 id: tbkg.data
 name: TBKG Knowledge Graph Data
 original_source:

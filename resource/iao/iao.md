@@ -56,9 +56,9 @@ products:
     source: iao
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: An ontology based on a theory of document acts describing what people
@@ -317,7 +317,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: obi
   product_file_size: 642902930
-  product_url: https://orkg.org/api/rdf/dump
+  product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications: []
 repository: https://github.com/information-artifact-ontology/IAO
 ---

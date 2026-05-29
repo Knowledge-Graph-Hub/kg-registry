@@ -5,6 +5,8 @@ Resource,Activity Status,Validation Status
 aact,active,PASS
 achilles,active,PASS
 ado,active,PASS
+adrecs,active,PASS
+aelous,active,PASS
 aeolus,active,PASS
 afpo,active,PASS
 agro,active,PASS
@@ -21,6 +23,7 @@ arax,active,PASS
 archs4,active,PASS
 aro,active,PASS
 ars,active,PASS
+atc,active,PASS
 athena,active,PASS
 automat,active,PASS
 bacdive,active,PASS
@@ -62,6 +65,7 @@ cdno,active,PASS
 cebs,active,PASS
 cellmarker,active,PASS
 cellosaurus,active,PASS
+cellxgene,active,PASS
 cfde-ddkg,active,PASS
 cfde-gse,active,PASS
 cgnc,active,PASS
@@ -271,6 +275,7 @@ hao,active,PASS
 harmonizome-kg,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
+hippie,active,PASS
 hmdb,active,PASS
 hom,active,PASS
 hp,active,PASS
@@ -297,6 +302,7 @@ iconclass,active,PASS
 identifier-mappings,active,PASS
 idisk,active,PASS
 ido,active,PASS
+iid,active,PASS
 ikraph,active,PASS
 imex,active,PASS
 imodulondb,active,PASS
@@ -342,11 +348,13 @@ m-csa,active,PASS
 ma,active,PASS
 malacards,active,PASS
 mangal,active,PASS
+markerdb,active,PASS
 maudekg,active,PASS
 maxo,active,PASS
 mco,active,PASS
 mcro,active,PASS
 mechreponet,active,PASS
+med-rt,active,PASS
 medgen,active,PASS
 medi,active,PASS
 mediadive,active,PASS
@@ -528,11 +536,13 @@ proteomehd,active,PASS
 proton,active,PASS
 psdo,active,PASS
 pso,active,PASS
+ptmd,active,PASS
 pubchem,active,PASS
 pubmed,active,PASS
 pubmedcentral,active,PASS
 pubtator,active,PASS
 pw,active,PASS
+qptm,active,PASS
 rampdb,active,PASS
 raras,active,PASS
 rbo,active,PASS
@@ -553,6 +563,8 @@ ribocentre,active,PASS
 ribovision,active,PASS
 rna-kg,active,PASS
 rnacentral,active,PASS
+rnadisease,active,PASS
+rnainter,active,PASS
 ro,active,PASS
 robokop,active,PASS
 ror,active,PASS

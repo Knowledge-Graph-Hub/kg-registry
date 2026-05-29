@@ -52,11 +52,11 @@ products:
   warnings:
   - The HPIDB homepage and historical AgBase download URL were not reachable during
     curation on 2026-05-04.
-  - 'File was not able to be retrieved when checked on 2026-05-26: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-28: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-05-28: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-05-29: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'

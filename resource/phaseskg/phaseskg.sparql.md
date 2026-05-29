@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for PHASES KG
+format: http
 id: phaseskg.sparql
 name: PHASES KG SPARQL
 original_source:

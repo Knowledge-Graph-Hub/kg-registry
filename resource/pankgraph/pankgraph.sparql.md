@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for PanKgraph
+format: http
 id: pankgraph.sparql
 name: PanKgraph SPARQL
 original_source:

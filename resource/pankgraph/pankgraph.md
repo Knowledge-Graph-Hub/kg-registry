@@ -7,10 +7,10 @@ homepage_url: https://pankbase.org/
 products:
 - id: pankgraph.sparql
   name: PanKgraph SPARQL
-  description: SPARQL query service for querying PanKgraph via the okn.us federated interface
+  description: SPARQL endpoint for PanKgraph
   category: ProgrammingInterface
   format: http
-  product_url: https://apps.okn.us/
+  product_url: https://apps.okn.us/pankgraph/sparql
   original_source:
   - source: pankgraph
     relation_type: prov:hadPrimarySource

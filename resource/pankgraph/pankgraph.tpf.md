@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for PanKgraph
+format: http
 id: pankgraph.tpf
 name: PanKgraph TPF
 original_source:

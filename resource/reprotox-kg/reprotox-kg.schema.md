@@ -7,6 +7,7 @@ name: ReproTox-KG Schema
 original_source:
 - relation_type: prov:hadPrimarySource
   source: reprotox-kg
+product_file_size: 2599
 product_url: https://github.com/MaayanLab/Reprotox-KG/blob/main/schema.json
 layout: product_detail
 ---

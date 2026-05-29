@@ -20,7 +20,7 @@ original_source:
 product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
 repository: https://github.com/elsevier-health/scibite-ontology
 warnings:
-- File was not able to be retrieved when checked on 2026-05-26_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-28_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
   accessing file

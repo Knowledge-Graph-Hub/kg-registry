@@ -47,11 +47,11 @@ products:
     source: pbpko
   product_url: http://purl.obolibrary.org/obo/pbpko.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Physiologically-Based Pharmacokinetic Ontology in JSON format
@@ -63,12 +63,12 @@ products:
     source: pbpko
   product_url: http://purl.obolibrary.org/obo/pbpko.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
+    to URL'
 publications: []
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 ---

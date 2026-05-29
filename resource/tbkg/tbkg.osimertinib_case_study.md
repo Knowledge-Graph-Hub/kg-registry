@@ -4,6 +4,7 @@ description: Clinical validation dataset with calculated ADRs for osimertinib ra
   by importance, biomarker pathways explaining drug-ADR relationships, and clinical
   data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance
   with official manual and 0.81 three-fold cross-validation accuracy.
+format: mixed
 id: tbkg.osimertinib_case_study
 name: TBKG Osimertinib ADR Case Study Data
 original_source:

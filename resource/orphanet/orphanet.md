@@ -228,9 +228,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-26: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
     when accessing file'
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
@@ -292,6 +292,45 @@ products:
   - relation_type: prov:wasInformedBy
     source: clinvar
   product_url: https://raras.org/explorar
+- category: GraphProduct
+  description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
+    and disease information for drug repositioning.
+  format: http
+  id: oregano.graph
+  name: OREGANO Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: oregano
+  product_url: https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: cmaup
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: npass
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: pharmgkb
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: sider
+  - relation_type: prov:wasDerivedFrom
+    source: ttd
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: bio2rdf
 repository: https://github.com/Orphanet
 taxon:
 - NCBITaxon:9606
