@@ -37,12 +37,13 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 creation_date: '2025-11-22T00:00:00Z'
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-05-29T00:00:00Z'
 products:
   - id: tbkg.data
     name: TBKG Knowledge Graph Data
     description: Weighted heterogeneous knowledge graph extracted from MEDLINE corpus containing 1,179 tumors, 2,550 biomarkers, 1,806 drugs, and 756 ADRs with 139,254 relationship edges (Tumor-Biomarker, Tumor-Drug, Tumor-ADR, Drug-Biomarker, Drug-ADR, Biomarker-ADR). Includes correlation weights calculated using naive Bayesian model.
     category: GraphProduct
+    format: mixed
     product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
     original_source:
       - source: tbkg
@@ -55,6 +56,7 @@ products:
     name: TBKG Osimertinib ADR Case Study Data
     description: Clinical validation dataset with calculated ADRs for osimertinib ranked by importance, biomarker pathways explaining drug-ADR relationships, and clinical data from 8 lung adenocarcinoma patients. Model achieved Kappa=0.68 concordance with official manual and 0.81 three-fold cross-validation accuracy.
     category: Product
+    format: mixed
     product_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
     original_source:
       - source: tbkg
