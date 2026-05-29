@@ -29,6 +29,32 @@ products:
       - source: oregano
         relation_type: prov:hadPrimarySource
     secondary_source:
+      - source: cmaup
+        relation_type: prov:wasDerivedFrom
+      - source: ctd
+        relation_type: prov:wasDerivedFrom
+      - source: drugbank
+        relation_type: prov:wasDerivedFrom
+      - source: go
+        relation_type: prov:wasDerivedFrom
+      - source: hp
+        relation_type: prov:wasDerivedFrom
+      - source: npass
+        relation_type: prov:wasDerivedFrom
+      - source: orphanet
+        relation_type: prov:wasDerivedFrom
+      - source: pharmgkb
+        relation_type: prov:wasDerivedFrom
+      - source: reactome
+        relation_type: prov:wasDerivedFrom
+      - source: sider
+        relation_type: prov:wasDerivedFrom
+      - source: ttd
+        relation_type: prov:wasDerivedFrom
+      - source: umls
+        relation_type: prov:wasDerivedFrom
+      - source: uniprot
+        relation_type: prov:wasDerivedFrom
       - source: bio2rdf
         relation_type: prov:wasDerivedFrom
 publications:
