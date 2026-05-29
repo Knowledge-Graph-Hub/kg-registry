@@ -10,18 +10,20 @@ domains:
   - health
 homepage_url: https://github.com/JieZheng-ShanghaiTech/KG4SL
 id: kg4sl
-last_modified_date: '2026-04-06T00:00:00Z'
+last_modified_date: '2026-05-29T00:00:00Z'
 layout: resource_detail
 name: KG4SL
 products:
   - category: GraphProduct
-    description: Data files for SynLethKG, the knowledge graph used by KG4SL.
+    description: Data files for SynLethKG, the knowledge graph used by KG4SL and described as constructed from SynLethDB (v1.0/v2.0) and Hetionet.
     format: mixed
     id: kg4sl.synlethkg
     name: SynLethKG Data Files
     original_source:
       - source: kg4sl
         relation_type: prov:hadPrimarySource
+      - source: hetionet
+        relation_type: prov:wasDerivedFrom
     product_url: https://github.com/JieZheng-ShanghaiTech/KG4SL/tree/main/data
   - category: ProcessProduct
     description: Repository containing preprocessing, training, and evaluation code for KG4SL.
