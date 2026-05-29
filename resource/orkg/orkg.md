@@ -17,7 +17,7 @@ layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
   label: CC BY-SA 4.0
-last_modified_date: '2026-03-11T00:00:00Z'
+last_modified_date: '2026-05-29T00:00:00Z'
 name: Open Research Knowledge Graph
 repository: https://gitlab.com/TIBHannover/orkg/orkg-frontend/
 products:
@@ -50,7 +50,7 @@ products:
         relation_type: prov:hadPrimarySource
       - source: orkg.api
         relation_type: prov:hadPrimarySource
-    product_url: http://tibhannover.gitlab.io/orkg/orkg-backend/api-doc/
+    product_url: https://tibhannover.gitlab.io/orkg/orkg-backend/api-doc/
   - category: ProcessProduct
     description: Python package wrapping the ORKG API for programmatic access from Python workflows.
     format: python
@@ -122,7 +122,7 @@ products:
       - source: obi
         relation_type: prov:hadPrimarySource
     product_file_size: 642902930
-    product_url: https://orkg.org/api/rdf/dump
+    product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications:
   - authors:
       - Mohamad Yaser Jaradeh

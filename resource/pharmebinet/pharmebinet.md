@@ -10,7 +10,7 @@ domains:
   - health
 homepage_url: https://pharmebi.net/
 id: pharmebinet
-last_modified_date: '2026-04-06T00:00:00Z'
+last_modified_date: '2026-05-29T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -87,6 +87,15 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 3598325722
     product_url: https://zenodo.org/api/records/17814889/files/pharmebinet_dump_24_02_06.zip/content
+  - category: DocumentationProduct
+    description: Data sources documentation page describing the upstream resources integrated into PharMeBINet.
+    format: http
+    id: pharmebinet.data-sources
+    name: PharMeBINet Data Sources
+    original_source:
+      - source: pharmebinet
+        relation_type: prov:hadPrimarySource
+    product_url: https://pharmebi.net/#/datasources
 publications:
   - doi: doi:10.1038/s41597-022-01510-3
     id: https://doi.org/10.1038/s41597-022-01510-3

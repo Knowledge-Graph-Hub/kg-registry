@@ -15,18 +15,22 @@ domains:
   - biomedical
 homepage_url: https://gitub.u-bordeaux.fr/erias/oregano
 id: oregano
-last_modified_date: '2026-02-22T00:00:00Z'
+last_modified_date: '2026-05-29T00:00:00Z'
 layout: resource_detail
 name: OREGANO
 products:
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene, and disease information for drug repositioning.
+    format: http
     id: oregano.graph
     name: OREGANO Knowledge Graph
-    product_url: https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master
+    product_url: https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs
     original_source:
       - source: oregano
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: bio2rdf
+        relation_type: prov:wasDerivedFrom
 publications:
   - doi: doi:10.1038/s41597-023-02757-0
     id: https://doi.org/10.1038/s41597-023-02757-0
@@ -34,7 +38,7 @@ publications:
     preferred: true
     title: 'OREGANO: a knowledge graph for biomedical relation prediction'
     year: '2023'
-repository: https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master
+repository: https://gitub.u-bordeaux.fr/erias/oregano
 ---
 
 OREGANO is a holistic knowledge graph on drugs built to support link prediction approaches for the discovery of possible drug-target relations for the purpose of drug repositioning. Free biomedical databases are integrated in the knowledge graph, covering drugs, proteins, genes, and diseases.
