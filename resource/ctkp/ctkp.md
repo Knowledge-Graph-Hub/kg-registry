@@ -14,9 +14,15 @@ domains:
 - translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
 id: ctkp
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Clinical Trials KP
+contacts:
+- category: Individual
+  label: Gwênlyn Glusman
+  contact_details:
+  - contact_type: github
+    value: gglusman
 products:
 - category: GraphProduct
   compatibility:
@@ -24,7 +30,11 @@ products:
     version: 4.3.6
   description: KGX JSONL graph package for CTKP distributed via the NCATS Translator
     release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source
-    version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1).
+    version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1). The Translator wiki
+    describes the graph as exposing trial identifiers, interventions,
+    diseases/conditions, and adverse events derived from ClinicalTrials.gov via
+    AACT, using predicates including biolink:in_clinical_trials_for,
+    biolink:mentioned_in_trials_for, and biolink:treats.
   edge_count: 438575
   format: kgx-jsonl
   id: translator.ctkp.graph
@@ -39,6 +49,10 @@ products:
     source: ctkp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:wasDerivedFrom
+    source: clinicaltrialsgov
   product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
   versions:
   - '2026_03_27'
@@ -55,6 +69,18 @@ products:
   - relation_type: prov:hadPrimarySource
     source: translator
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
+- category: DocumentationProduct
+  description: SmartAPI registry entry for the Multiomics Clinical Trials KP TRAPI
+    1.5 endpoint.
+  format: http
+  id: ctkp.smartapi
+  name: Clinical Trials KP SmartAPI Registration
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://smart-api.info/registry?q=e51073371d7049b9643e1edbdd61bcbd
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -142,4 +168,22 @@ tags:
 ---
 # Clinical Trials KP
 
-CTKP provides Translator-facing clinical trial associations derived from ClinicalTrials.gov data.
+CTKP provides Translator-facing clinical trial associations derived from
+ClinicalTrials.gov submissions through the AACT database. The Translator wiki
+describes the graph as exposing trial identifiers, interventions,
+diseases/conditions, adverse events, and other trial-linked biomedical entities
+using Biolink predicates such as clinical-trial and treatment associations.
+
+The public CTKP repository and SmartAPI registration provide additional detail
+about how this provider is exposed inside Translator: the service is maintained
+by the Multiomics Provider, published as a TRAPI 1.5 knowledge provider, and
+built around AACT-mediated extracts of ClinicalTrials.gov content rather than
+direct registry scraping.
+
+The resource is maintained by the Multiomics Provider and distributed as a
+Translator release artifact for integration into broader NCATS Translator
+reasoning workflows.
+
+## Evaluation
+
+- View the evaluation: [ctkp evaluation](ctkp_eval_automated.html)
