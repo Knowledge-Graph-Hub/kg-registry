@@ -24,7 +24,7 @@ domains:
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog
 infores_id: gwas-catalog
-last_modified_date: '2026-05-23T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use
@@ -44,13 +44,14 @@ products:
 - category: ProgrammingInterface
   description: REST API providing programmatic access to GWAS Catalog studies, associations,
     variants, traits, and summary statistics metadata
+  format: http
   id: gwascatalog.api
   is_public: true
   name: GWAS Catalog REST API v2
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
-  product_url: https://www.ebi.ac.uk/gwas/docs/api
+  product_url: https://www.ebi.ac.uk/gwas/rest/api/v2/docs
 - category: Product
   description: Full data dump of GWAS Catalog associations in tab-delimited format
     (SNP-trait association data)
@@ -63,22 +64,6 @@ products:
   product_file_size: 482336061
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv
 - category: Product
-  description: Full data dump of GWAS Catalog associations in JSON format
-  format: json
-  id: gwascatalog.associations.json
-  name: GWAS Catalog Associations JSON
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
-- category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
     entries
   format: tsv
@@ -90,23 +75,6 @@ products:
   product_file_size: 48604130
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.tsv
 - category: Product
-  description: Variant metadata file containing per-variant information (e.g., rsIDs)
-    present in the GWAS Catalog
-  format: tsv
-  id: gwascatalog.variants.tsv
-  name: GWAS Catalog Variants TSV
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
-- category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
     Factor Ontology terms
   format: tsv
@@ -115,76 +83,37 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
+  product_url: https://www.ebi.ac.uk/gwas/api/search/downloads/trait_mappings
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
-    integration
+    integration; OWL updates were frozen on 2025-01-30.
   format: owl
   id: gwascatalog.associations.owl
   name: GWAS Catalog Associations OWL
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/2025/01/31/gwas-kb.owl
 - category: DocumentationProduct
-  description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
-    (current release)
-  format: svg
+  description: Interactive GWAS Catalog diagram showing trait mappings and parent
+    categories.
+  format: http
   id: gwascatalog.diagram.current
-  name: GWAS Catalog Diagram (Current SVG)
+  name: GWAS Catalog Diagram
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
-- category: DocumentationProduct
-  description: Archive of previous GWAS Catalog diagram versions (SVG format)
-  format: svg
-  id: gwascatalog.diagram.archive
-  name: GWAS Catalog Diagram Archive
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
+  product_url: https://www.ebi.ac.uk/gwas/diagram
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
     per-study summary statistics under CC0 where available)
+  format: http
   id: gwascatalog.summary_statistics.ftp
   name: GWAS Catalog Summary Statistics FTP
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
     to better characterize adverse outcomes of toxicological interest that are relevant

@@ -26,7 +26,7 @@ domains:
 homepage_url: https://reactome.org
 id: reactome
 infores_id: reactome
-last_modified_date: '2026-05-26T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -180,6 +180,16 @@ products:
   - relation_type: prov:hadPrimarySource
     source: reactome
   product_url: https://reactome.org/ContentService/
+- category: DocumentationProduct
+  description: Developer guide for the Reactome Content Service, including API usage,
+    examples, and links to the interactive endpoint documentation.
+  format: http
+  id: reactome.api.docs
+  name: Reactome Content Service Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  product_url: https://reactome.org/dev/content-service
 - category: GraphicalInterface
   description: Interactive pathway browser providing visual exploration of human biological
     pathways, reactions, and molecular interactions with integrated visualization
