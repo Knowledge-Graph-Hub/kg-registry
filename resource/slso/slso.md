@@ -13,14 +13,14 @@ contacts:
   label: Dan Berrios
   orcid: 0000-0003-4312-9552
 creation_date: '2025-09-29T00:00:00Z'
-description: The Space Life Sciences Ontology is an application ontology and is intended
-  to support the operation of NASA's Life Sciences Data Archive and other systems
-  that contain space life science research data.
+description: The Space Life Sciences Ontology is an application ontology that supports
+  NASA's Life Sciences Data Archive and related systems for describing space life
+  science research data.
 domains:
 - biomedical
 homepage_url: https://github.com/nasa/LSDAO
 id: slso
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -68,6 +68,9 @@ products:
   format: owl
   id: slso-base.owl
   name: slso-base.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: slso
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
   warnings:
   - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
@@ -79,7 +82,16 @@ repository: https://github.com/nasa/LSDAO
 ---
 ## Description
 
-The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data.
+The Space Life Sciences Ontology (SLSO) is NASA's application ontology for
+organizing life sciences data generated in spaceflight and related experimental
+contexts. It is designed to support the Life Sciences Data Archive and adjacent
+systems that need shared terminology for study metadata, experimental factors,
+biological materials, and mission-relevant research context.
+
+The active LSDAO repository publishes multiple ontology serializations and
+release variants, including simpler and base forms used in the ontology build
+workflow. The repository also serves as the project's issue tracker and release
+home for ongoing maintenance of the ontology artifacts listed on this page.
 
 ## Contacts
 

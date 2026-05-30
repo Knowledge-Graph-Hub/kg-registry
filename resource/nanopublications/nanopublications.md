@@ -7,7 +7,7 @@ domains: []
 id: "nanopublications"
 infores_id: "nanopublications"
 homepage_url: http://nanopub.net/
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Nanopublications Network
 synonyms:
@@ -33,6 +33,16 @@ products:
     original_source:
       - source: nanopublications
         relation_type: prov:hadPrimarySource
+  - category: DocumentationProduct
+    description: Guides, examples, and getting-started material for creating, publishing,
+      and querying nanopublications.
+    format: http
+    id: "nanopublications.docs"
+    name: Nanopublications Documentation
+    product_url: https://nanopub.net/docs/
+    original_source:
+      - source: nanopublications
+        relation_type: prov:hadPrimarySource
 publications:
   - id: "https://doi.org/10.7717/peerj-cs.387"
     title: "Genuine semantic publishing"
@@ -45,6 +55,12 @@ publications:
 ## Overview
 
 Nanopublications provide a format for publishing the smallest unit of publishable information: an assertion about anything that can be uniquely identified. Each nanopublication uses RDF (Resource Description Framework) to represent assertions with their provenance and publication metadata as machine-readable FAIR (Findable, Accessible, Interoperable, Reusable) digital objects.
+
+The nanopub.net site presents the broader Nanopublications Network as both a
+specification and a decentralized publication infrastructure. In addition to the
+browser and server network, the project maintains documentation and examples for
+building nanopublications, publishing them into the distributed network, and
+reusing them in semantic publishing workflows.
 
 ## Key Features
 

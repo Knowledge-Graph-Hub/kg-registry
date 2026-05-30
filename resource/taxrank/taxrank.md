@@ -13,12 +13,13 @@ contacts:
       - contact_type: github
         value: balhoff
 creation_date: '2025-09-29T00:00:00Z'
-description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
+description: An ontology of taxonomic ranks and related pseudoranks used to represent
+  positions in biological classification systems.
 domains:
   - biological systems
 homepage_url: https://github.com/phenoscape/taxrank
 id: taxrank
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -54,7 +55,17 @@ publications:
 
 ## Description
 
-A vocabulary of taxonomic ranks (species, family, phylum, etc)
+Taxrank provides a compact ontology of biological taxonomic ranks such as
+species, genus, family, order, and phylum, along with additional ranks and
+pseudoranks needed to align with real-world taxonomy practice. The current OWL
+release includes mappings to NCBI Taxonomy rank labels and TDWG rank terms where
+available, making it useful as a shared normalization layer across biodiversity
+and phenotype resources.
+
+The Phenoscape-maintained repository is the authoritative source for editable
+ontology files and published releases. In addition to standard Linnaean ranks,
+the ontology now includes special cases such as no-rank, clade, strain, isolate,
+serotype, and other rank tokens used in contemporary biological classification.
 
 ## Contacts
 

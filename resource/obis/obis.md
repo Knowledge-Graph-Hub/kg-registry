@@ -17,8 +17,14 @@ contacts:
     id: "vliz"
     label: "Flanders Marine Institute (VLIZ)"
 creation_date: '2025-12-18T00:00:00Z'
-description: Ocean Biodiversity Information System (OBIS) is a global open-access data and information system providing free access to information about the distribution and abundance of living species in the ocean. It aggregates 161 million biodiversity records covering 160,000+ marine species from 600+ institutions across 56+ countries, using Darwin Core standards and World Register of Marine Species (WoRMS) as the authoritative taxonomic backbone.
-domains: []
+description: Ocean Biodiversity Information System (OBIS) is a global open-access
+  marine biodiversity data infrastructure providing trusted access to species observations,
+  environmental context, and related datasets. Current OBIS materials describe
+  roughly 198 million species observations, 205,000 marine species, 7,000+ datasets,
+  and a worldwide node network supporting data publication and reuse.
+domains:
+  - environment
+  - organisms
 homepage_url: https://obis.org/
 id: "obis"
 infores_id: "obis"
@@ -102,7 +108,7 @@ taxon:
   - "NCBITaxon:2157"
   - "NCBITaxon:2158"
   - "NCBITaxon:2159"
-last_modified_date: '2025-12-18T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 ---
 
 # Ocean Biodiversity Information System (OBIS)
@@ -112,6 +118,13 @@ last_modified_date: '2025-12-18T00:00:00Z'
 The Ocean Biodiversity Information System (OBIS) is the first global open-access data and information system dedicated to marine biodiversity. Established in 2001 as the information management component of the Census of Marine Life and formally adopted as a project of UNESCO's Intergovernmental Oceanographic Commission (IOC) in June 2009, OBIS provides anyone, anywhere with free access to information about the distribution and abundance of living species in the ocean.
 
 OBIS operates as a collaborative alliance of 27 regional, national, and thematic nodes representing 600+ institutions across 56+ countries, all working to facilitate integrated, standardized access to marine biodiversity data. It serves as the foundation for understanding global marine species distributions, ecosystem health, and ocean conservation priorities.
+
+The current OBIS website emphasizes both its scale and its operational role as a
+marine data network: recent site statistics highlight nearly 200 million species
+observations, more than 200,000 marine species, and thousands of datasets across
+dozens of nodes worldwide. The companion OBIS manual documents data standards,
+quality control, publication workflows, and API usage for both data providers and
+data users.
 
 ## Data Content and Scale
 
