@@ -5,16 +5,38 @@ creation_date: '2025-06-04T00:00:00Z'
 description: Dublin Core Metadata Terms (DCT) is a vocabulary of standardized metadata
   elements for describing resources, providing interoperable metadata standards for
   resource discovery across digital libraries and information systems.
-domains: []
+domains:
+- information technology
+- literature
 homepage_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 id: dct
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Dublin Core Terms
 products:
+- category: DocumentationProduct
+  description: Authoritative DCMI specification for Dublin Core metadata terms in the
+    /terms/ namespace, including properties, classes, encoding schemes, and usage
+    notes.
+  format: http
+  id: dct.spec
+  name: Dublin Core Terms Specification
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dct
+  product_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+- category: DataModelProduct
+  description: RDF vocabulary endpoint for Dublin Core terms in the /terms/ namespace.
+  format: rdfxml
+  id: dct.rdf
+  name: Dublin Core Terms RDF Vocabulary
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dct
+  product_url: http://purl.org/dc/terms/
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -249,79 +271,17 @@ synonyms:
 - DCMI Terms
 - Dublin Core
 - Dublin Core Metadata Initiative
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
 # Dublin Core Terms
 
-## Overview
+Dublin Core Terms is the authoritative DCMI vocabulary for describing resources
+in interoperable metadata systems. The specification covers the fifteen original
+Dublin Core elements as well as the extended `/terms/` namespace of properties,
+classes, vocabulary encoding schemes, and syntax encoding schemes used across RDF
+and linked-data applications.
 
-Dublin Core Metadata Terms (DCT) is a vocabulary of metadata elements maintained by the Dublin Core Metadata Initiative (DCMI). It provides a standardized set of terms for describing resources such as documents, datasets, images, and digital objects, enabling interoperable metadata across diverse information systems.
-
-## Key Components
-
-### Core Elements (15 basic elements)
-- **Title**: Name of the resource
-- **Creator**: Entity responsible for creating the content
-- **Subject**: Topic or theme of the resource
-- **Description**: Account of the resource content
-- **Publisher**: Entity responsible for making the resource available
-- **Contributor**: Entity that contributed to the resource
-- **Date**: Temporal information about the resource
-- **Type**: Nature or genre of the resource
-- **Format**: Physical or digital manifestation
-- **Identifier**: Unambiguous reference (DOI, ISBN, URI)
-- **Source**: Related resource from which the current resource is derived
-- **Language**: Language of the intellectual content
-- **Relation**: Related resource
-- **Coverage**: Spatial or temporal scope
-- **Rights**: Information about rights held in and over the resource
-
-### Extended Terms
-The full DCT vocabulary includes:
-- Refined versions of core elements (e.g., dcterms:created, dcterms:modified)
-- Additional properties for more specific descriptions
-- Classes for resource types
-- Vocabulary encoding schemes
-- Syntax encoding schemes
-
-## Applications
-
-- **Digital Libraries**: Standardized cataloging and resource discovery
-- **Data Repositories**: Consistent metadata for datasets and research outputs
-- **Semantic Web**: RDF-compatible vocabulary for linked data
-- **Knowledge Graphs**: Metadata annotation and provenance tracking
-- **Information Systems**: Cross-platform metadata interoperability
-- **Archives and Museums**: Cultural heritage resource description
-
-## Metadata Standards
-
-Dublin Core supports multiple representation formats:
-- RDF/XML
-- JSON-LD
-- Turtle
-- HTML with RDFa
-- XML
-
-## Integration
-
-Dublin Core Terms are widely integrated in:
-- Institutional repositories (DSpace, Fedora)
-- Digital asset management systems
-- Knowledge graphs and semantic web applications
-- UBKG (Unified Biomedical Knowledge Graph)
-- Metadata crosswalks and mappings
-- OAI-PMH (Open Archives Initiative Protocol)
-
-## Governance
-
-Dublin Core is maintained by the Dublin Core Metadata Initiative (DCMI), an international organization dedicated to promoting widespread adoption of interoperable metadata standards.
-
-## Resources
-
-- Official Specification: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
-- User Guide: https://www.dublincore.org/resources/userguide/
-- RDF Schema: http://purl.org/dc/terms/
-
-For examples of Dublin Core Terms usage in biomedical knowledge graphs, see the [UBKG project](https://ubkg.docs.xconsortia.org/).
+This page focuses on the DCT vocabulary itself rather than the broader DCMI
+organization. The owned products above point to the canonical human-readable
+specification and the machine-resolvable RDF vocabulary, while the foreign
+propagated UBKG products are preserved because they cite DCT as an upstream
+source.
