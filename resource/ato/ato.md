@@ -1,9 +1,9 @@
 ---
 id: ato
 name: Amphibian taxonomy
-description: Description unavailable.
+description: A taxonomy ontology for Amphibia; this ontology is deprecated.
 activity_status: inactive
-homepage_url: http://www.amphibanat.org
+homepage_url: https://obofoundry.org/ontology/ato.html
 license:
   id: ''
   label: Not specified
@@ -12,9 +12,9 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
-- biological systems
+- organisms
 taxon:
 - NCBITaxon:8292
 contacts:
@@ -24,18 +24,28 @@ contacts:
   contact_details:
   - contact_type: email
     value: david.c.blackburn@gmail.com
-products: []
+products:
+- category: OntologyProduct
+  description: Canonical OWL edition of the Amphibian Taxonomy Ontology distributed
+    via OBO PURL.
+  format: owl
+  id: ato.owl
+  name: Amphibian taxonomy OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ato
+  product_url: http://purl.obolibrary.org/obo/ato.owl
 publications: []
 ---
 ## Description
 
-Description unavailable.
+A taxonomy ontology for Amphibia. This ontology is deprecated.
 
 ## Contacts
 
 - David Blackburn (david.c.blackburn@gmail.com) [ORCID: 0000-0002-1810-9886](https://orcid.org/0000-0002-1810-9886)
 
-**Domains**: biological systems
+**Domains**: organisms
 
 **Taxon**: NCBITaxon:8292
 

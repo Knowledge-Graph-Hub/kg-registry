@@ -1,9 +1,10 @@
 ---
 id: dc_cl
 name: Dendritic cell
-description: Description unavailable.
+description: An ontology representing dendritic cell types; this deprecated ontology's
+  domain is wholly subsumed by the Cell Ontology.
 activity_status: inactive
-homepage_url: http://www.dukeontologygroup.org/Projects.html
+homepage_url: https://obofoundry.org/ontology/dc_cl.html
 license:
   id: ''
   label: Not specified
@@ -12,7 +13,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -24,12 +25,23 @@ contacts:
   contact_details:
   - contact_type: email
     value: Lindsay.Cowell@utsouthwestern.edu
-products: []
+products:
+- category: OntologyProduct
+  description: Canonical OWL edition of the Dendritic Cell Ontology distributed
+    via OBO PURL.
+  format: owl
+  id: dc_cl.owl
+  name: Dendritic cell ontology OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dc_cl
+  product_url: http://purl.obolibrary.org/obo/dc_cl.owl
 publications: []
 ---
 ## Description
 
-Description unavailable.
+Representation of dendritic cell types. This ontology is deprecated because its
+domain is wholly subsumed by the Cell Ontology (CL).
 
 ## Contacts
 

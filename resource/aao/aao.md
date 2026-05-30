@@ -1,9 +1,10 @@
 ---
 id: aao
 name: Amphibian gross anatomy
-description: Description unavailable.
+description: A structured controlled vocabulary for amphibian gross anatomy; this
+  deprecated ontology is being integrated into Uberon.
 activity_status: inactive
-homepage_url: http://github.com/seger/aao
+homepage_url: https://obofoundry.org/ontology/aao.html
 license:
   id: ''
   label: Not specified
@@ -12,7 +13,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -24,12 +25,23 @@ contacts:
   contact_details:
   - contact_type: email
     value: david.c.blackburn@gmail.com
-products: []
+products:
+- category: OntologyProduct
+  description: Canonical OWL edition of the Amphibian Anatomy Ontology distributed
+    via OBO PURL.
+  format: owl
+  id: aao.owl
+  name: Amphibian gross anatomy OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aao
+  product_url: http://purl.obolibrary.org/obo/aao.owl
 publications: []
 ---
 ## Description
 
-Description unavailable.
+A structured controlled vocabulary for amphibian gross anatomy. This ontology is
+deprecated and is being integrated into Uberon.
 
 ## Contacts
 
