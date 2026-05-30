@@ -17,7 +17,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 products:
 - id: ncipidkg.sparql
   name: NCI-PID 2.0 KG SPARQL
@@ -38,12 +38,17 @@ products:
   - source: ncipidkg
     relation_type: prov:hadPrimarySource
 domains:
-- general
+- biomedical
+- pathways
 ---
 NCI-PID 2.0 KG
 
 ## Description
 
 The NCI-PID 2.0 Knowledge Graph converts NCI Pathway Interaction Database version 2.0 networks into RDF, capturing protein interactions, signaling pathways, and post-translational modifications enriched with INDRA evidence metadata.
+
+The OKN registry entry notes that the graph is built by converting 196 NCI-PID 2.0 pathway networks from Cytoscape CX2 into RDF using standard biological ontologies including RO, GO, SIO, and UniProt identifiers.
+
+Relationship assertions are reified so that evidence counts and source attribution can be attached directly to individual pathway statements, making the graph useful for provenance-aware pathway querying and downstream analysis.
 
 *This resource was automatically synchronized from the FRINK OKN registry.*

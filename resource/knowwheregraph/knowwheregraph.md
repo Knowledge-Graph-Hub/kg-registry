@@ -5,27 +5,29 @@ contacts:
   - category: Individual
     contact_details:
       - contact_type: email
-        value: jano@geog.ucsb.edu
+        value: "jano@geog.ucsb.edu"
     label: Krzysztof Janowicz
     orcid: 0000-0003-4727-3564
   - category: Organization
     contact_details:
       - contact_type: url
-        value: https://knowwheregraph.org/
-    id: ucsb-geography
+        value: "https://knowwheregraph.org/"
+    id: "ucsb-geography"
     label: University of California, Santa Barbara - Department of Geography
 creation_date: '2025-12-17T00:00:00Z'
 description: KnowWhereGraph is a large-scale geospatial and environmental knowledge graph containing over 29 billion RDF triples. It fuses knowledge graph technology with geo-enrichment capabilities to provide location-centric answers about environmental and human systems globally. The graph integrates 30+ data layers spanning natural hazards, climate, soil properties, demographics, health, agriculture, and more.
-domains: []
+domains:
+  - environment
+  - public health
 funding:
   - National Science Foundation (NSF) - Convergence Accelerated Program (OIA-2033521)
 homepage_url: https://knowwheregraph.org/
-id: knowwheregraph
-infores_id: knowwheregraph
-last_modified_date: '2026-02-20T00:00:00Z'
+id: "knowwheregraph"
+infores_id: "knowwheregraph"
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
+  id: "https://creativecommons.org/licenses/by/4.0/"
   label: CC BY 4.0
 name: KnowWhereGraph
 products:
@@ -33,7 +35,7 @@ products:
     description: KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating 30+ environmental and geospatial data layers accessible through SPARQL endpoint
     edge_count: 29000000000
     format: rdfxml
-    id: knowwheregraph.graph
+    id: "knowwheregraph.graph"
     name: KnowWhereGraph RDF Knowledge Graph
     node_count: 5000000000
     product_url: https://knowwheregraph.org/
@@ -43,34 +45,30 @@ products:
   - category: ProgrammingInterface
     description: SPARQL endpoint with GeoSPARQL support for querying KnowWhereGraph data and performing geospatial queries
     format: http
-    id: knowwheregraph.sparql
+    id: "knowwheregraph.sparql"
     is_public: true
     name: KnowWhereGraph SPARQL Endpoint
-    product_url: https://knowwheregraph.org/sparql/
+    product_url: https://stko-kwg.geog.ucsb.edu/sparql
     original_source:
       - source: knowwheregraph
         relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Faceted search interface providing table and map-based views for browsing and discovering KnowWhereGraph data with automatic SPARQL query generation
     format: http
-    id: knowwheregraph.explorer
+    id: "knowwheregraph.explorer"
     is_public: true
     name: KnowWhereGraph Knowledge Explorer
-    product_url: https://www.knowwheregraph.org/tools/knowledge-explorer/
+    product_url: https://stko-kwg.geog.ucsb.edu/#/
     original_source:
       - source: knowwheregraph
         relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: Comprehensive ontology documentation and reference for the KnowWhereGraph ontology with 150 classes, 70 object properties, and 75 data properties
     format: http
-    id: knowwheregraph.ontology
+    id: "knowwheregraph.ontology"
     is_public: true
     name: KnowWhereGraph Ontology Documentation
     product_url: https://stko-kwg.geog.ucsb.edu/lod/ontology
-    warnings:
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-      - File was not able to be retrieved when checked on 2026-01-05_ Error connecting to URL_ HTTPSConnectionPool(host='stko-kwg.geog.ucsb.edu', port=443)_ Max retries exceeded with url_ /lod/ontology (Caused by NewConnectionError("HTTPSConnection(host='stko-kwg.geog.ucsb.edu', port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-      - File was not able to be retrieved when checked on 2025-12-17_ Timeout connecting to URL
     original_source:
       - source: knowwheregraph
         relation_type: prov:hadPrimarySource
@@ -80,45 +78,45 @@ publications:
       - Shimizu C
       - Janowicz K
       - Hitzler P
-    doi: 10.48550/arXiv.2502.13874
-    id: arXiv:2502.13874
+    doi: "10.48550/arXiv.2502.13874"
+    id: "arXiv:2502.13874"
     journal: arXiv
     preferred: true
     title: 'The KnowWhereGraph: A Large-Scale Geo-Knowledge Graph for Interdisciplinary Knowledge Discovery and Geo-Enrichment'
-    year: '2025'
+    year: "2025"
   - authors:
       - Shimizu C
       - Hitzler P
       - Janowicz K
-    doi: 10.1016/j.websem.2024.100819
-    id: doi:10.1016/j.websem.2024.100819
+    doi: "10.1016/j.websem.2024.100819"
+    id: "doi:10.1016/j.websem.2024.100819"
     journal: Journal of Web Semantics
     title: The KnowWhereGraph Ontology
-    year: '2024'
+    year: "2024"
   - authors:
       - Janowicz K
       - Hitzler P
       - Li W
       - Rehberger D
       - Schildhauer M
-    doi: 10.1002/aaai.12043
-    id: doi:10.1002/aaai.12043
+    doi: "10.1002/aaai.12043"
+    id: "doi:10.1002/aaai.12043"
     journal: AI Magazine
     title: 'Know, Know Where, KnowWhereGraph: A Densely Connected, Cross-Domain Knowledge Graph and Geo-Enrichment Service Stack for Applications in Environmental Intelligence'
-    year: '2022'
+    year: "2022"
 repository: https://github.com/KnowWhereGraph
 usages:
   - description: Humanitarian aid coordination and supply chain management during crises
-    id: knowwheregraph.use.humanitarian
+    id: "knowwheregraph.use.humanitarian"
     label: Humanitarian Response
   - description: Food supply chain sustainability, agriculture sustainability assessment
-    id: knowwheregraph.use.supply_chain
+    id: "knowwheregraph.use.supply_chain"
     label: Supply Chain Management
   - description: Disaster response, emergency management, natural hazard assessment
-    id: knowwheregraph.use.emergency
+    id: "knowwheregraph.use.emergency"
     label: Emergency Management
   - description: Farm credit assessment, land valuation, agricultural potential evaluation
-    id: knowwheregraph.use.agriculture
+    id: "knowwheregraph.use.agriculture"
     label: Agricultural Finance
 ---
 

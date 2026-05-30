@@ -7,16 +7,16 @@ contacts:
   - category: Organization
     contact_details:
       - contact_type: url
-        value: https://ufokn.com/
+        value: "https://ufokn.com/"
       - contact_type: github
-        value: UFOKN
+        value: "UFOKN"
     label: UF Open Knowledge Network (UF-OKN)
 description: The Urban Flooding Open Knowledge Network (UF-OKN) is an informational infrastructure built with knowledge graphs to connect urban infrastructure with hydrologic forecasts, delivering actionable, real-time and historical flood-risk information as Linked Data for exploration and app development.
 domains:
   - environment
 homepage_url: https://ufokn.com/
-id: uf-okn
-last_modified_date: '2026-02-20T00:00:00Z'
+id: "uf-okn"
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: UF-OKN
 repository: https://github.com/UFOKN/Knowledge-Graph
@@ -24,7 +24,7 @@ products:
   - category: GraphicalInterface
     description: Public UF-OKN web portal for project information and application context.
     format: http
-    id: uf-okn.portal
+    id: "uf-okn.portal"
     name: UF-OKN Portal
     original_source:
       - source: uf-okn
@@ -33,7 +33,7 @@ products:
   - category: ProcessProduct
     description: Source repository for UF-OKN knowledge graph construction and maintenance.
     format: http
-    id: uf-okn.code
+    id: "uf-okn.code"
     name: UF-OKN Source Code
     original_source:
       - source: uf-okn
@@ -43,6 +43,12 @@ creation_date: '2025-08-07T00:00:00Z'
 ---
 
 UF-OKN
+
+## Overview
+
+UF-OKN links open geospatial infrastructure data to hydrologic forecasts so that flood risk can be explored as linked data rather than as disconnected maps and files.
+
+Its project materials emphasize Risk-Point modeling, urban-systems interdependence, and the combination of real-time, forecast, and historical flood information to support planning, response, and application development.
 
 ## Automated Evaluation
 

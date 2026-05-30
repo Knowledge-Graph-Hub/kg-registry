@@ -21,6 +21,15 @@ license:
   label: MIT License
 name: Clinical Knowledge Graph (CKG)
 products:
+  - category: DocumentationProduct
+    description: Project documentation for installation, graph building, querying, reporting, and API usage.
+    format: http
+    id: clinicalkg.docs
+    name: CKG Documentation
+    original_source:
+      - source: clinicalkg
+        relation_type: prov:hadPrimarySource
+    product_url: https://ckg.readthedocs.io/
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
     dump_format: neo4j
@@ -118,10 +127,16 @@ repository: https://github.com/MannLabs/CKG
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-08-12T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 ---
 
 Clinical Knowledge Graph
+
+## Overview
+
+CKG is both a biomedical knowledge graph and an analysis platform for integrating proteomics experiments with curated biomedical databases and literature-derived knowledge.
+
+The public project documentation covers graph construction, database querying, project reports, notebooks, and API-level extension points, complementing the downloadable Neo4j dump already listed on this page.
 
 ## Evaluation
 

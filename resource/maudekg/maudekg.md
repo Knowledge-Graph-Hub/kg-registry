@@ -1,8 +1,7 @@
 ---
 id: maudekg
 name: FDA MAUDE Adverse Event Knowledge Graph
-description: Knowledge graph constructed from FDA MAUDE adverse event reports using
-  standardized FDA product codes.
+description: The MAUDE knowledge graph models FDA medical-device adverse event reports retrieved through the openFDA MAUDE API and transformed into RDF for structured querying and safety analysis.
 activity_status: active
 homepage_url: https://github.com/Prabhadeus/Proto-OKN
 contacts:
@@ -18,6 +17,7 @@ products:
   name: FDA MAUDE Adverse Event Knowledge Graph SPARQL
   description: SPARQL endpoint for FDA MAUDE Adverse Event Knowledge Graph
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/maudekg/sparql
   original_source:
   - source: maudekg
@@ -27,6 +27,7 @@ products:
   description: Triple Pattern Fragments endpoint for FDA MAUDE Adverse Event Knowledge
     Graph
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/maudekg
   original_source:
   - source: maudekg
@@ -36,7 +37,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-27T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
 - biomedical
 - clinical
@@ -46,6 +47,10 @@ FDA MAUDE Adverse Event Knowledge Graph
 
 ## Description
 
-Knowledge graph constructed from FDA MAUDE adverse event reports retrieved via the openFDA MAUDE API using standardized FDA product codes.
+The MAUDE knowledge graph represents FDA medical-device adverse event reports collected through the openFDA MAUDE API using an ontology-first RDF model.
+
+The OKN registry description highlights that the graph is intended for structured querying of device safety reports and downstream statistical analysis of adverse-event patterns, with current scale on the order of roughly ninety-six thousand triples.
+
+Its focus on standardized product codes and RDF transformation makes it a useful intermediate graph for device surveillance and safety analytics workflows.
 
 *This resource was automatically synchronized from the FRINK OKN registry.*
