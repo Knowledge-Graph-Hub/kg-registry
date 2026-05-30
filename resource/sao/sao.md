@@ -1,9 +1,11 @@
 ---
 id: sao
 name: Subcellular anatomy ontology
-description: Description unavailable.
+description: The Subcellular Anatomy Ontology for the Nervous System describes
+  cellular, subcellular, supracellular, and macromolecular structures for neuroscience
+  data annotation; this ontology is deprecated and OBO Foundry recommends GO.
 activity_status: inactive
-homepage_url: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
+homepage_url: https://obofoundry.org/ontology/sao.html
 license:
   id: ''
   label: Not specified
@@ -12,7 +14,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -23,12 +25,24 @@ contacts:
   contact_details:
   - contact_type: email
     value: slarson@ncmir.ucsd.edu
-products: []
+products:
+- category: OntologyProduct
+  description: Canonical OWL edition of the Subcellular Anatomy Ontology distributed
+    via OBO PURL.
+  format: owl
+  id: sao.owl
+  name: Subcellular anatomy ontology OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sao
+  product_url: http://purl.obolibrary.org/obo/sao.owl
 publications: []
 ---
 ## Description
 
-Description unavailable.
+The Subcellular Anatomy Ontology for the Nervous System describes cellular, subcellular,
+supracellular, and macromolecular structures for microscopy and neuroscience annotation.
+This ontology is deprecated, and OBO Foundry recommends using GO.
 
 ## Contacts
 
