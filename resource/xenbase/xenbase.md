@@ -16,7 +16,7 @@ domains:
 homepage_url: https://xenbase.org/xenbase/
 id: xenbase
 infores_id: xenbase
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://xenbase.org/xenbase/
@@ -52,7 +52,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: xenbase
-  product_url: https://download.xenbase.org/xenbase
+  product_url: https://download.xenbase.org/xenbase/
 - category: GraphicalInterface
   description: Genome browser for Xenopus laevis v10.1 with integrated genomic and
     expression data

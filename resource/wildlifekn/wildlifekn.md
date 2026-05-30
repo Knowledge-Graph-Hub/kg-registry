@@ -27,17 +27,20 @@ layout: resource_detail
 name: Wildlife-KN
 products:
 - category: ProgrammingInterface
-  description: SPARQL endpoint for Wildlife-KN
+  description: Query interface for Wildlife-KN via the FRINK Linked Data Fragments
+    endpoint
+  format: http
   id: wildlifekn.sparql
   name: Wildlife-KN SPARQL
   original_source:
   - source: wildlifekn
     relation_type: prov:hadPrimarySource
-  product_url: https://apps.okn.us/wildlifekn/sparql
+  product_url: https://apps.okn.us/ldf/wildlifekn
 - id: wildlifekn.tpf
   name: Wildlife-KN TPF
   description: Triple Pattern Fragments endpoint for Wildlife-KN
   category: ProgrammingInterface
+  format: http
   product_url: https://apps.okn.us/ldf/wildlifekn
   original_source:
   - source: wildlifekn
@@ -45,7 +48,7 @@ products:
 taxon:
 - NCBITaxon:131567
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 ---
 Wildlife-KN
 
