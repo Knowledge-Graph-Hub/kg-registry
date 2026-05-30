@@ -1,20 +1,36 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  label: Genome Taxonomy Database
+  contact_details:
+  - contact_type: url
+    value: https://gtdb.ecogenomic.org/
 creation_date: '2026-02-26T00:00:00Z'
 description: The Genome Taxonomy Database provides a standardized bacterial and archaeal
   taxonomy derived from genome phylogeny.
 domains:
+- genomics
 - microbiology
 homepage_url: https://gtdb.ecogenomic.org/
 id: gtdb
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
   label: CC-BY-SA-4.0
 name: Genome Taxonomy Database
 products:
+- category: DocumentationProduct
+  description: GTDB downloads page listing release mirrors, data files, and related software such as GTDB-Tk.
+  format: http
+  id: gtdb.downloads
+  name: GTDB Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtdb
+  product_url: https://gtdb.ecogenomic.org/downloads
 - category: Product
   compression: gzip
   description: gtdb Nodes TSV
@@ -132,3 +148,5 @@ products:
 # Genome Taxonomy Database
 
 GTDB organizes bacterial and archaeal genomes into a standardized taxonomy and provides releases, trees, and associated data products for microbial comparative genomics.
+
+The public GTDB portal publishes genome-phylogeny-based bacterial and archaeal classifications, current release statistics, and mirrored download endpoints for taxonomy releases and supporting tools used in genome classification workflows.

@@ -1,20 +1,36 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+  - category: Organization
+    label: National Library of Medicine
+    contact_details:
+      - contact_type: url
+        value: https://support.nlm.nih.gov/
 creation_date: '2026-02-26T00:00:00Z'
 description: The National Library of Medicine is the world's largest biomedical library and a national resource for health professionals, scientists, and the public.
 domains:
+  - biomedical
   - health
   - literature
 homepage_url: https://www.nlm.nih.gov/
 id: nlm
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/web_policies.html
   label: Public Domain
 name: National Library of Medicine
 products:
+  - category: DocumentationProduct
+    description: NLM public homepage and organizational entry point for literature, terminology, clinical, and informatics resources.
+    format: http
+    id: nlm.portal
+    name: NLM Web Portal
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: nlm
+    product_url: https://www.nlm.nih.gov/
   - category: Product
     description: nlm Nodes TSV
     format: tsv
@@ -35,3 +51,5 @@ products:
 # National Library of Medicine
 
 NLM develops and maintains biomedical literature, terminology, health information, and informatics resources that support discovery, interoperability, and public access to health knowledge.
+
+As part of NIH, the library serves as the institutional home for widely used resources such as PubMed, ClinicalTrials.gov, MeSH, and the UMLS terminology ecosystem, alongside intramural biomedical informatics research and public-facing health information services.

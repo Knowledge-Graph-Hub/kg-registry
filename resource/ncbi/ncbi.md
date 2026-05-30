@@ -1,24 +1,42 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  label: NCBI and NLM Support
+  contact_details:
+  - contact_type: url
+    value: https://support.nlm.nih.gov/?pagename=guide%3ANONE%3AHomePage%3ANONE
 creation_date: '2026-02-26T00:00:00Z'
 description: The National Center for Biotechnology Information advances science and
   health by providing access to biomedical and genomic information, databases, tools,
   and services.
 domains:
 - biomedical
+- genomics
+- literature
 homepage_url: https://www.ncbi.nlm.nih.gov/
 id: ncbi
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/web_policies.html
   label: Public Domain
 name: National Center for Biotechnology Information
 products:
+- category: DocumentationProduct
+  description: NCBI Datasets API documentation for genome, gene, taxonomy, virus, and BioSample programmatic access.
+  format: http
+  id: ncbi.datasets-api
+  name: NCBI Datasets API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi
+  product_url: https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/rest-api/
 - category: DataModelProduct
   description: NCBI Genetic Codes tables summarizing translation tables used in GenBank
     and the NCBI taxonomy.
+  format: http
   id: ncbi.gc
   name: NCBI Genetic Codes
   original_source:
@@ -126,3 +144,5 @@ products:
 # National Center for Biotechnology Information
 
 NCBI is a major biomedical information resource at the U.S. National Library of Medicine, offering databases, search systems, analysis tools, and download services across genomics, literature, taxonomy, and related domains.
+
+Its public platform spans popular resources such as PubMed, Gene, Protein, Genome, Taxonomy, and BLAST, and NCBI Datasets provides an increasingly broad API and download surface for genome, gene, taxonomy, virus, and BioSample workflows.
