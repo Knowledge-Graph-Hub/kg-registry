@@ -13,7 +13,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.swisslipids.org/
 id: swisslipid
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -154,4 +154,15 @@ synonyms:
 - slm
 - swisslipid
 ---
-SwissLipids is a knowledge resource for lipids and their biology.
+# SwissLipids
+
+SwissLipids is a curated knowledge resource for lipids and lipid biology
+developed by SIB Swiss Institute of Bioinformatics teams. It combines a browseable
+web interface with downloadable reference tables for lipid entities, enzyme
+associations, GO annotations, tissues, evidences, and lipid-to-UniProt mappings.
+
+In KG-Registry, SwissLipids is represented both as a public portal and as a set
+of concrete downloadable products that support identifier mapping, lipid
+classification, and metabolism-oriented integration workflows. The downstream
+OBO-DB-Ingest TSV remains attached as a propagated derivative of the underlying
+SwissLipids content.
