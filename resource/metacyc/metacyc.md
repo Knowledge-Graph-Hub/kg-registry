@@ -20,13 +20,33 @@ domains:
 homepage_url: https://metacyc.org/
 id: metacyc
 infores_id: metacyc
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://metacyc.org/download.shtml
   label: Varies
 name: MetaCyc
 products:
+- category: GraphicalInterface
+  description: Official MetaCyc portal for browsing curated metabolic pathways,
+    reactions, metabolites, enzymes, and genes across all domains of life.
+  format: http
+  id: metacyc.portal
+  name: MetaCyc Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metacyc
+  product_url: https://metacyc.org/
+- category: ProgrammingInterface
+  description: MetaCyc web services and APIs for programmatic access to pathway and
+    metabolic reference data.
+  format: http
+  id: metacyc.api
+  name: MetaCyc Web Services
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metacyc
+  product_url: https://metacyc.org/web-services.shtml
 - category: MappingProduct
   description: rhea SSSOM
   format: sssom
@@ -55,6 +75,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -130,5 +151,16 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.rbvi.ucsf.edu/
 ---
-MetaCyc
+# MetaCyc
+
+MetaCyc is a curated reference database of experimentally elucidated metabolic
+pathways drawn from all domains of life. It organizes pathways together with the
+associated reactions, metabolites, enzymes, and genes, with the explicit goal of
+capturing a representative sample of known metabolism.
+
+In KG-Registry, the owned MetaCyc products are the live portal and the BioCyc web
+services entry point. The `rhea` SSSOM and `spoke` graph entries remain attached
+as propagated downstream products because they reuse MetaCyc content in broader
+cross-resource integration workflows.

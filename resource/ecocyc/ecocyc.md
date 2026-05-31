@@ -24,7 +24,7 @@ domains:
 - pathways
 homepage_url: https://ecocyc.org/
 id: ecocyc
-last_modified_date: '2025-09-27T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ecocyc.org/download.shtml
@@ -58,6 +58,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
 - category: GraphicalInterface
   description: Web interface for EcoCyc database
+  format: http
   id: ecocyc.web
   name: EcoCyc Web Interface
   original_source:
@@ -67,6 +68,7 @@ products:
 - category: ProgrammingInterface
   connection_url: https://ecocyc.org/web-services.shtml
   description: Web services and APIs for programmatic access to EcoCyc data
+  format: http
   id: ecocyc.api
   is_public: true
   name: EcoCyc Web Services
@@ -76,6 +78,7 @@ products:
   product_url: https://ecocyc.org/web-services.shtml
 - category: ProcessProduct
   description: Metabolic model for E. coli K-12 derived from EcoCyc
+  format: http
   id: ecocyc.metabolic_model
   name: EcoCyc Metabolic Model
   original_source:
@@ -84,16 +87,15 @@ products:
   product_url: http://www.biomedcentral.com/1752-0509/8/79
 repository: https://biocyc.org/download.shtml
 ---
-EcoCyc is a comprehensive database that captures information from over 44,000 publications for Escherichia coli K-12 substr. MG1655. It is part of the larger BioCyc collection of thousands of Pathway/Genome Databases for sequenced genomes. 
+# EcoCyc
 
-EcoCyc provides detailed information on:
-- E. coli genes and their regulation
-- Metabolic pathways and reactions
-- Protein complexes and functions
-- Transporters and small molecules
+EcoCyc is the curated BioCyc database for *Escherichia coli* K-12 substr. MG1655.
+It integrates literature-backed knowledge about genes, gene regulation,
+metabolism, transport, protein complexes, and cellular processes into a single
+reference environment for microbial systems biology.
 
-The database supports various analytical tools including:
-- Transcriptomics and metabolomics data analysis
-- Comparative genome analysis across more than 500 E. coli strains
-- Metabolic pathway visualization and analysis
-- Quantitative metabolic modeling
+Beyond being a reference encyclopedia, EcoCyc exposes interactive pathway and
+genome browsers, comparative analysis tools, omics-data visualization, web
+services, and a published metabolic model. The shared `rhea` SSSOM mapping stays
+on this page as a propagated downstream product because it reuses EcoCyc reaction
+content in a cross-resource integration workflow.

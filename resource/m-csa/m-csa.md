@@ -19,13 +19,33 @@ domains:
 - biological systems
 homepage_url: https://www.ebi.ac.uk/thornton-srv/m-csa/
 id: m-csa
-last_modified_date: '2025-08-06T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: M-CSA
 products:
+- category: GraphicalInterface
+  description: Official M-CSA website for browsing curated enzyme mechanisms, catalytic
+    sites, and related entry statistics.
+  format: http
+  id: m-csa.portal
+  name: M-CSA Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: m-csa
+  product_url: https://www.ebi.ac.uk/thornton-srv/m-csa/
+- category: DocumentationProduct
+  description: M-CSA download and API page describing export formats and programmatic
+    access to the atlas.
+  format: http
+  id: m-csa.download
+  name: M-CSA Download and API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: m-csa
+  product_url: https://www.ebi.ac.uk/thornton-srv/m-csa/download/
 - category: MappingProduct
   description: rhea SSSOM
   format: sssom
@@ -52,4 +72,15 @@ products:
   product_file_size: 154171
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
 ---
-M-CSA
+# M-CSA
+
+The Mechanism and Catalytic Site Atlas (M-CSA) is an EMBL-EBI resource for
+curated enzyme reaction mechanisms and catalytic sites. It combines the legacy
+Catalytic Site Atlas and MACiE efforts into a single database that records
+proteins, catalytic residues, cofactors, mechanistic steps, and literature-backed
+annotations for experimentally characterized enzymes.
+
+This registry page treats the live M-CSA site and its download/API page as the
+owned entry points for the resource itself. The shared `rhea` SSSOM file remains
+attached here as a propagated downstream mapping product because it integrates
+M-CSA content with other reaction resources.
