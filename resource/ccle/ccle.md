@@ -11,10 +11,28 @@ domains:
 - health
 homepage_url: https://sites.broadinstitute.org/ccle/
 id: ccle
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: CCLE
 products:
+- category: DocumentationProduct
+  description: CCLE project site describing the Cancer Cell Line Encyclopedia collaboration, motivations, and project phases.
+  format: http
+  id: ccle.docs
+  name: CCLE Project Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  product_url: https://sites.broadinstitute.org/ccle/
+- category: Product
+  description: CCLE datasets page linking processed genetic, transcriptomic, proteomic, and metabolomic releases and related DepMap resources.
+  format: http
+  id: ccle.datasets
+  name: CCLE Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ccle
+  product_url: https://sites.broadinstitute.org/ccle/datasets
 - category: Product
   description: ccle OBO
   format: obo
@@ -78,6 +96,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -162,6 +181,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: http
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -214,4 +234,14 @@ products:
 taxon:
 - NCBITaxon:9606
 ---
-CCLE
+# CCLE
+
+The Cancer Cell Line Encyclopedia (CCLE) is a large-scale collaboration that
+characterizes cancer cell lines across genomic, transcriptomic, proteomic,
+epigenetic, metabolomic, and pharmacologic dimensions. It was established to make
+well-annotated cancer cell models more useful for target discovery, biomarker
+analysis, and drug-response modeling.
+
+In KG-Registry, the owned products for CCLE point to the main project site and
+datasets page, while the OBO-DB-Ingest, Bioteque, and INDRA-related entries are
+retained as downstream derivative products built from or informed by CCLE data.

@@ -9,13 +9,33 @@ domains:
 - pharmacology
 homepage_url: http://tatonettilab.org/offsides/
 id: offsides
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: OFFSIDES
 products:
+- category: DocumentationProduct
+  description: Tatonetti Lab project page describing OffSIDES and related nSIDES resources.
+  format: http
+  id: offsides.docs
+  name: OffSIDES Project Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: offsides
+  product_url: http://tatonettilab.org/offsides/
+- category: Product
+  compression: gzip
+  description: Gzipped OFFSIDES table of drug side effects mined from FAERS that are not listed on official FDA labels.
+  format: csv
+  id: offsides.data
+  name: OFFSIDES Data Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: offsides
+  product_url: https://tatonettilab-resources.s3.us-west-1.amazonaws.com/nsides/OFFSIDES.csv.gz
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -101,4 +121,11 @@ synonyms:
 ---
 # OFFSIDES
 
-OFFSIDES is a database of drug side effects discovered through data mining of the FDA Adverse Event Reporting System (FAERS) but not listed on official FDA drug labels. It is part of the nSIDES (Network-based Side Effect Database System) resource family developed by the Tatonetti Lab.
+OFFSIDES is a Tatonetti Lab resource derived from mining the FDA Adverse Event
+Reporting System (FAERS) for drug side effects that are not listed on official
+FDA labels. It is part of the broader nSIDES family of adverse-event resources,
+which also includes TwoSIDES for drug-drug-effect relationships.
+
+In KG-Registry, the owned OFFSIDES products are the project page and the public
+data export. The Bioteque embeddings entry is retained as a downstream derivative
+that reuses OFFSIDES content in a larger integrated embedding resource.

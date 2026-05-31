@@ -16,11 +16,22 @@ description: An ingest of Jensen Lab's DISEASES resource, for Translator use (ou
   in Translator standards and NodeNormed, using own custom pipeline)
 domains:
 - health
+homepage_url: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 id: kg-jensenlab-diseases
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: JensenLab DISEASES KG
 products:
+- category: DocumentationProduct
+  description: Translator plugin repository directory for the JensenLab DISEASES ingest,
+    including parser code, metadata, and generated outputs.
+  format: http
+  id: kg-jensenlab-diseases.docs
+  name: JensenLab DISEASES Translator Plugin
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-jensenlab-diseases
+  product_url: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl
@@ -97,6 +108,18 @@ products:
     source: kg-jensenlab-diseases
 repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 ---
+# JensenLab DISEASES KG
+
+JensenLab DISEASES KG is a Translator-oriented ingest of the Jensen Lab DISEASES
+resource, produced in Translator-compatible output formats through a custom
+plugin pipeline. The page captures the exported KGX and TRAPI-style artifacts for
+this derived graph representation rather than the upstream DISEASES resource
+itself.
+
+The owned products here point to the plugin implementation and generated graph
+files. The propagated `enrichr-kg` product is preserved because it cites this
+resource as one of many upstream contributors in a downstream integrated graph.
+
 ## Automated Evaluation
 
 - View the automated evaluation: [kg-jensenlab-diseases automated evaluation](kg-jensenlab-diseases_eval_automated.html)

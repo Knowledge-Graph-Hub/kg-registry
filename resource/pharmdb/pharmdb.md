@@ -10,7 +10,7 @@ domains:
 - biomedical
 homepage_url: http://www.pharmdb-k.org/
 id: pharmdb
-last_modified_date: '2025-09-10T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: PharmDB
 products:
@@ -27,6 +27,7 @@ products:
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
     diseases, and associations
+  format: http
   id: pharmdb.graph
   name: PharmDB-K Graph
   original_source:
@@ -35,6 +36,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -131,7 +133,7 @@ PharmDB (PharmDB-K) is an integrated pharmacological knowledge graph unifying dr
 
 ## Status
 
-The resource appears inactive. Links may function, but data curation and releases have likely ceased. Use with caution and verify critical relationships against more current sources.
+The resource appears inactive. Links may function intermittently, but data curation and releases have likely ceased. Use with caution and verify critical relationships against more current sources. The Bioteque embeddings product remains attached here as a downstream derivative that cites PharmDB as one of many upstream inputs.
 
 ## Automated Evaluation
 

@@ -5,7 +5,7 @@ collection:
   - obo-foundry
 contacts:
   - category: Individual
-    label: Citlalli Mej a-Almonte
+    label: Citlalli Mejia-Almonte
     orcid: 0000-0002-0142-5591
     contact_details:
       - contact_type: email
@@ -13,12 +13,14 @@ contacts:
       - contact_type: github
         value: citmejia
 creation_date: '2025-09-29T00:00:00Z'
-description: Microbial Conditions Ontology is an ontology...
+description: The Microbial Conditions Ontology provides a controlled vocabulary
+  for the structured, reproducible description of microbial growth and experimental
+  conditions.
 domains:
   - biomedical
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -50,9 +52,18 @@ repository: https://github.com/microbial-conditions-ontology/microbial-condition
 publications: []
 ---
 
-## Description
+The Microbial Conditions Ontology (MCO) standardizes the description of
+microbial growth conditions so that experiments can be annotated in a consistent,
+machine-readable way across repositories and publications. It extends existing
+OBO Foundry terminology with terms for medium composition, environmental
+parameters, genetic background, and other factors needed to describe how a
+microbial assay or culture was performed.
 
-Microbial Conditions Ontology is an ontology...
+The project was developed to support structured annotation of microbial
+experiments, including use in RegulonDB and related microbial data resources.
+Its GitHub repository serves as the main project home for ontology releases,
+issue tracking, and the editable source used to build the published OBO and OWL
+artifacts.
 
 ## Contacts
 

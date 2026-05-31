@@ -10,7 +10,9 @@ contacts:
     label: "Open Tree of Life Collaboration"
 creation_date: '2025-12-17T00:00:00Z'
 description: Open Tree of Life (OToL) is a comprehensive, collaborative online phylogenetic tree synthesizing published evolutionary estimates with taxonomic data. It combines phylogenetic data from 1,216 published papers with 10 source taxonomies to construct a dynamic tree of life with 2.4 million tips representing species and infraspecific taxa.
-domains: []
+domains:
+  - biological systems
+  - organisms
 homepage_url: https://tree.opentreeoflife.org/
 id: "open-tree-of-life"
 infores_id: "open-tree-of-life"
@@ -26,6 +28,9 @@ products:
     id: "otol.tree-browser"
     name: Open Tree of Life Browser
     product_url: "https://tree.opentreeoflife.org/tree"
+    original_source:
+      - source: open-tree-of-life
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful APIs providing programmatic access to synthetic tree, taxonomy, and taxonomic name resolution services with support for MRCA queries and subtree extraction
     format: http
@@ -33,6 +38,9 @@ products:
     is_public: true
     name: Open Tree of Life APIs
     product_url: "https://opentreeoflife.github.io/develop/api"
+    original_source:
+      - source: open-tree-of-life
+        relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: Taxonomic Name Resolution Service (TNRS) providing exact and fuzzy matching of taxonomic names to Open Tree Taxonomy with context-based disambiguation
     format: http
@@ -40,16 +48,25 @@ products:
     is_public: true
     name: Taxonomic Name Resolution Service (TNRS)
     product_url: "https://tree.opentreeoflife.org/tnrs"
+    original_source:
+      - source: open-tree-of-life
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Complete phylesystem repository containing 4,500+ curated phylogenetic studies in NexSON JSON format with full version control history
     id: "otol.phylesystem"
     name: Phylesystem Data Repository
     product_url: "https://github.com/opentreeoflife/phylesystem"
+    original_source:
+      - source: open-tree-of-life
+        relation_type: prov:hadPrimarySource
   - category: Product
     description: Preprocessed source trees and taxonomy files available for bulk download in Newick, Nexus, and JSON formats
     id: "otol.bulk-download"
     name: Open Tree of Life Bulk Downloads
     product_url: "https://files.opentreeoflife.org/preprocessed/v3.0/"
+    original_source:
+      - source: open-tree-of-life
+        relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
     description: API reference, developer guides, and integration documentation for accessing Open Tree of Life data programmatically
     format: http
@@ -57,6 +74,9 @@ products:
     is_public: true
     name: Open Tree of Life Developer Documentation
     product_url: "https://opentreeoflife.github.io/develop"
+    original_source:
+      - source: open-tree-of-life
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - Hinchliff CE
@@ -121,7 +141,7 @@ publications:
 repository: "https://github.com/opentreeoflife"
 taxon:
   - "NCBITaxon:1"
-last_modified_date: '2025-12-18T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 ---
 
 # Open Tree of Life
@@ -131,6 +151,11 @@ last_modified_date: '2025-12-18T00:00:00Z'
 The Open Tree of Life (OToL) is a comprehensive, collaborative, online phylogenetic tree that synthesizes published evolutionary estimates with taxonomic data to provide a unified framework for representing life's evolutionary relationships. First released in September 2015, the project continues to be actively maintained, updated, and funded by the National Science Foundation, representing one of the most ambitious attempts to create a global phylogenetic synthesis accessible to the scientific community and the public.
 
 The Open Tree of Life combines a supertree approach with a community-curated system, enabling researchers worldwide to contribute phylogenetic data and taxonomic corrections, creating a dynamic, living tree that grows and improves with community input.
+
+This resource serves both as a scientific synthesis and as biodiversity data
+infrastructure. Its browser, TNRS service, APIs, and phylesystem repository make
+the phylogenetic backbone accessible for comparative biology, taxonomy alignment,
+and downstream biodiversity informatics workflows.
 
 ## Data Content and Scale
 

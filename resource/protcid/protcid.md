@@ -21,7 +21,7 @@ domains:
 - biological systems
 homepage_url: http://dunbrack2.fccc.edu/protcid/
 id: protcid
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://dunbrack2.fccc.edu/ProtCID/About.aspx
@@ -32,23 +32,37 @@ products:
   description: Database containing protein-protein interfaces, domain-domain interfaces,
     protein-peptide interfaces, and protein-ligand interactions based on structural
     data from the PDB.
+  format: http
   id: protcid.database
   name: ProtCID Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: protcid
+  product_url: https://dunbrack2.fccc.edu/ProtCID/default.aspx
 - category: GraphicalInterface
   description: Web interface for searching and visualizing protein interaction data
     from ProtCID.
+  format: http
   id: protcid.site
   name: ProtCID Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
     source: protcid
   product_url: https://dunbrack2.fccc.edu/ProtCID/Search/search.aspx
+- category: DocumentationProduct
+  description: ProtCID help and browsing pages for common-interface searches, Pfam-based
+    browsing, and interpretation guidance.
+  format: http
+  id: protcid.docs
+  name: ProtCID Help and Browse
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: protcid
+  product_url: https://dunbrack2.fccc.edu/ProtCID/Help/Help.aspx
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -152,21 +166,20 @@ publications:
   journal: Journal of Molecular Biology
   title: Statistical Analysis of Interface Similarity in Crystals of Homologous Proteins
   year: '2008'
-repository: ''
 tags:
 - core
 version: '3.0'
 ---
-The Protein Common Interface Database (ProtCID) contains comprehensive, PDB-wide structural information on the interactions of proteins and individual protein domains with other molecules. The database is based on Pfam v34 and identifies common interfaces across different crystal structures.
+# ProtCID
 
-ProtCID includes four types of interactions:
-1. Chain-chain interfaces
-2. Pfam domain-domain interfaces
-3. Pfam-peptide interfaces
-4. Pfam-ligand/nucleic acids interactions
+The Protein Common Interface Database (ProtCID) organizes PDB-wide structural
+evidence about protein interfaces, domain-domain contacts, peptide interactions,
+and ligand or nucleic-acid interactions. It clusters recurring interfaces across
+homologous proteins so that structurally repeated contacts can be examined as
+candidate biologically relevant interactions.
 
-The main goal of ProtCID is to identify and cluster homodimeric and heterodimeric interfaces observed in multiple crystal forms of homologous proteins, and interactions of peptides and ligands in homologous proteins. Such interfaces and interactions, especially of non-identical proteins or protein complexes, have been associated with biologically relevant interactions.
-
-ProtCID provides an independent check on publicly available annotations of biological interactions for PDB entries, and can be used to identify biological protein complexes, especially weak interactions like asymmetric homodimers. The clusters of Pfam-peptide and Pfam-ligand interactions can be used to develop hypotheses for the structures of other protein families within the same superfamilies (Clans).
-
-The database can be searched using PDB codes, PFAM IDs or accession codes, protein sequences, or UniProt IDs. It also allows browsing of Pfams, Clans, Pfam-Pfams, peptide-Pfams, and ligands in the PDB.
+ProtCID supports search by PDB identifiers, Pfam terms, UniProt accessions, and
+sequence input, and it also exposes browse and help pages for interpreting common
+interface clusters. The `spoke` graph remains attached here as a propagated
+downstream product because SPOKE incorporates ProtCID structural interaction data
+as one upstream source among many.

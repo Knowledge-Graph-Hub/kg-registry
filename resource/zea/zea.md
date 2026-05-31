@@ -1,9 +1,10 @@
 ---
 id: zea
 name: Maize gross anatomy
-description: Description unavailable.
+description: A structured controlled vocabulary for the anatomy of Zea mays; this
+  ontology is deprecated.
 activity_status: inactive
-homepage_url: http://www.maizemap.org/
+homepage_url: https://obofoundry.org/ontology/zea.html
 license:
   id: ''
   label: Not specified
@@ -12,7 +13,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -24,12 +25,23 @@ contacts:
   contact_details:
   - contact_type: email
     value: Leszek@missouri.edu
-products: []
+products:
+- category: OntologyProduct
+  description: Canonical OWL edition of the Maize gross anatomy ontology distributed
+    via OBO PURL.
+  format: owl
+  id: zea.owl
+  name: Maize gross anatomy OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zea
+  product_url: http://purl.obolibrary.org/obo/zea.owl
 publications: []
 ---
 ## Description
 
-Description unavailable.
+A structured controlled vocabulary for the anatomy of Zea mays. This ontology is
+deprecated.
 
 ## Contacts
 

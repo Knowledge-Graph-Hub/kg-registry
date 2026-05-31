@@ -18,13 +18,25 @@ description: The Metabolomics Workbench is a public repository for metabolomics 
   tools, protocols, training, and access to over 2,000 metabolomics studies containing
   data from more than 75,000 samples and 32,000 known metabolites. Funded by the NIH
   Common Fund from 2012-2022.
-domains: []
+domains:
+- biomedical
+- chemistry and biochemistry
 homepage_url: https://www.metabolomicsworkbench.org/
 id: mw
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Metabolomics Workbench
 products:
+- category: GraphicalInterface
+  description: Metabolomics Workbench portal for browsing studies, compounds, protocols,
+    training material, and repository content.
+  format: http
+  id: mw.portal
+  name: Metabolomics Workbench Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mw
+  product_url: https://www.metabolomicsworkbench.org/
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -263,10 +275,17 @@ synonyms:
 - MW
 - NMDR
 - National Metabolomics Data Repository
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Mw
+# Metabolomics Workbench
 
-This is an automatically generated stub page for mw. Please update with proper information.
+Metabolomics Workbench is the U.S. National Metabolomics Data Repository and a
+public portal for metabolomics studies, sample metadata, metabolite information,
+protocols, training resources, and associated analysis tools. The resource is
+widely used for sharing and reusing experimentally derived metabolomics data in a
+common repository context.
+
+In the registry, this page focuses on the Workbench as the primary repository and
+access portal for metabolomics datasets and metadata. The page preserves foreign
+propagated products that cite Metabolomics Workbench as an upstream source, while
+the owned portal product above represents the canonical entry point for the
+resource itself.

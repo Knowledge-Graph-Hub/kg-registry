@@ -7,7 +7,7 @@ domains:
   - other
 homepage_url: https://iconclass.org/
 id: iconclass
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: ICONCLASS
 contacts:
@@ -17,6 +17,16 @@ contacts:
       - contact_type: email
         value: info@iconclass.org
 products:
+  - category: GraphicalInterface
+    description: Official ICONCLASS browser for searching and navigating the image-subject
+      classification system and related resources.
+    format: http
+    id: iconclass.portal
+    name: ICONCLASS Browser
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: iconclass
+    product_url: https://iconclass.org/
   - category: Product
     description: iconclass OBO
     format: obo
@@ -69,4 +79,12 @@ products:
 
 # ICONCLASS
 
-ICONCLASS provides a controlled classification system and online browser for describing image content and iconography in cultural heritage collections.
+ICONCLASS is a controlled classification system for the subjects and content of
+images, especially in museums, libraries, and broader cultural-heritage
+collections. Its online browser supports subject access to image collections and
+links the classification system to related documentation and services.
+
+The owned browser product above represents the canonical entry point for the
+live ICONCLASS resource. The OBO-DB-Ingest derivatives are preserved here as
+propagated downstream products that transform ICONCLASS for ontology-oriented
+integration workflows.

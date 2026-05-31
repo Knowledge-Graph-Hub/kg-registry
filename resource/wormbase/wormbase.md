@@ -16,10 +16,10 @@ domains:
 - genomics
 - organisms
 - anatomy and development
-homepage_url: http://www.wormbase.org/
+homepage_url: https://wormbase.org/
 id: wormbase
 infores_id: wormbase
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,10 +35,11 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  product_url: http://www.wormbase.org/
+  product_url: https://wormbase.org/
 - category: GraphicalInterface
   description: Genome browser for visualizing genes, transcripts, and genomic features
     in their chromosomal context
+  format: http
   id: wormbase.gbrowse
   name: WormBase GBrowse
   original_source:
@@ -48,6 +49,7 @@ products:
 - category: ProgrammingInterface
   description: REST API providing programmatic access to WormBase data including genes,
     proteins, variations, and annotations
+  format: http
   id: wormbase.api
   is_public: true
   name: WormBase REST API
@@ -58,6 +60,7 @@ products:
 - category: GraphicalInterface
   description: WormMine InterMine instance for complex queries and bulk data retrieval
     across WormBase datasets
+  format: http
   id: wormbase.wormmine
   name: WormMine
   original_source:
@@ -67,6 +70,7 @@ products:
 - category: GraphicalInterface
   description: Full-text search tool for querying C. elegans and nematode literature
     with ontology term support
+  format: http
   id: wormbase.textpresso
   name: Textpresso
   original_source:
@@ -74,26 +78,19 @@ products:
     source: wormbase
   product_url: https://www.textpresso.org/cgi-bin/wb/tfw.cgi
 - category: Product
-  description: FTP server providing bulk downloads of genome assemblies, annotations,
-    gene models, and other WormBase data files
+  description: Download site providing bulk genome assemblies, annotations, gene
+    models, and other WormBase data files over HTTPS.
+  format: http
   id: wormbase.ftp
   name: WormBase FTP Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wormbase
-  product_url: ftp://ftp.wormbase.org/pub/wormbase/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ [Errno
-    101] Network is unreachable
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
-  - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: [Errno
-    101] Network is unreachable'
-  - 'File was not able to be retrieved when checked on 2026-05-29: FTP error: [Errno
-    101] Network is unreachable'
+  product_url: https://downloads.wormbase.org/
 - category: GraphicalInterface
   description: Sub-portal hosting approximately 100 parasitic helminth genomes with
     annotations and comparative genomics tools
+  format: http
   id: wormbase.parasite
   name: WormBase ParaSite
   original_source:

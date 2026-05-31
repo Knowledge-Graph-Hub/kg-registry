@@ -20,13 +20,23 @@ domains:
 fairsharing_id: FAIRsharing.wpxab1
 homepage_url: https://www.ama-assn.org/practice-management/cpt
 id: cpt
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ama-assn.org/about/terms-use
   label: Custom (AMA Terms of Use)
 name: Current Procedural Terminology
 products:
+- category: DocumentationProduct
+  description: Official American Medical Association CPT overview and guidance page
+    for the Current Procedural Terminology code set.
+  format: http
+  id: cpt.spec
+  name: CPT Overview and Guidance
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cpt
+  product_url: https://www.ama-assn.org/practice-management/cpt
 - category: Product
   description: cpt Nodes TSV
   format: tsv
@@ -44,5 +54,9 @@ products:
 
 Current Procedural Terminology (CPT) is the American Medical Association's maintained
 code set for describing medical services and procedures. In KG-Registry it is represented
-as a source terminology that also has derived OBO-DB-Ingest products for downstream
-integration workflows.
+as a source terminology used across clinical documentation, reimbursement,
+quality reporting, and operational healthcare workflows.
+
+This page uses the AMA CPT overview as the owned documentation product for the
+resource itself. The derived OBO-DB-Ingest TSV remains listed as a propagated
+downstream product because it re-expresses CPT content for integration workflows.

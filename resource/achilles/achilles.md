@@ -27,16 +27,37 @@ domains:
 - health
 homepage_url: https://depmap.org/portal/achilles/
 id: achilles
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://depmap.org/portal/terms/
   label: DepMap Terms of Use
 name: Project Achilles
 products:
+- category: DocumentationProduct
+  description: Project Achilles overview page on the DepMap portal describing screening methods, computational models, and release practices.
+  format: http
+  id: achilles.docs
+  name: Project Achilles Overview
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  product_url: https://depmap.org/portal/achilles/
+- category: Product
+  description: DepMap all-data downloads page where current Achilles and related dependency datasets are released.
+  format: http
+  id: achilles.downloads
+  name: Project Achilles Data Releases
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: achilles
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_url: https://depmap.org/portal/download/all/
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -211,3 +232,5 @@ The Achilles dataset enables researchers to:
 - Validate potential drug targets
 
 The comprehensive nature of the dataset, covering hundreds of cell lines across diverse cancer types, makes it a valuable resource for cancer research and precision medicine.
+
+In KG-Registry, the owned Achilles products point to the DepMap project overview and release surfaces, while downstream products such as Bioteque embeddings and Enrichr-KG remain attached because they reuse Achilles-derived dependency information in broader integration workflows.

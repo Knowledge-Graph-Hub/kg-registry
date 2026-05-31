@@ -1,9 +1,10 @@
 ---
 id: pgdso
 name: Plant Growth and Development Stage
-description: Description unavailable.
+description: A controlled vocabulary of growth and developmental stages in plants;
+  this deprecated ontology has been subsumed into the Plant Ontology (PO).
 activity_status: inactive
-homepage_url: http://www.plantontology.org
+homepage_url: https://obofoundry.org/ontology/pgdso.html
 license:
   id: ''
   label: Not specified
@@ -12,7 +13,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -23,12 +24,23 @@ contacts:
   contact_details:
   - contact_type: email
     value: po-discuss@plantontology.org
-products: []
+products:
+- category: OntologyProduct
+  description: Canonical OWL edition of the Plant Growth and Development Stage ontology
+    distributed via OBO PURL.
+  format: owl
+  id: pgdso.owl
+  name: Plant Growth and Development Stage OWL edition
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pgdso
+  product_url: http://purl.obolibrary.org/obo/pgdso.owl
 publications: []
 ---
 ## Description
 
-Description unavailable.
+A controlled vocabulary of growth and developmental stages in plants. This ontology
+is deprecated and has been subsumed into the Plant Ontology (PO).
 
 ## Contacts
 

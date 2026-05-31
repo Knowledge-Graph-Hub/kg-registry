@@ -15,10 +15,20 @@ domains:
 - drug discovery
 homepage_url: https://bidd.group/NPASS/
 id: npass
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: NPASS
 products:
+- category: GraphicalInterface
+  description: Official NPASS portal for searching and browsing natural products,
+    source organisms, targets, activity records, and associated ADME-tox data.
+  format: http
+  id: npass.portal
+  name: NPASS Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npass
+  product_url: https://bidd.group/NPASS/
 - category: Product
   description: npass Nodes TSV
   format: tsv
@@ -76,4 +86,11 @@ products:
 ---
 # NPASS
 
-NPASS connects natural products to their species sources, biological targets, bioactivity measurements, and related ADME-tox data for biomedical and pharmacological research.
+NPASS is the Natural Product Activity and Species Source Database maintained by
+the BIDD group. It connects natural products with their species sources,
+chemical structures, biological targets, experimentally derived quantitative
+activity data, and associated ADME-toxicity information.
+
+The owned portal product above is the canonical entry point for the live NPASS
+database. The OBO-DB-Ingest and OREGANO products remain on this page as
+propagated downstream derivatives that cite NPASS as an upstream source.

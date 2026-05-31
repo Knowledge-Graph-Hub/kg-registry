@@ -11,18 +11,22 @@ creation_date: '2025-03-09T00:00:00Z'
 description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
 domains:
 - biological systems
+- genomics
+- organisms
+- anatomy and development
 homepage_url: https://zfin.org/
 id: zfin
 infores_id: zfin
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: ZFIN
 products:
-- category: Product
+- category: OntologyProduct
   description: Zebrafish Anatomical Ontology (OWL)
+  format: owl
   id: zfin.zfa
   license:
     id: https://creativecommons.org/licenses/by/3.0/
@@ -33,6 +37,16 @@ products:
     source: zfin
   product_file_size: 401588
   product_url: http://purl.obolibrary.org/obo/zfa.owl
+- category: DocumentationProduct
+  description: ZFIN data reports and bulk download portal for zebrafish genomic,
+    expression, phenotype, anatomy, and publication datasets.
+  format: http
+  id: zfin.downloads
+  name: ZFIN Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://zfin.org/downloads
 - category: Product
   description: zfin OBO
   format: obo

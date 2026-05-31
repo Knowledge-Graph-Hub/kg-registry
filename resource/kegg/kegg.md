@@ -29,7 +29,7 @@ domains:
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 infores_id: kegg
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.kegg.jp/feedback/copyright.html
@@ -156,6 +156,7 @@ products:
 - category: ProgrammingInterface
   connection_url: https://rest.kegg.jp/
   description: REST-style Application Programming Interface to the KEGG database resource
+  format: http
   id: kegg.api
   is_public: true
   name: KEGG REST API
@@ -165,6 +166,7 @@ products:
   product_url: https://www.kegg.jp/kegg/rest/
 - category: Product
   description: KEGG pathway maps representing molecular interaction and reaction networks
+  format: http
   id: kegg.pathway
   name: KEGG PATHWAY
   original_source:
@@ -174,6 +176,7 @@ products:
 - category: DataModelProduct
   description: BRITE hierarchies and tables for functional hierarchies of biological
     objects
+  format: http
   id: kegg.brite
   name: KEGG BRITE
   original_source:
@@ -182,6 +185,7 @@ products:
   product_url: https://www.kegg.jp/kegg/brite.html
 - category: Product
   description: KEGG modules representing tighter functional units within KEGG pathways
+  format: http
   id: kegg.module
   name: KEGG MODULE
   original_source:
@@ -190,6 +194,7 @@ products:
   product_url: https://www.kegg.jp/kegg/module.html
 - category: Product
   description: KO (KEGG Orthology) groups representing ortholog groups of genes
+  format: http
   id: kegg.orthology
   name: KEGG ORTHOLOGY
   original_source:
@@ -198,6 +203,7 @@ products:
   product_url: https://www.kegg.jp/kegg/ko.html
 - category: Product
   description: Gene catalogs of completely sequenced genomes
+  format: http
   id: kegg.genes
   name: KEGG GENES
   original_source:
@@ -206,6 +212,7 @@ products:
   product_url: https://www.kegg.jp/kegg/genes.html
 - category: Product
   description: Collection of organisms with complete genome sequences
+  format: http
   id: kegg.genome
   name: KEGG GENOME
   original_source:
@@ -214,6 +221,7 @@ products:
   product_url: https://www.kegg.jp/kegg/genome/
 - category: Product
   description: Collection of small molecules and biopolymers
+  format: http
   id: kegg.compound
   name: KEGG COMPOUND
   original_source:
@@ -222,6 +230,7 @@ products:
   product_url: https://www.kegg.jp/kegg/compound/
 - category: Product
   description: Collection of glycans
+  format: http
   id: kegg.glycan
   name: KEGG GLYCAN
   original_source:
@@ -230,6 +239,7 @@ products:
   product_url: https://www.kegg.jp/kegg/glycan/
 - category: Product
   description: Collection of biochemical reactions
+  format: http
   id: kegg.reaction
   name: KEGG REACTION
   original_source:
@@ -238,6 +248,7 @@ products:
   product_url: https://www.kegg.jp/kegg/reaction/
 - category: Product
   description: Collection of human diseases
+  format: http
   id: kegg.disease
   name: KEGG DISEASE
   original_source:
@@ -246,6 +257,7 @@ products:
   product_url: https://www.kegg.jp/kegg/disease/
 - category: Product
   description: Collection of drugs
+  format: http
   id: kegg.drug
   name: KEGG DRUG
   original_source:
@@ -265,6 +277,7 @@ products:
 - category: ProcessProduct
   description: Collection of tools for mapping molecular datasets to KEGG pathway
     maps, BRITE hierarchies, and modules
+  format: http
   id: kegg.mapper
   name: KEGG Mapper
   original_source:
@@ -273,6 +286,7 @@ products:
   product_url: https://www.kegg.jp/kegg/mapper/
 - category: ProcessProduct
   description: Tools for analyzing conserved genes, gene sets, and gene order
+  format: http
   id: kegg.syntax
   name: KEGG Syntax
   original_source:
@@ -281,6 +295,7 @@ products:
   product_url: https://www.kegg.jp/kegg/syntax/
 - category: ProcessProduct
   description: Tools for KO (KEGG Orthology) assignment and validation
+  format: http
   id: kegg.annotation
   name: KEGG Annotation
   original_source:
@@ -289,6 +304,7 @@ products:
   product_url: https://www.kegg.jp/kegg/annotation/
 - category: ProcessProduct
   description: BLAST-based KO annotation and KEGG mapping tool
+  format: http
   id: kegg.blastkoala
   name: BlastKOALA
   original_source:

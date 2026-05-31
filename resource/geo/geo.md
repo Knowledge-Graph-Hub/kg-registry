@@ -13,12 +13,14 @@ contacts:
   label: Bill Hogan
   orcid: 0000-0002-9881-1017
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology of geographical entities
+description: The Geographical Entity Ontology distinguishes geographical regions,
+  geographical features, and geopolitical organizations so they can be represented
+  without conflating territories with the organizations that govern them.
 domains:
 - environment
 homepage_url: https://github.com/ufbmi/geographical-entity-ontology/wiki
 id: geo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +38,16 @@ products:
     source: geo
   product_file_size: 17397
   product_url: http://purl.obolibrary.org/obo/geo.owl
+- category: DocumentationProduct
+  description: GEO project wiki describing the ontology rationale, modular architecture,
+    and release locations.
+  format: http
+  id: geo.docs
+  name: GEO Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geo
+  product_url: https://github.com/ufbmi/geographical-entity-ontology/wiki
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -897,7 +909,17 @@ repository: https://github.com/ufbmi/geographical-entity-ontology
 ---
 ## Description
 
-An ontology of geographical entities
+The Geographical Entity Ontology (GEO) models geographical entities in a way
+that cleanly separates geopolitical organizations from the territories or regions
+over which they have jurisdiction. Its rationale explicitly addresses cases such
+as the United States, where the governing nation and the geographical region it
+governs should not be treated as the same thing.
+
+The current GEO release is modular: the main `geo.owl` file provides the core
+ontology, while many individuals and specialized geography modules are published
+as separate OWL files. The project wiki documents that modular architecture and
+the ontology's distinction among geographical regions, land masses, bodies of
+water, governmental organizations, and related entities.
 
 ## Contacts
 

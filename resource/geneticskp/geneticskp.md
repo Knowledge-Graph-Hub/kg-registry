@@ -13,9 +13,19 @@ domains:
 - translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: geneticskp
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
+contacts:
+- category: Individual
+  label: Marc Duby
+  contact_details:
+  - contact_type: email
+    value: mduby@broadinstitute.org
+- category: Individual
+  label: Jason Flannick
+- category: Individual
+  label: Noel Burt
 products:
 - category: GraphProduct
   compatibility:
@@ -23,7 +33,11 @@ products:
     version: 4.3.6
   description: KGX JSONL graph package for Genetics KP distributed via the NCATS Translator
     release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6;
-    source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1).
+    source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1). The
+    Genetics KP documentation and code repository describe this graph as combining
+    curated evidence from Genebass, GenCC, ClinVar, and ClinGen with computational
+    association methods including MAGMA, Richards-method associations, ABC-method
+    associations, and integrated-genetics scoring.
   edge_count: 653544
   format: kgx-jsonl
   id: translator.geneticskp.graph
@@ -38,10 +52,30 @@ products:
     source: geneticskp
   - relation_type: prov:hadPrimarySource
     source: translator
+  - relation_type: prov:hadPrimarySource
+    source: genebass
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: clingen
   product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
   versions:
   - '2026_03_27'
   - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
+- category: DocumentationProduct
+  description: Translator wiki overview for Genetics KP, including team contacts,
+    public API entrypoint, upstream data resources, and method references.
+  format: http
+  id: geneticskp.docs
+  name: Genetics KP Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 - category: ProgrammingInterface
   description: Translator Reasoner API endpoint for Genetics KP.
   format: http
@@ -140,4 +174,24 @@ tags:
 ---
 # Genetics KP
 
-Genetics KP contributes Translator-compatible genetic evidence and associations.
+Genetics KP contributes Translator-compatible genetic evidence and associations
+for gene-disease analysis, with a focus on integrating GWAS-derived signals and
+other curated genetic evidence into a unified framework. The Translator wiki
+describes the provider as combining disease-specific GWAS datasets with curated
+resources such as GeneBass, GenCC, ClinVar, and ClinGen while using supporting
+computational methods to prioritize gene-disease associations.
+
+The public Genetics KP repository further documents the current method mix used
+to populate the graph, including MAGMA gene and pathway associations,
+Richards-method associations, ABC-method associations, and integrated genetics
+associations layered over curated public sources. That gives the graph a clearer
+provenance trail than the page previously recorded, even though several method
+inputs are Broad-hosted workflows rather than standalone registry resources.
+
+The provider is designed to supply computation-ready genetic evidence to
+Translator reasoning systems while preserving provenance across its integrated
+association sources.
+
+## Evaluation
+
+- View the evaluation: [geneticskp evaluation](geneticskp_eval_automated.html)

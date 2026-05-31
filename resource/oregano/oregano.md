@@ -15,10 +15,20 @@ domains:
   - biomedical
 homepage_url: https://gitub.u-bordeaux.fr/erias/oregano
 id: oregano
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: OREGANO
 products:
+  - category: DocumentationProduct
+    description: Project repository and README describing OREGANO's scope, statistics,
+      integration workflow, and application context.
+    format: http
+    id: oregano.docs
+    name: OREGANO Project Documentation
+    product_url: https://gitub.u-bordeaux.fr/erias/oregano/-/blob/master/README.md
+    original_source:
+      - source: oregano
+        relation_type: prov:hadPrimarySource
   - category: GraphProduct
     description: The OREGANO knowledge graph dataset integrating drug, protein, gene, and disease information for drug repositioning.
     format: http
@@ -57,6 +67,15 @@ products:
         relation_type: prov:wasDerivedFrom
       - source: bio2rdf
         relation_type: prov:wasDerivedFrom
+  - category: ProgrammingInterface
+    description: Public SPARQL endpoint for querying OREGANO graph content.
+    format: http
+    id: oregano.sparql
+    name: OREGANO SPARQL Endpoint
+    product_url: http://91.121.148.199:8889/bigdata/#query
+    original_source:
+      - source: oregano
+        relation_type: prov:hadPrimarySource
 publications:
   - doi: doi:10.1038/s41597-023-02757-0
     id: https://doi.org/10.1038/s41597-023-02757-0
@@ -66,5 +85,15 @@ publications:
     year: '2023'
 repository: https://gitub.u-bordeaux.fr/erias/oregano
 ---
+# OREGANO
 
-OREGANO is a holistic knowledge graph on drugs built to support link prediction approaches for the discovery of possible drug-target relations for the purpose of drug repositioning. Free biomedical databases are integrated in the knowledge graph, covering drugs, proteins, genes, and diseases.
+OREGANO is a biomedical knowledge graph built for drug repositioning and
+drug-target relation discovery. It integrates drug, target, gene, disease,
+pathway, phenotype, and related biomedical entities from multiple upstream data
+sources into a single graph designed for link-prediction workflows.
+
+The owned products on this page include the project documentation, graph
+distribution folder, and published SPARQL endpoint for querying the resource.
+The graph is explicitly assembled from many free biomedical databases, which are
+represented in product provenance rather than duplicated as separate owned OREGANO
+products.

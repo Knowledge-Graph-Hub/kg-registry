@@ -13,29 +13,32 @@ description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an interna
   chicken genes.
 domains:
 - organisms
-homepage_url: http://birdgenenames.org/cgnc/
+homepage_url: https://birdgenenames.org/index.jsp
 id: cgnc
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: CGNC
 products:
+- category: GraphicalInterface
+  description: Official Chicken Gene Nomenclature Consortium portal for searching
+    gene symbols, guidelines, downloads, and curation resources.
+  format: http
+  id: cgnc.portal
+  name: CGNC Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cgnc
+  product_url: https://birdgenenames.org/index.jsp
 - category: Product
-  description: All CGNC public data, including CGNC ID, Entrez Gene ID, Ensembl Gene
-    ID, gene symbol, gene name, gene synonym, curation status and last edit date.
-  format: tsv
+  description: CGNC public downloads page for standardized chicken gene nomenclature
+    data and related consortium resources.
+  format: http
   id: cgnc.genes
   name: CGNC Genes
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cgnc
-  product_url: http://birdgenenames.org/cgnc/downloads.jsp?file=standard
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
-    when accessing file'
+  product_url: https://birdgenenames.org/downloads.jsp
 - category: Product
   description: cgnc OBO
   format: obo
@@ -128,4 +131,13 @@ publications:
   title: The Chicken Gene Nomenclature Committee report
   year: '2009'
 ---
-CGNC
+# CGNC
+
+The Chicken Gene Nomenclature Consortium (CGNC) coordinates standardized gene
+names and symbols for chicken genes so that avian genomic data can be used more
+consistently across databases, publications, and comparative genomics workflows.
+
+This page uses the live CGNC portal and downloads page as the owned entry points
+for the resource. The OBO-DB-Ingest derivatives remain attached here as
+downstream products that re-express CGNC nomenclature data for ontology and
+integration workflows.
