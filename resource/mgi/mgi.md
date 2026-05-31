@@ -17,10 +17,20 @@ domains:
 - genomics
 homepage_url: https://www.informatics.jax.org/
 id: mgi
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Mouse Genome Informatics
 products:
+- category: GraphicalInterface
+  description: Main Mouse Genome Informatics portal for accessing mouse genes, alleles,
+    phenotypes, disease models, and related reference data.
+  format: http
+  id: mgi.portal
+  name: Mouse Genome Informatics Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  product_url: https://www.informatics.jax.org/
 - category: Product
   description: mgi Nodes TSV
   format: tsv
@@ -83,4 +93,12 @@ products:
 ---
 # Mouse Genome Informatics
 
-Mouse Genome Informatics (MGI) is a Jackson Laboratory resource that integrates mouse genetics, genomics, and biology data for comparative and translational research.
+Mouse Genome Informatics (MGI) is The Jackson Laboratory's flagship knowledgebase
+for the laboratory mouse. It integrates mouse genes, alleles, strains,
+phenotypes, gene expression, disease models, and reference nomenclature so that
+mouse biology can be used effectively in comparative and translational research.
+
+This registry page treats the MGI portal as the owned entry point for the
+resource itself. The downstream OBO-DB-Ingest and Enrichr-KG products are kept as
+propagated products because they legitimately reuse MGI content in derivative
+integration workflows.
