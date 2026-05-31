@@ -140,6 +140,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -215,6 +216,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -267,9 +269,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -354,9 +356,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-05-28: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-05-29: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-05-31: FTP error: timed
     out'
 - category: Product
   compression: gzip

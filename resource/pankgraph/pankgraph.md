@@ -1,13 +1,14 @@
 ---
 id: pankgraph
 name: PanKgraph
-description: PanKgraph is a pancreas-focused biomedical knowledge graph within PanKbase that links genes, variants, pancreatic expression quantitative trait loci, and donor-derived multi-omic data to support diabetes research.
+description: PanKgraph — PanKbase Knowledge Graph (NIDDK)
 activity_status: active
 homepage_url: https://pankbase.org/
 products:
 - id: pankgraph.portal
   name: PanKgraph Explorer
-  description: Interactive PanKgraph web application for exploring pancreas-focused relationships and QTL results.
+  description: Interactive PanKgraph web application for exploring pancreas-focused
+    relationships and QTL results.
   category: GraphicalInterface
   format: http
   product_url: https://pankgraph.org/
@@ -37,7 +38,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 contacts:
 - category: Individual
   label: Jie Liu

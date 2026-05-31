@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: rnadisease
 product_url: http://www.rnadisease.org/
+warnings:
+- File was not able to be retrieved when checked on 2026-05-29_ HTTP 416 error when
+  accessing file
 layout: product_detail
 ---

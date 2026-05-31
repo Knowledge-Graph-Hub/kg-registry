@@ -35,7 +35,8 @@ license:
 name: Project Achilles
 products:
 - category: DocumentationProduct
-  description: Project Achilles overview page on the DepMap portal describing screening methods, computational models, and release practices.
+  description: Project Achilles overview page on the DepMap portal describing screening
+    methods, computational models, and release practices.
   format: http
   id: achilles.docs
   name: Project Achilles Overview
@@ -43,8 +44,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: achilles
   product_url: https://depmap.org/portal/achilles/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+    when accessing file'
 - category: Product
-  description: DepMap all-data downloads page where current Achilles and related dependency datasets are released.
+  description: DepMap all-data downloads page where current Achilles and related dependency
+    datasets are released.
   format: http
   id: achilles.downloads
   name: Project Achilles Data Releases
@@ -54,10 +59,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: depmap
   product_url: https://depmap.org/portal/download/all/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:

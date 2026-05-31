@@ -14,6 +14,7 @@ original_source:
   source: ncbi
 - relation_type: prov:wasDerivedFrom
   source: progenomes
+product_file_size: 2937650
 product_url: https://metatraits.embl.de/static/downloads/GTDB2NCBI.tsv.gz
 layout: product_detail
 ---

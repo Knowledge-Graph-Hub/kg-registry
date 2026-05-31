@@ -1,18 +1,12 @@
 ---
 category: DocumentationProduct
-description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
-  (current release)
-format: svg
+description: Interactive GWAS Catalog diagram showing trait mappings and parent categories.
+format: http
 id: gwascatalog.diagram.current
-name: GWAS Catalog Diagram (Current SVG)
+name: GWAS Catalog Diagram
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gwascatalog
-product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
-warnings:
-- File was not able to be retrieved when checked on 2026-05-28_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+product_url: https://www.ebi.ac.uk/gwas/diagram
 layout: product_detail
 ---

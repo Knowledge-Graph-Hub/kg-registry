@@ -38,8 +38,8 @@ products:
   product_file_size: 401588
   product_url: http://purl.obolibrary.org/obo/zfa.owl
 - category: DocumentationProduct
-  description: ZFIN data reports and bulk download portal for zebrafish genomic,
-    expression, phenotype, anatomy, and publication datasets.
+  description: ZFIN data reports and bulk download portal for zebrafish genomic, expression,
+    phenotype, anatomy, and publication datasets.
   format: http
   id: zfin.downloads
   name: ZFIN Data Downloads
@@ -1498,9 +1498,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: zip

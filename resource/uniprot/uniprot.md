@@ -100,9 +100,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -145,13 +145,14 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -227,6 +228,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -1023,9 +1025,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD

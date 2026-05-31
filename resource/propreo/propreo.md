@@ -1,31 +1,29 @@
 ---
-id: propreo
-name: Proteomics data and process provenance
-description: A comprehensive ontology for proteomics data and process provenance;
-  this ontology is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/propreo.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Satya S. Sahoo
   contact_details:
   - contact_type: email
     value: satya30@uga.edu
+  label: Satya S. Sahoo
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- chemistry and biochemistry
+homepage_url: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
+id: propreo
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Proteomics data and process provenance
 products:
 - category: OntologyProduct
-  description: Canonical OWL edition of the PROPREO ontology distributed via OBO
-    PURL.
+  description: Canonical OWL edition of the PROPREO ontology distributed via OBO PURL.
   format: owl
   id: propreo.owl
   name: Proteomics data and process provenance OWL edition
@@ -33,6 +31,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: propreo
   product_url: http://purl.obolibrary.org/obo/propreo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

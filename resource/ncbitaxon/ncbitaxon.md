@@ -57,9 +57,9 @@ products:
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim
@@ -291,6 +291,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -366,6 +367,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph

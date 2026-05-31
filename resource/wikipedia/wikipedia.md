@@ -71,7 +71,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipedia
   product_url: https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/2026-03-01/xml/bzip2/
-- category: Product
+- category: GraphProduct
   description: Databus collection for the latest core DBpedia release used by the
     main SPARQL endpoint and linked data interface.
   format: http
@@ -80,9 +80,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dbpedia
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: wikipedia
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: wikidata
   product_file_size: 18605
   product_url: https://databus.dbpedia.org/dbpedia/collections/latest-core

@@ -1153,6 +1153,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -1228,6 +1229,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -2600,9 +2602,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.

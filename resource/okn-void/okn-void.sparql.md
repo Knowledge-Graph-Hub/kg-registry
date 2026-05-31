@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for OKN VoID graph descriptions
+format: http
 id: okn-void.sparql
 name: OKN VoID graph descriptions SPARQL
 original_source:

@@ -3,6 +3,12 @@ activity_status: active
 category: KnowledgeGraph
 collection:
 - translator
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: gglusman
+  label: "Gw\xEAnlyn Glusman"
 creation_date: '2026-02-18T00:00:00Z'
 description: Clinical Trials Knowledge Provider (CTKP) is a Translator knowledge provider
   maintained by the Multiomics Provider that exposes clinical trial-derived associations
@@ -17,12 +23,6 @@ id: ctkp
 last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Clinical Trials KP
-contacts:
-- category: Individual
-  label: Gwênlyn Glusman
-  contact_details:
-  - contact_type: github
-    value: gglusman
 products:
 - category: GraphProduct
   compatibility:
@@ -30,11 +30,7 @@ products:
     version: 4.3.6
   description: KGX JSONL graph package for CTKP distributed via the NCATS Translator
     release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source
-    version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1). The Translator wiki
-    describes the graph as exposing trial identifiers, interventions,
-    diseases/conditions, and adverse events derived from ClinicalTrials.gov via
-    AACT, using predicates including biolink:in_clinical_trials_for,
-    biolink:mentioned_in_trials_for, and biolink:treats.
+    version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1).
   edge_count: 438575
   format: kgx-jsonl
   id: translator.ctkp.graph
@@ -49,10 +45,6 @@ products:
     source: ctkp
   - relation_type: prov:hadPrimarySource
     source: translator
-  - relation_type: prov:hadPrimarySource
-    source: aact
-  - relation_type: prov:wasDerivedFrom
-    source: clinicaltrialsgov
   product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
   versions:
   - '2026_03_27'

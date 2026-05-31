@@ -99,6 +99,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -174,6 +175,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -268,9 +270,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -286,9 +288,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial
@@ -493,6 +495,31 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for CTKP distributed via the NCATS Translator
+    release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source
+    version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 438575
+  format: kgx-jsonl
+  id: translator.ctkp.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator CTKP KGX Graph
+  node_count: 41243
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/ctkp/latest/
+  versions:
+  - '2026_03_27'
+  - ctkp_3.1.37_a99268cc_2025sep1_4.3.6
 publications:
 - authors:
   - Zarin DA

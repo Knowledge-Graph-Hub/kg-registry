@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for EvoWeb
+format: http
 id: evoweb.sparql
 name: EvoWeb SPARQL
 original_source:

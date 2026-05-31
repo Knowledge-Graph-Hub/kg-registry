@@ -4,9 +4,9 @@ description: Precomputed signatures for small molecules, suitable for machine le
 format: hdf5
 id: chemicalchecker.signatures
 name: Chemical Checker Signatures
-product_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html
-layout: product_detail
 original_source:
-  - source: chemicalchecker
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: chemicalchecker
+product_url: https://chemicalchecker.com/downloads/root
+layout: product_detail
 ---

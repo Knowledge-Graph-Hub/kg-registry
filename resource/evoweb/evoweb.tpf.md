@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for EvoWeb
+format: http
 id: evoweb.tpf
 name: EvoWeb TPF
 original_source:

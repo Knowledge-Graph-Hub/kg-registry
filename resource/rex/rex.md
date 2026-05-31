@@ -28,9 +28,9 @@ products:
     source: rex
   product_url: http://purl.obolibrary.org/obo/rex.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 publications: []
 ---

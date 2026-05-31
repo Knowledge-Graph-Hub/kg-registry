@@ -8,11 +8,6 @@ name: GWAS Catalog Trait EFO Mappings TSV
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gwascatalog
-product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
-warnings:
-- File was not able to be retrieved when checked on 2026-05-28_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+product_url: https://www.ebi.ac.uk/gwas/api/search/downloads/trait_mappings
 layout: product_detail
 ---

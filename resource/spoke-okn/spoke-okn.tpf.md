@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for SPOKE-OKN
+format: http
 id: spoke-okn.tpf
 name: SPOKE-OKN TPF
 original_source:

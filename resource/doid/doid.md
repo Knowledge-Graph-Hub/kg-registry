@@ -384,6 +384,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -459,6 +460,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,

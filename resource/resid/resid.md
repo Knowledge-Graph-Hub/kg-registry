@@ -1,31 +1,31 @@
 ---
-id: resid
-name: Protein covalent bond
-description: For the description of covalent bonds in proteins.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/resid.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: John Garavelli
-  orcid: 0000-0002-4131-735X
   contact_details:
   - contact_type: email
     value: john.garavelli@ebi.ac.uk
+  label: John Garavelli
+  orcid: 0000-0002-4131-735X
+creation_date: '2025-09-29T00:00:00Z'
+description: For the description of covalent bonds in proteins.
+domains:
+- chemistry and biochemistry
+homepage_url: http://www.ebi.ac.uk/RESID/
+id: resid
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Protein covalent bond
 products:
 - category: OntologyProduct
-  description: Canonical OWL edition of the RESID protein covalent bond ontology
-    distributed via OBO PURL.
+  description: Canonical OWL edition of the RESID protein covalent bond ontology distributed
+    via OBO PURL.
   format: owl
   id: resid.owl
   name: Protein covalent bond OWL edition
@@ -33,6 +33,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: resid
   product_url: http://purl.obolibrary.org/obo/resid.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

@@ -37,15 +37,14 @@ products:
     relation_type: prov:hadPrimarySource
   product_url: https://kn-wildlife.crc.nd.edu/
 - category: ProgrammingInterface
-  description: Query interface for Wildlife-KN via the FRINK Linked Data Fragments
-    endpoint
+  description: SPARQL endpoint for Wildlife-KN
   format: http
   id: wildlifekn.sparql
   name: Wildlife-KN SPARQL
   original_source:
   - source: wildlifekn
     relation_type: prov:hadPrimarySource
-  product_url: https://apps.okn.us/ldf/wildlifekn
+  product_url: https://apps.okn.us/wildlifekn/sparql
 - id: wildlifekn.tpf
   name: Wildlife-KN TPF
   description: Triple Pattern Fragments endpoint for Wildlife-KN
@@ -58,9 +57,8 @@ products:
 taxon:
 - NCBITaxon:131567
 creation_date: '2025-12-08T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 ---
-
 Wildlife-KN is an open knowledge network for wildlife management under climate
 change, developed to support exploration of species observations in relation to
 place, time, and environmental context. The project website describes a public,

@@ -1,7 +1,8 @@
 ---
 id: okn-void
 name: OKN VoID graph descriptions
-description: Collected VoID and VoID-Ext metadata describing registered OKN knowledge graphs, their endpoints, and summary statistics.
+description: Collected VoID (Vocabulary of Interlinked Datasets) metadata for all
+  OKN graphs
 activity_status: active
 homepage_url: https://registry.okn.us/registry/kgs/okn-void/
 contacts:
@@ -15,7 +16,7 @@ contacts:
 products:
 - id: okn-void.sparql
   name: OKN VoID graph descriptions SPARQL
-  description: SPARQL endpoint for querying the OKN VoID metadata graph describing registered OKN knowledge graphs.
+  description: SPARQL endpoint for OKN VoID graph descriptions
   category: ProgrammingInterface
   format: http
   product_url: https://apps.okn.us/okn-void/sparql
@@ -24,7 +25,7 @@ products:
     relation_type: prov:hadPrimarySource
 - id: okn-void.tpf
   name: OKN VoID graph descriptions TPF
-  description: Triple Pattern Fragments endpoint for browsing the OKN VoID metadata graph and its dataset-level descriptions.
+  description: Triple Pattern Fragments endpoint for OKN VoID graph descriptions
   category: ProgrammingInterface
   format: http
   product_url: https://apps.okn.us/ldf/okn-void
@@ -36,7 +37,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 domains:
 - general
 ---

@@ -1,56 +1,56 @@
 ---
-id: "evoweb"
+id: evoweb
 name: EvoWeb
-description: EvoWeb is an open knowledge graph of co-evolving genes that represents weighted protein functional relationships reconstructed from comparative genomic signals.
+description: EvoWeb - An Open Knowledge Graph of Co-evolving Genes (NIAID)
 activity_status: active
 homepage_url: https://data.niaid.nih.gov/
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: "Erik.Wright@bcm.edu"
-      - contact_type: github
-        value: "WrightLabScience"
-    label: Erik Wright
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: Erik.Wright@bcm.edu
+  - contact_type: github
+    value: WrightLabScience
+  label: Erik Wright
 products:
-  - id: "evoweb.sparql"
-    name: EvoWeb SPARQL
-    description: SPARQL endpoint for querying the EvoWeb knowledge graph through the OKN FRINK service.
-    category: ProgrammingInterface
-    format: http
-    product_url: https://apps.okn.us/evoweb/sparql
-    original_source:
-      - source: evoweb
-        relation_type: prov:hadPrimarySource
-  - id: "evoweb.tpf"
-    name: EvoWeb TPF
-    description: Triple Pattern Fragments endpoint for browsing the EvoWeb knowledge graph through the OKN FRINK service.
-    category: ProgrammingInterface
-    format: http
-    product_url: https://apps.okn.us/ldf/evoweb
-    original_source:
-      - source: evoweb
-        relation_type: prov:hadPrimarySource
+- id: evoweb.sparql
+  name: EvoWeb SPARQL
+  description: SPARQL endpoint for EvoWeb
+  category: ProgrammingInterface
+  format: http
+  product_url: https://apps.okn.us/evoweb/sparql
+  original_source:
+  - source: evoweb
+    relation_type: prov:hadPrimarySource
+- id: evoweb.tpf
+  name: EvoWeb TPF
+  description: Triple Pattern Fragments endpoint for EvoWeb
+  category: ProgrammingInterface
+  format: http
+  product_url: https://apps.okn.us/ldf/evoweb
+  original_source:
+  - source: evoweb
+    relation_type: prov:hadPrimarySource
 collection:
-  - okn
+- okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 domains:
-  - biomedical
-  - genomics
+- biomedical
+- genomics
 publications:
-  - authors:
-      - Aidan H Lakshman
-      - Erik S Wright
-    id: "https://doi.org/10.1038/s41467-025-59175-6"
-    journal: Nature Communications
-    preferred: true
-    title: 'EvoWeaver: large-scale prediction of gene functional associations from coevolutionary signals'
-    year: "2025"
+- authors:
+  - Aidan H Lakshman
+  - Erik S Wright
+  id: https://doi.org/10.1038/s41467-025-59175-6
+  journal: Nature Communications
+  preferred: true
+  title: 'EvoWeaver: large-scale prediction of gene functional associations from coevolutionary
+    signals'
+  year: '2025'
 ---
-
 EvoWeb
 
 ## Description

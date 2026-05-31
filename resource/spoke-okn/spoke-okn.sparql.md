@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for SPOKE-OKN
+format: http
 id: spoke-okn.sparql
 name: SPOKE-OKN SPARQL
 original_source:

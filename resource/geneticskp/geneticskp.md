@@ -3,6 +3,16 @@ activity_status: active
 category: KnowledgeGraph
 collection:
 - translator
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: mduby@broadinstitute.org
+  label: Marc Duby
+- category: Individual
+  label: Jason Flannick
+- category: Individual
+  label: Noel Burt
 creation_date: '2026-02-18T00:00:00Z'
 description: Genetics KP is a Translator knowledge provider focused on integrating
   genetic association evidence (including GWAS-derived signals) into a unified framework
@@ -16,16 +26,6 @@ id: geneticskp
 last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Genetics KP
-contacts:
-- category: Individual
-  label: Marc Duby
-  contact_details:
-  - contact_type: email
-    value: mduby@broadinstitute.org
-- category: Individual
-  label: Jason Flannick
-- category: Individual
-  label: Noel Burt
 products:
 - category: GraphProduct
   compatibility:
@@ -33,11 +33,7 @@ products:
     version: 4.3.6
   description: KGX JSONL graph package for Genetics KP distributed via the NCATS Translator
     release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6;
-    source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1). The
-    Genetics KP documentation and code repository describe this graph as combining
-    curated evidence from Genebass, GenCC, ClinVar, and ClinGen with computational
-    association methods including MAGMA, Richards-method associations, ABC-method
-    associations, and integrated-genetics scoring.
+    source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1).
   edge_count: 653544
   format: kgx-jsonl
   id: translator.geneticskp.graph
@@ -52,14 +48,6 @@ products:
     source: geneticskp
   - relation_type: prov:hadPrimarySource
     source: translator
-  - relation_type: prov:hadPrimarySource
-    source: genebass
-  - relation_type: prov:hadPrimarySource
-    source: gencc
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: clingen
   product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
   versions:
   - '2026_03_27'

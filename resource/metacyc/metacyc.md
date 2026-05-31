@@ -28,8 +28,8 @@ license:
 name: MetaCyc
 products:
 - category: GraphicalInterface
-  description: Official MetaCyc portal for browsing curated metabolic pathways,
-    reactions, metabolites, enzymes, and genes across all domains of life.
+  description: Official MetaCyc portal for browsing curated metabolic pathways, reactions,
+    metabolites, enzymes, and genes across all domains of life.
   format: http
   id: metacyc.portal
   name: MetaCyc Portal
@@ -151,7 +151,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
-  product_url: https://spoke.rbvi.ucsf.edu/
+  product_url: https://spoke.ucsf.edu/data-tools
 ---
 # MetaCyc
 

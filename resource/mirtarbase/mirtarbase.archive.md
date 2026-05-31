@@ -10,7 +10,7 @@ original_source:
   source: mirtarbase
 product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
 warnings:
-- File was not able to be retrieved when checked on 2026-05-28_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-05-29_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-05-23_ Error connecting to
   URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded

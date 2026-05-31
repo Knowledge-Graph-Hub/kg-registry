@@ -16,7 +16,8 @@ layout: resource_detail
 name: CCLE
 products:
 - category: DocumentationProduct
-  description: CCLE project site describing the Cancer Cell Line Encyclopedia collaboration, motivations, and project phases.
+  description: CCLE project site describing the Cancer Cell Line Encyclopedia collaboration,
+    motivations, and project phases.
   format: http
   id: ccle.docs
   name: CCLE Project Site
@@ -25,7 +26,8 @@ products:
     source: ccle
   product_url: https://sites.broadinstitute.org/ccle/
 - category: Product
-  description: CCLE datasets page linking processed genetic, transcriptomic, proteomic, and metabolomic releases and related DepMap resources.
+  description: CCLE datasets page linking processed genetic, transcriptomic, proteomic,
+    and metabolomic releases and related DepMap resources.
   format: http
   id: ccle.datasets
   name: CCLE Datasets
@@ -96,7 +98,6 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -181,7 +182,6 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
-  format: http
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:

@@ -2,25 +2,31 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Citlalli Mejia-Almonte
-    orcid: 0000-0002-0142-5591
-    contact_details:
-      - contact_type: email
-        value: citlalli.mejiaalmonte@gmail.com
-      - contact_type: github
-        value: citmejia
+- category: Individual
+  label: Citlalli Mej a-Almonte
+  orcid: 0000-0002-0142-5591
+  contact_details:
+  - contact_type: email
+    value: citlalli.mejiaalmonte@gmail.com
+  - contact_type: github
+    value: citmejia
+- category: Individual
+  label: Citlalli Mejia-Almonte
+  orcid: 0000-0002-0142-5591
+  contact_details:
+  - contact_type: email
+    value: citlalli.mejiaalmonte@gmail.com
+  - contact_type: github
+    value: citmejia
 creation_date: '2025-09-29T00:00:00Z'
-description: The Microbial Conditions Ontology provides a controlled vocabulary
-  for the structured, reproducible description of microbial growth and experimental
-  conditions.
+description: Microbial Conditions Ontology is an ontology...
 domains:
-  - biomedical
+- biomedical
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -28,30 +34,29 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Microbial Conditions Ontology
 products:
-  - category: OntologyProduct
-    description: Microbial Conditions Ontology in OWL format
-    format: owl
-    id: mco.owl
-    name: mco.owl
-    product_file_size: 772100
-    product_url: http://purl.obolibrary.org/obo/mco.owl
-    original_source:
-      - source: mco
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Microbial Conditions Ontology in OBO format
-    format: obo
-    id: mco.obo
-    name: mco.obo
-    product_file_size: 409757
-    product_url: http://purl.obolibrary.org/obo/mco.obo
-    original_source:
-      - source: mco
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Microbial Conditions Ontology in OWL format
+  format: owl
+  id: mco.owl
+  name: mco.owl
+  product_file_size: 772100
+  product_url: http://purl.obolibrary.org/obo/mco.owl
+  original_source:
+  - source: mco
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Microbial Conditions Ontology in OBO format
+  format: obo
+  id: mco.obo
+  name: mco.obo
+  product_file_size: 409757
+  product_url: http://purl.obolibrary.org/obo/mco.obo
+  original_source:
+  - source: mco
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 publications: []
 ---
-
 The Microbial Conditions Ontology (MCO) standardizes the description of
 microbial growth conditions so that experiments can be annotated in a consistent,
 machine-readable way across repositories and publications. It extends existing

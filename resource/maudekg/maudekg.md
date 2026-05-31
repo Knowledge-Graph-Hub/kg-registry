@@ -1,7 +1,8 @@
 ---
 id: maudekg
 name: FDA MAUDE Adverse Event Knowledge Graph
-description: The MAUDE knowledge graph models FDA medical-device adverse event reports retrieved through the openFDA MAUDE API and transformed into RDF for structured querying and safety analysis.
+description: Knowledge graph constructed from FDA MAUDE adverse event reports using
+  standardized FDA product codes.
 activity_status: active
 homepage_url: https://github.com/Prabhadeus/Proto-OKN
 contacts:
@@ -37,7 +38,7 @@ collection:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 domains:
 - biomedical
 - clinical

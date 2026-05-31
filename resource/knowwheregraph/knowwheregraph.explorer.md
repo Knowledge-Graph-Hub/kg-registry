@@ -1,13 +1,14 @@
 ---
 category: GraphicalInterface
-description: Faceted search interface providing table and map-based views for browsing and discovering KnowWhereGraph data with automatic SPARQL query generation
+description: Faceted search interface providing table and map-based views for browsing
+  and discovering KnowWhereGraph data with automatic SPARQL query generation
 format: http
 id: knowwheregraph.explorer
 is_public: true
 name: KnowWhereGraph Knowledge Explorer
-product_url: https://www.knowwheregraph.org/tools/knowledge-explorer/
-layout: product_detail
 original_source:
-  - source: knowwheregraph
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: knowwheregraph
+product_url: https://stko-kwg.geog.ucsb.edu/#/
+layout: product_detail
 ---

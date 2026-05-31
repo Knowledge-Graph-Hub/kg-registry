@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Gene Expression Atlas
+format: http
 id: gene-expression-atlas-okn.sparql
 name: Gene Expression Atlas SPARQL
 original_source:

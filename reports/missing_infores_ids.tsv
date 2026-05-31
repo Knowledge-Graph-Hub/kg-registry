@@ -62,14 +62,14 @@ cdao	Comparative Data Analysis Ontology	Ontology	https://github.com/evoinfo/cdao
 cdiscvocab	CDISC Controlled Terminology	Aggregator	https://www.cdisc.org/standards/terminology/controlled-terminology	resource/cdiscvocab/cdiscvocab.md
 cdno	Compositional Dietary Nutrition Ontology	Ontology	https://cdno.info/	resource/cdno/cdno.md
 cellosaurus	Cellosaurus	DataSource	https://www.cellosaurus.org/	resource/cellosaurus/cellosaurus.md
-cellxgene	Cellxgene	DataSource		resource/cellxgene/cellxgene.md
+cellxgene	CZ CELLxGENE	DataSource	https://cellxgene.cziscience.com/	resource/cellxgene/cellxgene.md
 ceph	Cephalopod Ontology	Ontology	https://github.com/obophenotype/cephalopod-ontology	resource/ceph/ceph.md
 cfde-ddkg	Data Distillery Knowledge Graph (DDKG)	KnowledgeGraph	https://dd-kg-ui.cfde.cloud/about	resource/cfde-ddkg/cfde-ddkg.md
 cfde-gse	Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)	KnowledgeGraph	https://gse.cfde.cloud/	resource/cfde-gse/cfde-gse.md
-cgnc	CGNC	DataSource	http://birdgenenames.org/cgnc/	resource/cgnc/cgnc.md
+cgnc	CGNC	DataSource	https://birdgenenames.org/index.jsp	resource/cgnc/cgnc.md
 chea	ChEA	DataSource	https://maayanlab.cloud/chea3/	resource/chea/chea.md
 chea-kg	ChEA-KG	KnowledgeGraph	https://maayanlab.cloud/chea-kg/	resource/chea-kg/chea-kg.md
-chemicalchecker	Chemical Checker	DataSource	http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/	resource/chemicalchecker/chemicalchecker.md
+chemicalchecker	Chemical Checker	DataSource	https://chemicalchecker.com/	resource/chemicalchecker/chemicalchecker.md
 cheminf	Chemical Information Ontology	Ontology	https://github.com/semanticchemistry/semanticchemistry	resource/cheminf/cheminf.md
 chemont	ChemOnt	Ontology	http://classyfire.wishartlab.com/	resource/chemont/chemont.md
 chiro	CHEBI Integrated Role Ontology	Ontology	https://github.com/obophenotype/chiro	resource/chiro/chiro.md
@@ -90,7 +90,7 @@ clo	Cell Line Ontology	Ontology	https://github.com/CLO-Ontology/CLO	resource/clo
 clue	CLUE	DataSource	https://clue.io/	resource/clue/clue.md
 clyh	Clytia hemisphaerica Development and Anatomy Ontology	Ontology	https://github.com/EBISPOT/clyh_ontology	resource/clyh/clyh.md
 cm4ai_talent_kg	CM4AI Talent KG	KnowledgeGraph	https://cm4aikg.vercel.app/	resource/cm4ai_talent_kg/cm4ai_talent_kg.md
-cmaup	Cmaup	DataSource		resource/cmaup/cmaup.md
+cmaup	CMAUP	DataSource		resource/cmaup/cmaup.md
 cmf	CranioMaxilloFacial ontology	Ontology	https://code.google.com/p/craniomaxillofacial-ontology/	resource/cmf/cmf.md
 cmo	Clinical measurement ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/search.html	resource/cmo/cmo.md
 cob	Core Ontology for Biology and Biomedicine	Ontology	https://obofoundry.org/COB/	resource/cob/cob.md
@@ -276,7 +276,7 @@ kg-covid-19	KG-COVID-19	KnowledgeGraph	https://github.com/Knowledge-Graph-Hub/kg
 kg-ebi-gene2pheno	EBI Gene2Phenotype KG	KnowledgeGraph		resource/kg-ebi-gene2pheno/kg-ebi-gene2pheno.md
 kg-enp	kg-enp	KnowledgeGraph	https://enpkg.commons-lab.org/	resource/kg-enp/kg-enp.md
 kg-idg	KG-IDG	KnowledgeGraph	https://kghub.org/kg-idg/index.html	resource/kg-idg/kg-idg.md
-kg-jensenlab-diseases	JensenLab DISEASES KG	KnowledgeGraph		resource/kg-jensenlab-diseases/kg-jensenlab-diseases.md
+kg-jensenlab-diseases	JensenLab DISEASES KG	KnowledgeGraph	https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES	resource/kg-jensenlab-diseases/kg-jensenlab-diseases.md
 kg-microbe	KG Microbe	KnowledgeGraph	https://kghub.org/kg-microbe/index.html	resource/kg-microbe/kg-microbe.md
 kg-monarch	KG Monarch	KnowledgeGraph	https://kghub.org/kg-monarch/index.html	resource/kg-monarch/kg-monarch.md
 kg-predict	KG-Predict	KnowledgeGraph	http://nlp.case.edu/public/data/GPKG-Predict/	resource/kg-predict/kg-predict.md

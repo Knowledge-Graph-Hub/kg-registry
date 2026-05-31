@@ -1,19 +1,13 @@
 ---
 category: Product
-description: FTP server providing bulk downloads of genome assemblies, annotations,
-  gene models, and other WormBase data files
+description: Download site providing bulk genome assemblies, annotations, gene models,
+  and other WormBase data files over HTTPS.
+format: http
 id: wormbase.ftp
 name: WormBase FTP Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
   source: wormbase
-product_url: ftp://ftp.wormbase.org/pub/wormbase/
-warnings:
-- File was not able to be retrieved when checked on 2026-05-28_ FTP error_ [Errno
-  101] Network is unreachable
-- File was not able to be retrieved when checked on 2026-03-30_ FTP error_ [Errno
-  101] Network is unreachable
-- File was not able to be retrieved when checked on 2025-12-04_ Error connecting to
-  URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
+product_url: https://downloads.wormbase.org/
 layout: product_detail
 ---

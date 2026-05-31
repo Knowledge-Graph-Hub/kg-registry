@@ -1,30 +1,27 @@
 ---
-id: aao
-name: Amphibian gross anatomy
-description: A structured controlled vocabulary for amphibian gross anatomy; this
-  deprecated ontology is being integrated into Uberon.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/aao.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:8292
 contacts:
 - category: Individual
-  label: David Blackburn
-  orcid: 0000-0002-1810-9886
   contact_details:
   - contact_type: email
     value: david.c.blackburn@gmail.com
+  label: David Blackburn
+  orcid: 0000-0002-1810-9886
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: http://github.com/seger/aao
+id: aao
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Amphibian gross anatomy
 products:
 - category: OntologyProduct
   description: Canonical OWL edition of the Amphibian Anatomy Ontology distributed
@@ -36,7 +33,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: aao
   product_url: http://purl.obolibrary.org/obo/aao.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:8292
 ---
 ## Description
 

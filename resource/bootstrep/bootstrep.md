@@ -1,28 +1,26 @@
 ---
-id: bootstrep
-name: Gene Regulation Ontology
-description: The BOOTStrep Gene Regulation Ontology is a conceptual model for gene
-  regulation focused on processes, physical entities, and relations useful for NLP;
-  it is deprecated in favor of more current ontologies such as molecular_function.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/bootstrep.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Vivian Lee
   contact_details:
   - contact_type: email
     value: vlee@ebi.ac.uk
+  label: Vivian Lee
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- chemistry and biochemistry
+homepage_url: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
+id: bootstrep
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Gene Regulation Ontology
 products:
 - category: OntologyProduct
   description: Canonical OWL edition of the BOOTStrep Gene Regulation Ontology distributed
@@ -34,6 +32,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: bootstrep
   product_url: http://purl.obolibrary.org/obo/bootstrep.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

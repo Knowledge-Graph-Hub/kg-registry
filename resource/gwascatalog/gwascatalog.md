@@ -83,6 +83,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
+  product_file_size: 19481277
   product_url: https://www.ebi.ac.uk/gwas/api/search/downloads/trait_mappings
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -93,6 +94,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
+  product_file_size: 1485615817
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/2025/01/31/gwas-kb.owl
 - category: DocumentationProduct
   description: Interactive GWAS Catalog diagram showing trait mappings and parent
@@ -262,6 +264,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -337,6 +340,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -673,9 +677,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Neo4j graph database integrating Enrichr gene set libraries with genes,

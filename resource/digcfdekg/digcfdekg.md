@@ -1,7 +1,9 @@
 ---
 id: digcfdekg
 name: CFDE REVEAL Knowledge Graph
-description: CFDE REVEAL is a statistically inferred genomic evidence knowledge graph that links Common Fund gene sets, genes, inferred disease mechanisms, and human phenotypes to support mechanistic hypothesis generation within the Common Fund Data Ecosystem.
+description: The CFDE REVEAL Knowledge Graph is a statistically inferred genomic evidence
+  graph to integrate and disseminate knowledge within the Common Fund Data Ecosystem
+  (CFDE).
 activity_status: active
 homepage_url: https://cfdeknowledge.org/
 collection:
@@ -14,7 +16,7 @@ domains:
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-05-09T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 contacts:
 - category: Individual
   label: Jason Flannick
@@ -31,7 +33,9 @@ contacts:
 products:
 - id: digcfdekg.portal
   name: CFDE REVEAL Portal
-  description: CFDE Knowledge Center web application for natural-language exploration of mechanistic leads, evidence, and hypothesis-generation workflows backed by the CFDE REVEAL graph.
+  description: CFDE Knowledge Center web application for natural-language exploration
+    of mechanistic leads, evidence, and hypothesis-generation workflows backed by
+    the CFDE REVEAL graph.
   category: GraphicalInterface
   format: http
   product_url: https://cfdeknowledge.org/r/cfde_reveal

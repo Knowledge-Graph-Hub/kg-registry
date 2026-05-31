@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for OKN VoID graph descriptions
+format: http
 id: okn-void.tpf
 name: OKN VoID graph descriptions TPF
 original_source:

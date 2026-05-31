@@ -139,6 +139,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 publications:
 - authors:
   - "\u015Eenay Kafkas"

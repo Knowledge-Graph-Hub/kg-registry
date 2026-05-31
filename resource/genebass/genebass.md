@@ -1,45 +1,73 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ukbiobank.ac.uk/
+  label: UK Biobank
 creation_date: '2025-10-30T00:00:00Z'
-description: Genebass is a comprehensive resource of exome-based gene-level and single-variant association statistics from 281,852 UK Biobank participants across 3,817 phenotypes, enabling large-scale genotype-phenotype association studies.
+description: Genebass is a comprehensive resource of exome-based gene-level and single-variant
+  association statistics from 281,852 UK Biobank participants across 3,817 phenotypes,
+  enabling large-scale genotype-phenotype association studies.
 domains:
-  - genomics
-  - biomedical
-id: "genebass"
-infores_id: "genebass"
+- genomics
+- biomedical
+homepage_url: https://genebass.org/
+id: genebass
+infores_id: genebass
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail
 name: 'Genebass: Gene-based association summary statistics'
-homepage_url: https://genebass.org/
-synonyms:
-  - Genebass
-  - Gene-based association summary statistics
-contacts:
-  - category: Organization
-    label: UK Biobank
-    contact_details:
-      - contact_type: url
-        value: "https://www.ukbiobank.ac.uk/"
-publications:
-  - preferred: true
-    id: doi:10.1016/j.xgen.2022.100168
-    title: Systematic single-variant and gene-based association testing of thousands of phenotypes in 394,841 UK Biobank exomes
-    journal: Cell Genomics
-    year: "2022"
-    doi: 10.1016/j.xgen.2022.100168
 products:
-  - category: GraphicalInterface
-    description: Interactive web interface for searching and browsing Genebass gene-based and variant-level association results.
-    format: http
-    id: genebass.portal
-    name: Genebass Portal
-    original_source:
-      - source: genebass
-        relation_type: prov:hadPrimarySource
-    product_url: https://app.genebass.org/
+- category: GraphicalInterface
+  description: Interactive web interface for searching and browsing Genebass gene-based
+    and variant-level association results.
+  format: http
+  id: genebass.portal
+  name: Genebass Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genebass
+  product_url: https://app.genebass.org/
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for Genetics KP distributed via the NCATS Translator
+    release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6;
+    source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 653544
+  format: kgx-jsonl
+  id: translator.geneticskp.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Genetics KP KGX Graph
+  node_count: 28023
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
+  versions:
+  - '2026_03_27'
+  - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
+publications:
+- doi: 10.1016/j.xgen.2022.100168
+  id: doi:10.1016/j.xgen.2022.100168
+  journal: Cell Genomics
+  preferred: true
+  title: Systematic single-variant and gene-based association testing of thousands
+    of phenotypes in 394,841 UK Biobank exomes
+  year: '2022'
+synonyms:
+- Genebass
+- Gene-based association summary statistics
 ---
-
 # Genebass: Gene-based association summary statistics
 
 ## Overview

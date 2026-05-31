@@ -24,18 +24,19 @@ products:
   product_url: http://tatonettilab.org/offsides/
 - category: Product
   compression: gzip
-  description: Gzipped OFFSIDES table of drug side effects mined from FAERS that are not listed on official FDA labels.
+  description: Gzipped OFFSIDES table of drug side effects mined from FAERS that are
+    not listed on official FDA labels.
   format: csv
   id: offsides.data
   name: OFFSIDES Data Export
   original_source:
   - relation_type: prov:hadPrimarySource
     source: offsides
+  product_file_size: 68762346
   product_url: https://tatonettilab-resources.s3.us-west-1.amazonaws.com/nsides/OFFSIDES.csv.gz
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:

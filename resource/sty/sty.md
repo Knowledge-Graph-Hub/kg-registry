@@ -2,11 +2,11 @@
 activity_status: active
 category: Ontology
 contacts:
-  - category: Organization
-    label: UMLS and NLM Support Center
-    contact_details:
-      - contact_type: url
-        value: https://www.nlm.nih.gov/research/umls/support.html
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nlm.nih.gov/research/umls/support.html
+  label: UMLS and NLM Support Center
 creation_date: '2026-02-26T00:00:00Z'
 description: UMLS Semantic Types are the broad subject categories in the UMLS Semantic
   Network used to categorize concepts in the UMLS Metathesaurus.
@@ -23,7 +23,8 @@ license:
 name: UMLS Semantic Types
 products:
 - category: DocumentationProduct
-  description: NLM documentation for the UMLS Semantic Network, including semantic type definitions and semantic relations.
+  description: NLM documentation for the UMLS Semantic Network, including semantic
+    type definitions and semantic relations.
   format: http
   id: sty.docs
   name: UMLS Semantic Network Documentation
@@ -31,6 +32,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sty
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK9679/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Current UMLS Semantic Network release archive from NLM.
@@ -40,9 +44,11 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: sty
+  product_file_size: 86593
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/sn_current.tgz
 - category: Product
-  description: Semantic Groups mapping file that aggregates semantic types into coarser-grained categories.
+  description: Semantic Groups mapping file that aggregates semantic types into coarser-grained
+    categories.
   format: txt
   id: sty.semantic-groups
   name: UMLS Semantic Groups File
@@ -50,6 +56,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sty
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
+    header found'
 - category: Product
   description: sty Nodes TSV
   format: tsv

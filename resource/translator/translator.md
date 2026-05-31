@@ -909,10 +909,34 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
+    header found'
+- category: DocumentationProduct
+  description: SmartAPI registry entry for the Multiomics Clinical Trials KP TRAPI
+    1.5 endpoint.
+  format: http
+  id: ctkp.smartapi
+  name: Clinical Trials KP SmartAPI Registration
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ctkp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://smart-api.info/registry?q=e51073371d7049b9643e1edbdd61bcbd
+- category: DocumentationProduct
+  description: Translator wiki overview for Genetics KP, including team contacts,
+    public API entrypoint, upstream data resources, and method references.
+  format: http
+  id: geneticskp.docs
+  name: Genetics KP Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 tags:
 - translator
 ---

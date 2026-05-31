@@ -1,29 +1,28 @@
 ---
-id: ato
-name: Amphibian taxonomy
-description: A taxonomy ontology for Amphibia; this ontology is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/ato.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- organisms
-taxon:
-- NCBITaxon:8292
 contacts:
 - category: Individual
-  label: David Blackburn
-  orcid: 0000-0002-1810-9886
   contact_details:
   - contact_type: email
     value: david.c.blackburn@gmail.com
+  label: David Blackburn
+  orcid: 0000-0002-1810-9886
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- organisms
+- biological systems
+homepage_url: http://www.amphibanat.org
+id: ato
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Amphibian taxonomy
 products:
 - category: OntologyProduct
   description: Canonical OWL edition of the Amphibian Taxonomy Ontology distributed
@@ -35,7 +34,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ato
   product_url: http://purl.obolibrary.org/obo/ato.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:8292
 ---
 ## Description
 

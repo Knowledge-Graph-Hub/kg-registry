@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: Triple Pattern Fragments endpoint for Gene Expression Atlas
+format: http
 id: gene-expression-atlas-okn.tpf
 name: Gene Expression Atlas TPF
 original_source:

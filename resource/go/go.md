@@ -65,9 +65,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -90,9 +90,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -128,9 +128,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -142,9 +142,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -2158,6 +2158,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -2233,6 +2234,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
@@ -3809,9 +3811,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: ProteomeHD data files
@@ -4159,9 +4161,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: MappingProduct
   compression: gzip
@@ -4176,9 +4178,9 @@ products:
     source: go
   product_url: https://omabrowser.org/All/oma-go.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip

@@ -18,6 +18,7 @@ original_source:
   source: goldterms
 - relation_type: prov:wasDerivedFrom
   source: progenomes
+product_file_size: 4575050
 product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
 layout: product_detail
 ---

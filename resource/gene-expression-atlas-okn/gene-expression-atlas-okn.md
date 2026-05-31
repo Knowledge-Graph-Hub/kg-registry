@@ -1,54 +1,53 @@
 ---
-id: "gene-expression-atlas-okn"
+id: gene-expression-atlas-okn
 name: Gene Expression Atlas
-description: Gene Expression Atlas OKN is a semantic knowledge graph representing selected EMBL-EBI Gene Expression Atlas studies, assays, differential-expression measurements, and study metadata.
+description: Selected studies from the Gene Expression Atlas (https://www.ebi.ac.uk/gxa/home).
 activity_status: active
 homepage_url: https://www.ebi.ac.uk/gxa/home
 contacts:
-  - category: Individual
-    label: Andrew Su
-    contact_details:
-      - contact_type: email
-        value: "asu@scripps.edu"
-      - contact_type: github
-        value: "andrewsu"
-  - category: Individual
-    label: Trish Whetzel
-    contact_details:
-      - contact_type: email
-        value: "plwhetzel@gmail.com"
-      - contact_type: github
-        value: "twhetzel"
+- category: Individual
+  label: Andrew Su
+  contact_details:
+  - contact_type: email
+    value: asu@scripps.edu
+  - contact_type: github
+    value: andrewsu
+- category: Individual
+  label: Trish Whetzel
+  contact_details:
+  - contact_type: email
+    value: plwhetzel@gmail.com
+  - contact_type: github
+    value: twhetzel
 products:
-  - id: "gene-expression-atlas-okn.sparql"
-    name: Gene Expression Atlas SPARQL
-    description: SPARQL endpoint for querying the Gene Expression Atlas OKN graph through the OKN FRINK service.
-    category: ProgrammingInterface
-    format: http
-    product_url: https://apps.okn.us/gene-expression-atlas-okn/sparql
-    original_source:
-      - source: gene-expression-atlas-okn
-        relation_type: prov:hadPrimarySource
-  - id: "gene-expression-atlas-okn.tpf"
-    name: Gene Expression Atlas TPF
-    description: Triple Pattern Fragments endpoint for browsing the Gene Expression Atlas OKN graph through the OKN FRINK service.
-    category: ProgrammingInterface
-    format: http
-    product_url: https://apps.okn.us/ldf/gene-expression-atlas-okn
-    original_source:
-      - source: gene-expression-atlas-okn
-        relation_type: prov:hadPrimarySource
+- id: gene-expression-atlas-okn.sparql
+  name: Gene Expression Atlas SPARQL
+  description: SPARQL endpoint for Gene Expression Atlas
+  category: ProgrammingInterface
+  format: http
+  product_url: https://apps.okn.us/gene-expression-atlas-okn/sparql
+  original_source:
+  - source: gene-expression-atlas-okn
+    relation_type: prov:hadPrimarySource
+- id: gene-expression-atlas-okn.tpf
+  name: Gene Expression Atlas TPF
+  description: Triple Pattern Fragments endpoint for Gene Expression Atlas
+  category: ProgrammingInterface
+  format: http
+  product_url: https://apps.okn.us/ldf/gene-expression-atlas-okn
+  original_source:
+  - source: gene-expression-atlas-okn
+    relation_type: prov:hadPrimarySource
 collection:
-  - okn
+- okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 domains:
-  - biomedical
-  - genomics
+- biomedical
+- genomics
 ---
-
 Gene Expression Atlas
 
 ## Description

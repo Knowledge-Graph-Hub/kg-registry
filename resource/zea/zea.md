@@ -1,30 +1,27 @@
 ---
-id: zea
-name: Maize gross anatomy
-description: A structured controlled vocabulary for the anatomy of Zea mays; this
-  ontology is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/zea.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:4575
 contacts:
 - category: Individual
-  label: Leszek Vincent
-  orcid: 0000-0002-9316-2919
   contact_details:
   - contact_type: email
     value: Leszek@missouri.edu
+  label: Leszek Vincent
+  orcid: 0000-0002-9316-2919
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: http://www.maizemap.org/
+id: zea
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Maize gross anatomy
 products:
 - category: OntologyProduct
   description: Canonical OWL edition of the Maize gross anatomy ontology distributed
@@ -36,7 +33,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: zea
   product_url: http://purl.obolibrary.org/obo/zea.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:4575
 ---
 ## Description
 

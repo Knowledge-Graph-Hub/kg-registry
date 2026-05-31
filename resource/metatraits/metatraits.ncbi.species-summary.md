@@ -18,6 +18,7 @@ original_source:
   source: goldterms
 - relation_type: prov:wasDerivedFrom
   source: progenomes
+product_file_size: 34062481
 product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
 layout: product_detail
 ---

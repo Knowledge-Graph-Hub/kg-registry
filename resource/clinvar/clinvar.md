@@ -1401,9 +1401,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -1424,9 +1424,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: ClinVar gene associated with disease/phenotype edges
@@ -2091,6 +2091,31 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+    version: 4.3.6
+  description: KGX JSONL graph package for Genetics KP distributed via the NCATS Translator
+    release site (release 2026_03_27; build geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6;
+    source version 2026-03-27; Biolink 4.3.6; Node Normalizer 2025sep1).
+  edge_count: 653544
+  format: kgx-jsonl
+  id: translator.geneticskp.graph
+  latest_version: '2026_03_27'
+  license:
+    id: https://opensource.org/license/mit/
+    label: MIT
+  name: Translator Genetics KP KGX Graph
+  node_count: 28023
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneticskp
+  - relation_type: prov:hadPrimarySource
+    source: translator
+  product_url: https://kgx-storage.rtx.ai/releases/geneticskp/latest/
+  versions:
+  - '2026_03_27'
+  - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
 publications:
 - authors:
   - Landrum MJ

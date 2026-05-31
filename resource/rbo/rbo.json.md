@@ -9,7 +9,7 @@ original_source:
   source: rbo
 product_url: http://purl.obolibrary.org/obo/rbo.json
 warnings:
-- File was not able to be retrieved when checked on 2026-05-28_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-05-29_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

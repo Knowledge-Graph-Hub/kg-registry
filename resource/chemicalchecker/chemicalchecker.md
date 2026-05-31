@@ -53,7 +53,8 @@ products:
     source: chemicalchecker
   product_url: https://chemicalchecker.com/api/db/getSignature/
 - category: DocumentationProduct
-  description: Main Chemical Checker portal for searching molecules, browsing statistics, help, and downloads.
+  description: Main Chemical Checker portal for searching molecules, browsing statistics,
+    help, and downloads.
   format: http
   id: chemicalchecker.portal
   name: Chemical Checker Portal
@@ -64,7 +65,6 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:

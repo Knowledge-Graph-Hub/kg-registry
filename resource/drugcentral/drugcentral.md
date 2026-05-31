@@ -45,6 +45,7 @@ products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -120,6 +121,7 @@ products:
     source: uniprot
   - relation_type: prov:hadPrimarySource
     source: wikipathways
+  product_url: https://spoke.ucsf.edu/data-tools
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -399,9 +401,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -428,9 +430,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -460,9 +462,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -527,9 +529,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-28: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:

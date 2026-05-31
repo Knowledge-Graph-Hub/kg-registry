@@ -1,6 +1,7 @@
 ---
 category: ProgrammingInterface
 description: SPARQL endpoint for Wildlife-KN
+format: http
 id: wildlifekn.sparql
 name: Wildlife-KN SPARQL
 original_source:

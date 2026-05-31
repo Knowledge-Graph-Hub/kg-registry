@@ -1,28 +1,28 @@
 ---
-id: cmf
-name: CranioMaxilloFacial ontology
-description: An ontology for oral and maxillofacial surgical procedures; this ontology
-  is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/cmf.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- health
 contacts:
 - category: Individual
-  label: Mark Engelstad
-  orcid: 0000-0001-5889-4463
   contact_details:
   - contact_type: email
     value: engelsta@ohsu.edu
+  label: Mark Engelstad
+  orcid: 0000-0001-5889-4463
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- health
+- biomedical
+homepage_url: https://code.google.com/p/craniomaxillofacial-ontology/
+id: cmf
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: CranioMaxilloFacial ontology
 products:
 - category: OntologyProduct
   description: Canonical OWL edition of the CranioMaxilloFacial ontology distributed
@@ -34,6 +34,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cmf
   product_url: http://purl.obolibrary.org/obo/cmf.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

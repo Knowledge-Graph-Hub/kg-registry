@@ -1,52 +1,54 @@
 ---
-id: "oard-kg"
+id: oard-kg
 name: Open Annotations for Rare Diseases (OARD) Knowledge Graph
-description: OARD-KG is an RDF knowledge graph of clinical associations between rare diseases and phenotypes derived from electronic health records.
+description: Clinical associations between rare diseases and phenotypes derived from
+  electronic health records
 activity_status: active
 homepage_url: https://github.com/WengLab-InformaticsResearch/oard-react
 products:
-  - id: "oard-kg.sparql"
-    name: Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL
-    description: SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge Graph
-    category: ProgrammingInterface
-    product_url: https://apps.okn.us/oard-kg/sparql
-    original_source:
-      - source: oard-kg
-        relation_type: prov:hadPrimarySource
-  - id: "oard-kg.tpf"
-    name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
-    description: Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases (OARD) Knowledge Graph
-    category: ProgrammingInterface
-    product_url: https://apps.okn.us/ldf/oard-kg
-    original_source:
-      - source: oard-kg
-        relation_type: prov:hadPrimarySource
+- id: oard-kg.sparql
+  name: Open Annotations for Rare Diseases (OARD) Knowledge Graph SPARQL
+  description: SPARQL endpoint for Open Annotations for Rare Diseases (OARD) Knowledge
+    Graph
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/oard-kg/sparql
+  original_source:
+  - source: oard-kg
+    relation_type: prov:hadPrimarySource
+- id: oard-kg.tpf
+  name: Open Annotations for Rare Diseases (OARD) Knowledge Graph TPF
+  description: Triple Pattern Fragments endpoint for Open Annotations for Rare Diseases
+    (OARD) Knowledge Graph
+  category: ProgrammingInterface
+  product_url: https://apps.okn.us/ldf/oard-kg
+  original_source:
+  - source: oard-kg
+    relation_type: prov:hadPrimarySource
 collection:
-  - okn
+- okn
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-03-30T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-05-31T00:00:00Z'
 contacts:
-  - category: Individual
-    label: Casey Ta
-    contact_details:
-      - contact_type: email
-        value: "ct2865@cumc.columbia.edu"
-      - contact_type: github
-        value: "CaseyTa"
-  - category: Individual
-    label: Chunhua Weng
-    contact_details:
-      - contact_type: email
-        value: "cw2384@cumc.columbia.edu"
-      - contact_type: github
-        value: "ChunhuaWeng"
+- category: Individual
+  label: Casey Ta
+  contact_details:
+  - contact_type: email
+    value: ct2865@cumc.columbia.edu
+  - contact_type: github
+    value: CaseyTa
+- category: Individual
+  label: Chunhua Weng
+  contact_details:
+  - contact_type: email
+    value: cw2384@cumc.columbia.edu
+  - contact_type: github
+    value: ChunhuaWeng
 domains:
-  - biomedical
-  - clinical
+- biomedical
+- clinical
 ---
-
 Open Annotations for Rare Diseases (OARD) Knowledge Graph
 
 ## Description

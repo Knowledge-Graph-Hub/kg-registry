@@ -2,6 +2,7 @@
 category: DataModelProduct
 description: NCBI Genetic Codes tables summarizing translation tables used in GenBank
   and the NCBI taxonomy.
+format: http
 id: ncbi.gc
 name: NCBI Genetic Codes
 original_source:

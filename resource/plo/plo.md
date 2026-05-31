@@ -1,27 +1,26 @@
 ---
-id: plo
-name: Plasmodium life cycle
-description: A structured controlled vocabulary for the life cycle of the malaria
-  parasite Plasmodium; this ontology is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/plo.html
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-05-30T00:00:00Z'
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Matt Berriman
   contact_details:
   - contact_type: email
     value: mb4@sanger.ac.uk
+  label: Matt Berriman
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: http://www.sanger.ac.uk/Users/mb4/PLO/
+id: plo
+last_modified_date: '2026-05-31T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Plasmodium life cycle
 products:
 - category: OntologyProduct
   description: Canonical OWL edition of the Plasmodium Life Cycle Ontology distributed
@@ -33,6 +32,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: plo
   product_url: http://purl.obolibrary.org/obo/plo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

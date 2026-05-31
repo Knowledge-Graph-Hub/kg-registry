@@ -9,7 +9,7 @@ original_source:
   source: gtopdb
 product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
 warnings:
-- File was not able to be retrieved when checked on 2026-05-28_ No Content-Length
+- File was not able to be retrieved when checked on 2026-05-29_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
   to URL
