@@ -19,13 +19,23 @@ domains:
 fairsharing_id: FAIRsharing.fe4816
 homepage_url: https://credit.niso.org/
 id: credit
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: Credit
 products:
+- category: DocumentationProduct
+  description: Official CRediT resource hub describing the ANSI/NISO contributor-role
+    taxonomy, its 14 roles, and supporting background material.
+  format: http
+  id: credit.spec
+  name: CRediT Resource Hub
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: credit
+  product_url: https://credit.niso.org/
 - category: MappingProduct
   description: credit SSSOM
   format: sssom
@@ -59,4 +69,11 @@ products:
 ---
 # Credit
 
-CRediT is a community-maintained contributor roles taxonomy used to capture how individuals contribute to research outputs.
+CRediT is the Contributor Role Taxonomy maintained as a community-owned
+ANSI/NISO standard for describing how individuals contribute to research and
+scholarly outputs. Its fourteen roles provide a structured alternative to
+leaving contribution information implicit in authorship order alone.
+
+This page uses the CRediT resource hub as the owned entry point for the
+taxonomy itself. The OBO-DB-Ingest products remain listed as downstream
+propagated products that re-express the vocabulary for integration workflows.
