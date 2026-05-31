@@ -26,7 +26,7 @@ domains:
 - drug discovery
 homepage_url: http://patho.phenomebrowser.net/
 id: pathophenodb
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: PathoPhenoDB
 products:
@@ -43,15 +43,27 @@ products:
   product_url: http://patho.phenomebrowser.net/media/downloads/patho_pheno_withsymbols.nt
 - category: GraphicalInterface
   description: Web interface for querying and browsing PathoPhenoDB data
+  format: http
   id: pathophenodb.web
   name: PathoPhenoDB Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathophenodb
   product_url: http://patho.phenomebrowser.net/
+- category: DocumentationProduct
+  description: PathoPhenoDB help and download navigation for search, exploration,
+    downloads, and SPARQL access.
+  format: http
+  id: pathophenodb.docs
+  name: PathoPhenoDB Help and Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathophenodb
+  product_url: http://patho.phenomebrowser.net/#/help
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
+  format: http
   id: spoke.graph
   name: SPOKE Graph
   original_source:
@@ -146,4 +158,14 @@ repository: https://github.com/bio-ontology-research-group/pathophenodb
 taxon:
 - NCBITaxon:9606
 ---
-PathoPhenoDB Knowledge Graph
+# PathoPhenoDB
+
+PathoPhenoDB links human pathogens to the diseases, phenotypes, treatments, and
+drug-resistance mechanisms associated with infectious disease. The resource is
+designed to support diagnostic reasoning and infectious-disease research by
+connecting pathogen records with phenotype-driven search and exploration.
+
+The owned products on this page reflect the live PathoPhenoDB interface, RDF
+distribution, and help surface. The `spoke` graph remains listed as a propagated
+downstream product because it incorporates PathoPhenoDB as one of many upstream
+sources.
