@@ -35,8 +35,10 @@ name: SPOKE
 products:
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
+    format: http
     id: spoke.graph
     name: SPOKE Graph
+    product_url: https://spoke.ucsf.edu/data-tools
     original_source:
       - source: bgee
         relation_type: prov:hadPrimarySource
@@ -121,12 +123,22 @@ products:
         relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: SPARQL endpoint for querying SPOKE knowledge graph via the OKN FRINK service
+    format: http
     id: spoke.sparql
     name: SPOKE SPARQL Endpoint
     original_source:
       - source: spoke
         relation_type: prov:hadPrimarySource
     product_url: https://frink.apps.renci.org/spoke-okn/sparql
+  - category: DocumentationProduct
+    description: SPOKE data and tools page describing access paths, visualizations, and related resources.
+    format: http
+    id: spoke.docs
+    name: SPOKE Data and Tools
+    product_url: https://spoke.ucsf.edu/data-tools
+    original_source:
+      - source: spoke
+        relation_type: prov:hadPrimarySource
 publications:
   - authors:
       - John H Morris
@@ -173,14 +185,14 @@ infores_id: spoke
 taxon:
   - NCBITaxon:9606
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 ---
 
 SPOKE (Scalable Precision Medicine Open Knowledge Engine) is a comprehensive biomedical knowledge graph developed at the University of California, San Francisco (UCSF). It integrates data from over 30 public databases to create a rich network of biomedical relationships.
 
 SPOKE is a heterogeneous network, containing different types of nodes (e.g., genes, diseases, drugs, pathways) and the edges between them represent known connections. The knowledge graph pulls data out of silos, connecting diverse information from molecular research, clinical insights, and environmental data.
 
-SPOKE enables a wide variety of applications including suggesting testable hypotheses for researchers, implicating mechanisms of disease, and enabling more precise diagnoses and treatments for individual patients. It has been used in studies for drug repurposing, disease prediction, and integrating electronic health records with biomedical knowledge.
+SPOKE enables a wide variety of applications including suggesting testable hypotheses for researchers, implicating mechanisms of disease, and enabling more precise diagnoses and treatments for individual patients. It has been used in studies for drug repurposing, disease prediction, and integrating electronic health records with biomedical knowledge. In KG-Registry, the owned products capture the main SPOKE access points, while the detailed original-source provenance on the graph product records the many upstream resources incorporated into the network.
 
 ## Evaluation
 
