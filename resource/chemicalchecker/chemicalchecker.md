@@ -19,9 +19,9 @@ description: The Chemical Checker (CC) is a data-driven resource of small molecu
   drug discovery tasks.
 domains:
 - drug discovery
-homepage_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/
+homepage_url: https://chemicalchecker.com/
 id: chemicalchecker
-last_modified_date: '2025-12-13T00:00:00Z'
+last_modified_date: '2026-05-30T00:00:00Z'
 layout: resource_detail
 name: Chemical Checker
 products:
@@ -33,7 +33,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chemicalchecker
-  product_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html
+  product_url: https://chemicalchecker.com/downloads/root
 - category: ProcessProduct
   description: Software tool for producing bioactivity signature vectors.
   format: python
@@ -45,15 +45,26 @@ products:
   product_url: https://github.com/sbnb-irb/signaturizer
 - category: ProgrammingInterface
   description: Programmatic interface for Chemical Checker data.
+  format: http
   id: chemicalchecker.api
   name: Chemical Checker RESTful API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: chemicalchecker
   product_url: https://chemicalchecker.com/api/db/getSignature/
+- category: DocumentationProduct
+  description: Main Chemical Checker portal for searching molecules, browsing statistics, help, and downloads.
+  format: http
+  id: chemicalchecker.portal
+  name: Chemical Checker Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chemicalchecker
+  product_url: https://chemicalchecker.com/
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: http
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -140,4 +151,14 @@ taxon:
 ---
 # Chemical Checker (CC)
 
-The Chemical Checker (CC) is a data-driven resource of small molecule bioactivity data, organized into five levels of increasing complexity, ranging from chemical properties to clinical outcomes. It is designed to support computational drug discovery tasks.
+The Chemical Checker (CC) is a data-driven resource of small-molecule similarity
+and bioactivity signatures organized across multiple levels of biological
+evidence, from chemistry and targets to pathways, cells, indications, side
+effects, and clinical outcomes. It is designed to support computational drug
+discovery, repositioning, and systematic comparison of compounds from many
+biological viewpoints.
+
+In KG-Registry, the owned Chemical Checker products point to the live portal,
+downloads surface, signaturization tooling, and API. The Bioteque embeddings
+product is retained as a downstream derivative that reuses Chemical Checker among
+many other upstream resources.
