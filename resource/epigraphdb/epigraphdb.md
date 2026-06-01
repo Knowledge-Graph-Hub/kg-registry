@@ -20,7 +20,7 @@ domains:
   - investigations
 homepage_url: https://epigraphdb.org/
 id: epigraphdb
-last_modified_date: '2025-09-03T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://github.com/MRCIEU/epigraphdb
@@ -37,7 +37,9 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://epigraphdb.org/
   - category: ProgrammingInterface
+    connection_url: https://api.epigraphdb.org/
     description: Public REST API for programmatic access to EpiGraphDB graph entities, relationships, causal estimates, and metadata
+    format: json
     id: epigraphdb.api
     is_public: true
     name: EpiGraphDB REST API
@@ -47,6 +49,7 @@ products:
     product_url: https://api.epigraphdb.org/
   - category: ProgrammingInterface
     description: R client package providing higher-level access to EpiGraphDB API endpoints and analysis workflows
+    format: http
     id: epigraphdb.rpackage
     is_public: true
     name: epigraphdb R Package
@@ -54,6 +57,7 @@ products:
       - source: epigraphdb
         relation_type: prov:hadPrimarySource
     product_url: https://mrcieu.github.io/epigraphdb-r/
+    repository: https://github.com/MRCIEU/epigraphdb-r
   - category: DocumentationProduct
     description: Example notebooks demonstrating EpiGraphDB use cases, including causal inference, pleiotropy assessment, drug target identification, literature triangulation, and metadata queries
     id: epigraphdb.examples
@@ -112,6 +116,25 @@ products:
       - source: epigraphdb
         relation_type: prov:hadPrimarySource
     product_url: https://docs.epigraphdb.org/
+publications:
+  - authors:
+      - Yi Liu
+      - Benjamin Elsworth
+      - Pau Erola
+      - Valeriia Haberland
+      - Gibran Hemani
+      - Matt Lyon
+      - Jie Zheng
+      - Oliver Lloyd
+      - Marina Vabistsevits
+      - Tom R Gaunt
+    doi: 10.1093/bioinformatics/btaa961
+    id: doi:10.1093/bioinformatics/btaa961
+    journal: Bioinformatics
+    preferred: true
+    title: 'EpiGraphDB: a database and data mining platform for health data science'
+    year: '2020'
+repository: https://github.com/MRCIEU/epigraphdb
 ---
 
 ## Overview
