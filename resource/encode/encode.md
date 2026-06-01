@@ -18,7 +18,7 @@ domains:
 - genomics
 homepage_url: https://www.encodeproject.org/
 id: encode
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,7 @@ products:
     source: encode
   product_url: https://www.encodeproject.org/
 - category: ProgrammingInterface
+  connection_url: https://www.encodeproject.org/search/?type=Experiment&format=json
   description: REST API for retrieving ENCODE metadata and released objects in JSON
     format and performing structured search queries
   format: json
@@ -177,6 +178,9 @@ publications:
   title: An integrated encyclopedia of DNA elements in the human genome
   year: '2012'
 repository: https://github.com/ENCODE-DCC/encoded
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 # ENCODE
 
