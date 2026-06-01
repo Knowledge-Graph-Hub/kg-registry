@@ -14,8 +14,11 @@ domains:
 - biomedical
 homepage_url: https://saezlab.github.io/dorothea/
 id: dorothea
-last_modified_date: '2025-09-11T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://github.com/saezlab/dorothea/blob/master/LICENSE
+  label: GPL-3.0
 name: DoRothEA
 products:
 - category: GraphProduct
@@ -28,15 +31,15 @@ products:
     source: dorothea
   product_url: https://github.com/saezlab/dorothea/releases/tag/v1.0.0
 - category: ProcessProduct
-  description: R package containing regulon data and helper functions for TF activity
-    inference
+  description: Bioconductor R data package containing human and mouse regulons for
+    TF activity inference
   format: http
   id: dorothea.r-package
   name: DoRothEA R Package
   original_source:
   - relation_type: prov:hadPrimarySource
     source: dorothea
-  product_url: https://github.com/saezlab/dorothea/
+  product_url: https://bioconductor.org/packages/release/data/experiment/html/dorothea.html
 - category: DocumentationProduct
   description: Project documentation, usage examples, and methodological notes
   format: http
@@ -131,8 +134,15 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
 - doi: 10.1101/gr.240663.118
+  authors:
+  - Luz Garcia-Alonso
+  - Christian H. Holland
+  - Mahmoud M. Ibrahim
+  - Denes Turei
+  - Julio Saez-Rodriguez
   id: doi:10.1101/gr.240663.118
   journal: Genome Research
+  preferred: true
   title: Benchmark and integration of resources for the estimation of human transcription
     factor activities
   year: '2019'
@@ -142,6 +152,10 @@ publications:
   title: Expanding the coverage of regulons from high-confidence prior knowledge for
     accurate estimation of transcription factor activities
   year: '2023'
+repository: https://github.com/saezlab/dorothea/
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 # DoRothEA
 
