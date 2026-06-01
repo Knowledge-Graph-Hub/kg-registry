@@ -1,9 +1,9 @@
 ---
 id: ypo
 name: Yeast phenotypes
-description: Description unavailable.
+description: Yeast Phenotypes Ontology is a structured controlled vocabulary for the phenotypes of budding yeast. The ontology is deprecated and OBO Foundry recommends APO as a replacement.
 activity_status: inactive
-homepage_url: http://www.yeastgenome.org/
+homepage_url: https://obofoundry.org/ontology/ypo
 license:
   id: ''
   label: Not specified
@@ -12,9 +12,9 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 domains:
-- biological systems
+- phenotype
 taxon:
 - NCBITaxon:4932
 contacts:
@@ -24,12 +24,30 @@ contacts:
   contact_details:
   - contact_type: email
     value: cherry@genome.stanford.edu
-products: []
+products:
+- category: OntologyProduct
+  description: Yeast phenotypes ontology in OWL format
+  format: owl
+  id: ypo.owl
+  name: ypo.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ypo
+  product_url: http://purl.obolibrary.org/obo/ypo.owl
+- category: OntologyProduct
+  description: Yeast phenotypes ontology in OBO format
+  format: obo
+  id: ypo.obo
+  name: ypo.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ypo
+  product_url: http://purl.obolibrary.org/obo/ypo.obo
 publications: []
 ---
 ## Description
 
-Description unavailable.
+Yeast Phenotypes Ontology is a deprecated controlled vocabulary for the phenotypes of budding yeast. OBO Foundry recommends APO as a successor resource.
 
 ## Contacts
 

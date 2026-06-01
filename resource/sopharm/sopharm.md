@@ -1,9 +1,9 @@
 ---
 id: sopharm
 name: Suggested Ontology for Pharmacogenomics
-description: Description unavailable.
+description: SO-Pharm is a formal ontology for pharmacogenomics that models genotype, phenotype, drug, and trial knowledge for pharmacogenomic investigations. The ontology is deprecated in OBO Foundry.
 activity_status: inactive
-homepage_url: http://www.loria.fr/~coulet/sopharm2.0_description.php
+homepage_url: https://obofoundry.org/ontology/sopharm
 license:
   id: ''
   label: Not specified
@@ -12,7 +12,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 domains:
 - chemistry and biochemistry
 taxon:
@@ -23,12 +23,30 @@ contacts:
   contact_details:
   - contact_type: email
     value: Adrien.Coulet@loria.fr
-products: []
+products:
+- category: OntologyProduct
+  description: Suggested Ontology for Pharmacogenomics in OWL format
+  format: owl
+  id: sopharm.owl
+  name: sopharm.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sopharm
+  product_url: http://purl.obolibrary.org/obo/sopharm.owl
+- category: OntologyProduct
+  description: Suggested Ontology for Pharmacogenomics in OBO format
+  format: obo
+  id: sopharm.obo
+  name: sopharm.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: sopharm
+  product_url: http://purl.obolibrary.org/obo/sopharm.obo
 publications: []
 ---
 ## Description
 
-Description unavailable.
+SO-Pharm is a deprecated ontology for pharmacogenomics that models knowledge about genotypes, phenotypes, drugs, trials, and pharmacogenomic investigations.
 
 ## Contacts
 
