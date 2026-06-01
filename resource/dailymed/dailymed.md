@@ -15,7 +15,7 @@ domains:
 homepage_url: https://dailymed.nlm.nih.gov/dailymed/
 id: dailymed
 infores_id: dailymed
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: DailyMed
 products:
@@ -30,6 +30,7 @@ products:
         relation_type: prov:hadPrimarySource
   - category: ProgrammingInterface
     description: RESTful web services enabling programmatic access to DailyMed drug labeling data in Structured Product Labeling (SPL) format
+    connection_url: https://dailymed.nlm.nih.gov/dailymed/services/v2/
     format: xml
     id: dailymed.web_services
     name: DailyMed Web Services
@@ -46,6 +47,13 @@ products:
     original_source:
       - source: dailymed
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: rxnorm
+        relation_type: prov:wasInformedBy
+      - source: unii
+        relation_type: prov:wasInformedBy
+      - source: ndcd
+        relation_type: prov:wasInformedBy
   - category: Product
     description: Mapping files linking DailyMed drug labels to RxNorm codes, UNII identifiers, and NDC codes for interoperability
     format: http
