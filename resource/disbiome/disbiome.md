@@ -11,10 +11,41 @@ domains:
 - health
 homepage_url: https://disbiome.ugent.be/
 id: disbiome
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Disbiome
 products:
+- category: GraphicalInterface
+  description: Web interface for searching and browsing Disbiome microbiome-disease
+    associations, organisms, diseases, publications, samples, and statistics
+  format: http
+  id: disbiome.portal
+  name: Disbiome Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  product_url: https://disbiome.ugent.be/
+- category: ProgrammingInterface
+  connection_url: https://disbiome.ugent.be:8080/
+  description: Public JSON backend used by the Disbiome web application for experiments,
+    diseases, organisms, publications, methods, and samples
+  format: json
+  id: disbiome.api
+  name: Disbiome Backend API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  product_url: https://disbiome.ugent.be/help
+- category: Product
+  description: Export route in the Disbiome web application for downloading queried
+    association data
+  format: csv
+  id: disbiome.export
+  name: Disbiome Data Export
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disbiome
+  product_url: https://disbiome.ugent.be/export
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -222,6 +253,24 @@ products:
     source: uniprot
   product_file_size: 4640682152
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+publications:
+- authors:
+  - Yorick Janssens
+  - Joachim Nielandt
+  - Antoon Bronselaer
+  - Nathan Debunne
+  - Frederick Verbeke
+  - Evelien Wynendaele
+  - Filip Van Immerseel
+  - Yves-Paul Vandewynckel
+  - Guy De Tre
+  - Bart De Spiegeleer
+  doi: 10.1186/s12866-018-1197-5
+  id: doi:10.1186/s12866-018-1197-5
+  journal: BMC Microbiology
+  preferred: true
+  title: 'Disbiome database: linking the microbiome to disease'
+  year: '2018'
 synonyms:
 - Disbiome
 - Disbiome Database
