@@ -20,7 +20,7 @@ domains:
 homepage_url: https://clue.io/
 id: cmap
 infores_id: cmap
-last_modified_date: '2025-01-10T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://clue.io/connectopedia/terms
@@ -29,28 +29,40 @@ name: Connectivity Map
 products:
   - category: GraphicalInterface
     description: Cloud-based user interface providing suite of apps for querying gene expression signatures, browsing perturbagen data, searching metadata, and visualizing connectivity results
+    format: http
     id: cmap.clue
     name: CLUE Platform
     original_source:
       - source: cmap
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: lincs
+        relation_type: prov:wasInfluencedBy
     product_url: https://clue.io/
   - category: ProgrammingInterface
     description: Python library cmapBQ for programmatic access to CMap data through Google BigQuery with query capabilities for signatures and metadata
+    format: http
     id: cmap.python_api
     is_public: true
     name: cmapBQ Python Library
     original_source:
       - source: cmap
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: lincs
+        relation_type: prov:wasInfluencedBy
     product_url: https://cmapbq.readthedocs.io/
   - category: GraphicalInterface
     description: Query app enabling users to search CMap database with custom gene expression signatures to find perturbagens with similar or opposing transcriptional effects
+    format: http
     id: cmap.query_app
     name: CLUE Query App
     original_source:
       - source: cmap
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: lincs
+        relation_type: prov:wasInfluencedBy
     product_url: https://clue.io/query
   - category: Product
     description: Data releases containing replicate-collapsed signatures and gene expression profiles in GCTx matrix format available for download
@@ -60,6 +72,9 @@ products:
     original_source:
       - source: cmap
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: lincs
+        relation_type: prov:wasInfluencedBy
     product_url: https://clue.io/releases/data-dashboard
   - category: DocumentationProduct
     description: Comprehensive knowledge base containing glossary, tutorials, analytical methods, experimental protocols, and detailed documentation
@@ -69,6 +84,9 @@ products:
     original_source:
       - source: cmap
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: lincs
+        relation_type: prov:wasInfluencedBy
     product_url: https://clue.io/connectopedia
 publications:
   - id: https://doi.org/10.1016/j.cell.2017.10.049

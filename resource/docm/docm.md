@@ -13,10 +13,10 @@ domains:
   - precision medicine
   - genomics
   - health
-homepage_url: http://www.docm.info/
+homepage_url: https://github.com/griffithlab/docm
 id: docm
 infores_id: docm
-last_modified_date: '2025-01-20T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT

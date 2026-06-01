@@ -49,7 +49,7 @@ domains:
 homepage_url: http://juniper.health.unm.edu/tcrd/
 id: tcrd
 infores_id: tcrd
-last_modified_date: '2025-01-10T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -65,6 +65,19 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: gtex
+  - relation_type: prov:wasInfluencedBy
+    source: omim
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
@@ -76,12 +89,26 @@ products:
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
+  format: http
   id: tcrd.api
   is_public: true
   name: Pharos API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: gtex
+  - relation_type: prov:wasInfluencedBy
+    source: omim
   product_url: https://pharos.nih.gov/api
 - category: DocumentationProduct
   description: Comprehensive documentation describing TCRD data sources, schema structure,
@@ -92,6 +119,19 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: tcrd
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: gtex
+  - relation_type: prov:wasInfluencedBy
+    source: omim
   product_url: http://juniper.health.unm.edu/tcrd/
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
