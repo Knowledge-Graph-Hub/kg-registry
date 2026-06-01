@@ -10,7 +10,15 @@ domains:
 - health
 homepage_url: http://www.bio-add.org/ADReCS/
 id: adrecs
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
+contacts:
+- category: Organization
+  label: Bioinformatics-Aided Drug Discovery Group (BADD)
+  contact_details:
+  - contact_type: email
+    value: appo@xmu.edu.cn
+  - contact_type: url
+    value: http://www.bio-add.org/
 layout: resource_detail
 name: ADReCS
 products:

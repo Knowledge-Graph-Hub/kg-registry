@@ -1,9 +1,9 @@
 ---
 id: pao
 name: Plant Anatomy Ontology
-description: Description unavailable.
+description: The Plant Anatomy Ontology is a controlled vocabulary for plant anatomical and morphological structures. The ontology is deprecated and has been subsumed into the Plant Ontology (PO).
 activity_status: inactive
-homepage_url: http://www.plantontology.org
+homepage_url: https://obofoundry.org/ontology/pao
 license:
   id: ''
   label: Not specified
@@ -12,7 +12,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -26,12 +26,30 @@ contacts:
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
-products: []
+products:
+- category: OntologyProduct
+  description: Plant Anatomy Ontology in OWL format
+  format: owl
+  id: pao.owl
+  name: pao.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pao
+  product_url: http://purl.obolibrary.org/obo/pao.owl
+- category: OntologyProduct
+  description: Plant Anatomy Ontology in OBO format
+  format: obo
+  id: pao.obo
+  name: pao.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pao
+  product_url: http://purl.obolibrary.org/obo/pao.obo
 publications: []
 ---
 ## Description
 
-Description unavailable.
+The Plant Anatomy Ontology is a deprecated controlled vocabulary for plant anatomical and morphological structures. OBO Foundry notes that this ontology has been replaced by the Plant Ontology.
 
 ## Contacts
 

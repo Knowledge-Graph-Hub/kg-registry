@@ -1,9 +1,9 @@
 ---
 id: habronattus
 name: Habronattus courtship
-description: Description unavailable.
+description: Habronattus courtship is a demonstration ontology for encoding ethograms and courtship behavior of the spider Habronattus californicus in machine-readable form. The ontology is deprecated.
 activity_status: inactive
-homepage_url: http://www.mesquiteproject.org/ontology/Habronattus/index.html
+homepage_url: https://obofoundry.org/ontology/habronattus
 license:
   id: ''
   label: Not specified
@@ -12,9 +12,9 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 domains:
-- biological systems
+- organisms
 contacts:
 - category: Individual
   label: Peter Midford
@@ -22,12 +22,30 @@ contacts:
   contact_details:
   - contact_type: email
     value: peteremidford@yahoo.com
-products: []
+products:
+- category: OntologyProduct
+  description: Habronattus courtship ontology in OWL format
+  format: owl
+  id: habronattus.owl
+  name: habronattus.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: habronattus
+  product_url: http://purl.obolibrary.org/obo/habronattus.owl
+- category: OntologyProduct
+  description: Habronattus courtship ontology in OBO format
+  format: obo
+  id: habronattus.obo
+  name: habronattus.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: habronattus
+  product_url: http://purl.obolibrary.org/obo/habronattus.obo
 publications: []
 ---
 ## Description
 
-Description unavailable.
+Habronattus courtship is a deprecated demonstration ontology for representing ethograms and the courtship behavior of the spider Habronattus californicus in machine-readable form.
 
 ## Contacts
 

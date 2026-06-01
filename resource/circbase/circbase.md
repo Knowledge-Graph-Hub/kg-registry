@@ -10,8 +10,9 @@ domains:
 - genomics
 - biological systems
 - organisms
+homepage_url: https://www.circbase.org/
 id: circbase
-last_modified_date: '2025-09-16T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: http://www.circbase.org/
@@ -65,6 +66,7 @@ products:
 - category: GraphicalInterface
   description: Web interface for searching and browsing circular RNA annotations across
     species.
+  format: http
   id: circbase.portal
   name: circBase Portal
   original_source:
@@ -74,6 +76,7 @@ products:
 - category: Product
   description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs
     provided via the downloads CGI page.
+  format: http
   id: circbase.downloads
   name: circBase Bulk Downloads
   original_source:
@@ -83,6 +86,7 @@ products:
 - category: DocumentationProduct
   description: Help and documentation describing circBase data sources, identifiers,
     and usage notes.
+  format: http
   id: circbase.docs
   name: circBase Documentation
   original_source:
@@ -185,3 +189,16 @@ publications:
   year: '2014'
 ---
 # circBase
+
+circBase is a public aggregation and exploration resource for circular RNAs
+(circRNAs). It brings together published circRNA detection datasets across
+multiple species, tissues, and experimental settings, then exposes them through
+search, genomic-context views, table filtering, sequence-based search, and bulk
+downloads.
+
+The live circBase site supports identifier, gene, and genomic-position queries,
+dataset slicing through the table browser, and export of tables and FASTA
+sequences. It also distributes the custom `find_circ` scripts and historical
+dataset files used in early circRNA discovery workflows. In KG-Registry, the
+RNA-KG products remain attached as downstream derivatives that reuse circBase as
+one upstream source among several RNA resources.

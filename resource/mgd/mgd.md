@@ -45,13 +45,14 @@ domains:
 homepage_url: https://www.informatics.jax.org/
 id: mgd
 infores_id: mgi
-last_modified_date: '2025-01-10T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Mouse Genome Database
 products:
 - category: GraphicalInterface
   description: Primary web interface providing integrated access to mouse genes, phenotypes,
     expression data, disease models, and genome features
+  format: http
   id: mgd.portal
   name: MGI Web Portal
   original_source:
@@ -71,16 +72,18 @@ products:
 - category: ProgrammingInterface
   description: MouseMine data mining platform providing programmatic access to MGD
     data through InterMine query interface
+  format: http
   id: mgd.mousemine
   is_public: true
   name: MouseMine
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mgd
-  product_url: http://www.mousemine.org/
+  product_url: https://www.mousemine.org/
 - category: GraphicalInterface
   description: Gene Expression Database documenting spatiotemporal gene expression
     patterns during mouse development and adulthood
+  format: http
   id: mgd.gxd
   name: Gene Expression Database (GXD)
   original_source:

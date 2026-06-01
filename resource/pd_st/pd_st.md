@@ -1,9 +1,9 @@
 ---
 id: pd_st
 name: Platynereis stage ontology
-description: Description unavailable.
+description: The Platynereis stage ontology is a developmental stage ontology for Platynereis. The ontology is deprecated and OBO Foundry recommends using PDUMDV instead.
 activity_status: inactive
-homepage_url: http://4dx.embl.de/platy
+homepage_url: https://obofoundry.org/ontology/pd_st
 license:
   id: ''
   label: Not specified
@@ -12,7 +12,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -26,12 +26,30 @@ contacts:
     value: henrich@embl.de
   - contact_type: github
     value: ThorstenHen
-products: []
+products:
+- category: OntologyProduct
+  description: Platynereis stage ontology in OWL format
+  format: owl
+  id: pd_st.owl
+  name: pd_st.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pd_st
+  product_url: http://purl.obolibrary.org/obo/pd_st.owl
+- category: OntologyProduct
+  description: Platynereis stage ontology in OBO format
+  format: obo
+  id: pd_st.obo
+  name: pd_st.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pd_st
+  product_url: http://purl.obolibrary.org/obo/pd_st.obo
 publications: []
 ---
 ## Description
 
-Description unavailable.
+The Platynereis stage ontology is a deprecated developmental stage ontology for Platynereis. OBO Foundry recommends the Platynereis dumerilii development and anatomy ontology (`pdumdv`) as the successor resource.
 
 ## Contacts
 

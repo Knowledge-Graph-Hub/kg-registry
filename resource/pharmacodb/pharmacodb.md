@@ -42,7 +42,7 @@ domains:
 - pharmacology
 homepage_url: https://pharmacodb.ca/
 id: pharmacodb
-last_modified_date: '2025-01-10T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -53,21 +53,37 @@ products:
   description: Primary web portal for searching and browsing cancer pharmacogenomics
     data across multiple integrated datasets with interactive dose-response curve
     visualization
+  format: http
   id: pharmacodb.portal
   name: PharmacoDB Web Application
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ccle
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: ctrp
   product_url: https://pharmacodb.ca/
 - category: ProgrammingInterface
   description: RESTful JSON API providing programmatic access to cell lines, compounds,
     tissues, datasets, experiments, and intersections data
+  format: http
   id: pharmacodb.api
   is_public: true
   name: PharmacoDB API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ccle
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: ctrp
   product_url: http://api.pharmacodb.ca/v1/
 - category: DocumentationProduct
   description: Comprehensive user documentation covering search functionality, datasets,
@@ -78,6 +94,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacodb
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ccle
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: ctrp
   product_url: https://pharmacodb.ca/documentation
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological

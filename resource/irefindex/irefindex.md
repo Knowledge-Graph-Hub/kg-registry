@@ -12,7 +12,7 @@ domains:
 homepage_url: https://irefindex.vib.be/wiki/index.php/iRefIndex
 id: irefindex
 infores_id: irefindex
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: iRefIndex
 products:
@@ -49,6 +49,7 @@ products:
 - category: Product
   description: Cytoscape plugin for visualization and data mining of iRefIndex protein
     interaction data
+  format: http
   id: irefindex.irefscape
   name: iRefScape
   original_source:
@@ -57,6 +58,7 @@ products:
 - category: GraphicalInterface
   description: Web interface for navigating the global protein-protein interaction
     landscape
+  format: http
   id: irefindex.irefweb
   name: iRefWeb
   original_source:

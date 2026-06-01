@@ -6,9 +6,19 @@ description: 5SRNAdb (5S rRNA Database) is a curated repository of unique full-l
 domains:
   - genomics
   - biological systems
-homepage_url: http://www.combio.pl/5srnadb/
+homepage_url: http://www.combio.pl/rrna/
 id: 5srrnadb
-last_modified_date: '2025-09-10T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
+contacts:
+  - category: Organization
+    label: Adam Mickiewicz University, Department of Computational Biology
+    contact_details:
+      - contact_type: email
+        value: mszyman@amu.edu.pl
+      - contact_type: email
+        value: wmk@amu.edu.pl
+      - contact_type: url
+        value: http://www.combio.pl/rrna/contact/
 layout: resource_detail
 name: 5SRNAdb
 products:
@@ -17,7 +27,7 @@ products:
     format: fasta
     id: 5srrnadb.portal
     name: 5SRNAdb Portal
-    product_url: http://www.combio.pl/5srnadb/
+    product_url: http://www.combio.pl/rrna/
     original_source:
       - source: 5srrnadb
         relation_type: prov:hadPrimarySource

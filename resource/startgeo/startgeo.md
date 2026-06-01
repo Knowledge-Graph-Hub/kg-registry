@@ -8,10 +8,22 @@ domains:
   - biomedical
 id: "startgeo"
 infores_id: "startgeo"
-last_modified_date: '2025-11-25T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: STAR GEO Search Application
-homepage_url: http://stargeo.org/
+homepage_url: https://stargeo.org/
+products:
+  - category: GraphicalInterface
+    description: Historical STARGEO web application for searching GEO datasets by differential expression signatures
+    format: http
+    id: startgeo.portal
+    name: STARGEO Web Application
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: startgeo
+    product_url: https://stargeo.org/
+    warnings:
+      - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 at the historical STARGEO site'
 synonyms:
   - STARGEO
 ---
@@ -22,7 +34,7 @@ synonyms:
 
 STARGEO (Search Tool for Analysis of GEO) is a web-based application designed to search and analyze gene expression data from NCBI's Gene Expression Omnibus (GEO), one of the largest public repositories of genomics data. STARGEO enables researchers to identify datasets containing significant differential expression for genes of interest, facilitating discovery of relevant experimental data and biological insights.
 
-**Note:** Website availability appears intermittent (http://stargeo.org/). Users may experience connectivity issues.
+**Note:** The historical STARGEO site currently returns HTTP 404, so the application should be treated as inactive unless a maintained replacement is identified.
 
 ## Key Features
 
