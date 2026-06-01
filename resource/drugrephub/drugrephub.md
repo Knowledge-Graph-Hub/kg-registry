@@ -24,8 +24,11 @@ domains:
 - biomedical
 homepage_url: https://repo-hub.broadinstitute.org/repurposing
 id: drugrephub
-last_modified_date: '2026-01-22T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Drug Repurposing Hub
 products:
 - category: Product
@@ -41,16 +44,9 @@ products:
   product_file_size: 661900
   product_url: https://repo-hub.broadinstitute.org/public/data/repo-drug-annotation-20200324.txt
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/repo-drug-annotation-20200324.txt (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/repo-drug-annotation-20200324.txt (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved with default certificate verification when
+    checked on 2026-06-01: SSL certificate verification failed; file responded with
+    HTTP 200 when checked without local certificate verification'
 - category: Product
   description: Latest physical sample-level metadata including Broad sample IDs, vendor
     catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19
@@ -63,17 +59,13 @@ products:
     source: drugrephub
   product_file_size: 4072927
   product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubchem
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/repo-sample-annotation-20240610.txt (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
-    retries exceeded with url_ /public/data/repo-sample-annotation-20240610.txt (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved with default certificate verification when
+    checked on 2026-06-01: SSL certificate verification failed; file responded with
+    HTTP 200 when checked without local certificate verification'
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -180,5 +172,29 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+publications:
+- authors:
+  - Steven M Corsello
+  - Joshua A Bittker
+  - Zihan Liu
+  - Joshua Gould
+  - Patrick McCarren
+  - Jodi E Hirschman
+  - Stephen E Johnston
+  - Anita Vrcic
+  - Bang Wong
+  - Mariya Khan
+  - Jacob Asiedu
+  - Rajiv Narayan
+  - Christopher C Mader
+  - Aravind Subramanian
+  - Todd R Golub
+  doi: 10.1038/nm.4306
+  id: doi:10.1038/nm.4306
+  journal: Nature Medicine
+  preferred: true
+  title: 'The Drug Repurposing Hub: a next-generation drug library and information
+    resource'
+  year: '2017'
 ---
 Drug Repurposing Hub is a curated, annotated library of approved, clinical, and pre-clinical compounds for screening and repurposing research.
