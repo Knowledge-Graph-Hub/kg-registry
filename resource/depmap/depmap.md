@@ -25,7 +25,7 @@ domains:
 homepage_url: https://depmap.org/portal/
 id: depmap
 infores_id: depmap
-last_modified_date: '2025-10-09T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://depmap.org/portal/terms/
@@ -41,6 +41,16 @@ products:
   - relation_type: prov:hadPrimarySource
     source: depmap
   product_url: https://depmap.org/portal/
+- category: ProgrammingInterface
+  connection_url: https://depmap.org/portal/api/
+  description: DepMap portal API for programmatic access to portal data and metadata
+  format: json
+  id: depmap.api
+  name: DepMap API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_url: https://depmap.org/portal/api/
 - category: GraphicalInterface
   description: Interactive tool for exploring relationships across DepMap datasets
     and cell lines
@@ -86,11 +96,12 @@ products:
     CRISPR screens, drug screens, and omics data
   format: mixed
   id: depmap.downloads
+  latest_version: DepMap Public 26Q1
   name: DepMap Data Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: depmap
-  product_url: https://depmap.org/portal/data_page/
+  product_url: https://depmap.org/portal/data_page/?tab=currentRelease
 - category: Product
   description: CRISPR-Cas9 knockout screening data processed with Chronos algorithm
     to identify gene dependencies
@@ -110,6 +121,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: depmap
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: prism
+  - relation_type: prov:wasDerivedFrom
+    source: ctd2
   product_url: https://depmap.org/portal/data_page/
 - category: Product
   description: Gene expression data (RNA-seq) for DepMap cell lines
