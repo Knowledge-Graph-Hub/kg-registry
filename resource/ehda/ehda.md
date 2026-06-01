@@ -1,9 +1,9 @@
 ---
 id: ehda
 name: Human developmental anatomy, timed version
-description: Description unavailable.
+description: The Human Developmental Anatomy timed ontology is a stage-specific controlled vocabulary for human embryonic anatomy across Carnegie stages. The ontology is deprecated and has been superseded by EHDAA2.
 activity_status: inactive
-homepage_url: http://genex.hgu.mrc.ac.uk/
+homepage_url: https://obofoundry.org/ontology/ehda
 license:
   id: ''
   label: Not specified
@@ -12,7 +12,7 @@ collection:
 layout: resource_detail
 category: Ontology
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 domains:
 - anatomy and development
 taxon:
@@ -23,12 +23,30 @@ contacts:
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
-products: []
+products:
+- category: OntologyProduct
+  description: Human developmental anatomy, timed version in OWL format
+  format: owl
+  id: ehda.owl
+  name: ehda.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehda
+  product_url: http://purl.obolibrary.org/obo/ehda.owl
+- category: OntologyProduct
+  description: Human developmental anatomy, timed version in OBO format
+  format: obo
+  id: ehda.obo
+  name: ehda.obo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ehda
+  product_url: http://purl.obolibrary.org/obo/ehda.obo
 publications: []
 ---
 ## Description
 
-Description unavailable.
+The Human Developmental Anatomy timed ontology is a deprecated stage-specific vocabulary for human embryonic anatomy across Carnegie stages 1-20. OBO Foundry identifies EHDAA2 as the successor resource.
 
 ## Contacts
 
