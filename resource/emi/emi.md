@@ -10,7 +10,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.earthmetabolome.org/earth_metabolome_ontology/
 id: emi
-last_modified_date: '2026-01-15T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -18,14 +18,14 @@ license:
 name: Earth Metabolome Initiative Ontology
 products:
 - category: OntologyProduct
-  description: Canonical EMI ontology release (TTL)
-  format: ttl
+  description: Canonical EMI ontology release served from the persistent w3id URI
+  format: owl
   id: emi.ttl
-  name: EMI Ontology TTL
+  name: EMI Ontology OWL
   original_source:
   - relation_type: prov:hadPrimarySource
     source: emi
-  product_file_size: 66397
+  product_file_size: 680464
   product_url: https://w3id.org/emi
 - category: GraphProduct
   description: Graph version of the Earth Metabolome Initiative Ontology
@@ -45,8 +45,8 @@ products:
     source: try
   product_url: https://doi.org/10.5281/zenodo.17079767
   repository: https://github.com/earth-metabolome-initiative/metrin-kg
-  warnings: []
 - category: ProgrammingInterface
+  connection_url: https://qlever.earthmetabolome.org/api/metrin-kg
   description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
   format: http
   id: emikg.sparql
@@ -65,6 +65,7 @@ products:
   product_url: https://qlever.earthmetabolome.org/api/metrin-kg
 - category: GraphicalInterface
   description: Web-based SPARQL query editor for the EMI Knowledge Graph
+  format: http
   id: emikg.web
   name: EMI KG SPARQL Query Editor
   original_source:
