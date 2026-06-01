@@ -20,7 +20,7 @@ domains:
 homepage_url: https://www.disprot.org
 id: disprot
 infores_id: disprot
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,10 +44,20 @@ products:
     original_source:
       - source: disprot
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: uniprot
+        relation_type: prov:wasInformedBy
+      - source: interpro
+        relation_type: prov:wasInformedBy
+      - source: go
+        relation_type: prov:wasInformedBy
+      - source: eco
+        relation_type: prov:wasInformedBy
     product_url: https://www.disprot.org/download
   - category: ProgrammingInterface
+    connection_url: https://www.disprot.org/api/search
     description: RESTful API for programmatic access to DisProt data
-    format: http
+    format: json
     id: disprot.api
     is_public: true
     name: DisProt API
@@ -57,6 +67,7 @@ products:
     product_url: https://www.disprot.org/api
   - category: GraphicalInterface
     description: Deposition system for submitting experimental data on intrinsically disordered proteins
+    format: http
     id: disprot.deposition
     name: DisProt Deposition System
     original_source:
@@ -71,6 +82,11 @@ products:
     original_source:
       - source: disprot
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: go
+        relation_type: prov:wasInformedBy
+      - source: eco
+        relation_type: prov:wasInformedBy
     product_file_size: 50945
     product_url: https://www.disprot.org/assets/data/IDPO_v0.3.0.owl
 publications:
@@ -98,14 +114,7 @@ DisProt provides comprehensive annotations for:
 - **Experimental Evidence**: Curated experimental data supporting disorder and function annotations
 - **Cross-references**: Integration with UniProt, InterPro, Gene Ontology, and Evidence Ontology
 
-Current release (9.8, 2025_06) contains **3,201 entries** covering multiple organisms:
-- Human: 952 entries
-- Mouse: 198 entries  
-- Rat: 89 entries
-- Yeast: 209 entries
-- E. coli: 8 entries
-- Arabidopsis: 114 entries
-- Fly: 64 entries
+Current release statistics are available from the DisProt download and browse pages.
 
 ## Key Features
 
