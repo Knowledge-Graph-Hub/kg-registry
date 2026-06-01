@@ -16,19 +16,22 @@ domains:
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN
 id: aragorn
 infores_id: aragorn
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://opensource.org/license/mit/
+  label: MIT
 name: ARAGORN
 products:
   - category: ProgrammingInterface
-    description: TRAPI-compliant API for biomedical question answering
+    description: TRAPI-compliant API documentation for biomedical question answering
     format: http
     id: aragorn.api
     name: ARAGORN API
     original_source:
       - source: aragorn
         relation_type: prov:hadPrimarySource
-    product_url: https://aragorn.renci.org/
+    product_url: https://aragorn.renci.org/docs
   - category: GraphicalInterface
     description: Web interface for querying ARAGORN
     format: http
@@ -87,6 +90,8 @@ This resource has the Information Resource identifier: `infores:aragorn`
 ## Repository
 
 Source code and documentation: https://github.com/ranking-agent/aragorn
+
+Live API documentation: https://aragorn.renci.org/docs
 
 ## Domains
 
