@@ -22,14 +22,15 @@ domains:
 - health
 - public health
 - precision medicine
-homepage_url: https://cohd.io/
+homepage_url: https://cohd-api.ci.transltr.io/
 id: cohd
 infores_id: cohd
-last_modified_date: '2025-11-04T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Columbia Open Health Data (COHD)
 products:
 - category: ProgrammingInterface
+  connection_url: https://cohd-api.ci.transltr.io/api
   description: RESTful API providing programmatic access to clinical concept frequencies,
     co-occurrences, and associations with JSON output
   format: http
@@ -38,7 +39,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cohd
-  product_url: https://cohd.io/api
+  product_url: https://cohd-api.ci.transltr.io/
 - category: GraphicalInterface
   description: Interactive web interface for exploring clinical concept frequencies
     and associations
@@ -48,7 +49,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cohd
-  product_url: https://cohd.io/
+  product_url: https://cohd-api.ci.transltr.io/
 - category: ProcessProduct
   description: Python Jupyter notebooks demonstrating COHD API usage and analysis
     workflows
@@ -61,24 +62,15 @@ products:
   product_file_size: 2834847
   product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
 - category: DocumentationProduct
-  description: API documentation covering endpoint descriptions, data structure, and
-    usage examples
+  description: COHD about page describing the datasets, privacy-preserving counts,
+    OMOP standard concepts, and collaborating groups
   format: http
   id: cohd.docs
   name: COHD Documentation
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cohd
-  product_url: https://cohd.io/api
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-04-22: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
-    to URL'
+  product_url: https://cohd-api.ci.transltr.io/about.html
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -186,6 +178,20 @@ products:
   - '2026_03_27'
   - 423af7989cac
 repository: https://github.com/WengLab-InformaticsResearch/cohd_api
+publications:
+- authors:
+  - Casey N. Ta
+  - Michel Dumontier
+  - George Hripcsak
+  - Nicholas P. Tatonetti
+  - Chunhua Weng
+  doi: 10.1038/sdata.2018.273
+  id: doi:10.1038/sdata.2018.273
+  journal: Scientific Data
+  preferred: true
+  title: Columbia Open Health Data, clinical concept prevalence and co-occurrence
+    from electronic health records
+  year: '2018'
 taxon:
 - NCBITaxon:9606
 ---
