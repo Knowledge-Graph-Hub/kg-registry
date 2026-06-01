@@ -12,7 +12,7 @@ domains:
 - biological systems
 homepage_url: https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/
 id: snodb
-last_modified_date: '2026-05-26T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: snoDB
 products:

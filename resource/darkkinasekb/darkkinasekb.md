@@ -15,7 +15,7 @@ domains:
 homepage_url: https://darkkinome.org
 id: darkkinasekb
 infores_id: darkkinasekb
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Dark Kinase Knowledgebase
 products:

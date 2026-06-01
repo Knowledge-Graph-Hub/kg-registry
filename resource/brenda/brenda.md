@@ -17,7 +17,7 @@ domains:
 - biomedical
 homepage_url: https://www.brenda-enzymes.org/
 id: brenda
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -76,11 +76,22 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   product_url: https://www.brenda-enzymes.org/download.php
+- category: DocumentationProduct
+  description: BRENDA help and tutorial resources covering support, usage guidance,
+    FAQs, and tutorial videos.
+  format: http
+  id: brenda.docs
+  name: BRENDA Help and Tutorials
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: brenda
+  product_url: https://www.brenda-enzymes.org/help.php
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: http
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
