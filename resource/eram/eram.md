@@ -10,12 +10,12 @@ domains:
   - precision medicine
 id: eram
 infores_id: eram
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
 homepage_url: http://119.3.41.228/eram/
 publications:
-  - id: PMID:29106618
+  - id: doi:10.1093/nar/gkx1062
     title: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
     authors:
       - Jia J
@@ -33,6 +33,7 @@ publications:
       - Ni X
       - Shi T
     journal: Nucleic Acids Research
+    preferred: true
     year: '2018'
     doi: 10.1093/nar/gkx1062
 products:
@@ -44,6 +45,21 @@ products:
     original_source:
       - source: eram
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: omim
+        relation_type: prov:wasInformedBy
+      - source: umls
+        relation_type: prov:wasInformedBy
+      - source: doid
+        relation_type: prov:wasInformedBy
+      - source: mesh
+        relation_type: prov:wasInformedBy
+      - source: orphanet
+        relation_type: prov:wasInformedBy
+      - source: hp
+        relation_type: prov:wasInformedBy
+      - source: mp
+        relation_type: prov:wasInformedBy
     product_url: http://119.3.41.228/eram/
   - category: Product
     description: Downloadable data files containing rare disease annotations, phenotypes, symptoms, genes, and genotypes
@@ -53,6 +69,21 @@ products:
     original_source:
       - source: eram
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: omim
+        relation_type: prov:wasDerivedFrom
+      - source: umls
+        relation_type: prov:wasDerivedFrom
+      - source: doid
+        relation_type: prov:wasDerivedFrom
+      - source: mesh
+        relation_type: prov:wasDerivedFrom
+      - source: orphanet
+        relation_type: prov:wasDerivedFrom
+      - source: hp
+        relation_type: prov:wasDerivedFrom
+      - source: mp
+        relation_type: prov:wasDerivedFrom
     product_url: http://119.3.41.228/eram/download.php
 synonyms:
   - eRAM
