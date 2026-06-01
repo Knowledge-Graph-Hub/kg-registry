@@ -23,7 +23,7 @@ domains:
 - systems biology
 homepage_url: http://www.signaling-gateway.org/molecule
 id: afcs
-last_modified_date: '2026-05-04T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Alliance for Cellular Signaling
 products:
@@ -39,7 +39,7 @@ products:
   product_url: http://www.signaling-gateway.org/molecule
   warnings:
   - The original Signaling Gateway Molecule Pages URL was not reachable during curation
-    on 2026-05-04.
+    on 2026-06-01.
 - category: Product
   compression: zip
   description: IntAct-hosted AFCS protein interaction dataset in PSI-MI MITAB format.
@@ -198,8 +198,15 @@ publications:
   year: '2008'
 synonyms:
 - AfCS
+- AfCS-Nature Molecule Pages
+- Signaling Gateway Molecule Pages
+- UCSD-Nature Signaling Gateway
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
 ---
 # Alliance for Cellular Signaling
 
 The Alliance for Cellular Signaling was a collaborative signaling biology project
-and data source. Its interaction data are preserved in IntAct as an AFCS dataset.
+and data source. Its Signaling Gateway Molecule Pages described mammalian signaling
+proteins, and its interaction data are preserved in IntAct as an AFCS dataset.
