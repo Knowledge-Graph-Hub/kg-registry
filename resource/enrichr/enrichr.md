@@ -18,7 +18,7 @@ domains:
 - systems biology
 homepage_url: https://maayanlab.cloud/Enrichr/
 id: enrichr
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,6 +36,7 @@ products:
     source: enrichr
   product_url: https://maayanlab.cloud/Enrichr/
 - category: ProgrammingInterface
+  connection_url: https://maayanlab.cloud/Enrichr/addList
   description: REST API for submitting gene lists, retrieving enrichment results,
     exporting analyses, and querying Enrichr programmatically
   format: json
@@ -56,11 +57,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: enrichr
   product_url: https://maayanlab.cloud/Enrichr/datasetStatistics
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-29: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -248,6 +244,7 @@ publications:
   - Meirelles GV
   - Clark NR
   - Ma'ayan A
+  doi: 10.1186/1471-2105-14-128
   id: doi:10.1186/1471-2105-14-128
   journal: BMC Bioinformatics
   preferred: true
@@ -268,6 +265,7 @@ publications:
   - McDermott MG
   - Monteiro CD
   - Ma'ayan A
+  doi: 10.1093/nar/gkw377
   id: doi:10.1093/nar/gkw377
   journal: Nucleic Acids Research
   preferred: false
