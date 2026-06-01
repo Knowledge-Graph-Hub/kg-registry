@@ -1,16 +1,32 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.who.int/tools/atc-ddd-toolkit
+  label: World Health Organization
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: whocc@fhi.no
+  - contact_type: url
+    value: https://atcddd.fhi.no/
+  label: WHO Collaborating Centre for Drug Statistics Methodology
 creation_date: '2026-05-29T00:00:00Z'
-description: The ATC classification system provides hierarchical coding of drugs and
-  therapeutics used in medication classification and analytics.
+description: The Anatomical Therapeutic Chemical (ATC) classification system groups
+  active medicinal substances by the organ or system on which they act and by therapeutic,
+  pharmacological, and chemical properties. The ATC/DDD methodology is maintained by
+  the WHO Collaborating Centre for Drug Statistics Methodology and endorsed by WHO
+  for drug utilization monitoring and research.
 domains:
 - pharmacology
 - clinical
 - health
-homepage_url: https://www.whocc.no/atc_ddd_index/
+homepage_url: https://atcddd.fhi.no/atc_ddd_index/
 id: atc
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Anatomical Therapeutic Chemical Classification System
 products:
@@ -22,7 +38,27 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: atc
-  product_url: https://www.whocc.no/atc_ddd_index/
+  product_url: https://atcddd.fhi.no/atc_ddd_index/
+- category: DocumentationProduct
+  description: WHO ATC/DDD Toolkit page describing the ATC classification structure,
+    levels, and classification principles.
+  format: http
+  id: atc.classification
+  name: WHO ATC Classification Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: atc
+  product_url: https://www.who.int/tools/atc-ddd-toolkit/atc-classification
+- category: DocumentationProduct
+  description: WHO ATC/DDD Toolkit page describing the methodology, responsible organizations,
+    and guidance for ATC classification and DDD assignment.
+  format: http
+  id: atc.methodology
+  name: WHO ATC/DDD Methodology Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: atc
+  product_url: https://www.who.int/tools/atc-ddd-toolkit/methodology
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -599,7 +635,20 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+synonyms:
+- ATC
+- ATC/DDD
+- ATC/DDD Index
+- WHOCC ATC/DDD Index
 ---
 # Anatomical Therapeutic Chemical Classification System
 
-ATC is a reference data source for standardized therapeutic and chemical drug classification.
+The Anatomical Therapeutic Chemical (ATC) classification system is a reference
+classification for active medicinal substances. It supports drug utilization
+research by organizing substances across five levels, from broad anatomical or
+pharmacological groups to chemical substances.
+
+The WHO Collaborating Centre for Drug Statistics Methodology maintains the
+ATC/DDD Index and the associated Defined Daily Dose methodology. The current
+searchable index is hosted at the Norwegian Institute of Public Health's ATC/DDD
+site.
