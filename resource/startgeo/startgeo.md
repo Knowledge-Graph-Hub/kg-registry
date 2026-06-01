@@ -2,32 +2,34 @@
 activity_status: unknown
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: STARGEO is a gene expression search application that enables researchers to search and analyze gene expression data from the Gene Expression Omnibus (GEO) repository using statistical methods to identify differentially expressed genes and relevant datasets.
+description: STARGEO is a gene expression search application that enables researchers
+  to search and analyze gene expression data from the Gene Expression Omnibus (GEO)
+  repository using statistical methods to identify differentially expressed genes
+  and relevant datasets.
 domains:
-  - genomics
-  - biomedical
-id: "startgeo"
-infores_id: "startgeo"
+- genomics
+- biomedical
+homepage_url: https://stargeo.org/
+id: startgeo
+infores_id: startgeo
 last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: STAR GEO Search Application
-homepage_url: https://stargeo.org/
 products:
-  - category: GraphicalInterface
-    description: Historical STARGEO web application for searching GEO datasets by differential expression signatures
-    format: http
-    id: startgeo.portal
-    name: STARGEO Web Application
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: startgeo
-    product_url: https://stargeo.org/
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 at the historical STARGEO site'
+- category: GraphicalInterface
+  description: Historical STARGEO web application for searching GEO datasets by differential
+    expression signatures
+  format: http
+  id: startgeo.portal
+  name: STARGEO Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: startgeo
+  product_url: https://stargeo.org/
+  warnings: []
 synonyms:
-  - STARGEO
+- STARGEO
 ---
-
 # STAR GEO Search Application
 
 ## Overview

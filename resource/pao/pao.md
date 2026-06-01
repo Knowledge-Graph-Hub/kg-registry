@@ -1,31 +1,29 @@
 ---
-id: pao
-name: Plant Anatomy Ontology
-description: The Plant Anatomy Ontology is a controlled vocabulary for plant anatomical and morphological structures. The ontology is deprecated and has been subsumed into the Plant Ontology (PO).
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/pao
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:33090
 contacts:
 - category: Individual
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: http://www.plantontology.org
+id: pao
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Plant Anatomy Ontology
 products:
 - category: OntologyProduct
   description: Plant Anatomy Ontology in OWL format
@@ -36,6 +34,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pao
   product_url: http://purl.obolibrary.org/obo/pao.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Plant Anatomy Ontology in OBO format
   format: obo
@@ -45,7 +46,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pao
   product_url: http://purl.obolibrary.org/obo/pao.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:33090
 ---
 ## Description
 

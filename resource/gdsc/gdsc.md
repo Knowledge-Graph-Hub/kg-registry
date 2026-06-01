@@ -91,11 +91,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -260,6 +260,59 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+- category: GraphicalInterface
+  description: Primary web portal for searching and browsing cancer pharmacogenomics
+    data across multiple integrated datasets with interactive dose-response curve
+    visualization
+  format: http
+  id: pharmacodb.portal
+  name: PharmacoDB Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  product_url: https://pharmacodb.ca/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ccle
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: ctrp
+- category: ProgrammingInterface
+  description: RESTful JSON API providing programmatic access to cell lines, compounds,
+    tissues, datasets, experiments, and intersections data
+  format: http
+  id: pharmacodb.api
+  is_public: true
+  name: PharmacoDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  product_url: http://api.pharmacodb.ca/v1/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ccle
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: ctrp
+- category: DocumentationProduct
+  description: Comprehensive user documentation covering search functionality, datasets,
+    tissues, cell lines, experiments, genes, compounds, and biomarker discovery features
+  format: http
+  id: pharmacodb.documentation
+  name: PharmacoDB Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacodb
+  product_url: https://pharmacodb.ca/documentation
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: ccle
+  - relation_type: prov:wasInfluencedBy
+    source: gdsc
+  - relation_type: prov:wasInfluencedBy
+    source: ctrp
 publications:
 - authors:
   - Yang W

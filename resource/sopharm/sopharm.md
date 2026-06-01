@@ -1,28 +1,26 @@
 ---
-id: sopharm
-name: Suggested Ontology for Pharmacogenomics
-description: SO-Pharm is a formal ontology for pharmacogenomics that models genotype, phenotype, drug, and trial knowledge for pharmacogenomic investigations. The ontology is deprecated in OBO Foundry.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/sopharm
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- chemistry and biochemistry
-taxon:
-- NCBITaxon:9606
 contacts:
 - category: Individual
-  label: Adrien Coulet
   contact_details:
   - contact_type: email
     value: Adrien.Coulet@loria.fr
+  label: Adrien Coulet
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- chemistry and biochemistry
+homepage_url: http://www.loria.fr/~coulet/sopharm2.0_description.php
+id: sopharm
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Suggested Ontology for Pharmacogenomics
 products:
 - category: OntologyProduct
   description: Suggested Ontology for Pharmacogenomics in OWL format
@@ -33,6 +31,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sopharm
   product_url: http://purl.obolibrary.org/obo/sopharm.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Suggested Ontology for Pharmacogenomics in OBO format
   format: obo
@@ -42,7 +43,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sopharm
   product_url: http://purl.obolibrary.org/obo/sopharm.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

@@ -8,6 +8,7 @@ name: DBpedia Ontology
 original_source:
 - relation_type: prov:hadPrimarySource
   source: dbpedia
+product_file_size: 3289
 product_url: http://archivo.dbpedia.org/download?o=http%3A//dbpedia.org/ontology/&f=owl
 layout: product_detail
 ---

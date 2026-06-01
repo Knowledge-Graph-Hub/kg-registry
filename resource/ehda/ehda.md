@@ -1,28 +1,26 @@
 ---
-id: ehda
-name: Human developmental anatomy, timed version
-description: The Human Developmental Anatomy timed ontology is a stage-specific controlled vocabulary for human embryonic anatomy across Carnegie stages. The ontology is deprecated and has been superseded by EHDAA2.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/ehda
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:9606
 contacts:
 - category: Individual
-  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
+  label: Jonathan Bard
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: http://genex.hgu.mrc.ac.uk/
+id: ehda
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Human developmental anatomy, timed version
 products:
 - category: OntologyProduct
   description: Human developmental anatomy, timed version in OWL format
@@ -33,6 +31,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ehda
   product_url: http://purl.obolibrary.org/obo/ehda.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Human developmental anatomy, timed version in OBO format
   format: obo
@@ -42,7 +43,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ehda
   product_url: http://purl.obolibrary.org/obo/ehda.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

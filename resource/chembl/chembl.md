@@ -959,6 +959,90 @@ products:
   versions:
   - '2026_03_27'
   - 423af7989cac
+- category: Product
+  description: MySQL database dump files containing the complete TCRD relational database
+    schema and data for local installation and analysis
+  format: mysql
+  id: tcrd.database_download
+  name: TCRD Database Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  product_url: http://juniper.health.unm.edu/tcrd/download/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: gtex
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+    to URL'
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to TCRD data through Pharos
+    for computational workflows and custom applications
+  format: http
+  id: tcrd.api
+  is_public: true
+  name: Pharos API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  product_url: https://pharos.nih.gov/api
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: gtex
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+- category: DocumentationProduct
+  description: Comprehensive documentation describing TCRD data sources, schema structure,
+    and usage guidelines
+  format: http
+  id: tcrd.documentation
+  name: TCRD Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: tcrd
+  product_url: http://juniper.health.unm.edu/tcrd/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: uniprot
+  - relation_type: prov:wasInfluencedBy
+    source: chembl
+  - relation_type: prov:wasInfluencedBy
+    source: drugcentral
+  - relation_type: prov:wasInfluencedBy
+    source: string
+  - relation_type: prov:wasInfluencedBy
+    source: gtex
+  - relation_type: prov:wasInfluencedBy
+    source: omim
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+    to URL'
 publications:
 - authors:
   - Zdrazil B
@@ -974,7 +1058,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - "Kizil\xF6ren T"
+  - Kizilören T
   - Gaulton A
   - Bento AP
   - Adasme MF

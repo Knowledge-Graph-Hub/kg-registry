@@ -10,9 +10,9 @@ original_source:
   source: tissues
 product_url: https://tissues.jensenlab.org/Downloads
 warnings:
+- File was not able to be retrieved when checked on 2026-05-31_ No Content-Length
+  header found
 - File was not able to be retrieved when checked on 2026-05-29_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-05-28_ No Content-Length
-  header found
 layout: product_detail
 ---

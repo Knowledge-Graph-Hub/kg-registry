@@ -269,9 +269,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -356,9 +356,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-05-29: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-05-31: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-01: FTP error: timed
     out'
 - category: Product
   compression: gzip
@@ -843,6 +843,18 @@ products:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
+- category: GraphicalInterface
+  description: Graphical interface for GLKB
+  format: http
+  id: glkb.site
+  name: GLKB Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glkb
+  product_url: https://glkb.org/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: pubmed
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

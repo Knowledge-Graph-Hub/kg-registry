@@ -1,27 +1,28 @@
 ---
-id: habronattus
-name: Habronattus courtship
-description: Habronattus courtship is a demonstration ontology for encoding ethograms and courtship behavior of the spider Habronattus californicus in machine-readable form. The ontology is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/habronattus
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- organisms
 contacts:
 - category: Individual
-  label: Peter Midford
-  orcid: 0000-0001-6512-3296
   contact_details:
   - contact_type: email
     value: peteremidford@yahoo.com
+  label: Peter Midford
+  orcid: 0000-0001-6512-3296
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- organisms
+- biological systems
+homepage_url: http://www.mesquiteproject.org/ontology/Habronattus/index.html
+id: habronattus
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Habronattus courtship
 products:
 - category: OntologyProduct
   description: Habronattus courtship ontology in OWL format
@@ -32,6 +33,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: habronattus
   product_url: http://purl.obolibrary.org/obo/habronattus.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Habronattus courtship ontology in OBO format
   format: obo
@@ -41,6 +45,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: habronattus
   product_url: http://purl.obolibrary.org/obo/habronattus.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: cmaup
 product_url: https://academic.oup.com/nar/article/47/D1/D1118/5144144
+warnings:
+- File was not able to be retrieved when checked on 2026-05-31_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

@@ -1,13 +1,13 @@
 resource_id	resource_name	category	homepage_url	file_path
 1000genomes	1000 Genomes Project (IGSR)	DataSource	https://www.internationalgenome.org/	resource/1000genomes/1000genomes.md
 4dn	4D Nucleome Data Portal	DataSource	https://data.4dnucleome.org/	resource/4dn/4dn.md
-5srrnadb	5SRNAdb	DataSource	http://www.combio.pl/5srnadb/	resource/5srrnadb/5srrnadb.md
+5srrnadb	5SRNAdb	DataSource	http://www.combio.pl/rrna/	resource/5srrnadb/5srrnadb.md
 aao	Amphibian gross anatomy	Ontology	http://github.com/seger/aao	resource/aao/aao.md
 achilles	Project Achilles	DataSource	https://depmap.org/portal/achilles/	resource/achilles/achilles.md
 ado	Alzheimer's Disease Ontology	Ontology	https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO	resource/ado/ado.md
 adrecs	ADReCS	DataSource	http://www.bio-add.org/ADReCS/	resource/adrecs/adrecs.md
 adw	Animal natural history and life history	Ontology	http://www.animaldiversity.org	resource/adw/adw.md
-aelous	AELOUS	DataSource	https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4	resource/aelous/aelous.md
+aelous	AELOUS	DataSource	https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4	resource/aelous/aelous.md
 aeo	Anatomical Entity Ontology	Ontology	https://github.com/obophenotype/human-developmental-anatomy-ontology/	resource/aeo/aeo.md
 aero	Adverse Event Reporting Ontology	Ontology	http://purl.obolibrary.org/obo/aero	resource/aero/aero.md
 afcs	Alliance for Cellular Signaling	DataSource	http://www.signaling-gateway.org/molecule	resource/afcs/afcs.md
@@ -78,7 +78,7 @@ chr	Monochrom Ontology	Ontology	https://monarch-initiative.github.io/monochrom/	
 cido	Coronavirus Infectious Disease Ontology	Ontology	https://github.com/cido-ontology/cido	resource/cido/cido.md
 ciel	CIEL	Aggregator	https://openconceptlab.org/project/ciel/	resource/ciel/ciel.md
 cio	Confidence Information Ontology	Ontology	https://github.com/BgeeDB/confidence-information-ontology	resource/cio/cio.md
-circbase	circBase	Aggregator		resource/circbase/circbase.md
+circbase	circBase	Aggregator	https://www.circbase.org/	resource/circbase/circbase.md
 cito	CiTO	Ontology	https://sparontologies.github.io/cito/current/cito.html	resource/cito/cito.md
 ckg	Clinical Knowledge Graph	KnowledgeGraph	https://ckg.readthedocs.io/	resource/ckg/ckg.md
 cl-kg	Cell Ontology Knowledge Graph (CL-KG)	KnowledgeGraph	https://cellular-semantics.github.io/CL_KG/	resource/cl-kg/cl-kg.md
@@ -148,7 +148,7 @@ ecosim	ecosim	Resource	http://purl.obolibrary.org/obo/ecosim.owl	resource/ecosim
 edam	EDAM Ontology	Ontology	https://edamontology.org/	resource/edam/edam.md
 eggnog	eggNOG	DataSource	https://eggnogdb.org/	resource/eggnog/eggnog.md
 ehda	Human developmental anatomy, timed version	Ontology	http://genex.hgu.mrc.ac.uk/	resource/ehda/ehda.md
-ehdaa	Human developmental anatomy, abstract version	Ontology		resource/ehdaa/ehdaa.md
+ehdaa	Human developmental anatomy, abstract version	Ontology	https://obofoundry.org/ontology/ehdaa	resource/ehdaa/ehdaa.md
 ehdaa2	Human developmental anatomy, abstract	Ontology	https://github.com/obophenotype/human-developmental-anatomy-ontology	resource/ehdaa2/ehdaa2.md
 ekg	eKG	KnowledgeGraph	https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601	resource/ekg/ekg.md
 emap	Mouse gross anatomy and development, timed	Ontology	http://emouseatlas.org	resource/emap/emap.md
@@ -172,7 +172,7 @@ erccreg	ERCC Regulatory Element Dataset	DataSource	https://exrna.org/	resource/e
 ero	eagle-i resource ontology	Ontology	https://open.med.harvard.edu/wiki/display/eaglei/Ontology	resource/ero/ero.md
 eupath	VEuPathDB ontology	Ontology	https://github.com/VEuPathDB-ontology/VEuPathDB-ontology	resource/eupath/eupath.md
 eupathdb	Eukaryotic Pathogen Database (EuPathDB)	DataSource		resource/eupathdb/eupathdb.md
-ev	eVOC (Expressed Sequence Annotation for Humans)	Ontology		resource/ev/ev.md
+ev	eVOC (Expressed Sequence Annotation for Humans)	Ontology	https://obofoundry.org/ontology/ev	resource/ev/ev.md
 evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/	resource/evlncrnas/evlncrnas.md
 evoweb	EvoWeb	KnowledgeGraph	https://data.niaid.nih.gov/	resource/evoweb/evoweb.md
 exmo	Exercise Medicine Ontology	Ontology	https://github.com/Exercise-Medicine-Ontology/EXMO	resource/exmo/exmo.md
@@ -217,7 +217,7 @@ geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-
 geoconnex	GEOCONNEX	KnowledgeGraph	https://docs.geoconnex.us/about/intro	resource/geoconnex/geoconnex.md
 geonames	GeoNames	DataSource	https://www.geonames.org/	resource/geonames/geonames.md
 gff	GFF	DataModel	http://www.sequenceontology.org/gff3.shtml	resource/gff/gff.md
-glkb	GLKB	DataSource	https://glkb.dcmb.med.umich.edu/	resource/glkb/glkb.md
+glkb	GLKB	DataSource	https://glkb.org/	resource/glkb/glkb.md
 globi	Global Biotic Interactions (GloBI)	KnowledgeGraph	https://www.globalbioticinteractions.org/	resource/globi/globi.md
 glycocoo	GlycoConjugate Ontology (GlycoCoO)	Ontology	https://github.com/glycoinfo/GlycoCoO	resource/glycocoo/glycocoo.md
 glyconnect	GlyConnect	DataSource	https://glyconnect.expasy.org/	resource/glyconnect/glyconnect.md
@@ -537,8 +537,8 @@ swo	Software ontology	Ontology	https://github.com/allysonlister/swo	resource/swo
 symp	Symptom Ontology	Ontology	https://github.com/DiseaseOntology/SymptomOntology	resource/symp/symp.md
 t4fs	terms4FAIRskills	Ontology	https://github.com/terms4fairskills/FAIRterminology	resource/t4fs/t4fs.md
 tads	Tick Anatomy Ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tads/tads.md
-tahe	Terminology of Anatomy of Human Embryology	Ontology		resource/tahe/tahe.md
-tahh	Terminology of Anatomy of Human Histology	Ontology		resource/tahh/tahh.md
+tahe	Terminology of Anatomy of Human Embryology	Ontology	https://obofoundry.org/ontology/tahe	resource/tahe/tahe.md
+tahh	Terminology of Anatomy of Human Histology	Ontology	https://obofoundry.org/ontology/tahh	resource/tahh/tahh.md
 tair	The Arabidopsis Information Resource	DataSource	https://www.arabidopsis.org/	resource/tair/tair.md
 tao	Teleost Anatomy Ontology	Ontology	http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology	resource/tao/tao.md
 tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarbase/tarbase.md

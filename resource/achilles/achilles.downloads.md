@@ -11,5 +11,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: depmap
 product_url: https://depmap.org/portal/download/all/
+warnings:
+- File was not able to be retrieved when checked on 2026-05-31_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

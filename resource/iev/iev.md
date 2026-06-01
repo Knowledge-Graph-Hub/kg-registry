@@ -1,21 +1,21 @@
 ---
-id: iev
-name: Event (INOH pathway ontology)
-description: IEV is the event ontology from the INOH pathway ontology suite, used to annotate biological processes, pathways, and sub-pathways in pathway data integration workflows. The ontology is deprecated.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/iev
+category: Ontology
+collection:
+- obo-foundry
+contacts: []
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- chemistry and biochemistry
+homepage_url: http://www.inoh.org
+id: iev
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
 license:
   id: ''
   label: Not specified
-collection:
-- obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- chemistry and biochemistry
-contacts: []
+name: Event (INOH pathway ontology)
 products:
 - category: OntologyProduct
   description: Event (INOH pathway ontology) in OWL format
@@ -26,6 +26,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: iev
   product_url: http://purl.obolibrary.org/obo/iev.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Event (INOH pathway ontology) in OBO format
   format: obo
@@ -35,6 +38,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: iev
   product_url: http://purl.obolibrary.org/obo/iev.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
 publications: []
 ---
 ## Description

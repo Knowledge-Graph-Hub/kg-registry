@@ -9,6 +9,7 @@ name: OFFSIDES Data Export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: offsides
+product_file_size: 68762346
 product_url: https://tatonettilab-resources.s3.us-west-1.amazonaws.com/nsides/OFFSIDES.csv.gz
 layout: product_detail
 ---
