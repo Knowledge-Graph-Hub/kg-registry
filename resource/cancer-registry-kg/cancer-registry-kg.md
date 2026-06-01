@@ -10,7 +10,7 @@ domains:
   - translational
 homepage_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 id: cancer-registry-kg
-last_modified_date: '2025-11-22T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.hhs.gov/open/public-access-guiding-principles/index.html
@@ -75,10 +75,14 @@ publications:
       - J. Blair Christian
       - Georgia Tourassi
     doi: 10.1109/JBHI.2020.2990797
-    id: PMID:32386166
+    id: doi:10.1109/JBHI.2020.2990797
     journal: IEEE Journal of Biomedical and Health Informatics
+    preferred: true
     title: Knowledge Graph-Enabled Cancer Data Analytics
     year: '2020'
+synonyms:
+  - Cancer Registry KG
+  - Cancer Registry Knowledge Graph
 taxon:
   - NCBITaxon:9606
 ---
