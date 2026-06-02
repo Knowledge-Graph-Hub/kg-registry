@@ -18,7 +18,7 @@ domains:
 homepage_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
 id: litvar
 infores_id: litvar
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: LitVar
 products:
@@ -31,11 +31,46 @@ products:
     original_source:
       - source: litvar
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: clingen
+        relation_type: prov:wasInformedBy
+      - source: clinvar
+        relation_type: prov:wasInformedBy
+      - source: dbsnp
+        relation_type: prov:wasInformedBy
+      - source: pmc
+        relation_type: prov:wasDerivedFrom
+      - source: pubmed
+        relation_type: prov:wasDerivedFrom
+      - source: pubtator
+        relation_type: prov:used
   - category: ProgrammingInterface
     description: RESTful API providing programmatic access to variant summaries, publications, search, and gene-level variant queries
     format: http
     id: litvar.api
     name: LitVar API
+    product_url: https://www.ncbi.nlm.nih.gov/research/litvar2-api/
+    original_source:
+      - source: litvar
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: clingen
+        relation_type: prov:wasInformedBy
+      - source: clinvar
+        relation_type: prov:wasInformedBy
+      - source: dbsnp
+        relation_type: prov:wasInformedBy
+      - source: pmc
+        relation_type: prov:wasDerivedFrom
+      - source: pubmed
+        relation_type: prov:wasDerivedFrom
+      - source: pubtator
+        relation_type: prov:used
+  - category: DocumentationProduct
+    description: LitVar web documentation for the REST API, including endpoints for variant autocomplete, variant summaries, variant publications, sensors, and gene-level variant search
+    format: http
+    id: litvar.api_documentation
+    name: LitVar API Documentation
     product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/api
     original_source:
       - source: litvar
@@ -50,7 +85,7 @@ publications:
       - Heidi L. Rehm
       - Zhiyong Lu
     doi: 10.1038/s41588-023-01414-x
-    id: litvar_2023
+    id: doi:10.1038/s41588-023-01414-x
     journal: Nature Genetics
     preferred: true
     title: Tracking genetic variants in the biomedical literature using LitVar 2.0
