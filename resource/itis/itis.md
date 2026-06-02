@@ -24,7 +24,7 @@ domains:
 - environment
 homepage_url: https://www.itis.gov/
 id: itis
-last_modified_date: '2025-09-03T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.itis.gov/access.html
@@ -42,8 +42,10 @@ products:
     source: itis
   product_url: https://www.itis.gov/
 - category: ProgrammingInterface
+  connection_url: https://www.itis.gov/ITISWebService/jsonservice/
   description: REST JSON services providing programmatic access to taxonomic records,
     synonyms, hierarchy, and search utilities
+  format: json
   id: itis.api
   is_public: true
   name: ITIS REST Services
@@ -52,14 +54,25 @@ products:
     source: itis
   product_url: https://www.itis.gov/ws_description.html
 - category: Product
-  description: Downloadable full database dump (Delorme) package containing authoritative
-    ITIS taxonomic data
-  id: itis.download
-  name: ITIS Data Download Package
+  compression: gzip
+  description: Full ITIS data set for MySQL by-table bulk loading.
+  id: itis.mysql_tables
+  name: ITIS MySQL Tables Download
   original_source:
   - relation_type: prov:hadPrimarySource
     source: itis
-  product_url: https://www.itis.gov/downloads/
+  product_file_size: 57611377
+  product_url: https://www.itis.gov/downloads/itisMySQLTables.tar.gz
+- category: Product
+  compression: zip
+  description: Full ITIS data set packaged as a SQLite database download.
+  id: itis.sqlite
+  name: ITIS SQLite Download
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  product_file_size: 222746679
+  product_url: https://www.itis.gov/downloads/itisSqlite.zip
 - category: Product
   description: itis OBO
   format: obo
