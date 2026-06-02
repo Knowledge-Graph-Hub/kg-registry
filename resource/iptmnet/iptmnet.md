@@ -12,10 +12,148 @@ domains:
 homepage_url: https://research.bioinformatics.udel.edu/iptmnet/
 id: iptmnet
 infores_id: iptmnet
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  label: CC BY-NC-SA 4.0
 name: iPTMnet
 products:
+- category: GraphicalInterface
+  description: iPTMnet web portal for searching PTM proteins, enzymes, substrates,
+    PTM sites, PTM-dependent interactions, literature evidence, and cross-species
+    PTM conservation.
+  format: http
+  id: iptmnet.portal
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_url: https://research.bioinformatics.udel.edu/iptmnet/
+- category: GraphProduct
+  description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
+    organism, site, enzyme, relation identifiers, and publication evidence.
+  format: tsv
+  id: iptmnet.ptm
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet PTM Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 44116546
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/ptm.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: dbptm
+  - relation_type: prov:wasDerivedFrom
+    source: dbsno
+  - relation_type: prov:wasDerivedFrom
+    source: efip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: nextprot
+  - relation_type: prov:wasDerivedFrom
+    source: p3db
+  - relation_type: prov:wasDerivedFrom
+    source: phosphoelm
+  - relation_type: prov:wasDerivedFrom
+    source: phosphogrid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: phosphat
+  - relation_type: prov:wasDerivedFrom
+    source: pombase
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  - relation_type: prov:wasDerivedFrom
+    source: rlims-p
+  - relation_type: prov:wasDerivedFrom
+    source: signor
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: Current iPTMnet confidence score table for PTM site records.
+  format: tsv
+  id: iptmnet.score
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet Score Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 26110370
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/score.txt
+- category: Product
+  description: Current iPTMnet protein table with UniProt accessions, names, organism
+    labels, and reviewed/unreviewed status.
+  format: tsv
+  id: iptmnet.protein
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet Protein Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 9324847
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/protein.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: DocumentationProduct
+  description: README for the current iPTMnet downloadable PTM, score, and protein
+    tables.
+  format: txt
+  id: iptmnet.download.readme
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet Download README
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 1892
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/readme.txt
+- category: ProgrammingInterface
+  connection_url: https://research.bioinformatics.udel.edu/iptmnet/api/
+  description: RESTful API for retrieving iPTMnet PTM data, with Swagger documentation
+    and companion R/Python client packages.
+  format: json
+  id: iptmnet.api
+  is_public: true
+  name: iPTMnet REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_url: https://research.bioinformatics.udel.edu/iptmnet/api/doc/
+- category: ProgrammingInterface
+  description: R client documentation for accessing the iPTMnet REST API.
+  format: http
+  id: iptmnet.r_client
+  is_public: true
+  name: iPTMnetR
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_url: https://udel-cbcb.github.io/iPTMnetR/#/
+- category: ProgrammingInterface
+  description: Python client documentation for accessing the iPTMnet REST API.
+  format: http
+  id: iptmnet.python_client
+  is_public: true
+  name: pyiPTMnet
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_url: https://udel-cbcb.github.io/pyiPTMnet/
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
     interactions
@@ -647,7 +785,24 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
 publications:
-- id: PMID:29145615
+- authors:
+  - Hongzhan Huang
+  - Cecilia N Arighi
+  - Karen E Ross
+  - Jia Ren
+  - Gang Li
+  - Sheng-Chih Chen
+  - Qinghua Wang
+  - Julie Cowart
+  - K Vijay-Shanker
+  - Cathy H Wu
+  doi: 10.1093/nar/gkx1104
+  id: doi:10.1093/nar/gkx1104
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'iPTMnet: an integrated resource for protein post-translational modification
+    network discovery'
+  year: '2018'
 synonyms: []
 ---
 # iPTMnet
