@@ -13,17 +13,6 @@ contacts:
     value: kkiyoko@soka.ac.jp
   label: Kiyoko F. Aoki-Kinoshita
 creation_date: '2025-10-29T00:00:00Z'
-curators:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: ReneRanzinger
-  label: Rene Ranzinger
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: kkiyoko@soka.ac.jp
-  label: Kiyoko F. Aoki-Kinoshita
 description: 'GlycoRDF is a standardized ontology for representing glycomics data
   in Resource Description Framework (RDF) format. It provides a common machine-readable
   interface for glycomics databases, enabling integration and cross-referencing of
@@ -44,9 +33,9 @@ domains:
 - chemistry and biochemistry
 - biological systems
 - biomedical
-homepage_url: http://www.glycoinfo.org/GlycoRDF/
+homepage_url: https://www.glycoinfo.org/GlycoRDF/
 id: glycordf
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: 'GlycoRDF: An Ontology to Standardize Glycomics Data in RDF'
 products:
@@ -59,8 +48,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycordf
-  product_file_size: 32914
-  product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
+  product_file_size: 389060
+  product_url: https://raw.githubusercontent.com/glycoinfo/GlycoRDF/master/ontology/glycan.owl
 - category: GraphicalInterface
   description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology
   format: http
@@ -69,6 +58,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycordf
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
   product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
 - category: DocumentationProduct
   description: Comprehensive documentation of the GlycoRDF ontology classes, predicates,
@@ -80,7 +72,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: glycordf
   product_file_size: 62492
-  product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/documentation.docx
+  product_url: https://raw.githubusercontent.com/glycoinfo/GlycoRDF/master/ontology/documentation.docx
 - category: GraphicalInterface
   description: Official project homepage with overview, documentation, and links to
     database implementations
@@ -90,7 +82,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycordf
-  product_url: http://www.glycoinfo.org/GlycoRDF/
+  product_url: https://www.glycoinfo.org/GlycoRDF/
 - category: GraphicalInterface
   description: GitHub repository containing ontology files, documentation, and source
     code for RDF generation
@@ -110,7 +102,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycordf
-  product_url: https://github.com/ReneRanzinger/GlycoRDF/wiki
+  product_url: https://github.com/glycoinfo/GlycoRDF/wiki
 - category: ProcessProduct
   description: Java source code for generating GlycoRDF data from glycomics databases
   format: java
@@ -362,7 +354,8 @@ publications:
   - Hiromichi Sawaki
   - Philip Toukach
   category: Publication
-  id: https://doi.org/10.1093/bioinformatics/btu732
+  doi: 10.1093/bioinformatics/btu732
+  id: doi:10.1093/bioinformatics/btu732
   journal: Bioinformatics
   preferred: true
   title: 'GlycoRDF: an ontology to standardize glycomics data in RDF'
@@ -370,7 +363,8 @@ publications:
 - authors:
   - Kiyoko F. Aoki-Kinoshita
   category: Publication
-  id: https://doi.org/10.1186/2041-1480-4-39
+  doi: 10.1186/2041-1480-4-39
+  id: doi:10.1186/2041-1480-4-39
   journal: Journal of Biomedical Semantics
   preferred: false
   title: Introducing glycomics data into the Semantic Web
