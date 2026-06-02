@@ -9,7 +9,7 @@ contacts:
     id: gramene
     label: Gramene Project
 creation_date: '2025-12-17T00:00:00Z'
-description: Plant Reactome is a freely-accessible, open-source pathway knowledgebase for comparative pathway analysis and systems biology in plants. It provides manually curated pathways in rice with gene-orthology based projections across 129 plant species.
+description: Plant Reactome is a freely-accessible, open-source pathway knowledgebase for comparative pathway analysis and systems biology in plants. It provides manually curated pathways in rice with gene-orthology based projections across 138 additional plant species.
 domains:
   - pathways
   - systems biology
@@ -17,11 +17,10 @@ funding:
   - Gramene
 homepage_url: https://plantreactome.gramene.org/
 id: plant-reactome
-infores_id: plant-reactome
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
 name: Plant Reactome
 products:
   - category: GraphicalInterface
@@ -40,7 +39,7 @@ products:
     id: plant-reactome.api
     is_public: true
     name: Plant Reactome REST API
-    product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=217&Itemid=255
+    product_url: https://plantreactome.gramene.org/ContentService/
     original_source:
       - source: plant-reactome
         relation_type: prov:hadPrimarySource
@@ -56,43 +55,63 @@ products:
     original_source:
       - source: plant-reactome
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: reactome
+        relation_type: prov:wasInformedBy
   - category: Product
-    compression: zip
     description: SBGN format pathway diagrams and pathway descriptions for plant pathway visualization
     format: sbgnml
     id: plant-reactome.sbgn
     name: Plant Reactome SBGN Diagrams
     product_url: https://plantreactome.gramene.org/download/current/
+    warnings:
+      - The current download index did not list a standalone SBGN archive on 2026-06-02; this entry points to the current download directory.
     original_source:
       - source: plant-reactome
         relation_type: prov:hadPrimarySource
   - category: Product
+    compression: targz
     description: Scalable Vector Graphics (SVG) format pathway diagrams for interactive and high-quality pathway visualization
     format: svg
     id: plant-reactome.svg
     name: Plant Reactome SVG Diagrams
-    product_url: https://plantreactome.gramene.org/download/current/
+    product_file_size: 1739267260
+    product_url: https://plantreactome.gramene.org/download/current/diagrams.svg.tgz
     original_source:
       - source: plant-reactome
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: reactome
+        relation_type: prov:wasInformedBy
   - category: Product
+    compression: targz
     description: PNG raster image format pathway diagrams for static pathway visualization
     format: png
     id: plant-reactome.png
     name: Plant Reactome PNG Diagrams
-    product_url: https://plantreactome.gramene.org/download/current/
+    product_file_size: 557312428
+    product_url: https://plantreactome.gramene.org/download/current/diagrams.png.tgz
     original_source:
       - source: plant-reactome
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: reactome
+        relation_type: prov:wasInformedBy
   - category: MappingProduct
-    description: Identifier mapping files linking stable pathway identifiers with associated genes, reactions, and pathways across plant species
-    format: csv
+    description: Tab-delimited identifier mapping file linking pathway identifiers with associated genes across plant species
+    format: tsv
     id: plant-reactome.mappings
     name: Plant Reactome Identifier Mappings
-    product_url: https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=18&Itemid=242&lang=en
+    product_file_size: 24388295
+    product_url: https://plantreactome.gramene.org/download/current/gene_ids_by_pathway_and_species.tab
     original_source:
       - source: plant-reactome
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: ensembl
+        relation_type: prov:used
+      - source: reactome
+        relation_type: prov:wasInformedBy
 publications:
   - authors:
       - Gupta P
@@ -176,7 +195,12 @@ taxon:
   - NCBITaxon:4113
   - NCBITaxon:15368
   - NCBITaxon:88036
-last_modified_date: '2025-12-17T00:00:00Z'
+version: Version 24
+warnings:
+  - The INFORES catalog did not contain an exact Plant Reactome entry on 2026-06-02, so no infores_id is asserted.
+  - Plant Reactome pages identify the April 2025 release as Version 24, but the homepage text says Gramene r69 while the release summary heading and stats widget say Gramene 68/r68.
+  - The Plant Reactome license page states CC BY 3.0 for Plant Reactome content, while annotations and external data remain under the licenses of their source providers unless specified.
+last_modified_date: '2026-06-02T00:00:00Z'
 ---
 
 # Plant Reactome
@@ -185,23 +209,23 @@ last_modified_date: '2025-12-17T00:00:00Z'
 
 Plant Reactome is a freely-accessible, open-source pathway knowledgebase developed by the Gramene project. It provides researchers with intuitive bioinformatics tools for visualization, interpretation, and analysis of plant pathway knowledge to support basic research, genome analysis, modeling, systems biology, and education.
 
-The database uses **Oryza sativa** (rice) as the primary reference organism for manual pathway curation, with curated pathways extended via gene-orthology projection to 129 additional plant species, creating a comprehensive resource for comparative plant pathway analysis.
+The database uses **Oryza sativa** (rice) as the primary reference organism for manual pathway curation, with curated pathways extended via gene-orthology projection to 138 additional plant species, creating a comprehensive resource for comparative plant pathway analysis.
 
 ## Data Content and Scale
 
-Plant Reactome houses a comprehensive collection of pathway knowledge across 130 plant species:
+Plant Reactome houses a comprehensive collection of pathway knowledge across 139 plant species:
 
 ### Reference Pathways (Rice)
-- **339 Reference Pathways** - Manually curated for rice
-- **1,953 Reactions** - Detailed biochemical reactions
-- **2,129 Gene Products** - Proteins and gene products
-- **1,299 Small Molecules** - Metabolites and chemical entities
+- **351 Reference Pathways** - Manually curated for rice
+- **2,098 Reactions** - Detailed biochemical reactions
+- **2,233 Gene Products** - Proteins and gene products
+- **1,320 Small Molecules** - Metabolites and chemical entities
 
 ### Total Coverage Across All Species
-- **Over 34,000 Pathways** - Including orthology-based projections
-- **Over 102,000 Reactions** - Across all projected species
-- **Over 223,000 Gene Products** - Total unique proteins/genes
-- **129 Projected Species** - Beyond the primary reference
+- **Over 38,000 Pathways** - Including orthology-based projections
+- **Over 118,000 Reactions** - Across all projected species
+- **Over 263,000 Gene Products** - Total unique proteins/genes
+- **138 Projected Species** - Beyond the primary reference
 
 ### Pathway Categories
 
@@ -247,7 +271,7 @@ Plant Reactome covers diverse plant organisms spanning multiple taxonomic groups
 - **Cyanidioschyzon merolae** (2763) - Red algae
 
 ### Additional Species
-Additional species coverage extends through orthology-based projections to include relatives of the species listed above, totaling 129 species beyond the primary reference.
+Additional species coverage extends through orthology-based projections to include relatives of the species listed above, totaling 138 species beyond the primary reference.
 
 ## Data Access and Formats
 
@@ -267,9 +291,9 @@ Plant Reactome provides multiple access modes and standardized data formats for 
 
 ### Data Downloads
 - **BioPAX3** - Standard pathway exchange format
-- **SBGN** - Systems Biology Graphical Notation for visualizations
+- **SBGN** - Systems Biology Graphical Notation for visualizations; no standalone SBGN archive was listed in the current download directory during this curation pass
 - **SVG/PNG** - Pathway diagrams in vector and raster formats
-- **CSV** - Identifier mappings and analysis files
+- **TSV and text mapping files** - Identifier mappings and analysis files
 
 ### Data Integration
 - Gene identifiers linked to Gramene-Ensembl Plants
@@ -308,7 +332,7 @@ Plant Reactome serves diverse research and educational applications:
 
 ## Citation and Usage
 
-Plant Reactome data is freely available under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Users are encouraged to cite the appropriate Plant Reactome publication(s) when using data from this resource in research or educational materials.
+Plant Reactome data is freely available under the Creative Commons Attribution 3.0 Unported (CC BY 3.0) license, with external annotations and datasets remaining under their source-provider licenses unless otherwise specified. Users are encouraged to cite the appropriate Plant Reactome publication(s) when using data from this resource in research or educational materials.
 
 ## Community and Support
 
