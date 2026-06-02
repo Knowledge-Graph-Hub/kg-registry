@@ -20,15 +20,17 @@ domains:
   - microbiome
 homepage_url: https://multiomics.transltr.io/mbkp
 id: microbiomekg
-last_modified_date: '2025-08-30T00:00:00Z'
+infores_id: multiomics-microbiome
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: MicrobiomeKG
 products:
   - category: ProgrammingInterface
-    description: TRAPI web API for querying MicrobiomeKG
+    description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome knowledge graph
     format: http
     id: microbiomekg.api
-    name: MicrobiomeKG Plover API
+    is_public: true
+    name: MicrobiomeKG Plover TRAPI API
     original_source:
       - source: biolink
         relation_type: prov:hadPrimarySource
