@@ -1,61 +1,96 @@
 ---
-activity_status: active
+activity_status: inactive
 category: DataSource
 creation_date: '2025-11-19T00:00:00Z'
-description: OWLSim is a Java library and set of command-line tools for calculating semantic similarity between ontology classes and individuals. Part of the OWLTools suite, OWLSim implements various semantic similarity algorithms including Information Content-based methods for comparing phenotypes, diseases, and other ontology-based profiles. It is extensively used by the Monarch Initiative for phenotype matching, disease gene prioritization, and model organism comparison. OWLSim enables researchers to find similar disease profiles, identify candidate genes based on phenotypic similarity, and connect human diseases with model organism phenotypes using semantic similarity metrics across biological ontologies.
+description: OWLSim is ontology-based profile matching software for calculating semantic
+  similarity between ontology classes and individuals. The tool was used by the
+  Monarch Initiative and related phenotype-comparison projects, and has since
+  been replaced by Semsimian.
 domains:
   - biomedical
   - information technology
   - phenotype
   - genomics
   - systems biology
-homepage_url: https://github.com/owlcollab/owltools
+homepage_url: https://berkeleybop.org/software/owlsim/
 id: owlsim
 infores_id: owlsim
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
-license:
-  id: https://opensource.org/licenses/BSD-3-Clause
-  label: BSD-3-Clause
 name: OWLSim Ontology Based Profile Matching
 products:
   - category: ProcessProduct
-    description: Java library implementing semantic similarity algorithms for ontology-based profile matching
-    id: owlsim.library
-    name: OWLTools-Sim Library
+    description: Java source repository for OWLSim v3 ontology-based profile matching
+      and semantic similarity services
+    format: http
+    id: owlsim.v3
+    name: OWLSim v3 Source Repository
+    original_source:
+      - source: owlsim
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/monarch-initiative/owlsim-v3
+  - category: ProcessProduct
+    description: OWLTools Java library and command-line tools historically associated
+      with OWLSim workflows
+    format: http
+    id: owlsim.owltools
+    name: OWLTools Source Repository
     original_source:
       - source: owlsim
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/owlcollab/owltools
-  - category: ProcessProduct
-    description: Command-line tools for batch processing of semantic similarity calculations
-    id: owlsim.cli
-    name: OWLSim Command-Line Tools
+  - category: ProgrammingInterface
+    description: Local Dropwizard REST service documented by OWLSim v3 for ontology
+      profile matching and matcher discovery
+    format: http
+    id: owlsim.rest
+    name: OWLSim v3 REST Service
     original_source:
       - source: owlsim
         relation_type: prov:hadPrimarySource
-    product_url: https://github.com/owlcollab/owltools/releases
+    product_url: https://github.com/monarch-initiative/owlsim-v3
+    warnings:
+      - The OWLSim v3 README documents a locally run REST service; no maintained
+        public production endpoint was identified during 2026-06-02 curation.
 publications:
-  - id: PMID:18371930
-    title: Walking the interactome for prioritization of candidate disease genes
+  - id: PMID:24281164
+    title: Improved exome prioritization of disease genes through cross-species phenotype
+      comparison
     authors:
-      - "Köhler S"
-      - Bauer S
-      - Horn D
       - Robinson PN
-    journal: American Journal of Human Genetics
-    year: '2008'
-    doi: 10.1016/j.ajhg.2008.02.013
-repository: https://github.com/owlcollab/owltools
+      - Köhler S
+      - Oellrich A
+      - Wang K
+      - Mungall CJ
+      - Lewis SE
+      - Washington N
+      - Bauer S
+      - Seelow D
+      - Krawitz P
+      - Gilissen C
+      - Haendel M
+      - Smedley D
+    doi: 10.1101/gr.160325.113
+    journal: Genome Research
+    preferred: true
+    year: '2014'
+repository: https://github.com/monarch-initiative/owlsim-v3
 synonyms:
   - OWLSim
 taxon:
   - NCBITaxon:9606
+warnings:
+  - BBOP documents OWLSim as replaced by Semsimian; this entry describes the
+    legacy OWLSim resource and its historical products.
 ---
 
 # OWLSim Ontology Based Profile Matching
 
-OWLSim is a comprehensive toolkit for semantic similarity analysis using ontologies. Developed as part of the OWLTools suite, it provides sophisticated algorithms for comparing biological entities based on their ontological annotations, enabling researchers to find similar phenotypes, prioritize disease genes, and connect human diseases with model organism data.
+OWLSim is a legacy toolkit for semantic similarity analysis using ontologies. It
+provided algorithms for comparing biological entities based on their ontological
+annotations, supporting phenotype matching, candidate gene prioritization, and
+cross-species model organism comparison. BBOP now documents Semsimian as the
+replacement for OWLSim.
 
 ## Key Features
 
@@ -73,6 +108,7 @@ OWLSim is a comprehensive toolkit for semantic similarity analysis using ontolog
 - **Patient Similarity**: Finds similar patients based on clinical features
 - **Variant Interpretation**: Helps interpret genetic variants using phenotype information
 
-## Information Resource ID
+## Status
 
-This resource has the Information Resource identifier: `infores:owlsim`
+OWLSim remains registered as `infores:owlsim`, but the software is legacy and
+has been superseded by Semsimian.
