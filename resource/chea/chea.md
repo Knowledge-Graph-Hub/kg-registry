@@ -81,6 +81,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chea
   product_url: https://hub.docker.com/r/maayanlab/chea3
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: Interactive ChEA3 web interface for transcription factor enrichment
     analysis, result tables, and network visualizations
@@ -95,7 +98,6 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chea
 - category: ProgrammingInterface
-  connection_url: https://maayanlab.cloud/chea3/api/enrich/
   description: ChEA3 API endpoint for submitting gene sets and retrieving transcription
     factor enrichment results as JSON
   format: http

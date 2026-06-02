@@ -39,7 +39,8 @@ products:
     source: hpidb
   product_url: https://hpidb.igbb.msstate.edu/
   warnings:
-  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
 - category: Product
   description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB format.
   format: psi_mi_mitab
@@ -48,6 +49,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpidb
+  product_url: https://hpidb.igbb.msstate.edu/
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: intact
@@ -57,10 +59,15 @@ products:
     source: dip
   - relation_type: prov:wasDerivedFrom
     source: biogrid
-  product_url: https://hpidb.igbb.msstate.edu/
   warnings:
-  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/intact/ws
   description: IntAct web service and URL-based programmatic interface for retrieving

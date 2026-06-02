@@ -85,6 +85,7 @@ cio,active,PASS
 circbase,active,PASS
 cito,active,PASS
 civic,active,PASS
+ckg,active,PASS
 cl,active,PASS
 cl-kg,active,PASS
 clao,active,PASS
@@ -113,6 +114,7 @@ coralkinome,active,PASS
 corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
+cpdb,active,PASS
 cpic,active,PASS
 cpt,active,PASS
 cqs,active,PASS
@@ -259,6 +261,7 @@ gnbr,active,PASS
 gno,active,PASS
 go,active,PASS
 go-cam,active,PASS
+goa,active,PASS
 goldterms,active,PASS
 gp-kg,active,PASS
 greengenes,active,PASS
@@ -479,7 +482,6 @@ ornaseq,active,PASS
 orphanet,active,PASS
 orthodb,active,PASS
 ovae,active,PASS
-owlsim,active,PASS
 pankbase,active,PASS
 pankgraph,active,PASS
 panther,active,PASS
@@ -697,10 +699,8 @@ cacao,inactive,PASS
 cam-kp,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
-ckg,inactive,PASS
 cmf,inactive,PASS
 connectivitymap,inactive,PASS
-cpdb,inactive,PASS
 crd,unresponsive,PASS
 date,inactive,PASS
 dc_cl,inactive,PASS
@@ -722,7 +722,6 @@ flu,inactive,PASS
 fma,inactive,PASS
 geneprof,inactive,PASS
 ghr,inactive,PASS
-goa,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS
 homologene,inactive,PASS
@@ -757,6 +756,7 @@ ogsf,inactive,PASS
 oio,inactive,PASS
 olatdv,inactive,PASS
 omiabis,inactive,PASS
+owlsim,inactive,PASS
 oxo,inactive,PASS
 pao,inactive,PASS
 patric,inactive,PASS

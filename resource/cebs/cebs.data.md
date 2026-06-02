@@ -5,8 +5,8 @@ format: mixed
 id: cebs.data
 name: CEBS Study Data
 original_source:
-  - source: cebs
-    relation_type: prov:hadPrimarySource
-product_url: https://manticore.niehs.nih.gov/cebssearch/
+- relation_type: prov:hadPrimarySource
+  source: cebs
+product_url: https://cebs.niehs.nih.gov/cebs/
 layout: product_detail
 ---

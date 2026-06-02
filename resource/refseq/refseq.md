@@ -244,9 +244,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip
@@ -947,6 +947,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1035,9 +1039,9 @@ products:
     source: refseq
   product_url: https://omabrowser.org/All/oma-refseq.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip

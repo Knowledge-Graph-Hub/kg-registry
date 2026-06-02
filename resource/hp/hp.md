@@ -2317,6 +2317,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3821,6 +3825,217 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphicalInterface
+  description: Web-based interface for browsing and querying rare disease annotations
+    including phenotypes, symptoms, genes, and genotypes with tree-structured disease
+    organization
+  format: http
+  id: eram.web
+  name: eRAM Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: umls
+  - relation_type: prov:wasInformedBy
+    source: doid
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mp
+- category: Product
+  description: Downloadable data files containing rare disease annotations, phenotypes,
+    symptoms, genes, and genotypes
+  format: mixed
+  id: eram.downloads
+  name: eRAM Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+- category: Product
+  description: Downloadable gene set files in GMT, XML, and other formats for human
+    collections including hallmarks, curated pathways, ontologies, and computational
+    signatures; free registration is required for downloads
+  format: mixed
+  id: msigdb.downloads.human
+  name: MSigDB Human Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: Product
+  description: Downloadable gene set files for mouse collections including mouse-ortholog
+    hallmarks, curated pathways, ontologies, and cell type signatures; free registration
+    is required for downloads
+  format: mixed
+  id: msigdb.downloads.mouse
+  name: MSigDB Mouse Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: ProgrammingInterface
+  description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
+    similar entities, model metadata, and explanation endpoints
+  format: http
+  id: openpredict.api
+  name: OpenPredict API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+- category: Product
+  description: Pre-computed prediction outputs exposed through API operations for
+    predicted drugs, predicted diseases, similar entities, and evidence paths
+  format: mixed
+  id: openpredict.predictions
+  name: OpenPredict Prediction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+  warnings:
+  - Prediction results are exposed through POST/GET API operations rather than as
+    a stable public bulk data file.
+- category: Product
+  description: Orphanet scientific knowledge files for rare disease alignments, classifications,
+    genes, phenotypes, functional consequences, epidemiology, and natural history
+  format: xml
+  id: orphanet.scientific_knowledge_files
+  name: Orphanet Scientific Knowledge Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://sciences.orphadata.com/orphanet-scientific-knowledge-files/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
   title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human

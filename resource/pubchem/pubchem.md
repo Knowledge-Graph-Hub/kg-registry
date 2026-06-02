@@ -248,10 +248,12 @@ products:
     source: ttd
   product_url: https://zenodo.org/record/4077338
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -407,9 +409,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-05-31: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-01: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -1391,6 +1393,111 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: Product
+  description: Latest physical sample-level metadata including Broad sample IDs, vendor
+    catalog numbers, SMILES, InChIKey, and PubChem IDs (listed as version 2025-08-19
+    on the site).
+  format: tsv
+  id: drugrephub.sample-info.tsv
+  name: Drug Repurposing Hub Sample Information TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugrephub
+  product_file_size: 4072927
+  product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  warnings:
+  - 'File was not able to be retrieved with default certificate verification when
+    checked on 2026-06-01: SSL certificate verification failed; file responded with
+    HTTP 200 when checked without local certificate verification'
+- category: MappingProduct
+  description: Downloadable Excel and CSV files containing DSSTox identifiers mapped
+    to CAS numbers, InChIKeys, SMILES, molecular formulas, and other chemical identifiers
+    for over 1.2 million substances
+  format: mixed
+  id: dsstoxdb.downloads
+  latest_version: 10.23645/epacomptox.5588566.v8
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0
+  name: DSSTox Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  product_url: https://epa.figshare.com/articles/dataset/Chemistry_Dashboard_Data_DSSTox_Identifiers_Mapped_to_CAS_Numbers_and_Names/5588566
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: epa-srs
+  - relation_type: prov:wasInformedBy
+    source: chemid
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+- category: Product
+  description: BioThings GTRx association collection built from Genome-to-Treatment
+    source records; the 20220802 build reports 695 association records
+  format: mixed
+  id: gtrx.data
+  latest_version: '20220802'
+  name: gTRx Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  product_url: https://biothings.ncats.io/gtrx/metadata
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  warnings:
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
+    when accessing file'
+- category: ProgrammingInterface
+  description: MarkerDB API documentation and endpoint examples for condition, chemical,
+    genetic, protein, and karyotype biomarker records.
+  format: http
+  id: markerdb.api
+  name: MarkerDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/markerdb_api
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: Product
+  description: TSV export of MarkerDB chemical biomarkers with associated conditions
+    and concentration data.
+  format: tsv
+  id: markerdb.chemicals.tsv
+  name: MarkerDB Chemical Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_chemicals?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
 publications:
 - authors:
   - Kim S

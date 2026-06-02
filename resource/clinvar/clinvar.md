@@ -1401,9 +1401,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -1424,9 +1424,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: ClinVar gene associated with disease/phenotype edges
@@ -2116,6 +2116,52 @@ products:
   versions:
   - '2026_03_27'
   - geneticskp_2026-03-27_1f1ad62b_2025sep1_4.3.6
+- category: GraphicalInterface
+  description: Web interface for searching and retrieving variant information from
+    35+ million PubMed articles with autocomplete, filtering, and entity highlighting
+  format: http
+  id: litvar.web_interface
+  name: LitVar Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clingen
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:used
+    source: pubtator
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to variant summaries, publications,
+    search, and gene-level variant queries
+  format: http
+  id: litvar.api
+  name: LitVar API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2-api/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clingen
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:used
+    source: pubtator
 publications:
 - authors:
   - Landrum MJ

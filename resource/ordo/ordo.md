@@ -501,6 +501,18 @@ products:
   - relation_type: prov:hadPrimarySource
     source: umls
   product_url: https://apps.okn.us/ldf/rdkg
+- category: DocumentationProduct
+  description: Current Orphadata Science page for the Orphanet Rare Disease Ontology
+    release, including ORDO 4.8 OWL downloads and release notes
+  format: http
+  id: orphanet.ordo_release
+  name: ORDO Release Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_url: https://sciences.orphadata.com/ordo/
 taxon:
 - NCBITaxon:9606
 ---

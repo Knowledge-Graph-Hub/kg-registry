@@ -660,10 +660,12 @@ products:
   - 1.0.2
   - '1.0'
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -802,9 +804,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -1151,6 +1153,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2176,6 +2182,192 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+- category: ProgrammingInterface
+  description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
+    similar entities, model metadata, and explanation endpoints
+  format: http
+  id: openpredict.api
+  name: OpenPredict API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+- category: Product
+  description: Pre-computed prediction outputs exposed through API operations for
+    predicted drugs, predicted diseases, similar entities, and evidence paths
+  format: mixed
+  id: openpredict.predictions
+  name: OpenPredict Prediction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+  warnings:
+  - Prediction results are exposed through POST/GET API operations rather than as
+    a stable public bulk data file.
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphicalInterface
+  description: Public library of pathway diagrams that can be browsed, viewed, and
+    used as templates for creating new pathways
+  format: http
+  id: pathwhiz.pathways
+  name: PathWhiz Pathway Library
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwhiz
+  product_url: https://pathbank.org/pathwhiz/pathways
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: drugbank
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pathbank
+- category: Product
+  description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
+    symptomatic, or non-indications
+  format: tsv
+  id: pharmacotherapydb.indications
+  name: PharmacotherapyDB Indications TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_file_size: 76754
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/indications.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: doid
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:wasInformedBy
+    source: labeledin
+  - relation_type: prov:wasInformedBy
+    source: medi
+  - relation_type: prov:wasInformedBy
+    source: ehrlink
+  - relation_type: prov:wasInformedBy
+    source: predict
+- category: Product
+  description: Drug table for the PharmacotherapyDB catalog using DrugBank identifiers
+  format: tsv
+  id: pharmacotherapydb.drugs
+  name: PharmacotherapyDB Drugs TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_file_size: 6142
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/drugs.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
 publications:
 - id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

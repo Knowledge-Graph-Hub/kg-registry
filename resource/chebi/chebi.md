@@ -1008,10 +1008,12 @@ products:
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -1404,9 +1406,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-05-31: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-01: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
     out'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
@@ -2544,6 +2546,106 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphicalInterface
+  description: MediaDive web portal for browsing, searching, comparing, and building
+    microbial cultivation media recipes.
+  format: http
+  id: mediadive.portal
+  name: MediaDive Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://mediadive.dsmz.de/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: ProgrammingInterface
+  description: MediaDive REST API documentation for programmatic retrieval of media,
+    solutions, ingredients, strains, and related records.
+  format: http
+  id: mediadive.rest_api
+  name: MediaDive REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://mediadive.dsmz.de/doc/index.html
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: ProgrammingInterface
+  description: MediaDive SPARQL endpoint for querying the DSMZ Digital Diversity RDF
+    representation of MediaDive data.
+  format: http
+  id: mediadive.sparql
+  name: MediaDive SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://sparql.dsmz.de/mediadive
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - id: https://doi.org/10.1093/nar/gkaf1271
   title: 'ChEBI: re-engineered for a sustainable future'

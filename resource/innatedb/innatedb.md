@@ -1,56 +1,109 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: innatedb-mail@sfu.ca
+  label: Brinkman Laboratory, Simon Fraser University
 creation_date: '2025-10-30T00:00:00Z'
-description: InnateDB is a publicly available database of genes, proteins, experimentally-verified interactions and signaling pathways involved in the innate immune response of humans, mice and bovines to microbial infection, with over 18,780 manually curated interactions and integrated bioinformatics and visualization tools for systems-level analysis.
+description: InnateDB is a publicly available database of genes, proteins, experimentally-verified
+  interactions and signaling pathways involved in the innate immune response of humans,
+  mice and bovines to microbial infection, with over 18,780 manually curated interactions
+  and integrated bioinformatics and visualization tools for systems-level analysis.
 domains:
-  - immunology
-  - biological systems
-  - systems biology
+- immunology
+- biological systems
+- systems biology
+homepage_url: https://www.innatedb.com/
 id: innatedb
 infores_id: innatedb
-homepage_url: https://www.innatedb.com/
 last_modified_date: '2026-04-16T00:00:00Z'
+layout: resource_detail
 license:
   id: https://www.innatedb.com/
   label: Varies
-layout: resource_detail
 name: InnateDB
-synonyms:
-  - InnateDB
-contacts:
-  - category: Organization
-    label: Brinkman Laboratory, Simon Fraser University
-    contact_details:
-      - contact_type: email
-        value: innatedb-mail@sfu.ca
 products:
-  - category: GraphicalInterface
-    description: Web interface for searching and analyzing innate immunity genes, proteins, interactions, and pathways
-    format: http
-    id: innatedb.portal
-    name: InnateDB Web Portal
-    product_url: https://www.innatedb.com/
-    original_source:
-      - source: innatedb
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Downloadable data files for interactions, pathways, and annotations
-    id: innatedb.downloads
-    name: InnateDB Data Downloads
-    product_url: https://www.innatedb.com/
-    original_source:
-      - source: innatedb
-        relation_type: prov:hadPrimarySource
+- category: GraphicalInterface
+  description: Web interface for searching and analyzing innate immunity genes, proteins,
+    interactions, and pathways
+  format: http
+  id: innatedb.portal
+  name: InnateDB Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  product_url: https://www.innatedb.com/
+- category: Product
+  description: Downloadable data files for interactions, pathways, and annotations
+  id: innatedb.downloads
+  name: InnateDB Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  product_url: https://www.innatedb.com/
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
-  - id: https://doi.org/10.1093/nar/gks1147
-    title: 'InnateDB: systems biology of innate immunity and beyond - recent updates and continuing curation'
-    journal: Nucleic Acids Research
-    year: '2013'
+- id: https://doi.org/10.1093/nar/gks1147
+  journal: Nucleic Acids Research
+  title: 'InnateDB: systems biology of innate immunity and beyond - recent updates
+    and continuing curation'
+  year: '2013'
+synonyms:
+- InnateDB
 taxon:
-  - NCBITaxon:2
+- NCBITaxon:2
 ---
-
 # InnateDB
 
 ## Overview

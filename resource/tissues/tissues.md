@@ -57,11 +57,11 @@ products:
     source: tissues
   product_url: https://tissues.jensenlab.org/Downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -1156,6 +1156,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource

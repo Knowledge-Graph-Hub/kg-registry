@@ -511,6 +511,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -664,6 +668,68 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: medkg
+- category: Product
+  description: Standardized and deduplicated version of FDA FAERS data with drug names
+    mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
+    summary statistics for drug-outcome relationships.
+  id: aeolus.standardized_data
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: AEOLUS Standardized FAERS Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
+    source: aeolus
+  product_url: https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4
+- category: Product
+  compression: zip
+  description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  id: med-rt.core_dts
+  name: Core MED-RT DTS Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 2479793
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_DTS.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: snomedct
+  - relation_type: prov:wasInformedBy
+    source: umls
+- category: Product
+  compression: zip
+  description: Current MED-RT XML release archive from the NCI EVS MED-RT distribution.
+  format: xml
+  id: med-rt.core_xml
+  name: Core MED-RT XML Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 2558768
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_XML.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: snomedct
+  - relation_type: prov:wasInformedBy
+    source: umls
 repository: https://browser.ihtsdotools.org/
 taxon:
 - NCBITaxon:9606

@@ -1,11 +1,13 @@
 ---
 category: GraphicalInterface
-description: Functional Unit State Identification and Navigation with Whole Slide Imaging
+description: Functional Unit State Identification and Navigation with Whole Slide
+  Imaging
+format: http
 id: hubmap.fusion
 name: FUSION
-product_url: http://fusion.hubmapconsortium.org/
-layout: product_detail
 original_source:
-  - source: hubmap
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: hubmap
+product_url: https://fusion.hubmapconsortium.org/
+layout: product_detail
 ---

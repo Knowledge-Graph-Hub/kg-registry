@@ -990,15 +990,19 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Graph database dump and additional relationship files for the Clinical
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1749,6 +1753,22 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: Product
+  description: Gene-disease associations for psychiatric disorders; the PsyGeNET 2.0
+    homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease
+    concepts.
+  format: tsv
+  id: psygenet.genedisease
+  name: PsyGeNET Gene-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: psygenet
+  product_url: https://www.psygenet.org/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
 publications:
 - authors:
   - Janet Piñero

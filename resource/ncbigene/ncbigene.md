@@ -643,10 +643,12 @@ products:
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -742,9 +744,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: zip
@@ -1158,9 +1160,9 @@ products:
     source: ncbigene
   product_url: https://omabrowser.org/All/oma-entrez.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Browser for complete Hetionet v1.0 graph database in Neo4j
@@ -2142,6 +2144,100 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: ProgrammingInterface
+  connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+  description: E-utilities API for programmatic access to Entrez databases
+  format: json
+  id: entrez.eutils
+  name: Entrez E-utilities
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: entrez
+  product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+- category: Product
+  description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+    genome assembly in GTF format
+  format: gff
+  id: gencode.human.gtf
+  latest_version: v49
+  name: GENCODE Human Annotations GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 93374019
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly in GTF format
+  format: gff
+  id: gencode.mouse.gtf
+  latest_version: M38
+  name: GENCODE Mouse Annotations GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 37627563
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: mgi
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: Downloadable dataset of dietary restriction-related genes
+  format: csv
+  id: gendr.data
+  latest_version: Build 4
+  name: GenDR Data Download
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gendr
+  product_file_size: 8209
+  product_url: https://hagr.ageing-map.org/diet/dataset.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: BioThings GTRx association collection built from Genome-to-Treatment
+    source records; the 20220802 build reports 695 association records
+  format: mixed
+  id: gtrx.data
+  latest_version: '20220802'
+  name: gTRx Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  product_url: https://biothings.ncats.io/gtrx/metadata
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  warnings:
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
+    when accessing file'
 publications:
 - authors:
   - Donna Maglott

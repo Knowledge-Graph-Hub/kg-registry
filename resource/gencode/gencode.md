@@ -24,6 +24,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
+  product_file_size: 93374019
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
@@ -31,8 +33,6 @@ products:
     source: hgnc
   - relation_type: prov:wasInformedBy
     source: ncbigene
-  product_file_size: 93374019
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
 - category: Product
   description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
     genome assembly in GTF format
@@ -43,6 +43,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
+  product_file_size: 37627563
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
@@ -50,8 +52,6 @@ products:
     source: mgi
   - relation_type: prov:wasInformedBy
     source: ncbigene
-  product_file_size: 37627563
-  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
 - category: Product
   description: GENCODE Primary transcript set capturing minimal transcripts at protein
     coding genes
@@ -316,6 +316,46 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+- category: Product
+  description: Current HuRI TSV file containing 52,569 systematically mapped binary
+    human protein-protein interactions, provided as interacting Ensembl gene ID pairs
+  format: tsv
+  id: hrpimp.data
+  latest_version: HuRI
+  name: HuRI Protein-Protein Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+- category: Product
+  description: Current HuRI PSI-MI formatted interaction file with detailed experimental
+    information and isoform-specific ORF, transcript, and protein identifiers
+  format: psi_mi_mitab
+  id: hrpimp.huri.psi
+  latest_version: HuRI
+  name: HuRI PSI-MI Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 169848924
+  product_url: https://www.interactome-atlas.org/data/HuRI.psi
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
 publications:
 - authors:
   - Mudge JM

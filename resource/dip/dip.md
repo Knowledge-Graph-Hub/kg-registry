@@ -802,6 +802,184 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: Product
+  description: Current HIPPIE v2.4 interaction dataset in the native HIPPIE tab-delimited
+    format, last updated April 9, 2026
+  format: tsv
+  id: hippie.current.tab
+  latest_version: v2.4
+  name: HIPPIE Current TAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  product_file_size: 138719165
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/hippie_current.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+- category: Product
+  description: Current HIPPIE v2.4 interaction dataset in PSI-MI TAB 2.5 format, last
+    updated April 9, 2026
+  format: psi_mi_mitab
+  id: hippie.current.mitab
+  latest_version: v2.4
+  name: HIPPIE Current PSI-MI TAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  product_file_size: 257038149
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/HIPPIE-current.mitab.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+- category: Product
+  description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB format.
+  format: psi_mi_mitab
+  id: hpidb.mitab
+  name: HPIDB PSI-MITAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hpidb
+  product_url: https://hpidb.igbb.msstate.edu/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  warnings:
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated human protein-protein interaction download.
+  format: tsv
+  id: iid.human_annotated_ppis
+  name: IID Human Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 150992743
+  product_url: https://iid.ophid.utoronto.ca/static/download/human_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated mouse protein-protein interaction download.
+  format: tsv
+  id: iid.mouse_annotated_ppis
+  name: IID Mouse Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 40056241
+  product_url: https://iid.ophid.utoronto.ca/static/download/mouse_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - id: https://doi.org/10.1093/nar/30.1.303
   title: 'DIP, the Database of Interacting Proteins: a research tool for studying

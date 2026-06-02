@@ -1,19 +1,29 @@
 ---
 category: Product
-description: Pre-computed drug-disease predictions
+description: Pre-computed prediction outputs exposed through API operations for predicted
+  drugs, predicted diseases, similar entities, and evidence paths
 format: mixed
 id: openpredict.predictions
 name: OpenPredict Prediction Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: openpredict
-product_url: https://openpredict.semanticscience.org/
+product_url: https://openpredict.semanticscience.org/docs
+secondary_source:
+- relation_type: prov:used
+  source: drugbank
+- relation_type: prov:used
+  source: go
+- relation_type: prov:used
+  source: hp
+- relation_type: prov:used
+  source: kegg
+- relation_type: prov:used
+  source: mesh
+- relation_type: prov:used
+  source: omim
 warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ HTTP 405 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 405 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-  to URL
+- Prediction results are exposed through POST/GET API operations rather than as a
+  stable public bulk data file.
 layout: product_detail
 ---

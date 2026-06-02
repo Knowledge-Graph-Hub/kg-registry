@@ -1,12 +1,19 @@
 ---
 category: Product
-description: 'Gene-disease associations for psychiatric disorders, as described in "PsyGeNET: a knowledge platform on psychiatric disorders and their genes" (PMCID: PMC4565028). '
+description: Gene-disease associations for psychiatric disorders; the PsyGeNET 2.0
+  homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease
+  concepts.
 format: tsv
 id: psygenet.genedisease
 name: PsyGeNET Gene-Disease Associations
-product_url: http://www.psygenet.org/
-layout: product_detail
 original_source:
-  - source: psygenet
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: psygenet
+product_url: https://www.psygenet.org/
+secondary_source:
+- relation_type: prov:wasDerivedFrom
+  source: ctd
+- relation_type: prov:wasDerivedFrom
+  source: disgenet
+layout: product_detail
 ---

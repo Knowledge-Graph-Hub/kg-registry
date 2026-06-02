@@ -908,9 +908,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -937,9 +937,9 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -969,9 +969,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -1322,6 +1322,154 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: bio2rdf
+- category: GraphicalInterface
+  description: Web-based interface for browsing and querying rare disease annotations
+    including phenotypes, symptoms, genes, and genotypes with tree-structured disease
+    organization
+  format: http
+  id: eram.web
+  name: eRAM Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: umls
+  - relation_type: prov:wasInformedBy
+    source: doid
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mp
+- category: Product
+  description: Downloadable data files containing rare disease annotations, phenotypes,
+    symptoms, genes, and genotypes
+  format: mixed
+  id: eram.downloads
+  name: eRAM Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+- category: Product
+  compression: zip
+  description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  id: med-rt.core_dts
+  name: Core MED-RT DTS Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 2479793
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_DTS.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: snomedct
+  - relation_type: prov:wasInformedBy
+    source: umls
+- category: Product
+  compression: zip
+  description: Current MED-RT XML release archive from the NCI EVS MED-RT distribution.
+  format: xml
+  id: med-rt.core_xml
+  name: Core MED-RT XML Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 2558768
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_XML.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: snomedct
+  - relation_type: prov:wasInformedBy
+    source: umls
+- category: Product
+  compression: zip
+  description: Structured Product Labeling subset archive from the current MED-RT
+    distribution.
+  id: med-rt.core_spl
+  name: Core MED-RT SPL Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 40677
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_SPL.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: umls
 publications:
 - id: PMID:14681409
   preferred: true

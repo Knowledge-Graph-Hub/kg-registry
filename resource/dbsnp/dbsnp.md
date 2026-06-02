@@ -230,9 +230,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip
@@ -810,6 +810,94 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphicalInterface
+  description: Web interface for searching and retrieving variant information from
+    35+ million PubMed articles with autocomplete, filtering, and entity highlighting
+  format: http
+  id: litvar.web_interface
+  name: LitVar Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clingen
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:used
+    source: pubtator
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to variant summaries, publications,
+    search, and gene-level variant queries
+  format: http
+  id: litvar.api
+  name: LitVar API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2-api/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clingen
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:used
+    source: pubtator
+- category: ProgrammingInterface
+  description: MarkerDB API documentation and endpoint examples for condition, chemical,
+    genetic, protein, and karyotype biomarker records.
+  format: http
+  id: markerdb.api
+  name: MarkerDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/markerdb_api
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: Product
+  description: TSV export of MarkerDB genetic biomarkers with associated conditions.
+  format: tsv
+  id: markerdb.sequence_variants.tsv
+  name: MarkerDB Genetic Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_sequence_variants?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: omim
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
 publications:
 - authors:
   - Sherry ST

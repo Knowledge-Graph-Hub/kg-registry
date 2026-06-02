@@ -15,35 +15,36 @@ layout: resource_detail
 name: CoralKinome
 products:
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: coralkinome
-  - relation_type: prov:hadPrimarySource
-    source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
-    source: epsd
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: iptmnet
-  - relation_type: prov:hadPrimarySource
-    source: kegg
-  - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: coralkinome
+  - relation_type: prov:wasDerivedFrom
+    source: darkkinasekb
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
     source: kinhub
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: uniprot
-  product_url: https://kinace.kinametrix.com/
 synonyms:
 - CoralKinome
 - Coral Kinome Database

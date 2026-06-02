@@ -33,9 +33,9 @@ products:
     source: sty
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK9679/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -59,9 +59,9 @@ products:
     source: sty
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   description: sty Nodes TSV

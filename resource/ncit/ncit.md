@@ -52,10 +52,12 @@ products:
   product_file_size: 248162694
   product_url: http://purl.obolibrary.org/obo/ncit.obo
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink

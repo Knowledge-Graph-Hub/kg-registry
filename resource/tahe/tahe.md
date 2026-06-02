@@ -34,6 +34,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Embryology in OBO format
   format: obo
@@ -45,6 +47,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/tahe.obo
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 publications: []
 taxon:

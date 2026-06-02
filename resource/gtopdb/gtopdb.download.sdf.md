@@ -10,7 +10,7 @@ original_source:
   source: gtopdb
 product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
 warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-01_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
   to URL

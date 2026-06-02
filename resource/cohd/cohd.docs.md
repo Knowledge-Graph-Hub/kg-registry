@@ -1,20 +1,13 @@
 ---
 category: DocumentationProduct
-description: API documentation covering endpoint descriptions, data structure, and
-  usage examples
+description: COHD about page describing the datasets, privacy-preserving counts, OMOP
+  standard concepts, and collaborating groups
 format: http
 id: cohd.docs
 name: COHD Documentation
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cohd
-product_url: https://cohd.io/api
-warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-04-22_ HTTP 502 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 502 error when
-  accessing file
+product_url: https://cohd-api.ci.transltr.io/about.html
 layout: product_detail
 ---

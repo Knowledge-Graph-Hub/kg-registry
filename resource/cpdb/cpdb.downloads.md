@@ -1,21 +1,12 @@
 ---
 category: Product
-description: Download files containing integrated interaction and pathway data
-format: txt
+description: Download and access page for ConsensusPathDB data and service assets
+format: http
 id: cpdb.downloads
 name: ConsensusPathDB Data Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cpdb
-product_url: http://cpdb.molgen.mpg.de/CPDB/download
-warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-  to URL
+product_url: http://cpdb.molgen.mpg.de/download
 layout: product_detail
 ---

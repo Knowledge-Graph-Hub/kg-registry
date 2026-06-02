@@ -1,12 +1,18 @@
 ---
-category: Product
-description: GitHub repository containing the MEDI dataset, extraction pipelines, and processing code for drug indications and contraindications
-format: mixed
+category: ProcessProduct
+description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
+  and contraindications data and processing code
+format: http
 id: medi.github
-name: MEDI GitHub Repository
+name: medic GitHub Repository
 original_source:
-  - source: medi
-    relation_type: prov:hadPrimarySource
-product_url: https://github.com/everycure-org/matrix-indication-list
+- relation_type: prov:hadPrimarySource
+  source: medi
+product_url: https://github.com/marcello-deluca/medic
+secondary_source:
+- relation_type: prov:wasInformedBy
+  source: dailymed
+- relation_type: prov:wasInformedBy
+  source: mondo
 layout: product_detail
 ---

@@ -55,9 +55,9 @@ products:
     source: pharos
   product_url: https://opendata.ncats.nih.gov/public/pharos/
   warnings:
-  - The Pharos footer still links the historical Juniper TCRD download host, but
-    the about page points Pharos data downloads to NCATS OpenData; the registry
-    uses the NCATS OpenData URL.
+  - The Pharos footer still links the historical Juniper TCRD download host, but the
+    about page points Pharos data downloads to NCATS OpenData; the registry uses the
+    NCATS OpenData URL.
 - category: ProgrammingInterface
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
     custom queries and integrations
@@ -77,6 +77,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharos
   product_url: https://pharos.nih.gov/api-docs
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: PHAROS Automat
   format: kgx-jsonl
@@ -99,6 +102,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharos
   product_url: https://pharos.nih.gov/about
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: ProcessProduct
   description: Source repository for the Pharos web frontend maintained by NCATS
   format: http
@@ -219,7 +225,7 @@ taxon:
 - NCBITaxon:9606
 version: Pharos 3.19.10; TCRD 6.13.5
 warnings:
-- The Pharos about page states data are publicly available from primary sources
-  and asks users to respect individual source licenses; no single data license
-  is asserted for all Pharos/TCRD content.
+- The Pharos about page states data are publicly available from primary sources and
+  asks users to respect individual source licenses; no single data license is asserted
+  for all Pharos/TCRD content.
 ---

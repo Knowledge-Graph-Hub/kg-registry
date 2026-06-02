@@ -7,6 +7,6 @@ name: ATC DDD Index
 original_source:
 - relation_type: prov:hadPrimarySource
   source: atc
-product_url: https://www.whocc.no/atc_ddd_index/
+product_url: https://atcddd.fhi.no/atc_ddd_index/
 layout: product_detail
 ---

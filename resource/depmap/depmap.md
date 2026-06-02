@@ -102,6 +102,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: depmap
   product_url: https://depmap.org/portal/data_page/?tab=currentRelease
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CRISPR-Cas9 knockout screening data processed with Chronos algorithm
     to identify gene dependencies
@@ -121,6 +124,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: depmap
+  product_url: https://depmap.org/portal/data_page/
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: gdsc
@@ -128,7 +132,6 @@ products:
     source: prism
   - relation_type: prov:wasDerivedFrom
     source: ctd2
-  product_url: https://depmap.org/portal/data_page/
 - category: Product
   description: Gene expression data (RNA-seq) for DepMap cell lines
   format: csv
@@ -338,9 +341,57 @@ products:
     source: depmap
   product_url: https://depmap.org/portal/download/all/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: DepMap downloads page for PRISM Repurposing primary and secondary screen
+    data
+  format: csv
+  id: prism.datasets
+  name: PRISM Drug Sensitivity Dataset Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  product_url: https://depmap.org/portal/data_page/?tab=allData
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: depmap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing
+    screen of pooled-cell line chemical-perturbation viability measurements
+  format: csv
+  id: prism.primary_screen_lfc
+  name: PRISM Repurposing Primary Screen Log-Fold Change
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  product_url: https://ndownloader.figshare.com/files/20237709
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: depmap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Dose-response curve parameter matrix from the secondary PRISM Repurposing
+    screen of 1,448 compounds across cancer cell lines
+  format: csv
+  id: prism.secondary_screen_dose_response
+  name: PRISM Repurposing Secondary Screen Dose Response
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  product_url: https://ndownloader.figshare.com/files/20237739
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: depmap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 publications:
 - authors:

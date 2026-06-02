@@ -1,12 +1,13 @@
 ---
 category: ProgrammingInterface
-description: Public API providing programmatic access to DSSTox chemical data and computational toxicology information
+description: Public CTX API documentation for programmatic access to DSSTox chemical
+  data and computational toxicology information; individual API keys are required
 format: http
 id: dsstoxdb.api
 name: EPA CompTox API
 original_source:
-  - source: dsstoxdb
-    relation_type: prov:hadPrimarySource
-product_url: https://api-ccte.epa.gov/docs/index.html
+- relation_type: prov:hadPrimarySource
+  source: dsstoxdb
+product_url: https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis
 layout: product_detail
 ---

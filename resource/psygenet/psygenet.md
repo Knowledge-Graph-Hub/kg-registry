@@ -16,7 +16,9 @@ layout: resource_detail
 name: PsyGeNET
 products:
 - category: Product
-  description: Gene-disease associations for psychiatric disorders; the PsyGeNET 2.0 homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease concepts.
+  description: Gene-disease associations for psychiatric disorders; the PsyGeNET 2.0
+    homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease
+    concepts.
   format: tsv
   id: psygenet.genedisease
   name: PsyGeNET Gene-Disease Associations
@@ -30,7 +32,8 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: disgenet
 - category: ProcessProduct
-  description: R/Bioconductor package for querying PsyGeNET and performing comorbidity studies with PsyGeNET data
+  description: R/Bioconductor package for querying PsyGeNET and performing comorbidity
+    studies with PsyGeNET data
   format: http
   id: psygenet.psygenet2r
   license:
@@ -42,6 +45,9 @@ products:
     source: psygenet
   product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
   repository: https://git.bioconductor.org/packages/psygenet2r
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -79,7 +85,7 @@ products:
   product_url: https://www.disgenet.com/
 publications:
 - authors:
-  - "Bravo \xC0"
+  - Bravo À
   - Pinero J
   - Queralt-Rosinach N
   - Rautschka M
@@ -98,14 +104,17 @@ publications:
   doi: 10.1093/bioinformatics/btx506
   id: doi:10.1093/bioinformatics/btx506
   journal: Bioinformatics
-  title: 'psygenet2r: a R/Bioconductor package for the analysis of psychiatric disease genes'
+  title: 'psygenet2r: a R/Bioconductor package for the analysis of psychiatric disease
+    genes'
   year: '2017'
 taxon:
 - NCBITaxon:9606
 version: '2.0'
 warnings:
-- The PsyGeNET homepage responded on 2026-06-02 but identifies itself as an incomplete Wayback Machine Downloader copy, so direct website functionality may be unavailable.
-- Several PsyGeNET subpages checked on 2026-06-02 either returned 404 or redirected to unrelated content; use the site and downloads with caution.
+- The PsyGeNET homepage responded on 2026-06-02 but identifies itself as an incomplete
+  Wayback Machine Downloader copy, so direct website functionality may be unavailable.
+- Several PsyGeNET subpages checked on 2026-06-02 either returned 404 or redirected
+  to unrelated content; use the site and downloads with caution.
 ---
 # PsyGeNET
 

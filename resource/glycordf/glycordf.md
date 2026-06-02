@@ -58,10 +58,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycordf
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: bioportal
-  product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
 - category: DocumentationProduct
   description: Comprehensive documentation of the GlycoRDF ontology classes, predicates,
     and usage examples
@@ -341,6 +341,66 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- category: OntologyProduct
+  description: The GlycoCoO OWL ontology file defining classes and predicates for
+    glycoconjugate structures and their metadata
+  format: owl
+  id: glycocoo.ontology
+  name: GlycoCoO OWL Ontology
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_file_size: 29233
+  product_url: https://raw.githubusercontent.com/glycoinfo/GlycoCoO/master/ontology/glycocoo.owl
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: glycordf
+- category: DocumentationProduct
+  description: GitHub Wiki with developer information, database providers, and prefix
+    documentation
+  format: http
+  id: glycocoo.wiki
+  name: GlycoCoO Wiki Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_url: https://github.com/glycoinfo/GlycoCoO/wiki
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: glycordf
+- category: Product
+  description: Sample RDF data files demonstrating GlycoCoO usage with examples from
+    UniCarbKB, GlyConnect, and GlycoNAVI
+  format: http
+  id: glycocoo.rdf-samples
+  name: GlycoCoO RDF Sample Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: glycordf
+  - relation_type: prov:wasInformedBy
+    source: unicarbkb
+  - relation_type: prov:wasInformedBy
+    source: glyconnect
+  - relation_type: prov:wasInformedBy
+    source: glyconavi
+- category: Product
+  description: Example SPARQL queries for querying glycoconjugate data across federated
+    endpoints
+  format: http
+  id: glycocoo.sparql-examples
+  name: GlycoCoO SPARQL Query Examples
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_file_size: 2467
+  product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: glycordf
 publications:
 - authors:
   - Rene Ranzinger

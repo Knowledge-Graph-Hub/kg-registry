@@ -65,9 +65,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -90,9 +90,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -128,9 +128,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -142,9 +142,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -211,14 +211,19 @@ products:
     source: go
   - relation_type: prov:hadPrimarySource
     source: goa
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: rnacentral
+  - relation_type: prov:wasInformedBy
+    source: complexportal
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
   id: goa.uniprot
+  latest_version: '232'
   name: UniProt GOA Annotations
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -227,10 +232,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
 - category: Product
   description: GO annotations for human proteins
   format: txt
@@ -243,10 +245,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
 - category: Product
   description: GO annotations for mouse proteins
   format: txt
@@ -259,10 +258,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
@@ -279,10 +275,7 @@ products:
     source: interpro
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
 - category: Product
   description: GO annotations for PDB entries
   format: txt
@@ -295,10 +288,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: pdbe
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
 - category: Product
   description: GO annotations organized by proteomes
   format: txt
@@ -309,10 +299,7 @@ products:
     source: go
   - relation_type: prov:hadPrimarySource
     source: goa
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
 - category: GraphProduct
   compression: gzip
   description: Pathway-like GO-CAM causal activity models distributed as RDF Turtle.
@@ -3026,10 +3013,12 @@ products:
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -3307,6 +3296,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3811,28 +3804,22 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
-- category: GraphProduct
-  description: ProteomeHD data files
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+- category: Product
+  compression: 7z
+  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
+    measured across 294 SILAC ratios
+  format: csv
   id: proteomehd.data
   name: ProteomeHD Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+  product_file_size: 9427082
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/ProteomeHD_v1_1.7z
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
   format: tsv
@@ -4161,9 +4148,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: MappingProduct
   compression: gzip
@@ -4178,9 +4165,9 @@ products:
     source: go
   product_url: https://omabrowser.org/All/oma-go.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -5207,6 +5194,248 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: Product
+  description: Bulk download of DisProt data in multiple formats including JSON, TSV,
+    FASTA, and GAF
+  format: json
+  id: disprot.downloads
+  name: DisProt Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disprot
+  product_url: https://www.disprot.org/download
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: interpro
+  - relation_type: prov:wasInformedBy
+    source: go
+  - relation_type: prov:wasInformedBy
+    source: eco
+- category: OntologyProduct
+  description: IDP Ontology (IDPO) for representing functional aspects of intrinsically
+    disordered proteins
+  format: owl
+  id: disprot.idpo
+  name: IDP Ontology (IDPO)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disprot
+  product_file_size: 50945
+  product_url: https://www.disprot.org/assets/data/IDPO_v0.3.0.owl
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: go
+  - relation_type: prov:wasInformedBy
+    source: eco
+- category: GraphProduct
+  compression: gzip
+  description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
+    with Entrez Gene identifiers.
+  edge_count: 1125494
+  format: tsv
+  id: humannet.network
+  latest_version: v3
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: HumanNet Network File
+  node_count: 18462
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_file_size: 12310221
+  product_url: https://www.inetbio.org/humannetv3/networks/HumanNet-XC.tsv.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: metacyc
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+- category: GraphProduct
+  compression: gzip
+  description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
+    with gene symbols.
+  edge_count: 1125494
+  format: tsv
+  id: humannet.network.symbol
+  latest_version: v3
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: HumanNet Network File (Gene Symbols)
+  node_count: 18462
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_file_size: 13925784
+  product_url: https://www.inetbio.org/humannetv3/networks/HumanNet-XC.symbol.tsv.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: metacyc
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+- category: Product
+  description: Downloadable gene set files in GMT, XML, and other formats for human
+    collections including hallmarks, curated pathways, ontologies, and computational
+    signatures; free registration is required for downloads
+  format: mixed
+  id: msigdb.downloads.human
+  name: MSigDB Human Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: Product
+  description: Downloadable gene set files for mouse collections including mouse-ortholog
+    hallmarks, curated pathways, ontologies, and cell type signatures; free registration
+    is required for downloads
+  format: mixed
+  id: msigdb.downloads.mouse
+  name: MSigDB Mouse Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: ProgrammingInterface
+  description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
+    similar entities, model metadata, and explanation endpoints
+  format: http
+  id: openpredict.api
+  name: OpenPredict API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+- category: Product
+  description: Pre-computed prediction outputs exposed through API operations for
+    predicted drugs, predicted diseases, similar entities, and evidence paths
+  format: mixed
+  id: openpredict.predictions
+  name: OpenPredict Prediction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+  warnings:
+  - Prediction results are exposed through POST/GET API operations rather than as
+    a stable public bulk data file.
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'

@@ -70,10 +70,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: opengwas
+  product_url: https://opengwas.io/
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: mrbase
-  product_url: https://opengwas.io/
 - category: ProgrammingInterface
   description: REST API for programmatic access to IEU OpenGWAS study information,
     top hits, association records, LD proxies, and related MR-Base analysis inputs
@@ -84,10 +84,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: opengwas
+  product_url: https://api.opengwas.io/api/
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: mrbase
-  product_url: https://api.opengwas.io/api/
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to harmonized GWAS summary
     statistics, LD proxy lookup, instruments, and MR result generation
@@ -99,8 +99,8 @@ products:
     source: mrbase
   product_url: http://api.mrbase.org/
   warnings:
-  - The legacy MR-Base API returned HTTP 503 when checked on 2026-06-02; current
-    OpenGWAS API access is represented by opengwas.api.
+  - The legacy MR-Base API returned HTTP 503 when checked on 2026-06-02; current OpenGWAS
+    API access is represented by opengwas.api.
 - category: ProgrammingInterface
   description: TwoSampleMR R package supporting data extraction, harmonization, instrument
     selection, MR analysis methods, diagnostics, and reproducible code generation
@@ -110,10 +110,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
+  product_url: https://github.com/MRCIEU/TwoSampleMR
   secondary_source:
   - relation_type: prov:used
     source: opengwas
-  product_url: https://github.com/MRCIEU/TwoSampleMR
 - category: ProgrammingInterface
   description: MRInstruments R package containing curated instruments (top hits) across
     multiple GWAS and QTL sources for instrument selection
@@ -133,10 +133,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
+  product_url: https://mrcieu.github.io/TwoSampleMR/
   secondary_source:
   - relation_type: prov:used
     source: opengwas
-  product_url: https://mrcieu.github.io/TwoSampleMR/
 - category: DocumentationProduct
   description: Methods paper analysis reproduction code repository for MR-Base platform
     publication
@@ -189,6 +189,57 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://docs.epigraphdb.org/graph-database/
+- category: Product
+  description: Dryad archive for PRS Atlas results, including PRS association results
+    at P less than 5e-05 and P less than 5e-08 thresholds
+  format: http
+  id: prsatlas.dryad
+  name: PRS Atlas Dryad Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  product_url: https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mrbase
+  - relation_type: prov:wasDerivedFrom
+    source: ukbiobank
+- category: Product
+  description: PRS Atlas results using the P less than 5e-05 polygenic risk score
+    threshold, archived by Dryad
+  format: txt
+  id: prsatlas.results_5e05
+  name: PRS Atlas Results P less than 5e-05
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  product_url: https://datadryad.org/downloads/file_stream/83029
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mrbase
+  - relation_type: prov:wasDerivedFrom
+    source: ukbiobank
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: PRS Atlas results using the P less than 5e-08 polygenic risk score
+    threshold, archived by Dryad
+  format: txt
+  id: prsatlas.results_5e08
+  name: PRS Atlas Results P less than 5e-08
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  product_url: https://datadryad.org/downloads/file_stream/83030
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mrbase
+  - relation_type: prov:wasDerivedFrom
+    source: ukbiobank
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
   - Gibran Hemani

@@ -5,8 +5,10 @@ format: http
 id: hrpimp.web
 name: Interactome Atlas Web Portal
 original_source:
-  - source: hrpimp
-    relation_type: prov:hadPrimarySource
-product_url: http://www.interactome-atlas.org/
+- relation_type: prov:hadPrimarySource
+  source: hrpimp
+- relation_type: prov:hadPrimarySource
+  source: huri
+product_url: https://www.interactome-atlas.org/
 layout: product_detail
 ---

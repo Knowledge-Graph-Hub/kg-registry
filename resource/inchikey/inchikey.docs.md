@@ -8,11 +8,9 @@ name: InChI/InChIKey Documentation
 original_source:
 - relation_type: prov:hadPrimarySource
   source: inchikey
-product_url: https://www.inchi-trust.org/
+product_url: https://www.inchi-trust.org/downloads/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
+- InChI Trust pages returned HTTP 403 / Cloudflare challenge responses when checked
+  on 2026-06-02.
 layout: product_detail
 ---

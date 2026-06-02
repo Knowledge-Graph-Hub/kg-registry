@@ -173,6 +173,57 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+- category: Product
+  description: Current HuRI TSV file containing 52,569 systematically mapped binary
+    human protein-protein interactions, provided as interacting Ensembl gene ID pairs
+  format: tsv
+  id: hrpimp.data
+  latest_version: HuRI
+  name: HuRI Protein-Protein Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+- category: Product
+  description: Current HuRI PSI-MI formatted interaction file with detailed experimental
+    information and isoform-specific ORF, transcript, and protein identifiers
+  format: psi_mi_mitab
+  id: hrpimp.huri.psi
+  latest_version: HuRI
+  name: HuRI PSI-MI Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 169848924
+  product_url: https://www.interactome-atlas.org/data/HuRI.psi
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+- category: GraphicalInterface
+  description: Web interface for browsing and exploring the Human Reference Interactome
+  format: http
+  id: hrpimp.web
+  name: Interactome Atlas Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_url: https://www.interactome-atlas.org/
 publications:
 - authors:
   - Katja Luck

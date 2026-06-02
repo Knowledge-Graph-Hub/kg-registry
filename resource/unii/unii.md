@@ -49,9 +49,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -66,9 +66,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: Legacy UNII identifiers for historical substances
@@ -82,9 +82,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -127,6 +127,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+- category: Product
+  description: Downloadable SPL files for all drug labels in the DailyMed database,
+    updated daily
+  format: xml
+  id: dailymed.spl_files
+  name: DailyMed SPL Data Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  product_url: https://dailymed.nlm.nih.gov/dailymed/spl-resources-all-drug-labels.cfm
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: unii
+  - relation_type: prov:wasInformedBy
+    source: ndcd
 publications:
 - id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
   title: 'FDA Grand Rounds: FDA''s Global Substance Registration System (GSRS) Unique

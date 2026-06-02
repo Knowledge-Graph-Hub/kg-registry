@@ -1,11 +1,13 @@
 ---
 category: Product
-description: Latest release of the MEDI dataset containing curated drug-indication and drug-contraindication mappings
+description: Latest medic release of the MeDI dataset and related regulatory source
+  extracts
+format: http
 id: medi.release
 name: MEDI Dataset Releases
-product_url: https://github.com/everycure-org/matrix-indication-list/releases
-layout: product_detail
 original_source:
-  - source: medi
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: medi
+product_url: https://github.com/marcello-deluca/medic/releases/tag/v1.0.1
+layout: product_detail
 ---

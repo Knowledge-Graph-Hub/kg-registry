@@ -40,6 +40,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
   secondary_source:
   - relation_type: prov:used
     source: biolink
@@ -55,7 +56,6 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  product_url: https://openpredict.semanticscience.org/docs
 - category: GraphicalInterface
   description: Swagger UI documentation for interactively exploring OpenPredict API
     operations and examples
@@ -75,6 +75,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: openpredict
+  product_file_size: 61944
   product_url: https://openpredict.semanticscience.org/openapi.json
 - category: Product
   description: Pre-computed prediction outputs exposed through API operations for
@@ -85,6 +86,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
   secondary_source:
   - relation_type: prov:used
     source: drugbank
@@ -98,7 +100,6 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  product_url: https://openpredict.semanticscience.org/docs
   warnings:
   - Prediction results are exposed through POST/GET API operations rather than as
     a stable public bulk data file.

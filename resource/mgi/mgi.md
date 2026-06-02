@@ -90,6 +90,119 @@ products:
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
     source: kg-jensenlab-diseases
+- category: Product
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly in GTF format
+  format: gff
+  id: gencode.mouse.gtf
+  latest_version: M38
+  name: GENCODE Mouse Annotations GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 37627563
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: mgi
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+- category: GraphicalInterface
+  description: Web-based interface for searching, querying, and analyzing mouse data
+    from MGI through MouseMine
+  format: http
+  id: mousemine.web
+  name: MouseMine Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mousemine
+  product_url: https://www.mousemine.org/mousemine/begin.do
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasInfluencedBy
+    source: intermine
+- category: ProgrammingInterface
+  description: Programmatic access to MouseMine data via RESTful web services with
+    client libraries for Perl, Python, Ruby, and Java
+  format: http
+  id: mousemine.api
+  is_public: true
+  name: MouseMine API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mousemine
+  product_url: https://www.mousemine.org/mousemine/api.do
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasInfluencedBy
+    source: intermine
+- category: GraphicalInterface
+  description: Pre-built query templates for common data retrieval tasks covering
+    genome features, proteins, expression, interactions, phenotypes, diseases, and
+    more
+  format: http
+  id: mousemine.templates
+  name: MouseMine Query Templates
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mousemine
+  product_url: https://www.mousemine.org/mousemine/templates.do
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasInfluencedBy
+    source: intermine
+- category: GraphicalInterface
+  description: Custom query construction tool for building complex, iterative queries
+    across multiple data types
+  format: http
+  id: mousemine.querybuilder
+  name: MouseMine QueryBuilder
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mousemine
+  product_url: https://www.mousemine.org/mousemine/customQuery.do
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasInfluencedBy
+    source: intermine
 ---
 # Mouse Genome Informatics
 

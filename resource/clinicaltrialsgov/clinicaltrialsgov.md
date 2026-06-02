@@ -270,9 +270,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -288,9 +288,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: Cloud-based PostgreSQL database with daily refreshed clinical trial
@@ -520,6 +520,46 @@ products:
   versions:
   - '2026_03_27'
   - ctkp_3.1.37_a99268cc_2025sep1_4.3.6
+- category: Product
+  compression: zip
+  description: Pipe-delimited text exports of the AACT database for import into databases
+    or analysis tools
+  format: csv
+  id: aact.pipe_delimited
+  name: AACT Pipe-Delimited Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: aact
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/downloads
+- category: Product
+  description: Alzheimer's disease case study drug repurposing predictions
+  format: csv
+  id: kg-predict.ad_predictions
+  name: AD Drug Predictions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 44034
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/case_study_predict_results.csv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clinicaltrialsgov
+- category: Product
+  description: Alzheimer's disease National Clinical Trial evidence file used with
+    the KG-Predict case study
+  format: csv
+  id: kg-predict.ad_nct_evidence
+  name: AD National Clinical Trial Evidence
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 1789
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/ad_nct_evidence.csv
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: clinicaltrialsgov
 publications:
 - authors:
   - Zarin DA

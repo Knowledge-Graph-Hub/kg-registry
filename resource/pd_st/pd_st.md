@@ -37,6 +37,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Platynereis stage ontology in OBO format
   format: obo
@@ -49,6 +51,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 publications: []
 taxon:
 - NCBITaxon:6358

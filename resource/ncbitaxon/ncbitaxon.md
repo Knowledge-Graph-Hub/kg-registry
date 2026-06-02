@@ -57,9 +57,9 @@ products:
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: OntologyProduct
   description: taxslim
@@ -410,10 +410,12 @@ products:
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -915,6 +917,74 @@ products:
     source: obi
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
+- category: ProgrammingInterface
+  connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+  description: E-utilities API for programmatic access to Entrez databases
+  format: json
+  id: entrez.eutils
+  name: Entrez E-utilities
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: entrez
+  product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+- category: GraphicalInterface
+  description: MediaDive web portal for browsing, searching, comparing, and building
+    microbial cultivation media recipes.
+  format: http
+  id: mediadive.portal
+  name: MediaDive Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://mediadive.dsmz.de/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: ProgrammingInterface
+  description: MediaDive REST API documentation for programmatic retrieval of media,
+    solutions, ingredients, strains, and related records.
+  format: http
+  id: mediadive.rest_api
+  name: MediaDive REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://mediadive.dsmz.de/doc/index.html
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: ProgrammingInterface
+  description: MediaDive SPARQL endpoint for querying the DSMZ Digital Diversity RDF
+    representation of MediaDive data.
+  format: http
+  id: mediadive.sparql
+  name: MediaDive SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://sparql.dsmz.de/mediadive
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
 publications: []
 repository: https://github.com/obophenotype/ncbitaxon
 ---

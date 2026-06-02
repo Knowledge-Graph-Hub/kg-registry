@@ -17,6 +17,5 @@ original_source:
   source: try
 product_url: https://doi.org/10.5281/zenodo.17079767
 repository: https://github.com/earth-metabolome-initiative/metrin-kg
-warnings: []
 layout: product_detail
 ---

@@ -1,12 +1,13 @@
 ---
 category: GraphicalInterface
-description: Web interface for exploring drug repurposing predictions
+description: Swagger UI documentation for interactively exploring OpenPredict API
+  operations and examples
 format: http
 id: openpredict.ui
-name: OpenPredict Web Interface
+name: OpenPredict Swagger UI
 original_source:
-  - source: openpredict
-    relation_type: prov:hadPrimarySource
-product_url: https://openpredict.semanticscience.org/
+- relation_type: prov:hadPrimarySource
+  source: openpredict
+product_url: https://openpredict.semanticscience.org/docs
 layout: product_detail
 ---

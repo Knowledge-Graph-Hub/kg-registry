@@ -48,9 +48,9 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
@@ -490,6 +490,89 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
+- category: GraphicalInterface
+  description: Web-based interface for browsing and querying rare disease annotations
+    including phenotypes, symptoms, genes, and genotypes with tree-structured disease
+    organization
+  format: http
+  id: eram.web
+  name: eRAM Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: umls
+  - relation_type: prov:wasInformedBy
+    source: doid
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mp
+- category: Product
+  description: Downloadable data files containing rare disease annotations, phenotypes,
+    symptoms, genes, and genotypes
+  format: mixed
+  id: eram.downloads
+  name: eRAM Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/40963406
   title: Expanding and refining the Mammalian Phenotype Ontology to enhance disease

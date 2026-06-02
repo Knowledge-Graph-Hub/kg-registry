@@ -153,9 +153,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -583,10 +583,12 @@ products:
   product_file_size: 974440
   product_url: https://www.omim.org/static/omim/data/mim2gene.txt
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -1123,40 +1125,41 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: coralkinome
-  - relation_type: prov:hadPrimarySource
-    source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
-    source: epsd
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: iptmnet
-  - relation_type: prov:hadPrimarySource
-    source: kegg
-  - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: coralkinome
+  - relation_type: prov:wasDerivedFrom
+    source: darkkinasekb
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
     source: kinhub
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: uniprot
-  product_url: https://kinace.kinametrix.com/
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -1952,6 +1955,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2660,6 +2667,70 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: Product
+  description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+    genome assembly in GTF format
+  format: gff
+  id: gencode.human.gtf
+  latest_version: v49
+  name: GENCODE Human Annotations GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 93374019
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: Downloadable data files including anatomical structures, cell types,
+    and biomarkers
+  format: mixed
+  id: hra.data
+  latest_version: v2.4
+  name: HRA Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  product_url: https://humanatlas.io/overview-data
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:used
+    source: cl
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: fma
+  - relation_type: prov:used
+    source: hgnc
+  - relation_type: prov:used
+    source: uniprot
+- category: Product
+  description: Current HuRI TSV file containing 52,569 systematically mapped binary
+    human protein-protein interactions, provided as interacting Ensembl gene ID pairs
+  format: tsv
+  id: hrpimp.data
+  latest_version: HuRI
+  name: HuRI Protein-Protein Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
 repository: https://github.com/HGNC
 taxon:
 - NCBITaxon:9606

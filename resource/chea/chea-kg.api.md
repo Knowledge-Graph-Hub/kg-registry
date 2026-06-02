@@ -1,5 +1,6 @@
 ---
 category: ProgrammingInterface
+connection_url: https://maayanlab.cloud/chea3/api/enrich/
 description: ChEA3 API endpoint for submitting gene sets and retrieving transcription
   factor enrichment results as JSON
 format: http

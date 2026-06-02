@@ -3,16 +3,16 @@ category: Product
 description: Target Central Resource Database (TCRD) downloadable database files containing
   comprehensive protein target information including druggability classifications,
   expression data, disease associations, and chemical probe information
+format: http
 id: pharos.tcrd.download
 name: TCRD Database Downloads
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pharos
-product_url: http://juniper.health.unm.edu/tcrd/download/
+product_url: https://opendata.ncats.nih.gov/public/pharos/
 warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-  to URL
+- The Pharos footer still links the historical Juniper TCRD download host, but the
+  about page points Pharos data downloads to NCATS OpenData; the registry uses the
+  NCATS OpenData URL.
 layout: product_detail
 ---

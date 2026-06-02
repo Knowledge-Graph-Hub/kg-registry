@@ -2,89 +2,108 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: glyconnect@sib.swiss
-      - contact_type: url
-        value: https://glyconnect.expasy.org/
-    id: sib
-    label: GlyConnect Team - SIB Swiss Institute of Bioinformatics
-description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite and glycan information, with data on various species, tissues, and disease associations.
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: glyconnect@sib.swiss
+  - contact_type: url
+    value: https://glyconnect.expasy.org/
+  id: sib
+  label: GlyConnect Team - SIB Swiss Institute of Bioinformatics
+creation_date: '2025-05-07T00:00:00Z'
+description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite
+  and glycan information, with data on various species, tissues, and disease associations.
 domains:
-  - biological systems
-  - chemistry and biochemistry
+- biological systems
+- chemistry and biochemistry
 homepage_url: https://glyconnect.expasy.org/
 id: glyconnect
+last_modified_date: '2025-12-07T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: GlyConnect
 products:
-  - category: GraphicalInterface
-    description: Web interface for exploring GlyConnect data
-    id: glyconnect.site
-    is_public: true
-    name: GlyConnect Web Interface
-    original_source:
-      - source: glyconnect
-        relation_type: prov:hadPrimarySource
-    product_url: https://glyconnect.expasy.org/
-  - category: ProgrammingInterface
-    description: RESTful API for accessing GlyConnect data
-    id: glyconnect.api.rest
-    is_public: true
-    name: GlyConnect RESTful API
-    original_source:
-      - source: glyconnect
-        relation_type: prov:hadPrimarySource
-    product_url: https://glyconnect.expasy.org/api
-  - category: ProgrammingInterface
-    description: SPARQL endpoint for querying GlyConnect RDF data
-    id: glyconnect.api.sparql
-    is_public: true
-    name: GlyConnect SPARQL Endpoint
-    original_source:
-      - source: glyconnect
-        relation_type: prov:hadPrimarySource
-    product_url: https://glyconnect.expasy.org/rdf
-  - category: Product
-    description: Compositions dataset containing glycan compositions
-    format: csv
-    id: glyconnect.compositions
-    name: GlyConnect Glycan Compositions
-    original_source:
-      - source: glyconnect
-        relation_type: prov:hadPrimarySource
-    product_url: https://glyconnect.expasy.org/downloads/compositions/
-  - category: Product
-    description: Immunoglobulins dataset containing glycans commonly found on immunoglobulins
-    format: csv
-    id: glyconnect.immunoglobulins
-    name: GlyConnect Immunoglobulins Dataset
-    original_source:
-      - source: glyconnect
-        relation_type: prov:hadPrimarySource
-    product_url: https://glyconnect.expasy.org/downloads/Immunoglobulins/
+- category: GraphicalInterface
+  description: Web interface for exploring GlyConnect data
+  id: glyconnect.site
+  is_public: true
+  name: GlyConnect Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  product_url: https://glyconnect.expasy.org/
+- category: ProgrammingInterface
+  description: RESTful API for accessing GlyConnect data
+  id: glyconnect.api.rest
+  is_public: true
+  name: GlyConnect RESTful API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  product_url: https://glyconnect.expasy.org/api
+- category: ProgrammingInterface
+  description: SPARQL endpoint for querying GlyConnect RDF data
+  id: glyconnect.api.sparql
+  is_public: true
+  name: GlyConnect SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  product_url: https://glyconnect.expasy.org/rdf
+- category: Product
+  description: Compositions dataset containing glycan compositions
+  format: csv
+  id: glyconnect.compositions
+  name: GlyConnect Glycan Compositions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  product_url: https://glyconnect.expasy.org/downloads/compositions/
+- category: Product
+  description: Immunoglobulins dataset containing glycans commonly found on immunoglobulins
+  format: csv
+  id: glyconnect.immunoglobulins
+  name: GlyConnect Immunoglobulins Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  product_url: https://glyconnect.expasy.org/downloads/Immunoglobulins/
+- category: Product
+  description: Sample RDF data files demonstrating GlycoCoO usage with examples from
+    UniCarbKB, GlyConnect, and GlycoNAVI
+  format: http
+  id: glycocoo.rdf-samples
+  name: GlycoCoO RDF Sample Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: glycordf
+  - relation_type: prov:wasInformedBy
+    source: unicarbkb
+  - relation_type: prov:wasInformedBy
+    source: glyconnect
+  - relation_type: prov:wasInformedBy
+    source: glyconavi
 publications:
-  - authors:
-      - Alocci D
-      - Mariethoz J
-      - Gastaldello A
-      - Gasteiger E
-      - Karlsson NG
-      - Kolarich D
-      - Packer NH
-      - Lisacek F
-    doi: doi:10.1021/acs.jproteome.8b00766
-    id: doi:10.1021/acs.jproteome.8b00766
-    title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
-    year: '2019'
-creation_date: '2025-05-07T00:00:00Z'
-last_modified_date: '2025-12-07T00:00:00Z'
+- authors:
+  - Alocci D
+  - Mariethoz J
+  - Gastaldello A
+  - Gasteiger E
+  - Karlsson NG
+  - Kolarich D
+  - Packer NH
+  - Lisacek F
+  doi: doi:10.1021/acs.jproteome.8b00766
+  id: doi:10.1021/acs.jproteome.8b00766
+  title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
+  year: '2019'
 ---
-
 GlyConnect is a comprehensive knowledgebase of glycoproteomics data maintained by the SIB Swiss Institute of Bioinformatics. It integrates information spanning three key levels of glycobiology: proteins, glycosites (the specific locations where glycans attach to proteins), and glycan structures.
 
 The database provides curated glycoproteomic data from various species, tissues, and disease states, with a particular focus on human glycoproteins. GlyConnect uses the Symbol Nomenclature for Glycans (SNFG) standard for representing glycan structures in a visually consistent way.

@@ -63,6 +63,7 @@ products:
     source: go
   - relation_type: prov:hadPrimarySource
     source: goa
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: uniprot
@@ -70,7 +71,6 @@ products:
     source: rnacentral
   - relation_type: prov:wasInformedBy
     source: complexportal
-  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
@@ -198,24 +198,18 @@ products:
   versions:
   - '2026_03_06'
   - goa_2026-01-23_5fdd3125_2025sep1_4.3.6
-- category: GraphProduct
-  description: ProteomeHD data files
+- category: Product
+  compression: 7z
+  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
+    measured across 294 SILAC ratios
+  format: csv
   id: proteomehd.data
   name: ProteomeHD Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+  product_file_size: 9427082
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/ProteomeHD_v1_1.7z
 - category: GraphProduct
   compatibility:
   - standard: biolink

@@ -29,6 +29,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Event (INOH pathway ontology) in OBO format
   format: obo
@@ -40,6 +42,8 @@ products:
   product_url: http://purl.obolibrary.org/obo/iev.obo
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 publications: []
 ---

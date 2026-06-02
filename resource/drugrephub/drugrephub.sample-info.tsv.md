@@ -11,16 +11,12 @@ original_source:
   source: drugrephub
 product_file_size: 4072927
 product_url: https://repo-hub.broadinstitute.org/public/data/repo-sample-annotation-20240610.txt
+secondary_source:
+- relation_type: prov:wasInformedBy
+  source: pubchem
 warnings:
-- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
-  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
-  exceeded with url_ /public/data/repo-sample-annotation-20240610.txt (Caused by SSLError(SSLCertVerificationError(1,
-  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-  issuer certificate (_ssl.c_1028)')))
-- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
-  URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max retries
-  exceeded with url_ /public/data/repo-sample-annotation-20240610.txt (Caused by SSLError(SSLCertVerificationError(1,
-  '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-  issuer certificate (_ssl.c_1000)')))
+- File was not able to be retrieved with default certificate verification when checked
+  on 2026-06-01_ SSL certificate verification failed; file responded with HTTP 200
+  when checked without local certificate verification
 layout: product_detail
 ---

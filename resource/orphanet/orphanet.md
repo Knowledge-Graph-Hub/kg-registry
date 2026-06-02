@@ -36,8 +36,8 @@ products:
     source: orphanet
   product_url: https://www.orpha.net/
 - category: GraphicalInterface
-  description: Orphadata Science portal for Orphanet scientific knowledge files,
-    ORDO, HOOM, and Orphapackets downloads
+  description: Orphadata Science portal for Orphanet scientific knowledge files, ORDO,
+    HOOM, and Orphapackets downloads
   format: http
   id: orphanet.orphadata_science
   name: Orphadata Science Portal
@@ -54,6 +54,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: orphanet
+  product_url: https://sciences.orphadata.com/orphanet-scientific-knowledge-files/
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: hp
@@ -63,7 +64,6 @@ products:
     source: mondo
   - relation_type: prov:wasInformedBy
     source: omim
-  product_url: https://sciences.orphadata.com/orphanet-scientific-knowledge-files/
 - category: DocumentationProduct
   description: Current Orphadata Science page for the Orphanet Rare Disease Ontology
     release, including ORDO 4.8 OWL downloads and release notes
@@ -285,9 +285,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
@@ -388,6 +388,57 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: bio2rdf
+- category: GraphicalInterface
+  description: Web-based interface for browsing and querying rare disease annotations
+    including phenotypes, symptoms, genes, and genotypes with tree-structured disease
+    organization
+  format: http
+  id: eram.web
+  name: eRAM Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: umls
+  - relation_type: prov:wasInformedBy
+    source: doid
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mp
+- category: Product
+  description: Downloadable data files containing rare disease annotations, phenotypes,
+    symptoms, genes, and genotypes
+  format: mixed
+  id: eram.downloads
+  name: eRAM Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
 repository: https://github.com/Orphanet
 taxon:
 - NCBITaxon:9606

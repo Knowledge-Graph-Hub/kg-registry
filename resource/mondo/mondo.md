@@ -517,10 +517,12 @@ products:
   product_file_size: 4640682152
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -1992,6 +1994,78 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: Product
+  description: BioThings GTRx association collection built from Genome-to-Treatment
+    source records; the 20220802 build reports 695 association records
+  format: mixed
+  id: gtrx.data
+  latest_version: '20220802'
+  name: gTRx Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtrx
+  product_url: https://biothings.ncats.io/gtrx/metadata
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  warnings:
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
+    when accessing file'
+- category: ProcessProduct
+  description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
+    and contraindications data and processing code
+  format: http
+  id: medi.github
+  name: medic GitHub Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medi
+  product_url: https://github.com/marcello-deluca/medic
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mondo
+- category: Product
+  description: Matrix indication list spreadsheet from the medic v1.0.1 release
+  id: medi.matrix_indication_list
+  latest_version: v1.0.1
+  name: Matrix Indication List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medi
+  product_file_size: 2173559
+  product_url: https://github.com/marcello-deluca/medic/releases/download/v1.0.1/matrix_indication_list.xlsx
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: dailymed
+  - relation_type: prov:used
+    source: mondo
+- category: Product
+  description: Orphanet scientific knowledge files for rare disease alignments, classifications,
+    genes, phenotypes, functional consequences, epidemiology, and natural history
+  format: xml
+  id: orphanet.scientific_knowledge_files
+  name: Orphanet Scientific Knowledge Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://sciences.orphadata.com/orphanet-scientific-knowledge-files/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
 publications:
 - id: https://doi.org/10.1093/genetics/iyaf215
   title: 'Mondo: Integrating Disease Terminology Across Communities'

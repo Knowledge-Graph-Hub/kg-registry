@@ -91,11 +91,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -313,6 +313,23 @@ products:
     source: gdsc
   - relation_type: prov:wasInfluencedBy
     source: ctrp
+- category: Product
+  description: Drug screening data from various platforms including GDSC, PRISM, and
+    CTD2
+  format: csv
+  id: depmap.drug_sensitivity
+  name: DepMap Drug Sensitivity Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_url: https://depmap.org/portal/data_page/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: prism
+  - relation_type: prov:wasDerivedFrom
+    source: ctd2
 publications:
 - authors:
   - Yang W

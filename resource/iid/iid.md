@@ -32,6 +32,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: iid
+  product_file_size: 37
   product_url: https://iid.ophid.utoronto.ca/
 - category: GraphProduct
   compression: gzip

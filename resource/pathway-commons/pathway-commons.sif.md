@@ -1,10 +1,15 @@
 ---
 category: Product
-description: Simple Interaction Format (SIF) network files representing binary pairwise molecular relationships for network analysis and visualization
+compression: gzip
+description: PC v14 Simple Interaction Format network file representing binary pairwise
+  molecular relationships for network analysis and visualization
+format: sif
 id: pathway-commons.sif
 name: SIF Network Format
-layout: product_detail
 original_source:
-  - source: pathway-commons
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: pathway-commons
+product_file_size: 9810179
+product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.sif.gz
+layout: product_detail
 ---

@@ -51,9 +51,9 @@ products:
     source: gallont
   product_url: http://purl.obolibrary.org/obo/gallont.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Plant Gall Ontology in OBO format

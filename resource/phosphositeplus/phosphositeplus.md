@@ -213,35 +213,36 @@ products:
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: coralkinome
-  - relation_type: prov:hadPrimarySource
-    source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
-    source: epsd
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: iptmnet
-  - relation_type: prov:hadPrimarySource
-    source: kegg
-  - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: coralkinome
+  - relation_type: prov:wasDerivedFrom
+    source: darkkinasekb
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
     source: kinhub
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: uniprot
-  product_url: https://kinace.kinametrix.com/
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -543,6 +544,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -618,6 +623,122 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Download page for complete phosphorylation site datasets and annotation
+    data from EPSD 2.0
+  format: http
+  id: epsd.download
+  name: EPSD Data Download
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: epsd
+  product_url: https://epsd.biocuckoo.cn/Download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+- category: GraphProduct
+  description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
+    organism, site, enzyme, relation identifiers, and publication evidence.
+  format: tsv
+  id: iptmnet.ptm
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet PTM Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 44116546
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/ptm.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: dbptm
+  - relation_type: prov:wasDerivedFrom
+    source: dbsno
+  - relation_type: prov:wasDerivedFrom
+    source: efip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: nextprot
+  - relation_type: prov:wasDerivedFrom
+    source: p3db
+  - relation_type: prov:wasDerivedFrom
+    source: phosphoelm
+  - relation_type: prov:wasDerivedFrom
+    source: phosphogrid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: phosphat
+  - relation_type: prov:wasDerivedFrom
+    source: pombase
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  - relation_type: prov:wasDerivedFrom
+    source: rlims-p
+  - relation_type: prov:wasDerivedFrom
+    source: signor
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphProduct
+  description: CSV download of the full KiNet human kinase-substrate interaction dataset
+    with source database, evidence, and PMID reference fields
+  format: csv
+  id: kinace.interactions
+  name: KiNet Full Interaction Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kinace
+  product_file_size: 5180792
+  product_url: https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/ksi_source_full_dataset.csv
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+- category: Product
+  compression: zip
+  description: Complete PTMD 2.0 PTM-disease association download in tab-delimited
+    format
+  format: tsv
+  id: ptmd.total_pda
+  name: PTMD Total PTM-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ptmd
+  product_file_size: 4756362
+  product_url: https://ptmd.biocuckoo.cn/Download/Total.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: activedriverdb
+  - relation_type: prov:wasDerivedFrom
+    source: biomuta
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+- category: Product
+  compression: zip
+  description: PTMD 2.0 PTM-disease association subset for phosphorylation modification
+    events
+  format: tsv
+  id: ptmd.phosphorylation_pda
+  name: PTMD Phosphorylation PTM-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ptmd
+  product_file_size: 2902073
+  product_url: https://ptmd.biocuckoo.cn/Download/Phosphorylation.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
 publications:
 - doi: 10.1093/nar/gku1267
   id: doi:10.1093/nar/gku1267

@@ -367,6 +367,57 @@ products:
     source: progenomes
   product_file_size: 48114108
   product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
+- category: GraphicalInterface
+  description: MediaDive web portal for browsing, searching, comparing, and building
+    microbial cultivation media recipes.
+  format: http
+  id: mediadive.portal
+  name: MediaDive Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://mediadive.dsmz.de/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: ProgrammingInterface
+  description: MediaDive REST API documentation for programmatic retrieval of media,
+    solutions, ingredients, strains, and related records.
+  format: http
+  id: mediadive.rest_api
+  name: MediaDive REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://mediadive.dsmz.de/doc/index.html
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+- category: ProgrammingInterface
+  description: MediaDive SPARQL endpoint for querying the DSMZ Digital Diversity RDF
+    representation of MediaDive data.
+  format: http
+  id: mediadive.sparql
+  name: MediaDive SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mediadive
+  product_url: https://sparql.dsmz.de/mediadive
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: bacdive
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
 taxon:
 - NCBITaxon:2
 ---

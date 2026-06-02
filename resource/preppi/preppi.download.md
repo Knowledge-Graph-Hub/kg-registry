@@ -1,6 +1,8 @@
 ---
 category: Product
-description: High-confidence PrePPI interactome dataset for download
+compression: gzip
+description: High-confidence PrePPI human interactome dataset generated with structure-informed
+  predictions using AlphaFold-informed models and non-structural evidence
 format: txt
 id: preppi.download
 name: PrePPI High-Confidence Interactome
@@ -9,23 +11,14 @@ original_source:
   source: preppi
 product_file_size: 41528369
 product_url: https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
+secondary_source:
+- relation_type: prov:wasInformedBy
+  source: pdb
+- relation_type: prov:wasInformedBy
+  source: uniprot
 warnings:
-- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
-  URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max retries
-  exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz (Caused by
-  SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-  verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-- File was not able to be retrieved when checked on 2026-03-30_ Error connecting to
-  URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max retries
-  exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz (Caused by
-  SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-  verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-- File was not able to be retrieved when checked on 2026-03-11_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2026-01-15_ Error connecting to
-  URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max retries
-  exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz (Caused by
-  SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-  verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+- The official Columbia HTTPS endpoint returned a certificate-chain verification error
+  to curl on 2026-06-02, but the page and download resolved successfully when checked
+  without certificate verification.
 layout: product_detail
 ---

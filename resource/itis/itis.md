@@ -174,13 +174,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  - relation_type: prov:hadPrimarySource
-    source: catalogue-of-life
-  - relation_type: prov:hadPrimarySource
-    source: gbif
-  - relation_type: prov:hadPrimarySource
-    source: itis
   product_url: https://mangal.io/
+  secondary_source:
+  - relation_type: prov:used
+    source: catalogue-of-life
+  - relation_type: prov:used
+    source: gbif
+  - relation_type: prov:used
+    source: itis
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to network data and metadata
   format: http
@@ -190,13 +191,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  - relation_type: prov:hadPrimarySource
-    source: catalogue-of-life
-  - relation_type: prov:hadPrimarySource
-    source: gbif
-  - relation_type: prov:hadPrimarySource
-    source: itis
   product_url: https://api.mangal.io/
+  secondary_source:
+  - relation_type: prov:used
+    source: catalogue-of-life
+  - relation_type: prov:used
+    source: gbif
+  - relation_type: prov:used
+    source: itis
+  warnings:
+  - Host api.mangal.io was not resolvable when checked on 2026-06-02.
 - category: DocumentationProduct
   description: API documentation, user guides, and data model specification
   format: http
@@ -205,13 +209,24 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  - relation_type: prov:hadPrimarySource
-    source: catalogue-of-life
-  - relation_type: prov:hadPrimarySource
-    source: gbif
-  - relation_type: prov:hadPrimarySource
-    source: itis
   product_url: https://mangal.io/documentation
+- category: ProcessProduct
+  description: R package for retrieving and exploring data from the Mangal ecological
+    interactions database
+  format: http
+  id: mangal.rmangal
+  name: rmangal R Client
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  product_url: https://docs.ropensci.org/rmangal/
+  secondary_source:
+  - relation_type: prov:used
+    source: catalogue-of-life
+  - relation_type: prov:used
+    source: gbif
+  - relation_type: prov:used
+    source: itis
 taxon:
 - NCBITaxon:2759
 ---

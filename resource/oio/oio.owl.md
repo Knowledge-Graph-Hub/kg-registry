@@ -5,7 +5,11 @@ format: owl
 id: oio.owl
 name: OIO OWL
 original_source:
-  - source: oio
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: oio
+product_url: http://purl.obolibrary.org/obo/oio.owl
+warnings:
+- OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
+  metadata.
 layout: product_detail
 ---

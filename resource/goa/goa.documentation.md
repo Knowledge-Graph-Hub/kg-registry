@@ -4,9 +4,9 @@ description: Documentation including FAQ, About pages, and contact information
 format: http
 id: goa.documentation
 name: GOA Documentation
-product_url: https://www.ebi.ac.uk/GOA/newto
-layout: product_detail
 original_source:
-  - source: goa
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: goa
+product_url: https://www.ebi.ac.uk/GOA/about
+layout: product_detail
 ---

@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ehdaa
 product_url: http://purl.obolibrary.org/obo/ehdaa.owl
+warnings:
+- File was not able to be retrieved when checked on 2026-06-01_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

@@ -100,9 +100,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -145,9 +145,9 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -875,10 +875,12 @@ products:
   - v4.0.0
   - current_build
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -1025,9 +1027,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -1048,6 +1050,7 @@ products:
   description: GO annotations for all UniProtKB entries
   format: txt
   id: goa.uniprot
+  latest_version: '232'
   name: UniProt GOA Annotations
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1056,10 +1059,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
 - category: Product
   description: GO annotations for human proteins
   format: txt
@@ -1072,10 +1072,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
 - category: Product
   description: GO annotations for mouse proteins
   format: txt
@@ -1088,10 +1085,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
@@ -1108,40 +1102,38 @@ products:
     source: interpro
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: coralkinome
-  - relation_type: prov:hadPrimarySource
-    source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
-    source: epsd
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: iptmnet
-  - relation_type: prov:hadPrimarySource
-    source: kegg
-  - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: coralkinome
+  - relation_type: prov:wasDerivedFrom
+    source: darkkinasekb
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
     source: kinhub
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: uniprot
-  product_url: https://kinace.kinametrix.com/
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -2361,24 +2353,18 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-- category: GraphProduct
-  description: ProteomeHD data files
+- category: Product
+  compression: 7z
+  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
+    measured across 294 SILAC ratios
+  format: csv
   id: proteomehd.data
   name: ProteomeHD Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+  product_file_size: 9427082
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/ProteomeHD_v1_1.7z
 - category: Product
   description: TSV export of lipid-related enzymes with UniProt, Rhea, and evidence
     links.
@@ -2441,6 +2427,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3255,9 +3245,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
@@ -3309,10 +3299,328 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+    to URL'
+- category: Product
+  description: Bulk download of DisProt data in multiple formats including JSON, TSV,
+    FASTA, and GAF
+  format: json
+  id: disprot.downloads
+  name: DisProt Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disprot
+  product_url: https://www.disprot.org/download
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: interpro
+  - relation_type: prov:wasInformedBy
+    source: go
+  - relation_type: prov:wasInformedBy
+    source: eco
+- category: Product
+  description: Download page for complete phosphorylation site datasets and annotation
+    data from EPSD 2.0
+  format: http
+  id: epsd.download
+  name: EPSD Data Download
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: epsd
+  product_url: https://epsd.biocuckoo.cn/Download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+- category: Product
+  description: FTP site containing current and archived GOA annotation files for all
+    species
+  format: http
+  id: goa.ftp
+  name: GOA FTP Site
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: rnacentral
+  - relation_type: prov:wasInformedBy
+    source: complexportal
+- category: Product
+  description: Downloadable data files including anatomical structures, cell types,
+    and biomarkers
+  format: mixed
+  id: hra.data
+  latest_version: v2.4
+  name: HRA Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  product_url: https://humanatlas.io/overview-data
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:used
+    source: cl
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: fma
+  - relation_type: prov:used
+    source: hgnc
+  - relation_type: prov:used
+    source: uniprot
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated human protein-protein interaction download.
+  format: tsv
+  id: iid.human_annotated_ppis
+  name: IID Human Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 150992743
+  product_url: https://iid.ophid.utoronto.ca/static/download/human_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated mouse protein-protein interaction download.
+  format: tsv
+  id: iid.mouse_annotated_ppis
+  name: IID Mouse Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 40056241
+  product_url: https://iid.ophid.utoronto.ca/static/download/mouse_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphProduct
+  description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
+    organism, site, enzyme, relation identifiers, and publication evidence.
+  format: tsv
+  id: iptmnet.ptm
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet PTM Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 44116546
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/ptm.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: dbptm
+  - relation_type: prov:wasDerivedFrom
+    source: dbsno
+  - relation_type: prov:wasDerivedFrom
+    source: efip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: nextprot
+  - relation_type: prov:wasDerivedFrom
+    source: p3db
+  - relation_type: prov:wasDerivedFrom
+    source: phosphoelm
+  - relation_type: prov:wasDerivedFrom
+    source: phosphogrid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: phosphat
+  - relation_type: prov:wasDerivedFrom
+    source: pombase
+  - relation_type: prov:wasDerivedFrom
+    source: pubtator
+  - relation_type: prov:wasDerivedFrom
+    source: rlims-p
+  - relation_type: prov:wasDerivedFrom
+    source: signor
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: Current iPTMnet protein table with UniProt accessions, names, organism
+    labels, and reviewed/unreviewed status.
+  format: tsv
+  id: iptmnet.protein
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC BY-NC-SA 4.0
+  name: iPTMnet Protein Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iptmnet
+  product_file_size: 9324847
+  product_url: https://research.bioinformatics.udel.edu/iptmnet_data/files/current/protein.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: ProgrammingInterface
+  description: MarkerDB API documentation and endpoint examples for condition, chemical,
+    genetic, protein, and karyotype biomarker records.
+  format: http
+  id: markerdb.api
+  name: MarkerDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/markerdb_api
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: Product
+  description: TSV export of MarkerDB protein biomarkers with associated conditions
+    and concentration data.
+  format: tsv
+  id: markerdb.proteins.tsv
+  name: MarkerDB Protein Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_proteins?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  compression: gzip
+  description: High-confidence PrePPI human interactome dataset generated with structure-informed
+    predictions using AlphaFold-informed models and non-structural evidence
+  format: txt
+  id: preppi.download
+  name: PrePPI High-Confidence Interactome
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: preppi
+  product_file_size: 41528369
+  product_url: https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pdb
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  warnings:
+  - The official Columbia HTTPS endpoint returned a certificate-chain verification
+    error to curl on 2026-06-02, but the page and download resolved successfully when
+    checked without certificate verification.
+- category: Product
+  compression: 7z
+  description: Reviewed UniProt protein annotation file used in ProteomeHD analyses
+  format: txt
+  id: proteomehd.uniprot_annotations
+  name: ProteomeHD UniProt Annotation File
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  product_file_size: 857122
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/uniprot-all.7z
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

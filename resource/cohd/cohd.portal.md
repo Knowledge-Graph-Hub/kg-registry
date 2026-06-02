@@ -1,12 +1,13 @@
 ---
 category: GraphicalInterface
-description: Interactive web interface for exploring clinical concept frequencies and associations
+description: Interactive web interface for exploring clinical concept frequencies
+  and associations
 format: http
 id: cohd.portal
 name: COHD Web Interface
 original_source:
-  - source: cohd
-    relation_type: prov:hadPrimarySource
-product_url: https://cohd.io/
+- relation_type: prov:hadPrimarySource
+  source: cohd
+product_url: https://cohd-api.ci.transltr.io/
 layout: product_detail
 ---

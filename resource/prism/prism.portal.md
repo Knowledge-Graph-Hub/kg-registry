@@ -1,12 +1,13 @@
 ---
 category: GraphicalInterface
-description: Web interface for exploring PRISM drug screening data through DepMap
+description: Web interface for exploring the PRISM Repurposing drug-screening resource
+  through DepMap
 format: http
 id: prism.portal
-name: PRISM Data Portal
+name: PRISM Repurposing Resource
 original_source:
-  - source: prism
-    relation_type: prov:hadPrimarySource
-product_url: https://depmap.org/portal/prism/
+- relation_type: prov:hadPrimarySource
+  source: prism
+product_url: https://depmap.org/repurposing/
 layout: product_detail
 ---

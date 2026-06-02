@@ -8,15 +8,14 @@ contacts:
     value: https://www.bristol.ac.uk/integrative-epidemiology-unit/
   label: MRC Integrative Epidemiology Unit, University of Bristol
 creation_date: '2025-12-03T00:00:00Z'
-description: "The PRS Atlas is a comprehensive resource analyzing 162 polygenic risk\
-  \ scores (PRS) derived from genome-wide association studies against 551 heritable\
-  \ traits from the UK Biobank study (N=334,398). The atlas was developed to highlight\
-  \ putative causal relationships across the human phenome using Mendelian randomization\
-  \ approaches. PRS were constructed using independent SNPs (p<5\xD710\u207B\u2075\
-  ) to evaluate associations with complex traits, providing insights into disease\
-  \ susceptibility and potential causal risk factors. The resource includes a web\
-  \ application for querying and visualizing associations between genetic liability\
-  \ and diverse health outcomes."
+description: The PRS Atlas is a comprehensive resource analyzing 162 polygenic risk
+  scores (PRS) derived from genome-wide association studies against 551 heritable
+  traits from the UK Biobank study (N=334,398). The atlas was developed to highlight
+  putative causal relationships across the human phenome using Mendelian randomization
+  approaches. PRS were constructed using independent SNPs (p<5×10⁻⁵) to evaluate associations
+  with complex traits, providing insights into disease susceptibility and potential
+  causal risk factors. The resource includes a web application for querying and visualizing
+  associations between genetic liability and diverse health outcomes.
 domains:
 - genomics
 - translational
@@ -31,7 +30,8 @@ license:
 name: PRS Atlas
 products:
 - category: Product
-  description: Dryad archive for PRS Atlas results, including PRS association results at P less than 5e-05 and P less than 5e-08 thresholds
+  description: Dryad archive for PRS Atlas results, including PRS association results
+    at P less than 5e-05 and P less than 5e-08 thresholds
   format: http
   id: prsatlas.dryad
   name: PRS Atlas Dryad Archive
@@ -45,7 +45,8 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ukbiobank
 - category: Product
-  description: PRS Atlas results using the P less than 5e-05 polygenic risk score threshold, archived by Dryad
+  description: PRS Atlas results using the P less than 5e-05 polygenic risk score
+    threshold, archived by Dryad
   format: txt
   id: prsatlas.results_5e05
   name: PRS Atlas Results P less than 5e-05
@@ -58,8 +59,12 @@ products:
     source: mrbase
   - relation_type: prov:wasDerivedFrom
     source: ukbiobank
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: Product
-  description: PRS Atlas results using the P less than 5e-08 polygenic risk score threshold, archived by Dryad
+  description: PRS Atlas results using the P less than 5e-08 polygenic risk score
+    threshold, archived by Dryad
   format: txt
   id: prsatlas.results_5e08
   name: PRS Atlas Results P less than 5e-08
@@ -72,6 +77,9 @@ products:
     source: mrbase
   - relation_type: prov:wasDerivedFrom
     source: ukbiobank
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Integrated graph knowledge base combining Mendelian randomization causal
     estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
@@ -133,8 +141,11 @@ synonyms:
 taxon:
 - NCBITaxon:9606
 warnings:
-- The original PRS Atlas web application at http://mrcieu.mrsoftware.org/PRS_atlas/ returned HTTP 404 after HTTPS redirection on 2026-06-02; the Dryad archive remains available.
-- The INFORES catalog did not contain an exact PRS Atlas entry on 2026-06-02, so no infores_id is asserted.
+- The original PRS Atlas web application at http://mrcieu.mrsoftware.org/PRS_atlas/
+  returned HTTP 404 after HTTPS redirection on 2026-06-02; the Dryad archive remains
+  available.
+- The INFORES catalog did not contain an exact PRS Atlas entry on 2026-06-02, so no
+  infores_id is asserted.
 ---
 # PRS Atlas
 

@@ -1,12 +1,17 @@
 ---
 category: ProgrammingInterface
-description: RESTful API for programmatic access to Harmonizome functional genomics knowledge graph
-format: http
+connection_url: https://harmonizome-kg.maayanlab.cloud/api/knowledge_graph
+description: API endpoint for programmatic access to Harmonizome-KG neighborhoods,
+  with filter parameters documented in the Harmonizome knowledge graph API guide
+format: json
 id: harmonizome-kg.api
 name: Harmonizome-KG API
-product_url: https://maayanlab.cloud/harmonizome-kg/api/
-layout: product_detail
 original_source:
-  - source: harmonizome-kg
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: harmonizome-kg
+product_url: https://maayanlab.cloud/Harmonizome/documentation#kg-api
+secondary_source:
+- relation_type: prov:wasDerivedFrom
+  source: harmonizome
+layout: product_detail
 ---

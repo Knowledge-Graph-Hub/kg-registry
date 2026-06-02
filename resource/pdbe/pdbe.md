@@ -517,9 +517,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: GO annotations for PDB entries
@@ -533,10 +533,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: pdbe
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/intact/ws
   description: IntAct web service and URL-based programmatic interface for retrieving

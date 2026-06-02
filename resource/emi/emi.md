@@ -45,8 +45,8 @@ products:
     source: try
   product_url: https://doi.org/10.5281/zenodo.17079767
   repository: https://github.com/earth-metabolome-initiative/metrin-kg
+  warnings: []
 - category: ProgrammingInterface
-  connection_url: https://qlever.earthmetabolome.org/api/metrin-kg
   description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
   format: http
   id: emikg.sparql
@@ -65,7 +65,6 @@ products:
   product_url: https://qlever.earthmetabolome.org/api/metrin-kg
 - category: GraphicalInterface
   description: Web-based SPARQL query editor for the EMI Knowledge Graph
-  format: http
   id: emikg.web
   name: EMI KG SPARQL Query Editor
   original_source:

@@ -138,11 +138,59 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
   product_url: https://archs4.org/zoo
+- category: Product
+  description: Computational pipeline for gathering publicly available RNA-seq data,
+    aligning reads, performing quality control, computing iModulons using independent
+    component analysis, and formatting dashboard files. Enables users to generate
+    their own iModulon decompositions from transcriptomic datasets.
+  format: http
+  id: imodulondb.imodulonminer
+  name: iModulonMiner Pipeline
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://github.com/SBRG/iModulonMiner
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: sra
+- category: Product
+  description: Modulome workflow for scraping publicly available data for an organism,
+    aligning reads, quality control, and computing iModulons. Used to expand iModulonDB
+    across the prokaryotic evolutionary tree by processing data from the Sequence
+    Read Archive.
+  format: http
+  id: imodulondb.modulome_workflow
+  name: Modulome Workflow
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://github.com/avsastry/modulome-workflow
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: sra
+- category: Product
+  description: Downloadable transcriptomic datasets and iModulon decompositions for
+    15 organisms including E. coli, B. subtilis, S. aureus, M. tuberculosis, P. aeruginosa,
+    P. putida, and others. Includes gene expression matrices, iModulon activity matrices,
+    gene weights, and metadata for over 9500 expression profiles from 525 studies.
+  format: mixed
+  id: imodulondb.datasets
+  name: iModulonDB Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://imodulondb.org/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: biocyc
+  - relation_type: prov:wasDerivedFrom
+    source: sra
+  - relation_type: prov:wasInformedBy
+    source: string
 synonyms:
 - SRA
 - Sequence Read Archive
 ---
-
 # Sequence Read Archive
 
 SRA is the largest public repository of high-throughput sequencing data and serves as

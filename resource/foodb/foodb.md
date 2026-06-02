@@ -57,9 +57,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: targz
@@ -80,9 +80,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -103,9 +103,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: targz
@@ -125,9 +125,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -147,9 +147,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -169,9 +169,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -191,9 +191,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -213,9 +213,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -235,9 +235,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -257,9 +257,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -279,9 +279,9 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -828,6 +828,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource

@@ -448,40 +448,38 @@ products:
     source: interpro
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: coralkinome
-  - relation_type: prov:hadPrimarySource
-    source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
-    source: epsd
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: iptmnet
-  - relation_type: prov:hadPrimarySource
-    source: kegg
-  - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: coralkinome
+  - relation_type: prov:wasDerivedFrom
+    source: darkkinasekb
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
     source: kinhub
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: uniprot
-  product_url: https://kinace.kinametrix.com/
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1239,6 +1237,25 @@ products:
   - relation_type: prov:hadPrimarySource
     source: interpro
   product_url: https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo
+- category: Product
+  description: Bulk download of DisProt data in multiple formats including JSON, TSV,
+    FASTA, and GAF
+  format: json
+  id: disprot.downloads
+  name: DisProt Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: disprot
+  product_url: https://www.disprot.org/download
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: interpro
+  - relation_type: prov:wasInformedBy
+    source: go
+  - relation_type: prov:wasInformedBy
+    source: eco
 publications:
 - authors:
   - Blum M

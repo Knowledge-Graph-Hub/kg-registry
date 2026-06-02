@@ -1,12 +1,13 @@
 ---
 category: Product
-description: Receptor binding affinity data for psychoactive compounds
+description: Downloadable PDSP Ki values with SMILES codes for receptor binding affinity
+  data on psychoactive compounds
 format: csv
 id: pdsp.data
 name: PDSP Binding Data
 original_source:
-  - source: pdsp
-    relation_type: prov:hadPrimarySource
-product_url: https://pdsp.unc.edu/databases/kidb.php
+- relation_type: prov:hadPrimarySource
+  source: pdsp
+product_url: https://pdsp.unc.edu/databases/kiDownload/
 layout: product_detail
 ---

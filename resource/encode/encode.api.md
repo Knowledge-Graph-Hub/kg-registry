@@ -1,5 +1,6 @@
 ---
 category: ProgrammingInterface
+connection_url: https://www.encodeproject.org/search/?type=Experiment&format=json
 description: REST API for retrieving ENCODE metadata and released objects in JSON
   format and performing structured search queries
 format: json

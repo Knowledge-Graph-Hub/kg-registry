@@ -41,6 +41,8 @@ taxon_hierarchy:
   - NCBITaxon:2763
   NCBITaxon:284812:
   - NCBITaxon:284812
+  NCBITaxon:30538:
+  - NCBITaxon:30538
   NCBITaxon:3055:
   - NCBITaxon:3055
   NCBITaxon:3218:
@@ -150,6 +152,8 @@ taxon_hierarchy:
   - NCBITaxon:8732
   NCBITaxon:88036:
   - NCBITaxon:88036
+  NCBITaxon:8839:
+  - NCBITaxon:8839
   NCBITaxon:9031:
   - NCBITaxon:9031
   NCBITaxon:9103:

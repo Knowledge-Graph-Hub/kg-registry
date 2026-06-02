@@ -57,6 +57,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: enrichr
   product_url: https://maayanlab.cloud/Enrichr/datasetStatistics
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource

@@ -12,7 +12,7 @@ original_source:
   source: uniprot
 product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-01_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

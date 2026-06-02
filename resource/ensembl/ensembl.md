@@ -966,9 +966,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: gzip
@@ -1761,10 +1761,104 @@ products:
     source: ensembl
   product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+    genome assembly in GTF format
+  format: gff
+  id: gencode.human.gtf
+  latest_version: v49
+  name: GENCODE Human Annotations GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 93374019
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly in GTF format
+  format: gff
+  id: gencode.mouse.gtf
+  latest_version: M38
+  name: GENCODE Mouse Annotations GTF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  product_file_size: 37627563
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: mgi
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: Current HuRI TSV file containing 52,569 systematically mapped binary
+    human protein-protein interactions, provided as interacting Ensembl gene ID pairs
+  format: tsv
+  id: hrpimp.data
+  latest_version: HuRI
+  name: HuRI Protein-Protein Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+- category: Product
+  description: Current HuRI PSI-MI formatted interaction file with detailed experimental
+    information and isoform-specific ORF, transcript, and protein identifiers
+  format: psi_mi_mitab
+  id: hrpimp.huri.psi
+  latest_version: HuRI
+  name: HuRI PSI-MI Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 169848924
+  product_url: https://www.interactome-atlas.org/data/HuRI.psi
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+- category: MappingProduct
+  description: Tab-delimited identifier mapping file linking pathway identifiers with
+    associated genes across plant species
+  format: tsv
+  id: plant-reactome.mappings
+  name: Plant Reactome Identifier Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: plant-reactome
+  product_file_size: 24388295
+  product_url: https://plantreactome.gramene.org/download/current/gene_ids_by_pathway_and_species.tab
+  secondary_source:
+  - relation_type: prov:used
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: reactome
 publications:
 - authors:
   - Dyer SC

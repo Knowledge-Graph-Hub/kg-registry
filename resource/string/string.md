@@ -2602,9 +2602,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -2907,6 +2907,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -3058,9 +3062,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
@@ -3112,10 +3116,79 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+    to URL'
+- category: GraphicalInterface
+  description: Interactive web interface for browsing and analyzing iModulons across
+    15 prokaryotic organisms with 22 datasets, 1924 curated iModulons, and 9576 expression
+    profiles. Includes organism-specific dataset pages, iModulon dashboards, gene
+    search functionality, and project information pages displaying experimental conditions
+    and publication abstracts.
+  format: http
+  id: imodulondb.browser
+  name: iModulonDB Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://imodulondb.org/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: biocyc
+  - relation_type: prov:wasInformedBy
+    source: string
+- category: Product
+  description: Downloadable transcriptomic datasets and iModulon decompositions for
+    15 organisms including E. coli, B. subtilis, S. aureus, M. tuberculosis, P. aeruginosa,
+    P. putida, and others. Includes gene expression matrices, iModulon activity matrices,
+    gene weights, and metadata for over 9500 expression profiles from 525 studies.
+  format: mixed
+  id: imodulondb.datasets
+  name: iModulonDB Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://imodulondb.org/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: biocyc
+  - relation_type: prov:wasDerivedFrom
+    source: sra
+  - relation_type: prov:wasInformedBy
+    source: string
+- category: GraphProduct
+  description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
+    between 61,146 entities from multiple genotypic and phenotypic databases
+  format: tsv
+  id: kg-predict.gpkg
+  name: GP-KG Knowledge Graph Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: kg-predict
+  product_file_size: 48397035
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: faers
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mgi
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: string
+  - relation_type: prov:wasDerivedFrom
+    source: umls
 publications:
 - authors:
   - Szklarczyk D

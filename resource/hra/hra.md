@@ -69,6 +69,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hra
+  product_url: https://humanatlas.io/overview-data
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: hubmap
@@ -82,7 +83,6 @@ products:
     source: hgnc
   - relation_type: prov:used
     source: uniprot
-  product_url: https://humanatlas.io/overview-data
 - category: GraphProduct
   description: HRA Knowledge Graph documentation and access information for querying
     the semantically rich graph that connects anatomical structures, cell types, biomarkers,
@@ -94,6 +94,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hra
+  product_url: https://docs.humanatlas.io/apps/kg
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: hubmap
@@ -103,7 +104,6 @@ products:
     source: uberon
   - relation_type: prov:used
     source: fma
-  product_url: https://docs.humanatlas.io/apps/kg
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -333,6 +333,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
+- category: Product
+  description: Human Reference Atlas providing atlas data and reference functionality
+  format: mixed
+  id: hubmap.human_reference_atlas
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: Human Reference Atlas
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  product_url: https://humanatlas.io/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hra
 publications:
 - authors:
   - Andreas Bueckle

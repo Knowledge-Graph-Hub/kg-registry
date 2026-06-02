@@ -83,42 +83,61 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: iptmnet
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
+    source: kinace
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
     source: coralkinome
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: epsd
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: hgnc
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: interpro
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: iptmnet
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: kinhub
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphProduct
+  description: CSV download of the full KiNet human kinase-substrate interaction dataset
+    with source database, evidence, and PMID reference fields
+  format: csv
+  id: kinace.interactions
+  name: KiNet Full Interaction Dataset
+  original_source:
   - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
-    source: kinhub
-  - relation_type: prov:hadPrimarySource
+  product_file_size: 5180792
+  product_url: https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/ksi_source_full_dataset.csv
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  product_url: https://kinace.kinametrix.com/
 publications:
 - doi: 10.1093/gpbjnl/qzaf057
   id: doi:10.1093/gpbjnl/qzaf057
   journal: Genomics, Proteomics & Bioinformatics
   preferred: true
-  title: 'EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across
-    Eukaryotic Species'
+  title: 'EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic
+    Species'
   year: '2025'
 - doi: 10.1093/bib/bbz169
   id: doi:10.1093/bib/bbz169

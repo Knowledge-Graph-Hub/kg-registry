@@ -3,7 +3,7 @@ category: Product
 description: MarkerDB website for searching and browsing biomarker records.
 format: http
 id: markerdb.web
-name: MarkerDB Web Resource
+name: MarkerDB Web Portal
 original_source:
 - relation_type: prov:hadPrimarySource
   source: markerdb

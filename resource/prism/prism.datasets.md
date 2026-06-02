@@ -1,12 +1,16 @@
 ---
 category: Product
-description: Downloadable drug sensitivity screening data from PRISM assays
+description: DepMap downloads page for PRISM Repurposing primary and secondary screen
+  data
 format: csv
 id: prism.datasets
-name: PRISM Drug Sensitivity Datasets
+name: PRISM Drug Sensitivity Dataset Downloads
 original_source:
-  - source: prism
-    relation_type: prov:hadPrimarySource
-product_url: https://depmap.org/portal/data_page/
+- relation_type: prov:hadPrimarySource
+  source: prism
+product_url: https://depmap.org/portal/data_page/?tab=allData
+secondary_source:
+- relation_type: prov:wasInformedBy
+  source: depmap
 layout: product_detail
 ---

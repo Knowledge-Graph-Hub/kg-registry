@@ -1,5 +1,6 @@
 ---
 category: ProgrammingInterface
+connection_url: https://qlever.earthmetabolome.org/api/metrin-kg
 description: SPARQL endpoint for programmatic access to the EMI Knowledge Graph
 format: http
 id: emikg.sparql

@@ -107,6 +107,97 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: GraphProduct
+  description: RDF/XML serialization of the eKG epidemiological knowledge graph
+  format: rdfxml
+  id: ekg.rdf
+  name: eKG RDF
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ekg
+  product_file_size: 3853565
+  product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.rdf
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: who
+  - relation_type: prov:wasInformedBy
+    source: bioportal
+  - relation_type: prov:wasInformedBy
+    source: geonames
+- category: GraphProduct
+  description: Turtle serialization of the eKG epidemiological knowledge graph
+  format: ttl
+  id: ekg.ttl
+  name: eKG TTL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ekg
+  product_file_size: 3874916
+  product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.ttl
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: who
+  - relation_type: prov:wasInformedBy
+    source: bioportal
+  - relation_type: prov:wasInformedBy
+    source: geonames
+- category: ProgrammingInterface
+  connection_url: https://api-vast.jrc.service.ec.europa.eu/sparql/
+  description: Public SPARQL endpoint for querying eKG
+  format: http
+  id: ekg.sparql
+  name: eKG SPARQL endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ekg
+  product_url: https://api-vast.jrc.service.ec.europa.eu/sparql/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: who
+  - relation_type: prov:wasInformedBy
+    source: bioportal
+  - relation_type: prov:wasInformedBy
+    source: geonames
+- category: GraphicalInterface
+  description: Virtuoso faceted browser for exploring eKG
+  format: http
+  id: ekg.browser
+  name: eKG Faceted Browser
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ekg
+  product_url: https://api-vast.jrc.service.ec.europa.eu/fct/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: who
+  - relation_type: prov:wasInformedBy
+    source: bioportal
+  - relation_type: prov:wasInformedBy
+    source: geonames
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and exploring the GlycoCoO ontology
+  format: http
+  id: glycocoo.bioportal
+  name: GlycoCoO BioPortal Entry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCOCOO
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology
+  format: http
+  id: glycordf.bioportal
+  name: GlycoRDF BioPortal Entry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycordf
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
 publications:
 - doi: 10.1093/nar/gkaf402
   id: doi:10.1093/nar/gkaf402

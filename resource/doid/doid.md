@@ -728,6 +728,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -2103,6 +2107,95 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphicalInterface
+  description: Web-based interface for browsing and querying rare disease annotations
+    including phenotypes, symptoms, genes, and genotypes with tree-structured disease
+    organization
+  format: http
+  id: eram.web
+  name: eRAM Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: umls
+  - relation_type: prov:wasInformedBy
+    source: doid
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: orphanet
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mp
+- category: Product
+  description: Downloadable data files containing rare disease annotations, phenotypes,
+    symptoms, genes, and genotypes
+  format: mixed
+  id: eram.downloads
+  name: eRAM Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: eram
+  product_url: http://119.3.41.228/eram/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: umls
+  - relation_type: prov:wasDerivedFrom
+    source: doid
+  - relation_type: prov:wasDerivedFrom
+    source: mesh
+  - relation_type: prov:wasDerivedFrom
+    source: orphanet
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+- category: Product
+  description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
+    symptomatic, or non-indications
+  format: tsv
+  id: pharmacotherapydb.indications
+  name: PharmacotherapyDB Indications TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_file_size: 76754
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/indications.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: doid
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:wasInformedBy
+    source: labeledin
+  - relation_type: prov:wasInformedBy
+    source: medi
+  - relation_type: prov:wasInformedBy
+    source: ehrlink
+  - relation_type: prov:wasInformedBy
+    source: predict
+- category: Product
+  description: Disease table for the PharmacotherapyDB catalog using Disease Ontology
+    identifiers
+  format: tsv
+  id: pharmacotherapydb.diseases
+  name: PharmacotherapyDB Diseases TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_file_size: 1665
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/diseases.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: doid
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
   title: 'Disease Ontology 2015 update: an expanded and updated database of human

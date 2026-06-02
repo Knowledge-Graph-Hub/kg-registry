@@ -1,5 +1,6 @@
 ---
 category: ProgrammingInterface
+connection_url: https://maayanlab.cloud/Enrichr/addList
 description: REST API for submitting gene lists, retrieving enrichment results, exporting
   analyses, and querying Enrichr programmatically
 format: json

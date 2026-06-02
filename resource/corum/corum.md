@@ -8,7 +8,7 @@ contacts:
     value: https://www.helmholtz-munich.de/
   - contact_type: email
     value: corum@helmholtz-muenchen.de
-  label: Helmholtz Zentrum München
+  label: "Helmholtz Zentrum M\xFCnchen"
 creation_date: '2025-07-22T00:00:00Z'
 description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a curated
   database of experimentally characterized protein complexes from mammalian organisms,
@@ -402,6 +402,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -477,9 +481,58 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - authors:
-  - Stefanie Gößler
+  - "Stefanie G\xF6\xDFler"
   - Gisela Fobo
   - Barbara Wankerl
   - Christopher J. Mann
@@ -489,7 +542,7 @@ publications:
   id: doi:10.1093/nar/gkac1015
   journal: Nucleic Acids Research
   preferred: true
-  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2023'
+  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142023"
   year: '2023'
 - authors:
   - Andreas Giurgiu
@@ -503,7 +556,7 @@ publications:
   doi: 10.1093/nar/gky973
   id: doi:10.1093/nar/gky973
   journal: Nucleic Acids Research
-  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2019'
+  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142019"
   year: '2019'
 - authors:
   - Andreas Ruepp
@@ -515,12 +568,12 @@ publications:
   - Brigitte Waegele
   - Thorsten Schmidt
   - Octave Noubibou Doudieu
-  - Volker Stümpflen
+  - "Volker St\xFCmpflen"
   - Hans-Werner Mewes
   doi: 10.1093/nar/gkp914
   id: doi:10.1093/nar/gkp914
   journal: Nucleic Acids Research
-  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2009'
+  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142009"
   year: '2010'
 repository: https://mips.helmholtz-muenchen.de/corum/download
 taxon:

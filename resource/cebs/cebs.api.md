@@ -1,12 +1,14 @@
 ---
 category: ProgrammingInterface
-description: API access to CEBS data
+connection_url: https://manticore.niehs.nih.gov/cebsapi/v1
+description: Programmatic API access to CEBS data, documented by the CEBS API user
+  help
 format: http
 id: cebs.api
 name: CEBS API
 original_source:
-  - source: cebs
-    relation_type: prov:hadPrimarySource
-product_url: https://manticore.niehs.nih.gov/cebssearch/
+- relation_type: prov:hadPrimarySource
+  source: cebs
+product_url: https://tools.niehs.nih.gov/cebs3/support/assets/docs/CEBS_API-User-Help.pdf
 layout: product_detail
 ---

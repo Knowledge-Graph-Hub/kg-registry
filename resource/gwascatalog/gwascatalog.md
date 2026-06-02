@@ -548,6 +548,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -677,9 +681,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Neo4j graph database integrating Enrichr gene set libraries with genes,
@@ -1344,6 +1348,65 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: ProgrammingInterface
+  description: MarkerDB API documentation and endpoint examples for condition, chemical,
+    genetic, protein, and karyotype biomarker records.
+  format: http
+  id: markerdb.api
+  name: MarkerDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/markerdb_api
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: Product
+  description: TSV export of MarkerDB genetic biomarkers with associated conditions.
+  format: tsv
+  id: markerdb.sequence_variants.tsv
+  name: MarkerDB Genetic Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_sequence_variants?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: omim
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
+- category: Product
+  compression: zip
+  description: PheWAS association results for SNPs from GWAS Catalog analyzed against
+    EMR-derived phenotypes
+  format: csv
+  id: phewascat.associations
+  name: PheWAS Association Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phewascat
+  product_file_size: 8229506
+  product_url: https://phewascatalog.org/phewas/data/phewas-catalog.csv.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: emerge
 ---
 ## Overview
 

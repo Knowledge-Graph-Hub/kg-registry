@@ -1,12 +1,15 @@
 ---
 category: Product
-description: Bacterial genome data and annotations
+description: Legacy PATRIC bacterial genome data and annotations now available through
+  BV-BRC genome data views and services
 format: mixed
 id: patric.genomes
 name: PATRIC Genome Data
 original_source:
-  - source: patric
-    relation_type: prov:hadPrimarySource
-product_url: https://www.bv-brc.org/
+- relation_type: prov:hadPrimarySource
+  source: patric
+- relation_type: prov:hadPrimarySource
+  source: bv-brc
+product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
 layout: product_detail
 ---

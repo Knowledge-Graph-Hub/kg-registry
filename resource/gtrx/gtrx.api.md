@@ -1,12 +1,20 @@
 ---
 category: ProgrammingInterface
-description: TRAPI-compliant API for querying genomic-treatment relationships
-format: http
+connection_url: https://biothings.ncats.io/gtrx/query
+description: BioThings API for querying Genome-to-Treatment association records through
+  `/query`, `/metadata`, and related BioThings endpoints
+format: json
 id: gtrx.api
+infores_id: biothings-gtrx
+is_public: true
+latest_version: '2022-02-01'
 name: gTRx API
 original_source:
-  - source: gtrx
-    relation_type: prov:hadPrimarySource
-product_url: https://github.com/NCATSTranslator/Translator-All/wiki/gtrx
+- relation_type: prov:hadPrimarySource
+  source: gtrx
+product_url: https://biothings.ncats.io/gtrx
+secondary_source:
+- relation_type: prov:wasDerivedFrom
+  source: biothings
 layout: product_detail
 ---

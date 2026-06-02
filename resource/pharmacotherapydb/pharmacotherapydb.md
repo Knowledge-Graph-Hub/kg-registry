@@ -66,6 +66,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacotherapydb
+  product_file_size: 115234
   product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/catalog.xlsx
 - category: Product
   description: Disease table for the PharmacotherapyDB catalog using Disease Ontology
@@ -76,6 +77,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacotherapydb
+  product_file_size: 1665
   product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/diseases.tsv
   secondary_source:
   - relation_type: prov:used
@@ -88,6 +90,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pharmacotherapydb
+  product_file_size: 6142
   product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/drugs.tsv
   secondary_source:
   - relation_type: prov:used
@@ -212,12 +215,12 @@ publications:
   preferred: true
   title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
   year: '2017'
-warnings:
-- The repository README states original PharmacotherapyDB content is CC0, but also
-  notes upstream license constraints for integrated sources including DrugBank,
-  MEDI, PREDICT, and EHRLink.
 taxon:
 - NCBITaxon:9606
+warnings:
+- The repository README states original PharmacotherapyDB content is CC0, but also
+  notes upstream license constraints for integrated sources including DrugBank, MEDI,
+  PREDICT, and EHRLink.
 ---
 # PharmacotherapyDB
 

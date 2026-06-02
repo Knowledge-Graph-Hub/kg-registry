@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: rnainter
 product_url: http://www.rnainter.org/
-warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

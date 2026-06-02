@@ -295,6 +295,55 @@ products:
     source: progenomes
   product_file_size: 48114108
   product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
+- category: GraphicalInterface
+  description: BV-BRC web portal that hosts legacy PATRIC bacterial genomics data
+    and tools alongside expanded viral resources
+  format: http
+  id: patric.web
+  name: PATRIC/BV-BRC Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: patric
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  product_url: https://www.bv-brc.org/
+- category: Product
+  description: Legacy PATRIC bacterial genome data and annotations now available through
+    BV-BRC genome data views and services
+  format: mixed
+  id: patric.genomes
+  name: PATRIC Genome Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: patric
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
+- category: ProgrammingInterface
+  description: BV-BRC REST Data API for querying and retrieving public data, including
+    data inherited from PATRIC
+  format: http
+  id: patric.api
+  name: BV-BRC API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: patric
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  product_url: https://www.bv-brc.org/docs/system_documentation/system_architecture.html#data-api
+- category: DocumentationProduct
+  description: BV-BRC quick-start overview for PATRIC users, describing how legacy
+    PATRIC data, tools, services, website, and infrastructure were incorporated into
+    BV-BRC
+  format: http
+  id: patric.bv_brc_overview
+  name: BV-BRC Overview for PATRIC Users
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: patric
+  - relation_type: prov:hadPrimarySource
+    source: bv-brc
+  product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
 publications:
 - authors:
   - Olson RD

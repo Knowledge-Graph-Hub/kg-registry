@@ -4,9 +4,12 @@ description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontolo
 format: http
 id: glycordf.bioportal
 name: GlycoRDF BioPortal Entry
-product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
-layout: product_detail
 original_source:
-  - source: glycordf
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: glycordf
+product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: bioportal
+layout: product_detail
 ---

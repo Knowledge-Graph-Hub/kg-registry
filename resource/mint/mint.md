@@ -46,6 +46,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: imex
@@ -53,7 +54,6 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -61,9 +61,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
@@ -74,6 +74,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: imex
@@ -81,7 +82,6 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -89,9 +89,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
@@ -102,6 +102,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: imex
@@ -109,7 +110,6 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
@@ -117,9 +117,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
@@ -130,6 +130,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:fruit%20fly
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: imex
@@ -137,9 +138,10 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:fruit%20fly
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
     format.
@@ -149,6 +151,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:yeast
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: imex
@@ -156,9 +159,10 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:yeast
   warnings:
   - PSICQUIC query endpoints may stream results without a stable Content-Length header.
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
@@ -168,6 +172,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: imex
@@ -175,7 +180,6 @@ products:
     source: intact
   - relation_type: prov:used
     source: mi
-  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/
 - category: GraphicalInterface
   description: Advanced search interface for querying MINT data with field-specific
     searches and boolean operators.
@@ -1009,6 +1013,162 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdbe
   product_url: https://www.ebi.ac.uk/intact/download/datasets
+- category: GraphProduct
+  description: Downloadable GeneMANIA interaction network data organized by release
+    and organism, with individual networks, combined default networks, metadata, and
+    identifier mapping tables in plain tab-delimited text files
+  format: txt
+  id: genemania.networks
+  latest_version: current
+  name: GeneMANIA Interaction Network Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genemania
+  product_url: https://genemania.org/data/current/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+- category: Product
+  description: Current HIPPIE v2.4 interaction dataset in the native HIPPIE tab-delimited
+    format, last updated April 9, 2026
+  format: tsv
+  id: hippie.current.tab
+  latest_version: v2.4
+  name: HIPPIE Current TAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  product_file_size: 138719165
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/hippie_current.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+- category: Product
+  description: Current HIPPIE v2.4 interaction dataset in PSI-MI TAB 2.5 format, last
+    updated April 9, 2026
+  format: psi_mi_mitab
+  id: hippie.current.mitab
+  latest_version: v2.4
+  name: HIPPIE Current PSI-MI TAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  product_file_size: 257038149
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/HIPPIE-current.mitab.txt
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+- category: Product
+  description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB format.
+  format: psi_mi_mitab
+  id: hpidb.mitab
+  name: HPIDB PSI-MITAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hpidb
+  product_url: https://hpidb.igbb.msstate.edu/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  warnings:
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated human protein-protein interaction download.
+  format: tsv
+  id: iid.human_annotated_ppis
+  name: IID Human Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 150992743
+  product_url: https://iid.ophid.utoronto.ca/static/download/human_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated mouse protein-protein interaction download.
+  format: tsv
+  id: iid.mouse_annotated_ppis
+  name: IID Mouse Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 40056241
+  product_url: https://iid.ophid.utoronto.ca/static/download/mouse_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - doi: 10.1016/s0014-5793(01)03293-8
   id: PMID:11911893

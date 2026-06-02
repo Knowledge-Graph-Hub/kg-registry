@@ -382,10 +382,12 @@ products:
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink
@@ -426,6 +428,64 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://multiomics.transltr.io/mbkp
+- category: Product
+  description: Co-occurrence database generated from public PubMed abstracts with
+    entity normalization for Biolink-relevant biomedical concepts
+  format: mixed
+  id: omnicorp.cooccurrence
+  name: OmniCorp Co-occurrence Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omnicorp
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+- category: ProgrammingInterface
+  description: API behavior documented for adding co-occurrence counts and literature
+    co-occurrence edges to TRAPI messages
+  format: http
+  id: omnicorp.api
+  name: OmniCorp API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: omnicorp
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  warnings:
+  - The registry points to the Translator wiki documentation; checked RENCI OmniCorp
+    service URLs were unavailable or had certificate issues on 2026-06-02.
+- category: ProgrammingInterface
+  description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
+    similar entities, model metadata, and explanation endpoints
+  format: http
+  id: openpredict.api
+  name: OpenPredict API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
 publications:
 - authors:
   - Unni DR

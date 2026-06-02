@@ -5,8 +5,8 @@ format: http
 id: entrez.web
 name: Entrez Web Interface
 original_source:
-  - source: entrez
-    relation_type: prov:hadPrimarySource
-product_url: https://www.ncbi.nlm.nih.gov/sites/gquery
+- relation_type: prov:hadPrimarySource
+  source: entrez
+product_url: https://www.ncbi.nlm.nih.gov/search/
 layout: product_detail
 ---

@@ -33,9 +33,9 @@ products:
     source: fma
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -225,6 +225,51 @@ products:
     source: zfa
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
+- category: Product
+  description: Downloadable data files including anatomical structures, cell types,
+    and biomarkers
+  format: mixed
+  id: hra.data
+  latest_version: v2.4
+  name: HRA Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  product_url: https://humanatlas.io/overview-data
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:used
+    source: cl
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: fma
+  - relation_type: prov:used
+    source: hgnc
+  - relation_type: prov:used
+    source: uniprot
+- category: GraphProduct
+  description: HRA Knowledge Graph documentation and access information for querying
+    the semantically rich graph that connects anatomical structures, cell types, biomarkers,
+    spatial data, and HRA applications
+  format: http
+  id: hra.knowledge-graph
+  latest_version: v2.4
+  name: Human Reference Atlas Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  product_url: https://docs.humanatlas.io/apps/kg
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:used
+    source: cl
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: fma
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
   title: Translating the Foundational Model of Anatomy into OWL

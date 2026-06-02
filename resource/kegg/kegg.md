@@ -576,35 +576,36 @@ products:
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
 - category: GraphicalInterface
-  description: Interactive web interface for exploring and visualizing kinase-substrate
-    interactions
+  description: Interactive Shiny web interface for exploring and visualizing human
+    kinase-substrate interactions
   format: http
   id: kinace.portal
-  name: KinAce Web Portal
+  name: KiNet Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: coralkinome
-  - relation_type: prov:hadPrimarySource
-    source: darkkinasekb
-  - relation_type: prov:hadPrimarySource
-    source: epsd
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: iptmnet
-  - relation_type: prov:hadPrimarySource
-    source: kegg
-  - relation_type: prov:hadPrimarySource
     source: kinace
-  - relation_type: prov:hadPrimarySource
+  product_url: https://kinet.kinametrix.com/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: coralkinome
+  - relation_type: prov:wasDerivedFrom
+    source: darkkinasekb
+  - relation_type: prov:wasDerivedFrom
+    source: epsd
+  - relation_type: prov:wasDerivedFrom
+    source: hgnc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
     source: kinhub
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
-  - relation_type: prov:hadPrimarySource
+  - relation_type: prov:wasDerivedFrom
     source: uniprot
-  product_url: https://kinace.kinametrix.com/
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -1796,6 +1797,230 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+- category: GraphProduct
+  compression: gzip
+  description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
+    with Entrez Gene identifiers.
+  edge_count: 1125494
+  format: tsv
+  id: humannet.network
+  latest_version: v3
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: HumanNet Network File
+  node_count: 18462
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_file_size: 12310221
+  product_url: https://www.inetbio.org/humannetv3/networks/HumanNet-XC.tsv.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: metacyc
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+- category: GraphProduct
+  compression: gzip
+  description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
+    with gene symbols.
+  edge_count: 1125494
+  format: tsv
+  id: humannet.network.symbol
+  latest_version: v3
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: HumanNet Network File (Gene Symbols)
+  node_count: 18462
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_file_size: 13925784
+  product_url: https://www.inetbio.org/humannetv3/networks/HumanNet-XC.symbol.tsv.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: metacyc
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+- category: Product
+  description: Downloadable gene set files in GMT, XML, and other formats for human
+    collections including hallmarks, curated pathways, ontologies, and computational
+    signatures; free registration is required for downloads
+  format: mixed
+  id: msigdb.downloads.human
+  name: MSigDB Human Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: Product
+  description: Downloadable gene set files for mouse collections including mouse-ortholog
+    hallmarks, curated pathways, ontologies, and cell type signatures; free registration
+    is required for downloads
+  format: mixed
+  id: msigdb.downloads.mouse
+  name: MSigDB Mouse Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: ProgrammingInterface
+  description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
+    similar entities, model metadata, and explanation endpoints
+  format: http
+  id: openpredict.api
+  name: OpenPredict API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+- category: Product
+  description: Pre-computed prediction outputs exposed through API operations for
+    predicted drugs, predicted diseases, similar entities, and evidence paths
+  format: mixed
+  id: openpredict.predictions
+  name: OpenPredict Prediction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: openpredict
+  product_url: https://openpredict.semanticscience.org/docs
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+  warnings:
+  - Prediction results are exposed through POST/GET API operations rather than as
+    a stable public bulk data file.
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - id: doi:10.1093/nar/gkae909
   preferred: true

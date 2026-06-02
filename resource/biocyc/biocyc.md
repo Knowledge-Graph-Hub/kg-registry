@@ -742,6 +742,43 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: GraphicalInterface
+  description: Interactive web interface for browsing and analyzing iModulons across
+    15 prokaryotic organisms with 22 datasets, 1924 curated iModulons, and 9576 expression
+    profiles. Includes organism-specific dataset pages, iModulon dashboards, gene
+    search functionality, and project information pages displaying experimental conditions
+    and publication abstracts.
+  format: http
+  id: imodulondb.browser
+  name: iModulonDB Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://imodulondb.org/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: biocyc
+  - relation_type: prov:wasInformedBy
+    source: string
+- category: Product
+  description: Downloadable transcriptomic datasets and iModulon decompositions for
+    15 organisms including E. coli, B. subtilis, S. aureus, M. tuberculosis, P. aeruginosa,
+    P. putida, and others. Includes gene expression matrices, iModulon activity matrices,
+    gene weights, and metadata for over 9500 expression profiles from 525 studies.
+  format: mixed
+  id: imodulondb.datasets
+  name: iModulonDB Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: imodulondb
+  product_url: https://imodulondb.org/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: biocyc
+  - relation_type: prov:wasDerivedFrom
+    source: sra
+  - relation_type: prov:wasInformedBy
+    source: string
 taxon:
 - NCBITaxon:2759
 ---

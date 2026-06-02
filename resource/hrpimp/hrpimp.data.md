@@ -1,18 +1,24 @@
 ---
 category: Product
-description: TSV files containing systematically mapped binary protein-protein interactions
-  for 9,094 human proteins with 64,006 validated interactions
+description: Current HuRI TSV file containing 52,569 systematically mapped binary
+  human protein-protein interactions, provided as interacting Ensembl gene ID pairs
 format: tsv
 id: hrpimp.data
+latest_version: HuRI
 name: HuRI Protein-Protein Interaction Data
 original_source:
 - relation_type: prov:hadPrimarySource
   source: hrpimp
-product_url: https://github.com/VIDallab/huri
-warnings:
-- File was not able to be retrieved when checked on 2026-05-31_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-  accessing file
+- relation_type: prov:hadPrimarySource
+  source: huri
+product_file_size: 1681536
+product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+secondary_source:
+- relation_type: prov:wasInformedBy
+  source: gencode
+- relation_type: prov:wasInformedBy
+  source: ensembl
+- relation_type: prov:wasInformedBy
+  source: hgnc
 layout: product_detail
 ---

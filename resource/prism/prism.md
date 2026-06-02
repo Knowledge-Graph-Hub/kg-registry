@@ -29,7 +29,8 @@ layout: resource_detail
 name: PRISM
 products:
 - category: GraphicalInterface
-  description: Web interface for exploring the PRISM Repurposing drug-screening resource through DepMap
+  description: Web interface for exploring the PRISM Repurposing drug-screening resource
+    through DepMap
   format: http
   id: prism.portal
   name: PRISM Repurposing Resource
@@ -38,7 +39,8 @@ products:
     source: prism
   product_url: https://depmap.org/repurposing/
 - category: Product
-  description: DepMap downloads page for PRISM Repurposing primary and secondary screen data
+  description: DepMap downloads page for PRISM Repurposing primary and secondary screen
+    data
   format: csv
   id: prism.datasets
   name: PRISM Drug Sensitivity Dataset Downloads
@@ -49,8 +51,12 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: depmap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: Product
-  description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing screen of pooled-cell line chemical-perturbation viability measurements
+  description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing
+    screen of pooled-cell line chemical-perturbation viability measurements
   format: csv
   id: prism.primary_screen_lfc
   name: PRISM Repurposing Primary Screen Log-Fold Change
@@ -61,8 +67,12 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: depmap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: Product
-  description: Dose-response curve parameter matrix from the secondary PRISM Repurposing screen of 1,448 compounds across cancer cell lines
+  description: Dose-response curve parameter matrix from the secondary PRISM Repurposing
+    screen of 1,448 compounds across cancer cell lines
   format: csv
   id: prism.secondary_screen_dose_response
   name: PRISM Repurposing Secondary Screen Dose Response
@@ -73,6 +83,9 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: depmap
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: ProgrammingInterface
   description: API access to PRISM drug screening data
   format: http
@@ -165,6 +178,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+- category: Product
+  description: Drug screening data from various platforms including GDSC, PRISM, and
+    CTD2
+  format: csv
+  id: depmap.drug_sensitivity
+  name: DepMap Drug Sensitivity Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  product_url: https://depmap.org/portal/data_page/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: prism
+  - relation_type: prov:wasDerivedFrom
+    source: ctd2
 publications:
 - authors:
   - Steven M Corsello
@@ -177,7 +207,8 @@ publications:
   id: doi:10.1038/s43018-019-0018-6
   journal: Nature Cancer
   preferred: true
-  title: Discovering the anticancer potential of non-oncology drugs by systematic viability profiling
+  title: Discovering the anticancer potential of non-oncology drugs by systematic
+    viability profiling
   year: '2020'
 synonyms:
 - PRISM

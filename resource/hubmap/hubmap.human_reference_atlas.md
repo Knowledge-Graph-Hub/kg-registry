@@ -7,9 +7,12 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Human Reference Atlas
-product_url: https://humanatlas.io/
-layout: product_detail
 original_source:
-  - source: hubmap
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: hubmap
+product_url: https://humanatlas.io/
+secondary_source:
+- relation_type: prov:wasDerivedFrom
+  source: hra
+layout: product_detail
 ---

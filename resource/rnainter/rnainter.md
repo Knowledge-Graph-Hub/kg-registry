@@ -23,7 +23,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rnainter
   product_url: http://www.rnainter.org/
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

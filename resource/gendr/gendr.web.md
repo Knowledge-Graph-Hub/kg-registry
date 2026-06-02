@@ -5,8 +5,8 @@ format: http
 id: gendr.web
 name: GenDR Web Interface
 original_source:
-  - source: gendr
-    relation_type: prov:hadPrimarySource
-product_url: http://genomics.senescence.info/diet/
+- relation_type: prov:hadPrimarySource
+  source: gendr
+product_url: https://hagr.ageing-map.org/diet/
 layout: product_detail
 ---

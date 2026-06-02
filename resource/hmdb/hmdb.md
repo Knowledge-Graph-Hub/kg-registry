@@ -46,11 +46,11 @@ products:
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolite metabolizing enzyme gene sequences (FASTA)
@@ -62,9 +62,9 @@ products:
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolite structures (SDF)
@@ -76,11 +76,11 @@ products:
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#structures
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolites dataset (XML)
@@ -850,6 +850,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -1713,6 +1717,64 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: ProgrammingInterface
+  description: MarkerDB API documentation and endpoint examples for condition, chemical,
+    genetic, protein, and karyotype biomarker records.
+  format: http
+  id: markerdb.api
+  name: MarkerDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/markerdb_api
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: Product
+  description: TSV export of MarkerDB chemical biomarkers with associated conditions
+    and concentration data.
+  format: tsv
+  id: markerdb.chemicals.tsv
+  name: MarkerDB Chemical Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_chemicals?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
+- category: GraphicalInterface
+  description: Public library of pathway diagrams that can be browsed, viewed, and
+    used as templates for creating new pathways
+  format: http
+  id: pathwhiz.pathways
+  name: PathWhiz Pathway Library
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwhiz
+  product_url: https://pathbank.org/pathwhiz/pathways
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: drugbank
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pathbank
 taxon:
 - NCBITaxon:9606
 ---

@@ -2415,9 +2415,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -3482,24 +3482,18 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
-- category: GraphProduct
-  description: ProteomeHD data files
+- category: Product
+  compression: 7z
+  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
+    measured across 294 SILAC ratios
+  format: csv
   id: proteomehd.data
   name: ProteomeHD Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+  product_file_size: 9427082
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/ProteomeHD_v1_1.7z
 - category: Product
   description: reactome Nodes TSV
   format: tsv
@@ -3520,6 +3514,10 @@ products:
     Knowledge Graph.
   format: neo4j
   id: ckg.graph
+  latest_version: '1'
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: CKG Graph Database Dump
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -4611,6 +4609,281 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+- category: GraphProduct
+  description: Downloadable GeneMANIA interaction network data organized by release
+    and organism, with individual networks, combined default networks, metadata, and
+    identifier mapping tables in plain tab-delimited text files
+  format: txt
+  id: genemania.networks
+  latest_version: current
+  name: GeneMANIA Interaction Network Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genemania
+  product_url: https://genemania.org/data/current/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+- category: GraphProduct
+  compression: gzip
+  description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
+    with Entrez Gene identifiers.
+  edge_count: 1125494
+  format: tsv
+  id: humannet.network
+  latest_version: v3
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: HumanNet Network File
+  node_count: 18462
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_file_size: 12310221
+  product_url: https://www.inetbio.org/humannetv3/networks/HumanNet-XC.tsv.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: metacyc
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+- category: GraphProduct
+  compression: gzip
+  description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
+    with gene symbols.
+  edge_count: 1125494
+  format: tsv
+  id: humannet.network.symbol
+  latest_version: v3
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC BY-SA 4.0
+  name: HumanNet Network File (Gene Symbols)
+  node_count: 18462
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humannet
+  product_file_size: 13925784
+  product_url: https://www.inetbio.org/humannetv3/networks/HumanNet-XC.symbol.tsv.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: metacyc
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+- category: Product
+  description: Downloadable gene set files in GMT, XML, and other formats for human
+    collections including hallmarks, curated pathways, ontologies, and computational
+    signatures; free registration is required for downloads
+  format: mixed
+  id: msigdb.downloads.human
+  name: MSigDB Human Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: Product
+  description: Downloadable gene set files for mouse collections including mouse-ortholog
+    hallmarks, curated pathways, ontologies, and cell type signatures; free registration
+    is required for downloads
+  format: mixed
+  id: msigdb.downloads.mouse
+  name: MSigDB Mouse Gene Sets Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  compression: zip
+  description: BioPAX3 format pathway data downloads organized by plant species
+  format: biopax
+  id: plant-reactome.biopax
+  is_public: true
+  name: Plant Reactome BioPAX3 Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: plant-reactome
+  product_file_size: 117969665
+  product_url: https://plantreactome.gramene.org/download/current/biopax3.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: reactome
+- category: Product
+  compression: targz
+  description: Scalable Vector Graphics (SVG) format pathway diagrams for interactive
+    and high-quality pathway visualization
+  format: svg
+  id: plant-reactome.svg
+  name: Plant Reactome SVG Diagrams
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: plant-reactome
+  product_file_size: 1739267260
+  product_url: https://plantreactome.gramene.org/download/current/diagrams.svg.tgz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: reactome
+- category: Product
+  compression: targz
+  description: PNG raster image format pathway diagrams for static pathway visualization
+  format: png
+  id: plant-reactome.png
+  name: Plant Reactome PNG Diagrams
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: plant-reactome
+  product_file_size: 557312428
+  product_url: https://plantreactome.gramene.org/download/current/diagrams.png.tgz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: reactome
+- category: MappingProduct
+  description: Tab-delimited identifier mapping file linking pathway identifiers with
+    associated genes across plant species
+  format: tsv
+  id: plant-reactome.mappings
+  name: Plant Reactome Identifier Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: plant-reactome
+  product_file_size: 24388295
+  product_url: https://plantreactome.gramene.org/download/current/gene_ids_by_pathway_and_species.tab
+  secondary_source:
+  - relation_type: prov:used
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: reactome
+- category: Product
+  compression: 7z
+  description: Reactome-derived true-positive and false-positive protein-pair gold
+    standard used in ProteomeHD analyses
+  format: csv
+  id: proteomehd.reactome_tp_fp
+  name: ProteomeHD Reactome Gold Standard
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  product_file_size: 12444513
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/Reactome_TP_FP.7z
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
 publications:
 - doi: doi:10.1093/nar/gkab1028
   id: doi:10.1093/nar/gkab1028

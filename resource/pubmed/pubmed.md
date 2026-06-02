@@ -269,12 +269,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
 - category: Product
-  description: Co-occurrence data from PubMed abstracts
+  description: Co-occurrence database generated from public PubMed abstracts with
+    entity normalization for Biolink-relevant biomedical concepts
   format: mixed
   id: omnicorp.cooccurrence
   name: OmniCorp Co-occurrence Data
@@ -284,8 +285,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
 - category: ProgrammingInterface
-  description: API access to OmniCorp co-occurrence data
+  description: API behavior documented for adding co-occurrence counts and literature
+    co-occurrence edges to TRAPI messages
   format: http
   id: omnicorp.api
   name: OmniCorp API
@@ -295,6 +300,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  secondary_source:
+  - relation_type: prov:used
+    source: biolink
+  warnings:
+  - The registry points to the Translator wiki documentation; checked RENCI OmniCorp
+    service URLs were unavailable or had certificate issues on 2026-06-02.
 - category: GraphProduct
   description: Anti-tumor biomaterial knowledge graph constructed from biomedicine
     literature, containing structured relationships among anti-tumor entities extracted
@@ -356,9 +367,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-05-31: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-01: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
     out'
 - category: Product
   compression: gzip
@@ -855,6 +866,99 @@ products:
   secondary_source:
   - relation_type: prov:wasInfluencedBy
     source: pubmed
+- category: ProgrammingInterface
+  connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+  description: E-utilities API for programmatic access to Entrez databases
+  format: json
+  id: entrez.eutils
+  name: Entrez E-utilities
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: entrez
+  product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+- category: Product
+  description: Downloadable dataset of dietary restriction-related genes
+  format: csv
+  id: gendr.data
+  latest_version: Build 4
+  name: GenDR Data Download
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gendr
+  product_file_size: 8209
+  product_url: https://hagr.ageing-map.org/diet/dataset.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+- category: Product
+  description: Excel spreadsheet of dietary-restriction gene expression signatures
+    from the HAGR meta-analysis of dietary restriction in mammals
+  format: http
+  id: gendr.expression-signatures
+  name: GenDR Dietary Restriction Expression Signatures
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gendr
+  product_file_size: 49152
+  product_url: https://hagr.ageing-map.org/diet/TableS2.xls
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+- category: GraphicalInterface
+  description: Web interface for searching and retrieving variant information from
+    35+ million PubMed articles with autocomplete, filtering, and entity highlighting
+  format: http
+  id: litvar.web_interface
+  name: LitVar Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clingen
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:used
+    source: pubtator
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to variant summaries, publications,
+    search, and gene-level variant queries
+  format: http
+  id: litvar.api
+  name: LitVar API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: litvar
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2-api/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: clingen
+  - relation_type: prov:wasInformedBy
+    source: clinvar
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:used
+    source: pubtator
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

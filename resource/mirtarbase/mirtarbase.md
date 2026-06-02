@@ -47,7 +47,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
@@ -55,7 +55,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - category: Product
   description: Dataset of microRNA target sites with detailed binding site information
@@ -80,7 +80,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
@@ -88,7 +88,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - category: Product
   description: Species-specific microRNA-target interaction datasets in CSV format
@@ -113,7 +113,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
@@ -121,7 +121,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - category: Product
   description: Curated datasets filtered for strong experimental evidence including
@@ -146,7 +146,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
@@ -154,7 +154,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - category: Product
   description: Archive of previous miRTarBase releases for reproducibility and historical
@@ -179,7 +179,7 @@ products:
     to URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries
     exceeded with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
     '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2026-05-31: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
     to URL: HTTPSConnectionPool(host=''mirtarbase.cuhk.edu.cn'', port=443): Max retries
@@ -187,7 +187,7 @@ products:
     ''[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)'')))'
   - 'File was not able to be retrieved when checked on 2026-05-23: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -230,6 +230,55 @@ products:
   - relation_type: prov:hadPrimarySource
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
+  id: pathway-commons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - authors:
   - Cui S

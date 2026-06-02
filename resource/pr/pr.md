@@ -52,9 +52,9 @@ products:
   name: pro_nonreasoned.owl
   product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: PRO without reasoning applied, OBO format.
@@ -63,9 +63,9 @@ products:
   name: pro_nonreasoned.obo
   product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -109,10 +109,12 @@ products:
     source: unii
   product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
 - category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
+  description: Plover-hosted TRAPI web API for querying the Multiomics Microbiome
+    knowledge graph
   format: http
   id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+  is_public: true
+  name: MicrobiomeKG Plover TRAPI API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biolink

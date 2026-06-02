@@ -72,9 +72,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -89,9 +89,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
@@ -117,9 +117,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
   description: Annual comprehensive Catalogue of Life releases (Base Release with
@@ -160,13 +160,14 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  - relation_type: prov:hadPrimarySource
-    source: catalogue-of-life
-  - relation_type: prov:hadPrimarySource
-    source: gbif
-  - relation_type: prov:hadPrimarySource
-    source: itis
   product_url: https://mangal.io/
+  secondary_source:
+  - relation_type: prov:used
+    source: catalogue-of-life
+  - relation_type: prov:used
+    source: gbif
+  - relation_type: prov:used
+    source: itis
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to network data and metadata
   format: http
@@ -176,13 +177,16 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  - relation_type: prov:hadPrimarySource
-    source: catalogue-of-life
-  - relation_type: prov:hadPrimarySource
-    source: gbif
-  - relation_type: prov:hadPrimarySource
-    source: itis
   product_url: https://api.mangal.io/
+  secondary_source:
+  - relation_type: prov:used
+    source: catalogue-of-life
+  - relation_type: prov:used
+    source: gbif
+  - relation_type: prov:used
+    source: itis
+  warnings:
+  - Host api.mangal.io was not resolvable when checked on 2026-06-02.
 - category: DocumentationProduct
   description: API documentation, user guides, and data model specification
   format: http
@@ -191,12 +195,6 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mangal
-  - relation_type: prov:hadPrimarySource
-    source: catalogue-of-life
-  - relation_type: prov:hadPrimarySource
-    source: gbif
-  - relation_type: prov:hadPrimarySource
-    source: itis
   product_url: https://mangal.io/documentation
 - category: GraphicalInterface
   description: Interactive web portal for searching, exploring, and discovering biodiversity
@@ -239,6 +237,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gbif
   product_url: https://graph.openbiodiv.net/webapi
+- category: ProcessProduct
+  description: R package for retrieving and exploring data from the Mangal ecological
+    interactions database
+  format: http
+  id: mangal.rmangal
+  name: rmangal R Client
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mangal
+  product_url: https://docs.ropensci.org/rmangal/
+  secondary_source:
+  - relation_type: prov:used
+    source: catalogue-of-life
+  - relation_type: prov:used
+    source: gbif
+  - relation_type: prov:used
+    source: itis
 publications:
 - authors:
   - Robertson T

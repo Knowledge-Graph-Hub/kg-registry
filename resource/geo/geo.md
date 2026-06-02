@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
-  label: Bill Hogan
-  orcid: 0000-0002-9881-1017
   contact_details:
   - contact_type: email
     value: hoganwr@gmail.com
   - contact_type: github
     value: hoganwr
+  label: Bill Hogan
+  orcid: 0000-0002-9881-1017
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of geographical entities
 domains:
@@ -902,6 +902,33 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tcga
   product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+- category: GraphProduct
+  description: Downloadable GeneMANIA interaction network data organized by release
+    and organism, with individual networks, combined default networks, metadata, and
+    identifier mapping tables in plain tab-delimited text files
+  format: txt
+  id: genemania.networks
+  latest_version: current
+  name: GeneMANIA Interaction Network Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genemania
+  product_url: https://genemania.org/data/current/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
 publications: []
 repository: https://github.com/ufbmi/geographical-entity-ontology
 ---

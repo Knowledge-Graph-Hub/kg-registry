@@ -2,23 +2,29 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://cebs.niehs.nih.gov/
-    label: NIEHS
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: CEBS-support@mail.nih.gov
-    label: CEBS Support
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://cebs.niehs.nih.gov/
+  label: NIEHS
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: CEBS-support@mail.nih.gov
+  label: CEBS Support
 creation_date: '2025-11-05T00:00:00Z'
-description: Chemical Effects in Biological Systems (CEBS) is a public, web-accessible, manually curated repository of toxicology study data from the National Toxicology Program (NTP) and other research programs. CEBS contains individual-level and summarized study data from carcinogenicity studies, short-term toxicity studies, genetic toxicity assays, and other toxicological investigations. The database integrates chemical structure information, study designs, experimental conditions, and biological effects to support toxicology research and risk assessment.
+description: Chemical Effects in Biological Systems (CEBS) is a public, web-accessible,
+  manually curated repository of toxicology study data from the National Toxicology
+  Program (NTP) and other research programs. CEBS contains individual-level and summarized
+  study data from carcinogenicity studies, short-term toxicity studies, genetic toxicity
+  assays, and other toxicological investigations. The database integrates chemical
+  structure information, study designs, experimental conditions, and biological effects
+  to support toxicology research and risk assessment.
 domains:
-  - toxicology
-  - biomedical
-  - health
-  - public health
+- toxicology
+- biomedical
+- health
+- public health
 homepage_url: https://cebs.niehs.nih.gov/
 id: cebs
 infores_id: cebs
@@ -26,75 +32,74 @@ last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: CEBS
 products:
-  - category: GraphicalInterface
-    description: Web interface for searching and browsing CEBS toxicology data
-    format: http
-    id: cebs.web
-    name: CEBS Search Interface
-    original_source:
-      - source: cebs
-        relation_type: prov:hadPrimarySource
-    product_url: https://cebs.niehs.nih.gov/cebs/search
-  - category: Product
-    description: Toxicology study data from NTP and other programs
-    format: mixed
-    id: cebs.data
-    name: CEBS Study Data
-    original_source:
-      - source: cebs
-        relation_type: prov:hadPrimarySource
-    product_url: https://cebs.niehs.nih.gov/cebs/
-  - category: ProgrammingInterface
-    connection_url: https://manticore.niehs.nih.gov/cebsapi/v1
-    description: Programmatic API access to CEBS data, documented by the CEBS API
-      user help
-    format: http
-    id: cebs.api
-    name: CEBS API
-    original_source:
-      - source: cebs
-        relation_type: prov:hadPrimarySource
-    product_url: https://tools.niehs.nih.gov/cebs3/support/assets/docs/CEBS_API-User-Help.pdf
-  - category: DocumentationProduct
-    description: CEBS citation guidance for referencing the database and study URLs
-    format: pdf
-    id: cebs.citation-guide
-    name: Citing CEBS
-    original_source:
-      - source: cebs
-        relation_type: prov:hadPrimarySource
-    product_url: https://cebs.niehs.nih.gov/cebs/support/download/Citing-CEBS.pdf
+- category: GraphicalInterface
+  description: Web interface for searching and browsing CEBS toxicology data
+  format: http
+  id: cebs.web
+  name: CEBS Search Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  product_url: https://cebs.niehs.nih.gov/cebs/search
+- category: Product
+  description: Toxicology study data from NTP and other programs
+  format: mixed
+  id: cebs.data
+  name: CEBS Study Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  product_url: https://cebs.niehs.nih.gov/cebs/
+- category: ProgrammingInterface
+  connection_url: https://manticore.niehs.nih.gov/cebsapi/v1
+  description: Programmatic API access to CEBS data, documented by the CEBS API user
+    help
+  format: http
+  id: cebs.api
+  name: CEBS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  product_url: https://tools.niehs.nih.gov/cebs3/support/assets/docs/CEBS_API-User-Help.pdf
+- category: DocumentationProduct
+  description: CEBS citation guidance for referencing the database and study URLs
+  format: pdf
+  id: cebs.citation-guide
+  name: Citing CEBS
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cebs
+  product_file_size: 152093
+  product_url: https://cebs.niehs.nih.gov/cebs/support/download/Citing-CEBS.pdf
 publications:
-  - authors:
-      - Cari Martini
-      - Ying Frances Liu
-      - Hui Gong
-      - Nicole Sayers
-      - German Segura
-      - Jennifer Fostel
-    doi: 10.1093/nar/gkab981
-    id: doi:10.1093/nar/gkab981
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'CEBS update: curated toxicology database with enhanced tools for data
-      integration'
-    year: '2021'
-  - authors:
-      - Isabel A. Lea
-      - Hui Gong
-      - Anand Paleja
-      - Asif Rashid
-      - Jennifer Fostel
-    doi: 10.1093/nar/gkw1077
-    id: doi:10.1093/nar/gkw1077
-    journal: Nucleic Acids Research
-    title: 'CEBS: a comprehensive annotated database of toxicological data'
-    year: '2017'
+- authors:
+  - Cari Martini
+  - Ying Frances Liu
+  - Hui Gong
+  - Nicole Sayers
+  - German Segura
+  - Jennifer Fostel
+  doi: 10.1093/nar/gkab981
+  id: doi:10.1093/nar/gkab981
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'CEBS update: curated toxicology database with enhanced tools for data integration'
+  year: '2021'
+- authors:
+  - Isabel A. Lea
+  - Hui Gong
+  - Anand Paleja
+  - Asif Rashid
+  - Jennifer Fostel
+  doi: 10.1093/nar/gkw1077
+  id: doi:10.1093/nar/gkw1077
+  journal: Nucleic Acids Research
+  title: 'CEBS: a comprehensive annotated database of toxicological data'
+  year: '2017'
 synonyms:
-  - CEBS
-  - Chemical Effects in Biological Systems
+- CEBS
+- Chemical Effects in Biological Systems
 ---
-
 # Chemical Effects in Biological Systems
 
 ## Overview
