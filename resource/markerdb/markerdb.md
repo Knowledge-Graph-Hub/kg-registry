@@ -2,15 +2,17 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-05-29T00:00:00Z'
-description: MarkerDB is a molecular biomarker database containing biomarker information
-  across clinical and biomedical domains.
+description: MarkerDB 2.0 is a freely available molecular biomarker database that
+  consolidates clinical and selected pre-clinical biomarkers across protein, chemical,
+  genetic, karyotype, diagnostic, prognostic, monitoring, safety, response, exposure,
+  and risk categories.
 domains:
 - biomedical
 - clinical
 - health
 homepage_url: https://markerdb.ca/
 id: markerdb
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: MarkerDB
 products:
@@ -18,11 +20,97 @@ products:
   description: MarkerDB website for searching and browsing biomarker records.
   format: http
   id: markerdb.web
-  name: MarkerDB Web Resource
+  name: MarkerDB Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
     source: markerdb
   product_url: https://markerdb.ca/
+- category: ProgrammingInterface
+  description: MarkerDB API documentation and endpoint examples for condition, chemical,
+    genetic, protein, and karyotype biomarker records.
+  format: http
+  id: markerdb.api
+  name: MarkerDB API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/markerdb_api
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: omim
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: DocumentationProduct
+  description: MarkerDB downloads page listing public TSV and XML exports for biomarker
+    classes and categories.
+  format: http
+  id: markerdb.downloads
+  name: MarkerDB Downloads Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/downloads
+- category: Product
+  description: TSV export of MarkerDB protein biomarkers with associated conditions
+    and concentration data.
+  format: tsv
+  id: markerdb.proteins.tsv
+  name: MarkerDB Protein Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_proteins?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+- category: Product
+  description: TSV export of MarkerDB chemical biomarkers with associated conditions
+    and concentration data.
+  format: tsv
+  id: markerdb.chemicals.tsv
+  name: MarkerDB Chemical Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_chemicals?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+- category: Product
+  description: TSV export of MarkerDB genetic biomarkers with associated conditions.
+  format: tsv
+  id: markerdb.sequence_variants.tsv
+  name: MarkerDB Genetic Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_sequence_variants?format=tsv
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dbsnp
+  - relation_type: prov:wasInformedBy
+    source: gwascatalog
+  - relation_type: prov:wasInformedBy
+    source: omim
+- category: Product
+  description: TSV export of MarkerDB karyotype biomarkers with associated conditions.
+  format: tsv
+  id: markerdb.karyotypes.tsv
+  name: MarkerDB Karyotype Biomarkers TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: markerdb
+  product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -599,6 +687,50 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Hayley Jackson
+  - Eponine Oler
+  - Claudia Torres-Calzada
+  - Ray Kruger
+  - Amandeep Singh Hira
+  - Yamile Lopez-Hernandez
+  - Devanshi Pandit
+  - Jiaxuan Wang
+  - Kellie Yang
+  - Omolola Fatokun
+  - Mark Berjanskii
+  - Scott MacKay
+  - Tanvir Sajed
+  - Scott Han
+  - Robyn Woudstra
+  - Gina Sykes
+  - Jenna Poelzer
+  - Aadhavya Sivakumaran
+  - Vasuk Gautam
+  - Gane Wong
+  - David S. Wishart
+  doi: 10.1093/nar/gkae1056
+  id: doi:10.1093/nar/gkae1056
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'MarkerDB 2.0: a comprehensive molecular biomarker database for 2025'
+  year: '2025'
+- authors:
+  - David S. Wishart
+  - Brendan Bartok
+  - Eponine Oler
+  - Kevin Y. H. Liang
+  - Zachary Budinski
+  - Mark Berjanskii
+  - AnChi Guo
+  - Xuan Cao
+  - Michael Wilson
+  doi: 10.1093/nar/gkaa1067
+  id: doi:10.1093/nar/gkaa1067
+  journal: Nucleic Acids Research
+  title: 'MarkerDB: an online database of molecular biomarkers'
+  year: '2021'
 ---
 # MarkerDB
 
