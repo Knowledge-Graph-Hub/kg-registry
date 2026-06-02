@@ -8,9 +8,6 @@ contacts:
     value: https://motrpac-data.org/contact
   label: MoTrPAC BioInformatics Center
 creation_date: '2025-10-29T00:00:00Z'
-curators:
-- category: Organization
-  label: MoTrPAC BioInformatics Center at Stanford University
 description: The Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data
   Hub is a national research initiative that generates a comprehensive molecular map
   of the effects of exercise and physical activity training. The data repository provides
@@ -31,7 +28,7 @@ domains:
 - systems biology
 homepage_url: https://motrpac-data.org/
 id: motrpac
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -48,6 +45,45 @@ products:
   - relation_type: prov:hadPrimarySource
     source: motrpac
   product_url: https://motrpac-data.org/data-download
+- category: GraphicalInterface
+  description: Data search interface for finding molecular features and study results
+    across MoTrPAC data releases
+  format: http
+  id: motrpac.search
+  name: MoTrPAC Data Search
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://motrpac-data.org/search
+- category: DocumentationProduct
+  description: Data access information for using MoTrPAC public and controlled-access
+    data
+  format: http
+  id: motrpac.data-access
+  name: MoTrPAC Data Access Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://motrpac-data.org/data-access
+- category: DocumentationProduct
+  description: MoTrPAC source-code and analysis repository index linked from the Data
+    Hub
+  format: http
+  id: motrpac.code-repositories
+  name: MoTrPAC Code Repositories
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://motrpac-data.org/code-repositories
+- category: DocumentationProduct
+  description: Publication index for MoTrPAC marker, data-release, and analysis papers
+  format: http
+  id: motrpac.publications
+  name: MoTrPAC Publications
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: motrpac
+  product_url: https://motrpac-data.org/publications
 - category: Product
   description: Phenotypic data from young adult rats (6-month old) that performed
     endurance exercise training
