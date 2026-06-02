@@ -19,7 +19,7 @@ domains:
 - investigations
 homepage_url: https://www.mrbase.org/
 id: mrbase
-last_modified_date: '2025-09-03T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: MR-Base
 products:
@@ -33,6 +33,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://www.mrbase.org/
+  warnings:
+  - The legacy MR-Base homepage redirected to an HTTPS endpoint with a certificate
+    mismatch for www.mrbase.org when checked on 2026-06-02.
 - category: GraphicalInterface
   description: Interactive Shiny-based web application for performing two-sample Mendelian
     randomization analyses using curated GWAS summary datasets
@@ -44,6 +47,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: http://app.mrbase.org/
+  warnings:
+  - The legacy MR-Base web application timed out when checked on 2026-06-02.
 - category: GraphicalInterface
   description: Phenome-wide association study (PheWAS) web interface enabling exploration
     of SNP-trait associations and hypothesis-free MR scans
@@ -55,6 +60,34 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://gwas.mrcieu.ac.uk/phewas/
+- category: GraphicalInterface
+  description: IEU OpenGWAS browser for exploring the harmonized GWAS dataset catalog
+    now used by MR-Base-related tooling
+  format: http
+  id: opengwas.portal
+  is_public: true
+  name: IEU OpenGWAS Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: opengwas
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: mrbase
+  product_url: https://opengwas.io/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to IEU OpenGWAS study information,
+    top hits, association records, LD proxies, and related MR-Base analysis inputs
+  format: http
+  id: opengwas.api
+  is_public: true
+  name: IEU OpenGWAS API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: opengwas
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: mrbase
+  product_url: https://api.opengwas.io/api/
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to harmonized GWAS summary
     statistics, LD proxy lookup, instruments, and MR result generation
@@ -65,6 +98,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: http://api.mrbase.org/
+  warnings:
+  - The legacy MR-Base API returned HTTP 503 when checked on 2026-06-02; current
+    OpenGWAS API access is represented by opengwas.api.
 - category: ProgrammingInterface
   description: TwoSampleMR R package supporting data extraction, harmonization, instrument
     selection, MR analysis methods, diagnostics, and reproducible code generation
@@ -74,6 +110,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
+  secondary_source:
+  - relation_type: prov:used
+    source: opengwas
   product_url: https://github.com/MRCIEU/TwoSampleMR
 - category: ProgrammingInterface
   description: MRInstruments R package containing curated instruments (top hits) across
@@ -94,6 +133,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mrbase
+  secondary_source:
+  - relation_type: prov:used
+    source: opengwas
   product_url: https://mrcieu.github.io/TwoSampleMR/
 - category: DocumentationProduct
   description: Methods paper analysis reproduction code repository for MR-Base platform
@@ -147,6 +189,36 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://docs.epigraphdb.org/graph-database/
+publications:
+- authors:
+  - Gibran Hemani
+  - Jie Zheng
+  - Benjamin Elsworth
+  - Kaitlin H. Wade
+  - Valeriia Haberland
+  - Denis Baird
+  - Charles Laurin
+  - Stephen Burgess
+  - Jack Bowden
+  - Rebecca Langdon
+  - Vanessa Y. Tan
+  - James Yarmolinsky
+  - Hashem A. Shihab
+  - Nicholas J. Timpson
+  - David M. Evans
+  - Caroline L. Relton
+  - Richard M. Martin
+  - George Davey Smith
+  - Tom R. Gaunt
+  - Philip C. Haycock
+  category: Publication
+  doi: 10.7554/eLife.34408
+  id: doi:10.7554/eLife.34408
+  journal: eLife
+  preferred: true
+  title: The MR-Base platform supports systematic causal inference across the human
+    phenome
+  year: '2018'
 taxon:
 - NCBITaxon:9606
 ---
@@ -157,7 +229,8 @@ MR-Base integrates thousands of harmonized genome-wide association study (GWAS) 
 ## Components
 
 - Web applications (main portal, analysis web app, PheWAS interface)
-- REST API for programmatic dataset and association queries
+- REST API access for programmatic dataset and association queries, with current
+  OpenGWAS API access represented separately from the legacy MR-Base API endpoint
 - R packages (TwoSampleMR and MRInstruments) for data access, methods, and reproducible workflows
 - Harmonized GWAS summary statistics, LD proxy index, and curated instrument catalogs
 - Documentation and published methodology (eLife 2018 platform paper)
