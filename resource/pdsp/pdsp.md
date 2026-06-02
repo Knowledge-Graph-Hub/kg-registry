@@ -17,7 +17,7 @@ domains:
 homepage_url: https://pdsp.unc.edu/
 id: pdsp
 infores_id: pdsp
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: Psychoactive Drug Screening Program
 products:
@@ -31,14 +31,25 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://pdsp.unc.edu/databases/kidb.php
   - category: Product
-    description: Receptor binding affinity data for psychoactive compounds
+    description: Downloadable PDSP Ki values with SMILES codes for receptor binding
+      affinity data on psychoactive compounds
     format: csv
     id: pdsp.data
     name: PDSP Binding Data
     original_source:
       - source: pdsp
         relation_type: prov:hadPrimarySource
-    product_url: https://pdsp.unc.edu/databases/kidb.php
+    product_url: https://pdsp.unc.edu/databases/kiDownload/
+  - category: GraphicalInterface
+    description: PDSP Ki Database data-mining interface for customized searches across
+      Ki records
+    format: http
+    id: pdsp.data_mining
+    name: PDSP Ki Data Mining Tools
+    original_source:
+      - source: pdsp
+        relation_type: prov:hadPrimarySource
+    product_url: https://pdsp.unc.edu/databases/dataMining/
   - category: DocumentationProduct
     description: Screening assay protocols and methodologies
     format: pdf
@@ -49,6 +60,19 @@ products:
         relation_type: prov:hadPrimarySource
     product_file_size: 24885088
     product_url: https://pdsp.unc.edu/pdspweb/content/PDSP%20Protocols%20II%202013-03-28.pdf
+publications:
+  - authors:
+      - Roth BL
+      - Kroeze WK
+      - Patel S
+      - Lopez E
+    journal: The Neuroscientist
+    doi: 10.1177/107385840000600408
+    id: doi:10.1177/107385840000600408
+    preferred: true
+    title: 'The multiplicity of serotonin receptors: uselessly diverse molecules
+      or an embarrassment of riches?'
+    year: '2000'
 synonyms:
   - PDSP
   - NIMH PDSP
