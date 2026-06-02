@@ -2,20 +2,20 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-05-29T00:00:00Z'
-description: PTMD is a resource describing post-translational modification and disease
-  relationships for biomedical research.
+description: PTMD 2.0 is a human post-translational modification and disease association
+  resource that integrates experimentally supported PTM-disease associations with
+  potential associations and disease-protein annotations.
 domains:
 - biomedical
 - proteomics
 homepage_url: https://ptmd.biocuckoo.cn/
 id: ptmd
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: PTMD
 products:
-- category: Product
-  description: PTMD website with post-translational modification disease association
-    data.
+- category: GraphicalInterface
+  description: PTMD 2.0 website for browsing and searching human post-translational modification disease association data.
   format: http
   id: ptmd.web
   name: PTMD Web Resource
@@ -23,6 +23,58 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ptmd
   product_url: https://ptmd.biocuckoo.cn/
+- category: Product
+  compression: zip
+  description: Complete PTMD 2.0 PTM-disease association download in tab-delimited format
+  format: tsv
+  id: ptmd.total_pda
+  name: PTMD Total PTM-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ptmd
+  product_file_size: 4756362
+  product_url: https://ptmd.biocuckoo.cn/Download/Total.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: activedriverdb
+  - relation_type: prov:wasDerivedFrom
+    source: biomuta
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+- category: Product
+  compression: zip
+  description: PTMD 2.0 PTM-disease association subset for phosphorylation modification events
+  format: tsv
+  id: ptmd.phosphorylation_pda
+  name: PTMD Phosphorylation PTM-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ptmd
+  product_file_size: 2902073
+  product_url: https://ptmd.biocuckoo.cn/Download/Phosphorylation.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+- category: Product
+  compression: zip
+  description: PTMD 2.0 PTM-disease association subset for up-regulated PTM events in disease
+  format: tsv
+  id: ptmd.upregulation_pda
+  name: PTMD Up-Regulation PTM-Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ptmd
+  product_file_size: 333577
+  product_url: https://ptmd.biocuckoo.cn/Download/Up-regulation.zip
+- category: Product
+  description: PTMD 2.0 download page with PTM-disease association files by modification type, regulation type, tissue location, and annotation source
+  format: http
+  id: ptmd.downloads
+  name: PTMD Download Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ptmd
+  product_url: https://ptmd.biocuckoo.cn/download.php
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -599,7 +651,35 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Xinhe Huang
+  - Zihao Feng
+  - Dan Liu
+  - Yu Xue
+  doi: 10.1093/nar/gkae850
+  id: doi:10.1093/nar/gkae850
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'PTMD 2.0: an updated database of disease-associated post-translational modifications'
+  year: '2025'
+- authors:
+  - Haodong Xu
+  - Yongbo Wang
+  - Shaofeng Lin
+  - Wankun Deng
+  - Di Peng
+  - Qinghua Cui
+  - Yu Xue
+  doi: 10.1016/j.gpb.2018.06.004
+  id: doi:10.1016/j.gpb.2018.06.004
+  journal: Genomics, Proteomics & Bioinformatics
+  title: 'PTMD: A Database of Human Disease-associated Post-translational Modifications'
+  year: '2018'
+taxon:
+- NCBITaxon:9606
+version: '2.0'
 ---
 # PTMD
 
-PTMD is a data source focused on post-translational modification relationships in disease contexts.
+PTMD 2.0 is a human post-translational modification disease association resource. The current site provides browser/search interfaces and downloadable ZIP archives for PTM-disease associations grouped by modification type, regulation type, tissue location, and annotation source.
