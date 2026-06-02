@@ -983,12 +983,10 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -1037,12 +1035,10 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 publications:
 - authors:
   - Zdrazil B
@@ -1058,7 +1054,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - Kizilören T
+  - "Kizil\xF6ren T"
   - Gaulton A
   - Bento AP
   - Adasme MF

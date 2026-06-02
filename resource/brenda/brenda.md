@@ -86,6 +86,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   product_url: https://www.brenda-enzymes.org/help.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -134,9 +137,9 @@ publications:
 - authors:
   - Hauenstein, J.
   - Jeske, L.
-  - "J\xE4de, A."
+  - Jäde, A.
   - Krull, M.
-  - "D\xFCmmer, K."
+  - Dümmer, K.
   - Koblitz, J.
   - Tietz, A.
   - Jahn, D.

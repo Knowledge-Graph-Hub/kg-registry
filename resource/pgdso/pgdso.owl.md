@@ -10,9 +10,9 @@ original_source:
   source: pgdso
 product_url: http://purl.obolibrary.org/obo/pgdso.owl
 warnings:
+- File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-06-01_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-05-31_ HTTP 404 error when
-  accessing file
 layout: product_detail
 ---

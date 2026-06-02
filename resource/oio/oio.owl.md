@@ -9,6 +9,8 @@ original_source:
   source: oio
 product_url: http://purl.obolibrary.org/obo/oio.owl
 warnings:
+- File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
+  accessing file
 - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
   metadata.
 layout: product_detail

@@ -8,6 +8,7 @@ name: OpenPredict OpenAPI Specification
 original_source:
 - relation_type: prov:hadPrimarySource
   source: openpredict
+product_file_size: 61944
 product_url: https://openpredict.semanticscience.org/openapi.json
 layout: product_detail
 ---

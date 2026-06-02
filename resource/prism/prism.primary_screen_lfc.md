@@ -12,5 +12,8 @@ product_url: https://ndownloader.figshare.com/files/20237709
 secondary_source:
 - relation_type: prov:wasInformedBy
   source: depmap
+warnings:
+- File was not able to be retrieved when checked on 2026-06-02_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

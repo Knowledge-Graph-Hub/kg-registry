@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: pathwhiz
 product_url: https://pathbank.org/pathwhiz/guides
+warnings:
+- File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
+  to URL
 layout: product_detail
 ---

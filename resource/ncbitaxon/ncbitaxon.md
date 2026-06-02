@@ -57,8 +57,6 @@ products:
     source: ncbitaxon
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-01: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
     header found'
 - category: OntologyProduct
@@ -841,8 +839,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -985,6 +983,91 @@ products:
     source: chebi
   - relation_type: prov:used
     source: ncbitaxon
+- category: GraphProduct
+  description: RDF knowledge graph materialized by the MetaBoKG workflow from public
+    metabolomics repository outputs, GNPS molecular-networking jobs, annotation evidence,
+    sample metadata, and environmental and taxonomic context. The repository documents
+    generated per-job Turtle files under mapping/kg and loading into Virtuoso named
+    graphs.
+  id: metabokg.graph
+  latest_version: arXiv v1 demonstration
+  name: MetaboKG RDF Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabokg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: redu
+  product_url: https://github.com/HolobiomicsLab/MetaBoKG
+  secondary_source:
+  - relation_type: prov:used
+    source: ms
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+  - relation_type: prov:used
+    source: envo
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: chmo
+  - relation_type: prov:used
+    source: sio
+  - relation_type: prov:used
+    source: prov-o
+  - relation_type: prov:used
+    source: dcat
+  - relation_type: prov:used
+    source: afo
+  warnings:
+  - No static public graph release or hosted endpoint was available in the GitHub
+    repository when curated on 2026-06-02; the repository documents local Turtle materialization
+    and Virtuoso loading.
+- category: DataModelProduct
+  description: Turtle schema files defining MetaBoKG classes, properties, and ReDU
+    class hierarchies used by the generated knowledge graph.
+  id: metabokg.schema
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License 2.0
+  name: MetaBoKG RDF Schema
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabokg
+  product_url: https://github.com/HolobiomicsLab/MetaBoKG/tree/main/Schema
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: ms
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: envo
+  - relation_type: prov:wasInformedBy
+    source: ncit
+  - relation_type: prov:wasInformedBy
+    source: uberon
+  - relation_type: prov:wasInformedBy
+    source: chmo
+  - relation_type: prov:wasInformedBy
+    source: sio
+  - relation_type: prov:wasInformedBy
+    source: prov-o
+  - relation_type: prov:wasInformedBy
+    source: dcat
+  - relation_type: prov:wasInformedBy
+    source: afo
 publications: []
 repository: https://github.com/obophenotype/ncbitaxon
 ---

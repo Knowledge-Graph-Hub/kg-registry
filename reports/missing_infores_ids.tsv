@@ -12,6 +12,7 @@ aelous	AELOUS	DataSource	https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4	r
 aeo	Anatomical Entity Ontology	Ontology	https://github.com/obophenotype/human-developmental-anatomy-ontology/	resource/aeo/aeo.md
 aero	Adverse Event Reporting Ontology	Ontology	http://purl.obolibrary.org/obo/aero	resource/aero/aero.md
 afcs	Alliance for Cellular Signaling	DataSource	http://www.signaling-gateway.org/molecule	resource/afcs/afcs.md
+afo	Allotrope Foundation Ontology	Ontology	https://www.allotrope.org/product-releases	resource/afo/afo.md
 afpo	African Population Ontology	Ontology	https://github.com/h3abionet/afpo	resource/afpo/afpo.md
 agro	Agronomy Ontology	Ontology	https://github.com/AgriculturalSemantics/agro	resource/agro/agro.md
 aism	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)	Ontology	https://github.com/insect-morphology/aism	resource/aism/aism.md
@@ -125,6 +126,7 @@ dbptm	Dbptm	DataSource		resource/dbptm/dbptm.md
 dbsno	Dbsno	DataSource		resource/dbsno/dbsno.md
 dc	Dublin Core Metadata Terms	DataModel	https://www.dublincore.org/	resource/dc/dc.md
 dc_cl	Dendritic cell	Ontology	http://www.dukeontologygroup.org/Projects.html	resource/dc_cl/dc_cl.md
+dcat	Data Catalog Vocabulary	DataModel	https://www.w3.org/TR/vocab-dcat-3/	resource/dcat/dcat.md
 dct	Dublin Core Terms	Ontology	https://www.dublincore.org/specifications/dublin-core/dcmi-terms/	resource/dct/dct.md
 ddanat	Dictyostelium discoideum anatomy	Ontology	http://dictybase.org/	resource/ddanat/ddanat.md
 ddpheno	Dictyostelium discoideum phenotype ontology	Ontology	http://dictybase.org/	resource/ddpheno/ddpheno.md
@@ -240,6 +242,7 @@ glyconnect	GlyConnect	DataSource	https://glyconnect.expasy.org/	resource/glyconn
 glycordf	GlycoRDF: An Ontology to Standardize Glycomics Data in RDF	Ontology	https://www.glycoinfo.org/GlycoRDF/	resource/glycordf/glycordf.md
 glygen	GlyGen	DataSource	https://glygen.org/	resource/glygen/glygen.md
 gno	Glycan Naming and Subsumption Ontology (GNOme)	Ontology	https://gnome.glyomics.org/	resource/gno/gno.md
+gnps	Global Natural Products Social Molecular Networking	DataSource	https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp	resource/gnps/gnps.md
 goa	GOA	DataSource	https://www.ebi.ac.uk/GOA/	resource/goa/goa.md
 goldterms	GOLD Environmental Paths	DataModel	https://gold.jgi.doe.gov/	resource/goldterms/goldterms.md
 gp-kg	GP-KG	KnowledgeGraph	http://nlp.case.edu/public/data/GPKG-Predict/	resource/gp-kg/gp-kg.md
@@ -321,6 +324,7 @@ mamo	Mathematical modeling ontology	Ontology	http://sourceforge.net/p/mamo-ontol
 mangal	mangal.io	KnowledgeGraph	https://mangal.io/	resource/mangal/mangal.md
 mao	Multiple alignment	Ontology	http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html	resource/mao/mao.md
 markerdb	MarkerDB	DataSource	https://markerdb.ca/	resource/markerdb/markerdb.md
+massive	MassIVE	DataSource	https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp	resource/massive/massive.md
 mat	Minimal anatomical terminology	Ontology		resource/mat/mat.md
 maudekg	FDA MAUDE Adverse Event Knowledge Graph	KnowledgeGraph	https://github.com/Prabhadeus/Proto-OKN	resource/maudekg/maudekg.md
 mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditions-ontology/microbial-conditions-ontology	resource/mco/mco.md
@@ -330,6 +334,7 @@ meddra	Meddra	DataSource		resource/meddra/meddra.md
 mediadive	MediaDive	DataSource	https://mediadive.dsmz.de/	resource/mediadive/mediadive.md
 medispan-gpi	Medi-Span Generic Product Identifier	DataSource	https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi	resource/medispan-gpi/medispan-gpi.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
+metabokg	MetaboKG	KnowledgeGraph	https://github.com/HolobiomicsLab/MetaBoKG	resource/metabokg/metabokg.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
 metatraits	metaTraits	KnowledgeGraph	https://metatraits.embl.de/	resource/metatraits/metatraits.md
 metpo	METPO (Microbial Ecophysiological Trait and Phenotype Ontology)	Ontology	https://github.com/berkeleybop/metpo	resource/metpo/metpo.md
@@ -491,6 +496,7 @@ propreo	Proteomics data and process provenance	Ontology	http://lsdis.cs.uga.edu/
 protcid	ProtCID	DataSource	http://dunbrack2.fccc.edu/protcid/	resource/protcid/protcid.md
 proteomehd	ProteomeHD	DataSource	https://github.com/Rappsilber-Laboratory/ProteomeHD	resource/proteomehd/proteomehd.md
 proton	PROTON (PROTo ONtology)	Ontology	https://www.ontotext.com/products/proton/	resource/proton/proton.md
+prov-o	PROV-O	Ontology	https://www.w3.org/TR/prov-o/	resource/prov-o/prov-o.md
 prsatlas	PRS Atlas	DataSource	https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b	resource/prsatlas/prsatlas.md
 psdo	Performance Summary Display Ontology	Ontology	https://github.com/Display-Lab/psdo	resource/psdo/psdo.md
 pso	Plant Stress Ontology	Ontology	https://github.com/Planteome/plant-stress-ontology	resource/pso/pso.md
@@ -508,6 +514,7 @@ rdp	Ribosomal Database Project	DataSource		resource/rdp/rdp.md
 reacto	Reactome Entity Ontology (REACTO)	Resource	http://purl.obolibrary.org/obo/go/extensions/reacto.owl	resource/reacto/reacto.md
 rediportal	REDIportal	DataSource		resource/rediportal/rediportal.md
 redrugs	ReDrugs	KnowledgeGraph	http://redrugs.tw.rpi.edu/	resource/redrugs/redrugs.md
+redu	ReDU	Aggregator	https://redu.gnps2.org/selection/	resource/redu/redu.md
 refseq	RefSeq	DataSource	https://www.ncbi.nlm.nih.gov/refseq/	resource/refseq/refseq.md
 remap	ReMap	DataSource	https://remap.univ-amu.fr/	resource/remap/remap.md
 repohub	Drug Repurposing Hub	DataSource	https://repo-hub.broadinstitute.org/repurposing	resource/repohub/repohub.md
@@ -543,6 +550,7 @@ sibils	SIBiLS	DataSource	https://sibils.org/	resource/sibils/sibils.md
 sibo	Social Insect Behavior Ontology	Ontology	https://github.com/obophenotype/sibo	resource/sibo/sibo.md
 silva	SILVA	DataSource	https://www.arb-silva.de/	resource/silva/silva.md
 simap	SIMAP	DataSource		resource/simap/simap.md
+sio	Semanticscience Integrated Ontology	Ontology	https://semanticscience.org/	resource/sio/sio.md
 skm	Stress Knowledge Map	KnowledgeGraph	https://skm.nib.si/	resource/skm/skm.md
 skos	SKOS	DataModel	https://www.w3.org/2004/02/skos/	resource/skos/skos.md
 sldb	sldb	KnowledgeGraph	https://kghub.io/sldb/	resource/sldb/sldb.md

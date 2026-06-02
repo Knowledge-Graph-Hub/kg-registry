@@ -37,10 +37,10 @@ products:
     source: oio
   product_url: http://purl.obolibrary.org/obo/oio.owl
   warnings:
-  - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
-    metadata.
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
+    metadata.
 - category: OntologyProduct
   description: OBO Interoperability Ontology in OBO format
   format: obo
@@ -51,10 +51,10 @@ products:
     source: oio
   product_url: http://purl.obolibrary.org/obo/oio.obo
   warnings:
-  - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
-    metadata.
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
+    metadata.
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl

@@ -267,12 +267,10 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Co-occurrence database generated from public PubMed abstracts with
     entity normalization for Biolink-relevant biomedical concepts
@@ -365,12 +363,10 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-01: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
     out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
@@ -451,8 +447,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
-    (semantic themes)
+  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
+    \ relationships (semantic themes)"
   id: gnbr.graph
   name: GNBR graph
   original_source:
@@ -959,6 +955,56 @@ products:
     source: pubmed
   - relation_type: prov:used
     source: pubtator
+- category: GraphProduct
+  description: RDF knowledge graph materialized by the MetaBoKG workflow from public
+    metabolomics repository outputs, GNPS molecular-networking jobs, annotation evidence,
+    sample metadata, and environmental and taxonomic context. The repository documents
+    generated per-job Turtle files under mapping/kg and loading into Virtuoso named
+    graphs.
+  id: metabokg.graph
+  latest_version: arXiv v1 demonstration
+  name: MetaboKG RDF Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: metabokg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubmedcentral
+  - relation_type: prov:hadPrimarySource
+    source: gnps
+  - relation_type: prov:hadPrimarySource
+    source: massive
+  - relation_type: prov:hadPrimarySource
+    source: redu
+  product_url: https://github.com/HolobiomicsLab/MetaBoKG
+  secondary_source:
+  - relation_type: prov:used
+    source: ms
+  - relation_type: prov:used
+    source: chebi
+  - relation_type: prov:used
+    source: ncbitaxon
+  - relation_type: prov:used
+    source: envo
+  - relation_type: prov:used
+    source: ncit
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: chmo
+  - relation_type: prov:used
+    source: sio
+  - relation_type: prov:used
+    source: prov-o
+  - relation_type: prov:used
+    source: dcat
+  - relation_type: prov:used
+    source: afo
+  warnings:
+  - No static public graph release or hosted endpoint was available in the GitHub
+    repository when curated on 2026-06-02; the repository documents local Turtle materialization
+    and Virtuoso loading.
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

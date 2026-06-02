@@ -10,7 +10,7 @@ original_source:
   source: globi
 product_url: https://zenodo.org/record/14640564/files/datasets.csv.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-06-01_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-02_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found

@@ -12,7 +12,7 @@ original_source:
   source: go
 product_url: https://omabrowser.org/All/oma-go.txt.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-06-01_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-02_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

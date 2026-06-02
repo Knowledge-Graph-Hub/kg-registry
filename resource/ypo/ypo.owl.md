@@ -9,7 +9,7 @@ original_source:
   source: ypo
 product_url: http://purl.obolibrary.org/obo/ypo.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-01_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

@@ -7,6 +7,7 @@ name: Citing CEBS
 original_source:
 - relation_type: prov:hadPrimarySource
   source: cebs
+product_file_size: 152093
 product_url: https://cebs.niehs.nih.gov/cebs/support/download/Citing-CEBS.pdf
 layout: product_detail
 ---

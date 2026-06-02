@@ -8,6 +8,7 @@ name: PharmacotherapyDB Diseases TSV
 original_source:
 - relation_type: prov:hadPrimarySource
   source: pharmacotherapydb
+product_file_size: 1665
 product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/diseases.tsv
 secondary_source:
 - relation_type: prov:used

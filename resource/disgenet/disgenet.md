@@ -988,12 +988,10 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: Graph database dump and additional relationship files for the Clinical
     Knowledge Graph.
@@ -1771,9 +1769,9 @@ products:
     source: disgenet
 publications:
 - authors:
-  - Janet Piñero
-  - Juan Manuel Ramírez-Anguita
-  - Josep Saüch-Pitarch
+  - "Janet Pi\xF1ero"
+  - "Juan Manuel Ram\xEDrez-Anguita"
+  - "Josep Sa\xFCch-Pitarch"
   - Francesco Ronzano
   - Emilio Centeno
   - Ferran Sanz

@@ -10,7 +10,7 @@ original_source:
   source: sty
 product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
 warnings:
-- File was not able to be retrieved when checked on 2026-06-01_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-02_ No Content-Length
   header found
 layout: product_detail
 ---

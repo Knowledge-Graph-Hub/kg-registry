@@ -45,8 +45,6 @@ products:
     source: achilles
   product_url: https://depmap.org/portal/achilles/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
@@ -62,8 +60,6 @@ products:
     source: depmap
   product_url: https://depmap.org/portal/download/all/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
     when accessing file'
 - category: Product
