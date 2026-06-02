@@ -2,19 +2,21 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-05-29T00:00:00Z'
-description: MED-RT is a medication reference terminology maintained through NCI EVS
-  and distributed through UMLS-linked channels.
+description: MED-RT is the Medication Reference Terminology, an NCI EVS medication
+  terminology and successor to VHA NDF-RT that represents pharmacologic classifications
+  and asserted medication relationships.
 domains:
 - pharmacology
 - clinical
 - health
 homepage_url: https://evs.nci.nih.gov/ftp1/MED-RT/
 id: med-rt
-last_modified_date: '2026-05-29T00:00:00Z'
+infores_id: medrt-umls
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: MED-RT
 products:
-- category: Product
+- category: DocumentationProduct
   description: MED-RT distribution endpoint containing terminology releases and related
     files.
   format: http
@@ -24,9 +26,112 @@ products:
   - relation_type: prov:hadPrimarySource
     source: med-rt
   product_url: https://evs.nci.nih.gov/ftp1/MED-RT/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
+- category: Product
+  compression: zip
+  description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.
+  id: med-rt.core_dts
+  name: Core MED-RT DTS Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 2479793
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_DTS.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: snomedct
+  - relation_type: prov:wasInformedBy
+    source: umls
+- category: Product
+  compression: zip
+  description: Current MED-RT XML release archive from the NCI EVS MED-RT distribution.
+  format: xml
+  id: med-rt.core_xml
+  name: Core MED-RT XML Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 2558768
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_XML.zip
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ndfrt
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: snomedct
+  - relation_type: prov:wasInformedBy
+    source: umls
+- category: Product
+  compression: zip
+  description: Structured Product Labeling subset archive from the current MED-RT
+    distribution.
+  id: med-rt.core_spl
+  name: Core MED-RT SPL Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 40677
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_SPL.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dailymed
+  - relation_type: prov:wasInformedBy
+    source: rxnorm
+  - relation_type: prov:wasInformedBy
+    source: umls
+- category: Product
+  compression: zip
+  description: Accessory files for the current MED-RT release.
+  id: med-rt.accessory_files
+  name: Core MED-RT Accessory Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 1409724
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/Core_MEDRT_Accessory_Files.zip
+- category: Product
+  description: Tab-delimited MED-RT term list from the current NCI EVS distribution.
+  format: tsv
+  id: med-rt.terms
+  name: MED-RT Term List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 220674
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/MEDRT.txt
+- category: DocumentationProduct
+  description: Current MED-RT release notes describing monthly changes and upstream
+    source versions.
+  format: txt
+  id: med-rt.release_notes
+  name: MED-RT Release Notes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 93032
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/MEDRT_Release_Notes.txt
+- category: DocumentationProduct
+  description: MED-RT documentation PDF distributed with the current release.
+  format: pdf
+  id: med-rt.documentation
+  name: MED-RT Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: med-rt
+  product_file_size: 664901
+  product_url: https://evs.nci.nih.gov/ftp1/MED-RT/MED-RT%20Documentation.pdf
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
