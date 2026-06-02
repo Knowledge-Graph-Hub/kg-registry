@@ -26,7 +26,7 @@ domains:
   - upper
 homepage_url: https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/
 id: pistoia-pgo
-last_modified_date: '2025-11-10T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -36,7 +36,7 @@ name: Pistoia Alliance Pharma General Ontology
 products:
   - category: OntologyProduct
     description: GitHub repository containing the PGO core concepts, documentation, and LinkML schemas
-    format: yaml
+    format: http
     id: pistoia-pgo.github
     name: PGO GitHub Repository
     product_url: https://github.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO
@@ -57,11 +57,21 @@ products:
     format: txt
     id: pistoia-pgo.core_concepts
     name: PGO Core Concepts (Version 1.0)
-    product_file_size: 4495
-    product_url: https://github.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/blob/development/2025_PGO_V1.0_core_concepts.md
+    product_file_size: 16543
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/2025_PGO_V1.0_core_concepts.md
     original_source:
       - source: pistoia-pgo
         relation_type: prov:hadPrimarySource
+  - category: Product
+    description: CSV release of the PGO Version 1.0 core concept list dated 2026-03-20
+    format: csv
+    id: pistoia-pgo.core_concepts_csv
+    name: PGO Core Concepts CSV (Version 1.0)
+    original_source:
+      - source: pistoia-pgo
+        relation_type: prov:hadPrimarySource
+    product_file_size: 11226
+    product_url: https://raw.githubusercontent.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO/development/PGO_V1.0_core_concepts_2026-03-20.csv
   - category: DocumentationProduct
     description: High-level use cases demonstrating PGO applications in pharmaceutical data exchange
     format: http
@@ -75,6 +85,10 @@ repository: https://github.com/Pistoia-Alliance-Inc/Pistoia-Alliance-PGO
 synonyms:
   - PGO
   - Pharma General Ontology
+version: '1.0'
+warnings:
+  - The repository README says the documentation is a work in progress and that
+    listed sources are not recommendations at this stage.
 ---
 
 ## Description
