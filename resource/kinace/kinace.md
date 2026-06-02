@@ -2,59 +2,123 @@
 activity_status: active
 category: Aggregator
 creation_date: '2025-11-05T00:00:00Z'
-description: The KinAce web portal aggregates and visualizes the network of interactions between protein kinases and their substrates in the human genome. KinAce integrates data from multiple sources including PhosphoSitePlus, iPTMnet, EPSD, KinHub, CORAL, Dark Kinase Knowledgebase, UniProt, HGNC, KEGG, and InterPro, providing comprehensive phosphorylation site data and kinase-substrate relationships.
+description: KiNet is a web portal and dataset, originally deposited as KinAce, for aggregating and visualizing kinase-substrate interactions in the human genome. KiNet integrates interaction data from PhosphoSitePlus, iPTMnet, and EPSD with kinase group, protein, gene, pathway, and domain annotations from KinHub, CORAL, the Dark Kinase Knowledgebase, UniProt, HGNC, KEGG, and InterPro.
 domains:
   - proteomics
   - systems biology
   - biomedical
   - biological systems
-homepage_url: https://kinace.kinametrix.com/
+homepage_url: https://kinet.kinametrix.com/
 id: "kinace"
 infores_id: "kinace"
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
-name: KinAce
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: KiNet
 products:
   - id: kinace.portal
     category: GraphicalInterface
-    name: KinAce Web Portal
-    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
-    product_url: https://kinace.kinametrix.com/
+    name: KiNet Web Portal
+    description: Interactive Shiny web interface for exploring and visualizing human kinase-substrate interactions
+    product_url: https://kinet.kinametrix.com/
     format: http
     original_source:
-      - source: coralkinome
-        relation_type: prov:hadPrimarySource
-      - source: darkkinasekb
-        relation_type: prov:hadPrimarySource
-      - source: epsd
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: interpro
-        relation_type: prov:hadPrimarySource
-      - source: iptmnet
-        relation_type: prov:hadPrimarySource
-      - source: kegg
-        relation_type: prov:hadPrimarySource
       - source: kinace
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: coralkinome
+        relation_type: prov:wasDerivedFrom
+      - source: darkkinasekb
+        relation_type: prov:wasDerivedFrom
+      - source: epsd
+        relation_type: prov:wasDerivedFrom
+      - source: hgnc
+        relation_type: prov:wasDerivedFrom
+      - source: interpro
+        relation_type: prov:wasDerivedFrom
+      - source: iptmnet
+        relation_type: prov:wasDerivedFrom
+      - source: kegg
+        relation_type: prov:wasDerivedFrom
       - source: kinhub
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:wasDerivedFrom
       - source: phosphositeplus
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:wasDerivedFrom
       - source: uniprot
+        relation_type: prov:wasDerivedFrom
+  - id: kinace.interactions
+    category: GraphProduct
+    name: KiNet Full Interaction Dataset
+    description: CSV download of the full KiNet human kinase-substrate interaction dataset with source database, evidence, and PMID reference fields
+    product_url: https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/ksi_source_full_dataset.csv
+    format: csv
+    product_file_size: 5180792
+    original_source:
+      - source: kinace
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: epsd
+        relation_type: prov:wasDerivedFrom
+      - source: iptmnet
+        relation_type: prov:wasDerivedFrom
+      - source: phosphositeplus
+        relation_type: prov:wasDerivedFrom
+  - id: kinace.github_archive
+    category: Product
+    name: KiNet GitHub Dataset Archive
+    description: Zipped GitHub data archive for the KiNet/KinAce web portal and kinase-substrate interaction dataset
+    product_url: https://raw.githubusercontent.com/GauravPandeyLab/KiNet/master/data/2023-10-30-kinace-dataset.zip
+    compression: zip
+    product_file_size: 381292
+    original_source:
+      - source: kinace
+        relation_type: prov:hadPrimarySource
+  - id: kinace.zenodo_archive
+    category: Product
+    name: KinAce Zenodo Archive
+    description: Zenodo archive for the KinAce web portal and kinase-substrate interaction dataset
+    product_url: https://zenodo.org/api/records/10212986/files/KinAce.zip/content
+    compression: zip
+    product_file_size: 816896
+    original_source:
+      - source: kinace
+        relation_type: prov:hadPrimarySource
+  - id: kinace.code
+    category: ProcessProduct
+    name: KiNet Source Code
+    description: GitHub repository containing the R/Shiny source code and data files for the KiNet web portal
+    product_url: https://github.com/GauravPandeyLab/KiNet
+    format: http
+    original_source:
+      - source: kinace
+        relation_type: prov:hadPrimarySource
+publications:
+  - authors:
+      - John A. P. Sekar
+      - Yan Chak Li
+      - Avner Schlessinger
+      - Gaurav Pandey
+    doi: 10.1038/s41540-024-00442-5
+    id: doi:10.1038/s41540-024-00442-5
+    journal: npj Systems Biology and Applications
+    preferred: true
+    title: A web portal for exploring kinase-substrate interactions
+    year: '2024'
+repository: https://github.com/GauravPandeyLab/KiNet
 synonyms:
+  - KiNet
   - KinAce
 taxon:
   - NCBITaxon:9606
 ---
 
-# KinAce
+# KiNet
 
 ## Overview
 
-KinAce is a web portal that aggregates and visualizes the network of interactions between protein kinases and their substrates in the human genome. The platform provides multiple ways to select and explore sets of proteins, displaying known kinase-substrate interactions with comprehensive phosphorylation site data.
+KiNet is a web portal that aggregates and visualizes the network of interactions between protein kinases and their substrates in the human genome. The platform provides multiple ways to select and explore sets of proteins, displaying known kinase-substrate interactions with phosphorylation site, evidence, and source database details. The archived Zenodo dataset was deposited under the KinAce name.
 
 ## Data Sources
 
