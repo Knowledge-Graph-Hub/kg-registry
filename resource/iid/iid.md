@@ -1,28 +1,110 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: iid@ai.utoronto.ca
+  - contact_type: url
+    value: https://iid.ophid.utoronto.ca/
+  label: IID Team
 creation_date: '2026-05-29T00:00:00Z'
-description: IID is the Integrated Interactions Database providing protein-protein
-  interaction networks and associated annotations.
+description: IID is the Integrated Interactions Database, an online database of detected
+  and predicted protein-protein interactions across human, model organism, and domesticated
+  animal species, with context annotations for tissues, developmental stages, conservation,
+  druggability, directionality, duration, mutations, and protein complexes.
 domains:
 - biological systems
 - biomedical
-homepage_url: http://iid.ophid.utoronto.ca
+homepage_url: https://iid.ophid.utoronto.ca/
 id: iid
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: Integrated Interactions Database
 products:
 - category: Product
-  description: IID web resource for integrated protein interaction data.
+  description: IID portal for querying and downloading detected, predicted, and orthology-based
+    protein-protein interactions with context annotations.
   format: http
   id: iid.portal
   name: IID Portal
   original_source:
   - relation_type: prov:hadPrimarySource
     source: iid
-  product_file_size: 37
-  product_url: http://iid.ophid.utoronto.ca
+  product_url: https://iid.ophid.utoronto.ca/
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated human protein-protein interaction download.
+  format: tsv
+  id: iid.human_annotated_ppis
+  name: IID Human Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 150992743
+  product_url: https://iid.ophid.utoronto.ca/static/download/human_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: DocumentationProduct
+  description: Readme workbook for the IID annotated human protein-protein interaction
+    download.
+  id: iid.human_annotated_ppis.readme
+  name: IID Human Annotated PPIs Readme
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 18563
+  product_url: https://iid.ophid.utoronto.ca/static/download/human_annotated_PPIs_readme.xlsx
+- category: GraphProduct
+  compression: gzip
+  description: IID annotated mouse protein-protein interaction download.
+  format: tsv
+  id: iid.mouse_annotated_ppis
+  name: IID Mouse Annotated PPIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 40056241
+  product_url: https://iid.ophid.utoronto.ca/static/download/mouse_annotated_PPIs.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: irefindex
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: DocumentationProduct
+  description: Readme workbook for the IID annotated mouse protein-protein interaction
+    download.
+  id: iid.mouse_annotated_ppis.readme
+  name: IID Mouse Annotated PPIs Readme
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  product_file_size: 13931
+  product_url: https://iid.ophid.utoronto.ca/static/download/mouse_annotated_PPIs_readme.xlsx
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -599,7 +681,50 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Max Kotlyar
+  - Chiara Pastrello
+  - Zuhaib Ahmed
+  - Justin Chee
+  - Zofia Varyova
+  - Igor Jurisica
+  doi: 10.1093/nar/gkab1034
+  id: doi:10.1093/nar/gkab1034
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'IID 2021: towards context-specific protein interaction analyses by increased
+    coverage, enhanced annotation and enrichment analysis'
+  year: '2022'
+taxon:
+- NCBITaxon:30538
+- NCBITaxon:9685
+- NCBITaxon:9031
+- NCBITaxon:9913
+- NCBITaxon:9615
+- NCBITaxon:8839
+- NCBITaxon:7227
+- NCBITaxon:10141
+- NCBITaxon:9796
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:9823
+- NCBITaxon:9986
+- NCBITaxon:10116
+- NCBITaxon:9940
+- NCBITaxon:9103
+- NCBITaxon:6239
+- NCBITaxon:4932
 ---
 # Integrated Interactions Database
 
-IID is a data source for integrated interaction networks used in biomedical graph construction.
+IID is an online database for detected and predicted protein-protein interactions
+across 18 species. The current portal supports interactive protein searches,
+context and evidence filtering, network visualization, downloadable query results,
+and static annotated PPI downloads for human and mouse.
+
+IID annotates interactions with evidence class, tissue and developmental context,
+conservation, directionality, druggability, duration, mutation effects, and
+protein-complex membership. The portal cites the 2021 Nucleic Acids Research
+update for the current context-specific interaction and enrichment-analysis
+features.
