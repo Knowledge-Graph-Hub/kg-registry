@@ -9,8 +9,21 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: tcrd
 product_url: http://juniper.health.unm.edu/tcrd/download/
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: uniprot
+- relation_type: prov:wasInfluencedBy
+  source: chembl
+- relation_type: prov:wasInfluencedBy
+  source: drugcentral
+- relation_type: prov:wasInfluencedBy
+  source: string
+- relation_type: prov:wasInfluencedBy
+  source: gtex
+- relation_type: prov:wasInfluencedBy
+  source: omim
 warnings:
-- File was not able to be retrieved when checked on 2026-05-29_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-05-31_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL

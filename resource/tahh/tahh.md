@@ -1,28 +1,27 @@
 ---
-id: tahh
-name: Terminology of Anatomy of Human Histology
-description: Terminology of Anatomy of Human Histology is a deprecated ontology covering human histological anatomy.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/tahh
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- health
-taxon:
-- NCBITaxon:9606
 contacts:
 - category: Individual
-  label: Pierre Sprumont
   contact_details:
   - contact_type: email
     value: pierre.sprumont@unifr.ch
+  label: Pierre Sprumont
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- health
+- biomedical
+homepage_url: https://obofoundry.org/ontology/tahh
+id: tahh
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Terminology of Anatomy of Human Histology
 products:
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Histology in OWL format
@@ -33,6 +32,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tahh
   product_url: http://purl.obolibrary.org/obo/tahh.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Histology in OBO format
   format: obo
@@ -42,7 +44,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tahh
   product_url: http://purl.obolibrary.org/obo/tahh.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

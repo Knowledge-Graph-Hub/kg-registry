@@ -91,7 +91,6 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
-  format: http
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:

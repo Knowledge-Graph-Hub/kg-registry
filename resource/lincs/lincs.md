@@ -557,6 +557,73 @@ products:
   - relation_type: prov:hadPrimarySource
     source: lincs
   product_url: https://ubkg-downloads.xconsortia.org/
+- category: GraphicalInterface
+  description: Cloud-based user interface providing suite of apps for querying gene
+    expression signatures, browsing perturbagen data, searching metadata, and visualizing
+    connectivity results
+  format: http
+  id: cmap.clue
+  name: CLUE Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  product_url: https://clue.io/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
+- category: ProgrammingInterface
+  description: Python library cmapBQ for programmatic access to CMap data through
+    Google BigQuery with query capabilities for signatures and metadata
+  format: http
+  id: cmap.python_api
+  is_public: true
+  name: cmapBQ Python Library
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  product_url: https://cmapbq.readthedocs.io/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
+- category: GraphicalInterface
+  description: Query app enabling users to search CMap database with custom gene expression
+    signatures to find perturbagens with similar or opposing transcriptional effects
+  format: http
+  id: cmap.query_app
+  name: CLUE Query App
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  product_url: https://clue.io/query
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
+- category: Product
+  description: Data releases containing replicate-collapsed signatures and gene expression
+    profiles in GCTx matrix format available for download
+  format: hdf5
+  id: cmap.data_downloads
+  name: CMap Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  product_url: https://clue.io/releases/data-dashboard
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
+- category: DocumentationProduct
+  description: Comprehensive knowledge base containing glossary, tutorials, analytical
+    methods, experimental protocols, and detailed documentation
+  format: http
+  id: cmap.connectopedia
+  name: Connectopedia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cmap
+  product_url: https://clue.io/connectopedia
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: lincs
 publications:
 - authors:
   - Keenan AB

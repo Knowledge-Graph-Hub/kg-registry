@@ -1,10 +1,11 @@
 ---
 category: GraphicalInterface
 description: Web interface for navigating the global protein-protein interaction landscape
+format: http
 id: irefindex.irefweb
 name: iRefWeb
 original_source:
-  - source: irefindex
-    relation_type: prov:hadPrimarySource
+- relation_type: prov:hadPrimarySource
+  source: irefindex
 layout: product_detail
 ---

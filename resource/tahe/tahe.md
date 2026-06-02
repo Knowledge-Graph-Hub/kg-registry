@@ -1,28 +1,26 @@
 ---
-id: tahe
-name: Terminology of Anatomy of Human Embryology
-description: Terminology of Anatomy of Human Embryology is a deprecated ontology covering human embryological anatomy.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/tahe
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:9606
 contacts:
 - category: Individual
-  label: Pierre Sprumont
   contact_details:
   - contact_type: email
     value: pierre.sprumont@unifr.ch
+  label: Pierre Sprumont
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: https://obofoundry.org/ontology/tahe
+id: tahe
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Terminology of Anatomy of Human Embryology
 products:
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Embryology in OWL format
@@ -33,6 +31,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tahe
   product_url: http://purl.obolibrary.org/obo/tahe.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Terminology of Anatomy of Human Embryology in OBO format
   format: obo
@@ -42,7 +43,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tahe
   product_url: http://purl.obolibrary.org/obo/tahe.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

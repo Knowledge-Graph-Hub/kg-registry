@@ -9,7 +9,7 @@ original_source:
   source: gtopdb
 product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
 warnings:
-- File was not able to be retrieved when checked on 2026-05-29_ No Content-Length
+- File was not able to be retrieved when checked on 2026-05-31_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
   to URL

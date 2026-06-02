@@ -1,28 +1,26 @@
 ---
-id: ehdaa
-name: Human developmental anatomy, abstract version
-description: The Human Developmental Anatomy abstract ontology is a controlled vocabulary that compresses human embryonic anatomical structures across Carnegie stages into a single hierarchy. The ontology is deprecated and has been superseded by EHDAA2.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/ehdaa
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:9606
 contacts:
 - category: Individual
-  label: Jonathan Bard
   contact_details:
   - contact_type: email
     value: J.Bard@ed.ac.uk
+  label: Jonathan Bard
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: https://obofoundry.org/ontology/ehdaa
+id: ehdaa
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Human developmental anatomy, abstract version
 products:
 - category: OntologyProduct
   description: Human developmental anatomy, abstract version in OWL format
@@ -33,6 +31,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ehdaa
   product_url: http://purl.obolibrary.org/obo/ehdaa.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Human developmental anatomy, abstract version in OBO format
   format: obo
@@ -42,7 +43,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ehdaa
   product_url: http://purl.obolibrary.org/obo/ehdaa.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
+    when accessing file'
 publications: []
+taxon:
+- NCBITaxon:9606
 ---
 ## Description
 

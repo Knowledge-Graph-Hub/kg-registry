@@ -8,6 +8,7 @@ name: SLDB Interaction Table
 original_source:
 - relation_type: prov:hadPrimarySource
   source: sldb
+product_file_size: 36316
 product_url: https://raw.githubusercontent.com/monarch-initiative/SLDBGen/master/SL_data.tsv
 layout: product_detail
 ---

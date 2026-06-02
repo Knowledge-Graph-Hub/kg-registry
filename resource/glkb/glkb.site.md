@@ -5,8 +5,11 @@ format: http
 id: glkb.site
 name: GLKB Site
 original_source:
-  - source: glkb
-    relation_type: prov:hadPrimarySource
-product_url: https://glkb.dcmb.med.umich.edu/
+- relation_type: prov:hadPrimarySource
+  source: glkb
+product_url: https://glkb.org/
+secondary_source:
+- relation_type: prov:wasInfluencedBy
+  source: pubmed
 layout: product_detail
 ---

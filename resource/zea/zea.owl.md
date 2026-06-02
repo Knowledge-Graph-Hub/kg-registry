@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: zea
 product_url: http://purl.obolibrary.org/obo/zea.owl
+warnings:
+- File was not able to be retrieved when checked on 2026-05-31_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

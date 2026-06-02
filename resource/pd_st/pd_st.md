@@ -1,31 +1,29 @@
 ---
-id: pd_st
-name: Platynereis stage ontology
-description: The Platynereis stage ontology is a developmental stage ontology for Platynereis. The ontology is deprecated and OBO Foundry recommends using PDUMDV instead.
 activity_status: inactive
-homepage_url: https://obofoundry.org/ontology/pd_st
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-06-01T00:00:00Z'
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:6358
 contacts:
 - category: Individual
-  label: Thorsten Henrich
-  orcid: 0000-0002-1548-3290
   contact_details:
   - contact_type: email
     value: henrich@embl.de
   - contact_type: github
     value: ThorstenHen
+  label: Thorsten Henrich
+  orcid: 0000-0002-1548-3290
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+homepage_url: http://4dx.embl.de/platy
+id: pd_st
+last_modified_date: '2026-06-01T00:00:00Z'
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Platynereis stage ontology
 products:
 - category: OntologyProduct
   description: Platynereis stage ontology in OWL format
@@ -36,6 +34,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pd_st
   product_url: http://purl.obolibrary.org/obo/pd_st.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Platynereis stage ontology in OBO format
   format: obo
@@ -45,7 +46,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pd_st
   product_url: http://purl.obolibrary.org/obo/pd_st.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
+    to URL'
 publications: []
+taxon:
+- NCBITaxon:6358
 ---
 ## Description
 

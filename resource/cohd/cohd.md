@@ -25,7 +25,7 @@ domains:
 homepage_url: https://cohd-api.ci.transltr.io/
 id: cohd
 infores_id: cohd
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: Columbia Open Health Data (COHD)
 products:

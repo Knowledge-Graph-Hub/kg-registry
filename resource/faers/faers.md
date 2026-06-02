@@ -2,23 +2,23 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: FDA-SRS@fda.hhs.gov
-    id: fda
-    label: FDA Center for Drug Evaluation and Research
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: FDA-SRS@fda.hhs.gov
+  id: fda
+  label: FDA Center for Drug Evaluation and Research
 creation_date: '2025-11-04T00:00:00Z'
 description: The FDA Adverse Event Monitoring System (AEMS), formerly the FDA Adverse Event Reporting System (FAERS), is a database that contains adverse event reports, medication error reports, and product quality complaints resulting in adverse events submitted to the FDA. AEMS/FAERS supports the FDA's post-marketing safety surveillance program for drug and therapeutic biologic products. The database adheres to ICH E2B international safety reporting guidance, and adverse events are coded using MedDRA (Medical Dictionary for Regulatory Activities) terminology. FAERS provides quarterly data files in ASCII and XML formats dating back to 2012, with archives available for earlier data.
 domains:
-  - pharmacology
-  - drug discovery
-  - clinical
-  - public health
+- pharmacology
+- drug discovery
+- clinical
+- public health
 homepage_url: https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
 id: faers
 infores_id: faers
-last_modified_date: '2026-06-01T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: FDA Adverse Event Reporting System
 products:
@@ -78,6 +78,9 @@ products:
   - category: Product
     description: Standardized and deduplicated version of FDA FAERS data with drug names mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed summary statistics for drug-outcome relationships.
     id: aeolus.standardized_data
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0 1.0
     name: AEOLUS Standardized FAERS Data
     original_source:
       - source: faers
@@ -96,9 +99,8 @@ synonyms:
   - FAERS
   - FDA Adverse Event Reporting System
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # FDA Adverse Event Reporting System
 
 ## Overview
