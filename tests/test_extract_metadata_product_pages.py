@@ -89,8 +89,8 @@ def test_concat_propagates_cross_resource_products(
                     "id": "clinicalkg.graph",
                     "name": "ClinicalKG graph",
                     "category": "KnowledgeGraphProduct",
-                    "description": "Graph with BTO as a secondary source",
-                    "secondary_source": [{"source": "bto", "relation_type": "prov:wasInfluencedBy"}],
+                    "description": "Graph with the BTO ontology product as a secondary source",
+                    "secondary_source": [{"source": "bto.owl", "relation_type": "prov:wasInfluencedBy"}],
                 }
             ],
         },

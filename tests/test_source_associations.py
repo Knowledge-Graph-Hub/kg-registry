@@ -8,6 +8,7 @@ from util.source_associations import (
     make_original_source_associations,
     make_secondary_source_associations,
     merge_source_associations,
+    source_resource_id,
 )
 
 
@@ -26,6 +27,8 @@ def test_source_association_defaults_and_legacy_iteration():
         "go",
         "hp",
     ]
+    assert source_resource_id("go") == "go"
+    assert source_resource_id("go.owl") == "go"
 
 
 def test_merge_source_associations_preserves_existing_relation_type():
