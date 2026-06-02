@@ -17,13 +17,81 @@ domains:
 homepage_url: https://github.com/dhimmel/indications
 id: pharmacotherapydb
 infores_id: pharmacotherapydb
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 name: PharmacotherapyDB
 products:
+- category: Product
+  description: Figshare archive for PharmacotherapyDB 1.0, the open catalog of drug
+    therapies for disease
+  format: http
+  id: pharmacotherapydb.figshare
+  name: PharmacotherapyDB 1.0 Figshare Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_url: https://doi.org/10.6084/m9.figshare.3103054
+- category: Product
+  description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
+    symptomatic, or non-indications
+  format: tsv
+  id: pharmacotherapydb.indications
+  name: PharmacotherapyDB Indications TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_file_size: 76754
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/indications.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: doid
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:wasInformedBy
+    source: labeledin
+  - relation_type: prov:wasInformedBy
+    source: medi
+  - relation_type: prov:wasInformedBy
+    source: ehrlink
+  - relation_type: prov:wasInformedBy
+    source: predict
+- category: Product
+  description: Excel workbook for the PharmacotherapyDB catalog release
+  format: http
+  id: pharmacotherapydb.catalog_xlsx
+  name: PharmacotherapyDB Catalog Workbook
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/catalog.xlsx
+- category: Product
+  description: Disease table for the PharmacotherapyDB catalog using Disease Ontology
+    identifiers
+  format: tsv
+  id: pharmacotherapydb.diseases
+  name: PharmacotherapyDB Diseases TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/diseases.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: doid
+- category: Product
+  description: Drug table for the PharmacotherapyDB catalog using DrugBank identifiers
+  format: tsv
+  id: pharmacotherapydb.drugs
+  name: PharmacotherapyDB Drugs TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pharmacotherapydb
+  product_url: https://raw.githubusercontent.com/dhimmel/indications/gh-pages/catalog/drugs.tsv
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
@@ -128,12 +196,26 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: hetionet
 publications:
-- doi: 10.7554/eLife.26726
+- authors:
+  - Himmelstein DS
+  - Lizee A
+  - Hessler C
+  - Brueggeman L
+  - Chen SL
+  - Hadley D
+  - Green A
+  - Khankhanian P
+  - Baranzini SE
+  doi: 10.7554/eLife.26726
   id: doi:10.7554/eLife.26726
   journal: eLife
   preferred: true
   title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
   year: '2017'
+warnings:
+- The repository README states original PharmacotherapyDB content is CC0, but also
+  notes upstream license constraints for integrated sources including DrugBank,
+  MEDI, PREDICT, and EHRLink.
 taxon:
 - NCBITaxon:9606
 ---

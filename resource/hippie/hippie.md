@@ -3,13 +3,15 @@ activity_status: active
 category: DataSource
 creation_date: '2026-05-29T00:00:00Z'
 description: HIPPIE is a human protein-protein interaction reference resource integrating
-  experimentally supported interaction evidence.
+  experimentally supported interaction evidence from major public protein interaction
+  databases and assigning confidence scores based on the type, number, and quality
+  of supporting experiments.
 domains:
 - biological systems
 - biomedical
 homepage_url: http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/index.php
 id: hippie
-last_modified_date: '2026-05-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: HIPPIE
 products:
@@ -22,6 +24,67 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hippie
   product_url: http://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/index.php
+- category: Product
+  description: Current HIPPIE v2.4 interaction dataset in the native HIPPIE tab-delimited
+    format, last updated April 9, 2026
+  format: tsv
+  id: hippie.current.tab
+  latest_version: v2.4
+  name: HIPPIE Current TAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  product_file_size: 138719165
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/hippie_current.txt
+- category: Product
+  description: Current HIPPIE v2.4 interaction dataset in PSI-MI TAB 2.5 format,
+    last updated April 9, 2026
+  format: psi_mi_mitab
+  id: hippie.current.mitab
+  latest_version: v2.4
+  name: HIPPIE Current PSI-MI TAB Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  product_file_size: 257038149
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/HIPPIE-current.mitab.txt
+- category: Product
+  description: TSV table of experimental-technique scores used by HIPPIE to score
+    protein-protein interaction evidence
+  format: tsv
+  id: hippie.experimental-scores
+  name: HIPPIE Experimental Technique Scores
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hippie
+  product_file_size: 4281
+  product_url: https://cbdm-01.zdv.uni-mainz.de/~mschaefer/hippie/RS/experimental_scores.tsv
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -598,7 +661,26 @@ products:
     source: uniprot
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
+publications:
+- authors:
+  - Gregorio Alanis-Lobato
+  - Miguel A. Andrade-Navarro
+  - Martin H. Schaefer
+  doi: 10.1093/nar/gkw985
+  id: doi:10.1093/nar/gkw985
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'HIPPIE v2.0: enhancing meaningfulness and reliability of protein-protein interaction networks'
+  year: '2017'
+synonyms:
+- HIPPIE
+- Human Integrated Protein-Protein Interaction rEference
+taxon:
+- NCBITaxon:9606
 ---
 # HIPPIE
 
 HIPPIE is a data source for curated human protein-protein interaction evidence.
+The official download page provides the current v2.4 release in native tab-delimited
+and PSI-MI TAB 2.5 formats, plus the experimental technique score table used to
+calculate interaction confidence scores.

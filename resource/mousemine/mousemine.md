@@ -11,10 +11,10 @@ domains:
   - pathways
 id: mousemine
 infores_id: mousemine
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: MouseMine
-homepage_url: http://www.mousemine.org/mousemine/begin.do
+homepage_url: https://www.mousemine.org/mousemine/begin.do
 taxon:
   - NCBITaxon:10090
 contacts:
@@ -26,37 +26,74 @@ contacts:
 products:
   - category: GraphicalInterface
     description: Web-based interface for searching, querying, and analyzing mouse data from MGI through MouseMine
+    format: http
     id: mousemine.web
     name: MouseMine Web Interface
     original_source:
       - source: mousemine
         relation_type: prov:hadPrimarySource
-    product_url: http://www.mousemine.org/mousemine/begin.do
+    secondary_source:
+      - source: mgi
+        relation_type: prov:wasDerivedFrom
+      - source: intermine
+        relation_type: prov:wasInfluencedBy
+    product_url: https://www.mousemine.org/mousemine/begin.do
   - category: ProgrammingInterface
     description: Programmatic access to MouseMine data via RESTful web services with client libraries for Perl, Python, Ruby, and Java
+    format: http
     id: mousemine.api
     is_public: true
     name: MouseMine API
     original_source:
       - source: mousemine
         relation_type: prov:hadPrimarySource
-    product_url: http://www.mousemine.org/mousemine/api.do
+    secondary_source:
+      - source: mgi
+        relation_type: prov:wasDerivedFrom
+      - source: intermine
+        relation_type: prov:wasInfluencedBy
+    product_url: https://www.mousemine.org/mousemine/api.do
   - category: GraphicalInterface
     description: Pre-built query templates for common data retrieval tasks covering genome features, proteins, expression, interactions, phenotypes, diseases, and more
+    format: http
     id: mousemine.templates
     name: MouseMine Query Templates
     original_source:
       - source: mousemine
         relation_type: prov:hadPrimarySource
-    product_url: http://www.mousemine.org/mousemine/templates.do
+    secondary_source:
+      - source: mgi
+        relation_type: prov:wasDerivedFrom
+      - source: intermine
+        relation_type: prov:wasInfluencedBy
+    product_url: https://www.mousemine.org/mousemine/templates.do
   - category: GraphicalInterface
     description: Custom query construction tool for building complex, iterative queries across multiple data types
+    format: http
     id: mousemine.querybuilder
     name: MouseMine QueryBuilder
     original_source:
       - source: mousemine
         relation_type: prov:hadPrimarySource
-    product_url: http://www.mousemine.org/mousemine/customQuery.do
+    secondary_source:
+      - source: mgi
+        relation_type: prov:wasDerivedFrom
+      - source: intermine
+        relation_type: prov:wasInfluencedBy
+    product_url: https://www.mousemine.org/mousemine/customQuery.do
+publications:
+  - authors:
+      - H. Motenko
+      - S. B. Neuhauser
+      - M. O'Keefe
+      - J. E. Richardson
+    category: Publication
+    doi: 10.1007/s00335-015-9573-z
+    id: doi:10.1007/s00335-015-9573-z
+    journal: Mammalian Genome
+    preferred: true
+    title: 'MouseMine: a new data warehouse for MGI'
+    year: '2015'
 synonyms:
   - MouseMine
   - Mouse Genome Informatics MouseMine
@@ -99,7 +136,7 @@ Data categories include:
 
 ## Access Methods
 
-- **Web Interface**: Interactive browser-based access at http://www.mousemine.org/
+- **Web Interface**: Interactive browser-based access at https://www.mousemine.org/
 - **RESTful APIs**: Programmatic access via Perl, Python, Ruby, and Java client libraries
 - **InterMine Mobile App**: Android application for mobile access
 

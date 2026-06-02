@@ -15,7 +15,7 @@ domains:
 homepage_url: https://medlineplus.gov/
 id: medlineplus
 infores_id: medlineplus
-last_modified_date: '2025-11-08T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: MedlinePlus
 products:
@@ -61,6 +61,15 @@ products:
     id: medlineplus.genetics_api
     name: MedlinePlus Genetics API
     product_url: https://medlineplus.gov/about/developers/geneticsdatafilesapi/
+    original_source:
+      - source: medlineplus
+        relation_type: prov:hadPrimarySource
+  - category: Product
+    description: General-interest and health-topic RSS feed directory for current MedlinePlus content updates
+    format: http
+    id: medlineplus.rss_feeds
+    name: MedlinePlus RSS Feeds
+    product_url: https://medlineplus.gov/rss.html
     original_source:
       - source: medlineplus
         relation_type: prov:hadPrimarySource
@@ -123,7 +132,7 @@ MedlinePlus provides multiple technical resources for integration:
 - **MedlinePlus Connect**: API for EHR systems and patient portals to link patients to relevant health information
 - **XML Data Files**: Downloadable complete records for all health topics
 - **Genetics API**: Retrieve genetic condition data in XML or JSON
-- **RSS Feeds**: General and topic-specific content feeds
+- **RSS Feeds**: General-interest and topic-specific content feeds
 
 ### MedlinePlus Connect for EHRs
 A specialized API enabling electronic health record systems and patient portals to automatically link patients to relevant, authoritative health information based on their diagnoses, medications, and lab test results. This helps patients better understand their health conditions and treatments.

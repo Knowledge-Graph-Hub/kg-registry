@@ -14,12 +14,15 @@ domains:
   - drug discovery
 homepage_url: https://enpkg.commons-lab.org/
 id: "kg-enp"
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
-name: kg-enp
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+  label: CC0-1.0
+name: ENPKG
 products:
   - category: GraphicalInterface
-    description: Web-based interactive portal for exploring experimental natural products, chemical structures, and organism relationships with data visualization
+    description: Landing page for the Experimental Natural Products Knowledge Graph with links to the public GraphDB instance, SPARQL interface, vocabulary documentation, and GitHub organization.
     format: http
     id: "kg-enp.portal"
     name: ENP-KG Portal
@@ -27,7 +30,83 @@ products:
     original_source:
       - source: kg-enp
         relation_type: prov:hadPrimarySource
+  - category: GraphicalInterface
+    description: Public GraphDB browser for exploring the Experimental Natural Products Knowledge Graph.
+    format: http
+    id: "kg-enp.graphdb"
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+      label: CC0-1.0
+    name: ENPKG GraphDB
+    original_source:
+      - source: kg-enp
+        relation_type: prov:hadPrimarySource
+    product_url: https://enpkg.commons-lab.org/graphdb
+  - category: ProgrammingInterface
+    connection_url: https://enpkg.commons-lab.org/graphdb/sparql
+    description: SPARQL research interface for querying the Experimental Natural Products Knowledge Graph.
+    format: http
+    id: "kg-enp.sparql"
+    is_public: true
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+      label: CC0-1.0
+    name: ENPKG SPARQL Endpoint
+    original_source:
+      - source: kg-enp
+        relation_type: prov:hadPrimarySource
+    product_url: https://enpkg.commons-lab.org/graphdb/sparql
+  - category: DocumentationProduct
+    description: ENPKG RDF vocabulary documentation describing classes and properties used in the Experimental Natural Products Knowledge Graph.
+    format: http
+    id: "kg-enp.vocabulary"
+    license:
+      id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      label: CC BY-NC-SA 4.0
+    name: ENPKG RDF Vocabulary
+    original_source:
+      - source: kg-enp
+        relation_type: prov:hadPrimarySource
+    product_url: https://enpkg.commons-lab.org/doc/index.html
+  - category: ProcessProduct
+    description: Full ENPKG workflow repository for generating experimental natural products knowledge graphs from metabolomics datasets.
+    format: http
+    id: "kg-enp.workflow"
+    license:
+      id: https://www.gnu.org/licenses/gpl-3.0.en.html
+      label: GPL-3.0
+    name: ENPKG Full Workflow
+    original_source:
+      - source: kg-enp
+        relation_type: prov:hadPrimarySource
+    product_url: https://github.com/enpkg/enpkg_full
+publications:
+  - authors:
+      - Arnaud Gaudry
+      - Marco Pagni
+      - Florence Mehl
+      - Sebastien Moretti
+      - Luis-Manuel Quiros-Guerrero
+      - Luca Cappelletti
+      - Adriano Rutz
+      - Marcel Kaiser
+      - Laurence Marcourt
+      - Emerson Ferreira Queiroz
+      - Jean-Robert Ioset
+      - Antonio Grondin
+      - Bruno David
+      - Jean-Luc Wolfender
+      - Pierre-Marie Allard
+    doi: 10.1021/acscentsci.3c00800
+    id: doi:10.1021/acscentsci.3c00800
+    journal: ACS Central Science
+    preferred: true
+    title: A Sample-Centric and Knowledge-Driven Computational Framework for Natural Products Drug Discovery
+    year: '2024'
 repository: https://github.com/enpkg/enpkg_full
+synonyms:
+  - ENPKG
+  - Experimental Natural Products Knowledge Graph
 ---
 
 # ENP-KG: Experimental Natural Products Knowledge Graph

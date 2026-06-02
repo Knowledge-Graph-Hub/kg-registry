@@ -28,11 +28,11 @@ domains:
 homepage_url: https://epsd.biocuckoo.cn
 id: epsd
 infores_id: epsd
-last_modified_date: '2025-11-13T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Eukaryotic Phosphorylation Site Database 2.0
 products:
-- category: Portal
+- category: GraphicalInterface
   description: Main web portal for EPSD 2.0 providing search, browse, and visualization
     of protein phosphorylation sites across 223 eukaryotic species with functional
     annotations
@@ -43,21 +43,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: epsd
   product_url: https://epsd.biocuckoo.cn
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fd6e7ba18b0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
-- category: Browser
+- category: GraphicalInterface
   description: Browse phosphorylation sites by species across 223 eukaryotes including
     95 animals, 20 protists, 61 plants, and 48 fungi
   format: http
@@ -67,21 +53,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: epsd
   product_url: https://epsd.biocuckoo.cn
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fd6e7ba1ee0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
-- category: Search
+- category: GraphicalInterface
   description: Advanced search interface supporting substrate search, peptide search,
     batch search, BLAST search, and multi-condition queries
   format: http
@@ -91,21 +63,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: epsd
   product_url: https://epsd.biocuckoo.cn
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fd6e7ba1a90>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
-- category: Download
+- category: Product
   description: Download page for complete phosphorylation site datasets and annotation
     data from EPSD 2.0
   format: http
@@ -115,23 +73,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: epsd
   product_url: https://epsd.biocuckoo.cn/Download.php
-  secondary_source: []
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
-    (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ /Download.php (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7fd6e7e34050>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
-    (_ssl.c_1000)')))
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: iptmnet
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
     interactions
@@ -163,8 +113,19 @@ products:
     source: uniprot
   product_url: https://kinace.kinametrix.com/
 publications:
-- id: PMID:40581078
-- id: PMID:32008039
+- doi: 10.1093/gpbjnl/qzaf057
+  id: doi:10.1093/gpbjnl/qzaf057
+  journal: Genomics, Proteomics & Bioinformatics
+  preferred: true
+  title: 'EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across
+    Eukaryotic Species'
+  year: '2025'
+- doi: 10.1093/bib/bbz169
+  id: doi:10.1093/bib/bbz169
+  journal: Briefings in Bioinformatics
+  title: 'EPSD: a well-annotated data resource of protein phosphorylation sites in
+    eukaryotes'
+  year: '2021'
 synonyms:
 - EPSD
 - Eukaryotic phosphorylation site database

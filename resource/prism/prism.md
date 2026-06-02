@@ -22,31 +22,57 @@ domains:
 - biomedical
 - precision medicine
 - health
-homepage_url: https://depmap.org/portal/prism/
+homepage_url: https://depmap.org/repurposing/
 id: prism
-infores_id: prism
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: PRISM
 products:
 - category: GraphicalInterface
-  description: Web interface for exploring PRISM drug screening data through DepMap
+  description: Web interface for exploring the PRISM Repurposing drug-screening resource through DepMap
   format: http
   id: prism.portal
-  name: PRISM Data Portal
+  name: PRISM Repurposing Resource
   original_source:
   - relation_type: prov:hadPrimarySource
     source: prism
-  product_url: https://depmap.org/portal/prism/
+  product_url: https://depmap.org/repurposing/
 - category: Product
-  description: Downloadable drug sensitivity screening data from PRISM assays
+  description: DepMap downloads page for PRISM Repurposing primary and secondary screen data
   format: csv
   id: prism.datasets
-  name: PRISM Drug Sensitivity Datasets
+  name: PRISM Drug Sensitivity Dataset Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: prism
-  product_url: https://depmap.org/portal/data_page/
+  product_url: https://depmap.org/portal/data_page/?tab=allData
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: depmap
+- category: Product
+  description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing screen of pooled-cell line chemical-perturbation viability measurements
+  format: csv
+  id: prism.primary_screen_lfc
+  name: PRISM Repurposing Primary Screen Log-Fold Change
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  product_url: https://ndownloader.figshare.com/files/20237709
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: depmap
+- category: Product
+  description: Dose-response curve parameter matrix from the secondary PRISM Repurposing screen of 1,448 compounds across cancer cell lines
+  format: csv
+  id: prism.secondary_screen_dose_response
+  name: PRISM Repurposing Secondary Screen Dose Response
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prism
+  product_url: https://ndownloader.figshare.com/files/20237739
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: depmap
 - category: ProgrammingInterface
   description: API access to PRISM drug screening data
   format: http
@@ -140,8 +166,19 @@ products:
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
-- id: https://doi.org/10.1038/s43018-019-0018-6
-repository: https://github.com/broadinstitute/depmap_omics
+- authors:
+  - Steven M Corsello
+  - Rohith T Nagari
+  - Ryan D Spangler
+  - Jordan Rossen
+  - Mustafa Kocak
+  - Todd R Golub
+  doi: 10.1038/s43018-019-0018-6
+  id: doi:10.1038/s43018-019-0018-6
+  journal: Nature Cancer
+  preferred: true
+  title: Discovering the anticancer potential of non-oncology drugs by systematic viability profiling
+  year: '2020'
 synonyms:
 - PRISM
 - Profiling Relative Inhibition Simultaneously in Mixtures
@@ -214,7 +251,7 @@ All PRISM data is freely available through:
 
 ## Information Resource ID
 
-This resource has the Information Resource identifier: `infores:prism`
+No exact PRISM entry was found in the INFORES catalog during the 2026-06-02 curation pass.
 
 ## License and Reuse
 

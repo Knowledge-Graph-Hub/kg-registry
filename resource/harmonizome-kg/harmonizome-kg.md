@@ -10,15 +10,15 @@ contacts:
         value: https://labs.icahn.mssm.edu/maayanlab/
     label: Ma'ayan Laboratory
 creation_date: '2025-09-23T00:00:00Z'
-description: Harmonizome-KG is a comprehensive knowledge graph derived from the Harmonizome database, integrating functional genomics data across multiple biological domains to connect genes with their functional annotations, regulatory relationships, protein interactions, and phenotypic associations in a unified graph structure.
+description: Harmonizome-KG is a knowledge graph section of Harmonizome 3.0 that serializes Harmonizome's processed gene-attribute datasets into a Neo4j-backed graph interface and API. It supports exploration of genes, biological and biomedical attributes, resources, datasets, and associations derived from Harmonizome's integrated multi-omics knowledge base.
 domains:
   - biomedical
   - genomics
   - systems biology
   - biological systems
-homepage_url: https://maayanlab.cloud/harmonizome-kg/
+homepage_url: https://harmonizome-kg.maayanlab.cloud/
 id: harmonizome-kg
-last_modified_date: '2025-09-23T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -30,29 +30,55 @@ products:
     format: http
     id: harmonizome-kg.portal
     name: Harmonizome-KG Explorer
-    product_url: https://maayanlab.cloud/harmonizome-kg/
+    product_url: https://harmonizome-kg.maayanlab.cloud/
     original_source:
       - source: harmonizome-kg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: harmonizome
+        relation_type: prov:wasDerivedFrom
   - category: ProgrammingInterface
-    description: RESTful API for programmatic access to Harmonizome functional genomics knowledge graph
-    format: http
+    connection_url: https://harmonizome-kg.maayanlab.cloud/api/knowledge_graph
+    description: API endpoint for programmatic access to Harmonizome-KG neighborhoods,
+      with filter parameters documented in the Harmonizome knowledge graph API guide
+    format: json
     id: harmonizome-kg.api
     name: Harmonizome-KG API
-    product_url: https://maayanlab.cloud/harmonizome-kg/api/
+    product_url: https://maayanlab.cloud/Harmonizome/documentation#kg-api
     original_source:
       - source: harmonizome-kg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: harmonizome
+        relation_type: prov:wasDerivedFrom
   - category: GraphProduct
-    description: Neo4j database containing integrated functional genomics data with genes, proteins, pathways, diseases, and regulatory relationships
+    description: Neo4j knowledge graph serialization of Harmonizome processed datasets,
+      including genes, attributes, resources, datasets, and gene-attribute associations
     dump_format: neo4j
     format: neo4j
     id: harmonizome-kg.graph
+    latest_version: '3.0'
     name: Harmonizome-KG Neo4j Database
     original_source:
       - source: harmonizome-kg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: harmonizome
+        relation_type: prov:wasDerivedFrom
+    product_url: https://harmonizome-kg.maayanlab.cloud/
 publications:
+  - authors:
+      - Ido Diamant
+      - Daniel J B Clarke
+      - John Erol Evangelista
+      - Nathania Lingam
+      - Avi Ma'ayan
+    doi: 10.1093/nar/gkae1080
+    id: doi:10.1093/nar/gkae1080
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Harmonizome 3.0: integrated knowledge about genes and proteins from diverse multi-omics resources'
+    year: '2025'
   - authors:
       - Rouillard AD
       - Gundersen GW
@@ -61,19 +87,23 @@ publications:
       - Monteiro CD
       - McDermott MG
       - Ma'ayan A
+    doi: 10.1093/database/baw100
     id: doi:10.1093/database/baw100
     journal: Database
-    preferred: true
+    preferred: false
     title: 'The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins'
     year: '2016'
-repository: https://github.com/MaayanLab/harmonizome-kg
+repository: https://github.com/MaayanLab/Knowledge-Graph-UI
 tags:
   - translator
 ---
 
 # Harmonizome-KG
 
-Harmonizome-KG is a comprehensive knowledge graph built from the Harmonizome database, which contains over 100 datasets from 66 online resources that describe functional associations between genes and proteins. The knowledge graph provides a unified view of functional genomics data across multiple biological scales and domains.
+Harmonizome-KG is the knowledge graph interface for Harmonizome 3.0. It uses the
+knowledge graph serializations of processed Harmonizome datasets to support graph
+queries and subnetwork visualizations over genes, attributes, datasets, resources,
+and associations.
 
 ## Key Features
 

@@ -21,13 +21,57 @@ domains:
 - genomics
 - translational
 - biomedical
-homepage_url: http://mrcieu.mrsoftware.org/PRS_atlas/
+homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b
 id: prsatlas
-infores_id: prsatlas
-last_modified_date: '2025-12-03T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://spdx.org/licenses/CC0-1.0.html
+  label: CC0-1.0
 name: PRS Atlas
 products:
+- category: Product
+  description: Dryad archive for PRS Atlas results, including PRS association results at P less than 5e-05 and P less than 5e-08 thresholds
+  format: http
+  id: prsatlas.dryad
+  name: PRS Atlas Dryad Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  product_url: https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mrbase
+  - relation_type: prov:wasDerivedFrom
+    source: ukbiobank
+- category: Product
+  description: PRS Atlas results using the P less than 5e-05 polygenic risk score threshold, archived by Dryad
+  format: txt
+  id: prsatlas.results_5e05
+  name: PRS Atlas Results P less than 5e-05
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  product_url: https://datadryad.org/downloads/file_stream/83029
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mrbase
+  - relation_type: prov:wasDerivedFrom
+    source: ukbiobank
+- category: Product
+  description: PRS Atlas results using the P less than 5e-08 polygenic risk score threshold, archived by Dryad
+  format: txt
+  id: prsatlas.results_5e08
+  name: PRS Atlas Results P less than 5e-08
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: prsatlas
+  product_url: https://datadryad.org/downloads/file_stream/83030
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: mrbase
+  - relation_type: prov:wasDerivedFrom
+    source: ukbiobank
 - category: GraphProduct
   description: Integrated graph knowledge base combining Mendelian randomization causal
     estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
@@ -89,9 +133,9 @@ synonyms:
 taxon:
 - NCBITaxon:9606
 warnings:
-- The web application at http://mrcieu.mrsoftware.org/PRS_atlas/ may no longer be
-  accessible
+- The original PRS Atlas web application at http://mrcieu.mrsoftware.org/PRS_atlas/ returned HTTP 404 after HTTPS redirection on 2026-06-02; the Dryad archive remains available.
+- The INFORES catalog did not contain an exact PRS Atlas entry on 2026-06-02, so no infores_id is asserted.
 ---
 # PRS Atlas
 
-The PRS Atlas is a comprehensive resource analyzing polygenic risk scores (PRS) for 162 traits derived from genome-wide association studies and their associations with 551 complex traits from the UK Biobank study. Developed by the MRC Integrative Epidemiology Unit at the University of Bristol, this atlas enables phenome-wide association studies using PRS to identify putative causal relationships between genetic liability and health outcomes. The resource was designed to facilitate causal inference through Mendelian randomization approaches and includes a web application for querying results, though the application may no longer be accessible.
+The PRS Atlas is a comprehensive resource analyzing polygenic risk scores (PRS) for 162 traits derived from genome-wide association studies and their associations with 551 complex traits from the UK Biobank study. Developed by the MRC Integrative Epidemiology Unit at the University of Bristol, this atlas enables phenome-wide association studies using PRS to identify putative causal relationships between genetic liability and health outcomes. The original web application is no longer accessible, but a copy of the result data is archived in Dryad.

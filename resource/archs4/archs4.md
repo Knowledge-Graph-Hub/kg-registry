@@ -19,7 +19,7 @@ domains:
 - genomics
 homepage_url: https://archs4.org/
 id: archs4
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -36,6 +36,16 @@ products:
   - relation_type: prov:hadPrimarySource
     source: archs4
   product_url: https://archs4.org/
+- category: DocumentationProduct
+  description: ARCHS4 help page covering downloads, client packages, licensing, and
+    citation information
+  format: http
+  id: archs4.help
+  name: ARCHS4 Help
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  product_url: https://archs4.org/help
 - category: Product
   description: Latest human gene-level ARCHS4 expression matrix in HDF5 format using
     Ensembl 107 annotations
@@ -120,6 +130,32 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
   product_url: https://archs4.org/zoo
+- category: Product
+  description: Official Python package for downloading, loading, querying, normalizing,
+    and processing ARCHS4 HDF5 data files
+  format: python
+  id: archs4.archs4py
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0
+  name: archs4py
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  product_url: https://github.com/MaayanLab/archs4py
+- category: Product
+  description: Official R package for loading, querying, and analyzing ARCHS4 HDF5
+    data files
+  format: mixed
+  id: archs4.archs4r
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache-2.0
+  name: archs4r
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: archs4
+  product_url: https://github.com/MaayanLab/archs4r
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -252,6 +288,7 @@ publications:
   - Wang L
   - Silverstein MC
   - Ma'ayan A
+  doi: 10.1038/s41467-018-03751-6
   id: doi:10.1038/s41467-018-03751-6
   journal: Nature Communications
   preferred: true

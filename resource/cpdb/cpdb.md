@@ -1,13 +1,13 @@
 ---
-activity_status: inactive
+activity_status: active
 category: Aggregator
 creation_date: '2025-11-19T00:00:00Z'
 description: ConsensusPathDB integrates molecular interaction data from over 30 public
   databases, including protein-protein, genetic, metabolic, signaling, gene regulatory
   and drug-target interactions. It provides comprehensive pathway and functional analysis
   tools, allowing users to explore molecular networks and pathways from multiple sources
-  through a unified interface. The resource was last updated in 2016 and the main
-  website is no longer accessible.
+  through a unified interface. The frames-based site remains reachable and reports
+  Release 35 for the human instance, dated June 5, 2021.
 domains:
 - pathways
 - proteomics
@@ -18,16 +18,14 @@ domains:
 homepage_url: http://cpdb.molgen.mpg.de/
 id: cpdb
 infores_id: cpdb
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
 name: ConsensusPathDB
 products:
 - category: GraphicalInterface
   description: Web-based interface for integrated pathway and interaction analysis
-    from multiple databases (inactive)
+    from multiple databases
+  format: http
   id: cpdb.web
   name: ConsensusPathDB Web Interface
   original_source:
@@ -35,59 +33,64 @@ products:
     source: cpdb
   product_url: http://cpdb.molgen.mpg.de/
 - category: Product
-  description: Download files containing integrated interaction and pathway data
-  format: txt
+  description: Download and access page for ConsensusPathDB data and service assets
+  format: http
   id: cpdb.downloads
   name: ConsensusPathDB Data Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpdb
-  product_url: http://cpdb.molgen.mpg.de/CPDB/download
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-03-11_ HTTP 503 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
-    when accessing file'
+  product_url: http://cpdb.molgen.mpg.de/download
+- category: ProgrammingInterface
+  description: SOAP web service description for ConsensusPathDB programmatic access
+  format: xml
+  id: cpdb.wsdl
+  name: ConsensusPathDB SOAP WSDL
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cpdb
+  product_url: http://cpdb.molgen.mpg.de/download/CPDB.wsdl
 publications:
 - authors:
-  - Kamburov A
-  - Pentchev K
-  - Galicka H
-  - Wierling C
-  - Lehrach H
-  - Herwig R
+  - Atanas Kamburov
+  - Konstantin Pentchev
+  - Hanna Galicka
+  - Christoph Wierling
+  - Hans Lehrach
+  - Ralf Herwig
   doi: 10.1093/nar/gkq1156
-  id: PMID:21071422
+  id: doi:10.1093/nar/gkq1156
   journal: Nucleic Acids Research
+  preferred: true
   title: 'ConsensusPathDB: toward a more complete picture of cell biology'
   year: '2011'
 - authors:
-  - Kamburov A
-  - Wierling C
-  - Lehrach H
-  - Herwig R
+  - Atanas Kamburov
+  - Christoph Wierling
+  - Hans Lehrach
+  - Ralf Herwig
   doi: 10.1093/nar/gkn698
-  id: PMID:18940869
+  id: doi:10.1093/nar/gkn698
   journal: Nucleic Acids Research
   title: ConsensusPathDB--a database for integrating human functional interaction
     networks
   year: '2009'
 synonyms:
 - CPDB
+- CPDB-human
+- ConsensusPathDB-human
+taxon:
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:4932
 ---
 # ConsensusPathDB
 
 ## Overview
 
-ConsensusPathDB was an integrated molecular interaction database that consolidated data from over 30 public databases, including protein-protein interactions, genetic interactions, metabolic pathways, signaling pathways, gene regulatory interactions, and drug-target interactions. It provided a comprehensive platform for pathway and functional analysis of molecular networks.
+ConsensusPathDB is an integrated molecular interaction database that consolidates data from over 30 public databases, including protein-protein interactions, genetic interactions, metabolic pathways, signaling pathways, gene regulatory interactions, and drug-target interactions. It provides a comprehensive platform for pathway and functional analysis of molecular networks.
 
-**Note**: This resource is currently **inactive**. The main website (http://cpdb.molgen.mpg.de/) is no longer accessible, and the database has not been updated since 2016.
+The frames-based website remains reachable and reports Release 35 for the human instance, dated June 5, 2021. The site also links mouse and yeast instances. Historical `/CPDB/download` links are unavailable, but the root access page and SOAP WSDL remain reachable.
 
 ## Information Resource ID
 

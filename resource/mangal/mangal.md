@@ -16,7 +16,7 @@ domains:
   - biological systems
 homepage_url: https://mangal.io/
 id: mangal
-last_modified_date: '2025-12-15T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,12 +32,13 @@ products:
     original_source:
       - source: mangal
         relation_type: prov:hadPrimarySource
+    secondary_source:
       - source: catalogue-of-life
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
       - source: gbif
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
       - source: itis
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to network data and metadata
     format: http
@@ -48,12 +49,15 @@ products:
     original_source:
       - source: mangal
         relation_type: prov:hadPrimarySource
+    secondary_source:
       - source: catalogue-of-life
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
       - source: gbif
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
       - source: itis
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
+    warnings:
+      - 'Host api.mangal.io was not resolvable when checked on 2026-06-02.'
   - category: DocumentationProduct
     description: API documentation, user guides, and data model specification
     format: http
@@ -63,12 +67,49 @@ products:
     original_source:
       - source: mangal
         relation_type: prov:hadPrimarySource
+  - category: ProcessProduct
+    description: R package for retrieving and exploring data from the Mangal ecological interactions database
+    format: http
+    id: mangal.rmangal
+    name: rmangal R Client
+    product_url: https://docs.ropensci.org/rmangal/
+    original_source:
+      - source: mangal
+        relation_type: prov:hadPrimarySource
+    secondary_source:
       - source: catalogue-of-life
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
       - source: gbif
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
       - source: itis
-        relation_type: prov:hadPrimarySource
+        relation_type: prov:used
+publications:
+  - authors:
+      - Steve Vissault
+      - Dominique Gravel
+      - Timothee Poisot
+    doi: 10.3897/biss.3.37037
+    id: doi:10.3897/biss.3.37037
+    journal: Biodiversity Information Science and Standards
+    preferred: true
+    title: 'Mangal: An open infrastructure for ecological interactions'
+    year: '2019'
+  - authors:
+      - Timothee Poisot
+      - Benjamin Baiser
+      - Jennifer A. Dunne
+      - Sonia Kefi
+      - Francois Massol
+      - Nicolas Mouquet
+      - Tamara N. Romanuk
+      - Daniel B. Stouffer
+      - Spencer A. Wood
+      - Dominique Gravel
+    doi: 10.1111/ecog.00976
+    id: doi:10.1111/ecog.00976
+    journal: Ecography
+    title: mangal - making ecological network analysis simple
+    year: '2015'
 taxon:
   - NCBITaxon:33208
   - NCBITaxon:33090

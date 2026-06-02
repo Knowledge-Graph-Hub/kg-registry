@@ -24,7 +24,7 @@ domains:
 - systems biology
 homepage_url: https://hubmapconsortium.org/
 id: hubmap
-last_modified_date: '2025-08-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -56,9 +56,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hubmap
   product_url: https://humanatlas.io/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hra
 - category: GraphicalInterface
   description: Interactive data visualization tool for spatial and single-cell multimodal
     datasets
+  format: http
   id: hubmap.vitessce
   name: Vitessce
   original_source:
@@ -67,6 +71,7 @@ products:
   product_url: https://vitessce.io/
 - category: GraphicalInterface
   description: Interactive JupyterLab environments for analyzing HuBMAP data
+  format: http
   id: hubmap.workspaces
   name: HuBMAP Workspaces
   original_source:
@@ -75,6 +80,7 @@ products:
   product_url: https://portal.hubmapconsortium.org/workspaces
 - category: GraphicalInterface
   description: Single-cell RNA-seq and ATAC-seq analysis using reference datasets
+  format: http
   id: hubmap.azimuth
   name: Azimuth
   original_source:
@@ -132,35 +138,45 @@ products:
 - category: GraphicalInterface
   description: Functional Unit State Identification and Navigation with Whole Slide
     Imaging
+  format: http
   id: hubmap.fusion
   name: FUSION
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hubmap
-  product_url: http://fusion.hubmapconsortium.org/
+  product_url: https://fusion.hubmapconsortium.org/
 - category: Product
   description: Antibody validation reports for multiplex imaging assays
+  format: http
   id: hubmap.antibody_validation_reports
   name: Antibody Validation Reports
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hubmap
-  product_url: https://avr.hubmapconsortium.org/
+  product_url: https://avr.xconsortia.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 401 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 401 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 401 error
-    when accessing file'
+  - 'Antibody Validation Reports require authorization and returned HTTP 401 when
+    checked on 2026-06-02.'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
+  format: http
   id: hubmap.data_ingest_portal
   name: Data Ingest Portal
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hubmap
   product_url: https://ingest.hubmapconsortium.org/
+- category: ProgrammingInterface
+  connection_url: https://entity.api.hubmapconsortium.org/
+  description: HuBMAP API documentation for RESTful web services that support data
+    ingest, entity metadata, search, ontology/UBKG access, and provenance queries.
+  format: json
+  id: hubmap.api
+  name: HuBMAP APIs
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hubmap
+  product_url: https://docs.hubmapconsortium.org/apis.html
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -521,12 +537,10 @@ The Human BioMolecular Atlas Program (HuBMAP) is a transformative initiative by 
 
 HuBMAP represents a paradigm shift in our understanding of human biology by providing spatially resolved maps of cellular organization and molecular signatures across diverse human tissues. The program integrates cutting-edge technologies in single-cell analysis, spatial biology, imaging, and data science to create a comprehensive reference atlas of the human body.
 
-As of 2025, the HuBMAP Data Portal provides access to:
-- **310 Donors** from diverse demographic backgrounds
-- **3,118 Samples** across multiple tissue types
-- **4,742 Datasets** representing various assay types
-- **31 Organs** with detailed cellular characterization
-- **21 Collections** of curated datasets
+The HuBMAP Data Portal provides access to donor, sample, dataset, assay, and
+collection metadata across healthy human tissues. The project also maintains
+REST APIs, data submission tooling, visualization environments, and Human
+Reference Atlas resources for spatially grounded data exploration.
 
 ## Mission and Goals
 

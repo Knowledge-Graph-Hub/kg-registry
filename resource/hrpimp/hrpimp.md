@@ -6,20 +6,18 @@ description: The Human Reference Protein Interactome Mapping Project (HRPIMP) is
   systematic effort to map binary protein-protein interactions in human cells. The
   project produced the Human Reference Interactome (HuRI) database containing high-quality
   experimentally validated protein-protein interactions. Using systematic yeast two-hybrid
-  (Y2H) screening approaches, HRPIMP mapped interactions for 9,094 proteins, identifying
-  64,006 binary protein-protein interactions. This comprehensive reference map of
-  the human binary protein interactome provides essential data for understanding cellular
-  mechanisms, disease pathways, and molecular networks. The data is freely available
-  and has been integrated into multiple knowledge bases and research projects including
-  studies of Alzheimer's Disease, cancer, and other complex diseases.
+  (Y2H) screening approaches, HRPIMP produced proteome-scale human PPI datasets including
+  HuRI, HI-union, and earlier CCSB interactome screens. The current HuRI portal provides
+  the HuRI dataset with 52,569 interactions in TSV and PSI-MI formats, mapped to Ensembl
+  identifiers for GENCODE protein-coding genes.
 domains:
 - proteomics
 - systems biology
 - biomedical
 - biological systems
-homepage_url: http://www.interactome-atlas.org/
+homepage_url: https://www.interactome-atlas.org/
 id: hrpimp
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -27,22 +25,45 @@ license:
 name: Human Reference Protein Interactome Mapping Project
 products:
 - category: Product
-  description: TSV files containing systematically mapped binary protein-protein interactions
-    for 9,094 human proteins with 64,006 validated interactions
+  description: Current HuRI TSV file containing 52,569 systematically mapped binary
+    human protein-protein interactions, provided as interacting Ensembl gene ID pairs
   format: tsv
   id: hrpimp.data
+  latest_version: HuRI
   name: HuRI Protein-Protein Interaction Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hrpimp
-  product_url: https://github.com/VIDallab/huri
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
-    when accessing file'
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+- category: Product
+  description: Current HuRI PSI-MI formatted interaction file with detailed experimental
+    information and isoform-specific ORF, transcript, and protein identifiers
+  format: psi_mi_mitab
+  id: hrpimp.huri.psi
+  latest_version: HuRI
+  name: HuRI PSI-MI Interaction Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hrpimp
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: gencode
+  - relation_type: prov:wasInformedBy
+    source: ensembl
+  product_file_size: 169848924
+  product_url: https://www.interactome-atlas.org/data/HuRI.psi
 - category: GraphicalInterface
   description: Web interface for browsing and exploring the Human Reference Interactome
   format: http
@@ -51,7 +72,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hrpimp
-  product_url: http://www.interactome-atlas.org/
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_url: https://www.interactome-atlas.org/
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
@@ -246,22 +269,22 @@ publications:
   - Roth FP
   - Calderwood MA
   doi: 10.1038/s41586-020-2188-x
-  id: PMID:32296183
+  id: doi:10.1038/s41586-020-2188-x
   journal: Nature
+  preferred: true
   title: A reference map of the human binary protein interactome
   year: '2020'
-repository: https://github.com/VIDallab/huri
+repository: https://github.com/CCSB-DFCI/HuRI_paper
 synonyms:
 - HRPIMP
 - HuRI
 - Human Reference Interactome
 taxon:
 - NCBITaxon:9606
-- NCBITaxon:4932
 ---
 # Human Reference Protein Interactome Mapping Project
 
-The Human Reference Protein Interactome Mapping Project (HRPIMP) is a landmark systematic effort to comprehensively map binary protein-protein interactions (PPIs) in human cells. Led by the Center for Cancer Systems Biology at Dana-Farber Cancer Institute under principal investigators Marc Vidal and Frederick P. Roth, this project has produced the Human Reference Interactome (HuRI), one of the most comprehensive and high-quality maps of human protein interactions available.
+The Human Reference Protein Interactome Mapping Project (HRPIMP) is a landmark systematic effort to comprehensively map binary protein-protein interactions (PPIs) in human cells. Led by the Center for Cancer Systems Biology at Dana-Farber Cancer Institute under principal investigators Marc Vidal and Frederick P. Roth, this project has produced the Human Reference Interactome (HuRI), one of the most comprehensive and high-quality maps of human protein interactions available. The current portal provides HuRI and related CCSB interactome datasets as simple TSV files and PSI-MI files.
 
 ## Key Features
 

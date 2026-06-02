@@ -13,21 +13,29 @@ description: Entrez is NCBI's primary text search and retrieval system that inte
 domains:
   - biomedical
   - literature
-homepage_url: https://www.ncbi.nlm.nih.gov/Web/Search/entrezfs.html
+homepage_url: https://www.ncbi.nlm.nih.gov/search/
 id: entrez
 infores_id: entrez
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Entrez
 products:
   - category: ProgrammingInterface
+    connection_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
     description: E-utilities API for programmatic access to Entrez databases
-    format: http
+    format: json
     id: entrez.eutils
     name: Entrez E-utilities
     original_source:
       - source: entrez
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: pubmed
+        relation_type: prov:wasInformedBy
+      - source: ncbigene
+        relation_type: prov:wasInformedBy
+      - source: ncbitaxon
+        relation_type: prov:wasInformedBy
     product_url: https://www.ncbi.nlm.nih.gov/books/NBK25501/
   - category: GraphicalInterface
     description: Web-based search interface for Entrez databases
@@ -37,7 +45,7 @@ products:
     original_source:
       - source: entrez
         relation_type: prov:hadPrimarySource
-    product_url: https://www.ncbi.nlm.nih.gov/sites/gquery
+    product_url: https://www.ncbi.nlm.nih.gov/search/
   - category: ProgrammingInterface
     description: Entrez Direct command-line tools for Unix systems
     format: mixed

@@ -15,9 +15,9 @@ domains:
 - clinical
 - health
 - pharmacology
-homepage_url: https://help.visionhealth.co.uk/DLM860/consultation_manager/Content/Whats%20New.htm
+homepage_url: https://help.visionhealth.co.uk/Vision_Consultation_Manager_Help_Centre/Content/ConMgr/Gemscript/Gemscript_Drug_Dictionary.htm
 id: gemscript
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: Gemscript
 products:
@@ -30,18 +30,25 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gemscript
-  product_url: https://help.visionhealth.co.uk/DLM860/consultation_manager/Content/Whats%20New.htm
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dmd
+  product_url: https://help.visionhealth.co.uk/Vision_Consultation_Manager_Help_Centre/Content/ConMgr/Gemscript/Gemscript_Drug_Dictionary.htm
 - category: DocumentationProduct
   description: Monthly Gemscript bulletin summarizing additions, deletions, name changes,
     and drug class changes in the active dictionary
   format: pdf
   id: gemscript.bulletin
+  latest_version: 2026 May v.01
   name: Gemscript Monthly Bulletin
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gemscript
-  product_file_size: 166947
-  product_url: https://help.visionhealth.co.uk/PDFs/Dictionaries/Gemscript/Gemscript_Bulletin_Mar_2025.pdf
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: dmd
+  product_file_size: 173789
+  product_url: https://help.visionhealth.co.uk/PDFs/Dictionaries/Gemscript/Gemscript_Bulletin_May_2026.pdf
 - category: Product
   description: Downloadable standardized vocabulary bundles for OMOP CDM assembled
     through the authenticated Athena web application
@@ -102,9 +109,11 @@ through a single openly documented bulk download site.
 ### Gemscript Vision Help Documentation
 
 Official Vision help material describing the introduction and operational use of Gemscript
-in prescribing workflows.
+in prescribing workflows. The current documentation states that Gemscript is an
+integrated dm+d drug dictionary provided and maintained by RESIP UK.
 
 ### Gemscript Monthly Bulletin
 
 Representative public release bulletin documenting monthly dictionary additions, deletions,
-and maintenance changes.
+and maintenance changes. The latest public bulletin found during curation was the
+May 2026 release.

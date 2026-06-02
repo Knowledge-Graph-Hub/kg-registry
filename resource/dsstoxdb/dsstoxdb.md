@@ -9,13 +9,13 @@ domains:
   - environment
 id: dsstoxdb
 infores_id: dsstoxdb
-last_modified_date: '2025-11-19T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
 name: Distributed Structure-Searchable Toxicity (DSSTox) Database
-homepage_url: https://www.epa.gov/chemical-research/distributed-structure-searchable-toxicity-dsstox-database
+homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 products:
   - category: GraphicalInterface
     description: Web-based interface for searching over 1.2 million chemicals with integrated toxicity, bioactivity, and exposure data
@@ -30,20 +30,31 @@ products:
     description: Downloadable Excel and CSV files containing DSSTox identifiers mapped to CAS numbers, InChIKeys, SMILES, molecular formulas, and other chemical identifiers for over 1.2 million substances
     format: mixed
     id: dsstoxdb.downloads
+    latest_version: 10.23645/epacomptox.5588566.v8
+    license:
+      id: https://creativecommons.org/publicdomain/zero/1.0/
+      label: CC0
     name: DSSTox Data Downloads
     original_source:
       - source: dsstoxdb
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: epa-srs
+        relation_type: prov:wasInformedBy
+      - source: chemid
+        relation_type: prov:wasInformedBy
+      - source: pubchem
+        relation_type: prov:wasInformedBy
     product_url: https://epa.figshare.com/articles/dataset/Chemistry_Dashboard_Data_DSSTox_Identifiers_Mapped_to_CAS_Numbers_and_Names/5588566
   - category: ProgrammingInterface
-    description: Public API providing programmatic access to DSSTox chemical data and computational toxicology information
+    description: Public CTX API documentation for programmatic access to DSSTox chemical data and computational toxicology information; individual API keys are required
     format: http
     id: dsstoxdb.api
     name: EPA CompTox API
     original_source:
       - source: dsstoxdb
         relation_type: prov:hadPrimarySource
-    product_url: https://api-ccte.epa.gov/docs/index.html
+    product_url: https://www.epa.gov/comptox-tools/computational-toxicology-and-exposure-apis
 ---
 
 # Distributed Structure-Searchable Toxicity (DSSTox) Database

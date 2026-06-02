@@ -10,33 +10,54 @@ domains:
 - genomics
 homepage_url: https://www.gencodegenes.org/
 id: gencode
-last_modified_date: '2025-11-26T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: GENCODE
 products:
 - category: Product
-  description: Comprehensive gene annotations for human genome in GTF format
+  description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
+    genome assembly in GTF format
   format: gff
   id: gencode.human.gtf
+  latest_version: v49
   name: GENCODE Human Annotations GTF
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
-  product_url: https://www.gencodegenes.org/human/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: hgnc
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  product_file_size: 93374019
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz
 - category: Product
-  description: Comprehensive gene annotations for mouse genome in GTF format
+  description: Current comprehensive GENCODE gene annotations for the mouse GRCm39
+    genome assembly in GTF format
   format: gff
   id: gencode.mouse.gtf
+  latest_version: M38
   name: GENCODE Mouse Annotations GTF
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gencode
-  product_url: https://www.gencodegenes.org/mouse/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasInformedBy
+    source: mgi
+  - relation_type: prov:wasInformedBy
+    source: ncbigene
+  product_file_size: 37627563
+  product_url: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M38/gencode.vM38.annotation.gtf.gz
 - category: Product
   description: GENCODE Primary transcript set capturing minimal transcripts at protein
     coding genes
   format: gff
   id: gencode.primary
+  latest_version: current
   name: GENCODE Primary Transcripts
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -295,6 +316,18 @@ products:
     source: kegg
   - relation_type: prov:hadPrimarySource
     source: doid
+publications:
+- authors:
+  - Mudge JM
+  - Frankish A
+  - Harrow J
+  - Flicek P
+  doi: 10.1093/nar/gkae1078
+  id: doi:10.1093/nar/gkae1078
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'GENCODE 2025: reference gene annotation for human and mouse'
+  year: '2025'
 synonyms:
 - GENCODE
 - Encyclopedia of genes and gene variants
@@ -388,7 +421,7 @@ GENCODE is supported by the National Human Genome Research Institute (NHGRI) of 
 ## Access
 
 - **Website**: https://www.gencodegenes.org/
-- **FTP Downloads**: Gene annotations, sequences, and metadata
+- **HTTPS Downloads**: Gene annotations, sequences, and metadata
 - **Genome Browsers**: Via Ensembl and UCSC
 - **Social Media**: @GencodeGenes on Twitter
 

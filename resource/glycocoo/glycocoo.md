@@ -41,7 +41,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/glycoinfo/GlycoCoO
 id: glycocoo
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: GlycoConjugate Ontology (GlycoCoO)
 products:
@@ -54,8 +54,23 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
-  product_file_size: 5642
-  product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/ontology/glycocoo.owl
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: glycordf
+  product_file_size: 29233
+  product_url: https://raw.githubusercontent.com/glycoinfo/GlycoCoO/master/ontology/glycocoo.owl
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and exploring the GlycoCoO ontology
+  format: http
+  id: glycocoo.bioportal
+  name: GlycoCoO BioPortal Entry
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: glycocoo
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: bioportal
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCOCOO
 - category: DocumentationProduct
   description: GitHub Wiki with developer information, database providers, and prefix
     documentation
@@ -65,6 +80,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: glycordf
   product_url: https://github.com/glycoinfo/GlycoCoO/wiki
 - category: Product
   description: Sample RDF data files demonstrating GlycoCoO usage with examples from
@@ -75,6 +93,15 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: glycordf
+  - relation_type: prov:wasInformedBy
+    source: unicarbkb
+  - relation_type: prov:wasInformedBy
+    source: glyconnect
+  - relation_type: prov:wasInformedBy
+    source: glyconavi
   product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
 - category: Product
   description: Example SPARQL queries for querying glycoconjugate data across federated
@@ -85,6 +112,9 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: glycocoo
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: glycordf
   product_file_size: 2467
   product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
 - category: GraphProduct
@@ -329,7 +359,8 @@ publications:
   - Daisuke Shinmachi
   - Kiyoko F Aoki-Kinoshita
   category: Publication
-  id: https://doi.org/10.1093/glycob/cwab013
+  doi: 10.1093/glycob/cwab013
+  id: doi:10.1093/glycob/cwab013
   journal: Glycobiology
   preferred: true
   title: The glycoconjugate ontology (GlycoCoO) for standardizing the annotation of

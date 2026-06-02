@@ -16,17 +16,17 @@ contacts:
   label: University of Toronto
 creation_date: '2025-12-20T00:00:00Z'
 description: Pathway Commons is a centralized web resource that aggregates biological
-  pathway and molecular interaction data from 22 major public databases into standardized
-  BioPAX format. It provides 4,794 pathways and over 2.3 million molecular interactions
-  accessible through multiple interfaces including web portal, REST API, and downloadable
-  datasets, supporting systems biology research, pathway analysis, and network visualization.
+  pathway and molecular interaction data into standardized BioPAX format. Its PC
+  v14 archive integrates 26 source rows, 6,692 pathways, and over 3.5 million
+  molecular interactions, accessible through the web portal, REST API, and downloadable
+  datasets for systems biology research, pathway analysis, and network visualization.
 domains:
 - pathways
 - systems biology
 homepage_url: https://www.pathwaycommons.org/
 id: pathway-commons
 infores_id: pathway-commons
-last_modified_date: '2025-12-20T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -36,7 +36,7 @@ products:
 - category: ProgrammingInterface
   description: RESTful web service API for programmatic access to Pathway Commons
     data with multiple query capabilities including search, pathway retrieval, and
-    network analysis
+    network analysis; the live API page identifies the service as PC v14
   format: http
   id: pathway-commons.api
   is_public: true
@@ -44,7 +44,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
-  product_url: http://www.pathwaycommons.org/pc/webservice.do
+  product_url: https://www.pathwaycommons.org/pc2/
 - category: GraphicalInterface
   description: Interactive web-based interface for browsing, searching, and visualizing
     biological pathways and molecular interactions
@@ -57,46 +57,99 @@ products:
     source: pathway-commons
   product_url: https://www.pathwaycommons.org/
 - category: Product
-  description: Downloadable integrated pathway datasets in multiple standardized formats
-    including BioPAX, SIF, GMT, and JSON-LD
+  description: Downloadable PC v14 integrated pathway datasets in multiple standardized
+    formats including BioPAX, SIF, GMT, and TXT
+  format: http
   id: pathway-commons.downloads
   name: Pathway Commons Data Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
-  product_url: https://www.pathwaycommons.org/
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/
 - category: Product
-  description: Integrated BioPAX Level 3 unified model containing normalized pathway
-    data, molecular interactions, and cross-database entity mappings from 22 sources
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, and cross-database entity mappings
+  format: biopax
   id: pathway-commons.biopax
   name: Integrated BioPAX Model
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 - category: Product
-  description: Simple Interaction Format (SIF) network files representing binary pairwise
-    molecular relationships for network analysis and visualization
+  compression: gzip
+  description: PC v14 Simple Interaction Format network file representing binary
+    pairwise molecular relationships for network analysis and visualization
+  format: sif
   id: pathway-commons.sif
   name: SIF Network Format
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
+  product_file_size: 9810179
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.sif.gz
 - category: Product
-  description: Gene Matrix Transposed (GMT) format gene sets for pathway enrichment
-    analysis with tools like GSEA (Gene Set Enrichment Analysis)
+  compression: gzip
+  description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis
+    with tools like GSEA
   id: pathway-commons.gmt
   name: GMT Gene Set Format
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
+  product_file_size: 262513
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.gmt.gz
 - category: Product
-  description: JSON-LD format for linked data web applications with semantic context
-    and programmatic access to pathway information
-  id: pathway-commons.jsonld
-  name: JSON-LD Linked Data Format
+  compression: gzip
+  description: PC v14 tab-delimited extended SIF node and edge file using HGNC-oriented
+    identifiers
+  format: txt
+  id: pathway-commons.txt
+  name: Extended SIF TXT Format
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
+  product_file_size: 115608500
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.txt.gz
 - category: DocumentationProduct
   description: Comprehensive API documentation, data format specifications, and tutorials
     for using Pathway Commons data and services
@@ -107,7 +160,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pathway-commons
-  product_url: https://pathwaycommons.github.io/pcapi/
+  product_url: https://www.pathwaycommons.org/pc2/swagger-ui.html
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.
@@ -725,12 +778,16 @@ synonyms:
 - PC
 taxon:
 - NCBITaxon:9606
+version: PC v14
 ---
 # Pathway Commons
 
 ## Overview
 
-Pathway Commons is a centralized web resource that aggregates biological pathway and molecular interaction data from 22 major public databases into standardized BioPAX (Biological Pathway Exchange) format. The resource is dedicated to collecting, integrating, and disseminating publicly available information about biological pathways, molecular interactions, and gene regulation networks, making this critical data easily accessible to researchers worldwide.
+Pathway Commons is a centralized web resource that aggregates biological pathway
+and molecular interaction data into standardized BioPAX (Biological Pathway
+Exchange) format. The PC v14 archive integrates 26 source rows, 6,692 pathways,
+and over 3.5 million molecular interactions.
 
 Pathway Commons serves as a foundational infrastructure for systems biology research, enabling researchers to perform integrated pathway analysis, network visualization, and hypothesis generation across consolidated knowledge from the world's major pathway and interaction databases.
 
@@ -769,7 +826,7 @@ Pathway Commons **intentionally prioritizes human pathway data** from its partne
 
 ### Integrated Databases
 
-Pathway Commons consolidates data from **22 major public databases:**
+Pathway Commons PC v14 consolidates data from **26 source rows**:
 
 **Core Interaction and Pathway Sources:**
 - BioGRID (biological interactions)
@@ -825,8 +882,8 @@ Pathway Commons consolidates data from **22 major public databases:**
 
 ### RESTful Web Service API
 
-**API Endpoint:** http://www.pathwaycommons.org/pc/webservice.do
-**API Documentation:** https://pathwaycommons.github.io/pcapi/
+**API Endpoint:** https://www.pathwaycommons.org/pc2/
+**API Documentation:** https://www.pathwaycommons.org/pc2/swagger-ui.html
 
 **Core API Capabilities:**
 - Full-text keyword search
@@ -1054,7 +1111,9 @@ Pathway Commons consolidates data from **22 major public databases:**
 
 ## Citation and Usage
 
-Pathway Commons data and services are completely free and open access. All data from integrated sources is freely available with attribution to source databases.
+Pathway Commons data and services are free to access; Pathway Commons distributes
+pathway information with the intellectual property restrictions of each source
+database.
 
 ### Recommended Citation
 
@@ -1067,13 +1126,13 @@ Alternative citation:
 ### Additional Resources
 
 - **Main Website:** https://www.pathwaycommons.org/
-- **Web Service API:** http://www.pathwaycommons.org/pc/webservice.do
-- **API Documentation:** https://pathwaycommons.github.io/pcapi/
+- **Web Service API:** https://www.pathwaycommons.org/pc2/
+- **API Documentation:** https://www.pathwaycommons.org/pc2/swagger-ui.html
 - **GitHub Organization:** https://github.com/PathwayCommons
 - **cPath2 Repository:** https://github.com/PathwayCommons/cpath2
 - **Paxtools Library:** https://github.com/BioPAX/Paxtools
 - **R Package (paxtoolsr):** https://bioconductor.org/packages/release/bioc/html/paxtoolsr.html
-- **Data Downloads:** https://www.pathwaycommons.org/
+- **Data Downloads:** https://download.baderlab.org/PathwayCommons/PC2/v14/
 - **FAQ:** http://www.pathwaycommons.org/pc/faq.do
 - **Cytoscape Integration:** http://www.pathwaycommons.org/pc/cytoscape.do
 

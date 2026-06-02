@@ -10,7 +10,7 @@ domains:
 - drug discovery
 homepage_url: https://www.inchi-trust.org/
 id: inchikey
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: InChIKey
 products:
@@ -23,14 +23,30 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: inchikey
-  product_url: https://www.inchi-trust.org/
+  product_url: https://www.inchi-trust.org/downloads/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 403 error
-    when accessing file'
+  - 'InChI Trust pages returned HTTP 403 / Cloudflare challenge responses when checked
+    on 2026-06-02.'
+- category: Product
+  description: Official IUPAC-InChI source code repository for the InChI algorithm
+    and InChIKey generation software.
+  format: http
+  id: inchikey.inchi_software
+  name: InChI Software Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  product_url: https://github.com/IUPAC-InChI/InChI
+- category: GraphicalInterface
+  description: Official browser-based InChI web demo for drawing or uploading a molecule
+    and generating InChI, InChIKey, and AuxInfo values.
+  format: http
+  id: inchikey.web_demo
+  name: InChI Web Demo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: inchikey
+  product_url: https://iupac-inchi.github.io/InChI-Web-Demo/
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -327,10 +343,32 @@ products:
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+publications:
+- authors:
+  - Stephen R Heller
+  - Alan McNaught
+  - Igor Pletnev
+  - Stephen Stein
+  - Dmitrii Tchekhovskoi
+  doi: 10.1186/s13321-015-0068-4
+  id: doi:10.1186/s13321-015-0068-4
+  journal: Journal of Cheminformatics
+  preferred: true
+  title: InChI, the IUPAC International Chemical Identifier
+  year: '2015'
+repository: https://github.com/IUPAC-InChI/InChI
 synonyms:
 - InChI key
 - IUPAC InChIKey
 ---
 # InChIKey
 
-InChIKey is a compact chemical structure identifier used broadly for interoperability.
+InChIKey is a compact, fixed-length hashed representation derived from InChI,
+the IUPAC International Chemical Identifier. It is used for indexing, web search,
+and cross-resource linking of chemical structures when a shorter identifier is
+more practical than the full InChI string.
+
+The InChI Trust website remains the canonical documentation location, but it
+returned Cloudflare challenge responses during this curation pass. The public
+IUPAC-InChI GitHub repository and the official web demo provide accessible
+software and interactive generation surfaces for InChI and InChIKey values.

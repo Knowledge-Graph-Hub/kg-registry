@@ -24,12 +24,13 @@ domains:
 - drug discovery
 homepage_url: https://cpicpgx.org/
 id: cpic
-last_modified_date: '2025-09-03T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 name: CPIC
+repository: https://github.com/cpicpgx/cpic-data
 products:
 - category: GraphicalInterface
   description: Main CPIC website portal providing access to guidelines, genes-drugs
@@ -51,9 +52,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cpic
   product_url: https://cpicpgx.org/guidelines/
-- category: DataProduct
+- category: Product
   description: "Curated gene\u2013drug pair tables linking pharmacogenes with affected\
     \ medications and guideline recommendations"
+  format: http
   id: cpic.genes_drugs
   is_public: true
   name: CPIC Genes-Drugs Tables
@@ -61,9 +63,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: cpic
   product_url: https://cpicpgx.org/genes-drugs/
-- category: DataProduct
+- category: Product
   description: Allele function and diplotype-to-phenotype tables standardized for
     clinical pharmacogenetic test result interpretation
+  format: http
   id: cpic.alleles
   is_public: true
   name: CPIC Allele & Diplotype Function Tables
@@ -74,13 +77,15 @@ products:
 - category: ProgrammingInterface
   description: "Structured data (database and API) for CPIC guideline-derived gene\u2013\
     drug relationships, allele function, and standardized terms"
+  connection_url: https://api.cpicpgx.org/
+  format: json
   id: cpic.api
   is_public: true
   name: CPIC Database & API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: cpic
-  product_url: https://github.com/cpicpgx/cpic-data/wiki
+  product_url: https://cpicpgx.org/api-and-database/
 - category: DocumentationProduct
   description: Standard operating procedure PDF for assigning allele function and
     translating diplotypes to phenotypes

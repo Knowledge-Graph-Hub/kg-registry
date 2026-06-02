@@ -43,13 +43,14 @@ domains:
 homepage_url: https://honiglab.c2b2.columbia.edu/PrePPI/
 id: preppi
 infores_id: preppi
-last_modified_date: '2025-11-10T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: PrePPI
 products:
 - category: GraphicalInterface
   description: Web search interface for querying PrePPI predicted protein-protein
     interactions by UniProt accession or gene name
+  format: http
   id: preppi.search
   name: PrePPI Search Interface
   original_source:
@@ -57,7 +58,8 @@ products:
     source: preppi
   product_url: https://honiglab.c2b2.columbia.edu/PrePPI/
 - category: Product
-  description: High-confidence PrePPI interactome dataset for download
+  compression: gzip
+  description: High-confidence PrePPI human interactome dataset generated with structure-informed predictions using AlphaFold-informed models and non-structural evidence
   format: txt
   id: preppi.download
   name: PrePPI High-Confidence Interactome
@@ -66,28 +68,25 @@ products:
     source: preppi
   product_file_size: 41528369
   product_url: https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: pdb
+  - relation_type: prov:wasInformedBy
+    source: uniprot
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
-    retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
-    (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1028)')))
-  - File was not able to be retrieved when checked on 2026-03-30_ Error connecting
-    to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
-    retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
-    (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2026-03-11_ Timeout connecting
-    to URL
-  - File was not able to be retrieved when checked on 2026-01-15_ Error connecting
-    to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
-    retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
-    (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - The official Columbia HTTPS endpoint returned a certificate-chain verification error to curl on 2026-06-02, but the page and download resolved successfully when checked without certificate verification.
 publications:
-- doi: 10.1016/j.jmb.2023.168052
+- authors:
+  - Donald Petrey
+  - Tianyi Zhao
+  - Huiying Liu
+  - Barry Honig
+  doi: 10.1016/j.jmb.2023.168052
   id: doi:10.1016/j.jmb.2023.168052
+  journal: Journal of Molecular Biology
+  preferred: true
   title: 'PrePPI: a structure-informed database of protein-protein interactions'
+  year: '2023'
 synonyms:
 - PrePPI
 - Predicting Protein-Protein Interactions

@@ -23,20 +23,23 @@ domains:
 - biological systems
 - proteomics
 - systems biology
-homepage_url: http://www.interactome-atlas.org/
+homepage_url: https://www.interactome-atlas.org/
 id: huri
 infores_id: huri
-last_modified_date: '2025-08-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: HuRI
 products:
-- category: Product
-  description: Human Reference Interactome (HuRI) protein-protein interaction data
+- category: GraphProduct
+  description: Human Reference Interactome (HuRI) binary protein-protein interaction
+    data from Luck et al. 2020.
+  edge_count: 52569
   format: tsv
   id: huri.interactions
+  latest_version: HuRI
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
@@ -44,12 +47,15 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: huri
-  product_url: http://www.interactome-atlas.org/download
-- category: Product
+  product_file_size: 1681536
+  product_url: https://www.interactome-atlas.org/data/HuRI.tsv
+- category: GraphProduct
   description: Literature-curated high-quality protein-protein interactions from comparable
-    experimental approaches
+    experimental approaches, provided as the HuRI Lit-BM benchmark.
+  edge_count: 13441
   format: tsv
   id: huri.literature_benchmark
+  latest_version: Lit-BM
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
@@ -57,15 +63,33 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: huri
-  product_url: http://www.interactome-atlas.org/download
+  product_file_size: 430112
+  product_url: https://www.interactome-atlas.org/data/Lit-BM.tsv
+- category: GraphProduct
+  description: Human Reference Interactome (HuRI) binary protein-protein interaction
+    data in PSI-MI format from Luck et al. 2020.
+  edge_count: 52569
+  format: psi_mi_mitab
+  id: huri.interactions.psi
+  latest_version: HuRI
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: HuRI Protein-Protein Interactions PSI-MI
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: huri
+  product_file_size: 169848924
+  product_url: https://www.interactome-atlas.org/data/HuRI.psi
 - category: GraphicalInterface
   description: Web portal for searching and browsing human protein interactions
+  format: http
   id: huri.portal
   name: HuRI Web Portal
   original_source:
   - relation_type: prov:hadPrimarySource
     source: huri
-  product_url: http://www.interactome-atlas.org/
+  product_url: https://www.interactome-atlas.org/
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -162,10 +186,9 @@ publications:
   preferred: true
   title: A reference map of the human binary protein interactome
   year: '2020'
-repository: https://github.com/VIDallab/huri
+repository: https://github.com/CCSB-DFCI/HuRI_paper
 taxon:
 - NCBITaxon:9606
-- NCBITaxon:4932
 ---
 # HuRI - Human Reference Interactome
 
@@ -178,12 +201,10 @@ HuRI was created through systematic high-throughput yeast two-hybrid (Y2H) scree
 ### Current Statistics
 
 **HuRI Database:**
-- **9,094 proteins** with experimentally validated interactions
-- **64,006 protein-protein interactions** identified through systematic screening
-- **17,500 proteins** tested in the most recent comprehensive effort
+- **52,569 protein-protein interactions** in the HuRI download
+- **17,500 proteins** tested in the comprehensive search space
 
 **Literature Benchmark:**
-- **6,047 proteins** with high-quality interactions from literature
 - **13,441 protein-protein interactions** curated from comparable experimental approaches
 
 ## Methodology and Quality Control
@@ -253,7 +274,6 @@ HuRI is developed through collaboration between multiple research groups:
 - Open access under Creative Commons licensing
 - Multiple download formats available
 - Web-based search and visualization tools
-- API access for programmatic queries
 
 ## Technical Infrastructure
 

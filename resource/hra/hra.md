@@ -20,7 +20,7 @@ domains:
 homepage_url: https://humanatlas.io/
 id: hra
 infores_id: hra
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -31,30 +31,79 @@ products:
   description: Web portal for exploring and visualizing the Human Reference Atlas
   format: http
   id: hra.portal
+  latest_version: v2.4
   name: Human Reference Atlas Portal
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hra
   product_url: https://humanatlas.io/
 - category: ProgrammingInterface
-  description: API endpoints for programmatic access to HRA data
-  format: http
+  connection_url: https://apps.humanatlas.io/api/
+  description: Production HRA API for programmatic access to Common Coordinate Framework
+    data, schemas, spatial relationships, and HRA services
+  format: json
   id: hra.api
+  latest_version: v2.4
   name: HRA API
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hra
-  product_url: https://apps.humanatlas.io/api
+  product_url: https://humanatlas.io/api
+- category: DocumentationProduct
+  description: OpenAPI specification for the production Human Reference Atlas API
+  format: yaml
+  id: hra.api-spec
+  latest_version: v2.4
+  name: HRA API OpenAPI Specification
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  product_url: https://apps.humanatlas.io/api/hra-api-spec.yaml
 - category: Product
   description: Downloadable data files including anatomical structures, cell types,
     and biomarkers
   format: mixed
   id: hra.data
+  latest_version: v2.4
   name: HRA Data Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hra
-  product_url: https://humanatlas.io/data
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:used
+    source: cl
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: fma
+  - relation_type: prov:used
+    source: hgnc
+  - relation_type: prov:used
+    source: uniprot
+  product_url: https://humanatlas.io/overview-data
+- category: GraphProduct
+  description: HRA Knowledge Graph documentation and access information for querying
+    the semantically rich graph that connects anatomical structures, cell types, biomarkers,
+    spatial data, and HRA applications
+  format: http
+  id: hra.knowledge-graph
+  latest_version: v2.4
+  name: Human Reference Atlas Knowledge Graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: hra
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:used
+    source: cl
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: fma
+  product_url: https://docs.humanatlas.io/apps/kg
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -285,7 +334,35 @@ products:
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
 publications:
-- id: https://doi.org/10.1038/s41556-021-00788-6
+- authors:
+  - Andreas Bueckle
+  - Bruce W. Herr
+  - Josef Hardi
+  - Ellen M. Quardokus
+  - Mark A. Musen
+  - Katy Borner
+  doi: 10.1038/s41597-025-05183-6
+  id: doi:10.1038/s41597-025-05183-6
+  journal: Scientific Data
+  preferred: true
+  title: Construction, Deployment, and Usage of the Human Reference Atlas Knowledge
+    Graph
+  year: '2025'
+- authors:
+  - Katy Borner
+  - Sarah A. Teichmann
+  - Ellen M. Quardokus
+  - James C. Gee
+  - Kristen Browne
+  - David Osumi-Sutherland
+  - Bruce W. Herr
+  - Andreas Bueckle
+  doi: 10.1038/s41556-021-00788-6
+  id: doi:10.1038/s41556-021-00788-6
+  journal: Nature Cell Biology
+  preferred: false
+  title: Anatomical structures, cell types and biomarkers of the Human Reference Atlas
+  year: '2021'
 repository: https://github.com/hubmapconsortium/ccf-ui
 synonyms:
 - HRA
@@ -301,7 +378,7 @@ The Human Reference Atlas (HRA) is a comprehensive 3D spatial framework for mapp
 ## Key Components
 
 ### 3D Reference Organs
-- High-resolution 3D models of 11 organs
+- High-resolution 2D and 3D reference objects across HRA release cycles
 - Standardized anatomical structures and regions
 - Common Coordinate Framework (CCF) for spatial registration
 
@@ -324,7 +401,9 @@ The Human Reference Atlas (HRA) is a comprehensive 3D spatial framework for mapp
 
 ## Scope and Coverage
 
-- **Organs**: 11 major organs with 3D reference models
+- **Release**: Current public portal reports the 10th release, v2.4
+- **Organs**: Multi-organ reference objects, ASCT+B tables, OMAP tables, crosswalks,
+  and vasculature CCF tables
 - **Cell Types**: Comprehensive coverage of human cell types
 - **Biomarkers**: Thousands of molecular biomarkers
 - **Species**: Human (Homo sapiens, NCBITaxon:9606)

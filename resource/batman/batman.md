@@ -2,23 +2,26 @@
 activity_status: active
 category: DataSource
 creation_date: '2026-02-18T00:00:00Z'
-description: BATMAN-TCM is a web resource for predicting potential targets and molecular
-  mechanisms of traditional Chinese medicine ingredients and formulas.
+description: BATMAN-TCM is a web resource and database for known and predicted interactions
+  between traditional Chinese medicine ingredients and target proteins, supporting
+  target prediction, enrichment analysis, and molecular-mechanism exploration for
+  ingredients, herbs, and formulas.
 domains:
 - pharmacology
 - drug discovery
 - pathways
 homepage_url: http://bionet.ncpsb.org.cn/batman-tcm/
 id: batman
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 name: BATMAN-TCM
 products:
 - category: GraphicalInterface
-  description: Interactive BATMAN-TCM web interface for querying compounds, targets,
-    and enriched pathways.
+  description: Interactive BATMAN-TCM 2.0 web interface for querying traditional Chinese
+    medicine ingredients, herbs, formulas, target proteins, and enriched pathways.
   format: http
   id: batman.web
+  latest_version: '2.0'
   name: BATMAN-TCM Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -320,10 +323,62 @@ products:
     source: omim
   product_file_size: 6303875907
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/unibiomap.pred.full.csv
+publications:
+- authors:
+  - Xiangren Kong
+  - Chao Liu
+  - Zuzhen Zhang
+  - Meiqi Cheng
+  - Zhijun Mei
+  - Xiangdong Li
+  - Peng Liu
+  - Lihong Diao
+  - Yajie Ma
+  - Peng Jiang
+  - Xiangya Kong
+  - Shiyan Nie
+  - Yingzi Guo
+  - Ze Wang
+  - Xinlei Zhang
+  - Yan Wang
+  - Liujun Tang
+  - Shuzhen Guo
+  - Zhongyang Liu
+  - Dong Li
+  doi: 10.1093/nar/gkad926
+  id: doi:10.1093/nar/gkad926
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'BATMAN-TCM 2.0: an enhanced integrative database for known and predicted
+    interactions between traditional Chinese medicine ingredients and target proteins'
+  year: '2024'
+- authors:
+  - Zhongyang Liu
+  - Feifei Guo
+  - Yong Wang
+  - Chun Li
+  - Xinlei Zhang
+  - Honglei Li
+  - Lihong Diao
+  - Jiangyong Gu
+  - Wei Wang
+  - Dong Li
+  - Fuchu He
+  doi: 10.1038/srep21146
+  id: doi:10.1038/srep21146
+  journal: Scientific Reports
+  title: 'BATMAN-TCM: a Bioinformatics Analysis Tool for Molecular mechANism of Traditional
+    Chinese Medicine'
+  year: '2016'
 synonyms:
 - BATMAN
 - BATMAN-TCM
+- BATMAN-TCM 2.0
+- Bioinformatics Analysis Tool for Molecular mechANism of Traditional Chinese Medicine
 ---
 # BATMAN-TCM
 
-BATMAN-TCM is a web resource for target and mechanism exploration in traditional Chinese medicine.
+BATMAN-TCM is a web resource for target and mechanism exploration in traditional
+Chinese medicine. Version 2.0 integrates curated and predicted TCM
+ingredient-target protein interactions and supports analysis workflows for
+ingredients, herbs, and formulas through the BATMAN-TCM web interface.

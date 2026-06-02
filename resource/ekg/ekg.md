@@ -16,7 +16,7 @@ domains:
   - biomedical
 homepage_url: https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601
 id: ekg
-last_modified_date: '2026-04-22T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -31,6 +31,13 @@ products:
     original_source:
       - source: ekg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: who
+        relation_type: prov:wasDerivedFrom
+      - source: bioportal
+        relation_type: prov:wasInformedBy
+      - source: geonames
+        relation_type: prov:wasInformedBy
     product_file_size: 3853565
     product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.rdf
   - category: GraphProduct
@@ -41,6 +48,13 @@ products:
     original_source:
       - source: ekg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: who
+        relation_type: prov:wasDerivedFrom
+      - source: bioportal
+        relation_type: prov:wasInformedBy
+      - source: geonames
+        relation_type: prov:wasInformedBy
     product_file_size: 3874916
     product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/ETOHA-OPEN/epidemicIE-DONs.ttl
   - category: Product
@@ -51,9 +65,13 @@ products:
     original_source:
       - source: ekg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: who
+        relation_type: prov:wasDerivedFrom
     product_file_size: 185806
     product_url: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/ETOHA/corpus_processed/SUMMARIZED/OutputAnnotatedTexts-LLMs-ENSEMBLE_whoDons.csv
   - category: ProgrammingInterface
+    connection_url: https://api-vast.jrc.service.ec.europa.eu/sparql/
     description: Public SPARQL endpoint for querying eKG
     format: http
     id: ekg.sparql
@@ -61,6 +79,13 @@ products:
     original_source:
       - source: ekg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: who
+        relation_type: prov:wasDerivedFrom
+      - source: bioportal
+        relation_type: prov:wasInformedBy
+      - source: geonames
+        relation_type: prov:wasInformedBy
     product_url: https://api-vast.jrc.service.ec.europa.eu/sparql/
   - category: GraphicalInterface
     description: Virtuoso faceted browser for exploring eKG
@@ -70,6 +95,13 @@ products:
     original_source:
       - source: ekg
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: who
+        relation_type: prov:wasDerivedFrom
+      - source: bioportal
+        relation_type: prov:wasInformedBy
+      - source: geonames
+        relation_type: prov:wasInformedBy
     product_url: https://api-vast.jrc.service.ec.europa.eu/fct/
 publications:
   - authors:

@@ -20,7 +20,7 @@ domains:
 - systems biology
 homepage_url: https://maayanlab.cloud/chea3/
 id: chea
-last_modified_date: '2026-05-21T00:00:00Z'
+last_modified_date: '2026-06-01T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -38,6 +38,7 @@ products:
     source: chea
   product_url: https://maayanlab.cloud/chea3/
 - category: ProgrammingInterface
+  connection_url: https://maayanlab.cloud/chea3/api/enrich/
   description: ChEA3 enrichment API for submitting gene sets and retrieving transcription
     factor ranking results
   format: http
@@ -71,6 +72,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tcga
   product_url: https://maayanlab.cloud/chea3/index.html#content4-13
+- category: Product
+  description: Docker image for running the ChEA3 web application locally
+  format: mixed
+  id: chea.docker
+  name: ChEA3 Docker Image
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chea
+  product_url: https://hub.docker.com/r/maayanlab/chea3
 - category: GraphicalInterface
   description: Interactive ChEA3 web interface for transcription factor enrichment
     analysis, result tables, and network visualizations
@@ -85,6 +95,7 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: chea
 - category: ProgrammingInterface
+  connection_url: https://maayanlab.cloud/chea3/api/enrich/
   description: ChEA3 API endpoint for submitting gene sets and retrieving transcription
     factor enrichment results as JSON
   format: http
@@ -159,6 +170,7 @@ publications:
   - Berger SI
   - Mazloom AR
   - Ma'ayan A
+  doi: 10.1093/bioinformatics/btq466
   id: doi:10.1093/bioinformatics/btq466
   journal: Bioinformatics
   title: 'ChEA: transcription factor regulation inferred from integrating genome-wide
@@ -175,11 +187,13 @@ publications:
   - Kropiwnicki E
   - Wang Z
   - Ma'ayan A
+  doi: 10.1093/nar/gkz446
   id: doi:10.1093/nar/gkz446
   journal: Nucleic Acids Research
   preferred: true
   title: 'ChEA3: transcription factor enrichment analysis by orthogonal omics integration'
   year: '2019'
+repository: https://github.com/MaayanLab/chea3web
 ---
 # ChEA
 

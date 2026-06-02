@@ -23,10 +23,24 @@ domains:
 - pharmacology
 homepage_url: https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi
 id: medispan-gpi
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: Medi-Span Generic Product Identifier
 products:
+- category: Product
+  description: Commercial Medi-Span GPI terminology data maintained by Wolters Kluwer
+    for drug concept identification and therapeutic classification
+  format: http
+  id: medispan-gpi.commercial_data
+  is_public: false
+  name: Medi-Span GPI Commercial Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: medispan-gpi
+  product_url: https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi
+  warnings:
+  - The maintained GPI terminology is available through Wolters Kluwer Medi-Span
+    commercial access; no stable public bulk data download URL was identified.
 - category: DocumentationProduct
   description: Official Wolters Kluwer product page describing the Medi-Span Generic
     Product Identifier and its therapeutic classification model
@@ -106,6 +120,12 @@ as a public bulk download.
 
 ## Products
 
+### Medi-Span GPI Commercial Data
+
+Maintained GPI terminology data is part of the commercial Medi-Span drug data suite.
+The official product page documents the classification system, but it does not expose
+a public bulk-download URL for the vocabulary data itself.
+
 ### Medi-Span GPI Documentation
 
 Official product documentation describing GPI structure, use cases, and role in the
@@ -115,3 +135,9 @@ Medi-Span drug data suite.
 
 Support and customer-service entry point for access, account, and content questions
 related to Medi-Span products.
+
+### Athena Vocabulary Downloads
+
+Athena includes Medi-Span GPI among the source vocabularies available through its
+authenticated OMOP vocabulary workflow. This downstream product is retained to
+represent where GPI appears in OMOP/Athena distributions.

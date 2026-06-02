@@ -14,7 +14,7 @@ description: The Host-Pathogen Interaction Database (HPIDB) was a public resourc
   verified interactions from public molecular interaction databases and targeted curation
   into a non-redundant resource for searching, downloading, visualizing, and inferring
   host-pathogen interaction networks, but its primary homepage was not accessible
-  during curation on 2026-05-04.
+  during curation checks on 2026-05-04 and 2026-06-02.
 domains:
 - biomedical
 - immunology
@@ -24,7 +24,7 @@ fairsharing_id: FAIRsharing.fk0z49
 homepage_url: https://hpidb.igbb.msstate.edu/
 id: hpidb
 infores_id: hpidb
-last_modified_date: '2026-05-04T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: Host-Pathogen Interaction Database
 products:
@@ -39,7 +39,7 @@ products:
     source: hpidb
   product_url: https://hpidb.igbb.msstate.edu/
   warnings:
-  - The HPIDB homepage was not reachable during curation on 2026-05-04.
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.
 - category: Product
   description: Downloadable HPIDB host-pathogen interaction dataset in PSI-MITAB format.
   format: psi_mi_mitab
@@ -48,18 +48,19 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: hpidb
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: mint
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
   product_url: https://hpidb.igbb.msstate.edu/
   warnings:
-  - The HPIDB homepage and historical AgBase download URL were not reachable during
-    curation on 2026-05-04.
-  - 'File was not able to be retrieved when checked on 2026-05-31: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-01: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during curation on 2026-06-02.
 - category: ProgrammingInterface
   connection_url: https://www.ebi.ac.uk/intact/ws
   description: IntAct web service and URL-based programmatic interface for retrieving
@@ -174,15 +175,16 @@ publications:
   - Fiona M. McCarthy
   - Bindu Nanduri
   doi: 10.1093/database/baw103
-  id: https://doi.org/10.1093/database/baw103
+  id: doi:10.1093/database/baw103
   journal: Database
+  preferred: true
   title: 'HPIDB 2.0: a curated database for host-pathogen interactions'
   year: '2016'
 - authors:
   - Ranjit Kumar
   - Bindu Nanduri
   doi: 10.1186/1471-2105-11-S6-S16
-  id: https://doi.org/10.1186/1471-2105-11-S6-S16
+  id: doi:10.1186/1471-2105-11-S6-S16
   journal: BMC Bioinformatics
   title: HPIDB--a unified resource for host-pathogen interactions
   year: '2010'
@@ -194,4 +196,4 @@ synonyms:
 
 HPIDB provided curated and integrated host-pathogen protein-protein interaction
 data for infectious disease and host-pathogen network analysis. Its primary
-homepage was not reachable during curation on 2026-05-04.
+homepage was not reachable during curation checks on 2026-05-04 and 2026-06-02.

@@ -20,7 +20,7 @@ domains:
   - microbiology
 homepage_url: https://imodulondb.org/
 id: "imodulondb"
-last_modified_date: '2025-11-06T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 name: iModulonDB
 products:
   - category: GraphicalInterface
@@ -32,6 +32,11 @@ products:
       - source: imodulondb
         relation_type: prov:hadPrimarySource
     product_url: https://imodulondb.org/
+    secondary_source:
+      - source: biocyc
+        relation_type: prov:wasInformedBy
+      - source: string
+        relation_type: prov:wasInformedBy
   - category: ProgrammingInterface
     description: Python package for characterization, plotting, and analysis of iModulons. Provides functions for threshold determination, transcriptional regulatory network (TRN) enrichment analysis, explained variance calculation, and generation of dashboard files for iModulonDB.
     format: http
@@ -50,6 +55,9 @@ products:
       - source: imodulondb
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/SBRG/iModulonMiner
+    secondary_source:
+      - source: sra
+        relation_type: prov:wasDerivedFrom
   - category: Product
     description: Modulome workflow for scraping publicly available data for an organism, aligning reads, quality control, and computing iModulons. Used to expand iModulonDB across the prokaryotic evolutionary tree by processing data from the Sequence Read Archive.
     format: http
@@ -59,6 +67,9 @@ products:
       - source: imodulondb
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/avsastry/modulome-workflow
+    secondary_source:
+      - source: sra
+        relation_type: prov:wasDerivedFrom
   - category: Product
     description: Downloadable transcriptomic datasets and iModulon decompositions for 15 organisms including E. coli, B. subtilis, S. aureus, M. tuberculosis, P. aeruginosa, P. putida, and others. Includes gene expression matrices, iModulon activity matrices, gene weights, and metadata for over 9500 expression profiles from 525 studies.
     format: mixed
@@ -68,24 +79,31 @@ products:
       - source: imodulondb
         relation_type: prov:hadPrimarySource
     product_url: https://imodulondb.org/
+    secondary_source:
+      - source: biocyc
+        relation_type: prov:wasInformedBy
+      - source: sra
+        relation_type: prov:wasDerivedFrom
+      - source: string
+        relation_type: prov:wasInformedBy
 publications:
   - authors:
-      - Catoiu EA
-      - Krishnan J
-      - Li G
-      - Lou XA
-      - Rychel K
-      - Yuan Y
-      - Bajpe H
-      - Patel A
-      - Choe D
-      - Shin J
-      - Decker KT
-      - Chauhan SM
-      - Phaneuf PV
-      - Palsson BO
-    doi: doi:10.1093/nar/gkae1009
-    id: https://doi.org/10.1093/nar/gkae1009
+      - Edward A Catoiu
+      - Jayanth Krishnan
+      - Gaoyuan Li
+      - Xuwen A Lou
+      - Kevin Rychel
+      - Yuan Yuan
+      - Heera Bajpe
+      - Arjun Patel
+      - Donghui Choe
+      - Jongoh Shin
+      - Joshua Burrows
+      - Patrick V Phaneuf
+      - Daniel C Zielinski
+      - Bernhard O Palsson
+    doi: 10.1093/nar/gkae1009
+    id: doi:10.1093/nar/gkae1009
     journal: Nucleic Acids Research
     preferred: true
     title: 'iModulonDB 2.0: dynamic tools to facilitate knowledge-mining and user-enabled analyses of curated transcriptomic datasets'
@@ -97,8 +115,8 @@ publications:
       - Phaneuf PV
       - Poudel S
       - Palsson BO
-    doi: doi:10.1093/nar/gkaa810
-    id: https://doi.org/10.1093/nar/gkaa810
+    doi: 10.1093/nar/gkaa810
+    id: doi:10.1093/nar/gkaa810
     journal: Nucleic Acids Research
     preferred: false
     title: 'iModulonDB: a knowledgebase of microbial transcriptional regulation derived from machine learning'
