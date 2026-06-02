@@ -13,7 +13,8 @@ description: The Molecular Signatures Database (MSigDB) is a comprehensive colle
   (GSEA) software. MSigDB includes curated gene sets from pathway databases, gene
   ontology annotations, hallmark gene sets, immunologic signatures, regulatory target
   sets, and cell type-specific signatures derived from single-cell sequencing studies.
-  Available for both human and mouse.
+  Available for both human and mouse, with the current public site listing Human
+  MSigDB v2026.1.Hs and Mouse MSigDB v2026.1.Mm.
 domains:
 - genomics
 - systems biology
@@ -21,7 +22,7 @@ domains:
 homepage_url: https://www.gsea-msigdb.org/gsea/msigdb/
 id: msigdb
 infores_id: msigdb
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.gsea-msigdb.org/gsea/license_terms_list.jsp
@@ -41,27 +42,85 @@ products:
 - category: Product
   description: Downloadable gene set files in GMT, XML, and other formats for human
     collections including hallmarks, curated pathways, ontologies, and computational
-    signatures
+    signatures; free registration is required for downloads
   format: mixed
   id: msigdb.downloads.human
   name: MSigDB Human Gene Sets Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
 - category: Product
   description: Downloadable gene set files for mouse collections including mouse-ortholog
-    hallmarks, curated pathways, ontologies, and cell type signatures
+    hallmarks, curated pathways, ontologies, and cell type signatures; free registration
+    is required for downloads
   format: mixed
   id: msigdb.downloads.mouse
   name: MSigDB Mouse Gene Sets Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: msigdb
+  secondary_source:
+  - relation_type: prov:used
+    source: go
+  - relation_type: prov:used
+    source: hp
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: mirbase
+  - relation_type: prov:used
+    source: pid
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: wikipathways
   product_url: https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb
+  warnings:
+  - Downloads redirect unauthenticated users to the GSEA/MSigDB login page; registration
+    is free but required for direct file access.
+- category: DocumentationProduct
+  description: Human MSigDB collection descriptions and release-specific links for
+    gene-symbol, Entrez, and JSON bundle downloads
+  format: http
+  id: msigdb.collections.human
+  name: MSigDB Human Collections Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/msigdb/human/collections.jsp
+- category: DocumentationProduct
+  description: Mouse MSigDB collection descriptions and release-specific links for
+    mouse gene set downloads
+  format: http
+  id: msigdb.collections.mouse
+  name: MSigDB Mouse Collections Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  product_url: https://www.gsea-msigdb.org/gsea/msigdb/mouse/collections.jsp
 - category: GraphicalInterface
   description: Interactive tool for computing overlaps between user-provided gene
     sets and MSigDB collections
+  format: http
   id: msigdb.investigate
   name: MSigDB Investigate Tool
   original_source:
@@ -70,6 +129,7 @@ products:
   product_url: https://www.gsea-msigdb.org/gsea/msigdb/human/annotate.jsp
 - category: GraphicalInterface
   description: Tool for categorizing gene set members by gene families
+  format: http
   id: msigdb.gene_families
   name: MSigDB Gene Families Tool
   original_source:
@@ -436,8 +496,13 @@ products:
     source: motrpac
   product_url: https://gse.cfde.cloud/downloads/
 publications:
-- id: PMID:37653294
+- category: Publication
+  doi: 10.1038/s41592-023-02014-7
+  id: PMID:37704782
+  journal: Nature Methods
+  preferred: true
   title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
+  year: '2023'
 synonyms:
 - MSigDB
 taxon:
@@ -452,7 +517,7 @@ The Molecular Signatures Database (MSigDB) is a comprehensive resource of tens o
 
 ## Collections
 
-### Human Collections (v2025.1.Hs)
+### Human Collections (v2026.1.Hs)
 
 - **Hallmark Gene Sets**: Coherently expressed signatures representing well-defined biological states or processes
 - **Curated Gene Sets**: From pathway databases, PubMed publications, and domain experts
@@ -464,7 +529,7 @@ The Molecular Signatures Database (MSigDB) is a comprehensive resource of tens o
 - **Cell Type Signature Gene Sets**: Cluster markers from single-cell sequencing studies
 - **Positional Gene Sets**: Chromosome cytogenetic band locations
 
-### Mouse Collections (v2025.1.Mm)
+### Mouse Collections (v2026.1.Mm)
 
 - Mouse-ortholog versions of hallmark gene sets
 - Curated gene sets from pathways and literature
