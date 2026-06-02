@@ -19,10 +19,63 @@ domains:
 homepage_url: https://www.orpha.net/
 id: orphanet
 infores_id: orphanet
-last_modified_date: '2025-07-10T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: Orphanet
 products:
+- category: GraphicalInterface
+  description: Main Orphanet portal for rare disease and orphan drug information
+  format: http
+  id: orphanet.portal
+  name: Orphanet Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://www.orpha.net/
+- category: GraphicalInterface
+  description: Orphadata Science portal for Orphanet scientific knowledge files,
+    ORDO, HOOM, and Orphapackets downloads
+  format: http
+  id: orphanet.orphadata_science
+  name: Orphadata Science Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://sciences.orphadata.com/
+- category: Product
+  description: Orphanet scientific knowledge files for rare disease alignments, classifications,
+    genes, phenotypes, functional consequences, epidemiology, and natural history
+  format: xml
+  id: orphanet.scientific_knowledge_files
+  name: Orphanet Scientific Knowledge Files
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hp
+  - relation_type: prov:wasInformedBy
+    source: mesh
+  - relation_type: prov:wasInformedBy
+    source: mondo
+  - relation_type: prov:wasInformedBy
+    source: omim
+  product_url: https://sciences.orphadata.com/orphanet-scientific-knowledge-files/
+- category: DocumentationProduct
+  description: Current Orphadata Science page for the Orphanet Rare Disease Ontology
+    release, including ORDO 4.8 OWL downloads and release notes
+  format: http
+  id: orphanet.ordo_release
+  name: ORDO Release Page
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  product_url: https://sciences.orphadata.com/ordo/
 - category: Product
   description: XML dataset containing information on expert centers dedicated to the
     medical management and/or genetic counselling for rare diseases.
@@ -161,8 +214,9 @@ products:
     source: orphanet
   product_url: https://www.orphadata.com/expert-resources/
 - category: ProgrammingInterface
-  description: APIs providing access to Orphanet scientific knowledge, ORPHAcodes,
-    and expert resources data.
+  description: Contact point for API-mediated or request-mediated access to Orphanet
+    scientific knowledge, ORPHAcodes, and expert resources data.
+  format: http
   id: orphanet.orphadataapi
   is_public: true
   name: Orphadata API
@@ -170,6 +224,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: orphanet
   product_url: https://www.orphadata.com/contact/
+  warnings:
+  - The former Orphadata API landing-page URL returned 404 when checked on 2026-06-02;
+    the registry points to the Orphadata contact page for access questions.
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -334,7 +391,7 @@ products:
 repository: https://github.com/Orphanet
 taxon:
 - NCBITaxon:9606
-version: July 2025
+version: December 2025
 ---
 # Orphanet
 
@@ -349,6 +406,8 @@ Established in France by INSERM (French National Institute for Health and Medica
 - 8,722+ expert centers
 - 36,595+ diagnostic tests
 - 30,456+ professionals
+These counts are historical context from earlier Orphanet summaries and may differ
+from the current public portal.
 
 ## Key Resources
 
@@ -380,4 +439,4 @@ Orphadata Science (which includes ORDO and the scientific knowledge files) has b
 
 ## Data Access
 
-All Orphanet data resources are available under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, making them freely accessible for research and implementation. Data are updated bi-annually in July and December.
+All Orphanet data resources are available under the Creative Commons Attribution 4.0 International (CC BY 4.0) license, making them freely accessible for research and implementation. Data are updated bi-annually in July and December; the current Orphadata Science pages checked during this curation listed December 2025 releases for the scientific knowledge files and ORDO 4.8.
