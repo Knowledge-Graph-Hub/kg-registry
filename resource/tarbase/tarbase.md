@@ -121,6 +121,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tarbase
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/help
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+    to URL'
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
   format: http
@@ -552,8 +555,8 @@ publications:
   id: https://doi.org/10.1093/nar/gkad1071
   journal: Nucleic Acids Research
   preferred: true
-  title: "TarBase-v9.0 extends experimentally supported miRNA\u2013gene interactions\
-    \ to cell-types and virally encoded miRNAs"
+  title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to
+    cell-types and virally encoded miRNAs
   year: '2023'
 ---
 # TarBase

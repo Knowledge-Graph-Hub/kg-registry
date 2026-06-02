@@ -12,6 +12,7 @@ name: MetaBoKG Transformation Workflow
 original_source:
 - relation_type: prov:hadPrimarySource
   source: metabokg
+product_file_size: 1682
 product_url: https://github.com/HolobiomicsLab/MetaBoKG/blob/main/main.py
 repository: https://github.com/HolobiomicsLab/MetaBoKG
 layout: product_detail

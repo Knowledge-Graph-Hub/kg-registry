@@ -7,6 +7,7 @@ name: PROV-O OWL
 original_source:
 - relation_type: prov:hadPrimarySource
   source: prov-o
+product_file_size: 112346
 product_url: https://www.w3.org/ns/prov-o.owl
 layout: product_detail
 ---

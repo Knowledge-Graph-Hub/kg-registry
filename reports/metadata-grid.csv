@@ -346,6 +346,7 @@ kg-alzheimers,active,PASS
 kg-covid-19,active,PASS
 kg-ebi-gene2pheno,active,PASS
 kg-enp,active,PASS
+kg-fm,active,PASS
 kg-idg,active,PASS
 kg-jensenlab-diseases,active,PASS
 kg-microbe,active,PASS
@@ -706,6 +707,7 @@ vto,active,PASS
 wbbt,active,PASS
 wbls,active,PASS
 wbphenotype,active,PASS
+web-of-science,active,PASS
 who,active,PASS
 wikidata,active,PASS
 wikipathways,active,PASS

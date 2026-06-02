@@ -7,6 +7,7 @@ name: SIO OWL
 original_source:
 - relation_type: prov:hadPrimarySource
   source: sio
+product_file_size: 189217
 product_url: https://semanticscience.org/ontology/sio.owl
 layout: product_detail
 ---

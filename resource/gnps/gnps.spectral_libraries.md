@@ -8,5 +8,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: gnps
 product_url: https://gnps-external.ucsd.edu/gnpslibrary
+warnings:
+- File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
+  to URL
 layout: product_detail
 ---

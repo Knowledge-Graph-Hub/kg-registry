@@ -26,9 +26,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: med-rt
   product_url: https://evs.nci.nih.gov/ftp1/MED-RT/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Current MED-RT DTS release archive from the NCI EVS MED-RT distribution.

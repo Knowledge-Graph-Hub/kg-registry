@@ -296,6 +296,7 @@ kg-alzheimers	KG-Alzheimers	KnowledgeGraph	https://kghub.org/kg-alzheimers/index
 kg-covid-19	KG-COVID-19	KnowledgeGraph	https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki	resource/kg-covid-19/kg-covid-19.md
 kg-ebi-gene2pheno	EBI Gene2Phenotype KG	KnowledgeGraph		resource/kg-ebi-gene2pheno/kg-ebi-gene2pheno.md
 kg-enp	ENPKG	KnowledgeGraph	https://enpkg.commons-lab.org/	resource/kg-enp/kg-enp.md
+kg-fm	KG-FM	KnowledgeGraph	https://github.com/MontageBai/KGFM	resource/kg-fm/kg-fm.md
 kg-idg	KG-IDG	KnowledgeGraph	https://kghub.org/kg-idg/index.html	resource/kg-idg/kg-idg.md
 kg-jensenlab-diseases	JensenLab DISEASES KG	KnowledgeGraph	https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES	resource/kg-jensenlab-diseases/kg-jensenlab-diseases.md
 kg-microbe	KG Microbe	KnowledgeGraph	https://kghub.org/kg-microbe/index.html	resource/kg-microbe/kg-microbe.md
@@ -617,6 +618,7 @@ vto	Vertebrate Taxonomy Ontology	Ontology	https://github.com/phenoscape/vertebra
 wbbt	C. elegans Gross Anatomy Ontology	Ontology	https://github.com/obophenotype/c-elegans-gross-anatomy-ontology	resource/wbbt/wbbt.md
 wbls	C. elegans development ontology	Ontology	https://github.com/obophenotype/c-elegans-development-ontology	resource/wbls/wbls.md
 wbphenotype	C. elegans phenotype	Ontology	https://github.com/obophenotype/c-elegans-phenotype-ontology	resource/wbphenotype/wbphenotype.md
+web-of-science	Web of Science	DataSource	https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/	resource/web-of-science/web-of-science.md
 who	Who	DataSource		resource/who/who.md
 wikipedia	Wikipedia	DataSource	https://www.wikipedia.org/	resource/wikipedia/wikipedia.md
 wildlifekn	Wildlife-KN	KnowledgeGraph	https://sites.nd.edu/kn-wildlife/	resource/wildlifekn/wildlifekn.md
