@@ -17,39 +17,96 @@ domains:
 homepage_url: https://www.bv-brc.org/
 id: patric
 infores_id: patric
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: Pathosystems Resource Integration Center
 products:
   - category: GraphicalInterface
-    description: Web portal for bacterial genomics (now at BV-BRC)
+    description: BV-BRC web portal that hosts legacy PATRIC bacterial genomics data
+      and tools alongside expanded viral resources
     format: http
     id: patric.web
     name: PATRIC/BV-BRC Web Portal
     original_source:
       - source: patric
         relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
     product_url: https://www.bv-brc.org/
   - category: Product
-    description: Bacterial genome data and annotations
+    description: Legacy PATRIC bacterial genome data and annotations now available
+      through BV-BRC genome data views and services
     format: mixed
     id: patric.genomes
     name: PATRIC Genome Data
     original_source:
       - source: patric
         relation_type: prov:hadPrimarySource
-    product_url: https://www.bv-brc.org/
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
   - category: ProgrammingInterface
-    description: API for programmatic access to bacterial data
+    description: BV-BRC REST Data API for querying and retrieving public data, including
+      data inherited from PATRIC
     format: http
     id: patric.api
     name: BV-BRC API
     original_source:
       - source: patric
         relation_type: prov:hadPrimarySource
-    product_url: https://www.bv-brc.org/docs/api/
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.bv-brc.org/docs/system_documentation/system_architecture.html#data-api
+  - category: DocumentationProduct
+    description: BV-BRC quick-start overview for PATRIC users, describing how legacy
+      PATRIC data, tools, services, website, and infrastructure were incorporated
+      into BV-BRC
+    format: http
+    id: patric.bv_brc_overview
+    name: BV-BRC Overview for PATRIC Users
+    original_source:
+      - source: patric
+        relation_type: prov:hadPrimarySource
+      - source: bv-brc
+        relation_type: prov:hadPrimarySource
+    product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
 publications:
-  - id: https://doi.org/10.1093/nar/gkw1017
+  - authors:
+      - Wattam AR
+      - Davis JJ
+      - Assaf R
+      - Boisvert S
+      - Brettin T
+      - Bun C
+      - Conrad N
+      - Dietrich EM
+      - Disz T
+      - Gabbard JL
+      - Gerdes S
+      - Henry CS
+      - Kenyon RW
+      - Machi D
+      - Mao C
+      - Nordberg EK
+      - Olsen GJ
+      - Murphy-Olson DE
+      - Olson R
+      - Overbeek R
+      - Parrello B
+      - Pusch GD
+      - Shukla M
+      - Vonstein V
+      - Warren A
+      - Xia F
+      - Yoo H
+      - Stevens RL
+    doi: 10.1093/nar/gkw1017
+    id: doi:10.1093/nar/gkw1017
+    journal: Nucleic Acids Research
+    preferred: true
+    title: Improvements to PATRIC, the all-bacterial Bioinformatics Database and
+      Analysis Resource Center
+    year: '2017'
 synonyms:
   - PATRIC
   - BV-BRC
@@ -57,7 +114,8 @@ synonyms:
 taxon:
   - NCBITaxon:2
 warnings:
-  - PATRIC has been succeeded by BV-BRC (Bacterial and Viral Bioinformatics Resource Center). All data and tools are now available at bv-brc.org
+  - PATRIC has been succeeded by BV-BRC (Bacterial and Viral Bioinformatics Resource
+    Center). The live products listed here are hosted by BV-BRC.
 ---
 
 # Pathosystems Resource Integration Center
@@ -99,7 +157,8 @@ Comprehensive web interface for accessing bacterial and viral genomics data, ana
 Extensive collection of bacterial genome sequences, annotations, and functional characterizations.
 
 ### BV-BRC API
-RESTful API providing programmatic access to all bacterial and viral data for computational analysis.
+RESTful API providing programmatic access to public BV-BRC data, including legacy
+PATRIC bacterial data.
 
 ## Information Resource ID
 
