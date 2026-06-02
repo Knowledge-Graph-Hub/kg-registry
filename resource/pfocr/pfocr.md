@@ -17,8 +17,11 @@ domains:
 homepage_url: https://pfocr.wikipathways.org/
 id: pfocr
 infores_id: pfocr
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0-1.0
 name: PFOCR
 products:
   - category: GraphicalInterface
@@ -31,29 +34,86 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://pfocr.wikipathways.org/
   - category: Product
-    description: Extracted pathway information from literature figures
-    format: json
-    id: pfocr.data
-    name: PFOCR Pathway Data
+    description: GitHub repository containing the Jekyll site and database content
+      for PFOCR, including figure metadata in the _figures directory
+    format: http
+    id: pfocr.database_repository
+    name: PFOCR Database Repository
     original_source:
       - source: pfocr
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/wikipathways/pfocr-database
+    repository: https://github.com/wikipathways/pfocr-database
+  - category: Product
+    description: Search metadata JSON used by the PFOCR website for figure, gene,
+      pathway, and keyword search
+    format: json
+    id: pfocr.search_json
+    name: PFOCR Search JSON
+    original_source:
+      - source: pfocr
+        relation_type: prov:hadPrimarySource
+    product_file_size: 55889831
+    product_url: https://pfocr.wikipathways.org/search.json
+  - category: Product
+    description: JSON file containing all PFOCR figure information for pathway figures
+      extracted from literature
+    format: json
+    id: pfocr.figure_info_json
+    name: PFOCR Figure Information JSON
+    original_source:
+      - source: pfocr
+        relation_type: prov:hadPrimarySource
+    product_file_size: 59089985
+    product_url: https://pfocr.wikipathways.org/json/getFigureInfo.json
+  - category: Product
+    description: Current GMT release of PFOCR pathway figure gene sets distributed
+      through WikiPathways data downloads
+    format: txt
+    id: pfocr.gmt
+    name: PFOCR GMT Gene Sets
+    original_source:
+      - source: pfocr
+        relation_type: prov:hadPrimarySource
+    product_url: https://data.wikipathways.org/pfocr/current/
   - category: ProgrammingInterface
-    description: API for accessing PFOCR extracted pathway data
+    description: JSON endpoints and help documentation for accessing PFOCR extracted
+      pathway figure data programmatically
     format: http
     id: pfocr.api
     name: PFOCR API
     original_source:
       - source: pfocr
         relation_type: prov:hadPrimarySource
-    product_url: https://pfocr.wikipathways.org/
+    product_url: https://pfocr.wikipathways.org/help.html#download
 publications:
-  - id: https://doi.org/10.1101/379446
-repository: https://github.com/wikipathways/pfocr
+  - authors:
+      - Hanspers K
+      - Riutta A
+      - Summer-Kutmon M
+      - Pico AR
+    doi: 10.1186/s13059-020-02181-2
+    id: doi:10.1186/s13059-020-02181-2
+    journal: Genome Biology
+    preferred: true
+    title: Pathway information extracted from 25 years of pathway figures
+    year: '2020'
+  - authors:
+      - Riutta A
+      - Hanspers K
+      - Pico AR
+    doi: 10.1101/379446
+    id: doi:10.1101/379446
+    journal: bioRxiv
+    title: Identifying Genes in Published Pathway Figure Images
+    year: '2018'
+repository: https://github.com/wikipathways/pfocr-database
 synonyms:
   - PFOCR
   - Pathway Figure OCR
+warnings:
+  - The formerly listed wikipathways/pfocr repository returned 404 during 2026-06-02
+    curation; the maintained database repository is wikipathways/pfocr-database.
 ---
 
 # PFOCR - Pathway Figure OCR
@@ -103,7 +163,7 @@ This resource has the Information Resource identifier: `infores:pfocr`
 
 ## Repository
 
-Source code: https://github.com/wikipathways/pfocr
+Database repository: https://github.com/wikipathways/pfocr-database
 
 ## Domains
 
