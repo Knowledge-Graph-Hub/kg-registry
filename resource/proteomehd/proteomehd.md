@@ -3,36 +3,72 @@ activity_status: active
 category: DataSource
 creation_date: '2026-02-18T00:00:00Z'
 description: ProteomeHD is a proteomics resource centered on protein co-regulation
-  evidence across perturbation experiments, used in integrated protein association
-  resources.
+  evidence across perturbation experiments. It provides scripts and data from a
+  human proteome co-regulation map used to identify protein functions and to support
+  integrated protein association resources.
 domains:
 - proteomics
 - systems biology
 - biomedical
 homepage_url: https://github.com/Rappsilber-Laboratory/ProteomeHD
 id: proteomehd
-last_modified_date: '2026-02-18T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: ProteomeHD
 products:
-- category: GraphProduct
-  description: ProteomeHD data files
+- category: Product
+  compression: 7z
+  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins measured across 294 SILAC ratios
+  format: csv
   id: proteomehd.data
   name: ProteomeHD Data
   original_source:
   - relation_type: prov:hadPrimarySource
     source: proteomehd
+  product_file_size: 9427082
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/ProteomeHD_v1_1.7z
+- category: Product
+  compression: 7z
+  description: Reactome-derived true-positive and false-positive protein-pair gold standard used in ProteomeHD analyses
+  format: csv
+  id: proteomehd.reactome_tp_fp
+  name: ProteomeHD Reactome Gold Standard
+  original_source:
   - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  product_file_size: 12444513
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/Reactome_TP_FP.7z
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
     source: reactome
+- category: Product
+  compression: 7z
+  description: Pre-processed human IntAct interaction file used in ProteomeHD comparisons
+  format: csv
+  id: proteomehd.intact_interactions
+  name: ProteomeHD IntAct Interactions
+  original_source:
   - relation_type: prov:hadPrimarySource
+    source: proteomehd
+  product_file_size: 1384464
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/IntAct_interactions.7z
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
     source: intact
+- category: Product
+  compression: 7z
+  description: Reviewed UniProt protein annotation file used in ProteomeHD analyses
+  format: txt
+  id: proteomehd.uniprot_annotations
+  name: ProteomeHD UniProt Annotation File
+  original_source:
   - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: goa
-  product_url: https://github.com/Rappsilber-Laboratory/ProteomeHD/tree/master/Data
+    source: proteomehd
+  product_file_size: 857122
+  product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/uniprot-all.7z
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -727,7 +763,21 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+publications:
+- authors:
+  - Georg Kustatscher
+  - Peter Grabowski
+  - Julian Rappsilber
+  doi: 10.1038/s41587-019-0298-5
+  id: doi:10.1038/s41587-019-0298-5
+  journal: Nature Biotechnology
+  preferred: true
+  title: Co-regulation map of the human proteome enables identification of protein functions
+  year: '2019'
+repository: https://github.com/Rappsilber-Laboratory/ProteomeHD
+taxon:
+- NCBITaxon:9606
 ---
 # ProteomeHD
 
-ProteomeHD provides protein-level co-regulation data used in downstream network resources.
+ProteomeHD provides protein-level co-regulation data and analysis scripts from a human proteome co-regulation map. The repository includes the compressed ProteomeHD v1.1 data matrix and supporting files used for Reactome, IntAct, UniProt, and GO-based analyses.
