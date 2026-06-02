@@ -19,7 +19,7 @@ domains:
   - information technology
 homepage_url: https://www.ohdsi.org/
 id: ohdsi
-last_modified_date: '2026-04-10T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: OHDSI
 products:
@@ -40,8 +40,37 @@ products:
     original_source:
       - source: ohdsi
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: athena
+        relation_type: prov:wasInformedBy
     product_url: https://ohdsi.github.io/CommonDataModel/
     repository: https://github.com/OHDSI/CommonDataModel
+  - category: GraphicalInterface
+    description: Athena web application for searching OHDSI standardized vocabularies and preparing OMOP vocabulary downloads
+    format: http
+    id: ohdsi.athena
+    name: OHDSI Athena Vocabulary Browser
+    original_source:
+      - source: athena
+        relation_type: prov:hadPrimarySource
+      - source: ohdsi
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/search-terms/start
+    warnings:
+      - Athena is an authenticated web application; access to vocabulary download workflows requires login.
+  - category: Product
+    description: Standardized vocabulary bundles for OMOP CDM assembled through the Athena authenticated web application
+    format: csv
+    id: ohdsi.athena_vocabularies
+    name: OHDSI Standardized Vocabulary Downloads
+    original_source:
+      - source: athena
+        relation_type: prov:hadPrimarySource
+      - source: ohdsi
+        relation_type: prov:hadPrimarySource
+    product_url: https://athena.ohdsi.org/vocabulary/list
+    warnings:
+      - Athena vocabulary downloads are prepared through the logged-in web application; stable direct public file URLs are not exposed.
   - category: ProcessProduct
     description: OHDSI methods suite for standardized analytics on OMOP CDM data, including characterization, population-level effect estimation, and patient-level prediction
     format: http
