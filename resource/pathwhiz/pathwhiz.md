@@ -16,34 +16,67 @@ domains:
   - biological systems
   - biomedical
   - drug discovery
-homepage_url: https://smpdb.ca/pathwhiz
-id: "pathwhiz"
-infores_id: "pathwhiz"
-last_modified_date: '2025-10-31T00:00:00Z'
+homepage_url: https://pathbank.org/pathwhiz
+id: pathwhiz
+infores_id: pathwhiz
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
-license:
-  id: "https://creativecommons.org/licenses/by-sa/4.0/"
-  label: CC-BY-SA-4.0
 name: PathWhiz
 products:
   - category: GraphicalInterface
     description: Web interface for creating, editing, and visualizing biological pathway diagrams with automated metabolite structure generation and interactive features
     format: http
-    id: "pathwhiz.editor"
+    id: pathwhiz.editor
     name: PathWhiz Pathway Editor
-    product_url: https://smpdb.ca/pathwhiz
+    product_url: https://pathbank.org/pathwhiz
     original_source:
       - source: pathwhiz
         relation_type: prov:hadPrimarySource
   - category: GraphicalInterface
     description: Public library of pathway diagrams that can be browsed, viewed, and used as templates for creating new pathways
     format: http
-    id: "pathwhiz.pathways"
+    id: pathwhiz.pathways
     name: PathWhiz Pathway Library
-    product_url: https://smpdb.ca/pathwhiz/pathways
+    product_url: https://pathbank.org/pathwhiz/pathways
     original_source:
       - source: pathwhiz
         relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: drugbank
+        relation_type: prov:wasInformedBy
+      - source: hmdb
+        relation_type: prov:wasInformedBy
+      - source: pathbank
+        relation_type: prov:wasInformedBy
+  - category: GraphicalInterface
+    description: Guest drawing interface for trying PathWhiz pathway creation without
+      creating a private account
+    format: http
+    id: pathwhiz.guest_draw
+    name: PathWhiz Guest Draw
+    original_source:
+      - source: pathwhiz
+        relation_type: prov:hadPrimarySource
+    product_url: https://pathbank.org/pathwhiz/guest_login
+  - category: GraphicalInterface
+    description: Private drawing interface for creating and managing PathWhiz pathway
+      diagrams with an account
+    format: http
+    id: pathwhiz.private_draw
+    name: PathWhiz Private Draw
+    original_source:
+      - source: pathwhiz
+        relation_type: prov:hadPrimarySource
+    product_url: https://pathbank.org/lims
+  - category: DocumentationProduct
+    description: User guide and help documentation for drawing pathways using PathWhiz
+    format: http
+    id: pathwhiz.guides
+    name: PathWhiz User Guides
+    original_source:
+      - source: pathwhiz
+        relation_type: prov:hadPrimarySource
+    product_url: https://pathbank.org/pathwhiz/guides
 publications:
   - authors:
       - Pon A
@@ -60,8 +93,12 @@ publications:
     preferred: true
     title: 'Pathways with PathWhiz'
     year: "2015"
-repository: https://github.com/WishartLab/PathWhiz
 synonyms:
   - PathWhiz
   - PathWhiz Pathway Editor
+warnings:
+  - The former GitHub repository URL for PathWhiz returned 404 during 2026-06-02
+    curation, so no repository is listed.
+  - The live PathWhiz page states that commercial reuse of data requires explicit
+    permission and acknowledgment; no standard open data license was asserted.
 ---
