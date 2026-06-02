@@ -1,4 +1,5 @@
 ---
+activity_status: active
 category: DataSource
 contacts:
 - category: Organization
@@ -21,9 +22,9 @@ domains:
 - genomics
 - biological systems
 - proteomics
-homepage_url: https://www.ebi.ac.uk/GOA/index
+homepage_url: https://www.ebi.ac.uk/GOA/
 id: goa
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.ebi.ac.uk/about/terms-of-use
@@ -39,7 +40,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: goa
-  product_url: https://www.ebi.ac.uk/GOA/index
+  product_url: https://www.ebi.ac.uk/GOA/
 - category: GraphicalInterface
   description: Browser for searching and viewing Gene Ontology terms and GOA annotations
   format: http
@@ -62,14 +63,19 @@ products:
     source: go
   - relation_type: prov:hadPrimarySource
     source: goa
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: uniprot
+  - relation_type: prov:wasInformedBy
+    source: rnacentral
+  - relation_type: prov:wasInformedBy
+    source: complexportal
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
   id: goa.uniprot
+  latest_version: '232'
   name: UniProt GOA Annotations
   original_source:
   - relation_type: prov:hadPrimarySource
@@ -78,10 +84,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
 - category: Product
   description: GO annotations for human proteins
   format: txt
@@ -94,10 +97,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
 - category: Product
   description: GO annotations for mouse proteins
   format: txt
@@ -110,10 +110,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
@@ -130,10 +127,7 @@ products:
     source: interpro
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
 - category: Product
   description: GO annotations for PDB entries
   format: txt
@@ -146,10 +140,7 @@ products:
     source: goa
   - relation_type: prov:hadPrimarySource
     source: pdbe
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
 - category: Product
   description: GO annotations organized by proteomes
   format: txt
@@ -160,10 +151,7 @@ products:
     source: go
   - relation_type: prov:hadPrimarySource
     source: goa
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  product_url: https://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
 - category: DocumentationProduct
   description: Documentation including FAQ, About pages, and contact information
   format: http
@@ -172,7 +160,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: goa
-  product_url: https://www.ebi.ac.uk/GOA/newto
+  product_url: https://www.ebi.ac.uk/GOA/about
 - category: GraphProduct
   description: HumanGOA Automat
   format: kgx-jsonl
@@ -345,9 +333,12 @@ GOA provides comprehensive annotation sets for multiple model organisms and spec
 
 The QuickGO browser (https://www.ebi.ac.uk/QuickGO/) provides a user-friendly web interface for searching and viewing Gene Ontology terms and annotations. Users can explore GO term hierarchies, view annotations for specific gene products, and access detailed evidence supporting each annotation.
 
-### FTP Downloads
+### Download Site
 
-Current and archived GOA annotation files are available through the GOA FTP site (ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/). Each species-specific directory contains README files describing available files and their content. Archived annotation sets are maintained to support historical analyses and reproducibility.
+Current and archived GOA annotation files are available through the EBI GOA download
+site (https://ftp.ebi.ac.uk/pub/databases/GO/goa/). Each species-specific directory
+contains README files describing available files and their content. Archived annotation
+sets are maintained to support historical analyses and reproducibility.
 
 ### File Formats
 
@@ -416,10 +407,10 @@ GOA is hosted at EMBL-EBI (European Bioinformatics Institute) at the Wellcome Ge
 
 ## Additional Resources
 
-- **Website**: https://www.ebi.ac.uk/GOA/index
+- **Website**: https://www.ebi.ac.uk/GOA/
 - **QuickGO Browser**: https://www.ebi.ac.uk/QuickGO/
-- **FTP Site**: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
+- **Download Site**: https://ftp.ebi.ac.uk/pub/databases/GO/goa/
 - **FAQ**: https://www.ebi.ac.uk/GOA/faq
-- **About**: https://www.ebi.ac.uk/GOA/newto
+- **About**: https://www.ebi.ac.uk/GOA/about
 - **Contact**: https://www.ebi.ac.uk/GOA/contactus
 - **Twitter**: @QuickGO_EBI
