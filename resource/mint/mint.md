@@ -11,9 +11,8 @@ description: MINT (The Molecular INTeraction database) is a public and open sour
   according to international PSI-MI standards and follow the PSI-MI controlled vocabulary.
   MINT is a founder and main member of the IMEx consortium and provides data that
   is integrated into the IntAct database as part of a single non-redundant open access
-  dataset. As an ELIXIR Core Data Resource and Global Core Biodata Resource, MINT
-  contains over 139,000 interactions involving 27,800+ interactors from 676 organisms
-  extracted from 6,500+ publications.
+  dataset. MINT is listed as an ELIXIR Core Data Resource and Global Core Biodata
+  Resource.
 domains:
 - proteomics
 - biomedical
@@ -21,7 +20,7 @@ domains:
 - biological systems
 homepage_url: https://mint.bio.uniroma2.it/
 id: mint
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -47,6 +46,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: imex
+  - relation_type: prov:wasInfluencedBy
+    source: intact
+  - relation_type: prov:used
+    source: mi
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
@@ -68,6 +74,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: imex
+  - relation_type: prov:wasInfluencedBy
+    source: intact
+  - relation_type: prov:used
+    source: mi
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
@@ -89,6 +102,13 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: imex
+  - relation_type: prov:wasInfluencedBy
+    source: intact
+  - relation_type: prov:used
+    source: mi
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
@@ -101,14 +121,60 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-31: No Content-Length
     header found'
+- category: Product
+  description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
+    format.
+  format: psi_mi_mitab
+  id: mint.mitab.drosophila
+  name: MINT Drosophila Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: imex
+  - relation_type: prov:wasInfluencedBy
+    source: intact
+  - relation_type: prov:used
+    source: mi
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:fruit%20fly
+  warnings:
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
+- category: Product
+  description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
+    format.
+  format: psi_mi_mitab
+  id: mint.mitab.yeast
+  name: MINT Yeast Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: imex
+  - relation_type: prov:wasInfluencedBy
+    source: intact
+  - relation_type: prov:used
+    source: mi
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:yeast
+  warnings:
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
+  format: http
   id: mint.psicquic
   name: MINT PSICQUIC Web Service
   original_source:
   - relation_type: prov:hadPrimarySource
     source: mint
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: imex
+  - relation_type: prov:wasInfluencedBy
+    source: intact
+  - relation_type: prov:used
+    source: mi
   product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/
 - category: GraphicalInterface
   description: Advanced search interface for querying MINT data with field-specific
@@ -980,12 +1046,6 @@ MINT (The Molecular INTeraction database) is a comprehensive public repository f
 - Uses PSI-MI controlled vocabulary for consistency
 - Provides data in standard PSI-MI XML and MITAB formats
 - Compatible with PSICQUIC query protocol
-
-### Database Statistics (Current)
-- **Publications**: 6,515 curated papers
-- **Interactions**: 139,980 protein-protein interactions
-- **Interactors**: 27,802 unique proteins
-- **Organisms**: 676 species represented
 
 ### IMEx Consortium Member
 MINT is a founder and one of the main members of the International Molecular Exchange (IMEx) consortium. IMEx resources have merged their efforts to provide comprehensively annotated molecular interaction data integrated into a single, non-redundant, open access dataset stored and available through the IntAct database at EBI.
