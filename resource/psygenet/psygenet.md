@@ -9,23 +9,39 @@ description: PsyGeNET is a knowledge resource on psychiatric disorders and their
 domains:
 - biomedical
 - genomics
-homepage_url: http://www.psygenet.org/
+homepage_url: https://www.psygenet.org/
 id: psygenet
-last_modified_date: '2025-07-12T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 name: PsyGeNET
 products:
 - category: Product
-  description: 'Gene-disease associations for psychiatric disorders, as described
-    in "PsyGeNET: a knowledge platform on psychiatric disorders and their genes" (PMCID:
-    PMC4565028). '
+  description: Gene-disease associations for psychiatric disorders; the PsyGeNET 2.0 homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease concepts.
   format: tsv
   id: psygenet.genedisease
   name: PsyGeNET Gene-Disease Associations
   original_source:
   - relation_type: prov:hadPrimarySource
     source: psygenet
-  product_url: http://www.psygenet.org/
+  product_url: https://www.psygenet.org/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+- category: ProcessProduct
+  description: R/Bioconductor package for querying PsyGeNET and performing comorbidity studies with PsyGeNET data
+  format: http
+  id: psygenet.psygenet2r
+  license:
+    id: https://spdx.org/licenses/MIT.html
+    label: MIT
+  name: psygenet2r R Package
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: psygenet
+  product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
+  repository: https://git.bioconductor.org/packages/psygenet2r
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -68,15 +84,29 @@ publications:
   - Queralt-Rosinach N
   - Rautschka M
   - Furlong LI
-  id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4565028/
+  doi: 10.1093/database/bav099
+  id: doi:10.1093/database/bav099
   journal: Database (Oxford)
   preferred: true
   title: 'PsyGeNET: a knowledge platform on psychiatric disorders and their genes'
   year: '2015'
+- authors:
+  - Alba Gutierrez-Sacristan
+  - Carles Hernandez-Ferrer
+  - Juan R Gonzalez
+  - Laura I Furlong
+  doi: 10.1093/bioinformatics/btx506
+  id: doi:10.1093/bioinformatics/btx506
+  journal: Bioinformatics
+  title: 'psygenet2r: a R/Bioconductor package for the analysis of psychiatric disease genes'
+  year: '2017'
 taxon:
 - NCBITaxon:9606
+version: '2.0'
 warnings:
-- The official PsyGeNET website (http://www.psygenet.org/) is currently inaccessible.
-  Data may be unavailable or out of date.
+- The PsyGeNET homepage responded on 2026-06-02 but identifies itself as an incomplete Wayback Machine Downloader copy, so direct website functionality may be unavailable.
+- Several PsyGeNET subpages checked on 2026-06-02 either returned 404 or redirected to unrelated content; use the site and downloads with caution.
 ---
 # PsyGeNET
+
+PsyGeNET is a psychiatric-disorder gene association resource combining literature text mining and expert curation. Its original web application is no longer reliably available, but the resource remains documented through its publications and the psygenet2r Bioconductor package.
