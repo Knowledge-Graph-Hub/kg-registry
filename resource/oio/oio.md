@@ -20,7 +20,7 @@ domains:
 - biological systems
 - upper
 id: oio
-last_modified_date: '2025-11-05T00:00:00Z'
+last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -35,6 +35,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oio
+  product_url: http://purl.obolibrary.org/obo/oio.owl
+  warnings:
+  - OIO is deprecated and retained for legacy compatibility; use OMO for current
+    ontology metadata.
 - category: OntologyProduct
   description: OBO Interoperability Ontology in OBO format
   format: obo
@@ -43,6 +47,10 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: oio
+  product_url: http://purl.obolibrary.org/obo/oio.obo
+  warnings:
+  - OIO is deprecated and retained for legacy compatibility; use OMO for current
+    ontology metadata.
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -260,10 +268,6 @@ These capabilities are now provided by the Ontology Metadata Ontology (OMO), whi
 
 ### OWL and OBO Formats
 The deprecated OIO ontology is still available in OWL and OBO formats for legacy purposes, but users should migrate to OMO for current projects.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:oio`
 
 ## Domains
 
