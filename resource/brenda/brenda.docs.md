@@ -9,8 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: brenda
 product_url: https://www.brenda-enzymes.org/help.php
-warnings:
-- File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

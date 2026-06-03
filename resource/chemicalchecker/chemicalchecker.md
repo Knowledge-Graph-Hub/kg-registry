@@ -34,9 +34,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chemicalchecker
   product_url: https://chemicalchecker.com/downloads/root
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProcessProduct
   description: Software tool for producing bioactivity signature vectors.
   format: python
@@ -65,9 +63,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: chemicalchecker
   product_url: https://chemicalchecker.com/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
