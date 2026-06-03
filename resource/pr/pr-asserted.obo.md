@@ -6,7 +6,7 @@ id: pr-asserted.obo
 name: pro_nonreasoned.obo
 product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-03_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

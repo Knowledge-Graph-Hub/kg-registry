@@ -18,13 +18,13 @@ secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: biogrid
 warnings:
+- File was not able to be retrieved when checked on 2026-06-03_ Error connecting to
+  URL_ HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443)_ Max retries exceeded
+  with url_ / (Caused by NewConnectionError("HTTPSConnection(host='hpidb.igbb.msstate.edu',
+  port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
 - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
   on 2026-06-02.
 - The historical AgBase HPI downloads URL redirected and then returned HTTP 403 during
   curation on 2026-06-02.
-- File was not able to be retrieved when checked on 2026-06-02_ Error connecting to
-  URL_ HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443)_ Max retries exceeded
-  with url_ / (Caused by NewConnectionError("HTTPSConnection(host='hpidb.igbb.msstate.edu',
-  port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
 layout: product_detail
 ---

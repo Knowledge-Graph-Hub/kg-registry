@@ -267,12 +267,10 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Co-occurrence database generated from public PubMed abstracts with
     entity normalization for Biolink-relevant biomedical concepts
@@ -365,12 +363,10 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-03: FTP error: timed
     out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
@@ -1009,6 +1005,89 @@ products:
   - No static public graph release or hosted endpoint was available in the GitHub
     repository when curated on 2026-06-02; the repository documents local Turtle materialization
     and Virtuoso loading.
+- category: Product
+  description: dbPTM downloads for experimental and putative PTM sites, benchmark
+    datasets, and cancer proteomics datasets, with PTM records mapped to UniProtKB
+    protein entries and linked to literature evidence.
+  format: tsv
+  id: dbptm.downloads
+  name: dbPTM Download Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbptm
+  product_url: https://biomics.lab.nycu.edu.tw/dbPTM/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: Tab-delimited dbSNO 3.0 S-nitrosylation dataset containing UniProt
+    identifiers, organisms, positions, and sequence context for manually curated and
+    experimentally identified S-nitrosylated peptides.
+  format: tsv
+  id: dbsno.downloads
+  name: dbSNO Download Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbsno
+  product_url: https://biomics.lab.nycu.edu.tw/dbSNO/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 500 error
+    when accessing file'
+- category: Product
+  description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
+    with accessions, sequences, residue positions, phosphorylated residues, PubMed
+    identifiers, upstream kinases, evidence source class, species, and entry dates.
+  format: mixed
+  id: phosphoelm.dataset
+  license:
+    id: http://phospho.elm.eu.org/dumps/Phospho.Elm_AcademicLicense.pdf
+    label: Phospho.ELM Academic License
+  name: Phospho.ELM Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phosphoelm
+  product_url: http://phospho.elm.eu.org/dataset.html
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: GraphicalInterface
+  description: RLIMS-P web portal for searching phosphorylation information by keywords,
+    organisms, date range, and PubMed identifiers, with extracted kinase, substrate,
+    site, evidence text, and downloadable results.
+  format: http
+  id: rlims-p.portal
+  name: RLIMS-P Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rlims-p
+  product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/
+  secondary_source:
+  - relation_type: prov:used
+    source: pubmed
+- category: ProcessProduct
+  description: Rule-based text-mining service for extracting protein phosphorylation
+    events, including kinase, substrate, phosphorylation site, and textual evidence,
+    from PubMed abstracts and selected literature corpora.
+  id: rlims-p.text-mining-service
+  name: RLIMS-P Text-Mining Service
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rlims-p
+  product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/
+  secondary_source:
+  - relation_type: prov:used
+    source: pubmed
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

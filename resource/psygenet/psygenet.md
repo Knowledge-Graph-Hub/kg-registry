@@ -46,8 +46,6 @@ products:
   product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
   repository: https://git.bioconductor.org/packages/psygenet2r
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -87,7 +85,7 @@ products:
   product_url: https://www.disgenet.com/
 publications:
 - authors:
-  - Bravo À
+  - "Bravo \xC0"
   - Pinero J
   - Queralt-Rosinach N
   - Rautschka M

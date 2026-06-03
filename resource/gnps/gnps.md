@@ -54,8 +54,6 @@ products:
     source: gnps
   product_url: https://gnps-external.ucsd.edu/gnpslibrary
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
 - category: GraphProduct

@@ -65,8 +65,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 - category: OntologyProduct
@@ -90,8 +88,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 - category: OntologyProduct
@@ -128,8 +124,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 - category: OntologyProduct
@@ -142,8 +136,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
@@ -3690,8 +3682,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3802,12 +3794,10 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   compression: 7z
   description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
@@ -4146,12 +4136,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Gene Ontology terms
@@ -4165,8 +4153,6 @@ products:
     source: go
   product_url: https://omabrowser.org/All/oma-go.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
 - category: Product
@@ -5436,6 +5422,206 @@ products:
   warnings:
   - Prediction results are exposed through POST/GET API operations rather than as
     a stable public bulk data file.
+- category: Product
+  description: Harmonizome 3.0 processed dataset downloads, including dataset-specific
+    association files and knowledge graph serialization downloads.
+  format: mixed
+  id: harmonizome.downloads
+  name: Harmonizome Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  product_url: https://maayanlab.cloud/Harmonizome/download
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: achilles
+  - relation_type: prov:wasDerivedFrom
+    source: biogps
+  - relation_type: prov:wasDerivedFrom
+    source: ccle
+  - relation_type: prov:wasDerivedFrom
+    source: cellmarker
+  - relation_type: prov:wasDerivedFrom
+    source: chea
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: cmap
+  - relation_type: prov:wasDerivedFrom
+    source: compartments
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: depmap
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: encode
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: glygen
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: hpa
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:wasDerivedFrom
+    source: impc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: motrpac
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: pfocr
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
+  - relation_type: prov:wasDerivedFrom
+    source: tissues
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  description: Neo4j knowledge graph serialization of Harmonizome processed datasets,
+    including genes, attributes, resources, datasets, and gene-attribute associations.
+  dump_format: neo4j
+  format: neo4j
+  id: harmonizome.kg-neo4j
+  latest_version: '3.0'
+  name: Harmonizome Knowledge Graph Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  product_url: https://harmonizome-kg.maayanlab.cloud/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: achilles
+  - relation_type: prov:wasDerivedFrom
+    source: biogps
+  - relation_type: prov:wasDerivedFrom
+    source: ccle
+  - relation_type: prov:wasDerivedFrom
+    source: cellmarker
+  - relation_type: prov:wasDerivedFrom
+    source: chea
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: cmap
+  - relation_type: prov:wasDerivedFrom
+    source: compartments
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: depmap
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: encode
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: glygen
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: hpa
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:wasDerivedFrom
+    source: impc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: motrpac
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: pfocr
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
+  - relation_type: prov:wasDerivedFrom
+    source: tissues
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'

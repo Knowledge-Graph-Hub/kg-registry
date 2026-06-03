@@ -964,12 +964,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1761,8 +1759,6 @@ products:
     source: ensembl
   product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
 - category: Product
@@ -1859,6 +1855,27 @@ products:
     source: ensembl
   - relation_type: prov:wasInformedBy
     source: reactome
+- category: Product
+  description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
+    with accessions, sequences, residue positions, phosphorylated residues, PubMed
+    identifiers, upstream kinases, evidence source class, species, and entry dates.
+  format: mixed
+  id: phosphoelm.dataset
+  license:
+    id: http://phospho.elm.eu.org/dumps/Phospho.Elm_AcademicLicense.pdf
+    label: Phospho.ELM Academic License
+  name: Phospho.ELM Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phosphoelm
+  product_url: http://phospho.elm.eu.org/dataset.html
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
 publications:
 - authors:
   - Dyer SC

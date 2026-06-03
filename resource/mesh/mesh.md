@@ -571,12 +571,10 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-03: FTP error: timed
     out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1272,16 +1270,14 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -1303,14 +1299,12 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -1333,16 +1327,14 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -1593,6 +1585,44 @@ products:
     source: mondo
   - relation_type: prov:wasInformedBy
     source: omim
+- category: ProcessProduct
+  description: PREDICT computational method for large-scale prediction of drug indications
+    using drug-drug and disease-disease similarity measures and known drug-disease
+    associations.
+  id: predict.method
+  name: PREDICT Drug-Indication Inference Method
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: predict
+  product_url: https://www.embopress.org/doi/abs/10.1038/msb.2011.26
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+- category: Product
+  description: Supporting information for the PREDICT study, including supplementary
+    tables and data supporting the drug-disease association gold standard and prediction
+    analyses.
+  format: mixed
+  id: predict.supporting-information
+  name: PREDICT Supporting Information
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: predict
+  product_url: https://www.embopress.org/doi/suppl/10.1038/msb.2011.26
+  secondary_source:
+  - relation_type: prov:used
+    source: drugbank
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: omim
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
+    when accessing file'
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
 ---
 # Medical Subject Headings (MeSH)

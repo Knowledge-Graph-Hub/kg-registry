@@ -2,18 +2,23 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://pfocr.wikipathways.org/
-    label: WikiPathways
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://pfocr.wikipathways.org/
+  label: WikiPathways
 creation_date: '2025-11-05T00:00:00Z'
-description: Pathway Figure OCR (PFOCR) is a resource that extracts biological pathway information from figures in scientific publications using optical character recognition (OCR) and machine learning. PFOCR automatically identifies pathway diagrams in published literature, extracts gene and protein names from pathway figures, and creates structured pathway data. The resource enables discovery of pathway knowledge that exists only in figure format and is not captured in article text or structured databases.
+description: Pathway Figure OCR (PFOCR) is a resource that extracts biological pathway
+  information from figures in scientific publications using optical character recognition
+  (OCR) and machine learning. PFOCR automatically identifies pathway diagrams in published
+  literature, extracts gene and protein names from pathway figures, and creates structured
+  pathway data. The resource enables discovery of pathway knowledge that exists only
+  in figure format and is not captured in article text or structured databases.
 domains:
-  - pathways
-  - literature
-  - biomedical
-  - systems biology
+- pathways
+- literature
+- biomedical
+- systems biology
 homepage_url: https://pfocr.wikipathways.org/
 id: pfocr
 infores_id: pfocr
@@ -24,98 +29,297 @@ license:
   label: CC0-1.0
 name: PFOCR
 products:
-  - category: GraphicalInterface
-    description: Web interface for searching and browsing extracted pathway figures
-    format: http
-    id: pfocr.web
-    name: PFOCR Web Interface
-    original_source:
-      - source: pfocr
-        relation_type: prov:hadPrimarySource
-    product_url: https://pfocr.wikipathways.org/
-  - category: Product
-    description: GitHub repository containing the Jekyll site and database content
-      for PFOCR, including figure metadata in the _figures directory
-    format: http
-    id: pfocr.database_repository
-    name: PFOCR Database Repository
-    original_source:
-      - source: pfocr
-        relation_type: prov:hadPrimarySource
-    product_url: https://github.com/wikipathways/pfocr-database
-    repository: https://github.com/wikipathways/pfocr-database
-  - category: Product
-    description: Search metadata JSON used by the PFOCR website for figure, gene,
-      pathway, and keyword search
-    format: json
-    id: pfocr.search_json
-    name: PFOCR Search JSON
-    original_source:
-      - source: pfocr
-        relation_type: prov:hadPrimarySource
-    product_file_size: 55889831
-    product_url: https://pfocr.wikipathways.org/search.json
-  - category: Product
-    description: JSON file containing all PFOCR figure information for pathway figures
-      extracted from literature
-    format: json
-    id: pfocr.figure_info_json
-    name: PFOCR Figure Information JSON
-    original_source:
-      - source: pfocr
-        relation_type: prov:hadPrimarySource
-    product_file_size: 59089985
-    product_url: https://pfocr.wikipathways.org/json/getFigureInfo.json
-  - category: Product
-    description: Current GMT release of PFOCR pathway figure gene sets distributed
-      through WikiPathways data downloads
-    format: txt
-    id: pfocr.gmt
-    name: PFOCR GMT Gene Sets
-    original_source:
-      - source: pfocr
-        relation_type: prov:hadPrimarySource
-    product_url: https://data.wikipathways.org/pfocr/current/
-  - category: ProgrammingInterface
-    description: JSON endpoints and help documentation for accessing PFOCR extracted
-      pathway figure data programmatically
-    format: http
-    id: pfocr.api
-    name: PFOCR API
-    original_source:
-      - source: pfocr
-        relation_type: prov:hadPrimarySource
-    product_url: https://pfocr.wikipathways.org/help.html#download
+- category: GraphicalInterface
+  description: Web interface for searching and browsing extracted pathway figures
+  format: http
+  id: pfocr.web
+  name: PFOCR Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  product_url: https://pfocr.wikipathways.org/
+- category: Product
+  description: GitHub repository containing the Jekyll site and database content for
+    PFOCR, including figure metadata in the _figures directory
+  format: http
+  id: pfocr.database_repository
+  name: PFOCR Database Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  product_url: https://github.com/wikipathways/pfocr-database
+  repository: https://github.com/wikipathways/pfocr-database
+- category: Product
+  description: Search metadata JSON used by the PFOCR website for figure, gene, pathway,
+    and keyword search
+  format: json
+  id: pfocr.search_json
+  name: PFOCR Search JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  product_file_size: 55889831
+  product_url: https://pfocr.wikipathways.org/search.json
+- category: Product
+  description: JSON file containing all PFOCR figure information for pathway figures
+    extracted from literature
+  format: json
+  id: pfocr.figure_info_json
+  name: PFOCR Figure Information JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  product_file_size: 59089985
+  product_url: https://pfocr.wikipathways.org/json/getFigureInfo.json
+- category: Product
+  description: Current GMT release of PFOCR pathway figure gene sets distributed through
+    WikiPathways data downloads
+  format: txt
+  id: pfocr.gmt
+  name: PFOCR GMT Gene Sets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  product_url: https://data.wikipathways.org/pfocr/current/
+- category: ProgrammingInterface
+  description: JSON endpoints and help documentation for accessing PFOCR extracted
+    pathway figure data programmatically
+  format: http
+  id: pfocr.api
+  name: PFOCR API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pfocr
+  product_url: https://pfocr.wikipathways.org/help.html#download
+- category: Product
+  description: Harmonizome 3.0 processed dataset downloads, including dataset-specific
+    association files and knowledge graph serialization downloads.
+  format: mixed
+  id: harmonizome.downloads
+  name: Harmonizome Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  product_url: https://maayanlab.cloud/Harmonizome/download
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: achilles
+  - relation_type: prov:wasDerivedFrom
+    source: biogps
+  - relation_type: prov:wasDerivedFrom
+    source: ccle
+  - relation_type: prov:wasDerivedFrom
+    source: cellmarker
+  - relation_type: prov:wasDerivedFrom
+    source: chea
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: cmap
+  - relation_type: prov:wasDerivedFrom
+    source: compartments
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: depmap
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: encode
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: glygen
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: hpa
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:wasDerivedFrom
+    source: impc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: motrpac
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: pfocr
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
+  - relation_type: prov:wasDerivedFrom
+    source: tissues
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  description: Neo4j knowledge graph serialization of Harmonizome processed datasets,
+    including genes, attributes, resources, datasets, and gene-attribute associations.
+  dump_format: neo4j
+  format: neo4j
+  id: harmonizome.kg-neo4j
+  latest_version: '3.0'
+  name: Harmonizome Knowledge Graph Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  product_url: https://harmonizome-kg.maayanlab.cloud/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: achilles
+  - relation_type: prov:wasDerivedFrom
+    source: biogps
+  - relation_type: prov:wasDerivedFrom
+    source: ccle
+  - relation_type: prov:wasDerivedFrom
+    source: cellmarker
+  - relation_type: prov:wasDerivedFrom
+    source: chea
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: cmap
+  - relation_type: prov:wasDerivedFrom
+    source: compartments
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: depmap
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: encode
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: glygen
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: hpa
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:wasDerivedFrom
+    source: impc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: motrpac
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: pfocr
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
+  - relation_type: prov:wasDerivedFrom
+    source: tissues
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
 publications:
-  - authors:
-      - Hanspers K
-      - Riutta A
-      - Summer-Kutmon M
-      - Pico AR
-    doi: 10.1186/s13059-020-02181-2
-    id: doi:10.1186/s13059-020-02181-2
-    journal: Genome Biology
-    preferred: true
-    title: Pathway information extracted from 25 years of pathway figures
-    year: '2020'
-  - authors:
-      - Riutta A
-      - Hanspers K
-      - Pico AR
-    doi: 10.1101/379446
-    id: doi:10.1101/379446
-    journal: bioRxiv
-    title: Identifying Genes in Published Pathway Figure Images
-    year: '2018'
+- authors:
+  - Hanspers K
+  - Riutta A
+  - Summer-Kutmon M
+  - Pico AR
+  doi: 10.1186/s13059-020-02181-2
+  id: doi:10.1186/s13059-020-02181-2
+  journal: Genome Biology
+  preferred: true
+  title: Pathway information extracted from 25 years of pathway figures
+  year: '2020'
+- authors:
+  - Riutta A
+  - Hanspers K
+  - Pico AR
+  doi: 10.1101/379446
+  id: doi:10.1101/379446
+  journal: bioRxiv
+  title: Identifying Genes in Published Pathway Figure Images
+  year: '2018'
 repository: https://github.com/wikipathways/pfocr-database
 synonyms:
-  - PFOCR
-  - Pathway Figure OCR
+- PFOCR
+- Pathway Figure OCR
 warnings:
-  - The formerly listed wikipathways/pfocr repository returned 404 during 2026-06-02
-    curation; the maintained database repository is wikipathways/pfocr-database.
+- The formerly listed wikipathways/pfocr repository returned 404 during 2026-06-02
+  curation; the maintained database repository is wikipathways/pfocr-database.
 ---
-
 # PFOCR - Pathway Figure OCR
 
 ## Overview

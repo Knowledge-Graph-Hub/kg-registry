@@ -460,12 +460,10 @@ products:
     source: gtex
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -778,17 +776,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -837,17 +833,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: GraphProduct
   description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
     between 61,146 entities from multiple genotypic and phenotypic databases
@@ -880,6 +874,206 @@ products:
     source: string
   - relation_type: prov:wasDerivedFrom
     source: umls
+- category: Product
+  description: Harmonizome 3.0 processed dataset downloads, including dataset-specific
+    association files and knowledge graph serialization downloads.
+  format: mixed
+  id: harmonizome.downloads
+  name: Harmonizome Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  product_url: https://maayanlab.cloud/Harmonizome/download
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: achilles
+  - relation_type: prov:wasDerivedFrom
+    source: biogps
+  - relation_type: prov:wasDerivedFrom
+    source: ccle
+  - relation_type: prov:wasDerivedFrom
+    source: cellmarker
+  - relation_type: prov:wasDerivedFrom
+    source: chea
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: cmap
+  - relation_type: prov:wasDerivedFrom
+    source: compartments
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: depmap
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: encode
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: glygen
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: hpa
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:wasDerivedFrom
+    source: impc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: motrpac
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: pfocr
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
+  - relation_type: prov:wasDerivedFrom
+    source: tissues
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
+- category: GraphProduct
+  description: Neo4j knowledge graph serialization of Harmonizome processed datasets,
+    including genes, attributes, resources, datasets, and gene-attribute associations.
+  dump_format: neo4j
+  format: neo4j
+  id: harmonizome.kg-neo4j
+  latest_version: '3.0'
+  name: Harmonizome Knowledge Graph Neo4j Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: harmonizome
+  product_url: https://harmonizome-kg.maayanlab.cloud/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: achilles
+  - relation_type: prov:wasDerivedFrom
+    source: biogps
+  - relation_type: prov:wasDerivedFrom
+    source: ccle
+  - relation_type: prov:wasDerivedFrom
+    source: cellmarker
+  - relation_type: prov:wasDerivedFrom
+    source: chea
+  - relation_type: prov:wasDerivedFrom
+    source: clinvar
+  - relation_type: prov:wasDerivedFrom
+    source: cmap
+  - relation_type: prov:wasDerivedFrom
+    source: compartments
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: depmap
+  - relation_type: prov:wasDerivedFrom
+    source: diseases
+  - relation_type: prov:wasDerivedFrom
+    source: disgenet
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: encode
+  - relation_type: prov:wasDerivedFrom
+    source: gdsc
+  - relation_type: prov:wasDerivedFrom
+    source: geo
+  - relation_type: prov:wasDerivedFrom
+    source: glygen
+  - relation_type: prov:wasDerivedFrom
+    source: go
+  - relation_type: prov:wasDerivedFrom
+    source: gtex
+  - relation_type: prov:wasDerivedFrom
+    source: gwascatalog
+  - relation_type: prov:wasDerivedFrom
+    source: hmdb
+  - relation_type: prov:wasDerivedFrom
+    source: hp
+  - relation_type: prov:wasDerivedFrom
+    source: hpa
+  - relation_type: prov:wasDerivedFrom
+    source: hubmap
+  - relation_type: prov:wasDerivedFrom
+    source: impc
+  - relation_type: prov:wasDerivedFrom
+    source: interpro
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: lincs-l1000
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: motrpac
+  - relation_type: prov:wasDerivedFrom
+    source: mp
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: omim
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: pathwaycommons
+  - relation_type: prov:wasDerivedFrom
+    source: pfocr
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
+  - relation_type: prov:wasDerivedFrom
+    source: tissues
+  - relation_type: prov:wasDerivedFrom
+    source: wikipathways
 publications:
 - authors:
   - GTEx Consortium

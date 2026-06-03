@@ -407,12 +407,10 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-03: FTP error: timed
     out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1453,12 +1451,10 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
-    returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 405 error
     when accessing file'
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -1498,8 +1494,33 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+- category: GraphicalInterface
+  description: PubChem source page for ChemIDplus, providing the current access point
+    for ChemIDplus substance records and annotations after the standalone NLM service
+    was retired.
+  id: chemid.pubchem-source
+  name: ChemIDplus in PubChem
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chemid
+  product_url: https://pubchem.ncbi.nlm.nih.gov/source/ChemIDplus
+  secondary_source:
+  - relation_type: prov:used
+    source: pubchem
+- category: DocumentationProduct
+  description: NLM guide for locating migrated ChemIDplus content within PubChem.
+  id: chemid.pubchem-guide
+  name: Accessing ChemIDplus Content from PubChem
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chemid
+  product_url: https://www.nlm.nih.gov/toxnet/Accessing_ChemIDplus_Content_from_PubChem.pdf
+  secondary_source:
+  - relation_type: prov:used
+    source: pubchem
+  warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 publications:

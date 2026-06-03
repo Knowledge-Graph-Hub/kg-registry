@@ -735,6 +735,18 @@ products:
     source: wormbase
   product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+- category: ProcessProduct
+  description: Phospho.ELM PhosphoBLAST search tool for comparing protein queries
+    against the curated phosphorylated-peptide dataset.
+  id: phosphoelm.phosphoblast
+  name: Phospho.ELM PhosphoBLAST
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phosphoelm
+  product_url: http://phospho.elm.eu.org/pELMBlastSearch.html
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: smart
 synonyms:
 - SMART
 - Simple Modular Architecture Research Tool

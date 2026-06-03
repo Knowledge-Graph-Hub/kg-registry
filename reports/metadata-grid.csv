@@ -4,7 +4,6 @@ Resource,Activity Status,Validation Status
 5srrnadb,active,PASS
 aact,active,PASS
 achilles,active,PASS
-activedriverdb,active,PASS
 ado,active,PASS
 adrecs,active,PASS
 aelous,active,PASS
@@ -78,7 +77,6 @@ chea-kg,active,PASS
 chebi,active,PASS
 chembl,active,PASS
 chemicalchecker,active,PASS
-chemid,active,PASS
 cheminf,active,PASS
 chemont,active,PASS
 chiro,active,PASS
@@ -185,10 +183,8 @@ ecocyc,active,PASS
 ecosim,active,PASS
 ecto,active,PASS
 edam,active,PASS
-efip,active,PASS
 efo,active,PASS
 eggnog,active,PASS
-ehrlink,active,PASS
 ekg,active,PASS
 ema,active,PASS
 emapa,active,PASS
@@ -296,7 +292,6 @@ hald,active,PASS
 hancestro,active,PASS
 hao,active,PASS
 harmonizome,active,PASS
-harmonizome-kg,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
 hippie,active,PASS
@@ -360,7 +355,6 @@ kinhub,active,PASS
 kinomescan,active,PASS
 kisao,active,PASS
 knowwheregraph,active,PASS
-labeledin,active,PASS
 labo,active,PASS
 lepao,active,PASS
 lincs,active,PASS
@@ -516,7 +510,6 @@ pankgraph,active,PASS
 panther,active,PASS
 pathbank,active,PASS
 pathophenodb,active,PASS
-pathway-commons,active,PASS
 pathwaycommons,active,PASS
 pathwhiz,active,PASS
 pato,active,PASS
@@ -545,8 +538,6 @@ phenio,active,PASS
 phewascat,active,PASS
 phipo,active,PASS
 phosphat,active,PASS
-phosphoelm,active,PASS
-phosphogrid,active,PASS
 phosphositeplus,active,PASS
 pir,active,PASS
 pirbase,active,PASS
@@ -562,7 +553,6 @@ pombase,active,PASS
 poro,active,PASS
 ppo,active,PASS
 pr,active,PASS
-predict,active,PASS
 preppi,active,PASS
 primekg,active,PASS
 prism,active,PASS
@@ -726,6 +716,7 @@ zfs,active,PASS
 zp,active,PASS
 zwd,active,PASS
 aao,inactive,PASS
+activedriverdb,inactive,PASS
 adw,inactive,PASS
 aeo,inactive,PASS
 aero,inactive,PASS
@@ -742,6 +733,7 @@ cacao,inactive,PASS
 cam-kp,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
+chemid,inactive,PASS
 cmf,inactive,PASS
 connectivitymap,inactive,PASS
 crd,unresponsive,PASS
@@ -750,9 +742,11 @@ dc_cl,inactive,PASS
 dinto,inactive,PASS
 doaf,inactive,PASS
 docm,inactive,PASS
+efip,inactive,PASS
 ehda,inactive,PASS
 ehdaa,inactive,PASS
 ehdaa2,inactive,PASS
+ehrlink,inactive,PASS
 emap,inactive,PASS
 eo,inactive,PASS
 epo,inactive,PASS
@@ -776,6 +770,7 @@ imr,inactive,PASS
 ipr,inactive,PASS
 iproclass,inactive,PASS
 irefindex,inactive,PASS
+labeledin,inactive,PASS
 lipro,inactive,PASS
 lncrnadb,inactive,PASS
 loggerhead,inactive,PASS
@@ -808,8 +803,11 @@ pdumdv,inactive,PASS
 pgdso,inactive,PASS
 pharmacotherapydb,inactive,PASS
 pharmdb,orphaned,PASS
+phosphoelm,orphaned,PASS
+phosphogrid,orphaned,PASS
 pid,inactive,PASS
 plo,inactive,PASS
+predict,inactive,PASS
 propreo,inactive,PASS
 prsatlas,inactive,PASS
 psygenet,inactive,PASS

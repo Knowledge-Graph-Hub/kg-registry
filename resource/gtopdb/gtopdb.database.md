@@ -9,7 +9,7 @@ original_source:
   source: gtopdb
 product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
 warnings:
-- File was not able to be retrieved when checked on 2026-06-02_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-03_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
   to URL

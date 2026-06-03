@@ -11,10 +11,10 @@ contacts:
   id: ebi
   label: IntAct Team (EMBL-EBI)
 creation_date: '2025-07-08T00:00:00Z'
-description: IntAct is an open, curated molecular interaction database maintained
-  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
-  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
-  along with curated datasets and documentation.
+description: "IntAct is an open, curated molecular interaction database maintained\
+  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
+  \ literature curation and direct submissions, and distributes data in PSI\u2011\
+  MI XML and MITAB formats along with curated datasets and documentation."
 domains:
 - proteomics
 - systems biology
@@ -864,12 +864,10 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -2409,18 +2407,14 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
-    on 2026-06-02.
-  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
-    during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-06-03: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
+    on 2026-06-02.
+  - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
+    during curation on 2026-06-02.
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -2557,16 +2551,14 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-02-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
 - category: Product
   description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
     sapiens (NCBITaxon 9606).
@@ -2585,16 +2577,14 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
 - category: Product
   description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
     musculus (NCBITaxon 10090).
@@ -2613,16 +2603,14 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2026-03-08_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2026-01-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
 - category: Product
   description: Drosophila melanogaster protein interactions from MINT in PSI-MI MITAB
     format.
@@ -2641,11 +2629,9 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: Product
   description: Saccharomyces cerevisiae protein interactions from MINT in PSI-MI MITAB
     format.
@@ -2664,11 +2650,9 @@ products:
   - relation_type: prov:used
     source: mi
   warnings:
-  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+  - PSICQUIC query endpoints may stream results without a stable Content-Length header.
 - category: ProgrammingInterface
   description: PSICQUIC SOAP and REST web services for programmatic access to MINT
     data using Molecular Interactions Query Language (MIQL).
@@ -2689,7 +2673,8 @@ products:
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
-    pathway data, molecular interactions, and cross-database entity mappings
+    pathway data, molecular interactions, cross-database entity mappings, and metadata-derived
+    content from 26 datasource rows.
   format: biopax
   id: pathwaycommons.biopax
   name: Integrated BioPAX Model
@@ -2700,41 +2685,55 @@ products:
   product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
-    source: bind
-  - relation_type: prov:wasDerivedFrom
-    source: biogrid
-  - relation_type: prov:wasDerivedFrom
     source: chebi
   - relation_type: prov:wasDerivedFrom
-    source: corum
+    source: uniprot
   - relation_type: prov:wasDerivedFrom
-    source: ctd
-  - relation_type: prov:wasDerivedFrom
-    source: dip
-  - relation_type: prov:wasDerivedFrom
-    source: drugbank
-  - relation_type: prov:wasDerivedFrom
-    source: hprd
-  - relation_type: prov:wasDerivedFrom
-    source: innatedb
-  - relation_type: prov:wasDerivedFrom
-    source: intact
-  - relation_type: prov:wasDerivedFrom
-    source: kegg
-  - relation_type: prov:wasDerivedFrom
-    source: mirtarbase
-  - relation_type: prov:wasDerivedFrom
-    source: msigdb
-  - relation_type: prov:wasDerivedFrom
-    source: panther
-  - relation_type: prov:wasDerivedFrom
-    source: pathbank
-  - relation_type: prov:wasDerivedFrom
-    source: pid
+    source: unichem
   - relation_type: prov:wasDerivedFrom
     source: reactome
   - relation_type: prov:wasDerivedFrom
-    source: uniprot
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
 - category: Product
   compression: 7z
   description: Pre-processed human IntAct interaction file used in ProteomeHD comparisons
@@ -2749,6 +2748,255 @@ products:
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: intact
+- category: Product
+  description: Download directory for Pathway Commons PC v14 integrated pathway and
+    molecular interaction datasets, including BioPAX, SIF, GMT, TXT, and JSON-LD products.
+  format: mixed
+  id: pathwaycommons.downloads
+  name: Pathway Commons Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 Simple Interaction Format network file representing binary pairwise
+    molecular relationships integrated from Pathway Commons upstream datasource rows.
+  format: sif
+  id: pathwaycommons.sif
+  name: SIF Network Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 9810179
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.sif.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
+    derived from the integrated Pathway Commons pathway archive.
+  id: pathwaycommons.gmt
+  name: GMT Gene Set Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 262513
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.gmt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 tab-delimited extended SIF node and edge file using HGNC-oriented
+    identifiers for integrated Pathway Commons interactions.
+  format: txt
+  id: pathwaycommons.txt
+  name: Extended SIF TXT Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 115608500
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
 publications:
 - authors:
   - Noemi del Toro
@@ -2762,7 +3010,7 @@ publications:
   - Prashansa Ratan
   - Gautam Shirodkar
   - Odilia Lu
-  - Bálint Mészáros
+  - "B\xE1lint M\xE9sz\xE1ros"
   - Xavier Watkins
   - Sangya Pundir
   - Luana Licata

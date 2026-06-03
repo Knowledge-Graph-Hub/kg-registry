@@ -9,7 +9,7 @@ original_source:
   source: sopharm
 product_url: http://purl.obolibrary.org/obo/sopharm.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-03_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
   accessing file

@@ -98,12 +98,10 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -145,8 +143,6 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
 - category: GraphProduct
@@ -1025,12 +1021,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -3243,17 +3237,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -3302,17 +3294,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: Product
   description: Bulk download of DisProt data in multiple formats including JSON, TSV,
     FASTA, and GAF
@@ -3545,14 +3535,13 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
-    pathway data, molecular interactions, and cross-database entity mappings
+    pathway data, molecular interactions, cross-database entity mappings, and metadata-derived
+    content from 26 datasource rows.
   format: biopax
   id: pathwaycommons.biopax
   name: Integrated BioPAX Model
@@ -3563,41 +3552,55 @@ products:
   product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
   secondary_source:
   - relation_type: prov:wasDerivedFrom
-    source: bind
-  - relation_type: prov:wasDerivedFrom
-    source: biogrid
-  - relation_type: prov:wasDerivedFrom
     source: chebi
   - relation_type: prov:wasDerivedFrom
-    source: corum
+    source: uniprot
   - relation_type: prov:wasDerivedFrom
-    source: ctd
-  - relation_type: prov:wasDerivedFrom
-    source: dip
-  - relation_type: prov:wasDerivedFrom
-    source: drugbank
-  - relation_type: prov:wasDerivedFrom
-    source: hprd
-  - relation_type: prov:wasDerivedFrom
-    source: innatedb
-  - relation_type: prov:wasDerivedFrom
-    source: intact
-  - relation_type: prov:wasDerivedFrom
-    source: kegg
-  - relation_type: prov:wasDerivedFrom
-    source: mirtarbase
-  - relation_type: prov:wasDerivedFrom
-    source: msigdb
-  - relation_type: prov:wasDerivedFrom
-    source: panther
-  - relation_type: prov:wasDerivedFrom
-    source: pathbank
-  - relation_type: prov:wasDerivedFrom
-    source: pid
+    source: unichem
   - relation_type: prov:wasDerivedFrom
     source: reactome
   - relation_type: prov:wasDerivedFrom
-    source: uniprot
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
 - category: Product
   compression: gzip
   description: High-confidence PrePPI human interactome dataset generated with structure-informed
@@ -3631,6 +3634,366 @@ products:
   product_file_size: 857122
   product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/uniprot-all.7z
   secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: dbPTM downloads for experimental and putative PTM sites, benchmark
+    datasets, and cancer proteomics datasets, with PTM records mapped to UniProtKB
+    protein entries and linked to literature evidence.
+  format: tsv
+  id: dbptm.downloads
+  name: dbPTM Download Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbptm
+  product_url: https://biomics.lab.nycu.edu.tw/dbPTM/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: Tab-delimited dbSNO 3.0 S-nitrosylation dataset containing UniProt
+    identifiers, organisms, positions, and sequence context for manually curated and
+    experimentally identified S-nitrosylated peptides.
+  format: tsv
+  id: dbsno.downloads
+  name: dbSNO Download Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: dbsno
+  product_url: https://biomics.lab.nycu.edu.tw/dbSNO/download.php
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 500 error
+    when accessing file'
+- category: GraphicalInterface
+  description: neXtProt web platform for searching and browsing curated human protein
+    entries, proteomics evidence, variants, expression, interactions, localization,
+    and functional annotations.
+  id: nextprot.portal
+  name: neXtProt Web Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  product_url: https://www.nextprot.org/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: ProgrammingInterface
+  connection_url: https://api.nextprot.org
+  description: neXtProt REST API for programmatic access to human protein annotations
+    and entry data.
+  format: json
+  id: nextprot.api
+  is_public: true
+  name: neXtProt API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  product_url: https://api.nextprot.org
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: ProgrammingInterface
+  description: neXtProt SPARQL endpoint for querying RDF representations of human
+    protein knowledge.
+  format: http
+  id: nextprot.sparql
+  is_public: true
+  name: neXtProt SPARQL Endpoint
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  product_url: https://sparql.nextprot.org/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: neXtProt downloadable human protein data, including flat files and
+    RDF data products for local reuse.
+  format: mixed
+  id: nextprot.downloads
+  name: neXtProt Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  product_url: https://www.nextprot.org/downloads
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+- category: Product
+  description: Download directory for Pathway Commons PC v14 integrated pathway and
+    molecular interaction datasets, including BioPAX, SIF, GMT, TXT, and JSON-LD products.
+  format: mixed
+  id: pathwaycommons.downloads
+  name: Pathway Commons Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 Simple Interaction Format network file representing binary pairwise
+    molecular relationships integrated from Pathway Commons upstream datasource rows.
+  format: sif
+  id: pathwaycommons.sif
+  name: SIF Network Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 9810179
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.sif.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
+    derived from the integrated Pathway Commons pathway archive.
+  id: pathwaycommons.gmt
+  name: GMT Gene Set Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 262513
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.gmt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 tab-delimited extended SIF node and edge file using HGNC-oriented
+    identifiers for integrated Pathway Commons interactions.
+  format: txt
+  id: pathwaycommons.txt
+  name: Extended SIF TXT Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 115608500
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
+    with accessions, sequences, residue positions, phosphorylated residues, PubMed
+    identifiers, upstream kinases, evidence source class, species, and entry dates.
+  format: mixed
+  id: phosphoelm.dataset
+  license:
+    id: http://phospho.elm.eu.org/dumps/Phospho.Elm_AcademicLicense.pdf
+    label: Phospho.ELM Academic License
+  name: Phospho.ELM Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phosphoelm
+  product_url: http://phospho.elm.eu.org/dataset.html
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: ensembl
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
 repository: https://www.uniprot.org/help/downloads

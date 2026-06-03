@@ -426,12 +426,10 @@ products:
     source: zfin
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1141,6 +1139,20 @@ products:
     source: sgd
   product_file_size: 503057
   product_url: https://w3id.org/biopragmatics/resources/sgd/sgd.tsv
+- category: GraphicalInterface
+  description: Legacy PhosphoGRID web portal for searching experimentally verified
+    in vivo yeast phosphorylation sites by ORF, gene name, or external identifier.
+  id: phosphogrid.portal
+  name: PhosphoGRID Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: phosphogrid
+  product_url: https://phosphogrid.org/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: biogrid
+  - relation_type: prov:wasInformedBy
+    source: sgd
 taxon:
 - NCBITaxon:4932
 ---

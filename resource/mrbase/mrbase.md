@@ -220,8 +220,6 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ukbiobank
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
 - category: Product
@@ -240,10 +238,21 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: ukbiobank
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+- category: Product
+  description: OpenGWAS GWAS summary dataset catalog and downloadable files for curated
+    genome-wide association studies.
+  format: mixed
+  id: opengwas.datasets
+  name: IEU OpenGWAS Dataset Catalog
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: opengwas
+  product_url: https://opengwas.io/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: mrbase
 publications:
 - authors:
   - Gibran Hemani
