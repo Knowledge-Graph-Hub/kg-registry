@@ -2198,7 +2198,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -2313,7 +2313,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -2428,7 +2428,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -2543,7 +2543,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -2659,7 +2659,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -2938,11 +2938,11 @@ products:
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
     pathway data, molecular interactions, and cross-database entity mappings
   format: biopax
-  id: pathway-commons.biopax
+  id: pathwaycommons.biopax
   name: Integrated BioPAX Model
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: pathway-commons
+    source: pathwaycommons
   product_file_size: 1700903742
   product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
   secondary_source:

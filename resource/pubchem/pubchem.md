@@ -903,7 +903,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -1018,7 +1018,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -1133,7 +1133,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -1248,7 +1248,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
@@ -1364,7 +1364,7 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: omim
   - relation_type: prov:wasDerivedFrom
-    source: pathway-commons
+    source: pathwaycommons
   - relation_type: prov:wasDerivedFrom
     source: pharmgkb
   - relation_type: prov:wasDerivedFrom
