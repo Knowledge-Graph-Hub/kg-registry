@@ -3,10 +3,10 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: NCBI and NLM Support
   contact_details:
   - contact_type: url
     value: https://support.nlm.nih.gov/?pagename=guide%3ANONE%3AHomePage%3ANONE
+  label: NCBI and NLM Support
 creation_date: '2026-02-26T00:00:00Z'
 description: The National Center for Biotechnology Information advances science and
   health by providing access to biomedical and genomic information, databases, tools,
@@ -25,7 +25,8 @@ license:
 name: National Center for Biotechnology Information
 products:
 - category: DocumentationProduct
-  description: NCBI Datasets API documentation for genome, gene, taxonomy, virus, and BioSample programmatic access.
+  description: NCBI Datasets API documentation for genome, gene, taxonomy, virus,
+    and BioSample programmatic access.
   format: http
   id: ncbi.datasets-api
   name: NCBI Datasets API
@@ -140,6 +141,21 @@ products:
     source: progenomes
   product_file_size: 34062481
   product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+- category: Product
+  description: ncbi.gc Nodes TSV
+  format: tsv
+  id: obo-db-ingest.ncbi.gc.tsv
+  license:
+    id: https://creativecommons.org/public-domain/pdm/
+    label: public domain
+  name: ncbi.gc Nodes TSV
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncbi.gc
+  - relation_type: prov:hadPrimarySource
+    source: obo-db-ingest
+  product_file_size: 531
+  product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.tsv
 ---
 # National Center for Biotechnology Information
 

@@ -73,6 +73,10 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
+    to URL: HTTPSConnectionPool(host=''nlp.case.edu'', port=443): Max retries exceeded
+    with url: /public/data/GPKG-Predict/code/ (Caused by NewConnectionError("HTTPSConnection(host=''nlp.case.edu'',
+    port=443): Failed to establish a new connection: [Errno 113] No route to host"))'
 - category: DocumentationProduct
   description: Source data documentation for the GP-KG download
   format: http

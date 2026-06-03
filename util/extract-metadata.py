@@ -23,9 +23,17 @@ from ruamel.yaml.scanner import ScannerError
 from yamllint import config, linter
 
 try:
-    from util.source_associations import ensure_direct_product_primary_source, iter_source_ids
+    from util.source_associations import (
+        ensure_direct_product_primary_source,
+        iter_source_ids,
+        source_resource_id,
+    )
 except ModuleNotFoundError:
-    from source_associations import ensure_direct_product_primary_source, iter_source_ids
+    from source_associations import (
+        ensure_direct_product_primary_source,
+        iter_source_ids,
+        source_resource_id,
+    )
 
 __author__ = "cjm"
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -430,7 +438,7 @@ def concat_resource_yaml(args):
                                 if '.' in resource_ref:
                                     parts = resource_ref.split('.', 1)
                                     resource_id = parts[0]
-                                    product_id = parts[1]
+                                    product_id = resource_ref
 
                                     # Add resource to referenced_resources
                                     referenced_resources.add(resource_id)
@@ -638,8 +646,9 @@ def concat_resource_yaml(args):
                 for product in obj["products"]:
                     for field_name in ["original_source", "secondary_source"]:
                         if field_name in product:
-                            for resource_id in iter_source_ids(product[field_name]):
-                                if resource_id != obj["id"]:
+                            for source_id in iter_source_ids(product[field_name]):
+                                resource_id = source_resource_id(source_id)
+                                if resource_id and resource_id != obj["id"]:
                                     if resource_id not in to_be_propagated:
                                         to_be_propagated[resource_id] = []
                                     to_be_propagated[resource_id].append(deepcopy(product))

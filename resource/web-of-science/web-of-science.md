@@ -42,9 +42,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: web-of-science
   product_url: https://webofscience.help.clarivate.com/Content/wos-core-collection/wos-core-collection.htm
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: GraphProduct
   description: Neo4j framework-materials knowledge graph constructed from Web of Science
     abstracts and publication metadata with LLM-assisted information extraction. The

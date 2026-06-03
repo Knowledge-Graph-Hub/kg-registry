@@ -141,6 +141,16 @@ def iter_source_ids(associations: Any) -> Iterable[str]:
             yield source
 
 
+def source_resource_id(source_id: str) -> str:
+    """Return the owning resource identifier for a resource or product source ID."""
+    if not isinstance(source_id, str):
+        return ""
+    source = source_id.strip()
+    if not source:
+        return ""
+    return source.split(".", 1)[0]
+
+
 def _ensure_list(value: Any) -> list[Any]:
     if value is None:
         return []

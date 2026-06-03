@@ -121,9 +121,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tarbase
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/#/help
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
   format: http

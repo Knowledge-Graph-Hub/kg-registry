@@ -25,6 +25,11 @@ secondary_source:
 warnings:
 - File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
   to URL
+- File was not able to be retrieved when checked on 2026-06-02_ Error connecting to
+  URL_ HTTPConnectionPool(host='juniper.health.unm.edu', port=80)_ Max retries exceeded
+  with url_ /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host='juniper.health.unm.edu',
+  port=80)_ Failed to resolve 'juniper.health.unm.edu' ([Errno -3] Temporary failure
+  in name resolution)"))
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL
 layout: product_detail

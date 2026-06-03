@@ -32,9 +32,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: sty
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK9679/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: gzip
   description: Current UMLS Semantic Network release archive from NLM.

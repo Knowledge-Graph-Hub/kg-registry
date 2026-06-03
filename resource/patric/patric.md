@@ -50,9 +50,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: bv-brc
   product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProgrammingInterface
   description: BV-BRC REST Data API for querying and retrieving public data, including
     data inherited from PATRIC
@@ -78,9 +76,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: bv-brc
   product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
+  warnings: []
 publications:
 - authors:
   - Wattam AR

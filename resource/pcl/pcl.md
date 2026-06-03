@@ -76,6 +76,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -89,6 +91,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
@@ -104,6 +108,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-29: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -117,6 +123,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
@@ -132,6 +140,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -146,6 +156,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-05-31: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -159,6 +171,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-01: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
