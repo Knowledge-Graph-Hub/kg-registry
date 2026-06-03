@@ -65,6 +65,8 @@ products:
     returned HTTP 404 during curation on 2026-06-02.
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 405 error
+    when accessing file'
 publications:
 - authors:
   - Mallory J. Owen

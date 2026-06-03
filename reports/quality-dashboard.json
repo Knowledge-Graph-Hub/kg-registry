@@ -13529,7 +13529,6 @@
       "pd_st.obo",
       "pd_st.owl",
       "pgdso.owl",
-      "pharmacotherapydb.figshare",
       "pharos.api.docs",
       "pharos.docs",
       "phenio.model",
@@ -13709,7 +13708,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-06-02T22:34:46Z",
+  "generated_at": "2026-06-03T15:18:59Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 147,
     "with_evaluation_page": 128,
@@ -13717,10 +13716,10 @@
   },
   "links": {
     "broken_urls": 458,
-    "cache_hits": 113,
+    "cache_hits": 3823,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 3365,
-    "live_checked_urls": 3710,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 3823,
     "unchecked_urls": 0
@@ -13729,7 +13728,7 @@
     "missing_format": 843,
     "missing_original_source": 8,
     "missing_product_url": 96,
-    "retrieval_warning_mentions": 455,
+    "retrieval_warning_mentions": 807,
     "total": 6663
   },
   "resource_count": 846,
@@ -13789,152 +13788,152 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/eukaryotes.cdna.fa.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/group-descriptions.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-ensembl.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-entrez.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-go.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-groups.orthoXML.xml.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-groups.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-hogs.orthoXML.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-pairs.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-protein-annotations.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-rdf-turtle.tgz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-refseq.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-seqs.fa.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-seqs.seqxml.tgz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-uniprot.txt.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/OmaServer.h5"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/OmaServer.h5.idx"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/prokaryotes.cdna.fa.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/viruses.cdna.fa.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/api/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/oma/"
         }
@@ -13964,69 +13963,69 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://amigo.geneontology.org/amigo"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-go.txt.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -14061,56 +14060,56 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://redrugs.tw.rpi.edu/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://redrugs.tw.rpi.edu/api/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://go.drugbank.com/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://pathbank.org/pathwhiz/pathways"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.drugbank.com/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.drugbank.com/clinical"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -14145,26 +14144,26 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -14205,49 +14204,49 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_genes.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/current/download/odb12v1_species.tab.gz"
         },
@@ -14259,7 +14258,7 @@
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/zdobnov-lab/orthodb"
         }
@@ -14295,70 +14294,70 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-base.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-base.obo"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-base.owl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-full.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-full.obo"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-full.owl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-simple.json"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-simple.obo"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl-simple.owl"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://purl.obolibrary.org/obo/pcl.json"
         }
@@ -14394,58 +14393,58 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://juniper.health.unm.edu/tcrd/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://juniper.health.unm.edu/tcrd/download/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://omabrowser.org/All/oma-uniprot.txt.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -14475,39 +14474,39 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://juniper.health.unm.edu/tcrd/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://juniper.health.unm.edu/tcrd/download/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }
@@ -14543,51 +14542,51 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://juniper.health.unm.edu/tcrd/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "http://juniper.health.unm.edu/tcrd/download/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://redrugs.tw.rpi.edu/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "http://redrugs.tw.rpi.edu/api/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.omim.org/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://www.omim.org/api"
         }
@@ -14622,51 +14621,51 @@
       "broken_links": [
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/datasets/AFCS.zip"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://hpidb.igbb.msstate.edu/"
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://rnacentral.org/"
         },
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.genecards.org/"
         }

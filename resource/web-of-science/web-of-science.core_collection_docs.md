@@ -9,8 +9,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: web-of-science
 product_url: https://webofscience.help.clarivate.com/Content/wos-core-collection/wos-core-collection.htm
-warnings:
-- File was not able to be retrieved when checked on 2026-06-02_ HTTP 403 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

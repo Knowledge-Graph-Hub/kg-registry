@@ -11,8 +11,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: bv-brc
 product_url: https://www.bv-brc.org/docs/quick_start/data_functionality_overview.html
-warnings:
-- File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

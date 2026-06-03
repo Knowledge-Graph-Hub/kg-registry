@@ -460,10 +460,12 @@ products:
     source: gtex
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Neo4j knowledge graph integrating transcription factor target libraries,
     coexpression networks, and benchmark datasets used by the ChEA3 resource
@@ -776,6 +778,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -783,8 +787,8 @@ products:
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -833,6 +837,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -840,8 +846,8 @@ products:
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: GP-KG tab-delimited knowledge graph containing 1,246,726 associations
     between 61,146 entities from multiple genotypic and phenotypic databases

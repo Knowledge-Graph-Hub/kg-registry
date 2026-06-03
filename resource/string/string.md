@@ -2600,10 +2600,12 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -3058,6 +3060,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -3065,8 +3069,8 @@ products:
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -3115,6 +3119,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -3122,8 +3128,8 @@ products:
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Interactive web interface for browsing and analyzing iModulons across
     15 prokaryotic organisms with 22 datasets, 1924 curated iModulons, and 9576 expression

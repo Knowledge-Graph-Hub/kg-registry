@@ -407,10 +407,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-06-02: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-03: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1455,6 +1457,8 @@ products:
     returned HTTP 404 during curation on 2026-06-02.
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 405 error
+    when accessing file'
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -1495,6 +1499,8 @@ products:
     source: pubchem
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 publications:
 - authors:

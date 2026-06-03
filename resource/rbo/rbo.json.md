@@ -11,5 +11,7 @@ product_url: http://purl.obolibrary.org/obo/rbo.json
 warnings:
 - File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
   accessing file
+- File was not able to be retrieved when checked on 2026-06-02_ Timeout connecting
+  to URL
 layout: product_detail
 ---

@@ -2017,6 +2017,8 @@ products:
     returned HTTP 404 during curation on 2026-06-02.
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 405 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 405 error
+    when accessing file'
 - category: ProcessProduct
   description: Active GitHub repository for MeDI/medic medicines, diseases, indications,
     and contraindications data and processing code

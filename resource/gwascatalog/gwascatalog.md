@@ -679,10 +679,12 @@ products:
     source: gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Neo4j graph database integrating Enrichr gene set libraries with genes,
     terms, pathways, diseases, drugs, cell types, and other functional annotations
@@ -1387,6 +1389,8 @@ products:
     source: omim
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-02: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
 - category: Product
   compression: zip
