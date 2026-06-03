@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataSource
+category: Aggregator
 contacts:
   - category: Organization
     contact_details:
@@ -10,7 +10,7 @@ contacts:
         value: https://labs.icahn.mssm.edu/maayanlab/
     label: Ma'ayan Laboratory
 creation_date: '2026-06-02T00:00:00Z'
-description: Harmonizome is a collection of processed datasets gathered from diverse online resources to serve and mine knowledge about genes and proteins across many functional genomics, proteomics, disease, drug, and pathway domains.
+description: Harmonizome is an aggregator of processed gene and protein datasets from diverse online biomedical resources. Harmonizome 3.0 reports 114,997,358 associations among 58,935 genes and 518,340 attributes from 172 datasets provided by 87 resources.
 domains:
   - biomedical
   - genomics
@@ -42,8 +42,97 @@ products:
       - relation_type: prov:hadPrimarySource
         source: harmonizome
     product_url: https://maayanlab.cloud/Harmonizome/download
+    secondary_source:
+      - relation_type: prov:wasDerivedFrom
+        source: achilles
+      - relation_type: prov:wasDerivedFrom
+        source: biogps
+      - relation_type: prov:wasDerivedFrom
+        source: ccle
+      - relation_type: prov:wasDerivedFrom
+        source: cellmarker
+      - relation_type: prov:wasDerivedFrom
+        source: chea
+      - relation_type: prov:wasDerivedFrom
+        source: clinvar
+      - relation_type: prov:wasDerivedFrom
+        source: cmap
+      - relation_type: prov:wasDerivedFrom
+        source: compartments
+      - relation_type: prov:wasDerivedFrom
+        source: corum
+      - relation_type: prov:wasDerivedFrom
+        source: cosmic
+      - relation_type: prov:wasDerivedFrom
+        source: ctd
+      - relation_type: prov:wasDerivedFrom
+        source: depmap
+      - relation_type: prov:wasDerivedFrom
+        source: diseases
+      - relation_type: prov:wasDerivedFrom
+        source: disgenet
+      - relation_type: prov:wasDerivedFrom
+        source: drugbank
+      - relation_type: prov:wasDerivedFrom
+        source: encode
+      - relation_type: prov:wasDerivedFrom
+        source: gdsc
+      - relation_type: prov:wasDerivedFrom
+        source: geo
+      - relation_type: prov:wasDerivedFrom
+        source: glygen
+      - relation_type: prov:wasDerivedFrom
+        source: go
+      - relation_type: prov:wasDerivedFrom
+        source: gtex
+      - relation_type: prov:wasDerivedFrom
+        source: gwascatalog
+      - relation_type: prov:wasDerivedFrom
+        source: hmdb
+      - relation_type: prov:wasDerivedFrom
+        source: hp
+      - relation_type: prov:wasDerivedFrom
+        source: hpa
+      - relation_type: prov:wasDerivedFrom
+        source: hubmap
+      - relation_type: prov:wasDerivedFrom
+        source: impc
+      - relation_type: prov:wasDerivedFrom
+        source: interpro
+      - relation_type: prov:wasDerivedFrom
+        source: kegg
+      - relation_type: prov:wasDerivedFrom
+        source: lincs-l1000
+      - relation_type: prov:wasDerivedFrom
+        source: mirtarbase
+      - relation_type: prov:wasDerivedFrom
+        source: motrpac
+      - relation_type: prov:wasDerivedFrom
+        source: mp
+      - relation_type: prov:wasDerivedFrom
+        source: msigdb
+      - relation_type: prov:wasDerivedFrom
+        source: omim
+      - relation_type: prov:wasDerivedFrom
+        source: panther
+      - relation_type: prov:wasDerivedFrom
+        source: pathway-commons
+      - relation_type: prov:wasDerivedFrom
+        source: pfocr
+      - relation_type: prov:wasDerivedFrom
+        source: phosphositeplus
+      - relation_type: prov:wasDerivedFrom
+        source: pid
+      - relation_type: prov:wasDerivedFrom
+        source: reactome
+      - relation_type: prov:wasDerivedFrom
+        source: tcga
+      - relation_type: prov:wasDerivedFrom
+        source: tissues
+      - relation_type: prov:wasDerivedFrom
+        source: wikipathways
   - category: DocumentationProduct
-    description: Harmonizome documentation describing dataset pages, API access, downloads, and the Harmonizome-KG API and graph serialization.
+    description: Harmonizome documentation describing dataset pages, API access, downloads, and the Harmonizome knowledge graph API and graph serialization.
     id: harmonizome.documentation
     name: Harmonizome Documentation
     original_source:
@@ -51,44 +140,124 @@ products:
         source: harmonizome
     product_url: https://maayanlab.cloud/Harmonizome/documentation
   - category: GraphicalInterface
-    description: Interactive web interface for exploring the Harmonizome knowledge graph with gene-centric network visualization
+    description: Interactive web interface for exploring the Harmonizome knowledge graph with gene-centric network visualization.
     format: http
-    id: harmonizome-kg.portal
-    name: Harmonizome-KG Explorer
+    id: harmonizome.kg-portal
+    name: Harmonizome Knowledge Graph Explorer
     original_source:
       - relation_type: prov:hadPrimarySource
-        source: harmonizome-kg
-    product_url: https://harmonizome-kg.maayanlab.cloud/
-    secondary_source:
-      - relation_type: prov:wasDerivedFrom
         source: harmonizome
+    product_url: https://harmonizome-kg.maayanlab.cloud/
   - category: ProgrammingInterface
     connection_url: https://harmonizome-kg.maayanlab.cloud/api/knowledge_graph
-    description: API endpoint for programmatic access to Harmonizome-KG neighborhoods, with filter parameters documented in the Harmonizome knowledge graph API guide
+    description: API endpoint for programmatic access to Harmonizome knowledge graph neighborhoods, with filter parameters documented in the Harmonizome knowledge graph API guide.
     format: json
-    id: harmonizome-kg.api
-    name: Harmonizome-KG API
+    id: harmonizome.kg-api
+    name: Harmonizome Knowledge Graph API
     original_source:
       - relation_type: prov:hadPrimarySource
-        source: harmonizome-kg
-    product_url: https://maayanlab.cloud/Harmonizome/documentation#kg-api
-    secondary_source:
-      - relation_type: prov:wasDerivedFrom
         source: harmonizome
+    product_url: https://maayanlab.cloud/Harmonizome/documentation#kg-api
   - category: GraphProduct
-    description: Neo4j knowledge graph serialization of Harmonizome processed datasets, including genes, attributes, resources, datasets, and gene-attribute associations
+    description: Neo4j knowledge graph serialization of Harmonizome processed datasets, including genes, attributes, resources, datasets, and gene-attribute associations.
     dump_format: neo4j
     format: neo4j
-    id: harmonizome-kg.graph
+    id: harmonizome.kg-neo4j
     latest_version: '3.0'
-    name: Harmonizome-KG Neo4j Database
+    name: Harmonizome Knowledge Graph Neo4j Database
     original_source:
       - relation_type: prov:hadPrimarySource
-        source: harmonizome-kg
+        source: harmonizome
     product_url: https://harmonizome-kg.maayanlab.cloud/
     secondary_source:
       - relation_type: prov:wasDerivedFrom
-        source: harmonizome
+        source: achilles
+      - relation_type: prov:wasDerivedFrom
+        source: biogps
+      - relation_type: prov:wasDerivedFrom
+        source: ccle
+      - relation_type: prov:wasDerivedFrom
+        source: cellmarker
+      - relation_type: prov:wasDerivedFrom
+        source: chea
+      - relation_type: prov:wasDerivedFrom
+        source: clinvar
+      - relation_type: prov:wasDerivedFrom
+        source: cmap
+      - relation_type: prov:wasDerivedFrom
+        source: compartments
+      - relation_type: prov:wasDerivedFrom
+        source: corum
+      - relation_type: prov:wasDerivedFrom
+        source: cosmic
+      - relation_type: prov:wasDerivedFrom
+        source: ctd
+      - relation_type: prov:wasDerivedFrom
+        source: depmap
+      - relation_type: prov:wasDerivedFrom
+        source: diseases
+      - relation_type: prov:wasDerivedFrom
+        source: disgenet
+      - relation_type: prov:wasDerivedFrom
+        source: drugbank
+      - relation_type: prov:wasDerivedFrom
+        source: encode
+      - relation_type: prov:wasDerivedFrom
+        source: gdsc
+      - relation_type: prov:wasDerivedFrom
+        source: geo
+      - relation_type: prov:wasDerivedFrom
+        source: glygen
+      - relation_type: prov:wasDerivedFrom
+        source: go
+      - relation_type: prov:wasDerivedFrom
+        source: gtex
+      - relation_type: prov:wasDerivedFrom
+        source: gwascatalog
+      - relation_type: prov:wasDerivedFrom
+        source: hmdb
+      - relation_type: prov:wasDerivedFrom
+        source: hp
+      - relation_type: prov:wasDerivedFrom
+        source: hpa
+      - relation_type: prov:wasDerivedFrom
+        source: hubmap
+      - relation_type: prov:wasDerivedFrom
+        source: impc
+      - relation_type: prov:wasDerivedFrom
+        source: interpro
+      - relation_type: prov:wasDerivedFrom
+        source: kegg
+      - relation_type: prov:wasDerivedFrom
+        source: lincs-l1000
+      - relation_type: prov:wasDerivedFrom
+        source: mirtarbase
+      - relation_type: prov:wasDerivedFrom
+        source: motrpac
+      - relation_type: prov:wasDerivedFrom
+        source: mp
+      - relation_type: prov:wasDerivedFrom
+        source: msigdb
+      - relation_type: prov:wasDerivedFrom
+        source: omim
+      - relation_type: prov:wasDerivedFrom
+        source: panther
+      - relation_type: prov:wasDerivedFrom
+        source: pathway-commons
+      - relation_type: prov:wasDerivedFrom
+        source: pfocr
+      - relation_type: prov:wasDerivedFrom
+        source: phosphositeplus
+      - relation_type: prov:wasDerivedFrom
+        source: pid
+      - relation_type: prov:wasDerivedFrom
+        source: reactome
+      - relation_type: prov:wasDerivedFrom
+        source: tcga
+      - relation_type: prov:wasDerivedFrom
+        source: tissues
+      - relation_type: prov:wasDerivedFrom
+        source: wikipathways
 publications:
   - authors:
       - Ido Diamant
@@ -124,6 +293,13 @@ taxon:
 # Harmonizome
 
 Harmonizome integrates processed datasets about genes and proteins from many
-online biological resources. Harmonizome 3.0 adds updated dataset pages,
-downloadable association files, and knowledge graph serializations used by
-Harmonizome-KG.
+online biological resources. Harmonizome 3.0 reports 172 datasets from 87
+resources; the current download table displays source labels including Achilles,
+Allen Brain Atlas, BioGPS, CCLE, ChEA, ClinVar, CTD, DepMap, DisGeNET, DrugBank,
+ENCODE, GEO, GO, GTEx, GWAS Catalog, HPA, KEGG, MSigDB, Pathway Commons,
+PhosphoSitePlus, Reactome, TCGA, HuBMAP, WikiPathways, and many additional
+experimental, literature-derived, and pathway resources.
+
+The Harmonizome knowledge graph portal, API, and Neo4j serialization are treated
+as products of this Harmonizome resource rather than as a separate
+`harmonizome-kg` resource.
