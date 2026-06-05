@@ -134,8 +134,19 @@ layout: default
             <p class="card-text">
               {% for domain in page.domains %}
               {% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[domain] %}
+              {% if domain_desc.meaning %}
+              {% assign meaning_parts = domain_desc.meaning | split: ":" %}
+              {% assign meaning_prefix = meaning_parts[0] %}
+              {% assign meaning_id = meaning_parts[1] %}
+              {% if meaning_prefix == "MESH" %}{% assign meaning_url = "https://meshb.nlm.nih.gov/record/ui?ui=" | append: meaning_id %}
+              {% elsif meaning_prefix == "NCIT" %}{% assign meaning_url = "http://purl.obolibrary.org/obo/NCIT_" | append: meaning_id %}
+              {% else %}{% assign meaning_url = "" %}{% endif %}
+              <a href="{{ meaning_url }}" target="_blank" rel="noopener" title="{{ domain_desc.description }} (maps to {{ domain_desc.meaning }})" style="text-decoration: underline dotted; cursor: help;">{{
+                domain }}</a>{% unless forloop.last %}, {% endunless %}
+              {% else %}
               <span title="{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{
                 domain }}</span>{% unless forloop.last %}, {% endunless %}
+              {% endif %}
               {% endfor %}
             </p>
           </div>
