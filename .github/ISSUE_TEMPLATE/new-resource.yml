@@ -89,17 +89,14 @@ body:
         - biomedical
         - chemistry and biochemistry
         - clinical
-        - digital health
         - drug discovery
         - environment
+        - general
         - genomics
-        - health
         - immunology
         - information technology
-        - investigations
         - literature
         - medical imaging
-        - microbiome
         - microbiology
         - neuroscience
         - nutrition
@@ -111,12 +108,8 @@ body:
         - precision medicine
         - proteomics
         - public health
-        - simulation
-        - social determinants
         - systems biology
-        - synthetic biology
-        - translational
-        - upper
+        - toxicology
     validations:
       required: false
 

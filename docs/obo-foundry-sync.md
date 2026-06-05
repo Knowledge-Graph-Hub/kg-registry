@@ -78,15 +78,15 @@ OBO Foundry domains are mapped to KG-Registry domains as follows:
 - `anatomy and development` → `anatomy and development`
 - `biological systems` → `biological systems`
 - `chemistry and biochemistry` → `chemistry and biochemistry`
-- `diet, metabolomics, and nutrition` → `chemistry and biochemistry`
+- `diet, metabolomics, and nutrition` → `nutrition`
 - `health` → `biomedical`
-- `information` → `biomedical`
-- `information technology` → `biomedical`
-- `investigations` → `biomedical`
-- `organisms` → `biological systems`
-- `phenotype` → `biological systems`
-- `simulation` → `biological systems`
-- `upper` → `biological systems`
+- `information` → `information technology`
+- `information technology` → `information technology`
+- `investigations` → `general`
+- `organisms` → `organisms`
+- `phenotype` → `phenotype`
+- `simulation` → `information technology`
+- `upper` → `general`
 - `environment` → `environment`
 - `agriculture` → `agriculture`
 

@@ -48,20 +48,44 @@ This Resource combines multiple data sources.
 
 ## Domains
 
-Resources may cover one of the following domains:
+Each Resource is annotated with one or more domains describing the kinds of
+information it provides. Wherever possible a domain maps to a concept in an
+external controlled vocabulary — the Medical Subject Headings (MeSH) or, where
+MeSH lacks a suitable concept, the NCI Thesaurus (NCIT). These mappings are
+recorded as the `meaning` of each value in `DomainEnum` and are shown as links
+on each Resource page.
 
-- **upper**: The upper-level domain, for general-purpose data representation and integration.
-- **anatomy and development**: The anatomy and development of organisms.
-- **health**: The health and diseases of organisms.
-- **phenotype**: The phenotypes of organisms.
-- **investigations**: Research investigations into specific topics.
-- **environment**: The environment and ecosystems.
-- **chemistry and biochemistry**: The chemical and biochemical sciences.
-- **microbiology**: The microbiological sciences.
-- **agriculture**: The agricultural sciences.
-- **nutrition**: The nutritional sciences, including diet and metabolomics.
-- **biological systems**: The biological sciences and systems.
-- **information technology**: The information technology sciences.
-- **organisms**: Specific organisms.
-- **simulation**: Simulation and modeling of specific phenomena.
-- **other**: Another domain not defined here.
+Resources may cover one or more of the following domains:
+
+| Domain | Description | Controlled vocabulary |
+| --- | --- | --- |
+| **agriculture** | Agricultural and food sciences, including crops, animals, plant science, and food production | [MeSH:D000383](https://meshb.nlm.nih.gov/record/ui?ui=D000383) |
+| **anatomy and development** | The anatomy, structure, and developmental biology of organisms | [MeSH:D000715](https://meshb.nlm.nih.gov/record/ui?ui=D000715) |
+| **biological systems** | The biological sciences broadly, where no more specific domain applies | [MeSH:D001690](https://meshb.nlm.nih.gov/record/ui?ui=D001690) |
+| **biomedical** | The biomedical sciences spanning health and disease | [MeSH:D035843](https://meshb.nlm.nih.gov/record/ui?ui=D035843) |
+| **chemistry and biochemistry** | The chemical and biochemical sciences | [MeSH:D002621](https://meshb.nlm.nih.gov/record/ui?ui=D002621) |
+| **clinical** | The clinical sciences, including trials, patient data, diagnosis, and treatment | [MeSH:D015510](https://meshb.nlm.nih.gov/record/ui?ui=D015510) |
+| **drug discovery** | Identification and development of new candidate medications | [MeSH:D055808](https://meshb.nlm.nih.gov/record/ui?ui=D055808) |
+| **environment** | The environment, ecosystems, ecology, and environmental health | [MeSH:D004777](https://meshb.nlm.nih.gov/record/ui?ui=D004777) |
+| **general** | Broadly applicable, cross-domain, or upper-level resources | — |
+| **genomics** | The study of genomes, including structure, function, mapping, and editing | [MeSH:D023281](https://meshb.nlm.nih.gov/record/ui?ui=D023281) |
+| **immunology** | The study of the immune system and its disorders | [MeSH:D000486](https://meshb.nlm.nih.gov/record/ui?ui=D000486) |
+| **information technology** | Informatics, software, computational methods, simulation, and digital health | [MeSH:D000073256](https://meshb.nlm.nih.gov/record/ui?ui=D000073256) |
+| **literature** | The literature and publications of a domain | [MeSH:D011642](https://meshb.nlm.nih.gov/record/ui?ui=D011642) |
+| **medical imaging** | Techniques for visual representation of the body for clinical analysis | [MeSH:D003952](https://meshb.nlm.nih.gov/record/ui?ui=D003952) |
+| **microbiology** | The microbiological sciences, including microbiomes | [MeSH:D008829](https://meshb.nlm.nih.gov/record/ui?ui=D008829) |
+| **neuroscience** | The study of the nervous system and its disorders | [MeSH:D009488](https://meshb.nlm.nih.gov/record/ui?ui=D009488) |
+| **nutrition** | The nutritional sciences, including diet and metabolomics | [MeSH:D052756](https://meshb.nlm.nih.gov/record/ui?ui=D052756) |
+| **organisms** | Specific organisms or taxa | [NCIT:C14250](http://purl.obolibrary.org/obo/NCIT_C14250) |
+| **pathways** | Biological pathways: metabolic, signaling, and regulatory networks | [MeSH:D053858](https://meshb.nlm.nih.gov/record/ui?ui=D053858) |
+| **pharmacology** | How drugs interact with biological systems | [MeSH:D010600](https://meshb.nlm.nih.gov/record/ui?ui=D010600) |
+| **phenotype** | The phenotypes of organisms | [MeSH:D010641](https://meshb.nlm.nih.gov/record/ui?ui=D010641) |
+| **precision medicine** | Treatment/prevention accounting for individual variability | [MeSH:D057285](https://meshb.nlm.nih.gov/record/ui?ui=D057285) |
+| **proteomics** | The large-scale study of proteins | [MeSH:D040901](https://meshb.nlm.nih.gov/record/ui?ui=D040901) |
+| **public health** | Population health, epidemiology, and social determinants of health | [MeSH:D011634](https://meshb.nlm.nih.gov/record/ui?ui=D011634) |
+| **systems biology** | Computational/mathematical analysis of complex biological systems | [MeSH:D049490](https://meshb.nlm.nih.gov/record/ui?ui=D049490) |
+| **toxicology** | The adverse effects of chemicals on living organisms | [MeSH:D014116](https://meshb.nlm.nih.gov/record/ui?ui=D014116) |
+| **other** | Another domain not defined here | — |
+
+(The `stub` value is reserved for auto-generated placeholder pages and is not a
+subject-matter domain.)
