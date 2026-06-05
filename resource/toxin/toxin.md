@@ -8,7 +8,7 @@ contacts:
     contact_details:
       - contact_type: url
         value: https://toxin-search.netlify.app/
-    label: TOXIN Project Team
+    label: Department of In Vitro Toxicology and Dermato-Cosmetology (IVTD), Vrije Universiteit Brussel
 creation_date: '2025-08-31T00:00:00Z'
 description: TOXIN is a knowledge graph resource integrating curated information about toxic compounds, their molecular targets, mechanisms, pathways, and associated phenotypic or clinical outcomes to facilitate toxicological risk assessment and mechanistic discovery.
 domains:
@@ -17,8 +17,11 @@ domains:
   - systems biology
 homepage_url: https://toxin-search.netlify.app/
 id: toxin
-last_modified_date: '2025-08-31T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 name: TOXIN
 products:
   - category: GraphicalInterface
@@ -34,8 +37,8 @@ publications:
   - id: https://doi.org/10.1093/database/baae121
     journal: Database (Oxford)
     preferred: true
-    title: 'TOXIN: an integrative knowledge graph for toxic compound mechanisms and outcomes'
-    year: '2024'
+    title: 'The TOXIN knowledge graph: supporting animal-free risk assessment of cosmetics'
+    year: '2025'
 taxon:
   - NCBITaxon:9606
 ---
