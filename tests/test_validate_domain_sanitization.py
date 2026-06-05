@@ -21,7 +21,7 @@ name: Temp Resource
 domains:
   - biomedical
   - potatosalad
-  - health
+  - genomics
 publications:
   - title: Example Pub
     id: https://doi.org/10.1000/xyz123
@@ -44,4 +44,4 @@ Content
         meta = yaml.safe_load(parts[1])
 
         # Expect invalid domain removed, valid remain in original order minus invalids
-        assert meta.get("domains") == ["biomedical", "health"]
+        assert meta.get("domains") == ["biomedical", "genomics"]
