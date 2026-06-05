@@ -47,6 +47,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: Product
   description: PhosPhAt protein-with-motif CSV dataset for Arabidopsis phosphoproteins
     and motif annotations.
@@ -60,6 +62,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: ProcessProduct
   description: PhosPhAt plant-specific phosphorylation-site predictor trained on the
     experimental Arabidopsis serine, threonine, and tyrosine phosphorylation dataset.
@@ -71,6 +75,8 @@ products:
   product_url: https://phosphat.uni-hohenheim.de/phosphat.html
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,

@@ -15,5 +15,8 @@ secondary_source:
   source: pubmed
 - relation_type: prov:wasDerivedFrom
   source: uniprot
+warnings:
+- File was not able to be retrieved when checked on 2026-06-03_ HTTP 500 error when
+  accessing file
 layout: product_detail
 ---

@@ -142,6 +142,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: Product
   description: PRS Atlas results using the P less than 5e-08 polygenic risk score
     threshold, archived by Dryad
@@ -159,6 +161,8 @@ products:
     source: ukbiobank
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 publications:
 - authors:

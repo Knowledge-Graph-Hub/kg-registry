@@ -56,6 +56,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 502 error
+    when accessing file'
 - category: GraphProduct
   description: RDF knowledge graph materialized by the MetaBoKG workflow from public
     metabolomics repository outputs, GNPS molecular-networking jobs, annotation evidence,

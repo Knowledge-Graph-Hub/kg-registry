@@ -215,10 +215,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
     Orphanet, DisGeNET and other disease databases
@@ -240,10 +242,12 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -2006,6 +2010,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -2013,8 +2019,8 @@ products:
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -2063,6 +2069,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -2070,8 +2078,8 @@ products:
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Web-based interface for browsing and querying rare disease annotations
     including phenotypes, symptoms, genes, and genotypes with tree-structured disease
@@ -2196,6 +2204,8 @@ products:
     source: omim
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
@@ -2504,6 +2514,8 @@ products:
     source: omim
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 publications:
 - id: https://doi.org/10.1093/nar/gky1151

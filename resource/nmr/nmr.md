@@ -38,6 +38,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-26: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 publications: []
 ---
 ## Description

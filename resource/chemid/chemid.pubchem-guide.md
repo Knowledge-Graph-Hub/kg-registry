@@ -10,5 +10,8 @@ product_url: https://www.nlm.nih.gov/toxnet/Accessing_ChemIDplus_Content_from_Pu
 secondary_source:
 - relation_type: prov:used
   source: pubchem
+warnings:
+- File was not able to be retrieved when checked on 2026-06-03_ No Content-Length
+  header found
 layout: product_detail
 ---

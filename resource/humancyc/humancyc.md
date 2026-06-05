@@ -2,18 +2,22 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://biocyc.org/
-    label: SRI International (BioCyc)
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://biocyc.org/
+  label: SRI International (BioCyc)
 creation_date: '2026-06-03T00:00:00Z'
-description: HumanCyc is an encyclopedic reference on human metabolic pathways, the human genome, and human metabolites. It is a Pathway/Genome Database (PGDB) within the BioCyc collection maintained by SRI International, computationally predicting the metabolic network of Homo sapiens and integrating genes, enzymes, reactions, compounds, and pathways with tools for omics analysis.
+description: HumanCyc is an encyclopedic reference on human metabolic pathways, the
+  human genome, and human metabolites. It is a Pathway/Genome Database (PGDB) within
+  the BioCyc collection maintained by SRI International, computationally predicting
+  the metabolic network of Homo sapiens and integrating genes, enzymes, reactions,
+  compounds, and pathways with tools for omics analysis.
 domains:
-  - pathways
-  - chemistry and biochemistry
-  - genomics
-  - systems biology
+- pathways
+- chemistry and biochemistry
+- genomics
+- systems biology
 homepage_url: https://humancyc.org/
 id: humancyc
 last_modified_date: '2026-06-05T00:00:00Z'
@@ -23,41 +27,357 @@ license:
   label: Subscription (tiered academic/commercial licensing)
 name: HumanCyc
 products:
-  - category: GraphicalInterface
-    description: Web interface for browsing and searching human metabolic pathways, genes, enzymes, reactions, and compounds within the BioCyc Pathway Tools environment.
-    format: http
-    id: humancyc.portal
-    name: HumanCyc Web Portal
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: humancyc
-    product_url: https://humancyc.org/
-    secondary_source:
-      - relation_type: prov:wasInfluencedBy
-        source: biocyc
-  - category: Product
-    description: Downloadable HumanCyc Pathway/Genome Database (PGDB) data, including pathways, reactions, enzymes, and compounds, available through the BioCyc download services.
-    format: mixed
-    id: humancyc.downloads
-    name: HumanCyc Data Downloads
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: humancyc
-    product_url: https://biocyc.org/download.shtml
-    secondary_source:
-      - relation_type: prov:wasInfluencedBy
-        source: biocyc
+- category: GraphicalInterface
+  description: Web interface for browsing and searching human metabolic pathways,
+    genes, enzymes, reactions, and compounds within the BioCyc Pathway Tools environment.
+  format: http
+  id: humancyc.portal
+  name: HumanCyc Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  product_url: https://humancyc.org/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: biocyc
+- category: Product
+  description: Downloadable HumanCyc Pathway/Genome Database (PGDB) data, including
+    pathways, reactions, enzymes, and compounds, available through the BioCyc download
+    services.
+  format: mixed
+  id: humancyc.downloads
+  name: HumanCyc Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  product_url: https://biocyc.org/download.shtml
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: biocyc
+- category: Product
+  compression: gzip
+  description: PC v14 integrated BioPAX Level 3 unified model containing normalized
+    pathway data, molecular interactions, cross-database entity mappings, and metadata-derived
+    content from 26 datasource rows.
+  format: biopax
+  id: pathwaycommons.biopax
+  name: Integrated BioPAX Model
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 1700903742
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-biopax.owl.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  description: Download directory for Pathway Commons PC v14 integrated pathway and
+    molecular interaction datasets, including BioPAX, SIF, GMT, TXT, and JSON-LD products.
+  format: mixed
+  id: pathwaycommons.downloads
+  name: Pathway Commons Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 Simple Interaction Format network file representing binary pairwise
+    molecular relationships integrated from Pathway Commons upstream datasource rows.
+  format: sif
+  id: pathwaycommons.sif
+  name: SIF Network Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 9810179
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.sif.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
+    derived from the integrated Pathway Commons pathway archive.
+  id: pathwaycommons.gmt
+  name: GMT Gene Set Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 262513
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.gmt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
+- category: Product
+  compression: gzip
+  description: PC v14 tab-delimited extended SIF node and edge file using HGNC-oriented
+    identifiers for integrated Pathway Commons interactions.
+  format: txt
+  id: pathwaycommons.txt
+  name: Extended SIF TXT Format
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  product_file_size: 115608500
+  product_url: https://download.baderlab.org/PathwayCommons/PC2/v14/pc-hgnc.txt.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: chebi
+  - relation_type: prov:wasDerivedFrom
+    source: uniprot
+  - relation_type: prov:wasDerivedFrom
+    source: unichem
+  - relation_type: prov:wasDerivedFrom
+    source: reactome
+  - relation_type: prov:wasDerivedFrom
+    source: pid
+  - relation_type: prov:wasDerivedFrom
+    source: phosphositeplus
+  - relation_type: prov:wasDerivedFrom
+    source: humancyc
+  - relation_type: prov:wasDerivedFrom
+    source: hprd
+  - relation_type: prov:wasDerivedFrom
+    source: panther
+  - relation_type: prov:wasDerivedFrom
+    source: dip
+  - relation_type: prov:wasDerivedFrom
+    source: biogrid
+  - relation_type: prov:wasDerivedFrom
+    source: intact
+  - relation_type: prov:wasDerivedFrom
+    source: bind
+  - relation_type: prov:wasDerivedFrom
+    source: corum
+  - relation_type: prov:wasDerivedFrom
+    source: msigdb
+  - relation_type: prov:wasDerivedFrom
+    source: mirtarbase
+  - relation_type: prov:wasDerivedFrom
+    source: drugbank
+  - relation_type: prov:wasDerivedFrom
+    source: reconx
+  - relation_type: prov:wasDerivedFrom
+    source: ctd
+  - relation_type: prov:wasDerivedFrom
+    source: kegg
+  - relation_type: prov:wasDerivedFrom
+    source: inoh
+  - relation_type: prov:wasDerivedFrom
+    source: netpath
+  - relation_type: prov:wasDerivedFrom
+    source: pathbank
+  - relation_type: prov:wasDerivedFrom
+    source: innatedb
+  - relation_type: prov:wasDerivedFrom
+    source: biofactoid
 publications:
-  - id: https://doi.org/10.1186/gb-2004-6-1-r2
-    journal: Genome Biology
-    title: Computational prediction of human metabolic pathways from the complete human genome
-    year: '2005'
+- id: https://doi.org/10.1186/gb-2004-6-1-r2
+  journal: Genome Biology
+  title: Computational prediction of human metabolic pathways from the complete human
+    genome
+  year: '2005'
 synonyms:
-  - HumanCyc
+- HumanCyc
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # HumanCyc
 
 ## Overview

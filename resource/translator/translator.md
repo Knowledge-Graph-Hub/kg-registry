@@ -905,10 +905,12 @@ products:
     source: translator
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
 - category: DocumentationProduct
   description: SmartAPI registry entry for the Multiomics Clinical Trials KP TRAPI
     1.5 endpoint.

@@ -41,6 +41,8 @@ products:
     source: plncdb
   product_url: http://plncdb.tobaccodb.org/
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-05-23: Error connecting
@@ -53,8 +55,8 @@ products:
     exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host=''plncdb.tobaccodb.org'',
     port=80): Failed to resolve ''plncdb.tobaccodb.org'' ([Errno -2] Name or service
     not known)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: JBrowse genome browser for visualizing lncRNA locations, expression
     patterns, and epigenetic modifications

@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: rlims-p
 product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf
+warnings:
+- File was not able to be retrieved when checked on 2026-06-03_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

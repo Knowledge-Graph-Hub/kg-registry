@@ -42,6 +42,7 @@ biobricks-pubchem-annotations,active,PASS
 biobricks-tox21,active,PASS
 biobricks-toxcast,active,PASS
 biocyc,active,PASS
+biofactoid,active,PASS
 biogps,active,PASS
 biogrid,active,PASS
 biohealth,active,PASS
@@ -271,6 +272,7 @@ glyconavi,active,PASS
 glyconnect,active,PASS
 glycordf,active,PASS
 glygen,active,PASS
+glytoucan,active,PASS
 gnbr,active,PASS
 gno,active,PASS
 gnps,active,PASS
@@ -306,6 +308,7 @@ hsapdv,active,PASS
 hso,active,PASS
 htn,active,PASS
 hubmap,active,PASS
+humancyc,active,PASS
 humannet,active,PASS
 huri,active,PASS
 hydrologykg,active,PASS
@@ -316,6 +319,7 @@ icd10cm,active,PASS
 icd11,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
+icgc,active,PASS
 ico,active,PASS
 iconclass,active,PASS
 identifier-mappings,active,PASS
@@ -579,6 +583,7 @@ rbo,active,PASS
 rdkg,active,PASS
 reacto,active,PASS
 reactome,active,PASS
+reconx,active,PASS
 rediportal,active,PASS
 redu,active,PASS
 refseq,active,PASS
@@ -767,6 +772,7 @@ hprd,inactive,PASS
 idomal,inactive,PASS
 iev,inactive,PASS
 imr,inactive,PASS
+inoh,orphaned,PASS
 ipr,inactive,PASS
 iproclass,inactive,PASS
 irefindex,inactive,PASS
@@ -784,6 +790,7 @@ mirgate,unresponsive,PASS
 mirnao,inactive,PASS
 miro,inactive,PASS
 mo,inactive,PASS
+netpath,orphaned,PASS
 nif_cell,inactive,PASS
 nif_dysfunction,inactive,PASS
 nif_grossanatomy,inactive,PASS

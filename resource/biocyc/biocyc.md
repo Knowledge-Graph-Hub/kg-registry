@@ -779,6 +779,33 @@ products:
     source: sra
   - relation_type: prov:wasInformedBy
     source: string
+- category: GraphicalInterface
+  description: Web interface for browsing and searching human metabolic pathways,
+    genes, enzymes, reactions, and compounds within the BioCyc Pathway Tools environment.
+  format: http
+  id: humancyc.portal
+  name: HumanCyc Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  product_url: https://humancyc.org/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: biocyc
+- category: Product
+  description: Downloadable HumanCyc Pathway/Genome Database (PGDB) data, including
+    pathways, reactions, enzymes, and compounds, available through the BioCyc download
+    services.
+  format: mixed
+  id: humancyc.downloads
+  name: HumanCyc Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  product_url: https://biocyc.org/download.shtml
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: biocyc
 taxon:
 - NCBITaxon:2759
 ---

@@ -53,6 +53,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: DocumentationProduct
   description: Vision help documentation describing Gemscript as the integrated drug
     dictionary used in Vision 3 prescribing workflows

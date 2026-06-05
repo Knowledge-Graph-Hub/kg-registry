@@ -115,10 +115,12 @@ products:
     source: gtex
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Harmonizome 3.0 processed dataset downloads, including dataset-specific
     association files and knowledge graph serialization downloads.

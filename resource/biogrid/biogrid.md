@@ -1094,10 +1094,12 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -2801,14 +2803,18 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biogrid
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: Error connecting
-    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
-    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
-    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - The HPIDB homepage failed to establish HTTP and HTTPS connections during curation
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-03: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Error connecting
+    to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
+    exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
+    port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
 - category: GraphProduct
   compression: gzip
   description: HumanNet-XC v3 functional gene network extended by co-citation, distributed
@@ -3277,8 +3283,8 @@ publications:
 - id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
-    \ protein, genetic, and chemical interactions"
+  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
+    genetic, and chemical interactions
   year: '2020'
 - id: https://doi.org/10.1093/nar/gky1079
   journal: Nucleic Acids Research
