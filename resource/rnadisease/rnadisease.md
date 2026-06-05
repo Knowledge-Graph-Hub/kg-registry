@@ -7,7 +7,6 @@ description: RNADisease is a database of RNA-disease associations including mult
 domains:
 - biomedical
 - genomics
-- health
 homepage_url: http://www.rnadisease.org/
 id: rnadisease
 last_modified_date: '2026-05-29T00:00:00Z'

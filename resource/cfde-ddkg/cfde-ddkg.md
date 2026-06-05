@@ -9,7 +9,7 @@ contacts:
     label: John Erol Evangelista
 description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.The Data Distillery project aims to integrate summarized (“distilled”) Common Fund data within a knowledge graph. The purpose of the Data Distillery Knowledge Graph (DDKG) is to link multiple sources of expertly curated data, thus providing data integration across multiple Common Fund data coordinating centers (DCCs).
 domains:
-  - health
+  - biomedical
 homepage_url: https://dd-kg-ui.cfde.cloud/about
 id: cfde-ddkg
 last_modified_date: '2026-05-27T00:00:00Z'

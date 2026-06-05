@@ -5,7 +5,6 @@ creation_date: '2026-04-06T00:00:00Z'
 description: HALD (Human Aging and Longevity Database) is a human aging and longevity knowledge graph generated from text-mined PubMed literature and organized around entities, relations, and biomarkers relevant to aging and longevity research.
 domains:
   - biomedical
-  - health
   - literature
   - precision medicine
 homepage_url: https://bis.zju.edu.cn/hald

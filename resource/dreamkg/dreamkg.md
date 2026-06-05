@@ -19,8 +19,8 @@ contacts:
 description: Develop Dynamic, REsponsive, Adaptive, and Multifaceted Knowledge Graphs
   to Address Homelessness With Explainable AI
 domains:
-- social determinants
-- health
+- public health
+- biomedical
 homepage_url: https://dreamkg.com/
 id: dreamkg
 layout: resource_detail

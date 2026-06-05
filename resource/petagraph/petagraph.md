@@ -18,7 +18,6 @@ contacts:
     label: Taylor Research Lab
 description: Petagraph is a large-scale biomedical knowledge graph that encompasses over 32 million nodes and 118 million relationships, integrating multi-omics and clinical data. Built on the Unified Biomedical Knowledge Graph (UBKG), Petagraph leverages more than 180 ontologies and standards to embed millions of quantitative genomics data points within a richly connected annotation environment.
 domains:
-  - health
   - biomedical
   - genomics
 homepage_url: https://github.com/TaylorResearchLab/Petagraph

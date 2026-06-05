@@ -16,6 +16,8 @@ prefixes:
   linkml: https://w3id.org/linkml/
   dcterms: http://purl.org/dc/terms/
   prov: http://www.w3.org/ns/prov#
+  MESH: http://id.nlm.nih.gov/mesh/
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
 
 default_prefix: kgr
 default_range: string
@@ -880,84 +882,105 @@ enums:
 
   DomainEnum:
     description: >-
-      A domain that a resource is relevant to.
+      A domain that a resource is relevant to. Each domain maps,
+      where possible, to a concept in an external controlled
+      vocabulary (Medical Subject Headings, MeSH; or the NCI
+      Thesaurus, NCIT) via the permissible value's `meaning`.
     permissible_values:
       agriculture:
         description: >-
-          The agricultural sciences.
+          The agricultural and food sciences, including crop and
+          animal production, plant science, and food production,
+          processing, and preservation.
+        meaning: MESH:D000383
       anatomy and development:
         description: >-
-          The anatomy and development of organisms.
+          The anatomy and development of organisms, including their
+          structure, morphology, and developmental biology.
+        meaning: MESH:D000715
       biological systems:
         description: >-
-          The biological sciences and systems.
+          The biological sciences broadly, including cellular and
+          molecular biology and other biological disciplines not
+          better described by a more specific domain.
+        meaning: MESH:D001690
       biomedical:
         description: >-
-          The biomedical sciences, including the study of
-          biological systems and their interactions.
+          The biomedical sciences broadly, spanning the study of
+          biological systems in the context of health and disease.
+          Use a more specific domain (e.g., clinical) where one applies.
+        meaning: MESH:D035843
       chemistry and biochemistry:
         description: >-
-          The chemical and biochemical sciences.
+          The chemical and biochemical sciences, including the
+          structure, properties, and reactions of chemical compounds.
+        meaning: MESH:D002621
       clinical:
         description: >-
-          The clinical sciences, including clinical trials and
-          patient data.
-      digital health:
-        description: >-
-          The use of digital technologies for healthcare, including telemedicine,
-          wearable devices, health information technology, and personalized medicine.
+          The clinical sciences concerned with the care of patients,
+          including clinical trials, patient data, and diagnosis and
+          treatment of disease.
+        meaning: MESH:D015510
       drug discovery:
         description: >-
           The process of identifying and developing new candidate medications, including
           target identification, validation, and compound screening.
+        meaning: MESH:D055808
       environment:
         description: >-
-          The environment and ecosystems.
+          The environment and ecosystems, including ecology and
+          environmental health.
+        meaning: MESH:D004777
       general:
         description: >-
           A general domain, not specific to any other category.
-          It concerns resources that are broadly applicable across multiple domains.
+          It concerns resources that are broadly applicable across
+          multiple domains, including upper-level and cross-domain
+          resources.
       genomics:
         description: >-
-          The study of genomes, including genome structure, evolution, 
+          The study of genomes, including genome structure, evolution,
           function, mapping, and editing.
-      health:
-        description: >-
-          The health and diseases of organisms.
+        meaning: MESH:D023281
       immunology:
         description: >-
           The study of the immune system, including its structure and function,
           disorders, and therapeutic applications.
+        meaning: MESH:D000486
       information technology:
         description: >-
-          The information technology sciences.
-      investigations:
-        description: >-
-          Research investigations into specific topics.
+          The information technology and informatics sciences,
+          including software, computational methods, simulation and
+          modeling, and digital health technologies.
+        meaning: MESH:D000073256
       literature:
         description: >-
           The literature and publications of a domain.
+        meaning: MESH:D011642
       medical imaging:
         description: >-
           Techniques and processes for creating visual representations of the interior
           of a body for clinical analysis and medical intervention.
-      microbiome:
-        description: >-
-          The study of microbial communities, their genomes, and their
-          influence on hosts and environments.
+        meaning: MESH:D003952
       microbiology:
         description: >-
-          The microbiological sciences.
+          The microbiological sciences, including the study of microbial
+          communities (microbiomes) and their influence on hosts and
+          environments.
+        meaning: MESH:D008829
       neuroscience:
         description: >-
-          The scientific study of the nervous system, including 
+          The scientific study of the nervous system, including
           brain structure, function, and disorders.
+        meaning: MESH:D009488
       nutrition:
         description: >-
           The nutritional sciences, including diet and metabolomics.
+        meaning: MESH:D052756
       organisms:
         description: >-
-          Specific organisms.
+          Specific organisms or taxa.
+        meaning: NCIT:C14250
       other:
         description: >-
           Another domain not defined here.
@@ -965,59 +988,41 @@ enums:
         description: >-
           Biological pathways, including metabolic, signaling, and regulatory networks
           that control cellular processes.
+        meaning: MESH:D053858
       pharmacology:
         description: >-
-          The study of how drugs interact with biological systems, including 
+          The study of how drugs interact with biological systems, including
           drug discovery, development, and therapeutic uses.
+        meaning: MESH:D010600
       phenotype:
         description: >-
           The phenotypes of organisms.
+        meaning: MESH:D010641
       precision medicine:
         description: >-
           An approach to disease treatment and prevention that takes into account
           individual variability in genes, environment, and lifestyle.
+        meaning: MESH:D057285
       proteomics:
         description: >-
-          The large-scale study of proteins, their structures, 
+          The large-scale study of proteins, their structures,
           functions, and interactions.
+        meaning: MESH:D040901
       public health:
         description: >-
-          The science of protecting and improving the health of people and their 
-          communities, including epidemiology and population health.
-      simulation:
-        description: >-
-          Simulation and modeling of specific phenomena.
-      social determinants:
-        description: >-
-          The social, economic, and environmental factors that influence health outcomes
-          and contribute to health disparities.
+          The science of protecting and improving the health of people and their
+          communities, including epidemiology, population health, and the social
+          determinants of health.
+        meaning: MESH:D011634
       systems biology:
         description: >-
           The computational and mathematical analysis of complex biological systems
           and their interactions.
-      synthetic biology:
-        description: >-
-          The design and construction of new biological parts, devices, and systems,
-          or the redesign of existing natural biological systems.
+        meaning: MESH:D049490
       toxicology:
         description: >-
           The study of the adverse effects of chemicals on living organisms.
-      translational:
-        description: >-
-          The translational sciences, including the translation
-          of research into practice.
-      upper:
-        description: >-
-          The upper-level domain, for general-purpose data
-          representation and integration.
-      food science:
-        description: >-
-          The study of food, including its production, processing,
-          preservation, and consumption.
-      plant science:
-        description: >-
-          The study of plants, including their biology, ecology,
-          and interactions with the environment.
+        meaning: MESH:D014116
       stub:
         description: >-
           This is not a domain, but rather a category for

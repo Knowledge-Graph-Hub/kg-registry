@@ -10,7 +10,7 @@ domains:
 - biomedical
 - clinical
 - information technology
-- upper
+- general
 id: bioportal
 infores_id: bioportal
 last_modified_date: '2025-09-16T00:00:00Z'

@@ -11,7 +11,7 @@ contacts:
 creation_date: '2025-10-30T00:00:00Z'
 description: Consumer health resource about genetic conditions from the US National Library of Medicine. This resource has been merged into MedlinePlus Genetics as of 2020.
 domains:
-  - health
+  - biomedical
   - genomics
 homepage_url: https://medlineplus.gov/genetics/
 id: ghr

@@ -17,7 +17,7 @@ contacts:
 creation_date: '2025-12-18T00:00:00Z'
 description: CAM-KP (Causal Activity Models Knowledge Provider) is a web service knowledge graph that integrates causal biological and chemical models from Gene Ontology, Reactome, and Comparative Toxicogenomics Database (CTD) into a unified, semantically rich platform. It provides access to structured biomedical knowledge through SPARQL and TRAPI-compliant REST APIs, supporting hypothesis generation, drug discovery, and environmental health research.
 domains:
-  - health
+  - biomedical
   - pathways
 homepage_url: https://automat.renci.org/#/cam-kp
 id: cam-kp

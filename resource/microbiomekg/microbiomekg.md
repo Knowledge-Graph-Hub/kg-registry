@@ -17,7 +17,7 @@ description: MicrobiomeKG is an integrative knowledge graph resource for multi-o
 domains:
   - biomedical
   - systems biology
-  - microbiome
+  - microbiology
 homepage_url: https://multiomics.transltr.io/mbkp
 id: microbiomekg
 infores_id: multiomics-microbiome

@@ -15,7 +15,7 @@ description: The Drug Gene Interaction Database (DGIdb) is a resource that conso
   help researchers identify actionable drug targets or repurposable drugs for genes
   of interest.
 domains:
-- health
+- biomedical
 - pharmacology
 - drug discovery
 - genomics

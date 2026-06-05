@@ -5,7 +5,7 @@ creation_date: '2025-11-19T00:00:00Z'
 description: The encyclopedia of Rare disease Annotation for Precision Medicine (eRAM) is a standardized system providing computational annotations for rare diseases to support precision medicine. eRAM provides annotations for approximately 16,000 rare diseases, including detailed information on clinical phenotypes, symptoms, genes, and genotypes. The database contains over 6,100 human disease-related phenotype terms, 31,600 mammalian phenotype terms, 10,200 symptoms from UMLS, 18,800 genes and 92,500 genotypes. eRAM organizes diseases in a tree structure to systematically display relationships between diseases with similar pathogenesis, close anatomical sites, the same clinical symptoms or subtypes, facilitating both research into rare disease mechanisms and clinical diagnosis and treatment decisions.
 domains:
   - clinical
-  - health
+  - biomedical
   - phenotype
   - precision medicine
 id: eram

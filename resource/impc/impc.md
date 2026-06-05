@@ -16,7 +16,6 @@ domains:
 - genomics
 - biomedical
 - phenotype
-- health
 homepage_url: https://www.mousephenotype.org/
 id: impc
 last_modified_date: '2026-05-22T00:00:00Z'

@@ -13,7 +13,6 @@ creation_date: '2025-12-03T00:00:00Z'
 description: The Target Illumination GWAS Analytics (TIGA) database is a manually curated resource containing genotype-phenotype associations pulled from numerous genome-wide association studies (GWAS). TIGA provides bibliometric assessment of scientific consensus based on iCite Relative Citation Ratio and meanRank scores for aggregate multivariate evidence, supporting target illumination and validation in translational research. TIGA is part of the NCATS Translator Knowledge Provider ecosystem.
 domains:
   - genomics
-  - translational
   - biomedical
 homepage_url: https://datascience.unm.edu/tiga/
 id: "tiga"

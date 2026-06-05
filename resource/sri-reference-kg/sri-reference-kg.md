@@ -15,7 +15,6 @@ description: The Monarch Initiative's SRI reference knowledge graph is a biomedi
   genes, diseases, phenotypes, variants, and related entities.
 domains:
   - biomedical
-  - health
 homepage_url: https://monarchinitiative.org/kg/about
 id: sri-reference-kg
 infores_id: sri-reference-kg

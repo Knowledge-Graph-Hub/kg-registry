@@ -14,7 +14,6 @@ contacts:
     orcid: 0000-0002-2168-5403
 description: RTX-KG2 is a comprehensive biomedical knowledge graph that integrates information from over 80 structured knowledge sources into a semantically standardized model, supporting translational biomedicine and the ARAX biomedical reasoning system.
 domains:
-  - health
   - biomedical
   - biological systems
   - genomics

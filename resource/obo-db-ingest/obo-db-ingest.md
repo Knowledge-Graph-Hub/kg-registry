@@ -13,7 +13,7 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: A set of databases formalized in OBO, OWL, and OBO Graph JSON formats, as well as mappings and nodelists.
 domains:
-  - upper
+  - general
 homepage_url: https://biopragmatics.github.io/obo-db-ingest/
 id: obo-db-ingest
 last_modified_date: '2026-02-26T00:00:00Z'

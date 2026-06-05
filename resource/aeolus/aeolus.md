@@ -18,7 +18,6 @@ domains:
   - clinical
   - pharmacology
   - drug discovery
-  - health
   - biomedical
 homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4
 id: aeolus

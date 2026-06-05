@@ -23,7 +23,6 @@ description: Chemical Effects in Biological Systems (CEBS) is a public, web-acce
 domains:
 - toxicology
 - biomedical
-- health
 - public health
 homepage_url: https://cebs.niehs.nih.gov/
 id: cebs

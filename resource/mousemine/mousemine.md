@@ -7,7 +7,7 @@ domains:
   - genomics
   - organisms
   - phenotype
-  - health
+  - biomedical
   - pathways
 id: mousemine
 infores_id: mousemine

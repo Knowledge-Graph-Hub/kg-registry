@@ -16,9 +16,8 @@ description: The Food Database (FooDB) is the world's largest and most comprehen
   food science, dietary planning, and general education.
 domains:
 - biomedical
-- food science
+- agriculture
 - nutrition
-- health
 homepage_url: https://foodb.ca/
 id: foodb
 infores_id: foodb

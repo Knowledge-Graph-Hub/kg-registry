@@ -20,7 +20,7 @@ description: PathoPhenoDB is a database of human pathogens, the diseases and phe
   to treat particular pathogens, and it identifies genes or proteins within pathogens
   that can convey resistance to particular drugs.
 domains:
-- health
+- biomedical
 - microbiology
 - pharmacology
 - drug discovery

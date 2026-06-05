@@ -12,7 +12,6 @@ description: SuppKG is a knowledge graph that integrates information about dieta
 domains:
   - nutrition
   - biomedical
-  - health
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
 id: suppkg
 infores_id: suppkg

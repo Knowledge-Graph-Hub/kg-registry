@@ -7,10 +7,9 @@ contacts:
     orcid: 0000-0002-3321-6137
 description: The HRA Knowledge Graph (HRA KG) is a linked open data resource that integrates anatomical structures, cell types, and biomarkers to support cross-scale biological queries.
 domains:
-  - health
+  - biomedical
   - anatomy and development
   - biological systems
-  - biomedical
 homepage_url: https://apps.humanatlas.io/dashboard/data
 id: hra-kg
 layout: resource_detail

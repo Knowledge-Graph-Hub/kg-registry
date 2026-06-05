@@ -12,14 +12,16 @@ Describes resource availability:
 - `unresponsive`: Metadata only
 
 ## DomainEnum
-Scientific domains:
+Scientific domains describing the information a resource provides. Each value
+maps, where possible, to a controlled vocabulary concept (MeSH or NCIT) via its
+`meaning`. Examples:
+- Biomedical
+- Clinical
+- Genomics
+- Proteomics
 - Anatomy & Development
-- Health
-- Phenotype
 - Environment
-- Chemistry
-- Microbiology
-- And more...
+- And more (see [Domains](resources.html#domains) for the full list and mappings)
 
 ## FormatEnum
 Data serialization formats:

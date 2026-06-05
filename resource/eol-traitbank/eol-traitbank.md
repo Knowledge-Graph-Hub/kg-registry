@@ -10,7 +10,9 @@ contacts:
     label: Smithsonian Institution's National Museum of Natural History
 creation_date: '2025-12-17T00:00:00Z'
 description: Encyclopedia of Life (EOL) TraitBank is a searchable, comprehensive, open digital repository for organism traits, measurements, interactions, and other attributes aggregated from 50+ data sources. It covers 1.7 million taxa across the entire tree of life with 11 million+ trait records organized using semantic web standards and Darwin Core terminology.
-domains: []
+domains:
+- organisms
+- phenotype
 homepage_url: https://eol.org/pages/traitbank
 id: eol-traitbank
 infores_id: eol-traitbank

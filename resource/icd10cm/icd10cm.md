@@ -10,7 +10,7 @@ description: ICD-10-CM (International Classification of Diseases, 10th Revision,
   with greater specificity than the international version.
 domains:
 - clinical
-- health
+- biomedical
 homepage_url: https://icd10cmtool.cdc.gov/
 id: icd10cm
 infores_id: icd10cm

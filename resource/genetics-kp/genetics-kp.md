@@ -8,7 +8,7 @@ contacts:
     label: Jason Flannick
 description: A Translator Knowledge Provider focusing on genetic data.
 domains:
-  - health
+  - biomedical
 id: genetics-kp
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail

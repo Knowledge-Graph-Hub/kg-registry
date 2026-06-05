@@ -19,7 +19,6 @@ description: The Global Network of Biomedical Relationships (GNBR) is a large-sc
 domains:
 - biomedical
 - literature
-- health
 homepage_url: https://github.com/jakelever/GNBR
 id: gnbr
 infores_id: gnbr

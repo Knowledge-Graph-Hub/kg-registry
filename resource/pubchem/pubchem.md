@@ -16,7 +16,7 @@ description: PubChem is an open chemistry database that collects information on 
   patents, health, safety, toxicity data, and other information.
 domains:
 - chemistry and biochemistry
-- health
+- biomedical
 homepage_url: https://pubchem.ncbi.nlm.nih.gov/
 id: pubchem
 infores_id: pubchem

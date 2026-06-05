@@ -14,7 +14,6 @@ contacts:
 creation_date: '2025-12-03T00:00:00Z'
 description: Retriever is an NCATS Translator component that serves as a TRAPI (Translator Reasoner API) access layer and intermediary between Knowledge Providers and the Shepherd ARA. Retriever deduplicates subquery operations, provides a cache layer, and centralizes normalization calls for improved efficiency in querying multiple knowledge graph backends. It aggregates TRAPI query responses from DogPark Knowledge Providers, using external database backends to serve integrated biomedical knowledge.
 domains:
-  - translational
   - biomedical
 homepage_url: https://github.com/BioPack-team/retriever
 id: "retriever"

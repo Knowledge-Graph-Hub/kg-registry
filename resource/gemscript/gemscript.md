@@ -13,7 +13,7 @@ description: Gemscript is a medication and device terminology used primarily wit
   rather than a single public bulk-download site.
 domains:
 - clinical
-- health
+- biomedical
 - pharmacology
 homepage_url: https://help.visionhealth.co.uk/Vision_Consultation_Manager_Help_Centre/Content/ConMgr/Gemscript/Gemscript_Drug_Dictionary.htm
 id: gemscript

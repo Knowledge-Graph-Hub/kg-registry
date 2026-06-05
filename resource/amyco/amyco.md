@@ -6,7 +6,6 @@ description: The Amyloidoses Collection (AmyCo) database contains manually curat
 domains:
   - biomedical
   - clinical
-  - health
 id: amyco
 infores_id: amyco
 last_modified_date: '2025-11-25T00:00:00Z'

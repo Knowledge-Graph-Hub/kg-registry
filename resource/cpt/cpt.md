@@ -16,7 +16,7 @@ description: Current Procedural Terminology (CPT) is a medical code set maintain
   documentation, billing, reporting, and interoperability across healthcare systems.
 domains:
 - clinical
-- health
+- biomedical
 fairsharing_id: FAIRsharing.wpxab1
 homepage_url: https://www.ama-assn.org/practice-management/cpt
 id: cpt

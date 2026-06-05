@@ -11,7 +11,7 @@ creation_date: '2025-10-30T00:00:00Z'
 description: GenAge is a curated database of genes related to ageing and longevity, part of the Human Ageing Genomic Resources (HAGR). It includes genes directly related to human ageing plus candidate genes from model organisms (yeast, worms, flies, mice), manually curated by experts to ensure high-quality content.
 domains:
   - genomics
-  - health
+  - biomedical
 homepage_url: http://genomics.senescence.info/genes/
 id: genage
 infores_id: genage

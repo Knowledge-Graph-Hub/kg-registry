@@ -13,7 +13,7 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: a Knowledge Graph for Illuminating the Druggable Genome
 domains:
-- health
+- biomedical
 homepage_url: https://kghub.org/kg-idg/index.html
 id: kg-idg
 last_modified_date: '2026-02-20T00:00:00Z'

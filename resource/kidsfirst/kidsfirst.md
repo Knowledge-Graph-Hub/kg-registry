@@ -20,7 +20,6 @@ description: The Gabriella Miller Kids First Pediatric Research Program Data Res
   from pediatric cancer and structural birth defect cohorts to accelerate discovery
   and development of more effective treatments.
 domains:
-- health
 - biomedical
 - genomics
 - clinical

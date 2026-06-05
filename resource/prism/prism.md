@@ -21,7 +21,6 @@ domains:
 - pharmacology
 - biomedical
 - precision medicine
-- health
 homepage_url: https://depmap.org/repurposing/
 id: prism
 last_modified_date: '2026-06-02T00:00:00Z'

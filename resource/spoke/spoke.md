@@ -19,7 +19,6 @@ contacts:
 description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) is a comprehensive biomedical knowledge graph that connects diverse data from multiple domains to enable discovery and precision medicine applications.
 domains:
   - biomedical
-  - health
   - genomics
   - clinical
   - drug discovery

@@ -18,9 +18,8 @@ description: The NHGRI-EBI GWAS Catalog is a curated, searchable, and freely ava
   accessible via web interfaces, bulk downloads, summary statistics, and a REST API.
 domains:
 - genomics
-- health
 - biomedical
-- investigations
+- general
 homepage_url: https://www.ebi.ac.uk/gwas/
 id: gwascatalog
 infores_id: gwas-catalog

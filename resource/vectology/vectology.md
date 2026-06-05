@@ -16,8 +16,7 @@ description: Vectology is a software platform and API for exploring relationship
 domains:
 - biomedical
 - genomics
-- health
-- investigations
+- general
 homepage_url: http://vectology.mrcieu.ac.uk/
 id: vectology
 last_modified_date: '2025-09-03T00:00:00Z'

@@ -14,7 +14,6 @@ domains:
   - biomedical
   - drug discovery
   - literature
-  - health
 homepage_url: https://www.embiology.com/
 id: embiology
 layout: resource_detail

@@ -15,7 +15,6 @@ domains:
   - chemistry and biochemistry
   - biomedical
   - pharmacology
-  - translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Molecular-Data-Provider
 id: molepro
 infores_id: molepro

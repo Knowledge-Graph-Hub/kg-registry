@@ -16,8 +16,7 @@ description: Clinical Trials Knowledge Provider (CTKP) is a Translator knowledge
   related biomedical entities.
 domains:
 - clinical
-- health
-- translational
+- biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Clinical-Trials-KP
 id: ctkp
 last_modified_date: '2026-05-30T00:00:00Z'

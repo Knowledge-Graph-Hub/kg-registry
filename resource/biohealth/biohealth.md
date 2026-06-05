@@ -12,9 +12,8 @@ contacts:
 description: Bio-Health KG is a dynamically-updated open knowledge network for health,
   integrating biomedical insights with social determinants of health.
 domains:
-- health
 - biomedical
-- social determinants
+- public health
 homepage_url: https://frink.renci.org/registry/kgs/biohealth/
 id: biohealth
 layout: resource_detail

@@ -15,7 +15,6 @@ contacts:
 description: A comprehensive biomedical knowledge graph created by harmonizing and integrating information from diverse biomedical resources for biomedical discovery and drug repurposing.
 domains:
   - biomedical
-  - health
   - drug discovery
   - systems biology
 homepage_url: https://pubmed.ncbi.nlm.nih.gov/37020958/

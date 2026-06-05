@@ -14,7 +14,6 @@ description: CRediT (Contributor Roles Taxonomy) is a controlled vocabulary of c
   software, data curation, and writing.
 domains:
 - general
-- investigations
 - information technology
 fairsharing_id: FAIRsharing.fe4816
 homepage_url: https://credit.niso.org/

@@ -9,7 +9,6 @@ description: UK Biobank is a large-scale biomedical database and research resour
 domains:
 - biomedical
 - genomics
-- health
 - clinical
 - phenotype
 homepage_url: https://www.ukbiobank.ac.uk/

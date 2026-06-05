@@ -19,7 +19,6 @@ domains:
 - drug discovery
 - pharmacology
 - precision medicine
-- translational
 - biomedical
 homepage_url: https://openpredict.semanticscience.org/
 id: openpredict

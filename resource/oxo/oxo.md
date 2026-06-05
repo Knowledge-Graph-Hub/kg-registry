@@ -14,7 +14,7 @@ creation_date: '2025-11-04T00:00:00Z'
 description: OxO (Ontology Xref Service) is a cross-ontology mapping service developed by EMBL-EBI's Samples, Phenotypes and Ontologies Team (SPOT). The service provides mappings between terms from different ontologies, enabling users to search for equivalent or related terms across multiple ontological resources. OxO aggregates cross-references from ontologies loaded in the Ontology Lookup Service (OLS) and enriches these with manual mappings and inference-based relationships.
 domains:
   - biomedical
-  - upper
+  - general
   - biological systems
 homepage_url: https://www.ebi.ac.uk/spot/oxo/
 id: oxo

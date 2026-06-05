@@ -15,7 +15,9 @@ description: Global Biodiversity Information Facility (GBIF) is an international
   and data infrastructure providing open access to over 3.1 billion species occurrence
   records from 81,000+ datasets contributed by 2,500+ publishing institutions worldwide.
   GBIF aggregates species distribution and biodiversity data using Darwin Core standards.
-domains: []
+domains:
+- organisms
+- environment
 homepage_url: https://www.gbif.org/
 id: gbif
 infores_id: gbif

@@ -18,7 +18,6 @@ domains:
 - genomics
 - microbiology
 - biomedical
-- health
 homepage_url: https://www.bv-brc.org/
 id: patric
 infores_id: patric

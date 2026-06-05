@@ -19,7 +19,7 @@ description: The Columbia Open Health Data (COHD) API provides access to observe
   forms, plus beta temporal co-occurrence data.
 domains:
 - clinical
-- health
+- biomedical
 - public health
 - precision medicine
 homepage_url: https://cohd-api.ci.transltr.io/

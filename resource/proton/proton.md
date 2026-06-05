@@ -15,7 +15,8 @@ description: PROTON (PROTo ONtology) is a lightweight upper-level ontology servi
   entities, temporal concepts, quantitative domains, and abstract concepts. Designed
   for information extraction, semantic annotation, knowledge management, and linked
   data integration.
-domains: []
+domains:
+- general
 homepage_url: https://www.ontotext.com/products/proton/
 id: proton
 last_modified_date: '2026-02-20T00:00:00Z'

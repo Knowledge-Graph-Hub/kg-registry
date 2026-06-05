@@ -31,7 +31,7 @@ description: RxNorm is the National Library of Medicine's standardized nomenclat
   health records, e-prescribing, pharmacy management systems, drug interaction checking,
   clinical decision support, and public health surveillance.
 domains:
-- health
+- biomedical
 homepage_url: https://www.nlm.nih.gov/research/umls/rxnorm/
 id: rxnorm
 infores_id: rxnorm

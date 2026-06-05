@@ -10,7 +10,7 @@ contacts:
 creation_date: '2026-06-02T00:00:00Z'
 description: P3DB, the Plant Protein Phosphorylation Database, is a plant phosphoproteomics resource that collects phosphorylation sites, phosphopeptides, kinases, organisms, and study datasets with search and BLAST tools.
 domains:
-  - plant science
+  - agriculture
   - proteomics
   - biological systems
 homepage_url: https://www.p3db.org/

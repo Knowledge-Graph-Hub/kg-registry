@@ -11,7 +11,7 @@ contacts:
 creation_date: '2025-11-08T00:00:00Z'
 description: MedlinePlus is the premier online health information resource from the National Library of Medicine, providing comprehensive, trusted health and wellness information for patients, families, and the general public. As a service of the world's largest medical library and part of the National Institutes of Health, MedlinePlus delivers high-quality, evidence-based health content that is easy to understand, free of advertising, and available in both English and Spanish. The resource covers over 1,000 health topics including diseases, conditions, wellness information, and prevention strategies, with content organized into multiple categories including health topics, medical encyclopedia, drugs and supplements information, medical tests, healthy recipes, and genetics resources. MedlinePlus provides detailed information on prescription drugs, over-the-counter medicines, herbs, and supplements through its comprehensive drug information database. The medical encyclopedia contains thousands of articles, images, and videos covering diseases, symptoms, tests, and treatments. MedlinePlus Genetics offers information on genetic conditions, genes, chromosomes, and how genetic variations affect health.
 domains:
-  - health
+  - biomedical
 homepage_url: https://medlineplus.gov/
 id: medlineplus
 infores_id: medlineplus

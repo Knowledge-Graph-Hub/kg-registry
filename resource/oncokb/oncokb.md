@@ -22,7 +22,6 @@ domains:
 - clinical
 - genomics
 - biomedical
-- health
 homepage_url: https://www.oncokb.org/
 id: oncokb
 last_modified_date: '2025-09-24T00:00:00Z'

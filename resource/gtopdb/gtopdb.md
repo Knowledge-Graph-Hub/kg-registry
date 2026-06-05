@@ -18,10 +18,8 @@ description: The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource 
   approved drugs and experimental therapeutics
 domains:
 - pharmacology
-- health
 - biomedical
 - drug discovery
-- translational
 homepage_url: https://www.guidetopharmacology.org
 id: gtopdb
 infores_id: gtopdb

@@ -14,10 +14,9 @@ contacts:
 creation_date: '2025-09-03T00:00:00Z'
 description: EpiGraphDB is an analytical platform and graph database for health data science that integrates Mendelian randomization causal estimates across a wide range of phenotypes with diverse bioinformatic and epidemiological resources. It supports systematic causal inference, data mining, and exploration through a web application, API, R package, and curated graph knowledge base.
 domains:
-  - health
   - biomedical
   - genomics
-  - investigations
+  - general
 homepage_url: https://epigraphdb.org/
 id: epigraphdb
 last_modified_date: '2026-06-01T00:00:00Z'

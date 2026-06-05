@@ -14,7 +14,7 @@ description: nSIDES is a comprehensive collection of drug side effect and drug i
 domains:
   - pharmacology
   - drug discovery
-  - health
+  - biomedical
   - precision medicine
 homepage_url: https://nsides.io/
 id: nsides

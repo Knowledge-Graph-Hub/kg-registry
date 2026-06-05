@@ -21,7 +21,6 @@ description: PubMed Central (PMC) is NCBI's free full-text archive of biomedical
 domains:
 - biomedical
 - literature
-- health
 homepage_url: https://pmc.ncbi.nlm.nih.gov/
 id: pmc
 infores_id: pubmed-central

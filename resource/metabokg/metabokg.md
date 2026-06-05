@@ -16,7 +16,7 @@ description: MetaboKG is an analysis-centric knowledge graph framework for untar
 domains:
 - chemistry and biochemistry
 - biomedical
-- microbiome
+- microbiology
 - environment
 homepage_url: https://github.com/HolobiomicsLab/MetaBoKG
 id: metabokg

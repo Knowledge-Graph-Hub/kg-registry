@@ -7,8 +7,7 @@ creation_date: '2026-02-18T00:00:00Z'
 description: Richards Effector Gene List (REGL) is described as an effector index for prioritizing likely target genes at GWAS loci.
 domains:
   - genomics
-  - health
-  - translational
+  - biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Richards-Effector-Gene-List
 id: regl
 infores_id: regl

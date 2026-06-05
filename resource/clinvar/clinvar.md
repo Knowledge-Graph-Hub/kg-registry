@@ -20,8 +20,6 @@ domains:
 - genomics
 - clinical
 - precision medicine
-- health
-- translational
 homepage_url: https://www.ncbi.nlm.nih.gov/clinvar/
 id: clinvar
 infores_id: clinvar

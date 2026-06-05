@@ -23,7 +23,7 @@ creation_date: '2025-11-10T00:00:00Z'
 description: The Pistoia Alliance Pharma General Ontology (PGO) is a collaborative initiative to provide a shared upper-level reference ontology for the pharmaceutical industry. PGO aims to serve as a "Rosetta Stone" enabling semantic interoperability within and across organizations by identifying key concepts used throughout the drug development lifecycle and selecting public resources that can provide identifiers for each concept. Rather than creating new ontologies or mandating specific terminologies, PGO focuses on providing clear mechanisms to enable unambiguous declaration of the resources used and capturing the criteria for selecting semantic artifacts. The project follows FAIR principles and reuses existing semantic resources, including ontologies and controlled terminologies, as well as open source community software. The initial phase focuses on Research & Development (R&D) operations, defining core concepts and recommendations for associating controlled terminologies to service data exchange among pharmaceutical industry stakeholders. PGO is developed using LinkML for representing and documenting each type, and is supported by a consortium of major pharmaceutical companies including AstraZeneca, Chiesi Group, GSK, Merck KGaA, Novo Nordisk, Pfizer, and Hoffmann-La Roche.
 domains:
   - drug discovery
-  - upper
+  - general
 homepage_url: https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/
 id: pistoia-pgo
 last_modified_date: '2026-06-02T00:00:00Z'

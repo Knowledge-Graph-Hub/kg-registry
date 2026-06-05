@@ -11,7 +11,7 @@ creation_date: '2025-11-05T00:00:00Z'
 description: GenDR (Database of Dietary Restriction-Related Genes) is a curated database of genes associated with dietary restriction (DR) and its effects on longevity and aging. Part of the Human Ageing Genomic Resources (HAGR), GenDR compiles experimental data on genes whose expression or function is altered by dietary restriction regimens across multiple model organisms. The database includes information on gene function, expression changes, and links to aging-related phenotypes.
 domains:
   - genomics
-  - health
+  - biomedical
   - nutrition
   - biological systems
 homepage_url: https://hagr.ageing-map.org/diet/

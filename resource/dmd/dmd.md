@@ -13,7 +13,7 @@ description: The NHS dictionary of medicines and devices is the national clinica
   for exchanging medicines information between clinical systems.
 domains:
 - clinical
-- health
+- biomedical
 - pharmacology
 homepage_url: https://digital.nhs.uk/services/terminology-and-classifications/dm-d
 id: dmd

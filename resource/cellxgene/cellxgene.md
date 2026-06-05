@@ -16,7 +16,6 @@ description: CZ CELLxGENE is a platform for finding, downloading, exploring, and
 domains:
 - biomedical
 - genomics
-- health
 homepage_url: https://cellxgene.cziscience.com/
 id: cellxgene
 last_modified_date: '2026-05-30T00:00:00Z'

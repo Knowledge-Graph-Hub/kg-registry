@@ -12,7 +12,7 @@ domains:
 - biological systems
 - systems biology
 - pathways
-- simulation
+- information technology
 homepage_url: http://bigg.ucsd.edu/
 id: bigg
 last_modified_date: '2025-09-27T00:00:00Z'

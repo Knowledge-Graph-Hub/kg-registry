@@ -9,7 +9,7 @@ contacts:
     orcid: 0000-0001-5998-3003
 description: MolePro is a Molecular Data Provider translating molecular scale to systems scale through a Reasoner API. It is a Translator Knowledge Provider.
 domains:
-  - health
+  - biomedical
 homepage_url: https://github.com/broadinstitute/molecular-data-provider/
 id: molecular-data-kp
 layout: resource_detail

@@ -27,7 +27,7 @@ description: DailyMed is the National Library of Medicine's official provider of
   warnings and precautions, adverse reactions, drug interactions, use in specific
   populations, clinical pharmacology, and how the drug is supplied.
 domains:
-- health
+- biomedical
 homepage_url: https://dailymed.nlm.nih.gov/dailymed/
 id: dailymed
 infores_id: dailymed

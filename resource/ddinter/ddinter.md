@@ -11,7 +11,6 @@ domains:
 - clinical
 - drug discovery
 - biomedical
-- health
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ddinter
 id: ddinter
 infores_id: ddinter

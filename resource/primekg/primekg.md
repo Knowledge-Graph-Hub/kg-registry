@@ -16,9 +16,8 @@ description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-qua
   biomedical resources to describe 17,080 diseases with over 4 million relationships
   across ten major biological scales.
 domains:
-- health
-- precision medicine
 - biomedical
+- precision medicine
 - pathways
 - systems biology
 homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG

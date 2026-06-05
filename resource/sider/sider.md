@@ -18,7 +18,6 @@ domains:
 - biomedical
 - pharmacology
 - drug discovery
-- health
 homepage_url: http://sideeffects.embl.de/
 id: sider
 infores_id: sider

@@ -20,7 +20,6 @@ description: PubTator 3.0 is an AI-powered biomedical literature resource that u
 domains:
 - literature
 - biomedical
-- health
 - genomics
 - pharmacology
 homepage_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/

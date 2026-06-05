@@ -16,7 +16,6 @@ description: The Clinical Interpretation of Variants in Cancer (CIViC) knowledge
   of genomic variants.
 domains:
 - biomedical
-- health
 - genomics
 - clinical
 - precision medicine

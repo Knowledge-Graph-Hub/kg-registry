@@ -20,7 +20,6 @@ domains:
 - genomics
 - biomedical
 - clinical
-- health
 homepage_url: https://clinicalgenome.org/
 id: clingen
 infores_id: clingen

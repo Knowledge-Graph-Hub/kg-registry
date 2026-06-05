@@ -9,7 +9,6 @@ domains:
 - biomedical
 - drug discovery
 - pharmacology
-- translational
 homepage_url: https://github.com/SuLab/MechRepoNet
 id: mechreponet
 last_modified_date: '2025-07-17T00:00:00Z'

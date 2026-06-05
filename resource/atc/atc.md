@@ -23,7 +23,7 @@ description: The Anatomical Therapeutic Chemical (ATC) classification system gro
 domains:
 - pharmacology
 - clinical
-- health
+- biomedical
 homepage_url: https://atcddd.fhi.no/atc_ddd_index/
 id: atc
 last_modified_date: '2026-06-01T00:00:00Z'

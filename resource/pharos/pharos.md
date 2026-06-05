@@ -23,7 +23,6 @@ domains:
 - drug discovery
 - proteomics
 - pharmacology
-- health
 - biomedical
 homepage_url: https://pharos.nih.gov/
 id: pharos

@@ -25,7 +25,7 @@ domains:
 - genomics
 - proteomics
 - chemistry and biochemistry
-- health
+- biomedical
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 infores_id: kegg

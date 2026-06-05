@@ -17,9 +17,7 @@ description: Aggregated, transformed graph datasets distributed by the NCATS Tra
 domains:
 - biomedical
 - clinical
-- translational
 - drug discovery
-- health
 homepage_url: https://kgx-storage.rtx.ai/releases/
 id: translator
 last_modified_date: '2026-04-02T00:00:00Z'

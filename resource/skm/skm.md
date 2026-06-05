@@ -21,7 +21,7 @@ contacts:
     label: National Institute of Biology Slovenia
 description: A comprehensive knowledge graph resource for systems biology analysis of plant stress responses, containing mechanistic models and knowledge networks for plant stress signaling. It includes two knowledge graphs, the mechanistic Plant Stress Signalling model (PSS) and the Comprehensive Knowledge Network (CKN).
 domains:
-  - plant science
+  - agriculture
   - organisms
   - systems biology
   - pathways

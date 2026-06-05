@@ -22,7 +22,7 @@ description: The Molecular Transducers of Physical Activity Consortium (MoTrPAC)
   of the temporal dynamics of multi-omic responses to endurance exercise training.
 domains:
 - biological systems
-- health
+- biomedical
 - proteomics
 - genomics
 - systems biology

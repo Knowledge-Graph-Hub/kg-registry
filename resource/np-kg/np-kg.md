@@ -9,10 +9,9 @@ contacts:
     label: Sanya Bathla Taneja
 description: NP-KG is a graph framework that creates a biomedical knowledge graph to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug interactions (NPDIs).
 domains:
-  - health
+  - biomedical
   - pharmacology
   - drug discovery
-  - biomedical
 homepage_url: https://doi.org/10.5281/zenodo.6814507
 id: np-kg
 layout: resource_detail

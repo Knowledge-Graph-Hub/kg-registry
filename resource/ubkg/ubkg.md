@@ -21,7 +21,6 @@ description: The Unified Biomedical Knowledge Graph (UBKG) is a knowledge graph 
   of previously unknown relationships.
 domains:
 - biomedical
-- health
 - genomics
 homepage_url: https://ubkg.docs.xconsortia.org/
 id: ubkg

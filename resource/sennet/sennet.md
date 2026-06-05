@@ -16,7 +16,6 @@ description: The Cellular Senescence Network (SenNet) is an NIH Common Fund prog
   data, and develops computational tools to advance understanding of how senescent
   cells contribute to aging and age-related diseases.
 domains:
-- health
 - biomedical
 - anatomy and development
 - genomics

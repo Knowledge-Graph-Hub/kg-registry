@@ -7,7 +7,6 @@ description: ADReCS is a database of adverse drug reaction terms and drug-side e
 domains:
 - biomedical
 - pharmacology
-- health
 homepage_url: http://www.bio-add.org/ADReCS/
 id: adrecs
 last_modified_date: '2026-06-01T00:00:00Z'

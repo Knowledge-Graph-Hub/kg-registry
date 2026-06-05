@@ -13,9 +13,8 @@ description: The Human Reference Atlas (HRA) is a comprehensive 3D spatial frame
   types across multiple scales from organs to cells.
 domains:
 - anatomy and development
-- health
-- biological systems
 - biomedical
+- biological systems
 - precision medicine
 homepage_url: https://humanatlas.io/
 id: hra

@@ -14,7 +14,6 @@ domains:
   - biomedical
   - drug discovery
   - pharmacology
-  - health
 homepage_url: https://github.com/MindRank-Biotech/PharmKG
 id: pharmkg
 layout: resource_detail

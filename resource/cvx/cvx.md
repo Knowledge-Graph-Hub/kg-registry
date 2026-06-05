@@ -13,7 +13,7 @@ contacts:
 description: CVX is the vaccine administered code set maintained by the Centers for Disease Control and Prevention for Immunization Information Systems (IIS). It provides identifiers for vaccine products and historical vaccine administrations used in immunization records, exchange standards, and public health reporting.
 domains:
   - clinical
-  - health
+  - biomedical
   - public health
 homepage_url: https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx
 id: "cvx"

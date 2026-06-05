@@ -18,7 +18,7 @@ description: The BiomarkerKB knowledge graph is a structured network that connec
   biomarkers to diseases, drugs, biological entities, and evidence from the scientific
   literature.
 domains:
-- health
+- biomedical
 - biological systems
 homepage_url: https://biomarkerkb.org/home/
 id: biomarkerkg
