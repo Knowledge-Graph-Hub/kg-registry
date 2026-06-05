@@ -86,7 +86,11 @@ linkml_meta = LinkMLMeta({'default_prefix': 'kgr',
      'imports': ['linkml:types', 'kg_registry_schema_formats'],
      'license': 'GPL-3.0',
      'name': 'kg_registry_schema',
-     'prefixes': {'dcterms': {'prefix_prefix': 'dcterms',
+     'prefixes': {'MESH': {'prefix_prefix': 'MESH',
+                           'prefix_reference': 'http://id.nlm.nih.gov/mesh/'},
+                  'NCIT': {'prefix_prefix': 'NCIT',
+                           'prefix_reference': 'http://purl.obolibrary.org/obo/NCIT_'},
+                  'dcterms': {'prefix_prefix': 'dcterms',
                               'prefix_reference': 'http://purl.org/dc/terms/'},
                   'kgr': {'prefix_prefix': 'kgr',
                           'prefix_reference': 'https://w3id.org/bridge2ai/data-sheets-schema/'},
@@ -464,35 +468,31 @@ class ContactTypeEnum(str, Enum):
 
 class DomainEnum(str, Enum):
     """
-    A domain that a resource is relevant to.
+    A domain that a resource is relevant to. Each domain maps, where possible, to a concept in an external controlled vocabulary (Medical Subject Headings, MeSH; or the NCI Thesaurus, NCIT) via the permissible value's `meaning`.
     """
     agriculture = "agriculture"
     """
-    The agricultural sciences.
+    The agricultural and food sciences, including crop and animal production, plant science, and food production, processing, and preservation.
     """
     anatomy_and_development = "anatomy and development"
     """
-    The anatomy and development of organisms.
+    The anatomy and development of organisms, including their structure, morphology, and developmental biology.
     """
     biological_systems = "biological systems"
     """
-    The biological sciences and systems.
+    The biological sciences broadly, including cellular and molecular biology and other biological disciplines not better described by a more specific domain.
     """
     biomedical = "biomedical"
     """
-    The biomedical sciences, including the study of biological systems and their interactions.
+    The biomedical sciences broadly, spanning the study of biological systems in the context of health and disease. Use a more specific domain (e.g., clinical) where one applies.
     """
     chemistry_and_biochemistry = "chemistry and biochemistry"
     """
-    The chemical and biochemical sciences.
+    The chemical and biochemical sciences, including the structure, properties, and reactions of chemical compounds.
     """
     clinical = "clinical"
     """
-    The clinical sciences, including clinical trials and patient data.
-    """
-    digital_health = "digital health"
-    """
-    The use of digital technologies for healthcare, including telemedicine, wearable devices, health information technology, and personalized medicine.
+    The clinical sciences concerned with the care of patients, including clinical trials, patient data, and diagnosis and treatment of disease.
     """
     drug_discovery = "drug discovery"
     """
@@ -500,19 +500,15 @@ class DomainEnum(str, Enum):
     """
     environment = "environment"
     """
-    The environment and ecosystems.
+    The environment and ecosystems, including ecology and environmental health.
     """
     general = "general"
     """
-    A general domain, not specific to any other category. It concerns resources that are broadly applicable across multiple domains.
+    A general domain, not specific to any other category. It concerns resources that are broadly applicable across multiple domains, including upper-level and cross-domain resources.
     """
     genomics = "genomics"
     """
-    The study of genomes, including genome structure, evolution,  function, mapping, and editing.
-    """
-    health = "health"
-    """
-    The health and diseases of organisms.
+    The study of genomes, including genome structure, evolution, function, mapping, and editing.
     """
     immunology = "immunology"
     """
@@ -520,11 +516,7 @@ class DomainEnum(str, Enum):
     """
     information_technology = "information technology"
     """
-    The information technology sciences.
-    """
-    investigations = "investigations"
-    """
-    Research investigations into specific topics.
+    The information technology and informatics sciences, including software, computational methods, simulation and modeling, and digital health technologies.
     """
     literature = "literature"
     """
@@ -534,17 +526,13 @@ class DomainEnum(str, Enum):
     """
     Techniques and processes for creating visual representations of the interior of a body for clinical analysis and medical intervention.
     """
-    microbiome = "microbiome"
-    """
-    The study of microbial communities, their genomes, and their influence on hosts and environments.
-    """
     microbiology = "microbiology"
     """
-    The microbiological sciences.
+    The microbiological sciences, including the study of microbial communities (microbiomes) and their influence on hosts and environments.
     """
     neuroscience = "neuroscience"
     """
-    The scientific study of the nervous system, including  brain structure, function, and disorders.
+    The scientific study of the nervous system, including brain structure, function, and disorders.
     """
     nutrition = "nutrition"
     """
@@ -552,7 +540,7 @@ class DomainEnum(str, Enum):
     """
     organisms = "organisms"
     """
-    Specific organisms.
+    Specific organisms or taxa.
     """
     other = "other"
     """
@@ -564,7 +552,7 @@ class DomainEnum(str, Enum):
     """
     pharmacology = "pharmacology"
     """
-    The study of how drugs interact with biological systems, including  drug discovery, development, and therapeutic uses.
+    The study of how drugs interact with biological systems, including drug discovery, development, and therapeutic uses.
     """
     phenotype = "phenotype"
     """
@@ -576,47 +564,19 @@ class DomainEnum(str, Enum):
     """
     proteomics = "proteomics"
     """
-    The large-scale study of proteins, their structures,  functions, and interactions.
+    The large-scale study of proteins, their structures, functions, and interactions.
     """
     public_health = "public health"
     """
-    The science of protecting and improving the health of people and their  communities, including epidemiology and population health.
-    """
-    simulation = "simulation"
-    """
-    Simulation and modeling of specific phenomena.
-    """
-    social_determinants = "social determinants"
-    """
-    The social, economic, and environmental factors that influence health outcomes and contribute to health disparities.
+    The science of protecting and improving the health of people and their communities, including epidemiology, population health, and the social determinants of health.
     """
     systems_biology = "systems biology"
     """
     The computational and mathematical analysis of complex biological systems and their interactions.
     """
-    synthetic_biology = "synthetic biology"
-    """
-    The design and construction of new biological parts, devices, and systems, or the redesign of existing natural biological systems.
-    """
     toxicology = "toxicology"
     """
     The study of the adverse effects of chemicals on living organisms.
-    """
-    translational = "translational"
-    """
-    The translational sciences, including the translation of research into practice.
-    """
-    upper = "upper"
-    """
-    The upper-level domain, for general-purpose data representation and integration.
-    """
-    food_science = "food science"
-    """
-    The study of food, including its production, processing, preservation, and consumption.
-    """
-    plant_science = "plant science"
-    """
-    The study of plants, including their biology, ecology, and interactions with the environment.
     """
     stub = "stub"
     """
