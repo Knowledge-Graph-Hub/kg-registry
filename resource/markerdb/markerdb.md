@@ -74,6 +74,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
 - category: Product
   description: TSV export of MarkerDB chemical biomarkers with associated conditions
     and concentration data.
@@ -91,6 +93,8 @@ products:
     source: pubchem
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: Product
   description: TSV export of MarkerDB genetic biomarkers with associated conditions.
@@ -111,6 +115,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
 - category: Product
   description: TSV export of MarkerDB karyotype biomarkers with associated conditions.
   format: tsv
@@ -122,6 +128,8 @@ products:
   product_url: https://markerdb.ca/pages/download_all_karyotypes?format=tsv
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: GraphProduct
   compression: gzip

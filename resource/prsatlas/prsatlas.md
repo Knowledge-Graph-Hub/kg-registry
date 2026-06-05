@@ -8,15 +8,14 @@ contacts:
     value: https://www.bristol.ac.uk/integrative-epidemiology-unit/
   label: MRC Integrative Epidemiology Unit, University of Bristol
 creation_date: '2025-12-03T00:00:00Z'
-description: "The PRS Atlas is a comprehensive resource analyzing 162 polygenic risk\
-  \ scores (PRS) derived from genome-wide association studies against 551 heritable\
-  \ traits from the UK Biobank study (N=334,398). The atlas was developed to highlight\
-  \ putative causal relationships across the human phenome using Mendelian randomization\
-  \ approaches. PRS were constructed using independent SNPs (p<5\xD710\u207B\u2075\
-  ) to evaluate associations with complex traits, providing insights into disease\
-  \ susceptibility and potential causal risk factors. The resource includes a web\
-  \ application for querying and visualizing associations between genetic liability\
-  \ and diverse health outcomes."
+description: The PRS Atlas is a comprehensive resource analyzing 162 polygenic risk
+  scores (PRS) derived from genome-wide association studies against 551 heritable
+  traits from the UK Biobank study (N=334,398). The atlas was developed to highlight
+  putative causal relationships across the human phenome using Mendelian randomization
+  approaches. PRS were constructed using independent SNPs (p<5×10⁻⁵) to evaluate associations
+  with complex traits, providing insights into disease susceptibility and potential
+  causal risk factors. The resource includes a web application for querying and visualizing
+  associations between genetic liability and diverse health outcomes.
 domains:
 - genomics
 - translational
@@ -63,6 +62,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
 - category: Product
   description: PRS Atlas results using the P less than 5e-08 polygenic risk score
     threshold, archived by Dryad
@@ -80,6 +81,8 @@ products:
     source: ukbiobank
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Integrated graph knowledge base combining Mendelian randomization causal

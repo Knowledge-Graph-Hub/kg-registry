@@ -60,9 +60,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
@@ -78,6 +78,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -92,6 +94,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -104,10 +108,10 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -122,6 +126,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -136,6 +142,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -150,6 +158,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -164,6 +174,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -178,6 +190,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -192,6 +206,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 publications:
 - id: https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1
   title: Brain Data Standards

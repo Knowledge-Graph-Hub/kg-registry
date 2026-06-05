@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: unicarbkb
 product_url: https://doi.org/10.1093/nar/gkt1128
+warnings:
+- File was not able to be retrieved when checked on 2026-06-03_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

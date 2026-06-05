@@ -44,7 +44,7 @@ biobricks-pubchem-annotations	BioBricks PubChem Annotations	KnowledgeGraph	https
 biobricks-tox21	BioBricks Tox21	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-tox21/biobricks-tox21.md
 biobricks-toxcast	BioBricks ToxCast	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-toxcast/biobricks-toxcast.md
 biocyc	BioCyc	DataSource	https://biocyc.org/	resource/biocyc/biocyc.md
-biofactoid	Biofactoid	DataSource		resource/biofactoid/biofactoid.md
+biofactoid	Biofactoid	DataSource	https://biofactoid.org/	resource/biofactoid/biofactoid.md
 biogps	BioGPS	Aggregator	http://biogps.org/	resource/biogps/biogps.md
 biohealth	Bio-Health KG	KnowledgeGraph	https://frink.renci.org/registry/kgs/biohealth/	resource/biohealth/biohealth.md
 biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resource/biolink/biolink.md
@@ -242,7 +242,7 @@ glyconavi	GlycoNAVI	DataSource	https://glyconavi.org/	resource/glyconavi/glycona
 glyconnect	GlyConnect	DataSource	https://glyconnect.expasy.org/	resource/glyconnect/glyconnect.md
 glycordf	GlycoRDF: An Ontology to Standardize Glycomics Data in RDF	Ontology	https://www.glycoinfo.org/GlycoRDF/	resource/glycordf/glycordf.md
 glygen	GlyGen	DataSource	https://glygen.org/	resource/glygen/glygen.md
-glytoucan	Glytoucan	DataSource		resource/glytoucan/glytoucan.md
+glytoucan	GlyTouCan	DataSource	https://glytoucan.org/	resource/glytoucan/glytoucan.md
 gno	Glycan Naming and Subsumption Ontology (GNOme)	Ontology	https://gnome.glyomics.org/	resource/gno/gno.md
 gnps	Global Natural Products Social Molecular Networking	DataSource	https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp	resource/gnps/gnps.md
 goa	GOA	DataSource	https://www.ebi.ac.uk/GOA/	resource/goa/goa.md
@@ -268,14 +268,14 @@ hsapdv	Human Developmental Stages	Ontology	https://github.com/obophenotype/devel
 hso	Health Surveillance Ontology	Ontology	https://w3id.org/hso	resource/hso/hso.md
 htn	Hypertension Ontology	Ontology	https://github.com/aellenhicks/htn_owl	resource/htn/htn.md
 hubmap	HuBMAP	Aggregator	https://hubmapconsortium.org/	resource/hubmap/hubmap.md
-humancyc	Humancyc	DataSource		resource/humancyc/humancyc.md
+humancyc	HumanCyc	DataSource	https://humancyc.org/	resource/humancyc/humancyc.md
 humannet	HumanNet	DataSource	https://www.inetbio.org/humannetv3/	resource/humannet/humannet.md
 hydrologykg	SAWGraph Hydrology KG	KnowledgeGraph	https://sawgraph.github.io/	resource/hydrologykg/hydrologykg.md
 iao	Information Artifact Ontology	Ontology	https://github.com/information-artifact-ontology/IAO/	resource/iao/iao.md
 ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm.nih.gov/37020958/	resource/ibkh/ibkh.md
 icd11	ICD-11	DataSource	https://icd.who.int/en	resource/icd11/icd11.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
-icgc	Icgc	DataSource		resource/icgc/icgc.md
+icgc	ICGC	DataSource	https://www.icgc-argo.org/	resource/icgc/icgc.md
 ico	Informed Consent Ontology	Ontology	https://github.com/ICO-ontology/ICO	resource/ico/ico.md
 iconclass	ICONCLASS	DataSource	https://iconclass.org/	resource/iconclass/iconclass.md
 identifier-mappings	ID Mappings	KnowledgeGraph	https://www.wikidata.org/	resource/identifier-mappings/identifier-mappings.md
@@ -291,7 +291,7 @@ imr	Molecule role (INOH Protein name/family name ontology)	Ontology	http://www.i
 inchikey	InChIKey	DataModel	https://www.inchi-trust.org/	resource/inchikey/inchikey.md
 indra	INDRA	Aggregator	https://www.indra.bio/	resource/indra/indra.md
 ino	Interaction Network Ontology	Ontology	https://github.com/INO-ontology/ino	resource/ino/ino.md
-inoh	Inoh	DataSource		resource/inoh/inoh.md
+inoh	INOH	DataSource	http://www.inoh.org/	resource/inoh/inoh.md
 insight	INSIGHT	KnowledgeGraph	https://insight-project.org/	resource/insight/insight.md
 intermine	InterMine	DataSource	https://intermine.org/	resource/intermine/intermine.md
 ipr	Protein Domains	Ontology	http://www.ebi.ac.uk/interpro/index.html	resource/ipr/ipr.md
@@ -384,7 +384,7 @@ ncipidkg	NCI-PID 2.0 KG	KnowledgeGraph	https://www.ndexbio.org/index.html#/netwo
 ncro	Non-Coding RNA Ontology	Ontology	http://omnisearch.soc.southalabama.edu/w/index.php/Ontology	resource/ncro/ncro.md
 nde	NIAID Data Ecosystem KG	KnowledgeGraph	https://data.niaid.nih.gov/	resource/nde/nde.md
 neo	Noctua Entity Ontology	Resource	https://github.com/geneontology/neo/	resource/neo/neo.md
-netpath	Netpath	DataSource		resource/netpath/netpath.md
+netpath	NetPath	DataSource	http://www.netpath.org/	resource/netpath/netpath.md
 nextprot	neXtProt	DataSource	https://www.nextprot.org/	resource/nextprot/nextprot.md
 ngbo	Next Generation Biobanking Ontology	Ontology	https://github.com/Dalalghamdi/NGBO	resource/ngbo/ngbo.md
 nif_cell	NIF Cell	Ontology	http://neuinfo.org/	resource/nif_cell/nif_cell.md
@@ -516,7 +516,7 @@ rdbridge	RDBridge	KnowledgeGraph	http://rdb.lifesynther.com/	resource/rdbridge/r
 rdkg	Rare Disease Knowledge Graph	KnowledgeGraph	https://frink.renci.org/registry/kgs/rdkg/	resource/rdkg/rdkg.md
 rdp	Ribosomal Database Project	DataSource		resource/rdp/rdp.md
 reacto	Reactome Entity Ontology (REACTO)	Resource	http://purl.obolibrary.org/obo/go/extensions/reacto.owl	resource/reacto/reacto.md
-reconx	Reconx	DataSource		resource/reconx/reconx.md
+reconx	ReconX	DataSource	https://www.vmh.life/	resource/reconx/reconx.md
 rediportal	REDIportal	DataSource		resource/rediportal/rediportal.md
 redrugs	ReDrugs	KnowledgeGraph	http://redrugs.tw.rpi.edu/	resource/redrugs/redrugs.md
 redu	ReDU	Aggregator	https://redu.gnps2.org/selection/	resource/redu/redu.md
@@ -528,7 +528,7 @@ resid	Protein covalent bond	Ontology	http://www.ebi.ac.uk/RESID/	resource/resid/
 rex	Physico-chemical process	Ontology	http://purl.obolibrary.org/obo/rex.owl	resource/rex/rex.md
 rfam	Rfam	DataSource	https://rfam.org/	resource/rfam/rfam.md
 ribocentre	Ribocentre	DataSource	https://www.ribocentre.org/	resource/ribocentre/ribocentre.md
-ribovision	RiboVision	Resource	https://ribovision2.chemistry.gatech.edu/	resource/ribovision/ribovision.md
+ribovision	RiboVision	DataSource	https://ribovision2.chemistry.gatech.edu/	resource/ribovision/ribovision.md
 rlims-p	RLIMS-P	DataSource	https://research.bioinformatics.udel.edu/text_mining/rlimsp2/	resource/rlims-p/rlims-p.md
 rna-kg	RNA-KG	KnowledgeGraph	https://RNA-KG.biodata.di.unimi.it	resource/rna-kg/rna-kg.md
 rnadisease	RNADisease	DataSource	http://www.rnadisease.org/	resource/rnadisease/rnadisease.md

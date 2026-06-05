@@ -2,18 +2,24 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://www.icgc-argo.org/
-    label: International Cancer Genome Consortium (ICGC)
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.icgc-argo.org/
+  label: International Cancer Genome Consortium (ICGC)
 creation_date: '2026-06-03T00:00:00Z'
-description: The International Cancer Genome Consortium (ICGC) is a global initiative to characterize the genomic, transcriptomic, and epigenomic changes in 50 different tumor types and subtypes. It generates comprehensive catalogues of somatic mutations and other cancer genomics data, made available to the research community. The original ICGC Data Portal (dcc.icgc.org) was retired in June 2024, with ICGC 25K data and the successor ICGC ARGO project continuing to provide access to cancer genomics datasets.
+description: The International Cancer Genome Consortium (ICGC) is a global initiative
+  to characterize the genomic, transcriptomic, and epigenomic changes in 50 different
+  tumor types and subtypes. It generates comprehensive catalogues of somatic mutations
+  and other cancer genomics data, made available to the research community. The original
+  ICGC Data Portal (dcc.icgc.org) was retired in June 2024, with ICGC 25K data and
+  the successor ICGC ARGO project continuing to provide access to cancer genomics
+  datasets.
 domains:
-  - genomics
-  - clinical
-  - biomedical
-  - health
+- genomics
+- clinical
+- biomedical
+- health
 homepage_url: https://www.icgc-argo.org/
 id: icgc
 last_modified_date: '2026-06-05T00:00:00Z'
@@ -23,34 +29,55 @@ license:
   label: Controlled access (ICGC DACO)
 name: ICGC
 products:
-  - category: GraphicalInterface
-    description: ICGC ARGO data platform for browsing, querying, and accessing uniformly analyzed cancer genomics and clinical data aligned to GRCh38.
-    format: http
-    id: icgc.platform
-    name: ICGC ARGO Data Platform
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: icgc
-    product_url: https://platform.icgc-argo.org/
-  - category: Product
-    description: Controlled-access cancer genomics data downloads, including the ICGC 25K release and PCAWG data, obtained through the ICGC DACO application process and Score download client.
-    format: mixed
-    id: icgc.downloads
-    name: ICGC 25K Data Downloads
-    original_source:
-      - relation_type: prov:hadPrimarySource
-        source: icgc
-    product_url: https://docs.icgc-argo.org/
+- category: GraphicalInterface
+  description: ICGC ARGO data platform for browsing, querying, and accessing uniformly
+    analyzed cancer genomics and clinical data aligned to GRCh38.
+  format: http
+  id: icgc.platform
+  name: ICGC ARGO Data Platform
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: icgc
+  product_url: https://platform.icgc-argo.org/
+- category: Product
+  description: Controlled-access cancer genomics data downloads, including the ICGC
+    25K release and PCAWG data, obtained through the ICGC DACO application process
+    and Score download client.
+  format: mixed
+  id: icgc.downloads
+  name: ICGC 25K Data Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: icgc
+  product_url: https://docs.icgc-argo.org/
+- category: Product
+  description: Unified BioMuta cancer mutation dataset produced by combining mutation
+    records from TCGA, ICGC, CIViC, and COSMIC into a common field structure.
+  format: csv
+  id: biomuta.dataset
+  name: BioMuta Cancer Mutation Dataset
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biomuta
+  product_url: https://biomuta.readthedocs.io/en/latest/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: civic
+  - relation_type: prov:wasDerivedFrom
+    source: cosmic
+  - relation_type: prov:wasDerivedFrom
+    source: icgc
+  - relation_type: prov:wasDerivedFrom
+    source: tcga
 publications:
-  - id: https://doi.org/10.1038/nature08987
-    journal: Nature
-    title: International network of cancer genome projects
-    year: '2010'
+- id: https://doi.org/10.1038/nature08987
+  journal: Nature
+  title: International network of cancer genome projects
+  year: '2010'
 synonyms:
-  - International Cancer Genome Consortium
-  - ICGC ARGO
+- International Cancer Genome Consortium
+- ICGC ARGO
 ---
-
 # ICGC
 
 ## Overview
