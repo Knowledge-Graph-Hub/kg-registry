@@ -2,23 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Yongqun Oliver He
-    orcid: 0000-0001-9189-9661
-    contact_details:
-      - contact_type: email
-        value: yongqunh@med.umich.edu
-      - contact_type: github
-        value: yongqunh
+- category: Individual
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
+  contact_details:
+  - contact_type: email
+    value: yongqunh@med.umich.edu
+  - contact_type: github
+    value: yongqunh
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of clinical informed consents
 domains:
-  - biomedical
+- biomedical
+- general
 homepage_url: https://github.com/ICO-ontology/ICO
 id: ico
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -26,20 +27,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Informed Consent Ontology
 products:
-  - category: OntologyProduct
-    description: Informed Consent Ontology in OWL format
-    format: owl
-    id: ico.owl
-    name: ico.owl
-    product_file_size: 205044
-    product_url: http://purl.obolibrary.org/obo/ico.owl
-    original_source:
-      - source: ico
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Informed Consent Ontology in OWL format
+  format: owl
+  id: ico.owl
+  name: ico.owl
+  product_file_size: 205044
+  product_url: http://purl.obolibrary.org/obo/ico.owl
+  original_source:
+  - source: ico
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/ICO-ontology/ICO
 publications: []
 ---
-
 ## Description
 
 An ontology of clinical informed consents

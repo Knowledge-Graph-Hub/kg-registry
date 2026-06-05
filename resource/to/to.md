@@ -5,20 +5,21 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
 creation_date: '2025-06-25T00:00:00Z'
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domains:
 - biological systems
+- phenotype
 homepage_url: http://browser.planteome.org/amigo
 id: to
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

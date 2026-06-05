@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Stephen Fisher
-    orcid: 0000-0001-8034-7685
-    contact_details:
-      - contact_type: email
-        value: safisher@upenn.edu
-      - contact_type: github
-        value: safisher
+- category: Individual
+  label: Stephen Fisher
+  orcid: 0000-0001-8034-7685
+  contact_details:
+  - contact_type: email
+    value: safisher@upenn.edu
+  - contact_type: github
+    value: safisher
 creation_date: '2025-09-29T00:00:00Z'
-description: An application ontology designed to annotate next-generation sequencing experiments performed on RNA.
+description: An application ontology designed to annotate next-generation sequencing
+  experiments performed on RNA.
 domains:
-  - biomedical
+- biomedical
+- general
 homepage_url: http://kim.bio.upenn.edu/software/ornaseq.shtml
 id: ornaseq
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -26,20 +28,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of RNA Sequencing
 products:
-  - category: OntologyProduct
-    description: Ontology of RNA Sequencing in OWL format
-    format: owl
-    id: ornaseq.owl
-    name: ornaseq.owl
-    product_file_size: 27418
-    product_url: http://purl.obolibrary.org/obo/ornaseq.owl
-    original_source:
-      - source: ornaseq
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Ontology of RNA Sequencing in OWL format
+  format: owl
+  id: ornaseq.owl
+  name: ornaseq.owl
+  product_file_size: 27418
+  product_url: http://purl.obolibrary.org/obo/ornaseq.owl
+  original_source:
+  - source: ornaseq
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/safisher/ornaseq
 publications: []
 ---
-
 ## Description
 
 An application ontology designed to annotate next-generation sequencing experiments performed on RNA.

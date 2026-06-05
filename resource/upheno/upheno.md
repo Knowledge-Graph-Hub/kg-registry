@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: James McLaughlin
-    orcid: 0000-0002-8361-2795
-    contact_details:
-      - contact_type: email
-        value: jmcl@ebi.ac.uk
-      - contact_type: github
-        value: jamesamcl
+- category: Individual
+  label: James McLaughlin
+  orcid: 0000-0002-8361-2795
+  contact_details:
+  - contact_type: email
+    value: jmcl@ebi.ac.uk
+  - contact_type: github
+    value: jamesamcl
 creation_date: '2025-09-29T00:00:00Z'
-description: The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.
+description: The uPheno ontology integrates multiple phenotype ontologies into a unified
+  cross-species phenotype ontology.
 domains:
-  - biological systems
+- biological systems
+- phenotype
 homepage_url: https://github.com/obophenotype/upheno
 id: upheno
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -26,46 +28,52 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Unified Phenotype Ontology (uPheno)
 products:
-  - category: OntologyProduct
-    description: uPheno 1 is no longer actively maintained, please start using uPheno 2 (see below).
-    format: owl
-    id: upheno.owl
-    name: uPheno 1 (inactive)
-    product_file_size: 416269865
-    product_url: http://purl.obolibrary.org/obo/upheno.owl
-    original_source:
-      - source: upheno
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: No longer actively maintained.
-    format: owl
-    id: upheno.mp-hp-view.owl
-    name: uPheno MP-HP equivalence axioms
-    product_file_size: 51640383
-    product_url: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
-    original_source:
-      - source: upheno
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: The new version of uPheno, along with species independent phenotypes and additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.
-    format: owl
-    id: upheno.v2.upheno.owl
-    name: uPheno 2
-    product_file_size: 416269865
-    product_url: http://purl.obolibrary.org/obo/upheno/v2/upheno.owl
-    original_source:
-      - source: upheno
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: uPheno 1 is no longer actively maintained, please start using uPheno
+    2 (see below).
+  format: owl
+  id: upheno.owl
+  name: uPheno 1 (inactive)
+  product_file_size: 416269865
+  product_url: http://purl.obolibrary.org/obo/upheno.owl
+  original_source:
+  - source: upheno
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: No longer actively maintained.
+  format: owl
+  id: upheno.mp-hp-view.owl
+  name: uPheno MP-HP equivalence axioms
+  product_file_size: 51640383
+  product_url: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
+  original_source:
+  - source: upheno
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: The new version of uPheno, along with species independent phenotypes
+    and additional phenotype relations. The ontology is still in Beta status, but
+    we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is
+    no longer actively maintained.
+  format: owl
+  id: upheno.v2.upheno.owl
+  name: uPheno 2
+  product_file_size: 416269865
+  product_url: http://purl.obolibrary.org/obo/upheno/v2/upheno.owl
+  original_source:
+  - source: upheno
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/upheno
 publications:
-  - id: https://doi.org/10.1101/2024.09.18.613276
-    title: 'The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics'
-  - id: https://zenodo.org/record/2382757
-    title: Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species
-  - id: https://zenodo.org/record/3352149
-    title: 'Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition'
+- id: https://doi.org/10.1101/2024.09.18.613276
+  title: 'The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative
+    phenomics'
+- id: https://zenodo.org/record/2382757
+  title: Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims
+    to reconcile logical definitions across species
+- id: https://zenodo.org/record/3352149
+  title: 'Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd
+    edition'
 ---
-
 ## Description
 
 The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.

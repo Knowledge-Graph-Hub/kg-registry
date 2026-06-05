@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: netpath
 product_url: http://www.netpath.org/
+warnings:
+- File was not able to be retrieved when checked on 2026-06-05_ HTTP 503 error when
+  accessing file
 layout: product_detail
 ---

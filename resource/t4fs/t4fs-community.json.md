@@ -10,7 +10,7 @@ name: This community view of T4FS makes the ontology available in JSON format wi
   term hierarchy.
 product_url: http://purl.obolibrary.org/obo/t4fs-community.json
 warnings:
-- File was not able to be retrieved when checked on 2026-06-03_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-05_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-03_ HTTP 404 error when
   accessing file

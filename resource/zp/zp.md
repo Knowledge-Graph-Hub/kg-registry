@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Yvonne Bradford
-    orcid: 0000-0002-9900-7880
-    contact_details:
-      - contact_type: email
-        value: ybradford@zfin.org
-      - contact_type: github
-        value: ybradford
+- category: Individual
+  label: Yvonne Bradford
+  orcid: 0000-0002-9900-7880
+  contact_details:
+  - contact_type: email
+    value: ybradford@zfin.org
+  - contact_type: github
+    value: ybradford
 creation_date: '2025-09-29T00:00:00Z'
-description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
+description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the
+  Zebrafish model organism.
 domains:
-  - biological systems
+- biological systems
+- phenotype
 homepage_url: https://github.com/obophenotype/zebrafish-phenotype-ontology
 id: zp
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -26,30 +28,29 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Zebrafish Phenotype Ontology
 products:
-  - category: OntologyProduct
-    description: Zebrafish Phenotype Ontology in OWL format
-    format: owl
-    id: zp.owl
-    name: zp.owl
-    product_file_size: 170306263
-    product_url: http://purl.obolibrary.org/obo/zp.owl
-    original_source:
-      - source: zp
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Zebrafish Phenotype Ontology in OBO format
-    format: obo
-    id: zp.obo
-    name: zp.obo
-    product_file_size: 15870641
-    product_url: http://purl.obolibrary.org/obo/zp.obo
-    original_source:
-      - source: zp
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Zebrafish Phenotype Ontology in OWL format
+  format: owl
+  id: zp.owl
+  name: zp.owl
+  product_file_size: 170306263
+  product_url: http://purl.obolibrary.org/obo/zp.owl
+  original_source:
+  - source: zp
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Zebrafish Phenotype Ontology in OBO format
+  format: obo
+  id: zp.obo
+  name: zp.obo
+  product_file_size: 15870641
+  product_url: http://purl.obolibrary.org/obo/zp.obo
+  original_source:
+  - source: zp
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
 publications: []
 ---
-
 ## Description
 
 The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.

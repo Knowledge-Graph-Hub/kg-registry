@@ -17,9 +17,10 @@ description: A terminology for the skills necessary to make data FAIR and to kee
   it FAIR.
 domains:
 - biomedical
+- information technology
 homepage_url: https://github.com/terms4fairskills/FAIRterminology
 id: t4fs
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -67,12 +68,12 @@ products:
     ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OBO format
     without upper-level ontology (ULO) terms to give the user community a simpler
@@ -84,12 +85,12 @@ products:
     the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in JSON format
     without upper-level ontology (ULO) terms to give the user community a simpler
@@ -101,12 +102,12 @@ products:
     the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.5281/zenodo.4705219
   title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for

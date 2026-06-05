@@ -65,8 +65,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: OntologyProduct
@@ -90,8 +88,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: OntologyProduct
@@ -128,8 +124,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: OntologyProduct
@@ -142,8 +136,6 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
@@ -3690,8 +3682,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -3802,12 +3794,10 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   compression: 7z
   description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
@@ -4146,12 +4136,10 @@ products:
     source: unibiomap
   product_url: https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Gene Ontology terms
@@ -4165,8 +4153,6 @@ products:
     source: go
   product_url: https://omabrowser.org/All/oma-go.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: Product

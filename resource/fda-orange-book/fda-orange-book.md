@@ -45,8 +45,6 @@ products:
     source: fda-orange-book
   product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -59,8 +57,6 @@ products:
     source: fda-orange-book
   product_url: https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: Product

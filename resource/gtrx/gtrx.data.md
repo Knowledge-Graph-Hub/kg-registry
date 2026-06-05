@@ -18,7 +18,7 @@ secondary_source:
 - relation_type: prov:wasInformedBy
   source: pubchem
 warnings:
-- File was not able to be retrieved when checked on 2026-06-03_ HTTP 405 error when
+- File was not able to be retrieved when checked on 2026-06-05_ HTTP 405 error when
   accessing file
 - The historical source website reported in the BioThings metadata, https_//gtrx.rbsapp.net/about.html,
   returned HTTP 404 during curation on 2026-06-02.

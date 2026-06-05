@@ -16,9 +16,10 @@ creation_date: '2025-06-25T00:00:00Z'
 description: An ontology of information entities.
 domains:
 - biomedical
+- information technology
 homepage_url: https://github.com/information-artifact-ontology/IAO/
 id: iao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -56,8 +57,6 @@ products:
     source: iao
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: OntologyProduct

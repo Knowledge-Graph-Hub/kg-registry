@@ -747,6 +747,9 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: smart
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 synonyms:
 - SMART
 - Simple Modular Architecture Research Tool

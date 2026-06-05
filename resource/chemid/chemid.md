@@ -49,8 +49,6 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: MappingProduct

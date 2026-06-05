@@ -72,12 +72,10 @@ products:
     source: gbif
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   compression: zip
   description: Simple CSV format occurrence downloads with interpreted data and commonly
@@ -89,12 +87,10 @@ products:
     source: gbif
   product_url: https://www.gbif.org/occurrence/download
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: DocumentationProduct
   description: Comprehensive technical documentation, API reference, developer guides,
     and data formats documentation
@@ -117,12 +113,10 @@ products:
     source: gbif
   product_url: https://www.gbif.org/ipt
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Annual comprehensive Catalogue of Life releases (Base Release with
     expert curation and Extended Release with broader source integration) with permanent
@@ -259,7 +253,7 @@ products:
 publications:
 - authors:
   - Robertson T
-  - Döring M
+  - "D\xF6ring M"
   - Guralnick R
   - Bloom D
   - Wieczorek J

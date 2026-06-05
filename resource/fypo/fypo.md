@@ -2,23 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Val Wood
-    orcid: 0000-0001-6330-7526
-    contact_details:
-      - contact_type: email
-        value: vw253@cam.ac.uk
-      - contact_type: github
-        value: ValWood
+- category: Individual
+  label: Val Wood
+  orcid: 0000-0001-6330-7526
+  contact_details:
+  - contact_type: email
+    value: vw253@cam.ac.uk
+  - contact_type: github
+    value: ValWood
 creation_date: '2025-09-29T00:00:00Z'
 description: FYPO is a formal ontology of phenotypes observed in fission yeast.
 domains:
-  - biological systems
+- biological systems
+- phenotype
 homepage_url: https://github.com/pombase/fypo
 id: fypo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -26,34 +27,33 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Fission Yeast Phenotype Ontology
 products:
-  - category: OntologyProduct
-    description: Fission Yeast Phenotype Ontology in OWL format
-    format: owl
-    id: fypo.owl
-    name: fypo.owl
-    product_file_size: 45187459
-    product_url: http://purl.obolibrary.org/obo/fypo.owl
-    original_source:
-      - source: fypo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Fission Yeast Phenotype Ontology in OBO format
-    format: obo
-    id: fypo.obo
-    name: fypo.obo
-    product_file_size: 7104105
-    product_url: http://purl.obolibrary.org/obo/fypo.obo
-    original_source:
-      - source: fypo
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Fission Yeast Phenotype Ontology in OWL format
+  format: owl
+  id: fypo.owl
+  name: fypo.owl
+  product_file_size: 45187459
+  product_url: http://purl.obolibrary.org/obo/fypo.owl
+  original_source:
+  - source: fypo
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Fission Yeast Phenotype Ontology in OBO format
+  format: obo
+  id: fypo.obo
+  name: fypo.obo
+  product_file_size: 7104105
+  product_url: http://purl.obolibrary.org/obo/fypo.obo
+  original_source:
+  - source: fypo
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/pombase/fypo
 taxon:
-  - NCBITaxon:4896
+- NCBITaxon:4896
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/23658422
-    title: 'FYPO: The Fission Yeast Phenotype Ontology.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/23658422
+  title: 'FYPO: The Fission Yeast Phenotype Ontology.'
 ---
-
 ## Description
 
 FYPO is a formal ontology of phenotypes observed in fission yeast.

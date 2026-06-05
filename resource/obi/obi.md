@@ -5,21 +5,22 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Bjoern Peters
+  orcid: 0000-0002-8457-6693
   contact_details:
   - contact_type: email
     value: bpeters@lji.org
   - contact_type: github
     value: bpeters42
-  label: Bjoern Peters
-  orcid: 0000-0002-8457-6693
 creation_date: '2025-06-04T00:00:00Z'
 description: An integrated ontology for the description of life-science and clinical
   investigations
 domains:
 - biomedical
+- general
 homepage_url: http://obi-ontology.org
 id: obi
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/

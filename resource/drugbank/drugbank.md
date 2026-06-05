@@ -802,12 +802,10 @@ products:
     source: pharmgkb
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -2849,6 +2847,9 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 - category: Product
   description: Supporting information for the PREDICT study, including supplementary
     tables and data supporting the drug-disease association gold standard and prediction
@@ -2868,10 +2869,10 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 publications:
 - id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

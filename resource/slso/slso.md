@@ -18,9 +18,10 @@ description: The Space Life Sciences Ontology is an application ontology and is 
   that contain space life science research data.
 domains:
 - biomedical
+- general
 homepage_url: https://github.com/nasa/LSDAO
 id: slso
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -58,8 +59,6 @@ products:
     source: slso
   product_url: http://purl.obolibrary.org/obo/slso.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
@@ -73,12 +72,12 @@ products:
     source: slso
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 publications: []
 repository: https://github.com/nasa/LSDAO
 ---

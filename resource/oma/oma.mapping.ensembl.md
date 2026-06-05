@@ -12,7 +12,7 @@ original_source:
   source: ensembl
 product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-06-03_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-05_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

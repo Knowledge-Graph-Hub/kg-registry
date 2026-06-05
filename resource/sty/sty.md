@@ -54,8 +54,6 @@ products:
     source: sty
   product_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/SemGroups.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: Product

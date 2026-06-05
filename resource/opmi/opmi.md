@@ -2,23 +2,26 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Yongqun Oliver He
-    orcid: 0000-0001-9189-9661
-    contact_details:
-      - contact_type: email
-        value: yongqunh@med.umich.edu
-      - contact_type: github
-        value: yongqunh
+- category: Individual
+  label: Yongqun Oliver He
+  orcid: 0000-0001-9189-9661
+  contact_details:
+  - contact_type: email
+    value: yongqunh@med.umich.edu
+  - contact_type: github
+    value: yongqunh
 creation_date: '2025-09-29T00:00:00Z'
-description: The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.
+description: The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically
+  represent and standardize various entities and relations associated with precision
+  medicine and related investigations at different conditions.
 domains:
-  - biomedical
+- biomedical
+- general
 homepage_url: https://github.com/OPMI/opmi
 id: opmi
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -26,20 +29,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Precision Medicine and Investigation
 products:
-  - category: OntologyProduct
-    description: Ontology of Precision Medicine and Investigation in OWL format
-    format: owl
-    id: opmi.owl
-    name: opmi.owl
-    product_file_size: 394555
-    product_url: http://purl.obolibrary.org/obo/opmi.owl
-    original_source:
-      - source: opmi
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Ontology of Precision Medicine and Investigation in OWL format
+  format: owl
+  id: opmi.owl
+  name: opmi.owl
+  product_file_size: 394555
+  product_url: http://purl.obolibrary.org/obo/opmi.owl
+  original_source:
+  - source: opmi
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/OPMI/opmi
 publications: []
 ---
-
 ## Description
 
 The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.

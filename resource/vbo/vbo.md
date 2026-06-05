@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Sabrina Toro
-    orcid: 0000-0002-4142-7153
-    contact_details:
-      - contact_type: email
-        value: Sabrina@tislab.org
-      - contact_type: github
-        value: sabrinatoro
+- category: Individual
+  label: Sabrina Toro
+  orcid: 0000-0002-4142-7153
+  contact_details:
+  - contact_type: email
+    value: Sabrina@tislab.org
+  - contact_type: github
+    value: sabrinatoro
 creation_date: '2025-09-29T00:00:00Z'
-description: Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.
+description: Vertebrate Breed Ontology is an ontology created to serve as a single
+  computable resource for vertebrate breed names.
 domains:
-  - biological systems
+- biological systems
+- organisms
 homepage_url: https://github.com/monarch-initiative/vertebrate-breed-ontology
 id: vbo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -26,72 +28,71 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Vertebrate Breed Ontology
 products:
-  - category: OntologyProduct
-    description: Vertebrate Breed Ontology in OWL format
-    format: owl
-    id: vbo.owl
-    name: vbo.owl
-    product_file_size: 2077292
-    product_url: http://purl.obolibrary.org/obo/vbo.owl
-    original_source:
-      - source: vbo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Vertebrate Breed Ontology in OBO format
-    format: obo
-    id: vbo.obo
-    name: vbo.obo
-    product_file_size: 990658
-    product_url: http://purl.obolibrary.org/obo/vbo.obo
-    original_source:
-      - source: vbo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Vertebrate Breed Ontology in JSON format
-    format: json
-    id: vbo.json
-    name: vbo.json
-    product_file_size: 1205306
-    product_url: http://purl.obolibrary.org/obo/vbo.json
-    original_source:
-      - source: vbo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Vertebrate Breed Ontology in OWL format
-    format: owl
-    id: vbo.vbo-base.owl
-    name: vbo.vbo-base.owl
-    product_file_size: 2016216
-    product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
-    original_source:
-      - source: vbo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Vertebrate Breed Ontology in OBO format
-    format: obo
-    id: vbo.vbo-base.obo
-    name: vbo.vbo-base.obo
-    product_file_size: 958659
-    product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.obo
-    original_source:
-      - source: vbo
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Vertebrate Breed Ontology in JSON format
-    format: json
-    id: vbo.vbo-base.json
-    name: vbo.vbo-base.json
-    product_file_size: 1154978
-    product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
-    original_source:
-      - source: vbo
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OWL format
+  format: owl
+  id: vbo.owl
+  name: vbo.owl
+  product_file_size: 2077292
+  product_url: http://purl.obolibrary.org/obo/vbo.owl
+  original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OBO format
+  format: obo
+  id: vbo.obo
+  name: vbo.obo
+  product_file_size: 990658
+  product_url: http://purl.obolibrary.org/obo/vbo.obo
+  original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in JSON format
+  format: json
+  id: vbo.json
+  name: vbo.json
+  product_file_size: 1205306
+  product_url: http://purl.obolibrary.org/obo/vbo.json
+  original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OWL format
+  format: owl
+  id: vbo.vbo-base.owl
+  name: vbo.vbo-base.owl
+  product_file_size: 2016216
+  product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
+  original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OBO format
+  format: obo
+  id: vbo.vbo-base.obo
+  name: vbo.vbo-base.obo
+  product_file_size: 958659
+  product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.obo
+  original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in JSON format
+  format: json
+  id: vbo.vbo-base.json
+  name: vbo.vbo-base.json
+  product_file_size: 1154978
+  product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
+  original_source:
+  - source: vbo
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
 publications:
-  - id: https://doi.org/10.1111/jvim.70133
-    title: 'The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization'
+- id: https://doi.org/10.1111/jvim.70133
+  title: 'The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization'
 ---
-
 ## Description
 
 Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.

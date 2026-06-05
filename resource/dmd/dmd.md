@@ -51,8 +51,6 @@ products:
     source: dmd
   product_url: https://digital.nhs.uk/services/terminology-and-classifications/dm-d
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct

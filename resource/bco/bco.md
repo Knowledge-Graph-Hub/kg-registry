@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Ramona Walls
-    orcid: 0000-0001-8815-0078
-    contact_details:
-      - contact_type: email
-        value: rlwalls2008@gmail.com
-      - contact_type: github
-        value: ramonawalls
+- category: Individual
+  label: Ramona Walls
+  orcid: 0000-0001-8815-0078
+  contact_details:
+  - contact_type: email
+    value: rlwalls2008@gmail.com
+  - contact_type: github
+    value: ramonawalls
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
+description: An ontology to support the interoperability of biodiversity data, including
+  data on museum collections, environmental/metagenomic samples, and ecological surveys.
 domains:
-  - biological systems
+- biological systems
+- organisms
 homepage_url: https://github.com/BiodiversityOntologies/bco
 id: bco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -26,22 +28,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Biological Collections Ontology
 products:
-  - category: OntologyProduct
-    description: Biological Collections Ontology in OWL format
-    format: owl
-    id: bco.owl
-    name: bco.owl
-    product_file_size: 108849
-    product_url: http://purl.obolibrary.org/obo/bco.owl
-    original_source:
-      - source: bco
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Biological Collections Ontology in OWL format
+  format: owl
+  id: bco.owl
+  name: bco.owl
+  product_file_size: 108849
+  product_url: http://purl.obolibrary.org/obo/bco.owl
+  original_source:
+  - source: bco
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/BiodiversityOntologies/bco
 publications:
-  - id: https://doi.org/10.1371/journal.pone.0089606
-    title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction to the Biological Collections Ontology and Related Ontologies'
+- id: https://doi.org/10.1371/journal.pone.0089606
+  title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
+    to the Biological Collections Ontology and Related Ontologies'
 ---
-
 ## Description
 
 An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.

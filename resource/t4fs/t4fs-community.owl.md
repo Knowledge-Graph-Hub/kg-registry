@@ -9,7 +9,7 @@ name: This community view of T4FS makes the ontology available in OWL without up
   ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
 product_url: http://purl.obolibrary.org/obo/t4fs-community.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-03_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-05_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-02_ HTTP 404 error when
   accessing file

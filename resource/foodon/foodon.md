@@ -21,9 +21,10 @@ description: A broadly scoped ontology representing entities which bear a  food 
   other OBO Foundry ontologies to support interoperability in diet and nutrition research
 domains:
 - chemistry and biochemistry
+- nutrition
 homepage_url: https://foodon.org/
 id: foodon
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -48,8 +49,6 @@ products:
   name: FoodOn core ontology (currently the same as foodon.owl)
   product_url: http://purl.obolibrary.org/obo/foodon_core.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: GraphProduct

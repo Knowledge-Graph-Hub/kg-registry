@@ -2,23 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Chris Grove
-    orcid: 0000-0001-9076-6015
-    contact_details:
-      - contact_type: email
-        value: cgrove@caltech.edu
-      - contact_type: github
-        value: chris-grove
+- category: Individual
+  label: Chris Grove
+  orcid: 0000-0001-9076-6015
+  contact_details:
+  - contact_type: email
+    value: cgrove@caltech.edu
+  - contact_type: github
+    value: chris-grove
 creation_date: '2025-09-29T00:00:00Z'
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domains:
-  - biological systems
+- biological systems
+- phenotype
 homepage_url: https://github.com/obophenotype/c-elegans-phenotype-ontology
 id: wbphenotype
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -26,44 +27,44 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: C. elegans phenotype
 products:
-  - category: OntologyProduct
-    description: C. elegans phenotype in OWL format
-    format: owl
-    id: wbphenotype.owl
-    name: wbphenotype.owl
-    product_file_size: 1042232
-    product_url: http://purl.obolibrary.org/obo/wbphenotype.owl
-    original_source:
-      - source: wbphenotype
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: C. elegans phenotype in OBO format
-    format: obo
-    id: wbphenotype.obo
-    name: wbphenotype.obo
-    product_file_size: 180404
-    product_url: http://purl.obolibrary.org/obo/wbphenotype.obo
-    original_source:
-      - source: wbphenotype
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: C. elegans phenotype in OWL format
-    format: owl
-    id: wbphenotype.wbphenotype-base.owl
-    name: wbphenotype.wbphenotype-base.owl
-    product_file_size: 329630
-    product_url: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
-    original_source:
-      - source: wbphenotype
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: C. elegans phenotype in OWL format
+  format: owl
+  id: wbphenotype.owl
+  name: wbphenotype.owl
+  product_file_size: 1042232
+  product_url: http://purl.obolibrary.org/obo/wbphenotype.owl
+  original_source:
+  - source: wbphenotype
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: C. elegans phenotype in OBO format
+  format: obo
+  id: wbphenotype.obo
+  name: wbphenotype.obo
+  product_file_size: 180404
+  product_url: http://purl.obolibrary.org/obo/wbphenotype.obo
+  original_source:
+  - source: wbphenotype
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: C. elegans phenotype in OWL format
+  format: owl
+  id: wbphenotype.wbphenotype-base.owl
+  name: wbphenotype.wbphenotype-base.owl
+  product_file_size: 329630
+  product_url: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
+  original_source:
+  - source: wbphenotype
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 taxon:
-  - NCBITaxon:6237
+- NCBITaxon:6237
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/21261995
-    title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/21261995
+  title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond the
+    C. elegans community.'
 ---
-
 ## Description
 
 A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes

@@ -16,10 +16,11 @@ creation_date: '2025-06-25T00:00:00Z'
 description: Relationship types shared across multiple ontologies
 domains:
 - biological systems
+- general
 homepage_url: https://oborel.github.io/
 id: ro
 infores_id: ro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
@@ -98,8 +99,6 @@ products:
     source: ro
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: OntologyProduct

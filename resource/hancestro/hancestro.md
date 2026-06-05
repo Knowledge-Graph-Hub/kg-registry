@@ -18,9 +18,10 @@ description: The Human Ancestry Ontology (HANCESTRO) provides a systematic descr
   association studies.
 domains:
 - biological systems
+- organisms
 homepage_url: https://ebispot.github.io/hancestro/
 id: hancestro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -46,8 +47,6 @@ products:
   name: HANCESTRO Base
   product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: OntologyProduct

@@ -2,23 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Fr d ric Bastian
-    orcid: 0000-0002-9415-5104
-    contact_details:
-      - contact_type: email
-        value: frederic.bastian@unil.ch
-      - contact_type: github
-        value: fbastian
+- category: Individual
+  label: Fr d ric Bastian
+  orcid: 0000-0002-9415-5104
+  contact_details:
+  - contact_type: email
+    value: frederic.bastian@unil.ch
+  - contact_type: github
+    value: fbastian
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to capture confidence information about annotations.
 domains:
-  - biomedical
+- biomedical
+- information technology
 homepage_url: https://github.com/BgeeDB/confidence-information-ontology
 id: cio
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -26,32 +27,32 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Confidence Information Ontology
 products:
-  - category: OntologyProduct
-    description: Confidence Information Ontology in OWL format
-    format: owl
-    id: cio.owl
-    name: cio.owl
-    product_file_size: 6187
-    product_url: http://purl.obolibrary.org/obo/cio.owl
-    original_source:
-      - source: cio
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Confidence Information Ontology in OBO format
-    format: obo
-    id: cio.obo
-    name: cio.obo
-    product_file_size: 3960
-    product_url: http://purl.obolibrary.org/obo/cio.obo
-    original_source:
-      - source: cio
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Confidence Information Ontology in OWL format
+  format: owl
+  id: cio.owl
+  name: cio.owl
+  product_file_size: 6187
+  product_url: http://purl.obolibrary.org/obo/cio.owl
+  original_source:
+  - source: cio
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Confidence Information Ontology in OBO format
+  format: obo
+  id: cio.obo
+  name: cio.obo
+  product_file_size: 3960
+  product_url: http://purl.obolibrary.org/obo/cio.obo
+  original_source:
+  - source: cio
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/BgeeDB/confidence-information-ontology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25957950
-    title: 'The Confidence Information Ontology: a step towards a standard for asserting confidence in annotations'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25957950
+  title: 'The Confidence Information Ontology: a step towards a standard for asserting
+    confidence in annotations'
 ---
-
 ## Description
 
 An ontology to capture confidence information about annotations.

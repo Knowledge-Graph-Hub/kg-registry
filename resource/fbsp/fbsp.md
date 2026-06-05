@@ -17,9 +17,10 @@ description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baec
   and of other taxa referred to in FlyBase.
 domains:
 - biological systems
+- organisms
 homepage_url: http://www.flybase.org/
 id: fbsp
-last_modified_date: '2026-04-16T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -36,8 +37,6 @@ products:
     source: fbsp
   product_url: http://purl.obolibrary.org/obo/fbsp.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 publications: []

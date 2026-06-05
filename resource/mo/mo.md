@@ -15,9 +15,10 @@ description: A standardized description of a microarray experiment in support of
   v.1.
 domains:
 - biomedical
+- general
 homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
 id: mo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -34,8 +35,6 @@ products:
     source: mo
   product_url: http://purl.obolibrary.org/obo/mo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 publications: []

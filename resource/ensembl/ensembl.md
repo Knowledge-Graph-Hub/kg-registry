@@ -964,12 +964,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1761,8 +1759,6 @@ products:
     source: ensembl
   product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: Product
@@ -1880,6 +1876,9 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 publications:
 - authors:
   - Dyer SC

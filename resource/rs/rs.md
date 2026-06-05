@@ -2,23 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Shur-Jen Wang
-    orcid: 0000-0001-5256-8683
-    contact_details:
-      - contact_type: email
-        value: sjwang@mcw.edu
-      - contact_type: github
-        value: shurjenw
+- category: Individual
+  label: Shur-Jen Wang
+  orcid: 0000-0001-5256-8683
+  contact_details:
+  - contact_type: email
+    value: sjwang@mcw.edu
+  - contact_type: github
+    value: shurjenw
 creation_date: '2025-09-29T00:00:00Z'
 description: Ontology of rat strains
 domains:
-  - biological systems
+- biological systems
+- organisms
 homepage_url: http://rgd.mcw.edu/rgdweb/search/strains.html
 id: rs
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -26,33 +27,33 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Rat Strain Ontology
 products:
-  - category: OntologyProduct
-    description: Rat Strain Ontology in OWL format
-    format: owl
-    id: rs.owl
-    name: rs.owl
-    product_file_size: 5527319
-    product_url: http://purl.obolibrary.org/obo/rs.owl
-    original_source:
-      - source: rs
-        relation_type: prov:hadPrimarySource
-  - category: OntologyProduct
-    description: Rat Strain Ontology in OBO format
-    format: obo
-    id: rs.obo
-    name: rs.obo
-    product_url: http://purl.obolibrary.org/obo/rs.obo
-    original_source:
-      - source: rs
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Rat Strain Ontology in OWL format
+  format: owl
+  id: rs.owl
+  name: rs.owl
+  product_file_size: 5527319
+  product_url: http://purl.obolibrary.org/obo/rs.owl
+  original_source:
+  - source: rs
+    relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Rat Strain Ontology in OBO format
+  format: obo
+  id: rs.obo
+  name: rs.obo
+  product_url: http://purl.obolibrary.org/obo/rs.obo
+  original_source:
+  - source: rs
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
 taxon:
-  - NCBITaxon:10114
+- NCBITaxon:10114
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24267899
-    title: 'Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24267899
+  title: 'Rat Strain Ontology: structured controlled vocabulary designed to facilitate
+    access to strain data at RGD.'
 ---
-
 ## Description
 
 Ontology of rat strains

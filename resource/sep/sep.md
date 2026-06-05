@@ -14,9 +14,10 @@ description: A structured controlled vocabulary for the annotation of sample pro
   and separation techniques in scientific experiments.
 domains:
 - biomedical
+- general
 homepage_url: http://psidev.info/index.php?q=node/312
 id: sep
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -33,8 +34,6 @@ products:
     source: sep
   product_url: http://purl.obolibrary.org/obo/sep.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 publications: []

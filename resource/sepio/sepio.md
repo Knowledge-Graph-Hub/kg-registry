@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Matthew Brush
-    orcid: 0000-0002-1048-5019
-    contact_details:
-      - contact_type: email
-        value: mhb120@gmail.com
-      - contact_type: github
-        value: mbrush
+- category: Individual
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
+  contact_details:
+  - contact_type: email
+    value: mhb120@gmail.com
+  - contact_type: github
+    value: mbrush
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology for representing the provenance of scientific claims and the evidence that supports them.
+description: An ontology for representing the provenance of scientific claims and
+  the evidence that supports them.
 domains:
-  - biomedical
+- biomedical
+- general
 homepage_url: https://github.com/monarch-initiative/SEPIO-ontology
 id: sepio
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
@@ -26,20 +28,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Scientific Evidence and Provenance Information Ontology
 products:
-  - category: OntologyProduct
-    description: SEPIO
-    format: owl
-    id: sepio.owl
-    name: SEPIO
-    product_file_size: 75985
-    product_url: http://purl.obolibrary.org/obo/sepio.owl
-    original_source:
-      - source: sepio
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: SEPIO
+  format: owl
+  id: sepio.owl
+  name: SEPIO
+  product_file_size: 75985
+  product_url: http://purl.obolibrary.org/obo/sepio.owl
+  original_source:
+  - source: sepio
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/monarch-initiative/SEPIO-ontology
 publications: []
 ---
-
 ## Description
 
 An ontology for representing the provenance of scientific claims and the evidence that supports them.

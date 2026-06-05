@@ -395,16 +395,14 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -426,14 +424,12 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -456,16 +452,14 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -523,16 +517,14 @@ products:
     source: repodb
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -1514,17 +1506,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -1573,17 +1563,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 publications:
 - authors:
   - Ursu O

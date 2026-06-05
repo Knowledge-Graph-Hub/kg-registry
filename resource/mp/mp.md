@@ -16,10 +16,11 @@ creation_date: '2025-06-04T00:00:00Z'
 description: Standard terms for annotating mammalian phenotypic data.
 domains:
 - biological systems
+- phenotype
 homepage_url: https://www.informatics.jax.org/vocab/mp_ontology/
 id: mp
 infores_id: mp
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -48,8 +49,6 @@ products:
     source: mp
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: OntologyProduct

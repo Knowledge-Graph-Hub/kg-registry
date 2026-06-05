@@ -5,20 +5,21 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: George Gkoutos
+  orcid: 0000-0002-2061-091X
   contact_details:
   - contact_type: email
     value: g.gkoutos@gmail.com
   - contact_type: github
     value: gkoutos
-  label: George Gkoutos
-  orcid: 0000-0002-2061-091X
 creation_date: '2025-06-04T00:00:00Z'
 description: Metrical units for use in conjunction with PATO
 domains:
 - biological systems
+- phenotype
 homepage_url: https://github.com/bio-ontology-research-group/unit-ontology
 id: uo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

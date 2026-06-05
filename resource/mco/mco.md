@@ -24,9 +24,10 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Microbial Conditions Ontology is an ontology...
 domains:
 - biomedical
+- general
 homepage_url: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 id: mco
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

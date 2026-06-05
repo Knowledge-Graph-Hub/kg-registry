@@ -13,9 +13,10 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - biological systems
+- organisms
 homepage_url: http://www.animaldiversity.org
 id: adw
-last_modified_date: '2026-05-20T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -32,8 +33,6 @@ products:
     source: adw
   product_url: http://purl.obolibrary.org/obo/adw.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 publications: []

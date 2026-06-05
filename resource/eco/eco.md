@@ -5,20 +5,21 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Michelle Giglio
+  orcid: 0000-0001-7628-5565
   contact_details:
   - contact_type: email
     value: mgiglio@som.umaryland.edu
   - contact_type: github
     value: mgiglio99
-  label: Michelle Giglio
-  orcid: 0000-0001-7628-5565
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology for experimental and other evidence statements.
 domains:
 - biomedical
+- general
 homepage_url: https://www.evidenceontology.org
 id: eco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

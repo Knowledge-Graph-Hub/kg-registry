@@ -82,8 +82,6 @@ products:
     source: chea
   product_url: https://hub.docker.com/r/maayanlab/chea3
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: GraphicalInterface

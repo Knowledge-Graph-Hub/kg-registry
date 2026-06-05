@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Jim Balhoff
-    orcid: 0000-0002-8688-6599
-    contact_details:
-      - contact_type: email
-        value: balhoff@renci.org
-      - contact_type: github
-        value: balhoff
+- category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
+  contact_details:
+  - contact_type: email
+    value: balhoff@renci.org
+  - contact_type: github
+    value: balhoff
 creation_date: '2025-09-29T00:00:00Z'
-description: a formalization of concepts and relations relevant to evolutionary comparative analysis
+description: a formalization of concepts and relations relevant to evolutionary comparative
+  analysis
 domains:
-  - biological systems
+- biological systems
+- organisms
 homepage_url: https://github.com/evoinfo/cdao
 id: cdao
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -26,22 +28,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Comparative Data Analysis Ontology
 products:
-  - category: OntologyProduct
-    description: Comparative Data Analysis Ontology in OWL format
-    format: owl
-    id: cdao.owl
-    name: cdao.owl
-    product_file_size: 10952
-    product_url: http://purl.obolibrary.org/obo/cdao.owl
-    original_source:
-      - source: cdao
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Comparative Data Analysis Ontology in OWL format
+  format: owl
+  id: cdao.owl
+  name: cdao.owl
+  product_file_size: 10952
+  product_url: http://purl.obolibrary.org/obo/cdao.owl
+  original_source:
+  - source: cdao
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/evoinfo/cdao
 publications:
-  - id: https://doi.org/10.4137/EBO.S2320
-    title: Initial Implementation of a Comparative Data Analysis Ontology
+- id: https://doi.org/10.4137/EBO.S2320
+  title: Initial Implementation of a Comparative Data Analysis Ontology
 ---
-
 ## Description
 
 a formalization of concepts and relations relevant to evolutionary comparative analysis

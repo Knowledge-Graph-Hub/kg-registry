@@ -16,9 +16,10 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Food-Drug interactions automatically extracted from scientific literature
 domains:
 - chemistry and biochemistry
+- nutrition
 homepage_url: https://gitub.u-bordeaux.fr/erias/fideo
 id: fideo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,12 +37,10 @@ products:
     source: fideo
   product_url: http://purl.obolibrary.org/obo/fideo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

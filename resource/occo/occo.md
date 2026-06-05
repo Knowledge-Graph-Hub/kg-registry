@@ -2,23 +2,29 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Jie Zheng
-    orcid: 0000-0002-2999-0103
-    contact_details:
-      - contact_type: email
-        value: zhengj2007@gmail.com
-      - contact_type: github
-        value: zhengj2007
+- category: Individual
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
+  contact_details:
+  - contact_type: email
+    value: zhengj2007@gmail.com
+  - contact_type: github
+    value: zhengj2007
 creation_date: '2025-09-29T00:00:00Z'
-description: An ontology representing occupations. It is designed to facilitate harmonization of existing occupation standards, such as the US Bureau of Labor Statistics Standard Occupational Classification (US SOC), the International Standard Classification of Occupations (ISCO), the UK National Statistics Standard Occupational Classification (UK SOC), and the European Skills, Competences, Qualifications and Occupations (ESCO) of the European Union.
+description: An ontology representing occupations. It is designed to facilitate harmonization
+  of existing occupation standards, such as the US Bureau of Labor Statistics Standard
+  Occupational Classification (US SOC), the International Standard Classification
+  of Occupations (ISCO), the UK National Statistics Standard Occupational Classification
+  (UK SOC), and the European Skills, Competences, Qualifications and Occupations (ESCO)
+  of the European Union.
 domains:
-  - biomedical
+- biomedical
+- information technology
 homepage_url: https://github.com/Occupation-Ontology/OccO
 id: occo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -26,20 +32,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Occupation Ontology
 products:
-  - category: OntologyProduct
-    description: Occupation Ontology in OWL format
-    format: owl
-    id: occo.owl
-    name: occo.owl
-    product_file_size: 280761
-    product_url: http://purl.obolibrary.org/obo/occo.owl
-    original_source:
-      - source: occo
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Occupation Ontology in OWL format
+  format: owl
+  id: occo.owl
+  name: occo.owl
+  product_file_size: 280761
+  product_url: http://purl.obolibrary.org/obo/occo.owl
+  original_source:
+  - source: occo
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/Occupation-Ontology/OccO
 publications: []
 ---
-
 ## Description
 
 An ontology representing occupations. It is designed to facilitate harmonization of existing occupation standards, such as the US Bureau of Labor Statistics Standard Occupational Classification (US SOC), the International Standard Classification of Occupations (ISCO), the UK National Statistics Standard Occupational Classification (UK SOC), and the European Skills, Competences, Qualifications and Occupations (ESCO) of the European Union.

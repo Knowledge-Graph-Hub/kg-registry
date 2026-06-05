@@ -2,23 +2,24 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Paul Fabry
-    orcid: 0000-0002-3336-2476
-    contact_details:
-      - contact_type: email
-        value: paul.fabry@usherbrooke.ca
-      - contact_type: github
-        value: pfabry
+- category: Individual
+  label: Paul Fabry
+  orcid: 0000-0002-3336-2476
+  contact_details:
+  - contact_type: email
+    value: paul.fabry@usherbrooke.ca
+  - contact_type: github
+    value: pfabry
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology to describe entities related to prescription of drugs
 domains:
-  - biomedical
+- biomedical
+- information technology
 homepage_url: https://github.com/OpenLHS/PDRO
 id: pdro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -26,22 +27,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: The Prescription of Drugs Ontology
 products:
-  - category: OntologyProduct
-    description: The Prescription of Drugs Ontology in OWL format
-    format: owl
-    id: pdro.owl
-    name: pdro.owl
-    product_file_size: 69036
-    product_url: http://purl.obolibrary.org/obo/pdro.owl
-    original_source:
-      - source: pdro
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: The Prescription of Drugs Ontology in OWL format
+  format: owl
+  id: pdro.owl
+  name: pdro.owl
+  product_file_size: 69036
+  product_url: http://purl.obolibrary.org/obo/pdro.owl
+  original_source:
+  - source: pdro
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/OpenLHS/PDRO
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/34831777
-    title: 'The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its Parts'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34831777
+  title: 'The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its Parts'
 ---
-
 ## Description
 
 An ontology to describe entities related to prescription of drugs

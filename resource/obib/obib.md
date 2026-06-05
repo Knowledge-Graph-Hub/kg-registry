@@ -5,21 +5,22 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Justin Whorton
+  orcid: 0009-0003-4268-6207
   contact_details:
   - contact_type: email
     value: jmwhorton@uams.edu
   - contact_type: github
     value: jmwhorton
-  label: Justin Whorton
-  orcid: 0009-0003-4268-6207
 creation_date: '2025-06-04T00:00:00Z'
 description: An ontology built for annotation and modeling of biobank repository and
   biobanking administration
 domains:
 - biomedical
+- general
 homepage_url: https://github.com/biobanking/biobanking
 id: obib
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

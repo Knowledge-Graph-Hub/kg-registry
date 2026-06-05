@@ -21,9 +21,10 @@ description: AfPO is an ontology that can be used in the study of diverse popula
   by mapping them using a language or ethnicity identifier or synonyms.
 domains:
 - biological systems
+- organisms
 homepage_url: https://github.com/h3abionet/afpo
 id: afpo
-last_modified_date: '2026-05-19T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -52,8 +53,6 @@ products:
     source: afpo
   product_url: http://purl.obolibrary.org/obo/afpo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
@@ -66,8 +65,6 @@ products:
     source: afpo
   product_url: http://purl.obolibrary.org/obo/afpo.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 publications: []

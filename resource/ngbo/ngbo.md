@@ -2,23 +2,28 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Dalia Alghamdi
-    orcid: 0000-0002-2801-0767
-    contact_details:
-      - contact_type: email
-        value: dal.alghamdi92@gmail.com
-      - contact_type: github
-        value: dalalghamdi
+- category: Individual
+  label: Dalia Alghamdi
+  orcid: 0000-0002-2801-0767
+  contact_details:
+  - contact_type: email
+    value: dal.alghamdi92@gmail.com
+  - contact_type: github
+    value: dalalghamdi
 creation_date: '2025-09-29T00:00:00Z'
-description: 'The Next Generation Biobanking Ontology (NGBO) is an open application ontology representing contextual data about omics digital assets in biobank. The ontology focuses on capturing the information about three main activities: wet bench analysis used to generate omics data, bioinformatics analysis used to analyze and interpret data, and data management.'
+description: 'The Next Generation Biobanking Ontology (NGBO) is an open application
+  ontology representing contextual data about omics digital assets in biobank. The
+  ontology focuses on capturing the information about three main activities: wet bench
+  analysis used to generate omics data, bioinformatics analysis used to analyze and
+  interpret data, and data management.'
 domains:
-  - biomedical
+- biomedical
+- general
 homepage_url: https://github.com/Dalalghamdi/NGBO
 id: ngbo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -26,20 +31,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Next Generation Biobanking Ontology
 products:
-  - category: OntologyProduct
-    description: Next Generation Biobanking Ontology in OWL format
-    format: owl
-    id: ngbo.owl
-    name: ngbo.owl
-    product_file_size: 187540
-    product_url: http://purl.obolibrary.org/obo/ngbo.owl
-    original_source:
-      - source: ngbo
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Next Generation Biobanking Ontology in OWL format
+  format: owl
+  id: ngbo.owl
+  name: ngbo.owl
+  product_file_size: 187540
+  product_url: http://purl.obolibrary.org/obo/ngbo.owl
+  original_source:
+  - source: ngbo
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/Dalalghamdi/NGBO
 publications: []
 ---
-
 ## Description
 
 The Next Generation Biobanking Ontology (NGBO) is an open application ontology representing contextual data about omics digital assets in biobank. The ontology focuses on capturing the information about three main activities: wet bench analysis used to generate omics data, bioinformatics analysis used to analyze and interpret data, and data management.

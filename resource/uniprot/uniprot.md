@@ -98,12 +98,10 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
+    header found
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -145,8 +143,6 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
 - category: GraphProduct
@@ -1025,12 +1021,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -3243,17 +3237,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -3302,17 +3294,15 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
-  - 'File was not able to be retrieved when checked on 2026-06-03: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
 - category: Product
   description: Bulk download of DisProt data in multiple formats including JSON, TSV,
     FASTA, and GAF
@@ -3545,8 +3535,6 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
 - category: Product
@@ -3681,8 +3669,6 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 500 error
     when accessing file'
 - category: GraphicalInterface
@@ -4010,6 +3996,9 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
+    to URL'
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

@@ -2,23 +2,25 @@
 activity_status: active
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Pol Castellano Escuder
-    orcid: 0000-0001-6466-877X
-    contact_details:
-      - contact_type: email
-        value: polcaes@gmail.com
-      - contact_type: github
-        value: pcastellanoescuder
+- category: Individual
+  label: Pol Castellano Escuder
+  orcid: 0000-0001-6466-877X
+  contact_details:
+  - contact_type: email
+    value: polcaes@gmail.com
+  - contact_type: github
+    value: pcastellanoescuder
 creation_date: '2025-09-29T00:00:00Z'
-description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data
+description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake
+  data and associate it with metabolomic data
 domains:
-  - chemistry and biochemistry
+- chemistry and biochemistry
+- nutrition
 homepage_url: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 id: fobi
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -26,24 +28,26 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Food-Biomarker Ontology
 products:
-  - category: OntologyProduct
-    description: FOBI is an ontology to represent food intake data and associate it with metabolomic data
-    format: owl
-    id: fobi.owl
-    name: FOBI is an ontology to represent food intake data and associate it with metabolomic data
-    product_file_size: 118923
-    product_url: http://purl.obolibrary.org/obo/fobi.owl
-    original_source:
-      - source: fobi
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: FOBI is an ontology to represent food intake data and associate it
+    with metabolomic data
+  format: owl
+  id: fobi.owl
+  name: FOBI is an ontology to represent food intake data and associate it with metabolomic
+    data
+  product_file_size: 118923
+  product_url: http://purl.obolibrary.org/obo/fobi.owl
+  original_source:
+  - source: fobi
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/32556148
-    title: 'FOBI: an ontology to represent food intake data and associate it with metabolomic data'
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/34601570
-    title: 'The fobitools framework: the first steps towards food enrichment analysis'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/32556148
+  title: 'FOBI: an ontology to represent food intake data and associate it with metabolomic
+    data'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34601570
+  title: 'The fobitools framework: the first steps towards food enrichment analysis'
 ---
-
 ## Description
 
 FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data

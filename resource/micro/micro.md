@@ -2,23 +2,24 @@
 activity_status: inactive
 category: Ontology
 collection:
-  - obo-foundry
+- obo-foundry
 contacts:
-  - category: Individual
-    label: Carrine Blank
-    orcid: 0000-0002-2100-6351
-    contact_details:
-      - contact_type: email
-        value: carrine.blank@umontana.edu
-      - contact_type: github
-        value: carrineblank
+- category: Individual
+  label: Carrine Blank
+  orcid: 0000-0002-2100-6351
+  contact_details:
+  - contact_type: email
+    value: carrine.blank@umontana.edu
+  - contact_type: github
+    value: carrineblank
 creation_date: '2025-09-29T00:00:00Z'
 description: An ontology of prokaryotic phenotypic and metabolic characters
 domains:
-  - biological systems
+- biological systems
+- phenotype
 homepage_url: https://github.com/carrineblank/MicrO
 id: micro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/2.0/
@@ -26,20 +27,20 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 products:
-  - category: OntologyProduct
-    description: Ontology of Prokaryotic Phenotypic and Metabolic Characters in OWL format
-    format: owl
-    id: micro.owl
-    name: micro.owl
-    product_file_size: 665050
-    product_url: http://purl.obolibrary.org/obo/micro.owl
-    original_source:
-      - source: micro
-        relation_type: prov:hadPrimarySource
+- category: OntologyProduct
+  description: Ontology of Prokaryotic Phenotypic and Metabolic Characters in OWL
+    format
+  format: owl
+  id: micro.owl
+  name: micro.owl
+  product_file_size: 665050
+  product_url: http://purl.obolibrary.org/obo/micro.owl
+  original_source:
+  - source: micro
+    relation_type: prov:hadPrimarySource
 repository: https://github.com/carrineblank/MicrO
 publications: []
 ---
-
 ## Description
 
 An ontology of prokaryotic phenotypic and metabolic characters

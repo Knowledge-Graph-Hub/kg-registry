@@ -21,9 +21,10 @@ description: Ontology of plant gall phenotypes. Plant galls are novel plant stru
   vocabulary for natural language descriptions of plant galls.
 domains:
 - biological systems
+- phenotype
 homepage_url: https://adeans.github.io/gallont/
 id: gallont
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -51,8 +52,6 @@ products:
     source: gallont
   product_url: http://purl.obolibrary.org/obo/gallont.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
     when accessing file'
 - category: OntologyProduct

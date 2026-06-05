@@ -5,22 +5,23 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Sebastian Koehler
+  orcid: 0000-0002-5316-1399
   contact_details:
   - contact_type: email
     value: dr.sebastian.koehler@gmail.com
   - contact_type: github
     value: drseb
-  label: Sebastian Koehler
-  orcid: 0000-0002-5316-1399
 creation_date: '2025-04-22T00:00:00Z'
 description: The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary
   for the phenotypic features encountered in human hereditary and other disease.
 domains:
 - biological systems
+- phenotype
 homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 infores_id: hpo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://hpo.jax.org/app/license
@@ -3043,8 +3044,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph

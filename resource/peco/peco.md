@@ -5,21 +5,22 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
 creation_date: '2025-07-10T00:00:00Z'
 description: A structured, controlled vocabulary which describes the treatments, growing
   conditions, and/or study types used in plant biology experiments.
 domains:
 - biomedical
+- general
 homepage_url: http://planteome.org/
 id: peco
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
