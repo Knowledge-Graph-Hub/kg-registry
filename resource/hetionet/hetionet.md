@@ -17,7 +17,6 @@ domains:
 - biomedical
 - drug discovery
 - genomics
-- health
 - biological systems
 homepage_url: https://het.io/
 id: hetionet

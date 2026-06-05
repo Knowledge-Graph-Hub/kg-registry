@@ -24,7 +24,7 @@ description: The Monarch Initiative is an international consortium that leads ke
   and impact, the Monarch platform is composed of multiple open-source, open-access
   components.
 domains:
-- health
+- biomedical
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
 last_modified_date: '2026-06-03T18:30:37Z'

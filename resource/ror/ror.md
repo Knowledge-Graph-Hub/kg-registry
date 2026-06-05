@@ -3,7 +3,8 @@ activity_status: active
 category: DataSource
 creation_date: '2026-02-26T00:00:00Z'
 description: The Research Organization Registry is a global, community-led registry of open persistent identifiers and metadata for research and funding organizations.
-domains: []
+domains:
+- general
 homepage_url: https://ror.org/
 id: "ror"
 last_modified_date: '2026-05-30T00:00:00Z'

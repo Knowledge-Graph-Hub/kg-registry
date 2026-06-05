@@ -19,7 +19,6 @@ description: A knowledge base for AI research in Alzheimer Disease, based on gra
 domains:
   - neuroscience
   - biomedical
-  - health
   - drug discovery
   - genomics
 homepage_url: https://alzkb.ai/Home

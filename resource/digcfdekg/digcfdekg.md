@@ -11,7 +11,6 @@ collection:
 domains:
 - biomedical
 - genomics
-- health
 - systems biology
 layout: resource_detail
 category: KnowledgeGraph

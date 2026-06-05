@@ -19,8 +19,8 @@ contacts:
 description: Rural Resilience KG is a cross-domain knowledge graph to integrate health
   and justice for rural resilience.
 domains:
-- health
-- social determinants
+- biomedical
+- public health
 homepage_url: https://frink.renci.org/registry/kgs/rural-kg/
 id: ruralkg
 layout: resource_detail

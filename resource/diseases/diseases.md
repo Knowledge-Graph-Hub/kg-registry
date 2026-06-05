@@ -18,9 +18,8 @@ description: DISEASES is a weekly updated database that integrates evidence on d
   data, and genome-wide association studies. It provides confidence scores to facilitate
   comparison of different types and sources of evidence.
 domains:
-- health
-- genomics
 - biomedical
+- genomics
 - literature
 homepage_url: https://diseases.jensenlab.org/
 id: diseases

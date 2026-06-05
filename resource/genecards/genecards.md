@@ -14,7 +14,6 @@ description: GeneCards is a comprehensive, integrative database that aggregates 
 domains:
 - genomics
 - biomedical
-- health
 - clinical
 - proteomics
 - pathways

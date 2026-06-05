@@ -7,7 +7,7 @@ homepage_url: https://healthyphases.org/
 collection:
 - okn
 domains:
-- health
+- biomedical
 layout: resource_detail
 category: KnowledgeGraph
 creation_date: '2026-04-02T00:00:00Z'

@@ -18,7 +18,6 @@ description: The Experimental Factor Ontology (EFO) provides a systematic descri
 domains:
 - biological systems
 - biomedical
-- health
 - phenotype
 homepage_url: https://www.ebi.ac.uk/efo/
 id: efo

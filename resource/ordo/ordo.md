@@ -21,7 +21,6 @@ description: The Orphanet Rare Disease Ontology (ORDO) is an open-access ontolog
   and gene-disorder functional relationships.
 domains:
 - biomedical
-- health
 - clinical
 - genomics
 - phenotype

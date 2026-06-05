@@ -19,7 +19,6 @@ description: ATOM (Anti-tumor Biomaterial Knowledge Graph) is a knowledge graph 
 domains:
   - biomedical
   - clinical
-  - health
 homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
 id: atom
 last_modified_date: '2026-05-28T00:00:00Z'

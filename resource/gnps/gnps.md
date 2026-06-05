@@ -15,7 +15,7 @@ description: Global Natural Products Social Molecular Networking (GNPS) is a web
 domains:
 - chemistry and biochemistry
 - biomedical
-- microbiome
+- microbiology
 homepage_url: https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp
 id: gnps
 last_modified_date: '2026-06-02T00:00:00Z'

@@ -17,9 +17,7 @@ description: NIH Reporter (RePORTER) is a comprehensive data source providing ac
   year 1985.
 domains:
 - biomedical
-- health
 - clinical
-- translational
 homepage_url: https://reporter.nih.gov/
 id: nihreporter
 last_modified_date: '2025-09-24T00:00:00Z'

@@ -15,7 +15,7 @@ contacts:
     label: Structural Bioinformatics and Network Biology Group, Institute for Research in Biomedicine (IRB Barcelona)
 description: A knowledge graph of biological entities and their associations that integrates and formats biomedical data as pre-calculated knowledge graph embeddings
 domains:
-  - health
+  - biomedical
 homepage_url: https://bioteque.irbbarcelona.org/
 id: bioteque
 layout: resource_detail

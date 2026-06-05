@@ -9,7 +9,6 @@ contacts:
     label: Jaleal Sanjak
 description: The NCATS GARD Knowledge Graph integrates data about rare diseases, creating a comprehensive resource for rare disease research and drug discovery. It leverages clustering and machine learning approaches to identify relationships between rare diseases and potential therapeutic targets.
 domains:
-  - health
   - biomedical
   - clinical
   - genomics

@@ -27,7 +27,8 @@ description: Catalogue of Life is the most comprehensive global taxonomic resour
   databases representing 500+ expert taxonomists. It serves as the foundational taxonomic
   backbone for biodiversity research, conservation policy, and species identification
   worldwide, with both static annual releases and dynamic monthly updates.
-domains: []
+domains:
+- organisms
 homepage_url: https://www.catalogueoflife.org/
 id: catalogue-of-life
 infores_id: catalogue-of-life

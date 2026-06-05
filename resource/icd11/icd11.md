@@ -13,7 +13,7 @@ description: ICD-11 is the eleventh revision of the International Classification
   health information.
 domains:
 - clinical
-- health
+- biomedical
 homepage_url: https://icd.who.int/en
 id: icd11
 last_modified_date: '2026-05-30T00:00:00Z'

@@ -12,7 +12,6 @@ domains:
   - clinical
   - proteomics
   - biomedical
-  - health
 homepage_url: https://ckg.readthedocs.io/
 id: clinicalkg
 layout: resource_detail

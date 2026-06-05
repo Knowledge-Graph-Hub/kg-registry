@@ -16,7 +16,6 @@ domains:
 - genomics
 - pharmacology
 - precision medicine
-- translational
 - biomedical
 homepage_url: https://biothings.ncats.io/gtrx
 id: gtrx

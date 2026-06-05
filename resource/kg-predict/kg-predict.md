@@ -16,7 +16,6 @@ domains:
 - systems biology
 - biomedical
 - pharmacology
-- translational
 - genomics
 - phenotype
 homepage_url: https://nlp.case.edu/public/data/GPKG-Predict/

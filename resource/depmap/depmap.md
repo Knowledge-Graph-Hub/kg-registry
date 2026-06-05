@@ -19,7 +19,6 @@ description: The Cancer Dependency Map (DepMap) is a genome-wide pooled CRISPR-C
 domains:
 - biomedical
 - genomics
-- health
 - drug discovery
 - precision medicine
 homepage_url: https://depmap.org/portal/

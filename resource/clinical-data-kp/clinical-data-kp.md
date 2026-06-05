@@ -18,9 +18,9 @@ contacts:
     label: Michel Dumontier
 description: A Translator Knowledge Provider integrating clinical data.
 domains:
-  - health
+  - biomedical
   - clinical
-  - digital health
+  - information technology
   - medical imaging
 homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
 id: clinical-data-kp

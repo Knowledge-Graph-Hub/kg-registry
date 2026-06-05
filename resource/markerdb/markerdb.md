@@ -9,7 +9,6 @@ description: MarkerDB 2.0 is a freely available molecular biomarker database tha
 domains:
 - biomedical
 - clinical
-- health
 homepage_url: https://markerdb.ca/
 id: markerdb
 last_modified_date: '2026-06-02T00:00:00Z'

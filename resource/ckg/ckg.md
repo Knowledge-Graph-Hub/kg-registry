@@ -8,7 +8,6 @@ domains:
   - biomedical
   - precision medicine
   - proteomics
-  - health
 homepage_url: https://ckg.readthedocs.io/
 id: ckg
 last_modified_date: '2026-06-01T00:00:00Z'

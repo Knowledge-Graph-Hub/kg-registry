@@ -22,7 +22,6 @@ description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is 
 domains:
 - microbiology
 - genomics
-- health
 - biomedical
 homepage_url: https://www.bv-brc.org/
 id: bv-brc

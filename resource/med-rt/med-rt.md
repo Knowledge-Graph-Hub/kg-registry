@@ -8,7 +8,7 @@ description: MED-RT is the Medication Reference Terminology, an NCI EVS medicati
 domains:
 - pharmacology
 - clinical
-- health
+- biomedical
 homepage_url: https://evs.nci.nih.gov/ftp1/MED-RT/
 id: med-rt
 infores_id: medrt-umls

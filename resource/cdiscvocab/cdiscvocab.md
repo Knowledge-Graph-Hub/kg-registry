@@ -22,7 +22,6 @@ description: CDISC Controlled Terminology provides standardized codelists and va
 domains:
 - clinical
 - biomedical
-- health
 - information technology
 homepage_url: https://www.cdisc.org/standards/terminology/controlled-terminology
 id: cdiscvocab

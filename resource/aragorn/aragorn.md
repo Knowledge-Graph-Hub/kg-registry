@@ -11,7 +11,6 @@ creation_date: '2025-11-05T00:00:00Z'
 description: ARAGORN (Autonomous Relay Agent for Generation Of Ranked Networks) is an NCATS Translator Autonomous Relay Agent (ARA) that performs query operations by compiling and ranking data from multiple ARAGORN-affiliated knowledge provider services. ARAGORN acts as an intermediary between user queries and underlying knowledge providers, aggregating results, performing inference, and ranking answers based on evidence and confidence scores. It implements the Translator Reasoner API (TRAPI) standard for biomedical question-answering.
 domains:
   - biomedical
-  - translational
   - information technology
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/ARAGORN
 id: aragorn

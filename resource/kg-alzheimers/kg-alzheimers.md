@@ -12,9 +12,8 @@ contacts:
     orcid: 0000-0001-5705-7831
 description: A Knowledge Graph for integrating data related to Alzheimer's disease, supporting Retrieval-Augmented Generation (RAG) and AI assistant development for Alzheimer's disease research.
 domains:
-  - health
-  - neuroscience
   - biomedical
+  - neuroscience
 homepage_url: https://kghub.org/kg-alzheimers/index.html
 id: kg-alzheimers
 layout: resource_detail

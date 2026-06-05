@@ -11,7 +11,7 @@ creation_date: '2026-06-02T00:00:00Z'
 description: MedDRA, the Medical Dictionary for Regulatory Activities, is an ICH standardized medical terminology used internationally for registration, documentation, safety monitoring, and pharmacovigilance of medical products.
 domains:
   - clinical
-  - health
+  - biomedical
   - pharmacology
 homepage_url: https://admin.ich.org/page/meddra
 id: meddra

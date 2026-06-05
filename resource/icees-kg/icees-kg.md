@@ -19,9 +19,8 @@ description: The Integrated Clinical and Environmental Exposures Service Knowled
   and environmental data to support translational research on exposure-driven disease
   mechanisms and health disparities.
 domains:
-- health
-- clinical
 - biomedical
+- clinical
 - public health
 homepage_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg
 id: icees-kg

@@ -26,12 +26,10 @@ description: ClinicalTrials.gov is a database of privately and publicly funded c
   Platform (ICTRP).
 domains:
 - clinical
-- health
+- biomedical
 - public health
 - drug discovery
 - precision medicine
-- biomedical
-- translational
 fairsharing_id: FAIRsharing.mewhad
 homepage_url: https://clinicaltrials.gov/
 id: clinicaltrialsgov

@@ -8,7 +8,7 @@ creation_date: '2025-03-09T00:00:00Z'
 description: DrugCentral is online drug information resource created and maintained
   by Division of Translational Informatics at University of New Mexico.
 domains:
-- health
+- biomedical
 homepage_url: https://drugcentral.org/
 id: drugcentral
 infores_id: drugcentral

@@ -8,7 +8,6 @@ domains:
   - systems biology
   - biomedical
   - pharmacology
-  - translational
 homepage_url: http://redrugs.tw.rpi.edu/
 id: redrugs
 last_modified_date: '2026-05-27T00:00:00Z'

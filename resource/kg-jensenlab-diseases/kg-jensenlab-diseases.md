@@ -15,7 +15,7 @@ creation_date: '2025-05-06T00:00:00Z'
 description: An ingest of Jensen Lab's DISEASES resource, for Translator use (output
   in Translator standards and NodeNormed, using own custom pipeline)
 domains:
-- health
+- biomedical
 homepage_url: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 id: kg-jensenlab-diseases
 last_modified_date: '2026-05-30T00:00:00Z'

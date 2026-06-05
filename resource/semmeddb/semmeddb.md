@@ -17,7 +17,6 @@ description: SemMedDB is a repository of semantic predications (subject-predicat
 domains:
 - biomedical
 - literature
-- health
 - clinical
 - drug discovery
 - genomics

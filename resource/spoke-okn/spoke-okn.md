@@ -44,7 +44,6 @@ creation_date: '2026-03-30T00:00:00Z'
 last_modified_date: '2026-05-31T00:00:00Z'
 domains:
 - biomedical
-- health
 - genomics
 - clinical
 - precision medicine

@@ -13,10 +13,9 @@ description: MR-Base is a platform that integrates a large database of harmonize
   to support systematic two-sample Mendelian randomization (2SMR) and phenome-wide
   causal inference across the human phenome.
 domains:
-- health
 - biomedical
 - genomics
-- investigations
+- general
 homepage_url: https://www.mrbase.org/
 id: mrbase
 last_modified_date: '2026-06-02T00:00:00Z'

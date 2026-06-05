@@ -13,7 +13,6 @@ domains:
   - genomics
   - clinical
   - biomedical
-  - health
 homepage_url: https://www.icgc-argo.org/
 id: icgc
 last_modified_date: '2026-06-05T00:00:00Z'

@@ -6,7 +6,7 @@ description: SKOS (Simple Knowledge Organization System) is a W3C recommendation
   for representation of thesauri, classification schemes, taxonomies, subject-heading
   systems, or any other type of structured controlled vocabulary.
 domains:
-- upper
+- general
 homepage_url: https://www.w3.org/2004/02/skos/
 id: skos
 last_modified_date: '2026-02-20T00:00:00Z'

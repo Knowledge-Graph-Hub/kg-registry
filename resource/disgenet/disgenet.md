@@ -18,7 +18,6 @@ domains:
 - genomics
 - clinical
 - precision medicine
-- translational
 - drug discovery
 homepage_url: https://www.disgenet.com/
 id: disgenet

@@ -10,7 +10,9 @@ contacts:
 creation_date: '2026-02-26T00:00:00Z'
 description: GeoNames is a geographical database covering all countries and providing
   over eleven million place names through downloads and web services.
-domains: []
+domains:
+- environment
+- general
 homepage_url: https://www.geonames.org/
 id: geonames
 last_modified_date: '2026-05-30T00:00:00Z'

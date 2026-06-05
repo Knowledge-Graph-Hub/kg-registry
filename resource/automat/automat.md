@@ -14,7 +14,7 @@ contacts:
     orcid: 0000-0002-5046-0246
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
 domains:
-  - health
+  - biomedical
 homepage_url: https://robokop.renci.org/api-docs/docs/category/automat
 id: automat
 layout: resource_detail

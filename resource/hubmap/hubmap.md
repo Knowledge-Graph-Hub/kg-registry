@@ -18,7 +18,6 @@ domains:
 - biomedical
 - anatomy and development
 - biological systems
-- health
 - proteomics
 - genomics
 - systems biology

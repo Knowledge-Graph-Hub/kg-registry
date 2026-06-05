@@ -16,10 +16,8 @@ curators:
     label: Insilicom
 description: A large-scale biomedical knowledge graph assembled from PubMed abstracts, containing over 22 million entities and 120 million relations.
 domains:
-  - health
   - biomedical
   - drug discovery
-  - translational
   - genomics
 homepage_url: https://biokde.insilicom.com/
 id: ikraph

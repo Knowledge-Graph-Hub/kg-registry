@@ -29,7 +29,6 @@ description: PubMed is a free search engine accessing primarily the MEDLINE data
 domains:
 - biomedical
 - literature
-- health
 - clinical
 homepage_url: https://pubmed.ncbi.nlm.nih.gov/
 id: pubmed

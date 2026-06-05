@@ -10,7 +10,6 @@ description: The Medical Subject Headings (MeSH) is a hierarchically-organized c
   in MEDLINE/PubMed and other NLM databases.
 domains:
 - biomedical
-- health
 - literature
 homepage_url: https://www.nlm.nih.gov/mesh/meshhome.html
 id: mesh

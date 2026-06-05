@@ -11,7 +11,7 @@ creation_date: '2025-03-09T00:00:00Z'
 description: A knowledge graph for COVID-19 and SARS-COV-2.
 domains:
 - organisms
-- health
+- biomedical
 - microbiology
 - public health
 homepage_url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki

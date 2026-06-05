@@ -15,7 +15,6 @@ creation_date: '2025-05-29T00:00:00Z'
 description: Open Targets is a collaborative effort to systematically identify and
   prioritise the best targets to safely and effectively treat rare and common diseases.
 domains:
-- health
 - biomedical
 homepage_url: https://www.opentargets.org/
 id: opentargets

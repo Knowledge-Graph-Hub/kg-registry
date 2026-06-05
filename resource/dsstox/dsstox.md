@@ -18,7 +18,6 @@ domains:
 - biomedical
 - chemistry and biochemistry
 - environment
-- health
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstox
 last_modified_date: '2026-02-20T00:00:00Z'

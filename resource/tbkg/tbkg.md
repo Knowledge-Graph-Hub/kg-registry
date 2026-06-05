@@ -11,7 +11,6 @@ domains:
   - biomedical
   - clinical
   - systems biology
-  - translational
 homepage_url: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full
 repository: https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material
 publications:

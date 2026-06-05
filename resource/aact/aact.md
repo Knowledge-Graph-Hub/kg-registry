@@ -12,7 +12,7 @@ description: AACT is a publicly available relational PostgreSQL database that co
 domains:
   - clinical
   - public health
-  - translational
+  - biomedical
 homepage_url: https://aact.ctti-clinicaltrials.org/
 id: aact
 infores_id: aact

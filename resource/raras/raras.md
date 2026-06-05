@@ -13,7 +13,6 @@ creation_date: '2026-05-26T00:00:00Z'
 description: Raras is a Brazilian Portuguese-language rare disease knowledge platform and knowledge graph that connects diseases, phenotypes, genes, and patient-facing information. The platform presents a rare disease encyclopedia and knowledge map spanning more than 10,000 diseases, 11,000 phenotypes, and 5,000 genes.
 domains:
   - biomedical
-  - health
   - genomics
 homepage_url: https://raras.org/
 id: raras

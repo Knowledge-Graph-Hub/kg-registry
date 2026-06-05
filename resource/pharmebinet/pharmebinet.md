@@ -7,7 +7,6 @@ domains:
   - pharmacology
   - drug discovery
   - biomedical
-  - health
 homepage_url: https://pharmebi.net/
 id: pharmebinet
 last_modified_date: '2026-05-29T00:00:00Z'

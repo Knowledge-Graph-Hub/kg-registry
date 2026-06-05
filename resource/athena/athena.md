@@ -21,7 +21,6 @@ description: Athena is the OHDSI (Observational Health Data Sciences and Informa
 domains:
 - clinical
 - biomedical
-- health
 - information technology
 homepage_url: https://athena.ohdsi.org/
 id: athena

@@ -12,7 +12,7 @@ contacts:
 description: Neighborhood Information KG (NIKG) is a knowledge graph warehouse for
   neighborhood information.
 domains:
-- social determinants
+- public health
 homepage_url: https://frink.renci.org/registry/kgs/neighborhood-kg/
 id: nikg
 layout: resource_detail

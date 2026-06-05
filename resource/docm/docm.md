@@ -12,7 +12,7 @@ description: DoCM (Database of Curated Mutations) was a highly curated database 
 domains:
   - precision medicine
   - genomics
-  - health
+  - biomedical
 homepage_url: https://github.com/griffithlab/docm
 id: docm
 infores_id: docm

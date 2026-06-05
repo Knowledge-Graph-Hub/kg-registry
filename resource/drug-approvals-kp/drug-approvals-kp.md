@@ -15,10 +15,9 @@ creation_date: '2025-04-22T00:00:00Z'
 description: A Translator knowledge provider focused on drug approval status and other
   drug-related metadata.
 domains:
-- health
+- biomedical
 - pharmacology
 - drug discovery
-- biomedical
 id: drug-approvals-kp
 last_modified_date: '2026-05-28T00:00:00Z'
 layout: resource_detail

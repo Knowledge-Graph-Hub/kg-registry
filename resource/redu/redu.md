@@ -15,7 +15,7 @@ description: ReDU (Reanalysis of Data User Interface) is a metadata-driven resou
 domains:
 - chemistry and biochemistry
 - biomedical
-- microbiome
+- microbiology
 homepage_url: https://redu.gnps2.org/selection/
 id: redu
 last_modified_date: '2026-06-02T00:00:00Z'

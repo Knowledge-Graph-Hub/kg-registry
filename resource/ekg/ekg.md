@@ -11,9 +11,8 @@ contacts:
 creation_date: '2026-04-22T00:00:00Z'
 description: eKG is an epidemiological knowledge graph extracted from the World Health Organization Disease Outbreak News corpus using an ensemble of large language models and published through the European Commission Joint Research Centre Data Catalogue.
 domains:
-  - health
-  - public health
   - biomedical
+  - public health
 homepage_url: https://data.jrc.ec.europa.eu/dataset/89056048-7f5d-4d7c-96ad-f99d1c0f6601
 id: ekg
 last_modified_date: '2026-06-01T00:00:00Z'

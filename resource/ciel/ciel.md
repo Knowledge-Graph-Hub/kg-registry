@@ -25,7 +25,6 @@ description: The Columbia International eHealth Laboratory (CIEL) dictionary is 
   a Content Public Good by Digital Square.
 domains:
 - clinical
-- health
 - biomedical
 - information technology
 homepage_url: https://openconceptlab.org/project/ciel/

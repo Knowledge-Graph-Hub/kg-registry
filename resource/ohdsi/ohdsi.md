@@ -15,7 +15,6 @@ description: Observational Health Data Sciences and Informatics (OHDSI) is an op
 domains:
   - clinical
   - biomedical
-  - health
   - information technology
 homepage_url: https://www.ohdsi.org/
 id: ohdsi

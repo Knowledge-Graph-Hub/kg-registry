@@ -13,7 +13,7 @@ contacts:
 creation_date: '2025-03-09T00:00:00Z'
 description: Entity and association taxonomy and datamodel for life-sciences data
 domains:
-- upper
+- general
 homepage_url: https://biolink.github.io/biolink-model/
 id: biolink
 last_modified_date: '2025-10-06T00:00:00Z'

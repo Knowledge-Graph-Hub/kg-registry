@@ -17,11 +17,9 @@ contacts:
 description: ECID is a biomedical knowledgebase of curated inter-chemical correlations from the core chemical datasets in exposomics. These datasets are prioritized from human biomonitoring studies using targeted and untargeted assays. ECID has applications in characterizing and understanding the effects of exposome chemicals on the human health.
 domains:
   - environment
-  - health
+  - biomedical
   - chemistry and biochemistry
   - public health
-  - social determinants
-  - biomedical
 homepage_url: https://www.ecidbase.org/
 id: ecid
 layout: resource_detail

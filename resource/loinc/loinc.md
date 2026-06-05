@@ -17,7 +17,6 @@ description: LOINC (Logical Observation Identifiers Names and Codes) is the inte
 domains:
 - clinical
 - biomedical
-- health
 - genomics
 homepage_url: https://loinc.org/
 id: loinc

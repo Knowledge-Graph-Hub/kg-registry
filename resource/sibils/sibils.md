@@ -16,7 +16,7 @@ contacts:
 description: SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval in biological literature, with customizable search in semantically enriched contents based on keywords and mapped biomedical entities from standardized vocabularies.
 domains:
   - biological systems
-  - health
+  - biomedical
 homepage_url: https://sibils.org/
 id: sibils
 layout: resource_detail

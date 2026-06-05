@@ -12,7 +12,6 @@ description: UMLS Semantic Types are the broad subject categories in the UMLS Se
   Network used to categorize concepts in the UMLS Metathesaurus.
 domains:
 - biomedical
-- health
 homepage_url: https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html
 id: sty
 last_modified_date: '2026-05-30T00:00:00Z'

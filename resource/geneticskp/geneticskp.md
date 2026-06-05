@@ -19,8 +19,7 @@ description: Genetics KP is a Translator knowledge provider focused on integrati
   for gene-disease relationship analysis.
 domains:
 - genomics
-- health
-- translational
+- biomedical
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Genetics-Knowledge-Provider
 id: geneticskp
 last_modified_date: '2026-05-30T00:00:00Z'

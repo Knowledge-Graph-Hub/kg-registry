@@ -7,10 +7,9 @@ description: MalaCards is a comprehensive, searchable database integrating infor
   including genes, symptoms, drugs, mutations, publications, clinical trials, and
   pathways for over 22,000 human disorders.
 domains:
-- health
+- biomedical
 - clinical
 - genomics
-- biomedical
 id: malacards
 last_modified_date: '2025-10-10T00:00:00Z'
 layout: resource_detail

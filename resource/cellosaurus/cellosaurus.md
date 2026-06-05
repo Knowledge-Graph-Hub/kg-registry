@@ -23,7 +23,7 @@ description: Cellosaurus is a knowledge resource on cell lines providing informa
   cell lines.
 domains:
 - biological systems
-- health
+- biomedical
 homepage_url: https://www.cellosaurus.org/
 id: cellosaurus
 last_modified_date: '2026-02-20T00:00:00Z'

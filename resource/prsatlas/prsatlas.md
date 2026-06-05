@@ -19,7 +19,6 @@ description: "The PRS Atlas is a comprehensive resource analyzing 162 polygenic 
   \ and diverse health outcomes."
 domains:
 - genomics
-- translational
 - biomedical
 homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.h18c66b
 id: prsatlas

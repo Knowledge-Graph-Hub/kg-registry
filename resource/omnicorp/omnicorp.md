@@ -16,7 +16,6 @@ description: OmniCorp is a NCATS Translator literature co-occurrence database th
 domains:
   - literature
   - biomedical
-  - translational
 id: omnicorp
 infores_id: omnicorp
 last_modified_date: '2026-06-02T00:00:00Z'

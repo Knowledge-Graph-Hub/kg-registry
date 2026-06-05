@@ -16,7 +16,6 @@ description: The integrated DIetary Supplements Knowledge base (iDISK) is a stan
 domains:
 - nutrition
 - biomedical
-- health
 - pharmacology
 homepage_url: https://doi.org/10.13020/d6bm3v
 id: idisk

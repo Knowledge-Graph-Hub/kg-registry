@@ -26,7 +26,7 @@ description: The NASA Knowledge Graph Dataset is an expansive graph-based datase
   agencies and academic institutions.
 domains:
 - environment
-- investigations
+- general
 homepage_url: https://disc.gsfc.nasa.gov
 id: nasa-gesdisc-kg
 layout: resource_detail

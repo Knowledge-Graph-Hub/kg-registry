@@ -15,7 +15,6 @@ description: FinnGen is a large-scale genomics research project aimed at improvi
 domains:
 - genomics
 - biomedical
-- health
 - precision medicine
 - clinical
 homepage_url: https://www.finngen.fi/en

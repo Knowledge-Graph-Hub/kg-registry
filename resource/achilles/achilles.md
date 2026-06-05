@@ -24,7 +24,6 @@ description: Project Achilles is a systematic effort aimed at identifying and ca
 domains:
 - biomedical
 - genomics
-- health
 homepage_url: https://depmap.org/portal/achilles/
 id: achilles
 last_modified_date: '2026-05-30T00:00:00Z'

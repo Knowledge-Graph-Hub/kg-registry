@@ -15,7 +15,7 @@ description: The European Medicines Agency is the European Union agency responsi
 domains:
 - pharmacology
 - clinical
-- health
+- biomedical
 homepage_url: https://www.ema.europa.eu/
 id: ema
 last_modified_date: '2026-06-03T00:00:00Z'

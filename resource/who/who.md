@@ -11,9 +11,8 @@ creation_date: '2026-06-02T00:00:00Z'
 description: The World Health Organization (WHO) is a United Nations specialized agency for international public health that publishes global health statistics, classifications, guidance, disease outbreak reports, and emergency information products.
 domains:
   - public health
-  - health
-  - clinical
   - biomedical
+  - clinical
 homepage_url: https://www.who.int/
 id: who
 last_modified_date: '2026-06-03T00:00:00Z'

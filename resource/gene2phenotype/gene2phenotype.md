@@ -7,7 +7,7 @@ description: A curated gene-disease evidence resource linking genes, variant mec
 domains:
 - genomics
 - phenotype
-- health
+- biomedical
 homepage_url: https://www.ebi.ac.uk/gene2phenotype/
 id: gene2phenotype
 last_modified_date: '2026-02-15T00:00:00Z'

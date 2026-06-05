@@ -19,7 +19,6 @@ description: "The Clinical Pharmacogenetics Implementation Consortium (CPIC) cre
   \ pharmacogenomics in clinical care."
 domains:
 - biomedical
-- health
 - clinical
 - drug discovery
 homepage_url: https://cpicpgx.org/

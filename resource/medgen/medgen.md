@@ -20,7 +20,6 @@ description: NCBI's portal to information about conditions, phenotypes, and find
 domains:
 - genomics
 - clinical
-- health
 - biomedical
 homepage_url: https://www.ncbi.nlm.nih.gov/medgen/
 id: medgen

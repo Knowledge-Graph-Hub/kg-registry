@@ -15,7 +15,7 @@ description: DrugBank Online is a comprehensive, publicly accessible database co
   pharmaceutical data with drug target information including sequence, structure,
   and pathway details.
 domains:
-- health
+- biomedical
 - chemistry and biochemistry
 - pharmacology
 - genomics

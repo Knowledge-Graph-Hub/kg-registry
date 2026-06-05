@@ -12,7 +12,6 @@ description: The National Library of Medicine is the world's largest biomedical 
   and a national resource for health professionals, scientists, and the public.
 domains:
 - biomedical
-- health
 - literature
 homepage_url: https://www.nlm.nih.gov/
 id: nlm

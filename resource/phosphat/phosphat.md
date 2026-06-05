@@ -15,7 +15,7 @@ description: PhosPhAt is the Arabidopsis Protein Phosphorylation Site Database, 
   kinase-target relationships, and plant-specific phosphorylation-site prediction
   tools.
 domains:
-- plant science
+- agriculture
 - proteomics
 - biological systems
 homepage_url: https://phosphat.uni-hohenheim.de/

@@ -17,7 +17,7 @@ description: dbSNP contains human single nucleotide variations, microsatellites,
   variations and clinical mutations.
 domains:
 - biological systems
-- health
+- biomedical
 homepage_url: https://www.ncbi.nlm.nih.gov/snp/
 id: dbsnp
 infores_id: dbsnp

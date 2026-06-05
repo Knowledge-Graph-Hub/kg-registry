@@ -26,7 +26,6 @@ description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and
   response to anti-cancer drugs.
 domains:
 - biomedical
-- health
 - drug discovery
 - genomics
 - pharmacology

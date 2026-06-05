@@ -8,7 +8,7 @@ contacts:
     label: Gregory Hyde
 description: A Translator Knowledge Provider exploring connections hypotheses.
 domains:
-  - health
+  - biomedical
 homepage_url: https://github.com/di2ag/chp_api
 id: connections-hypothesis-kp
 last_modified_date: '2026-04-16T00:00:00Z'

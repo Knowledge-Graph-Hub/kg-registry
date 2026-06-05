@@ -19,7 +19,7 @@ description: The Medi-Span Generic Product Identifier (GPI) is a proprietary 14-
   standardized vocabulary distributions.
 domains:
 - clinical
-- health
+- biomedical
 - pharmacology
 homepage_url: https://www.wolterskluwer.com/en/solutions/medi-span/about/gpi
 id: medispan-gpi

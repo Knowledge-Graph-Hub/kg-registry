@@ -16,7 +16,6 @@ domains:
   - microbiology
   - organisms
   - phenotype
-  - microbiome
   - biological systems
 homepage_url: https://kghub.org/kg-microbe/index.html
 id: kg-microbe

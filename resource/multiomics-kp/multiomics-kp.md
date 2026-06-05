@@ -10,7 +10,7 @@ contacts:
     label: Guangrong Qin
 description: A Translator Knowledge Provider incorporating multiomics data.
 domains:
-  - health
+  - biomedical
 id: multiomics-kp
 last_modified_date: '2026-02-20T00:00:00Z'
 layout: resource_detail

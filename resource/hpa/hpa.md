@@ -21,7 +21,6 @@ domains:
 - proteomics
 - genomics
 - anatomy and development
-- health
 homepage_url: https://www.proteinatlas.org/
 id: hpa
 infores_id: hpa

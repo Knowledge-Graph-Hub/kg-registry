@@ -29,8 +29,6 @@ description: ARAX (Expander Agent) is a graph-based modular reasoning tool for t
 domains:
   - biomedical
   - precision medicine
-  - health
-  - translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Expander-Agent
 id: arax
 infores_id: arax

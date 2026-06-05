@@ -13,9 +13,8 @@ description: BiomarkerKB is a Common Fund Data Ecosystem (CFDE) sponsored projec
   public sources, providing researchers with comprehensive, integrated access to biomarker
   information.
 domains:
-- health
-- biological systems
 - biomedical
+- biological systems
 homepage_url: https://glygen.ccrc.uga.edu/frontend/home/
 id: biomarker
 last_modified_date: '2026-01-06T00:00:00Z'

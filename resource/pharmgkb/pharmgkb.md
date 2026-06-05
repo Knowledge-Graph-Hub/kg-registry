@@ -11,7 +11,7 @@ creation_date: '2025-05-01T00:00:00Z'
 description: PharmGKB collects, curates and disseminates knowledge about clinically
   actionable gene-drug associations and genotype-phenotype relationships.
 domains:
-- health
+- biomedical
 - chemistry and biochemistry
 - pharmacology
 - genomics

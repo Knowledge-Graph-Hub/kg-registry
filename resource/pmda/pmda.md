@@ -10,9 +10,8 @@ contacts:
 creation_date: '2026-06-02T00:00:00Z'
 description: The Pharmaceuticals and Medical Devices Agency (PMDA) is Japan's regulatory agency for pharmaceuticals, medical devices, regenerative medical products, and related safety information, providing product searches, package inserts, review reports, adverse event information, and safety communications.
 domains:
-  - health
-  - clinical
   - biomedical
+  - clinical
 homepage_url: https://www.pmda.go.jp/english/
 id: "pmda"
 last_modified_date: '2026-06-03T00:00:00Z'

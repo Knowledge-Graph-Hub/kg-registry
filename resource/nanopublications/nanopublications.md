@@ -3,7 +3,9 @@ activity_status: active
 category: DataModel
 creation_date: '2025-10-30T00:00:00Z'
 description: Nanopublications are a format for publishing scientific claims as small, machine-readable, FAIR digital objects using RDF semantic web technology. Each nanopublication consists of three parts - an assertion, provenance metadata, and publication info - forming minimal publishable information units that can be cited, queried, and reused.
-domains: []
+domains:
+- information technology
+- literature
 id: "nanopublications"
 infores_id: "nanopublications"
 homepage_url: http://nanopub.net/

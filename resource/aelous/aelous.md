@@ -7,7 +7,6 @@ description: AELOUS provides adverse event report data processed from spontaneou
 domains:
 - biomedical
 - pharmacology
-- health
 homepage_url: https://datadryad.org/dataset/doi:10.5061/dryad.8q0s4
 id: aelous
 last_modified_date: '2026-06-01T00:00:00Z'

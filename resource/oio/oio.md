@@ -18,7 +18,7 @@ description: The OBO Interoperability Ontology (OIO) was a set of annotation pro
   versioning, imports, and other metadata.
 domains:
 - biological systems
-- upper
+- general
 id: oio
 last_modified_date: '2026-06-02T00:00:00Z'
 layout: resource_detail

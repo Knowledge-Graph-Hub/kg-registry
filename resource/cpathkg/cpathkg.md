@@ -15,7 +15,7 @@ contacts:
     label: Ian Braun
 description: The C-Path Knowledge Graph project is intended to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph.
 domains:
-  - health
+  - biomedical
 id: cpathkg
 layout: resource_detail
 name: C-Path Knowledge Graph

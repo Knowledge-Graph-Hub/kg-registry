@@ -9,7 +9,7 @@ contacts:
     label: Rong Xu
 description: A knowledge graph for drug repurposing
 domains:
-  - health
+  - biomedical
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 id: gp-kg
 layout: resource_detail
