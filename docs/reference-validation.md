@@ -14,6 +14,11 @@ uv run make validate-file FILE=resource/<resource>/<resource>.md
 uv run make extract-metadata
 ```
 
+The full `extract-metadata` build target reports publication reference findings
+as warnings so citation metadata issues do not block unrelated registry builds.
+Single-file validation and explicit citation validation commands remain stricter
+and can fail on hard citation metadata errors.
+
 By default, missing cache files are warnings. Cached references are compared to
 the Resource page publication fields, and mismatches in title, year, DOI, or
 first author are validation errors. Journal mismatches are warnings because

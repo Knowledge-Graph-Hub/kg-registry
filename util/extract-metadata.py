@@ -118,6 +118,11 @@ def main():
         action="store_true",
         help="Remove publication entries with hard metadata mismatches from Resource pages.",
     )
+    parser_n.add_argument(
+        "--warn-publication-reference-validation",
+        action="store_true",
+        help="Report publication reference validation errors as warnings instead of failing.",
+    )
     parser_n = subparsers.add_parser(
         "prettify", help="prettify YAML block in registry Markdown files"
     )
@@ -247,6 +252,9 @@ def validate_markdown(args):
                 use_validation_cache=use_reference_validation_cache,
                 validation_cache_data=validation_cache_data,
             )
+            warn_publication_reference_validation = getattr(
+                args, "warn_publication_reference_validation", False
+            )
             if (
                 getattr(args, "remove_invalid_publications", False)
                 and getattr(publication_report, "invalid_publication_indexes", [])
@@ -272,18 +280,31 @@ def validate_markdown(args):
                     f"{fn}: removed {len(removed_indexes)} invalid publication reference(s): "
                     + ", ".join(removed_ids)
                 )
-                errs.extend(
-                    error
-                    for error in publication_report.errors
-                    if not any(f"publication[{index}]" in error for index in removed_indexes)
-                )
                 warn.extend(
                     warning
                     for warning in publication_report.warnings
                     if not any(f"publication[{index}]" in warning for index in removed_indexes)
                 )
+                remaining_errors = [
+                    error
+                    for error in publication_report.errors
+                    if not any(f"publication[{index}]" in error for index in removed_indexes)
+                ]
+                if warn_publication_reference_validation:
+                    warn.extend(
+                        f"publication reference validation error: {error}"
+                        for error in remaining_errors
+                    )
+                else:
+                    errs.extend(remaining_errors)
             else:
-                errs.extend(publication_report.errors)
+                if warn_publication_reference_validation:
+                    warn.extend(
+                        f"publication reference validation error: {error}"
+                        for error in publication_report.errors
+                    )
+                else:
+                    errs.extend(publication_report.errors)
                 warn.extend(publication_report.warnings)
 
         # Now run yaml linter to check for basic syntax errors and formatting
