@@ -570,10 +570,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-12: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1269,14 +1271,16 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/train.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -1298,12 +1302,14 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/test.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -1326,14 +1332,16 @@ products:
     source: mesh
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -1601,9 +1609,7 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: Product
   description: Supporting information for the PREDICT study, including supplementary
     tables and data supporting the drug-disease association gold standard and prediction
@@ -1627,6 +1633,103 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: Source CSV tables for AcuKG, including acupoint therapeutic actions,
+    indications, anatomy relationships, clinical trial links, and PubMed links.
+  edge_count: 11527
+  format: csv
+  id: acukg.csv
+  name: AcuKG CSV tables
+  node_count: 1839
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: snomedct
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG
+- category: GraphProduct
+  description: RDF Turtle representation of AcuKG relationship tables.
+  edge_count: 11527
+  format: ttl
+  id: acukg.rdf
+  name: AcuKG RDF Turtle files
+  node_count: 1839
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: snomedct
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_RDF
+- category: GraphProduct
+  description: JSON representation of AcuKG relationship tables.
+  edge_count: 11527
+  format: json
+  id: acukg.json
+  name: AcuKG JSON files
+  node_count: 1839
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: snomedct
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
+- category: GraphProduct
+  description: Neo4j construction artifacts for CardioKG, including Cypher scripts
+    to create graph nodes and add edges.
+  dump_format: neo4j
+  format: neo4j
+  id: cardiokg.neo4j
+  name: CardioKG Neo4j graph construction scripts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cardiokg
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: mondo
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: string
+  - relation_type: prov:used
+    source: opentargets
+  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
 ---
 # Medical Subject Headings (MeSH)

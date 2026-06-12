@@ -98,10 +98,12 @@ products:
     source: pombase
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -144,6 +146,8 @@ products:
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1021,10 +1025,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -3237,6 +3243,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -3244,8 +3252,8 @@ products:
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -3294,6 +3302,8 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: omim
   warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
@@ -3301,8 +3311,8 @@ products:
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
-    to URL
+  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+    to URL'
 - category: Product
   description: Bulk download of DisProt data in multiple formats including JSON, TSV,
     FASTA, and GAF
@@ -3537,6 +3547,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized
@@ -3670,6 +3682,8 @@ products:
     source: uniprot
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 500 error
     when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
@@ -3996,9 +4010,38 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
+- category: GraphProduct
+  description: Neo4j construction artifacts for CardioKG, including Cypher scripts
+    to create graph nodes and add edges.
+  dump_format: neo4j
+  format: neo4j
+  id: cardiokg.neo4j
+  name: CardioKG Neo4j graph construction scripts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cardiokg
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: mondo
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: string
+  - relation_type: prov:used
+    source: opentargets
+  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

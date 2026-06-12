@@ -53,6 +53,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing
     screen of pooled-cell line chemical-perturbation viability measurements
@@ -69,6 +71,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Dose-response curve parameter matrix from the secondary PRISM Repurposing
     screen of 1,448 compounds across cancer cell lines
@@ -84,6 +88,8 @@ products:
     source: depmap
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: API access to PRISM drug screening data

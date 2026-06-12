@@ -20,5 +20,8 @@ secondary_source:
   source: pubmed
 - relation_type: prov:wasDerivedFrom
   source: uniprot
+warnings:
+- File was not able to be retrieved when checked on 2026-06-05_ Timeout connecting
+  to URL
 layout: product_detail
 ---

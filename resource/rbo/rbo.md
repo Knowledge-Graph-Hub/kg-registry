@@ -61,6 +61,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Radiation Biology Ontology in OWL format
   format: owl

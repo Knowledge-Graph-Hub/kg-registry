@@ -151,10 +151,12 @@ products:
   product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
   format: sssom
@@ -1121,10 +1123,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: Interactive Shiny web interface for exploring and visualizing human
     kinase-substrate interactions

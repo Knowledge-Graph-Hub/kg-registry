@@ -154,10 +154,12 @@ products:
     source: hubmap
   product_url: https://avr.xconsortia.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 401 error
-    when accessing file'
   - Antibody Validation Reports require authorization and returned HTTP 401 when checked
     on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 401 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   format: http
@@ -753,7 +755,7 @@ products:
     source: wikipathways
 publications:
 - authors:
-  - "Katy B\xF6rner"
+  - Katy Börner
   - et al.
   doi: 10.1038/s41592-025-02120-1
   id: doi:10.1038/s41592-025-02120-1
