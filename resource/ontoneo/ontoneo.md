@@ -70,7 +70,7 @@ The full version of ONTONEO in OWL format
 ## Publications
 
 - [OntONeo: The Obstetric and Neonatal Ontology](https://doi.org/10.5281/zenodo.17429771)
-- [Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal Domain](https://doi.org/10.5281/zenodo.17508651)
+- [Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e Neonatal](https://doi.org/10.5281/zenodo.17508651)
 
 **Domains**: biomedical
 
