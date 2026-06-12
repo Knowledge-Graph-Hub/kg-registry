@@ -34,7 +34,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharmacotherapydb
   product_url: https://doi.org/10.6084/m9.figshare.3103054
-  warnings: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 202 error
+    when accessing file'
 - category: Product
   description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
     symptomatic, or non-indications

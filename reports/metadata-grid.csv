@@ -36,6 +36,7 @@ bfo,active,PASS
 bgee,active,PASS
 bigg,active,PASS
 bindingdb,active,PASS
+bio101,active,PASS
 biobricks-aopwiki,active,PASS
 biobricks-ice,active,PASS
 biobricks-mesh,active,PASS
@@ -235,7 +236,6 @@ flopo,active,PASS
 flybase,active,PASS
 fobi,active,PASS
 foodb,active,PASS
-fooddb,active,PASS
 foodon,active,PASS
 forum,active,PASS
 fovt,active,PASS
@@ -562,6 +562,7 @@ pombase,active,PASS
 poro,active,PASS
 ppo,active,PASS
 pr,active,PASS
+prefer,active,PASS
 preppi,active,PASS
 primekg,active,PASS
 prism,active,PASS
@@ -712,6 +713,7 @@ who,active,PASS
 wikidata,active,PASS
 wikipathways,active,PASS
 wikipedia,active,PASS
+wikispecies,active,PASS
 wildlifekn,active,PASS
 wormbase,active,PASS
 xao,active,PASS

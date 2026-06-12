@@ -38,6 +38,7 @@ bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOnto
 bigg	BiGG Models	DataSource	http://bigg.ucsd.edu/	resource/bigg/bigg.md
 bila	Bilateria anatomy	Ontology	http://4dx.embl.de/4DXpress	resource/bila/bila.md
 bind	Biomolecular Interaction Network Database (BIND)	DataSource	http://bind.ca	resource/bind/bind.md
+bio101	KB Bio 101	KnowledgeGraph	https://www.ai.sri.com/~halo/public/exported-kb/biokb.html	resource/bio101/bio101.md
 biobricks-aopwiki	BioBricks AOP-Wiki	KnowledgeGraph	https://github.com/biobricks-ai/aopwikirdf-kg	resource/biobricks-aopwiki/biobricks-aopwiki.md
 biobricks-ice	BioBricks ICE	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-ice/biobricks-ice.md
 biobricks-mesh	BioBricks MeSH	KnowledgeGraph	https://github.com/biobricks-ai/mesh-kg	resource/biobricks-mesh/biobricks-mesh.md
@@ -496,6 +497,7 @@ po	Plant Ontology	Ontology	http://browser.planteome.org/amigo	resource/po/po.md
 poro	Porifera Ontology	Ontology	https://github.com/obophenotype/porifera-ontology	resource/poro/poro.md
 ppo	Plant Phenology Ontology	Ontology	https://github.com/PlantPhenoOntology/PPO	resource/ppo/ppo.md
 predict	PREDICT	DataSource	https://www.embopress.org/doi/abs/10.1038/msb.2011.26	resource/predict/predict.md
+prefer	Precision Fermentation Ontology	Ontology	https://github.com/Multiomics-Analytics-Group/prefer_ontology	resource/prefer/prefer.md
 prism	PRISM	DataSource	https://depmap.org/repurposing/	resource/prism/prism.md
 proco	Process Chemistry Ontology	Ontology	https://github.com/proco-ontology/PROCO	resource/proco/proco.md
 progenomes	proGenomes	DataSource	https://progenomes.embl.de/	resource/progenomes/progenomes.md
@@ -630,6 +632,7 @@ wbphenotype	C. elegans phenotype	Ontology	https://github.com/obophenotype/c-eleg
 web-of-science	Web of Science	DataSource	https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/	resource/web-of-science/web-of-science.md
 who	World Health Organization	Aggregator	https://www.who.int/	resource/who/who.md
 wikipedia	Wikipedia	DataSource	https://www.wikipedia.org/	resource/wikipedia/wikipedia.md
+wikispecies	Wikispecies	DataSource	https://species.wikimedia.org/wiki/Main_Page	resource/wikispecies/wikispecies.md
 wildlifekn	Wildlife-KN	KnowledgeGraph	https://sites.nd.edu/kn-wildlife/	resource/wildlifekn/wildlifekn.md
 xao	Xenopus Anatomy Ontology	Ontology	http://www.xenbase.org/anatomy/xao.do?method=display	resource/xao/xao.md
 xco	Experimental condition ontology	Ontology	https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000	resource/xco/xco.md
