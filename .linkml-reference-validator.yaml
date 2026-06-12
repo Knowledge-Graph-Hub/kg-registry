@@ -1,0 +1,3 @@
+validation:
+  cache_dir: references_cache
+  unknown_prefix_severity: WARNING

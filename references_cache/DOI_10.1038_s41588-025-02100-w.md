@@ -1,0 +1,303 @@
+---
+reference_id: DOI:10.1038/s41588-025-02100-w
+title: Genome-wide association study of long COVID
+authors:
+- Vilma Lammi
+- Tomoko Nakanishi
+- Samuel E. Jones
+- Shea J. Andrews
+- Juha Karjalainen
+- Beatriz Cortés
+- Heath E. O’Brien
+- Ana Ochoa-Guzman
+- Brian E. Fulton-Howard
+- Martin Broberg
+- Hele H. Haapaniemi
+- Masahiro Kanai
+- Matti Pirinen
+- Axel Schmidt
+- Ruth E. Mitchell
+- Abdou Mousas
+- Massimo Mangino
+- Alicia Huerta-Chagoya
+- Nasa Sinnott-Armstrong
+- Elizabeth T. Cirulli
+- Marc Vaudel
+- Alex S. F. Kwong
+- Amit K. Maiti
+- Minttu M. Marttila
+- Daniel C. Posner
+- Alexis A. Rodriguez
+- Chiara Batini
+- Francesca Minnai
+- Anna R. Dearman
+- C. A. Robert Warmerdam
+- Celia B. Sequeros
+- Thomas W. Winkler
+- Daniel M. Jordan
+- Raimonds Rešcenko
+- Lorenzo Miano
+- Jacqueline M. Lane
+- Ryan K. Chung
+- Beatriz Guillen-Guio
+- Olivia C. Leavy
+- Laura Carvajal-Silva
+- Kevin Aguilar-Valdés
+- Erika Frangione
+- Lindsay Guare
+- Ekaterina Vergasova
+- Eirini Marouli
+- Pasquale Striano
+- Ummu Afeera Zainulabid
+- Ashutosh Kumar
+- Hajar Fauzan Ahmad
+- Ryuya Edahiro
+- Shuhei Azekawa
+- Mari E. K. Niemi
+- Janick St-Cyr
+- Darin Adra
+- Madeleine Durand
+- David Bujold
+- Guillaume Bourque
+- Ariane Boisclair
+- Mylene Bertrand
+- Daniel Auld
+- Laetitia Laurent
+- Solomia Yanishevsky
+- G. Mark Lathrop
+- Fangyi Shi
+- Simon Rousseau
+- Jiannis Ragoussis
+- Danielle Perley
+- Vincent Mooser
+- David R. Morrison
+- Daniella Balla
+- Julia Heggemann
+- Sonja Schultz
+- Pari Behzad
+- Markus M. Nöthen
+- Abigail Miller
+- Max C. Pensel
+- Carlo Maj
+- Kelly Cho
+- Tianxi Cai
+- Sudha K. Iyengar
+- Carlos A. Aguilar Salinas
+- Seung Hyuk T. Lee
+- Hortensia Moreno-Macias
+- Päivi Pajukanta
+- Michelle Duran-Gomez
+- Lill Trogstad
+- Daniel J. Rader
+- Marylyn D. Ritchie
+- Anurag Verma
+- Colleen M. Kripke
+- Sergi Papiol
+- Jens Wiltfang
+- Jochen Schneider
+- Thomas G. Schulze
+- Christof Winter
+- Ewa Wallin
+- Robert Frithiof
+- Fanny Senner
+- Christoph D. Spinner
+- Ulrike Protzer
+- Mattia Cordioli
+- Nikola S. Mueller
+- Andreas Dinkel
+- Janos L. Kalman
+- Tomislav Maricic
+- Kristina Adorjan
+- Miklos Lipcsey
+- Lisa Fricke
+- Ing-Marie Larsson
+- Urs Heilbronner
+- Monika Budde
+- Johanna Erber
+- Nicholas R. Harvey
+- Vince Forgetta
+- Benedict Hignell
+- Yolanda Espinosa-Parrilla
+- Juan M. Saez Hidalgo
+- Estefania Nova-Lamperti
+- Scarlett Gutiérrez-Richards
+- Gerardo Donoso
+- Leslie C. Cerpa
+- Cesar A. Echeverria
+- Camilo Cabrera
+- Pamela Bocchieri
+- Macarena Fuentes-Guajardo
+- Christian A. Muñoz
+- Karen Y. Oróstica
+- Alvaro Figueroa
+- Lissette G. Guajardo
+- Iskra A. Signore
+- Virginia A. Monardes-Ramírez
+- Eduardo A. Tobar-Calfucoy
+- Luis A. Quiñones
+- Cristian E. Yáñez
+- Daniela Zapata-Contreras
+- Paula Zuñiga-Pacheco
+- Romina Quiroga
+- Matías F. Martínez
+- Teresa A. Alarcon
+- Andrea X. Silva
+- Carolina S. Selman
+- Sergio Sanhueza
+- Rocío Retamales-Ortega
+- Tamara V. Arévalo
+- Eduardo Lamoza
+- Héctor Valenzuela-Jorquera
+- Maria Sophia Donaire
+- Sannidhi Sarvadhavabhatla
+- Sisse R. Ostrowski
+- Søren Brunak
+- David Westergaard
+- Bjarke Feenstra
+- Anne Sofie B. Mortensen
+- Anna L. Guyatt
+- Rafael de Cid
+- Susana Iraola-Guzmán
+- Gemma Moncunill
+- Alba Blasco
+- Judith Garcia-Aymerich
+- Natalia Blay
+- Carlota Dobaño
+- Anna Carreras
+- Xavier Farré
+- Manolis Kogevinas
+- Gemma Castaño-Vinyals
+- Simone Furini
+- Chiara Fallerini
+- Kristina Zguro
+- Margherita Baldassarri
+- Francesca Colombo
+- Thompson Hannah
+- Anna Ilinskaya
+- Michil Trofimov
+- Layal Shaheen
+- Nikolay Plotnikov
+- Anna Kim
+- Dmitrii Kharitonov
+- Valery Ilinsky
+- Alexei Kamelin
+- Francisco Tanudjaja
+- Efren Sandoval
+- Nicole L. Washington
+- Simon White
+- Iva Neveux
+- Shaun Dabe
+- Alexandre Bolze
+- Kelly M. Schiabor Barrett
+- Eirini Christaki
+- Haralampos Milionis
+- Ioanna Tzoulaki
+- Angelos Liontos
+- Evangelos Evangelou
+- Evangelia Ntzani
+- Rasoul Aliannejad
+- Vahideh Zarei
+- Nastaran Soltani
+- Bahareh Sharififard
+- Hengameh Ansari Tadi
+- Ali Amirsavadkouhi
+- Ho NamKoong
+- Ryan C. Thompson
+- Alexander W. Charney
+- Laura G. Sloofman
+- Nicole W. Simons
+- Olga Vishnyakova
+- Xu Xinyi
+- Jennifer Taher
+- Lloyd T. Elliott
+- Vita Rovite
+- Peculis Raitis
+- Monta Briviba
+- Janis Klovinš
+- Richa Saxena
+- Angus C. Burns
+- Jakob M. Cherry
+- Matthew Maher
+- Arne Kukkonen
+- Mauro Tettamanti
+- Luisa Ronzoni
+- Daniele Prati
+- Flora Peyvandi
+- Rossana Carpani
+- Antonio Muscatello
+- Sara Margarita
+- Francesco Malvestiti
+- Giuseppe Lamorte
+- Marco Mantero
+- Andre Franke
+- David Ellinghaus
+- Nathalie Iannotti
+- Nicola Montano
+- Alessandro Nobili
+- Frauke Degenhardt
+- Alessandra Bandera
+- Fabio Blandini
+- Francesco Bruno Arturo Blasi
+- Tom Hemming Karlsen
+- Shiuh-Wen Luoh
+- Christian Erikstrup
+- Ole B. V. Pedersen
+- Jordan Lerner-Ellis
+- Alicia Colombo
+- Joseph J. Grzymski
+- Makoto Ishii
+- Yukinori Okada
+- Noam D. Beckmann
+- Meena Kumari
+- Ralf Wagner
+- Iris M. Heid
+- Catherine John
+- Patrick J. Short
+- Per Magnus
+- Laura Ansone
+- Luca V. C. Valenti
+- Sulggi A. Lee
+- Louise V. Wain
+- Ricardo A. Verdugo
+- Karina Banasik
+- Frank Geller
+- Lude H. Franke
+- Alexander Rakitko
+- Emma L. Duncan
+- Alessandra Renieri
+- Konstantinos K. Tsilidis
+- Rafael de Cid
+- Ahmadreza Niavarani
+- Erik Abner
+- Teresa Tusié-Luna
+- Shefali S. Verma
+- George Davey Smith
+- Nicholas J. Timpson
+- Ravi K. Madduri
+- Kelly Cho
+- Mark J. Daly
+- Andrea Ganna
+- Eva C. Schulte
+- J. Brent Richards
+- Kerstin U. Ludwig
+- Michael Marks-Hultström
+- Hugo Zeberg
+- Hanna M. Ollila
+journal: Nature Genetics
+year: '2025'
+doi: 10.1038/s41588-025-02100-w
+content_type: abstract_only
+---
+
+# Genome-wide association study of long COVID
+**Authors:** Vilma Lammi, Tomoko Nakanishi, Samuel E. Jones, Shea J. Andrews, Juha Karjalainen, Beatriz Cortés, Heath E. O’Brien, Ana Ochoa-Guzman, Brian E. Fulton-Howard, Martin Broberg, Hele H. Haapaniemi, Masahiro Kanai, Matti Pirinen, Axel Schmidt, Ruth E. Mitchell, Abdou Mousas, Massimo Mangino, Alicia Huerta-Chagoya, Nasa Sinnott-Armstrong, Elizabeth T. Cirulli, Marc Vaudel, Alex S. F. Kwong, Amit K. Maiti, Minttu M. Marttila, Daniel C. Posner, Alexis A. Rodriguez, Chiara Batini, Francesca Minnai, Anna R. Dearman, C. A. Robert Warmerdam, Celia B. Sequeros, Thomas W. Winkler, Daniel M. Jordan, Raimonds Rešcenko, Lorenzo Miano, Jacqueline M. Lane, Ryan K. Chung, Beatriz Guillen-Guio, Olivia C. Leavy, Laura Carvajal-Silva, Kevin Aguilar-Valdés, Erika Frangione, Lindsay Guare, Ekaterina Vergasova, Eirini Marouli, Pasquale Striano, Ummu Afeera Zainulabid, Ashutosh Kumar, Hajar Fauzan Ahmad, Ryuya Edahiro, Shuhei Azekawa, Mari E. K. Niemi, Janick St-Cyr, Darin Adra, Madeleine Durand, David Bujold, Guillaume Bourque, Ariane Boisclair, Mylene Bertrand, Daniel Auld, Laetitia Laurent, Solomia Yanishevsky, G. Mark Lathrop, Fangyi Shi, Simon Rousseau, Jiannis Ragoussis, Danielle Perley, Vincent Mooser, David R. Morrison, Daniella Balla, Julia Heggemann, Sonja Schultz, Pari Behzad, Markus M. Nöthen, Abigail Miller, Max C. Pensel, Carlo Maj, Kelly Cho, Tianxi Cai, Sudha K. Iyengar, Carlos A. Aguilar Salinas, Seung Hyuk T. Lee, Hortensia Moreno-Macias, Päivi Pajukanta, Michelle Duran-Gomez, Lill Trogstad, Daniel J. Rader, Marylyn D. Ritchie, Anurag Verma, Colleen M. Kripke, Sergi Papiol, Jens Wiltfang, Jochen Schneider, Thomas G. Schulze, Christof Winter, Ewa Wallin, Robert Frithiof, Fanny Senner, Christoph D. Spinner, Ulrike Protzer, Mattia Cordioli, Nikola S. Mueller, Andreas Dinkel, Janos L. Kalman, Tomislav Maricic, Kristina Adorjan, Miklos Lipcsey, Lisa Fricke, Ing-Marie Larsson, Urs Heilbronner, Monika Budde, Johanna Erber, Nicholas R. Harvey, Vince Forgetta, Benedict Hignell, Yolanda Espinosa-Parrilla, Juan M. Saez Hidalgo, Estefania Nova-Lamperti, Scarlett Gutiérrez-Richards, Gerardo Donoso, Leslie C. Cerpa, Cesar A. Echeverria, Camilo Cabrera, Pamela Bocchieri, Macarena Fuentes-Guajardo, Christian A. Muñoz, Karen Y. Oróstica, Alvaro Figueroa, Lissette G. Guajardo, Iskra A. Signore, Virginia A. Monardes-Ramírez, Eduardo A. Tobar-Calfucoy, Luis A. Quiñones, Cristian E. Yáñez, Daniela Zapata-Contreras, Paula Zuñiga-Pacheco, Romina Quiroga, Matías F. Martínez, Teresa A. Alarcon, Andrea X. Silva, Carolina S. Selman, Sergio Sanhueza, Rocío Retamales-Ortega, Tamara V. Arévalo, Eduardo Lamoza, Héctor Valenzuela-Jorquera, Maria Sophia Donaire, Sannidhi Sarvadhavabhatla, Sisse R. Ostrowski, Søren Brunak, David Westergaard, Bjarke Feenstra, Anne Sofie B. Mortensen, Anna L. Guyatt, Rafael de Cid, Susana Iraola-Guzmán, Gemma Moncunill, Alba Blasco, Judith Garcia-Aymerich, Natalia Blay, Carlota Dobaño, Anna Carreras, Xavier Farré, Manolis Kogevinas, Gemma Castaño-Vinyals, Simone Furini, Chiara Fallerini, Kristina Zguro, Margherita Baldassarri, Francesca Colombo, Thompson Hannah, Anna Ilinskaya, Michil Trofimov, Layal Shaheen, Nikolay Plotnikov, Anna Kim, Dmitrii Kharitonov, Valery Ilinsky, Alexei Kamelin, Francisco Tanudjaja, Efren Sandoval, Nicole L. Washington, Simon White, Iva Neveux, Shaun Dabe, Alexandre Bolze, Kelly M. Schiabor Barrett, Eirini Christaki, Haralampos Milionis, Ioanna Tzoulaki, Angelos Liontos, Evangelos Evangelou, Evangelia Ntzani, Rasoul Aliannejad, Vahideh Zarei, Nastaran Soltani, Bahareh Sharififard, Hengameh Ansari Tadi, Ali Amirsavadkouhi, Ho NamKoong, Ryan C. Thompson, Alexander W. Charney, Laura G. Sloofman, Nicole W. Simons, Olga Vishnyakova, Xu Xinyi, Jennifer Taher, Lloyd T. Elliott, Vita Rovite, Peculis Raitis, Monta Briviba, Janis Klovinš, Richa Saxena, Angus C. Burns, Jakob M. Cherry, Matthew Maher, Arne Kukkonen, Mauro Tettamanti, Luisa Ronzoni, Daniele Prati, Flora Peyvandi, Rossana Carpani, Antonio Muscatello, Sara Margarita, Francesco Malvestiti, Giuseppe Lamorte, Marco Mantero, Andre Franke, David Ellinghaus, Nathalie Iannotti, Nicola Montano, Alessandro Nobili, Frauke Degenhardt, Alessandra Bandera, Fabio Blandini, Francesco Bruno Arturo Blasi, Tom Hemming Karlsen, Shiuh-Wen Luoh, Christian Erikstrup, Ole B. V. Pedersen, Jordan Lerner-Ellis, Alicia Colombo, Joseph J. Grzymski, Makoto Ishii, Yukinori Okada, Noam D. Beckmann, Meena Kumari, Ralf Wagner, Iris M. Heid, Catherine John, Patrick J. Short, Per Magnus, Laura Ansone, Luca V. C. Valenti, Sulggi A. Lee, Louise V. Wain, Ricardo A. Verdugo, Karina Banasik, Frank Geller, Lude H. Franke, Alexander Rakitko, Emma L. Duncan, Alessandra Renieri, Konstantinos K. Tsilidis, Rafael de Cid, Ahmadreza Niavarani, Erik Abner, Teresa Tusié-Luna, Shefali S. Verma, George Davey Smith, Nicholas J. Timpson, Ravi K. Madduri, Kelly Cho, Mark J. Daly, Andrea Ganna, Eva C. Schulte, J. Brent Richards, Kerstin U. Ludwig, Michael Marks-Hultström, Hugo Zeberg, Hanna M. Ollila
+**Journal:** Nature Genetics (2025)
+**DOI:** [10.1038/s41588-025-02100-w](https://doi.org/10.1038/s41588-025-02100-w)
+
+## Content
+
+Abstract
+
+                    Infections can lead to persistent symptoms and diseases such as shingles after varicella zoster or rheumatic fever after streptococcal infections. Similarly, severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2) infection can result in long coronavirus disease (COVID), typically manifesting as fatigue, pulmonary symptoms and cognitive dysfunction. The biological mechanisms behind long COVID remain unclear. We performed a genome-wide association study for long COVID including up to 6,450 long COVID cases and 1,093,995 population controls from 24 studies across 16 countries. We discovered an association of
+                    FOXP4
+                    with long COVID, independent of its previously identified association with severe COVID-19. The signal was replicated in 9,500 long COVID cases and 798,835 population controls. Given the transcription factor FOXP4’s role in lung physiology and pathology, our findings highlight the importance of lung function in the pathophysiology of long COVID.

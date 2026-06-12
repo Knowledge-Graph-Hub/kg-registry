@@ -1,0 +1,190 @@
+---
+reference_id: DOI:10.1126/science.aaz1776
+title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
+authors:
+- François Aguet
+- Shankara Anand
+- Kristin G. Ardlie
+- Stacey Gabriel
+- Gad A. Getz
+- Aaron Graubert
+- Kane Hadley
+- Robert E. Handsaker
+- Katherine H. Huang
+- Seva Kashin
+- Xiao Li
+- Daniel G. MacArthur
+- Samuel R. Meier
+- Jared L. Nedzel
+- Duyen T. Nguyen
+- Ayellet V. Segrè
+- Ellen Todres
+- Brunilda Balliu
+- Alvaro N. Barbeira
+- Alexis Battle
+- Rodrigo Bonazzola
+- Andrew Brown
+- Christopher D. Brown
+- Stephane E. Castel
+- Donald F. Conrad
+- Daniel J. Cotter
+- Nancy Cox
+- Sayantan Das
+- Olivia M. de Goede
+- Emmanouil T. Dermitzakis
+- Jonah Einson
+- Barbara E. Engelhardt
+- Eleazar Eskin
+- Tiffany Y. Eulalio
+- Nicole M. Ferraro
+- Elise D. Flynn
+- Laure Fresard
+- Eric R. Gamazon
+- Diego Garrido-Martín
+- Nicole R. Gay
+- Michael J. Gloudemans
+- Roderic Guigó
+- Andrew R. Hame
+- Yuan He
+- Paul J. Hoffman
+- Farhad Hormozdiari
+- Lei Hou
+- Hae Kyung Im
+- Brian Jo
+- Silva Kasela
+- Manolis Kellis
+- Sarah Kim-Hellmuth
+- Alan Kwong
+- Tuuli Lappalainen
+- Xin Li
+- Yanyu Liang
+- Serghei Mangul
+- Pejman Mohammadi
+- Stephen B. Montgomery
+- Manuel Muñoz-Aguirre
+- Daniel C. Nachun
+- Andrew B. Nobel
+- Meritxell Oliva
+- YoSon Park
+- Yongjin Park
+- Princy Parsana
+- Abhiram S. Rao
+- Ferran Reverter
+- John M. Rouhana
+- Chiara Sabatti
+- Ashis Saha
+- Matthew Stephens
+- Barbara E. Stranger
+- Benjamin J. Strober
+- Nicole A. Teran
+- Ana Viñuela
+- Gao Wang
+- Xiaoquan Wen
+- Fred Wright
+- Valentin Wucher
+- Yuxin Zou
+- Pedro G. Ferreira
+- Gen Li
+- Marta Melé
+- Esti Yeger-Lotem
+- Mary E. Barcus
+- Debra Bradbury
+- Tanya Krubit
+- Jeffrey A. McLean
+- Liqun Qi
+- Karna Robinson
+- Nancy V. Roche
+- Anna M. Smith
+- Leslie Sobin
+- David E. Tabor
+- Anita Undale
+- Jason Bridge
+- Lori E. Brigham
+- Barbara A. Foster
+- Bryan M. Gillard
+- Richard Hasz
+- Marcus Hunter
+- Christopher Johns
+- Mark Johnson
+- Ellen Karasik
+- Gene Kopen
+- William F. Leinweber
+- Alisa McDonald
+- Michael T. Moser
+- Kevin Myer
+- Kimberley D. Ramsey
+- Brian Roe
+- Saboor Shad
+- Jeffrey A. Thomas
+- Gary Walters
+- Michael Washington
+- Joseph Wheeler
+- Scott D. Jewell
+- Daniel C. Rohrer
+- Dana R. Valley
+- David A. Davis
+- Deborah C. Mash
+- Philip A. Branton
+- Laura K. Barker
+- Heather M. Gardiner
+- Maghboeba Mosavel
+- Laura A. Siminoff
+- Paul Flicek
+- Maximilian Haeussler
+- Thomas Juettemann
+- W. James Kent
+- Christopher M. Lee
+- Conner C. Powell
+- Kate R. Rosenbloom
+- Magali Ruffier
+- Dan Sheppard
+- Kieron Taylor
+- Stephen J. Trevanion
+- Daniel R. Zerbino
+- Nathan S. Abell
+- Joshua Akey
+- Lin Chen
+- Kathryn Demanelis
+- Jennifer A. Doherty
+- Andrew P. Feinberg
+- Kasper D. Hansen
+- Peter F. Hickey
+- Farzana Jasmine
+- Lihua Jiang
+- Rajinder Kaul
+- Muhammad G. Kibriya
+- Jin Billy Li
+- Qin Li
+- Shin Lin
+- Sandra E. Linder
+- Brandon L. Pierce
+- Lindsay F. Rizzardi
+- Andrew D. Skol
+- Kevin S. Smith
+- Michael Snyder
+- John Stamatoyannopoulos
+- Hua Tang
+- Meng Wang
+- Latarsha J. Carithers
+- Ping Guan
+- Susan E. Koester
+- A. Roger Little
+- Helen M. Moore
+- Concepcion R. Nierras
+- Abhi K. Rao
+- Jimmie B. Vaught
+- Simona Volpi
+journal: Science
+year: '2020'
+doi: 10.1126/science.aaz1776
+content_type: abstract_only
+---
+
+# The GTEx Consortium atlas of genetic regulatory effects across human tissues
+**Authors:** François Aguet, Shankara Anand, Kristin G. Ardlie, Stacey Gabriel, Gad A. Getz, Aaron Graubert, Kane Hadley, Robert E. Handsaker, Katherine H. Huang, Seva Kashin, Xiao Li, Daniel G. MacArthur, Samuel R. Meier, Jared L. Nedzel, Duyen T. Nguyen, Ayellet V. Segrè, Ellen Todres, Brunilda Balliu, Alvaro N. Barbeira, Alexis Battle, Rodrigo Bonazzola, Andrew Brown, Christopher D. Brown, Stephane E. Castel, Donald F. Conrad, Daniel J. Cotter, Nancy Cox, Sayantan Das, Olivia M. de Goede, Emmanouil T. Dermitzakis, Jonah Einson, Barbara E. Engelhardt, Eleazar Eskin, Tiffany Y. Eulalio, Nicole M. Ferraro, Elise D. Flynn, Laure Fresard, Eric R. Gamazon, Diego Garrido-Martín, Nicole R. Gay, Michael J. Gloudemans, Roderic Guigó, Andrew R. Hame, Yuan He, Paul J. Hoffman, Farhad Hormozdiari, Lei Hou, Hae Kyung Im, Brian Jo, Silva Kasela, Manolis Kellis, Sarah Kim-Hellmuth, Alan Kwong, Tuuli Lappalainen, Xin Li, Yanyu Liang, Serghei Mangul, Pejman Mohammadi, Stephen B. Montgomery, Manuel Muñoz-Aguirre, Daniel C. Nachun, Andrew B. Nobel, Meritxell Oliva, YoSon Park, Yongjin Park, Princy Parsana, Abhiram S. Rao, Ferran Reverter, John M. Rouhana, Chiara Sabatti, Ashis Saha, Matthew Stephens, Barbara E. Stranger, Benjamin J. Strober, Nicole A. Teran, Ana Viñuela, Gao Wang, Xiaoquan Wen, Fred Wright, Valentin Wucher, Yuxin Zou, Pedro G. Ferreira, Gen Li, Marta Melé, Esti Yeger-Lotem, Mary E. Barcus, Debra Bradbury, Tanya Krubit, Jeffrey A. McLean, Liqun Qi, Karna Robinson, Nancy V. Roche, Anna M. Smith, Leslie Sobin, David E. Tabor, Anita Undale, Jason Bridge, Lori E. Brigham, Barbara A. Foster, Bryan M. Gillard, Richard Hasz, Marcus Hunter, Christopher Johns, Mark Johnson, Ellen Karasik, Gene Kopen, William F. Leinweber, Alisa McDonald, Michael T. Moser, Kevin Myer, Kimberley D. Ramsey, Brian Roe, Saboor Shad, Jeffrey A. Thomas, Gary Walters, Michael Washington, Joseph Wheeler, Scott D. Jewell, Daniel C. Rohrer, Dana R. Valley, David A. Davis, Deborah C. Mash, Philip A. Branton, Laura K. Barker, Heather M. Gardiner, Maghboeba Mosavel, Laura A. Siminoff, Paul Flicek, Maximilian Haeussler, Thomas Juettemann, W. James Kent, Christopher M. Lee, Conner C. Powell, Kate R. Rosenbloom, Magali Ruffier, Dan Sheppard, Kieron Taylor, Stephen J. Trevanion, Daniel R. Zerbino, Nathan S. Abell, Joshua Akey, Lin Chen, Kathryn Demanelis, Jennifer A. Doherty, Andrew P. Feinberg, Kasper D. Hansen, Peter F. Hickey, Farzana Jasmine, Lihua Jiang, Rajinder Kaul, Muhammad G. Kibriya, Jin Billy Li, Qin Li, Shin Lin, Sandra E. Linder, Brandon L. Pierce, Lindsay F. Rizzardi, Andrew D. Skol, Kevin S. Smith, Michael Snyder, John Stamatoyannopoulos, Hua Tang, Meng Wang, Latarsha J. Carithers, Ping Guan, Susan E. Koester, A. Roger Little, Helen M. Moore, Concepcion R. Nierras, Abhi K. Rao, Jimmie B. Vaught, Simona Volpi
+**Journal:** Science (2020)
+**DOI:** [10.1126/science.aaz1776](https://doi.org/10.1126/science.aaz1776)
+
+## Content
+
+The Genotype-Tissue Expression (GTEx) project dissects how genetic variation affects gene expression and splicing.

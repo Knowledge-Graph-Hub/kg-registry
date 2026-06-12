@@ -31,6 +31,7 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
             "contacts": [{"category": "Organization", "id": "ncbi", "label": "NCBI"}],
             "creation_date": "2026-01-01T00:00:00Z",
             "last_modified_date": "2026-01-10T00:00:00Z",
+            "publications": [{"id": "PMID:12345", "title": "Old title"}],
             "products": [
                 {
                     "id": "res2.graph",
@@ -72,6 +73,14 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
         org_index={"ids": {"ncbi"}, "short_ids": set(), "labels": {
             "nationalcenterforbiotechnologyinformation"}},
         url_results=url_results,
+        citation_reports={
+            "res2": {
+                "errors": ["resource/res2/res2.md publication[0] title mismatch"],
+                "warnings": [],
+                "issue_count": 1,
+                "publication_entries_with_issues": 1,
+            }
+        },
         now=now,
         link_mode="live",
         link_summary=link_summary,
@@ -86,6 +95,8 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
     assert data["resources"]["missing_infores_id"] == 1
     assert data["resources"]["missing_fairsharing_id"] == 2
     assert data["resources"]["missing_contacts"] == 1
+    assert data["resources"]["without_publications"] == 1
+    assert data["resources"]["with_citation_issues"] == 1
     assert data["resources"]["contacts_with_org_connection"] == 1
     assert data["resources"]["contacts_without_org_connection"] == 0
     assert data["products"]["total"] == 2
@@ -93,6 +104,11 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
     assert data["products"]["missing_original_source"] == 1
     assert data["products"]["missing_product_url"] == 1
     assert data["products"]["retrieval_warning_mentions"] == 1
+    assert data["citations"]["publication_entries_total"] == 1
+    assert data["citations"]["publication_entries_with_issues"] == 1
+    assert data["citations"]["resources_without_publications"] == 1
+    assert data["citations"]["resources_with_citation_issues"] == 1
+    assert data["citations"]["validation_errors"] == 1
     assert data["dates"]["modified_after_creation"] == 1
     assert data["dates"]["unchanged_since_creation"] == 1
     assert data["links"]["broken_urls"] == 1
@@ -100,6 +116,8 @@ def test_build_dashboard_data_counts_and_scoring(quality_dashboard_module):
     assert sorted(data["detail_lists"]["resource_total_ids"]) == ["res2", "stubres"]
     assert sorted(data["detail_lists"]["product_total_ids"]) == ["res2.download", "res2.graph"]
     assert data["detail_lists"]["missing_contacts_resource_ids"] == ["stubres"]
+    assert data["detail_lists"]["resources_without_publications_ids"] == ["stubres"]
+    assert data["detail_lists"]["resources_with_citation_issue_ids"] == ["res2"]
     assert data["detail_lists"]["broken_link_page_ids"] == ["res2.download"]
     assert data["detail_lists"]["resource_with_broken_links_ids"] == ["res2"]
 
@@ -132,6 +150,7 @@ def test_knowledge_graph_evaluation_coverage(quality_dashboard_module):
         resources,
         org_index={"ids": set(), "short_ids": set(), "labels": set()},
         url_results={},
+        citation_reports={},
         now=now,
         link_mode="cache-or-unchecked",
         link_summary={

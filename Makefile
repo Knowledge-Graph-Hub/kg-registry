@@ -148,7 +148,7 @@ clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 clean-cache:
-	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
+	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/publication_reference_validation.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -286,7 +286,7 @@ tox:
 ## Single-file Convenience ##
 #############################
 
-.PHONY: validate-file prettify-file populate-infores-dry-run populate-infores-force
+.PHONY: validate-file prettify-file cache-publication-references validate-publication-reference-cache populate-infores-dry-run populate-infores-force
 
 # Validate a single resource markdown file
 # Usage: make validate-file FILE=resource/<path>/<name>.md
@@ -300,6 +300,14 @@ validate-file:
 	  exit 1; \
 	fi
 	@./util/extract-metadata.py validate "$(FILE)"
+
+# Fetch missing publication references into the linkml-reference-validator cache.
+cache-publication-references: tmp/resource-files.txt
+	@$(RUN) ./util/extract-metadata.py validate --fetch-publication-references @$<
+
+# Require every publication reference to have cached metadata.
+validate-publication-reference-cache: tmp/resource-files.txt
+	@$(RUN) ./util/extract-metadata.py validate --require-publication-reference-cache @$<
 
 # Prettify a single resource markdown file
 # Usage: make prettify-file FILE=resource/<path>/<name>.md
@@ -377,7 +385,7 @@ build:
 build/resource:
 	mkdir -p $@
 
-quality-dashboard: $(RESOURCES) util/generate-quality-dashboard.py | reports
+quality-dashboard: $(RESOURCES) util/generate-quality-dashboard.py util/reference_validation.py | reports
 	$(RUN) python util/generate-quality-dashboard.py --output $(QUALITY_DASHBOARD_JSON) $(QUALITY_DASHBOARD_LINK_FLAGS)
 
 # Backward-compatible file target alias.

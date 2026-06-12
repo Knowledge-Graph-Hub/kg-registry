@@ -32,3 +32,20 @@ For developers working on the KG-Registry website and backend:
 - [Agent Skills Guide](docs/intro/agent-skills.md) - Local agent-assisted curation workflows in `.agents/`
 - [Parquet Backend Documentation](docs/parquet_backend.md) - Database schema and querying
 - [Advanced Search Feature](advanced-search.html) - SQL-based resource discovery interface
+
+## Reference Validation
+
+Resource publication metadata is validated against cache files produced by
+[`linkml-reference-validator`](https://github.com/linkml/linkml-reference-validator).
+Cached title, year, DOI, and first-author mismatches are validation errors;
+missing cache files are warnings during ordinary validation.
+
+```bash
+uv run make validate-file FILE=resource/<resource>/<resource>.md
+uv run make cache-publication-references
+uv run make validate-publication-reference-cache
+```
+
+See [Reference Validation](docs/reference-validation.md) for the full procedure.
+The data quality dashboard also reports resources with missing publications or
+publication citation metadata issues.
