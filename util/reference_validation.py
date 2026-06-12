@@ -6,7 +6,10 @@ import os
 import re
 import shutil
 import subprocess
+import unicodedata
 from dataclasses import dataclass, field
+from difflib import SequenceMatcher
+from html import unescape
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
@@ -121,9 +124,9 @@ def compare_publication_to_cache(
             f"uses cache {cache_path} for {reference_id}, but cache declares {cached_reference_id}"
         )
 
-    _compare_text_field(check, publication, cached, "title", strict=True)
+    _compare_title_field(check, publication, cached)
     _compare_text_field(check, publication, cached, "journal", strict=False)
-    _compare_text_field(check, publication, cached, "year", strict=True)
+    _compare_text_field(check, publication, cached, "year", strict=False)
 
     pub_doi = publication.get("doi")
     cached_doi = cached.get("doi")
@@ -135,11 +138,14 @@ def compare_publication_to_cache(
     pub_authors = _coerce_list(publication.get("authors"))
     cached_authors = _coerce_list(cached.get("authors"))
     if pub_authors and cached_authors:
-        pub_first = normalize_author(pub_authors[0])
-        cached_first = normalize_author(cached_authors[0])
-        if pub_first and cached_first and pub_first != cached_first:
+        author_match = authors_match(pub_authors[0], cached_authors[0])
+        if author_match is False:
             check.errors.append(
                 f"first author {pub_authors[0]!r} does not match cached first author {cached_authors[0]!r} in {cache_path}"
+            )
+        elif author_match is None:
+            check.warnings.append(
+                f"first author {pub_authors[0]!r} could not be confidently compared to cached first author {cached_authors[0]!r} in {cache_path}"
             )
     elif cached_authors and not pub_authors:
         check.warnings.append(f"authors missing; cached authors are available in {cache_path}")
@@ -290,16 +296,72 @@ def normalize_doi(value: str) -> str:
 def normalize_text(value: str) -> str:
     """Normalize bibliographic text enough to compare common formatting variants."""
 
-    text = value.strip().casefold()
+    text = _strip_markup(value).strip().casefold()
     text = re.sub(r"\s+", " ", text)
     return text.rstrip(".")
 
 
-def normalize_author(value: str) -> str:
-    """Normalize an author string for first-author comparisons."""
+def normalize_loose_text(value: str) -> str:
+    """Normalize text for punctuation-insensitive bibliographic comparisons."""
 
-    text = normalize_text(value)
-    text = re.sub(r"[.,]", "", text)
+    text = _strip_markup(value)
+    text = text.replace("\u00a0", " ")
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = text.casefold()
+    text = text.replace("&", " and ")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def titles_match(left: str, right: str) -> tuple[bool, float]:
+    """Return whether two titles match, plus a normalized similarity score."""
+
+    left_norm = normalize_loose_text(left)
+    right_norm = normalize_loose_text(right)
+    if not left_norm or not right_norm:
+        return False, 0.0
+    if left_norm == right_norm:
+        return True, 1.0
+    if len(left_norm) >= 20 and len(right_norm) >= 20:
+        shorter, longer = sorted((left_norm, right_norm), key=len)
+        if shorter in longer:
+            return True, 1.0
+    score = SequenceMatcher(None, left_norm, right_norm).ratio()
+    return score >= 0.94, score
+
+
+def authors_match(left: str, right: str) -> bool | None:
+    """Compare first-author strings while tolerating initials and name order."""
+
+    left_tokens = _author_tokens(left)
+    right_tokens = _author_tokens(right)
+    if not left_tokens or not right_tokens:
+        return None
+
+    if left_tokens == right_tokens:
+        return True
+
+    if _looks_like_group_author(left_tokens) or _looks_like_group_author(right_tokens):
+        return None
+
+    for left_surname_index in _surname_candidate_indexes(left_tokens):
+        for right_surname_index in _surname_candidate_indexes(right_tokens):
+            if left_tokens[left_surname_index] != right_tokens[right_surname_index]:
+                continue
+            left_initials = _given_initials(left_tokens, left_surname_index)
+            right_initials = _given_initials(right_tokens, right_surname_index)
+            if not left_initials or not right_initials:
+                return True
+            if left_initials[0] == right_initials[0]:
+                return True
+
+    return False
+
+
+def _strip_markup(value: str) -> str:
+    text = unescape(str(value))
+    text = re.sub(r"<[^>]+>", " ", text)
     return text
 
 
@@ -336,6 +398,30 @@ def _compare_text_field(
             check.warnings.append(message)
 
 
+def _compare_title_field(
+    check: PublicationReferenceCheck,
+    publication: dict[str, Any],
+    cached: dict[str, Any],
+) -> None:
+    published_value = publication.get("title")
+    cached_value = cached.get("title")
+    if not published_value or not cached_value:
+        return
+
+    matched, score = titles_match(str(published_value), str(cached_value))
+    if matched:
+        return
+
+    message = (
+        f"title {published_value!r} does not match cached title "
+        f"{cached_value!r} in {check.cache_path}"
+    )
+    if score >= 0.82:
+        check.warnings.append(message)
+    else:
+        check.errors.append(message)
+
+
 def _coerce_list(value: Any) -> list[str]:
     if value is None:
         return []
@@ -344,3 +430,38 @@ def _coerce_list(value: Any) -> list[str]:
     if isinstance(value, Iterable):
         return [str(item) for item in value if item is not None]
     return [str(value)]
+
+
+def _author_tokens(value: str) -> list[str]:
+    tokens = normalize_loose_text(value).split()
+    return [token for token in tokens if token not in {"jr", "sr", "ii", "iii", "iv"}]
+
+
+def _surname_candidate_indexes(tokens: list[str]) -> list[int]:
+    if not tokens:
+        return []
+    if len(tokens) == 1:
+        return [0]
+    return [0, len(tokens) - 1]
+
+
+def _given_initials(tokens: list[str], surname_index: int) -> str:
+    return "".join(token[0] for index, token in enumerate(tokens) if index != surname_index)
+
+
+def _looks_like_group_author(tokens: list[str]) -> bool:
+    group_terms = {
+        "alliance",
+        "collaboration",
+        "committee",
+        "consortium",
+        "group",
+        "investigators",
+        "network",
+        "participating",
+        "scientists",
+        "society",
+        "team",
+        "working",
+    }
+    return bool(group_terms.intersection(tokens))

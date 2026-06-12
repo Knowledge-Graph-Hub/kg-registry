@@ -95,9 +95,45 @@ doi: 10.1000/correct
     )
 
     assert any("title 'Wrong title' does not match cached title 'Correct title'" in e for e in report.errors)
-    assert any("year '2023' does not match cached year '2024'" in e for e in report.errors)
     assert any("doi '10.1000/wrong' does not match cached doi '10.1000/correct'" in e for e in report.errors)
     assert any("first author 'Wrong A' does not match cached first author 'Correct A'" in e for e in report.errors)
+    assert any("year '2023' does not match cached year '2024'" in w for w in report.warnings)
+
+
+def test_publication_reference_validation_tolerates_formatting_variants(
+    repo_root: Path, tmp_path: Path
+):
+    mod = _load_reference_validation(repo_root)
+    _write_cache(
+        tmp_path,
+        "DOI_10.1000_formatting.md",
+        """reference_id: DOI:10.1000/formatting
+title: "The <i>Example</i> database: protein–protein interactions"
+authors:
+- Job Dekker
+year: '2024'
+doi: 10.1000/formatting
+""",
+    )
+
+    report = mod.validate_publication_references(
+        {
+            "publications": [
+                {
+                    "id": "doi:10.1000/formatting",
+                    "title": "The Example database - protein-protein interactions",
+                    "authors": ["Dekker J"],
+                    "year": "2024",
+                    "doi": "https://doi.org/10.1000/formatting",
+                }
+            ]
+        },
+        "resource/example/example.md",
+        cache_dir=tmp_path,
+        require_cache=True,
+    )
+
+    assert report.errors == []
 
 
 def test_uncached_publication_reference_can_be_required(repo_root: Path, tmp_path: Path):
