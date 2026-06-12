@@ -97,7 +97,7 @@ Mouse Developmental Anatomy Ontology in OBO format
 - [An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature](https://www.ncbi.nlm.nih.gov/pubmed/9651497)
 - [EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update](https://www.ncbi.nlm.nih.gov/pubmed/23972281)
 - [Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data](https://www.ncbi.nlm.nih.gov/pubmed/26208972)
-- [Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)](https://doi.org/10.1016/B978-0-12-800043-4.00023-3)
+- [Textual Anatomics](https://doi.org/10.1016/B978-0-12-800043-4.00023-3)
 
 **Domains**: anatomy and development
 
