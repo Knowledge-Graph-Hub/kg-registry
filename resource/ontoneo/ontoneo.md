@@ -18,7 +18,7 @@ domains:
   - biomedical
 homepage_url: https://ontoneo.com/
 id: ontoneo
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -40,8 +40,13 @@ repository: https://github.com/ontoneo-project/Ontoneo
 publications:
   - id: https://doi.org/10.5281/zenodo.17429771
     title: 'OntONeo: The Obstetric and Neonatal Ontology'
-  - id: https://doi.org/10.5281/zenodo.17508651
-    title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal Domain
+  - id: doi:10.5281/zenodo.17508651
+    doi: 10.5281/zenodo.17508651
+    title: Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e Neonatal
+    authors:
+      - Farinelli, Fernanda
+    journal: Zenodo
+    year: '2025'
 ---
 
 ## Description

@@ -18,7 +18,7 @@ domains:
   - anatomy and development
 homepage_url: http://www.informatics.jax.org/expression.shtml
 id: emapa
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -56,8 +56,14 @@ publications:
     title: 'EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update'
   - id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
     title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data'
-  - id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
-    title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)'
+  - id: doi:10.1016/B978-0-12-800043-4.00023-3
+    doi: 10.1016/B978-0-12-800043-4.00023-3
+    title: Textual Anatomics
+    authors:
+      - Terry F. Hayamizu
+      - Martin Ringwald
+    journal: Kaufman's Atlas of Mouse Development Supplement
+    year: '2016'
 ---
 
 ## Description

@@ -2,493 +2,483 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: contact@opentargets.org
-  - contact_type: github
-    value: opentargets
-  - contact_type: url
-    value: https://www.opentargets.org/contact
-  label: Open Targets
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: contact@opentargets.org
+      - contact_type: github
+        value: opentargets
+      - contact_type: url
+        value: https://www.opentargets.org/contact
+    label: Open Targets
 creation_date: '2025-05-29T00:00:00Z'
-description: Open Targets is a collaborative effort to systematically identify and
-  prioritise the best targets to safely and effectively treat rare and common diseases.
+description: Open Targets is a collaborative effort to systematically identify and prioritise the best targets to safely and effectively treat rare and common diseases.
 domains:
-- biomedical
+  - biomedical
 homepage_url: https://www.opentargets.org/
 id: opentargets
-last_modified_date: '2026-01-06T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
   label: Apache License 2.0
 name: Open Targets
 products:
-- category: GraphicalInterface
-  description: The Open Targets Platform integrates and visualizes public data on
-    target-disease associations to assist in drug target identification and prioritization.
-  format: http
-  id: opentargets.platform
-  name: Open Targets Platform
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  product_url: https://platform.opentargets.org/
-  repository: https://github.com/opentargets/platform
-- category: ProgrammingInterface
-  description: GraphQL API for accessing Open Targets Platform data programmatically.
-  id: opentargets.api.graphql
-  is_public: true
-  name: Open Targets Platform GraphQL API
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  product_url: https://api.platform.opentargets.org/api/v4/graphql
-- category: ProgrammingInterface
-  description: REST API for accessing Open Targets Platform data programmatically.
-  id: opentargets.api.rest
-  is_public: true
-  name: Open Targets Platform REST API
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  product_url: https://api.platform.opentargets.org/api/v4/rest
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: 4dn
-  - relation_type: prov:hadPrimarySource
-    source: biomarker
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: connectivitymap
-  - relation_type: prov:hadPrimarySource
-    source: dct
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: edam
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: erccrbp
-  - relation_type: prov:hadPrimarySource
-    source: erccreg
-  - relation_type: prov:hadPrimarySource
-    source: faldo
-  - relation_type: prov:hadPrimarySource
-    source: gencode
-  - relation_type: prov:hadPrimarySource
-    source: glycocoo
-  - relation_type: prov:hadPrimarySource
-    source: glycordf
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: hra
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: hubmap
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: kidsfirst
-  - relation_type: prov:hadPrimarySource
-    source: lincs
-  - relation_type: prov:hadPrimarySource
-    source: loinc
-  - relation_type: prov:hadPrimarySource
-    source: mi
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: motrpac
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: msigdb
-  - relation_type: prov:hadPrimarySource
-    source: mw
-  - relation_type: prov:hadPrimarySource
-    source: npo
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: obib
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: pgo
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: sbo
-  - relation_type: prov:hadPrimarySource
-    source: sckan
-  - relation_type: prov:hadPrimarySource
-    source: sennet
-  - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: stellar
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: ubkg
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  product_url: https://ubkg-downloads.xconsortia.org/
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: 4dn
-  - relation_type: prov:hadPrimarySource
-    source: biomarker
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: cl
-  - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: connectivitymap
-  - relation_type: prov:hadPrimarySource
-    source: dct
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: doid
-  - relation_type: prov:hadPrimarySource
-    source: edam
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: erccrbp
-  - relation_type: prov:hadPrimarySource
-    source: erccreg
-  - relation_type: prov:hadPrimarySource
-    source: faldo
-  - relation_type: prov:hadPrimarySource
-    source: gencode
-  - relation_type: prov:hadPrimarySource
-    source: glycocoo
-  - relation_type: prov:hadPrimarySource
-    source: glycordf
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: hra
-  - relation_type: prov:hadPrimarySource
-    source: hsapdv
-  - relation_type: prov:hadPrimarySource
-    source: hubmap
-  - relation_type: prov:hadPrimarySource
-    source: icd10
-  - relation_type: prov:hadPrimarySource
-    source: kidsfirst
-  - relation_type: prov:hadPrimarySource
-    source: lincs
-  - relation_type: prov:hadPrimarySource
-    source: loinc
-  - relation_type: prov:hadPrimarySource
-    source: mi
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: motrpac
-  - relation_type: prov:hadPrimarySource
-    source: mp
-  - relation_type: prov:hadPrimarySource
-    source: msigdb
-  - relation_type: prov:hadPrimarySource
-    source: mw
-  - relation_type: prov:hadPrimarySource
-    source: npo
-  - relation_type: prov:hadPrimarySource
-    source: obi
-  - relation_type: prov:hadPrimarySource
-    source: obib
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  - relation_type: prov:hadPrimarySource
-    source: ordo
-  - relation_type: prov:hadPrimarySource
-    source: pato
-  - relation_type: prov:hadPrimarySource
-    source: pgo
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: sbo
-  - relation_type: prov:hadPrimarySource
-    source: sckan
-  - relation_type: prov:hadPrimarySource
-    source: sennet
-  - relation_type: prov:hadPrimarySource
-    source: snomedct
-  - relation_type: prov:hadPrimarySource
-    source: stellar
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: uberon
-  - relation_type: prov:hadPrimarySource
-    source: ubkg
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: uo
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  product_url: https://ubkg-downloads.xconsortia.org/
-- category: Product
-  description: Network embeddings of the Bioteque graph that represent biological
-    entities and their associations
-  id: bioteque.embeddings
-  name: Bioteque Embeddings
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: achilles
-  - relation_type: prov:hadPrimarySource
-    source: bioteque
-  - relation_type: prov:hadPrimarySource
-    source: bto
-  - relation_type: prov:hadPrimarySource
-    source: ccle
-  - relation_type: prov:hadPrimarySource
-    source: cellosaurus
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: chemicalchecker
-  - relation_type: prov:hadPrimarySource
-    source: clue
-  - relation_type: prov:hadPrimarySource
-    source: compartments
-  - relation_type: prov:hadPrimarySource
-    source: corum
-  - relation_type: prov:hadPrimarySource
-    source: cosmic
-  - relation_type: prov:hadPrimarySource
-    source: creeds
-  - relation_type: prov:hadPrimarySource
-    source: ctd
-  - relation_type: prov:hadPrimarySource
-    source: depmap
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: dorothea
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: drugcentral
-  - relation_type: prov:hadPrimarySource
-    source: gdsc
-  - relation_type: prov:hadPrimarySource
-    source: go
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  - relation_type: prov:hadPrimarySource
-    source: hpa
-  - relation_type: prov:hadPrimarySource
-    source: huri
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: interpro
-  - relation_type: prov:hadPrimarySource
-    source: lincs
-  - relation_type: prov:hadPrimarySource
-    source: offsides
-  - relation_type: prov:hadPrimarySource
-    source: omnipath
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  - relation_type: prov:hadPrimarySource
-    source: pharmacodb
-  - relation_type: prov:hadPrimarySource
-    source: prism
-  - relation_type: prov:hadPrimarySource
-    source: progeny
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: repodb
-  - relation_type: prov:hadPrimarySource
-    source: repohub
-  - relation_type: prov:hadPrimarySource
-    source: sider
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: tissues
-  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-- category: GraphProduct
-  description: Integrated graph knowledge base combining Mendelian randomization causal
-    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
-    (Neo4j backend)
-  format: neo4j
-  id: epigraphdb.graph
-  name: EpiGraphDB Graph Database
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: epigraphdb
-  - relation_type: prov:hadPrimarySource
-    source: kg-monarch
-  - relation_type: prov:hadPrimarySource
-    source: vectology
-  - relation_type: prov:hadPrimarySource
-    source: ukbiobank
-  - relation_type: prov:hadPrimarySource
-    source: prsatlas
-  - relation_type: prov:hadPrimarySource
-    source: eqtlgen
-  - relation_type: prov:hadPrimarySource
-    source: mondo
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  - relation_type: prov:hadPrimarySource
-    source: ensembl
-  - relation_type: prov:hadPrimarySource
-    source: cpic
-  - relation_type: prov:hadPrimarySource
-    source: opentargets
-  - relation_type: prov:hadPrimarySource
-    source: efo
-  - relation_type: prov:hadPrimarySource
-    source: semmeddb
-  - relation_type: prov:hadPrimarySource
-    source: intact
-  - relation_type: prov:hadPrimarySource
-    source: string
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: mrbase
-  product_url: https://docs.epigraphdb.org/graph-database/
-- category: GraphProduct
-  description: Neo4j construction artifacts for CardioKG, including Cypher scripts
-    to create graph nodes and add edges.
-  dump_format: neo4j
-  format: neo4j
-  id: cardiokg.neo4j
-  name: CardioKG Neo4j graph construction scripts
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: cardiokg
-  - relation_type: prov:hadPrimarySource
-    source: ukbiobank
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:used
-    source: mesh
-  - relation_type: prov:used
-    source: mondo
-  - relation_type: prov:used
-    source: reactome
-  - relation_type: prov:used
-    source: kegg
-  - relation_type: prov:used
-    source: uniprot
-  - relation_type: prov:used
-    source: string
-  - relation_type: prov:used
-    source: opentargets
-  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+  - category: GraphicalInterface
+    description: The Open Targets Platform integrates and visualizes public data on target-disease associations to assist in drug target identification and prioritization.
+    format: http
+    id: opentargets.platform
+    name: Open Targets Platform
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+    product_url: https://platform.opentargets.org/
+    repository: https://github.com/opentargets/platform
+  - category: ProgrammingInterface
+    description: GraphQL API for accessing Open Targets Platform data programmatically.
+    id: opentargets.api.graphql
+    is_public: true
+    name: Open Targets Platform GraphQL API
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+    product_url: https://api.platform.opentargets.org/api/v4/graphql
+  - category: ProgrammingInterface
+    description: REST API for accessing Open Targets Platform data programmatically.
+    id: opentargets.api.rest
+    is_public: true
+    name: Open Targets Platform REST API
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+    product_url: https://api.platform.opentargets.org/api/v4/rest
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: 4dn
+      - relation_type: prov:hadPrimarySource
+        source: biomarker
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: connectivitymap
+      - relation_type: prov:hadPrimarySource
+        source: dct
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: edam
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: erccrbp
+      - relation_type: prov:hadPrimarySource
+        source: erccreg
+      - relation_type: prov:hadPrimarySource
+        source: faldo
+      - relation_type: prov:hadPrimarySource
+        source: gencode
+      - relation_type: prov:hadPrimarySource
+        source: glycocoo
+      - relation_type: prov:hadPrimarySource
+        source: glycordf
+      - relation_type: prov:hadPrimarySource
+        source: gtex
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hra
+      - relation_type: prov:hadPrimarySource
+        source: hsapdv
+      - relation_type: prov:hadPrimarySource
+        source: hubmap
+      - relation_type: prov:hadPrimarySource
+        source: icd10
+      - relation_type: prov:hadPrimarySource
+        source: kidsfirst
+      - relation_type: prov:hadPrimarySource
+        source: lincs
+      - relation_type: prov:hadPrimarySource
+        source: loinc
+      - relation_type: prov:hadPrimarySource
+        source: mi
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: motrpac
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
+      - relation_type: prov:hadPrimarySource
+        source: mw
+      - relation_type: prov:hadPrimarySource
+        source: npo
+      - relation_type: prov:hadPrimarySource
+        source: obi
+      - relation_type: prov:hadPrimarySource
+        source: obib
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: sbo
+      - relation_type: prov:hadPrimarySource
+        source: sckan
+      - relation_type: prov:hadPrimarySource
+        source: sennet
+      - relation_type: prov:hadPrimarySource
+        source: snomedct
+      - relation_type: prov:hadPrimarySource
+        source: stellar
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: ubkg
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: uo
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
+    product_url: https://ubkg-downloads.xconsortia.org/
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: 4dn
+      - relation_type: prov:hadPrimarySource
+        source: biomarker
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: cl
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: connectivitymap
+      - relation_type: prov:hadPrimarySource
+        source: dct
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: doid
+      - relation_type: prov:hadPrimarySource
+        source: edam
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: erccrbp
+      - relation_type: prov:hadPrimarySource
+        source: erccreg
+      - relation_type: prov:hadPrimarySource
+        source: faldo
+      - relation_type: prov:hadPrimarySource
+        source: gencode
+      - relation_type: prov:hadPrimarySource
+        source: glycocoo
+      - relation_type: prov:hadPrimarySource
+        source: glycordf
+      - relation_type: prov:hadPrimarySource
+        source: gtex
+      - relation_type: prov:hadPrimarySource
+        source: hgnc
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: hra
+      - relation_type: prov:hadPrimarySource
+        source: hsapdv
+      - relation_type: prov:hadPrimarySource
+        source: hubmap
+      - relation_type: prov:hadPrimarySource
+        source: icd10
+      - relation_type: prov:hadPrimarySource
+        source: kidsfirst
+      - relation_type: prov:hadPrimarySource
+        source: lincs
+      - relation_type: prov:hadPrimarySource
+        source: loinc
+      - relation_type: prov:hadPrimarySource
+        source: mi
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: motrpac
+      - relation_type: prov:hadPrimarySource
+        source: mp
+      - relation_type: prov:hadPrimarySource
+        source: msigdb
+      - relation_type: prov:hadPrimarySource
+        source: mw
+      - relation_type: prov:hadPrimarySource
+        source: npo
+      - relation_type: prov:hadPrimarySource
+        source: obi
+      - relation_type: prov:hadPrimarySource
+        source: obib
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+      - relation_type: prov:hadPrimarySource
+        source: ordo
+      - relation_type: prov:hadPrimarySource
+        source: pato
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: sbo
+      - relation_type: prov:hadPrimarySource
+        source: sckan
+      - relation_type: prov:hadPrimarySource
+        source: sennet
+      - relation_type: prov:hadPrimarySource
+        source: snomedct
+      - relation_type: prov:hadPrimarySource
+        source: stellar
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: uberon
+      - relation_type: prov:hadPrimarySource
+        source: ubkg
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: uo
+      - relation_type: prov:hadPrimarySource
+        source: wikipathways
+    product_url: https://ubkg-downloads.xconsortia.org/
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: achilles
+      - relation_type: prov:hadPrimarySource
+        source: bioteque
+      - relation_type: prov:hadPrimarySource
+        source: bto
+      - relation_type: prov:hadPrimarySource
+        source: ccle
+      - relation_type: prov:hadPrimarySource
+        source: cellosaurus
+      - relation_type: prov:hadPrimarySource
+        source: chebi
+      - relation_type: prov:hadPrimarySource
+        source: chemicalchecker
+      - relation_type: prov:hadPrimarySource
+        source: clue
+      - relation_type: prov:hadPrimarySource
+        source: compartments
+      - relation_type: prov:hadPrimarySource
+        source: corum
+      - relation_type: prov:hadPrimarySource
+        source: cosmic
+      - relation_type: prov:hadPrimarySource
+        source: creeds
+      - relation_type: prov:hadPrimarySource
+        source: ctd
+      - relation_type: prov:hadPrimarySource
+        source: depmap
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: dorothea
+      - relation_type: prov:hadPrimarySource
+        source: drugbank
+      - relation_type: prov:hadPrimarySource
+        source: drugcentral
+      - relation_type: prov:hadPrimarySource
+        source: gdsc
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: gtex
+      - relation_type: prov:hadPrimarySource
+        source: hpa
+      - relation_type: prov:hadPrimarySource
+        source: huri
+      - relation_type: prov:hadPrimarySource
+        source: intact
+      - relation_type: prov:hadPrimarySource
+        source: interpro
+      - relation_type: prov:hadPrimarySource
+        source: lincs
+      - relation_type: prov:hadPrimarySource
+        source: offsides
+      - relation_type: prov:hadPrimarySource
+        source: omnipath
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+      - relation_type: prov:hadPrimarySource
+        source: pharmacodb
+      - relation_type: prov:hadPrimarySource
+        source: prism
+      - relation_type: prov:hadPrimarySource
+        source: progeny
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: repodb
+      - relation_type: prov:hadPrimarySource
+        source: repohub
+      - relation_type: prov:hadPrimarySource
+        source: sider
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: tissues
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  - category: GraphProduct
+    description: Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)
+    format: neo4j
+    id: epigraphdb.graph
+    name: EpiGraphDB Graph Database
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: epigraphdb
+      - relation_type: prov:hadPrimarySource
+        source: kg-monarch
+      - relation_type: prov:hadPrimarySource
+        source: vectology
+      - relation_type: prov:hadPrimarySource
+        source: ukbiobank
+      - relation_type: prov:hadPrimarySource
+        source: prsatlas
+      - relation_type: prov:hadPrimarySource
+        source: eqtlgen
+      - relation_type: prov:hadPrimarySource
+        source: mondo
+      - relation_type: prov:hadPrimarySource
+        source: gtex
+      - relation_type: prov:hadPrimarySource
+        source: ensembl
+      - relation_type: prov:hadPrimarySource
+        source: cpic
+      - relation_type: prov:hadPrimarySource
+        source: opentargets
+      - relation_type: prov:hadPrimarySource
+        source: efo
+      - relation_type: prov:hadPrimarySource
+        source: semmeddb
+      - relation_type: prov:hadPrimarySource
+        source: intact
+      - relation_type: prov:hadPrimarySource
+        source: string
+      - relation_type: prov:hadPrimarySource
+        source: reactome
+      - relation_type: prov:hadPrimarySource
+        source: mrbase
+    product_url: https://docs.epigraphdb.org/graph-database/
+  - category: GraphProduct
+    description: Neo4j construction artifacts for CardioKG, including Cypher scripts to create graph nodes and add edges.
+    dump_format: neo4j
+    format: neo4j
+    id: cardiokg.neo4j
+    name: CardioKG Neo4j graph construction scripts
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: cardiokg
+      - relation_type: prov:hadPrimarySource
+        source: ukbiobank
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: drugbank
+      - relation_type: prov:used
+        source: mesh
+      - relation_type: prov:used
+        source: mondo
+      - relation_type: prov:used
+        source: reactome
+      - relation_type: prov:used
+        source: kegg
+      - relation_type: prov:used
+        source: uniprot
+      - relation_type: prov:used
+        source: string
+      - relation_type: prov:used
+        source: opentargets
+    product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
 publications:
-- authors:
-  - Diederik S. Laman Trip
-  - Marc van Oostrum
-  - Danish Memon
-  - Fabian Frommelt
-  - Delora Baptista
-  - Kalpana Panneerselvam
-  - Glyn Bradley
-  - Luana Licata
-  - Henning Hermjakob
-  - Sandra Orchard
-  - Gosia Trynka
-  - Ellen M. McDonagh
-  - Andrea Fossati
-  - Ruedi Aebersold
-  - Matthias Gstaiger
-  - Bernd Wollscheid
-  - Pedro Beltrao
-  doi: doi:10.1038/s41587-025-02659-z
-  id: https://doi.org/10.1038/s41587-025-02659-z
-  journal: Nature Biotechnology
-  preferred: true
-  title: "A tissue-specific atlas of protein\u2013protein associations enables prioritization\
-    \ of candidate disease genes"
-  year: '2025'
-- authors:
-  - Cruz-Castillo, C.
-  - Fumis, L.
-  - Mehta, C.
-  - Martinez-Osorio, R.E.
-  - Roldan-Romero, J.M.
-  - Cornu, H.
-  - Uniyal, P.
-  - Solano-Roman, A.
-  - Carmona, M.
-  - Ochoa, D.
-  - McDonagh, E.M.
-  - Buniello, A.
-  doi: doi:10.1093/bioinformatics/btaf070
-  id: https://doi.org/10.1093/bioinformatics/btaf070
-  journal: Bioinformatics
-  title: Associations on the Fly, a new feature aiming to facilitate exploration of
-    the Open Targets Platform evidence
-  year: '2025'
+  - authors:
+      - Diederik S. Laman Trip
+      - Marc van Oostrum
+      - Danish Memon
+      - Fabian Frommelt
+      - Delora Baptista
+      - Kalpana Panneerselvam
+      - Glyn Bradley
+      - Luana Licata
+      - Henning Hermjakob
+      - Sandra Orchard
+      - Gosia Trynka
+      - Ellen M. McDonagh
+      - Andrea Fossati
+      - Ruedi Aebersold
+      - Matthias Gstaiger
+      - Bernd Wollscheid
+      - Pedro Beltrao
+    doi: doi:10.1038/s41587-025-02659-z
+    id: https://doi.org/10.1038/s41587-025-02659-z
+    journal: Nature Biotechnology
+    preferred: true
+    title: "A tissue-specific atlas of protein–protein associations enables prioritization of candidate disease genes"
+    year: '2025'
+  - id: doi:10.1093/bioinformatics/btaf070
+    doi: 10.1093/bioinformatics/btaf070
+    title: Associations on the Fly, a new feature aiming to facilitate exploration of the Open Targets Platform evidence
+    authors:
+      - Carlos Cruz-Castillo
+      - Luca Fumis
+      - Chintan Mehta
+      - Ricardo Esteban Martinez-Osorio
+      - Juan Maria Roldan-Romero
+      - Helena Cornu
+      - Prashant Uniyal
+      - Antonio Solano-Roman
+      - Miguel Carmona
+      - David Ochoa
+      - Ellen Mary McDonagh
+      - Annalisa Buniello
+    journal: Bioinformatics
+    year: '2025'
 repository: https://github.com/opentargets
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 ## Open Targets: Delivering Systematic Drug Target Selection
 
 **Open Targets** is a pre-competitive partnership that systematically identifies and prioritizes drug targets to improve the success rate for developing safe and effective medicines. The consortium brings together expertise from leading pharmaceutical companies and academic research institutions to generate and integrate public data for better target selection in drug discovery.

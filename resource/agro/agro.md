@@ -18,7 +18,7 @@ domains:
   - agriculture
 homepage_url: https://github.com/AgriculturalSemantics/agro
 id: agro
-last_modified_date: '2026-04-15T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -38,8 +38,17 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/AgriculturalSemantics/agro
 publications:
-  - id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
-    title: 'Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics.'
+  - id: url:http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
+    title: 'Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics'
+    authors:
+      - Medha Devare
+      - Céline Aubert
+      - Marie-Angélique Laporte
+      - Léo Valette
+      - Elizabeth Arnaud
+      - Pier Luigi Buttigieg
+    journal: CEUR Workshop Proceedings
+    year: '2016'
 ---
 
 ## Description

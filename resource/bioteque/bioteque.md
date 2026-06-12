@@ -123,19 +123,20 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://bioteque.irbbarcelona.org/bqsupports
 publications:
-  - authors:
-      - "Fernández-Torras A"
-      - Duran-Frigola M
-      - Bertoni M
-      - Locatelli M
-      - Aloy P
-    doi: doi:10.1038/s41467-022-33026-0
-    id: doi:10.1038/s41467-022-33026-0
+  - id: doi:10.1038/s41467-022-33026-0
+    doi: 10.1038/s41467-022-33026-0
     title: Integrating and formatting biomedical data as pre-calculated knowledge graph embeddings in the Bioteque
+    authors:
+      - Adrià Fernández-Torras
+      - Miquel Duran-Frigola
+      - Martino Bertoni
+      - Martina Locatelli
+      - Patrick Aloy
+    journal: Nature Communications
     year: '2022'
 repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 creation_date: '2025-03-09T00:00:00Z'
-last_modified_date: '2025-09-10T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 ---
 
 ## Bioteque Knowledge Graph

@@ -15,7 +15,7 @@ domains:
   - biological systems
 homepage_url: https://www.p3db.org/
 id: p3db
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: P3DB
 products:
@@ -89,17 +89,17 @@ products:
       - relation_type: prov:wasDerivedFrom
         source: uniprot
 publications:
-  - authors:
-      - Jianjiong Gao
-      - Liqin Agrawal
-      - Allison Thelen
-      - Jay J Thelen
-      - Dong Xu
-    doi: 10.3389/fpls.2012.00206
+  - preferred: true
     id: doi:10.3389/fpls.2012.00206
+    doi: 10.3389/fpls.2012.00206
+    title: 'P3DB: An Integrated Database for Plant Protein Phosphorylation'
+    authors:
+      - Qiuming Yao
+      - Curtis Bollinger
+      - Jianjiong Gao
+      - Dong Xu
+      - Jay J. Thelen
     journal: Frontiers in Plant Science
-    preferred: true
-    title: 'P3DB: an integrated database for plant protein phosphorylation'
     year: '2012'
 taxon:
   - NCBITaxon:33090

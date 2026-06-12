@@ -142,14 +142,17 @@ publications:
     journal: JMIR Medical Informatics
     title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations
     year: '2021'
-  - authors:
-      - Davis AP
-      - Wiegers TC
-      - Johnson RJ
-    doi: 10.1093/nar/gky1209
-    id: doi:10.1093/nar/gky1209
+  - id: doi:10.1093/nar/gkac833
+    doi: 10.1093/nar/gkac833
+    title: 'Comparative Toxicogenomics Database (CTD): update 2023'
+    authors:
+      - Allan Peter Davis
+      - Thomas C Wiegers
+      - Robin J Johnson
+      - Daniela Sciaky
+      - Jolene Wiegers
+      - Carolyn J Mattingly
     journal: Nucleic Acids Research
-    title: 'The Comparative Toxicogenomics Database: update 2023'
     year: '2023'
   - authors:
       - Davis AP
@@ -163,7 +166,7 @@ publications:
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-05-28T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 ---
 
 # CAM-KP (Causal Activity Models Knowledge Provider)

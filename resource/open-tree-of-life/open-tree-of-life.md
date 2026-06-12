@@ -105,30 +105,29 @@ publications:
     preferred: true
     title: "Synthesis of phylogeny and taxonomy into a comprehensive tree of life"
     year: "2015"
-  - authors:
-      - McTavish EJ
-      - Cranston KA
-      - Domman D
-      - Sindbäck J
-      - Freund J
-      - Steele PR
-      - Gude K
-      - Midford PE
-    doi: "10.1093/bioinformatics/btv128"
-    id: "doi:10.1093/bioinformatics/btv128"
-    journal: "Bioinformatics"
-    title: "Phylesystem: a git-based data store for community curated phylogenetic estimates"
-    year: "2015"
-  - authors:
-      - Sanchez-Reyes LL
-      - Mishler BD
-      - Merow C
-      - Enquist BJ
-    doi: "10.1093/sysbio/syab038"
-    id: "doi:10.1093/sysbio/syab038"
-    journal: "Systematic Biology"
-    title: "OpenTree: A Python Package for Accessing and Analyzing Data from the Open Tree of Life"
-    year: "2021"
+  - id: doi:10.1093/bioinformatics/btv276
+    doi: 10.1093/bioinformatics/btv276
+    title: 'Phylesystem: a git-based data store for community-curated phylogenetic estimates'
+    authors:
+      - Emily Jane McTavish
+      - Cody E. Hinchliff
+      - James F. Allman
+      - Joseph W. Brown
+      - Karen A. Cranston
+      - Mark T. Holder
+      - Jonathan A. Rees
+      - Stephen A. Smith
+    journal: Bioinformatics
+    year: '2015'
+  - id: doi:10.1093/sysbio/syab033
+    doi: 10.1093/sysbio/syab033
+    title: 'OpenTree: A Python Package for Accessing and Analyzing Data from the Open Tree of Life'
+    authors:
+      - Emily Jane Mctavish
+      - Luna Luisa Sánchez-Reyes
+      - Mark T Holder
+    journal: Systematic Biology
+    year: '2021'
   - authors:
       - Michonneau F
       - Brown JW
@@ -141,7 +140,7 @@ publications:
 repository: "https://github.com/opentreeoflife"
 taxon:
   - "NCBITaxon:1"
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 ---
 
 # Open Tree of Life

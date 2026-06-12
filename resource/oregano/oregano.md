@@ -15,13 +15,12 @@ domains:
   - biomedical
 homepage_url: https://gitub.u-bordeaux.fr/erias/oregano
 id: oregano
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: OREGANO
 products:
   - category: DocumentationProduct
-    description: Project repository and README describing OREGANO's scope, statistics,
-      integration workflow, and application context.
+    description: Project repository and README describing OREGANO's scope, statistics, integration workflow, and application context.
     format: http
     id: oregano.docs
     name: OREGANO Project Documentation
@@ -77,14 +76,20 @@ products:
       - source: oregano
         relation_type: prov:hadPrimarySource
 publications:
-  - doi: doi:10.1038/s41597-023-02757-0
-    id: https://doi.org/10.1038/s41597-023-02757-0
+  - preferred: true
+    id: doi:10.1038/s41597-023-02757-0
+    doi: 10.1038/s41597-023-02757-0
+    title: The OREGANO knowledge graph for computational drug repurposing
+    authors:
+      - Marina Boudin
+      - Gayo Diallo
+      - Martin Drancé
+      - Fleur Mougin
     journal: Scientific Data
-    preferred: true
-    title: 'OREGANO: a knowledge graph for biomedical relation prediction'
     year: '2023'
 repository: https://gitub.u-bordeaux.fr/erias/oregano
 ---
+
 # OREGANO
 
 OREGANO is a biomedical knowledge graph built for drug repositioning and

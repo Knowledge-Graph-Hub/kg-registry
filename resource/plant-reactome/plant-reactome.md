@@ -126,28 +126,33 @@ publications:
     preferred: true
     title: 'Plant Reactome Knowledgebase: empowering plant pathway exploration and OMICS data analysis'
     year: '2024'
-  - authors:
-      - Naithani S
-      - Preece J
-      - D'Eustachio P
-      - Gupta P
-      - Amarasinghe V
-      - Dharmawardhana PD
-      - Wu G
-      - Fabregat A
-      - Elser JL
-      - Weiser J
-      - Keays M
-      - Fuentes AM
-      - Petryszak R
-      - Stein LD
-      - Ware D
-      - Jaiswal P
-    doi: 10.1093/nar/gkw932
-    id: doi:10.1093/nar/gkw932
-    journal: Nucleic Acids Research
+  - id: doi:10.1093/nar/gkz996
+    doi: 10.1093/nar/gkz996
     title: 'Plant Reactome: a knowledgebase and resource for comparative pathway analysis'
-    year: '2017'
+    authors:
+      - Sushma Naithani
+      - Parul Gupta
+      - Justin Preece
+      - Peter D’Eustachio
+      - Justin L Elser
+      - Priyanka Garg
+      - Daemon A Dikeman
+      - Jason Kiff
+      - Justin Cook
+      - Andrew Olson
+      - Sharon Wei
+      - Marcela K Tello-Ruiz
+      - Antonio Fabregat Mundo
+      - Alfonso Munoz-Pomer
+      - Suhaib Mohammed
+      - Tiejun Cheng
+      - Evan Bolton
+      - Irene Papatheodorou
+      - Lincoln Stein
+      - Doreen Ware
+      - Pankaj Jaiswal
+    journal: Nucleic Acids Research
+    year: '2019'
   - authors:
       - Naithani S
       - Gupta P
@@ -200,7 +205,7 @@ warnings:
   - The INFORES catalog did not contain an exact Plant Reactome entry on 2026-06-02, so no infores_id is asserted.
   - Plant Reactome pages identify the April 2025 release as Version 24, but the homepage text says Gramene r69 while the release summary heading and stats widget say Gramene 68/r68.
   - The Plant Reactome license page states CC BY 3.0 for Plant Reactome content, while annotations and external data remain under the licenses of their source providers unless specified.
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 ---
 
 # Plant Reactome

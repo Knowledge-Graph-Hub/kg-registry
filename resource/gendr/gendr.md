@@ -17,7 +17,7 @@ domains:
 homepage_url: https://hagr.ageing-map.org/diet/
 id: gendr
 infores_id: gendr
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: GenDR Database of Dietary Restriction-Related Genes
 products:
@@ -47,8 +47,7 @@ products:
     product_file_size: 8209
     product_url: https://hagr.ageing-map.org/diet/dataset.zip
   - category: Product
-    description: Excel spreadsheet of dietary-restriction gene expression signatures
-      from the HAGR meta-analysis of dietary restriction in mammals
+    description: Excel spreadsheet of dietary-restriction gene expression signatures from the HAGR meta-analysis of dietary restriction in mammals
     format: http
     id: gendr.expression-signatures
     name: GenDR Dietary Restriction Expression Signatures
@@ -61,18 +60,28 @@ products:
     product_file_size: 49152
     product_url: https://hagr.ageing-map.org/diet/TableS2.xls
 publications:
-  - authors:
-      - de Magalhaes JP
-      - Abidi Z
-      - Dos Santos GA
-      - Avelar RA
-      - Barardo D
-    doi: 10.1093/nar/gkad927
+  - preferred: true
     id: doi:10.1093/nar/gkad927
-    journal: Nucleic Acids Research
-    preferred: true
+    doi: 10.1093/nar/gkad927
     title: 'Human Ageing Genomic Resources: updates on key databases in ageing research'
-    year: '2023'
+    authors:
+      - João Pedro de Magalhães
+      - Zoya Abidi
+      - Gabriel Arantes dos Santos
+      - Roberto A Avelar
+      - Diogo Barardo
+      - Kasit Chatsirisupachai
+      - Peter Clark
+      - Evandro A De-Souza
+      - Emily J Johnson
+      - Inês Lopes
+      - Guy Novoa
+      - Ludovic Senez
+      - Angelo Talay
+      - Daniel Thornton
+      - Paul Ka Po To
+    journal: Nucleic Acids Research
+    year: '2024'
 synonyms:
   - GenDR
   - gendr

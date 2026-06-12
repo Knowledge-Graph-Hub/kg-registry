@@ -8,7 +8,7 @@ domains:
   - clinical
 id: doaf
 infores_id: doaf
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: Disease Ontology Annotation Framework
 homepage_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049686
@@ -16,8 +16,18 @@ synonyms:
   - DOAF
   - Disease Ontology Annotation Framework
 publications:
-  - id: https://doi.org/10.1371/journal.pone.0049686
-    title: 'The Disease Ontology: Structuring the Landscape of Human Disease'
+  - id: doi:10.1371/journal.pone.0049686
+    doi: 10.1371/journal.pone.0049686
+    title: A Framework for Annotating Human Genome in Disease Context
+    authors:
+      - Wei Xu
+      - Huisong Wang
+      - Wenqing Cheng
+      - Dong Fu
+      - Tian Xia
+      - Warren A. Kibbe
+      - Simon M. Lin
+    journal: PLoS ONE
     year: '2012'
 products:
   - category: DocumentationProduct
