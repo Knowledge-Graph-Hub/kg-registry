@@ -41,6 +41,25 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/
+    secondary_source:
+      - relation_type: prov:wasInformedBy
+        source: hmdb
+      - relation_type: prov:wasInformedBy
+        source: pubchem
+      - relation_type: prov:wasInformedBy
+        source: chebi
+      - relation_type: prov:wasInformedBy
+        source: kegg
+      - relation_type: prov:wasInformedBy
+        source: ncbitaxon
+      - relation_type: prov:wasInformedBy
+        source: pubmed
+      - relation_type: prov:wasInformedBy
+        source: itis
+      - relation_type: prov:wasInformedBy
+        source: wikipedia
+      - relation_type: prov:wasInformedBy
+        source: wikispecies
   - category: Product
     compression: targz
     description: Complete FooDB database in CSV format
@@ -52,6 +71,25 @@ products:
         source: foodb
     product_file_size: 998314299
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+    secondary_source:
+      - relation_type: prov:wasInformedBy
+        source: hmdb
+      - relation_type: prov:wasInformedBy
+        source: pubchem
+      - relation_type: prov:wasInformedBy
+        source: chebi
+      - relation_type: prov:wasInformedBy
+        source: kegg
+      - relation_type: prov:wasInformedBy
+        source: ncbitaxon
+      - relation_type: prov:wasInformedBy
+        source: pubmed
+      - relation_type: prov:wasInformedBy
+        source: itis
+      - relation_type: prov:wasInformedBy
+        source: wikipedia
+      - relation_type: prov:wasInformedBy
+        source: wikispecies
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -63,6 +101,25 @@ products:
         source: foodb
     product_file_size: 6731854848
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+    secondary_source:
+      - relation_type: prov:wasInformedBy
+        source: hmdb
+      - relation_type: prov:wasInformedBy
+        source: pubchem
+      - relation_type: prov:wasInformedBy
+        source: chebi
+      - relation_type: prov:wasInformedBy
+        source: kegg
+      - relation_type: prov:wasInformedBy
+        source: ncbitaxon
+      - relation_type: prov:wasInformedBy
+        source: pubmed
+      - relation_type: prov:wasInformedBy
+        source: itis
+      - relation_type: prov:wasInformedBy
+        source: wikipedia
+      - relation_type: prov:wasInformedBy
+        source: wikispecies
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -74,6 +131,25 @@ products:
         source: foodb
     product_file_size: 90852659
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+    secondary_source:
+      - relation_type: prov:wasInformedBy
+        source: hmdb
+      - relation_type: prov:wasInformedBy
+        source: pubchem
+      - relation_type: prov:wasInformedBy
+        source: chebi
+      - relation_type: prov:wasInformedBy
+        source: kegg
+      - relation_type: prov:wasInformedBy
+        source: ncbitaxon
+      - relation_type: prov:wasInformedBy
+        source: pubmed
+      - relation_type: prov:wasInformedBy
+        source: itis
+      - relation_type: prov:wasInformedBy
+        source: wikipedia
+      - relation_type: prov:wasInformedBy
+        source: wikispecies
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -84,6 +160,25 @@ products:
         source: foodb
     product_file_size: 180900659
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+    secondary_source:
+      - relation_type: prov:wasInformedBy
+        source: hmdb
+      - relation_type: prov:wasInformedBy
+        source: pubchem
+      - relation_type: prov:wasInformedBy
+        source: chebi
+      - relation_type: prov:wasInformedBy
+        source: kegg
+      - relation_type: prov:wasInformedBy
+        source: ncbitaxon
+      - relation_type: prov:wasInformedBy
+        source: pubmed
+      - relation_type: prov:wasInformedBy
+        source: itis
+      - relation_type: prov:wasInformedBy
+        source: wikipedia
+      - relation_type: prov:wasInformedBy
+        source: wikispecies
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
