@@ -4,6 +4,7 @@ Resource,Activity Status,Validation Status
 5srrnadb,active,PASS
 aact,active,PASS
 achilles,active,PASS
+acukg,active,PASS
 ado,active,PASS
 adrecs,active,PASS
 aelous,active,PASS
@@ -61,6 +62,7 @@ bto,active,PASS
 bv-brc,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
+cardiokg,active,PASS
 catalogue-of-life,active,PASS
 ccle,active,PASS
 cdao,active,PASS
@@ -190,6 +192,7 @@ ekg,active,PASS
 ema,active,PASS
 emapa,active,PASS
 embiology,active,PASS
+emeraldgraph,active,PASS
 emerge,active,PASS
 emi,active,PASS
 emikg,active,PASS
@@ -320,6 +323,7 @@ icd11,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
 icgc,active,PASS
+ickg,active,PASS
 ico,active,PASS
 iconclass,active,PASS
 identifier-mappings,active,PASS
@@ -431,6 +435,7 @@ msigdb,active,PASS
 multiomics-kp,active,PASS
 mutationds,active,PASS
 mw,active,PASS
+myaura,active,PASS
 namsnetwork,active,PASS
 nanopublications,active,PASS
 nasa-gesdisc-kg,active,PASS

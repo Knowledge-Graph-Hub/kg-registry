@@ -12,7 +12,7 @@ product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.g
 warnings:
 - File was not able to be retrieved when checked on 2026-06-05_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-06-03_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-05_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found

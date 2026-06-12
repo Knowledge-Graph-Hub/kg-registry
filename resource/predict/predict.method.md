@@ -15,5 +15,8 @@ secondary_source:
   source: mesh
 - relation_type: prov:used
   source: omim
+warnings:
+- File was not able to be retrieved when checked on 2026-06-05_ Timeout connecting
+  to URL
 layout: product_detail
 ---

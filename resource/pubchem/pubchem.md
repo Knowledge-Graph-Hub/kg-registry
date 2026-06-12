@@ -407,10 +407,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-12: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1451,10 +1453,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
-    when accessing file'
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -1496,6 +1500,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
@@ -1522,6 +1528,8 @@ products:
     source: pubchem
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
 publications:
 - authors:

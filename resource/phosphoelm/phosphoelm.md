@@ -55,9 +55,7 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProcessProduct
   description: Phospho.ELM PhosphoBLAST search tool for comparing protein queries
     against the curated phosphorylated-peptide dataset.
@@ -70,9 +68,7 @@ products:
   secondary_source:
   - relation_type: prov:wasInformedBy
     source: smart
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProgrammingInterface
   connection_url: http://phospho.elm.eu.org/webservice/phosphoELMdb.wsdl
   description: Prototype Phospho.ELM SOAP web service WSDL for programmatic access
