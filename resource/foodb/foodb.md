@@ -52,12 +52,6 @@ products:
         source: foodb
     product_file_size: 998314299
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -69,12 +63,6 @@ products:
         source: foodb
     product_file_size: 6731854848
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -86,12 +74,6 @@ products:
         source: foodb
     product_file_size: 90852659
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -102,12 +84,6 @@ products:
         source: foodb
     product_file_size: 180900659
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -117,12 +93,6 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -132,12 +102,6 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -147,12 +111,6 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -162,12 +120,6 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -177,12 +129,6 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -193,11 +139,7 @@ products:
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
     warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error when accessing file'
-      - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
+      - The FooDB downloads page lists this file, but the direct download URL returned HTTP 404 when checked on 2026-06-12.
   - category: Product
     compression: zip
     description: Image files of compounds, foods, and chemical structures
@@ -207,12 +149,51 @@ products:
       - relation_type: prov:hadPrimarySource
         source: foodb
     product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
-    warnings:
-      - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length header found'
-      - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length header found
-      - File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when accessing file
-      - File was not able to be retrieved when checked on 2025-11-26_ Timeout connecting to URL
-      - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file
+  - category: Product
+    compression: zip
+    description: Experimental C-MS peak lists from FooDB.
+    id: foodb.data.experimental_cms_peak_lists
+    name: FooDB Experimental C-MS Peak Lists
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: foodb
+    product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_peak_lists.zip
+  - category: Product
+    compression: zip
+    description: Predicted C-MS peak lists from FooDB.
+    id: foodb.data.predicted_cms_peak_lists
+    name: FooDB Predicted C-MS Peak Lists
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: foodb
+    product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip
+  - category: Product
+    compression: zip
+    description: Experimental MS-MS peak lists from FooDB.
+    id: foodb.data.experimental_msms_peak_lists
+    name: FooDB Experimental MS-MS Peak Lists
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: foodb
+    product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_peak_lists.zip
+  - category: Product
+    compression: zip
+    description: Predicted MS-MS peak lists from FooDB.
+    id: foodb.data.predicted_msms_peak_lists
+    name: FooDB Predicted MS-MS Peak Lists
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: foodb
+    product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_peak_lists.zip
+  - category: Product
+    compression: zip
+    description: NMR peak lists from FooDB.
+    id: foodb.data.nmr_peak_lists
+    name: FooDB NMR Peak Lists
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: foodb
+    product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
     format: http
