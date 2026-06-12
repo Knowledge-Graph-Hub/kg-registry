@@ -47,3 +47,5 @@ uv run make validate-publication-reference-cache
 ```
 
 See [Reference Validation](docs/reference-validation.md) for the full procedure.
+The data quality dashboard also reports resources with missing publications or
+publication citation metadata issues.
