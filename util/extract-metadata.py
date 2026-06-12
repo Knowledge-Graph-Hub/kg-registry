@@ -28,11 +28,19 @@ try:
         iter_source_ids,
         source_resource_id,
     )
+    from util.reference_validation import (
+        env_flag,
+        validate_publication_references,
+    )
 except ModuleNotFoundError:
     from source_associations import (
         ensure_direct_product_primary_source,
         iter_source_ids,
         source_resource_id,
+    )
+    from reference_validation import (
+        env_flag,
+        validate_publication_references,
     )
 
 __author__ = "cjm"
@@ -66,6 +74,29 @@ def main():
     parser_n = subparsers.add_parser("validate", help="validate yaml inside md")
     parser_n.set_defaults(function=validate_markdown)
     parser_n.add_argument("files", nargs="*")
+    parser_n.add_argument(
+        "--reference-cache-dir",
+        help="Directory containing linkml-reference-validator cache files.",
+    )
+    parser_n.add_argument(
+        "--reference-validator-config",
+        help="Path to a linkml-reference-validator config file.",
+    )
+    parser_n.add_argument(
+        "--fetch-publication-references",
+        action="store_true",
+        help="Fetch missing publication references into the cache before comparison.",
+    )
+    parser_n.add_argument(
+        "--require-publication-reference-cache",
+        action="store_true",
+        help="Fail validation when a publication reference has no cache file.",
+    )
+    parser_n.add_argument(
+        "--skip-publication-reference-validation",
+        action="store_true",
+        help="Skip cache-backed publication metadata validation.",
+    )
     parser_n = subparsers.add_parser(
         "prettify", help="prettify YAML block in registry Markdown files"
     )
@@ -173,6 +204,20 @@ def validate_markdown(args):
             for result in report.results:
                 if result.severity == "ERROR":
                     errs.append(f"{fn}: {result.message}")
+
+        if not getattr(args, "skip_publication_reference_validation", False):
+            publication_report = validate_publication_references(
+                obj,
+                fn,
+                cache_dir=getattr(args, "reference_cache_dir", None),
+                config_path=getattr(args, "reference_validator_config", None),
+                fetch_missing=getattr(args, "fetch_publication_references", False)
+                or env_flag("KG_REGISTRY_FETCH_PUBLICATION_REFERENCES"),
+                require_cache=getattr(args, "require_publication_reference_cache", False)
+                or env_flag("KG_REGISTRY_REQUIRE_PUBLICATION_REFERENCE_CACHE"),
+            )
+            errs.extend(publication_report.errors)
+            warn.extend(publication_report.warnings)
 
         # Now run yaml linter to check for basic syntax errors and formatting
         yamltext = get_YAML_text(fn)

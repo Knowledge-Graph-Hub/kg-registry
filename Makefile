@@ -286,7 +286,7 @@ tox:
 ## Single-file Convenience ##
 #############################
 
-.PHONY: validate-file prettify-file populate-infores-dry-run populate-infores-force
+.PHONY: validate-file prettify-file cache-publication-references validate-publication-reference-cache populate-infores-dry-run populate-infores-force
 
 # Validate a single resource markdown file
 # Usage: make validate-file FILE=resource/<path>/<name>.md
@@ -300,6 +300,14 @@ validate-file:
 	  exit 1; \
 	fi
 	@./util/extract-metadata.py validate "$(FILE)"
+
+# Fetch missing publication references into the linkml-reference-validator cache.
+cache-publication-references: tmp/resource-files.txt
+	@$(RUN) ./util/extract-metadata.py validate --fetch-publication-references @$<
+
+# Require every publication reference to have cached metadata.
+validate-publication-reference-cache: tmp/resource-files.txt
+	@$(RUN) ./util/extract-metadata.py validate --require-publication-reference-cache @$<
 
 # Prettify a single resource markdown file
 # Usage: make prettify-file FILE=resource/<path>/<name>.md

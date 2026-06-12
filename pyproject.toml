@@ -21,7 +21,8 @@ dependencies = [
 	"duckdb>=1.1.0",
 	"oaklib>=0.6.0",
 	"pysolr>=3.9.0",
-	"rdflib>=7.5.0"
+	"rdflib>=7.5.0",
+	"linkml-reference-validator>=0.2.0 ; python_full_version >= '3.10'",
 ]
 
 [project.optional-dependencies]
