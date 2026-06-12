@@ -4,12 +4,12 @@ category: DataModel
 creation_date: '2025-10-30T00:00:00Z'
 description: Nanopublications are a format for publishing scientific claims as small, machine-readable, FAIR digital objects using RDF semantic web technology. Each nanopublication consists of three parts - an assertion, provenance metadata, and publication info - forming minimal publishable information units that can be cited, queried, and reused.
 domains:
-- information technology
-- literature
+  - information technology
+  - literature
 id: "nanopublications"
 infores_id: "nanopublications"
 homepage_url: http://nanopub.net/
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: Nanopublications Network
 synonyms:
@@ -36,8 +36,7 @@ products:
       - source: nanopublications
         relation_type: prov:hadPrimarySource
   - category: DocumentationProduct
-    description: Guides, examples, and getting-started material for creating, publishing,
-      and querying nanopublications.
+    description: Guides, examples, and getting-started material for creating, publishing, and querying nanopublications.
     format: http
     id: "nanopublications.docs"
     name: Nanopublications Documentation
@@ -46,10 +45,14 @@ products:
       - source: nanopublications
         relation_type: prov:hadPrimarySource
 publications:
-  - id: "https://doi.org/10.7717/peerj-cs.387"
-    title: "Genuine semantic publishing"
-    journal: PeerJ Computer Science
-    year: "2021"
+  - id: doi:10.3233/ds-170010
+    doi: 10.3233/ds-170010
+    title: Genuine semantic publishing
+    authors:
+      - Tobias Kuhn
+      - Michel Dumontier
+    journal: Data Science
+    year: '2017'
 ---
 
 # Nanopublications Network

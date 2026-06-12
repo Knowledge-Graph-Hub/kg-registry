@@ -15,7 +15,7 @@ domains:
 homepage_url: http://genomics.senescence.info/genes/
 id: genage
 infores_id: genage
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: GenAge Database of Ageing-Related Genes
 products:
@@ -60,22 +60,35 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://genomics.senescence.info/genes/models.html
 publications:
-  - authors:
-      - de Magalhaes JP
-      - et al
-    doi: 10.1093/nar/gkad927
+  - preferred: true
     id: doi:10.1093/nar/gkad927
-    journal: Nucleic Acids Research
-    preferred: true
+    doi: 10.1093/nar/gkad927
     title: 'Human Ageing Genomic Resources: updates on key databases in ageing research'
+    authors:
+      - João Pedro de Magalhães
+      - Zoya Abidi
+      - Gabriel Arantes dos Santos
+      - Roberto A Avelar
+      - Diogo Barardo
+      - Kasit Chatsirisupachai
+      - Peter Clark
+      - Evandro A De-Souza
+      - Emily J Johnson
+      - Inês Lopes
+      - Guy Novoa
+      - Ludovic Senez
+      - Angelo Talay
+      - Daniel Thornton
+      - Paul Ka Po To
+    journal: Nucleic Acids Research
     year: '2024'
-  - authors:
-      - de Magalhaes JP
-      - Toussaint O
-    doi: 10.1016/j.febslet.2004.06.080
-    id: doi:10.1016/j.febslet.2004.06.080
-    journal: FEBS Letters
+  - id: doi:10.1016/j.febslet.2004.07.006
+    doi: 10.1016/j.febslet.2004.07.006
     title: 'GenAge: a genomic and proteomic network map of human ageing'
+    authors:
+      - João Pedro de Magalhães
+      - Olivier Toussaint
+    journal: FEBS Letters
     year: '2004'
   - authors:
       - Fernandes M

@@ -14,17 +14,28 @@ domains:
   - genomics
 homepage_url: https://github.com/ncats/RD-Clust
 id: ncatsgardkg
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: NCATS GARD KG
 publications:
-  - doi: 10.1093/jamia/ocad186
-    id: https://doi.org/10.1093/jamia/ocad186
-    title: A knowledge graph approach to rare disease research and drug discovery
+  - id: doi:10.1093/jamia/ocad186
+    doi: 10.1093/jamia/ocad186
+    title: Clustering rare diseases within an ontology-enriched knowledge graph
+    authors:
+      - Jaleal Sanjak
+      - Jessica Binder
+      - Arjun Singh Yadaw
+      - Qian Zhu
+      - Ewy A Mathé
+    journal: Journal of the American Medical Informatics Association
     year: '2023'
-  - doi: 10.1101/2023.02.15.528673
-    id: https://doi.org/10.1101/2023.02.15.528673
-    title: 'RD-Clust: A tool for rare disease clustering and drug discovery'
+  - id: doi:10.1101/2023.02.15.528673
+    doi: 10.1101/2023.02.15.528673
+    title: Clustering rare diseases within an ontology-enriched knowledge graph
+    authors:
+      - Jaleal Sanjak
+      - Qian Zhu
+      - Ewy A. Mathé
     year: '2023'
 repository: https://github.com/ncats/RD-Clust
 products:

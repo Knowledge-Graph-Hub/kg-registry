@@ -11,12 +11,12 @@ contacts:
 creation_date: '2025-12-17T00:00:00Z'
 description: Encyclopedia of Life (EOL) TraitBank is a searchable, comprehensive, open digital repository for organism traits, measurements, interactions, and other attributes aggregated from 50+ data sources. It covers 1.7 million taxa across the entire tree of life with 11 million+ trait records organized using semantic web standards and Darwin Core terminology.
 domains:
-- organisms
-- phenotype
+  - organisms
+  - phenotype
 homepage_url: https://eol.org/pages/traitbank
 id: eol-traitbank
 infores_id: eol-traitbank
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -93,54 +93,37 @@ products:
       - source: eol-traitbank
         relation_type: prov:hadPrimarySource
 publications:
-  - authors:
-      - Adams B
-      - Franz N
-      - König-Ries B
-      - McGuinness D
-      - Schildhauer M
-      - Parr CS
-      - Schulz KS
-      - Hammock J
-      - Wilson N
-      - Leary P
-      - Rice J
-      - Corrigan RJ
-    doi: 10.3233/SW-150190
+  - preferred: true
     id: doi:10.3233/SW-150190
-    journal: Semantic Web Journal
-    preferred: true
+    doi: 10.3233/SW-150190
     title: 'TraitBank: Practical semantics for organism attribute data'
+    authors:
+      - Cynthia S. Parr
+      - Katja S. Schulz
+      - Jennifer Hammock
+      - Nathan Wilson
+      - Patrick Leary
+      - Jeremy Rice
+      - Robert J. Corrigan
+    journal: Semantic Web
     year: '2016'
-  - authors:
-      - Parr CS
-      - Wilson N
-      - Leary P
-      - Struzan GS
-      - Ved P
-      - Lans KA
-      - Loyacano J
-      - Brest M
-      - Corrigan RJ
-      - Hancher C
-      - Helgen KM
-      - Herrick J
-      - Hammock J
-      - Kataoka C
-      - Lara MJ
-      - Maney D
-      - Martínez-Meyer E
-      - Measey J
-      - Rapp C
-      - Sarkar I
-      - Schulz KS
-      - Seubert E
-      - Wee B
-      - Wyckoff M
-    doi: 10.1371/journal.pone.0089965
-    id: doi:10.1371/journal.pone.0089965
-    journal: PLoS ONE
+  - id: doi:10.3897/bdj.2.e1079
+    doi: 10.3897/bdj.2.e1079
     title: 'The Encyclopedia of Life v2: Providing Global Access to Knowledge About Life on Earth'
+    authors:
+      - Cynthia S. Parr
+      - Nathan Wilson
+      - Patrick Leary
+      - Katja Schulz
+      - Kristen Lans
+      - Lisa Walley
+      - Jennifer Hammock
+      - Anthony Goddard
+      - Jeremy Rice
+      - Marie Studer
+      - Jeffrey Holmes
+      - Robert Corrigan, Jr.
+    journal: Biodiversity Data Journal
     year: '2014'
 repository: https://github.com/EOL
 taxon:

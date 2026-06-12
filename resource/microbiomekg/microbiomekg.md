@@ -21,7 +21,7 @@ domains:
 homepage_url: https://multiomics.transltr.io/mbkp
 id: microbiomekg
 infores_id: multiomics-microbiome
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: MicrobiomeKG
 products:
@@ -72,10 +72,14 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://multiomics.transltr.io/mbkp
 publications:
-  - doi: 10.3389/fsysb.2025.1544432
-    id: doi:10.3389/fsysb.2025.1544432
+  - id: doi:10.3389/fsysb.2025.1544432
+    doi: 10.3389/fsysb.2025.1544432
+    title: 'MicrobiomeKG: bridging microbiome research and host health through knowledge graphs'
+    authors:
+      - Skye L. Goetz
+      - Amy K. Glen
+      - Gwênlyn Glusman
     journal: Frontiers in Systems Biology
-    title: 'MicrobiomeKG: an integrative knowledge graph for multi-omics microbiome translational research'
     year: '2025'
 taxon:
   - NCBITaxon:9606

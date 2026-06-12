@@ -17,7 +17,7 @@ domains:
   - biological systems
 homepage_url: https://rfam.org/
 id: rfam
-last_modified_date: '2025-10-29T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -506,23 +506,24 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Ontiveros-Palacios N
-      - Cooke E
-      - Nawrocki EP
-      - Triebel S
-      - Marz M
-      - Rivas E
-      - Griffiths-Jones S
-      - Petrov AI
-      - Bateman A
-      - Sweeney B
-    category: Publication
-    id: https://doi.org/10.1093/nar/gkae1023
-    journal: Nucleic Acids Research
+  - category: Publication
     preferred: true
+    id: doi:10.1093/nar/gkae1023
+    doi: 10.1093/nar/gkae1023
     title: 'Rfam 15: RNA families database in 2025'
-    year: '2024'
+    authors:
+      - Nancy Ontiveros-Palacios
+      - Emma Cooke
+      - Eric P Nawrocki
+      - Sandra Triebel
+      - Manja Marz
+      - Elena Rivas
+      - Sam Griffiths-Jones
+      - Anton I Petrov
+      - Alex Bateman
+      - Blake Sweeney
+    journal: Nucleic Acids Research
+    year: '2025'
   - authors:
       - Kalvari I
       - Nawrocki EP

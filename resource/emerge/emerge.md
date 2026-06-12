@@ -15,7 +15,7 @@ domains:
   - precision medicine
 homepage_url: https://emerge-network.org/
 id: emerge
-last_modified_date: '2026-06-03T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: Electronic Medical Records and Genomics Network
 products:
@@ -52,19 +52,25 @@ products:
       - relation_type: prov:wasInformedBy
         source: emerge
 publications:
-  - authors:
-      - J Denny
-      - L Ritchie
-      - M A Basford
-      - J C Pulley
-      - L Bastarache
-      - K Brown-Gentry
-    doi: 10.1093/bioinformatics/bts578
-    id: doi:10.1093/bioinformatics/bts578
-    journal: Bioinformatics
-    preferred: true
-    title: PheWAS with electronic medical records to find clinical phenotypes associated with SNPs
-    year: '2013'
+  - preferred: true
+    id: doi:10.1186/1755-8794-4-13
+    doi: 10.1186/1755-8794-4-13
+    title: 'The eMERGE Network: A consortium of biorepositories linked to electronic medical records data for conducting genomic studies'
+    authors:
+      - Catherine A McCarty
+      - Rex L Chisholm
+      - Christopher G Chute
+      - Iftikhar J Kullo
+      - Gail P Jarvik
+      - Eric B Larson
+      - Rongling Li
+      - Daniel R Masys
+      - Marylyn D Ritchie
+      - Dan M Roden
+      - Jeffery P Struewing
+      - Wendy A Wolf
+    journal: BMC Medical Genomics
+    year: '2011'
 synonyms:
   - eMERGE
   - Electronic Medical Records and Genomics Network

@@ -2,203 +2,192 @@
 activity_status: active
 category: Aggregator
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://phewascatalog.org/phewas/#home
-  - contact_type: email
-    value: joshua.c.denny@vumc.org
-  label: Vanderbilt University Medical Center
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: https://phewascatalog.org/phewas/#home
+      - contact_type: email
+        value: joshua.c.denny@vumc.org
+    label: Vanderbilt University Medical Center
 creation_date: '2025-09-24T00:00:00Z'
-description: The PheWAS Catalog is an aggregator of phenome-wide association studies
-  that systematically analyzes many phenotypes compared to single genetic variants.
-  It aggregates results from electronic medical record (EMR) data analysis, combining
-  genetic association data from multiple biobanks and clinical databases to enable
-  comprehensive phenotype-genotype association discovery.
+description: The PheWAS Catalog is an aggregator of phenome-wide association studies that systematically analyzes many phenotypes compared to single genetic variants. It aggregates results from electronic medical record (EMR) data analysis, combining genetic association data from multiple biobanks and clinical databases to enable comprehensive phenotype-genotype association discovery.
 domains:
-- biomedical
-- genomics
-- clinical
-- precision medicine
+  - biomedical
+  - genomics
+  - clinical
+  - precision medicine
 homepage_url: https://phewascatalog.org/phewas/#home
 id: phewascat
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: PheWAS Catalog
 products:
-- category: GraphicalInterface
-  description: Web portal for browsing and accessing PheWAS association results and
-    analysis tools
-  format: http
-  id: phewascat.portal
-  name: PheWAS Catalog Portal
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  product_url: https://phewascatalog.org/phewas/#home
-- category: Product
-  description: PheWAS association results for SNPs from GWAS Catalog analyzed against
-    EMR-derived phenotypes
-  compression: zip
-  format: csv
-  id: phewascat.associations
-  name: PheWAS Association Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  product_file_size: 8229506
-  product_url: https://phewascatalog.org/phewas/data/phewas-catalog.csv.zip
-  secondary_source:
-  - relation_type: prov:wasInformedBy
-    source: gwascatalog
-  - relation_type: prov:wasInformedBy
-    source: emerge
-- category: Product
-  compression: zip
-  description: Phecode 1.2 definitions and ICD-9/ICD-10-CM mapping files for translating
-    diagnosis codes to phenotypes used in PheWAS analysis
-  format: csv
-  id: phewascat.phecodes
-  name: Phecode 1.2 Maps
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  product_file_size: 1157465
-  product_url: https://phewascatalog.org/phewas/data/Phecode_map_v1_2_icd9_icd10cm.csv.zip
-- category: Product
-  compression: zip
-  description: PhecodeX version 1.0 extended phenotype grouping metadata and ICD-CM
-    mapping files
-  format: csv
-  id: phewascat.phecodex
-  name: PhecodeX Maps
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  product_file_size: 56139
-  product_url: https://phewascatalog.org/phewas/data/phecodeX_info.csv.zip
-- category: ProgrammingInterface
-  description: R package for performing PheWAS analysis using the catalog data and
-    methods
-  format: http
-  id: phewascat.rpackage
-  name: PheWAS R Package
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  product_url: https://www.vumc.org/cpm/center-precision-medicine-blog/phewas-r-package
-- category: ProcessProduct
-  description: PheTK Python library for PheWAS analysis using Phecode 1.2 and PhecodeX
-    1.0
-  format: http
-  id: phewascat.phetk
-  license:
-    id: https://www.gnu.org/licenses/gpl-3.0.en.html
-    label: GPL-3.0
-  name: PheTK
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  product_url: https://github.com/nhgritctran/PheTK
-  repository: https://github.com/nhgritctran/PheTK
-- category: GraphProduct
-  description: DisGeNET data, including gene to disease associations and variant to
-    disease associations (requires registration and subscription).
-  id: disgenet.data
-  name: DisGeNET Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: clingen
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: mgd
-  - relation_type: prov:hadPrimarySource
-    source: rgd
-  - relation_type: prov:hadPrimarySource
-    source: orphanet
-  - relation_type: prov:hadPrimarySource
-    source: psygenet
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: hp
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  - relation_type: prov:hadPrimarySource
-    source: phewascat
-  - relation_type: prov:hadPrimarySource
-    source: ukbiobank
-  - relation_type: prov:hadPrimarySource
-    source: finngen
-  - relation_type: prov:hadPrimarySource
-    source: clinicaltrialsgov
-  product_url: https://www.disgenet.com/
+  - category: GraphicalInterface
+    description: Web portal for browsing and accessing PheWAS association results and analysis tools
+    format: http
+    id: phewascat.portal
+    name: PheWAS Catalog Portal
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+    product_url: https://phewascatalog.org/phewas/#home
+  - category: Product
+    description: PheWAS association results for SNPs from GWAS Catalog analyzed against EMR-derived phenotypes
+    compression: zip
+    format: csv
+    id: phewascat.associations
+    name: PheWAS Association Data
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+    product_file_size: 8229506
+    product_url: https://phewascatalog.org/phewas/data/phewas-catalog.csv.zip
+    secondary_source:
+      - relation_type: prov:wasInformedBy
+        source: gwascatalog
+      - relation_type: prov:wasInformedBy
+        source: emerge
+  - category: Product
+    compression: zip
+    description: Phecode 1.2 definitions and ICD-9/ICD-10-CM mapping files for translating diagnosis codes to phenotypes used in PheWAS analysis
+    format: csv
+    id: phewascat.phecodes
+    name: Phecode 1.2 Maps
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+    product_file_size: 1157465
+    product_url: https://phewascatalog.org/phewas/data/Phecode_map_v1_2_icd9_icd10cm.csv.zip
+  - category: Product
+    compression: zip
+    description: PhecodeX version 1.0 extended phenotype grouping metadata and ICD-CM mapping files
+    format: csv
+    id: phewascat.phecodex
+    name: PhecodeX Maps
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+    product_file_size: 56139
+    product_url: https://phewascatalog.org/phewas/data/phecodeX_info.csv.zip
+  - category: ProgrammingInterface
+    description: R package for performing PheWAS analysis using the catalog data and methods
+    format: http
+    id: phewascat.rpackage
+    name: PheWAS R Package
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+    product_url: https://www.vumc.org/cpm/center-precision-medicine-blog/phewas-r-package
+  - category: ProcessProduct
+    description: PheTK Python library for PheWAS analysis using Phecode 1.2 and PhecodeX 1.0
+    format: http
+    id: phewascat.phetk
+    license:
+      id: https://www.gnu.org/licenses/gpl-3.0.en.html
+      label: GPL-3.0
+    name: PheTK
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+    product_url: https://github.com/nhgritctran/PheTK
+    repository: https://github.com/nhgritctran/PheTK
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: clingen
+      - relation_type: prov:hadPrimarySource
+        source: clinvar
+      - relation_type: prov:hadPrimarySource
+        source: mgd
+      - relation_type: prov:hadPrimarySource
+        source: rgd
+      - relation_type: prov:hadPrimarySource
+        source: orphanet
+      - relation_type: prov:hadPrimarySource
+        source: psygenet
+      - relation_type: prov:hadPrimarySource
+        source: uniprot
+      - relation_type: prov:hadPrimarySource
+        source: disgenet
+      - relation_type: prov:hadPrimarySource
+        source: hp
+      - relation_type: prov:hadPrimarySource
+        source: gwascatalog
+      - relation_type: prov:hadPrimarySource
+        source: phewascat
+      - relation_type: prov:hadPrimarySource
+        source: ukbiobank
+      - relation_type: prov:hadPrimarySource
+        source: finngen
+      - relation_type: prov:hadPrimarySource
+        source: clinicaltrialsgov
+    product_url: https://www.disgenet.com/
 publications:
-- authors:
-  - Denny JC
-  - Bastarache L
-  - Ritchie MD
-  - Carroll RJ
-  - Zink R
-  - Mosley JD
-  - Field JR
-  - Pulley JM
-  - Ramirez AH
-  - Bowton E
-  - Basford MA
-  - Carrell DS
-  - Peissig PL
-  - Kho AN
-  - Pacheco JA
-  - Rasmussen LV
-  - Crosslin DR
-  - Crane PK
-  - Pathak J
-  - Bielinski SJ
-  - Pendergrass SA
-  - Xu H
-  - Hindorff LA
-  - Li R
-  - Manolio TA
-  - Chute CG
-  - Chisholm RL
-  - Larson EB
-  - Jarvik GP
-  - Brilliant MH
-  - McCarty CA
-  - Kullo IJ
-  - Haines JL
-  - Crawford DC
-  - Masys DR
-  - Roden DM
-  doi: 10.1038/nbt.2749
-  id: doi:10.1038/nbt.2749
-  journal: Nature Biotechnology
-  preferred: true
-  title: Systematic comparison of phenome-wide association study of electronic medical
-    record data and genome-wide association study data
-  year: '2013'
-- authors:
-  - Tran CT
-  - Schlueter DJ
-  - Zeng C
-  - Mo H
-  - Carroll RJ
-  - Denny JC
-  doi: 10.1093/bioinformatics/btae719
-  id: doi:10.1093/bioinformatics/btae719
-  journal: Bioinformatics
-  title: PheWAS analysis on large-scale biobank data with PheTK
-  year: '2025'
+  - authors:
+      - Denny JC
+      - Bastarache L
+      - Ritchie MD
+      - Carroll RJ
+      - Zink R
+      - Mosley JD
+      - Field JR
+      - Pulley JM
+      - Ramirez AH
+      - Bowton E
+      - Basford MA
+      - Carrell DS
+      - Peissig PL
+      - Kho AN
+      - Pacheco JA
+      - Rasmussen LV
+      - Crosslin DR
+      - Crane PK
+      - Pathak J
+      - Bielinski SJ
+      - Pendergrass SA
+      - Xu H
+      - Hindorff LA
+      - Li R
+      - Manolio TA
+      - Chute CG
+      - Chisholm RL
+      - Larson EB
+      - Jarvik GP
+      - Brilliant MH
+      - McCarty CA
+      - Kullo IJ
+      - Haines JL
+      - Crawford DC
+      - Masys DR
+      - Roden DM
+    doi: 10.1038/nbt.2749
+    id: doi:10.1038/nbt.2749
+    journal: Nature Biotechnology
+    preferred: true
+    title: Systematic comparison of phenome-wide association study of electronic medical record data and genome-wide association study data
+    year: '2013'
+  - id: doi:10.1093/bioinformatics/btae719
+    doi: 10.1093/bioinformatics/btae719
+    title: PheWAS analysis on large-scale biobank data with PheTK
+    authors:
+      - Tam C Tran
+      - David J Schlueter
+      - Chenjie Zeng
+      - Huan Mo
+      - Robert J Carroll
+      - Joshua C Denny
+    journal: Bioinformatics
+    year: '2024'
 repository: https://github.com/nhgritctran/PheTK
 tags:
-- translator
+  - translator
 taxon:
-- NCBITaxon:9606
+  - NCBITaxon:9606
 ---
+
 # PheWAS Catalog
 
 The PheWAS Catalog is a comprehensive aggregator of phenome-wide association studies (PheWAS) that systematically analyzes associations between genetic variants and a wide range of phenotypes derived from electronic medical records (EMRs). This resource combines genetic data with clinical phenotypes to enable discovery of genetic associations across the phenome.

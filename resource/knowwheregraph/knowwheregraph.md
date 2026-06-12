@@ -24,7 +24,7 @@ funding:
 homepage_url: https://knowwheregraph.org/
 id: "knowwheregraph"
 infores_id: "knowwheregraph"
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 license:
   id: "https://creativecommons.org/licenses/by/4.0/"
@@ -84,15 +84,36 @@ publications:
     preferred: true
     title: 'The KnowWhereGraph: A Large-Scale Geo-Knowledge Graph for Interdisciplinary Knowledge Discovery and Geo-Enrichment'
     year: "2025"
-  - authors:
-      - Shimizu C
-      - Hitzler P
-      - Janowicz K
-    doi: "10.1016/j.websem.2024.100819"
-    id: "doi:10.1016/j.websem.2024.100819"
+  - id: doi:10.1016/j.websem.2024.100842
+    doi: 10.1016/j.websem.2024.100842
+    title: The KnowWhereGraph ontology
+    authors:
+      - Cogan Shimizu
+      - Shirly Stephen
+      - Adrita Barua
+      - Ling Cai
+      - Antrea Christou
+      - Kitty Currier
+      - Abhilekha Dalal
+      - Colby K. Fisher
+      - Pascal Hitzler
+      - Krzysztof Janowicz
+      - Wenwen Li
+      - Zilong Liu
+      - Mohammad Saeid Mahdavinejad
+      - Gengchen Mai
+      - Dean Rehberger
+      - Mark Schildhauer
+      - Meilin Shi
+      - Sanaz Saki Norouzi
+      - Yuanyuan Tian
+      - Sizhe Wang
+      - Zhangyu Wang
+      - Joseph Zalewski
+      - Lu Zhou
+      - Rui Zhu
     journal: Journal of Web Semantics
-    title: The KnowWhereGraph Ontology
-    year: "2024"
+    year: '2025'
   - authors:
       - Janowicz K
       - Hitzler P

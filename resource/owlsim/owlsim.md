@@ -2,10 +2,7 @@
 activity_status: inactive
 category: DataSource
 creation_date: '2025-11-19T00:00:00Z'
-description: OWLSim is ontology-based profile matching software for calculating semantic
-  similarity between ontology classes and individuals. The tool was used by the
-  Monarch Initiative and related phenotype-comparison projects, and has since
-  been replaced by Semsimian.
+description: OWLSim is ontology-based profile matching software for calculating semantic similarity between ontology classes and individuals. The tool was used by the Monarch Initiative and related phenotype-comparison projects, and has since been replaced by Semsimian.
 domains:
   - biomedical
   - information technology
@@ -15,13 +12,12 @@ domains:
 homepage_url: https://berkeleybop.org/software/owlsim/
 id: owlsim
 infores_id: owlsim
-last_modified_date: '2026-06-02T00:00:00Z'
+last_modified_date: '2026-06-12T00:00:00Z'
 layout: resource_detail
 name: OWLSim Ontology Based Profile Matching
 products:
   - category: ProcessProduct
-    description: Java source repository for OWLSim v3 ontology-based profile matching
-      and semantic similarity services
+    description: Java source repository for OWLSim v3 ontology-based profile matching and semantic similarity services
     format: http
     id: owlsim.v3
     name: OWLSim v3 Source Repository
@@ -30,8 +26,7 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/monarch-initiative/owlsim-v3
   - category: ProcessProduct
-    description: OWLTools Java library and command-line tools historically associated
-      with OWLSim workflows
+    description: OWLTools Java library and command-line tools historically associated with OWLSim workflows
     format: http
     id: owlsim.owltools
     name: OWLTools Source Repository
@@ -40,8 +35,7 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/owlcollab/owltools
   - category: ProgrammingInterface
-    description: Local Dropwizard REST service documented by OWLSim v3 for ontology
-      profile matching and matcher discovery
+    description: Local Dropwizard REST service documented by OWLSim v3 for ontology profile matching and matcher discovery
     format: http
     id: owlsim.rest
     name: OWLSim v3 REST Service
@@ -50,29 +44,27 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/monarch-initiative/owlsim-v3
     warnings:
-      - The OWLSim v3 README documents a locally run REST service; no maintained
-        public production endpoint was identified during 2026-06-02 curation.
+      - The OWLSim v3 README documents a locally run REST service; no maintained public production endpoint was identified during 2026-06-02 curation.
 publications:
-  - id: PMID:24281164
-    title: Improved exome prioritization of disease genes through cross-species phenotype
-      comparison
-    authors:
-      - Robinson PN
-      - Köhler S
-      - Oellrich A
-      - Wang K
-      - Mungall CJ
-      - Lewis SE
-      - Washington N
-      - Bauer S
-      - Seelow D
-      - Krawitz P
-      - Gilissen C
-      - Haendel M
-      - Smedley D
+  - preferred: true
+    id: doi:10.1101/gr.160325.113
     doi: 10.1101/gr.160325.113
+    title: Improved exome prioritization of disease genes through cross-species phenotype comparison
+    authors:
+      - Peter N. Robinson
+      - Sebastian Köhler
+      - Anika Oellrich
+      - Kai Wang
+      - Christopher J. Mungall
+      - Suzanna E. Lewis
+      - Nicole Washington
+      - Sebastian Bauer
+      - Dominik Seelow
+      - Peter Krawitz
+      - Christian Gilissen
+      - Melissa Haendel
+      - Damian Smedley
     journal: Genome Research
-    preferred: true
     year: '2014'
 repository: https://github.com/monarch-initiative/owlsim-v3
 synonyms:
@@ -80,8 +72,7 @@ synonyms:
 taxon:
   - NCBITaxon:9606
 warnings:
-  - BBOP documents OWLSim as replaced by Semsimian; this entry describes the
-    legacy OWLSim resource and its historical products.
+  - BBOP documents OWLSim as replaced by Semsimian; this entry describes the legacy OWLSim resource and its historical products.
 ---
 
 # OWLSim Ontology Based Profile Matching
