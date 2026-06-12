@@ -148,7 +148,7 @@ clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 clean-cache:
-	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
+	rm -f cache/obo_foundry_cache.yml cache/frink_registry_cache.yaml cache/url_status_cache.yml cache/quality_url_status_cache.yml cache/publication_reference_validation.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -385,7 +385,7 @@ build:
 build/resource:
 	mkdir -p $@
 
-quality-dashboard: $(RESOURCES) util/generate-quality-dashboard.py | reports
+quality-dashboard: $(RESOURCES) util/generate-quality-dashboard.py util/reference_validation.py | reports
 	$(RUN) python util/generate-quality-dashboard.py --output $(QUALITY_DASHBOARD_JSON) $(QUALITY_DASHBOARD_LINK_FLAGS)
 
 # Backward-compatible file target alias.

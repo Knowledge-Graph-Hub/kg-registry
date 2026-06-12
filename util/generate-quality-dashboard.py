@@ -31,8 +31,22 @@ except Exception:  # pragma: no cover
 from common import RESOURCE_DIR, ROOT, load_frontmatter_file
 try:
     from util.source_associations import iter_source_ids
+    from util.reference_validation import (
+        DEFAULT_CACHE_DIR as DEFAULT_REFERENCE_CACHE_DIR,
+        DEFAULT_VALIDATION_CACHE_PATH as DEFAULT_REFERENCE_VALIDATION_CACHE_PATH,
+        load_validation_cache,
+        save_validation_cache,
+        validate_publication_references,
+    )
 except ModuleNotFoundError:
     from source_associations import iter_source_ids
+    from reference_validation import (
+        DEFAULT_CACHE_DIR as DEFAULT_REFERENCE_CACHE_DIR,
+        DEFAULT_VALIDATION_CACHE_PATH as DEFAULT_REFERENCE_VALIDATION_CACHE_PATH,
+        load_validation_cache,
+        save_validation_cache,
+        validate_publication_references,
+    )
 
 # Products in these categories are generally interfaces; provenance source
 # metadata is less meaningful than for data products.
@@ -49,6 +63,8 @@ ISSUE_WEIGHTS = {
     "missing_infores_id": 3,
     "missing_contacts": 2,
     "contacts_not_connected_to_org": 1,
+    "missing_publications": 2,
+    "citation_metadata_issue": 3,
     "kg_missing_evaluation_page": 2,
     "missing_creation_date": 2,
     "missing_last_modified_date": 2,
@@ -70,6 +86,8 @@ ISSUE_LABELS = {
     "missing_infores_id": "Missing infores_id",
     "missing_contacts": "Missing contacts",
     "contacts_not_connected_to_org": "Contacts not linked to Organization entry",
+    "missing_publications": "Missing publications",
+    "citation_metadata_issue": "Publication citation metadata issues",
     "kg_missing_evaluation_page": "KnowledgeGraph missing evaluation page",
     "missing_creation_date": "Missing creation_date",
     "missing_last_modified_date": "Missing last_modified_date",
@@ -87,6 +105,7 @@ WARNING_RETRIEVAL_PATTERN = re.compile(
 
 DEFAULT_CACHE_PATH = ROOT / "cache" / "quality_url_status_cache.yml"
 DEFAULT_OUTPUT_PATH = ROOT / "reports" / "quality-dashboard.json"
+DEFAULT_REFERENCE_VALIDATION_CACHE = ROOT / DEFAULT_REFERENCE_VALIDATION_CACHE_PATH
 
 
 def parse_args() -> argparse.Namespace:
@@ -136,6 +155,26 @@ def parse_args() -> argparse.Namespace:
         "--force-recheck",
         action="store_true",
         help="Ignore cache TTL and re-check all URLs live.",
+    )
+    parser.add_argument(
+        "--reference-cache-dir",
+        default=str(ROOT / DEFAULT_REFERENCE_CACHE_DIR),
+        help="Directory containing linkml-reference-validator cache files.",
+    )
+    parser.add_argument(
+        "--reference-validation-cache",
+        default=str(DEFAULT_REFERENCE_VALIDATION_CACHE),
+        help="Path to the publication validation status cache.",
+    )
+    parser.add_argument(
+        "--reference-validator-config",
+        help="Path to a linkml-reference-validator config file.",
+    )
+    parser.add_argument(
+        "--check-citations",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Evaluate publication citation status for dashboard metrics (default: true).",
     )
     return parser.parse_args()
 
@@ -291,6 +330,49 @@ def load_resources(resource_dir: Path) -> List[Dict[str, Any]]:
         metadata["_resource_file"] = str(main_file.relative_to(ROOT))
         resources.append(metadata)
     return resources
+
+
+def build_citation_reports(
+    resources: List[Dict[str, Any]],
+    *,
+    reference_cache_dir: Path,
+    validation_cache_path: Path,
+    reference_validator_config: str | None,
+    check_citations: bool,
+) -> Dict[str, Dict[str, Any]]:
+    """Return per-resource citation validation summaries for dashboard metrics."""
+
+    reports: Dict[str, Dict[str, Any]] = {}
+    if not check_citations:
+        return reports
+
+    validation_cache = load_validation_cache(validation_cache_path)
+    for resource in resources:
+        resource_id = str(resource.get("id", "unknown"))
+        source_file = resource.get("_resource_file") or f"resource/{resource_id}/{resource_id}.md"
+        publication_report = validate_publication_references(
+            resource,
+            source_file,
+            cache_dir=reference_cache_dir,
+            config_path=reference_validator_config,
+            validation_cache_path=validation_cache_path,
+            use_validation_cache=True,
+            validation_cache_data=validation_cache,
+        )
+        publication_entries_with_issues = sum(
+            1 for check in publication_report.checks if check.errors or check.warnings
+        )
+        reports[resource_id] = {
+            "errors": publication_report.errors,
+            "warnings": publication_report.warnings,
+            "issue_count": publication_entries_with_issues,
+            "publication_entries_with_issues": publication_entries_with_issues,
+            "checked_count": publication_report.checked_count,
+            "cached_count": publication_report.cached_count,
+            "missing_cache_count": publication_report.missing_cache_count,
+        }
+    save_validation_cache(validation_cache, validation_cache_path)
+    return reports
 
 
 def normalize_cache_entry(entry: Dict[str, Any]) -> Optional[Dict[str, Any]]:
@@ -599,11 +681,13 @@ def build_dashboard_data(
     *,
     org_index: Dict[str, set[str]],
     url_results: Dict[str, Dict[str, Any]],
+    citation_reports: Dict[str, Dict[str, Any]] | None = None,
     now: datetime,
     link_mode: str,
     link_summary: Dict[str, Any],
     cache_path: Path,
 ) -> Dict[str, Any]:
+    citation_reports = citation_reports or {}
     detail_lists: Dict[str, set[str]] = {
         "resource_total_ids": set(),
         "product_total_ids": set(),
@@ -616,6 +700,8 @@ def build_dashboard_data(
         "missing_infores_id_resource_ids": set(),
         "missing_fairsharing_id_resource_ids": set(),
         "missing_contacts_resource_ids": set(),
+        "resources_without_publications_ids": set(),
+        "resources_with_citation_issue_ids": set(),
         "contacts_with_org_connection_resource_ids": set(),
         "contacts_without_org_connection_resource_ids": set(),
         "products_missing_format_ids": set(),
@@ -645,6 +731,12 @@ def build_dashboard_data(
     missing_infores_id = 0
     missing_fairsharing_id = 0
     missing_contacts = 0
+    without_publications = 0
+    resources_with_citation_issues = 0
+    publication_entries_total = 0
+    publication_entries_with_issues = 0
+    citation_validation_errors = 0
+    citation_validation_warnings = 0
     contacts_with_org_connection = 0
     contacts_without_org_connection = 0
 
@@ -730,6 +822,27 @@ def build_dashboard_data(
                 contacts_without_org_connection += 1
                 detail_lists["contacts_without_org_connection_resource_ids"].add(resource_id)
 
+        publications = [
+            publication
+            for publication in ensure_list(resource.get("publications"))
+            if isinstance(publication, dict)
+        ]
+        publication_entries_total += len(publications)
+        citation_report = citation_reports.get(resource_id, {})
+        citation_issue_count = int(citation_report.get("issue_count", 0) or 0)
+        citation_entries_with_issues = int(
+            citation_report.get("publication_entries_with_issues", 0) or 0
+        )
+        publication_entries_with_issues += citation_entries_with_issues
+        citation_validation_errors += len(citation_report.get("errors", []) or [])
+        citation_validation_warnings += len(citation_report.get("warnings", []) or [])
+        if len(publications) == 0:
+            without_publications += 1
+            detail_lists["resources_without_publications_ids"].add(resource_id)
+        elif citation_issue_count > 0:
+            resources_with_citation_issues += 1
+            detail_lists["resources_with_citation_issue_ids"].add(resource_id)
+
         is_knowledge_graph = str(resource.get("category", "")).strip() == "KnowledgeGraph"
         evaluation_present = False
         if is_knowledge_graph:
@@ -783,6 +896,12 @@ def build_dashboard_data(
             score += add_scored_issue(issues, issue_key="missing_contacts")
         elif not has_org_connection:
             score += add_scored_issue(issues, issue_key="contacts_not_connected_to_org")
+        if len(publications) == 0:
+            score += add_scored_issue(issues, issue_key="missing_publications")
+        elif citation_issue_count > 0:
+            score += add_scored_issue(
+                issues, issue_key="citation_metadata_issue", count=citation_issue_count
+            )
         if is_knowledge_graph and not evaluation_present:
             score += add_scored_issue(issues, issue_key="kg_missing_evaluation_page")
         if creation_dt is None:
@@ -961,9 +1080,19 @@ def build_dashboard_data(
             "missing_infores_id": missing_infores_id,
             "missing_fairsharing_id": missing_fairsharing_id,
             "missing_contacts": missing_contacts,
+            "without_publications": without_publications,
+            "with_citation_issues": resources_with_citation_issues,
             "contacts_with_org_connection": contacts_with_org_connection,
             "contacts_without_org_connection": contacts_without_org_connection,
             "with_broken_links": resources_with_broken_links,
+        },
+        "citations": {
+            "publication_entries_total": publication_entries_total,
+            "publication_entries_with_issues": publication_entries_with_issues,
+            "resources_without_publications": without_publications,
+            "resources_with_citation_issues": resources_with_citation_issues,
+            "validation_errors": citation_validation_errors,
+            "validation_warnings": citation_validation_warnings,
         },
         "products": {
             "total": total_products,
@@ -1045,11 +1174,19 @@ def main() -> int:
         workers=max(1, args.link_workers),
         now=now,
     )
+    citation_reports = build_citation_reports(
+        resources,
+        reference_cache_dir=Path(args.reference_cache_dir).resolve(),
+        validation_cache_path=Path(args.reference_validation_cache).resolve(),
+        reference_validator_config=args.reference_validator_config,
+        check_citations=args.check_citations,
+    )
 
     data = build_dashboard_data(
         resources,
         org_index=org_index,
         url_results=url_results,
+        citation_reports=citation_reports,
         now=now,
         link_mode="live" if args.check_links else "cache-or-unchecked",
         link_summary=link_summary,
@@ -1067,6 +1204,11 @@ def main() -> int:
         f"{data['links']['broken_urls']} broken, "
         f"{data['links']['unchecked_urls']} unchecked "
         f"(mode={data['links']['mode']})"
+    )
+    print(
+        "Citations: "
+        f"{data['citations']['resources_without_publications']} resources without publications, "
+        f"{data['citations']['resources_with_citation_issues']} resources with citation issues"
     )
     return 0
 

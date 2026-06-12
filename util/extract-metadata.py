@@ -29,7 +29,10 @@ try:
         source_resource_id,
     )
     from util.reference_validation import (
+        DEFAULT_VALIDATION_CACHE_PATH,
         env_flag,
+        load_validation_cache,
+        save_validation_cache,
         validate_publication_references,
     )
 except ModuleNotFoundError:
@@ -39,7 +42,10 @@ except ModuleNotFoundError:
         source_resource_id,
     )
     from reference_validation import (
+        DEFAULT_VALIDATION_CACHE_PATH,
         env_flag,
+        load_validation_cache,
+        save_validation_cache,
         validate_publication_references,
     )
 
@@ -96,6 +102,21 @@ def main():
         "--skip-publication-reference-validation",
         action="store_true",
         help="Skip cache-backed publication metadata validation.",
+    )
+    parser_n.add_argument(
+        "--reference-validation-cache",
+        default=str(ROOT / DEFAULT_VALIDATION_CACHE_PATH),
+        help="Path to the publication validation status cache.",
+    )
+    parser_n.add_argument(
+        "--no-reference-validation-cache",
+        action="store_true",
+        help="Do not reuse cached publication validation results.",
+    )
+    parser_n.add_argument(
+        "--remove-invalid-publications",
+        action="store_true",
+        help="Remove publication entries with hard metadata mismatches from Resource pages.",
     )
     parser_n = subparsers.add_parser(
         "prettify", help="prettify YAML block in registry Markdown files"
@@ -161,6 +182,13 @@ def validate_markdown(args):
 
     errs = []
     warn = []
+    validation_cache_path = getattr(args, "reference_validation_cache", None)
+    use_reference_validation_cache = not getattr(args, "no_reference_validation_cache", False)
+    validation_cache_data = (
+        load_validation_cache(validation_cache_path)
+        if use_reference_validation_cache and validation_cache_path
+        else None
+    )
     for fn in args.files:
         # Check to see if we can parse the yaml frontmatter first
         if not frontmatter.check(fn):
@@ -215,9 +243,48 @@ def validate_markdown(args):
                 or env_flag("KG_REGISTRY_FETCH_PUBLICATION_REFERENCES"),
                 require_cache=getattr(args, "require_publication_reference_cache", False)
                 or env_flag("KG_REGISTRY_REQUIRE_PUBLICATION_REFERENCE_CACHE"),
+                validation_cache_path=validation_cache_path,
+                use_validation_cache=use_reference_validation_cache,
+                validation_cache_data=validation_cache_data,
             )
-            errs.extend(publication_report.errors)
-            warn.extend(publication_report.warnings)
+            if (
+                getattr(args, "remove_invalid_publications", False)
+                and getattr(publication_report, "invalid_publication_indexes", [])
+            ):
+                removed_indexes = set(publication_report.invalid_publication_indexes)
+                publications = obj.get("publications") if isinstance(obj.get("publications"), list) else []
+                removed_ids = [
+                    str(publications[index].get("id") or publications[index].get("doi") or index)
+                    for index in sorted(removed_indexes)
+                    if index < len(publications) and isinstance(publications[index], dict)
+                ]
+                obj["publications"] = [
+                    publication
+                    for index, publication in enumerate(publications)
+                    if index not in removed_indexes
+                ]
+                post.metadata = obj
+                with open(fn, "wb") as fwb:
+                    frontmatter.dump(post, fd=fwb, handler=handler)
+                with open(fn, "a") as fa:
+                    fa.write("\n")
+                warn.append(
+                    f"{fn}: removed {len(removed_indexes)} invalid publication reference(s): "
+                    + ", ".join(removed_ids)
+                )
+                errs.extend(
+                    error
+                    for error in publication_report.errors
+                    if not any(f"publication[{index}]" in error for index in removed_indexes)
+                )
+                warn.extend(
+                    warning
+                    for warning in publication_report.warnings
+                    if not any(f"publication[{index}]" in warning for index in removed_indexes)
+                )
+            else:
+                errs.extend(publication_report.errors)
+                warn.extend(publication_report.warnings)
 
         # Now run yaml linter to check for basic syntax errors and formatting
         yamltext = get_YAML_text(fn)
@@ -228,6 +295,8 @@ def validate_markdown(args):
             elif p.level == "warning":
                 warn.append(f"%s: {p}" % (fn))
 
+    if validation_cache_data is not None and validation_cache_path:
+        save_validation_cache(validation_cache_data, validation_cache_path)
     if len(warn) > 0:
         print("WARNINGS:", file=sys.stderr)
         for w in warn:

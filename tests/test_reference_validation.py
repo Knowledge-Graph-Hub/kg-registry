@@ -98,6 +98,7 @@ doi: 10.1000/correct
     assert any("doi '10.1000/wrong' does not match cached doi '10.1000/correct'" in e for e in report.errors)
     assert any("first author 'Wrong A' does not match cached first author 'Correct A'" in e for e in report.errors)
     assert any("year '2023' does not match cached year '2024'" in w for w in report.warnings)
+    assert report.invalid_publication_indexes == [0]
 
 
 def test_publication_reference_validation_tolerates_formatting_variants(
@@ -150,6 +151,53 @@ def test_uncached_publication_reference_can_be_required(repo_root: Path, tmp_pat
     assert any("DOI:10.1000/missing has no cached reference" in e for e in report.errors)
 
 
+def test_publication_reference_validation_uses_status_cache(repo_root: Path, tmp_path: Path):
+    mod = _load_reference_validation(repo_root)
+    cache_dir = tmp_path / "references"
+    validation_cache = tmp_path / "publication_reference_validation.yml"
+    _write_cache(
+        cache_dir,
+        "PMID_12345.md",
+        """reference_id: PMID:12345
+title: Example title
+authors:
+- Smith J
+year: '2024'
+""",
+    )
+
+    metadata = {
+        "publications": [
+            {
+                "id": "PMID:12345",
+                "title": "Example title",
+                "authors": ["Smith J"],
+                "year": "2024",
+            }
+        ]
+    }
+    first = mod.validate_publication_references(
+        metadata,
+        "resource/example/example.md",
+        cache_dir=cache_dir,
+        validation_cache_path=validation_cache,
+        use_validation_cache=True,
+    )
+    second = mod.validate_publication_references(
+        metadata,
+        "resource/example/example.md",
+        cache_dir=cache_dir,
+        validation_cache_path=validation_cache,
+        use_validation_cache=True,
+    )
+
+    assert first.checked_count == 1
+    assert first.cached_count == 0
+    assert second.checked_count == 0
+    assert second.cached_count == 1
+    assert second.errors == []
+
+
 def test_validate_markdown_runs_publication_reference_validation(
     extract_metadata_module,
     monkeypatch: pytest.MonkeyPatch,
@@ -192,3 +240,62 @@ Content
 
     with pytest.raises(SystemExit):
         mod.validate_markdown(SimpleNamespace(files=[str(md_path)]))
+
+
+def test_validate_markdown_can_remove_invalid_publications(
+    extract_metadata_module,
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    mod = extract_metadata_module
+    resource_dir = tmp_path / "tmpres"
+    resource_dir.mkdir()
+    md_path = resource_dir / "tmpres.md"
+    md_path.write_text(
+        """---
+id: tmpres
+layout: resource_detail
+category: DataSource
+name: Temp Resource
+domains:
+  - biomedical
+publications:
+  - id: PMID:12345
+    title: Wrong title
+products:
+  - id: tmpres.product
+    category: Product
+    name: Minimal Product
+---
+
+Content
+"""
+    )
+
+    monkeypatch.setattr(mod, "validate", lambda **_: SimpleNamespace(results=[]))
+
+    def fake_validate_publication_references(*args, **kwargs):
+        return SimpleNamespace(
+            errors=["resource/tmpres/tmpres.md publication[0] title mismatch"],
+            warnings=["resource/tmpres/tmpres.md publication[0] year mismatch"],
+            invalid_publication_indexes=[0],
+        )
+
+    monkeypatch.setattr(
+        mod,
+        "validate_publication_references",
+        fake_validate_publication_references,
+    )
+
+    mod.validate_markdown(
+        SimpleNamespace(
+            files=[str(md_path)],
+            remove_invalid_publications=True,
+            skip_publication_reference_validation=False,
+            no_reference_validation_cache=True,
+        )
+    )
+
+    updated = md_path.read_text()
+    assert "PMID:12345" not in updated
+    assert "publications: []" in updated

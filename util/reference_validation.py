@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import os
+import hashlib
+import json
 import re
 import shutil
 import subprocess
 import unicodedata
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from html import unescape
 from pathlib import Path
@@ -19,6 +22,7 @@ import yaml
 
 
 DEFAULT_CACHE_DIR = Path("references_cache")
+DEFAULT_VALIDATION_CACHE_PATH = Path("cache") / "publication_reference_validation.yml"
 DEFAULT_CONFIG_PATHS = (
     Path(".linkml-reference-validator.yaml"),
     Path(".linkml-reference-validator.yml"),
@@ -31,9 +35,11 @@ class PublicationReferenceCheck:
     """Validation details for one publication reference."""
 
     reference_id: str
+    index: int | None = None
     cache_path: Path | None = None
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    cached_result: bool = False
 
 
 @dataclass
@@ -42,7 +48,10 @@ class PublicationReferenceReport:
 
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    checks: list[PublicationReferenceCheck] = field(default_factory=list)
+    invalid_publication_indexes: list[int] = field(default_factory=list)
     checked_count: int = 0
+    cached_count: int = 0
     missing_cache_count: int = 0
     fetched_count: int = 0
 
@@ -55,6 +64,9 @@ def validate_publication_references(
     config_path: str | Path | None = None,
     fetch_missing: bool = False,
     require_cache: bool = False,
+    validation_cache_path: str | Path | None = None,
+    use_validation_cache: bool = False,
+    validation_cache_data: dict[str, Any] | None = None,
 ) -> PublicationReferenceReport:
     """Validate publication metadata against linkml-reference-validator cache files."""
 
@@ -66,6 +78,13 @@ def validate_publication_references(
     cache_root = resolve_cache_dir(cache_dir, config_path)
     config = Path(config_path) if config_path else find_default_config()
     source_path = Path(source_path)
+    validation_cache = None
+    if use_validation_cache:
+        if validation_cache_data is not None:
+            validation_cache = validation_cache_data
+        elif validation_cache_path:
+            validation_cache = load_validation_cache(validation_cache_path)
+    validation_cache_changed = False
 
     for index, publication in enumerate(publications):
         if not isinstance(publication, dict):
@@ -84,26 +103,72 @@ def validate_publication_references(
 
         if not cache_path.exists():
             report.missing_cache_count += 1
+            check = PublicationReferenceCheck(
+                reference_id=reference_id,
+                index=index,
+                cache_path=cache_path,
+            )
             if require_cache:
-                report.errors.append(
-                    f"{source_path} publication[{index}] {reference_id} has no cached reference at {cache_path}"
+                check.errors.append(f"{reference_id} has no cached reference at {cache_path}")
+            else:
+                check.warnings.append(f"{reference_id} has no cached reference at {cache_path}")
+            report.checks.append(check)
+            _extend_report_messages(report, source_path, check)
+            if validation_cache is not None:
+                validation_cache_changed |= update_validation_cache_entry(
+                    validation_cache,
+                    source_path,
+                    index,
+                    reference_id,
+                    publication,
+                    cache_path,
+                    check,
                 )
             continue
 
-        cached = load_reference_cache(cache_path)
-        check = compare_publication_to_cache(publication, cached, reference_id, cache_path)
-        report.checked_count += 1
-        report.errors.extend(
-            f"{source_path} publication[{index}] {message}" for message in check.errors
+        check = get_cached_validation_check(
+            validation_cache,
+            source_path,
+            index,
+            reference_id,
+            publication,
+            cache_path,
         )
-        report.warnings.extend(
-            f"{source_path} publication[{index}] {message}" for message in check.warnings
-        )
+        if check is not None:
+            report.cached_count += 1
+        else:
+            cached = load_reference_cache(cache_path)
+            check = compare_publication_to_cache(publication, cached, reference_id, cache_path)
+            check.index = index
+            report.checked_count += 1
+            if validation_cache is not None:
+                validation_cache_changed |= update_validation_cache_entry(
+                    validation_cache,
+                    source_path,
+                    index,
+                    reference_id,
+                    publication,
+                    cache_path,
+                    check,
+                )
+
+        report.checks.append(check)
+        if check.errors:
+            report.invalid_publication_indexes.append(index)
+        _extend_report_messages(report, source_path, check)
 
     if report.missing_cache_count and not require_cache:
         report.warnings.append(
             f"{source_path}: {report.missing_cache_count} publication reference(s) were not cached in {cache_root}"
         )
+
+    if (
+        validation_cache is not None
+        and validation_cache_changed
+        and validation_cache_path
+        and validation_cache_data is None
+    ):
+        save_validation_cache(validation_cache, validation_cache_path)
 
     return report
 
@@ -155,6 +220,157 @@ def compare_publication_to_cache(
             check.warnings.append(f"{field_name} missing; cached {field_name} is available in {cache_path}")
 
     return check
+
+
+def get_cached_validation_check(
+    validation_cache: dict[str, Any] | None,
+    source_path: Path,
+    index: int,
+    reference_id: str,
+    publication: dict[str, Any],
+    cache_path: Path,
+) -> PublicationReferenceCheck | None:
+    """Return a cached validation result when publication and cache content are unchanged."""
+
+    if validation_cache is None:
+        return None
+
+    key = validation_cache_key(source_path, index, reference_id)
+    entry = validation_cache.get("entries", {}).get(key)
+    if not isinstance(entry, dict):
+        return None
+
+    fingerprint = publication_validation_fingerprint(publication, reference_id, cache_path)
+    if entry.get("fingerprint") != fingerprint:
+        return None
+
+    errors = entry.get("errors") if isinstance(entry.get("errors"), list) else []
+    warnings = entry.get("warnings") if isinstance(entry.get("warnings"), list) else []
+    return PublicationReferenceCheck(
+        reference_id=reference_id,
+        index=index,
+        cache_path=cache_path,
+        errors=[str(error) for error in errors],
+        warnings=[str(warning) for warning in warnings],
+        cached_result=True,
+    )
+
+
+def update_validation_cache_entry(
+    validation_cache: dict[str, Any],
+    source_path: Path,
+    index: int,
+    reference_id: str,
+    publication: dict[str, Any],
+    cache_path: Path,
+    check: PublicationReferenceCheck,
+) -> bool:
+    """Store the validation result for a publication/cache fingerprint."""
+
+    key = validation_cache_key(source_path, index, reference_id)
+    entry = {
+        "fingerprint": publication_validation_fingerprint(publication, reference_id, cache_path),
+        "reference_id": reference_id,
+        "source_path": str(source_path),
+        "publication_index": index,
+        "status": publication_check_status(check),
+        "errors": list(check.errors),
+        "warnings": list(check.warnings),
+        "checked_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+    }
+    entries = validation_cache.setdefault("entries", {})
+    if not isinstance(entries, dict):
+        validation_cache["entries"] = {}
+        entries = validation_cache["entries"]
+    if entries.get(key) == entry:
+        return False
+    entries[key] = entry
+    return True
+
+
+def load_validation_cache(cache_path: str | Path | None) -> dict[str, Any]:
+    """Load the publication validation status cache."""
+
+    if cache_path is None:
+        return {"version": 1, "entries": {}}
+    path = Path(cache_path)
+    if not path.exists():
+        return {"version": 1, "entries": {}}
+    try:
+        loaded = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except OSError:
+        return {"version": 1, "entries": {}}
+    if not isinstance(loaded, dict):
+        return {"version": 1, "entries": {}}
+    entries = loaded.get("entries")
+    if not isinstance(entries, dict):
+        loaded["entries"] = {}
+    loaded["version"] = 1
+    return loaded
+
+
+def save_validation_cache(validation_cache: dict[str, Any], cache_path: str | Path) -> None:
+    """Persist the publication validation status cache."""
+
+    path = Path(cache_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        yaml.safe_dump(validation_cache, default_flow_style=False, sort_keys=True),
+        encoding="utf-8",
+    )
+
+
+def validation_cache_key(source_path: Path, index: int, reference_id: str) -> str:
+    """Return a stable cache key for a publication entry within a resource page."""
+
+    return f"{source_path.as_posix()}#publication[{index}]#{reference_id}"
+
+
+def publication_validation_fingerprint(
+    publication: dict[str, Any],
+    reference_id: str,
+    cache_path: Path,
+) -> str:
+    """Hash publication metadata plus cached reference metadata."""
+
+    payload = {
+        "reference_id": reference_id,
+        "publication": publication,
+        "cache": None,
+    }
+    if cache_path.exists():
+        try:
+            payload["cache"] = load_reference_cache(cache_path)
+        except Exception as error:
+            payload["cache"] = {"cache_read_error": str(error)}
+    else:
+        payload["cache"] = {"missing": True}
+    encoded = json.dumps(payload, sort_keys=True, default=str, separators=(",", ":"))
+    return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
+
+
+def publication_check_status(check: PublicationReferenceCheck) -> str:
+    """Classify one publication reference check for reporting."""
+
+    if check.errors:
+        return "error"
+    if check.warnings:
+        return "warning"
+    return "valid"
+
+
+def _extend_report_messages(
+    report: PublicationReferenceReport,
+    source_path: Path,
+    check: PublicationReferenceCheck,
+) -> None:
+    index = check.index if check.index is not None else "?"
+    report.errors.extend(
+        f"{source_path} publication[{index}] {message}" for message in check.errors
+    )
+    report.warnings.extend(
+        f"{source_path} publication[{index}] {message}" for message in check.warnings
+    )
 
 
 def resolve_cache_dir(
