@@ -26,9 +26,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: predict
   product_url: https://www.embopress.org/doi/abs/10.1038/msb.2011.26
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProcessProduct
   description: PREDICT computational method for large-scale prediction of drug indications
     using drug-drug and disease-disease similarity measures and known drug-disease
@@ -46,9 +44,7 @@ products:
     source: mesh
   - relation_type: prov:used
     source: omim
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: Product
   description: Supporting information for the PREDICT study, including supplementary
     tables and data supporting the drug-disease association gold standard and prediction
@@ -72,6 +68,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
     symptomatic, or non-indications

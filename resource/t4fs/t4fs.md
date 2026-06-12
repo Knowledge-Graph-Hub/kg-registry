@@ -70,9 +70,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OBO format
@@ -87,9 +87,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-02: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in JSON format
@@ -104,9 +104,9 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
 publications:
 - id: https://doi.org/10.5281/zenodo.4705219

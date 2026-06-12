@@ -41,6 +41,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+    to URL'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

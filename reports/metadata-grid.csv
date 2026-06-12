@@ -4,6 +4,7 @@ Resource,Activity Status,Validation Status
 5srrnadb,active,PASS
 aact,active,PASS
 achilles,active,PASS
+acukg,active,PASS
 ado,active,PASS
 adrecs,active,PASS
 aelous,active,PASS
@@ -35,6 +36,7 @@ bfo,active,PASS
 bgee,active,PASS
 bigg,active,PASS
 bindingdb,active,PASS
+bio101,active,PASS
 biobricks-aopwiki,active,PASS
 biobricks-ice,active,PASS
 biobricks-mesh,active,PASS
@@ -61,6 +63,7 @@ bto,active,PASS
 bv-brc,active,PASS
 cancer-genome-interpreter,active,PASS
 cancer-registry-kg,active,PASS
+cardiokg,active,PASS
 catalogue-of-life,active,PASS
 ccle,active,PASS
 cdao,active,PASS
@@ -190,6 +193,7 @@ ekg,active,PASS
 ema,active,PASS
 emapa,active,PASS
 embiology,active,PASS
+emeraldgraph,active,PASS
 emerge,active,PASS
 emi,active,PASS
 emikg,active,PASS
@@ -232,7 +236,6 @@ flopo,active,PASS
 flybase,active,PASS
 fobi,active,PASS
 foodb,active,PASS
-fooddb,active,PASS
 foodon,active,PASS
 forum,active,PASS
 fovt,active,PASS
@@ -320,6 +323,7 @@ icd11,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
 icgc,active,PASS
+ickg,active,PASS
 ico,active,PASS
 iconclass,active,PASS
 identifier-mappings,active,PASS
@@ -431,6 +435,7 @@ msigdb,active,PASS
 multiomics-kp,active,PASS
 mutationds,active,PASS
 mw,active,PASS
+myaura,active,PASS
 namsnetwork,active,PASS
 nanopublications,active,PASS
 nasa-gesdisc-kg,active,PASS
@@ -557,6 +562,7 @@ pombase,active,PASS
 poro,active,PASS
 ppo,active,PASS
 pr,active,PASS
+prefer,active,PASS
 preppi,active,PASS
 primekg,active,PASS
 prism,active,PASS
@@ -707,6 +713,7 @@ who,active,PASS
 wikidata,active,PASS
 wikipathways,active,PASS
 wikipedia,active,PASS
+wikispecies,active,PASS
 wildlifekn,active,PASS
 wormbase,active,PASS
 xao,active,PASS

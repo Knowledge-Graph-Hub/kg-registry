@@ -407,10 +407,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-12: FTP error: timed
+    out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -1451,10 +1453,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
-    when accessing file'
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: MarkerDB API documentation and endpoint examples for condition, chemical,
     genetic, protein, and karyotype biomarker records.
@@ -1496,6 +1500,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
     for ChemIDplus substance records and annotations after the standalone NLM service
@@ -1523,6 +1529,155 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+- category: GraphicalInterface
+  description: Web interface that allows searching, browsing, and exploring food compounds
+    and their properties.
+  id: foodb.web
+  name: FooDB Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_url: https://foodb.ca/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in CSV format
+  format: csv
+  id: foodb.data.csv
+  name: FooDB CSV Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 998314299
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in XML format
+  format: xml
+  id: foodb.data.xml
+  name: FooDB XML Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 6731854848
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: zip
+  description: Complete FooDB database in JSON format
+  format: json
+  id: foodb.data.json
+  name: FooDB JSON Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 90852659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database as MySQL dump
+  id: foodb.data.mysql
+  name: FooDB MySQL Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 180900659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
 publications:
 - authors:
   - Kim S

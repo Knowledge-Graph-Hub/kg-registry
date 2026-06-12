@@ -2485,6 +2485,184 @@ products:
     source: innatedb
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
+- category: GraphProduct
+  description: Neo4j construction artifacts for CardioKG, including Cypher scripts
+    to create graph nodes and add edges.
+  dump_format: neo4j
+  format: neo4j
+  id: cardiokg.neo4j
+  name: CardioKG Neo4j graph construction scripts
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: cardiokg
+  - relation_type: prov:hadPrimarySource
+    source: ukbiobank
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: mondo
+  - relation_type: prov:used
+    source: reactome
+  - relation_type: prov:used
+    source: kegg
+  - relation_type: prov:used
+    source: uniprot
+  - relation_type: prov:used
+    source: string
+  - relation_type: prov:used
+    source: opentargets
+  product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+- category: GraphicalInterface
+  description: Web interface that allows searching, browsing, and exploring food compounds
+    and their properties.
+  id: foodb.web
+  name: FooDB Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_url: https://foodb.ca/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in CSV format
+  format: csv
+  id: foodb.data.csv
+  name: FooDB CSV Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 998314299
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in XML format
+  format: xml
+  id: foodb.data.xml
+  name: FooDB XML Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 6731854848
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: zip
+  description: Complete FooDB database in JSON format
+  format: json
+  id: foodb.data.json
+  name: FooDB JSON Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 90852659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database as MySQL dump
+  id: foodb.data.mysql
+  name: FooDB MySQL Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 180900659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
 publications:
 - id: doi:10.1093/nar/gkae909
   preferred: true

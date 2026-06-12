@@ -52,6 +52,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 405 error
+    when accessing file'
 - category: Product
   description: PMC FTP service for retrieving file lists and downloadable article
     files from PMC article datasets, including the Open Access Subset.
@@ -64,6 +66,8 @@ products:
   product_url: https://pmc.ncbi.nlm.nih.gov/tools/ftp/
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 405 error
     when accessing file'
 - category: ProgrammingInterface
   connection_url: https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi

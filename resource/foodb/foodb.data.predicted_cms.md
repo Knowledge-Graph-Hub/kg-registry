@@ -8,16 +8,5 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: foodb
 product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
-warnings:
-- File was not able to be retrieved when checked on 2026-06-05_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2025-12-11_ HTTP 502 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting
-  to URL
-- File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
-  accessing file
 layout: product_detail
 ---

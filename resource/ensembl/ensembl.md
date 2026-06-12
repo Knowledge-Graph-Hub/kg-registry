@@ -964,10 +964,12 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -1761,6 +1763,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Current comprehensive GENCODE gene annotations for the human GRCh38.p14
     genome assembly in GTF format
@@ -1876,9 +1880,7 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 publications:
 - authors:
   - Dyer SC

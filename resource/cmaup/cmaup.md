@@ -29,6 +29,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
     and disease information for drug repositioning.

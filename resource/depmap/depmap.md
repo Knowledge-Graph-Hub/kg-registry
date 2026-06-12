@@ -104,6 +104,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CRISPR-Cas9 knockout screening data processed with Chronos algorithm
     to identify gene dependencies
@@ -342,6 +344,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: DepMap downloads page for PRISM Repurposing primary and secondary screen
     data
@@ -357,6 +361,8 @@ products:
     source: depmap
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: Product
   description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing
@@ -374,6 +380,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Dose-response curve parameter matrix from the secondary PRISM Repurposing
     screen of 1,448 compounds across cancer cell lines
@@ -389,6 +397,8 @@ products:
     source: depmap
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: Product
   description: Harmonizome 3.0 processed dataset downloads, including dataset-specific

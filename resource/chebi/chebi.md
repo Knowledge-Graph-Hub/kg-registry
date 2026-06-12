@@ -1404,10 +1404,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-12: FTP error: timed
+    out'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -1768,8 +1770,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -2993,6 +2995,153 @@ products:
     source: innatedb
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
+- category: GraphicalInterface
+  description: Web interface that allows searching, browsing, and exploring food compounds
+    and their properties.
+  id: foodb.web
+  name: FooDB Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_url: https://foodb.ca/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in CSV format
+  format: csv
+  id: foodb.data.csv
+  name: FooDB CSV Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 998314299
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in XML format
+  format: xml
+  id: foodb.data.xml
+  name: FooDB XML Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 6731854848
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: zip
+  description: Complete FooDB database in JSON format
+  format: json
+  id: foodb.data.json
+  name: FooDB JSON Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 90852659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database as MySQL dump
+  id: foodb.data.mysql
+  name: FooDB MySQL Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 180900659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
 publications:
 - id: https://doi.org/10.1093/nar/gkaf1271
   title: 'ChEBI: re-engineered for a sustainable future'

@@ -266,10 +266,12 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Co-occurrence database generated from public PubMed abstracts with
     entity normalization for Biolink-relevant biomedical concepts
@@ -362,10 +364,12 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
-    out'
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
+  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-12: FTP error: timed
+    out'
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
@@ -1039,6 +1043,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
     with accessions, sequences, residue positions, phosphorylated residues, PubMed
@@ -1060,9 +1066,7 @@ products:
     source: pubmed
   - relation_type: prov:wasDerivedFrom
     source: uniprot
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
+  warnings: []
 - category: GraphicalInterface
   description: RLIMS-P web portal for searching phosphorylation information by keywords,
     organisms, date range, and PubMed identifiers, with extracted kinase, substrate,
@@ -1090,6 +1094,244 @@ products:
   secondary_source:
   - relation_type: prov:used
     source: pubmed
+- category: GraphProduct
+  description: Source CSV tables for AcuKG, including acupoint therapeutic actions,
+    indications, anatomy relationships, clinical trial links, and PubMed links.
+  edge_count: 11527
+  format: csv
+  id: acukg.csv
+  name: AcuKG CSV tables
+  node_count: 1839
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: snomedct
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG
+- category: GraphProduct
+  description: RDF Turtle representation of AcuKG relationship tables.
+  edge_count: 11527
+  format: ttl
+  id: acukg.rdf
+  name: AcuKG RDF Turtle files
+  node_count: 1839
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: snomedct
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_RDF
+- category: GraphProduct
+  description: JSON representation of AcuKG relationship tables.
+  edge_count: 11527
+  format: json
+  id: acukg.json
+  name: AcuKG JSON files
+  node_count: 1839
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: acukg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:used
+    source: mesh
+  - relation_type: prov:used
+    source: uberon
+  - relation_type: prov:used
+    source: snomedct
+  product_url: https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json
+- category: GraphicalInterface
+  description: Web interface that allows searching, browsing, and exploring food compounds
+    and their properties.
+  id: foodb.web
+  name: FooDB Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_url: https://foodb.ca/
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in CSV format
+  format: csv
+  id: foodb.data.csv
+  name: FooDB CSV Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 998314299
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database in XML format
+  format: xml
+  id: foodb.data.xml
+  name: FooDB XML Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 6731854848
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: zip
+  description: Complete FooDB database in JSON format
+  format: json
+  id: foodb.data.json
+  name: FooDB JSON Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 90852659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: Product
+  compression: targz
+  description: Complete FooDB database as MySQL dump
+  id: foodb.data.mysql
+  name: FooDB MySQL Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: foodb
+  product_file_size: 180900659
+  product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+  secondary_source:
+  - relation_type: prov:wasInformedBy
+    source: hmdb
+  - relation_type: prov:wasInformedBy
+    source: pubchem
+  - relation_type: prov:wasInformedBy
+    source: chebi
+  - relation_type: prov:wasInformedBy
+    source: kegg
+  - relation_type: prov:wasInformedBy
+    source: ncbitaxon
+  - relation_type: prov:wasInformedBy
+    source: pubmed
+  - relation_type: prov:wasInformedBy
+    source: itis
+  - relation_type: prov:wasInformedBy
+    source: wikipedia
+  - relation_type: prov:wasInformedBy
+    source: wikispecies
+- category: GraphProduct
+  description: Immune cell type-specific node and relationship CSV files for ICKG,
+    including T cell, NK cell, and B cell graph exports.
+  format: csv
+  id: ickg.graph-data
+  name: ICKG graph data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ickg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://github.com/KChen-lab/immune-knowledgegraph.github.io/tree/main/data
+- category: GraphProduct
+  description: Multilayer epilepsy knowledge graph generated by the myAURA data processing
+    workflow from biomedical, clinical, literature, and patient-centered data sources.
+  id: myaura.graph
+  name: myAURA epilepsy knowledge graph
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: myaura
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: web-of-science
+  product_url: https://github.com/cns-iu/myaura
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

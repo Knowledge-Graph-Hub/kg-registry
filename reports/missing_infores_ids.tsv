@@ -5,6 +5,7 @@ resource_id	resource_name	category	homepage_url	file_path
 aao	Amphibian gross anatomy	Ontology	http://github.com/seger/aao	resource/aao/aao.md
 achilles	Project Achilles	DataSource	https://depmap.org/portal/achilles/	resource/achilles/achilles.md
 activedriverdb	ActiveDriverDB	DataSource	https://activedriverdb.org/	resource/activedriverdb/activedriverdb.md
+acukg	AcuKG	KnowledgeGraph	https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture	resource/acukg/acukg.md
 ado	Alzheimer's Disease Ontology	Ontology	https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO	resource/ado/ado.md
 adrecs	ADReCS	DataSource	http://www.bio-add.org/ADReCS/	resource/adrecs/adrecs.md
 adw	Animal natural history and life history	Ontology	http://www.animaldiversity.org	resource/adw/adw.md
@@ -37,6 +38,7 @@ bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOnto
 bigg	BiGG Models	DataSource	http://bigg.ucsd.edu/	resource/bigg/bigg.md
 bila	Bilateria anatomy	Ontology	http://4dx.embl.de/4DXpress	resource/bila/bila.md
 bind	Biomolecular Interaction Network Database (BIND)	DataSource	http://bind.ca	resource/bind/bind.md
+bio101	KB Bio 101	KnowledgeGraph	https://www.ai.sri.com/~halo/public/exported-kb/biokb.html	resource/bio101/bio101.md
 biobricks-aopwiki	BioBricks AOP-Wiki	KnowledgeGraph	https://github.com/biobricks-ai/aopwikirdf-kg	resource/biobricks-aopwiki/biobricks-aopwiki.md
 biobricks-ice	BioBricks ICE	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-ice/biobricks-ice.md
 biobricks-mesh	BioBricks MeSH	KnowledgeGraph	https://github.com/biobricks-ai/mesh-kg	resource/biobricks-mesh/biobricks-mesh.md
@@ -61,6 +63,7 @@ bto	BRENDA tissue / enzyme source	Ontology	http://www.brenda-enzymes.org	resourc
 bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www.bv-brc.org/	resource/bv-brc/bv-brc.md
 cancer-genome-interpreter	Cancer Genome Interpreter	DataSource		resource/cancer-genome-interpreter/cancer-genome-interpreter.md
 cancer-registry-kg	Cancer Registry Knowledge Graph	KnowledgeGraph	https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/	resource/cancer-registry-kg/cancer-registry-kg.md
+cardiokg	CardioKG	KnowledgeGraph	https://github.com/ImperialCollegeLondon/cardioKG	resource/cardiokg/cardiokg.md
 caro	Common Anatomy Reference Ontology	Ontology	https://github.com/obophenotype/caro/	resource/caro/caro.md
 ccle	CCLE	DataSource	https://sites.broadinstitute.org/ccle/	resource/ccle/ccle.md
 cdao	Comparative Data Analysis Ontology	Ontology	https://github.com/evoinfo/cdao	resource/cdao/cdao.md
@@ -169,6 +172,7 @@ ema	European Medicines Agency	DataSource	https://www.ema.europa.eu/	resource/ema
 emap	Mouse gross anatomy and development, timed	Ontology	http://emouseatlas.org	resource/emap/emap.md
 emapa	Mouse Developmental Anatomy Ontology	Ontology	http://www.informatics.jax.org/expression.shtml	resource/emapa/emapa.md
 embiology	EmBiology	KnowledgeGraph	https://www.embiology.com/	resource/embiology/embiology.md
+emeraldgraph	EmeraldGraph	KnowledgeGraph	https://github.com/ai4greenwashing/EmeraldMind	resource/emeraldgraph/emeraldgraph.md
 emerge	Electronic Medical Records and Genomics Network	DataSource	https://emerge-network.org/	resource/emerge/emerge.md
 emi	Earth Metabolome Initiative Ontology	Ontology	https://www.earthmetabolome.org/earth_metabolome_ontology/	resource/emi/emi.md
 emikg	EMI KG	KnowledgeGraph	https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology	resource/emikg/emikg.md
@@ -276,6 +280,7 @@ ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm
 icd11	ICD-11	DataSource	https://icd.who.int/en	resource/icd11/icd11.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
 icgc	ICGC	DataSource	https://www.icgc-argo.org/	resource/icgc/icgc.md
+ickg	Immune Cell Knowledge Graph	KnowledgeGraph	https://kchen-lab.github.io/immune-knowledgegraph.github.io/	resource/ickg/ickg.md
 ico	Informed Consent Ontology	Ontology	https://github.com/ICO-ontology/ICO	resource/ico/ico.md
 iconclass	ICONCLASS	DataSource	https://iconclass.org/	resource/iconclass/iconclass.md
 identifier-mappings	ID Mappings	KnowledgeGraph	https://www.wikidata.org/	resource/identifier-mappings/identifier-mappings.md
@@ -375,6 +380,7 @@ ms	Mass spectrometry ontology	Ontology	http://www.psidev.info/groups/controlled-
 multiomics-kp	Multiomics KP	KnowledgeGraph		resource/multiomics-kp/multiomics-kp.md
 mutationds	Catalog of Validated Oncogenic Mutations	DataSource	https://www.cancergenomeinterpreter.org/mutations	resource/mutationds/mutationds.md
 mw	Metabolomics Workbench	DataSource	https://www.metabolomicsworkbench.org/	resource/mw/mw.md
+myaura	myAURA KG	KnowledgeGraph	https://cns-iu.github.io/myaura/	resource/myaura/myaura.md
 namsnetwork	NAMs Network	KnowledgeGraph	https://nams.network/	resource/namsnetwork/namsnetwork.md
 nasa-gesdisc-kg	NASA-GESDISC-KG	KnowledgeGraph	https://disc.gsfc.nasa.gov	resource/nasa-gesdisc-kg/nasa-gesdisc-kg.md
 nbo	Neuro Behavior Ontology	Ontology	https://github.com/obo-behavior/behavior-ontology/	resource/nbo/nbo.md
@@ -491,6 +497,7 @@ po	Plant Ontology	Ontology	http://browser.planteome.org/amigo	resource/po/po.md
 poro	Porifera Ontology	Ontology	https://github.com/obophenotype/porifera-ontology	resource/poro/poro.md
 ppo	Plant Phenology Ontology	Ontology	https://github.com/PlantPhenoOntology/PPO	resource/ppo/ppo.md
 predict	PREDICT	DataSource	https://www.embopress.org/doi/abs/10.1038/msb.2011.26	resource/predict/predict.md
+prefer	Precision Fermentation Ontology	Ontology	https://github.com/Multiomics-Analytics-Group/prefer_ontology	resource/prefer/prefer.md
 prism	PRISM	DataSource	https://depmap.org/repurposing/	resource/prism/prism.md
 proco	Process Chemistry Ontology	Ontology	https://github.com/proco-ontology/PROCO	resource/proco/proco.md
 progenomes	proGenomes	DataSource	https://progenomes.embl.de/	resource/progenomes/progenomes.md
@@ -625,6 +632,7 @@ wbphenotype	C. elegans phenotype	Ontology	https://github.com/obophenotype/c-eleg
 web-of-science	Web of Science	DataSource	https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/	resource/web-of-science/web-of-science.md
 who	World Health Organization	Aggregator	https://www.who.int/	resource/who/who.md
 wikipedia	Wikipedia	DataSource	https://www.wikipedia.org/	resource/wikipedia/wikipedia.md
+wikispecies	Wikispecies	DataSource	https://species.wikimedia.org/wiki/Main_Page	resource/wikispecies/wikispecies.md
 wildlifekn	Wildlife-KN	KnowledgeGraph	https://sites.nd.edu/kn-wildlife/	resource/wildlifekn/wildlifekn.md
 xao	Xenopus Anatomy Ontology	Ontology	http://www.xenbase.org/anatomy/xao.do?method=display	resource/xao/xao.md
 xco	Experimental condition ontology	Ontology	https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000	resource/xco/xco.md
