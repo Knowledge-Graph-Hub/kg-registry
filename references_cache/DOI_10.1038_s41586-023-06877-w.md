@@ -1,0 +1,202 @@
+---
+reference_id: DOI:10.1038/s41586-023-06877-w
+title: Temporal dynamics of the multi-omic response to endurance exercise training
+authors:
+- David Amar
+- Nicole R. Gay
+- Pierre M. Jean-Beltran
+- Dam Bae
+- Surendra Dasari
+- Courtney Dennis
+- Charles R. Evans
+- David A. Gaul
+- Olga Ilkayeva
+- Anna A. Ivanova
+- Maureen T. Kachman
+- Hasmik Keshishian
+- Ian R. Lanza
+- Ana C. Lira
+- Michael J. Muehlbauer
+- Venugopalan D. Nair
+- Paul D. Piehowski
+- Jessica L. Rooney
+- Kevin S. Smith
+- Cynthia L. Stowe
+- Bingqing Zhao
+- Natalie M. Clark
+- David Jimenez-Morales
+- Malene E. Lindholm
+- Gina M. Many
+- James A. Sanford
+- Gregory R. Smith
+- Nikolai G. Vetr
+- Tiantian Zhang
+- Jose J. Almagro Armenteros
+- Julian Avila-Pacheco
+- Nasim Bararpour
+- Yongchao Ge
+- Zhenxin Hou
+- Shruti Marwaha
+- David M. Presby
+- Archana Natarajan Raja
+- Evan M. Savage
+- Alec Steep
+- Yifei Sun
+- Si Wu
+- Jimmy Zhen
+- Sue C. Bodine
+- Karyn A. Esser
+- Laurie J. Goodyear
+- Simon Schenk
+- Stephen B. Montgomery
+- Facundo M. Fernández
+- Stuart C. Sealfon
+- Michael P. Snyder
+- Joshua N. Adkins
+- Euan Ashley
+- Charles F. Burant
+- Steven A. Carr
+- Clary B. Clish
+- Gary Cutter
+- Robert E. Gerszten
+- William E. Kraus
+- Jun Z. Li
+- Michael E. Miller
+- K. Sreekumaran Nair
+- Christopher Newgard
+- Eric A. Ortlund
+- Wei-Jun Qian
+- Russell Tracy
+- Martin J. Walsh
+- Matthew T. Wheeler
+- Karen P. Dalton
+- Trevor Hastie
+- Steven G. Hershman
+- Mihir Samdarshi
+- Christopher Teng
+- Rob Tibshirani
+- Elaine Cornell
+- Nicole Gagne
+- Sandy May
+- Brian Bouverat
+- Christiaan Leeuwenburgh
+- Ching-ju Lu
+- Marco Pahor
+- Fang-Chi Hsu
+- Scott Rushing
+- Michael P. Walkup
+- Barbara Nicklas
+- W. Jack Rejeski
+- John P. Williams
+- Ashley Xia
+- Brent G. Albertson
+- Elisabeth R. Barton
+- Frank W. Booth
+- Tiziana Caputo
+- Michael Cicha
+- Luis Gustavo Oliveira De Sousa
+- Roger Farrar
+- Andrea L. Hevener
+- Michael F. Hirshman
+- Bailey E. Jackson
+- Benjamin G. Ke
+- Kyle S. Kramer
+- Sarah J. Lessard
+- Nathan S. Makarewicz
+- Andrea G. Marshall
+- Pasquale Nigro
+- Scott Powers
+- Krithika Ramachandran
+- R. Scott Rector
+- Collyn Z-T. Richards
+- John Thyfault
+- Zhen Yan
+- Chongzhi Zang
+- Mary Anne S. Amper
+- Ali Tugrul Balci
+- Clarisa Chavez
+- Maria Chikina
+- Roxanne Chiu
+- Marina A. Gritsenko
+- Kristy Guevara
+- Joshua R. Hansen
+- Krista M. Hennig
+- Chia-Jui Hung
+- Chelsea Hutchinson-Bunch
+- Christopher A. Jin
+- Xueyun Liu
+- Kristal M. Maner-Smith
+- D. R. Mani
+- Nada Marjanovic
+- Matthew E. Monroe
+- Ronald J. Moore
+- Samuel G. Moore
+- Charles C. Mundorff
+- Daniel Nachun
+- Michael D. Nestor
+- German Nudelman
+- Cadence Pearce
+- Vladislav A. Petyuk
+- Hanna Pincas
+- Irene Ramos
+- Alexander Raskind
+- Stas Rirak
+- Jeremy M. Robbins
+- Aliza B. Rubenstein
+- Frederique Ruf-Zamojski
+- Tyler J. Sagendorf
+- Nitish Seenarine
+- Tanu Soni
+- Karan Uppal
+- Sindhu Vangeti
+- Mital Vasoya
+- Alexandria Vornholt
+- Xuechen Yu
+- Elena Zaslavsky
+- Navid Zebarjadi
+- Marcas Bamman
+- Bryan C. Bergman
+- Daniel H. Bessesen
+- Thomas W. Buford
+- Toby L. Chambers
+- Paul M. Coen
+- Dan Cooper
+- Fadia Haddad
+- Kishore Gadde
+- Bret H. Goodpaster
+- Melissa Harris
+- Kim M. Huffman
+- Catherine M. Jankowski
+- Neil M. Johannsen
+- Wendy M. Kohrt
+- Bridget Lester
+- Edward L. Melanson
+- Kerrie L. Moreau
+- Nicolas Musi
+- Robert L. Newton
+- Shlomit Radom-Aizik
+- Megan E. Ramaker
+- Tuomo Rankinen
+- Blake B. Rasmussen
+- Eric Ravussin
+- Irene E. Schauer
+- Robert S. Schwartz
+- Lauren M. Sparks
+- Anna Thalacker-Mercer
+- Scott Trappe
+- Todd A. Trappe
+- Elena Volpi
+journal: Nature
+year: '2024'
+doi: 10.1038/s41586-023-06877-w
+content_type: abstract_only
+---
+
+# Temporal dynamics of the multi-omic response to endurance exercise training
+**Authors:** David Amar, Nicole R. Gay, Pierre M. Jean-Beltran, Dam Bae, Surendra Dasari, Courtney Dennis, Charles R. Evans, David A. Gaul, Olga Ilkayeva, Anna A. Ivanova, Maureen T. Kachman, Hasmik Keshishian, Ian R. Lanza, Ana C. Lira, Michael J. Muehlbauer, Venugopalan D. Nair, Paul D. Piehowski, Jessica L. Rooney, Kevin S. Smith, Cynthia L. Stowe, Bingqing Zhao, Natalie M. Clark, David Jimenez-Morales, Malene E. Lindholm, Gina M. Many, James A. Sanford, Gregory R. Smith, Nikolai G. Vetr, Tiantian Zhang, Jose J. Almagro Armenteros, Julian Avila-Pacheco, Nasim Bararpour, Yongchao Ge, Zhenxin Hou, Shruti Marwaha, David M. Presby, Archana Natarajan Raja, Evan M. Savage, Alec Steep, Yifei Sun, Si Wu, Jimmy Zhen, Sue C. Bodine, Karyn A. Esser, Laurie J. Goodyear, Simon Schenk, Stephen B. Montgomery, Facundo M. Fernández, Stuart C. Sealfon, Michael P. Snyder, Joshua N. Adkins, Euan Ashley, Charles F. Burant, Steven A. Carr, Clary B. Clish, Gary Cutter, Robert E. Gerszten, William E. Kraus, Jun Z. Li, Michael E. Miller, K. Sreekumaran Nair, Christopher Newgard, Eric A. Ortlund, Wei-Jun Qian, Russell Tracy, Martin J. Walsh, Matthew T. Wheeler, Karen P. Dalton, Trevor Hastie, Steven G. Hershman, Mihir Samdarshi, Christopher Teng, Rob Tibshirani, Elaine Cornell, Nicole Gagne, Sandy May, Brian Bouverat, Christiaan Leeuwenburgh, Ching-ju Lu, Marco Pahor, Fang-Chi Hsu, Scott Rushing, Michael P. Walkup, Barbara Nicklas, W. Jack Rejeski, John P. Williams, Ashley Xia, Brent G. Albertson, Elisabeth R. Barton, Frank W. Booth, Tiziana Caputo, Michael Cicha, Luis Gustavo Oliveira De Sousa, Roger Farrar, Andrea L. Hevener, Michael F. Hirshman, Bailey E. Jackson, Benjamin G. Ke, Kyle S. Kramer, Sarah J. Lessard, Nathan S. Makarewicz, Andrea G. Marshall, Pasquale Nigro, Scott Powers, Krithika Ramachandran, R. Scott Rector, Collyn Z-T. Richards, John Thyfault, Zhen Yan, Chongzhi Zang, Mary Anne S. Amper, Ali Tugrul Balci, Clarisa Chavez, Maria Chikina, Roxanne Chiu, Marina A. Gritsenko, Kristy Guevara, Joshua R. Hansen, Krista M. Hennig, Chia-Jui Hung, Chelsea Hutchinson-Bunch, Christopher A. Jin, Xueyun Liu, Kristal M. Maner-Smith, D. R. Mani, Nada Marjanovic, Matthew E. Monroe, Ronald J. Moore, Samuel G. Moore, Charles C. Mundorff, Daniel Nachun, Michael D. Nestor, German Nudelman, Cadence Pearce, Vladislav A. Petyuk, Hanna Pincas, Irene Ramos, Alexander Raskind, Stas Rirak, Jeremy M. Robbins, Aliza B. Rubenstein, Frederique Ruf-Zamojski, Tyler J. Sagendorf, Nitish Seenarine, Tanu Soni, Karan Uppal, Sindhu Vangeti, Mital Vasoya, Alexandria Vornholt, Xuechen Yu, Elena Zaslavsky, Navid Zebarjadi, Marcas Bamman, Bryan C. Bergman, Daniel H. Bessesen, Thomas W. Buford, Toby L. Chambers, Paul M. Coen, Dan Cooper, Fadia Haddad, Kishore Gadde, Bret H. Goodpaster, Melissa Harris, Kim M. Huffman, Catherine M. Jankowski, Neil M. Johannsen, Wendy M. Kohrt, Bridget Lester, Edward L. Melanson, Kerrie L. Moreau, Nicolas Musi, Robert L. Newton, Shlomit Radom-Aizik, Megan E. Ramaker, Tuomo Rankinen, Blake B. Rasmussen, Eric Ravussin, Irene E. Schauer, Robert S. Schwartz, Lauren M. Sparks, Anna Thalacker-Mercer, Scott Trappe, Todd A. Trappe, Elena Volpi
+**Journal:** Nature (2024)
+**DOI:** [10.1038/s41586-023-06877-w](https://doi.org/10.1038/s41586-023-06877-w)
+
+## Content
+
+AbstractRegular exercise promotes whole-body health and prevents disease, but the underlying molecular mechanisms are incompletely understood1–3. Here, the Molecular Transducers of Physical Activity Consortium4 profiled the temporal transcriptome, proteome, metabolome, lipidome, phosphoproteome, acetylproteome, ubiquitylproteome, epigenome and immunome in whole blood, plasma and 18 solid tissues in male and female Rattus norvegicus over eight weeks of endurance exercise training. The resulting data compendium encompasses 9,466 assays across 19 tissues, 25 molecular platforms and 4 training time points. Thousands of shared and tissue-specific molecular alterations were identified, with sex differences found in multiple tissues. Temporal multi-omic and multi-tissue analyses revealed expansive biological insights into the adaptive responses to endurance training, including widespread regulation of immune, metabolic, stress response and mitochondrial pathways. Many changes were relevant to human health, including non-alcoholic fatty liver disease, inflammatory bowel disease, cardiovascular health and tissue injury and recovery. The data and analyses presented in this study will serve as valuable resources for understanding and exploring the multi-tissue molecular effects of endurance training and are provided in a public repository (https://motrpac-data.org/).

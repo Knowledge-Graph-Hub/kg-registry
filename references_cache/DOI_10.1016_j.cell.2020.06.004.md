@@ -1,0 +1,212 @@
+---
+reference_id: DOI:10.1016/j.cell.2020.06.004
+title: "Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise"
+authors:
+- James A. Sanford
+- Christopher D. Nogiec
+- Malene E. Lindholm
+- Joshua N. Adkins
+- David Amar
+- Surendra Dasari
+- Jonelle K. Drugan
+- Facundo M. Fernández
+- Shlomit Radom-Aizik
+- Simon Schenk
+- Michael P. Snyder
+- Russell P. Tracy
+- Patrick Vanderboom
+- Scott Trappe
+- Martin J. Walsh
+- Joshua N. Adkins
+- David Amar
+- Surendra Dasari
+- Jonelle K. Drugan
+- Charles R. Evans
+- Facundo M. Fernandez
+- Yafeng Li
+- Malene E. Lindholm
+- Christopher D. Nogiec
+- Shlomit Radom-Aizik
+- James A. Sanford
+- Simon Schenk
+- Michael P. Snyder
+- Lyl Tomlinson
+- Russell P. Tracy
+- Scott Trappe
+- Patrick Vanderboom
+- Martin J. Walsh
+- D. Lee Alekel
+- Iddil Bekirov
+- Amanda T. Boyce
+- Josephine Boyington
+- Jerome L. Fleg
+- Lyndon J.O. Joseph
+- Maren R. Laughlin
+- Padma Maruvada
+- Stephanie A. Morris
+- Joan A. McGowan
+- Concepcion Nierras
+- Vinay Pai
+- Charlotte Peterson
+- Ed Ramos
+- Mary C. Roary
+- John P. Williams
+- Ashley Xia
+- Elaine Cornell
+- Jessica Rooney
+- Michael E. Miller
+- Walter T. Ambrosius
+- Scott Rushing
+- Cynthia L. Stowe
+- W. Jack Rejeski
+- Barbara J. Nicklas
+- Marco Pahor
+- Ching-ju Lu
+- Todd Trappe
+- Toby Chambers
+- Ulrika Raue
+- Bridget Lester
+- Bryan C. Bergman
+- David H. Bessesen
+- Catherine M. Jankowski
+- Wendy M. Kohrt
+- Edward L. Melanson
+- Kerrie L. Moreau
+- Irene E. Schauer
+- Robert S. Schwartz
+- William E. Kraus
+- Cris A. Slentz
+- Kim M. Huffman
+- Johanna L. Johnson
+- Leslie H. Willis
+- Leslie Kelly
+- Joseph A. Houmard
+- Gabriel Dubis
+- Nick Broskey
+- Bret H. Goodpaster
+- Lauren M. Sparks
+- Paul M. Coen
+- Dan M. Cooper
+- Fadia Haddad
+- Tuomo Rankinen
+- Eric Ravussin
+- Neil Johannsen
+- Melissa Harris
+- John M. Jakicic
+- Anne B. Newman
+- Daniel D. Forman
+- Erin Kershaw
+- Renee J. Rogers
+- Bradley C. Nindl
+- Lindsay C. Page
+- Maja Stefanovic-Racic
+- Susan L. Barr
+- Blake B. Rasmussen
+- Tatiana Moro
+- Doug Paddon-Jones
+- Elena Volpi
+- Heidi Spratt
+- Nicolas Musi
+- Sara Espinoza
+- Darpan Patel
+- Monica Serra
+- Jonathan Gelfond
+- Aisling Burns
+- Marcas M. Bamman
+- Thomas W. Buford
+- Gary R. Cutter
+- Sue C. Bodine
+- Karyn Esser
+- Rodger P. Farrar
+- Laurie J. Goodyear
+- Michael F. Hirshman
+- Brent G. Albertson
+- Wei-Jun Qian
+- Paul Piehowski
+- Marina A. Gritsenko
+- Matthew E. Monore
+- Vladislav A. Petyuk
+- Jason E. McDermott
+- Joshua N. Hansen
+- Chelsea Hutchison
+- Samuel Moore
+- David A. Gaul
+- Clary B. Clish
+- Julian Avila-Pacheco
+- Courtney Dennis
+- Manolis Kellis
+- Steve Carr
+- Pierre M. Jean-Beltran
+- Hasmik Keshishian
+- D.R. Mani
+- Karl Clauser
+- Karsten Krug
+- Charlie Mundorff
+- Cadence Pearce
+- Anna A. Ivanova
+- Eric A. Ortlund
+- Kristal Maner-Smith
+- Karan Uppal
+- Tiantian Zhang
+- Stuart C. Sealfon
+- Elena Zaslavsky
+- Venugopalan Nair
+- SiDe Li
+- Nimisha Jain
+- YongChao Ge
+- Yifei Sun
+- German Nudelman
+- Frederique Ruf-zamojski
+- Gregory Smith
+- Nhanna Pincas
+- Aliza Rubenstein
+- Mary Anne Amper
+- Nitish Seenarine
+- Tuuli Lappalainen
+- Ian R. Lanza
+- K. Sreekumaran Nair
+- Katherine Klaus
+- Stephen B. Montgomery
+- Kevin S. Smith
+- Nicole R. Gay
+- Bingqing Zhao
+- Chia-Jiu Hung
+- Navid Zebarjadi
+- Brunilda Balliu
+- Laure Fresard
+- Charles F. Burant
+- Jun Z. Li
+- Maureen Kachman
+- Tanu Soni
+- Alexander B. Raskind
+- Robert Gerszten
+- Jeremy Robbins
+- Olga Ilkayeva
+- Michael J. Muehlbauer
+- Christopher B. Newgard
+- Euan A. Ashley
+- Matthew T. Wheeler
+- David Jimenez-Morales
+- Archana Raja
+- Karen P. Dalton
+- Jimmy Zhen
+- Young Suk Kim
+- Jeffrey W. Christle
+- Shruti Marwaha
+- Elizabeth T. Chin
+- Steven G. Hershman
+- Trevor Hastie
+- Robert Tibshirani
+- Manuel A. Rivas
+journal: Cell
+year: '2020'
+doi: 10.1016/j.cell.2020.06.004
+content_type: unavailable
+---
+
+# Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise
+**Authors:** James A. Sanford, Christopher D. Nogiec, Malene E. Lindholm, Joshua N. Adkins, David Amar, Surendra Dasari, Jonelle K. Drugan, Facundo M. Fernández, Shlomit Radom-Aizik, Simon Schenk, Michael P. Snyder, Russell P. Tracy, Patrick Vanderboom, Scott Trappe, Martin J. Walsh, Joshua N. Adkins, David Amar, Surendra Dasari, Jonelle K. Drugan, Charles R. Evans, Facundo M. Fernandez, Yafeng Li, Malene E. Lindholm, Christopher D. Nogiec, Shlomit Radom-Aizik, James A. Sanford, Simon Schenk, Michael P. Snyder, Lyl Tomlinson, Russell P. Tracy, Scott Trappe, Patrick Vanderboom, Martin J. Walsh, D. Lee Alekel, Iddil Bekirov, Amanda T. Boyce, Josephine Boyington, Jerome L. Fleg, Lyndon J.O. Joseph, Maren R. Laughlin, Padma Maruvada, Stephanie A. Morris, Joan A. McGowan, Concepcion Nierras, Vinay Pai, Charlotte Peterson, Ed Ramos, Mary C. Roary, John P. Williams, Ashley Xia, Elaine Cornell, Jessica Rooney, Michael E. Miller, Walter T. Ambrosius, Scott Rushing, Cynthia L. Stowe, W. Jack Rejeski, Barbara J. Nicklas, Marco Pahor, Ching-ju Lu, Todd Trappe, Toby Chambers, Ulrika Raue, Bridget Lester, Bryan C. Bergman, David H. Bessesen, Catherine M. Jankowski, Wendy M. Kohrt, Edward L. Melanson, Kerrie L. Moreau, Irene E. Schauer, Robert S. Schwartz, William E. Kraus, Cris A. Slentz, Kim M. Huffman, Johanna L. Johnson, Leslie H. Willis, Leslie Kelly, Joseph A. Houmard, Gabriel Dubis, Nick Broskey, Bret H. Goodpaster, Lauren M. Sparks, Paul M. Coen, Dan M. Cooper, Fadia Haddad, Tuomo Rankinen, Eric Ravussin, Neil Johannsen, Melissa Harris, John M. Jakicic, Anne B. Newman, Daniel D. Forman, Erin Kershaw, Renee J. Rogers, Bradley C. Nindl, Lindsay C. Page, Maja Stefanovic-Racic, Susan L. Barr, Blake B. Rasmussen, Tatiana Moro, Doug Paddon-Jones, Elena Volpi, Heidi Spratt, Nicolas Musi, Sara Espinoza, Darpan Patel, Monica Serra, Jonathan Gelfond, Aisling Burns, Marcas M. Bamman, Thomas W. Buford, Gary R. Cutter, Sue C. Bodine, Karyn Esser, Rodger P. Farrar, Laurie J. Goodyear, Michael F. Hirshman, Brent G. Albertson, Wei-Jun Qian, Paul Piehowski, Marina A. Gritsenko, Matthew E. Monore, Vladislav A. Petyuk, Jason E. McDermott, Joshua N. Hansen, Chelsea Hutchison, Samuel Moore, David A. Gaul, Clary B. Clish, Julian Avila-Pacheco, Courtney Dennis, Manolis Kellis, Steve Carr, Pierre M. Jean-Beltran, Hasmik Keshishian, D.R. Mani, Karl Clauser, Karsten Krug, Charlie Mundorff, Cadence Pearce, Anna A. Ivanova, Eric A. Ortlund, Kristal Maner-Smith, Karan Uppal, Tiantian Zhang, Stuart C. Sealfon, Elena Zaslavsky, Venugopalan Nair, SiDe Li, Nimisha Jain, YongChao Ge, Yifei Sun, German Nudelman, Frederique Ruf-zamojski, Gregory Smith, Nhanna Pincas, Aliza Rubenstein, Mary Anne Amper, Nitish Seenarine, Tuuli Lappalainen, Ian R. Lanza, K. Sreekumaran Nair, Katherine Klaus, Stephen B. Montgomery, Kevin S. Smith, Nicole R. Gay, Bingqing Zhao, Chia-Jiu Hung, Navid Zebarjadi, Brunilda Balliu, Laure Fresard, Charles F. Burant, Jun Z. Li, Maureen Kachman, Tanu Soni, Alexander B. Raskind, Robert Gerszten, Jeremy Robbins, Olga Ilkayeva, Michael J. Muehlbauer, Christopher B. Newgard, Euan A. Ashley, Matthew T. Wheeler, David Jimenez-Morales, Archana Raja, Karen P. Dalton, Jimmy Zhen, Young Suk Kim, Jeffrey W. Christle, Shruti Marwaha, Elizabeth T. Chin, Steven G. Hershman, Trevor Hastie, Robert Tibshirani, Manuel A. Rivas
+**Journal:** Cell (2020)
+**DOI:** [10.1016/j.cell.2020.06.004](https://doi.org/10.1016/j.cell.2020.06.004)
+
+## Content
