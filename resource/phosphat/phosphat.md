@@ -45,8 +45,6 @@ products:
     source: phosphat
   product_url: https://phosphat.uni-hohenheim.de/Phosphat_20221017.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: Product
@@ -60,8 +58,6 @@ products:
     source: phosphat
   product_url: https://phosphat.uni-hohenheim.de/pepprotein_motif_2024.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
@@ -74,8 +70,6 @@ products:
     source: phosphat
   product_url: https://phosphat.uni-hohenheim.de/phosphat.html
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: GraphProduct

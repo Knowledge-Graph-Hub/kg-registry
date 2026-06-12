@@ -13997,7 +13997,6 @@
       "pd_st.obo",
       "pd_st.owl",
       "pgdso.owl",
-      "pharmacotherapydb.figshare",
       "pharos.api.docs",
       "pharos.docs",
       "phenio.model",
@@ -14126,7 +14125,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-06-12T16:52:37Z",
+  "generated_at": "2026-06-12T18:33:59Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 152,
     "with_evaluation_page": 127,
@@ -14134,10 +14133,10 @@
   },
   "links": {
     "broken_urls": 476,
-    "cache_hits": 3709,
+    "cache_hits": 3971,
     "cache_path": "cache/quality_url_status_cache.yml",
     "healthy_urls": 3495,
-    "live_checked_urls": 262,
+    "live_checked_urls": 0,
     "mode": "live",
     "total_unique_urls": 3971,
     "unchecked_urls": 0
@@ -14146,7 +14145,7 @@
     "missing_format": 973,
     "missing_original_source": 8,
     "missing_product_url": 96,
-    "retrieval_warning_mentions": 868,
+    "retrieval_warning_mentions": 522,
     "total": 7110
   },
   "resource_count": 858,
@@ -14527,7 +14526,7 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.embopress.org/doi/suppl/10.1038/msb.2011.26"
         },
@@ -14644,7 +14643,7 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://biomics.lab.nycu.edu.tw/dbSNO/download.php"
         },
@@ -14765,7 +14764,7 @@
         },
         {
           "sources": [
-            "live"
+            "cache"
           ],
           "url": "https://data.orthodb.org/v12/"
         },
@@ -14839,7 +14838,7 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.embopress.org/doi/suppl/10.1038/msb.2011.26"
         },
@@ -14931,7 +14930,7 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://www.embopress.org/doi/suppl/10.1038/msb.2011.26"
         }
@@ -15073,7 +15072,7 @@
         {
           "sources": [
             "warning",
-            "live"
+            "cache"
           ],
           "url": "https://biomics.lab.nycu.edu.tw/dbSNO/download.php"
         },

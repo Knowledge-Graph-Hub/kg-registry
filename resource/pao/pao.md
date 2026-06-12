@@ -35,12 +35,12 @@ products:
     source: pao
   product_url: http://purl.obolibrary.org/obo/pao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Plant Anatomy Ontology in OBO format
   format: obo
@@ -51,12 +51,10 @@ products:
     source: pao
   product_url: http://purl.obolibrary.org/obo/pao.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
+    when accessing file'
 publications: []
 taxon:
 - NCBITaxon:33090

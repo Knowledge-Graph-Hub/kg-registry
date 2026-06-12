@@ -33,8 +33,6 @@ products:
     source: bootstrep
   product_url: http://purl.obolibrary.org/obo/bootstrep.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
 publications: []

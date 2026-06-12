@@ -42,8 +42,6 @@ products:
     source: cpdb
   product_url: http://cpdb.molgen.mpg.de/download
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
 - category: ProgrammingInterface

@@ -77,8 +77,6 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: GraphProduct
@@ -104,8 +102,6 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/about
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
@@ -142,14 +138,14 @@ publications:
   - Siramshetty VB
   - Nguyen DT
   - Jensen LJ
-  - Vidović D
-  - Schürer SC
+  - "Vidovi\u0107 D"
+  - "Sch\xFCrer SC"
   - Holmes J
   - Sharma A
   - Pillai A
   - Bologa CG
   - Edwards L
-  - Mathé E
+  - "Math\xE9 E"
   - Oprea TI
   doi: 10.1093/nar/gkac1033
   id: doi:10.1093/nar/gkac1033
@@ -176,7 +172,7 @@ publications:
   - Overington J
   - Patel J
   - Rouillard AD
-  - Schürer S
+  - "Sch\xFCrer S"
   - Sheils T
   - Simeonov A
   - Sklar LA
@@ -201,16 +197,16 @@ publications:
   - Nguyen DT
   - Bologa CG
   - Jensen LJ
-  - Vidović D
+  - "Vidovi\u0107 D"
   - Koleti A
-  - Schürer SC
+  - "Sch\xFCrer SC"
   - Waller A
   - Yang JJ
   - Holmes J
   - Bocci G
   - Southall N
   - Dharuri H
-  - Mathé E
+  - "Math\xE9 E"
   - Simeonov A
   - Oprea TI
   doi: 10.1093/nar/gkaa993

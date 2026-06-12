@@ -9,7 +9,7 @@ original_source:
   source: go
 product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-05_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-12_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

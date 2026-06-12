@@ -11,8 +11,6 @@ product_url: http://phospho.elm.eu.org/pELMBlastSearch.html
 secondary_source:
 - relation_type: prov:wasInformedBy
   source: smart
-warnings:
-- File was not able to be retrieved when checked on 2026-06-05_ Timeout connecting
-  to URL
+warnings: []
 layout: product_detail
 ---

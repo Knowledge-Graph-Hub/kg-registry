@@ -40,8 +40,6 @@ products:
     source: netpath
   product_url: http://www.netpath.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 503 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 503 error
     when accessing file'
 - category: Product

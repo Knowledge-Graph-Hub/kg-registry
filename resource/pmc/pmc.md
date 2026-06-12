@@ -50,8 +50,6 @@ products:
     source: pmc
   product_url: https://pmc.ncbi.nlm.nih.gov/tools/openftlist
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 405 error
     when accessing file'
 - category: Product
@@ -65,8 +63,6 @@ products:
     source: pmc
   product_url: https://pmc.ncbi.nlm.nih.gov/tools/ftp/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 405 error
     when accessing file'
 - category: ProgrammingInterface

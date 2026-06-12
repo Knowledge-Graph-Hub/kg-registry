@@ -51,8 +51,6 @@ products:
     source: reconx
   product_url: https://www.vmh.life/#downloadview
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
 - category: Product

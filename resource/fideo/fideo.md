@@ -37,12 +37,12 @@ products:
     source: fideo
   product_url: http://purl.obolibrary.org/obo/fideo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
 - category: GraphProduct
   compression: gzip
   description: PharMeBINet V2 JSON release published on February 6, 2024.

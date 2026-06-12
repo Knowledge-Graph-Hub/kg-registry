@@ -60,12 +60,12 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
-    returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
+    when accessing file'
+  - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
+    returned HTTP 404 during curation on 2026-06-02.
 publications:
 - authors:
   - Mallory J. Owen

@@ -10,7 +10,7 @@ original_source:
   source: dc_cl
 product_url: http://purl.obolibrary.org/obo/dc_cl.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-05_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-12_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

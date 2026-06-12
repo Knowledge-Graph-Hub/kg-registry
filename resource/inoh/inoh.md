@@ -39,11 +39,6 @@ products:
     source: inoh
   product_url: http://www.inoh.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: Error connecting
-    to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
-    with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',
-    port=80): Failed to resolve ''www.inoh.org'' ([Errno -3] Temporary failure in
-    name resolution)"))'
   - 'File was not able to be retrieved when checked on 2026-06-12: Error connecting
     to URL: HTTPConnectionPool(host=''www.inoh.org'', port=80): Max retries exceeded
     with url: / (Caused by NameResolutionError("HTTPConnection(host=''www.inoh.org'',

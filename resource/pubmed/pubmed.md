@@ -266,12 +266,10 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Co-occurrence database generated from public PubMed abstracts with
     entity normalization for Biolink-relevant biomedical concepts
@@ -364,12 +362,10 @@ products:
     source: skos
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
-    out
-  - 'File was not able to be retrieved when checked on 2026-06-05: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-12: FTP error: timed
     out'
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
 - category: Product
   compression: gzip
   description: Links between MedGen concepts and PubMed articles with gzip compression
@@ -450,8 +446,8 @@ products:
   product_file_size: 96461
   product_url: https://forum.semantic-metabolomics.fr/.well-known/void
 - category: GraphProduct
-  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
-    (semantic themes)
+  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
+    \ relationships (semantic themes)"
   id: gnbr.graph
   name: GNBR graph
   original_source:
@@ -1041,8 +1037,6 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 500 error
     when accessing file'
 - category: Product

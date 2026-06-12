@@ -9,6 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: pharmacotherapydb
 product_url: https://doi.org/10.6084/m9.figshare.3103054
-warnings: []
+warnings:
+- File was not able to be retrieved when checked on 2026-06-12_ HTTP 202 error when
+  accessing file
 layout: product_detail
 ---

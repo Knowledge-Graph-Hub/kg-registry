@@ -9,6 +9,7 @@ name: EmeraldGraph JSON export
 original_source:
 - relation_type: prov:hadPrimarySource
   source: emeraldgraph
+product_file_size: 2283928
 product_url: https://github.com/ai4greenwashing/EmeraldMind/blob/main/graph_latest.json
 layout: product_detail
 ---
