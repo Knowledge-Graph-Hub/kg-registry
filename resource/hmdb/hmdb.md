@@ -50,6 +50,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   description: All metabolite metabolizing enzyme gene sequences (FASTA)
   format: fasta
@@ -61,6 +63,8 @@ products:
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolite structures (SDF)
@@ -76,6 +80,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   description: All metabolites dataset (XML)
   format: xml
@@ -1751,6 +1757,8 @@ products:
     source: pubchem
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Public library of pathway diagrams that can be browsed, viewed, and

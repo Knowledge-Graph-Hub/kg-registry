@@ -56,6 +56,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   description: sty Nodes TSV
   format: tsv

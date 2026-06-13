@@ -57,6 +57,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-03: HTTP 429 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+    when accessing file'
 - category: Product
   description: EMA regulatory source extract from the medic v1.0.1 release
   id: medi.ema

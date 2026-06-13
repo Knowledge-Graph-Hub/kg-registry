@@ -62,6 +62,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,
     organism, site, enzyme, relation identifiers, and publication evidence.
@@ -123,6 +125,8 @@ products:
     source: rlims-p
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 publications:
 - authors:

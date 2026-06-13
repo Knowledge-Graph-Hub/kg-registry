@@ -195,6 +195,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -206,6 +208,8 @@ products:
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -219,6 +223,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
@@ -231,6 +237,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
@@ -242,6 +250,8 @@ products:
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -257,6 +267,8 @@ products:
     HTTP 404 when checked on 2026-06-12.
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Image files of compounds, foods, and chemical structures
@@ -268,6 +280,8 @@ products:
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -281,6 +295,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS peak lists from FooDB.
@@ -292,6 +308,8 @@ products:
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -305,6 +323,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS peak lists from FooDB.
@@ -317,6 +337,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR peak lists from FooDB.
@@ -328,6 +350,8 @@ products:
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

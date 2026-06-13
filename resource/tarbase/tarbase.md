@@ -136,6 +136,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-01: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -553,8 +555,8 @@ publications:
   id: https://doi.org/10.1093/nar/gkad1071
   journal: Nucleic Acids Research
   preferred: true
-  title: "TarBase-v9.0 extends experimentally supported miRNA\u2013gene interactions\
-    \ to cell-types and virally encoded miRNAs"
+  title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to
+    cell-types and virally encoded miRNAs
   year: '2023'
 ---
 # TarBase

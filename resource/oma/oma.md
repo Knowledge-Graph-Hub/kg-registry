@@ -75,6 +75,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: OMA orthology groups in OrthoXML format
@@ -87,6 +89,8 @@ products:
   product_url: https://omabrowser.org/All/oma-groups.orthoXML.xml.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -101,6 +105,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Pairwise orthologs in tab-separated text format
@@ -113,6 +119,8 @@ products:
   product_url: https://omabrowser.org/All/oma-pairs.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -127,6 +135,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -139,6 +149,8 @@ products:
   product_url: https://omabrowser.org/All/eukaryotes.cdna.fa.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -153,6 +165,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: cDNA sequences for viral genomes in FASTA format
@@ -165,6 +179,8 @@ products:
   product_url: https://omabrowser.org/All/viruses.cdna.fa.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   compression: targz
@@ -179,6 +195,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: Protein annotations in text format
@@ -192,6 +210,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   description: OMA Browser database in HDF5 format
   format: hdf5
@@ -203,6 +223,8 @@ products:
   product_url: https://omabrowser.org/All/OmaServer.h5
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   description: Suffix index for the OMA Browser HDF5 database
@@ -216,6 +238,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: targz
   description: OMA data in RDF format (Turtle syntax)
@@ -228,6 +252,8 @@ products:
   product_url: https://omabrowser.org/All/oma-rdf-turtle.tgz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: gzip
@@ -244,6 +270,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Ensembl identifiers
@@ -258,6 +286,8 @@ products:
   product_url: https://omabrowser.org/All/oma-ensembl.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: gzip
@@ -274,6 +304,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Entrez Gene identifiers
@@ -288,6 +320,8 @@ products:
   product_url: https://omabrowser.org/All/oma-entrez.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: gzip
@@ -304,6 +338,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Species metadata including taxonomy identifiers and genome source information
   format: txt
@@ -315,6 +351,8 @@ products:
   product_url: https://omabrowser.org/All/oma-species.txt
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -328,6 +366,8 @@ products:
   product_url: https://omabrowser.org/All/group-descriptions.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 publications:
 - id: https://doi.org/10.1093/nar/gkad1020

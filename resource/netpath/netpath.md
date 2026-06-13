@@ -42,6 +42,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 503 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 503 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PC v14 integrated BioPAX Level 3 unified model containing normalized

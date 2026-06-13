@@ -46,6 +46,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
 - category: Product
   description: DepMap all-data downloads page where current Achilles and related dependency
     datasets are released.
@@ -60,6 +62,8 @@ products:
   product_url: https://depmap.org/portal/download/all/
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
     when accessing file'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
