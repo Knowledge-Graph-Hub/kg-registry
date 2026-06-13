@@ -242,6 +242,56 @@ Content
         mod.validate_markdown(SimpleNamespace(files=[str(md_path)]))
 
 
+def test_validate_markdown_can_warn_on_publication_reference_errors(
+    extract_metadata_module,
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    mod = extract_metadata_module
+    resource_dir = tmp_path / "tmpres"
+    resource_dir.mkdir()
+    md_path = resource_dir / "tmpres.md"
+    md_path.write_text(
+        """---
+id: tmpres
+layout: resource_detail
+category: DataSource
+name: Temp Resource
+domains:
+  - biomedical
+publications:
+  - id: PMID:12345
+products:
+  - id: tmpres.product
+    category: Product
+    name: Minimal Product
+---
+
+Content
+"""
+    )
+
+    monkeypatch.setattr(mod, "validate", lambda **_: SimpleNamespace(results=[]))
+
+    def fake_validate_publication_references(*args, **kwargs):
+        return SimpleNamespace(errors=["publication mismatch"], warnings=["publication warning"])
+
+    monkeypatch.setattr(
+        mod,
+        "validate_publication_references",
+        fake_validate_publication_references,
+    )
+
+    mod.validate_markdown(
+        SimpleNamespace(
+            files=[str(md_path)],
+            warn_publication_reference_validation=True,
+            skip_publication_reference_validation=False,
+            no_reference_validation_cache=True,
+        )
+    )
+
+
 def test_validate_markdown_can_remove_invalid_publications(
     extract_metadata_module,
     monkeypatch: pytest.MonkeyPatch,

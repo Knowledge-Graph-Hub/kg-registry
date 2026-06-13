@@ -273,7 +273,7 @@ endif
 # But don't show the whole command because it is very long
 # These commands need the combined schema to be built first
 extract-metadata: tmp/resource-files.txt $(SOURCE_SCHEMA_ALL)
-	@$(RUN) ./util/extract-metadata.py validate @$<
+	@$(RUN) ./util/extract-metadata.py validate --warn-publication-reference-validation @$<
 
 prettify: tmp/resource-files.txt $(SOURCE_SCHEMA_ALL)
 	@$(RUN) ./util/extract-metadata.py prettify @$<
