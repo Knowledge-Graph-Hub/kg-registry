@@ -546,6 +546,7 @@ publications:
   - Jingfa Xiao
   - Zhang Zhang
   - Lina Ma
+  doi: 10.1093/nar/gkac999
   id: https://doi.org/10.1093/nar/gkac999
   journal: Nucleic Acids Research
   preferred: true
@@ -560,6 +561,7 @@ publications:
   - Dahai Zou
   - Vladimir B. Bajic
   - Zhang Zhang
+  doi: 10.1093/nar/gky960
   id: https://doi.org/10.1093/nar/gky960
   journal: Nucleic Acids Research
   title: 'LncBook: a curated knowledgebase of human long non-coding RNAs'
