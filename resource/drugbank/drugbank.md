@@ -2907,12 +2907,80 @@ products:
     source: opentargets
   product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
 publications:
-- id: https://doi.org/10.1093/nar/gkad976
+- authors:
+  - Craig Knox
+  - Mike Wilson
+  - Christen M Klinger
+  - Mark Franklin
+  - Eponine Oler
+  - Alex Wilson
+  - Allison Pon
+  - Jordan Cox
+  - Na Eun (Lucy) Chin
+  - Seth A Strawbridge
+  - Marysol Garcia-Patino
+  - Ray Kruger
+  - Aadhavya Sivakumaran
+  - Selena Sanford
+  - Rahil Doshi
+  - Nitya Khetarpal
+  - Omolola Fatokun
+  - Daphnee Doucet
+  - Ashley Zubkowski
+  - Dorsa Yahya Rayat
+  - Hayley Jackson
+  - Karxena Harford
+  - Afia Anjum
+  - Mahi Zakir
+  - Fei Wang
+  - Siyang Tian
+  - Brian Lee
+  - Jaanus Liigand
+  - Harrison Peters
+  - Ruo Qi (Rachel) Wang
+  - Tue Nguyen
+  - Denise So
+  - Matthew Sharp
+  - Rodolfo da Silva
+  - Cyrella Gabriel
+  - Joshua Scantlebury
+  - Marissa Jasinski
+  - David Ackerman
+  - Timothy Jewison
+  - Tanvir Sajed
+  - Vasuk Gautam
+  - David S Wishart
+  doi: 10.1093/nar/gkad976
+  id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research
   preferred: true
   title: DrugBank 6.0 - The DrugBank Knowledgebase for 2024
   year: '2024'
-- id: https://doi.org/10.1093/nar/gkx1037
+- authors:
+  - David S Wishart
+  - Yannick D Feunang
+  - An C Guo
+  - Elvis J Lo
+  - Ana Marcu
+  - Jason R Grant
+  - Tanvir Sajed
+  - Daniel Johnson
+  - Carin Li
+  - Zinat Sayeeda
+  - Nazanin Assempour
+  - Ithayavani Iynkkaran
+  - Yifeng Liu
+  - Adam Maciejewski
+  - Nicola Gale
+  - Alex Wilson
+  - Lucy Chin
+  - Ryan Cummings
+  - Diana Le
+  - Allison Pon
+  - Craig Knox
+  - Michael Wilson
+  doi: 10.1093/nar/gkx1037
+  id: https://doi.org/10.1093/nar/gkx1037
   journal: Nucleic Acids Research
   title: DrugBank 5.0 - A major update to the DrugBank database for 2018
   year: '2018'
