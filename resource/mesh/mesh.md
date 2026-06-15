@@ -1856,6 +1856,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
+publications:
+- authors:
+  - Lipscomb CE
+  id: https://www.ncbi.nlm.nih.gov/pubmed/10928714
+  journal: Bull Med Libr Assoc
+  title: Medical Subject Headings (MeSH).
+  year: '2000'
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
 ---
 # Medical Subject Headings (MeSH)
