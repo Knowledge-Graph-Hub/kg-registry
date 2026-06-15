@@ -2197,11 +2197,45 @@ products:
   - relation_type: prov:used
     source: doid
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
-  title: 'Disease Ontology 2015 update: an expanded and updated database of human
-    diseases for linking biomedical knowledge through disease data'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+- authors:
+  - Kibbe WA
+  - Arze C
+  - Felix V
+  - Mitraka E
+  - Bolton E
+  - Fu G
+  - Mungall CJ
+  - Binder JX
+  - Malone J
+  - Vasant D
+  - Parkinson H
+  - Schriml LM
+  doi: 10.1093/nar/gku1011
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
+  journal: Nucleic Acids Res
+  title: 'Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data'
+  year: '2015'
+- authors:
+  - Schriml LM
+  - Munro JB
+  - Schor M
+  - Olley D
+  - McCracken C
+  - Felix V
+  - Baron JA
+  - Jackson R
+  - Bello SM
+  - Bearer C
+  - Lichenstein R
+  - Bisordi K
+  - Dialo NC
+  - Giglio M
+  - Greene C
+  doi: 10.1093/nar/gkab1063
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+  journal: Nucleic Acids Res
   title: The Human Disease Ontology 2022 update
+  year: '2022'
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 taxon:
 - NCBITaxon:9606
