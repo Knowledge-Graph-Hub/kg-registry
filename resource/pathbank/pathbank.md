@@ -553,13 +553,54 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- doi: 10.1093/nar/gkad1041
+- authors:
+  - David S Wishart
+  - Ray Kruger
+  - Aadhavya Sivakumaran
+  - Karxena Harford
+  - Selena Sanford
+  - Rahil Doshi
+  - Nitya Khetarpal
+  - Omolola Fatokun
+  - Daphnee Doucet
+  - Ashley Zubkowski
+  - Hayley Jackson
+  - Gina Sykes
+  - Miguel Ramirez-Gaona
+  - Ana Marcu
+  - Carin Li
+  - Kristen Yee
+  - Christiana Garros
+  - Dorsa Yahya Rayat
+  - Jeanne Coleongco
+  - Tharuni Nandyala
+  - Vasuk Gautam
+  - Eponine Oler
+  doi: 10.1093/nar/gkad1041
   id: doi:10.1093/nar/gkad1041
   journal: Nucleic Acids Research
   preferred: true
   title: PathBank 2.0-the pathway database for model organism metabolomics
   year: '2024'
-- doi: 10.1093/nar/gkz861
+- authors:
+  - David S Wishart
+  - Carin Li
+  - Ana Marcu
+  - Hasan Badran
+  - Allison Pon
+  - Zachary Budinski
+  - Jonas Patron
+  - Debra Lipton
+  - Xuan Cao
+  - Eponine Oler
+  - Krissa Li
+  - Maïlys Paccoud
+  - Chelsea Hong
+  - An C Guo
+  - Christopher Chan
+  - William Wei
+  - Miguel Ramirez-Gaona
+  doi: 10.1093/nar/gkz861
   id: doi:10.1093/nar/gkz861
   journal: Nucleic Acids Research
   title: 'PathBank: A Comprehensive Pathway Database for Model Organisms'
