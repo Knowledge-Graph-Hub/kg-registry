@@ -3263,10 +3263,38 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- id: https://doi.org/10.1093/nar/gkaf1271
+- authors:
+  - Adnan Malik
+  - Muhammad Arsalan
+  - Carlos Moreno
+  - Juan Mosquera
+  - Eloy Félix
+  - Tevfik Kizilören
+  - Venkatesh Muthukrishnan
+  - Barbara Zdrazil
+  - Andrew R Leach
+  - Noel M O’Boyle
+  doi: 10.1093/nar/gkaf1271
+  id: https://doi.org/10.1093/nar/gkaf1271
+  journal: Nucleic Acids Research
   title: 'ChEBI: re-engineered for a sustainable future'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
+  year: '2026'
+- authors:
+  - Hastings J
+  - Owen G
+  - Dekker A
+  - Ennis M
+  - Kale N
+  - Muthukrishnan V
+  - Turner S
+  - Swainston N
+  - Mendes P
+  - Steinbeck C
+  doi: 10.1093/nar/gkv1031
+  id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
+  journal: Nucleic Acids Res
   title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
+  year: '2016'
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ## Description
