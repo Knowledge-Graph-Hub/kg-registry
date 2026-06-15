@@ -99,13 +99,355 @@ products:
     source: finngen
   product_url: https://www.finngen.fi/en/researchers/clinical-endpoints
 publications:
-- doi: 10.1038/s41588-024-01975-5
+- authors:
+  - Sean J. Jurgens
+  - Joel T. Rämö
+  - Daria R. Kramarenko
+  - Leonoor F. J. M. Wijdeveld
+  - Jan Haas
+  - Mark D. Chaffin
+  - Sophie Garnier
+  - Liam Gaziano
+  - Lu-Chen Weng
+  - Alex Lipov
+  - Sean L. Zheng
+  - Albert Henry
+  - Jennifer E. Huffman
+  - Saketh Challa
+  - Frank Rühle
+  - Carmen Diaz Verdugo
+  - Christian Krijger Juárez
+  - Shinwan Kany
+  - Constance A. van Orsouw
+  - Kiran Biddinger
+  - Edwin Poel
+  - Amanda L. Elliott
+  - Xin Wang
+  - Catherine Francis
+  - Richard Ruan
+  - Satoshi Koyama
+  - Leander Beekman
+  - Dominic S. Zimmerman
+  - Jean-François Deleuze
+  - Eric Villard
+  - David-Alexandre Trégouët
+  - Richard Isnard
+  - Dorret I. Boomsma
+  - Eco J. C. de Geus
+  - Rafik Tadros
+  - Yigal M. Pinto
+  - Arthur A. M. Wilde
+  - Jouke-Jan Hottenga
+  - Juha Sinisalo
+  - Teemu Niiranen
+  - Roddy Walsh
+  - Amand F. Schmidt
+  - Seung Hoan Choi
+  - Kyong-Mi Chang
+  - Philip S. Tsao
+  - Paul M. Matthews
+  - James S. Ware
+  - R. Thomas Lumbers
+  - Saskia van der Crabben
+  - Jari Laukkanen
+  - Aarno Palotie
+  - Ahmad S. Amin
+  - Philippe Charron
+  - Benjamin Meder
+  - Patrick T. Ellinor
+  - Mark Daly
+  - Krishna G. Aragam
+  - Connie R. Bezzina
+  doi: 10.1038/s41588-024-01975-5
   id: doi:10.1038/s41588-024-01975-5
-  title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy
-    and myocardial resilience
+  journal: Nature Genetics
+  title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy and myocardial resilience
   year: '2024'
-- doi: 10.1038/s41588-025-02100-w
+- authors:
+  - Vilma Lammi
+  - Tomoko Nakanishi
+  - Samuel E. Jones
+  - Shea J. Andrews
+  - Juha Karjalainen
+  - Beatriz Cortés
+  - Heath E. O’Brien
+  - Ana Ochoa-Guzman
+  - Brian E. Fulton-Howard
+  - Martin Broberg
+  - Hele H. Haapaniemi
+  - Masahiro Kanai
+  - Matti Pirinen
+  - Axel Schmidt
+  - Ruth E. Mitchell
+  - Abdou Mousas
+  - Massimo Mangino
+  - Alicia Huerta-Chagoya
+  - Nasa Sinnott-Armstrong
+  - Elizabeth T. Cirulli
+  - Marc Vaudel
+  - Alex S. F. Kwong
+  - Amit K. Maiti
+  - Minttu M. Marttila
+  - Daniel C. Posner
+  - Alexis A. Rodriguez
+  - Chiara Batini
+  - Francesca Minnai
+  - Anna R. Dearman
+  - C. A. Robert Warmerdam
+  - Celia B. Sequeros
+  - Thomas W. Winkler
+  - Daniel M. Jordan
+  - Raimonds Rešcenko
+  - Lorenzo Miano
+  - Jacqueline M. Lane
+  - Ryan K. Chung
+  - Beatriz Guillen-Guio
+  - Olivia C. Leavy
+  - Laura Carvajal-Silva
+  - Kevin Aguilar-Valdés
+  - Erika Frangione
+  - Lindsay Guare
+  - Ekaterina Vergasova
+  - Eirini Marouli
+  - Pasquale Striano
+  - Ummu Afeera Zainulabid
+  - Ashutosh Kumar
+  - Hajar Fauzan Ahmad
+  - Ryuya Edahiro
+  - Shuhei Azekawa
+  - Mari E. K. Niemi
+  - Janick St-Cyr
+  - Darin Adra
+  - Madeleine Durand
+  - David Bujold
+  - Guillaume Bourque
+  - Ariane Boisclair
+  - Mylene Bertrand
+  - Daniel Auld
+  - Laetitia Laurent
+  - Solomia Yanishevsky
+  - G. Mark Lathrop
+  - Fangyi Shi
+  - Simon Rousseau
+  - Jiannis Ragoussis
+  - Danielle Perley
+  - Vincent Mooser
+  - David R. Morrison
+  - Daniella Balla
+  - Julia Heggemann
+  - Sonja Schultz
+  - Pari Behzad
+  - Markus M. Nöthen
+  - Abigail Miller
+  - Max C. Pensel
+  - Carlo Maj
+  - Kelly Cho
+  - Tianxi Cai
+  - Sudha K. Iyengar
+  - Carlos A. Aguilar Salinas
+  - Seung Hyuk T. Lee
+  - Hortensia Moreno-Macias
+  - Päivi Pajukanta
+  - Michelle Duran-Gomez
+  - Lill Trogstad
+  - Daniel J. Rader
+  - Marylyn D. Ritchie
+  - Anurag Verma
+  - Colleen M. Kripke
+  - Sergi Papiol
+  - Jens Wiltfang
+  - Jochen Schneider
+  - Thomas G. Schulze
+  - Christof Winter
+  - Ewa Wallin
+  - Robert Frithiof
+  - Fanny Senner
+  - Christoph D. Spinner
+  - Ulrike Protzer
+  - Mattia Cordioli
+  - Nikola S. Mueller
+  - Andreas Dinkel
+  - Janos L. Kalman
+  - Tomislav Maricic
+  - Kristina Adorjan
+  - Miklos Lipcsey
+  - Lisa Fricke
+  - Ing-Marie Larsson
+  - Urs Heilbronner
+  - Monika Budde
+  - Johanna Erber
+  - Nicholas R. Harvey
+  - Vince Forgetta
+  - Benedict Hignell
+  - Yolanda Espinosa-Parrilla
+  - Juan M. Saez Hidalgo
+  - Estefania Nova-Lamperti
+  - Scarlett Gutiérrez-Richards
+  - Gerardo Donoso
+  - Leslie C. Cerpa
+  - Cesar A. Echeverria
+  - Camilo Cabrera
+  - Pamela Bocchieri
+  - Macarena Fuentes-Guajardo
+  - Christian A. Muñoz
+  - Karen Y. Oróstica
+  - Alvaro Figueroa
+  - Lissette G. Guajardo
+  - Iskra A. Signore
+  - Virginia A. Monardes-Ramírez
+  - Eduardo A. Tobar-Calfucoy
+  - Luis A. Quiñones
+  - Cristian E. Yáñez
+  - Daniela Zapata-Contreras
+  - Paula Zuñiga-Pacheco
+  - Romina Quiroga
+  - Matías F. Martínez
+  - Teresa A. Alarcon
+  - Andrea X. Silva
+  - Carolina S. Selman
+  - Sergio Sanhueza
+  - Rocío Retamales-Ortega
+  - Tamara V. Arévalo
+  - Eduardo Lamoza
+  - Héctor Valenzuela-Jorquera
+  - Maria Sophia Donaire
+  - Sannidhi Sarvadhavabhatla
+  - Sisse R. Ostrowski
+  - Søren Brunak
+  - David Westergaard
+  - Bjarke Feenstra
+  - Anne Sofie B. Mortensen
+  - Anna L. Guyatt
+  - Rafael de Cid
+  - Susana Iraola-Guzmán
+  - Gemma Moncunill
+  - Alba Blasco
+  - Judith Garcia-Aymerich
+  - Natalia Blay
+  - Carlota Dobaño
+  - Anna Carreras
+  - Xavier Farré
+  - Manolis Kogevinas
+  - Gemma Castaño-Vinyals
+  - Simone Furini
+  - Chiara Fallerini
+  - Kristina Zguro
+  - Margherita Baldassarri
+  - Francesca Colombo
+  - Thompson Hannah
+  - Anna Ilinskaya
+  - Michil Trofimov
+  - Layal Shaheen
+  - Nikolay Plotnikov
+  - Anna Kim
+  - Dmitrii Kharitonov
+  - Valery Ilinsky
+  - Alexei Kamelin
+  - Francisco Tanudjaja
+  - Efren Sandoval
+  - Nicole L. Washington
+  - Simon White
+  - Iva Neveux
+  - Shaun Dabe
+  - Alexandre Bolze
+  - Kelly M. Schiabor Barrett
+  - Eirini Christaki
+  - Haralampos Milionis
+  - Ioanna Tzoulaki
+  - Angelos Liontos
+  - Evangelos Evangelou
+  - Evangelia Ntzani
+  - Rasoul Aliannejad
+  - Vahideh Zarei
+  - Nastaran Soltani
+  - Bahareh Sharififard
+  - Hengameh Ansari Tadi
+  - Ali Amirsavadkouhi
+  - Ho NamKoong
+  - Ryan C. Thompson
+  - Alexander W. Charney
+  - Laura G. Sloofman
+  - Nicole W. Simons
+  - Olga Vishnyakova
+  - Xu Xinyi
+  - Jennifer Taher
+  - Lloyd T. Elliott
+  - Vita Rovite
+  - Peculis Raitis
+  - Monta Briviba
+  - Janis Klovinš
+  - Richa Saxena
+  - Angus C. Burns
+  - Jakob M. Cherry
+  - Matthew Maher
+  - Arne Kukkonen
+  - Mauro Tettamanti
+  - Luisa Ronzoni
+  - Daniele Prati
+  - Flora Peyvandi
+  - Rossana Carpani
+  - Antonio Muscatello
+  - Sara Margarita
+  - Francesco Malvestiti
+  - Giuseppe Lamorte
+  - Marco Mantero
+  - Andre Franke
+  - David Ellinghaus
+  - Nathalie Iannotti
+  - Nicola Montano
+  - Alessandro Nobili
+  - Frauke Degenhardt
+  - Alessandra Bandera
+  - Fabio Blandini
+  - Francesco Bruno Arturo Blasi
+  - Tom Hemming Karlsen
+  - Shiuh-Wen Luoh
+  - Christian Erikstrup
+  - Ole B. V. Pedersen
+  - Jordan Lerner-Ellis
+  - Alicia Colombo
+  - Joseph J. Grzymski
+  - Makoto Ishii
+  - Yukinori Okada
+  - Noam D. Beckmann
+  - Meena Kumari
+  - Ralf Wagner
+  - Iris M. Heid
+  - Catherine John
+  - Patrick J. Short
+  - Per Magnus
+  - Laura Ansone
+  - Luca V. C. Valenti
+  - Sulggi A. Lee
+  - Louise V. Wain
+  - Ricardo A. Verdugo
+  - Karina Banasik
+  - Frank Geller
+  - Lude H. Franke
+  - Alexander Rakitko
+  - Emma L. Duncan
+  - Alessandra Renieri
+  - Konstantinos K. Tsilidis
+  - Rafael de Cid
+  - Ahmadreza Niavarani
+  - Erik Abner
+  - Teresa Tusié-Luna
+  - Shefali S. Verma
+  - George Davey Smith
+  - Nicholas J. Timpson
+  - Ravi K. Madduri
+  - Kelly Cho
+  - Mark J. Daly
+  - Andrea Ganna
+  - Eva C. Schulte
+  - J. Brent Richards
+  - Kerstin U. Ludwig
+  - Michael Marks-Hultström
+  - Hugo Zeberg
+  - Hanna M. Ollila
+  doi: 10.1038/s41588-025-02100-w
   id: doi:10.1038/s41588-025-02100-w
+  journal: Nature Genetics
   title: Genome-wide association study of long COVID
   year: '2025'
 taxon:
