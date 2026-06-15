@@ -51,25 +51,48 @@ repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
 taxon:
 - NCBITaxon:10088
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
-  title: An internet-accessible database of mouse developmental anatomy based on a
-    systematic nomenclature
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23972281
+- authors:
+  - Bard JL
+  - Kaufman MH
+  - Dubreuil C
+  - Brune RM
+  - Burger A
+  - Baldock RA
+  - Davidson DR
+  doi: 10.1016/s0925-4773(98)00069-0
+  id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
+  journal: Mech Dev
+  title: An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature
+  year: '1998'
+- authors:
+  - Hayamizu TF
+  - Wicks MN
+  - Davidson DR
+  - Burger A
+  - Ringwald M
+  - Baldock RA
+  doi: 10.1186/2041-1480-4-15
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23972281
+  journal: J Biomed Semantics
   title: 'EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
-  title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating
-    Biomedical Data'
-- id: doi:10.1016/B978-0-12-800043-4.00023-3
-  doi: 10.1016/B978-0-12-800043-4.00023-3
-  title: Textual Anatomics
-  authors:
+  year: '2013'
+- authors:
+  - Hayamizu TF
+  - Baldock RA
+  - Ringwald M
+  doi: 10.1007/s00335-015-9584-9
+  id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
+  journal: Mamm Genome
+  title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data'
+  year: '2015'
+- authors:
   - Terry F. Hayamizu
   - Martin Ringwald
+  doi: 10.1016/B978-0-12-800043-4.00023-3
+  id: doi:10.1016/B978-0-12-800043-4.00023-3
   journal: Kaufman's Atlas of Mouse Development Supplement
+  title: Textual Anatomics
   year: '2016'
-- id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
-  title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
-    Expression Database for Mouse Development (GXD)'
 ---
 ## Description
 
