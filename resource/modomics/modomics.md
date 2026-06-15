@@ -509,39 +509,41 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Cappannini A
-      - Ray A
-      - Purta E
-      - Mukherjee S
-      - Boccaletto P
-      - Moafinejad SN
-      - Lechner A
-      - Barchet C
-      - Klaholz BP
-      - Stefaniak F
-      - Bujnicki JM
-    id: https://doi.org/10.1093/nar/gkad1083
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'MODOMICS: a database of RNA modifications and related information. 2023 update'
-    year: '2024'
-  - authors:
-      - Boccaletto P
-      - Stefaniak F
-      - Ray A
-      - Cappannini A
-      - Mukherjee S
-      - Purta E
-      - Kurkowska M
-      - Shirvanizadeh N
-      - Destefanis E
-      - Groza P
-    id: https://doi.org/10.1093/nar/gkab1083
-    journal: Nucleic Acids Research
-    preferred: false
-    title: 'MODOMICS: a database of RNA modification pathways. 2021 update'
-    year: '2022'
+- authors:
+  - Cappannini A
+  - Ray A
+  - Purta E
+  - Mukherjee S
+  - Boccaletto P
+  - Moafinejad SN
+  - Lechner A
+  - Barchet C
+  - Klaholz BP
+  - Stefaniak F
+  - Bujnicki JM
+  doi: 10.1093/nar/gkad1083
+  id: https://doi.org/10.1093/nar/gkad1083
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'MODOMICS: a database of RNA modifications and related information. 2023 update'
+  year: '2024'
+- authors:
+  - Boccaletto P
+  - Stefaniak F
+  - Ray A
+  - Cappannini A
+  - Mukherjee S
+  - Purta E
+  - Kurkowska M
+  - Shirvanizadeh N
+  - Destefanis E
+  - Groza P
+  doi: 10.1093/nar/gkab1083
+  id: https://doi.org/10.1093/nar/gkab1083
+  journal: Nucleic Acids Research
+  preferred: false
+  title: 'MODOMICS: a database of RNA modification pathways. 2021 update'
+  year: '2022'
 taxon:
   - NCBITaxon:9606
 ---
