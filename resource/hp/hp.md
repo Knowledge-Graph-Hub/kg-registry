@@ -4358,16 +4358,171 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
-  title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human
-    hereditary disease.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/26119816
+- authors:
+  - Robinson PN
+  - Köhler S
+  - Bauer S
+  - Seelow D
+  - Horn D
+  - Mundlos S
+  doi: 10.1016/j.ajhg.2008.09.017
+  id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
+  journal: Am J Hum Genet
+  title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease.'
+  year: '2008'
+- authors:
+  - Groza T
+  - Köhler S
+  - Moldenhauer D
+  - Vasilevsky N
+  - Baynam G
+  - Zemojtel T
+  - Schriml LM
+  - Kibbe WA
+  - Schofield PN
+  - Beck T
+  - Vasant D
+  - Brookes AJ
+  - Zankl A
+  - Washington NL
+  - Mungall CJ
+  - Lewis SE
+  - Haendel MA
+  - Parkinson H
+  - Robinson PN
+  doi: 10.1016/j.ajhg.2015.05.020
+  id: https://www.ncbi.nlm.nih.gov/pubmed/26119816
+  journal: Am J Hum Genet
   title: 'The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24217912
-  title: 'The Human Phenotype Ontology project: linking molecular biology and disease
-    through phenotype data.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
+  year: '2015'
+- authors:
+  - Köhler S
+  - Doelken SC
+  - Mungall CJ
+  - Bauer S
+  - Firth HV
+  - Bailleul-Forestier I
+  - Black GC
+  - Brown DL
+  - Brudno M
+  - Campbell J
+  - FitzPatrick DR
+  - Eppig JT
+  - Jackson AP
+  - Freson K
+  - Girdea M
+  - Helbig I
+  - Hurst JA
+  - Jähn J
+  - Jackson LG
+  - Kelly AM
+  - Ledbetter DH
+  - Mansour S
+  - Martin CL
+  - Moss C
+  - Mumford A
+  - Ouwehand WH
+  - Park SM
+  - Riggs ER
+  - Scott RH
+  - Sisodiya S
+  - Van Vooren S
+  - Wapner RJ
+  - Wilkie AO
+  - Wright CF
+  - Vulto-van Silfhout AT
+  - de Leeuw N
+  - de Vries BB
+  - Washingthon NL
+  - Smith CL
+  - Westerfield M
+  - Schofield P
+  - Ruef BJ
+  - Gkoutos GV
+  - Haendel M
+  - Smedley D
+  - Lewis SE
+  - Robinson PN
+  doi: 10.1093/nar/gkt1026
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24217912
+  journal: Nucleic Acids Res
+  title: 'The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data.'
+  year: '2014'
+- authors:
+  - Köhler S
+  - Carmody L
+  - Vasilevsky N
+  - Jacobsen JOB
+  - Danis D
+  - Gourdine JP
+  - Gargano M
+  - Harris NL
+  - Matentzoglu N
+  - McMurry JA
+  - Osumi-Sutherland D
+  - Cipriani V
+  - Balhoff JP
+  - Conlin T
+  - Blau H
+  - Baynam G
+  - Palmer R
+  - Gratian D
+  - Dawkins H
+  - Segal M
+  - Jansen AC
+  - Muaz A
+  - Chang WH
+  - Bergerson J
+  - Laulederkind SJF
+  - Yüksel Z
+  - Beltran S
+  - Freeman AF
+  - Sergouniotis PI
+  - Durkin D
+  - Storm AL
+  - Hanauer M
+  - Brudno M
+  - Bello SM
+  - Sincan M
+  - Rageth K
+  - Wheeler MT
+  - Oegema R
+  - Lourghi H
+  - Della Rocca MG
+  - Thompson R
+  - Castellanos F
+  - Priest J
+  - Cunningham-Rundles C
+  - Hegde A
+  - Lovering RC
+  - Hajek C
+  - Olry A
+  - Notarangelo L
+  - Similuk M
+  - Zhang XA
+  - Gómez-Andrés D
+  - Lochmüller H
+  - Dollfus H
+  - Rosenzweig S
+  - Marwaha S
+  - Rath A
+  - Sullivan K
+  - Smith C
+  - Milner JD
+  - Leroux D
+  - Boerkoel CF
+  - Klion A
+  - Carter MC
+  - Groza T
+  - Smedley D
+  - Haendel MA
+  - Mungall C
+  - Robinson PN
+  doi: 10.1093/nar/gky1105
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
+  journal: Nucleic Acids Res
   title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.
+  year: '2019'
 repository: https://github.com/obophenotype/human-phenotype-ontology
 taxon:
 - NCBITaxon:9606
