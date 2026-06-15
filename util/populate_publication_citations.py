@@ -107,13 +107,18 @@ def load_front_matter(path: Path) -> dict:
 def cache_for_publication(publication: dict, cache_dir: Path) -> dict | None:
     """Return cached reference front matter for a publication, or ``None``.
 
-    The reference id is derived from the publication's ``doi`` (preferred) or
-    ``id`` using the validator's :func:`normalize_reference_id`, then mapped to a
+    The reference id is derived from the publication's ``id`` (preferred) or
+    ``doi`` using the validator's :func:`normalize_reference_id`, then mapped to a
     cache file with :func:`cache_path_for_reference`. Missing cache files yield
     ``None`` so the caller leaves the entry unchanged.
+
+    The ``id``-before-``doi`` order deliberately matches
+    :func:`validate_publication_references` so this utility resolves the same
+    cache file the validator checks. It matters when an entry carries both a
+    PMID ``id`` and a separate ``doi`` pointing at different cache files.
     """
 
-    raw = publication.get("doi") or publication.get("id")
+    raw = publication.get("id") or publication.get("doi")
     if not raw:
         return None
     reference_id = normalize_reference_id(str(raw))
