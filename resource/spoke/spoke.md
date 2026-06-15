@@ -139,45 +139,48 @@ products:
       - source: spoke
         relation_type: prov:hadPrimarySource
 publications:
-  - authors:
-      - John H Morris
-      - Karthik Soman
-      - Riley E Akbas
-      - X Zhou
-      - B Smith
-      - Elaine C Meng
-      - CC Huang
-      - Gabriel Cerono
-      - G Schenk
-      - Angela Rizk-Jackson
-      - Sergio E Baranzini
-    id: https://doi.org/10.1093/bioinformatics/btad080
-    journal: Bioinformatics
-    preferred: true
-    title: 'The scalable precision medicine open knowledge engine (SPOKE): a massive knowledge graph of biomedical information'
-    year: '2023'
-  - authors:
-      - Charlotte A Nelson
-      - Atul J Butte
-      - Sergio E Baranzini
-    id: https://doi.org/10.1038/s41467-019-11069-0
-    journal: Nature Communications
-    title: Integrating biomedical research and electronic health records to create knowledge-based biologically meaningful machine-readable embeddings
-    year: '2019'
-  - authors:
-      - Daniel Scott Himmelstein
-      - Antoine Lizee
-      - Christine Hessler
-      - Leo Brueggeman
-      - Sabrina L Chen
-      - Dexter Hadley
-      - Ari Green
-      - Pouya Khankhanian
-      - Sergio E Baranzini
-    id: https://doi.org/10.7554/eLife.26726
-    journal: eLife
-    title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
-    year: '2017'
+- authors:
+  - John H Morris
+  - Karthik Soman
+  - Riley E Akbas
+  - X Zhou
+  - B Smith
+  - Elaine C Meng
+  - CC Huang
+  - Gabriel Cerono
+  - G Schenk
+  - Angela Rizk-Jackson
+  - Sergio E Baranzini
+  doi: 10.1093/bioinformatics/btad080
+  id: https://doi.org/10.1093/bioinformatics/btad080
+  journal: Bioinformatics
+  preferred: true
+  title: 'The scalable precision medicine open knowledge engine (SPOKE): a massive knowledge graph of biomedical information'
+  year: '2023'
+- authors:
+  - Charlotte A Nelson
+  - Atul J Butte
+  - Sergio E Baranzini
+  doi: 10.1038/s41467-019-11069-0
+  id: https://doi.org/10.1038/s41467-019-11069-0
+  journal: Nature Communications
+  title: Integrating biomedical research and electronic health records to create knowledge-based biologically meaningful machine-readable embeddings
+  year: '2019'
+- authors:
+  - Daniel Scott Himmelstein
+  - Antoine Lizee
+  - Christine Hessler
+  - Leo Brueggeman
+  - Sabrina L Chen
+  - Dexter Hadley
+  - Ari Green
+  - Pouya Khankhanian
+  - Sergio E Baranzini
+  doi: 10.7554/eLife.26726
+  id: https://doi.org/10.7554/eLife.26726
+  journal: eLife
+  title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
+  year: '2017'
 repository: https://github.com/baranzini-lab/SPOKE
 version: '2.0'
 infores_id: spoke
