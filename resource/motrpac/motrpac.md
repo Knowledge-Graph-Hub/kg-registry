@@ -661,16 +661,15 @@ products:
 publications:
 - authors:
   - MoTrPAC Study Group
-  category: Publication
+  doi: 10.1016/j.cell.2020.06.004
   id: https://doi.org/10.1016/j.cell.2020.06.004
   journal: Cell
   preferred: true
-  title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping
-    the Dynamic Responses to Exercise'
+  title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise'
   year: '2020'
 - authors:
   - MoTrPAC Study Group
-  category: Publication
+  doi: 10.1038/s41586-023-06877-w
   id: https://doi.org/10.1038/s41586-023-06877-w
   journal: Nature
   preferred: false
