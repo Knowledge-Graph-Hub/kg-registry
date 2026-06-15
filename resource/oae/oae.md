@@ -38,10 +38,34 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/OAE-ontology/OAE
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25093068
+- authors:
+  - He Y
+  - Sarntivijai S
+  - Lin Y
+  - Xiang Z
+  - Guo A
+  - Zhang S
+  - Jagannathan D
+  - Toldo L
+  - Tao C
+  - Smith B
+  doi: 10.1186/2041-1480-5-29
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25093068
+  journal: J Biomed Semantics
   title: OAE - The Ontology of Adverse Event
-- id: https://www.ncbi.nlm.nih.gov/pubmed/41526409
+  year: '2014'
+- authors:
+  - Pan C
+  - Yang Q
+  - Zhang X
+  - Luo S
+  - He Y
+  - Xie J
+  doi: 10.1038/s41597-026-06584-x
+  id: https://www.ncbi.nlm.nih.gov/pubmed/41526409
+  journal: Sci Data
   title: The Ontology of Adverse Events in 2025
+  year: '2026'
 ---
 ## Description
 
