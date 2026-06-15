@@ -186,11 +186,43 @@ products:
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
-- id: https://doi.org/10.1093/nar/gkx911
-  title: 'PharmacoDB: an integrative database for mining in vitro anticancer drug
-    screening studies'
-- id: https://doi.org/10.1093/bioinformatics/btv723
+- authors:
+  - Petr Smirnov
+  - Victor Kofia
+  - Alexander Maru
+  - Mark Freeman
+  - Chantal Ho
+  - Nehme El-Hachem
+  - George-Alexandru Adam
+  - Wail Ba-alawi
+  - Zhaleh Safikhani
+  - Benjamin Haibe-Kains
+  doi: 10.1093/nar/gkx911
+  id: https://doi.org/10.1093/nar/gkx911
+  journal: Nucleic Acids Research
+  title: 'PharmacoDB: an integrative database for mining in vitro anticancer drug screening studies'
+  year: '2018'
+- authors:
+  - Petr Smirnov
+  - Zhaleh Safikhani
+  - Nehme El-Hachem
+  - Dong Wang
+  - Adrian She
+  - Catharina Olsen
+  - Mark Freeman
+  - Heather Selby
+  - Deena M.A. Gendoo
+  - Patrick Grossmann
+  - Andrew H. Beck
+  - Hugo J.W.L. Aerts
+  - Mathieu Lupien
+  - Anna Goldenberg
+  - Benjamin Haibe-Kains
+  doi: 10.1093/bioinformatics/btv723
+  id: https://doi.org/10.1093/bioinformatics/btv723
+  journal: Bioinformatics
   title: 'PharmacoGx: an R package for analysis of large pharmacogenomic datasets'
+  year: '2016'
 repository: https://github.com/bhklab/PharmacoDB
 synonyms:
 - PharmacoDB
