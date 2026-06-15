@@ -219,8 +219,39 @@ products:
   - '2026_03_27'
   - 423af7989cac
 publications:
-- id: https://doi.org/10.1093/jamia/ocz042
-- id: https://doi.org/10.2196/17964
+- authors:
+  - Karamarie Fecho
+  - Emily Pfaff
+  - Hao Xu
+  - James Champion
+  - Steve Cox
+  - Lisa Stillwell
+  - David B Peden
+  - Chris Bizon
+  - Ashok Krishnamurthy
+  - Alexander Tropsha
+  - Stanley C Ahalt
+  doi: 10.1093/jamia/ocz042
+  id: https://doi.org/10.1093/jamia/ocz042
+  journal: Journal of the American Medical Informatics Association
+  title: 'A novel approach for exposing and sharing clinical data: the Translator Integrated Clinical and Environmental Exposures Service'
+  year: '2019'
+- authors:
+  - Steven Cox
+  - Stanley C Ahalt
+  - James Balhoff
+  - Chris Bizon
+  - Karamarie Fecho
+  - Yaphet Kebede
+  - Kenneth Morton
+  - Alexander Tropsha
+  - Patrick Wang
+  - Hao Xu
+  doi: 10.2196/17964
+  id: https://doi.org/10.2196/17964
+  journal: JMIR Medical Informatics
+  title: 'Visualization Environment for Federated Knowledge Graphs: Development of an Interactive Biomedical Query Language and Web Application Interface'
+  year: '2020'
 repository: https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES
 tags:
 - translator
