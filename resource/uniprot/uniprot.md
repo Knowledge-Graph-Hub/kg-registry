@@ -4162,6 +4162,112 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
+publications:
+- authors:
+  - Alex Bateman
+  - Maria-Jesus Martin
+  - Sandra Orchard
+  - Michele Magrane
+  - Aduragbemi Adesina
+  - Shadab Ahmad
+  - Emily H Bowler-Barnett
+  - Hema Bye-A-Jee
+  - David Carpentier
+  - Paul Denny
+  - Jun Fan
+  - Penelope Garmiri
+  - Leonardo Jose da Costa Gonzales
+  - Abdulrahman Hussein
+  - Alexandr Ignatchenko
+  - Giuseppe Insana
+  - Rizwan Ishtiaq
+  - Vishal Joshi
+  - Dushyanth Jyothi
+  - Swaathi Kandasaamy
+  - Antonia Lock
+  - Aurelien Luciani
+  - Jie Luo
+  - Yvonne Lussi
+  - Juan Sebastian Martinez Marin
+  - Pedro Raposo
+  - Daniel L Rice
+  - Rafael Santos
+  - Elena Speretta
+  - James Stephenson
+  - Prabhat Totoo
+  - Nidhi Tyagi
+  - Nadya Urakova
+  - Preethi Vasudev
+  - Kate Warner
+  - Supun Wijerathne
+  - Conny Wing-Heng Yu
+  - Rossana Zaru
+  - Alan J Bridge
+  - Lucila Aimo
+  - Ghislaine Argoud-Puy
+  - Andrea H Auchincloss
+  - Kristian B Axelsen
+  - Parit Bansal
+  - Delphine Baratin
+  - Teresa M Batista Neto
+  - Marie-Claude Blatter
+  - Jerven T Bolleman
+  - Emmanuel Boutet
+  - Lionel Breuza
+  - Blanca Cabrera Gil
+  - Cristina Casals-Casas
+  - Kamal Chikh Echioukh
+  - Elisabeth Coudert
+  - Beatrice Cuche
+  - Edouard de Castro
+  - Anne Estreicher
+  - Maria L Famiglietti
+  - Marc Feuermann
+  - Elisabeth Gasteiger
+  - Pascale Gaudet
+  - Sebastien Gehant
+  - Vivienne Gerritsen
+  - Arnaud Gos
+  - Nadine Gruaz
+  - Chantal Hulo
+  - Nevila Hyka-Nouspikel
+  - Florence Jungo
+  - Arnaud Kerhornou
+  - Philippe Le Mercier
+  - Damien Lieberherr
+  - Patrick Masson
+  - Anne Morgat
+  - Salvo Paesano
+  - Ivo Pedruzzi
+  - Sandrine Pilbout
+  - Lucille Pourcel
+  - Sylvain Poux
+  - Monica Pozzato
+  - Manuela Pruess
+  - Nicole Redaschi
+  - Catherine Rivoire
+  - Christian J A Sigrist
+  - Karin Sonesson
+  - Shyamala Sundaram
+  - Anastasia Sveshnikova
+  - Cathy H Wu
+  - Cecilia N Arighi
+  - Chuming Chen
+  - Yongxing Chen
+  - Hongzhan Huang
+  - Kati Laiho
+  - Minna Lehvaslaiho
+  - Peter McGarvey
+  - Darren A Natale
+  - Karen Ross
+  - C R Vinayaka
+  - Yuqi Wang
+  - Jian Zhang
+  doi: 10.1093/nar/gkae1010
+  id: doi:10.1093/nar/gkae1010
+  journal: Nucleic Acids Research
+  title: 'UniProt: the Universal Protein Knowledgebase in 2025'
+  year: '2025'
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606
