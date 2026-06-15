@@ -217,13 +217,35 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
 publications:
-- category: Publication
+- authors:
+  - Razick S
+  - Magklaras G
+  - Donaldson IM
+  doi: 10.1186/1471-2105-9-405
   id: PMID:18823568
+  journal: BMC Bioinformatics
   preferred: true
-- category: Publication
+  title: 'iRefIndex: a consolidated protein interaction database with provenance.'
+  year: '2008'
+- authors:
+  - Mora A
+  - Donaldson IM
+  doi: 10.1186/1471-2105-12-455
   id: PMID:22115179
-- category: Publication
+  journal: BMC Bioinformatics
+  title: 'iRefR: an R package to manipulate the iRefIndex consolidated protein interaction database.'
+  year: '2011'
+- authors:
+  - Razick S
+  - Mora A
+  - Michalickova K
+  - Boddie P
+  - Donaldson IM
+  doi: 10.1186/1471-2105-12-388
   id: PMID:21975162
+  journal: BMC Bioinformatics
+  title: iRefScape. A Cytoscape plug-in for visualization and data mining of protein interaction data from iRefIndex.
+  year: '2011'
 warnings:
 - The iRefIndex website appears to be inactive as of 2025. Historical data and methods
   remain available through publications and may be accessible through archived versions.
