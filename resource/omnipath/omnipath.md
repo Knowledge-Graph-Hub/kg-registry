@@ -174,31 +174,31 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
 - authors:
-  - "D\xE9nes T\xFCrei"
-  - "Tam\xE1s Korcsm\xE1ros"
+  - Dénes Türei
+  - Tamás Korcsmáros
   - Julio Saez-Rodriguez
   doi: 10.1038/nmeth.4077
   id: doi:10.1038/nmeth.4077
-  title: 'OmniPath: guidelines and gateway for literature-curated signaling pathway
-    resources'
+  journal: Nature Methods
+  title: 'OmniPath: guidelines and gateway for literature-curated signaling pathway resources'
   year: '2016'
 - authors:
-  - "D\xE9nes T\xFCrei"
+  - Dénes Türei
   - Alberto Valdeolivas
   - Lejla Gul
-  - "Nicol\xE0s Palacio-Escat"
+  - Nicolàs Palacio-Escat
   - Michal Klein
   - Olga Ivanova
-  - "M\xE1rton \xD6lbei"
-  - "Attila G\xE1bor"
+  - Márton Ölbei
+  - Attila Gábor
   - Fabian Theis
-  - "Dezs\u0151 M\xF3dos"
-  - "Tam\xE1s Korcsm\xE1ros"
+  - Dezső Módos
+  - Tamás Korcsmáros
   - Julio Saez-Rodriguez
   doi: 10.15252/msb.20209923
   id: doi:10.15252/msb.20209923
-  title: Integrated intra- and intercellular signaling knowledge for multicellular
-    omics analysis
+  journal: Molecular Systems Biology
+  title: Integrated intra- and intercellular signaling knowledge for multicellular omics analysis
   year: '2021'
 repository: https://github.com/saezlab/pypath
 ---
