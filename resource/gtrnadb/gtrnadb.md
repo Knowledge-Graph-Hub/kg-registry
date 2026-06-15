@@ -464,21 +464,23 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Patricia P. Chan
-      - Todd M. Lowe
-    id: https://doi.org/10.1093/nar/gkv1309
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'GtRNAdb 2.0: an expanded database of transfer RNA genes identified in complete and draft genomes'
-    year: '2016'
-  - authors:
-      - Patricia P. Chan
-      - Todd M. Lowe
-    id: https://doi.org/10.1093/nar/gkn787
-    journal: Nucleic Acids Research
-    title: 'GtRNAdb: A database of transfer RNA genes detected in genomic sequence'
-    year: '2009'
+- authors:
+  - Patricia P. Chan
+  - Todd M. Lowe
+  doi: 10.1093/nar/gkv1309
+  id: https://doi.org/10.1093/nar/gkv1309
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'GtRNAdb 2.0: an expanded database of transfer RNA genes identified in complete and draft genomes'
+  year: '2016'
+- authors:
+  - Patricia P. Chan
+  - Todd M. Lowe
+  doi: 10.1093/nar/gkn787
+  id: https://doi.org/10.1093/nar/gkn787
+  journal: Nucleic Acids Research
+  title: 'GtRNAdb: A database of transfer RNA genes detected in genomic sequence'
+  year: '2009'
 taxon:
   - NCBITaxon:2
   - NCBITaxon:2157
