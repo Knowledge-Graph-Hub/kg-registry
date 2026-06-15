@@ -487,10 +487,26 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/28387809
+- authors:
+  - Gkoutos GV
+  - Schofield PN
+  - Hoehndorf R
+  doi: 10.1093/bib/bbx035
+  id: https://www.ncbi.nlm.nih.gov/pubmed/28387809
+  journal: Brief Bioinform
   title: 'The anatomy of phenotype ontologies: principles, properties and applications'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
+  year: '2018'
+- authors:
+  - Gkoutos GV
+  - Green EC
+  - Mallon AM
+  - Hancock JM
+  - Davidson D
+  doi: 10.1186/gb-2004-6-1-r8
+  id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
+  journal: Genome Biol
   title: Using ontologies to describe mouse phenotypes
+  year: '2005'
 repository: https://github.com/pato-ontology/pato
 ---
 ## Description
