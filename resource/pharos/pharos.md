@@ -77,9 +77,9 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: PHAROS Automat
@@ -104,9 +104,9 @@ products:
     source: pharos
   product_url: https://pharos.nih.gov/about
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: Source repository for the Pharos web frontend maintained by NCATS

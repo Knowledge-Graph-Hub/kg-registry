@@ -10,7 +10,7 @@ original_source:
   source: gtopdb
 product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
 warnings:
-- File was not able to be retrieved when checked on 2026-06-12_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-13_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-05-09_ Timeout connecting
   to URL

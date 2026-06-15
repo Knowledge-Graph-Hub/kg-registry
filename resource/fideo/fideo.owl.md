@@ -9,7 +9,7 @@ original_source:
   source: fideo
 product_url: http://purl.obolibrary.org/obo/fideo.owl
 warnings:
-- File was not able to be retrieved when checked on 2026-06-12_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-12_ No Content-Length
   header found

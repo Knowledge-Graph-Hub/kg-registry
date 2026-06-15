@@ -51,9 +51,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: depmap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: Product
   description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing
@@ -69,9 +69,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: depmap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: Product
   description: Dose-response curve parameter matrix from the secondary PRISM Repurposing
@@ -87,9 +87,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: depmap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: API access to PRISM drug screening data

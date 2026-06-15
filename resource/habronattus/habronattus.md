@@ -34,9 +34,9 @@ products:
     source: habronattus
   product_url: http://purl.obolibrary.org/obo/habronattus.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Habronattus courtship ontology in OBO format
@@ -48,9 +48,9 @@ products:
     source: habronattus
   product_url: http://purl.obolibrary.org/obo/habronattus.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
     when accessing file'
 publications: []
 ---

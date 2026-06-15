@@ -38,9 +38,9 @@ products:
     source: unicarbkb
   product_url: https://doi.org/10.1093/nar/gkt1128
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: Product
   description: Sample RDF data files demonstrating GlycoCoO usage with examples from

@@ -156,9 +156,9 @@ products:
   warnings:
   - Antibody Validation Reports require authorization and returned HTTP 401 when checked
     on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 401 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 401 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 401 error
     when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data

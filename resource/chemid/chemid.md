@@ -49,9 +49,9 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
     header found'
 - category: MappingProduct
   description: Downloadable Excel and CSV files containing DSSTox identifiers mapped

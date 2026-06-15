@@ -90,10 +90,12 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-18_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -119,10 +121,12 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-18_ HTTP 429 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -151,10 +155,12 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv

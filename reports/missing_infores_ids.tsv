@@ -18,6 +18,8 @@ afpo	African Population Ontology	Ontology	https://github.com/h3abionet/afpo	reso
 agro	Agronomy Ontology	Ontology	https://github.com/AgriculturalSemantics/agro	resource/agro/agro.md
 aism	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)	Ontology	https://github.com/insect-morphology/aism	resource/aism/aism.md
 alliance	Alliance of Genome Resources	Aggregator	https://www.alliancegenome.org/	resource/alliance/alliance.md
+alphafold	AlphaFold Protein Structure Database	DataSource	https://alphafold.ebi.ac.uk/	resource/alphafold/alphafold.md
+alphamissense	AlphaMissense	DataSource	https://deepmind.google/science/alphamissense/	resource/alphamissense/alphamissense.md
 alzkb	Alzheimer's Knowledge Base	KnowledgeGraph	https://alzkb.ai/Home	resource/alzkb/alzkb.md
 amphx	The Amphioxus Development and Anatomy Ontology	Ontology	https://github.com/EBISPOT/amphx_ontology	resource/amphx/amphx.md
 aop-db	AOP-DB	Aggregator	https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db	resource/aop-db/aop-db.md
@@ -32,6 +34,7 @@ atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource
 automat	Automat	Aggregator	https://robokop.renci.org/api-docs/docs/category/automat	resource/automat/automat.md
 bacdive	BacDive	DataSource	https://bacdive.dsmz.de/	resource/bacdive/bacdive.md
 bactotraits	BactoTraits	DataSource	https://ordar.otelo.univ-lorraine.fr/record?id=10.24396/ORDAR-53	resource/bactotraits/bactotraits.md
+bao	BioAssay Ontology	Ontology	http://bioassayontology.org/	resource/bao/bao.md
 batman	BATMAN-TCM	DataSource	http://bionet.ncpsb.org.cn/batman-tcm/	resource/batman/batman.md
 bcgo	Beta Cell Genomics Ontology	Ontology	https://github.com/obi-bcgo/bcgo	resource/bcgo/bcgo.md
 bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOntologies/bco	resource/bco/bco.md
@@ -45,6 +48,7 @@ biobricks-mesh	BioBricks MeSH	KnowledgeGraph	https://github.com/biobricks-ai/mes
 biobricks-pubchem-annotations	BioBricks PubChem Annotations	KnowledgeGraph	https://github.com/biobricks-ai/pubchem-annotations-kg	resource/biobricks-pubchem-annotations/biobricks-pubchem-annotations.md
 biobricks-tox21	BioBricks Tox21	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-tox21/biobricks-tox21.md
 biobricks-toxcast	BioBricks ToxCast	KnowledgeGraph	https://github.com/biobricks-ai/biobricks-okg	resource/biobricks-toxcast/biobricks-toxcast.md
+biobtree	BioBTree	KnowledgeGraph	https://sugi.bio/biobtree/	resource/biobtree/biobtree.md
 biocyc	BioCyc	DataSource	https://biocyc.org/	resource/biocyc/biocyc.md
 biofactoid	Biofactoid	DataSource	https://biofactoid.org/	resource/biofactoid/biofactoid.md
 biogps	BioGPS	Aggregator	http://biogps.org/	resource/biogps/biogps.md
@@ -70,6 +74,7 @@ cdao	Comparative Data Analysis Ontology	Ontology	https://github.com/evoinfo/cdao
 cdiscvocab	CDISC Controlled Terminology	Aggregator	https://www.cdisc.org/standards/terminology/controlled-terminology	resource/cdiscvocab/cdiscvocab.md
 cdno	Compositional Dietary Nutrition Ontology	Ontology	https://cdno.info/	resource/cdno/cdno.md
 cellosaurus	Cellosaurus	DataSource	https://www.cellosaurus.org/	resource/cellosaurus/cellosaurus.md
+cellphonedb	CellPhoneDB	DataSource	https://www.cellphonedb.org/	resource/cellphonedb/cellphonedb.md
 cellxgene	CZ CELLxGENE	DataSource	https://cellxgene.cziscience.com/	resource/cellxgene/cellxgene.md
 ceph	Cephalopod Ontology	Ontology	https://github.com/obophenotype/cephalopod-ontology	resource/ceph/ceph.md
 cfde-ddkg	Data Distillery Knowledge Graph (DDKG)	KnowledgeGraph	https://dd-kg-ui.cfde.cloud/about	resource/cfde-ddkg/cfde-ddkg.md
@@ -105,6 +110,7 @@ cmo	Clinical measurement ontology	Ontology	http://rgd.mcw.edu/rgdweb/ontology/se
 cob	Core Ontology for Biology and Biomedicine	Ontology	https://obofoundry.org/COB/	resource/cob/cob.md
 cog	COG	DataSource	https://www.ncbi.nlm.nih.gov/research/cog-project/	resource/cog/cog.md
 colao	Coleoptera Anatomy Ontology (COLAO)	Ontology	https://github.com/insect-morphology/colao	resource/colao/colao.md
+collectri	CollecTRI	DataSource	https://github.com/saezlab/CollecTRI	resource/collectri/collectri.md
 compartments	COMPARTMENTS	DataSource		resource/compartments/compartments.md
 compath	ComPath	DataSource	https://compath.scai.fraunhofer.de/	resource/compath/compath.md
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
@@ -201,6 +207,7 @@ exo	Exposure ontology	Ontology	https://github.com/CTDbase/exposure-ontology	reso
 expressionatlas	Expression Atlas	Aggregator	https://www.ebi.ac.uk/gxa/home	resource/expressionatlas/expressionatlas.md
 fabio	FABIO	Ontology	https://sparontologies.github.io/fabio/current/fabio.html	resource/fabio/fabio.md
 faldo	FALDO	Ontology	http://biohackathon.org/resource/faldo	resource/faldo/faldo.md
+fantom5	FANTOM5	DataSource	https://fantom.gsc.riken.jp/5/	resource/fantom5/fantom5.md
 fao	Fungal gross anatomy	Ontology	https://github.com/obophenotype/fungal-anatomy-ontology/	resource/fao/fao.md
 fbbi	Biological Imaging Methods Ontology	Ontology	https://github.com/foundingGIDE/fbbi	resource/fbbi/fbbi.md
 fbcv	FlyBase Controlled Vocabulary	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/fbcv/fbcv.md
@@ -301,6 +308,7 @@ insight	INSIGHT	KnowledgeGraph	https://insight-project.org/	resource/insight/ins
 intermine	InterMine	DataSource	https://intermine.org/	resource/intermine/intermine.md
 ipr	Protein Domains	Ontology	http://www.ebi.ac.uk/interpro/index.html	resource/ipr/ipr.md
 itis	ITIS	DataSource	https://www.itis.gov/	resource/itis/itis.md
+jaspar	JASPAR	DataSource	https://jaspar.elixir.no/	resource/jaspar/jaspar.md
 kg-alzheimers	KG-Alzheimers	KnowledgeGraph	https://kghub.org/kg-alzheimers/index.html	resource/kg-alzheimers/kg-alzheimers.md
 kg-covid-19	KG-COVID-19	KnowledgeGraph	https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki	resource/kg-covid-19/kg-covid-19.md
 kg-ebi-gene2pheno	EBI Gene2Phenotype KG	KnowledgeGraph		resource/kg-ebi-gene2pheno/kg-ebi-gene2pheno.md
@@ -320,6 +328,7 @@ labeledin	LabeledIn	DataSource	https://doi.org/10.1016/j.jbi.2014.08.004	resourc
 labo	clinical LABoratory Ontology	Ontology	https://github.com/OpenLHS/LABO	resource/labo/labo.md
 lepao	Lepidoptera Anatomy Ontology	Ontology	https://github.com/insect-morphology/lepao	resource/lepao/lepao.md
 lincs-l1000	LINCS L1000	DataSource	https://lincsproject.org/LINCS/	resource/lincs-l1000/lincs-l1000.md
+lipidmaps	LIPID MAPS	DataSource	https://www.lipidmaps.org/	resource/lipidmaps/lipidmaps.md
 lipro	Lipid Ontology	Ontology		resource/lipro/lipro.md
 lncbase	DIANA-LncBase	DataSource	http://www.microrna.gr/LncBase	resource/lncbase/lncbase.md
 lncbook	LncBook	DataSource	https://ngdc.cncb.ac.cn/lncbook/home	resource/lncbook/lncbook.md
@@ -360,6 +369,7 @@ miapa	MIAPA Ontology	Ontology	http://www.evoio.org/wiki/MIAPA	resource/miapa/mia
 micro	Ontology of Prokaryotic Phenotypic and Metabolic Characters	Ontology	https://github.com/carrineblank/MicrO	resource/micro/micro.md
 mind	MIND	KnowledgeGraph	https://zenodo.org/records/8117748	resource/mind/mind.md
 mint	Mint	Aggregator	https://mint.bio.uniroma2.it/	resource/mint/mint.md
+mirdb	miRDB	DataSource	https://mirdb.org/	resource/mirdb/mirdb.md
 mirgenedb	MirGeneDB	DataSource		resource/mirgenedb/mirgenedb.md
 mirnao	microRNA Ontology	Ontology	http://code.google.com/p/mirna-ontology/	resource/mirnao/mirnao.md
 miro	Mosquito insecticide resistance	Ontology	http://purl.obolibrary.org/obo/miro.owl	resource/miro/miro.md
@@ -584,6 +594,7 @@ stato	The Statistical Methods Ontology	Ontology	http://stato-ontology.org/	resou
 stellar	STELLAR	Resource	https://snap.stanford.edu/stellar/	resource/stellar/stellar.md
 sty	UMLS Semantic Types	Ontology	https://www.nlm.nih.gov/research/umls/knowledge_sources/semantic_network/index.html	resource/sty/sty.md
 sudokn	SUDOKN	KnowledgeGraph	https://projects.engineering.asu.edu/sudokn/	resource/sudokn/sudokn.md
+surechembl	SureChEMBL	DataSource	https://www.surechembl.org/	resource/surechembl/surechembl.md
 swisslipid	SwissLipids	DataSource	https://www.swisslipids.org/	resource/swisslipid/swisslipid.md
 swissmodel	SWISS-MODEL	DataSource	https://swissmodel.expasy.org/	resource/swissmodel/swissmodel.md
 swo	Software ontology	Ontology	https://github.com/allysonlister/swo	resource/swo/swo.md

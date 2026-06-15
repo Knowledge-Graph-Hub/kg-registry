@@ -100,9 +100,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -145,9 +145,9 @@ products:
     source: uniprot
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1027,9 +1027,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -3245,14 +3245,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
@@ -3304,14 +3304,14 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: Product
   description: Bulk download of DisProt data in multiple formats including JSON, TSV,
@@ -3545,9 +3545,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -3681,9 +3681,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 500 error
     when accessing file'
 - category: GraphicalInterface
   description: neXtProt web platform for searching and browsing curated human protein
@@ -4042,6 +4042,126 @@ products:
   - relation_type: prov:used
     source: opentargets
   product_url: https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG
+- category: ProgrammingInterface
+  description: REST API for searching identifiers and special keywords, mapping between
+    data sources with a chain-query syntax, and retrieving entries across the integrated
+    BioBTree databases.
+  format: http
+  id: biobtree.api
+  is_public: true
+  name: BioBTree REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biobtree
+  - relation_type: prov:hadPrimarySource
+    source: alphafold
+  - relation_type: prov:hadPrimarySource
+    source: alphamissense
+  - relation_type: prov:hadPrimarySource
+    source: bao
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: bindingdb
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: brenda
+  - relation_type: prov:hadPrimarySource
+    source: cellphonedb
+  - relation_type: prov:hadPrimarySource
+    source: cellxgene
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: cl
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: collectri
+  - relation_type: prov:hadPrimarySource
+    source: corum
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: eco
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: gencc
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: jaspar
+  - relation_type: prov:hadPrimarySource
+    source: lipidmaps
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mirdb
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: msigdb
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: rhea
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: surechembl
+  - relation_type: prov:hadPrimarySource
+    source: swisslipid
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://sugi.bio/biobtree/api/
 repository: https://www.uniprot.org/help/downloads
 taxon:
 - NCBITaxon:9606

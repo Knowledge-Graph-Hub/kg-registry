@@ -14,6 +14,8 @@ afpo,active,PASS
 agro,active,PASS
 aism,active,PASS
 alliance,active,PASS
+alphafold,active,PASS
+alphamissense,active,PASS
 alzkb,active,PASS
 amphx,active,PASS
 aop-db,active,PASS
@@ -30,6 +32,7 @@ athena,active,PASS
 automat,active,PASS
 bacdive,active,PASS
 bactotraits,active,PASS
+bao,active,PASS
 batman,active,PASS
 bco,active,PASS
 bfo,active,PASS
@@ -43,6 +46,7 @@ biobricks-mesh,active,PASS
 biobricks-pubchem-annotations,active,PASS
 biobricks-tox21,active,PASS
 biobricks-toxcast,active,PASS
+biobtree,active,PASS
 biocyc,active,PASS
 biofactoid,active,PASS
 biogps,active,PASS
@@ -72,6 +76,7 @@ cdno,active,PASS
 cebs,active,PASS
 cellmarker,active,PASS
 cellosaurus,active,PASS
+cellphonedb,active,PASS
 cellxgene,active,PASS
 cfde-ddkg,active,PASS
 cfde-gse,active,PASS
@@ -113,6 +118,7 @@ cob,active,PASS
 cog,active,PASS
 cohd,active,PASS
 colao,active,PASS
+collectri,active,PASS
 compartments,active,PASS
 compath,active,PASS
 complexportal,active,PASS
@@ -223,6 +229,7 @@ expressionatlas,active,PASS
 fabio,active,PASS
 faers,active,PASS
 faldo,active,PASS
+fantom5,active,PASS
 fao,active,PASS
 fbbi,active,PASS
 fbbt,active,PASS
@@ -344,6 +351,7 @@ intermine,active,PASS
 interpro,active,PASS
 iptmnet,active,PASS
 itis,active,PASS
+jaspar,active,PASS
 kegg,active,PASS
 kg-alzheimers,active,PASS
 kg-covid-19,active,PASS
@@ -367,6 +375,7 @@ labo,active,PASS
 lepao,active,PASS
 lincs,active,PASS
 lincs-l1000,active,PASS
+lipidmaps,active,PASS
 litvar,active,PASS
 lncbase,active,PASS
 lncbook,active,PASS
@@ -411,6 +420,7 @@ microbiomekg,active,PASS
 mind,active,PASS
 mint,active,PASS
 mirbase,active,PASS
+mirdb,active,PASS
 mirgenedb,active,PASS
 mirtarbase,active,PASS
 mixs,active,PASS
@@ -661,6 +671,7 @@ string,active,PASS
 sty,active,PASS
 sudokn,active,PASS
 suppkg,active,PASS
+surechembl,active,PASS
 swisslipid,active,PASS
 swissmodel,active,PASS
 swo,active,PASS

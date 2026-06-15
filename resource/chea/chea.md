@@ -82,9 +82,9 @@ products:
     source: chea
   product_url: https://hub.docker.com/r/maayanlab/chea3
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Interactive ChEA3 web interface for transcription factor enrichment

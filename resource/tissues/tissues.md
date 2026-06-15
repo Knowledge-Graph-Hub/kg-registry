@@ -57,11 +57,11 @@ products:
     source: tissues
   product_url: https://tissues.jensenlab.org/Downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2026-05-29: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
     header found'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological

@@ -32,9 +32,9 @@ products:
     source: ehdaa
   product_url: http://purl.obolibrary.org/obo/ehdaa.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Human developmental anatomy, abstract version in OBO format
@@ -46,9 +46,9 @@ products:
     source: ehdaa
   product_url: http://purl.obolibrary.org/obo/ehdaa.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 publications: []
 taxon:

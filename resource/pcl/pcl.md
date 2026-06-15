@@ -59,11 +59,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
@@ -75,12 +75,12 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
@@ -91,11 +91,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-base.obo
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
@@ -107,12 +107,12 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-base.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -123,11 +123,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-full.owl
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
@@ -139,11 +139,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-full.obo
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
@@ -155,11 +155,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
@@ -171,11 +171,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.owl
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
@@ -187,11 +187,11 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.obo
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
@@ -203,12 +203,12 @@ products:
     source: pcl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-12: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
+    when accessing file'
 publications:
 - id: https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1
   title: Brain Data Standards

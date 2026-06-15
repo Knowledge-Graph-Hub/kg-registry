@@ -12,7 +12,7 @@ original_source:
   source: ncbigene
 product_url: https://omabrowser.org/All/oma-entrez.txt.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-06-12_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-13_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

@@ -51,9 +51,9 @@ products:
     source: biothings
   product_url: https://biothings.io/specs/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 204 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 204 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 204 error
     when accessing file'
 - category: ProgrammingInterface
   connection_url: https://biothings.ncats.io/gtrx/query
