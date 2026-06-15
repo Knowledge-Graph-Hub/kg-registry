@@ -122,14 +122,106 @@ products:
   - relation_type: prov:wasInfluencedBy
     source: ctrp
 publications:
-- id: https://doi.org/10.1038/nchembio.1986
-  title: Correlating chemical sensitivity and basal gene expression reveals mechanism
-    of action
-- id: https://doi.org/10.1158/2159-8290.CD-15-0235
+- authors:
+  - Matthew G Rees
+  - Brinton Seashore-Ludlow
+  - Jaime H Cheah
+  - Drew J Adams
+  - Edmund V Price
+  - Shubhroz Gill
+  - Sarah Javaid
+  - Matthew E Coletti
+  - Victor L Jones
+  - Nicole E Bodycombe
+  - Christian K Soule
+  - Benjamin Alexander
+  - Ava Li
+  - Philip Montgomery
+  - Joanne D Kotz
+  - C Suk-Yee Hon
+  - Benito Munoz
+  - Ted Liefeld
+  - Vlado Dančík
+  - Daniel A Haber
+  - Clary B Clish
+  - Joshua A Bittker
+  - Michelle Palmer
+  - Bridget K Wagner
+  - Paul A Clemons
+  - Alykhan F Shamji
+  - Stuart L Schreiber
+  doi: 10.1038/nchembio.1986
+  id: https://doi.org/10.1038/nchembio.1986
+  journal: Nature Chemical Biology
+  title: Correlating chemical sensitivity and basal gene expression reveals mechanism of action
+  year: '2016'
+- authors:
+  - Brinton Seashore-Ludlow
+  - Matthew G. Rees
+  - Jaime H. Cheah
+  - Murat Cokol
+  - Edmund V. Price
+  - Matthew E. Coletti
+  - Victor Jones
+  - Nicole E. Bodycombe
+  - Christian K. Soule
+  - Joshua Gould
+  - Benjamin Alexander
+  - Ava Li
+  - Philip Montgomery
+  - Mathias J. Wawer
+  - Nurdan Kuru
+  - Joanne D. Kotz
+  - C. Suk-Yee Hon
+  - Benito Munoz
+  - Ted Liefeld
+  - Vlado Dančík
+  - Joshua A. Bittker
+  - Michelle Palmer
+  - James E. Bradner
+  - Alykhan F. Shamji
+  - Paul A. Clemons
+  - Stuart L. Schreiber
+  doi: 10.1158/2159-8290.CD-15-0235
+  id: https://doi.org/10.1158/2159-8290.CD-15-0235
+  journal: Cancer Discovery
   title: Harnessing Connectivity in a Large-Scale Small-Molecule Sensitivity Dataset
-- id: https://doi.org/10.1016/j.cell.2013.08.003
-  title: An Interactive Resource to Identify Cancer Genetic and Lineage Dependencies
-    Targeted by Small Molecules
+  year: '2015'
+- authors:
+  - Amrita Basu
+  - Nicole E. Bodycombe
+  - Jaime H. Cheah
+  - Edmund V. Price
+  - Ke Liu
+  - Giannina I. Schaefer
+  - Richard Y. Ebright
+  - Michelle L. Stewart
+  - Daisuke Ito
+  - Stephanie Wang
+  - Abigail L. Bracha
+  - Ted Liefeld
+  - Mathias Wawer
+  - Joshua C. Gilbert
+  - Andrew J. Wilson
+  - Nicolas Stransky
+  - Gregory V. Kryukov
+  - Vlado Dancik
+  - Jordi Barretina
+  - Levi A. Garraway
+  - C. Suk-Yee Hon
+  - Benito Munoz
+  - Joshua A. Bittker
+  - Brent R. Stockwell
+  - Dineo Khabele
+  - Andrew M. Stern
+  - Paul A. Clemons
+  - Alykhan F. Shamji
+  - Stuart L. Schreiber
+  doi: 10.1016/j.cell.2013.08.003
+  id: https://doi.org/10.1016/j.cell.2013.08.003
+  journal: Cell
+  title: An Interactive Resource to Identify Cancer Genetic and Lineage Dependencies Targeted by Small Molecules
+  year: '2013'
 synonyms:
 - CTRP
 - Cancer Therapeutics Response Portal
