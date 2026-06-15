@@ -1178,17 +1178,45 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
 publications:
-- doi: 10.1016/s0014-5793(01)03293-8
+- authors:
+  - Zanzoni A
+  - Montecchi-Palazzi L
+  - Quondam M
+  - Ausiello G
+  - Helmer-Citterich M
+  - Cesareni G
+  doi: 10.1016/s0014-5793(01)03293-8
   id: PMID:11911893
   journal: FEBS Lett
   title: 'MINT: a Molecular INTeraction database'
   year: '2002'
-- doi: 10.1093/nar/gkl950
+- authors:
+  - Chatr-aryamontri A
+  - Ceol A
+  - Palazzi LM
+  - Nardelli G
+  - Schneider MV
+  - Castagnoli L
+  - Cesareni G
+  doi: 10.1093/nar/gkl950
   id: PMID:17135203
   journal: Nucleic Acids Res
   title: 'MINT: the Molecular INTeraction database'
   year: '2007'
-- doi: 10.1093/nar/gkr930
+- authors:
+  - Licata L
+  - Briganti L
+  - Peluso D
+  - Perfetto L
+  - Iannuccelli M
+  - Galeota E
+  - Sacco F
+  - Palma A
+  - Nardozza AP
+  - Santonico E
+  - Castagnoli L
+  - Cesareni G
+  doi: 10.1093/nar/gkr930
   id: PMID:22096227
   journal: Nucleic Acids Res
   title: 'MINT, the molecular interaction database: 2012 update'
