@@ -216,14 +216,61 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
+- authors:
+  - Nadendla S
+  - Jackson R
+  - Munro J
+  - Quaglia F
+  - Mészáros B
+  - Olley D
+  - Hobbs ET
+  - Goralski SM
+  - Chibucos M
+  - Mungall CJ
+  - Tosatto SCE
+  - Erill I
+  - Giglio MG
+  doi: 10.1093/nar/gkab1025
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
+  journal: Nucleic Acids Res
   title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
-  title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
-    information.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
-  title: Standardized description of scientific evidence using the Evidence Ontology
-    (ECO)
+  year: '2022'
+- authors:
+  - Giglio M
+  - Tauber R
+  - Nadendla S
+  - Munro J
+  - Olley D
+  - Ball S
+  - Mitraka E
+  - Schriml LM
+  - Gaudet P
+  - Hobbs ET
+  - Erill I
+  - Siegele DA
+  - Hu JC
+  - Mungall C
+  - Chibucos MC
+  doi: 10.1093/nar/gky1036
+  id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
+  journal: Nucleic Acids Res
+  title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence information.'
+  year: '2019'
+- authors:
+  - Chibucos MC
+  - Mungall CJ
+  - Balakrishnan R
+  - Christie KR
+  - Huntley RP
+  - White O
+  - Blake JA
+  - Lewis SE
+  - Giglio M
+  doi: 10.1093/database/bau075
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
+  journal: Database (Oxford)
+  title: Standardized description of scientific evidence using the Evidence Ontology (ECO)
+  year: '2014'
 repository: https://github.com/evidenceontology/evidenceontology
 ---
 ## Description
