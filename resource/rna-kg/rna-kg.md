@@ -156,15 +156,47 @@ products:
     product_file_size: 18370248815
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
 publications:
-  - doi: 10.1038/s41597-024-03673-7
-    id: doi:10.1038/s41597-024-03673-7
-    title: An ontology-based knowledge graph for representing interactions involving RNA molecules
-  - doi: 10.48550/arXiv.2508.07427
-    id: doi:10.48550/arXiv.2508.07427
-    title: 'RNA-KG v2.0: An RNA-centered Knowledge Graph with Properties'
-  - doi: 10.1093/bioadv/vbaf109
-    id: doi:10.1093/bioadv/vbaf109
-    title: RNA knowledge-graph analysis through homogeneous embedding methods
+- authors:
+  - Emanuele Cavalleri
+  - Alberto Cabri
+  - Mauricio Soto-Gomez
+  - Sara Bonfitto
+  - Paolo Perlasca
+  - Jessica Gliozzo
+  - Tiffany J. Callahan
+  - Justin Reese
+  - Peter N. Robinson
+  - Elena Casiraghi
+  - Giorgio Valentini
+  - Marco Mesiti
+  doi: 10.1038/s41597-024-03673-7
+  id: doi:10.1038/s41597-024-03673-7
+  journal: Scientific Data
+  title: An ontology-based knowledge graph for representing interactions involving RNA molecules
+  year: '2024'
+- authors:
+  - Cavalleri, Emanuele
+  - Perlasca, Paolo
+  - Mesiti, Marco
+  doi: 10.48550/arXiv.2508.07427
+  id: doi:10.48550/arXiv.2508.07427
+  journal: arXiv
+  title: 'RNA-KG v2.0: An RNA-centered Knowledge Graph with Properties'
+  year: '2025'
+- authors:
+  - Francesco Torgano
+  - Mauricio Soto Gomez
+  - Matteo Zignani
+  - Jessica Gliozzo
+  - Emanuele Cavalleri
+  - Marco Mesiti
+  - Elena Casiraghi
+  - Giorgio Valentini
+  doi: 10.1093/bioadv/vbaf109
+  id: doi:10.1093/bioadv/vbaf109
+  journal: Bioinformatics Advances
+  title: RNA knowledge-graph analysis through homogeneous embedding methods
+  year: '2024'
 repository: https://github.com/AnacletoLAB/RNA-KG
 ---
 
