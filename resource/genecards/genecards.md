@@ -31,222 +31,214 @@ products:
   name: GeneCards Web Interface
   original_source:
   - relation_type: prov:hadPrimarySource
-    source: genecards
-  product_url: https://www.genecards.org/
-- category: Product
-  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
-    NCBI Gene, UniProt and other genomic databases
-  format: http
-  id: genecards.gene.annotations
-  name: GeneCards Gene Annotations
-  original_source:
+    source: 5srrnadb
   - relation_type: prov:hadPrimarySource
-    source: ensembl
+    source: alliance
   - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: hgnc
-  - relation_type: prov:hadPrimarySource
-    source: ncbigene
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: refseq
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Disease association data integrated from OMIM, MalaCards, ClinVar,
-    Orphanet, DisGeNET and other disease databases
-  format: http
-  id: genecards.disease.associations
-  name: GeneCards Disease Associations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: disgenet
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: malacards
-  - relation_type: prov:hadPrimarySource
-    source: omim
-  - relation_type: prov:hadPrimarySource
-    source: orphanet
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other expression
-    databases
-  format: http
-  id: genecards.expression.data
-  name: GeneCards Expression Data
-  original_source:
+    source: alphafold
   - relation_type: prov:hadPrimarySource
     source: bgee
   - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
     source: biogps
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: gtex
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Pathway information integrated from Reactome, WikiPathways and other
-    pathway databases
-  format: http
-  id: genecards.pathway.data
-  name: GeneCards Pathway Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: reactome
-  - relation_type: prov:hadPrimarySource
-    source: wikipathways
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
-    other interaction databases
-  format: http
-  id: genecards.protein.interactions
-  name: GeneCards Protein Interactions
-  original_source:
   - relation_type: prov:hadPrimarySource
     source: biogrid
   - relation_type: prov:hadPrimarySource
-    source: genecards
+    source: chebi
   - relation_type: prov:hadPrimarySource
-    source: intact
+    source: chembl
   - relation_type: prov:hadPrimarySource
-    source: string
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
-    databases
-  format: http
-  id: genecards.variant.data
-  name: GeneCards Variant Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: clinvar
-  - relation_type: prov:hadPrimarySource
-    source: dbsnp
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: gwascatalog
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Literature references from PubMed automatically associated with genes
-  format: http
-  id: genecards.literature
-  name: GeneCards Literature References
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: pubmed
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Gene ontology annotations from the Gene Ontology Consortium
-  format: http
-  id: genecards.gene.ontology
-  name: GeneCards Gene Ontology Annotations
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: go
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
-    sources
-  format: http
-  id: genecards.pharmacogenomics
-  name: GeneCards Pharmacogenomics Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: drugbank
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: pharmgkb
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Model organism data from FlyBase, SGD, ZFIN and other model organism
-    databases
-  format: http
-  id: genecards.model.organisms
-  name: GeneCards Model Organism Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: flybase
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: sgd
-  - relation_type: prov:hadPrimarySource
-    source: zfin
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Protein structure data from PDB Europe and other structural databases
-  format: http
-  id: genecards.protein.structures
-  name: GeneCards Protein Structure Data
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: genecards
-  - relation_type: prov:hadPrimarySource
-    source: pdbe
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Clinical trial information from ClinicalTrials.gov
-  format: http
-  id: genecards.clinical.trials
-  name: GeneCards Clinical Trials
-  original_source:
+    source: civic
   - relation_type: prov:hadPrimarySource
     source: clinicaltrialsgov
   - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
     source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: mirtarbase
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
   product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
