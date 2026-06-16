@@ -4164,16 +4164,14 @@ entries:
     warnings:
     - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_nbt.3790.md
   resource/omim/omim.md#publication[0]#DOI:10.1093/nar/gky1151:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-16T20:56:28Z'
     errors: []
-    fingerprint: 6edb33cabe8c1fb50cfc84cefb4c4f96dbca64814a95d78a14a9f9a045141e6f
+    fingerprint: 7c94c7da40d17822b2edcb8467a40e69a6c9de4f56d5109c677fdd9812bb7f64
     publication_index: 0
     reference_id: DOI:10.1093/nar/gky1151
     source_path: resource/omim/omim.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky1151.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky1151.md
+    status: valid
+    warnings: []
   resource/omim/omim.md#publication[1]#DOI:10.1093/nar/gku1205:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []

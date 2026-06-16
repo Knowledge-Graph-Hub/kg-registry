@@ -6,9 +6,9 @@ format: fasta
 id: orthodb.aa_fasta
 name: OrthoDB Protein Sequences
 original_source:
-  - source: orthodb
-    relation_type: prov:hadPrimarySource
-product_file_size: 38928290988
-product_url: https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz
+- relation_type: prov:hadPrimarySource
+  source: orthodb
+product_file_size: 39697100104
+product_url: https://data.orthodb.org/current/download/odb_data_dump/odb12v2_aa_fasta.gz
 layout: product_detail
 ---
