@@ -478,7 +478,17 @@ def check_ftp_url(url: str, timeout: float) -> Dict[str, Any]:
 
 
 def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
-    headers = {"User-Agent": "kg-registry-quality-dashboard/1.0"}
+    # Use a browser-like User-Agent. Many hosts return HTTP 403 to non-browser
+    # clients (e.g. the default ``python-requests`` agent) even though the
+    # resource is publicly reachable, which would otherwise be reported as a
+    # broken link.
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "*/*",
+    }
 
     def _head_request(verify: bool) -> requests.Response:
         if verify or InsecureRequestWarning is None:
@@ -521,7 +531,13 @@ def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
             result["tls_verification_failed"] = True
         return result
 
-    # Some endpoints disallow HEAD or return transient responses there.
+    # Some endpoints disallow HEAD, throttle, or block automated/bot clients with
+    # an access-control status (401/403/405/429) even though the resource is
+    # publicly reachable in a browser. Treat these as reachable rather than
+    # broken: the server is up and responding, we simply cannot fully verify the
+    # resource via an automated request. (Trade-off: a host that returns 403 for
+    # genuinely-missing objects -- e.g. some CloudFront/S3 setups -- will not be
+    # flagged here.)
     fallback_codes = {401, 403, 405, 429}
     if head_code in fallback_codes:
         try:
@@ -533,13 +549,16 @@ def check_http_url(url: str, timeout: float) -> Dict[str, Any]:
                 if tls_fallback_used:
                     result["tls_verification_failed"] = True
                 return result
-            if tls_fallback_used and get_code in fallback_codes:
-                return {
+            if get_code in fallback_codes:
+                result = {
                     "ok": True,
                     "status_code": get_code,
                     "error": None,
-                    "tls_verification_failed": True,
+                    "access_restricted": True,
                 }
+                if tls_fallback_used:
+                    result["tls_verification_failed"] = True
+                return result
             return {
                 "ok": False,
                 "status_code": get_code,
