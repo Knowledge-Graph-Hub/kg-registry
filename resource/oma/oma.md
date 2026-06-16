@@ -370,12 +370,42 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
 publications:
-- id: https://doi.org/10.1093/nar/gkad1020
-  title: 'OMA orthology in 2024: improved prokaryote coverage, ancestral and extant
-    GO enrichment, a revamped synteny viewer and more in the OMA Ecosystem'
-- id: https://doi.org/10.1093/nar/gkaa1007
-  title: 'OMA orthology in 2021: website overhaul, conserved isoforms, ancestral gene
-    order and more'
+- authors:
+  - Adrian M Altenhoff
+  - Alex Warwick Vesztrocy
+  - Charles Bernard
+  - Clement-Marie Train
+  - Alina Nicheperovich
+  - Silvia Prieto Baños
+  - Irene Julca
+  - David Moi
+  - Yannis Nevers
+  - Sina Majidian
+  - Christophe Dessimoz
+  - Natasha M Glover
+  doi: 10.1093/nar/gkad1020
+  id: https://doi.org/10.1093/nar/gkad1020
+  journal: Nucleic Acids Research
+  title: 'OMA orthology in 2024: improved prokaryote coverage, ancestral and extant GO enrichment, a revamped synteny viewer and more in the OMA Ecosystem'
+  year: '2024'
+- authors:
+  - Adrian M Altenhoff
+  - Clément-Marie Train
+  - Kimberly J Gilbert
+  - Ishita Mediratta
+  - Tarcisio Mendes de Farias
+  - David Moi
+  - Yannis Nevers
+  - Hale-Seda Radoykova
+  - Victor Rossier
+  - Alex Warwick Vesztrocy
+  - Natasha M Glover
+  - Christophe Dessimoz
+  doi: 10.1093/nar/gkaa1007
+  id: https://doi.org/10.1093/nar/gkaa1007
+  journal: Nucleic Acids Research
+  title: 'OMA orthology in 2021: website overhaul, conserved isoforms, ancestral gene order and more'
+  year: '2021'
 repository: https://github.com/DessimozLab/pyomabrowser
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.

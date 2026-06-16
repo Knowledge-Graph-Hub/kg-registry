@@ -90,13 +90,157 @@ products:
     product_file_size: 50945
     product_url: https://www.disprot.org/assets/data/IDPO_v0.3.0.owl
 publications:
-  - category: Publication
-    id: PMID:37904585
-    preferred: true
-  - category: Publication
-    id: PMID:34850135
-  - category: Publication
-    id: PMID:31713636
+- authors:
+  - Aspromonte MC
+  - Nugnes MV
+  - Quaglia F
+  - Bouharoua A
+  - DisProt Consortium
+  - Tosatto SCE
+  - Piovesan D
+  doi: 10.1093/nar/gkad928
+  id: PMID:37904585
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'DisProt in 2024: improving function annotation of intrinsically disordered proteins.'
+  year: '2024'
+- authors:
+  - Quaglia F
+  - Mészáros B
+  - Salladini E
+  - Hatos A
+  - Pancsa R
+  - Chemes LB
+  - Pajkos M
+  - Lazar T
+  - Peña-Díaz S
+  - Santos J
+  - Ács V
+  - Farahi N
+  - Fichó E
+  - Aspromonte MC
+  - Bassot C
+  - Chasapi A
+  - Davey NE
+  - Davidović R
+  - Dobson L
+  - Elofsson A
+  - Erdős G
+  - Gaudet P
+  - Giglio M
+  - Glavina J
+  - Iserte J
+  - Iglesias V
+  - Kálmán Z
+  - Lambrughi M
+  - Leonardi E
+  - Longhi S
+  - Macedo-Ribeiro S
+  - Maiani E
+  - Marchetti J
+  - Marino-Buslje C
+  - Mészáros A
+  - Monzon AM
+  - Minervini G
+  - Nadendla S
+  - Nilsson JF
+  - Novotný M
+  - Ouzounis CA
+  - Palopoli N
+  - Papaleo E
+  - Pereira PJB
+  - Pozzati G
+  - Promponas VJ
+  - Pujols J
+  - Rocha ACS
+  - Salas M
+  - Sawicki LR
+  - Schad E
+  - Shenoy A
+  - Szaniszló T
+  - Tsirigos KD
+  - Veljkovic N
+  - Parisi G
+  - Ventura S
+  - Dosztányi Z
+  - Tompa P
+  - Tosatto SCE
+  - Piovesan D
+  doi: 10.1093/nar/gkab1082
+  id: PMID:34850135
+  journal: Nucleic Acids Res
+  title: 'DisProt in 2022: improved quality and accessibility of protein intrinsic disorder annotation.'
+  year: '2022'
+- authors:
+  - Hatos A
+  - Hajdu-Soltész B
+  - Monzon AM
+  - Palopoli N
+  - Álvarez L
+  - Aykac-Fas B
+  - Bassot C
+  - Benítez GI
+  - Bevilacqua M
+  - Chasapi A
+  - Chemes L
+  - Davey NE
+  - Davidović R
+  - Dunker AK
+  - Elofsson A
+  - Gobeill J
+  - Foutel NSG
+  - Sudha G
+  - Guharoy M
+  - Horvath T
+  - Iglesias V
+  - Kajava AV
+  - Kovacs OP
+  - Lamb J
+  - Lambrughi M
+  - Lazar T
+  - Leclercq JY
+  - Leonardi E
+  - Macedo-Ribeiro S
+  - Macossay-Castillo M
+  - Maiani E
+  - Manso JA
+  - Marino-Buslje C
+  - Martínez-Pérez E
+  - Mészáros B
+  - Mičetić I
+  - Minervini G
+  - Murvai N
+  - Necci M
+  - Ouzounis CA
+  - Pajkos M
+  - Paladin L
+  - Pancsa R
+  - Papaleo E
+  - Parisi G
+  - Pasche E
+  - Barbosa Pereira PJ
+  - Promponas VJ
+  - Pujols J
+  - Quaglia F
+  - Ruch P
+  - Salvatore M
+  - Schad E
+  - Szabo B
+  - Szaniszló T
+  - Tamana S
+  - Tantos A
+  - Veljkovic N
+  - Ventura S
+  - Vranken W
+  - Dosztányi Z
+  - Tompa P
+  - Tosatto SCE
+  - Piovesan D
+  doi: 10.1093/nar/gkz975
+  id: PMID:31713636
+  journal: Nucleic Acids Res
+  title: 'DisProt: intrinsic protein disorder annotation in 2020.'
+  year: '2020'
 ---
 
 # DisProt

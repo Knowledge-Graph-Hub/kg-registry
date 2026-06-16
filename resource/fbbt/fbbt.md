@@ -266,14 +266,49 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24139062
+- authors:
+  - Costa M
+  - Reeve S
+  - Grumbling G
+  - Osumi-Sutherland D
+  doi: 10.1186/2041-1480-4-32
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24139062
+  journal: J Biomed Semantics
   title: The Drosophila anatomy ontology
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
+  year: '2013'
+- authors:
+  - Osumi-Sutherland D
+  - Reeve S
+  - Mungall CJ
+  - Neuhaus F
+  - Ruttenberg A
+  - Jefferis GS
+  - Armstrong JD
+  doi: 10.1093/bioinformatics/bts113
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
+  journal: Bioinformatics
   title: A strategy for building neuroanatomy ontologies
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22180411
+  year: '2012'
+- authors:
+  - Milyaev N
+  - Osumi-Sutherland D
+  - Reeve S
+  - Burton N
+  - Baldock RA
+  - Armstrong JD
+  doi: 10.1093/bioinformatics/btr677
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22180411
+  journal: Bioinformatics
   title: The Virtual Fly Brain Browser and Query Interface
-- id: https://www.ncbi.nlm.nih.gov/pubmed/16381917
+  year: '2012'
+- authors:
+  - Grumbling G
+  - Strelets V
+  doi: 10.1093/nar/gkj068
+  id: https://www.ncbi.nlm.nih.gov/pubmed/16381917
+  journal: Nucleic Acids Res
   title: 'FlyBase: anatomical data, images and queries'
+  year: '2006'
 repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 taxon:
 - NCBITaxon:7227

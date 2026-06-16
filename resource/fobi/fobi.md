@@ -42,11 +42,26 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/32556148
-  title: 'FOBI: an ontology to represent food intake data and associate it with metabolomic
-    data'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34601570
+- authors:
+  - Castellano-Escuder P
+  - González-Domínguez R
+  - Wishart DS
+  - Andrés-Lacueva C
+  - Sánchez-Pla A
+  doi: 10.1093/databa/baaa033
+  id: https://www.ncbi.nlm.nih.gov/pubmed/32556148
+  journal: Database (Oxford)
+  title: 'FOBI: an ontology to represent food intake data and associate it with metabolomic data'
+  year: '2020'
+- authors:
+  - Castellano-Escuder P
+  - Andrés-Lacueva C
+  - Sánchez-Pla A
+  doi: 10.1093/bioinformatics/btab626
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34601570
+  journal: Bioinformatics
   title: 'The fobitools framework: the first steps towards food enrichment analysis'
+  year: '2021'
 ---
 ## Description
 

@@ -379,11 +379,29 @@ products:
   - relation_type: prov:wasInformedBy
     source: afo
 publications:
-- id: https://doi.org/10.1186/2041-1480-4-43
+- authors:
+  - Pier Buttigieg
+  - Norman Morrison
+  - Barry Smith
+  - Christopher J Mungall
+  - Suzanna E Lewis
+  doi: 10.1186/2041-1480-4-43
+  id: https://doi.org/10.1186/2041-1480-4-43
+  journal: Journal of Biomedical Semantics
   title: 'The environment ontology: contextualising biological and biomedical entities'
-- id: https://doi.org/10.1186/s13326-016-0097-6
-  title: 'The environment ontology in 2016: bridging domains with increased scope,
-    semantic density, and interoperation'
+  year: '2013'
+- authors:
+  - Pier Luigi Buttigieg
+  - Evangelos Pafilis
+  - Suzanna E. Lewis
+  - Mark P. Schildhauer
+  - Ramona L. Walls
+  - Christopher J. Mungall
+  doi: 10.1186/s13326-016-0097-6
+  id: https://doi.org/10.1186/s13326-016-0097-6
+  journal: Journal of Biomedical Semantics
+  title: 'The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation'
+  year: '2016'
 repository: https://github.com/EnvironmentOntology/envo
 ---
 ## Description

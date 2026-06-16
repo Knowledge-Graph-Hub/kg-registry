@@ -490,6 +490,7 @@ publications:
   - Morrey CP
   - Safran M
   - Lancet D
+  doi: 10.1093/database/bat018
   id: https://doi.org/10.1093/database/bat018
   journal: Database
   preferred: true
@@ -504,6 +505,7 @@ publications:
   - Stein TI
   - Safran M
   - Lancet D
+  doi: 10.1002/0471250953.bi0124s47
   id: https://doi.org/10.1002/0471250953.bi0124s47
   journal: Current Protocols in Bioinformatics
   preferred: false

@@ -47,12 +47,27 @@ products:
       - source: vario
         relation_type: prov:hadPrimarySource
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
-    title: Variation Ontology for annotation of variation effects and mechanisms
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
-    title: 'Variation ontology: annotator guide'
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
-    title: Types and effects of protein variations
+- authors:
+  - Vihinen M
+  doi: 10.1101/gr.157495.113
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
+  journal: Genome Res
+  title: Variation Ontology for annotation of variation effects and mechanisms
+  year: '2014'
+- authors:
+  - Vihinen M
+  doi: 10.1186/2041-1480-5-9
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
+  journal: J Biomed Semantics
+  title: 'Variation ontology: annotator guide'
+  year: '2014'
+- authors:
+  - Vihinen M
+  doi: 10.1007/s00439-015-1529-6
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
+  journal: Hum Genet
+  title: Types and effects of protein variations
+  year: '2015'
 ---
 
 ## Description

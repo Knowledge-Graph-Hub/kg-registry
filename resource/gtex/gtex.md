@@ -1085,14 +1085,15 @@ publications:
   - GTEx Consortium
   doi: 10.1126/science.aaz1776
   id: doi:10.1126/science.aaz1776
+  journal: Science
   title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
   year: '2020'
 - authors:
   - GTEx Consortium
   doi: 10.1126/science.1262110
   id: doi:10.1126/science.1262110
-  title: 'The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene regulation
-    in humans'
+  journal: Science
+  title: 'The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene regulation in humans'
   year: '2015'
 repository: https://github.com/broadinstitute/gtex-pipeline
 taxon:

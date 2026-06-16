@@ -1549,8 +1549,9 @@ publications:
   - Tzivanopoulou M
   - Wollbrett J
   - Robinson-Rechavi M
-  doi: doi:10.1093/nar/gkae1118
+  doi: 10.1093/nar/gkae1118
   id: doi:10.1093/nar/gkae1118
+  journal: Nucleic Acids Research
   preferred: true
   title: Bgee in 2024 - focus on curated single-cell RNA-seq datasets, and query tools
   year: '2025'
@@ -1578,10 +1579,10 @@ publications:
   - Sanjeev K
   - Seppey M
   - Robinson-Rechavi M
-  doi: doi:10.1093/nar/gkaa793
+  doi: 10.1093/nar/gkaa793
   id: doi:10.1093/nar/gkaa793
-  title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics
-    in animals
+  journal: Nucleic Acids Research
+  title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics in animals
   year: '2021'
 repository: https://github.com/BgeeDB/bgee_apps
 taxon:

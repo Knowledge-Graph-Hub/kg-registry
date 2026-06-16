@@ -5757,10 +5757,39 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
+- authors:
+  - Ashburner M
+  - Ball CA
+  - Blake JA
+  - Botstein D
+  - Butler H
+  - Cherry JM
+  - Davis AP
+  - Dolinski K
+  - Dwight SS
+  - Eppig JT
+  - Harris MA
+  - Hill DP
+  - Issel-Tarver L
+  - Kasarskis A
+  - Lewis S
+  - Matese JC
+  - Richardson JE
+  - Ringwald M
+  - Rubin GM
+  - Sherlock G
+  doi: 10.1038/75556
+  id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
+  journal: Nat Genet
   title: 'Gene ontology: tool for the unification of biology. The Gene Ontology Consortium'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
+  year: '2000'
+- authors:
+  - Gene Ontology Consortium
+  doi: 10.1093/nar/gkaa1113
+  id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
+  journal: Nucleic Acids Res
   title: 'The Gene Ontology resource: enriching a GOld mine'
+  year: '2021'
 repository: https://github.com/geneontology/go-ontology
 synonyms:
 - GO

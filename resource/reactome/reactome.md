@@ -5500,8 +5500,45 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- doi: doi:10.1093/nar/gkab1028
+- authors:
+  - Marc Gillespie
+  - Bijay Jassal
+  - Ralf Stephan
+  - Marija Milacic
+  - Karen Rothfels
+  - Andrea Senff-Ribeiro
+  - Johannes Griss
+  - Cristoffer Sevilla
+  - Lisa Matthews
+  - Chuqiao Gong
+  - Chuan Deng
+  - Thawfeek Varusai
+  - Eliot Ragueneau
+  - Yusra Haider
+  - Bruce May
+  - Veronica Shamovsky
+  - Joel Weiser
+  - Timothy Brunson
+  - Nasim Sanati
+  - Liam Beckman
+  - Xiang Shao
+  - Antonio Fabregat
+  - Konstantinos Sidiropoulos
+  - Julieth Murillo
+  - Guilherme Viteri
+  - Justin Cook
+  - Solomon Shorser
+  - Gary Bader
+  - Emek Demir
+  - Chris Sander
+  - Robin Haw
+  - Guanming Wu
+  - Lincoln Stein
+  - Henning Hermjakob
+  - Peter D’Eustachio
+  doi: 10.1093/nar/gkab1028
   id: doi:10.1093/nar/gkab1028
+  journal: Nucleic Acids Research
   preferred: true
   title: The Reactome pathway knowledgebase 2022
   year: '2022'

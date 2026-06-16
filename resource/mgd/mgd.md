@@ -126,11 +126,92 @@ products:
     source: clinicaltrialsgov
   product_url: https://www.disgenet.com/
 publications:
-- id: https://doi.org/10.1093/genetics/iyae031
-  title: 'Mouse Genome Informatics: an integrated knowledgebase system for the laboratory
-    mouse'
-- id: https://doi.org/10.1093/nar/gkaa1083
+- authors:
+  - Richard M Baldarelli
+  - Cynthia L Smith
+  - Martin Ringwald
+  - Joel E Richardson
+  - Carol J Bult
+  - Anna Anagnostopoulos
+  - Dale A Begley
+  - Susan M Bello
+  - Karen Christie
+  - Jacqueline H Finger
+  - Paul Hale
+  - Terry F Hayamizu
+  - David P Hill
+  - Michelle N Knowlton
+  - Debra M Krupke
+  - Monica McAndrews
+  - Meiyee Law
+  - Ingeborg J McCright
+  - Li Ni
+  - Hiroaki Onda
+  - Dmitry Sitnikov
+  - Constance M Smith
+  - Monika Tomczuk
+  - Laurens Wilming
+  - Jingxia Xu
+  - Yunxia Zhu
+  - Olin Blodgett
+  - Jeffrey W Campbell
+  - Lori E Corbani
+  - Peter Frost
+  - Sharon C Giannatto
+  - David B Miers
+  - Howie Motenko
+  - Steven B Neuhauser
+  - David R Shaw
+  - Nancy E Butler
+  - Janice E Ormsby
+  doi: 10.1093/genetics/iyae031
+  id: https://doi.org/10.1093/genetics/iyae031
+  journal: GENETICS
+  title: 'Mouse Genome Informatics: an integrated knowledgebase system for the laboratory mouse'
+  year: '2024'
+- authors:
+  - Judith A Blake
+  - Richard Baldarelli
+  - James A Kadin
+  - Joel E Richardson
+  - Cynthia L Smith
+  - Carol J Bult
+  - Anna V Anagnostopoulos
+  - Jon S Beal
+  - Susan M Bello
+  - Olin Blodgett
+  - Nancy E Butler
+  - Jeffry Campbell
+  - Karen R Christie
+  - Lori E Corbani
+  - Mary E Dolan
+  - Harold J Drabkin
+  - Maria Flores
+  - Susan L Giannatto
+  - Angelina Guerra
+  - Paul Hale
+  - David P Hill
+  - Jonathan Judd
+  - Meiyee Law
+  - Monica McAndrews
+  - David Miers
+  - Cailey Mitchell
+  - Howie Motenko
+  - Li Ni
+  - Hiroaki Onda
+  - Janice Ormsby
+  - Michelle Perry
+  - Jill M Recla
+  - David Shaw
+  - Dmitry Sitnikov
+  - Monika Tomczuk
+  - Lauren Wilming
+  - Yunxia ‘Sophia’ Zhu
+  doi: 10.1093/nar/gkaa1083
+  id: https://doi.org/10.1093/nar/gkaa1083
+  journal: Nucleic Acids Research
   title: 'Mouse Genome Database (MGD): Knowledgebase for mouse-human comparative biology'
+  year: '2021'
 repository: https://github.com/mgijax
 synonyms:
 - MGD

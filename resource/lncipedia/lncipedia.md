@@ -454,13 +454,47 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - category: Publication
-    id: PMID:30371849
-    preferred: true
-  - category: Publication
-    id: PMID:25378313
-  - category: Publication
-    id: PMID:23042674
+- authors:
+  - Volders PJ
+  - Anckaert J
+  - Verheggen K
+  - Nuytens J
+  - Martens L
+  - Mestdagh P
+  - Vandesompele J
+  doi: 10.1093/nar/gky1031
+  id: PMID:30371849
+  journal: Nucleic Acids Res
+  preferred: true
+  title: 'LNCipedia 5: towards a reference set of human long non-coding RNAs.'
+  year: '2019'
+- authors:
+  - Volders PJ
+  - Verheggen K
+  - Menschaert G
+  - Vandepoele K
+  - Martens L
+  - Vandesompele J
+  - Mestdagh P
+  doi: 10.1093/nar/gku1060
+  id: PMID:25378313
+  journal: Nucleic Acids Res
+  title: 'An update on LNCipedia: a database for annotated human lncRNA sequences.'
+  year: '2015'
+- authors:
+  - Volders PJ
+  - Helsens K
+  - Wang X
+  - Menten B
+  - Martens L
+  - Gevaert K
+  - Vandesompele J
+  - Mestdagh P
+  doi: 10.1093/nar/gks915
+  id: PMID:23042674
+  journal: Nucleic Acids Res
+  title: 'LNCipedia: a database for annotated human lncRNA transcript sequences and structures.'
+  year: '2013'
 taxon:
   - NCBITaxon:9606
 warnings:

@@ -258,25 +258,23 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1371_journal.pone.0089606.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1371_journal.pone.0089606.md
   resource/bgee/bgee.md#publication[0]#DOI:10.1093/nar/gkae1118:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:25Z'
     errors: []
-    fingerprint: 46f01029b7c9a60a6d863a6180f8624554787d606f1326087042f507f0466036
+    fingerprint: 35a79076bc498d7f6640b2451fec49ad3c9ebb7e8d825a500834e8e6f0e8e4c1
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkae1118
     source_path: resource/bgee/bgee.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkae1118.md
+    status: valid
+    warnings: []
   resource/bgee/bgee.md#publication[1]#DOI:10.1093/nar/gkaa793:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:25Z'
     errors: []
-    fingerprint: de3026ff2a71771b21a6a1d966719994a460eeb336eecc7b3d8f0cde047dea74
+    fingerprint: fe6f09def266bb917966da1436877d33623bdae5480f4414ce0bb2f55634e776
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkaa793
     source_path: resource/bgee/bgee.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa793.md
+    status: valid
+    warnings: []
   resource/bigg/bigg.md#publication[0]#DOI:10.1093/nar/gkv1049:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -724,31 +722,23 @@ entries:
     status: valid
     warnings: []
   resource/chebi/chebi.md#publication[0]#DOI:10.1093/nar/gkaf1271:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:53Z'
     errors: []
-    fingerprint: f6ab46ce9347f3b64044701c683a47f0ade4c3e4da506d82d5c413feaf22e98a
+    fingerprint: 7fc8a433a542248e3d65d6fd089613e33124c508c800b6f5edc284b7aabd51ab
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkaf1271
     source_path: resource/chebi/chebi.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaf1271.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaf1271.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaf1271.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaf1271.md
+    status: valid
+    warnings: []
   resource/chebi/chebi.md#publication[1]#PMID:26467479:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:53Z'
     errors: []
-    fingerprint: 02d38c678b3a43a669ef452351306f97fddb686877f87871a77c37efae990090
+    fingerprint: 8342ddaa115c196b1c8e78c2f8979b8ac17288f7a5e362d2c9a33ae81e163586
     publication_index: 1
     reference_id: PMID:26467479
     source_path: resource/chebi/chebi.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_26467479.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_26467479.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_26467479.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_26467479.md
+    status: valid
+    warnings: []
   resource/chembl/chembl.md#publication[0]#DOI:10.1093/nar/gkad1004:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -959,31 +949,23 @@ entries:
     warnings:
     - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky965.md
   resource/cmo/cmo.md#publication[0]#PMID:22654893:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:53Z'
     errors: []
-    fingerprint: c4b3e07a9ef2dbc0cdc1e0bc741464d097bdcb469d702ff3ef3cbaa667df3161
+    fingerprint: 5836d15e512c6861ae355f6391c6e01d823f9e9819428f53e305be5e8323f6b7
     publication_index: 0
     reference_id: PMID:22654893
     source_path: resource/cmo/cmo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22654893.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_22654893.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22654893.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22654893.md
+    status: valid
+    warnings: []
   resource/cmo/cmo.md#publication[1]#PMID:24103152:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:53Z'
     errors: []
-    fingerprint: 99be0025f694ab3322a4bcb41c0816966ae7613822ede57b0697407b9a94e477
+    fingerprint: 48f9d4218fcbe9cec12e8d20b9fa277fef630a6eb9648ac83eed5fd205685767
     publication_index: 1
     reference_id: PMID:24103152
     source_path: resource/cmo/cmo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_24103152.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_24103152.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_24103152.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_24103152.md
+    status: valid
+    warnings: []
   resource/cohd/cohd.md#publication[0]#DOI:10.1038/sdata.2018.273:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1111,44 +1093,32 @@ entries:
     status: valid
     warnings: []
   resource/ctrp/ctrp.md#publication[0]#DOI:10.1038/nchembio.1986:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:58Z'
     errors: []
-    fingerprint: bdb61cbdf4f0fb7edd799f9f981007d4ed1dbaeb61ab7f8b9a176ae4de040fcb
+    fingerprint: 65d4ab18857c71d4fd7faaff748aedf44521ddc3af32a0b5ac4fc877ef864ca3
     publication_index: 0
     reference_id: DOI:10.1038/nchembio.1986
     source_path: resource/ctrp/ctrp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_nchembio.1986.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nchembio.1986.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nchembio.1986.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nchembio.1986.md
+    status: valid
+    warnings: []
   resource/ctrp/ctrp.md#publication[1]#DOI:10.1158/2159-8290.CD-15-0235:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:58Z'
     errors: []
-    fingerprint: dbb0f0429fa32b2caa814c76c42a5918e1e446c8f9f4b75be87f2deb739b3d71
+    fingerprint: 36c667d8bc914d79ebacbbbe983bcd53186bda7c79d3754e24bbe15b95735f72
     publication_index: 1
     reference_id: DOI:10.1158/2159-8290.CD-15-0235
     source_path: resource/ctrp/ctrp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1158_2159-8290.CD-15-0235.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1158_2159-8290.CD-15-0235.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1158_2159-8290.CD-15-0235.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1158_2159-8290.CD-15-0235.md
+    status: valid
+    warnings: []
   resource/ctrp/ctrp.md#publication[2]#DOI:10.1016/j.cell.2013.08.003:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:58Z'
     errors: []
-    fingerprint: 51b00c9dfbb72ab16ae09e7dba511abce433c21a77db1cd822dae918cddb395e
+    fingerprint: 559f5e40ce35f600fd57fafd43ccb50eaf0a5fda49c0f983bc818a65c5ff73f0
     publication_index: 2
     reference_id: DOI:10.1016/j.cell.2013.08.003
     source_path: resource/ctrp/ctrp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.cell.2013.08.003.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.cell.2013.08.003.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.cell.2013.08.003.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.cell.2013.08.003.md
+    status: valid
+    warnings: []
   resource/cytoscape/cytoscape.md#publication[0]#DOI:10.1101/gr.1239303:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1342,44 +1312,32 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_26147071.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_26147071.md
   resource/dip/dip.md#publication[0]#DOI:10.1093/nar/30.1.303:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:00Z'
     errors: []
-    fingerprint: fffd37c64026c27b1ed02d51e4fcf06c87b45dc7dead7a9b833250c89c5ff361
+    fingerprint: b21a35a3e43cde84dff5319928ee04e8f0da75bca5bdca73d0ca7549b0eec1e6
     publication_index: 0
     reference_id: DOI:10.1093/nar/30.1.303
     source_path: resource/dip/dip.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_30.1.303.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_30.1.303.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_30.1.303.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_30.1.303.md
+    status: valid
+    warnings: []
   resource/dip/dip.md#publication[1]#DOI:10.1093/nar/gkh086:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:00Z'
     errors: []
-    fingerprint: b7ead96da8fc7f22d96e3635b704ed01d86fa3021f12d4f54bcdab3cc2cebb33
+    fingerprint: 8a572a2f7a0654e0201ce6d3a0f77920453f96b4ffe18bd8a2983889129aec19
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkh086
     source_path: resource/dip/dip.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkh086.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkh086.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkh086.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkh086.md
+    status: valid
+    warnings: []
   resource/dip/dip.md#publication[2]#DOI:10.1038/nmeth.1931:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:00Z'
     errors: []
-    fingerprint: 0a6af507a7d8c21edee77e952d4f0e72b02b3f9eebc41dfc7eccf32ca8c57cbe
+    fingerprint: 16164dccf1e514d46e9ccb0f8bfb60aa08a9133365ab639b577051dcb5047f8c
     publication_index: 2
     reference_id: DOI:10.1038/nmeth.1931
     source_path: resource/dip/dip.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_nmeth.1931.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nmeth.1931.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nmeth.1931.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nmeth.1931.md
+    status: valid
+    warnings: []
   resource/disbiome/disbiome.md#publication[0]#DOI:10.1186/s12866-018-1197-5:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1390,33 +1348,23 @@ entries:
     status: valid
     warnings: []
   resource/diseases/diseases.md#publication[0]#PMID:35348650:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:56Z'
     errors: []
-    fingerprint: 333430ba277d1437214853f991cd7e066ca473883be18aa189be9bc1432373cf
+    fingerprint: e06a9773da406dabb44c5231b4f331583b8923fc4eae9dbe1fb49a7dd4dcba77
     publication_index: 0
     reference_id: PMID:35348650
     source_path: resource/diseases/diseases.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_35348650.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_35348650.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_35348650.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_35348650.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_35348650.md
+    status: valid
+    warnings: []
   resource/diseases/diseases.md#publication[1]#PMID:25484339:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:56Z'
     errors: []
-    fingerprint: 9b9b41838bd9394d2d27d3c06b6555f8a6d8f5f9dcb62cb3d87b3a5f31c7631f
+    fingerprint: f57eff39280b25c4066eb10f7f269964c3278388ab5d8995dfa4bac304829813
     publication_index: 1
     reference_id: PMID:25484339
     source_path: resource/diseases/diseases.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25484339.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_25484339.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25484339.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25484339.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25484339.md
+    status: valid
+    warnings: []
   resource/disgenet/disgenet.md#publication[0]#DOI:10.1093/nar/gkz1021:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1428,47 +1376,32 @@ entries:
     warnings:
     - year '2020' does not match cached year '2019' in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz1021.md
   resource/disprot/disprot.md#publication[0]#PMID:37904585:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:03Z'
     errors: []
-    fingerprint: 86cb76c3171458f1e9470b0e011f482f186b375dd074187d1d7a06cb21fea335
+    fingerprint: 5927403e0c43b4eb76dc90fda82e30e58d50f8e9a11de229e7363cc3133cbb53
     publication_index: 0
     reference_id: PMID:37904585
     source_path: resource/disprot/disprot.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_37904585.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_37904585.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_37904585.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_37904585.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_37904585.md
+    status: valid
+    warnings: []
   resource/disprot/disprot.md#publication[1]#PMID:34850135:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:03Z'
     errors: []
-    fingerprint: ef7d4d32de0e97afcfcc2d9a8b1fe1df98cc692abbec1757019d2a8fecf8703c
+    fingerprint: ee2fbfd22f8060ec93ba377131bcefe3f3b95c39b1d4a8c5754e558c7dd77efb
     publication_index: 1
     reference_id: PMID:34850135
     source_path: resource/disprot/disprot.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_34850135.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_34850135.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34850135.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34850135.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34850135.md
+    status: valid
+    warnings: []
   resource/disprot/disprot.md#publication[2]#PMID:31713636:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:03Z'
     errors: []
-    fingerprint: 30068fa76ba96bad273155074632a5fbd83c27f716d8dc94cc468cddb8752987
+    fingerprint: 494bea4f0c451f4ce73fe630614b72a706be26715b438b894ddcf3aa1f638f61
     publication_index: 2
     reference_id: PMID:31713636
     source_path: resource/disprot/disprot.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_31713636.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_31713636.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_31713636.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_31713636.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_31713636.md
+    status: valid
+    warnings: []
   resource/doaf/doaf.md#publication[0]#DOI:10.1371/journal.pone.0049686:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1479,31 +1412,23 @@ entries:
     status: valid
     warnings: []
   resource/doid/doid.md#publication[0]#PMID:25348409:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:59Z'
     errors: []
-    fingerprint: 2e9a85466d179acced661d48484e3bd762dd6a0545fd7fff9d9804891b167d1d
+    fingerprint: df2cd6cc2cbabe12a6e00d9f99dc4f7a062f8835491a2b978416405c4f1af89e
     publication_index: 0
     reference_id: PMID:25348409
     source_path: resource/doid/doid.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25348409.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25348409.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25348409.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25348409.md
+    status: valid
+    warnings: []
   resource/doid/doid.md#publication[1]#PMID:34755882:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:59Z'
     errors: []
-    fingerprint: ae2bcb80da04c30bf16f3e76c6040bf5f8b77515faa453e4b814de5872d85fb1
+    fingerprint: 54e4e9aa3b66c356b83deaeb6bb1dbf1784e4bc10beb54c0d041b9110f12bb72
     publication_index: 1
     reference_id: PMID:34755882
     source_path: resource/doid/doid.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_34755882.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
+    status: valid
+    warnings: []
   resource/dorothea/dorothea.md#publication[0]#DOI:10.1101/gr.240663.118:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1550,27 +1475,23 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-017-0121-5.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-017-0121-5.md
   resource/drugbank/drugbank.md#publication[0]#DOI:10.1093/nar/gkad976:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:46Z'
     errors: []
-    fingerprint: bf0e60203b205aea669801a29413f4bd96eecbb48afa17ad1dc8065689500544
+    fingerprint: 9e634dbc81cce41e08109de0ccc790d451222b95c9860aa2fec3248599a68e95
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad976
     source_path: resource/drugbank/drugbank.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad976.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad976.md
+    status: valid
+    warnings: []
   resource/drugbank/drugbank.md#publication[1]#DOI:10.1093/nar/gkx1037:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:46Z'
     errors: []
-    fingerprint: 2957da406f5af17bf1aa809245fc8f9a2f1f6878dafe4eef0e8608ddbedcd7f9
+    fingerprint: 6191d73ad865a9e379dbfb4272514aa3c229233b100b412fe4f6c481fda40a7e
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkx1037
     source_path: resource/drugbank/drugbank.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkx1037.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkx1037.md
+    status: valid
+    warnings: []
   resource/drugcentral/drugcentral.md#publication[0]#DOI:10.1093/nar/gkw993:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1620,44 +1541,32 @@ entries:
     warnings:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.envint.2022.107240.md
   resource/eco/eco.md#publication[0]#PMID:34986598:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:05Z'
     errors: []
-    fingerprint: b0af7f12ddc34665bdfe333d892441eefd6f0eeee7c26b4eac3b65c4c43cbb97
+    fingerprint: d9404e09cc7112acc4f411d8094503bbc74d0a2f30d6d58a0f579d31921f572d
     publication_index: 0
     reference_id: PMID:34986598
     source_path: resource/eco/eco.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_34986598.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34986598.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34986598.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34986598.md
+    status: valid
+    warnings: []
   resource/eco/eco.md#publication[1]#PMID:30407590:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:05Z'
     errors: []
-    fingerprint: 977ca753d9489725a1ad511a0709874b6130e8b0ddde651231a0cec746d95643
+    fingerprint: 3107c9116bbcd29a01b7db871a170ca148c61826b68952561861346fb46b5958
     publication_index: 1
     reference_id: PMID:30407590
     source_path: resource/eco/eco.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_30407590.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_30407590.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_30407590.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_30407590.md
+    status: valid
+    warnings: []
   resource/eco/eco.md#publication[2]#PMID:25052702:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:05Z'
     errors: []
-    fingerprint: 60802ad8636dec4433a18cde18a822eb63fd05930ed8573d71e81ddbbc1c7ff1
+    fingerprint: 8a6729133b71aea48c0a32fd45663ed5e6522b3cb41e759e9f4c29827d7b0dfa
     publication_index: 2
     reference_id: PMID:25052702
     source_path: resource/eco/eco.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25052702.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25052702.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25052702.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25052702.md
+    status: valid
+    warnings: []
   resource/edam/edam.md#publication[0]#DOI:10.1093/bioinformatics/btt113:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1717,44 +1626,32 @@ entries:
     status: valid
     warnings: []
   resource/emapa/emapa.md#publication[0]#PMID:9651497:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:08Z'
     errors: []
-    fingerprint: f5fb6aa95e2b968996498c2a0691b12f16c134eff923124852bcde147dbfce22
+    fingerprint: ecce019fd4d332976502bee3eab18eb1a1387b086f12fa644f9b76bd2922e471
     publication_index: 0
     reference_id: PMID:9651497
     source_path: resource/emapa/emapa.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_9651497.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_9651497.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_9651497.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_9651497.md
+    status: valid
+    warnings: []
   resource/emapa/emapa.md#publication[1]#PMID:23972281:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:08Z'
     errors: []
-    fingerprint: 456e42b90cbd07be009b468b83882926e7edae218cce43e3f091a570e05ec1b0
+    fingerprint: 4dcf516f9bac832a64676e8230c4b4d2507e61444e09877d8ad042748e57e456
     publication_index: 1
     reference_id: PMID:23972281
     source_path: resource/emapa/emapa.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_23972281.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_23972281.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_23972281.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_23972281.md
+    status: valid
+    warnings: []
   resource/emapa/emapa.md#publication[2]#PMID:26208972:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:08Z'
     errors: []
-    fingerprint: 16cccd3d23ef0874edf19e076c459a81833964c7de7835c527816f2384d924ae
+    fingerprint: ec62f1809d3a49e74e669fadd1995271b404c4929aef1e21cebb49f279a7cba6
     publication_index: 2
     reference_id: PMID:26208972
     source_path: resource/emapa/emapa.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_26208972.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_26208972.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_26208972.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_26208972.md
+    status: valid
+    warnings: []
   resource/emapa/emapa.md#publication[3]#DOI:10.1016/B978-0-12-800043-4.00023-3:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1763,6 +1660,18 @@ entries:
     reference_id: DOI:10.1016/B978-0-12-800043-4.00023-3
     source_path: resource/emapa/emapa.md
     status: valid
+    warnings: []
+  resource/emapa/emapa.md#publication[4]#DOI:10.1016/B978-0-12-800043-4.00023-3:
+    checked_at: '2026-06-15T21:55:08Z'
+    errors:
+    - 'title ''Textual Anatomics: the Mouse Developmental Anatomy Ontology and the
+      Gene Expression Database for Mouse Development (GXD)'' does not match cached
+      title ''Textual Anatomics'' in references_cache/DOI_10.1016_B978-0-12-800043-4.00023-3.md'
+    fingerprint: 1de3ca1a3f866980ecd8c8c72904bc8216d37b68b7ef2f1e5ce14d8a2e69d22e
+    publication_index: 4
+    reference_id: DOI:10.1016/B978-0-12-800043-4.00023-3
+    source_path: resource/emapa/emapa.md
+    status: error
     warnings: []
   resource/emeraldgraph/emeraldgraph.md#publication[0]#DOI:10.1145/3774904.3792997:
     checked_at: '2026-06-12T20:32:32Z'
@@ -1840,31 +1749,23 @@ entries:
     status: valid
     warnings: []
   resource/envo/envo.md#publication[0]#DOI:10.1186/2041-1480-4-43:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:02:02Z'
     errors: []
-    fingerprint: 5349952022a5245f033a3c0f4c33030c3228d3fd655ed60417936dd98584773a
+    fingerprint: 1907d750665799a27a5f7bb3efbdabc221635d4af0bdd3ded8c6237601121559
     publication_index: 0
     reference_id: DOI:10.1186/2041-1480-4-43
     source_path: resource/envo/envo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1186_2041-1480-4-43.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1186_2041-1480-4-43.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1186_2041-1480-4-43.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1186_2041-1480-4-43.md
+    status: valid
+    warnings: []
   resource/envo/envo.md#publication[1]#DOI:10.1186/s13326-016-0097-6:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:02:02Z'
     errors: []
-    fingerprint: 5f466116aa7421475244c03dbf768e4a10fca51e231f796cc57f97a99e0d1848
+    fingerprint: cb51c601833817c021dfcc84f6bcb1e3442780a71b88d165b439975bfe045534
     publication_index: 1
     reference_id: DOI:10.1186/s13326-016-0097-6
     source_path: resource/envo/envo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0097-6.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0097-6.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0097-6.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s13326-016-0097-6.md
+    status: valid
+    warnings: []
   resource/eo/eo.md#publication[0]#PMID:22847540:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1907,25 +1808,23 @@ entries:
     warnings:
     - year '2020' does not match cached year '2021' in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btaa961.md
   resource/epsd/epsd.md#publication[0]#DOI:10.1093/gpbjnl/qzaf057:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:28Z'
     errors: []
-    fingerprint: 37d4e8717ae95ea369d489cfb00fedea46ea04748474670cf15e92c19989d840
+    fingerprint: e71f86c506bd8ffcb7753eaaa9c9de11da6f01da388917d792d78bc6201fe3a8
     publication_index: 0
     reference_id: DOI:10.1093/gpbjnl/qzaf057
     source_path: resource/epsd/epsd.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_gpbjnl_qzaf057.md
+    status: valid
+    warnings: []
   resource/epsd/epsd.md#publication[1]#DOI:10.1093/bib/bbz169:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:28Z'
     errors: []
-    fingerprint: 0a3656e7829aab09cb2e1d953379e3fb2278a9f1e9c793998b544eaf2ca99f11
+    fingerprint: 26609937ae58adb7cfe3e9795573083ad8fd7a13f7b947d6daad0aee51844d11
     publication_index: 1
     reference_id: DOI:10.1093/bib/bbz169
     source_path: resource/epsd/epsd.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_bib_bbz169.md
+    status: valid
+    warnings: []
   resource/eqtlgen/eqtlgen.md#publication[0]#DOI:10.1038/s41588-021-00913-z:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2021,79 +1920,59 @@ entries:
     warnings:
     - year '2020' does not match cached year '2019' in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz947.md
   resource/fbbt/fbbt.md#publication[0]#PMID:24139062:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:57Z'
     errors: []
-    fingerprint: 8b816e43ce20f65a03c746a4e8202657671e097c3f51cb442f997b7e6603d781
+    fingerprint: cc869356df0988872ed87ad1e3f62018809a8d36b71914d9ef344cddcdc7a200
     publication_index: 0
     reference_id: PMID:24139062
     source_path: resource/fbbt/fbbt.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_24139062.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_24139062.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_24139062.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_24139062.md
+    status: valid
+    warnings: []
   resource/fbbt/fbbt.md#publication[1]#PMID:22402613:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:57Z'
     errors: []
-    fingerprint: 6b1183621150e22901fd80362642e9a1f55cfda987a64a53e44f1e394844a0bf
+    fingerprint: bd80dc807bd215c591259a62f61b45488af79a852daea41d72b4dd45aa6cd578
     publication_index: 1
     reference_id: PMID:22402613
     source_path: resource/fbbt/fbbt.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22402613.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_22402613.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22402613.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22402613.md
+    status: valid
+    warnings: []
   resource/fbbt/fbbt.md#publication[2]#PMID:22180411:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:57Z'
     errors: []
-    fingerprint: 759dfc535890ea49db9599d8452657dc5f6bf88cb36dcc70909cf7dfed9c2053
+    fingerprint: d647e8b15575a78b5ccba617d9cd3dcd29c6437c851e281c5adc4b22e22a61a2
     publication_index: 2
     reference_id: PMID:22180411
     source_path: resource/fbbt/fbbt.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22180411.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_22180411.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22180411.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22180411.md
+    status: valid
+    warnings: []
   resource/fbbt/fbbt.md#publication[3]#PMID:16381917:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:54:57Z'
     errors: []
-    fingerprint: 3e01780e260453b1031fa36324ce0f17f8082eee8ded902023515288465946b2
+    fingerprint: 80b3bbbec7ffbbde362d4aea048adf91b5410dbbc4e15157ad0bf53eb6cbe849
     publication_index: 3
     reference_id: PMID:16381917
     source_path: resource/fbbt/fbbt.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_16381917.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_16381917.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_16381917.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_16381917.md
+    status: valid
+    warnings: []
   resource/finngen/finngen.md#publication[0]#DOI:10.1038/s41588-024-01975-5:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:31Z'
     errors: []
-    fingerprint: 8763544b56c181187164fe08fe679b38e38bd67f301e8a8135ec1bfc07b6d69d
+    fingerprint: 5b94dfac3e96fcb58a60afdc56cbebbd458dc108975565478f3a5149c568466e
     publication_index: 0
     reference_id: DOI:10.1038/s41588-024-01975-5
     source_path: resource/finngen/finngen.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41588-024-01975-5.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41588-024-01975-5.md
+    status: valid
+    warnings: []
   resource/finngen/finngen.md#publication[1]#DOI:10.1038/s41588-025-02100-w:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:31Z'
     errors: []
-    fingerprint: 2230afe79bc9e443a42d570d881aee66daec52c9e07b6a8e646d623964894001
+    fingerprint: ace109138b23bda344894b465d58d9341f95684e927b53f41fd7588f91a1e684
     publication_index: 1
     reference_id: DOI:10.1038/s41588-025-02100-w
     source_path: resource/finngen/finngen.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41588-025-02100-w.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41588-025-02100-w.md
+    status: valid
+    warnings: []
   resource/flopo/flopo.md#publication[0]#PMID:27842607:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2108,69 +1987,50 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_27842607.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_27842607.md
   resource/fma/fma.md#publication[0]#PMID:18688289:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:10Z'
     errors: []
-    fingerprint: 9796e3f7f33b7b9828e48ea2604f2a441f5513a81de7c6fc6fe21b5983d47a5c
+    fingerprint: ea5040aee81d7c01b21710593d54cfa707fd6273514609f14770d7c90f305ce9
     publication_index: 0
     reference_id: PMID:18688289
     source_path: resource/fma/fma.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_18688289.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_18688289.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_18688289.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_18688289.md
+    status: valid
+    warnings: []
   resource/fma/fma.md#publication[1]#PMID:18360535:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:10Z'
     errors: []
-    fingerprint: 9d2ed68d8c62ab9e97aef7c495d6f1e62d727b4744e9beae12993137e84f523b
+    fingerprint: 77c03d46f3eeaaa56b418fc2fb5e712478e08aed9ed68bb33b62ba969be4ba57
     publication_index: 1
     reference_id: PMID:18360535
     source_path: resource/fma/fma.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_18360535.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_18360535.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_18360535.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_18360535.md
+    status: valid
+    warnings: []
   resource/fma/fma.md#publication[2]#PMID:16779026:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:10Z'
     errors: []
-    fingerprint: 18a553eb252bafe992c2388507b70816321e5b94df0f6ae2a74f49c14bf5c668
+    fingerprint: f6401803d0cc55d69f91a21b8f68b31fd2684cae55dcc50b91fc9b3a834bff57
     publication_index: 2
     reference_id: PMID:16779026
     source_path: resource/fma/fma.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_16779026.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_16779026.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_16779026.md
+    status: valid
+    warnings: []
   resource/fobi/fobi.md#publication[0]#PMID:32556148:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:02:04Z'
     errors: []
-    fingerprint: b14776986eaf4b0937c3ae8536e3faff899d197a7e376a44c54343d3888ea20a
+    fingerprint: 1eec29815a2b14f51782150dc243c8455f8158ebe05fe330e250e7098f8baaf5
     publication_index: 0
     reference_id: PMID:32556148
     source_path: resource/fobi/fobi.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_32556148.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_32556148.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_32556148.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_32556148.md
+    status: valid
+    warnings: []
   resource/fobi/fobi.md#publication[1]#PMID:34601570:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:02:04Z'
     errors: []
-    fingerprint: 045e63b1399b6c691d63010df8ee9ee226b487ad8194a0c2a378fbc4d7507e25
+    fingerprint: c6a8daeb36b3208209bba07c8ce81b17e642b673d6b85451fb7efd514285c067
     publication_index: 1
     reference_id: PMID:34601570
     source_path: resource/fobi/fobi.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_34601570.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34601570.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34601570.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34601570.md
+    status: valid
+    warnings: []
   resource/foodb/foodb.md#publication[0]#DOI:10.1093/nar/gkn810:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2486,31 +2346,23 @@ entries:
     warnings:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41588-019-0500-1.md
   resource/go/go.md#publication[0]#PMID:10802651:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:32Z'
     errors: []
-    fingerprint: d4bd375b8139b5e1d05496c7ae713b443b4a78fce857e2b4fac977b266ab17df
+    fingerprint: 6d719ed70c48e0abcb54c21fe06c242681c8c34c02f1d33db4895082c8e20fde
     publication_index: 0
     reference_id: PMID:10802651
     source_path: resource/go/go.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_10802651.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_10802651.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_10802651.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_10802651.md
+    status: valid
+    warnings: []
   resource/go/go.md#publication[1]#PMID:33290552:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:32Z'
     errors: []
-    fingerprint: f2253279620c582a517903ae0a07e72ddc34695817fe49a1c90adabbffefcd12
+    fingerprint: 12788bd762f40bf8c3ef98c2f1c0f76a714ebe1344850fa2f9f9ebb23a358bf8
     publication_index: 1
     reference_id: PMID:33290552
     source_path: resource/go/go.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_33290552.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_33290552.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_33290552.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_33290552.md
+    status: valid
+    warnings: []
   resource/gp-kg/gp-kg.md#publication[0]#DOI:10.1016/j.jbi.2022.104133:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2532,29 +2384,27 @@ entries:
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41587-023-01845-1.md
   resource/gtex/gtex.md#publication[0]#DOI:10.1126/science.aaz1776:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:33Z'
     errors: []
-    fingerprint: 9b35a975cc94b1acde97a0f2e3cd4bb1ab5a169a3e5b6688e968493e1f739f7e
+    fingerprint: d1cc7f81ec14c9faa21f2fa729b184ac3f1843c25119108ba6b683a7ed0b398a
     publication_index: 0
     reference_id: DOI:10.1126/science.aaz1776
     source_path: resource/gtex/gtex.md
     status: warning
     warnings:
     - "first author 'GTEx Consortium' could not be confidently compared to cached\
-      \ first author 'Fran\xE7ois Aguet' in /home/harry/kg-registry/references_cache/DOI_10.1126_science.aaz1776.md"
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1126_science.aaz1776.md
+      \ first author 'Fran\xE7ois Aguet' in references_cache/DOI_10.1126_science.aaz1776.md"
   resource/gtex/gtex.md#publication[1]#DOI:10.1126/science.1262110:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:33Z'
     errors: []
-    fingerprint: 296392e71e7a312d0bca2c7f7ab76bf8444a926db62e435b0524f7d5d783f9b0
+    fingerprint: 16a9c214a5c33f73c7ee7c4ba6adae862e6643036ea35232881e48d4caad80cb
     publication_index: 1
     reference_id: DOI:10.1126/science.1262110
     source_path: resource/gtex/gtex.md
     status: warning
     warnings:
     - first author 'GTEx Consortium' could not be confidently compared to cached first
-      author 'Kristin G. Ardlie' in /home/harry/kg-registry/references_cache/DOI_10.1126_science.1262110.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1126_science.1262110.md
+      author 'Kristin G. Ardlie' in references_cache/DOI_10.1126_science.1262110.md
   resource/gtopdb/gtopdb.md#publication[0]#DOI:10.1093/nar/gkad944:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2565,25 +2415,23 @@ entries:
     status: valid
     warnings: []
   resource/gtrnadb/gtrnadb.md#publication[0]#DOI:10.1093/nar/gkv1309:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:36Z'
     errors: []
-    fingerprint: 2f188f2148dbadd6a4e381946dc651815f66b0a288e4b95c49e20c5c77599fd7
+    fingerprint: 9f754f13cd2e7abd4993d1baa82d4f4804be8d344f29dd36967dd589cb8d14c2
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkv1309
     source_path: resource/gtrnadb/gtrnadb.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkv1309.md
+    status: valid
+    warnings: []
   resource/gtrnadb/gtrnadb.md#publication[1]#DOI:10.1093/nar/gkn787:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:36Z'
     errors: []
-    fingerprint: 63d3004bf1e225b9c717fb9314efea703bb7957fcd64ec049cac5543c33df077
+    fingerprint: 56a16c56f5b92b9b52a5c54db85d711d562591fa7b7ead1a6abb1caebecd0ca4
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkn787
     source_path: resource/gtrnadb/gtrnadb.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkn787.md
+    status: valid
+    warnings: []
   resource/gtrx/gtrx.md#publication[0]#DOI:10.1038/s41467-022-31446-6:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2701,57 +2549,41 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.tig.2009.12.012.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.tig.2009.12.012.md
   resource/hp/hp.md#publication[0]#PMID:18950739:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:35Z'
     errors: []
-    fingerprint: bf195b53080247318cbb5485d788090222958ce85192f9f60bedfb1a667dde50
+    fingerprint: c679d2e10022a3a5748fd574932c04c98f713caf159494d97d1263ac27e5dc5e
     publication_index: 0
     reference_id: PMID:18950739
     source_path: resource/hp/hp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_18950739.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_18950739.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_18950739.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_18950739.md
+    status: valid
+    warnings: []
   resource/hp/hp.md#publication[1]#PMID:26119816:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:35Z'
     errors: []
-    fingerprint: 90d8f1ca115a34515709a6a5694e5f9bf338d898b670ccac5fc2184ffce9014c
+    fingerprint: 0cb78d172571e49f9fe4bcef6ca9415877a4ba273b7f45acd0b52458bd9d3d59
     publication_index: 1
     reference_id: PMID:26119816
     source_path: resource/hp/hp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_26119816.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_26119816.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_26119816.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_26119816.md
+    status: valid
+    warnings: []
   resource/hp/hp.md#publication[2]#PMID:24217912:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:35Z'
     errors: []
-    fingerprint: 5f2036f00027fa8b14072dd834ecb726c9ea088c900b66a3837a7b4884937014
+    fingerprint: 17420a34b5755c4c585d1373d46fbdf09ddb3600caab9dc50cc8ae5c6d530e46
     publication_index: 2
     reference_id: PMID:24217912
     source_path: resource/hp/hp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_24217912.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_24217912.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_24217912.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_24217912.md
+    status: valid
+    warnings: []
   resource/hp/hp.md#publication[3]#PMID:30476213:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:35Z'
     errors: []
-    fingerprint: 73d225960ad53559d105b497a4b40e296b780195888e42a13a430fc4dd857cae
+    fingerprint: cd2b7e7c6bb44d52637c5013c8df6c59b18a081ca903273d4a2511cce176b133
     publication_index: 3
     reference_id: PMID:30476213
     source_path: resource/hp/hp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_30476213.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_30476213.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_30476213.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_30476213.md
+    status: valid
+    warnings: []
   resource/hpa/hpa.md#publication[0]#DOI:10.1126/science.1260419:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2933,33 +2765,23 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s12911-021-01534-6.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1186_s12911-021-01534-6.md
   resource/icees-kg/icees-kg.md#publication[0]#DOI:10.1093/jamia/ocz042:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:38Z'
     errors: []
-    fingerprint: 6dc9a9a2d739ac277a9658df3b34dcd09b1b1158936fb38e534f22585b27df96
+    fingerprint: ae261fcd0e1e8aa521bd7f607e16a55b7b8a464e4682d3782a0dd530b65f6180
     publication_index: 0
     reference_id: DOI:10.1093/jamia/ocz042
     source_path: resource/icees-kg/icees-kg.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_jamia_ocz042.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/DOI_10.1093_jamia_ocz042.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_jamia_ocz042.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_jamia_ocz042.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_jamia_ocz042.md
+    status: valid
+    warnings: []
   resource/icees-kg/icees-kg.md#publication[1]#DOI:10.2196/17964:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:38Z'
     errors: []
-    fingerprint: bc673ab308aee158799e13bdd005531e50e2df371e47d5208ec7a7e5352692c6
+    fingerprint: 4ad17198302f90ea087077b252404f68e1a09255d49c4fdeaa56227a08ac58da
     publication_index: 1
     reference_id: DOI:10.2196/17964
     source_path: resource/icees-kg/icees-kg.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.2196_17964.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/DOI_10.2196_17964.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.2196_17964.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.2196_17964.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.2196_17964.md
+    status: valid
+    warnings: []
   resource/iceo/iceo.md#publication[0]#PMID:35058462:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3174,47 +2996,32 @@ entries:
     status: valid
     warnings: []
   resource/irefindex/irefindex.md#publication[0]#PMID:18823568:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:12Z'
     errors: []
-    fingerprint: b9677e78aaaf8e02c9d1e998441d708ab9f1c1a18a151f0b8cf1eb37a3179bf1
+    fingerprint: d9c8be04389b3fc2dd4c717f9a367d2eef62594789eeac080294ed9c1f38a979
     publication_index: 0
     reference_id: PMID:18823568
     source_path: resource/irefindex/irefindex.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_18823568.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_18823568.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_18823568.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_18823568.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_18823568.md
+    status: valid
+    warnings: []
   resource/irefindex/irefindex.md#publication[1]#PMID:22115179:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:12Z'
     errors: []
-    fingerprint: 5e12b86b8d881e978ad3fb012505795fdfd898ec479a18eeff4de7783b869487
+    fingerprint: 9b3035a50f48c4d3d33457a9e6a31069664ac6a032b10b4a389793c03058dde0
     publication_index: 1
     reference_id: PMID:22115179
     source_path: resource/irefindex/irefindex.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22115179.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_22115179.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_22115179.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22115179.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22115179.md
+    status: valid
+    warnings: []
   resource/irefindex/irefindex.md#publication[2]#PMID:21975162:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:12Z'
     errors: []
-    fingerprint: 0053672d9ed384aac9278f9d855ad3e0e75627bfb4fbc0d5926868f3f76378c3
+    fingerprint: c7487a8f7c8c39a3f10dddf274d9cef0fb93b60cdc648ce3292e7af7044c265a
     publication_index: 2
     reference_id: PMID:21975162
     source_path: resource/irefindex/irefindex.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_21975162.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_21975162.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_21975162.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_21975162.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_21975162.md
+    status: valid
+    warnings: []
   resource/kegg/kegg.md#publication[0]#DOI:10.1093/nar/gkae909:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3415,67 +3222,50 @@ entries:
     - year '2020' does not match cached year '2019' in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz1036.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz1036.md
   resource/lncbook/lncbook.md#publication[0]#DOI:10.1093/nar/gkac999:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:41Z'
     errors: []
-    fingerprint: f87c775a2c228bfa64ecc1a4bd47a654039d154bf0f8bf025a80e075b3b33804
+    fingerprint: 54548d6ffd9ea1bcf5a485ca98b5fb1c7dd1c8345b9657e616364d67dfe8276b
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkac999
     source_path: resource/lncbook/lncbook.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkac999.md
+    status: valid
+    warnings: []
   resource/lncbook/lncbook.md#publication[1]#DOI:10.1093/nar/gky960:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:41Z'
     errors: []
-    fingerprint: 5d5340386b0c1611b51bb4da3538f7e4c0418491cacbe5023bb426cdf292f417
+    fingerprint: dc09c28dc4b377f27a0276be6a392a7fbade0afca825f70d11a8b980e106d33f
     publication_index: 1
     reference_id: DOI:10.1093/nar/gky960
     source_path: resource/lncbook/lncbook.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky960.md
+    status: valid
+    warnings: []
   resource/lncipedia/lncipedia.md#publication[0]#PMID:30371849:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:15Z'
     errors: []
-    fingerprint: cf8a7560a75ce3f5ba24c4cbe73d4e40e9f20271bd6708052a78a1a84dcd8769
+    fingerprint: 46e73073cc2b966445e3687486992fbb8acd311a619fa3adf2baad57d522d10d
     publication_index: 0
     reference_id: PMID:30371849
     source_path: resource/lncipedia/lncipedia.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_30371849.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_30371849.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_30371849.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_30371849.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_30371849.md
+    status: valid
+    warnings: []
   resource/lncipedia/lncipedia.md#publication[1]#PMID:25378313:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:15Z'
     errors: []
-    fingerprint: 96dc67830a32804c322f452607ce02754a528bfbaac5c7ff6e94fa6328c7f75a
+    fingerprint: 33874c85067d491cba8f71f4a25b18994f927ca2301315fe3c0dd168d9bc9b49
     publication_index: 1
     reference_id: PMID:25378313
     source_path: resource/lncipedia/lncipedia.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25378313.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_25378313.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25378313.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25378313.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25378313.md
+    status: valid
+    warnings: []
   resource/lncipedia/lncipedia.md#publication[2]#PMID:23042674:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:15Z'
     errors: []
-    fingerprint: acbb276c33b69f95c1a9c17c626a048ea754c6c6607a4a983767d2b1ae64ce20
+    fingerprint: 34612e3e2f81cef3e81b763005ccbb07e7271b80566da915a1211a3b48d1d31a
     publication_index: 2
     reference_id: PMID:23042674
     source_path: resource/lncipedia/lncipedia.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_23042674.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_23042674.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_23042674.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_23042674.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_23042674.md
+    status: valid
+    warnings: []
   resource/lncrnadb/lncrnadb.md#publication[0]#DOI:10.1093/nar/gkq1138:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3509,25 +3299,23 @@ entries:
     status: valid
     warnings: []
   resource/malacards/malacards.md#publication[0]#DOI:10.1093/database/bat018:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:43Z'
     errors: []
-    fingerprint: 4bfa03106b6610460dd752c181ada0a6ad2a5c83189831683998aa7c0254ec86
+    fingerprint: 3c08d023bdcc706035782845e47e1d9c5cc22e2b9f187cee5db2bdd4cdcba6eb
     publication_index: 0
     reference_id: DOI:10.1093/database/bat018
     source_path: resource/malacards/malacards.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_database_bat018.md
+    status: valid
+    warnings: []
   resource/malacards/malacards.md#publication[1]#DOI:10.1002/0471250953.bi0124s47:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:43Z'
     errors: []
-    fingerprint: 959875128d1d2ee76d78a7df7904a14d9a311e629b9577521471371da6ea7bec
+    fingerprint: ed28fc3f951de14364101df446af34fa406f9159eecf53278076c856e8436a79
     publication_index: 1
     reference_id: DOI:10.1002/0471250953.bi0124s47
     source_path: resource/malacards/malacards.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1002_0471250953.bi0124s47.md
+    status: valid
+    warnings: []
   resource/mangal/mangal.md#publication[0]#DOI:10.3897/biss.3.37037:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3620,6 +3408,15 @@ entries:
     status: warning
     warnings:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1007_s11030-025-11164-z.md
+  resource/mesh/mesh.md#publication[0]#PMID:10928714:
+    checked_at: '2026-06-15T21:49:50Z'
+    errors: []
+    fingerprint: d331bf93028e5ec90e40a4889da6124713af09c4eee99da7ea1b6225a7881ebf
+    publication_index: 0
+    reference_id: PMID:10928714
+    source_path: resource/mesh/mesh.md
+    status: valid
+    warnings: []
   resource/metabokg/metabokg.md#publication[0]#ARXIV:2605.24706:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3631,71 +3428,59 @@ entries:
     warnings:
     - ARXIV:2605.24706 has no cached reference at /home/harry/kg-registry/references_cache/ARXIV_2605.24706.md
   resource/metanetx/metanetx.md#publication[0]#DOI:10.1093/nar/gkaa992:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:41Z'
     errors: []
-    fingerprint: 5ff550b235ca362c080a1e7df7c6fd572580d7756dc761a58fa283fa2333808c
+    fingerprint: 3d6326f51d643c1a02e95be0acdc5a718051aa0a6d3014b49922bcf9f4cbcf8d
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkaa992
     source_path: resource/metanetx/metanetx.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa992.md
+    status: valid
+    warnings: []
   resource/metanetx/metanetx.md#publication[1]#DOI:10.1093/nar/gkv1117:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:41Z'
     errors: []
-    fingerprint: 08485719b1cfb1aee333afdfa317313912fb3426c0a0eae3c91c9f0188b07698
+    fingerprint: 3673089a1ffcfdb0521e830366a0426ff537311d3e4ee95222e867016e22e893
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkv1117
     source_path: resource/metanetx/metanetx.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkv1117.md
+    status: valid
+    warnings: []
   resource/metanetx/metanetx.md#publication[2]#DOI:10.1093/bioinformatics/btt036:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:41Z'
     errors: []
-    fingerprint: 3c55b86c546624b605675670746a15b1622b11eb59455ee2ac98b030ad07d37a
+    fingerprint: a1139daf39c0e8d507af048d2743195f9a3d0137089d7f85f327e0b038510017
     publication_index: 2
     reference_id: DOI:10.1093/bioinformatics/btt036
     source_path: resource/metanetx/metanetx.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btt036.md
+    status: valid
+    warnings: []
   resource/metanetx/metanetx.md#publication[3]#DOI:10.1093/bib/bbs058:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:41Z'
     errors: []
-    fingerprint: 3ac00edbe004aa2a511e7495f2cca19507f4c0df520550e1811636e94e53fc6b
+    fingerprint: b3b67c73b14c63f4678b0c98d866bc12f02c731a5b5978a4d60ba3cf40e2d5b0
     publication_index: 3
     reference_id: DOI:10.1093/bib/bbs058
     source_path: resource/metanetx/metanetx.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bib_bbs058.md
+    status: valid
+    warnings: []
   resource/mgd/mgd.md#publication[0]#DOI:10.1093/genetics/iyae031:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:50Z'
     errors: []
-    fingerprint: 6019141809fbf1c7a1a4646a3fc27d80df10bb838b5ab980f909931be149b19b
+    fingerprint: 33f04b77f994f847841f8ad591b95741067243297ec3416aa482d6eb5928ff53
     publication_index: 0
     reference_id: DOI:10.1093/genetics/iyae031
     source_path: resource/mgd/mgd.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_genetics_iyae031.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_genetics_iyae031.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_genetics_iyae031.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_genetics_iyae031.md
+    status: valid
+    warnings: []
   resource/mgd/mgd.md#publication[1]#DOI:10.1093/nar/gkaa1083:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:50Z'
     errors: []
-    fingerprint: 11097742834311b1d7f574a61d8a1fa257c049859a483b35f45638bc4dc551bd
+    fingerprint: 6cd24c439078b01e7fecd00cceac65ab5624587db6215e32de3ad9dc8546f290
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkaa1083
     source_path: resource/mgd/mgd.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1083.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1083.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1083.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1083.md
+    status: valid
+    warnings: []
   resource/mgmlink/mgmlink.md#publication[0]#DOI:10.1038/s41598-025-91230-6:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3749,35 +3534,32 @@ entries:
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1101_2023.05.12.540594.md
   resource/mint/mint.md#publication[0]#PMID:11911893:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:03:05Z'
     errors: []
-    fingerprint: 166f0940877e1fa9b2c8768ebebf74e0b63a5113010ee7389ab3e56f83ee7633
+    fingerprint: 8918b152fed225ac47dab55b3fd777d94d81ea2705a4634826461cc43d7f405b
     publication_index: 0
     reference_id: PMID:11911893
     source_path: resource/mint/mint.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_11911893.md
+    status: valid
+    warnings: []
   resource/mint/mint.md#publication[1]#PMID:17135203:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:03:05Z'
     errors: []
-    fingerprint: f0a0fc7ab78beca8450ae4f6515fdaae9a742a683acef4a8bbc54db613f343b0
+    fingerprint: 4778d4c525e28971e109934811d61a9be4ee2f5b1a176d9ba7ef664b8a8ad9e0
     publication_index: 1
     reference_id: PMID:17135203
     source_path: resource/mint/mint.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_17135203.md
+    status: valid
+    warnings: []
   resource/mint/mint.md#publication[2]#PMID:22096227:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:03:05Z'
     errors: []
-    fingerprint: 2cf83cea36220e37f11cb5092cb36e5543c7b8da3b5a7c75f66e173d0e5e993e
+    fingerprint: b511de426ebe03b2faaa6103197a3871d641977c721d2171166416f522696346
     publication_index: 2
     reference_id: PMID:22096227
     source_path: resource/mint/mint.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22096227.md
+    status: valid
+    warnings: []
   resource/mirbase/mirbase.md#publication[0]#PMID:30423142:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3897,31 +3679,23 @@ entries:
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkab1079.md
   resource/mmo/mmo.md#publication[0]#PMID:22654893:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:53Z'
     errors: []
-    fingerprint: c4b3e07a9ef2dbc0cdc1e0bc741464d097bdcb469d702ff3ef3cbaa667df3161
+    fingerprint: 5836d15e512c6861ae355f6391c6e01d823f9e9819428f53e305be5e8323f6b7
     publication_index: 0
     reference_id: PMID:22654893
     source_path: resource/mmo/mmo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22654893.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_22654893.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22654893.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22654893.md
+    status: valid
+    warnings: []
   resource/mmo/mmo.md#publication[1]#PMID:24103152:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:53Z'
     errors: []
-    fingerprint: 99be0025f694ab3322a4bcb41c0816966ae7613822ede57b0697407b9a94e477
+    fingerprint: 48f9d4218fcbe9cec12e8d20b9fa277fef630a6eb9648ac83eed5fd205685767
     publication_index: 1
     reference_id: PMID:24103152
     source_path: resource/mmo/mmo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_24103152.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_24103152.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_24103152.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_24103152.md
+    status: valid
+    warnings: []
   resource/mod/mod.md#publication[0]#PMID:18688235:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3936,25 +3710,23 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_18688235.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_18688235.md
   resource/modomics/modomics.md#publication[0]#DOI:10.1093/nar/gkad1083:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:55Z'
     errors: []
-    fingerprint: 0347e5fa8938b6f25afbd1ec693ebcafccb4ce0cfbbab03ab278cd4176718230
+    fingerprint: 8d397a229e1aaa9ec4b1a7bb40a24266b0ae0d2cb1ee7698d16407087cd472bc
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad1083
     source_path: resource/modomics/modomics.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad1083.md
+    status: valid
+    warnings: []
   resource/modomics/modomics.md#publication[1]#DOI:10.1093/nar/gkab1083:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:55Z'
     errors: []
-    fingerprint: 16f803837a7201d27a5cc71e6e56f4642a82ae45d381381cc5451ecdc5f3a0c2
+    fingerprint: ef0f5ec4490d78ee620f9b8d534dfb81782b958bb99735779d3ff9bdc0ea1f93
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkab1083
     source_path: resource/modomics/modomics.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkab1083.md
+    status: valid
+    warnings: []
   resource/monarchinitiative/monarchinitiative.md#publication[0]#DOI:10.1093/nar/gkw1128:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3989,29 +3761,27 @@ entries:
     status: valid
     warnings: []
   resource/motrpac/motrpac.md#publication[0]#DOI:10.1016/j.cell.2020.06.004:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:58Z'
     errors: []
-    fingerprint: ac6e397995e336d544a7233004f29d3e71541b0ed8cac946c0961bd98abde51a
+    fingerprint: fb8a2614ff8c6535029816065a3f3e4a21c57460a033aa37987f301b2d195b3e
     publication_index: 0
     reference_id: DOI:10.1016/j.cell.2020.06.004
     source_path: resource/motrpac/motrpac.md
     status: warning
     warnings:
     - first author 'MoTrPAC Study Group' could not be confidently compared to cached
-      first author 'James A. Sanford' in /home/harry/kg-registry/references_cache/DOI_10.1016_j.cell.2020.06.004.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.cell.2020.06.004.md
+      first author 'James A. Sanford' in references_cache/DOI_10.1016_j.cell.2020.06.004.md
   resource/motrpac/motrpac.md#publication[1]#DOI:10.1038/s41586-023-06877-w:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:07:58Z'
     errors: []
-    fingerprint: be4fff2876cf2a1b5cca8e0dfef45bb54ddb4f221953bc3757d93cad3930df2f
+    fingerprint: ce3282e6fc8e54139021a044bbe695f1c426f4d04457b0a67ae766d96fd266de
     publication_index: 1
     reference_id: DOI:10.1038/s41586-023-06877-w
     source_path: resource/motrpac/motrpac.md
     status: warning
     warnings:
     - first author 'MoTrPAC Study Group' could not be confidently compared to cached
-      first author 'David Amar' in /home/harry/kg-registry/references_cache/DOI_10.1038_s41586-023-06877-w.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41586-023-06877-w.md
+      first author 'David Amar' in references_cache/DOI_10.1038_s41586-023-06877-w.md
   resource/mousemine/mousemine.md#publication[0]#DOI:10.1007/s00335-015-9573-z:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4022,44 +3792,32 @@ entries:
     status: valid
     warnings: []
   resource/mp/mp.md#publication[0]#PMID:40963406:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:17Z'
     errors: []
-    fingerprint: a3b7b2a29d8e6ab6f5a8a01780da78b4db1899337315eba6c29ff4f91042a0bd
+    fingerprint: 8700cd2018b6d16dcafc2310d6694a97b54ea732af930b04d20e2c09a0f9a344
     publication_index: 0
     reference_id: PMID:40963406
     source_path: resource/mp/mp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_40963406.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_40963406.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_40963406.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_40963406.md
+    status: valid
+    warnings: []
   resource/mp/mp.md#publication[1]#PMID:22961259:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:17Z'
     errors: []
-    fingerprint: 2b9e2492609e87727a40776801a7f0f57e41d0f26bf6317cf7b9cdaee6242950
+    fingerprint: 2a3e3a6724ca940ad5eae7e4d2fba71e0ceef413a4354ad9ae370db49a3b22d5
     publication_index: 1
     reference_id: PMID:22961259
     source_path: resource/mp/mp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_22961259.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_22961259.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_22961259.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_22961259.md
+    status: valid
+    warnings: []
   resource/mp/mp.md#publication[2]#PMID:25825651:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:55:17Z'
     errors: []
-    fingerprint: 2422430a950efe3e850ef979a2fdfd508fc94212c7c52be3d5a4fc399c0929c2
+    fingerprint: 405b82eee0fcf0526185d14533c2388436d9542945cf3f9b1eb5b42b933b79a5
     publication_index: 2
     reference_id: PMID:25825651
     source_path: resource/mp/mp.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25825651.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25825651.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25825651.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25825651.md
+    status: valid
+    warnings: []
   resource/mrbase/mrbase.md#publication[0]#DOI:10.7554/eLife.34408:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4266,31 +4024,23 @@ entries:
     status: valid
     warnings: []
   resource/oae/oae.md#publication[0]#PMID:25093068:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:00Z'
     errors: []
-    fingerprint: 4bf9436281c994c359e119b0509e5a328aa1561a448d3da1101b7dd92aa38b46
+    fingerprint: 33eab1b1f0a49831c8370232c55476df989e807ee7aec3b12d8871a300f45ec6
     publication_index: 0
     reference_id: PMID:25093068
     source_path: resource/oae/oae.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25093068.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25093068.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25093068.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25093068.md
+    status: valid
+    warnings: []
   resource/oae/oae.md#publication[1]#PMID:41526409:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:00Z'
     errors: []
-    fingerprint: e8be4b0e2afb9654f9f3d97aadf3850810f3667df022872c22e474f8fbefa302
+    fingerprint: ef0d503be9340db1c9126091124f9efaab88817dd0bc4f8bd39f5c3280a81309
     publication_index: 1
     reference_id: PMID:41526409
     source_path: resource/oae/oae.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_41526409.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_41526409.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_41526409.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_41526409.md
+    status: valid
+    warnings: []
   resource/oba/oba.md#publication[0]#DOI:10.1007/s00335-023-09992-1:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4328,29 +4078,23 @@ entries:
     warnings:
     - obis-data has no cached reference at /home/harry/kg-registry/references_cache/obis-data.md
   resource/ogms/ogms.md#publication[0]#PMID:21347182:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:03Z'
     errors: []
-    fingerprint: 96adca325700e1587d64123c588cdbf7935828556ad4660645cbdda13f7238d5
+    fingerprint: 62959536f7ddd5a472030e2a10a93cd02e089bcd4aa220223c1dc4104dffeb79
     publication_index: 0
     reference_id: PMID:21347182
     source_path: resource/ogms/ogms.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_21347182.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_21347182.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_21347182.md
+    status: valid
+    warnings: []
   resource/ogms/ogms.md#publication[1]#PMID:25991121:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:03Z'
     errors: []
-    fingerprint: 303ec3220cc9682bc0f698d634517398bb80496e37bb32e52a2555e5aa257c16
+    fingerprint: fa18422f984326c9daf78d64257075caad04ca42bd99a77aa8bd9bdefecfe7dc
     publication_index: 1
     reference_id: PMID:25991121
     source_path: resource/ogms/ogms.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25991121.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25991121.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25991121.md
+    status: valid
+    warnings: []
   resource/ohd/ohd.md#publication[0]#PMID:32819435:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4392,31 +4136,23 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_39913645.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_39913645.md
   resource/oma/oma.md#publication[0]#DOI:10.1093/nar/gkad1020:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:11Z'
     errors: []
-    fingerprint: 780609ffae943e9e404e21f928f825cbfae340180ed3bc515c8c155543b337a6
+    fingerprint: ae43b8c20ce45f8f4992613d909ea19cfb871d77493a12946b5fbf6a066842f6
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad1020
     source_path: resource/oma/oma.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad1020.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad1020.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad1020.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad1020.md
+    status: valid
+    warnings: []
   resource/oma/oma.md#publication[1]#DOI:10.1093/nar/gkaa1007:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:11Z'
     errors: []
-    fingerprint: bbcacd68a026be49f85aaa31bbcf679b89e5d812d8819b9eee85ceebf95e207b
+    fingerprint: a53ff9a80af3b998427ccded5fb7bce03f568358ccf1e92890529b873ad59a8e
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkaa1007
     source_path: resource/oma/oma.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1007.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1007.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1007.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkaa1007.md
+    status: valid
+    warnings: []
   resource/omicsdi/omicsdi.md#publication[0]#DOI:10.1038/nbt.3790:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4448,25 +4184,23 @@ entries:
     status: valid
     warnings: []
   resource/omnipath/omnipath.md#publication[0]#DOI:10.1038/nmeth.4077:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:05Z'
     errors: []
-    fingerprint: a912e142868819649cdb373337f323af3ab16c8d957c4c631af5d09469ecb747
+    fingerprint: 4c8ba07d6d3d001d7f8787f7e62ec894255ee5f20fadf828bc6bdf0962941350
     publication_index: 0
     reference_id: DOI:10.1038/nmeth.4077
     source_path: resource/omnipath/omnipath.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_nmeth.4077.md
+    status: valid
+    warnings: []
   resource/omnipath/omnipath.md#publication[1]#DOI:10.15252/msb.20209923:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:05Z'
     errors: []
-    fingerprint: 9f65e9c87561c4eda539b155ac0968c96536fb6dfcb662d3137d3c95996d792a
+    fingerprint: 39f22b9d58bcba6b72de550403d5d484e7cc4cf6c1cc9c01532251f8a132203d
     publication_index: 1
     reference_id: DOI:10.15252/msb.20209923
     source_path: resource/omnipath/omnipath.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.15252_msb.20209923.md
+    status: valid
+    warnings: []
   resource/omp/omp.md#publication[0]#DOI:10.1186/s12866-014-0294-3:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4691,36 +4425,32 @@ entries:
     status: valid
     warnings: []
   resource/orthodb/orthodb.md#publication[0]#DOI:10.1093/nar/gkae987:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:03Z'
     errors: []
-    fingerprint: a5dbbf0596dd0378c7f6a3dcbe5989988e075cc9acb0a8147401b1841d8f6d5c
+    fingerprint: 8bff9387ec7fe5e8c821b64fb01ce641faae4dea48a8408187d80ae9043c0cde
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkae987
     source_path: resource/orthodb/orthodb.md
-    status: warning
-    warnings:
-    - year '2024' does not match cached year '2025' in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkae987.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkae987.md
+    status: valid
+    warnings: []
   resource/orthodb/orthodb.md#publication[1]#DOI:10.1093/nar/gky1053:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:03Z'
     errors: []
-    fingerprint: 63583f9a6229cb906cf27c098f619500cee03d1d6cf830588b0dfd0c1f582516
+    fingerprint: aa6375444c356dbd2de3876e84228ee43d8bb343938ea7844fa175266a79cca8
     publication_index: 1
     reference_id: DOI:10.1093/nar/gky1053
     source_path: resource/orthodb/orthodb.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky1053.md
+    status: valid
+    warnings: []
   resource/orthodb/orthodb.md#publication[2]#DOI:10.1093/nar/gkw1119:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:03Z'
     errors: []
-    fingerprint: 3034175d3c11e18debaef08e56ed4217d37619f9310d735fc1469cb33d0c976d
+    fingerprint: b757b7b690b979680092f1372ba0365051651069b916ab365b9460219a73ad71
     publication_index: 2
     reference_id: DOI:10.1093/nar/gkw1119
     source_path: resource/orthodb/orthodb.md
-    status: warning
-    warnings:
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkw1119.md
+    status: valid
+    warnings: []
   resource/owlsim/owlsim.md#publication[0]#DOI:10.1101/gr.160325.113:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4740,25 +4470,23 @@ entries:
     status: valid
     warnings: []
   resource/pathbank/pathbank.md#publication[0]#DOI:10.1093/nar/gkad1041:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:08Z'
     errors: []
-    fingerprint: 47c704fdbfa880fb60b3f34bbb0ff02b25d3306b41e8334fb1b81162238b97f5
+    fingerprint: 65b22519c93320e2f38d7080068f867369ebb1fbc2c58e0ae15cf3a8078e68ee
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkad1041
     source_path: resource/pathbank/pathbank.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkad1041.md
+    status: valid
+    warnings: []
   resource/pathbank/pathbank.md#publication[1]#DOI:10.1093/nar/gkz861:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:08Z'
     errors: []
-    fingerprint: 1adbf18f2befb9e1feb16c91a9c2a2ead0dacdde0575452389e8fe9a56455155
+    fingerprint: bc759e819b2f7499ad94a78a63b33615169b6f2051fb4ac7f820bdfc85329528
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkz861
     source_path: resource/pathbank/pathbank.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz861.md
+    status: valid
+    warnings: []
   resource/pathophenodb/pathophenodb.md#publication[0]#DOI:10.1038/s41597-019-0090-x:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4807,31 +4535,23 @@ entries:
     status: valid
     warnings: []
   resource/pato/pato.md#publication[0]#PMID:28387809:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:11Z'
     errors: []
-    fingerprint: eeb73eb759d9b4a9c029ac5fb1626d2292953f4a894293ba816112078869d1ad
+    fingerprint: 5ba4b2c991061663c02a27a310be08672854a4261349af952107e7523aefcc51
     publication_index: 0
     reference_id: PMID:28387809
     source_path: resource/pato/pato.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_28387809.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_28387809.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_28387809.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_28387809.md
+    status: valid
+    warnings: []
   resource/pato/pato.md#publication[1]#PMID:15642100:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:11Z'
     errors: []
-    fingerprint: f38c60ff7bd812b47a5aa14c9f3293b52606ad6bcf80ace84b889ee9c10d2495
+    fingerprint: a4376a9e6d90346f642fc7f37698c69a6f41210690e9241e0bee0e26ea0f6917
     publication_index: 1
     reference_id: PMID:15642100
     source_path: resource/pato/pato.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_15642100.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_15642100.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_15642100.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_15642100.md
+    status: valid
+    warnings: []
   resource/patric/patric.md#publication[0]#DOI:10.1093/nar/gkw1017:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4841,8 +4561,17 @@ entries:
     source_path: resource/patric/patric.md
     status: valid
     warnings: []
+  resource/pcl/pcl.md#publication[0]#DOI:10.1101/2021.10.10.463703:
+    checked_at: '2026-06-15T21:45:30Z'
+    errors: []
+    fingerprint: 0d57addacf5ed2c3a2450b2e9eb08d851815e13e48cbac9e96029caf34328e12
+    publication_index: 0
+    reference_id: DOI:10.1101/2021.10.10.463703
+    source_path: resource/pcl/pcl.md
+    status: valid
+    warnings: []
   resource/pcl/pcl.md#publication[0]#url:https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:44:11Z'
     errors: []
     fingerprint: c6dce95329e3da95b0f54d97adfca8eb448a2e518d2c8b58788fb88b2c14db88
     publication_index: 0
@@ -4851,49 +4580,34 @@ entries:
     status: warning
     warnings:
     - url:https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1 has no cached
-      reference at /home/harry/kg-registry/references_cache/url_https___www.biorxiv.org_content_10.1101_2021.10.10.463703v1.md
+      reference at references_cache/url_https___www.biorxiv.org_content_10.1101_2021.10.10.463703v1.md
   resource/pcl/pcl.md#publication[1]#PMID:34616062:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:59Z'
     errors: []
-    fingerprint: 764dd9b76d8cc66f2bae9a75e20b5bd66f895f258b7586a6ec4319146e0eb313
+    fingerprint: 67cd5d908d1006becac7c754a77743436422a58ebec57cb63ecd68c853703dab
     publication_index: 1
     reference_id: PMID:34616062
     source_path: resource/pcl/pcl.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_34616062.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_34616062.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34616062.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34616062.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34616062.md
+    status: valid
+    warnings: []
   resource/pcl/pcl.md#publication[2]#PMID:31435019:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:59Z'
     errors: []
-    fingerprint: 20b4f7381def7aaedd1ae87f45171f3dd3f20f27b4247af47a44dca4ede4cdf0
+    fingerprint: 929ed96a7c397876f412b15b0eb2c461db640fecfc6ea30becc1c87fe4357894
     publication_index: 2
     reference_id: PMID:31435019
     source_path: resource/pcl/pcl.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_31435019.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_31435019.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_31435019.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_31435019.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_31435019.md
+    status: valid
+    warnings: []
   resource/pcl/pcl.md#publication[3]#PMID:29322913:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:43:59Z'
     errors: []
-    fingerprint: 76bde24a8722aaea014df93065ca13fbed0a28a3a6152615af57678bfdb32e6d
+    fingerprint: eafe7726049e64571671d64e963acab196e4862ad3253ad19015dcb183a5ccea
     publication_index: 3
     reference_id: PMID:29322913
     source_path: resource/pcl/pcl.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_29322913.md
-    - title missing; cached title is available in /home/harry/kg-registry/references_cache/PMID_29322913.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_29322913.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_29322913.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_29322913.md
+    status: valid
+    warnings: []
   resource/pdbe/pdbe.md#publication[0]#DOI:10.1093/nar/gkab988:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5011,31 +4725,23 @@ entries:
     status: valid
     warnings: []
   resource/pharmacodb/pharmacodb.md#publication[0]#DOI:10.1093/nar/gkx911:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:13Z'
     errors: []
-    fingerprint: 893ede9b24f1dd9f68c5e311f9b183f48e3b367933620f0eae43c685e40ae588
+    fingerprint: b05e9ae23771ce4dcf435e6e4853b923d261f19bdeeed373257e747f112f912b
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkx911
     source_path: resource/pharmacodb/pharmacodb.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkx911.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkx911.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkx911.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkx911.md
+    status: valid
+    warnings: []
   resource/pharmacodb/pharmacodb.md#publication[1]#DOI:10.1093/bioinformatics/btv723:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:08:13Z'
     errors: []
-    fingerprint: a6fb909dbe7586b83e97c96b9604327cac002439e349a37cfa317099502c8e4e
+    fingerprint: 5ee5d5ed79baefca00ab811b24ef7748385549ee174ae924e4a2dfd83f863156
     publication_index: 1
     reference_id: DOI:10.1093/bioinformatics/btv723
     source_path: resource/pharmacodb/pharmacodb.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btv723.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btv723.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btv723.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btv723.md
+    status: valid
+    warnings: []
   resource/pharmacotherapydb/pharmacotherapydb.md#publication[0]#DOI:10.7554/eLife.26726:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5437,35 +5143,32 @@ entries:
     status: valid
     warnings: []
   resource/protcid/protcid.md#publication[0]#DOI:10.1038/s41467-020-14301-4:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:20Z'
     errors: []
-    fingerprint: cf1c2e388014c82aa99bfcc1b5a3cf4bbd02509eb1744328927c450c75a44a21
+    fingerprint: 7f965fe24e1ddce2e5589f3a9ce028ee4a92505dc7fa385d1a29b5c3edfafe26
     publication_index: 0
     reference_id: DOI:10.1038/s41467-020-14301-4
     source_path: resource/protcid/protcid.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41467-020-14301-4.md
+    status: valid
+    warnings: []
   resource/protcid/protcid.md#publication[1]#DOI:10.1093/nar/gkq1059:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:20Z'
     errors: []
-    fingerprint: 62fb50a98426e377e775e07858784014ce46f02c02d2a085e46fb5008d6162ed
+    fingerprint: 7dd9081b12e9daaf808f6ea81ebce4a966c7042957a0b355e99d34a5635dff8b
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkq1059
     source_path: resource/protcid/protcid.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkq1059.md
+    status: valid
+    warnings: []
   resource/protcid/protcid.md#publication[2]#DOI:10.1016/j.jmb.2008.06.002:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:20Z'
     errors: []
-    fingerprint: a20a97bb7cd24425fc0625958b86cb01b4647ad8ab3f63a5cd3ab908b859e91b
+    fingerprint: 4d73fc7916816c2055895dcb91ef031b08f9be97a5e7b36c70eae9357b5eaca2
     publication_index: 2
     reference_id: DOI:10.1016/j.jmb.2008.06.002
     source_path: resource/protcid/protcid.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1016_j.jmb.2008.06.002.md
+    status: valid
+    warnings: []
   resource/proteomehd/proteomehd.md#publication[0]#DOI:10.1038/s41587-019-0298-5:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5597,16 +5300,14 @@ entries:
     status: valid
     warnings: []
   resource/reactome/reactome.md#publication[0]#DOI:10.1093/nar/gkab1028:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T21:46:19Z'
     errors: []
-    fingerprint: 8bb1023b99ca543ec4c6841b777c8e7d2a0df72854f47b003a0b34567d3b9753
+    fingerprint: 0b44c9f155203a026356fa3fa85f21eb654a545e1b79a1f0e91e38dccec17627
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkab1028
     source_path: resource/reactome/reactome.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkab1028.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkab1028.md
+    status: valid
+    warnings: []
   resource/reconx/reconx.md#publication[0]#DOI:10.1073/pnas.0610772104:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5824,41 +5525,32 @@ entries:
     warnings:
     - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_database_bau081.md
   resource/rna-kg/rna-kg.md#publication[0]#DOI:10.1038/s41597-024-03673-7:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:46Z'
     errors: []
-    fingerprint: 7f14b840e9cb7db055df5510d500f9f2fcf3768c6b68133a8f890ae6ca879b44
+    fingerprint: e826c17e17e0e1205acc798fc9f6874b40a68423c378ff765f960874ef6eb4df
     publication_index: 0
     reference_id: DOI:10.1038/s41597-024-03673-7
     source_path: resource/rna-kg/rna-kg.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41597-024-03673-7.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41597-024-03673-7.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41597-024-03673-7.md
+    status: valid
+    warnings: []
   resource/rna-kg/rna-kg.md#publication[1]#DOI:10.48550/arXiv.2508.07427:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:46Z'
     errors: []
-    fingerprint: e366d27ddac1385933741ef22be27dc29f6691226d16443379a032e6cce4e433
+    fingerprint: d0c0d346e47463c66f13b4cbadf274b095eadec5032570d71babf6546d746351
     publication_index: 1
     reference_id: DOI:10.48550/arXiv.2508.07427
     source_path: resource/rna-kg/rna-kg.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.48550_arXiv.2508.07427.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.48550_arXiv.2508.07427.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.48550_arXiv.2508.07427.md
+    status: valid
+    warnings: []
   resource/rna-kg/rna-kg.md#publication[2]#DOI:10.1093/bioadv/vbaf109:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:46Z'
     errors: []
-    fingerprint: 724a479cfcc48aa4bf0aba39c831139e38414e37c8bee05a37fa898232160f4e
+    fingerprint: bcc20e040d6bff8457b6b2fe416d1da56c5eb2e29e5c3ad64e39a558be3519f2
     publication_index: 2
     reference_id: DOI:10.1093/bioadv/vbaf109
     source_path: resource/rna-kg/rna-kg.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioadv_vbaf109.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioadv_vbaf109.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioadv_vbaf109.md
+    status: valid
+    warnings: []
   resource/rs/rs.md#publication[0]#PMID:24267899:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5896,44 +5588,32 @@ entries:
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_21515544.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_21515544.md
   resource/scdo/scdo.md#publication[0]#PMID:35363306:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:48Z'
     errors: []
-    fingerprint: 3184f7ab6fbd9a85ada808aa70cf09859c4b07e2067cb5ddd017fd4cd08b0eed
+    fingerprint: 2e8d64b993302433803594aa3083d72f0d4a195ee6eb2c2fd8bd88a67e3e3943
     publication_index: 0
     reference_id: PMID:35363306
     source_path: resource/scdo/scdo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_35363306.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_35363306.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_35363306.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_35363306.md
+    status: valid
+    warnings: []
   resource/scdo/scdo.md#publication[1]#PMID:33021900:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:48Z'
     errors: []
-    fingerprint: 9ddbabb6ba4d483715bf2b7b4aac865196f3465409afcf3674ee0b41c25bfa7c
+    fingerprint: 8a5862b1bd2e4b9d8a46bdf96a419d95b1f32ed2548d94222cdb9029d6174d69
     publication_index: 1
     reference_id: PMID:33021900
     source_path: resource/scdo/scdo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_33021900.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_33021900.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_33021900.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_33021900.md
+    status: valid
+    warnings: []
   resource/scdo/scdo.md#publication[2]#PMID:31769834:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:48Z'
     errors: []
-    fingerprint: 4d845f435f17681c53cc0b3c686dd188cb275e3757f3654bfe2813b56805f2b8
+    fingerprint: cf69a3eb87b381e8b04f7e6889d4c81b792e42f2b8c999c359f76dce0bd8607e
     publication_index: 2
     reference_id: PMID:31769834
     source_path: resource/scdo/scdo.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_31769834.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_31769834.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_31769834.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_31769834.md
+    status: valid
+    warnings: []
   resource/semmeddb/semmeddb.md#publication[0]#DOI:10.1093/bioinformatics/bts591:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6189,35 +5869,32 @@ entries:
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1002_aaai.12037.md
   resource/spoke/spoke.md#publication[0]#DOI:10.1093/bioinformatics/btad080:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:23Z'
     errors: []
-    fingerprint: 14892d8ae5abbf401143a05320871b8ded7c45b64e47e7865c4b0bd5fb38c318
+    fingerprint: 60e0d3aa06cc309e7fd8f6a3606c4f38e1aaa076ba4bdd20f75edf75559c9a91
     publication_index: 0
     reference_id: DOI:10.1093/bioinformatics/btad080
     source_path: resource/spoke/spoke.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_bioinformatics_btad080.md
+    status: valid
+    warnings: []
   resource/spoke/spoke.md#publication[1]#DOI:10.1038/s41467-019-11069-0:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:23Z'
     errors: []
-    fingerprint: 49d104f5e9c75bb08094aa63cade6aed85387debfa9cdb6cf3aebdbae7193e0d
+    fingerprint: d700d514bde0dafd72e4c36737fb68d4efa823b15199b484a54f4d26cae42681
     publication_index: 1
     reference_id: DOI:10.1038/s41467-019-11069-0
     source_path: resource/spoke/spoke.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41467-019-11069-0.md
+    status: valid
+    warnings: []
   resource/spoke/spoke.md#publication[2]#DOI:10.7554/eLife.26726:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:06:23Z'
     errors: []
-    fingerprint: e3f2e94d509d516c8130b75479d0e6efadd009782863a83db6fc26878dfd296e
+    fingerprint: ccb1ca7fb0570efbaa1363771fc2bf1a8c21a89bcce4e85bef42404951d810e1
     publication_index: 2
     reference_id: DOI:10.7554/eLife.26726
     source_path: resource/spoke/spoke.md
-    status: warning
-    warnings:
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.7554_eLife.26726.md
+    status: valid
+    warnings: []
   resource/srpdb/srpdb.md#publication[0]#PMID:19838050:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6682,6 +6359,15 @@ entries:
     source_path: resource/unii/unii.md
     status: valid
     warnings: []
+  resource/uniprot/uniprot.md#publication[0]#DOI:10.1093/nar/gkae1010:
+    checked_at: '2026-06-15T21:49:46Z'
+    errors: []
+    fingerprint: 9955342bd1aeb2446779ae0561fba8a606e597476618b228509f84f03d27676a
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1010
+    source_path: resource/uniprot/uniprot.md
+    status: valid
+    warnings: []
   resource/uniref/uniref.md#publication[0]#DOI:10.1093/bioinformatics/btm098:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6748,44 +6434,32 @@ entries:
     status: valid
     warnings: []
   resource/vario/vario.md#publication[0]#PMID:24162187:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:51Z'
     errors: []
-    fingerprint: 292282790da130e5a625ab5df8312de322bc03d56f0c0cba6d25c9a58265b4d0
+    fingerprint: b057b289df4d9e8b6cf22c47c69a0a5e13a782d025ee035ce6e1482e9b178064
     publication_index: 0
     reference_id: PMID:24162187
     source_path: resource/vario/vario.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_24162187.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_24162187.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_24162187.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_24162187.md
+    status: valid
+    warnings: []
   resource/vario/vario.md#publication[1]#PMID:24533660:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:51Z'
     errors: []
-    fingerprint: 7fe481fc57acb599336855f9f89ae224a29f2d231ae6578d58a7e48ba0c26c9c
+    fingerprint: 17526b3a50e4e55957f4fd453aa21cd53030da67927626bfd69ca9574d2fcf71
     publication_index: 1
     reference_id: PMID:24533660
     source_path: resource/vario/vario.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_24533660.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_24533660.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_24533660.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_24533660.md
+    status: valid
+    warnings: []
   resource/vario/vario.md#publication[2]#PMID:25616435:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-15T22:01:51Z'
     errors: []
-    fingerprint: 7faf9ce7f0461a1872831636c1e51e709876864876aff20775800d4fc3f23b47
+    fingerprint: 5378c145fdc0fedb81e0bd857827a9926c4fa0727385bde2c869c19ffffc8719
     publication_index: 2
     reference_id: PMID:25616435
     source_path: resource/vario/vario.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/PMID_25616435.md
-    - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25616435.md
-    - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25616435.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25616435.md
+    status: valid
+    warnings: []
   resource/vbo/vbo.md#publication[0]#DOI:10.1111/jvim.70133:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []

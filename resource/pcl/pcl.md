@@ -210,11 +210,234 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
     when accessing file'
 publications:
-- id: https://www.biorxiv.org/content/10.1101/2021.10.10.463703v1
-  title: Brain Data Standards
-- id: https://pubmed.ncbi.nlm.nih.gov/34616062/
-- id: https://pubmed.ncbi.nlm.nih.gov/31435019/
-- id: https://pubmed.ncbi.nlm.nih.gov/29322913/
+- authors:
+  - Shawn Zheng Kai Tan
+  - Huseyin Kir
+  - Brian D. Aevermann
+  - Tom Gillespie
+  - Nomi Harris
+  - Michael Hawrylycz
+  - Nik Jorstad
+  - Ed Lein
+  - Nicolas Matentzoglu
+  - Jeremy A. Miller
+  - Tyler S. Mollenkopf
+  - Christopher J. Mungall
+  - Patrick L. Ray
+  - Raymond E. A. Sanchez
+  - Brian Staats
+  - Jim Vermillion
+  - Ambika Yadav
+  - Yun Zhang
+  - Richard H. Scheuermann
+  - David Osumi-Sutherland
+  doi: 10.1101/2021.10.10.463703
+  id: doi:10.1101/2021.10.10.463703
+  title: Brain Data Standards - A method for building data-driven cell-type ontologies
+  year: '2021'
+- authors:
+  - Bakken TE
+  - Jorstad NL
+  - Hu Q
+  - Lake BB
+  - Tian W
+  - Kalmbach BE
+  - Crow M
+  - Hodge RD
+  - Krienen FM
+  - Sorensen SA
+  - Eggermont J
+  - Yao Z
+  - Aevermann BD
+  - Aldridge AI
+  - Bartlett A
+  - Bertagnolli D
+  - Casper T
+  - Castanon RG
+  - Crichton K
+  - Daigle TL
+  - Dalley R
+  - Dee N
+  - Dembrow N
+  - Diep D
+  - Ding SL
+  - Dong W
+  - Fang R
+  - Fischer S
+  - Goldman M
+  - Goldy J
+  - Graybuck LT
+  - Herb BR
+  - Hou X
+  - Kancherla J
+  - Kroll M
+  - Lathia K
+  - van Lew B
+  - Li YE
+  - Liu CS
+  - Liu H
+  - Lucero JD
+  - Mahurkar A
+  - McMillen D
+  - Miller JA
+  - Moussa M
+  - Nery JR
+  - Nicovich PR
+  - Niu SY
+  - Orvis J
+  - Osteen JK
+  - Owen S
+  - Palmer CR
+  - Pham T
+  - Plongthongkum N
+  - Poirion O
+  - Reed NM
+  - Rimorin C
+  - Rivkin A
+  - Romanow WJ
+  - Sedeño-Cortés AE
+  - Siletti K
+  - Somasundaram S
+  - Sulc J
+  - Tieu M
+  - Torkelson A
+  - Tung H
+  - Wang X
+  - Xie F
+  - Yanny AM
+  - Zhang R
+  - Ament SA
+  - Behrens MM
+  - Bravo HC
+  - Chun J
+  - Dobin A
+  - Gillis J
+  - Hertzano R
+  - Hof PR
+  - Höllt T
+  - Horwitz GD
+  - Keene CD
+  - Kharchenko PV
+  - Ko AL
+  - Lelieveldt BP
+  - Luo C
+  - Mukamel EA
+  - Pinto-Duarte A
+  - Preissl S
+  - Regev A
+  - Ren B
+  - Scheuermann RH
+  - Smith K
+  - Spain WJ
+  - White OR
+  - Koch C
+  - Hawrylycz M
+  - Tasic B
+  - Macosko EZ
+  - McCarroll SA
+  - Ting JT
+  - Zeng H
+  - Zhang K
+  - Feng G
+  - Ecker JR
+  - Linnarsson S
+  - Lein ES
+  doi: 10.1038/s41586-021-03465-8
+  id: https://pubmed.ncbi.nlm.nih.gov/34616062/
+  journal: Nature
+  title: Comparative cellular analysis of motor cortex in human, marmoset and mouse.
+  year: '2021'
+- authors:
+  - Hodge RD
+  - Bakken TE
+  - Miller JA
+  - Smith KA
+  - Barkan ER
+  - Graybuck LT
+  - Close JL
+  - Long B
+  - Johansen N
+  - Penn O
+  - Yao Z
+  - Eggermont J
+  - Höllt T
+  - Levi BP
+  - Shehata SI
+  - Aevermann B
+  - Beller A
+  - Bertagnolli D
+  - Brouner K
+  - Casper T
+  - Cobbs C
+  - Dalley R
+  - Dee N
+  - Ding SL
+  - Ellenbogen RG
+  - Fong O
+  - Garren E
+  - Goldy J
+  - Gwinn RP
+  - Hirschstein D
+  - Keene CD
+  - Keshk M
+  - Ko AL
+  - Lathia K
+  - Mahfouz A
+  - Maltzer Z
+  - McGraw M
+  - Nguyen TN
+  - Nyhus J
+  - Ojemann JG
+  - Oldre A
+  - Parry S
+  - Reynolds S
+  - Rimorin C
+  - Shapovalova NV
+  - Somasundaram S
+  - Szafer A
+  - Thomsen ER
+  - Tieu M
+  - Quon G
+  - Scheuermann RH
+  - Yuste R
+  - Sunkin SM
+  - Lelieveldt B
+  - Feng D
+  - Ng L
+  - Bernard A
+  - Hawrylycz M
+  - Phillips JW
+  - Tasic B
+  - Zeng H
+  - Jones AR
+  - Koch C
+  - Lein ES
+  doi: 10.1038/s41586-019-1506-7
+  id: https://pubmed.ncbi.nlm.nih.gov/31435019/
+  journal: Nature
+  title: Conserved cell types with divergent features in human versus mouse cortex.
+  year: '2019'
+- authors:
+  - Bakken T
+  - Cowell L
+  - Aevermann BD
+  - Novotny M
+  - Hodge R
+  - Miller JA
+  - Lee A
+  - Chang I
+  - McCorrison J
+  - Pulendran B
+  - Qian Y
+  - Schork NJ
+  - Lasken RS
+  - Lein ES
+  - Scheuermann RH
+  doi: 10.1186/s12859-017-1977-1
+  id: https://pubmed.ncbi.nlm.nih.gov/29322913/
+  journal: BMC Bioinformatics
+  title: Cell type discovery and representation in the era of high-content single cell phenotyping.
+  year: '2017'
 repository: https://github.com/obophenotype/provisional_cell_ontology
 ---
 # Provisional Cell Ontology

@@ -2046,9 +2046,32 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
 publications:
-- id: PMID:35348650
+- authors:
+  - Wright AJ
+  - Orlic-Milacic M
+  - Rothfels K
+  - Weiser J
+  - Trinh QM
+  - Jassal B
+  - Haw RA
+  - Stein LD
+  doi: 10.1093/database/baac009
+  id: PMID:35348650
+  journal: Database (Oxford)
   preferred: true
-- id: PMID:25484339
+  title: Evaluating the predictive accuracy of curated biological pathways in a public knowledgebase.
+  year: '2022'
+- authors:
+  - Pletscher-Frankild S
+  - Pallejà A
+  - Tsafou K
+  - Binder JX
+  - Jensen LJ
+  doi: 10.1016/j.ymeth.2014.11.020
+  id: PMID:25484339
+  journal: Methods
+  title: 'DISEASES: text mining and data integration of disease-gene associations.'
+  year: '2015'
 synonyms:
 - DISEASES Database
 - JensenLab DISEASES

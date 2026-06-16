@@ -132,18 +132,37 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: phosphositeplus
 publications:
-- doi: 10.1093/gpbjnl/qzaf057
+- authors:
+  - Miaomiao Chen
+  - Yujie Gou
+  - Ming Lei
+  - Leming Xiao
+  - Miaoying Zhao
+  - Xinhe Huang
+  - Dan Liu
+  - Zihao Feng
+  - Di Peng
+  - Yu Xue
+  doi: 10.1093/gpbjnl/qzaf057
   id: doi:10.1093/gpbjnl/qzaf057
   journal: Genomics, Proteomics & Bioinformatics
   preferred: true
-  title: 'EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic
-    Species'
+  title: 'EPSD 2.0: An Updated Database of Protein Phosphorylation Sites Across Eukaryotic Species'
   year: '2025'
-- doi: 10.1093/bib/bbz169
+- authors:
+  - Shaofeng Lin
+  - Chenwei Wang
+  - Jiaqi Zhou
+  - Ying Shi
+  - Chen Ruan
+  - Yiran Tu
+  - Lan Yao
+  - Di Peng
+  - Yu Xue
+  doi: 10.1093/bib/bbz169
   id: doi:10.1093/bib/bbz169
   journal: Briefings in Bioinformatics
-  title: 'EPSD: a well-annotated data resource of protein phosphorylation sites in
-    eukaryotes'
+  title: 'EPSD: a well-annotated data resource of protein phosphorylation sites in eukaryotes'
   year: '2021'
 synonyms:
 - EPSD

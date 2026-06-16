@@ -143,6 +143,7 @@ publications:
 - authors:
   - Qifang Xu
   - Roland L. Dunbrack
+  doi: 10.1038/s41467-020-14301-4
   id: https://doi.org/10.1038/s41467-020-14301-4
   journal: Nature Communications
   preferred: true
@@ -151,10 +152,10 @@ publications:
 - authors:
   - Qifang Xu
   - Roland L. Dunbrack
+  doi: 10.1093/nar/gkq1059
   id: https://doi.org/10.1093/nar/gkq1059
   journal: Nucleic Acids Research
-  title: The protein common interface database (ProtCID) - a comprehensive database
-    of interactions of homologous proteins in multiple crystal forms
+  title: The protein common interface database (ProtCID) - a comprehensive database of interactions of homologous proteins in multiple crystal forms
   year: '2011'
 - authors:
   - Qifang Xu
@@ -163,6 +164,7 @@ publications:
   - Mu Tian
   - Thomas Biesiada
   - Roland L. Dunbrack
+  doi: 10.1016/j.jmb.2008.06.002
   id: https://doi.org/10.1016/j.jmb.2008.06.002
   journal: Journal of Molecular Biology
   title: Statistical Analysis of Interface Similarity in Crystals of Homologous Proteins

@@ -226,10 +226,21 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21347182
+- authors:
+  - Scheuermann RH
+  - Ceusters W
+  - Smith B
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21347182
+  journal: Summit Transl Bioinform
   title: Toward an ontological treatment of disease and diagnosis
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+  year: '2009'
+- authors:
+  - Ceusters W
+  - Smith B
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+  journal: Stud Health Technol Inform
   title: Biomarkers in the Ontology for General Medical Science
+  year: '2015'
 repository: https://github.com/OGMS/ogms
 taxon:
 - NCBITaxon:9606

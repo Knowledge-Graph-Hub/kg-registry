@@ -48,10 +48,39 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
-    title: Three ontologies to define phenotype measurement data.
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
-    title: 'The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.'
+- authors:
+  - Shimoyama M
+  - Nigam R
+  - McIntosh LS
+  - Nagarajan R
+  - Rice T
+  - Rao DC
+  - Dwinell MR
+  doi: 10.3389/fgene.2012.00087
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
+  journal: Front Genet
+  title: Three ontologies to define phenotype measurement data.
+  year: '2012'
+- authors:
+  - Smith JR
+  - Park CA
+  - Nigam R
+  - Laulederkind SJ
+  - Hayman GT
+  - Wang SJ
+  - Lowry TF
+  - Petri V
+  - Pons JD
+  - Tutaj M
+  - Liu W
+  - Worthey EA
+  - Shimoyama M
+  - Dwinell MR
+  doi: 10.1186/2041-1480-4-26
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
+  journal: J Biomed Semantics
+  title: 'The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.'
+  year: '2013'
 ---
 
 ## Description

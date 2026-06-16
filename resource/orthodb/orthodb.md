@@ -138,44 +138,47 @@ products:
     product_file_size: 57560209301
     product_url: https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz
 publications:
-  - authors:
-      - Tegenfeldt F
-      - Kuznetsov D
-      - Manni M
-      - Berkeley M
-      - Zdobnov EM
-      - Kriventseva EV
-    doi: doi:10.1093/nar/gkae987
-    id: doi:10.1093/nar/gkae987
-    preferred: true
-    title: 'OrthoDB and BUSCO update: annotation of orthologs with wider sampling of genomes'
-    year: '2024'
-  - authors:
-      - Kriventseva EV
-      - Kuznetsov D
-      - Tegenfeldt F
-      - Manni M
-      - Dias R
-      - Simão FA
-      - Zdobnov EM
-    doi: doi:10.1093/nar/gky1053
-    id: doi:10.1093/nar/gky1053
-    title: OrthoDB v10 - sampling the diversity of animal, plant, fungal, protist, bacterial and viral genomes for evolutionary and functional annotations of orthologs
-    year: '2019'
-  - authors:
-      - Zdobnov EM
-      - Tegenfeldt F
-      - Kuznetsov D
-      - Waterhouse RM
-      - Simão FA
-      - Ioannidis P
-      - Seppey M
-      - Loetscher A
-      - Kriventseva EV
-    doi: doi:10.1093/nar/gkw1119
-    id: doi:10.1093/nar/gkw1119
-    title: OrthoDB v9.1 - cataloging evolutionary and functional annotations for animal, fungal, plant, archaeal, bacterial and viral orthologs
-    year: '2017'
+- authors:
+  - Tegenfeldt F
+  - Kuznetsov D
+  - Manni M
+  - Berkeley M
+  - Zdobnov EM
+  - Kriventseva EV
+  doi: 10.1093/nar/gkae987
+  id: doi:10.1093/nar/gkae987
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'OrthoDB and BUSCO update: annotation of orthologs with wider sampling of genomes'
+  year: '2025'
+- authors:
+  - Kriventseva EV
+  - Kuznetsov D
+  - Tegenfeldt F
+  - Manni M
+  - Dias R
+  - Simão FA
+  - Zdobnov EM
+  doi: 10.1093/nar/gky1053
+  id: doi:10.1093/nar/gky1053
+  journal: Nucleic Acids Research
+  title: OrthoDB v10 - sampling the diversity of animal, plant, fungal, protist, bacterial and viral genomes for evolutionary and functional annotations of orthologs
+  year: '2019'
+- authors:
+  - Zdobnov EM
+  - Tegenfeldt F
+  - Kuznetsov D
+  - Waterhouse RM
+  - Simão FA
+  - Ioannidis P
+  - Seppey M
+  - Loetscher A
+  - Kriventseva EV
+  doi: 10.1093/nar/gkw1119
+  id: doi:10.1093/nar/gkw1119
+  journal: Nucleic Acids Research
+  title: OrthoDB v9.1 - cataloging evolutionary and functional annotations for animal, fungal, plant, archaeal, bacterial and viral orthologs
+  year: '2017'
 repository: https://github.com/zdobnov-lab/orthodb
 creation_date: '2025-05-07T00:00:00Z'
 last_modified_date: '2026-05-23T00:00:00Z'

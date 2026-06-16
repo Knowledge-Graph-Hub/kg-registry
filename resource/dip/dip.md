@@ -1249,14 +1249,57 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- id: https://doi.org/10.1093/nar/30.1.303
-  title: 'DIP, the Database of Interacting Proteins: a research tool for studying
-    cellular networks of protein interactions'
-- id: https://doi.org/10.1093/nar/gkh086
+- authors:
+  - I. Xenarios
+  doi: 10.1093/nar/30.1.303
+  id: https://doi.org/10.1093/nar/30.1.303
+  journal: Nucleic Acids Research
+  title: 'DIP, the Database of Interacting Proteins: a research tool for studying cellular networks of protein interactions'
+  year: '2002'
+- authors:
+  - L. Salwinski
+  doi: 10.1093/nar/gkh086
+  id: https://doi.org/10.1093/nar/gkh086
+  journal: Nucleic Acids Research
   title: 'The Database of Interacting Proteins: 2004 update'
-- id: https://doi.org/10.1038/nmeth.1931
-  title: 'Protein interaction data curation: The International Molecular Exchange
-    (IMEx) consortium'
+  year: '2004'
+- authors:
+  - Sandra Orchard
+  - Samuel Kerrien
+  - Sara Abbani
+  - Bruno Aranda
+  - Jignesh Bhate
+  - Shelby Bidwell
+  - Alan Bridge
+  - Leonardo Briganti
+  - Fiona S L Brinkman
+  - Gianni Cesareni
+  - Andrew Chatr-aryamontri
+  - Emilie Chautard
+  - Carol Chen
+  - Marine Dumousseau
+  - Johannes Goll
+  - Robert E W Hancock
+  - Linda I Hannick
+  - Igor Jurisica
+  - Jyoti Khadake
+  - David J Lynn
+  - Usha Mahadevan
+  - Livia Perfetto
+  - Arathi Raghunath
+  - Sylvie Ricard-Blum
+  - Bernd Roechert
+  - Lukasz Salwinski
+  - Volker Stümpflen
+  - Mike Tyers
+  - Peter Uetz
+  - Ioannis Xenarios
+  - Henning Hermjakob
+  doi: 10.1038/nmeth.1931
+  id: https://doi.org/10.1038/nmeth.1931
+  journal: Nature Methods
+  title: 'Protein interaction data curation: The International Molecular Exchange (IMEx) consortium'
+  year: '2012'
 synonyms:
 - DIP
 - Database of Interacting Proteins

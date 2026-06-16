@@ -271,13 +271,31 @@ products:
   - relation_type: prov:used
     source: fma
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
+- authors:
+  - Noy NF
+  - Rubin DL
+  doi: 10.1016/j.websem.2007.12.001
+  id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
+  journal: Web Semant
   title: Translating the Foundational Model of Anatomy into OWL
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
+  year: '2008'
+- authors:
+  - Golbreich C
+  - Zhang S
+  - Bodenreider O
+  doi: 10.1016/j.websem.2006.05.007
+  id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
+  journal: Web Semant
   title: 'The foundational model of anatomy in OWL: Experience and perspectives'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
-  title: 'Challenges in converting frame-based ontology into OWL: the Foundational
-    Model of Anatomy case-study'
+  year: '2006'
+- authors:
+  - Dameron O
+  - Rubin DL
+  - Musen MA
+  id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
+  journal: AMIA Annu Symp Proc
+  title: 'Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study'
+  year: '2005'
 repository: https://bitbucket.org/uwsig/fma
 taxon:
 - NCBITaxon:9606

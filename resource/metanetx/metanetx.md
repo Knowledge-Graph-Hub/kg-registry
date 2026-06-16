@@ -100,11 +100,11 @@ publications:
   - Mehl F
   - Ibberson M
   - Pagni M
-  doi: doi:10.1093/nar/gkaa992
+  doi: 10.1093/nar/gkaa992
   id: doi:10.1093/nar/gkaa992
+  journal: Nucleic Acids Research
   preferred: true
-  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions
-    in the context of metabolic models
+  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions in the context of metabolic models
   year: '2021'
 - authors:
   - Moretti S
@@ -113,10 +113,10 @@ publications:
   - Bridge A
   - Morgat A
   - Pagni M
-  doi: doi:10.1093/nar/gkv1117
+  doi: 10.1093/nar/gkv1117
   id: doi:10.1093/nar/gkv1117
-  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions
-    to bring together genome-scale metabolic networks
+  journal: Nucleic Acids Research
+  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions to bring together genome-scale metabolic networks
   year: '2016'
 - authors:
   - Ganter M
@@ -124,10 +124,10 @@ publications:
   - Moretti S
   - Stelling J
   - Pagni M
-  doi: doi:10.1093/bioinformatics/btt036
+  doi: 10.1093/bioinformatics/btt036
   id: doi:10.1093/bioinformatics/btt036
-  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating
-    metabolic networks
+  journal: Bioinformatics
+  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating metabolic networks
   year: '2013'
 - authors:
   - Bernard T
@@ -136,8 +136,9 @@ publications:
   - Moretti S
   - Xenarios I
   - Pagni M
-  doi: doi:10.1093/bib/bbs058
+  doi: 10.1093/bib/bbs058
   id: doi:10.1093/bib/bbs058
+  journal: Briefings in Bioinformatics
   title: Reconciliation of metabolites and biochemical reactions for metabolic networks
   year: '2014'
 ---
