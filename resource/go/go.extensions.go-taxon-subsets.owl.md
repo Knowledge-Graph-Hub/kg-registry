@@ -1,15 +1,13 @@
 ---
 category: OntologyProduct
-description: Classes added to ncbitaxon for groupings such as prokaryotes
+description: Classes added to ncbitaxon for taxon subsets such as prokaryotes
 format: owl
-id: go.extensions.go-taxon-groupings.owl
-name: GO Taxon Groupings
+id: go.extensions.go-taxon-subsets.owl
+name: GO Taxon Subsets
 original_source:
 - relation_type: prov:hadPrimarySource
   source: go
-product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
-warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ HTTP 403 error when
-  accessing file
+product_file_size: 5795
+product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-subsets.owl
 layout: product_detail
 ---

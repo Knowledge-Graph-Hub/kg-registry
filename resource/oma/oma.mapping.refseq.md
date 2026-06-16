@@ -11,8 +11,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: refseq
 product_url: https://omabrowser.org/All/oma-refseq.txt.gz
-warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ HTTP 403 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---
