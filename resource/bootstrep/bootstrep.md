@@ -13,7 +13,7 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - chemistry and biochemistry
-homepage_url: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
+homepage_url: https://www.ebi.ac.uk/ols4/ontologies/gro
 id: bootstrep
 last_modified_date: '2026-05-31T00:00:00Z'
 layout: resource_detail

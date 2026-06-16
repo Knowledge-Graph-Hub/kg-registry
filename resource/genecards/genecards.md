@@ -26,6 +26,7 @@ products:
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
+  format: http
   id: genecards.web.interface
   name: GeneCards Web Interface
   original_source:
@@ -57,10 +58,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
     Orphanet, DisGeNET and other disease databases
@@ -84,10 +81,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other expression
     databases
@@ -107,10 +100,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Pathway information integrated from Reactome, WikiPathways and other
     pathway databases
@@ -128,10 +117,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
     other interaction databases
@@ -151,10 +136,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
     databases
@@ -174,10 +155,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Literature references from PubMed automatically associated with genes
   format: http
@@ -192,10 +169,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Gene ontology annotations from the Gene Ontology Consortium
   format: http
@@ -210,10 +183,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
     sources
@@ -231,10 +200,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Model organism data from FlyBase, SGD, ZFIN and other model organism
     databases
@@ -254,10 +219,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Protein structure data from PDB Europe and other structural databases
   format: http
@@ -272,10 +233,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http
@@ -290,10 +247,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations

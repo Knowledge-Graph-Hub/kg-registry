@@ -622,7 +622,6 @@ publications:
   journal: Nucleic Acids Research
   title: "The complex portal\u2013an encyclopaedia of macromolecular complexes"
   year: '2015'
-repository: https://github.com/EBI-IntAct/intact-data-exchange
 taxon:
 - NCBITaxon:562
 - NCBITaxon:3702

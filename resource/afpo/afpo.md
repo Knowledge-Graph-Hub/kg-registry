@@ -51,12 +51,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: afpo
-  product_url: http://purl.obolibrary.org/obo/afpo.obo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
+  product_file_size: 78816
+  product_url: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.obo
 - category: OntologyProduct
   description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
@@ -65,12 +61,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: afpo
-  product_url: http://purl.obolibrary.org/obo/afpo.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
+  product_file_size: 92733
+  product_url: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.json
 publications: []
 repository: https://github.com/h3abionet/afpo
 ---
@@ -96,7 +88,7 @@ The main ontology in OWL. Contains all MP terms and links to other OBO ontologie
 
 A direct translation of the AfPO (OWL edition) into OBO format
 
-**URL**: [http://purl.obolibrary.org/obo/afpo.obo](http://purl.obolibrary.org/obo/afpo.obo)
+**URL**: [https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.obo](https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.obo)
 
 **Format**: obo
 
@@ -104,7 +96,7 @@ A direct translation of the AfPO (OWL edition) into OBO format
 
 A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
 
-**URL**: [http://purl.obolibrary.org/obo/afpo.json](http://purl.obolibrary.org/obo/afpo.json)
+**URL**: [https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.json](https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.json)
 
 **Format**: json
 

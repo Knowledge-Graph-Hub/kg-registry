@@ -15,7 +15,7 @@ domains:
 - proteomics
 - precision medicine
 - biomedical
-homepage_url: https://deepmind.google/science/alphamissense/
+homepage_url: https://github.com/google-deepmind/alphamissense
 id: alphamissense
 last_modified_date: '2026-06-15T00:00:00Z'
 layout: resource_detail
@@ -66,12 +66,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alphamissense
-  product_url: https://deepmind.google/science/alphamissense/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
+  product_url: https://github.com/google-deepmind/alphamissense
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
