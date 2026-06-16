@@ -12,9 +12,9 @@ original_source:
   source: proton
 product_url: http://www.ontotext.com/proton/protontop
 warnings:
-- File was not able to be retrieved when checked on 2026-06-13_ HTTP 202 error when
+- File was not able to be retrieved when checked on 2026-06-15_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-06-12_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-13_ HTTP 202 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
   accessing file

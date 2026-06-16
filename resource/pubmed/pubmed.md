@@ -268,9 +268,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence database generated from public PubMed abstracts with
@@ -366,9 +366,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-13: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-15: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-16: FTP error: timed
     out'
 - category: Product
   compression: gzip
@@ -1041,9 +1041,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances

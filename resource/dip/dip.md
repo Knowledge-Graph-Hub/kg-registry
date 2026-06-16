@@ -875,11 +875,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-13: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-15: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-16: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -1254,7 +1254,8 @@ publications:
   doi: 10.1093/nar/30.1.303
   id: https://doi.org/10.1093/nar/30.1.303
   journal: Nucleic Acids Research
-  title: 'DIP, the Database of Interacting Proteins: a research tool for studying cellular networks of protein interactions'
+  title: 'DIP, the Database of Interacting Proteins: a research tool for studying
+    cellular networks of protein interactions'
   year: '2002'
 - authors:
   - L. Salwinski
@@ -1298,7 +1299,8 @@ publications:
   doi: 10.1038/nmeth.1931
   id: https://doi.org/10.1038/nmeth.1931
   journal: Nature Methods
-  title: 'Protein interaction data curation: The International Molecular Exchange (IMEx) consortium'
+  title: 'Protein interaction data curation: The International Molecular Exchange
+    (IMEx) consortium'
   year: '2012'
 synonyms:
 - DIP

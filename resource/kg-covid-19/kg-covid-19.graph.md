@@ -9,7 +9,7 @@ original_source:
   source: kg-covid-19
 product_url: https://kghub.io/kg-covid-19/
 warnings:
-- File was not able to be retrieved when checked on 2026-06-13_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-15_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
   accessing file

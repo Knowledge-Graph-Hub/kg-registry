@@ -46,11 +46,11 @@ products:
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolite metabolizing enzyme gene sequences (FASTA)
@@ -62,9 +62,9 @@ products:
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolite structures (SDF)
@@ -76,11 +76,11 @@ products:
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#structures
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: All metabolites dataset (XML)
@@ -1756,9 +1756,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Public library of pathway diagrams that can be browsed, viewed, and

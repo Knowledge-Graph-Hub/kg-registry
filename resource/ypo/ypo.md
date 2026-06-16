@@ -34,9 +34,9 @@ products:
     source: ypo
   product_url: http://purl.obolibrary.org/obo/ypo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Yeast phenotypes ontology in OBO format
@@ -48,9 +48,9 @@ products:
     source: ypo
   product_url: http://purl.obolibrary.org/obo/ypo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
     when accessing file'
 publications: []
 taxon:

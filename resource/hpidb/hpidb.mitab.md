@@ -18,7 +18,7 @@ secondary_source:
 - relation_type: prov:wasDerivedFrom
   source: biogrid
 warnings:
-- File was not able to be retrieved when checked on 2026-06-13_ Error connecting to
+- File was not able to be retrieved when checked on 2026-06-15_ Error connecting to
   URL_ HTTPSConnectionPool(host='hpidb.igbb.msstate.edu', port=443)_ Max retries exceeded
   with url_ / (Caused by NewConnectionError("HTTPSConnection(host='hpidb.igbb.msstate.edu',
   port=443)_ Failed to establish a new connection_ [Errno 111] Connection refused"))

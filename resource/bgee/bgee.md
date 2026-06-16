@@ -1260,9 +1260,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -1582,7 +1582,8 @@ publications:
   doi: 10.1093/nar/gkaa793
   id: doi:10.1093/nar/gkaa793
   journal: Nucleic Acids Research
-  title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics in animals
+  title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics
+    in animals
   year: '2021'
 repository: https://github.com/BgeeDB/bgee_apps
 taxon:

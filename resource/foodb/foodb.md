@@ -193,9 +193,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -207,9 +207,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -221,9 +221,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -235,9 +235,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -249,9 +249,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -265,9 +265,9 @@ products:
   warnings:
   - The FooDB downloads page lists this file, but the direct download URL returned
     HTTP 404 when checked on 2026-06-12.
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -279,9 +279,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -293,9 +293,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_peak_lists.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -307,9 +307,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_peak_lists.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -321,9 +321,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_peak_lists.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -335,9 +335,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_peak_lists.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -349,9 +349,9 @@ products:
     source: foodb
   product_url: https://foodb.ca/public/system/downloads/foodb_nmr_peak_lists.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

@@ -65,9 +65,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -90,9 +90,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -128,9 +128,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -142,9 +142,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -3804,9 +3804,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   compression: 7z
@@ -4148,10 +4148,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
+    when accessing file'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Gene Ontology terms
@@ -4165,9 +4165,9 @@ products:
     source: go
   product_url: https://omabrowser.org/All/oma-go.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   compression: gzip

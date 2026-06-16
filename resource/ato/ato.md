@@ -35,9 +35,9 @@ products:
     source: ato
   product_url: http://purl.obolibrary.org/obo/ato.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 publications: []
 taxon:

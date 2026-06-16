@@ -27,9 +27,9 @@ products:
     source: cmaup
   product_url: https://academic.oup.com/nar/article/47/D1/D1118/5144144
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,

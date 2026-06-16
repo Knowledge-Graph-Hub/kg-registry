@@ -9,5 +9,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: alphafold
 product_url: https://alphafold.ebi.ac.uk/help
+warnings:
+- File was not able to be retrieved when checked on 2026-06-15_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

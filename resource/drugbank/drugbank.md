@@ -804,9 +804,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -2869,12 +2869,12 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
     to create graph nodes and add edges.

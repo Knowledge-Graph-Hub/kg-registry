@@ -1096,9 +1096,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
@@ -2807,11 +2807,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-13: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-06-15: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-06-16: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'

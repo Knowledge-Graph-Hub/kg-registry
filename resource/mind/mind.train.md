@@ -20,10 +20,10 @@ original_source:
   source: mesh
 product_url: https://zenodo.org/records/8117748/files/train.txt
 warnings:
+- File was not able to be retrieved when checked on 2026-06-15_ No Content-Length
+  header found
 - File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-06-12_ No Content-Length
-  header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-12-22_ HTTP 429 error when

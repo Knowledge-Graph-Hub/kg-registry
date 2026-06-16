@@ -9,9 +9,9 @@ original_source:
   source: pd_st
 product_url: http://purl.obolibrary.org/obo/pd_st.owl
 warnings:
+- File was not able to be retrieved when checked on 2026-06-15_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-06-12_ HTTP 404 error when
-  accessing file
 layout: product_detail
 ---

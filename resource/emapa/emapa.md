@@ -19,7 +19,7 @@ domains:
 - anatomy and development
 homepage_url: http://www.informatics.jax.org/expression.shtml
 id: emapa
-last_modified_date: '2026-06-13T00:00:00Z'
+last_modified_date: '2026-06-16T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -62,7 +62,8 @@ publications:
   doi: 10.1016/s0925-4773(98)00069-0
   id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
   journal: Mech Dev
-  title: An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature
+  title: An internet-accessible database of mouse developmental anatomy based on a
+    systematic nomenclature
   year: '1998'
 - authors:
   - Hayamizu TF
@@ -83,7 +84,8 @@ publications:
   doi: 10.1007/s00335-015-9584-9
   id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
   journal: Mamm Genome
-  title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data'
+  title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating
+    Biomedical Data'
   year: '2015'
 - authors:
   - Terry F. Hayamizu
@@ -93,6 +95,9 @@ publications:
   journal: Kaufman's Atlas of Mouse Development Supplement
   title: Textual Anatomics
   year: '2016'
+- id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
+  title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
+    Expression Database for Mouse Development (GXD)'
 ---
 ## Description
 

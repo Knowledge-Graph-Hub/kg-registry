@@ -69,6 +69,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated

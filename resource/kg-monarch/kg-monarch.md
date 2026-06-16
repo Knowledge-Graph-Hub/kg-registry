@@ -27,7 +27,7 @@ domains:
 - biomedical
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
-last_modified_date: '2026-06-15T21:00:33Z'
+last_modified_date: '2026-06-16T13:55:56Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

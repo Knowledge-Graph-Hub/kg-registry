@@ -36,9 +36,9 @@ products:
   - relation_type: prov:used
     source: rlims-p
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,

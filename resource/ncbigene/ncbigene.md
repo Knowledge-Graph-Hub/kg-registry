@@ -744,9 +744,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: MappingProduct
   compression: zip
@@ -1160,9 +1160,9 @@ products:
     source: ncbigene
   product_url: https://omabrowser.org/All/oma-entrez.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Browser for complete Hetionet v1.0 graph database in Neo4j
@@ -2236,11 +2236,11 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 405 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between

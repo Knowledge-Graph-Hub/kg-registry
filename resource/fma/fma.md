@@ -33,9 +33,9 @@ products:
     source: fma
   product_url: http://purl.obolibrary.org/obo/fma.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -294,7 +294,8 @@ publications:
   - Musen MA
   id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
   journal: AMIA Annu Symp Proc
-  title: 'Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study'
+  title: 'Challenges in converting frame-based ontology into OWL: the Foundational
+    Model of Anatomy case-study'
   year: '2005'
 repository: https://bitbucket.org/uwsig/fma
 taxon:

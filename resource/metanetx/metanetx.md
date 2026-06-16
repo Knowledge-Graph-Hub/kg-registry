@@ -60,11 +60,11 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
     accessing file
+  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
+    to URL'
   - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2026-04-10: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-15: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
 - category: Product
   description: MNXref unified namespace for reactions across databases
@@ -78,9 +78,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-13: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -104,7 +104,8 @@ publications:
   id: doi:10.1093/nar/gkaa992
   journal: Nucleic Acids Research
   preferred: true
-  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions in the context of metabolic models
+  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions
+    in the context of metabolic models
   year: '2021'
 - authors:
   - Moretti S
@@ -116,7 +117,8 @@ publications:
   doi: 10.1093/nar/gkv1117
   id: doi:10.1093/nar/gkv1117
   journal: Nucleic Acids Research
-  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions to bring together genome-scale metabolic networks
+  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions
+    to bring together genome-scale metabolic networks
   year: '2016'
 - authors:
   - Ganter M
@@ -127,7 +129,8 @@ publications:
   doi: 10.1093/bioinformatics/btt036
   id: doi:10.1093/bioinformatics/btt036
   journal: Bioinformatics
-  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating metabolic networks
+  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating
+    metabolic networks
   year: '2013'
 - authors:
   - Bernard T

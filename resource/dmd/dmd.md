@@ -51,9 +51,9 @@ products:
     source: dmd
   product_url: https://digital.nhs.uk/services/terminology-and-classifications/dm-d
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: DocumentationProduct
   description: Vision help documentation describing Gemscript as the integrated drug

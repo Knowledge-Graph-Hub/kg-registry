@@ -1,11 +1,11 @@
 {
   "citations": {
-    "publication_entries_total": 672,
-    "publication_entries_with_issues": 413,
-    "resources_with_citation_issues": 299,
-    "resources_without_publications": 411,
+    "publication_entries_total": 674,
+    "publication_entries_with_issues": 298,
+    "resources_with_citation_issues": 254,
+    "resources_without_publications": 409,
     "validation_errors": 2,
-    "validation_warnings": 1105
+    "validation_warnings": 738
   },
   "dates": {
     "missing_creation_date": 0,
@@ -13973,7 +13973,6 @@
       "aro",
       "atgo",
       "bco",
-      "bgee",
       "bigg",
       "bind",
       "biofactoid",
@@ -13995,7 +13994,6 @@
       "cfde-gse",
       "cgnc",
       "chea-kg",
-      "chebi",
       "chembl",
       "cheminf",
       "chiro",
@@ -14009,39 +14007,29 @@
       "clo",
       "cmap",
       "cmaup",
-      "cmo",
       "connectivitymap",
       "cpathkg",
       "crd",
       "creeds",
-      "ctrp",
       "darkkinasekb",
       "dbpedia",
       "ddanat",
       "ddpheno",
       "dinto",
-      "dip",
-      "diseases",
       "disgenet",
-      "disprot",
-      "doid",
       "dorothea",
       "dpo",
       "dron",
-      "drugbank",
       "drugcentral",
       "drugmechdb",
       "ecid",
-      "eco",
       "ehdaa2",
       "emapa",
       "emind",
       "encode",
       "enrichr-kg",
-      "envo",
       "eo",
       "epigraphdb",
-      "epsd",
       "eqtlgen",
       "eupath",
       "eupathdb",
@@ -14049,11 +14037,7 @@
       "evoweb",
       "exmo",
       "expressionatlas",
-      "fbbt",
-      "finngen",
       "flopo",
-      "fma",
-      "fobi",
       "foodb",
       "foodon",
       "fypo",
@@ -14066,23 +14050,19 @@
       "glyconnect",
       "glytoucan",
       "gno",
-      "go",
       "go-cam",
       "gp-kg",
       "greengenes",
       "gtex",
-      "gtrnadb",
       "gutmgene",
       "hald",
       "hancestro",
       "hao",
       "hetionet",
       "hom",
-      "hp",
       "hubmap",
       "humancyc",
       "icd10",
-      "icees-kg",
       "iceo",
       "icgc",
       "idisk",
@@ -14092,7 +14072,6 @@
       "ino",
       "inoh",
       "interpro",
-      "irefindex",
       "kegg",
       "kg4sl",
       "kgcl",
@@ -14102,35 +14081,26 @@
       "labo",
       "lincs-l1000",
       "lncbase",
-      "lncbook",
-      "lncipedia",
       "lncrnadb",
       "lncrnalyzr",
-      "malacards",
       "mangal",
       "massive",
       "mcro",
       "mechreponet",
       "medkg",
       "metabokg",
-      "metanetx",
-      "mgd",
       "mgmlink",
       "mgnify",
       "miapa",
       "mind",
-      "mint",
       "mirbase",
       "mirgate",
       "mirgenedb",
       "mirtarbase",
-      "mmo",
       "mod",
-      "modomics",
       "monarchinitiative",
       "mondo",
       "motrpac",
-      "mp",
       "ms",
       "msigdb",
       "mutationds",
@@ -14143,18 +14113,14 @@
       "np-kg",
       "npo",
       "nsides",
-      "oae",
       "oba",
       "obi",
       "obis",
-      "ogms",
       "ohd",
       "ohpi",
       "ols",
-      "oma",
       "omicsdi",
       "omim",
-      "omnipath",
       "omp",
       "omrse",
       "oncokb",
@@ -14163,17 +14129,12 @@
       "ontoneo",
       "opentargets",
       "orcid",
-      "orthodb",
-      "pathbank",
       "pathophenodb",
       "pathwaycommons",
-      "pato",
-      "pcl",
       "pdbe",
       "pdro",
       "peco",
       "pfam",
-      "pharmacodb",
       "pharmebinet",
       "phipo",
       "phosphat",
@@ -14189,11 +14150,9 @@
       "pr",
       "preppi",
       "progeny",
-      "protcid",
       "pso",
       "pubchem",
       "pw",
-      "reactome",
       "reconx",
       "rediportal",
       "refseq",
@@ -14206,10 +14165,8 @@
       "ribocentre",
       "ribovision",
       "rlims-p",
-      "rna-kg",
       "rs",
       "rxnorm",
-      "scdo",
       "sibils",
       "signor",
       "silva",
@@ -14219,7 +14176,6 @@
       "snpeff",
       "so",
       "spd",
-      "spoke",
       "spoke-okn",
       "srpdb",
       "stato",
@@ -14249,7 +14205,6 @@
       "uo",
       "upa",
       "upheno",
-      "vario",
       "vbo",
       "vo",
       "vto",
@@ -14491,7 +14446,6 @@
       "medi",
       "medispan-gpi",
       "medlineplus",
-      "mesh",
       "metacyc",
       "metatraits",
       "metpo",
@@ -14669,7 +14623,6 @@
       "uf-okn",
       "ufokn",
       "unibiomap",
-      "uniprot",
       "vectology",
       "vhog",
       "vsao",
@@ -15030,7 +14983,7 @@
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-06-15T21:18:03Z",
+  "generated_at": "2026-06-16T14:13:05Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 153,
     "with_evaluation_page": 127,
@@ -15050,7 +15003,7 @@
     "missing_format": 974,
     "missing_original_source": 8,
     "missing_product_url": 96,
-    "retrieval_warning_mentions": 915,
+    "retrieval_warning_mentions": 920,
     "total": 7203
   },
   "resource_count": 869,
@@ -15074,12 +15027,12 @@
     "stub_count": 0,
     "total": 869,
     "with_broken_links": 385,
-    "with_citation_issues": 299,
+    "with_citation_issues": 254,
     "without_products": 11,
-    "without_publications": 411
+    "without_publications": 409
   },
   "scoring": {
-    "average_score": 11.72,
+    "average_score": 11.32,
     "median_score": 10.0,
     "resources_with_issues": 868,
     "tracked_but_unscored_metrics": [
@@ -15273,12 +15226,6 @@
           "points": 66
         },
         {
-          "count": 2,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 6
-        },
-        {
           "count": 1,
           "issue_key": "missing_infores_id",
           "label": "Missing infores_id",
@@ -15287,7 +15234,7 @@
       ],
       "name": "OMA",
       "resource_page": "resource/oma/oma.html",
-      "score": 75
+      "score": 69
     },
     {
       "activity_status": "active",
@@ -15387,17 +15334,11 @@
           "issue_key": "product_missing_product_url",
           "label": "Products missing product_url",
           "points": 6
-        },
-        {
-          "count": 2,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 6
         }
       ],
       "name": "Gene Ontology",
       "resource_page": "resource/go/go.html",
-      "score": 61
+      "score": 55
     },
     {
       "activity_status": "active",
@@ -15480,12 +15421,6 @@
           "points": 14
         },
         {
-          "count": 2,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 6
-        },
-        {
           "count": 1,
           "issue_key": "product_missing_product_url",
           "label": "Products missing product_url",
@@ -15494,207 +15429,7 @@
       ],
       "name": "DrugBank",
       "resource_page": "resource/drugbank/drugbank.html",
-      "score": 52
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-base.json"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-base.obo"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-base.owl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-full.json"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-full.obo"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-full.owl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-simple.json"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-simple.obo"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl-simple.owl"
-        },
-        {
-          "sources": [
-            "warning",
-            "cache"
-          ],
-          "url": "http://purl.obolibrary.org/obo/pcl.json"
-        }
-      ],
-      "id": "pcl",
-      "issues": [
-        {
-          "count": 10,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 30
-        },
-        {
-          "count": 4,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 12
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Provisional Cell Ontology",
-      "resource_page": "resource/pcl/pcl.html",
       "score": 46
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_genes.tab.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/current/download/odb12v1_species.tab.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.orthodb.org/v12/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://github.com/zdobnov-lab/orthodb"
-        }
-      ],
-      "id": "orthodb",
-      "issues": [
-        {
-          "count": 10,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 30
-        },
-        {
-          "count": 3,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 9
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 3,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 3
-        }
-      ],
-      "name": "OrthoDB",
-      "resource_page": "resource/orthodb/orthodb.html",
-      "score": 45
     },
     {
       "activity_status": "active",
@@ -15753,12 +15488,6 @@
         },
         {
           "count": 1,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 3
-        },
-        {
-          "count": 1,
           "issue_key": "contacts_not_connected_to_org",
           "label": "Contacts not linked to Organization entry",
           "points": 1
@@ -15766,90 +15495,7 @@
       ],
       "name": "Reactome",
       "resource_page": "resource/reactome/reactome.html",
-      "score": 44
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz"
-        },
-        {
-          "sources": [
-            "live"
-          ],
-          "url": "https://sugi.bio/biobtree/api/"
-        }
-      ],
-      "id": "hp",
-      "issues": [
-        {
-          "count": 7,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 21
-        },
-        {
-          "count": 4,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
-          "points": 12
-        },
-        {
-          "count": 7,
-          "issue_key": "product_missing_format",
-          "label": "Products missing format",
-          "points": 7
-        },
-        {
-          "count": 1,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Human Phenotype Ontology (HPO)",
-      "resource_page": "resource/hp/hp.html",
-      "score": 43
+      "score": 41
     },
     {
       "activity_status": "active",
@@ -15939,17 +15585,11 @@
           "issue_key": "product_missing_format",
           "label": "Products missing format",
           "points": 8
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_publications",
-          "label": "Missing publications",
-          "points": 2
         }
       ],
       "name": "uniprot",
       "resource_page": "resource/uniprot/uniprot.html",
-      "score": 43
+      "score": 41
     },
     {
       "activity_status": "active",
@@ -15959,69 +15599,90 @@
             "warning",
             "cache"
           ],
-          "url": "ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz"
+          "url": "http://juniper.health.unm.edu/tcrd/"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://juniper.health.unm.edu/tcrd/download/"
         },
         {
           "sources": [
             "cache"
           ],
-          "url": "https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG"
+          "url": "http://redrugs.tw.rpi.edu/"
         },
         {
           "sources": [
             "cache"
           ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz"
+          "url": "http://redrugs.tw.rpi.edu/api/"
         },
         {
           "sources": [
             "cache"
           ],
-          "url": "https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz"
+          "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
         },
         {
           "sources": [
-            "live"
+            "warning",
+            "cache"
           ],
-          "url": "https://sugi.bio/biobtree/api/"
+          "url": "https://www.embopress.org/doi/suppl/10.1038/msb.2011.26"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://www.genecards.org/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://www.omim.org/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://www.omim.org/api"
         }
       ],
-      "id": "chebi",
+      "id": "omim",
       "issues": [
         {
-          "count": 5,
+          "count": 9,
           "issue_key": "broken_link",
           "label": "Broken/inaccessible links",
-          "points": 15
+          "points": 27
         },
         {
-          "count": 15,
+          "count": 6,
           "issue_key": "product_missing_format",
           "label": "Products missing format",
-          "points": 15
-        },
-        {
-          "count": 2,
-          "issue_key": "citation_metadata_issue",
-          "label": "Publication citation metadata issues",
           "points": 6
         },
         {
           "count": 1,
-          "issue_key": "product_missing_product_url",
-          "label": "Products missing product_url",
-          "points": 2
+          "issue_key": "citation_metadata_issue",
+          "label": "Publication citation metadata issues",
+          "points": 3
         },
         {
           "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
         }
       ],
-      "name": "Chemical Entities of Biological Interest",
-      "resource_page": "resource/chebi/chebi.html",
-      "score": 39
+      "name": "OMIM",
+      "resource_page": "resource/omim/omim.html",
+      "score": 38
     },
     {
       "activity_status": "active",
@@ -16096,17 +15757,242 @@
           "issue_key": "missing_contacts",
           "label": "Missing contacts",
           "points": 2
+        }
+      ],
+      "name": "Medical Subject Headings (MeSH)",
+      "resource_page": "resource/mesh/mesh.html",
+      "score": 37
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_genes.tab.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/current/download/odb12v1_species.tab.gz"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.orthodb.org/v12/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://github.com/zdobnov-lab/orthodb"
+        }
+      ],
+      "id": "orthodb",
+      "issues": [
+        {
+          "count": 10,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 30
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 3,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 3
+        }
+      ],
+      "name": "OrthoDB",
+      "resource_page": "resource/orthodb/orthodb.html",
+      "score": 36
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://biomics.lab.nycu.edu.tw/dbSNO/download.php"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://www.genecards.org/"
+        }
+      ],
+      "id": "pubmed",
+      "issues": [
+        {
+          "count": 17,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 17
+        },
+        {
+          "count": 4,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 12
         },
         {
           "count": 1,
           "issue_key": "missing_publications",
           "label": "Missing publications",
           "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "product_missing_product_url",
+          "label": "Products missing product_url",
+          "points": 2
         }
       ],
-      "name": "Medical Subject Headings (MeSH)",
-      "resource_page": "resource/mesh/mesh.html",
-      "score": 39
+      "name": "PubMed and MEDLINE",
+      "resource_page": "resource/pubmed/pubmed.html",
+      "score": 35
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://juniper.health.unm.edu/tcrd/"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "http://juniper.health.unm.edu/tcrd/download/"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl"
+        },
+        {
+          "sources": [
+            "cache"
+          ],
+          "url": "https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://sugi.bio/biobtree/api/"
+        },
+        {
+          "sources": [
+            "warning",
+            "cache"
+          ],
+          "url": "https://www.genecards.org/"
+        }
+      ],
+      "id": "string",
+      "issues": [
+        {
+          "count": 7,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 21
+        },
+        {
+          "count": 12,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 12
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        }
+      ],
+      "name": "STRING",
+      "resource_page": "resource/string/string.html",
+      "score": 35
     }
   ]
 }

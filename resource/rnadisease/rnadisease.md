@@ -23,11 +23,11 @@ products:
     source: rnadisease
   product_url: http://www.rnadisease.org/
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 416 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-12: HTTP 416 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 416 error
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 416 error
     when accessing file'
 - category: GraphProduct
   compression: gzip

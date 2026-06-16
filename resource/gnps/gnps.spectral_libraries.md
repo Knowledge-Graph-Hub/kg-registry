@@ -9,7 +9,7 @@ original_source:
   source: gnps
 product_url: https://gnps-external.ucsd.edu/gnpslibrary
 warnings:
-- File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-15_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-05_ HTTP 502 error when
   accessing file

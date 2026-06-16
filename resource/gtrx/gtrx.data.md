@@ -18,7 +18,7 @@ secondary_source:
 - relation_type: prov:wasInformedBy
   source: pubchem
 warnings:
-- File was not able to be retrieved when checked on 2026-06-13_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-15_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-05_ HTTP 405 error when
   accessing file

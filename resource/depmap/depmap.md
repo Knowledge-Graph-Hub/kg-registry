@@ -102,9 +102,9 @@ products:
     source: depmap
   product_url: https://depmap.org/portal/data_page/?tab=currentRelease
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: CRISPR-Cas9 knockout screening data processed with Chronos algorithm
@@ -342,9 +342,9 @@ products:
     source: depmap
   product_url: https://depmap.org/portal/download/all/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: DepMap downloads page for PRISM Repurposing primary and secondary screen
@@ -360,9 +360,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: depmap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: Replicate-collapsed log-fold-change matrix from the primary PRISM Repurposing
@@ -378,9 +378,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: depmap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: Dose-response curve parameter matrix from the secondary PRISM Repurposing
@@ -396,9 +396,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: depmap
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-13: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
     when accessing file'
 - category: Product
   description: Harmonizome 3.0 processed dataset downloads, including dataset-specific
