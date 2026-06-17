@@ -81,6 +81,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ensembl
   - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
     source: fantom5
   - relation_type: prov:hadPrimarySource
     source: flybase
@@ -124,6 +126,8 @@ products:
     source: icd11
   - relation_type: prov:hadPrimarySource
     source: iid
+  - relation_type: prov:hadPrimarySource
+    source: imgt
   - relation_type: prov:hadPrimarySource
     source: innatedb
   - relation_type: prov:hadPrimarySource
@@ -191,6 +195,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: prosite
   - relation_type: prov:hadPrimarySource
+    source: proteomicsdb
+  - relation_type: prov:hadPrimarySource
     source: pubchem
   - relation_type: prov:hadPrimarySource
     source: pubmed
@@ -233,6 +239,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: tissues
   - relation_type: prov:hadPrimarySource
+    source: treefam
+  - relation_type: prov:hadPrimarySource
     source: ttd
   - relation_type: prov:hadPrimarySource
     source: ucsc
@@ -240,6 +248,8 @@ products:
     source: umls
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: vista
   - relation_type: prov:hadPrimarySource
     source: wikipathways
   - relation_type: prov:hadPrimarySource

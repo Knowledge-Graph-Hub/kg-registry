@@ -1806,6 +1806,15 @@ entries:
     source_path: resource/eol-traitbank/eol-traitbank.md
     status: valid
     warnings: []
+  resource/epd/epd.md#publication[0]#DOI:10.1093/nar/gku1111:
+    checked_at: '2026-06-17T13:49:02Z'
+    errors: []
+    fingerprint: c12b82185272ca3a9b736a262649256eef6dcdb907bac8e5c04dbb1f3c3da5dc
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gku1111
+    source_path: resource/epd/epd.md
+    status: valid
+    warnings: []
   resource/epigraphdb/epigraphdb.md#publication[0]#DOI:10.1093/bioinformatics/btaa961:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2885,6 +2894,15 @@ entries:
     status: warning
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41467-020-19942-z.md
+  resource/imgt/imgt.md#publication[0]#DOI:10.1093/nar/gku1056:
+    checked_at: '2026-06-17T13:48:54Z'
+    errors: []
+    fingerprint: 281a8d5e3aa2ef198ef92f4fca3c8e77cd0ea27242288ea8518f614dd0acc2db
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gku1056
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
   resource/imodulondb/imodulondb.md#publication[0]#DOI:10.1093/nar/gkae1009:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5203,6 +5221,15 @@ entries:
     source_path: resource/proteomehd/proteomehd.md
     status: valid
     warnings: []
+  resource/proteomicsdb/proteomicsdb.md#publication[0]#DOI:10.1093/nar/gkx1029:
+    checked_at: '2026-06-17T13:49:00Z'
+    errors: []
+    fingerprint: fef1f7fe095629dfd1a6e79cb575b1e5f813f066712ebafd5a85132d752b90b6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkx1029
+    source_path: resource/proteomicsdb/proteomicsdb.md
+    status: valid
+    warnings: []
   resource/prov-o/prov-o.md#publication[0]#url:https://www.w3.org/TR/prov-o/:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6242,6 +6269,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
+  resource/treefam/treefam.md#publication[0]#DOI:10.1093/nar/gkt1055:
+    checked_at: '2026-06-17T13:48:56Z'
+    errors: []
+    fingerprint: 33e72a98b962b58b63515765918bcaab645749cd556ce71ca3e2523fcaa00cb6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkt1055
+    source_path: resource/treefam/treefam.md
+    status: valid
+    warnings: []
   resource/ttd/ttd.md#publication[0]#DOI:10.1093/nar/gkad751:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6507,6 +6543,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1111_jvim.70133.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1111_jvim.70133.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1111_jvim.70133.md
+  resource/vista/vista.md#publication[0]#DOI:10.1093/nar/gkl822:
+    checked_at: '2026-06-17T13:48:58Z'
+    errors: []
+    fingerprint: 6d31d0153f675b87d0c526ea86c62faf0fdc91042913e65a9e45cb5cc221a488
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkl822
+    source_path: resource/vista/vista.md
+    status: valid
+    warnings: []
   resource/vo/vo.md#publication[0]#PMID:23256535:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
