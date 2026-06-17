@@ -1,6 +1,13 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: contact@bacdive.de
+  id: dsmz-leibniz-institute-dsmz-german-collection-of-m
+  label: BacDive
 creation_date: '2025-11-25T00:00:00Z'
 description: BacDive (Bacterial Diversity Metadatabase) is the world's largest database
   for standardized bacterial information, containing strain-level data on morphology,
@@ -12,8 +19,12 @@ domains:
 - biological systems
 homepage_url: https://bacdive.dsmz.de/
 id: bacdive
-last_modified_date: '2025-11-26T00:00:00Z'
+infores_id: bacdive
+last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: BacDive
 products:
 - category: GraphProduct
@@ -58,8 +69,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -180,8 +190,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -243,8 +252,8 @@ products:
   product_url: https://metatraits.embl.de/traits
 - category: Product
   description: Family-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.family-summary
   name: metaTraits NCBI Family Summary
   original_source:
@@ -260,12 +269,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 1540253
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_family_summary.jsonl.gz
+  product_file_size: 913932
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_family_summary_no_predictions.tsv.gz
 - category: Product
   description: Genus-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.genus-summary
   name: metaTraits NCBI Genus Summary
   original_source:
@@ -281,12 +290,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 5417182
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_genus_summary.jsonl.gz
+  product_file_size: 2431808
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_genus_summary_no_predictions.tsv.gz
 - category: Product
   description: Species-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.species-summary
   name: metaTraits NCBI Species Summary
   original_source:
@@ -302,12 +311,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 34062481
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+  product_file_size: 6523019
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_species_summary_no_predictions.tsv.gz
 - category: Product
   description: Family-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.family-summary
   name: metaTraits GTDB Family Summary
   original_source:
@@ -323,12 +332,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 4575050
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
+  product_file_size: 1513013
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_family_summary_no_predictions.tsv.gz
 - category: Product
   description: Genus-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.genus-summary
   name: metaTraits GTDB Genus Summary
   original_source:
@@ -344,12 +353,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 16364735
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_genus_summary.jsonl.gz
+  product_file_size: 4965442
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_genus_summary_no_predictions.tsv.gz
 - category: Product
   description: Species-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.species-summary
   name: metaTraits GTDB Species Summary
   original_source:
@@ -365,8 +374,8 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 48114108
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
+  product_file_size: 12570522
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
 - category: GraphicalInterface
   description: MediaDive web portal for browsing, searching, comparing, and building
     microbial cultivation media recipes.
@@ -418,6 +427,26 @@ products:
     source: chebi
   - relation_type: prov:used
     source: ncbitaxon
+publications:
+- authors:
+  - Schober I
+  - Koblitz J
+  - Sardà Carbasse J
+  - Ebeling C
+  - Schmidt ML
+  - Podstawka A
+  - Gupta R
+  - Ilangovan V
+  - Chamanara J
+  - Overmann J
+  - Reimer LC
+  doi: doi:10.1093/nar/gkae959
+  id: https://doi.org/10.1093/nar/gkae959
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'BacDive in 2025: the core database for prokaryotic strain data'
+  year: '2025'
+repository: https://github.com/JKoblitz/bacdive-api
 taxon:
 - NCBITaxon:2
 ---
