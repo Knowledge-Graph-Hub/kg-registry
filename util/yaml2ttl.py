@@ -46,6 +46,12 @@ from urllib.parse import quote
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF, RDFS, DCTERMS, OWL, XSD
 
+try:
+    # rdflib's own check for whether a string can be serialized as a URI.
+    from rdflib.term import _is_valid_uri
+except ImportError:  # pragma: no cover - guard against rdflib internals moving
+    _is_valid_uri = None
+
 # Define namespace URIs
 KGREGISTRY_BASE = "https://w3id.org/kg-registry/"
 SCHEMA = Namespace("http://schema.org/")
@@ -74,9 +80,25 @@ def add_string_property(graph, subject, predicate, value):
 
 
 def add_uri_property(graph, subject, predicate, value):
-    """Add a URI property to the graph if value is not None."""
-    if value:
-        graph.add((subject, predicate, URIRef(str(value))))
+    """Add a URI property to the graph if value is not None.
+
+    Some values (e.g. Wayback Machine archive links, or URLs that picked up
+    stray trailing text during curation) are not serializable as RDF URIs.
+    Rather than letting a single bad value abort the whole Turtle build, we
+    validate first and fall back to a plain string literal, emitting a warning
+    so the offending value still surfaces in the build log.
+    """
+    if not value:
+        return
+    value = str(value)
+    if _is_valid_uri is None or _is_valid_uri(value):
+        graph.add((subject, predicate, URIRef(value)))
+    else:
+        print(
+            f"Warning: {value!r} is not a valid URI; serializing as a string literal.",
+            file=sys.stderr,
+        )
+        graph.add((subject, predicate, Literal(value)))
 
 
 def add_resource_to_graph(graph, resource):
