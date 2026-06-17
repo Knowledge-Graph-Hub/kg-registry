@@ -41,6 +41,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: dgidb
 - relation_type: prov:hadPrimarySource
+  source: dgv
+- relation_type: prov:hadPrimarySource
   source: diseases
 - relation_type: prov:hadPrimarySource
   source: doid
@@ -74,6 +76,8 @@ original_source:
   source: gtex
 - relation_type: prov:hadPrimarySource
   source: gtrnadb
+- relation_type: prov:hadPrimarySource
+  source: guidetopharmacology
 - relation_type: prov:hadPrimarySource
   source: gwascatalog
 - relation_type: prov:hadPrimarySource
@@ -161,6 +165,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: pid
 - relation_type: prov:hadPrimarySource
+  source: prosite
+- relation_type: prov:hadPrimarySource
   source: pubchem
 - relation_type: prov:hadPrimarySource
   source: pubmed
@@ -204,6 +210,8 @@ original_source:
   source: tissues
 - relation_type: prov:hadPrimarySource
   source: ttd
+- relation_type: prov:hadPrimarySource
+  source: ucsc
 - relation_type: prov:hadPrimarySource
   source: umls
 - relation_type: prov:hadPrimarySource

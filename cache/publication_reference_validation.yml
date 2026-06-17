@@ -1298,6 +1298,15 @@ entries:
     source_path: resource/dgidb/dgidb.md
     status: valid
     warnings: []
+  resource/dgv/dgv.md#publication[0]#DOI:10.1093/nar/gkt958:
+    checked_at: '2026-06-17T13:40:18Z'
+    errors: []
+    fingerprint: d2bc08cb75f0c959c7c49b856483655d3fffb9ad9e2b5855e56885c65e624cfa
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkt958
+    source_path: resource/dgv/dgv.md
+    status: valid
+    warnings: []
   resource/dinto/dinto.md#publication[0]#PMID:26147071:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2439,6 +2448,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41467-022-31446-6
     source_path: resource/gtrx/gtrx.md
+    status: valid
+    warnings: []
+  resource/guidetopharmacology/guidetopharmacology.md#publication[0]#DOI:10.1093/nar/gkad944:
+    checked_at: '2026-06-17T13:40:11Z'
+    errors: []
+    fingerprint: df6e5f9b14da51f5b0222531a94f70eff30d26af5df35899d7e984b2551ed4a5
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad944
+    source_path: resource/guidetopharmacology/guidetopharmacology.md
     status: valid
     warnings: []
   resource/gutmgene/gutmgene.md#publication[0]#DOI:10.1093/nar/gkab786:
@@ -5140,6 +5158,15 @@ entries:
     source_path: resource/progeny/progeny.md
     status: valid
     warnings: []
+  resource/prosite/prosite.md#publication[0]#DOI:10.1093/nar/gks1067:
+    checked_at: '2026-06-17T13:40:16Z'
+    errors: []
+    fingerprint: d4e5b29ef2ca1ef91422acefb63827edea5bd2e25cb3cc2c3e07583f5994aaba
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1067
+    source_path: resource/prosite/prosite.md
+    status: valid
+    warnings: []
   resource/protcid/protcid.md#publication[0]#DOI:10.1038/s41467-020-14301-4:
     checked_at: '2026-06-15T22:06:20Z'
     errors: []
@@ -6287,6 +6314,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
+  resource/ucsc/ucsc.md#publication[0]#DOI:10.1101/gr.229102:
+    checked_at: '2026-06-17T13:40:13Z'
+    errors: []
+    fingerprint: 20ba5f8c952f63ed22ee502060255f2caeca40a8cf471e9fe4d9ffe62147d564
+    publication_index: 0
+    reference_id: DOI:10.1101/gr.229102
+    source_path: resource/ucsc/ucsc.md
+    status: valid
+    warnings: []
   resource/ukbiobank/ukbiobank.md#publication[0]#DOI:10.1038/s41586-018-0579-z:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
