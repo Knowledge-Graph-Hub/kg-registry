@@ -122,6 +122,15 @@ entries:
     source_path: resource/alzkb/alzkb.md
     status: valid
     warnings: []
+  resource/aminode/aminode.md#publication[0]#DOI:10.1038/s41598-018-19744-w:
+    checked_at: '2026-06-17T14:17:54Z'
+    errors: []
+    fingerprint: 0c077e89f90beb034551500ad65eaddd685ca9a838074a2a1a69f3e55a22dba4
+    publication_index: 0
+    reference_id: DOI:10.1038/s41598-018-19744-w
+    source_path: resource/aminode/aminode.md
+    status: valid
+    warnings: []
   resource/amyco/amyco.md#publication[0]#DOI:10.1080/13506129.2019.1603143:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1080,6 +1089,15 @@ entries:
     source_path: resource/cpdb/cpdb.md
     status: valid
     warnings: []
+  resource/craft/craft.md#publication[0]#DOI:10.1186/1471-2105-13-161:
+    checked_at: '2026-06-17T14:17:51Z'
+    errors: []
+    fingerprint: f525ab662bc4d56d0c3ade1650156fc06f42658bddde35734d3191938e2c8e0a
+    publication_index: 0
+    reference_id: DOI:10.1186/1471-2105-13-161
+    source_path: resource/craft/craft.md
+    status: valid
+    warnings: []
   resource/crd/crd.md#publication[0]#DOI:10.1089/jir.1998.18.799:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1964,6 +1982,15 @@ entries:
     status: warning
     warnings:
     - year '2020' does not match cached year '2019' in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz947.md
+  resource/fabric/fabric.md#publication[0]#DOI:10.1093/nar/gkz546:
+    checked_at: '2026-06-17T14:17:56Z'
+    errors: []
+    fingerprint: eda0a83a6ec13f419fd0dfdec4bdce124d993091fa9a1acf00e7b2cf2f05ecd6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkz546
+    source_path: resource/fabric/fabric.md
+    status: valid
+    warnings: []
   resource/fbbt/fbbt.md#publication[0]#PMID:24139062:
     checked_at: '2026-06-15T21:54:57Z'
     errors: []
@@ -2259,6 +2286,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkq537
     source_path: resource/genemania/genemania.md
+    status: valid
+    warnings: []
+  resource/geneorganizer/geneorganizer.md#publication[0]#DOI:10.1093/nar/gkx302:
+    checked_at: '2026-06-17T14:17:49Z'
+    errors: []
+    fingerprint: a36c6ca07acafa407981ee122318b245426cee043588ded59ca72eb1acf36cdd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkx302
+    source_path: resource/geneorganizer/geneorganizer.md
     status: valid
     warnings: []
   resource/genomernai/genomernai.md#publication[0]#DOI:10.1093/nar/gks1170:
@@ -4638,6 +4674,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkw1017
     source_path: resource/patric/patric.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[0]#DOI:10.1093/nar/gkaf1066:
+    checked_at: '2026-06-17T14:17:47Z'
+    errors: []
+    fingerprint: 7c2ed789b63ccd3e1c363ef732688a6fd2a562d0a570540e91a24aec37859bfd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1066
+    source_path: resource/paxdb/paxdb.md
     status: valid
     warnings: []
   resource/pcl/pcl.md#publication[0]#DOI:10.1101/2021.10.10.463703:

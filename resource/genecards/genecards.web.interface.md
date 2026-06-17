@@ -13,6 +13,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: alphafold
 - relation_type: prov:hadPrimarySource
+  source: aminode
+- relation_type: prov:hadPrimarySource
   source: bgee
 - relation_type: prov:hadPrimarySource
   source: biocyc
@@ -38,6 +40,8 @@ original_source:
   source: compartments
 - relation_type: prov:hadPrimarySource
   source: cosmic
+- relation_type: prov:hadPrimarySource
+  source: craft
 - relation_type: prov:hadPrimarySource
   source: ctd
 - relation_type: prov:hadPrimarySource
@@ -65,6 +69,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: epd
 - relation_type: prov:hadPrimarySource
+  source: fabric
+- relation_type: prov:hadPrimarySource
   source: fantom5
 - relation_type: prov:hadPrimarySource
   source: flybase
@@ -74,6 +80,8 @@ original_source:
   source: gencode
 - relation_type: prov:hadPrimarySource
   source: genecards
+- relation_type: prov:hadPrimarySource
+  source: geneorganizer
 - relation_type: prov:hadPrimarySource
   source: genomernai
 - relation_type: prov:hadPrimarySource
@@ -168,6 +176,8 @@ original_source:
   source: panther
 - relation_type: prov:hadPrimarySource
   source: pathwaycommons
+- relation_type: prov:hadPrimarySource
+  source: paxdb
 - relation_type: prov:hadPrimarySource
   source: pdb
 - relation_type: prov:hadPrimarySource
