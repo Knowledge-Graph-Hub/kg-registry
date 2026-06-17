@@ -77,9 +77,9 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: gtex
 - relation_type: prov:hadPrimarySource
-  source: gtrnadb
+  source: gtopdb
 - relation_type: prov:hadPrimarySource
-  source: guidetopharmacology
+  source: gtrnadb
 - relation_type: prov:hadPrimarySource
   source: gwascatalog
 - relation_type: prov:hadPrimarySource
