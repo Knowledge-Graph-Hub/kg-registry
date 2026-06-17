@@ -21,6 +21,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: biogrid
 - relation_type: prov:hadPrimarySource
+  source: bitterdb
+- relation_type: prov:hadPrimarySource
   source: chebi
 - relation_type: prov:hadPrimarySource
   source: chembl
@@ -38,6 +40,8 @@ original_source:
   source: ctd
 - relation_type: prov:hadPrimarySource
   source: dbsnp
+- relation_type: prov:hadPrimarySource
+  source: dbsuper
 - relation_type: prov:hadPrimarySource
   source: dgidb
 - relation_type: prov:hadPrimarySource
@@ -169,9 +173,13 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: pid
 - relation_type: prov:hadPrimarySource
+  source: pirsf
+- relation_type: prov:hadPrimarySource
   source: prosite
 - relation_type: prov:hadPrimarySource
   source: proteomicsdb
+- relation_type: prov:hadPrimarySource
+  source: proteopedia
 - relation_type: prov:hadPrimarySource
   source: pubchem
 - relation_type: prov:hadPrimarySource
@@ -218,6 +226,8 @@ original_source:
   source: treefam
 - relation_type: prov:hadPrimarySource
   source: ttd
+- relation_type: prov:hadPrimarySource
+  source: ucnebase
 - relation_type: prov:hadPrimarySource
   source: ucsc
 - relation_type: prov:hadPrimarySource

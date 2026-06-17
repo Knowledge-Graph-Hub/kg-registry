@@ -462,6 +462,15 @@ entries:
     source_path: resource/biothings/biothings.md
     status: valid
     warnings: []
+  resource/bitterdb/bitterdb.md#publication[0]#DOI:10.1093/nar/gky974:
+    checked_at: '2026-06-17T14:00:40Z'
+    errors: []
+    fingerprint: 23dbd9da35ef6ae2399a8523f97f0b8f53642b993a7a793fc4389594f31cb443
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky974
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
   resource/brenda/brenda.md#publication[0]#PMID:41206471:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1198,6 +1207,15 @@ entries:
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkae977
     source_path: resource/dbsnp/dbsnp.md
+    status: valid
+    warnings: []
+  resource/dbsuper/dbsuper.md#publication[0]#DOI:10.1093/nar/gkv1002:
+    checked_at: '2026-06-17T14:00:32Z'
+    errors: []
+    fingerprint: 3a9f942d51c18f253d6fbabf3f8e1241418046697a07f3f71ad48bad27f3c0ea
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkv1002
+    source_path: resource/dbsuper/dbsuper.md
     status: valid
     warnings: []
   resource/dc/dc.md#publication[0]#url:https://www.iso.org/standard/71339.html:
@@ -5006,6 +5024,28 @@ entries:
     status: warning
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25425034.md
+  resource/pirsf/pirsf.md#publication[0]#DOI:10.1093/nar/gkh021:
+    checked_at: '2026-06-17T13:59:03Z'
+    errors:
+    - 'title ''PIRSF: family classification system at the Protein Information Resource''
+      does not match cached title ''The Gene Ontology Annotation (GOA) Database: sharing
+      knowledge in Uniprot with Gene Ontology'' in references_cache/DOI_10.1093_nar_gkh021.md'
+    fingerprint: faa092441147f54c1935d2c09161e911b6a1a031cf16c127ef9bea98ceeadcf4
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkh021
+    source_path: resource/pirsf/pirsf.md
+    status: error
+    warnings:
+    - authors missing; cached authors are available in references_cache/DOI_10.1093_nar_gkh021.md
+  resource/pirsf/pirsf.md#publication[0]#DOI:10.1093/nar/gkh097:
+    checked_at: '2026-06-17T14:00:35Z'
+    errors: []
+    fingerprint: e67351f443484066b3bd67d0bd81155bbff01be8da302f532592645344fa1eb3
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkh097
+    source_path: resource/pirsf/pirsf.md
+    status: valid
+    warnings: []
   resource/plana/plana.md#publication[0]#PMID:34318308:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5228,6 +5268,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkx1029
     source_path: resource/proteomicsdb/proteomicsdb.md
+    status: valid
+    warnings: []
+  resource/proteopedia/proteopedia.md#publication[0]#DOI:10.1186/gb-2008-9-8-r121:
+    checked_at: '2026-06-17T14:00:37Z'
+    errors: []
+    fingerprint: 292751fda40d3af00ab336f39b311305a2ebc6eceeb3ef6de1b499eb6ea709ba
+    publication_index: 0
+    reference_id: DOI:10.1186/gb-2008-9-8-r121
+    source_path: resource/proteopedia/proteopedia.md
     status: valid
     warnings: []
   resource/prov-o/prov-o.md#publication[0]#url:https://www.w3.org/TR/prov-o/:
@@ -6350,6 +6399,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
+  resource/ucnebase/ucnebase.md#publication[0]#DOI:10.1093/nar/gks1092:
+    checked_at: '2026-06-17T14:00:42Z'
+    errors: []
+    fingerprint: a9f447c0220731d13eccabe385635e758ebca523c60f30c72303c2401b9d1321
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1092
+    source_path: resource/ucnebase/ucnebase.md
+    status: valid
+    warnings: []
   resource/ucsc/ucsc.md#publication[0]#DOI:10.1101/gr.229102:
     checked_at: '2026-06-17T13:40:13Z'
     errors: []
