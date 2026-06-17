@@ -34,11 +34,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: bila
   product_url: http://purl.obolibrary.org/obo/bila.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 publications: []
 taxon:
 - NCBITaxon:33213

@@ -5,13 +5,13 @@ collection:
 - obo-foundry
 contacts:
 - category: Individual
+  label: Melek Chaouch
+  orcid: 0000-0001-5868-4204
   contact_details:
   - contact_type: email
     value: mcmelek@msn.com
   - contact_type: github
     value: Melek-C
-  label: Melek Chaouch
-  orcid: 0000-0001-5868-4204
 creation_date: '2025-09-29T00:00:00Z'
 description: AfPO is an ontology that can be used in the study of diverse populations
   across Africa. It brings together publicly available demographic, anthropological
@@ -24,7 +24,7 @@ domains:
 - organisms
 homepage_url: https://github.com/h3abionet/afpo
 id: afpo
-last_modified_date: '2026-06-05T00:00:00Z'
+last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -52,7 +52,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: afpo
   product_file_size: 78816
-  product_url: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.obo
+  product_url: http://purl.obolibrary.org/obo/afpo.obo
 - category: OntologyProduct
   description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
@@ -62,7 +62,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: afpo
   product_file_size: 92733
-  product_url: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.json
+  product_url: http://purl.obolibrary.org/obo/afpo.json
 publications: []
 repository: https://github.com/h3abionet/afpo
 ---

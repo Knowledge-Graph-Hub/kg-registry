@@ -10,7 +10,7 @@ original_source:
   source: pmc
 product_url: https://pmc.ncbi.nlm.nih.gov/tools/ftp/
 warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ HTTP 405 error when
+- File was not able to be retrieved when checked on 2026-06-16_ HTTP 405 error when
   accessing file
 layout: product_detail
 ---

@@ -10,7 +10,7 @@ original_source:
   source: phosphat
 product_url: https://phosphat.uni-hohenheim.de/pepprotein_motif_2024.csv
 warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

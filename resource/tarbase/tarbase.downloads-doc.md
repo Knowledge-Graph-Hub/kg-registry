@@ -9,7 +9,7 @@ original_source:
   source: tarbase
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
 warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-16_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-13_ HTTP 404 error when
   accessing file

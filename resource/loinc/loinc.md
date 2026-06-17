@@ -64,10 +64,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 503 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 503 error
-    when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
   format: mixed
@@ -80,10 +76,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 503 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 503 error
-    when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
     development (CC-BY 4.0 licensed document)
@@ -96,10 +88,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 503 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 503 error
-    when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS

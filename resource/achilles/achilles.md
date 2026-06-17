@@ -43,11 +43,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: achilles
   product_url: https://depmap.org/portal/achilles/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: DepMap all-data downloads page where current Achilles and related dependency
     datasets are released.
@@ -60,11 +56,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: depmap
   product_url: https://depmap.org/portal/download/all/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

@@ -3,9 +3,9 @@ activity_status: active
 category: DataSource
 creation_date: '2026-02-18T00:00:00Z'
 description: ProteomeHD is a proteomics resource centered on protein co-regulation
-  evidence across perturbation experiments. It provides scripts and data from a
-  human proteome co-regulation map used to identify protein functions and to support
-  integrated protein association resources.
+  evidence across perturbation experiments. It provides scripts and data from a human
+  proteome co-regulation map used to identify protein functions and to support integrated
+  protein association resources.
 domains:
 - proteomics
 - systems biology
@@ -18,7 +18,8 @@ name: ProteomeHD
 products:
 - category: Product
   compression: 7z
-  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins measured across 294 SILAC ratios
+  description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
+    measured across 294 SILAC ratios
   format: csv
   id: proteomehd.data
   name: ProteomeHD Data
@@ -29,7 +30,8 @@ products:
   product_url: https://raw.githubusercontent.com/Rappsilber-Laboratory/ProteomeHD/master/Data/ProteomeHD_v1_1.7z
 - category: Product
   compression: 7z
-  description: Reactome-derived true-positive and false-positive protein-pair gold standard used in ProteomeHD analyses
+  description: Reactome-derived true-positive and false-positive protein-pair gold
+    standard used in ProteomeHD analyses
   format: csv
   id: proteomehd.reactome_tp_fp
   name: ProteomeHD Reactome Gold Standard
@@ -690,6 +692,7 @@ products:
 - category: GraphProduct
   compression: gzip
   description: 'full database, part II: the networks (nodes, edges, scores,...)'
+  format: postgres
   id: string.database
   name: STRING Database Network Schema
   original_source:
@@ -772,7 +775,8 @@ publications:
   id: doi:10.1038/s41587-019-0298-5
   journal: Nature Biotechnology
   preferred: true
-  title: Co-regulation map of the human proteome enables identification of protein functions
+  title: Co-regulation map of the human proteome enables identification of protein
+    functions
   year: '2019'
 repository: https://github.com/Rappsilber-Laboratory/ProteomeHD
 taxon:

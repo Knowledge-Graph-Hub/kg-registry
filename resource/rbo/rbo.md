@@ -57,12 +57,12 @@ products:
     source: rbo
   product_url: http://purl.obolibrary.org/obo/rbo.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-02: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Radiation Biology Ontology in OWL format
   format: owl

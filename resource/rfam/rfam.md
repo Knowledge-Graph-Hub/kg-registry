@@ -2,19 +2,25 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: rfam-help@ebi.ac.uk
-      - contact_type: url
-        value: https://docs.rfam.org/en/latest/contact-us.html
-    id: ebi
-    label: Rfam Team at EMBL-EBI
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: rfam-help@ebi.ac.uk
+  - contact_type: url
+    value: https://docs.rfam.org/en/latest/contact-us.html
+  id: ebi
+  label: Rfam Team at EMBL-EBI
 creation_date: '2025-10-29T00:00:00Z'
-description: Rfam is a comprehensive database of RNA families, each represented by multiple sequence alignments, consensus secondary structures and covariance models. The database provides curated information for over 4,000 non-coding RNA families and is widely used for RNA annotation, genome analysis, and as training data for machine learning models. Release 15.0 includes expanded coverage with 26,106 genomes, improved 3D structure integration, complete microRNA synchronization with miRBase, enhanced Gene Ontology annotations, and comprehensive viral RNA families.
+description: Rfam is a comprehensive database of RNA families, each represented by
+  multiple sequence alignments, consensus secondary structures and covariance models.
+  The database provides curated information for over 4,000 non-coding RNA families
+  and is widely used for RNA annotation, genome analysis, and as training data for
+  machine learning models. Release 15.0 includes expanded coverage with 26,106 genomes,
+  improved 3D structure integration, complete microRNA synchronization with miRBase,
+  enhanced Gene Ontology annotations, and comprehensive viral RNA families.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: https://rfam.org/
 id: rfam
 last_modified_date: '2026-06-12T00:00:00Z'
@@ -24,530 +30,796 @@ license:
   label: CC0 1.0 (Creative Commons Zero)
 name: Rfam
 products:
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing RNA families
-    format: http
-    id: rfam.portal
-    name: Rfam Web Portal
-    product_url: https://rfam.org/
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to Rfam data
-    format: http
-    id: rfam.api
-    name: Rfam REST API
-    product_url: https://rfam.org/api
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: FTP archive with covariance models, sequence alignments, and database files
-    format: http
-    id: rfam.ftp
-    name: Rfam FTP Archive
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: DataModelProduct
-    description: Public MySQL database for direct SQL access to Rfam data
-    format: mysql
-    id: rfam.public-db
-    name: Rfam Public MySQL Database
-    product_url: https://docs.rfam.org/en/latest/database.html
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: Covariance models for all RNA families in CM format
-    format: txt
-    id: rfam.cm-models
-    name: Rfam Covariance Models
-    product_file_size: 45111170
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: SEED alignments for all RNA families in Stockholm format
-    format: stockholm
-    id: rfam.seed-alignments
-    name: Rfam SEED Alignments
-    product_file_size: 5083331
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: FULL alignments for all RNA families
-    format: txt
-    id: rfam.full-alignments
-    name: Rfam FULL Alignments
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: Product
-    description: FASTA format sequences for all RNA families
-    format: fasta
-    id: rfam.fasta
-    name: Rfam FASTA Sequences
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: MappingProduct
-    description: PDB structure mappings showing RNA families with 3D structures
-    format: txt
-    id: rfam.pdb-mappings
-    name: Rfam PDB Mappings
-    product_file_size: 179072
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/.preview/pdb_full_region.txt.gz
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: DocumentationProduct
-    description: Comprehensive documentation for Rfam database and tools
-    format: http
-    id: rfam.docs
-    name: Rfam Documentation
-    product_url: https://docs.rfam.org/
-    original_source:
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
-    format: http
-    id: rnacentral.portal
-    name: RNAcentral Portal
-    original_source:
-      - source: 5srrnadb
-        relation_type: prov:hadPrimarySource
-      - source: crd
-        relation_type: prov:hadPrimarySource
-      - source: dictybase
-        relation_type: prov:hadPrimarySource
-      - source: ena
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: evlncrnas
-        relation_type: prov:hadPrimarySource
-      - source: expressionatlas
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: genecards
-        relation_type: prov:hadPrimarySource
-      - source: greengenes
-        relation_type: prov:hadPrimarySource
-      - source: gtrnadb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: lncbase
-        relation_type: prov:hadPrimarySource
-      - source: lncbook
-        relation_type: prov:hadPrimarySource
-      - source: lncipedia
-        relation_type: prov:hadPrimarySource
-      - source: lncrnadb
-        relation_type: prov:hadPrimarySource
-      - source: malacards
-        relation_type: prov:hadPrimarySource
-      - source: mgnify
-        relation_type: prov:hadPrimarySource
-      - source: mirbase
-        relation_type: prov:hadPrimarySource
-      - source: mirgenedb
-        relation_type: prov:hadPrimarySource
-      - source: modomics
-        relation_type: prov:hadPrimarySource
-      - source: noncode
-        relation_type: prov:hadPrimarySource
-      - source: pdbe
-        relation_type: prov:hadPrimarySource
-      - source: pirbase
-        relation_type: prov:hadPrimarySource
-      - source: plncdb
-        relation_type: prov:hadPrimarySource
-      - source: pombase
-        relation_type: prov:hadPrimarySource
-      - source: rdp
-        relation_type: prov:hadPrimarySource
-      - source: rediportal
-        relation_type: prov:hadPrimarySource
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-      - source: rgd
-        relation_type: prov:hadPrimarySource
-      - source: ribocentre
-        relation_type: prov:hadPrimarySource
-      - source: ribovision
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: silva
-        relation_type: prov:hadPrimarySource
-      - source: snodb
-        relation_type: prov:hadPrimarySource
-      - source: snopy
-        relation_type: prov:hadPrimarySource
-      - source: snornadatabase
-        relation_type: prov:hadPrimarySource
-      - source: srpdb
-        relation_type: prov:hadPrimarySource
-      - source: tair
-        relation_type: prov:hadPrimarySource
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-      - source: tmrnawebsite
-        relation_type: prov:hadPrimarySource
-      - source: zfin
-        relation_type: prov:hadPrimarySource
-      - source: zwd
-        relation_type: prov:hadPrimarySource
-      - source: rnacentral
-        relation_type: prov:hadPrimarySource
-    product_url: https://rnacentral.org/
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to RNAcentral data
-    format: http
-    id: rnacentral.api
-    name: RNAcentral REST API
-    original_source:
-      - source: 5srrnadb
-        relation_type: prov:hadPrimarySource
-      - source: crd
-        relation_type: prov:hadPrimarySource
-      - source: dictybase
-        relation_type: prov:hadPrimarySource
-      - source: ena
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: evlncrnas
-        relation_type: prov:hadPrimarySource
-      - source: expressionatlas
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: genecards
-        relation_type: prov:hadPrimarySource
-      - source: greengenes
-        relation_type: prov:hadPrimarySource
-      - source: gtrnadb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: lncbase
-        relation_type: prov:hadPrimarySource
-      - source: lncbook
-        relation_type: prov:hadPrimarySource
-      - source: lncipedia
-        relation_type: prov:hadPrimarySource
-      - source: lncrnadb
-        relation_type: prov:hadPrimarySource
-      - source: malacards
-        relation_type: prov:hadPrimarySource
-      - source: mgnify
-        relation_type: prov:hadPrimarySource
-      - source: mirbase
-        relation_type: prov:hadPrimarySource
-      - source: mirgenedb
-        relation_type: prov:hadPrimarySource
-      - source: modomics
-        relation_type: prov:hadPrimarySource
-      - source: noncode
-        relation_type: prov:hadPrimarySource
-      - source: pdbe
-        relation_type: prov:hadPrimarySource
-      - source: pirbase
-        relation_type: prov:hadPrimarySource
-      - source: plncdb
-        relation_type: prov:hadPrimarySource
-      - source: pombase
-        relation_type: prov:hadPrimarySource
-      - source: rdp
-        relation_type: prov:hadPrimarySource
-      - source: rediportal
-        relation_type: prov:hadPrimarySource
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-      - source: rgd
-        relation_type: prov:hadPrimarySource
-      - source: ribocentre
-        relation_type: prov:hadPrimarySource
-      - source: ribovision
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: silva
-        relation_type: prov:hadPrimarySource
-      - source: snodb
-        relation_type: prov:hadPrimarySource
-      - source: snopy
-        relation_type: prov:hadPrimarySource
-      - source: snornadatabase
-        relation_type: prov:hadPrimarySource
-      - source: srpdb
-        relation_type: prov:hadPrimarySource
-      - source: tair
-        relation_type: prov:hadPrimarySource
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-      - source: tmrnawebsite
-        relation_type: prov:hadPrimarySource
-      - source: zfin
-        relation_type: prov:hadPrimarySource
-      - source: zwd
-        relation_type: prov:hadPrimarySource
-      - source: rnacentral
-        relation_type: prov:hadPrimarySource
-    product_url: https://rnacentral.org/api
-  - category: Product
-    description: FTP archive with current and archived release files (sequences and annotations)
-    format: http
-    id: rnacentral.ftp
-    name: RNAcentral FTP Archive
-    original_source:
-      - source: 5srrnadb
-        relation_type: prov:hadPrimarySource
-      - source: crd
-        relation_type: prov:hadPrimarySource
-      - source: dictybase
-        relation_type: prov:hadPrimarySource
-      - source: ena
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: evlncrnas
-        relation_type: prov:hadPrimarySource
-      - source: expressionatlas
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: genecards
-        relation_type: prov:hadPrimarySource
-      - source: greengenes
-        relation_type: prov:hadPrimarySource
-      - source: gtrnadb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: lncbase
-        relation_type: prov:hadPrimarySource
-      - source: lncbook
-        relation_type: prov:hadPrimarySource
-      - source: lncipedia
-        relation_type: prov:hadPrimarySource
-      - source: lncrnadb
-        relation_type: prov:hadPrimarySource
-      - source: malacards
-        relation_type: prov:hadPrimarySource
-      - source: mgnify
-        relation_type: prov:hadPrimarySource
-      - source: mirbase
-        relation_type: prov:hadPrimarySource
-      - source: mirgenedb
-        relation_type: prov:hadPrimarySource
-      - source: modomics
-        relation_type: prov:hadPrimarySource
-      - source: noncode
-        relation_type: prov:hadPrimarySource
-      - source: pdbe
-        relation_type: prov:hadPrimarySource
-      - source: pirbase
-        relation_type: prov:hadPrimarySource
-      - source: plncdb
-        relation_type: prov:hadPrimarySource
-      - source: pombase
-        relation_type: prov:hadPrimarySource
-      - source: rdp
-        relation_type: prov:hadPrimarySource
-      - source: rediportal
-        relation_type: prov:hadPrimarySource
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-      - source: rgd
-        relation_type: prov:hadPrimarySource
-      - source: ribocentre
-        relation_type: prov:hadPrimarySource
-      - source: ribovision
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: silva
-        relation_type: prov:hadPrimarySource
-      - source: snodb
-        relation_type: prov:hadPrimarySource
-      - source: snopy
-        relation_type: prov:hadPrimarySource
-      - source: snornadatabase
-        relation_type: prov:hadPrimarySource
-      - source: srpdb
-        relation_type: prov:hadPrimarySource
-      - source: tair
-        relation_type: prov:hadPrimarySource
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-      - source: tmrnawebsite
-        relation_type: prov:hadPrimarySource
-      - source: zfin
-        relation_type: prov:hadPrimarySource
-      - source: zwd
-        relation_type: prov:hadPrimarySource
-      - source: rnacentral
-        relation_type: prov:hadPrimarySource
-    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
-  - category: DataModelProduct
-    description: Public PostgreSQL database for direct SQL access to RNAcentral data
-    format: postgres
-    id: rnacentral.public-db
-    name: RNAcentral Public Postgres Database
-    original_source:
-      - source: 5srrnadb
-        relation_type: prov:hadPrimarySource
-      - source: crd
-        relation_type: prov:hadPrimarySource
-      - source: dictybase
-        relation_type: prov:hadPrimarySource
-      - source: ena
-        relation_type: prov:hadPrimarySource
-      - source: ensembl
-        relation_type: prov:hadPrimarySource
-      - source: evlncrnas
-        relation_type: prov:hadPrimarySource
-      - source: expressionatlas
-        relation_type: prov:hadPrimarySource
-      - source: flybase
-        relation_type: prov:hadPrimarySource
-      - source: genecards
-        relation_type: prov:hadPrimarySource
-      - source: greengenes
-        relation_type: prov:hadPrimarySource
-      - source: gtrnadb
-        relation_type: prov:hadPrimarySource
-      - source: hgnc
-        relation_type: prov:hadPrimarySource
-      - source: intact
-        relation_type: prov:hadPrimarySource
-      - source: lncbase
-        relation_type: prov:hadPrimarySource
-      - source: lncbook
-        relation_type: prov:hadPrimarySource
-      - source: lncipedia
-        relation_type: prov:hadPrimarySource
-      - source: lncrnadb
-        relation_type: prov:hadPrimarySource
-      - source: malacards
-        relation_type: prov:hadPrimarySource
-      - source: mgnify
-        relation_type: prov:hadPrimarySource
-      - source: mirbase
-        relation_type: prov:hadPrimarySource
-      - source: mirgenedb
-        relation_type: prov:hadPrimarySource
-      - source: modomics
-        relation_type: prov:hadPrimarySource
-      - source: noncode
-        relation_type: prov:hadPrimarySource
-      - source: pdbe
-        relation_type: prov:hadPrimarySource
-      - source: pirbase
-        relation_type: prov:hadPrimarySource
-      - source: plncdb
-        relation_type: prov:hadPrimarySource
-      - source: pombase
-        relation_type: prov:hadPrimarySource
-      - source: rdp
-        relation_type: prov:hadPrimarySource
-      - source: rediportal
-        relation_type: prov:hadPrimarySource
-      - source: rfam
-        relation_type: prov:hadPrimarySource
-      - source: rgd
-        relation_type: prov:hadPrimarySource
-      - source: ribocentre
-        relation_type: prov:hadPrimarySource
-      - source: ribovision
-        relation_type: prov:hadPrimarySource
-      - source: sgd
-        relation_type: prov:hadPrimarySource
-      - source: silva
-        relation_type: prov:hadPrimarySource
-      - source: snodb
-        relation_type: prov:hadPrimarySource
-      - source: snopy
-        relation_type: prov:hadPrimarySource
-      - source: snornadatabase
-        relation_type: prov:hadPrimarySource
-      - source: srpdb
-        relation_type: prov:hadPrimarySource
-      - source: tair
-        relation_type: prov:hadPrimarySource
-      - source: tarbase
-        relation_type: prov:hadPrimarySource
-      - source: tmrnawebsite
-        relation_type: prov:hadPrimarySource
-      - source: zfin
-        relation_type: prov:hadPrimarySource
-      - source: zwd
-        relation_type: prov:hadPrimarySource
-      - source: rnacentral
-        relation_type: prov:hadPrimarySource
-    product_url: https://rnacentral.org/help/public-database
+- category: GraphicalInterface
+  description: Web portal for searching and browsing RNA families
+  format: http
+  id: rfam.portal
+  name: Rfam Web Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://rfam.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to Rfam data
+  format: http
+  id: rfam.api
+  name: Rfam REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://rfam.org/api
+- category: Product
+  description: FTP archive with covariance models, sequence alignments, and database
+    files
+  format: http
+  id: rfam.ftp
+  name: Rfam FTP Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT
+- category: DataModelProduct
+  description: Public MySQL database for direct SQL access to Rfam data
+  format: mysql
+  id: rfam.public-db
+  name: Rfam Public MySQL Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://docs.rfam.org/en/latest/database.html
+- category: Product
+  description: Covariance models for all RNA families in CM format
+  format: txt
+  id: rfam.cm-models
+  name: Rfam Covariance Models
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_file_size: 45111170
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
+- category: Product
+  description: SEED alignments for all RNA families in Stockholm format
+  format: stockholm
+  id: rfam.seed-alignments
+  name: Rfam SEED Alignments
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_file_size: 5083331
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
+- category: Product
+  description: FULL alignments for all RNA families
+  format: txt
+  id: rfam.full-alignments
+  name: Rfam FULL Alignments
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/
+- category: Product
+  description: FASTA format sequences for all RNA families
+  format: fasta
+  id: rfam.fasta
+  name: Rfam FASTA Sequences
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
+- category: MappingProduct
+  description: PDB structure mappings showing RNA families with 3D structures
+  format: txt
+  id: rfam.pdb-mappings
+  name: Rfam PDB Mappings
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_file_size: 179072
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/.preview/pdb_full_region.txt.gz
+- category: DocumentationProduct
+  description: Comprehensive documentation for Rfam database and tools
+  format: http
+  id: rfam.docs
+  name: Rfam Documentation
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  product_url: https://docs.rfam.org/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: crd
+  - relation_type: prov:hadPrimarySource
+    source: dictybase
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: evlncrnas
+  - relation_type: prov:hadPrimarySource
+    source: expressionatlas
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: greengenes
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadb
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: mgnify
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pirbase
+  - relation_type: prov:hadPrimarySource
+    source: plncdb
+  - relation_type: prov:hadPrimarySource
+    source: pombase
+  - relation_type: prov:hadPrimarySource
+    source: rdp
+  - relation_type: prov:hadPrimarySource
+    source: rediportal
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: ribocentre
+  - relation_type: prov:hadPrimarySource
+    source: ribovision
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: snornadatabase
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tmrnawebsite
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  product_url: https://rnacentral.org/help/public-database
+- category: GraphicalInterface
+  description: Web-based interface for searching and browsing comprehensive gene-centric
+    information integrating data from over 200 sources
+  format: http
+  id: genecards.web.interface
+  name: GeneCards Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: alphafold
+  - relation_type: prov:hadPrimarySource
+    source: aminode
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: bitterdb
+  - relation_type: prov:hadPrimarySource
+    source: cdd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: craft
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbsuper
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: dgv
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
+    source: fabric
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: genomernai
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  - relation_type: prov:hadPrimarySource
+    source: imgt
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadisease
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: mirtarbase
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: prosite
+  - relation_type: prov:hadPrimarySource
+    source: proteomicsdb
+  - relation_type: prov:hadPrimarySource
+    source: proteopedia
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: scop
+  - relation_type: prov:hadPrimarySource
+    source: sfld
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: treefam
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ucnebase
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: vista
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_url: https://www.genecards.org/
 publications:
-  - category: Publication
-    preferred: true
-    id: doi:10.1093/nar/gkae1023
-    doi: 10.1093/nar/gkae1023
-    title: 'Rfam 15: RNA families database in 2025'
-    authors:
-      - Nancy Ontiveros-Palacios
-      - Emma Cooke
-      - Eric P Nawrocki
-      - Sandra Triebel
-      - Manja Marz
-      - Elena Rivas
-      - Sam Griffiths-Jones
-      - Anton I Petrov
-      - Alex Bateman
-      - Blake Sweeney
-    journal: Nucleic Acids Research
-    year: '2025'
-  - authors:
-      - Kalvari I
-      - Nawrocki EP
-      - Ontiveros-Palacios N
-      - Argasinska J
-      - Lamkiewicz K
-      - Marz M
-      - Griffiths-Jones S
-      - Toffano-Nioche C
-      - Gautheret D
-      - Weinberg Z
-      - Rivas E
-      - Eddy SR
-      - Finn RD
-      - Bateman A
-      - Petrov AI
-    category: Publication
-    id: https://doi.org/10.1093/nar/gkaa1047
-    journal: Nucleic Acids Research
-    preferred: false
-    title: 'Rfam 14: expanded coverage of metagenomic, viral and microRNA families'
-    year: '2021'
+- authors:
+  - Nancy Ontiveros-Palacios
+  - Emma Cooke
+  - "Eric\_P Nawrocki"
+  - Sandra Triebel
+  - Manja Marz
+  - Elena Rivas
+  - Sam Griffiths-Jones
+  - "Anton\_I Petrov"
+  - Alex Bateman
+  - Blake Sweeney
+  category: Publication
+  doi: 10.1093/nar/gkae1023
+  id: doi:10.1093/nar/gkae1023
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Rfam 15: RNA families database in 2025'
+  year: '2025'
+- authors:
+  - Kalvari I
+  - Nawrocki EP
+  - Ontiveros-Palacios N
+  - Argasinska J
+  - Lamkiewicz K
+  - Marz M
+  - Griffiths-Jones S
+  - Toffano-Nioche C
+  - Gautheret D
+  - Weinberg Z
+  - Rivas E
+  - Eddy SR
+  - Finn RD
+  - Bateman A
+  - Petrov AI
+  category: Publication
+  id: https://doi.org/10.1093/nar/gkaa1047
+  journal: Nucleic Acids Research
+  preferred: false
+  title: 'Rfam 14: expanded coverage of metagenomic, viral and microRNA families'
+  year: '2021'
 ---
-
 # Rfam
 
 ## Overview

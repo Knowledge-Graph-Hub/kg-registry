@@ -49,11 +49,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pmc
   product_url: https://pmc.ncbi.nlm.nih.gov/tools/openftlist
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 405 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 405 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: PMC FTP service for retrieving file lists and downloadable article
     files from PMC article datasets, including the Open Access Subset.
@@ -64,11 +60,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pmc
   product_url: https://pmc.ncbi.nlm.nih.gov/tools/ftp/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 405 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 405 error
-    when accessing file'
+  warnings: []
 - category: ProgrammingInterface
   connection_url: https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi
   description: PMC OA Web Service API for discovering downloadable resources from

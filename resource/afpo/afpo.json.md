@@ -8,6 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: afpo
 product_file_size: 92733
-product_url: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.json
+product_url: http://purl.obolibrary.org/obo/afpo.json
 layout: product_detail
 ---

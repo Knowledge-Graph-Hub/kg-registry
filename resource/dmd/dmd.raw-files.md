@@ -10,7 +10,7 @@ original_source:
   source: dmd
 product_url: https://digital.nhs.uk/services/terminology-and-classifications/dm-d
 warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

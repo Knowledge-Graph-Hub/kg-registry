@@ -76,11 +76,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharos
   product_url: https://pharos.nih.gov/api-docs
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: GraphProduct
   description: PHAROS Automat
   format: kgx-jsonl
@@ -103,11 +99,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pharos
   product_url: https://pharos.nih.gov/about
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: ProcessProduct
   description: Source repository for the Pharos web frontend maintained by NCATS
   format: http

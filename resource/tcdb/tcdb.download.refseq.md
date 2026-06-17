@@ -10,7 +10,7 @@ original_source:
   source: tcdb
 product_url: https://www.tcdb.org/cgi-bin/projectv/public/refseq.py
 warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-16_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
   header found

@@ -39,11 +39,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ehrlink
   product_url: https://doi.org/10.1136/amiajnl-2012-000852
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: Curated TSV catalog of drug-disease indications classified as disease-modifying,
     symptomatic, or non-indications

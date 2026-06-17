@@ -14,9 +14,9 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
-homepage_url: https://www.ebi.ac.uk/ols4/ontologies/aao
+homepage_url: http://github.com/seger/aao
 id: aao
-last_modified_date: '2026-05-31T00:00:00Z'
+last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:
   id: ''
@@ -34,9 +34,9 @@ products:
     source: aao
   product_url: http://purl.obolibrary.org/obo/aao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
     when accessing file'
 publications: []
 taxon:

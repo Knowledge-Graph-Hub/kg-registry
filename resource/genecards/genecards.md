@@ -677,6 +677,220 @@ products:
   - relation_type: prov:hadPrimarySource
     source: rnacentral
   product_url: https://rnacentral.org/help/public-database
+- category: Product
+  description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other expression
+    databases
+  format: http
+  id: genecards.expression.data
+  name: GeneCards Expression Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
+    other interaction databases
+  format: http
+  id: genecards.protein.interactions
+  name: GeneCards Protein Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Clinical trial information from ClinicalTrials.gov
+  format: http
+  id: genecards.clinical.trials
+  name: GeneCards Clinical Trials
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Disease association data integrated from OMIM, MalaCards, ClinVar,
+    Orphanet, DisGeNET and other disease databases
+  format: http
+  id: genecards.disease.associations
+  name: GeneCards Disease Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
+    databases
+  format: http
+  id: genecards.variant.data
+  name: GeneCards Variant Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
+    sources
+  format: http
+  id: genecards.pharmacogenomics
+  name: GeneCards Pharmacogenomics Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
+    NCBI Gene, UniProt and other genomic databases
+  format: http
+  id: genecards.gene.annotations
+  name: GeneCards Gene Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Model organism data from FlyBase, SGD, ZFIN and other model organism
+    databases
+  format: http
+  id: genecards.model.organisms
+  name: GeneCards Model Organism Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: zfin
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Gene ontology annotations from the Gene Ontology Consortium
+  format: http
+  id: genecards.gene.ontology
+  name: GeneCards Gene Ontology Annotations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: go
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Protein structure data from PDB Europe and other structural databases
+  format: http
+  id: genecards.protein.structures
+  name: GeneCards Protein Structure Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Literature references from PubMed automatically associated with genes
+  format: http
+  id: genecards.literature
+  name: GeneCards Literature References
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
+- category: Product
+  description: Pathway information integrated from Reactome, WikiPathways and other
+    pathway databases
+  format: http
+  id: genecards.pathway.data
+  name: GeneCards Pathway Data
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
+    accessing file
 repository: null
 taxon:
 - NCBITaxon:9606

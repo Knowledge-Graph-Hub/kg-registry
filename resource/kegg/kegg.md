@@ -1586,6 +1586,7 @@ products:
 - category: GraphProduct
   compression: gzip
   description: 'full database, part II: the networks (nodes, edges, scores,...)'
+  format: postgres
   id: string.database
   name: STRING Database Network Schema
   original_source:

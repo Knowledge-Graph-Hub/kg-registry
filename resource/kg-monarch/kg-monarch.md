@@ -27,7 +27,7 @@ domains:
 - biomedical
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
-last_modified_date: '2026-06-16T13:55:56Z'
+last_modified_date: '2026-06-17T19:32:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,7 +36,7 @@ name: KG Monarch
 products:
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 14998050
+  edge_count: 15211571
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -59,7 +59,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -105,44 +105,67 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14998050
+  edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -165,7 +188,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -211,44 +234,67 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 15279494795
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14998050
+  edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -271,7 +317,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -317,44 +363,67 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1149505896
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 14998050
+  edge_count: 15211571
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -377,7 +446,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -423,44 +492,67 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 879238775
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14998050
+  edge_count: 15211571
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -483,7 +575,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -529,44 +621,67 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 4386388748
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14998050
+  edge_count: 15211571
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -589,7 +704,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -635,44 +750,67 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 14998050
+  edge_count: 15211571
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -694,7 +832,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -740,37 +878,60 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 6827814912
@@ -794,7 +955,7 @@ products:
   product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14998050
+  edge_count: 15211571
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -817,7 +978,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -863,37 +1024,60 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 315667976
@@ -901,7 +1085,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 14998050
+  edge_count: 15211571
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -923,7 +1107,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1460060
+  node_count: 1462594
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -969,37 +1153,60 @@ products:
   - biolink:acts_upstream_of_or_within_negative_effect
   - biolink:acts_upstream_of_or_within_positive_effect
   - biolink:acts_upstream_of_positive_effect
+  - biolink:affects
   - biolink:applied_to_treat
   - biolink:associated_with_increased_likelihood_of
+  - biolink:capable_of
   - biolink:caused_by
   - biolink:causes
+  - biolink:coexists_with
   - biolink:colocalizes_with
   - biolink:contributes_to
+  - biolink:correlated_with
+  - biolink:derives_from
+  - biolink:develops_from
+  - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
   - biolink:enables
   - biolink:expressed_in
+  - biolink:expresses
   - biolink:gene_associated_with_condition
   - biolink:genetically_associated_with
   - biolink:has_adverse_event
   - biolink:has_disease
   - biolink:has_gene
+  - biolink:has_input
   - biolink:has_mode_of_inheritance
+  - biolink:has_output
+  - biolink:has_part
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
   - biolink:homologous_to
+  - biolink:in_taxon
   - biolink:interacts_with
   - biolink:is_active_in
+  - biolink:is_input_of
+  - biolink:is_output_of
   - biolink:is_sequence_variant_of
   - biolink:located_in
+  - biolink:location_of
   - biolink:model_of
+  - biolink:occurs_in
   - biolink:orthologous_to
+  - biolink:overlaps
   - biolink:part_of
   - biolink:participates_in
+  - biolink:preceded_by
+  - biolink:precedes
+  - biolink:produced_by
+  - biolink:produces
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
+  - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 1438250397
@@ -1310,6 +1517,270 @@ products:
   - relation_type: prov:hadPrimarySource
     source: mrbase
   product_url: https://docs.epigraphdb.org/graph-database/
+- category: GraphicalInterface
+  description: Web-based interface for searching and browsing comprehensive gene-centric
+    information integrating data from over 200 sources
+  format: http
+  id: genecards.web.interface
+  name: GeneCards Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: 5srrnadb
+  - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
+    source: alphafold
+  - relation_type: prov:hadPrimarySource
+    source: aminode
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biocyc
+  - relation_type: prov:hadPrimarySource
+    source: biogps
+  - relation_type: prov:hadPrimarySource
+    source: biogrid
+  - relation_type: prov:hadPrimarySource
+    source: bitterdb
+  - relation_type: prov:hadPrimarySource
+    source: cdd
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: civic
+  - relation_type: prov:hadPrimarySource
+    source: clinicaltrialsgov
+  - relation_type: prov:hadPrimarySource
+    source: clinvar
+  - relation_type: prov:hadPrimarySource
+    source: compartments
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  - relation_type: prov:hadPrimarySource
+    source: craft
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbsuper
+  - relation_type: prov:hadPrimarySource
+    source: dgidb
+  - relation_type: prov:hadPrimarySource
+    source: dgv
+  - relation_type: prov:hadPrimarySource
+    source: diseases
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: efo
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: epd
+  - relation_type: prov:hadPrimarySource
+    source: fabric
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: flybase
+  - relation_type: prov:hadPrimarySource
+    source: gard
+  - relation_type: prov:hadPrimarySource
+    source: gencode
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: genomernai
+  - relation_type: prov:hadPrimarySource
+    source: glyconnect
+  - relation_type: prov:hadPrimarySource
+    source: glygen
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: gtex
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: gwascatalog
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hmdb
+  - relation_type: prov:hadPrimarySource
+    source: homologene
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: hpa
+  - relation_type: prov:hadPrimarySource
+    source: hprd
+  - relation_type: prov:hadPrimarySource
+    source: humancyc
+  - relation_type: prov:hadPrimarySource
+    source: icd10
+  - relation_type: prov:hadPrimarySource
+    source: icd11
+  - relation_type: prov:hadPrimarySource
+    source: iid
+  - relation_type: prov:hadPrimarySource
+    source: imgt
+  - relation_type: prov:hadPrimarySource
+    source: innatedb
+  - relation_type: prov:hadPrimarySource
+    source: intact
+  - relation_type: prov:hadPrimarySource
+    source: interpro
+  - relation_type: prov:hadPrimarySource
+    source: kg-monarch
+  - relation_type: prov:hadPrimarySource
+    source: lncbase
+  - relation_type: prov:hadPrimarySource
+    source: lncbook
+  - relation_type: prov:hadPrimarySource
+    source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadisease
+  - relation_type: prov:hadPrimarySource
+    source: malacards
+  - relation_type: prov:hadPrimarySource
+    source: medgen
+  - relation_type: prov:hadPrimarySource
+    source: medlineplus
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: mgi
+  - relation_type: prov:hadPrimarySource
+    source: mint
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: mirgenedb
+  - relation_type: prov:hadPrimarySource
+    source: mirtarbase
+  - relation_type: prov:hadPrimarySource
+    source: modomics
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: nextprot
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panther
+  - relation_type: prov:hadPrimarySource
+    source: pathwaycommons
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pdbe
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: pharmgkb
+  - relation_type: prov:hadPrimarySource
+    source: pid
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: prosite
+  - relation_type: prov:hadPrimarySource
+    source: proteomicsdb
+  - relation_type: prov:hadPrimarySource
+    source: proteopedia
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: pubtator
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: rfam
+  - relation_type: prov:hadPrimarySource
+    source: rgd
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: scop
+  - relation_type: prov:hadPrimarySource
+    source: sfld
+  - relation_type: prov:hadPrimarySource
+    source: sgd
+  - relation_type: prov:hadPrimarySource
+    source: signor
+  - relation_type: prov:hadPrimarySource
+    source: silva
+  - relation_type: prov:hadPrimarySource
+    source: simap
+  - relation_type: prov:hadPrimarySource
+    source: smart
+  - relation_type: prov:hadPrimarySource
+    source: snodb
+  - relation_type: prov:hadPrimarySource
+    source: snomedct
+  - relation_type: prov:hadPrimarySource
+    source: snopy
+  - relation_type: prov:hadPrimarySource
+    source: srpdb
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: tair
+  - relation_type: prov:hadPrimarySource
+    source: tarbase
+  - relation_type: prov:hadPrimarySource
+    source: tissues
+  - relation_type: prov:hadPrimarySource
+    source: treefam
+  - relation_type: prov:hadPrimarySource
+    source: ttd
+  - relation_type: prov:hadPrimarySource
+    source: ucnebase
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: vista
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  - relation_type: prov:hadPrimarySource
+    source: wormbase
+  product_url: https://www.genecards.org/
 repository: https://github.com/monarch-initiative/monarch-ingest
 ---
 The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. Monarch resources and integrated data are also foundational to many downstream applications and contexts; we work closely with a variety of stakeholders and resource-development communities to capture feedback and make improvements. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components. We promote provenance and transparency, enhanced use of standards and new technologies and improved data accessibility, end-user utility, and data submission. Learn more about the complete suite of Monarch resources on our organization's [documentation pages](https://monarch-initiative.github.io/monarch-documentation/).
