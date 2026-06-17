@@ -144,11 +144,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uniprot
   product_url: https://omabrowser.org/All/oma-uniprot.txt.gz
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -1027,10 +1023,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt

@@ -133,19 +133,15 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
     header found'
 - category: OntologyProduct
-  description: Classes added to ncbitaxon for groupings such as prokaryotes
+  description: Classes added to ncbitaxon for taxon subsets such as prokaryotes
   format: owl
-  id: go.extensions.go-taxon-groupings.owl
-  name: GO Taxon Groupings
+  id: go.extensions.go-taxon-subsets.owl
+  name: GO Taxon Subsets
   original_source:
   - relation_type: prov:hadPrimarySource
     source: go
-  product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  product_file_size: 5795
+  product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-subsets.owl
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
     is not archived.
@@ -3804,10 +3800,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: Product
   compression: 7z
   description: Compressed CSV file containing ProteomeHD v1.1, with 10,323 proteins
@@ -4148,10 +4140,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2026-06-15: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to Gene Ontology terms
@@ -4164,11 +4152,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: go
   product_url: https://omabrowser.org/All/oma-go.txt.gz
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: gzip
   description: Gene association file for Reactome GO annotations

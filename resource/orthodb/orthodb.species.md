@@ -6,9 +6,9 @@ format: tsv
 id: orthodb.species
 name: OrthoDB Species Data
 original_source:
-  - source: orthodb
-    relation_type: prov:hadPrimarySource
-product_file_size: 644375
-product_url: https://data.orthodb.org/current/download/odb12v1_species.tab.gz
+- relation_type: prov:hadPrimarySource
+  source: orthodb
+product_file_size: 647315
+product_url: https://data.orthodb.org/current/download/odb_data_dump/odb12v2_species.tab.gz
 layout: product_detail
 ---

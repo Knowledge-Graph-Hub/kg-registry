@@ -6,9 +6,9 @@ format: tsv
 id: orthodb.og2genes
 name: OrthoDB OG to Genes Mapping
 original_source:
-  - source: orthodb
-    relation_type: prov:hadPrimarySource
-product_file_size: 4909850611
-product_url: https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz
+- relation_type: prov:hadPrimarySource
+  source: orthodb
+product_file_size: 4807568773
+product_url: https://data.orthodb.org/current/download/odb_data_dump/odb12v2_OG2genes.tab.gz
 layout: product_detail
 ---

@@ -1,5 +1,5 @@
 ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz:
-  checked_at: '2026-06-12T16:38:14Z'
+  checked_at: '2026-06-16T20:53:42Z'
   error: 'FTP error: timed out'
   protocol: ftp
 ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/:
@@ -66,7 +66,7 @@ ftp://ftp.wormbase.org/pub/wormbase/:
   error: 'FTP error: [Errno 101] Network is unreachable'
   protocol: ftp
 http://119.3.41.228/eram/download.php:
-  checked_at: '2025-11-25T20:27:57Z'
+  checked_at: '2026-06-16T20:53:31Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -181,10 +181,10 @@ http://ftp.microbio.me/greengenes_release/current/:
   skip_reason: html_page
   status_code: 200
 http://juniper.health.unm.edu/tcrd/:
-  checked_at: '2026-06-12T16:38:14Z'
+  checked_at: '2026-06-16T20:53:40Z'
   error: Timeout connecting to URL
 http://juniper.health.unm.edu/tcrd/download/:
-  checked_at: '2026-06-12T16:38:14Z'
+  checked_at: '2026-06-16T20:53:40Z'
   error: Timeout connecting to URL
 http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_KinomeScan_Datasets_2018-01-18.xlsx:
   checked_at: '2025-10-31T14:55:12Z'
@@ -227,7 +227,7 @@ http://patho.phenomebrowser.net/#/help:
   skip_reason: html_page
   status_code: 200
 http://phospho.elm.eu.org/dataset.html:
-  checked_at: '2026-06-12T16:38:15Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -1298,7 +1298,7 @@ http://purl.obolibrary.org/obo/gno.owl:
   last_success_bytes: 215188241
   status_code: 200
 http://purl.obolibrary.org/obo/go.json:
-  checked_at: '2026-06-12T16:38:17Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_length: 77592125
   content_type: application/json
   error: No Content-Length header found
@@ -1323,7 +1323,7 @@ http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl:
   last_success_bytes: 1224800846
   status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/go-plus.json:
-  checked_at: '2026-06-12T16:38:17Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_length: 131618305
   content_type: application/json
   error: No Content-Length header found
@@ -1339,6 +1339,12 @@ http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl:
   checked_at: '2026-06-12T16:38:17Z'
   error: HTTP 403 error when accessing file
   status_code: 403
+http://purl.obolibrary.org/obo/go/extensions/go-taxon-subsets.owl:
+  checked_at: '2026-06-16T20:35:00Z'
+  content_length: 5795
+  content_type: application/rdf+xml
+  last_success_bytes: 5795
+  status_code: 200
 http://purl.obolibrary.org/obo/go/extensions/reacto.owl:
   checked_at: '2026-02-20T21:44:10Z'
   content_length: 145810064
@@ -1352,7 +1358,7 @@ http://purl.obolibrary.org/obo/go/go-base.owl:
   last_success_bytes: 160974965
   status_code: 200
 http://purl.obolibrary.org/obo/go/go-basic.json:
-  checked_at: '2026-06-12T16:38:17Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_length: 67130778
   content_type: application/json
   error: No Content-Length header found
@@ -3602,10 +3608,11 @@ https://aideepmed.com/UniBioMap/database/unibiomap/disease_desc.json:
   error: No Content-Length header found
   status_code: 200
 https://aideepmed.com/UniBioMap/database/unibiomap/go_desc.json:
-  checked_at: '2026-06-12T16:38:19Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: application/json
   error: No Content-Length header found
-  status_code: 200
+  skip_reason: access_restricted
+  status_code: 403
 https://aideepmed.com/UniBioMap/database/unibiomap/pathway_desc.json:
   checked_at: '2026-06-12T16:39:51Z'
   content_type: application/json
@@ -3761,13 +3768,13 @@ https://atcddd.fhi.no/atc_ddd_index/:
   skip_reason: html_page
   status_code: 200
 https://athena.ohdsi.org/search-terms/start:
-  checked_at: '2026-04-02T20:27:07Z'
+  checked_at: '2026-06-16T20:53:31Z'
   content_type: text/html;charset=ISO-8859-1
   error: HTTP 403 error when accessing file
   skip_reason: html_page
-  status_code: 403
+  status_code: 200
 https://athena.ohdsi.org/vocabulary/list:
-  checked_at: '2026-03-30T19:59:48Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/html;charset=ISO-8859-1
   error: 'Error connecting to URL: Exceeded 30 redirects.'
   skip_reason: html_page
@@ -3870,12 +3877,12 @@ https://biolink.github.io/information-resource-registry/:
   skip_reason: html_page
   status_code: 200
 https://biomics.lab.nycu.edu.tw/dbPTM/download.php:
-  checked_at: '2026-06-12T16:38:12Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://biomics.lab.nycu.edu.tw/dbSNO/download.php:
-  checked_at: '2026-06-12T16:38:12Z'
+  checked_at: '2026-06-16T20:53:41Z'
   error: HTTP 500 error when accessing file
   status_code: 500
 https://biomuta.readthedocs.io/en/latest/:
@@ -3884,7 +3891,7 @@ https://biomuta.readthedocs.io/en/latest/:
   skip_reason: html_page
   status_code: 200
 https://biosemantics.org/biosearch:
-  checked_at: '2026-06-12T16:38:12Z'
+  checked_at: '2026-06-16T21:18:26Z'
   error: Timeout connecting to URL
 https://bioteque.irbbarcelona.org/bqsupports:
   checked_at: '2025-08-26T18:14:45Z'
@@ -3892,7 +3899,7 @@ https://bioteque.irbbarcelona.org/bqsupports:
   skip_reason: html_page
   status_code: 200
 https://bioteque.irbbarcelona.org/downloads/embeddings:
-  checked_at: '2025-08-26T18:13:37Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -3920,7 +3927,7 @@ https://cancer.sanger.ac.uk/cosmic/download/cosmic:
   skip_reason: html_page
   status_code: 200
 https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2:
-  checked_at: '2025-09-04T17:30:56Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -4018,7 +4025,7 @@ https://compath.scai.fraunhofer.de/curation_protocol:
   skip_reason: html_page
   status_code: 200
 ? https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-: checked_at: '2025-08-26T18:13:35Z'
+: checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -4114,10 +4121,10 @@ https://data.4dnucleome.org/tools/micro-meta-app:
   skip_reason: html_page
   status_code: 200
 https://data.mendeley.com/datasets/mrcf7f4tc2/1:
-  checked_at: '2025-08-26T18:17:27Z'
+  checked_at: '2026-06-16T21:18:15Z'
   content_type: text/html; charset=utf-8
-  skip_reason: html_page
-  status_code: 200
+  skip_reason: access_restricted
+  status_code: 403
 https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb:
   checked_at: '2025-08-28T18:21:35Z'
   content_length: 6827814912
@@ -4160,6 +4167,54 @@ https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv:
   content_type: text/csv
   last_success_bytes: 349573789
   status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_OG2genes.tab.gz:
+  checked_at: '2026-06-16T20:53:33Z'
+  content_length: 4807568773
+  content_type: application/octet-stream
+  last_success_bytes: 4807568773
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_OG_xrefs.tab.gz:
+  checked_at: '2026-06-16T20:53:34Z'
+  content_length: 346459675
+  content_type: application/octet-stream
+  last_success_bytes: 346459675
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_OGs.tab.gz:
+  checked_at: '2026-06-16T20:53:33Z'
+  content_length: 134459173
+  content_type: application/octet-stream
+  last_success_bytes: 134459173
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_aa_fasta.gz:
+  checked_at: '2026-06-16T20:53:34Z'
+  content_length: 39697100104
+  content_type: application/octet-stream
+  last_success_bytes: 39697100104
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_cds_fasta.gz:
+  checked_at: '2026-06-16T20:53:34Z'
+  content_length: 58778301483
+  content_type: application/octet-stream
+  last_success_bytes: 58778301483
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_gene_xrefs.tab.gz:
+  checked_at: '2026-06-16T20:53:34Z'
+  content_length: 5012354765
+  content_type: application/octet-stream
+  last_success_bytes: 5012354765
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_genes.tab.gz:
+  checked_at: '2026-06-16T20:53:34Z'
+  content_length: 4837182539
+  content_type: application/octet-stream
+  last_success_bytes: 4837182539
+  status_code: 200
+https://data.orthodb.org/current/download/odb_data_dump/odb12v2_species.tab.gz:
+  checked_at: '2026-06-16T20:53:33Z'
+  content_length: 647315
+  content_type: application/octet-stream
+  last_success_bytes: 647315
+  status_code: 200
 https://data.sennetconsortium.org/:
   checked_at: '2025-11-25T20:27:53Z'
   content_type: text/html; charset=utf-8
@@ -4181,7 +4236,7 @@ https://data.wikipathways.org/pfocr/current/:
   skip_reason: html_page
   status_code: 200
 https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo:
-  checked_at: '2025-11-25T20:28:10Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -4311,7 +4366,7 @@ https://docs.epigraphdb.org/:
   skip_reason: html_page
   status_code: 200
 https://docs.epigraphdb.org/graph-database/:
-  checked_at: '2025-09-03T16:26:41Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -4359,9 +4414,9 @@ https://doi.org/10.1093/nar/gkt1128:
   error: HTTP 403 error when accessing file
   status_code: 403
 https://doi.org/10.1109/BIBM47256.2019.8983062:
-  checked_at: '2026-04-15T21:01:23Z'
+  checked_at: '2026-06-16T20:53:45Z'
   content_type: text/html;charset=UTF-8
-  error: HTTP 418 error when accessing file
+  error: Timeout connecting to URL
   skip_reason: html_page
   status_code: 200
 https://doi.org/10.1136/amiajnl-2012-000852:
@@ -4400,7 +4455,7 @@ https://doi.org/10.5281/zenodo.6347574:
   skip_reason: html_page
   status_code: 200
 https://doi.org/10.5281/zenodo.8139357:
-  checked_at: '2025-08-26T18:14:04Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -4419,12 +4474,12 @@ https://download.alliancegenome.org/:
   error: No Content-Length header found
   status_code: 200
 https://download.baderlab.org/PathwayCommons/PC2/v14/:
-  checked_at: '2026-06-02T22:20:14Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://download.bio2rdf.org/:
-  checked_at: '2025-11-25T20:28:11Z'
+  checked_at: '2026-06-16T21:18:17Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -4527,7 +4582,7 @@ https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-CHEMICALS-L
   skip_reason: html_page
   status_code: 200
 https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip:
-  checked_at: '2026-01-02T23:23:12Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -4536,7 +4591,7 @@ https://downloads.wormbase.org/:
   error: HTTP 403 error when accessing file
   status_code: 403
 https://dtd.nlm.nih.gov/ncbi/pubmed/doc/out/250101/index.html:
-  checked_at: '2025-10-30T22:39:31Z'
+  checked_at: '2026-06-16T20:53:39Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -4617,7 +4672,7 @@ https://epsd.biocuckoo.cn:
   skip_reason: html_page
   status_code: 200
 https://epsd.biocuckoo.cn/Download.php:
-  checked_at: '2026-03-30T20:00:03Z'
+  checked_at: '2026-06-16T20:35:03Z'
   content_type: text/html
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'',
     port=443): Max retries exceeded with url: /Download.php (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
@@ -4804,42 +4859,42 @@ https://ftp-trace.ncbi.nih.gov/1000genomes/ftp/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/:
-  checked_at: '2026-06-02T22:19:49Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/:
-  checked_at: '2026-06-02T22:19:58Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/:
-  checked_at: '2026-06-02T22:19:58Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/:
-  checked_at: '2026-06-02T22:19:58Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/:
-  checked_at: '2026-06-02T22:19:58Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/:
-  checked_at: '2026-06-02T22:19:58Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/:
-  checked_at: '2026-06-02T22:19:59Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/RNAcentral:
-  checked_at: '2025-09-09T16:37:47Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -5384,12 +5439,12 @@ https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/:
   skip_reason: html_page
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/:
-  checked_at: '2025-10-30T22:39:30Z'
+  checked_at: '2026-06-16T20:53:35Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/:
-  checked_at: '2025-10-30T22:39:31Z'
+  checked_at: '2026-06-16T20:53:35Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -5421,7 +5476,7 @@ https://gdc.cancer.gov/access-data/gdc-data-transfer-tool:
   skip_reason: html_page
   status_code: 200
 https://genemania.org/data/current/:
-  checked_at: '2026-06-02T22:19:41Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -5508,7 +5563,7 @@ https://github.com/DiseaseOntology/DO.utils:
   skip_reason: html_page
   status_code: 200
 https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0:
-  checked_at: '2025-08-26T18:13:35Z'
+  checked_at: '2026-06-16T20:53:31Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5523,7 +5578,7 @@ https://github.com/GauravPandeyLab/KiNet:
   skip_reason: html_page
   status_code: 200
 https://github.com/HolobiomicsLab/MetaBoKG:
-  checked_at: '2026-06-02T22:19:40Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5563,7 +5618,7 @@ https://github.com/ImperialCollegeLondon/cardioKG:
   skip_reason: html_page
   status_code: 200
 https://github.com/ImperialCollegeLondon/cardioKG/tree/main/Building%20KG:
-  checked_at: '2026-06-12T16:38:03Z'
+  checked_at: '2026-06-16T20:53:33Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5593,12 +5648,12 @@ https://github.com/KChen-lab/ICKG:
   skip_reason: html_page
   status_code: 200
 https://github.com/KChen-lab/immune-knowledgegraph.github.io/tree/main/data:
-  checked_at: '2026-06-12T16:38:29Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest:
-  checked_at: '2025-08-26T18:16:37Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5613,7 +5668,7 @@ https://github.com/MaayanLab/Reprotox-KG:
   skip_reason: html_page
   status_code: 200
 https://github.com/MaayanLab/Reprotox-KG/tree/main/markdown:
-  checked_at: '2026-06-02T22:20:52Z'
+  checked_at: '2026-06-16T20:53:35Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5668,7 +5723,7 @@ https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-Provider:
   skip_reason: html_page
   status_code: 200
 https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp:
-  checked_at: '2025-11-25T20:27:56Z'
+  checked_at: '2026-06-16T20:53:34Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5688,7 +5743,7 @@ https://github.com/NCATSTranslator/Translator-All/wiki/Service-Provider:
   skip_reason: html_page
   status_code: 200
 https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG:
-  checked_at: '2026-02-20T21:44:15Z'
+  checked_at: '2026-06-16T20:53:36Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5811,7 +5866,7 @@ https://github.com/SuLab/MechRepoNet:
   skip_reason: html_page
   status_code: 200
 https://github.com/SuLab/MechRepoNet/releases/tag/publication:
-  checked_at: '2025-08-26T18:13:35Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5890,7 +5945,7 @@ https://github.com/callahantiff/PheKnowLator/wiki:
   skip_reason: html_page
   status_code: 200
 https://github.com/cns-iu/myaura:
-  checked_at: '2026-06-12T16:38:08Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -5980,6 +6035,11 @@ https://github.com/glycoinfo/GlycoRDF/wiki:
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
+https://github.com/google-deepmind/alphamissense:
+  checked_at: '2026-06-16T21:18:16Z'
+  content_type: text/html; charset=utf-8
+  skip_reason: html_page
+  status_code: 200
 https://github.com/griffithlab/docm/raw/master/data/data.sql.gz:
   checked_at: '2025-10-31T14:55:13Z'
   content_length: 1174722
@@ -5999,12 +6059,12 @@ https://github.com/griffithlab/docm/raw/master/data/variants.vcf.gz:
   last_success_bytes: 43955
   status_code: 200
 https://github.com/gyorilab/indra_cogex:
-  checked_at: '2025-08-26T18:13:40Z'
+  checked_at: '2026-06-16T20:53:34Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://github.com/hetio/hetnetpy:
-  checked_at: '2025-08-26T18:13:34Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6063,7 +6123,7 @@ https://github.com/multiomicsKP/drug_approvals_kp:
   skip_reason: html_page
   status_code: 200
 https://github.com/myinsilicom/iKraph:
-  checked_at: '2025-08-26T18:14:36Z'
+  checked_at: '2026-06-16T20:53:35Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6188,22 +6248,22 @@ https://github.com/xfd997700/UniBioMap:
   skip_reason: html_page
   status_code: 200
 https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG:
-  checked_at: '2026-06-12T16:38:02Z'
+  checked_at: '2026-06-16T20:53:33Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_RDF:
-  checked_at: '2026-06-12T16:38:02Z'
+  checked_at: '2026-06-16T20:53:33Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://github.com/yimingli99/AcuKG-Knowledge-graph-for-medical-acupuncture/tree/main/AcuKG_json:
-  checked_at: '2026-06-12T16:38:02Z'
+  checked_at: '2026-06-16T20:53:33Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG:
-  checked_at: '2026-02-20T21:44:15Z'
+  checked_at: '2026-06-16T20:53:36Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6228,7 +6288,7 @@ https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master:
   skip_reason: html_page
   status_code: 200
 https://gitub.u-bordeaux.fr/erias/oregano/-/tree/master/Data_OREGANO/Graphs:
-  checked_at: '2026-06-02T22:19:41Z'
+  checked_at: '2026-06-16T21:18:17Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6260,12 +6320,12 @@ https://gnpsdocs.readthedocs.io/:
   skip_reason: html_page
   status_code: 200
 https://go.drugbank.com/releases/latest:
-  checked_at: '2025-08-26T18:14:03Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://gse.cfde.cloud/downloads/:
-  checked_at: '2026-06-02T22:19:42Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6290,7 +6350,7 @@ https://gtrnadb.org/faq.html:
   skip_reason: html_page
   status_code: 200
 https://harmonizome-kg.maayanlab.cloud/:
-  checked_at: '2026-06-02T22:20:02Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6349,7 +6409,7 @@ https://humanatlas.io/data:
   skip_reason: html_page
   status_code: 200
 https://humanatlas.io/overview-data:
-  checked_at: '2026-06-02T22:19:47Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -6363,7 +6423,7 @@ https://icd.who.int/training/icd10training/:
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt:
-  checked_at: '2026-03-30T20:00:59Z'
+  checked_at: '2026-06-16T20:53:38Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
@@ -6391,42 +6451,42 @@ https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt:
-  checked_at: '2026-03-30T20:01:01Z'
+  checked_at: '2026-06-16T20:53:38Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt:
-  checked_at: '2026-03-30T20:01:01Z'
+  checked_at: '2026-06-16T20:53:38Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx:
-  checked_at: '2026-03-30T20:01:02Z'
+  checked_at: '2026-06-16T20:53:39Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt:
-  checked_at: '2026-03-30T20:01:02Z'
+  checked_at: '2026-06-16T20:53:39Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt:
-  checked_at: '2026-03-30T20:01:02Z'
+  checked_at: '2026-06-16T20:53:39Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
   skip_reason: html_page
   status_code: 200
 https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt:
-  checked_at: '2026-03-30T20:01:04Z'
+  checked_at: '2026-06-16T20:35:04Z'
   content_type: text/html; charset=utf-8
   error: 'Error connecting to URL: (''Connection aborted.'', ConnectionResetError(104,
     ''Connection reset by peer''))'
@@ -6479,7 +6539,7 @@ https://idrblab.org/ttd/help:
   skip_reason: html_page
   status_code: 200
 https://imodulondb.org/:
-  checked_at: '2025-11-25T20:27:34Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -6749,7 +6809,7 @@ https://maayanlab.cloud/Harmonizome/documentation:
   skip_reason: html_page
   status_code: 200
 https://maayanlab.cloud/Harmonizome/download:
-  checked_at: '2026-06-12T16:38:02Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html;charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -6788,7 +6848,7 @@ https://markerdb.ca/downloads:
   skip_reason: html_page
   status_code: 200
 https://markerdb.ca/pages/download_all_chemicals?format=tsv:
-  checked_at: '2026-06-12T16:38:26Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: application/text
   error: No Content-Length header found
   status_code: 200
@@ -6798,12 +6858,12 @@ https://markerdb.ca/pages/download_all_karyotypes?format=tsv:
   error: No Content-Length header found
   status_code: 200
 https://markerdb.ca/pages/download_all_proteins?format=tsv:
-  checked_at: '2026-06-12T16:38:31Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: application/text
   error: No Content-Length header found
   status_code: 200
 https://markerdb.ca/pages/download_all_sequence_variants?format=tsv:
-  checked_at: '2026-06-12T16:38:12Z'
+  checked_at: '2026-06-16T20:53:31Z'
   content_type: application/text
   error: No Content-Length header found
   status_code: 200
@@ -6818,7 +6878,7 @@ https://medlineplus.gov/xml.html:
   skip_reason: html_page
   status_code: 200
 https://meshb.nlm.nih.gov/MeSHonDemand:
-  checked_at: '2025-10-10T16:52:44Z'
+  checked_at: '2026-06-16T20:53:33Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -7002,22 +7062,22 @@ https://niva-knowledge-graph.github.io/TERA/:
   skip_reason: html_page
   status_code: 200
 https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/asciimesh/:
-  checked_at: '2025-10-10T16:52:44Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html;charset=ISO-8859-1
   skip_reason: html_page
   status_code: 200
 https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/meshmarc/:
-  checked_at: '2025-10-10T16:52:44Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html;charset=ISO-8859-1
   skip_reason: html_page
   status_code: 200
 https://nlmpubs.nlm.nih.gov/projects/mesh/MESH_FILES/xmlmesh/:
-  checked_at: '2025-10-10T16:52:44Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html;charset=ISO-8859-1
   skip_reason: html_page
   status_code: 200
 https://nlmpubs.nlm.nih.gov/projects/mesh/rdf/2025/:
-  checked_at: '2025-10-10T16:52:44Z'
+  checked_at: '2026-06-16T20:53:41Z'
   content_type: text/html;charset=ISO-8859-1
   skip_reason: html_page
   status_code: 200
@@ -7042,85 +7102,104 @@ https://ohdsi.github.io/Hades/:
   skip_reason: html_page
   status_code: 200
 https://omabrowser.org/All/OmaServer.h5:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/OmaServer.h5.idx:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/eukaryotes.cdna.fa.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/group-descriptions.txt.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-ensembl.txt.gz:
-  checked_at: '2026-06-12T16:38:14Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-entrez.txt.gz:
-  checked_at: '2026-06-12T16:38:33Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-go.txt.gz:
-  checked_at: '2026-06-12T16:38:17Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-groups.orthoXML.xml.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-groups.txt.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-hogs.orthoXML.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-pairs.txt.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-protein-annotations.txt.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-rdf-turtle.tgz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-refseq.txt.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-seqs.fa.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-seqs.seqxml.tgz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/oma-species.txt:
-  checked_at: '2026-06-12T16:38:35Z'
+  checked_at: '2026-06-16T20:35:00Z'
   content_type: text/plain; charset=UTF-8
   error: No Content-Length header found
   status_code: 200
 https://omabrowser.org/All/oma-uniprot.txt.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/prokaryotes.cdna.fa.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/All/viruses.cdna.fa.gz:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:00Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://omabrowser.org/oma/current/OMA.ttl.gz:
   checked_at: '2026-05-23T16:14:22Z'
@@ -7182,7 +7261,7 @@ https://openpredict.semanticscience.org/:
   error: HTTP 405 error when accessing file
   status_code: 405
 https://openpredict.semanticscience.org/docs:
-  checked_at: '2026-06-02T22:19:52Z'
+  checked_at: '2026-06-16T20:53:30Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -7369,10 +7448,10 @@ https://ptmd.biocuckoo.cn/download.php:
   skip_reason: html_page
   status_code: 200
 https://pubmed.ncbi.nlm.nih.gov/help/:
-  checked_at: '2025-10-31T14:54:23Z'
+  checked_at: '2026-06-16T20:53:34Z'
   content_type: text/html; charset=utf-8
-  skip_reason: html_page
-  status_code: 200
+  skip_reason: access_restricted
+  status_code: 403
 https://pypi.org/project/orkg/:
   checked_at: '2026-03-30T15:42:30Z'
   content_type: text/html; charset=UTF-8
@@ -7384,7 +7463,7 @@ https://pypi.org/project/pypath-omnipath/:
   skip_reason: html_page
   status_code: 200
 https://rampdb.nih.gov/:
-  checked_at: '2025-11-25T20:27:27Z'
+  checked_at: '2026-06-16T21:18:18Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -7415,6 +7494,18 @@ https://raw.githubusercontent.com/geneontology/gocam-py/main/src/gocam/schema/go
   content_type: text/plain; charset=utf-8
   last_success_bytes: 7830
   status_code: 200
+https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.json:
+  checked_at: '2026-06-16T21:18:16Z'
+  content_length: 92733
+  content_type: text/plain; charset=utf-8
+  last_success_bytes: 92733
+  status_code: 200
+https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.obo:
+  checked_at: '2026-06-16T21:18:15Z'
+  content_length: 78816
+  content_type: text/plain; charset=utf-8
+  last_success_bytes: 78816
+  status_code: 200
 https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl:
   checked_at: '2025-09-04T17:31:09Z'
   content_length: 102365
@@ -7422,15 +7513,17 @@ https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master
   last_success_bytes: 102365
   status_code: 200
 https://reactome.org/dev/content-service:
-  checked_at: '2026-06-02T22:20:54Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html; charset=utf-8
+  error: HTTP 526 error when accessing file
   skip_reason: html_page
-  status_code: 200
+  status_code: 526
 https://reactome.org/download-data:
-  checked_at: '2026-01-02T23:23:55Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html; charset=utf-8
+  error: HTTP 526 error when accessing file
   skip_reason: html_page
-  status_code: 200
+  status_code: 526
 https://registry.opendata.aws/obis/:
   checked_at: '2026-01-02T23:23:30Z'
   content_type: text/html
@@ -8141,7 +8234,7 @@ https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/iPTMnet.Prot
   last_success_bytes: 34132692
   status_code: 200
 https://research.bioinformatics.udel.edu/text_mining/rlimsp2/:
-  checked_at: '2026-06-12T16:39:16Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -8155,12 +8248,12 @@ https://ribovision2.chemistry.gatech.edu/:
   skip_reason: html_page
   status_code: 200
 https://rnacentral.org/help/public-database:
-  checked_at: '2025-09-09T16:37:48Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg:
-  checked_at: '2025-11-25T20:27:25Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -8250,7 +8343,7 @@ https://sciences.orphadata.com/ordo/:
   skip_reason: html_page
   status_code: 200
 https://sciences.orphadata.com/orphanet-scientific-knowledge-files/:
-  checked_at: '2026-06-02T22:20:06Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -8345,7 +8438,7 @@ https://spdx.org/licenses/:
   skip_reason: html_page
   status_code: 200
 https://spoke.ucsf.edu/data-tools:
-  checked_at: '2026-06-02T22:19:41Z'
+  checked_at: '2026-06-16T20:53:30Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -8415,7 +8508,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/:
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/HMDB_Automat/6715124699b6dbf0/:
-  checked_at: '2025-08-26T18:13:39Z'
+  checked_at: '2026-06-16T21:18:15Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -8450,7 +8543,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/:
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/STRING-DB_Automat/4ca5a0ce557e2c18/:
-  checked_at: '2025-08-26T18:16:25Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -8460,7 +8553,7 @@ https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/:
-  checked_at: '2025-11-25T20:27:25Z'
+  checked_at: '2026-06-16T21:18:15Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -8647,7 +8740,7 @@ https://topmed.nhlbi.nih.gov/sites/default/files/documents/TOPMed%20WGS%20Counts
   last_success_bytes: 442890
   status_code: 200
 https://ubkg-downloads.xconsortia.org/:
-  checked_at: '2025-08-26T18:13:36Z'
+  checked_at: '2026-06-16T20:53:40Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -9154,7 +9247,7 @@ https://www.cosmickb.org/about/:
   skip_reason: html_page
   status_code: 200
 https://www.disgenet.com/:
-  checked_at: '2025-08-26T18:13:35Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -9166,7 +9259,7 @@ https://www.disprot.org/assets/data/IDPO_v0.3.0.owl:
   skip_reason: no_content_type
   status_code: 200
 https://www.disprot.org/download:
-  checked_at: '2025-10-30T22:40:03Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -9314,12 +9407,12 @@ https://www.ema.europa.eu/en/medicines/download-medicine-data:
   skip_reason: html_page
   status_code: 200
 https://www.embopress.org/doi/abs/10.1038/msb.2011.26:
-  checked_at: '2026-06-12T16:38:14Z'
+  checked_at: '2026-06-16T20:53:31Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://www.embopress.org/doi/suppl/10.1038/msb.2011.26:
-  checked_at: '2026-06-12T16:38:13Z'
+  checked_at: '2026-06-16T20:53:31Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.ensembl.org/Multi/Tools/Blast:
@@ -9360,7 +9453,7 @@ https://www.finngen.fi/en/researchers/clinical-endpoints:
   skip_reason: html_page
   status_code: 200
 https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full#supplementary-material:
-  checked_at: '2025-11-25T20:27:54Z'
+  checked_at: '2026-06-16T20:53:37Z'
   content_type: text/html;charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -9388,8 +9481,9 @@ https://www.gencodegenes.org/pages/gencode_primary/:
   skip_reason: html_page
   status_code: 200
 https://www.genecards.org/:
-  checked_at: '2026-06-12T16:38:02Z'
+  checked_at: '2026-06-16T21:18:15Z'
   error: HTTP 403 error when accessing file
+  skip_reason: access_restricted
   status_code: 403
 https://www.genome.gov/Funded-Programs-Projects/Electronic-Medical-Records-and-Genomics-Network-eMERGE:
   checked_at: '2026-06-12T16:38:15Z'
@@ -9422,7 +9516,7 @@ https://www.globalbioticinteractions.org/datasets:
   skip_reason: html_page
   status_code: 200
 https://www.gsea-msigdb.org/gsea/downloads.jsp#msigdb:
-  checked_at: '2025-10-30T22:40:00Z'
+  checked_at: '2026-06-16T20:35:01Z'
   content_type: text/html;charset=ISO-8859-1
   skip_reason: html_page
   status_code: 200
@@ -9482,26 +9576,26 @@ https://www.guidetopharmacology.org/DATA/targets_and_families.csv:
   error: No Content-Length header found
   status_code: 200
 https://www.hmdb.ca/downloads#metabolite-protein-xml:
-  checked_at: '2025-09-04T17:30:33Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html; charset=utf-8
-  skip_reason: html_page
-  status_code: 200
+  skip_reason: access_restricted
+  status_code: 403
 https://www.hmdb.ca/downloads#protein-gene-sequences:
-  checked_at: '2026-06-12T16:38:25Z'
+  checked_at: '2026-06-16T21:18:15Z'
   content_type: text/html; charset=utf-8
   error: HTTP 403 error when accessing file
-  skip_reason: html_page
+  skip_reason: access_restricted
   status_code: 403
 https://www.hmdb.ca/downloads#spectra:
-  checked_at: '2025-09-04T17:30:35Z'
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html; charset=utf-8
-  skip_reason: html_page
-  status_code: 200
+  skip_reason: access_restricted
+  status_code: 403
 https://www.hmdb.ca/downloads#structures:
-  checked_at: '2026-06-12T16:38:25Z'
+  checked_at: '2026-06-16T21:18:15Z'
   content_type: text/html; charset=utf-8
   error: HTTP 403 error when accessing file
-  skip_reason: html_page
+  skip_reason: access_restricted
   status_code: 403
 https://www.inchi-trust.org/:
   checked_at: '2026-05-23T16:14:20Z'
@@ -9702,7 +9796,7 @@ https://www.ncbi.nlm.nih.gov/sra/docs/:
   skip_reason: html_page
   status_code: 200
 https://www.nextprot.org/downloads:
-  checked_at: '2026-06-12T16:38:34Z'
+  checked_at: '2026-06-16T20:35:03Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -9712,7 +9806,7 @@ https://www.nlm.nih.gov/:
   skip_reason: html_page
   status_code: 200
 https://www.nlm.nih.gov/bsd/disted/mesh.html:
-  checked_at: '2025-10-10T16:52:43Z'
+  checked_at: '2026-06-16T20:53:31Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -9807,7 +9901,7 @@ https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv:
   error: No Content-Length header found
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv:
-  checked_at: '2026-06-12T16:39:13Z'
+  checked_at: '2026-06-16T20:35:02Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
@@ -10172,7 +10266,12 @@ https://zenodo.org/record/14640564/files/verbatim-interactions.tsv.gz:
   last_success_bytes: 825458639
   status_code: 200
 https://zenodo.org/record/4077338:
-  checked_at: '2025-08-26T18:14:00Z'
+  checked_at: '2026-06-16T20:53:30Z'
+  content_type: text/html; charset=utf-8
+  skip_reason: html_page
+  status_code: 200
+https://zenodo.org/records/10813168:
+  checked_at: '2026-06-16T21:18:16Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -10217,7 +10316,7 @@ https://zenodo.org/records/18339711:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/records/3459420:
-  checked_at: '2025-08-26T18:13:39Z'
+  checked_at: '2026-06-16T20:53:35Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -10227,17 +10326,17 @@ https://zenodo.org/records/7753956:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/records/8117748/files/test.txt:
-  checked_at: '2026-06-12T16:38:13Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/train.txt:
-  checked_at: '2026-06-12T16:38:13Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/valid.txt:
-  checked_at: '2026-06-12T16:38:13Z'
+  checked_at: '2026-06-16T20:53:32Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200

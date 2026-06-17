@@ -41,6 +41,20 @@ except Exception:  # pragma: no cover
 
 # Configuration
 REQUEST_TIMEOUT = 10  # seconds
+# Browser-like User-Agent. Many hosts return HTTP 403 to non-browser clients
+# (e.g. the default ``python-requests`` agent) even though the file is publicly
+# reachable, which would otherwise be recorded as a retrieval failure.
+REQUEST_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 '
+        '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    ),
+    'Accept': '*/*',
+}
+# Status codes that indicate the server is up but restricts automated/HEAD
+# access (bot protection, login walls, method-not-allowed, throttling). These
+# are treated as reachable rather than broken links.
+ACCESS_RESTRICTED_CODES = {401, 403, 405, 429}
 EXCLUDED_CATEGORIES = ['GraphicalInterface', 'ProgrammingInterface']
 DEFAULT_CACHE_PATH = pathlib.Path('cache/url_status_cache.yml')
 DEFAULT_MAX_WORKERS = 10  # Number of parallel threads for URL checking
@@ -85,7 +99,7 @@ def cache_should_skip(url: str, cache: Dict[str, Any], ignore_cache: bool = Fals
     if not entry:
         return False, None
     # Skip if prior run recorded skip_reason we want to honor
-    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory', 'tls_cert_accessible'}:
+    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory', 'tls_cert_accessible', 'access_restricted'}:
         return True, entry
     return False, entry
 
@@ -224,7 +238,9 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
         # Use HEAD request to get headers without downloading content
         tls_fallback_used = False
         try:
-            response = requests.head(url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+            response = requests.head(
+                url, timeout=REQUEST_TIMEOUT, allow_redirects=True, headers=REQUEST_HEADERS
+            )
         except requests.exceptions.SSLError:
             # Some otherwise-healthy sites fail cert validation in automation contexts.
             # Retry without TLS verification and treat reachability as non-broken.
@@ -236,6 +252,7 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
                         url,
                         timeout=REQUEST_TIMEOUT,
                         allow_redirects=True,
+                        headers=REQUEST_HEADERS,
                         verify=False,
                     )
             else:
@@ -243,6 +260,7 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
                     url,
                     timeout=REQUEST_TIMEOUT,
                     allow_redirects=True,
+                    headers=REQUEST_HEADERS,
                     verify=False,
                 )
 
@@ -255,11 +273,20 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
             info['tls_verification_failed'] = True
 
         if response.status_code != 200:
-            if tls_fallback_used and response.status_code in {401, 403, 405, 429}:
+            if response.status_code in ACCESS_RESTRICTED_CODES:
+                # Server is up but restricts automated/HEAD access (bot protection,
+                # login wall, throttling). Treat as reachable rather than a broken
+                # link; we just cannot determine the file size. (Trade-off: a host
+                # that returns 403 for genuinely-missing objects -- e.g. some
+                # CloudFront/S3 setups -- will not be flagged here.)
+                note = "TLS verification failed, but " if tls_fallback_used else ""
                 safe_print(
-                    f"  ⚠️  TLS verification failed, but endpoint responded with HTTP {response.status_code}; treating as accessible"
+                    f"  ⚠️  {note}endpoint responded with HTTP {response.status_code}; "
+                    "treating as accessible (access-restricted)"
                 )
-                info['skip_reason'] = 'tls_cert_accessible'
+                info['skip_reason'] = 'access_restricted'
+                if tls_fallback_used:
+                    info['tls_verification_failed'] = True
                 return None, None, info
             error_msg = f"HTTP {response.status_code} error when accessing file"
             safe_print(f"  ⚠️  {error_msg}")

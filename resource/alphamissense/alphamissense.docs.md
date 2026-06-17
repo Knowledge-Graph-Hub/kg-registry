@@ -8,9 +8,6 @@ name: AlphaMissense Documentation
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alphamissense
-product_url: https://deepmind.google/science/alphamissense/
-warnings:
-- File was not able to be retrieved when checked on 2026-06-15_ HTTP 404 error when
-  accessing file
+product_url: https://github.com/google-deepmind/alphamissense
 layout: product_detail
 ---

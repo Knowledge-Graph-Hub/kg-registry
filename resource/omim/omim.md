@@ -2521,7 +2521,13 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
 publications:
-- id: https://doi.org/10.1093/nar/gky1151
+- authors:
+  - Joanna S Amberger
+  - Carol A Bocchini
+  - Alan F Scott
+  - Ada Hamosh
+  doi: 10.1093/nar/gky1151
+  id: https://doi.org/10.1093/nar/gky1151
   journal: Nucleic Acids Research
   preferred: true
   title: OMIM.org—leveraging knowledge across phenotype–gene relationships
@@ -2535,8 +2541,7 @@ publications:
   doi: 10.1093/nar/gku1205
   id: doi:10.1093/nar/gku1205
   journal: Nucleic Acids Research
-  title: 'OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog
-    of human genes and genetic disorders'
+  title: 'OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog of human genes and genetic disorders'
   year: '2015'
 taxon:
 - NCBITaxon:9606

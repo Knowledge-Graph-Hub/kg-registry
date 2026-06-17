@@ -45,13 +45,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: All metabolite metabolizing enzyme gene sequences (FASTA)
   format: fasta
@@ -61,11 +55,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#protein-gene-sequences
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: All metabolite structures (SDF)
   format: sdf
@@ -75,13 +65,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hmdb
   product_url: https://www.hmdb.ca/downloads#structures
-  warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-09-04: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
+  warnings: []
 - category: Product
   description: All metabolites dataset (XML)
   format: xml
@@ -157,6 +141,7 @@ products:
 - category: Product
   compression: zip
   description: Mass spectra image files archive
+  format: mixed
   id: hmdb.spectra.mass.images
   name: HMDB Mass Spectra Images
   original_source:
@@ -166,6 +151,7 @@ products:
 - category: Product
   compression: zip
   description: NMR spectra FID files archive
+  format: mixed
   id: hmdb.spectra.nmr.fid
   name: HMDB NMR Spectra FID Files
   original_source:

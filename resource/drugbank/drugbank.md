@@ -54,6 +54,7 @@ products:
 - category: ProgrammingInterface
   connection_url: https://www.drugbank.com/clinical
   description: Clinical API for integrating DrugBank data into healthcare applications
+  format: http
   id: drugbank.clinical.api
   is_public: true
   name: DrugBank Clinical API
@@ -804,10 +805,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -2875,6 +2872,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts
     to create graph nodes and add edges.

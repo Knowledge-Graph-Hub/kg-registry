@@ -6,9 +6,9 @@ format: tsv
 id: orthodb.gene_xrefs
 name: OrthoDB Gene Cross-references
 original_source:
-  - source: orthodb
-    relation_type: prov:hadPrimarySource
-product_file_size: 4692134033
-product_url: https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz
+- relation_type: prov:hadPrimarySource
+  source: orthodb
+product_file_size: 5012354765
+product_url: https://data.orthodb.org/current/download/odb_data_dump/odb12v2_gene_xrefs.tab.gz
 layout: product_detail
 ---

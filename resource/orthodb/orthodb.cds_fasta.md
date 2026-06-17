@@ -6,9 +6,9 @@ format: fasta
 id: orthodb.cds_fasta
 name: OrthoDB CDS Sequences
 original_source:
-  - source: orthodb
-    relation_type: prov:hadPrimarySource
-product_file_size: 57560209301
-product_url: https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz
+- relation_type: prov:hadPrimarySource
+  source: orthodb
+product_file_size: 58778301483
+product_url: https://data.orthodb.org/current/download/odb_data_dump/odb12v2_cds_fasta.gz
 layout: product_detail
 ---

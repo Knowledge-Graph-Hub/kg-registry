@@ -810,6 +810,7 @@ products:
 - category: Product
   compression: gzip
   description: 'full database, part I: the players (proteins, species, COGs,...)'
+  format: postgres
   id: string.database.items
   name: STRING Database Items Schema
   original_source:
@@ -820,6 +821,7 @@ products:
 - category: GraphProduct
   compression: gzip
   description: 'full database, part II: the networks (nodes, edges, scores,...)'
+  format: postgres
   id: string.database
   name: STRING Database Network Schema
   original_source:
@@ -897,6 +899,7 @@ products:
   compression: gzip
   description: 'full database, part III: interaction evidence (excluding license-restricted
     data)'
+  format: postgres
   id: string.database.evidence
   name: STRING Database Evidence Schema
   original_source:
@@ -906,6 +909,7 @@ products:
   product_url: https://stringdb-downloads.org/download/evidence_schema.v12.0.sql.gz
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to STRING data
+  format: http
   id: string.api
   name: STRING REST API
   original_source:
@@ -915,6 +919,7 @@ products:
 - category: GraphicalInterface
   description: Web interface for searching, visualizing, and analyzing protein-protein
     interaction networks
+  format: http
   id: string.web
   name: STRING Web Interface
   original_source:
@@ -2602,10 +2607,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 403 error
-    when accessing file'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv

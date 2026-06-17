@@ -2,6 +2,7 @@
 category: ProgrammingInterface
 connection_url: https://www.drugbank.com/clinical
 description: Clinical API for integrating DrugBank data into healthcare applications
+format: http
 id: drugbank.clinical.api
 is_public: true
 name: DrugBank Clinical API

@@ -58,6 +58,7 @@ products:
 - category: Product
   description: Downloadable RDF triple stores and datasets in multiple serialization
     formats (Turtle, N-Triples, RDF/XML, N3) from 35+ integrated biological databases
+  format: mixed
   id: bio2rdf.dumps
   name: Bio2RDF RDF Dumps and Downloads
   original_source:

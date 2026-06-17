@@ -14,7 +14,7 @@ creation_date: '2025-09-29T00:00:00Z'
 description: Description unavailable.
 domains:
 - anatomy and development
-homepage_url: http://github.com/seger/aao
+homepage_url: https://www.ebi.ac.uk/ols4/ontologies/aao
 id: aao
 last_modified_date: '2026-05-31T00:00:00Z'
 layout: resource_detail

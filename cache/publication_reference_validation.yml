@@ -122,6 +122,15 @@ entries:
     source_path: resource/alzkb/alzkb.md
     status: valid
     warnings: []
+  resource/aminode/aminode.md#publication[0]#DOI:10.1038/s41598-018-19744-w:
+    checked_at: '2026-06-17T14:17:54Z'
+    errors: []
+    fingerprint: 0c077e89f90beb034551500ad65eaddd685ca9a838074a2a1a69f3e55a22dba4
+    publication_index: 0
+    reference_id: DOI:10.1038/s41598-018-19744-w
+    source_path: resource/aminode/aminode.md
+    status: valid
+    warnings: []
   resource/amyco/amyco.md#publication[0]#DOI:10.1080/13506129.2019.1603143:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -462,6 +471,15 @@ entries:
     source_path: resource/biothings/biothings.md
     status: valid
     warnings: []
+  resource/bitterdb/bitterdb.md#publication[0]#DOI:10.1093/nar/gky974:
+    checked_at: '2026-06-17T14:00:40Z'
+    errors: []
+    fingerprint: 23dbd9da35ef6ae2399a8523f97f0b8f53642b993a7a793fc4389594f31cb443
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky974
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
   resource/brenda/brenda.md#publication[0]#PMID:41206471:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -612,6 +630,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.4137_EBO.S2320.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.4137_EBO.S2320.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.4137_EBO.S2320.md
+  resource/cdd/cdd.md#publication[0]#DOI:10.1093/nar/gkac1096:
+    checked_at: '2026-06-17T14:07:31Z'
+    errors: []
+    fingerprint: 214ab20341e4c2c257c71c8f7ff31640010f16cc9d21c650489e3b42a05296bd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkac1096
+    source_path: resource/cdd/cdd.md
+    status: valid
+    warnings: []
   resource/cdno/cdno.md#publication[0]#DOI:10.3389/fnut.2022.928837:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1062,6 +1089,15 @@ entries:
     source_path: resource/cpdb/cpdb.md
     status: valid
     warnings: []
+  resource/craft/craft.md#publication[0]#DOI:10.1186/1471-2105-13-161:
+    checked_at: '2026-06-17T14:17:51Z'
+    errors: []
+    fingerprint: f525ab662bc4d56d0c3ade1650156fc06f42658bddde35734d3191938e2c8e0a
+    publication_index: 0
+    reference_id: DOI:10.1186/1471-2105-13-161
+    source_path: resource/craft/craft.md
+    status: valid
+    warnings: []
   resource/crd/crd.md#publication[0]#DOI:10.1089/jir.1998.18.799:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1200,6 +1236,15 @@ entries:
     source_path: resource/dbsnp/dbsnp.md
     status: valid
     warnings: []
+  resource/dbsuper/dbsuper.md#publication[0]#DOI:10.1093/nar/gkv1002:
+    checked_at: '2026-06-17T14:00:32Z'
+    errors: []
+    fingerprint: 3a9f942d51c18f253d6fbabf3f8e1241418046697a07f3f71ad48bad27f3c0ea
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkv1002
+    source_path: resource/dbsuper/dbsuper.md
+    status: valid
+    warnings: []
   resource/dc/dc.md#publication[0]#url:https://www.iso.org/standard/71339.html:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1296,6 +1341,15 @@ entries:
     publication_index: 2
     reference_id: DOI:10.1038/nmeth.2689
     source_path: resource/dgidb/dgidb.md
+    status: valid
+    warnings: []
+  resource/dgv/dgv.md#publication[0]#DOI:10.1093/nar/gkt958:
+    checked_at: '2026-06-17T13:40:18Z'
+    errors: []
+    fingerprint: d2bc08cb75f0c959c7c49b856483655d3fffb9ad9e2b5855e56885c65e624cfa
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkt958
+    source_path: resource/dgv/dgv.md
     status: valid
     warnings: []
   resource/dinto/dinto.md#publication[0]#PMID:26147071:
@@ -1797,6 +1851,15 @@ entries:
     source_path: resource/eol-traitbank/eol-traitbank.md
     status: valid
     warnings: []
+  resource/epd/epd.md#publication[0]#DOI:10.1093/nar/gku1111:
+    checked_at: '2026-06-17T13:49:02Z'
+    errors: []
+    fingerprint: c12b82185272ca3a9b736a262649256eef6dcdb907bac8e5c04dbb1f3c3da5dc
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gku1111
+    source_path: resource/epd/epd.md
+    status: valid
+    warnings: []
   resource/epigraphdb/epigraphdb.md#publication[0]#DOI:10.1093/bioinformatics/btaa961:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -1919,6 +1982,15 @@ entries:
     status: warning
     warnings:
     - year '2020' does not match cached year '2019' in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkz947.md
+  resource/fabric/fabric.md#publication[0]#DOI:10.1093/nar/gkz546:
+    checked_at: '2026-06-17T14:17:56Z'
+    errors: []
+    fingerprint: eda0a83a6ec13f419fd0dfdec4bdce124d993091fa9a1acf00e7b2cf2f05ecd6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkz546
+    source_path: resource/fabric/fabric.md
+    status: valid
+    warnings: []
   resource/fbbt/fbbt.md#publication[0]#PMID:24139062:
     checked_at: '2026-06-15T21:54:57Z'
     errors: []
@@ -2216,6 +2288,24 @@ entries:
     source_path: resource/genemania/genemania.md
     status: valid
     warnings: []
+  resource/geneorganizer/geneorganizer.md#publication[0]#DOI:10.1093/nar/gkx302:
+    checked_at: '2026-06-17T14:17:49Z'
+    errors: []
+    fingerprint: a36c6ca07acafa407981ee122318b245426cee043588ded59ca72eb1acf36cdd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkx302
+    source_path: resource/geneorganizer/geneorganizer.md
+    status: valid
+    warnings: []
+  resource/genomernai/genomernai.md#publication[0]#DOI:10.1093/nar/gks1170:
+    checked_at: '2026-06-17T14:07:38Z'
+    errors: []
+    fingerprint: ce631c7ec030641f14609807afc8229a48eef021e687597b4132513ecf3ff29c
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1170
+    source_path: resource/genomernai/genomernai.md
+    status: valid
+    warnings: []
   resource/genophenoenvo-kg/genophenoenvo-kg.md#publication[0]#PMID:37384147:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -2439,6 +2529,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41467-022-31446-6
     source_path: resource/gtrx/gtrx.md
+    status: valid
+    warnings: []
+  resource/guidetopharmacology/guidetopharmacology.md#publication[0]#DOI:10.1093/nar/gkad944:
+    checked_at: '2026-06-17T13:40:11Z'
+    errors: []
+    fingerprint: df6e5f9b14da51f5b0222531a94f70eff30d26af5df35899d7e984b2551ed4a5
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad944
+    source_path: resource/guidetopharmacology/guidetopharmacology.md
     status: valid
     warnings: []
   resource/gutmgene/gutmgene.md#publication[0]#DOI:10.1093/nar/gkab786:
@@ -2867,6 +2966,15 @@ entries:
     status: warning
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1038_s41467-020-19942-z.md
+  resource/imgt/imgt.md#publication[0]#DOI:10.1093/nar/gku1056:
+    checked_at: '2026-06-17T13:48:54Z'
+    errors: []
+    fingerprint: 281a8d5e3aa2ef198ef92f4fca3c8e77cd0ea27242288ea8518f614dd0acc2db
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gku1056
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
   resource/imodulondb/imodulondb.md#publication[0]#DOI:10.1093/nar/gkae1009:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -3276,6 +3384,15 @@ entries:
     status: warning
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gkq1138.md
+  resource/lncrnadisease/lncrnadisease.md#publication[0]#DOI:10.1093/nar/gky905:
+    checked_at: '2026-06-17T14:07:40Z'
+    errors: []
+    fingerprint: 2727e8b7c12836f59fce7cfcd5d4aedf05800a1736e5bce220320837189fa5fb
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gky905
+    source_path: resource/lncrnadisease/lncrnadisease.md
+    status: valid
+    warnings: []
   resource/lncrnalyzr/lncrnalyzr.md#publication[0]#DOI:10.1016/j.jmb.2025.168938:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4164,16 +4281,14 @@ entries:
     warnings:
     - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1038_nbt.3790.md
   resource/omim/omim.md#publication[0]#DOI:10.1093/nar/gky1151:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-06-16T20:56:28Z'
     errors: []
-    fingerprint: 6edb33cabe8c1fb50cfc84cefb4c4f96dbca64814a95d78a14a9f9a045141e6f
+    fingerprint: 7c94c7da40d17822b2edcb8467a40e69a6c9de4f56d5109c677fdd9812bb7f64
     publication_index: 0
     reference_id: DOI:10.1093/nar/gky1151
     source_path: resource/omim/omim.md
-    status: warning
-    warnings:
-    - authors missing; cached authors are available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky1151.md
-    - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1093_nar_gky1151.md
+    status: valid
+    warnings: []
   resource/omim/omim.md#publication[1]#DOI:10.1093/nar/gku1205:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -4559,6 +4674,15 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkw1017
     source_path: resource/patric/patric.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[0]#DOI:10.1093/nar/gkaf1066:
+    checked_at: '2026-06-17T14:17:47Z'
+    errors: []
+    fingerprint: 7c2ed789b63ccd3e1c363ef732688a6fd2a562d0a570540e91a24aec37859bfd
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1066
+    source_path: resource/paxdb/paxdb.md
     status: valid
     warnings: []
   resource/pcl/pcl.md#publication[0]#DOI:10.1101/2021.10.10.463703:
@@ -4972,6 +5096,28 @@ entries:
     status: warning
     warnings:
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25425034.md
+  resource/pirsf/pirsf.md#publication[0]#DOI:10.1093/nar/gkh021:
+    checked_at: '2026-06-17T13:59:03Z'
+    errors:
+    - 'title ''PIRSF: family classification system at the Protein Information Resource''
+      does not match cached title ''The Gene Ontology Annotation (GOA) Database: sharing
+      knowledge in Uniprot with Gene Ontology'' in references_cache/DOI_10.1093_nar_gkh021.md'
+    fingerprint: faa092441147f54c1935d2c09161e911b6a1a031cf16c127ef9bea98ceeadcf4
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkh021
+    source_path: resource/pirsf/pirsf.md
+    status: error
+    warnings:
+    - authors missing; cached authors are available in references_cache/DOI_10.1093_nar_gkh021.md
+  resource/pirsf/pirsf.md#publication[0]#DOI:10.1093/nar/gkh097:
+    checked_at: '2026-06-17T14:00:35Z'
+    errors: []
+    fingerprint: e67351f443484066b3bd67d0bd81155bbff01be8da302f532592645344fa1eb3
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkh097
+    source_path: resource/pirsf/pirsf.md
+    status: valid
+    warnings: []
   resource/plana/plana.md#publication[0]#PMID:34318308:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5142,6 +5288,15 @@ entries:
     source_path: resource/progeny/progeny.md
     status: valid
     warnings: []
+  resource/prosite/prosite.md#publication[0]#DOI:10.1093/nar/gks1067:
+    checked_at: '2026-06-17T13:40:16Z'
+    errors: []
+    fingerprint: d4e5b29ef2ca1ef91422acefb63827edea5bd2e25cb3cc2c3e07583f5994aaba
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1067
+    source_path: resource/prosite/prosite.md
+    status: valid
+    warnings: []
   resource/protcid/protcid.md#publication[0]#DOI:10.1038/s41467-020-14301-4:
     checked_at: '2026-06-15T22:06:20Z'
     errors: []
@@ -5176,6 +5331,24 @@ entries:
     publication_index: 0
     reference_id: DOI:10.1038/s41587-019-0298-5
     source_path: resource/proteomehd/proteomehd.md
+    status: valid
+    warnings: []
+  resource/proteomicsdb/proteomicsdb.md#publication[0]#DOI:10.1093/nar/gkx1029:
+    checked_at: '2026-06-17T13:49:00Z'
+    errors: []
+    fingerprint: fef1f7fe095629dfd1a6e79cb575b1e5f813f066712ebafd5a85132d752b90b6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkx1029
+    source_path: resource/proteomicsdb/proteomicsdb.md
+    status: valid
+    warnings: []
+  resource/proteopedia/proteopedia.md#publication[0]#DOI:10.1186/gb-2008-9-8-r121:
+    checked_at: '2026-06-17T14:00:37Z'
+    errors: []
+    fingerprint: 292751fda40d3af00ab336f39b311305a2ebc6eceeb3ef6de1b499eb6ea709ba
+    publication_index: 0
+    reference_id: DOI:10.1186/gb-2008-9-8-r121
+    source_path: resource/proteopedia/proteopedia.md
     status: valid
     warnings: []
   resource/prov-o/prov-o.md#publication[0]#url:https://www.w3.org/TR/prov-o/:
@@ -5614,6 +5787,15 @@ entries:
     source_path: resource/scdo/scdo.md
     status: valid
     warnings: []
+  resource/scop/scop.md#publication[0]#DOI:10.1093/nar/gkz1064:
+    checked_at: '2026-06-17T14:07:33Z'
+    errors: []
+    fingerprint: 5a567f49755ec9141c92fdc78c1b54d42a78f962677ce711373b59393a3998dc
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkz1064
+    source_path: resource/scop/scop.md
+    status: valid
+    warnings: []
   resource/semmeddb/semmeddb.md#publication[0]#DOI:10.1093/bioinformatics/bts591:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -5648,6 +5830,15 @@ entries:
     publication_index: 3
     reference_id: DOI:10.1016/j.jbi.2003.11.003
     source_path: resource/semmeddb/semmeddb.md
+    status: valid
+    warnings: []
+  resource/sfld/sfld.md#publication[0]#DOI:10.1093/nar/gkt1130:
+    checked_at: '2026-06-17T14:07:36Z'
+    errors: []
+    fingerprint: de699520b564d9d7aba1712e16f9fe6cba1c426571170d8740305dde189b9315
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkt1130
+    source_path: resource/sfld/sfld.md
     status: valid
     warnings: []
   resource/sibils/sibils.md#publication[0]#DOI:10.1093/nar/gkaa328:
@@ -6217,6 +6408,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_34755882.md
+  resource/treefam/treefam.md#publication[0]#DOI:10.1093/nar/gkt1055:
+    checked_at: '2026-06-17T13:48:56Z'
+    errors: []
+    fingerprint: 33e72a98b962b58b63515765918bcaab645749cd556ce71ca3e2523fcaa00cb6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkt1055
+    source_path: resource/treefam/treefam.md
+    status: valid
+    warnings: []
   resource/ttd/ttd.md#publication[0]#DOI:10.1093/nar/gkad751:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6289,6 +6489,24 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/PMID_25009735.md
+  resource/ucnebase/ucnebase.md#publication[0]#DOI:10.1093/nar/gks1092:
+    checked_at: '2026-06-17T14:00:42Z'
+    errors: []
+    fingerprint: a9f447c0220731d13eccabe385635e758ebca523c60f30c72303c2401b9d1321
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gks1092
+    source_path: resource/ucnebase/ucnebase.md
+    status: valid
+    warnings: []
+  resource/ucsc/ucsc.md#publication[0]#DOI:10.1101/gr.229102:
+    checked_at: '2026-06-17T13:40:13Z'
+    errors: []
+    fingerprint: 20ba5f8c952f63ed22ee502060255f2caeca40a8cf471e9fe4d9ffe62147d564
+    publication_index: 0
+    reference_id: DOI:10.1101/gr.229102
+    source_path: resource/ucsc/ucsc.md
+    status: valid
+    warnings: []
   resource/ukbiobank/ukbiobank.md#publication[0]#DOI:10.1038/s41586-018-0579-z:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -6473,6 +6691,15 @@ entries:
     - journal missing; cached journal is available in /home/harry/kg-registry/references_cache/DOI_10.1111_jvim.70133.md
     - year missing; cached year is available in /home/harry/kg-registry/references_cache/DOI_10.1111_jvim.70133.md
     - doi missing; cached doi is available in /home/harry/kg-registry/references_cache/DOI_10.1111_jvim.70133.md
+  resource/vista/vista.md#publication[0]#DOI:10.1093/nar/gkl822:
+    checked_at: '2026-06-17T13:48:58Z'
+    errors: []
+    fingerprint: 6d31d0153f675b87d0c526ea86c62faf0fdc91042913e65a9e45cb5cc221a488
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkl822
+    source_path: resource/vista/vista.md
+    status: valid
+    warnings: []
   resource/vo/vo.md#publication[0]#PMID:23256535:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
