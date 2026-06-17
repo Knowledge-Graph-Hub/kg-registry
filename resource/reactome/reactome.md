@@ -4,6 +4,12 @@ category: DataSource
 collection:
 - ber
 contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: reactome-help@reactome.org
+  id: ebi
+  label: Reactome
 - category: Individual
   contact_details:
   - contact_type: email
@@ -26,7 +32,7 @@ domains:
 homepage_url: https://reactome.org
 id: reactome
 infores_id: reactome
-last_modified_date: '2026-05-30T00:00:00Z'
+last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -334,6 +340,7 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
+  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -673,6 +680,7 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
+  format: neo4j
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -833,6 +841,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -958,6 +967,7 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
+  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -1511,6 +1521,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -2092,8 +2103,7 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
@@ -2221,8 +2231,7 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -2627,6 +2636,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: csv
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -2666,10 +2676,12 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
+  product_url: https://github.com/wcm-wanglab/iBKH
 - category: DatabaseProduct
   description: Multi-sourced relational database integrating metabolomic pathway information,
     biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
     and metabolites with query and enrichment analysis capabilities.
+  format: sqlite
   id: rampdb.database
   is_public: true
   name: RaMP-DB Integrated Database
@@ -2688,6 +2700,7 @@ products:
 - category: Product
   description: Causal Activity Model graphs automatically generated from Reactome
     pathways using the Pathways2GO tool, translating pathway reactions to causal relationships
+  format: tsv
   id: cam-kp.reactome-cams
   name: Reactome Pathway CAMs
   original_source:
@@ -2695,6 +2708,7 @@ products:
     source: cam-kp
   - relation_type: prov:hadPrimarySource
     source: reactome
+  product_url: https://stars.renci.org/var/cam-kp/cam-kg.tsv.gz
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -3852,6 +3866,7 @@ products:
 - category: Product
   description: Standardized gene set collections from Common Fund programs in GMT
     format
+  format: mixed
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   original_source:
@@ -3989,6 +4004,7 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
+  format: neo4j
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
@@ -4091,6 +4107,7 @@ products:
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous
     networks)
+  format: python
   id: hetnetpy
   name: hetnetpy
   original_source:
@@ -4157,6 +4174,7 @@ products:
   product_url: https://het.io/search
 - category: GraphicalInterface
   description: Graphical interface for MedKG
+  format: http
   id: medkb.site
   name: MedKG Site
   original_source:
@@ -5431,6 +5449,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -5702,7 +5721,7 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://sugi.bio/biobtree/api/
+  product_url: https://sugi.bio/biobtree/
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
