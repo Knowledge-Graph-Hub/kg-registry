@@ -27,7 +27,6 @@ domains:
 - phenotype
 homepage_url: https://github.com/obophenotype/provisional_cell_ontology
 id: pcl
-infores_id: pcl
 last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:

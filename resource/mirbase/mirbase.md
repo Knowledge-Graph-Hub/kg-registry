@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: mirbase@manchester.ac.uk
+  id: university-of-manchester
   label: miRBase (University of Manchester)
 creation_date: '2004-01-01T00:00:00Z'
 description: miRBase is the primary online repository for microRNA sequences and annotations,

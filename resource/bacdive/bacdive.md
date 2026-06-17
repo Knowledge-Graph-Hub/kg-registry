@@ -19,7 +19,6 @@ domains:
 - biological systems
 homepage_url: https://bacdive.dsmz.de/
 id: bacdive
-infores_id: bacdive
 last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:

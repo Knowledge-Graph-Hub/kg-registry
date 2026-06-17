@@ -27,7 +27,6 @@ domains:
 - biological systems
 homepage_url: https://metatraits.embl.de/
 id: metatraits
-infores_id: metatraits
 last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:
