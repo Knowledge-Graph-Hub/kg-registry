@@ -47,6 +47,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: bitterdb
   - relation_type: prov:hadPrimarySource
+    source: cdd
+  - relation_type: prov:hadPrimarySource
     source: chebi
   - relation_type: prov:hadPrimarySource
     source: chembl
@@ -97,6 +99,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: genecards
   - relation_type: prov:hadPrimarySource
+    source: genomernai
+  - relation_type: prov:hadPrimarySource
     source: glyconnect
   - relation_type: prov:hadPrimarySource
     source: glygen
@@ -146,6 +150,8 @@ products:
     source: lncbook
   - relation_type: prov:hadPrimarySource
     source: lncipedia
+  - relation_type: prov:hadPrimarySource
+    source: lncrnadisease
   - relation_type: prov:hadPrimarySource
     source: malacards
   - relation_type: prov:hadPrimarySource
@@ -220,6 +226,10 @@ products:
     source: rgd
   - relation_type: prov:hadPrimarySource
     source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: scop
+  - relation_type: prov:hadPrimarySource
+    source: sfld
   - relation_type: prov:hadPrimarySource
     source: sgd
   - relation_type: prov:hadPrimarySource
