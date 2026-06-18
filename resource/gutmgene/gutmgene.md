@@ -57,9 +57,10 @@ publications:
   - Zhang X
   doi: 10.1093/nar/gkab786
   id: doi:10.1093/nar/gkab786
+  journal: Nucleic Acids Research
   title: '''gutMGene: a comprehensive database for target genes of gut microbes and
     microbial metabolites'''
-  year: '2021'
+  year: '2022'
 - authors:
   - Qi C
   - He G
@@ -75,6 +76,7 @@ publications:
   - Zhang X
   doi: 10.1093/nar/gkae1002
   id: doi:10.1093/nar/gkae1002
+  journal: Nucleic Acids Research
   title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of gut
     microbes and microbial metabolites'''
   year: '2025'

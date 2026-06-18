@@ -265,10 +265,10 @@ publications:
   - Bunk, B.
   doi: 10.1093/nar/gkaf1113
   id: PMID:41206471
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'BRENDA in 2026: a Global Core Biodata Resource for functional enzyme and
     metabolic data within the DSMZ Digital Diversity'
-  year: '2025'
+  year: '2026'
 - authors:
   - Chang, A.
   - Jeske, L.
@@ -281,7 +281,7 @@ publications:
   - Schomburg, D.
   doi: 10.1093/nar/gkaa1025
   id: PMID:33211880
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'BRENDA, the ELIXIR core data resource in 2021: new developments and updates'
   year: '2021'
 taxon:

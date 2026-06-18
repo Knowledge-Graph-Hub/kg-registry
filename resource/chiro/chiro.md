@@ -48,8 +48,17 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/chiro
 publications:
-  - id: https://doi.org/10.26434/chemrxiv.12591221
+  - authors:
+      - Charles Tapley Hoyt
+      - Christopher Mungall
+      - Nicole Vasilevsky
+      - Daniel Domingo-Fernández
+      - Matthew Healy
+      - Viswa Colluru
+    doi: 10.26434/chemrxiv.12591221
+    id: https://doi.org/10.26434/chemrxiv.12591221
     title: Extension of Roles in the ChEBI Ontology
+    year: '2020'
 ---
 
 ## Description

@@ -51,9 +51,18 @@ publications:
   - Pier Luigi Buttigieg
   journal: CEUR Workshop Proceedings
   year: '2016'
-- id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
+- authors:
+  - Medha Devare
+  - Céline Aubert
+  - Marie-Angélique Laporte
+  - Léo Valette
+  - Elizabeth Arnaud
+  - Pier Luigi Buttigieg
+  id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
+  journal: CEUR Workshop Proceedings
   title: 'Data-driven Agricultural Research for Development: A Need for Data Harmonization
     Via Semantics.'
+  year: '2016'
 ---
 ## Description
 
