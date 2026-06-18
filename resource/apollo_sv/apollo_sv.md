@@ -38,8 +38,20 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/ApolloDev/apollo-sv
 publications:
-  - id: https://doi.org/10.1186/s13326-016-0092-y
+  - authors:
+      - William R. Hogan
+      - Michael M. Wagner
+      - Mathias Brochhausen
+      - John Levander
+      - Shawn T. Brown
+      - Nicholas Millett
+      - Jay DePasse
+      - Josh Hanna
+    doi: 10.1186/s13326-016-0092-y
+    id: https://doi.org/10.1186/s13326-016-0092-y
+    journal: Journal of Biomedical Semantics
     title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation'
+    year: '2016'
 ---
 
 ## Description

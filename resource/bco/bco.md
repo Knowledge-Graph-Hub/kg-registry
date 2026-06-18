@@ -40,9 +40,38 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/BiodiversityOntologies/bco
 publications:
-- id: https://doi.org/10.1371/journal.pone.0089606
+- authors:
+  - Ramona L. Walls
+  - John Deck
+  - Robert Guralnick
+  - Steve Baskauf
+  - Reed Beaman
+  - Stanley Blum
+  - Shawn Bowers
+  - Pier Luigi Buttigieg
+  - Neil Davies
+  - Dag Endresen
+  - Maria Alejandra Gandolfo
+  - Robert Hanner
+  - Alyssa Janning
+  - Leonard Krishtalka
+  - Andréa Matsunaga
+  - Peter Midford
+  - Norman Morrison
+  - Éamonn Ó. Tuama
+  - Mark Schildhauer
+  - Barry Smith
+  - Brian J. Stucky
+  - Andrea Thomer
+  - John Wieczorek
+  - Jamie Whitacre
+  - John Wooley
+  doi: 10.1371/journal.pone.0089606
+  id: https://doi.org/10.1371/journal.pone.0089606
+  journal: PLoS ONE
   title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
     to the Biological Collections Ontology and Related Ontologies'
+  year: '2014'
 ---
 ## Description
 

@@ -577,9 +577,20 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21030441
+- authors:
+  - Gremse M
+  - Chang A
+  - Schomburg I
+  - Grote A
+  - Scheer M
+  - Ebeling C
+  - Schomburg D
+  doi: 10.1093/nar/gkq968
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21030441
+  journal: Nucleic Acids Res
   title: 'The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of
     all organisms for enzyme sources'
+  year: '2011'
 repository: https://github.com/BRENDA-Enzymes/BTO
 ---
 ## Description

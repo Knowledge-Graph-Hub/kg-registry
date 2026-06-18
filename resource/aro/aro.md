@@ -38,8 +38,46 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/arpcard/aro
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
+  - authors:
+      - Alcock BP
+      - Raphenya AR
+      - Lau TTY
+      - Tsang KK
+      - Bouchard M
+      - Edalatmand A
+      - Huynh W
+      - Nguyen AV
+      - Cheng AA
+      - Liu S
+      - Min SY
+      - Miroshnichenko A
+      - Tran HK
+      - Werfalli RE
+      - Nasir JA
+      - Oloni M
+      - Speicher DJ
+      - Florescu A
+      - Singh B
+      - Faltyn M
+      - Hernandez-Koutoucheva A
+      - Sharma AN
+      - Bordeleau E
+      - Pawlowski AC
+      - Zubyk HL
+      - Dooley D
+      - Griffiths E
+      - Maguire F
+      - Winsor GL
+      - Beiko RG
+      - Brinkman FSL
+      - Hsiao WWL
+      - Domselaar GV
+      - McArthur AG
+    doi: 10.1093/nar/gkz935
+    id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
+    journal: Nucleic Acids Res
     title: 'CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.'
+    year: '2020'
 ---
 
 ## Description

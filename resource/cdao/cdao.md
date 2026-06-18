@@ -40,8 +40,17 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/evoinfo/cdao
 publications:
-- id: https://doi.org/10.4137/EBO.S2320
+- authors:
+  - Francisco Prosdocimi
+  - Brandon Chisham
+  - Enrico Pontelli
+  - Julie D. Thompson
+  - Arlin Stoltzfus
+  doi: 10.4137/EBO.S2320
+  id: https://doi.org/10.4137/EBO.S2320
+  journal: Evolutionary Bioinformatics
   title: Initial Implementation of a Comparative Data Analysis Ontology
+  year: '2009'
 ---
 ## Description
 
