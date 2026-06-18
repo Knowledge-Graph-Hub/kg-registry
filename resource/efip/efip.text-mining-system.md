@@ -12,8 +12,6 @@ product_url: https://doi.org/10.1093/database/bas044
 secondary_source:
 - relation_type: prov:used
   source: rlims-p
-warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

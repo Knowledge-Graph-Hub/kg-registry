@@ -4,12 +4,6 @@ category: Ontology
 collection:
 - obo-foundry
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://www.ebi.ac.uk/
-  id: ebi
-  label: EMBL-EBI
 - category: Individual
   contact_details:
   - contact_type: email
@@ -18,6 +12,12 @@ contacts:
     value: amalik01
   label: Adnan Malik
   orcid: 0000-0001-8123-5351
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ebi.ac.uk/
+  id: ebi
+  label: EMBL-EBI
 creation_date: '2025-03-18T00:00:00Z'
 description: A structured classification of molecular entities of biological interest
   focusing on 'small' chemical compounds.
@@ -26,7 +26,7 @@ domains:
 homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
 infores_id: chebi
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -95,7 +95,6 @@ products:
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
     API key to access.
   dump_format: neo4j
-  format: neo4j
   id: ubkg.neo4j
   name: UBKG Neo4j Docker Distribution
   original_source:
@@ -323,7 +322,6 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -446,7 +444,8 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  product_file_size: 12464495186
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -567,7 +566,8 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  product_file_size: 4623010863
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -910,7 +910,6 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
-  format: csv
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -950,7 +949,6 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
-  product_url: https://github.com/wcm-wanglab/iBKH
 - category: MappingProduct
   description: bigg.metabolite SSSOM
   format: sssom
@@ -1245,7 +1243,6 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  format: neo4j
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -1821,7 +1818,6 @@ products:
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 - category: GraphicalInterface
   description: FORUM web application interface for semantic metabolomics exploration
-  format: http
   id: forum.webapp
   name: FORUM Web Application
   original_source:
@@ -1838,7 +1834,6 @@ products:
   product_url: https://forum-webapp.semantic-metabolomics.fr/
 - category: ProgrammingInterface
   description: FORUM REST API for programmatic access to chemical-disease associations
-  format: http
   id: forum.api
   name: FORUM API
   original_source:
@@ -1856,7 +1851,6 @@ products:
 - category: DocumentationProduct
   description: FORUM VoID (Vocabulary of Interlinked Datasets) metadata describing
     the knowledge graph structure
-  format: http
   id: forum.void
   name: FORUM VoID Metadata
   original_source:
@@ -2851,7 +2845,6 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
-  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -2976,7 +2969,6 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds
     and their properties.
-  format: http
   id: foodb.web
   name: FooDB Web Interface
   original_source:
@@ -3095,7 +3087,6 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
-  format: mysql
   id: foodb.data.mysql
   name: FooDB MySQL Dump
   original_source:
@@ -3241,7 +3232,7 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://sugi.bio/biobtree/
+  product_url: https://sugi.bio/biobtree/api/
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -3506,6 +3497,42 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+- category: GraphProduct
+  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
+    FORUM data
+  id: forum.graph.dump
+  name: FORUM Knowledge Graph Dump
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: chebi
+  - relation_type: prov:hadPrimarySource
+    source: cheminf
+  - relation_type: prov:hadPrimarySource
+    source: chemont
+  - relation_type: prov:hadPrimarySource
+    source: cito
+  - relation_type: prov:hadPrimarySource
+    source: dc
+  - relation_type: prov:hadPrimarySource
+    source: fabio
+  - relation_type: prov:hadPrimarySource
+    source: forum
+  - relation_type: prov:hadPrimarySource
+    source: mesh
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: skos
+  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+  warnings:
+  - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
+    out
+  - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
+    out'
 publications:
 - authors:
   - Adnan Malik

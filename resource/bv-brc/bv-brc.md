@@ -170,8 +170,8 @@ products:
   product_url: https://metatraits.embl.de/traits
 - category: Product
   description: Family-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.family-summary
   name: metaTraits NCBI Family Summary
   original_source:
@@ -187,12 +187,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 1540253
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_family_summary.jsonl.gz
+  product_file_size: 913932
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_family_summary_no_predictions.tsv.gz
 - category: Product
   description: Genus-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.genus-summary
   name: metaTraits NCBI Genus Summary
   original_source:
@@ -208,12 +208,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 5417182
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_genus_summary.jsonl.gz
+  product_file_size: 2431808
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_genus_summary_no_predictions.tsv.gz
 - category: Product
   description: Species-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.species-summary
   name: metaTraits NCBI Species Summary
   original_source:
@@ -229,12 +229,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 34062481
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+  product_file_size: 6523019
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_species_summary_no_predictions.tsv.gz
 - category: Product
   description: Family-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.family-summary
   name: metaTraits GTDB Family Summary
   original_source:
@@ -250,12 +250,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 4575050
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
+  product_file_size: 1513013
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_family_summary_no_predictions.tsv.gz
 - category: Product
   description: Genus-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.genus-summary
   name: metaTraits GTDB Genus Summary
   original_source:
@@ -271,12 +271,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 16364735
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_genus_summary.jsonl.gz
+  product_file_size: 4965442
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_genus_summary_no_predictions.tsv.gz
 - category: Product
   description: Species-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.species-summary
   name: metaTraits GTDB Species Summary
   original_source:
@@ -292,8 +292,8 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 48114108
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
+  product_file_size: 12570522
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
 - category: GraphicalInterface
   description: BV-BRC web portal that hosts legacy PATRIC bacterial genomics data
     and tools alongside expanded viral resources

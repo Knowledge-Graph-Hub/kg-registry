@@ -9,7 +9,7 @@ original_source:
   source: pbpko
 product_url: http://purl.obolibrary.org/obo/pbpko.json
 warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-06-17_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-06-15_ HTTP 404 error when
   accessing file

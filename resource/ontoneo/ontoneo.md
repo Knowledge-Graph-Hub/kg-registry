@@ -20,7 +20,7 @@ domains:
 - biomedical
 homepage_url: https://ontoneo.com/
 id: ontoneo
-last_modified_date: '2026-06-13T00:00:00Z'
+last_modified_date: '2026-06-18T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -63,8 +63,8 @@ publications:
   doi: 10.5281/zenodo.17508651
   id: https://doi.org/10.5281/zenodo.17508651
   journal: Zenodo
-  title: Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e
-    Neonatal
+  title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal
+    Domain
   year: '2025'
 ---
 ## Description

@@ -9,7 +9,7 @@ original_source:
   source: mp
 product_url: http://purl.obolibrary.org/obo/mp.obo
 warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ No Content-Length
+- File was not able to be retrieved when checked on 2026-06-17_ No Content-Length
   header found
 layout: product_detail
 ---

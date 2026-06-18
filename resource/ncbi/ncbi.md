@@ -47,7 +47,7 @@ products:
 - category: Product
   description: Taxonomy crosswalk from GTDB release r220 to NCBI taxonomy (2025-07-28),
     with lineage context, genome counts, and majority-vote agreement fractions.
-  format: mixed
+  format: tsv
   id: metatraits.gtdb2ncbi
   name: GTDB to NCBI Taxonomy Mapping
   original_source:
@@ -60,11 +60,11 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: progenomes
   product_file_size: 2937650
-  product_url: https://metatraits.embl.de/static/downloads/GTDB2NCBI.tsv.gz
+  product_url: https://www.bork.embl.de/~robbani/metatraits/GTDB2NCBI.tsv.gz
 - category: Product
   description: Taxonomy crosswalk from NCBI taxonomy (2025-07-28) to GTDB release
     r220, with lineage context, genome counts, and majority-vote agreement fractions.
-  format: mixed
+  format: tsv
   id: metatraits.ncbi2gtdb
   name: NCBI to GTDB Taxonomy Mapping
   original_source:
@@ -77,11 +77,11 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: progenomes
   product_file_size: 2895086
-  product_url: https://metatraits.embl.de/static/downloads/NCBI2GTDB.tsv.gz
+  product_url: https://www.bork.embl.de/~robbani/metatraits/NCBI2GTDB.tsv.gz
 - category: Product
   description: Family-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.family-summary
   name: metaTraits NCBI Family Summary
   original_source:
@@ -97,12 +97,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 1540253
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_family_summary.jsonl.gz
+  product_file_size: 913932
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_family_summary_no_predictions.tsv.gz
 - category: Product
   description: Genus-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.genus-summary
   name: metaTraits NCBI Genus Summary
   original_source:
@@ -118,12 +118,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 5417182
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_genus_summary.jsonl.gz
+  product_file_size: 2431808
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_genus_summary_no_predictions.tsv.gz
 - category: Product
   description: Species-level harmonized trait annotations aggregated for NCBI taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.ncbi.species-summary
   name: metaTraits NCBI Species Summary
   original_source:
@@ -139,8 +139,8 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 34062481
-  product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+  product_file_size: 6523019
+  product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_species_summary_no_predictions.tsv.gz
 - category: Product
   description: ncbi.gc Nodes TSV
   format: tsv

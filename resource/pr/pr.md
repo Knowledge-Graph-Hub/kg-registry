@@ -52,9 +52,9 @@ products:
   name: pro_nonreasoned.owl
   product_url: http://purl.obolibrary.org/obo/pr-asserted.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: PRO without reasoning applied, OBO format.
@@ -63,9 +63,9 @@ products:
   name: pro_nonreasoned.obo
   product_url: http://purl.obolibrary.org/obo/pr-asserted.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -598,7 +598,7 @@ publications:
   - Chen SC
   - Christie KR
   - Cowart J
-  - "D'Eustachio P"
+  - D'Eustachio P
   - Diehl AD
   - Drabkin HJ
   - Duncan WD

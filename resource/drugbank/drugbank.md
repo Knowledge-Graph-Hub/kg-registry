@@ -2866,11 +2866,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Neo4j construction artifacts for CardioKG, including Cypher scripts

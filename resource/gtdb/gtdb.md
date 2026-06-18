@@ -3,10 +3,10 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: Genome Taxonomy Database
   contact_details:
   - contact_type: url
     value: https://gtdb.ecogenomic.org/
+  label: Genome Taxonomy Database
 creation_date: '2026-02-26T00:00:00Z'
 description: The Genome Taxonomy Database provides a standardized bacterial and archaeal
   taxonomy derived from genome phylogeny.
@@ -23,7 +23,8 @@ license:
 name: Genome Taxonomy Database
 products:
 - category: DocumentationProduct
-  description: GTDB downloads page listing release mirrors, data files, and related software such as GTDB-Tk.
+  description: GTDB downloads page listing release mirrors, data files, and related
+    software such as GTDB-Tk.
   format: http
   id: gtdb.downloads
   name: GTDB Downloads
@@ -50,7 +51,7 @@ products:
 - category: Product
   description: Taxonomy crosswalk from GTDB release r220 to NCBI taxonomy (2025-07-28),
     with lineage context, genome counts, and majority-vote agreement fractions.
-  format: mixed
+  format: tsv
   id: metatraits.gtdb2ncbi
   name: GTDB to NCBI Taxonomy Mapping
   original_source:
@@ -63,11 +64,11 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: progenomes
   product_file_size: 2937650
-  product_url: https://metatraits.embl.de/static/downloads/GTDB2NCBI.tsv.gz
+  product_url: https://www.bork.embl.de/~robbani/metatraits/GTDB2NCBI.tsv.gz
 - category: Product
   description: Taxonomy crosswalk from NCBI taxonomy (2025-07-28) to GTDB release
     r220, with lineage context, genome counts, and majority-vote agreement fractions.
-  format: mixed
+  format: tsv
   id: metatraits.ncbi2gtdb
   name: NCBI to GTDB Taxonomy Mapping
   original_source:
@@ -80,11 +81,11 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: progenomes
   product_file_size: 2895086
-  product_url: https://metatraits.embl.de/static/downloads/NCBI2GTDB.tsv.gz
+  product_url: https://www.bork.embl.de/~robbani/metatraits/NCBI2GTDB.tsv.gz
 - category: Product
   description: Family-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.family-summary
   name: metaTraits GTDB Family Summary
   original_source:
@@ -100,12 +101,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 4575050
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
+  product_file_size: 1513013
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_family_summary_no_predictions.tsv.gz
 - category: Product
   description: Genus-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.genus-summary
   name: metaTraits GTDB Genus Summary
   original_source:
@@ -121,12 +122,12 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 16364735
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_genus_summary.jsonl.gz
+  product_file_size: 4965442
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_genus_summary_no_predictions.tsv.gz
 - category: Product
   description: Species-level harmonized trait annotations aggregated for GTDB taxonomy
-    in compressed JSONL format.
-  format: mixed
+    in compressed TSV format.
+  format: tsv
   id: metatraits.gtdb.species-summary
   name: metaTraits GTDB Species Summary
   original_source:
@@ -142,8 +143,8 @@ products:
     source: goldterms
   - relation_type: prov:wasDerivedFrom
     source: progenomes
-  product_file_size: 48114108
-  product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
+  product_file_size: 12570522
+  product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
 ---
 # Genome Taxonomy Database
 

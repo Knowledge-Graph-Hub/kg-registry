@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: ehrlink
 product_url: https://doi.org/10.1136/amiajnl-2012-000852
-warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

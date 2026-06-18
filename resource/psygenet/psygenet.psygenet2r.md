@@ -14,7 +14,7 @@ original_source:
 product_url: https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf
 repository: https://git.bioconductor.org/packages/psygenet2r
 warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-06-17_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

@@ -362,9 +362,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-16: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
     out'
 - category: Product
   compression: gzip
@@ -1037,9 +1037,9 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 500 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances

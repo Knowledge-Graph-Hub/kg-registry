@@ -9,8 +9,6 @@ original_source:
   source: loinc
 product_url: https://loinc.org/downloads/archive/
 warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ HTTP 503 error when
-  accessing file
 - File was not able to be retrieved when checked on 2026-03-30_ HTTP 503 error when
   accessing file
 layout: product_detail

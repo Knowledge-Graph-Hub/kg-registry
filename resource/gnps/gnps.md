@@ -54,11 +54,11 @@ products:
     source: gnps
   product_url: https://gnps-external.ucsd.edu/gnpslibrary
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-06-05: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
     to URL'
 - category: GraphProduct
   description: RDF knowledge graph materialized by the MetaBoKG workflow from public

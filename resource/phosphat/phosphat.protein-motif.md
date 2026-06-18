@@ -8,9 +8,8 @@ name: PhosPhAt Protein with Motif CSV
 original_source:
 - relation_type: prov:hadPrimarySource
   source: phosphat
+product_file_size: 52867920
 product_url: https://phosphat.uni-hohenheim.de/pepprotein_motif_2024.csv
-warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

@@ -409,9 +409,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ FTP error_ timed
     out
-  - 'File was not able to be retrieved when checked on 2026-06-16: FTP error: timed
-    out'
   - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
+    out'
+  - 'File was not able to be retrieved when checked on 2026-06-18: FTP error: timed
     out'
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
@@ -1494,9 +1494,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
 - category: GraphicalInterface
   description: PubChem source page for ChemIDplus, providing the current access point
@@ -1523,9 +1523,9 @@ products:
   - relation_type: prov:used
     source: pubchem
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
 - category: GraphicalInterface
   description: Web interface that allows searching, browsing, and exploring food compounds

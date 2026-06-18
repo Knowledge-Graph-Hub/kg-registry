@@ -60,9 +60,9 @@ products:
     source: rlims-p
   product_url: https://research.bioinformatics.udel.edu/text_mining/rlimsp2/files/RLIMS-P_AnnotationGuidelines.pdf
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Current iPTMnet PTM record table with PTM type, source, UniProt protein,

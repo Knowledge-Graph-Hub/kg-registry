@@ -8,8 +8,6 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: phosphat
 product_url: https://phosphat.uni-hohenheim.de/phosphat.html
-warnings:
-- File was not able to be retrieved when checked on 2026-06-16_ HTTP 403 error when
-  accessing file
+warnings: []
 layout: product_detail
 ---

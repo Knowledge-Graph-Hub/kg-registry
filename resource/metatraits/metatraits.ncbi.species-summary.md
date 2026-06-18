@@ -1,8 +1,8 @@
 ---
 category: Product
 description: Species-level harmonized trait annotations aggregated for NCBI taxonomy
-  in compressed JSONL format.
-format: mixed
+  in compressed TSV format.
+format: tsv
 id: metatraits.ncbi.species-summary
 name: metaTraits NCBI Species Summary
 original_source:
@@ -18,7 +18,7 @@ original_source:
   source: goldterms
 - relation_type: prov:wasDerivedFrom
   source: progenomes
-product_file_size: 34062481
-product_url: https://metatraits.embl.de/static/downloads/ncbi_species_summary.jsonl.gz
+product_file_size: 6523019
+product_url: https://www.bork.embl.de/~robbani/metatraits/ncbi_species_summary_no_predictions.tsv.gz
 layout: product_detail
 ---

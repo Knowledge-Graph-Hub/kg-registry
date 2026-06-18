@@ -1,8 +1,8 @@
 ---
 category: Product
 description: Family-level harmonized trait annotations aggregated for GTDB taxonomy
-  in compressed JSONL format.
-format: mixed
+  in compressed TSV format.
+format: tsv
 id: metatraits.gtdb.family-summary
 name: metaTraits GTDB Family Summary
 original_source:
@@ -18,7 +18,7 @@ original_source:
   source: goldterms
 - relation_type: prov:wasDerivedFrom
   source: progenomes
-product_file_size: 4575050
-product_url: https://metatraits.embl.de/static/downloads/gtdb_family_summary.jsonl.gz
+product_file_size: 1513013
+product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_family_summary_no_predictions.tsv.gz
 layout: product_detail
 ---

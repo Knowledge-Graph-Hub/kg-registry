@@ -2005,18 +2005,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
   - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/download/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
     for computational workflows and custom applications
@@ -2067,18 +2064,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-02: Error connecting
-    to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
-    exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
-    port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
-    in name resolution)"))'
   - 'File was not able to be retrieved when checked on 2026-06-17: Error connecting
     to URL: HTTPConnectionPool(host=''juniper.health.unm.edu'', port=80): Max retries
     exceeded with url: /tcrd/ (Caused by NameResolutionError("HTTPConnection(host=''juniper.health.unm.edu'',
     port=80): Failed to resolve ''juniper.health.unm.edu'' ([Errno -3] Temporary failure
     in name resolution)"))'
+  - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-06-18: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: Web-based interface for browsing and querying rare disease annotations
     including phenotypes, symptoms, genes, and genotypes with tree-structured disease
@@ -2202,9 +2196,9 @@ products:
   - relation_type: prov:wasInformedBy
     source: omim
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
 - category: ProgrammingInterface
   description: TRAPI 1.4 API for predicted drug treatments, drug-disease associations,
@@ -2513,11 +2507,11 @@ products:
   - relation_type: prov:used
     source: omim
   warnings:
+  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-16: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric

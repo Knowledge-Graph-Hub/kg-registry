@@ -54,12 +54,6 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 202 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-15: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 202 error
-    when accessing file'
 - category: DocumentationProduct
   description: Comprehensive technical documentation and class reference for PROTON
     ontology covering all modules, properties, and usage guidelines

@@ -65,9 +65,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -90,9 +90,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -128,9 +128,9 @@ products:
     source: go
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-06-16: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2026-06-17: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2026-06-18: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for taxon subsets such as prokaryotes
@@ -310,7 +310,6 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
-  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -782,7 +781,6 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
-  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -1164,7 +1162,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
+  product_file_size: 15279494795
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
@@ -1292,7 +1291,8 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
+  product_file_size: 1149505896
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -1696,7 +1696,8 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  product_file_size: 12464495186
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -1817,7 +1818,8 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  product_file_size: 4623010863
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -2427,7 +2429,6 @@ products:
   description: INDRA CoGEx is a graph database integrating causal relations, ontological
     relations, properties, and data, assembled at scale automatically from the scientific
     literature and structured sources. This is the code to build the graph.
-  format: python
   id: indra.cogex.code
   name: INDRA CoGEx Build Code
   original_source:
@@ -3581,7 +3582,6 @@ products:
 - category: Product
   description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated
     by Gene Ontology biocurators linking genes, proteins, and biological processes
-  format: owl
   id: cam-kp.go-cams
   name: Gene Ontology CAMs
   original_source:
@@ -3704,7 +3704,6 @@ products:
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
-  format: neo4j
   id: rtx-kg2.neo4j
   is_neo4j: true
   is_public: false
@@ -4539,7 +4538,6 @@ products:
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
-  format: neo4j
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
   original_source:
@@ -5501,7 +5499,7 @@ products:
   - relation_type: prov:hadPrimarySource
     source: kg-predict
   product_file_size: 48397035
-  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: https://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: drugbank
@@ -5951,7 +5949,7 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://sugi.bio/biobtree/
+  product_url: https://sugi.bio/biobtree/api/
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
   format: owl

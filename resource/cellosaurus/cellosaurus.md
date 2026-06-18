@@ -75,11 +75,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - category: Product
   description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -93,11 +93,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-03-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2026-06-16: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-05: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-06-18: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data

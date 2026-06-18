@@ -1,8 +1,8 @@
 ---
 category: Product
 description: Species-level harmonized trait annotations aggregated for GTDB taxonomy
-  in compressed JSONL format.
-format: mixed
+  in compressed TSV format.
+format: tsv
 id: metatraits.gtdb.species-summary
 name: metaTraits GTDB Species Summary
 original_source:
@@ -18,7 +18,7 @@ original_source:
   source: goldterms
 - relation_type: prov:wasDerivedFrom
   source: progenomes
-product_file_size: 48114108
-product_url: https://metatraits.embl.de/static/downloads/gtdb_species_summary.jsonl.gz
+product_file_size: 12570522
+product_url: https://www.bork.embl.de/~robbani/metatraits/gtdb_species_summary_no_predictions.tsv.gz
 layout: product_detail
 ---
