@@ -240,9 +240,31 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
+- authors:
+  - Morales J
+  - Welter D
+  - Bowler EH
+  - Cerezo M
+  - Harris LW
+  - McMahon AC
+  - Hall P
+  - Junkins HA
+  - Milano A
+  - Hastings E
+  - Malangone C
+  - Buniello A
+  - Burdett T
+  - Flicek P
+  - Parkinson H
+  - Cunningham F
+  - Hindorff LA
+  - MacArthur JAL
+  doi: 10.1186/s13059-018-1396-2
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
+  journal: Genome Biol
   title: A standardized framework for representation of ancestry data in genomics
     studies, with application to the NHGRI-EBI GWAS Catalog
+  year: '2018'
 repository: https://github.com/EBISPOT/hancestro
 ---
 ## Description

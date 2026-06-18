@@ -58,8 +58,14 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/glygen-glycan-data/GNOme
 publications:
-  - id: https://doi.org/10.5281/zenodo.6678278
+  - authors:
+      - "Zhang, Wenjin"
+      - "Edwards, Nathan J."
+    doi: 10.5281/zenodo.6678278
+    id: https://doi.org/10.5281/zenodo.6678278
+    journal: Zenodo
     title: GNOme - Glycan Naming and Subsumption Ontology
+    year: '2021'
 ---
 
 ## Description

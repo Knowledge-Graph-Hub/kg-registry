@@ -51,8 +51,17 @@ repository: https://github.com/pombase/fypo
 taxon:
 - NCBITaxon:4896
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23658422
+- authors:
+  - Harris MA
+  - Lock A
+  - Bähler J
+  - Oliver SG
+  - Wood V
+  doi: 10.1093/bioinformatics/btt266
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23658422
+  journal: Bioinformatics
   title: 'FYPO: The Fission Yeast Phenotype Ontology.'
+  year: '2013'
 ---
 ## Description
 

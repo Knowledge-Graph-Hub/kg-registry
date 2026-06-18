@@ -38,8 +38,22 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/ufbmi/dron
 publications:
-  - id: https://doi.org/10.1186/s13326-017-0121-5
+  - authors:
+      - William R. Hogan
+      - Josh Hanna
+      - Amanda Hicks
+      - Samira Amirova
+      - Baxter Bramblett
+      - Matthew Diller
+      - Rodel Enderez
+      - Timothy Modzelewski
+      - Mirela Vasconcelos
+      - Chris Delcher
+    doi: 10.1186/s13326-017-0121-5
+    id: https://doi.org/10.1186/s13326-017-0121-5
+    journal: Journal of Biomedical Semantics
     title: 'Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request'
+    year: '2017'
 ---
 
 ## Description

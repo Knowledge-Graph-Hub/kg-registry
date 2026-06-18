@@ -630,9 +630,22 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: wikipathways
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
+- authors:
+  - Dooley DM
+  - Griffiths EJ
+  - Gosal GS
+  - Buttigieg PL
+  - Hoehndorf R
+  - Lange MC
+  - Schriml LM
+  - Brinkman FSL
+  - Hsiao WWL
+  doi: 10.1038/s41538-018-0032-6
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
+  journal: NPJ Sci Food
   title: 'FoodOn: a harmonized food ontology to increase global food traceability,
     quality control and data integration'
+  year: '2018'
 repository: https://github.com/FoodOntology/foodon
 ---
 ## Description
