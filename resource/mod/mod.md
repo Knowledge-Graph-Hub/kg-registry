@@ -296,9 +296,22 @@ products:
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/18688235
+- authors:
+  - Montecchi-Palazzi L
+  - Beavis R
+  - Binz PA
+  - Chalkley RJ
+  - Cottrell J
+  - Creasy D
+  - Shofstahl J
+  - Seymour SL
+  - Garavelli JS
+  doi: 10.1038/nbt0808-864
+  id: https://www.ncbi.nlm.nih.gov/pubmed/18688235
+  journal: Nat Biotechnol
   title: The PSI-MOD community standard for representation of protein modification
     data
+  year: '2008'
 repository: https://github.com/HUPO-PSI/psi-mod-CV
 ---
 ## Description

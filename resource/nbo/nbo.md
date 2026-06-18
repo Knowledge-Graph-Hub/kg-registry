@@ -38,8 +38,18 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/obo-behavior/behavior-ontology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24177753
+  - authors:
+      - Hoehndorf R
+      - Hancock JM
+      - Hardy NW
+      - Mallon AM
+      - Schofield PN
+      - Gkoutos GV
+    doi: 10.1007/s00335-013-9481-z
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24177753
+    journal: Mamm Genome
     title: Analyzing gene expression data in mice with the Neuro Behavior Ontology
+    year: '2014'
 ---
 
 ## Description

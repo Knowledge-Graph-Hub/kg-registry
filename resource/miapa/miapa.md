@@ -39,9 +39,41 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/evoinfo/miapa
 publications:
-- id: https://doi.org/10.1089/omi.2006.10.231
+- authors:
+  - Jim Leebens-Mack
+  - Todd Vision
+  - Eric Brenner
+  - John E. Bowers
+  - Steven Cannon
+  - Mark J. Clement
+  - Clifford W. Cunningham
+  - Claude DePamphilis
+  - Rob DeSalle
+  - Jeff J. Doyle
+  - Jonathan A. Eisen
+  - Xun Gu
+  - John Harshman
+  - Robert K. Jansen
+  - Elizabeth A. Kellogg
+  - Eugene V. Koonin
+  - Brent D. Mishler
+  - Hervé Philippe
+  - J. Chris Pires
+  - Yin-Long Qiu
+  - Seung Y. Rhee
+  - Kimmen Sjölander
+  - Douglas E. Soltis
+  - Pamela S. Soltis
+  - Dennis W. Stevenson
+  - Kerr Wall
+  - Tandy Warnow
+  - Christian Zmasek
+  doi: 10.1089/omi.2006.10.231
+  id: https://doi.org/10.1089/omi.2006.10.231
+  journal: 'OMICS: A Journal of Integrative Biology'
   title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies:
     Minimum Information about a Phylogenetic Analysis (MIAPA)'
+  year: '2006'
 ---
 ## Description
 
