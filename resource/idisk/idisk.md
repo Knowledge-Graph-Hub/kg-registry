@@ -72,7 +72,18 @@ products:
   - relation_type: prov:hadPrimarySource
     source: uberon
 publications:
-- id: doi:10.1093/jamia/ocz216
+- authors:
+  - Rubina F Rizvi
+  - Jake Vasilakes
+  - Terrence J Adam
+  - Genevieve B Melton
+  - Jeffrey R Bishop
+  - Jiang Bian
+  - Cui Tao
+  - Rui Zhang
+  doi: 10.1093/jamia/ocz216
+  id: doi:10.1093/jamia/ocz216
+  journal: Journal of the American Medical Informatics Association
   preferred: true
   title: 'iDISK: the integrated DIetary Supplements Knowledge base'
   year: '2020'

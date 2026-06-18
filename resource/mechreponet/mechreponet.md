@@ -204,10 +204,19 @@ products:
   product_file_size: 1648
   product_url: https://zenodo.org/records/8117748/files/relations.dict
 publications:
-- doi: 10.1093/bioinformatics/btac205
+- authors:
+  - Michael Mayers
+  - Roger Tu
+  - Dylan Steinecke
+  - Tong Shu Li
+  - Núria Queralt-Rosinach
+  - Andrew I Su
+  doi: 10.1093/bioinformatics/btac205
   id: doi:10.1093/bioinformatics/btac205
+  journal: Bioinformatics
   title: Design and application of a knowledge network for automatic prioritization
     of drug mechanisms
+  year: '2022'
 repository: https://github.com/SuLab/MechRepoNet
 ---
 # MechRepoNet

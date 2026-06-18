@@ -64,9 +64,58 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/upheno
 publications:
-- id: https://doi.org/10.1101/2024.09.18.613276
+- authors:
+  - Nicolas Matentzoglu
+  - Susan M Bello
+  - Ray Stefancsik
+  - Sarah M. Alghamdi
+  - Anna V. Anagnostopoulos
+  - James P. Balhoff
+  - Meghan A. Balk
+  - Yvonne M. Bradford
+  - Yasemin Bridges
+  - Tiffany J. Callahan
+  - Harry Caufield
+  - Alayne Cuzick
+  - Leigh C Carmody
+  - Anita R. Caron
+  - Vinicius de Souza
+  - Stacia R. Engel
+  - Petra Fey
+  - Malcolm Fisher
+  - Sarah Gehrke
+  - Christian Grove
+  - Peter Hansen
+  - Nomi L. Harris
+  - Midori A. Harris
+  - Laura Harris
+  - Arwa Ibrahim
+  - Julius O.B. Jacobsen
+  - Sebastian Köhler
+  - Julie A. McMurry
+  - Violeta Munoz-Fuentes
+  - Monica C. Munoz-Torres
+  - Helen Parkinson
+  - Zoë M Pendlington
+  - Clare Pilgrim
+  - Sofia MC Robb
+  - Peter N. Robinson
+  - James Seager
+  - Erik Segerdell
+  - Damian Smedley
+  - Elliot Sollis
+  - Sabrina Toro
+  - Nicole Vasilevsky
+  - Valerie Wood
+  - Melissa A. Haendel
+  - Christopher J. Mungall
+  - James A. McLaughlin
+  - David Osumi-Sutherland
+  doi: 10.1101/2024.09.18.613276
+  id: https://doi.org/10.1101/2024.09.18.613276
   title: 'The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative
     phenomics'
+  year: '2024'
 - id: https://zenodo.org/record/2382757
   title: Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims
     to reconcile logical definitions across species

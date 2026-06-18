@@ -34,8 +34,21 @@ products:
       - source: toxin
         relation_type: prov:hadPrimarySource
 publications:
-  - id: https://doi.org/10.1093/database/baae121
-    journal: Database (Oxford)
+  - authors:
+      - Sara Sepehri
+      - Anja Heymans
+      - Dinja De Win
+      - Jan Maushagen
+      - Audrey Sanctorum
+      - Christophe Debruyne
+      - Robim M Rodrigues
+      - Joery De Kock
+      - Vera Rogiers
+      - Olga De Troyer
+      - Tamara Vanhaecke
+    doi: 10.1093/database/baae121
+    id: https://doi.org/10.1093/database/baae121
+    journal: Database
     preferred: true
     title: 'The TOXIN knowledge graph: supporting animal-free risk assessment of cosmetics'
     year: '2025'

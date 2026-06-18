@@ -340,6 +340,7 @@ publications:
   - Nikolaus Schultz
   doi: 10.1200/PO.17.00011
   id: doi:10.1200/PO.17.00011
+  journal: JCO Precision Oncology
   title: 'OncoKB: A Precision Oncology Knowledge Base'
   year: '2017'
 - authors:
@@ -362,9 +363,10 @@ publications:
   - Debyani Chakravarty
   doi: 10.1158/2159-8290.CD-23-0467
   id: doi:10.1158/2159-8290.CD-23-0467
+  journal: Cancer Discovery
   title: Quantifying the Expanding Landscape of Clinical Actionability for Patients
     with Cancer
-  year: '2023'
+  year: '2024'
 repository: https://github.com/oncokb
 taxon:
 - NCBITaxon:9606
