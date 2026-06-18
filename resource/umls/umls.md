@@ -1741,9 +1741,14 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: PMID:14681409
+- authors:
+  - Bodenreider O
+  doi: 10.1093/nar/gkh061
+  id: PMID:14681409
+  journal: Nucleic Acids Res
   preferred: true
   title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
+  year: '2004'
 synonyms:
 - UMLS
 taxon:

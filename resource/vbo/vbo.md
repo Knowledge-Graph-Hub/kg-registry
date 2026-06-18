@@ -90,8 +90,28 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
 publications:
-- id: https://doi.org/10.1111/jvim.70133
+- authors:
+  - Kathleen R. Mullen
+  - Imke Tammen
+  - Nicolas A. Matentzoglu
+  - Marius Mather
+  - James P. Balhoff
+  - Elizabeth Esdaile
+  - Gregoire Leroy
+  - Carissa A. Park
+  - Halie M. Rando
+  - Nadia T. Saklou
+  - Tracy L. Webb
+  - Nicole A. Vasilevsky
+  - Christopher J. Mungall
+  - Melissa A. Haendel
+  - Frank W. Nicholas
+  - Sabrina Toro
+  doi: 10.1111/jvim.70133
+  id: https://doi.org/10.1111/jvim.70133
+  journal: Journal of Veterinary Internal Medicine
   title: 'The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization'
+  year: '2025'
 ---
 ## Description
 

@@ -38,8 +38,14 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/txpo-ontology/TXPO
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/32883995
+  - authors:
+      - Yamagata Y
+      - Yamada H
+    doi: 10.1038/s41598-020-71370-7
+    id: https://www.ncbi.nlm.nih.gov/pubmed/32883995
+    journal: Sci Rep
     title: Ontological approach to the knowledge systematization of a toxic process and toxic course representation framework for early drug risk management
+    year: '2020'
 ---
 
 ## Description

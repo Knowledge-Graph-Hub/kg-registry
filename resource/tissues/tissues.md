@@ -1701,9 +1701,18 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: PMID:29617745
+- authors:
+  - Palasca O
+  - Santos A
+  - Stolte C
+  - Gorodkin J
+  - Jensen LJ
+  doi: 10.1093/database/bay003
+  id: PMID:29617745
+  journal: Database (Oxford)
   preferred: true
   title: 'TISSUES 2.0: an integrative web resource on mammalian tissue expression.'
+  year: '2018'
 - authors:
   - Alberto Santos
   - Kalliopi Tsafou

@@ -758,8 +758,15 @@ products:
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
+- authors:
+  - Gkoutos GV
+  - Schofield PN
+  - Hoehndorf R
+  doi: 10.1093/database/bas033
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
+  journal: Database (Oxford)
   title: 'The Units Ontology: a tool for integrating units of measurement in science'
+  year: '2012'
 repository: https://github.com/bio-ontology-research-group/unit-ontology
 ---
 ## Description

@@ -51,8 +51,21 @@ repository: https://github.com/phenoscape/teleost-taxonomy-ontology
 taxon:
 - NCBITaxon:32443
 publications:
-- id: https://doi.org/10.1038/npre.2010.4629.1
+- authors:
+  - Peter Midford
+  - James Balhoff
+  - Wasila Dahdul
+  - Cartik Kothari
+  - Hilmar Lapp
+  - John Lundberg
+  - Paula Mabee
+  - Todd Vision
+  - Monte Westerfield
+  doi: 10.1038/npre.2010.4629.1
+  id: https://doi.org/10.1038/npre.2010.4629.1
+  journal: Nature Precedings
   title: The Teleost Taxonomy Ontology
+  year: '2010'
 ---
 ## Description
 
