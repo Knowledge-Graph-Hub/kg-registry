@@ -1340,7 +1340,9 @@ publications:
       - Su Y
       - Disfany FM
       - et al.
+    doi: 10.1093/nar/gkt1067
     id: https://doi.org/10.1093/nar/gkt1067
+    journal: Nucleic Acids Research
     title: 'SMPDB 2.0: Big Improvements to the Small Molecule Pathway Database'
     year: '2014'
 synonyms:

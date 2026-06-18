@@ -816,12 +816,13 @@ publications:
   - Georgakopoulos
   - Plagianakos
   - Hatzigeorgiou
+  doi: 10.1093/nar/gkad1071
   id: https://doi.org/10.1093/nar/gkad1071
   journal: Nucleic Acids Research
   preferred: true
   title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to
     cell-types and virally encoded miRNAs
-  year: '2023'
+  year: '2024'
 ---
 # TarBase
 

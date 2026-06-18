@@ -979,8 +979,9 @@ publications:
   - Larsen
   - Samuelsson
   - Zwieb
+  doi: 10.4161/rna.6.5.9753
   id: https://pubmed.ncbi.nlm.nih.gov/19838050/
-  journal: RNA Biology
+  journal: RNA Biol
   title: Kinship in the SRP RNA family
   year: '2009'
 ---

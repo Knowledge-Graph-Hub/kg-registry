@@ -365,7 +365,17 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- id: https://doi.org/10.1073/pnas.0610772104
+- authors:
+  - Natalie C. Duarte
+  - Scott A. Becker
+  - Neema Jamshidi
+  - Ines Thiele
+  - Monica L. Mo
+  - Thuy D. Vo
+  - Rohith Srivas
+  - Bernhard Ø. Palsson
+  doi: 10.1073/pnas.0610772104
+  id: https://doi.org/10.1073/pnas.0610772104
   journal: Proceedings of the National Academy of Sciences
   title: Global reconstruction of the human metabolic network based on genomic and
     bibliomic data
