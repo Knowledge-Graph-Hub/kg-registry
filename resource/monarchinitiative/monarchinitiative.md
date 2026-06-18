@@ -48,7 +48,35 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://monarchinitiative.org/
 publications:
-  - id: https://doi.org/10.1093/nar/gkw1128
+  - authors:
+      - Christopher J. Mungall
+      - Julie A. McMurry
+      - Sebastian Köhler
+      - James P. Balhoff
+      - Charles Borromeo
+      - Matthew Brush
+      - Seth Carbon
+      - Tom Conlin
+      - Nathan Dunn
+      - Mark Engelstad
+      - Erin Foster
+      - J.P. Gourdine
+      - Julius O.B. Jacobsen
+      - Dan Keith
+      - Bryan Laraway
+      - Suzanna E. Lewis
+      - Jeremy NguyenXuan
+      - Kent Shefchek
+      - Nicole Vasilevsky
+      - Zhou Yuan
+      - Nicole Washington
+      - Harry Hochheiser
+      - Tudor Groza
+      - Damian Smedley
+      - Peter N. Robinson
+      - Melissa A. Haendel
+    doi: 10.1093/nar/gkw1128
+    id: https://doi.org/10.1093/nar/gkw1128
     journal: Nucleic Acids Research
     title: 'The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species'
     year: '2017'
