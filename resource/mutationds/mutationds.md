@@ -291,7 +291,7 @@ publications:
   category: Publication
   doi: 10.1186/s13073-018-0531-8
   id: PMID:29592813
-  journal: Genome Medicine
+  journal: Genome Med
   preferred: true
   title: Cancer Genome Interpreter annotates the biological and clinical relevance
     of tumor alterations

@@ -475,7 +475,7 @@ publications:
       - Huang L
     doi: 10.1093/nar/gkac840
     id: https://www.ncbi.nlm.nih.gov/pubmed/36177882
-    journal: Nucleic Acids Research
+    journal: Nucleic Acids Res
     preferred: true
     title: 'Ribocentre: a database of ribozymes'
     year: '2023'
