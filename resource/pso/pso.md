@@ -48,8 +48,31 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/Planteome/plant-stress-ontology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+  - authors:
+      - Cooper L
+      - Meier A
+      - Laporte MA
+      - Elser JL
+      - Mungall C
+      - Sinn BT
+      - Cavaliere D
+      - Carbon S
+      - Dunn NA
+      - Smith B
+      - Qu B
+      - Preece J
+      - Zhang E
+      - Todorovic S
+      - Gkoutos G
+      - Doonan JH
+      - Stevenson DW
+      - Arnaud E
+      - Jaiswal P
+    doi: 10.1093/nar/gkx1152
+    id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+    journal: Nucleic Acids Res
     title: 'The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.'
+    year: '2018'
 ---
 
 ## Description

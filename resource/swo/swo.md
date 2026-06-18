@@ -52,9 +52,20 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/allysonlister/swo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
+- authors:
+  - Malone J
+  - Brown A
+  - Lister AL
+  - Ison J
+  - Hull D
+  - Parkinson H
+  - Stevens R
+  doi: 10.1186/2041-1480-5-25
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
+  journal: J Biomed Semantics
   title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical
     data analysis, curation and digital preservation'
+  year: '2014'
 ---
 ## Description
 

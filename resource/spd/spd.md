@@ -40,8 +40,14 @@ repository: https://github.com/obophenotype/spider-ontology
 taxon:
   - NCBITaxon:6893
 publications:
-  - id: https://doi.org/10.3390/d11100202
+  - authors:
+      - Martín J. Ramírez
+      - Peter Michalik
+    doi: 10.3390/d11100202
+    id: https://doi.org/10.3390/d11100202
+    journal: Diversity
     title: The Spider Anatomy Ontology (SPD) A Versatile Tool to Link Anatomy with Cross-Disciplinary Data
+    year: '2019'
 ---
 
 ## Description

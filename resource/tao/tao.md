@@ -37,8 +37,21 @@ products:
 taxon:
   - NCBITaxon:32443
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
+  - authors:
+      - Dahdul WM
+      - Lundberg JG
+      - Midford PE
+      - Balhoff JP
+      - Lapp H
+      - Vision TJ
+      - Haendel MA
+      - Westerfield M
+      - Mabee PM
+    doi: 10.1093/sysbio/syq013
+    id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
+    journal: Syst Biol
     title: 'The teleost anatomy ontology: anatomical representation for the genomics age'
+    year: '2010'
 ---
 
 ## Description
