@@ -329,8 +329,37 @@ products:
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25852852
+- authors:
+  - Sarntivijai S
+  - Lin Y
+  - Xiang Z
+  - Meehan TF
+  - Diehl AD
+  - Vempati UD
+  - Schürer SC
+  - Pang C
+  - Malone J
+  - Parkinson H
+  - Liu Y
+  - Takatsuki T
+  - Saijo K
+  - Masuya H
+  - Nakamura Y
+  - Brush MH
+  - Haendel MA
+  - Zheng J
+  - Stoeckert CJ
+  - Peters B
+  - Mungall CJ
+  - Carey TE
+  - States DJ
+  - Athey BD
+  - He Y
+  doi: 10.1186/2041-1480-5-37
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25852852
+  journal: J Biomed Semantics
   title: 'CLO: The Cell Line Ontology'
+  year: '2014'
 repository: https://github.com/CLO-Ontology/CLO
 ---
 ## Description

@@ -34,8 +34,16 @@ products:
       - source: dinto
         relation_type: prov:hadPrimarySource
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
+  - authors:
+      - Herrero-Zazo M
+      - Segura-Bedmar I
+      - Hastings J
+      - Martínez P
+    doi: 10.1021/acs.jcim.5b00119
+    id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
+    journal: J Chem Inf Model
     title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug Drug Interactions and Their Mechanisms.'
+    year: '2015'
 ---
 
 ## Description

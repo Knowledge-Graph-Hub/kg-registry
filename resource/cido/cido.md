@@ -38,8 +38,55 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/cido-ontology/cido
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+  - authors:
+      - He Y
+      - Yu H
+      - Huffman A
+      - Lin AY
+      - Natale DA
+      - Beverley J
+      - Zheng L
+      - Perl Y
+      - Wang Z
+      - Liu Y
+      - Ong E
+      - Wang Y
+      - Huang P
+      - Tran L
+      - Du J
+      - Shah Z
+      - Shah E
+      - Desai R
+      - Huang HH
+      - Tian Y
+      - Merrell E
+      - Duncan WD
+      - Arabandi S
+      - Schriml LM
+      - Zheng J
+      - Masci AM
+      - Wang L
+      - Liu H
+      - Smaili FZ
+      - Hoehndorf R
+      - Pendlington ZM
+      - Roncaglia P
+      - Ye X
+      - Xie J
+      - Tang YW
+      - Yang X
+      - Peng S
+      - Zhang L
+      - Chen L
+      - Hur J
+      - Omenn GS
+      - Athey B
+      - Smith B
+    doi: 10.1186/s13326-022-00279-z
+    id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+    journal: J Biomed Semantics
     title: 'A comprehensive update on CIDO: the community-based coronavirus infectious disease ontology'
+    year: '2022'
 ---
 
 ## Description

@@ -1704,8 +1704,27 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+- authors:
+  - Diehl AD
+  - Meehan TF
+  - Bradford YM
+  - Brush MH
+  - Dahdul WM
+  - Dougall DS
+  - He Y
+  - Osumi-Sutherland D
+  - Ruttenberg A
+  - Sarntivijai S
+  - Van Slyke CE
+  - Vasilevsky NA
+  - Haendel MA
+  - Blake JA
+  - Mungall CJ
+  doi: 10.1186/s13326-016-0088-7
+  id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+  journal: J Biomed Semantics
   title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.'
+  year: '2016'
 repository: https://github.com/obophenotype/cell-ontology
 taxon:
 - NCBITaxon:33208
