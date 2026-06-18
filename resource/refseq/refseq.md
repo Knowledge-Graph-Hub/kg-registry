@@ -1997,14 +1997,78 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- doi: 10.1093/nar/gkv1189
+- authors:
+  - "Nuala A. O'Leary"
+  - Mathew W. Wright
+  - J. Rodney Brister
+  - Stacy Ciufo
+  - Diana Haddad
+  - Rich McVeigh
+  - Bhanu Rajput
+  - Barbara Robbertse
+  - Brian Smith-White
+  - Danso Ako-Adjei
+  - Alexander Astashyn
+  - Azat Badretdin
+  - Yiming Bao
+  - Olga Blinkova
+  - Vyacheslav Brover
+  - Vyacheslav Chetvernin
+  - Jinna Choi
+  - Eric Cox
+  - Olga Ermolaeva
+  - Catherine M. Farrell
+  - Tamara Goldfarb
+  - Tripti Gupta
+  - Daniel Haft
+  - Eneida Hatcher
+  - Wratko Hlavina
+  - Vinita S. Joardar
+  - Vamsi K. Kodali
+  - Wenjun Li
+  - Donna Maglott
+  - Patrick Masterson
+  - Kelly M. McGarvey
+  - Michael R. Murphy
+  - "Kathleen O'Neill"
+  - Shashikant Pujar
+  - Sanjida H. Rangwala
+  - Daniel Rausch
+  - Lillian D. Riddick
+  - Conrad Schoch
+  - Andrei Shkeda
+  - Susan S. Storz
+  - Hanzhen Sun
+  - Francoise Thibaud-Nissen
+  - Igor Tolstoy
+  - Raymond E. Tully
+  - Anjana R. Vatsan
+  - Craig Wallin
+  - David Webb
+  - Wendy Wu
+  - Melissa J. Landrum
+  - Avi Kimchi
+  - Tatiana Tatusova
+  - Michael DiCuccio
+  - Paul Kitts
+  - Terence D. Murphy
+  - Kim D. Pruitt
+  doi: 10.1093/nar/gkv1189
   id: doi:10.1093/nar/gkv1189
+  journal: Nucleic Acids Research
   title: 'Reference sequence (RefSeq) database at NCBI: current status, taxonomic
     expansion, and functional annotation'
-- doi: 10.1093/nar/gkl842
+  year: '2016'
+- authors:
+  - K. D. Pruitt
+  - T. Tatusova
+  - D. R. Maglott
+  doi: 10.1093/nar/gkl842
   id: doi:10.1093/nar/gkl842
+  journal: Nucleic Acids Research
   title: 'NCBI reference sequences (RefSeq): a curated non-redundant sequence database
     of genomes, transcripts and proteins'
+  year: '2007'
 repository: https://ftp.ncbi.nlm.nih.gov/refseq/
 ---
 # RefSeq: NCBI Reference Sequence Database

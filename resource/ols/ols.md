@@ -84,8 +84,18 @@ products:
       - source: ols
         relation_type: prov:hadPrimarySource
 publications:
-  - id: PMID:39913645
+  - authors:
+      - James McLaughlin
+      - Josh Lagrimas
+      - Haider Iqbal
+      - Helen Parkinson
+      - Henriette Harmse
+    doi: 10.1093/bioinformatics/btaf279
+    id: PMID:40323307
+    journal: Bioinformatics
     preferred: true
+    title: 'OLS4: a new Ontology Lookup Service for a growing interdisciplinary knowledge ecosystem'
+    year: '2025'
 repository: https://github.com/EBISPOT/ols4
 synonyms:
   - OLS

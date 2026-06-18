@@ -2665,9 +2665,18 @@ products:
   - relation_type: prov:wasInformedBy
     source: wikispecies
 publications:
-- id: doi:10.1093/nar/gkae909
+- authors:
+  - Minoru Kanehisa
+  - Miho Furumichi
+  - Yoko Sato
+  - Yuriko Matsuura
+  - Mari Ishiguro-Watanabe
+  doi: 10.1093/nar/gkae909
+  id: doi:10.1093/nar/gkae909
+  journal: Nucleic Acids Research
   preferred: true
   title: KEGG biological systems database as a model of the real world
+  year: '2025'
 taxon:
 - NCBITaxon:10116
 - NCBITaxon:9606

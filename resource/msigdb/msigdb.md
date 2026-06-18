@@ -1129,10 +1129,17 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- category: Publication
+- authors:
+  - Castanza AS
+  - Recla JM
+  - Eby D
+  - Thorvaldsdóttir H
+  - Bult CJ
+  - Mesirov JP
+  category: Publication
   doi: 10.1038/s41592-023-02014-7
   id: PMID:37704782
-  journal: Nature Methods
+  journal: Nat Methods
   preferred: true
   title: Extending support for mouse data in the Molecular Signatures Database (MSigDB).
   year: '2023'

@@ -96,13 +96,34 @@ products:
       - relation_type: prov:wasDerivedFrom
         source: uniprot
 publications:
-  - doi: 10.1093/database/bat026
+  - authors:
+      - I. Sadowski
+      - B.-J. Breitkreutz
+      - C. Stark
+      - T.-C. Su
+      - M. Dahabieh
+      - S. Raithatha
+      - W. Bernhard
+      - R. Oughtred
+      - K. Dolinski
+      - K. Barreto
+      - M. Tyers
+    doi: 10.1093/database/bat026
     id: doi:10.1093/database/bat026
     journal: Database
     preferred: true
     title: 'The PhosphoGRID Saccharomyces cerevisiae protein phosphorylation site database: version 2.0 update'
     year: '2013'
-  - doi: 10.1093/database/bap026
+  - authors:
+      - C. Stark
+      - T.-C. Su
+      - A. Breitkreutz
+      - P. Lourenco
+      - M. Dahabieh
+      - B.-J. Breitkreutz
+      - M. Tyers
+      - I. Sadowski
+    doi: 10.1093/database/bap026
     id: doi:10.1093/database/bap026
     journal: Database
     title: PhosphoGRID, a database of experimentally verified in vivo protein phosphorylation sites from the budding yeast Saccharomyces cerevisiae

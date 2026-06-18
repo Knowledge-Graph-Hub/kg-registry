@@ -109,9 +109,16 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-17: Timeout connecting
     to URL'
 publications:
-- id: https://doi.org/10.5281/zenodo.4705219
+- authors:
+  - Molloy, Laura
+  - McQuilton, Peter
+  - Le Franc, Yann
+  doi: 10.5281/zenodo.4705219
+  id: https://doi.org/10.5281/zenodo.4705219
+  journal: Zenodo
   title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for
     terms4FAIRskills: Technical report'
+  year: '2021'
 repository: https://github.com/terms4fairskills/FAIRterminology
 ---
 ## Description

@@ -1,6 +1,13 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: mirbase@manchester.ac.uk
+  id: university-of-manchester
+  label: miRBase (University of Manchester)
 creation_date: '2004-01-01T00:00:00Z'
 description: miRBase is the primary online repository for microRNA sequences and annotations,
   serving as the central registry for microRNA nomenclature and providing a comprehensive
@@ -12,8 +19,11 @@ domains:
 homepage_url: https://www.mirbase.org/
 id: mirbase
 infores_id: mirbase
-last_modified_date: '2025-10-21T00:00:00Z'
+last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 name: miRBase
 products:
 - category: GraphicalInterface
@@ -1540,23 +1550,26 @@ publications:
   - Kozomara
   - Birgaoanu
   - Griffiths-Jones
+  doi: doi:10.1093/nar/gky1141
   id: https://pubmed.ncbi.nlm.nih.gov/30423142/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   preferred: true
   title: 'miRBase: from microRNA sequences to function'
   year: '2019'
 - authors:
   - Kozomara
   - Griffiths-Jones
+  doi: doi:10.1093/nar/gkt1181
   id: https://pubmed.ncbi.nlm.nih.gov/24275495/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: annotating high confidence microRNAs using deep sequencing data'
   year: '2014'
 - authors:
   - Kozomara
   - Griffiths-Jones
+  doi: doi:10.1093/nar/gkq1027
   id: https://pubmed.ncbi.nlm.nih.gov/21037258/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: integrating microRNA annotation and deep-sequencing data'
   year: '2011'
 - authors:
@@ -1564,8 +1577,9 @@ publications:
   - Saini
   - van Dongen
   - Enright
+  doi: doi:10.1093/nar/gkm952
   id: https://pubmed.ncbi.nlm.nih.gov/17991681/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: tools for microRNA genomics'
   year: '2008'
 - authors:
@@ -1574,14 +1588,16 @@ publications:
   - van Dongen
   - Bateman
   - Enright
+  doi: doi:10.1093/nar/gkj112
   id: https://pubmed.ncbi.nlm.nih.gov/16381832/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: microRNA sequences, targets and gene nomenclature'
   year: '2006'
 - authors:
   - Griffiths-Jones
+  doi: doi:10.1093/nar/gkh023
   id: https://pubmed.ncbi.nlm.nih.gov/14681370/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: The microRNA Registry
   year: '2004'
 ---

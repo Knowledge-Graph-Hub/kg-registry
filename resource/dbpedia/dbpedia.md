@@ -74,8 +74,9 @@ publications:
   - Jens Lehmann
   - Richard Cyganiak
   - Zachary Ives
+  doi: 10.1007/978-3-540-76298-0_52
   id: https://doi.org/10.1007/978-3-540-76298-0_52
-  journal: The Semantic Web
+  journal: Lecture Notes in Computer Science
   preferred: true
   title: 'DBpedia: A Nucleus for a Web of Open Data'
   year: '2007'
@@ -87,6 +88,7 @@ publications:
   - Christian Becker
   - Richard Cyganiak
   - Sebastian Hellmann
+  doi: 10.1016/j.websem.2009.07.002
   id: https://doi.org/10.1016/j.websem.2009.07.002
   journal: Journal of Web Semantics
   title: DBpedia - A crystallization point for the Web of Data

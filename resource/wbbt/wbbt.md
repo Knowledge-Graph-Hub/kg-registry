@@ -50,8 +50,14 @@ repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 taxon:
   - NCBITaxon:6237
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
+  - authors:
+      - Lee RY
+      - Sternberg PW
+    doi: 10.1002/cfg.248
+    id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
+    journal: Comp Funct Genomics
     title: Building a cell and anatomy ontology of Caenorhabditis elegans
+    year: '2003'
 ---
 
 ## Description

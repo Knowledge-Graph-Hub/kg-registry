@@ -716,9 +716,17 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1186/s12911-021-01534-6
+- authors:
+  - James E. Harrison
+  - Stefanie Weber
+  - Robert Jakob
+  - Christopher G. Chute
+  doi: 10.1186/s12911-021-01534-6
+  id: https://doi.org/10.1186/s12911-021-01534-6
+  journal: BMC Medical Informatics and Decision Making
   title: ICD-11 - an international classification of diseases for the twenty-first
     century
+  year: '2021'
 repository: https://github.com/ICD-Codes
 synonyms:
 - ICD-10

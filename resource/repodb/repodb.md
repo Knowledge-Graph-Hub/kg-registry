@@ -149,12 +149,23 @@ products:
     source: tissues
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 publications:
-- doi: 10.1038/sdata.2017.29
+- authors:
+  - Adam S. Brown
+  - Chirag J. Patel
+  doi: 10.1038/sdata.2017.29
   id: doi:10.1038/sdata.2017.29
+  journal: Scientific Data
   preferred: true
   title: A standard database for drug repositioning
-- id: pmid:28291243
+  year: '2017'
+- authors:
+  - Brown AS
+  - Patel CJ
+  doi: 10.1038/sdata.2017.29
+  id: pmid:28291243
+  journal: Sci Data
   title: A standard database for drug repositioning
+  year: '2017'
 taxon:
 - NCBITaxon:9606
 ---

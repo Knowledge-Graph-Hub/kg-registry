@@ -19,7 +19,136 @@ last_modified_date: '2026-06-05T00:00:00Z'
 layout: resource_detail
 name: MassIVE
 publications:
-  - id: https://doi.org/10.1038/nbt.3597
+  - authors:
+      - Mingxun Wang
+      - Jeremy J Carver
+      - Vanessa V Phelan
+      - Laura M Sanchez
+      - Neha Garg
+      - Yao Peng
+      - Don Duy Nguyen
+      - Jeramie Watrous
+      - Clifford A Kapono
+      - Tal Luzzatto-Knaan
+      - Carla Porto
+      - Amina Bouslimani
+      - Alexey V Melnik
+      - Michael J Meehan
+      - Wei-Ting Liu
+      - Max Crüsemann
+      - Paul D Boudreau
+      - Eduardo Esquenazi
+      - Mario Sandoval-Calderón
+      - Roland D Kersten
+      - Laura A Pace
+      - Robert A Quinn
+      - Katherine R Duncan
+      - Cheng-Chih Hsu
+      - Dimitrios J Floros
+      - Ronnie G Gavilan
+      - Karin Kleigrewe
+      - Trent Northen
+      - Rachel J Dutton
+      - Delphine Parrot
+      - Erin E Carlson
+      - Bertrand Aigle
+      - Charlotte F Michelsen
+      - Lars Jelsbak
+      - Christian Sohlenkamp
+      - Pavel Pevzner
+      - Anna Edlund
+      - Jeffrey McLean
+      - Jörn Piel
+      - Brian T Murphy
+      - Lena Gerwick
+      - Chih-Chuang Liaw
+      - Yu-Liang Yang
+      - Hans-Ulrich Humpf
+      - Maria Maansson
+      - Robert A Keyzers
+      - Amy C Sims
+      - Andrew R Johnson
+      - Ashley M Sidebottom
+      - Brian E Sedio
+      - Andreas Klitgaard
+      - Charles B Larson
+      - Cristopher A Boya P
+      - Daniel Torres-Mendoza
+      - David J Gonzalez
+      - Denise B Silva
+      - Lucas M Marques
+      - Daniel P Demarque
+      - Egle Pociute
+      - "Ellis C O'Neill"
+      - Enora Briand
+      - Eric J N Helfrich
+      - Eve A Granatosky
+      - Evgenia Glukhov
+      - Florian Ryffel
+      - Hailey Houson
+      - Hosein Mohimani
+      - Jenan J Kharbush
+      - Yi Zeng
+      - Julia A Vorholt
+      - Kenji L Kurita
+      - Pep Charusanti
+      - Kerry L McPhail
+      - Kristian Fog Nielsen
+      - Lisa Vuong
+      - Maryam Elfeki
+      - Matthew F Traxler
+      - Niclas Engene
+      - Nobuhiro Koyama
+      - Oliver B Vining
+      - Ralph Baric
+      - Ricardo R Silva
+      - Samantha J Mascuch
+      - Sophie Tomasi
+      - Stefan Jenkins
+      - Venkat Macherla
+      - Thomas Hoffman
+      - Vinayak Agarwal
+      - Philip G Williams
+      - Jingqui Dai
+      - Ram Neupane
+      - Joshua Gurr
+      - Andrés M C Rodríguez
+      - Anne Lamsa
+      - Chen Zhang
+      - Kathleen Dorrestein
+      - Brendan M Duggan
+      - Jehad Almaliti
+      - Pierre-Marie Allard
+      - Prasad Phapale
+      - Louis-Felix Nothias
+      - Theodore Alexandrov
+      - Marc Litaudon
+      - Jean-Luc Wolfender
+      - Jennifer E Kyle
+      - Thomas O Metz
+      - Tyler Peryea
+      - Dac-Trung Nguyen
+      - Danielle VanLeer
+      - Paul Shinn
+      - Ajit Jadhav
+      - Rolf Müller
+      - Katrina M Waters
+      - Wenyuan Shi
+      - Xueting Liu
+      - Lixin Zhang
+      - Rob Knight
+      - Paul R Jensen
+      - Bernhard Ø Palsson
+      - Kit Pogliano
+      - Roger G Linington
+      - Marcelino Gutiérrez
+      - Norberto P Lopes
+      - William H Gerwick
+      - Bradley S Moore
+      - Pieter C Dorrestein
+      - Nuno Bandeira
+    doi: 10.1038/nbt.3597
+    id: https://doi.org/10.1038/nbt.3597
     journal: Nature Biotechnology
     title: Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking
     year: '2016'

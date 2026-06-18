@@ -183,8 +183,9 @@ publications:
       - Raoul Wolf
       - Knut Erik Tollefsen
     category: Publication
+    doi: 10.48550/arXiv.1908.10128
     id: https://doi.org/10.48550/arXiv.1908.10128
-    journal: arXiv:1908.10128
+    journal: arXiv
     preferred: true
     title: 'TERA: the Toxicological Effect and Risk Assessment Knowledge Graph'
     year: '2019'
@@ -195,8 +196,9 @@ publications:
       - Raoul Wolf
       - Knut Erik Tollefsen
     category: Publication
+    doi: 10.3233/sw-222804
     id: https://doi.org/10.3233/sw-222804
-    journal: Semantic Web Journal
+    journal: Semantic Web
     preferred: false
     title: Prediction of Adverse Biological Effects of Chemicals Using Knowledge Graph Embeddings
     year: '2022'

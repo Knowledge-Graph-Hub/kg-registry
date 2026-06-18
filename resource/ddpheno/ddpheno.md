@@ -50,8 +50,17 @@ repository: https://github.com/obophenotype/dicty-phenotype-ontology
 taxon:
   - NCBITaxon:44689
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/31840793
+  - authors:
+      - Fey P
+      - Dodson RJ
+      - Basu S
+      - Hartline EC
+      - Chisholm RL
+    doi: 10.1387/ijdb.190226pf
+    id: https://www.ncbi.nlm.nih.gov/pubmed/31840793
+    journal: Int J Dev Biol
     title: dictyBase and the Dicty Stock Center (version 2.0) - a progress report
+    year: '2019'
 ---
 
 ## Description

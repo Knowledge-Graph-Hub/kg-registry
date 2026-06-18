@@ -26,7 +26,19 @@ license:
   label: EMBL-EBI Terms of Use
 name: UniChem
 publications:
-  - id: https://doi.org/10.1186/1758-2946-5-3
+  - authors:
+      - Jon Chambers
+      - Mark Davies
+      - Anna Gaulton
+      - Anne Hersey
+      - Sameer Velankar
+      - Robert Petryszak
+      - Janna Hastings
+      - Louisa Bellis
+      - Shaun McGlinchey
+      - John P Overington
+    doi: 10.1186/1758-2946-5-3
+    id: https://doi.org/10.1186/1758-2946-5-3
     journal: Journal of Cheminformatics
     title: 'UniChem: a unified chemical structure cross-referencing and identifier tracking system'
     year: '2013'

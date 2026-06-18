@@ -51,8 +51,22 @@ repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
 taxon:
 - NCBITaxon:4890
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
+- authors:
+  - Costanzo MC
+  - Skrzypek MS
+  - Nash R
+  - Wong E
+  - Binkley G
+  - Engel SR
+  - Hitz B
+  - Hong EL
+  - Cherry JM
+  - the Saccharomyces Genome Database Project
+  doi: 10.1093/database/bap001
+  id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
+  journal: Database (Oxford)
   title: New mutant phenotype data curation system in the Saccharomyces Genome Database
+  year: '2009'
 ---
 ## Description
 

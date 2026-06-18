@@ -79,10 +79,30 @@ products:
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/31831744
+- authors:
+  - Rocca-Serra P
+  - Sansone SA
+  doi: 10.1038/s41597-019-0286-0
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31831744
+  journal: Sci Data
   title: Experiment design driven FAIRification of omics data matrices, an exemplar
-- id: https://www.ncbi.nlm.nih.gov/pubmed/32109232
+  year: '2019'
+- authors:
+  - Ćwiek-Kupczyńska H
+  - Filipiak K
+  - Markiewicz A
+  - Rocca-Serra P
+  - Gonzalez-Beltran AN
+  - Sansone SA
+  - Millet EJ
+  - van Eeuwijk F
+  - Ławrynowicz A
+  - Krajewski P
+  doi: 10.1038/s41597-020-0409-7
+  id: https://www.ncbi.nlm.nih.gov/pubmed/32109232
+  journal: Sci Data
   title: Semantic concept schema of the linear mixed model of experimental observations
+  year: '2020'
 repository: https://github.com/ISA-tools/stato
 ---
 ## Description

@@ -74,9 +74,19 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-17: FTP error: timed
     out'
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21991315
+- authors:
+  - Hastings J
+  - Chepelev L
+  - Willighagen E
+  - Adams N
+  - Steinbeck C
+  - Dumontier M
+  doi: 10.1371/journal.pone.0025513
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21991315
+  journal: PLoS One
   title: 'The chemical information ontology: provenance and disambiguation for chemical
     data on the biological semantic web'
+  year: '2011'
 repository: https://github.com/semanticchemistry/semanticchemistry
 ---
 ## Description

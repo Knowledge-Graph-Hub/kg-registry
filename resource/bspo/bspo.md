@@ -48,8 +48,19 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/biological-spatial-ontology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
+  - authors:
+    - Dahdul WM
+    - Cui H
+    - Mabee PM
+    - Mungall CJ
+    - Osumi-Sutherland D
+    - Walls RL
+    - Haendel MA
+    doi: 10.1186/2041-1480-5-34
+    id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
+    journal: J Biomed Semantics
     title: 'Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.'
+    year: '2014'
 ---
 
 ## Description

@@ -56,8 +56,23 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
     when accessing file'
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
+- authors:
+  - Walls RL
+  - Athreya B
+  - Cooper L
+  - Elser J
+  - Gandolfo MA
+  - Jaiswal P
+  - Mungall CJ
+  - Preece J
+  - Rensing S
+  - Smith B
+  - Stevenson DW
+  doi: 10.3732/ajb.1200222
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
+  journal: Am J Bot
   title: Ontologies as integrative tools for plant science.
+  year: '2012'
 repository: https://github.com/Planteome/plant-environment-ontology
 ---
 ## Description

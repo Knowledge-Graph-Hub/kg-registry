@@ -40,8 +40,17 @@ repository: https://github.com/mcwdsi/OMRSE
 taxon:
   - NCBITaxon:9606
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
+  - authors:
+      - Hicks A
+      - Hanna J
+      - Welch D
+      - Brochhausen M
+      - Hogan WR
+    doi: 10.1186/s13326-016-0087-8
+    id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
+    journal: J Biomed Semantics
     title: 'The ontology of medically related social entities: recent developments'
+    year: '2016'
 ---
 
 ## Description

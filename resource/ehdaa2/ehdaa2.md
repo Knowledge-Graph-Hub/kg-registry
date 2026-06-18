@@ -47,8 +47,13 @@ repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 taxon:
   - NCBITaxon:9606
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
+  - authors:
+      - Bard J
+    doi: 10.1111/j.1469-7580.2012.01566.x
+    id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
+    journal: J Anat
     title: A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).
+    year: '2012'
 ---
 
 ## Description

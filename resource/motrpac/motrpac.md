@@ -660,6 +660,7 @@ products:
     source: wikipathways
 publications:
 - authors:
+  - James A. Sanford
   - MoTrPAC Study Group
   doi: 10.1016/j.cell.2020.06.004
   id: https://doi.org/10.1016/j.cell.2020.06.004
@@ -668,6 +669,7 @@ publications:
   title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise'
   year: '2020'
 - authors:
+  - David Amar
   - MoTrPAC Study Group
   doi: 10.1038/s41586-023-06877-w
   id: https://doi.org/10.1038/s41586-023-06877-w

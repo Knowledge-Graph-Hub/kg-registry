@@ -50,8 +50,31 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
 publications:
-- id: https://doi.org/10.3389/fnut.2022.928837
+- authors:
+  - Liliana Andrés-Hernández
+  - Kai Blumberg
+  - Ramona L. Walls
+  - Damion Dooley
+  - Ramil Mauleon
+  - Matthew Lange
+  - Magalie Weber
+  - Lauren Chan
+  - Adnan Malik
+  - Anders Møller
+  - Jayne Ireland
+  - Lucia Segovia
+  - Xuhuiqun Zhang
+  - Britt Burton-Freeman
+  - Paul Magelli
+  - Andrew Schriever
+  - Shavawn M. Forester
+  - Lei Liu
+  - Graham J. King
+  doi: 10.3389/fnut.2022.928837
+  id: https://doi.org/10.3389/fnut.2022.928837
+  journal: Frontiers in Nutrition
   title: Establishing a Common Nutritional Vocabulary - From Food Production to Diet
+  year: '2022'
 ---
 ## Description
 

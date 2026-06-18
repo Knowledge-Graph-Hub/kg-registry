@@ -236,8 +236,40 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
+- authors:
+  - Harris TW
+  - Arnaboldi V
+  - Cain S
+  - Chan J
+  - Chen WJ
+  - Cho J
+  - Davis P
+  - Gao S
+  - Grove CA
+  - Kishore R
+  - Lee RYN
+  - Muller HM
+  - Nakamura C
+  - Nuin P
+  - Paulini M
+  - Raciti D
+  - Rodgers FH
+  - Russell M
+  - Schindelman G
+  - Auken KV
+  - Wang Q
+  - Williams G
+  - Wright AJ
+  - Yook K
+  - Howe KL
+  - Schedl T
+  - Stein L
+  - Sternberg PW
+  doi: 10.1093/nar/gkz920
+  id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
+  journal: Nucleic Acids Res
   title: 'WormBase: a modern Model Organism Information Resource'
+  year: '2020'
 repository: https://github.com/obophenotype/c-elegans-development-ontology
 taxon:
 - NCBITaxon:6237

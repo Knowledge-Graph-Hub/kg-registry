@@ -739,12 +739,13 @@ publications:
   - Formaggioni A
   - Ovchinnikov V
   - Herlyn H
+  doi: 10.1093/nar/gkae1094
   id: https://doi.org/10.1093/nar/gkae1094
   journal: Nucleic Acids Research
   preferred: true
   title: 'MirGeneDB 3.0: improved taxonomic sampling, uniform nomenclature of novel
     conserved microRNA families and updated covariance models'
-  year: '2024'
+  year: '2025'
 ---
 # MirGeneDB
 

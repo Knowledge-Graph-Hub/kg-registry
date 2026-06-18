@@ -49,9 +49,25 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 publications:
-- id: https://doi.org/10.1186/2041-1480-4-34
+- authors:
+  - Peter E Midford
+  - Thomas Alex Dececchi
+  - James P Balhoff
+  - Wasila M Dahdul
+  - Nizar Ibrahim
+  - Hilmar Lapp
+  - John G Lundberg
+  - Paula M Mabee
+  - Paul C Sereno
+  - Monte Westerfield
+  - Todd J Vision
+  - David C Blackburn
+  doi: 10.1186/2041-1480-4-34
+  id: https://doi.org/10.1186/2041-1480-4-34
+  journal: Journal of Biomedical Semantics
   title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
     organism and species phenotypes'
+  year: '2013'
 ---
 ## Description
 

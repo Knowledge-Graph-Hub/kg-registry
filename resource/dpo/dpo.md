@@ -61,8 +61,21 @@ repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 taxon:
 - NCBITaxon:7227
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
+- authors:
+  - Osumi-Sutherland D
+  - Marygold SJ
+  - Millburn GH
+  - McQuilton PA
+  - Ponting L
+  - Stefancsik R
+  - Falls K
+  - Brown NH
+  - Gkoutos GV
+  doi: 10.1186/2041-1480-4-30
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
+  journal: J Biomed Semantics
   title: The Drosophila phenotype ontology.
+  year: '2013'
 ---
 ## Description
 

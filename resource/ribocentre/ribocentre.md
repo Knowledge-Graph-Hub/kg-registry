@@ -459,9 +459,26 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://rnacentral.org/help/public-database
 publications:
-  - id: PMID:36399504
+  - authors:
+      - Deng J
+      - Shi Y
+      - Peng X
+      - He Y
+      - Chen X
+      - Li M
+      - Lin X
+      - Liao W
+      - Huang Y
+      - Jiang T
+      - Lilley DMJ
+      - Miao Z
+      - Huang L
+    doi: 10.1093/nar/gkac840
+    id: https://www.ncbi.nlm.nih.gov/pubmed/36177882
+    journal: Nucleic Acids Res
     preferred: true
-  - id: PMID:37883399
+    title: 'Ribocentre: a database of ribozymes'
+    year: '2023'
 synonyms:
   - RiboCentre
 ---

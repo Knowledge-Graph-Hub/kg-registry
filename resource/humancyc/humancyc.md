@@ -632,11 +632,19 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1186/gb-2004-6-1-r2
+- authors:
+  - Pedro Romero
+  - Jonathan Wagg
+  - Michelle L Green
+  - Dale Kaiser
+  - Markus Krummenacker
+  - Peter D Karp
+  doi: 10.1186/gb-2004-6-1-r2
+  id: https://doi.org/10.1186/gb-2004-6-1-r2
   journal: Genome Biology
   title: Computational prediction of human metabolic pathways from the complete human
     genome
-  year: '2005'
+  year: '2004'
 synonyms:
 - HumanCyc
 taxon:

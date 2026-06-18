@@ -1272,11 +1272,18 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- doi: 10.1093/nar/gku1267
+- authors:
+  - Peter V. Hornbeck
+  - Bin Zhang
+  - Beth Murray
+  - Jon M. Kornhauser
+  - Vaughan Latham
+  - Elzbieta Skrzypek
+  doi: 10.1093/nar/gku1267
   id: doi:10.1093/nar/gku1267
   journal: Nucleic Acids Research
   title: 'PhosphoSitePlus, 2014: mutations, PTMs and recalibrations.'
-  year: '2014'
+  year: '2015'
 ---
 # PhosphoSitePlus
 

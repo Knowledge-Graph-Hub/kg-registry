@@ -49,9 +49,25 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/BgeeDB/confidence-information-ontology
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25957950
+- authors:
+  - Bastian FB
+  - Chibucos MC
+  - Gaudet P
+  - Giglio M
+  - Holliday GL
+  - Huang H
+  - Lewis SE
+  - Niknejad A
+  - Orchard S
+  - Poux S
+  - Skunca N
+  - Robinson-Rechavi M
+  doi: 10.1093/database/bav043
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25957950
+  journal: Database (Oxford)
   title: 'The Confidence Information Ontology: a step towards a standard for asserting
     confidence in annotations'
+  year: '2015'
 ---
 ## Description
 

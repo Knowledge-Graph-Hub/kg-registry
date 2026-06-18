@@ -48,8 +48,22 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/geneontology/unipathway
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
+  - authors:
+      - Morgat A
+      - Coissac E
+      - Coudert E
+      - Axelsen KB
+      - Keller G
+      - Bairoch A
+      - Bridge A
+      - Bougueleret L
+      - Xenarios I
+      - Viari A
+    doi: 10.1093/nar/gkr1023
+    id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
+    journal: Nucleic Acids Res
     title: 'UniPathway: a resource for the exploration and annotation of metabolic pathways'
+    year: '2012'
 ---
 
 ## Description

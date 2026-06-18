@@ -1019,12 +1019,13 @@ publications:
   - Zuo H
   - Wang J
   - Li Z
+  doi: 10.1093/nar/gkae1072
   id: https://doi.org/10.1093/nar/gkae1072
   journal: Nucleic Acids Research
   preferred: true
   title: 'miRTarBase 2025: updates to the collection of experimentally validated microRNA-target
     interactions'
-  year: '2024'
+  year: '2025'
 - authors:
   - Huang HY
   - Lin YCD
@@ -1036,6 +1037,7 @@ publications:
   - Li Y
   - Wen J
   - Zuo H
+  doi: 10.1093/nar/gkab1079
   id: https://doi.org/10.1093/nar/gkab1079
   journal: Nucleic Acids Research
   preferred: false

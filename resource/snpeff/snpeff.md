@@ -89,8 +89,9 @@ publications:
       - Land SJ
       - Lu X
       - Ruden DM
+    doi: 10.4161/fly.19695
     id: https://pubmed.ncbi.nlm.nih.gov/22728672/
-    journal: Fly
+    journal: Fly (Austin)
     preferred: true
     title: 'A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3'
     year: '2012'

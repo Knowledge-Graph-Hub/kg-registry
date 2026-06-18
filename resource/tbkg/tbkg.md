@@ -29,8 +29,8 @@ publications:
       - He X
       - Huang W
       - Liu X
-    journal: Frontiers in Genetics
-    year: '2021'
+    journal: Front Genet
+    year: '2020'
     doi: 10.3389/fgene.2020.625659
 license:
   id: https://creativecommons.org/licenses/by/4.0/

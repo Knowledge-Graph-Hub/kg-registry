@@ -888,8 +888,9 @@ publications:
   - Catez
   - Marcel
   - Scott
+  doi: 10.1093/nar/gkac835
   id: https://pubmed.ncbi.nlm.nih.gov/36165892/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   preferred: true
   title: 'snoDB 2.0: an enhanced interactive database, specializing in human snoRNAs'
   year: '2023'

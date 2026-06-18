@@ -2480,8 +2480,127 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1093/genetics/iyaf215
+- authors:
+  - Nicole A Vasilevsky
+  - Sabrina Toro
+  - Nicolas Matentzoglu
+  - Joseph E Flack
+  - Kathleen R Mullen
+  - Harshad Hegde
+  - Sarah Gehrke
+  - Patricia L Whetzel
+  - Yousif Shwetar
+  - Nomi L Harris
+  - Mee S Ngu
+  - Gioconda L Alyea
+  - Megan S Kane
+  - Paola Roncaglia
+  - Eric Sid
+  - Courtney L Thaxton
+  - Valerie Wood
+  - Roshini S Abraham
+  - Maria Isabel Achatz
+  - Pamela Ajuyah
+  - Joanna S Amberger
+  - Lawrence Babb
+  - Jasmine Baker
+  - James P Balhoff
+  - Jonathan S Berg
+  - Amol Bhalla
+  - Xavier Bofill-De Ros
+  - Ian R Braun
+  - Eleanor C Broeren
+  - Blake K Byer
+  - Alicia B Byrne
+  - Tiffany J Callahan
+  - Leigh C Carmody
+  - Lauren E Chan
+  - Amanda R Clause
+  - Julie S Cohen
+  - Marcello DeLuca
+  - Natalie T Deuitch
+  - May Flowers
+  - Jamie Fraser
+  - Toyofumi Fujiwara
+  - Vanessa Gitau
+  - Jennifer L Goldstein
+  - Dylan Gration
+  - Tudor Groza
+  - Benjamin M Gyori
+  - William Hankey
+  - Jason A Hilton
+  - Daniel S Himmelstein
+  - Stephanie S Hong
+  - Charles T Hoyt
+  - Robert Huether
+  - Eric Hurwitz
+  - Julius O B Jacobsen
+  - Atsuo Kikuchi
+  - Sebastian Köhler
+  - Daniel R Korn
+  - David Lagorce
+  - Bryan J Laraway
+  - Jane Y Li
+  - Adriana J Malheiro
+  - James McLaughlin
+  - Birgit H M Meldal
+  - Shruthi Mohan
+  - Sierra A T Moxon
+  - Monica C Munoz-Torres
+  - Tristan H Nelson
+  - Frank W Nicholas
+  - David Ochoa
+  - Daniel Olson
+  - Tudor I Oprea
+  - Tomiko T Oskotsky
+  - David Osumi-Sutherland
+  - Kelley Paris
+  - Helen E Parkinson
+  - Zoë M Pendlington
+  - Xiao P Peng
+  - Amy Pizzino
+  - Sharon E Plon
+  - Bradford C Powell
+  - Julie C Ratliff
+  - Heidi L Rehm
+  - Lyubov Remennik
+  - Erin R Riggs
+  - Sean Roberts
+  - Peter N Robinson
+  - Justyne E Ross
+  - Kevin Schaper
+  - Brian M Schilder
+  - Johanna L Schmidt
+  - Elliott W Sharp
+  - Morgan N Similuk
+  - Damian Smedley
+  - Tam P Sneddon
+  - Rachel Sparks
+  - Ray Stefancsik
+  - Gregory S Stupp
+  - Shilpa Sundar
+  - Terue Takatsuki
+  - Imke Tammen
+  - Kezang C Tshering
+  - Deepak R Unni
+  - Eloise Valasek
+  - Adeline Vanderver
+  - Alex H Wagner
+  - Ryan F Webb
+  - Danielle Welter
+  - Doron Yaya-Stupp
+  - Andreas Zankl
+  - Xingmin Aaron Zhang
+  - Julie A McMurry
+  - Christopher G Chute
+  - Ada Hamosh
+  - Christopher J Mungall
+  - Melissa A Haendel
+  doi: 10.1093/genetics/iyaf215
+  id: https://doi.org/10.1093/genetics/iyaf215
+  journal: GENETICS
   title: 'Mondo: Integrating Disease Terminology Across Communities'
+  year: '2026'
 - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
   title: 'Mondo: Unifying diseases for the world, by the world'
 repository: https://github.com/monarch-initiative/mondo

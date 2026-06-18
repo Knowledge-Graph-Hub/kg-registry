@@ -3868,17 +3868,56 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1002/pro.3978
+- authors:
+  - Rose Oughtred
+  - Jennifer Rust
+  - Christie Chang
+  - Bobby‐Joe Breitkreutz
+  - Chris Stark
+  - Andrew Willems
+  - Lorrie Boucher
+  - Genie Leung
+  - Nadine Kolas
+  - Frederick Zhang
+  - Sonam Dolma
+  - Jasmin Coulombe‐Huntington
+  - Andrew Chatr‐aryamontri
+  - Kara Dolinski
+  - Mike Tyers
+  doi: 10.1002/pro.3978
+  id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
   title: The BioGRID database – a comprehensive biomedical resource of curated protein,
     genetic, and chemical interactions
-  year: '2020'
-- id: https://doi.org/10.1093/nar/gky1079
+  year: '2021'
+- authors:
+  - Rose Oughtred
+  - Chris Stark
+  - Bobby-Joe Breitkreutz
+  - Jennifer Rust
+  - Lorrie Boucher
+  - Christie Chang
+  - Nadine Kolas
+  - Lara O’Donnell
+  - Genie Leung
+  - Rochelle McAdam
+  - Frederick Zhang
+  - Sonam Dolma
+  - Andrew Willems
+  - Jasmin Coulombe-Huntington
+  - Andrew Chatr-aryamontri
+  - Kara Dolinski
+  - Mike Tyers
+  doi: 10.1093/nar/gky1079
+  id: https://doi.org/10.1093/nar/gky1079
   journal: Nucleic Acids Research
   title: 'The BioGRID interaction database: 2019 update'
   year: '2019'
-- id: https://doi.org/10.1093/nar/gkj109
+- authors:
+  - C. Stark
+  doi: 10.1093/nar/gkj109
+  id: https://doi.org/10.1093/nar/gkj109
   journal: Nucleic Acids Research
   title: 'BioGRID: a general repository for interaction datasets'
   year: '2006'

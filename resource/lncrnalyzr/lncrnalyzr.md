@@ -66,8 +66,17 @@ products:
       - source: doid
         relation_type: prov:hadPrimarySource
 publications:
-  - id: doi:10.1016/j.jmb.2025.168938
-    journal: Nature Genetics
+  - authors:
+      - John Erol Evangelista
+      - Tahleel Ali-Nasser
+      - Lauren E. Malek
+      - Zhuorui Xie
+      - Giacomo B. Marino
+      - Assaf C. Bester
+      - Avi Ma’ayan
+    doi: 10.1016/j.jmb.2025.168938
+    id: doi:10.1016/j.jmb.2025.168938
+    journal: Journal of Molecular Biology
     title: 'lncRNAlyzr: Enrichment Analysis for lncRNA Sets'
     year: '2025'
 repository: https://github.com/MaayanLab/lncRNAlyzr

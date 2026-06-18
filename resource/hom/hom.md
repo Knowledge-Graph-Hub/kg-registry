@@ -38,8 +38,14 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/BgeeDB/homology-ontology
 publications:
-  - id: https://doi.org/10.1016/j.tig.2009.12.012
+  - authors:
+      - Julien Roux
+      - Marc Robinson-Rechavi
+    doi: 10.1016/j.tig.2009.12.012
+    id: https://doi.org/10.1016/j.tig.2009.12.012
+    journal: Trends in Genetics
     title: An ontology to clarify homology-related concepts
+    year: '2010'
 ---
 
 ## Description

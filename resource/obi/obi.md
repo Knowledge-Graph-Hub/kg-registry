@@ -522,8 +522,56 @@ products:
   product_file_size: 642902930
   product_url: https://orkg.org/files/rdf-dumps/rdf-export-orkg.nt
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27128319
+- authors:
+  - Bandrowski A
+  - Brinkman R
+  - Brochhausen M
+  - Brush MH
+  - Bug B
+  - Chibucos MC
+  - Clancy K
+  - Courtot M
+  - Derom D
+  - Dumontier M
+  - Fan L
+  - Fostel J
+  - Fragoso G
+  - Gibson F
+  - Gonzalez-Beltran A
+  - Haendel MA
+  - He Y
+  - Heiskanen M
+  - Hernandez-Boussard T
+  - Jensen M
+  - Lin Y
+  - Lister AL
+  - Lord P
+  - Malone J
+  - Manduchi E
+  - McGee M
+  - Morrison N
+  - Overton JA
+  - Parkinson H
+  - Peters B
+  - Rocca-Serra P
+  - Ruttenberg A
+  - Sansone SA
+  - Scheuermann RH
+  - Schober D
+  - Smith B
+  - Soldatova LN
+  - Stoeckert CJ Jr
+  - Taylor CF
+  - Torniai C
+  - Turner JA
+  - Vita R
+  - Whetzel PL
+  - Zheng J
+  doi: 10.1371/journal.pone.0154556
+  id: https://www.ncbi.nlm.nih.gov/pubmed/27128319
+  journal: PLoS One
   title: The Ontology for Biomedical Investigations
+  year: '2016'
 repository: https://github.com/obi-ontology/obi
 ---
 ## Description

@@ -776,9 +776,10 @@ publications:
   - "Frank Oliver Gl\xF6ckner"
   doi: 10.1093/nar/gks1219
   id: doi:10.1093/nar/gks1219
+  journal: Nucleic Acids Research
   title: 'The SILVA ribosomal RNA gene database project: improved data processing
     and web-based tools'
-  year: '2013'
+  year: '2012'
 - authors:
   - Pelin Yilmaz
   - Linda Wegener Parfrey
@@ -792,6 +793,7 @@ publications:
   - "Frank Oliver Gl\xF6ckner"
   doi: 10.1093/nar/gkt1209
   id: doi:10.1093/nar/gkt1209
+  journal: Nucleic Acids Research
   title: The SILVA and 'All-species Living Tree Project (LTP)' taxonomic frameworks
   year: '2014'
 repository: https://github.com/epruesse/SINA

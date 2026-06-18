@@ -554,7 +554,7 @@ publications:
   preferred: true
   title: 'Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic
     biomarker discovery in cancer cells'
-  year: '2013'
+  year: '2012'
 - authors:
   - Iorio F
   - Knijnenburg TA
@@ -595,6 +595,7 @@ publications:
   - Saez-Rodriguez J
   - McDermott U
   - Garnett MJ
+  doi: 10.1016/j.cell.2016.06.017
   id: https://doi.org/10.1016/j.cell.2016.06.017
   journal: Cell
   title: A landscape of pharmacogenomic interactions in cancer
@@ -654,6 +655,7 @@ publications:
   - Ramaswamy S
   - McDermott U
   - Benes CH
+  doi: 10.1038/nature11005
   id: https://doi.org/10.1038/nature11005
   journal: Nature
   title: Systematic identification of genomic markers of drug sensitivity in cancer

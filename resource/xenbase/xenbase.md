@@ -1304,9 +1304,31 @@ products:
     source: hgnc
   product_url: https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip
 publications:
-- id: https://doi.org/10.1093/genetics/iyad018
+- authors:
+  - Malcolm Fisher
+  - Christina James-Zorn
+  - Virgilio Ponferrada
+  - Andrew J Bell
+  - Nivitha Sundararaj
+  - Erik Segerdell
+  - Praneet Chaturvedi
+  - Nadia Bayyari
+  - Stanley Chu
+  - Troy Pells
+  - Vaneet Lotay
+  - Sergei Agalakov
+  - Dong Zhuo Wang
+  - Bradley I Arshinoff
+  - Saoirse Foley
+  - Kamran Karimi
+  - Peter D Vize
+  - Aaron M Zorn
+  doi: 10.1093/genetics/iyad018
+  id: https://doi.org/10.1093/genetics/iyad018
+  journal: GENETICS
   preferred: true
   title: 'Xenbase: key features and resources of the Xenopus model organism knowledgebase'
+  year: '2023'
 repository: https://github.com/xenopus-anatomy
 taxon:
 - NCBITaxon:8355

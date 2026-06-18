@@ -1380,6 +1380,7 @@ publications:
   - Yuzong Chen
   - Feng Zhu
   category: Publication
+  doi: 10.1093/nar/gkad751
   id: doi:10.1093/nar/gkad751
   journal: Nucleic Acids Research
   preferred: true
@@ -1395,6 +1396,7 @@ publications:
   - Yunqing Qiu
   - Yuzong Chen
   category: Publication
+  doi: 10.1093/nar/gkab953
   id: doi:10.1093/nar/gkab953
   journal: Nucleic Acids Research
   preferred: false

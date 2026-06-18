@@ -77,6 +77,7 @@ publications:
   - Peter W Rose
   - Charlotte A Nelson
   - Sergio E Baranzini
+  doi: 10.1093/bioinformatics/btad080
   id: https://doi.org/10.1093/bioinformatics/btad080
   journal: Bioinformatics
   preferred: true
@@ -94,6 +95,7 @@ publications:
   - Atul Butte
   - Mark Musen
   - Sui Huang
+  doi: 10.1002/aaai.12037
   id: https://doi.org/10.1002/aaai.12037
   journal: AI Magazine
   title: A biomedical open knowledge network harnesses the power of AI to understand

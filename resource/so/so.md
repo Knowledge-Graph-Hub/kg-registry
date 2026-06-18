@@ -327,10 +327,28 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/15892872
+- authors:
+  - Eilbeck K
+  - Lewis SE
+  - Mungall CJ
+  - Yandell M
+  - Stein L
+  - Durbin R
+  - Ashburner M
+  doi: 10.1186/gb-2005-6-5-r44
+  id: https://www.ncbi.nlm.nih.gov/pubmed/15892872
+  journal: Genome Biol
   title: 'The Sequence Ontology: a tool for the unification of genome annotations.'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/20226267
+  year: '2005'
+- authors:
+  - Mungall CJ
+  - Batchelor C
+  - Eilbeck K
+  doi: 10.1016/j.jbi.2010.03.002
+  id: https://www.ncbi.nlm.nih.gov/pubmed/20226267
+  journal: J Biomed Inform
   title: Evolution of the Sequence Ontology terms and relationships.
+  year: '2011'
 repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
 ---
 ## Description

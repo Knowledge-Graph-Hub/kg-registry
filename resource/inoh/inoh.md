@@ -363,8 +363,16 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- id: https://doi.org/10.1093/database/bar052
-  journal: Database (Oxford)
+- authors:
+  - S. Yamamoto
+  - N. Sakai
+  - H. Nakamura
+  - H. Fukagawa
+  - K. Fukuda
+  - T. Takagi
+  doi: 10.1093/database/bar052
+  id: https://doi.org/10.1093/database/bar052
+  journal: Database
   title: 'INOH: ontology-based highly structured database of signal transduction pathways'
   year: '2011'
 synonyms:

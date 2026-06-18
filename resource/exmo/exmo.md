@@ -37,8 +37,26 @@ products:
       - source: exmo
         relation_type: prov:hadPrimarySource
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/39695140
+  - authors:
+      - Liu X
+      - Yang Y
+      - Zong H
+      - Zhang K
+      - Jiang M
+      - Yu C
+      - Chen Y
+      - Bao T
+      - Li D
+      - Wang J
+      - Tang T
+      - Ren S
+      - Ruso JM
+      - Shen B
+    doi: 10.1038/s41597-024-04217-9
+    id: https://www.ncbi.nlm.nih.gov/pubmed/39695140
+    journal: Sci Data
     title: Core reference ontology for individualized exercise prescription
+    year: '2024'
 ---
 
 ## Description

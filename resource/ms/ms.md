@@ -382,8 +382,29 @@ products:
   - relation_type: prov:wasInformedBy
     source: afo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23482073
+- authors:
+  - Mayer G
+  - Montecchi-Palazzi L
+  - Ovelleiro D
+  - Jones AR
+  - Binz PA
+  - Deutsch EW
+  - Chambers M
+  - Kallhardt M
+  - Levander F
+  - Shofstahl J
+  - Orchard S
+  - Vizcaíno JA
+  - Hermjakob H
+  - Stephan C
+  - Meyer HE
+  - Eisenacher M
+  - HUPO-PSI Group
+  doi: 10.1093/database/bat009
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23482073
+  journal: Database (Oxford)
   title: The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.
+  year: '2013'
 repository: https://github.com/HUPO-PSI/psi-ms-CV
 ---
 ## Description

@@ -1464,11 +1464,12 @@ publications:
   - E. Sonnhammer
   - V. Wood
   - A. Bateman
+  doi: 10.1093/nar/gkae997
   id: https://doi.org/10.1093/nar/gkae997
   journal: Nucleic Acids Research
   preferred: true
   title: 'The Pfam protein families database: embracing AI/ML'
-  year: '2024'
+  year: '2025'
 - authors:
   - J. Mistry
   - S. Chuguransky
@@ -1482,10 +1483,11 @@ publications:
   - L.J. Richardson
   - R.D. Finn
   - A. Bateman
+  doi: 10.1093/nar/gkaa913
   id: https://doi.org/10.1093/nar/gkaa913
   journal: Nucleic Acids Research
   title: 'Pfam: The protein families database in 2021'
-  year: '2020'
+  year: '2021'
 - authors:
   - S. El-Gebali
   - J. Mistry
@@ -1503,6 +1505,7 @@ publications:
   - D. Piovesan
   - S.C.E. Tosatto
   - R.D. Finn
+  doi: 10.1093/nar/gky995
   id: https://doi.org/10.1093/nar/gky995
   journal: Nucleic Acids Research
   title: The Pfam protein families database in 2019

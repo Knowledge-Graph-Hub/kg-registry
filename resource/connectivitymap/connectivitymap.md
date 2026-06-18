@@ -289,9 +289,33 @@ products:
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
 publications:
-- id: https://doi.org/10.1126/science.1132939
+- authors:
+  - Justin Lamb
+  - Emily D. Crawford
+  - David Peck
+  - Joshua W. Modell
+  - Irene C. Blat
+  - Matthew J. Wrobel
+  - Jim Lerner
+  - Jean-Philippe Brunet
+  - Aravind Subramanian
+  - Kenneth N. Ross
+  - Michael Reich
+  - Haley Hieronymus
+  - Guo Wei
+  - Scott A. Armstrong
+  - Stephen J. Haggarty
+  - Paul A. Clemons
+  - Ru Wei
+  - Steven A. Carr
+  - Eric S. Lander
+  - Todd R. Golub
+  doi: 10.1126/science.1132939
+  id: https://doi.org/10.1126/science.1132939
+  journal: Science
   title: 'The Connectivity Map: Using Gene-Expression Signatures to Connect Small
     Molecules, Genes, and Disease'
+  year: '2006'
 repository: https://clue.io/about
 taxon:
 - NCBITaxon:9606

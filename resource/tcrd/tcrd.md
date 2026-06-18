@@ -205,8 +205,31 @@ products:
   product_file_size: 1686928
   product_url: https://research.bioinformatics.udel.edu/prokn_dp/downloads/current/DDKG_IDGD.Compound.INDICATION.DiseaseOrPhenotype.edges.csv
 publications:
-- id: https://doi.org/10.1093/nar/gkaa993
+- authors:
+  - Timothy K Sheils
+  - Stephen L Mathias
+  - Keith J Kelleher
+  - Vishal B Siramshetty
+  - Dac-Trung Nguyen
+  - Cristian G Bologa
+  - Lars Juhl Jensen
+  - Dušica Vidović
+  - Amar Koleti
+  - Stephan C Schürer
+  - Anna Waller
+  - Jeremy J Yang
+  - Jayme Holmes
+  - Giovanni Bocci
+  - Noel Southall
+  - Poorva Dharkar
+  - Ewy Mathé
+  - Anton Simeonov
+  - Tudor I Oprea
+  doi: 10.1093/nar/gkaa993
+  id: https://doi.org/10.1093/nar/gkaa993
+  journal: Nucleic Acids Research
   title: 'Pharos 2021: mining the human proteome for disease biology'
+  year: '2021'
 - authors:
   - Dac-Trung Nguyen
   - Stephen Mathias

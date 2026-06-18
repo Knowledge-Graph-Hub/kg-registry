@@ -514,9 +514,10 @@ publications:
   - Bridge A
   doi: doi:10.1093/nar/gkab1016
   id: doi:10.1093/nar/gkab1016
+  journal: Nucleic Acids Research
   preferred: true
   title: Rhea, the reaction knowledgebase in 2022
-  year: '2021'
+  year: '2022'
 ---
 Rhea is an expert-curated knowledgebase of chemical and transport reactions of biological interest. Enzyme-catalyzed and spontaneously occurring reactions are curated from peer-reviewed literature and represented in a computationally tractable manner by using the ChEBI (Chemical Entities of Biological Interest) ontology to describe reaction participants.
 

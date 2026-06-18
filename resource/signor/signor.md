@@ -884,11 +884,20 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1093/nar/gkac883
+- authors:
+  - Prisca Lo Surdo
+  - Marta Iannuccelli
+  - Silvia Contino
+  - Luisa Castagnoli
+  - Luana Licata
+  - Gianni Cesareni
+  - Livia Perfetto
+  doi: 10.1093/nar/gkac883
+  id: https://doi.org/10.1093/nar/gkac883
   journal: Nucleic Acids Research
   preferred: true
   title: 'SIGNOR 3.0, the SIGnaling network open resource 3.0: 2022 update'
-  year: '2022'
+  year: '2023'
 taxon:
 - NCBITaxon:9606
 ---

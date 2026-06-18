@@ -156,13 +156,16 @@ publications:
     year: '2023'
   - authors:
       - Davis AP
+      - Murphy CG
+      - Saraceni-Richards CA
+      - Rosenstein MC
       - Wiegers TC
-      - Johnson RJ
-    doi: 10.1093/nar/gkaq891
-    id: doi:10.1093/nar/gkaq891
+      - Mattingly CJ
+    doi: 10.1093/nar/gkn580
+    id: doi:10.1093/nar/gkn580
     journal: Nucleic Acids Research
     title: 'The Comparative Toxicogenomics Database: a knowledgebase and discovery tool for chemical-gene-disease networks'
-    year: '2020'
+    year: '2009'
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1

@@ -52,9 +52,23 @@ products:
   - 'File was not able to be retrieved when checked on 2026-06-17: HTTP 404 error
     when accessing file'
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
+- authors:
+  - Duncan WD
+  - Thyvalikakath T
+  - Haendel M
+  - Torniai C
+  - Hernandez P
+  - Song M
+  - Acharya A
+  - Caplan DJ
+  - Schleyer T
+  - Ruttenberg A
+  doi: 10.1186/s13326-020-00222-0
+  id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
+  journal: J Biomed Semantics
   title: Structuring, reuse and analysis of electronic dental data using the Oral
     Health and Disease Ontology
+  year: '2020'
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 ---
 ## Description

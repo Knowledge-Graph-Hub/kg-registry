@@ -38,8 +38,28 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/OHPI/ohpi
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/30365026
+  - authors:
+      - Sayers S
+      - Li L
+      - Ong E
+      - Deng S
+      - Fu G
+      - Lin Y
+      - Yang B
+      - Zhang S
+      - Fa Z
+      - Zhao B
+      - Xiang Z
+      - Li Y
+      - Zhao XM
+      - Olszewski MA
+      - Chen L
+      - He Y
+    doi: 10.1093/nar/gky999
+    id: https://www.ncbi.nlm.nih.gov/pubmed/30365026
+    journal: Nucleic Acids Res
     title: 'Victors: a web-based knowledge base of virulence factors in human and animal pathogens'
+    year: '2019'
 ---
 
 ## Description

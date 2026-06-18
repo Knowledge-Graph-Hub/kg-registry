@@ -50,9 +50,19 @@ repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
 taxon:
 - NCBITaxon:10114
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24267899
+- authors:
+  - Nigam R
+  - Munzenmaier DH
+  - Worthey EA
+  - Dwinell MR
+  - Shimoyama M
+  - Jacob HJ
+  doi: 10.1186/2041-1480-4-36
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24267899
+  journal: J Biomed Semantics
   title: 'Rat Strain Ontology: structured controlled vocabulary designed to facilitate
     access to strain data at RGD.'
+  year: '2013'
 ---
 ## Description
 

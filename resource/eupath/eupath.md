@@ -40,9 +40,28 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 publications:
-- id: https://doi.org/10.5281/zenodo.6685957
+- authors:
+  - "Zheng, Jie"
+  - "Cade, JasShon"
+  - "Brunk, Brian"
+  - "Roos, David"
+  - "Stoeckert, Christian"
+  - "James, San"
+  - "Arinaitwe, Emmanuel"
+  - "Greenhouse, Bryan"
+  - "Dorsey, Grant"
+  - "Sullivan, Steven"
+  - "Carlton, Jane"
+  - "Carrasco-Escobar, Gabriel"
+  - "Gamboa, Dionicia"
+  - "Maguina-Mercedes, Paula"
+  - "Vinetz, Joseph"
+  doi: 10.5281/zenodo.6685957
+  id: https://doi.org/10.5281/zenodo.6685957
+  journal: Zenodo
   title: Malaria study data integration and information retrieval based on OBO Foundry
     ontologies.
+  year: '2016'
 ---
 ## Description
 

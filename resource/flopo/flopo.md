@@ -41,9 +41,26 @@ repository: https://github.com/flora-phenotype-ontology/flopoontology
 taxon:
 - NCBITaxon:33090
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
+- authors:
+  - Hoehndorf R
+  - Alshahrani M
+  - Gkoutos GV
+  - Gosline G
+  - Groom Q
+  - Hamann T
+  - Kattge J
+  - de Oliveira SM
+  - Schmidt M
+  - Sierra S
+  - Smets E
+  - Vos RA
+  - Weiland C
+  doi: 10.1186/s13326-016-0107-8
+  id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
+  journal: J Biomed Semantics
   title: 'The flora phenotype ontology (FLOPO): tool for integrating morphological
     traits and phenotypes of vascular plants'
+  year: '2016'
 ---
 ## Description
 

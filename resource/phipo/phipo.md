@@ -50,8 +50,26 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/PHI-base/phipo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34788826
+- authors:
+  - Urban M
+  - Cuzick A
+  - Seager J
+  - Wood V
+  - Rutherford K
+  - Venkatesh SY
+  - Sahu J
+  - Iyer SV
+  - Khamari L
+  - De Silva N
+  - Martinez MC
+  - Pedro H
+  - Yates AD
+  - Hammond-Kosack KE
+  doi: 10.1093/nar/gkab1037
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34788826
+  journal: Nucleic Acids Res
   title: 'PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions'
+  year: '2022'
 ---
 ## Description
 

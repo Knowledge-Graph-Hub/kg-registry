@@ -49,8 +49,21 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/microbialphenotypes/OMP-ontology
 publications:
-- id: https://doi.org/10.1186/s12866-014-0294-3
+- authors:
+  - Marcus C Chibucos
+  - Adrienne E Zweifel
+  - Jonathan C Herrera
+  - William Meza
+  - Shabnam Eslamfam
+  - Peter Uetz
+  - Deborah A Siegele
+  - James C Hu
+  - Michelle G Giglio
+  doi: 10.1186/s12866-014-0294-3
+  id: https://doi.org/10.1186/s12866-014-0294-3
+  journal: BMC Microbiology
   title: An ontology for microbial phenotypes
+  year: '2014'
 ---
 ## Description
 

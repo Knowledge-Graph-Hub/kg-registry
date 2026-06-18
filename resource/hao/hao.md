@@ -60,8 +60,17 @@ repository: https://github.com/hymao/hao
 taxon:
   - NCBITaxon:7399
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
+  - authors:
+      - Yoder MJ
+      - Mikó I
+      - Seltmann KC
+      - Bertone MA
+      - Deans AR
+    doi: 10.1371/journal.pone.0015991
+    id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
+    journal: PLoS One
     title: A gross anatomy ontology for hymenoptera
+    year: '2010'
 ---
 
 ## Description

@@ -12,7 +12,7 @@ domains:
 homepage_url: https://ctdbase.org/
 id: ctd
 infores_id: ctd
-last_modified_date: '2026-02-20T00:00:00Z'
+last_modified_date: '2026-06-17T00:00:00Z'
 layout: resource_detail
 license:
   id: https://ctdbase.org/about/legal.jsp
@@ -34,6 +34,7 @@ products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
+  format: mixed
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -546,6 +547,7 @@ products:
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
   edge_count: 15211571
+  format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -995,8 +997,7 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
   edge_count: 15211571
@@ -1124,8 +1125,7 @@ products:
   - biolink:temporally_related_to
   - biolink:treats
   - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
   edge_count: 15211571
@@ -1390,6 +1390,7 @@ products:
     to human health and the environment. Since its inception, the AOP-DB has been
     developed with the aim of integrating AOP molecular target information with other
     publicly available datasets to facilitate computational analyses of AOP information.
+  format: mysql
   id: aop-db.data
   name: AOP-DB Data
   original_source:
@@ -1419,6 +1420,7 @@ products:
     and integrating information from diverse biomedical resources including DRKG,
     iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
     SIDER, and others).
+  format: csv
   id: ibkh.graph
   name: iBKH Knowledge Graph
   original_source:
@@ -1458,6 +1460,7 @@ products:
     source: tissues
   - relation_type: prov:hadPrimarySource
     source: uberon
+  product_url: https://github.com/wcm-wanglab/iBKH
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -1500,8 +1503,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 12464495186
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -1622,8 +1624,7 @@ products:
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_file_size: 4623010863
-  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   description: Biomedical plus Uniprot genome annotations
@@ -1669,6 +1670,7 @@ products:
   description: Chemical-gene interaction models and toxicological pathways derived
     from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
     and 55,400 genes
+  format: tsv
   id: cam-kp.ctd-interactions
   name: CTD Chemical-Gene Models
   original_source:
@@ -1678,6 +1680,7 @@ products:
     source: ctd
   - relation_type: prov:hadPrimarySource
     source: doid
+  product_url: https://stars.renci.org/var/cam-kp/cam-kg.tsv.gz
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -3103,6 +3106,7 @@ products:
   compression: gzip
   description: PC v14 Gene Matrix Transposed gene sets for pathway enrichment analysis,
     derived from the integrated Pathway Commons pathway archive.
+  format: tsv
   id: pathwaycommons.gmt
   name: GMT Gene Set Format
   original_source:
@@ -3343,7 +3347,7 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
-  product_url: https://sugi.bio/biobtree/api/
+  product_url: https://sugi.bio/biobtree/
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -3608,6 +3612,24 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wormbase
   product_url: https://www.genecards.org/
+publications:
+- authors:
+  - Davis AP
+  - Wiegers TC
+  - Sciaky D
+  - Barkalow F
+  - Strong M
+  - Wyatt B
+  - Wiegers J
+  - McMorran R
+  - Abrar S
+  - Mattingly CJ
+  doi: doi:10.1093/nar/gkae883
+  id: https://doi.org/10.1093/nar/gkae883
+  journal: Nucleic Acids Research
+  preferred: true
+  title: Comparative Toxicogenomics Database's 20th anniversary; update 2025
+  year: '2025'
 taxon:
 - NCBITaxon:9606
 ---

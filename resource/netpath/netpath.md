@@ -358,7 +358,49 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: biofactoid
 publications:
-- id: https://doi.org/10.1186/gb-2010-11-1-r3
+- authors:
+  - Kumaran Kandasamy
+  - S Sujatha Mohan
+  - Rajesh Raju
+  - Shivakumar Keerthikumar
+  - Ghantasala S Sameer Kumar
+  - Abhilash K Venugopal
+  - Deepthi Telikicherla
+  - J Daniel Navarro
+  - Suresh Mathivanan
+  - Christian Pecquet
+  - Sashi Kanth Gollapudi
+  - Sudhir Gopal Tattikota
+  - Shyam Mohan
+  - Hariprasad Padhukasahasram
+  - Yashwanth Subbannayya
+  - Renu Goel
+  - Harrys KC Jacob
+  - Jun Zhong
+  - Raja Sekhar
+  - Vishalakshi Nanjappa
+  - Lavanya Balakrishnan
+  - Roopashree Subbaiah
+  - YL Ramachandra
+  - B Abdul Rahiman
+  - TS Keshava Prasad
+  - Jian-Xin Lin
+  - Jon CD Houtman
+  - Stephen Desiderio
+  - Jean-Christophe Renauld
+  - Stefan N Constantinescu
+  - Osamu Ohara
+  - Toshio Hirano
+  - Masato Kubo
+  - Sujay Singh
+  - Purvesh Khatri
+  - Sorin Draghici
+  - Gary D Bader
+  - Chris Sander
+  - Warren J Leonard
+  - Akhilesh Pandey
+  doi: 10.1186/gb-2010-11-1-r3
+  id: https://doi.org/10.1186/gb-2010-11-1-r3
   journal: Genome Biology
   title: 'NetPath: a public resource of curated signal transduction pathways'
   year: '2010'

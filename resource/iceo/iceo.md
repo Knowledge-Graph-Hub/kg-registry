@@ -38,8 +38,20 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/ontoice/ICEO
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/35058462
+  - authors:
+      - Liu M
+      - Liu J
+      - Liu G
+      - Wang H
+      - Wang X
+      - Deng Z
+      - He Y
+      - Ou HY
+    doi: 10.1038/s41597-021-01112-5
+    id: https://www.ncbi.nlm.nih.gov/pubmed/35058462
+    journal: Sci Data
     title: ICEO, a biological ontology for representing and analyzing bacterial integrative and conjugative elements
+    year: '2022'
 ---
 
 ## Description

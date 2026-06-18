@@ -722,12 +722,13 @@ publications:
   - Pierros V
   - Zacharopoulou E
   - Hatzigeorgiou AG
+  doi: 10.1093/nar/gkz1036
   id: https://doi.org/10.1093/nar/gkz1036
   journal: Nucleic Acids Research
   preferred: true
   title: 'DIANA-LncBase v3: indexing experimentally supported miRNA targets on non-coding
     transcripts'
-  year: '2020'
+  year: '2019'
 synonyms:
 - LncBase
 - DIANA LncBase

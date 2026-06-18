@@ -295,8 +295,18 @@ products:
     source: rxnorm
 publications:
 - category: Publication
+  authors:
+  - Nelson SJ
+  - Zeng K
+  - Kilbourne J
+  - Powell T
+  - Moore R
+  doi: 10.1136/amiajnl-2011-000116
   id: PMID:21515544
+  journal: J Am Med Inform Assoc
   preferred: true
+  title: "Normalized names for clinical drugs: RxNorm at 6 years."
+  year: '2011'
 taxon:
 - NCBITaxon:9606
 ---

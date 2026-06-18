@@ -589,9 +589,35 @@ products:
   - 1.0.2
   - '1.0'
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
+- authors:
+  - Natale DA
+  - Arighi CN
+  - Blake JA
+  - Bona J
+  - Chen C
+  - Chen SC
+  - Christie KR
+  - Cowart J
+  - "D'Eustachio P"
+  - Diehl AD
+  - Drabkin HJ
+  - Duncan WD
+  - Huang H
+  - Ren J
+  - Ross K
+  - Ruttenberg A
+  - Shamovsky V
+  - Smith B
+  - Wang Q
+  - Zhang J
+  - El-Sayed A
+  - Wu CH
+  doi: 10.1093/nar/gkw1075
+  id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
+  journal: Nucleic Acids Res
   title: 'Protein Ontology (PRO): enhancing and scaling up the representation of protein
     entities'
+  year: '2017'
 repository: https://github.com/PROconsortium/PRoteinOntology
 ---
 ## Description

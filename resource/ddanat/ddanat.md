@@ -50,8 +50,16 @@ repository: https://github.com/dictyBase/migration-data
 taxon:
   - NCBITaxon:44689
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
+  - authors:
+      - Gaudet P
+      - Williams JG
+      - Fey P
+      - Chisholm RL
+    doi: 10.1186/1471-2164-9-130
+    id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
+    journal: BMC Genomics
     title: An anatomy ontology to represent biological knowledge in Dictyostelium discoideum
+    year: '2008'
 ---
 
 ## Description

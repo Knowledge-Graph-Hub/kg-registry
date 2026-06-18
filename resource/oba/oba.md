@@ -247,9 +247,39 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://doi.org/10.1007/s00335-023-09992-1
+- authors:
+  - Ray Stefancsik
+  - James P. Balhoff
+  - Meghan A. Balk
+  - Robyn L. Ball
+  - Susan M. Bello
+  - Anita R. Caron
+  - Elissa J. Chesler
+  - Vinicius de Souza
+  - Sarah Gehrke
+  - Melissa Haendel
+  - Laura W. Harris
+  - Nomi L. Harris
+  - Arwa Ibrahim
+  - Sebastian Koehler
+  - Nicolas Matentzoglu
+  - Julie A. McMurry
+  - Christopher J. Mungall
+  - Monica C. Munoz-Torres
+  - Tim Putman
+  - Peter Robinson
+  - Damian Smedley
+  - Elliot Sollis
+  - Anne E. Thessen
+  - Nicole Vasilevsky
+  - David O. Walton
+  - David Osumi-Sutherland
+  doi: 10.1007/s00335-023-09992-1
+  id: https://doi.org/10.1007/s00335-023-09992-1
+  journal: Mammalian Genome
   title: The Ontology of Biological Attributes (OBA) - computational traits for the
     life sciences
+  year: '2023'
 repository: https://github.com/obophenotype/bio-attribute-ontology
 ---
 ## Description
