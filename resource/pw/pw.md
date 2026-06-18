@@ -247,10 +247,44 @@ products:
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21478484
+- authors:
+  - Petri V
+  - Shimoyama M
+  - Hayman GT
+  - Smith JR
+  - Tutaj M
+  - de Pons J
+  - Dwinell MR
+  - Munzenmaier DH
+  - Twigger SN
+  - Jacob HJ
+  - RGD Team
+  doi: 10.1093/database/bar010
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21478484
+  journal: Database (Oxford)
   title: The Rat Genome Database pathway portal.
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24499703
+  year: '2011'
+- authors:
+  - Petri V
+  - Jayaraman P
+  - Tutaj M
+  - Hayman GT
+  - Smith JR
+  - De Pons J
+  - Laulederkind SJ
+  - Lowry TF
+  - Nigam R
+  - Wang SJ
+  - Shimoyama M
+  - Dwinell MR
+  - Munzenmaier DH
+  - Worthey EA
+  - Jacob HJ
+  doi: 10.1186/2041-1480-5-7
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24499703
+  journal: J Biomed Semantics
   title: The pathway ontology - updates and applications.
+  year: '2014'
 repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
 ---
 ## Description

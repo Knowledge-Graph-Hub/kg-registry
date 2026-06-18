@@ -2713,11 +2713,42 @@ products:
     source: uniprot
   product_url: https://sugi.bio/biobtree/api/
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
+- authors:
+  - Mungall CJ
+  - Torniai C
+  - Gkoutos GV
+  - Lewis SE
+  - Haendel MA
+  doi: 10.1186/gb-2012-13-1-r5
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
+  journal: Genome Biol
   title: Uberon, an integrative multi-species anatomy ontology
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
+  year: '2012'
+- authors:
+  - Haendel MA
+  - Balhoff JP
+  - Bastian FB
+  - Blackburn DC
+  - Blake JA
+  - Bradford Y
+  - Comte A
+  - Dahdul WM
+  - Dececchi TA
+  - Druzinsky RE
+  - Hayamizu TF
+  - Ibrahim N
+  - Lewis SE
+  - Mabee PM
+  - Niknejad A
+  - Robinson-Rechavi M
+  - Sereno PC
+  - Mungall CJ
+  doi: 10.1186/2041-1480-5-21
+  id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
+  journal: J Biomed Semantics
   title: Unification of multi-species vertebrate anatomy ontologies for comparative
     biology in Uberon
+  year: '2014'
 repository: https://github.com/obophenotype/uberon
 taxon:
 - NCBITaxon:33208

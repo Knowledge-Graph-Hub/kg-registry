@@ -48,10 +48,45 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+  - authors:
+      - Schriml LM
+      - Arze C
+      - Nadendla S
+      - Ganapathy A
+      - Felix V
+      - Mahurkar A
+      - Phillippy K
+      - Gussman A
+      - Angiuoli S
+      - Ghedin E
+      - White O
+      - Hall N
+    doi: 10.1093/nar/gkp832
+    id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+    journal: Nucleic Acids Res
     title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+    year: '2010'
+  - authors:
+      - Schriml LM
+      - Munro JB
+      - Schor M
+      - Olley D
+      - McCracken C
+      - Felix V
+      - Baron JA
+      - Jackson R
+      - Bello SM
+      - Bearer C
+      - Lichenstein R
+      - Bisordi K
+      - Dialo NC
+      - Giglio M
+      - Greene C
+    doi: 10.1093/nar/gkab1063
+    id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+    journal: Nucleic Acids Res
     title: The Human Disease Ontology 2022 update
+    year: '2022'
 ---
 
 ## Description

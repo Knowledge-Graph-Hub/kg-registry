@@ -237,12 +237,26 @@ products:
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23256535
+- authors:
+  - Lin Y
+  - He Y
+  doi: 10.1186/2041-1480-3-17
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23256535
+  journal: J Biomed Semantics
   title: Ontology representation and analysis of vaccine formulation and administration
     and their effects on vaccine immune responses
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21624163
+  year: '2012'
+- authors:
+  - Ozgür A
+  - Xiang Z
+  - Radev DR
+  - He Y
+  doi: 10.1186/2041-1480-2-S2-S8
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21624163
+  journal: J Biomed Semantics
   title: Mining of vaccine-associated IFN-  gene interaction networks using the Vaccine
     Ontology
+  year: '2011'
 repository: https://github.com/vaccineontology/VO
 ---
 ## Description

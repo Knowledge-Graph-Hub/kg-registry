@@ -50,10 +50,30 @@ repository: https://github.com/xenopus-anatomy/xao
 taxon:
   - NCBITaxon:8353
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
+  - authors:
+      - Segerdell E
+      - Bowes JB
+      - Pollet N
+      - Vize PD
+    doi: 10.1186/1471-213X-8-92
+    id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
+    journal: BMC Dev Biol
     title: An ontology for Xenopus anatomy and development.
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
+    year: '2008'
+  - authors:
+      - Segerdell E
+      - Ponferrada VG
+      - James-Zorn C
+      - Burns KA
+      - Fortriede JD
+      - Dahdul WM
+      - Vize PD
+      - Zorn AM
+    doi: 10.1186/2041-1480-4-31
+    id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
+    journal: J Biomed Semantics
     title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase.'
+    year: '2013'
 ---
 
 ## Description
