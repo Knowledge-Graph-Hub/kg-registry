@@ -259,8 +259,15 @@ products:
     source: wikipathways
   product_url: https://ubkg-downloads.xconsortia.org/
 publications:
-- doi: 10.1007/s12021-022-09566-7
+- authors:
+  - Gillespie TH
+  - Tripathy SJ
+  - Sy MF
+  - Martone ME
+  - Hill SL
+  doi: 10.1007/s12021-022-09566-7
   id: PMID:35267146
+  journal: Neuroinformatics
   title: 'The Neuron Phenotype Ontology: A FAIR Approach to Proposing and Classifying
     Neuronal Types'
   year: '2022'

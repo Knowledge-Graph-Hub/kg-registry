@@ -124,7 +124,7 @@ publications:
   preferred: true
   title: PhosPhAt goes kinases - searchable protein kinase target information in the
     plant phosphorylation site database PhosPhAt
-  year: '2013'
+  year: '2012'
 - authors:
   - Petra Durek
   - Rebecca Schmidt
@@ -152,7 +152,7 @@ publications:
   journal: Nucleic Acids Research
   title: PhosPhAt, a database of phosphorylation sites in Arabidopsis thaliana and
     a plant-specific phosphorylation site predictor
-  year: '2008'
+  year: '2007'
 synonyms:
 - Arabidopsis Protein Phosphorylation Site Database
 taxon:
