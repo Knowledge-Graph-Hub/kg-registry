@@ -50,8 +50,19 @@ repository: https://github.com/obophenotype/porifera-ontology
 taxon:
   - NCBITaxon:6040
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25276334
+  - authors:
+      - Thacker RW
+      - Díaz MC
+      - Kerner A
+      - Vignes-Lebbe R
+      - Segerdell E
+      - Haendel MA
+      - Mungall CJ
+    doi: 10.1186/2041-1480-5-39
+    id: https://www.ncbi.nlm.nih.gov/pubmed/25276334
+    journal: J Biomed Semantics
     title: 'The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology'
+    year: '2014'
 ---
 
 ## Description

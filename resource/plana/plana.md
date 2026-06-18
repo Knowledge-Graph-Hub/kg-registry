@@ -48,8 +48,21 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/obophenotype/planaria-ontology
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/34318308
+  - authors:
+      - Nowotarski SH
+      - Davies EL
+      - Robb SMC
+      - Ross EJ
+      - Matentzoglu N
+      - Doddihal V
+      - Mir M
+      - McClain M
+      - Sánchez Alvarado A
+    doi: 10.1242/dev.196097
+    id: https://www.ncbi.nlm.nih.gov/pubmed/34318308
+    journal: Development
     title: 'Planarian Anatomy Ontology: a resource to connect data within and across experimental platforms'
+    year: '2021'
 ---
 
 ## Description

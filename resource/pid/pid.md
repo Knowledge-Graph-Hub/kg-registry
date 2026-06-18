@@ -1318,8 +1318,19 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1093/nar/gkn653
+- authors:
+  - Carl F. Schaefer
+  - Kira Anthony
+  - Shiva Krupa
+  - Jeffrey Buchoff
+  - Matthew Day
+  - Timo Hannay
+  - Kenneth H. Buetow
+  doi: 10.1093/nar/gkn653
+  id: https://doi.org/10.1093/nar/gkn653
+  journal: Nucleic Acids Research
   title: 'PID: the Pathway Interaction Database'
+  year: '2009'
 repository: https://github.com/NCIP/pathway-interaction-database
 synonyms:
 - PID

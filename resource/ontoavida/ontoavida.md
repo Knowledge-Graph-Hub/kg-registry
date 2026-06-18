@@ -52,8 +52,15 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://gitlab.com/fortunalab/ontoavida
 publications:
-- id: https://doi.org/10.1038/s41597-023-02514-3
+- authors:
+  - Raúl Ortega
+  - Enrique Wulff
+  - Miguel A. Fortuna
+  doi: 10.1038/s41597-023-02514-3
+  id: https://doi.org/10.1038/s41597-023-02514-3
+  journal: Scientific Data
   title: Ontology for the Avida digital evolution platform
+  year: '2023'
 ---
 ## Description
 

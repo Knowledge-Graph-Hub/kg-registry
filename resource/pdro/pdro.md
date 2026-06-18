@@ -39,8 +39,16 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/OpenLHS/PDRO
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34831777
+- authors:
+  - Ethier JF
+  - Goyer F
+  - Fabry P
+  - Barton A
+  doi: 10.3390/ijerph182212025
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34831777
+  journal: Int J Environ Res Public Health
   title: 'The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its Parts'
+  year: '2021'
 ---
 ## Description
 

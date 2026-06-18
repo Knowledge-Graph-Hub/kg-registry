@@ -902,9 +902,84 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: https://doi.org/10.1093/nar/gkab988
+- authors:
+  - Mihaly Varadi
+  - Stephen Anyango
+  - David Armstrong
+  - John Berrisford
+  - Preeti Choudhary
+  - Mandar Deshpande
+  - Nurul Nadzirin
+  - Sreenath S Nair
+  - Lukas Pravda
+  - Ahsan Tanweer
+  - Bissan Al-Lazikani
+  - Claudia Andreini
+  - Geoffrey J Barton
+  - David Bednar
+  - Karel Berka
+  - Tom Blundell
+  - Kelly P Brock
+  - Jose Maria Carazo
+  - Jiri Damborsky
+  - Alessia David
+  - Sucharita Dey
+  - Roland Dunbrack
+  - Juan Fernandez Recio
+  - Franca Fraternali
+  - Toby Gibson
+  - Manuela Helmer-Citterich
+  - David Hoksza
+  - Thomas Hopf
+  - David Jakubec
+  - Natarajan Kannan
+  - Radoslav Krivak
+  - Manjeet Kumar
+  - Emmanuel D Levy
+  - Nir London
+  - Jose Ramon Macias
+  - Madhusudhan M Srivatsan
+  - Debora S Marks
+  - Lennart Martens
+  - Stuart A McGowan
+  - Jake E McGreig
+  - Vivek Modi
+  - R Gonzalo Parra
+  - Gerardo Pepe
+  - Damiano Piovesan
+  - Jaime Prilusky
+  - Valeria Putignano
+  - Leandro G Radusky
+  - Pathmanaban Ramasamy
+  - Atilio O Rausch
+  - Nathalie Reuter
+  - Luis A Rodriguez
+  - Nathan J Rollins
+  - Antonio Rosato
+  - Paweł Rubach
+  - Luis Serrano
+  - Gulzar Singh
+  - Petr Skoda
+  - Carlos Oscar S Sorzano
+  - Jan Stourac
+  - Joanna I Sulkowska
+  - Radka Svobodova
+  - Natalia Tichshenko
+  - Silvio C E Tosatto
+  - Wim Vranken
+  - Mark N Wass
+  - Dandan Xue
+  - Daniel Zaidman
+  - Janet Thornton
+  - Michael Sternberg
+  - Christine Orengo
+  - Sameer Velankar
+  doi: 10.1093/nar/gkab988
+  id: https://doi.org/10.1093/nar/gkab988
+  journal: Nucleic Acids Research
   preferred: true
   title: 'PDBe-KB: collaboratively defining the biological context of structural data'
+  year: '2022'
 repository: https://github.com/PDBe-KB
 ---
 # PDBe Knowledge Base

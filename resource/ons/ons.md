@@ -39,9 +39,34 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/29736190
+- authors:
+  - Vitali F
+  - Lombardo R
+  - Rivero D
+  - Mattivi F
+  - Franceschi P
+  - Bordoni A
+  - Trimigno A
+  - Capozzi F
+  - Felici G
+  - Taglino F
+  - Miglietta F
+  - De Cock N
+  - Lachat C
+  - De Baets B
+  - De Tré G
+  - Pinart M
+  - Nimptsch K
+  - Pischon T
+  - Bouwman J
+  - Cavalieri D
+  - ENPADASI consortium
+  doi: 10.1186/s12263-018-0601-y
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29736190
+  journal: Genes Nutr
   title: 'ONS: an ontology for a standardized description of interventions and observational
     studies in nutrition'
+  year: '2018'
 ---
 ## Description
 
