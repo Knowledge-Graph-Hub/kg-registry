@@ -1552,7 +1552,7 @@ publications:
   - Griffiths-Jones
   doi: doi:10.1093/nar/gky1141
   id: https://pubmed.ncbi.nlm.nih.gov/30423142/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   preferred: true
   title: 'miRBase: from microRNA sequences to function'
   year: '2019'
@@ -1561,7 +1561,7 @@ publications:
   - Griffiths-Jones
   doi: doi:10.1093/nar/gkt1181
   id: https://pubmed.ncbi.nlm.nih.gov/24275495/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: annotating high confidence microRNAs using deep sequencing data'
   year: '2014'
 - authors:
@@ -1569,7 +1569,7 @@ publications:
   - Griffiths-Jones
   doi: doi:10.1093/nar/gkq1027
   id: https://pubmed.ncbi.nlm.nih.gov/21037258/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: integrating microRNA annotation and deep-sequencing data'
   year: '2011'
 - authors:
@@ -1579,7 +1579,7 @@ publications:
   - Enright
   doi: doi:10.1093/nar/gkm952
   id: https://pubmed.ncbi.nlm.nih.gov/17991681/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: tools for microRNA genomics'
   year: '2008'
 - authors:
@@ -1590,14 +1590,14 @@ publications:
   - Enright
   doi: doi:10.1093/nar/gkj112
   id: https://pubmed.ncbi.nlm.nih.gov/16381832/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: 'miRBase: microRNA sequences, targets and gene nomenclature'
   year: '2006'
 - authors:
   - Griffiths-Jones
   doi: doi:10.1093/nar/gkh023
   id: https://pubmed.ncbi.nlm.nih.gov/14681370/
-  journal: Nucleic Acids Research
+  journal: Nucleic Acids Res
   title: The microRNA Registry
   year: '2004'
 ---

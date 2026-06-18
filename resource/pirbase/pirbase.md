@@ -635,8 +635,9 @@ publications:
       - Zeng
       - He
       - Chen
+    doi: 10.1093/nar/gkab1012
     id: https://pubmed.ncbi.nlm.nih.gov/34871445/
-    journal: Nucleic Acids Research
+    journal: Nucleic Acids Res
     preferred: true
     title: 'piRBase: integrating piRNA annotation in all aspects'
     year: '2022'
@@ -649,8 +650,9 @@ publications:
       - Kan
       - Chen
       - He
+    doi: 10.1093/nar/gky1043
     id: https://pubmed.ncbi.nlm.nih.gov/30371818/
-    journal: Nucleic Acids Research
+    journal: Nucleic Acids Res
     title: 'piRBase: a comprehensive database of piRNA sequences'
     year: '2019'
   - authors:
@@ -666,6 +668,7 @@ publications:
       - Chen
       - He
       - Huang
+    doi: 10.1093/database/bau110
     id: https://pubmed.ncbi.nlm.nih.gov/25425034/
     journal: Database (Oxford)
     title: 'piRBase: a web resource assisting piRNA functional study'

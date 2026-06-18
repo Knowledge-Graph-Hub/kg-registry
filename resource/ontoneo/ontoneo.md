@@ -40,8 +40,16 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/ontoneo-project/Ontoneo
 publications:
-- id: https://doi.org/10.5281/zenodo.17429771
+- authors:
+  - Farinelli, Fernanda
+  - Almeida, Mauricio Barcellos
+  - Elkin, Peter
+  - Smith, Barry
+  doi: 10.5281/zenodo.17429771
+  id: https://doi.org/10.5281/zenodo.17429771
+  journal: CEUR-WS
   title: 'OntONeo: The Obstetric and Neonatal Ontology'
+  year: '2025'
 - id: doi:10.5281/zenodo.17508651
   doi: 10.5281/zenodo.17508651
   title: Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e
@@ -50,9 +58,14 @@ publications:
   - Farinelli, Fernanda
   journal: Zenodo
   year: '2025'
-- id: https://doi.org/10.5281/zenodo.17508651
-  title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal
-    Domain
+- authors:
+  - Farinelli, Fernanda
+  doi: 10.5281/zenodo.17508651
+  id: https://doi.org/10.5281/zenodo.17508651
+  journal: Zenodo
+  title: Ontologias Formais na Organização do Conhecimento no Domínio Obstétrico e
+    Neonatal
+  year: '2025'
 ---
 ## Description
 

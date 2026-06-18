@@ -260,11 +260,60 @@ products:
     source: interpro
   product_url: https://datacommons.cyverse.org/browse/iplant/home/shared/genophenoenvo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/23220694
+- authors:
+  - Cooper L
+  - Walls RL
+  - Elser J
+  - Gandolfo MA
+  - Stevenson DW
+  - Smith B
+  - Preece J
+  - Athreya B
+  - Mungall CJ
+  - Rensing S
+  - Hiss M
+  - Lang D
+  - Reski R
+  - Berardini TZ
+  - Li D
+  - Huala E
+  - Schaeffer M
+  - Menda N
+  - Arnaud E
+  - Shrestha R
+  - Yamazaki Y
+  - Jaiswal P
+  doi: 10.1093/pcp/pcs163
+  id: https://www.ncbi.nlm.nih.gov/pubmed/23220694
+  journal: Plant Cell Physiol
   title: The plant ontology as a tool for comparative plant anatomy and genomic analyses.
-- id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+  year: '2013'
+- authors:
+  - Cooper L
+  - Meier A
+  - Laporte MA
+  - Elser JL
+  - Mungall C
+  - Sinn BT
+  - Cavaliere D
+  - Carbon S
+  - Dunn NA
+  - Smith B
+  - Qu B
+  - Preece J
+  - Zhang E
+  - Todorovic S
+  - Gkoutos G
+  - Doonan JH
+  - Stevenson DW
+  - Arnaud E
+  - Jaiswal P
+  doi: 10.1093/nar/gkx1152
+  id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+  journal: Nucleic Acids Res
   title: 'The Planteome database: an integrated resource for reference ontologies,
     plant genomics and phenomics.'
+  year: '2018'
 repository: https://github.com/Planteome/plant-ontology
 taxon:
 - NCBITaxon:33090
