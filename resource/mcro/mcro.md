@@ -41,8 +41,20 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/UTHealth-Ontology/MCRO
 publications:
-- id: https://doi.org/10.1186/s12859-022-04797-6
+- authors:
+  - Muhammad Tuan Amith
+  - Licong Cui
+  - Degui Zhi
+  - Kirk Roberts
+  - Xiaoqian Jiang
+  - Fang Li
+  - Evan Yu
+  - Cui Tao
+  doi: 10.1186/s12859-022-04797-6
+  id: https://doi.org/10.1186/s12859-022-04797-6
+  journal: BMC Bioinformatics
   title: Toward a standard formal semantic representation of the model card report
+  year: '2022'
 ---
 ## Description
 

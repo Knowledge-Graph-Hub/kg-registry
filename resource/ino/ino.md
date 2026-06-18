@@ -38,8 +38,16 @@ products:
         relation_type: prov:hadPrimarySource
 repository: https://github.com/INO-ontology/ino
 publications:
-  - id: https://doi.org/10.1186/2041-1480-6-2
+  - authors:
+      - Junguk Hur
+      - Arzucan Özgür
+      - Zuoshuang Xiang
+      - Yongqun He
+    doi: 10.1186/2041-1480-6-2
+    id: https://doi.org/10.1186/2041-1480-6-2
+    journal: Journal of Biomedical Semantics
     title: Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions
+    year: '2015'
 ---
 
 ## Description

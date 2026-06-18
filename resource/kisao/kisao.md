@@ -39,8 +39,39 @@ products:
     relation_type: prov:hadPrimarySource
 repository: https://github.com/SED-ML/KiSAO
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
+- authors:
+  - Courtot M
+  - Juty N
+  - Knüpfer C
+  - Waltemath D
+  - Zhukova A
+  - Dräger A
+  - Dumontier M
+  - Finney A
+  - Golebiewski M
+  - Hastings J
+  - Hoops S
+  - Keating S
+  - Kell DB
+  - Kerrien S
+  - Lawson J
+  - Lister A
+  - Lu J
+  - Machne R
+  - Mendes P
+  - Pocock M
+  - Rodriguez N
+  - Villeger A
+  - Wilkinson DJ
+  - Wimalaratne S
+  - Laibe C
+  - Hucka M
+  - Le Novère N
+  doi: 10.1038/msb.2011.77
+  id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
+  journal: Mol Syst Biol
   title: Controlled vocabularies and semantics in systems biology
+  year: '2011'
 ---
 ## Description
 

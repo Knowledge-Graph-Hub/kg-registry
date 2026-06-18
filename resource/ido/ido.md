@@ -228,8 +228,16 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34275487
+- authors:
+  - Babcock S
+  - Beverley J
+  - Cowell LG
+  - Smith B
+  doi: 10.1186/s13326-021-00245-1
+  id: https://www.ncbi.nlm.nih.gov/pubmed/34275487
+  journal: J Biomed Semantics
   title: The Infectious Disease Ontology in the age of COVID-19
+  year: '2021'
 repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
 taxon:
 - NCBITaxon:9606
