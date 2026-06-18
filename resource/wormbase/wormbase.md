@@ -1058,9 +1058,45 @@ products:
     source: wormbase
   product_url: https://www.genecards.org/
 publications:
-- id: PMID:19910365
+- authors:
+  - Harris TW
+  - Antoshechkin I
+  - Bieri T
+  - Blasiar D
+  - Chan J
+  - Chen WJ
+  - De La Cruz N
+  - Davis P
+  - Duesbury M
+  - Fang R
+  - Fernandes J
+  - Han M
+  - Kishore R
+  - Lee R
+  - Müller HM
+  - Nakamura C
+  - Ozersky P
+  - Petcherski A
+  - Rangarajan A
+  - Rogers A
+  - Schindelman G
+  - Schwarz EM
+  - Tuli MA
+  - Van Auken K
+  - Wang D
+  - Wang X
+  - Williams G
+  - Yook K
+  - Durbin R
+  - Stein LD
+  - Spieth J
+  - Sternberg PW
+  doi: 10.1093/nar/gkp952
+  id: PMID:19910365
+  journal: Nucleic Acids Res
   preferred: true
   title: 'WormBase: a comprehensive resource for nematode research.'
+  year: '2010'
 repository: https://github.com/WormBase
 synonyms:
 - WB

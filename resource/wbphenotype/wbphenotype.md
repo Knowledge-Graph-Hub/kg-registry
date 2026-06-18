@@ -61,9 +61,18 @@ repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 taxon:
 - NCBITaxon:6237
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/21261995
+- authors:
+  - Schindelman G
+  - Fernandes JS
+  - Bastiani CA
+  - Yook K
+  - Sternberg PW
+  doi: 10.1186/1471-2105-12-32
+  id: https://www.ncbi.nlm.nih.gov/pubmed/21261995
+  journal: BMC Bioinformatics
   title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond the
     C. elegans community.'
+  year: '2011'
 ---
 ## Description
 

@@ -237,9 +237,17 @@ products:
   product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
+- authors:
+  - Van Slyke CE
+  - Bradford YM
+  - Westerfield M
+  - Haendel MA
+  doi: 10.1186/2041-1480-5-12
+  id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
+  journal: J Biomed Semantics
   title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and
     development of Danio rerio.'
+  year: '2014'
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 taxon:
 - NCBITaxon:7954

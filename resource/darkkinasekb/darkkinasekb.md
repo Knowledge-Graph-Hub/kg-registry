@@ -121,7 +121,19 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
 publications:
-- id: PMID:33079988
+- authors:
+  - Berginski ME
+  - Moret N
+  - Liu C
+  - Goldfarb D
+  - Sorger PK
+  - Gomez SM
+  doi: 10.1093/nar/gkaa853
+  id: PMID:33079988
+  journal: Nucleic Acids Res
+  title: 'The Dark Kinase Knowledgebase: an online compendium of knowledge and experimental
+    results of understudied kinases.'
+  year: '2021'
 synonyms:
 - DKK
 ---

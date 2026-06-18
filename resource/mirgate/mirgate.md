@@ -159,7 +159,16 @@ products:
     source: mirgate
   product_url: http://mirgate.bioinfo.cnio.es/API/
 publications:
-- id: PMID:25858286
+- authors:
+  - Andrés-León E
+  - González Peña D
+  - Gómez-López G
+  - Pisano DG
+  doi: 10.1093/database/bav035
+  id: PMID:25858286
+  journal: Database (Oxford)
+  title: 'miRGate: a curated database of human, mouse and rat miRNA-mRNA targets.'
+  year: '2015'
 synonyms:
 - miRGate
 taxon:

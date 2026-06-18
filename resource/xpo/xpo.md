@@ -52,9 +52,33 @@ repository: https://github.com/obophenotype/xenopus-phenotype-ontology
 taxon:
 - NCBITaxon:8353
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
+- authors:
+  - Fisher ME
+  - Segerdell E
+  - Matentzoglu N
+  - Nenni MJ
+  - Fortriede JD
+  - Chu S
+  - Pells TJ
+  - Osumi-Sutherland D
+  - Chaturvedi P
+  - James-Zorn C
+  - Sundararaj N
+  - Lotay VS
+  - Ponferrada V
+  - Wang DZ
+  - Kim E
+  - Agalakov S
+  - Arshinoff BI
+  - Karimi K
+  - Vize PD
+  - Zorn AM
+  doi: 10.1186/s12859-022-04636-8
+  id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
+  journal: BMC Bioinformatics
   title: 'The Xenopus phenotype ontology: bridging model organism phenotype data to
     human health and development.'
+  year: '2022'
 ---
 ## Description
 

@@ -273,9 +273,29 @@ products:
     source: uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
-- category: Publication
-  id: PMID:34090623
+- authors:
+  - Tamborero D
+  - Rubio-Perez C
+  - Deu-Pons J
+  - Schroeder MP
+  - Vivancos A
+  - Rovira A
+  - Tusquets I
+  - Albanell J
+  - Rodon J
+  - Tabernero J
+  - de Torres C
+  - Dienstmann R
+  - Gonzalez-Perez A
+  - Lopez-Bigas N
+  category: Publication
+  doi: 10.1186/s13073-018-0531-8
+  id: PMID:29592813
+  journal: Genome Medicine
   preferred: true
+  title: Cancer Genome Interpreter annotates the biological and clinical relevance
+    of tumor alterations
+  year: '2018'
 synonyms:
 - MutationDS
 - CGI Mutations
