@@ -9,17 +9,23 @@ KG-Registry includes a small set of local agent skills to support curation and m
 
 The curation and maintenance skills are designed for curators working in a checked-out copy of the repository. The discovery skills are different: they need no local clone and query the published Parquet files over HTTP, so anyone with network access can use them.
 
-## Prerequisite
+## Prerequisites
 
-Before using any of these skills, clone the KG-Registry repository locally.
+The two kinds of skill have different requirements.
 
-The skills rely on:
+### Discovery skills — no clone needed
+
+The read-only discovery skills (`search-resources`, `trace-upstream-sources`, `find-downstream-usages`, `find-similar-resources`) require no local clone. They query the published Parquet files over HTTP at `https://kghub.org/kg-registry/registry/parquet/` using DuckDB with the `httpfs` extension, for example via `uv run --with duckdb --no-project python`. All you need is network access.
+
+### Curation skills — local clone required
+
+The curation and maintenance skills (`kg-registry-curation`, `curate-next`, `kg-registry-validation`, `kg-registry-product-url-update`) must be run from a local clone of the repository. They rely on:
 
 - reading and editing source files under `resource/`
 - checking nearby repository context such as `reports/curation_problems.tsv`
 - running local validation commands such as `uv run make validate-file FILE=...`
 
-If you are not working in a local clone of the repository, stop and clone it first.
+If you want to curate or maintain resources and are not working in a local clone, stop and clone the repository first.
 
 ## Where the skills live
 
@@ -28,7 +34,7 @@ The current agent workflows are defined in the repository's `.agents/` directory
 That directory includes:
 
 - command entry points for common tasks
-- skill definitions for curation and validation workflows
+- skill definitions for both the discovery and the curation workflows
 - local permission settings used by the agent when running repository-specific commands
 
 ## Available workflows
