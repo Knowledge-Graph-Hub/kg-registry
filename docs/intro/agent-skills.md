@@ -5,9 +5,9 @@ title: Agent Skills
 
 # Agent Skills
 
-KG-Registry includes a small set of local agent skills to support curation and maintenance workflows in this repository.
+KG-Registry includes a small set of local agent skills to support curation and maintenance workflows in this repository, plus a set of read-only discovery skills for exploring what the registry knows about a resource or domain.
 
-These skills are designed for curators working in a checked-out copy of the repository, not for editing generated site output or for use against the public website alone.
+The curation and maintenance skills are designed for curators working in a checked-out copy of the repository. The discovery skills are different: they need no local clone and query the published Parquet files over HTTP, so anyone with network access can use them.
 
 ## Prerequisite
 
@@ -56,6 +56,34 @@ This workflow checks a curated file for schema validity and curation-specific qu
 Use the `kg-registry-product-url-update` skill.
 
 This workflow is for replacing a stale `product_url` with the best current live URL for the same product. It is especially useful when an old version-specific URL has disappeared and the best replacement is a newer canonical page, release page, or current download endpoint.
+
+## Discovery and exploration
+
+These skills are read-only and need no local clone. They answer questions about what the registry already records by querying the published Parquet files over HTTP at `https://kghub.org/kg-registry/registry/parquet/` (`resources.parquet`, `resource_domains.parquet`, `resource_products.parquet`, `resource_taxa.parquet`). They run DuckDB with the `httpfs` extension — for example via `uv run --with duckdb --no-project python` — and do not edit resource pages. Provenance, usages, and publications live inside the `raw_data` JSON column of `resources.parquet`.
+
+### Search the registry by topic or domain
+
+Use the `search-resources` skill.
+
+This workflow finds resources covering a subject area (for example, "everything about RNA interactions"). It maps the free-text topic to the controlled domain vocabulary, runs a keyword search over names and descriptions, sweeps the source files for matches the structured query misses, and returns a ranked, de-duplicated list noting each resource's category and activity status.
+
+### Trace a resource's upstream sources
+
+Use the `trace-upstream-sources` skill.
+
+This workflow determines the upstream data sources a resource (usually a knowledge graph) is built from, by walking each product's `original_source` and `secondary_source`, resolving the referenced KG-Registry identifiers, and optionally recursing to build the full provenance tree back to primary sources.
+
+### Find where a resource is used
+
+Use the `find-downstream-usages` skill.
+
+This workflow determines everywhere a resource is used downstream. It combines a reverse-provenance sweep (other resources whose products name the target as a source) with the target's own curator-recorded `usages` field.
+
+### Find resources similar to a given one
+
+Use the `find-similar-resources` skill.
+
+This workflow finds alternatives and near-duplicates of a resource by combining structured signals KG-Registry records (shared domains, taxa, category, graph scale, shared upstream sources) with heuristics such as description similarity and overlapping publication authors, then ranks the results with an explanation of why each is similar.
 
 ## What these workflows assume
 
